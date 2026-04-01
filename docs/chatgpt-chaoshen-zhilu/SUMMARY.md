@@ -1,4 +1,4 @@
-+   [前言](README.md)
++   [ChatGPT 超神之路](README.md)
 +   [一、ChatGPT基础概念](01_wikcnsNHNHLtix8JkPcXfz4VNnh.md)
 +   [二、ChatGPT注册指引](02_wikcnguGkZrzhJiQ4WzCJ5pjZRd.md)
 +   [OpenAI官方APP教你一步到位！国内怎么用支付宝购买ChatGPT Plus4.0会员](03_VT4RwMBwoipuTzkaUe5c4lGun1f.md)
