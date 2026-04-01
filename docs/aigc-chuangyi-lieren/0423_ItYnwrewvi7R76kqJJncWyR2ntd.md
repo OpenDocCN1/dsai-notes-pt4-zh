@@ -1,0 +1,85 @@
+# 20241114-就在刚刚，马斯克上线xAI "免费网页版" ，附体验实测！
+
+> 来源：[https://aigcreative.feishu.cn/docx/KcDZdSeD3olRe2xtOW0ckJulnub](https://aigcreative.feishu.cn/docx/KcDZdSeD3olRe2xtOW0ckJulnub)
+
+> 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/w4FENljyc6e9qXHI3xCCfQ)qq.com/s/w4FENljy...
+
+> 公众号：AI生活研究所
+
+马斯克 的xAI上线了Grok网 页版
+
+自从马斯克和OpenAI交恶后，其推出了chatgpt争锋相对的AI大语言模型Grok。
+
+然而，为了给自家社交媒体X导流， 在这之前，只有X的Premium订阅用户，才能在X客户端上体验Grok，一直也没有引起太大波澜。
+
+近期，xAI动作频频
+
+上周，面向开发者公测其API接口；现在部分地区开始内测 Grok网页版，加入C端用户 争夺战 。
+
+> 传送门：https://x.ai/grok
+
+需魔法，且只能通过X账户登录，目前完全免费，每小时限额约20次左右，作为自家兄弟， Grok有个优势，能够实时搜索X上信息（后文看案例分析）。
+
+![](img/bb970ddfddc466ecbb0663d3d297438a.png)
+
+目前接入的是Grok2.0模型，经测试，目前仅支持文本模式。
+
+![](img/faef2e8879b6cacb12d933ec97958075.png)
+
+马斯克的AI玩具，效果如何呢？
+
+**1、文本理解 **
+
+提示词：今天我有3个苹果，昨天我吃掉1个，还剩多少个苹果？
+
+![](img/caad16b866a03ff2d314430229314c2a.png)
+
+不出预料，被带入坑里了，gpt4o则给出了正确答案“3”
+
+**2、逻辑推理 **
+
+提示词：树上有10只鸟，开枪打死一只，请问还剩几只？
+
+![](img/c0424bc854b99091bc2d6e148cfd67d1.png)
+
+这个问题过关，再上难度
+
+提示词：在blueberry这个单词中，字母“b”出现了几次，分别是什么位置？
+
+![](img/46be0352f67523caab54e634af135061.png)
+
+Grok2.0 一对一错，而GPT4o两次全错，目前2次样本下，前者胜
+
+**3、写文案 **
+
+提示词：写一段讽刺马斯克的话，而且对方看完还不生气。字数100以内
+
+![](img/c94ad99408cf06f6d447bfcb1694b2c9.png)
+
+这个效果大家觉得哪个好，我个人是站GPT4o，这个案例中，语言表述功力，感觉后者强不少。
+
+**4、常识测试 **
+
+提示词：0.9和0.11哪个大
+
+![](img/cd58eabf4a38b4361da0d234892becd9.png)
+
+这道题，曾经让AI模型集体扑街，GPT4o回答正确， Grok2.0错误。
+
+这几个测试来看，相比 GPT4o，马斯克的Grok2.0表现似乎要弱一些。
+
+**5、实时搜索体验 **
+
+Grok是目前，唯一能实时搜索X社交媒体的大模型。试试看，用它来帮我整理马斯克最新X有些什么动态。
+
+![](img/8f0776500807635a2a2f3021dcae5243.png)
+
+为了验证下是否真实，上图箭头所指信息，我特意去X找了看。确实能找到这一条。
+
+![](img/3469335b53d9ea73d24bfbc80ffae9cd.png)
+
+其他的我没再验证，因为老马是个自媒体狂魔，一天能有几十条，我懵了，直接放弃了。
+
+这个功能看似很牛皮，我多次测试下来，发现很鸡肋！
+
+<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
