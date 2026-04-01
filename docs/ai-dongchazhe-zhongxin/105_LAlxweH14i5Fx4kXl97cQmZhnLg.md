@@ -1,0 +1,408 @@
+# Stable Video（已开源）
+
+> 来源：[https://bluefocus.feishu.cn/docx/IZdfdheWWoUxSyx7gmPcOHk4nCf](https://bluefocus.feishu.cn/docx/IZdfdheWWoUxSyx7gmPcOHk4nCf)
+
+# 概述
+
+曾经的AI视频御三家之一，Stability（就是那个开源了Stable Diffusion的公司），终于正式上线了他们的AI视频产品。
+
+**Stable Video。**
+
+![](img/9c1433cb1909762e7c863deb8980e677.png)
+
+Stable Video向所有人开放，不需要排队了，人人可用。
+
+![](img/54ee4c516022b0f8ccaf2109025ea9eb.png)
+
+https://www.stablevideo.com/
+
+背后其实就是SVD模型，但是包了一层应用，能让用户简单快捷的方便上手。
+
+支持图生视频和文生视频。
+
+虽然人人都在看Sora，但是Sora那玩意，整体上我预估还得3个月以后才能开始内测，注意是内测，还不是像Stable Video这种开放测试。
+
+那这三个月，我觉得，来都来了，大过年的，玩玩Stable Video，也挺好。
+
+毕竟，你roll的每一个4s的AI视频，都是这个半残的AI视频时代，最后的余晖...
+
+我简单放几个Stable Video的Case，大家可以感受一下。
+
+友情提示，不要跟Sora比，就像你非要拿地球科技跟三体科技比，没必要...都是地球人，跟地球人自家的PIKA、Runway比，这维度才一样...
+
+（这次用的不是我自己跑的Case，不是我懒，或者我原则变了，是他们服务器崩了...垃圾...）
+
+（PS：虽然他们社区没标作者，但是这一看就是AI离谱村的作品，我很喜欢的博主哈哈哈哈哈）
+
+![](img/238b8382fd7231842b5fd82436449834.png)
+
+![](img/f7df05d515986cf649157493c10bf71b.png)
+
+SVD在画面稳定性、运动幅度、画面细节丢失上，效果都是我觉得目前第一梯队的，或者可以直接说，No.1（不算Sora）。
+
+当然，他们最爽的还是，每天免费150积分。
+
+![](img/cbf6df0e6f0d9e1e110ac649bb61a991.png)
+
+10积分一个片段，等于每天可以白嫖15个左右，PIKA每天只有3个，Runway就没有。
+
+这么一看，Stable Video还是非常良心的，对于一些轻度玩家，就可以直接用了。
+
+你要是买的话也行，10刀500积分，50到3000积分，但是相比于Runway啥的，就有点不划算了，Runway你开了会员以后，是10刀买1000积分也就是200秒，而Stable Video是10刀买500积分等于50s，这就是血亏了..
+
+非常不划算。
+
+在功能上，常规的镜头控制也有，还有一些运动速度和步数可以取去自定义，这块就不细说了，跟Runway、PIKA没啥区别。
+
+![](img/45c07fd63ce863e68d864e3de4ccd6b0.png)
+
+整体上，在Sora没出来之前，如果有想玩AI视频的朋友，我目前无脑推荐Stable Video。
+
+除了每天可白嫖15段之外，也有着目前最好的画面稳定性、运动幅度、画面细节不丢失。
+
+极其适合新人玩家上手，感受一下AI视频的魅力。
+
+毕竟，你现在roll的每一个4s的AI视频。
+
+都是这个半残的AI视频时代，最后的余晖。
+
+但是余晖也有余晖的好。
+
+他很适合纪念，以及对比。
+
+毕竟，如果你连4s的AI视频都没玩过，那你又怎么理解，Sora那种天顶星科技的伟大呢？
+
+原文地址：https://mp.weixin.qq.com/s/YGEnIzfYA3xGpT9_qh56RA
+
+> 👨‍💻导读**：2 **月 16 日凌晨，OpenAI发布其首个文生视频大模型 Sora，看过视频效果的网友，纷纷感叹「现实，不存在了」！！毫不夸张的说，Sora技术所达到的视频效果完全碾压了过去所有文生视频模型的结果，颠覆了 AI 视频生成领域的现状，同时也引爆了大众对视频生成技术的关注和期望！关于 Sora技术的相关介绍和技术拆解可移步这篇文章《AIGC｜OpenAI文生视频大模型Sora技术拆解（含全网资料汇总）》
+
+> 然而[，Sora正式面向公众开放使用还遥遥](http://mp.weixin.qq.com/s?__biz=MzI1MzUyMTMwOA==&mid=2247488987&idx=1&sn=2403d61930a71342af86e8c9641affd8&chksm=e9d26928dea5e03e4238299a7c65d41e56d9fdc8b5fe1d14c6bd836c91e1ea7a6d818d59f726&token=1123386256&lang=zh_CN&scene=21#wechat_redirect)无期，并且很大概率其底层技术不会开源！而就在 2 月 21 日，作为AI视频生成领域非常亮眼存在的Stable Video Diffusion正式全网开放公测！《AIGC | 「视频生成」系列之SVD1.1官方正式开放公测（体验经验分享）》
+
+> 最重要的是，Stable Video Diffusion代码和模型是完全开源的，并且具备非常好的生态，是其独特的优势！因此，今天我们就对视频生成开源界的天花板 SVD 进行全方位的介绍和解读，同时还会附上部署教程及模型资源！！
+
+![](img/0f788ece89c0f826dff4db8f43ec57db.png)
+
+# —— SVD 介绍 ——
+
+## 简介
+
+Stable Video Diffusion是Stability AI 于 2023 年 11 月 21 日发布的视频生成式大模型，一种用于高分辨率、先进的文本到视频和图像到视频生成的潜在视频扩散模型。
+
+SVD模型不仅支持文本、图像生成视频，还支持多视角渲染和帧插入提升视频帧率。用户可以调整模型选择、视频尺寸、帧率及镜头移动距离等参数。
+
+SVD模型对硬件要求较高，对于缺乏硬件资源的普通用户有一定限制，同时其支持的图片尺寸较小，限制了它的应用场景。
+
+尽管 SVD与其他商用产品在帧率、分辨率、内容控制、风格选择和视频生成时长等方面存在差距，但其开源属性和对大规模数据的有效利用构成了其独特优势。
+
+## 模型版本
+
+当时，Stable Video Diffusion开源了两种图生视频的模型，一种是能够生成 14 帧的SVD，另一种则是可以生成25帧的 SVD-XL。在以基础形式发布时，通过外部评估，发现这些模型超越了人类偏好研究中领先的封闭模型。
+
+![](img/ad9de999ae31b5ea09048e8719cbeda6.png)
+
+## 主要贡献
+
++   提出一个系统的数据管理工作流程，将大量未经管理的视频集合转变为用于生成视频建模的高质量数据集。
+
++   使用此工作流程，训练最先进的文本到视频和图像到视频模型，其性能优于所有现有模型。
+
++   通过进行特定领域的实验来探索SVD模型中运动和 3D 理解的强先验。
+
+具体来说，预训练的视频扩散模型可以转变为强大的多视图生成器，这可能有助于克服 3D 领域中的数据稀缺问题。
+
+## SVD 1.1最新版
+
+Stability AI于 2024 年 2 月最新开源的SVD 1.1是SVD 1.0的优化版本，经过精细调整，旨在生成动态效果更佳、一致性更强的简短AI视频。点击下方图片，可跳转至体验链接！！
+
+**模型细节**
+
+该模型经过训练，可在给定相同大小的上下文帧的情况下生成分辨率为 1024x576 的 25 帧，并从 SVD 图像到视频 [25 帧] 进行微调。
+
+通过 6FPS 和 Motion Bucket Id 127 的固定条件进行微调，以提高输出的一致性，而无需调整超参数。这些条件仍然是可调整的并且尚未被删除。与 SVD 1.0 相比，固定调节设置之外的性能可能会有所不同。
+
+**局限性**
+
+> 尽管SVD 1.1在视频生成领域取得了突破，但与Sora等领先技术相比，仍有一定差距。具体体现在：
+
++   生成的视频相当短（<= 4秒），并且该模型无法实现完美的照片级真实感
+
++   该模型可能会生成没有运动或非常缓慢的摄像机平移的视频
+
++   模型无法通过文本控制
+
++   该模型无法呈现清晰的文本
+
++   一般情况下，面孔和人物可能无法正确生成
+
++   模型的自动编码部分是有损的
+
+# —— 模型资源汇总 ——
+
+为了方便大家快速上手，在这里汇总了Stable Video Diffusion相关资源链接，如下，同时后文会提供百度网盘下载方式：
+
+> 🎉 代码地址：https://github.com/Stability-AI/generative-models
+
+> 论文地址：https://stability.ai/research/stable-video-diffusion-scaling-latent-video-diffusion-models-to-large-datasets
+
+> 👉 体验地址：https://huggingface.co/spaces/multimodalart/stable-video-diffusion
+
+> 👏 官方模型权重：
+
++   SVD模型权重地址：https://huggingface.co/stabilityai/stable-video-diffusion-img2vid
+
++   SVD-XL模型权重地址：https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
+
++   SVD 1.1 模型权重地址：https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1
+
+> fp16模型权重：
+
++   SVD-fp16模型权重地址：https://huggingface.co/becausecurious/stable-video-diffusion-img2vid-fp16
+
+>
+
+# —— 论文总结概览 ——
+
+论文题目：Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets
+
+在视频生成领域，大多工作依赖于扩散模型，以从文本或图像条件中联合合成多个一致的帧。扩散模型通过学习从正态分布逐渐对样本进行去噪来实现迭代细化过程，并已成功应用于高分辨率文本到图像和视频合成。
+
+在 SVD工作中，也遵循这种范式，并在大规模视频数据集上训练了一个潜在的视频扩散模型。本文主要探讨了数据选择的重要性以及数据筛选对模型性能的影响。因此，与之前的工作相比，本文利用简单的潜在视频扩散基线，固定架构和训练方案，并评估了数据管理的效果。同时，介绍了一个系统的数据筛选工作流程，将一个大规模的未筛选视频集合转化为适用于生成视频建模的高质量数据集，确定生成视频建模的三种不同训练方案，还提出一种基于预训练视频扩散模型的多视角生成方法。
+
+最后，文章探讨了模型的运动和三维理解能力，并进行了相关实验。
+
+![](img/514383f9a39abdaaacb83591978fd63c.png)
+
+> 详细论文解读可参考：**《**[**AIGC｜「视频生成」系列之Stable V**](http://mp.weixin.qq.com/s?__biz=MzI1MzUyMTMwOA==&mid=2247489719&idx=1&sn=b12403fb4075fc893b1f2068b9feb12d&chksm=e9d26444dea5ed520d11c5bb30e7bc61cbb776a69c2fcd3e8083c4b68c0b4963bab7dbf59128&scene=21#wechat_redirect)**i**deo Diffusion模型论文解读》
+
+# —— 云部署实战 ——
+
+本节主要介绍在云服务器上进行 SVD 模型的部署流程！！**我这里推荐两个比较好**用且省钱的云服务器：AutoDL和恒源云！！
+
+> AutoDL官网链接：https://www.autodl.com/
+
+> 恒源云官网链接：https://www.gpushare.com/auth/register?user=18*****5781&fromId=71eb00c16e5f&source=link
+
+首选还是AutoDL，但AutoDL容易出现租不到机器的情况！因此，我这里选择了恒源云，不过恒源云有时会出现操作卡顿的现象！有条件的最好还是建议本地机器部署！！
+
+## 准备工作
+
+**选择系统资源**
+
+我的系统资源：
+
++   内存 32G
+
++   显卡 3090，24G显存
+
+建议显存在24G以上，如果显存选择的过小，很大概率会报显存溢出！！
+
+![](img/7b8cbcb55f4cd2a676d0e61d869bb659.png)
+
+**下载Git仓库并安装依赖**
+
+```
+git clone https://github.com/Stability-AI/generative-models
+cd generative-models
+```
+
+**下载模型权重**
+
+关于SVD模型权重，可以在上面的模型资源汇总部分下载取用！但是，同时考虑到大家的网络情况，我这里将所有的 SVD 模型权重、调试好的代码及基础依赖模型，放到了百度网盘里面！
+
+获取方式可以关注公众号「**魔方AI空间**」，回复 【**SVD**】即可获取链接，包含代码 generative-models、模型权重checkpoints、以及models–laion–CLIP-ViT-H-14-laion2B-s32B-b79K和ViT-L-14.pt。
+
+![](img/fbd5ea1c874bdb488899fe5b606803bb.png)
+
+**基础环境配置**
+
+```
+conda create --name my_svd python=3.10   #建议选择 python3.10及以上版本
+source activate  my_svd
+pip3 install -r requirements/pt2.txt
+pip3 install .
+# 安装ffmpeg
+sudo apt install ffmpeg
+```
+
+**开始运行**
+
+```
+cd generative-models
+streamlit run scripts/demo/video_sampling.py  --server.address  0.0.0.0  --server.port 8888
+```
+
+在运行后，程序会自动去下载两个模型，会处于一直等待的过程！分别是：
+
++   models–laion–CLIP-ViT-H-14-laion2B-s32B-b79K
+
++   clip/ViT-L-14.pt
+
+> 🎉模型地址：
+
++   https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/tree/main
+
++   https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt
+
+>
+
+同**时关于上面的**两个模型依赖**权重也**放到了百度网盘资源里，关注公众号「魔方AI空间」，回复 【SVD】即可获取！！
+
+手动下载下来后，分别放到路径如下：
+
+```
+/root/.cache/huggingface/hub/models–laion–CLIP-ViT-H-14-laion2B-s32B-b79K
+/root/.cache/clip/ViT-L-14.pt
+```
+
+在以上准备工作做好后，再次运行！！复制 url 到浏览器中打开！！
+
+![](img/4c39553cc5d46dbca1b11a7f9e7a0510.png)
+
+点击下拉箭头，可以选择不同模型版本，再勾选 load Model！！
+
+这里可以看到，增加了 svd-fp16模型的支持，可以在video_sampling.py代码中进行添加，其他模型依次类推！！
+
++
+
+```
+   # fp16    &quot;svd-fp16&quot;: {       
+             &quot;T&quot;: 14,
+             &quot;H&quot;: 576,
+             &quot;W&quot;: 1024,
+             &quot;C&quot;: 4,
+             &quot;f&quot;: 8,
+     &quot;config&quot;: &quot;configs/inference/svd.yaml&quot;,        
+     &quot;ckpt&quot;: &quot;checkpoints/svd-fp16.safetensors&quot;,        
+     &quot;options&quot;: {           
+           &quot;discretization&quot;: 1,         
+           &quot;cfg&quot;: 2.5,          
+           &quot;sigma_min&quot;: 0.002,      
+           &quot;sigma_max&quot;: 700.0,    
+           &quot;rho&quot;: 7.0,        
+           &quot;guider&quot;: 2,       
+            &quot;force_uc_zero_embeddings&quot;: [&quot;cond_frames&quot;, 
+            &quot;cond_frames_without_noise&quot;],     
+            &quot;num_steps&quot;: 25,        
+           },    
+  },
+```
+
+**视频创作**
+
+**在以上准备工作完成，并且模型正确加**载后，我们就可以开始视频生成的创作了！！
+
+SVD本地部署目前仅支持图生视频，关于图片的来源，我们可以选择 AI 绘画工具如：Midjourney、Stable Diffusion等生成图片，然后再上传到 SVD进行视频的生成！！同时，可以调左侧的一些参数，控制视频的生成效果！！
+
+![](img/4031fdf1fef1f92d58115c698106c19c.png)
+
+视频生成的保存路径在 outputs 下，生成的效果如下：
+
+![](img/fe251c104afba42122d839228c890b99.png)
+
+时长00:02
+
+# —— ComfyUI部署实战 ——
+
+在本节要介绍的主题是利用ComfyUI + Stable Video Diffusion实现本地文生视频的工作流！在上一节中，介绍了在云服务器上实现SVD的视频生成的整个流程，但是发现所耗费的资源却是相当的巨大，那么有没有一种节省资源、且非常方便的方式呢？答案是肯定的！！
+
+![](img/f2ca52a49811d5457a7111c21d8de709.png)
+
+接下来，我们就开始吧！！
+
+> **硬件资源情况：**
+
++   16G内存，windows平台
+
++   显卡3070Ti，8G显存
+
+## 安装ComfyUI
+
+**安装python和Git**
+
+关于这一部分，就省略了，网上搜一搜有一堆的教程！！
+
+**克隆ComfyUI仓库**
+
+```
+git clone https://github.com/comfyanonymous/ComfyUI
+```
+
+创建python虚拟环境
+
+```
+cd  ComfyUI
+python -m venv venv
+```
+
+此时，我们会发现在ComfyUI路径下，有了一个venv的文件夹，这个里面就是创建好的python虚拟环境！
+
+![](img/8c89065037826cc81fa5688412e6b62c.png)
+
+运行.\venv\Scripts\activate切换到虚拟环境！这样就可以开始安装Pytorch和依赖包了！！相信大家都是会安装的，有问题可随时私信！！
+
+**下载模型权重和工作流**
+
+> 🎉文生视频模型权重：https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors?download=true
+
+> 图生视频模型权重：https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt.safetensors?download=true
+
+> 图片编解码模型权重：https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors?download=true
+
+将sd_**xl_bas**e_1.0.**saf**etensors 和 svd_xt.safetensors 放置于models/checkpoints下，sdxl_vae.safetensors 需放置于models/vae下关于以上模型权重和工作流同样放到了百度网盘资源里，关注公众号「魔方AI空间」，回复 【SVD】即可获取！！
+
+## 运行ComfyUI并加载工作流
+
+在以上准备工作完成后，我们就可以开始运行ComfyUI了！在命令行终端：
+
+```
+python main.py
+```
+
+在浏览器上输入上面的url地址，出现如下界面：
+
+此时，默认的ComfyUI版本不支持模型版本和node管理，这会导致安装和卸载模型时会非常麻烦！因此，我们需要安装一个ComfyUI Manager插件！
+
+```
+cd .\custom_nodes
+git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+```
+
+再次运行python main.py，就会出现Manager菜单了！！！
+
+![](img/3be71955f3e589c6cfa0f598c8b71a82.png)
+
+接下**来，我们就可**以跑文生视频**的工作**流了！！！关于工作流，我也给大家准备好了，同样放到百度网盘链接了，关注公众号「魔方AI空间」，回复 【SVD】即可获取！！工作流下载好后，我们可以使用ComfyUI菜单的load功能，进行工作流的加载！
+
+然后，点击菜单栏「Queue Prompt」就可以开始视频的生成啦！我们可以通过工作流上的绿色框看到运行的进度！！！最后，我们可以去ComfyUI目录下的output文件夹查看生成好的视频！如果我们在生成视频的过程中，出现显存溢出的问题，请往下看！！
+
+## ComfyUI性能调优
+
+切到终端，输入python main.py -h查看启动项参数，其中有显存使用策略的一组参数，分别是highvram、normalvram、lowvram和novram。
+
+其中- highvram：表示需要更多的显存做缓存，是comfyui的默认设置；
+
++   novram：表示不需要显存做缓存；缓存越多，速度越快，反之，则越慢，可根据自己电脑的显存大小来微调。
+
+![](img/35ef1a9f008f411b9af1d2d3e4783d3d.png)
+
+为了尽可能减少显存溢出问题，可直接使用novram参数启动！！！
+
+运行：
+
+```
+python main.py --novram
+```
+
+至此，我们就完成了ComfyUI+SVD视频生成的本地部署工作流的构建！如遇到问题欢迎随时交流！！！
+
+# —— 避坑指南 ——
+
+1、直接使用百度网盘里面准备好的资源，可以规避掉 90% 的坑；2、如果一直报显存溢出问题，可以调低帧数或增加novram启动参数；3、针对云部署实战部分，基础依赖模型权重有两个models–laion–CLIP-ViT-H-14-laion2B-s32B-b79K和ViT-L-14.pt，需要放到指定路径下
+
+# —— 总结 ——
+
+在 Sora发布之后，似乎在这之前的所有视频生成模型都已黯淡无光，难以与之争锋！然而 Stable Video Diffusion作为开源项目，我们可以在自己的机器上自由创作而无需充值，这也是其独特优势！从技术角度看，SVD生成的视频画质非常清晰，帧与帧之前的过渡也非常的自然，无论是背景闪烁的问题，还是人物一致性的保持都能够得到妥善解决！尽管目前只能生成最多 4 秒的视频，与 Sora生成的 60s视频差距很远，但是 SVD还在不断迭代，相信其终将再次强大！！！
+
+同时，我们会持续关注 SVD技术及前沿视频生成技术，尝试多种不同的部署微调方式，介绍更多视频生成的技术模型，更多精彩内容会在后续文章中放出，敬请期待！！！
+
+> 原文地址：https://mp.weixin.qq.com/s/le0_4VytRyNaPQucCSpE8g
