@@ -1,0 +1,304 @@
+# 谷歌（Gemma）
+
+> 来源：[https://agispace.feishu.cn/docx/WRASdXKZooaCxqxCmmKcAt9VnyR](https://agispace.feishu.cn/docx/WRASdXKZooaCxqxCmmKcAt9VnyR)
+
+# 一、简介
+
+Gemma 是 Google 基于 Gemini 技术推出的四款新型大型语言模型（LLM），提供了 2B 和 7B 两种不同规模的版本，每种都包含了预训练基础版本和经过指令优化的版本。所有版本均可在各类消费级硬件上运行，无需数据量化处理，拥有高达 8K tokens 的处理能力：
+
++   gemma-7b：7B 参数的基础模型。
+
++   gemma-7b-it：7B 参数的指令优化版本。
+
++   gemma-2b：2B 参数的基础模型。
+
++   gemma-2b-it：2B 参数的指令优化版本。
+
+![](img/2202c7ecca266a49dc39506feb7753d8.png)
+
+# 二、性能
+
+Gemma 模型的性能如何？以下是其基础版本与其他开放模型在 LLM 排行榜 上的比较（得分越高越好）：
+
+在 7B 参数级别，Gemma 表现出色，与市场上最佳模型如 Mistral 7B 不相上下。而 2B 版本的 Gemma 虽然规模较小，但在其类别中的表现也颇具竞争力，尽管在排行榜上的得分并未超越类似规模的顶尖模型，例如 Phi 2。我们期待社区对这些模型的真实使用反馈，以进一步优化和调整。
+
+需要浅浅再强调一下：LLM 排行榜特别适用于衡量预训练模型的质量，而不太适用于聊天模型。我们鼓励对聊天模型运行其他基准测试，如 MT Bench、EQ Bench 和 lmsys Arena。
+
+# 三、提示词格式
+
+Gemma 的基础模型不限定特定的提示格式。如同其他基础模型，它们能够根据输入序列生成一个合理的续接内容，适用于零样本或少样本的推理任务。这些模型也为针对特定应用场景的微调提供了坚实的基础。指令优化版本则采用了一种极其简洁的对话结构：
+
+<start_of_turn>user
+
+knock knock<end_of_turn>
+
+<start_of_turn>model
+
+who is there<end_of_turn>
+
+<start_of_turn>user
+
+LaMDA<end_of_turn>
+
+<start_of_turn>model
+
+LaMDA who?<end_of_turn>
+
+# 四、技术细节
+
+总体来说，Gemma 是一个轻量级的 SOTA 开放模型系列，在语言理解、推理和安全方面表现出了强劲的性能。
+
+![](img/267f7cbab7605a26fb4a88effe581d82.png)
+
+技术报告链接：https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf
+
+**谷歌发布了两个版本的 Gemm**a 模型，分别是 20 亿参数和 70 亿参数，**并**提供了预训练以及针对对话、指令遵循、有用性和安全性微调的 checkpoint。其中 70 亿参数的模型用于 GPU 和 TPU 上的高效部署和开发，20 亿参数的模型用于 CPU 和端侧应用程序。不同的尺寸满足不同的计算限制、应用程序和开发人员要求。
+
+Gemma 在 18 个基于文本的任务中的 11 个上优于相似参数规模的开放模型，例如问答、常识推理、数学和科学、编码等任务。
+
+下图 1 为 Gemma（7B）与 LLaMA 2（7B）、LLaMA 2（13B）和 Mistral（7B）在问答、推理、数学和科学、编码等任务上的性能比较。可以看到，Gemma（7B）表现出了优势（除了在问答任务上弱于 LLaMA 2（13B））。
+
+![](img/3607b3e63de374d2946ce13a1c639b8b.png)
+
+接下来看 Gemma 的模型架构、训练基础设施、预训练和微调方法。
+
+## **模型架构**
+
+Gemma 模型架构基于 Transformer 解码器，表 1 总结了该架构的核心参数。模型训练的上下文长度为 8192 个 token。
+
+此外，谷歌还在原始 transformer 论文的基础上进行了改进，改进的部分包括：
+
++   多查询注意力：7B 模型使用多头注意力，而 2B 检查点使用多查询注意力；
+
++   RoPE 嵌入：Gemma 在每一层中使用旋转位置嵌入，而不是使用绝对位置嵌入；此外，Gemma 还在输入和输出之间共享嵌入，以减少模型大小；
+
++   GeGLU 激活：标准 ReLU 非线性被 GeGLU 激活函数取代；
+
++   Normalizer Location：Gemma 对每个 transformer 子层的输入和输出进行归一化，这与仅对其中一个或另一个进行归一化的标准做法有所不同，RMSNorm 作为归一化层。
+
+![](img/f5df86470e4c61f0aeaef3fe6c92a381.png)
+
+![](img/145e7c8ae174a6287fa4eac0110ad018.png)
+
+## **训练基础设施**
+
+谷歌使用了自研 AI 芯片 TPUv5e 来训练 Gemma 模型：TPUv5e 部署在由 256 个芯片组成的 pod 中，配置成由 16 x 16 个芯片组成的二维环形。
+
+对于 7B 模型，谷歌在 16 个 pod（共计 4096 个 TPUv5e）上训练模型。他们通过 2 个 pod 对 2B 模型进行预训练，总计 512 TPUv5e。在一个 pod 中，谷歌对 7B 模型使用 16 路模型分片和 16 路数据复制。对于 2B 模型，只需使用 256 路数据复制。优化器状态使用类似 ZeRO-3 的技术进一步分片。在 pod 之外，谷歌使用了 Pathways 方法通过数据中心网络执行数据复制还原。
+
+## **预训练**
+
+Gemma 2B 和 7B 分别在来自网络文档、数学和代码的 2T 和 6T 主要英语数据上进行训练。与 Gemini 不同的是，这些模型不是多模态的，也不是为了在多语言任务中获得最先进的性能而训练的。
+
+为了兼容，谷歌使用了 Gemini 的 SentencePiece tokenizer 子集（Kudo 和 Richardson，2018 年）。它可以分割数字，不删除多余的空白，并遵循（Chowdhery 等人，2022 年）和（Gemini 团队，2023 年）所使用的技术，对未知 token 进行字节级编码。词汇量为 256k 个 token。
+
+## **指令调优**
+
+谷歌通过在仅文本、仅英语合成和人类生成**的 pr**ompt 响应对的混合数据上进行监督微调（SFT），以及利用在**仅英语标记的偏好数据和基于一**系列高质量 prompt 的策略上训练的奖励模型进行人类反馈强化学习（RLHF），对 Gemma 2B 和 Gemma 7B 模型进行微调。
+
+实验发现，监督微调和 RLHF 这两个阶段对于提高下游自动评估和模型输出的人类偏好评估性能都非常重要。
+
+## **监督微调**
+
+谷歌根据基于 LM 的并行评估结果来选择自己的混合数据，以进行监督微调。给定一组留出的（heldout） prompt， 谷歌从测试模型中生成响应，并从基线模型中生成相同 prompt 的响应，并要求规模更大的高性能模型来表达这两个响应之间的偏好。
+
+谷歌还构建不同的 prompt 集来突出特定的能力，例如指令遵循、真实性、创造性和安全性等。谷歌使用了不同的自动化 LM「judges」，它们采用了多种技术，比如思维链提示（chain-of-thought prompting）、对齐人类偏好等。
+
+## **格式化**
+
+指令调优模型使用特定的格式化器进行训练， 该格式化器在训练和推理时使用额外的信息来标注所有指令调优示例。这样做有以下两个目的，1）指示对话中的角色，比如用户角色；2）描述对话轮次，尤其是在多轮对话中。为了实现这两个目的，谷歌在分词器（tokenizer）中保留了特殊的控制 token。
+
+下表 3 为相关格式化控制 token，表 4 为对话示例。
+
+![](img/3b82c5670d23b4be0a4978574d77112c.png)
+
+![](img/591306f3af642bf4b1b992c538ebbd5c.png)
+
+## **人类反馈强化学习（RLHF）**
+
+谷歌使用 RLHF 对监督微调模型进一步微调，不仅从人类评分者那里收集了偏好对，还在 Bradley-Terry 模型下训练了奖励函数，这类似于 Gemini。该策略经过训练，使用一个具有针对初始调优模型的 Kullback–Leibler 正则化项的 REINFORCE 变体，对该奖励函数进行优化。
+
+与监督微调（SFT）阶段一样，为了进行超参数调优，并额外减轻奖励黑客行为，谷歌依赖高容量模型作为自动评估器，并计算与基线模型的比较结果。
+
+## **评估**
+
+谷歌通过人类偏好、自动基准和记忆等指标，在广泛的领域对 Gemma 进行了全面的评估。
+
+**人类偏好评估**
+
+除了在经过微调的模型上运行标准学术基准之外，谷歌对最终发布的候选模型进行了人类评估研究，以便与 Mistral v0.2 7B Instruct 模型进行比较。
+
+与 Mistral v0.2 7B Instruct 相比，Gemma 7B IT 的正胜率为 51.7%，Gemma 2B IT 的胜率为 41.6%。在测试基本安全协议的约 400 条 prompt 中，Gemma 7B IT 的胜率为 58%，而 Gemma 2B IT 的胜率为 56.5%。表 5 中报告了相应的数字。
+
+![](img/893898e622208bcf4ab1c0ee12e2d9bf.png)
+
+**自动基准评估**
+
+谷歌还在一系列学术基准上将 Gemma 2B 和 7B 模型与几个外部开源 LLM 进行了比较，如表 6 所示：
+
+在 MMLU 上，Gemma 7B 的表现优于相同或较小规模的所有开源模型，还优于几个较大的模型，包括 LLaMA2 13B。
+
+![](img/b17ea35873c92e9db6a39d0693992613.png)
+
+然而，基准作者对人类专家表现的评估结果是 89.8%， Gemini Ultra 是第一个超过这一阈值的模型，可以看到Gemma仍有很大的改进空间，以达到Gemini和人类水平的性能。
+
+但 Gemma 模型在数学和编码基准测试中表现比较突出。在数学任务上，Gemma 模型在 GSM8K 和更难的 MATH 基准上的表现超过其他模型至少 10 分。同样，它们在 HumanEval 上的表现比其他开源模型至少高出 6 分。Gemma 在 MBPP 上的表现甚至超过了经过代码微调的 CodeLLaMA-7B 模型（CodeLLaMA 得分为 41.4%，而 Gemma 7B 得分为 44.4%）。
+
+**记忆评估**
+
+谷歌使用 Anil 等人采用的方法测试 Gemma 的记忆能力，具体而言，他们从每个语料库中采样 10000 个文档，并使用前 50 个 token 作为模型的 prompt。在此过程中，谷歌主要关注精准记忆，如果模型生成的后续 50 个 token 与文本中的真实后续文本完全匹配，则将该文本分类为已记忆。图 2 将评估结果与同等规模的 PaLM 和 PaLM 2 模型进行了比较，结果如下所示。
+
+![](img/c196fe624bcc33265f4afb6056f8e817.png)
+
+![](img/67936dc5b3152c1c2a3987d901d6ce6f.png)
+
+**隐私数据**
+
+对大模型来说，隐私数据被记住的可能性是一件非常值得关注的事情。为了使 Gemma 预训练模型安全可靠，谷歌使用自动方法从训练集中过滤掉某些隐私信息和其他敏感数据。
+
+为了识别可能出现的隐私数据，谷歌使用 Google Cloud 数据丢失防护 (DLP) 工具。该工具根据隐私数据的类别（例如姓名、电子邮件等）输出三个严重级别。谷歌将最高严重性分类为「敏感（sensitive）」，其余两个分类为「隐私（personal）」，然后测量有多少存储的输出包含敏感或个人数据。
+
+如下图 3 所示，谷歌没有观察到存储敏感数据的情况，但确实发现 Gemma 模型会记住一些上述分类为潜在「隐私」的数据。值得注意的是，研究中使用的工具可能存在许多误报（因为其只匹配模式而不考虑上下文），这意味着实验结果可能高估了已识别的隐私数据量。
+
+![](img/feddb01079268982c8ad227a6f4c6090.png)
+
+在记忆数据量方面，如下图 4 所示，谷歌观察到大约会多出 50% 的数据被记住，并且在数据集的每个不同子类别中几乎是一致的。
+
+![](img/69420235d36a75351e08528cf8756ca6.png)
+
+最后，谷歌还通过标准化 AI 安全基准评估了 Gemma 的安全性，结果如下表 8 所示。
+
+![](img/0add9cab14407a7579615f5e1d01b4bd.png)
+
+# 五、Gemma 2
+
+Gemma 2 是 Google 最新的开放大语言模型。它有两种规模：90 亿参数和 270 亿参数，分别具有基础 (预训练) 和指令调优版本。Gemma 基于 Google DeepMind 的 Gemini，拥有 8K Tokens 的上下文长度：
+
++   gemma-2-9bhttps://hf.co/google/gemma-2-9b90 亿基础模型。
+
++   gemma-2-9b-ithttps://hf.co/google/gemma-2-9b-it90 亿基础模型的指令调优版本。
+
++   gemma-2-27bhttps://hf.co/google/gemma-2-27b270 亿基础模型。
+
++   gemma-2-27b-ithttps://hf.co/google/gemma-2-27b-it270 亿基础模型的指令调优版本。
+
+Gemma 2 模型的训练数据量约为其第一代的两倍，总计 13 万亿 Tokens (270 亿模型) 和 8 万亿 Tokens (90 亿模型) 的网页数据 (主要是英语) 、代码和数学数据。我们不知道训练数据混合的具体细节，只能猜测更大和更仔细的数据整理是性能提高的重要因素之一。
+
+Gemma 2 与第一代使用相同的许可证，这是一个允许再分发、微调、商业用途和衍生作品的宽松许可证。
+
+## 技术进展
+
+Gemma 2 与第一代有许多相似之处。它有 8192 Tokens 的上下文长度，并使用旋转位置嵌入 (RoPE())。与原始 Gemma 相比，Gemma 2 的主要进展有四点：
+
++   滑动窗口注意力: 交替使用滑动窗口和全二次注意力以提高生成质量。
+
++   Logit 软上限: 通过将 logits 缩放到固定范围来防止其过度增长，从而改进训练。
+
++   知识蒸馏: 利用较大的教师模型来训练较小的模型（适用于 90 亿模型）。
+
++   模型合并: 将两个或多个大语言模型合并成一个新的模型。
+
+Gemma 2 使用JAX和ML Pathways在Google Cloud TPU (27B on v5p和9B on TPU v4)上进行训练。Gemma 2 Instruct 已针对对话应用进行了优化，并使用监督微调 (SFT)、大模型蒸馏、人类反馈强化学习 (RLHF()) 和模型合并 (WARP) 来提高整体性能。
+
++   JAXhttps://jax.readthedocs.io/en/latest/quickstart.html
+
++   ML Pathwayshttps://blog.google/technology/ai/introducing-pathways-next-generation-ai-architecture/
+
++   Google Cloud TPU 27B on v5phttps://cloud.google.com/blog/products/ai-machine-learning/introducing-cloud-tpu-v5p-and-ai-hypercomputer?hl=en
+
++   9B on TPU v4https://cloud.google.com/tpu/docs/v4
+
+与预训练数据集混合类似，关于微调数据集或与 SFT 和RLHF相关的超参数的细节尚未共享。
+
++   RLHFhttps://hf.co/blog/rlhf
+
+### **滑动窗口注意力**
+
+滑动窗口注意力是一种用于减少 Transformer 模型中注意力计算的内存和时间需求的方法，已在Mistral等模型中使用。Gemma 2 的新颖之处在于每隔一层应用滑动窗口 (局部 - 4096 Tokens) ，而中间层仍使用全局二次注意力 (8192 Tokens) 。我们推测这是为了在长上下文情况下提高质量 (半数层仍然关注所有 Tokens) ，同时部分受益于滑动注意力的优势。
+
++   滑动窗口注意力https://hf.co/papers/2004.05150
+
++   Mistralhttps://hf.co/papers/2310.06825
+
+### **软上限和注意力实现**
+
+软上限是一种防止 logits 过度增长而不截断它们的技术。它通过将 logits 除以最大值阈值 (soft_cap)，然后通过 tanh 层 (确保它们在 (-1, 1) 范围内) ，最后再乘以阈值。这确保了最终值在 (-soft_cap, +soft_cap) 区间内，不会丢失太多信息但稳定了训练。
+
+综合起来，logits 的计算公式为：logits ← soft_cap ∗ tanh(logits/soft_cap)
+
+Gemma 2 对最终层和每个注意力层都采用了软上限。注意力 logits 上限为 50.0，最终 logits 上限为 30.0。
+
+在发布时，软上限与 Flash Attention / SDPA() 不兼容，但它们仍可用于推理以实现最高效率。Gemma 2 团队观察到，在推理过程中不使用软上限机制时，差异非常小。
+
+**注意：对于**稳定的微调运行，仍需启用软上限，因此我们建议使用 eager 注意力进行微调，而不是 SDPA。
+
+### **知识蒸馏**
+
+**知识**蒸馏是一种常用技术，用于训练较**小的** 学生 模型以模仿较大但表现更好的 教师 模型的行为。这是通过将大语言模型的下一个 Token 预测任务与教师提供的 Token 概率分布 (例如 GPT-4、Claude 或 Gemini) 结合起来，从而为学生提供更丰富的学习信号。
+
+根据 Gemma 2 技术报告，知识蒸馏用于预训练 90 亿模型，而 270 亿模型则是从头开始预训练的。
+
+在后期训练中，Gemma 2 团队生成了来自教师 (报告中未指定，但可能是 Gemini Ultra) 的多样化补全集，然后使用这些合成数据通过 SFT 训练学生模型。这也是许多开源模型的基础，如Zephyr和OpenHermes，它们完全基于较大大语言模型的合成数据进行训练。
+
++   Zephyrhttps://hf.co/HuggingFaceH4/zephyr-7b-beta
+
++   OpenHermeshttps://hf.co/teknium/OpenHermes-2.5-Mistral-7B
+
+尽管有效，但这种方法存在缺点，因为**学生和教师之间的**模型容量不匹配可能导致 训练-推理不匹配，即学生在推理期间生成的文本与训练期间看到的文本不同。
+
+为解决这个问题，Gemma 2 团队采用了“在线蒸馏”，其中学生从 SFT 提示生成补全。这些补全用于计算教师和学生 logits 之间的 KL 散度。通过在整个训练过程中最小化 KL 散度，学生能够准确地模拟教师的行为，同时最小化训练-推理不匹配。
+
++   “在线蒸馏”https://arxiv.org/pdf/2306.13649
+
+这种方法非常有趣，正如我们在社区中看到的那样，在线 DPO 等在线方法会产生更强的模型，而在线蒸馏的一个优势在于只需要教师的 logits，因此无需依赖奖励模型或大语言模型作为评审员来改进模型。我们期待看到这种方法在未来几个月中是否会在微调人员中变得更受欢迎！
+
+### **模型合并**
+
+模型合并是一种将两个或多个大语言模型合并成一个新模型的技术。这是相对较新和实验性的，可以不使用加速器进行。Mergekit是一个流行的开源工具包，用于合并大语言模型。它实现了线性、SLERP、TIES、DARE 和其他合并技术。
+
++   模型合并https://hf.co/blog/mlabonne/merge-models
+
++   Mergekithttps://github.com/arcee-ai/mergekit
+
+根据技术报告，Gemma 2 使用了Warp，这是一种新型合并技术，分三个独特阶段进行合并：
+
++   Warphttps://arxiv.org/abs/2406.16768
+
+1.  指数移动平均 (EMA)：在强化学习 (RL) 微调过程中应用。
+
+1.  球形线性插值 (SLERP)：在多个策略的 RL 微调后应用。
+
+1.  向初始化线性插值 (LITI)：在 SLERP 阶段之后应用。
+
+## **Gemma 2 的评估**
+
+Gemma 模型的表现如何？以下是根据技术报告和新版开源 LLM 排行榜对其他开源开放模型的性能比较。
+
++   开源 LLM 排行榜https://hf.co/spaces/HuggingFaceH4/open_llm_leaderboard
+
+### **技术报告结果**
+
+Gemma 2 的技术报告比较了不同开源 LLM 在之前开源 LLM 排行榜基准上的性能。
+
+该报告还比较了小型语言模型的性能。
+
+### **开源 LLM 排行榜结果**
+
+**注**意：我们目前正在新的开源 LLM 排行榜基准上单独评估 Google Gemma 2，并将在今天晚些时候更新此部分。
+
+## **如何提示 Gemma 2**
+
+基础模型没有提示格式。像其他基础模型一样，它们可以用于继续输入序列的合理延续或零样本/少样本推理。指令版本有一个非常简单的对话结构：
+
+```
+&lt;start_of_turn&gt;user
+knock knock&lt;end_of_turn&gt;
+&lt;start_of_turn&gt;model
+who is there&lt;end_of_turn&gt;
+&lt;start_of_turn&gt;user
+LaMDA&lt;end_of_turn&gt;
+&lt;start_of_turn&gt;model
+LaMDA who?&lt;end_of_turn&gt;&lt;eos&gt;
+```
+
+必须精确地复制此格式才能有效使用。稍后我们将展示如何使用 transformers 中的聊天模板轻松地复制指令提示。
