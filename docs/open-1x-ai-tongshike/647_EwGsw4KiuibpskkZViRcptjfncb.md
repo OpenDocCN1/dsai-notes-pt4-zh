@@ -1,0 +1,89 @@
+# 我们可以如何帮助学习者？
+
+> 来源：[https://datawhaler.feishu.cn/docx/UvJ8dP10hoXcqWxhNvScFl9Rn1e](https://datawhaler.feishu.cn/docx/UvJ8dP10hoXcqWxhNvScFl9Rn1e)
+
+# 微学习快速上手和体验
+
+**微学习**好的点？
+
+1.  【5】短平快、快速复现和迁移、跟短视频模式很像，适合碎片化学习
+
+1.  【1】像大学的选课，大家可以选择自己感兴趣的课程，但是每一个课不会特别复杂
+
+1.  【2】学习压力小
+
+1.  【4】吸引更多的创作者、激励大家创作
+
+1.  【2】很快地跟学习者接触和反馈，解决沟通和连接的问题、快速迭代创作
+
+---
+
+**微学习**不好的点
+
+1.  碎片化的教程不够系统、学习者跟不下去就觉得写的不好
+
+1.  【3】读者和创作者的链接不是很好、反馈链路不好、
+
+1.  不知道怎么跟学习者聊、读者不主动问、
+
+1.  【2】没有稳定的内容方向、方向太多、关注不了提问
+
+1.  运营的成本高？比传统的组队学习？
+
+1.  缺乏深度思考
+
+1.  打卡链路长、
+
+后续可以这样改善
+
+> 后续可在每次开展微学习前、和创作者沟通一遍
+
+1.  尽量做到小节单课自闭环、不要给太多的限制
+
+1.  可以用小的教程吸引学习者学习系统课程
+
+1.  更好地收集反馈和沟通
+
+1.  修改群备注、让学习者能对应@
+
+1.  教程开头引导学习者直接评论
+
+1.  创作者主动在群里分享和讨论、发起议题
+
+1.  直接拿学习者的评论截图来在群里教学和展开讨论
+
+1.  教程增加**小作业**、激励学习者做作业 & 群内分享
+
+1.  按需开展**交流讨论会议/群语音**、直接拉一些感兴趣的学习者来交流
+
+# 组队学习深入技术和原理
+
+# 夏令营冬令营做有价值的项目
+
+# 如何在共建指南上操作
+
+> 立Flag、查询创作卡片、投稿Flag、补充内容信息等
+
+> 内容还在创作中可以先[【](https://datawhaler.feishu.cn/share/base/form/shrcn13VsORqTwbGqOXKJLuhYqc)[**立Flag】**](https://datawhaler.feishu.cn/share/base/form/shrcn13VsORqTwbGqOXKJLuhYqc)、互相督促、链接共创~
+
+> 立下Flag，可以事半功倍哟~
+
+![](img/68a999f60092bea668bb0076da74b05d.png)
+
+> 可以[**【查询你的创作卡片】**](https://datawhaler.feishu.cn/share/base/form/shrcn13VsORqTwbGqOXKJLuhYqc)、了解当前已创作的方向和历史
+
+![](img/ed165f99f12dd542b27c2ccaefcdcab8.png)
+
+> [**【投稿Flag】**](https://datawhaler.feishu.cn/share/base/form/shrcn13VsORqTwbGqOXKJLuhYqc)，需要查看提交记录，进行对应的修改
+
+![](img/2aca8b5e76ff7f27f1d5a3ace8f1b2ce.png)
+
+> [**【补充内容信息】**](https://datawhaler.feishu.cn/share/base/query/shrcnyZNW8lN8i1QSjcWItCkKVv)，需要联系Amy添加飞书账号、开通权限
+
+![](img/492badde4b79108f6f08f1b708f34f51.png)
+
+## 修改Flag
+
++   修改Flag
+
+##
