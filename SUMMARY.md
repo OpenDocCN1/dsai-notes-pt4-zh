@@ -5,6 +5,7 @@
 +   [【AI星球】 星知万象知识库（持续建设中）](docs/ai-xingqiu-zhishiku/README.md)
 +   [AI研习社](docs/ai-yanxishe/README.md)
 +   [🥇「AI 知识库」 首页](docs/ai-zhishiku/README.md)
++   [奔赴AGI](docs/aigc-chuangyi-lieren/README.md)
 +   [ChatGPT 超神之路](docs/chatgpt-chaoshen-zhilu/README.md)
 +   [ChatGPT知识库首页💾](docs/chatgpt-zhishiku/README.md)
 +   [Zelina的个人说明书](docs/di-25-xiaoshi/README.md)
