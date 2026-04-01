@@ -1,4 +1,4 @@
-+   [奔赴AGI](README.md)
++   [AIGC 创意猎人](README.md)
 +   [近期活动&福利](0003_Nn6pwVbSTihlfTkyYS0cEhvznvf.md)
 +   [AI启航](0004_Qzj3wAfefi6qlnkPuc1c0Lvtnip.md)
 +   [使用 ChatGPT 原理学会一切知识](0005_XWXnwibLxiUzutkKZQfcnHZPnsf.md)

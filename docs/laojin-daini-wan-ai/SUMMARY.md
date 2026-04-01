@@ -1,4 +1,4 @@
-+   [个人开源 AI 知识库（老铁点个 赞 谢谢）](README.md)
++   [老金带你玩 AI](README.md)
 +   [AI相关常见名词解释](001_OSHAwzyw9iHS3rkZ1JZcJwnCnjh.md)
 +   [元：最小可治理单元。时代的分水岭，是解决复杂问题的能力！](002_BiXkwWroNiwolZkRu5dceCDInxD.md)
 +   [Claude Code  x OpenClaw 双顶流中文教程](003_WWTowljKriTaDzkqH8mc2Hv8nnh.md)

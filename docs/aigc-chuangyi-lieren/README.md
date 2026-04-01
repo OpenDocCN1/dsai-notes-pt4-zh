@@ -1,3 +1,5 @@
+# AIGC 创意猎人
+
 # 奔赴AGI
 
 > 来源：[https://aigcreative.feishu.cn/docx/BbZfd0KMfooLJ0xSxf8c5SCTnKg](https://aigcreative.feishu.cn/docx/BbZfd0KMfooLJ0xSxf8c5SCTnKg)

@@ -1,4 +1,4 @@
-+   [为什么要做这个项目](README.md)
++   [思源 AIGC](README.md)
 +   [引言--为何我们要学习ChatGPT](01_HOijwrEnbijxqZkDWnecxCHInGh.md)
 +   [OpenAI可以做什么(官方)](02_Mivxw5Xzfixv8hkbqGzc2qMknYb.md)
 +   [官方学习资料](03_ByBDwLqBUiuc50kTFCXct6OCnPf.md)
