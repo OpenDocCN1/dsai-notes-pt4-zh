@@ -1,0 +1,370 @@
+# 1.2文本表示方法
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/OuQhdCd4AoX99gx5Uencg7ycnog](https://v11enp9ok1h.feishu.cn/docx/OuQhdCd4AoX99gx5Uencg7ycnog)
+
+> 文本表示是自然语言处理（NLP）中的基础任务，它将非结构化的文本数据转化为计算机可以处理的数值形式。
+
+本文将系统介绍 NLP 中常用的文本表示方法，从传统方法到现代深度学习技术，帮助读者全面理解这一核心概念。
+
+---
+
+## 传统文本表示
+
+### 词袋模型（Bag of Words）
+
+词袋模型是最简单的文本表示方法之一，它将文本视为一个无序的词汇集合。
+
+#### 基本概念
+
++   忽略词语顺序和语法，只关注词语是否出现
+
++   构建词汇表，统计每个词在文档中出现的次数
+
++   最终表示为一个高维稀疏向量
+
+#### 代码示例
+
+## 实例
+
+```
+from sklearn.feature_extraction.text import CountVectorizer
+
+corpus = [
+    &#x27;This is the first document.&#x27;,
+    &#x27;This document is the second document.&#x27;,
+    &#x27;And this is the third one.&#x27;,
+    &#x27;Is this the first document?&#x27;
+]
+
+vectorizer = CountVectorizer()
+X = vectorizer.fit_transform(corpus)
+print(vectorizer.get_feature_names_out())
+print(X.toarray())
+```
+
+#### 优缺点分析
+
+**✅ 优点：**
+
++   实现简单，计算效率高
+
++   适用于小规模数据集和简单任务
+
+**❌ 缺点：**
+
++   忽略词序和语义信息
+
++   高维稀疏性问题
+
++   无法处理同义词和多义词
+
+### TF-IDF
+
+TF-IDF（Term Frequency-Inverse Document Frequency）是对词袋模型的改进，考虑了词语在整个语料库中的重要性。
+
+#### 计算公式
+
++   TF（词频）：词在文档中出现的次数 / 文档总词数
+
++   IDF（逆文档频率）：log(文档总数 / 包含该词的文档数)
+
++   TF-IDF = TF × IDF
+
+#### 代码实现
+
+## 实例
+
+```
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+tfidf_vectorizer = TfidfVectorizer()
+X_tfidf = tfidf_vectorizer.fit_transform(corpus)
+print(tfidf_vectorizer.get_feature_names_out())
+print(X_tfidf.toarray())
+```
+
+#### 优缺点
+
+✅ 优点：
+
++   降低常见词的影响，突出重要词
+
++   比简单词袋模型效果更好
+
+❌ 缺点：
+
++   仍然无法捕捉语义关系
+
++   高维问题依然存在
+
+### N-gram 模型
+
+N-gram 模型考虑了词语的顺序信息，通过连续n个词的组合来表示文本。
+
+#### 常见类型
+
++   Unigram (1-gram)：单个词
+
++   Bigram (2-gram)：两个连续词的组合
+
++   Trigram (3-gram)：三个连续词的组合
+
+#### 代码示例
+
+## 实例
+
+```
+bigram_vectorizer = CountVectorizer(ngram_range=(2, 2))
+X_bigram = bigram_vectorizer.fit_transform(corpus)
+print(bigram_vectorizer.get_feature_names_out())
+```
+
+#### 优缺点
+
+✅ 优点：
+
++   捕捉局部词序信息
+
++   可以表示短语和固定搭配
+
+❌ 缺点：
+
++   维度爆炸问题更严重
+
++   仍然无法处理长距离依赖
+
+## 词向量表示
+
+### Word2Vec 原理与实现
+
+Word2Vec 是一种基于神经网络的词向量表示方法，由 Google 在 2013 年提出。
+
+#### 两种模型架构
+
+1.  CBOW（Continuous Bag of Words）：通过上下文预测当前词
+
+1.  **Skip-gram**：通过当前词预测上下文
+
+#### 代码实现
+
+## 实例
+
+```
+from gensim.models import Word2Vec
+
+sentences = [[&quot;cat&quot;, &quot;say&quot;, &quot;meow&quot;], [&quot;dog&quot;, &quot;say&quot;, &quot;woof&quot;]]
+model = Word2Vec(sentences, vector_size=100, window=5, min_count=1, workers=4)
+
+# 获取词向量
+vector = model.wv[&#x27;cat&#x27;]
+# 找相似词
+similar_words = model.wv.most_similar(&#x27;cat&#x27;)
+```
+
+#### 特点
+
++   低维稠密向量（通常50-300维）
+
++   可以捕捉词语的语义和语法关系
+
++   支持向量运算（如：king - man + woman ≈ queen）
+
+### GloVe 词向量
+
+GloVe（Global Vectors for Word Representation）结合了全局统计信息和局部上下文窗口的优点。
+
+#### 核心思想
+
++   基于词共现矩阵
+
++   优化目标是使两个词的向量点积等于它们共现次数的对数
+
+#### 与 Word2Vec 对比
+
+### FastText
+
+FastText 是 Facebook 开发的词向量模型，特点是考虑子词（subword）信息。
+
+#### 主要特点
+
++   将词表示为字符n-gram的集合
+
++   可以处理未登录词（OOV）
+
++   特别适合形态丰富的语言
+
+#### 代码示例
+
+## 实例
+
+```
+from gensim.models import FastText
+
+model = FastText(sentences, vector_size=100, window=5, min_count=1, workers=4)
+# 即使单词不在词典中也能获得向量
+vector = model.wv[&#x27;unseenword&#x27;]
+```
+
+## 上下文感知的表示
+
+### ELMo 模型
+
+ELMo（Embeddings from Language Models）是最早的上下文相关词表示方法之一。
+
+#### 核心特点
+
++   基于双向LSTM语言模型
+
++   词语的表示取决于整个输入句子
+
++   生成多层表示（可以组合不同层次的语义）
+
+#### 架构示意图
+
+![](img/3f834bfa2d6958189763b48d0b3d4413.png)
+
+### BERT 及其变体
+
+BERT（Bidirectional Encoder Representations from Transformers）是 Google 提出的预训练语言模型。
+
+#### 关键创新
+
++   Transformer 架构
+
++   掩码语言模型（MLM）训练目标
+
++   下一句预测（NSP）任务
+
+#### 常见变体
+
+1.  **RoBERTa**：优化训练策略
+
+1.  **DistilBERT**：轻量版BERT
+
+1.  **ALBERT**：参数共享减少模型大小
+
+#### 代码示例
+
+## 实例
+
+```
+from transformers import BertTokenizer, BertModel
+
+tokenizer = BertTokenizer.from_pretrained(&#x27;bert-base-uncased&#x27;)
+model = BertModel.from_pretrained(&#x27;bert-base-uncased&#x27;)
+
+inputs = tokenizer(&quot;Hello, my dog is cute&quot;, return_tensors=&quot;pt&quot;)
+outputs = model(**inputs)
+last_hidden_states = outputs.last_hidden_state
+```
+
+### 预训练语言模型概述
+
+现代NLP主要使用预训练+微调范式：
+
+1.  **预训练阶段**：在大规模语料上训练通用语言表示
+
+1.  **微调阶段**：在特定任务数据上调整模型参数
+
+#### 模型比较
+
+## 文档级表示
+
+### Doc2Vec
+
+Doc2Vec 是 Word2Vec 的扩展，可以直接学习文档的向量表示。
+
+#### 两种模型
+
+1.  PV-DM（Distributed Memory）：类似CBOW，加入文档ID
+
+1.  PV-DBOW（Distributed Bag of Words）：类似Skip-gram
+
+#### 代码示例
+
+```
+from gensim.models import Doc2Vec
+from gensim.models.doc2vec import TaggedDocument
+
+documents = [TaggedDocument(doc, [i]) for i, doc in enumerate(corpus)]
+model = Doc2Vec(documents, vector_size=100, window=5, min_count=1, workers=4)
+vector = model.infer_vector([&quot;new&quot;, &quot;document&quot;, &quot;text&quot;])
+```
+
+### 句向量与文档向量
+
+#### 常用方法
+
+1.  **平均法**：对词向量取平均
+
+1.  **SIF**：平滑逆频率加权平均
+
+1.  **BERT句向量**：使用[CLS]标记或平均所有词向量
+
+#### 代码示例（使用Sentence-BERT）
+
+```
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer(&#x27;all-MiniLM-L6-v2&#x27;)
+sentences = [&quot;This is an example sentence&quot;, &quot;Each sentence is converted&quot;]
+embeddings = model.encode(sentences)
+```
+
+### 主题模型（LDA）
+
+潜在狄利克雷分配（LDA）是一种无监督的主题建模方法。
+
+#### 基本原理
+
++   将文档表示为多个主题的混合
+
++   每个主题是词语的概率分布
+
++   通过变分推断或Gibbs采样学习
+
+#### 代码示例
+
+```
+from sklearn.decomposition import LatentDirichletAllocation
+from sklearn.feature_extraction.text import CountVectorizer
+
+vectorizer = CountVectorizer()
+X = vectorizer.fit_transform(corpus)
+lda = LatentDirichletAllocation(n_components=2)
+lda.fit(X)
+```
+
+#### 应用场景
+
++   文档聚类
+
++   内容推荐
+
++   文本摘要
+
+---
+
+## 总结
+
+文本表示方法的发展经历了从简单统计到深度学习的演进：
+
+1.  **传统方法**：简单高效，适合小规模数据
+
+1.  **词向量**：捕捉语义关系，维度低
+
+1.  **上下文感知模型**：动态表示，效果最好但计算成本高
+
+1.  **文档表示**：从词级别扩展到文档级别
+
+选择文本表示方法时应考虑：
+
++   任务需求（是否需要语义理解）
+
++   数据规模
+
++   计算资源
+
++   语言特性
+
+随着大语言模型的发展，文本表示技术仍在快速演进，但理解这些基础方法对于掌握NLP仍然至关重要。

@@ -1,0 +1,51 @@
+# 4.3 研究 · 解决方案
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/DF2bdu1xno2vVbxhWJIcLsrxnzh](https://v11enp9ok1h.feishu.cn/docx/DF2bdu1xno2vVbxhWJIcLsrxnzh)
+
+<https://v11enp9ok1h.feishu.cn/sync/PaIIdslbxsIJUIbkTfPcsMCFnph>
+
+<https://v11enp9ok1h.feishu.cn/sync/VztedzIoUstVPDb6RNMctK8Unie>
+
+我们将根据我们的行业落地经验，持续更新 GLM模型 在各个行业中的应用方案。
+
+与此同时，我们也欢迎有需求和想法的伙伴，共同建设。这包括：
+
+## 1、提交场景问题，我们来设计方案
+
+> 如果您有比较好的应用场景，但
+
+>
+
+> 1）对大模型了解不多，无法设计一个实用的解决方案；
+
+> 2）有较强的场景需求，但是没有足够的人力、物力设计方案；
+
+>
+
+> [请详细描述](https://lslfd0slxc.feishu.cn/share/base/form/shrcnqofLQhENlWiEiw6e4WISQf)您的场景，并通过 [ 问卷 1 ]进行提交。我们将根据问题进行方案设计。并在本文档进行公开。公开前，我们将会提前联系到您，并将相关内容发送到您，进行确认。
+
+## 2、提交应用方案，我们来做验证
+
+> 如果您有针对某些场景的应用方案（该方案可以是流程图设计或 PPT，也可以是完整的代码方案），
+
++   1）自己缺乏资源或经验去验证方案的有效性；
+
++   2）希望自己的方案能够被更多人关注和使用（例如开源项目）
+
+> 我们欢迎您通过 「[问卷 2](https://lslfd0slxc.feishu.cn/share/base/form/shrcnxp9gzN6GjDHz3Akohn8gCc) 」进行提交。我们将对方案进行验证，并优化。对于验证合格者，我们将公开并推广该项目，并颁发认证证书以及签署其他可能的合作。
+
+## 3、抱团刷经验
+
+> 如果您有超强的代码能力或产品解决方案能力，但
+
++   1）限于工作内容，没有机会参与到大模型应用的项目；
+
++   2）自己还是学生，没有机会参与到真实应用场景的项目；
+
++   3）单纯想参与到 glm 的相关开源组织
+
+> 我们欢迎您通过 「[问卷 3](https://lslfd0slxc.feishu.cn/share/base/form/shrcnURAsmQXrquxYy9kji5Ggfc) 」进行报名。我们将针对报名的开发者进行审核和沟通。我们将为开发者提供模型、算力和现金的支持，并进行项目开发的人力组织和项目分配。
+
++   对于参与到开源组织的开发者，并做出贡献的开发者，我们将颁发相关证明，并给予一定的奖励；
+
++   优异者，我们将优先录用

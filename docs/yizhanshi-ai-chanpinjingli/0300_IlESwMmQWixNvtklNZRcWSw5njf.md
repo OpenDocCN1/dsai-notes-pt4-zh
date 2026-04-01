@@ -1,0 +1,263 @@
+# Vision Transformer
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/LLyQdGN8yoDbK3x96TAcDtcLn2b](https://v11enp9ok1h.feishu.cn/docx/LLyQdGN8yoDbK3x96TAcDtcLn2b)
+
+# 一、Vision Transformer 预训练大模型入门
+
+> **多模态统一的第一步是架**构统一，因此如何将transformer**应用在**传统的CV任务里面变得尤为重要，下面就介绍transformer是如何替代CNN充当视觉任务的骨干网络。
+
+## **ViT**
+
+> 回想在NLP里面，**text** 通过**tokenization**的过程变成了**token****序列，那么对应visio****n里面的tokeniza**tion过程是什么呢？有一种简单直观的想法，切分patch，过程如下
+
+![](img/1ad34b18b139cbdf8359645d155defd6.png)
+
++   输入224×224的图片，切分成16×16像素的patch，因此变成了14×14的grid，由于原始输入是通**道为3的RGB**图片，因此每个格点是16×16×3=768维度的feature
+
++   数学化表达上述过程，就是假设图片  ，沿着长和宽切分成 N 个P×P 的patch，其中N=HW/P2，则最终得到的输入为
+
++   这样N=196就类比于NLP中的序列长度了
+
++   这里切分既可以通过对原始像素做**reshape**和**transpose**实现，也可以用s=16且k=16的卷积实现，同时引入了可学习的映射过程
+
+```
+Conv2d(3, 768, kernel_size=(16, 16), stride=(16, 16))
+```
+
+> **CLS token****: 此外为了方便下****游做全**局任务**(例如图像分类)，**添加可学习的 CLS token ，放在网络最前面，因此序列长度为197。用 CLS token 对应的输出做全局信息获取做下游分类任务即可。
+
+>
+
+> **PE: **由于transfor**mer本身**对位置无**感，因**此需要把位置信息encode进行，ViT引入了可学习的**绝对位置编码(**learn**able abso**lute PE)。如上**图示例中划分成**了9个**patch，再加上 C****LS token**，**因此可学的位**置编码有10个网络结构：所有patch token之间信息相互可见，因此使用了标准的pre-norm的encoder结构
+
+## ** ViT-22B**
+
+N[LP那边网络可](https://arxiv.org/abs/2302.05442)以scale到175B的大小，那么ViT是否也能轻松scale呢？貌似看起来也不是那么容易。ViT-22B 中做了3个改动才成功把网络放大到22B，如下所示
+
++   对**query**和**key**做了额外的前置**LayerNorm**，否则导致训练不稳定。下图绿色就加了前置LayerNorm的，红色就是没有加前置LayerNorm的
+
+>
+
++   对MHA和FFN做了并行化改造，这样并行度更高，减少训练耗时
+
+>
+
++   移除了input projection和LayerNorm后面的bias
+
+![](img/60140fdead6775f4a8d9e8824f8eb985.png)
+
+**改进后的****tran**sformer block如下所示
+
+![](img/b93f2dd70ed84670d1695e399c448736.png)
+
+**完整的参数量对比如下所示**
+
+![](img/3b0eefb7cd34bd696128b83af9f9669c.png)
+
+参数计算公式可参考本系列[（2）初探LLM基座模型](https://ywh1bkansf.feishu.cn/wiki/UU9pwtOFtiKIqAkQiSVc3Zdun7e) 文章内容
+
+![](img/a9ae9431571113e145bca4bcb5b5bde6.png)
+
+[**PS:**](https://arxiv.org/abs/2106.04560)** Vi**[**T-G**](https://arxiv.org/abs/2209.06794)**和**ViT-e分别来自[论文1]和[论文2]
+
+##  Swin Transformer
+
+> 从上文可知ViT的序列长度是跟分辨率大小成正比的，而transformer结构的计算复杂度又跟序列长度呈平方关系，因此当下游任务的分辨率线性增长时，ViT的计算复杂度呈平方量级增长，计算效率显著下降。
+
++   如何解耦分辨率和计算量，成了Swin Transformer需要解决的问题。具体来说通过3个过程实现
+
++   窗口内信息交换。划分窗口，在窗口内做self-attention，实现完全信息交换
+
++   相邻窗口间信息交换。通过shift方式实现相邻窗口的信息交换。
+
++   远距离窗口间信息交换。窗口合并，扩大窗口覆盖原始像素面积，使相距更远的窗口可以交换信息
+
+下面详细介绍Swin Transformer的处理过程。
+
+**网络总览**
+
+借用[这篇文章](https://zhuanlan.zhihu.com/p/507105020)的图，网络整体分成了4个stage，每个stage由若干block组成，block数量分别是2-2-6-2
+
+![](img/a02b12b9454fbbc27810da02da0794c5.png)
+
+**窗口内信息交换**
+
+> 首先对原始(224,224,3)的输入图片做4×4的patch划分，映射feature维度为96，因此经过第一层之后tensor的尺寸为(224/4,224/4,96)=(56,56,96)
+
+> 不同于ViT的W-MSA直接把56×56=3136的序列直接输入transformer，Swin的SW-MSA对此做进一步窗口划分，大小为7×7，因此可以得到8×8=64个7×7=49大小的patch窗口，输出tensor尺寸为(64,49,96)
+
+> 这样有64组(49,96)的序列独立做self-attention，实现了patch窗口内的信息交换，做完之后重新reshape回到输入的(56,56,96)大小
+
+> 下图展示的是4×4个patch为1个窗口的例子，实际中是7×7个patch为1个窗口
+
+![](img/f3e8c49d0f768936bde3ff33a602ff2c.png)
+
+从[（2）初探LLM基座模型](https://ywh1bkansf.feishu.cn/wiki/UU9pwtOFtiKIqAkQiSVc3Zdun7e) 中我们知道，ViT的计算量公式为
+
+![](img/8e88e281c0d39ecd2215f7785e34d684.png)
+
+因此**W-MSA**的计算量为
+
+![](img/5abec3b50c5eb91eee108b42498ddd2a.png)
+
+**SW-MSA**将输入**h****×****w**切成了若干个**M****×****M**的patch窗口，因此可以得到计算量为
+
+![](img/fe9329cb18b566b055b3e481b34ab094.png)
+
+可见计算复杂度从**W-MSA**的  降成了**SW-MSA**的
+
+**相邻窗口间信息交换**
+
+上述结构确实降低了计算量，但是也造成了窗口之间的信息割裂，不同窗口间的像素永远无法做信息交互。一种解决方法就是将patch窗口划分方式进行shift，如下所示分别朝右和朝下循环位移半个窗口，形成了9个新窗口。
+
+经过这样的操作，对于P点像素，在Layer L中跟左上角窗口内的像素做信息交换，到了Layer L+1之后可以跟0号窗口内的像素做信息交互，不会出现信息闭塞的问题。
+
+![](img/f6063680707d1d61b50dfeda2c3775c9.png)
+
+但不难发现，如果按照naive的方式实现上述流程，从4个窗口变成了9个窗口，会增加了额外的计算复杂度。因此一种解决方案就是把边角的窗口拼接在一起，用mask掩码保证信息隔离跟原来拼接前完全等效。具体来说，把(0), (1, 2), (3, 6)和(4, 5, 7, 8)通过shift操作拼接在一起，形成4个新窗口
+
+```
+shift_size = window_size // 2
+ shift_windows: (C, H, W) 
+torch.roll(shift_windows, shifts=(shift_size, shift_size), dims=(1, 2) 
+```
+
+如下所示
+
+![](img/9acc1dd1e2b470eb4a40507b312c99da.png)
+
+掩码添加非常巧妙，黄色代表mask掉，即禁止信息交互。大家可以自行推导一下
+
++   Hint1：把每个window内的像素从左到右，从上到下展开成长向量vector，代表窗口掩码的行和列下标
+
++   Hint2：保证每个数字内像素点可以相互交互，不同数字间的像素点要被黄色mask掉
+
+注意最后做完masked-attention之后，调用 torch.roll 循环位移回来即可
+
+**远距离窗口间信息交换**
+
+只有上述窗口内信息交换和相邻窗口信息交换还是不够，因为没法实现长距离的信息交换，因此类似CNN堆叠stage增大感受野，Swin也引入了多stage概念，每个stage中间会进行window的合并和特征维度的扩增，代码中叫Merging模块
+
+这个过程跟spatial_to_depth比较像，spatial_resolutin减半，feature增加
+
+```
+ input_feature: (1, 56, 56, 96)
+ (1, 56, 56, 96) -&gt; (1, 28, 28, 96)*4 -&gt; (1, 28, 28, 384)
+input_feature_0 = input_feature[:, 0::2, 0::2, :]
+input_feature_1 = input_feature[:, 1::2, 0::2, :]
+input_feature_2 = input_feature[:, 0::2, 1::2, :]
+input_feature_3 = input_feature[:, 1::2, 1::2, :]
+input_feature = torch.cat([input_feature_0, input_feature_1, input_feature_2, input_feature_3], -1)
+```
+
+至此，Swin Transformer设计了窗口内，相邻窗口，远距离窗口的3种信息交换过程，实现了计算量大幅下降的同时，保证信息能自由流动
+
+# ** MAE**
+
+对Vision Transformer有了基本认识之后，下面介绍几个比较重要的应用，扩展对Vision Transformer应用案例的认知。
+
+其中一个是使用 [MAE](https://arxiv.org/abs/2111.06377) (Masked Autoencoders)做无监督训练。如下所示
+
+![](img/fee77cf066f0bba79b9e1cc9e7f91dd2.png)
+
++   MAE把问题建模成类似BERT里面的完形填空，将patch看作视觉完形填空的对象
+
++   整体架构是encoder-decoder的transformer结构，但是注意decoder没有cross-attention
+
++   encoder部分。随机把高达75%的patch给mask掉，将剩下patch喂入ViT-like结构的encoder里面
+
++   decoder部分。 可学习的[MASK] token 代表前面被mask掉的patch的编码，拼接上encoder对剩余patch的编码，重新排序后喂入d**ecoder做full**-self-attention，最后decoder的输出就是重建每个patch的像素值，具体来说是16×16×3=768个值
+
++   最后将重建的像素和输入图像做均方误差loss监督即可
+
+MAE的其中一个亮点是训练比较快，原因是
+
++   encoder部分只把mask之后剩余的patch喂入网络，因此序列长度减少到原始数量的1/4左右
+
++   decoder虽然需要所有位置的patch输入，但是由于大小比encoder小一个数量级，因此使用起来也很高效
+
+# BEiT
+
+不同于MAE把像素级的原始patch作为重建对象，BEiT把抽象的vision token作为重建的对象，如下所示
+
+![](img/8644eb758dc89fcddfc7be0f3b14f9fe.png)
+
+重建目标vision token直接来自DALL-E论文开源的码本，该码本是通过dVAE的方式重建学习而来。dVAE的训练方式将在下一篇《AIGC组成原理》中做展开介绍
+
+除了重建目标不同，BEiT的网络只由Encoder组成，此**外mask掉的pa**tch直接用可学习的 [M] token 替代
+
+PS: BEiTv2使用了VQ-VAE的方式重建teacher的特征(例如CLIP)，最后得到每个patch的vision tokens码本。VQ-VAE的训练方式将在下一篇《AIGC组成原理》中做展开介绍
+
+![](img/a623a119473f6017184ea268aee48c25.png)
+
+#  TimeSFormer
+
+除了使用Vision Transformer做无监督训练，还有使用Vision Transformer做视频动作分类。顾名思义，就是给定一段视频片段，要求算法返回视频包含的动作类别。这里核心要解决的是在计算复杂度受限的情况下，如何在空间维度和时间维度分配transformer的注意力计算。
+
+TimeSFormer对此作了多种拆解的探究，如下所示
+
+![](img/b255a3baab8fac7bf412091a055d5f9d.png)
+
+Space Attention (S)。只保留空间的注意力，相当于单帧做，不考虑时序间的信息交流。对应下图(S)列，红色patch就是蓝色patch的注意力范围
+
+Joint Space-Time Attention (ST)。空间和时间进行完整的注意力，相当于每一个patch都能获取到空间和时间的所有信息。对应下图(ST)列，红色patch就是蓝色patch的注意力范围
+
+Divided Space-Time Attention (T+S)。空间维度自己做注意力，时间维度自己做注意力。对应下图(T+S)列，绿色patch就是蓝色patch在时间维度的注意力范围，红色patch就是蓝色patch在空间维度注意力范围，这里两个独立的注意力模块
+
+Sparse Local Global Attention (L+G)。按照空间距离使用不同的注意力模块。对应下图(L+G)列，粉色patch就是蓝色patch在距离为0的注意力范围，黄色patch就是蓝色patch在距离为1的注意力范围，紫色patch就是蓝色patch在距离为3的注意力范围，这里有3个独立的注意力模块
+
+Axial Attention (T+W+H)。按照特征维度使用不同的注意力模块。对应下图(T+W+H)列，绿色patch就是蓝色patch在T维度的注意力范围，黄色patch就是蓝色patch在W维度的注意力范围，紫色patch就是蓝色patch在H维度的注意力范围，这里有3个独立的注意力模块
+
+![](img/7e6814f5034c5cdc3ed21f3e25027e73.png)
+
+最后TimeSFormer发现T+S效果最好
+
+# BEVFormer
+
+作为Vision Transformer入门的最后一部分，我们来看个不一样的例子，这就是几乎快成为自动驾驶标配的BEVFormer网络结构。核心知识点如下
+
++   BEV就是BirdEye View的缩写，即从上往下看的平面俯视图。
+
++   整体使用的是encoder-decoder架构，其中decoder包含cross-attention
+
++   encoder部分。BEVFormer的视觉主干并没有使用ViT进行feature抽取，但是从原理上可以将CNN替换成ViT或者Swin Transformer
+
++   decoder部分。BEVFormer本质上是借助多视角的相机信息做隐式的多视几何(Multiview Geometry)，通过learnable query和cross-attention机制把图片空间的feature整合到了BEV空间中
+
+下面详细说说decoder计算过程(简单起见忽略时间维度)，如下所示
+
+![](img/8b7a73842a5537a6d4638dc46345a1fd.png)
+
++   前面encoder已经得到了每个camera不同网络深度的feature，简化表达为
+
++   在BEV坐标系下对车辆周边空间做网格划分，其中 代表空间中的一点，每个点对应一个learnable query，即
+
++   考察每个 对应的encoder输出
+
+- 通过相机外参和内参，把 映射到各个相机的像素平面
+
+- 利用Deformable Attention机制，在点 附近aggregate encoder的特征输出，得到 对应的feature输出，即
+
+- 对 按网格坐标进行排列拼接，形成最终的BEV网格feature，输出到下游各个head任务
+
+这里Deformable Attention的核心过程如下
+
+![](img/763fce9798ccbde1fe19b732e584c027.png)
+
+每个query通过linear层映射编码出一组offset和一组weight
+
+每个offset叠加前面的 像素得到最终的像素位置，索引该位置的feature，跟另外的一组weight做加权乘累加，得到这个query的最终feature
+
+#  小结
+
+本节介绍了Transformer是如何应用在Vision中，并且介绍了优化方法和若干周边应用
+
++   ViT。开创了vision transformer的先河，本质上是对图片切分patch，转换成patch token序列，然后用处理text token的方式处理patch token即可
+
++   Swin Transformer。为了解决原始的ViT的计算复杂度跟输入图片分辨率呈平方关系的问题，通过设计窗口内，相邻窗口，远距离窗口的3种信息交换过程，实现了计算量大幅下降的同时，保证信息能自由流动
+
++   无监督应用。类似于BERT做完形填空，vision里面的MAE和BEiT也尝试做视觉完形填空，前者尝试重建raw pixel，后者尝试重建抽象的vision token
+
++   视频动作分类应用。使用Vision Transformer做视频动作分类，核心要解决的是在计算复杂度受限的情况下，如何在空间维度和时间维度分配transformer的注意力计算。TimeSFormer尝试了多种拆解方法，最后发现空间和时间分开的方法效果最好。
+
++   自动驾驶应用。最后我们简单介绍了BEVFormer，一种使用cross-attention机制来提取特征完成下游视觉任务的特殊例子

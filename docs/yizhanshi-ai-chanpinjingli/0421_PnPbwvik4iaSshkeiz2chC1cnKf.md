@@ -1,0 +1,223 @@
+# Keras 第一个神经网络
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/Qcg6dueYyoc9J2xIF45ciyRLnff](https://v11enp9ok1h.feishu.cn/docx/Qcg6dueYyoc9J2xIF45ciyRLnff)
+
+Keras 是一个高级神经网络 API，用 Python 编写，能够在 TensorFlow、CNTK 或 Theano 之上运行。它的开发重点是支持快速实验，能够以最少的代码实现从想法到结果的快速转换。
+
+### Keras 的主要特点
+
++   **用户友好**：Keras 具有简单一致的接口
+
++   **模块化**：神经网络的各种组件（层、优化器、初始化方案等）都是可组合的模块
+
++   **易扩展性**：可以轻松添加新模块来表达新的研究想法
+
++   **支持多后端**：可以无缝切换 TensorFlow、Theano 和 CNTK 作为计算后端
+
+---
+
+## 安装 Keras
+
+在开始之前，我们需要先安装 Keras 及其后端引擎（这里我们使用 TensorFlow）：
+
+```
+pip install tensorflow keras
+```
+
+## 构建第一个神经网络
+
+让我们从一个简单的全连接神经网络开始，解决经典的 MNIST 手写数字识别问题。
+
+### 导入必要的库
+
+## 实例
+
+```
+import numpy as np
+from tensorflow import keras
+from tensorflow.keras import layers
+```
+
+### 准备数据
+
+MNIST 数据集包含 60,000 张训练图像和 10,000 张测试图像，每张都是 28x28 像素的手写数字灰度图。
+
+## 实例
+
+```
+# 加载数据
+(x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
+
+# 预处理数据
+x_train = x_train.reshape(60000, 784).astype(&quot;float32&quot;) / 255
+x_test = x_test.reshape(10000, 784).astype(&quot;float32&quot;) / 255
+
+# 将标签转换为 one-hot 编码
+y_train = keras.utils.to_categorical(y_train, 10)
+y_test = keras.utils.to_categorical(y_test, 10)
+```
+
+### 构建模型
+
+我们将构建一个简单的全连接网络，包含一个输入层、一个隐藏层和一个输出层。
+
+## 实例
+
+```
+model = keras.Sequential([
+    layers.Dense(512, activation=&quot;relu&quot;, input_shape=(784,)),
+    layers.Dense(10, activation=&quot;softmax&quot;)
+])
+```
+
+#### 模型结构解析
+
+```
+graph TD
+    A[输入层 784个神经元] --&gt; B[隐藏层 512个神经元, ReLU激活]
+    B --&gt; C[输出层 10个神经元, Softmax激活]
+```
+
+### 编译模型
+
+在训练模型之前，我们需要配置学习过程：
+
+## 实例
+
+```
+model.compile(
+    optimizer=&quot;rmsprop&quot;,
+    loss=&quot;categorical_crossentropy&quot;,
+    metrics=[&quot;accuracy&quot;]
+)
+```
+
+#### 编译参数说明
+
+### 训练模型
+
+现在我们可以开始训练模型了：
+
+## 实例
+
+```
+history = model.fit(
+    x_train, y_train,
+    batch_size=128,
+    epochs=10,
+    validation_split=0.2
+)
+```
+
+#### 训练参数说明
+
+### 评估模型
+
+训练完成后，我们可以在测试集上评估模型性能：
+
+## 实例
+
+```
+test_loss, test_acc = model.evaluate(x_test, y_test)
+print(f&quot;测试准确率: {test_acc:.4f}&quot;)
+```
+
+## 完整代码示例
+
+## 实例
+
+```
+import numpy as np
+from tensorflow import keras
+from tensorflow.keras import layers
+
+# 1. 加载数据
+(x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
+
+# 2. 预处理
+x_train = x_train.reshape(60000, 784).astype(&quot;float32&quot;) / 255
+x_test = x_test.reshape(10000, 784).astype(&quot;float32&quot;) / 255
+y_train = keras.utils.to_categorical(y_train, 10)
+y_test = keras.utils.to_categorical(y_test, 10)
+
+# 3. 构建模型
+model = keras.Sequential([
+    layers.Dense(512, activation=&quot;relu&quot;, input_shape=(784,)),
+    layers.Dense(10, activation=&quot;softmax&quot;)
+])
+
+# 4. 编译模型
+model.compile(
+    optimizer=&quot;rmsprop&quot;,
+    loss=&quot;categorical_crossentropy&quot;,
+    metrics=[&quot;accuracy&quot;]
+)
+
+# 5. 训练模型
+history = model.fit(
+    x_train, y_train,
+    batch_size=128,
+    epochs=10,
+    validation_split=0.2
+)
+
+# 6. 评估模型
+test_loss, test_acc = model.evaluate(x_test, y_test)
+print(f&quot;测试准确率: {test_acc:.4f}&quot;)
+```
+
+## 模型改进建议
+
+**1、添加 Dropout 层**：防止过拟合
+
+```
+model.add(layers.Dropout(0.5))
+```
+
+**2、使用更先进的优化器**：如 Adam
+
+```
+model.compile(optimizer=&quot;adam&quot;, ...)
+```
+
+**3、增加隐藏层**：构建更深网络
+
+```
+model.add(layers.Dense(256, activation=&quot;relu&quot;))
+```
+
+**4、使用卷积层**：对于图像数据更有效
+
+```
+model.add(layers.Conv2D(32, (3, 3), activation=&quot;relu&quot;))
+```
+
+## 常见问题解答
+
+### Q1: 为什么我的模型准确率很低？
+
++   检查数据预处理是否正确
+
++   尝试调整学习率
+
++   增加网络容量（更多层或更多神经元）
+
+### Q2: 训练过程中 loss 不下降怎么办？
+
++   检查数据是否有问题
+
++   尝试不同的优化器
+
++   调整学习率（通常减小学习率）
+
+### Q3: 如何保存和加载训练好的模型？
+
+## 实例
+
+```
+# 保存模型
+model.save(&quot;mnist_model.h5&quot;)
+
+# 加载模型
+loaded_model = keras.models.load_model(&quot;mnist_model.h5&quot;)
+```

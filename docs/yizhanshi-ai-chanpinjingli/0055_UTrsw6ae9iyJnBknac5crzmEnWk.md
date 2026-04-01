@@ -1,0 +1,17 @@
+# 模型列表
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/KlUDdBtvOoozCPxLA0nc8JwcnWb](https://v11enp9ok1h.feishu.cn/docx/KlUDdBtvOoozCPxLA0nc8JwcnWb)
+
+<https://v11enp9ok1h.feishu.cn/sync/VztedzIoUstVPDb6RNMctK8Unie>
+
+我们在 Huggingface 仓库中提供了多个不同类型的模型，这些模型具有不同的作用，本章节将为开发者列出不同的模型列表的含义和信息。
+
+下表展现了 CogAgent 系列模型列表:
+
+下表展现了 CogVLM 系列模型列表:
+
+您可以参考下述思维导图，决定使用哪个模型：
+
+其中1120*1120比490*490分辨率的显存占用稍高（INT4模式下：CogAgent(1120) ~ 12.6GB, CogVLM(490) ~ 11GB)，均高于224*224。
+
+所有模型都可以进行微调。对应的微调脚本请到对应的章节进行查询。
