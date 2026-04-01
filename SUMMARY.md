@@ -1,3 +1,4 @@
++   [AGI 掘金知识库](docs/agi-juejin-zhishiku/README.md)
 +   [AGI空间站](docs/agi-kongjianzhan/README.md)
 +   [👀AI洞察者中心｜知识库](docs/ai-dongchazhe-zhongxin/README.md)
 +   [☄️AI Flow Genius 工作流社区 知识库](docs/ai-flow-genius/README.md)
@@ -14,6 +15,7 @@
 +   [苹果爷爷【AI知识库】首页](docs/pingguo-yeye/README.md)
 +   [大模型空间站](docs/qiji-damoxing-xuexi-shequn/README.md)
 +   [人人都是AI工程师](docs/renren-doushi-ai-gongchengshi/README.md)
++   [人人都是超级个体](docs/renren-doushi-chaoji-geti/README.md)
 +   [为什么要做这个项目](docs/siyuan-aigc/README.md)
 +   [小码哥AGI启航](docs/xiaomage-agi/README.md)
 +   [Midjourney知识库大全](docs/xinlingshenhui/README.md)

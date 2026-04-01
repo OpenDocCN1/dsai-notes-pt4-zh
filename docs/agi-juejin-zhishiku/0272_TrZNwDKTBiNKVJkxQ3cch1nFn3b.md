@@ -1,0 +1,225 @@
+# 实现蛋白质动态对接预测！上海交大/星药科技/中山大学等联合推出几何深度生成模型DynamicBind
+
+> 来源：[https://agijuejin.feishu.cn/docx/OG34dOMhgoLYlrxHDJKcRUoRnDc](https://agijuejin.feishu.cn/docx/OG34dOMhgoLYlrxHDJKcRUoRnDc)
+
+![](img/68a61c96c381fdfd70cceb624aca0d20.png)
+
+> 作者：李姝   [ 阅读原文](https://hyper.ai/news/34894)
+
+蛋白质是生命的物质基础，其功能与蛋白质结构、构象的动态性紧密相关，并且受配体调节。蛋白质-配体的相互作用研究对于药物的发现与筛选，具有重要意义。纵观其研究进程，AlphaFold 的面世是一个里程碑式突破，能够预测单个蛋白质的空间三维结构，为研究蛋白质–配体相互作用提供了结构基础。
+
+**但 AlphaFold 只能预测蛋白质在一个瞬间的静态**结构，未能实现蛋白质结构动态变化的预测。当使用 AlphaFold 预测的无配体蛋白质结构作为对接进行输入时，所得到的配体位置预测往往与配体结合的共晶结构不吻合。并且，AlphaFold 预测的结构，很难展现出与配体结合最有利的侧链和主链构型，导致相关的活性位点不在正确的位置上，所以目前很难利用 AlphaFold 的结构来进行药物筛选和设计。
+
+针对于此，**上海**交通**大**学郑双佳课题组联合星药科技、中山大学药学院以及美国莱斯大学，提出了为蛋白质动态对接 (dynamic docking) 设计的几何深度生成模型 DynamicBind，可以有效地将蛋白质构象从最初的 AlphaFold 预测状态调整到类似全息 (holo-like) 状态，为后 AlphaFold 时代的药物研发提供了一种基于深度学习的、考虑蛋白动态变化的新研究范式。该方法还在国际药物筛选大赛 CACHE 上被湿实验验证，能为治疗帕金森疾病的难成药靶点筛选到具有竞争力的苗头化合物。
+
+该研究以「DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model」为题，发表在 Nature Communications 上。
+
+**研究亮点：**
+
++   用先进的深度扩散模型和等变几何神经网络技术，将蛋白质构象生成和配体姿势预测统一到 1 个框架中，实现了蛋白质和配体的动态对接预测
+
++   DynamicBind 在蛋白质配体对接上优于传统对接方法和基于深度学习的刚性对接方法
+
++   DynamicBind 利用 AlphaFold 预测的蛋白质构象，可以动态调整蛋白质构象，找到最适合配体的最优构象
+
+![](img/af193db2e01b6b1f83d31de3da6d616f.png)
+
+**
+
+论文地址**：
+
+https://www.nature.com/articles/s41467-024-45461-2
+
+关注公众号，后台回复「蛋白质动态对接」获取完整 PDF
+
+**开源项目「awesome-ai4s」汇集了百余篇 AI**4S 论文解读，并提供海量数据集与工具：
+
+https://github.com/hyperai/awesome-ai4s
+
+## **数据集：以 PDBbind 数据集**为基础，使用 MDT 测试集扩大评估范围
+
+**研**究人员首先使用 PDBbind 数据集，按照时间顺序对模型的训练集、验证集和测试集进行了训练，与实验测量的结合亲和力配对。由于 PDBbind 测试集包含大约 300 个 2019 年的结构，其中包括许多非小分子配体（53 个为多肽），因此研究人员通过精选的主要药物靶标 (MDT) 测试集扩大了评估的范围。
+
+MDT 测试集包括 2020 年或之后存档的 599 个结构，其中包含类药物配体以及激酶、GPCR、核受体和离子通道等四大家族蛋白质。这些蛋白家族代表了约 70% 的 FDA 批准的小分子药物的靶标，具有一定代表性。
+
+## DynamicBind ：基于几何深度学习的动态复合物结构预测模型
+
+**不同于传统的将蛋白质视为大多数刚性实体的对接方法，DynamicBind 使用先进的深度扩散模型和等变几**何神经网络技术，将蛋白质构象生成和配体姿势预测这两个传统上分离的步骤统一到一个框架中，实现了蛋白质和配体的动态对接预测。同时，作为一种端到端的深度学习方法，它在采样广泛的蛋白质构象变化方面，也比传统的 MD 模拟快几个数量级。
+
+**D**ynamicBind 接受 PDB 格式的类结构 (apo-like) 和几种广泛使用的小分子配体格式，如 SMILES 或 SDF 格式。在推理过程中，模型会随机放置配体，而配体的种子构象是用 RDKit 围绕蛋白质生成的。在训练阶段，模型旨在学习从 apo-like 构象到 holo 构象的过程。在推理过程中，模型会对初始输入结构进行 20 次迭代更新。
+
+如下图 a 所示，粉色表示蛋白质构象全息状态 (holo)，绿色表示初始载脂蛋白和模型预测构象，青色表示原生配体，橙色表示预测配体。
+
+![](img/a6a98f05e689ee818e519a62128fc16d.png)
+
+DynamicBind 模型示意图
+
+在每一步的迭代中，蛋白质和配体的特征以及坐标 (包括 sidechain torsion、Ca 原子坐标等)，被输入到一个 SE(3) 等变交互模块 (Equivariant Interaction Module) 中。模型输出结果包括配体和每个蛋白质残基的全局平移和旋转，配体的扭转角和蛋白质残基的 chi 角的旋转，以及两个预测模块（结合亲和力 A 和置信度得分 D）。
+
+下图 b 展示了 DynamicBind 模型的采样效率。在激酶蛋白 DFG-in 到 DFG-out 转变过程中，当蛋白质与两种不同的配体结合时，该模型可以预测两种不同的全息构象。并且 DynamicBind 可以在 20 步内预测出结合的蛋白质构象，而寻找同一结合状态的全原子 MD 模拟则需要数百万步。
+
+![](img/93c1e604f04a087e7882a1bdc62a29eb.png)
+
+DynamicBind 模型采样效率
+
+## **蛋白质动态对接预测全能选手， Dy**namicBind 在五大任务中表现出色
+
+为了评估 DynamicBind 的模型性能，研究人员通过五大任务进行测试，包括：
+
+(1) 基准测试 DynamicBind 与当前的对接方法；
+
+(2) 取样大量蛋白质构象变化的能力；
+
+(3) 处理蛋白质构象变化的范围；
+
+(4) 预测隐蔽性口袋实现动态对接的能力；
+
+(5) 抗生素基准测试中的筛选性能。
+
+### DynamicBind 优于传统对接方法和基于深度学习的刚性对接方法
+
+**在**测试期间，研究人员并没有使用全息结构作为输入，并且假设全息蛋白质构象不可用，仅使用 AlphaFold 预测的蛋白质构象作为输入。因为全息构象展示了与共结晶配体的强烈形状和电荷互补性，会简化配体姿态预测的过程。
+
+如下图 a 和 b 所示，研究人员将 DynamicBind 与其他基线模型，在 PDBbind 数据集和 MDT 数据集上进行对比，在不同 RMSD 阈值下，DynamicBind 均优于其他方法。具体而言，DynamicBind 在 PDBbind 测试集上配体 RMSD 阈值低于 2Å (5Å) 的比例为 33% (65%)，在 MDT 测试集上为 39% (68%)。
+
+![](img/9b5bcdb9b04f40a1ec11eb78b47d4ac7.png)
+
+DynamicBind 与多种对接方法以及深度学习方法的对接实验比较结果——基于 PDBbind 、MDT 测试集
+
+但在评估模型时，仅根据配体的 RMSD 值进行评估，对于 DiffDock、TankBind 和 DynamicBind 这种基于深度学习的模型有利，因为它们具有更高的构象冲突容忍度；而对于严格执行范德华力 (Van der Waals forces) 、基于力场的对接方法 Gnina、Glide、Vina 不利，从而影响模型评估的客观性。因此，研究人员使用配体 RMSD 和冲突得分来评估配体预测成功率。
+
+下图 c 显示了使用严格标准（配体 RMSD < 2 Å，冲突得分 < 0.35）和更宽松的标准（配体 RMSD < 5 Å，冲突得分 < 0.5）的配体预测成功率。在更严格的条件下，DynamicBind 的成功率 (0.33) 是最佳基线 DiffDock (0.19) 的 1.7 倍。
+
+![](img/bb6ef0facbebaf099e54ab49ed379f04.png)
+
+DynamicBind 与多种对接方法以及深度学习方法的对接实验比较结果——基于两种测试标准
+
+此外，即使在初始口袋与晶体结构的 RMSD 很大的情况下，DynamicBind 预测的口袋 RMSD 也显著小于 AlphaFold 预测的结果，如下图 d 所示。
+
+![](img/aa1acc7072a7bd0e9881b6243a27a617.png)
+
+DynamicBind 与 AlphaFold 在初始口袋 RMSD 对比
+
+鉴于 DynamicBind 能够生成多样的构象，并且受 AlphaFold 的 LDDT 分数的启发，研究人员开发了 contact-LDDT (cLDDT) 评分模块，以从预测输出中选择最合适的复合物结构。
+
+如下图 e 所示，DynamicBind 预测的 cLDDT 与实际配体 RMSD 有很好的相关性，表明其在选择高质量复合物结构方面的有效性。
+
+![](img/75b1be3ae46039baf5064fbae99bee60.png)
+
+DynamicBind 预测的 cLDDT 与实际配体 RMSD 的相关性
+
+如下图 f 所示，随着生成样本数量的增加，DynamicBind 模型在配体位姿预测方面的成功率也随之提高。
+
+![](img/8634999c7e6f517e16c3559b1c8c5600.png)
+
+DynamicBind 模型在配体位姿预测成功率
+
+### DynamicBind 可以捕获配体特异性蛋白质构象变化
+
+传统**的对接协议通常将蛋白质构象采样作为与对接过程分开的步骤进行。然而，**在许多情况下，两个不同的配体可能适合于相互排斥的蛋白质构象。在之前的对接模型中，必须将蛋白质预设为正确的构象，才有可能识别出配体的适当结合姿态。与此相反，DynamicBind 利用 AlphaFold 预测的蛋白质构象，可以动态调整蛋白质构象，找到最适合感兴趣配体的最优构象，见下图 a。
+
+图 b 到图 e 则表示 DynamicBind 和 AlphaFold 在 PDB 6UBW 以及 PDB 7V3S 结构中，预测的配体和口袋的 RMSD。对于 PDB 6UBW，DynamicBind 预测的配体 RMSD 为 0.49 Å，口袋 RMSD 为 1.97 Å，而 AlphaFold 结构的口袋 RMSD 为 9.44 Å。对于 PDB 7V3S，DynamicBind 预测的配体 RMSD 为 0.51 Å，口袋 RMSD 为 1.19 Å (AlphaFold 6.02 Å)。
+
+![](img/b7a01c73695ae68dae517b5fd06eb19f.png)
+
+DynamicBind 捕获配体特异性蛋白质构象变化
+
+图 f 和 g 展示了通过 UniProt ID 标记的蛋白质，如何从相同的初始结构开始，在与 I 型抑制剂结合后逐渐向 DFG-in 构象移动，并在与 II 型抑制剂相互作用时，倾向于 DFG-out 构象的过程。
+
+![](img/3fb18b2bfe2f0a8873d59227ce77ed41.png)
+
+DynamicBind 捕获配体特异性蛋白质构象变化——DFG-in /DFG-out
+
+图 h 揭示了 DynamicBind 大多数预测的蛋白质结构与初始 AlphaFold 结构相比，显示出的口袋 RMSD 较低。
+
+上述结果证明了 DynamicBind 能够捕获配体特异性的构象变化。也就是说，即使特定构象与初始提供的蛋白质结构不同， DynamicBind 也能识别出能与蛋白质的其他可能构象进行很好结合的化合物。
+
+DynamicBind 涵盖了多尺度的蛋白质构象变化
+
+**研究人员使用从皮秒级到毫秒级的 6 个不同类型的跨尺度构象变**化对 DynamicBind 进行评估。如下图所示，粉色表示晶体结构，白色表示 AlphaFold 结构，绿色表示 DynamicBind 预测的结构，青色表示原生配体，橙色表示 DynamicBind 预测的配体。
+
+基于与晶体结构的比较，**Δ**pocket RMSD 衡量的是模型预测蛋白结构与 AlphaFold 结构之间的口袋 RMSD 差异。Δpocket RMSD 为负数表明与晶体结构相比，DynamicBind 预测的结构与 AlphaFold 预测的结构更为接近。
+
+**Δclash 衡量的是预测的蛋白-配体对与 AlphaFo**ld 结构中移植配体之间的冲突得分差异。Δclash 为负数则表示预测复合物中的冲突更少。
+
+![](img/b25d5bb3e528c2186b1d5bbe0be6f3ae.png)
+
+DynamicBind 捕获配体特异性蛋白质构象变化
+
+在图 a 中，原生配体与叠加的 AlphaFold 结构的一条侧链发生冲突 (clashes)；在 DynamicBind 的预测中，这条侧链向原生构象移动，从而解决了冲突。在图 b 中，AlphaFold 结构中的一个酪氨酸挡住了一部分口袋；而在 DynamicBind 预测结构和原生结构中，这部分口袋变得可访问。在图 c 中，一个柔性环与配体相交，而在 DynamicBind 的预测中它被移开了，这与原生结构一致。
+
+在图 d 中，α 螺旋在配体结合部位附近变成了环。在图 e 中，热休克蛋白 Hsp90α 从封闭状态过渡到开放状态时，二级结构发生了大幅度运动。在图 f 中，AKT1 激酶的两个结构域凝聚在一起，形成了一个以前不存在的口袋。
+
+**综**上所述，当配体结合口袋不够宽敞或未形成 AlphaFold 预测的构象时，DynamicBind 模型可以预测与配体结合相关的各种构象变化。
+
+### DynamicBind 可识别隐蔽结合位点
+
+蛋**白质在动态过程中经常会产生隐蔽口袋，这些隐蔽口袋可以揭示在静态结**构中未被发现的药用位点，从而使以前「不可药用」的蛋白质成为潜在的药物靶点。研究人员使用含有 SET 结构域的蛋白质 2 (SEtD2) 作为案例进行研究，展示了 DynamicBind 在揭示这些隐蔽口袋方面的实用性。
+
+SETD2 作为一种组蛋白甲基转移酶，是治疗多发性骨髓瘤 (MM) 和弥漫性大 B 细胞淋巴瘤 (DLBCL) 的关键药物，它有一个隐秘的口袋，是一种高选择性化合物 EZM0414 的靶点，目前正在进行 I 期临床试验。
+
+如下图 a、b 所示，训练集中所有的 SETD2 同源体（根据蛋白质 Smith–Waterman 相似性超过 0.4 定义），都与 S-腺苷甲硫氨酸 (SAM) 或 Sinefungin 类似物共结晶，以线条表示。青色条状表示 PDB 7TY2 的配体 EZM0414，粉色表示蛋白质。
+
+在图 c 中，白色表示 AlphaFold 结构及其表面，隐蔽位点被阻塞，导致与移植的 EZM0414 发生大量冲突。
+
+![](img/000739fa3cd1994f6cdcacad02c0d3bd.png)
+
+DynamicBind 揭示了配体 EZM0414 的隐蔽口袋
+
+图 d 证实 EZM0414 是一种未见过的配体，即使是最相似的 Tanimoto 配体也与 EZM0414 有显著偏差。图 e 显示了DynamicBind 模型预测的蛋白质配体复合物结构，该模型以 AlphaFold 预测的 SETD2 结构和 EZM0414 的 SMILES 表示为输入。图 f 则展示了 DynamicBind 预测的蛋白质配体复合物结构与 SETD2-EZM0414 复合物 (PDB 7TY2) 的晶体结构重叠的样态。
+
+从结果来看，DynamicBind 实现了隐蔽性口袋的动态对接，不仅成功放置了配体，而且找到了较为合适的口袋构象（所得配体 RMSD 为 1.4 Å，口袋 RMSD 为 2.16 Å）。
+
+### DynamicBind在抗生素基准测试中实现了更好的药物筛选性能
+
+在基于靶点的药物发现过程中，筛选潜在候选药物和反向筛选（针**对特定化合物确定蛋白质靶点）都至关重要。为了评估 DynamicBind 模型在实践中的筛选性能，研究人员在模型中添加了一个亲和力预测模块**，使用从 PDBbind 数据集中获得的实验测量的结合亲和力数据进行训练，并在 2023 年发布的抗生素蛋白质组的药物筛选试验数据（包括 12 个蛋白靶点和近 3,000 个实测活性数据）上进行评估。
+
+如下图 a 所示，DynamicBind 超越了 VINA 和 DOCK6.9 等常见对接方法，以及基于机器学习的最佳重新评分方法，其接收者操作特征曲线下的平均面积（auROC）达到了 0.68。这种性能的提高得益于 DynamicBind 的动态对接能力，它可以将 AlphaFold 结构细化为更接近原生的状态，从而实现更精确的结合亲和力估计。
+
+![](img/ccfec9b9970769240316631de31f458c.png)
+
+DynamicBind 在抗生素基准测试中实现了更好的筛选性能
+
+上图 b 则显示了 DynamicBind 预测的蛋白质 murD 结构更紧密地围绕配体，形成了在初始 AlphaFold 结构中不可能形成的更多相互作用。
+
+这些结果表明，DynamicBind 始终优于传统对接方法和基于深度学习的刚性对接方法，该模型凭借其结合亲和力预测能力，在蛋白组水平的虚拟筛选应用中展示出巨大的潜力。
+
+## 解码蛋白质复杂结构功能，为智能药物发现贡献力量
+
+DynamicBind 模型在 AlphaFold 静态结构预测的基础上，创新性地引入了生成式人工智能技术，成功解决了动态复合物结构预测这一挑战。预测蛋白质结构的动态变化，对理解生命过程、研发新型药物具有重要意义。特别是在 AI 药物研发中，能够极大程度上提高 AI 药物筛选的准确性与临床效用。
+
+作为此次研究成果的主要参与者之一，郑双佳课题组长期深耕于生成式人工智能与药物开发交叉前沿研究，成果颇丰。
+
+**2**024 年 6 月 21 日，郑双佳课题组提出使用表型层面的扰动高内涵细胞显微镜图像，来辅助分子表征学习的跨模态学习方法。这种方法可以有效地在分子和表征之间架起桥梁，对药物研发具有重要意义。相关研究以「Cross-Modal Graph Contrastive Learning with Cellular Images」为题，发表在 Advanced Science 上。
+
+**论文地址：**
+
+https://onlinelibrary.wiley.com/doi/10.1002/advs.202404845
+
+**2**024 年 5 月 25 日，郑双佳课题组提出了多尺度学习框架 MUSE，有效地融合了原子结构和分子网络尺度之间的多尺度信息，展现了将计算药物发现扩展到其他尺度的潜力。相关研究以「A variational expectation-maximization framework for balanced multi-scale learning of protein and drug interactions」为题，发表在 Nature Communications 上。
+
+**论文地址：**
+
+https://www.nature.com/articles/s41467-024-48801-4
+
+**2**022 年 9 月 15 日，郑双佳课题组开发了针对难成药靶点的生成式智能药物设计算法，在短时间内设计出了 PROTAC 先导化合物，并通过动物实验得到了验证，展示了信息技术与生物技术融合的巨大潜力。该系列成果得到了谷歌 DeepMind AlphaFold 团队及华盛顿大学 David Baker 院士团队等领域顶尖课题组的正面引用及评价。相关研究以「Accelerated rational PROTAC design via deep learning and molecular simulations」为题，发表在 Nature Machine Intelligent 上。
+
+**论文地址：**
+
+https://www.nature.com/articles/s42256-022-00527-y
+
+**2020 年 2 月 14 日，郑双佳课题组提出一种基****于端对端深**度学习框架——准视觉问答系统，来识别药物与蛋白质之间的相互作用，有效地助力了药物发现。相关研究以「Predicting drug–protein interaction using quasi-visual question answering system」为题，发表在 Nature Machine Intelligence 上。
+
+论文地址：
+
+https://www.nature.com/articles/s42256-020-0152-y
+
+郑双佳课题组基于对生成式人工智能与药物开发交叉前沿研究的理解，聚焦于代谢和衰老相关领域疾病的药物智能设计，打造 IT 与 BT 融合的新型药物开发模式，致力于为端对端的智能药物发现贡献更多力量。
+
+**参考资料：**
+
+https://news.sjtu.edu.cn/jdyw/20240628/199484.html
+
+https://zhenglab.sjtu.edu.cn/
+
+https://www.nature.com/articles/s41467-024-45461-2

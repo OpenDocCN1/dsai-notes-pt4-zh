@@ -1,0 +1,97 @@
+# 使用 Trae 开发一个贪吃蛇小游戏
+
+> 来源：[https://agijuejin.feishu.cn/docx/JSeWdjzVIoRGIAxgkW4cVmOknHb](https://agijuejin.feishu.cn/docx/JSeWdjzVIoRGIAxgkW4cVmOknHb)
+
+> 作者：极客枫哥
+
+> 链接：https://juejin.cn/post/7463074117522079771
+
+> 来源：稀土掘金
+
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+> 如有侵权，请联系删除。
+
+近日字节发布了一款类似于 Cursor 的 AI 代码编辑器， Trae ，本文就和大家一起来体验一下，使用效果怎么样。
+
+![](img/c20b382d04c9a590c93a171bc75fa30d.png)
+
+首先进入 [www.trae.ai/ ](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)点击右侧的【Download】直接下载安装包。
+
+## 安装 trae
+
+第一步，直接点击 【开始】
+
+![](img/7cd29458fcb156731a20df7ff13802f4.png)
+
+第二步，可以选择你喜欢的主题，我个人偏向于【浅色】系
+
+![](img/0b7f35c70051181a9483b46bc114460c.png)
+
+第三步，这一点非常友好，可以直接导入 Vs Code 配置或者是 Cursor 的配置，这里我选择导入 Vs Code 配置。
+
+![](img/7fc722c33d8ee658216b070662b5f41c.png)
+
+第四步，可以将 trae 加到命令行中，这样便于快速在当前目录中打开 trae 程序。
+
+![](img/d44faad7616acffb88e7d5a95261b53b.png)
+
+最后一步，需要登录 github or google 账号，然后就可以使用了。
+
+![](img/f4db66a4c17142d4d8955370a4f7f807.png)
+
+## 开发一个贪吃蛇小游戏
+
+下面我们来使用 trae 开发一个简单的【贪吃蛇】小游戏，来感受一下 trae 的 AI 能力。我输入了如下的提示词：
+
+```
+使用 python 开发一个贪吃蛇小游戏，技术框：pygame, python 版本：3.12.3
+```
+
+输入完成后，按下回车，可以看到 Trae AI 自动生成了很多文件和代码。
+
+![](img/4885bf4ab379018fd3ccb23266037532.png)
+
+等到生成完成后，我们直接先无脑的全部应用，如果是命令的话，就直接运行，是代码的话，就直接应用。
+
+Trae AI 会自动帮我们创建对应的文件。
+
+全部操作后，你可以看到当前目录下多了很多 python 文件，入口是 main.py
+
+![](img/fd4090db1e42b5b03c6e14b9bc6d7ab7.png)
+
+然后我们按照提示安装对应的 pygame 依赖，最后执行 python main.py 来启动游戏。
+
+![](img/dcd0e2a1ffad804fb81c45a33acd6d48.png)
+
+不出意外的话，就能看到如下的游戏界面了，效果还是不错的～我试玩了一下，发现一个问题，就是小蛇在撞墙后居然不会死亡，而是直接穿越了墙体，可以从另一侧出来
+
+![](img/275bce6c0388b3fbe7254458ef14bbc4.png)
+
+这显然降低了游戏难度，我们继续给 Trae AI 提需求，让它帮我们增加一个配置项，可以配置撞墙后的行为。
+
+我给的提示词如下：
+
+```
+增加一个配置项，开启表示撞墙后死亡，结束游戏，关闭表示撞墙后可以穿越墙体
+```
+
+Trae AI 对 config.py 和 snake.py 进行了修改，我们还是直接应用，然后重新启动游戏，试玩了一下，在蛇撞墙后，游戏会进行重置，分数会清零。
+
+![](img/731d696e842d68e9f6befad6404e040c.png)
+
+最后，我们让 Trae AI 来帮这个游戏打包成 exe ，这样就能分享给其他小伙伴了。直接输入提示词：
+
+```
+帮我将这个游戏打包成 exe，无需依赖 python 环境，可以点击直接运行
+```
+
+![](img/8d2ecc5ad1c4e221bbb2c2c15e8adf29.png)
+
+因为我是用 mac 电脑，这一步打包没有成功，有兴趣的小伙伴可以自行尝试一下～
+
+总的来说，我对 Trae AI 的整体感受还是很不错的，这次主要使用了 Chat 模式，可以直接根据提示词，生成对应的代码。
+
+它还有 Builder 模式，可以直接从 0 到 1 开发一个完整的项目。
+
+重点是现在可以免费使用，后续大概率也会收费，所以赶紧用起来～

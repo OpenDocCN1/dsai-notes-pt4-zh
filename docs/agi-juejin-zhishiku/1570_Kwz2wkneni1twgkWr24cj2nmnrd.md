@@ -1,0 +1,501 @@
+# GPTs 实战：利用 AI 的制作迷宫卡片
+
+> 来源：[https://agijuejin.feishu.cn/docx/YDFUdeNOcoYzkwxTUM5cxMdmnUg](https://agijuejin.feishu.cn/docx/YDFUdeNOcoYzkwxTUM5cxMdmnUg)
+
+> 作者：景淮AI探索之旅
+
+> 原文链接：https://mp.weixin.qq.com/s/AIfgJWyT304eWquq2EbHBQ
+
+嘿，大家好呀，我是景淮，一个在加拿大的朋友，每天陪你一起玩转 AI。
+
+最近，发现外甥很爱玩一类游戏书，其中有一类小孩子很喜欢的题目，就是 “迷宫” 题，其实去年年末就想到了这个主题，但是因为一些原因一直在拖，拖着拖着就到今天了。
+
+择日不如撞日，就今天啦~
+
+没错，今天我们的孩子王系列内容主题如下
+
+**如何利用 AI 的制作迷宫卡片**
+
+本文会根据以下内容顺序进行：
+
++   需求分析
+
++   分步实现需求
+
++   提示词编写测试
+
++   GPTs 使用链接
+
++   总结
+
+#  **一、需求分析 **
+
+迷宫题，其实可能不需要太多的介绍，大家小的时候或多或少应该都玩过。
+
+![](img/65e72978019e560a0d7d244839adc7b5.png)
+
+##  **一）迷宫题对孩子有什么好处？ **
+
+“迷宫题，不就是一种游戏嘛！孩子拿着笔在那里画来画去能有啥用？有那时间还不如学学数学加减法呢！”
+
+亲爱的朋友们，如果你要也是这种观点就错啦！
+
+首先呢，迷宫确实是游戏的一种，但它的价值远超表面看似简单的“画来画去”。虽然学习数学加减法的重要性不可否认，但迷宫题同样在孩子的智力和综合能力发展中扮演着重要角色。
+
+1.  迷宫题可以锻炼孩子的 问题解决能力。在迷宫中找到正确的路径，需要孩子运用逻辑思维和策略，这种能力是解决日常生活中各种问题的基础。
+
+1.  迷宫题能增强孩子的 空间感知能力。理解和处理空间关系，对于日后的数学几何学习和科学实验都有直接的帮助。
+
+1.  迷宫题还可以提升孩子的 专注力和耐心。在这个过程中，孩子需要集中注意力，并且在遇到困境时保持耐心，这对于他们的学习和生活都有重要意义。
+
+1.  手眼协调 也是迷宫题的一大益处。通过手和眼的配合，孩子能够提高精细运动技能，这在他们学习书写和其他精细操作时非常关键。
+
+1.  迷宫题还能促进 记忆力和认知能力 的发展。孩子们在迷宫中尝试不同路径并记住正确路线的过程中，无形中锻炼了记忆力。
+
+1.  最重要的是，迷宫题作为一种游戏，能够让孩子在 轻松愉快的氛围中学习和成长 。过于强调学术知识可能会给孩子带来压力，而适度的游戏则能提供一种平衡，帮助孩子在游戏中学习，在学习中享受乐趣。
+
+因此，迷宫题不仅仅是一种简单的游戏，它在孩子的智力、情感和社会性发展中有着独特的价值。与其认为孩子“画来画去”是在浪费时间，不如看到他们在这一过程中所获得的多方面成长。这些成长将为他们日后的学习和生活打下坚实的基础。
+
+##  **二）创作思路 **
+
+首先，有个问题，我们用常规的 AI 思路能够制作这种迷宫吗？
+
+答案是否定的，其实是不能的。比如我们拿自然语言识别能力最好的 Dalle-3 来测试一下。
+
+> 你能帮我设计一个宇宙主题的迷宫游戏图吗？要注意图片的内容中要有唯一的入口，唯一的出口，遵循与迷宫游戏的设计理念和设计逻辑。保证图片是平面 2D 的图片。其中迷宫作为主体，用最大的面积展示给用户。
+
+![](img/03ce82e1430544b803fb387895e36c54.png)
+
+观察上图，其实很明显的，它只是 “画” 出了这张图，却不是符合这种游戏的逻辑来完成的图片。
+
+所以直接由 Dalle-3 来完成的办法完全是不行的。同理其他的绘图软件也是如此，毕竟我们不能要求理解画图逻辑还懂迷宫逻辑。
+
+那我们还有种方法，就是由 GPT 来完成一段代码，由 Python 来绘制出迷宫。这种方法的好处就是逻辑完整可控，因为代码的缘故所以更好控制，也更加稳定。但缺点也是明显的，就是图片绘制出来，会很简单，没有太多吸引孩子的背景和其他元素等。
+
+所以我们可以用叠加覆盖的方式绘制一张“主题”相关的图片做为底图，再把做好的图片覆盖上去。调整透明度，这样就可以得到我们想要的迷宫图了！
+
+##  **三）逻辑设计图 **
+
+![](img/101658f95073314713c58b6ad2030119.png)
+
+#  **二、分步实现需求 **
+
+##  一）GPT 生成主题相关的绘图提示词
+
+###   **1、提示词 **
+
+```
+根据用户输入的【主题】创作一段绘画提示词，要求对画面进行具体的描述。保证绘画提示词的第一段为下述内容，并把剩下的关于【主题】相关内容进行补全。最后把调整好的绘画提示词输出给用户。
+模版：Create a vibrant and whimsical children&#x27;s illustration set in 【主题的描述】.
+```
+
+###   **2、效果图 **
+
+![](img/0718b8e883780deb0ed002675c41a7fb.png)
+
+##  二）Dalle-3:根据生成的图片绘制底图
+
+###   **1、提示词 **
+
+```
+根据上面生成的【绘画提示词】使用Dalle-3来生成图片，注意生成的图片的比例为1:1
+```
+
+###   **2、效果图 **
+
+![](img/1d6be8e070651ea1fd869d712b9604db.png)
+
+##  三）Python:根据固定好的代码逻辑，随机绘制迷宫
+
+###   **1、Python 代码生成 **
+
+```
+我现在要使用Python绘制一张迷宫，请你帮我把这段完整的代码写出来，最后要生成一张完成的迷宫图，注意迷宫的整体应该是一个正方形的，左上角为迷宫的入口，迷宫的右下角为迷宫的出口。迷宫应该符合孩子平时玩的迷宫的所有要求。
+```
+
+###   **2、逻辑微调 **
+
+我们发现生成的图片是很合理的迷宫，但是即然是迷宫，边应该封好，至少大家不应该从边上出去，所以我们调整下提示词。
+
+![](img/180f9106a3eb5f21c06e7b11bfdd06f9.png)
+
+###   **3、效果展示 **
+
+> 这个复杂度如果觉得不够，也可以提出，然后对其进行调整。
+
+![](img/ec8d62a747a72e589ee396ecd7ff55bc.png)
+
+###   **4、获得代码 **
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+
+def make_maze(size):
+    # Initialize the maze with walls
+    maze = np.ones((size, size), dtype=int)
+    # Define the starting point inside the outer walls
+    start = (1, 1)
+    maze[start] = 0
+    # Define the stack for DFS
+    stack = [start]
+    directions = [(0, 2), (2, 0), (0, -2), (-2, 0)]
+
+    while stack:
+        current = stack[-1]
+        neighbors = []
+        for direction in directions:
+            nx, ny = current[0] + direction[0], current[1] + direction[1]
+            if 1 &lt;= nx &lt; size - 1 and 1 &lt;= ny &lt; size - 1 and maze[nx, ny] == 1:
+                neighbors.append((nx, ny))
+
+        if neighbors:
+            next_cell = random.choice(neighbors)
+            wall = (current[0] + (next_cell[0] - current[0]) // 2, current[1] + (next_cell[1] - current[1]) // 2)
+            maze[next_cell] = 0
+            maze[wall] = 0
+            stack.append(next_cell)
+        else:
+            stack.pop()
+
+    # Make entrance and exit
+    maze[1, 0] = 0  # Entrance
+    maze[size-2, size-1] = 0  # Exit
+
+    return maze
+
+def draw_maze(maze):
+    plt.figure(figsize=(10, 10))
+    plt.imshow(maze, cmap=&quot;binary&quot;)
+    plt.xticks([]), plt.yticks([])
+    plt.show()
+
+# Define the size of the maze
+size = 21  # The size must be an odd number to ensure proper walls
+maze = make_maze(size)
+draw_maze(maze)
+```
+
+稍微懂些代码的感兴趣的可以稍微看一下，还是挺有趣的~
+
+##  四) Python 完成图片的覆盖、叠加
+
+###   **1、PS 测试参数 **
+
+这边因为我需要手动先测试下逻辑，所以用了下 PS 。
+
+![](img/317c0b2094e70365d683f6d289e25aaf.png)
+
+###   **2、Python 提示词 **
+
+```
+请使用Python帮我处理新的图片，确保：
+1. 设置Python生成的迷宫图在整个图片的上层，需要覆盖在 Dalle-3 生成的图片上
+2. Python生成的图片进行等比缩放，确保边长调整为 Dalle-3 生成图片的边长的80%
+3. Python生成的图片和 Dalle-3 生成的图片需要使用同一个中心点（垂直方向和水平方向的中心）
+4. 把Python生成的图片的透明度调整到 80%
+然后输出调整后的图片，展示给用户
+```
+
+###   **3、效果展示 **
+
+如果要是觉得迷宫不够清晰，可以调整为 90%
+
+![](img/acb8073ec7bccf1b8de1e2ff198c6054.png)
+
+###   **4、获取代码 **
+
+```
+from PIL import Image, ImageEnhance
+
+# Load the images
+maze_image_path = &quot;/mnt/data/下载 (1).png&quot;
+background_image_path = &quot;/mnt/data/下载.png&quot;
+
+maze_image = Image.open(maze_image_path)
+background_image = Image.open(background_image_path)
+
+# Resize maze image to 80% of the background image&#x27;s size, maintaining aspect ratio
+background_width, background_height = background_image.size
+new_maze_size = (int(background_width * 0.8), int(background_height * 0.8))
+maze_image_resized = maze_image.resize(new_maze_size, Image.ANTIALIAS)
+
+# Calculate position to center the maze image on the background image
+maze_width, maze_height = maze_image_resized.size
+center_x = (background_width - maze_width) // 2
+center_y = (background_height - maze_height) // 2
+
+# Adjust the transparency of the maze image
+maze_image_resized = maze_image_resized.convert(&quot;RGBA&quot;)
+alpha = maze_image_resized.split()[3]
+alpha = ImageEnhance.Brightness(alpha).enhance(0.8)  # Adjust transparency to 80%
+maze_image_resized.putalpha(alpha)
+
+# Composite the images
+composite_image = background_image.convert(&quot;RGBA&quot;)
+composite_image.paste(maze_image_resized, (center_x, center_y), maze_image_resized)
+
+# Save and display the resulting image
+output_path = &quot;/mnt/data/composite_image.png&quot;
+composite_image.save(output_path)
+composite_image.show()
+
+output_path
+```
+
+#  **三、提示词编写测试 **
+
+##  **一）初版提示词 **
+
+```
+# Workflows：
+1. 输入：等待用户输入一个固定的[主题]
+2. 绘画提示词编写：根据用户输入的【主题】创作一段绘画提示词，要求对画面进行具体的描述。保证绘画提示词的第一段为下述内容，并把剩下的关于【主题】相关内容进行补全。最后把调整好的绘画提示词输出给用户。
+    - 模版：Create a vibrant and whimsical children&#x27;s illustration set in 【主题的描述】.
+3. Dalle-3 绘图：根据步骤 2 生成的【绘画提示词】使用Dalle-3来生成图片，注意生成的图片的比例为1:1
+4. 迷宫图绘制：使用Python绘制一张迷宫，请你帮我把这段完整的代码写出来，最后要生成一张完成的迷宫图，注意迷宫的整体应该是一个正方形的，左上角为迷宫的入口，迷宫的右下角为迷宫的出口。迷宫应该符合孩子平时玩的迷宫的所有要求。
+    - 代码示例：
+    ```Python
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import random
+    
+    def make_maze(size):
+        # Initialize the maze with walls
+        maze = np.ones((size, size), dtype=int)
+        # Define the starting point inside the outer walls
+        start = (1, 1)
+        maze[start] = 0
+        # Define the stack for DFS
+        stack = [start]
+        directions = [(0, 2), (2, 0), (0, -2), (-2, 0)]
+    
+        while stack:
+            current = stack[-1]
+            neighbors = []
+            for direction in directions:
+                nx, ny = current[0] + direction[0], current[1] + direction[1]
+                if 1 &lt;= nx &lt; size - 1 and 1 &lt;= ny &lt; size - 1 and maze[nx, ny] == 1:
+                    neighbors.append((nx, ny))
+    
+            if neighbors:
+                next_cell = random.choice(neighbors)
+                wall = (current[0] + (next_cell[0] - current[0]) // 2, current[1] + (next_cell[1] - current[1]) // 2)
+                maze[next_cell] = 0
+                maze[wall] = 0
+                stack.append(next_cell)
+            else:
+                stack.pop()
+    
+        # Make entrance and exit
+        maze[1, 0] = 0  # Entrance
+        maze[size-2, size-1] = 0  # Exit
+    
+        return maze
+    
+    def draw_maze(maze):
+        plt.figure(figsize=(10, 10))
+        plt.imshow(maze, cmap=&quot;binary&quot;)
+        plt.xticks([]), plt.yticks([])
+        plt.show()
+    
+    # Define the size of the maze
+    size = 21  # The size must be an odd number to ensure proper walls
+    maze = make_maze(size)
+    draw_maze(maze)
+    
+    ```
+5. 图片合成：请使用Python帮我处理新的图片，确保：
+    501. 设置Python生成的迷宫图在整个图片的上层，需要覆盖在 Dalle-3 生成的图片上
+    502. Python生成的图片进行等比缩放，确保边长调整为 Dalle-3 生成图片的边长的80%
+    503. Python生成的图片和 Dalle-3 生成的图片需要使用同一个中心点（垂直方向和水平方向的中心）
+    504. 把Python生成的图片的透明度调整到 80%
+    然后输出调整后的图片，展示给用户.
+    - 代码示例：
+    ```Python
+    from PIL import Image, ImageEnhance
+
+    # Load the images
+    maze_image_path = &quot;/mnt/data/下载 (1).png&quot;
+    background_image_path = &quot;/mnt/data/下载.png&quot;
+    
+    maze_image = Image.open(maze_image_path)
+    background_image = Image.open(background_image_path)
+    
+    # Resize maze image to 80% of the background image&#x27;s size, maintaining aspect ratio
+    background_width, background_height = background_image.size
+    new_maze_size = (int(background_width * 0.8), int(background_height * 0.8))
+    maze_image_resized = maze_image.resize(new_maze_size, Image.ANTIALIAS)
+    
+    # Calculate position to center the maze image on the background image
+    maze_width, maze_height = maze_image_resized.size
+    center_x = (background_width - maze_width) // 2
+    center_y = (background_height - maze_height) // 2
+    
+    # Adjust the transparency of the maze image
+    maze_image_resized = maze_image_resized.convert(&quot;RGBA&quot;)
+    alpha = maze_image_resized.split()[3]
+    alpha = ImageEnhance.Brightness(alpha).enhance(0.8)  # Adjust transparency to 80%
+    maze_image_resized.putalpha(alpha)
+    
+    # Composite the images
+    composite_image = background_image.convert(&quot;RGBA&quot;)
+    composite_image.paste(maze_image_resized, (center_x, center_y), maze_image_resized)
+    
+    # Save and display the resulting image
+    output_path = &quot;/mnt/data/composite_image.png&quot;
+    composite_image.save(output_path)
+    composite_image.show()
+    
+    output_path
+    ```
+```
+
+##  **二）迭代后提示词 **
+
+```
+## Rule：
+- 代码不需要展示给用户
+# Workflows：
+1. 输入：等待用户输入一个固定的[主题]
+2. 绘画提示词编写：根据用户输入的【主题】创作一段绘画提示词，要求对画面进行具体的描述。保证绘画提示词的第一段为下述内容，并把剩下的关于【主题】相关内容进行补全。最后把调整好的绘画提示词输出给用户。
+    - 模版：Create a vibrant and whimsical children&#x27;s illustration set in 【主题的描述】.
+3. Dalle-3 绘图：根据步骤 2 生成的【绘画提示词】使用Dalle-3来生成图片，注意生成的图片的比例为1:1
+4. 迷宫图绘制：使用Python绘制一张迷宫，请你帮我把这段完整的代码写出来，最后要生成一张完成的迷宫图，注意迷宫的整体应该是一个正方形的，左上角为迷宫的入口，迷宫的右下角为迷宫的出口。迷宫应该符合孩子平时玩的迷宫的所有要求。代码不需要展示给用户！！！
+    - 代码示例：
+    ```Python
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import random
+    
+    def make_maze(size):
+        # Initialize the maze with walls
+        maze = np.ones((size, size), dtype=int)
+        # Define the starting point inside the outer walls
+        start = (1, 1)
+        maze[start] = 0
+        # Define the stack for DFS
+        stack = [start]
+        directions = [(0, 2), (2, 0), (0, -2), (-2, 0)]
+    
+        while stack:
+            current = stack[-1]
+            neighbors = []
+            for direction in directions:
+                nx, ny = current[0] + direction[0], current[1] + direction[1]
+                if 1 &lt;= nx &lt; size - 1 and 1 &lt;= ny &lt; size - 1 and maze[nx, ny] == 1:
+                    neighbors.append((nx, ny))
+    
+            if neighbors:
+                next_cell = random.choice(neighbors)
+                wall = (current[0] + (next_cell[0] - current[0]) // 2, current[1] + (next_cell[1] - current[1]) // 2)
+                maze[next_cell] = 0
+                maze[wall] = 0
+                stack.append(next_cell)
+            else:
+                stack.pop()
+    
+        # Make entrance and exit
+        maze[1, 0] = 0  # Entrance
+        maze[size-2, size-1] = 0  # Exit
+    
+        return maze
+    
+    def draw_maze(maze):
+        plt.figure(figsize=(10, 10))
+        plt.imshow(maze, cmap=&quot;binary&quot;)
+        plt.xticks([]), plt.yticks([])
+        plt.show()
+    
+    # Define the size of the maze
+    size = 21  # The size must be an odd number to ensure proper walls
+    maze = make_maze(size)
+    draw_maze(maze)
+    
+    ```
+5. 图片合成：请使用Python帮我处理新的图片，确保：
+    501. 设置Python生成的迷宫图在整个图片的上层，需要覆盖在 Dalle-3 生成的图片上
+    502. Python生成的图片进行等比缩放，确保边长调整为 Dalle-3 生成图片的边长的80%
+    503. Python生成的图片和 Dalle-3 生成的图片需要使用同一个中心点（垂直方向和水平方向的中心）
+    504. 把Python生成的图片的透明度调整到 85%
+    然后输出调整后的图片，展示给用户.
+    - 代码示例：
+    ```Python
+    from PIL import Image, ImageEnhance
+
+    # Load the images
+    maze_image_path = &quot;/mnt/data/下载 (1).png&quot;
+    background_image_path = &quot;/mnt/data/下载.png&quot;
+    
+    maze_image = Image.open(maze_image_path)
+    background_image = Image.open(background_image_path)
+    
+    # Resize maze image to 80% of the background image&#x27;s size, maintaining aspect ratio
+    background_width, background_height = background_image.size
+    new_maze_size = (int(background_width * 0.8), int(background_height * 0.8))
+    maze_image_resized = maze_image.resize(new_maze_size, Image.ANTIALIAS)
+    
+    # Calculate position to center the maze image on the background image
+    maze_width, maze_height = maze_image_resized.size
+    center_x = (background_width - maze_width) // 2
+    center_y = (background_height - maze_height) // 2
+    
+    # Adjust the transparency of the maze image
+    maze_image_resized = maze_image_resized.convert(&quot;RGBA&quot;)
+    alpha = maze_image_resized.split()[3]
+    alpha = ImageEnhance.Brightness(alpha).enhance(0.85)  # Adjust transparency to 85%
+    maze_image_resized.putalpha(alpha)
+    
+    # Composite the images
+    composite_image = background_image.convert(&quot;RGBA&quot;)
+    composite_image.paste(maze_image_resized, (center_x, center_y), maze_image_resized)
+    
+    # Display the image directly
+    from IPython.display import display
+    display(image)
+    
+    ```
+6. 使用下述方法把图片展示给用户
+    ```python
+    # Display the image directly
+    from IPython.display import display
+    display(image)
+    ```
+```
+
+#  **四、 GPTs 试用链接 **
+
+##  **一）试用链接 **
+
+https://chatgpt.com/g/g-EZb4QCO70-mi-gong-qia-pian
+
+> 如果最后没有展示图片，就问下 GPT，跟他说：
+
+> “你没有展示图片给我！” 或者 “你没有把图片下载链接给我”
+
+##  **二）效果展示 **
+
+**主题：星空**
+
+![](img/dfe39b2eb55fa7d151112d116c11a1ae.png)
+
+**主题：太空**
+
+![](img/0b5be2542bd4f197bea63200f2ca9c5e.png)
+
+**主题：校园**
+
+![](img/d12b56c5000e1b27349969ded747c3ce.png)
+
+#  **五、总结 **
+
+除了最后生成图片的过程中，有时候没法展示给用户，需要再多要一次，其他的问题基本调好了~
+
+如果觉得难度过于简单，可以试试让他加大难度等方法。（在创作代码的时候就要求加大难度！）
+
+中间有遇到关于低于 13 岁孩子相关的判定，但挺奇怪的，我其实并没有提及。不知道怎么回事，还没摸透！等我摸透了分享给大家！
+
+好啦，写到这里我们今天的内容也结束啦，感谢大家的观看，也希望我的内容能够让大家喜欢，有所收获。感兴趣的小伙伴可以点个关注跟随我一起学习，观看更多往期文章。
+
+下次见，我是景淮，祝你有个开心美好的一天~

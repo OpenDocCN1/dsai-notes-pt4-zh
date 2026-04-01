@@ -1,0 +1,360 @@
+# 带有访问控制的 RAG
+
+> 来源：[https://agijuejin.feishu.cn/docx/SsomdfEcVodYjkxzdZicR8HMnoh](https://agijuejin.feishu.cn/docx/SsomdfEcVodYjkxzdZicR8HMnoh)
+
+> 作者：向量检索实验室 | AI 搜索引擎
+
+> 原文：[https://mp.weixin.](https://mp.weixin.qq.com/s/IChH1eIkpx4tW3EM6tmtXQ)qq.com/s/IChH1eIk...
+
+原文链接：https://www.pinecone.io/learn/rag-access-control/?utm_content=290774141&utm_medium=social&utm_source=twitter&hss_channel=tw-1287624141001109504
+
+RAG 的访问控制是 RAG 在落地过程中一个很重要的环节，这篇来自 Pinecone 的文章介绍了基于 ReBAC 模型如何实现访问控制，以及当登陆不同用户时，相同问题给出不同的问答效果。enjoy～
+
+---
+
+访问控制在几乎所有面向用户的应用程序中都起着至关重要的作用，尤其是在涉及敏感信息的情况下。它在保护敏感信息方面发挥着重要作用，确保只有获得所需权限的人才能接触到这些信息。
+
+在 RAG 应用程序中，很可能不是每个用户都能平等地访问所有索引文档。某些信息可能具有机密性，只有特定角色或指定人员才能访问--我们的 RAG 应用程序不能泄露任何敏感信息，这一点至关重要。这就凸显了强大而有效的访问控制机制的必要性。通过防止未经授权的访问，这些机制有助于保持数据的机密性。
+
+在 Pinecone 中，您可以使用元数据将用户和角色与特定向量关联起来，但这并不符合关注点分离的核心架构原则：如果可以避免的话，系统不应过多地考虑 "外来 "因素。正如我们将在这篇文章中探讨的那样，RAG 用例非常适合查询后过滤流程，而且这种流程适合在数据库本身之外管理授权机制。
+
+#  **认证和授权 **
+
+在具体实施 RAG 应用程序的访问控制之前，我们先来谈谈访问控制的组成部分，即身份验证和授权。
+
++   身份验证是验证用户身份的过程。这通常涉及用户提供某种形式的凭证，如用户名和密码。如果凭证与系统中存储的相符，用户就通过了身份验证，并被授予访问权限。
+
++   授权是确定特定身份可使用哪些资源的过程。有几种流行的授权范式：
+
++   访问控制列表（ACL）--对资源的访问权限由被授予权限的用户列表决定。这是一种易于理解和实施的简单模式，但随着用户和资源数量的增加，管理起来会变得很困难。
+
++   基于角色的访问控制（RBAC）--根据用户的角色授予访问权限。例如，"管理员 "角色可以访问所有内容，而 "访客 "角色的访问权限可能非常有限。这种模式比 ACL 更灵活，可扩展性更强，但管理起来仍然很复杂。
+
++   基于属性的访问控制（ABAC）--根据属性组合授予访问权限。这些属性可以与用户（如角色、部门、位置）、资源（如类型、敏感性、位置）、操作（如读、写、删除）和上下文（如时间、网络、设备）相关联。这种模式具有最大的灵活性和可扩展性，但管理起来也最为复杂。
+
++   基于关系的访问控制（ReBAC）--一种较新的模式，根据用户与资源之间的关系授予访问权限。例如，在社交网络应用程序中，用户可以访问与自己有某种 "关联 "的资源（如好友、关注者等）。这种模式可以处理复杂的访问控制场景，但实施和管理起来也很复杂。
+
+#  **RAG 应用程序的访问控制 **
+
+既然我们已经对身份验证和授权有了很好的了解，那么让我们来看看如何在 RAG 应用程序中应用它们。粗略地说，我们可以把任何 RAG 系统分成两个阶段：摄取和查询。
+
++   在摄入阶段，我们必须将系统已知的身份与允许访问的资源关联起来。
+
++   在查询阶段，我们必须确定身份试图访问的文件中哪些是允许的，哪些不能包含在最终响应中。
+
+为了演示 RAG 应用程序的基本授权流程，我们将应用 ReBAC 模型，原因如下：RBAC 和 ABAC 主要针对端点等应用资源的管理。例如，当我们构建一个应用程序时，我们希望确定哪个用户或角色可以执行映射到端点的特定操作。就 RAG 而言，授权的主要模式是在执行查询后过滤结果。这就要求我们在用户或角色与资源之间创建关系。
+
+实际上，对于一组文档，我们将定义一组可能的类别。我们将为系统中的用户分配这些类别，并只允许他们访问属于其分配类别的文档。
+
+我们将使用上一篇文章中介绍过的 RAG 应用程序 [1]，并将其扩展为具有身份验证和授权功能（完整代码列表[2]）。
+
+为了方便身份验证和授权过程，我们将使用两种服务：
+
++   **Clerk [3] **- 一个用户身份验证平台，开发人员可以用它来管理应用程序中的用户访问。它提供登录服务、双因素身份验证、会话管理和用户管理等功能，有助于确保应用程序的安全并保护用户数据。
+
++   **Aserto [4] **是一个权限即服务平台，开发人员可利用它将授权纳入自己的应用程序。它提供基于策略的权限、基于角色和属性的访问控制以及基于关系的访问控制等功能，使管理应用程序中谁有权访问什么变得更容易。
+
+##  **💡 Clerk **
+
+首先，我们注册一个 Clerk 账户并创建一组用户：
+
+![](img/ebf9b31317b81edb2b4768ec0e621af9.png)
+
+我们要在这里标记 "Admin "用户拥有一些额外权限，因此我们要在用户条目中添加一些私人元数据：
+
+![](img/0ad3966d1d3d839abb18e69da5143b97.png)
+
+在本例中，管理员将是能够为特定用户分配类别的用户。在更现实的情况下，我们可能会希望将类别与角色或组关联起来，而不是与用户关联起来，这一点稍后再详述。
+
+管理员用户登录应用程序后，将看到以下控件：
+
+![](img/f959f046d55b04805fb06f0e5f13beef.png)
+
+这样，他们就可以选择将哪些类别分配给每个用户。
+
+接下来，我们需要将每个用户的身份与我们要索引的文档关联起来。我们将使用 Aserto 的目录服务来完成这项工作。
+
+##  **💡 Aserto **
+
+Aserto 目录存储授权决策所需的信息。它非常灵活，可轻松支持不同的访问控制策略，包括基于角色的访问控制（RBAC）、基于属性的访问控制（ABAC）和基于关系的访问控制（ReBAC）。
+
+授权决定是对问题 "主体 S 是否被允许在资源 R 上执行操作 A？换句话说，授权决策决定主体（用户、组、服务等）是否拥有资源（文档、文件夹、项目等）上的给定权限。
+
+我们可以把 Aserto 目录看作一个图，其中对象是节点，关系是边。在这种模式下，上一节中的授权问题可以重新表述为 "是否存在一条从节点 S 到节点 R 的路径，其中一条或多条边具有权限 P？
+
+例如，资源对象类型可以定义 can_read、can_write 和 can_delete 权限，并通过所有者、编辑器和查看器关系授予这些权限。
+
+此外，我们还可以定义权限：权限代表主体可以对资源执行的一种操作。与关系类似，每个权限都是作为对象类型定义的一部分在清单[5]中定义的。
+
+与关系不同，权限不能明确分配。权限是通过使用权限操作符[6]组合关系和/或其他权限间接授予的。
+
+Aserto 允许我们在清单文件中定义授权模型：
+
+```
+# yaml-language-server: $schema=https://www.topaz.sh/schema/manifest.json
+---
+
+# model
+model:
+  version: 3
+
+# object type definitions
+types:
+  # user represents a user that can be granted role(s)
+  user:
+    relations:
+      manager: user
+
+  # group represents a collection of users and/or (nested) groups
+  group:
+    relations:
+      member: user | group#member
+
+  # identity represents a collection of identities for users
+  identity:
+    relations:
+      identifier: user
+
+  # resource creator represents a user type that can create new resources
+  resource-creator:
+    relations:
+      member: user | group#member
+
+    permissions:
+      can_create_resource: member
+
+  # resource represents a protected resource
+  resource:
+    relations:
+      owner: user
+      writer: user | group#member
+      reader: user | group#member
+
+    permissions:
+      can_read: reader | writer | owner
+      can_write: writer | owner
+      can_delete: owner
+```
+
+下面是该清单文件的可视化展示：
+
+![](img/4f8ce8bbd7bf872a016fae0fa4b0da18.png)
+
+当使用 Aserto 创建一个新项目时，我们可以从这个初始模型开始，它可以在各种用例中发挥作用。自然，模型可以随着我们应用程序的变化和发展而发展。
+
+##  **Ingestion 摄入 **
+
+与其他 RAG 导入流程一样，我们对每个文档进行迭代、嵌入并上载到 Pinecone 中。但在我们的案例中，我们还会将文档与其类别关联起来，并根据从应用程序中获取的映射，在系统中创建文档与用户之间的关系。
+
+```
+const index = pinecone.Index(indexName)
+const vectors = await Promise.all(documents.flat().map(embedDocument));
+
+  await Promise.all(Object.keys(usersDataAssignment).map(async (userId) =&gt; {
+    const userVectors = filterRecordsByUserAssignments(userId, vectors, usersDataAssignment)
+    const userObject = await clerkClient.users.getUser(userId);
+    return assignRelation(userObject, userVectors, &#x27;owner&#x27;);
+  }));
+  // Upsert vectors into the Pinecone index
+await chunkedUpsert(index, vectors, &#x27;&#x27;, 10);
+```
+
+在这段代码中，我们遍历 userDataAssignment，它将系统中的每个用户与其允许查看的类别关联起来。我们会过滤我们创建的所有向量，并将这些向量与相应的用户关联起来。
+
+让我们来看看在用户和文档之间创建关系的函数：
+
+```
+export const assignRelation = async (user: User, documents: PineconeRecord&lt;CategorizedRecordMetadata&gt;[], relationName: string) =&gt; {  
+  // Map each document to a set of operations for setting up user-document relations
+  const operations = documents.map((document) =&gt; {
+    
+    // Construct a display name for the user
+    const userName = `${user.firstName}${user.lastName ? &#x27; &#x27; : &#x27;&#x27;}${user.lastName ?? &#x27;&#x27;}`
+    // Create a user object for the directory service
+    const userObject = {
+      id: user.id,
+      type: &#x27;user&#x27;,
+      properties: objectPropertiesAsStruct({
+        email: user.emailAddresses[0].emailAddress,
+        name: userName,
+        picture: user.imageUrl,
+      }),
+      displayName: userName
+    };
+
+    // Create a document object for the directory service
+    const documentObject = {
+      id: document.id,
+      type: &#x27;resource&#x27;,
+      properties: document.metadata ? objectPropertiesAsStruct({
+        url: document.metadata.url,
+        category: document.metadata.category,
+      }) : objectPropertiesAsStruct({}),
+      displayName: document.metadata &amp;&amp; document.metadata.title ? document.metadata.title as string : &#x27;&#x27;,
+    };
+
+    // Define the relation between the user and the document
+    const userDocumentRelation = {
+      subjectId: user.id,
+      subjectType: &#x27;user&#x27;,
+      objectId: document.id,
+      objectType: &#x27;resource&#x27;,
+      relation: relationName,
+    };
+
+    // Operations to set the user and document objects in the directory
+    const objectOperations: any[] = [
+      {
+        opCode: ImportOpCode.SET,
+        msg: {
+          case: ImportMsgCase.OBJECT,
+          value: userObject,
+        },
+      },
+      {
+        opCode: ImportOpCode.SET,
+        msg: {
+          case: ImportMsgCase.OBJECT,
+          value: documentObject,
+        },
+      }
+    ];
+
+    // Operation to set the relation between the user and the document
+    const relationOperation: any = {
+      opCode: ImportOpCode.SET,
+      msg: {
+        case: ImportMsgCase.RELATION,
+        value: userDocumentRelation,
+      },
+    };
+
+    // Combine object and relation operations
+    return [...objectOperations, relationOperation];
+  }).flat();
+
+  try {
+    // Create an async iterable from the operations and import them to the directory service
+    const importRequest = createAsyncIterable(operations);
+    const resp = await directoryClient.import(importRequest);
+    // Read and return the result of the import operation
+    const result = await (readAsyncIterable(resp))
+    return result
+  } catch (error) {
+    // Log and rethrow any errors encountered during the import
+    console.error(&#x27;Error importing request: &#x27;, error);
+    throw error;
+  }
+}
+```
+
+##  **应用 **
+
+为了加强用户和他们可以访问的文档之间的关系，我们创建了一个函数，该函数将针对特定权限的目录执行 checkPermission 调用：
+
+```
+export const getFilteredMatches = async (user: User | null, matches: ScoredPineconeRecord[], permission: Permission) =&gt; {  
+
+  // Check if a user object is provided
+  if (!user) {
+    console.error(&#x27;No user provided. Returning empty array.&#x27;)
+    return [];
+  }
+
+  // Perform permission checks for each match concurrently
+  const checks = await Promise.all(matches.map(async (match) =&gt; {
+    // Construct permission request object
+    const permissionRequest = {
+      subjectId: user.id, // ID of the user requesting access
+      subjectType: &#x27;user&#x27;, // Type of the subject requesting access
+      objectId: match.id, // ID of the object access is requested for
+      objectType: &#x27;resource&#x27;, // Type of the object access is requested for
+      permission: &#x27;can_read&#x27;, // Specific permission being checked
+    }
+
+    // Check permission for the constructed request
+    const response = await directoryClient.checkPermission(permissionRequest);    
+    // Return true if permission granted, false otherwise
+    return response ? response.check : false
+  }));
+
+  // Filter matches where permission check passed
+  const filteredMatches = matches.filter((match, index) =&gt; checks[index]);
+
+  // Return matches that passed the permission check
+  return filteredMatches
+}
+```
+
+对每个主体、客体和权限三重进行权限检查只需几毫秒的时间，从而确保了应用程序的整体性能。
+
+该函数在 getContext 函数中被调用，getContext 会检索相关文档，然后根据我们设置的权限筛选匹配文档。
+
+```
+export const getContext = async ({ message, namespace, maxTokens = 3000, minScore = 0.95, getOnlyText = true, user }:
+  { message: string, namespace: string, maxTokens?: number, minScore?: number, getOnlyText?: boolean, user: User | null }): Promise&lt;ContextResponse&gt; =&gt; {
+
+  // Get the embeddings of the input message
+  const embedding = await getEmbeddings(message);
+
+  // Retrieve the matches for the embeddings from the specified namespace
+  const matches = await getMatchesFromEmbeddings(embedding, 10, namespace);
+
+  // Filter out the matches that have a score lower than the minimum score
+  const qualifyingDocs = matches.filter(m =&gt; m.score &amp;&amp; m.score &gt; minScore);
+  let noMatches = qualifyingDocs.length === 0;
+
+  const filteredMatches = await getFilteredMatches(user, qualifyingDocs, Permission.READ);
+  
+  let accessNotice = false
+
+  if (filteredMatches.length &lt; matches.length) {
+    accessNotice = true
+  }
+
+  return {
+    documents: qualifyingDocs,
+    accessNotice,
+    noMatches
+  }
+}
+```
+
+我们希望确保用户能意识到，万一系统中存在的某些文档对他们来说是不可用的。为此，我们会将找到的总匹配数与筛选出的匹配数进行比较。如果完全没有找到匹配，我们也会记录下来。
+
+最后，我们只需将信息发送回客户端。我们将把访问信息作为上下文的一部分附加到发回的数据中：
+
+```
+const { documents, accessNotice, noMatches } = context;
+data.append({ context: [...documents as PineconeRecord[]],
+        accessNotice,
+        noMatches });
+```
+
+现在我们准备测试授权机制。在我们的应用程序中，我们将使用与财务类别相关联的身份登录，因为它与财务部门有关：
+
+![](img/6f7a29d658e206e99d2d64f7648e5dc0.png)
+
+我们将提出同样的问题，但与人力资源类别相关的用户不应该访问与财务相关的主题：
+
+![](img/b41ad0c5f75b379d64bdeb3633ce5464.png)
+
+不出所料，我们得到的提示是，有些结果无法用于编写问题，而我们得到的内容实际上与我们的问题主题无关。
+
+#  **总结 **
+
+在 RAG 应用程序领域，访问控制机制的重要性不容低估。管理敏感信息的任务非同小可，而 Aserto 和 Clerk 等服务可以让这一过程变得更加轻松。数据库的主流授权模式是在执行查询后过滤结果。在某些情况下，这可能并不可行，但在 RAG 使用案例中，这实际上是非常合适的：我们通常不会一次查询几十个结果，而使用 Aserto 等服务过滤这些结果在延迟方面是完全可行的。
+
+# **相关链接 **
+
+[1] https://www.pinecone.io/learn/context-aware-chatbot-with-vercel-ai-sdk/
+
+[2] https://github.com/pinecone-io/pinecone-rag-demo/tree/feature/authz
+
+[3] https://clerk.com/
+
+[4] https://www.aserto.com/
+
+[5] https://www.topaz.sh/docs/directory#manifest
+
+[6] https://www.topaz.sh/docs/directory/manifest-reference#permission-definitions
