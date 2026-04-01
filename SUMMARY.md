@@ -10,6 +10,7 @@
 +   [Zelina的个人说明书](docs/di-25-xiaoshi/README.md)
 +   [个人开源 AI 知识库（老铁点个 赞 谢谢）](docs/laojin-daini-wan-ai/README.md)
 +   [苹果爷爷【AI知识库】首页](docs/pingguo-yeye/README.md)
++   [大模型空间站](docs/qiji-damoxing-xuexi-shequn/README.md)
 +   [人人都是AI工程师](docs/renren-doushi-ai-gongchengshi/README.md)
 +   [小码哥AGI启航](docs/xiaomage-agi/README.md)
 +   [Midjourney知识库大全](docs/xinlingshenhui/README.md)
