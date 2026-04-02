@@ -10,6 +10,7 @@
 +   [ChatGPT 超神之路](docs/chatgpt-chaoshen-zhilu/README.md)
 +   [ChatGPT 公共知识库](docs/chatgpt-gonggong/README.md)
 +   [ChatGPT知识库首页💾](docs/chatgpt-zhishiku/README.md)
++   [CloudZun AIGC 知识库](docs/cloudzun-aigc-zhishiku/README.md)
 +   [Zelina的个人说明书](docs/di-25-xiaoshi/README.md)
 +   [疯狂AI知识库介绍](docs/fengkuang-aigc-zhishiku/README.md)
 +   [老金带你玩 AI](docs/laojin-daini-wan-ai/README.md)
