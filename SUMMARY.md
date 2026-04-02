@@ -19,6 +19,7 @@
 +   [人人都是AI工程师](docs/renren-doushi-ai-gongchengshi/README.md)
 +   [人人都是超级个体](docs/renren-doushi-chaoji-geti/README.md)
 +   [思源 AIGC](docs/siyuan-aigc/README.md)
++   [万象 AI 实验室](docs/wanxiang-ai-shiyanshi/README.md)
 +   [小码哥AGI启航](docs/xiaomage-agi/README.md)
 +   [Midjourney知识库大全](docs/xinlingshenhui/README.md)
 +   [一站式AI产品经理入门指南](docs/yizhanshi-ai-chanpinjingli/README.md)

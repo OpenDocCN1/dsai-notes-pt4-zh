@@ -1,0 +1,190 @@
+# 开发者集合，这个方案让你 20 元爽玩 Claude Code！
+
+> 来源：[https://yunyinghui.feishu.cn/docx/GWlqd7utEofYrQxO8D3cdjPgnoc](https://yunyinghui.feishu.cn/docx/GWlqd7utEofYrQxO8D3cdjPgnoc)
+
+---
+
+大家好，这里是Mix AI Lab。最近有件事，真的让人头大，那就是：Anthropic 竟然不再向中国地区提供服务了，让一大批依赖 Claude Code 的开发者失去了得力助手！
+
+![](img/9b31531522c780c31d7c2ad87d12cd13.png)
+
+**看到一家科**技公司在公开声明中使用‘敌对国家’这样的表述，确实让人感到有些意外和复杂。在印象中，科技界更多是倡导开放与合作的。尤其令人感慨的是，这家公司的 CEO 还曾有在中国百度工作的经历，那段国际技术交流的过往，与现在这种不和谐的立场放在一起，不禁让人思考这背后发生了怎样的变化。
+
+更让人无法忽视的是，这件事的背后，隐**藏着一个可能被我们很多人忽略的严峻现实：我们当前热议和追捧的 AI Agent** 和 AI 辅助编程（Coding）浪潮，其技术灵感和实现效果，在很大程度上都源于像 Claude 这样强大的底层模型。 我们享受着它带来的便利，惊叹于它所开启的可能性，甚至整个技术生态都在围绕它进行构建。惊叹于他技术的同时，我们更加需要做的也是努力去掌握、创新、超越。
+
+就在国内部分企业或者开发者高度依赖 Anthropic 公司产品陷入“断供焦虑”时，智谱 AI 的快速响应提供了非常好的承接方案，迅速推出了“Claude API 用户特别搬家计划”，这个方案不仅提供接口参数级兼容的迁移工具，还配备专属技术顾问协助数据迁移与功能适配。
+
+![](img/c498b8920d01dfa0fc9648414e64cf84.png)
+
+这种“无缝衔接”的替代方案，正在重塑企业对 AI 服务选型的认知，正如智谱技术白皮书强调的：替代不是妥协，而是寻找更稳定的技术底座。选择本土化 AI 服务，企业不仅能规避跨境服务可能面临的政策波动风险，还能获得更贴合国内网络环境的响应速度——实测显示，同等任务下 GLM 系列模型的平均响应延迟比跨境 API 降低 62%，且支持根据业务需求进行模型微调与功能定制。
+
+GLM-4.5 Team 也对最先进的、目前最高水平（SOTA）的大模型做了代码能力的横向测评，具体对比如下：
+
+## 1.代码能力测试步骤及性能对比
+
+为了评估 GLM**-4.5 在真实场景中的代理编码**能力，GLM-4.5 Team 构建了 CC-Bench，这是一个基于 Claude Code 的基准测试，包含了 52 个精心设计的跨不同软件开发领域的编程任务。GLM-4.5 Team 将 GLM-4.5 与三个强大的基线进行比较：Claude Sonnet 4，Kimi K2 和 Qwen 3-Coder。每个任务都在隔离的容器化环境中执行，以防止跨任务干扰，使用预定义的 API 配置初始化模型。测试由人类专家在多轮交互式进行：每个任务都以标准化提示开始，然后是迭代交互，专家根据模型输出调整输入，直到任务完成或失败。为了确保公平，同一专家在所有模型中遵循一致的交互策略。可以看到测评的步骤是非常客观且专业的，且都是和 SOTA 模型进行对比。
+
+在结果中，可以看到 GLM-4.5 表现出了相对于开源基线的强大性能，如下图所示。
+
+具**体而言：GLM-4.5 vs **C**laude Sonnet 4：40.4%** win，9.6% tie，50.0% loss，可以看到其实性能上是平分秋色的。且 GLM-4.5 在工具调用可靠性方面尤其出色，达到了 90.6%的最高成功率，与 Claude Sonnet 4（89.5%）、Kimi-K2（86.2%）和 Qwen 3-Coder（77.1%）相比，虽然 Claude Sonnet 4 仍然是一个强大的竞争对手，但 GLM-4.5 在任务完成一致性和代理执行鲁棒性方面优于其他模型。
+
+![](img/ff07588511e5e6d1a86ed9fa81500347.png)
+
+![](img/718d3173175b881eda567e83d7e0643c.png)
+
+## 2.多维度能力对比
+
+为帮助开发者直观评估替代方案的实际价值，从代码能力、响应速度和性价比三个核心维度，GLM-4.5 Team 对 12 项行业标准基准的全面评估中，GLM-4.5 表现卓越，得分 63.2，在所有专有和开源模型中排名第 3 。值得注意的是，GLM-4.5-Air 在保持优异效率的同时，仍取得了 59.8 的竞争性成绩。
+
+![](img/1ad5ec05930f35155d877fed6bc9a37e.png)
+
+![](img/b782b329f6faa63ac7437779b9d524fa.png)
+
+从数据来看，GLM-4.5 在代码能力的多个细分场景中均展现优势：复杂算法实现上，动态规划问题的状态转移方程设计更精准；工程化代码生成中，RESTful API 的接口健壮性与错误处理逻辑更完善；多语言适配方面，Python、Java、Go 三大主流语言的任务完成率均高于 Claude，其中 Python 场景优势最显著，Go 语言差距达 3%。
+
+响应速度上，GLM-4.5 平均响应耗时仅 0.8s，较 Claude 的 1.2s 提速 33%，尤其在长文本处理场景，差距进一步扩大至 40%，能有效提升开发效率。性价比方面，GLM-4.5 每正确完成 1 个代码任务的成本仅为 $0.35，是 Claude $0.92 成本的 38%，显著降低开发成本。
+
+海外开发者社区已出现明显的迁移趋势，真实使用反馈印证了数据优势：
+
+Reddit 用户 @CodeOptimizer 在《从 Claude 到 GLM-4.5 的两周体验》中提到："为公司的微服务生成 Go 语言 API 时，GLM-4.5 不仅首次通过率比 Claude 高 12%，而且生成的代码天然支持 opentelemetry 埋点，这在之前需要额外提示才能实现。"
+
+Hacker News 热门讨论帖《中国 LLM 的性价比革命》中，开发者@DevOpsEngineer 分享："动态规划问题的测试通过率从 Claude 的 78% 提升到 GLM-4.5 的 91%，关键是单次调用成本不到之前的一半，这对我们的 CI/CD 流水线优化太重要了。"
+
+[海外 youtuber ](https://www.youtube.com/watch?v=8IBTqbFNI5U&t=1859s)都在大力赞赏我们的国创模型 GLM-4.5！性能优秀价格还非常 insane，真真实实的上演了：“国外的月亮更圆！”中国人在大模型上也狠狠扬眉吐气了一次！
+
+![](img/d448dffb2e61f3b8cae3c4677006f113.png)
+
+这些一线开发者的实践反馈表明，GLM-4.5 不仅在核心能力上实现超越，更在实际开发流程中带来效率与成本的双重优化。
+
+## 3.混元官方进行多模型测评
+
+根据腾讯混元发布的 AutoCodeBenchmark 排名显示，
+
+**测试实录**：**GLM-4.5-enable 的性能其实平**均跑分与 Claude 的差距并不算太大，更何况对比 Claude code 的高昂费用，GLM-4.5-enable 的性价比属实更适合打工人，是时候拥抱国产 AI 了！
+
+![](img/3e3214f50ad2d9e133ffddb7ad07b5cd.png)
+
+## 4.GLM Coding Plan 套餐详情：性价比之王的选择
+
+相较于**昂贵还抵制中国的 Claud**e** code，面对不同的开发需**求，**智**谱平台推出了一个新策略：GLM Coding Plan 提供了精准匹配场景的套餐方案，帮助开发者用更低成本获得高效 API 服务。对于每日代码查询次数少于 50 次的个人开发者，Lite 版（20 元/月）足以覆盖日常调试、语法检查等轻量需求；企业团队若需支持 CI/CD 流程集成、大规模代码自动化分析等场景，则推荐选择 Pro 版（100 元/月），享受更稳定的服务支持与更高的 token 额度。在前文各项指标评测中，GLM 和 Claude Code、deepseek、kimi 等性能其实差不多，在功能和侧重上各有一点差异，但是这个价格实在是香炸了！最高档 100 元，就能拥有持续稳定的生产力，不用再担心锁区、不稳定、高昂费用等问题！
+
+为直观展现 GLM 套餐的性价比优势，我们将其与原 Claude Coding Plan（140 美元/月）的核心维度进行对比：
+
+**核心价值亮点**：以个人开发者常用的 Lite 版为例，20 元/月即可获得 Claude 1/7 价格的 3 倍用量，无需承担高昂成本即可满足日常开发需求，性价比优势显著。
+
+> 如需快速开通套餐，可通过下方海报直达 GLM 开发者控制台，根据实际场景选择合适方案，即刻接入高效的 AI 编码能力。
+
+> 一杯奶茶钱，智谱的 Claude Code 20 元套餐：https://zhipuaishengchan.datasink.sensorsdata.cn/t/wd
+
+![](img/1f865c3db3e2beee76fc681c075e9a64.png)
+
+其实从 Claude 到 GLM-4.5 无缝迁移真的只需要 10 分钟，大致过程如下：
+
+**首先是****兼容性验证与准备工作**
+
+将现有基于 Claude API 的项目迁移至 GLM-4.5 前，做好兼容性验证与环境准备是确保平滑过渡的关键。以下从核心参数适配和连通性测试两方面，为开发者提供可直接落地的操作指南：
+
+> https://github.com/zai-org/GLM-4.5
+
+**其次是****核心参数兼容性检查**
+
+需重点核对现有代码中 Claude API 调用的三个关键参数，确保与 GLM-4.5 接口规范匹配：
+
++   **model 参数****：将原 Claude 模**型名称（如 claude-3-opus-20240229）替换为 GLM-4.5 的专用模型标识 glm-4.5-code，该模型针对代码生成场景做了深度优化。
+
++   **messages 格式**：GLM-4.5 完全兼容 Claude 的 messages 数组结构（包含 role 和 content 字段），无需调整对话历史传递逻辑。
+
++   **temperature 范围****：支持与 Cla**ude 一致的 0-2 取值范围，0 对应确定性输出，2 对应高度随机化结果，可直接复用原温度控制策略。
+
+**参数适配提示**：建议通过全局搜索定位代码中 model: 关键字，批量替换模型名称；若使用配置文件管理参数，可新增 GLM_MODEL = "glm-4.5-code" 配置项，便于后续维护。
+
+**在做 API 连通性测试**
+
+完成参数适配后，通过以下 curl 命令快速验证 GLM API 服务连通性，确保网络环境、密钥权限等基础条件正常：
+
+bash
+
+```
+curl -X POST https://api.glm.cn/v1/chat/completions \-H &quot;Authorization: Bearer YOUR_API_KEY&quot; \-H &quot;Content-Type: application/json&quot; \-d &#x27;{
+    &quot;model&quot;: &quot;glm-4.5-code&quot;,
+    &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;print hello world&quot;}]
+  }&#x27;
+```
+
+**操作步骤**：
+
+1.  登录 GLM 平台获取个人 API 密钥（替换命令中的 YOUR_API_KEY）；
+
+1.  在终端粘贴并执行上述命令，若返回包含 hello world 的 JSON 响应（如 {"choices": [{"message": {"content": "print('hello world')"}}]}），则表明连通性正常。
+
+**故障排查指南**：
+
++   若提示 "401 Unauthorized"：检查 API 密钥是否过期或权限不足，建议重新生成密钥并确保已启用 glm-4.5-code 模型调用权限。
+
++   若返回 "model not found"：确认模型名称拼写为 glm-4.5-code（区分大小写），避免误写为 GLM-4.5-Code 或 glm4.5code。
+
+**最后****代码层迁移步骤**
+
+**对于开发者而言，A**PI 服务切换最核心的诉求是最小化代码改动成本。GLM-4.5 在设计时充分考虑了这一点，通过兼容 OpenAI SDK 格式，实现了从 Claude 到 GLM-4.5 的平滑过渡，让迁移工作变得简单高效。
+
+以下是具体的 Python 代码迁移示例，直观展示从 Claude 到 GLM-4.5 的切换过程：
+
+**原 Claude 调用代码**：
+
+```
+client = anthropic.Anthropic(api_key=&quot;claude_key&quot;)
+response = client.messages.create(
+    model=&quot;claude-3-opus&quot;,
+    messages=[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;write a sort function&quot;}])
+```
+
+迁移后 GLM-4.5 调用代码：
+
+```
+client = OpenAI(api_key=&quot;glm_key&quot;, base_url=&quot;https://api.glm.cn/v1&quot;)  # 兼容OpenAI SDK格式
+response = client.chat.completions.create(
+    model=&quot;glm-4.5-code&quot;,
+    messages=[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;write a sort function&quot;}])
+```
+
+**核心迁移要点**：
+
++   **无需修改消息体结构**：用户与模型交互的messages参数（包含角色、内容的数组）完全复用，无需调整格式。
+
++   **仅需调整两处参数**：将api_key更换为 GLM 平台密钥，base_url指向 GLM API 地址（https://api.glm.cn/v1），同时将model参数指定为glm-4.5-code等对应模型。
+
++   **兼容主流 SDK**：直接使用 OpenAI 官方 SDK 即可调用 GLM 服务，无需额外引入新依赖库。
+
+通过这样简单的调整，开发者就能快速完成代码层的迁移，几乎不会影响现有业务逻辑的正常运行。这种低门槛的迁移方式，大大降低了技术切换带来的时间成本和风险。
+
+**我们可以做一个****实战案例：开发一个俄**罗斯方块小游戏，大致操作流程如下：
+
+### Step1：按照上述步骤完成智谱 GLM Api 调用，启动 claude code
+
+![](img/87fc888e363a1d58b8633ca11c8fe7e3.png)
+
+### Step2：输入开发需求
+
+例如：开发一个简单的俄罗斯方块小游戏，完善 ui 界面
+
+![](img/de1dab6d45b15b8a6fe734b2d72ff5c7.png)
+
+![](img/74cb8c8b2aad0425f4e7aa4eadcc70f6.png)
+
+### Step3：测试
+
+![](img/89d60e1ba90d018a2c982f9fb1963b67.png)
+
+[c8710890875e2199c01b253b020316fa_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SnrrbjyBnoZ9BIxC2bgcemD3nkg)
+
+### Step4：改进代码
+
+在完成基础开发后，还可以让 GLM 改进一下程序，比如：完善一下 ui 界面，采用更有设计感的配色和 ui 设计
+
+![](img/cce6e672b3fec27c7edbd37ac837de94.png)
+
+![](img/5415d57376279c873966e0272e57a404.png)
+
+最近，许多读者朋友可能都感受到了全球 AI 服务波动带来的“凉意”，尤其是像 Claude 这样我们日常依赖的工具突然变得遥远。这种不确定性，让我们在埋头写代码时，也不免多了一丝顾虑。我们需要的，或许不仅仅是一个临时的替代方案，更是一个能让我们安心构建、不必时常担心地基会动摇的稳定环境。这时候，把目光投向我们身边的选择，比如 GLM-4.5，就显得格外顺理成章。它不仅在技术上紧跟前沿，更重要的是，它在这里，服务稳定，成本也更可控。切换工具可能需要一些精力，但如果能换来一份长久的踏实和对技术路径的自主掌控，这或许是一次值得的探索。
+
+根据咱们这篇文档的迁移指引，从环境配置到代码适配的全流程指南已备好，前 1000 名开通 Pro 版的开发者，还可免费获赠 cline 高级测试套件，覆盖单元测试生成、性能压力测试及兼容性验证等核心开发场景，让工具切换零成本、开发效率不打折，在就加入 GLM-4.5 开发者生态，用自主可控的技术工具筑牢开发根基，让全球服务波动不再成为开发进程的阻碍！
