@@ -1,0 +1,73 @@
+# Deploy 知识库共建
+
+> 来源：[https://aicarrier.feishu.cn/docx/NaR9ds2VDotdcPx2sescWWvQnVc](https://aicarrier.feishu.cn/docx/NaR9ds2VDotdcPx2sescWWvQnVc)
+
+![](img/575e89739b6daacadfbf4b4a3ea3482f.png)
+
+| **章节** | **任务ID** | **小节** | **描述** | **领取地址** | **最终撰写地址** | **负责人** |
+| --- | --- | --- | --- | --- | --- | --- |
+| 基础篇 |  |  |  |  |  |  |
+| 模型部署基础 | Deploy001 | 模型推理 | 什么是模型推理，和训练的区别，如何使用最简单的torch推理一个模型 | [Deploy001](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy001) | [Deploy001 模型推理](https://aicarrier.feishu.cn/wiki/OBfiwsjdXiHnrnkWmtvc5MXKnAd?from=from_copylink) | 🐧🦩 |
+|  | Deploy002 | 模型部署 | 选择其他框架对模型进行推理，简单介绍下常见的推理框架 ONNX OpenVINO TensorRT | [Deploy002](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy002) | [Deploy002 模型部署](https://aicarrier.feishu.cn/wiki/UEMbwOMrqiyBXRkCLuNcolP9nbb) |  |
+|  | Deploy003 | 模型量化 | 解释最基础的模型量化知识，模型量化公式等理论知识解析 | [Deploy003](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy003) | [Deploy003 模型量化](https://aicarrier.feishu.cn/wiki/Tqdfw7AcEiAti4kckXTc5REvnhp) |  |
+| 大模型架构详解 | Deploy004 | 矩阵乘法 | 知识讲解+最简单Py代码 | [Deploy004](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy004) | [Deploy004 矩阵乘法](https://aicarrier.feishu.cn/wiki/M2LkwWaFqiGKrukc1jwcBV0unAb) |  |
+|  | Deploy005 | 位置编码 | RoPE为主 | [Deploy005](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy005) | [Deploy005 位置编码](https://aicarrier.feishu.cn/wiki/XpXzw3SXtiVSt8kZlGlcEVXFnke) |  |
+|  | Deploy006 | Norm | LayerNorm + RmsNorm | [Deploy006](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy006) | [Deploy006 Norm](https://aicarrier.feishu.cn/wiki/WYnrwKwqeiCkuQkxRxgcvQ6Wnpd) |  |
+|  | Deploy007 | Attention | Attention | [Deploy007](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy007) | [Deploy007 Attention](https://aicarrier.feishu.cn/wiki/VHrqwDNooiwFnYkbPpmcSNH8nHH) |  |
+|  | Deploy008 | 激活函数 | Gelu Relu SwiGelu | [Deploy008](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy008) | [Deploy008 激活函数](https://aicarrier.feishu.cn/wiki/PjoUwaGZtiNeHPkHiifcHptPnme) |  |
+|  | Deploy009 | 解码相关 | topk，topp，beam search | [Deploy009](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy009) | [Deploy009 解码相关](https://aicarrier.feishu.cn/wiki/Q9vUwzDf0ixbRqkOzu0cqRdQnlA) |  |
+| 大模型部署框架解析 | Deploy010 | vLLM | 详细讲讲论文可以 | [Deploy010](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy010) | [Deploy010 vLLM](https://aicarrier.feishu.cn/wiki/NfvAw55Zxiap0qkgColc5q2Dnhg) |  |
+|  | Deploy011 | TRT-LLM | nv有什么优化？ | [Deploy011](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy011) | [Deploy011 TRT-LLM](https://aicarrier.feishu.cn/wiki/A5I9wmVYsiZJj2kxpdwc9rNAnje) |  |
+|  | Deploy012 | LMDeploy | 推理速度上的优势 | [Deploy012](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy012) | [Deploy012 LMDeploy](https://aicarrier.feishu.cn/wiki/MBq3wBpqSijsLDkTFJccaqxvnce) |  |
+| 简单的CUDA | Deploy013 | CUDA 编程模型简介 | thread wrap block | [Deploy013](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy013) | [Deploy013 CUDA 编程模型简介](https://aicarrier.feishu.cn/wiki/EHbEwACYlifAwmke3K3cVhRPnhc) |  |
+|  | Deploy014 | CUDA 内存模型简介 | 主存，共享内存，寄存器 | [Deploy014](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy014) | [Deploy014 CUDA 内存模型简介](https://aicarrier.feishu.cn/wiki/MfD7wp44vidX5Zk0Guyccul6n56) |  |
+|  | Deploy015 | CUDA bank conflict | 是什么 哪里会有 如何减弱 bank conflict | [Deploy015](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy015) | [Deploy015 Deploy015](https://aicarrier.feishu.cn/wiki/ZkebwUCfeiIa3Uk5oYQcxSLwnqe) |  |
+|  | Deploy016 | CUDA 向量化访存 | 如何加速数据传递 | [Deploy016](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy016) | [Deploy016 CUDA 向量化访存](https://aicarrier.feishu.cn/wiki/NMGMwpGoSiqeXIkfA5pcAgDNnGc) |  |
+|  | Deploy017 | CUDA 共享内存 | 为什么需要共享内存。共享内存应用的场景 | [Deploy017](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy017) | [Deploy017 CUDA 共享内存](https://aicarrier.feishu.cn/wiki/N5Hew87ZSirEqLkG2eKcD333nxc) |  |
+|  | Deploy018 | CUDA 计算资源 | Tensorcore调用 | [Deploy018](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy018) | [Deploy018 CUDA 计算资源](https://aicarrier.feishu.cn/wiki/Hfa9wzV0hin9o2k5MJmcv0jRnEg) |  |
+| 进阶篇 |  |  |  |  |  |  |
+| 用cuda和Triton写大模型 | Deploy019 | Triton简介 |  | [Deploy019](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy019) | [Deploy019 Triton简介](https://aicarrier.feishu.cn/wiki/Dgj3wsI0oiAlcWkS7O5cbrn4ngb) |  |
+|  | Deploy020 | cuda/Triton 写一个简单的量化层，激活函数 |  | [Deploy020](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy020) | [Deploy019 Triton简介](https://aicarrier.feishu.cn/wiki/Dgj3wsI0oiAlcWkS7O5cbrn4ngb) |  |
+|  | Deploy021 | cuda/Triton 写一个LayerNorm/RmsNorm |  | [Deploy021](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy021) | [Deploy021 cuda/Triton 写一个LayerNorm/RmsNorm](https://aicarrier.feishu.cn/wiki/AdWow6LNoieA6Qkaff9cqTSynfe) |  |
+|  | Deploy022 | cuda/Triton 写一个RoPE |  | [Deploy022](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy022) | [Deploy022 cuda/Triton 写一个RoPE](https://aicarrier.feishu.cn/wiki/NhyKwLqQbirPAakc7rtcn97Kndh) |  |
+|  | Deploy023 | 用cublas写一个矩阵乘法 |  | [Deploy023](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy023) | [Deploy023 用cublas写一个矩阵乘法](https://aicarrier.feishu.cn/wiki/GyqZwdp9SitpWkkNVSYcCfWZneg) |  |
+| 大模型量化 | Deploy024 | 量化简析 | 如何写一个量化层，如何插入量化层？如何插入解量化层.主流的量化方法 w8a8/w4a16。如何选择量化方法 | [Deploy024](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy024) | [Deploy024 量化简析](https://aicarrier.feishu.cn/wiki/Yicsw0CTXiu6YDkp91xcrCo7nMb) |  |
+|  | Deploy025 | w8a8 | 如何融合量化算子 认识int8矩阵乘法 smoothquant 如何调用tensorcore加速你的int8矩阵乘法 | [Deploy025](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy025) | [Deploy025 w8a8](https://aicarrier.feishu.cn/wiki/TIFgwJprZiniWokxWhlckSCknrg) |  |
+|  | Deploy026 | w4a16 | 整体流程  awq 快速反量化 如何为了应用tensorcore对数据进行特殊排布 | [Deploy026](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy026) | [Deploy026 w4a16](https://aicarrier.feishu.cn/wiki/Ia44wSA48igeCekUSxnc8GnInxc) |  |
+|  | Deploy027 | kvcache | **为**什么要对kvcache做量化 int8 kvcache量化 算子实现 int4 kvcache量化 | [Deploy027](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy027) | [Deploy027 kvcache](https://aicarrier.feishu.cn/wiki/RXfbw0kACisSGVkuVRHcl1NDnng) |  |
+| 底层加速 | Deploy028 | Flash attn | 1 2 3 decoding | [Deploy028](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy028) | [Deploy028 Flash attn](https://aicarrier.feishu.cn/wiki/RAO8wPQBEiBgSIkhP3Pccc8Hnfe) |  |
+|  | Deploy029 | GQA MHA MLA |  | [Deploy029](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy029) | [Deploy029 GQA MHA MLA](https://aicarrier.feishu.cn/wiki/H8hJw3rSRixIbLkaGu0cS0Ygngc) |  |
+|  | Deploy030 | 矩阵乘法合并 |  | [Deploy030](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy030) | [Deploy030 矩阵乘法合并](https://aicarrier.feishu.cn/wiki/EKQSwr6PyiUjvekKiPbcfGAon5b) |  |
+|  | Deploy031 | Paged attention |  | [Deploy031](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy031) | [Deploy031 Paged attention](https://aicarrier.feishu.cn/wiki/LEs8wFJZoiU4DOkys0qcUQ7xnKe) |  |
+|  | Deploy032 | Group gemm |  | [Deploy032](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy032) | [Deploy032 Group gemm](https://aicarrier.feishu.cn/wiki/Q9MIwkSZJisBCpk1dbtcyVAUnaf) |  |
+| 系统层面加速 | Deploy033 | Contiguous batching |  | [Deploy033](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy033) | [Deploy033 Contiguous batching](https://aicarrier.feishu.cn/wiki/I6NAw41iyiGWONki5XTcqyfOnrd) |  |
+|  | Deploy034 | 投机解码 |  | [Deploy034](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy034) | [Deploy034 投机解码](https://aicarrier.feishu.cn/wiki/W0HfwbDW7ihaLWkJmh4cYOHjnyz) |  |
+|  | Deploy035 | Prefix cache |  | [Deploy035](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=Deploy035) | [Deploy035 Prefix cache](https://aicarrier.feishu.cn/wiki/Yu9nw1OOeimlM2kQFn7cub4tnMh) |  |
+
+1.  进阶之大模型底层加速方法
+
++   qkv矩阵乘法的合并
+
++   （qkv矩阵乘法和rope的合并 这个可能比较难 这么写的人不多
+
++   Flash attn 1
+
++   Flash attn 2 3
+
++   Flash decoding and ++
+
++   GQA MHA MLA
+
++   Paged attention
+
++   （针对MoE的 Group Gemm 估计这个也会找不到人写
+
+1.  大模型系统层面加速方法
+
++   Contiguous batching
+
++   投机解码
+
++   Medusa
+
++   Prefix cache
