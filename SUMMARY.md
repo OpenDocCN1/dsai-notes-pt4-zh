@@ -12,6 +12,7 @@
 +   [ChatGPT知识库首页💾](docs/chatgpt-zhishiku/README.md)
 +   [CloudZun AIGC 知识库](docs/cloudzun-aigc-zhishiku/README.md)
 +   [Zelina的个人说明书](docs/di-25-xiaoshi/README.md)
++   [废才俱乐部首页](docs/feicai-julebu-de-ai-xuetang/README.md)
 +   [疯狂AI知识库介绍](docs/fengkuang-aigc-zhishiku/README.md)
 +   [GeekAGI 知识库 · 学习指南](docs/geek-agi-zhishiku/README.md)
 +   [2016 年机器之心高分技术文章全集](docs/jqzx-2016/README.md)
