@@ -5,6 +5,7 @@
 +   [☄️AI Flow Genius 工作流社区 知识库](docs/ai-flow-genius/README.md)
 +   [AI 工具使用手册](docs/ai-gongju-shiyong-shouce/README.md)
 +   [AI觉醒日报（一觉醒来发生了什么）](docs/ai-juexing-shequ/README.md)
++   [AI搜索产品&技术研究](docs/ai-sousuo-chanpin-yanjiu/README.md)
 +   [【AI星球】 星知万象知识库（持续建设中）](docs/ai-xingqiu-zhishiku/README.md)
 +   [AI研习社](docs/ai-yanxishe/README.md)
 +   [🥇「AI 知识库」 首页](docs/ai-zhishiku/README.md)
