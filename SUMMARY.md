@@ -11,6 +11,7 @@
 +   [ChatGPT 超神之路](docs/chatgpt-chaoshen-zhilu/README.md)
 +   [ChatGPT 公共知识库](docs/chatgpt-gonggong/README.md)
 +   [ChatGPT知识库首页💾](docs/chatgpt-zhishiku/README.md)
++   [Claude宝宝教程](docs/claude-zhishiku/README.md)
 +   [CloudZun AIGC 知识库](docs/cloudzun-aigc-zhishiku/README.md)
 +   [Zelina的个人说明书](docs/di-25-xiaoshi/README.md)
 +   [废才俱乐部首页](docs/feicai-julebu-de-ai-xuetang/README.md)
