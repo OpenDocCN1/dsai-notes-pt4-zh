@@ -1,0 +1,593 @@
+# 景淮：漫画趣味高中大学时期对比图 -GPTs 实战
+
+> 来源：[https://waytoagi.feishu.cn/docx/FZKzdWF2Yolz35xDLD2cq5p4n5g](https://waytoagi.feishu.cn/docx/FZKzdWF2Yolz35xDLD2cq5p4n5g)
+
+> 嘿，大家好呀，我是景淮，一个加拿大的程序员，沉迷 AI 不能自拔中。
+
+> 欢迎大家关注公众号： 景淮AI探索之旅
+
+今天不更孩子王系列~ 这篇算是孩子王系列之外，我也很喜欢的内容。对我来说，很多时候都是没有目的的，喜欢、快乐比什么都重要。
+
+今天发生了一些事情，但真的很感动很感动。所以可能稍微耽误大家一点时间，简单谈谈感受~
+
+事情发生的很快。甚至我一觉睡醒事情已经解决了（起来的时候真的是一脸懵，手机都被炸了），在这里要感谢 MQ老师 、不言老师和很多老师们的帮助。相信那个朋友今天过后也会变好的，一定哒 ~
+
+说实在的 AI 这个圈子发展很快，每天都在变化，每天都在更新。甚至可以说信息来源特别特别多。这半年来交了很多好朋友，但大家其实都有一个共同的特质，就是乐于分享，写提示词的高手很多，比我强的也很多。但这个领域的人，不管是小七姐、Arthur老师、宇龙哥、小林哥、MQ老师、皮特老师、洋哥... 还有好多好多厉害的人（某些好朋友，我就不点名了，要是一个一个列，我能列一大篇哈哈哈），正是因为大家不吝啬的分享自己会的知识，分享提示词，分享学习方法。我们才能学到很多最新的、最厉害的技术和方法。
+
+真的很喜欢这个圈子，大家都在做着自己喜欢的事、都在相互分享着内容。真好~
+
+最后放一段 Arthur 老师写在群信息的，这就是我对咱们这个圈子的认知。其实没有什么大佬不大佬的，每个人都是走在路上的人，只是走在这条路上的人，时时刻刻都记得回头帮帮那些刚入圈子的人而已。感谢每一位，感恩遇见的每一个人~
+
+![](img/cf0076adfdbab5b2d14094c021098b89.png)
+
+好啦，说了一堆与内容无关的，让我们玩点开心的、好玩的~。我们回到我们今天的主题，高中 vs 大学 的趣味对比图。
+
+今天的内容灵感其实来自于抖音最近一个火起来的兄弟（小许），主要就是拍摄有关于高中 vs 大学的区别。
+
+![](img/5974ccf9165f31a2fd1663b053ab4d96.png)
+
+[53404728a8998df96cad329ef841aa91.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MFO3briF5ozAeOxGZLzc0ijPn0e)
+
+文案如下
+
+高中时期：老板，来份早饭，迟到了，不要了，不要了，不要
+
+大学时期：老板，来份早饭，迟到了，不要了，不要了，换成黄焖鸡米饭吧，在这吃。
+
+很多朋友都或多或少的都经历过这段奇妙的旅程。所以今天的内容可能大家以后也用不上，但只为了图君一乐~ 在大家不开心的时候能够给大家提供一些情绪价值就好。
+
+所以今天的主题就是：
+
+GPTs 实战：漫画趣味高中大学时期对比图
+
+本文会根据以下内容顺序进行：
+
++   需求分析
+
++   分步实现需求
+
++   提示词编写测试
+
++   GPTs 使用链接
+
++   总结
+
+## **一、需求分析**
+
+我理想中的形式是，把高中时期和大学时期的内容分别做成四格漫画的形式，然后用 Python 把图片拼接起来，这样看起来就是在同一张图中形成对比的感觉。
+
+### 一）内容需求
+
+#### 1、文案需求
+
+在这个流程中，其实最重要的就是流程的内容。我们先要能够找到好玩有趣的点。这个点要真实，让大家有种确实如此，我们那时候也是这样的。
+
+#### 2、图片生成
+
+其实这部分的内容理想中应该和之前做的四格漫画一样。画出来的效果要基于最开始的内容，尽量准确的表达图片中的内容。
+
+图片需要生成两张为了保证画风一致，可以考虑使用Gen_id,来控制两张图片。
+
+#### 3、关于图片的处理
+
+##### 图片分别处理
+
+因为现在 D3 绘图时，对文字显示的能力，不是太好，所以我们这边只能退而求其次，尝试把对应的文案写在图片旁边。
+
+##### 图片的合并处理
+
+这边想到的就是，把两张处理好的图片，一上一下的进行摆放。具体如何调整会比较好看，可能还需要慢慢测试。
+
+#### 4、用户输入
+
+本着用户体验的思考，这边准备让用户尽量少的输入。所以直接让用户输入一个主题就可以了。（当然也可以直接随机一个符合学生的场景）
+
+### 二）需求整合
+
+![](img/b22ef21ed264b4eec16760017cccdaf2.png)
+
+> Tips：这边推荐使用 轻抖小程序 爬取抖音视频和文案。
+
+## 二、分部需求实现
+
+### 一）文案创作
+
+关于文案的创作，首先需要我们收集一些相关的文案，文稿。我这边已经使用 轻抖小程序 爬了一些视频口播了。
+
+1.  高中：老板，来份早饭，迟到了，不要了，不要了，不要
+
+> 大学：老板，来份早饭，迟了，不要了，不要了，换成黄焖鸡米饭吧，在这吃。
+
+1.  高中：还有这么多知识点没啊，我不管！拼了！
+
+> 大学：还有这么多知识点没记啊，我不管了，赌一把！
+
+1.  高中：及格！我不配吃饭了，一会儿再做两套试卷。
+
+> 大学：及格我是个天才，一会儿再配两个米饭。
+
+1.  高中：完了，我怎么把手机给带过来了
+
+> 大学：完了，我怎把课本带过来了。
+
+1.  高中：完了，我知道答完之后不会考100吧？我平常学习成绩那么差，老师该怀疑我了。
+
+> 大学：完了，我知道答案都考不了100，我废了
+
+1.  高中：又没水了，一周用三支笔
+
+> 大学：又没笔了，一周丢三支笔
+
+1.  高中：不是这分到底怎么丢的
+
+> 大学：不是这分儿到底怎么来的？感谢老师
+
+1.  高中：完了作业明天截止。
+
+> 大学：完了作业昨天截止。
+
+1.  高中：早上六点了吗？要迟到了！
+
+> 大学：早上六点了吗？要睡觉了！
+
+1.  高中：先上课吧，下课再聊
+
+> 大学：先上课吧，上课再聊
+
+我们先尝试把上面的示例，喂给 GPT，然后看看他能做到什么效果的文案。
+
+提示词
+
+> 上述是一种高中和大学区别的口播搞搞笑视频，重点突出的是大学生和高中生不同时期的生活状态。要形成鲜明的反差。请你学习后，告诉我学好了，我会给你主题，你来模仿着写出新的我给的主题的口播搞。
+
+> 
+
+> 输入关键词：下雨了
+
+输出结果
+
+1.  高中：下雨了，天哪，怎么办，我的数学书会湿！
+大学：下雨了，哦，正好，再睡一会儿。
+
+1.  高中：下雨了，得快跑，别迟到了！
+大学：下雨了，那今天就不去了，网课见。
+
+1.  高中：下雨了，我的鞋子！得小心踩！
+大学：下雨了，穿拖鞋去了，方便。
+
+1.  高中：下雨了，雨衣雨伞全副武装！
+大学：下雨了，抓个文件夹顶顶就行。
+
+1.  高中：下雨了，课间不能出去玩了。
+大学：下雨了，正好和室友打个牌。
+
+1.  高中：下雨了，哦不，体育课怎么办？
+大学：下雨了，哈，今天体育课取消了！
+
+1.  高中：下雨了，我的作业别淋湿了！
+大学：下雨了，电脑在宿舍，作业得推迟了。
+
+1.  高中：下雨了，赶紧找地方躲雨。
+大学：下雨了，雨中漫步也挺浪漫的。
+
+1.  高中：下雨了，不会影响放学吧？
+大学：下雨了，嘿，这是不是个不去自习的理由？
+
+1.  高中：下雨了，我的头发！
+大学：下雨了，谁还没个糟糕的头发日呢。
+
+哇，其实效果还可以，但我们为了后边画图也方便些，再调整一下，让效果更好一些。
+
+提示词
+
+1.  高中：老板，来份早饭，迟到了，不要了，不要了，不要
+
+> 大学：老板，来份早饭，迟了，不要了，不要了，换成黄焖鸡米饭吧，在这吃。
+
+1.  高中：还有这么多知识点没啊，我不管！拼了！
+
+> 大学：还有这么多知识点没记啊，我不管了，赌一把！
+
+1.  高中：及格！我不配吃饭了，一会儿再做两套试卷。
+
+> 大学：及格我是个天才，一会儿再配两个米饭。
+
+1.  高中：完了，我怎么把手机给带过来了
+
+> 大学：完了，我怎把课本带过来了。
+
+1.  高中：完了，我知道答完之后不会考100吧？我平常学习成绩那么差，老师该怀疑我了。
+
+> 大学：完了，我知道答案都考不了100，我废了
+
+1.  高中：又没水了，一周用三支笔
+
+> 大学：又没笔了，一周丢三支笔
+
+1.  高中：不是这分到底怎么丢的
+
+> 大学：不是这分儿到底怎么来的？感谢老师
+
+1.  高中：完了作业明天截止。
+
+> 大学：完了作业昨天截止。
+
+1.  高中：早上六点了吗？要迟到了！
+
+> 大学：早上六点了吗？要睡觉了！
+
+1.  高中：先上课吧，下课再聊
+
+> 大学：先上课吧，上课再聊
+
+>
+
+> 上述是一种高中和大学区别的口播搞搞笑视频，重点突出的是大学生和高中生不同时期的生活状态。要形成鲜明的反差。这种反差内容是这样的：
+
+1.  相同的情况，情景
+
+1.  出现截然不同的解决办法
+
+> 请你学习示例后，按照方法论写出[主题]下新的内容
+
+> 主题：中午吃饭
+
+结果展示
+
+1.  高中：中午，急急忙忙跑到食堂，排长队买饭。
+大学：中午，懒洋洋在宿舍点外卖，直接送到宿舍楼下。
+
+1.  高中：中午只能吃食堂，选择有限。
+大学：中午可以在校园周边任选餐厅，选择多样。
+
+1.  高中：中午吃完饭，匆匆回教室自习。
+大学：中午吃完饭，和朋友一起去咖啡厅或图书馆悠闲自习。
+
+1.  高中：中午吃得简单，速度要快，还有下午的课。
+大学：中午可以慢慢享受午餐，甚至还能小憩一会儿。
+
+1.  高中：中午节约时间，往往吃得很快。
+大学：中午可以和朋友一起享用悠长的午餐，聊天分享。
+
+### 二）Dalle-3 绘图
+
+我们这边使用刚才生成的这句进行测试
+
+高中：中午，急急忙忙跑到食堂，排长队买饭。
+
+大学：中午，懒洋洋在宿舍点外卖，直接送到宿舍楼下。
+
+提示词
+
+> 请分别把以上高中和大学时期的内容绘制成两幅四格漫画。
+
+![](img/f6c71dbcf9bfd06e1e130b390af177ae.png)
+
+![](img/205dc45b3ca8b23dbcf9459c3ab82516.png)
+
+### 三）图片处理
+
+利用 Python 分别把对应的文字加在图片下方。
+
+> 请使用python进行以下内容创作
+
+> 统一设置：使用我上传的字体，字体颜色黑色
+
+> 首先
+
+1.  在每张图片的上面创建一个空白的白色背景区域（从原图片进行延长，而不是遮盖原图），用来放置文字（高中的图片写上“高中”，大学的图片写上“大学”）
+
+1.  文字的字体大小设置成65px，居中显示
+
+> 然后
+
+1.  在图片下方创建一个空白的白色背景区域（从原图片进行延长，而不是遮盖原图），用来放置文字（高中的图片写上[高中的文案描述（不用声明是高中）]”，大学的图片写上[大学的文案描述（不用声明是大学）]）,如果句子过长，要注意换行显示。
+
+1.  文字的字体大小设置成45px。居中显示。
+
+> 最后把两张图片拼成一张图，高中的图片在左，大学的图片在右。两张图中间放置50px的空白区域
+
+效果展示
+
+![](img/db5cca1868426d669a18c24314a316ee.png)
+
+现在直接提示词出图效果还不错，但也留存下出图效果好的 Python 代码
+
+```
+from PIL import Image, ImageDraw, ImageFont
+import textwrap
+
+# Load the images
+high_school_image_path = &#x27;/mnt/data/A_four-panel_comic_strip_illustrating_a_high_schoo.png&#x27;
+college_image_path = &#x27;/mnt/data/A_four-panel_comic_strip_illustrating_a_college_sc.png&#x27;
+
+high_school_image = Image.open(high_school_image_path)
+college_image = Image.open(college_image_path)
+
+# Load the custom font
+font_path = &#x27;/mnt/data/AaWeiDuXinDong-NianFengAiNi-2.ttf&#x27;
+title_font = ImageFont.truetype(font_path, 65)
+desc_font = ImageFont.truetype(font_path, 45)
+
+# Define the text for each image
+high_school_title = &quot;高中&quot;
+college_title = &quot;大学&quot;
+high_school_desc = &quot;中午，急急忙忙跑到食堂，排长队买饭。&quot;
+college_desc = &quot;中午，懒洋洋在宿舍点外卖，直接送到宿舍楼下。&quot;
+
+# Create white background for title and description for each image
+def add_text_area(image, title, desc, title_font, desc_font):
+    # Calculate the new image size
+    width, height = image.size
+    new_height = height + 200 + 200  # 200 pixels for title, 200 pixels for description
+    new_image = Image.new(&quot;RGB&quot;, (width, new_height), &quot;white&quot;)
+
+    # Paste the original image onto the new image
+    new_image.paste(image, (0, 200))
+
+    # Draw the title and description
+    draw = ImageDraw.Draw(new_image)
+    title_width, title_height = draw.textsize(title, font=title_font)
+    desc_width, desc_height = draw.textsize(desc, font=desc_font)
+
+    # Add title
+    title_x = (width - title_width) // 2
+    draw.text((title_x, 100 - title_height // 2), title, fill=&quot;black&quot;, font=title_font)
+
+    # Add description
+    wrapped_desc = textwrap.fill(desc, width=40)
+    desc_x = (width - desc_width) // 2
+    draw.multiline_text((desc_x, height + 200 + 100 - desc_height // 2), wrapped_desc, fill=&quot;black&quot;, font=desc_font, align=&quot;center&quot;)
+
+    return new_image
+
+# Add text area to both images
+high_school_image_with_text = add_text_area(high_school_image, high_school_title, high_school_desc, title_font, desc_font)
+college_image_with_text = add_text_area(college_image, college_title, college_desc, title_font, desc_font)
+
+# Combine the images into one
+combined_width = high_school_image_with_text.width + college_image_with_text.width + 50
+combined_height = max(high_school_image_with_text.height, college_image_with_text.height)
+combined_image = Image.new(&quot;RGB&quot;, (combined_width, combined_height), &quot;white&quot;)
+
+# Paste the images onto the combined image
+combined_image.paste(high_school_image_with_text, (0, 0))
+combined_image.paste(college_image_with_text, (high_school_image_with_text.width + 50, 0))
+
+# Save the combined image
+output_path = &#x27;/mnt/data/combined_high_school_college_image.png&#x27;
+combined_image.save(output_path)
+output_path
+
+```
+
+## 三、提示词编写测试
+
+### 一）初版提示词
+
+```
+## Workflows:
+1. 输入：只说出开场白“嘿，想不想开启我们的回忆之旅，看看高中的我们和大学的我们究竟有何变化~ 快输入一个主题进行查看吧！”，然后等待用户输入
+  - 如用户未输入[主题]，则提示用户必须输入一个主题或者可以随机一个主题。
+2. 文案创作：根据[主题]，结合下述提示词编写三个案例以供用户选择。
+  - 提示词：
+    ```
+    示例：
+    1. 高中：老板，来份早饭，迟到了，不要了，不要了
+    大学：老板，来份早饭，迟了，不要了，不要了，换成黄焖鸡米饭吧，在这吃。
+    2. 高中：还有这么多知识点没啊，我不管！拼了！
+    大学：还有这么多知识点没记啊，我不管了，赌一把！
+    3. 高中：及格！我不配吃饭了，一会儿再做两套试卷。
+    大学：及格我是个天才，一会儿再配两个米饭。
+    4. 高中：完了，我怎么把手机给带过来了
+    大学：完了，我怎把课本带过来了。
+    5. 高中：完了，我知道答完之后不会考100吧？我平常学习成绩那么差，老师该怀疑我了。
+    大学：完了，我知道答案都考不了100，我废了
+    6. 高中：又没水了，一周用三支笔
+    大学：又没笔了，一周丢三支笔
+    7. 高中：不是这分到底怎么丢的
+    大学：不是这分儿到底怎么来的？感谢老师
+    8. 高中：完了作业明天截止。
+    大学：完了作业昨天截止。
+    9. 高中：早上六点了吗？要迟到了！
+    大学：早上六点了吗？要睡觉了！
+    10. 高中：先上课吧，下课再聊
+    大学：先上课吧，上课再聊
+
+    上述是一种高中和大学区别的口播搞搞笑视频，重点突出的是大学生和高中生不同时期的生活状态。要形成鲜明的反差。这种反差内容是这样的：
+    1. 相同的情况，情景
+    2. 出现截然不同的解决办法
+    请你学习示例后，按照方法论写出[主题]下新的内容
+    主题：中午吃饭
+    ```
+  - 格式：
+    1. 示例1： 
+        高中：
+        大学：
+    2. 示例2： 
+        高中：
+        大学：
+    3. 示例3： 
+        高中：
+        大学：
+    * 案例中关于“高中”和“大学”每个部分的描述不要超过20字（MaxToken：20）
+3. 图片绘制：根据用户所选的内容，分别把以上高中和大学时期的内容绘制成&quot;两幅&quot;四格漫画。
+    - 必须绘制两幅四格漫画。高中的一幅，大学的一幅。
+    - 高中的图片以用户所选的“高中”部分文案为内容进行四格漫画的创作
+    - 大学的图片以用户所选的“大学”部分文案为内容进行四格漫画的创作
+4. 图片补充设计：请使用python进行以下内容创作
+    - 统一设置：使用我上传的字体，字体颜色黑色
+    401. 首先
+        1. 在每张图片的上面创建一个空白的白色背景区域（从原图片进行延长，而不是遮盖原图），用来放置文字（高中的图片写上“高中”，大学的图片写上“大学”）
+        2. 文字的字体大小设置成65px，居中显示
+    402. 然后
+        1. 在图片下方创建一个空白的白色背景区域（从原图片进行延长，而不是遮盖原图），用来放置文字（高中的图片写上[高中的文案描述（不用声明是高中）]”，大学的图片写上[大学的文案描述（不用声明是大学）]）,如果句子过长，要注意换行显示。
+        2. 文字的字体大小设置成45px。居中显示。
+    403. 最后把两张图片拼成一张图，高中的图片在左，大学的图片在右。两张图中间放置50px的空白区域
+    404. 合成图片后把生成的结果使用combined_image.show()，在对话窗口展示给用户
+
+## Initialization：
+只说出开场白，然后等待用户输入，用户输入后严格按照[Workflows]的顺序执行，中途不要停止，深吸一口气，要一次执行完毕。
+```
+
+### 二）迭代后提示词
+
+```
+## Workflows:
+1. 输入：只说出开场白“嘿，想不想开启我们的回忆之旅，看看高中的我们和大学的我们究竟有何变化~ 快输入一个主题进行查看吧！”，然后等待用户输入
+  - 如用户未输入[主题]，则提示用户必须输入一个主题或者可以随机一个主题。
+2. 文案创作：根据[主题]，结合下述提示词编写三个案例以供用户选择。
+  - 提示词：
+    ```
+    示例：
+    1. 高中：老板，来份早饭，迟到了，不要了，不要了
+    大学：老板，来份早饭，迟了，不要了，不要了，换成黄焖鸡米饭吧，在这吃。
+    2. 高中：还有这么多知识点没啊，我不管！拼了！
+    大学：还有这么多知识点没记啊，我不管了，赌一把！
+    3. 高中：及格！我不配吃饭了，一会儿再做两套试卷。
+    大学：及格我是个天才，一会儿再配两个米饭。
+    4. 高中：完了，我怎么把手机给带过来了
+    大学：完了，我怎把课本带过来了。
+    5. 高中：完了，我知道答完之后不会考100吧？我平常学习成绩那么差，老师该怀疑我了。
+    大学：完了，我知道答案都考不了100，我废了
+    6. 高中：又没水了，一周用三支笔
+    大学：又没笔了，一周丢三支笔
+    7. 高中：不是这分到底怎么丢的
+    大学：不是这分儿到底怎么来的？感谢老师
+    8. 高中：完了作业明天截止。
+    大学：完了作业昨天截止。
+    9. 高中：早上六点了吗？要迟到了！
+    大学：早上六点了吗？要睡觉了！
+    10. 高中：先上课吧，下课再聊
+    大学：先上课吧，上课再聊
+
+    上述是一种高中和大学区别的口播搞搞笑视频，重点突出的是大学生和高中生不同时期的生活状态。要形成鲜明的反差。这种反差内容是这样的：
+    1. 相同的情况，情景
+    2. 出现截然不同的解决办法
+    请你学习示例后，按照方法论写出[主题]下新的内容
+    主题：中午吃饭
+    ```
+  - 格式：
+    1. 示例1： 
+        高中：
+        大学：
+    2. 示例2： 
+        高中：
+        大学：
+    3. 示例3： 
+        高中：
+        大学：
+    * 案例中关于“高中”和“大学”每个部分的描述不要超过20字（MaxToken：20）
+3. 图片绘制：根据用户所选的内容，分别把以上高中和大学时期的内容绘制成&quot;两幅&quot;四格漫画。
+    - 必须绘制两幅四格漫画。高中的一幅，大学的一幅。
+    - 高中的图片以用户所选的“高中”部分文案为内容进行四格漫画的创作
+    - 大学的图片以用户所选的“大学”部分文案为内容进行四格漫画的创作
+    - 注意：我们画的都是无声四格漫画（即，在漫画中没有任何对话）
+4. 图片补充设计：请使用python进行以下内容创作
+    - 统一设置：使用我上传的字体，字体颜色黑色
+    401. 首先
+        1. 在每张图片的上面创建一个空白的白色背景区域（从原图片进行延长，而不是遮盖原图），用来放置文字（高中的图片写上“高中”，大学的图片写上“大学”）
+        2. 文字的字体大小设置成65px，居中显示
+    402. 然后
+        1. 在图片下方创建一个空白的白色背景区域（从原图片进行延长，而不是遮盖原图），用来放置文字（高中的图片写上[高中的文案描述（不用声明是高中）]”，大学的图片写上[大学的文案描述（不用声明是大学）]）,如果句子过长，要注意换行显示。
+        2. 文字的字体大小设置成45px。居中显示。
+    403. 最后把两张图片拼成一张图，高中的图片在左，大学的图片在右。两张图中间放置50px的空白区域
+    404. 合成图片后把生成的结果使用combined_image.show()，在对话窗口展示给用户
+    405. 代码示例：
+    ```Python
+    from PIL import Image, ImageDraw, ImageFont
+    import textwrap
+
+    # Load the images
+    high_school_image_path = &#x27;/mnt/data/A_four-panel_comic_strip_illustrating_a_high_schoo.png&#x27;
+    college_image_path = &#x27;/mnt/data/A_four-panel_comic_strip_illustrating_a_college_sc.png&#x27;
+
+    high_school_image = Image.open(high_school_image_path)
+    college_image = Image.open(college_image_path)
+
+    # Load the custom font
+    font_path = &#x27;/mnt/data/AaWeiDuXinDong-NianFengAiNi-2.ttf&#x27;
+    title_font = ImageFont.truetype(font_path, 65)
+    desc_font = ImageFont.truetype(font_path, 45)
+
+    # Define the text for each image
+    high_school_title = &quot;高中&quot;
+    college_title = &quot;大学&quot;
+    high_school_desc = &quot;中午，急急忙忙跑到食堂，排长队买饭。&quot;
+    college_desc = &quot;中午，懒洋洋在宿舍点外卖，直接送到宿舍楼下。&quot;
+
+    # Create white background for title and description for each image
+    def add_text_area(image, title, desc, title_font, desc_font):
+        # Calculate the new image size
+        width, height = image.size
+        new_height = height + 200 + 200  # 200 pixels for title, 200 pixels for description
+        new_image = Image.new(&quot;RGB&quot;, (width, new_height), &quot;white&quot;)
+
+        # Paste the original image onto the new image
+        new_image.paste(image, (0, 200))
+
+        # Draw the title and description
+        draw = ImageDraw.Draw(new_image)
+        title_width, title_height = draw.textsize(title, font=title_font)
+        desc_width, desc_height = draw.textsize(desc, font=desc_font)
+
+        # Add title
+        title_x = (width - title_width) // 2
+        draw.text((title_x, 100 - title_height // 2), title, fill=&quot;black&quot;, font=title_font)
+
+        # Add description
+        wrapped_desc = textwrap.fill(desc, width=40)
+        desc_x = (width - desc_width) // 2
+        draw.multiline_text((desc_x, height + 200 + 100 - desc_height // 2), wrapped_desc, fill=&quot;black&quot;, font=desc_font, align=&quot;center&quot;)
+
+        return new_image
+
+    # Add text area to both images
+    high_school_image_with_text = add_text_area(high_school_image, high_school_title, high_school_desc, title_font, desc_font)
+    college_image_with_text = add_text_area(college_image, college_title, college_desc, title_font, desc_font)
+
+    # Combine the images into one
+    combined_width = high_school_image_with_text.width + college_image_with_text.width + 50
+    combined_height = max(high_school_image_with_text.height, college_image_with_text.height)
+    combined_image = Image.new(&quot;RGB&quot;, (combined_width, combined_height), &quot;white&quot;)
+
+    # Paste the images onto the combined image
+    combined_image.paste(high_school_image_with_text, (0, 0))
+    combined_image.paste(college_image_with_text, (high_school_image_with_text.width + 50, 0))
+
+    # Show the combined image
+    combined_image.show()
+    ```
+## Initialization：
+只说出开场白，然后等待用户输入，用户输入后严格按照[Workflows]的顺序执行，中途不要停止，深吸一口气，要一次执行完毕。
+```
+
+### 三）效果展示
+
+![](img/27555fc7fdeb454fa4019147893e2960.png)
+
+## 四、GPTs 使用链接
+
+### 一）GPTs 链接
+
+https://chat.openai.com/g/g-gJqRFUVOj-man-hua-qu-wei-gao-zhong-da-xue-shi-qi-dui-bi-tu
+
+### 二）测试结果
+
+![](img/d78c6e1eb6d10fdb4dc0530eb93d2f52.png)
+
+![](img/0346385903ff9b189374a201fab89f77.png)
+
+## 五、总结
+
+Emmm 细心的小伙伴可能会发现，我最后生成的效果离最开始的内容有些偏差！没错！景淮同学在写作文的时候跑题了！跑的很彻底！
+
+主要是因为，如果按照最开始的内容去做，最后很难把文字添加上去。唯一想到的方法就是先用python把图片分割成四个。然后再分别给每一个图片加图。但这样的操作流程和成本就太高了。所以中途扭转方向盘！改变方向！
+
+（其实还是可以试试放飞版的，可以直接输入，然后直接让它画图！嘘~）
+
+![](img/d4f54f9b443f43ca71c846c5caef1206.png)
+
+好啦**，写到这里我们今天的内容**也结束啦，感谢大家的观看，也希望我的内容能够让大家喜欢，有所收获。感兴趣的小伙伴可以点个关注跟随我一起学习，观看更多往期文章，如果想要链接我，可以加我vx：jinghuai8092。
+
+嘿，下次见，我是景淮，一个加拿大的程序员，沉迷 AI 不能自拔~

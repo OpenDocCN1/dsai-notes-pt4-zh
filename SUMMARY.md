@@ -22,6 +22,7 @@
 +   [废才俱乐部首页](docs/feicai-julebu-de-ai-xuetang/README.md)
 +   [疯狂AI知识库介绍](docs/fengkuang-aigc-zhishiku/README.md)
 +   [GeekAGI 知识库 · 学习指南](docs/geek-agi-zhishiku/README.md)
++   [河林的成长指南](docs/helinde-chengzhang-zhinan/README.md)
 +   [2016 年机器之心高分技术文章全集](docs/jqzx-2016/README.md)
 +   [Zero to Hero：2017 年机器之心 AI 高分概述文章全集](docs/jqzx-2017/README.md)
 +   [寒冬里的炭火：机器之心 2018 高分教程合集](docs/jqzx-2018/README.md)
