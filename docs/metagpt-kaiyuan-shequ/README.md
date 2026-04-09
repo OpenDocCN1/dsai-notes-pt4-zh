@@ -1,4 +1,4 @@
-# MetaGPT
+# MetaGPT 开源社区
 
 > 来源：[https://deepwisdom.feishu.cn/docx/NjnydhUIqoQnnxxG0RwconiSnVe](https://deepwisdom.feishu.cn/docx/NjnydhUIqoQnnxxG0RwconiSnVe)
 
