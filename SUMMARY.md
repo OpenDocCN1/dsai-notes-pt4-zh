@@ -39,6 +39,7 @@
 +   [书生大模型开源社区](docs/shusheng-damoxing-kaiyaun-shequ/README.md)
 +   [思源 AIGC](docs/siyuan-aigc/README.md)
 +   [泰迪智能 DL 知识库](docs/taidi-zhineng-dl/README.md)
++   [太空小孩的知识库导航](docs/taikong-xiaohai-aigc-zhishiku/README.md)
 +   [提示词图书馆](docs/tishici-tushuguan/README.md)
 +   [万航宇的一棵树👹](docs/wanhangyude-yikeshu/README.md)
 +   [万象 AI 实验室](docs/wanxiang-ai-shiyanshi/README.md)
