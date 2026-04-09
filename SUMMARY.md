@@ -29,6 +29,7 @@
 +   [OPEN 1+X AI通识课](docs/open-1x-ai-tongshike/README.md)
 +   [苹果爷爷【AI知识库】首页](docs/pingguo-yeye/README.md)
 +   [大模型空间站](docs/qiji-damoxing-xuexi-shequn/README.md)
++   [轻松玩转AIGC-文森策的AI知识库](docs/qingsong-wanzhuan-aigc/README.md)
 +   [人人都是AI工程师](docs/renren-doushi-ai-gongchengshi/README.md)
 +   [人人都是超级个体](docs/renren-doushi-chaoji-geti/README.md)
 +   [设计师 Lena 的 AIGC 知识库](docs/shejishi-lena-de-aigc-zhishiku/README.md)
