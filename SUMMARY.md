@@ -29,6 +29,7 @@
 +   [⭐ 结构化提示词知识库](docs/langgpt-jiegouhua-tishici/README.md)
 +   [老金带你玩 AI](docs/laojin-daini-wan-ai/README.md)
 +   [老杨的AIGC创作-知识库v3.6](docs/laoyangde-aigc-zhishiku/README.md)
++   [Leon's Notes](docs/leons-notes/README.md)
 +   [MetaGPT 开源社区](docs/metagpt-kaiyuan-shequ/README.md)
 +   [OPEN 1+X AI通识课](docs/open-1x-ai-tongshike/README.md)
 +   [苹果爷爷【AI知识库】首页](docs/pingguo-yeye/README.md)
