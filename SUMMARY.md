@@ -1,5 +1,6 @@
 +   [AGI 掘金知识库](docs/agi-juejin-zhishiku/README.md)
 +   [AGI空间站](docs/agi-kongjianzhan/README.md)
++   [AI 避坑参考库](docs/ai-bikeng-cankaoku/README.md)
 +   [👀AI洞察者中心｜知识库](docs/ai-dongchazhe-zhongxin/README.md)
 +   [☄️AI Flow Genius 工作流社区 知识库](docs/ai-flow-genius/README.md)
 +   [AI 工具使用手册](docs/ai-gongju-shiyong-shouce/README.md)
