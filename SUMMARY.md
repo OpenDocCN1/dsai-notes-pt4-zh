@@ -7,6 +7,7 @@
 +   [AI研习社](docs/ai-yanxishe/README.md)
 +   [🥇「AI 知识库」 首页](docs/ai-zhishiku/README.md)
 +   [AIGC 创意猎人](docs/aigc-chuangyi-lieren/README.md)
++   [⛳️AIHub后花园](docs/aihub-houhuayuan/README.md)
 +   [ChatGPT 超神之路](docs/chatgpt-chaoshen-zhilu/README.md)
 +   [ChatGPT 公共知识库](docs/chatgpt-gonggong/README.md)
 +   [ChatGPT知识库首页💾](docs/chatgpt-zhishiku/README.md)
