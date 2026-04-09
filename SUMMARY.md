@@ -31,5 +31,6 @@
 +   [万象 AI 实验室](docs/wanxiang-ai-shiyanshi/README.md)
 +   [小码哥AGI启航](docs/xiaomage-agi/README.md)
 +   [Midjourney知识库大全](docs/xinlingshenhui/README.md)
++   [一泽 Eze 的个人主页｜知识库 Index](docs/yize-ezes-blog/README.md)
 +   [一站式AI产品经理入门指南](docs/yizhanshi-ai-chanpinjingli/README.md)
 +   [智谱 AI 技术文档](docs/zhipu-ai-jishu-wendang/README.md)
