@@ -1,3 +1,4 @@
++   [AGI 共学](docs/agi-gongxue/README.md)
 +   [AGI 掘金知识库](docs/agi-juejin-zhishiku/README.md)
 +   [AGI空间站](docs/agi-kongjianzhan/README.md)
 +   [AI 避坑参考库](docs/ai-bikeng-cankaoku/README.md)
