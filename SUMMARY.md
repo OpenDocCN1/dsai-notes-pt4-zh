@@ -7,6 +7,7 @@
 +   [AI觉醒日报（一觉醒来发生了什么）](docs/ai-juexing-shequ/README.md)
 +   [AI搜索产品&技术研究](docs/ai-sousuo-chanpin-yanjiu/README.md)
 +   [【AI星球】 星知万象知识库（持续建设中）](docs/ai-xingqiu-zhishiku/README.md)
++   [AI 学习交流](docs/ai-xuexi-jiaoliu/README.md)
 +   [AI研习社](docs/ai-yanxishe/README.md)
 +   [人工智能治理知识库](docs/ai-zhili-zhishiku/README.md)
 +   [🥇「AI 知识库」 首页](docs/ai-zhishiku/README.md)
