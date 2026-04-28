@@ -20,6 +20,7 @@
 +   [ChatGPT 公共知识库](docs/chatgpt-gonggong/README.md)
 +   [ChatGPT知识库首页💾](docs/chatgpt-zhishiku/README.md)
 +   [🍊橙创AIGC知识库（首页）](docs/chengchuang-ai/README.md)
++   [Claude宝宝教程](docs/claude-baobao-jiaocheng/README.md)
 +   [Claude宝宝教程](docs/claude-zhishiku/README.md)
 +   [CloudZun AIGC 知识库](docs/cloudzun-aigc-zhishiku/README.md)
 +   [CodeNow AI编程社区](docs/codenow-ai-biancheng-shequ/README.md)

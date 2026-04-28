@@ -1,0 +1,429 @@
+# 09-01数据预处理方法-降维
+
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/LRSBdcngpo2Lz2xVeJCcG2lMnAg](https://qqs7y1hozd1.feishu.cn/docx/LRSBdcngpo2Lz2xVeJCcG2lMnAg)
+
+降维就是“**减少数据的维度**”。简单来说，就是把原本有很多列的数据，变成更少列的数据，同时尽量保留原来的主要信息。
+
+举个简单的例子：
+
+假设你做了一个关于人的健康调查，包括以下三项：
+
+1.  身高
+
+1.  体重
+
+1.  BMI（体重指数）
+
+其实 BMI 是由身高和体重计算出来的，所以它并不是真正额外的独立信息。这时你可以选择只保留身高和体重，或者只保留 BMI。这样就减少了数据的维度，这就是降维的一种方式。
+
+**为什么要降维？**
+
+1.  数据维度太高，会增加模型复杂度，容易导致“过拟合”，影响模型的泛化能力。
+
+1.  降维后计算更快，节省资源。
+
+1.  降维可以帮助我们把高维数据转成2维或3维，更容易可视化。
+
+1.  有些特征（列）可能是重复的、噪声太多的、或者对最终分析没有帮助的，去掉它们可以提高效率和效果。
+
+咱们在实验中，常用的降维方法：
+
+1.  主成分分析（PCA）：找到最能代表数据的方向，把数据投影到这些方向上，去掉影响小的部分。
+
+1.  线性判别分析（LDA）：用于分类问题，寻找最能区分不同类别的数据方向。
+
+1.  特征选择：用统计方法筛选出最重要的特征，去掉不重要的。
+
+1.  t-SNE、UMAP：主要用于把高维数据降到2维或3维，方便画图观察数据的分布结构。
+
+总之，就是降维就是在不影响整体分析效果的前提下，把多余的、重复的或不重要的数据列去掉，让数据更精炼，更好处理。
+
+## 原理详解
+
+这里，咱们就用主成分分析（PCA）进行系统的讲解~
+
+在数据集中，假设我们有一个   的数据矩阵  ，其中：
+
++    ：样本个数（行数）
+
++    ：特征维度（列数）
+
+我们希望将原始数据从   维降到   维（ ），使得：
+
+1.  降维后信息尽量不丢失；
+
+1.  新的维度（主成分）是原始特征的线性组合；
+
+1.  降维后的数据在这些新方向上的**方差最大**，因为方差越大代表信息越多。
+
+#### 基本数学思想
+
+PCA 的核心思想是：
+
++   **寻找一组新的坐标轴方向（正交向量）**，使得数据投影到这些方向上具有最大的方差；
+
++   新方向是原始变量的线性组合；
+
++   这些方向就是数据协方差矩阵的主特征向量。
+
+### 公式推理
+
+#### Step 1：数据中心化（均值归一）
+
+我们要消除不同变量的偏移（即中心不一致），所以首先将每个特征减去其平均值：
+
+其中， ，是每列（每个特征）的均值。
+
+中心化后，每列的平均值是 0。
+
+#### Step 2：计算协方差矩阵
+
+协方差矩阵衡量不同特征之间的相关性。定义如下：
+
++     是   的对称矩阵；
+
++     表示第   个特征和第   个特征的协方差。
+
+#### Step 3：计算特征值和特征向量（谱分解）
+
+我们需要对协方差矩阵   做**特征值分解**：
+
+其中：
+
++    ：协方差矩阵的第   个特征向量；
+
++    ：对应的特征值；
+
++   所有特征向量   两两正交，即  （如果  ）。
+
+特征值表示数据在对应方向上的“方差大小”，我们希望保留最大的前   个。
+
+#### Step 4：选取主成分方向
+
+将特征值从大到小排序，选择前   个最大的特征值所对应的特征向量：
+
+此时   是一个   的矩阵，称为**投影矩阵**。
+
+#### Step 5：进行降维变换
+
+把原始的中心化数据   投影到主成分方向上：
+
+其中：
+
++     是降维后的数据（维度为  ）；
+
++   每一行是一个样本的新表示。
+
+### 目标函数的优化推导
+
+想法：我们希望数据投影后，方差最大
+
+定义投影方向为一个单位向量  ，数据为  ，我们希望最大化：
+
+目标：
+
+这是一个典型的带约束的优化问题，可以用拉格朗日乘子法求解：
+
+定义拉格朗日函数：
+
+对   求导并令导数为零：
+
+这正是特征值分解的定义。
+
+所以，最大方差对应最大特征值，其方向为对应的特征向量。
+
+## 完整案例
+
+在机器学习和数据科学中，特征维度过高可能带来“维度灾难”，如模型训练速度慢、过拟合风险增加、可视化困难等问题。PCA 是最常用的线性降维方法，通过最大化数据方差投影，提取最有信息量的主成分。
+
+我们使用经典的 Iris（鸢尾花）数据集，演示 PCA 如何对高维特征进行降维并进行可视化分析，同时评估其在分类任务中的表现。
+
+#### 数据集
+
+```
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.datasets import load_iris
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, accuracy_score
+
+
+iris = load_iris()
+X = iris.data
+y = iris.target
+feature_names = iris.feature_names
+target_names = iris.target_names
+
+df = pd.DataFrame(X, columns=feature_names)
+df[&#x27;species&#x27;] = y
+```
+
++   iris.data: 包含 150 个样本，每个样本有 4 个特征；
+
++   iris.target: 分类标签（0, 1, 2）分别代表 Setosa、Versicolor、Virginica；
+
++   iris.feature_names: ['sepal length', 'sepal width', 'petal length', 'petal width']。
+
+#### 可视化原始数据的特征分布
+
+```
+sns.set(style=&quot;whitegrid&quot;, palette=&quot;bright&quot;, font_scale=1.2)
+sns.pairplot(df, hue=&#x27;species&#x27;, corner=True)
+plt.suptitle(&quot;Feature Distribution of Original Iris Data&quot;, fontsize=16, y=1.02)
+plt.show()
+```
+
++   使用 pairplot 查看特征之间的分布和相关性；
+
++   从图中可见，有些特征（如 petal length）能较好区分类别，有些则重叠较多。
+
+![](img/a8c65318be7895946bdc4287025d37d3.png)
+
+#### 数据标准化处理
+
+```
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+```
+
++   PCA 对原始量纲敏感，因此需要标准化；
+
++   StandardScaler 将每列特征转换为均值为 0，标准差为 1 的分布。
+
+### 应用 PCA 降维
+
+步骤 1：拟合 PCA 模型并查看解释方差
+
+```
+pca = PCA()
+X_pca = pca.fit_transform(X_scaled)
+
+explained_var_ratio = pca.explained_variance_ratio_
+print(&quot;Explained Variance Ratio:&quot;, explained_var_ratio)
+```
+
+输出：
+
+```
+Explained Variance Ratio: [0.72962445 0.22850762 0.03668922 0.00517871]
+```
+
++   第一主成分解释了 72.9% 的信息；
+
++   前两主成分加起来可以解释约 96% 的信息，说明我们可以有效地降维到二维。
+
+**步骤 2：可视化累计方差解释率**
+
+```
+plt.figure(figsize=(8, 5))
+plt.plot(np.cumsum(explained_var_ratio), marker=&#x27;o&#x27;, color=&#x27;crimson&#x27;)
+plt.title(&quot;Cumulative Explained Variance&quot;, fontsize=14)
+plt.xlabel(&quot;Number of Principal Components&quot;)
+plt.ylabel(&quot;Cumulative Variance Explained&quot;)
+plt.grid(True)
+plt.show()
+```
+
++   累计解释率曲线是选择主成分数的依据；
+
++   前两个分量达到信息饱和点，后面增益小。
+
+![](img/e6c742e19692a385f623fff68298821e.png)
+
+步骤 3：投影到二维主成分空间进行可视化
+
+```
+pca_2d = PCA(n_components=2)
+X_2d = pca_2d.fit_transform(X_scaled)
+
+df_pca = pd.DataFrame(X_2d, columns=[&quot;PC1&quot;, &quot;PC2&quot;])
+df_pca[&quot;species&quot;] = y
+
+plt.figure(figsize=(10, 7))
+sns.scatterplot(
+    data=df_pca,
+    x=&quot;PC1&quot;,
+    y=&quot;PC2&quot;,
+    hue=&quot;species&quot;,
+    palette=[&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;],
+    alpha=0.8,
+    s=100
+)
+plt.title(&quot;Iris Data Projected onto 2D PCA Space&quot;, fontsize=16)
+plt.xlabel(&quot;Principal Component 1&quot;)
+plt.ylabel(&quot;Principal Component 2&quot;)
+plt.legend(title=&quot;Species&quot;, labels=target_names)
+plt.grid(True)
+plt.show()
+```
+
++   Setosa 与其他类区别明显；
+
++   Versicolor 和 Virginica 有一定重叠。
+
+![](img/f70dae222ae236acfdc39a0dc85d0fa3.png)
+
+### 降维后建模与评估
+
+**步骤 1：训练分类模型**
+
+```
+X_train, X_test, y_train, y_test = train_test_split(X_2d, y, test_size=0.2, random_state=42)
+
+model = LogisticRegression(multi_class=&quot;ovr&quot;, max_iter=1000)
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+```
+
+**步骤 2：评估模型性能**
+
+```
+print(&quot;Accuracy:&quot;, accuracy_score(y_test, y_pred))
+print(&quot;\nClassification Report:\n&quot;, classification_report(y_test, y_pred, target_names=target_names))
+```
+
++   虽然只保留了两个主成分，但模型准确率仍然很高（一般可达 90%+）；
+
++   显示 PCA 能有效提取关键特征。
+
+### PCA 降维结构分析与可视化
+
+**每个主成分的系数（载荷）**
+
+```
+loadings = pd.DataFrame(
+    pca_2d.components_.T,
+    columns=[&quot;PC1&quot;, &quot;PC2&quot;],
+    index=feature_names
+)
+
+plt.figure(figsize=(8, 6))
+loadings.plot(kind=&quot;bar&quot;, colormap=&quot;viridis&quot;)
+plt.title(&quot;Feature Contribution to Each Principal Component&quot;, fontsize=16)
+plt.ylabel(&quot;Component Weight&quot;)
+plt.grid(axis=&#x27;y&#x27;)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+```
+
++   第一主成分主要依赖于 petal length、petal width；
+
++   说明这两个特征对分类贡献最大。
+
+![](img/877305e30688adae81d6231e04a51b6f.png)
+
+### 算法优化与高级技巧
+
+**1. 使用 ****whiten=True****（特征白化）**
+
+```
+pca_whiten = PCA(n_components=2, whiten=True)
+X_white = pca_whiten.fit_transform(X_scaled)
+```
+
+将每个主成分的方差统一为 1，消除单位不一致的问题，适合某些模型（如 KMeans）。
+
+2. 可替代方案：使用 Kernel PCA（非线性降维）
+
+```
+from sklearn.decomposition import KernelPCA
+kpca = KernelPCA(n_components=2, kernel=&#x27;rbf&#x27;)
+X_kpca = kpca.fit_transform(X_scaled)
+```
+
+若数据分布非线性，普通 PCA 效果差，Kernel PCA 可映射到高维空间后再线性降维。
+
+3. 选择主成分数的自动化判断：保持 95% 方差信息
+
+```
+pca_auto = PCA(n_components=0.95)
+X_auto = pca_auto.fit_transform(X_scaled)
+print(&quot;Selected components:&quot;, pca_auto.n_components_)
+```
+
+自动选择能保留 95% 信息量的主成分数量，平衡维度与信息保留。
+
+## 模型分析
+
+### 优缺点分析
+
+**优点：**
+
+1.  **计算效率高，适合大多数数据集**：PCA 是线性降维方法，数学形式明确，通过特征协方差矩阵分解得到主成分，因此计算效率高，尤其适合高维但样本量适中的数据（如文本特征、图像特征等）。
+
+1.  **保留最大信息量（方差最大）**：主成分按解释方差排序，前几个主成分通常可以保留数据大部分的信息（本案例中前两个主成分保留了 96% 信息）。
+
+1.  **减少过拟合风险，提升泛化能力**：降维后的特征较少，有助于提升模型的稳定性，尤其在样本量不大的情况下效果明显。
+
+1.  **可视化性强**：将高维特征压缩至二维或三维，方便观察数据分布、类别边界，有助于探索性数据分析（EDA）和演示解释。
+
+1.  **与标准建模流程无缝集成**：可作为管道中数据预处理的一环，便于与 sklearn 的 Pipeline 配合使用。
+
+**缺点：**
+
+1.  仅适用于线性变换，不能处理非线性结构：如果特征之间存在复杂的非线性关系，PCA 无法捕捉，比如图像、语音等天然存在非线性结构的数据。
+
+1.  **主成分不具可解释性**：PCA 得到的新特征（主成分）是原始特征的线性组合，含义不再直观，这在特征解释性要求较高的场景（如金融风控、医疗诊断）可能成为障碍。
+
+1.  **对异常值敏感**：PCA 依赖方差的计算，极端值会极大影响协方差矩阵，从而干扰主成分提取的准确性。
+
+1.  **降维是不可逆操作（信息丢失）**：原始特征信息可能在降维过程中部分丢失，因此在某些精度要求高的场景（如医学影像）中需要慎用。
+
+1.  **需要标准化处理**：PCA 对量纲敏感，不进行标准化处理会导致主成分偏向于值域大的特征。
+
+### 与其他常见降维算法对比
+
+| 降维方法 | 是否线性 | 是否可还原 | 是否可解释 | 是否支持非线性结构 | 计算复杂度 | 特点/适用场景 |
+| --- | --- | --- | --- | --- | --- | --- |
+| **PCA** | ✅ 线性 | ❌ 不可还原 | ❌ 难以解释 | ❌ 不支持非线性 | ⭐ 快速 | 信息保留好，适合线性结构、可视化、压缩 |
+| **LDA** | ✅ 线性 | ❌ 不可还原 | ✅ 可解释 | ❌ 不支持非线性 | ⭐ 快速 | 监督式降维，适用于分类问题 |
+| **t-SNE** | ❌ 非线性 | ❌ 不可还原 | ❌ 不可解释 | ✅ 支持复杂结构 | ⚠️ 慢 | 可视化极强，但不可用于建模或部署 |
+| **UMAP** | ❌ 非线性 | ❌ 不可还原 | ❌ 不可解释 | ✅ 支持复杂结构 | ⭐⭐ 中等 | 更快的 t-SNE 替代方案，聚类效果优于 t-SNE |
+| **AutoEncoder** | ❌ 非线性 | ✅ 可还原 | ❌ 难以解释 | ✅ 支持非线性 | ⚠️ 慢+需训练 | 需要深度学习框架，适合大规模复杂数据 |
+| **Kernel PCA** | ❌ 非线性 | ❌ 不可还原 | ❌ 难以解释 | ✅ 支持非线性 | ⭐⭐ 中等 | 使用核函数扩展 PCA，适合非线性场景 |
+
+---
+
+### 在什么情况下优选使用 PCA？什么时候考虑其他方法？
+
+**PCA 是优选方法的场景：**
+
++   **目标是信息压缩或可视化**，且对可解释性要求不高；
+
++   **特征之间近似线性相关**，如大多数结构化数据；
+
++   **需要快速预处理大规模数据**，如输入为 TF-IDF 文本特征、统计型金融数据；
+
++   用于分类、聚类等建模前的降维处理；
+
++   后续模型为线性模型或对特征正交性敏感的算法（如逻辑回归、KNN、KMeans）；
+
++   **希望减少维度防止过拟合**（尤其在特征数 > 样本数时）。
+
+**考虑其他方法的场景：**
+
++   **数据存在明显非线性结构**（如图像中同类样本聚集但非线性分布），可选：
+
++   Kernel PCA（轻量非线性）
+
++   t-SNE / UMAP（强可视化）
+
++   AutoEncoder（适合大数据）
+
++   **对可解释性有强需求**（如医疗、金融），推荐：
+
++   LDA（有监督，保留类别间差异）
+
++   原始特征选择方法（如 Lasso、互信息等）
+
++   用于最终部署或模型预测阶段的输入特征，建议不要使用 t-SNE/UMAP（不可还原，结果不稳定），此时优选：PCA / AutoEncoder（可稳定映射新样本）
+
+## 总结
+
+PCA 是降维领域中最基础且高效的方法，在结构化数据、模型预处理和可视化分析中具有极高的实用价值。但在非线性场景、可解释性强需求下，应考虑使用更适合的替代方法（如 LDA、UMAP、AutoEncoder）。选择降维算法时需平衡计算成本、信息保留、解释性、可视化需求等多种因素。
