@@ -72,3 +72,4 @@
 +   [Zelina 百宝箱](docs/zelina-baozangku/README.md)
 +   [职场人的 AI 学习](docs/zhichangren-de-ai-xuexi/README.md)
 +   [智谱 AI 技术文档](docs/zhipu-ai-jishu-wendang/README.md)
++   [宙鱼的 AI 知识库](docs/zhouyu-de-ai-zhishiku/README.md)
