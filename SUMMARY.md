@@ -22,6 +22,7 @@
 +   [🍊橙创AIGC知识库（首页）](docs/chengchuang-ai/README.md)
 +   [Claude宝宝教程](docs/claude-zhishiku/README.md)
 +   [CloudZun AIGC 知识库](docs/cloudzun-aigc-zhishiku/README.md)
++   [CodeNow AI编程社区](docs/codenow-ai-biancheng-shequ/README.md)
 +   [Zelina的个人说明书](docs/di-25-xiaoshi/README.md)
 +   [动力学院 AIGC 知识库 · 学习指南](docs/donglixueyuan-aigc-zhishiku/README.md)
 +   [DeepSeek 百宝箱](docs/ds-baibaoxiang/README.md)
