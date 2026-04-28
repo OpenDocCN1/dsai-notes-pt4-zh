@@ -30,6 +30,7 @@
 +   [疯狂AI知识库介绍](docs/fengkuang-aigc-zhishiku/README.md)
 +   [GeekAGI 知识库 · 学习指南](docs/geek-agi-zhishiku/README.md)
 +   [河林的成长指南](docs/helinde-chengzhang-zhinan/README.md)
++   [胡扯知识库](docs/huche-zhishiku/README.md)
 +   [JessieZTalk分享交流](docs/jessie-ztalk/README.md)
 +   [2016 年机器之心高分技术文章全集](docs/jqzx-2016/README.md)
 +   [Zero to Hero：2017 年机器之心 AI 高分概述文章全集](docs/jqzx-2017/README.md)
