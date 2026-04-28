@@ -44,6 +44,7 @@
 +   [Zero to Hero：2017 年机器之心 AI 高分概述文章全集](docs/jqzx-2017/README.md)
 +   [寒冬里的炭火：机器之心 2018 高分教程合集](docs/jqzx-2018/README.md)
 +   [机器之心 2019 高分教程](docs/jqzx-2019/README.md)
++   [卡尔的AI沃茨](docs/kaer-de-ai-woci/README.md)
 +   [看见AI知识库](docs/kanjian-ai-zhishiku/README.md)
 +   [Krillin AI 学习社区](docs/krillin-ai-xuexishequ/README.md)
 +   [⭐ 结构化提示词知识库](docs/langgpt-jiegouhua-tishici/README.md)
