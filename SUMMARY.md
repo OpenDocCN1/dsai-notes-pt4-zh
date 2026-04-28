@@ -32,6 +32,7 @@
 +   [大模型技术社区丨赋范空间](docs/fufankongjian/README.md)
 +   [GeekAGI 知识库 · 学习指南](docs/geek-agi-zhishiku/README.md)
 +   [GotoAI中国技术社区](docs/gotoai-zhongguo-jishushequ/README.md)
++   [海涛AI觉醒社|智能体](docs/haitao-ai-juexing-shequ/README.md)
 +   [海涛的博客](docs/haitaos-boke/README.md)
 +   [河林的成长指南](docs/helinde-chengzhang-zhinan/README.md)
 +   [胡扯知识库](docs/huche-zhishiku/README.md)
