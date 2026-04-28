@@ -58,5 +58,6 @@
 +   [Midjourney知识库大全](docs/xinlingshenhui/README.md)
 +   [一泽 Eze 的个人主页｜知识库 Index](docs/yize-ezes-blog/README.md)
 +   [一站式AI产品经理入门指南](docs/yizhanshi-ai-chanpinjingli/README.md)
++   [Zelina 百宝箱](docs/zelina-baozangku/README.md)
 +   [职场人的 AI 学习](docs/zhichangren-de-ai-xuexi/README.md)
 +   [智谱 AI 技术文档](docs/zhipu-ai-jishu-wendang/README.md)

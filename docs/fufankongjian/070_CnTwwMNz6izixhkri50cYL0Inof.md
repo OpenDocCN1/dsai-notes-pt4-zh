@@ -1,0 +1,314 @@
+# DeepSeek V3.1 模型问题测试【提示词模板】
+
+> 来源：[https://kq4b3vgg5b.feishu.cn/docx/HNdydrXBtohC1Nx8tjZcLUYinf9](https://kq4b3vgg5b.feishu.cn/docx/HNdydrXBtohC1Nx8tjZcLUYinf9)
+
+我们团队在第一时间，就围绕DeepSeek V3.1模型的编程和Agent性能进行了测试，我们带入了如下7个编程问题进行测试，来对比DeepSeek V3.1和Claude 4.1模型的编程效果。我们对模型的编程准确率、用户意图识别能力、前端展示效果、物理跟随能力、代码质量、长段代码编写意愿等六个维度进行全方位深度对比。结果如下⬇️
+
+![](img/5a35942105030d419f28801e120fe425.png)
+
+![](img/ae195b23d5d26c94aae7e99c445e49d6.png)
+
+---
+
+## ✅ 1. 模拟行星运行轨迹（编程效果）
+
+**提示词：**
+
+```
+创建一个单一HTML文件的单页应用，其中包含一个可交互的太阳系模拟器。该模拟器应具备以下功能：
+视觉与场景
+背景：深色背景，模拟宇宙空间。
+恒星：中心应有一个发光的大型黄色球体代表太阳。
+行星：围绕太阳绘制八颗主要的行星（水星、金星、地球、火星、木星、土星、天王星、海王星），每颗行星的颜色和相对大小应有视觉区分度。土星应有环。
+轨道：为每颗行星绘制椭圆（或圆形）轨道，以同心圆或接近同心圆的形式环绕太阳，清晰地显示它们的运动路径。
+标题：页面顶部中央显示“Solar System Simulation”标题。
+模拟功能
+行星运动：
+所有行星应以各自的速度沿其轨道围绕太阳公转。
+行星的公转速度应与其实际太阳系中的相对速度成比例，越靠近太阳的行星移动越快。
+初始状态：加载时，行星应处于其预设的初始位置，并可能处于暂停状态或以默认速度开始运行。
+交互与控制面板
+控制面板：在模拟区域下方有一个水平布局的控制面板，包含以下交互元素：
+“Start”按钮：点击后开始或恢复模拟。
+“Pause”按钮：点击后暂停模拟。
+“Reset”按钮：点击后将所有行星重置到其初始位置和默认速度。
+“Speed”滑块：一个滑块控件，允许用户调整模拟的速度，范围从慢速到快速（例如，从1倍速到5倍速，并显示当前的倍数）。
+技术考量
+使用HTML作为基本结构。
+使用CSS进行基本布局、背景、按钮和行星的样式设置。
+核心模拟功能必须使用JavaScript实现，包括：
+绘制太阳、行星和轨道（推荐使用 &lt;canvas&gt; 元素进行绘制）。
+计算行星的实时位置以模拟公转。
+处理“Start”、“Pause”、“Reset”按钮的点击事件。
+根据“Speed”滑块的值调整模拟的帧率或步长。
+确保动画流畅，行星运动轨迹平滑。
+```
+
+两个模型都能完成行星运行轨迹的模拟和展示：
+
+**DeepSeek V3.1**
+
+![](img/659565b9cf403cf1d6fc18d41bb5237b.png)
+
+[2025-08-19 19-54-09.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KkrXbxcXgo8mLcxzenjcQJwxnxb)
+
+**Claude 4.1**
+
+![](img/53f3c37f1b166352e150a81ab2928cf9.png)
+
+[2025-08-08 13-57-56.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RuNObCYaSos0LLxlHtHcq8Wgntc)
+
+![](img/3d6a2b2860d59c11407636c101c38d6d.png)
+
+---
+
+## ✅ 2. 创建可交互的粒子漩涡模拟器
+
+**提示词：**
+
+```
+**请生成一个****独立****的H****TM****L文件，****其中包含一个可交****互的粒子漩涡模拟器**。
+所**有代码应包含在** &lt;h**tml&gt;** 文件内，不要引用外部库或文件。
+该模拟器应具备以下功能：
+视觉与动画
+背景：深色（接近黑色）的背景。
+粒子：
+屏幕上应充满大量随机分布的粒子。
+粒子应具有不同的颜色（例如，视频中主要显示白色、青色/浅蓝色、洋红色/粉色等），并带有发光效果。
+粒子应持续地、缓慢地在屏幕上随机移动或漂浮，呈现出一种“星空”或“浮游”的感觉。
+粒子移动时应带有短暂的拖尾效果，增强动态感。
+标题：页面顶部左侧显示“PARTICLE VORTEX”标题。
+底部提示：页面左下角显示交互提示文字：“Click and hold to create black hole - Release to free particles”。
+交互效果（重点）
+“黑洞”创建与吸引：
+当用户*点击并按住鼠标左键**时：
+在鼠标指针位置应创建一个视觉上的“黑洞”效果（例如，一个小的、可能带有吸入动画的中心点）。
+屏幕上所有可见粒子应开始被这个“黑洞”吸引，以线条状轨迹快速向“黑洞”中心汇聚。粒子在被吸引过程中应保持其颜色和发光效果。
+粒子被吸引的速度和强度应随着粒子与“黑洞”的距离而变化，距离越近吸引力越大。
+粒子释放与散射：
+当用户*松开鼠标左键**时：
+“黑洞”效果消失。
+被吸引的粒子应从“黑洞”中心向外高速散射，回归到无吸引力的自由运动状态，但散射后仍受重力或随机漂浮效果影响，逐渐恢复到初始的随机移动状态。散射轨迹应带有明显的拖尾。
+技术考量
+使用HTML作为基本结构。
+使用CSS进行基本布局和背景样式。
+核心模拟和交互功能必须使用JavaScript实现，包括：
+使用 &lt;canvas&gt; 元素绘制粒子及其轨迹。
+粒子对象的管理（位置、速度、颜色、大小等属性）。
+实现粒子的随机漂浮运动。
+监听鼠标的 mousedown 和 mouseup 事件。
+在 mousedown 时计算并应用“黑洞”的引力效果，更新粒子的速度和位置。
+在 mouseup 时取消引力，并应用散射效果。
+粒子拖尾效果的渲染。
+确保动画流畅，即使在大量粒子同时移动和交互时也能保持良好的性能。
+```
+
+同样，两个模型都很好地完成了编程工作：
+
+**DeepSeek V3.1**
+
+![](img/43d2ec5217fb3e649f3192e3d882d8f7.png)
+
+[2025-08-19 19-58-36.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HiPJbr3ySo8jU0xT1iPcU8uEnfe)
+
+**Claude 4.1**
+
+![](img/b49a60b8781e66da81edd91ba74e75a8.png)
+
+[2025-08-08 14-04-05.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ASKYbeF4Ko33rzxsM40cbD7XnJN)
+
+---
+
+## ✅ 3. 创建一个咖啡机售卖的网站主页
+
+**提示词：**
+
+```
+请为一项服务生成一个精美、逼真的着陆页（Landing Page）。这项服务旨在为终极咖啡爱好者提供每月200美元的订阅，内容包括咖啡烘焙和制作极致意式浓缩咖啡的设备租赁和指导。目标受众是湾区（Bay Area）的中年人士，他们可能从事科技行业，受过良好教育，拥有可支配收入，并且对咖啡的艺术和科学充满热情。请优化设计以促成6个月订阅的转化。请使用Canvas功能进行编程。
+```
+
+两个模型编程结果对比展示如下：
+
+**DeepSeek V3.1**
+
+![](img/b8846e1817bcc6388aa170b57ad7cb37.png)
+
+[2025-08-19 20-26-59.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K38Ib4AXgoRw5HxcPTKcrfMQntF)
+
+**Claude 4.1**
+
+![](img/04d641b7a90fe161c6151a9909a42e39.png)
+
+[2025-08-08 13-13-52.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NFCLb4cxTosC84xlWIac1qM2nsh)
+
+---
+
+## ✅ 4. DeepSeek V3.1模型Agent能力实测
+
+这里我将DeepSeek V3.1模型作为基座模型，带入到我们团队自研的Agentic RAG本地知识库检索系统中进行性能测试。这个Agent是我们历次评测的通用Agent，系统是一个同时包含RAG Agent、GraphRAG Agent和DeepResearch Agent的Multi-Agent系统，能够根据用户的需求自动选择合适的检索系统，例如普通问题可以使用RAG检索，比较宽泛的综合性问题可以使用GraphRAG进行检索，需要进行长文档编写或者高精度信息校验的时候可以使用DeepResearch功能。这套系统也是目前最复杂的知识库检索系统架构，
+
+![](img/1cc03cbecb6aace5d7cfb454a056e548.png)
+
+[2025-07-28 18-38-18.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H5MuboSRSouJYTxJSQocr76vnid)
+
+在以往**的测试中**，只有GPT-5模型和Claude 4.1 Opus能够全自动自主处理复杂问题而没有bug，而当我们将基座模型切换为DeepSeek V3.1模型之后，无论是用户意图识别准确率、还是检索关键词提取的准确率，无论是调用Agent的准确率，还是长文档编写性能，都得到了显著提升。可以说DeepSeek V3.1模型的Agent性能也同样是和Claude 4.1 Opus相差无几。
+
+![](img/7a2cfaac338e192c2dc69e1ec61af01f.png)
+
+[2025-07-28 19-22-37.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EhVobUxz1oIPQjxXFE8crbFQnVg)
+
+![](img/12f878839bb66aa35be715fe17f60eaf.png)
+
+[2025-07-28 20-16-29.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H0sSbJoQCo03AZx3VFWcL3Z6nOh)
+
+---
+
+## 🙋更多提示词模板，欢迎大家进行测试～
+
+> 此部分我们会提供GPT-5和Claude 4.1的实测效果演示，欢迎大家实测DeepSeek V3.1并分享到社群里讨论呀～看看谁是你心中的NO.1
+
+### 1️⃣ 数据可视化页面创建
+
+允许用户上传数据并进行可视化展示，提示词如下所示
+
+**提示词：**
+
+```
+**创建****一个****单一****HTML**文件的单页应用，要求如下：
+名称：数据可视化游乐场 (Data Visualization Playground)
+目标：上传 CSV 文件并生成图表。
+功能：图表类型选择器、颜色自定义、保存为图片。
+用户界面：界面应具有现代感，并以图表为核心。
+注意请使用canvas功能进行编程
+```
+
+**GPT-5**
+
+![](img/9481e318ed0f221e89f7177b3314f547.png)
+
+[2025-08-08 14-09-13.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B1WLblPCIob7jxxh9TwcFlUhnMb)
+
+**Claude 4.1**
+
+![](img/ba3cc7710def17b392602cc35f6a395b.png)
+
+[2025-08-08 14-08-59.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HpNGbLSM3oOpaSxDTwBcWk7qnah)
+
+### 2️⃣ 创建儿童益智小游戏-云朵画家
+
+允许用户用画笔工具来描绘天空云朵，提示词如下所示
+
+**提示词：**
+
+```
+**创建****一个****单一****HTML**文件的单页应用，要求如下：
+名称：云朵画家 (Cloud Painter)
+目标：使用画笔工具绘制云朵来“描绘”天空；对孩子们来说应该很有趣。
+功能：多种画笔形状、云朵动画漂移、在天空中飞行的飞机、保存图片。
+用户界面：界面应柔和且充满奇思妙想。
+注意请使用canvas功能进行编程
+```
+
+**GPT-5**
+
+![](img/12c308f8e0acd8a7972a8028446db8e1.png)
+
+[2025-08-08 14-14-02.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GeHBbhB06oedwqx2X4GcyVWZnXe)
+
+**Claude 4.1**
+
+![](img/c487260b08755b6f206dc39324fd78fb.png)
+
+[2025-08-08 14-14-45.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZXM3bnDf5oSExJxjtDGcjiIbnfc)
+
+### 3️⃣创建音频步进音序器
+
+用于模拟创建各种音频，提示词如下所示
+
+**提示词：**
+
+```
+**创建****一个单****一H****TM****L文件的**单页应用，要求如下：
+名称：音频步进音序器 (Audio Step Sequencer)
+技术栈：Web Audio API
+目标：一个16步的鼓点网格。
+功能：
+节奏（Tempo）控制
+摇摆（Swing）效果
+乐句（Patterns）的保存/加载
+导出 WAV 文件（渲染简单缓冲区）
+用户界面：界面应该具有未来感，并让演奏过程充满乐趣！
+注意请使用canvas功能进行编程
+```
+
+**GPT-5**
+
+![](img/1a75aafbc5a272d995db254f22b04353.png)
+
+[2025-08-08 13-09-37.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YBOYbH93ToLk1axgFaIczY0nnib)
+
+**Claude 4.1**
+
+![](img/b46c3a89bd63ef744e25a601539d5b58.png)
+
+[2025-08-08 13-09-24.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M0FxbjAdHoKz8CxVMy9cEGJunLe)
+
+### 4️⃣模拟烟囱爆破
+
+**提示词：**
+
+```
+创建一个单一HTML文件的单页应用，其中包含一个可交互的砖块烟囱爆破模拟器。该模拟器应具备以下功能：
+视觉与场景
+深色或简洁的背景，主要呈现一个平坦的基底（地面）。
+在基底上构建一个由多个砖块堆砌而成的烟囱状结构。
+烟囱和地面应有基本的3D渲染效果，使其看起来有体积感。
+整个场景应支持3D视角旋转，允许用户从不同角度观察。
+模拟功能
+初始状态：加载时，显示一个完整、稳固的砖块烟囱。
+爆破触发：用户应能通过点击或特定的交互（例如，视频中类似“引爆模拟”的按钮）来触发烟囱的爆破。
+物理模拟：
+爆破发生时，烟囱应碎裂成大量的独立砖块。
+碎裂后的砖块应受重力影响下落，并相互之间发生碰撞，最终散落在地面上。
+碰撞和下落过程应尽可能模拟真实的物理效果。
+重置功能：提供一个“重置场景”或类似功能的按钮，点击后能将烟囱恢复到初始的完整状态，以便再次进行爆破模拟。
+交互与控制面板
+控制面板：在屏幕左上角显示一个控制面板，包含以下交互选项：
+“引爆模拟”按钮：用于触发烟囱的爆破。
+“重置场景”按钮：用于将模拟重置到初始状态。
+“切换视角”或“3D视角控制”：一个提示或模式，指示用户如何通过鼠标（例如，鼠标左键拖拽旋转视角，鼠标右键拖拽移动视角，滚轮缩放）来控制场景的3D视角。面板上应有相应的文字说明，例如：“鼠标左键：旋转视角；鼠标右键：移动位置；滚轮：缩放”。
+底部信息显示：在屏幕左下角显示实时信息，例如：
+“物理对象数量”：显示当前场景中参与物理模拟的对象数量（例如，初始烟囱由多少砖块组成，爆破后碎裂成多少小块）。
+“模拟状态”：显示当前模拟的状态（例如，“等待引爆”、“模拟中”、“模拟完成”）。
+技术考量
+使用HTML作为基本结构。
+使用CSS进行基本布局和样式设置。
+核心模拟功能必须使用JavaScript实现。
+3D渲染部分可以考虑使用基本的3D图形库或直接通过Canvas API实现（如果大模型能独立生成复杂3D渲染代码）。
+物理模拟部分应包含对碰撞检测、重力、力和动量的处理。
+确保动画流畅，即使在大量物理对象参与模拟时也能保持良好的性能。
+```
+
+**GPT-5**
+
+![](img/df7da7649fbb50b31b40d7843b4acd14.png)
+
+[2025-08-08 13-27-16.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MCwcb1i3MopcGixTE2gczAb6nwd)
+
+**Claude 4.1**
+
+![](img/71f315d79b5917e1c12998c1569f1767.png)
+
+[2025-08-08 13-27-05.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VxAcbhWORonkmNxLKMGc8C9qnRe)
+
+---
+
+## **💌 赋**范社区交流群
+
+海量硬核独家技术**干货内容**+无门槛**技术交流**~
+
+![](img/72988a549cb590e875972c021a82dd10.png)
+
+上图**扫码**👆即刻入群！
+
+📍 社群技术交**流氛围浓厚，**不定期开设硬**核干货&前沿技术公开课噢**~
