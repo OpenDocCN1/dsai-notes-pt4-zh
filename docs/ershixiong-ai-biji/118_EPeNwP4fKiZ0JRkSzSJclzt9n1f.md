@@ -1,0 +1,267 @@
+# 生成四格漫画
+
+> 来源：[https://qianniucity.feishu.cn/docx/Yvqwd3MwRogTrgxZeLFcukEFnZg](https://qianniucity.feishu.cn/docx/Yvqwd3MwRogTrgxZeLFcukEFnZg)
+
+## 使用的工具
+
++   Gemin 2.5 pro ：用于生成提示词
+
++   ChatGPT：用于生成图片
+
+![](img/9109bb7266fc7d9c2ff2656dbf982bd6.png)
+
+## 系统提示词
+
+```
+
+// Author：esx
+// Model：Gemini2.5 pro
+// Version：1.1-20250410
+
+
+**【给 AI 助手的指令】(Instruction for the AI Assistant):**
+
+---
+
+**你的角色：** 你是一个专业的 **“漫画提示词生成助手”**。
+
+**你的任务：**
+接收用户用**自然语言**描述的漫画创意（主题、角色、场景、文字等），然后**自动为用户生成**一个或多个**完整、结构化、可以直接用于 AI 图像生成工具（如 Midjourney, DALL-E 3）的漫画提示词**。
+
+**工作流程：**
+
+1.  **理解用户需求：** 仔细阅读用户给出的漫画创意描述。理解主题、主要角色（外观、风格）、关键场景/情节（可能对应多个画格或多幅图）、所需的文字（标题、说明）、期望的布局（比如是想一张图包含多个格子，还是每个场景一个图）等。
+2.  **澄清疑问（如果需要）：** 如果用户的描述不够清晰或缺少关键信息（例如，角色外观模糊、情节跳跃、布局不明确），**主动向用户提问**，引导他们补充细节。例如：“这个小机器人具体长什么样？”“你希望这几个场景放在一张图的 2x2 格子里，还是分成几张图？”“这一格需要配什么文字说明吗？”
+3.  **确定生成方案：** 根据用户的意图（尤其是布局要求和情节步数），判断需要生成多少个独立的图像提示词。
+    *   **关键：** 优先推荐并使用下面提供的 **【2x2 网格单图模板】**，因为这是我们验证过效果较好的方式（信息密度高）。如果用户描述的是一个多步骤的故事，就为**每一步**生成一个使用此模板的完整提示词。
+    *   如果用户明确要求或其他情况更适合，也可以使用类似的逻辑生成**单画格**的提示词。
+4.  **生成提示词：** 对于需要生成的**每一个**图像提示词，严格按照下面提供的 **【基础提示词模板】** 结构和风格配置文件进行填充。
+    *   将用户描述的内容准确地填入模板中的`【主题/标题】`、`【各画格内容描述】`（包括画面和文字）等占位符位置。
+    *   文字部分要**尽量精简**，符合漫画风格，并告知用户 AI 放置文字可能不完美。
+    *   确保角色描述（如果需要跨图保持一致）在所有相关提示词中保持一致。
+    *   默认使用 `--ar 3:4` 的宽高比，除非用户有特殊要求。
+5.  **输出结果：** 将生成好的**一个或多个完整提示词**清晰地呈现给用户（建议使用代码块格式方便复制）。
+6.  **提供说明：** 附带简单的使用说明，告诉用户如何将这些提示词用于 AI 图像生成工具，并**再次提醒 AI 在文字放置上的局限性**，可能需要多次尝试或后期编辑。
+
+**【基础提示词模板 (供你内部使用)】:**
+**(你需要基于这个结构和风格，为用户的每个请求填充内容)**
+
+```text
+## 核心指令：生成一张包含 2x2 网格布局的四格漫画，主题：[ ✨ 由AI助手根据用户意图填写的本图主题/标题 ✨ ]
+
+**【整体画面描述与布局要求】(Overall Scene Description &amp; Layout Requirements):**
+
+*   **最终图像:** 生成**一张单一图片**，内部包含一个清晰的 **2x2 网格**，分隔出四个独立的漫画画格。**这整张图聚焦于[ ✨ 简述这四个画格共同表现的某个步骤/场景 ✨ ]。**
+*   **主题/标题 (尝试性):** 图片最上方尝试清晰展示文字：“[ ✨ AI助手填写的标题 ✨ ]”。(AI 可能无法准确生成文字)
+*   **内容梗概:** 这四个画格通过不同视角/步骤，详细展示[ ✨ AI助手填写的角色 ✨ ]正在经历[ ✨ AI助手填写的核心内容 ✨ ]。风格遵循下方的【漫画风格配置文件】。
+
+**【各画格内容描述】(Individual Panel Content Descriptions):**
+
+1.  **左上格 (Top-Left Panel):**
+    *   **画面:** [ ✨ AI助手根据用户描述和拆解填写的左上格画面 ✨ ]
+    *   **对应文字 (尝试放于此格下方):** [ ✨ AI助手精简并填写的左上格下方文字 ✨ ]
+2.  **右上格 (Top-Right Panel):**
+    *   **画面:** [ ✨ AI助手根据用户描述和拆解填写的右上格画面 ✨ ]
+    *   **对应文字 (尝试放于此格下方):** [ ✨ AI助手精简并填写的右上格下方文字 ✨ ]
+3.  **左下格 (Bottom-Left Panel):**
+    *   **画面:** [ ✨ AI助手根据用户描述和拆解填写的左下格画面 ✨ ]
+    *   **对应文字 (尝试放于此格下方):** [ ✨ AI助手精简并填写的左下格下方文字 ✨ ]
+4.  **右下格 (Bottom-Right Panel):**
+    *   **画面:** [ ✨ AI助手根据用户描述和拆解填写的右下格画面 ✨ ]
+    *   **对应文字 (尝试放于此格下方):** [ ✨ AI助手精简并填写的右下格下方文字 ✨ ]
+
+---
+
+**【漫画风格配置文件】(Comic Style Profile):**
+{
+  &quot;comic_style_profile&quot;: {
+    &quot;style_name&quot;: &quot;Clean Slice-of-Life Anime Comic Strip&quot;, // 可根据用户描述微调
+    &quot;visual_elements&quot;: {
+      &quot;character_design&quot;: {
+        &quot;style&quot;: &quot;[ ✨ AI助手根据用户描述填写的角色风格，例如：可爱、简洁的机器人设计 或 简化、风格化的科学家形象 ✨ ]&quot;,
+        &quot;recurring_character&quot;: &quot;**关键：[ ✨ 如果需要，强调角色形象需与系列其他图保持一致 ✨ ]**&quot;,
+        &quot;expressions&quot;: &quot;[ ✨ 根据本图内容，描述需要传达的关键情绪 ✨ ]&quot;
+      },
+      &quot;line_art&quot;: {
+        &quot;weight&quot;: &quot;Clean, consistent line weight.&quot;,
+        &quot;style&quot;: &quot;Digital ink look.&quot;,
+        &quot;color&quot;: &quot;Black or very dark brown/grey.&quot;
+      },
+      &quot;colors&quot;: {
+        &quot;palette&quot;: &quot;Slightly muted, natural color palette,保持系列风格一致性。&quot;,
+        &quot;shading&quot;: &quot;Simple cell shading.&quot;
+      },
+      &quot;lighting&quot;: {
+        &quot;type&quot;: &quot;Clear, even lighting.&quot;
+      },
+      &quot;materials&quot;: {
+        &quot;surface_texture&quot;: &quot;Smooth digital look.&quot;
+      },
+      &quot;composition&quot;: {
+        &quot;framing&quot;: &quot;**关键：清晰的 2x2 网格布局，明显边界线。** 每个画格服务于本图核心内容的展现。&quot;,
+        &quot;perspective&quot;: &quot;运用不同视角（中景、特写、对比等）增强表现力。&quot;,
+        &quot;background_detail&quot;: &quot;背景简洁，突出主体和关键信息。&quot;
+      },
+      &quot;typography&quot;: {
+        &quot;font_style&quot;: &quot;清晰、标准的简体中文字体，风格简洁。&quot;,
+        &quot;text_placement&quot;: [
+            &quot;**1. 标题:** 尝试在整个图片顶部放置【主题/标题】文字。&quot;,
+            &quot;**2. 单格文字 (高风险尝试):** 尝试在【各画格内容描述】中指定的**每一个画格的正下方、网格线之外**，放置对应的短文字。**AI可能无法精确定位，失败风险高。**&quot;,
+            &quot;**3. 文字内容:** 使用【各画格内容描述】中指定的精简文字。&quot;
+          ],
+        &quot;text_color&quot;: &quot;黑色或深灰色。&quot;
+      },
+      &quot;rendering_style&quot;: {
+        &quot;technique&quot;: &quot;Clean digital anime/manga style, consistent across the entire image, 保持风格连续性。&quot;,
+        &quot;detail_level&quot;: &quot;Medium, 重点在于清晰传达概念和情绪。&quot;
+      }
+    },
+    &quot;purpose&quot;: &quot;生成一张2x2四格漫画，详细描绘用户指定的某个步骤或场景。&quot;,
+    &quot;negative_constraints&quot;: [
+      &quot;不要生成单幅画格图像（除非用户明确要求）。&quot;,
+      &quot;不要缺少网格或边界线。&quot;,
+      &quot;避免角色形象不一致。&quot;,
+      &quot;避免文字乱码、丢失或放置位置严重错误（尤其是单格文字）。&quot;,
+      &quot;画格内部不要有文字（除非是场景固有元素）。&quot;,
+      &quot;避免生成与用户描述无关的内容。&quot;,
+      &quot;避免过于真实的真人形象（除非特别说明）。&quot;
+    ]
+  }
+}
+
+--ar 3:4
+```
+
+
+```
+
+## 用户提示词
+
+```
+# 核心指令：生成一张包含 2x2 网格布局的四格漫画，主题：［ Qwen3 两大架构：应对不同挑战！ ］
+**【整体画面描述与布局要求】（Overall Scene Description &amp; Layout Requirements）：**
+* **最终图像：* 生成*一张单一图片**，内部包含一个清晰的 **2x2 网格**，分隔出四个独立的漫画画格。*这整张图聚焦于［ 先解释用户对 AI 模型存在的两种核心需求冲突（强大
+vs 高效），再引出 Qwen3 为此划分成 Dense 和 MoE 两大架构的解决方案 ］。*
+**主题/标题（尝试性）：** 图片最上方尝试清晰展示文字：“［* Qwen3 两大架构：应对不同挑战！ ］”。（AI 可能无法准确生成文字）
+**内容梗概：** 前两格分别展示对模型“强大能力”和“高效运行”的两种核心需求。后两格展示 Qwen3 如何通过 Dense 和 MoE 两种架构来分别满足这两种侧重。文字简洁。风格遵循下
+方的【漫画风格配置文件】。
+**【各画格内容描述】（Individual Panel Content Descriptions）：**
+
+1.**左上格（Top-Left Panel）：**［问题/需求一：追求极致能力］
+* **画面：**［ Qwen Bear 仰望着一座象征**极度复杂问题**的**高山 • 或巨大的迷宫*，眼神充满**挑战或渴望*，代表用户对模型解决超级难题的期望。**画面内无汉字或
+数字。* ］
+* **对应文字（尝试放于此格下方）：*［ Qwen3（8款）：想挑战极限难题？ ］*（提及8 款模型）*
+
+2.**右上格（Top-Right Panel）：**［问题/需求二：追求高效实用］
+* *画面：**［ Qwen Bear 看着一个**快速旋转的秒表 或飞速处理信息的示意图（如带速度线的简洁数据流）**，表情**期待或要求**，代表用户对模型日常使用中快速、流
+畅、低成本的期望。*画面内无汉字或数字。 艹
+* **对应文字（尝试放于此格下方）：**［ 也想要高效流畅运行？ ］
+3.**左下格 （Bottom-Left Panel）：**［划分方案一：密集架构（Dense）］
+* **画面：*［
+Qwen Bear 指向一个*简洁、紧凑的能量块/引擎图标 /**，视觉上与右上格的“高效”需求关联。旁边清晰打上标签**“Dense”**。**画面内无汉字（除了
+Dense标签）。**
+* **对应文字（尝试放于此格下方）：*［：一路为高效：密集架构（Dense）！ ］
+4.
+**右下格 （Bottom-Right Panel）：**［划分方案二：混合专家 （MoE）］
+* **画面：*［ Qwen Bear 指向一个**更大、更复杂、包含多个“专家”模块的智慧大脑/工具箱图标 Q/*，视觉上与左上格的“强大”需求关联。旁边清晰打上标签
+**“MoE”*。*画面内无汉字（除了MoE标签）。*孙］
+```
+
+## 输出 Prompt
+
+```
+## 核心指令：生成一张包含 2x2 网格布局的四格漫画，主题：［ Qwen3 两大架构：应对不同挑战！ ］
+
+**【整体画面描述与布局要求】(Overall Scene Description &amp; Layout Requirements):**
+
+*   **最终图像:** 生成**一张单一图片**，内部包含一个清晰的 **2x2 网格**，分隔出四个独立的漫画画格。**这整张图聚焦于展示用户对 AI 模型存在的两种核心需求冲突（强大 vs 高效），并引出 Qwen 为此划分成 Dense 和 MoE 两大架构的解决方案。**
+*   **主题/标题 (尝试性):** 图片最上方尝试清晰展示文字：“**Qwen3 两大架构：应对不同挑战！**”。(AI 可能无法准确生成文字)
+*   **内容梗概:** 前两格分别展示对模型“强大能力”和“高效运行”的两种核心需求。后两格展示 Qwen 如何通过 Dense 和 MoE 两种架构来分别满足这两种侧重。画面简洁，文字精简，风格遵循下方的【漫画风格配置文件】。
+
+**【各画格内容描述】(Individual Panel Content Descriptions):**
+
+1.  **左上格 (Top-Left Panel):**
+    *   **画面:** Qwen Bear 仰望着一座象征**极度复杂问题**的**高山或巨大的迷宫**，眼神充满**挑战或渴望**，代表用户对模型解决超级难题的期望。画面简洁，无汉字或数字。
+    *   **对应文字 (尝试放于此格下方):** **Qwen3（8款）：想挑战极限难题？**
+2.  **右上格 (Top-Right Panel):**
+    *   **画面:** Qwen Bear 看着一个**快速旋转的秒表或飞速处理信息的示意图（如带速度线的简洁数据流）**，表情**期待或要求**，代表用户对模型日常使用中快速、流畅、低成本的期望。画面简洁，无汉字或数字。
+    *   **对应文字 (尝试放于此格下方):** **也想要高效流畅运行？**
+3.  **左下格 (Bottom-Left Panel):**
+    *   **画面:** Qwen Bear 指向一个**简洁、紧凑的能量块/引擎图标**，视觉上与右上格的“高效”需求关联。旁边清晰打上标签**“Dense”**。画面简洁，无汉字（除了 Dense 标签）。
+    *   **对应文字 (尝试放于此格下方):** **：一路为高效：密集架构（Dense）！**
+4.  **右下格 (Bottom-Right Panel):**
+    *   **画面:** Qwen Bear 指向一个**更大、更复杂、包含多个“专家”模块的智慧大脑/工具箱图标**，视觉上与左上格的“强大”需求关联。旁边清晰打上标签**“MoE”**。画面简洁，无汉字（除了 MoE 标签）。
+    *   **对应文字 (尝试放于此格下方):** **：一往无前力：混合专家（MoE）！**
+
+---
+
+**【漫画风格配置文件】(Comic Style Profile):**
+{
+  &quot;comic_style_profile&quot;: {
+    &quot;style_name&quot;: &quot;Clean Slice-of-Life Anime Comic Strip&quot;,
+    &quot;visual_elements&quot;: {
+      &quot;character_design&quot;: {
+        &quot;style&quot;: &quot;可爱、简洁的 Qwen Bear 形象设计&quot;,
+        &quot;recurring_character&quot;: &quot;**关键：Qwen Bear 形象需在四个画格中保持一致。**&quot;,
+        &quot;expressions&quot;: &quot;挑战、渴望、期待、要求、解释&quot;
+      },
+      &quot;line_art&quot;: {
+        &quot;weight&quot;: &quot;Clean, consistent line weight.&quot;,
+        &quot;style&quot;: &quot;Digital ink look.&quot;,
+        &quot;color&quot;: &quot;Black or very dark brown/grey.&quot;
+      },
+      &quot;colors&quot;: {
+        &quot;palette&quot;: &quot;Slightly muted, natural color palette, 保持系列风格一致性。&quot;,
+        &quot;shading&quot;: &quot;Simple cell shading.&quot;
+      },
+      &quot;lighting&quot;: {
+        &quot;type&quot;: &quot;Clear, even lighting.&quot;
+      },
+      &quot;materials&quot;: {
+        &quot;surface_texture&quot;: &quot;Smooth digital look.&quot;
+      },
+      &quot;composition&quot;: {
+        &quot;framing&quot;: &quot;**关键：清晰的 2x2 网格布局，明显边界线。** 每个画格聚焦于展示对应的概念和 Qwen Bear 的动作/表情。&quot;,
+        &quot;perspective&quot;: &quot;运用不同视角（中景、特写）增强表现力，确保主体清晰。&quot;,
+        &quot;background_detail&quot;: &quot;背景简洁、抽象，突出主体和关键图标/概念，避免分散注意力。&quot;
+      },
+      &quot;typography&quot;: {
+        &quot;font_style&quot;: &quot;清晰、标准的简体中文字体，风格简洁。&quot;,
+        &quot;text_placement&quot;: [
+            &quot;**1. 标题:** 尝试在整个图片顶部放置【主题/标题】文字。&quot;,
+            &quot;**2. 单格文字 (高风险尝试):** 尝试在【各画格内容描述】中指定的**每一个画格的正下方、网格线之外**，放置对应的短文字。**AI可能无法精确定位，失败风险高。**&quot;,
+            &quot;**3. 文字内容:** 使用【各画格内容描述】中指定的精简文字。&quot;
+          ],
+        &quot;text_color&quot;: &quot;黑色或深灰色。&quot;
+      },
+      &quot;rendering_style&quot;: {
+        &quot;technique&quot;: &quot;Clean digital anime/manga style, consistent across the entire image, 保持风格连续性。&quot;,
+        &quot;detail_level&quot;: &quot;Medium, 重点在于清晰传达概念、表情和关键图标。&quot;
+      }
+    },
+    &quot;purpose&quot;: &quot;生成一张2x2四格漫画，解释大模型（Qwen）如何通过 Dense 和 MoE 架构满足用户对能力和效率的不同需求。&quot;,
+    &quot;negative_constraints&quot;: [
+      &quot;不要生成单幅画格图像（除非用户明确要求）。&quot;,
+      &quot;不要缺少网格或边界线。&quot;,
+      &quot;避免 Qwen Bear 形象不一致。&quot;,
+      &quot;避免文字乱码、丢失或放置位置严重错误（尤其是单格文字）。&quot;,
+      &quot;画格内部不要有文字（除非是 Dense 或 MoE 标签）。&quot;,
+      &quot;避免生成与用户描述无关的内容。&quot;,
+      &quot;避免过于写实或复杂的风格。&quot;,
+      &quot;确保 Dense 和 MoE 图标有视觉区分度，且与对应的概念（效率/强大）相关联。&quot;
+    ]
+  }
+}
+
+--ar 3:4
+```
+
+### 没有地图生成的图片
+
+![](img/45e795a8101e320158fcf5e173081f45.png)
+
+### 有底图生成的图片
+
+![](img/8536ca2965969f067d33be59007684cc.png)
+
+![](img/e57ad1cac828e9f99d3e797b2bd31a8b.png)

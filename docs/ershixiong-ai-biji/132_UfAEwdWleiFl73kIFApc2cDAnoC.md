@@ -1,0 +1,238 @@
+# 生成固定格式的 html
+
+> 来源：[https://qianniucity.feishu.cn/docx/FiqHdgUkCo4jo1xy7uAcvlbPnod](https://qianniucity.feishu.cn/docx/FiqHdgUkCo4jo1xy7uAcvlbPnod)
+
+![](img/01a1c33f3cb6a3eb8fbd92a7132e232a.png)
+
+![](img/f0d3c3d711fae477af96e2647a9f3791.png)
+
+[Generate HTML Web Page.html](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T1zxbY2Hio4B2Ax15BJcKX9Dnyd)
+
+```
+{
+  &quot;task&quot;: &quot;Generate HTML Web Page: Fixed Style Bento Grid Summary from Article Link&quot;,
+  &quot;input_article&quot;: {
+    &quot;source_type&quot;: &quot;url&quot;,
+    &quot;url&quot;: &quot;[https://cline.bot/blog/cline-v3-14-improved-gemini-caching-newrule-command-enhanced-checkpoints-key-updates]&quot; // **这是唯一需要用户填写的字段**
+    // 例如: &quot;url&quot;: &quot;https://cline.bot/blog/why-patterns-matter-lessons-from-hyper-growth-startups&quot;
+    // 如果 AI 无法直接访问 URL，可考虑添加:
+    // &quot;fallback_content_if_url_fails&quot;: &quot;[如果AI无法访问URL，可在此处提供文章文本]&quot;
+  },
+  &quot;output_format&quot;: &quot;HTML Code&quot;,
+  &quot;page_specs&quot;: {
+    &quot;title&quot;: {
+      &quot;source&quot;: &quot;generated_summary_title&quot;, // 页面标题从生成的总结内容中提取或生成
+      &quot;prefix&quot;: &quot;Article Insights: &quot; // 标题前缀固定
+    },
+    &quot;lang&quot;: &quot;auto-detect&quot;, // 尝试根据文章内容自动检测主要语言
+    &quot;head_elements_config&quot;: [
+      {&quot;tag&quot;: &quot;meta&quot;, &quot;attributes&quot;: {&quot;charset&quot;: &quot;UTF-8&quot;}},
+      {&quot;tag&quot;: &quot;meta&quot;, &quot;attributes&quot;: {&quot;name&quot;: &quot;viewport&quot;, &quot;content&quot;: &quot;width=device-width, initial-scale=1.0&quot;}},
+      {&quot;tag&quot;: &quot;title&quot;, &quot;content_source&quot;: &quot;page_title&quot;}, // 将上面定义的页面标题放入 &lt;title&gt; 标签
+      {&quot;tag&quot;: &quot;link&quot;, &quot;attributes&quot;: {&quot;rel&quot;: &quot;stylesheet&quot;, &quot;href&quot;: &quot;https://cdn.jsdelivr.net/npm/tailwindcss@^3.0/dist/tailwind.min.css&quot;}}, // TailwindCSS CDN (v3.0+)
+      {&quot;tag&quot;: &quot;link&quot;, &quot;attributes&quot;: {&quot;rel&quot;: &quot;stylesheet&quot;, &quot;href&quot;: &quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css&quot;}}, // Font Awesome CDN (v6.0+)
+      // 可选：如果图表库需要 CSS，在此添加
+      // {&quot;tag&quot;: &quot;link&quot;, &quot;attributes&quot;: {&quot;rel&quot;: &quot;stylesheet&quot;, &quot;href&quot;: &quot;[Chart Library CSS CDN]&quot;}}
+      {&quot;tag&quot;: &quot;style&quot;, &quot;content_source&quot;: &quot;generated_internal_css&quot;} // 指示 AI 在 &lt;head&gt; 中生成 &lt;style&gt; 块，内容基于 design_system
+    ],
+    &quot;body_structure&quot;: {
+      &quot;container_tag&quot;: &quot;div&quot;,
+      &quot;container_attributes&quot;: {&quot;class&quot;: &quot;bento-grid-container min-h-screen p-4 md:p-8&quot;}, // 基础容器样式类 (颜色类在 styling 中定义)
+      &quot;content_blocks&quot;: [
+        {
+          &quot;block_id&quot;: &quot;title-block&quot;,
+          &quot;type&quot;: &quot;Main Title&quot;,
+          &quot;layout_span_desktop&quot;: &quot;span 2&quot;, // 桌面布局跨度 (示例)
+          &quot;layout_span_mobile&quot;: &quot;span 1&quot;,  // 移动布局跨度 (示例)
+          &quot;content_source&quot;: &quot;page_title&quot;, // 内容来自页面标题
+          &quot;content_formatting&quot;: {
+             &quot;tag&quot;: &quot;h1&quot;,
+             &quot;style_role&quot;: &quot;Emphasis Title&quot;, // 指向设计系统中定义的强调标题样式
+             &quot;secondary_text&quot;: {&quot;source&quot;: &quot;auto-generated-brief-english-tagline&quot;, &quot;style_role&quot;: &quot;Subtle Accent Text&quot;} // 自动生成一个简短的英文副标题/点缀
+          }
+        },
+         {
+          &quot;block_id&quot;: &quot;overall-summary-block&quot;,
+          &quot;type&quot;: &quot;Overall Summary Paragraph&quot;,
+          &quot;layout_span_desktop&quot;: &quot;span 2&quot;,
+          &quot;layout_span_mobile&quot;: &quot;span 1&quot;,
+           &quot;content_source&quot;: &quot;article_summary&quot;, // 内容是文章整体总结
+           &quot;content_spec&quot;: { // 总结内容本身的详细要求
+             &quot;type&quot;: &quot;paragraph_summary&quot;,
+             &quot;focus&quot;: &quot;Core Message and Synthesis of Main Ideas&quot;,
+             &quot;style&quot;: [&quot;Concise&quot;, &quot;Straightforward&quot;, &quot;Engaging&quot;],
+             &quot;length&quot;: &quot;Moderate Paragraph (approx. 150-250 words)&quot;,
+             &quot;ignore&quot;: [&quot;Minor Details&quot;, &quot;Specific Examples (unless critical to main point)&quot;, &quot;Excessive Background/History&quot;, &quot;Promotional Content&quot;] // 忽略次要信息和广告内容
+           },
+           &quot;content_formatting&quot;: {
+             &quot;tag&quot;: &quot;div&quot;, // 可以是 div 或 article
+             &quot;heading&quot;: {&quot;tag&quot;: &quot;h2&quot;, &quot;content&quot;: &quot;核心摘要&quot;, &quot;style_role&quot;: &quot;Block Title&quot;}, // 块内标题 (中文固定)
+             &quot;paragraph&quot;: {&quot;tag&quot;: &quot;p&quot;, &quot;style_role&quot;: &quot;Primary Text&quot;} // 总结段落应用主要文本样式
+           }
+        },
+         {
+           &quot;block_id&quot;: &quot;key-points-block&quot;,
+           &quot;type&quot;: &quot;Key Takeaways List&quot;,
+           &quot;layout_span_desktop&quot;: &quot;span 1&quot;,
+           &quot;layout_span_mobile&quot;: &quot;span 1&quot;,
+            &quot;content_source&quot;: &quot;article_key_points&quot;, // 内容是提取的关键点
+            &quot;content_spec&quot;: { // 关键点提取要求
+               &quot;type&quot;: &quot;list_of_points&quot;,
+               &quot;focus&quot;: &quot;Most Important Lessons or Insights / Practical Takeaways&quot;, // 提取最重要的教训或见解
+               &quot;point_count&quot;: 2, // 精确数量
+               &quot;style&quot;: [&quot;Concise&quot;, &quot;Actionable&quot;, &quot;Bulleted List&quot;],
+               &quot;ignore&quot;: [&quot;Repetitive points&quot;, &quot;Highly technical jargon without explanation&quot;]
+            },
+             &quot;content_formatting&quot;: {
+               &quot;tag&quot;: &quot;div&quot;,
+               &quot;heading&quot;: {&quot;tag&quot;: &quot;h2&quot;, &quot;content&quot;: &quot;关键洞察&quot;, &quot;style_role&quot;: &quot;Block Title&quot;}, // 块内标题 (中文固定)
+               &quot;list&quot;: {&quot;tag&quot;: &quot;ul&quot;, &quot;item_tag&quot;: &quot;li&quot;, &quot;style_role&quot;: &quot;Primary Text&quot;} // 列表应用主要文本样式
+             }
+         },
+          {
+            &quot;block_id&quot;: &quot;visual-emphasis-block&quot;,
+            &quot;type&quot;: &quot;Visual Accent Element&quot;,
+            &quot;layout_span_desktop&quot;: &quot;span 1&quot;,
+            &quot;layout_span_mobile&quot;: &quot;span 1&quot;,
+            &quot;design_role&quot;: &quot;Accent Visual / Large Element&quot;, // 这是一个视觉强调块
+            &quot;content_source&quot;: &quot;auto-generated-abstract-graphic-or-key-term&quot;, // 内容可以是抽象图形或文章中的关键术语
+            &quot;content_formatting&quot;: {
+               &quot;tag&quot;: &quot;div&quot;, // 或其他适合作为视觉元素的标签
+               &quot;style_role&quot;: &quot;Large Visual Element&quot;, // 指向设计系统中定义的超大视觉元素样式
+               &quot;content&quot;: &quot;// AI Generates large scale abstract graphic or a key term text based on article theme/sentiment, styled according to Large Visual Element role.&quot; // 示意 AI 生成的内容类型
+            }
+         },
+         {
+            &quot;block_id&quot;: &quot;original-link-block&quot;,
+            &quot;type&quot;: &quot;Link to Original Article&quot;,
+            &quot;layout_span_desktop&quot;: &quot;span 1&quot;,
+            &quot;layout_span_mobile&quot;: &quot;span 1&quot;,
+            &quot;content_source&quot;: &quot;input_article.url&quot;, // 内容是原文链接
+            &quot;content_formatting&quot;: {
+               &quot;tag&quot;: &quot;div&quot;,
+               &quot;heading&quot;: {&quot;tag&quot;: &quot;h2&quot;, &quot;content&quot;: &quot;阅读原文&quot;, &quot;style_role&quot;: &quot;Block Title&quot;}, // 块内标题 (中文固定)
+               &quot;link&quot;: {
+                  &quot;tag&quot;: &quot;a&quot;,
+                  &quot;attributes&quot;: {&quot;href_source&quot;: &quot;content_source&quot;, &quot;target&quot;: &quot;_blank&quot;, &quot;class&quot;: &quot;flex items-center&quot;}, // href 属性值从内容源获取
+                  &quot;content&quot;: &quot;点击此处阅读完整文章&quot;, // 链接文本固定
+                  &quot;style_role&quot;: &quot;Link&quot;, // 指向设计系统中定义的链接样式
+                  &quot;icon&quot;: {&quot;library&quot;: &quot;Font Awesome&quot;, &quot;name&quot;: &quot;fas fa-external-link-alt&quot;, &quot;position&quot;: &quot;right&quot;, &quot;style_role&quot;: &quot;Icon&quot;} // 添加外部链接图标
+               }
+            }
+         }
+         // 可以根据需要添加更多通用块类型，这些块的类型和布局是固定的，但内容会根据文章生成
+         // 例如：
+         // {
+         //   &quot;block_id&quot;: &quot;author-info-block&quot;,
+         //   &quot;type&quot;: &quot;Author Information&quot;,
+         //   &quot;layout_span_desktop&quot;: &quot;span 1&quot;,
+         //   &quot;layout_span_mobile&quot;: &quot;span 1&quot;,
+         //   &quot;content_source&quot;: &quot;article_author_info&quot;, // 从文章中提取作者信息
+         //   &quot;content_formatting&quot;: { ... }
+         // }
+      ]
+    }
+  },
+  &quot;design_system&quot;: { // **固定不变的视觉设计系统规范**
+    &quot;overall_aesthetic&quot;: &quot;Modern Tech / Bento Grid / High Contrast&quot;,
+    &quot;color_palette&quot;: {
+      &quot;description&quot;: &quot;High contrast dark theme with a single vibrant accent color.&quot;,
+      &quot;roles&quot;: {
+        &quot;background_dark&quot;: &quot;#1A202C&quot;, // 深色背景 (Tailwind gray-900/800 area)
+        &quot;surface_dark&quot;: &quot;#2D3748&quot;, // 稍亮的深色表面 (Tailwind gray-800/700 area) 用于块背景
+        &quot;accent_vibrant&quot;: &quot;#00FFFF&quot;, // 鲜艳高亮色 (Cyan/Aqua)
+        &quot;text_primary_light&quot;: &quot;#E2E8F0&quot;, // 浅色主要文本 (Tailwind gray-200)
+        &quot;text_secondary_muted&quot;: &quot;#A0AEC0&quot; // 柔和次要文本 (Tailwind gray-400)
+      }
+    },
+    &quot;typography&quot;: {
+      &quot;description&quot;: &quot;Emphasis on large/bold elements contrasted with smaller text. Mix of main language (auto-detected) and English accents. Uses a modern sans-serif font.&quot;,
+      &quot;font_family&quot;: &quot;sans-serif&quot;,
+      &quot;styles&quot;: {
+        &quot;Emphasis Title&quot;: {&quot;tag&quot;: &quot;h1&quot;, &quot;font_size&quot;: &quot;clamp(2.5rem, 6vw, 4rem)&quot;, &quot;font_weight&quot;: &quot;extrabold&quot;, &quot;color_role&quot;: &quot;accent_vibrant&quot;, &quot;text_transform&quot;: &quot;uppercase&quot;, &quot;letter_spacing&quot;: &quot;tight&quot;}, // 强调标题样式 (响应式字体大小)
+        &quot;Subtle Accent Text&quot;: {&quot;tag&quot;: &quot;p&quot;, &quot;font_size&quot;: &quot;0.875rem&quot;, &quot;font_weight&quot;: &quot;normal&quot;, &quot;color_role&quot;: &quot;text_secondary_muted&quot;, &quot;language&quot;: &quot;English&quot;, &quot;text_transform&quot;: &quot;uppercase&quot;}, // 小英文点缀样式 (Tailwind text-sm)
+        &quot;Block Title&quot;: {&quot;tag&quot;: &quot;h2&quot;, &quot;font_size&quot;: &quot;1.5rem&quot;, &quot;font_weight&quot;: &quot;bold&quot;, &quot;color_role&quot;: &quot;text_primary_light&quot;, &quot;margin_bottom&quot;: &quot;0.8em&quot;}, // 块内标题样式 (Tailwind text-2xl)
+        &quot;Primary Text&quot;: {&quot;tag&quot;: &quot;p, li&quot;, &quot;font_size&quot;: &quot;1rem&quot;, &quot;font_weight&quot;: &quot;normal&quot;, &quot;color_role&quot;: &quot;text_primary_light&quot;, &quot;line_height&quot;: &quot;1.7&quot;}, // 主要文本样式 (Tailwind text-base)
+        &quot;Large Visual Element&quot;: {&quot;tag&quot;: &quot;div, span&quot;, &quot;font_size&quot;: &quot;clamp(6rem, 15vw, 10rem)&quot;, &quot;font_weight&quot;: &quot;extrabold&quot;, &quot;color_role&quot;: &quot;accent_vibrant&quot;, &quot;opacity&quot;: &quot;0.15&quot;, &quot;position&quot;: &quot;absolute&quot;, &quot;inset&quot;: &quot;0&quot;, &quot;display&quot;: &quot;flex&quot;, &quot;justify_content&quot;: &quot;center&quot;, &quot;align_items&quot;: &quot;center&quot;, &quot;pointer_events&quot;: &quot;none&quot;} // 超大视觉元素样式（文本或图形）
+      }
+    },
+    &quot;layout_grid&quot;: {
+       &quot;description&quot;: &quot;Responsive CSS Grid layout for the main container.&quot;,
+       &quot;gap&quot;: &quot;20px&quot;, // 网格间距固定
+       &quot;responsive_columns&quot;: [
+         {&quot;screen&quot;: &quot;default&quot;, &quot;columns&quot;: &quot;1fr&quot;}, // 移动端 1 列
+         {&quot;screen&quot;: &quot;md&quot;, &quot;columns&quot;: &quot;repeat(2, 1fr)&quot;}, // 中等屏幕 2 列
+         {&quot;screen&quot;: &quot;lg&quot;, &quot;columns&quot;: &quot;repeat(3, 1fr)&quot;}  // 大屏幕 3 列
+       ]
+       // AI 需要根据 content_blocks 的 layout_span 和这里的列定义生成具体的 grid-template-areas 或 grid-column/row 样式
+    },
+    &quot;block_styling&quot;: {
+      &quot;description&quot;: &quot;Styling for individual Bento Grid blocks.&quot;,
+      &quot;padding&quot;: &quot;24px&quot;, // 内边距固定
+      &quot;background_color_role&quot;: &quot;surface_dark&quot;, // 块背景色用稍暗深色
+      &quot;border_color_role&quot;: &quot;text_secondary_muted&quot;, // 边框用次要文本色
+      &quot;border_width&quot;: &quot;1px&quot;,
+      &quot;rounded_corners&quot;: &quot;12px&quot;, // 圆角固定
+      &quot;box_shadow&quot;: &quot;none&quot;, // 默认无阴影，保持简洁
+      &quot;interactive_effects&quot;: [&quot;Subtle hover scale (e.g., scale-105)&quot;], // 鼠标悬停效果固定
+      &quot;overflow&quot;: &quot;hidden&quot; // 块内可能包含超大元素，需要隐藏溢出
+    },
+     &quot;color_effects&quot;: {
+      &quot;type&quot;: &quot;Transparency Gradient&quot;,
+      &quot;application&quot;: &quot;Backgrounds of specific blocks (e.g., visual-emphasis-block) or on the Large Visual Element itself.&quot;,
+      &quot;color_role&quot;: &quot;accent_vibrant&quot;, // 渐变颜色使用高亮色
+      &quot;direction&quot;: &quot;Radial or Linear (to transparency)&quot;,
+      &quot;constraint&quot;: &quot;Gradient must use the &#x27;accent_vibrant&#x27; color and transition to transparency or the background color, not mix with other solid colors.&quot;
+    },
+     &quot;iconography&quot;: {
+       &quot;library_source&quot;: &quot;CDN (Font Awesome)&quot;,
+       &quot;style&quot;: &quot;Consistent with theme (e.g., solid or regular)&quot;,
+       &quot;color_role&quot;: &quot;accent_vibrant&quot;, // 图标颜色使用高亮色
+       &quot;size&quot;: &quot;Standard&quot;,
+       &quot;exclusion&quot;: &quot;Avoid Emojis as primary icons.&quot;
+     },
+    &quot;animation&quot;: {
+      &quot;trigger&quot;: &quot;Scroll into View&quot;, // 元素滚动进入视口触发
+      &quot;mimic_inspiration&quot;: &quot;Subtle, Modern Website Scroll Effects (like Apple)&quot;, // 模仿现代网站效果
+      &quot;types&quot;: [
+        &quot;Fade-in (opacity transition)&quot;,
+        &quot;Subtle Slide-in (translateY slight)&quot;,
+        &quot;Scale-up (slight transform scale)&quot;
+      ],
+      &quot;application&quot;: &quot;Apply animations to individual &#x27;.bento-block&#x27; elements as they become visible in the viewport.&quot;,
+      &quot;duration&quot;: &quot;500ms&quot;,
+      &quot;easing&quot;: &quot;ease-out&quot;
+    }
+  },
+  &quot;technical_requirements&quot;: { // **固定不变的技术栈**
+    &quot;html_version&quot;: &quot;HTML5&quot;,
+    &quot;css_framework&quot;: &quot;TailwindCSS 3.0+ (via CDN)&quot;,
+    &quot;javascript_usage&quot;: &quot;Required for scroll-triggered animations and potentially chart component initialization.&quot;,
+    &quot;external_resources&quot;: [&quot;TailwindCSS CDN&quot;, &quot;Font Awesome CDN&quot;, &quot;Optional Chart Library CDN (if needed)&quot;],
+    &quot;data_visualization_handling&quot;: &quot;If article data requires charts, use a simple embeddable online component (like Chart.js via CDN or similar) and apply theme styling via CSS if possible. Otherwise, represent data points textually within a block.&quot; // 通用数据可视化处理方式
+  },
+  &quot;constraints&quot;: [ // **固定的生成约束**
+    &quot;Strictly adhere to the color palette roles defined in &#x27;design_system.color_palette.roles&#x27;.&quot;,
+    &quot;Implement the typography styles as defined in &#x27;design_system.typography.styles&#x27;, including font sizes, weights, colors, and language mix.&quot;,
+    &quot;Ensure the Bento Grid layout is implemented correctly using CSS Grid and TailwindCSS classes, respecting the specified gap and responsive columns.&quot;,
+    &quot;Implement scroll-triggered animations using JavaScript as specified in &#x27;design_system.animation&#x27;.&quot;,
+    &quot;Only use icons from Font Awesome via CDN.&quot;,
+    &quot;Do not use emojis as primary visual elements.&quot;,
+    &quot;The generated HTML must be valid, semantic, and well-structured.&quot;,
+    &quot;The generated CSS should be included in a &lt;style&gt; tag in the &lt;head&gt;.&quot;,
+    &quot;The summary must accurately reflect the core message and key points (2 points) of the original article based on &#x27;content_spec&#x27;.&quot;,
+    &quot;Avoid omitting essential information from the summary while adhering to conciseness.&quot;
+  ],
+  &quot;instructions_to_ai&quot;: [ // **固定的执行指令**
+    &quot;Access and read the article at the provided URL: [Insert URL from input_article.url].&quot;,
+    &quot;Analyze the article to understand its core message and identify the 2 most important insights or lessons.&quot;,
+    &quot;Generate a concise paragraph summary and a list of 2 key points based strictly on the &#x27;content_spec&#x27; rules.&quot;,
+    &quot;Generate a suitable HTML page title based on the overall summary, using the specified prefix.&quot;,
+    &quot;Generate complete and valid HTML5 code according to the &#x27;page_specs.body_structure&#x27;, creating distinct &#x27;.bento-block&#x27; elements with specified classes and layout spans.&quot;,
+    &quot;Populate the HTML elements within the blocks with the generated title, summary paragraph, key points list, the original article URL, and a generated abstract visual element/key term, formatting them according to their &#x27;content_formatting&#x27; and &#x27;style_role&#x27; which reference the &#x27;design_system&#x27;.&quot;,
+    &quot;Generate the necessary CSS code within a &lt;style&gt; tag in the &lt;head&gt; based *strictly* on the &#x27;design_system&#x27; specifications, including color palette roles mapped to actual colors, typography styles, responsive grid layout, block styling, color effects (like transparency gradients using the accent color), icon styling, and animation definitions.&quot;,
+    &quot;Implement the specified scroll-triggered animations using JavaScript, applying them to the &#x27;.bento-block&#x27; elements as they become visible in the viewport.&quot;,
+    &quot;Ensure the generated HTML, CSS, and JS together create a functional, responsive Bento Grid layout page with the specified fixed high-contrast, tech-inspired dark theme, effectively highlighting the article&#x27;s key takeaways.&quot;
+  ]
+}
+```
