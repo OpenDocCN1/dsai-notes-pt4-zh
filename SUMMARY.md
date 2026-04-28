@@ -35,6 +35,7 @@
 +   [海涛AI觉醒社|智能体](docs/haitao-ai-juexing-shequ/README.md)
 +   [海涛的博客](docs/haitaos-boke/README.md)
 +   [河林的成长指南](docs/helinde-chengzhang-zhinan/README.md)
++   [何者 Hezher 法律科技社区](docs/hezhe-falv-keji-zhiku/README.md)
 +   [胡扯知识库](docs/huche-zhishiku/README.md)
 +   [JessieZTalk分享交流](docs/jessie-ztalk/README.md)
 +   [2016 年机器之心高分技术文章全集](docs/jqzx-2016/README.md)
