@@ -1,0 +1,15 @@
+# 微信小程序的监管
+
+> 来源：[https://docs.feishu.cn/docx/TWpodgtcUoIuNrxtxJCcvej8nKg](https://docs.feishu.cn/docx/TWpodgtcUoIuNrxtxJCcvej8nKg)
+
+**-问：**微信小程序的合规，是不是微信要负责啊？就是如果小程序有问题，微信会不让上啊？
+
+**-答1：**应该两头都有，微信平台规则有要求，自己也要负责。
+
+**-答2：**你看下上架就知道了。
+
+**-答3：****微信上架**时候让你填的那些，其实就是他们的形式审查了。
+
+**-答4：**如果是小程序更新，**地方网信办**也会审一道。
+
+[小程序合规](https://cbe8t1r4a5.feishu.cn/wiki/wikcnp6uxtmPBkhJMrHz0EERWJc)
