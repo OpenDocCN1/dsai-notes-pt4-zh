@@ -25,6 +25,7 @@
 +   [动力学院 AIGC 知识库 · 学习指南](docs/donglixueyuan-aigc-zhishiku/README.md)
 +   [DeepSeek 百宝箱](docs/ds-baibaoxiang/README.md)
 +   [DeepSeek从入门到精通](docs/ds-congrumen-daojingtong/README.md)
++   [泛函的个人知识库](docs/fanhan-de-geren-zhishiku/README.md)
 +   [废才俱乐部首页](docs/feicai-julebu-de-ai-xuetang/README.md)
 +   [疯狂AI知识库介绍](docs/fengkuang-aigc-zhishiku/README.md)
 +   [GeekAGI 知识库 · 学习指南](docs/geek-agi-zhishiku/README.md)
