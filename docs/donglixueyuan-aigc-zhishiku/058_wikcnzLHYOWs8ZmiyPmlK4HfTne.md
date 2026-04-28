@@ -1,0 +1,301 @@
+# 【MJ应用系列课程 第六讲】Midjourney 绘制壁纸、书籍插画、影视海报、Logo、图标
+
+> 来源：[https://docs.feishu.cn/docx/C40zda3V1oTFf0xPcBmc6LUXnlt](https://docs.feishu.cn/docx/C40zda3V1oTFf0xPcBmc6LUXnlt)
+
+在前两章中，我们已经对 Midjourney 有了初步了解，并学习了如何使用指令和参数。在本章中，我们将开始通过实战，探索 Midjourney 的实际商业应用能力。
+
+## AIGC 在中国的应用
+
+在正式开始之前，让我们先来了解一下 AI Generated Content（AIGC，即利用人工智能技术生成内容）在国内设计和创意产业中的一些应用。
+
+近期最引人关注的热点事件莫过于飞猪的AI广告。4月10日，微博上的热门话题#飞猪AI广告引发热议#迅速走红，短短一天内，相关内容的阅读量就突破了1.5亿次。
+
+![](img/b6c045c9c3cf21a8757099b0ef8d8d2b.png)
+
+这一话题之所以引起广泛关注，是因为飞猪在上海和杭州的地铁站投放了一系列广告。与传统的由设计师或插画师绘制完成的广告不同，这些广告的素材图像都是由 AI 技术生成的。
+
+![](img/d2b2e9e0e5426c94cb8622627ede1212.png)
+
+地铁广告用到的插画图像，由 AI 生成
+
+![](img/3c121f973fb959caab065a468350c7f5.png)
+
+地铁广告用到的插画图像，由 AI 生成
+
+![](img/cfc69dbb076849ef4946ad8bfb113dcf.png)
+
+地铁广告用到的插画图像，由 AI 生成
+
+![](img/ae24ee97e081b451aae785835ff2ac84.png)
+
+地铁广告用到的插画图像，由 AI 生成
+
+![](img/493b7f00bcb13345f9efad0770c2268b.png)
+
+地铁广告实拍
+
+![](img/6e7006680aa8f126ae1ab84bfce287d6.png)
+
+地铁广告用到的插画图像，由 AI 生成
+
+热议的焦点主要集中在两个方面。
+
+首先，作为一个旅行 APP，飞猪选择采用插画图片进行宣传，这是否会影响到旅行景点真实性的传达。
+
+其次，AI 是否能够取代设计师进行绘画创作，这是否会引发设计师职业危机的担忧，要知道，成为一位优秀的插画师需要多年的学习和大量实践经验。文末我们也会简单讨论一下 AI 绘画对现有职业和商业模式的影响。
+
+AIGC 在网易的应用已经相当广泛。在图像方面，其主要应用集中于 Midjourney 和 Stable Diffusion 这两大平台或工具。
+
+游戏部门利用这些 AI 工具设计海报、游戏背景、游戏场景以及寻求设计灵感和创意。
+
+![](img/f6a7af4fd7bc8275e20f60470c4b0685.png)
+
+![](img/f65bbc38cec1f95b75f656fc5b1dd2c1.png)
+
+这些游戏场景合成，是由 Midjourney 参与完成的。
+
+详细见网易ASAK设计团队的解析文章[：解析｜AIGC在网易落地项目中的运用 https://m](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/gmenXFRV-g1denIbGjg3NA)p.weixin.qq.com/s/gmenXFRV-g1denIbGjg3NA
+
+网易严选商城利用 Midjourney AI 生成严选品牌调性图、商品氛围图素材、材质特写、商用版权图片、服饰模特换装、包装设计、工业造型设计、商品图案设计以及 IP 设计。这些应用不仅丰富了商城的视觉体验，还提升了设计团队的灵感和创意水平。
+
+![](img/927d2498329bb69d2d101f964da2e04e.png)
+
+![](img/e89d6158f042231f5a0c937308891702.png)
+
+![](img/5a486e9e7fd308ee8c2ebe70b4c9c912.png)
+
+![](img/d5653ecbf3449ce2dd435fc1b3c3b9a1.png)
+
+![](img/e4efcfe6b5abb32dee85021a70690045.png)
+
+![](img/680cc259def215e2afd73e0205e58336.png)
+
+![](img/6084b3e6eebcf1262a3a7b58c3dedffb.png)
+
+![](img/af1c482902de1012abd5fd6df2681627.png)
+
+在过去，每张图片的版权费用和 CAD 渲染费用可能高达数千元。通过利用 AI 工具，企业可以大幅节省这些成本，也可以节省许多时间。
+
+详细见网易严选创新设计中心IDC[的文章：AIGC|探索AIGC在网易严选中的应用 http](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/GargWzAGH7QyRanIgZxiCQ)s://mp.weixin.qq.com/s/GargWzAGH7QyRanIgZxiCQ
+
+OK，在简要了解了 AIGC 在中国的一些实战应用之后，我们现在开始进行商业实战案例的探讨。
+
+## 商业实战
+
+通过之前的网易应用案例，可以明显看到，要将 Midjourney 生成的图像真正应用于实际场景，我们还需要对其进行二次处理或创意加工。为了让大家更好地关注 Midjourney 本身，本文将仅使用 prompt 来生成所需结果，暂时不借助第三方处理工具。在最后一章，我们将专门介绍相关辅助工具以及其他类似的 AI 图像产品。
+
+在本次实战中，我们将应用上一章介绍的基本指令和参数，同时也会利用我们之前探讨过的 prompt 参数。请确保及时回顾相关知识点，以便更好地理解和应用。
+
+附上一章链接：
+
+[陈](https://zhuanlan.zhihu.com/p/624253088)[大码：MJ应用系列课程](https://zhuanlan.zhihu.com/p/624253088)[(二](https://zhuanlan.zhihu.com/p/624253088))：一文学完 Midjourney AI 的基本操作与高级技巧及Prompt探索1 赞同 · 0 评论文章
+
+![](img/715f7d7e679bb5a8287bad0dabc06ef4.png)
+
+### 实战：桌面壁纸
+
+**需求场景：用手机、iP**ad、电脑时，大家都会设置自己中意的图片为背景
+
+创意描述：一只活泼可爱的柯基犬，在沐浴着阳光的绿色草坪上欢快地奔跑，张开嘴巴，充满活力地朝着你跑来。在远处，三个人正悠闲地站在草坪上闲聊，享受着宁静的时光。
+
+Prompts 描述：A lively and adorable Corgi dog is joyfully running on a sunlit green lawn, with its mouth wide open, full of energy as it runs towards you. In the distance, three people are leisurely standing on the grass, chatting and enjoying the tranquil moments.
+
+Midjourney 很快就生成了一组图像。
+
+![](img/bcdf0ac187d78766a856574d861a34ce.png)
+
+清新欢乐，清晰度还很高，不过，这个图像有两个问题。
+
+首先，壁纸尺寸一般不是1:1比例的，拿我们电脑用的壁纸来说 16:9 会是常用的尺寸。我们回顾一下上章讲内容， -- ar 参数是可以指定生成的比例的，所以我们可以在 prompt 后增加参数 --ar 16:9
+
+第二，没有三个人聊天的场景。又重新生成了几次，都没有出现这个场景。后来把三个人的场景放在了 prompt 描述的最前边，才勉强出现了人物。
+
+优化后的prompt：In the distance, three people are leisurely standing on the grass, chatting casually. A lively and adorable Corgi dog is joyfully running on the sunlit green lawn, with its mouth wide open, full of energy as it runs towards you. --ar 16:9
+
+![](img/06da4aa57ed3c733b808c140dce68876.png)
+
+优化一下 prompt，又尝试了几次，甚至还使用了俯视、中远镜头等 prompt 描述词，虽然图像都很漂亮，但是都不太满意，下图是比较接近想像场景的结果。
+
+![](img/f0be6dc524c0b3919c7c1ecc74a8cbca.png)
+
+点 U1 按钮，放大优化一下细节，分享出来
+
+![](img/f3ea7e0fb3eed7c55df26d49e5e7a760.png)
+
+再分享一张
+
+![](img/237485bd4ca2dca1069e772bb7b79b85.png)
+
+实战：书籍插图
+
+需求场景：印刷出版的书籍，重要情景或者人物会配有插图
+
+创意描述：一位老奶奶慢慢地走在林间小径上，一只友善的小鹿跟在她身后，她时不时地停下来，与这只小鹿分享她手中的食物。
+
+Prompts 描述：An elderly lady slowly walks along a forest path, with a friendly deer following behind her. She occasionally stops to share the food in her hands with the deer, a watercolor painting.
+
+在描述文字中，指定了“水彩画（watercolor）”这种绘画方法，风格画是 Midjourney 非常擅长的。
+
+![](img/5ec63d1dd79bc4719815dc2fe65ee118.png)
+
+按U1 按钮，放大添加细节后，获得成品。当然，一般出现这种插图时，文字都会对老奶奶的形象、衣着甚至神态都会有详细的描述。可以从你喜欢的文学作品中，寻找一段文字，尝试一下。如果是你自己创作的文学作品，可以找我帮你尝试制作一下。
+
+![](img/a89b45444d817c8b33740b6bf29ddd11.png)
+
+### 实战：商务版权图片
+
+需求场景：网站需要用一张商务图片，又不想花钱买版权图片
+
+创意描述：一个中年中国男子，穿着西装，在显示屏幕上演示着课件，明亮简洁的办公室，中远景
+
+Prompts 描述：A middle-aged Chinese man, dressed in a suit, is presenting a slideshow on a display screen in a bright and minimalist office, with a mid-to-long distance view. --v 5
+
+一次生成，呈现出色的效果，同时在大屏幕上贴心展示了当前热门的数字大屏和商业智能（BI）内容。
+
+![](img/1820ae175c0b6d81ea236523834fa242.png)
+
+点击 U1 按钮放大细节后的效果，这张图片用做商用，完全没有问题。你可能会注意的，这个人物手指有些怪异，而且这已经是经过迭代升级的 V5 模型，期待 Midjourney 更进一步的优化吧。
+
+![](img/af3dba4bf41b599b641fe1c8d517158a.png)
+
+### 实战：影视海报
+
+需求场景：模仿最近热播的电视剧《长月烬明》的海报风格，为我们将要上映的电视剧做一个宣传海报。这个创意分面两部分，一部分是生成两个主角的图像和电视背景的图片，一部分是主角图像附加到背景上。
+
+![](img/f589269b8cb6596422daf4dada02545c.png)
+
+我们先用 Midjourney 生成两个主角对视的形象图，作为海报的前景图。
+
+描述文本：一男一女，两个中国古典风青年，俊美帅气，身穿白色仙幻衣服，对视。
+
+Prompt描述：A man and a woman, two Chinese classical style young people, beautiful and handsome, wearing white magic clothes, looking at each other
+
+![](img/129ffa65e60dd9f985e0717d27bc4dbf.png)
+
+画风奇特，一定是个古今大乱斗的穿越剧，不太符合我们的设想。我们再优化一下细节，设置两人都是长头发，同时把白色衣服的限定去掉。
+
+Prompt描述：Two Chinese classic young people, a man and a woman, beautiful and handsome, both with long hair, wearing magic clothes, looking at each other
+
+优化后的图片，多少有些感觉了，就是手特别出戏。
+
+![](img/e517c023a9efd5867d5a2238275de670.png)
+
+原本想生成一个纯色背景的主角形象，方便后续使用，加入纯色背景 prompt 后，画风在向奇怪的方向发展。
+
+![](img/66874242d30b6119e1be3e308e47da96.png)
+
+最后选择了这一张做为主角形象图，虽然男主的眼神有些飘，两人的手也显得没那么恩爱。
+
+![](img/c22fd869c190acce918f595c56671916.png)
+
+有了主角图片，我们开始生成背景图。
+
+场景描述：轻雾，高山，浮岛，中国宫殿，仙境，逼真
+
+Prompt 描述：Faint mist, mountains, floating islands, Chinese palaces, fairyland, realistic
+
+![](img/a83f969c5df05995838c5e4c05298464.png)
+
+![](img/d59bd8335f29d891ad6c13205dfd531f.png)
+
+最后选择了这张图像做为海报背景
+
+![](img/2434e227317c7ad2acf019eae81f7f4c.png)
+
+有了两张图像后，我们开始将两张图片处理在一起，尝试使用 /blend 指令将两张图片融合在一起。
+
+![](img/8acea251ec7e80e6401b06c422f297ab.png)
+
+> 失败了！Midjourney 基本保留了背景的风格，但是直接改变了主角的形象。仔细阅读下官方文档中 /blend 指令的说明，它只负责图片效果融合。
+
+尝试了一下 /imagine 指令来处理两张图片。
+
+Prompt：https://s.mj.run/dllIvMVXWhg https://s.mj.run/PwW8DRNopYM Characters float on the surface, like a poster
+
+生成的图片画风开始离谱
+
+![](img/1c058b8ebe94c259ac6ab48e4d57bf0e.png)
+
+再退让一步，使用 图像 prompt + 文本 prompt 来尝试一下，保留主角，背景使用 AI 绘制。
+
+Prompt：https://s.mj.run/dllIvMVXWhg background Light fog, high mountains, floating islands with Chinese palaces, fairyland, realistic
+
+![](img/e39d372e7e9504ed0890c1134fc58ebe.png)
+
+作为一张影视海报，主角是不可或缺的关键元素。生成张海报时，可以调整背景，但主角的形象必须保留，更不能把主角给换了。所以，不借助 Photoshop 之类的处理工具，仅使用 Midjourney 生成海报，实战失败！如果想应用，可以参考前文网易的应用思路，使用多工具一起来制作。
+
+### 实战：LOGO 和 ICON 图标
+
+需求场景：为 APP 设计一个图标
+
+创意描述：一个牛头标识和图标
+
+Prompts 描述：Bull head, sense of technology, flat
+
+很有质感的标识很快就可以拥有
+
+![](img/1e954c7a153f85fd8268cac1662e4577.png)
+
+我们添加一些 ICON 领域的应用场景和绘画风格 prompt 描述，制作几个图标
+
+Prompt 描述：Square, rounded corners, mobile APP icon, bull head, sense of technology, three colors, simple, white background
+
+![](img/72195186fbec43dffd04af5b31ab1f69.png)
+
+![](img/728ce3f2a301b2db88107b8cf03c94ba.png)
+
+Prompt 描述：Square, rounded corners, mobile APP icon, bull head, sense of technology, three colors, vector style, simple, white background
+
+![](img/e9bbf945066e192fe5c27c15fe2056f8.png)
+
+尝试后发现，小狗图标似乎更萌一些。在上述 propmt 描述中，将“bull”替换为“dog”，重新生成了几组图标，供大家欣赏。
+
+![](img/548177d3366ef06c2213e3142b3b977f.png)
+
+![](img/611a998cee4fbd8b997ae96cee3375a6.png)
+
+![](img/d3920ddb33891bbc683bf5cc0d384608.png)
+
+![](img/5af7610a3308c7659bf83be47ac14ea2.png)
+
+综合以上实战案例分析，显然，要想在各个领域全方位的商业应用，Midjourney 仍需不断迭代升级。但它已经在绘画、插画、游戏、海报等诸多领域展现出潜在的应用价值。同时，也可以作为一种辅助工具，为设计师提供灵感参考，拓展创意思维，实现更加出色的设计成果。
+
+## AI 绘画的影响
+
+那么，AI 绘画将对哪些工作或者领域产生影响呢？在这里，影响不仅指取代现有工作，还可以是促进创新，甚至改变行业模式。
+
+### 首先，插画师
+
+观察 AI 生成的图像风格，我们可以明显地看到，插画风格的图像表现得更加出色。过去，一幅插画可能需要经过多天的沟通与创作，而如今借助 Midjourney 工具，仅需几分钟就可以生成大量的插画作品供我们优化和参考。
+
+### 设计师
+
+目前的 AI 创作很少能直接作为成品使用，后期仍需进行诸如矢量化、利用 Photoshop 或 Illustrator 进行微调等处理。但是，AI 创作能为设计师提供丰富的创作思路和灵感，并有助于提高整体的创作效率。
+
+### 版权和图库
+
+做为普通网民可能没感觉，做为公司经营者，他们多多少少都会遇到与设计创作相关的版权问题。要么要支付素材费用，要么要支付高昂的单张图片版权费用，或者被索赔数万元甚至更高的侵权费用。而 Midjourney 生成的图片，Midjourney 已经声明，付费用户创作的图片，版权都归创作用户所有。当然，图片内容是不能侵犯别人品牌和商标权益的。例如，你使用 Midjourney 创作一个仿制的迪士尼米老鼠卡通形象并用于商业用途，这是不允许的。迪士尼拥有 350 名全职律师随时准备维护其权益，全球最强法务绝非虚名。虽然2024 年，米老鼠版权就过 95 年的版权保护期了。
+
+![](img/33de8cbb515110858ac6d24c942e7516.png)
+
+你能Get到这幅漫画的梗吗？
+
+### 其他
+
+Midjourney 为各个领域提供丰富的创作思路和灵感，如摄影师。同时，它还可能影响现有的商业和教育运行模式，例如美术培训机构和艺术考生等，这种影响可能改变行业现状。
+
+## 结尾 综述
+
+我们可以说 AI 创作已经离我们很近，加上互联网上到处传播的制造焦虑的文章，比如：AI绘画要干掉某些岗位之类的，产生一些担忧是正常的。事实上，像 Midjourney AI这样的智能平台要想替代某些岗位，仍需不断迭代和发展。当前将其定位为辅助工具更为合适。
+
+---
+
+OK，今天的内容就暂且告一段落，本章内容较多，商业实战部分的讲解可能显得有些仓促，供参考。
+
+在下一章，我们将专注于创作一个作品，并迎接新的挑战：利用 Midjourney 绘制《三体2：黑暗森林》中的庄颜，这个角色是男主角罗辑对女性理想形象的完美构想，而作者刘慈欣对女性角色的描写一直饱受诟病，我们尝试使用 AI来破这个局。敬请期待！
+
+（完）
+
+# 五、结论及改进措施
+
+> 鼠标悬浮在空白行左侧，点击“**+**”插入“**高亮块**”。[了解更多](https://www.feishu.cn/hc/zh-CN/articles/360049067941?from=in_ccm_template_docs)
