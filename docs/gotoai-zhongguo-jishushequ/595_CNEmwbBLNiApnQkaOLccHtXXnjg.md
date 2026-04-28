@@ -1,0 +1,274 @@
+# 部署和微调工具
+
+> 来源：[https://gotoaiworld.feishu.cn/docx/WbEnd9GE9oA3OyxcBdhcph5Qntd](https://gotoaiworld.feishu.cn/docx/WbEnd9GE9oA3OyxcBdhcph5Qntd)
+
+# 大模型部署工具
+
+以下是大模型部署工具的分类清单，涵盖从本地轻量部署到企业级生产环境的全场景解决方案，结合最新技术动态和实践案例整理而成：
+
+### 一、轻量级本地部署工具（消费级硬件/边缘设备）
+
+#### 1. **Ollama**
+
++   **核心功能**：跨平台（Windows/Mac/Linux）命令行工具，支持一键部署开源模型（如Llama、Mistral），内置多GPU加速和动态批处理。
+
++   **优势**：安装仅需一条命令，兼容GGUF量化模型，支持通过Modelfile自定义模型配置，适合快速验证和边缘计算。
+
++   **典型场景**：开发者本地测试、低资源环境（如Jetson Nano）、敏感数据本地化处理。
+
++   **官网**：https://ollama.ai/
+
+#### 2. **LM Studio**
+
++   **核心功能**：图形化界面（GUI）工具，支持下载、管理和运行LLaMA、Mistral等模型，集成Hugging Face生态。
+
++   **优势**：直观的交互界面，支持模型参数实时调整、文档解析和多模型并行运行，适合非技术用户快速上手。
+
++   **典型场景**：企业内部知识问答、教育领域教学演示、个人开发者原型设计。
+
++   **官网**：https://lmstudio.ai/
+
+#### 3. **GPT4All**
+
++   **核心功能**：开源桌面应用，支持CPU/GPU推理，提供GUI和CLI两种模式，兼容多种量化模型（如LLaMA、Mistral）。
+
++   **优势**：轻量级设计（安装包<100MB），支持跨平台运行，适合在无GPU设备上进行基础文本生成。
+
++   **典型场景**：离线文档分析、本地写作助手、隐私敏感型对话服务。
+
++   **官网**：https://gpt4all.io/
+
+#### 4. **Llamafile**
+
++   **核心功能**：将模型和运行环境封装为单个可执行文件，支持Windows/Mac/Linux一键运行，兼容llama.cpp生态。
+
++   **优势**：无需依赖复杂环境配置，通过ModelScope命令行直接调用，支持动态加载不同精度模型（如Q2_K、Q5_0）。
+
++   **典型场景**：快速分发定制模型、跨平台演示、嵌入式设备部署。
+
++   **官网**：https://llamafile.com/
+
+### 二、高性能推理框架（GPU/服务器）
+
+#### 1. **vLLM**
+
++   **核心功能**：基于PagedAttention技术的高性能推理引擎，支持动态批处理、多模态输入（文本+图像）和分布式推理。
+
++   **优势**：吞吐量比原生Hugging Face高10-20倍，兼容OpenAI API，支持量化（INT4/INT8）和CUDA内核优化。
+
++   **典型场景**：高并发API服务（如客服机器人）、多模态内容生成（如图文摘要）、千亿参数模型部署。
+
++   **官网**：https://vllm.ai/
+
+#### 2. Text Generation Inference (TGI)
+
++   **核心功能**：Hugging Face官方推理框架，支持张量并行和多GPU扩展，原生集成Transformers生态。
+
++   **优势**：内置日志监控、A/B测试工具，支持流式输出和动态扩缩容，适合企业级运维。
+
++   **典型场景**：依赖Hugging Face模型的企业、多模型混合部署、需快速验证开源模型的场景。
+
++   **官网**：[h](https://github.com/huggingface/text-generation-inference)ttps://github.com/huggingface/text-generation-inference
+
+#### 3. **TensorRT-LLM**
+
++   **核心功能**：NVIDIA官方框架，基于TensorRT优化Transformer模型推理，支持INT4量化和稀疏性优化。
+
++   **优势**：在H100/A100 GPU上延迟比vLLM低30%-50%，适合对实时性要求极高的场景（如金融风控）。
+
++   **典型场景**：工业级低延迟服务、超大规模模型（如GPT-3 175B）、NVIDIA硬件专属部署。
+
++   **官网**：[https://developer.nvi](https://developer.nvidia.com/tensorrt-llm)dia.com/tensorrt-llm
+
+#### 4. **LMDeploy**
+
++   **核心功能**：轻量级多场景适配框架，支持INT4/INT8量化和CPU/GPU混合推理，优化国产模型（如Qwen、Baichuan）。
+
++   **优势**：显存占用比原生PyTorch低70%，可在RTX 3090上运行70B模型，适合边缘设备和国产芯片（如昇腾）。
+
++   **典型场景**：资源受限环境（如边缘服务器）、国产模型私有化部署、多模态任务混合执行。
+
++   **官网**：[https://github.c](https://github.com/InternLM/lmdeploy)om/InternLM/lmdeploy
+
+### **三、企业级API部署工具**
+
+#### 1. **FastChat**
+
++   **核心功能**：支持OpenAI兼容API的开源框架，可快速搭建私有ChatGPT服务，集成LoRA微调工具。
+
++   **优势**：提供多模型管理、负载均衡和动态扩缩容，适合构建高可用对话系统。
+
++   **典型场景**：企业客服机器人、智能写作助手、跨部门API服务。
+
++   **官网**：https://github.com/lm-sys/FastChat
+
+#### 2. **OpenWebUI**
+
++   **核心功能**：本地运行的Web界面，支持GPT-4、LLaMA 2等模型，提供可视化参数调整和对话历史管理。
+
++   **优势**：无需编程基础即可部署，支持插件扩展（如代码解释、数据分析），适合业务人员快速验证模型。
+
++   **典型场景**：企业内部原型设计、非技术团队模型测试、定制化报告生成。
+
++   **官网**：[https://github.com/](https://github.com/open-webui/openwebui)open-webui/openwebui
+
+#### 3. **Ray Serve**
+
++   **核心功能**：分布式模型服务框架，支持多模型并行推理和弹性扩缩容，兼容PyTorch/TensorFlow。
+
++   **优势**：与Ray生态无缝集成，适合复杂AI工作流（如多模型串联、数据预处理），支持跨节点通信优化。
+
++   **典型场景**：推荐系统、内容审核流水线、跨模态任务集成。
+
++   **官网**：[https://docs.ray.io/en/lat](https://docs.ray.io/en/latest/serve/index.html)est/serve/index.html
+
+### **四、云服务平台部署方案**
+
+#### 1. **阿里云PAI平台**
+
++   **核心功能**：一站式模型部署服务，支持从Model Gallery选择预训练模型，提供自动调优和弹性扩缩容。
+
++   **优势**：集成SFT/DPO微调工具，支持多模态模型（如通义万相），提供可视化监控和日志分析。
+
++   **典型场景**：企业级生产环境、大规模数据处理、跨部门协作开发。
+
++   **官网**：[https://www.aliyun.com](https://www.aliyun.com/product/bigdata/pai)/product/bigdata/pai
+
+#### 2. **腾讯云TI-ONE**
+
++   **核心功能**：支持自定义模型导入和在线服务部署，提供量化加速（如Int8/FP8）和多实例管理。
+
++   **优势**：兼容Hugging Face模型，支持通过API调用和控制台界面管理，适合混合云架构。
+
++   **典型场景**：金融风控、医疗影像分析、高并发API服务。
+
++   **官网**：[https://cloud.tencen](https://cloud.tencent.com/product/ti-one)t.com/product/ti-one
+
+#### 3. **AWS SageMaker**
+
++   **核心功能**：全托管模型部署服务，支持端到端流程（训练-部署-监控），提供多节点分布式推理。
+
++   **优势**：与AWS生态深度集成（如Lambda、S3），支持自动扩缩容和A/B测试，适合全球化业务。
+
++   **典型场景**：跨国公司多区域部署、高可用AI中台、Serverless推理服务。
+
++   **官网**：https://aws.amazon.com/sagemaker/
+
+### **五、多模态与浏览器端部署工具**
+
+#### 1. **WebLLM**
+
++   **核心功能**：基于WebGPU的浏览器端推理引擎，支持Llama 3等模型直接在浏览器运行，无需服务器。
+
++   **优势**：端侧计算保障数据隐私，支持流式响应和结构化输出，适合Web应用集成。
+
++   **典型场景**：在线文档助手、嵌入式对话组件、低延迟交互界面。
+
++   **官网**：https://webllm.ai/
+
+#### 2. **Llamafile**
+
++   **核心功能**：将模型和运行环境封装为单个可执行文件，支持Windows/Mac/Linux一键运行，兼容llama.cpp API。
+
++   **优势**：无需安装依赖，通过ModelScope命令行直接调用，支持动态加载不同精度模型（如Q2_K）。
+
++   **典型场景**：快速分发定制模型、跨平台演示、嵌入式设备部署。
+
++   **官网**：https://llamafile.com/
+
+#### 3. **ChatTTS**
+
++   **核心功能**：多语言语音合成工具，支持细粒度控制（如笑声、停顿），可与大模型集成实现语音交互。
+
++   **优势**：提供自然语音输出，支持中英日等多语言，适合教育、娱乐等场景。
+
++   **典型场景**：智能客服语音交互、有声内容生成、多模态教学工具。
+
++   **官网**：https://github.com/coqui-ai/TTS
+
+### **六、模型压缩与量化工具**
+
+#### 1. **GPTQ**
+
++   **核心功能**：4bit/8bit量化工具，支持在微调过程中动态压缩模型，减少显存占用70%以上。
+
++   **优势**：与vLLM、LLaMA.cpp深度集成，量化后模型精度损失可忽略，适合消费级GPU。
+
++   **典型场景**：RTX 4090部署70B模型、低资源环境训练。
+
++   **官网**：https://github.com/IST-DASLab/gptq
+
+#### 2. **bitsandbytes**
+
++   **核心功能**：PyTorch扩展库，支持FP16/BF16混合精度训练和INT8量化，兼容LoRA微调。
+
++   **优势**：零代码迁移，可直接在现有训练脚本中启用，适合快速实验。
+
++   **典型场景**：学术研究、企业定制模型开发、边缘设备适配。
+
++   **官网**：[https://github.com/TimD](https://github.com/TimDettmers/bitsandbytes)ettmers/bitsandbytes
+
+### **七、监控与运维工具**
+
+#### 1. Prometheus + Grafana
+
++   **核心功能**：开源监控系统，实时采集模型服务的延迟、吞吐量、显存使用等指标，生成可视化看板。
+
++   **优势**：支持自定义报警规则，与Kubernetes集成实现自动扩缩容，适合大规模集群。
+
++   **典型场景**：生产环境性能监控、异常流量预警、资源优化。
+
++   **官网**：https://prometheus.io/ | https://grafana.com/
+
+#### 2. Weights & Biases (W&B)
+
++   **核心功能**：AI实验跟踪平台，支持模型部署后的实时日志分析、数据漂移检测和版本对比。
+
++   **优势**：提供端到端实验管理，适合团队协作和长期模型迭代。
+
++   **典型场景**：模型效果评估、A/B测试、生产环境性能基线对比。
+
++   **官网**：https://wandb.ai/
+
+### **八、容器化与编排工具**
+
+#### 1. Docker + Kubernetes
+
++   **核心功能**：容器化部署模型服务，支持多实例管理和负载均衡，提供弹性扩缩容。
+
++   **优势**：标准化部署流程，与云服务平台无缝集成，适合微服务架构。
+
++   **典型场景**：大规模分布式推理、跨环境一致性部署、蓝绿发布。
+
++   **官网**：https://www.docker.com/ | https://kubernetes.io/
+
+#### 2. NVIDIA Triton Inference Server
+
++   **核心功能**：高性能推理服务器，支持多模型格式（ONNX、TensorRT）和硬件加速（GPU/TPU）。
+
++   **优势**：提供动态批处理和模型版本管理，适合复杂AI工作流（如多模型串联）。
+
++   **典型场景**：自动驾驶实时决策、医疗影像分析流水线、高并发推荐系统。
+
++   **官网**：[h](https://developer.nvidia.com/nvidia-triton-inference-server)ttps://developer.nvidia.com/nvidia-triton-inference-server
+
+### **工具选型建议**
+
+| **场景** | **推荐工具** | **核心优势** |
+| --- | --- | --- |
+| **个人开发者/本地测试** | Ollama、LM Studio、GPT4All | 零配置、图形化界面、消费级硬件适配 |
+| **高性能API服务** | vLLM、TensorRT-LLM、TGI | 高吞吐量、低延迟、多GPU扩展 |
+| **企业级生产环境** | 阿里云PAI、腾讯云TI-ONE、AWS SageMaker | 全托管、自动扩缩容、多模态支持 |
+| **边缘设备/低资源环境** | LMDeploy、Llamafile、GPTQ | 量化压缩、单文件部署、跨平台兼容 |
+| **多模态应用** | WebLLM、ChatTTS、Llamafile | 浏览器端运行、语音合成、多平台集成 |
+| **模型压缩与微调** | GPTQ、bitsandbytes、DeepSpeed | 显存优化、零代码迁移、分布式训练 |
+| **监控与运维** | Prometheus + Grafana、Weights &amp; Biases | 实时指标、可视化看板、实验跟踪 |
+| **容器化部署** | Docker + Kubernetes、NVIDIA Triton Inference Server | 标准化流程、弹性扩缩容、多模型管理 |
+
+### **总结**
+
+大模型部署工具的选择需综合考虑**硬件条件**（如是否有GPU）、**场景需求**（实时性/多模态）、**开发成本**（代码迁移难度）和**运维能力**（集群管理经验）。轻量级工具适合快速验证，高性能框架适合生产环境，云服务平台降低了企业级部署门槛，而量化和容器化工具则是优化资源利用率的关键。通过组合使用上述工具，可构建从训练到推理、从本地到云端的全生命周期解决方案。
+
+# 大模型微调工具
+
+![](img/6f73fb0fe2476b7a952ac22ac637af00.png)

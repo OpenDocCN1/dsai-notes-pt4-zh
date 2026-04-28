@@ -28,6 +28,7 @@
 +   [泛函的个人知识库](docs/fanhan-de-geren-zhishiku/README.md)
 +   [废才俱乐部首页](docs/feicai-julebu-de-ai-xuetang/README.md)
 +   [疯狂AI知识库介绍](docs/fengkuang-aigc-zhishiku/README.md)
++   [大模型技术社区丨赋范空间](docs/fufankongjian/README.md)
 +   [GeekAGI 知识库 · 学习指南](docs/geek-agi-zhishiku/README.md)
 +   [河林的成长指南](docs/helinde-chengzhang-zhinan/README.md)
 +   [胡扯知识库](docs/huche-zhishiku/README.md)

@@ -1,0 +1,275 @@
+# Blog
+
+> 来源：[https://gotoaiworld.feishu.cn/docx/DPBEdyIrpoVghYxGquMclsE3nub](https://gotoaiworld.feishu.cn/docx/DPBEdyIrpoVghYxGquMclsE3nub)
+
+# 一、全面剖析 MCP/RAG/Agent/Cache/Fine-tuning/Prompt/GraphRAG 等核心技术
+
+https://blog.dailydoseofds.com/p/4-stages-of-training-llms-from-scratch
+
+https://mp.weixin.qq.com/s/ZWdr_cMH_tEhSMUF1b6hHQ
+
+https://blog.dailydoseofds.com/p/12-mcp-rag-and-agents-cheat-sheets
+
+**本文通过 12 张动图全面剖析 MCP、RAG、Age**nt、Cache、Fine-tuning、Prompt、GraphRAG 等 AI 大模型应用核心技术。
+
+![](img/aa7f1bc082db2f012876f6bf5ea14c60.png)
+
+下文我们详细剖析之。
+
+# —1—
+
+# 12张动图全面剖析 AI 大模型应用核心技术
+
+1、函数调用和 MCP 在 LLM 中的应用
+
+在 MCP 流行之前，AI 大模型应用工作流程依赖于传统的函数调用来访问工具。
+
+现在，MCP（模型上下文协议）正在改变开发者为 AI 智能体构建工具访问和编排的方式。
+
+![](img/8d07520ab581fe83c601b6db92ec0a36.png)
+
+## 2、从头开始训练 LLM 的四个阶段
+
+这张图涵盖了从零开始构建 LLM 并将其应用于现实世界的四个阶段。
+
+这些阶段包括：
+
++   预训练
+
++   指令微调
+
++   偏好微调
+
++   推理微调
+
+![](img/39bdbb1f87c04d8c4134a1f54f5b89b2.png)
+
+![](img/5b36bec513551f016f400a5c0ff6ea2d.png)
+
+## 3、LLM 中的三种推理提示词技巧
+
+### 使 LLM 应用如此强大的不仅仅是它们准确预测下一个 token 的能力，还有它们通过推理得出答案的能力。
+
+这张图涵盖了三种流行的提示词技巧，帮助 LLM 在回答之前更清晰地思考。
+
+## 4、使用其他 LLM 训练 LLM（蒸馏）
+
+LLM 不仅从原始文本中学习；它们也相互学习：
+
++   Llama 4 Scout 和 Maverick 是使用 Llama 4 Behemoth 训练的。
+
++   Gemma 2 和 3 是使用谷歌专有的 Gemini 训练的。
+
++   蒸馏帮助我们做到这一点，下面的图描绘了三种流行的技术。
+
+## **5、LLM 中的监督与强化微调**
+
+RFT 让我们可以将任何开源 LLM 转变为推理强国，而无需任何标记数据。
+
+这张图涵盖了监督微调和强化微调之间的区别。
+
+![](img/4ebbf6c99943fb0d9c5b15545f4c3644.png)
+
+## 6、Transformer 与专家混合模型
+
+专家混合模型（MoE）是一种流行的架构，它使用不同的“专家”来改进 Transformer 模型。
+
+专家就像前馈网络，但比传统 Transformer 模型中的网络小。
+
+## 7、传统 RAG 与智能体 RAG
+
+简单的 RAG 检索一次并生成一次，它不能动态搜索更多信息，也不能通过复杂查询进行推理。
+
+此外，适应性很小。LLM 无法根据手头的问题修改其策略。
+
+智能体 RAG 解决了这个问题。
+
+8、5 种 AI 智能体设计模式
+
+AI 智能体行为允许 LLM 通过自我评估、规划和协作来完善其输出！
+
+这张图描绘了构建 AI 智能体时采用的 5 种最流行设计模式。
+
+![](img/de847ad67b602458234f3bc705db2e89.png)
+
+9、AI 智能体系统的 5 个级别
+
+AI 智能体系统不仅仅是生成文本；它们做出决策、调用函数，甚至运行自治工作流程。
+
+这张图解释了 AI 智能体的 5 个级别——从简单的响应者到完全自治的 AI 智能体。
+
+![](img/1771c472322d6920192d1df441818973.png)
+
+10、传统 RAG 与 HyDE
+
+传统 RAG 系统的一个关键问题是，问题与答案在语义上不相似。因此，在检索过程中，由于余弦相似度高于实际包含答案的文档，会检索到几个不相关的块。
+
+HyDE （Hypothetical Document Embeddings）假设文档嵌入技术通过首先生成一个假设性的回答来解决这个问题。
+
+![](img/3cabd235e83cfed331b491b246c72881.png)
+
+**11、RAG 与图 RAG**
+
+回答需要全局上下文的问题对于传统 RAG 来说很困难，因为它只检索最相关的前 k 块。
+
+图 RAG 通过图结构使其更加健壮，这有助于它构建长距离依赖关系，而不是 RAG 中发生的局部文本分组。
+
+![](img/3ab3cab58910c0c34669a5d16a53f648.png)
+
+**12、KV 缓存**
+
+KV 缓存是一种用于加速 LLM 推理的技术。
+
+简而言之，我们不是冗余地计算所有上下文 tokens 的 KV 向量，而是缓存它们。这在推理过程中节省了时间。
+
+Bright Data has laun[**ched a free**](https://brdta.com/dailydoseofds) tier of The Web MCP, the first and only MCP designed to give LLMs and autonomous agents unblocked, real-time access to the web.
+
+Now you can: /scrape /search /crawl /navigate The live web with 5,000 free monthly credits.
+
+Get 5000 free Web MCP credits
+
+Built for developers and researchers working with open-source tools:
+
+# Key features:
+
++   Integrates seamlessly with your workflow, integrates with LangChain, AutoGPT, OpenAgents, and custom stacks.
+
++   Enables agents to dynamically expand their context with live web data
+
++   All major LLMs and IDEs are supported (locally hosted, SSE, and Streamable HTTP)
+
++   No setup fees, no credit card required.
+
+Whether you're building agentic workflows, RAG pipelines, or real-time assistants, The Web MCP is the protocol layer that connects your models to the open web.
+
+[**S**](https://brdta.com/dailydoseofds)tart building with 5,000 free monthly credits here →
+
+Thanks to Bright Data for partnering today!
+
+---
+
+### 12 MCP, RAG, and Agents Cheat Sheets for AI Engineers
+
+Here’s a recap of several visual summaries posted in the Daily Dose of Data Science newsletter.
+
+#### 1) Function calling & MCP for LLMs:
+
+![](img/9acc2b40b4418f0c67efdb0f36a87a2a.png)
+
++   Before MCPs became popular, AI workflows relied on traditional Function Calling for tool access.
+
++   Now, MCP (Model Context Protocol) is introducing a shift in how developers structure tool access and orchestration for Agents.
+
++   Learn more here →
+
+#### [**2) 4 stages of traini**](https://www.dailydoseofds.com/p/4-stages-of-training-llms-from-scratch/)ng LLMs from scratch
+
+![](img/9eae70a5cfe0459f6afd7958c7347411.png)
+
++   This visual covers the 4 stages of building LLMs from scratch that are used to make them applicable for real-world use cases.
+
++   These are:
+
++   Pre-training
+
++   Instruction fine-tuning
+
++   Preference fine-tuning
+
++   Reasoning fine-tuning
+
++   Learn more here →
+
+#### [**3) 3 prompting techniques f**](https://www.dailydoseofds.com/p/3-prompting-techniques-for-reasoning-in-llms/)or reasoning in LLMs
+
++   A large part of what makes LLM apps so powerful isn't just their ability to predict the next token accurately, but their ability to reason through it.
+
++   This visual covers three popular prompting techniques that help LLMs think more clearly before they answer.
+
++   Learn more here →
+
+![](img/c0b37f95b51826b3ceda9e140febd303.png)
+
+#### 4) Train LLMs using other LLMs
+
++   LLMs don't just learn from raw text; they also learn from each other:
+
++   Llama 4 Scout and Maverick were trained using Llama 4 Behemoth.
+
++   Gemma 2 and 3 were trained using Google's proprietary Gemini.
+
++   Distillation helps us do so, and the visual below depicts three popular techniques.
+
++   Learn more here →
+
+#### [**5) Supervised & Reinforcement**](https://www.dailydoseofds.com/p/supervised-reinforcement-fine-tuning-in-llms/) fine-tuning in LLMs
+
+![](img/b4aa779c092b280b1bf343d65ff9bb7f.png)
+
++   RFT lets us transform any open-source LLM into a reasoning powerhouse without any labeled data.
+
++   This visual covers the differences between supervised fine-tuning and reinforcement fine-tuning.
+
++   Learn more here →
+
+#### [**6) Transformer vs**](https://www.dailydoseofds.com/p/transformer-vs-mixture-of-experts-in-llms/). Mixture of Experts
+
++   Mixture of Experts (MoE) is a popular architecture that uses different "experts" to improve Transformer models.
+
++   Experts are like which are feed-forward networks but smaller compared to those in traditional Transformer models.
+
++   Learn more here →
+
+#### 7) RAG vs Agentic RAG
+
++   Naive RAG retrieves once and generates once, it cannot dynamically search for more info, and it cannot reason through complex queries.
+
++   Also, there's little adaptability. The LLM can't modify its strategy based on the problem at hand.
+
++   Agentic RAG solves this.
+
++   Learn more here →
+
+#### 8) 5 Agentic AI design patterns
+
+![](img/6cbca9ead1476662fe32e4aea3b186de.png)
+
++   Agentic behaviors allow LLMs to refine their output by incorporating self-evaluation, planning, and collaboration!
+
++   This visual depicts the 5 most popular design patterns employed in building AI agents.
+
++   Learn more here →
+
+#### 9) 5 levels of Agentic AI systems
+
+![](img/ea1650396ae068e7cc9dc3bcdba0490e.png)
+
++   Agentic systems don't just generate text; they make decisions, call functions, and even run autonomous workflows.
+
++   The visual explains 5 levels of AI agency—from simple responders to fully autonomous agents.
+
++   Learn more here →
+
+#### 10) Traditional RAG vs HyDE
+
++   One critical problem with the traditional RAG system is that questions are not semantically similar to their answers. As a result, several irrelevant chunks get retrieved during the retrieval due to a higher cosine similarity than the documents actually containing the answer.
+
++   HyDE solves this by generating a hypothetical response first.
+
++   Learn more here →
+
+#### 11) RAG vs Graph RAG
+
++   Answering questions that need global context is difficult with traditional RAG since it only retrieves the top-k relevant chunks.
+
++   Graph RAG makes it more robust with graph structures, which helps it build long-range dependencies instead of local text grouping that happens in RAG.
+
++   Learn more here →
+
+#### [**12) KV caching**](https://www.dailydoseofds.com/p/kv-caching-in-llms-explained-visually/)
+
++   KV caching is a technique used to speed up LLM inference.
+
++   In a gist, instead of redundantly computing KV vectors of all context tokens, we cache them. This saves time during inference.
+
++   Learn more here →
