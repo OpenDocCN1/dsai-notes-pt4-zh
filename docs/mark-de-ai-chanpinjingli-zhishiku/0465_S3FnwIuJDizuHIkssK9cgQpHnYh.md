@@ -1,0 +1,126 @@
+# 工具调用语法
+
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/S3ohd9YlKoOX2Bxs9omc4MNAnLb](https://qqs7y1hozd1.feishu.cn/docx/S3ohd9YlKoOX2Bxs9omc4MNAnLb)
+
+## 一、以 get_current_time 函数为例
+
+工具定义：
+
+```
+**from** datetime **import**** da**tetime
+def get_current_time**():
+  **  &quot;&quot;&quot;Returns the current time as a string&quot;&quot;&quot;return datetime.now().strftime(&quot;%H:%M:%S&quot;)
+```
+
+使用 AI Suite 库调用工具的基本代码框架：
+
+```
+**import** aisuite **as** ai
+
+client = ai.Client()
+
+response = client.chat.completions.create(
+    model=&quot;openai:gpt-4o&quot;,     # 指定使用的模型
+    messages=messages,          # 传递给 LLM 的消息数组
+    tools=[get_current_time],   # 定义 LLM 可以访问的工具列表
+    max_turns=5                 # 设置工具调用的最大轮次，防止无限循环
+)
+```
+
+解析：
+
++   model: 选择要使用的 LLM，此处为 OpenAI 的 gpt-4o。
+
++   messages: 传递给模型的对话历史或提示信息。
+
++   tools: 这是最核心的部分。只需将你希望模型能访问的函数对象（如 get_current_time）放入一个列表中即可。
+
++   max_turns: 设置一个上限，防止模型在工具调用上陷入无限循环。通常设为5即可，除非你的任务异常复杂。
+
+![](img/bf71095e7284db83e42bc67bcb61bee9.png)
+
+---
+
+**工具调用的本质**：
+
++   LLM（大语言模型）本身不会直接调用工具。
+
++   LLM 会“请求”开发者去调用某个工具，开发者负责执行该工具并将其结果返回给 LLM。
+
++   在开发社区中，人们常简化说“LLM 调用了工具”，但这在技术上并不准确，仅是一种便捷的说法。
+
++   **AI Suite 库**：
+
++   这是一个开源库，由 Andrew Ng 及其团队开发。
+
++   它提供了一种统一、简便的语法来调用多个不同的 LLM 提供商（如 OpenAI）。
+
++   该库的核心功能之一是自动处理工具描述，极大简化了开发流程。
+
+---
+
+## 二、AI Suite 如何自动化工具描述
+
+AI Suite 的强大之处在于其自动化能力，它能将你的 Python 函数无缝转换为 LLM 可理解的格式。 当你将 get_current_time 函数传入 tools 参数后，AI Suite 会在后台自动为其生成一个 JSON Schema。这个 Schema 是传递给 LLM 的真实数据结构。
+
+```
+{&quot;type&quot;: &quot;function&quot;,&quot;function&quot;: {&quot;name&quot;: &quot;get_current_time&quot;,&quot;description&quot;: &quot;Returns the current time as a string&quot;,&quot;parameters&quot;: {}}
+```
+
++   自动生成过程：
+
++   函数名 (name): 直接提取 Python 函数的名称。
+
++   函数描述 (description): 自动从函数的 docstring 中提取。
+
++   参数 (parameters): 对于无参函数，此部分为空对象 {}。
+
+![](img/dce17dad13e29592d528de777a1e1ed1.png)
+
+---
+
+## 三、AI Suite 处理带参数的函数
+
+工具定义：
+
+```
+**from** datetime **import**** dat**etime
+from** zonei****nfo** impo**rt Zon**eInfo
+
+def get_current_time(timezone):
+    &quot;&quot;&quot;Returns current time for the given time zone&quot;&quot;&quot;
+    timezone = ZoneInfo(timezone)
+    return datetime.now(timezone).strftime(&quot;%H:%M:%S&quot;)
+```
+
+参数解析：
+
+```
+{&quot;type&quot;: &quot;function&quot;,&quot;function&quot;: {&quot;name&quot;: &quot;get_current_time&quot;,&quot;description&quot;: &quot;Returns current time for the given time zone&quot;,&quot;parameters&quot;: {&quot;timezone&quot;: {&quot;type&quot;: &quot;string&quot;,&quot;description&quot;: &quot;The IANA time zone string, e.g., &#x27;America/New_York&#x27; or &#x27;Pacific/Auckland&#x27;.&quot;}}}}
+```
+
+AI Suite 不仅能提取函数名和描述，还能识别出 timezone 参数，并将其类型（string）和详细说明（来自 docstring）也一并纳入 Schema。这样，当 LLM 决定调用此函数时，它就知道需要提供一个类似 'America/New_York' 的字符串作为参数。
+
+![](img/7b27c7f52fb76ea4da617b47abcab8d9.png)
+
+**工作流程：**
+
+1.  开发者定义函数： 编写一个带有清晰 docstring 的 Python 函数。
+
+1.  AI Suite 自动化封装： 在调用 client.chat.completions.create 时，AI Suite 自动读取函数信息，生成标准的 JSON Schema。
+
+1.  LLM 接收并决策： LLM 接收到包含所有可用工具描述的 Schema。它会根据当前的对话上下文和用户需求，决定是否需要调用某个工具。
+
+1.  LLM 发出请求： 如果需要，LLM 会生成一个包含工具名称和所需参数的请求。
+
+1.  开发者执行工具： AI Suite 的客户端接收到 LLM 的请求后，会自动调用开发者定义的对应函数，并传入指定的参数。
+
+1.  结果返回与迭代： 函数执行的结果会被送回 LLM，LLM 可以基于此新信息继续思考，甚至发起下一次工具调用。整个过程最多可重复 max_turns 次。
+
+1.  最终响应： 当所有轮次结束或 LLM 决定不再调用工具时，它会生成最终的文本响应返回给用户。
+
+**代码执行工具：**
+
++   终极灵活性： 与其他工具不同，代码执行工具赋予了 LLM 几乎无限的可能性。因为代码本身可以完成任何计算、数据处理或外部交互任务。
+
++   开发者赋能： 通过提供这个工具，开发者实际上是在告诉 LLM：“你可以让我为你执行任何你认为必要的代码。”这极大地扩展了 LLM 的能力和应用场景。

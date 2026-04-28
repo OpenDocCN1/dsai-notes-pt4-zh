@@ -54,6 +54,7 @@
 +   [Leon's Notes](docs/leons-notes/README.md)
 +   [林逸的第二大脑](docs/linyi-dierdanao/README.md)
 +   [李又懂的百宝箱](docs/liyoudong-de-baibaoxiang/README.md)
++   [Mark的AI产品经理知识库](docs/mark-de-ai-chanpinjingli-zhishiku/README.md)
 +   [MetaGPT 开源社区](docs/metagpt-kaiyuan-shequ/README.md)
 +   [OPEN 1+X AI通识课](docs/open-1x-ai-tongshike/README.md)
 +   [苹果爷爷【AI知识库】首页](docs/pingguo-yeye/README.md)

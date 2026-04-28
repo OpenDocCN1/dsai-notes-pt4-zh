@@ -1,0 +1,20 @@
+# requirements.txt
+
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/NoBqdckjoovZS7xQiq3c8VCfnre](https://qqs7y1hozd1.feishu.cn/docx/NoBqdckjoovZS7xQiq3c8VCfnre)
+
+```
+langchain==0.3.12
+langchain-community==0.3.12
+langchain-core==0.3.25
+langchain-cohere==0.3.2
+langchain-qdrant==0.2.0
+cohere==5.11.4
+qdrant-client==1.12.1
+duckduckgo-search==6.4.1
+streamlit==1.40.2
+tenacity==9.0.0
+typing-extensions==4.12.2
+pydantic==2.9.2
+pydantic-core==2.23.4
+langgraph==0.2.53
+```

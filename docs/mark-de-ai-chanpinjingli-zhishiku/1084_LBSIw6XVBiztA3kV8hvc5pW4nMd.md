@@ -1,0 +1,217 @@
+# Code
+
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/NpPzdnEtXoZWjsxJD5Acb1XBnKh](https://qqs7y1hozd1.feishu.cn/docx/NpPzdnEtXoZWjsxJD5Acb1XBnKh)
+
+```
+import os
+import sys
+import json
+import importlib.util
+from typing import Dict, Any
+
+print(&quot;CWD:&quot;, os.getcwd(), file=sys.stderr)
+print(&quot;FILES IN CWD:&quot;, os.listdir(), file=sys.stderr)
+print(&quot;TOOLS_DIR:&quot;, os.path.join(os.path.dirname(__file__), &#x27;tools&#x27;), file=sys.stderr)
+
+TOOLS_DIR = os.path.join(os.path.dirname(__file__), &#x27;tools&#x27;)
+
+class ToolManager:
+    def __init__(self, tools_dir: str):
+        self.tools_dir = tools_dir
+        self.commands = {}  # command_name -&gt; (tool_name, function)
+        self.load_tools()
+
+    def load_tools(self):
+        if not os.path.isdir(self.tools_dir):
+            return
+        for tool_name in os.listdir(self.tools_dir):
+            tool_path = os.path.join(self.tools_dir, tool_name)
+            if not os.path.isdir(tool_path):
+                continue
+            mcp_json_path = os.path.join(tool_path, &#x27;mcp.json&#x27;)
+            if not os.path.isfile(mcp_json_path):
+                continue
+            with open(mcp_json_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+                meta = json.load(f)
+            entry_point = meta.get(&#x27;entry_point&#x27;)
+            if not entry_point:
+                continue
+            entry_path = os.path.join(tool_path, entry_point)
+            if not os.path.isfile(entry_path):
+                continue
+            # Dynamically import the tool&#x27;s entry point
+            spec = importlib.util.spec_from_file_location(f&quot;{tool_name}_module&quot;, entry_path)
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+            # Register commands
+            for cmd, cmd_meta in meta.get(&#x27;commands&#x27;, {}).items():
+                if hasattr(module, cmd):
+                    self.commands[cmd] = (tool_name, getattr(module, cmd))
+
+    def dispatch(self, method: str, params: Dict[str, Any]):
+        if method not in self.commands:
+            raise Exception(f&quot;Unknown command: {method}&quot;)
+        tool_name, func = self.commands[method]
+        return func(params)
+
+def jsonrpc_response(result, id):
+    response = {
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;id&quot;: id
+    }
+    if result is not None:
+        response[&quot;result&quot;] = result
+    return json.dumps(response)
+
+def jsonrpc_error(message, id=None, code=-32603):
+    response = {
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;error&quot;: {
+            &quot;code&quot;: code,
+            &quot;message&quot;: message
+        }
+    }
+    # Only include id if it&#x27;s not None (for notifications, id can be None)
+    if id is not None:
+        response[&quot;id&quot;] = id
+    return json.dumps(response)
+
+def handle_initialize(params):
+    return {
+        &quot;protocolVersion&quot;: &quot;2025-06-18&quot;,
+        &quot;capabilities&quot;: {
+            &quot;tools&quot;: {},
+            &quot;resources&quot;: {},
+            &quot;prompts&quot;: {}
+        },
+        &quot;serverInfo&quot;: {
+            &quot;name&quot;: &quot;native-mcp-server&quot;,
+            &quot;version&quot;: &quot;1.0.0&quot;
+        }
+    }
+
+def handle_initialized(params):
+    # Notification - no response needed
+    return None
+
+def handle_list_resources(params):
+    return {&quot;resources&quot;: []}
+
+def handle_list_prompts(params):
+    return {&quot;prompts&quot;: []}
+
+def handle_list_tools(params):
+    tool_manager = ToolManager(TOOLS_DIR)
+    tools = []
+    for cmd, (tool_name, func) in tool_manager.commands.items():
+        # Load the mcp.json to get command metadata
+        tool_path = os.path.join(tool_manager.tools_dir, tool_name)
+        mcp_json_path = os.path.join(tool_path, &#x27;mcp.json&#x27;)
+        with open(mcp_json_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+            meta = json.load(f)
+        
+        cmd_meta = meta.get(&#x27;commands&#x27;, {}).get(cmd, {})
+        tool_info = {
+            &quot;name&quot;: cmd,
+            &quot;description&quot;: cmd_meta.get(&#x27;description&#x27;, f&#x27;Tool: {cmd}&#x27;),
+            &quot;inputSchema&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;properties&quot;: cmd_meta.get(&#x27;params&#x27;, {}),
+                &quot;required&quot;: list(cmd_meta.get(&#x27;params&#x27;, {}).keys())
+            }
+        }
+        tools.append(tool_info)
+    
+    return {&quot;tools&quot;: tools}
+
+def handle_call_tool(params):
+    tool_manager = ToolManager(TOOLS_DIR)
+    tool_name = params.get(&#x27;name&#x27;)
+    arguments = params.get(&#x27;arguments&#x27;, {})
+    
+    if tool_name not in tool_manager.commands:
+        raise Exception(f&quot;Unknown tool: {tool_name}&quot;)
+    
+    result = tool_manager.dispatch(tool_name, arguments)
+    return {
+        &quot;content&quot;: [
+            {
+                &quot;type&quot;: &quot;text&quot;,
+                &quot;text&quot;: json.dumps(result, indent=2)
+            }
+        ]
+    }
+
+def main():
+    tool_manager = ToolManager(TOOLS_DIR)
+    
+    # MCP protocol handlers
+    mcp_handlers = {
+        &quot;initialize&quot;: handle_initialize,
+        &quot;notifications/initialized&quot;: handle_initialized,
+        &quot;tools/list&quot;: handle_list_tools,
+        &quot;tools/call&quot;: handle_call_tool,
+        &quot;resources/list&quot;: handle_list_resources,
+        &quot;prompts/list&quot;: handle_list_prompts
+    }
+    
+    while True:
+        try:
+            line = sys.stdin.readline()
+            if not line:
+                break
+            
+            # Skip empty lines
+            line = line.strip()
+            if not line:
+                continue
+                
+            req = json.loads(line)
+            method = req.get(&#x27;method&#x27;)
+            params = req.get(&#x27;params&#x27;, {})
+            id = req.get(&#x27;id&#x27;)
+            
+            # Handle notifications (no id field, no response expected)
+            if id is None and method:
+                if method in mcp_handlers:
+                    try:
+                        mcp_handlers[method](params)
+                    except Exception as e:
+                        # Notifications don&#x27;t send error responses
+                        print(f&quot;Error in notification {method}: {e}&quot;, file=sys.stderr)
+                continue
+            
+            # Handle requests (have id field, response expected)
+            if not method:
+                sys.stdout.write(jsonrpc_error(&quot;Missing method&quot;, id) + &#x27;\n&#x27;)
+                sys.stdout.flush()
+                continue
+            
+            try:
+                # Handle MCP protocol methods
+                if method in mcp_handlers:
+                    result = mcp_handlers[method](params)
+                    if result is not None:  # Only send response if not a notification
+                        sys.stdout.write(jsonrpc_response(result, id) + &#x27;\n&#x27;)
+                        sys.stdout.flush()
+                else:
+                    # Try to dispatch to tools (for backward compatibility)
+                    result = tool_manager.dispatch(method, params)
+                    sys.stdout.write(jsonrpc_response(result, id) + &#x27;\n&#x27;)
+                    sys.stdout.flush()
+                
+            except Exception as e:
+                sys.stdout.write(jsonrpc_error(str(e), id) + &#x27;\n&#x27;)
+                sys.stdout.flush()
+        except json.JSONDecodeError as e:
+            print(f&quot;JSON decode error: {e}&quot;, file=sys.stderr)
+            sys.stdout.write(jsonrpc_error(f&quot;Invalid JSON: {e}&quot;, None) + &#x27;\n&#x27;)
+            sys.stdout.flush()
+        except Exception as e:
+            print(f&quot;Server error: {e}&quot;, file=sys.stderr)
+            sys.stdout.write(jsonrpc_error(f&quot;Server error: {e}&quot;, None) + &#x27;\n&#x27;)
+            sys.stdout.flush()
+
+if __name__ == &quot;__main__&quot;:
+    main() 
+```
