@@ -62,6 +62,7 @@
 +   [轻松玩转AIGC-文森策的AI知识库](docs/qingsong-wanzhuan-aigc/README.md)
 +   [人人都是AI工程师](docs/renren-doushi-ai-gongchengshi/README.md)
 +   [人人都是超级个体](docs/renren-doushi-chaoji-geti/README.md)
++   [RTE 开发者日报](docs/rte-kaifazhe-ribao/README.md)
 +   [设计师 Lena 的 AIGC 知识库](docs/shejishi-lena-de-aigc-zhishiku/README.md)
 +   [数据合规问答库](docs/shuju-hegui-wendaku/README.md)
 +   [书生大模型开源社区](docs/shusheng-damoxing-kaiyaun-shequ/README.md)
