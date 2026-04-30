@@ -15,6 +15,7 @@
 +   [AIGC 创意猎人](docs/aigc-chuangyi-lieren/README.md)
 +   [⛳️AIHub后花园](docs/aihub-houhuayuan/README.md)
 +   [阿赵的知识库](docs/azhaode-zhishiku/README.md)
++   [博派 AI 知识库](docs/bopai-ai-zhishiku/README.md)
 +   [CAIWY 采购知识库](docs/caiwv-caigou-zhishiku/README.md)
 +   [ChatGPT 超神之路](docs/chatgpt-chaoshen-zhilu/README.md)
 +   [ChatGPT 公共知识库](docs/chatgpt-gonggong/README.md)
