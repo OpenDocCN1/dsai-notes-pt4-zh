@@ -73,6 +73,7 @@
 +   [万象 AI 实验室](docs/wanxiang-ai-shiyanshi/README.md)
 +   [小码哥AGI启航](docs/xiaomage-agi/README.md)
 +   [Midjourney知识库大全](docs/xinlingshenhui/README.md)
++   [西西弗斯没问题 - Ryan🦄.eth的说明书](docs/xixifusi-meiwenti/README.md)
 +   [一泽 Eze 的个人主页｜知识库 Index](docs/yize-ezes-blog/README.md)
 +   [一站式AI产品经理入门指南](docs/yizhanshi-ai-chanpinjingli/README.md)
 +   [云樱梦海的资源导航](docs/yunyingmenghai-ziyuandaohang/README.md)
