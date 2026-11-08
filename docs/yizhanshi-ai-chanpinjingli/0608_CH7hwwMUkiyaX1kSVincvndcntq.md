@@ -52,7 +52,7 @@ pip install deepspeed -U
 
 +   多机多卡训练: 我们书写了使用swift、torchrun、dlc、deepspeed、accelerate[启动](https://github.com/modelscope/swift/blob/main/examples/train/multi-node)多节点运行的shell脚本示例。除了dlc和deepspeed，其他启动脚本都需要在所有节点中启动才可运行。具体参考这里。
 
-+   量[化训](https://github.com/modelscope/ms-swift/tree/main/examples/train/qlora)练：支持使用GPTQ、AWQ、AQLM、BNB、HQQ、EETQ量化技术的QLoRA训练。微调7B模型只需要9GB显存资源。具体参考这里。
++   量[化训](https://github.com/modelscope/ms-swift/tree/main/examples/train/qlora)练：支持使用GPTQ、AWQ、AQLM、BNB、H🐧、EETQ量化技术的QLoRA训练。微调7B模型只需要9GB显存资源。具体参考这里。
 
 +   多模态训练：SWIFT支持多模态模型的预训练、微调和RLH[F。支持Capti](https://github.com/modelscope/ms-swift/blob/main/examples/notebook/qwen2_5-vl-grounding/zh.ipynb)[on](https://github.com/modelscope/ms-swift/tree/main/examples/train/multimodal)、VQA、OCR、Groun[ding任务。支](https://modelscope.cn/docs/llm-training-and-inference/customization/custom-dataset)持图像、视频和音频三种模态。具体参考这里。多模态自定义数据集格式参考自定义数据集文档。
 

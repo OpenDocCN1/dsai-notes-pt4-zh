@@ -16,7 +16,7 @@
 
 +   **👨🏻‍💻 未来形态：数字**游民（置信度 75%），斜杠中年，自带 AI 分身
 
-+   ⌛️ **其他标签**：[饭否早期村民](https://fanfou.com/anegie)，[知乎过气网红](https://www.zhihu.com/people/spacekid)，[即刻 Yellow 用户](https://m.okjike.com/users/737AADA7-60ED-48EE-B24A-A26C93A758CA)，差一点成为美团元老，[微博昵称 1 万块被没买走](https://weibo.com/n/Kevin)
++   ⌛️ **其他标签**：[饭否早期村民](https://fanfou.com/anegie)，[知乎过气网红](https://www.zhihu.com/people/spacekid)，[即刻 Yellow 用户](https://m.okjike.com/users/737AADA7-60ED-48EE-B24A-A26C93A758CA)，差一点成为美团元老，[🧣昵称 1 万块被没买走](https://weibo.com/n/Kevin)
 
 +   **🏅 主要头衔与成就**
 
@@ -122,11 +122,11 @@
 
 ![](img/b024ae388164cfa870b2e6a9e89e69f6.png)
 
-[微信直达链接 →](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODgxODMyMQ==&scene=117#wechat_redirect)
+[🛰️直达链接 →](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODgxODMyMQ==&scene=117#wechat_redirect)
 
 ![](img/ae17f417faa7d8f8a081740bb79aa38e.png)
 
-[微信直达链接 →](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyODE5ODYxMA==&scene=117#wechat_redirect)
+[🛰️直达链接 →](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyODE5ODYxMA==&scene=117#wechat_redirect)
 
 ---
 

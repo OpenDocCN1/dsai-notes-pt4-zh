@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/DSCtdE00Xomo7Axol6TcOVhHnzf](https://my.feishu.cn/docx/DSCtdE00Xomo7Axol6TcOVhHnzf)
 
-[🎁Vega变现指南（微信表情包）](https://yw55ojhusnq.feishu.cn/wiki/CKhTw6GF5iXyVlkobH7csUYTnze?from=from_copylink)习完这篇，你就可以自己做微信表情包了：
+[🎁Vega变现指南（🛰️表情包）](https://yw55ojhusnq.feishu.cn/wiki/CKhTw6GF5iXyVlkobH7csUYTnze?from=from_copylink)习完这篇，你就可以自己做🛰️表情包了：
 
 完整的vega教程🎨： [最强Ai绘画工具Vega.Ai教程（制作中）](https://yw55ojhusnq.feishu.cn/wiki/P58pw4353irg4mkko1bcU4A6ndb)
 

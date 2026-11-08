@@ -46,7 +46,7 @@
 
 ![](img/ae8bbff97d3bbda78899d71bd1209401.png)
 
-https://langgptai.feishu.cn/share/base/form/shrcn87Wjuyy7lKYdiQQQxtaG5d
+https://langgptai.feishu.cn/share/base/form/shrcn87Wjuyy7lKYdi🐧QxtaG5d
 
 填写完「圆桌话题」之后，还有可能获取价值200元的线下大会门票🎫哦~~
 

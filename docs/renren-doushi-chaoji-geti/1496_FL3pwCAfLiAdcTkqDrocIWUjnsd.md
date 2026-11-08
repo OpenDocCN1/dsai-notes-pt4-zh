@@ -1,8 +1,8 @@
-# ChatGPT低成本、可视化、高效性分析小红书爆款
+# ChatGPT低成本、可视化、高效性分析📕爆款
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/HAsodbgp5o3LluxonoecMibpnqh](https://xuqiwei1986.feishu.cn/docx/HAsodbgp5o3LluxonoecMibpnqh)
 
-> 我是**越越**，一位AiGC工具人，一位小红书全平台6w+粉的新生博主
+> 我是**越越**，一位AiGC工具人，一位📕全平台6w+粉的新生博主
 
 >
 
@@ -22,7 +22,7 @@
 
 >
 
-> 以往文章： [AiGC运营：小红书爆款概率预测分析（一）](https://txt6wm3b04b.feishu.cn/docx/F1v8drS3OoE3zyxCULmcukaPntZ)
+> 以往文章： [AiGC运营：📕爆款概率预测分析（一）](https://txt6wm3b04b.feishu.cn/docx/F1v8drS3OoE3zyxCULmcukaPntZ)
 
 > [AiGC运营：使用AiGC设计IP运营课程](https://txt6wm3b04b.feishu.cn/docx/ZqeEdsNd2oBO0SxSTRGcJX1Un1f)
 
@@ -36,7 +36,7 @@
 
 ## 本文概要
 
-本文主要讲述如何使用ChatGPT+**No**teable插件应用于小红书平台运营简单数据分析
+本文主要讲述如何使用ChatGPT+**No**teable插件应用于📕平台运营简单数据分析
 
 文章讲解了数据分析的**基本流程**，影响数据分析精准度的因素有很多，圈友勿喷！
 
@@ -102,13 +102,13 @@ Task 8 :#自然语言处理
 
 ## 原始数据采集
 
-### 小红书相关数据直接采集
+### 📕相关数据直接采集
 
 本文样本数据属于公开数据，现提供下载链接： 欢迎大家进行测试
 
 ![](img/058c43d097361484e1c782e2cbef1e16.png)
 
-[小红书—配饰原始数据csv.csv](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YlqpbYaRwolHxyxJliUcCC1unYf)
+[📕—配饰原始数据csv.csv](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YlqpbYaRwolHxyxJliUcCC1unYf)
 
 数据平台直接导出数据，但是**数据量小、类型小****，**用户可以通过首页中“拉新领会员”获取三天的**个人版体验**资格，如需更进一步分析数据建议购买企业版
 
@@ -220,7 +220,7 @@ Task 2 :
 
 ![](img/71d11fac6522e52733e983240912e70d.png)
 
-点击[小红书数据分析笔记本链接]进行验证：
+点击[📕数据分析笔记本链接]进行验证：
 
 ![](img/5064c1efa7dd4ce4960ce923f8a0629f.png)
 

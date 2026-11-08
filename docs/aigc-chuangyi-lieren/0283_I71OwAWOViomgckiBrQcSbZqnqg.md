@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/FIK3dbsdloX4BOxFXPZcnWzLnwb](https://aigcreative.feishu.cn/docx/FIK3dbsdloX4BOxFXPZcnWzLnwb)
 
-> 来源：公众号-信息化与数字化
+> 来源：👸号-信息化与数字化
 
 > 链接：https://mp.weixin.qq.com/s/KHixK7cybsH9WXnBsohObg
 

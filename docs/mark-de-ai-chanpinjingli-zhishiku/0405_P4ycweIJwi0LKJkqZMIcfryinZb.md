@@ -1,6 +1,6 @@
 # RAG 2.0架构详解：构建端到端检索增强生成系统
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/QQZVdxhWBoZpduxQ8Fscnzdnnde](https://qqs7y1hozd1.feishu.cn/docx/QQZVdxhWBoZpduxQ8Fscnzdnnde)
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/🐧ZVdxhWBoZpduxQ8Fscnzdnnde](https://qqs7y1hozd1.feishu.cn/docx/🐧ZVdxhWBoZpduxQ8Fscnzdnnde)
 
 > **关**于**检索增强生成（RAG）在我的文章中说了很多 了，如果我们能创建出可训练的检**索器，或者说整个RAG可以像微调大型语言模型（LLM）那样定制化的话，那肯定能够获得更好的结果。但是当前RAG的问题在于各个子模块之间并没有完全协调，就像一个缝合怪一样，虽然能够工作但各部分并不和谐，所以我们这里介绍RAG 2.0的概念来解决这个问题。
 

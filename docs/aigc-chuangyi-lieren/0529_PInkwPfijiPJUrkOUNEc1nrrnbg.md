@@ -1,4 +1,4 @@
-# 008-小红书写作提示词
+# 008-📕写作提示词
 
 > 来源：[https://aigcreative.feishu.cn/docx/WM15dBlqAoAo1QxZuXccONaBnyb](https://aigcreative.feishu.cn/docx/WM15dBlqAoAo1QxZuXccONaBnyb)
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://docs.feishu.cn/docx/I6ObdnZ6ZoMpymxf6DvcNVpEnOd](https://docs.feishu.cn/docx/I6ObdnZ6ZoMpymxf6DvcNVpEnOd)
 
-本文转载自「公众号：非凡产研」
+本文转载自「👸号：非凡产研」
 
 原文地址：https://mp.weixin.qq.com/s/C4PfQJNQn3-UiRuDeUBWaQ
 

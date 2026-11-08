@@ -228,7 +228,7 @@ mv {datapath}/data/coding /data/
 
 ## Git clone 不了？
 
-打开梯子全局试试
+打开🪜全局试试
 
 ## 无法执行 notebook？
 

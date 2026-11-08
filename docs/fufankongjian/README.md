@@ -1,6 +1,6 @@
 # 大模型技术社区丨赋范空间
 
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/XDXbdYMBvoQQisxXwrFcQVXcnKg](https://kq4b3vgg5b.feishu.cn/docx/XDXbdYMBvoQQisxXwrFcQVXcnKg)
+> 来源：[https://kq4b3vgg5b.feishu.cn/docx/XDXbdYMBvo🐧isxXwrFcQVXcnKg](https://kq4b3vgg5b.feishu.cn/docx/XDXbdYMBvo🐧isxXwrFcQVXcnKg)
 
 > Hi，这里收录了我们研发团队独家自研**的一手大**模型硬核干货学习资料，并持续更新中，建议小伙伴们收藏起来随查随用，技术能力涨涨涨🆙～
 

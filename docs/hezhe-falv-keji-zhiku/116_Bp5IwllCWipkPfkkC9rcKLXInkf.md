@@ -144,9 +144,9 @@ Legal Studio 法律科技社区，是法律修音机运营的一个社群，平�
 
 > 拓展阅读：https://mp.weixin.qq.com/s/Snb3XHtVVBGmbzY0IT-Xmg
 
-### 商汤大模型 AI 办公助手「办公小浣熊」上线微信小程序版
+### 商汤大模型 AI 办公助手「办公小浣熊」上线🛰️小程序版
 
-近日，商汤数据分析产品「办公小浣熊」正式上线“小程序版”——Raccoon智能助手。既拥有网页版的完整功能，又专为移动办公定制专属技能。可以在小程序中，直接插入微信聊天中的文件（xls/xlsx/csv/txt/json等）。简单几句对话，就能提炼重点、生成各类图表。能以缜密的逻辑推理能力，给出更多建议。
+近日，商汤数据分析产品「办公小浣熊」正式上线“小程序版”——Raccoon智能助手。既拥有网页版的完整功能，又专为移动办公定制专属技能。可以在小程序中，直接插入🛰️聊天中的文件（xls/xlsx/csv/txt/json等）。简单几句对话，就能提炼重点、生成各类图表。能以缜密的逻辑推理能力，给出更多建议。
 
 > 来源：雷峰网
 
@@ -202,7 +202,7 @@ Legal Studio 法律科技社区，是法律修音机运营的一个社群，平�
 
 +   构建负责任且大规模的生成式人工智能的七个启示
 
-+   [妙啊！微信里还能这样打字](https://mp.weixin.qq.com/s/qtimpse_cxTKFP2l48YGWA)
++   [妙啊！🛰️里还能这样打字](https://mp.weixin.qq.com/s/qtimpse_cxTKFP2l48YGWA)
 
 +   [入口之争：苹果的Apple Intellige](https://mp.weixin.qq.com/s/qMqGGxU-_xU4m2eGvMoeKg)nce如何重新定义AI？| AGI路线图
 

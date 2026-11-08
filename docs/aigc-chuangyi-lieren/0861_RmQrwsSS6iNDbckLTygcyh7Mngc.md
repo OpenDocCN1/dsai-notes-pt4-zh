@@ -4,7 +4,7 @@
 
 > 原文链接： Google Antigravity 快速入门
 
-> 来源：公众号：北京GDG
+> 来源：👸号：北京GDG
 
 ![](img/577e70b6d0cb144967cd9072ef1d2860.png)
 

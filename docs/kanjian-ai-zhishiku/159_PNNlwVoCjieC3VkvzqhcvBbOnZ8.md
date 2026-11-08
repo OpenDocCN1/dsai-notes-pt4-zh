@@ -261,7 +261,7 @@ AI将：
 
 1.  设置价格警戒线
 
-1.  通过企业微信API发送夺命连环call
+1.  通过企业🛰️API发送夺命连环call
 
 ### 案例3：学术狗救命稻草
 
@@ -295,7 +295,7 @@ nohup python main.py &gt; output.log 2&gt;&amp;1 &amp; # 让AI化身007特工永
 
 参考app/tool/base.py（代码看不懂没关系，看我上篇讲的Cursor）创建：
 
-+   微博自动点赞器
++   🧣自动点赞器
 
 +   游戏外挂（仅供学习！）
 

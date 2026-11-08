@@ -60,7 +60,7 @@ s[andbox 运行pandas](https://github.com/svcvit/dify-sandbox-py)，numpy>2.0，
 
 +   DIFY目前已经入驻应用商店，填入一个密码，即可完成安装。对于个人用户来讲，已经够用。
 
-+   因为支持新加坡、日本、美国服务区，所以天然翻墙，免除模型需要代理的困扰。
++   因为支持新加坡、日本、美国服务区，所以天然🪜，免除模型需要代理的困扰。
 
 ![](img/d738bb4fa3a0aa4bbde6099c2de605e5.png)
 

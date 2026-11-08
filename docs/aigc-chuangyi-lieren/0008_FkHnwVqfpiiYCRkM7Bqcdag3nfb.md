@@ -14,7 +14,7 @@
 
 1.  **AI产业落地方向明确**：AI从「建议者」向「执行者」转变，能精细调控实体经济各环节，推动智能化变革 。
 
-> 作者：金色传说大聪明  公众号：赛博禅心
+> 作者：金色传说大聪明  👸号：赛博禅心
 
 > 链接：https://mp.weixin.qq.com/s/8MZH0MTR3yUZ8lLU1gzNGA
 
@@ -26,7 +26,7 @@
 
 ![](img/c81268dc36a48d488f2104cb94ead5bb.png)
 
-来自：公众号「中关村创业大街」
+来自：👸号「中关村创业大街」
 
 PS：这篇写了一个多月， **与上一篇《 **[**人类的认知协议 **](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247493515&idx=1&sn=ff7089d391a68b6aeecee906cf56a3c7&scene=21#wechat_redirect)**》互为姊妹**
 

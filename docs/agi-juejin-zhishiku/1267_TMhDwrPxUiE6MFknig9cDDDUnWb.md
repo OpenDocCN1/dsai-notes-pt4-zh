@@ -226,7 +226,7 @@ chag[pt 这种](https://zhida.zhihu.com/search?q=%E7%AC%A6%E5%8F%B7%E4%B8%BB%E4%
 
 版权声明：如需转载，请邮件知会 imwangfu@gmail.com，并保留此文档信息申明
 
-更多深度随想可以关注公众号：混沌随想
+更多深度随想可以关注👸号：混沌随想
 
 ——————
 

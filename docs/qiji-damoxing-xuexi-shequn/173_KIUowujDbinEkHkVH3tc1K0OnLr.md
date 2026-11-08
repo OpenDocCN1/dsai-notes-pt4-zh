@@ -238,7 +238,7 @@ https://arxiv.org/abs/2406.13282
 
 +   作者Chen Zhang 来自北京理工大学。
 
-+   作者Yikun Lei、Xikai Liu、Yan Gao、Yao Hu 来自小红书公司。
++   作者Yikun Lei、Xikai Liu、Yan Gao、Yao Hu 来自📕公司。
 
 ![](img/0036de769ab7703c7abdce97ebeab24b.png)
 
@@ -486,7 +486,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

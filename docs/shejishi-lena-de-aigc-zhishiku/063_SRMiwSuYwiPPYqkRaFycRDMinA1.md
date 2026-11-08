@@ -12,11 +12,11 @@
 
 # deepseek1分钟做海报
 
-> 61 【每天312张 真香 | 怎么用deepseek做海报 - AIGC娜娜子 | 小红书 - 你的生活指南】 😆 5fjQreIRd4EStSP 😆 https://www.xiaohongshu.com/discovery/item/67a8f91b000000001902fdd2?source=webshare&xhsshare=pc_web&xsec_token=AB3jcgLEn0urERcjUPMuIrKoDBNsIgD_Zv3aUjYDq97Kk=&xsec_source=pc_share
+> 61 【每天312张 真香 | 怎么用deepseek做海报 - AIGC娜娜子 | 📕 - 你的生活指南】 😆 5fjQreIRd4EStSP 😆 https://www.xiaohongshu.com/discovery/item/67a8f91b000000001902fdd2?source=webshare&xhsshare=pc_web&xsec_token=AB3jcgLEn0urERcjUPMuIrKoDBNsIgD_Zv3aUjYDq97Kk=&xsec_source=pc_share
 
 # deepseek是什么
 
-> 89 【DeepSeek是谁？如何用？听他自己说说 - AIGC娜娜子 | 小红书 - 你的生活指南】 😆 N8tDTYNyBcpgzWG 😆 https://www.xiaohongshu.com/discovery/item/67a09b90000000001800560b?source=webshare&xhsshare=pc_web&xsec_token=AB07SBtMky_7J2FD0JjYnHrBZMsSUO6ac_IX1IF0_xuUs=&xsec_source=pc_share
+> 89 【DeepSeek是谁？如何用？听他自己说说 - AIGC娜娜子 | 📕 - 你的生活指南】 😆 N8tDTYNyBcpgzWG 😆 https://www.xiaohongshu.com/discovery/item/67a09b90000000001800560b?source=webshare&xhsshare=pc_web&xsec_token=AB07SBtMky_7J2FD0JjYnHrBZMsSUO6ac_IX1IF0_xuUs=&xsec_source=pc_share
 
 # deepseek体制内提示词
 
@@ -56,7 +56,7 @@
 
 # deepseek资料合集
 
-> 31 【12个好用的 deepseek PPT提示词分享 - AIGC娜娜子 | 小红书 - 你的生活指南】 😆 tI0ovhuYgro0D2e 😆 https://www.xiaohongshu.com/discovery/item/67c09702000000000302b246?source=webshare&xhsshare=pc_web&xsec_token=ABm78dF1erbhMInh-uYfsn4H5zyEWi95rx-BzdJOzigpA=&xsec_source=pc_share
+> 31 【12个好用的 deepseek PPT提示词分享 - AIGC娜娜子 | 📕 - 你的生活指南】 😆 tI0ovhuYgro0D2e 😆 https://www.xiaohongshu.com/discovery/item/67c09702000000000302b246?source=webshare&xhsshare=pc_web&xsec_token=ABm78dF1erbhMInh-uYfsn4H5zyEWi95rx-BzdJOzigpA=&xsec_source=pc_share
 
 通过网盘分享的文件：deepseek资料
 
@@ -80,7 +80,7 @@
 
 # 提示词锦囊
 
-> 69 【最新deepseek提示词锦囊 - AIGC娜娜子 | 小红书 - 你的生活指南】 😆 2tc88qiQSClfIHs 😆 https://www.xiaohongshu.com/discovery/item/67a391d3000000001701e281?source=webshare&xhsshare=pc_web&xsec_token=ABPrvnWxGPm2uHZbEc3H9yVLk9_OGmhYMG0VuB8wE2L4Q=&xsec_source=pc_share
+> 69 【最新deepseek提示词锦囊 - AIGC娜娜子 | 📕 - 你的生活指南】 😆 2tc88qiQSClfIHs 😆 https://www.xiaohongshu.com/discovery/item/67a391d3000000001701e281?source=webshare&xhsshare=pc_web&xsec_token=ABPrvnWxGPm2uHZbEc3H9yVLk9_OGmhYMG0VuB8wE2L4Q=&xsec_source=pc_share
 
 ![](img/87398e75c2ffd5c44cad0f7ceeb4636c.png)
 

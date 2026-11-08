@@ -40,7 +40,7 @@
 | ## [Part3：网页开发](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-XUCYdjPVYopS8uxB1RRcaWijn0c) |  |  |  |
 | ##### [01 图片字幕生成器](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-RXnEdeqRqoSAhtxwZHYcDP3rnge) | [用多模态复刻产品](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-RtVAdyURtomNqhx1bescQkuRnhd) |  |  |
 | ##### 02 注册硅基流动，赠4000万token |  |  |  |
-| ##### [03 帮小红书的老外起中文名](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-LUejdBgjqocWvfxODZEcsz0Inef) | WorkSpace AI Rules | [接入大模型](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-WBhVdpF6NoBiRvxNVGMcCnRQnto) |  |
+| ##### [03 帮📕的老外起中文名](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-LUejdBgjqocWvfxODZEcsz0Inef) | WorkSpace AI Rules | [接入大模型](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-WBhVdpF6NoBiRvxNVGMcCnRQnto) |  |
 | ##### [04 做一档你自己的AI播客](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-R6ZMd0VgYoxf88xJWzacYpgpnrB) | [语音复刻](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-SXWUdkTLpogdE7xCRGHcibg5n4c) |  |  |
 | ## [Part4：多维表格](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-WemDdHs1QoPAhMxJa55cB6mWnIg) |  |  |  |
 | ##### [01 做一个你专属的好文推荐网站（D](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-PCk2dMhkiocY4Px12JSclzzQnPe)eepSeek R1 + 飞书多维表格） | [创建带AI能力的飞书多维表格](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-IkgVd9yZEo5yOTxRzIVcYRfTnxf) | [用网页呈现多维表格里的内容](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-P3qVdsXryoEyS6x9lIgcMIBGnVb) |  |
@@ -48,9 +48,9 @@
 | ## [Part5：浏览器插件](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-TotjdKSPnoO377xlivCcA9q8nVE) |  |  |  |
 | ##### 01 DeepSeek驱动的网页金句卡片生成 | [先Chat，再开发](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-QTWcd1pAmoF1gYxeEP1cNQWAniE) | [插件安装指南](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-FPxWdNBZno6qFWxN6k4cXv1Unyd) | [Chrome插件logo生成](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-PIVSdORqSoyVjLxAa7ic68Dhn5b) |
 | ##### [02 复刻善思flomo](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-FkIzdtR1joldxPxu0Qbcwjesn2g) | [接入flomo API](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-P9CEdQcCxoiYLsxNIXvcoupxnIh) | [更新readme](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-A3TPdNKkHoJufOxn6M5csUpmn1g) | [使用Git存档](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-GhCndzNT9obE0OxyiHecYSmunRg) |
-| ## [Part6：微信小程序](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-OUN1dy2aioDaM1xnh8Ycbi5KnLf) |  |  |  |
-| ##### [01 做一个简单的微信小程序](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-InP4dGETKozVd2xDbiWcXNIhnSg) | [开发小程序准备工作](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-VDoldzuIhoKAvPxhl99cGHTHnab) | [小程序的认证和备案](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-MiyMdnKfIooDDFx8xE0cKQgLnGe) |  |
-| ##### [02 书单星球（微信小程序）](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-PAhidGtOMoOFxTxGNOxcc1QSnQH) | [微信小程序开发路径](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-U726dE9itoQ6fhx2DdPcZGlgngb) |  |  |
+| ## [Part6：🛰️小程序](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-OUN1dy2aioDaM1xnh8Ycbi5KnLf) |  |  |  |
+| ##### [01 做一个简单的🛰️小程序](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-InP4dGETKozVd2xDbiWcXNIhnSg) | [开发小程序准备工作](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-VDoldzuIhoKAvPxhl99cGHTHnab) | [小程序的认证和备案](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-MiyMdnKfIooDDFx8xE0cKQgLnGe) |  |
+| ##### [02 书单星球（🛰️小程序）](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-PAhidGtOMoOFxTxGNOxcc1QSnQH) | [🛰️小程序开发路径](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-U726dE9itoQ6fhx2DdPcZGlgngb) |  |  |
 | ## [Part7：基于扣子搭建产品](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-QDtYdGsoZol0YoxhKdjceGCMnbg) |  |  |  |
 | ##### [01 扣子Coze产品介绍](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-JouSdqEgOoLibyxQ4YZcH69Dngf) |  |  |  |
 | ##### 02 用DeepSeek R1，抖音视频文案提取+改写 | [理解Function Call](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-Pd2MdkC47oh6URxpaMucqN2Vnvd) | [简单智能体搭建](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-GDJZdkzD9obcUwxbqGHc0J4CnCc) |  |
@@ -81,15 +81,15 @@
 
 ![](img/9f9a3f030bc92ac312939dee1dafd46c.png)
 
-从左到右，帮老外起中国名字（网页），善思flomo（浏览器插件），书单星球（微信小程序），降噪AI（H5+微信服务号），柴犬表情包生成器改良版（网页+Coze）
+从左到右，帮老外起中国名字（网页），善思flomo（浏览器插件），书单星球（🛰️小程序），降噪AI（H5+🛰️服务号），柴犬表情包生成器改良版（网页+Coze）
 
-帮老外起中国名字，近期小红书被外国佬冲爆，很多老外有类似的需求，用半小时开发出来行不行？完全可以！
+帮老外起中国名字，近期📕被外国佬冲爆，很多老外有类似的需求，用半小时开发出来行不行？完全可以！
 
 善思flomo，是一款在Chrome浏览器内，帮助你快速对网页内容做摘要和写思考的插件，可以自动抓取标题和链接，可以AI总结全文摘要，输入你自己的个人感想，然后一键同步到flomo（一款笔记应用）。
 
-书单星球，是一款可以查看各个名人推荐图书的微信小程序，界面非常美观，能够阅读到名人如何评价一本书，帮助我们更好的选书。
+书单星球，是一款可以查看各个名人推荐图书的🛰️小程序，界面非常美观，能够阅读到名人如何评价一本书，帮助我们更好的选书。
 
-降噪AI，稍微复杂一些，简单说就是从指定的公众号里，每天自动抓取/筛选/摘要/呈现，同时还有AI语音播报/实时语音互动的能力。
+降噪AI，稍微复杂一些，简单说就是从指定的👸号里，每天自动抓取/筛选/摘要/呈现，同时还有AI语音播报/实时语音互动的能力。
 
 柴犬表情包生成器改良版（网页+Coze），生成各种表情的柴犬表情包。
 
@@ -113,7 +113,7 @@
 
 读懂请掌声👏！
 
-在抖音/B站/小红书/视频号，甚至有些老旧的公众号/头条号等媒体浪潮里，造就了大量的财富，黄叔算是非常小小小的吃到了一些红利，每一年都会有人问：IP还能做吗？相信我，答案永远是：机会大量存在的。
+在抖音/B站/📕/视频号，甚至有些老旧的👸号/头条号等媒体浪潮里，造就了大量的财富，黄叔算是非常小小小的吃到了一些红利，每一年都会有人问：IP还能做吗？相信我，答案永远是：机会大量存在的。
 
 这是媒体杠杆。
 
@@ -169,7 +169,7 @@ ok，媒体杠杆和代码杠杆成为双杠杆同时出现，除了纳瓦尔说
 
 获得输入---读取网页内容---对内容进行打分---筛选：分低的就不要了---摘要---把摘要/关键词/评分等拼到一起---存到飞书多维表格内-结束
 
-它帮我们实现了（简单说就是从指定的公众号里，每天自动抓取/筛选/摘要/呈现）这里面筛选和摘要的部分，处理完成后，把处理好的数据存储到飞书多维表格内，最后我再用AI编程，开发一个网页，这个网页的工作就很简单了，只是把昨天的内容抓取出来呈现就完成了。
+它帮我们实现了（简单说就是从指定的👸号里，每天自动抓取/筛选/摘要/呈现）这里面筛选和摘要的部分，处理完成后，把处理好的数据存储到飞书多维表格内，最后我再用AI编程，开发一个网页，这个网页的工作就很简单了，只是把昨天的内容抓取出来呈现就完成了。
 
 理解了没？相当于把很多处理工作交给了Coze，它处理完成后，我再把处理好的数据让Windsurf完成最后的呈现即可（即大幅降低了AI编程所需要解决问题的复杂度）。
 
@@ -213,7 +213,7 @@ OK，进入主题，下面我们来说Windsurf的一些基本技巧，有了这�
 
 哈哈，这个就不用废话了，123，上链接：https://codeium.com/windsurf
 
-注意科学上网
+注意🪜
 
 下载后安装好，打开软件，大概是这样的：
 
@@ -265,7 +265,7 @@ AI对话栏：这是最主要的，AI在这里接受你的命令，哈哈哈
 
 ![](img/bfe3c034a7da5307f9ddccf7c8f91abb.png)
 
-再次注意：这个功能需要连接Claude，需要科学上网。所以在正常使用该软件的时候，是需要一直打开科学上网的。
+再次注意：这个功能需要连接Claude，需要🪜。所以在正常使用该软件的时候，是需要一直打开🪜的。
 
 ### 第三，让AI更听话：Set Global AI Rules
 
@@ -713,7 +713,7 @@ OK已经解决了文字内容超出卡片范围的问题，但现在各个卡片
 
 上图是一个黄叔用了10分钟做出来的网页，网址是：https://www.32kw.com/view/b109136，这是个啥呢？
 
-前段时间有个创始人约我喝咖啡，我在望京，他在中关村，我们说那找个中间点吧，然后早上10点我到北辰荟翘起二郎腿等他的时候，突然仔细一看微信，我去，约的是环宇荟。。。
+前段时间有个创始人约我喝咖啡，我在望京，他在中关村，我们说那找个中间点吧，然后早上10点我到北辰荟翘起二郎腿等他的时候，突然仔细一看🛰️，我去，约的是环宇荟。。。
 
 后来我细想了下，是因为看到他说了环宇荟，我没细看，看到个荟字，就想着北辰荟有蔚来牛屋，和他说那就牛屋见吧。结果是我搞错了，他不熟也不知道环宇荟其实没有牛屋。。。我也不熟，都不知道还有一个同样叫荟还离得不远的商圈。。。
 
@@ -937,7 +937,7 @@ MCP就是给大模型加上了外部的工具、数据，给大模型装上翅�
 
 https://cloud.siliconflow.cn/s/AIbclps
 
-注册完成后，建议先完成实名认证，这样可以充值（因为最近Deepseek R1比较火，建议大家稍微冲一**些**钱，使用Deepseek的Pro版本，这样能够保证稳定使用，有关Pro版的信息，详情可以阅读硅基流动的官方公众号文章：稳定护航！硅基流动上线 Pro 版 DeepSeek R1 & V3 ）
+注册完成后，建议先完成实名认证，这样可以充值（因为最近Deepseek R1比较火，建议大家稍微冲一**些**钱，使用Deepseek的Pro版本，这样能够保证稳定使用，有关Pro版的信息，详情可以阅读硅基流动的官方👸号文章：稳定护航！硅基流动上线 Pro 版 DeepSeek R1 & V3 ）
 
 ![](img/93402db00e28105505e8f38ce3fa16cf.png)
 
@@ -977,7 +977,7 @@ Pro版的DeepSeek R1/V3，需要充值余额，相当于你得充钱，但可以
 
 ## 03 使用Deepseek R1，帮老外起中文名吧！
 
-前阵子小红书好多老外涌入，于是有了这个案例，我们使用国产最强模型Deepseek R1，来帮他们起个有意思的中文名吧：）
+前阵子📕好多老外涌入，于是有了这个案例，我们使用国产最强模型Deepseek R1，来帮他们起个有意思的中文名吧：）
 
 ![](img/ecbea079af7f61bd85a506989732129a.png)
 
@@ -2132,7 +2132,7 @@ TABLE_ID="***" ，这里对应table=后面的黄色部分
 我已经手动放入了图标文件，查看并确定图标文件已经被在代码中正确引用
 ```
 
-（所有图标、项目文件、提示词都可以在公众号后台回复【XXX】获取）
+（所有图标、项目文件、提示词都可以在👸号后台回复【XXX】获取）
 
 等待Trae第一次开发完成后，就可以在Chrome中进行安装，在chrome中打开网址chrome://extensions/就可以直接定位到插件安装页面，点击页面中的【加载已解压的扩展程序】，然后选择项目文件夹即可。
 
@@ -2427,7 +2427,7 @@ Windsurf跑完后，生成了所有代码，具体如何安装和测试，其实
 
 ![](img/70b141b446fcdec4afd4ffa2e0d26a33.png)
 
-好，现在我们去打开一个网页试试，比如我点开黄叔的一篇公众号文章：
+好，现在我们去打开一个网页试试，比如我点开黄叔的一篇👸号文章：
 
 https://mp.weixin.qq.com/s/Cl9siWXt4VfMBtK5wdbDYg
 
@@ -2621,7 +2621,7 @@ Content-type: application/json
 
 说明扩展程序安装完成了，对，就这么简单。
 
-然后我们打开一个有内容的网页，比如新闻页面，或者是微信公众号文章页，都ok的，再点击插件，现在正常显示了：
+然后我们打开一个有内容的网页，比如新闻页面，或者是🛰️👸号文章页，都ok的，再点击插件，现在正常显示了：
 
 ![](img/cea99201e6318dcb8a167909c6408ef8.png)
 
@@ -2887,25 +2887,25 @@ ok的！一切准备就绪，下达你的指令让AI开工吧！
 
 恭喜🎉你迈出第二步！
 
-接下来，我们继续进阶，开始做一款微信小程序，那这一次我会更精简一些，只和大家描述核心步骤，大家要更多的利用AI来获得答案。
+接下来，我们继续进阶，开始做一款🛰️小程序，那这一次我会更精简一些，只和大家描述核心步骤，大家要更多的利用AI来获得答案。
 
 ## [上传Chrome应用商店](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-Rkc7doGmCoiRbKxiZ94coc9bnre)
 
-# Part6：微信小程序
+# Part6：🛰️小程序
 
-## 01 做一个简单的微信小程序
+## 01 做一个简单的🛰️小程序
 
-我们这一节，和大家说一下简单的小工具开发，帮助大家上手微信小程序，后面可以使用Trae来继续深入做更多你想做的产品。
+我们这一节，和大家说一下简单的小工具开发，帮助大家上手🛰️小程序，后面可以使用Trae来继续深入做更多你想做的产品。
 
-### 开发微信小程序的准备工作
+### 开发🛰️小程序的准备工作
 
 这里有两个前置准备：
 
-1.  注册一个微信小程序账号
+1.  注册一个🛰️小程序账号
 
-1.  下载微信开发者工具
+1.  下载🛰️开发者工具
 
-#### 注册微信小程序账号
+#### 注册🛰️小程序账号
 
 https://mp.weixin.qq.com/cgi-bin/wx
 
@@ -2923,7 +2923,7 @@ https://mp.weixin.qq.com/cgi-bin/wx
 
 ![](img/fa7b0826794ca735b2f733ecd5605765.png)
 
-这里你可以选“主体类型”，个人类型暂不支持微信认证、微信支付及高级接口能力。
+这里你可以选“主体类型”，个人类型暂不支持🛰️认证、🛰️支付及高级接口能力。
 
 再往下滑，有一些信息登记，填写就好了：
 
@@ -2935,7 +2935,7 @@ https://mp.weixin.qq.com/cgi-bin/wx
 
 咱们当前这一步的核心是拿到AppID。
 
-#### 下载微信开发者工具
+#### 下载🛰️开发者工具
 
 https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
@@ -2943,15 +2943,15 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 大家可以选择稳定版进行下载
 
-好的，下载完毕后，我们打开微信开发者工具，并扫码登录，可以看到下面的界面：
+好的，下载完毕后，我们打开🛰️开发者工具，并扫码登录，可以看到下面的界面：
 
 ![](img/6420e4af8cb58862f14c47fc3eae3111.png)
 
 项目名称和目录，大家可以自己去创建文件夹后填入项目名称，以及选中目录
 
-点击AppID下拉框，可以看到当前账号下关联的所有微信小程序
+点击AppID下拉框，可以看到当前账号下关联的所有🛰️小程序
 
-这里我们的案例是不需要微信云开发的，所以后端服务选择“不使用云服务”
+这里我们的案例是不需要🛰️云开发的，所以后端服务选择“不使用云服务”
 
 然后点击“创建”按钮，进入到了开发界面
 
@@ -2979,7 +2979,7 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 然后切换到Builder模式，开始进行开发。
 
-因为Trae会在本地文件夹内生成代码，而微信开发者工具也是从同一个本地文件夹内读取代码，并且有实时预览功能，所以我们可以在微信开发者工具内看到：
+因为Trae会在本地文件夹内生成代码，而🛰️开发者工具也是从同一个本地文件夹内读取代码，并且有实时预览功能，所以我们可以在🛰️开发者工具内看到：
 
 ![](img/cfe674fb7f655c62d14cd9f3f9cc178c.png)
 
@@ -2993,11 +2993,11 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 ![](img/f7e30f060084cbf03014745bc6c2a919.png)
 
-[微信小程序演示.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IzpAbZ5vIoHxsQxRkwOcsJy8nWc)
+[🛰️小程序演示.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IzpAbZ5vIoHxsQxRkwOcsJy8nWc)
 
-其中的开发和正常的Trae开发流程一样，如果有报错就修改错误，直到在微信开发者工具内调试到正常。
+其中的开发和正常的Trae开发流程一样，如果有报错就修改错误，直到在🛰️开发者工具内调试到正常。
 
-然后可以点击微信开发者工具的右上角“上传”，在弹出的弹窗里选择“确定”
+然后可以点击🛰️开发者工具的右上角“上传”，在弹出的弹窗里选择“确定”
 
 ![](img/63d2cdaff98dd546aaf7309a0088612d.png)
 
@@ -3009,7 +3009,7 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 ![](img/68bd8c80826f58b56734b5a7a886cdad.png)
 
-随后，可以在微信小程序后台，版本管理里看到开发版本的信息：
+随后，可以在🛰️小程序后台，版本管理里看到开发版本的信息：
 
 ![](img/2a4ed56a1387ed6e30b2a36130ce978c.png)
 
@@ -3017,15 +3017,15 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 这里有两个额外的要点需要大家了解：
 
-### 微信认证和ICP备案
+### 🛰️认证和ICP备案
 
-备案，根据要求，现在所有上架的微信小程序都需要做备案，我找到一篇文章有介绍全部的流程，https://mp.weixin.qq.com/s/HqH3tjEYQOWMUOV_ulYthQ
+备案，根据要求，现在所有上架的🛰️小程序都需要做备案，我找到一篇文章有介绍全部的流程，https://mp.weixin.qq.com/s/HqH3tjEYQOWMUOV_ulYthQ
 
 认证，完成后才能拥有被搜索和被分享的能力，个人认证是30元一次，但会限制一些品类，个人认证非常快，大约1-2天即可完成，同样找到一篇介绍流程的文章：https://mp.weixin.qq.com/s/msCC6BEBl3bKDEw598GE-w
 
 大家可以根据自己的需求来。
 
-## 02 书单星球（微信小程序）
+## 02 书单星球（🛰️小程序）
 
 ### 第一，先说说这是一款什么产品
 
@@ -3037,41 +3037,41 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 ![](img/7305031bd31a7d7585ff25a7e38394eb.png)
 
-大家可以自己用微信扫码体验👆🏻
+大家可以自己用🛰️扫码体验👆🏻
 
 这是一款以名人推荐的书单为核心的内容型产品。起源是某天我看到歸藏推荐的Andrej Karpathy书单后，突然灵感冒上心头：那么多名人推荐的好书，有没有地方汇总呢？于是就有了这款产品。
 
-坦率的说，这个微信小程序产品，我重做了一次，第二次依然花了整整10个小时的时间用于各种试错和调试，即使是相对熟悉微信小程序开发的现在我来说，也可能还是需要若干小时才能开发完成，是一个相对复杂的产品，但整体实现依旧是可以0代码完成的。
+坦率的说，这个🛰️小程序产品，我重做了一次，第二次依然花了整整10个小时的时间用于各种试错和调试，即使是相对熟悉🛰️小程序开发的现在我来说，也可能还是需要若干小时才能开发完成，是一个相对复杂的产品，但整体实现依旧是可以0代码完成的。
 
 下面我来介绍一下整体的开发路径
 
-### 第二，微信小程序开发路径
+### 第二，🛰️小程序开发路径
 
-其实整体来说，微信小程序的开发，和网页/浏览器插件相近，我们在一开始确定要做微信小程序后，可以和Windsurf说：
+其实整体来说，🛰️小程序的开发，和网页/浏览器插件相近，我们在一开始确定要做🛰️小程序后，可以和Windsurf说：
 
-> 我想做一个微信小程序，产品需求是：xxxxx
+> 我想做一个🛰️小程序，产品需求是：xxxxx
 
-这样Windsurf会自动理解接下来的很多产品功能是基于微信小程序进行的开发。
+这样Windsurf会自动理解接下来的很多产品功能是基于🛰️小程序进行的开发。
 
-Windsurf完成代码开发，微信开发者工具进行调试，调试OK后直接上传到微信小程序后台：
+Windsurf完成代码开发，🛰️开发者工具进行调试，调试OK后直接上传到🛰️小程序后台：
 
 ![](img/35a333fce3af024c39feb8f4620c17e8.png)
 
-在Windsurf生成部分代码后，可以在微信开发者工具里将文件夹（也就是Windsurf存放代码的文件夹）导入：
+在Windsurf生成部分代码后，可以在🛰️开发者工具里将文件夹（也就是Windsurf存放代码的文件夹）导入：
 
 ![](img/a65f937f8ea4d3e80950c6b3e1bdeb47.png)
 
 这里有两个很重要的参数：
 
-第一个：AppID，那AppID从哪里获得呢？需要你去注册一个微信小程序，然后在开发管理-开发者ID里获取：
+第一个：AppID，那AppID从哪里获得呢？需要你去注册一个🛰️小程序，然后在开发管理-开发者ID里获取：
 
 ![](img/e2d07fb128891c27b678facc61087fd8.png)
 
-第二个：微信云开发
+第二个：🛰️云开发
 
 怎么理解呢？书单星球是不是需要有一些数据存储和处理？比如说名人的信息存在哪？他们推荐的书籍信息存在哪？如何上传这些数据？是不是得有一个云端的数据库来进行增删改查这些？
 
-如果你的微信小程序有这些需求，**建议开启微信云开发。**
+如果你的🛰️小程序有这些需求，**建议开启🛰️云开发。**
 
 这块是有费用的，我记得是首月免费，次月19.9元/月，有一些用量限制，具体我也不懂，用户量很小的情况下是够用的：
 
@@ -3079,11 +3079,11 @@ Windsurf完成代码开发，微信开发者工具进行调试，调试OK后直�
 
 ![](img/63851a958f2df18df3262efc4f28583f.png)
 
-导入后，任何Windsurf里对于前端的修改，微信开发者工具是可以实时预览到的，以及云端也可以快速的打开云开发查看，你可以在同一个显示屏内来进行查看：
+导入后，任何Windsurf里对于前端的修改，🛰️开发者工具是可以实时预览到的，以及云端也可以快速的打开云开发查看，你可以在同一个显示屏内来进行查看：
 
 ![](img/4f987297511322d0d774994dd4d90a06.png)
 
-（前面的界面是微信开发者工具，后面是Windsurf）
+（前面的界面是🛰️开发者工具，后面是Windsurf）
 
 在云开发里，有几个重要的模块：
 
@@ -3103,9 +3103,9 @@ Windsurf完成代码开发，微信开发者工具进行调试，调试OK后直�
 
 ![](img/9ac7d6719acb69f461519f825d40debc.png)
 
-比如我们选择“启动Mac端自动真机调试”，就会弹出Mac端的微信小程序界面（右图），你就可以模拟真实用户去检测小程序是否OK。
+比如我们选择“启动Mac端自动真机调试”，就会弹出Mac端的🛰️小程序界面（右图），你就可以模拟真实用户去检测小程序是否OK。
 
-当你检查觉得OK后，可以把所有的代码上传，上传到微信小程序后台，才能够提交给官方审核：
+当你检查觉得OK后，可以把所有的代码上传，上传到🛰️小程序后台，才能够提交给官方审核：
 
 ![](img/721cfaf7b85207128db45a90973cfe09.png)
 
@@ -3119,11 +3119,11 @@ Windsurf完成代码开发，微信开发者工具进行调试，调试OK后直�
 
 ## 01 扣子Coze产品介绍
 
-扣子Coze是是一个AI应用搭建平台，通过拖拉拽节点以及配置节点的方式，组装成一个Workflow工作流，来完成各种任务，支持将构建好的 bot/workflow 发布为API、微信公众号、微信小程序、抖音小程序等多种类型 ：
+扣子Coze是是一个AI应用搭建平台，通过拖拉拽节点以及配置节点的方式，组装成一个Workflow工作流，来完成各种任务，支持将构建好的 bot/workflow 发布为API、🛰️👸号、🛰️小程序、抖音小程序等多种类型 ：
 
 ![](img/ee24dd3fba834c0e74ac39e19e2e439d.png)
 
-不光是可以生成各种Bot，更重要的是，我们可以用它封装出一些模块，并且用API的方式输出模块的处理结果，最后再用前面的AI编程知识，开发出AI应用，放在浏览器插件/微信小程序/App内。
+不光是可以生成各种Bot，更重要的是，我们可以用它封装出一些模块，并且用API的方式输出模块的处理结果，最后再用前面的AI编程知识，开发出AI应用，放在浏览器插件/🛰️小程序/App内。
 
 为什么会用Coze？而不是全部用AI编程？
 
@@ -4058,7 +4058,7 @@ OK，此时进入到下面这个页面，最后一步了！
 
 1.  需要等两分钟部署，随后可访问在云端部署好的页面
 
-1.  由于是海外域名，在国内有时会被墙，使用梯子访问
+1.  由于是海外域名，在国内有时会被墙，使用🪜访问
 
 1.  可以绑定自定义域名，需要额外进行设置
 
@@ -4076,7 +4076,7 @@ https://read.superhuang.me/
 
 在前面的案例：[04 做一个你专属的好文推荐网站（D](https://superhuang.feishu.cn/wiki/CBBPwvgEuicVhFkx0s7cPmhpn4e?fromScene=spaceOverview#share-WS19di3hOoHiB5xUmGxcL8adnxd)eepSeek R1 + 飞书多维表格） 里，我们其实在开头就给出了一个具体的网址，这个网址的第一步是通过Github+Vercel部署之后，再用国内的域名重定向来的。
 
-这里我们先说如何通过Github+Vercel部署，完成免费的部署，这一步之后，大家就可以在线访问自己的产品了（大部分时候需要科学上网）。
+这里我们先说如何通过Github+Vercel部署，完成免费的部署，这一步之后，大家就可以在线访问自己的产品了（大部分时候需要🪜）。
 
 Vercel网站，可以一键部署Github的仓库代码，无需自行搭建服务器，就可以完成前端页面和一些后端服务的托管，还是免费的！
 
@@ -4348,7 +4348,7 @@ https://chromewebstore.google.com/category/extensions?utm_source=ext_sidebar&amp
 
 ![](img/2a4c62f0fb08762abac76d03986ae1cf.png)
 
-登录谷歌账号之后跟随开发者注册流程走完即可，所有有疑问的不知道如何填写的字段都可以通过询问Trae或Windsurf完成，最后支付5美元就可以完成注册。注意这里不支持微信和支付宝及国内银行卡，需要使用国外信用卡或google pay完成支付。
+登录谷歌账号之后跟随开发者注册流程走完即可，所有有疑问的不知道如何填写的字段都可以通过询问Trae或Windsurf完成，最后支付5美元就可以完成注册。注意这里不支持🛰️和支付宝及国内银行卡，需要使用国外信用卡或google pay完成支付。
 
 完成开发者注册后，进入开发者中心就可以看到上传插件的入口了：
 
@@ -4406,9 +4406,9 @@ https://chromewebstore.google.com/category/extensions?utm_source=ext_sidebar&amp
 
 ## 关键：域名购买和绑定（待写）
 
-# 降噪AI（微信服务号）
+# 降噪AI（🛰️服务号）
 
-首先，欢迎大家打开微信，扫一扫关注我们的服务号产品（暂停服务了）：
+首先，欢迎大家打开🛰️，扫一扫关注我们的服务号产品（暂停服务了）：
 
 ![](img/d100620b2168c01e7ddda9d1b9e6cffe.png)
 
@@ -4705,6 +4705,6 @@ ok，如果是这样，黄叔推荐个从@泛函 那里看到的一个分享，�
 
 ![](img/5b9d5de894f428a440ca5cbdea044be2.png)
 
-右图是黄叔的公众号“AI产品黄叔”，后面会更新更多AI编程相关的内容，欢迎关注。
+右图是黄叔的👸号“AI产品黄叔”，后面会更新更多AI编程相关的内容，欢迎关注。
 
 ![](img/f57b04ae20abcdd031a2e0cc85fac746.png)

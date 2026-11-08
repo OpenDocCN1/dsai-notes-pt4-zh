@@ -8,7 +8,7 @@
 
 > **B 站：** https://b23.tv/AlP0gZ8
 
-> **小红书：**http://xhslink.com/a/KSdWaVGdj27Z
+> **📕：**http://xhslink.com/a/KSdWaVGdj27Z
 
 > **抖音：**https://v.douyin.com/CeivEpGv/
 

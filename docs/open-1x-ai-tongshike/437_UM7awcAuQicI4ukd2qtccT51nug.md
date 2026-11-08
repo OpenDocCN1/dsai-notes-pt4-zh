@@ -41,7 +41,7 @@
 
 ### 提交公开可查阅的笔记链接
 
-**笔记标题带“****D**atawhale X 魔搭 AI夏令营”，不限笔记平台，发布到CSDN、知乎、哔哩哔哩、博客园、小红书、公众号、掘金等公开平台。
+**笔记标题带“****D**atawhale X 魔搭 AI夏令营”，不限笔记平台，发布到CSDN、知乎、哔哩哔哩、博客园、📕、👸号、掘金等公开平台。
 
 **0分笔记情况**：
 
@@ -79,7 +79,7 @@
 
 +   **Task01优秀笔记**[夏令营优秀笔记](https://exn8g66dnwu.feishu.cn/sheets/M4LFsR8oAhnFKZtGdZHcDJn4ncg?sheet=c59c8m)
 
-| **序号** | **群号** | **微信昵称** | **笔记链接** | **打分（0-15）** | **优秀理由** |
+| **序号** | **群号** | **🛰️昵称** | **笔记链接** | **打分（0-15）** | **优秀理由** |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 学习群10 | meme | Datawhale X 魔搭 AI夏令营 | 11 | 完成了两个task的内容，并且笔记翔实，有自己的运行结果 |
 | 2 | 学习群2 | 孙大圣 | [h](https://blog.csdn.net/spring5/article/details/141086707)ttps://blog.csdn.net/spring5/article/details/141086707 | 11 | 过程流畅，内容较为全面，效果不错 |
@@ -93,7 +93,7 @@
 | 10 | 学习群3 | 天色天歌天籁音 | Datawhale X 魔搭 AI 夏令营-AIGC 方向 | 14 | 排版优美，内容丰富 |
 | 11 | 学习群5 | 🐍空🐰 | http://t.csdnimg.cn/ikpSZ | 13 | 拓展了文生图相关知识点，并进行了模型参数解读和测试，有进行自主学习和探索 |
 | 12 | 学习群5 | 。 | [h](https://blog.csdn.net/qq_63116907/article/details/141057717)ttps://blog.csdn.net/qq_63116907/article/details/141057717 | 10 | 对于代码进行了探索和理解 |
-| 13 | 学习群5 | 细雨在怀 | 61 小红薯60D37379发布了一篇小红书笔记，快来看吧！ 😆 eol2UmFQIv3XbhK 😆 http://xhslink.com/r2DkPS，复制本条信息，打开【小红书】App查看精彩内容！ | 10 | 写出了自己的真实感受，偏情感体会类的笔记 |
+| 13 | 学习群5 | 细雨在怀 | 61 小红薯60D37379发布了一篇📕笔记，快来看吧！ 😆 eol2UmFQIv3XbhK 😆 http://xhslink.com/r2DkPS，复制本条信息，打开【📕】App查看精彩内容！ | 10 | 写出了自己的真实感受，偏情感体会类的笔记 |
 | 14 | 学习群5 | 钢蹦儿 | [h](https://blog.csdn.net/weixin_43680622/article/details/141056997)ttps://blog.csdn.net/weixin_43680622/article/details/141056997 | 11 | 写出了自己的真实体会和感受，同时对于baseline代码进行了探究，总结了自己遇到的报错和问题 |
 | 15 | 学习群5 | 大雾鸡蛋花 | [https](https://blog.csdn.net/2302_79699802/article/details/141104754?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104754%22%2C%22source%22%3A%222302_79699802%22%7D)://blog.csdn.net/2302_79699802/article/details/141104754?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104754%22%2C%22source%22%3A%222302_79699802%22%7D | 10 | 从笔记中可以看出很认真的在学习，并有自身想法 |
 | 16 | 学习群5 | 云姐姐（爱小桔子) | [https://mp.weixin.qq.com/s/SF](https://mp.weixin.qq.com/s/SFgng7YKvkwa-qnsv86Kaw)gng7YKvkwa-qnsv86Kaw | 10 | 思维导图清晰简洁、学习认真 |
@@ -106,7 +106,7 @@
 | 23 | 学习群6 | Amen | [ht](https://juejin.cn/post/7401033107807879202?share_token=573d1b10-6e53-4a48-96f1-f88365b49fca)tps://juejin.cn/post/7401033107807879202?share_token=573d1b10-6e53-4a48-96f1-f88365b49fca | 14 | 内容充实有创新有深度的思考 |
 | 24 | 学习群7 | f | http://t.csdnimg.cn/vck10 | 12 | 虽然前半部分与baseline一致，但是作为补充也算合理，后续的步骤齐全，promote设定有自己理解 |
 | 25 | 学习群7 | 抱了一只狗 | Datawhale × 魔搭 AI 夏令营 第四期 AIGC文生图方向 | 11 | 排版整洁，内容具有自己的扩展和思考，但具体的步骤阐述较少 |
-| 26 | 学习群7 | 风荷举 | Task1共产出两篇小红书笔记：1. 90 ShirleyAI发布了一篇小红书笔记，快来看吧！ Vnl0TsKNItNRZnP http://xhslink.com/JXVtQS，复制本条信息，打开【小红书】App查看精彩内容！2. 54 ShirleyAI发布了一篇小红书笔记，快来看吧！ 94Zss3UJeZTj1iO http://xhslink.com/4w2tQS，复制本条信息，打开【小红书】App查看精彩内容！ | 12 | 非常认真，内容排版整洁，  内容有自己的思考和扩展，有详细的推导过程呈现 |
+| 26 | 学习群7 | 风荷举 | Task1共产出两篇📕笔记：1. 90 ShirleyAI发布了一篇📕笔记，快来看吧！ Vnl0TsKNItNRZnP http://xhslink.com/JXVtQS，复制本条信息，打开【📕】App查看精彩内容！2. 54 ShirleyAI发布了一篇📕笔记，快来看吧！ 94Zss3UJeZTj1iO http://xhslink.com/4w2tQS，复制本条信息，打开【📕】App查看精彩内容！ | 12 | 非常认真，内容排版整洁，  内容有自己的思考和扩展，有详细的推导过程呈现 |
 | 28 | 学习群7 | 吃西瓜大王 | [Task 1 从零入门AI生图原理&amp;实践 笔记_](https://i26jbpcu8a.feishu.cn/docx/A0EcdTkfLo8WBjxVxBHceMZZnac?from=from_copylink)Datawhale X 魔搭 AI夏令营 | 10 | 内容详实有扩展，排版整洁，如果加上自己的AI生图图片合集就更优秀了 |
 | 29 | 学习群7 | 徒此揖清芬 | [https://blog.csdn.net/gonewitn/article/details/141104749?csdn_share_tail=%7B%22type%22%3A%22bl](https://blog.csdn.net/gonewitn/article/details/141104749?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104749%22%2C%22source%22%3A%22gonewitn%22%7D)og%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104749%22%2C%22source%22%3A%22gonewitn%22%7D | 10 | 发现问题并解决问题 |
 | 30 | 学习群7 | 读书 | D[atawhale X 魔搭AI夏令营](https://zhuanlan.zhihu.com/p/713809293) 第四期AIGC文生图方向Task1笔记 - 读书的文章 - 知乎 https://zhuanlan.zhihu.com/p/713809293 | 10 | 具有自己的思考与扩展 |

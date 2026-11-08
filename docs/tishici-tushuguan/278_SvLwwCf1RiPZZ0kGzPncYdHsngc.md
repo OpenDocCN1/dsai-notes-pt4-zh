@@ -4,7 +4,7 @@
 
 > 关于三亿
 
-> 公众号：电流之下
+> 👸号：电流之下
 
 > https://mp.weixin.qq.com/s/cP7l4tkPttYzFRfRwvejAg
 

@@ -1,6 +1,6 @@
 # 出境规则的相关讨论
 
-> 来源：[https://docs.feishu.cn/docx/DKridkTzdoG3uMxlstDcQQ5qnXG](https://docs.feishu.cn/docx/DKridkTzdoG3uMxlstDcQQ5qnXG)
+> 来源：[https://docs.feishu.cn/docx/DKridkTzdoG3uMxlstDc🐧5qnXG](https://docs.feishu.cn/docx/DKridkTzdoG3uMxlstDc🐧5qnXG)
 
 **-问：**关于  2019年网信办 发布的《个人信息出境安全评估办法（征求意见稿）》与2021年网信办 发布的 《数据出境安全评估办法（征求意见稿）》的问题，这两者  之后会都通过并生效吗？还是后者可能会替代前者？
 

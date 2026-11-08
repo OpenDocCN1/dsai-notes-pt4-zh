@@ -4,7 +4,7 @@
 
 > 原文链接： https://mp.weixin.qq.com/s/93WmfW8SYfJRTGLASpupug
 
-> 来源：公众号：新智元
+> 来源：👸号：新智元
 
 ![](img/30c8fd183e0498102d223626e7f72d28.png)
 

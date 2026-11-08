@@ -54,7 +54,7 @@
 
 [案例拆解：AI Agent 从原理到应用](https://qqs7y1hozd1.feishu.cn/wiki/NScCw5vcMiANTzkLUkecfwXgnFc)
 
-[基于RAG的LLM应用](https://qqs7y1hozd1.feishu.cn/wiki/XqgCwJ3vaiMRRAkpTJCcQQBlnPc)
+[基于RAG的LLM应用](https://qqs7y1hozd1.feishu.cn/wiki/XqgCwJ3vaiMRRAkpTJCc🐧BlnPc)
 
 [AI Agent 从原理到应用，全解](https://qqs7y1hozd1.feishu.cn/wiki/QEOiwwCN8iuCbrk9eg5cGFe8naf)
 

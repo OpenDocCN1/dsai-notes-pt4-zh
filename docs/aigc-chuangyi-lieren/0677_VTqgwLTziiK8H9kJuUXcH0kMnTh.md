@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/EDnRd0OpboIFCLxdUmzcX5XBnXf](https://aigcreative.feishu.cn/docx/EDnRd0OpboIFCLxdUmzcX5XBnXf)
 
-> 内容整理自：公众号：AI艺术家
+> 内容整理自：👸号：AI艺术家
 
 # SDXL模型最佳拍档！COMFY UI上手指南：
 

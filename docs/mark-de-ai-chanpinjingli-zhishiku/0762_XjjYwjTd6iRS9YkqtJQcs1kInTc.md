@@ -27,7 +27,7 @@
 | 6 | executing-plans | 把计划拆成可执行的步骤，适合想法多但落地难的人 | 9.2K |  |
 | 7 | marketing-ideas | 营销创意发散，做推广方案的时候可以用它找灵感 | 9.0K |  |
 | 8 | copy-editing | 文案润色和校对，帮你把初稿打磨得更好 | 8.6K |  |
-| 9 | social-content | 专门做社交媒体内容的，小红书、朋友圈、短视频文案都能用 | 8.6K |  |
+| 9 | social-content | 专门做社交媒体内容的，📕、朋友圈、短视频文案都能用 | 8.6K |  |
 | 10 | reflection | 帮你做复盘和反思，适合项目结束后总结经验 | 7K |  |
 
 ## 设计和视觉类
@@ -39,7 +39,7 @@
 | 3 | ui-ux-pro-max | 更专业，关注用户体验和交互设计，适合做产品的人 | 29. 1K |  |
 | 4 | canvas-design | 做封面图、海报、视觉设计，不用打开PS或Figma | 8.5K |  |
 | 5 | tailwind-design-system | Tailwind CSS设计系统，做前端的配合着用效果很好 | 8.0K |  |
-| 6 | baoyu-cover-1mage | 宝玉出的封面图 Skil1，中文圈特别火，做公众号封面质量不错 | 3.6K |  |
+| 6 | baoyu-cover-1mage | 宝玉出的封面图 Skil1，中文圈特别火，做👸号封面质量不错 | 3.6K |  |
 | 7 | baoyu-comic | 宝玉出的漫画风格 Ski11，做趣味配图的 | 3.3K |  |
 | 8 | baoyu-infographic | 宝玉出的信息图 Skil1，把数据和信息变成好看的图表 | 3.0K |  |
 | 9 | ai-image-generation | AI生图的 Skil1，帮你生成配图和素材 | 667 |  |

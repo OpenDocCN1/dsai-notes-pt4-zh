@@ -54,7 +54,7 @@
 
 1.  智谱[发布](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652681809&idx=1&sn=59d48990144e7d166b789b29d8b61fe0) AutoClaw 桌面版 (链接)：将 OpenClaw 打包为一键安装应用，1分钟完成安装并集成飞书，内置 Pony-Alpha-2 模型，支持模型热插拔与50+预制技能，大幅降低使用门槛。
 
-1.  **腾讯上线「鹅虾」产品** ([链接](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247873450&idx=2&sn=b19e6225631834a2914076a214b60631))：腾讯发布WorkBuddy和QClaw两款龙虾产品，前者可一键部署并接入QQ、飞书、钉钉等办公软件执行任务，后者预计下周公测，支持直接接入微信进行远程对话与任务操控。
+1.  **腾讯上线「鹅虾」产品** ([链接](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247873450&idx=2&sn=b19e6225631834a2914076a214b60631))：腾讯发布WorkBuddy和QClaw两款龙虾产品，前者可一键部署并接入🐧、飞书、钉钉等办公软件执行任务，后者预计下周公测，支持直接接入🛰️进行远程对话与任务操控。
 
 1.  Op[en](https://www.ithome.com/0/927/782.htm)AI Atlas 浏览器支持多账号 (链接)：更新后支持用户在同一浏览器中通过独立账号分别管理个人、工作及学校账户，解决了长期存在的使用痛点。
 

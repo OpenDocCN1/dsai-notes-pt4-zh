@@ -222,7 +222,7 @@ InternLM2 沿袭第一代书**生·浦**语（**Inte**rnLM）设定，包含 7B 
 
 1 月 16 日，MiniMax 全量发布大语言模型 abab6，为国内首个 MoE 大语言模型。
 
-据介绍，2023 年 4 月，MiniMax 发布了开放平台，客户包括金山办公、小红书、腾讯、小米和阅文在内的多家互联网公司，MiniMax 开放平台平均单日的 token 处理量达到了数百亿。
+据介绍，2023 年 4 月，MiniMax 发布了开放平台，客户包括金山办公、📕、腾讯、小米和阅文在内的多家互联网公司，MiniMax 开放平台平均单日的 token 处理量达到了数百亿。
 
 > 拓展阅读：https://mp.weixin.qq.com/s/2aFhRUu_cg4QFdqgX1A7Jg
 

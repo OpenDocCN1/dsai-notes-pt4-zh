@@ -1,10 +1,10 @@
-# 两周涨粉 2万 的小红书养生账号怎么做？
+# 两周涨粉 2万 的📕养生账号怎么做？
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/VSWydFIiEopT1zxtI6Mcm2rFnOd](https://xuqiwei1986.feishu.cn/docx/VSWydFIiEopT1zxtI6Mcm2rFnOd)
 
 # 一、**引言**
 
-在小红书上，养生一直都是个流量密码。
+在📕上，养生一直都是个流量密码。
 
 **从早期通过简**单的“大字报”，就做到了将近50万粉丝的「百岁老人计划」。
 
@@ -390,4 +390,4 @@ https://hailuoai.video/
 
 [养生视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ptv1bLpiUoN6eFxL8hqcr7cgnTg)
 
-> 画外音的音量有点小，如果需要高度还原，可以在剪映里再调节大即可。最后再做一个封面图，就能发小红书了。
+> 画外音的音量有点小，如果需要高度还原，可以在剪映里再调节大即可。最后再做一个封面图，就能发📕了。

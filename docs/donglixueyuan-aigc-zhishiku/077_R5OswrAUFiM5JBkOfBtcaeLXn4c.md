@@ -46,7 +46,7 @@
 
 >
 
-> 领取智设大礼包请关注公众号：智设AI
+> 领取智设大礼包请关注👸号：智设AI
 
 > 资源文章：https://mp.weixin.qq.com/s?__biz=Mzg2NTkxNDM2NA==&mid=2247485307&idx=1&sn=f94aea55aa2d7a848731425551254cf0&chksm=ce539be8f92412fe49cd5dcce925b64a2534c614f59e59680e766fad79dfca70eb99dc0bd08b&scene=126&sessionid=1684477143#rd
 
@@ -96,7 +96,7 @@
 
 ### 五竹 机器人
 
-+   手把手带你把GPT接入微信公众号
++   手把手带你把GPT接入🛰️👸号
 
 +   玩转GPT指南
 
@@ -122,7 +122,7 @@
 
 > 欢迎进入智设AIGC学习交流群～
 
-> 《手把手带你把GPT接入微信公众号》 https://docs.qq.com/doc/DRWpwYVJXcVNsUkpl
+> 《手把手带你把GPT接入🛰️👸号》 https://docs.qq.com/doc/DRWpwYVJXcVNsUkpl
 
 >
 
@@ -198,7 +198,7 @@
 
 ### 极客时间 21 天 AIGC 行动营
 
-+   手把手带你把GPT接入微信公众号
++   手把手带你把GPT接入🛰️👸号
 
 +   玩转GPT指南
 

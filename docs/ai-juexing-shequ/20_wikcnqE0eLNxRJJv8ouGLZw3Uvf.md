@@ -8,7 +8,7 @@
 
 [懒人必备！3种用ChatGPT打造999+点赞爆款的选题方法（尊享联网版）](https://fjt9w880tn.feishu.cn/docx/M0JDdADBAo9PI6xqWY1cTdMHn8g)
 
-[胎教级标题党培训手册——4步让GPT成为小红书标题大师](https://fjt9w880tn.feishu.cn/docx/XxczdnuchoE7JtxZrO8cn4eGncb)
+[胎教级标题党培训手册——4步让GPT成为📕标题大师](https://fjt9w880tn.feishu.cn/docx/XxczdnuchoE7JtxZrO8cn4eGncb)
 
 [错过了就后悔！3步用GPT教你轻松掌握抖音18个爆款密码，小白直接变大神](https://fjt9w880tn.feishu.cn/docx/ATkmdw05so8PnCx0CEIcqEdXnMf)
 
@@ -18,7 +18,7 @@
 
 [《AI变现异常值案例库》——第1期](https://ry5hwpuf7b.feishu.cn/docx/LLvLdO3s8oHRoTxniOscOKDanEd)
 
-投喂自己的私域数据给GPT,接入企业微信群问答
+投喂自己的私域数据给GPT,接入企业🛰️群问答
 
 [把AI带进你的兴趣世界：0门槛模型训练带来的可能](https://ua5rxrm4rrn.feishu.cn/docx/DSyzd4kkRoqj0mxLsBicZhQ7nxg)
 
@@ -26,7 +26,7 @@ https://articles.zsxq.com/id_pxbt7n0vh9c5.html
 
 [知遇领跑AIGC课程](https://cr9005h164.feishu.cn/docx/TrqddqiWfoS0pSxlYoIc1zANn0v)
 
-[日入1000+小红书卖头像赚钱案例含开店流程！](https://rcgmt5ea2t.feishu.cn/docx/YIV4dmgHVoH6jGxaZEJccDFnnVg)
+[日入1000+📕卖头像赚钱案例含开店流程！](https://rcgmt5ea2t.feishu.cn/docx/YIV4dmgHVoH6jGxaZEJccDFnnVg)
 
 [腾讯云GPU服务器SD安装使用教程](https://mv7x2w5hy8.feishu.cn/docx/DlGYd5rbZoDv5qxvsO5cCZWlnTg)
 

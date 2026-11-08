@@ -141,6 +141,6 @@ https://www.wjx.cn/vm/YTYtpox.aspx#
 
 ![](img/4116a43357b726591df328562d8ae012.png)
 
-## 微信公众号【AGI 观察】
+## 🛰️👸号【AGI 观察】
 
 ![](img/72993e6698a595e80cc0e1123fadf7b9.png)

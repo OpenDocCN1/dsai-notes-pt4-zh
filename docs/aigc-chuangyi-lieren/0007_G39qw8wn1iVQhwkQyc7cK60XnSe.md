@@ -16,7 +16,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/fzoNf3NWwJuDSthi67QySg)qq.com/s/fzoNf3NW...
 
-> 公众号：赛博禅心，金色传说大聪明
+> 👸号：赛博禅心，金色传说大聪明
 
 本系列分两篇，本篇为上：
 

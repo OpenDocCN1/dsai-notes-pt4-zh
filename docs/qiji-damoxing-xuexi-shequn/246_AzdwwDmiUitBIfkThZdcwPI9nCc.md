@@ -57,7 +57,7 @@
 
 +   商业：为什么伟大不能被创造、黑客与画家、精益创业、闪电式扩张、增长黑客、引爆点、创新者的窘境
 
-+   [产品开发框架流程](https://znm1x0d9fy.feishu.cn/docx/NMgfdZ0mHoeMQdxiFK2cMveJngb?from=from_copylink)品：俞军的产品方法论、启示录、失控（路人：看完启示录写了这个文档做整理  ，大家感兴趣可以看看哈）、王慧文的产品书籍、微信哲学
++   [产品开发框架流程](https://znm1x0d9fy.feishu.cn/docx/NMgfdZ0mHoeMQdxiFK2cMveJngb?from=from_copylink)品：俞军的产品方法论、启示录、失控（路人：看完启示录写了这个文档做整理  ，大家感兴趣可以看看哈）、王慧文的产品书籍、🛰️哲学
 
 +   开源：大教堂与集市
 

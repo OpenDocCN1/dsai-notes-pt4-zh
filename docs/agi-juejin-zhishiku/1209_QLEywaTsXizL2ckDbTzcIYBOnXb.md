@@ -1,6 +1,6 @@
 # LLM（廿八）：解读 Mamba 2，兼谈 LLM 的统一理论
 
-> 来源：[https://agijuejin.feishu.cn/docx/Ly9LdXmdLoeSu0xQQ6VcfHUNnrb](https://agijuejin.feishu.cn/docx/Ly9LdXmdLoeSu0xQQ6VcfHUNnrb)
+> 来源：[https://agijuejin.feishu.cn/docx/Ly9LdXmdLoeSu0x🐧6VcfHUNnrb](https://agijuejin.feishu.cn/docx/Ly9LdXmdLoeSu0x🐧6VcfHUNnrb)
 
 > 作者：紫气东来
 

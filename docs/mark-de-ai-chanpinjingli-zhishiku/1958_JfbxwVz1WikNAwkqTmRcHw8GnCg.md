@@ -1,4 +1,4 @@
-# 科学上网，魔法有需要自取
+# 🪜，魔法有需要自取
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/VKgadJmy2owSHZxyHflcePmFnIf](https://qqs7y1hozd1.feishu.cn/docx/VKgadJmy2owSHZxyHflcePmFnIf)
 

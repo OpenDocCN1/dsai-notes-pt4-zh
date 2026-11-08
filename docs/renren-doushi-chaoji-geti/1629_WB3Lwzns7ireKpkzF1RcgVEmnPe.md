@@ -82,7 +82,7 @@ https://medium.com/cowboy-ventures/the-new-infra-stack-for-generative-ai-9db8f29
 
 作者：Vela，Yihao，Leo
 
-来源公众号：深思SenseAI（ID：gh_a54fc6d3826c）；关注全球 AI 前沿，走进科技创业公司，提供产业多维深思。
+来源👸号：深思SenseAI（ID：gh_a54fc6d3826c）；关注全球 AI 前沿，走进科技创业公司，提供产业多维深思。
 
 本文由人人都是产品经理合作媒体 @深思SenseAI 授权发布，未经许可，禁止转载。
 

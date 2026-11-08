@@ -30,4 +30,4 @@
 
 ### 为什么我的 issue 或 PR 没有得到回应？
 
-我们[贡献者指南](https://deepwisdom.feishu.cn/wiki/Oimhwi4M7iJsjQkhD79cv6Ucnqb)安排工程师定期检查并及时跟进 issue 或 PR 的新更新。但是，由于时间安排和复杂性问题，可能会有一些延迟。如果你清楚你的 issue 或 PR 涉及的模块，你可以直接在 中邀请 [参考审查者]。此外，你还可以在 Discord 或微信群中发布相应的 issue 或 PR 进行讨论。
+我们[贡献者指南](https://deepwisdom.feishu.cn/wiki/Oimhwi4M7iJsjQkhD79cv6Ucnqb)安排工程师定期检查并及时跟进 issue 或 PR 的新更新。但是，由于时间安排和复杂性问题，可能会有一些延迟。如果你清楚你的 issue 或 PR 涉及的模块，你可以直接在 中邀请 [参考审查者]。此外，你还可以在 Discord 或🛰️群中发布相应的 issue 或 PR 进行讨论。

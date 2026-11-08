@@ -35,7 +35,7 @@ PS.安装后，左键双击-选项-常规设置，取消“自动检测更新”
 | 油管 | yt | http://youtube.com/results?q={query} | http://suggestqueries.google.com/complete/search?client=youtube&amp;ds=yt&amp;client=firefox&amp;q={query} |
 | 推特 | t | https://twitter.com/search?q={query} | http://suggestqueries.google.com/complete/search?client=witter&amp;ds=yt&amp;client=firefox&amp;q={query} |
 | B站 | bl | https://search.bilibili.com/all?keyword={query}&amp;order=click | https://search.bilibili.com/all?keyword={query}&amp;tids=36 |
-| 小红书 | xhs | https://www.xiaohongshu.com/search_result?keyword={query} | https://www.xiaohongshu.com/search_result?keyword={query} |
+| 📕 | xhs | https://www.xiaohongshu.com/search_result?keyword={query} | https://www.xiaohongshu.com/search_result?keyword={query} |
 | GitHub | git | https://github.com/search?q={query} | cmd /k gh {query} |
 | 抖音 | dy | https://www.douyin.com/search/{query} | cmd /k tt {query} |
 

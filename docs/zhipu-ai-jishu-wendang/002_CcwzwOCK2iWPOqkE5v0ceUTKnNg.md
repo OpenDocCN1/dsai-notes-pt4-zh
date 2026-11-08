@@ -92,7 +92,7 @@ GLM‑Image 的diffusion decoder接受由自回归模型生成的semantic-VQ tok
 
 ### 文字到图像
 
-## 🏠 公众号
+## 🏠 👸号
 
 ![](img/2d6a4fd4907b104d07c28056261c3835.png)
 

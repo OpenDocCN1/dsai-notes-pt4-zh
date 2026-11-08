@@ -114,7 +114,7 @@ https://www.youtube.com/watch?v=McYBgZrORi4
 
 ![](img/cada6fbbaace3348ada7c6b65bf1e615.png)
 
-本次活动于2025年10月7日现场录制。人工智能正以惊人的速度发展，引发了人们对我们社会和日常生活在不远将来可能发生变化的极大焦虑。许多人最关心的：就业。专家小组将这些猜测拉近现实，探讨诸如：人工智能将取代哪些工作岗位？将创造哪些新工作岗位？人工智能将如何影响工作环境、工资、工会以及整体经济？特邀嘉宾达伦·阿西莫格鲁，诺贝尔奖得主，[麻省理工学院经济学教授;保罗·克鲁格](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmtrOFdyVFFEQTRPNnVWYjUxZmNqVHJlamRjd3xBQ3Jtc0ttVzNmRDdiS2doRGV4b244ZzRwUFF6c0ZhbF9jQWNrTmo1dWc2bXBSM01YZ3NRdTkwRFd3X2hwa1k3R2RScFF4VC1vVWlkWE1DNl92SWNCRDBWZ1dkc294ZFVJVlV5YWxUVXJBZWNTRU1wYjIwd1ZnQQ&q=http%3A%2F%2Fwww.gc.cuny.edu%2Fpublic-programs&v=McYBgZrORi4)曼，诺贝尔奖得主，前《纽约时报》专栏作家，纽约市立大学研究生中心经济学研究教授;丹妮尔·李，麻省理工学院大卫·萨诺夫技术管理教授;以及普林斯顿大学社会学与公共事务教授、《纽约时报》专栏作家泽伊内普·图菲克奇。由前《纽约时报》劳工记者、《被打倒：美国劳工的过去、现在与未来》作者史蒂文·格林豪斯主持。  由斯通社会经济不平等中心呈现。  欲了解更多活动信息，请访问：http://www.gc.cuny.edu/public-programs
+本次活动于2025年10月7日现场录制。人工智能正以惊人的速度发展，引发了人们对我们社会和日常生活在不远将来可能发生变化的极大焦虑。许多人最关心的：就业。专家小组将这些猜测拉近现实，探讨诸如：人工智能将取代哪些工作岗位？将创造哪些新工作岗位？人工智能将如何影响工作环境、工资、工会以及整体经济？特邀嘉宾达伦·阿西莫格鲁，诺贝尔奖得主，[麻省理工学院经济学教授;保罗·克鲁格](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmtrOFdyVFFEQTRPNnVWYjUxZmNqVHJlamRjd3xBQ3Jtc0ttVzNmRDdiS2doRGV4b244ZzRwUFF6c0ZhbF9jQWNrTmo1dWc2bXBSM01YZ3NRdTkwRFd3X2hwa1k3R2RScFF4VC1vVWlkWE1DNl92SWNCRDBWZ1dkc294ZFVJVlV5YWxUVXJBZWNTRU1wYjIwd1Zn🐧&q=http%3A%2F%2Fwww.gc.cuny.edu%2Fpublic-programs&v=McYBgZrORi4)曼，诺贝尔奖得主，前《纽约时报》专栏作家，纽约市立大学研究生中心经济学研究教授;丹妮尔·李，麻省理工学院大卫·萨诺夫技术管理教授;以及普林斯顿大学社会学与公共事务教授、《纽约时报》专栏作家泽伊内普·图菲克奇。由前《纽约时报》劳工记者、《被打倒：美国劳工的过去、现在与未来》作者史蒂文·格林豪斯主持。  由斯通社会经济不平等中心呈现。  欲了解更多活动信息，请访问：http://www.gc.cuny.edu/public-programs
 
 # 人工智能安全专家：到2030年只会剩下这5种工作！——罗曼·扬波尔斯基博士
 

@@ -89,11 +89,11 @@ COT = &quot;&quot;&quot;相关背景: 尼罗河是世界上最长的河流，长
 &quot;&quot;&quot;
 ```
 
-[关于规划推理的更多内容，](http://mp.weixin.qq.com/s?__biz=MzI0OTAzNTEwMw==&mid=2247483725&idx=1&sn=eee4882da7dec099edc32067c8c7c31a&chksm=e996e17ddee1686b5a07cbf242f07874945d9aee03b22969680c97070a381c5cb00ed6c56cec&scene=21#wechat_redirect)尤其是《 Reflexion框架 》它是如何设计Prompt，如何设计流程，请参考本人公众号获取更多的详细信息。
+[关于规划推理的更多内容，](http://mp.weixin.qq.com/s?__biz=MzI0OTAzNTEwMw==&mid=2247483725&idx=1&sn=eee4882da7dec099edc32067c8c7c31a&chksm=e996e17ddee1686b5a07cbf242f07874945d9aee03b22969680c97070a381c5cb00ed6c56cec&scene=21#wechat_redirect)尤其是《 Reflexion框架 》它是如何设计Prompt，如何设计流程，请参考本人👸号获取更多的详细信息。
 
 ###  2. 反思Prompt设计案例
 
-反思或者说精炼，是一种在现有问答基础上更进一步地指导模型进行自我优化和排除错误答案的过程。Reflexion框架中[设](http://mp.weixin.qq.com/s?__biz=MzI0OTAzNTEwMw==&mid=2247483757&idx=1&sn=c60b2fc88240e0ee675b3cbde9f0a331&chksm=e996e15ddee1684beb1f6e7afd87750532af3168e1b869044750b360e109e35b5c227fbc8b73&scene=21#wechat_redirect)计的Prompt如下，让他能够根据历史记录逐步排除选项，更多的关于Reflexion框架设计，请参考本人公众号文章《 万字长文深度解析Agent反思工作流框架Reflexion下篇：ReflectionAgent workflow 》。
+反思或者说精炼，是一种在现有问答基础上更进一步地指导模型进行自我优化和排除错误答案的过程。Reflexion框架中[设](http://mp.weixin.qq.com/s?__biz=MzI0OTAzNTEwMw==&mid=2247483757&idx=1&sn=c60b2fc88240e0ee675b3cbde9f0a331&chksm=e996e15ddee1684beb1f6e7afd87750532af3168e1b869044750b360e109e35b5c227fbc8b73&scene=21#wechat_redirect)计的Prompt如下，让他能够根据历史记录逐步排除选项，更多的关于Reflexion框架设计，请参考本人👸号文章《 万字长文深度解析Agent反思工作流框架Reflexion下篇：ReflectionAgent workflow 》。
 
 +   Prompt
 
@@ -124,7 +124,7 @@ img
 
 ###  3. 工具调用Prompt设计案例
 
-如果[你有大量的工具函数可能会被](http://mp.weixin.qq.com/s?__biz=MzI0OTAzNTEwMw==&mid=2247483825&idx=1&sn=c442fc3ba3767fe8b79331b5becfac9f&chksm=e996e181dee168971e4a3b8ebeafab012047308812023b42b9b1b13876940aed3cbbd109aac2&scene=21#wechat_redirect)调用，但你显然无法将所有Tools发给LLM，这可能会超过大模型的Token限制。你要怎么处理呢？一个简单的方法是采用分组，尽量将类似的函数组合到一起，然后再选择。我之前在《 HuggingGPT解析 》文章中有讨论，HuggingGPT使用HuggingFace的模型进行推理任务，要知道在当时HuggingFace上有大约673个模型，其接口和任务描述大约 2765000个字符，我们是不可能给它一次上传到LLM的。 好在，HuggingFace的模型是分类，分为19个类别，其中15个NLP任务类型，2个Audio任务类型，3个CV的任务类型。如下所示关于任务描述，他也包含了那句神奇的Think step by step，更多的关于HuggingGPT的Prompt设计和流程设计，请参考我的公众号文章《 万字长文深度解析规划框架：HuggingGPT 》。
+如果[你有大量的工具函数可能会被](http://mp.weixin.qq.com/s?__biz=MzI0OTAzNTEwMw==&mid=2247483825&idx=1&sn=c442fc3ba3767fe8b79331b5becfac9f&chksm=e996e181dee168971e4a3b8ebeafab012047308812023b42b9b1b13876940aed3cbbd109aac2&scene=21#wechat_redirect)调用，但你显然无法将所有Tools发给LLM，这可能会超过大模型的Token限制。你要怎么处理呢？一个简单的方法是采用分组，尽量将类似的函数组合到一起，然后再选择。我之前在《 HuggingGPT解析 》文章中有讨论，HuggingGPT使用HuggingFace的模型进行推理任务，要知道在当时HuggingFace上有大约673个模型，其接口和任务描述大约 2765000个字符，我们是不可能给它一次上传到LLM的。 好在，HuggingFace的模型是分类，分为19个类别，其中15个NLP任务类型，2个Audio任务类型，3个CV的任务类型。如下所示关于任务描述，他也包含了那句神奇的Think step by step，更多的关于HuggingGPT的Prompt设计和流程设计，请参考我的👸号文章《 万字长文深度解析规划框架：HuggingGPT 》。
 
 > 任务必须从以下选项中选择："token-classification"、"text2text-generation"、"summarization"、"translation"、"question-answering"、"conversational"、"text-generation"、"sentence-similarity"、"tabular-classification"、"object-detection"、"image-classification"、"image-to-image"、"image-to-text"、"text-to-image"、"text-to-video"、"visual-question-answering"、"document-question-answering"、"image-segmentation"、"depth-estimation"、"text-to-speech"、"automatic-speech-recognition"、"audio-to-audio"、"audio-classification"、"canny-control"、"hed-control"、"mlsd-control"、"normal-control"、"openpose-control"、"canny-text-to-image"、"depth-text-to-image"、"hed-text-to-image"、"mlsd-text-to-image"、"normal-text-to-image"、"openpose-text-to-image"、"seg-text-to-image"。可能存在多个相同类型的任务。逐步思考解决用户请求所需的所有任务。解析出尽可能少的任务，同时确保能够解决用户请求。注意任务之间的依赖关系和顺序。如果无法解析用户输入，你需要回复空 JSON []，否则必须直接返回 JSON。
 

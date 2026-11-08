@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/O8qSdxeZooDg87xvr9fcqPsWnz2](https://yunyinghui.feishu.cn/docx/O8qSdxeZooDg87xvr9fcqPsWnz2)
 
-> **来源公众号： ** 大淘宝技术
+> **来源👸号： ** 大淘宝技术
 
 > **推荐理由：**这篇文章系统地分享了如何高效使用 AI 编程工具，从底层原理到实际应用，涵盖了工具使用的最佳实践。文章强调理解原理（如 Token 机制、RAG）是高效使用 AI 工具的基础，结合场景化实践（如渐进开发、规则复用）和工程规范（文档、命名），才能最大化 AI 编程的效率与质量。
 

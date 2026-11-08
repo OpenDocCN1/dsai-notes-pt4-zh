@@ -196,7 +196,7 @@ https://api-docs.deepseek.com/zh-cn/
 
 ![](img/f9dbb719873513ebf1d9a6126fba171e.png)
 
-[0bc34iabqaaa2uaob4w2zztvbywdddraagaa.f10002.mp4 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NFQQbkULVo3DhhxFYntcLnoUnLg)
+[0bc34iabqaaa2uaob4w2zztvbywdddraagaa.f10002.mp4 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NF🐧bkULVo3DhhxFYntcLnoUnLg)
 
 # 写在最后
 

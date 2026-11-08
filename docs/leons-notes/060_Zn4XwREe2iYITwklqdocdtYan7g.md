@@ -202,7 +202,7 @@ https://mp.weixin.qq.com/s/MNsRNr40vDqXdvoQ1_R-4Q
 
 ### 100 万 token，一次能分析 1 小时 YouTube 视频，「大世界模型」火了
 
-https://mp.weixin.qq.com/s/8ONe7_ejQQIT1UwqDGK-vg
+https://mp.weixin.qq.com/s/8ONe7_ej🐧IT1UwqDGK-vg
 
 不仅 Sora，现如今大模型虽然发展迅速，然而其自身也存在缺点，比如在现实世界中不容易用语言描述的内容，模型理解起来非常困难，又比如这些模型难以处理复杂的长程任务。视频模型的出现在一定程度上缓解了这个问题，其能提供语言和静态图像中所缺少的时间信息，这种信息对 LLM 非常有价值。随着技术的进步，模型开始变得对文本知识和物理世界有了更好的理解，从而帮助人类。然而，由于内存限制、计算复杂性和有限的数据集，从数百万个视频和语言序列的 token 中进行学习挑战巨大。为了应对这些挑战，来自 UC 伯克利的研究者整理了一个包含各种视频和书籍的大型数据集，并且提出了大世界模型（Large World Model，LWM），利用 RingAttention 技术对长序列进行可扩展训练，逐渐将上下文大小从 4K 增加到 1M token。
 
@@ -314,7 +314,7 @@ https://mp.weixin.qq.com/s/xDHeUHyoW5PA1XiEp4YRVA
 
 🔒 Clarity 完成 1600 万美元种子轮融资 帮助组织识别和消除深度伪造视频
 
-### 融资超 10 亿美金，AI 公司「月之暗面」获红杉、小红书、美团、阿里新一轮投资｜智涌独家
+### 融资超 10 亿美金，AI 公司「月之暗面」获红杉、📕、美团、阿里新一轮投资｜智涌独家
 
 https://mp.weixin.qq.com/s/unr45dijDMG9WpImESIm0Q
 
@@ -322,7 +322,7 @@ https://mp.weixin.qq.com/s/unr45dijDMG9WpImESIm0Q
 
 💲 融资金额： 超 10 亿美金，估值 25 亿美金
 
-• 投资方： 红杉、小红书、美团、阿里
+• 投资方： 红杉、📕、美团、阿里
 
 🔄 发展方向： 研发通用多模态模型
 

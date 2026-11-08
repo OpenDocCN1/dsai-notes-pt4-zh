@@ -396,7 +396,7 @@
 
 ## 2、作者介绍
 
-经常更新的地方：公众号「星期一研究室」
+经常更新的地方：👸号「星期一研究室」
 
 Zelina的宝藏库：[Zelina的个人说明书](https://pzfqk98jn1.feishu.cn/wiki/wikcnTijikVNdkWdBEKzQpiA6ie)
 

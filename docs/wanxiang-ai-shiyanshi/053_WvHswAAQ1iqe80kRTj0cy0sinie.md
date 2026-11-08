@@ -1,6 +1,6 @@
 # AI对话能力学习
 
-> 来源：[https://yunyinghui.feishu.cn/docx/HLvYdPdLzouQQ1xO4rucUItXnQg](https://yunyinghui.feishu.cn/docx/HLvYdPdLzouQQ1xO4rucUItXnQg)
+> 来源：[https://yunyinghui.feishu.cn/docx/HLvYdPdLzou🐧1xO4rucUItXnQg](https://yunyinghui.feishu.cn/docx/HLvYdPdLzou🐧1xO4rucUItXnQg)
 
 > **适用人群：****互联网AI对话工具人群**
 

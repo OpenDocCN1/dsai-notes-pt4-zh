@@ -110,7 +110,7 @@ Google这个功能目前只对漂亮国开放，因为涉及隐私和法律，�
 open -n -a &quot;Google Chrome&quot; --args --variations-override-country=us
 ```
 
-这个方法只能用修改过的快捷方式打开才有效，点微信链接自动打开的Chrome没用，换电脑得重新弄。
+这个方法只能用修改过的快捷方式打开才有效，点🛰️链接自动打开的Chrome没用，换电脑得重新弄。
 
 ## 方法2：脚本激活（推荐）
 

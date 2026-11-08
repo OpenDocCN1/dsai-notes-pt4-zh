@@ -2,7 +2,7 @@
 
 > 来源：[https://agispace.feishu.cn/docx/PSJodvkaMovPlhxRXE0c7kyDnic](https://agispace.feishu.cn/docx/PSJodvkaMovPlhxRXE0c7kyDnic)
 
-> 公众号：黔岭苗七哥
+> 👸号：黔岭苗七哥
 
 > 一个工业设计师，AIGC 技术痴迷者
 

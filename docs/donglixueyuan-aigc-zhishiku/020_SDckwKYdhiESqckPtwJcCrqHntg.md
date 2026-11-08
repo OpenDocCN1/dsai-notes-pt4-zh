@@ -8,15 +8,15 @@
 
 [推荐风向标文案](https://articles.zsxq.com/id_i18hze6merw8.html)
 
-## 使用GPT做小红书
+## 使用GPT做📕
 
-[小红书平台实现 AI 绘画账号从0到1落地全流程记录](https://pqgr8fmaqf.feishu.cn/docx/VNQGdoxBUoSCXYxkudecvFM0nKg)
+[📕平台实现 AI 绘画账号从0到1落地全流程记录](https://pqgr8fmaqf.feishu.cn/docx/VNQGdoxBUoSCXYxkudecvFM0nKg)
 
-[揭秘！GPT写小红书让你一跃成爆款？💰🚀](https://vw33bncyqrt.feishu.cn/docx/MZJRdoKlloXt8exTeeEcPak0n1c)
+[揭秘！GPT写📕让你一跃成爆款？💰🚀](https://vw33bncyqrt.feishu.cn/docx/MZJRdoKlloXt8exTeeEcPak0n1c)
 
 知识星球 | 深度连接铁杆粉丝，运营高品质社群，知识变现的工具
 
-## 使用GPT做公众号
+## 使用GPT做👸号
 
 ## 使用GPT做知乎
 

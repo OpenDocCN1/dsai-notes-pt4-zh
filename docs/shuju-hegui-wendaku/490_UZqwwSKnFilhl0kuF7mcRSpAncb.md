@@ -1,8 +1,8 @@
-# 工作微信的归属
+# 工作🛰️的归属
 
 > 来源：[https://docs.feishu.cn/docx/F3J8d9A6yomJqixqQOgcqmQBnof](https://docs.feishu.cn/docx/F3J8d9A6yomJqixqQOgcqmQBnof)
 
-**-问：**大家怎么看这个案子？[员工离职，留下微信再走？](https://mp.weixin.qq.com/s?__biz=MzU2NzcwMTIwMA==&mid=2247523262&idx=1&sn=9865ff95c252049566278bc7d5356bbd&scene=21#wechat_redirect)
+**-问：**大家怎么看这个案子？[员工离职，留下🛰️再走？](https://mp.weixin.qq.com/s?__biz=MzU2NzcwMTIwMA==&mid=2247523262&idx=1&sn=9865ff95c252049566278bc7d5356bbd&scene=21#wechat_redirect)
 
 **-答1：**涉案是个微，看介绍是员工私自变更了认证，昵称。企微没办法变更认证的。很多场景下公司让个人用个微，就拿法律培训行业，很多都还是销售拿着个微来加人 推销的。
 

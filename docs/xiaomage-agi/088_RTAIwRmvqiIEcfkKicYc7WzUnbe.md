@@ -1,4 +1,4 @@
-# 一分钟教你快速搭建微信ChatGPT机器人！
+# 一分钟教你快速搭建🛰️ChatGPT机器人！
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/R1mddl0VtoxHH5xwPCScnPuQnyd](https://xmgtoagi.feishu.cn/docx/R1mddl0VtoxHH5xwPCScnPuQnyd)
 
@@ -6,7 +6,7 @@ Github登录账号后，先Forck下仓库：https://github.com/zhayujie/chatgpt-
 
 功能介绍：
 
-+    **多端部署：** 有多种部署方式可选择且功能完备，目前已支持个人微信，微信公众号和企业微信应用等部署方式
++    **多端部署：** 有多种部署方式可选择且功能完备，目前已支持个人🛰️，🛰️👸号和企业🛰️应用等部署方式
 
 +    **基础对话：** 私聊及群聊的消息智能回复，支持多轮会话上下文记忆，支持 GPT-3，GPT-3.5，GPT-4模型
 
@@ -60,7 +60,7 @@ https://railway.app?referralCode=W3r6mg
 
 ![](img/d311f7acfd7e034baec24e4b7ac31b5c.png)
 
-### 7）微信扫码登录
+### 7）🛰️扫码登录
 
 ![](img/1a4924b733c6218d3df3b39c25985919.png)
 

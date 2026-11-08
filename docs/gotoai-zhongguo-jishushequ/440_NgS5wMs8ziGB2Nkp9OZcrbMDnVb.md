@@ -302,7 +302,7 @@ Web 内容访问和自动化功能。支持以 AI 友好格式搜索、抓取和
 
 +   adhikasp/mcp-twikit 🐍 ☁️ - 与 Twitter 搜索和时间线进行交互
 
-+   gotoolkits/wecombot - 🚀 ☁️ - MCP服务器 Tools 应用程序，用于向企业微信群机器人发送各种类型的消息。
++   gotoolkits/wecombot - 🚀 ☁️ - MCP服务器 Tools 应用程序，用于向企业🛰️群机器人发送各种类型的消息。
 
 +   AbdelStark/nostr-mcp - 🌐 ☁️ - Nostr MCP 服务器，支持与 Nostr 交互，可发布笔记等功能。
 
@@ -1040,7 +1040,7 @@ AI助手可以通过翻译工具和服务在不同语言之间翻译内容。
 
 +   brianxiadong/ones-wiki-mcp-server ☕ ☁️/🏠 - 一个基于 Spring AI MCP 的服务，用于检索 ONES Wiki 内容并将其转换为 AI 友好的文本格式。
 
-+   caol64/wenyan-mcp 📇 🏠 🍎 🪟 🐧 - 文颜 MCP Server， 让 AI 将 Markdown 文章自动排版后发布至微信公众号。
++   caol64/wenyan-mcp 📇 🏠 🍎 🪟 🐧 - 文颜 MCP Server， 让 AI 将 Markdown 文章自动排版后发布至🛰️👸号。
 
 +   growilabs/growi-mcp-server 🎖️ 📇 ☁️ - 与 GROWI API 集成的官方 MCP 服务器。
 

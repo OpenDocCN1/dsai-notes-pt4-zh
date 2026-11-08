@@ -1,4 +1,4 @@
-# 微信表情包制作
+# 🛰️表情包制作
 
 > 来源：[https://aigcreative.feishu.cn/docx/DR99dBi3FogHEDx7swocK59AnSb](https://aigcreative.feishu.cn/docx/DR99dBi3FogHEDx7swocK59AnSb)
 

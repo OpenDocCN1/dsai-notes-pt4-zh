@@ -1,6 +1,6 @@
 # 1🈷️05日
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/MpVtdS7RUoQQUvxohmyckVyknhb](https://v11enp9ok1h.feishu.cn/docx/MpVtdS7RUoQQUvxohmyckVyknhb)
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/MpVtdS7RUo🐧UvxohmyckVyknhb](https://v11enp9ok1h.feishu.cn/docx/MpVtdS7RUo🐧UvxohmyckVyknhb)
 
 > 🔔AI情报助手早报「01月05日」
 
@@ -130,7 +130,7 @@
 
 +   智谱GLM-Coding套餐：
 
-+   [https://www.bigmodel.cn/glm-](https://www.bigmodel.cn/glm-coding?ic=NCUSKSTEQQ)coding?ic=NCUSKSTEQQ
++   [https://www.bigmodel.cn/glm-](https://www.bigmodel.cn/glm-coding?ic=NCUSKSTE🐧)coding?ic=NCUSKSTE🐧
 
 +   Chrome DevTools MCP：
 

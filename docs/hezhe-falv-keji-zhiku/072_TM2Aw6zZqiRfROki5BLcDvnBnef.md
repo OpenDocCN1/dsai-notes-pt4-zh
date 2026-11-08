@@ -500,7 +500,7 @@ Mary O'Carroll 认为，法律生态系统转型的核心正在律师事务所�
 
 💁🏻 适合对象：律所主任、管委会成员、团队负责人；数字化/信息化或 IT 负责人；以及对「AI+法律」和「法律科技」感兴趣的朋友
 
-💰 费用：3999 元/人/场，2 人同行 3499 元/人/场，更多组团优惠，请咨询法律修音机主理人（微信：18825075686）
+💰 费用：3999 元/人/场，2 人同行 3499 元/人/场，更多组团优惠，请咨询法律修音机主理人（🛰️：18825075686）
 
 👉 了解更多：#[律所 AI 共创营、](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3422598826815406082&scene=142#wechat_redirect)#[活动后续](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3435805156338319364&scene=142#wechat_redirect)
 

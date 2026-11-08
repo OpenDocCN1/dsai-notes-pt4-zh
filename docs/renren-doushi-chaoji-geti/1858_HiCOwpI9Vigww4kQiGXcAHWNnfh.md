@@ -28,7 +28,7 @@ PS素材（SD已经向photoshop开放插件）：
 
 SD可以PS提供素材
 
-# 小红书方法
+# 📕方法
 
 壁纸头像变现：
 
@@ -58,7 +58,7 @@ SD可以PS提供素材
 
 [IDO老徐GPT赚钱回忆录01~11连载](https://sc83ykpdyf.feishu.cn/docx/DjCvdCQKNofhfuxJ9SCcTDZHn5b)
 
-元峰：[微信“问一问”用的好，流量红利跑不了](https://esouqpttmy.feishu.cn/docx/K4T9dnukqotH1KxCnXocdx3WnCe)
+元峰：[🛰️“问一问”用的好，流量红利跑不了](https://esouqpttmy.feishu.cn/docx/K4T9dnukqotH1KxCnXocdx3WnCe)
 
 学长刚蝈：https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=214484415258241&inviter_id=218281111452881&share_from=ShareToWechat&keyword=0fsKVXkYk
 

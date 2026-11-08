@@ -255,6 +255,6 @@ TensorRT INT8模型在推理速度上优于HF模型和TensorRT模型，而Tensor
 
 kaggle比赛交流和组队
 
-加我的微信，邀你进群
+加我的🛰️，邀你进群
 
 ![](img/30dd3b6e4b478ce5f970ea0302081ead.png)

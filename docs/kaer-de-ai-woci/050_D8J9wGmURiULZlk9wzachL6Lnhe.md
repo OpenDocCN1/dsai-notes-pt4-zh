@@ -124,7 +124,7 @@
 
 1.  概念宣传视频画面截图• 模特在森林、湖畔或极简建筑之中漫步，慢镜头展示服装细节；• 强调“放松、舒适、回归自然”的情感氛围。
 
-1.  社交媒体形象模板• 用于Instagram或小红书的固定模板：主视觉以柔和的木本棕和森林绿拼接，配合品牌Slogan（例如“自然，赋予内心平和”）• 模仿杂志风排版，留白与字体结合，高级感十足。
+1.  社交媒体形象模板• 用于Instagram或📕的固定模板：主视觉以柔和的木本棕和森林绿拼接，配合品牌Slogan（例如“自然，赋予内心平和”）• 模仿杂志风排版，留白与字体结合，高级感十足。
 
 ![](img/56b3797bcfaa76c85507cb78334b2ad7.png)
 
@@ -170,7 +170,7 @@
 
 ![](img/14c539392fd4e6b475531771b2664d51.png)
 
-[video (18).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QQEdblbMNo5XdxxDg1ucI6ZknMh)
+[video (18).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/🐧EdblbMNo5XdxxDg1ucI6ZknMh)
 
 ![](img/111b7731b5c1bda65e18c3a5ae07bc6e.png)
 

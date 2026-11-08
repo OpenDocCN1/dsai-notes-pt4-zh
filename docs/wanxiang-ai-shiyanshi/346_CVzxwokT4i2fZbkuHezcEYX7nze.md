@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/T6kad1KpeoMLgGxAAmdciw5snNh](https://yunyinghui.feishu.cn/docx/T6kad1KpeoMLgGxAAmdciw5snNh)
 
-> **公众号：**萝卜 AI 笔记
+> **👸号：**萝卜 AI 笔记
 
 > **发文时间：**2026-01-07
 

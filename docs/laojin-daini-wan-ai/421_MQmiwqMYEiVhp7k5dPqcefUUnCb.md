@@ -1,4 +1,4 @@
-# 微信表情
+# 🛰️表情
 
 > 来源：[https://my.feishu.cn/docx/BnZqdqRb5o8y0JxzoficXNQLndh](https://my.feishu.cn/docx/BnZqdqRb5o8y0JxzoficXNQLndh)
 

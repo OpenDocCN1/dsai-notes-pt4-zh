@@ -34,7 +34,7 @@
 | --- | --- |
 | [3-决策树与集成算法.pdf](https://qqs7y1hozd1.feishu.cn/wiki/YylCwNet5ifNffkjTrPcxXLJnyc) | [4-聚类算法.pdf](https://qqs7y1hozd1.feishu.cn/wiki/VabgwfwXpiOd9XkpgOPcOmYfn6c) |
 | [5-贝叶斯算法.pdf](https://qqs7y1hozd1.feishu.cn/wiki/Upc1wu5beiqfflkO1CncpeTVn6f) | [6-支持向量机.pdf](https://qqs7y1hozd1.feishu.cn/wiki/KLOJwE5fUiROU6kRIj5cH2HknSf) |
-| [7-推荐系统.pdf](https://qqs7y1hozd1.feishu.cn/wiki/YsKOwzEQ1i1l2PkGQQVcxkuJnyg) | [8-xgboost.pdf](https://qqs7y1hozd1.feishu.cn/wiki/Wsx5wQrrGiirG0kshE5cfYzkncd) |
+| [7-推荐系统.pdf](https://qqs7y1hozd1.feishu.cn/wiki/YsKOwzEQ1i1l2PkG🐧VcxkuJnyg) | [8-xgboost.pdf](https://qqs7y1hozd1.feishu.cn/wiki/Wsx5wQrrGiirG0kshE5cfYzkncd) |
 | [9-LDA与PCA算法.pdf](https://qqs7y1hozd1.feishu.cn/wiki/GlPNwKvJwiO3O2kIDwccAcpanDc) | [10-EM算法.pdf](https://qqs7y1hozd1.feishu.cn/wiki/HMp7wHywWid2zzkU9lpccVfLnkd) |
 | [11-神经网络.pdf](https://qqs7y1hozd1.feishu.cn/wiki/IY6YwwCDPiWjjik5ChRciTkHn1e) | [12-word2vec.pdf](https://qqs7y1hozd1.feishu.cn/wiki/NhWCw97hxiCQAQkvDI4cmauHnqb) |
 | [机器学习实战.pdf](https://qqs7y1hozd1.feishu.cn/wiki/CLGSwCKh7ijfjPkTgJIcUdfgnEn) | [时间序列分析.pdf](https://qqs7y1hozd1.feishu.cn/wiki/RDCNwrlquiNsaLkGdsucPViOnJe) |

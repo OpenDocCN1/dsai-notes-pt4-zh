@@ -133,15 +133,15 @@ DeepSeek坚持开源路线，主动向全球开发者分享核心技术成果，
 
 [DeepSeek给普通人2025年的副业建议：](https://mp.weixin.qq.com/s/96555G0qLVyTWbe4uYpExQ)竟和刘润年度演讲提到的趋势100%吻合。
 
-## 7.4 辅助生产小红书笔记
+## 7.4 辅助生产📕笔记
 
-用 DeepSeek 生成小红书笔记，1 分钟 1 篇不是梦！
+用 DeepSeek 生成📕笔记，1 分钟 1 篇不是梦！
 
 # 8、更多关于 DeepSeek 商业化信息的通道
 
 ## 8.1 免费星球
 
-有个 4500+ 人的免费星球，里面分享 DeepSeek 信息、副业行动、个人成长、搞钱经验，微信扫码加入。
+有个 4500+ 人的免费星球，里面分享 DeepSeek 信息、副业行动、个人成长、搞钱经验，🛰️扫码加入。
 
 ![](img/5353cfcfc54f566bac45ad7f16dffa16.png)
 
@@ -161,6 +161,6 @@ DeepSeek坚持开源路线，主动向全球开发者分享核心技术成果，
 
 # 9、有问题如何联系六六
 
-加六六微信 **1353971071**，备注：**DS咨询**[六六副业2年半30W+的成长路径](https://viy7tklh1i.feishu.cn/docx/Tk9fdVPERou2q4xmn5Xc7fNan9c)获取六六副业2年半30W+的成长资料：
+加六六🛰️ **1353971071**，备注：**DS咨询**[六六副业2年半30W+的成长路径](https://viy7tklh1i.feishu.cn/docx/Tk9fdVPERou2q4xmn5Xc7fNan9c)获取六六副业2年半30W+的成长资料：
 
 ![](img/e177747944077416ca3ffdb0bcb064c5.png)

@@ -422,7 +422,7 @@ GenAI还促进了“推理”和“知识”的动态互动。在Zero-Shot CoT�
 
 1.  Zhang, Z., Zhang, X., Ren, Y., Shi, S., Han, M., Wu, Y., Lai, R., & Cao, Z. (2023). IAG: Induction-Augmented Generation Framework for Answering Reasoning Questions. Huawei Poisson Lab, China.
 
-【语言大模型推理最高 加速11 倍】 SiliconLLM是由硅基流动开发的高效、易用、可扩展的LLM推理加速引擎，旨在为用户提供开箱即用的推理加速能力，显著降低大模型部署成本，加速生成式AI产品落地。（技术合作、交流请添加微信：SiliconFlow01）
+【语言大模型推理最高 加速11 倍】 SiliconLLM是由硅基流动开发的高效、易用、可扩展的LLM推理加速引擎，旨在为用户提供开箱即用的推理加速能力，显著降低大模型部署成本，加速生成式AI产品落地。（技术合作、交流请添加🛰️：SiliconFlow01）
 
 ![](img/af56cc4f7e4375286a29ff068f1a834e.png)
 

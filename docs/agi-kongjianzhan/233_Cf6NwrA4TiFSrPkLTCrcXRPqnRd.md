@@ -4,7 +4,7 @@
 
 > 作者：雅雅说
 
-> 公众号：雅雅说
+> 👸号：雅雅说
 
 > 原文链接：https://mp.weixin.qq.com/s/jYic0NW_JgpDl35QPGGOpA
 

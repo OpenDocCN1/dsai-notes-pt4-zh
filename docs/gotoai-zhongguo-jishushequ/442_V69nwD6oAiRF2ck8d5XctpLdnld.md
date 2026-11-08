@@ -82,7 +82,7 @@ Coze：LLM平台界的“乐高”
 
 不管你懂不懂编程，Coze都能让你把脑洞里的AI智能体快速实现。
 
-可视化搭建、丰富的插件、知识库、工作流一应俱全，还支持一键发布到抖音、飞书、微信公众号、小程序、Discord、Telegram等各大平台。
+可视化搭建、丰富的插件、知识库、工作流一应俱全，还支持一键发布到抖音、飞书、🛰️👸号、小程序、Discord、Telegram等各大平台。
 
 ![](img/961f922922621dad4a1343befed96a6f.png)
 
@@ -100,7 +100,7 @@ Coze是闭源的，但它的功能比Dify更丰富。
 
 > Coze搭建AI Agent
 
-> 袋鼠帝，公众号：袋鼠帝AI客栈[DeepSeek接入智能体，开发速](http://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247507021&idx=1&sn=20c2465110e4d2bc1b50205ba45f2155&chksm=c0988d80f7ef0496ee5812d769b6930cfdc774f1f5cc12773dba29864f7459dfb5cccae17994#rd)度飞快，小白也能轻松搞定！【喂饭级教程】
+> 袋鼠帝，👸号：袋鼠帝AI客栈[DeepSeek接入智能体，开发速](http://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247507021&idx=1&sn=20c2465110e4d2bc1b50205ba45f2155&chksm=c0988d80f7ef0496ee5812d769b6930cfdc774f1f5cc12773dba29864f7459dfb5cccae17994#rd)度飞快，小白也能轻松搞定！【喂饭级教程】
 
 ** FastGPT：知识**库小能手 #开源 #RAG知**识库一句话： FastG**PT是个免费开源的AI知识库平台，让AI根据你的私有数据精准回答问题，是你的第二个"大脑"地址：tryfastgpt.ai
 
@@ -112,7 +112,7 @@ FastGPT 提供数据处理、模型调用、RAG检索和可视化AI工作流，M
 
 ![](img/4577f1f65f68a2274e04046b73cab191.png)
 
-Fastgpt的RAG效果是相当不错的，它能够简单、快速构建一个高质量知识库，我之前用它做我的微信AI助理产品的客服，挺棒的。
+Fastgpt的RAG效果是相当不错的，它能够简单、快速构建一个高质量知识库，我之前用它做我的🛰️AI助理产品的客服，挺棒的。
 
 一些企业级客户我也是帮助他们用fastgpt来构建知识库，轻量，简单，好用。
 

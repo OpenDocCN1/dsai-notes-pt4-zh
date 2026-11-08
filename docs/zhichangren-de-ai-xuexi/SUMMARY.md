@@ -1,5 +1,5 @@
 +   [职场人的 AI 学习](README.md)
-+   [必看文章合集=【AGI观察】微信公众号+知乎](01_EpyNwOUe1irXPlkcZZncQfFsn6f.md)
++   [必看文章合集=【AGI观察】🛰️👸号+知乎](01_EpyNwOUe1irXPlkcZZncQfFsn6f.md)
 +   [AI咨询服务和培训内容介绍](02_OoiWwxxd5iOE6tku9QzcrCDMnVe.md)
 +   [《AI基础课》“AI基础+智能体入门”双模块（编号 B1）](03_AINXw4D57iOXLdkaYRYcnzpXnCh.md)
 +   [《AI技能课》“提示词工程 + 智能体应用”双模块（编号 B2）](04_EbcxwyLkFif87qkyUsXcGseJnFc.md)

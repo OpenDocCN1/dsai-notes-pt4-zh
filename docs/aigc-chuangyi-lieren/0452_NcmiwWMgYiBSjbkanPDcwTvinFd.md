@@ -4,7 +4,7 @@
 
 > 来源：OpenAI Academy
 
-> 整理：公众号-AIGC创意猎人，何先森Kevin
+> 整理：👸号-AIGC创意猎人，何先森Kevin
 
 #  ChatGPT 通用篇
 

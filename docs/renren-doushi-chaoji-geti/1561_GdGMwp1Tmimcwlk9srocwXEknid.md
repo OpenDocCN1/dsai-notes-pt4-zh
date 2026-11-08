@@ -70,11 +70,11 @@ a16z显示ChatGPT Plus付费用户从2023年2月份开始成指数级增长， �
 
 [S](https://www.similarweb.com/website/openai.com/#interests)imilarWeb的OpenAI月度用户访问数据： https://www.similarweb.com/website/openai.com/#interests
 
-##### 欢迎大家关注DataLearner官方微信，接受最新的AI技术推送
+##### 欢迎大家关注DataLearner官方🛰️，接受最新的AI技术推送
 
 ![](img/b6e038be05ad61179b5b109fbbd8dc82.png)
 
-##### 我们建立了一个AI技术交流讨论群，目前1/2群已满，请大家加入3群交流，大家可以在群里讨论AI相关的技术问题和进展~若二维码失效可以先加我的微信（微信号：datalearner_ai）再进群哦~ 微信账号二维码
+##### 我们建立了一个AI技术交流讨论群，目前1/2群已满，请大家加入3群交流，大家可以在群里讨论AI相关的技术问题和进展~若二维码失效可以先加我的🛰️（🛰️号：datalearner_ai）再进群哦~ 🛰️账号二维码
 
 ![](img/d3f9f08d8cbe326b8ec3f9abfefbd304.png)
 

@@ -64,7 +64,7 @@ OpenI启智，鹏城实验室
 
 多维表格（YZyabiKG6a3JLosJ2jMc7Wl0nqh_tblKCWd7Nzwq7Q3h）
 
-其他感兴趣的学校也可以联系（微信号：CindyGan166）报名，添加请备注“高校-专业-年级”
+其他感兴趣的学校也可以联系（🛰️号：CindyGan166）报名，添加请备注“高校-专业-年级”
 
 **活动参与者：**
 

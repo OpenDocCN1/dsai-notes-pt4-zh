@@ -78,7 +78,7 @@
 
 # Introduction：人工智能概述
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 #参考目录，这里非常非常基础。对于已经对人工智能有基本的了解的阅读者大可跳过。
 
@@ -373,7 +373,7 @@ Eg. 如果想要建立起一个识别财务报表是否舞弊的模型：f(财�
 
 #  入门：多层感知器 Multiple-Layer Perceiver, MLP
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 #这一部份大量借鉴[3Blue1Brown](https://space.bilibili.com/88461692)做的视频！
 
@@ -870,7 +870,7 @@ Hey ChatGPT，什么是多元函数的梯度？
 
 # 入门：卷积神经网络 Convolutional Neural Network, CNN
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 #只对语言模型感兴趣的话就直接跳过！
 
@@ -1015,7 +1015,7 @@ CNN网络中三个关键的操作，其一是局部感受野，其二是权值�
 
 #  入门：循环神经网络  Recurrent Neural Networks，RNNs
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 #这里介绍的会稍微简单一点，许多内容如LSTM的工作原理我也做了折叠；在看第七章之前建议先保证速览过这一章，知道RNN是什么，和RNN的痛点。
 
@@ -1307,7 +1307,7 @@ GPU的牛逼之处在于超强的并行计算能力，RNN无法很好的并行�
 
 # 入门：强化学习 Reinforcement Learning, RL
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 #如果只关注语言模型，这里也可以先跳过，就像跳过CNN一样
 
@@ -2049,7 +2049,7 @@ seq2seq用于神经翻译，在性能上肯定是非常优秀的，但它依然�
 
 #  RNN时代的BERT和GPT！Semi-Supervised Sequence Learning: 怎么用大量无标注样本去做自监督学习？（2015）
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 ![](img/88c09fb3c7bc6c6bb58f37edf234c3f7.png)
 
@@ -2327,7 +2327,7 @@ ELMo的本质思想就是根据当前上下文对word embedding进行动态调�
 
 #  Attention is All You Need！大语言模型的基石Transformer（2017）
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 **需要的先验知识：**Seq2seq与Attention机制
 
@@ -2691,7 +2691,7 @@ ULM-FiT是NLP领域首次实现类CV领域的迁移学习的一个伟大尝试�
 
 # ULM-FiT与多任务学习 Multitask Learning：NLP的ImageNet时刻（2018.5）
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 #我还是觉得ULM-FiT是NLP的ImageNet时刻，而不是Bert。ULM-FiT的出现，让那个时代的NLP终于有了一种像CV领域一样的迁移学习方法。
 
@@ -2801,7 +2801,7 @@ ULM-FiT之前，NLP领域的Fine-tuning一直存在过拟合、灾难性遗忘�
 
 #  它来了它来了，终于等到你！大篇幅详解GPT，GPT-2与GPT3！
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 **如果对Transformer还不熟悉，千万先回到**第十章去把Transformer学明白！
 
@@ -3238,7 +3238,7 @@ Codex背后的论文：[【](https://arxiv.org/abs/2107.03374)arxiv】Evaluating
 
 # 预训练语言模型的新范式：Prompting！
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 ![](img/b1cea1550381bc305a1bfd91f3de57aa.png)
 
@@ -3973,7 +3973,7 @@ Self-consistency就是一个基于思维链的思想，去改**变解**码策略
 
 # 为什么它诞生之初远比GPT出风头？图解芝麻街家族新员BERT！（2018.10）
 
-## 试看课 联系微信：AIGC7654
+## 试看课 联系🛰️：AIGC7654
 
 ![](img/50df127e927b430be8add8122632bc45.png)
 

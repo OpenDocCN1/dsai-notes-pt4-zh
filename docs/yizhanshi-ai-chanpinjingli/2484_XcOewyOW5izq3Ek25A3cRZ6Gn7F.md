@@ -10,7 +10,7 @@
 
 > 🤖
 
-> [用纳米AI的MCP工具箱，爆改小红书笔记+播](https://mp.weixin.qq.com/s/JqBt8jgmB0ZKSwPWGJMAyg)客内容，内附50个智能体应用场景及提示词
+> [用纳米AI的MCP工具箱，爆改📕笔记+播](https://mp.weixin.qq.com/s/JqBt8jgmB0ZKSwPWGJMAyg)客内容，内附50个智能体应用场景及提示词
 
 >
 
@@ -18,7 +18,7 @@
 
 +   官方有众多智能体案例，可快速搭建自制智能体，文中整理了50个应用场景及提示词。
 
-+   测评了深度研究智能体、小红书浏览机器人、动态海报生成器三个智能体，展示其功能与效果。
++   测评了深度研究智能体、📕浏览机器人、动态海报生成器三个智能体，展示其功能与效果。
 
 +   教用户5分钟搭建自动抓取新闻并生成播报音频的智能体，介绍搭建步骤。
 
@@ -34,7 +34,7 @@
 
 +   [深度研究智能体链接](https://bot.n.cn/tools/aiagent/chat/9113bbe12b834c298ab65f7e54edbfd0?share=1)
 
-+   [小红书浏览机器人链接](https://bot.n.cn/tools/aiagent/chat/aiagent007?share=1)
++   [📕浏览机器人链接](https://bot.n.cn/tools/aiagent/chat/aiagent007?share=1)
 
 +   [动态海报生成器链接](https://bot.n.cn/tools/aiagent/chat/103af684cff34f72a1d0f5c09bb3b4b5?share=1)
 

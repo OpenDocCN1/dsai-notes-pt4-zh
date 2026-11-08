@@ -229,7 +229,7 @@
 | **学习时长** | 21 分 30 秒 |
 | --- | --- |
 | **学习难度** | **入门级** |
-| **所需材料** | [用户评价分析](https://larkcommunity.feishu.cn/base/Ys3Ab2v1wa7plmsMStjcG9MFn7b?table=tbleMm0OldFRldPK&amp;view=vewilj1TqJ)｜[小红书 AI 爆款印钞机](https://larkcommunity.feishu.cn/base/GZycbzQW2aqjWBsHei5cGa6EnPg?from=from_copylink) |
+| **所需材料** | [用户评价分析](https://larkcommunity.feishu.cn/base/Ys3Ab2v1wa7plmsMStjcG9MFn7b?table=tbleMm0OldFRldPK&amp;view=vewilj1TqJ)｜[📕 AI 爆款印钞机](https://larkcommunity.feishu.cn/base/GZycbzQW2aqjWBsHei5cGa6EnPg?from=from_copylink) |
 | **掌握技能** | AI 字段捷径 |
 | 大仙寄语 | 尝试用藏在列里的 AI，加速你的 AI 产品之路吧！ |
 
@@ -243,7 +243,7 @@
 
 > [第 12 集：利用 AI 字段捷径实现 100 条客户之声的批量处理](https://larkcommunity.feishu.cn/wiki/ZKWVwsxWkiRQAtkx5qdc2499n9g)
 
-> [飞书多维表格 + AI 实现小红书爆款内容创作](https://larkcommunity.feishu.cn/wiki/Dv5jwwrGhiR1FYk7Fddcj08intb)
+> [飞书多维表格 + AI 实现📕爆款内容创作](https://larkcommunity.feishu.cn/wiki/Dv5jwwrGhiR1FYk7Fddcj08intb)
 
 ## 🦿 vol.06 用 AI 打造智能业务产品 2.0：
 

@@ -142,7 +142,7 @@ LeiaPix 的成功应用展示了人工智能和深度学习技术在图像处理
 
 ![](img/2597447c082533c48cd69b0ea729ec9a.png)
 
-> 上图中这个工具，是一个我写的用来输出 Midjourney 描述词的 ChatGPT prompt，已经打包为了 AI 小应用（微信打开）：https://zelinai.com/s/kavvHSjs2nZSiufjajw2vT
+> 上图中这个工具，是一个我写的用来输出 Midjourney 描述词的 ChatGPT prompt，已经打包为了 AI 小应用（🛰️打开）：https://zelinai.com/s/kavvHSjs2nZSiufjajw2vT
 
 ![](img/bed54b1676bf1a5ca83d548d39538b7f.png)
 

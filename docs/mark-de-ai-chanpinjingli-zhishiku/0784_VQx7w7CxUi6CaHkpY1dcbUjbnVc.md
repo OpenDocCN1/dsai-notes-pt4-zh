@@ -163,7 +163,7 @@ Is a transform needed?
 
 ![](img/c65acd83bc43d1513609f42a5bdd96b8.png)
 
-然后选择 ‘Marketplace’，选择 ‘Add Marketplace’，输入'anthropics/skills',这是我们看到的github仓库。（这一步其实在git下载anthropics/skills仓库，网络不好需要多试几次，如果实在不行请科学上网！！！。）
+然后选择 ‘Marketplace’，选择 ‘Add Marketplace’，输入'anthropics/skills',这是我们看到的github仓库。（这一步其实在git下载anthropics/skills仓库，网络不好需要多试几次，如果实在不行请🪜！！！。）
 
 ![](img/18fb18e81d175ede3c27d458ec93eea7.png)
 

@@ -24,7 +24,7 @@ https://live.juejin.cn/5982/aiforcode2025vol10
 
 ![](img/f2b3dff157d321e4e86022740195d22a.png)
 
-# **创意挑战赛微信群**
+# **创意挑战赛🛰️群**
 
 ![](img/78626068f859edbb57487f664c25cb50.png)
 

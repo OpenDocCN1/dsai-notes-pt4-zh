@@ -308,7 +308,7 @@ ms-swift（ Scalable lightWeight Infrastructure for Fine-Tuning）是由魔搭�
 
 +   **轻量级微调：** 支持多种轻量级微调方法，如 LoRA、 QLoRA、 DoLLaMAPro、Adapt、 GaLore、 Q- Galore、 LISA、 UnSloth、 Liger-Kernel 等，降低显存和计算资源的消耗。
 
-+   **分布式训练：** 支持分布式数据并行（DDP）、 DeepSpeed ZeRO2/ZeRO3、 FSDP 等技术，提升推 理加速： ** 提供 BNBWQ、 GPTQ、AQLM、 HQQ、 EETQ 等量化方法，并支持使用 vLLM 和LMDeploy 对推理、评测和部署 支持图像、视频和语音等多种模态型训练，涵盖 VQA、 Caption、 OCR、 Grounding 等任务。
++   **分布式训练：** 支持分布式数据并行（DDP）、 DeepSpeed ZeRO2/ZeRO3、 FSDP 等技术，提升推 理加速： ** 提供 BNBWQ、 GPTQ、AQLM、 H🐧、 EETQ 等量化方法，并支持使用 vLLM 和LMDeploy 对推理、评测和部署 支持图像、视频和语音等多种模态型训练，涵盖 VQA、 Caption、 OCR、 Grounding 等任务。
 
 +   **用户友好的界面：** 提供基于 Gradio 的 We和量化操作，简化了大模型的全链路流程。
 

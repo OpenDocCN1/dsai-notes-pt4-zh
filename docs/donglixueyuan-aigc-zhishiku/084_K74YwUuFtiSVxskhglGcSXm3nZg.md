@@ -252,7 +252,7 @@ https://app.mys](https://t.co/EnFMWENqtF)hell.ai/robot-workshop
 
 ## 6 月 21 日
 
-| [Midjourney 的免费平替  Stable Diffu](https://t.co/pMas9L57HS)[s](https://t.co/pMas9L57HS)ion 保姆级入门手册  https://mp.weixin.qq.com/s/nhB7Hsjz_aLkSrUT0mqHWw…  一份由腾讯云开发者写的微信公众文章，给想玩 AI 的新手-Stable Diffusion 保姆级入门手册，从硬件要求、环境部署安装到参数配置、模型下载安装使用训练等等，手册手把手教大家入门 Stable Diffusion。 |  |
+| [Midjourney 的免费平替  Stable Diffu](https://t.co/pMas9L57HS)[s](https://t.co/pMas9L57HS)ion 保姆级入门手册  https://mp.weixin.qq.com/s/nhB7Hsjz_aLkSrUT0mqHWw…  一份由腾讯云开发者写的🛰️公众文章，给想玩 AI 的新手-Stable Diffusion 保姆级入门手册，从硬件要求、环境部署安装到参数配置、模型下载安装使用训练等等，手册手把手教大家入门 Stable Diffusion。 |  |
 | --- | --- |
 | 微软 2023 年 Build 大会演讲：如何训练和应用 GPT（中英文字幕） |  |
 | 熟悉 Prompt 的同学们应该都知道，通常在写 Prompt 的时候要先设定角色：“你是 XX 方面的专家”，这并非玄学，而是有科学根据的。 |  |

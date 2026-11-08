@@ -1,16 +1,16 @@
-# 白嫖一个AI大模型的微信小助手
+# 白嫖一个AI大模型的🛰️小助手
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/H6wxdzWdEoXFY3xXa2DcGXSZnWd](https://aiyanxishe.feishu.cn/docx/H6wxdzWdEoXFY3xXa2DcGXSZnWd)
 
 作者：丁先生
 
-原文：[全程白嫖 - 拥有一个AI大模型的微信小助手](https://oj0roee3at.feishu.cn/docx/TYT5dJy4xoWfMmxRNSXc1Cc7nPd)
+原文：[全程白嫖 - 拥有一个AI大模型的🛰️小助手](https://oj0roee3at.feishu.cn/docx/TYT5dJy4xoWfMmxRNSXc1Cc7nPd)
 
 有问题可以在文章末尾评论区留言
 
 ## 这有什么用？
 
-> 一个能帮你解答任何问题的AI机器人，你可以将其接入到微信或群聊中，为用户提供自动答疑服务。你还可以投喂它特定知识，成为你的客服、专业老师或知识备忘录。
+> 一个能帮你解答任何问题的AI机器人，你可以将其接入到🛰️或群聊中，为用户提供自动答疑服务。你还可以投喂它特定知识，成为你的客服、专业老师或知识备忘录。
 
 +   无需技术知识，小白也能轻松搭建，全程只需复制粘贴
 
@@ -28,9 +28,9 @@ DIN
 
 1.  搭建[OneAPI](https://github.com/songquanpeng/one-api)，这东西是为了汇聚整合多种大模型接口，方便你后面更换使用各种大模型。下面会告诉你怎么去白嫖大模型接口。
 
-1.  搭建[FastGpt](https://fastgpt.in/)，这东西就是个知识库问答系统，你把知识文件放进去，再把上面的大模型接进来，作为分析知识库的大脑，最后回答你问题，这么个系统。如果你不想接到微信去，自己用用，其实到这里搭建完就OK了，他也有问答界面。
+1.  搭建[FastGpt](https://fastgpt.in/)，这东西就是个知识库问答系统，你把知识文件放进去，再把上面的大模型接进来，作为分析知识库的大脑，最后回答你问题，这么个系统。如果你不想接到🛰️去，自己用用，其实到这里搭建完就OK了，他也有问答界面。
 
-1.  接入微信，这里会用到个工具[智能微秘书](https://wechat.aibotk.com/)，就是为了方便配置FastGpt,把知识库问答系统接入到微信，这里建议先用个小号，接入个人微信。因为接企业微信好像要花钱。
+1.  接入🛰️，这里会用到个工具[智能微秘书](https://wechat.aibotk.com/)，就是为了方便配置FastGpt,把知识库问答系统接入到🛰️，这里建议先用个小号，接入个人🛰️。因为接企业🛰️好像要花钱。
 
 完成上面3步就算OK了，那我们正式开始。
 
@@ -58,7 +58,7 @@ DIN
 
 +   [智谱AI（ChatGLM）](https://open.bigmodel.cn/)、[科大讯飞（SparkDesk）](https://xinghuo.xfyun.cn/sparkapi)，也有免费接口，但是限制了一定的Token额度，超了要花钱。有需要也可以先去官网领取免费的额度。
 
-+   [谷歌的Gemini大模型](https://ai.google.dev/)（gemini 1.0 pro），好处是免费而且还能图片识别分析，坏处是要能链接外网的服务器（我还不会），当然你买了梯子的话就直接注册个谷歌邮箱去登录，去网页上体验下。等我去研究下外网服务器的问题后，再让它来充当我们知识库的大脑吧，哈哈。
++   [谷歌的Gemini大模型](https://ai.google.dev/)（gemini 1.0 pro），好处是免费而且还能图片识别分析，坏处是要能链接外网的服务器（我还不会），当然你买了🪜的话就直接注册个谷歌邮箱去登录，去网页上体验下。等我去研究下外网服务器的问题后，再让它来充当我们知识库的大脑吧，哈哈。
 
 ## 搭建FsatGpt
 
@@ -266,7 +266,7 @@ docker run --name one-api -d --restart always -p 3001:3000 -e SQL_DSN=&quot;root
 
 ![](img/2fbad8d9c367c4709285c92d8b21f1f5.png)
 
-1.   到这里，我们的知识库就装上AI的大脑了，剩下的就是去接入微信了。
+1.   到这里，我们的知识库就装上AI的大脑了，剩下的就是去接入🛰️了。
 但这之前我们体验下知识库的功能，跟AI对对话，看看是否Ok。打开公网ip:3000进入fastgpt。新建个应用，这里不多说了根据界面来就行。看图示例，OK成功了，用的就是阿里的通义千问AI模型（qwen-max不花钱的接口哦）。
 
 ![](img/3193525a384f81615d778a86b1870999.png)
@@ -295,11 +295,11 @@ docker run --name one-api -d --restart always -p 3001:3000 -e SQL_DSN=&quot;root
 
 ![](img/9fd7a8e9634f78792c2f60b51e703f0a.png)
 
-1.  能感受到了吧，大家应该有很多自己想用的场景，可以自己丰富知识库的内容，成为专业的AI助手。好，下面我们把这个拥有知识库能力的AI助手接入到微信。可以帮助我在微信来解答问题。
+1.  能感受到了吧，大家应该有很多自己想用的场景，可以自己丰富知识库的内容，成为专业的AI助手。好，下面我们把这个拥有知识库能力的AI助手接入到🛰️。可以帮助我在🛰️来解答问题。
 
-## 接入微信
+## 接入🛰️
 
-1.  因为接入微信要一个网站域名，可能不能接入，如图
+1.  因为接入🛰️要一个网站域名，可能不能接入，如图
 （你也可以先尝试下不用域名，直接用公网ip:3000能否接入，直接跳过第1、2步。不行再回来用域名方式接入）
 
 ![](img/95ec7d1840f294ebc137227be9fca0da.png)
@@ -318,21 +318,21 @@ docker run --name one-api -d --restart always -p 3001:3000 -e SQL_DSN=&quot;root
 
 ![](img/1fdb40b416f9854397235c23c97358a5.png)
 
-1.  然后用域名地址（跳过1、2步的用公网ip:3000）打开FastGpt在新建的应用中，获取个对外的API接口（操作：应用>发布应用>Api访问）。点击“新建”API秘钥，复制API KEY和新建按钮旁边的API根地址2个内容。用于配置接入微信。
+1.  然后用域名地址（跳过1、2步的用公网ip:3000）打开FastGpt在新建的应用中，获取个对外的API接口（操作：应用>发布应用>Api访问）。点击“新建”API秘钥，复制API KEY和新建按钮旁边的API根地址2个内容。用于配置接入🛰️。
 
 ![](img/4729e281514a238da7ffab2ebdc4105d.png)
 
-1.  然后打开[智能微信秘书](https://wechat.aibotk.com/dashboard/main)**页面，注册登录****，打开【基础设置****】，如图（天**行api可以随意填、apikey就是在fastgpt应用里新建的API KEY，服务器地址就是API根地址）
+1.  然后打开[智能🛰️秘书](https://wechat.aibotk.com/dashboard/main)**页面，注册登录****，打开【基础设置****】，如图（天**行api可以随意填、apikey就是在fastgpt应用里新建的API KEY，服务器地址就是API根地址）
 
 ![](img/c10f4c5ef469227e9c89a941f8e20e0b.png)
 
 ![](img/55c86dc8cb4b306bdc869b6538457aa2.png)
 
-1.  然后在【个人中心】复制微信秘书的APIKEY和APISECRET，后面要用到，如图。
+1.  然后在【个人中心】复制🛰️秘书的APIKEY和APISECRET，后面要用到，如图。
 
 ![](img/a656d731c2cd25a37cdcee552f756901.png)
 
-1.  回到宝塔系统进入【Docker】，见下图操作路径：Docker>容器>创建容器>命令创建>复制命令>执行命令（复制命令时，把刚刚微信秘书复制的APIKEY和APISECRET粘贴进去后再执行）
+1.  回到宝塔系统进入【Docker】，见下图操作路径：Docker>容器>创建容器>命令创建>复制命令>执行命令（复制命令时，把刚刚🛰️秘书复制的APIKEY和APISECRET粘贴进去后再执行）
 
 ```
 docker run -d -e TZ=&quot;Asia/Shanghai&quot; -e AIBOTK_KEY=&quot;微秘书apikey&quot; -e AIBOTK_SECRET=&quot;微秘书apiSecret&quot;  --name=wechatbot aibotk/wechat-assistant
@@ -340,13 +340,13 @@ docker run -d -e TZ=&quot;Asia/Shanghai&quot; -e AIBOTK_KEY=&quot;微秘书apike
 
 ![](img/9a8491987fed5b1be362dbb67ed53cb5.png)
 
-1.  好了，所有的部署、配置操作都完成，看下【Docker】容[器中，项目状](https://wechat.aibotk.com/dashboard/main)态是否都在“运行中”。然后去智能微信秘书控制台，首页扫码登录即可。如图。
+1.  好了，所有的部署、配置操作都完成，看下【Docker】容[器中，项目状](https://wechat.aibotk.com/dashboard/main)态是否都在“运行中”。然后去智能🛰️秘书控制台，首页扫码登录即可。如图。
 
 ![](img/1cbdd05d6071a41945a4825ad76ece08.png)
 
 ![](img/bf7b7ca984ea40f710fa718353342fc2.png)
 
-1.  最后，我们来看下微信对话效果，是根据我们在fastgpt录入的文档内容来回答的哦。群里要记得@人才能得到回复，如图。
+1.  最后，我们来看下🛰️对话效果，是根据我们在fastgpt录入的文档内容来回答的哦。群里要记得@人才能得到回复，如图。
 
 ![](img/498d3dee8e9677a692990fc3671b1c5e.png)
 

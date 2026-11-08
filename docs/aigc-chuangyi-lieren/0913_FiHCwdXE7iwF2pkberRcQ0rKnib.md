@@ -6,7 +6,7 @@
 
 > 作者：monychen
 
-> 来自：公众号-腾讯技术工程
+> 来自：👸号-腾讯技术工程
 
 > 链接：https://mp.weixin.qq.com/s/dIAUwc33IZMid9gVB5uTJg
 
@@ -14,7 +14,7 @@
 
 > 作者：torresyu
 
-> 来自：公众号-腾讯技术工程
+> 来自：👸号-腾讯技术工程
 
 > 链接：https://mp.weixin.qq.com/s/Efk-gP8iuau3crWB2wWizg
 
@@ -22,7 +22,7 @@
 
 > 作者：李志飞 李维 高佳
 
-> 公众号：飞哥说AI
+> 👸号：飞哥说AI
 
 > 链接：https://mp.weixin.qq.com/s/ocClXnTzsvWBlh5mGq9jdg
 

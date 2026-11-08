@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/ZJS8dXnkGo3WfSx43lncciZDnUc](https://yunyinghui.feishu.cn/docx/ZJS8dXnkGo3WfSx43lncciZDnUc)
 
-> **本文作者：**有赞，**来源公众号： ** 有赞 Coder
+> **本文作者：**有赞，**来源👸号： ** 有赞 Coder
 
 > **推荐理由：**这篇文章分享了有赞在 Agent 技术领域的探索与实践，文章强调 Agent 技术需结合业务场景落地，通过持续实践和数据驱动优化，推动 AI 在商业领域的价值实现。
 

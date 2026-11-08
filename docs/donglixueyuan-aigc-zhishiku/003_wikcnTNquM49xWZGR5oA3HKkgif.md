@@ -82,7 +82,7 @@ https://mp.weixin.qq.com/s/U-p3RLxVqD3AXCMxeH7RVg
 
 **1、70+款****AI****工具合集，值得收藏**
 
-小红书上有关ChatGPT的笔记已有10w+篇，相关话题浏览量也达到了1.12亿次。其中讨论最为热烈的，要数“ChatGPT使用教程”。（当然，类似的话题还包括，教你如何使用Midjourney等等）甚至还有人通过ChatGPT教学，月入十万
+📕上有关ChatGPT的笔记已有10w+篇，相关话题浏览量也达到了1.12亿次。其中讨论最为热烈的，要数“ChatGPT使用教程”。（当然，类似的话题还包括，教你如何使用Midjourney等等）甚至还有人通过ChatGPT教学，月入十万
 
 https://www.digitaling.com/articles/925441.html
 

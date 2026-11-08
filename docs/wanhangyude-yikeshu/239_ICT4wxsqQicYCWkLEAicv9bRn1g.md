@@ -255,7 +255,7 @@
 | --- | --- |
 | 店铺操作 | [TikTokShop上传商品的流程](https://bytedance.larkoffice.com/docx/doxcn9zOa7Cww2RkN1vMQK4hxee) |
 | 营销工具 | [【仅供跨境卖家参考】TTS营销工具介绍_25年4月version](https://bytedance.sg.larkoffice.com/sheets/LlTXsS8XghlTXWtfJQnlYuhrgVg?sheet=xroCLT)（活动互斥逻辑） |
-| 差评规则 | [TikTok Shop差评率科普手册](https://bytedance.larkoffice.com/docx/QQzidp4FDowz6kxLW5DcHkkjnoI) |
+| 差评规则 | [TikTok Shop差评率科普手册](https://bytedance.larkoffice.com/docx/🐧zidp4FDowz6kxLW5DcHkkjnoI) |
 | 类目资质 | [电子电器商品类目资质发布要求常见问题](https://bytedance.us.larkoffice.com/docx/V9k3dyqxNoRtPnxdAM6uW76osKc?from=from_copylink) |
 | 商品发布 | [商品发布信息质量要求-商家阅读版本](https://bytedance.sg.larkoffice.com/docx/doxcn3IRKL3x706DnYZfBGoh8Ab) |
 | 音乐版权 | [External：CML GTM](https://bytedance.larkoffice.com/docx/doxcnHSeak7Byj6KydCa3jLD7Nf?from=from_copylink) |
@@ -441,7 +441,7 @@
 
 ![](img/ab69547cde7fc8b578c27908c4dc2323.png)
 
-[大促直播间活动规划表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SQQFbhIqqo8i9VxR6cwcTPiWnFW)
+[大促直播间活动规划表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S🐧FbhIqqo8i9VxR6cwcTPiWnFW)
 
 ![](img/95523fffa6c15e7f840dfd341ca7f170.png)
 

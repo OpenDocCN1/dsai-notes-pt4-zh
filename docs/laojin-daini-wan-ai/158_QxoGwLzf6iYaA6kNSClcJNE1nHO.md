@@ -1,6 +1,6 @@
 # FastGPT
 
-> 来源：[https://my.feishu.cn/docx/VM1sdrkuFosEBKxde83cIeQQnlg](https://my.feishu.cn/docx/VM1sdrkuFosEBKxde83cIeQQnlg)
+> 来源：[https://my.feishu.cn/docx/VM1sdrkuFosEBKxde83cIe🐧nlg](https://my.feishu.cn/docx/VM1sdrkuFosEBKxde83cIe🐧nlg)
 
 # 1 分钟对接 chatgpt-on-wechat
 

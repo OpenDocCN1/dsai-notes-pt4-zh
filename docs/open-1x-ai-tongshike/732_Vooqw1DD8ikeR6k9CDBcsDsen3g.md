@@ -4,7 +4,7 @@
 
 **一**种可以通过外部可以访问的带联网搜索的deepseek-r1（ollama部署的api）的实现方法-Datawhale展示用
 
-作者：小槐花  vx：mumiangege521（转载、交流分享、答疑等事宜可以加微信，加时请备注来意和称呼谢谢~）
+作者：小槐花  vx：mumiangege521（转载、交流分享、答疑等事宜可以加🛰️，加时请备注来意和称呼谢谢~）
 
 友情链接：https://datawhale.club/
 

@@ -407,7 +407,7 @@ https://docs.llamaindex.ai/en/stable/module_guides/evaluating/root.html
 
 **向量检索实验室**
 
-微信号：VectorSearch
+🛰️号：VectorSearch
 
 扫码关注 了解更多
 

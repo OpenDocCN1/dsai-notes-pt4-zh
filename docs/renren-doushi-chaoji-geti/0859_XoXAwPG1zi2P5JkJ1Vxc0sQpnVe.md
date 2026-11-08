@@ -64,7 +64,7 @@ uibot：https://down.uibot.com.cn/OFFICIAL/UiBot/6.0.1/UiBot_Community_Official_
 
 WPS：https://platform.wps.cn/
 
-微信（方便传图片和文本）：https://pc.weixin.qq.com/
+🛰️（方便传图片和文本）：https://pc.weixin.qq.com/
 
 如果从云电脑完成了数据抓取，可以直接在“此电脑”找到本地硬盘，保存到本地文件夹，同样也可以进行文件上传。
 

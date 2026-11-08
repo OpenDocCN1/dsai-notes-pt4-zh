@@ -343,7 +343,7 @@ ID 这个你可以自己起名字，一般标识一下这个 MCP 的服务名字
 
 切换到横屏模式
 
-[🎦 点击观看视频](https://mpvideo.qpic.cn/0b2evuaduaaafuaoz4pmlbtvblodhkwqaoqa.f10002.mp4?dis_k=d4ad046847295aff70efff4436f5b802&dis_t=1743579766&play_scene=10120&auth_info=DrPru6F8GwxkxdPZi1FVcUl1JWYOa0QQOA5hOTceAWc1SHphYlMAQRMpRQ5/PVhRXX8=&auth_key=2d1042268e8146173294304403fcad04&vid=wxv_3925573028490395653&format_id=10002&support_redirect=0&mmversion=false)
+[🎦 点击观看视频](https://mpvideo.qpic.cn/0b2evuaduaaafuaoz4pmlbtvblodhkwqaoqa.f10002.mp4?dis_k=d4ad046847295aff70efff4436f5b802&dis_t=1743579766&play_scene=10120&auth_info=DrPru6F8GwxkxdPZi1FVcUl1JWYOa0🐧OA5hOTceAWc1SHphYlMAQRMpRQ5/PVhRXX8=&auth_key=2d1042268e8146173294304403fcad04&vid=wxv_3925573028490395653&format_id=10002&support_redirect=0&mmversion=false)
 
 > 无法获取音频链接
 

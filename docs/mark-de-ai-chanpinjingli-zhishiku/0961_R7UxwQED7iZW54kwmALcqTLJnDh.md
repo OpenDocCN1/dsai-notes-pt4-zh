@@ -18,7 +18,7 @@ Claude Design是Anthropic首次正面推出的设计产品
 
 这篇文章会拆解：**C**laude Design究竟是什么、它如何运作、六个核心功能怎么使用、与Figma和Canva的差别在哪里、设计师和非设计师各自该如何看待它，以及为什么这次的发布时机“一点都不巧合”。
 
-[▶ 介绍Anthropic Lab](https://youtu.be/t_LBECIQQqs)s的Claude Design观看  →
+[▶ 介绍Anthropic Lab](https://youtu.be/t_LBECI🐧qs)s的Claude Design观看  →
 
 Anthropic官方发布影片，点图跳转到YouTube观看。| @claude YouTube
 

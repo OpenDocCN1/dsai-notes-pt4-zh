@@ -1,6 +1,6 @@
 # Planning：利用LLM规划任务步骤
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/QQO6d6x9aoVqOMxSovOcYWvGnCd](https://vxc3hj17dym.feishu.cn/docx/QQO6d6x9aoVqOMxSovOcYWvGnCd)
+> 来源：[https://vxc3hj17dym.feishu.cn/docx/🐧O6d6x9aoVqOMxSovOcYWvGnCd](https://vxc3hj17dym.feishu.cn/docx/🐧O6d6x9aoVqOMxSovOcYWvGnCd)
 
 > 翻译整理：小七姐
 

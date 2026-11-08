@@ -8,7 +8,7 @@
 
 想套壳GPT4O/gpto-o-1，改个API和代码就行，全部交给CURSOR. 但是推荐flux kontext。
 
-我是用SAME.NEW复刻+CURSOR调试了一整个月的，今天分享出来，呼应亦仁的超级标：
+我是用SAME.NEW复刻+CURSOR调试了一整个月的，今天分享出来，呼应龙哥的超级标：
 
 ![](img/ca052c11c83d295ef45343d11161fe80.png)
 
@@ -28,7 +28,7 @@ https://github.com/CharlieLZ/flux-kontext-template
 
 ### 关于GPT4O 速度半分钟这样，价格一块钱左右
 
-前几个月火爆的事情，主要是ghibli如火如荼，全球都火起来，小红书和抖音都是爆款
+前几个月火爆的事情，主要是ghibli如火如荼，全球都火起来，📕和抖音都是爆款
 
 有个新词新站也是月百万访客，美元订单滚滚而来
 
@@ -54,7 +54,7 @@ https://kie.ai/
 
 一个提供 4o 图片接口的地方 https://kie.ai/4o-image-api
 
-看到之前生财分享的我记录下来了：
+看到之前赚钱分享的我记录下来了：
 
 > gpt4o api  目前有两种方式
 
@@ -132,7 +132,7 @@ https://www.bilibili.com/video/BV157pRe8EyD/?buvid=XU10B5116A49C6B1805F5ECA6E4BE
 
 ### 关于VIBE CODING
 
-摘抄一些之前总结的心得，来自公众号专栏：看榜单里面的话。
+摘抄一些之前总结的心得，来自👸号专栏：看榜单里面的话。
 
 赚钱其实是需要基础设施的。
 
@@ -198,7 +198,7 @@ AI工具加速独立开发者产品MVP制作：从两天到两小时https://scys
 
 看榜单，多上站：
 
-公众号：良辰美
+👸号：良辰美
 
 有一百篇的看榜单专栏，几千个图片几万字
 

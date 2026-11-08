@@ -56,7 +56,7 @@
 
 > 🔗 文中引用的链接
 
-+   [AINLP公众号](https://mp.weixin.qq.com/s/KA5KkExrUYUMNrRrffUs6g)
++   [AINLP👸号](https://mp.weixin.qq.com/s/KA5KkExrUYUMNrRrffUs6g)
 
 > 3️⃣
 

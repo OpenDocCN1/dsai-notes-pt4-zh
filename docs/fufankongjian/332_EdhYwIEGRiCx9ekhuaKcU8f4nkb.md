@@ -119,7 +119,7 @@ Docker Desktop 支持最新的 Windows 10/11 和 MacOS 版本，访问 Docker De
 
 首先下载 MateGen Pro 最新的项目镜像，执行命令如下：
 
-注意：对于国内网络，Dokcer和Github类似，经常会访问不通导致拉取失败，如多次尝试仍然无法拉取镜像，请开启魔法上网环境
+注意：对于国内网络，Dokcer和Github类似，经常会访问不通导致拉取失败，如多次尝试仍然无法拉取镜像，请开启🪜环境
 
 ```
 docker pull snowball1996/mategen:latest 

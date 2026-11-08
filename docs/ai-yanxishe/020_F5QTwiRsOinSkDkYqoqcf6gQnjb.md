@@ -12,7 +12,7 @@
 
 > 加入我们：https://t.zsxq.com/19EOflzkQ
 
-> 购买后，添加群主微信加入 AI研习社陪伴社群，限时领取超值福利。
+> 购买后，添加群主🛰️加入 AI研习社陪伴社群，限时领取超值福利。
 
 **本文将会从以下几方面来介绍：**
 
@@ -290,7 +290,7 @@ CodeGeex 模型源码： https://github.com/THUDM/CodeGeeX
 
 CodeGeeX2 模型源码： https://github.com/THUDM/CodeGeeX2
 
-本文来源于好朋友木川大佬，木川公众号【木川AI编程】，欢迎关注！
+本文来源于好朋友木川大佬，木川👸号【木川AI编程】，欢迎关注！
 
 更多内容可以点击目录： [手册内容汇总](https://aiyanxishe.feishu.cn/wiki/LBXcwPv6UiZgdfkp14Xc1Wo1n3b)
 

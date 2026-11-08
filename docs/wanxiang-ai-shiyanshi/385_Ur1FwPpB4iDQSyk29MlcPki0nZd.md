@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/EHBqdohp6oYNEVxnsNKctrmOnsc](https://yunyinghui.feishu.cn/docx/EHBqdohp6oYNEVxnsNKctrmOnsc)
 
-> **本文作者：**有赞，**来源公众号： ** 有赞 Coder
+> **本文作者：**有赞，**来源👸号： ** 有赞 Coder
 
 > **推荐理由：**这篇文章系统性地总结了有赞在 2025 年 AI 时代背景下，将人工智能技术全面融入其软件研发全流程的实践与思考。
 

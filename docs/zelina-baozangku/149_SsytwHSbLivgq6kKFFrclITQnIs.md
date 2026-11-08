@@ -24,7 +24,7 @@
 
 找当地的大学生
 
-小红书推荐
+📕推荐
 
 60左右的感觉好一些
 
@@ -38,7 +38,7 @@
 
 [愿每个来良渚的宝子都能收藏这个知识库](https://lty5ob62qu.feishu.cn/wiki/DWWwwKvCeiPhbdkrYgHcC5nRnhg)
 
-**小红书推荐：**
+**📕推荐：**
 
 [杭州 · 玉鸟集](https://www.xiaohongshu.com/explore/67570e83000000000202740c?app_platform=ios&app_version=8.81.2&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBMAO_n5h_aPtQB_3dcpGinlecXBDFJIo2L3UYz2pW4xQ=&author_share=1&xhsshare=WeixinSession&shareRedId=N0syOUZGPU82NzUyOTgwNjY0OTc2SD9L&apptime=1746696566&share_id=460e007ad6c74249a48fd046fb820f53&wechatWid=9219d03e1853c78235f64344b4c7683d&wechatOrigin=menu)
 

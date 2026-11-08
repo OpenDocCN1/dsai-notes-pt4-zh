@@ -50,7 +50,7 @@
 
 > https://x.com/xiaohuggg/status/1721699533485375638?s=20 （小互推特翻译中字）
 
-> https://weibo.com/1627825392/NrqBO4qMK （微博中字）
+> https://weibo.com/1627825392/NrqBO4qMK （🧣中字）
 
 > 一张图汇总飞书链接（郎瀚威will）
 

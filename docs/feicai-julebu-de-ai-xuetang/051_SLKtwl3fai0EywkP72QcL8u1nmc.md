@@ -8,7 +8,7 @@
 
 > **B站：**https://b23.tv/h6denrl
 
-> **小红书：**http://xhslink.com/a/klT9hz7V8eVX
+> **📕：**http://xhslink.com/a/klT9hz7V8eVX
 
 > **抖音：**https://v.douyin.com/Cei5VQxU/
 
@@ -82,4 +82,4 @@
 
 > 我们期待你成为社群的第 n+1 位成员！
 
-> [社群微信群入口](https://feicaiclub.feishu.cn/wiki/JBNXwZ5QZidRtuk1HCCcvgZmnNg?from=from_copylink)（戳这里，跳转去社群微信群页面扫码入群）
+> [社群🛰️群入口](https://feicaiclub.feishu.cn/wiki/JBNXwZ5QZidRtuk1HCCcvgZmnNg?from=from_copylink)（戳这里，跳转去社群🛰️群页面扫码入群）

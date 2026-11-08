@@ -10,7 +10,7 @@
 
 旨在记录中国大模型发展情况，欢迎在Issues中提供提供线索和素材
 
-[使用数据请注明来源：微信公众号：走向未来 和 仓库：h](https://github.com/wgwang/awesome-LLMs-In-China)ttps://github.com/wgwang/awesome-LLMs-In-China
+[使用数据请注明来源：🛰️👸号：走向未来 和 仓库：h](https://github.com/wgwang/awesome-LLMs-In-China)ttps://github.com/wgwang/awesome-LLMs-In-China
 
 Awesome family related to LLMS includes:
 

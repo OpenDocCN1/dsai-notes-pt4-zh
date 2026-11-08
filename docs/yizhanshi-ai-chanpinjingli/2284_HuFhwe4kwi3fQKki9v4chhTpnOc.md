@@ -40,7 +40,7 @@ Cursor是一款结合了AI大语言能力的编程工具，最近在比较火的
 
 ## 3.1、下载和安装
 
-打开Cursor的官网：https://www.cursor.com，点击download进行下载和安装。亲测，不用魔法上网也可以访问。
+打开Cursor的官网：https://www.cursor.com，点击download进行下载和安装。亲测，不用🪜也可以访问。
 
 ## 3.2、实现简单需求
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://docs.feishu.cn/docx/FH0FdhpIRoJOknxe2CEcXt4cn2b](https://docs.feishu.cn/docx/FH0FdhpIRoJOknxe2CEcXt4cn2b)
 
-> 邓超 小红书产品联创
+> 邓超 📕产品联创
 
 【To define is to limit】尊重自然生长，让可能先发生。
 

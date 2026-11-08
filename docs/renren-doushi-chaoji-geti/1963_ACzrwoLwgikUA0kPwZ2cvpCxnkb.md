@@ -19,7 +19,7 @@
 | --- | --- | --- | --- | --- |
 | 2024-03-06 | 案例教程 | 爆了爆了！全面拆解豆哥视频号脑波音乐视频项目 | 豆哥 | https://t.zsxq.com/180YF31iu |
 | 2024-03-06 | AI分享 | Midjourney 不用再登录Discord了 | 蕃茄 | https://t.zsxq.com/185H1tcPl |
-| 2024-03-06 | 案例教程 | 小红书商单变现：7天涨粉1.2w+，AI猫咪视频真火 | 格子 | https://t.zsxq.com/18B2E3X3F |
+| 2024-03-06 | 案例教程 | 📕商单变现：7天涨粉1.2w+，AI猫咪视频真火 | 格子 | https://t.zsxq.com/18B2E3X3F |
 | 2024-03-07 | IP之路 | 个人定位咨询之破局圈友卢大哥，向别人学，和自己比 | 大牛 | https://t.zsxq.com/18JgF4Dvv |
 | 2024-03-08 | AI分享 | AI赚钱思路第20篇：AI数字人冷知识讲解 | findyi | https://t.zsxq.com/18NDlMnwK |
 | 2024-03-08 | AI分享 | So r a 视频可以开口唱歌了 | 元峰@AI破局 | https://t.zsxq.com/18TYQIEpw |
@@ -84,7 +84,7 @@
 | 2024-02-22 | 案例教程 | 【AI绘画摆摊】听话照做，AI绘画摆摊一晚400+，赚钱其实很简单 | 方阳Neo | https://t.zsxq.com/18QbZ2CTC |
 | 2024-02-23 | 案例教程 | AI赚钱拆解第9篇： AI插图儿童故事 | findyi | https://t.zsxq.com/17aziFiEv |
 | 2024-02-23 | AI提示词 | GPTs 更新，发布评分和更多关于作者的信息。 | 小七姐 | https://t.zsxq.com/18fz6AyWw |
-| 2024-02-23 | 案例教程 | 公众号流量主最近回暖了，亲测现在起号比前段时间容易些了，可冲。 AI写作 | coooolx | https://t.zsxq.com/17AehoSPI |
+| 2024-02-23 | 案例教程 | 👸号流量主最近回暖了，亲测现在起号比前段时间容易些了，可冲。 AI写作 | coooolx | https://t.zsxq.com/17AehoSPI |
 | 2024-02-23 | AI分享 | 测试了下SVD 效果令人惊讶 | 蕃茄 | https://t.zsxq.com/180jmdFCu |
 | 2024-02-24 | IP之路 | 《一个素人破局的破圈之路》 | 西堂-AI编程提效 | https://t.zsxq.com/17Q5YeDnl |
 | 2024-02-24 | AI分享 | 央视都开始关注Ai短视频，直接给出了最显眼的位置！ | 小田 | https://t.zsxq.com/18VYstHrw |
@@ -154,10 +154,10 @@
 | **发布时间** | **分类** | **一句话概述** | **中标作者** | **链接** |
 | --- | --- | --- | --- | --- |
 | 2024-02-01 | 案例教程 | AI代写航海，可能是我离财富自由最近的一次 | 古衣水 | https://t.zsxq.com/18IU1c1Bu |
-| 2024-02-01 | 案例教程 | 【粉丝暴涨】AI+公众号+知乎，私域流量增长变现黑科技！ | 蕃茄 | https://t.zsxq.com/18Lco7z9P |
+| 2024-02-01 | 案例教程 | 【粉丝暴涨】AI+👸号+知乎，私域流量增长变现黑科技！ | 蕃茄 | https://t.zsxq.com/18Lco7z9P |
 | 2024-02-01 | AI提示词 | 突破思维束缚：用 AI + 思维模型 探索问题的全新解答（含三个实用指令） | 熊猫Jay | https://t.zsxq.com/173apxiot |
 | 2024-02-01 | 案例教程 | 自从加入AI破局后，我通过借助AI这波东风，赚了至少10w了！ | 阿铭 | https://t.zsxq.com/17DIJOrNQ |
-| 2024-02-02 | 案例教程 | 十年公众号写作无人知晓，AI爆文一个月，累计阅读10w+，涨粉790+，私域25+，变现700+！ | 大牛 | https://t.zsxq.com/17tFY4RjD |
+| 2024-02-02 | 案例教程 | 十年👸号写作无人知晓，AI爆文一个月，累计阅读10w+，涨粉790+，私域25+，变现700+！ | 大牛 | https://t.zsxq.com/17tFY4RjD |
 | 2024-02-03 | AI分享 | 惊呆！Midjourney又又又更新了！新增SD Lora功能！ | 蕃茄 | https://t.zsxq.com/17aoi2Gms |
 | 2024-02-03 | AI分享 | 智普AI注册送300万token，再把这三百万token用在实处，轻松可变现三位，甚至四位数 | 学长刚蝈 | https://t.zsxq.com/179ykGjK8 |
 | 2024-02-03 | IP之路 | 小镇做题家的 AI 破局之路 | 康熙 | https://t.zsxq.com/17I8VUzq5 |
@@ -274,7 +274,7 @@
 | 2023-12-27 | 案例教程 | 视频号带货4个月收益百万，风口已至！ | 李千万 | https://t.zsxq.com/17yXQALFR |
 | 2023-12-28 | AI分享 | AI 代写：从 0 到 1 变现 1w+ | 南卷 | https://t.zsxq.com/176GtRgy1 |
 | 2023-12-29 | IP之路 | 夙愿的2023年度复盘：借势 AI 从清澈大学生到副业月入过万 | 夙愿学长 | https://t.zsxq.com/17R6H2DRc |
-| 2023-12-31 | IP之路 | AI 小红书：个人 IP 起号到月入十万 | 卡尔 | https://t.zsxq.com/17BKp9x5t |
+| 2023-12-31 | IP之路 | AI 📕：个人 IP 起号到月入十万 | 卡尔 | https://t.zsxq.com/17BKp9x5t |
 | 2024-01-02 | IP之路 | 真的AI破局！02年大学生！利用AI从月入几百到月入5w的全历程！ | 李书生 | https://t.zsxq.com/17lPCyWkj |
 
 ## 中标贴
@@ -361,9 +361,9 @@ AI分享
 | 2023-12-11 | IP之路 | 陈天2023 AI 破局之旅，从素人到 IP | sky陈天 | https://t.zsxq.com/175wyv8Vf |
 | 2023-12-11 | IP之路 | 487 条帖子，15 颗 AI 之心背后，我做了什么？ | 元峰@AI破局 | https://t.zsxq.com/17m0B1V2d |
 | 2023-12-12 | 案例教程 | 借【数字人】的东风，小众需求十天变现上万 | 我家的熊 | https://t.zsxq.com/17DczPpCw |
-| 2023-12-12 | AI自媒体 | 小红书【3000粉丝】，年变现30万！手把手带你搭建小红书个人IP变现体系 | 智惟 | https://t.zsxq.com/17MV1mjIp |
+| 2023-12-12 | AI自媒体 | 📕【3000粉丝】，年变现30万！手把手带你搭建📕个人IP变现体系 | 智惟 | https://t.zsxq.com/17MV1mjIp |
 | 2023-12-12 | 案例教程 | 知乎新人涨粉变现攻略 | 枫晓陌 | https://t.zsxq.com/17MMPO5gL |
-| 2023-12-12 | IP之路 | 打造个人 IP 一个月，知乎阅读 50W+，公众号涨粉 1000+ ，变现 3000+ 复盘（ 1.2W 字） | 大全 | https://t.zsxq.com/17gANTXOH |
+| 2023-12-12 | IP之路 | 打造个人 IP 一个月，知乎阅读 50W+，👸号涨粉 1000+ ，变现 3000+ 复盘（ 1.2W 字） | 大全 | https://t.zsxq.com/17gANTXOH |
 | 2023-12-12 | 案例教程 | AI代写之闲鱼写作店铺保姆级教程 | 溪溪 | https://t.zsxq.com/17lY8ni1j |
 
 ## 中标贴
@@ -388,7 +388,7 @@ AI分享
 | 2023-12-10 | 案例教程 | 自媒体小白，20 天，知乎从 1 级到 5 级 | 凩凩子 | https://t.zsxq.com/17gjGm6sI |
 | 2023-12-10 | AI分享 | AI +教育|帮助学习者快速提效 | 芊芊魏 | https://t.zsxq.com/17vVTta7y |
 | 2023-12-11 | IP之路 | 第一次航海教练分享 | 阿杰 | https://t.zsxq.com/17UlTJfQh |
-| 2023-12-11 | 案例教程 | 公众号流量主爆文变现580+：python脚本+影刀RPA 让内容产出更快 | 子奕 | https://t.zsxq.com/17uEfHPBW |
+| 2023-12-11 | 案例教程 | 👸号流量主爆文变现580+：python脚本+影刀RPA 让内容产出更快 | 子奕 | https://t.zsxq.com/17uEfHPBW |
 | 2023-12-11 | IP之路 | 跳出舒适区，传统行业小白加入 AI 破局，迈出 0 到 1 的勇敢一步 | 七月 | https://t.zsxq.com/17RD97vtm |
 | 2023-12-11 | AI分享 | 分享一个最近很火的 AI 绘画视频模板，宝子们可以行动起来了！论调戏AI来绘画 | 芊芊魏 | https://t.zsxq.com/17u6L7TLO |
 | 2023-12-11 | AI分享 | 教练复盘：AI 绘画小航海 | 茉莉Molly | https://t.zsxq.com/186RHclEw |
@@ -396,7 +396,7 @@ AI分享
 | 2023-12-11 | AI分享 | AI 编程：可视化 Java 项目 | 伍六七 | https://t.zsxq.com/17Ewkw51F |
 | 2023-12-11 | AI分享 | AI 小白的提示词航海复盘-框架思维&amp;踩坑分享 | Lumos | https://t.zsxq.com/17CEYBZWJ |
 | 2023-12-11 | IP之路 | 入局 AI：涨粉 3000，变现 3 万+ | 叁沐 | https://t.zsxq.com/17SfgcTgr |
-| 2023-12-11 | 案例教程 | 影刀RPA+ChatGPT 公众号爆文赋能提效 | 伟豪 | https://t.zsxq.com/18upt0bFZ |
+| 2023-12-11 | 案例教程 | 影刀RPA+ChatGPT 👸号爆文赋能提效 | 伟豪 | https://t.zsxq.com/18upt0bFZ |
 | 2023-12-11 | AI分享 | AI 航海 ：提示词复盘 | sol | https://t.zsxq.com/17AK8UDLZ |
 | 2023-12-12 | AI分享 | AI 视频新秀NeverEnds迎来重大更新，是一个能够从文本和图片生成视频的 AI 工具。 | 元峰@AI破局 | https://t.zsxq.com/18PQxb2vo |
 | 2023-12-12 | IP之路 | 破局之路-半年的个人复盘 | 大头Yy | https://t.zsxq.com/18ptIpT9T |
@@ -419,7 +419,7 @@ AI分享
 | 2023-11-30 | 案例教程 | 如何打造破局精华导图(导图制作与AI导图 | 天成导图 | https://t.zsxq.com/14kd7nwR1 |
 | 2023-12-01 | 08.IP之路 | AI时代，我如何乘风破局? | 陈司令 | https://t.zsxq.com/14SCg57ON |
 | 2023-12-01 | 08.IP之路 | 破局合伙人作战地图，洋哥看了赞不绝口，5500字，价值 1W | 豆哥 | https://t.zsxq.com/14azqvQUh |
-| 2023-12-02 | 05.AI自媒体 | 小红书航海直播，8000字手稿分享 | 卡尔 | https://t.zsxq.com/14gnOOX3F |
+| 2023-12-02 | 05.AI自媒体 | 📕航海直播，8000字手稿分享 | 卡尔 | https://t.zsxq.com/14gnOOX3F |
 | 2023-12-02 | 02.AI提示词 | AI + 分治法解决复杂任务---写好提示词的思维框架 | 夙愿 | https://t.zsxq.com/14Rf3aXYh |
 | 2023-12-03 | 11.AI分享 | AI 如何切实体行业? AI绘画赋能美发行业 | 段冬 | https://t.zsxq.com/14GCYkBun |
 | 2023-12-03 | 09.案例教程 | 像高手一样编写 GPT: 从基础到实践，学习使用 GPT 的 Action | 宇龙 | https://t.zsxq.com/14bcf5YpC |
@@ -431,7 +431,7 @@ AI分享
 
 | **发布时间** | **分类** | **一句话概述** | **中标作者** | **链接** |
 | --- | --- | --- | --- | --- |
-| 2023-11-28 | AI工具 | 玩小红书还在手动找数据? 0基础用后裔采集器找到对标笔记 | 李又懂 | https://t.zsxq.com/14kTqPrW1 |
+| 2023-11-28 | AI工具 | 玩📕还在手动找数据? 0基础用后裔采集器找到对标笔记 | 李又懂 | https://t.zsxq.com/14kTqPrW1 |
 | 2023-11-28 | AI工具 | GPT 辅助分析生活中各个场景的男女生差异 | 景淮 | https://t.zsxq.com/14qffU4lD |
 | 2023-11-28 | AI提示词 | 《 Prompt Engineering a Prompt Engineer 》精读翻译 | 小七姐 | https://t.zsxq.com/14Pw6002l |
 | 2023-11-28 | IP之路 | 47岁，全职宝妈: AI破局重新点燃我的生活激情 | 谢华 | https://t.zsxq.com/146K6Ro2q |
@@ -457,7 +457,7 @@ AI分享
 | 2023-11-22 | IP之路 | 加入破局 180 天，成功立起 IP | 木川 | https://t.zsxq.com/14AmCTzlb |
 | 2023-11-22 | 案例教程 | 《AI+拼多多写作店铺，单店月均10000+姆级教程，内附详细运营方法~》 | 饭饭 | https://t.zsxq.com/14CqphSlC |
 | 2023-11-24 | IP之路 | AI 知乎: 30 天变现 1万+ | 冯帅Prompt | https://t.zsxq.com/1436GgHpU |
-| 2023-11-25 | AI写作 | 公众号航海第一次分享: 写作的本质 | 皮特 | https://t.zsxq.com/14dHXmVuq |
+| 2023-11-25 | AI写作 | 👸号航海第一次分享: 写作的本质 | 皮特 | https://t.zsxq.com/14dHXmVuq |
 | 2023-11-25 | AI写作 | 起飞!加入星球的蜕变 | 皮特 | https://t.zsxq.com/14HLIepXJ |
 | 2023-11-26 | IP之路 | 三无中年小白的逆袭，AI带我实现财富梦，我的Ai破局之路[万字长文 | 蕃茄 | https://t.zsxq.com/14vI67jz6 |
 | 2023-11-27 | AI分享 | AI十行业的思考@(中篇)，距离(上)有点久远 | 潘达 | https://t.zsxq.com/14l0ltN0K |
@@ -468,16 +468,16 @@ AI分享
 | --- | --- | --- | --- | --- |
 | 2023-11-22 | AI风向标 | Stable Diffusion母公司进军视频 | 威二Will2 | https://t.zsxq.com/14aQf6NUu |
 | 2023-11-24 | AI工具 | 效率神器: ChatGPT和Zapier实现自动化! | 熊猫Jay | https://t.zsxq.com/14LRxKlPv |
-| 2023-11-24 | AI自媒体 | AI 公众号爆文: 新号 39 天 0 阅读，入池破万! 附全流程 SOP+避坑+AI 提示词 | 卡卡 | https://t.zsxq.com/14abx2yXO |
+| 2023-11-24 | AI自媒体 | AI 👸号爆文: 新号 39 天 0 阅读，入池破万! 附全流程 SOP+避坑+AI 提示词 | 卡卡 | https://t.zsxq.com/14abx2yXO |
 | 2023-11-24 | AI工具 | 我用 AI把皮特老师提供的写作5本书拆解了，快来围观 | 依然S*ile&#x27;s | https://t.zsxq.com/14xfN9MHL |
-| 2023-11-25 | AI开发 | 又一款做小红书的神器: 定制3D盲盒形象 | 陈明强(阿强) | https://t.zsxq.com/148L40TzF |
+| 2023-11-25 | AI开发 | 又一款做📕的神器: 定制3D盲盒形象 | 陈明强(阿强) | https://t.zsxq.com/148L40TzF |
 | 2023-11-25 | AI分享 | 利好消息，微头条的百粉门槛取消了 | 罗根 | https://t.zsxq.com/14Yjr8KDt |
 | 2023-11-25 | IP之路 | 一场价值过万的免费分享 | 悦读者 | https://t.zsxq.com/14G3GEcWW |
 | 2023-11-25 | AI工具 | 《免费的ChatGPT Voice秒杀三百块一小时的英语外教?》 | 夙愿 | https://t.zsxq.com/14n2ufTxH |
 | 2023-11-26 | AI分享 | 织梦师日记 - day 4 | 心图&amp;Mr.k | https://t.zsxq.com/14tZvZwIQ |
-| 2023-11-27 | AI自媒体 | AI 发小红书赚钱有多简单? 一个 GPTs 搞定全流程 | 云天空 | https://t.zsxq.com/14I2scIK2 |
+| 2023-11-27 | AI自媒体 | AI 发📕赚钱有多简单? 一个 GPTs 搞定全流程 | 云天空 | https://t.zsxq.com/14I2scIK2 |
 | 2023-11-27 | AI分享 | 副业小白的我在30天内如何使用AI赚到5位数的 | 晨光 | https://t.zsxq.com/149u5RJuO |
-| 2023-11-27 | AI绘图 | Midjourney你真的学会了吗? ! | 茉莉 | https://t.zsxq.com/14aQQYYUO |
+| 2023-11-27 | AI绘图 | Midjourney你真的学会了吗? ! | 茉莉 | https://t.zsxq.com/14a🐧YYUO |
 
 # 11月第三周【11.12-11.19】
 
@@ -531,17 +531,17 @@ AI分享
 | **发布时间** | **分类** | **一句话概述** | **中标作者** | **链接** |
 | --- | --- | --- | --- | --- |
 | 2023-11-04 | AI风向标 | 零成本做AI+拼多多，1个月变现8k,2023年暴利风口！！ | 晨夕（卜凡明） | https://t.zsxq.com/13COw68VF |
-| 2023-11-04 | AI风向标 | 我靠这5个方法，在微信读书引流了200人 | 认知小窗-认哥 | https://t.zsxq.com/14CCwsCAn |
+| 2023-11-04 | AI风向标 | 我靠这5个方法，在🛰️读书引流了200人 | 认知小窗-认哥 | https://t.zsxq.com/14CCwsCAn |
 | 2023-11-05 | AI风向标 | 知乎&quot;知海图AI&quot;大模型宣布开放服务，将赋能多个业务场景 | 卡卡 | https://t.zsxq.com/14j89bLPM |
 | 2023-11-06 | AI开发 | 使用gpt，小白不用一行代码就可以爬虫 | 亮仔 | https://t.zsxq.com/14dlSNg32 |
 | 2023-11-06 | AI风向标 | Grok 的一个独特且基本的优势是它可以通过x平台实时了解世界。它还可以回答大多数其他人工智能系统拒绝的尖锐问题 | 学长刚帼 | https://t.zsxq.com/147mhV5Em |
 | 2023-11-06 | AI写作 | [AI 公域写作，大学生变现 4K+复盘] | 红油抄手和梨花白 | https://t.zsxq.com/14t8Ncrtz |
 | 2023-11-07 | AI分享 | GPT发布会核心更新一张图总结 | 蕃茄 | https://t.zsxq.com/14EzTr13N |
-| 2023-11-07 | AI写作 | AI 公众号一线实战体感，用好 AI 写公众号爆文，其实一点也不难.(工具Know how，全都有.) | 书生 | https://t.zsxq.com/14FZDBHyM |
+| 2023-11-07 | AI写作 | AI 👸号一线实战体感，用好 AI 写👸号爆文，其实一点也不难.(工具Know how，全都有.) | 书生 | https://t.zsxq.com/14FZDBHyM |
 | 2023-11-07 | AI绘图 | AI 绘画复盘，副业小白赚到的第一个五位数 | 大骨（Will） | https://t.zsxq.com/140WXOIAv |
 | 2023-11-08 | AI分享 | 共创 AI 编程专栏，小赚 3 万+ | 闫小林 | https://t.zsxq.com/14QIHJYi9 |
 | 2023-11-09 | AI分享 | OpenAI 举办 AI 春晚，AI 原生应用时代即将到来 | 小宝 | https://t.zsxq.com/14bC08fYI |
-| 2023-11-09 | AI自媒体 | 小红书小白累计阅读量 10w+，单篇点赞获得 1000 个赞和收藏啦 | 清珞 | https://t.zsxq.com/14LywVzy8 |
+| 2023-11-09 | AI自媒体 | 📕小白累计阅读量 10w+，单篇点赞获得 1000 个赞和收藏啦 | 清珞 | https://t.zsxq.com/14LywVzy8 |
 | 2023-11-10 | AI分享 | 全员上岸，8船14天全勤，我是如何兼顾志愿者与船员两种身份的? | 一舟 | https://t.zsxq.com/14452b8KT |
 | 2023-11-11 | AI开发 | 我的几个 GPT-Gizmo | 小七姐 | https://t.zsxq.com/14Y6yN82k |
 
@@ -590,11 +590,11 @@ AI分享
 | --- | --- | --- | --- | --- |
 | 2023-10-26 | AI提示词 | 爆肝两天！ChatGPT+提示词解决知识库目录混乱问题 | 熊猫Jay | https://t.zsxq.com/13nSzrDHg |
 | 2023-10-26 | AI风向标 | 刷到B站一个帐号很有意思，利用AI总结视频，只有4条视频，却有8.1万粉丝 | 珞珈Lorjia | https://t.zsxq.com/138ZqjYJy |
-| 2023-10-26 | AI开发 | 人人都能学会的 ChatGPT + 微信机器人部署教程 | 苏小瓶聊AI | https://t.zsxq.com/13NHmJTMl |
+| 2023-10-26 | AI开发 | 人人都能学会的 ChatGPT + 🛰️机器人部署教程 | 苏小瓶聊AI | https://t.zsxq.com/13NHmJTMl |
 | 2023-10-25 | AI分享 | 视频号风口项目，AI 加持做就赚钱，免费教还不行动？ | 段老湿 | https://t.zsxq.com/13sznnZr8 |
 | 2023-10-25 | AI提示词 | 四篇 Prompt 相关论文/文档精读翻译 | 小七姐 | https://t.zsxq.com/13iBlAs1E |
 | 2023-10-25 | AI编程 | 编程界的黑科技：免费GPT-4编辑器颠覆你的编码世界！ | ws | https://t.zsxq.com/13LuDwSGH |
-| 2023-10-24 | AI风向标 | 微信的对话机器人来了 | William.L | https://t.zsxq.com/13GBcwBn5 |
+| 2023-10-24 | AI风向标 | 🛰️的对话机器人来了 | William.L | https://t.zsxq.com/13GBcwBn5 |
 | 2023-10-24 | AI分享 | 大家好，我是火四眼，AI破局续费第一人 | 火四眼 | https://t.zsxq.com/13CfnyHY0 |
 | 2023-10-24 | IP之路 | 怎样并行做多件事，还能每件都达到 80 分？ | 卡尔 | https://t.zsxq.com/13nMY6SxW |
 | 2023-10-22 | AI风向标 | 周末大量的知识输入，总结一下就是头部和积极创新的企业已经加速在场景下落地应用 | colin | https://t.zsxq.com/13pl36zx2 |
@@ -624,7 +624,7 @@ AI分享
 | 2023-10-18 | AI风向标 | 可以用 ChatGPT 来当教练了！ | 听雨 | https://t.zsxq.com/13Ny0bE1p |
 | 2023-10-17 | AI分享 | 成功晋升了，普通人为数不多的“破局”选择！ | 破局合伙人-零一 | https://t.zsxq.com/13MGa01aD |
 | 2023-10-16 | AI写作 | 写作基本功：三个适合新手小白的写作结构！ | 皮特 | https://t.zsxq.com/13OIrjlnC |
-| 2023-10-16 | AI写作 | 公众号爆文写作：一个新号凭什么第一天连发15篇10w+？ | 台风-GPT魔法师 | https://t.zsxq.com/13nBWB1Xo |
+| 2023-10-16 | AI写作 | 👸号爆文写作：一个新号凭什么第一天连发15篇10w+？ | 台风-GPT魔法师 | https://t.zsxq.com/13nBWB1Xo |
 | 2023-10-16 | AI风向标 | 想不想一篇文章赚个千儿八百美金？ | 元峰@AI破局 | https://t.zsxq.com/13xK7WUW4 |
 | 2023-10-16 | AI分享 | AI+拆书100本，今日分享第6本 | 依然Smile&#x27;s | https://t.zsxq.com/13w6aG1qQ |
 | 2023-10-15 | AI分享 | 一个航海志愿者的平凡之路 | 了然 | https://t.zsxq.com/13DlbcUi2 |
@@ -640,13 +640,13 @@ AI分享
 | **发布时间** | **分类** | **一句话概述** | **精华作者** | **链接** |
 | --- | --- | --- | --- | --- |
 | 2023-10-13 | AI提示词 | 逻辑差 ？表达差？Prompt 助你秒变高手 | 卡尔 | https://t.zsxq.com/13so9GG68 |
-| 2023-10-12 | AI自煤体 | 手把手教你AI＋公众号的底层逻辑和实操要点（这可能是近期讲AI＋公众号最细的一篇文章） | 书生 | https://t.zsxq.com/13J5zuV89 |
+| 2023-10-12 | AI自煤体 | 手把手教你AI＋👸号的底层逻辑和实操要点（这可能是近期讲AI＋👸号最细的一篇文章） | 书生 | https://t.zsxq.com/13J5zuV89 |
 | 2023-10-11 | AI分享 | AI 助力培训课件设计：8 小时变现 3200 元 | 叶耶耶Martin | https://t.zsxq.com/13Thr4o5u |
 | 2023-10-10 | AI分享 | 《AI+简历修改，首月盈利7000+，低成本高收益的保姆级教程，附带多个接单平台详细操作步骤及避坑指南》 | 饭饭 | https://t.zsxq.com/13Sh15WRD |
-| 2023-10-10 | AI写作 | AI 公众号，30 天变现 1 万+ | 伟豪 | https://t.zsxq.com/13DS9UwiG |
+| 2023-10-10 | AI写作 | AI 👸号，30 天变现 1 万+ | 伟豪 | https://t.zsxq.com/13DS9UwiG |
 | 2023-10-09 | AI绘图 | 入坑赛博机车，10 天赚回星球门票，变现近 1000 元 | 小六六~ | https://t.zsxq.com/13jLotfVd |
-| 2023-10-09 | AI绘图 | AI 小红书起号到引流 SOP | 小柴Yaaaaa. | https://t.zsxq.com/13wTK6QV7 |
-| 2023-10-08 | AI分享 | AI 公众号航海：10 万+阅读，小赚 600+ | 罗根 | https://t.zsxq.com/13Sc5tWd3 |
+| 2023-10-09 | AI绘图 | AI 📕起号到引流 SOP | 小柴Yaaaaa. | https://t.zsxq.com/13wTK6QV7 |
+| 2023-10-08 | AI分享 | AI 👸号航海：10 万+阅读，小赚 600+ | 罗根 | https://t.zsxq.com/13Sc5tWd3 |
 | 2023-10-07 | AI自媒体 | 涨粉 9200+，变现 1200+，我用 AI 做了什么？ | 枫枫无痕 | https://t.zsxq.com/13j7MLBSD |
 
 ## 中标贴
@@ -660,9 +660,9 @@ AI分享
 | 2023-10-12 | AI风向标 | 花了3分钟使用shortbread制作的漫画，有点意思，操作简单，挺适合小白玩家使用的。 | 阿强 | https://t.zsxq.com/13njdI41d |
 | 2023-10-12 | AI风向标 | 宠物肖像定制 | 阿尔 | https://t.zsxq.com/13UurrjnS |
 | 2023-10-11 | AI分享 | 借势 AI，30 天小赚 1 万 | 青柠 | https://t.zsxq.com/132tj0QEW |
-| 2023-10-11 | AI风向标 | 分享个小红书看到的异常值，「死了么APP」 | Baoxing | https://t.zsxq.com/13eQVijDN |
+| 2023-10-11 | AI风向标 | 分享个📕看到的异常值，「死了么APP」 | Baoxing | https://t.zsxq.com/13eQVijDN |
 | 2023-10-10 | AI风向标 | 炸裂新思路 | 大疯狂 | https://t.zsxq.com/13oC15eMC |
-| 2023-10-10 | AI风向标 | 小红书Ai头像，用明星Ip Q版引流 | 她乡的书同 | https://t.zsxq.com/13h2A7SXZ |
+| 2023-10-10 | AI风向标 | 📕Ai头像，用明星Ip Q版引流 | 她乡的书同 | https://t.zsxq.com/13h2A7SXZ |
 | 2023-10-08 | AI写作 | 写作基本功：如何清晰表达？ | 皮特 | https://t.zsxq.com/13tRcUD7R |
 | 2023-10-08 | AI工具 | 利用 AI 构建你的万能素材库 | 夙愿 | https://t.zsxq.com/13J7icWBH |
 | 2023-10-08 | AI分享 | 6 条 AI 航海，6 船皆上岸，万字复盘 | 欢欢糖 | https://t.zsxq.com/13FfIlk0i |
@@ -679,9 +679,9 @@ AI分享
 | **发布时间** | **分类** | **一句话概述** | **精华作者** | **链接** |
 | --- | --- | --- | --- | --- |
 | 2023-10-06 | AI自媒体 | AI数字人：起号四天，涨粉两万 | Morpheus | https://t.zsxq.com/13UbiMPKJ |
-| 2023-10-05 | AI自媒体 | AI 公众号：涨粉 4500，变现 2000+ | das | https://t.zsxq.com/123JX8lGW |
+| 2023-10-05 | AI自媒体 | AI 👸号：涨粉 4500，变现 2000+ | das | https://t.zsxq.com/123JX8lGW |
 | 2023-10-02 | AI绘图 | 研究 AI 人像 3 个月，谈谈如何做出还原真人的 AI 写真 | 月起星九 | https://t.zsxq.com/12kP1kitd |
-| 2023-10-01 | 个人IP | 公众号还有机会吗？有！ | 皮特 | https://t.zsxq.com/12NwuNzIs |
+| 2023-10-01 | 个人IP | 👸号还有机会吗？有！ | 皮特 | https://t.zsxq.com/12NwuNzIs |
 | 2023-10-01 | AI分享 | 6 条航海皆上岸，我的心得复盘 | 闻彬 | https://t.zsxq.com/12WfAXbd2 |
 | 2023-10-01 | AI提示词 | 冯帅—AI提示词保姆级教程（四）：11个情景小故事，带你10分钟学会AI提示词 | 冯帅Prompt | https://t.zsxq.com/12OLt0jX6 |
 | 2023-10-01 | AI绘图 | 《从零开始学AI绘画，万字Stable   Diffusion终极教程！全新升级版》 | 吴东子 | https://t.zsxq.com/12KDA8kSK |
@@ -715,7 +715,7 @@ AI分享
 | 2023-09-29 | AI分享 | 【AI借势｜副业破局】直播复盘 | 道 | https://t.zsxq.com/12nRKqF6z |
 | 2023-09-27 | AI风向标 | 【Ai算命机会来咯】 | Dreamland | https://t.zsxq.com/12dq2B5M3 |
 | 2023-09-26 | AI绘图 | 你画爱国头像了吗？一个分享 &amp; 一个有趣的想法 | 你猜 | https://t.zsxq.com/12Epqhkwl |
-| 2023-09-26 | AI风向标 | AI 游戏角色日常衣服设计 | 雪飘雨飞 | https://t.zsxq.com/12QQ7Z1nO |
+| 2023-09-26 | AI风向标 | AI 游戏角色日常衣服设计 | 雪飘雨飞 | https://t.zsxq.com/12🐧7Z1nO |
 | 2023-09-26 | AI提示词 | AI 9天完成一本书，客单价1万的全流程分享 | 袁六伟 | https://t.zsxq.com/12GfpW0ot |
 | 2023-09-26 | AI风向标 | 做 AI   国庆头像，短期热点项目，不管是做流量还是接单制作应该都是可以小爆发一下的，说不定你的账号因此度过冷启动期。 | 段老湿 | https://t.zsxq.com/12lgjYYqK |
 | 2023-09-25 | AI风向标 | 【PS+AI大有可为】 | Dreamland | https://t.zsxq.com/12GwDNvrj |
@@ -736,7 +736,7 @@ AI分享
 | **发布时间** | **分类** | **一句话概述** | **精华作者** | **链接** |
 | --- | --- | --- | --- | --- |
 | 2023-09-22 | AI分享 | 蹭个毛线热点 | 闫小林 | https://t.zsxq.com/12B2LWp88 |
-| 2023-09-22 | AI写作 | AI公众号爆文写作项目原理，玩法，实操，避坑经验 | 帅子 | https://t.zsxq.com/12WU5kSeB |
+| 2023-09-22 | AI写作 | AI👸号爆文写作项目原理，玩法，实操，避坑经验 | 帅子 | https://t.zsxq.com/12WU5kSeB |
 | 2023-09-22 | AI分享 | 破局精华贴整理 | 耀林-AI魔术师 | https://t.zsxq.com/12kjRfKaj |
 | 2023-09-22 | AI自煤体 | 手把手教你制作 3 个月涨粉 46 W 的“AI   数字人短视频+CPS卖货”账号 | 元峰@AI破局 | https://t.zsxq.com/12s4FnDKz |
 | 2023-09-21 | AI绘图 | 用AI绘画技术拓展无限可能 | 赵玉润 | https://t.zsxq.com/12GiWup6l |
@@ -744,10 +744,10 @@ AI分享
 | 2023-09-20 | AI自煤体 | 一篇文章讲明白抖音小白怎么做内容运营，多个可落地方法分享。 | 行舟 | https://t.zsxq.com/12vPaAMal |
 | 2023-09-20 | AI分享 | 关于索引站的一切 | 买买 | https://t.zsxq.com/12blH1rAA |
 | 2023-09-20 | AI绘图 | MJ全自动+SD基础参数与各种批量操作详解 | 蕃茄 | https://t.zsxq.com/12aTro6Ez |
-| 2023-09-20 | AI小红书 | 小红书如何快速起号？小白 1 月起 2 个千粉号经验分享 | sky陈天 | https://t.zsxq.com/12UoFJWio |
+| 2023-09-20 | AI📕 | 📕如何快速起号？小白 1 月起 2 个千粉号经验分享 | sky陈天 | https://t.zsxq.com/12UoFJWio |
 | 2023-09-20 | AI提示词 | AI 时代的学习观及方法论 | 小七姐 | https://t.zsxq.com/12fPAT66j |
 | 2023-09-19 | AI提示词 | GPT不好用？先把这些基础补上再骂不迟！ | 皮特 | https://t.zsxq.com/124Y8Ld6H |
-| 2023-09-19 | AI公众号 | 公众号快速增粉捷径（附最简配图喂饭教程 | 葉子 | https://t.zsxq.com/127M2BlBC |
+| 2023-09-19 | AI👸号 | 👸号快速增粉捷径（附最简配图喂饭教程 | 葉子 | https://t.zsxq.com/127M2BlBC |
 | 2023-09-19 | AI分享 | 从3000元到300万，这10个破局思维，让你不走弯路斩获人生第一桶金｜写在理白的三十而立 | 理白 | https://t.zsxq.com/12FgLwvml |
 | 2023-09-18 | AI自煤体 | 手把手教你用 AI 像素级模仿爆款账号 | 段老湿 | https://t.zsxq.com/12DYlK7cQ |
 | 2023-09-16 | AI自煤体 | 超全的AI工具生成PPT的思路和使用指南, 含完整提示词,   收获培训奖励1000 | 熊猫Jay | https://t.zsxq.com/12VBjbLPo |
@@ -766,7 +766,7 @@ AI分享
 | 2023-09-19 | AI提示词 | 用ChatGPT来实践刻意练习：磨面试题 | 修齐治平 | https://t.zsxq.com/12cxJXZAM |
 | 2023-09-19 | AI开发 | 利用 Prompt编程 +Embedding 构建 智能客服   &amp;知识库问答系统! | 菠菜 | https://t.zsxq.com/13dgTeKEB |
 | 2023-09-17 | AI绘图 | 一文详细介绍如何使用 ComfyUI 来跑 SD 图 | 元峰@AI破局 | https://t.zsxq.com/12mp8Nz50 |
-| 2023-09-17 | AI分享 | 5千字总结微信「问一问」玩法，结合AI如何实现无脑变现？ | 尧二水丶 | https://t.zsxq.com/12Z5mjdmK |
+| 2023-09-17 | AI分享 | 5千字总结🛰️「问一问」玩法，结合AI如何实现无脑变现？ | 尧二水丶 | https://t.zsxq.com/12Z5mjdmK |
 | 2023-09-17 | AI提示词 | 如何用AI写爆款标题？ | 贺翔 | https://t.zsxq.com/12FB34vwP |
 
 # 9月第二周【9.9-9.15】
@@ -801,9 +801,9 @@ AI分享
 
 | **发布时间** | **分类** | **一句话概述** | **精华作者** | **链接** |
 | --- | --- | --- | --- | --- |
-| 2023-09-08 | AI分享 | 新手用AI写公众号10W+爆文，14天做到单日变现500+ | 朱胜 | https://t.zsxq.com/12PakPDzw |
+| 2023-09-08 | AI分享 | 新手用AI写👸号10W+爆文，14天做到单日变现500+ | 朱胜 | https://t.zsxq.com/12PakPDzw |
 | 2023-09-05 | AI绘图 | 《流量密码！AI幻术终极教程，3步做出百万爆款视频！》 | 吴东子 | https://t.zsxq.com/11K7E7JtG |
-| 2023-09-05 | AI提示词 | 公众号情感爆文写作：10w+就靠这条ChatGPT指令了(商用级Prompt免费送) | 台风-GPT魔法师 | https://t.zsxq.com/117I6c5By |
+| 2023-09-05 | AI提示词 | 👸号情感爆文写作：10w+就靠这条ChatGPT指令了(商用级Prompt免费送) | 台风-GPT魔法师 | https://t.zsxq.com/117I6c5By |
 | 2023-09-03 | AI分享 | 8月份精华帖内容，看这一篇就够了 | 猪肉王子 | https://t.zsxq.com/11nfHaVuj |
 
 ## 中标贴
@@ -814,7 +814,7 @@ AI分享
 | 2023-09-06 | AI分享 | 还在破局潜水的人，快醒醒吧！ | 周梦雅 | https://t.zsxq.com/11aLu1Y37 |
 | 2023-09-05 | AI分享 | 我用20 分钟烹饪了一个讲书 PPT，AI 工具真的太香了！ | 海马 | https://t.zsxq.com/11HkVwizx |
 | 2023-09-05 | AI写作 | ChatGPT 辅助写作 | 下篇 | 闫小林 | https://t.zsxq.com/11B218Mn1 |
-| 2023-09-05 | AI绘图 | 赛博朋克机车复盘：小红书粉丝800+，抖音粉丝250+，收入500+ | 吴。 | https://t.zsxq.com/11zQAs44t |
+| 2023-09-05 | AI绘图 | 赛博朋克机车复盘：📕粉丝800+，抖音粉丝250+，收入500+ | 吴。 | https://t.zsxq.com/11zQAs44t |
 | 2023-09-04 | AI写作 | 从0到1搞定AI写作：中间如何展开 | 皮特 | https://t.zsxq.com/11hQqP4PD |
 
 # 8月第五周【8.26-9.1】
@@ -830,7 +830,7 @@ AI分享
 | **发布时间** | **分类** | **一句话概述** | **中标作者** | **链接** |
 | --- | --- | --- | --- | --- |
 | 2023-09-01 | AI分享 | 180天打卡活动中，互助监督提醒群聊，第一次分享大会，复盘加总结 | rujin y | https://t.zsxq.com/115gmKuGO |
-| 2023-09-01 | AI提示词 | 给数十万粉丝的大公众号定制提示词是一种什么体验？ | 书生 | https://t.zsxq.com/11wCcytfj |
+| 2023-09-01 | AI提示词 | 给数十万粉丝的大👸号定制提示词是一种什么体验？ | 书生 | https://t.zsxq.com/11wCcytfj |
 | 2023-09-01 | AI写作 | 轻松搞定10w+爆款文案：一看就会的GPT写作指令法(自媒体人必学的AI教程） | 台风-GPT魔法师 | https://t.zsxq.com/11DQgWj1F |
 | 2023-09-01 | AI分享 | 入局星球3个月复盘，副业收入4000元，你上你也行！ | 小宁 | https://t.zsxq.com/11a1KuWqU |
 | 2023-08-31 | AI写作 | 从0到1搞定AI 写作：如何写出好结尾？ | 皮特 | https://t.zsxq.com/11l6JbWOx |
@@ -849,7 +849,7 @@ AI分享
 | 2023-08-27 | AI编程 | AI辅助编程实践案例 - 万能数据采集软件雏形(从0到1) | 修齐治平 | https://t.zsxq.com/11lyVbCqf |
 | 2023-08-27 | AI提示词 | 一篇文章带您解读ChatGPT提示词官方最佳实践 | 熊猫Jay | https://t.zsxq.com/11wrNMYnt |
 | 2023-08-27 | AI绘图 | 怎样创作出优秀的图片？从摄影审美艺术剖析提示词创作 | 一只辣椒仔 | https://t.zsxq.com/11kEW0VkF |
-| 2023-08-27 | AI提示词 | 小试牛刀 尝试用一个万能型prompt 切入公众号爆文写作   五分钟写出一篇合格爆文 | 枫晓陌 | https://t.zsxq.com/11R1TDytw |
+| 2023-08-27 | AI提示词 | 小试牛刀 尝试用一个万能型prompt 切入👸号爆文写作   五分钟写出一篇合格爆文 | 枫晓陌 | https://t.zsxq.com/11R1TDytw |
 | 2023-08-26 | AI写作 | AI 写作实践心得 | 三三 | https://t.zsxq.com/11uHx1Ggh |
 
 # 8月第四周【8.19-8.25】
@@ -874,14 +874,14 @@ AI分享
 | 2023-08-25 | AI提示词 | 结构化提示词学习心得 | haoyuan | https://t.zsxq.com/11EEL9cGO |
 | 2023-08-25 | AI分享 | 加入星球的 AI 收获暨志愿者复盘 | 山水 | https://t.zsxq.com/11gJwpsjd |
 | 2023-08-24 | AI分享 | AI 数字人实战：7 天涨粉破万 | 云归ol | https://t.zsxq.com/11ZsmS421 |
-| 2023-08-24 | AI风向标 | 公众号流量主新领域！地理号，最容易进入流量池的领域！ | 一来 | https://t.zsxq.com/11DWXCBkM |
+| 2023-08-24 | AI风向标 | 👸号流量主新领域！地理号，最容易进入流量池的领域！ | 一来 | https://t.zsxq.com/11DWXCBkM |
 | 2023-08-23 | AI提示词 | 用 AI 帮大学生做问卷，小赚 500 元 | 寒塘渡鹤影 | https://t.zsxq.com/11JyqH76H |
 | 2023-08-23 | AI分享 | 入局 AI : B 站 30 天涨粉近万 | Ternura | https://t.zsxq.com/11CZtXyCu |
 | 2023-08-22 | AI分享 | AI破局线下大会的记录胡明校长 | 熊猫校长胡明 | https://t.zsxq.com/11AACar4o |
 | 2023-08-22 | AI分享 | AI 助力数据管理 4 倍提效 | 叶子凡Martin | https://t.zsxq.com/11uFCOFxp |
 | 2023-08-22 | AI写作 | 30 天头条粉丝破千，阅读破百万 | 二师兄 | https://t.zsxq.com/11wTyirha |
 | 2023-08-22 | AI绘画 | AI绘画教程之保姆级服务器部署Stable   Diffusion、插件安装、汉化、使用（上） | 千与编程 | https://t.zsxq.com/11zxNCTC3 |
-| 2023-08-22 | AI写作 | AI 公众号：变现 200+ 复盘 | 鱼欲语渔 | https://t.zsxq.com/11Mk5P4Ig |
+| 2023-08-22 | AI写作 | AI 👸号：变现 200+ 复盘 | 鱼欲语渔 | https://t.zsxq.com/11Mk5P4Ig |
 | 2023-08-21 | AI分享 | 实践，持续实践，人之践则无敌！ | 飞机Fitz | https://t.zsxq.com/11NIlkq9c |
 | 2023-08-21 | AI提示词 | Prompt开源：产品需求大师，一句话让AI完成80%的需求文档 | Carl邓演 | https://t.zsxq.com/11o89oNJo |
 | 2023-08-21 | AI工具 | 《运营必备工具大集合 | 黑科技神器 |   花了3年搜集整理的4000G工具箱免费送给圈友们》 | 乔帮主 | https://t.zsxq.com/11Qahqbpp |
@@ -953,7 +953,7 @@ AI分享
 | 2023-08-10 | AI编程 | 巧用   ChatGPT 将半天的工作量压缩到20分钟 | 子非鱼 | https://t.zsxq.com/11btsa4WO |
 | 2023-08-10 | AI编程 | Prompt编程 完整版课程 来了！！ | 菠菜 | https://t.zsxq.com/11fHWVxB2 |
 | 2023-08-09 | AI写作 | 写文章不会，套公式还不会吗？ | 皮特 | https://t.zsxq.com/11fbmxE1D |
-| 2023-08-09 | AI绘图 | 【5分钟教你用AI做出一套专属微信表情包】 | 清醒 | https://t.zsxq.com/11aeE0QNS |
+| 2023-08-09 | AI绘图 | 【5分钟教你用AI做出一套专属🛰️表情包】 | 清醒 | https://t.zsxq.com/11aeE0QNS |
 | 2023-08-09 | AI编程 | AI绘画教程之小模型HairMapper秃头算法，一个让你“变强”的算法！ | 千与编程 | https://t.zsxq.com/11NplNCys |
 | 2023-08-09 | AI案例 | 入局 AI 2个月，日更 60 篇 AI 文章，变现2000元！ | sky陈天 | https://t.zsxq.com/11ChDmy1a |
 | 2023-08-08 | AI风向标 | Twitter开始送钱啦！ | 刘驴 | https://t.zsxq.com/1170IQso3 |
@@ -961,7 +961,7 @@ AI分享
 | 2023-08-07 | AI分享 | 《AIGC三剑客赚钱机会的实践与思考》 | 乔帮主 | https://t.zsxq.com/10Nx517Xy |
 | 2023-08-07 | AI风向标 | 很疯狂，一个独立游戏制作人花了60个小时制作的AI游戏《细胞防线》，目前累计收入过万了。 | Orange橘匪 | https://t.zsxq.com/10zsZ4zqK |
 | 2023-08-06 | AI编程 | Prompt编程 进阶来了！ For 程序员、产品！ | 菠菜 | https://t.zsxq.com/11bQrxZaG |
-| 2023-08-06 | AI分享 | 公众号轻松涨粉，微信问一问经验分享 | 小潘@AI破局俱乐部 | https://t.zsxq.com/10Vy5gZc2 |
+| 2023-08-06 | AI分享 | 👸号轻松涨粉，🛰️问一问经验分享 | 小潘@AI破局俱乐部 | https://t.zsxq.com/10Vy5gZc2 |
 | 2023-08-05 | AI提示词 | Prompt喂饭级系列教程小白学习指南（四） | 小七姐 | https://t.zsxq.com/10XxCk37p |
 | 2023-08-05 | AI风向标 | 『音乐×国风× AI绘画一镜到底』 | 阿赖 | https://t.zsxq.com/10gbkmvUn |
 | 2023-08-05 | AI风向标 | 不知道大家有没有发现，昨天Q更新出了个限时魔法头像定制馆。 | Lc | https://t.zsxq.com/10CPNZ6D4 |
@@ -990,9 +990,9 @@ AI分享
 | 2023-08-02 | AI绘图 | Stable Diffusion 阿里云部署 SOP | Miamnh-小鱼 | https://t.zsxq.com/10s6HSZvF |
 | 2023-08-01 | AI工具 | 如何驾驭 ChatGPT：掌控有效对话！ | 豆茉君 | https://t.zsxq.com/10531b9UV |
 | 2023-08-01 | AI绘图 | AI 画头像实操：小赚 500 元 | 十二 | https://t.zsxq.com/10XmDaFc1 |
-| 2023-08-01 | AI绘图 | AI绘画教程：为艺术而生的算法，你还在烦恼小红书与公众号的配图吗？（下） | 千与编程 | https://t.zsxq.com/10rwhUPwM |
+| 2023-08-01 | AI绘图 | AI绘画教程：为艺术而生的算法，你还在烦恼📕与👸号的配图吗？（下） | 千与编程 | https://t.zsxq.com/10rwhUPwM |
 | 2023-07-31 | AI视频 | 从 0 到 1 部署自己的AI数字人 | 猪肉王子 | https://t.zsxq.com/10QNTUrjp |
-| 2023-07-31 | AI分享 | 做小红书头像号踩过的那些坑 | 陈军娟 | https://t.zsxq.com/10ERoxOod |
+| 2023-07-31 | AI分享 | 做📕头像号踩过的那些坑 | 陈军娟 | https://t.zsxq.com/10ERoxOod |
 | 2023-07-31 | AI自媒体 | 小白利用 AI 在自媒体的 9 个失败经历 | 自强不息 | https://t.zsxq.com/10Ope8qWC |
 | 2023-07-31 | AI案例 | 志愿者工作复盘暨 60 天 AI 实战心得 | 小黄同学 | https://t.zsxq.com/10913BgrY |
 | 2023-07-31 | AI案例 | 志愿者复盘 | AI 百家号实操 | 小青年 | https://t.zsxq.com/10liKDfWr |
@@ -1011,7 +1011,7 @@ AI分享
 
 | **发布时间** | **分类** | **一句话概述** | **精华作者** | **链接** |
 | --- | --- | --- | --- | --- |
-| 2023-07-27 | AI绘图 | AI 绘画：小红书涨粉 6000 复盘 | 沐沐 | https://t.zsxq.com/101IVaz9G |
+| 2023-07-27 | AI绘图 | AI 绘画：📕涨粉 6000 复盘 | 沐沐 | https://t.zsxq.com/101IVaz9G |
 | 2023-07-27 | AI绘图 | SD 艺术字实战：小赚几百块 | 元峰 | https://t.zsxq.com/10Lv51DU3 |
 | 2023-07-26 | AI案例教程 | 《商业拆解：14000+字手把手带你从0到1拆解一个年入8位数的财经IP（招财大牛猫）》 | 炮爷（不睡觉） | https://t.zsxq.com/10Lx951wC |
 | 2023-07-25 | AI案例教程 | 《AI绘画赋能-儿童益智类玩具创意方案，仅靠创作思路多赚500元（无保留分享）》 | 珞珈Lorjia | https://t.zsxq.com/10GKUd2aY |
@@ -1029,14 +1029,14 @@ AI分享
 | 2023-07-27 | AI案例教程 | 《如何用ChatGPT创造独特的图片》 | 清风 | https://t.zsxq.com/10lBtwQKb |
 | 2023-07-27 | AI分享 | 我把它定义为《大模型时代，帮我走出迷茫》 | 潘达 | https://t.zsxq.com/10nQL3Jwd |
 | 2023-07-26 | 个人IP | 【个人 IP 高阶版 -   进阶千万营收的故事】 | 宝藏文姐 | https://t.zsxq.com/107b0ZW57 |
-| 2023-07-26 | AI绘图 | 小红书爆火 萌娃头像Prompt拆解 +   ChatGPT生成可爱文案 | 景淮 | https://t.zsxq.com/109A4Yz6d |
-| 2023-07-26 | AI绘图 | AI绘画教程：为艺术而生的算法模型，你还在烦恼小红书的配图吗（上）？ | 千与编程 | https://t.zsxq.com/102N41roH |
+| 2023-07-26 | AI绘图 | 📕爆火 萌娃头像Prompt拆解 +   ChatGPT生成可爱文案 | 景淮 | https://t.zsxq.com/109A4Yz6d |
+| 2023-07-26 | AI绘图 | AI绘画教程：为艺术而生的算法模型，你还在烦恼📕的配图吗（上）？ | 千与编程 | https://t.zsxq.com/102N41roH |
 | 2023-07-26 | AI提示词 | Prompt 喂饭级系列教程  小白学习指南（二） | 小七姐 | https://t.zsxq.com/10lvb5sLd |
 | 2023-07-25 | AI写作 | 如何使用 AI 写出爆文？先把这件事整明白！ | 皮特 | https://t.zsxq.com/10HFWDWUV |
 | 2023-07-25 | AI绘图 | GPT自动生成十二星座拟人图片 --   思路分享 + 拆图失败案例 | 景淮 | https://t.zsxq.com/10Dt39HBt |
-| 2023-07-25 | AI风向标 | 今天给大家拆解个在小红书上属于热点的AI芭比写真的账号 | 清醒 | https://t.zsxq.com/10rWKNARe |
+| 2023-07-25 | AI风向标 | 今天给大家拆解个在📕上属于热点的AI芭比写真的账号 | 清醒 | https://t.zsxq.com/10rWKNARe |
 | 2023-07-23 | AI提示词 | 小七姐不万能系列：客订prompt没有那么马到功成（下) | 小七姐 | https://t.zsxq.com/10c9fwejQ |
-| 2023-07-23 | AI风向标 | 很多人其实没有注意到在妙鸭相机爆火的同时，还有另一款AI写真的软件B612，正在小红书出现大量的千赞和万赞笔记。 | Orange橘匪 | https://t.zsxq.com/10zacrsfu |
+| 2023-07-23 | AI风向标 | 很多人其实没有注意到在妙鸭相机爆火的同时，还有另一款AI写真的软件B612，正在📕出现大量的千赞和万赞笔记。 | Orange橘匪 | https://t.zsxq.com/10zacrsfu |
 | 2023-07-23 | AI案例教程 | MJ生成绝美风景图+静态图片转视频 - 保姆级教程 | 景淮 | https://t.zsxq.com/106lYloeZ |
 | 2023-07-23 | AI绘图 | 《19条视频涨粉4w，AIGC项目——Midjourney眼中的XX》 | 吴东子 | https://t.zsxq.com/10ple7MvA |
 | 2023-07-23 | AI绘图 | 超越想象！揭秘 AI 赛博机车变装 | 小飞仙 | https://t.zsxq.com/10lWevtHT |
@@ -1069,25 +1069,25 @@ AI分享
 | **发布时间** | **分类** | **一句话概述** | **中标作者** | **链接** |
 | --- | --- | --- | --- | --- |
 | 2023-07-22 | IP之路 | 写出爆文的九阳真经—读者思维 | 皮特 | https://t.zsxq.com/10tfGrm3F |
-| 2023-07-21 | AI绘图 | 三天赚800的小项目，AI绘画+公众号流量主 | 闲富（软件定制） | https://t.zsxq.com/10GJxPpfw |
+| 2023-07-21 | AI绘图 | 三天赚800的小项目，AI绘画+👸号流量主 | 闲富（软件定制） | https://t.zsxq.com/10GJxPpfw |
 | 2023-07-21 | AI提示词 | 帮你省钱省时间，ChatGPT辅助填报志愿？ | 发愤的草莓 | https://t.zsxq.com/100DIbl80 |
 | 2023-07-21 | AI风向标 | 与数字人对话的视频，其实就是视频开始问数字人一个问题，比如普通人如何年入百万，然后由数字人回答，答案由ChatGPT产生，视频可以用midjourney生成一个图片，did生成整个视频，类似之前小和尚的技术。涨粉非常快！完全可以做！ | 余林飞 | https://t.zsxq.com/10CQEr2t4 |
-| 2023-07-21 | AI绘图 | 今天给大家拆解个在小红书上很新颖AI老太太健身的账号，仅2天就涨粉5000多，涨粉速度非常快，目前也处于萌芽阶段，做的人还不多 | 清醒 | https://t.zsxq.com/10y9936lC |
+| 2023-07-21 | AI绘图 | 今天给大家拆解个在📕上很新颖AI老太太健身的账号，仅2天就涨粉5000多，涨粉速度非常快，目前也处于萌芽阶段，做的人还不多 | 清醒 | https://t.zsxq.com/10y9936lC |
 | 2023-07-20 | AI绘图 | AI绘画之 16 型人格 | 阿赖 | https://t.zsxq.com/108o096LE |
 | 2023-07-20 | AI写作 | 从0到1搞定自媒体：如何把chatGPT变成你的素材库 | 皮特 | https://t.zsxq.com/10Msy9pKd |
-| 2023-07-20 | AI风向标 | 小红书上面刷到的AI职业照、个人形象照，和之前的AI个人写真照类似 | 大林 | https://t.zsxq.com/10WfYBITL |
+| 2023-07-20 | AI风向标 | 📕上面刷到的AI职业照、个人形象照，和之前的AI个人写真照类似 | 大林 | https://t.zsxq.com/10WfYBITL |
 | 2023-07-20 | AI风向标 | 最近很火的「妙鸭相机」--通过AI制作高清人像照。 | fish | https://t.zsxq.com/10C9LLLzI |
 | 2023-07-19 | AI写作 | AI 写作新手入门保姆级教程（1） | 皮特 | https://t.zsxq.com/10nkYrxnu |
 | 2023-07-18 | AI律所 | Github开源：10分钟搭建你自己的ChatGPT应用“AI   律所” | 台风-gpt魔法师 | https://t.zsxq.com/10Svs3Q6k |
 | 2023-07-18 | AI绘图 | 在用了两个云平台后，终于决定在 Mac 上部署 Stable   Diffusion 了！（保姆级教程，含踩坑点） | WhyMe | https://t.zsxq.com/10Qjqt7SC |
 | 2023-07-18 | AI写作 | AI辅助写作，单日变现近1000元！ | 南卷 | https://t.zsxq.com/10SHGPAkl |
-| 2023-07-18 | AI绘图 | 今天给大家分享个在小红书上做的不错的Ai绘画小说推文账号，做好了轻松月入5000不是问题 | 清醒 | https://t.zsxq.com/10BTdmCUC |
+| 2023-07-18 | AI绘图 | 今天给大家分享个在📕上做的不错的Ai绘画小说推文账号，做好了轻松月入5000不是问题 | 清醒 | https://t.zsxq.com/10BTdmCUC |
 | 2023-07-17 | AI提示词 | ChatGPT 自动化炼金，Github 3.8k   异常值代码库，思路拆解，图文并茂，提供代码可复现！ | 豆茉君 | https://t.zsxq.com/10c3DwYXM |
 | 2023-07-17 | AI绘图 | 【AI绘画 之 拆万物】 | 阿赖 | https://t.zsxq.com/10WpIm6Wo |
 | 2023-07-17 | AI内容分享 | 破局行动之180天打卡，每一个方向都很香，怎么选？全选？ | 豆茉君 | https://t.zsxq.com/10CvpCrkW |
 | 2023-07-17 | AI内容分享 | 从0到1搞定自媒体：如何使用AI找到爆款选题 | 皮特 | https://t.zsxq.com/10gDzSUjD |
-| 2023-07-16 | AI变现案例 | 30 天小红书粉丝突破 4000 | 你猜 | https://t.zsxq.com/10hDtlH4K |
-| 2023-07-16 | AI绘图 | 利用 AI 做公众号 10 天阅读破万 | 意识流 | https://t.zsxq.com/10pla04cm |
+| 2023-07-16 | AI变现案例 | 30 天📕粉丝突破 4000 | 你猜 | https://t.zsxq.com/10hDtlH4K |
+| 2023-07-16 | AI绘图 | 利用 AI 做👸号 10 天阅读破万 | 意识流 | https://t.zsxq.com/10pla04cm |
 | 2023-07-16 | AI绘图 | 游戏装备AI重绘，竟能有10w+点赞？？？看完这篇《喂饭式教程》你也可以完美复刻！！ | 重瞳 | https://t.zsxq.com/10foNLqoX |
 | 2023-07-16 | AI风向标 | 一个快速制作AI创意海报的方法，只要选两个图像进行合成即可。 | 月起星九 | https://t.zsxq.com/10VVUQLIB |
 | 2023-07-16 | AI内容分享 | 加入星球的 3 个月，我在 AI 和 IP 上的成长 | 夙愿 | https://t.zsxq.com/10ar1V619 |
@@ -1112,7 +1112,7 @@ AI分享
 | 2023-07-12 | AI工具 | ChatGPT&amp;ZelinAI 赋能中小企业指南 | 元峰 | https://t.zsxq.com/100S1TMIw |
 | 2023-07-12 | AI变现案例 | 深夜爆肝万字走心长文-AI绘画航海两周实现爆款笔记变现的全流程实操干货分享 | 小小马 | https://t.zsxq.com/1072GpDs0 |
 | 2023-07-12 | AI内容分享 | 今天给大家拆解个在抖音上的AI人物口播账号，仅仅5天就涨粉20w，涨粉速度非常的夸张。 | 刘驴 | https://t.zsxq.com/10JRmgBQr |
-| 2023-07-11 | AI变现案例 | 收入1000+小红书AI绘画头像号，一个月跑通闭环全流程无保留分享！字数1w8+   ！ | 小柴Yaaaaa. | https://t.zsxq.com/10h72AN0L |
+| 2023-07-11 | AI变现案例 | 收入1000+📕AI绘画头像号，一个月跑通闭环全流程无保留分享！字数1w8+   ！ | 小柴Yaaaaa. | https://t.zsxq.com/10h72AN0L |
 | 2023-07-10 | AI工具 | 一文解析Prompt的底层逻辑，帮助大家高效撰写精准Prompt | 书生 | https://t.zsxq.com/10k1pqHJD |
 | 2023-07-09 | AI变现案例 | 一只￥4000的prompt订单：有需求就有价值 | 小七姐 | https://t.zsxq.com/0fTvu1XVz |
 | 2023-07-09 | AI变现案例 | SD零基础，4天做赛博机车项目变现1000+，有什么启示？ | 段冬 | https://t.zsxq.com/0fZ2IC3uj |
@@ -1124,8 +1124,8 @@ AI分享
 
 | **发布时间** | **分类** | **一句话概述** | **精华作者** | **链接** |
 | --- | --- | --- | --- | --- |
-| 2023-07-14 | AI变现案例 | 小红书 2000 阅读 600 赞藏，变现 300 元 | 苏小瓶聊AI | https://t.zsxq.com/10kWgWzwL |
-| 2023-07-14 | AI绘图 | 给大家分享个在小红书上变现数据贼好账号：反PUA类的图文笔记。 | 清醒 | https://t.zsxq.com/10T1MFduM |
+| 2023-07-14 | AI变现案例 | 📕 2000 阅读 600 赞藏，变现 300 元 | 苏小瓶聊AI | https://t.zsxq.com/10kWgWzwL |
+| 2023-07-14 | AI绘图 | 给大家分享个在📕上变现数据贼好账号：反PUA类的图文笔记。 | 清醒 | https://t.zsxq.com/10T1MFduM |
 | 2023-07-14 | AI内容分享 | 如何用ChatGPT和麦肯锡方法论，快速洞察一个全新的行业？ | 学姐雅典娜 | https://t.zsxq.com/10VmcFktI |
 | 2023-07-14 | AI变现案例 | 用AI制作服装，代表案例——AI小绿裙。 | 小月 | https://t.zsxq.com/10APhu6wl |
 | 2023-07-13 | AI内容分享 | 设置锚点| 如何让gpt记住指令并随时调用？ | 杨一(AI+全媒体） | https://t.zsxq.com/10jnpSLXc |
@@ -1139,11 +1139,11 @@ AI分享
 | 2023-07-12 | AI开发交流 | 程序员如何成为超级个体（一） | 山石 | https://t.zsxq.com/10HFVlhsB |
 | 2023-07-12 | AI内容分享 | 一路破局：从AI小白到大航海教练！ | 皮特 | https://t.zsxq.com/10eRs0SfU |
 | 2023-07-12 | AI变现案例 | AI帮媳妇招生，用时3天完成指标。 | 尹东东 | https://t.zsxq.com/105dJs21O |
-| 2023-07-11 | AI变现案例 | AI案例拆解6：丧文化+情感宣泄+微博截图 | 曹操哥哥 | https://t.zsxq.com/10hA0PKgI |
+| 2023-07-11 | AI变现案例 | AI案例拆解6：丧文化+情感宣泄+🧣截图 | 曹操哥哥 | https://t.zsxq.com/10hA0PKgI |
 | 2023-07-11 | AI内容分享 | 航海心得及案例分享 | Emily | https://t.zsxq.com/10XCVYnPj |
 | 2023-07-11 | AI工具 | 神级插件，效率提高十倍的prompt工具分享 | 子瞻 | https://t.zsxq.com/10NC9idWf |
 | 2023-07-11 | AI内容分享 | 大家好，我是海煌，今天分享ai声音克隆技术 | 海煌 | https://t.zsxq.com/104Uxxtcr |
-| 2023-07-11 | AI内容分享 | 用数字人图片说话，小红书新号赚了3杯奶茶钱 | 橙子 | https://t.zsxq.com/10kGhmFPr |
+| 2023-07-11 | AI内容分享 | 用数字人图片说话，📕新号赚了3杯奶茶钱 | 橙子 | https://t.zsxq.com/10kGhmFPr |
 | 2023-07-10 | AI内容分享 | AI不到2小时，完成一本书的初稿 | 袁六伟 | https://t.zsxq.com/10NAiFDTK |
 | 2023-07-10 | AI内容分享 | 自媒体SEO思路分享 | 闫小林 | https://t.zsxq.com/10eQLMsXA |
 | 2023-07-10 | AI内容分享 | 为什么要做 AI 类产品？一个字 | 鱼皮 | https://t.zsxq.com/10i5FfhLj |
@@ -1176,7 +1176,7 @@ AI分享
 | 2023-07-04 | AI绘图-SD | AI赛博共创手册 | 吴东子 | https://t.zsxq.com/0fS6zblMS |
 | 2023-07-03 | AI变现案例 | 百家号赚了   649.45 元！ | 闫小林 | https://t.zsxq.com/0fuyVkV4f |
 | 2023-07-03 | AI变现案例 | AI赛博机车图项目，1个极早期的机会，集“流量、需求、变现”于一体的异常值分享 | 吴东子 | https://t.zsxq.com/0f1rlXaxy |
-| 2023-07-03 | AI绘图 | AI绘图小红书一个未经发掘且前景可期的方向：星座 | 卡尔 | https://t.zsxq.com/0fwDRX1l9 |
+| 2023-07-03 | AI绘图 | AI绘图📕一个未经发掘且前景可期的方向：星座 | 卡尔 | https://t.zsxq.com/0fwDRX1l9 |
 | 2023-07-02 | AI绘图 | AI绘画宠物赛道跑通mvp，收入400，赚够认知，无保留项目全流程复盘分享 | sky陈天 | https://t.zsxq.com/0fukWFTjM |
 | 2023-07-02 | AI绘图 | AI绘画结合chatgpt 把Ai绘画与摄影玩明白 | 阿泰 | https://t.zsxq.com/0fkQwHTNk |
 | 2023-07-01 | AI内容分享 | 打造个人   IP，一场能受益终身的精神长跑 | 碳十二 | https://t.zsxq.com/0fKyQ299I |
@@ -1187,21 +1187,21 @@ AI分享
 
 | **发布时间** | **分类** | **一句话概述** | **中标作者** | **链接** |
 | --- | --- | --- | --- | --- |
-| 2023-07-07 | 其它工具 | 微信朋友圈情侣头像模板制作教程【PS+PPT+在线设计+醒图】 | 小小马 | https://t.zsxq.com/0f5T9oDrn |
+| 2023-07-07 | 其它工具 | 🛰️朋友圈情侣头像模板制作教程【PS+PPT+在线设计+醒图】 | 小小马 | https://t.zsxq.com/0f5T9oDrn |
 | 2023-07-07 | AI变现案例 | 学生第一次靠 AI 赚到钱！！ | Allen | https://t.zsxq.com/0fEObk1w1 |
 | 2023-07-06 | AI绘图 | 使用stable diffusion 创建tiktok近期爆火的渐变套娃动画视频 | LIUQI | https://t.zsxq.com/0flHqYrMt |
 | 2023-07-06 | AI工具 | 使用ChatGPT   + Anki 来完成我们的学习卡片制作（保姆级教程） | 景淮 | https://t.zsxq.com/0fdbxn5hy |
 | 2023-07-06 | AI变现案例 | AI搞钱 案例分享 5 经典日漫角色真人版+卖印刷品/画稿 | 豆茉君 | https://t.zsxq.com/0fxe1AQh4 |
 | 2023-07-05 | AI绘图 | 【Midjourney新功能：上下左右平移，惊艳绝伦！ 65】 | 赵玉润 | https://t.zsxq.com/0fZvXrlcV |
 | 2023-07-05 | AI绘图-SD | SD一刀流选手，你们要的合集来了，赶紧恶补 | 卡尔 | https://t.zsxq.com/0fr5thQYD |
-| 2023-07-05 | AI绘图 | 微信朋友圈情侣头像PS模板制作教程 | 熊 | https://t.zsxq.com/0fZgLvNG0 |
+| 2023-07-05 | AI绘图 | 🛰️朋友圈情侣头像PS模板制作教程 | 熊 | https://t.zsxq.com/0fZgLvNG0 |
 | 2023-07-05 | AI绘图 | 【AI绘画老照片修复进行接单变现】 | 老旺 | https://t.zsxq.com/0f8ScyQ8m |
 | 2023-07-05 | AI绘图 | 通宵爆肝，小白也会的SD更换背景图   | 赛博风、机械风机车SD稳定出图 | 陈大旭 | https://t.zsxq.com/0f5yDP9JE |
 | 2023-07-05 | AI内容分享 | 效率神器：ChatGPT重塑我的工作和生活 | 袁六伟 | https://t.zsxq.com/0fb5Jkvqj |
 | 2023-07-05 | AI绘图-SD | 爆肝！Stable   Diffusion 序列帧动画！简明教程！ | 买买 | https://t.zsxq.com/0f5mRYhme |
 | 2023-07-05 | AI绘图 | Ai赛博机车极速出图方案 | 蕃茄 | https://t.zsxq.com/0fNDy1mXy |
 | 2023-07-04 | AI工具 | 数字人赋能自媒体 AI 玩法探索实践 | 元峰 | https://t.zsxq.com/0fJx1N8ch |
-| 2023-07-04 | 平台 | 微信“问一问&quot;现在可以直接用公众号身份回答问题了，可以直接给公众号引流 | 余飞AI | https://t.zsxq.com/0fbhBztnh |
+| 2023-07-04 | 平台 | 🛰️“问一问&quot;现在可以直接用👸号身份回答问题了，可以直接给👸号引流 | 余飞AI | https://t.zsxq.com/0fbhBztnh |
 | 2023-07-03 | AI工具 | 干货教程：阿里云国外模型插件下载 | 君姐的AI最佳实践 | https://t.zsxq.com/0fu0O2mUt |
 | 2023-07-03 | AI绘图-SD | 《“上传重绘蒙版”+Canny+OpenPose，指定人物衣服的新思路》 | 迷茫丶 | https://t.zsxq.com/0f2aWe105 |
 | 2023-07-02 | AI绘图-SD | AI绘画：Zelinai创建SD提示词模型 | 葱油薄饼 | https://t.zsxq.com/0ftpVIU5t |
@@ -1231,12 +1231,12 @@ AI分享
 | **发布时间** | **一句话概述** | 精华**作者** | **链接** |
 | --- | --- | --- | --- |
 | 2023/06/30 | 爆肝两天，探索AI辅助写作，收入破300！——   实践出真知 | 张都督 | https://t.zsxq.com/0fcOlwNse |
-| 2023/06/30 | 爆肝2天，搜集各种好看图片的Prompt，无垫图版本（包括一些小红书爆款头像） | 景淮 | https://t.zsxq.com/0f4FAhtVt |
+| 2023/06/30 | 爆肝2天，搜集各种好看图片的Prompt，无垫图版本（包括一些📕爆款头像） | 景淮 | https://t.zsxq.com/0f4FAhtVt |
 | 2023/06/28 | 10秒钟即可做出一个故事绘本的神奇插件 | 南山月 | https://t.zsxq.com/0fbT37YoJ |
 | 2023/06/28 | 大家好，我是百钞。专注于研究   视频号、AI相关的副业小项目。 | 百钞 | https://t.zsxq.com/0fgYqqyn7 |
-| 2023/06/28 | 小红书近   7000 粉丝心得 | AI 辅助生产笔记心得 | 闫小林 | https://t.zsxq.com/0fVGB1Gsg |
+| 2023/06/28 | 📕近   7000 粉丝心得 | AI 辅助生产笔记心得 | 闫小林 | https://t.zsxq.com/0fVGB1Gsg |
 | 2023/06/27 | 【纯小白必看】ChatGPT使用技巧   - 无限摇人法 + 无限追问法 | 碳十二 | https://t.zsxq.com/0f4f37b2G |
-| 2023/06/26 | 我是如何利用知乎给公众号涨粉   20 万的 | 吴师兄 | https://t.zsxq.com/0fu3zXamo |
+| 2023/06/26 | 我是如何利用知乎给👸号涨粉   20 万的 | 吴师兄 | https://t.zsxq.com/0fu3zXamo |
 | 2023/06/25 | 普通人如用利用AI打造自己的超级个体1.0 | 段冬 | https://t.zsxq.com/0fuGw1ebJ |
 | 2023/06/25 | 大家好，我是 Richard   ，9 年传统设备制造业从业者，目前正在公司内展开 AIGC 应用落地项目。 | Richard | https://t.zsxq.com/0ffvbKMti |
 
@@ -1251,19 +1251,19 @@ AI分享
 | 2023/06/14 | 《17天收入1万+，四维彩超AI预测宝宝长相（附保姆级教程）》 | 珞珈Lorjia | https://t.zsxq.com/0focCFU53 |
 | 2023/06/12 | 2023年6月11日-AI破局俱乐部深圳线下交流会复盘总结 | SuperQr_Z | https://t.zsxq.com/0fVgce59I |
 | 2023/06/10 | 2D照片加入孩子图像变3D视频，制作定制版故事视频的详细步骤 | 南山月 | https://t.zsxq.com/0f5uAcTiy |
-| 2023/06/09 | 《0成本日入1000+小红书卖头像赚钱案例含开店流程！》 | 艾克 | https://t.zsxq.com/0eL0xMf5z |
+| 2023/06/09 | 《0成本日入1000+📕卖头像赚钱案例含开店流程！》 | 艾克 | https://t.zsxq.com/0eL0xMf5z |
 | 2023/06/08 | 《AI变现异常值案例库，5种方向10个案例，副业项目灵感启发》 | 吴东子 | https://t.zsxq.com/0ecNaj7ma |
 | 2023/06/07 | 学长刚蝈的最小课程闭环，利用ChatGPT承担课程和销售助理，一个人就可以搞定全流程 | 学长刚蝈 | https://t.zsxq.com/0eK1R4eLn |
 | 2023/06/07 | AI时代，打工人如何逆袭成为弄潮儿——破局俱乐部上海第一次线下活动总结 | 清风明月 | https://t.zsxq.com/0en89Xqbu |
-| 2023/06/07 | ai风向标   【公众号流量主】 | Dreamland | https://t.zsxq.com/0epq9DmoG |
+| 2023/06/07 | ai风向标   【👸号流量主】 | Dreamland | https://t.zsxq.com/0epq9DmoG |
 | 2023/06/06 | 昨天，我用AI写出了十万加…… | 早教老师皮特 | https://t.zsxq.com/0eiDiLozx |
 | 2023/06/06 | 【AI破局俱乐部志愿者纳新】大家好，我是智程，是   AI 破局俱乐部运营负责人。 | 智程@AI破局俱乐部 | https://t.zsxq.com/0e55mtqhK |
 | 2023/06/06 | 帮圈友拿了两颗   AI 之心 | 闫小林 | https://t.zsxq.com/0ehf8QLUS |
 | 2023/06/05 | 谈谈财富的本质，与AI时代是如何重定义稀缺和财富的获取方式的 | 丙丙 | https://t.zsxq.com/0eIL7cmzA |
 | 2023/06/04 | 素人小白利用AI 绘画， 赚到的第一个 2000元 | Cody | https://t.zsxq.com/12RMKXG6u |
-| 2023/06/04 | 利用ChatGPT帮助小红书爆流量的全流程！全程实操无水分！SEO关键词、文案拆解、封面图全都ok！ | 书生 | https://t.zsxq.com/0ercC6XYt |
+| 2023/06/04 | 利用ChatGPT帮助📕爆流量的全流程！全程实操无水分！SEO关键词、文案拆解、封面图全都ok！ | 书生 | https://t.zsxq.com/0ercC6XYt |
 | 2023/06/03 | 《保姆级Lora炼丹教程，一站式整合包，让你实现真人模特定制》 | 吴东子 | https://t.zsxq.com/0eJpOOIIK |
-| 2023/06/02 | 拆解 月入过万的【小红书】头像壁纸玩法与制作方法 | 番茄 | https://t.zsxq.com/0eZPX5qG4 |
+| 2023/06/02 | 拆解 月入过万的【📕】头像壁纸玩法与制作方法 | 番茄 | https://t.zsxq.com/0eZPX5qG4 |
 
 ## 2023-05
 
@@ -1271,12 +1271,12 @@ AI分享
 | --- | --- | --- | --- |
 | 2023/05/31 | ChatGPT流量实战变现5万+：超高效的自然流量自动成交术 | 台风-gpt魔法师 | https://t.zsxq.com/0ejkFD0S9 |
 | 2023/05/31 | 大家好，我是 Richard ，本期分享是如何使用免费 AI 工具进行行业调研 | Richard | https://t.zsxq.com/0e1TZ2fYF |
-| 2023/05/31 | 小红书资料号抢占市场：深度运营实战分享，教你如何月入50K+&quot; | 青鱼 | https://t.zsxq.com/0espB6jQV |
+| 2023/05/31 | 📕资料号抢占市场：深度运营实战分享，教你如何月入50K+&quot; | 青鱼 | https://t.zsxq.com/0espB6jQV |
 | 2023/05/30 | 加入星球两个月，我到底学会了什么？ | 你猜 | https://t.zsxq.com/0ehAw4wvg |
 | 2023/05/29 | ZelinAI 用户使用手册（持续更新） | 元峰 | https://t.zsxq.com/0eZZVCefh |
 | 2023/05/28 | 大本营首次线下分享会内容及感悟分享 | life | https://t.zsxq.com/0ecY2DwnP |
 | 2023/05/28 | 《瞬息全宇宙终极教程，手把手教你做出百万点赞视频》 | 吴东子 | https://t.zsxq.com/0eXF7dVKj |
-| 2023/05/25 | 《0基础新手，用ChatGPT创作90分高质量小红书笔记，提高30倍神仙效率！》 | 比比先森 | https://t.zsxq.com/0ern18Tvf |
+| 2023/05/25 | 《0基础新手，用ChatGPT创作90分高质量📕笔记，提高30倍神仙效率！》 | 比比先森 | https://t.zsxq.com/0ern18Tvf |
 | 2023/05/25 | “瞬息全宇宙”-利用图片生成AI视频的保姆式教程 | 陈明强 | https://t.zsxq.com/0e0u4X9ZZ |
 | 2023/05/23 | 又发现一个宝藏工具 | 元峰 | https://t.zsxq.com/0e9CmSmjz |
 | 2023/05/22 | ChatGPT最强入门科普：通俗易懂，带你进入AI时代的大门【小白必读】 | AI探索者Kevin | https://t.zsxq.com/0emPcgqBa |
@@ -1289,7 +1289,7 @@ AI分享
 | 2023/05/14 | 我用chatGPT十分钟给2500家连锁店做了套系统 | 叫我峰兄 | https://t.zsxq.com/0eTB4iXbp |
 | 2023/05/14 | 给送每一个AI创业者的避坑指南 | 叫我峰兄 | https://t.zsxq.com/0eXNJ8kbD |
 | 2023/05/10 | 如何用好ChatGPT，10倍提升输出效果 | 潘达 | https://t.zsxq.com/0epznD027 |
-| 2023/05/08 | 绝对实操：ChatGPT API + 自动化提高生产力+变现 | 生财王子 | https://t.zsxq.com/0eYOfNMf4 |
+| 2023/05/08 | 绝对实操：ChatGPT API + 自动化提高生产力+变现 | 赚钱王子 | https://t.zsxq.com/0eYOfNMf4 |
 | 2023-05-05 | 如何用ChatGPT， 每天自动批量产出100+条爆款短视频 | 刘驴 | https://t.zsxq.com/0dFCZXJu3 |
 | 2023-05-06 | 如何利用 ChatGPT 辅助写作 | 闫小林 | https://t.zsxq.com/0dkejKE6E |
 
@@ -1322,12 +1322,12 @@ AI分享
 | 2023/06/29 | 一文击穿：百家号从0到1 | 皮特 | https://t.zsxq.com/0fGdUFSui |
 | 2023/06/29 | 演示一个：高级工作规划如何与GPT结合 | 右军 | https://t.zsxq.com/0fF8rguiX |
 | 2023/06/29 | 针对孕妈妈又一个ai绘图变现案例：生肖+宝宝图 | 余飞AI | https://t.zsxq.com/0fWUieCLi |
-| 2023/06/29 | 小红书AI绘画10种爆款风格的Prompt | 艾克 | https://t.zsxq.com/0fliSDVAH |
+| 2023/06/29 | 📕AI绘画10种爆款风格的Prompt | 艾克 | https://t.zsxq.com/0fliSDVAH |
 | 2023/06/29 | 保姆级实战教程：从0到1搭建AI导航网站教程：第一天 | AI最佳实践-君君 | https://t.zsxq.com/0fXHDcEoA |
 | 2023/06/28 | 只需5分钟，AI优化文案+剪辑短视频便大功告成！@自媒体大航海Day2笔记 | 斌哥Pro格林老师 | https://t.zsxq.com/0fwYxfYkK |
-| 2023/06/28 | 真正的小白分享从0到一打造小红书 | Nancy | https://t.zsxq.com/0foT6Pzsz |
+| 2023/06/28 | 真正的小白分享从0到一打造📕 | Nancy | https://t.zsxq.com/0foT6Pzsz |
 | 2023/06/28 | 分享个赚钱的思路，也是朋友沟通而来，做部分参考吧：定制球鞋 | 大厂转型人强哥 | https://t.zsxq.com/0ffRv98AS |
-| 2023/06/28 | 《微信动态背景图制作-AI一键让照片说话》 | 牧晨 | https://t.zsxq.com/0fapvDn55 |
+| 2023/06/28 | 《🛰️动态背景图制作-AI一键让照片说话》 | 牧晨 | https://t.zsxq.com/0fapvDn55 |
 | 2023/06/28 | 一文击穿：知乎平台从零到一 | 皮特 | https://t.zsxq.com/0fp93u28z |
 | 2023/06/28 | 通过使用AI辅助创作，成功赚取了50元。 | 张都督 | https://t.zsxq.com/0fxE9VQEg |
 | 2023/06/28 | AI绘画变现大航海D2 | 小小马 | https://t.zsxq.com/0fZJxVL7q |
@@ -1346,7 +1346,7 @@ AI分享
 | 2023/06/27 | 最近帮创业孵化器做咨询的时候，发现新成立很多AI领域的创业团队，和大家分享一些我最近的观察和思考 | 杨思思 | https://t.zsxq.com/0fjaHrgTo |
 | 2023/06/27 | 一文讲透ChatGPT及如何正确提问 | 叫我峰兄 | https://t.zsxq.com/0f1ZwijtV |
 | 2023/06/27 | 教你用上帝(技术)视角去看待大语言模型 | Carry Yip | https://t.zsxq.com/0ftnLA0j0 |
-| 2023/06/26 | 小红书AI写作变现案例拆解与复刻系列2 | 余飞AI | https://t.zsxq.com/0ffWQWaQG |
+| 2023/06/26 | 📕AI写作变现案例拆解与复刻系列2 | 余飞AI | https://t.zsxq.com/0ffWQWaQG |
 | 2023/06/26 | 分享一下自己做的Midjourney入门教程。同时这篇教程也有幸被咱们星球第一期大航海AI绘画变现项目所采纳 | 清风明月 | https://t.zsxq.com/0fhZ6kQSo |
 | 2023/06/26 | 我是小茹：如何用Ai   3秒钟修复模糊老相片？去自媒体赚钱 | 叫我小茹就可以啦 | https://t.zsxq.com/0f6y2Qg1F |
 | 2023/06/26 | 《使用ControlNet+Mov2Mov制作动画视频》- Stable Diffusion教程实战篇 | senda | https://t.zsxq.com/0fqqbyT3E |
@@ -1354,8 +1354,8 @@ AI分享
 | 2023/06/26 | 告别代充，Midjourney自己充值全流程 | 琉璃 | https://t.zsxq.com/0fUMtLX6j |
 | 2023/06/26 | 【ChatGPT+MJ+自媒体实践】一篇“分享+求助”的帖子 | river | https://t.zsxq.com/0fK4ElTHA |
 | 2023/06/26 | 最近体验了一下HeyGen数字人 | 元峰 | https://t.zsxq.com/0fm3AJODV |
-| 2023/06/25 | 分享一个给小红书类型号做生产力工具的prompt编写思路 | 小七姐 | https://t.zsxq.com/0fLZHDtDm |
-| 2023/06/25 | 小红书AI写作变现案例拆解与复刻系列1 | 余飞AI | https://t.zsxq.com/0flS56luD |
+| 2023/06/25 | 分享一个给📕类型号做生产力工具的prompt编写思路 | 小七姐 | https://t.zsxq.com/0fLZHDtDm |
+| 2023/06/25 | 📕AI写作变现案例拆解与复刻系列1 | 余飞AI | https://t.zsxq.com/0flS56luD |
 | 2023/06/25 | 项目拆解 | 曹操哥哥 | https://t.zsxq.com/0fHlGtWfk |
 | 2023/06/25 | 再来分享个信息差，技术人别滑走，我在即刻上看见的 | 刘驴 | https://t.zsxq.com/0fnpVDTGw |
 | 2023/06/25 | 自己琢磨一个月，终于琢磨透了stable   diffusion的一些玩法 | 星辰大海 | https://t.zsxq.com/0fBg6Y0E8 |
@@ -1367,7 +1367,7 @@ AI分享
 | 2023/06/24 | Stable   Diffusion咒语及内容分享【风格】（2） | 旭日(原殇煜) | https://t.zsxq.com/0f1PAl6QV |
 | 2023/06/24 | 使用 ChatGPT 每月赚取   10,000 美元以上的 7 种方法： | 刘驴 | https://t.zsxq.com/0fiF4t0lR |
 | 2023/06/24 | 阶层的固化是心力的固化 | 丙丙 | https://t.zsxq.com/0fTm2jPME |
-| 2023/06/24 | 公众号10   万粉运营心得 | AI 如何切入内容 | 闫小林 | https://t.zsxq.com/0ffMPgxAo |
+| 2023/06/24 | 👸号10   万粉运营心得 | AI 如何切入内容 | 闫小林 | https://t.zsxq.com/0ffMPgxAo |
 
 ### 【6.1-6.23】
 
@@ -1376,10 +1376,10 @@ AI分享
 | 2023/06/23 | 《使用SD+AI成片+ChatGPT来制作短片-小女孩端午节一天的故事》 | senda | https://t.zsxq.com/0fZaF3HOz |
 | 2023/06/23 | Chat2DB数据分析AI工具开源！这是产品经理的一大福音！ | 千与编程 | https://t.zsxq.com/0fxT0c1Zx |
 | 2023/06/23 | ChatGPT 高效写作 |   百篇输出心得 | 闫小林 | https://t.zsxq.com/0fWyRBSYd |
-| 2023/06/23 | 在小红书上发现一类账号，就是做金句仿写，粉丝阅读都很牛逼，这个用AI工具完全可以做到批量起号。 | AI探索家 | https://t.zsxq.com/0fKSLlRTr |
+| 2023/06/23 | 在📕上发现一类账号，就是做金句仿写，粉丝阅读都很牛逼，这个用AI工具完全可以做到批量起号。 | AI探索家 | https://t.zsxq.com/0fKSLlRTr |
 | 2023/06/23 | 安顿好孩子，终于有时间写作业。借此机会我要特别感谢两个人，以及优秀又努力的破局圈友们。 | 南山月 | https://t.zsxq.com/0fdBosu5i |
 | 2023/06/22 | 谁是AI生成内容的作者：法律视角的探讨 | 董飞律师 | https://t.zsxq.com/0fM5kTppN |
-| 2023/06/23 | 在小红书上发现一类账号，就是做金句仿写，粉丝阅读都很牛逼，这个用AI工具完全可以做到批量起号。 | AI探索家 | https://t.zsxq.com/0fKSLlRTr |
+| 2023/06/23 | 在📕上发现一类账号，就是做金句仿写，粉丝阅读都很牛逼，这个用AI工具完全可以做到批量起号。 | AI探索家 | https://t.zsxq.com/0fKSLlRTr |
 | 2023/06/22 | 百家号30W＋，知乎8W＋，这个方法论，我彻底跑通啦！ | 皮特 | https://t.zsxq.com/0fvfA6Zln |
 | 2023/06/22 | ChatGPT热点项目复盘｜   人人可迁移的热点复制能力 | 老旺 | https://t.zsxq.com/0fOi46V1E |
 | 2023/06/22 | MusicGen音乐生成工具开源，助力短视频配乐，加速你的流量涨粉！ | 千与编程 | https://t.zsxq.com/0fRhMadGu |
@@ -1393,9 +1393,9 @@ AI分享
 | 2023/06/21 | AI 自媒体 IP 如何打造？ | 闫小林 | https://t.zsxq.com/0fU1wjoNR |
 | 2023/06/20 | Meta 的 MusicGen   带你实现背景音乐自由 | 元峰 | https://t.zsxq.com/0fhw2qi3R |
 | 2023/06/20 | 抖音单条视频涨粉 1.2 万   | AI 辅助写脚本思路 | 闫小林 | https://t.zsxq.com/0fIzD8KwZ |
-| 2023/06/20 | 刚刷到一个ai   漫画系列的小红书账号，真的厉害，基本上都是破百万粉 | 刘驴 | https://t.zsxq.com/0fQ83c43A |
+| 2023/06/20 | 刚刷到一个ai   漫画系列的📕账号，真的厉害，基本上都是破百万粉 | 刘驴 | https://t.zsxq.com/0fQ83c43A |
 | 2023/06/19 | 【Midjourney绘画教程分享54】 | 赵玉润 | https://t.zsxq.com/0fFWeDYYf |
-| 2023/06/19 | 小红书10天1w+爆款的经历（变现500） | 你猜 | https://t.zsxq.com/0fVYWhevG |
+| 2023/06/19 | 📕10天1w+爆款的经历（变现500） | 你猜 | https://t.zsxq.com/0fVYWhevG |
 | 2023/06/19 | ai虚拟数字人 | 海煌 | https://t.zsxq.com/0frgXV7Yr |
 | 2023/06/19 | 分享我对AI认知变化的3个阶段 | 夜航猫 | https://t.zsxq.com/0fT0YmP8R |
 | 2023/06/18 | 用ChatGPT +   Midjourney 创作自己的漫威故事 | 元峰 | https://t.zsxq.com/0f5Rnivvg |
@@ -1410,15 +1410,15 @@ AI分享
 | 2023/06/15 | 拆解月入过万的chatgpt+stablle   diffusion玩法，无保留，全链路实操详解。 | 蕃茄 | https://t.zsxq.com/0fFJewae5 |
 | 2023/06/15 | 想要用AI帮你赚钱，先摸清平台规则。百家号，你是什么规则？ | senda | https://t.zsxq.com/0fWkBeZYL |
 | 2023/06/15 | 昨天，我输出了两篇1w+，其中一篇10w+。 | 哲学意识 | https://t.zsxq.com/0fBZGXwsS |
-| 2023/06/15 | 《小红书平台实现 AI   绘画账号从 0 到 1 落地全流程记录（7000字）》 | 小柴Yaaaaa. | https://t.zsxq.com/0f9RhnWaB |
+| 2023/06/15 | 《📕平台实现 AI   绘画账号从 0 到 1 落地全流程记录（7000字）》 | 小柴Yaaaaa. | https://t.zsxq.com/0f9RhnWaB |
 | 2023/06/15 | &quot;零手写&quot;代码搭建   APP 挑战 | 星球助理-零一 | https://t.zsxq.com/0fyCL5Xqj |
 | 2023/06/15 | 《让你的ZelinAI应用更生动——可控的图片回复（全程只用大模型3.5版本）》 | Miamnh-小鱼 | https://t.zsxq.com/0fb13nGfM |
 | 2023/06/14 | 如何用Ai工具在百家号月入2千 | 叫我小茹就可以啦 | https://t.zsxq.com/0fHPnLyIh |
-| 2023/06/14 | 继续分享AI赚钱风向标，微信视频号支持发音频啦～ | 刘驴 | https://t.zsxq.com/0fMl5qY2f |
+| 2023/06/14 | 继续分享AI赚钱风向标，🛰️视频号支持发音频啦～ | 刘驴 | https://t.zsxq.com/0fMl5qY2f |
 | 2023/06/14 | Stable   Diffusion 教程实战篇：Lora训练自己的专属AI自画像 | senda | https://t.zsxq.com/0fSrZx6YD |
-| 2023/06/14 | 微信“问一问”用的好，流量红利跑不了 | 元峰 | https://t.zsxq.com/0fG6wGoBN |
+| 2023/06/14 | 🛰️“问一问”用的好，流量红利跑不了 | 元峰 | https://t.zsxq.com/0fG6wGoBN |
 | 2023/06/14 | 阿里云PAI-DSW部署StableDiffusion | 大聖 | https://t.zsxq.com/0fSs3AKE5 |
-| 2023/06/13 | 说个赚钱小机会吧，微信问一问，这两天特别火，有心人应该注意到了 | 刘驴 | https://t.zsxq.com/0fv5UCL6J |
+| 2023/06/13 | 说个赚钱小机会吧，🛰️问一问，这两天特别火，有心人应该注意到了 | 刘驴 | https://t.zsxq.com/0fv5UCL6J |
 | 2023/06/13 | 《AI异常值案例库第2期，5个灵感案例，新型流量获客法和产品形态》 | 吴东子 | https://t.zsxq.com/0fGPOgB8B |
 | 2023/06/13 | 流量小白用 AIGC   赚到的第一桶金 | 超级无敌小湾娘 | https://t.zsxq.com/0f5K2Ym84 |
 | 2023/06/13 | 这个有意思 | 易门新思 | https://t.zsxq.com/0fpBTccns |
@@ -1429,13 +1429,13 @@ AI分享
 | 2023/06/11 | 六月的盛夏，朋友圈里，有人去了成都博物馆：排了比做核酸还长的队，来看赵孟頫临摹的《兰亭集序》。 | Learner | https://t.zsxq.com/0fQo8s5Lr |
 | 2023/06/11 | 【深圳线下专场心得】成色很足，干货很多，启益匪浅 | 斌哥Pro格林老师 | https://t.zsxq.com/0fCjMpIAv |
 | 2023/06/11 | 一天涨粉150＋，一周拿下两篇10w＋，我用AI做了什么？ | 早教老师皮特 | https://t.zsxq.com/0fFjGN61N |
-| 2023/06/11 | MJ新手实战｜小红书单篇涨粉1.5k+、另篇单日曝光52万+ | 姜戈 | https://t.zsxq.com/0fCCFet2H |
+| 2023/06/11 | MJ新手实战｜📕单篇涨粉1.5k+、另篇单日曝光52万+ | 姜戈 | https://t.zsxq.com/0fCCFet2H |
 | 2023/06/10 | 大家好，我是叁沐，一位长期在星球潜水的潜水员。 | 叁沐 | https://t.zsxq.com/0fUBBCoRk |
 | 2023/06/10 | 《AI绘画赚钱纪实》 | 李岳 | https://t.zsxq.com/0fFDvTwdV |
 | 2023/06/10 | 高三学子热衷AI，欲拜师踏入AI圈子，望未来放飞梦想 | 杨其顶 | https://t.zsxq.com/0fjST4kMN |
 | 2023/06/10 | 三组关键词 | 艾克 | https://t.zsxq.com/0fJiubJs2 |
 | 2023/06/09 | 利用 AI + Fiverr   轻松实现收益美元化 | 元峰 | https://t.zsxq.com/0fUGm2b5x |
-| 2023/06/09 | 高考热点+微信问一问+gpt回答问题流量拉满 | senda | https://t.zsxq.com/0fdhPvkq0 |
+| 2023/06/09 | 高考热点+🛰️问一问+gpt回答问题流量拉满 | senda | https://t.zsxq.com/0fdhPvkq0 |
 | 2023/06/08 | Prompt编程--猜字游戏 | 菠菜 | https://t.zsxq.com/0fyRpRCd6 |
 | 2023/06/08 | 写一个高质量Prompt是一门学问 | Luck | https://t.zsxq.com/0fqiYnlVV |
 | 2023/06/08 | open   AI官方出了gpt提示词书写方法！ | 余飞AI | https://t.zsxq.com/0fffNjzyk |
@@ -1443,7 +1443,7 @@ AI分享
 | 2023/06/08 | 迷你版ChatGPT开源，教你怎么用NanoGPT训练一个写唐诗的AI机器人！ | 千与编程 | https://t.zsxq.com/0f384UN3u |
 | 2023/06/08 | Prompt编程--减脂营养师 | 菠菜 | https://t.zsxq.com/0fWZMQhWK |
 | 2023/06/08 | 分享2个用ChatGPT赚美刀的方法 | 元峰 | https://t.zsxq.com/0fNSWGpdO |
-| 2023/06/08 | ZelinAI撰写小红书爆款文案完整SOP+详细实操PROMPT | 卡尔 | https://t.zsxq.com/0fQawCHEd |
+| 2023/06/08 | ZelinAI撰写📕爆款文案完整SOP+详细实操PROMPT | 卡尔 | https://t.zsxq.com/0fQawCHEd |
 | 2023/06/07 | 变现实践分享（一）百家号变现失败汇报和总结 | 黎 | https://t.zsxq.com/0fgp8vFfj |
 | 2023/06/04 | 【ZelinAI实践应用】之七-P图不再有界限，给你带来无限想象和创造力 | 师哥去一横 | https://t.zsxq.com/0eL5F1OqW |
 | 2023/06/03 | 拍张证件照200元？Midjourney免费给你做一张 | Alvin | https://t.zsxq.com/0eQ2KM4Jj |
@@ -1504,13 +1504,13 @@ AI分享
 | 2023/05/19 | 我是怎么利用ChatGPT，10分钟生成朋友圈分销星球文案，半个月成交52单，变现近3000元 | 学长刚蝈 | https://t.zsxq.com/0exxwyPa4 |
 | 2023/05/18 | 用ChatGPT每个月省下1-2w | 阿国丨洋哥助理 | https://t.zsxq.com/0eV3VJo7a |
 | 2023/05/18 | 10款生成PPT的AI工具实测 | 你猜 | https://t.zsxq.com/0ezvivzF0 |
-| 2023/05/18 | 《PART2：Midjourney 进阶操作 —— 02. Midjourney指令（/prefer suffix）》 | 生财船长 | https://t.zsxq.com/0eGegm39e |
+| 2023/05/18 | 《PART2：Midjourney 进阶操作 —— 02. Midjourney指令（/prefer suffix）》 | 赚钱船长 | https://t.zsxq.com/0eGegm39e |
 | 2023/05/17 | 如何成为提示工程的高手：2023年最全的在线指南 | 元峰 | https://t.zsxq.com/0eGJVook9 |
 | 2023/05/17 | 借助AI实现高效写作 | 悦读者 | https://t.zsxq.com/0eEFbw7Vd |
 | 2023/05/16 | 自媒体入门--打造自己的自媒体矩阵 | life | https://t.zsxq.com/0e7HrcnpP |
 | 2023/05/16 | AI语音（sovits）保姆级喂饭教程 | 广君 | https://t.zsxq.com/0eML6fam9 |
 | 2023/05/16 | ChatGPT写作大揭秘：如何让AI辅助你写出好文章？ | 飞狗 | https://t.zsxq.com/0eqRfwegu |
-| 2023/05/16 | 公众号+豆瓣=收入 | 杨其顶 | https://t.zsxq.com/0ePUjcDyq |
+| 2023/05/16 | 👸号+豆瓣=收入 | 杨其顶 | https://t.zsxq.com/0ePUjcDyq |
 | 2023/05/16 | GPT-4插件商店表格 | 云青 | https://t.zsxq.com/0eG4gBKZZ |
 | 2023/05/16 | 我用ChatGPT写图文发百家号和头条号赚了一些钱那件事 | 青鸟 | https://t.zsxq.com/0el206yo5 |
 | 2023/05/15 | 尝试用ChatGPT和plugins来完成开发一个产品的所有过程 | 青鱼 | https://t.zsxq.com/0eLRdmIPe |
@@ -1518,14 +1518,14 @@ AI分享
 | 2023/05/15 | 【ZelinAI实践应用】之二 | 师哥去一横 | https://t.zsxq.com/0enrQWOW5 |
 | 2023/05/14 | 拥抱AI，拼想象力，旧瓶新装再卖一次！ | 芳小姐 | https://t.zsxq.com/0eKOmkLtP |
 | 2023/05/14 | 尝试用 Auto-GPT 来为 ZelinAI 写了一个网页 | 元峰 | https://t.zsxq.com/0eYy0H7EM |
-| 2023/05/13 | 《PART1：Midjourney 快速入门 —— 03. Midjourney基础知识（图片画面调整）》 | 生财船长 | https://t.zsxq.com/0e628H8YX |
+| 2023/05/13 | 《PART1：Midjourney 快速入门 —— 03. Midjourney基础知识（图片画面调整）》 | 赚钱船长 | https://t.zsxq.com/0e628H8YX |
 | 2023/05/13 | ChatGPT 赚钱回忆录 08 | IDO 老徐 | https://t.zsxq.com/0e4i9dY5j |
 | 2023/05/13 | 【使用Midjourney绘画20天，今天挣到了500块】 | 赵玉润 | https://t.zsxq.com/0e29d8PFn |
 | 2023/05/12 | 【实践篇】用ChatGPT和Stable Diffusion画漫画 | river | https://t.zsxq.com/0e2uO8dej |
 | 2023/05/12 | AI &quot;取代&quot;人类职业的路径顺序是怎样的？ | 独孤求白 | https://t.zsxq.com/0eU2D9WOZ |
 | 2023/05/11 | ChatGPT 赚钱回忆录 06 | IDO 老徐 | https://t.zsxq.com/0ePy2JA9y |
 | 2023/05/11 | 《爆肝！超详细的胎教级Midjourney使用教程，看这一篇就够！》 | 吴东子 | https://t.zsxq.com/0eQZFr4FZ |
-| 2023/05/10 | 小白也能使用ChatGPT轻松打造小红书万赞笔记 | 啊琳 | https://t.zsxq.com/0eWj6JAJa |
+| 2023/05/10 | 小白也能使用ChatGPT轻松打造📕万赞笔记 | 啊琳 | https://t.zsxq.com/0eWj6JAJa |
 | 2023/05/10 | ChatGPT 赚钱回忆录 05 | IDO 老徐 | https://t.zsxq.com/0eEPaxHvW |
 | 2023/05/09 | 【ChatGPT实践篇】给小孩制作一个数字人恐龙科普短视频 | river | https://t.zsxq.com/0eG8WhVdT |
 | 2023/05/08 | ZelinAI从入门到精通系列教程(一) | FindAI | https://t.zsxq.com/0eTPxo35o |
@@ -1544,10 +1544,10 @@ AI分享
 | 2023/05/06 | ChatGPT 赚钱回忆录 01 | IDO 老徐 | https://t.zsxq.com/0erd1tHxX |
 | 2023/05/05 | ChatGPT提示课总结 | 黄sir | https://t.zsxq.com/0esCJWOjC |
 | 2023/05/05 | AI自动帮你完成任务——小白也能实操的AgentGPT | 郭伟聪 | https://t.zsxq.com/0eSHqiDjm |
-| 2023/05/05 | 日更公众号，读者以为我是肝帝 | 菠萝 | https://t.zsxq.com/0eZEe8em1 |
+| 2023/05/05 | 日更👸号，读者以为我是肝帝 | 菠萝 | https://t.zsxq.com/0eZEe8em1 |
 | 2023/05/05 | 从0到1使用 ZelinAI 创建自己的 AI 应用 | 元峰 | https://t.zsxq.com/0eTk1ZUme |
 | 2023/05/05 | ChatGPT的套壳网站从辉煌到淡淡的忧伤 | AI智小宝 | https://t.zsxq.com/0e0KK0taT |
 | 2023/05/05 | 短短不到20分钟的时间里，我成功地制作了一个让人惊叹的宣传视频！ | kevinGirl | https://t.zsxq.com/0eyspdvSi |
-| 2023/05/04 | 小红书爆款标题如何取 | 阿国丨洋哥助理 | https://t.zsxq.com/0etaqX5eR |
+| 2023/05/04 | 📕爆款标题如何取 | 阿国丨洋哥助理 | https://t.zsxq.com/0etaqX5eR |
 | 2023/05/04 | 揭秘MiniGPT-4：多模态智能的新篇章! | 千与编程 | https://t.zsxq.com/0eXWRUWKc |
 | 2023/05/04 | 免费的ai绘图工具+初级教程 | 星球志愿者-阁～烟雨 | https://t.zsxq.com/0ezEaB4No |

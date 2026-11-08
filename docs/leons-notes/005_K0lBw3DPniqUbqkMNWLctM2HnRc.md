@@ -215,7 +215,7 @@ U：表示文件是“未跟踪”（Untracked）。这意味着该文件存在�
 
 ### 扩展内容
 
-1.  【【Cursor 最直观教程】手把手教小白如何 8 分钟用 Cursor 完成 AI 微信小程序的开发上线】 https://www.bilibili.com/video/BV1oF4TegEne/
+1.  【【Cursor 最直观教程】手把手教小白如何 8 分钟用 Cursor 完成 AI 🛰️小程序的开发上线】 https://www.bilibili.com/video/BV1oF4TegEne/
 
 1.  【我用 Cursor 做了个 Cursor 教程博客网站】 https://www.bilibili.com/video/BV1ia2BYbER7/
 

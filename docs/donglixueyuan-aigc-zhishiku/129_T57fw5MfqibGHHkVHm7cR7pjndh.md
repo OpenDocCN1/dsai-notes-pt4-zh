@@ -130,4 +130,4 @@ https://huggingface.co/spaces/SimFG/LangChain-Zilliz-Cloud
 
 多维表格（ZtItbWcbMa9PM4sHF2nccbFMn3g_tblxYgCaod9m6cUP）
 
-> 本手册由 编写，觉得不错在下方点个赞吧，更多建议与反馈，欢迎评论或联系玉鑫（微信：a1434088958）
+> 本手册由 编写，觉得不错在下方点个赞吧，更多建议与反馈，欢迎评论或联系玉鑫（🛰️：a1434088958）

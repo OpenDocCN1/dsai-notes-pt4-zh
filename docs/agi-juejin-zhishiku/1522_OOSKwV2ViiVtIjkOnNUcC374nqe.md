@@ -1,4 +1,4 @@
-# 一泽Eze：用 Coze 打造 AI 精读专家智能体，复刻 10 万粉公众号的创作生产力
+# 一泽Eze：用 Coze 打造 AI 精读专家智能体，复刻 10 万粉👸号的创作生产力
 
 > 来源：[https://agijuejin.feishu.cn/docx/Xt49dHeJHoFDKrxtrtNcoVv8nBe](https://agijuejin.feishu.cn/docx/Xt49dHeJHoFDKrxtrtNcoVv8nBe)
 

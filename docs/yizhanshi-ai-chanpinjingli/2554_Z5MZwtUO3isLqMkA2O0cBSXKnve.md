@@ -16,7 +16,7 @@
 
 +   AECL高校AI电竞锦标赛开启报名，5万+奖金池，面向大中华区高校在读生，设两大项目，7.1 - 7.31报名。
 
-+   DIS 48h创客松、PromptBattle提示词挑战赛、绘镜AI视频主题挑战赛、微博AI创作大赛、抖音AI新星计划等活动火热进行。
++   DIS 48h创客松、PromptBattle提示词挑战赛、绘镜AI视频主题挑战赛、🧣AI创作大赛、抖音AI新星计划等活动火热进行。
 
 +   本周有3场「阿里云百炼」共学课，聚焦千万级多模态RAG硬核实战，前2场可看回放，今晚有最后一场直播。
 
@@ -40,7 +40,7 @@
 
 +   绘镜AI视频主题挑战赛提交作品链接
 
-+   [微博AI创作大赛活动详情](https://waytoagi.feishu.cn/wiki/IQSDwJNEOi6cPDkVKMocscuFnSh)
++   [🧣AI创作大赛活动详情](https://waytoagi.feishu.cn/wiki/IQSDwJNEOi6cPDkVKMocscuFnSh)
 
 +   [抖音AI新星计划活动详情](https://waytoagi.feishu.cn/wiki/LYI9wPPSeiS5UYkutk1chROKnSb)
 
@@ -100,21 +100,21 @@
 
 > 🎯
 
-> [腾讯出手了！微信支付MCP入局](https://mp.weixin.qq.com/s/dJk8_2RjzOFUJGf-lq_Hzw)
+> [腾讯出手了！🛰️支付MCP入局](https://mp.weixin.qq.com/s/dJk8_2RjzOFUJGf-lq_Hzw)
 
 >
 
-+   腾讯元器悄悄上线微信支付MCP，有体验版和正式版，含获取支付二维码、查询支付状态等工具。
++   腾讯元器悄悄上线🛰️支付MCP，有体验版和正式版，含获取支付二维码、查询支付状态等工具。
 
 +   可通过在智能体设置赞赏功能、对话收费，作者以“卖点魔方”智能体测试，展示接入流程。
 
 +   实际测试发现通过提示词嵌入智能体付费不稳定，作为商业模式有致命缺陷。
 
-+   微信支付MCP目前仅在腾讯元器可用且不稳定，但释放出AI加速与商业场景底层融合信号。
++   🛰️支付MCP目前仅在腾讯元器可用且不稳定，但释放出AI加速与商业场景底层融合信号。
 
 +   未来支付或无缝嵌入与智能体交互，开启全新商业范式。
 
-> 关键词：微信支付MCP，智能体付费，AI与商业融合
+> 关键词：🛰️支付MCP，智能体付费，AI与商业融合
 
 >
 

@@ -69,7 +69,7 @@ npm run build:all
 
 **我使用vercel搭建的反代服务器 (http**s://r.cydrvp.top/proxy/api.openai.com)
 
-通过反代服务器，就不需要挂梯子就可以调用openai的api了。
+通过反代服务器，就不需要挂🪜就可以调用openai的api了。
 
 **修改方法：
 

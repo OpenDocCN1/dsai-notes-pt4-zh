@@ -10,7 +10,7 @@
 
 # 腾讯元宝
 
-> （优势：接入了微信公众号的数据）
+> （优势：接入了🛰️👸号的数据）
 
 https://yuanbao.tencent.com/chat/naQivTmsDa
 

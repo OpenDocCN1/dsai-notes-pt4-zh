@@ -10,7 +10,7 @@
 
 ## 起步建议
 
-[首先我建议](https://www.zhihu.com/search?q=%E6%96%87%E5%BF%83%E4%B8%80%E6%A0%BC&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3110744963%7D)[的是起步](https://www.zhihu.com/search?q=%E5%A4%9A%E6%A8%A1%E6%80%81&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3110744963%7D)用国内的平替软件，我知道的包括有 文心一格 、无界AI、6Pen、Vega AI等等众多的平替，而且很多 多模态 的AI工具也可以生成。采用中文的形式简单的实现绘制，我就以微信头像的绘制为例，开展说明。
+[首先我建议](https://www.zhihu.com/search?q=%E6%96%87%E5%BF%83%E4%B8%80%E6%A0%BC&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3110744963%7D)[的是起步](https://www.zhihu.com/search?q=%E5%A4%9A%E6%A8%A1%E6%80%81&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3110744963%7D)用国内的平替软件，我知道的包括有 文心一格 、无界AI、6Pen、Vega AI等等众多的平替，而且很多 多模态 的AI工具也可以生成。采用中文的形式简单的实现绘制，我就以🛰️头像的绘制为例，开展说明。
 
 ![](img/141528287336630d220cdd8ba834111b.png)
 
@@ -18,9 +18,9 @@
 
 如果想要进一步进阶，做到“是否可以用one一样的原画，生成质量不算差的漫画甚至动画？”是完全可以的，通过Stable Diffusion里面的Controlnet和MOV2MOV可以实现，但是这属于进阶的内容，我将在后续我的文章中进行说明怎么操作，如果想了解的话可以关注下我的账户。
 
-## 入门级微信 [头像制作 ](https://www.zhihu.com/search?q=%E5%A4%B4%E5%83%8F%E5%88%B6%E4%BD%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3110744963%7D)方法
+## 入门级🛰️ [头像制作 ](https://www.zhihu.com/search?q=%E5%A4%B4%E5%83%8F%E5%88%B6%E4%BD%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3110744963%7D)方法
 
-我[这里就撰写](https://www.zhihu.com/search?q=%E6%96%87%E5%BF%83%E4%B8%80%E8%A8%80&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3110744963%7D)一个生成微信头像的Prompt，主体词为“二次元女生人物”做一个示意，做一个0门槛的微信头像制作分享吧：本文分别采用 文心一言 和国内无界AI进行绘画生成。
+我[这里就撰写](https://www.zhihu.com/search?q=%E6%96%87%E5%BF%83%E4%B8%80%E8%A8%80&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3110744963%7D)一个生成🛰️头像的Prompt，主体词为“二次元女生人物”做一个示意，做一个0门槛的🛰️头像制作分享吧：本文分别采用 文心一言 和国内无界AI进行绘画生成。
 
 首先采用这两个因为这两个国内平替软件都支持中文的Prompt, 便于大家理解使用，大家可以看下生成的效果：
 

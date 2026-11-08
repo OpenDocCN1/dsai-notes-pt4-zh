@@ -22,7 +22,7 @@
 
 [二次分销方法](https://ssw9noe1h6.feishu.cn/wiki/YBynwLR6WiCPpkk3bdrcZjOSnLe)
 
-[快速使用方法](https://ssw9noe1h6.feishu.cn/wiki/F76DwioWAiFcv9kNQQacgssLnsc)
+[快速使用方法](https://ssw9noe1h6.feishu.cn/wiki/F76DwioWAiFcv9kN🐧acgssLnsc)
 
 [Midjourney 绘图接入](https://ssw9noe1h6.feishu.cn/wiki/PRTVw2otrizM1Kk7SYHcl9d5ntf)
 

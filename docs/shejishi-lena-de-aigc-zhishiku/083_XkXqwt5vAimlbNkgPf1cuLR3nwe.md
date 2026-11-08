@@ -80,7 +80,7 @@ sora
 
 # 2024.12.4评测
 
-> https://www.xiaohongshu.com/explore/6709eac4000000001a022996?app_platform=ios&app_version=8.69.4&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBcnSdeke1X331QYNoTkp4lt8dCuQaou72h7od5MB6ssU=&author_share=1&xhsshare=WeixinSession&shareRedId=N0tHNkdGSE02NzUyOTgwNjY0OTc1SklB&apptime=1741193058&share_id=2791afe8698c489bbffafd385b63c0b3&wechatWid=813fcd43dc310a9b0143e20ea8645397&wechatOrigin=menu 小红书链接，观看更流畅
+> https://www.xiaohongshu.com/explore/6709eac4000000001a022996?app_platform=ios&app_version=8.69.4&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBcnSdeke1X331QYNoTkp4lt8dCuQaou72h7od5MB6ssU=&author_share=1&xhsshare=WeixinSession&shareRedId=N0tHNkdGSE02NzUyOTgwNjY0OTc1SklB&apptime=1741193058&share_id=2791afe8698c489bbffafd385b63c0b3&wechatWid=813fcd43dc310a9b0143e20ea8645397&wechatOrigin=menu 📕链接，观看更流畅
 
 > 测评平台：可灵、海螺、vidu、通义万相、即梦
 

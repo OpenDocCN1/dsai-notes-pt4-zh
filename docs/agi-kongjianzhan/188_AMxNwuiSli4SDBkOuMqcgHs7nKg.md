@@ -14,7 +14,7 @@
 
 +   web体验：https://klingai.kuaishou.com/
 
-+   官方公众号：[今天你“可灵”了吗？](https://mp.weixin.qq.com/s/9xT16HvcwMEaduKidruT0w)【快手】
++   官方👸号：[今天你“可灵”了吗？](https://mp.weixin.qq.com/s/9xT16HvcwMEaduKidruT0w)【快手】
 
 > **教程与学习资源区**
 

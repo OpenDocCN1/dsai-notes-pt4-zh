@@ -48,7 +48,7 @@
 
 +   AI+X高校行又去浙大啦！
 
-+   更多详见公众号发布：https://mp.weixin.qq.com/s/3FqJ56rwlpWQJNqaMEDGkA
++   更多详见👸号发布：https://mp.weixin.qq.com/s/3FqJ56rwlpWQJNqaMEDGkA
 
 ![](img/287a2eb6cf49bf7dc0cb0cf85a2f0e53.png)
 

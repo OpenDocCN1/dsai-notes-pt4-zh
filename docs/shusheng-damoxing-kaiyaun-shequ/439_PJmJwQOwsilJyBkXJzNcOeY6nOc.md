@@ -2,7 +2,7 @@
 
 > 来源：[https://aicarrier.feishu.cn/docx/JRBkdwc7domUoTxvI8dcqqnNn3f](https://aicarrier.feishu.cn/docx/JRBkdwc7domUoTxvI8dcqqnNn3f)
 
-填写问卷后请微信添加浦语小助手（InternLM）加入MindSearch 共建群。
+填写问卷后请🛰️添加浦语小助手（InternLM）加入MindSearch 共建群。
 
 | 任务id | 任务描述 | 任务激励 | 领取地址 | 任务状态 |
 | --- | --- | --- | --- | --- |

@@ -1,6 +1,6 @@
 # 对话李想：人生最可怕的就两件事情
 
-> 来源：[https://leonzhang.feishu.cn/docx/MPGFdOzhXo1a07xbQQacrlVKnJm](https://leonzhang.feishu.cn/docx/MPGFdOzhXo1a07xbQQacrlVKnJm)
+> 来源：[https://leonzhang.feishu.cn/docx/MPGFdOzhXo1a07xb🐧acrlVKnJm](https://leonzhang.feishu.cn/docx/MPGFdOzhXo1a07xb🐧acrlVKnJm)
 
 > 🔗 原文链接： h[ttps://finance.sin](https://finance.sina.com.cn/chanjing/gsnews/2023-02-01/doc-imyeevkp8819848.shtml)a.com.cn/chanjin...
 

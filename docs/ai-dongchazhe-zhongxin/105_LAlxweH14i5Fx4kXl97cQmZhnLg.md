@@ -209,7 +209,7 @@ cd generative-models
 
 关于SVD模型权重，可以在上面的模型资源汇总部分下载取用！但是，同时考虑到大家的网络情况，我这里将所有的 SVD 模型权重、调试好的代码及基础依赖模型，放到了百度网盘里面！
 
-获取方式可以关注公众号「**魔方AI空间**」，回复 【**SVD**】即可获取链接，包含代码 generative-models、模型权重checkpoints、以及models–laion–CLIP-ViT-H-14-laion2B-s32B-b79K和ViT-L-14.pt。
+获取方式可以关注👸号「**魔方AI空间**」，回复 【**SVD**】即可获取链接，包含代码 generative-models、模型权重checkpoints、以及models–laion–CLIP-ViT-H-14-laion2B-s32B-b79K和ViT-L-14.pt。
 
 ![](img/fbd5ea1c874bdb488899fe5b606803bb.png)
 
@@ -245,7 +245,7 @@ streamlit run scripts/demo/video_sampling.py  --server.address  0.0.0.0  --serve
 
 >
 
-同**时关于上面的**两个模型依赖**权重也**放到了百度网盘资源里，关注公众号「魔方AI空间」，回复 【SVD】即可获取！！
+同**时关于上面的**两个模型依赖**权重也**放到了百度网盘资源里，关注👸号「魔方AI空间」，回复 【SVD】即可获取！！
 
 手动下载下来后，分别放到路径如下：
 
@@ -348,7 +348,7 @@ python -m venv venv
 
 > 图片编解码模型权重：https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors?download=true
 
-将sd_**xl_bas**e_1.0.**saf**etensors 和 svd_xt.safetensors 放置于models/checkpoints下，sdxl_vae.safetensors 需放置于models/vae下关于以上模型权重和工作流同样放到了百度网盘资源里，关注公众号「魔方AI空间」，回复 【SVD】即可获取！！
+将sd_**xl_bas**e_1.0.**saf**etensors 和 svd_xt.safetensors 放置于models/checkpoints下，sdxl_vae.safetensors 需放置于models/vae下关于以上模型权重和工作流同样放到了百度网盘资源里，关注👸号「魔方AI空间」，回复 【SVD】即可获取！！
 
 ## 运行ComfyUI并加载工作流
 
@@ -371,7 +371,7 @@ git clone https://github.com/ltdrdata/ComfyUI-Manager.git
 
 ![](img/3be71955f3e589c6cfa0f598c8b71a82.png)
 
-接下**来，我们就可**以跑文生视频**的工作**流了！！！关于工作流，我也给大家准备好了，同样放到百度网盘链接了，关注公众号「魔方AI空间」，回复 【SVD】即可获取！！工作流下载好后，我们可以使用ComfyUI菜单的load功能，进行工作流的加载！
+接下**来，我们就可**以跑文生视频**的工作**流了！！！关于工作流，我也给大家准备好了，同样放到百度网盘链接了，关注👸号「魔方AI空间」，回复 【SVD】即可获取！！工作流下载好后，我们可以使用ComfyUI菜单的load功能，进行工作流的加载！
 
 然后，点击菜单栏「Queue Prompt」就可以开始视频的生成啦！我们可以通过工作流上的绿色框看到运行的进度！！！最后，我们可以去ComfyUI目录下的output文件夹查看生成好的视频！如果我们在生成视频的过程中，出现显存溢出的问题，请往下看！！
 

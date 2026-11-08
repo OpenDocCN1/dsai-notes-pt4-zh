@@ -230,7 +230,7 @@ pip install accelerate
 
 在确认进入所在工作文件夹后首先进行模型的项目文件的下载：
 
-这种办法是一种在执行主机上不需要科学上网的流程，以便于一些特殊环境下实现部署安装（如在服务器环境）。
+这种办法是一种在执行主机上不需要🪜的流程，以便于一些特殊环境下实现部署安装（如在服务器环境）。
 
 首先要下载model scope的工具包以便我们在国内环境下完成模型的下载。
 
@@ -248,7 +248,7 @@ https://modelscope.cn/models/Qwen/Qwen2.5-Coder-32B-Instruct
 
 通过以下方式可以指定你所要下载的文件地址，这样做可以指定下载文件的存储路径，需注意将./dir-name替换成你自己的文件路径。
 
-modelscope download --model Qwen/QQwen2.5-Coder-32B-Instruct --local_dir ./dir-name
+modelscope download --model Qwen/🐧wen2.5-Coder-32B-Instruct --local_dir ./dir-name
 
 ![](img/eda3ccd888c370b526c6bab63424df02.png)
 
@@ -676,7 +676,7 @@ def addTwoNumbers(l1: ListNode, l2: ListNode) -&gt; ListNode:
 
 通过这种全局性的代码理解能力，Cursor不仅提升了开发效率，更为开发者提供了具有深度洞察力的编程辅助体验，使代码编写过程更加流畅和智能化。
 
-Cursor直接注册即可试用2周pro计划，可以白嫖一众开源和闭源的应用，这无需科学上网和海外支付，也就是说非常适合国内的小白们快速进行上手实践。
+Cursor直接注册即可试用2周pro计划，可以白嫖一众开源和闭源的应用，这无需🪜和海外支付，也就是说非常适合国内的小白们快速进行上手实践。
 
 同样的，Qwen2.5-Coder的系列模型也支持在Cusor中进行部署和使用，那就让我们看看具体的操作流程吧：
 

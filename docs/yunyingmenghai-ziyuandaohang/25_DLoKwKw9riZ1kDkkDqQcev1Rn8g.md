@@ -36,7 +36,7 @@ https://dt.bd.cn/#/pages/login/register?invite_code=524744
 
 链接：https://pan.quark.cn/s/8f54ef99e3fb
 
-# 科学上网：
+# 🪜：
 
 https://7llyi-pvnjf-etvy3-asad8.glados.space
 
@@ -52,7 +52,7 @@ https://7llyi-pvnjf-etvy3-asad8.glados.space
 
 hiddify-next：
 
-我用夸克网盘分享了「hiddify-next(翻墙客户端)」，点击链接即可保存。打开「夸克APP」，无需下载在线播放视频，畅享原画5倍速，支持电视投屏。
+我用夸克网盘分享了「hiddify-next(🪜客户端)」，点击链接即可保存。打开「夸克APP」，无需下载在线播放视频，畅享原画5倍速，支持电视投屏。
 
 链接：https://pan.quark.cn/s/c33e87a5277c
 

@@ -6,7 +6,7 @@
 
 > https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656293688&idx=1&sn=8e05b874edaa7c731544cd47b1662682&scene=21#wechat_redirect
 
-MCP（Model Context Protocol）是 Anthropic 推出的针对 LLM（大模型）的一个开放协议标准，它为 AI 开发提供了标准化的上下文交互方式。MCP 的快速发展让竞争对手 OpenAI 也开始提供支持。曾老师最近也在工作中频繁使用 MCP，今天写一点点自己的体验。B 站和微信公众号有大量的文章教学如何进行 MCP 配置，曾老师在本篇就不再重复了。本篇着重说说使用体验和疑难杂症。
+MCP（Model Context Protocol）是 Anthropic 推出的针对 LLM（大模型）的一个开放协议标准，它为 AI 开发提供了标准化的上下文交互方式。MCP 的快速发展让竞争对手 OpenAI 也开始提供支持。曾老师最近也在工作中频繁使用 MCP，今天写一点点自己的体验。B 站和🛰️👸号有大量的文章教学如何进行 MCP 配置，曾老师在本篇就不再重复了。本篇着重说说使用体验和疑难杂症。
 
 +   支持 MCP 的软件
 

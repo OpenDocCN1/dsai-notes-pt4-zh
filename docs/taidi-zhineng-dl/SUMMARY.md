@@ -65,7 +65,7 @@
 +   [Hot Chips](064_HfLZwJWeciaYGgkPfS3ckgCSncM.md)
 +   [GPGPU - Memory Model Design](065_VF8lwOj2fiywwtkKWBucOKbmn6c.md)
 +   [PyTorch and Triton Memory Model](066_SgxZwdpbHipRXEkjRmgcMgVpnHf.md)
-+   [gem5 simulator](067_YAmkwBlzkiTGlnkQQXMctS1bnse.md)
++   [gem5 simulator](067_YAmkwBlzkiTGlnk🐧XMctS1bnse.md)
 +   [CUDA on SIMD(RVV) GPU](068_J32XwmqhtiWfiokuLoVc8vtwnMg.md)
 +   [Hardware & SoC](069_VyM1wHmrOi3V7dkSifscwJ8RnoQ.md)
 +   [总线 & PCIe 总线](070_R0qbwKDGZiQVQ1kKujucHvb1nXe.md)

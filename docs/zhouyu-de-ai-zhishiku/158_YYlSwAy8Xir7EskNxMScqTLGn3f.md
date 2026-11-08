@@ -1,4 +1,4 @@
-# 2025小红书运营知识地图.pdf
+# 2025📕运营知识地图.pdf
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/IM8AdKcStoTgqjxukpxc9VoOnse](https://xatc0v8uz5m.feishu.cn/docx/IM8AdKcStoTgqjxukpxc9VoOnse)
 
@@ -12,11 +12,11 @@
 
 👇点击下方关注大叔 看最新干货！
 
-《 2025小红书运营知识地图 》，小红书营销人员必读的运营宝典。
+《 2025📕运营知识地图 》，📕营销人员必读的运营宝典。
 
-这份小红书运营指南包含了小红书平台规则和实操方法，手把手教你从零开始做号。
+这份📕运营指南包含了📕平台规则和实操方法，手把手教你从零开始做号。
 
-从平台规则、账号定位、写爆款笔记、视频爆款到涨粉秘籍到接广告变现，每个环节都有详细说明，特别适合想在小红书赚钱的自媒体人和品牌方。
+从平台规则、账号定位、写爆款笔记、视频爆款到涨粉秘籍到接广告变现，每个环节都有详细说明，特别适合想在📕赚钱的自媒体人和品牌方。
 
 ![](img/2ac385592d72691ca7e559f239ed9cfb.png)
 
@@ -64,7 +64,7 @@
 
 .......
 
-**小红书资料下载 👇**
+**📕资料下载 👇**
 
 ![](img/85147baab62e67b7e7df80ebdf668128.png)
 
@@ -72,7 +72,7 @@
 
 **★运营大纲★**
 
-**小红书：**
+**📕：**
 
 [**涨粉 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3478940295952187398#wechat_redirect)**| **[**违规 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3468944663007051780#wechat_redirect)**| **[**开店 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3468959683765977099#wechat_redirect)**| **[**直播 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3468952793262702595#wechat_redirect)**| **[**算法 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3468961748034633740#wechat_redirect)**| **[**变现 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3478946909530734593#wechat_redirect)**| **[**爆文 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3468955992023482377#wechat_redirect)**|**
 

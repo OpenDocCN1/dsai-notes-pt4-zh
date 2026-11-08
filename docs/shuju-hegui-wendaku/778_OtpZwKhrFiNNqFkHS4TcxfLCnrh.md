@@ -4,7 +4,7 @@
 
 **-问：**请问有没有专门发布数据或ai监管领域新闻的网站？最好是国外的。
 
-**-答1：**iapp yyds，不过访问速度比较慢，自备科学上网工具。https://iapp.org/news/
+**-答1：**iapp yyds，不过访问速度比较慢，自备🪜工具。https://iapp.org/news/
 
 **-答2：**https://www.dataguidance.com/，onetrust也可。
 

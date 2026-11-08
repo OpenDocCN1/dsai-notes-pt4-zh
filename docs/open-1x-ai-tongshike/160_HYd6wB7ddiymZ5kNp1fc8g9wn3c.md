@@ -42,7 +42,7 @@ AI夏令营来到第四期～ 即将收官了！
 
 +   **玩起来：社区分享**
 
-+   分享平台：可以通过[填表](https://datawhaler.feishu.cn/share/base/form/shrcnZ9zUyFs1WGswCEkL6yKfbg)将作品分享到作品墙、也可以分享到小红书、视频号、抖音等公共平台（形式可以是：图片、视频、文字等形式）
++   分享平台：可以通过[填表](https://datawhaler.feishu.cn/share/base/form/shrcnZ9zUyFs1WGswCEkL6yKfbg)将作品分享到作品墙、也可以分享到📕、视频号、抖音等公共平台（形式可以是：图片、视频、文字等形式）
 
 +   如何互动：在[作品墙](https://datawhaler.feishu.cn/wiki/OfsdwN3qMihijHkGxvTcIrmqn0o?from=from_copylink)查看大家的优秀作品、进行点赞、评论，留下你的足迹，带走无限灵感！
 

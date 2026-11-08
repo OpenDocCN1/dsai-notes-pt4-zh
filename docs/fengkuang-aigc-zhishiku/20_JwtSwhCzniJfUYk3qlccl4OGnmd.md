@@ -142,6 +142,6 @@ Clarence Wing Yin NG
 
 ![](img/0e0b0bc99474fbd5e7a6c6cfd905425f.png)
 
-微信扫一扫
+🛰️扫一扫
 
-关注该公众号
+关注该👸号

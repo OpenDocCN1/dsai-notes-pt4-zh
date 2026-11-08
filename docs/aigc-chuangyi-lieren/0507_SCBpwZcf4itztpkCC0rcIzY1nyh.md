@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/UNZxdZpvRoPDnDx463gcWVZln2e](https://aigcreative.feishu.cn/docx/UNZxdZpvRoPDnDx463gcWVZln2e)
 
-> 作者： howie serious 公众号：Howie和小能熊
+> 作者： howie serious 👸号：Howie和小能熊
 
 > 链接：https://mp.weixin.qq.com/s/4tzWo-6UAOqQbfus2wePMw
 

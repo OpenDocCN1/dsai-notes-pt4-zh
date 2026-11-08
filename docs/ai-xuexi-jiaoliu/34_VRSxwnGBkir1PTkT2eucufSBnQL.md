@@ -2,9 +2,9 @@
 
 > 来源：[https://zcareers.feishu.cn/docx/O0VZdF10LovEcvxb7wSc5rQXnnb](https://zcareers.feishu.cn/docx/O0VZdF10LovEcvxb7wSc5rQXnnb)
 
-### [小红书开店](https://zcareers.feishu.cn/wiki/NCVSwZC8riU6Cok76yicuraxnBb)
+### [📕开店](https://zcareers.feishu.cn/wiki/NCVSwZC8riU6Cok76yicuraxnBb)
 
-### [创作高质量小红书笔记](https://qdrlbziuml.feishu.cn/docx/E28CdvbzAoulmxxLpoZcchBinhm)
+### [创作高质量📕笔记](https://qdrlbziuml.feishu.cn/docx/E28CdvbzAoulmxxLpoZcchBinhm)
 
 ### 有播放就有收益的自媒体平台
 

@@ -12,7 +12,7 @@
 
 ![](img/e523c273af6808ece74031e4037c40df.png)
 
-欢迎关注公众号👆
+欢迎关注👸号👆
 
 ```
 论文题目：RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval

@@ -26,7 +26,7 @@ hello，大家好，我是雷鸣哥，最近这个历史人物复活骂人的视
 
 二、需要用的用具
 
-1、https://viggle.ai/login AI 视频换脸工具（需要科学上网），每天可以免费用 5 次
+1、https://viggle.ai/login AI 视频换脸工具（需要🪜），每天可以免费用 5 次
 
 ![](img/08a2cf2f09be06fffcacbd4b842bee5b.png)
 

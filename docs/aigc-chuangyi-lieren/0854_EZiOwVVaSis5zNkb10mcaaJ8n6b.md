@@ -4,7 +4,7 @@
 
 > 链接: https://mp.weixin.qq.com/s/alUeM-GG9Inlw2cghwy7ag
 
-> 公众号：和平本记
+> 👸号：和平本记
 
 这是 cursor 的设计主管在 X 上发布的 cursor 使用建议
 

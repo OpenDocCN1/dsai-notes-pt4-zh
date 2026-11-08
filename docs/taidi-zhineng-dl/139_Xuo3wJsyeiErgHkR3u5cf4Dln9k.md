@@ -132,7 +132,7 @@ Dec 13, 2022
 
 # Memory Debugging Tools for GPUs
 
-https://www.youtube.com/watch?v=rQQ3yStAOGQ
+https://www.youtube.com/watch?v=r🐧3yStAOGQ
 
 Profiling and Memory Debugging Tools for Distributed ML Workloads on GPUs
 

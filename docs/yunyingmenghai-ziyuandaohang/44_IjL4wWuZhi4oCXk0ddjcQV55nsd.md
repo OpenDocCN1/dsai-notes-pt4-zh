@@ -1,20 +1,20 @@
-# Python实现微信语音发送自动化工具 - 内录播放控制系统
+# Python实现🛰️语音发送自动化工具 - 内录播放控制系统
 
 > 来源：[https://yunyingmenghai.feishu.cn/docx/Waacd9fytozPCuxvJ20cHezPndj](https://yunyingmenghai.feishu.cn/docx/Waacd9fytozPCuxvJ20cHezPndj)
 
 ![](img/db86d1b251edd0681695f8aeef42f87d.png)
 
-Python实现微信语音发送自动化工具 - 内录播放控制系统
+Python实现🛰️语音发送自动化工具 - 内录播放控制系统
 
 ## 前言
 
 本文将介绍一个基于Python的解决方案，通过声卡内录配合无线反控手机实现自动化语音发送功能。
 
-搭配:[开源scrcpy手机无线投屏脚本反控手机](https://yunyingmenghai.feishu.cn/wiki/LiQQwuh3niyI3nkq8zLc5Dcdn7q)
+搭配:[开源scrcpy手机无线投屏脚本反控手机](https://yunyingmenghai.feishu.cn/wiki/Li🐧wuh3niyI3nkq8zLc5Dcdn7q)
 
 ### 应用场景
 
-+   微信客服较多重复的语音回复场景
++   🛰️客服较多重复的语音回复场景
 
 +   用语音回复怕被封
 
@@ -299,4 +299,4 @@ if __name__ == &quot;__main__&quot;:
 
 ### 总结
 
-本工具通过Python实现了一个实用的微信语音发送控制系统，结合硬件设备可以实现自动化的语音消息发送功能。该系统具有界面直观、操作简单、功能实用等特点，适合需要进行语音消息自动化处理的场景
+本工具通过Python实现了一个实用的🛰️语音发送控制系统，结合硬件设备可以实现自动化的语音消息发送功能。该系统具有界面直观、操作简单、功能实用等特点，适合需要进行语音消息自动化处理的场景

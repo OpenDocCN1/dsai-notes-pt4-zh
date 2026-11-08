@@ -1,6 +1,6 @@
 # 润色文章ChatGPT最全指令
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/WryKdirTXo6E8uxgIQQcTT7onyf](https://qqs7y1hozd1.feishu.cn/docx/WryKdirTXo6E8uxgIQQcTT7onyf)
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/WryKdirTXo6E8uxgI🐧cTT7onyf](https://qqs7y1hozd1.feishu.cn/docx/WryKdirTXo6E8uxgI🐧cTT7onyf)
 
 # Quick Prompts 快速提示
 

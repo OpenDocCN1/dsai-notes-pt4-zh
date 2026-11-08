@@ -94,7 +94,7 @@
 
 ###
 
-### [**小红书小作文生成器**](https://open-gpt.app/app/clf2awmv0001mjt08hjtcpe90)
+### [**📕小作文生成器**](https://open-gpt.app/app/clf2awmv0001mjt08hjtcpe90)
 
 帮助姐妹们一键生成小作文，在舆论场里立于不败之地。
 

@@ -1,6 +1,6 @@
 # 浪费点 token, 得到更好的结果, 为什么糟糕呢?
 
-> 来源：[https://qianniucity.feishu.cn/docx/QQiTdeDZLo6106xdAbdc3rHKn7b](https://qianniucity.feishu.cn/docx/QQiTdeDZLo6106xdAbdc3rHKn7b)
+> 来源：[https://qianniucity.feishu.cn/docx/🐧iTdeDZLo6106xdAbdc3rHKn7b](https://qianniucity.feishu.cn/docx/🐧iTdeDZLo6106xdAbdc3rHKn7b)
 
 1.  上下文太长，会导致生成结果变差
 

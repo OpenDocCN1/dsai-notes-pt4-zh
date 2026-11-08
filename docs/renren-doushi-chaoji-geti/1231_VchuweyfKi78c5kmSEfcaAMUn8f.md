@@ -24,7 +24,7 @@ AI小厂产品经理/成为独立开发者的路上/Notion初学者/偶尔扫街
 
 > 作者：何文斯 - Vince，LLM 应用研究者，Dify 团队产品经理，对 LLM 应用、Embedding、LangChian 等保持持续关注和深度研  究。
 
-大语言模型之上的应用层面有三项技术需要理解： 提示词工程（Prompt Engineering）； 嵌入（Embedding）； 微调（Fine-tuning）。 其中 Embedding 作为大语言模型理解文本语义的重要技术，在搜索引擎、构建私有知识问答系统、内容推荐系统等都有相当广泛的应用。 本文作为我的一篇个人技术笔记在整理了一周后分享到公众号内。
+大语言模型之上的应用层面有三项技术需要理解： 提示词工程（Prompt Engineering）； 嵌入（Embedding）； 微调（Fine-tuning）。 其中 Embedding 作为大语言模型理解文本语义的重要技术，在搜索引擎、构建私有知识问答系统、内容推荐系统等都有相当广泛的应用。 本文作为我的一篇个人技术笔记在整理了一周后分享到👸号内。
 
 # **Embedding 的基本概念**
 
@@ -228,7 +228,7 @@ Defog.ai：一款基于自然语义对话方式跟数据库和文档交互的应
 
 3.https://platform.openai.com/docs/guides/embeddings
 
-4.https://weibo.com/1727858283/MDI5fnKQH（推荐宝玉老师的微博）
+4.https://weibo.com/1727858283/MDI5fnKQH（推荐宝玉老师的🧣）
 
 5.https://arxiv.org/pdf/2304.11062.pdf
 

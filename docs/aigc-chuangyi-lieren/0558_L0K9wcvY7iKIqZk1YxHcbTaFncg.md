@@ -250,7 +250,7 @@ NotebookL+Nano Banana Pro这套组合，拥有现在业界我也许见过最强�
 
 ![](img/6885c4c225c769852ace775b534a04bd.png)
 
-比如这份《2025小红书必学》材料：
+比如这份《2025📕必学》材料：
 
 ![](img/c3f637368dbcbaf3bf76dc5cf32232f3.png)
 

@@ -12,7 +12,7 @@
 
 > **彭昊若博士， **FileChat创始人，基于RAG能力的垂直领域应用创业
 
-> **卢向东老师， **TorchV创始人，RAG Solution创业，公众号土猛的员外
+> **卢向东老师， **TorchV创始人，RAG Solution创业，👸号土猛的员外
 
 > RandyZhao博士/王睿博士， OnWish创始人，基金经理/分析师的Copilot
 

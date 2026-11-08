@@ -26,7 +26,7 @@
 
 +   在线浏览：[aigc.ioclab.com](https://aigc.ioclab.com/)
 
-+   PDF 下载：见微信公众号 Isle of Chaos 或 Discord 频道
++   PDF 下载：见🛰️👸号 Isle of Chaos 或 Discord 频道
 
 ## 1.2.3. ChangeLog
 
@@ -38,16 +38,16 @@ V0.1 - 2023.03.30
 
 **Isle of Chaos**
 
-+   微信公众号：Isle of Chaos
++   🛰️👸号：Isle of Chaos
 
 +   Discord：discord.gg/CVVhVtcKrx
 
 **@ciaochaos**
 
-+   微信号：nhciao
++   🛰️号：nhciao
 
 +   Github：github.com/ciaochaos
 
 **@shichen**
 
-+   微信号：shichenbaiyu
++   🛰️号：shichenbaiyu

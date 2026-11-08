@@ -1,6 +1,6 @@
 # 1、LangGPT框架
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/B7wudxH72ox6QQx58Hdcj0d3nJc](https://vxc3hj17dym.feishu.cn/docx/B7wudxH72ox6QQx58Hdcj0d3nJc)
+> 来源：[https://vxc3hj17dym.feishu.cn/docx/B7wudxH72ox6🐧x58Hdcj0d3nJc](https://vxc3hj17dym.feishu.cn/docx/B7wudxH72ox6🐧x58Hdcj0d3nJc)
 
 > **关于作者：**[Welcome to Jackey. | 甲木个人杂志](https://langgptai.feishu.cn/docx/Oturdxhj2oxO3hxp5tZcbPCan9e?from=from_copylink)
 

@@ -38,7 +38,7 @@
 
 ### 工作流精选：
 
-[使用GPT，写小红书文案](https://jalicvoygc0.feishu.cn/wiki/RIIQwGYIpiQt17kCoB7cyGwWnVc)
+[使用GPT，写📕文案](https://jalicvoygc0.feishu.cn/wiki/RIIQwGYIpiQt17kCoB7cyGwWnVc)
 
 [使用GPT-4，优化任何文案](https://jalicvoygc0.feishu.cn/wiki/D02twhJ03iugeIkQczwcnkeCnmc)
 

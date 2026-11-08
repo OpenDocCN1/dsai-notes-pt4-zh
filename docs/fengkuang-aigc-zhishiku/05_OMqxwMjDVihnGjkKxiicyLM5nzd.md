@@ -54,13 +54,13 @@ Midjourney 是一个由同名研究实验室开发的人工智能程式，只要
 
 ## MJ 中国市场
 
-MJ 官方目前在和腾讯官方合作，MJ 官方 QQ 频道，QQ 扫码可以加，如果过期，可以自行去 QQ 频道搜索加入，目前已经满人了，何时开放等通知。
+MJ 官方目前在和腾讯官方合作，MJ 官方 🐧 频道，🐧 扫码可以加，如果过期，可以自行去 🐧 频道搜索加入，目前已经满人了，何时开放等通知。
 
 ## 常见问题答疑
 
 ### Q1：Midjourney 国内能用吗？
 
-A：Midjourney 官网国内是可以打开注册的，但是使用不是在官网，而是在 discord 频道，这个就需要魔法上网。
+A：Midjourney 官网国内是可以打开注册的，但是使用不是在官网，而是在 discord 频道，这个就需要🪜。
 
 ### Q2：Midjourney 免费版怎么用？怎么无限免费试用？
 
@@ -70,7 +70,7 @@ A：3 月底官方已经关闭了免费试用，以前新用户可以免费试�
 
 ## 注册 Discord
 
-这里首先要知道 Discord，这是一款专为社群设计的免费通讯社交软体，类似于 LINE 或 Slack，但功能更为强大，自带机器人与各种程式功能，能够在上面发开自己工具，有网页版与手机版 APP。由于 Midjourney 现在依托 discord 来完成图片生成功能，discord 就相当于微信，而 Midjourney 可以理解为微信小程序，所以我们可以把 Midjourney 看成是 discord 上的一个小程序。
+这里首先要知道 Discord，这是一款专为社群设计的免费通讯社交软体，类似于 LINE 或 Slack，但功能更为强大，自带机器人与各种程式功能，能够在上面发开自己工具，有网页版与手机版 APP。由于 Midjourney 现在依托 discord 来完成图片生成功能，discord 就相当于🛰️，而 Midjourney 可以理解为🛰️小程序，所以我们可以把 Midjourney 看成是 discord 上的一个小程序。
 
 1.  第一步：下载 Discord，https://discord.com/ ，打开网址注册，或者下载 windonss/MAC 版本 Discord。
 

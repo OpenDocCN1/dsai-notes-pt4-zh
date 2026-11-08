@@ -112,7 +112,7 @@
 
 ![](img/1a78f5b633dc83a1b131b852d872fca0.png)
 
-[奇绩论坛（陆奇深圳演讲）-ChatGPT新机遇分享-PPT(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SkAubuiO1oLmxhx2xkycwQQVnyf)
+[奇绩论坛（陆奇深圳演讲）-ChatGPT新机遇分享-PPT(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SkAubuiO1oLmxhx2xkycw🐧Vnyf)
 
 [陆奇-ChatGPT新机遇分享.pdf](https://sm84lfdag7.feishu.cn/file/IyapbPksbossHcx18pCceN0pnuc)
 

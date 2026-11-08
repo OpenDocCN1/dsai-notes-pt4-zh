@@ -1,4 +1,4 @@
-# 2025微信公开课PRO小游戏专场直播文字PPT实录
+# 2025🛰️公开课PRO小游戏专场直播文字PPT实录
 
 > 来源：[https://huchegames.feishu.cn/docx/FH41d4d1WoxDgkxjGqBc88yOnFb](https://huchegames.feishu.cn/docx/FH41d4d1WoxDgkxjGqBc88yOnFb)
 
@@ -8,9 +8,9 @@
 
 以下文章来源于胡扯游戏 ，作者曾嵘
 
-[GameX·FIRE 2025巨量引擎小游戏生态大会直播文字实录](https://huchegames.feishu.cn/wiki/Ig8Qw6wHMiKqUjkcMGTcNphunnO)节前会议不断。1 月 7 日  在深圳召开后，微信公开课也来了。
+[GameX·FIRE 2025巨量引擎小游戏生态大会直播文字实录](https://huchegames.feishu.cn/wiki/Ig8Qw6wHMiKqUjkcMGTcNphunnO)节前会议不断。1 月 7 日  在深圳召开后，🛰️公开课也来了。
 
-本篇是2025 年 1 月 9 日在广交会展馆广交会堂召开的 2025微信公开课PRO小游戏专场 文字实录。
+本篇是2025 年 1 月 9 日在广交会展馆广交会堂召开的 2025🛰️公开课PRO小游戏专场 文字实录。
 
 目录：
 
@@ -234,9 +234,9 @@ AB实验工具。
 
 ![](img/2d9bdec7a36f47a11e793c552855bad9.png)
 
-微信小游戏量级空间大，可探索空间大，PC用户更具粘性。
+🛰️小游戏量级空间大，可探索空间大，PC用户更具粘性。
 
-+   截止目前，微信小游戏用户的存量量级已超时头当前端包存量用户3倍，且仍有较大的用户池我们仍在进行探索。
++   截止目前，🛰️小游戏用户的存量量级已超时头当前端包存量用户3倍，且仍有较大的用户池我们仍在进行探索。
 
 +   微小初期用户重复只有5%左右，即徽小用户有大部分与端包用户具有一定的区分隔离性，隐藏用户体量较大。
 

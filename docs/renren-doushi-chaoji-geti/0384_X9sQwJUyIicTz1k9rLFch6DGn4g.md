@@ -439,12 +439,12 @@ def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信�
 
 ### 其他文章：
 
-+   [RPA自动采集小红书低粉爆款商品（手把手教程-附源码）](https://vind9redwd.feishu.cn/docx/D8f7d88yBoKXchxrWdJcDGT3nUe)
++   [RPA自动采集📕低粉爆款商品（手把手教程-附源码）](https://vind9redwd.feishu.cn/docx/D8f7d88yBoKXchxrWdJcDGT3nUe)
 
-+   [影刀RPA自动采集小红书对标店铺商品（保姆级教程-附源码） ](https://vind9redwd.feishu.cn/docx/Tr5zdjgYWoKRNCxktExcXixEn1f)
++   [影刀RPA自动采集📕对标店铺商品（保姆级教程-附源码） ](https://vind9redwd.feishu.cn/docx/Tr5zdjgYWoKRNCxktExcXixEn1f)
 
 +   [80%品牌方忽略的GEO盲区，如何让AI引用你的产品，以及如何监控效果？（附影刀RPA自动化解决方案）](https://vind9redwd.feishu.cn/docx/G1oWdMr3eo90OcxSPg2c93H9nHd)
 
 +   [醒醒，几十块钱，是买不到自动化工作流的](https://ai.feishu.cn/docx/DzKqdKRDno7Etkxo1zXccShqnMe)
 
-+   [小红书电商-自动化运营实战分享](https://ai.feishu.cn/docx/IK5tdeCWAootXvx9QBhcP2t8nFg)
++   [📕电商-自动化运营实战分享](https://ai.feishu.cn/docx/IK5tdeCWAootXvx9QBhcP2t8nFg)

@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Qo8edhH1GojDnvxKPZecSXNOnug](https://xuqiwei1986.feishu.cn/docx/Qo8edhH1GojDnvxKPZecSXNOnug)
 
-大家好~我是文少，生财第七期圈友，目前是一名自由职业，现在主要做视频号和youtube。
+大家好~我是文少，赚钱第七期圈友，目前是一名自由职业，现在主要做视频号和youtube。
 
 这次参加了6月航海的youtube shorts航海（第一次报名这个航海），个人榜排第二，打卡21天，成为行动的巨人，现在也成功开通高级ypp了。
 

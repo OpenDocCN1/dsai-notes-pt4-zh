@@ -4,7 +4,7 @@
 
 #
 
-[来自： 生财有术](https://wx.zsxq.com/dweb2/index/group/1824528822)
+[来自： 龙哥盟](https://wx.zsxq.com/dweb2/index/group/1824528822)
 
 ![](img/19ca3a78c635098f3823460de12a92ef.png)
 
@@ -24,7 +24,7 @@ chatgpt真的是太太太太火了！
 
 ![](img/38eb8302029b55e6bdc2b6aaca978842.png)
 
-这不，刚从杭州参加生财见面会回来，就马不停蹄的码字写文章，搞钱是我们的唯一动力哈哈。
+这不，刚从杭州参加赚钱见面会回来，就马不停蹄的码字写文章，搞钱是我们的唯一动力哈哈。
 
 ![](img/bc1542df6beb90047df27ec23b7fac9a.png)
 

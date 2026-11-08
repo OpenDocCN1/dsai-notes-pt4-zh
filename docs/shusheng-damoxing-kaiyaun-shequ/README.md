@@ -122,7 +122,7 @@ IOPMC （Intern OpenSource Project Manage Community）  书生大模型开源社
 
 # 加入我们
 
-如果你也想参与 InternLM 开源社区的建设欢迎微信搜索InternLM 添加浦语小助手微信！
+如果你也想参与 InternLM 开源社区的建设欢迎🛰️搜索InternLM 添加浦语小助手🛰️！
 
 >
 
@@ -130,6 +130,6 @@ IOPMC （Intern OpenSource Project Manage Community）  书生大模型开源社
 
 > **官网：**https://internlm.intern-ai.org.cn/
 
-> **小助手微信：**InternLM
+> **小助手🛰️：**InternLM
 
 # 友好**合作社区**

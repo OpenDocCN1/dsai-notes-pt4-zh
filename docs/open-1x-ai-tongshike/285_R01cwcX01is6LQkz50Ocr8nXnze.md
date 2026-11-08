@@ -48,7 +48,7 @@ ACCESS_TOKEN环境变量是SDK令牌https://modelscope.cn/my/myaccesstoken
 
 +   另外
 
-# 公众号
+# 👸号
 
 # Hugging face
 

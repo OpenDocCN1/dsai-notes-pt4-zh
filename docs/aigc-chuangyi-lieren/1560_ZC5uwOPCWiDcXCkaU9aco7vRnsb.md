@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/67FJwMuXCNAUBJRZw0MYdg)qq.com/s/67FJwMuX...
 
-> 来源-公众号：吴晓波频道
+> 来源-👸号：吴晓波频道
 
 **“**这是我最后一场年终秀。在未来我会继续认真地写作，跑企业，录音频，授课，讲真话，感谢你们的到来和陪伴。 ”
 

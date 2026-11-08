@@ -10,9 +10,9 @@
 
 MJ国内版绘画网站：https://www.gogptai.com/（网址用浏览器打开）
 
-微信公众号使用地址：AI创新工坊
+🛰️👸号使用地址：AI创新工坊
 
-微信小程序：搜索“ Midjourney”
+🛰️小程序：搜索“ Midjourney”
 
 ![](img/6839d21a13db5e607cb80557525455f2.png)
 

@@ -1,8 +1,8 @@
-# 【生财有术专享】垂直小店案例
+# 【龙哥盟专享】垂直小店案例
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Tq1BdXUWpouNFOxv1SfcN2jFniT](https://xuqiwei1986.feishu.cn/docx/Tq1BdXUWpouNFOxv1SfcN2jFniT)
 
-# 小红书
+# 📕
 
 ### P图
 

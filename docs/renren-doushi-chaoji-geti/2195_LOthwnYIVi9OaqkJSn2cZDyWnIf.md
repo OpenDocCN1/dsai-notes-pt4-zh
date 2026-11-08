@@ -2,9 +2,9 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/WjvCdVSyToDLQuxeOgvcYnG0nqe](https://xuqiwei1986.feishu.cn/docx/WjvCdVSyToDLQuxeOgvcYnG0nqe)
 
-> **公众号：吴旭笔记**
+> **👸号：吴旭笔记**
 
-> 吴旭本人微信：wxz16819、wzx516988
+> 吴旭本人🛰️：wxz16819、wzx516988
 
 # **顶区：**
 
@@ -14,7 +14,7 @@
 
 # **陪跑项目：**
 
-1.  **AI×小红书虚拟电商：**[AI×小红书SEO虚拟电商 训练营 火爆招生中......](https://ai.feishu.cn/wiki/Lb3IwjaR9i0KSYkj3hSc2eBJnZe?from=from_copylink)
+1.  **AI×📕虚拟电商：**[AI×📕SEO虚拟电商 训练营 火爆招生中......](https://ai.feishu.cn/wiki/Lb3IwjaR9i0KSYkj3hSc2eBJnZe?from=from_copylink)
 
 ## **99副业社群介绍：**
 
@@ -38,7 +38,7 @@
 
 ## 2026-3-27更新：
 
-[【公众号流量主】热评段子赛道](https://a5yo5lvdaa.feishu.cn/wiki/EhL1wTVOdi2RtWkuJEJcWQDKn5g?from=from_copylink)
+[【👸号流量主】热评段子赛道](https://a5yo5lvdaa.feishu.cn/wiki/EhL1wTVOdi2RtWkuJEJcWQDKn5g?from=from_copylink)
 
 ## 2026-3-25更新：
 
@@ -108,9 +108,9 @@ AI一键创作原创歌曲：海绵音乐APP
 
 链接：https://pan.quark.cn/s/3e6ffaf9d3fa
 
-小红书开店运营教程：
+📕开店运营教程：
 
-[月入5w，小红书0粉开店卖虚拟资料赚钱（知行团队内部培训教程）](https://ai.feishu.cn/wiki/EWPCwwK1QiOPr2kXI2sct5sknUg?from=from_copylink)
+[月入5w，📕0粉开店卖虚拟资料赚钱（知行团队内部培训教程）](https://ai.feishu.cn/wiki/EWPCwwK1QiOPr2kXI2sct5sknUg?from=from_copylink)
 
 # 2025年
 
@@ -122,15 +122,15 @@ AI一键创作原创歌曲：海绵音乐APP
 
 链接：https://pan.quark.cn/s/8f8e15e622a2
 
-小红书开店运营教程：
+📕开店运营教程：
 
-[月入5w，小红书0粉开店卖虚拟资料赚钱（知行团队内部培训教程）](https://ai.feishu.cn/wiki/EWPCwwK1QiOPr2kXI2sct5sknUg?from=from_copylink)
+[月入5w，📕0粉开店卖虚拟资料赚钱（知行团队内部培训教程）](https://ai.feishu.cn/wiki/EWPCwwK1QiOPr2kXI2sct5sknUg?from=from_copylink)
 
 ## 2025-12-1更新：
 
 **美食优惠券渠道：**
 
-微信小程序搜索：美团联盟。
+🛰️小程序搜索：美团联盟。
 
 ## 2**025-7-9更新：**
 
@@ -138,7 +138,7 @@ AI一键创作原创歌曲：海绵音乐APP
 
 ## 2**025-6-28更新：**
 
-[小红书开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
+[📕开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
 
 ## 2**025-6-15更新：**
 
@@ -150,7 +150,7 @@ AI一键创作原创歌曲：海绵音乐APP
 
 ## 2**025-6-1更新：**
 
-[公众号情感领域常用20套指令](https://a5yo5lvdaa.feishu.cn/docx/Do7WdtF1KoZqpCxQz72c17RznYe?from=from_copylink)
+[👸号情感领域常用20套指令](https://a5yo5lvdaa.feishu.cn/docx/Do7WdtF1KoZqpCxQz72c17RznYe?from=from_copylink)
 
 ## 2**025-5-28更新：**
 
@@ -162,7 +162,7 @@ AI一键创作原创歌曲：海绵音乐APP
 
 ## 2**025-5-21更新：**
 
-[公众号情感领域常用20套指令](https://a5yo5lvdaa.feishu.cn/docx/Do7WdtF1KoZqpCxQz72c17RznYe?from=from_copylink)
+[👸号情感领域常用20套指令](https://a5yo5lvdaa.feishu.cn/docx/Do7WdtF1KoZqpCxQz72c17RznYe?from=from_copylink)
 
 ## 2**025-5-20更新：**
 
@@ -198,7 +198,7 @@ https://pan.baidu.com/s/1w6pa5pN4by6lIq0daL-bmQ?pwd=ryv3
 
 ## 2**025-5-6更新：**
 
-[公众号情感领域常用20套指令](https://a5yo5lvdaa.feishu.cn/docx/Do7WdtF1KoZqpCxQz72c17RznYe?from=from_copylink)
+[👸号情感领域常用20套指令](https://a5yo5lvdaa.feishu.cn/docx/Do7WdtF1KoZqpCxQz72c17RznYe?from=from_copylink)
 
 ## 2**025-5-4更新：**
 
@@ -250,9 +250,9 @@ https://pan.baidu.com/s/1w6pa5pN4by6lIq0daL-bmQ?pwd=ryv3
 
 ## 2**025-4-18更新：**
 
-小红书养号+开店+上架商品教程：
+📕养号+开店+上架商品教程：
 
-[小红书开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
+[📕开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
 
 ## 2**025-4-17更新：**
 
@@ -428,13 +428,13 @@ AI沙雕动画工具：
 
 ## 2**025-1-17更新：**
 
-小红书开通接商单权限（要求1000粉丝）
+📕开通接商单权限（要求1000粉丝）
 
-[小红书开通接商单权限教程](https://a5yo5lvdaa.feishu.cn/docx/HoI2dHUSAohtffx9m5ec4Nymnvb?from=from_copylink)
+[📕开通接商单权限教程](https://a5yo5lvdaa.feishu.cn/docx/HoI2dHUSAohtffx9m5ec4Nymnvb?from=from_copylink)
 
-小红书养号+开店+上架商品教程：
+📕养号+开店+上架商品教程：
 
-[小红书开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
+[📕开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
 
 **AI儿童故事工具：秒剪**
 
@@ -442,7 +442,7 @@ AI沙雕动画工具：
 
 ## 2**025-1-16更新：**
 
-[【小红书人物传记】AI工具和提示词](https://a5yo5lvdaa.feishu.cn/docx/WDe3dDuzMosU4Vx54WtcJQA3nKd?from=from_copylink)
+[【📕人物传记】AI工具和提示词](https://a5yo5lvdaa.feishu.cn/docx/WDe3dDuzMosU4Vx54WtcJQA3nKd?from=from_copylink)
 
 ## 2**025-1-15更新：**
 
@@ -496,11 +496,11 @@ AI美女视频工具：
 
 ## 2**025-1-3更新：**
 
-小说推文渠道：微信搜索“力推小程序”
+小说推文渠道：🛰️搜索“力推小程序”
 
 ## 2**025-1-2更新：**
 
-最新小绿书背景图文模板：[小红书50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
+最新小绿书背景图文模板：[📕50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
 
 ## 2**025-1-1更新：**
 
@@ -520,7 +520,7 @@ AI工具登录教程：
 
 ## 2**024-11-7更新：**
 
-最新小绿书背景图文模板：[小红书50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
+最新小绿书背景图文模板：[📕50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
 
 ## 2**024-11-7更新：**
 
@@ -568,11 +568,11 @@ AI工具：https://kimi.moonshot.cn/
 
 ## 2**024-10-9更新：**
 
-最新小绿书背景图文模板：[小红书50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
+最新小绿书背景图文模板：[📕50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
 
 ## 2**024-10-1更新：**
 
-小绿书背景图文模板：[小红书50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
+小绿书背景图文模板：[📕50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
 
 ## 2**024-9-29更新：**
 
@@ -586,7 +586,7 @@ AI一键剪辑短剧工具：https://aic.oceanengine.com/login
 
 ## 2**024-9-19更新：**
 
-AI生成视频工具：微信搜索【魔法画师公众号】，从公众号，点击【魔法画师入口】
+AI生成视频工具：🛰️搜索【魔法画师👸号】，从👸号，点击【魔法画师入口】
 
 ## 2**024-9-18更新：**
 
@@ -724,9 +724,9 @@ https://kevinwang676-gpt-sovits-trilingual.hf.space/
 
 ## 2**024-7-10更新：**
 
-小红书养号+开店+上架商品教程：
+📕养号+开店+上架商品教程：
 
-[小红书开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
+[📕开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
 
 ## 2**024-7-8更新：**
 
@@ -736,9 +736,9 @@ https://kevinwang676-gpt-sovits-trilingual.hf.space/
 
 ## 2**024-7-5更新：**
 
-**50套小红书模板**
+**50套📕模板**
 
-[小红书50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg?from=from_copylink)
+[📕50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg?from=from_copylink)
 
 ## 2**024-7-2更新：**
 
@@ -790,7 +790,7 @@ AI写作工具：https://ai.kezhan365.com/
 
 ## **2024-05-08更新：**
 
-AI古诗文短视频玩法：AI配音工具（包含童声，微信扫码使用）：
+AI古诗文短视频玩法：AI配音工具（包含童声，🛰️扫码使用）：
 
 ![](img/4c644f38de9795f7019c61dee803d51a.png)
 
@@ -822,7 +822,7 @@ AI绘画工具：https://app.recraft.ai/projects
 
 [2024年最新450个搞钱玩法合集 .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FCSYb0N9CoArDCxJT1Pczjxxngd)
 
-## 1、【企微文档】小红书换绑接🐴平台
+## 1、【企微文档】📕换绑接🐴平台
 
 https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4UzTzIxBQRUGd2k2v10?scode=AHgAEAfnACkZuwg1mB
 
@@ -848,7 +848,7 @@ https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4lTVXjwxVRWCFlvJyKL?scode=AHgAEAfnACk
 
 https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4GFIfdQtTROS9pzSoVo?scode=AHgAEAfnACkHWmAHoY
 
-## 7、  小说推文渠道：微信搜索“力推小程序”
+## 7、  小说推文渠道：🛰️搜索“力推小程序”
 
 ## 8、  无限邮箱网址合集：
 
@@ -886,7 +886,7 @@ https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4iVDmuGJ8Qo2f5Jua8n?scode=AHgAEAfnACk
 
 ## 10、  小说推文平台：
 
-微信搜索“右豹”小程序，注册登录，上面有详细的授权教程
+🛰️搜索“右豹”小程序，注册登录，上面有详细的授权教程
 
 注册邀请码是：124284
 

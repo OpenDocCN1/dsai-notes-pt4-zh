@@ -16,6 +16,6 @@
 | DigitalPaper | https://www.sony.com/electronics/support/articles/S1F1823 |
 |  |  |
 | 飞书 | / |
-| 微信 | / |
+| 🛰️ | / |
 | 腾讯会议 | / |
 | openVPN | / |

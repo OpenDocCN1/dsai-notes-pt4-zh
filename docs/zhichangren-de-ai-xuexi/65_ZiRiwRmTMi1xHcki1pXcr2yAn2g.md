@@ -10,7 +10,7 @@
 
 发布日期：2025年9月2日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/v2O67-KY5m21eNjRanQGKA
 
@@ -22,7 +22,7 @@ https://mp.weixin.qq.com/s/v2O67-KY5m21eNjRanQGKA
 
 发布日期：2025年9月22日
 
-微信链接：https://mp.weixin.qq.com/s/1kovWF7i7mxSRS9brWueSA
+🛰️链接：https://mp.weixin.qq.com/s/1kovWF7i7mxSRS9brWueSA
 
 **归档理由：** 这两篇文章都明确标记为“微任务练习系列”，是您知识星球社群的专属内容，应归入此目录。
 
@@ -32,6 +32,6 @@ https://mp.weixin.qq.com/s/v2O67-KY5m21eNjRanQGKA
 
 发布日期：2025年9月21日
 
-微信链接：https://mp.weixin.qq.com/s/BKWVNCmb0IeoOmKu1sExmQ
+🛰️链接：https://mp.weixin.qq.com/s/BKWVNCmb0IeoOmKu1sExmQ
 
 **归档理由：** 这两篇文章都明确标记为“微任务练习系列”，是您知识星球社群的专属内容，应归入此目录。

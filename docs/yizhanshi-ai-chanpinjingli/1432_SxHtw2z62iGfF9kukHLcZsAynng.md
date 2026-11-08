@@ -76,6 +76,6 @@
 
 +   **线上学习：直播**学**习 + 答疑课+** 录播课 +陪跑带学，原价4980元，活动价3980元
 
-> 本期为活动价，之后恢复原价！30人一个班，详细咨询微信：AIGC0002
+> 本期为活动价，之后恢复原价！30人一个班，详细咨询🛰️：AIGC0002
 
 [AI产品经理特训班-学习大纲（148课时）](https://v11enp9ok1h.feishu.cn/wiki/OgZ2wWPpHiSfhBk2aGMcissNnbc?from=from_copylink)

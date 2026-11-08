@@ -28,7 +28,7 @@
 
 1.  特朗[普宣布](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621627&idx=3&sn=35e1c5ec1239d8f3506ec1c17e5b1b7e)英伟达 H200 可出口中国 (源链接)：要求 25%销售分成，预计为美国政府带来每年 100 亿美元收益。H200 性能是 H20 的 6-8 倍，单卡 3-4 万美元，8 卡服务器约 30 万美元
 
-1.  **豆包手机遭微信、淘宝等封禁** ([源链接](https://mp.weixin.qq.com/s?__biz=MjM5OTgyNTA0MQ==&mid=2650531971&idx=1&sn=42fc16681d797f1d576afd2eb54b755e))：豆包系统级整合路线遭遇挑战，智谱推出开源 AutoGLM 模型反击，AI 手机争霸战正式打响
+1.  **豆包手机遭🛰️、淘宝等封禁** ([源链接](https://mp.weixin.qq.com/s?__biz=MjM5OTgyNTA0MQ==&mid=2650531971&idx=1&sn=42fc16681d797f1d576afd2eb54b755e))：豆包系统级整合路线遭遇挑战，智谱推出开源 AutoGLM 模型反击，AI 手机争霸战正式打响
 
 1.  vi[vo ](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652160331&idx=1&sn=9810f4fd69cdf4d149d84238e9f60012)携手 Google Cloud 推出 OriginOS (源链接)：以 Gemini 模型共筑新一代 AI 智能设备，预计 2026 年中国 AI 手机出货量达 1.47 亿台占比 53%
 
@@ -42,7 +42,7 @@
 
 ### 🛠️ 今日新工具
 
-1.  **AutoGLM 开源模型** ([源链接](https://mp.weixin.qq.com/s?__biz=MjM5OTgyNTA0MQ==&mid=2650531971&idx=1&sn=42fc16681d797f1d576afd2eb54b755e))：支持微信、淘宝等 50+应用场景的 Phone Use 能力。通过 API 结合 AutoGLM 项目即可轻松启动本地 AI 手机 - 完全开源，MIT 许可证
+1.  **AutoGLM 开源模型** ([源链接](https://mp.weixin.qq.com/s?__biz=MjM5OTgyNTA0MQ==&mid=2650531971&idx=1&sn=42fc16681d797f1d576afd2eb54b755e))：支持🛰️、淘宝等 50+应用场景的 Phone Use 能力。通过 API 结合 AutoGLM 项目即可轻松启动本地 AI 手机 - 完全开源，MIT 许可证
 
 1.  Lo[var](https://mp.weixin.qq.com/s?__biz=MjM5ODU1MzQzOQ==&mid=2247495911&idx=1&sn=fa0b154d0cfebe99aea4fdff6e45d40f)t 设计 Agent 工具 (源链接)：首个真正的设计 Agent，支持文字编辑、精准编辑、元素拆分图层、一键 Mockup 贴场景等功能。ARR 达 8000 万美金 - 需 Google AI 会员
 

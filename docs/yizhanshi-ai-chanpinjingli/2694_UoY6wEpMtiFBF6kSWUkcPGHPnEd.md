@@ -92,7 +92,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/syp3xPp9k9jIXNPgSfrVKg)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/syp3xPp9k9jIXNPgSfrVKg)
 
 +   [Bloomberg原文链接](https://www.bloomberg.com/news/articles/2025-11-27/reliance-venture-to-build-11-billion-ai-data-center-in-india?srnd=phx-technology)
 
@@ -108,7 +108,7 @@
 
 +   套餐专为自媒体创作者和教育工作者定制，涵盖播客、TTS、图片、PPT、讲解视频等全功能。
 
-+   会员可加入VVIP微信群，与群友交流心得，不少玩法由群友贡献。
++   会员可加入VVIP🛰️群，与群友交流心得，不少玩法由群友贡献。
 
 +   购买链接为
 
@@ -122,7 +122,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/E_hKbf-f4IrKLjv_F71INA)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/E_hKbf-f4IrKLjv_F71INA)
 
 +   ListenHub Pro购买链接
 

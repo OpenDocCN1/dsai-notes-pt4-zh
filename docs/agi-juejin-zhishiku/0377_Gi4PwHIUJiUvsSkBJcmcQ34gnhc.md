@@ -190,4 +190,4 @@ PPO阶段共包含四各模型：actor模型、reference模型、reward模型和
 
 个人感觉Baichuan2的效果提高主要还是来自于预训练数据增多，但很多数据上的细节还是没有交代很清楚，毕竟这才是大模型的最核心。
 
-[**欢迎多多关注**](https://mp.weixin.qq.com/s?__biz=Mzg5MTU1NTE1OQ==&mid=2247486601&idx=1&sn=dd2f338675de1448981bcfbe1efa71e3&scene=21#wechat_redirect)公众号「NLP工作站」， 加入交流群 ，交个朋友吧，一起学习，一起进步！
+[**欢迎多多关注**](https://mp.weixin.qq.com/s?__biz=Mzg5MTU1NTE1OQ==&mid=2247486601&idx=1&sn=dd2f338675de1448981bcfbe1efa71e3&scene=21#wechat_redirect)👸号「NLP工作站」， 加入交流群 ，交个朋友吧，一起学习，一起进步！

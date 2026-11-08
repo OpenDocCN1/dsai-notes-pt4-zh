@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/E17zdV3oAosH0xxMOSOc0Iu4nCg](https://aigcreative.feishu.cn/docx/E17zdV3oAosH0xxMOSOc0Iu4nCg)
 
-> 来源：公众号：SFUP Design
+> 来源：👸号：SFUP Design
 
 ![](img/df3db8bfc3d8c0a0b1719c8a2b1870b2.png)
 

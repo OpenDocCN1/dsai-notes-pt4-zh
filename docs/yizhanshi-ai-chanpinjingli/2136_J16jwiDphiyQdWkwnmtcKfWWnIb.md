@@ -2,7 +2,7 @@
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/TtBsd5koioXDzbx7RRBcImc5nih](https://v11enp9ok1h.feishu.cn/docx/TtBsd5koioXDzbx7RRBcImc5nih)
 
-本文精选了 [EMNLP 2024 论文集](https://aclanthology.org/events/emnlp-2024/)中与复杂推理相关的、被引量最高的15篇论文*。后续我们还会继续陆**续发**布不同领域的 EMNLP 2024 高引盘点，在机智流公众号后台对话框回复“盘点”，加入顶会论文盘点交流群。
+本文精选了 [EMNLP 2024 论文集](https://aclanthology.org/events/emnlp-2024/)中与复杂推理相关的、被引量最高的15篇论文*。后续我们还会继续陆**续发**布不同领域的 EMNLP 2024 高引盘点，在机智流👸号后台对话框回复“盘点”，加入顶会论文盘点交流群。
 
 *注：引用数据来自谷歌学术，数据统计截止 2024 年 11 月 13 日
 

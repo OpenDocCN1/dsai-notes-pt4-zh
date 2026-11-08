@@ -4,7 +4,7 @@
 
 > 作者：还就可 | 深入LLM Agent应用开发
 
-> 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/wP41Le0uKQ7MzuZjOMY2QQ)qq.com/s/wP41Le0u...
+> 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/wP41Le0uKQ7MzuZjOMY2🐧)qq.com/s/wP41Le0u...
 
 想象一下，如果机器不仅能理解你的言语，还能像人类一样思考、感知并采取行动，这不就是电影照进现实，未来已来吗？诸如AutoGPT、BabyGPT、ChatDev、MetaGPT和AutoGen之类的创新应用，正生动展现了这一前沿领域的无限潜力。基于大语言模型（LLMs）Agent（后文也称代理），正以前所未有的方式重塑人工智能的边界。
 

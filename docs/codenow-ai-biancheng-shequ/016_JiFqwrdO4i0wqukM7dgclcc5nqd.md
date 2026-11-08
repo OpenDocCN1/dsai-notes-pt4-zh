@@ -511,13 +511,13 @@
 
 [15-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H0ATbpJK4ovmgrx1WHEcUOyWnDb)
 
-### 怼怼鹅~微信小程序/小游戏
+### 怼怼鹅~🛰️小程序/小游戏
 
 ![](img/a75bdceff132bf1c9cf83027ebe59dd9.png)
 
 [怼怼鹅.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JHBkb8VwuobXGWxsBYkcMqwVn2N)
 
-### Daily Task Pro~微信小程序
+### Daily Task Pro~🛰️小程序
 
 ![](img/822599f5cafec509bc1ef16e51258356.png)
 

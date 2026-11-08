@@ -46,10 +46,10 @@
 
 > ABC-request-sdk
 
-# 🏠 微信交流群
+# 🏠 🛰️交流群
 
 ![](img/b5cd6683fa9ebc359221062994f9ad4b.png)
 
-# 🏠 关注公众号
+# 🏠 关注👸号
 
 ![](img/23821281454d047f8d309f0ea60fbe0a.png)

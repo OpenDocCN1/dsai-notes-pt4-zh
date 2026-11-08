@@ -100,9 +100,9 @@ Act as an expert on  [action] the [object] in the [context]
 
 ![](img/eb0ed590a86d8044ec6df5aa3bae5935.png)
 
-在本公众号信息栏回复“预测”即可得到Prompt
+在本👸号信息栏回复“预测”即可得到Prompt
 
-这一类提示词，您也可以阅读以下两位大神公众号内的文章，干货很多。
+这一类提示词，您也可以阅读以下两位大神👸号内的文章，干货很多。
 
 云中江树老师是 LangGPT 项目的发起人算是最早在国内提结构化、模板化编写大模型 Prompt 范式的人之一。代表作《 构建高性能 Prompt 之路——结构化 Prompt 》
 
@@ -124,7 +124,7 @@ Act as prompt creator, Give me a prompt about [topic]
 作为一名Prompt工程师。作为一名经验丰富的知名提示词工程师，您擅长制作高质量的提示词，从ChatGPT中获得准确和相关的响应。我很高兴能利用你的专业知识来进一步提高我的提示。 目标:你的任务是生成一组关于如何优化以下提示的建议，以便从ChatGPT中生成更有效和相关的回复。 提示词:“xxxxxxx”
 ```
 
-不方便拷贝在本公众号信息栏回复“优化”即可得到英文Prompt
+不方便拷贝在本👸号信息栏回复“优化”即可得到英文Prompt
 
 3. One/Few Shot Prompt(单样本/少样本提示)
 
@@ -150,7 +150,7 @@ Act as linguist, Traslate these English sentences to French
 ## Examples:please write the answer to about what Milan Kundera considers the most importantsentence in his life in Chinese
 ```
 
-在本公众号信息栏回复“昆德拉”即可得到英文Prompt
+在本👸号信息栏回复“昆德拉”即可得到英文Prompt
 
 4. CoT(Chain of Thought,思维链)
 
@@ -205,7 +205,7 @@ Subject: [Subject]Level 1:Objective 1:Thought 1.1:Response 1.1:Thought 1.2:Respo
 
 可以看一下这篇文章《 伟大不能被计划？一条帮您反思计划的Prompt 》
 
-本公众号信息栏回复“反思”即可得到英文Prompt
+本👸号信息栏回复“反思”即可得到英文Prompt
 
 5. Self-Consistency COT（一致性思维链）
 

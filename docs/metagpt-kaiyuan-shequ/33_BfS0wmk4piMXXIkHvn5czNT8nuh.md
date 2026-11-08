@@ -32,7 +32,7 @@
 
 ### 背景
 
-> MetaGPT提供了Agent的开发能力，Agent可以协助我们解决日常的一些问题，其中一个应用场景就是我们可以让Agent为我们关注某些想关注的信息，当有我们关注的事件发生时，Agent获取信息并进行处理，然后通过一些如邮件、微信、discord等通知渠道将处理后的信息发送给我们。我们将这类Agent称为订阅智能体，这类智能体可以结合MetaGPT的PubSub模块运行。本文档通过一个OSS（Open Source Software）订阅智能体实现示例教大家如何使用MetaGPT实现一个订阅智能体
+> MetaGPT提供了Agent的开发能力，Agent可以协助我们解决日常的一些问题，其中一个应用场景就是我们可以让Agent为我们关注某些想关注的信息，当有我们关注的事件发生时，Agent获取信息并进行处理，然后通过一些如邮件、🛰️、discord等通知渠道将处理后的信息发送给我们。我们将这类Agent称为订阅智能体，这类智能体可以结合MetaGPT的PubSub模块运行。本文档通过一个OSS（Open Source Software）订阅智能体实现示例教大家如何使用MetaGPT实现一个订阅智能体
 
 ### 目标
 
@@ -42,7 +42,7 @@
 
 ### 系统介绍
 
-> 订阅智能体的实现主要有3个要素，分别是Role、Trigger、Callback，即智能体本身、触发器、数据回调。我们首先按要实现一个OSSWatcher的角色，OSS即Open source software，我们对OSS智能体定位是，帮我们关注并分析热门的开源项目，当有相关信息时将信息推送给我们；然后Trigger是指这个OSSWatcher的角色什么时候触发，我们可以是定时触发或者是某个网站有更新时触发；最后，Callback可以设置OSSWatcher角色运行生成的信息，我们可以将数据发送到微信或者discord
+> 订阅智能体的实现主要有3个要素，分别是Role、Trigger、Callback，即智能体本身、触发器、数据回调。我们首先按要实现一个OSSWatcher的角色，OSS即Open source software，我们对OSS智能体定位是，帮我们关注并分析热门的开源项目，当有相关信息时将信息推送给我们；然后Trigger是指这个OSSWatcher的角色什么时候触发，我们可以是定时触发或者是某个网站有更新时触发；最后，Callback可以设置OSSWatcher角色运行生成的信息，我们可以将数据发送到🛰️或者discord
 
 ### 实现效果
 
@@ -50,7 +50,7 @@
 
 ![](img/46eb297ebc7fa0abf8c4d91fbb8c7630.png)
 
-> 教程主要示范了如何用爬取并用MG相关能力将爬取的内容进行分析总结并部署到discord/微信上
+> 教程主要示范了如何用爬取并用MG相关能力将爬取的内容进行分析总结并部署到discord/🛰️上
 
 > 在跑通教程后学习者可以自己选择相关信源 reddit/推特/substack/huggingface 部署到飞书等平台上并考虑如何呈现富文本，并自己使用来获取AI相关资讯或者其他关系的消息，甚至你可以用来做自媒体内容自动发布的生产管线
 
@@ -84,7 +84,7 @@
 
 1.  [《MetaGPT智能体开发入门》FAQ 常见问题](https://deepwisdom.feishu.cn/docx/WFtJdRUsaosTx0x1JgacEK3Znge)于多个社群管理压力如果群内疑问没有被及时解答，将其同步到  全文评论中我们会一一解决
 
-1.  我们会将微信群中常见的问题放到[Faq 常见问题](https://deepwisdom.feishu.cn/docx/WFtJdRUsaosTx0x1JgacEK3Znge)
+1.  我们会将🛰️群中常见的问题放到[Faq 常见问题](https://deepwisdom.feishu.cn/docx/WFtJdRUsaosTx0x1JgacEK3Znge)
 
 建议：
 

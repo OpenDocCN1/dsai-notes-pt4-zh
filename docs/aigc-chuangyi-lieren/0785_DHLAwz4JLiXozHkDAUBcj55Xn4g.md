@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/UMrVdLXc1oxYL5xdQAWcWXGynkd](https://aigcreative.feishu.cn/docx/UMrVdLXc1oxYL5xdQAWcWXGynkd)
 
-> 公众号：AIGC创意猎人，收集整理。
+> 👸号：AIGC创意猎人，收集整理。
 
 # 关于Luma的介绍：
 

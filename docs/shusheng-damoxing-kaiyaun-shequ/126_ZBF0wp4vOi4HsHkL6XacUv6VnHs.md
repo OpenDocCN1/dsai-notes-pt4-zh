@@ -690,7 +690,7 @@ xtuner convert merge ./internlm2_5-1_8b-chat \
 
 ![](img/e24d4ead854d5f7744eefee451bd8180.png)
 
-1.  一定要邀请米佬，等同意 。如在 24 小时内没有同意邀请，请联系微信`小镇数字青年`
+1.  一定要邀请米佬，等同意 。如在 24 小时内没有同意邀请，请联系🛰️`小镇数字青年`
 
 ![](img/b74ce2a6324d4c9c90ed06a4dbcac1e9.png)
 

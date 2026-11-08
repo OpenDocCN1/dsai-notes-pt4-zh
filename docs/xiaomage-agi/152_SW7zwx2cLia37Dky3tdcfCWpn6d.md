@@ -152,7 +152,7 @@ Sora 能够生成提供图像和提示作为输入的视频。下面我们展示
 
 ![](img/fd4d94373f5cd683861ab79f5a48c3fa.png)
 
-[b1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J9UzbH52moDBPixUpBoc7yQQnuc)
+[b1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J9UzbH52moDBPixUpBoc7y🐧nuc)
 
 ![](img/6d12340d1f249935b5a48371598484f9.png)
 

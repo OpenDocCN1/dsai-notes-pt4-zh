@@ -88,7 +88,7 @@
 
 ![](img/b91ad867d70af01d35f81ffd0b7e9b42.png)
 
-[X2Twitter.com_6g9jjbrneiMQQKKr(1920p) (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UY8XbrFvvo5U7hxYsOscvcWNnzb)
+[X2Twitter.com_6g9jjbrneiM🐧KKr(1920p) (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UY8XbrFvvo5U7hxYsOscvcWNnzb)
 
 2024.7.12
 

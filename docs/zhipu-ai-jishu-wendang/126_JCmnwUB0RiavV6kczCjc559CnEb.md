@@ -1,6 +1,6 @@
 # 食用 · 提示词
 
-> 来源：[https://ai.feishu.cn/docx/XUQYdhfQQoV9qixqtYMcAWUUnZb](https://ai.feishu.cn/docx/XUQYdhfQQoV9qixqtYMcAWUUnZb)
+> 来源：[https://ai.feishu.cn/docx/XUQYdhf🐧oV9qixqtYMcAWUUnZb](https://ai.feishu.cn/docx/XUQYdhf🐧oV9qixqtYMcAWUUnZb)
 
 > 一个优秀的提示词，能更好的让GLM明白你的意思，让智能体更智能！
 

@@ -10,13 +10,13 @@
 
 +   **笔记工具：**[飞书文档](https://ghlf0s3q3l.feishu.cn/drive/home/)、[flomo](https://flomoapp.com/)
 
-+   **输入法：**[微信输入法](https://z.weixin.qq.com/)
++   **输入法：**[🛰️输入法](https://z.weixin.qq.com/)
 
 +   **密码管理：**[账号本子](https://uccmawei.com/account-box.html)
 
 +   **网盘：**[OneDrive](https://www.microsoft.com/zh-cn/microsoft-365/onedrive/online-cloud-storage)、[阿里云盘](https://www.aliyundrive.com/)、[夸克网盘](https://pan.quark.cn/)
 
-+   **电子书阅读：**[微信读书](https://weread.qq.com/#login)、[得到](https://www.dedao.cn/)
++   **电子书阅读：**[🛰️读书](https://weread.qq.com/#login)、[得到](https://www.dedao.cn/)
 
 +   **其它小工具：**[Eagle](https://eagle.cool/)、[Utools](https://www.u.tools/)、[PixPin](https://v2ex.com/t/989393#reply54)、[网易UU远程](https://uuyc.163.com/)
 
@@ -38,7 +38,7 @@ gemini 真好用，闲鱼找一下教育优惠，估计 20-30 块钱就可以搞
 
 +   **资源小狂人资源站🔥：**https://link3.cc/xiaokuangren
 
-腾讯元宝版的DeepSeek 速度快，可以联网，也有思考功能，很不错。而且腾讯自己的混元大模型可以搜索公众号的一些信息。现在有的时候偶尔用，又不想开梯子，就直接用元宝了，很方便。
+腾讯元宝版的DeepSeek 速度快，可以联网，也有思考功能，很不错。而且腾讯自己的混元大模型可以搜索👸号的一些信息。现在有的时候偶尔用，又不想开🪜，就直接用元宝了，很方便。
 
 # 20250616
 

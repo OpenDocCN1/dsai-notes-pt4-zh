@@ -16,9 +16,9 @@
 
 ![](img/9d8f740cae34abd515004d46a75bfd3a.png)
 
-公众号：通往 AGI 之路
+👸号：通往 AGI 之路
 
-[Bilibili](https://space.bilibili.com/259768893)｜[小红书](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)｜[Twitter](https://twitter.com/WaytoAGI)
+[Bilibili](https://space.bilibili.com/259768893)｜[📕](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)｜[Twitter](https://twitter.com/WaytoAGI)
 
 ## **🥳加入飞书知识问答**
 
@@ -278,7 +278,7 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 ---
 
-#   💬 飞书 & 微信交流群
+#   💬 飞书 & 🛰️交流群
 
 #### **说明：**
 
@@ -288,7 +288,7 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 1.  飞书群内置 AI 智能机器人，可以回复任何与 AI 相关的问题，欢迎加入。
 
-# 🏠加入WaytoAGI-填写后加入飞书/微信群
+# 🏠加入WaytoAGI-填写后加入飞书/🛰️群
 
 <https://waytoagi.feishu.cn/share/base/form/shrcnlIVMcuAn2jFHfJ2Bez7RWe?iframeFrom=docx&ccm_open=iframe>
 
@@ -344,7 +344,7 @@ Prompt 版块共建者
 
 「互联网的那点事」
 
-微博互联网观察家
+🧣互联网观察家
 
 ![](img/37b6efa37e21ec79a0b0644fcfa186ff.png)
 
@@ -410,7 +410,7 @@ AI 领域产品经理
 
 [Web3 天空之城](https://space.bilibili.com/351754674)
 
-推荐 B 站与微信公众号
+推荐 B 站与🛰️👸号
 
 高质量 AI 内容原创者
 
@@ -554,15 +554,15 @@ AI春晚导演
 
 ### 推荐布鲁姆分类法学习路径
 
-1.  **记忆**：先从[ AI 的历史](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbl1tOC3ZKbrcHVn&view=vewTtypUZc)、[基本术语](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbltvr7KExCt7Jpw&view=vewjxk9tDu)、[重要人物](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblLtN12KuvP5reO&view=vewuvGBXhd)、[方法和原理](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblolGx2mprs1EQz&view=vewx5ROYtl)等开始了解，看看[入门课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)
+1.  **记忆**：先从[ AI 的历史](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl1tOC3ZKbrcHVn&view=vewTtypUZc)、[基本术语](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbltvr7KExCt7Jpw&view=vewjxk9tDu)、[重要人物](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblLtN12KuvP5reO&view=vewuvGBXhd)、[方法和原理](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblolGx2mprs1EQz&view=vewx5ROYtl)等开始了解，看看[入门课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)
 
-1.  **理解**：进一步了解 AI 领域的[主要思想和概念](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblC69kVi8xZMQ4B&view=vewFgR7hhS)，将[精选 AI 网站](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblrU3QwceYkyu5Y&view=vewhpVxSzR)和[ APP 产品](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblLFKWXaBNu2RC8&view=vewDRCDZJH)都试一试
+1.  **理解**：进一步了解 AI 领域的[主要思想和概念](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblC69kVi8xZMQ4B&view=vewFgR7hhS)，将[精选 AI 网站](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblrU3QwceYkyu5Y&view=vewhpVxSzR)和[ APP 产品](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblLFKWXaBNu2RC8&view=vewDRCDZJH)都试一试
 
 1.  **应用**：深入[了解 Prompt](https://ywh1bkansf.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tbldSgFt2xNUDNAz&view=vewo2g2ktO)，选择适合自己的[ AI 对话](https://ywh1bkansf.feishu.cn/wiki/QddLw0teKi7nUCkDRIecskn3nuc)、[绘画](https://ywh1bkansf.feishu.cn/wiki/Q5ddwxfkMiVUZBkQXN7cgXf4nOb)和[语音](https://ywh1bkansf.feishu.cn/wiki/ZXPiw2OuLi2YsxkkmaLcPTyInrc)产品，每天都用它，并使用[它们来解决实际问题或提升效率](https://waytoagi.feishu.cn/wiki/A0Y0wpBOcig7HLkSFNcceTA6nwb)
 
 1.  **分析**：大量阅读[各类文章](https://ywh1bkansf.feishu.cn/wiki/YjJgwbKnriZBZ0kVn6Kc1gSKnsf?table=tblsQKR3a22uFqsp)、[视频](https://ywh1bkansf.feishu.cn/wiki/LEnvwwEy0iufT3k4kfVc8Ehenvf?table=tbllpoPWJn6MNOR6&view=vew68BlUHo)以及[行业报告](https://ywh1bkansf.feishu.cn/wiki/FnXcwGrwSimQxnkNo1kcJzPYn7f)，理解各知识之间的关系
 
-1.  **评价**：通过[各类课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)与[书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ)更深入学习，判断信息的价值、提出自己的观点和论证
+1.  **评价**：通过[各类课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)与[书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ)更深入学习，判断信息的价值、提出自己的观点和论证
 
 1.  **创造**：积极参与[社区共创项目](https://waytoagi.feishu.cn/wiki/KexVwLKhYiHm7bk2IL9cym0WnTb)，创造你自己的新想法或产品
 
@@ -572,25 +572,25 @@ AI春晚导演
 
 ### 0. 起点
 
-💾 人[工智能简史 ](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbl1tOC3ZKbrcHVn&view=vewTtypUZc)& A[I 绘画简史](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblbBhy4ig3JTr5z&view=vewTtypUZc)
+💾 人[工智能简史 ](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl1tOC3ZKbrcHVn&view=vewTtypUZc)& A[I 绘画简史](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblbBhy4ig3JTr5z&view=vewTtypUZc)
 
 📝 10 篇从 0 到 1 的文章
 
-🤔 1[0 篇深度文章](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblC69kVi8xZMQ4B&view=vewFgR7hhS)
+🤔 1[0 篇深度文章](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblC69kVi8xZMQ4B&view=vewFgR7hhS)
 
-🧑‍🏫 10[ 个重要人物 &](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblLtN12KuvP5reO&view=vewuvGBXhd) 10[0 位领军人物](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblPSIB8sJSwq8bb&view=vewuvGBXhd)
+🧑‍🏫 10[ 个重要人物 &](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblLtN12KuvP5reO&view=vewuvGBXhd) 10[0 位领军人物](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblPSIB8sJSwq8bb&view=vewuvGBXhd)
 
-👄 言[之有物 | 金句引用](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblnGZ55rkjJxQKJ&view=vewa05IP7l)
+👄 言[之有物 | 金句引用](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblnGZ55rkjJxQKJ&view=vewa05IP7l)
 
-🗃 8[0+名词解释](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbltvr7KExCt7Jpw&view=vewjxk9tDu)
+🗃 8[0+名词解释](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbltvr7KExCt7Jpw&view=vewjxk9tDu)
 
-📚 2[0 本 AI 中文书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ)
+📚 2[0 本 AI 中文书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ)
 
-📖 豆[瓣 9 分以上的英文书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblgNFDO4ySr9ks7&view=vewjfsOgyJ)
+📖 豆[瓣 9 分以上的英文书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblgNFDO4ySr9ks7&view=vewjfsOgyJ)
 
-🎬 豆[瓣 8 分以上的 AI 电影](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblB56vIgfZImxP2&view=vewUunvDn1)
+🎬 豆[瓣 8 分以上的 AI 电影](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblB56vIgfZImxP2&view=vewUunvDn1)
 
-🖼 一[图胜千言 | AI 好图分享 ](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblyh76bHrCi4PXq&view=vewUunvDn1)
+🖼 一[图胜千言 | AI 好图分享 ](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblyh76bHrCi4PXq&view=vewUunvDn1)
 
 ### 1. AI 入门系列
 
@@ -666,7 +666,7 @@ AI春晚导演
 
 ![](img/9663dd43939fa8c25b2d302e8f839a57.png)
 
-[小红书](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)
+[📕](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)
 
 AI 消息及时传递
 

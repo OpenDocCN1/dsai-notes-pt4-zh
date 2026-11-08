@@ -48,7 +48,7 @@ AGI 精选资源、项目， Agents 开源项目精选
 
 > https://github.com/PromptExpert/Trickle-On-WeChat
 
-在微信端使用类似Trickle的图片信息识别和提炼，并进行图片信息管理的功能，思路简介：https://mp.weixin.qq.com/s/Q9ubSQHhEgpn2Yf6ndoi5w
+在🛰️端使用类似Trickle的图片信息识别和提炼，并进行图片信息管理的功能，思路简介：https://mp.weixin.qq.com/s/Q9ubSQHhEgpn2Yf6ndoi5w
 
 ## AIGG(GPT 驱动的 AI 游戏)  (200+ ⭐)
 

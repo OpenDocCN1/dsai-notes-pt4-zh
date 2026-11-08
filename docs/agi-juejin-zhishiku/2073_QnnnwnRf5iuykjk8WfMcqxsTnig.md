@@ -10,7 +10,7 @@
 
 1. 谷歌[发布](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652652121&idx=1&sn=220d80e4903028d82453a65ebf873e78) Transformer 继任者 Titans 架构 （链接）：8 年来首次重大突破，融合 RNN 速度与 Transformer 性能，推理能力达 GPT-5 水平，支持 200 万 token 上下文
 
-2. 豆包[手机](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647677649&idx=1&sn=c8f08e0ec7ec477dfa0d22fb6b27d8bc)从 3 万台售罄到全面封禁 （链接）：微信、支付宝、淘宝等主流 APP 纷纷封禁豆包手机登录，引发 AI 入口争夺战和行业边界争议
+2. 豆包[手机](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647677649&idx=1&sn=c8f08e0ec7ec477dfa0d22fb6b27d8bc)从 3 万台售罄到全面封禁 （链接）：🛰️、支付宝、淘宝等主流 APP 纷纷封禁豆包手机登录，引发 AI 入口争夺战和行业边界争议
 
 3. 斯坦[福 ](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716169&idx=1&sn=a20fd6811e1e73a17fca12afbd2b62c5)CS146S 课程禁止手写代码 （链接）：斯坦福新课程要求学生必须依赖 AI 完成所有开发，附带对话记录核查，重新定义编程教育
 

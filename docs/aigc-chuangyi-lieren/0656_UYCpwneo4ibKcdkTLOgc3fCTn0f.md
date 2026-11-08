@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/YDNbdipWqo2g2vxKqTdc6nL7nle](https://aigcreative.feishu.cn/docx/YDNbdipWqo2g2vxKqTdc6nL7nle)
 
-> 分享｜张涛（个人公众号：潜云思绪）编译｜Yinan, 书航审稿｜书航
+> 分享｜张涛（个人👸号：潜云思绪）编译｜Yinan, 书航审稿｜书航
 
 > 链接：https://mp.weixin.qq.com/s/G8u0OUIW4eCuja-0qgzAEQ
 
@@ -208,7 +208,7 @@ Openpose是一个开源的项目，规范一套描述人体结构动作的的，
 
 因为后面跑的 8 步是在一个分辨率更高，更占显存的里面去跑。有一种加速的创作方式，就是我们先在低分辨率先跑前面几步，其实那个图像结构基本上也就那样，然后我们再去跑后面几步，弥补细节。
 
-还有其他一些控制生成的inpaint（把图像圈出来修改）、outpaint（扩图），元旦后还有小红书的 InstantID 和腾讯的Photomaker。
+还有其他一些控制生成的inpaint（把图像圈出来修改）、outpaint（扩图），元旦后还有📕的 InstantID 和腾讯的Photomaker。
 
 张吕敏去年发了 ControlNet 之后他就没**搞其他事了，沉寂了一年，然后最近发了**那个 layer diffusion。范式级别创新的研究员永远在做范式级别创新。在生图的基础上，他可以直接把那个生出来的图把图层给你切好，就是在 Photoshop 里面一样，分图层。
 

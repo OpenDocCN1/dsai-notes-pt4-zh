@@ -46,7 +46,7 @@
 
 > 涵盖120份[头等舱研报](https://aiyanxishe.feishu.cn/wiki/ZjmkwosuPiiCZekhOOLc9qPxnyb?from=from_copylink)、Crypto军火库Web3学习知识库、web3韭菜日记、投机实验室、熊猫学社合集、科学家视频、零X干货铺会员内容合集、提阿非罗、和谐商学院、RTA-academy、Ansontan二级交易实战等
 
-> 2、**2个微信群**
+> 2、**2个🛰️群**
 
 Crypto狙击手禁言群（转发付费社区消息）
 

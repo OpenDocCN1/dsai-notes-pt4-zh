@@ -22,7 +22,7 @@
 
 > AI艺术与创作引领者，推动AI创作在中国区的发展，启发了众多创作者加入AI艺术领域。近期专注提示词设计，推动创作效率和表现力的提升。
 
-> 公众号：AI替代人类
+> 👸号：AI替代人类
 
 拆解GPT-5的时候它多次提醒我真实系统提示里会使用动词驱动风格，比如：Analyze input → Generate variations → Evaluate candidates → Select optimal → Deliver output。
 

@@ -1,4 +1,4 @@
-# 小红书自动发布助手！用本地Cherry-Studio客户端搭建
+# 📕自动发布助手！用本地Cherry-Studio客户端搭建
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/VKWXdIB5NoMDbMxI9MfcIxUVn9u](https://v11enp9ok1h.feishu.cn/docx/VKWXdIB5NoMDbMxI9MfcIxUVn9u)
 
@@ -92,7 +92,7 @@ env phone=YOUR_PHONE_NUMBER json_path=PATH_TO_STORE_YOUR_COOKIES uvx xhs_mcp_ser
 }
 ```
 
-# 让AI自动发布小红书笔记
+# 让AI自动发布📕笔记
 
 ## step1：打开命令行，运行以下命令安装环境
 
@@ -106,9 +106,9 @@ pip install xhs-mcp-server
 npx @puppeteer/browsers install chromedriver@134.0.6998.166
 ```
 
-## step2：登陆小红书账号（只需1次）
+## step2：登陆📕账号（只需1次）
 
-+   在终端运行以下命令，后台会自动弹出浏览器，并打开小红书创作平台的登陆页面，自动发送验证码。
++   在终端运行以下命令，后台会自动弹出浏览器，并打开📕创作平台的登陆页面，自动发送验证码。
 
 ⚠️将YOUR_PHONE_NUMBER改成自己的手机号
 
@@ -155,9 +155,9 @@ npx @modelcontextprotocol/inspector -e phone=YOUR_PHONE_NUMBER -e json_path=PATH
 
 ![](img/6c3e1a054c2ce357458dab8acdf246cc.png)
 
-## 让Qwen3帮我们生成文案，自动发布小红书
+## 让Qwen3帮我们生成文案，自动发布📕
 
-在客户端上配置小红书发布助手，借助Qwen3-235B模型的强大能力来帮我们生成标题和正文的文案。
+在客户端上配置📕发布助手，借助Qwen3-235B模型的强大能力来帮我们生成标题和正文的文案。
 
 Qwen3-235B-A22B模型已在魔搭部署为API服务，可通过API-Inference免费调用。
 
@@ -167,9 +167,9 @@ Qwen3-235B-A22B模型已在魔搭部署为API服务，可通过API-Inference免�
 
 ![](img/ea174615c862b8ad07fa20cf618af4cf.png)
 
-## 再在MCP服务器里配置小红书发布MCP
+## 再在MCP服务器里配置📕发布MCP
 
-小红书MCP魔搭地址：[h](https://www.modelscope.cn/mcp/servers/@XGenerationLab/xhs_mcp_server)ttps://www.modelscope.cn/mcp/servers/@XGenerationLab/xhs_mcp_server
+📕MCP魔搭地址：[h](https://www.modelscope.cn/mcp/servers/@XGenerationLab/xhs_mcp_server)ttps://www.modelscope.cn/mcp/servers/@XGenerationLab/xhs_mcp_server
 
 ```
 &quot;xhs-mcp-server&quot;: {
@@ -190,7 +190,7 @@ Qwen3-235B-A22B模型已在魔搭部署为API服务，可通过API-Inference免�
 
 ⚠️同样需要设置YOUR_PHONE_NUMBER和PATH_TO_STORE_YOUR_COOKIES，后者请用上面登陆时的cookies的目录，比如'/Users/xxx/'
 
-然后让它写个关于小红书发布MCP的简短介绍文案：
+然后让它写个关于📕发布MCP的简短介绍文案：
 
 ![](img/ce3af9b9137e337a9e55f1c8653f2662.png)
 
@@ -206,7 +206,7 @@ Qwen3-235B-A22B模型已在魔搭部署为API服务，可通过API-Inference免�
 
 ![](img/325d41d740a294f11ef2c3f5e48ddb93.png)
 
-## 让AI帮我们生成图片或视频，自动发布小红书
+## 让AI帮我们生成图片或视频，自动发布📕
 
 在Cherry Studio MCP服务器里配置文生图MCP-server，魔搭上目前有几个支持生图的MCP，比如ModelScope-Image-Generation-MCP和MiniMax-MCP，两者都在魔搭的云端资源上部署，可以支持SSE的方式调用。值得提一句，前者是免费的！
 

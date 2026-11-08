@@ -198,7 +198,7 @@ Update：2025.04.14
 
 +   [ZJUBCA Twitter](https://twitter.com/ZJUBCA)
 
-+   同名公众号
++   同名👸号
 
 ### 「Prompts Lego」
 
@@ -466,10 +466,10 @@ Demo：https://www.youtube.com/watch?v=6WEplUflEKI
 | --- | --- | --- |
 | BiliBili/Youtube：西西弗斯没问题 | +   [Bilibili](https://space.bilibili.com/277830177) 待更新；[Youtube](https://www.youtube.com/channel/UCwoRlsYEg85MAK9_O-qPTiw) |  |
 | **Github：**RyanFcr | +   [GitHub](https://github.com/RyanFcr/)：Coding |  |
-| **小红书：Ryan🦄.eth** | +   [小红书](https://www.xiaohongshu.com/user/profile/6088b2430000000001008c95?xhsshare=CopyLink&amp;appuid=6088b2430000000001008c95&amp;apptime=1711694226)；[领英](https://www.linkedin.com/in/chengrui-f-ab4541266/) |  |
-| 公众号：Ryan.eth | +   公众号搜索 Ryan.eth |  |
+| **📕：Ryan🦄.eth** | +   [📕](https://www.xiaohongshu.com/user/profile/6088b2430000000001008c95?xhsshare=CopyLink&amp;appuid=6088b2430000000001008c95&amp;apptime=1711694226)；[领英](https://www.linkedin.com/in/chengrui-f-ab4541266/) |  |
+| 👸号：Ryan.eth | +   👸号搜索 Ryan.eth |  |
 
-+   想联系我的话，可以通过我的飞书/微信～
++   想联系我的话，可以通过我的飞书/🛰️～
 
 ![](img/cffa1ad688c30789bb197ddd0a8642cb.png)
 

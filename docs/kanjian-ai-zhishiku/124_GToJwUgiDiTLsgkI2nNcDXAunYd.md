@@ -2,7 +2,7 @@
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/JGG4d6Eupo84qAxWf5RcFHcznUe](https://jlqyxzzvbk.feishu.cn/docx/JGG4d6Eupo84qAxWf5RcFHcznUe)
 
-！！！请按照如下文档步骤进行安装，如果有问题请优先咨询客服微信 seeai01或13858104569
+！！！请按照如下文档步骤进行安装，如果有问题请优先咨询客服🛰️ seeai01或13858104569
 
 需求比较大，请大家耐心等待，只要下单的用户，一定帮您完成本地安装部署。
 

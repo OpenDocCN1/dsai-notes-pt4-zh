@@ -342,4 +342,4 @@ def constrain(input_prefix):
 
 +   **👇**关注 NLP PaperWeekly ， 对话框输入“ RICHES ”获取Paper ， 快关注吧 👇
 
-**添加微信请备注**昵称+公司/学校+研究方向，否则不予通过
+**添加🛰️请备注**昵称+公司/学校+研究方向，否则不予通过

@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/VXWKdoWjUor1k2xh97mc8p46nGh](https://aigcreative.feishu.cn/docx/VXWKdoWjUor1k2xh97mc8p46nGh)
 
-> 来源：公众号-AI艺术家
+> 来源：👸号-AI艺术家
 
 > 原文链接：https://mp.weixin.qq.com/s/xI8NqeYfRE78k9kU1b_8TA
 

@@ -155,7 +155,7 @@ CC默认模型是Claude，但我相信应该没几个人搞得定Anthropic的API
 
 订阅链接：
 
-https://www.bigmodel.cn/glm-coding?ic=NCUSKSTEQQ
+https://www.bigmodel.cn/glm-coding?ic=NCUSKSTE🐧
 
 现在， **API url、key **和 **model **都有了，就可以进行模型配置了。
 
@@ -432,7 +432,7 @@ claude mcp add chrome-devtools npx chrome-devtools-mcp@latest
 
 我们随便跑一个例子，来看看。
 
-作为博主，会经常分析自己的数据，但你知道的，公众号后台的数据分析很拉。基本都要自己把数据下载，再去用AI进行分析。
+作为博主，会经常分析自己的数据，但你知道的，👸号后台的数据分析很拉。基本都要自己把数据下载，再去用AI进行分析。
 
 但这个数据下载，如果是人工来统计，非常的耗时耗力。现在，可以直接让CC+chrome devtools mcp来完成了。
 

@@ -1,4 +1,4 @@
-# Prompts - html 生成小红书封面
+# Prompts - html 生成📕封面
 
 > 来源：[https://leonzhang.feishu.cn/docx/PaRjdLSdjogsWMx5O02cRu5tnje](https://leonzhang.feishu.cn/docx/PaRjdLSdjogsWMx5O02cRu5tnje)
 
@@ -77,7 +77,7 @@
 
 ## 生成封面图
 
-### 小红书封面
+### 📕封面
 
 ```
 # 小红书封面生成提示词
@@ -121,7 +121,7 @@
 | ![](img/186e756faac69904bf279acb8f1a1fcf.png) |
 | --- |
 
-### 公众号封面
+### 👸号封面
 
 ```
 # 公众号封面提示词
@@ -417,9 +417,9 @@ Tailwind CSS: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.1
 
 ### 相关
 
-1.  《归藏｜一套提示词实现小红书、公众号封面自由，Deepseek V3 也能用》：https://mp.weixin.qq.com/s/OFCgFrXNQgIT2ho3V-4Oag
+1.  《归藏｜一套提示词实现📕、👸号封面自由，Deepseek V3 也能用》：https://mp.weixin.qq.com/s/OFCgFrXNQgIT2ho3V-4Oag
 
-1.  [小红书&公众号封面风格提示词收集-歸藏](https://go1coya2a7.feishu.cn/base/DY4wbU9U6a1rESsO2B2cfMfvnme?table=tblb6DP0kh9rW8Dc&view=vewsmtYzhn)
+1.  [📕&👸号封面风格提示词收集-歸藏](https://go1coya2a7.feishu.cn/base/DY4wbU9U6a1rESsO2B2cfMfvnme?table=tblb6DP0kh9rW8Dc&view=vewsmtYzhn)
 
 1.  《《归藏｜为了让大家一键生成更漂亮的可视化网页，我写了个工具！》https://mp.weixin.qq.com/s/tafopd82apfEtCk2DXU0sg
 

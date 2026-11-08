@@ -6,7 +6,7 @@
 
 > 📃 作者介绍：目前就职于金融银行AI部门，资深解决方案架构师。
 
-> 🛖 公众号：AIWithGary
+> 🛖 👸号：AIWithGary
 
 > ⏰ 收录时间：2024-05-27 11:20:58 (UTC+8)
 
@@ -348,7 +348,7 @@ print(f&quot;input words embedding with positional info: {x}&quot;)
 
 通过本文的学习，相信朋友们能够对Transformer模型的输入有一个清晰的认识，并能够自己动手实现相关的预处理步骤；为进一步理解Transformer模型的其他部分，如编码器和解码器，奠定坚实的基础。
 
-点击关注公众号👇
+点击关注👸号👇
 
 感谢您阅读完
 
@@ -368,7 +368,7 @@ print(f&quot;input words embedding with positional info: {x}&quot;)
 
 +   [第](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484353&idx=1&sn=452b5e450b9eba799ba9b024099a2e87&chksm=fd61758cca16fc9aab3f99af1ce9662f1e029799f90e9f5fc30feff2a038bbca9a9c5298c47b&scene=21#wechat_redirect)三篇：要真正入门AI，OpenAI的官方Prompt工程指南肯定还不够，您必须了解的强大方法论和框架！！！
 
-公众号回复口令，领取资料，一起学习吧！🏃
+👸号回复口令，领取资料，一起学习吧！🏃
 
 “ 1 ”：领取开源书籍《动手实战人工智能》
 

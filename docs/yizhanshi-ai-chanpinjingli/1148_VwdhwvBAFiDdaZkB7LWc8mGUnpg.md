@@ -1,8 +1,8 @@
-# 小红书怎么利用LLM做推荐系统的
+# 📕怎么利用LLM做推荐系统的
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/WAiKdGUNyozWLxx76YMcKpgqnNg](https://v11enp9ok1h.feishu.cn/docx/WAiKdGUNyozWLxx76YMcKpgqnNg)
 
-> **本文介绍了****大语言****模型在小红书笔记推**荐场景下的落地应用，主要是围绕如何利用LLM的表征能力来生成更适用于i2i召回的文本embedding，思路简单，落地也容易，个人觉得实践价值非常高，值得学习。
+> **本文介绍了****大语言****模型在📕笔记推**荐场景下的落地应用，主要是围绕如何利用LLM的表征能力来生成更适用于i2i召回的文本embedding，思路简单，落地也容易，个人觉得实践价值非常高，值得学习。
 
 ## 方法介绍
 
@@ -102,7 +102,7 @@
 
 ![](img/0c3e656294301d57d439ef15012c6933.png)
 
-顺[便说一](https://zhida.zhihu.com/search?q=%E4%BA%A4%E5%8F%89%E7%86%B5&zhida_source=entity&is_preview=1)下，这个思路其实和小红书之前发的另一篇论文提到的CB2CF其实是一脉相承的，只不过另外一篇同时用了文本和图像特征，损失函数用的交叉熵。
+顺[便说一](https://zhida.zhihu.com/search?q=%E4%BA%A4%E5%8F%89%E7%86%B5&zhida_source=entity&is_preview=1)下，这个思路其实和📕之前发的另一篇论文提到的CB2CF其实是一脉相承的，只不过另外一篇同时用了文本和图像特征，损失函数用的交叉熵。
 
 ### 工作3：联合建模以上两项任务提高Embedding质量
 

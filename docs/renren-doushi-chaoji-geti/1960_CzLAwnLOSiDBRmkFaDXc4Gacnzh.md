@@ -26,7 +26,7 @@
 
 ![](img/66ea18bf77c965b108cf9bb9b4dff123.png)
 
-# 📗微信讨论社群
+# 📗🛰️讨论社群
 
 ![](img/a3f8be1c25c120bc4b37bc22f19eefe3.png)
 

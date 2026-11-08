@@ -26,7 +26,7 @@ X（Twitter）上，AI 圈 10w+ 关注大V橘子兄这么评价：
 
 所以，对于MCP技术，不得不看，不得不学，一起积极拥抱。
 
-下面是群内交流碰撞、整理的内容。想加群，可加我微信: vista8，备注MCP
+下面是群内交流碰撞、整理的内容。想加群，可加我🛰️: vista8，备注MCP
 
 ## **一、什么是MCP？**
 
@@ -291,7 +291,7 @@ MCP 终极指南： guangzhengli.com/blog/zh/mod… [20]
 
 1.  公文写作AI助手 [shinbun.news ](https://link.juejin.cn/?target=https%3A%2F%2Fshinbun.news)[28]
 
-1.  飞书文档转公众号 feishu2wx.chengfeng.me [29]
+1.  飞书文档转👸号 feishu2wx.chengfeng.me [29]
 
 1.  AI换脸工具 [30]
 

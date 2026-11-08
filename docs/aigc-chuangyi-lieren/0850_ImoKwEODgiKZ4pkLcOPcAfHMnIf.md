@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/XcxqnOGHBKuo4YdVrNmvcA)qq.com/s/XcxqnOGH...
 
-> 公众号：闲聊AI的阿布
+> 👸号：闲聊AI的阿布
 
 # **前言**
 

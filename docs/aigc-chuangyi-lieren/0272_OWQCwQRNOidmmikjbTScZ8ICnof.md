@@ -4,7 +4,7 @@
 
 > 链接: https://mp.weixin.qq.com/s/oueGWJs5ZULddo9PDizh5g
 
-> 作者：云舒     公众号：云舒的AI实践笔记
+> 作者：云舒     👸号：云舒的AI实践笔记
 
 最近一周在忙着用Cursor重构“提示词管理助手”的架构，为下一个版本大升级做准备，让AI写了N多的代码，踩了无数的坑。
 

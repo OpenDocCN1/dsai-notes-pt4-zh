@@ -108,7 +108,7 @@ https://x.com/maximelabonne/status/1775095198898422072?s=20
 
 AutoQuant 是我之前的 AutoGGUF notebook (https://colab.research.google.com/drive/1P646NEg33BZy4BfLDNpTz0V0lwIU3CHu) 的进化版。
 
-它允许你以五种不同的格式量化你的模型:GGUF、GPTQ、EXL2、AWQ 和 HQQ。
+它允许你以五种不同的格式量化你的模型:GGUF、GPTQ、EXL2、AWQ 和 H🐧。
 
 💻 AutoQuant:https://colab.research.google.com/drive/1b6nqC7UZVt8bx4MksX7s656GXPM-eWw4?usp=sharing
 
@@ -512,7 +512,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

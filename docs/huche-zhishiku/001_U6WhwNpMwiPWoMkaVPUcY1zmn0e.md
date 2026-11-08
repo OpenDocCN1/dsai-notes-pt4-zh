@@ -12,7 +12,7 @@
 
 ---
 
-# 胡扯社群（微信）
+# 胡扯社群（🛰️）
 
 胡扯社群包括「胡扯漫剧」、[「胡扯游戏」](https://huchegames.feishu.cn/wiki/Ea9mwwMgliqy4fk7At3cvaPgndW)、[「胡扯行业」](https://huchegames.feishu.cn/wiki/CIsLwWc5Bi9h46kL21HcdU6ynkf)、[「胡扯AI」](https://huchegames.feishu.cn/wiki/MCqXw959OiHOsRkHQP2cnC23nqd)三类社群，请先确定要加入哪个社群。
 
@@ -20,7 +20,7 @@
 
 ## 胡扯漫剧
 
-胡扯漫剧初创期，欢迎关注公众号，直接扫码进群。若已满，可加曾老师微信入群。（微信参考下方内容）
+胡扯漫剧初创期，欢迎关注👸号，直接扫码进群。若已满，可加曾老师🛰️入群。（🛰️参考下方内容）
 
 ![](img/1f5837a85164e64070b22d0e499fa915.png)
 

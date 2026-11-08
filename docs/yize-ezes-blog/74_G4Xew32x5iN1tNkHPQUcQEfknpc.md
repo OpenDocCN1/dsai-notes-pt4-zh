@@ -174,7 +174,7 @@ AI 应用设计，应当花更多的精力去思考 AI 系统“输入-输出”
 
 > 自从 Claude 3.5 sonnet 更新到新版后，增强了视觉理解与编程质量，词生卡效果已经完美进化到下一个 Level（当然，有时还是需要“抽卡”）
 
-### 用 Claude 画公众号封面
+### 用 Claude 画👸号封面
 
 ```
 // 作者：一泽Eze
@@ -253,7 +253,7 @@ AI 应用设计，应当花更多的精力去思考 AI 系统“输入-输出”
 
 ![](img/9225fdda05beb3ac93c1538f01e100f1.png)
 
-### 用 Claude 绘制微信 UI
+### 用 Claude 绘制🛰️ UI
 
 ![](img/acdfb4711e8f60090a6349064bff8319.png)
 
@@ -351,10 +351,10 @@ AI 应用设计，应当花更多的精力去思考 AI 系统“输入-输出”
 
 > 欢迎通过以下方式交流：
 
-+   微信：eze_is
++   🛰️：eze_is
 
 +   即刻：@一泽Eze
 
-+   公众号：评论 / 后台留言
++   👸号：评论 / 后台留言
 
 <https://chatmemo.feishu.cn/sync/OXhxdlqqcsuEkObLUgsceuRinef>

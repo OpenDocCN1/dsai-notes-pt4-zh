@@ -202,7 +202,7 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 ![](img/63063237924c603a66b28db775e107f9.png)
 
-[少年李清照.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hs1TbQQusoCByrxMQ3gco2Aan7g)
+[少年李清照.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hs1Tb🐧usoCByrxMQ3gco2Aan7g)
 
 ![](img/49e57c831131c57fb4eb7375ec46b3a5.png)
 
@@ -519,7 +519,7 @@ Nano Banana 卡通手办
 
 ![](img/8d4da11316dfbfc46ec8bcb2b816d57b.png)
 
-微信扫码加入 AI 智能体商业化合伙人
+🛰️扫码加入 AI 智能体商业化合伙人
 
 ↓↓↓
 
@@ -545,7 +545,7 @@ Nano Banana 卡通手办
 
 # 智能体学习交流社群
 
-1.持续关注并更新** A**I 智能体的相**关**资讯动态，研究报告，赚钱案例，常见问题，已建立社群聊聊 AI 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国微信 ID：zyg90s（备注：AI），已经在社群内的无需重复加入。
+1.持续关注并更新** A**I 智能体的相**关**资讯动态，研究报告，赚钱案例，常见问题，已建立社群聊聊 AI 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备注：AI），已经在社群内的无需重复加入。
 
 2.**关于文档负责人大国**：7 年老运营，互联网流量观察家，曾就职于互联网大厂，现研究 AI 实战应用，努力成为最懂 AI 的运营人。
 
@@ -557,7 +557,7 @@ Nano Banana 卡通手办
 
 ![](img/2fbf1a6dc253dbadc42ffba0128dc6fa.png)
 
-**微信入群渠道**
+**🛰️入群渠道**
 
 进群或者加好友了解更多 AI 智能体实战案例
 

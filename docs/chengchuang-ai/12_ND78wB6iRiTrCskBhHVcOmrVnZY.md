@@ -354,7 +354,7 @@ AIGC（人工智能生成内容）平台 Anthropic 宣布再次获得 3 亿美�
 
 1.  关于 AI 的 900+ 个项目，一口气看完【下】
 
-1.  [「用 ChatGPT 搞钱年入百万！」各路](https://mp.weixin.qq.com/s/QlrpZ_tpue_EnhelwLfAcQ)博主发布生财之道，网友回呛：答辩的搬运工
+1.  [「用 ChatGPT 搞钱年入百万！」各路](https://mp.weixin.qq.com/s/QlrpZ_tpue_EnhelwLfAcQ)博主发布赚钱之道，网友回呛：答辩的搬运工
 
 1.  [注册 200 个账号，卖 5 万一套](https://mp.weixin.qq.com/s/xmZAYix3aDdMVQ4N2LiwZg)的系统，那些靠 ChatGPT 赚钱的人
 
@@ -366,7 +366,7 @@ AIGC（人工智能生成内容）平台 Anthropic 宣布再次获得 3 亿美�
 
 ## **【****ChatGPT**** 技能课】**
 
-微博职场官方开始投放 ChatGPT 技能课，可以预见，在未来几个月，各种 ChatGPT 的应用课会层出不穷
+🧣职场官方开始投放 ChatGPT 技能课，可以预见，在未来几个月，各种 ChatGPT 的应用课会层出不穷
 
 除了 ChatGPT 基础课，可以结合行业开发更加细化的垂直细分课程。
 
@@ -374,11 +374,11 @@ AIGC（人工智能生成内容）平台 Anthropic 宣布再次获得 3 亿美�
 
 ## 【批量训练 ChatGPT】
 
-批量训练 chatGPT 机器人，用 mj 制作美女图当做头像，通过 API 接入微信并制作小程序，批量管理账号，留两个人进行运营管理，遇到 chatGPT 解决不了的问题可以由人工介入解决。
+批量训练 chatGPT 机器人，用 mj 制作美女图当做头像，通过 API 接入🛰️并制作小程序，批量管理账号，留两个人进行运营管理，遇到 chatGPT 解决不了的问题可以由人工介入解决。
 
-## 【ChatGPT 小红书账号】
+## 【ChatGPT 📕账号】
 
-专门分享 chatgpt 问答的小红书号，三天达到千粉。
+专门分享 chatgpt 问答的📕号，三天达到千粉。
 
 ![](img/a8a5687fdc31de0e6d94f6071d311402.png)
 
@@ -412,7 +412,7 @@ AI 绘图+chatGPT 文案生成语音+剪映合成视频，可以推小说推文�
 
 ## ChatGPT 聊天导出工具
 
-ChatGPT 聊天记录丢失，就像微信聊天记录丢失一样痛苦，养成定期保存的习惯，可以看看下面这个工具。
+ChatGPT 聊天记录丢失，就像🛰️聊天记录丢失一样痛苦，养成定期保存的习惯，可以看看下面这个工具。
 
 **传送门：**[https://github.com/pion](https://github.com/pionxzh/chatgpt-exporter)xzh/chatgpt-exporter
 
@@ -472,7 +472,7 @@ https://newzone.top/chatgpt/
 
 2.
 
-开启魔法上网模式或者使用张良计；
+开启🪜模式或者使用张良计；
 
 3.
 
@@ -582,7 +582,7 @@ https://newzone.top/chatgpt/
 
 **类似 ****AI**** 工具集合推荐：**https://www.futurepedia.io/
 
-## 微信聊天的智能应答机器人 ChatGPT for Wechat
+## 🛰️聊天的智能应答机器人 ChatGPT for Wechat
 
 ![](img/e1a0e54d886f71a65ac77a5eb8f17093.png)
 
@@ -704,29 +704,29 @@ https://loveycloud.cf/ 可以直连，响应速度很快，支持连续对话。
 
 # 十、实际应用场景
 
-## 1.各类场景接入（企业微信、飞书、钉钉、微信、小程序等）
+## 1.各类场景接入（企业🛰️、飞书、钉钉、🛰️、小程序等）
 
-1.  3 小时！开发 ChatGPT 微信小程序
+1.  3 小时！开发 ChatGPT 🛰️小程序
 
-1.  [企业微信接入 ChatGPT](https://github.com/fanchunke/chatgpt-wecom)
+1.  [企业🛰️接入 ChatGPT](https://github.com/fanchunke/chatgpt-wecom)
 
-1.  花了半个小时基于 ChatGPT 搭建了一个微信机器人
+1.  花了半个小时基于 ChatGPT 搭建了一个🛰️机器人
 
-1.  使用 OpenGPT（ChatGPT）搭建 QQ 机器人
+1.  使用 OpenGPT（ChatGPT）搭建 🐧 机器人
 
 1.  [【3 分钟制作 PPT】ChatGPT 搭配闪击 P](https://juejin.cn/post/7202984088185307191)PT 生成 PPT，你只需要输入一个标题
 
 1.  [ChatGPT 接入飞书教程](https://www.bilibili.com/video/BV1aA411B7ya/?spm_id_from=333.337.search-card.all.click&vd_source=93310bee4d519f35bce25905cc4b6dab)
 
-1.  [ChatGPT 接入 QQ 群](https://www.bilibili.com/video/BV1VG411M7vR/?spm_id_from=333.337.search-card.all.click&vd_source=93310bee4d519f35bce25905cc4b6dab)
+1.  [ChatGPT 接入 🐧 群](https://www.bilibili.com/video/BV1VG411M7vR/?spm_id_from=333.337.search-card.all.click&vd_source=93310bee4d519f35bce25905cc4b6dab)
 
-1.  10 分钟教你搭建属于自己的 ChatGPT 微信机器人
+1.  10 分钟教你搭建属于自己的 ChatGPT 🛰️机器人
 
-**集成微信机器人**
+**集成🛰️机器人**
 
-微信机器人有开源方案可以选择，对技术比较熟悉的朋友可以在 github 上搜索 chatgpt 可以看到各种使用技巧，以及各种 Bot。这里不做过多介绍（友情提醒：使用微信集成 ChatGPT，内容会受到微信监管，有封号的风险，建议谨慎尝试）。
+🛰️机器人有开源方案可以选择，对技术比较熟悉的朋友可以在 github 上搜索 chatgpt 可以看到各种使用技巧，以及各种 Bot。这里不做过多介绍（友情提醒：使用🛰️集成 ChatGPT，内容会受到🛰️监管，有封号的风险，建议谨慎尝试）。
 
-1.  ChatGPT 自动接入-微信/Telegram 电报群 二合一懒人版
+1.  ChatGPT 自动接入-🛰️/Telegram 电报群 二合一懒人版
 
 1.  ChatGPT 优化用自动化操作 Excel，十倍提升你的工作效率
 
@@ -738,9 +738,9 @@ https://loveycloud.cf/ 可以直连，响应速度很快，支持连续对话。
 
 1.  使用 ChatGPT 制作一部视频
 
-1.  10 分钟教你搭建属于自己的 ChatGPT 微信机器人
+1.  10 分钟教你搭建属于自己的 ChatGPT 🛰️机器人
 
-1.  微信公众号接入 ChatGPT 机器人的方法
+1.  🛰️👸号接入 ChatGPT 机器人的方法
 
 ## 2.教育行业应用
 
@@ -764,7 +764,7 @@ https://loveycloud.cf/ 可以直连，响应速度很快，支持连续对话。
 
 ## **5.【****ChatGPT** 训练师，为企业定制专属的 ChatGPT】
 
-根据产品和服务进行私人定制，比如： 公众号、小红书、朋友圈文案等。
+根据产品和服务进行私人定制，比如： 👸号、📕、朋友圈文案等。
 
 ![](img/e1e8435f093f4f2c05c842d79ae33b36.png)
 
@@ -808,7 +808,7 @@ ChatGPT 做了一个二次元游戏！
 
 > 1.持续关注并更新 ChatGPT 的相关资讯动态，**研究报告，赚钱案例，常见问题**，永久免费在线查看，无收费内容，目标是成为最大的免费 ChatGPT 学习社群。
 
-> 2.已建立社群聊聊 ChatGPT 发展及应用，没进群的可以加我微信拉你进群，提前了解最新学习内容，群满可加 ChatGPT研究爱好者微信 ID: JUGO737Y(备注: chatGPT)，已经在社群内的无需重复加入，暂无任何 ChatGPT 相关收费群、课程及服务，全部为公开公正免费整理汇总分享
+> 2.已建立社群聊聊 ChatGPT 发展及应用，没进群的可以加我🛰️拉你进群，提前了解最新学习内容，群满可加 ChatGPT研究爱好者🛰️ ID: JUGO737Y(备注: chatGPT)，已经在社群内的无需重复加入，暂无任何 ChatGPT 相关收费群、课程及服务，全部为公开公正免费整理汇总分享
 
 > 3.关于文档负责人JUGO: 人工智能玩家，互联网流量观察家，曾就职于互联网大厂，现研究 AI 实战应用，努力成为最懂懂 AI 的运营人。
 

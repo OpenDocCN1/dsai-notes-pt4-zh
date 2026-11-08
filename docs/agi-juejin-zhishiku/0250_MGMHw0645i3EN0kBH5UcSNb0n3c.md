@@ -32,7 +32,7 @@
 
 https://onlinelibrary.wiley.com/doi/10.1002/advs.202404853
 
-关注公众号，后台回复「乳腺癌干细胞 BCSC」获取完整 PDF
+关注👸号，后台回复「乳腺癌干细胞 BCSC」获取完整 PDF
 
 ## **利用 TCGA 数据集，构建 Pe**arson 相关分析与机器学习算法的关联
 

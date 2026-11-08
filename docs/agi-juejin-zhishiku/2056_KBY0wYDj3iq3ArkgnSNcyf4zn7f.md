@@ -74,7 +74,7 @@
 1.  深度[长文|](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247491230&idx=1&sn=c105f68281bfcb45fa450b9742ab50e0)A**I初**创公司如何打赢招聘这场战争 (源链接)：Juicebox CEO 分享招聘秘诀：如何写出40%回复率的招聘邮件，如何在一周内完成整个招聘流程。创业公司在人才争夺战中获胜的完整方法论。
 [标签: #创业, #AI]
 
-1.  从实[现需求](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247493996&idx=1&sn=5caf78756f94cc3300ebb509d1daab0a)到**共创**价值：AI Native时代需要什么样的工程师团队？ (源链接)：小红书技术副总裁风笛分享：AI Native时代，工程师团队需要从"实现需求"转向"共创价值"，组织架构和工作方式都要随之改变。
+1.  从实[现需求](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247493996&idx=1&sn=5caf78756f94cc3300ebb509d1daab0a)到**共创**价值：AI Native时代需要什么样的工程师团队？ (源链接)：📕技术副总裁风笛分享：AI Native时代，工程师团队需要从"实现需求"转向"共创价值"，组织架构和工作方式都要随之改变。
 [标签: #技术突破, #AI]
 
 1.  代码[采纳率](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247555282&idx=1&sn=736db5cd8e22ab829b135721b8a2c49e)如**何提**升至50？AI 自动编写单元测试实践总结 (源链接)：

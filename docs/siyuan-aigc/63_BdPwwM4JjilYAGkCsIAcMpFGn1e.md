@@ -2,11 +2,11 @@
 
 > 来源：[https://my.feishu.cn/docx/DEdbdM2r3o5idwxadnscAifknxb](https://my.feishu.cn/docx/DEdbdM2r3o5idwxadnscAifknxb)
 
-## 1分钟自动做动漫解说视频，用Artflow AI做英语口语故事，小红书7天涨粉1.9万
+## 1分钟自动做动漫解说视频，用Artflow AI做英语口语故事，📕7天涨粉1.9万
 
 https://mp.weixin.qq.com/s/ReqRlyVxOxjtkwDHM8eCew
 
-## 用AI做艺术字，2个月在小红书接广赚7200元
+## 用AI做艺术字，2个月在📕接广赚7200元
 
 https://zhuanlan.zhihu.com/p/669443169
 
@@ -14,11 +14,11 @@ https://zhuanlan.zhihu.com/p/669443169
 
 https://mp.weixin.qq.com/s/iGE6wYBaZmI2uL2fzUL9IA
 
-## 批量创建小红书图片的方法，在AI的加持下变现有点野！！
+## 批量创建📕图片的方法，在AI的加持下变现有点野！！
 
 https://mp.weixin.qq.com/s/LHZrbbCcTTN74pR6C4W4AA
 
-## RPA+ChatGPT公众号爆文赋能提效【基础篇】
+## RPA+ChatGPT👸号爆文赋能提效【基础篇】
 
 https://mp.weixin.qq.com/s/VzNrw_dZ2OUe6tCFHos9BQ
 

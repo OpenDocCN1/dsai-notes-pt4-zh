@@ -14,7 +14,7 @@
 
 ![](img/a33301cc24b3f2dcf97c7bb87aba4a43.png)
 
-[田萧波_架构设计和业务稳定性建设_试讲调整版2.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VWncbn4q6oQQSyxLcOHcz8AynBf)
+[田萧波_架构设计和业务稳定性建设_试讲调整版2.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VWncbn4q6o🐧SyxLcOHcz8AynBf)
 
 ![](img/c176c80558a28c38d70da3513c7307d4.png)
 

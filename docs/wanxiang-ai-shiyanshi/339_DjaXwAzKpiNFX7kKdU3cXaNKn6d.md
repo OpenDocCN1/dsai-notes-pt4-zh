@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/BJM7dalIPoXjHaxPg0ycQgxtnUe](https://yunyinghui.feishu.cn/docx/BJM7dalIPoXjHaxPg0ycQgxtnUe)
 
-> **来源公众号：**腾讯技术工程
+> **来源👸号：**腾讯技术工程
 
 > **作者：**yongzheng， patrickguo
 
@@ -743,7 +743,7 @@ print(&quot;解码后的文本:&quot;, tokenizer.decode(predictions[0]))
 
 ![](img/2d425393d12d60a77cecb8c7f5908852.png)
 
-对于输入的 "QQ 浏览器广告后台开发"， 我们期望模型整体前推一个字，即输出 "Q 浏览器广告后台开发组"，这里的"Q 浏览器广告后台开发"，与我们的 input 相同，我们希望通过这种方式让模型学习到语言模式，而第 n 个字"组"即是我们想要的字。
+对于输入的 "🐧 浏览器广告后台开发"， 我们期望模型整体前推一个字，即输出 "Q 浏览器广告后台开发组"，这里的"Q 浏览器广告后台开发"，与我们的 input 相同，我们希望通过这种方式让模型学习到语言模式，而第 n 个字"组"即是我们想要的字。
 
 ```
 # 原始语料数据 (假设这是分词后的 ID 序列)
@@ -776,7 +776,7 @@ loss.backward() # 反向传播，修正参数
 
 通过这种方式，模型学会了：
 
-+   看到 "QQ 浏览"，大概率要接 "器"
++   看到 "🐧 浏览"，大概率要接 "器"
 
 +   看到 "后台开"，大概率要接 "发"
 

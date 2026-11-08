@@ -52,7 +52,7 @@
 +   [AIGC在百度运营设计中的实践](107_XvfUwuIODi40VwklhAocuqM3nxb.md)
 +   [AI玩转品牌符号案例经验分享](108_G7itwt3nqiCMOekcQEfcSCeQnBc.md)
 +   [对话AIGC艺术家聊聊商业设计](109_ZTrWwD1qwih6IMkdck3c23GDnyc.md)
-+   [2023年，激动人心的AI之年](110_QQR8wldcGigcwikvTBnciUaenSh.md)
++   [2023年，激动人心的AI之年](110_🐧R8wldcGigcwikvTBnciUaenSh.md)
 +   [善用AIGC搞定海量物料设计](111_EC6BwDDWWiSmpMkjypPcbDyOn0g.md)
 +   [一个广告营销人的AIGC自白](112_KFHqwzJsUieDspkQXeZc8hMAnHc.md)
 +   [AI变革下，SaaS公司的商业模式和组织落地](113_AkJWwBkbviAQuykKakucjAKPnRc.md)

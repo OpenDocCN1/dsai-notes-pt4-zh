@@ -8,7 +8,7 @@
 
 戴益斌：《[论人工智能伦理的研究进路](https://mp.weixin.qq.com/s/cRz8H4GktMnuM9zQGpYlPQ)》
 
-总结：《[小红书 - 你的生活指南](https://www.xiaohongshu.com/explore/643e79660000000027012ec4?app_platform=android&app_version=7.91.0&author_share=1&share_from_user_hidden=true&type=normal&xhsshare=WeixinSession&appuid=63bd1fc3000000002702bbf5&apptime=1687316850&wechatWid=36ce49122163d59d4f88e4e44da695d9)》
+总结：《[📕 - 你的生活指南](https://www.xiaohongshu.com/explore/643e79660000000027012ec4?app_platform=android&app_version=7.91.0&author_share=1&share_from_user_hidden=true&type=normal&xhsshare=WeixinSession&appuid=63bd1fc3000000002702bbf5&apptime=1687316850&wechatWid=36ce49122163d59d4f88e4e44da695d9)》
 
 ![](img/ed5092ddc87c962ff1d13ebd54514a92.png)
 

@@ -148,7 +148,7 @@ Reference Samples
 
 +   [为什么说腾讯 22 年前的这份神级 PPT 是立项汇报的天花板？](https://leonzhang.feishu.cn/wiki/F1wCwlkeji2y4dkjy8NcLHcRnbe)
 
-+   [腾讯QQ秀立项调研PPT（作者Kurt Xu）.pdf](https://leonzhang.feishu.cn/wiki/H7S5wIMSgifNhKk1GsdcB7rCnjf)
++   [腾讯🐧秀立项调研PPT（作者Kurt Xu）.pdf](https://leonzhang.feishu.cn/wiki/H7S5wIMSgifNhKk1GsdcB7rCnjf)
 
 +   [查理·芒格（Charles Munger ）](https://leonzhang.feishu.cn/wiki/KiXtwC9aHifIZKkencMcTqBnnmc)
 
@@ -230,7 +230,7 @@ Notes, Blog, Thinking
 
 +   [2023 年 11 月｜Thinking](https://leonzhang.feishu.cn/wiki/FK5Dwtw0HiSdJckI94ZcSezJn7e)
 
-+   [读《卓有成效的管理者》后记：如何更好的自我管理](https://leonzhang.feishu.cn/wiki/Z6lawONk0iWQQJkmGxYcBXa4nEb)
++   [读《卓有成效的管理者》后记：如何更好的自我管理](https://leonzhang.feishu.cn/wiki/Z6lawONk0iW🐧JkmGxYcBXa4nEb)
 
 +   [大白话聊 Apple Vision Pro](https://leonzhang.feishu.cn/wiki/LTmAwcXAuizhnLk0B2xcTQI3n9d)
 

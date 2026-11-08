@@ -1,4 +1,4 @@
-# 公众号视频文稿爆款助手提示词
+# 👸号视频文稿爆款助手提示词
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/KeYsdT3fQohwiqxdGuOc57oonFc](https://xatc0v8uz5m.feishu.cn/docx/KeYsdT3fQohwiqxdGuOc57oonFc)
 

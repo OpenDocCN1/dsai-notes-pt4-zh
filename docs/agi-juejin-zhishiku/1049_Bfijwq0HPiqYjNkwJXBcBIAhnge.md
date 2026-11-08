@@ -6,7 +6,7 @@
 
 作者： Pierre Lienhart 🌺
 
-**欢迎关注公众号：****Baihai IDP**
+**欢迎关注👸号：****Baihai IDP**
 
 ---
 

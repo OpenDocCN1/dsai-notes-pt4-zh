@@ -364,7 +364,7 @@ swift export --adapters xx/checkpoint-xxx --merge_lora true --output_dir {save-d
 
 ![](img/c1cd642a70c4f5beb5c537e4667ed7a7.png)
 
-注意：邀请团队需要用户同意，如在 24 小时内没有同意邀请，请联系微信`xxxxx`
+注意：邀请团队需要用户同意，如在 24 小时内没有同意邀请，请联系🛰️`xxxxx`
 
 注意注意：需要将训练的 log 和权重放在同一个文件夹一同上传
 

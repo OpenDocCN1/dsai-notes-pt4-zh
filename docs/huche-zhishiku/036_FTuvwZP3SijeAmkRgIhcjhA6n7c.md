@@ -10,6 +10,6 @@
 
 # VIP 群专属
 
-+   20250530 微信小游戏畅玩榜分析：https://huchegames.feishu.cn/share/base/dashboard/shrcnfj63yHIa3wjcARwV4LsLbS
++   20250530 🛰️小游戏畅玩榜分析：https://huchegames.feishu.cn/share/base/dashboard/shrcnfj63yHIa3wjcARwV4LsLbS
 
 +   小游戏排行榜分析总表：[小游戏排行榜分析](https://huchegames.feishu.cn/wiki/Uycowexmni01ENkCsoycLqZtn3c)

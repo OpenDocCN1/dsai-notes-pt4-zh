@@ -10,7 +10,7 @@
 
 > 🎭
 
-> [Claude：吵架](https://mp.weixin.qq.com/s/xN4_ixZSkCFb68lBR5QXQQ)
+> [Claude：吵架](https://mp.weixin.qq.com/s/xN4_ixZSkCFb68lBR5QX🐧)
 
 >
 
@@ -30,7 +30,7 @@
 
 > 🔗 文中引用的链接
 
-+   [原文链接](https://mp.weixin.qq.com/s/xN4_ixZSkCFb68lBR5QXQQ)
++   [原文链接](https://mp.weixin.qq.com/s/xN4_ixZSkCFb68lBR5QX🐧)
 
 > 2️⃣
 

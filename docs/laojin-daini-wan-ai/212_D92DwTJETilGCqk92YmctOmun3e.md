@@ -376,7 +376,7 @@ github.com/travisvn/awesome-claude-skills
 
 1、MCP：thinking、task、github、context7、bravesearch、exa等
 
-2、Skills：dev-browser、公众号写作、数据分析、前端界面、api规范、claude/codex/gemini组套等
+2、Skills：dev-browser、👸号写作、数据分析、前端界面、api规范、claude/codex/gemini组套等
 
 3、关键变化：浏览器控制从MCP换成了dev-browser Skill
 

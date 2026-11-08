@@ -38,7 +38,7 @@ https://openrouter.ai/
 
 +   企业对接：business@metatask.com
 
-+   微信：metatask001
++   🛰️：metatask001
 
 ### n1n.ai
 
@@ -190,7 +190,7 @@ https://openrouter.ai/
 
 +   **商务邮箱**：contact@n1n.ai
 
-+   **商务微信**：n1n-ai（公众号 / 企业微信）
++   **商务🛰️**：n1n-ai（👸号 / 企业🛰️）
 
 +   **对接入口**：官网首页 “商务合作” 表单
 
@@ -204,7 +204,7 @@ https://openrouter.ai/
 
 +   **商务邮箱**：bd@ofox.ai
 
-+   **商务微信**：ofoxai（企业微信）
++   **商务🛰️**：ofoxai（企业🛰️）
 
 +   **对接入口**：官网 “企业服务”→“商务合作”
 
@@ -220,7 +220,7 @@ https://openrouter.ai/
 
 +   **商务电话**：400-888-9999（企业服务专线）
 
-+   **商务微信**：siliconflow（公众号 / 企业微信）
++   **商务🛰️**：siliconflow（👸号 / 企业🛰️）
 
 +   **对接入口**：官网 “企业服务”→“合作咨询”
 

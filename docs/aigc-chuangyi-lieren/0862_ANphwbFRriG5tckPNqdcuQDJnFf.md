@@ -4,7 +4,7 @@
 
 > 链接: [https://mp.weixin.](https://mp.weixin.qq.com/s/MzCFD6g2mZigKtV0cJOjoA)qq.com/s/MzCFD6g2...
 
-> 来源：公众号：草莓派
+> 来源：👸号：草莓派
 
 大家好，上篇文章介绍了Antigravity的登录以及模型限额，这篇文章来介绍Antigravity的9个使用技巧。
 

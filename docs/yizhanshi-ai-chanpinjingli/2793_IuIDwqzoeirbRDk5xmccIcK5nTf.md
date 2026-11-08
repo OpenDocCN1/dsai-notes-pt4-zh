@@ -42,21 +42,21 @@
 
 > 🎯
 
-> [我用Claude code开发了一个微信小程序](https://mp.weixin.qq.com/s/Uc5u1N4D8HVkKuILhe8EAQ)：实测78个skills，这5个组合最香
+> [我用Claude code开发了一个🛰️小程序](https://mp.weixin.qq.com/s/Uc5u1N4D8HVkKuILhe8EAQ)：实测78个skills，这5个组合最香
 
 >
 
-+   作者结合Claude Code精选5个skills，开发“资产管理+人生目标”微信小程序，实测78个skills后发现适配阶段的组合更高效。
++   作者结合Claude Code精选5个skills，开发“资产管理+人生目标”🛰️小程序，实测78个skills后发现适配阶段的组合更高效。
 
 +   原型阶段用brainstorming skill做选择题明确：目标用户22-28岁年轻人，痛点是资金与目标脱节，差异化是资源分配博弈。
 
 +   UI阶段用ui-ux-pro-max skill，结合游戏化RPG设计（参考Monument Valley/Duolingo）生成清新界面，再用planning-with-files梳理项目里程碑。
 
-+   开发阶段用test-driven-development先写测试用例，重构资源分配算法秒级验证，还让Claude Code自动适配微信小程序API修复bug。
++   开发阶段用test-driven-development先写测试用例，重构资源分配算法秒级验证，还让Claude Code自动适配🛰️小程序API修复bug。
 
 +   沉淀阶段让Claude Code生成专属skills，强调工具适配阶段比数量重要，避免无意义的skill收集癖。
 
-> 关键词：Claude Code，微信小程序开发，AI技能组合，游戏化理财，测试驱动开发
+> 关键词：Claude Code，🛰️小程序开发，AI技能组合，游戏化理财，测试驱动开发
 
 >
 

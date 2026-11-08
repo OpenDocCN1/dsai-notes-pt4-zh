@@ -1,8 +1,8 @@
 # COW初级使用教程
 
-> 来源：[https://my.feishu.cn/docx/KQQAdLryeoiVUixMhKxcScOjnqf](https://my.feishu.cn/docx/KQQAdLryeoiVUixMhKxcScOjnqf)
+> 来源：[https://my.feishu.cn/docx/K🐧AdLryeoiVUixMhKxcScOjnqf](https://my.feishu.cn/docx/K🐧AdLryeoiVUixMhKxcScOjnqf)
 
-先来一个初级教学，本文适用于纯新手小白，不用懂原理，一步步复制操作即可拥有自己的“微信贾维斯”。
+先来一个初级教学，本文适用于纯新手小白，不用懂原理，一步步复制操作即可拥有自己的“🛰️贾维斯”。
 
 本文分为 4 大模块，分别是：
 
@@ -12,7 +12,7 @@
 
 3、配置环境（云服务器的配置）
 
-4、微信机器人配置
+4、🛰️机器人配置
 
 ---
 
@@ -20,7 +20,7 @@
 
 ## **一、申请 LLM**
 
-教程中使用的是智谱 AI。这步的意义是获取外部（微信）调用 AI 的接口。
+教程中使用的是智谱 AI。这步的意义是获取外部（🛰️）调用 AI 的接口。
 
 智谱 AI 是由清华大学计算机系技术成果转化而来的公司，致力于打造新一代认知智能通用模型。
 
@@ -72,7 +72,7 @@
 
 ![](img/6dbee8e095894cf3500dd947bb89622b.png)
 
-直接点击【登录】，以后再用时候微信扫码就行。
+直接点击【登录】，以后再用时候🛰️扫码就行。
 
 ![](img/ec2f4f07f87dfb45903ee9175ecded53.png)
 
@@ -215,7 +215,7 @@ cd /root
 
 ![](img/3987182a8eb227d25b2a90c4bda00e11.png)
 
-这个注意一定要粘贴完整，这里容易粘贴不全，这里链接微信机器人代码库。
+这个注意一定要粘贴完整，这里容易粘贴不全，这里链接🛰️机器人代码库。
 
 ```
 git clone https://github.com/zhayujie/chatgpt-on-wechat
@@ -339,7 +339,7 @@ nohup python3 app.py &amp; tail -f nohup.out
 
 ![](img/795f80e2e6b2d1a70ac4ae661918324e.png)
 
-最下方会出现一个二维码，使用你想要做机器人的微信扫码登录即可。
+最下方会出现一个二维码，使用你想要做机器人的🛰️扫码登录即可。
 
 ![](img/c056578dd5f108a33d32c31ce20bdb0f.png)
 

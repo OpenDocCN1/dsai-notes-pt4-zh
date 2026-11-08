@@ -14,7 +14,7 @@
 
 1.  Hi[nt](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555266&idx=1&sn=73567f837cb169ac48e7ffec1949983c)on 预言谷歌将击败 OpenAI，获千万加元教席 (链接)：AI 教父 Hinton 在 78 岁生日之际，获谷歌设立千万加元教席，他预测谷歌将在 AI 竞赛中击败 OpenAI
 
-1.  豆包[手机](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647677649)助手遭全面封禁，超级 APP 入口争夺战打响 (链接)：用户实测豆包手机助手后遭微信、支付宝、淘宝等主流 APP 封禁，凸显 AI 应用入口的激烈竞争
+1.  豆包[手机](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647677649)助手遭全面封禁，超级 APP 入口争夺战打响 (链接)：用户实测豆包手机助手后遭🛰️、支付宝、淘宝等主流 APP 封禁，凸显 AI 应用入口的激烈竞争
 
 ### 🚀 技术突破
 

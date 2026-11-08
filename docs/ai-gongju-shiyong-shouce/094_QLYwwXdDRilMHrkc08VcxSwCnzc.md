@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/HrtmdZQgCoYlBUx1TsJcD4ThnUf](https://my.feishu.cn/docx/HrtmdZQgCoYlBUx1TsJcD4ThnUf)
 
-# [微信上能用的MJ及教程](https://yw55ojhusnq.feishu.cn/wiki/WZbSwbbSOijAeTke1Qtcjiagn4e)J使用教程（Slack版 已失效），建议读这个最新的版本：
+# [🛰️上能用的MJ及教程](https://yw55ojhusnq.feishu.cn/wiki/WZbSwbbSOijAeTke1Qtcjiagn4e)J使用教程（Slack版 已失效），建议读这个最新的版本：
 
 之前我写过一篇教程：[免魔法的Slack👉可以白嫖MJ绘画了😻](https://yw55ojhusnq.feishu.cn/wiki/QwCNwyzH8iS2ItkobWFcZxt0nuf?from=from_copylink) 说了下怎么安装
 

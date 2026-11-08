@@ -18,7 +18,7 @@
 
 ![](img/4c988fbc7079fb5e5d4d689cbd70b0e3.png)
 
-于是我就颠颠的跑去把它接入了微信机器人。
+于是我就颠颠的跑去把它接入了🛰️机器人。
 
 改版来自Lingyuzhou提供的原版，很喜欢的一个小伙子，研究能力很强。
 
@@ -42,15 +42,15 @@
 
 可以参考之前老金写的2篇文章玩绘图：
 
-**MJ：**[最强AI绘画-Midjourney接入微信机器](http://mp.weixin.qq.com/s?__biz=MzI0NzU2MDgyNA==&mid=2247486268&idx=1&sn=12a9bbedc2ef2167e441dad2c9f1eae7&chksm=e9af642bded8ed3d115b654ee57b44253f00156948e5019050b40e0c12156a95b497d2bba2c7#rd)人手把手教程！
+**MJ：**[最强AI绘画-Midjourney接入🛰️机器](http://mp.weixin.qq.com/s?__biz=MzI0NzU2MDgyNA==&mid=2247486268&idx=1&sn=12a9bbedc2ef2167e441dad2c9f1eae7&chksm=e9af642bded8ed3d115b654ee57b44253f00156948e5019050b40e0c12156a95b497d2bba2c7#rd)人手把手教程！
 
-Flux Dev或Schnell：微信上如何优雅的白嫖最强开源AI绘画模型-Flux，手把手教程！没剩几天！要的抓紧囤！
+Flux Dev或Schnell：🛰️上如何优雅的白嫖最强开源AI绘画模型-Flux，手把手教程！没剩几天！要的抓紧囤！
 
 ---
 
-##   微信机器人使用方法
+##   🛰️机器人使用方法
 
-下面开始讲解在微信机器人中使用，首先要满足几个基础条件。
+下面开始讲解在🛰️机器人中使用，首先要满足几个基础条件。
 
 1、已安装chatgpt-on-wechat或dify-on-wechat项目。
 
@@ -58,7 +58,7 @@ Flux Dev或Schnell：微信上如何优雅的白嫖最强开源AI绘画模型-Fl
 
 3、申请智谱API
 
-4、关注老金我的公众号，发送“**智谱AI视频**”，获取Github安装插件链接。
+4、关注老金我的👸号，发送“**智谱AI视频**”，获取Github安装插件链接。
 
 ## 1和2在之前的教程中都有，如果不会，请添加老金我的个人联系方式，拉你进AI交流群，会有一些好心人会教你们。
 
@@ -112,7 +112,7 @@ https://open.bigmodel.cn/usercenter/apikeys
 #reloadp CogView2Cow
 ```
 
-搞定，大家就可以愉快的使用微信机器人生成AI视频与图像了。
+搞定，大家就可以愉快的使用🛰️机器人生成AI视频与图像了。
 
 ## **插件使用**
 

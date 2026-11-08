@@ -26,7 +26,7 @@ ChatGPT 优化用自动化操作 Excel，十倍提升你的工作效率
 
 # ChatGPT 聊天导出工具
 
-ChatGPT 聊天记录丢失，就像微信聊天记录丢失一样痛苦，养成定期保存的习惯，可以看看下面这个工具。
+ChatGPT 聊天记录丢失，就像🛰️聊天记录丢失一样痛苦，养成定期保存的习惯，可以看看下面这个工具。
 
 **传送门：**[https://github.com/pion](https://github.com/pionxzh/chatgpt-exporter)xzh/chatgpt-exporter
 
@@ -72,7 +72,7 @@ https://newzone.top/chatgpt/
 
 1.[可以先下载 Edge 浏览器 dev 版本，地址如下：http](https://www.microsoftedgeinsider.com/en-us/download)s://www.microsoftedgeinsider.com/en-us/download
 
-2.开启魔法上网模式或者使用张良计；
+2.开启🪜模式或者使用张良计；
 
 3.访问：https://www.bing.com/new，并登录你的微软账户（必须先有微软账户）；
 
@@ -154,7 +154,7 @@ https://newzone.top/chatgpt/
 
 **类似 AI 工具集合推荐：**https://www.futurepedia.io/
 
-# 微信聊天的智能应答机器人 ChatGPT for Wechat
+# 🛰️聊天的智能应答机器人 ChatGPT for Wechat
 
 **群聊版：**https://chatgpt4wechat.aow.me/
 

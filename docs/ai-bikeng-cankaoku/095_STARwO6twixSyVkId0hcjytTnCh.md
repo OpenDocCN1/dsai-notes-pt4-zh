@@ -48,7 +48,7 @@ https://obsidian.md/download
 
 ###
 
-### NoteToMP：一键发公众号草稿箱  （插件市场有）
+### NoteToMP：一键发👸号草稿箱  （插件市场有）
 
 ### superpowers：文章变成Skill
 

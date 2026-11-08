@@ -18,7 +18,7 @@ AutoDL是一个稳定高效的算力租赁平台， AutoDL支持一键部署基�
 
 ![](img/cd77f0d97280a06c40c511daa5b57434.png)
 
-除[了常规登录流程外， AutoDL还要求绑定微信和进行实名认](https://www.autodl.com/console/center/account/auth)证[。](https://www.autodl.com/console/center/account/auth)实名认证其实是目前所有算力租赁 平台的基本要求，大家按照AutoDL官网指引合https://www.autodl.com/console/center/account/aut h ，一步步操作即可：
+除[了常规登录流程外， AutoDL还要求绑定🛰️和进行实名认](https://www.autodl.com/console/center/account/auth)证[。](https://www.autodl.com/console/center/account/auth)实名认证其实是目前所有算力租赁 平台的基本要求，大家按照AutoDL官网指引合https://www.autodl.com/console/center/account/aut h ，一步步操作即可：
 
 ![](img/796ef4343c93acf974a3c6dedc34e6ea.png)
 

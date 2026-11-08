@@ -1,8 +1,8 @@
-# 20250513-微信输入法上新「文字图片」功能，好用还很好看！
+# 20250513-🛰️输入法上新「文字图片」功能，好用还很好看！
 
 > 来源：[https://aigcreative.feishu.cn/docx/OYPGdqET2oTLzdxAT3KcTdwRnqc](https://aigcreative.feishu.cn/docx/OYPGdqET2oTLzdxAT3KcTdwRnqc)
 
-刚刚，微信输入法提示更新：
+刚刚，🛰️输入法提示更新：
 
 ![](img/57374523ac40d60668f486161ef38ad3.png)
 
@@ -22,7 +22,7 @@
 
 怎么开启？
 
-安装微信输入法或者更新，在输入框内写上文字，再在菜单栏里找到【文字图片】，点击即可：
+安装🛰️输入法或者更新，在输入框内写上文字，再在菜单栏里找到【文字图片】，点击即可：
 
 ![](img/7add0a6c9a6d0a330a64c987355e1316.png)
 

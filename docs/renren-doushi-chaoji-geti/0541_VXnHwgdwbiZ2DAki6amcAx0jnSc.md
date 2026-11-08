@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/QOoxd6vQpoSylbxlXjkccNDTnHg](https://xuqiwei1986.feishu.cn/docx/QOoxd6vQpoSylbxlXjkccNDTnHg)
 
-最近不管是刷小红书还是抖音，发现魔改版甄嬛传火了，有3D动画版，有吉卜力版，还有蜡笔小新版。例如这个博主发的作品
+最近不管是刷📕还是抖音，发现魔改版甄嬛传火了，有3D动画版，有吉卜力版，还有蜡笔小新版。例如这个博主发的作品
 
 ![](img/263070e1dbefaf1be8e64c1930539f79.png)
 
@@ -38,7 +38,7 @@ https://chatgpt.com/
 
 当然如果你不能访问ChatGPT官网，也可以使用一些AI镜像网站，也是一样的效果，我这里就是利用这个镜像网站制作的。
 
-AI镜像网站：（国内可以访问，QQ邮箱注册即可）
+AI镜像网站：（国内可以访问，🐧邮箱注册即可）
 
 https://chendandan.ai1.bar/
 

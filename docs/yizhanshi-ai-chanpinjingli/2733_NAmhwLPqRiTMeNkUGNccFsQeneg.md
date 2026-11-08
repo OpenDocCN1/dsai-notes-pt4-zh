@@ -122,7 +122,7 @@
 
 > 🔔
 
-> [马斯克：中国会搞定芯片问题；微信辟谣「好友太多会被封号」](https://mp.weixin.qq.com/s/5aoUqABSLKmu8ZzP6f_OQw)；谷歌市值六年来首超苹果 | 极客早知道
+> [马斯克：中国会搞定芯片问题；🛰️辟谣「好友太多会被封号」](https://mp.weixin.qq.com/s/5aoUqABSLKmu8ZzP6f_OQw)；谷歌市值六年来首超苹果 | 极客早知道
 
 >
 

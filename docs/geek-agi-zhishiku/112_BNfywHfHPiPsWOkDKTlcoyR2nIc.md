@@ -2,7 +2,7 @@
 
 > 来源：[https://geekbang.feishu.cn/docx/OiYNdoxdVoVclXxujsncuLd4nwd](https://geekbang.feishu.cn/docx/OiYNdoxdVoVclXxujsncuLd4nwd)
 
-小红书：[刘律师在长春](https://www.xiaohongshu.com/user/profile/602a40c90000000001007043?channel_type=web_search_result_notes&parent_page_channel_type=web_user_board&xsec_token=AB-wlLeggTLD7ci9EZDhRGbSdL92_aZd28GBT4hY7Deko=&xsec_source=pc_search)
+📕：[刘律师在长春](https://www.xiaohongshu.com/user/profile/602a40c90000000001007043?channel_type=web_search_result_notes&parent_page_channel_type=web_user_board&xsec_token=AB-wlLeggTLD7ci9EZDhRGbSdL92_aZd28GBT4hY7Deko=&xsec_source=pc_search)
 
 背景：
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/IxnvdOafNo6WVYxb3owcdFAkn83](https://yunyinghui.feishu.cn/docx/IxnvdOafNo6WVYxb3owcdFAkn83)
 
-> **本文作者：**饼干哥哥，**来源公众号：**饼干哥哥 AGI
+> **本文作者：**饼干哥哥，**来源👸号：**饼干哥哥 AGI
 
 > **推荐理由：**用即梦的最新模型，出了一套具有商用价值的写真提示词，可参考度非常高
 

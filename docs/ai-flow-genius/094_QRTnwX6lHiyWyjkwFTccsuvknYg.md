@@ -128,7 +128,7 @@ AI 动画这个领域内目前我看来离工业界最近的几篇核心论文�
 
 2. AnimateDi**ff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning [15] 3. First Order Motion Model for Image Animation [12]  论文链接我都附在了本文末尾。
 
-终于写完了，希望这篇文章可以对你有所帮助。目前我也正在用 Gen-2 做一些影视及广告项目，如果顺利的话，应该可以在不久后和大家分享成果和经验。如果你想更及时地看到平时我的各种尝试的话，欢迎关注我的微博 @海辛Hyacinth 或者 即刻@海辛谢谢你阅读到这里，提前预祝你立秋愉快。
+终于写完了，希望这篇文章可以对你有所帮助。目前我也正在用 Gen-2 做一些影视及广告项目，如果顺利的话，应该可以在不久后和大家分享成果和经验。如果你想更及时地看到平时我的各种尝试的话，欢迎关注我的🧣 @海辛Hyacinth 或者 即刻@海辛谢谢你阅读到这里，提前预祝你立秋愉快。
 
 ---
 

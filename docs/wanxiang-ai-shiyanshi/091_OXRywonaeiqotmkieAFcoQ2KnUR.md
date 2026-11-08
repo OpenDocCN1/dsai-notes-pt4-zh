@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/IuEDdzlhlogYhJxSQuRczAMOnGc](https://yunyinghui.feishu.cn/docx/IuEDdzlhlogYhJxSQuRczAMOnGc)
 
-> **原创公众号：**新智元
+> **原创👸号：**新智元
 
 > **发文时间：**2026-02-27 05:55:00
 

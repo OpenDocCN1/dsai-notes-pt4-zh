@@ -2,7 +2,7 @@
 
 > 来源：[https://huchegames.feishu.cn/docx/GHNOds0fNojKjExU2thcfUXonjg](https://huchegames.feishu.cn/docx/GHNOds0fNojKjExU2thcfUXonjg)
 
-上周二，我在 星光城市武汉站沙龙圆满落幕，深度解码AI 合规、AI研发、游戏出海 活动中做了《将 AI 引入游戏研发工作流》的分享，演讲内容仍在整理中，整理完毕后会发布在公众号。
+上周二，我在 星光城市武汉站沙龙圆满落幕，深度解码AI 合规、AI研发、游戏出海 活动中做了《将 AI 引入游戏研发工作流》的分享，演讲内容仍在整理中，整理完毕后会发布在👸号。
 
 将[AI嵌入研发工作流](https://huchegames.feishu.cn/wiki/YR4lwCNaciw0bukbKYdcGllinje)**，** 是个大工程。 在正常的游戏研发过程中，不仅需要制作人有全局思维，也需要执行者的坚决和主动性。
 
@@ -54,7 +54,7 @@ https://www.riffusion.com/riff/b7b1fafa-1f17-4f5b-ada7-3c8d14d47276
 
 +   [DeepSeek 服务器繁忙？这里有免费解决方案](https://huchegames.feishu.cn/wiki/UKGZwAxKuiPsCukaDOhcuIi9nMc)
 
-+   [DeepSeek 不卡了，满血联网，还能搜索微信公众号内容](https://huchegames.feishu.cn/wiki/PmXmwNchBiRykDkxtcTcupK9nzH)
++   [DeepSeek 不卡了，满血联网，还能搜索🛰️👸号内容](https://huchegames.feishu.cn/wiki/PmXmwNchBiRykDkxtcTcupK9nzH)
 
 ## 提示词技巧
 

@@ -52,7 +52,7 @@
 +   [小票OCR](52_ObvPwFz5CiUE2skqnWkcAhSknUh.md)
 +   [网页仿写](53_V2vyw5hXuixeztkWxh8cmeaXnBc.md)
 +   [网页爬取](54_P3s4wpOlUiHYVkkYEb4cGKXknhf.md)
-+   [文生图](55_NZuuwJrdhiQRzrkgjnhcUQQRn5e.md)
++   [文生图](55_NZuuwJrdhiQRzrkgjnhcU🐧Rn5e.md)
 +   [邮件助手](56_Shfnw7KG7iZ45fksX2GcZjbnnnc.md)
 +   [UI 集成 - Chainlit](57_AluWwOlOMim9g3ksEOJcpwMmnEF.md)
 +   [AFlow](58_ZB3ywCbv6ig3yCkAJPbceXWInNf.md)

@@ -36,7 +36,7 @@
 
 > [嘉宾名单](https://hqexj12b0g.feishu.cn/wiki/RXErwOyJziXMF9kSNP6ccXmKndh)内大佬云集，有很多AI搜索及相关创业者和投资人，详细：
 
-> 为了保持交流质量本群保持小而美，采取邀请制，微信联系： HuggingAIs
+> 为了保持交流质量本群保持小而美，采取邀请制，🛰️联系： HuggingAIs
 
 ![](img/2fb125adcd74876200ad565a05763111.png)
 

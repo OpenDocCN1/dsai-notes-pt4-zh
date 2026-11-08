@@ -62,7 +62,7 @@ https://www.linkedin.com/learning/paths/career-essentials-in-generative-ai-by-mi
 
 ### **环境准备**
 
-+   要科学上网（看看朋友有没有会的，实在不会的可以联系咨询我）
++   要🪜（看看朋友有没有会的，实在不会的可以联系咨询我）
 
 +   Chrome浏览器
 

@@ -296,7 +296,7 @@ https://mp.weixin.qq.com/s/gv_65rvrmlKBI8Z9xRvPOA
 
 近日，知合计算技术（深圳）有限公司宣布完成数亿元人民币A1轮融资。本轮融资由源码资本领投，领航新界、云九资本、乐朴投资等跟投，临港科创投再次参与投资。知合计算成立于2022年，专注于开发基于RISC-V架构的高性能AI芯片，其核心团队包括阿里平头哥前高管孟建熠。RISC-V作为开源指令架构，因其不受商业公司控制，吸引了众多中国企业参与研发。临港科创投三度投资知合计算，显示其对RISC-V产业的重视，尤其是在上海自贸区，RISC-V生态链已初具规模，成为国内芯片产业发展的重点领域。
 
-公众号链接：https://mp.weixin.qq.com/s/P-3PpUxUP13EDXLnzjkxSA
+👸号链接：https://mp.weixin.qq.com/s/P-3PpUxUP13EDXLnzjkxSA
 
 ![](img/7ba413ba845b7a8fa7f008cbfa61c205.png)
 
@@ -446,7 +446,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

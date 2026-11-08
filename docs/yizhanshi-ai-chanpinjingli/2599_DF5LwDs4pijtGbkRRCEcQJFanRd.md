@@ -128,7 +128,7 @@
 
 > 🤖
 
-> [Hugging Face 免费开了门 ](https://mp.weixin.qq.com/s/i2dM_uy4i4EF2PFUbohXQQ)AI Agents 课程：从入门到精通！
+> [Hugging Face 免费开了门 ](https://mp.weixin.qq.com/s/i2dM_uy4i4EF2PFUbohX🐧)AI Agents 课程：从入门到精通！
 
 >
 

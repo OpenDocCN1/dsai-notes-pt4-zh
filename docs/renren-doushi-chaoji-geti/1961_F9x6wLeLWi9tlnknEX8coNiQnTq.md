@@ -34,9 +34,9 @@
 
 > [**3、AI**](https://mp.weixin.qq.com/s?__biz=MzkxOTYwMzQ2Ng==&mid=2247485044&idx=1&sn=3c024c35c9329c5a10025feec4ee43e4&chksm=c19ed611f6e95f075ef5a36cf4428ec6b89138df5896b3275e3a0097f37abcfd89fda366088d&token=1529535626&lang=zh_CN#rd)创富俱乐部星球邀请你加入：点击这里
 
-> **4、资料出现问题请联系：****微信：****2****61524795**
+> **4、资料出现问题请联系：****🛰️：****2****61524795**
 
-> 5**、更多互联网资料请关注：# ****公众号：江工****陪您学AI**
+> 5**、更多互联网资料请关注：# ****👸号：江工****陪您学AI**
 
 > **6、江工个人介绍第****五****版**：[**点击这里**](https://mp.weixin.qq.com/s?__biz=MzkxOTYwMzQ2Ng==&mid=2247484564&idx=1&sn=c8b52cc6496086f87072c708237d17d8&chksm=c19ed4f1f6e95de7a3cad3c0338f270e2c0eadfc8a3935de17c29f3631499b1ca305fee27656&token=1529535626&lang=zh_CN#rd)
 

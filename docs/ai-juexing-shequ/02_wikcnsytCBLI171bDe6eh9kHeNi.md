@@ -8,7 +8,7 @@
 
 > 日更AI新闻海报 [AI觉醒日报（一觉醒来发生了什么）](https://diwfpqo78m.feishu.cn/wiki/wikcnI3exPnHHzON4ikfEsucckb)
 
-> 更多资源，添加站长微信：wenge56
+> 更多资源，添加站长🛰️：wenge56
 
 +   [什么是 GPT？](https://diwfpqo78m.feishu.cn/wiki/wikcnsytCBLI171bDe6eh9kHeNi#part-Dpewdn3w3ohgRcxjSRRcflnwnEc)
 
@@ -58,7 +58,7 @@
 
 +   [打工福利: 周报生成器](https://diwfpqo78m.feishu.cn/wiki/wikcnsytCBLI171bDe6eh9kHeNi#part-FNxtd1auroPMuIxv5uScXDxznPd)
 
-+   [小红书小作文生成器](https://diwfpqo78m.feishu.cn/wiki/wikcnsytCBLI171bDe6eh9kHeNi#part-N3kLdmiFiokZeKx2O3icy7tznxf)
++   [📕小作文生成器](https://diwfpqo78m.feishu.cn/wiki/wikcnsytCBLI171bDe6eh9kHeNi#part-N3kLdmiFiokZeKx2O3icy7tznxf)
 
 +   提高 GPT 数据能力：WolframAlpha
 
@@ -110,7 +110,7 @@
 
 +   自动生成任何编程语言的文档: AutoDoc-GPT
 
-+   [使用GPT搭建微信聊天机器人](https://diwfpqo78m.feishu.cn/wiki/wikcnsytCBLI171bDe6eh9kHeNi#part-ZPgjd9RSPo92wFxzvkLcAgB6nxC)
++   [使用GPT搭建🛰️聊天机器人](https://diwfpqo78m.feishu.cn/wiki/wikcnsytCBLI171bDe6eh9kHeNi#part-ZPgjd9RSPo92wFxzvkLcAgB6nxC)
 
 +   [开源GPT替代品列表](https://diwfpqo78m.feishu.cn/wiki/wikcnsytCBLI171bDe6eh9kHeNi#part-RBBQdp4AjoHK1wxC1l3cSqNznrg)
 
@@ -252,7 +252,7 @@
 
 (推荐)注册后免费使用，无次数限制，官方出品，性能最强，技术最好。不足之处是国内注册困局：
 
-+   需要科学上网，使用的代理IP质量不好的话不能成功
++   需要🪜，使用的代理IP质量不好的话不能成功
 
 +   需要国外手机号码验证，google voice[等虚拟号](https://sms-activate.org/)码无法通过验证，可用淘宝解决或 海外号码
 
@@ -264,7 +264,7 @@
 
 ###  💻 坡[ ](https://poe.com/chatgpt)
 
-(推荐)注册后免费使用，可免费试用当前最先进的GPT-4，提供多种模型选择。能科学上网即可注册，有iPhone客户端即可使用。
+(推荐)注册后免费使用，可免费试用当前最先进的GPT-4，提供多种模型选择。能🪜即可注册，有iPhone客户端即可使用。
 
 ![](img/74f68badc352efdca1e55607446ed560.png)
 
@@ -272,7 +272,7 @@
 
 [（推](http://www.bing.com/)荐）注册注册免费，有次数（经常 经常 ） ：
 
-+   科学上网访问 [www.bing.com](http://www.bing.com/)
++   🪜访问 [www.bing.com](http://www.bing.com/)
 
 +   重定向访问 [www.bing.com](http://www.bing.com/)
 
@@ -296,7 +296,7 @@
 
 第三方客户端很多，基本都是通过调用OpenAI的API实现的，这些客户端往往需要你自备OpenAI的Api Key使用。
 
-+   [lencx/GPT ](https://github.com/lencx/ChatGPT): 使用 rust 编写的，基于 tauri 的跨平台 GPT 客户端。 支持：Windows、Linux、MacOS。 本质是应用内嵌进入 GPT 网页，需要翻墙。
++   [lencx/GPT ](https://github.com/lencx/ChatGPT): 使用 rust 编写的，基于 tauri 的跨平台 GPT 客户端。 支持：Windows、Linux、MacOS。 本质是应用内嵌进入 GPT 网页，需要🪜。
 
 +   [chatbox ](https://github.com/Bin-Huang/chatbox)打开源的GPT桌面应用，提示打开神器，全平台支持，下载安装包就可以使用
 
@@ -304,7 +304,7 @@
 
 +   川虎GPT 🐯 Chuanhu GPT 为GPT API提供了一个轻快好用的Web图形界面，支持直接连接在Hugging Face上部，很方便。
 
-+   token/GPT.Desktop : 使用 C# 编写的，基于 Blazor Web Assembly 的跨平台客户端。 支持：Windows、Linux、MacOS、Android、iOS、Web。 本质是程序内嵌自建网页并调用API，所以你需要一个OpenAI账号，需要翻墙。
++   token/GPT.Desktop : 使用 C# 编写的，基于 Blazor Web Assembly 的跨平台客户端。 支持：Windows、Linux、MacOS、Android、iOS、Web。 本质是程序内嵌自建网页并调用API，所以你需要一个OpenAI账号，需要🪜。
 
 +   SlimeNull/OpenGptChat : 使用 C# 编写的，基于 WPF 的原生 Windows 客户端。 支持：Windows。 本质是调用OpenAI的API，所以你需要一个OpenAI账号。 内设置反代理，国内可用。
 
@@ -314,7 +314,7 @@
 
 +   💻 吟游诗人 https://bard.google.com/
 
-+   谷歌出品，使用需要申请，与OpenAI GPT相比较不支持代码功能，需要翻墙注册使用
++   谷歌出品，使用需要申请，与OpenAI GPT相比较不支持代码功能，需要🪜注册使用
 
 ![](img/9991b3d2b7971660243642fb951e3561.png)
 
@@ -458,7 +458,7 @@ GPT的的阅读，支持，支持英文，可以英文快速从论文论文，�
 
 ![](img/a566a337d84788c5bd61b151b67318cf.png)
 
-###  [小红书小作文生成器](https://open-gpt.app/app/clf2awmv0001mjt08hjtcpe90)
+###  [📕小作文生成器](https://open-gpt.app/app/clf2awmv0001mjt08hjtcpe90)
 
 帮助姐姐们一键生成小作文，在演讲场里立于不败之地。
 
@@ -566,7 +566,7 @@ codiumai这这构建了一个名为名为名为的的的语言
 
 ####  自动生成任何编程语言的文档: AutoDoc-GPT
 
-####  [使用GPT搭建微信聊天机器人](https://github.com/zhayujie/chatgpt-on-wechat)
+####  [使用GPT搭建🛰️聊天机器人](https://github.com/zhayujie/chatgpt-on-wechat)
 
 ####  [开源GPT替代品列表](https://github.com/nichtdax/awesome-totally-open-chatgpt)
 

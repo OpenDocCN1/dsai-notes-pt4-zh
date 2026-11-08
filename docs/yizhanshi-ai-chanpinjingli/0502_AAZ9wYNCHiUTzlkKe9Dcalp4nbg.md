@@ -2,7 +2,7 @@
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/A0Fzdq3Q6oC5xrxayt2chYHQnRg](https://v11enp9ok1h.feishu.cn/docx/A0Fzdq3Q6oC5xrxayt2chYHQnRg)
 
-一名曾与张涛有过交流的从业者，在微信上提到，她曾追问张涛做出Manus的秘密是什么，对方的回答是：“真的非常简单，就是没有秘密，就是相信模型的力量。”
+一名曾与张涛有过交流的从业者，在🛰️上提到，她曾追问张涛做出Manus的秘密是什么，对方的回答是：“真的非常简单，就是没有秘密，就是相信模型的力量。”
 
 # Manus ｜产品篇
 

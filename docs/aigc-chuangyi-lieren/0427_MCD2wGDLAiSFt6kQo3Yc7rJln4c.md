@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/NrwzdsgVjon8OPxqmvNcPlJtncd](https://aigcreative.feishu.cn/docx/NrwzdsgVjon8OPxqmvNcPlJtncd)
 
-> 感谢6群群友：郁枫 的分享，公众号：AI变革家
+> 感谢6群群友：郁枫 的分享，👸号：AI变革家
 
 > 链接：https://mp.weixin.qq.com/s/ED6sh9eiR3w75PG1HtGjAg
 

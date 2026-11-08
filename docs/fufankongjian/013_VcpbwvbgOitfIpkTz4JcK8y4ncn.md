@@ -262,13 +262,13 @@
 
 [2024-12-28 18-35-20.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WGwjbvghgoPttUxwGYMcFTWOnOh)
 
-而在AI自动运营方面，智能体可以作用于拉新、接待和转化的各个环节，自动赚钱链路仿佛就在眼前啊。实际上，24年一年，光是AI小红书自动图文编写和爆款仿写的Agent，就有数十种之多。这一刻，借助AI工具进行掘金，是不是就无比的具象化了呢。
+而在AI自动运营方面，智能体可以作用于拉新、接待和转化的各个环节，自动赚钱链路仿佛就在眼前啊。实际上，24年一年，光是AI📕自动图文编写和爆款仿写的Agent，就有数十种之多。这一刻，借助AI工具进行掘金，是不是就无比的具象化了呢。
 
-> 部分小红书Agent官网：
+> 部分📕Agent官网：
 
 > XHBPlus：https://xhsplus.io/
 
-> 135小红书排版：https://www.135editor.com/ai_editor/red-book/home/
+> 135📕排版：https://www.135editor.com/ai_editor/red-book/home/
 
 > 红薯智语：https://space.chinaz.com
 

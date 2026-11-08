@@ -23,7 +23,7 @@
 | docsify |  | 一个神奇的文档网站生成器 | https://github.com/docsifyjs/docsify |  |
 | rustdesk-api |  | 自定义RustDesk API服务器 | https://github.com/lejianwen/rustdesk-api |  |
 | pintree |  | 将您的浏览器书签转换为目录网站 | https://github.com/Pintree-io/pintree |  |
-| BetterWX-UI |  | 微信多账号免扫码登录 | https://github.com/afaa1991/BetterWX-UI |  |
+| BetterWX-UI |  | 🛰️多账号免扫码登录 | https://github.com/afaa1991/BetterWX-UI |  |
 | hiddify-app |  | 多平台自动代理客户端 | https://github.com/hiddify/hiddify-app |  |
 | vlt_zh |  | 将 VLC 皮肤字体替换为自定义字体 | https://github.com/linsui/vlt_zh |  |
 | setfnlock |  | 设置罗技键盘k380的fn键 | https://github.com/AnmSleepalone/setfnlock |  |
@@ -45,6 +45,6 @@
 | rectg |  | 优质Telegram 群组、频道和机器人 | https://github.com/jackhawks/rectg |  |
 | VideoCaptioner |  | 视频翻译生成字幕 | https://github.com/WEIFENG2333/VideoCaptioner |  |
 | awesome-nano-banana |  | Nano Banana 的 100 种用法 | https://github.com/xianyu110/awesome-nano-banana | https://xianyu110.github.io/awesome-nano-banana |
-| SoEasy-WeiXinMulitLauncher |  | 微信多开 | https://github.com/zhangqi222/SoEasy-WeiXinMulitLauncher |  |
+| SoEasy-WeiXinMulitLauncher |  | 🛰️多开 | https://github.com/zhangqi222/SoEasy-WeiXinMulitLauncher |  |
 | short-video-factory |  | 一句提示词，批量生成短视频内容。 | https://github.com/YILS-LIN/short-video-factory |  |
 |  |  |  |  |  |

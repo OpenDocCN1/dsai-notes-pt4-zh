@@ -4,7 +4,7 @@
 
 > 原创：AI沃茨
 
-> 公众号:卡尔的AI沃茨
+> 👸号:卡尔的AI沃茨
 
 > 原文链接：https://mp.weixin.qq.com/s/h1H7K8x8KRwyNKvl1O0YDQ
 

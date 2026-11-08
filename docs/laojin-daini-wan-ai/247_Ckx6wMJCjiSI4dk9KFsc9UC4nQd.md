@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/Dzk4dPF8coXdnkx03Recnnron1f](https://my.feishu.cn/docx/Dzk4dPF8coXdnkx03Recnnron1f)
 
-老金最近生了场病，就没写公众号了，今儿终于诈尸了！
+老金最近生了场病，就没写👸号了，今儿终于诈尸了！
 
 这几天AI圈最大的新闻，估计就是Google的Gemini更新了。
 

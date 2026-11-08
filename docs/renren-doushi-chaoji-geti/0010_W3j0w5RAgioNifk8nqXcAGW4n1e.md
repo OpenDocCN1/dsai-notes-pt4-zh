@@ -10,15 +10,15 @@ B站：https://space.bilibili.com/14848367?
 
 抖音： https://v.douyin.com/i5Jqby5f/
 
-小红书：https://www.xiaohongshu.com/user/profile/583ab2525e87e729b60e3564
+📕：https://www.xiaohongshu.com/user/profile/583ab2525e87e729b60e3564
 
 YouTube：https://www.youtube.com/@Xuan2333
 
-视频号、公众号：直接搜索 Xuan酱，或扫码关注👇
+视频号、👸号：直接搜索 Xuan酱，或扫码关注👇
 
 ![](img/cbaa757da1c79216e1dc8754e445a684.png)
 
-公众号获取所有资料链接更快哦
+👸号获取所有资料链接更快哦
 
 # [Xuan酱的AI知识库](https://q7y0qvi7ov.feishu.cn/wiki/RxmAw9xGhiFx0CkptXFcGxFNn8c?from=from_copylink)他往期视频的教程文档都在👉
 

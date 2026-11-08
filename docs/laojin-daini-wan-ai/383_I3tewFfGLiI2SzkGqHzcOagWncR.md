@@ -1,8 +1,8 @@
-# ※ 微信机器人开源项目说明
+# ※ 🛰️机器人开源项目说明
 
 > 来源：[https://my.feishu.cn/docx/A0evdv9pPooPZPxevYScpEy7n2c](https://my.feishu.cn/docx/A0evdv9pPooPZPxevYScpEy7n2c)
 
-Chatgpt-on-wechat（简称COW），是微信转发消息的工具，仅此而已。
+Chatgpt-on-wechat（简称COW），是🛰️转发消息的工具，仅此而已。
 
 下游分支 Dify-on-wechat（简称DOW），是基于Dify平台魔改COW的工具。
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/XvSgdbxctolyTfxHkB4c6XypnTg](https://aigcreative.feishu.cn/docx/XvSgdbxctolyTfxHkB4c6XypnTg)
 
-> 来源：公众号-扣子Coze
+> 来源：👸号-扣子Coze
 
 > 链接：https://mp.weixin.qq.com/s/OtdncYNt9KDE6YzDJeexFg
 

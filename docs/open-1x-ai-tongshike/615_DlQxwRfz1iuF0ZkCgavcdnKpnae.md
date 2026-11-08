@@ -18,7 +18,7 @@
 
 > [抖音](https://v.douyin.com/iY8rSdDK/)
 
-> [小红书](https://www.xiaohongshu.com/user/profile/62af1cf0000000001b024d1a?xhsshare=CopyLink&appuid=62af1cf0000000001b024d1a&apptime=1712028167)
+> [📕](https://www.xiaohongshu.com/user/profile/62af1cf0000000001b024d1a?xhsshare=CopyLink&appuid=62af1cf0000000001b024d1a&apptime=1712028167)
 
 ## 视频号
 

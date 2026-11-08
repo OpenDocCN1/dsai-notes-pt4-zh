@@ -2,7 +2,7 @@
 
 > 来源：[https://aithinkup.feishu.cn/docx/YSRQd4e96oXln4xwxFTcF5atnNg](https://aithinkup.feishu.cn/docx/YSRQd4e96oXln4xwxFTcF5atnNg)
 
-[必看文章合集=【AGI观察】微信公众号+知乎](https://aithinkup.feishu.cn/wiki/EpyNwOUe1irXPlkcZZncQfFsn6f#share-PETBdmZ8VoyAG4xjvgFcGJTOnd3)
+[必看文章合集=【AGI观察】🛰️👸号+知乎](https://aithinkup.feishu.cn/wiki/EpyNwOUe1irXPlkcZZncQfFsn6f#share-PETBdmZ8VoyAG4xjvgFcGJTOnd3)
 
 ### 子目录：5.1 企业AI
 
@@ -12,7 +12,7 @@
 
 发布日期：2025年6月16日
 
-微信链接：https://mp.weixin.qq.com/s/u38gH6B6Q2sQgASzdJpFbg
+🛰️链接：https://mp.weixin.qq.com/s/u38gH6B6Q2sQgASzdJpFbg
 
 **归档理由：** 通过“重读”经典报告来提炼观点，是对行业基础认知的一次梳理和回顾，属于知识基石的一部分。
 
@@ -22,7 +22,7 @@ AI故事的常态，是那些过程中的繁琐，是“基石性工作” | AGI
 
 发布日期：2025年5月26日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/GehD_GvLOxiCb-ckppTqSg
 
@@ -34,7 +34,7 @@ https://mp.weixin.qq.com/s/GehD_GvLOxiCb-ckppTqSg
 
 发布日期：2025年3月4日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/h5vsjCAGAW3sdjuDesWxgA
 
@@ -46,7 +46,7 @@ https://mp.weixin.qq.com/s/h5vsjCAGAW3sdjuDesWxgA
 
 发布日期：2025年1月12日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/_kSRrZ_5iSr79KkzEEIuSg
 
@@ -58,7 +58,7 @@ https://mp.weixin.qq.com/s/_kSRrZ_5iSr79KkzEEIuSg
 
 发布日期：2024年7月28日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/MoWB6_AGuAQsg745eKnWrA
 
@@ -70,7 +70,7 @@ https://mp.weixin.qq.com/s/MoWB6_AGuAQsg745eKnWrA
 
 发布日期：2024年12月10日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/hqKVs4UgpPOX9WPTS7aI5A
 

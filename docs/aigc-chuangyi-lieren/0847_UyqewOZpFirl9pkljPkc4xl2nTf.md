@@ -4,7 +4,7 @@
 
 > 链接: https://mp.weixin.qq.com/s/izEnzkLoLvVpI7eY852MIA
 
-> 作者：成峰        公众号：AI 产品自由
+> 作者：成峰        👸号：AI 产品自由
 
 各位朋友，最近很多人跟我说Cursor升级到1.0之后，界面大改，很多功能都找不到了。
 

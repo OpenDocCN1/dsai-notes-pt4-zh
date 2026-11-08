@@ -108,7 +108,7 @@ ai.com 这个是 OpenAI 官网在域名销售商 Saw.com 花了1100万美元 买
 
 ![](img/ccbfa8d713b52e51706c32f17714fb4e.png)
 
-**解决方案：**找课程助理升级 Plus 账户，微信号：17349587346
+**解决方案：**找课程助理升级 Plus 账户，🛰️号：17349587346
 
 ### 8）提示出现 ChatGPT is at capacity right now
 

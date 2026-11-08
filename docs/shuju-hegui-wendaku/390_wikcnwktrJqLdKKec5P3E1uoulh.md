@@ -1,6 +1,6 @@
 # 豁免告知的理解
 
-> 来源：[https://docs.feishu.cn/docx/AYPodCZdHouJq1xTjj2cQQnMnnc](https://docs.feishu.cn/docx/AYPodCZdHouJq1xTjj2cQQnMnnc)
+> 来源：[https://docs.feishu.cn/docx/AYPodCZdHouJq1xTjj2c🐧nMnnc](https://docs.feishu.cn/docx/AYPodCZdHouJq1xTjj2c🐧nMnnc)
 
 **-问：**关于《个保法》第18条第1款的理解：“个人信息处理者处理个人信息，有法律、行政法规规定应当保密或者不需要告知的情形的，可以不向个人告知前条第一款规定的事项。”
 

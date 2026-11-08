@@ -1,6 +1,6 @@
 # Prompt不是指令，是思维方式
 
-> 来源：[https://my.feishu.cn/docx/EFMsdk2DRo4OUrxAu2ccqQQZnBu](https://my.feishu.cn/docx/EFMsdk2DRo4OUrxAu2ccqQQZnBu)
+> 来源：[https://my.feishu.cn/docx/EFMsdk2DRo4OUrxAu2ccq🐧ZnBu](https://my.feishu.cn/docx/EFMsdk2DRo4OUrxAu2ccq🐧ZnBu)
 
 当我们第一次接触ChatGPT或Claude这样的AI助手时，大多数人的本能反**应是把它当作一**个**“高级搜索引擎**”**或“智能客服系统**”。我们习惯性地输入简短的命令:“写一篇文章”、“翻译这段话”、“帮我分析一下”。
 

@@ -24,6 +24,6 @@
 
 如果你想看看别人是怎么做智能体的？
 
-扫码关注公众号
+扫码关注👸号
 
 <https://zhipu-ai.feishu.cn/sync/I447dldoQsFFP6bcGUYcAaOVnQc>

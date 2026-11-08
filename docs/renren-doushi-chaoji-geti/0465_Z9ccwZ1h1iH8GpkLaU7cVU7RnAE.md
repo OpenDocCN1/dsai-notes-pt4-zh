@@ -2,13 +2,13 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/H2fldRrhqo3m9Kxwb4zcLmRcnFe](https://xuqiwei1986.feishu.cn/docx/H2fldRrhqo3m9Kxwb4zcLmRcnFe)
 
-上个月我做了一套**矩阵发布系统**，经过不断的打磨，终于让这套工具更新了第三个版本，这次真正实现了一劳永逸。目前支持发布的平台有：公众号，抖音，小红书，b站，小绿书，闲鱼。还有一款自动洗稿工具，目前我是用的kimi对话框，先以白嫖为主，有需求的我后期给大家对接一个我自用的一个ai。
+上个月我做了一套**矩阵发布系统**，经过不断的打磨，终于让这套工具更新了第三个版本，这次真正实现了一劳永逸。目前支持发布的平台有：👸号，抖音，📕，b站，小绿书，闲鱼。还有一款自动洗稿工具，目前我是用的kimi对话框，先以白嫖为主，有需求的我后期给大家对接一个我自用的一个ai。
 
 现在的很多所谓的一键发布工具都不注重ip和环境的隔离，看起来能添加很多账号，但是实际情况是一个账号出现问题，一堆账号直接连坐。我这套主要是以比特浏览器为主，一个账号一个环境一个IP，实现了真正的隔离自动化发布。每个账号互不相关，自己干自己的。
 
 大家只需要批量把自己的内容放入配置表，配置好之后每天你的发布任务交给它就完事了，你甚至可以一次性配置好一个月的内容，电脑保持开机，然后自己出去旅游一圈。
 
-生财是全网最高质量的社群了，我把工具放出来，我的工具如果能得到大家的认可，是我莫大的荣幸，我相信还会有更多的大佬能提出更多建设性的意见。我工具中的暗号，大家直接输入：生财有术。
+赚钱是全网最高质量的社群了，我把工具放出来，我的工具如果能得到大家的认可，是我莫大的荣幸，我相信还会有更多的大佬能提出更多建设性的意见。我工具中的暗号，大家直接输入：龙哥盟。
 
 # 支持不同体量的自媒体人使用
 
@@ -146,7 +146,7 @@ Microsoft Edge 安装插件说明 - 影刀帮助中心
 
 # 万能文章洗稿工具
 
-> 文章链接可以公开访问的就可以洗稿，测试稳定的是公众号链接，今日头条，搜狐号。
+> 文章链接可以公开访问的就可以洗稿，测试稳定的是👸号链接，今日头条，搜狐号。
 
 > 所有应用不支持mac电脑，如果是mac电脑，请开启双系统win模式（自行百度）
 
@@ -182,9 +182,9 @@ https://www.winrobot360.com/share/accede?inviteKey=e63955eb-3ba7-4bf4-bd67-24765
 
 ![](img/8877f3c53ac5e7073b34c80013dc8c0f.png)
 
-[公众号模板.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z7DObRxMJoLDU8x8hcBcgbqknHg)
+[👸号模板.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z7DObRxMJoLDU8x8hcBcgbqknHg)
 
-只需要在表格第一列放进去你要洗稿的文章链接就行，我这亲测的公众号，头条都可以，（理论上每一个链接访问的文章都可以洗）
+只需要在表格第一列放进去你要洗稿的文章链接就行，我这亲测的👸号，头条都可以，（理论上每一个链接访问的文章都可以洗）
 
 后面的不需要在改写完文章后会自动填入
 
@@ -208,13 +208,13 @@ https://www.winrobot360.com/share/accede?inviteKey=e63955eb-3ba7-4bf4-bd67-24765
 
 ![](img/eeb4a6e4fee998794847de98e220ac6e.png)
 
-**ps：一次可以多输入一些链接去洗稿，后续搭配**我给大家的公众号自动发布工具就省事多了。
+**ps：一次可以多输入一些链接去洗稿，后续搭配**我给大家的👸号自动发布工具就省事多了。
 
 ## 三：使用前注意
 
 在edge浏览器登陆好kimi：https://kimi.moonshot.cn/
 
-# 公众号发布
+# 👸号发布
 
 ## edge/谷歌浏览器教程
 
@@ -224,7 +224,7 @@ https://www.winrobot360.com/share/accede?inviteKey=e63955eb-3ba7-4bf4-bd67-24765
 
 ![](img/f7180558508a9c0cc94a3cc60f6c0a61.png)
 
-[2公众号edge配置.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UFZCbBYI2oWu7Vx2JQjc17ldnbc)
+[2👸号edge配置.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UFZCbBYI2oWu7Vx2JQjc17ldnbc)
 
 ### 一：注册下载影刀
 
@@ -260,7 +260,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ![](img/5b3229821ca345cc26592fa70322b96c.png)
 
-[公众号模板.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IB2obm8NGoUVEPxY3x4cJT6pnAD)
+[👸号模板.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IB2obm8NGoUVEPxY3x4cJT6pnAD)
 
 [万能文章洗稿工具](https://y9j12wbinr.feishu.cn/wiki/WiJlwinK6ihFT0kZ9o3cfdRWnKb?from=from_copylink)载好配置表格，结合上面给大家的洗稿工具
 
@@ -278,9 +278,9 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ##### 1.4封面图地址（D列）
 
-复制封面图的文件地址进去，右键图片，找到复制路径，复制出来的是这样的格式："F:\下载文件暂存\海报中转\蓝色科技扫码关注公众号二维码.png"
+复制封面图的文件地址进去，右键图片，找到复制路径，复制出来的是这样的格式："F:\下载文件暂存\海报中转\蓝色科技扫码关注👸号二维码.png"
 
-在填入表格时去掉引号，即：F:\下载文件暂存\海报中转\蓝色科技扫码关注公众号二维码.png
+在填入表格时去掉引号，即：F:\下载文件暂存\海报中转\蓝色科技扫码关注👸号二维码.png
 
 如果不添加封面图，表格留空就行
 
@@ -332,7 +332,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 首先在edge或者谷歌浏览器内部登陆
 
-公众号：https://mp.weixin.qq.com/
+👸号：https://mp.weixin.qq.com/
 
 墨滴平台：https://editor.mdnice.com/
 
@@ -348,7 +348,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ![](img/a5ece7e9358e9b1e8b0b2bd51d49fd17.png)
 
-[4公众号多账号教程.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J7l5b9Au5obUNCxVrOfcJFcVnxe)
+[4👸号多账号教程.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J7l5b9Au5obUNCxVrOfcJFcVnxe)
 
 ### 一：注册下载影刀
 
@@ -382,7 +382,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ![](img/4f1eac3077e101e938cbbcf3e87ed569.png)
 
-[公众号模板谷歌多开.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NeBGbm2TDoM706xiaMhc6XDfnud)
+[👸号模板谷歌多开.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NeBGbm2TDoM706xiaMhc6XDfnud)
 
 [万能文章洗稿工具](https://y9j12wbinr.feishu.cn/wiki/WiJlwinK6ihFT0kZ9o3cfdRWnKb?from=from_copylink)载好配置表格，结合上面给大家的洗稿工具
 
@@ -426,7 +426,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ###### C列一次性发布几篇文章
 
-C列这里代表着你一次要写多少篇文章，因为公众号可以一次性添加8篇文章，这大家可以自定义控制发布篇数
+C列这里代表着你一次要写多少篇文章，因为👸号可以一次性添加8篇文章，这大家可以自定义控制发布篇数
 
 ![](img/ed5b4b9758f93170bc131f0a3eff0282.png)
 
@@ -456,9 +456,9 @@ ps：如果只发一篇文章，此处就只写1
 
 ##### 2.4封面图地址（D列）
 
-复制封面图的文件地址进去，右键图片，找到复制路径，复制出来的是这样的格式："F:\下载文件暂存\海报中转\蓝色科技扫码关注公众号二维码.png"
+复制封面图的文件地址进去，右键图片，找到复制路径，复制出来的是这样的格式："F:\下载文件暂存\海报中转\蓝色科技扫码关注👸号二维码.png"
 
-在填入表格时去掉引号，即：F:\下载文件暂存\海报中转\蓝色科技扫码关注公众号二维码.png
+在填入表格时去掉引号，即：F:\下载文件暂存\海报中转\蓝色科技扫码关注👸号二维码.png
 
 如果不添加封面图，表格留空就行
 
@@ -508,7 +508,7 @@ ps：如果只发一篇文章，此处就只写1
 
 首先在edge浏览器登入墨滴平台（https://editor.mdnice.com/）
 
-在不同用户谷歌浏览器内部登陆对应公众号：https://mp.weixin.qq.com/
+在不同用户谷歌浏览器内部登陆对应👸号：https://mp.weixin.qq.com/
 
 如果是第一次使用墨滴，务必先创建一个文件夹，在文件夹内创建一个文章标题
 
@@ -522,7 +522,7 @@ ps：如果只发一篇文章，此处就只写1
 
 ![](img/280410560ecd2d8f20cebe598966a07f.png)
 
-[5公众号比特浏览器.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XmNbbLBXdooXUNxaEdyc2eJknDg)
+[5👸号比特浏览器.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XmNbbLBXdooXUNxaEdyc2eJknDg)
 
 ### 一：注册下载影刀
 
@@ -556,7 +556,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ![](img/721e173570632d27e5f51ad5c051f3ae.png)
 
-[公众号模板比特浏览器.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KNq6bDOpZogSUxx7xrSc5NTAnSh)
+[👸号模板比特浏览器.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KNq6bDOpZogSUxx7xrSc5NTAnSh)
 
 [万能文章洗稿工具](https://y9j12wbinr.feishu.cn/wiki/WiJlwinK6ihFT0kZ9o3cfdRWnKb?from=from_copylink)载好配置表格，结合上面给大家的洗稿工具
 
@@ -584,7 +584,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ###### C列一次性发布几篇文章
 
-C列这里代表着你一次要写多少篇文章，因为公众号可以一次性添加8篇文章，这大家可以自定义控制发布篇数
+C列这里代表着你一次要写多少篇文章，因为👸号可以一次性添加8篇文章，这大家可以自定义控制发布篇数
 
 ![](img/c9a9656684ce9396a1c3a510c5afbacf.png)
 
@@ -614,9 +614,9 @@ ps：如果只发一篇文章，此处就只写1
 
 ##### 2.4封面图地址（D列）
 
-复制封面图的文件地址进去，右键图片，找到复制路径，复制出来的是这样的格式："F:\下载文件暂存\海报中转\蓝色科技扫码关注公众号二维码.png"
+复制封面图的文件地址进去，右键图片，找到复制路径，复制出来的是这样的格式："F:\下载文件暂存\海报中转\蓝色科技扫码关注👸号二维码.png"
 
-在填入表格时去掉引号，即：F:\下载文件暂存\海报中转\蓝色科技扫码关注公众号二维码.png
+在填入表格时去掉引号，即：F:\下载文件暂存\海报中转\蓝色科技扫码关注👸号二维码.png
 
 如果不添加封面图，表格留空就行
 
@@ -666,13 +666,13 @@ ps：如果只发一篇文章，此处就只写1
 
 首先在edge浏览器登入墨滴平台（https://editor.mdnice.com/）
 
-在不同用户的比特浏览器内部登陆对应公众号：https://mp.weixin.qq.com/
+在不同用户的比特浏览器内部登陆对应👸号：https://mp.weixin.qq.com/
 
 如果是第一次使用墨滴，务必先创建一个文件夹，在文件夹内创建一个文章标题
 
 ![](img/333ec2301c13c6c6d1b9653811ebcfbe.png)
 
-# 小红书发布
+# 📕发布
 
 ## edge/谷歌浏览器
 
@@ -682,7 +682,7 @@ ps：如果只发一篇文章，此处就只写1
 
 ![](img/40d100cb4fd0170da1d4813d2a6548b8.png)
 
-[6小红书配置.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TQCqbOKnboTHTLxE8JGc6tNEn1d)
+[6📕配置.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TQCqbOKnboTHTLxE8JGc6tNEn1d)
 
 ### 一：注册下载影刀
 
@@ -718,7 +718,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ![](img/a8dbba750540cadcb70cc0dbb54ccf90.png)
 
-[小红书模板.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T3tNb1mK6oUWVPxvRTxcxQDLnRh)
+[📕模板.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T3tNb1mK6oUWVPxvRTxcxQDLnRh)
 
 ##### 1.1笔记类型（A列）
 
@@ -740,7 +740,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 此次放入视频的封面图地址：
 
-案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\小红书发布\测试\视频存放\2.jpg
+案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\📕发布\测试\视频存放\2.jpg
 
 如果没有封面图或者是图文类的，此处留空即可
 
@@ -794,7 +794,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ### 五：准备工具
 
-表格配置之后在edge或者谷歌浏览器登陆小红书对应账号
+表格配置之后在edge或者谷歌浏览器登陆📕对应账号
 
 ## 谷歌浏览器多账号
 
@@ -830,7 +830,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ![](img/de81111a0da366c99d7678f7a15ad6df.png)
 
-[小红书模板 - 谷歌多开.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UYhlbhI0eoOxxfxXm4Tc3llYnQj)
+[📕模板 - 谷歌多开.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UYhlbhI0eoOxxfxXm4Tc3llYnQj)
 
 ##### 1配置页
 
@@ -896,7 +896,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 此次放入视频的封面图地址：
 
-案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\小红书发布\测试\视频存放\2.jpg
+案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\📕发布\测试\视频存放\2.jpg
 
 如果没有封面图或者是图文类的，此处留空即可
 
@@ -956,7 +956,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ### 五：准备工具
 
-表格配置之后在谷歌浏览器登陆小红书对应账号
+表格配置之后在谷歌浏览器登陆📕对应账号
 
 ## 比特浏览器多账号
 
@@ -992,7 +992,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ![](img/57c250643534ef0740d09d07621bc790.png)
 
-[小红书模板 - 比特模板.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NzqHbaPD7oVxfxx5w0PcCftHndc)
+[📕模板 - 比特模板.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NzqHbaPD7oVxfxx5w0PcCftHndc)
 
 ##### 1配置页
 
@@ -1042,7 +1042,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 此次放入视频的封面图地址：​
 
-案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\小红书发布\测试\视频存放\2.jpg
+案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\📕发布\测试\视频存放\2.jpg
 
 如果没有封面图或者是图文类的，此处留空即可
 
@@ -1100,7 +1100,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 ### 五：准备工具
 
-表格配置之后在比特浏览器登陆小红书对应账号
+表格配置之后在比特浏览器登陆📕对应账号
 
 # 抖音发布
 
@@ -1170,7 +1170,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 此次放入视频的封面图地址：
 
-案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\小红书发布\测试\视频存放\2.jpg
+案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\📕发布\测试\视频存放\2.jpg
 
 如果没有封面图或者是图文类的，此处留空即可
 
@@ -1312,7 +1312,7 @@ https://www.winrobot360.com/share/accede?inviteKey=e63955eb-3ba7-4bf4-bd67-24765
 
 此次放入视频的封面图地址：
 
-案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\小红书发布\测试\视频存放\2.jpg
+案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\📕发布\测试\视频存放\2.jpg
 
 如果没有封面图或者是图文类的，此处留空即可
 
@@ -1434,7 +1434,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 此次放入视频的封面图地址：
 
-案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\小红书发布\测试\视频存放\2.jpg
+案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\📕发布\测试\视频存放\2.jpg
 
 如果没有封面图或者是图文类的，此处留空即可
 
@@ -1540,7 +1540,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 此次放入视频的封面图地址：
 
-案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\小红书发布\测试\视频存放\2.jpg
+案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\📕发布\测试\视频存放\2.jpg
 
 如果没有封面图或者是图文类的，此处留空即可
 
@@ -1668,7 +1668,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 此次放入视频的封面图地址：
 
-案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\小红书发布\测试\视频存放\2.jpg
+案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\📕发布\测试\视频存放\2.jpg
 
 如果没有封面图或者是图文类的，此处留空即可
 
@@ -1782,7 +1782,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 此次放入视频的封面图地址：
 
-案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\小红书发布\测试\视频存放\2.jpg
+案例：F:\旺仔\旺仔创业引流\rpa引流\自动发布工具\📕发布\测试\视频存放\2.jpg
 
 如果没有封面图或者是图文类的，此处留空即可
 
@@ -1910,7 +1910,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 首先在edge或者谷歌浏览器内部登陆
 
-公众号：https://mp.weixin.qq.com/
+👸号：https://mp.weixin.qq.com/
 
 ## 谷歌浏览器多账号
 
@@ -2034,7 +2034,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 首先在谷歌浏览器内部登陆
 
-公众号：https://mp.weixin.qq.com/
+👸号：https://mp.weixin.qq.com/
 
 ## 比特浏览器多账号
 
@@ -2144,7 +2144,7 @@ https://www.winrobot360.com/share/activity?inviteUserUuid=598859198794305538
 
 首先在edge或者谷歌浏览器内部登陆
 
-公众号：https://mp.weixin.qq.com/
+👸号：https://mp.weixin.qq.com/
 
 # 闲鱼自动上架
 

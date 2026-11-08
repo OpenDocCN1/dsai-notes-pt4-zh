@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/FHbRdsjofoUXZoxKNO5c54Y7ncd](https://yunyinghui.feishu.cn/docx/FHbRdsjofoUXZoxKNO5c54Y7ncd)
 
-> **原创公众号：**腾讯技术工程
+> **原创👸号：**腾讯技术工程
 
 > **发文时间：**2025-05-23 17:55:48
 
@@ -532,7 +532,7 @@ R1 出来后，Agent 产品们除了在模型层面光速接入 DeepSeek 之外�
 
 ![](img/cfa727f0f0c8c7741d2d5f73daa0f8e7.png)
 
-还有微信读书的 AI 问书、微信输入法的问 AI，底层的架构是基于小 size 的 QWen 模型做了 SFT 的 Agent + Deepseek R1 做最终解读，而在交互层，也是把 Agent 的工作过程和 R1 的思考融合呈现到深度思考的内容里了：
+还有🛰️读书的 AI 问书、🛰️输入法的问 AI，底层的架构是基于小 size 的 QWen 模型做了 SFT 的 Agent + Deepseek R1 做最终解读，而在交互层，也是把 Agent 的工作过程和 R1 的思考融合呈现到深度思考的内容里了：
 
 ![](img/ae19d3a5ffb5ea792574a6b922a1412a.png)
 

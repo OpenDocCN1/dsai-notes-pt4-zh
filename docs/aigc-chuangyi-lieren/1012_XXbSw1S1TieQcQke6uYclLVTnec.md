@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/S1Fod0g4Eotaezx1TGYctv7lnqc](https://aigcreative.feishu.cn/docx/S1Fod0g4Eotaezx1TGYctv7lnqc)
 
-> 作者：Julie       公众号：高工机器人
+> 作者：Julie       👸号：高工机器人
 
 > 链接：https://mp.weixin.qq.com/s/uKzpb71GF_scg46SF5PEyw
 
@@ -50,7 +50,7 @@
 
 **当**然，人形机器人走进汽车工厂正逐渐成为趋势。今年1月，人形机器人初创公司Figure宣布与汽车巨头宝马达成协议，正式将其人形机器人Figure 01引入宝马的汽车制造工厂。
 
-**2月22日，优必选也在其官方微信视频号中展示旗下人形机器人Walker S最新视频，在视频中W**alker S于蔚来工厂参与了门锁质检、车灯盖板检测、安全带检测、贴车标等工作。
+**2月22日，优必选也在其官方🛰️视频号中展示旗下人形机器人Walker S最新视频，在视频中W**alker S于蔚来工厂参与了门锁质检、车灯盖板检测、安全带检测、贴车标等工作。
 
 可以预见，未来还将会有更多的汽车制造厂商引入人形机器人，这不仅标志着人形机器人技术的成熟和实用性得到了工业界的认可，也预示着未来智能制造领域将迎来更深层次的人机协作和自动化创新。
 

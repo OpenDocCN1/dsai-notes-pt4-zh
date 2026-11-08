@@ -26,7 +26,7 @@
 
 +   从创业的角度看，一般在什么方面去找到你自己的信息源和合作方？
 
-+   看了周一的小红书和个人说明书，分享一本书叫《运营之光》
++   看了周一的📕和个人说明书，分享一本书叫《运营之光》
 
 [2024-03-02 周一 & Huiling ](https://fx0k8uq4yur.feishu.cn/wiki/QTqjwTbUBiRqskkbITScp9aOnzd#KzhGdnUGioR7gdxO9sjcTaEFnNk)详细的内容看huiling的知识库：
 

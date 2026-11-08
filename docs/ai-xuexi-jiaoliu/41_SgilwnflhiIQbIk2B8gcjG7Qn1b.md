@@ -58,7 +58,7 @@ https://www.crxsoso.com/webstore/detail/jfgfiigpkhlkbnfnbobbkinehhfdhndo
 
 #### 方法2）Chrome浏览器+ Page Assist
 
-**注意需要科学上网**
+**注意需要🪜**
 
 在chrome应用商店搜索“Page Assist”，获取并安装
 

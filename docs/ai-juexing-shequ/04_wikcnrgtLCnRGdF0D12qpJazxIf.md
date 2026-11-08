@@ -8,11 +8,11 @@
 
 ![](img/710f8d8ba7f2a81112851ab7172b0241.png)
 
-2022年Midjourney点燃，开始火爆：小红书“AI插画”词条已有五万+篇内容；B站等视频网站出现AI绘画教程
+2022年Midjourney点燃，开始火爆：📕“AI插画”词条已有五万+篇内容；B站等视频网站出现AI绘画教程
 
 2月Disco Diffusion面世，4月MidJourney上线、DALL-E 2内测，再后来陆续出现了Imagen、Parti、Stable Diffusion、NovelAI等AI绘画平台。
 
-9月底，微博CEO“来去之间”发起“呼叫AI帮我画”话题，并@名为“6pen”的AI绘画产品。昨天，“AI绘画是否会取代真人”话题再次引发热议，截至目前，共有692.9万次阅读。
+9月底，🧣CEO“来去之间”发起“呼叫AI帮我画”话题，并@名为“6pen”的AI绘画产品。昨天，“AI绘画是否会取代真人”话题再次引发热议，截至目前，共有692.9万次阅读。
 
 # 大纲目录
 
@@ -24,7 +24,7 @@
 
 四、**应用场景**：[提示词Prompt工具](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-QSrmd0de6o8lMBxkh2YcTHognPh)，包括分类、标签、组合生成、反向抽取
 
-五、**计算平台**：常见的[模型计算平台](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-NnlsdAG5VoGXFXx8jetc7cknnDf)，如[Google Colab](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-OFxcdtoDio9F2xx2LEgcmP81nwc)、[Kaggle](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-PCLpdeQjzolRzax9aXWci2ZZnGb)、[百度飞浆](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-Z1eWd1MQGo0NyQx9CZ2cwjQdnbT)、[HuggingFace](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-SvDldQFFNop4NpxrwZscuCkOngf)，以及[常用术语和FAQ](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-HQQCdETUeokchNx0Aq6ctGaNnKh)
+五、**计算平台**：常见的[模型计算平台](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-NnlsdAG5VoGXFXx8jetc7cknnDf)，如[Google Colab](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-OFxcdtoDio9F2xx2LEgcmP81nwc)、[Kaggle](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-PCLpdeQjzolRzax9aXWci2ZZnGb)、[百度飞浆](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-Z1eWd1MQGo0NyQx9CZ2cwjQdnbT)、[HuggingFace](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-SvDldQFFNop4NpxrwZscuCkOngf)，以及[常用术语和FAQ](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-H🐧CdETUeokchNx0Aq6ctGaNnKh)
 
 六、**项目变现**：AI绘画[变现模式梳理](https://diwfpqo78m.feishu.cn/wiki/wikcnrgtLCnRGdF0D12qpJazxIf#part-OJztdvytGoSCVIxcn0Rc6UZjnyd)
 
@@ -572,7 +572,7 @@ PC：https://ai.feilianyun.cn/
 
 小程序
 
-微信公众号：飞链云 3D 数字生态
+🛰️👸号：飞链云 3D 数字生态
 
 注册即赠送100次AI绘画次数，实名认证送100次。
 
@@ -598,7 +598,7 @@ https://draft.art/
 
 付费
 
-公众号：KK 画廊
+👸号：KK 画廊
 
 版权：生成者
 
@@ -1044,7 +1044,7 @@ https://draw.dianas.cyou/GettingStarted/term/
 
 1.  卖国外AI绘画平台教程，199元AI绘画课程
 
-+   商家提供海外AI绘画平台使用教程、壁纸下载公众号的入驻通道，学员把生成AI图片放到公众号供下载
++   商家提供海外AI绘画平台使用教程、壁纸下载👸号的入驻通道，学员把生成AI图片放到👸号供下载
 
 +   商家每天发布壁纸下载量的前二十名，前几名一般都有一千多下载量，一次下载0.2-0.3元，一天两三百
 
@@ -1114,7 +1114,7 @@ https://guide.novelai.dev/
 
 +   [AI绘画软件设计的概念裙子](https://www.dazuoshe.com/aihuihuaruanjianshejidegaini.html)
 
-+   [QQ AI画画｜探索机器创造力](https://cloud.tencent.com/developer/article/2216329)
++   [🐧 AI画画｜探索机器创造力](https://cloud.tencent.com/developer/article/2216329)
 
 # 获取更多情报
 

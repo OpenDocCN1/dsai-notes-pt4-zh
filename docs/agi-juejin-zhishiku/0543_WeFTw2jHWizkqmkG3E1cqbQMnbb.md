@@ -2,7 +2,7 @@
 
 > 来源：[https://agijuejin.feishu.cn/docx/C6Sbd5l8lobg2ExIEDPcU95Wnug](https://agijuejin.feishu.cn/docx/C6Sbd5l8lobg2ExIEDPcU95Wnug)
 
-> 原文2025年9月18日发布于微信公众号：AGI观察，https://mp.weixin.qq.com/s/wxrQjPTB6CMD69E89MM1sQ，
+> 原文2025年9月18日发布于🛰️👸号：AGI观察，https://mp.weixin.qq.com/s/wxrQjPTB6CMD69E89MM1sQ，
 
 > 并同步更新了我个人飞书知识库
 

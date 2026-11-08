@@ -26,7 +26,7 @@
 
 ![](img/7f6b438dfd22206b52c77e537dd42953.png)
 
-+   微信公众号、飞书文档、X（Twitter）
++   🛰️👸号、飞书文档、X（Twitter）
 
 ![](img/0a2099fe00f641aee392569f7b51ee72.png)
 
@@ -120,7 +120,7 @@
 
 ---
 
-> 欢迎填写AI Shar**e Card** 模板社区投稿问卷，或联系 一泽Eze (微信 eze_is/ezewyz@gmail.com) 投稿你的模板代码～
+> 欢迎填写AI Shar**e Card** 模板社区投稿问卷，或联系 一泽Eze (🛰️ eze_is/ezewyz@gmail.com) 投稿你的模板代码～
 
 <https://chatmemo.feishu.cn/sync/PKbfdU9TYsl5AAbNxBfcanfonUg>
 

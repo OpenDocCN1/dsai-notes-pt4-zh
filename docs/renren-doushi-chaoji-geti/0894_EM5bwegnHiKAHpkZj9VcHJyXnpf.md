@@ -1,4 +1,4 @@
-# 小红书批量工具·矩阵产品说明书
+# 📕批量工具·矩阵产品说明书
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/MBl6d6qfAoti7mxDmW5cf8CGnwg](https://xuqiwei1986.feishu.cn/docx/MBl6d6qfAoti7mxDmW5cf8CGnwg)
 
@@ -12,7 +12,7 @@
 
 **欢迎来合作**
 
-寻找长期能提供小红书地推号、千粉号、认证等小红书资源
+寻找长期能提供📕地推号、千粉号、认证等📕资源
 
 **长期大量需要**
 
@@ -22,9 +22,9 @@
 
 **更新时间：**2026 年 03 月 21 日
 
-**面向人群：**小红书带货，小红书获客
+**面向人群：**📕带货，📕获客
 
-**文档说明：**产品工具使用方式，帮助客户在小红书平台探索更多的可能性
+**文档说明：**产品工具使用方式，帮助客户在📕平台探索更多的可能性
 
 ![](img/30f7e456130711d7c83e437061039553.png)
 
@@ -54,9 +54,9 @@
 
 1.  没有分销权益执行了工具售卖，请自行处理好售后问题。
 
-1.  为了维护小红书矩阵系列增量运营人员权益，解绑工具换电脑绑定会额外花费50元；包括不限于换电脑、重装电脑等等各种原因都按解绑处理。
+1.  为了维护📕矩阵系列增量运营人员权益，解绑工具换电脑绑定会额外花费50元；包括不限于换电脑、重装电脑等等各种原因都按解绑处理。
 
-1.  工具使用者遇到问题请到群进行提问，有对应的微信群。
+1.  工具使用者遇到问题请到群进行提问，有对应的🛰️群。
 
 1.  购买给自己公司或者身边人使用，请自行培训员工或者培训他人。
 
@@ -64,7 +64,7 @@
 
 ## （三）激活工具
 
-激活点击👉获取小红书矩阵系列工具激活码
+激活点击👉获取📕矩阵系列工具激活码
 
 ## （四）工具问题100%售后
 
@@ -76,15 +76,15 @@
 
 1.  遇到问题提供工具截图、运行日志
 
-1.  点击👉指纹浏览器授权子账号模拟排查问题【大概率是小红书更新导致】
+1.  点击👉指纹浏览器授权子账号模拟排查问题【大概率是📕更新导致】
 
 1.  在线远程服务解决问题
 
-## （五）微信同行矩阵交流群
+## （五）🛰️同行矩阵交流群
 
-> 1、提供小红书实名认证资源
+> 1、提供📕实名认证资源
 
-> 2、提供小红书注册
+> 2、提供📕注册
 
 > 3、提供人脸验核
 
@@ -98,19 +98,19 @@
 
 🔞点击👉不困[系列账号绑定的手机卡来源](https://172.lot-ml.com/ProductEn/Index/6281f3276511b187)
 
-### （二）小红书使用电脑管理
+### （二）📕使用电脑管理
 
 [电脑矩阵管理系统下载](https://aajyscaau4a.feishu.cn/docx/FgZ4doTCjo4GOWxJDr7cvk4vnFe)
 
-### （三）小红书实名认证资源
+### （三）📕实名认证资源
 
-### （四）小红书注册、验证资源
+### （四）📕注册、验证资源
 
 ![](img/4c74d0d441d819111f81b2f512e10286.png)
 
-## 三、小红书矩阵独享IP环境配置
+## 三、📕矩阵独享IP环境配置
 
-**温馨导航：小红书行业交流群成员加**入7天内，可以免费帮忙搭建独享10个IP
+**温馨导航：📕行业交流群成员加**入7天内，可以免费帮忙搭建独享10个IP
 
 ### （一）天翼云独享IP【**文档+视频**】
 
@@ -136,7 +136,7 @@
 
 ![](img/4d2b4a04651f0e60518237f16ca042d6.png)
 
-## 四、小红书矩阵系列教程【必看】
+## 四、📕矩阵系列教程【必看】
 
 ### （一）保姆级教程
 
@@ -146,7 +146,7 @@
 
 下载👉👉👉htt**p**s://aajyscaau4a.feishu.cn/docx/Rs30dE37dokQGBxe1HEc9ou2nef
 
-### （三）小红书矩阵工具开发日志（原创开发）
+### （三）📕矩阵工具开发日志（原创开发）
 
 查阅👉https://ycnjcevcyxco.feishu.cn/docx/Kw6TdEcIyonI7Mx8jagcrZvLnYg
 
@@ -170,25 +170,25 @@
 
 ## 六、内容分享
 
-温馨导航：飞书文档库小红书交流群专享
+温馨导航：飞书文档库📕交流群专享
 
-## （十四）小红书批量投诉同行笔记
+## （十四）📕批量投诉同行笔记
 
 参考教程：https://mp.weixin.qq.com/s/cZPBJQqQBuC1X5R9ELeK8A
 
-飞书文档库：[小红书举报投诉删帖教程（批量）](https://aajyscaau4a.feishu.cn/docx/UckZdayvXoWka0xDQCVcUktpnMb)
+飞书文档库：[📕举报投诉删帖教程（批量）](https://aajyscaau4a.feishu.cn/docx/UckZdayvXoWka0xDQCVcUktpnMb)
 
 ## （十三）n8n本地部署教程
 
 参考教程：https://mp.weixin.qq.com/s/LNMPDQiqczk9JqWLNZ_FBQ
 
-## （十二）扣子Coze教程：自动采集1000条小红书爆款笔记（附实战工作流）
+## （十二）扣子Coze教程：自动采集1000条📕爆款笔记（附实战工作流）
 
 参考教程：https://mp.weixin.qq.com/s/6uIr9ymM0khIqzSFiYZkXQ
 
-飞书文档库：[【源码+多维表格模板】通过关键词采集小红书数据](https://aajyscaau4a.feishu.cn/docx/SugXdlSHUofqjexmjpGc12eknEd)
+飞书文档库：[【源码+多维表格模板】通过关键词采集📕数据](https://aajyscaau4a.feishu.cn/docx/SugXdlSHUofqjexmjpGc12eknEd)
 
-## （十一）把别人的爆款小红书内容账号复刻成自己的
+## （十一）把别人的爆款📕内容账号复刻成自己的
 
 参考教程：https://mp.weixin.qq.com/s/mBzSZpG-71K-x6B3pG2jeA
 
@@ -198,7 +198,7 @@
 
 飞书文档库：[https://aajyscaa](https://aajyscaau4a.feishu.cn/docx/STMzdwCEnovKjhx9bjpcpatBnEd)u4a.feishu.cn/docx/S
 
-## （九）使用知乎高赞作品批量生成小红书图片
+## （九）使用知乎高赞作品批量生成📕图片
 
 > 不公开
 
@@ -208,35 +208,35 @@
 
 视频教程：https://www.bilibili.com/video/BV1
 
-## （七）小红书批量生成内容，全是原创！
+## （七）📕批量生成内容，全是原创！
 
 参考教程：https://mp.weixin.qq.com/s/kBgkwNm5cH9oZe8q4wSVjw
 
 飞书文档库：https://aajyscaau4a.feishu.cn/docx/QVmwd3ugIoHl7gxYwrlcEgUbn6c
 
-## （六）【带薪拉屎】-Coze小红书图文自动生成
+## （六）【带薪拉屎】-Coze📕图文自动生成
 
 参考教程：https://mp.weixin.qq.com/s/IvE3unle9_8Xfabe-5k-ow
 
-## （五）🔥小红书爆款作品仿写【Coze+Deepseek+快捷指令+飞书多维表格】
+## （五）🔥📕爆款作品仿写【Coze+Deepseek+快捷指令+飞书多维表格】
 
 参考教程：https://mp.weixin.qq.com/s/spjSePEoAYSP7bdf1WWexQ
 
-飞书文档库：[小红书爆款作品仿写【Coze智能体+Deepseek+飞书多维表格】](https://aajyscaau4a.feishu.cn/docx/FG5JdnptWopUKtxXicYcWdDInaf)
+飞书文档库：[📕爆款作品仿写【Coze智能体+Deepseek+飞书多维表格】](https://aajyscaau4a.feishu.cn/docx/FG5JdnptWopUKtxXicYcWdDInaf)
 
-## （四）小红书作品封面批量自动生成【Coze+Deepseek+即梦3.0+飞书多维表格】
+## （四）📕作品封面批量自动生成【Coze+Deepseek+即梦3.0+飞书多维表格】
 
 参考教程：https://mp.weixin.qq.com/s/AktbXBiWD7MOYvc-NmeT2w
 
-飞书文档库：[小红书封面自动生成【Coze+Deepseek+即梦3.0+飞书多维表格】](https://aajyscaau4a.feishu.cn/docx/XmvrdQvU2oyPOkxRUj9c9G8PnAh)
+飞书文档库：[📕封面自动生成【Coze+Deepseek+即梦3.0+飞书多维表格】](https://aajyscaau4a.feishu.cn/docx/XmvrdQvU2oyPOkxRUj9c9G8PnAh)
 
-## （三）小红书伪原创文案和爆款标题
+## （三）📕伪原创文案和爆款标题
 
 参考教程：https://mp.weixin.qq.com/s/YF3UMiG-JPort6T4oY_C2A
 
-飞书文档库：[小红书爆款内容伪原创文案和爆款标题分析](https://aajyscaau4a.feishu.cn/docx/K56QdkvYAoC6Thx8m88cXupMnza)
+飞书文档库：[📕爆款内容伪原创文案和爆款标题分析](https://aajyscaau4a.feishu.cn/docx/K56QdkvYAoC6Thx8m88cXupMnza)
 
-## （二）小红书万粉账号速成
+## （二）📕万粉账号速成
 
 参考教程：https://mp.weixin.qq.com/s/8S02-rDO-zG2yzx6t1P51Q
 
@@ -246,13 +246,13 @@
 
 参考教程：https://mp.weixin.qq.com/s/A7UdTY49fDDdoGaRsl86Sw
 
-飞书文档库：[一天生产1000篇小红书笔记【完整版】](https://aajyscaau4a.feishu.cn/docx/NGSCdGygkoqT5SxwuAicXXGAnSf)
+飞书文档库：[一天生产1000篇📕笔记【完整版】](https://aajyscaau4a.feishu.cn/docx/NGSCdGygkoqT5SxwuAicXXGAnSf)
 
 ## （零）
 
 [2024不困笔记实战项目交付手册（内部持续更新）](https://aajyscaau4a.feishu.cn/docx/MmJfdsZoiovR1lxGQeBcygInnvc)
 
-🌈小红书批量投诉：https://aajyscaau4a.feishu.cn/docx
+🌈📕批量投诉：https://aajyscaau4a.feishu.cn/docx
 
 ![](img/a4ea1751bc0ded49f91fdee3b4655772.png)
 

@@ -108,7 +108,7 @@ Meta 公司已停止运营其明星 AI 聊天机器人功能，该功能曾于�
 
 ![](img/2e45fda662802d91d9657a93301c1d46.png)
 
-有新Newin｜[阅读原文](https://sourl.co/pQQFsY)
+有新Newin｜[阅读原文](https://sourl.co/p🐧FsY)
 
 Canva 完成对 AI 图像设计初创公司 Leonardo.ai 的收购，该公司专注于提供创新设计和生成工具，其产品包括 AI 驱动的设计生成、智能图像编辑、创意灵感和建议、模板资源库、协作共享等功能，支持多平台使用。Leonardo.ai 的加入将增强 Canva 的 Magic Studio 功能，同时保持独立运营，专注于创新研发。此次收购是 Canva 在设计领域进一步扩展其 AI 工具和市场影响力的战略举措。
 

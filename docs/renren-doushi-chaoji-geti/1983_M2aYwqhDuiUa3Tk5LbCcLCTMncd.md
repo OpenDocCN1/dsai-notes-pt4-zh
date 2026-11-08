@@ -12,7 +12,7 @@
 
 [书单](https://xuqiwei1986.feishu.cn/wiki/YC68wFXeoiyFwrkz1eicemnmnVg)
 
-[PM必关注的微信公众号](https://xuqiwei1986.feishu.cn/wiki/Ms0JwAYkwi8EhikivBXcEujun2e)
+[PM必关注的🛰️👸号](https://xuqiwei1986.feishu.cn/wiki/Ms0JwAYkwi8EhikivBXcEujun2e)
 
 [Chrome插件推荐](https://xuqiwei1986.feishu.cn/wiki/GJecwVsRCiCCkGked56cHdianIc)
 
@@ -64,10 +64,10 @@ PMTalk-一个帮助产品人成长的社区
 | --- | --- | --- | --- | --- |
 | [飞瓜数据](https://www.feigua.cn/) | [巨量算数](https://trendinsight.oceanengine.com/arithmetic-index) | [腾讯广告](https://e.qq.com/ads/) | [天眼查](https://www.tianyancha.com/) | [站长之家工具-查SEO](https://tool.chinaz.com/) |
 | [蝉妈妈-抖音直播短视频](https://www.chanmama.com/) | [百度指数](https://index.baidu.com/v2/index.html#/) | [头条巨量引擎](https://www.oceanengine.com/) | [企查查](https://www.qcc.com/) | similarweb-查网站APP |
-| [友望-视频号数据](http://www.youwant.cn/) | [微博热点](https://www.wrd.cn/login.shtml) | [百度营销](https://e.baidu.com/) | [国家企业信用系统](https://www.gsxt.gov.cn/index.html) |  |
+| [友望-视频号数据](http://www.youwant.cn/) | [🧣热点](https://www.wrd.cn/login.shtml) | [百度营销](https://e.baidu.com/) | [国家企业信用系统](https://www.gsxt.gov.cn/index.html) |  |
 | [火烧云-B站广告](https://www.hsydata.com/) | [360趋势](https://trends.so.com/) | [阿里妈妈](https://www.alimama.com/) | [京东蓝鲸征信](https://icredit.jd.com/) |  |
-| [新榜-公众号抖音快手数据](https://www.newrank.cn/) | [网站排名](https://www.aizhan.com/) | [新浪微博广告](https://tui.weibo.com/tool/dmp) | [学信网](https://www.chsi.com.cn/) |  |
-| [搜秀数据-小红书-抖音KOL](https://www.souxiu.cn/) | [七麦数据](https://www.qimai.cn/) | [美团推广通](https://ad.meituan.com/app/shopdiy-official/index.html) |  |  |
+| [新榜-👸号抖音快手数据](https://www.newrank.cn/) | [网站排名](https://www.aizhan.com/) | [新浪🧣广告](https://tui.weibo.com/tool/dmp) | [学信网](https://www.chsi.com.cn/) |  |
+| [搜秀数据-📕-抖音KOL](https://www.souxiu.cn/) | [七麦数据](https://www.qimai.cn/) | [美团推广通](https://ad.meituan.com/app/shopdiy-official/index.html) |  |  |
 |  |  | TopSocial新媒体精准投放 |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
@@ -86,11 +86,11 @@ PMTalk-一个帮助产品人成长的社区
 
 # 常用后台
 
-| [微信公众号](https://mp.weixin.qq.com/) | [头条号后台](https://mp.toutiao.com/) | [B站创作者中心](https://member.bilibili.com/platform/home) | [百度统计后台](https://tongji.baidu.com/) |
+| [🛰️👸号](https://mp.weixin.qq.com/) | [头条号后台](https://mp.toutiao.com/) | [B站创作者中心](https://member.bilibili.com/platform/home) | [百度统计后台](https://tongji.baidu.com/) |
 | --- | --- | --- | --- |
-| [微信视频号后台](https://channels.weixin.qq.com/) | [抖音创作服务平台](https://creator.douyin.com/) | [百家号后台](https://baijiahao.baidu.com/builder/rc/home) |  |
+| [🛰️视频号后台](https://channels.weixin.qq.com/) | [抖音创作服务平台](https://creator.douyin.com/) | [百家号后台](https://baijiahao.baidu.com/builder/rc/home) |  |
 | [腾讯内容开放平台](https://om.qq.com/) | [快手创作者服务平台](https://cp.kuaishou.com/) | [知乎后台](https://www.zhihu.com/creator) |  |
-|  |  | [小红书后台](https://creator.xiaohongshu.com/) |  |
+|  |  | [📕后台](https://creator.xiaohongshu.com/) |  |
 |  |  |  |  |
 
 # 大厂团队

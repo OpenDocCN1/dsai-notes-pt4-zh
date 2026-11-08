@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/GbCKdpIrIotByoxyPJuchLhOnfe](https://xuqiwei1986.feishu.cn/docx/GbCKdpIrIotByoxyPJuchLhOnfe)
 
-> 大家好，我是达轮，今年418加入生财，有幸被邀成为n8n的航海教练，同时也参加了 “AI 自媒体 - X（推特）”的航海，因此，我还想写一篇关于X上自动化内容的文章。
+> 大家好，我是达轮，今年418加入赚钱，有幸被邀成为n8n的航海教练，同时也参加了 “AI 自媒体 - X（推特）”的航海，因此，我还想写一篇关于X上自动化内容的文章。
 
 > 上一篇 [<<](https://scys.com/articleDetail/xq_topic/2852428158445581)[用AI](https://scys.com/articleDetail/xq_topic/2852428158445581) Agent+N8N在Reddit找海外需求>>  ，希望本篇文章对大家有用。
 

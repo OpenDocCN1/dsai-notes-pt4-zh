@@ -60,7 +60,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/JuWNdp1aQA-pLjv-NiJW4Q)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/JuWNdp1aQA-pLjv-NiJW4Q)
 
 +   [OpenAI原文链接](https://openai.com/index/accelerating-biological-research-in-the-wet-lab/)
 
@@ -144,7 +144,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信文章原文](https://mp.weixin.qq.com/s/AEBJ1PwbaPMWdVF-Wbxyow)
++   [🛰️文章原文](https://mp.weixin.qq.com/s/AEBJ1PwbaPMWdVF-Wbxyow)
 
 +   [论文地址](https://arxiv.org/pdf/2511.22619)
 

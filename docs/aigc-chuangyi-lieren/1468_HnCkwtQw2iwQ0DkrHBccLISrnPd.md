@@ -4,7 +4,7 @@
 
 > 原文链接： https://mp.weixin.qq.com/s/DU_ugU89gJlre6fNVYwP1w
 
-> 原创：公众号：AIGC创意猎人
+> 原创：👸号：AIGC创意猎人
 
 **今天的创意， 来自X（推**特）上@ Berryxia.AI 的提示词大佬的分享：
 

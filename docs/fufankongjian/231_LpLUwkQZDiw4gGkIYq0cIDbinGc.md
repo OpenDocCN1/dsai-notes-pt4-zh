@@ -50,7 +50,7 @@
 
 ![](img/223fa93681ba0268b470d49eebb1b826.png)
 
-[2025-09-18 14-26-36.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BQQfb4WJnoDRDUx8JrGclkfCnig)
+[2025-09-18 14-26-36.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B🐧fb4WJnoDRDUx8JrGclkfCnig)
 
 设置完重启Cursor，我们就能把Codex功能按钮拖拽到右侧了。
 

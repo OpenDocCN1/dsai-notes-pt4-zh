@@ -1,4 +1,4 @@
-# 【集成示例】企业微信
+# 【集成示例】企业🛰️
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/GZ1QdE574oSsjnxxaK8cK1TTnmh](https://v11enp9ok1h.feishu.cn/docx/GZ1QdE574oSsjnxxaK8cK1TTnmh)
 
@@ -18,13 +18,13 @@
 
 1.  访问[**RAM控制台**](https://ram.console.aliyun.com/manage/ak)，获取阿里云账号的ACCESS_KEY和SECRET_KEY。
 
-### **企业微信配置**
+### **企业🛰️配置**
 
-+   访问企业微信[**后台**](https://work.weixin.qq.com/wework_admin/frame#profile)，获取企业 ID。
++   访问企业🛰️[**后台**](https://work.weixin.qq.com/wework_admin/frame#profile)，获取企业 ID。
 
 ![](img/cc807f517fc3c7c494ab9d689c64a7a6.png)
 
-+   登录[**企业微信应用**](https://work.weixin.qq.com/wework_admin/frame#apps)平台。
++   登录[**企业🛰️应用**](https://work.weixin.qq.com/wework_admin/frame#apps)平台。
 
 +   选择**应用管理**菜单，然后创建应用。
 
@@ -62,9 +62,9 @@
 
 1.  [然后需要](https://developer.work.weixin.qq.com/document/path/90239)解析接收的信息，得到用户的提问信息和用户信息。详情请参考：消息格式。
 
-1.  接着您需要调用GetToken API获取微信的AccessToken，每次调用微信的接口都会用到。详情请参考：获取调用凭证access_token。
+1.  接着您需要调用GetToken API获取🛰️的AccessToken，每次调用🛰️的接口都会用到。详情请参考：获取调用凭证access_token。
 
-1.  得到企业微信AccessToken。
+1.  得到企业🛰️AccessToken。
 
 1.  接着您应该生成调用流式会话接口所需的签名。该签名应包含当前时间戳（Timesta[mp）和第二](https://help.aliyun.com/zh/beebot/intelligent-dialogue-robot-tongyi-version/chat-api-signature)步接口返回的 StreamSecret 参数来计算生成。详情请参考：会话接口签名。
 

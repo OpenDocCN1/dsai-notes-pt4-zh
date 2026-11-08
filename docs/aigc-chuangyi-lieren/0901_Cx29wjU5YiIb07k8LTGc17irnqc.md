@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/EDakdgtl2opXQRx3RiWcORvpnhd](https://aigcreative.feishu.cn/docx/EDakdgtl2opXQRx3RiWcORvpnhd)
 
-> 来源：公众号：cgview ，作者VFXQH
+> 来源：👸号：cgview ，作者VFXQH
 
 ## **前言**
 

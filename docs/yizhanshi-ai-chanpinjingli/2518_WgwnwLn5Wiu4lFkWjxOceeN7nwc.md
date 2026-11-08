@@ -72,13 +72,13 @@
 
 +   Agent Neo优势在于能执行超长任务、生成超长内容，具备“无限流程 + 云端执行”特性，可实现不中断式持续跟进。
 
-+   Flowith在小红书运营出色，借DeepSeek实现增长，总结了小红书运营方法论。
++   Flowith在📕运营出色，借DeepSeek实现增长，总结了📕运营方法论。
 
 +   Flowith团队精简，burn rate低，融资方面今年国内机构热情高涨。
 
 +   Flowith短期优化产品，长期欲成终极AI创作工具，认为通用型Agent适合模型厂商，创业公司机会在垂直类Agent。
 
-> 关键词：Agent Neo，AI创作工具，小红书运营，精简团队，垂直类Agent
+> 关键词：Agent Neo，AI创作工具，📕运营，精简团队，垂直类Agent
 
 >
 

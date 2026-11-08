@@ -237,12 +237,12 @@
 
 | **活动名称** | **活动时间(1h)** | **活动形式** | **分享材料** |
 | --- | --- | --- | --- |
-| [**【十万个**](https://meeting.tencent.com/v2/cloud-record/share?id=135ba48a-eee2-438a-9638-bf9b1849e270&amp;from=3&amp;is-single=false&amp;record_type=2)为什么-AI创意应用开发】-开营仪式 | 2024/05/13 19:30 | B站、视频号直播 | [《十万个为什么》AI创意应用赛学习手册](https://datawhaler.feishu.cn/wiki/SeJNwVNimiaoQQkZAVhc2ljcnzc) |
+| [**【十万个**](https://meeting.tencent.com/v2/cloud-record/share?id=135ba48a-eee2-438a-9638-bf9b1849e270&amp;from=3&amp;is-single=false&amp;record_type=2)为什么-AI创意应用开发】-开营仪式 | 2024/05/13 19:30 | B站、视频号直播 | [《十万个为什么》AI创意应用赛学习手册](https://datawhaler.feishu.cn/wiki/SeJNwVNimiao🐧kZAVhc2ljcnzc) |
 | [**【十万个**](https://meeting.tencent.com/v2/cloud-record/share?id=b2a9af25-4aef-4428-9283-b03d28825ed6&amp;from=3&amp;record_type=2)为什么-AI创意应用开发】-启发分享 | 2024/05/14 21:00 | B站、视频号直播 | [创意脑暴记录](https://datawhaler.feishu.cn/wiki/S9E6wxXfgiklankzUykcLvMRnKd) |
 | [**【十万个为什么-A**](https://meeting.tencent.com/v2/cloud-record/share?id=e9d87129-ef86-4409-83f8-f4b754935b68&amp;from=3&amp;is-single=false&amp;record_type=2)I创意应用开发】-RAG赛道案例分享 | 2024/05/16 21:00 | B站、视频号直播 | [1. 【RAG赛道】案例](https://datawhaler.feishu.cn/wiki/LiqFwbMW7idMRskqieGcMX0qnVf) |
 | [**【十万个为什么-A**](https://meeting.tencent.com/v2/cloud-record/share?id=7780c79a-bae2-47d7-8435-b0525030c115&amp;from=3&amp;is-single=false&amp;record_type=2)I创意应用开发】-多模态赛道案例分享 | 2024/05/17 21:00 | B站、视频号直播 | [2. 【多模态赛道】案例](https://datawhaler.feishu.cn/wiki/X5nhwvF7sitrISk3LRJc12hynOf) |
 | **【十万个为什**么-AI创意应用开发】-案例方案互评 | 2024/05/25 15:00 | 腾讯会议 | [《十万》方案交流会](https://datawhaler.feishu.cn/wiki/FDPxwLp33iilPhkab5XccruDnxp) |
-| **【十万个**为什么-AI创意应用开发】-结营仪式 | 2024/05/27 20:00 | 微信群 |  |
+| **【十万个**为什么-AI创意应用开发】-结营仪式 | 2024/05/27 20:00 | 🛰️群 |  |
 
 ## 官方工具文档汇总
 
@@ -264,7 +264,7 @@
 
 ## [加学群学习情况记录](https://datawhaler.feishu.cn/wiki/DyAywrKmliIrL5krjZtc843lnXc)
 
-> 没有过大模型应用开发相关经验的小伙伴，可添加助教微信加入【加学群】
+> 没有过大模型应用开发相关经验的小伙伴，可添加助教🛰️加入【加学群】
 
 > 加学群会为大家提供加学任务，更好地参与本次赛事
 
@@ -284,7 +284,7 @@
 | **鲁宝的科普皮影沙盒** | 鲁宝早教探究 | 多模态应用赛道 | 效果详见：https://www.bilibili.com/video/BV1Gi421Q7vB | https://aistudio.baidu.com/application/detail/33347 |
 | **《十万个为什么》家长伴读版** | yuan_pocket | RAG应用赛道 | 《十万个为什么》家长伴读版应用是一个专为家庭设计的数字化教育工具。它通过智能AI技术，将复杂的科学问题转化为儿童易于理解的孩子口吻。应用的核心功能包括答案快速搜索、语音合成，允许家长和孩子通过看或听的方式学习，亲子共读等。此应用适合家长使用，选择问题，将科普答案自己念给孩子听（可以选择原文，也可以选择AI改编后的儿童口吻），或者直接语音播放。同时也适合小朋友自己听读。 | https://aistudio.baidu.com/application/detail/32475 |
 | **快乐星球** | 你说的对 | RAG应用赛道 | https://g5b4uupmby.feishu.cn/wiki/F3REwiI46iSOa0kGFfecPN3jnxc |  |
-| 知趣阅读-KnowledgeJoy | 知趣 | 多模态应用赛道 | 适应碎片时间和碎片化阅读，通过大模型把书中内容提取、重组，成为一块块碎片故事或知识，以feed流形式呈现（效果类似小红书、视频号主页等）。帖子内部加入问答测试和对话环节。 |  |
+| 知趣阅读-KnowledgeJoy | 知趣 | 多模态应用赛道 | 适应碎片时间和碎片化阅读，通过大模型把书中内容提取、重组，成为一块块碎片故事或知识，以feed流形式呈现（效果类似📕、视频号主页等）。帖子内部加入问答测试和对话环节。 |  |
 | 趣刷——文心助力的十万科普儿童短视频应用 | 二倍速的书–zsbd | 多模态应用赛道 | 趣刷——就是让小朋友在兴趣驱使下刷视频，同时收获了一本书的知识。我们的视频基于书中知识点，视频推荐系统结合浏览历史。其中视频部分不同于一般的组图展示，更有结合文字内容的动画展示，深入浅出。小朋友看完视频学习后，还可以继续向AI BOT提问互动。 | https://aistudio.baidu.com/application/detail/32902 |
 | **智慧启迪绘** | 十万个所以 | RAG应用赛道 | 智慧启迪绘不仅仅是一个应用程序，它是一个能引领孩子们踏上一段奇妙求知之旅的伙伴，带领孩子们进入神奇知识世界的导航员，父母陪伴自己孩子一起阅读《十万个为什么》系列丛书和解答阅读过程中更多疑问的知识助手。  借由集成RAG技术与多模态生成技术的力量，我们倾心打造了一款既具娱乐性又富含教育意义，充满趣味性和互动性的视频生成平台，在孩子们阅读《十万个为什么》系列丛书时，进一步激发他们的好奇心，培养更好的观察能力、思考能力和表达能力。  我们致力于创造一个既能娱乐也能教育的视频生成应用，将《十万个为什么》系列丛书的丰富知识转化为易于消化和吸收的内容，使之成为亲子共读的桥梁，在欢声笑语中助力孩子们在轻松愉快的氛围中学习成长。智慧启迪绘不仅是一个应用，它是开启孩子智慧大门的一把钥匙。在这里，学习不再是枯燥的任务，而是充满乐趣和惊喜的旅程。让我们携手，为孩子们构建一个充满想象力和知识启迪的成长空间，见证《十万个为什么》系列丛书丰富有趣知识的魔力！ | 【智慧启迪绘】 |
 | **十万个ChatTests** | ChatTests-五月竞赛组 | 多模态应用赛道 | 十万个ChatTests是ChatTests的《十万个为什么》特供版，  在当今信息爆炸的时代，用户可以随时随地提出各种问题。然而，并不是所有问题都是有价值的。很多时候，用户缺乏提出高质量、深度问题的能力。尤其是对于学生和知识工作者而言，提出好问题不仅能够激发深入思考，还能提高学习和工作效率。目前，市面上缺乏一个能够有效帮助用户提升提问能力的工具。  十万个ChatTests旨在探索通过模仿《十万个为什么》的思考方式，为用户提供提问能力的训练，提升用户的提问能力和信息洞察能力、 | https://aistudio.baidu.com/application/detail/32213 |

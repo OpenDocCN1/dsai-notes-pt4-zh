@@ -20,7 +20,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/845/547.htm)
 
 ## 🌟 技术突破
 
-### 💡 支付宝被AI调用，一句话运营小红书！国内最大MCP社区来了
+### 💡 支付宝被AI调用，一句话运营📕！国内最大MCP社区来了
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JT6KMICG0511ABV6.html?spss=dy_author)
 

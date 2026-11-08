@@ -156,4 +156,4 @@ Figure 4: Results of data scaling law study on ToolBench with different evaluati
 
 结论3: 添加用户指令数据微调效果更佳 ：α-UMi w/ reuse（重用用户指令的版本）在大多数指标上优于 α-UMi w/o reuse（不重用用户指令的版本），这表明 在微调过程中重用用户指令可以帮助模型更好地学习和适应任务需求。
 
-+   **👇**关注公众号 NLP PaperWeekly ，对话框输入“ UMi ”，即可领取 上述PDF论文 👇
++   **👇**关注👸号 NLP PaperWeekly ，对话框输入“ UMi ”，即可领取 上述PDF论文 👇

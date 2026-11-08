@@ -4,7 +4,7 @@
 
 > 原文链接： https://mp.weixin.qq.com/s/bwFGcomH6BfkBzhFMiiH1g
 
-> 作者：长霁，公众号： 阿里云开发者
+> 作者：长霁，👸号： 阿里云开发者
 
 ![](img/bc9313fbf69c3cd28d2990ba72847fb3.png)
 

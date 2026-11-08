@@ -50,13 +50,13 @@ DeepSeek X主页：https://x.com/deepseek_ai
 
 幻方量化首页：https://www.high-flyer.cn/
 
-DeepSeek官方公众号：https://mp.weixin.qq.com/s/u5coDiS5lXKjENlu1ghcoQDeepSeek
+DeepSeek官方👸号：https://mp.weixin.qq.com/s/u5coDiS5lXKjENlu1ghcoQDeepSeek
 
 > DeepSeek官方在2025年2月6日发文表示，目前仅在以下社交媒体平台拥有唯一官方账号：
 
-> 微信公众号：DeepSeek
+> 🛰️👸号：DeepSeek
 
-> 小红书：@DeepSeek（deepseek_ai)
+> 📕：@DeepSeek（deepseek_ai)
 
 > X (Twitter) : DeepSeek (@deepseek_ai)
 
@@ -68,7 +68,7 @@ DeepSeek官方公众号：https://mp.weixin.qq.com/s/u5coDiS5lXKjENlu1ghcoQDeepS
 
 ![](img/d8677e50c5008db3039fcb7564ed7ba6.png)
 
-公众号持续更新和梳理DeepSeek相关资讯和教程
+👸号持续更新和梳理DeepSeek相关资讯和教程
 
 ![](img/08e4485f19bc171f975eb0eb8f9cba13.png)
 
@@ -126,11 +126,11 @@ DeepSeek官方公众号：https://mp.weixin.qq.com/s/u5coDiS5lXKjENlu1ghcoQDeepS
 
 [**unlock-deepseek**](https://github.com/datawhalechina/unlock-deepseek/tree/main)：DeepSeek 系列工作解读、扩展和复现教程
 
-[**【DeepSeek教程，包含本地部署、搭建应用等】（**](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyNjM2MzQyNg==&action=getalbum&album_id=3843452730144161794&scene=126#wechat_redirect)点击可跳转Datawhale公众号合集）
+[**【DeepSeek教程，包含本地部署、搭建应用等】（**](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyNjM2MzQyNg==&action=getalbum&album_id=3843452730144161794&scene=126#wechat_redirect)点击可跳转Datawhale👸号合集）
 
-[**【DeepSeek解读，包含技术要点解析、论文解读等】（**](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyNjM2MzQyNg==&action=getalbum&album_id=3844549169712693251&scene=126#wechat_redirect)点击可跳转Datawhale公众号合集）
+[**【DeepSeek解读，包含技术要点解析、论文解读等】（**](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyNjM2MzQyNg==&action=getalbum&album_id=3844549169712693251&scene=126#wechat_redirect)点击可跳转Datawhale👸号合集）
 
-[**【**](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyNjM2MzQyNg==&action=getalbum&album_id=3844550520949669888&scene=126#wechat_redirect)DeepSeek完整合集，包含名人观点、DeepSeek最新进展等】（点击可跳转Datawhale公众号合集）
+[**【**](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyNjM2MzQyNg==&action=getalbum&album_id=3844550520949669888&scene=126#wechat_redirect)DeepSeek完整合集，包含名人观点、DeepSeek最新进展等】（点击可跳转Datawhale👸号合集）
 
 <https://datawhaler.feishu.cn/sync/KEVqdsHYtsvRGjb38EecukJpnbb>
 
@@ -260,7 +260,7 @@ https://github.com/deepseek-ai/awesome-deepseek-integration/blob/main/README_cn.
 
 # 参考资料
 
-1.  [硅谷科技评论].公众号.DeepSeek最重要的三篇论文解读
+1.  [硅谷科技评论].👸号.DeepSeek最重要的三篇论文解读
 
 # 欢迎大家创作内容、投稿参与共建！
 

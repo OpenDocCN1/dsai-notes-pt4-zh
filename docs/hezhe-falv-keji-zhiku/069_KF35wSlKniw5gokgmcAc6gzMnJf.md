@@ -112,9 +112,9 @@ Kutana+Brochet 在 Microsoft 365 中为法律和企业客户开发用户生产�
 
 随[着 AI 技](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3527497267156107272#wechat_redirect)术[浪潮](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3521007419251507205#wechat_redirect)席卷各[行各业，越来越多的律所和律](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488789&idx=1&sn=cbe7c41732361616b383e2141bf2e33a&chksm=fac52fb5cdb2a6a3382ef0661150c79c458dc5d8571118f9f988ef75e32339f12d9ec380d0cf&token=865870229&lang=zh_CN&scene=21#wechat_redirect)师[朋友希望了解如何](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488730&idx=1&sn=4bb2cd2422d18786c98c627ce5864b5a&chksm=fac52e7acdb2a76c92d9c7aa5f02669e5dc1cdd9e0662887aaac72758df8bf20f4660b6e88ad&token=865870229&lang=zh_CN&scene=21#wechat_redirect)拥抱 AI。2023 年以来，我们通过组建法律科技社区、智库，组织法律 AI 共创培训和比赛、参访 AI 大厂等活动，和一部分法律人先 AI 起来了。
 
-前段时间，腾讯 AI 智能体平台「元器」上线了一个新功能：支持授权使用公众号文章作为训练智能体的语料，打造专属 AI 助手，律师可以用于提高工作效率、拓展案源等。
+前段时间，腾讯 AI 智能体平台「元器」上线了一个新功能：支持授权使用👸号文章作为训练智能体的语料，打造专属 AI 助手，律师可以用于提高工作效率、拓展案源等。
 
-了解更多：腾讯元器+公众号：每家律所，每个律师，都可以拥有自己的 AI
+了解更多：腾讯元器+👸号：每家律所，每个律师，都可以拥有自己的 AI
 
 然而，一般智能体的原理还是 AI 智能问答，也就是理解用户问题，然后生成答案。虽然很多智能体平台也支持构建知识库，用户上传自己的文件和文章等，通过 RAG（检索增强）限定 AI 在知识库的范围内查找答案。
 

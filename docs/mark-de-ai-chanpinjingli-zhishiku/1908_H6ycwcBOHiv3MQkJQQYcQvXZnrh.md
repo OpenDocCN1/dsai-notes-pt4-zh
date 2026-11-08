@@ -8,11 +8,11 @@
 
 ######### 再融7800万美金，AI toC独角兽来了
 
-######### [百度要做AI版富士康？](https://qqs7y1hozd1.feishu.cn/wiki/H6ycwcBOHiv3MQkJQQYcQvXZnrh#share-XzoCdbS71oFDxZxejO1cgMqznbh)
+######### [百度要做AI版富士康？](https://qqs7y1hozd1.feishu.cn/wiki/H6ycwcBOHiv3MQkJ🐧YcQvXZnrh#share-XzoCdbS71oFDxZxejO1cgMqznbh)
 
 ######### OpenAI回应ChatGPT宕机：已查明原因，正积极修复
 
-######### [苹果发布iOS 18.2正式版](https://qqs7y1hozd1.feishu.cn/wiki/H6ycwcBOHiv3MQkJQQYcQvXZnrh#share-PTSOdmFzio0ShqxMVwOcIeWFnyd)
+######### [苹果发布iOS 18.2正式版](https://qqs7y1hozd1.feishu.cn/wiki/H6ycwcBOHiv3MQkJ🐧YcQvXZnrh#share-PTSOdmFzio0ShqxMVwOcIeWFnyd)
 
 ######### 小米 Vela 系统代码正式开源，OpenVela 上线 GitHub
 

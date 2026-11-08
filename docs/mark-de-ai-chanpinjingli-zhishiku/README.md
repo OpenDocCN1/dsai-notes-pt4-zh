@@ -204,7 +204,7 @@
 
 [Claude Design：一句话生成可交互原型](https://qqs7y1hozd1.feishu.cn/wiki/DvuHwwyStivaABk11NXcjwnUnZg)
 
-[实战：拿Claude Design改一版QQ音乐](https://qqs7y1hozd1.feishu.cn/wiki/KHzewdZtGiBrKMk6uHbcSP7onge)
+[实战：拿Claude Design改一版🐧音乐](https://qqs7y1hozd1.feishu.cn/wiki/KHzewdZtGiBrKMk6uHbcSP7onge)
 
 [Claude Design：对话即设计](https://qqs7y1hozd1.feishu.cn/wiki/Lo2OwDxLKiwx42kshjfcpkZ7nUg)
 
@@ -624,4 +624,4 @@
 
 # 🔗 友情链接
 
-> **与我们联系：**[**两光年—Mark**](https://qqs7y1hozd1.feishu.cn/wiki/FLvLw0NvJiKVFTk0AOVc95vYnUd)**   **        微信号：AIGC6789
+> **与我们联系：**[**两光年—Mark**](https://qqs7y1hozd1.feishu.cn/wiki/FLvLw0NvJiKVFTk0AOVc95vYnUd)**   **        🛰️号：AIGC6789

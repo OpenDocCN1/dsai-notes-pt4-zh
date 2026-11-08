@@ -4,7 +4,7 @@
 
 > 关注前沿科技 量子位 2024-02-18 12:57 北京
 
-> 量子位 | 公众号 QbitAI
+> 量子位 | 👸号 QbitAI
 
 > 链接：https://mp.weixin.qq.com/s/ggST2FiiUN8AgCApKWIh4Q
 

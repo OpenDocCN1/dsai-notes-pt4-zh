@@ -2,7 +2,7 @@
 
 > 来源：[https://docs.feishu.cn/docx/AfnxdtHiho1pXTxjYYwcNoRhnxh](https://docs.feishu.cn/docx/AfnxdtHiho1pXTxjYYwcNoRhnxh)
 
-因为有些朋友一直问，提前说下访问官网需要梯子😒。
+因为有些朋友一直问，提前说下访问官网需要🪜😒。
 
 # **1：张三的提问，****gpt****帮我改一下卷子**
 

@@ -131,7 +131,7 @@ be careful not to allow fabric to become too hot which can cause shrinkage or in
 我还能再搞一个，就算是非常小的声音也能识别准确
 ```
 
-# 🏠 公众号
+# 🏠 👸号
 
 ![](img/bd1896a7c49cfea03a6c50fbc3136461.png)
 

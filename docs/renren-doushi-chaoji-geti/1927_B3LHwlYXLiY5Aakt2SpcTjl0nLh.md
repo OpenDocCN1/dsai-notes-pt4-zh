@@ -1,12 +1,12 @@
-# 《如何利用RPA提升小红书店铺10倍以上的效率？》@Leeka
+# 《如何利用RPA提升📕店铺10倍以上的效率？》@Leeka
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/UcTFdIFxqoRadEx4ephcFKVqnVf](https://xuqiwei1986.feishu.cn/docx/UcTFdIFxqoRadEx4ephcFKVqnVf)
 
 大家好呀，我是Leeka，影刀认证的优秀工程师。
 
-感谢生财，让我知道有RPA这么一个好东西，感谢自己在6月续航的时候终于决定学好影刀RPA。
+感谢赚钱，让我知道有RPA这么一个好东西，感谢自己在6月续航的时候终于决定学好影刀RPA。
 
-目前的我已经开始让RPA渗透自己的项目中，同时也通过贩售RPA机器人变现4位数了。感谢阿蓝的邀请，来跟大家分享一下我是如何通过RPA给小红书店铺这个项目全面降本增效的，希望你阅读完会有所启发。
+目前的我已经开始让RPA渗透自己的项目中，同时也通过贩售RPA机器人变现4位数了。感谢阿蓝的邀请，来跟大家分享一下我是如何通过RPA给📕店铺这个项目全面降本增效的，希望你阅读完会有所启发。
 
 ### 1、什么是RPA
 
@@ -54,17 +54,17 @@ RPA 的优点就很明显了，只要你设置是对的，它就不会出错，�
 
 推荐去B站那边学习更多其他的知识，在看完其他人的操作之后，你会发现自己的境界又不一样了。
 
-不具体推荐哪个UP主，因为都听得很困（机会点啊朋友们，稍微讲得有趣点，账号不就起来了？咳咳，回归正题），哈哈哈，按照自己的实际需求，搜关键词就OK。譬如：我搜的关键词是【小红书RPA】
+不具体推荐哪个UP主，因为都听得很困（机会点啊朋友们，稍微讲得有趣点，账号不就起来了？咳咳，回归正题），哈哈哈，按照自己的实际需求，搜关键词就OK。譬如：我搜的关键词是【📕RPA】
 
 ![](img/e7162edf62cd12460d90f794c97e1997.png)
 
-### 3、在小红书项目中，如何利用 RPA 提升效率
+### 3、在📕项目中，如何利用 RPA 提升效率
 
 其实我认为，只要是重复的、有逻辑性的工作，都可以让 RPA 帮忙。
 
 譬如，如果我是制作图文笔记的，为了让整个账号看起来更加整齐美观，我的图都是一个模板出来的。也就是说，我这个作图的过程是重复的、有逻辑性的，那就正好可以让 RPA 帮忙了。
 
-再譬如，我们混剪好素材之后，需要批量定时发布小红书笔记。也是有逻辑的、重复的过程，同样可以让 RPA 帮忙。
+再譬如，我们混剪好素材之后，需要批量定时发布📕笔记。也是有逻辑的、重复的过程，同样可以让 RPA 帮忙。
 
 同理，找对标账号的所有笔记、又或者是按照关键词找低粉爆文等，都可以通过 RPA 来实现，今天分享的时间有限，就先分享一部分，其他更多的玩法，等大家一起去解锁。
 
@@ -76,7 +76,7 @@ RPA 的优点就很明显了，只要你设置是对的，它就不会出错，�
 
 我讲一下机器人的运作原理：
 
-就是我们预先告诉它需要做什么，譬如打开小红书商家后台网页，然后点击笔记发布，选择视频发布（或是图文发布），然后上传对应的视频，再写标题、正文、加对应的标签、定时发布的具体日期和时间。
+就是我们预先告诉它需要做什么，譬如打开📕商家后台网页，然后点击笔记发布，选择视频发布（或是图文发布），然后上传对应的视频，再写标题、正文、加对应的标签、定时发布的具体日期和时间。
 
 **具体如何实现呢？**
 
@@ -100,7 +100,7 @@ Excel 表可以根据自己实际需要批量发布的数量，预先填好，�
 
 ![](img/7dd92a81ce3bde5a49b69edf3a7e8a24.png)
 
-[小红书批量上传-0828.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DWvTbP97Wo0KWfxeIjQcRiRYnf8)
+[📕批量上传-0828.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DWvTbP97Wo0KWfxeIjQcRiRYnf8)
 
 #### 3.2 通过 RPA 抓取下拉词
 
@@ -118,7 +118,7 @@ Excel 表可以根据自己实际需要批量发布的数量，预先填好，�
 
 ![](img/8149fda6a507a56f4a4dede4596e1902.png)
 
-[小红书下拉词-0828.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AfK0blz5roS1gHxwbSYcA4ZInhh)
+[📕下拉词-0828.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AfK0blz5roS1gHxwbSYcA4ZInhh)
 
 #### 3.3 通过 RPA 批量做图
 
@@ -138,7 +138,7 @@ Excel 表可以根据自己实际需要批量发布的数量，预先填好，�
 
 ![](img/4ed1afb3462193836f205f8043221bb4.png)
 
-[小红书批量作图-0829.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zm8eb0XX3oZPKXxShRhcCdkpnJh)
+[📕批量作图-0829.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zm8eb0XX3oZPKXxShRhcCdkpnJh)
 
 ### 4、结语
 
@@ -154,4 +154,4 @@ Excel 表可以根据自己实际需要批量发布的数量，预先填好，�
 
 时间有限，没办法跟大家分享更多，我是 Leeka，我持续在研究 RPA，如果你也对 RPA 感兴趣，欢迎和我一起交流~
 
-最后祝大家一起生财有术！
+最后祝大家一起龙哥盟！

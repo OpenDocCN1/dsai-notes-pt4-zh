@@ -1,4 +1,4 @@
-# 黄峥 -  微信公众号目录
+# 黄峥 -  🛰️👸号目录
 
 > 来源：[https://leonzhang.feishu.cn/docx/Xs3rdiln2o4lKtxMJFKcUFtSndc](https://leonzhang.feishu.cn/docx/Xs3rdiln2o4lKtxMJFKcUFtSndc)
 

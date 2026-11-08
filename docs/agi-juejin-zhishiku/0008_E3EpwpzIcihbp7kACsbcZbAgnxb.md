@@ -42,7 +42,7 @@
 
 ### 🛠️ 今日新工具
 
-1.  Au[to](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555331&idx=1&sn=215fe102d566e50d4362ef63bc6db445)GLM 手机操作 Agent (链接)：智谱开源的 9B 端侧模型，可通过 ADB 控制手机完成发微信、订票等任务，一周获 15K 星。门槛：需 2 张 24G 显卡或 API 调用
+1.  Au[to](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555331&idx=1&sn=215fe102d566e50d4362ef63bc6db445)GLM 手机操作 Agent (链接)：智谱开源的 9B 端侧模型，可通过 ADB 控制手机完成发🛰️、订票等任务，一周获 15K 星。门槛：需 2 张 24G 显卡或 API 调用
 
 1.  Se[ed](https://exp.volcengine.com/ark/vision?launch=seedance)ance 1.5 Pro (链接)：原生音视频生成，支持中文方言、多角色对白、电影级运镜。已在即梦 AI/豆包 APP 上线可体验，API 下周开放
 

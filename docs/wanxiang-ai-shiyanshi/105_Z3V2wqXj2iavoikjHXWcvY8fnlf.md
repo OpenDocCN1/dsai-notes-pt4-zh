@@ -259,7 +259,7 @@
 
 ![](img/c85ed79e792a62d7bf76644a91e465e2.png)
 
-### 案例七：小红书封面
+### 案例七：📕封面
 
 > **应用场景：** 社交媒体内容创作
 
@@ -520,7 +520,7 @@ Abstract minimalist background for UI design, fluid organic shapes, liquid metal
 
 ![](img/60c0ec59cf7de44fb1b30462962c2ac2.png)
 
-### 案例十八：制作一张微信公众号文章封面图
+### 案例十八：制作一张🛰️👸号文章封面图
 
 ```
 制作一份微信公众号文章的封面图，封面图内容为nano banana2发布成功
@@ -888,6 +888,6 @@ Refer to the layout and painting style of this cartoon to generate a cartoon dra
 
 ![](img/dbf47218dc992d323fa63f276ca530c6.png)
 
-**联系大国微信**
+**联系大国🛰️**
 
 **觉得有用欢迎留个赞**

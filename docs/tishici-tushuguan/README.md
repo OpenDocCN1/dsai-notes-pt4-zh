@@ -56,7 +56,7 @@
 
 [资深地缘战略观察家](https://vxc3hj17dym.feishu.cn/wiki/UXs0wZHzditNXZklPbtcaknjnkd)
 
-[小红书商业变现达人](https://vxc3hj17dym.feishu.cn/wiki/ITnwwakPoiqAB5k6PAmc3cOFnCg)
+[📕商业变现达人](https://vxc3hj17dym.feishu.cn/wiki/ITnwwakPoiqAB5k6PAmc3cOFnCg)
 
 [八字命理先生 - 渊海](https://vxc3hj17dym.feishu.cn/wiki/OtE5w2irMiwg9QkgjUUcRAGfn4e)
 
@@ -136,7 +136,7 @@
 
 其他作者未及收录个人说明，陆续更新ing，欢迎朋友们联系我们认领个人介绍页：
 
-**小七姐微信：se7en319**
+**小七姐🛰️：se7en319**
 
 # 提示词投稿：
 

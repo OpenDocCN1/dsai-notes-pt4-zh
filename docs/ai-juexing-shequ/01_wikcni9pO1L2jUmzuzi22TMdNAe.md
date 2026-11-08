@@ -8,7 +8,7 @@
 
 > 日更AI新闻海报 [AI觉醒日报（一觉醒来发生了什么）](https://diwfpqo78m.feishu.cn/wiki/wikcnI3exPnHHzON4ikfEsucckb)
 
-> 更多资源，添加站长微信：13913041
+> 更多资源，添加站长🛰️：13913041
 
 > AI觉醒社区  https://360ai.cc
 
@@ -22,7 +22,7 @@
 
 ### 1.1 官网
 
-> 国内暂不可用，需要科学上网访问。
+> 国内暂不可用，需要🪜访问。
 
 > https://ai.com
 
@@ -266,7 +266,7 @@
 
 > **聊天机器人****开发**
 
-> 1、[微信聊天机器人](https://gitee.com/xingruispace/wechatgpt)（有封号风险）
+> 1、[🛰️聊天机器人](https://gitee.com/xingruispace/wechatgpt)（有封号风险）
 
 > 2、[飞书聊天机器人](https://github.com/bestony/ChatGPT-Feishu)
 
@@ -274,9 +274,9 @@
 
 > 4、[钉钉聊天机器人](https://github.com/eryajf/chatgpt-dingtalk)
 
-> 5、[微信小程序聊天机器人](https://github.com/xenice/chat)（小程序名字不能带GPT）
+> 5、[🛰️小程序聊天机器人](https://github.com/xenice/chat)（小程序名字不能带GPT）
 
-> 6、[QQ 聊天机器人](https://github.com/lss233/chatgpt-mirai-qq-bot)
+> 6、[🐧 聊天机器人](https://github.com/lss233/chatgpt-mirai-qq-bot)
 
 > 7、[Twitter机器人](https://github.com/transitive-bullshit/chatgpt-twitter-bot)
 
@@ -340,7 +340,7 @@
 
 ![](img/0d7f04b1ffc17697be3ab505ea67adc1.png)
 
-##### 3、公众号GPT聊天机器人（9.9元/30次）
+##### 3、👸号GPT聊天机器人（9.9元/30次）
 
 ![](img/75338e82c3f8ee20cf28ec76fd11d4c6.png)
 
@@ -386,7 +386,7 @@
 
 > 新加入星球的你可以获得：
 
-> 1.配套最干货的AIGC微信交流群；
+> 1.配套最干货的AIGC🛰️交流群；
 
 > 2.附赠国内最全的AIGC知识库（含付费资料），加入飞书群自动获得权限；
 
@@ -472,7 +472,7 @@
 
 > 1、[GPT中国变形记｜深氪](https://36kr.com/p/2137546486548612?channel=wechat)
 
-## 5.2.3 机器翻译观察公众号
+## 5.2.3 机器翻译观察👸号
 
 > 1、ChatGTP全景图 | 背景+技术篇
 
@@ -480,7 +480,7 @@
 
 > 3、GPT全景图之三 | 全球竞争格局篇（上）
 
-## 5.2.4 马丁的面包屑公众号
+## 5.2.4 马丁的面包屑👸号
 
 > 1、万字长文：AI产品经理视角的GPT全解析
 

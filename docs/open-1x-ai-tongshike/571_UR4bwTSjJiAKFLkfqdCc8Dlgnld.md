@@ -20,13 +20,13 @@
 
 #### **自媒体平台**
 
-对于**小红书、视频号、抖音、B站**等复制添加👇标签
+对于**📕、视频号、抖音、B站**等复制添加👇标签
 
 #AI千行百业学习打卡 #Datawhale #奇想星球平台
 
 #### 社交媒体平台
 
-对于**CSDN、知乎、即刻、微信**等附上本知识库链接[应用 | AI + 千行百业](https://datawhaler.feishu.cn/wiki/XrNcwoE70i7NNJkyijmclsP8nAg)
+对于**CSDN、知乎、即刻、🛰️**等附上本知识库链接[应用 | AI + 千行百业](https://datawhaler.feishu.cn/wiki/XrNcwoE70i7NNJkyijmclsP8nAg)
 
 ---
 

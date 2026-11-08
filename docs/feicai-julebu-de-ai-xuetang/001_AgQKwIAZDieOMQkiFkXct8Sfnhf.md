@@ -132,7 +132,7 @@ Forge 的记忆架构不是简单的"聊天记录存档"。它是一套分层的
 
 Andrej Karpathy 在 2025 年 6 月的 YC AI Startup School 上提出了 Software 3.0 的概念。Software 1.0 是人写代码，Software 2.0 是人训练神经网络，Software 3.0 是人用自然语言编程。他还举了一个很具体的例子：Vercel 的文档是结构化的、CLI 化的，AI 可以直接消费；而另一个服务的文档全是截图和叙述文字，AI 根本没法用。
 
-你有没有注意到，现在越来越多的产品都在 CLI 化？不只是 Claude Code 和 GitHub，Vercel、Stripe、飞书、企业微信等等各种云服务，全都有完整的命令行接口。
+你有没有注意到，现在越来越多的产品都在 CLI 化？不只是 Claude Code 和 GitHub，Vercel、Stripe、飞书、企业🛰️等等各种云服务，全都有完整的命令行接口。
 
 这件事的意义，大多数人没看懂。
 

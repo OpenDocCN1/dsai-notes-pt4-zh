@@ -136,7 +136,7 @@ ai同城直播发售业务，就是借用ai提效，通过视频号直播、抖�
 
 [d8716eef0f08cb81679ff49b140d5c12.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DKTMbO3VMol6Y4xIpaEcCMmjnWh)
 
-这个视频里面有三、四个生财圈友
+这个视频里面有三、四个赚钱圈友
 
 对于抖音直播，因为抖音在本地生活赛道已经比较成熟了，
 

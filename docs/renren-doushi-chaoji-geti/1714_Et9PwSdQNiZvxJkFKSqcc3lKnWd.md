@@ -4,7 +4,7 @@
 
 #
 
-[来自： 生财有术](https://wx.zsxq.com/dweb2/index/group/1824528822)
+[来自： 龙哥盟](https://wx.zsxq.com/dweb2/index/group/1824528822)
 
 ![](img/b8b94900cf42a86fe2fc13a3895e1919.png)
 

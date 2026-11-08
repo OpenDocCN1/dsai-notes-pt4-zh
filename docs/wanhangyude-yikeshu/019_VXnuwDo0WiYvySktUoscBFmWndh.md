@@ -18,7 +18,7 @@
 
 官网：https://cherry-ai.com/
 
-官网需要翻墙，如果不想翻墙的话可以从网盘链接下载。网盘内包含了 Linux 版本、macOS 版本、Windows 版本。
+官网需要🪜，如果不想🪜的话可以从网盘链接下载。网盘内包含了 Linux 版本、macOS 版本、Windows 版本。
 
 **百度网盘：**https://pan.baidu.com/s/1JlI2OCT2Tf5p2KKCmzPERQ?pwd=bwwf
 

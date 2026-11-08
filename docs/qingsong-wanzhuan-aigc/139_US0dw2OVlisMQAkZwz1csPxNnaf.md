@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/W5J6djFSaoHvUuxCXyqcS5ucnBh](https://my.feishu.cn/docx/W5J6djFSaoHvUuxCXyqcS5ucnBh)
 
-更丰富内容介绍，见我的公众号文章：
+更丰富内容介绍，见我的👸号文章：
 
 [我用影视飓风Tim的HKRR爆款创作理论，编](https://mp.weixin.qq.com/s/YggT7eNiaTZy0l9xGydqWw?token=1412309202&lang=zh_CN)写了一个又快又好产出视频脚本的AI提示词
 

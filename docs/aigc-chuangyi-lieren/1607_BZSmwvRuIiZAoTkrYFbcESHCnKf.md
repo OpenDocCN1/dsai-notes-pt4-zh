@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/P8gBdpVXtoxzqwx2pgncc0WdnWf](https://aigcreative.feishu.cn/docx/P8gBdpVXtoxzqwx2pgncc0WdnWf)
 
-> 来源公众号：i黑马
+> 来源👸号：i黑马
 
 > 链接：https://mp.weixin.qq.com/s/a3Cf1GNdci7y7ycrWZT0SQ
 

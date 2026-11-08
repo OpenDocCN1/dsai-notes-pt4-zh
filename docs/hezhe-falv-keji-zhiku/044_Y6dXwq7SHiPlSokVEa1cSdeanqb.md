@@ -56,7 +56,7 @@
 
 # 第二天：AI 时代下，律师如何进行营销获客？
 
-## 使用 AI 工具生成一篇公众号文章/短视频脚本
+## 使用 AI 工具生成一篇👸号文章/短视频脚本
 
 > **AI 辅助生成文章多维表格**：[AI选题库](https://ccd68lpsqp.feishu.cn/wiki/WQDgwijl4iZQc2kqp0EcQY5bnbT?table=tblLd8PowN0Xhwhx&view=vewVqAdf90)
 

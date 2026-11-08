@@ -8,7 +8,7 @@
 
 +   作者： [云中江树](https://www.zhihu.com/people/zphyix)
 
-+   微信：zephyr_ai (添加请说明来意)
++   🛰️：zephyr_ai (添加请说明来意)
 
 +   相关项目： [LangGPT](https://link.zhihu.com/?target=https%3A//github.com/yzfly/LangGPT)
 

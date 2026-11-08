@@ -152,7 +152,7 @@ hooks:
   - post-tool-use
 ```
 
-老金我的公众号写作Skill，之前配置Hook花了10分钟。
+老金我的👸号写作Skill，之前配置Hook花了10分钟。
 
 现在1分钟搞定，配置都在一个文件里。
 
@@ -196,7 +196,7 @@ context: fork
 
 现在直接打/，自动补全，选一个就行。
 
-比如我的公众号助手，以前输入：
+比如我的👸号助手，以前输入：
 
 ```
 use skill gongzhonghao-writer with topic &quot;Claude更新&quot;
@@ -685,7 +685,7 @@ Claude Code 2.1.2这次更新，老金我给92分。
 
 虽然不会写代码，但老金我已经用Claude Code做了：
 
-1、自动化公众号写作流程
+1、自动化👸号写作流程
 
 2、数据分析和报告生成
 

@@ -40,7 +40,7 @@ https://www.lanrui-ai.com/register?invitation_code=9918
 
 **欢迎注册体验！**
 
-以下内容来自公众号 BaseBit翼方健数：
+以下内容来自👸号 BaseBit翼方健数：
 
 [《翼方健数开源解决方案，以联邦学习实现大语言模型微调训](http://mp.weixin.qq.com/s?__biz=Mzg3ODU0NDIyMg==&mid=2247497699&idx=1&sn=6803788d4b27df0295c77e8e983eb43b&chksm=cf10a3d2f8672ac4142723ba928ac33876a7efaa3c34c23b1f2086e1e82d46d5ca6ca4f70d13&scene=21#wechat_redirect)练的隐私安全保护与效率双突破 (上篇)》
 

@@ -78,7 +78,7 @@
 
 **Slack！**
 
-官方首页（QQ和163邮箱不能注册）：https://www.anthropic.com/index/claude-now-in-slack
+官方首页（🐧和163邮箱不能注册）：https://www.anthropic.com/index/claude-now-in-slack
 
 阿里邮箱官网（阿里邮箱可以注册）：https://mailsso.mxhichina.com/aliyun/register?lang=zh_CN
 

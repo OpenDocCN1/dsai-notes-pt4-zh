@@ -53,7 +53,7 @@ https://law.ucass.edu.cn/info/1985/6865.htm
 
 内容：当地时间7月12日，美国参议院人工智能核心小组的联合创始人兼联合主席参议员马丁·海因里希（Martin Heinrich）、参议院商务委员会主席玛丽亚·坎特威尔（D-Wash.）和商务委员会成员玛莎·布莱克本（R-Tenn.）提出了《编辑和深度伪造媒体内容来源保护和完整性法案》（COPIED ACT）法案， 旨在有效打击有害的深度伪造品的兴起。立法将围绕生成式人工智能建立新的护栏，以及让记者、艺术家和词曲作者更好地控制他们的创意内容。
 
-解读：AIGverse，《[美国提出新的人工智能法案](https://mp.weixin.qq.com/s/B1XhWyWUoZMOOiObaXLmQQ)》
+解读：AIGverse，《[美国提出新的人工智能法案](https://mp.weixin.qq.com/s/B1XhWyWUoZMOOiObaXLm🐧)》
 
 **美国田纳**西州早在2024年3月即签署了旨在保护词曲作者、表演者和其他音乐行业专业人士免受人工智能潜在危险的立法——Ensuring Likeness, Voice, and Image Security Act of 2024 (HB 2091)（《确保相似声音和图像安全（ELVIS）法案》），该法案已于2024年7月1日生效。
 

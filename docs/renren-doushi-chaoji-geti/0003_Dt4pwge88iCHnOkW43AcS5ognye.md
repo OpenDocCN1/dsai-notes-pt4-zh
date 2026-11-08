@@ -1,4 +1,4 @@
-# 2026-03-07免费网页清洗利器Defuddle：一键提取网页内容，转为干净 Markdown。可惜还不支持公众号
+# 2026-03-07免费网页清洗利器Defuddle：一键提取网页内容，转为干净 Markdown。可惜还不支持👸号
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/BLZXd1bT1oAKVwxoepicdGFDnsm](https://xuqiwei1986.feishu.cn/docx/BLZXd1bT1oAKVwxoepicdGFDnsm)
 
@@ -140,7 +140,7 @@ console.log(result.author);
 
 +   • 仍在 WIP 阶段 ：官方 README 反复强调“very much a work in progress”。部分重度 JS 单页应用（SPA）可能提取失败，只能依赖异步 fallback（会调用第三方如 FxTwitter API），这其实引入了新的隐私/依赖风险。
 
-+   • 兼容性并非 100% ：微信公众号文章、部分付费墙后内容、复杂论坛仍无法完美提取（这点与 Jina.ai 一致）。测试了几个国内主流站点，成功率约 85% 左右，需人工校验。
++   • 兼容性并非 100% ：🛰️👸号文章、部分付费墙后内容、复杂论坛仍无法完美提取（这点与 Jina.ai 一致）。测试了几个国内主流站点，成功率约 85% 左右，需人工校验。
 
 +   • 公共 API 的隐忧 ：虽然免费，但未公布速率限制和 SLA。如果大规模调用，可能被限流或延迟。服务器端渲染能力也弱于专业云服务。
 

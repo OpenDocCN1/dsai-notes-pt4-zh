@@ -118,7 +118,7 @@ C**ogVideoX 模**型目前已在智谱清言的PC端、移动应用端以及小�
 
 ![](img/684e652096f6fbb0b2560158a4bd2733.png)
 
-[8.卡皮巴拉喝可乐.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QQHrbyCYhohSFtx0MOUcTrGNnbe)
+[8.卡皮巴拉喝可乐.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/🐧HrbyCYhohSFtx0MOUcTrGNnbe)
 
 我们已验证了 Scaling Law在视频生成领域的有效性。展望未来，我们将在持续扩大数据规模和模型规模的基础上，深入研究具有突破性创新的新型模型架构，以更高效地压缩视频信息，并更全面地融合文本与视频内容。
 

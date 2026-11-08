@@ -536,7 +536,7 @@ Centered around highlighting the product, it presents the appearance details, fu
 
 ![](img/54dc38eb0d8f8959d3ca0f1821b0e90d.png)
 
-[20250812-184247.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FVihbGG4PorgacxkQQPcJCE5nih)
+[20250812-184247.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FVihbGG4Porgacxk🐧PcJCE5nih)
 
 ![](img/b6487b3a1d2207719cd3902d31fa6328.png)
 

@@ -10,7 +10,7 @@
 
 作为一位不懂代码的且尝试过让 GPT 教我用 Java 写软件但无果的普通人来说，emmm，整软件这条路走不动，我又不想斥巨资（bushi）去采购这些软件的话，我能怎么办呢？
 
-因为加入了生财，最开始知道 RPA 是在一年前，但是只知道这个是好东西，具体是做什么的，以及怎么做，完全没有头绪，就觉得这玩意儿也太神秘了吧？随着自己的认知不断提高，我终于知道 RPA 是啥，且 6 月续航时，跟同组的其他志愿者一起比赛学习 RPA。
+因为加入了赚钱，最开始知道 RPA 是在一年前，但是只知道这个是好东西，具体是做什么的，以及怎么做，完全没有头绪，就觉得这玩意儿也太神秘了吧？随着自己的认知不断提高，我终于知道 RPA 是啥，且 6 月续航时，跟同组的其他志愿者一起比赛学习 RPA。
 
 # 一、什么是 RPA？
 
@@ -92,7 +92,7 @@ RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流
 
 **温馨提醒：一定要用笔记的网址比对，如果直接用图片地址比**对，就会出错，因为图片地址每次刷新都会变
 
-同理，其他平台如小红书等的跟款，也是同样的逻辑。
+同理，其他平台如📕等的跟款，也是同样的逻辑。
 
 整理成影刀软件的代码组是长这样的
 
@@ -126,7 +126,7 @@ RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流
 
 ![](img/6f5a729d45f03ed43c3d1192f429d9e9.png)
 
-[图12小红书批量作图-0829.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UeTJbqtDWoGwKPxXvO4cOZE7nFd)
+[图12📕批量作图-0829.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UeTJbqtDWoGwKPxXvO4cOZE7nFd)
 
 ## 3.4 比宝妈更拼的发布机器人
 
@@ -146,4 +146,4 @@ RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流
 
 当然我也持续在学习 RPA 的过程中，在之前大家发的自我介绍里，也发现有很多 RPA 的大佬，哈哈哈，顶着压力来抛砖引玉，希望今晚的分享会对你有所启发。
 
-我是 Leeka，我持续在钻研 RPA，如果你也对 RPA 感兴趣，欢迎一起来交流。最后，祝大家一起生财有术！
+我是 Leeka，我持续在钻研 RPA，如果你也对 RPA 感兴趣，欢迎一起来交流。最后，祝大家一起龙哥盟！

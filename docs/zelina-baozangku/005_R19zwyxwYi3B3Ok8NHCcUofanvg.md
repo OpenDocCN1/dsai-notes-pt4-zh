@@ -4,7 +4,7 @@
 
 👋 Hi ! 很高兴在亿万人中与你相遇，这一刻起，我们的故事即将开始~
 
-公众号：[星期一研究室](https://mp.weixin.qq.com/s?__biz=Mzg5MDA4NTUyNA==&mid=2247492239&idx=1&sn=7725b339f1cba56e3b3333b964ecefe4&chksm=cfe0ab74f8972262a81a8e8a29a3d8efefed23f0ea2b591fbc44fe68c077427ced8c44370b4b&scene=18#rd)  |  小红书：[周一同学Zelina](https://www.xiaohongshu.com/user/profile/5e09ca9f0000000001002c9b)  |  飞书宝藏库：[Zelina的个人说明书](https://pzfqk98jn1.feishu.cn/wiki/wikcnTijikVNdkWdBEKzQpiA6ie)
+👸号：[星期一研究室](https://mp.weixin.qq.com/s?__biz=Mzg5MDA4NTUyNA==&mid=2247492239&idx=1&sn=7725b339f1cba56e3b3333b964ecefe4&chksm=cfe0ab74f8972262a81a8e8a29a3d8efefed23f0ea2b591fbc44fe68c077427ced8c44370b4b&scene=18#rd)  |  📕：[周一同学Zelina](https://www.xiaohongshu.com/user/profile/5e09ca9f0000000001002c9b)  |  飞书宝藏库：[Zelina的个人说明书](https://pzfqk98jn1.feishu.cn/wiki/wikcnTijikVNdkWdBEKzQpiA6ie)
 
 # 01 作者介绍
 

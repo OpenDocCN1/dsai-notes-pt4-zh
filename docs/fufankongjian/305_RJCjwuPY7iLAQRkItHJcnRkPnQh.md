@@ -8,7 +8,7 @@
 
 1.  如何在Windows机器上通过Anaconda3 启动一个Jupyter笔记本
 
-1.  具备科学上网环境，并且配置为全局代理
+1.  具备🪜环境，并且配置为全局代理
 
 1.  具备一个有效的OpenAI API Keys
 

@@ -44,7 +44,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/885/570.htm)
 
 ### 💡 震撼！AI物理「双修」：亥姆霍兹方程嵌进生成器，伪影当场消失
 
-新智元 | [阅读原文](https://www.163.com/dy/article/KA8LQQJ00511ABV6.html?spss=dy_author)
+新智元 | [阅读原文](https://www.163.com/dy/article/KA8L🐧J00511ABV6.html?spss=dy_author)
 
 ![](img/c9768b0d313bdfb0787f1091a74b5645.png)
 

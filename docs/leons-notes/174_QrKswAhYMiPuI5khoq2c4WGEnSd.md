@@ -101,7 +101,7 @@ Leon Zhang, Nov. 25, 2024
 
 于我而言，新品的信息来源主要是两方面：
 
-1.  **官方宣传资料**[，包](https://www.bilibili.com/video/BV1ADmbYEEHs/?share_source=copy_web&vd_source=3386373bed290edc14a76feb42fcb6c8)括但不限于宣传官方海报、微信视频号宣传视频（同 B 站上的视频）。
+1.  **官方宣传资料**[，包](https://www.bilibili.com/video/BV1ADmbYEEHs/?share_source=copy_web&vd_source=3386373bed290edc14a76feb42fcb6c8)括但不限于宣传官方海报、🛰️视频号宣传视频（同 B 站上的视频）。
 
 1.  **线下宣传图及实物**，你如果去线下的话，从签到处、产品展区、发布会场地，几乎到处都能看到新品的宣传图，甚至产品展区就可以直接看到新品，包括产品本体及功能介绍。
 
@@ -417,7 +417,7 @@ Rokid 的 Misa 在 7 月 25 日晚上的视频号直播也解答过类似的答�
 
 1.  [Ray-Ban & Meta Smart G](https://www.ray-ban.com/usa/ray-ban-meta-smart-glasses)lasses  - Ray-Ban 官网
 
-1.  [Rokid｜一图读懂 Rokid](https://mp.weixin.qq.com/s/-Xb-Fr1UCXzRhIjeePH0FA) Jungle 2024 - 微信公众号
+1.  [Rokid｜一图读懂 Rokid](https://mp.weixin.qq.com/s/-Xb-Fr1UCXzRhIjeePH0FA) Jungle 2024 - 🛰️👸号
 
 1.  [Rokid｜不止一副好眼镜！Rokid Jungle 202](https://www.bilibili.com/video/BV1ADmbYEEHs/)4 合作伙伴暨新品发布会 - 哔哩哔哩
 
@@ -427,7 +427,7 @@ Rokid 的 Misa 在 7 月 25 日晚上的视频号直播也解答过类似的答�
 
 1.  [Project Glass:Goog](https://www.bilibili.com/video/BV1Lx411F7nL/)le I/O 上的现场演示 - 哔哩哔哩
 
-1.  刘言飞语｜撕不开的 AI 入口，从 AI 耳机聊起 - 微信公众号
+1.  刘言飞语｜撕不开的 AI 入口，从 AI 耳机聊起 - 🛰️👸号
 
 1.  Matter（原 ALIO）官网
 
@@ -439,9 +439,9 @@ Rokid 的 Misa 在 7 月 25 日晚上的视频号直播也解答过类似的答�
 
 1.  AI 眼镜要走阳关道，AR 要过独木桥 - 新浪财经
 
-1.  [ XR 航海家｜在「AI 眼镜元年」，](https://mp.weixin.qq.com/s/LVTrYF8lI1mPcNGtXGXFpQ)我们到底需要什么样的产品 - 微信公众号
+1.  [ XR 航海家｜在「AI 眼镜元年」，](https://mp.weixin.qq.com/s/LVTrYF8lI1mPcNGtXGXFpQ)我们到底需要什么样的产品 - 🛰️👸号
 
-1.  [AI 云原生智能算力架构 ｜万亿赛道！AI 智能眼镜解](https://mp.weixin.qq.com/s/xRWDOY8WHo3bDO59k5iuhA)决方案深度分析 2024 - 微信公众号
+1.  [AI 云原生智能算力架构 ｜万亿赛道！AI 智能眼镜解](https://mp.weixin.qq.com/s/xRWDOY8WHo3bDO59k5iuhA)决方案深度分析 2024 - 🛰️👸号
 
 1.  [VRAR 星球｜2024 群雄逐鹿！1-9 月全球 ](https://news.qq.com/rain/a/20240927A04J7Z00?suid=&media_id=)VR/AR 市场新品最全盘点 - 腾讯网
 

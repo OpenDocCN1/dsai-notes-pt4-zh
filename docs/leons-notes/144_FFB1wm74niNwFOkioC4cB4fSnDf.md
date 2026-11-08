@@ -18,7 +18,7 @@
 
 月底在阿珂的灵感提供下，完成了 2023 年的复盘。地址如下，
 
-+   微信公众号：[2023｜日拱一卒，功不唐捐](https://mp.weixin.qq.com/s?__biz=MzU1ODc2MDA3OQ==&mid=2247484040&idx=1&sn=9a17d85bab0e102a749f29ba1f24c858&chksm=fc20eb68cb57627ed8e41a58708ab8bd958f385fda93d7ec70077b4222624e71e564652a6874#rd)
++   🛰️👸号：[2023｜日拱一卒，功不唐捐](https://mp.weixin.qq.com/s?__biz=MzU1ODc2MDA3OQ==&mid=2247484040&idx=1&sn=9a17d85bab0e102a749f29ba1f24c858&chksm=fc20eb68cb57627ed8e41a58708ab8bd958f385fda93d7ec70077b4222624e71e564652a6874#rd)
 
 +   Lark: [2023｜日拱一卒，功不唐捐](https://leonzhang.feishu.cn/wiki/UfQawZMlZitQ4vkfAbPcFephn6d)
 
@@ -28,7 +28,7 @@
 
 借着看完发布会的劲儿，写了一些自己的想法，地址如下，
 
-+   微信公众号：看小米汽车技术发布会有感：科技 & 生态，敬未来
++   🛰️👸号：看小米汽车技术发布会有感：科技 & 生态，敬未来
 
 +   Lark: [看小米汽车技术发布会有感：科技 & 生态，敬未来](https://leonzhang.feishu.cn/wiki/PHV8wgN14ilqVDkvJltccsalnvE)
 

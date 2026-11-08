@@ -32,7 +32,7 @@
 
 +   [原文链接](https://a16z.com/the-cinderella-glass-slipper-effect-retention-rules-in-the-ai-era/)
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/zl4Z5GFOn8aC7Ge-VR2Agw)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/zl4Z5GFOn8aC7Ge-VR2Agw)
 
 +   State of AI: An Empirical 100 Trillion Token Study
 

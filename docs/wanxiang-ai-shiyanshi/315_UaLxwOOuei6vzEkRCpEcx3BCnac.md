@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/HGUidzsEZopW96xZXmCcStnYngg](https://yunyinghui.feishu.cn/docx/HGUidzsEZopW96xZXmCcStnYngg)
 
-> **原创公众号：**王星星 AI 设计
+> **原创👸号：**王星星 AI 设计
 
 > **发文时间：**2026-01-25 20:28:37
 

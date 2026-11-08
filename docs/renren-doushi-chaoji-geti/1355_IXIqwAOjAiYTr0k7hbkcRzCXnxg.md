@@ -178,7 +178,7 @@ Voyager 通过黑盒查询与 GPT-4 进行交互，从而避免了模型参数�
 
 >
 
-> 来源： 公众号 【  AMiner科技  】
+> 来源： 👸号 【  AMiner科技  】
 
 Illustration by IconScout Store from IconScout
 
@@ -214,11 +214,11 @@ TechBeat是由将门创投建立的AI学习社区（ www.techbeat.net ） 。 �
 
 chenhongyuan@thejiangmen.com
 
-或添加 **工作人**员微信（chemn493） 投稿，沟通投稿详情；还可以关注“将门创投”公众号，后台回复“ 投稿 ”二字，获得投稿说明。
+或添加 **工作人**员🛰️（chemn493） 投稿，沟通投稿详情；还可以关注“将门创投”👸号，后台回复“ 投稿 ”二字，获得投稿说明。
 
 ![](img/cd9e0152c17da5d3075d7d073d3ecb12.png)
 
-**>>> 添加小编微信！**
+**>>> 添加小编🛰️！**
 
 ![](img/e8e1c29abd551c7664f11fb87060e1a6.png)
 

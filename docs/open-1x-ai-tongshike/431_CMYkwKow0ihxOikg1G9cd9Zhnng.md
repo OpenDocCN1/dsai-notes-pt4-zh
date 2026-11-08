@@ -241,7 +241,7 @@ cp /mnt/workspace/kolors/1.jpg /mnt/workspace/kolors/output/
 
 ## 🛎️ 别忘记写笔记、打卡&在群里接龙！
 
-笔记标题带“Datawhale X 魔搭 A[I夏令营”](https://linklearner.com/activity/14/10/20)，发布到CSDN、哔哩哔哩、博客园、知乎、小红书、公众号、掘金等公开平台，详情可参考学习者手册（电脑端点击即可跳转）
+笔记标题带“Datawhale X 魔搭 A[I夏令营”](https://linklearner.com/activity/14/10/20)，发布到CSDN、哔哩哔哩、博客园、知乎、📕、👸号、掘金等公开平台，详情可参考学习者手册（电脑端点击即可跳转）
 
 **优秀笔记案例参考：**
 

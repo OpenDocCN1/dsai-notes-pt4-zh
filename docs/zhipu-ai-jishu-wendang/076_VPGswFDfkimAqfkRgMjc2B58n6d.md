@@ -82,7 +82,7 @@ Github仓库：https://github.com/THUDM/CodeGeeX
 
 ---
 
-# 🏠 公众号
+# 🏠 👸号
 
 ![](img/6e5b60664a35f0d481b753dec660f73d.png)
 

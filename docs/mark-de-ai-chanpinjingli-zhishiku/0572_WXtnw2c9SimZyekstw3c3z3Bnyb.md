@@ -84,7 +84,7 @@
 
 再看一个图片转 markdown 的案例
 
-> 使用markitdown将下载目录中的“微信图片_2025-05-25_133959_147.jpg”转成 markdown格式
+> 使用markitdown将下载目录中的“🛰️图片_2025-05-25_133959_147.jpg”转成 markdown格式
 
 ![](img/297415fd1fb632747cd802a745e81105.png)
 

@@ -46,7 +46,7 @@
 
 1.  共享：群里分享的优质资源和知识，我们会吸收进知识空间开放共享
 
-1.  共建：欢迎投稿优质内容，欢迎成为共建者（私信江树，微信:1796060717 / 甲木，微信:544831183）
+1.  共建：欢迎投稿优质内容，欢迎成为共建者（私信江树，🛰️:1796060717 / 甲木，🛰️:544831183）
 
 > **权益声明**：开源不代表可以随意搬运，未经授权禁止搬运内容！
 
@@ -100,19 +100,19 @@
 
 # 如何加入社群？
 
-1.  添加江树微信 1796060717 (若无法添加，可添加甲木微信 zuiyn_soul )
+1.  添加江树🛰️ 1796060717 (若无法添加，可添加甲木🛰️ zuiyn_soul )
 
 1.  私发**正经的**自我介绍（应该都会叭，不会的请参照面试标准）
 
 1.  江树 / 甲木邀请进群。
 
-> 注意：加入社群请遵循微信社交礼仪：
+> 注意：加入社群请遵循🛰️社交礼仪：
 
-> [LangGPT 微信社交礼仪](https://langgptai.feishu.cn/wiki/THdxw39nliLOcjktqWUcL3Q8nDh)
+> [LangGPT 🛰️社交礼仪](https://langgptai.feishu.cn/wiki/THdxw39nliLOcjktqWUcL3Q8nDh)
 
 # 社群建设
 
-+   [微信公众号: 云中江树](https://mp.weixin.qq.com/s/aJ-pze57Wc0j9wPwwjRNGA)
++   [🛰️👸号: 云中江树](https://mp.weixin.qq.com/s/aJ-pze57Wc0j9wPwwjRNGA)
 
 +   LangGPT GitHub 开源项目：https://github.com/yzfly/LangGPT
 

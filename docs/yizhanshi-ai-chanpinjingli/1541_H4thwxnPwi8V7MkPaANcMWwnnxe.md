@@ -18,7 +18,7 @@
 
 ## 硬件准备
 
-+   Macbook（Macbook需要可以科学上网）
++   Macbook（Macbook需要可以🪜）
 
 +   一部Iphone手机
 

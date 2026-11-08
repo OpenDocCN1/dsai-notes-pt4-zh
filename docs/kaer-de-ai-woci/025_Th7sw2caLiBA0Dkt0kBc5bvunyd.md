@@ -1,4 +1,4 @@
-# 【转】 生财思维课
+# 【转】 赚钱思维课
 
 > 来源：[https://aiwarts101.feishu.cn/docx/O0amdvvjSo2jQkxTzkVc9Q8On1f](https://aiwarts101.feishu.cn/docx/O0amdvvjSo2jQkxTzkVc9Q8On1f)
 

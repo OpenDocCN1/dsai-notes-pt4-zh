@@ -610,12 +610,12 @@ GPT-Review 的结果
 
 [**大模型训练太难了！**](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486002&idx=1&sn=ba92e0b39f13ebb28719031ffbc4260a&chksm=973d94b5a04a1da357b1bca4cf9175be687ef574a43077e699efa96aa0c15f4ff6b4bc726cd4&scene=21#wechat_redirect)
 
-**其他精彩文章翻阅公众号历史文章**
+**其他精彩文章翻阅👸号历史文章**
 
 包包算法笔记是包大人在班车通勤上，进行知识，职业，经验分享的地方。最白的话讲专业的知识。
 
 回复“刷题”获取高效刷题经验，回复“面试”获取算法校招面试宝典。
 
-想进讨论群的同学，加微信号 logits，备注 进群
+想进讨论群的同学，加🛰️号 logits，备注 进群
 
 ![](img/02f1e67fd58bf4ed8ef40b3e7f112c0b.png)

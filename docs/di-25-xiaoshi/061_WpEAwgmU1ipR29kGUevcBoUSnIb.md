@@ -78,7 +78,7 @@
 
 ![](img/304a2a59b9acf026701022479b4004ab.png)
 
-[brand.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NRQYb6XoAoQQv2xZdMIcUn62ncg)
+[brand.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NRQYb6XoAo🐧v2xZdMIcUn62ncg)
 
 接着，我们需要启个http服务，来加载这些数据。
 

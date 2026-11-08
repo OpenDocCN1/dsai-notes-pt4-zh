@@ -4,7 +4,7 @@
 
 > 链接：https://mp.weixin.qq.com/s/jUylk813LYbKw0sLiIttTQ
 
-> 来源：公众号：一泽Eze
+> 来源：👸号：一泽Eze
 
 ![](img/f2622ecac2795d7aa18f153077ac95e1.png)
 
@@ -395,7 +395,7 @@ Level 2: SKILL.md 完整内容
 Level 3: Resources 中的具体文件（按需读取）
 ```
 
-公众号 **@言午** 在《Claude Skills背后的信息分层设计哲学》一文中，亦有形象的图解：
+👸号 **@言午** 在《Claude Skills背后的信息分层设计哲学》一文中，亦有形象的图解：
 
 不过，即使 Agent Skill 支持「渐进式披露」。
 

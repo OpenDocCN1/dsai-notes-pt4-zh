@@ -135,7 +135,7 @@ SVM 就是试图把棍放在最佳位置，好让在棍的两边有尽可能大�
 
 **再之后，无聊**的大人们，把这**些球叫做 「data」，**把棍子叫做 「classifi**er」, 最大间隙 tric**k 叫做「op**timization」，** 拍桌子叫做「**kernelling」,** 那张纸叫做「hyperplane」 。
 
-有梯子的童鞋，可以看一下这个地方，看视频来更直观的感受:
+有🪜的童鞋，可以看一下这个地方，看视频来更直观的感受:
 
 [https://www.youtube.com](https://www.youtube.com/watch?v=3liCbRZPrZA)/watch?v=3liCbRZPrZA
 

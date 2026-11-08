@@ -1,6 +1,6 @@
 # AI新媒体训练（已移入副业库）
 
-> 来源：[https://docs.feishu.cn/docx/BHRRdi2naozQQ1xNa6wcW7O1nSc](https://docs.feishu.cn/docx/BHRRdi2naozQQ1xNa6wcW7O1nSc)
+> 来源：[https://docs.feishu.cn/docx/BHRRdi2naoz🐧1xNa6wcW7O1nSc](https://docs.feishu.cn/docx/BHRRdi2naoz🐧1xNa6wcW7O1nSc)
 
 本内容已移动至[李又懂副业实战](https://m0pnt42rkm.feishu.cn/wiki/EOOCwn6QsiJtvzkXC9Sc5jP4nZg) ，仅对会员开发
 
@@ -12,7 +12,7 @@
 
 拆解爆款内容，复制爆款文案
 
-小红书：让ChatGPT帮你完成小红书首图、小红书笔记SEO优化、小红书爆款内容、以及画出流程图
+📕：让ChatGPT帮你完成📕首图、📕笔记SEO优化、📕爆款内容、以及画出流程图
 
 短视频：视频脚本拆解，直接出一套可用的视频脚本
 
@@ -26,11 +26,11 @@
 
 > 让ChatGPT帮你写视频脚本
 
-> ChatGPT生成小红书内容的要点和操作步骤
+> ChatGPT生成📕内容的要点和操作步骤
 
-> 如何使用ChatGPT制作大字报式小红书首图
+> 如何使用ChatGPT制作大字报式📕首图
 
-> 如何使用ChatGPT进行小红书笔记SEO优化
+> 如何使用ChatGPT进行📕笔记SEO优化
 
 > 如何使用chatGPT画流程图
 

@@ -127,7 +127,7 @@
 +   [食用 · 提示词](126_JCmnwUB0RiavV6kczCjc559CnEb.md)
 +   [Prompt 工程实践教程](127_Nd0owYOiyiw0OgkoorXcFx4tnhc.md)
 +   [优秀智能体提示词案例](128_Xxu4wetpLiuErBkXNTfcS6asnMe.md)
-+   [【学术头条】如何为你的公众号做个智能体](129_OWqiwISu6i8euJkKWssc5u1anmc.md)
++   [【学术头条】如何为你的👸号做个智能体](129_OWqiwISu6i8euJkKWssc5u1anmc.md)
 +   [【智问简历-考研保研面试复习】工具类智能体技巧](130_M5UUwnb9LieSBck6QEYcSXtfnBw.md)
 +   [【重生三国-人生模拟器】如何做一个文字类游戏](131_JsTewFSIyiOPGBkgjVbcR1b3nHe.md)
 +   [【GLMs 实战教程】三步迭代“PPT 助手”](132_JILJw05KaiOO6dkDgdCcujSUnAg.md)

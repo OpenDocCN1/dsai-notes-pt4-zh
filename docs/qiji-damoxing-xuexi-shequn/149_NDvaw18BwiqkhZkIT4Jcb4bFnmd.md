@@ -16,7 +16,7 @@ https://mp.weixin.qq.com/s/PNo7dBK_thiXIwOO6udblg
 
 ### 专访诺奖得主：大模型是记忆还是理解？
 
-https://mp.weixin.qq.com/s/V5fdlHz6JBQQNXsIVpVvSQ
+https://mp.weixin.qq.com/s/V5fdlHz6JB🐧NXsIVpVvSQ
 
 2011 年诺贝尔经济学奖得主托马斯·萨金特（Thomas J. Sargent）教授认为，人工智能和机器学习的核心理念可以追溯至伽利略时代，都是通过构建世界模型并基于模型进行预测和决策。机器学习作为人工智能的关键组成部分，通过数据驱动的方式实现了这一过程。
 
@@ -344,7 +344,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

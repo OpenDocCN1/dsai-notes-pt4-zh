@@ -12,7 +12,7 @@
 
 > 3、**能力层：**自然语言理解、对话管理、对话策略、策略优化、对话工厂
 
-> 4、**应用层：**网页端、钉钉群机器人、微信公众号、第三方平台（如拼夕夕）等
+> 4、**应用层：**网页端、钉钉群机器人、🛰️👸号、第三方平台（如拼夕夕）等
 
 > 5、**硬件接入：**可接入作为智能语音助手，目前已经加入语音助手模块，可接入树莓派、单片机等硬件
 
@@ -45,7 +45,7 @@
 | [**Chatbot_Crawler**](https://github.com/charlesXu86/Chatbot_Crawler) | 爬虫 |
 | chatbot_retrieval | 基于检索的对话模型，他在机器人无法处理用户意图时发挥重要作用 |
 | Chatbot_Evaluate | 对话质量评估、评价、对话诊断、数据回流模块，对话模型优化 |
-| [**Chatbot_Help**](https://github.com/charlesXu86/Chatbot_Help) | 一个将机器人接入第三方平台的工具、如钉钉群、微信公众号等，可快速实现工程化 |
+| [**Chatbot_Help**](https://github.com/charlesXu86/Chatbot_Help) | 一个将机器人接入第三方平台的工具、如钉钉群、🛰️👸号等，可快速实现工程化 |
 | Chatbot_Recommendation | 对话系统与推荐系统结合，目前正在规划中、暂未开始 |
 | [**Chatbot_Web**](https://github.com/charlesXu86/Chatbot_Web) | 机器人的简单pc端页面交互，可以实现快速体验机器人效果 |
 | [**Chatbot_Voice**](https://github.com/charlesXu86/Chatbot_Voice) | 聊天机器人的语音交互模块 |

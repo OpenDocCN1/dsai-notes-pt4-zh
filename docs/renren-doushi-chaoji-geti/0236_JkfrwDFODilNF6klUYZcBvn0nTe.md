@@ -39,11 +39,11 @@ BizyAir是一组ComfyUI节点（一共有100多个子节点），无需下载模
 
 **已**内置Comfyui软件和BizyAir节点，无需单独下载COMFYUI解压即用，解压后1.7G左右。已经安装过COMFYUI用户请忽略。
 
-可以魔法上网用户:
+可以🪜用户:
 
 [https://github.com/siliconflow/ComfyUI/releases/downlo](https://github.com/siliconflow/ComfyUI/releases/tag/latest)ad/latest/new_ComfyUI_windows_portable_nvidia_none_or_cpu.7z
 
-无法魔法上网用户
+无法🪜用户
 
 [ht](https://bizy-air.oss-cn-beijing.aliyuncs.com/new_ComfyUI_windows_portable_nvidia_none_or_cpu.7z)tps://bizy-air.oss-cn-beijing.aliyuncs.com/new_ComfyUI_windows_portable_nvidia_none_or_cpu.7z
 

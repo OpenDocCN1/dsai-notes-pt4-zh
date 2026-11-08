@@ -32,7 +32,7 @@
 
 ![](img/879d32fc768e17be09db5f377d08b3c0.png)
 
-> **备注：**想要加入 Evaluation SIG 的同学欢迎微信联系浦语小助手（微信搜索 InternLM）或者小组长刘卓鑫（微信搜索 l_iyu27）
+> **备注：**想要加入 Evaluation SIG 的同学欢迎🛰️联系浦语小助手（🛰️搜索 InternLM）或者小组长刘卓鑫（🛰️搜索 l_iyu27）
 
 ## 在 Evaluation SIG 可以做什么？
 

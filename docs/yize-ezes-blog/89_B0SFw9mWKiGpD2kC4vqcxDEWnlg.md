@@ -131,6 +131,6 @@
 
 +   邮箱：[eze@eze.is](mailto:eze@eze.is)
 
-+   微信公众号：一泽Eze
++   🛰️👸号：一泽Eze
 
 +   Twitter：@eze_is_1

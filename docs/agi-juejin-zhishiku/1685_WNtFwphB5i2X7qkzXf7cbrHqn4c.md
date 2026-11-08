@@ -42,7 +42,7 @@
 
 ## "当律师开始胡说"——AI 编造虚假法律判例
 
-<https://today-obs.line-scdn.net/0h3pNmSpFfbF9zFH-orkMTCEtCYC5AcnZWUXAmbQQdMmtfOH8JTSY_PFJBM3NXdHgNU3RxalFAOm5fcyNcSQ/w644>
+<https://today-obs.line-scdn.net/0h3pNmSpFfbF9zFH-orkMTCEtCYC5AcnZWUXAmb🐧dMmtfOH8JTSY_PFJBM3NXdHgNU3RxalFAOm5fcyNcSQ/w644>
 
 )
 
@@ -637,7 +637,7 @@ AI 技术的发展，为人类社会带来了巨大的机遇和挑战。我们�
 
 # 结语
 
-缘起于一次网上找到一个总结公众号的提示词，给它一个公众号文章链接，它就给我一段合适的总结。当时正在研究 AI 硬件的内容，它的输出结果还挺像那么回事，但是真正打开网页看的时候完全不是不对，它根本没有去读取网页内容。在写这篇文章的时候同样也遇到这个问题，思索再三，没有把它归到 AI 幻觉中去，有这样几个方面的考虑：
+缘起于一次网上找到一个总结👸号的提示词，给它一个👸号文章链接，它就给我一段合适的总结。当时正在研究 AI 硬件的内容，它的输出结果还挺像那么回事，但是真正打开网页看的时候完全不是不对，它根本没有去读取网页内容。在写这篇文章的时候同样也遇到这个问题，思索再三，没有把它归到 AI 幻觉中去，有这样几个方面的考虑：
 
 +   **从策略上看**，总结类文章，AI 很有可能不会读完整个文章，而只是头尾读一下，中间随机读就可以了。
 

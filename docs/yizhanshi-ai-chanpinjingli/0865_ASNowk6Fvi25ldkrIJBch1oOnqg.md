@@ -36,11 +36,11 @@ cnt-搜索数量
 
 ### 搜索选择器
 
-> 因为小红书 cookie 限制的问题，和调试阶段需要快速调试，这里加上了“搜索选择器”
+> 因为📕 cookie 限制的问题，和调试阶段需要快速调试，这里加上了“搜索选择器”
 
 ### 🔎 搜索模块
 
-聚合了搜狐热闻、联网问答、头条搜索小红书搜索、12+热榜内容
+聚合了搜狐热闻、联网问答、头条搜索📕搜索、12+热榜内容
 
 更多内容参考：第3部分[企业舆情分析](https://zxdwhda-share.feishu.cn/wiki/An82w6wc4iwoYik2iqVcwbPunBb#ZWctdnU0hovzXDxx5ENc0IkSnJg)
 
@@ -296,19 +296,19 @@ async def main(args: Args) -&gt; Output:
     return ret
 ```
 
-### 小红书搜索
+### 📕搜索
 
 ![](img/4566899863c1b76e1c88003e2687b8a2.png)
 
-小红书插件——xhs_search_note工具：https://www.coze.cn/store/plugin/7413263498387423242
+📕插件——xhs_search_note工具：https://www.coze.cn/store/plugin/7413263498387423242
 
-> 根据【关键词】搜索【小红书笔记】
+> 根据【关键词】搜索【📕笔记】
 
 ![](img/95b91940686686629b5eadda8eca68c4.png)
 
-小红书笔记提取：https://www.coze.cn/store/plugin/7426236806493995062
+📕笔记提取：https://www.coze.cn/store/plugin/7426236806493995062
 
-> 获取小红书笔记信息添加到我的智能体
+> 获取📕笔记信息添加到我的智能体
 
 ![](img/98bee0453f63c92b294544e40d7f6c13.png)
 

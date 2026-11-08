@@ -120,7 +120,7 @@
 
 > 🔗 文中引用的链接
 
-+   [原文链接](https://mp.weixin.qq.com/s/d8tFxQQ-_5O30CiLHT5BrA)
++   [原文链接](https://mp.weixin.qq.com/s/d8tFx🐧-_5O30CiLHT5BrA)
 
 +   安装地址1
 

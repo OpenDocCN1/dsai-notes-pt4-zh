@@ -26,7 +26,7 @@
 
 ![](img/8f2f79cf2e4dd7ec337024d71716b6f0.png)
 
-[开源视频翻译项目地址](https://github.com/krillinai/KrillinAI)                  [           Kril](https://space.bilibili.com/242124650)linAI公众号                    B站官方账号｜优质视频每日更新
+[开源视频翻译项目地址](https://github.com/krillinai/KrillinAI)                  [           Kril](https://space.bilibili.com/242124650)linAI👸号                    B站官方账号｜优质视频每日更新
 
 # 热门内容
 

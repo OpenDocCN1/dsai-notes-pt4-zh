@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/N8ktdjFXuoa4LRxh4Svc1UU4nJd](https://my.feishu.cn/docx/N8ktdjFXuoa4LRxh4Svc1UU4nJd)
 
-首先推荐一个AI工具，免梯子直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
+首先推荐一个AI工具，免🪜直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
 
 ### 不需要魔法的MJ！全中文输入生图！
 
@@ -36,7 +36,7 @@
 
 #### **3、流程简介**
 
-**跟**Discord一样@机器人结束他会发图，然后U1U2U3这些没有按钮需要回复消息实现（QQ频道功能还不够强大，估计以后会优化
+**跟**Discord一样@机器人结束他会发图，然后U1U2U3这些没有按钮需要回复消息实现（🐧频道功能还不够强大，估计以后会优化
 
 ![](img/6edb05263ab31a8de3ce9355851297fe.png)
 

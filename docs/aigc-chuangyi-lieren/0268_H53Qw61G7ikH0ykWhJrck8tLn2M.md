@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/P2xydtRf3ogssfxWcc1cwgronsd](https://aigcreative.feishu.cn/docx/P2xydtRf3ogssfxWcc1cwgronsd)
 
-> 公众号：歸藏的AI工具箱
+> 👸号：歸藏的AI工具箱
 
 > 链接: https://mp.weixin.qq.com/s/Z-u_DHF2dXGAPUvdav2Pvw
 

@@ -6,7 +6,7 @@
 
 ### 超级标
 
-亦仁
+龙哥
 
 2024-10-30 第二期龙珠悬赏：AI生成视频在YouTube的盈利潜力
 
@@ -84,7 +84,7 @@ https://scys.com/articleDetail/xq_topic/5125414222521284
 
 [h](https://wx.zsxq.com/topic/2858242528811221)ttps://scys.com/articleDetail/xq_topic/2858242528811221
 
-2024-11-6 详细拆解两个适合新人的AI Shorts 赛道 （包含生财圈友专属视频场景关键帧提取工具.rar ）
+2024-11-6 详细拆解两个适合新人的AI Shorts 赛道 （包含赚钱圈友专属视频场景关键帧提取工具.rar ）
 
 [h](https://scys.com/articleDetail/xq_topic/4848521448112458)ttps://scys.com/articleDetail/xq_topic/4848521448112458
 
@@ -324,15 +324,15 @@ https://scys.com/articleDetail/xq_topic/5121882258255884
 
 ### 其他总指导
 
-亦仁
+龙哥
 
-2022-8-3 看生财的项目帖子总重要的是看这个项目是怎么跑通的，只有跑的通的项目才值得“抄作业”
+2022-8-3 看赚钱的项目帖子总重要的是看这个项目是怎么跑通的，只有跑的通的项目才值得“抄作业”
 
 [h](https://scys.com/articleDetail/xq_topic/585521221241844)ttps://scys.com/articleDetail/xq_topic/585521221241844
 
 刘小排
 
-2023-3-2 程序员可以在生财有术干什么？
+2023-3-2 程序员可以在龙哥盟干什么？
 
 +   低端劳动自动化
 
@@ -462,7 +462,7 @@ Zero
 
 [h](https://wx.zsxq.com/topic/2858211254588441)ttps://scys.com/articleDetail/xq_topic/2858211254588441
 
-2024-11-08 【生财技能】AI动物故事视频复刻与批量生产
+2024-11-08 【赚钱技能】AI动物故事视频复刻与批量生产
 
 [h](https://wx.zsxq.com/topic/2858241444858581)ttps://scys.com/articleDetail/xq_topic/8858451518812452
 
@@ -864,9 +864,9 @@ https://www.lovart.ai
 
 可灵优惠码
 
-+   7折链接，填写邀请码6B6QQ59ZZX33注册+买会员送50% 灵感值：
++   7折链接，填写邀请码6B6🐧59ZZX33注册+买会员送50% 灵感值：
 
-+   [h](https://klingai.kuaishou.com/h5-app/invitation?code=6B6QQ59ZZX33)ttps://klingai.kuaishou.com/h5-app/invitation?code=6B6QQ59ZZX33
++   [h](https://klingai.kuaishou.com/h5-app/invitation?code=6B6🐧59ZZX33)ttps://klingai.kuaishou.com/h5-app/invitation?code=6B6🐧59ZZX33
 
 +   周年庆5折链接（仅限6月6日）：https://app.klingai.com/cn/membership/membership-plan
 

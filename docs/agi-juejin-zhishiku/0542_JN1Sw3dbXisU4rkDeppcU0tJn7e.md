@@ -2,7 +2,7 @@
 
 > 来源：[https://agijuejin.feishu.cn/docx/QidedZgboo5maMxMq3qcgtKFntV](https://agijuejin.feishu.cn/docx/QidedZgboo5maMxMq3qcgtKFntV)
 
-来源：微信公众号“AGI观察”，作者Ada
+来源：🛰️👸号“AGI观察”，作者Ada
 
 链接：https://mp.weixin.qq.com/s/Qt_sPE9F0p4HsWny4PF7Eg
 

@@ -8,7 +8,7 @@
 
 ## OpenClaw 是什么？
 
-OpenClaw 是一个开源 AI 助手，跑在你自己的电脑上，通过 Telegram / Discord / 微信跟你对话。它能：
+OpenClaw 是一个开源 AI 助手，跑在你自己的电脑上，通过 Telegram / Discord / 🛰️跟你对话。它能：
 
 +   🌐 自动浏览网页、抓取信息
 

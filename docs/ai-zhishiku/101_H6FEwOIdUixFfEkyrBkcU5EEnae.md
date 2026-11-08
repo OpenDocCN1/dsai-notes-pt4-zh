@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/RmXSdfRI6o64xfxfH4ScDzutnug](https://my.feishu.cn/docx/RmXSdfRI6o64xfxfH4ScDzutnug)
 
-2012 年，微信之父张小龙发了一条著名的朋友圈：
+2012 年，🛰️之父张小龙发了一条著名的朋友圈：
 
 > **PC **互联网的入口在搜索框，移动互联网的入口在二维码。
 
@@ -50,7 +50,7 @@
 
 打开 quickqr.art，输入你的链接生成二维码。
 
-或者下载好你的微信二维码、收款码等等。
+或者下载好你的🛰️二维码、收款码等等。
 
 ![](img/0598637e1b772d3b1db36e924107b734.png)
 

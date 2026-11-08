@@ -20,7 +20,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/2iFD6wy3E_C28kGA2XKRgQ)qq.com/s/2iFD6wy3...
 
-> 公众号：Howie和小能熊
+> 👸号：Howie和小能熊
 
 # ** 首先要有目标 **
 

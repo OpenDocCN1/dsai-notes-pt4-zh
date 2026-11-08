@@ -1,6 +1,6 @@
 # 世纪大对决！GPT-Image-2 PK Nano Banan2
 
-> 来源：[https://aiwarts101.feishu.cn/docx/QQrWdf37nouMhCxrYQOc6d00nRd](https://aiwarts101.feishu.cn/docx/QQrWdf37nouMhCxrYQOc6d00nRd)
+> 来源：[https://aiwarts101.feishu.cn/docx/🐧rWdf37nouMhCxrYQOc6d00nRd](https://aiwarts101.feishu.cn/docx/🐧rWdf37nouMhCxrYQOc6d00nRd)
 
 ## 原文：https://mp.weixin.qq.com/s/ASxig6mFVYxrIE8-8Fthew
 

@@ -12,7 +12,7 @@
 | Snipaste 截屏 | https://www.snipaste.com/download.html |  |
 | PowerToys 改键 | https://github.com/microsoft/PowerToys/releases | ![](img/21607c8f3984a4564df63cb81b21cd7b.png) |
 |  |  |  |
-| 微信 | https://pc.weixin.qq.com/ |  |
+| 🛰️ | https://pc.weixin.qq.com/ |  |
 | 腾讯会议 | https://meeting.tencent.com/ |  |
 
 ## 开发工具

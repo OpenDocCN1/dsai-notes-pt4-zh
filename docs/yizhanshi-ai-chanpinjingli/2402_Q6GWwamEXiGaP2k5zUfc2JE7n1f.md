@@ -10,7 +10,7 @@
 
 > 🌏
 
-> [奥特曼：在开源AI上，我们错了！DeepSeek让](https://mp.weixin.qq.com/s/A_qjynP170IeN5rVDvewQQ)OpenAI优势不再，下一个是GPT-5
+> [奥特曼：在开源AI上，我们错了！DeepSeek让](https://mp.weixin.qq.com/s/A_qjynP170IeN5rVDvew🐧)OpenAI优势不再，下一个是GPT-5
 
 >
 

@@ -96,7 +96,7 @@
 
 > 🔗 文中引用的链接
 
-> [微信文章链接](https://mp.weixin.qq.com/s/_ccGlKK568Njt4_32FcaUw)
+> [🛰️文章链接](https://mp.weixin.qq.com/s/_ccGlKK568Njt4_32FcaUw)
 
 > [OpenAI官博原文](https://openai.com/index/harness-engineering/)
 

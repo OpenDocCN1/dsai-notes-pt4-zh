@@ -6,7 +6,7 @@
 
 ![](img/d604b9014132f5bb28050d9874bc4e4e.png)
 
-[**当我问de**](https://www.xiaohongshu.com/user/profile/65de04d5000000000500bc37?channel_type=web_search_result_notes&parent_page_channel_type=web_user_board&xsec_token=AB4o7rhbIF-yld_e7vRn9t09naX3z1ehNr2NyGsLJSlDo=&xsec_source=pc_note)epseek人类都问了他什么离谱问题--小红书：栗栗小宇宙
+[**当我问de**](https://www.xiaohongshu.com/user/profile/65de04d5000000000500bc37?channel_type=web_search_result_notes&parent_page_channel_type=web_user_board&xsec_token=AB4o7rhbIF-yld_e7vRn9t09naX3z1ehNr2NyGsLJSlDo=&xsec_source=pc_note)epseek人类都问了他什么离谱问题--📕：栗栗小宇宙
 
 ![](img/7eddd6d782b173787d05be5a774d33c7.png)
 
@@ -18,7 +18,7 @@
 
 ![](img/5cdb54cf1eaf5c50c48e433849445a8b.png)
 
-DeepSeek写诗--小红书：疾风突兀
+DeepSeek写诗--📕：疾风突兀
 
 ![](img/21090b808acec98315f852bf78b22b0b.png)
 
@@ -132,7 +132,7 @@ DeepSeek 教 plog 博主，2025 如何破局
 
 ![](img/1f14d97e53a473d9c2832460cdc3e80a.png)
 
-用Deepseek来进行45天省考规划！——小红书：菠萝耶耶
+用Deepseek来进行45天省考规划！——📕：菠萝耶耶
 
 ![](img/78322923478059342bc0ccf8934d743c.png)
 

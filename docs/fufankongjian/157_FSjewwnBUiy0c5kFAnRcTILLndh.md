@@ -135,7 +135,7 @@ AutoDL是一个稳定高效的算力租赁平台，AutoDL支持一键部署基�
 
 ![](img/86090248a4df10f478e842f22eef523a.png)
 
-除了常规登录流程外，AutoDL还要求绑定微信和进行实名认证。实名认证其实是目前所有算力租赁平台的基本要求，大家按照AutoDL官网指引👉https://www.autodl.com/console/center/account/auth，一步步操作即可：
+除了常规登录流程外，AutoDL还要求绑定🛰️和进行实名认证。实名认证其实是目前所有算力租赁平台的基本要求，大家按照AutoDL官网指引👉https://www.autodl.com/console/center/account/auth，一步步操作即可：
 
 ![](img/31d102461e83c5436a76ede9c676320e.png)
 
@@ -5430,7 +5430,7 @@ mategen = MateGenClass(api_key = &#x27;YOUR_API_KEY&#x27;,
 已完成初始化，MateGen可随时调用！
 ```
 
-> 公开课前30席添加微信扫码助教，即可领取300w token MateGen API-KEY！报名正式课程还有更多额度赠送哦~
+> 公开课前30席添加🛰️扫码助教，即可领取300w token MateGen API-KEY！报名正式课程还有更多额度赠送哦~
 
 ![](img/9eb75a62698499261b3f6e8dd93e1a37.png)
 

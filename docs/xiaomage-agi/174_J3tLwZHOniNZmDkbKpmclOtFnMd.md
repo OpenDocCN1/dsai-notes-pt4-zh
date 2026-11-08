@@ -386,7 +386,7 @@ So-VITS 官方版本号目前为 4.1，其下另有两个分支：4.1-Stable 以
 
 为了避免在之后的使用中出现各种意料之外的问题，请务必对照下面的 Checklist 检查本机环境。
 
-⏩关闭全局梯子 / 绕过局域网
+⏩关闭全局🪜 / 绕过局域网
 
 ⏩确保本机正常连接互联网
 
@@ -474,7 +474,7 @@ RuntimeError: DataLoader worker （pid（s） xxxx） exited unexpectedly
 
 报错：Expecting value: line 1 column 1 （char 0）
 
-答：关闭全局梯子
+答：关闭全局🪜
 
 报错：error: emb_g.weight is not in the checkpoint
 

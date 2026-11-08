@@ -92,4 +92,4 @@ Heygen的访问限制太强，正好剪映已经有了声音克隆和公模数�
 
 > 🎉 在线观看第一节：https://www.bilibili.com/video/BV1yw411E7Rt/?spm_id_from=333.999.0.0
 
-> 🌍微信：aiwarts101
+> 🌍🛰️：aiwarts101

@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/EbiNdtTN0ogQwBxHXfIcVXtGn9e](https://aigcreative.feishu.cn/docx/EbiNdtTN0ogQwBxHXfIcVXtGn9e)
 
-> 来源：公众号-京东JellyDesign
+> 来源：👸号-京东JellyDesign
 
 ![](img/abac86216cf03da0edea4362d424db66.png)
 

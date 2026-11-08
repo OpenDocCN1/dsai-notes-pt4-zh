@@ -1,4 +1,4 @@
-# 做自媒体如何发挥ChatGPT的最大价值？【生财有术ChatGPT航海分享-台风】
+# 做自媒体如何发挥ChatGPT的最大价值？【龙哥盟ChatGPT航海分享-台风】
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/HdvTdpX8hoq4n7xsYEmcwsWxnFf](https://xuqiwei1986.feishu.cn/docx/HdvTdpX8hoq4n7xsYEmcwsWxnFf)
 
@@ -92,9 +92,9 @@ A、**专业咨询**
 
 B、**布置任务**
 
-内容类型：写文章、小红书、知乎问答、短视频脚本、口播文案……
+内容类型：写文章、📕、知乎问答、短视频脚本、口播文案……
 
-1.  设身份：限制回答特定领域，有概率影响语言风格；如小红书博主、法律专家
+1.  设身份：限制回答特定领域，有概率影响语言风格；如📕博主、法律专家
 
 1.  派任务：写一篇xx平台、xx领域的爆款文章，受众是xxx，请围绕xxx题目进行原创
 
@@ -126,17 +126,17 @@ ChatGPT是一个文本领域的智能机器人，处理文本工作是他的强�
 
 1.  对事实性知识要求不高的领域：人生思想观点论述、点评，生活经验等
 
-1.  独特而极具辨识度的平台化内容风格：如小红书
+1.  独特而极具辨识度的平台化内容风格：如📕
 
 ## （二）**自媒体应用难易程度**
 
 10分满分，分越高越容易。可以看出，文章仿写类的最容易。
 
-1.  规模化伪原创：针对信息推荐流、搜索流量   //公众号/今日头条/百家号…   9
+1.  规模化伪原创：针对信息推荐流、搜索流量   //👸号/今日头条/百家号…   9
 
 1.  百度问答：内容简短，基本能做到自动化  8
 
-1.  小红书：容易出风格，涉及营销部分有一定难度  7
+1.  📕：容易出风格，涉及营销部分有一定难度  7
 
 1.  知乎问答：有特定风格、但对内容有要求(平台会识别AI文本)  7
 
@@ -172,11 +172,11 @@ ChatGPT是一个文本领域的智能机器人，处理文本工作是他的强�
 
 产出：快速，可控度一般
 
-> 你是一名小红书博主，你的任务是根据我的提示词或描述生成小红书风格的文案：包括标题和内容。你的文案应该有以下特点:  表达要口语化，标题吸引人，要多使用emoji表情图标，内容观点尽量分点罗列，适当描述自己的使用体验和评价，文案最后生成相关的标签。以下是我的创作任务：
+> 你是一名📕博主，你的任务是根据我的提示词或描述生成📕风格的文案：包括标题和内容。你的文案应该有以下特点:  表达要口语化，标题吸引人，要多使用emoji表情图标，内容观点尽量分点罗列，适当描述自己的使用体验和评价，文案最后生成相关的标签。以下是我的创作任务：
 
-小红书生成器：https://ai.xiaohongshu.live
+📕生成器：https://ai.xiaohongshu.live
 
-LangGPT模板：[小红书爆款生成器](https://github.com/yzfly/LangGPT/blob/main/examples/chinese_xiaohongshu_writer/ChatGPT-%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%88%86%E6%AC%BE%E7%94%9F%E6%88%90%E5%99%A8%E5%AF%B9%E8%AF%9D.md)
+LangGPT模板：[📕爆款生成器](https://github.com/yzfly/LangGPT/blob/main/examples/chinese_xiaohongshu_writer/ChatGPT-%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%88%86%E6%AC%BE%E7%94%9F%E6%88%90%E5%99%A8%E5%AF%B9%E8%AF%9D.md)
 
 ## （二）**调教派**
 
@@ -188,7 +188,7 @@ LangGPT模板：[小红书爆款生成器](https://github.com/yzfly/LangGPT/blob
 
 ![](img/770c94eb8d77fc0ade1e8e518a131471.png)
 
-[胎教级标题党培训手册——4步让GPT成为小红书标题大师](https://fjt9w880tn.feishu.cn/docx/XxczdnuchoE7JtxZrO8cn4eGncb)  @小凡
+[胎教级标题党培训手册——4步让GPT成为📕标题大师](https://fjt9w880tn.feishu.cn/docx/XxczdnuchoE7JtxZrO8cn4eGncb)  @小凡
 
 ![](img/0cfaa21c3137abf30b91d3f9eaef95b8.png)
 
@@ -206,7 +206,7 @@ LangGPT模板：[小红书爆款生成器](https://github.com/yzfly/LangGPT/blob
 
 ![](img/a1a0cecbe87f3f2273522795fd5ee6b2.png)
 
-ChatGPT + 公众号爆文写作，从0开始，7天达成阅读10W+，方法全分享，毫无保留@木白
+ChatGPT + 👸号爆文写作，从0开始，7天达成阅读10W+，方法全分享，毫无保留@木白
 
 https://articles.zsxq.com/id_i6vohzgwizfb.html
 
@@ -216,7 +216,7 @@ https://articles.zsxq.com/id_i6vohzgwizfb.html
 
 ## （一）**创作学习对象**
 
-1.  参考方法论：如爆款标题、公众号爆文模板，SEO关键词的分布策略等
+1.  参考方法论：如爆款标题、👸号爆文模板，SEO关键词的分布策略等
 
 1.  参考内容：总结内容结构、写作手法、语气风格、段落和用词习惯等等
 
@@ -268,11 +268,11 @@ https://articles.zsxq.com/id_i6vohzgwizfb.html
 
 不同版本的区别
 
-1.  官网网页版本：梯子，支持使用插件，GPT-4条数有限制
+1.  官网网页版本：🪜，支持使用插件，GPT-4条数有限制
 
-1.  官网手机版本：梯子，IOS 美区ID，GPT-4没有条数限制
+1.  官网手机版本：🪜，IOS 美区ID，GPT-4没有条数限制
 
-1.  国内镜像版本：梯子，字数、记忆长度、安全过滤有更多限制，API模型稍逊于官网版本
+1.  国内镜像版本：🪜，字数、记忆长度、安全过滤有更多限制，API模型稍逊于官网版本
 
 ## **（二）平替工具 **
 
@@ -310,7 +310,7 @@ https://search01.shengcaiyoushu.com/activity/documents?id=1580&index=1
 
 分享文档：https://search01.shengcaiyoushu.com/docx/FtbldUhfYoungwxB7iBcKH5SnWd
 
-分享主题：《20刀/月并且任劳任怨，这名小红书助理你招还是不招》@小凡
+分享主题：《20刀/月并且任劳任怨，这名📕助理你招还是不招》@小凡
 
 直播回放：https://i.shengcaiyoushu.com/t/BOA7Z8L3
 
@@ -320,7 +320,7 @@ https://search01.shengcaiyoushu.com/activity/documents?id=1580&index=1
 
 分享文档：[ChatGPT 投喂指南](https://k0z8o16zas8.feishu.cn/docx/SUTKd7wdDoAg2Exv7hoc8m0BnOK)
 
-**公众号 ****AI**** 写作分享@小浩**
+**👸号 ****AI**** 写作分享@小浩**
 
 https://search01.shengcaiyoushu.com/docx/E0kIdqZG2olOmKxLWWhcnWFlnae
 
@@ -332,9 +332,9 @@ https://shengcaiyoushu01.feishu.cn/minutes/obcnb273byyah231mw53c8jy
 
 https://search01.shengcaiyoushu.com/mobile/activity/landing?id=1580
 
-## （二）**生财精华帖**
+## （二）**赚钱精华帖**
 
-**ChatGPT**** + 公众号爆文写作，从0开始，7天达成**阅读10W+，方法全分享，毫无保留@木白
+**ChatGPT**** + 👸号爆文写作，从0开始，7天达成**阅读10W+，方法全分享，毫无保留@木白
 
 https://articles.zsxq.com/id_i6vohzgwizfb.html
 
@@ -344,11 +344,11 @@ https://articles.zsxq.com/id_i6vohzgwizfb.html
 
 [错过了就后悔！3步用GPT教你轻松掌握抖音18个爆款密码，小白直接变大神](https://fjt9w880tn.feishu.cn/docx/ATkmdw05so8PnCx0CEIcqEdXnMf)
 
-胎教级标题党培训手册——4步让GPT成为小红书标题大师
+胎教级标题党培训手册——4步让GPT成为📕标题大师
 
 https://articles.zsxq.com/id_zrre07e3d2ci.html
 
-[胎教级标题党培训手册——4步让GPT成为小红书标题大师](https://fjt9w880tn.feishu.cn/docx/XxczdnuchoE7JtxZrO8cn4eGncb)
+[胎教级标题党培训手册——4步让GPT成为📕标题大师](https://fjt9w880tn.feishu.cn/docx/XxczdnuchoE7JtxZrO8cn4eGncb)
 
 最强“听话照做打工人”——如何用GPT无脑复制抖音热门口播视频
 

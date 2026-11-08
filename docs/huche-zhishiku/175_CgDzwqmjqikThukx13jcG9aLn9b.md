@@ -16,11 +16,11 @@
 
 +   [20250703 支付宝小游戏增长新蓝海PPT](https://huchegames.feishu.cn/wiki/K5ZOwl90biCKj3kxG5jcJVhpn3g)
 
-+   [2025微信小游戏开发者大会（重庆）-会议资料整理](https://huchegames.feishu.cn/wiki/R1uMw2k8piYQjvk7M61cdEfGnEg)
++   [2025🛰️小游戏开发者大会（重庆）-会议资料整理](https://huchegames.feishu.cn/wiki/R1uMw2k8piYQjvk7M61cdEfGnEg)
 
 +   [GameX·FIRE 2025巨量引擎小游戏生态大会直播文字实录](https://huchegames.feishu.cn/wiki/Ig8Qw6wHMiKqUjkcMGTcNphunnO)
 
-+   [2025微信公开课PRO小游戏专场](https://huchegames.feishu.cn/wiki/TA0LwfSpoilfLFkVnCncntmLnFf)
++   [2025🛰️公开课PRO小游戏专场](https://huchegames.feishu.cn/wiki/TA0LwfSpoilfLFkVnCncntmLnFf)
 
 +   [《2024小游戏混合变现商业化白皮书》综合变现率3倍提升！行业首份混变白皮书手把手教你商业化调优](https://huchegames.feishu.cn/wiki/Jiqlwg85Si43cfkNAV3cvjB1nmb)
 
@@ -28,7 +28,7 @@
 
 +   [小游戏出海：Google怎么投IAA？怎么设置tROAS？ | 胡扯投放](https://huchegames.feishu.cn/wiki/MKuYwfNZoiJjkekEtvtcD1qVnsd)
 
-+   [IAA小游戏之什么值得做：逆袭和塔防—](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292775&idx=1&sn=475552d19adcbb60ac5a86e7361e9bc1&scene=21#wechat_redirect)—2024腾讯广告IAA微信小游戏私享会
++   [IAA小游戏之什么值得做：逆袭和塔防—](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292775&idx=1&sn=475552d19adcbb60ac5a86e7361e9bc1&scene=21#wechat_redirect)—2024腾讯广告IAA🛰️小游戏私享会
 
 +   CGDC上《潜水员戴夫》关于Steam推荐算法的分享
 
@@ -36,15 +36,15 @@
 
 +   《小游戏团队创始人避坑指南》PPT ｜ 欢迎来现场胡扯
 
-+   消除类小游戏前中后期调优细则——2024腾讯广告IAA微信小游戏私享会
++   消除类小游戏前中后期调优细则——2024腾讯广告IAA🛰️小游戏私享会
 
-+   2024微信公开课小游戏开发者大会PPT（部分）
++   2024🛰️公开课小游戏开发者大会PPT（部分）
 
-+   2024微信小游戏开发者大会逐字稿
++   2024🛰️小游戏开发者大会逐字稿
 
 +   IAA异军突起，基于抖小IAA用户研究报告的立项思路分析
 
-+   让创造产生价值：2024(武汉)微信小游戏公开课IAA专场实录
++   让创造产生价值：2024(武汉)🛰️小游戏公开课IAA专场实录
 
 +   智游破浪启迪未来：2024抖音IAA小游戏生态大会实录
 
@@ -64,4 +64,4 @@
 
 [20250815漫剧星河智绘芯穹（杭州）](https://huchegames.feishu.cn/wiki/HI06w9f4ZidLIJkRbZ0cECtmnaf)
 
-[20250910微信广告生态合作伙伴大会（成都）](https://huchegames.feishu.cn/wiki/Odu8wnDIbiWP8KkiY3rcoHGxnvg)
+[20250910🛰️广告生态合作伙伴大会（成都）](https://huchegames.feishu.cn/wiki/Odu8wnDIbiWP8KkiY3rcoHGxnvg)

@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/XYX85wbYFyKN9wQLDhfRrA)qq.com/s/XYX85wbY...
 
-> 公众号：SuperCLUE CLUE中文语言理解测评基准
+> 👸号：SuperCLUE CLUE中文语言理解测评基准
 
 ![](img/0844382cacfa9ce9db44363242f602ce.png)
 

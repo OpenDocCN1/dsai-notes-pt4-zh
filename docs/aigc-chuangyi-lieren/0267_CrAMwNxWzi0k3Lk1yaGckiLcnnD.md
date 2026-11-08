@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/I7G3dxsS0oEiIAxrbV5cBJhYnTg](https://aigcreative.feishu.cn/docx/I7G3dxsS0oEiIAxrbV5cBJhYnTg)
 
-> 作者：howie serious，公众号：Howie和小能熊
+> 作者：howie serious，👸号：Howie和小能熊
 
 > 链接：https://mp.weixin.qq.com/s/c8Qooco2JqdckXR2mwKGRQ
 
@@ -62,7 +62,7 @@
 
 **ChatGPT:**
 
-> howie：下面是 deep research 的报告全文。微信限制单篇文章 5 万字，所以必须分两次发出。 我对报告质量的观点：
+> howie：下面是 deep research 的报告全文。🛰️限制单篇文章 5 万字，所以必须分两次发出。 我对报告质量的观点：
 
 > 1、开头综述即碾压：deep research 对100模型的来源、背景介绍，就是碾压效果。客观、中肯、反映了事实情况，没有营销号的夸张和错误信息；
 
@@ -72,7 +72,7 @@
 
 > 4、报告全文 5.6 万字，反映了 o3推理模型超大的 context window 和 output length。o1 和 o3-mini 都有100k 输出长度，我看 o3 甚至可能比这还大（推理 token+最终报告，可能大于 100k 了）。
 
-> 5、报告正文中内嵌海量参考文献链接；每一个重要内容都有出处和引用，精确到原始资料的行和段落。这是受过十几年教育的研究生都很难做到的研究规范。可惜微信文章无法呈现链接。
+> 5、报告正文中内嵌海量参考文献链接；每一个重要内容都有出处和引用，精确到原始资料的行和段落。这是受过十几年教育的研究生都很难做到的研究规范。可惜🛰️文章无法呈现链接。
 
 > 下面是值得阅读5678遍的报告全文，请欣赏：
 

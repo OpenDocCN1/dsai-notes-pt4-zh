@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/UphtdxABnoIt7ux97nOctLGtnqe](https://yunyinghui.feishu.cn/docx/UphtdxABnoIt7ux97nOctLGtnqe)
 
-> **原创公众号：**九歌AI
+> **原创👸号：**九歌AI
 
 > **收录开源AI知识库：**[万象 AI 实验室](https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink)
 

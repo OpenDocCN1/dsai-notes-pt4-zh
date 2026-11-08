@@ -10,7 +10,7 @@
 
 [1](https://vkg4ozcps1.feishu.cn/docx/IDCNdfTRMouFS7xxxlpcuO4QnZh).《学习使用Midjourney绘画合集（持续更新）》：https://vkg4ozcps1.feishu.cn/docx/IDCNdfTRMouFS7xxxlpcuO4QnZh
 
-2.[拆解当下小红书最🔥的水下人物头像prompt](https://vkg4ozcps1.feishu.cn/docx/FFQfdQSCooZglcxXsLscVUM2nKc?from=from_copylink)
+2.[拆解当下📕最🔥的水下人物头像prompt](https://vkg4ozcps1.feishu.cn/docx/FFQfdQSCooZglcxXsLscVUM2nKc?from=from_copylink)
 
 3.[使用Midjourney绘画教程｜如何在对话框中输入中文一键转化成英文prompt？](https://vkg4ozcps1.feishu.cn/docx/Sh1ddF7O7o7JUpxnmCjcAZ8rnLc?from=from_copylink)
 
@@ -50,7 +50,7 @@
 
 21.[使用Midjourney绘制佛祖、菩萨法相](https://vkg4ozcps1.feishu.cn/docx/WS6OdN4NQojzgixi4SWcKgTOnMF)
 
-保存微信扫码加入《Midjourney魔法师养成记》专栏，持续更新，期待与你一起探索AI绘画
+保存🛰️扫码加入《Midjourney魔法师养成记》专栏，持续更新，期待与你一起探索AI绘画
 
 ![](img/a7fbf3f8b0e51193fa9ea67c7c32b6b2.png)
 
@@ -66,7 +66,7 @@
 
 ️2.视频拍摄剪辑技能，运营个人视频号累积发布70条。
 
-️3.运营个人公众号，累积粉丝1000➕
+️3.运营个人👸号，累积粉丝1000➕
 
 ## 【自我评价】
 

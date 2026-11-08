@@ -4,7 +4,7 @@
 
 > 作者：Dale Markowitz，翻译：王可汗，校对：和中华
 
-> 来源：公众号：数据派
+> 来源：👸号：数据派
 
 > 链接：https://mp.weixin.qq.com/s/kfsW7ccYUAGp1AHWWF6c1w
 

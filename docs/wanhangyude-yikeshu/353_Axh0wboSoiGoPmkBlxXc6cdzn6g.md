@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/TnEidb1yVoTKNaxenvicJFLsnSe](https://my.feishu.cn/docx/TnEidb1yVoTKNaxenvicJFLsnSe)
 
-[【运营手册】小红书](https://ghlf0s3q3l.feishu.cn/wiki/EI2jwD7AHi1r28keq4qcpVLUnVf)
+[【运营手册】📕](https://ghlf0s3q3l.feishu.cn/wiki/EI2jwD7AHi1r28keq4qcpVLUnVf)
 
 [1.1 平台基础认知](https://ghlf0s3q3l.feishu.cn/wiki/AhW2wfHBLitm9PkYEVtc8X8uniE)
 

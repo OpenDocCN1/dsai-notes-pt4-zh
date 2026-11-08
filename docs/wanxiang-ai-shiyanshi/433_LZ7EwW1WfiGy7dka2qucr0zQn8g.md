@@ -10,7 +10,7 @@ AI 时代的创业，早就不用凑团队、扛高成本、忙前忙后了！�
 
 ![](img/0d36d98e7f3da60be098626ef5cc389d.png)
 
-[微信视频2026-03-10_170441_863.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qi3UbHe5ZowkRUxLIs9cMqTEnnf)
+[🛰️视频2026-03-10_170441_863.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qi3UbHe5ZowkRUxLIs9cMqTEnnf)
 
 # **PART 01**
 

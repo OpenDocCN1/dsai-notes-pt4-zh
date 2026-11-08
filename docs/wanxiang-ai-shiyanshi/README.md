@@ -110,7 +110,7 @@
 | [AI视频能力学习](https://yunyinghui.feishu.cn/wiki/E8UHwQlkyi6wMck8DcScEzbbnZf) | [AI声音能力学习](https://yunyinghui.feishu.cn/wiki/HcHEw0l8Tis6MTkTF5ycTnTJn3f) | [AI办公能力学习](https://yunyinghui.feishu.cn/wiki/SWfXwY3CwivvHAk6xCOcDdItnRg) | [AI设计能力学习](https://yunyinghui.feishu.cn/wiki/E4WTwS3oaisY8LktOY5cyDWPnNd) |
 | [AI编程能力学习](https://yunyinghui.feishu.cn/wiki/P2uBwuYkOiqAivk8qyEck3UVnSd) | [AI智能体能力学习](https://yunyinghui.feishu.cn/wiki/Azxlw8SqgiolSbkdA9OcyNDGnAe) | [AI提示词能力学习](https://yunyinghui.feishu.cn/wiki/MIpyw5k1uim3XbkeK2ycH2BGndb) | [AI大模型能力学习](https://yunyinghui.feishu.cn/wiki/IZ7DwD5FZihoJUkVHNXch5Tcntd) |
 | [AI数字人应用学习](https://yunyinghui.feishu.cn/wiki/YFlGw7MTdiHNcAkRlzGcskUwnig) | [AI电商技能学习](https://yunyinghui.feishu.cn/wiki/Cr43wjG3qikq5MkGydjc9S0FnLb) | [AI硬件赛道学习](https://yunyinghui.feishu.cn/wiki/BmPDwHFkAiVW6EkpGT9cgqxxn2f) | [AI企业相关学习](https://yunyinghui.feishu.cn/wiki/KvtowwXvBi0GixkrFEucD3KXnJf) |
-| [AI团队求职招聘](https://yunyinghui.feishu.cn/wiki/IkW4wjGc0i3f4okrlk0czAlonkf) | [AI行业报告合集](https://yunyinghui.feishu.cn/wiki/C1RzwQQB7ifvh4kfxY4cFtgWnwh) | [AI创业投资学习](https://yunyinghui.feishu.cn/wiki/N497wtzZRiZmhSkRCdrcehmdnbh) | [AI行业大会学习](https://yunyinghui.feishu.cn/wiki/ZRwnwOLUXife8gk5xtocrJlBntf) |
+| [AI团队求职招聘](https://yunyinghui.feishu.cn/wiki/IkW4wjGc0i3f4okrlk0czAlonkf) | [AI行业报告合集](https://yunyinghui.feishu.cn/wiki/C1Rzw🐧B7ifvh4kfxY4cFtgWnwh) | [AI创业投资学习](https://yunyinghui.feishu.cn/wiki/N497wtzZRiZmhSkRCdrcehmdnbh) | [AI行业大会学习](https://yunyinghui.feishu.cn/wiki/ZRwnwOLUXife8gk5xtocrJlBntf) |
 | [AI专题学习板块](https://yunyinghui.feishu.cn/wiki/DagWwaw7NiYqJgkw4pbchOoOnse) | [AI应用实战案例库](https://yunyinghui.feishu.cn/wiki/YrNtwGKWOiO1hIkn5omcaubensZ) | [AI副业变现案例库](https://yunyinghui.feishu.cn/wiki/ZJvDw0eieiya0vkB2b9cAK4Onsc) | [AI内容创作者专栏](https://yunyinghui.feishu.cn/wiki/SzkowqCP5iFWymk15S0cjMOGnBL) |
 | [AI相关大赛活动](https://yunyinghui.feishu.cn/wiki/UXrawzUR2iAjnlkwTDdcS2k7njc?from=from_copylink) | [AI知识库能力学习](https://yunyinghui.feishu.cn/wiki/WZzawFen4i1HQNk9a6ccFfSun0c?from=from_copylink) | [AI超级个体学习](https://yunyinghui.feishu.cn/wiki/T5KywTT0si72q7koDiucIgownfc?from=from_copylink) | [AI每日大事记](https://yunyinghui.feishu.cn/wiki/HNyWwm4BJie3fDkwg11chMTbngb?from=from_copylink) |
 
@@ -164,17 +164,17 @@ AI 应用及变现社群（5000 人）
 
 ![](img/57905d793922400062165edf743c1727.png)
 
-**微信扫码入群交流**
+**🛰️扫码入群交流**
 
 ![](img/0adfa80ec6877fb3935feecf0aeb4d56.png)
 
-合作微信（ID：zhangyuguo94s）
+合作🛰️（ID：zhangyuguo94s）
 
 > **垂直社群入口**
 
 > [社区垂直飞书社群分类](https://yunyinghui.feishu.cn/wiki/LEVtwNRlEiGTlOkvocNc6t8wnKc?from=from_copylink)
 
-> [社区垂直微信社群分类](https://yunyinghui.feishu.cn/wiki/HC4RwiyZaitV7ZkLFKUcr440ncc?from=from_copylink)
+> [社区垂直🛰️社群分类](https://yunyinghui.feishu.cn/wiki/HC4RwiyZaitV7ZkLFKUcr440ncc?from=from_copylink)
 
 ![](img/8216b33eed19cad565931de5494cbb8d.png)
 
@@ -182,7 +182,7 @@ AI 应用及变现社群（5000 人）
 
 ![](img/4b9dfcc9c8f3684aa7ca5338ce0df011.png)
 
-| **姓名** | **微信** | **微信二维码** | **个人介绍** | **合作板块** |
+| **姓名** | **🛰️** | **🛰️二维码** | **个人介绍** | **合作板块** |
 | --- | --- | --- | --- | --- |
 | 言川 | yanchuan-ar |  | +   智设科技创始人，工信部认证高级 AIGC 应用工程师，8 年资深设计师。优设 AIGC 合伙人，站酷首推 AI 创作者，2023 年度十佳 AI 创作者。AI 设计领域头部社群主理人，拥有近千万人次人气，累计服务学员超 5000 人次，专注于 AI 设计应用、教学体系建设与企业 AI 技术应用。 | AI 绘画/AI 设计 |
 |  |  | ![](img/0b597d92857350cbe9dea59e202c7a8d.png) | +   浙江大学计算机学院人工智能专业博士生，从事 AIGC 语音内容生成技术及其安全问题研究，聚焦语音克隆、伪造样本检测、声音数字水印等。 |  |
@@ -199,9 +199,9 @@ AI 应用及变现社群（5000 人）
 
 **银海 **
 
-**介绍：**AI 产品经理一枚，日常会在公众号记录我的 AI 实践和思考。
+**介绍：**AI 产品经理一枚，日常会在👸号记录我的 AI 实践和思考。
 
-**#公众号：**AI 产品银海
+**#👸号：**AI 产品银海
 
 **个人说明书：**https://inhai.wiki
 
@@ -211,7 +211,7 @@ AI 应用及变现社群（5000 人）
 
 **介绍：**前大厂 AI 开发，TRAE Fellow，火山引擎领航 KOL，武汉 AI 圈创始人
 
-**#公众号：**苍何
+**#👸号：**苍何
 
 **个人网站：**https://canghecode.com
 
@@ -221,7 +221,7 @@ AI 应用及变现社群（5000 人）
 
 **介绍：**AI 产品经理｜个人开发者｜万象 AI 实验室社区创作者｜Way to agi 社区创作者
 
-**#公众号：**云舒的 AI 实践笔记
+**#👸号：**云舒的 AI 实践笔记
 
 **个人说明书：**[云舒的自我介绍](https://t16jzwqrzjx.feishu.cn/wiki/Zjobw9wsAiU9A3kC3PwcUJ9wnSe?from=from_copylink)
 
@@ -233,15 +233,15 @@ AI 应用及变现社群（5000 人）
 
 **服务品牌/企业：**火山引擎、夸克 AI、生数科技、昆仑万维、MiniMax 等
 
-**#公众号：**阿真 Irene
+**#👸号：**阿真 Irene
 
 ![](img/ca24408565260b40eb2dcb97263c1bad.png)
 
 **袋鼠帝**
 
-**介绍：**程序员、项目经理，持续分享 AI 实践干货。个人 AI 公众号博主排名前 10，火山引擎领航 KOL、Trae Fellow
+**介绍：**程序员、项目经理，持续分享 AI 实践干货。个人 AI 👸号博主排名前 10，火山引擎领航 KOL、Trae Fellow
 
-**#公众号：**袋鼠帝 AI 客栈
+**#👸号：**袋鼠帝 AI 客栈
 
 ![](img/d01ee707b7f88bfa7f24a80dd256d1db.png)
 
@@ -249,7 +249,7 @@ AI 应用及变现社群（5000 人）
 
 **介绍：**人工智能训练师二级技师、开发智能体 100+、使用量超过 100W+、为企业私有化部署和业务定制超 50+
 
-**#公众号：**黄啊码
+**#👸号：**黄啊码
 
 ![](img/6bfaf91d832135672798fe323e84f3a9.png)
 
@@ -257,7 +257,7 @@ AI 应用及变现社群（5000 人）
 
 **介绍：**万象 AI 实验室技术支持，AI 自媒体博主（铁柱 AGI），10 年全栈开发者，n8n 社区节点开发者
 
-**#公众号：**铁柱 AGI
+**#👸号：**铁柱 AGI
 
 ![](img/c5fb0c275118f0b296942763af96b5ea.png)
 
@@ -297,7 +297,7 @@ AI 应用及变现社群（5000 人）
 
 ![](img/3911518930f82c4239baeddcef9b48fc.png)
 
-**官方公众号：****万象**** AI 实验室**
+**官方👸号：****万象**** AI 实验室**
 
 ![](img/130ccbb1923368f3d3b163a6c86f8db3.png)
 
@@ -313,7 +313,7 @@ AI 应用及变现社群（5000 人）
 
 ![](img/a601339c1ce4f597bdf2d929dc180e0b.png)
 
-官方小红书号：万象 AI 实验室
+官方📕号：万象 AI 实验室
 
 ![](img/b40b8723851d06c54d78185bde311039.png)
 
@@ -329,7 +329,7 @@ AI 应用及变现社群（5000 人）
 
 **媒体**
 
-感谢**飞书，量子位**和**央广网**的官方公众号报道。
+感谢**飞书，量子位**和**央广网**的官方👸号报道。
 
 ![](img/52d2b98b9f16bb5eabe856d76e79e879.png)
 

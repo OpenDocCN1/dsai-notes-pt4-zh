@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/JW7jdNqeGom6D3x85PDcx7pLnvd](https://aigcreative.feishu.cn/docx/JW7jdNqeGom6D3x85PDcx7pLnvd)
 
-> 图片制作：潜空间科技-刘洋，公众号：见洋知新
+> 图片制作：潜空间科技-刘洋，👸号：见洋知新
 
 # Day 1
 

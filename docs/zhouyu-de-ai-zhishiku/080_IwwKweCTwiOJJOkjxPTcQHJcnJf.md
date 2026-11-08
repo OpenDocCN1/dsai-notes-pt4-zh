@@ -46,7 +46,7 @@
 
 ![](img/f64dd72074a00ba380b5030b0e9cf05e.png)
 
-（自媒体小红书内容数据分析）
+（自媒体📕内容数据分析）
 
 再举一个扣子老师的故事影片全流程生产的栗子
 
@@ -62,7 +62,7 @@
 
 ![](img/195ba0ea484f5c149d29f6266351bef4.png)
 
-**跨平台支持:**多维表格将不仅支持飞书，还将支持企业微信和钉钉
+**跨平台支持:**多维表格将不仅支持飞书，还将支持企业🛰️和钉钉
 
 那么，我最看重多维表格还有哪些升级呢？
 
@@ -104,7 +104,7 @@ AI会取代打工人牛马吗？
 | **飞书开发套件** | 飞书 aPaaS、aily 已发布 | 点击 [体验飞书 aily](https://aily.feishu.cn/ai/ailyplay)，有一定免费额度；更多功能请预约咨询 |  | [点击预约](https://www.feishu.cn/landing/feishu_future_caio_2025?tracking_code=701TL00000o9Kp8YAE) |
 | **飞书项目** | 部分功能已上线，部分功能 QA 陆续上线 | [飞书项目官网](https://project.feishu.cn/home) |  | [购买咨询](https://project.feishu.cn/home/service) |
 
-关注公众号私信飞书未来无限大会获取
+关注👸号私信飞书未来无限大会获取
 
 和申请入口
 

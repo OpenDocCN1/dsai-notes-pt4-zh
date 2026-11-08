@@ -54,7 +54,7 @@
 
 > 本期合作伙伴：NVIDIA
 
-> 本期最受瞩目：[【基于Deepseek的智能卡片工坊】🔥一秒变设计大神！这个AI神器让我在小红书爆单了💥](https://datawhaler.feishu.cn/wiki/IxXBwAKK9iuFiPkw4vQckGODnah)
+> 本期最受瞩目：[【基于Deepseek的智能卡片工坊】🔥一秒变设计大神！这个AI神器让我在📕爆单了💥](https://datawhaler.feishu.cn/wiki/IxXBwAKK9iuFiPkw4vQckGODnah)
 
 >
 

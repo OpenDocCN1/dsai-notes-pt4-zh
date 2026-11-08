@@ -112,6 +112,6 @@ A7：AI 虚拟教师产品的复杂性在于涉及到多个领域的技术，包
 
 如何在几分钟内创建一个带有业务数据的官网 AI 智能客服？
 
-零代码，使用 Dify 两分钟接入企业微信 AI 机器人
+零代码，使用 Dify 两分钟接入企业🛰️ AI 机器人
 
 [D](http://mp.weixin.qq.com/s?__biz=Mzg5MDkyOTY3NA==&mid=2247484669&idx=1&sn=c19206507d0d2d6fd1042090e48713e1&chksm=cfd45398f8a3da8e25e1030dbd1f809c08978a287d5d7c19442ea54c7dc2b1d92a5f0067b482&scene=21#wechat_redirect)ify.AI 接入 Claude2 模型：支持 100K token 上下文，登录即免费获得 1000 次消息额度

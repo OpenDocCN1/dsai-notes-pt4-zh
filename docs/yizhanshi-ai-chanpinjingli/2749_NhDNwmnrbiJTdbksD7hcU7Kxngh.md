@@ -122,7 +122,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信原文链接](https://mp.weixin.qq.com/s/ar5PNeYfD-DNReVSZyoZ3w)
++   [🛰️原文链接](https://mp.weixin.qq.com/s/ar5PNeYfD-DNReVSZyoZ3w)
 
 +   [Bloomberg参考报道](https://www.bloomberg.com/news/articles/2026-01-23/ai-startup-recursive-in-funding-talks-at-4-billion-valuation?srnd=phx-technology)
 
@@ -148,7 +148,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信原文链接](https://mp.weixin.qq.com/s/ar5PNeYfD-DNReVSZyoZ3w)
++   [🛰️原文链接](https://mp.weixin.qq.com/s/ar5PNeYfD-DNReVSZyoZ3w)
 
 +   [Bloomberg参考报道](https://www.bloomberg.com/news/articles/2026-01-23/ai-startup-recursive-in-funding-talks-at-4-billion-valuation?srnd=phx-technology)
 

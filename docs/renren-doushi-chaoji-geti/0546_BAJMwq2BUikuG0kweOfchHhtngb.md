@@ -1,16 +1,16 @@
-# 小红书自动化运营让效率超级加倍
+# 📕自动化运营让效率超级加倍
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/KYnFdbmjToX3ImxlRTSciOVBnJh](https://xuqiwei1986.feishu.cn/docx/KYnFdbmjToX3ImxlRTSciOVBnJh)
 
 Hi~ 我是曜文
 
-今天和大家分享我们目前小红书运营在使用的自动化自动化工具在小红书提效20倍！
+今天和大家分享我们目前📕运营在使用的自动化自动化工具在📕提效20倍！
 
 如果你有这种感觉：每天早上醒来第一件事就是查看数据然后开始一天的"搬砖"工作——研究爆款、策划内容、剪辑视频、编辑文案、安排发布、回复评论...忙得连喝水的时间都没有
 
 别担心！今天我就来把我们运营过程，如何利用自动化工具（内容后附工作流搭建教程点击链接）
 
-让一个人轻松管理20个小红书账号，将效率提升至少20倍！
+让一个人轻松管理20个📕账号，将效率提升至少20倍！
 
 做正确的事，才能快速看到效果！
 
@@ -18,21 +18,21 @@ Hi~ 我是曜文
 
 1.  提取笔记数据，建立完整分析链
 
-小红书成功的第一步是什么？
+📕成功的第一步是什么？
 
 对标数据！但手动收集太耗时了，我们目前建立自动化数据采集体系：
 
 +   **自动提取笔记数据**：设置关键词监控，自动抓取同行爆款内容
 
-[小红书笔记爆款搜集](https://kcnpsbz04pp6.feishu.cn/wiki/BLXFwChAmi6EHjkiHkQc9NoUnTe?from=from_copylink)
+[📕笔记爆款搜集](https://kcnpsbz04pp6.feishu.cn/wiki/BLXFwChAmi6EHjkiHkQc9NoUnTe?from=from_copylink)
 
 ![](img/ae967262427e3f089be8df4d7446fb50.png)
 
 +   **查看商城数据**：输入商品，对标链接，实时追踪商品转化率、点击量
 
-[小红书商品链接获取](https://kcnpsbz04pp6.feishu.cn/docx/MBzAdU1ubopc26xl3YZc2bSvnbh)
+[📕商品链接获取](https://kcnpsbz04pp6.feishu.cn/docx/MBzAdU1ubopc26xl3YZc2bSvnbh)
 
-[小红书笔记+商城搜集表](https://kcnpsbz04pp6.feishu.cn/base/MOwIb9qRJa3cCps6AfNcdOEQnLg)
+[📕笔记+商城搜集表](https://kcnpsbz04pp6.feishu.cn/base/MOwIb9qRJa3cCps6AfNcdOEQnLg)
 
 ![](img/dd2e6ebc46aefd9910922319307806c0.png)
 
@@ -40,7 +40,7 @@ Hi~ 我是曜文
 
 +   **飞书表格记录**：所有数据自动汇总至飞书，便于团队协作
 
-[小红书关键词输多维表格](https://kcnpsbz04pp6.feishu.cn/docx/LR1hdYNt9o1PikxqYfmcujURnlB)
+[📕关键词输多维表格](https://kcnpsbz04pp6.feishu.cn/docx/LR1hdYNt9o1PikxqYfmcujURnlB)
 
 ![](img/ec32646ce7c623111550f90567959ffb.png)
 
@@ -64,7 +64,7 @@ Hi~ 我是曜文
 
 1.  素材获取与处理自动化
 
-视频是小红书最受欢迎的内容形式，但制作太耗时？试试这些：
+视频是📕最受欢迎的内容形式，但制作太耗时？试试这些：
 
 +   **哼哼猫工具**：无水印下载爆款内容，自动过滤低质量内容
 
@@ -82,7 +82,7 @@ Hi~ 我是曜文
 
 +   **模板库建设**：使用飞书创建多维表格针对不同内容类型建立模板
 
-[小红书笔记+商城搜集表](https://kcnpsbz04pp6.feishu.cn/base/MOwIb9qRJa3cCps6AfNcdOEQnLg)
+[📕笔记+商城搜集表](https://kcnpsbz04pp6.feishu.cn/base/MOwIb9qRJa3cCps6AfNcdOEQnLg)
 
 +   **一键批量生成**：同一素材，不同剪辑风格，批量生成，使用自动剪辑工具批量生成
 
@@ -172,7 +172,7 @@ Hi~ 我是曜文
 
 ## 六、一个人管理20个账号的秘诀
 
-通过自动化工具，一个人真的能管理20个小红书账号吗？答案是肯定的！
+通过自动化工具，一个人真的能管理20个📕账号吗？答案是肯定的！
 
 1.  多账号统一管理平台
 
@@ -196,9 +196,9 @@ Hi~ 我是曜文
 
 我们有的运营一个人管理20个美妆号，每个号都有不同定位：学生党、宝妈、上班族、美妆工具、平价种草等。 通过自动化系统，她每天只需工作4小时，却能维持所有账号的日更！
 
-## 总结：自动化是小红书成功的加速器
+## 总结：自动化是📕成功的加速器
 
-在小红书这个竞争激烈的平台上，自动化工具就像是你的秘密武器，能让你以一敌十，甚至以一敌百！
+在📕这个竞争激烈的平台上，自动化工具就像是你的秘密武器，能让你以一敌十，甚至以一敌百！
 
 1.  找准自己的定位
 
@@ -218,4 +218,4 @@ Hi~ 我是曜文
 
 希望这篇文章对你有所帮助！
 
-如果你正在小红书创作的道路上奋斗，不妨试试这些自动化工具，让你的创作之路事半功倍！
+如果你正在📕创作的道路上奋斗，不妨试试这些自动化工具，让你的创作之路事半功倍！

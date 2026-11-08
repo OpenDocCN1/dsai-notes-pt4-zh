@@ -2,7 +2,7 @@
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Rda5dDV7koEzqqxpi7YcK2IEnrd](https://qqs7y1hozd1.feishu.cn/docx/Rda5dDV7koEzqqxpi7YcK2IEnrd)
 
-> 本文来源：公众号作者：渔夫 AIDally
+> 本文来源：👸号作者：渔夫 AIDally
 
 今天，分享用了一段时间 Claude Code，挑出了日常高频实用的命令，几乎每天都在用。许多时候，Claude Code 好不好用，很大程度取决于你知不知道这些隐藏命令。
 

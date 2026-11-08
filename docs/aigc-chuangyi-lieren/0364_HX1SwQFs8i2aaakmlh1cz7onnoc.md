@@ -6,7 +6,7 @@
 
 > 作者：袋鼠帝
 
-> 公众号：袋鼠帝AI客栈
+> 👸号：袋鼠帝AI客栈
 
 大家好，我是袋鼠帝
 
@@ -14,7 +14,7 @@
 
 主要包含： Dify、Coze、n8n、Fastgpt、Ragflow
 
-可以到公众号主页查看
+可以到👸号主页查看
 
 ![](img/bfc363e9c752a395e57eeec190eeb9c9.png)
 
@@ -124,7 +124,7 @@ Dify 主打“Backend-as-a-Service”和“LLMOps”，目标是让开发者和�
 
 不管你懂不懂编程，Coze都能让你把脑洞里的AI智能体快速实现。
 
-可视化搭建、丰富的插件、知识库、工作流一应俱全，还支持一键发布到抖音、飞书、微信公众号、小程序、Discord、Telegram等各大平台。
+可视化搭建、丰富的插件、知识库、工作流一应俱全，还支持一键发布到抖音、飞书、🛰️👸号、小程序、Discord、Telegram等各大平台。
 
 ![](img/e8b976abfa91c88a2d4cb9a808e3c299.png)
 
@@ -142,7 +142,7 @@ Coze是闭源的，但它的功能比Dify更丰富。
 
 > Coze搭建AI Agent
 
-> [袋鼠帝，公众号：袋鼠帝AI客栈 D](http://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247507021&idx=1&sn=20c2465110e4d2bc1b50205ba45f2155&chksm=c0988d80f7ef0496ee5812d769b6930cfdc774f1f5cc12773dba29864f7459dfb5cccae17994#rd)eepSeek接入智能体，开发速度飞快，小白也能轻松搞定！【喂饭级教程】
+> [袋鼠帝，👸号：袋鼠帝AI客栈 D](http://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247507021&idx=1&sn=20c2465110e4d2bc1b50205ba45f2155&chksm=c0988d80f7ef0496ee5812d769b6930cfdc774f1f5cc12773dba29864f7459dfb5cccae17994#rd)eepSeek接入智能体，开发速度飞快，小白也能轻松搞定！【喂饭级教程】
 
 ## **FastGPT：知识库小能手**
 
@@ -160,7 +160,7 @@ FastGPT 提供数据处理、模型调用、RAG检索和可视化AI工作流，M
 
 ![](img/5f849fd968a4dd1d33d43a9b6f0a5d76.png)
 
-Fastgpt的RAG效果是相当不错的 ，它能够简单、快速构建一个高质量知识库，我之前用它做我的微信AI助理产品的客服，挺棒的。
+Fastgpt的RAG效果是相当不错的 ，它能够简单、快速构建一个高质量知识库，我之前用它做我的🛰️AI助理产品的客服，挺棒的。
 
 一些企业级客户我也是帮助他们用fastgpt来构建知识库，轻量，简单，好用。
 

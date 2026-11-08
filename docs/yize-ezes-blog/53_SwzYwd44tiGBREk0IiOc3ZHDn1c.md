@@ -1,4 +1,4 @@
-# 结构化英文精读专家｜实现 LearnAndRecord 公众号效果
+# 结构化英文精读专家｜实现 LearnAndRecord 👸号效果
 
 > 来源：[https://chatmemo.feishu.cn/docx/L6j2d1LiboL3z0x3hjucqhQxnNb](https://chatmemo.feishu.cn/docx/L6j2d1LiboL3z0x3hjucqhQxnNb)
 

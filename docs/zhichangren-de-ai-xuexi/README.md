@@ -68,7 +68,7 @@ https://mp.weixin.qq.com/s/C6rlRYZGfu3DNyacCavcGQ
 
 ![](img/2def3ae9ff17d886a224f6f7da6c0e05.png)
 
-## 微信公众号【AGI观察】
+## 🛰️👸号【AGI观察】
 
 ![](img/1ccd88ef7370d46aa6f3672208b4b951.png)
 

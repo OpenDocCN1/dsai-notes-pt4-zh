@@ -382,7 +382,7 @@
 
 ![](img/99ce5af4d84e84400fe7510a0a912625.png)
 
-[即梦AI绘画-飞书表格+企业微信.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LBJdbQgq0odqSBx5jKpcR1G6nQe)
+[即梦AI绘画-飞书表格+企业🛰️.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LBJdbQgq0odqSBx5jKpcR1G6nQe)
 
 ![](img/a5c3b19f26cf50fdd1b62068d22debba.png)
 

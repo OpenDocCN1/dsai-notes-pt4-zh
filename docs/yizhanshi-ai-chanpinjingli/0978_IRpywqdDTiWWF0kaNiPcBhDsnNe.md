@@ -22,7 +22,7 @@
 
 1、新用户可以有免费服务器，老用户可以去别的云服商那里购买，点击去注册腾讯云：轻量应用服务器
 
-2、进入腾讯云，微信扫码注册，
+2、进入腾讯云，🛰️扫码注册，
 
 首次注册 会进入这个页面， Coze项目要求，最低2核4G
 
@@ -40,7 +40,7 @@
 
 ![](img/665cb32b4ca8b0ee70f6117b51654f0a.png)
 
-5、这里直接登录即可，后续也可以微信扫码登录
+5、这里直接登录即可，后续也可以🛰️扫码登录
 
 ![](img/6e5c7420f6ebccb794005c9b753c1972.png)
 
@@ -186,7 +186,7 @@ git clone https://github.com/coze-dev/coze-studio.git
 
 重点来了：这个就是推理点的ID，也就是刚才提到的 meta.conn\_config.model：在线模型服务的 model ID。
 
-复制他放到你的微信里，发给自己保存一下。
+复制他放到你的🛰️里，发给自己保存一下。
 
 ![](img/ffe74f39b4dec07c287ff1fd3c26f360.png)
 
@@ -204,7 +204,7 @@ git clone https://github.com/coze-dev/coze-studio.git
 
 ![](img/f604b4c696d5e1b4caf79a8233999fcf.png)
 
-9、把这个复制好之后，也放到你自己微信里，保存好。
+9、把这个复制好之后，也放到你自己🛰️里，保存好。
 
 这个就是meta.conn_config.api_key：在线模型服务的 API Key。
 

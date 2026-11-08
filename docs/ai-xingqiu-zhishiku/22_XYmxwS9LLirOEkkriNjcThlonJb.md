@@ -54,7 +54,7 @@
 
 [第8集 LOGO设计教学 知识点：--no参数 - remix mode - ChatGPT + Midjourney结合使用.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NvL3bKnTcoFo95xyPB8ceG5qnVd)
 
-### 精通篇（公众号回复“MJ”即可免费获取！）
+### 精通篇（👸号回复“MJ”即可免费获取！）
 
 在精通篇中，讲解了各种组合场景下的绘图技巧以及进阶参数的使用方式，包括生成风格化图片、describe命令用法、seed获取和使用，以及面部修复、图片分辨率提升的技巧。
 

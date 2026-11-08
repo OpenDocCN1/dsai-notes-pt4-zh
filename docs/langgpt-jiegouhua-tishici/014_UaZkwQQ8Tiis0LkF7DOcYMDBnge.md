@@ -4,7 +4,7 @@
 
 ![](img/7f373c96e5c0995e0a6678d88e90c8c0.png)
 
-+   **本文作者**：群友 @耙耳朵的光 （公众号 耙耳朵的光）创作，云中江树修改
++   **本文作者**：群友 @耙耳朵的光 （👸号 耙耳朵的光）创作，云中江树修改
 
 +   **原文**：[ChatGPT 最佳实践案例小白版](https://bagty5t00dc.feishu.cn/docx/CVSadJGU4oYO4VxFlVycASlYnrd)
 

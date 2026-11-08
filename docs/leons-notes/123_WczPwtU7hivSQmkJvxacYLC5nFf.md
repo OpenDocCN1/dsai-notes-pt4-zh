@@ -87,9 +87,9 @@ when your truly work for yourself, you won't have hobbies, you won't have weeken
 
 **7**
 
-我刚和阿珂说，「我也是飘了，公众号开始关注腾讯云开发者、阿里云开发者、CSDN 技术社区...」
+我刚和阿珂说，「我也是飘了，👸号开始关注腾讯云开发者、阿里云开发者、CSDN 技术社区...」
 
-其实，从全栈产品经理 / 独立开发者的角度出发，关注技术是趋势，只不过 Cursor 等 AI Coding 工具提前了我关注这些公众号的时间节点。这更是一个顺其自然的过程。
+其实，从全栈产品经理 / 独立开发者的角度出发，关注技术是趋势，只不过 Cursor 等 AI Coding 工具提前了我关注这些👸号的时间节点。这更是一个顺其自然的过程。
 
 **8**
 
@@ -341,7 +341,7 @@ inference-time scaling（推理时扩展） 指的是在模型推理阶段通过
 
 1.  [Notes｜Deep Dive into LLMs like ChatGPT｜Andrej Karpathy](https://leonzhang.feishu.cn/wiki/Qy1kwSOVQi2uSjkDgRrc1ObFnxg)
 
-1.  [Prompts - html 生成小红书封面](https://leonzhang.feishu.cn/wiki/M6xPwJCLViwPMdki906c75Cwnre)
+1.  [Prompts - html 生成📕封面](https://leonzhang.feishu.cn/wiki/M6xPwJCLViwPMdki906c75Cwnre)
 
 1.  [Cursor 使用技巧｜持续更新](https://leonzhang.feishu.cn/wiki/K0lBw3DPniqUbqkMNWLctM2HnRc)
 

@@ -179,7 +179,7 @@ https://console.xfyun.cn/sale/buy?wareId=9108&packageId=9108001&serviceName=Spar
 | **Task 1：1 天** | 速通体验赛事流程 | [开营直播](https://meeting.tencent.com/v2/cloud-record/share?id=f0c9e94d-7628-4a87-98bb-5595dc782903&amp;from=3&amp;is-single=false&amp;record_type=2)  （点击链接即可跳转） | [零基础入门大模型技术竞赛-速通指南](https://datawhaler.feishu.cn/wiki/VIy8ws47ii2N79kOt9zcXnbXnuS?from=from_copylink) | 零基础小白 |
 | **Task 2：2 天** | 理解赛题 | baseline1 精读分享直播  （点击链接即可跳转） | [Task2：赛事解读+基础baseline 讲解](https://datawhaler.feishu.cn/wiki/OALOwvCYuiS5jIkakU5c7nElnYg) | 愿意提升的小白 |
 | **Task 3：3 天** | 逐行理解 baseline2 | [baseline2 精读分享](https://meeting.tencent.com/v2/cloud-record/share?id=d9de35c8-efc3-4dc3-83aa-15ca04516781&amp;from=3&amp;is-single=false&amp;record_type=2)  （点击链接即可跳转） | [Task3：高阶 baseline【微调方向】 + 知识点讲解](https://datawhaler.feishu.cn/wiki/Q48xwICyHiV0O2kSwjccuTE1nrb) | 愿意提升的小白 |
-| **Task 4：1 天** | 上分进阶 |  | [Task4：提分思路](https://datawhaler.feishu.cn/wiki/MiiLwNkN1iIgQQksPVRcqbOvnkf) | 有代码基础、有时间 |
+| **Task 4：1 天** | 上分进阶 |  | [Task4：提分思路](https://datawhaler.feishu.cn/wiki/MiiLwNkN1iIg🐧ksPVRcqbOvnkf) | 有代码基础、有时间 |
 
 # 来争取夏令营学习者激励吧
 

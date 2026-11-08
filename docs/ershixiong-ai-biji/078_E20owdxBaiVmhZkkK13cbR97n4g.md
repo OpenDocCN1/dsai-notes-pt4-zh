@@ -48,7 +48,7 @@ Cascade 新增网络搜索能力，支持多种搜索方式：自动触发搜索
 
 ![](img/7e440ee1d6df965710a205fbd0cfa7dd.png)
 
-[cascade-auto-memories-screen.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QQV3b2og3olP0zxJc1DcxNzLnCh)
+[cascade-auto-memories-screen.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/🐧V3b2og3olP0zxJc1DcxNzLnCh)
 
 ### Dev Container 支持改进
 

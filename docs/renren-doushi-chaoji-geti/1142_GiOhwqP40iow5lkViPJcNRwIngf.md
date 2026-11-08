@@ -40,7 +40,7 @@
 
 ![](img/fe7bfaa1ed2be2d8ed2d528c3c86cc66.png)
 
-**关注公众号，加群一起学投资**
+**关注👸号，加群一起学投资**
 
 ![](img/a0c3729db09327eebb2b2ea6396a6db3.png)
 

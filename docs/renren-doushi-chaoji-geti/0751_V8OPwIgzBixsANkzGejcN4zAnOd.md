@@ -16,7 +16,7 @@
 
 > [🎈剪映批量剪辑助手更新日志](https://olftqb2ldn.feishu.cn/docx/Lhqudy7ULokP3zxAZWFcPH2KnIf?from=from_copylink)
 
-> 有任何问题可以咨询客服微信：vk7393
+> 有任何问题可以咨询客服🛰️：vk7393
 
 ### 利用剪映一键批量制作带货视频，自动化解放双手，随机滤镜、特效、贴纸、转场、缩放、旋转、变速、关键帧，原创度满满！
 

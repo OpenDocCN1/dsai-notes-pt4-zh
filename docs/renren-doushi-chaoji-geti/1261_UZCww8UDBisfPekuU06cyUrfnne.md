@@ -148,7 +148,7 @@ CLUE官网： https://www.cluebenchmarks.com
 
 ![](img/0cc8826a2b5098e6e65f0f77804fc728.png)
 
-（二维码失效可以在公众号后台回复SuperCLUE加入）
+（二维码失效可以在👸号后台回复SuperCLUE加入）
 
 ![](img/c065f2b8297a78d1995d618a2d3d38a7.png)
 

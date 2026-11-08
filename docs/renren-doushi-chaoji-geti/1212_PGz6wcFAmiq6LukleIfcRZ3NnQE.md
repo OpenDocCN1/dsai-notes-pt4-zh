@@ -36,8 +36,8 @@ https://github.com/langgenius/dify
 | --- | --- |
 | 开源代码 | https://github.com/langgenius/dify |
 | CSDN博客 | https://blog.csdn.net/DifyAI |
-| 企业微信号 | 加企微后可申请进客服群 |
-| 微信公众号 | Langgenius |
+| 企业🛰️号 | 加企微后可申请进客服群 |
+| 🛰️👸号 | Langgenius |
 
 # **团队介绍**
 
@@ -77,7 +77,7 @@ https://github.com/langgenius/dify
 
 如何购买？
 
-前往 https://buy.stripe.com/6oE5kZ5o9ggMgsEeUY 支付，根据你所在地区可能会出现美元信用卡支付或微信支付，下单前填写 Dify Workspace ID，或支付后联系我们的支持人员为你开通额度。
+前往 https://buy.stripe.com/6oE5kZ5o9ggMgsEeUY 支付，根据你所在地区可能会出现美元信用卡支付或🛰️支付，下单前填写 Dify Workspace ID，或支付后联系我们的支持人员为你开通额度。
 
 ** **
 
@@ -205,15 +205,15 @@ conda create --name dify python=3.10
 
 如何购买？
 
-前往 https://buy.stripe.com/6oE5kZ5o9ggMgsEeUY 支付，根据你所在地区可能会出现美元信用卡支付或微信支付，下单前填写 Dify Workspace ID，或支付后联系我们的支持人员为你开通额度。
+前往 https://buy.stripe.com/6oE5kZ5o9ggMgsEeUY 支付，根据你所在地区可能会出现美元信用卡支付或🛰️支付，下单前填写 Dify Workspace ID，或支付后联系我们的支持人员为你开通额度。
 
 ## 达芬奇-003
 
 ![](img/8fc12e4d4b1d0d53fb65a4727ab1d399.png)
 
-## 企业微信机器人
+## 企业🛰️机器人
 
-需要部署通过dify实现的企业微信机器人 可以下载这个项目 搭建自己的企业微信机器人 https://github.com/luolin-ai/Dify-Enterprise-WeChat-bot
+需要部署通过dify实现的企业🛰️机器人 可以下载这个项目 搭建自己的企业🛰️机器人 https://github.com/luolin-ai/Dify-Enterprise-WeChat-bot
 
 吹牛大师
 

@@ -42,7 +42,7 @@
 
 ### 🛠️ 工具/教程
 
-1.  Wo[rk](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247877627&idx=1&sn=1977fd9d109615a3c0f9e5d10f6b66b3)Buddy 微信指挥 AI 专家 (链接)：腾讯推出全场景职场AI智能体WorkBuddy，内置多领域专家，可接管自媒体内容策划、选题、创作全流程，并支持微信直连，通过语音或指令远程操控。
+1.  Wo[rk](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247877627&idx=1&sn=1977fd9d109615a3c0f9e5d10f6b66b3)Buddy 🛰️指挥 AI 专家 (链接)：腾讯推出全场景职场AI智能体WorkBuddy，内置多领域专家，可接管自媒体内容策划、选题、创作全流程，并支持🛰️直连，通过语音或指令远程操控。
 
 1.  VS[ C](https://www.ithome.com/0/932/756.htm)ode 1.113 更新 (链接)：新增三档AI推理深度调节、引入全新主题，并支持嵌套子智能体以构建复杂工作流。
 

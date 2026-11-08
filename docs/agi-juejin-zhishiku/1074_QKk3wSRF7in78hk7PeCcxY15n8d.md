@@ -222,7 +222,7 @@ AI2.0时代到来，而AI1.0和AI2.0的区别是什么？基于场景类别来�
 
 > 更多大模型
 
-> [张腾飞 译，公众号](https://mp.weixin.qq.com/s/BQOJNwfkApiZnFveMDBQ-w)：分布式实验室 开源大语言模型汇总
+> [张腾飞 译，👸号](https://mp.weixin.qq.com/s/BQOJNwfkApiZnFveMDBQ-w)：分布式实验室 开源大语言模型汇总
 
 可商用大模型：https://github.com/eugeneyan/open-llms
 

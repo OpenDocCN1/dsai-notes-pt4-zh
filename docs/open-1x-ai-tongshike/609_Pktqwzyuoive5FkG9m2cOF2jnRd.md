@@ -186,7 +186,7 @@ License (CC BY 4.0): https://filmmusic.io/standard-license
 
 +   **内容标签**：Unity，AI编程，制作经验分享
 
-1.  [【十款](https://webgamedeveloperscookbook.com/)[游戏，微信读书上有，](https://webgamedeveloperscookbook.com/)还有游戏源代码】书籍：《网页游戏开发秘籍》
+1.  [【十款](https://webgamedeveloperscookbook.com/)[游戏，🛰️读书上有，](https://webgamedeveloperscookbook.com/)还有游戏源代码】书籍：《网页游戏开发秘籍》
 
 1.  【react、网页MOBA、Entity Component System 思想】爆肝万字，一文让你入门游戏开发的所有概念！「做一个游戏，其实很简单」
 
@@ -272,10 +272,10 @@ https://cloud.baidu.com/qianfandev/topic/267171
 
 1.  【理解游戏本质与基本原理，前提：有好的创意】书籍：《体验引擎：游戏设计全景探秘》
 
-1.  【微信读书无】书籍：《全景探秘：游戏设计艺术》
+1.  【🛰️读书无】书籍：《全景探秘：游戏设计艺术》
 
-1.  【微信读书无】书籍：《游戏设计梦工厂》
+1.  【🛰️读书无】书籍：《游戏设计梦工厂》
 
-1.  【微信读书无】书籍：《游戏设计、原型与开发》
+1.  【🛰️读书无】书籍：《游戏设计、原型与开发》
 
-1.  【微信读书无】书籍：《游戏情感设计》
+1.  【🛰️读书无】书籍：《游戏情感设计》

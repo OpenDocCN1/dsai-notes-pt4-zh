@@ -342,7 +342,7 @@ Midjourney 生成的图片：
 
 Amazing epic chinese ancient theme,chinese ink style, a young man is preparing to climb the stonesteps ladder, martial arts style, dynamic, expressiveclean lines, cinematic, stunning, realistic lighting andshading, vivid, vibrant, 8k, octane render, unrealengine, very detailed, concept art, realistic --ar 16:9
 
-令人惊叹的史诗中国古代主题，中国墨水风格，一个年轻人正在准备爬石阶梯子，武术风格，动态，富有表现力的干净的线条，电影，令人惊叹，现实的灯光和阴影，生动，充满活力，8k，辛坦渲染，不真实的引擎，非常详细，概念艺术，现实
+令人惊叹的史诗中国古代主题，中国墨水风格，一个年轻人正在准备爬石阶🪜，武术风格，动态，富有表现力的干净的线条，电影，令人惊叹，现实的灯光和阴影，生动，充满活力，8k，辛坦渲染，不真实的引擎，非常详细，概念艺术，现实
 
 (young man is preparing to climb the stonesteps ladder,) 其他的关键词不变，改变这句话创作出不同的场景
 

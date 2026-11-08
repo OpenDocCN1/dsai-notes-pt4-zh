@@ -365,7 +365,7 @@ InternLM2的训练上下文窗口已扩展到32,000个tokens，这个长度可�
 
 为了在微调和RLHF之后保留LLM的长上下文能力，我们受到了之前采用长上下文预训练语料库的SFT工作(Xiong et al., 2023)的启发，在SFT和RLHF中继续使用长上下文预训练数据。具体来说，我们使用了两种数据：一种是从书籍中获取的长上下文数据，另一种是从GitHub仓库中获得并通过特定范式连接的长上下文数据，具体如下所述。
 
-为了增[强I](https://aicarrier.feishu.cn/wiki/Xarqw88ZkimmDXkdTwBcuxEfnHe#IWYLdeBiTorO8Wx1TVhcQQi2nhJ)nternLM2的数据分析能力，我们选择了在DS-1000(Lai et al., 2023)中使用的代码仓库作为核心仓库，包括Pandas、Numpy、Tensorflow、Scipy、Scikit-learn、PyTorch和Matplotlib。然后我们在GitHub上搜索了引用这些核心仓库并拥有超过10,000个星标的开源仓库，并对这些仓库进行了与预训练相同的过滤和数据清洗过程。
+为了增[强I](https://aicarrier.feishu.cn/wiki/Xarqw88ZkimmDXkdTwBcuxEfnHe#IWYLdeBiTorO8Wx1TVhc🐧i2nhJ)nternLM2的数据分析能力，我们选择了在DS-1000(Lai et al., 2023)中使用的代码仓库作为核心仓库，包括Pandas、Numpy、Tensorflow、Scipy、Scikit-learn、PyTorch和Matplotlib。然后我们在GitHub上搜索了引用这些核心仓库并拥有超过10,000个星标的开源仓库，并对这些仓库进行了与预训练相同的过滤和数据清洗过程。
 
 对于每个仓库，我们首先使用深度优先方法对获得的原始数据进行排序，同时生成所需的提示，简要描述文件内容，如图11所示。随后，我们将处理后的数据按顺序连接，直到达到32k的长度。实验结果表明，长上下文代码数据不仅提高了LLM的长上下文能力，也提高了代码能力。
 
@@ -610,7 +610,7 @@ GSM8K、MATH和MathBench 我们利用[外部](https://aicarrier.feishu.cn/wiki/X
 
 ## 5.3 偏好对齐表现
 
-尽[管 ](https://aicarrier.feishu.cn/wiki/Xarqw88ZkimmDXkdTwBcuxEfnHe#GjosdVc71o78QQxHGUzc6q83nn0)LLM 的客观能力可以通过预训练和有监督微调提升，它们的回答风格可能不会与人类偏好所对齐，这就需要人类反馈强化学习来进一步提升对齐能力。因此，评估对其能力对于判断 LLM 是否真正满足人类需求是很重要的。
+尽[管 ](https://aicarrier.feishu.cn/wiki/Xarqw88ZkimmDXkdTwBcuxEfnHe#GjosdVc71o78🐧xHGUzc6q83nn0)LLM 的客观能力可以通过预训练和有监督微调提升，它们的回答风格可能不会与人类偏好所对齐，这就需要人类反馈强化学习来进一步提升对齐能力。因此，评估对其能力对于判断 LLM 是否真正满足人类需求是很重要的。
 
 在本节中，我们在几个普遍使用的主观对齐数据集上测试了 InternLM2 的表现，同时对比了 SFT 模型和 RLHF 模型。正如我们在表17中看到的那样，InternLM2 在多个测试集的对齐任务上全面达到了 SOTA 或者接近 SOTA 的表现，表明了 InternLM2 系列模型的主观输出于人类偏好的高度一致性。我们详细地列出了模型分别在各数据集上的表现。此外，在各数据集上用于主观对齐任务的指令模板也在附录中给出。
 
@@ -622,7 +622,7 @@ GSM8K、MATH和MathBench 我们利用[外部](https://aicarrier.feishu.cn/wiki/X
 
 **AlpacaEval** AlpacaEval (Li et al., 2023b) 是一个有着805个问题的单轮问答数据集。它的主要目的是评估模型回复对于人类的帮助性，通过对抗性评价反映其与人类意图的一致性。AlpacaEval(v2) 建立了一个基线模型，并使用 GPT4-Turbo 作为评价模型来对比基线模型的答案与那些要被评测的模型的答案。它选择出那个与人类偏好对齐地更好的模型的答案并计算胜率。不同于直接收集评价模型的回复，AlpacaEval(v2) 使用了逻辑概率来从统计学角度分析评价模型的偏好。这些偏好信息随后被用作计算加权胜率中的权重因子。正如表17所示，InternLM2-20B 达到了21.8的胜率，在所有比较模型中达到了最高的 SOTA 结果，表明了其卓越的对齐表现。此外，表中数据还说明 RLHF 模型在胜率上高于 SFT 模型，这也强调了对齐策略的有效性。
 
-**MTBench** MTBench (Zheng et al., 2023a) 是一个包含80个问题的两轮对话数据集，其涵盖了8个维度，分别是：推理、角色扮演、数学、代码、写作、人文、科学技术以及信息[抽取](https://aicarrier.feishu.cn/wiki/Xarqw88ZkimmDXkdTwBcuxEfnHe#GjosdVc71o78QQxHGUzc6q83nn0)。每个维度包含10个问题，均为两轮的提问。第一轮中，测试的是模型对于基本问题的回答能力；第二轮中，它必须遵从额外的。特殊的指令以优化其之前的回答。分数由评价模型打出，范围为1-10分。正如我们在表17中看到的那样，InternLM2 在7B和20B的版本上都达到了领先的分数，分别为7.7和7.9，说明了其值得信赖的多轮对话能力。
+**MTBench** MTBench (Zheng et al., 2023a) 是一个包含80个问题的两轮对话数据集，其涵盖了8个维度，分别是：推理、角色扮演、数学、代码、写作、人文、科学技术以及信息[抽取](https://aicarrier.feishu.cn/wiki/Xarqw88ZkimmDXkdTwBcuxEfnHe#GjosdVc71o78🐧xHGUzc6q83nn0)。每个维度包含10个问题，均为两轮的提问。第一轮中，测试的是模型对于基本问题的回答能力；第二轮中，它必须遵从额外的。特殊的指令以优化其之前的回答。分数由评价模型打出，范围为1-10分。正如我们在表17中看到的那样，InternLM2 在7B和20B的版本上都达到了领先的分数，分别为7.7和7.9，说明了其值得信赖的多轮对话能力。
 
 ### 5.3.2 中文主观评测
 

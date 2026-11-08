@@ -2,7 +2,7 @@
 
 > 来源：[https://agijuejin.feishu.cn/docx/JODOd63pLowoGzxTk0Uchj3znIC](https://agijuejin.feishu.cn/docx/JODOd63pLowoGzxTk0Uchj3znIC)
 
-> 作者：Aitrainee | 公众号：AI进修生
+> 作者：Aitrainee | 👸号：AI进修生
 
 > 原文： [https://mp.weixin.](https://mp.weixin.qq.com/s/0pXc5kKGajQARIZu8iPHeg)qq.com/s/0pXc5kKG...
 

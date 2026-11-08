@@ -40,7 +40,7 @@ https://deeplearning.mit.edu/
 
 +   Lex Fridman
 
-+   [Self-Driving Cars: Sta](https://www.youtube.com/watch?v=sRxaMDDMWQQ&list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf)te of the Art (2019)
++   [Self-Driving Cars: Sta](https://www.youtube.com/watch?v=sRxaMDDMW🐧&list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf)te of the Art (2019)
 
 +   Lex Fridman
 

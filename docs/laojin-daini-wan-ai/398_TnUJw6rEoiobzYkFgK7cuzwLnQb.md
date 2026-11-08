@@ -4,9 +4,9 @@
 
 # 需要订阅MJ才可使用。
 
-如果要在微信机器人上使用Midjourney，需要2个步骤。
+如果要在🛰️机器人上使用Midjourney，需要2个步骤。
 
-1、安装 midjourney-proxy 环境，是基于Discord的API，等于联通后微信和Discord建立链接，可以互通消息。
+1、安装 midjourney-proxy 环境，是基于Discord的API，等于联通后🛰️和Discord建立链接，可以互通消息。
 
 2、安装 **m**idjourney-proxy-on-wechat 插件
 

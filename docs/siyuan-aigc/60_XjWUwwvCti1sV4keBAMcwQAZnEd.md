@@ -1,8 +1,8 @@
-# 行业研报专题（加管理员微信flyoceanfish01，免费获取更多最新研报资源）
+# 行业研报专题（加管理员🛰️flyoceanfish01，免费获取更多最新研报资源）
 
 > 来源：[https://my.feishu.cn/docx/CqpKdvTeZoZVolxhIiwcSguqnFs](https://my.feishu.cn/docx/CqpKdvTeZoZVolxhIiwcSguqnFs)
 
-请添加管理员微信免费获取，并可以领取免费知识星球
+请添加管理员🛰️免费获取，并可以领取免费知识星球
 
 ![](img/05b490bcc3e7d655000b3687b912ec70.png)
 
@@ -20,7 +20,7 @@
 
 ![](img/bc3dd43a73e27f9e4994c5aed842316b.png)
 
-添加管理员微信后加入微信群                                                                     知识星球（限时免费）
+添加管理员🛰️后加入🛰️群                                                                     知识星球（限时免费）
 
 # 知识星球介绍
 

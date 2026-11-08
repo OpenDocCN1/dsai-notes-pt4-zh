@@ -40,7 +40,7 @@
 
 # 表情包全集
 
-## 小红书
+## 📕
 
 | ![](img/9be918be324c5ba41e22eaade1cb63c3.png) | ![](img/87bd91ba376fe00cd81753ce8115b664.png) | ![](img/8fa1153a7d1e263e65092d594f87b6dd.png) | ![](img/4341b5c97467914aa657f885b2a4bdd0.png) | ![](img/e9045dc0e41d977373fdc5efc6867a56.png) | ![](img/fa21f1b4d85d216ec772a49b900daeb4.png) | ![](img/6067182ff3457d7e51c6e4c95ae6847c.png) | ![](img/004edb9bc7d55e0119f8e5e136911ee0.png) | ![](img/32c9de12748412ccf3e13ccf8b6d508f.png) | ![](img/c655f0af32ccafb8d5bad6554b555b5b.png) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

@@ -28,7 +28,7 @@ Midjourney官网网站：https://www.midjourney.com
 
 ## 2、如何使用Midjourney
 
-1.  需要一台可以科学上网的电脑。
+1.  需要一台可以🪜的电脑。
 
 1.  输入下面这个网址，登陆 Midjourney 官网：https://www.midjourney.com/
 

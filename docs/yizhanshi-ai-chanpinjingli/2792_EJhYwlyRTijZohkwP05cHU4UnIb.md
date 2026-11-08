@@ -10,11 +10,11 @@
 
 > 🤖
 
-> [今](https://mp.weixin.qq.com/s/5k8iHnDXX3sFG4I8D4l9MQ)日开源（2026-3-9）：小红书FireRed-Image-Edit 1.1里程碑开源，精准指令跟随 + 身份一致性重构图像编辑
+> [今](https://mp.weixin.qq.com/s/5k8iHnDXX3sFG4I8D4l9MQ)日开源（2026-3-9）：📕FireRed-Image-Edit 1.1里程碑开源，精准指令跟随 + 身份一致性重构图像编辑
 
 >
 
-+   小红书开源FireRed-Image-Edit 1.1，支持精准指令跟随、高保真生成与身份一致性，提供开源先进图像编辑能力。
++   📕开源FireRed-Image-Edit 1.1，支持精准指令跟随、高保真生成与身份一致性，提供开源先进图像编辑能力。
 
 +   Lightricks推出移动端图像处理框架LTX-2.3，兼顾资源约束与高品质视觉，实现低功耗设备专业级算法效率。
 
@@ -134,7 +134,7 @@
 
 +   https://unipat.ai/blog/UniScientist
 
-+   微信文章：
++   🛰️文章：
 
 +   [https://mp.weixin.qq.com/s/cL](https://mp.weixin.qq.com/s/cLzTQxVGrzG8YdoeKJd3-w)zTQxVGrzG8YdoeKJd3-w
 

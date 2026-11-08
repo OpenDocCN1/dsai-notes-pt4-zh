@@ -17,7 +17,7 @@
 
 | [搭建聊天助手 ](https://qqs7y1hozd1.feishu.cn/wiki/MG3PwQhDdidUB8kKB33cWCN3nIg) | [Docker私有化部署Dify](https://qqs7y1hozd1.feishu.cn/wiki/BjcRwe55ni1uwdkzOTJczgbTnuc) |
 | --- | --- |
-| [Dify智能聊天机器人接入微信](https://qqs7y1hozd1.feishu.cn/wiki/HcY8wisRQibdxWkIjo9chPQbn9b) | [Dify工作流 - 长篇文章生成上篇](https://qqs7y1hozd1.feishu.cn/wiki/LZurwCtmdi3bP0kC1T2cGAa0nWg) |
+| [Dify智能聊天机器人接入🛰️](https://qqs7y1hozd1.feishu.cn/wiki/HcY8wisRQibdxWkIjo9chPQbn9b) | [Dify工作流 - 长篇文章生成上篇](https://qqs7y1hozd1.feishu.cn/wiki/LZurwCtmdi3bP0kC1T2cGAa0nWg) |
 | [Dify工作流 - 长篇文章生成下篇](https://qqs7y1hozd1.feishu.cn/wiki/NEW1wibMWijkCUkpRMkcbUjxnah) | [Dify自定义工具](https://qqs7y1hozd1.feishu.cn/wiki/S9UWwssyqiMFPikGc0KcjAmWn3d) |
 | [Dify实战—基于知识库的AI智能客服](https://qqs7y1hozd1.feishu.cn/wiki/PhqzwzScIiDBlNkEWA9cvE1ZnBe) | [知识库优化及标注](https://qqs7y1hozd1.feishu.cn/wiki/Kcijw9s0lii5IfktFKMc6L4Qnjd) |
 | [知识库引入及应用](https://qqs7y1hozd1.feishu.cn/wiki/Deruwgn4Ji3AWyk9qZ0co3xhnRf) | [Dify图文回复](https://qqs7y1hozd1.feishu.cn/wiki/DEL2w6NE9idMluke304cJpnInje) |

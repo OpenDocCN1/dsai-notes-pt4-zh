@@ -8,11 +8,11 @@
 
 > 本知识库是面对采购与供应链行业人员的知识库，本知识库文件为原创，请忽商用。如转发请标注原创。
 
-小红书：[采购冯志伟](https://www.xiaohongshu.com/user/profile/677e40a6000000000803e060)（点击跳转关注）
+📕：[采购冯志伟](https://www.xiaohongshu.com/user/profile/677e40a6000000000803e060)（点击跳转关注）
 
 视频号：众智商学课程中心
 
-[点击查看](https://channels-aladin.wxqcloud.qq.com/aladin/html/0378ddfc-4497-419c-992d-edf56b73ebef.html)（打开后复制链接到微信打开）
+[点击查看](https://channels-aladin.wxqcloud.qq.com/aladin/html/0378ddfc-4497-419c-992d-edf56b73ebef.html)（打开后复制链接到🛰️打开）
 
 26年CPPPM试听课已经安排好了~~
 
@@ -88,6 +88,6 @@
 
 # ⭐️  DeepSeek智能采购实战课程来啦 耗时三个月持续打磨的课程
 
-第一节直播课程圆满结束，感谢1000位采购从业者的支持~，没有报名课程的采购从业者现在加助理微信可以领取第一节的试听，限时限名额~
+第一节直播课程圆满结束，感谢1000位采购从业者的支持~，没有报名课程的采购从业者现在加助理🛰️可以领取第一节的试听，限时限名额~
 
 ![](img/292efeaec66448effb7edbafc5ebaccd.png)

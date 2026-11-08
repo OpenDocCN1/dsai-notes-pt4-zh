@@ -60,7 +60,7 @@ https://cloud.tencent.com/act/pro/gpu-study?from=20421&from_column=20421
 
 #### 第二步
 
-加我微信，发给我你的id，因为我要共享给你：
+加我🛰️，发给我你的id，因为我要共享给你：
 
 ![](img/5b958ecb55052fd38a31eeb53ea06eda.png)
 

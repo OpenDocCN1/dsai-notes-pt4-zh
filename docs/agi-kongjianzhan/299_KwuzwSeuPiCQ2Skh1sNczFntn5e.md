@@ -20,7 +20,7 @@
 
 ![](img/d980f179678cd4b313675bff7a4822ff.png)
 
-芦义是谁？芦义（Indigo）是新浪微博创始团队成员，在微博创业阶段担任产品和技术负责人。Hallid.ai 联合创始人，Brilliant Phoenix 合伙人。
+芦义是谁？芦义（Indigo）是新浪🧣创始团队成员，在🧣创业阶段担任产品和技术负责人。Hallid.ai 联合创始人，Brilliant Phoenix 合伙人。
 
 ![](img/d1576418ddcb9d6ebcd82aa827f5e06e.png)
 

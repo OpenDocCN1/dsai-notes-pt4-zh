@@ -28,7 +28,7 @@
 
 > 联系地址：北京市东城区安定门外大街56号
 
-> 公众号：网信中国[《网络安全审查办法》答记者问](https://mp.weixin.qq.com/s/Avfc4EbEAEKkuo0CTDH7sQ)
+> 👸号：网信中国[《网络安全审查办法》答记者问](https://mp.weixin.qq.com/s/Avfc4EbEAEKkuo0CTDH7sQ)
 
 **-答5：**网络安全审查办公室，我理解是一个虚设机构，网信办牵头，各部门参与网络安全审查，部分职能可能让下面做了。
 

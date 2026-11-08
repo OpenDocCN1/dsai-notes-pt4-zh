@@ -1,6 +1,6 @@
 # 开源视频版GPT-4o？快速记忆，实时问答，拿下CVPR'24长视频问答竞赛冠军
 
-> 来源：[https://agijuejin.feishu.cn/docx/JtBydSGJjoqAInxiGdCcHQQbntf](https://agijuejin.feishu.cn/docx/JtBydSGJjoqAInxiGdCcHQQbntf)
+> 来源：[https://agijuejin.feishu.cn/docx/JtBydSGJjoqAInxiGdCcH🐧bntf](https://agijuejin.feishu.cn/docx/JtBydSGJjoqAInxiGdCcH🐧bntf)
 
 > 机器之心｜[阅读原文](https://www.jiqizhixin.com/articles/2024-07-08-12)
 

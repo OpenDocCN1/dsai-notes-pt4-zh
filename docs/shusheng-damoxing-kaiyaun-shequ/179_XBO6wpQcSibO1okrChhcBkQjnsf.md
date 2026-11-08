@@ -44,8 +44,8 @@ https://www.wjx.cn/vm/PvefmG2.aspx?udsid=829319
 
 | 任务 | 任务描述 | 任务激励 | 备注 |
 | --- | --- | --- | --- |
-| 1 | 扫码报名后收到邮件中的二维码加入微信班级群, 并将群昵称改为【问卷星序号-微信昵称】 | 无 | 方便助教老师微信和作业相互对应上！ |
-| 2 | 在[闯关作业信息登记](https://aicarrier.feishu.cn/share/base/form/shrcnZ4bQ4YmhEtMtnKxZUcf1vd)表中登记【问卷星序号】【微信昵称】【班级】、【InternStuido ID】【GitHubID】信息，完成登记助教批改后系统赠送 50 算力点用于后续的课程学习。 | **50 算力点** | 问卷星序号，通过访问：https://www.wjx.cn/vm/PvefmG2.aspx?udsid=829319 |
+| 1 | 扫码报名后收到邮件中的二维码加入🛰️班级群, 并将群昵称改为【问卷星序号-🛰️昵称】 | 无 | 方便助教老师🛰️和作业相互对应上！ |
+| 2 | 在[闯关作业信息登记](https://aicarrier.feishu.cn/share/base/form/shrcnZ4bQ4YmhEtMtnKxZUcf1vd)表中登记【问卷星序号】【🛰️昵称】【班级】、【InternStuido ID】【GitHubID】信息，完成登记助教批改后系统赠送 50 算力点用于后续的课程学习。 | **50 算力点** | 问卷星序号，通过访问：https://www.wjx.cn/vm/PvefmG2.aspx?udsid=829319 |
 
 ## 闯关地图
 
@@ -57,7 +57,7 @@ https://www.wjx.cn/vm/PvefmG2.aspx?udsid=829319
 | 第1关 | Linux 基础知识 | [任务](https://github.com/InternLM/Tutorial/blob/camp3/docs/L0/Linux/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp3/docs/L0/Linux/readme.md)、[视频](https://www.bilibili.com/video/BV1FS421d7yg/) |  | 50 算力点 |
 | 第2关 | Python 基础知识 | [任务](https://github.com/InternLM/Tutorial/blob/camp3/docs/L0/Python/task.md)、[文档](https://github.com/InternLM/Tutorial/tree/camp3/docs/L0/Python)、[视频](https://www.bilibili.com/video/BV1mS421X7h4/) |  | 50 算力点 |
 | 第3关 | Git 基础知识 | [任务](https://github.com/InternLM/Tutorial/blob/camp3/docs/L0/Git/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp3/docs/L0/Git/readme.md)、[视频](https://www.bilibili.com/video/BV1Pz421i7bw/) |  | 50 算力点 |
-| **通关奖励：通关后**可联系助教老师加入[书生入门岛通关 专属](https://aicarrier.feishu.cn/wiki/DjY6whCO0inTu2kQN9Cchxgynme)微信社群。参**加第三期实战营项目**申报，立马获**得 168 团队****算力点激励，解锁 5**0% A100 团队开发机算力资源。 |  |  |  |  |
+| **通关奖励：通关后**可联系助教老师加入[书生入门岛通关 专属](https://aicarrier.feishu.cn/wiki/DjY6whCO0inTu2kQN9Cchxgynme)🛰️社群。参**加第三期实战营项目**申报，立马获**得 168 团队****算力点激励，解锁 5**0% A100 团队开发机算力资源。 |  |  |  |  |
 | 基础岛 |  |  |  |  |
 |  | 关卡名称 | 关卡资料 |  | 通关激励 |
 | 第1关 | 书生大模型全链路开源体系 | [任务](https://github.com/InternLM/Tutorial/blob/camp3/docs/L1/HelloIntern/task.md)、[视频](https://www.bilibili.com/video/BV18142187g5/) |  | 100 算力点 |
@@ -127,7 +127,7 @@ By the way, 要让小伙伴通过自己生成的问卷报名成功才记作邀�
 
 算力是系统自动发放的，所以请大家千万注意仔细阅读计划说明。
 
-# 班级微信群
+# 班级🛰️群
 
 进入班级群后请将备注改为【问卷星序号-昵称】
 

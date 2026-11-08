@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/IgjOdKYGPo9aFqxRu7UcHg4dnth](https://xuqiwei1986.feishu.cn/docx/IgjOdKYGPo9aFqxRu7UcHg4dnth)
 
-[来自： 生财有术](https://wx.zsxq.com/dweb2/index/group/1824528822)
+[来自： 龙哥盟](https://wx.zsxq.com/dweb2/index/group/1824528822)
 
 ![](img/376558816dbe922aeae30c29deb77fbf.png)
 
@@ -16,7 +16,7 @@
 
 比如要使用 GPT 来为文章生成爆款标题，常见做法是：
 
-1.  先新建一个 chat 中，输入提示词（比如：请先学习知乎和微信公众号的爆款文章标题的写法，然后为下面的文章写 5 个爆款标题。我会在接下来的对话中输入文章内容，如果你明白请回复“ok”）。
+1.  先新建一个 chat 中，输入提示词（比如：请先学习知乎和🛰️👸号的爆款文章标题的写法，然后为下面的文章写 5 个爆款标题。我会在接下来的对话中输入文章内容，如果你明白请回复“ok”）。
 
 1.  然后我们会输入文章内容，等待 GPT 输出。
 
@@ -78,7 +78,7 @@ GPT 说这个技巧有以下三个优点：
 
 **————————**
 
-**我在生财的其他文章链接：**
+**我在赚钱的其他文章链接：**
 
 保姆级教程！注册Midjourney并开通付费订阅功能
 

@@ -6,7 +6,7 @@
 
 > 免费知识星球： [AI 教育](https://wx.zsxq.com/dweb2/index/topic_detail/4844244244152528)
 
-> 公众号：https://mp.weixin.qq.com/s/r_1yTL5WoUpg3cKuOkX13w
+> 👸号：https://mp.weixin.qq.com/s/r_1yTL5WoUpg3cKuOkX13w
 
 ```
 你是一个优秀的英文启蒙专家和一个妈妈。请你帮我给中国3-8岁的儿童设计一个家庭活动游戏。

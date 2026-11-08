@@ -2,7 +2,7 @@
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/HIWWdrGJaoUYZrx8wyXcl4HRnyc](https://gotoaiworld.feishu.cn/docx/HIWWdrGJaoUYZrx8wyXcl4HRnyc)
 
-百度的AI搜直接占到头部位置，360搜索调用DeepSeek大模型，微信搜一搜也引入腾讯混元大模型，搜索方式从传统SEO迈向生成式搜索（GEO）新时代。用户搜索习惯面临突破性改变，企业获取流量的路径也随之重塑。
+百度的AI搜直接占到头部位置，360搜索调用DeepSeek大模型，🛰️搜一搜也引入腾讯混元大模型，搜索方式从传统SEO迈向生成式搜索（GEO）新时代。用户搜索习惯面临突破性改变，企业获取流量的路径也随之重塑。
 
 GEO（Generative Engine Optimization）作为新兴领域，与SEO算法截然不同。它专注于影响ChatGPT Search等AI搜索引擎的生成结果，提升网站内容在大模型中的曝光与可见度。
 

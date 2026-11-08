@@ -198,7 +198,7 @@ print(qa({&quot;question&quot;: &quot;Where did he grow up?&quot;})[&quot;answer
 
 **向量检索实验室**
 
-微信号：VectorSearch
+🛰️号：VectorSearch
 
 扫码关注 了解更多
 

@@ -4,7 +4,7 @@
 
 > 作者：贾铭
 
-> 公众号：秦朔朋友圈
+> 👸号：秦朔朋友圈
 
 > 链接：https://mp.weixin.qq.com/s/p3ASMcAfzDfgZ_QyzdKKKQ
 

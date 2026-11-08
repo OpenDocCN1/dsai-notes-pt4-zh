@@ -6,7 +6,7 @@
 
 [用AI搞钱|批量生成表情包引流变现（附实操教程）](https://x3mtcltyd5.feishu.cn/docx/FJ8HdrA04o2efNx7E1ZcVgehnSe)
 
-[拆解 月入过万的 【小红书】头像壁纸玩法与制作方法](https://s0xpyu2kpl6.feishu.cn/docx/MNXhdknUGoyRAJxoaeNcofGmnUh)
+[拆解 月入过万的 【📕】头像壁纸玩法与制作方法](https://s0xpyu2kpl6.feishu.cn/docx/MNXhdknUGoyRAJxoaeNcofGmnUh)
 
 [ChatGPT热点项目复盘｜ 人人可迁移的热点复制能力](https://d1jpewyavi.feishu.cn/docx/C2psdPLy6oCZPQxI7NicSeIYnrc)
 

@@ -266,7 +266,7 @@ Skill 是 Claude Code 最近推出的重要功能。
 
 [https://github.c](https://github.com/anthropics/skills)om/anthropics/skills
 
-Skill 的具体使用也非常简单，比如今天刚好看到刘小排老师发的前端设计 Skill (刘小排老师是 CC 之神，大家可以关注他的公众号学习更多技巧）
+Skill 的具体使用也非常简单，比如今天刚好看到刘小排老师发的前端设计 Skill (刘小排老师是 CC 之神，大家可以关注他的👸号学习更多技巧）
 
 先用一句话安装 Skill
 

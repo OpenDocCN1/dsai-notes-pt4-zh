@@ -22,7 +22,7 @@
 
 > **口碑截图（群真实截图）链接：**[成功案例](https://rq547mr4oez.feishu.cn/wiki/MJNOw5aEAi2EkKkWl6IcqgqhnMh?from=from_copylink)
 
-> **官方微信：aitansuojiy，abc1833798**573，ab1833798573（如下）
+> **官方🛰️：aitansuojiy，abc1833798**573，ab1833798573（如下）
 
 ![](img/c1e2276af894f56a8a031d5113a180fe.png)
 

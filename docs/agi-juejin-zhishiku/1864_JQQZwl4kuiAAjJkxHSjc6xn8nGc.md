@@ -10,7 +10,7 @@
 
 1.  **ClawManager 发布** ([链接](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652687412&idx=2&sn=ea8c987b9750aca470cc443cba29265a))：推出首个企业级 OpenClaw 服务器部署管理方案，解决大规模 AI 桌面代理在部署、安全、管理和成本控制方面的五大核心痛点。
 
-1.  De[ep](https://www.ithome.com/0/933/898.htm)Seek 服务器故障上热搜 (链接)：网友反馈 DeepSeek 疑似出现服务器故障，导致无法加载内容，相关话题登上微博热搜，目前已恢复访问。
+1.  De[ep](https://www.ithome.com/0/933/898.htm)Seek 服务器故障上热搜 (链接)：网友反馈 DeepSeek 疑似出现服务器故障，导致无法加载内容，相关话题登上🧣热搜，目前已恢复访问。
 
 1.  **吴文俊奖揭晓** ([链接](https://www.ithome.com/0/933/897.htm))：被誉为我国人工智能最高奖，本届共评出116个获奖项目及个人，孙富春、宋永端获科技贡献奖，涵盖生成式AI、大模型等重点领域。
 
@@ -52,4 +52,4 @@
 
 1.  Op[en](https://mp.weixin.qq.com/s?__biz=MzIyMDE5OTYyMw==&mid=2651051518&idx=1&sn=bd8ee1e86e5241f97020471f1033e798)Claw for Teams 产品定义 (链接)：Kuse.ai创始人宇豪分享从千万刀ARR产品转型推出AI员工平台Junior.so的历程，强调应将钱花在Token而非工资上，并探讨了企业级AI员工在记忆、安全、权限及协作模式上的挑战与机遇。
 
-1.  微信[鸿蒙](https://www.ithome.com/0/933/829.htm)版 8.0.16.40 尝鲜 (链接)：新增支持OpenClaw插件接入、视频号调整播放倍速、管理手表支付、展示运动记录等功能，并优化了企业微信和聊天界面。
+1.  🛰️[鸿蒙](https://www.ithome.com/0/933/829.htm)版 8.0.16.40 尝鲜 (链接)：新增支持OpenClaw插件接入、视频号调整播放倍速、管理手表支付、展示运动记录等功能，并优化了企业🛰️和聊天界面。

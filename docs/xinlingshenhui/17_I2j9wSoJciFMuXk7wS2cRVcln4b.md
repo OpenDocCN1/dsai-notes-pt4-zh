@@ -114,7 +114,7 @@ A little girl, long black hair, bangs, big black eyes, long eyelashes, light eye
 
 ## 2⃣️ 处理表情包
 
-[首先要知道微信表情包的规](https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/index.html#/makingSpecifications#specifications_stickers)范，可以点这个链接去看：微信表情包规范和尺寸大小
+[首先要知道🛰️表情包的规](https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/index.html#/makingSpecifications#specifications_stickers)范，可以点这个链接去看：🛰️表情包规范和尺寸大小
 
 生成的图片下载下来，先抠图，工具就用PS，clipdrop，Figma等，进行设计，配文字，规范尺寸就OK了。
 
@@ -140,9 +140,9 @@ A little girl, long black hair, bangs, big black eyes, long eyelashes, light eye
 
 裁剪的话就不清晰，需要用SD或者绘画工具的无损放大之后再进行操作！
 
-# 3⃣️上架微信平台
+# 3⃣️上架🛰️平台
 
-打开微信表情包开放平台：https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/loginpage?t=login/index
+打开🛰️表情包开放平台：https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/loginpage?t=login/index
 
 ![](img/22e90ca69cbbb528b2ae772ebff1daa8.png)
 
@@ -324,4 +324,4 @@ Prompt: A sticker design of a bunny, whimsical and magical --ar 1:1 --niji 5 --s
 
 # 如有错误❌，欢迎指正。👏
 
-同时也欢迎各位宝子的补充。大家共同学习。欢迎加微信和社群！
+同时也欢迎各位宝子的补充。大家共同学习。欢迎加🛰️和社群！

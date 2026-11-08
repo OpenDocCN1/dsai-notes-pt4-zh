@@ -4,7 +4,7 @@
 
 > 原创：特工少女
 
-> 公众号：特工宇宙
+> 👸号：特工宇宙
 
 > 原文链接：https://mp.weixin.qq.com/s/oyesjlp4cfOSn6LxZvWpew
 
@@ -16,7 +16,7 @@ Agent Universe，这里有关于Agent的一切。
 
 97篇原创内容
 
-公众号
+👸号
 
 最近各家模型发的都挺勤，一会一个 SOTA()，一会一个遥遥领先。
 

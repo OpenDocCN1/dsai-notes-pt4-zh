@@ -2503,7 +2503,7 @@ Only the characters should be in chibi 3D style; the rest of the environment sho
 
 ---
 
-### [案例 22：小红书封面图](https://x.com/balconychy)片 （由 @balconychy ）
+### [案例 22：📕封面图](https://x.com/balconychy)片 （由 @balconychy ）
 
 [来源链接](https://x.com/balconychy/status/1905507936526627078)
 
@@ -2539,7 +2539,7 @@ Image aspect ratio: 9:16
 
 > **翻译**
 
-> 绘制图像：为小红书（RED）帖子创建封面。
+> 绘制图像：为📕（RED）帖子创建封面。
 
 > 要求：
 
@@ -2553,7 +2553,7 @@ Image aspect ratio: 9:16
 
 +   只使用明亮的强调色来突出关键字并吸引注意力。
 
-+   背景应具有引人注目的图案（如纸张纹理、笔记本或微信聊天窗口，选择一个）。
++   背景应具有引人注目的图案（如纸张纹理、笔记本或🛰️聊天窗口，选择一个）。
 
 +   添加适当的图标或插图以增强视觉层次，但避免视觉杂乱。
 
@@ -3262,7 +3262,7 @@ Transform the two people in the photo into chibi-style 3D cartoon characters. Ch
 
 # Nano-Banana 学习交流社群
 
-1**.持续关注并更新 Nan**o-Bana**na 的相关资讯动态，玩法案例，常见问题，永久免费在线查看，已建立社群聊聊 Na**no-Banana 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国微信 ID：zyg90s（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+1**.持续关注并更新 Nan**o-Bana**na 的相关资讯动态，玩法案例，常见问题，永久免费在线查看，已建立社群聊聊 Na**no-Banana 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 2.**关于文档负责人大国**：高帆文化 CEO，曾就职于教培大厂，目前创业，主攻研究 AI 落地应用、企业流量增长及达人 IP 孵化。
 
@@ -3274,9 +3274,9 @@ Transform the two people in the photo into chibi-style 3D cartoon characters. Ch
 
 ![](img/b0250d1006262e255bc23ac29c42a1b0.png)
 
-微信好友（ID：zhangyuguo94s）
+🛰️好友（ID：zhangyuguo94s）
 
-**扫码加微信入微信**
+**扫码加🛰️入🛰️**
 
 ---
 

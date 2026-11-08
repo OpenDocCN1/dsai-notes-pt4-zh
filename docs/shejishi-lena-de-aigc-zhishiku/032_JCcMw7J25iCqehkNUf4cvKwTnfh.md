@@ -2,7 +2,7 @@
 
 > 来源：[https://aigclena.feishu.cn/docx/MiwWdsYzMonsvmxnaOhcvX94nIb](https://aigclena.feishu.cn/docx/MiwWdsYzMonsvmxnaOhcvX94nIb)
 
-> Ai设计师lena发布了一篇小红书笔记，快来看吧！ 😆 cCnpT3NqJ8gInjX 😆 http://xhslink.com/DVUrzH，复制本条信息，打开【小红书】App查看精彩内容！
+> Ai设计师lena发布了一篇📕笔记，快来看吧！ 😆 cCnpT3NqJ8gInjX 😆 http://xhslink.com/DVUrzH，复制本条信息，打开【📕】App查看精彩内容！
 
 # 先看最后效果：
 
@@ -136,4 +136,4 @@ MJ/AIGC干货教程 | AI前沿资讯
 
 all设计/AI相关业务欢迎咨询
 
-每天分享最新的AI工具及资讯的AIGC群，欢迎大家一起学习探讨，想进群的小伙伴儿，添加微信请备注“进群”
+每天分享最新的AI工具及资讯的AIGC群，欢迎大家一起学习探讨，想进群的小伙伴儿，添加🛰️请备注“进群”

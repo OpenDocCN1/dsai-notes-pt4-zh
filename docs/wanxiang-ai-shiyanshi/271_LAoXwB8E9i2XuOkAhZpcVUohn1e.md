@@ -130,9 +130,9 @@ vim /etc/openclaw/config.json
 
 **完全开源免费**，支持Windows/macOS/Linux三大平台！
 
-### 方式二：公众号一键获取
+### 方式二：👸号一键获取
 
-关注公众号“**铁柱AGI**”回复关键词：**OpenClaw**
+关注👸号“**铁柱AGI**”回复关键词：**OpenClaw**
 
 即可获取最新版本下载链接 + 详细使用教程
 
@@ -204,11 +204,11 @@ OpenClawSwitch 就是答案。
 
 +   GitHub: [https://github.com/Rong](https://github.com/RongleCat/OpenClawSwitch)leCat/OpenClawSwitch
 
-+   公众号回复：**OpenClaw**
++   👸号回复：**OpenClaw**
 
 💬 加**入社群：
 
-** 欢迎加入我们的🦞 OpenClaw 交流群，第一时间获取更新和教程！添加微信：AI_Tiezhu
+** 欢迎加入我们的🦞 OpenClaw 交流群，第一时间获取更新和教程！添加🛰️：AI_Tiezhu
 
 🍎M**ac 用户须知**
 

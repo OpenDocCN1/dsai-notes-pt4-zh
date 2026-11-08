@@ -20,7 +20,7 @@
 
 使用条件：
 
-能够魔法上网
+能够🪜
 
 一个谷歌账号
 
@@ -50,7 +50,7 @@
 
 ## 4.上传音频
 
-在等待的时候可以先上传好所需的音频。点击第一个键上传音频，上传的速度取决于你梯子的上传网速。
+在等待的时候可以先上传好所需的音频。点击第一个键上传音频，上传的速度取决于你🪜的上传网速。
 
 ![](img/28302359992f7f9d0ef9d25f5ce772b6.png)
 
@@ -116,7 +116,7 @@
 
 模型包：https://www.123pan.com/s/UHp9-Qfi8H.html（下载精简版就好，里面有要用到的模型了。完整版是UVR5的所有模型，可能以后会用到）
 
-**如果觉得**模型包太大，也可以自己下载（需要科学上网，且速度很慢，一次只能下一个）。点击左下角的小扳手，打开设置界面，点击第三个下载模型。需要下载的模型有：MDX23C-InstVoc HQ（HQ2是需要赞助后才能下载的vip模型，效果提升不大）、VR Architecture：UVR-De-Echo-Normal选No Echo Only（轻度混响）、VR Architecture：UVR-De-Echo-Aggressive选No Echo Only（重度混响）、VR Architecture：UVR-De-Echo-Dereverb选No Echo Only（变态混响）、UVR-DeNoise
+**如果觉得**模型包太大，也可以自己下载（需要🪜，且速度很慢，一次只能下一个）。点击左下角的小扳手，打开设置界面，点击第三个下载模型。需要下载的模型有：MDX23C-InstVoc HQ（HQ2是需要赞助后才能下载的vip模型，效果提升不大）、VR Architecture：UVR-De-Echo-Normal选No Echo Only（轻度混响）、VR Architecture：UVR-De-Echo-Aggressive选No Echo Only（重度混响）、VR Architecture：UVR-De-Echo-Dereverb选No Echo Only（变态混响）、UVR-DeNoise
 
 ![](img/046d717904bbea26eb5630ce56c26657.png)
 
@@ -230,7 +230,7 @@
 
 ## 9.下载模型到本地
 
-模型存放在GPT_weights和SOVITS_weights里，右键下载即可。下载速度取决于你梯子的速度……
+模型存放在GPT_weights和SOVITS_weights里，右键下载即可。下载速度取决于你🪜的速度……
 
 ![](img/f95f3dc2a19fbf949b65dfc86a352693.png)
 
@@ -348,7 +348,7 @@ Linux：嗯？都用Linux了，用Git拉代码自己部署不是难事吧？欸�
 
 模型包：https://www.123pan.com/s/UHp9-Qfi8H.html（下载精简版就好，里面有要用到的模型了。完整版是UVR5的所有模型，可能以后会用到）
 
-如果觉得模型包太大，也可以自己下载（需要科学上网，且速度很慢，一次只能下一个）。点击左下角的小扳手，打开设置界面，点击第三个下载模型。需要下载的模型有：MDX23C-InstVoc HQ（HQ2是需要赞助后才能下载的vip模型，效果提升不大）、VR Architecture：UVR-De-Echo-Normal选No Echo Only（轻度混响）、VR Architecture：UVR-De-Echo-Aggressive选No Echo Only（重度混响）、VR Architecture：UVR-De-Echo-Dereverb选No Echo Only（变态混响）、UVR-DeNoise
+如果觉得模型包太大，也可以自己下载（需要🪜，且速度很慢，一次只能下一个）。点击左下角的小扳手，打开设置界面，点击第三个下载模型。需要下载的模型有：MDX23C-InstVoc HQ（HQ2是需要赞助后才能下载的vip模型，效果提升不大）、VR Architecture：UVR-De-Echo-Normal选No Echo Only（轻度混响）、VR Architecture：UVR-De-Echo-Aggressive选No Echo Only（重度混响）、VR Architecture：UVR-De-Echo-Dereverb选No Echo Only（变态混响）、UVR-DeNoise
 
 ![](img/5d93e489162edaeb4328caf0039d558e.png)
 

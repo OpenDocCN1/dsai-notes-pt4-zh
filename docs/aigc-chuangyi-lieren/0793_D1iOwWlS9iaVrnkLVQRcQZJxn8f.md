@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/AB0AdRs9Voo1wpxAzcTcLxzanSd](https://aigcreative.feishu.cn/docx/AB0AdRs9Voo1wpxAzcTcLxzanSd)
 
-> 作者：印迪谦      公众号：AI觉醒时代
+> 作者：印迪谦      👸号：AI觉醒时代
 
 > 链接：https://mp.weixin.qq.com/s/P_YzDC6S2zEmicttXJ3kRw
 

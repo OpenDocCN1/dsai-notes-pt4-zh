@@ -2,7 +2,7 @@
 
 > 来源：[https://langgptai.feishu.cn/docx/L8SmdRWjqoUhOXxQiq9cW1mFnRP](https://langgptai.feishu.cn/docx/L8SmdRWjqoUhOXxQiq9cW1mFnRP)
 
-+   编辑：「云中江树」公众号
++   编辑：「云中江树」👸号
 
 ## cursor智能体原版提示词（20250309）
 

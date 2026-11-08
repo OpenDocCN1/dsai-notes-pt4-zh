@@ -1,4 +1,4 @@
-# 🤖️【小红书爆款文案【专家定制 必出爆款】】-【Jessie】-扣子 AI 工坊 - 入选作品介绍
+# 🤖️【📕爆款文案【专家定制 必出爆款】】-【Jessie】-扣子 AI 工坊 - 入选作品介绍
 
 > 来源：[https://docs.feishu.cn/docx/KWmNdQxi5osXGOxIs1ycNaTwn2b](https://docs.feishu.cn/docx/KWmNdQxi5osXGOxIs1ycNaTwn2b)
 
@@ -6,13 +6,13 @@
 
 ### 一、基础信息
 
-+   Bot 名称：小红书爆款文案【专家定制 必出爆款】
++   Bot 名称：📕爆款文案【专家定制 必出爆款】
 
 +   **Bot 简介：**
 
-我们相信，每个人都值得拥有一个私人定制的Bot。为此我们为用户设计了一款“文案生成AI助手”Bot，让创作变得简单！一期针对“小红书平台”专业定制文案，二期将扩展至微信公众号等媒体平台。
+我们相信，每个人都值得拥有一个私人定制的Bot。为此我们为用户设计了一款“文案生成AI助手”Bot，让创作变得简单！一期针对“📕平台”专业定制文案，二期将扩展至🛰️👸号等媒体平台。
 
-**目标人群：**小红书博主
+**目标人群：**📕博主
 
 **解决什么问题：**
 
@@ -26,7 +26,7 @@
 
 **Bot 主要功能**
 
-1、我们的Bot具备一键生成小红书文案的超能力，让灵感瞬间转化为文字；
+1、我们的Bot具备一键生成📕文案的超能力，让灵感瞬间转化为文字；
 
 2、考虑到用户使用舒适性，我们专门设计了欢迎卡片和背景图；
 
@@ -60,7 +60,7 @@
 
 ![](img/9b2bb098d0d0aa124b084cac16243959.png)
 
-[小红书爆款文案视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UeCDbIpOIoZtxMxi5gwclgMpn5e)
+[📕爆款文案视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UeCDbIpOIoZtxMxi5gwclgMpn5e)
 
 **Bot使用截图：**
 

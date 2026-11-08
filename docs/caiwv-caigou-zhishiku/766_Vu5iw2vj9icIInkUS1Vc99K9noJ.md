@@ -20,4 +20,4 @@
 
 [SCMP供应链管理专家认证详解](https://rxq0zfnkm77.feishu.cn/wiki/Uc0Swwc2iiNFGVkAx7cc8rSXntb)
 
-左侧加微信可以领取以上的试听课
+左侧加🛰️可以领取以上的试听课

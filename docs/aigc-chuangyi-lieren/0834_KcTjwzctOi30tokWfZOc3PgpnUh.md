@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679111&idx=1&sn=e1c44e324df4e433cf35d673f312cb63&scene=21&poc_token=HFjXcmmjW53GEU5sU4lO5Kx6W-XhFhJxTnyeT5FN)qq.com/s?__biz=Mz...
 
-> 来源-公众号：数字生命卡兹克
+> 来源-👸号：数字生命卡兹克
 
 昨天写了一篇关于在 [扣子上使用Skills的文章 ](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679068&idx=1&sn=6b3ae5770982ec685d57fe8a006e6317&scene=21#wechat_redirect)。
 

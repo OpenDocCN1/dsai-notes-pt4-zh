@@ -6,7 +6,7 @@
 
 > ⏰ 原创 曾嵘 曾嵘胡扯的地方2024年12月31日 21:59  湖北
 
-上周我写了 [微信视频号互选平台 VS 星图游戏发行人](https://huchegames.feishu.cn/wiki/VvOZwQdC0itXIqkhREdcVrbhnRg)这篇文章，其中谈到：
+上周我写了 [🛰️视频号互选平台 VS 星图游戏发行人](https://huchegames.feishu.cn/wiki/VvOZwQdC0itXIqkhREdcVrbhnRg)这篇文章，其中谈到：
 
 > 直播对于短视频来说，是一个相对较新的业务，平台自然会提供一定的流量扶持。但现在说直播方式已经全面超越短视频推广，还为时过早。
 

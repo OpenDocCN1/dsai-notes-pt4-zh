@@ -212,7 +212,7 @@ HaiTao's  博客的目录：
 
 +   跑步的时候听了阿娇和孟岩对话的那期播客，感谢阿娇，让我知道一个把事情做到极致的人是什么样子的 -- 2025.10.28
 
-+   在小红书每加一个 Tag 标签，都会让我有为了获取流量而发帖的不适感，我决定不加任何 Tag -- 2025.10.23
++   在📕每加一个 Tag 标签，都会让我有为了获取流量而发帖的不适感，我决定不加任何 Tag -- 2025.10.23
 
 +   很神奇的一个事情，中医爷爷说我肝火旺，给我开了几包疏肝解郁茶，今天泡了一包，原以为会很苦，尝了一口，竟然还挺好喝 ？！-- 2025.10.23
 
@@ -232,7 +232,7 @@ HaiTao's  博客的目录：
 
 +   假期结束以后我才发现这个是一个对信息摄取充满狂热的人，今天一天在看过去一周世界新发的产品和技术 -- 2025.10.9
 
-+   国[庆假期在外](https://www.xiaohongshu.com/user/profile/5d4ac7710000000016001a9d?apptime=1747451991&appuid=5d4ac7710000000016001a9d&share_id=3424c46c2d18455cb24f97debe6473ce&xhsshare=CopyLink&xsec_source=app_share&xsec_token=YBFad5c85HRQftnfrqD2xBtvv2TDDrRTUHsM5OlI1PQXE%3D)面疯狂的玩，摄影，打卡，去了很多地方， 见了很多想见的人，照片都更新在小红书啦！欢迎光临我的小红书主页 -- 2025.10.9
++   国[庆假期在外](https://www.xiaohongshu.com/user/profile/5d4ac7710000000016001a9d?apptime=1747451991&appuid=5d4ac7710000000016001a9d&share_id=3424c46c2d18455cb24f97debe6473ce&xhsshare=CopyLink&xsec_source=app_share&xsec_token=YBFad5c85HRQftnfrqD2xBtvv2TDDrRTUHsM5OlI1PQXE%3D)面疯狂的玩，摄影，打卡，去了很多地方， 见了很多想见的人，照片都更新在📕啦！欢迎光临我的📕主页 -- 2025.10.9
 
 +   “我不知道的东西还有很多很多”，这真是一句充满力量感的话 -- 2025.9.27
 
@@ -641,7 +641,7 @@ HaiTao's  博客的目录：
 | [通往AGI之路](https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?chunked=false) | 全世界最好的 AI 学习知识库，从里面学习了很大，学习 AI 从这个知识库开启 |
 | [LangGPT 结构化提示词](https://langgptai.feishu.cn/wiki/RXdbwRyASiShtDky381ciwFEnpe) | 高质Prompt合集 |
 | [量子位智库](https://jkhbjkhb.feishu.cn/wiki/W5D7wuDcbiPXDLkaRLQcAJpOn8f?fromScene=spaceOverview) | 查看 AI 领域最新的研究报告 |
-| [小红书知识库数字乐园](https://g8ekpu7h0l.feishu.cn/wiki/JU7KwfZkuiJmlzkRc5ZcOwwrnxd) | 查看小红书月报、行业数据、行业报告、小红书长文干活于海泽 |
+| [📕知识库数字乐园](https://g8ekpu7h0l.feishu.cn/wiki/JU7KwfZkuiJmlzkRc5ZcOwwrnxd) | 查看📕月报、行业数据、行业报告、📕长文干活于海泽 |
 | [SUGA苏嘉出海小组内容合集](https://identitygraph.feishu.cn/base/bascn6ugiVAu22dtQHggUIbxXVg?table=tbl6yOWLkBRg9E0r&amp;view=vewIQ6Jj9T) | 在做AI 出海出海的朋友值得看看，汇集了研究报告、热门工具、SEO技巧等等 |
 | [程序员第二曲线手册](https://symbol.iamkasong.com/docs/idea/structure.html) | 前 360、字节跳动技术专家， |
 
@@ -680,8 +680,8 @@ HaiTao's  博客的目录：
 
 +   即刻：[HaitaoHu](https://okjk.co/XAGbC3)（不太发内容，但爱刷，关注了很多厉害的朋友
 
-+   小红书：[海涛](https://www.xiaohongshu.com/user/profile/5d4ac7710000000016001a9d?xsec_token=YBFad5c85HRQftnfrqD2xBtvv2TDDrRTUHsM5OlI1PQXE=&xsec_source=app_share&xhsshare=CopyLink&appuid=5d4ac7710000000016001a9d&apptime=1747451991&share_id=3424c46c2d18455cb24f97debe6473ce)（更新一些我的摄影集
++   📕：[海涛](https://www.xiaohongshu.com/user/profile/5d4ac7710000000016001a9d?xsec_token=YBFad5c85HRQftnfrqD2xBtvv2TDDrRTUHsM5OlI1PQXE=&xsec_source=app_share&xhsshare=CopyLink&appuid=5d4ac7710000000016001a9d&apptime=1747451991&share_id=3424c46c2d18455cb24f97debe6473ce)（更新一些我的摄影集
 
 +   邮箱：Openhaitao@gmail.com
 
-+   我的微信是：ChatHHT（如果你也是 i 人可以不备注任何信息
++   我的🛰️是：ChatHHT（如果你也是 i 人可以不备注任何信息

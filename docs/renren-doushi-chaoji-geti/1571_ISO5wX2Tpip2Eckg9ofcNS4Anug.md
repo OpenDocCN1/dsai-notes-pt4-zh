@@ -4,7 +4,7 @@
 
 > 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/k_qJgRNZKkQyFyuTzpfUGA)q.com/s/k_qJgRNZ...
 
-Laf 公众号已接入了 GPT4，完全免费！欢迎前来调戏👇
+Laf 👸号已接入了 GPT4，完全免费！欢迎前来调戏👇
 
 ![](img/bf1f514f170e69b7c85b5c96866d4d06.png)
 
@@ -132,6 +132,6 @@ claude2: https://github.com/zuoFeng59556/claude2
 
 💻开发者论坛： https://forum.laf.run
 
-关注 Laf 公众号与我们一同成长👇👇👇
+关注 Laf 👸号与我们一同成长👇👇👇
 
 ![](img/bbb9f8a3634d574cb9688dc126d6b531.png)

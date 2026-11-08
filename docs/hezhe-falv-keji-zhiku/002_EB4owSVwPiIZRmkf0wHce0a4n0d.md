@@ -12,7 +12,7 @@
 
 # 🎟️ 积分体系
 
-> 积分兑换方法：点击[🔍积分查询查](https://legalstudio.feishu.cn/wiki/EB4owSVwPiIZRmkf0wHce0a4n0d#TCVJdujpYo5PvHxNVixco1r6nYg)询自己的积分，随后联系社区团队（微信：18825075686）进行兑换。如果积分不够，则按照 10:1 的比率补足差价。如果积分记录有所遗漏，可联系社区团队反馈。
+> 积分兑换方法：点击[🔍积分查询查](https://legalstudio.feishu.cn/wiki/EB4owSVwPiIZRmkf0wHce0a4n0d#TCVJdujpYo5PvHxNVixco1r6nYg)询自己的积分，随后联系社区团队（🛰️：18825075686）进行兑换。如果积分不够，则按照 10:1 的比率补足差价。如果积分记录有所遗漏，可联系社区团队反馈。
 
 | 共建行为 | 数量 | 社区积分 |
 | --- | --- | --- |
@@ -78,7 +78,7 @@
 
 > **产品福利及优惠包：**[法律人常用的](https://legalstudio.feishu.cn/wiki/VAItwomkJiW5sWk7Gn0cOtvEnfh?fromScene=spaceOverview#R5D4dZ71yoDVrNxTk0Ec8sSznof)法律科技/效率工具福利及优惠方案，详情可咨询社区团队。
 
-> 欢迎共创伙伴为社区提供各类产品福利或优惠，与社区团队探讨更多合作机制 📲 微信：18825075686
+> 欢迎共创伙伴为社区提供各类产品福利或优惠，与社区团队探讨更多合作机制 📲 🛰️：18825075686
 
 # **🔍 积分查询**
 

@@ -34,7 +34,7 @@
 
 1.  [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
 
-1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/QQEhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材）
+1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材）
 
 1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
 
@@ -356,7 +356,7 @@ B.主角不接受系统(主角与系统拉扯对抗可以成为爽点)
 
 # 三、Prompt完整内容
 
-## # Role : 系统文小说家，Markdown格式，可以找我微信发你~（韭菜Y日记）
+## # Role : 系统文小说家，Markdown格式，可以找我🛰️发你~（韭菜Y日记）
 
 ```
 **#** Role：系统文小说家

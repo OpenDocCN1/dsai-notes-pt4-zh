@@ -6,11 +6,11 @@
 
 **案例2：**尹星河
 
-[借助AI工作流，8个月做了15家小红书虚拟店铺，我整理出这套可快速起店的SOP](https://o7nsrridj4.feishu.cn/wiki/XNJhwo4yWizaqnkFDcgch5mTnSe)
+[借助AI工作流，8个月做了15家📕虚拟店铺，我整理出这套可快速起店的SOP](https://o7nsrridj4.feishu.cn/wiki/XNJhwo4yWizaqnkFDcgch5mTnSe)
 
 **案例3：**Summer Xia
 
-[新人第一次航海从0做小红书虚拟资料1.5万+复盘干货帖](https://ai.feishu.cn/docx/DFKTdd1HioTLl1xYEMdcYQxFnpf)
+[新人第一次航海从0做📕虚拟资料1.5万+复盘干货帖](https://ai.feishu.cn/docx/DFKTdd1HioTLl1xYEMdcYQxFnpf)
 
 **表格1：**[全品类数据](https://shengcaiyoushu01.feishu.cn/wiki/BChOwpdGSiv3e1koUsgcFJdxnVd)
 

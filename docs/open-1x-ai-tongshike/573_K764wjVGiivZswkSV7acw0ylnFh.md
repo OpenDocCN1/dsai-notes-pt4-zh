@@ -120,7 +120,7 @@ DomoAI 视频一键变成动漫风格 https://blog.csdn.net/sd1232/article/detai
 
 ![](img/0d4d9ee4769d452df74d08a7339aed5b.png)
 
-### 日常交流微信群
+### 日常交流🛰️群
 
 ![](img/45383ec00025e0841e553e6aa46113c9.png)
 

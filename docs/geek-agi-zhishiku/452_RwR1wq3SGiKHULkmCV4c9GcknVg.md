@@ -8,7 +8,7 @@
 
 **·向量光年科技有限公司创始人**
 
-·《开源AI项目落地》公众号及社群主理人
+·《开源AI项目落地》👸号及社群主理人
 
 专注于AI产品开发落地，移动端、PC端软件快速高质量交付
 
@@ -141,6 +141,6 @@ python inference.py \    --reference_image_path &quot;./test_samples/short_case/
 
 https://github.com/tencent-ailab/V-Express
 
-关注「 开源AI项目落地 」公众号
+关注「 开源AI项目落地 」👸号
 
 与AI时代更靠近一点

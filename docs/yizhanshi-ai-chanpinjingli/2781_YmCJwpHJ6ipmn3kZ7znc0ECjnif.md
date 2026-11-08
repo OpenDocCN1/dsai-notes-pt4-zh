@@ -88,7 +88,7 @@
 
 +   https://arxiv.org/pdf/2509.24663
 
-+   SOAR大赛: 关注公众号次条及OpenBMB开源社区视频号
++   SOAR大赛: 关注👸号次条及OpenBMB开源社区视频号
 
 >
 

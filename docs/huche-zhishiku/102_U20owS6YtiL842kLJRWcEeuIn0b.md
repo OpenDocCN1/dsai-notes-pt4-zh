@@ -50,7 +50,7 @@ OptimizerAI 的提示词非常简单，直接用英文表述即可。
 
 +   [DeepSeek 服务器繁忙？这里有免费解决方案](https://huchegames.feishu.cn/wiki/UKGZwAxKuiPsCukaDOhcuIi9nMc)
 
-+   [DeepSeek 不卡了，满血联网，还能搜索微信公众号内容](https://huchegames.feishu.cn/wiki/PmXmwNchBiRykDkxtcTcupK9nzH)
++   [DeepSeek 不卡了，满血联网，还能搜索🛰️👸号内容](https://huchegames.feishu.cn/wiki/PmXmwNchBiRykDkxtcTcupK9nzH)
 
 背景音乐生成：[利用 Riffusion AI 生成游戏背景音乐](https://huchegames.feishu.cn/wiki/Ll4mwULJgiLiLzkwsxbcLsaEnzL)
 

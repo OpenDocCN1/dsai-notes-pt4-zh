@@ -4,7 +4,7 @@
 
 > 原创：王平安
 
-> 公众号：AI工具派
+> 👸号：AI工具派
 
 > 原文链接：https://mp.weixin.qq.com/s/Pik7Xfrf_n_YEE-MgHtEuQ
 
@@ -12,7 +12,7 @@
 
 > 🌟 工具名称：D**eepTranslate
 
-> **🌐 使用环境：无需梯子 🪜
+> **🌐 使用环境：无需🪜 🪜
 
 > 🔗 工具地址：https://deeptranslate.ai/zh-CN
 

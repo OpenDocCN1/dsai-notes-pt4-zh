@@ -1,4 +1,4 @@
-# 零基础手搓微信小程序
+# 零基础手搓🛰️小程序
 
 > 来源：[https://yunyinghui.feishu.cn/docx/En24ditX5ohubWxXyiVcpJOXnvg](https://yunyinghui.feishu.cn/docx/En24ditX5ohubWxXyiVcpJOXnvg)
 
@@ -8,7 +8,7 @@
 
 https://mp.weixin.qq.com
 
-## 2、下载微信开发者工具
+## 2、下载🛰️开发者工具
 
 https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
@@ -38,13 +38,13 @@ https://cursor.com/home?from=agents
 
 ![](img/b7e4334e9724f67e045abcf703a8fb3f.png)
 
-四个板块都需要完成通过。其中微信认证会官方会收取一定的费用，有上线需求的同学再考虑
+四个板块都需要完成通过。其中🛰️认证会官方会收取一定的费用，有上线需求的同学再考虑
 
 ![](img/1dbaec66aa935d371e01755275810df9.png)
 
 ### 1、小程序开发平台
 
-微信开发者工具下载地址：https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
+🛰️开发者工具下载地址：https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 选择自己系统对应的版本，本文以Windows64的版本为例
 
@@ -169,7 +169,7 @@ ssh -L 3456:localhost:3456 你的linux系统电脑名称@localhost -p 22
 
 以上演示的是claude code cli+deepseek实现，比较适合有点开发基础的，为了给予大家最大的方便，所以本节课采用了cursor作为演示开发工具。
 
-首先打开微信开发者工具
+首先打开🛰️开发者工具
 
 ![](img/363c6b476d3d97bea253c9e5d7d89595.png)
 
@@ -245,7 +245,7 @@ ssh -L 3456:localhost:3456 你的linux系统电脑名称@localhost -p 22
 
 [NVIDIA_Overlay_xPvAHf3ral.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JRGPbBgpQoxnn8xRpw4cyMLanFd)
 
-1.  不过，由于转盘我么没有明显的图片，所以黄啊码将其点击按钮，并且优化了简单优化了版面，最终一个最简单的版本就已经完成了，这个时候就可以进行实机测试或者发布。用微信扫描生成出来的二维码，也可以分享给朋友进行测试。
+1.  不过，由于转盘我么没有明显的图片，所以黄啊码将其点击按钮，并且优化了简单优化了版面，最终一个最简单的版本就已经完成了，这个时候就可以进行实机测试或者发布。用🛰️扫描生成出来的二维码，也可以分享给朋友进行测试。
 
 ![](img/88e7591edfe2f5b4d8e85b7a583100bd.png)
 
@@ -257,7 +257,7 @@ ssh -L 3456:localhost:3456 你的linux系统电脑名称@localhost -p 22
 
 ![](img/ad648d76d710a002285801e2b423f258.png)
 
-进入 [小程序管理平台](https://mp.weixin.qq.com/wxamp/wacodepage/getcodepage?token=1980708763&lang=zh_CN)，点击版本管理→开发版本中→对应版本提交审核→提交完之后，（可以在审批版本中查看审核结果。审核结果也可以在微信的【服务通知】上看到。审核官方给定的是1~7天，但是大部分时候一天左右就能审核完毕）→审核成功后，在版本管理中，点击审核版本，选择全量发布/灰度发布（全量发布是指将小程序的新版本一次性推送给所有用户，灰度发布是指将小程序的新版本先发布给部分用户。）
+进入 [小程序管理平台](https://mp.weixin.qq.com/wxamp/wacodepage/getcodepage?token=1980708763&lang=zh_CN)，点击版本管理→开发版本中→对应版本提交审核→提交完之后，（可以在审批版本中查看审核结果。审核结果也可以在🛰️的【服务通知】上看到。审核官方给定的是1~7天，但是大部分时候一天左右就能审核完毕）→审核成功后，在版本管理中，点击审核版本，选择全量发布/灰度发布（全量发布是指将小程序的新版本一次性推送给所有用户，灰度发布是指将小程序的新版本先发布给部分用户。）
 
 ## c、小程序功能优化
 
@@ -269,7 +269,7 @@ ssh -L 3456:localhost:3456 你的linux系统电脑名称@localhost -p 22
 
 2、构建数据库每张食谱的照片，在测试号中，cursor会建立本地存储，进行每张照片的管理，在云开发中，这些照片会存储到云端服务器上。
 
-3、扒取对应食谱的照片：由于国内的反扒手段都做得比较好，科学上网的国外扒取手段会因为网络问题时常崩溃，这里提供一种通过cursor生成的代码，并反复换源等方式解决，比较麻烦，这里就直接给大家贴代码。
+3、扒取对应食谱的照片：由于国内的反扒手段都做得比较好，🪜的国外扒取手段会因为网络问题时常崩溃，这里提供一种通过cursor生成的代码，并反复换源等方式解决，比较麻烦，这里就直接给大家贴代码。
 
 ```
 import requests

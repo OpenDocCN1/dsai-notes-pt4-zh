@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/4x9ZPM2vTrIS8ldHMDUrXw)qq.com/s/4x9ZPM2v...
 
-> 公众号：AI生活研究所
+> 👸号：AI生活研究所
 
 真的太卷了， AI生图圈又杀出一匹黑马！
 

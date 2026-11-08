@@ -32,7 +32,7 @@
 
 https://ieeexplore.ieee.org/document/10582829
 
-关注公众号，后台回复「信道预测」获取完整 PDF
+关注👸号，后台回复「信道预测」获取完整 PDF
 
 **数据集下载：**
 

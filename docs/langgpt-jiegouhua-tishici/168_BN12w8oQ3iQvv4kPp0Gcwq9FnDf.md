@@ -6,7 +6,7 @@
 
 ![](img/cf7c3bc36a4bde1b7d4af3d29ec88cb1.png)
 
-**PPT和总结，直播结束后会发布在**[⭐ 结构化提示词](https://langgptai.feishu.cn/wiki/RXdbwRyASiShtDky381ciwFEnpe)云中江树」微信公众号和 AI 知识库：
+**PPT和总结，直播结束后会发布在**[⭐ 结构化提示词](https://langgptai.feishu.cn/wiki/RXdbwRyASiShtDky381ciwFEnpe)云中江树」🛰️👸号和 AI 知识库：
 
 ## 单词记忆提示词
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://docs.feishu.cn/docx/ELxrdoPCJo7GH9xdf6rcuZB2nLb](https://docs.feishu.cn/docx/ELxrdoPCJo7GH9xdf6rcuZB2nLb)
 
-以此纪念我的第一个公众号
+以此纪念我的第一个👸号
 
 ![](img/57ccd7d8fbc1347e35800e66aee6d6f9.png)
 

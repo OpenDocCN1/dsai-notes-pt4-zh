@@ -1,6 +1,6 @@
 # LLM在推荐系统重排序中的应用
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/FwNHdQQfUo1scBx2mpacpAvVn7d](https://qqs7y1hozd1.feishu.cn/docx/FwNHdQQfUo1scBx2mpacpAvVn7d)
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/FwNHd🐧fUo1scBx2mpacpAvVn7d](https://qqs7y1hozd1.feishu.cn/docx/FwNHd🐧fUo1scBx2mpacpAvVn7d)
 
 # **简 介**
 

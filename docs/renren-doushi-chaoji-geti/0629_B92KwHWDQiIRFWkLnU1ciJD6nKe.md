@@ -1,16 +1,16 @@
-# 2025-03-14小红书一键提取图文标题到飞书多维表格
+# 2025-03-14📕一键提取图文标题到飞书多维表格
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/OrFCd1kFjovBz0xOTRrcKOjOnWd](https://xuqiwei1986.feishu.cn/docx/OrFCd1kFjovBz0xOTRrcKOjOnWd)
 
 > 🔗 原文链接： h[ttps://scys.com/ar](https://scys.com/articleDetail/xq_topic/4848115458812548)ticleDetail/xq_t...
 
-各位生财的圈友，大家好，我是富贵。
+各位赚钱的圈友，大家好，我是富贵。
 
-长安文化创始人，公司的主营业务是小红书高客单线索类，目前自持素人矩阵号3000➕，MCN合作达人10000➕。
+长安文化创始人，公司的主营业务是📕高客单线索类，目前自持素人矩阵号3000➕，MCN合作达人10000➕。
 
-最近又和生财联合创办了AI MCN公司，需要大量的内容创作，近期在AI工作流上动了很多脑筋。
+最近又和赚钱联合创办了AI MCN公司，需要大量的内容创作，近期在AI工作流上动了很多脑筋。
 
-因为是流量型公司，所以对技术的一切理解都基于如何更好的降本增效，为了提高公司小伙伴们的效率，一直在“小红书黑科技”上，苦心钻研，外部采买➕自主研发，属于资深的老韭菜了。
+因为是流量型公司，所以对技术的一切理解都基于如何更好的降本增效，为了提高公司小伙伴们的效率，一直在“📕黑科技”上，苦心钻研，外部采买➕自主研发，属于资深的老韭菜了。
 
 因为我们的技术同学不是专业搞AI的，也许文档里会有很多本可以简化的弯路，如果AI行业相关的圈友，还请大家帮忙多提建议呀。
 
@@ -18,7 +18,7 @@
 
 总流程：核心逻辑就是通过快捷指令调用API接口执行coze工作流，需要使用coze的token+workflowid
 
-第一步：然后coze工作流做的工作是识别app的短连接还原成长连接或者复制的就是长连接，然后请求小红书接口第二步：返回相关参数，通过JavaScript脚本整合json保存变量然后调用飞书表格API接口
+第一步：然后coze工作流做的工作是识别app的短连接还原成长连接或者复制的就是长连接，然后请求📕接口第二步：返回相关参数，通过JavaScript脚本整合json保存变量然后调用飞书表格API接口
 
 第三步：飞书表格接口需要授权+请求表格base路径+表格id
 
@@ -26,7 +26,7 @@
 
 第五步：根据我共享的表格模版会自动进行标题和文案的AI（DeepSeek）创作
 
-最终效果呈现苹果手机点击小红书笔记链接，一键同步到飞书多维表格，因为教程是刚写，所有还有很多复杂的场景都可以实现，比如直接拆解爆款视频，爆款图文，进行二创，根据比较生成词云等等，待完善
+最终效果呈现苹果手机点击📕笔记链接，一键同步到飞书多维表格，因为教程是刚写，所有还有很多复杂的场景都可以实现，比如直接拆解爆款视频，爆款图文，进行二创，根据比较生成词云等等，待完善
 
 ## **一、飞书账号准备**
 
@@ -52,7 +52,7 @@
 
 1.打开模板链接（需要运营提供模板链接）。要先登录飞书账号在打开哈。
 
-[小红书笔记coze笔记收藏](https://ccn5rcywl0hv.feishu.cn/base/IWOYb11Mxa5vRhsfF8ScIZtknqd?from=from_copylink)
+[📕笔记coze笔记收藏](https://ccn5rcywl0hv.feishu.cn/base/IWOYb11Mxa5vRhsfF8ScIZtknqd?from=from_copylink)
 
 2.点击上面的模板链接后，稍等一会会自动弹出模板弹框，点击‘使用该模板’。
 
@@ -194,7 +194,7 @@ return ret;
 
 ![](img/ba3aeb63f62f0c4585aceec9f7ccc964.png)
 
-## 随便填写一个小红书笔记链接
+## 随便填写一个📕笔记链接
 
 [htt](https://www.xiaohongshu.com/explore/67bc5f55000000000900e3dc?xsec_source=pc_user&xsec_token=ABg1aRY_LIGGAmq12SC74oFzz6Ig-ZCelcWkBM2te5YyA=)ps://www.xiaohongshu.com/explore/67bc5f55000000000900e3dc?xsec_token=ABg1aRY_LIGGAmq12SC74oFzz6Ig-ZCelcWkBM2te5YyA=&xsec_source=pc_user
 
@@ -224,7 +224,7 @@ return ret;
 
 ### 五、获取快捷指令
 
-5.1、在 苹果手机浏览器或微信 上打开链接，点击获取快捷指令
+5.1、在 苹果手机浏览器或🛰️ 上打开链接，点击获取快捷指令
 
 [h](https://www.icloud.com/shortcuts/391e0cd9346c4fdf8fa100ae37e573ee)ttps://www.icloud.com/shortcuts/391e0cd9346c4fdf8fa100ae37e573ee
 
@@ -260,9 +260,9 @@ return ret;
 
 ![](img/b7798b75e635512c560e2eb57009ea9b.png)
 
-### 七、小红书使用操作
+### 七、📕使用操作
 
-7.1、点击小红书笔记右上角
+7.1、点击📕笔记右上角
 
 ![](img/cdf2d9296a459cce6d41addb02032170.png)
 
@@ -326,7 +326,7 @@ Token 是否正确
 
 **提示词模板： ****↓↓↓**
 
-根据one.csv文件是小红书笔记内容，请分析出笔记的内容结构、标题公式、情感分析、关键词，标签分布、智能打标签、笔记内容结构。
+根据one.csv文件是📕笔记内容，请分析出笔记的内容结构、标题公式、情感分析、关键词，标签分布、智能打标签、笔记内容结构。
 
 1.标题公式：根据笔记标题划分笔记类型，分析标题特点和结构，最好能总结出公式、常用的关键词
 

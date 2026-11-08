@@ -9140,7 +9140,7 @@ natsume rin,夏目凛,1224
 
 takafumi,高文,1224
 
-weibo logo,微博标志,1224
+weibo logo,🧣标志,1224
 
 yuffie kisaragi,如月优菲,1224
 

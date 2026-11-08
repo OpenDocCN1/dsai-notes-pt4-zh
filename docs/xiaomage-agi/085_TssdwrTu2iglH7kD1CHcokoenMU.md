@@ -1,4 +1,4 @@
-# ChatGPT专属网页版（免翻墙）
+# ChatGPT专属网页版（免🪜）
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/K4zodrZJloRgbJx9zq2ckRtBnSb](https://xmgtoagi.feishu.cn/docx/K4zodrZJloRgbJx9zq2ckRtBnSb)
 

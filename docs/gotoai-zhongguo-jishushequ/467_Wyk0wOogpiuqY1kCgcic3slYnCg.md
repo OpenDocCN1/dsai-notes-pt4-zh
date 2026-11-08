@@ -158,7 +158,7 @@ curl -fsSL https://raw.githubusercontent.com/miaoxworld/OpenClawInstaller/main/c
 
 +   Slack
 
-+   微信 (WeChat)
++   🛰️ (WeChat)
 
 +   iMessage (仅 macOS)
 

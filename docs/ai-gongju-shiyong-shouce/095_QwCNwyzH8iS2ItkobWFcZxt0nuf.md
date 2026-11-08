@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/GepadQeU8ohwJjxLPcOc723kn0e](https://my.feishu.cn/docx/GepadQeU8ohwJjxLPcOc723kn0e)
 
-> 首先推荐一个AI工具，免梯子直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
+> 首先推荐一个AI工具，免🪜直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
 
 # 你来晚了，下面这些内容已失效。这家软件公司噶了。
 
@@ -58,4 +58,4 @@
 
 > 我是热爱生活的小黑子，热爱当下生活，永远忠于自己。
 
-# 建议读这个最新的版本：[微信上能用的MJ及教程](https://yw55ojhusnq.feishu.cn/wiki/WZbSwbbSOijAeTke1Qtcjiagn4e)
+# 建议读这个最新的版本：[🛰️上能用的MJ及教程](https://yw55ojhusnq.feishu.cn/wiki/WZbSwbbSOijAeTke1Qtcjiagn4e)

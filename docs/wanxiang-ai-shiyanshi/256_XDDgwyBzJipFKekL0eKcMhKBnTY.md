@@ -698,7 +698,7 @@ ls -lh ~/openclaw_backup_*.enc
 
 +   工具开发者 (Skill Developer)：负责为 OpenClaw 开发对接公司内部系统的插件。他们只能在“测试沙箱”中挂载和调试代码，无权将插件直接发布到生产环境。
 
-+   业务操作员 (Business Operator)：最终用户。他们只能通过特定的交互界面（如企业微信、飞书或定制 Web UI）向 OpenClaw 下达自然语言任务，无权修改 Agent 的底层配置或核心记忆。
++   业务操作员 (Business Operator)：最终用户。他们只能通过特定的交互界面（如企业🛰️、飞书或定制 Web UI）向 OpenClaw 下达自然语言任务，无权修改 Agent 的底层配置或核心记忆。
 
 ### 5.3 统一安全运营与合规审计 (SIEM 整合)
 

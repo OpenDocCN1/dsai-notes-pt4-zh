@@ -262,7 +262,7 @@ GPTs link:https://chat.openai.com/g/g-qmq9oyssx-vybn
 
 #### 20：把全部社交媒体信息喂给 GPT，造一个自己的分身
 
-分享一个 GPTs 玩法：把全部社交媒体信息喂给 GPT，造一个自己的分身，可以模仿自己的口吻写东西，也可以用于历史发表的总结和搜索，未来已来 会用到工具如下：- 创建个人 GPTs：https://chat.openai.com/gpts/editor - 导出全部 Tweet：https://twitter.com/settings/download_your_data… - 导出全部微博：https://chrome.google.com/webstore/detail/igilfpckopigflpafgoajlljpdhmoall?utm_source=ext_sidebar&hl=zh-CN
+分享一个 GPTs 玩法：把全部社交媒体信息喂给 GPT，造一个自己的分身，可以模仿自己的口吻写东西，也可以用于历史发表的总结和搜索，未来已来 会用到工具如下：- 创建个人 GPTs：https://chat.openai.com/gpts/editor - 导出全部 Tweet：https://twitter.com/settings/download_your_data… - 导出全部🧣：https://chrome.google.com/webstore/detail/igilfpckopigflpafgoajlljpdhmoall?utm_source=ext_sidebar&hl=zh-CN
 
 ![](img/685de56e2f5b2f4b662ba5563dcabc66.png)
 

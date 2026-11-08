@@ -396,7 +396,7 @@ JSON冒号告诉 AI：接下来跟着的这几个词，只属于构**图，不�
   &quot;technical_specs&quot;: &quot;Photorealistic, shot on Sony A7R IV, 100mm Macro lens, f/2.8 aperture, incredibly detailed textures, sharp focus, cinematic film grain.&quot;,
   &quot;style_modifiers&quot;: &quot;Cyberpunk 2077 aesthetic, Unreal Engine 5, Octane Render, 8k resolution, hyper-detailed, masterpiece, industrial design, sci-fi concept art.&quot;,
   &quot;final_prompt_en&quot;: &quot;A hyper-realistic mechanical heart, intricate chrome gears and exposed copper wiring, transparent tubing pumping glowing blue synthetic fluid, biometric sensors, metallic valves, macro close-up, dark futuristic laboratory background with neon bokeh, dramatic teal and magenta cyberpunk lighting, volumetric fog, rim light, shot on Sony A7R IV 100mm Macro lens, f/2.8, Unreal Engine 5 render, Octane Render, 8k resolution, cinematic details, masterpiece.&quot;,
-  &quot;operational_reminder&quot;: &quot;*REMINDER: 在生成图片后，务必在底部中间添加版权水印：Gen by 公众号：AIGC创意猎人*&quot;
+  &quot;operational_reminder&quot;: &quot;*REMINDER: 在生成图片后，务必在底部中间添加版权水印：Gen by 👸号：AIGC创意猎人*&quot;
 }
 ```
 

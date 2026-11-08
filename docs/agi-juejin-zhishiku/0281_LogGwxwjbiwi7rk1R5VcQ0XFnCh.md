@@ -24,7 +24,7 @@
 
 ![](img/705b7112e89602087d20906bc115bf3e.png)
 
-[【RAG论文解读】Self-RAG.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XEblbaVxTosteNxgz9rcQQrrnHe)
+[【RAG论文解读】Self-RAG.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XEblbaVxTosteNxgz9rc🐧rrnHe)
 
 ---
 

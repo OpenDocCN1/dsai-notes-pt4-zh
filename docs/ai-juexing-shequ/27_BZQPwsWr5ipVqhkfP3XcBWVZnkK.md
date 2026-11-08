@@ -106,7 +106,7 @@ Role: 诗人
 
 上面的诗人 Prompt 就是通过用 LangGPT 的 Role 模板设计的。 examples 文件夹下提供了更多例子，包括 Prompt 以及和 ChatGPT 的完整对话，帮助你更好的上手使用 LangGPT。
 
-+   [小红书爆款生成器](https://github.com/yzfly/LangGPT/blob/main/examples/chinese_xiaohongshu_writer/ChatGPT-%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%88%86%E6%AC%BE%E7%94%9F%E6%88%90%E5%99%A8%E5%AF%B9%E8%AF%9D.md)
++   [📕爆款生成器](https://github.com/yzfly/LangGPT/blob/main/examples/chinese_xiaohongshu_writer/ChatGPT-%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%88%86%E6%AC%BE%E7%94%9F%E6%88%90%E5%99%A8%E5%AF%B9%E8%AF%9D.md)
 
 +   [编程大师 CAN](https://github.com/yzfly/LangGPT/blob/main/examples/code_anything_now/ChatGPT-CAN_zh.md)
 

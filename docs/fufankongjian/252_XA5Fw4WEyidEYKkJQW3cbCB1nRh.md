@@ -73,7 +73,7 @@ LLaMA-Factory目前支持微调的模型及对应的参数量：
 ...
 ```
 
-> 上述数据截取自：Skywork：https://huggingface.co/datasets/Skywork/SkyPile-150B （注：需要开启科学上网才可以访问）
+> 上述数据截取自：Skywork：https://huggingface.co/datasets/Skywork/SkyPile-150B （注：需要开启🪜才可以访问）
 
 预训练数据通常来自于多样化的文本来源，以覆盖尽可能广泛的主题、语境和语言风格。这些数据可以是结构化的文本，也可以是非结构化的，比如新闻文章、科学文献等等，对于基于这样训练数据训练得到的模型，很难听懂人类下达的具体指令从而去完成复杂的任务，更多的是使用其文本的生成能力。
 
@@ -265,7 +265,7 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
 
 LLaMA Board提供了一个一站式的前端应用，支持微调、评估和对话功能，其可视化界面和零代码操作使得用户能够迅速熟悉并使用LLaMA Factory。这个工具对用户极其友好，便于快速上手。可以通过如下链接快速体验：
 
-+   huggingface：https://huggingface.co/spaces/hiyouga/LLaMA-Board （注：需要开启科学上网）
++   huggingface：https://huggingface.co/spaces/hiyouga/LLaMA-Board （注：需要开启🪜）
 
 +   modelscope： https://modelscope.cn/studios/hiyouga/LLaMA-Board/summary
 
@@ -317,11 +317,11 @@ LLaMA Board支持三种语言面板，分别是英语、俄语和中文，根据
 
 ![](img/e1b31c88ac9a5d16d5a481aed85df382.png)
 
-对于加载的模型，当在Model name中选择好某一个模型后，右侧的Model path栏中会自动填充其在GitHub上远程仓库的模型标识，**当**执行微调过程时会先执行模型下载的任务。默认是从Hugging Face进行模型的下载，所以如果想在线下载模型，需要确保当前的服务器上可以正常开启科学上网环境，否则会导致训练失败。
+对于加载的模型，当在Model name中选择好某一个模型后，右侧的Model path栏中会自动填充其在GitHub上远程仓库的模型标识，**当**执行微调过程时会先执行模型下载的任务。默认是从Hugging Face进行模型的下载，所以如果想在线下载模型，需要确保当前的服务器上可以正常开启🪜环境，否则会导致训练失败。
 
 ![](img/ae67b0bdd5e6745fe6bcb4c07e6263f9.png)
 
-如果不具备科学上网环境，还想通过在线的方式下载大模型，可以将模型下载源指向国内的ModelScope社区。这需要先中断当前的LLaMA-Board的后台服务，具体操作如下：
+如果不具备🪜环境，还想通过在线的方式下载大模型，可以将模型下载源指向国内的ModelScope社区。这需要先中断当前的LLaMA-Board的后台服务，具体操作如下：
 
 ```
     # Linux操作系统， 如果是 Windows 使用 `set USE_MODELSCOPE_HUB=1`
@@ -665,7 +665,7 @@ pip install transformers==4.37.2
 pip install accelerate==0.27.2
 ```
 
-> Accelerate官网文档：https://huggingface.co/docs/accelerate/index （注：需要开启科学上网）
+> Accelerate官网文档：https://huggingface.co/docs/accelerate/index （注：需要开启🪜）
 
 ![](img/2d349ac3b1cb18b875cafd75e8431b93.png)
 

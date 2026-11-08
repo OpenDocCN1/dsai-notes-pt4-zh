@@ -346,7 +346,7 @@ Sam Altman 表示，GPT-5 的性能提升幅度将超出预期，并警告称，
 
 > 拓展阅读：
 
-> https://mp.weixin.qq.com/s/9ZTg9lXVQQBffiJqhR15AQ
+> https://mp.weixin.qq.com/s/9ZTg9lXV🐧BffiJqhR15AQ
 
 > https://mp.weixin.qq.com/s/R15yODGUTUx8XKHJaemlBQ
 

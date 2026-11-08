@@ -4,7 +4,7 @@
 
 > 链接: [https://mp.weixin.](https://mp.weixin.qq.com/s/_bKy7yd_PLqCCkMVoRnv-g)qq.com/s/_bKy7yd_...
 
-> 来源：公众号：AGI Hunt
+> 来源：👸号：AGI Hunt
 
 刚刚，OpenAI 把 Codex 做成了一个独立的桌面应用， 这次，真的有点不一样。
 

@@ -16,7 +16,7 @@
 
 #### 零、前置工作
 
-需要git，科学上网， python3.8+ 环境。如果你不知道这些是什么的话，那这个方法不适合你。
+需要git，🪜， python3.8+ 环境。如果你不知道这些是什么的话，那这个方法不适合你。
 
 ####
 
@@ -56,7 +56,7 @@ git clone [https://github.com/Wi](https://github.com/Winfredy/SadTalker.git)nfre
 
 #### 三、下载SadTalker模型文件
 
-参照[《官方文档》](https://github.com/OpenTalker/SadTalker#-2-download-trained-models)有三种方式，其中百度网盘是不用翻墙的，模型文件涉及以下两个文件夹：
+参照[《官方文档》](https://github.com/OpenTalker/SadTalker#-2-download-trained-models)有三种方式，其中百度网盘是不用🪜的，模型文件涉及以下两个文件夹：
 
 +   [checkpoints](https://pan.baidu.com/s/1P4fRgk9gaSutZnn8YW034Q?pwd=sadt), 提取码: sadt
 
@@ -100,7 +100,7 @@ git clone [https://github.com/Wi](https://github.com/Winfredy/SadTalker.git)nfre
 
 ###
 
-### 运行方式二：Colab（需科学上网）
+### 运行方式二：Colab（需🪜）
 
 1.  访问 SadTalcker 的Colab链接，复制到自己的云端硬盘
 

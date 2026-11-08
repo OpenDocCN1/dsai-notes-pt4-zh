@@ -1,4 +1,4 @@
-# 小红书运营SOP全流程！
+# 📕运营SOP全流程！
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/HeSadsRGrouki2xdPwzccxW3nPU](https://xatc0v8uz5m.feishu.cn/docx/HeSadsRGrouki2xdPwzccxW3nPU)
 
@@ -12,13 +12,13 @@
 
 👇点击下方关注大叔 看最新干货！
 
-小红书做得好，SOP不能少！
+📕做得好，SOP不能少！
 
-一份完整的小红书SOP流程，可以让你更系统地了解小红书的运营，在实际操作中少走弯路！特别对于新人来说，比胡乱操作要好很多。
+一份完整的📕SOP流程，可以让你更系统地了解📕的运营，在实际操作中少走弯路！特别对于新人来说，比胡乱操作要好很多。
 
 但SOP虽好，更多是参考，不能完全不思考地去照搬，有些可以直接复用，有些需要调整，有些需要自己去优化总结，去建立自己账号运营的SOP流程。
 
-下面小红书运营的SOP流程，可以收藏，参考并优化。
+下面📕运营的SOP流程，可以收藏，参考并优化。
 
 ▼
 
@@ -48,7 +48,7 @@
 
 ![](img/56f54ab5377720460c2b94844ec4c3a0.png)
 
-**附小红书流量机制图：**
+**附📕流量机制图：**
 
 ![](img/883da021d60d0eae7dcd5ca3de7e6709.png)
 
@@ -58,9 +58,9 @@
 
 好了，以上内容希望对你有帮助。
 
-另外，现在的小红书，已经是品牌打造爆品的核心阵地，但是大家做小红书运营，依旧是存在四大痛点： 没有方向、没有流量、没有销量、没有方法。
+另外，现在的📕，已经是品牌打造爆品的核心阵地，但是大家做📕运营，依旧是存在四大痛点： 没有方向、没有流量、没有销量、没有方法。
 
-**小红书资料下载 👇**
+**📕资料下载 👇**
 
 ![](img/5ef57671b28b2e8877abf57e27aa5d9e.png)
 
@@ -68,7 +68,7 @@
 
 **★运营大纲★**
 
-**小红书：**
+**📕：**
 
 [**涨粉 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3478940295952187398#wechat_redirect)**| **[**违规 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3468944663007051780#wechat_redirect)**| **[**开店 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3468959683765977099#wechat_redirect)**| **[**直播 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3468952793262702595#wechat_redirect)**| **[**算法 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3468961748034633740#wechat_redirect)**| **[**变现 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3478946909530734593#wechat_redirect)**| **[**爆文 **](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDM1NTI3Nw==&action=getalbum&album_id=3468955992023482377#wechat_redirect)**|**
 

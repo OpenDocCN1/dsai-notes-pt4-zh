@@ -2,7 +2,7 @@
 
 > 来源：[https://docs.feishu.cn/docx/XA6yd5mdJoYdTQxnvCacKvQvn7b](https://docs.feishu.cn/docx/XA6yd5mdJoYdTQxnvCacKvQvn7b)
 
-**-问：**微信的OpenID算个人信息吗，要加密存储吗，感觉大家都觉得它不算个人信息，太难了
+**-问：**🛰️的OpenID算个人信息吗，要加密存储吗，感觉大家都觉得它不算个人信息，太难了
 
 **-答1：**是**个人信息，非敏感个人信息**，控制措施看内部要求。OpenID是可变的。
 

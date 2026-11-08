@@ -1,18 +1,18 @@
-# QQ AI浏览器玩法
+# 🐧 AI浏览器玩法
 
 > 来源：[https://aiwarts101.feishu.cn/docx/GMNQdPTkIo2Cz4xarivchIwqnph](https://aiwarts101.feishu.cn/docx/GMNQdPTkIo2Cz4xarivchIwqnph)
 
-新版的QQ浏览器有三个AI入口，
+新版的🐧浏览器有三个AI入口，
 
 1，3是普通和AI搜索，2，4就是一大堆Agent助理，5是我们熟悉的元宝，自带DeepSeek R1和Hunyuan T1。
 
-搜索的速度很快，左侧是Chrome同款的AI总结模块和我们熟悉的传统搜索，还可以直接切换成公众号搜索，许愿之后可以加上视频号，右侧是熟悉的元宝AI搜索，继续许愿元宝可以上线信息源过滤的功能。
+搜索的速度很快，左侧是Chrome同款的AI总结模块和我们熟悉的传统搜索，还可以直接切换成👸号搜索，许愿之后可以加上视频号，右侧是熟悉的元宝AI搜索，继续许愿元宝可以上线信息源过滤的功能。
 
 ![](img/1d8086bcccbaca505d84b87c583f1996.png)
 
 [qq1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EOshbg9ypoLKWqxtkaacqdxDn1e)
 
-**新版QQ浏览器，还有我**之前吐槽OpenAI Atlas没有的标签页分屏、整理和搜索功能。
+**新版🐧浏览器，还有我**之前吐槽OpenAI Atlas没有的标签页分屏、整理和搜索功能。
 
 ![](img/3243d925867cd55eb8c254452e64a8fc.png)
 
@@ -76,7 +76,7 @@
 
 大部分会选择在侧边栏或者右下角加一个AI入口，避免在对话的过程中会挡住部分页面。
 
-QQ浏览器用的是小窗形式，会遮挡一部分粉，但好处是它会自动区分文件，网页和视频，还支持多开同时运行，不过目前不支持跨网页多网页的总结，这是我第四个愿望。
+🐧浏览器用的是小窗形式，会遮挡一部分粉，但好处是它会自动区分文件，网页和视频，还支持多开同时运行，不过目前不支持跨网页多网页的总结，这是我第四个愿望。
 
 ![](img/55576f369b90b3bdd88d3118ff4a4912.png)
 

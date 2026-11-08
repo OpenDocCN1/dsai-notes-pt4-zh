@@ -475,4 +475,4 @@ Response:
 
 **而你只需要输入你的初始行为和目标就够**了，这不就是Auto Prompt嘛！！
 
-关注公众号回复“ Auto Prompt”领取
+关注👸号回复“ Auto Prompt”领取

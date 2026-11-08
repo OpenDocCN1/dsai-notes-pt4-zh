@@ -1,16 +1,16 @@
-# 2025微信小游戏开发者大会（重庆）-会议资料整理
+# 2025🛰️小游戏开发者大会（重庆）-会议资料整理
 
 > 来源：[https://huchegames.feishu.cn/docx/Rf3bdBa1gog8Bmxy5Hvcoxyvnjg](https://huchegames.feishu.cn/docx/Rf3bdBa1gog8Bmxy5Hvcoxyvnjg)
 
 <https://huchegames.feishu.cn/sync/S5lfdyaWpsdZcnbOjtMcgmUvngc>
 
-2025 年 6 月 25 日，重庆。曾老师参加了2025年微信小游戏开发者大会•「渝」你同行。
+2025 年 6 月 25 日，重庆。曾老师参加了2025年🛰️小游戏开发者大会•「渝」你同行。
 
 以下是曾老师现场拍摄的部分 PPT 以及速记。
 
 其中也包含其他网友整理的资源，一并以链接形式提供。
 
-曾嵘胡扯的地方公众号也在现场发过速记，整理进入此文：https://mp.weixin.qq.com/s/IBvOFUEe4BcIngayRJuS0A
+曾嵘胡扯的地方👸号也在现场发过速记，整理进入此文：https://mp.weixin.qq.com/s/IBvOFUEe4BcIngayRJuS0A
 
 [胡扯社群指南](https://huchegames.feishu.cn/wiki/U6WhwNpMwiPWoMkaVPUcY1zmn0e)入胡扯社群后，可第一时间获取最新信息，入群欢迎阅读： 。
 
@@ -22,15 +22,15 @@
 
 ![](img/ed57a38e44c29dda1d288af6249fd602.png)
 
-## 微信小游戏官方报道
+## 🛰️小游戏官方报道
 
 https://mp.weixin.qq.com/s/81ksTQSCsgza6kLnxAkM0g
 
-## 游戏日报蔡一鸣：「别笑，你也过不了第二关」的爆火是可以复刻的吗 | 月活5亿的微信小游戏开发者大会
+## 游戏日报蔡一鸣：「别笑，你也过不了第二关」的爆火是可以复刻的吗 | 月活5亿的🛰️小游戏开发者大会
 
 https://mp.weixin.qq.com/s/35mC6j7Wpm9X2e9rL7eIFw
 
-## 罗斯基：SLG增长180%！机会方向在哪里？2025最新微信小游戏用户观察与品类玩法透视
+## 罗斯基：SLG增长180%！机会方向在哪里？2025最新🛰️小游戏用户观察与品类玩法透视
 
 https://mp.weixin.qq.com/s/nkDoRF_-veFWJ6IQaGILzQ
 
@@ -38,15 +38,15 @@ https://mp.weixin.qq.com/s/nkDoRF_-veFWJ6IQaGILzQ
 
 https://mp.weixin.qq.com/s/cbWwHOV3U04DIJx2W-dfbQ
 
-## 游理游据研究院：广州畅想互动彭琪雯：从 QQ 经典到微信爆款，连连看如何靠 “用户视角” 破局 IAA 赛道
+## 游理游据研究院：广州畅想互动彭琪雯：从 🐧 经典到🛰️爆款，连连看如何靠 “用户视角” 破局 IAA 赛道
 
 https://mp.weixin.qq.com/s/elCVSXP6iD_DBXuPHVFP3w
 
-## 游戏茶馆：《开心消消乐》：如何完成微信小游戏平台深度迁移与性能优化
+## 游戏茶馆：《开心消消乐》：如何完成🛰️小游戏平台深度迁移与性能优化
 
 https://mp.weixin.qq.com/s/lUEx84FaoctsbmEeZiXGNA
 
-## MinProgram：2025年微信小游戏开发者大会笔记：用户/玩法观察&获客变现
+## MinProgram：2025年🛰️小游戏开发者大会笔记：用户/玩法观察&获客变现
 
 https://mp.weixin.qq.com/s/jllqgPL_nD9y3TbiTtCcNQ
 

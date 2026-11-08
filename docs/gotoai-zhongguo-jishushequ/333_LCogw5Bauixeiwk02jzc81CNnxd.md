@@ -152,7 +152,7 @@ Cloud Studio 是腾讯云推出的一款基于浏览器的集成开发环境（I
 
 1.  [访问 Cloud Stu](https://cloudstudio.net/)dio 打开浏览器，访问 Cloud Studio。
 
-1.  登录或注册账号 点击页面右上角的 注册登录 按钮，使用微信等方式完成登录。
+1.  登录或注册账号 点击页面右上角的 注册登录 按钮，使用🛰️等方式完成登录。
 
 1.  创建应用 在页面上方的导航栏中找到并点击 创建应用。选择 从 Git 仓库导入 ，在项目地址栏输入 https://github.com/datawhalechina/all-in-rag.git 后回车，将会自动为你创建标题和描述。
 

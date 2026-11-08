@@ -44,9 +44,9 @@ CSDN DPU训练营：https://live.csdn.net/room/csdnnews/djRoSk4Q
 
 [阿里ATA社区Webinar AI网络为云释放澎湃算力：https://](https://n.dingtalk.com/dingding/live-room/index.html?roomId=jqCc1Dbvygn2xffP)n.dingtalk.com/dingding/live-room/index.html?roomId=jqCc1Dbvygn2xffP
 
-# 三、微信公众号：
+# 三、🛰️👸号：
 
-“NVIDIA 英伟达网络“ 为官方微信公众号，搜索关键字“DOCA”或“DPU” 即可看到相关资源。
+“NVIDIA 英伟达网络“ 为官方🛰️👸号，搜索关键字“DOCA”或“DPU” 即可看到相关资源。
 
 # 四、B站视频：
 

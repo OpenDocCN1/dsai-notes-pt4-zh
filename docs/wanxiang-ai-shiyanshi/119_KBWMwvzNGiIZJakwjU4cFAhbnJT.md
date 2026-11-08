@@ -34,7 +34,7 @@
 
 任务：帮我写下创意脚本，9 个分镜。
 
-那么完整的提示词就是：“我需要做一条 AI 创意短片，内容是“小米 Su7 Ultra、薯队长（小红书 IP 吉祥物）、冬季场景、春季场景、上海东方明珠塔"，我需要你为我写下这条短片的创意脚本，大概 9 个分镜。”
+那么完整的提示词就是：“我需要做一条 AI 创意短片，内容是“小米 Su7 Ultra、薯队长（📕 IP 吉祥物）、冬季场景、春季场景、上海东方明珠塔"，我需要你为我写下这条短片的创意脚本，大概 9 个分镜。”
 
 ![](img/295991205d42e18dff530fa148f4cf86.png)
 
@@ -170,7 +170,7 @@ low-angle close-up view focusing on the rear of the yellow Xiaomi SU7 Ultra， d
 
 先来思考下，我们这条创意短片的主体是什么？
 
-小米 SU7 Ultra 和小红书吉祥物（薯队长）。
+小米 SU7 Ultra 和📕吉祥物（薯队长）。
 
 如果你将小米 SU7 Ultra 的分镜提示词发送给 Midjourney，它能给你生成的效果是这样。
 
@@ -206,7 +206,7 @@ LoRA（Low-Rank Adaptation）模型是一种轻量化的深度学习微调技术
 
 ![](img/ea1eebab8b9cdbb4cd7e4d17aa33534a.png)
 
-同样，小红书吉祥物（薯队长）也有 Lora 模型。
+同样，📕吉祥物（薯队长）也有 Lora 模型。
 
 模型地址： [https://www.liblib.art/modelinfo/af0ed4695ca24a5f89f5818d3](https://link.uisdc.com/?redirect=https%3A%2F%2Fwww.liblib.art%2Fmodelinfo%2Faf0ed4695ca24a5f89f5818d3c6dad48%3Ffrom%3Dsd%26amp%3BversionUuid%3D18d2229333ca44ad9a86c3344b40024a)c6dad48?from=sd&versionUuid=18d2229333ca44ad9a86c3344b40024a
 
@@ -534,7 +534,7 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国微信 ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 3.**关于文档负责人言川：**优设 AIGC 合伙人、站酷黑 Z 认证作者、被评为优设年度十大作者及 AIGC 领域达人。同时，也是视觉中国签约的资深设计师。目前 AI 教程在全网累计阅读量超过 600 万，现在专注于研究 AIGC 工作流，并致力于让更多的互联网人用 AI 赋能职场，提升个人竞争力。
 
@@ -550,10 +550,10 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 好友（ID：zhangyuguo94s）
 
-**扫码加微信入微信群**
+**扫码加🛰️入🛰️群**
 
 ![](img/34545d64fb8c0aa89551e31b1f158b41.png)
 
-**微信扫码加好友**
+**🛰️扫码加好友**
 
-（微信 ID：yanchuan-ar）
+（🛰️ ID：yanchuan-ar）

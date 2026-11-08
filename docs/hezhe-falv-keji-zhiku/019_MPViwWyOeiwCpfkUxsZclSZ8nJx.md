@@ -139,4 +139,4 @@
 
 > 了解更多：[何者 HEZHER 法律科技社区](https://legalstudio.feishu.cn/wiki/NnAAw32YKiyitFkyBWqcPX2MnIE)
 
-> 合作请加微信：18825075686，备注真实姓名+所在机构+职位。
+> 合作请加🛰️：18825075686，备注真实姓名+所在机构+职位。

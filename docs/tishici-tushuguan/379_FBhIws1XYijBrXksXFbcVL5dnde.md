@@ -20,7 +20,7 @@
 
 [需求分析大师](https://vxc3hj17dym.feishu.cn/wiki/HtGwwmqYHij628kVCc0ciMFknpc)
 
-[小红书爆款文案](https://vxc3hj17dym.feishu.cn/wiki/Np08w9tXSiINy6k6o9KcvvVnnmW)
+[📕爆款文案](https://vxc3hj17dym.feishu.cn/wiki/Np08w9tXSiINy6k6o9KcvvVnnmW)
 
 [立项报告专家](https://vxc3hj17dym.feishu.cn/wiki/AWvEwfPBWil5Zrk8kZNcPF33ncf)
 

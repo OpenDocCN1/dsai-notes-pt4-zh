@@ -304,10 +304,10 @@ A 3D-rendered cartoon character, a cute cat, with a round, chubby body, standing
 
 > 欢迎通过以下方式交流：
 
-+   微信：eze_is
++   🛰️：eze_is
 
 +   即刻：@一泽Eze
 
-+   公众号：评论 / 后台留言
++   👸号：评论 / 后台留言
 
 <https://chatmemo.feishu.cn/sync/OXhxdlqqcsuEkObLUgsceuRinef>

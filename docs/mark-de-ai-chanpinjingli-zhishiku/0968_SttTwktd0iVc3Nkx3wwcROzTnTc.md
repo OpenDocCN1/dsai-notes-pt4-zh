@@ -106,7 +106,7 @@ T-800 robot's Taobao product detail page, showcasing: Three-view diagrams of the
 
 ![](img/7108d2a39fc9e9e7892ec85a973e2148.png)
 
-抖音、小红书、快手、视频号的UI、配色、风格，它全部都能抓到精髓。
+抖音、📕、快手、视频号的UI、配色、风格，它全部都能抓到精髓。
 
 ![](img/dd250e32a0859dd6b6ba5a5b4f9451ab.png)
 

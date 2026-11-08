@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/RtAqdrr2qouSZCxjQm2cZGbqnbe](https://aigcreative.feishu.cn/docx/RtAqdrr2qouSZCxjQm2cZGbqnbe)
 
-> 作者：努力的五花肉         公众号：RaDesign
+> 作者：努力的五花肉         👸号：RaDesign
 
 > 链接：https://mp.weixin.qq.com/s/X7N8fHpwuV9fDeMjgvOoEw
 

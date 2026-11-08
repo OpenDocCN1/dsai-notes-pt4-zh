@@ -2,11 +2,11 @@
 
 > 来源：[https://huchegames.feishu.cn/docx/JFZEdjHvYo1Ky1x3pqOc1VEXnJh](https://huchegames.feishu.cn/docx/JFZEdjHvYo1Ky1x3pqOc1VEXnJh)
 
-> 专栏所有内容均为曾老师手打，第一[关于曾老师](https://huchegames.feishu.cn/wiki/Fh3Uwg78yiijp1kgZNHcXMwtnWf)间了解专栏更新，可关注曾老师的公众号： 。
+> 专栏所有内容均为曾老师手打，第一[关于曾老师](https://huchegames.feishu.cn/wiki/Fh3Uwg78yiijp1kgZNHcXMwtnWf)间了解专栏更新，可关注曾老师的👸号： 。
 
 # DeepSeek 专栏
 
-[DeepSeek 不卡了，满血联网，还能搜索微信公众号内容](https://huchegames.feishu.cn/wiki/PmXmwNchBiRykDkxtcTcupK9nzH)
+[DeepSeek 不卡了，满血联网，还能搜索🛰️👸号内容](https://huchegames.feishu.cn/wiki/PmXmwNchBiRykDkxtcTcupK9nzH)
 
 [DeepSeek 服务器繁忙？这里有免费解决方案](https://huchegames.feishu.cn/wiki/UKGZwAxKuiPsCukaDOhcuIi9nMc)
 

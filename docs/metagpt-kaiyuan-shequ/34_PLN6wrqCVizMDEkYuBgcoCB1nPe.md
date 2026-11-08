@@ -24,7 +24,7 @@ A: 代码定时写死9点执行，可改每分钟执行，并有说明
 
 Q5. 爬取github网页，有时会报错aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
 
-A: 改成不需要翻墙的网页，或是有网络代理说明，代码层面最好加上重试机制
+A: 改成不需要🪜的网页，或是有网络代理说明，代码层面最好加上重试机制
 
 Q6. KeyError: 'WXPUSHER_TOKEN'
 
@@ -52,7 +52,7 @@ A11: MetaGPT 0.5.0版本在发布后发现有一些兼容性问题，特别是�
 
 Q11: 如何配置GLOBAL_PROXY来解决网络连接问题？
 
-A11: GLOBAL_PROXY配置用于设置网络代理，特别是在需要通过特定网络路径（例如科学上网）访问外部资源时。要配置GLOBAL_PROXY，您需要提供有效的代理服务器IP地址和端口。这个配置通常放在key.yaml文件中，格式如下：
+A11: GLOBAL_PROXY配置用于设置网络代理，特别是在需要通过特定网络路径（例如🪜）访问外部资源时。要配置GLOBAL_PROXY，您需要提供有效的代理服务器IP地址和端口。这个配置通常放在key.yaml文件中，格式如下：
 
 ```
 yamlCopy code
@@ -171,6 +171,6 @@ Me[MetaGPT 学习笔记](https://snq6prgid0.feishu.cn/docx/POMMdclW6omCuhxCpsncF
 
 ⭐3群的高山为task3专门录制了一期[b](https://blog.csdn.net/Attitude93/article/details/135625879?spm=1001.2014.3001.5502)站视频，里面有很多自己的感悟和理解特别棒，推荐给在task3上遇到困难的同学：MetaGPT课程3作业 MetaGPT课程3作业_哔哩哔哩_bilibili
 
-⭐1群的同学小张：【AI的未来 - AI Agent系列】【MetaGPT】3. 实现一个订阅智能体，订阅消息并打通微信和邮件
+⭐1群的同学小张：【AI的未来 - AI Agent系列】【MetaGPT】3. 实现一个订阅智能体，订阅消息并打通🛰️和邮件
 
-【AI的未来 - AI Agent系列】【MetaGPT】3. 实现一个订阅智能体，订阅消息并打通微信和邮件-CSDN博客
+【AI的未来 - AI Agent系列】【MetaGPT】3. 实现一个订阅智能体，订阅消息并打通🛰️和邮件-CSDN博客

@@ -36,7 +36,7 @@ MCP（Model Context Protocol，模型上下文协议） ，2024年11月底，由
 
 > 神兵加持：蓝耘元生代MaaS × Kimi K2 × Claude CodeUI
 
-> ✅ 成本直降！无需翻墙，npm一键安装
+> ✅ 成本直降！无需🪜，npm一键安装
 
 > ✅ 128K超长上下文，代码能力封神
 

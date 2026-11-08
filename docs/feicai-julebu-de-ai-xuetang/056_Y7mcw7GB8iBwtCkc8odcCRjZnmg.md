@@ -8,7 +8,7 @@
 
 > **B 站：** https://www.bilibili.com/video/BV1Wai2YNE7Q/
 
-> **小红书：**http://xhslink.com/a/XF6jYG1G55Z0
+> **📕：**http://xhslink.com/a/XF6jYG1G55Z0
 
 > **抖音：**https://v.douyin.com/CeiJNdapX/
 
@@ -34,7 +34,7 @@
 
 ### **多平台创作参考**
 
-框架整合了抖音、小红书、B站和YouTube四大主流平台的内容特点。针对不同平台的独特调性，AI大模型会相应调整创作建议，帮助内容更好地适应各平台特点。
+框架整合了抖音、📕、B站和YouTube四大主流平台的内容特点。针对不同平台的独特调性，AI大模型会相应调整创作建议，帮助内容更好地适应各平台特点。
 
 ### **自然的表达方式**
 
@@ -60,7 +60,7 @@
 
 **视频类型：**产品测评
 
-**目标平台：**小红书
+**目标平台：**📕
 
 **目标受众：**分享型
 
@@ -118,4 +118,4 @@
 
 > 我们期待你成为社群的第 n+1 位成员！
 
-> [社群微信群入口](https://feicaiclub.feishu.cn/wiki/JBNXwZ5QZidRtuk1HCCcvgZmnNg?from=from_copylink)（戳这里，跳转去社群微信群页面扫码入群）
+> [社群🛰️群入口](https://feicaiclub.feishu.cn/wiki/JBNXwZ5QZidRtuk1HCCcvgZmnNg?from=from_copylink)（戳这里，跳转去社群🛰️群页面扫码入群）

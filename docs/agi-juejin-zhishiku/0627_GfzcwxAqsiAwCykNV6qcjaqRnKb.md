@@ -20,7 +20,7 @@
 
 ### 下载安装
 
-通过文章顶部链接下载Trae IDE安装包，目前支持macOS，且需要自行解决科学上网问题，PAC的user-rule规则需要新增 *.trae.ai ，然后就可以正常登录IDE了
+通过文章顶部链接下载Trae IDE安装包，目前支持macOS，且需要自行解决🪜问题，PAC的user-rule规则需要新增 *.trae.ai ，然后就可以正常登录IDE了
 
 ### 需求实现
 

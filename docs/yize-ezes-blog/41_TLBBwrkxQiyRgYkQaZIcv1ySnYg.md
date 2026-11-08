@@ -419,7 +419,7 @@ Level 2: SKILL.md 完整内容
 Level 3: Resources 中的具体文件（按需读取）
 ```
 
-公众号 **@言午** 在《Claude Skills背后的信息分层设计哲学》一文中，亦有形象的图解：
+👸号 **@言午** 在《Claude Skills背后的信息分层设计哲学》一文中，亦有形象的图解：
 
 ![](img/04e8933534288fa8f6b3157c2e39f39a.png)
 

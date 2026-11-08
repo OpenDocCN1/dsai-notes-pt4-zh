@@ -4,7 +4,7 @@
 
 > 链接: https://mp.weixin.qq.com/s/1yoRaRL1rumBkkl4oL_Zpw
 
-> 作者：蓝衣剑客   公众号：AIGC思维火花
+> 作者：蓝衣剑客   👸号：AIGC思维火花
 
 ![](img/935d3e0eb38e82e4ae127db7c187eb39.png)
 

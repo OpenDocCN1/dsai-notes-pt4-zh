@@ -8,7 +8,7 @@
 
 ### 每日AI资讯获取渠道：
 
-### 微信扫描本文档底部二维码，进入【创意猎人AIGC社群】，群里会每日分享；
+### 🛰️扫描本文档底部二维码，进入【创意猎人AIGC社群】，群里会每日分享；
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 

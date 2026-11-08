@@ -4,7 +4,7 @@
 
 > 作者：还就可 | 深入LLM Agent应用开发
 
-> 原文： [https://mp.weixin.](https://mp.weixin.qq.com/s/_w3D_RJr33XKZQTByIQQWg)qq.com/s/_w3D_RJr...
+> 原文： [https://mp.weixin.](https://mp.weixin.qq.com/s/_w3D_RJr33XKZQTByI🐧Wg)qq.com/s/_w3D_RJr...
 
 书接上文《 [26K Star!LLM多智能体Aut](http://mp.weixin.qq.com/s?__biz=MzI0OTAzNTEwMw==&mid=2247483863&idx=1&sn=678107a920519cfe223d684b7e00e496&chksm=e996e1e7dee168f15a954bffde3705a40aafa6cd3616be0f372f184b8f9ab1649102fcd414d3&scene=21#wechat_redirect)oGen教程5：函数调用之避免捏造参数 》，我们使用typing对可调用函数进行注解，AutoGen据此自动生成OpenAI API函数调用时的请求参数。本文将简要介绍Python中typing包的基础操作，顺便简单的介绍一下Pydantic，然后深入AutoGen的流程，探查AutoGen如何通过typing帮助自动生成Open AI API工具调用的参数。
 

@@ -98,7 +98,7 @@ https://chromewebstore.google.com/detail/ipnlcfhfdicbfbchfoihipknbaeenenm 推荐
 
 Elmo 是一款基于 Lepton AI 的 Chrome 浏览器扩展，使用 Mixtral 8x7b 模型，可以帮助用户从网页内容中提取摘要、理解和扩展知识。
 
-它可以将网页内容精炼为简洁的摘要，支持总结 PDF 文档、推荐相关问题、实时提问与回答，还提供了一定程度的个性化设置选项。Elmo 目前完全免费，安装时需要梯子，使用时无需梯子，无需登录。
+它可以将网页内容精炼为简洁的摘要，支持总结 PDF 文档、推荐相关问题、实时提问与回答，还提供了一定程度的个性化设置选项。Elmo 目前完全免费，安装时需要🪜，使用时无需🪜，无需登录。
 
 ### **ChatPDF**
 

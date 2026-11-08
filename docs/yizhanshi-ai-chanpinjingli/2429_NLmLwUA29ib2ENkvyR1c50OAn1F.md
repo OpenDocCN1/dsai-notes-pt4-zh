@@ -14,7 +14,7 @@
 
 [03🈷️06日](https://v11enp9ok1h.feishu.cn/wiki/LUcWwBZt4iuYqVkhWsXc5jWinxb)
 
-[03🈷️07日](https://v11enp9ok1h.feishu.cn/wiki/O6QQwNK0giJLs3kMtmgc0RZonRb)
+[03🈷️07日](https://v11enp9ok1h.feishu.cn/wiki/O6🐧wNK0giJLs3kMtmgc0RZonRb)
 
 [03🈷️08日](https://v11enp9ok1h.feishu.cn/wiki/VyKqwYJUniSinFkh8oocg98dnWg)
 

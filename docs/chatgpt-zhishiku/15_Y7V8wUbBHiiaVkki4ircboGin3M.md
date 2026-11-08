@@ -12,13 +12,13 @@
 
 1.  OpenAI的API Key [如何申请OpenAI的API Key](https://sg0n3b2id7.feishu.cn/wiki/FCScwTZiPisUf0k0fXEc6qYSn3f#FWmqd8QCGo4cy2xmYn6czjxunnb)
 
-1.  IM账号，如QQ、微信等需要充当机器人的账号
+1.  IM账号，如🐧、🛰️等需要充当机器人的账号
 
 1.  远程软件向日葵
 
 > 搭建服务需要耗时耗力，需要很大的人工成本，所以此服务需要收取费用，请各位老板理解。
 
-> 注：机器人长期频繁使用产生的有可能会造成一定概率的风控和封号等，如QQ、WeChat。
+> 注：机器人长期频繁使用产生的有可能会造成一定概率的风控和封号等，如🐧、WeChat。
 
 > 联系方式：[ChatGPT知识库首页💾](https://sg0n3b2id7.feishu.cn/wiki/D6ZpwFWJ8iYKB4ky2ABcmZqKnoJ)
 
@@ -30,9 +30,9 @@
 
 地址：https://github.com/Yidadaa/ChatGPT-Next-Web
 
-# QQ-GPT机器人
+# 🐧-GPT机器人
 
-可以在QQ上私聊以及群聊的ChatGPT机器人，几步即可获得一个基于 ChatGPT 的QQ机器人
+可以在🐧上私聊以及群聊的ChatGPT机器人，几步即可获得一个基于 ChatGPT 的🐧机器人
 
 ✅回复符合上下文
 
@@ -66,9 +66,9 @@
 
 https://github.com/RockChinQ/QChatGPT
 
-# 微信-GPT机器人
+# 🛰️-GPT机器人
 
-可以在微信上私聊以及群聊的ChatGPT机器人，几步即可获得一个基于 ChatGPT 的微信机器人
+可以在🛰️上私聊以及群聊的ChatGPT机器人，几步即可获得一个基于 ChatGPT 的🛰️机器人
 
 +    支持上下文语境的对话。
 

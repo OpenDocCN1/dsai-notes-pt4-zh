@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/_Olak9t25DtvPvDdKGspaQ)qq.com/s/_Olak9t2...
 
-> 公众号：腾讯研究院
+> 👸号：腾讯研究院
 
 ![](img/2fb30acb0ba176b1249805054e855868.png)
 

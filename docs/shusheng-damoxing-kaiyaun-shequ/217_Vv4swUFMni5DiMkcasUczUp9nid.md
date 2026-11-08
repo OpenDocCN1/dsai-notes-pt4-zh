@@ -38,7 +38,7 @@
 
 > https://www.wjx.cn/vm/tUX8dEV.aspx?udsid=2146
 
-> 注意只允许在微信中作答，需要使用微信打开并授权。也可扫描下方二维码报名。
+> 注意只允许在🛰️中作答，需要使用🛰️打开并授权。也可扫描下方二维码报名。
 
 ![](img/a67237667c5ea21a32dc6d159eac7c65.png)
 
@@ -58,7 +58,7 @@
 
 > **注意：**
 
-+   **上面微信名称后的也是核销码**
++   **上面🛰️名称后的也是核销码**
 
 +   **邀请码和核销码是同一个东西**
 
@@ -68,13 +68,13 @@
 
 > **注意：**
 
-+   **上图**中“核销码”处显示不全，建议**从箭头处微信昵称后面复制核销码**。
++   **上图**中“核销码”处显示不全，建议**从箭头处🛰️昵称后面复制核销码**。
 
 +   注意**不要夹杂空格和换行符**，检查有无可疑的间距过大。
 
 +   如果之前参加过第一期实战营，则**不需要再次核销注册**，直接登录即可。
 
-+   若核销之后再次登录，仍提示需要核销码**，大概率是自****己没有使用第一次登****录的方式，注意微信登录、git**hub登录和手机号登录分属不同的登录方式，请先尝试切换。
++   若核销之后再次登录，仍提示需要核销码**，大概率是自****己没有使用第一次登****录的方式，注意🛰️登录、git**hub登录和手机号登录分属不同的登录方式，请先尝试切换。
 
 ![](img/15a77b2c7360dcac2b9cbed79f9cc624.png)
 
@@ -96,7 +96,7 @@
 
 ![](img/e08ed34c6c4b37b326e345f7affa35eb.png)
 
-> 2.在[学员信息&作业登记](https://aicarrier.feishu.cn/wiki/TqjawZsoqiiRXEkRpcScmKAAn8d?chunked=false&table=tblNCUy9PeGmgd9I&view=vewQagjCL1)表格中填写自己的问卷星ID、班级（微信群名中的班级号）、算力平台ID、证书姓名、微信昵称等信息。
+> 2.在[学员信息&作业登记](https://aicarrier.feishu.cn/wiki/TqjawZsoqiiRXEkRpcScmKAAn8d?chunked=false&table=tblNCUy9PeGmgd9I&view=vewQagjCL1)表格中填写自己的问卷星ID、班级（🛰️群名中的班级号）、算力平台ID、证书姓名、🛰️昵称等信息。
 
 ![](img/e3950571039cb0d29f74ed32481d6617.png)
 
@@ -188,7 +188,7 @@
 
 +   **按**照时间要求完成课程内容学习及项目实践。
 
-+   不理解的内容先查阅本期答疑文档[常见问题 QA](https://aicarrier.feishu.cn/wiki/AkCDwTWJtiebUkkChV0ct9uAnGc)及第一期学习答疑文档[书生·浦语大模型实战营Q&A文档](https://cguue83gpz.feishu.cn/docx/Noi7d5lllo6DMGxkuXwclxXMn5f)，如果没有找到解答可在微信群内@助教提问，或在 github 上提 issues。
++   不理解的内容先查阅本期答疑文档[常见问题 QA](https://aicarrier.feishu.cn/wiki/AkCDwTWJtiebUkkChV0ct9uAnGc)及第一期学习答疑文档[书生·浦语大模型实战营Q&A文档](https://cguue83gpz.feishu.cn/docx/Noi7d5lllo6DMGxkuXwclxXMn5f)，如果没有找到解答可在🛰️群内@助教提问，或在 github 上提 issues。
 
 > **备注：注意群内学习讨论内容仅限本次课程内容，不得讨论无关知**识内容，不得分享本次课程以外的学习资料。
 

@@ -1,6 +1,6 @@
 # 生成俏皮灵动，趣味盎然，比喻精妙的和美食有关的短句子
 
-> 来源：[https://e0lrm2v2v1u.feishu.cn/docx/TjGrd6QQQoYjZRxCenmcch8Qnub](https://e0lrm2v2v1u.feishu.cn/docx/TjGrd6QQQoYjZRxCenmcch8Qnub)
+> 来源：[https://e0lrm2v2v1u.feishu.cn/docx/TjGrd6🐧QoYjZRxCenmcch8Qnub](https://e0lrm2v2v1u.feishu.cn/docx/TjGrd6🐧QoYjZRxCenmcch8Qnub)
 
 完整提示词：
 

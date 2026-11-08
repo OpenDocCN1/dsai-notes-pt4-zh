@@ -78,7 +78,7 @@ AI Agent企业落地实践与应用拆解
 
 1.  AI Agent落地案例拆解
 
-**AGI掘金小助手微信**
+**AGI掘金小助手🛰️**
 
 ![](img/00c90f87dc5934ddb9986c684d5454cb.png)
 

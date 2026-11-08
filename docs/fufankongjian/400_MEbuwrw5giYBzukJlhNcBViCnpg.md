@@ -88,7 +88,7 @@
 
 +   **完整的插件系统：** 内置了多款插件和开发模板，允许开发者快速扩展智能体的能力边界。
 
-+   **一键部署与后端服务：** 开源版自带完整的后端服务，开发者完成智能体构建后可一键部署，并生成API，方便在飞书、微信公众号、企业内部应用中直接调用。
++   **一键部署与后端服务：** 开源版自带完整的后端服务，开发者完成智能体构建后可一键部署，并生成API，方便在飞书、🛰️👸号、企业内部应用中直接调用。
 
 +   **框架兼容性：** 支持与LangChain、LangGraph等主流开发框架集成，将Coze发布的智能体作为外部工具调用，实现更复杂的多智能体协作。
 
@@ -386,7 +386,7 @@ MCP、谷歌ADK、RAG……5大热门主题深度精讲！联合创始人与技�
 
 九天Hector 抖音： https://v.douyin.com/lqASAa2Hs_0/
 
-九天Hector 小红书：https://www.xiaohongshu.com/user/profile/62321335000000001000885e
+九天Hector 📕：https://www.xiaohongshu.com/user/profile/62321335000000001000885e
 
 九天Hector YouTube：https://www.youtube.com/channel/UCj8tyDLSxIdivnweBnG4H9Q/
 

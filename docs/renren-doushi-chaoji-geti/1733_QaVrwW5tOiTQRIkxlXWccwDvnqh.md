@@ -12,7 +12,7 @@
 
 [5. 让机器来点人味](https://xuqiwei1986.feishu.cn/wiki/WpVWwVkmciCR17kDCxkc0LJInEg)
 
-[6. 万字解读ChatGPT提示词最佳案例](https://xuqiwei1986.feishu.cn/wiki/Pnw3wuQQ9i0NDUkiTthcX24znTc)
+[6. 万字解读ChatGPT提示词最佳案例](https://xuqiwei1986.feishu.cn/wiki/Pnw3wu🐧9i0NDUkiTthcX24znTc)
 
 [7. ChatGPT 最佳实践案例小白版](https://xuqiwei1986.feishu.cn/wiki/EKQOwgGOriithekTRyBcKXBqncf)
 

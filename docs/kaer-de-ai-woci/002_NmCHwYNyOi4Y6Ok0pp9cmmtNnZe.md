@@ -88,7 +88,7 @@ AI搜索 - MindSearch
 
 > 📍 每周都肉眼可见数字人相关技术热度越来越高✅！
 
-+   [小冰多模态可交互数字人更新](https://tqryj.xetlk.com/s/3l7ype)！数字人能活在你的小程序/二维码/网页/微信里！还能替你发视频/发图像/发二维码
++   [小冰多模态可交互数字人更新](https://tqryj.xetlk.com/s/3l7ype)！数字人能活在你的小程序/二维码/网页/🛰️里！还能替你发视频/发图像/发二维码
 
 +   wonder studio支持导出项目到虚幻引擎！
 
@@ -162,7 +162,7 @@ AI搜索 - MindSearch
 
 [哄哄模拟器--提示词版](https://h0slqmssqrc.feishu.cn/docx/GhqcdG7MloXpbKxjRCVcuchSngg?from=from_copylink)
 
-# 第10期 群活动 小红书爆火拟人潮牌小狗 MJ提示词破解
+# 第10期 群活动 📕爆火拟人潮牌小狗 MJ提示词破解
 
 ![](img/c17f150a75f6ce8eff2fdaaad6791e47.png)
 
@@ -242,7 +242,7 @@ AI搜索 - MindSearch
 
 ![](img/f3edaf0f9cd9253643020f9c7b705cc3.png)
 
-# 第三期群活动 以龙为主题的壁纸输出+做微信红包封面变现
+# 第三期群活动 以龙为主题的壁纸输出+做🛰️红包封面变现
 
 **群主实战案例（含提示语）：**
 

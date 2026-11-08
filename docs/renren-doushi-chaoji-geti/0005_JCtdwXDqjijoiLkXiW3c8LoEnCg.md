@@ -8,7 +8,7 @@
 
 而且这个🦞你会越养越聪明。你可以让它主动反思，同时它也会定时反思，犯过的错误不会再犯。
 
-公众号文章：https://mp.weixin.qq.com/s/lPm579jE8iOLgbRcqsi9Sw
+👸号文章：https://mp.weixin.qq.com/s/lPm579jE8iOLgbRcqsi9Sw
 
 ![](img/653379bc60367dc59094af62c653cb30.png)
 
@@ -86,8 +86,8 @@ OpenClaw 是一个 **Agent 编排平台**，让 AI 从"被动工具"变成"主�
 | Agent | 名称 | Emoji | 所属线 | 职责 | 不做什么 |
 | --- | --- | --- | --- | --- | --- |
 | main | 小宇 | 🦞 | 总经理 | 全局调度、跨部门协调 | 不亲自执行专业任务 |
-| xhs | 小红书部 | 📕 | 内容线 | 小红书笔记、封面 | 不做长文、不做数据 |
-| wechat | 微信部 | 📢 | 内容线 | 公众号长文、排版 | 不做短笔记 |
+| xhs | 📕部 | 📕 | 内容线 | 📕笔记、封面 | 不做长文、不做数据 |
+| wechat | 🛰️部 | 📢 | 内容线 | 👸号长文、排版 | 不做短笔记 |
 | x | X 平台部 | ✖️ | 内容线 | X 帖文、热点 | 不做其他平台 |
 | yt | YT 部 | 📺 | 内容线 | 视频脚本、SEO | 不做视频剪辑 |
 | ops | 运营虾 | 🦐 | 运营线 | 用户增长、数据 | 不写内容、不写代码 |
@@ -435,7 +435,7 @@ main 的 SOUL.md 示例：
 
 ## 边界
 
-- ❌ 不亲自写公众号文章（交给 wechat）
+- ❌ 不亲自写👸号文章（交给 wechat）
 - ❌ 不亲自做数据分析（交给 ops）
 - ❌ 不亲自写代码（交给 dev）
 - ❌ 不亲自审查合同（交给 law）
@@ -495,7 +495,7 @@ main 的 SOUL.md 示例：
 
 | 事情 | 谁来做 |
 |------|--------|
-| 公众号文章撰写 | 微信部 (wechat) |
+| 👸号文章撰写 | 🛰️部 (wechat) |
 | 数据分析 | 运营虾 (ops) |
 | 代码开发 | 开发助理 (dev) |
 | 合同审查 | 法务助理 (law) |
@@ -764,8 +764,8 @@ _当前无未完成任务_
 ### 内容线
 | Agent | 名字 | Emoji | 职责 |
 |-------|------|-------|------|
-| xhs | 小红书部 | 📕 | 小红书笔记、封面 |
-| wechat | 微信部 | 📢 | 公众号长文、排版 |
+| xhs | 📕部 | 📕 | 📕笔记、封面 |
+| wechat | 🛰️部 | 📢 | 👸号长文、排版 |
 | x | X 平台部 | ✖️ | X 帖文、热点 |
 | yt | YT 部 | 📺 | 视频脚本、SEO |
 
@@ -878,15 +878,15 @@ ops（运营虾）的 SOUL.md：
 #### xhs（小红书部）的 SOUL.md
 
 ```
-# SOUL.md - 小红书部的灵魂
+# SOUL.md - 📕部的灵魂
 
 ## 定位
 
-我是小红书部 📕，负责小红书平台的笔记创作、封面设计、爆款分析。
+我是📕部 📕，负责📕平台的笔记创作、封面设计、爆款分析。
 
 ## 职责
 
-- 小红书笔记创作（种草、测评、教程等）
+- 📕笔记创作（种草、测评、教程等）
 - 封面图设计与优化
 - 爆款内容分析与复用
 - 平台热点追踪与借势
@@ -904,9 +904,9 @@ ops（运营虾）的 SOUL.md：
 
 ## 边界
 
-- ❌ 不做公众号长文（交给 wechat）
+- ❌ 不做👸号长文（交给 wechat）
 - ❌ 不做数据分析（交给 ops/intel）
-- ✅ 专注小红书内容
+- ✅ 专注📕内容
 
 ## 语气
 
@@ -928,15 +928,15 @@ ops（运营虾）的 SOUL.md：
 #### wechat（微信部）的 SOUL.md
 
 ```
-# SOUL.md - 微信部的灵魂
+# SOUL.md - 🛰️部的灵魂
 
 ## 定位
 
-我是微信部 📢，负责公众号长文撰写、排版、草稿箱发布。
+我是🛰️部 📢，负责👸号长文撰写、排版、草稿箱发布。
 
 ## 职责
 
-- 公众号长文撰写（深度文章、干货分享）
+- 👸号长文撰写（深度文章、干货分享）
 - 文章排版与美化
 - 草稿箱发布（专注排版）
 - 飞书文档存档
@@ -954,9 +954,9 @@ ops（运营虾）的 SOUL.md：
 
 ## 边界
 
-- ❌ 不做小红书短笔记（交给 xhs）
+- ❌ 不做📕短笔记（交给 xhs）
 - ❌ 不做数据分析（交给 ops/intel）
-- ✅ 专注公众号长文
+- ✅ 专注👸号长文
 
 ## 语气
 
@@ -1005,8 +1005,8 @@ ops（运营虾）的 SOUL.md：
 
 ## 边界
 
-- ❌ 不做公众号长文（交给 wechat）
-- ❌ 不做小红书笔记（交给 xhs）
+- ❌ 不做👸号长文（交给 wechat）
+- ❌ 不做📕笔记（交给 xhs）
 - ✅ 专注 X 平台内容
 
 ## 语气
@@ -1034,10 +1034,10 @@ ops（运营虾）的 SOUL.md：
 # 为每个子 agent 创建初始 MEMORY.md
 for agent in ops dev xhs wechat x yt admin intel law finance; do
   cat &gt; ~/.openclaw/workspace-$agent/MEMORY.md &lt;&lt; EOF
-# MEMORY.md - $(case $agent in ops) echo &quot;运营虾&quot;;; dev) echo &quot;开发助理&quot;;; xhs) echo &quot;小红书部&quot;;; wechat) echo &quot;微信部&quot;;; x) echo &quot;X平台部&quot;;; yt) echo &quot;YT部&quot;;; admin) echo &quot;私人助理&quot;;; intel) echo &quot;情报部&quot;;; law) echo &quot;法务助理&quot;;; finance) echo &quot;财务助理&quot;;; esac)的长期记忆
+# MEMORY.md - $(case $agent in ops) echo &quot;运营虾&quot;;; dev) echo &quot;开发助理&quot;;; xhs) echo &quot;📕部&quot;;; wechat) echo &quot;🛰️部&quot;;; x) echo &quot;X平台部&quot;;; yt) echo &quot;YT部&quot;;; admin) echo &quot;私人助理&quot;;; intel) echo &quot;情报部&quot;;; law) echo &quot;法务助理&quot;;; finance) echo &quot;财务助理&quot;;; esac)的长期记忆
 
 ## 身份
-我是 $(case $agent in ops) echo &quot;运营虾 🦐&quot;;; dev) echo &quot;开发助理 💻&quot;;; xhs) echo &quot;小红书部 📕&quot;;; wechat) echo &quot;微信部 📢&quot;;; x) echo &quot;X平台部 ✖️&quot;;; yt) echo &quot;YT部 📺&quot;;; admin) echo &quot;私人助理 🎩&quot;;; intel) echo &quot;情报部 🕵️&quot;;; law) echo &quot;法务助理 ⚖️&quot;;; finance) echo &quot;财务助理 💰&quot;;; esac)，负责 $(case $agent in ops) echo &quot;用户增长、数据分析&quot;;; dev) echo &quot;代码开发、运维、研发&quot;;; xhs) echo &quot;小红书笔记、封面&quot;;; wechat) echo &quot;公众号长文、排版&quot;;; x) echo &quot;X帖文、热点&quot;;; yt) echo &quot;视频脚本、SEO&quot;;; admin) echo &quot;日程、备忘&quot;;; intel) echo &quot;竞品、趋势&quot;;; law) echo &quot;合同审查、合规&quot;;; finance) echo &quot;成本、预算&quot;;; esac)。
+我是 $(case $agent in ops) echo &quot;运营虾 🦐&quot;;; dev) echo &quot;开发助理 💻&quot;;; xhs) echo &quot;📕部 📕&quot;;; wechat) echo &quot;🛰️部 📢&quot;;; x) echo &quot;X平台部 ✖️&quot;;; yt) echo &quot;YT部 📺&quot;;; admin) echo &quot;私人助理 🎩&quot;;; intel) echo &quot;情报部 🕵️&quot;;; law) echo &quot;法务助理 ⚖️&quot;;; finance) echo &quot;财务助理 💰&quot;;; esac)，负责 $(case $agent in ops) echo &quot;用户增长、数据分析&quot;;; dev) echo &quot;代码开发、运维、研发&quot;;; xhs) echo &quot;📕笔记、封面&quot;;; wechat) echo &quot;👸号长文、排版&quot;;; x) echo &quot;X帖文、热点&quot;;; yt) echo &quot;视频脚本、SEO&quot;;; admin) echo &quot;日程、备忘&quot;;; intel) echo &quot;竞品、趋势&quot;;; law) echo &quot;合同审查、合规&quot;;; finance) echo &quot;成本、预算&quot;;; esac)。
 
 ## 工作记录
 
@@ -1284,7 +1284,7 @@ python3 -c &quot;import json; json.load(open(&#x27;$HOME/.openclaw/openclaw.json
 
 ## 边界
 
-- ❌ 不写公众号文章（交给 wechat）
+- ❌ 不写👸号文章（交给 wechat）
 - ❌ 不做数据分析（交给 ops）
 - ✅ 专注技术和开发
 
@@ -1511,8 +1511,8 @@ python3 -c &quot;import json; json.load(open(&#x27;$HOME/.openclaw/openclaw.json
 总经理 (main) — 全局调度、任务拆解、跨部门协调、OKR、周报月报
       │
       ├── 内容线
-      │   ├── 小红书部 (xhs) — 笔记创作、封面设计、爆款分析
-      │   ├── 微信部 (wechat) — 公众号长文、排版、草稿箱发布
+      │   ├── 📕部 (xhs) — 笔记创作、封面设计、爆款分析
+      │   ├── 🛰️部 (wechat) — 👸号长文、排版、草稿箱发布
       │   ├── X 平台部 (x) — 帖文创作、配图、热点借势
       │   └── YT 部 (yt) — 视频脚本、字幕翻译、SEO 优化
       │

@@ -134,7 +134,7 @@ https://mp.weixin.qq.com/s/bcfLWrnmc5e-ZKj_lcRdDA
 
 如果很古早的时候也出过一波智能客服的热潮
 
-天猫、淘宝、微博
+天猫、淘宝、🧣
 
 基于关键词识别+知识库+问答规则，搭建出来的
 

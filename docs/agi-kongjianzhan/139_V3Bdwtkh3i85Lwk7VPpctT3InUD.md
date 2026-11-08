@@ -4,7 +4,7 @@
 
 > 作者：  是莫尔索
 
-> 公众号： 莫尔索随笔
+> 👸号： 莫尔索随笔
 
 > 原文链接：https://mp.weixin.qq.com/s/cVbwsPutLjAMj9z7nY0g3A
 
@@ -576,7 +576,7 @@ except GraphRecursionError:  如果达到递归限制
 
 62篇原创内容
 
-公众号
+👸号
 
 后台回复 **DeepSeek**，获取文章中的完整代码，点击**阅读原文**，获取更好阅读体验。
 

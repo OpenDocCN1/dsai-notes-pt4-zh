@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/Dfihdxo2QoHDjnxo0yGcnCJ8nUe](https://my.feishu.cn/docx/Dfihdxo2QoHDjnxo0yGcnCJ8nUe)
 
-首先推荐一个AI工具，免梯子直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
+首先推荐一个AI工具，免🪜直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
 
 ### 直播带货（演示AI 不用露脸）
 

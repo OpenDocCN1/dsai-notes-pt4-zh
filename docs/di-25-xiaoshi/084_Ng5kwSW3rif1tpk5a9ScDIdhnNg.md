@@ -80,7 +80,7 @@ CodeFuse - 蚂蚁推出图生代码功能
 
 wayToAGI文档：[Llama3 正式发布，开源模型的质量又迎来再一次飞跃](https://waytoagi.feishu.cn/wiki/DswSwkTOCiUkiDkEZr1cMJU7nih)
 
-FP推文：[Llama 3 发布！目前最强开源大模型，全面登陆 Me](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247497876&idx=1&sn=140e0f8c63c37dee949fab57a1d3f094&chksm=c0091ea8f77e97be7247720bdec8a50ef1cca3791ab4f663e6991ccebde45dadd52b75591d14&mpshare=1&scene=1&srcid=0419NoQQJYOmXsYWCbaj0YTK&sharer_shareinfo=9ddb073f2a519757a562a98a0c2227da&sharer_shareinfo_first=9ddb073f2a519757a562a98a0c2227da#rd)ta 系产品，即将推出 4000 亿模型
+FP推文：[Llama 3 发布！目前最强开源大模型，全面登陆 Me](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247497876&idx=1&sn=140e0f8c63c37dee949fab57a1d3f094&chksm=c0091ea8f77e97be7247720bdec8a50ef1cca3791ab4f663e6991ccebde45dadd52b75591d14&mpshare=1&scene=1&srcid=0419No🐧JYOmXsYWCbaj0YTK&sharer_shareinfo=9ddb073f2a519757a562a98a0c2227da&sharer_shareinfo_first=9ddb073f2a519757a562a98a0c2227da#rd)ta 系产品，即将推出 4000 亿模型
 
 ## 03 扣子支持Kimi模型、搜索结果溯源
 

@@ -1,6 +1,6 @@
 # 如何“快速”搭建MVP？
 
-> 来源：[https://docs.feishu.cn/docx/RaSQdADQQo4JGvx3RBpc97SMnKN](https://docs.feishu.cn/docx/RaSQdADQQo4JGvx3RBpc97SMnKN)
+> 来源：[https://docs.feishu.cn/docx/RaSQdAD🐧o4JGvx3RBpc97SMnKN](https://docs.feishu.cn/docx/RaSQdAD🐧o4JGvx3RBpc97SMnKN)
 
 # MVP定义
 
@@ -22,7 +22,7 @@ Minimum Viable Product 最小可行性产品
 
 1.  奥兹魔法师：向用户宣称是自动化/机器提供的服务/solution，但实际背后是人工参与完成交付。比如美团外卖早期订单是人工在后台分配订单。
 
-1.  小红书：做一个小红书账号，来验证市场需求和付费意愿
+1.  📕：做一个📕账号，来验证市场需求和付费意愿
 
 1.  闲鱼、兼职平台Fiverr等：同上
 

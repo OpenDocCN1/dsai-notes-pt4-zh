@@ -24,7 +24,7 @@
 
 > **目前在做的**
 
-> 公众号&视频号 “海涛AI智能体”   万粉博主
+> 👸号&视频号 “海涛AI智能体”   万粉博主
 
 > Coze昵称：“海涛AI智能体”，官方合作开发者
 
@@ -36,7 +36,7 @@
 
 > 扣子工作流模板商店：https://www.coze.cn/s/pKlV_Tn0tqg/
 
-> 小红书运营智能体：https://www.coze.cn/s/9ERLz5G-H40/
+> 📕运营智能体：https://www.coze.cn/s/9ERLz5G-H40/
 
 > 视频工作流应用：https://www.coze.cn/s/eRBDmXPDIKM/
 

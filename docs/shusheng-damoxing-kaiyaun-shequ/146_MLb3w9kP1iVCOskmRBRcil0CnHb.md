@@ -1,6 +1,6 @@
 # L1G4- InternLM 论文分类微调实践（Ascend+XTuner 版）
 
-> 来源：[https://aicarrier.feishu.cn/docx/NLQQdXS2poHCMaxgnEzc5H2XnAg](https://aicarrier.feishu.cn/docx/NLQQdXS2poHCMaxgnEzc5H2XnAg)
+> 来源：[https://aicarrier.feishu.cn/docx/NL🐧dXS2poHCMaxgnEzc5H2XnAg](https://aicarrier.feishu.cn/docx/NL🐧dXS2poHCMaxgnEzc5H2XnAg)
 
 ![](img/4019960d461ac99511d8bf3d826151b7.png)
 
@@ -24,7 +24,7 @@ OpenI官网地址：https://openi.pcl.ac.cn/
 
 ![](img/d055973b1a1995ede368356d32be1195.png)
 
-第二步：微信扫码注册
+第二步：🛰️扫码注册
 
 ![](img/c2a85932a1c0de817579fb6a750a951d.png)
 
@@ -70,7 +70,7 @@ OpenI官网地址：https://openi.pcl.ac.cn/
 
 ![](img/e16140a100e90a4da19136aa09897baf.png)
 
-全部选择完成后点【新建任务】即可完成云脑任务创建。因为需要拉取模型文件，所以这一步的时间会有点长，第一次加载整个过程有可能会需要1-2小时，后续再加载就快了。耐心等到任务状态由【Waiting】变为【Running】即可，期间可以先学习其他内容。如果绑定过微信并且关注了【OpenI启智平台】公众号的话，在任务开始运行的时候会有消息推送。
+全部选择完成后点【新建任务】即可完成云脑任务创建。因为需要拉取模型文件，所以这一步的时间会有点长，第一次加载整个过程有可能会需要1-2小时，后续再加载就快了。耐心等到任务状态由【Waiting】变为【Running】即可，期间可以先学习其他内容。如果绑定过🛰️并且关注了【OpenI启智平台】👸号的话，在任务开始运行的时候会有消息推送。
 
 ![](img/55a093f567f0d75129e17694e65a3fc6.png)
 

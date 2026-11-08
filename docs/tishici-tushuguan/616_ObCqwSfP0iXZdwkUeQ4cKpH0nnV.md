@@ -4,7 +4,7 @@
 
 作者：[AI奶爸-大壮/Jammy](https://b0lu6tc3r9.feishu.cn/wiki/GC4Ow339bitm3TkAmtRciA3vn0f)
 
-作者微信：yinyinGyL
+作者🛰️：yinyinGyL
 
 ```
 # Role:需求分析大师

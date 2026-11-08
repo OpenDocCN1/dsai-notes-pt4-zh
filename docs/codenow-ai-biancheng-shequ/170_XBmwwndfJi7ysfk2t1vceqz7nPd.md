@@ -1,12 +1,12 @@
-# 微信小程序
+# 🛰️小程序
 
 > 来源：[https://now.feishu.cn/docx/IKL6dbivYooyYvxIxlucuHh6nrc](https://now.feishu.cn/docx/IKL6dbivYooyYvxIxlucuHh6nrc)
 
-# Cursor + claude 3.5 + v0.dev 开发微信小程序
+# Cursor + claude 3.5 + v0.dev 开发🛰️小程序
 
 <https://player.bilibili.com/player.html?bvid=1MeHNerENX&spm_id_from=333.788.recommend_more_video.1&vd_source=3413a9edbee883aef0f55ad285839fa0>
 
-# 手把手教小白如何8分钟用Cursor完成AI微信小程序的开发上线
+# 手把手教小白如何8分钟用Cursor完成AI🛰️小程序的开发上线
 
 <https://player.bilibili.com/player.html?bvid=1oF4TegEne&share_source=copy_web&vd_source=e6411ee8e6c8734d05a732be29e4449b>
 

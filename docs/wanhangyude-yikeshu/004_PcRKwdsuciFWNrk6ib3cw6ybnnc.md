@@ -6,7 +6,7 @@
 
 # 找电子书常用的方法
 
-1.  [微信读书](https://weread.qq.com/)
+1.  [🛰️读书](https://weread.qq.com/)
 
 1.  [鸠摩搜索](https://www.jiumodiary.com/)
 

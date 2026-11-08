@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/W93Zd4hO3owIOAxLpQYcBQr6nZc](https://yunyinghui.feishu.cn/docx/W93Zd4hO3owIOAxLpQYcBQr6nZc)
 
-> **来源公众号：**卡尔的 AI 沃茨
+> **来源👸号：**卡尔的 AI 沃茨
 
 > **发文时间：**2026-01-08 18:42:24
 
@@ -108,7 +108,7 @@ PS，NotebookLM 最右侧的播客，音频，思维导图，PPT，数据表等�
 
 我最近还在测更有意思的玩法，
 
-把微信读书 or Google 图书和 NotebookLM 结合起来。正常阅读划线，读完后把电子书全文导入 NotebookLM，再用 Fast Research 收集资料，
+把🛰️读书 or Google 图书和 NotebookLM 结合起来。正常阅读划线，读完后把电子书全文导入 NotebookLM，再用 Fast Research 收集资料，
 
 又或者，Google 图书里的笔记标注都会同步到 Google Drive，NotebookLM 可以直接读取，这样写作的时候还能用上你平时真的在读在经历的事情。
 

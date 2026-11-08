@@ -146,7 +146,7 @@ a. 计算梯度和 Hessian： 计算每个样本的梯度  和 Hessian  。
 
 整个代码实现过程，通过数据预处理、特征工程、模型训练和优化以及可视化展示结果。我们选择Kaggle上的房价预测数据集（House Prices - Advanced Regression Techniques）来进行演示。
 
-数据集获取，公众号「深夜努力写Python」后台回复『数据集』即可~
+数据集获取，👸号「深夜努力写Python」后台回复『数据集』即可~
 
 **导入库和数据集**
 

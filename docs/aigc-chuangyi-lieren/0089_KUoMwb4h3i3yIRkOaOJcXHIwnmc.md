@@ -1,6 +1,6 @@
 # 生成式AI发展史
 
-> 来源：[https://aigcreative.feishu.cn/docx/HCoMdLnGkoeIbHxpR9rc4rQQnZe](https://aigcreative.feishu.cn/docx/HCoMdLnGkoeIbHxpR9rc4rQQnZe)
+> 来源：[https://aigcreative.feishu.cn/docx/HCoMdLnGkoeIbHxpR9rc4r🐧nZe](https://aigcreative.feishu.cn/docx/HCoMdLnGkoeIbHxpR9rc4r🐧nZe)
 
 ChatGPT的首次亮相引发了围绕生成人工智能的广泛宣传和争议，生成人工智能是人工智能的一个子集，在历史里程碑中根深蒂固。
 

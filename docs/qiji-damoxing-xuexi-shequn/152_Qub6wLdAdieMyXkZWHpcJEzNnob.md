@@ -196,7 +196,7 @@ PraisonAI 是一个基于 AutoGen 和 CrewAI 等框架的低代码解决方案�
 
 https://github.com/WeOps-Lab/OpsPilot
 
-OpsPilot 是 WeOps 团队开源的一个基于深度学习与 LLM 技术的智能运维助理，以运维大脑的形态，联动各类运维系统，提供智能化运维的能力支撑。主要支持以 Web、企业微信等通道， 为用户提供以 智能问答、ChatOps、智能引导三个方向的延展能力。
+OpsPilot 是 WeOps 团队开源的一个基于深度学习与 LLM 技术的智能运维助理，以运维大脑的形态，联动各类运维系统，提供智能化运维的能力支撑。主要支持以 Web、企业🛰️等通道， 为用户提供以 智能问答、ChatOps、智能引导三个方向的延展能力。
 
 ![](img/ab6a229b6a8e321d5c1ff316ce53d9be.png)
 
@@ -364,7 +364,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

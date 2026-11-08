@@ -590,13 +590,13 @@ ChatGLM3-6B的一些运行文件和项目代码，并不包含ChatGLM3-6B这个�
 
 Hugging Face 下载。最后一步需要把ChatGLM3-6B这个模型本身下载到本地。这里提供三种下载的方式， 大家根据自身的实际情况灵活选择。
 
-+     方式一：借助Git工具在Hugging Face官网拉取到本地。这种方式需要科学上网。
++     方式一：借助Git工具在Hugging Face官网拉取到本地。这种方式需要🪜。
 
 ![](img/9f1f6fb4b77f6a9d3901587dd34a51f8.png)
 
 接下来依次介绍三种下载方式。
 
-### 3.1 方式一：从Hugging Face官网下载（需要科学上网环境）
+### 3.1 方式一：从Hugging Face官网下载（需要🪜环境）
 
 Hugging Face 是一个丰富的模型库，开发者可以上传和共享他们训练好的机器学习模型。这些模型通常 是经过大量数据训练的，并且很大，因此需要特殊的存储和托管服务。不同于GitHub ，GitHub 仅仅是一个   代码托管和版本控制平台，托管的是项目的源代码、文档和其他相关文件。同时对于托管文件的大小有限
 
@@ -668,7 +668,7 @@ Git Large File Storage（ Git LFS）是一种用于处理大文件的工具，�
 
 载全部文件后，新建 chatglm3-6b文件夹统一存放。
 
-+   [**方**](https://huggingface.co/THUDM/chatglm3-6b)[**式一：从Hu**](https://huggingface.co/THUDM/chatglm3-6b)gging Face直接下载（仍然需要科学上网）：https://huggingface.co/THUDM/chatglm3-6b
++   [**方**](https://huggingface.co/THUDM/chatglm3-6b)[**式一：从Hu**](https://huggingface.co/THUDM/chatglm3-6b)gging Face直接下载（仍然需要🪜）：https://huggingface.co/THUDM/chatglm3-6b
 
 ![](img/bd83026a0afd2c2c6accaa3c5db6e2d5.png)
 
@@ -676,7 +676,7 @@ Git Large File Storage（ Git LFS）是一种用于处理大文件的工具，�
 
 ![](img/ddaf6e388746699ffaff0f4ed5c28631.png)
 
-+   [**方式二：从modelscope直接**](https://modelscope.cn/models/ZhipuAI/)下载（不需要科学上网）：https://modelscope.cn/models/ZhipuAI/chatglm3-6b/summary
++   [**方式二：从modelscope直接**](https://modelscope.cn/models/ZhipuAI/)下载（不需要🪜）：https://modelscope.cn/models/ZhipuAI/chatglm3-6b/summary
 
 ![](img/1eb6096ebb389d8f2eeaccad095dbde1.png)
 

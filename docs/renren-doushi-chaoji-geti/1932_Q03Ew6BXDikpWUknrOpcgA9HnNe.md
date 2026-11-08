@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/IZx7dx2CSo9x23xioUFcNaHcnRd](https://xuqiwei1986.feishu.cn/docx/IZx7dx2CSo9x23xioUFcNaHcnRd)
 
-4月12号在生财发了一条关于rpa的资源对接，主要是2个目的：
+4月12号在赚钱发了一条关于rpa的资源对接，主要是2个目的：
 
 1、确定市场是不是有这个需求；
 

@@ -24,7 +24,7 @@
 
 - 地点：腾讯会议（后续公布链接）
 
-- 报名分享：群内回复“报名分享+作品链接/小红书链接”并@助教，锁定分享资格！
+- 报名分享：群内回复“报名分享+作品链接/📕链接”并@助教，锁定分享资格！
 
 -打卡链接：https://datawhaler.feishu.cn/share/base/form/shrcn1sn2AeD22bo89N02W6LYef
 
@@ -68,11 +68,11 @@ Day1作品墙：https://datawhaler.feishu.cn/share/base/view/shrcnzkSZzEYsfEt4NX
 
 Day2作品墙：https://datawhaler.feishu.cn/share/base/view/shrcnw9bFJBlthAyo1lUGoTOoLh
 
-# 作品投稿小红书Tips
+# 作品投稿📕Tips
 
-+   将你的作品应用效果截图/或者录制作品视频发布至小红书，并配上作品介绍（比如实现了哪些功能，可以怎么玩），更容易让大家看到和获得小红书流量支持哦
++   将你的作品应用效果截图/或者录制作品视频发布至📕，并配上作品介绍（比如实现了哪些功能，可以怎么玩），更容易让大家看到和获得📕流量支持哦
 
-+   投稿入口：[全民手搓AI闪应用](https://www.xiaohongshu.com/page/topics/6926b910023f000000000001?fullscreen=true&naviHidden=yes&themeType=default&id=6926b910023f000000000001&isUnicomKing=false&page_source=note_feed.click_new_big&rn_app=1&rn_deeplink=xhsdiscover%253A%252F%252Frn%252Fads-topic%252Fpage%253FthemeType%253Ddefault%2526id%253D6926b910023f000000000001%2526isUnicomKing%253Dfalse%2526page_source%253Dnote_feed.click_new_big&share_id=103b5c4066264f9f9a4420f0d4ad68cf&share_channel=wechat)[（点击链接即可跳转投](https://www.xiaohongshu.com/search_result?keyword=%25E5%2585%25A8%25E6%25B0%2591%25E6%2589%258B%25E6%2590%2593AI%25E9%2597%25AA%25E5%25BA%2594%25E7%2594%25A8&type=54&source=web_note_detail_r10)稿[，建议](https://www.xiaohongshu.com/search_result?keyword=%25E7%2581%25B5%25E5%2585%2589&type=54&source=web_note_detail_r10)手[机端打开），小红书笔](https://www.xiaohongshu.com/search_result/?keyword=%25E7%2581%25B5%25E5%2585%2589&type=54&source=web_note_detail_r10)记并带[上话题 #全](https://www.xiaohongshu.com/user/profile/68f72753000000003101e76c?xsec_token=ABhbK1uyPgMOJzzGksHVYXrohv2YxEQECwT0kxu7IZSE0%3D&xsec_source=pc_note)民手搓AI闪应用 #灵光 #datawhale，并 @灵光App
++   投稿入口：[全民手搓AI闪应用](https://www.xiaohongshu.com/page/topics/6926b910023f000000000001?fullscreen=true&naviHidden=yes&themeType=default&id=6926b910023f000000000001&isUnicomKing=false&page_source=note_feed.click_new_big&rn_app=1&rn_deeplink=xhsdiscover%253A%252F%252Frn%252Fads-topic%252Fpage%253FthemeType%253Ddefault%2526id%253D6926b910023f000000000001%2526isUnicomKing%253Dfalse%2526page_source%253Dnote_feed.click_new_big&share_id=103b5c4066264f9f9a4420f0d4ad68cf&share_channel=wechat)[（点击链接即可跳转投](https://www.xiaohongshu.com/search_result?keyword=%25E5%2585%25A8%25E6%25B0%2591%25E6%2589%258B%25E6%2590%2593AI%25E9%2597%25AA%25E5%25BA%2594%25E7%2594%25A8&type=54&source=web_note_detail_r10)稿[，建议](https://www.xiaohongshu.com/search_result?keyword=%25E7%2581%25B5%25E5%2585%2589&type=54&source=web_note_detail_r10)手[机端打开），📕笔](https://www.xiaohongshu.com/search_result/?keyword=%25E7%2581%25B5%25E5%2585%2589&type=54&source=web_note_detail_r10)记并带[上话题 #全](https://www.xiaohongshu.com/user/profile/68f72753000000003101e76c?xsec_token=ABhbK1uyPgMOJzzGksHVYXrohv2YxEQECwT0kxu7IZSE0%3D&xsec_source=pc_note)民手搓AI闪应用 #灵光 #datawhale，并 @灵光App
 
 # 一些简单的参考案例&Prompt分享【助力你激发想象】
 

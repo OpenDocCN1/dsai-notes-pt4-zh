@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/Vk5edbWfGoxhMKxiOcjcZCtEnDg](https://yunyinghui.feishu.cn/docx/Vk5edbWfGoxhMKxiOcjcZCtEnDg)
 
-> **来源公众号：**滴滴技术
+> **来源👸号：**滴滴技术
 
 > **推荐理由：**篇文章是滴滴技术团队推出的《技术桔有话说》专栏内容，围绕 AI Coding 工具的应用、技巧与未来展望展开讨论，邀请了多位一线开发者（“技术桔”）分享实践经验。
 

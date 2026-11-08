@@ -64,7 +64,7 @@ https://mp.weixin.qq.com/s/PSMfQLBBQZyG2GwgzatqvA
 
 ### 大模型应用新战场：揭秘终端侧AI竞争关键
 
-https://mp.weixin.qq.com/s/Ub0by14RBQQHnxtOnbXupg
+https://mp.weixin.qq.com/s/Ub0by14RB🐧HnxtOnbXupg
 
 1.  **量化**：为提高AI模型在手机等终端设备上的推理效率，高通深入研究了量化技术，特别是低位数整型精度（如INT4）的应用。这种方法在不影响模型准确性的前提下，显著提升了推理效率和能效。例如，INT4模型与INT8相比，性能提升90%，能效提升60%。
 
@@ -80,7 +80,7 @@ https://mp.weixin.qq.com/s/Ub0by14RBQQHnxtOnbXupg
 
 ### 端测AI芯片，群雄争霸
 
-https://mp.weixin.qq.com/s/FxWQQBKf7FBeR_DxvmDReg
+https://mp.weixin.qq.com/s/FxW🐧BKf7FBeR_DxvmDReg
 
 数据流处理器专为神经网络推理和训练计算设计。例如，ADI 的 MAX78000 是一种低功耗混合信号 CNN 加速器，集成了多个并行处理器，支持多种权重精度。苹果的 A16 和 M2 处理器则在性能和功耗之间取得了平衡，适用于高性能边缘设备。Blaze 的 Pathfinder P1600 El Cano AI 处理器整合了 16 个图形流处理器，峰值性能为 16 TOPS，适合高性能计算任务。
 
@@ -444,7 +444,7 @@ https://zhuanlan.zhihu.com/p/714406077?utm_psn=1813525892451946496
 
 ##### 创新活动产品运营 （大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**添加微信💻【**sunjiajunspace】
+> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**添加🛰️💻【**sunjiajunspace】
 
 > ‼️欢迎**推荐/自荐**，期待在**奇绩创坛**遇见更好的你‼️
 
@@ -462,7 +462,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

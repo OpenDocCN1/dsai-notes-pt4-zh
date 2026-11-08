@@ -266,7 +266,7 @@ https://tw.stock.yahoo.com/news/
 
 ### 生数科技在中关村论坛发布视频生成模型Vidu对标Sora
 
-信号源：推特，微信公众号
+信号源：推特，🛰️👸号
 
 https://mp.weixin.qq.com/s/ltdPmQ0nE_UfE8Uf4g7ROQ
 
@@ -358,7 +358,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

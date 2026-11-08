@@ -447,7 +447,7 @@ ChatGP****T**** Wrappe****r是我们当下可做**的
 
 网络上已经有很多prompting的模版（比如这里：https://github.com/PlexPt/awesome-chatgpt-prompts-zh）。把这一层做好，一方面能显著提高大家对ChatGPT的使用效率，一方面也能让我们积累对用户真实需求的理解和揣测，从而和ChatGPT做好适配。
 
-有雄心壮志的创业者可能会对这一前景感到不爽，但是取代iPhone和iOS的公司毕竟不多，而在Apple生态内，也大有可为。微信比锤子值钱多了。
+有雄心壮志的创业者可能会对这一前景感到不爽，但是取代iPhone和iOS的公司毕竟不多，而在Apple生态内，也大有可为。🛰️比锤子值钱多了。
 
 **
 

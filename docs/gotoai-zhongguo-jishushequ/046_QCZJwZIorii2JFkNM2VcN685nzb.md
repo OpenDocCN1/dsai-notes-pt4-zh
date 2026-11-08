@@ -36,7 +36,7 @@
 
 +   **技术栈**：
 
-+   接入层：支持电话（SIP 协议）、网页（WebSocket）、微信公众号
++   接入层：支持电话（SIP 协议）、网页（WebSocket）、🛰️👸号
 
 +   AI 引擎：可切换 GPT-4o-mini / 文心一言 - 社区版 / DeepSeek 开源模型
 

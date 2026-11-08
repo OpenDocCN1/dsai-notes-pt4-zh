@@ -2,7 +2,7 @@
 
 > 来源：[https://aithinkup.feishu.cn/docx/Czj6dSlGaoIFgSxT6Z7cBCxmnTe](https://aithinkup.feishu.cn/docx/Czj6dSlGaoIFgSxT6Z7cBCxmnTe)
 
-[必看文章合集=【AGI观察】微信公众号+知乎](https://aithinkup.feishu.cn/wiki/EpyNwOUe1irXPlkcZZncQfFsn6f)
+[必看文章合集=【AGI观察】🛰️👸号+知乎](https://aithinkup.feishu.cn/wiki/EpyNwOUe1irXPlkcZZncQfFsn6f)
 
 ### 子目录：5.3 实战笔记
 
@@ -12,7 +12,7 @@
 
 发布日期：2025年9月16日
 
-微信链接：https://mp.weixin.qq.com/s/8ZUKa4gEr2dhWZiGC_pyVQ
+🛰️链接：https://mp.weixin.qq.com/s/8ZUKa4gEr2dhWZiGC_pyVQ
 
 **归档理由： “我来告诉你如何...”的句式，清晰地表明这是一篇**传授具体操作技巧的“How-to”文章。
 
@@ -22,7 +22,7 @@
 
 发布日期：2025年4月20日
 
-微信链接：https://mp.weixin.qq.com/s/D7uP1uYGEWk0ogFVJnMO-w
+🛰️链接：https://mp.weixin.qq.com/s/D7uP1uYGEWk0ogFVJnMO-w
 
 **归档理由：** 标题明确指出是“实测”，是对具体产品的上手体验和评测，为读者提供一手的实践参考。
 
@@ -32,7 +32,7 @@
 
 发布日期：2025年2月14日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/a93-Mi0ExMzluuCSZ6NLLA
 
@@ -52,7 +52,7 @@ https://mp.weixin.qq.com/s/a93-Mi0ExMzluuCSZ6NLLA
 
 发布日期：2025年5月25日
 
-微信链接：https://mp.weixin.qq.com/s/Uyt0-DPG6zWF9Xli9JV5iA
+🛰️链接：https://mp.weixin.qq.com/s/Uyt0-DPG6zWF9Xli9JV5iA
 
 归档理由： “实用贴”，内容是关于具体的Prompt技巧，操作性极强。
 
@@ -62,7 +62,7 @@ https://mp.weixin.qq.com/s/a93-Mi0ExMzluuCSZ6NLLA
 
 发布日期：2025年2月2日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/utgInBur1D_Z6NvdQWdyKA
 

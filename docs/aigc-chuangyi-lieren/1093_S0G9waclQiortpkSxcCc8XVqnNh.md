@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/KcWadugQSoStXWxL7JsceEm9nLc](https://aigcreative.feishu.cn/docx/KcWadugQSoStXWxL7JsceEm9nLc)
 
-> 来源：公众号：「阿里健康设计」
+> 来源：👸号：「阿里健康设计」
 
 ![](img/0819b7dd2d4a6064ee27f72e25061c0b.png)
 
@@ -18,7 +18,7 @@
 
 针对电商产品摄影，基础步骤相似。目的都是通过反应商品的形状、结构、性能、色彩和用途等特点，去引导消费者进行购买欲望和决策，通过图片传达产品或品牌的信息和吸引力。
 
-（下图图片截选于微信视频号↓）
+（下图图片截选于🛰️视频号↓）
 
 ![](img/6417254935f4af67eb1ff5071eb57859.png)
 

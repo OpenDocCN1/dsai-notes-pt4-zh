@@ -29,7 +29,7 @@
 |  | 708 | 古文诗词助手——诗墨 | 水滴石穿团队 | 古文诗词助手“诗墨”，基于书生浦语大模型与工具链开发，旨在带领用户探索领略古文诗词的意境与风光，体会中华文化的博大精深。诗墨基于海量高质量古文诗词数据（覆盖唐宋两朝诗人以及两宋时期词人海量诗词数据以及论语等经典古文有关内容）以及复杂多样自我认知数据集，通过 XTuner 分步迭代微调 InternLM2 模型，并具备在线与诗墨对战功能页面，增加互动乐趣，其功能亮点如下： | ![](img/ea27a074e6bdadebd72661ff45fd3129.png) | ![](img/c238e156ec9571f1b1bde4322dfa85ee.png) | https://github.com/Micro647/Poetic-Calligraphy/tree/main | https://www.bilibili.com/video/BV14nVeeeEX2/ |  |  | 诗墨带您遨游绮丽的古文诗词世界！ |
 |  | 718 | 阿法兔—【谁是卧底】AI游戏 | 瓦力向前冲 | **InternLM2**** ****为内核，结合达摩院**** A****gentscope**** ****框架，搭建**** ****AI**** ****小游戏-谁是卧底，1**** ****个真人用户和一群**** ****AI**** ****玩游戏，看谁笑到最后。** | ![](img/41fc4b9bdd60924cdc07f17677a3f1ed.png) | ![](img/8d58cd5ac190abe133871c74b03fb408.png) | https://github.com/BarryYin/AlphaTo | **https://www.bilibili.com**/video/BV1WE421u739/ | https://openxlab.org.cn/apps/detail/Johnwick/AlphaTo |  | AI陪你玩游戏，Let&#x27;s Go |
 |  | 660 | 峡谷小狐仙-多模态角色扮演小助手 | 松龄后裔 | 本**项目****通过构造****生****成训练数据，****采****用 XTuner ****微****调书**生浦语 Inter**nLM2** 模型**的方式，**打造了一个王者**荣耀领域的**角色扮演聊**天****机器人**--峡谷**小狐仙，**同**时结合 ASR技术实现语****音**输入、RAG 检索增强生**成技术****，**生成王者**英雄有关信息, T**T**S 技**术实现声音**克隆和语**音输出、数字人技术实现了视频输出功能。 | ![](img/c978e7468b5e46b9701c4d75b6c7e6d0.png) | ![](img/e142e90954e84877c0024a13f9083b3b.png) | **h**ttps://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset | https://www.bilibili.com/video/BV1JuVJe1EqT/ | https://openxlab.org.cn/apps/detail/YongXie66/DaJi_RolePlay |  | 妲己陪你玩 |
-|  | 673 | 小红书风格旅游助手 | caigouLLM | 本项目主要致力于帮助人们**更快**获取旅游信息，并以**轻松活泼**的方式与用户互动🌟。当前收集旅游攻略，主**要通过小红书、**美团、抖音等 app 搜索，步骤繁琐、信息冗余，需要耗费游客大量精力去收集。因此创造一个可以直接获取旅行信息，并且能以活泼幽默的风格与游客互动的大模型app，就显得非常有必要。 | ![](img/b39480c95b0955705503cf356e005664.png) | ![](img/2e2a1e8e50362add25f6b706be5e2c6f.png) | https://github.com/chengzidl/Travel-Assistant | ** ****https://www.bilibili.com**/video/BV1YiVje8Exo/ |  |  | 出门旅行，再也不用做攻略！ |
+|  | 673 | 📕风格旅游助手 | caigouLLM | 本项目主要致力于帮助人们**更快**获取旅游信息，并以**轻松活泼**的方式与用户互动🌟。当前收集旅游攻略，主**要通过📕、**美团、抖音等 app 搜索，步骤繁琐、信息冗余，需要耗费游客大量精力去收集。因此创造一个可以直接获取旅行信息，并且能以活泼幽默的风格与游客互动的大模型app，就显得非常有必要。 | ![](img/b39480c95b0955705503cf356e005664.png) | ![](img/2e2a1e8e50362add25f6b706be5e2c6f.png) | https://github.com/chengzidl/Travel-Assistant | ** ****https://www.bilibili.com**/video/BV1YiVje8Exo/ |  |  | 出门旅行，再也不用做攻略！ |
 |  | 694 | 动物医生-畜禽疫病诊断助手 | PLF-新牧人 | 本项目旨在搭建一个畜禽疫病诊断大模型，以提高畜禽养殖过程中疾病的早期预警和诊断能力。通过整合多模态数据，包括环境监测数据（如温湿度、CO2、NH3 浓度等）、动物行为数据（如声音、运动轨迹）以及生理数据（如体重变化、体温），构建一个智能化的疾病诊断系统。该系统能够在疾病早期阶段准确识别潜在的健康风险，从而及时采取干预措施，减少疾病传播和经济损失。 | ![](img/ae89d8d99628f8a5fe35b91b4e319da6.png) |  | https://github.com/Xpg74138/Animal-Doctor | https://www.bilibili.com/video/BV1jZ421g7ur/ | https://openxlab.org.cn/apps/detail/Xpg12138/Animal-Doctor |  | 更强的智能诊疗，更好的健康守护 |
 |  | 729 | **Nuclear blueprint Assistan**t - 核电工程图纸识别的视觉大语言模型 | AI扩展坞 |  |  |  | https://github.com/ztfmars/xengineer_blueprint_assistant | [https://www.bilibili.co](https://www.bilibili.com/video/BV1f1421k7r4?p=1&amp;vd_source=6a2cd0e00818aa6143834cc965402bca)m/video/BV1f1421k7r4 |  |  | 蓝图助手，更专业的工业图纸系统 |
 |  | 756 | **医美行业营销大模型** | 象牙智能 | **医美行业营销大模型** 是一个能够根据用户提问或需求描述输出医美相关咨询、整形初步方案、术**后跟踪、营**销方案及营销相关多媒介内容的大模型，有着专业独特的价值魅力，给用户带来更轻松更美的体验🧚‍♀️。 | ![](img/1b008afc5d1e01a3052a24c39705b495.png) | +   营销方案和内容的辅助输出； | **h**ttps://github.com/JerryXieHua/medical-marketing-system | **https://www.bilibili.com**/video/BV1QvgjeJELu/ |  |  | 更轻松时尚的医美营销。 |
@@ -715,17 +715,17 @@ https://openxlab.org.cn/apps/detail/YongXie66/DaJi_RolePlay
 
 <https://player.bilibili.com/player.html?bvid=1JuVJe1EqT&vd_source=ab8ba2b07358c5d0416e918d8b6e61e5>
 
-## 【完成】小红书风格旅游助手
+## 【完成】📕风格旅游助手
 
-**项目名称：小红书风格旅游助手**
+**项目名称：📕风格旅游助手**
 
 **项目简介（150字）：**
 
-本项目主要致力于帮助人们**更快**获取旅游信息，并以**轻松活泼**的方式与用户互动。当前收集旅游攻略，主要**通过小红书、美**团、抖音等 app 搜索，步骤繁琐、信息冗余，需要耗费游客大量精力去收集。创造一个可以直接获取旅游信息，并且能以活泼幽默的方式与游客互动，就显得非常有必要。
+本项目主要致力于帮助人们**更快**获取旅游信息，并以**轻松活泼**的方式与用户互动。当前收集旅游攻略，主要**通过📕、美**团、抖音等 app 搜索，步骤繁琐、信息冗余，需要耗费游客大量精力去收集。创造一个可以直接获取旅游信息，并且能以活泼幽默的方式与游客互动，就显得非常有必要。
 
 在技术路线上，主要分为三步走：
 
-1.  首先利用爬虫爬取小红书上关于旅游的相关信息，通过豆包 api 得到这些信息可能的问题，组成 question- answer 对。
+1.  首先利用爬虫爬取📕上关于旅游的相关信息，通过豆包 api 得到这些信息可能的问题，组成 question- answer 对。
 
 1.  然后选择 InternLM2-chat-7B 作为基座模型，利用 XTuner 库进行 lora 微调，获得微调后的模型。
 
@@ -859,7 +859,7 @@ https://www.bilibili.com/video/BV1f1421k7r4/
 
 +   支持 **TTS 文字转语音**声音互动，支持营销人员**数字分身**宣传引导互动，让医美的营销**获客、活客、留客**变得更轻松又不乏时尚和科技感；
 
-+   支持微信 AI 客服功能，为用户提供 24H 的咨询答疑、医美方案建议和术后跟踪。
++   支持🛰️ AI 客服功能，为用户提供 24H 的咨询答疑、医美方案建议和术后跟踪。
 
 ![](img/c5b1fd9b75eb1ac5ba05e65be89402da.png)
 
@@ -1039,7 +1039,7 @@ G-扭矩，一个有用、有趣、有深度的 AI 助手。现阶段 G-扭矩 �
 | 古文诗词助手——诗墨 | 诗墨带您遨游绮丽的古文诗词世界 |
 | 阿法兔—【谁是卧底】AI 游戏 | AI 陪你玩游戏，Let&#x27;s Go |
 | 峡谷小狐仙-多模态角色扮演小助手 | 妲己陪你玩 |
-| 小红书风格旅游助手 | 出门旅行，再也不用做攻略！ |
+| 📕风格旅游助手 | 出门旅行，再也不用做攻略！ |
 | 动物医生-畜禽疫病诊断助手 | 更强的智能诊疗，更好的健康守护 |
 | Nuclear blueprint Assistant - 核电工程图纸识别的视觉大语言模型 | 蓝图助手，更专业的工业图纸系统 |
 | 医美行业营销大模型 | 更轻松时尚的医美营销 |

@@ -2,7 +2,7 @@
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/BGrDdZ7Q8o3YvWxqXaDcTDGanwd](https://xmgtoagi.feishu.cn/docx/BGrDdZ7Q8o3YvWxqXaDcTDGanwd)
 
-+   **本文作者**：熊猫Jay （公众号 熊猫Jay字节之旅）
++   **本文作者**：熊猫Jay （👸号 熊猫Jay字节之旅）
 
 ## **角色**
 

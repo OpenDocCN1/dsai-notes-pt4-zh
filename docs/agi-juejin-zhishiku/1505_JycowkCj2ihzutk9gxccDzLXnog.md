@@ -1,14 +1,14 @@
-# 使用Coze（扣子）为公众号/企业微信接入：月之暗面 · Kimi聊天机器人（操作教程）
+# 使用Coze（扣子）为👸号/企业🛰️接入：月之暗面 · Kimi聊天机器人（操作教程）
 
 > 来源：[https://agijuejin.feishu.cn/docx/PvDEdaZnJo4pYrxIxLrc7iINnag](https://agijuejin.feishu.cn/docx/PvDEdaZnJo4pYrxIxLrc7iINnag)
 
-> 作者：Aitrainee | 公众号：AI进修生
+> 作者：Aitrainee | 👸号：AI进修生
 
 > 原文：https://mp.weixin.qq.com/s/E7zBXZB1PHTvC-fNb4Bo9A
 
 ![](img/1dea04e55b17840f0c08d367f9a3f077.png)
 
-> 🌟 扣子是字节团队开发的，Kimi是月之暗面团队开发的；Coze国内版可以接入公众号/企业微信充当客服机器人。国外版可以免费使用GPT4模型。
+> 🌟 扣子是字节团队开发的，Kimi是月之暗面团队开发的；Coze国内版可以接入👸号/企业🛰️充当客服机器人。国外版可以免费使用GPT4模型。
 
 C oze 国外 网址：https://www.coze.com/
 
@@ -24,7 +24,7 @@ Coze国内版网址：https://www.coze.cn/
 
 扣子是新一代一站式 AI Bot 开发平台。无论你是否有编程基础，都可以在扣子平台上快速搭建基于 AI 模型的各类问答 Bot，从解决简单的问答到处理复杂逻辑的对话。而且你可以将搭建的 Bot 发布到各类社交平台和通讯软件上，让更多的用户与你搭建的 Bot 聊天。
 
-只有国内版能发布到微信生态环境
+只有国内版能发布到🛰️生态环境
 
 ![](img/c3992070109489ea48c2847f0fbcf979.png)
 
@@ -56,7 +56,7 @@ Bot 的提示(人设与回复逻辑) 是一种自然语言指令，告诉大语�
 
 #### **添加知识库（可选）**
 
-上传公众号文章或资料作为公众号聊天机器人、企业微信客服助手，扣子的知识库功能支持上传外部数据（例如本地文件、实时在线数据），通过向量搜索来检索最相关的内容以回答用户的问题，这可以帮助你的 Bot 更精确地回答问题。
+上传👸号文章或资料作为👸号聊天机器人、企业🛰️客服助手，扣子的知识库功能支持上传外部数据（例如本地文件、实时在线数据），通过向量搜索来检索最相关的内容以回答用户的问题，这可以帮助你的 Bot 更精确地回答问题。
 
 ![](img/ed94140f4d74e374d2d6c46ff54b629e.png)
 
@@ -82,13 +82,13 @@ Bot 的提示(人设与回复逻辑) 是一种自然语言指令，告诉大语�
 
 ![](img/c366cfffe89276cdb3704514973b5526.png)
 
-微信客服按照他的提示配置（企业微信）
+🛰️客服按照他的提示配置（企业🛰️）
 
 详细：https://www.coze.cn/docs/guides/wechat_service_account
 
 ![](img/00c4fec9f3c06f4f321424f6b732f26d.png)
 
-公众号的去后台开通开发权限复制ID到此，如图
+👸号的去后台开通开发权限复制ID到此，如图
 
 详细： https://www.coze.cn/docs/guides/wechat_subscription
 

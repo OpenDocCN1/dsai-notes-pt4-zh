@@ -38,11 +38,11 @@
 
 > 🚀
 
-> [传](https://mp.weixin.qq.com/s/IkzbU54SeuCOqK4Ug3Qe2Q)微信内测接入 DeepSeek；字节 CEO 重申今年 AI 目标；奥斯卡评委：希望《哪吒 2》角逐金奖 | 极客早知道
+> [传](https://mp.weixin.qq.com/s/IkzbU54SeuCOqK4Ug3Qe2Q)🛰️内测接入 DeepSeek；字节 CEO 重申今年 AI 目标；奥斯卡评委：希望《哪吒 2》角逐金奖 | 极客早知道
 
 >
 
-+   微信正在内测接入 DeepSeek R1 大模型，提供快速回答和深度思考两项 AI 搜索功能。
++   🛰️正在内测接入 DeepSeek R1 大模型，提供快速回答和深度思考两项 AI 搜索功能。
 
 +   字节跳动 CEO 梁汝波提出 2025 年 AI 业务重点目标，包括追求智能上限和探索新的交互方式。
 
@@ -58,7 +58,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信内测接入 DeepSeek](https://mp.weixin.qq.com/s/IkzbU54SeuCOqK4Ug3Qe2Q)
++   [🛰️内测接入 DeepSeek](https://mp.weixin.qq.com/s/IkzbU54SeuCOqK4Ug3Qe2Q)
 
 +   [字节跳动 AI 业务目标](https://mp.weixin.qq.com/s/IkzbU54SeuCOqK4Ug3Qe2Q)
 

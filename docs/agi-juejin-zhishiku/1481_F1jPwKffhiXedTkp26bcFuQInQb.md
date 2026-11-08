@@ -120,7 +120,7 @@ coze/扣子，Dify，千帆 AppBuilder，天工 SkyAgents，钉钉 AI 助理，�
 
 ![](img/0db5db8ed24f649a71fbdafeb9515b5d.png)
 
-发布渠道友好，有个人认证的微信公众号也可以。
+发布渠道友好，有个人认证的🛰️👸号也可以。
 
 ![](img/d534b3ce21b24bcd5e98f5a8c6016440.png)
 

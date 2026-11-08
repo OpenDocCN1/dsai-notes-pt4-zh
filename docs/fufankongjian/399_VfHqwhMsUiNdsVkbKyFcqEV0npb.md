@@ -250,7 +250,7 @@ OpenAI CEO萨姆·阿尔特曼（Sam Altman）曾多次公开表示，他认为A
 
 九天Hector 抖音： https://v.douyin.com/lqASAa2Hs_0/
 
-九天Hector 小红书：https://www.xiaohongshu.com/user/profile/62321335000000001000885e
+九天Hector 📕：https://www.xiaohongshu.com/user/profile/62321335000000001000885e
 
 九天Hector YouTube：https://www.youtube.com/channel/UCj8tyDLSxIdivnweBnG4H9Q/
 

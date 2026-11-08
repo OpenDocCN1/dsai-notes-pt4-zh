@@ -1,12 +1,12 @@
-# 微信上能用的MJ及教程
+# 🛰️上能用的MJ及教程
 
 > 来源：[https://my.feishu.cn/docx/PeKOdOTtdodwarxc3WEccebkn2d](https://my.feishu.cn/docx/PeKOdOTtdodwarxc3WEccebkn2d)
 
-首先推荐一个AI工具，免梯子直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
+首先推荐一个AI工具，免🪜直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
 
 家人们 这么好用的MJ你拥有了没
 
-✅免登陆，打开微信就能用
+✅免登陆，打开🛰️就能用
 
 ✅官方正版midjourney，所有功能都有
 

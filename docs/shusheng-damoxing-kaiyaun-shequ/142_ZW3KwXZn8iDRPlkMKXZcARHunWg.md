@@ -258,7 +258,7 @@ pip install einops timm validators sty decord httpx xlsxwriter pandas matplotlib
 
 如果你的电脑上面没有该模型的模型文件，则需要自己下载，然后更改模型路径，也可以不修改，在运行模型评测命令的时候会自动下载模型文件。
 
-> 注：默认下载使用的是Huggingface，需要进行科学上网，也可以使用modelscope将模型下载到本地，然后更改路径。
+> 注：默认下载使用的是Huggingface，需要进行🪜，也可以使用modelscope将模型下载到本地，然后更改路径。
 
 修改VLMEvalKit/vlmeval/config.py下红框所示为
 

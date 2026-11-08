@@ -340,7 +340,7 @@ https://agi.taobao.com/?spm=a2esx.12365734.kbexternalIcon.d_goAgi.1ba32593sccC9v
 
 阿里云PAI以其强大的功能集、易用性和灵活性，成为企业和开发者在人工智能领域的重要工具，广泛应用于金融、电商、医疗、教育、制造业等多个行业，加速了AI技术在实际业务场景中的应用和落地。
 
-# 五、阿里 AI 相关公众号
+# 五、阿里 AI 相关👸号
 
 ![](img/ddd04fa11b730c6d4e75dc91190cdf42.png)
 

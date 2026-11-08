@@ -4,9 +4,9 @@
 
 > 原创：是莫尔索
 
-> 公众号：莫尔索随笔
+> 👸号：莫尔索随笔
 
-> 原文链接：https://mp.weixin.qq.com/s/QHOQQZHXzjA0uDkTNkEJAA
+> 原文链接：https://mp.weixin.qq.com/s/QHO🐧ZHXzjA0uDkTNkEJAA
 
 > 在之前关于[**大模型价格战的文章**](https://mp.weixin.qq.com/s?__biz=Mzg2OTk1NDQ4Ng==&mid=2247485201&idx=1&sn=f9df66d3523439bfbb14ff88c812d8b0&scene=21#wechat_redirect)中，我指出豆包大模型 API 当时只有企业认证的用户可以使用，最近开放给了个人（火山方舟向个人开发者开放啦，这篇攻略请查收），所以个人开发者经实名认证后也可以使用，这篇文章我将从实际开发接入的角度出发，来综合分享下豆包()大模型的开发体验，最后谈谈除了便宜，它的能力究竟适合做 AI 应用开发吗
 
@@ -18,7 +18,7 @@
 
 74篇原创内容
 
-公众号
+👸号
 
 ### **测试指标**
 

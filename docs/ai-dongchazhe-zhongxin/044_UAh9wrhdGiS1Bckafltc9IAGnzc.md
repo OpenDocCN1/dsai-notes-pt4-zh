@@ -166,7 +166,7 @@
 
 ![](img/b0749cf7c22af6afa7213204f7e06e6d.png)
 
-本文收录 公众号赛博禅心  内容https://mp.weixin.qq.com/s/AyaF3oIO98pzNzZjYiIBgw
+本文收录 👸号赛博禅心  内容https://mp.weixin.qq.com/s/AyaF3oIO98pzNzZjYiIBgw
 
 # 最后
 

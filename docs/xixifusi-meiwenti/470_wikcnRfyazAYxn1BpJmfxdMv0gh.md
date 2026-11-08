@@ -518,7 +518,7 @@ Web3 这个名词代表了人们对自由的向往，想要通过一系列新技
 
 音频例如 Apple Poscast, 喜马拉雅 FM，小宇宙等
 
-文章例如 Medium，self-owned Blog，Mirror，公众号等
+文章例如 Medium，self-owned Blog，Mirror，👸号等
 
 杂想例如 Twitter，知乎回复等
 
@@ -604,7 +604,7 @@ Web3 这个名词代表了人们对自由的向往，想要通过一系列新技
 
 如果想打发时间的话，直接去 Home 页面就行，就跟以前逛知乎一样，时间如流水。
 
-## 公众号
+## 👸号
 
 +   SevenUp DAO，最新热点文章更新，质量都蛮高的
 

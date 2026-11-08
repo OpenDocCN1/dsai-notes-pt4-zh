@@ -24,7 +24,7 @@
 
 OpenClaw 是一个开源的通用型 AI 智能体 (AI Agent)。与传统的聊天机器人不同，它不是"你问我答"的模式——而是能够自主规划、调用工具、执行多步骤任务，本质上更接近一个 7×24 在线的"数字员工"。
 
-**Op**enClaw 由奥地**利开发者 Pete**r Steinberger 创建（最初叫 Clawd，后更名为 Moltbot，最终定名 OpenClaw），它之所以能引爆全球开发者社区，核心在于两个字：通用。通过其独创的网关系统 (Gateway System)，OpenClaw 可以接入几乎所有主流平台——WhatsApp、Discord、iMessage、Slack、飞书、微信——同时支持 Claude、GPT、Gemini、DeepSeek 等多种底层大模型。这使得 OpenClaw 成为真正意义上"接入万物，指挥一切"的通用 Agent 平台。
+**Op**enClaw 由奥地**利开发者 Pete**r Steinberger 创建（最初叫 Clawd，后更名为 Moltbot，最终定名 OpenClaw），它之所以能引爆全球开发者社区，核心在于两个字：通用。通过其独创的网关系统 (Gateway System)，OpenClaw 可以接入几乎所有主流平台——WhatsApp、Discord、iMessage、Slack、飞书、🛰️——同时支持 Claude、GPT、Gemini、DeepSeek 等多种底层大模型。这使得 OpenClaw 成为真正意义上"接入万物，指挥一切"的通用 Agent 平台。
 
 ![](img/147f837c85114ae1c79bddb0d527194c.png)
 

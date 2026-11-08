@@ -62,7 +62,7 @@ Github仓库：https://github.com/THUDM
 
 ---
 
-# 🏠 公众号
+# 🏠 👸号
 
 ![](img/ad28021854c6f81d35c0ef2fb5b5345a.png)
 

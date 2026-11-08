@@ -410,13 +410,13 @@ n8n AI Agent 工作流设计提示词框架
 
 ![](img/9edd0056bfc1cd5975732b23afa870f7.png)
 
-微信小程序开发Cursor Rule框架介绍
+🛰️小程序开发Cursor Rule框架介绍
 
-这套微信小程序开发Cursor Rule框架为个人开发者、小团队和产品经理设计，旨在通过结构化AI对话将小程序创意转化为实际代码。
+这套🛰️小程序开发Cursor Rule框架为个人开发者、小团队和产品经理设计，旨在通过结构化AI对话将小程序创意转化为实际代码。
 
-这套框架适合初学者和有一定开发经验的人员使用，能够帮助用户更系统地完成微信小程序的开发过程，减少开发中的常见问题，让创意实现变得更加有序和可控。
+这套框架适合初学者和有一定开发经验的人员使用，能够帮助用户更系统地完成🛰️小程序的开发过程，减少开发中的常见问题，让创意实现变得更加有序和可控。
 
-**🔗 原文链接： **[AI 编程 | 微信小程序 Cursor Rule 框架](https://feicaiclub.feishu.cn/wiki/FvSLwJCf6iIMt8k9tS9cj7fxnjc?from=from_copylink)**◀️ 戳这里）**
+**🔗 原文链接： **[AI 编程 | 🛰️小程序 Cursor Rule 框架](https://feicaiclub.feishu.cn/wiki/FvSLwJCf6iIMt8k9tS9cj7fxnjc?from=from_copylink)**◀️ 戳这里）**
 
 ---
 
@@ -598,11 +598,11 @@ Google最近发布的一篇名为"Agents"的白皮书展望了人工智能在商
 
 ![](img/4fa38c09fa518e6c544f93b13d6e9e79.png)
 
-微信公众号文章生成提示词框架介绍
+🛰️👸号文章生成提示词框架介绍
 
-这套提示词框架是为创作微信公众号文章而设计的 - 无论你想做行业分析、生活指南还是知识科普，都能用上。它特别适合需要制作逻辑清晰、有传播力的公众号内容的创作者。这个框架的目标是帮你将各类素材转化为适合在微信平台传播的文章。
+这套提示词框架是为创作🛰️👸号文章而设计的 - 无论你想做行业分析、生活指南还是知识科普，都能用上。它特别适合需要制作逻辑清晰、有传播力的👸号内容的创作者。这个框架的目标是帮你将各类素材转化为适合在🛰️平台传播的文章。
 
-**🔗 原文链接： **[自媒体 | 微信公众号文章生成提示词框架](https://feicaiclub.feishu.cn/wiki/UyumwOUisivFVckYxjgcoHWDnHb?from=from_copylink)**◀️ 戳这里）**
+**🔗 原文链接： **[自媒体 | 🛰️👸号文章生成提示词框架](https://feicaiclub.feishu.cn/wiki/UyumwOUisivFVckYxjgcoHWDnHb?from=from_copylink)**◀️ 戳这里）**
 
 ![](img/c4cab9b65b2fc7c3eebade07aed7d727.png)
 

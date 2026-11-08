@@ -158,9 +158,9 @@
 
 <https://larkcommunity.feishu.cn/share/base/dashboard/shrcnW79a8rYgKwrlM4qXHh9Oyc?iframeFrom=docx&ccm_open=iframe>
 
-## 小红书热点分析系统：
+## 📕热点分析系统：
 
-[影刀 RPA 抓取小红书热点进入飞书多维表格](https://bytedance.larkoffice.com/docx/JrdUdDf0IoE5vHxZ1hicU0UWn7c?from=from_copylink)
+[影刀 RPA 抓取📕热点进入飞书多维表格](https://bytedance.larkoffice.com/docx/JrdUdDf0IoE5vHxZ1hicU0UWn7c?from=from_copylink)
 
 ## 抖音评论互动系统：
 
@@ -280,7 +280,7 @@
 
 +   脚本生成 & 内容管理：[💥 把「碎碎念」秒变爆款的「AI 灵感印钞机」 ](https://larkcommunity.feishu.cn/wiki/SPEPws7SqiUunWkpmUec10zNnXb?from=from_copylink)（来自：[何同学の第二大脑](https://bytedance.larkoffice.com/base/X36bbLc2xamVVvsSAmIczo1On9e?table=tblD1OnnbzwWw62M&view=vewIhV2L3Z)）
 
-+   2025 运势赛博占卜：表单：🔮 De[🔮 赛博占卜师模板 - DeepSeek字段](https://bytedance.larkoffice.com/wiki/TlJAwOmNsi7x4ckxQQfcvMn8nIe?from=from_copylink)pSeek [赛博占卜师 DeepSeek｜一键领取同款多维表格模板](https://bytedance.larkoffice.com/wiki/LxVxwpiiBi1Ad1kFGCHcnbqZnyf?from=from_copylink) 2025运势赛博占卜 🔮｜模板： ｜说明文档：
++   2025 运势赛博占卜：表单：🔮 De[🔮 赛博占卜师模板 - DeepSeek字段](https://bytedance.larkoffice.com/wiki/TlJAwOmNsi7x4ckx🐧fcvMn8nIe?from=from_copylink)pSeek [赛博占卜师 DeepSeek｜一键领取同款多维表格模板](https://bytedance.larkoffice.com/wiki/LxVxwpiiBi1Ad1kFGCHcnbqZnyf?from=from_copylink) 2025运势赛博占卜 🔮｜模板： ｜说明文档：
 
 +   [2025 新年 flag](https://bytedance.larkoffice.com/share/base/form/shrcn59Hg9hHoSOJNvTltw7l9Ig)：表单：[2025 新年 Flag 模板 - DeepSeek](https://bytedance.larkoffice.com/base/MCKjbDUNGajFdrsxoakcn9Zsnbf?table=tblMLk8DkJ97vuzd&view=vewcgLnRqJ)025 新年 Flag｜模板：
 
@@ -298,7 +298,7 @@
 
 +   [史诗级效率工具！3 个案例教你玩转，飞书多维表格+Deepseek组合](https://go1coya2a7.feishu.cn/docx/UwQgdCPB6o83SixTZ7OcAkVhnBg?from=from_copylink)**（by 歸藏）**
 
-+   跨平台内容营销：[推特文案转小红书和微博](https://go1coya2a7.feishu.cn/wiki/FFbYw07wgiFOJzkkS81cF6h0nOb?from=from_copylink)
++   跨平台内容营销：[推特文案转📕和🧣](https://go1coya2a7.feishu.cn/wiki/FFbYw07wgiFOJzkkS81cF6h0nOb?from=from_copylink)
 
 +   AI 分析论文：[论文分析工具](https://go1coya2a7.feishu.cn/wiki/P22jwEs5til1a0kjC1LcSFDrnQf?from=from_copylink)
 
@@ -310,7 +310,7 @@
 
 +   头像生成识别：[头像暴露了你的性格](https://datakhazix.feishu.cn/base/FKKKb3k5VaPE2zsHxwScz1AenFh?table=tblpW2nFFf6ompE6&view=vewD3amCBc)**（by 卡兹克）**
 
-+   跨平台内容营销：[推特文案转小红书和微博](https://go1coya2a7.feishu.cn/wiki/FFbYw07wgiFOJzkkS81cF6h0nOb?table=tbl2IbuWn9RzM0sb&view=vewhyOyABF)**（by 歸藏）**
++   跨平台内容营销：[推特文案转📕和🧣](https://go1coya2a7.feishu.cn/wiki/FFbYw07wgiFOJzkkS81cF6h0nOb?table=tbl2IbuWn9RzM0sb&view=vewhyOyABF)**（by 歸藏）**
 
 +   商品链接分析：[商品链接分析工具](https://yahr2pq00ql.feishu.cn/base/Q0ODbnKYvaQpKzsJV3McvXC4nwh?table=tbltsHwB3hNaYLeO&view=vewoZByLaf)**（by 关亚斌）**
 
@@ -410,9 +410,9 @@
 
 ## 卖模板：[Cayson介绍-靠模板年入百万+的maker](https://bytedance.larkoffice.com/wiki/OT97wGIsPib4tbkZxBocb15nnXf?from=from_copylink)
 
-Cayson 卖记账模板@小红书：
+Cayson 卖记账模板@📕：
 
-> 用飞书多维表格从 0 起号、年入百万、副业变创业的真实案例｜小红书是最好的轻应用发布平台
+> 用飞书多维表格从 0 起号、年入百万、副业变创业的真实案例｜📕是最好的轻应用发布平台
 
 ![](img/b76a9fe963036cdb85d0d0d3123a21f1.png)
 
@@ -426,7 +426,7 @@ Cayson 卖记账模板@小红书：
 
 [快捷指令 x 多维表格.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O1cvbnFwxob8RHxuUyLc83Tqnjd)
 
-揪只兔子卖个人生产力模板@小红书：
+揪只兔子卖个人生产力模板@📕：
 
 ![](img/86bf52750ffbc209fa7fc33706b93a3a.png)
 
@@ -462,7 +462,7 @@ Cayson 卖记账模板@小红书：
 
 > **收费：**按照 800 元/人天收费，基本 1.5 周可结项，可行性咨询/需求沟通不收费
 
-> **沟通链路：**引流至微信沟通需求
+> **沟通链路：**引流至🛰️沟通需求
 
 ![](img/f315c3768729dae54ea6ba35983e3ee6.png)
 

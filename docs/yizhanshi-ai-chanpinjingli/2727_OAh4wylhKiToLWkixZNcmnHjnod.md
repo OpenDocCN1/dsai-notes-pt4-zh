@@ -30,7 +30,7 @@
 
 > 🔗 文中引用的链接
 
-+   [原微信文章](https://mp.weixin.qq.com/s/uTEx3FrJjBNrBwvOunTBiQ)
++   [原🛰️文章](https://mp.weixin.qq.com/s/uTEx3FrJjBNrBwvOunTBiQ)
 
 +   [论文1：The Bayesian Geometry of T](https://arxiv.org/abs/2512.22471)ransformer Attention
 

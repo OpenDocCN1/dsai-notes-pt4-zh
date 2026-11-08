@@ -38,7 +38,7 @@
 
 > [ht](https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb)tps://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb
 
-> 温馨提示：访问此网站需要科学上网，请自行解决哦~
+> 温馨提示：访问此网站需要🪜，请自行解决哦~
 
 打开链接后，你可以看到如下内容。代码看不懂没关系，跟着接下来的步骤一步步操作就好了。
 
@@ -173,7 +173,7 @@ image_prompts = {
 
 > https://discord.gg/XGZrFFCRfN
 
-> 温馨提示：访问此网站需要科学上网，请自行解决哦~
+> 温馨提示：访问此网站需要🪜，请自行解决哦~
 
 ### 2.3.2 Set Up（设置）
 

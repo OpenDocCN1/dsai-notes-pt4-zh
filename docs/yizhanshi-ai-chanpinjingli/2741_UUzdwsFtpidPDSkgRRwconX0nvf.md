@@ -20,7 +20,7 @@
 
 +   阿里模型+云底座优势显著，但C端入口待验证，正通过打通履约网络探索AI Agent路径。
 
-+   腾讯手握微信旧船票，但模型和基建处于追赶阶段，微信隐私定位限制其AI-native转型。
++   腾讯手握🛰️旧船票，但模型和基建处于追赶阶段，🛰️隐私定位限制其AI-native转型。
 
 +   竞争已升级为理解AI用户价值交付，阿里云预判AI市场空间或达原有IT预算10倍以上。
 
@@ -44,9 +44,9 @@
 
 +   新增技能商店，专业人士上架售卖技能，普通用户直接调用，实现知识经验变现复用。
 
-+   支持内容转小红书图文/信息图，生成的图像可直接编辑修改，方便分享。
++   支持内容转📕图文/信息图，生成的图像可直接编辑修改，方便分享。
 
-+   推出长期计划功能，自动规划执行长期任务（如小红书账号运营），按节点执行复盘。
++   推出长期计划功能，自动规划执行长期任务（如📕账号运营），按节点执行复盘。
 
 +   功能门槛低小白可用，但部分界面需优化，网页版推送提醒待完善。
 
@@ -56,7 +56,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信原文链接](https://mp.weixin.qq.com/s/CmmXDIH9JntH8N78ouO_cw)
++   [🛰️原文链接](https://mp.weixin.qq.com/s/CmmXDIH9JntH8N78ouO_cw)
 
 +   [SpaceX战略分析报告](https://www.coze.cn/share-product/7596696978902237494?index=0&uri=7596696978902237494%2Fspacex_strategic_analysis_report-b8e28e8904.md&filename=spacex_strategic_analysis_report.md&extra_params=%7B%7D&share_id=7596701828899127587&secret=tZXttDv5&from=file)
 
@@ -176,6 +176,6 @@
 
 +   [FT相关内容](https://www.ft.com/content/d8fec7b5-f64a-4c5b-8439-6b8fe557be95)
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/fF4ePkwm_f9j6xE0B1vRlQ)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/fF4ePkwm_f9j6xE0B1vRlQ)
 
 +   [From words to worlds: Spatia](https://drfeifei.substack.com/p/from-words-to-worlds-spatial-intelligence)l Intelligence（重复链接）

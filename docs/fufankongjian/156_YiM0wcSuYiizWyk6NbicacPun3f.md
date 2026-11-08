@@ -248,7 +248,7 @@ mategen = MateGenClass(api_key = &#x27;YOUR_API_KEY&#x27;,
 已完成初始化，MateGen可随时调用！
 ```
 
-> 公开课前30席添加微信扫码助教，即可领取300w token MateGen API-KEY！报名正式课程还有更多额度赠送哦~
+> 公开课前30席添加🛰️扫码助教，即可领取300w token MateGen API-KEY！报名正式课程还有更多额度赠送哦~
 
 ![](img/41bb964dd15dde3a9ebbff14055d536d.png)
 

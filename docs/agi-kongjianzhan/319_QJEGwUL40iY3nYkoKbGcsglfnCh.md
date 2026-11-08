@@ -2,7 +2,7 @@
 
 > 来源：[https://agispace.feishu.cn/docx/Gu8QdkkQvozTUZxA9QrcrsLhnDd](https://agispace.feishu.cn/docx/Gu8QdkkQvozTUZxA9QrcrsLhnDd)
 
-> 公众号：抄就完了
+> 👸号：抄就完了
 
 >
 
@@ -22,4 +22,4 @@
 
 [大家都说通义大模型好，究竟好在哪？](https://agispace.feishu.cn/wiki/ABcLwKCIJiMRwPk5RlVc1oHznob)
 
-[10分钟手把手用Coze在家做一整套写真集！（小红书爆火系列）](https://agispace.feishu.cn/wiki/EvllwjmJdi1ny4k73ixcfemrnPh)
+[10分钟手把手用Coze在家做一整套写真集！（📕爆火系列）](https://agispace.feishu.cn/wiki/EvllwjmJdi1ny4k73ixcfemrnPh)

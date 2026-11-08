@@ -4,9 +4,9 @@
 
 > MetaGPT在中国内有众多活跃的开源社区，欢迎对多智能体感兴趣的朋友们来一起交流学习！
 
-## 微信社区
+## 🛰️社区
 
-> 微信添加：MetaGPT_official
+> 🛰️添加：MetaGPT_official
 
 > 备注：MG社区加入
 

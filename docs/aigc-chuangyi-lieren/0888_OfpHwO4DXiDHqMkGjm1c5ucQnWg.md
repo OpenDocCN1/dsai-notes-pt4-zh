@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/ETXBddxElo34lVxDouwc0Lryn9g](https://aigcreative.feishu.cn/docx/ETXBddxElo34lVxDouwc0Lryn9g)
 
-> 公众号：AIGC创意猎人，作者：何先森
+> 👸号：AIGC创意猎人，作者：何先森
 
 > 链接：https://mp.weixin.qq.com/s/rrofqvmtmM-opmmHBM0QNg
 

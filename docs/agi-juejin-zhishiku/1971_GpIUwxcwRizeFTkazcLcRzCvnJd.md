@@ -1,6 +1,6 @@
 # 06.05-Hugging Face 称其开源机器人模型 SmolVLA 效率极高，能在苹果 MacBook 上运行
 
-> 来源：[https://agijuejin.feishu.cn/docx/QQ9zdOOhPof0WaxnUa9cBIWgnwc](https://agijuejin.feishu.cn/docx/QQ9zdOOhPof0WaxnUa9cBIWgnwc)
+> 来源：[https://agijuejin.feishu.cn/docx/🐧9zdOOhPof0WaxnUa9cBIWgnwc](https://agijuejin.feishu.cn/docx/🐧9zdOOhPof0WaxnUa9cBIWgnwc)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 06 月 05 日)
 
@@ -164,7 +164,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/858/271.htm)
 
 ![](img/62791b1a5a406a287e48d09788e920da.png)
 
-新浪新闻接入DeepSeek，推出AI辅助工具「智慧小浪」，助用户高效获取新闻要点。微博「评论罗伯特」升级，人味更足，粉丝量达176w 。此外，微博还打造了多款爆款应用。这背后是「知微」大模型的助力，它原生融合多模态技术，聚焦垂直场景。微博COO王巍称，未来「知微」将在用户互动、内容生产与消费方面发挥更大作用。
+新浪新闻接入DeepSeek，推出AI辅助工具「智慧小浪」，助用户高效获取新闻要点。🧣「评论罗伯特」升级，人味更足，粉丝量达176w 。此外，🧣还打造了多款爆款应用。这背后是「知微」大模型的助力，它原生融合多模态技术，聚焦垂直场景。🧣COO王巍称，未来「知微」将在用户互动、内容生产与消费方面发挥更大作用。
 
 ### 💡 “AI 教父”本希奥宣布开发“诚信”系统，防范智能体欺骗人类
 
@@ -176,7 +176,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/858/230.htm)
 
 ### 💡 刚刚，Bengio官宣创业！急筹3000万专治AI欺骗人类，图灵三巨头全下场
 
-新智元 | [阅读原文](https://www.163.com/dy/article/K176QQBL0511ABV6.html?spss=dy_author)
+新智元 | [阅读原文](https://www.163.com/dy/article/K176🐧BL0511ABV6.html?spss=dy_author)
 
 ![](img/4f678d7571b9254f64c0583b01c1583c.png)
 

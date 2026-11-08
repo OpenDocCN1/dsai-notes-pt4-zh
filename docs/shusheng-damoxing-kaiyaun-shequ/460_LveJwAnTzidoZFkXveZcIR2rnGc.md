@@ -26,7 +26,7 @@ Agent 在接收输入后，首先由模型根据当前的记忆进行思考与�
 
 **小组长：45度角仰望天空**
 
-**想要加入 Agent SIG 的同学欢迎微信联系浦语小助手（微信搜索 Inte**rnLM）或者小组长45度角仰望天空（微信搜索 Skyward45Degree）
+**想要加入 Agent SIG 的同学欢迎🛰️联系浦语小助手（🛰️搜索 Inte**rnLM）或者小组长45度角仰望天空（🛰️搜索 Skyward45Degree）
 
 ## 在 Agent SIG 可以做什么？
 

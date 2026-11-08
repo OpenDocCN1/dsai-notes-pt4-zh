@@ -1,4 +1,4 @@
-# Coze打造公众号智能知识问答客服bot
+# Coze打造👸号智能知识问答客服bot
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/XcH9d3d6Poc3VNx45jvcaXQxnje](https://qqs7y1hozd1.feishu.cn/docx/XcH9d3d6Poc3VNx45jvcaXQxnje)
 
@@ -106,7 +106,7 @@
 
 1.  （可选）你也可以为 Bot 添加开场白，让用户更好的了解 Bot 的功能。
 
-开场白功能目前支持豆包、微信公众号（服务号）。
+开场白功能目前支持豆包、🛰️👸号（服务号）。
 
 ### 步骤4：测试你的 Bot
 

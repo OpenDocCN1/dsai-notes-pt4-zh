@@ -238,7 +238,7 @@ GLM-4.5 可通过 [Z.ai](https://chat.z.ai/) 平台访问，方法是选择 GLM-
 
 <https://zhipu-ai.feishu.cn/share/base/form/shrcnA7fhPVpr2gpfcBlHHMr3vd?iframeFrom=docx&ccm_open=iframe>
 
-# 🏠 公众号
+# 🏠 👸号
 
 ![](img/8c51e6df3235987f7c838630215f5fde.png)
 

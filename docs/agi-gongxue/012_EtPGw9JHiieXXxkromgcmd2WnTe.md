@@ -16,7 +16,7 @@ https://www.yingdao.com/
 
 [htt](https://www.bilibili.com/video/BV1B34y157uh/?spm_id_from=333.337.search-card.all.click&vd_source=c5ebd3064e1721adeb8c8bb5e5a42ed4)ps://www.bilibili.com/video/BV1B34y157uh/?spm_id_from=333.337.search-card.all.click&vd_source=c5ebd3064e1721adeb8c8bb5e5a42ed4
 
-案例：微信群自动发送欢迎语
+案例：🛰️群自动发送欢迎语
 
 [https://mp.weixin.qq.com/s/xS](https://mp.weixin.qq.com/s/xSA8awsKJ0w_zP3gJOqqmA)A8awsKJ0w_zP3gJOqqmA
 
@@ -28,7 +28,7 @@ https://www.yingdao.com/
 
 [h](https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ggc4i2/ygaqzgdn4nowhotz)ttps://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ggc4i2/ygaqzgdn4nowhotz
 
-操作：读取微博信息
+操作：读取🧣信息
 
 ## automa
 
@@ -46,7 +46,7 @@ https://www.yingdao.com/
 
 国际：https://coze.com
 
-操作：爆款重写小红书
+操作：爆款重写📕
 
 [h](https://www.coze.cn/space/7431429122523774985/bot/7460459686773456947)ttps://www.coze.cn/space/7431429122523774985/bot/7460459686773456947
 

@@ -1,10 +1,10 @@
-# 一套提示词帮你实现小红书、公众号封面自由
+# 一套提示词帮你实现📕、👸号封面自由
 
 > 来源：[https://my.feishu.cn/docx/XPJqdt7SMo2niexYxkPcOJYKn9g](https://my.feishu.cn/docx/XPJqdt7SMo2niexYxkPcOJYKn9g)
 
 内容来源：https://mp.weixin.qq.com/s/OFCgFrXNQgIT2ho3V-4Oag
 
-本文分享帮你一键生成小红书&公众号封面的提示词，而且还是模块化设计。
+本文分享帮你一键生成📕&👸号封面的提示词，而且还是模块化设计。
 
 ![](img/757b0bd992789b586a7d23b1dfaa88e5.png)
 

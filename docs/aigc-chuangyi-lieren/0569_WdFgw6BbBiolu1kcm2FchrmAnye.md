@@ -24,7 +24,7 @@
 
 ![](img/b8f99a6904a256c21b14a17b40536c55.png)
 
-[图解谷歌2025年度搜索榜单 by 公众号：AIGC创意猎人.pdf](https://aigcreative.feishu.cn/wiki/IP3xwfa2iiYdInk1Mn0cCjSBnef)DF原文档【创意猎人飞书AI知识库】链接：
+[图解谷歌2025年度搜索榜单 by 👸号：AIGC创意猎人.pdf](https://aigcreative.feishu.cn/wiki/IP3xwfa2iiYdInk1Mn0cCjSBnef)DF原文档【创意猎人飞书AI知识库】链接：
 
 下面我们一起来看一看，通过谷歌全球用户的搜索，我们能从中洞察到哪些趋势？
 

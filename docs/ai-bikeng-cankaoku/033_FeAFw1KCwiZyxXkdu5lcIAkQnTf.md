@@ -11,7 +11,7 @@
 | 油管 | yt | http://youtube.com/results?q={query} | http://suggestqueries.google.com/complete/search?client=youtube&amp;ds=yt&amp;client=firefox&amp;q={query} |
 | 推特 | t | https://twitter.com/search?q={query} | http://suggestqueries.google.com/complete/search?client=witter&amp;ds=yt&amp;client=firefox&amp;q={query} |
 | B站 | bl | https://search.bilibili.com/all?keyword={query}&amp;order=click | https://search.bilibili.com/all?keyword={query}&amp;tids=36 |
-| 小红书 | xhs | https://www.xiaohongshu.com/search_result?keyword={query} | https://www.xiaohongshu.com/search_result?keyword={query} |
+| 📕 | xhs | https://www.xiaohongshu.com/search_result?keyword={query} | https://www.xiaohongshu.com/search_result?keyword={query} |
 | GitHub | git | https://github.com/search?q={query} | cmd /k gh {query} |
 | 抖音 | dy | https://www.douyin.com/search/{query} | cmd /k tt {query} |
 
@@ -29,7 +29,7 @@ X=传统搜索/AI/社媒
 
 ## yt-dlp下载视频
 
-微信输入法添加常用语输入下载命令
+🛰️输入法添加常用语输入下载命令
 
 ```
 yt-dlp --cookies &quot;D:\web3/cookies.txt&quot; -f &quot;bestvideo+bestaudio&quot; --merge-output-format mp4 

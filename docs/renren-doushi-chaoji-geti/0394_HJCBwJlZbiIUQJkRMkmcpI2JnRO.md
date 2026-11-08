@@ -1,28 +1,28 @@
-# 小红书虚拟电商，起单店，投放，规模化放大，干货纯享版
+# 📕虚拟电商，起单店，投放，规模化放大，干货纯享版
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/APrCdsbuooFRasx7wjbcD4wSnXb](https://xuqiwei1986.feishu.cn/docx/APrCdsbuooFRasx7wjbcD4wSnXb)
 
-哈喽各位，我是更绪，在成都这边创业，公司围绕小红书平台来做业务，做小红书虚拟电商，赚C端的钱，然后服务企业用户，赋能他们在小红书获客，赚B端的服务费和后端抽成。
+哈喽各位，我是更绪，在成都这边创业，公司围绕📕平台来做业务，做📕虚拟电商，赚C端的钱，然后服务企业用户，赋能他们在📕获客，赚B端的服务费和后端抽成。
 
-之前分享过很多小红书虚拟电商的内容，有一段时间了。
+之前分享过很多📕虚拟电商的内容，有一段时间了。
 
 随着实操的深入，思路越来越清晰，加之平台也在不断变化，所以今天来给大家更新一波玩法和思路。
 
 本篇只讲最新实操和自己的最新理解，不讲理论、背景、以及一些基础的店铺上架之类的操作，相关内容可以查看往期我的精华帖。
 
-1.  [洞悉蓝海搜索需求，把小红书当淘宝，卖虚拟资料，完成被动收入闭环，实战经验分享](https://qxgrvnd4nbk.feishu.cn/docx/EFVWdpgREoZPXGx6CPQcXpiknFf?from=from_copylink)
+1.  [洞悉蓝海搜索需求，把📕当淘宝，卖虚拟资料，完成被动收入闭环，实战经验分享](https://qxgrvnd4nbk.feishu.cn/docx/EFVWdpgREoZPXGx6CPQcXpiknFf?from=from_copylink)
 
-1.  [小红书十大“谣言”合辑，承认是自己的问题，真的很难！](https://qxgrvnd4nbk.feishu.cn/docx/RqzhdH0oGoO0pNxGbPCcebwmnoc?from=from_copylink)
+1.  [📕十大“谣言”合辑，承认是自己的问题，真的很难！](https://qxgrvnd4nbk.feishu.cn/docx/RqzhdH0oGoO0pNxGbPCcebwmnoc?from=from_copylink)
 
-1.  [一人公司，用聚光投放，一年时间，从小红书加了4W客户，深度复盘！ ](https://qxgrvnd4nbk.feishu.cn/docx/JtloduXlUow6mzx9HHTcO9V2nub?from=from_copylink)
+1.  [一人公司，用聚光投放，一年时间，从📕加了4W客户，深度复盘！ ](https://qxgrvnd4nbk.feishu.cn/docx/JtloduXlUow6mzx9HHTcO9V2nub?from=from_copylink)
 
-1.  [2025年，请用小红书的搜索流量给业务赋能！](https://qxgrvnd4nbk.feishu.cn/docx/PRuSdcXRjoSYtAxNyDrc5IQBncf?from=from_copylink)
+1.  [2025年，请用📕的搜索流量给业务赋能！](https://qxgrvnd4nbk.feishu.cn/docx/PRuSdcXRjoSYtAxNyDrc5IQBncf?from=from_copylink)
 
-1.  [2025年小红书电商、投放、获客、本地生活有哪些机会？](https://qxgrvnd4nbk.feishu.cn/docx/BhYhd1sB8o2uQHxIOHMcGWYjnIg?PdWaR8=1)
+1.  [2025年📕电商、投放、获客、本地生活有哪些机会？](https://qxgrvnd4nbk.feishu.cn/docx/BhYhd1sB8o2uQHxIOHMcGWYjnIg?PdWaR8=1)
 
-1.  [用矩阵废号流玩法，在小红书获客，实操分享](https://qxgrvnd4nbk.feishu.cn/docx/ZyHudga8iojiknxtn80cxwGJnTb?qx818=1)
+1.  [用矩阵废号流玩法，在📕获客，实操分享](https://qxgrvnd4nbk.feishu.cn/docx/ZyHudga8iojiknxtn80cxwGJnTb?qx818=1)
 
-1.  [如何提高做小红书虚拟电商的成功概率？](https://qxgrvnd4nbk.feishu.cn/docx/BNCzdC8eJo6WvZx3RKfccxJanKh)
+1.  [如何提高做📕虚拟电商的成功概率？](https://qxgrvnd4nbk.feishu.cn/docx/BNCzdC8eJo6WvZx3RKfccxJanKh)
 
 本篇文章用于解决下面6个问题。
 
@@ -148,7 +148,7 @@
 
 搜索量很大，内容+评论互动数据不错，代表有需求
 
-小红书站内卖得不多，代表竞争不激烈
+📕站内卖得不多，代表竞争不激烈
 
 **客单价较高，用户有付费意识**
 
@@ -156,7 +156,7 @@
 
 ## （3）四种选品的具体方法
 
-### **方式一：小红书千帆--市场行情**
+### **方式一：📕千帆--市场行情**
 
 核心功能：用官方数据看市场真相，哪些商品真正在赚钱，哪些账号做得好
 
@@ -242,7 +242,7 @@ https://yemashuju.com/web/
 
 下面的提示词，大家可以参考一下。
 
-我在小红书上卖XX相关的虚拟资料，现在时间是x月x号，我想选一些品来布局，根据我的经验，小红书的流量大概在笔记发出去的半个月后开始慢慢起来。能不能给我推荐至少20个品，符合现在这个时间点的xx虚拟资料，资料要给出具体是什么，再给出详细的推荐理由，告诉我这些品击中了用户的什么学习需求。
+我在📕上卖XX相关的虚拟资料，现在时间是x月x号，我想选一些品来布局，根据我的经验，📕的流量大概在笔记发出去的半个月后开始慢慢起来。能不能给我推荐至少20个品，符合现在这个时间点的xx虚拟资料，资料要给出具体是什么，再给出详细的推荐理由，告诉我这些品击中了用户的什么学习需求。
 
 ![](img/de3b4e026070362c302ab9fa8d06b63d.png)
 
@@ -292,15 +292,15 @@ https://yemashuju.com/web/
 
 +   在其他平台已经火起来
 
-+   小红书还没有大量内容
++   📕还没有大量内容
 
 +   搜索量开始上升
 
 **为什么要关注站外？**
 
-+   其他平台火了，小红书用户也会搜索
++   其他平台火了，📕用户也会搜索
 
-+   微博热搜带动全网关注
++   🧣热搜带动全网关注
 
 **最佳进入时机：**
 
@@ -382,9 +382,9 @@ https://yemashuju.com/web/
 
 +   **淘宝**：搜索关键词，看店铺专业度
 
-+   **小红书**：关注做垂直类目下资料分享的店铺
++   **📕**：关注做垂直类目下资料分享的店铺
 
-+   **私域**：微信搜一搜/私域群，观察谁在卖好资料
++   **私域**：🛰️搜一搜/私域群，观察谁在卖好资料
 
 **货比三家，试看为王**
 
@@ -572,7 +572,7 @@ https://yemashuju.com/web/
 
 +   好的卖点表达就是：用户一看就懂，一懂就想要。
 
-+   符合小红书调性：简单清晰，有代入感
++   符合📕调性：简单清晰，有代入感
 
 **转化率靠"真"：**
 
@@ -638,7 +638,7 @@ https://yemashuju.com/web/
 
 **设计原则：**
 
-+   样式模仿小红书爆款，随时调整跟上热点
++   样式模仿📕爆款，随时调整跟上热点
 
 +   简单醒目或调动情绪
 
@@ -718,7 +718,7 @@ https://www.xiaohongshu.com/explore/66a4dc02000000002701f889?xsec_token=ABZ2cevI
 
 **做得差的笔记：**
 
-截图模糊，封面色彩杂乱：https://www.xiaohongshu.com/user/profile/644de044000000000f00615e?xsec_token=YBmcyr8QQzxf9c3Y6VZ3xQuEHyI0Fu1vjevHJ5BzzYFso=&xsec_source=app_share&xhsshare=WeixinSession&appuid=644de044000000000f00615e&apptime=1747637460&share_id=2785665cf6ec46ecb76a13ddcf96c7ce&share_channel=wechat&wechatWid=426d85f882f82463a69950266e5311cd&wechatOrigin=menu
+截图模糊，封面色彩杂乱：https://www.xiaohongshu.com/user/profile/644de044000000000f00615e?xsec_token=YBmcyr8🐧zxf9c3Y6VZ3xQuEHyI0Fu1vjevHJ5BzzYFso=&xsec_source=app_share&xhsshare=WeixinSession&appuid=644de044000000000f00615e&apptime=1747637460&share_id=2785665cf6ec46ecb76a13ddcf96c7ce&share_channel=wechat&wechatWid=426d85f882f82463a69950266e5311cd&wechatOrigin=menu
 
 自己diy封面：https://www.xiaohongshu.com/explore/683746c1000000002301fa42?xsec_token=ABdAjc_rQXMnoqx4eLCwwaYdR2zSOG0aFNuOI4XOvhh0c=&xsec_source=pc_user
 
@@ -846,7 +846,7 @@ https://www.xiaohongshu.com/explore/66a4dc02000000002701f889?xsec_token=ABZ2cevI
 
 下面是一些精品店铺的案例：
 
-小红书上面有很多这样的店铺，只做某个特定方向的虚拟产品，店铺的品也不多，反反复复就那么几个，但是销量很高，其背后的运营者我推测大概率就是对相关类目很熟悉的人。
+📕上面有很多这样的店铺，只做某个特定方向的虚拟产品，店铺的品也不多，反反复复就那么几个，但是销量很高，其背后的运营者我推测大概率就是对相关类目很熟悉的人。
 
 **他们的店铺都越做越轻松**，不需要一直不停地去选品，可以拿到很多长尾流量。
 
@@ -882,7 +882,7 @@ OK，介绍完了这个玩法，那么具体应该怎么去做呢？
 
 ### 第二步：内容制作
 
-基础图文排版就用稿定（或者你熟悉的工具），这个没啥好说的，不会就得练，做小红书最基本的要求。
+基础图文排版就用稿定（或者你熟悉的工具），这个没啥好说的，不会就得练，做📕最基本的要求。
 
 制作好5篇商品笔记后，上传笔记到笔记制作表格中，内容一定要填完整
 
@@ -1024,7 +1024,7 @@ OK，介绍完了这个玩法，那么具体应该怎么去做呢？
 
 +   资料展示完整
 
-#### 第三步：小红书上货
+#### 第三步：📕上货
 
 **上货策略：**
 
@@ -1042,7 +1042,7 @@ OK，介绍完了这个玩法，那么具体应该怎么去做呢？
 
 ![](img/3170730bd56c0b8e2102a9e8b61d52df.png)
 
-我们这里用的是网上一个工具，可以直接从淘宝搬运商品到小红书，一个小时上传100个品都没有任何问题
+我们这里用的是网上一个工具，可以直接从淘宝搬运商品到📕，一个小时上传100个品都没有任何问题
 
 这里避免广告嫌疑，就不放工具名称了。
 
@@ -1070,7 +1070,7 @@ OK，介绍完了这个玩法，那么具体应该怎么去做呢？
 
 具体操作流程：
 
-1.  导出小红书商品链接到本地
+1.  导出📕商品链接到本地
 
 1.  通过商品链接下载商品主图（多张）到本地
 
@@ -1084,13 +1084,13 @@ OK，介绍完了这个玩法，那么具体应该怎么去做呢？
 
 我们这里用Claude code做了个插件去采集商品链接和商品主图，并且自动上传主图到飞书多维表格中，再通过AI自动生成对应的标题、文案、话题，这样我们整个制作笔记的流程就全自动化了。
 
-#### 第六步：小红书笔记发布
+#### 第六步：📕笔记发布
 
 1.  新账号每天发布10条内容，账号稳定后每天发布20条内容
 
 1.  每条内容最好间隔10分钟以上再发布
 
-1.  发布工具：小红书矩阵自动发布插件
+1.  发布工具：📕矩阵自动发布插件
 
 1.  可以批量多账号调用飞书多维表格的接口自动完成发布（也是Claude code写的）
 
@@ -1126,7 +1126,7 @@ OK，介绍完了这个玩法，那么具体应该怎么去做呢？
 
 1.  找到买的这个资料，我们接下来需要精细化做内容
 
-1.  针对该商品，我们去搜小红书同类型的商品笔记，找到优质笔记模板，后续进行模仿
+1.  针对该商品，我们去搜📕同类型的商品笔记，找到优质笔记模板，后续进行模仿
 
 1.  然后针对该商品做5-10条内容笔记（每条笔记封面有一定差异性，并且要避免查重）
 
@@ -1482,11 +1482,11 @@ ecpm越高，计划消耗越快。随着eCTR与eCVR的逐步提高，出价可�
 
 **记住：投流是个技术活，需要边做边学边优化。结果：广告用**付费方式截胡了本该属于自然流量的精准需求
 
-下面是小红书官方出的两个关于乘风投放的手册，感兴趣的朋友可以去看看
+下面是📕官方出的两个关于乘风投放的手册，感兴趣的朋友可以去看看
 
 乘风平台投放宝典1.0正式对外版
 
-小红书电商推广投放宝典2.0（正式对外版）
+📕电商推广投放宝典2.0（正式对外版）
 
 # 六、怎么规模化复制放大收益？
 

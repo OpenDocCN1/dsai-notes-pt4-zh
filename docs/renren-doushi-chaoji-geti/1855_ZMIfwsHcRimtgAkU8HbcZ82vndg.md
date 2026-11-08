@@ -182,7 +182,7 @@ D:\novelai-webui-aki-v3\models\VAE
 
 当然，以上这些资源只是我个人收集，数量有限，如果你想下载更多资源可以去这两个网站下载：
 
-C站：https://civitai.com/    （需要科学上网，自己想办法）
+C站：https://civitai.com/    （需要🪜，自己想办法）
 
 抱脸网：https://huggingface.co/   （可正常访问）
 

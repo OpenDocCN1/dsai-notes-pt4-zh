@@ -58,7 +58,7 @@
 
 > 🔗 文中引用的链接
 
-+   [M:RA《MCE》QQ音乐链接](https://c6.y.qq.com/base/fcgi-bin/u?__=UNKlapy0Iy3C)
++   [M:RA《MCE》🐧音乐链接](https://c6.y.qq.com/base/fcgi-bin/u?__=UNKlapy0Iy3C)
 
 +   [Mureka国内体验链接](https://www.mureka.cn/)
 

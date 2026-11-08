@@ -30,7 +30,7 @@
 
 1.  [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
 
-1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/QQEhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
+1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
 
 1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
 
@@ -216,7 +216,7 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 # 四、模板生成器Prompt
 
-## # Role : 番茄过稿大师，Markdown格式，一键复制哦~(可以找我微信发你~)（韭菜Y日记）
+## # Role : 番茄过稿大师，Markdown格式，一键复制哦~(可以找我🛰️发你~)（韭菜Y日记）
 
 ```
 # 角色：番茄过稿大师

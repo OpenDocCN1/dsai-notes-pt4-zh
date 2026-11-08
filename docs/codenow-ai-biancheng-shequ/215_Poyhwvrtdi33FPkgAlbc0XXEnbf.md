@@ -1,4 +1,4 @@
-# 微信机器人
+# 🛰️机器人
 
 > 来源：[https://now.feishu.cn/docx/TN5KdjSPEoZVeExB0PicMZV5ntd](https://now.feishu.cn/docx/TN5KdjSPEoZVeExB0PicMZV5ntd)
 
@@ -6,7 +6,7 @@
 
 By [薛志荣](https://www.xiaohongshu.com/user/profile/556e6d72e58d132ebb6fc920)
 
-基于Wechaty和LLM开发了一个微信机器人，可以读取链接生成摘要、定时推送目标给我、记录目标和想法，还挺实用的。我可以随时在微信编辑我的目标，它会随时同步到我的浏览器（高频应用）和屏幕上。同理，我也可以在我的插件编辑目标，它也会实时同步到其他设备上。
+基于Wechaty和LLM开发了一个🛰️机器人，可以读取链接生成摘要、定时推送目标给我、记录目标和想法，还挺实用的。我可以随时在🛰️编辑我的目标，它会随时同步到我的浏览器（高频应用）和屏幕上。同理，我也可以在我的插件编辑目标，它也会实时同步到其他设备上。
 
 ![](img/183ec7ce0c6cfa3e717b659a15b7b653.png)
 

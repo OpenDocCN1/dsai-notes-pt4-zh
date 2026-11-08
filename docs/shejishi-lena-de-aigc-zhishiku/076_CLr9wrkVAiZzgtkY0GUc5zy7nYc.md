@@ -30,7 +30,7 @@ Adobe与密歇根大学合作推出了“MultiFoley”，这是一种通过文�
 
 ## Adobe视频模型更新 0912
 
-> 50 【Adobe Firefly也加入视频模型大混战了 - AIGC娜娜子 | 小红书 - 你的生活指南】 😆 NkQNvz6Z8h5J11e 😆 https://www.xiaohongshu.com/discovery/item/66e2e2dc0000000012013811?source=webshare&xhsshare=pc_web&xsec_token=GBcwn6ITyug10xk7jroMkZY8kKkIm3YfjVDloaUnwWObs=&xsec_source=pc_share
+> 50 【Adobe Firefly也加入视频模型大混战了 - AIGC娜娜子 | 📕 - 你的生活指南】 😆 NkQNvz6Z8h5J11e 😆 https://www.xiaohongshu.com/discovery/item/66e2e2dc0000000012013811?source=webshare&xhsshare=pc_web&xsec_token=GBcwn6ITyug10xk7jroMkZY8kKkIm3YfjVDloaUnwWObs=&xsec_source=pc_share
 
 ![](img/e7984ef5e6a70c611cb7e5307457604d.png)
 

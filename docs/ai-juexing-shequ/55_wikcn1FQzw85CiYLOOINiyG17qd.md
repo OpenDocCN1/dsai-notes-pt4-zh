@@ -2,7 +2,7 @@
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/DTzidoTg2ocQDKx6gTqcIABOnph](https://diwfpqo78m.feishu.cn/docx/DTzidoTg2ocQDKx6gTqcIABOnph)
 
-> 以下文章来源于公众号：Jack Cui ，作者Jack Cui 部分修改
+> 以下文章来源于👸号：Jack Cui ，作者Jack Cui 部分修改
 
 > 一名热爱技术的算法工程师。分享技术，乐享生活：技术、快乐、财富。
 

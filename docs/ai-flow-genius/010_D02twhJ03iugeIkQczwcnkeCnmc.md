@@ -30,7 +30,7 @@
 
 ![](img/8679708288ba401c37b7b288ad4d0b9b.png)
 
-[使用GPT，写小红书文案](https://jalicvoygc0.feishu.cn/wiki/RIIQwGYIpiQt17kCoB7cyGwWnVc)篇中的Propmt，也是用了这个2版方案技巧。
+[使用GPT，写📕文案](https://jalicvoygc0.feishu.cn/wiki/RIIQwGYIpiQt17kCoB7cyGwWnVc)篇中的Propmt，也是用了这个2版方案技巧。
 
 可以进群直接玩：
 

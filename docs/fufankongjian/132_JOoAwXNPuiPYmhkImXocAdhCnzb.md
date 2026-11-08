@@ -117,7 +117,7 @@ Your browser does not support the video element.
         image.show()
 ```
 
-当然，上述所有的使用方法，均需要魔法上网环境，且Google的监测会非常严，这会导致很多我们国内的开发者在上手使用时门槛会比较高。
+当然，上述所有的使用方法，均需要🪜环境，且Google的监测会非常严，这会导致很多我们国内的开发者在上手使用时门槛会比较高。
 
 因此，本节课我们主要做的就是借助LiteLLM + OpenRouter 接入Nano Banana Pro模型，并实现完整的调用流程，解决网络限制以及想私有化本地部署的应用两大难题。
 

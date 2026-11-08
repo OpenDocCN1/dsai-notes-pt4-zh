@@ -2,7 +2,7 @@
 
 > 来源：[https://aithinkup.feishu.cn/docx/ZbGAdpudzoDITqx3weKcmiHjnge](https://aithinkup.feishu.cn/docx/ZbGAdpudzoDITqx3weKcmiHjnge)
 
-[必看文章合集=【AGI观察】微信公众号+知乎](https://aithinkup.feishu.cn/wiki/EpyNwOUe1irXPlkcZZncQfFsn6f#share-PETBdmZ8VoyAG4xjvgFcGJTOnd3)
+[必看文章合集=【AGI观察】🛰️👸号+知乎](https://aithinkup.feishu.cn/wiki/EpyNwOUe1irXPlkcZZncQfFsn6f#share-PETBdmZ8VoyAG4xjvgFcGJTOnd3)
 
 ## 归档至：4. 行业热点 | AI新闻即时洞察
 
@@ -14,7 +14,7 @@
 
 发布日期：2025年9月1日
 
-微信链接：https://mp.weixin.qq.com/s/e7lpCOL5Rlgs4R9EmTUOPg
+🛰️链接：https://mp.weixin.qq.com/s/e7lpCOL5Rlgs4R9EmTUOPg
 
 **归档理由：** 这是一篇入门指南性的文章，指导个人如何“开始”，是典型的基础知识内容，适合放在这里帮助新读者。
 
@@ -24,7 +24,7 @@
 
 发布日期：2025年9月15日
 
-微信链接：https://mp.weixin.qq.com/s/TjSprySZNDtRHlatm4vl6Q
+🛰️链接：https://mp.weixin.qq.com/s/TjSprySZNDtRHlatm4vl6Q
 
 **归档理由：** 探讨一个前瞻性的、宏大的行业概念（智能体互联网），是对未来趋势的预判和解读。
 
@@ -34,7 +34,7 @@
 
 发布日期：2025年8月26日
 
-微信链接：https://mp.weixin.qq.com/s/F3Fo1JLhjMYx-by-D-yGWA
+🛰️链接：https://mp.weixin.qq.com/s/F3Fo1JLhjMYx-by-D-yGWA
 
 **归档理由：** 解读国家级的政策文件，是对影响整个行业的重大事件的分析，是典型的热点洞察。
 
@@ -44,7 +44,7 @@
 
 发布日期：2025年7月23日
 
-微信链接：https://mp.weixin.qq.com/s/soRR2lEKEo2UA1FeJdtfJQ
+🛰️链接：https://mp.weixin.qq.com/s/soRR2lEKEo2UA1FeJdtfJQ
 
 **归档理由：** 分析具体的“上半年融资”情况，是对行业资本动态和发展趋势的总结与解读。
 
@@ -54,7 +54,7 @@
 
 发布日期：2025年2月16日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/5ywAXvi8J0fwq5tLOKHrLg
 
@@ -66,7 +66,7 @@ https://mp.weixin.qq.com/s/5ywAXvi8J0fwq5tLOKHrLg
 
 发布日期：2025年2月3日
 
-微信链接
+🛰️链接
 
 https://mp.weixin.qq.com/s/yzodHLUGoRqrlGyu7SnoCg
 
@@ -78,7 +78,7 @@ https://mp.weixin.qq.com/s/yzodHLUGoRqrlGyu7SnoCg
 
 发布日期：2025年2月1日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/oEOlvR8ENHXWsaiOPPvnJQ
 
@@ -92,7 +92,7 @@ https://mp.weixin.qq.com/s/oEOlvR8ENHXWsaiOPPvnJQ
 
 发布日期：2025年1月10日
 
-微信链接：https://mp.weixin.qq.com/s/3p5-jFnC-LtB80KtRotxMw
+🛰️链接：https://mp.weixin.qq.com/s/3p5-jFnC-LtB80KtRotxMw
 
 **归档理由：**** 这篇文章的**核心内容是关于一个行业头**部公**司（微软）的重磅产品发布，并包含了对其未来影响的预测。
 
@@ -102,7 +102,7 @@ https://mp.weixin.qq.com/s/oEOlvR8ENHXWsaiOPPvnJQ
 
 发布日期：2024年12月25日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/chCJ1L-YnABOLHjVirDCfg
 
@@ -114,7 +114,7 @@ https://mp.weixin.qq.com/s/chCJ1L-YnABOLHjVirDCfg
 
 发布日期：2025年6月9日
 
-微信链接：https://mp.weixin.qq.com/s/wFKMGHgfV-UX8UwH0EnQIw
+🛰️链接：https://mp.weixin.qq.com/s/wFKMGHgfV-UX8UwH0EnQIw
 
 **归档理由：** 解读和分析一篇重要的学术论文，为读者提供了经过验证的理论基础，是高质量的知识基石内容。
 
@@ -124,7 +124,7 @@ https://mp.weixin.qq.com/s/chCJ1L-YnABOLHjVirDCfg
 
 发布日期：2024年12月10日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/hqKVs4UgpPOX9WPTS7aI5A
 

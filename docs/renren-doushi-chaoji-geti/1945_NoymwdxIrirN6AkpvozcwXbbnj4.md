@@ -160,7 +160,7 @@
 
 > 面向教师的人工智能能力框架（中英双语）- UN
 
-+   [【AI副业解析】手机壁纸小红书](https://ssw9noe1h6.feishu.cn/wiki/S3yxwJRZHiG4g8km5xhc8BEgnvj)
++   [【AI副业解析】手机壁纸📕](https://ssw9noe1h6.feishu.cn/wiki/S3yxwJRZHiG4g8km5xhc8BEgnvj)
 
 +   [AI生成表情包保姆级教程](https://ssw9noe1h6.feishu.cn/wiki/NuBVwdVW2iL8mQk7s02cfzynnoe)
 
@@ -176,7 +176,7 @@
 
 +   [Midjourney 更新，搞怪风格【weird】指令让你的图片更加独特](https://ssw9noe1h6.feishu.cn/wiki/Wjyxwdhwji4fcMky1Fzcigt8nJf)
 
-+   [小红书 AI 绘画爆款提示词拆解](https://ssw9noe1h6.feishu.cn/wiki/Mcf9wGCr6iZg30kGXaHczYoLnIc)
++   [📕 AI 绘画爆款提示词拆解](https://ssw9noe1h6.feishu.cn/wiki/Mcf9wGCr6iZg30kGXaHczYoLnIc)
 
 +   [Midjourney 不同模型和参数生成结果对比](https://ssw9noe1h6.feishu.cn/wiki/UMDYwl9wBiF1jLkS4DucCFrmnMd)
 
@@ -242,7 +242,7 @@ AI 前线
 
 [新智元](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI3MTA0MTk1MA==&scene=124#wechat_redirect)
 
-优秀公众号
+优秀👸号
 
 人工智能，机器人
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/HXu7dcmmIoPCXpxZAyAc8VMwnLo](https://xuqiwei1986.feishu.cn/docx/HXu7dcmmIoPCXpxZAyAc8VMwnLo)
 
-大家好，我是做AI企业培训的佳文，生财GPT提效、coze、ComfyUI教练
+大家好，我是做AI企业培训的佳文，赚钱GPT提效、coze、ComfyUI教练
 
 也是那个完全不懂编程但是被阿紫教练教会写小游戏的男人~
 
@@ -74,7 +74,7 @@ WPS的DS入口藏的比较深，可以从软件版进入，也可以直接进入
 
 ![](img/fa7383893670bf2e79185da633203400.png)
 
-[生财有术商业计划书-AI生成仅用于展示.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KaMzb9LkyoyVpnxfwOac3aZCnAG)
+[龙哥盟商业计划书-AI生成仅用于展示.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KaMzb9LkyoyVpnxfwOac3aZCnAG)
 
 # 四、除了PPT，DS+WPS还能做什么
 
@@ -84,13 +84,13 @@ WPS的DS入口藏的比较深，可以从软件版进入，也可以直接进入
 
 ![](img/82e483bb339539d6004fce9569514e62.png)
 
-再写一篇公众号吧，指令~同上的简单
+再写一篇👸号吧，指令~同上的简单
 
 懒得排版了，生成的内容见此文档
 
 ![](img/0c5f2c3316feff1dfc4e486aa251164d.png)
 
-[生财有术.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MHgwbepVjot2xNxzGcdcHO63nfg)
+[龙哥盟.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MHgwbepVjot2xNxzGcdcHO63nfg)
 
 上面都是网络+AI生成内容，那如果有基础内容，能不能让他做二次修改呢？
 

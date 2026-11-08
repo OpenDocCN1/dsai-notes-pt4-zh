@@ -34,7 +34,7 @@
 
 ![](img/bd3f7d05d3e37ceda31ba47854aeae74.png)
 
-# 二、个人公众号
+# 二、个人👸号
 
 ![](img/8149e0141d56c71cb2be2e9e5e5e40ec.png)
 

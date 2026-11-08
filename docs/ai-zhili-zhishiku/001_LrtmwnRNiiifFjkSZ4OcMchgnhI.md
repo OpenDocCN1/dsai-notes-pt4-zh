@@ -42,7 +42,7 @@ AI大模型价值对齐：是什么，为什么，怎么做？
 
 为什么价值对齐是大模型的必由之路？
 
-《[对于算法决策偏见的审计](https://mp.weixin.qq.com/s/_dONQQuUXlR8wh11MY2FYg)》
+《[对于算法决策偏见的审计](https://mp.weixin.qq.com/s/_dON🐧uUXlR8wh11MY2FYg)》
 
 《中科院亮相新平台，帮人工智能“学会”道德判断》
 

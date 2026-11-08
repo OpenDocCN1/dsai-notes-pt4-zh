@@ -378,7 +378,7 @@ Step2:同时借助时下热门MCP工具，动手搭建三项高价值智能体
 
 九天Hector 抖音： https://v.douyin.com/lqASAa2Hs_0/
 
-九天Hector 小红书：https://www.xiaohongshu.com/user/profile/62321335000000001000885e
+九天Hector 📕：https://www.xiaohongshu.com/user/profile/62321335000000001000885e
 
 九天Hector YouTube：https://www.youtube.com/channel/UCj8tyDLSxIdivnweBnG4H9Q/
 

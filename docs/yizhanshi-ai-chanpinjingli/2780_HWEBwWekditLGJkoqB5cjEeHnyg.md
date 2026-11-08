@@ -30,7 +30,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/BfkZ_Z6w9RDG4l7wIOKycg)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/BfkZ_Z6w9RDG4l7wIOKycg)
 
 +   [a16z原文链接](https://a16z.com/newsletter/big-ideas-2026-part-2/)
 

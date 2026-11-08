@@ -1,10 +1,10 @@
-# (2.0版本)100%自动化小红书虚拟资料(无限店群)，新手看这个就够了，一天就能学会
+# (2.0版本)100%自动化📕虚拟资料(无限店群)，新手看这个就够了，一天就能学会
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/OTM3dxw9SoE59DxCEHKczSYAnHh](https://xuqiwei1986.feishu.cn/docx/OTM3dxw9SoE59DxCEHKczSYAnHh)
 
 ---
 
-[小红书虚拟电商矩阵全自动化项目SOP文档(2.0)](https://my.feishu.cn/docx/LKVIdDMKRogjMcxVruScFyPmnug?from=from_copylink)
+[📕虚拟电商矩阵全自动化项目SOP文档(2.0)](https://my.feishu.cn/docx/LKVIdDMKRogjMcxVruScFyPmnug?from=from_copylink)
 
 文档已更新
 
@@ -16,7 +16,7 @@
 
 +   1、一次性固定成本
 
-+   1、小红书实名账号-70元/个
++   1、📕实名账号-70元/个
 
 +   2、一台500元左右的电脑主体，单台电脑可以挂在8-10个店铺
 

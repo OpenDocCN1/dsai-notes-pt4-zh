@@ -2,11 +2,11 @@
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/TvdOdj85voDjycxwvHrcuKK2nvm](https://jlqyxzzvbk.feishu.cn/docx/TvdOdj85voDjycxwvHrcuKK2nvm)
 
-有问题**欢迎加微信交流，请备注来意。**[看见AI及个人介绍](https://jlqyxzzvbk.feishu.cn/wiki/L8anw4IEViiNEAkuN42csd9xn4b?from=from_copylink)
+有问题**欢迎加🛰️交流，请备注来意。**[看见AI及个人介绍](https://jlqyxzzvbk.feishu.cn/wiki/L8anw4IEViiNEAkuN42csd9xn4b?from=from_copylink)
 
 ![](img/c7619dd119be202a70725831174f915c.png)
 
-微信号：seeai01 或者 13858104569
+🛰️号：seeai01 或者 13858104569
 
 ### 1 软硬件需求
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/Jxi5dGKaOockjmxkXadcIqpHnWg](https://my.feishu.cn/docx/Jxi5dGKaOockjmxkXadcIqpHnWg)
 
-## **公众号**
+## **👸号**
 
 多维表格（Dt9cbhyGxa5uZqsIP4HcOYlCnEd_tblcu8a0CIWXAnV3）
 

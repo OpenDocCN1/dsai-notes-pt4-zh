@@ -1,10 +1,10 @@
-# RPA+ChatGPT自动制作生财日/周报&个性化定制关键词推送发帖
+# RPA+ChatGPT自动制作赚钱日/周报&个性化定制关键词推送发帖
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/LmIFdYsDko7xOCx4HPqcUkSenMg](https://xuqiwei1986.feishu.cn/docx/LmIFdYsDko7xOCx4HPqcUkSenMg)
 
-# 前言：生财所有与RPA相关帖子
+# 前言：赚钱所有与RPA相关帖子
 
-RPA是什么，这里就无需多言了，因为生财已经有非常多的相关普及贴，鱼丸还贴心除了RPA合集。
+RPA是什么，这里就无需多言了，因为赚钱已经有非常多的相关普及贴，鱼丸还贴心除了RPA合集。
 
 而且很多圈友也是在看了许多RPA精华帖之后，开始上手影刀，然后把自己的业务批量自动化提高了好多倍！
 
@@ -14,15 +14,15 @@ RPA是什么，这里就无需多言了，因为生财已经有非常多的相�
 
 我这里稍微整理了所有可以提供RPA功能的工具，国外的居多尤其是小众产品，这个本质上就是低代码自动化，说白了就是把英文的代码，转换成可以拖拽的功能框和中文语句。
 
-# 篇章壹：日报周报篇（生财有术搜索引擎）
+# 篇章壹：日报周报篇（龙哥盟搜索引擎）
 
 我做这个前后花了快十天时间，当然前期的工具测试花费时间居多，现在基本已经完全跑通自动化了。
 
-一切都来源于上周亦仁所发的周报，我当时想着简单评论一下RPA或许也可以实现。
+一切都来源于上周龙哥所发的周报，我当时想着简单评论一下RPA或许也可以实现。
 
 ![](img/9c999e9b4d498421956ef7aa6994254d.png)
 
-但事实上，当我真正开始着手的时候，我发现知识星球和生财有术的搜索引擎，全部都限制内容抓取。
+但事实上，当我真正开始着手的时候，我发现知识星球和龙哥盟的搜索引擎，全部都限制内容抓取。
 
 所以我在第一步，批量获取帖子信息（标题和链接），就卡壳了三五天时间。
 
@@ -30,7 +30,7 @@ RPA是什么，这里就无需多言了，因为生财已经有非常多的相�
 
 结果效果并不理想，用是能用，但是Uibot耗时长达一个小时，虽然可以做到完全自动化（甚至我把ChatGPT的prompt都调试了几十遍得出最终版）;然后那个谷歌插件Automa太薄弱了，我代码弄得过多，导致插件非常卡顿，当然速度也算是比较快，就是最后还得加入人工去发给ChatGPT（因为浏览器插件不如桌面软件那样可以完全控制本地文件）
 
-仅仅是为了准确地获取每一个帖子的链接，我都花费了一整周的时间，因为知识星球和生财有术的网页版元素全部都做了反爬处理，我只能完全模拟人工去慢慢操作，于是RPA搞得又慢又卡（我总共弄了快两万行代码），而且还容易出错。（虽然最后文档版本的基本没问题了，但我感觉还是略有瑕疵。）
+仅仅是为了准确地获取每一个帖子的链接，我都花费了一整周的时间，因为知识星球和龙哥盟的网页版元素全部都做了反爬处理，我只能完全模拟人工去慢慢操作，于是RPA搞得又慢又卡（我总共弄了快两万行代码），而且还容易出错。（虽然最后文档版本的基本没问题了，但我感觉还是略有瑕疵。）
 
 一直想着完蛋，这没办法交差了，难道是我技术不行？
 
@@ -58,11 +58,11 @@ RPA是什么，这里就无需多言了，因为生财已经有非常多的相�
 
 https://www.uibot.com.cn/
 
-+   账户：Uibot, ChatGPT PLUS，科学上网工具
++   账户：Uibot, ChatGPT PLUS，🪜工具
 
 https://chat.openai.com/
 
-+   状态：已登录生财有术系统，已登录知识星球账户，已加入生财有术星球
++   状态：已登录龙哥盟系统，已登录知识星球账户，已加入龙哥盟星球
 
 https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/1824528822
 
@@ -80,7 +80,7 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 ![](img/25faaa584222a27d632939fb90c40280.png)
 
-[生财周报.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SorpbtKCaosMDixg8ADc8AFDnrd)
+[赚钱周报.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SorpbtKCaosMDixg8ADc8AFDnrd)
 
 +   确认一下表格文件夹，点击运行即可（后面更新为文件地址，周报自动生成流程页需要新增个地址，这样就可以完全自动化，机器人自己把文件发给GPT再自动下载获取）
 
@@ -102,7 +102,7 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 换句话说，两个都懂RPA的圈友，可能针对同一个项目，设计出来的是完全不同的流程（可能借用的工具也不同）
 
-这个想法是我在看其他圈友设计公众号RPA批量自动化的思路冒出来的，跟我的确实大不相同。
+这个想法是我在看其他圈友设计👸号RPA批量自动化的思路冒出来的，跟我的确实大不相同。
 
 ![](img/d9dd61bac79cab108195ab6ba0a69299.png)
 
@@ -114,7 +114,7 @@ UIBOT因为缺乏影刀的相似元素循环获取，所以就导致代码比较
 
 本来以为操作非常简单，因为逻辑就两个步骤：获取帖子信息+发给ChatGPT
 
-但是在第一步我卡了三天，因为生财有术搜索引擎和知识星球都没办法抓取帖子详细信息
+但是在第一步我卡了三天，因为龙哥盟搜索引擎和知识星球都没办法抓取帖子详细信息
 
 RPA无法固定元素获取，我换了Automa浏览器自动化插件获取，但是元素太多非常容易卡顿
 
@@ -124,7 +124,7 @@ RPA无法固定元素获取，我换了Automa浏览器自动化插件获取，�
 
 因此目前仅是一个粗略版本。
 
-更新：所有问题已解决，只是代码比较多，最完美版本是VPS+RPA。我的方案是用腾讯云VPS，RPA机器人放在VPS里面，24H运行不用管，定制化发消息弄个单独微信即可。
+更新：所有问题已解决，只是代码比较多，最完美版本是VPS+RPA。我的方案是用腾讯云VPS，RPA机器人放在VPS里面，24H运行不用管，定制化发消息弄个单独🛰️即可。
 
 #### 甲，Uibot完成帖子信息抓取和交给CHAGPT判断整理出周报（耗时长1h+ ，全部自动化）
 
@@ -132,7 +132,7 @@ RPA无法固定元素获取，我换了Automa浏览器自动化插件获取，�
 
 ![](img/8dcdda8ee94717bc9fd0fb71ce9c48e3.png)
 
-[生财周报.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NjrGbv2W0o7jNyxhfUQctZJQnmg)
+[赚钱周报.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NjrGbv2W0o7jNyxhfUQctZJQnmg)
 
 #### Automa浏览器插件获取帖子信息（发给CHATGPT还需要人工）
 
@@ -140,9 +140,9 @@ https://chrome.google.com/webstore/detail/automa/infppggnoaenmfagbfknfkancpbljcc
 
 ![](img/27ca1019d122800041ca49e4f3e987da.png)
 
-[自动生成生财周报test.automa.json](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JdRjb0xNao0rkBxeSqqchgAEnMe)
+[自动生成赚钱周报test.automa.json](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JdRjb0xNao0rkBxeSqqchgAEnMe)
 
-（回看后发现要重点标注一下：这里是依托于生财有术搜索引擎的元素获取模块，当然本身是获取不到链接和太多数据的，只是尽可能模拟人工获取帖子链接【附带知识星球个人标识链接，所以还是得有付费会员才能查看】，同时如果生财有术搜索引擎的网页元素发生变化，该RPA可能失灵，这是为什么那么多工具应用都需要人工维护的原因，由于网页更新不定时，该贴的代码可能无效，但思路还是一样的）
+（回看后发现要重点标注一下：这里是依托于龙哥盟搜索引擎的元素获取模块，当然本身是获取不到链接和太多数据的，只是尽可能模拟人工获取帖子链接【附带知识星球个人标识链接，所以还是得有付费会员才能查看】，同时如果龙哥盟搜索引擎的网页元素发生变化，该RPA可能失灵，这是为什么那么多工具应用都需要人工维护的原因，由于网页更新不定时，该贴的代码可能无效，但思路还是一样的）
 
 ### 三，注意事项（出错和调试）
 
@@ -154,7 +154,7 @@ https://chrome.google.com/webstore/detail/automa/infppggnoaenmfagbfknfkancpbljcc
 
 目前流程是机器人自动打开所有网页和表格
 
-机器人第一次打开生财有术搜索引擎网页时，有30s左右等待时间，可以人工调整筛选条件
+机器人第一次打开龙哥盟搜索引擎网页时，有30s左右等待时间，可以人工调整筛选条件
 
 ####### 3.2 外界环境层面
 
@@ -162,7 +162,7 @@ https://chrome.google.com/webstore/detail/automa/infppggnoaenmfagbfknfkancpbljcc
 
 Uibot没有MAC版本，建议用WINDOWS系统或者腾讯云VPS
 
-没有科学上网工具打不开CHATGPT，网络IP不稳定或者速度太慢会卡顿或者出错
+没有🪜工具打不开CHATGPT，网络IP不稳定或者速度太慢会卡顿或者出错
 
 3.3 影刀机器人注意事项
 
@@ -170,7 +170,7 @@ EXCEL文件要事先绑定
 
 主题帖在sheet1，风向标在sheet2
 
-开科学上网工具才能打开GPT
+开🪜工具才能打开GPT
 
 所有账号都要默认已登录
 
@@ -198,7 +198,7 @@ CHATGPT并不能完全准确得把文章分类，可能还需要加人工辅助�
 
 我为什么还要做这些拓展思路延申的机器人，既然想到了，那就不如做到（其实在等有缘人交流哈哈）
 
-目前据我所知，只有生财有术和淘金之路，这两个知识星球有在做自己的搜索引擎系统。
+目前据我所知，只有龙哥盟和淘金之路，这两个知识星球有在做自己的搜索引擎系统。
 
 其他那么多知识星球，似乎都是人工统计做周报的。
 
@@ -220,11 +220,11 @@ CHATGPT并不能完全准确得把文章分类，可能还需要加人工辅助�
 
 https://www.yingdao.com/client-download/
 
-+   账户：影刀, ChatGPT PLUS，科学上网工具
++   账户：影刀, ChatGPT PLUS，🪜工具
 
 https://chat.openai.com/
 
-+   状态：已登录生财有术系统，已登录知识星球账户，已加入生财有术星球
++   状态：已登录龙哥盟系统，已登录知识星球账户，已加入龙哥盟星球
 
 https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/1824528822
 
@@ -280,7 +280,7 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 看圈友实操反馈
 
-# 篇章叁：订阅关键词做个性化生财日报推送微信（包括历史精华帖和每日新增贴）
+# 篇章叁：订阅关键词做个性化赚钱日报推送🛰️（包括历史精华帖和每日新增贴）
 
 ### O、极简使用教程
 
@@ -304,7 +304,7 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 +   帖子信息（标题，链接，标签，正文大纲，作者）交给GPT判断筛选【给定PROMPT到你想要的输出结果】
 
-+   通过企微/个微/QQ/飞书发送到个人/社群
++   通过企微/个微/🐧/飞书发送到个人/社群
 
 以上思路针对全平台都通用
 
@@ -314,7 +314,7 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 ### 三，注意事项（出错和调试）
 
-同一个电脑调试稳定后就还好，如果切换电脑，可以要列出来需要调整的清单（增加微信账户）
+同一个电脑调试稳定后就还好，如果切换电脑，可以要列出来需要调整的清单（增加🛰️账户）
 
 不能太过频繁刷新和循环
 
@@ -322,7 +322,7 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 如果人数过多，可能要分多个流程完成
 
-# 篇章肆：生财合集制作
+# 篇章肆：赚钱合集制作
 
 在[鱼丸发帖的RPA工具合集](https://wx.zsxq.com/dweb2/index/topic_detail/211825218541211)下方有圈友评论想要年入百万和年入千万的合集：
 
@@ -344,13 +344,13 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 【同时可以交给GPT做新人QA百问百答】
 
-[RPA做生财合集帖子](https://fqlleg2dnfa.feishu.cn/wiki/VNvlwctvIigsQQkeylMcIdTFnbe?chunked=false)
+[RPA做赚钱合集帖子](https://fqlleg2dnfa.feishu.cn/wiki/VNvlwctvIigs🐧keylMcIdTFnbe?chunked=false)
 
-后面我可能会陆续抓一些关键词下的生财精华帖，自动发给自己慢慢一天看几篇，只有标题+链接，所以还是要知识星球会员查看，别想歪了哈
+后面我可能会陆续抓一些关键词下的赚钱精华帖，自动发给自己慢慢一天看几篇，只有标题+链接，所以还是要知识星球会员查看，别想歪了哈
 
-# 篇章伍：亦仁几年前的一个小产品设想
+# 篇章伍：龙哥几年前的一个小产品设想
 
-> 亦仁
+> 龙哥
 
 > 2017-05-09 12:46
 
@@ -418,7 +418,7 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 可以做成一个网站的形式，做RSS订阅服务
 
-# 篇章陆：RPA通吃全平台-我做公众号和抖音的思路
+# 篇章陆：RPA通吃全平台-我做👸号和抖音的思路
 
 ### 🦌、历史RPA机器人汇总
 
@@ -430,11 +430,11 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 [RPA机器人系列汇总-Uibot](https://fqlleg2dnfa.feishu.cn/wiki/H2Tzw0HOJixDhnkYk5ecvc4VnUd)
 
-### 🦌、公众号
+### 🦌、👸号
 
 具体代码可以看这篇精华帖
 
-公众号爆文项目：批量公众号自动化发布文章和生成草稿 流程分享
+👸号爆文项目：批量👸号自动化发布文章和生成草稿 流程分享
 
 https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=188525588245142
 
@@ -446,7 +446,7 @@ https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=18852558824
 
 合作的项目，反正也是用RPA跑通的流程
 
-生财也有很多这类帖子：
+赚钱也有很多这类帖子：
 
 ![](img/7b69fe7f4329406a53768c311edf53ef.png)
 
@@ -472,7 +472,7 @@ https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=18852558824
 
 以上，祝阅有所获。
 
-更新1，其实还有生财合集市场和影刀的应用发版链接，这个晚点，还在抓取和做最终优化。
+更新1，其实还有赚钱合集市场和影刀的应用发版链接，这个晚点，还在抓取和做最终优化。
 
 更新2，写得断断续续，凌晨还打瞌睡，可能有些语句不通顺和错别字，后面过几天我再通读一遍会修改下。
 

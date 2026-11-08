@@ -2,7 +2,7 @@
 
 > 来源：[https://agispace.feishu.cn/docx/Gl2BdMOdwoxuevx1IyNcVTdQnIf](https://agispace.feishu.cn/docx/Gl2BdMOdwoxuevx1IyNcVTdQnIf)
 
-> 公众号：AI 洞察笔记
+> 👸号：AI 洞察笔记
 
 >
 

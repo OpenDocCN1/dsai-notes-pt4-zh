@@ -6,7 +6,7 @@
 
 > 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/698107332)hihu.com/p/698107...
 
-SaleGPT是基于LLM实现的具有上下文感知能力的销售AI Agent，可以跨语音、电子邮件和文本（SMS、WhatsApp、微信、微博、Telegram等）工作。上下文感知能力使得SaleGPT能够理解销售对话处于什么阶段，并采取相应的行动。此外，SaleGPT可以访问工具，例如自定义的产品知识库，从而显著减少幻觉。
+SaleGPT是基于LLM实现的具有上下文感知能力的销售AI Agent，可以跨语音、电子邮件和文本（SMS、WhatsApp、🛰️、🧣、Telegram等）工作。上下文感知能力使得SaleGPT能够理解销售对话处于什么阶段，并采取相应的行动。此外，SaleGPT可以访问工具，例如自定义的产品知识库，从而显著减少幻觉。
 
 ## SalesGPT的特点
 

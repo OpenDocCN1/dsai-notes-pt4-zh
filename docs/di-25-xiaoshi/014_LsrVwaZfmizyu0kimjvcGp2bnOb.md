@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/RaFydqfEfo8wkrxRJGqcuIjVnNg](https://my.feishu.cn/docx/RaFydqfEfo8wkrxRJGqcuIjVnNg)
 
-> 关注公众号：**星期一研究室**，与你分享前沿的生产力工具🧙‍♀️
+> 关注👸号：**星期一研究室**，与你分享前沿的生产力工具🧙‍♀️
 
 # 📰前言
 

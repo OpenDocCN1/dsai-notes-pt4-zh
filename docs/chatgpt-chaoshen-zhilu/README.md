@@ -50,7 +50,7 @@
 
 +   【ChatGPT plus 升级遇到问题】可以找群主代充，也节省自己的时间。
 
-+   【免费福利】享受免费、不限量、不用注册、不用魔法上网的ChatGPT镜像站。ChatGPT超神之路，为群友独立部署的。地址见群公告
++   【免费福利】享受免费、不限量、不用注册、不用🪜的ChatGPT镜像站。ChatGPT超神之路，为群友独立部署的。地址见群公告
 
 +   【免费线下沙龙】[**见往期沙龙记录**](https://bwiny5w2svt.feishu.cn/wiki/NKTwwAQfPi7FFwkG5g0cqy9kn4f?chunked=false)
 
@@ -84,7 +84,7 @@ ChatGPT通过语义的交互方式来快速解决问题。
 
 ** - ****ChatGPT****让每个普通人，不再平庸 -**
 
-链接博主+免费AI社群+商务合作                                                      公众号：AI超体进化室
+链接博主+免费AI社群+商务合作                                                      👸号：AI超体进化室
 
 ![](img/007cde5d6c5f563e40b352f0bd768aa4.png)
 

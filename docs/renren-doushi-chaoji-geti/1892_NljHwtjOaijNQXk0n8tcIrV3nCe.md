@@ -80,13 +80,13 @@ D 就是我们写提示词的地方了。
 
 ![](img/a71a54743187ee441ba0b116c7de61b4.png)
 
-[QQ录屏20231123220927.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HTsqbbP43oZMTHxBct1cv5M1nCg)
+[🐧录屏20231123220927.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HTsqbbP43oZMTHxBct1cv5M1nCg)
 
 实时绘画功能还可以结合 ControlNet 来绘图，不过这里只支持 SD1.5 的模型，听雨这边就选择 pose 来给小伙伴们演示了，其他的 ControlNet 功能，小伙伴们可以自行尝试哦！
 
 ![](img/82c74d1aeb74fd1d25a4800e008a6726.png)
 
-[QQ录屏20231123223701.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DhcUb5EF1oNjQzxMySicMmQanTg)
+[🐧录屏20231123223701.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DhcUb5EF1oNjQzxMySicMmQanTg)
 
 想要了解 Krita 更多用法的小伙伴可以看官方教程哦：
 

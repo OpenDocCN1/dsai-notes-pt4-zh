@@ -10,7 +10,7 @@
 
 > 创作团队：[平凡](https://www.zhihu.com/people/jzwa)，[段小草](https://www.zhihu.com/people/loveQt)
 
-> 简评&资讯：[微博](https://weibo.com/u/7621278794)
+> 简评&资讯：[🧣](https://weibo.com/u/7621278794)
 
 > **新手上手必看**
 

@@ -40,7 +40,7 @@ Git：https://github.com/mayuelala/FollowYourClick
 
 #### 4.微软在全球推广Copilot Pro 通过移动设备推出免费试用版
 
-微软在一篇博客文章中宣布，Copilot Pro 现已在全球 227 个国家正式推出。微软还宣布将为 Copilot Pro （每月 20 美元）提供为期一个月的免费试用。稍有不足的是，用户必须通过安装和使用 iOS 和 Android 上的 Copilot 移动应用程序来注册试用。微软还允许 Copilot Pro 用户在其 Microsoft 365 网络应用程序中访问生成式人工智能助手。与桌面应用程序不同的是，访问网络应用程序的 Copilot 无需订阅任何 Microsoft 365 计划。（注：暂未向国内直接开放，使用需要科学上网）
+微软在一篇博客文章中宣布，Copilot Pro 现已在全球 227 个国家正式推出。微软还宣布将为 Copilot Pro （每月 20 美元）提供为期一个月的免费试用。稍有不足的是，用户必须通过安装和使用 iOS 和 Android 上的 Copilot 移动应用程序来注册试用。微软还允许 Copilot Pro 用户在其 Microsoft 365 网络应用程序中访问生成式人工智能助手。与桌面应用程序不同的是，访问网络应用程序的 Copilot 无需订阅任何 Microsoft 365 计划。（注：暂未向国内直接开放，使用需要🪜）
 
 ![](img/fc3c0085c7db69bdba8d2d7d935bf42f.png)
 

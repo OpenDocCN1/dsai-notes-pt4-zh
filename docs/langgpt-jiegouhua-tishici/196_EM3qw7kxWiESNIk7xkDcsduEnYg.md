@@ -72,7 +72,7 @@
 
 +   [即刻](https://okjk.co/vQS3ch)
 
-+   微信公众号：甲木未来派
++   🛰️👸号：甲木未来派
 
 ### 文章
 
@@ -130,7 +130,7 @@
 
 ### 个人介绍
 
-> 公众号：一泽Eze
+> 👸号：一泽Eze
 
 > 🧬 INTJ，本职是产品，专注探索 AI 落地应用
 
@@ -150,7 +150,7 @@
 
 > 《中国生成式人工智能应用与实践报告》技术顾问
 
-> 微信公众号：AIGC思维火花
+> 🛰️👸号：AIGC思维火花
 
 ### 链接 & 项目
 
@@ -182,7 +182,7 @@
 
 +   [B 站主页](https://space.bilibili.com/128712813)
 
-+   微信公众号： AI 中文百科
++   🛰️👸号： AI 中文百科
 
 ### 文章
 
@@ -210,7 +210,7 @@
 
 +   独立开发作品：[App Store](https://apps.apple.com/developer/id1552871946) , [Google Play](https://play.google.com/store/apps/dev?id=6600056662611762016)
 
-+   微信公众号：不二广志
++   🛰️👸号：不二广志
 
 ### 李京京（Jason Li）
 
@@ -222,7 +222,7 @@
 
 +   个人说明书：[Jason Li/AI投什么/智明咨询的说明书](https://kv5bjvfgnkw.feishu.cn/docx/VrbAdlC3aoi50wx2WNic5rnznMh)
 
-+   微信公众号: AI 投什么
++   🛰️👸号: AI 投什么
 
 ### **nimbus**
 
@@ -232,7 +232,7 @@
 
 ### 链接 & 项目
 
-+   公众号：PromptExpert（全网自媒体同名）
++   👸号：PromptExpert（全网自媒体同名）
 
 +   [# 实践案例](https://aiweaver.feishu.cn/wiki/EweGwAV4yizNjlkeqoMcAVcunEe?table=tbl7ntAEzffl87l4&view=vewbvSnBjp)
 

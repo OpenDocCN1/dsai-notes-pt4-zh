@@ -24,29 +24,29 @@
 
 > https://console.lanyun.net/#/register?promoterCode=0169
 
-## 零基础开发微信群聊精华总结工具-阿紫
+## 零基础开发🛰️群聊精华总结工具-阿紫
 
 ![](img/263573751e8d1d0b940eb3abaa267ad2.png)
 
 **📺直播主题**
 
-零基础开发微信群聊精华总结工具
+零基础开发🛰️群聊精华总结工具
 
 **📖预习课件**
 
-[零基础开发微信群聊精华总结工具](https://yunyinghui.feishu.cn/wiki/NwebwxhqNiClJgkyjUucrB7Wnxe?from=from_copylink)
+[零基础开发🛰️群聊精华总结工具](https://yunyinghui.feishu.cn/wiki/NwebwxhqNiClJgkyjUucrB7Wnxe?from=from_copylink)
 
 **📚直播课件**
 
 ![](img/e9c2f9fef9b688acefc0a9a6d86b1c74.png)
 
-[零基础开发微信群聊精华总结工具.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LDJab2eXboZHpJxwmlCcYPHTn2e)
+[零基础开发🛰️群聊精华总结工具.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LDJab2eXboZHpJxwmlCcYPHTn2e)
 
 **🔗直播回放**
 
 ![](img/01eb0f9b2fe019013328f85a2e03e62e.png)
 
-[零基础开发微信群聊精华总结工具.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KkdLbGHvbo9MUtxIhwjcjXxlnPg)
+[零基础开发🛰️群聊精华总结工具.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KkdLbGHvbo9MUtxIhwjcjXxlnPg)
 
 ---
 
@@ -112,19 +112,19 @@
 
 **📖预****习课件**
 
-[零基础手搓微信小程序预备课件 ](https://yunyinghui.feishu.cn/wiki/SKk8wsU2siHmMWk61dVcCg0nnV3?from=from_copylink)
+[零基础手搓🛰️小程序预备课件 ](https://yunyinghui.feishu.cn/wiki/SKk8wsU2siHmMWk61dVcCg0nnV3?from=from_copylink)
 
 **🔗直****播回放**
 
 ![](img/b6c17efee0e3ad82a7dbe31818c4345b.png)
 
-[零基础手搓微信小程序.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VF6Ob2VkToOiXSxWkuUc7f8GnIe)
+[零基础手搓🛰️小程序.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VF6Ob2VkToOiXSxWkuUc7f8GnIe)
 
 **📚直****播课件**
 
 ![](img/ecbe0b05f253c061d5d512271d3d4b17.png)
 
-[零基础手搓微信小程序V2.0.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BPIybu2uqoCAmXxm1PccSoaZnze)
+[零基础手搓🛰️小程序V2.0.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BPIybu2uqoCAmXxm1PccSoaZnze)
 
 ---
 
@@ -170,8 +170,8 @@ https://console.lanyun.net/#/register?promoterCode=0165
 
 ![](img/3d82bca2ccaa547d2373ac101aa986e1.png)
 
-**微信开发者交流学习群**
+**🛰️开发者交流学习群**
 
 ![](img/29d3ca1cb198e69751bacaf9e31da5eb.png)
 
-微信开发者交流学习群
+🛰️开发者交流学习群

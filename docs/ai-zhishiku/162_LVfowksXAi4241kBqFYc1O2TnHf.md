@@ -1,8 +1,8 @@
-# Midjourney&ChatGPT claude微信版bot
+# Midjourney&ChatGPT claude🛰️版bot
 
 > 来源：[https://my.feishu.cn/docx/GdazdeC09omWiXxthhJcx0GInkb](https://my.feishu.cn/docx/GdazdeC09omWiXxthhJcx0GInkb)
 
-> 微信机器人前1000个好友为99元一次性费用，但是使用时间不做保证，
+> 🛰️机器人前1000个好友为99元一次性费用，但是使用时间不做保证，
 
 > 可能一个月，也可能永久，全凭客户对我们的信任，目前已运营18个月
 
@@ -40,15 +40,15 @@
 
 ✅ 支持 Prompt 敏感词判断
 
-✅ 支持接入微信群（需要@机器人+指令）
+✅ 支持接入🛰️群（需要@机器人+指令）
 
-✅ 支持微信直接个人私聊（免去@步骤，可直接回[复，更加](https://ssw9noe1h6.feishu.cn/wiki/LVfowksXAi4241kBqFYc1O2TnHf#part-PJvkdVgR9oLIZLxym6Rc6tMHnqe)方便快速，如有需要请联系我们的（运营团队）
+✅ 支持🛰️直接个人私聊（免去@步骤，可直接回[复，更加](https://ssw9noe1h6.feishu.cn/wiki/LVfowksXAi4241kBqFYc1O2TnHf#part-PJvkdVgR9oLIZLxym6Rc6tMHnqe)方便快速，如有需要请联系我们的（运营团队）
 
 ✅ 支持不限时无限出图
 
 ✅ 支持图片压缩发送以及查看原图功能
 
-✅ 支持代理绑定自己的微信号
+✅ 支持代理绑定自己的🛰️号
 
 ✅ 支持 Blend（图片混合） 指令和相关动作
 

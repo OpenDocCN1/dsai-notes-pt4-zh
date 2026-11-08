@@ -84,7 +84,7 @@ Qwen1.5 发布，性能超越 GPT3.5，支持多语言
 
 ### OpenAI 发布 visionOS 版 ChatGPT！600 种空间体验与 100 万个兼容软件来啦！附官方应用解读～
 
-> https://mp.weixin.qq.com/s/4DbE2MbMroPLYVdr4nQQ7w
+> https://mp.weixin.qq.com/s/4DbE2MbMroPLYVdr4n🐧7w
 
 OpenAI 发布了 Apple Vision Pro 版 ChatGPT，允许用户与 GPT-4 Turbo 模型进行交互。
 

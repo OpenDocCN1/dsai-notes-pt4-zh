@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/eQDH2KUciHz1wulMaq-_mQ)qq.com/s/eQDH2KUc...
 
-> 公众号：财富FORTUNE
+> 👸号：财富FORTUNE
 
 ![](img/6eb2635fd2a8cadfe21b2bc1e98125e3.png)
 

@@ -4,7 +4,7 @@
 
 <https://huchegames.feishu.cn/sync/MGI1d8zcLsDO0Tb1po5cCxZanMg>
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292944&idx=1&sn=0317d38dae7c95366edd037c23127aae&scene=21&poc_token=HL28VGijy1SZ34UQQw3R4WOtO088MEdPgU9HjtrX)q.com/s?__biz=Mz...
+> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292944&idx=1&sn=0317d38dae7c95366edd037c23127aae&scene=21&poc_token=HL28VGijy1SZ34U🐧w3R4WOtO088MEdPgU9HjtrX)q.com/s?__biz=Mz...
 
 > ⏰ 原创 曾嵘 曾嵘胡扯的地方2024年12月03日 13:00  广东
 
@@ -160,7 +160,7 @@
 
 +   **小公司，**熟悉团队，业内老鸟，简称 小熟老。
 
-其中，前两个概念是 @车老师（公众号：车尔斯基的游戏运营杂谈） 提出来的，最后小熟老的概念是我增加的。我认为，小熟老成功的概率会更大一些。
+其中，前两个概念是 @车老师（👸号：车尔斯基的游戏运营杂谈） 提出来的，最后小熟老的概念是我增加的。我认为，小熟老成功的概率会更大一些。
 
 ![](img/b58625b3d99b54df4f09ce5e5ab72f1c.png)
 
@@ -276,9 +276,9 @@
 
 **这些会议相关文章值得读一下：**
 
-+   消除类小游戏前中后期调优细则——2024腾讯广告IAA微信小游戏私享会
++   消除类小游戏前中后期调优细则——2024腾讯广告IAA🛰️小游戏私享会
 
-+   [IAA小游戏之什么值得做：逆袭和塔防—](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292775&idx=1&sn=475552d19adcbb60ac5a86e7361e9bc1&scene=21#wechat_redirect)—2024腾讯广告IAA微信小游戏私享会
++   [IAA小游戏之什么值得做：逆袭和塔防—](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292775&idx=1&sn=475552d19adcbb60ac5a86e7361e9bc1&scene=21#wechat_redirect)—2024腾讯广告IAA🛰️小游戏私享会
 
 +   CGDC上《潜水员戴夫》关于Steam推荐算法的分享
 
@@ -286,13 +286,13 @@
 
 +   《小游戏团队创始人避坑指南》PPT ｜ 欢迎来现场胡扯
 
-+   2024微信公开课小游戏开发者大会PPT（部分）
++   2024🛰️公开课小游戏开发者大会PPT（部分）
 
-+   2024微信小游戏开发者大会逐字稿
++   2024🛰️小游戏开发者大会逐字稿
 
 +   IAA异军突起，基于抖小IAA用户研究报告的立项思路分析
 
-+   让创造产生价值：2024(武汉)微信小游戏公开课IAA专场实录
++   让创造产生价值：2024(武汉)🛰️小游戏公开课IAA专场实录
 
 +   智游破浪启迪未来：2024抖音IAA小游戏生态大会实录
 

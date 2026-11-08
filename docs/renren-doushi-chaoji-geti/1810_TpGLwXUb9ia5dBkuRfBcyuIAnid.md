@@ -12,9 +12,9 @@
 
 > 而且这篇文章是教编写Prompt的思路，不是分享Prompt。
 
-> 如果你真的需要我的相关Prompt可以加我的微信一起讨论交流。
+> 如果你真的需要我的相关Prompt可以加我的🛰️一起讨论交流。
 
-> 我的微信号(评论中有二维码)：HaiPro_2023
+> 我的🛰️号(评论中有二维码)：HaiPro_2023
 
 > [「AI 提示词工程师」の 见解和经验分享](https://nanfangshaonian.feishu.cn/wiki/CkIowVcTjiL3EdkJjzzcaeJPnfh)对于「AI提示词工程师」的学习经验和见解：
 

@@ -30,7 +30,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/j5On0_nOErdHVK0T8MkqbQ)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/j5On0_nOErdHVK0T8MkqbQ)
 
 +   [论文链接](https://www.nature.com/articles/s41589-025-02136-3)
 

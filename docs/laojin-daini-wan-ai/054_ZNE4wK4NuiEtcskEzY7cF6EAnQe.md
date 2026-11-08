@@ -170,7 +170,7 @@ https://console.volcengine.com/coze-pro/overview?scenario=coze
 
 ## 福利
 
-关注**公众号**“**金子的知识星球**”，发送“**Deepseek**”获取清华大学发布的**DeepSeek从入门到精通**。
+关注**👸号**“**金子的知识星球**”，发送“**Deepseek**”获取清华大学发布的**DeepSeek从入门到精通**。
 
 ![](img/c3e7e4f36b970a8b1091aa399b20f768.png)
 

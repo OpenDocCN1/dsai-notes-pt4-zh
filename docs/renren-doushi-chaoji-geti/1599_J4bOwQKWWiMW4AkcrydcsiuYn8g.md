@@ -246,7 +246,7 @@ ChatGPT 可以在内容运营场景中发挥多种作用：
 
 ![](img/e595277d4ec292e9f1220cf43f149aa0.png)
 
-### 小红书格式
+### 📕格式
 
 > 你是一个心理咨询师，从经典文学或心理学作品中找到一段描述”原生家庭“的话，配上简单且吸引眼球的标题，每个段落都加一个emoji，最后加一些内容相关的tag
 
@@ -533,7 +533,7 @@ ChatGPT 在很多其他的场景中都能发挥其语言理解和生成能力。
 
 ### 辅助编程
 
-可以写代码，找 bug，查知识，代码转换，学习开放平台发布流程，构建应用。这是一个生成微信小程序的例子
+可以写代码，找 bug，查知识，代码转换，学习开放平台发布流程，构建应用。这是一个生成🛰️小程序的例子
 
 > write wechat mini program code using wxml, wxss and wjs,  separate every part into single section, no inline style. the page named ‘post’. write a page with one title(My First Blog), one blog post(with short sample text), one image(full width, with random cat placeholder) ,  and one button, red background, white text, full width, with text ‘CLICK ME’. the page has 20rpx padding, and a #f0f0f0 background.  title font is 40rpx, the post font is 26rpx, color is #333. there are 20rpx margin between text and image, when click the button, popup alert with text ‘oh you clicked me~’.
 

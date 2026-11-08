@@ -16,7 +16,7 @@
 
 656篇原创内容
 
-公众号
+👸号
 
 **有新Newin** 本周分享了[红](http://mp.weixin.qq.com/s?__biz=Mzg3NDkyMTQ5Mw==&mid=2247491599&idx=1&sn=20d6bfb9c3f40ba893f3cb3064a495ec&chksm=cecbcb75f9bc42632fa0f79b999b916e6d822bca80ee33c6f43a85288313b9fcc0b33764510c&scene=21#wechat_redirect)杉美国 [AI 峰会最新洞察｜生成式 AI 一年营](http://mp.weixin.qq.com/s?__biz=Mzg3NDkyMTQ5Mw==&mid=2247491565&idx=1&sn=b82d93592babf9f8d413ad83be4f5927&chksm=cec83497f9bfbd819a2e750b222dbf32c065dde979db0e11b1a1e46cb29f3db019752948d86e&scene=21#wechat_redirect)收走完 SaaS 十年的路；未来软件替代服务，数万亿可能仅是起点 以及 Andrej Karpathy 美国红杉资本最新对谈，达到 AGI 或需全新架构。
 
@@ -158,7 +158,7 @@ Agent Reflection 是一个工具，我认为我们许多人都在使用，它就
 
 656篇原创内容
 
-公众号
+👸号
 
 # Newin 行业交流群** **下方扫码加入“有新Newin”读者交流群👇
 

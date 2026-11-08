@@ -4,7 +4,7 @@
 
 > 来源：[https://docs.feishu.cn/docx/HSv3dlBBZojbw8xLeCAcQtvqnFw](https://docs.feishu.cn/docx/HSv3dlBBZojbw8xLeCAcQtvqnFw)
 
-> 本知识库由公众号“数据何规”每周日发布的专栏“煮酒言规”整理而来。
+> 本知识库由👸号“数据何规”每周日发布的专栏“煮酒言规”整理而来。
 
 ![](img/0a987fd87a8e2013ea497aec732207b9.png)
 
@@ -18,7 +18,7 @@
 
 # 💡  联系我
 
-> 微信搜索公众号“数据何规”留言与我联系。
+> 🛰️搜索👸号“数据何规”留言与我联系。
 
 建议通过PC端访问。若通过网页版访问的，下方目录无法显示，目录在左上角，详见下图。
 

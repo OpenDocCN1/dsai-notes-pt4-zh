@@ -1,4 +1,4 @@
-# 社区垂直微信社群分类
+# 社区垂直🛰️社群分类
 
 > 来源：[https://yunyinghui.feishu.cn/docx/BTjQd3FsKoQY83xC7roc9kfVnUh](https://yunyinghui.feishu.cn/docx/BTjQd3FsKoQY83xC7roc9kfVnUh)
 
@@ -18,13 +18,13 @@
 
 ![](img/5176c2998aee8c8f205ce6afbb7cdadf.png)
 
-# 垂直社群微信群负责人
+# 垂直社群🛰️群负责人
 
 ![](img/09067b77bb57e6cdddbb762d0752703a.png)
 
 > 请按需添加对应社群负责人，会邀请你进对应的社群。
 
-| ### **垂直类型** | ### **负责人** | ### **负责人介绍** | ### 负责人微信号 |
+| ### **垂直类型** | ### **负责人** | ### **负责人介绍** | ### 负责人🛰️号 |
 | --- | --- | --- | --- |
 |  |  |  |  |
 |  |  |  |  |
@@ -32,7 +32,7 @@
 
 ![](img/c3acb149569a4c441be69d225d738ccc.png)
 
-# 垂直社群微信群
+# 垂直社群🛰️群
 
 ![](img/05b597964614a3fcb1e4c7c247ef3aa5.png)
 

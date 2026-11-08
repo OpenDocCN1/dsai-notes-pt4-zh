@@ -8,11 +8,11 @@
 
 ## 指数榜
 
-[公众号指数榜](https://www.newrank.cn/ranklist/gongzhonghao)
+[👸号指数榜](https://www.newrank.cn/ranklist/gongzhonghao)
 
 [视频号指数榜](https://www.newrank.cn/ranklist/shipinhao)
 
-[小红书指数榜](https://www.newrank.cn/ranklist/xiaohongshu)
+[📕指数榜](https://www.newrank.cn/ranklist/xiaohongshu)
 
 [抖音指数榜](https://www.newrank.cn/ranklist/douyin)
 
@@ -20,11 +20,11 @@
 
 [哔哩哔哩指数榜](https://www.newrank.cn/ranklist/bilibili)
 
-[微博指数榜](https://www.newrank.cn/ranklist/weibo)
+[🧣指数榜](https://www.newrank.cn/ranklist/weibo)
 
 ## 涨粉榜
 
-[小红书涨粉榜](https://www.newrank.cn/rankfans/xiaohongshu)
+[📕涨粉榜](https://www.newrank.cn/rankfans/xiaohongshu)
 
 [抖音涨粉榜](https://www.newrank.cn/rankfans/douyin)
 
@@ -34,13 +34,13 @@
 
 ## 飙升榜
 
-[公众号飙升榜](https://www.newrank.cn/rankrise/gongzhonghao)
+[👸号飙升榜](https://www.newrank.cn/rankrise/gongzhonghao)
 
 [视频号飙升榜](https://www.newrank.cn/rankrise/shipinhao)
 
 ## **话题榜**
 
-[小红书话题榜](https://www.newrank.cn/ranktopic/xiaohongshu)
+[📕话题榜](https://www.newrank.cn/ranktopic/xiaohongshu)
 
 [抖音话题榜](https://www.newrank.cn/ranktopic/douyin)
 

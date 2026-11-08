@@ -2,7 +2,7 @@
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/NehidrIB5oLzJhxaAlgcT4Zgn0E](https://zinxkclpk97.feishu.cn/docx/NehidrIB5oLzJhxaAlgcT4Zgn0E)
 
-> 写在开始，近期我的爆款短视频应用已经上架到的了Coze应用市场，包含之前公众号分享的所有视频模板，欢迎来体验试用。文末点赞获取体验链接🔗。
+> 写在开始，近期我的爆款短视频应用已经上架到的了Coze应用市场，包含之前👸号分享的所有视频模板，欢迎来体验试用。文末点赞获取体验链接🔗。
 
 ![](img/5f98f54c512fe5216e23011f45e701ee.png)
 

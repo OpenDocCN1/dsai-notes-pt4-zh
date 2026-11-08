@@ -103,7 +103,7 @@ Github仓库：https://github.com/THUDM/ChatGLM3
 
 ---
 
-# 🏠 公众号
+# 🏠 👸号
 
 ![](img/d946d340d0ecad962c176deaa52da5e9.png)
 
@@ -137,6 +137,6 @@ Github仓库：https://github.com/THUDM/ChatGLM3
 
 联系邮箱：wei.jia@zhipuai.cn
 
-企业微信：
+企业🛰️：
 
 ![](img/4048de0681fa97a399b5e2633903db47.png)

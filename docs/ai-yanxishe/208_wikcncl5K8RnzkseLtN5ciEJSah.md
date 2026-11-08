@@ -24,7 +24,7 @@ Ai是一种计算机生成绘画的方法，它使用人工智能算法来创作
 
 教程：[https://www.zcool.com.cn/articl](https://link.zhihu.com/?target=https%3A//www.zcool.com.cn/article/ZMTM3OTg3Mg%3D%3D.html)e/ZMTM3OTg3Mg==.html
 
-操作门槛：适中 需要翻墙与谷歌账号，操作界面略难上手，需要按照教程一步一步生成画作。
+操作门槛：适中 需要🪜与谷歌账号，操作界面略难上手，需要按照教程一步一步生成画作。
 
 ![](img/d6dce09a63b098ea90d9ba38cbf5ee62.png)
 
@@ -206,7 +206,7 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 开发商：上海退格数字科技有限公司
 
-体验网址：网页端目前只限内测名额使用，不过可以搜索“TIAMAT AI”微信小程序体验一下。
+体验网址：网页端目前只限内测名额使用，不过可以搜索“TIAMAT AI”🛰️小程序体验一下。
 
 教程：[https://www.bilibili.com/video/BV1rm4y1F7V7/?spm_id_fr](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1rm4y1F7V7/%3Fspm_id_from%3Dtrigger_reload%26vd_source%3D2de83af4a66e0414b8fc2f1c598a80a6)om=trigger_reload&vd_source=2de83af4a66e0414b8fc2f1c598a80a6
 

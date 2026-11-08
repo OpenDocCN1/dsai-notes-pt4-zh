@@ -14,7 +14,7 @@
 
 ![](img/477ee21265ccb2a9367dfaf428c64a9e.png)
 
-1.  准备提示词，这里我们使用new bing chat来自动生成提示词。需要new bing提示语的公众号后台私信“new bing”免费获取。
+1.  准备提示词，这里我们使用new bing chat来自动生成提示词。需要new bing提示语的👸号后台私信“new bing”免费获取。
 
 ![](img/dfbdb918d2adbc5530e62482a6837826.png)
 

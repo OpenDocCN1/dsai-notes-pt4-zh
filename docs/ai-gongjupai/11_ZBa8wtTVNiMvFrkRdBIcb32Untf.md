@@ -2,7 +2,7 @@
 
 > 来源：[https://docs.feishu.cn/docx/ScaAdJKL7oHQngxGfW9csfj5nrf](https://docs.feishu.cn/docx/ScaAdJKL7oHQngxGfW9csfj5nrf)
 
-最近有小伙伴问 Chris 无需梯子🪜即可访问的AI聊天机器人。目前流行的 ChatGPT、Claude2 等需翻墙才能使用。因此， Chris 整理了 17 款国产 AI 聊天机器人，它们无需梯子🪜即可访问。
+最近有小伙伴问 Chris 无需🪜🪜即可访问的AI聊天机器人。目前流行的 ChatGPT、Claude2 等需🪜才能使用。因此， Chris 整理了 17 款国产 AI 聊天机器人，它们无需🪜🪜即可访问。
 
 本文旨在提供信息，并不比较各工具。欢迎大家在评论区补充。
 

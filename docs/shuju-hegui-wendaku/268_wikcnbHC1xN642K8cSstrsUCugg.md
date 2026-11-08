@@ -16,6 +16,6 @@
 
 **-答2：**用户访问YouTube，本身就是想访问境外网络，不符合访问境内网**络这个约束条件。这种**情况可能说的是类似Google Analytics和Google Ads的情况，我本来想访问豆瓣网看一个电影评分，但是豆瓣通过Google Ads给我匹配了他们广告联盟的定制广告。Google Ads又是在境外的服务。
 
-**-答3：**因为某事件，国内IP无法访问某APP，只能翻墙出去再回来访问，这个就是规制的情况。
+**-答3：**因为某事件，国内IP无法访问某APP，只能🪜出去再回来访问，这个就是规制的情况。
 
 [数据出境定义](https://cbe8t1r4a5.feishu.cn/wiki/wikcn3L5bGEOvBTHYv21IniHZxc)

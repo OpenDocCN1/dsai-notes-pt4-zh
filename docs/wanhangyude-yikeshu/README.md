@@ -54,9 +54,9 @@
 
 +   **短视频矩阵运营**：成功运营多个短视频账号，包括零食号、同城曝光、私域引流、Tiktok 等，具有实战经验。
 
-+   **内容创作**：公众号订阅人数超过 5000，证明了内容创作和吸引用户的能力。
++   **内容创作**：👸号订阅人数超过 5000，证明了内容创作和吸引用户的能力。
 
-+   **引流技巧**：通过小红书进行资料表格私域引流，单日引流 200+，展现了高效的用户增长策略。
++   **引流技巧**：通过📕进行资料表格私域引流，单日引流 200+，展现了高效的用户增长策略。
 
 ![](img/f516a20e076f831d4e98f28805584960.png)
 
@@ -98,13 +98,13 @@
 
 +   **笔记工具：**[飞书文档](https://ghlf0s3q3l.feishu.cn/drive/home/)、[flomo](https://flomoapp.com/)、Obsidian
 
-+   **输入法：**[微信输入法](https://z.weixin.qq.com/)
++   **输入法：**[🛰️输入法](https://z.weixin.qq.com/)
 
 +   **密码管理：**[账号本子](https://uccmawei.com/account-box.html)
 
 +   **网盘：**[OneDrive](https://www.microsoft.com/zh-cn/microsoft-365/onedrive/online-cloud-storage)、夸克云盘
 
-+   **电子书阅读：**[微信读书](https://weread.qq.com/#login)、[得到](https://www.dedao.cn/)
++   **电子书阅读：**[🛰️读书](https://weread.qq.com/#login)、[得到](https://www.dedao.cn/)
 
 +   **其它小工具：**[Eagle](https://eagle.cool/)、[Utools](https://www.u.tools/)、[PixPin](https://v2ex.com/t/989393#reply54)
 
@@ -118,7 +118,7 @@
 
 ![](img/b933b4643ebe162125a4538c3face4e3.png)
 
-| 微信 | 公众号：小宇录 |
+| 🛰️ | 👸号：小宇录 |
 | --- | --- |
 | ![](img/804451b6fa8eb26483ba578a58a01705.png) | ![](img/15c1b41aa62e3aaf02de520344f604ad.png) |
 
@@ -128,4 +128,4 @@
 
 wx : why0721- | 飞书个人号 :
 
-（添加微信请备注“一棵树”，快速通过审核）
+（添加🛰️请备注“一棵树”，快速通过审核）

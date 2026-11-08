@@ -94,7 +94,7 @@
 
 ## API额度有多少？
 
-<https://datawhaler.feishu.cn/sync/KBlMdwfKEszVjnbQQYycsinunVe>
+<https://datawhaler.feishu.cn/sync/KBlMdwfKEszVjnb🐧YycsinunVe>
 
 ## 如何将修改后的代码上传创空间发布？
 

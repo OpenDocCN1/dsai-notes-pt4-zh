@@ -28,15 +28,15 @@
 
 ![](img/008f75b3817272e724aff5719bf2f6e7.png)
 
-**微信扫码进群学习**
+**🛰️扫码进群学习**
 
 ![](img/cb87a4b1f2f1dd618c503eeaa9081b41.png)
 
-微信好友（ID：zhangyuguo94s）
+🛰️好友（ID：zhangyuguo94s）
 
 **防火防盗防失连**
 
-申请进 Deepseek 微信学习群
+申请进 Deepseek 🛰️学习群
 
 # 一、Deepseek 简介
 
@@ -376,7 +376,7 @@ DeepSeek 模型在教育、医疗、金融、工业等多个领域广泛应用�
 
 [国内已部署DeepSeek模型第三方列表 ](https://datakhazix.feishu.cn/wiki/TUWtwM8jIib6MGk63wQcGj7RnBh?28RWg=1)
 
-[12款Deepseek平替工具【公众号：智言川语】](https://xq1yhiqk7n4.feishu.cn/wiki/Uzvlw43dWiGVXBkg8hucekh8nLc?from=from_copylink)
+[12款Deepseek平替工具【👸号：智言川语】](https://xq1yhiqk7n4.feishu.cn/wiki/Uzvlw43dWiGVXBkg8hucekh8nLc?from=from_copylink)
 
 ![](img/6672fc830d5cd910f3bcc966ed5bf87b.png)
 
@@ -896,7 +896,7 @@ DeepSeek 建立个人知识库是非常实用的场景，这里有个很简易�
 
 （2）调用 DeepSeek 对话 API
 
-（3）对接企业微信接口
+（3）对接企业🛰️接口
 
 收费模式：按咨询量收费（0.5-1 元/次）或年费制（3000-8000 元/年）。
 
@@ -904,17 +904,17 @@ DeepSeek 建立个人知识库是非常实用的场景，这里有个很简易�
 
 ### 1.Deepseek 接入飞书
 
-功能：多维表格接入 deepseek R1。不知道你有没有看过，我就顺手转发给你。批量做小红书、公众号，批量处理客户数据，跟进项目等等，非常好用。
+功能：多维表格接入 deepseek R1。不知道你有没有看过，我就顺手转发给你。批量做📕、👸号，批量处理客户数据，跟进项目等等，非常好用。
 
 **官方教程：**[大仙课｜当飞书遇上 DeepSeek 们](https://larkcommunity.feishu.cn/wiki/R6rNwAMwZina8jkjK8nctxU8nmd)
 
-### 2.Deepseek 接入企业微信
+### 2.Deepseek 接入企业🛰️
 
-借助 DeepSeek，5 分钟在 skyin 平台完成接入，实现智能回复等功能，解决服务效率问题。借助 deepseek 和企业微信，这些都能轻松解决！只需 5 分钟，在 skyin 平台就能完成接入，实现 24 小时智能带情绪回复、自动打标签、引导成单。
+借助 DeepSeek，5 分钟在 skyin 平台完成接入，实现智能回复等功能，解决服务效率问题。借助 deepseek 和企业🛰️，这些都能轻松解决！只需 5 分钟，在 skyin 平台就能完成接入，实现 24 小时智能带情绪回复、自动打标签、引导成单。
 
 ![](img/b0e35f4f97b5a4b6abc24e54c93fb023.png)
 
-**教程参考：**一键部署开源 DeepSeek 并集成到企业微信
+**教程参考：**一键部署开源 DeepSeek 并集成到企业🛰️
 
 ### 3.Deepseek 接入钉钉
 
@@ -940,13 +940,13 @@ DeepSeek 接入 WPS 后，可以提供以下核心功能：
 
 ## 4）应用提效
 
-### 小红书爆文生产
+### 📕爆文生产
 
 ![](img/1d67a4e1bb455f16091e3904d9db930c.png)
 
-[20个小红书爆文创作必备DeepSeek指令.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KDYEbduyroDzi8xnMk5cQctbndb)
+[20个📕爆文创作必备DeepSeek指令.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KDYEbduyroDzi8xnMk5cQctbndb)
 
-[🌍Deepseek+飞书🐦=「小红书爆文生产机」](https://r0rel9lqdms.feishu.cn/docx/HxSXdAkvdos1MZx70aDcuWPVnof)
+[🌍Deepseek+飞书🐦=「📕爆文生产机」](https://r0rel9lqdms.feishu.cn/docx/HxSXdAkvdos1MZx70aDcuWPVnof)
 
 ## 延展阅读
 
@@ -998,7 +998,7 @@ deepseek 相关的一级域名，都是钱！！！提前抢注相关的域名�
 
 ![](img/25ccbefed2dd3736781ea699e0af7b0d.png)
 
-[DeepSeeK开启AI算法变革元年-甲子光年-2025.2-16页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bca4bAS9fo6NQQxHoDqcIAjBndb)
+[DeepSeeK开启AI算法变革元年-甲子光年-2025.2-16页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bca4bAS9fo6N🐧xHoDqcIAjBndb)
 
 ## 专题报告
 
@@ -1022,7 +1022,7 @@ deepseek 相关的一级域名，都是钱！！！提前抢注相关的域名�
 
 ![](img/a5871125751a7aa2ad214516c0e48cfa.png)
 
-[DeepSeek R1深度解析及算力影响几何-中信建投-20250203.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RiO1b691womQNZxE1v5cKQQcngg)
+[DeepSeek R1深度解析及算力影响几何-中信建投-20250203.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RiO1b691womQNZxE1v5cK🐧cngg)
 
 ![](img/96f2b4ac3044ba7407f19f0216357cb7.png)
 
@@ -1308,19 +1308,19 @@ DeepSeek 火爆全网，“神秘东方力量”冲击美股！
 
 1.持续关注并更新 AI 的相关资讯动态，研究报告，赚**钱案例，常见问题，永久免费在线**查看，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没**进群的可以扫码加入，群满可加大国微信 ID：zyg90s（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2.已建立社群聊聊 **AI** 发展及应用，**没**进群的可以扫码加入，群满可加大国🛰️ ID：zyg90s（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 3.**关于文档负责人大国**：高帆文化 CEO，曾就职于教培大厂，目前创业，主攻研究 AI 落地应用、企业流量增长。
 
 ![](img/79ef251e7e03ed0b7594a7ba47df972c.png)
 
-微信好友（ID：zhangyuguo94s）
+🛰️好友（ID：zhangyuguo94s）
 
 **防火防盗防失连**
 
-**务必添加微信：zyg90s**
+**务必添加🛰️：zyg90s**
 
-**欢迎微信围观朋友圈**
+**欢迎🛰️围观朋友圈**
 
 **加好友了解更多 AI 相关信息**
 

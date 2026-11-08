@@ -1034,7 +1034,7 @@ Cool Teacher
 
 ## 后退提问法
 
-> 来自小红书六叔六叔
+> 来自📕六叔六叔
 
 > 后退提问法（Socratic questioning or reverse questioning）是一种通过提出问题来引导对方进行深入思考的方法。
 

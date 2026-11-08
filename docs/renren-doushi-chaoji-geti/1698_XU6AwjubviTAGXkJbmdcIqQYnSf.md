@@ -6,7 +6,7 @@
 
 # 一、第一份ChatGPT作业
 
-4月份的时候，写了一篇感想[审计师轻松玩转ChatGPT](https://cufj3zjdqv.feishu.cn/docx/GwzTd0RUYo2bvrxXWayc62l7ned)  ，让ChatGPT帮我总结了这个工具在审计领域的应用场景，并在生财里交了作业。写的时候手里没数据，就让ChatGPT帮我编一些数据，然后再反手把这些数据扔给它，让它帮我分析总结。那次算是ChatGPT在工作中的初体验，比较务虚。
+4月份的时候，写了一篇感想[审计师轻松玩转ChatGPT](https://cufj3zjdqv.feishu.cn/docx/GwzTd0RUYo2bvrxXWayc62l7ned)  ，让ChatGPT帮我总结了这个工具在审计领域的应用场景，并在赚钱里交了作业。写的时候手里没数据，就让ChatGPT帮我编一些数据，然后再反手把这些数据扔给它，让它帮我分析总结。那次算是ChatGPT在工作中的初体验，比较务虚。
 
 # 二、制定被审计单位考核机制
 

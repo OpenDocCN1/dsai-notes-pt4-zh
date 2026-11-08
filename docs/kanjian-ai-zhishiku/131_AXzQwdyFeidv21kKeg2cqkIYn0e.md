@@ -32,10 +32,10 @@ https://seeaix.com/
 
 AI对话、AI绘画、AI应用一站式平台，集成了GPT、MJ、SD、DALLE等主流AI工具。
 
-## **欢迎加微信交流，请备注来意。**
+## **欢迎加🛰️交流，请备注来意。**
 
 [看见AI及个人介绍](https://jlqyxzzvbk.feishu.cn/wiki/L8anw4IEViiNEAkuN42csd9xn4b?from=from_copylink)
 
 ![](img/da067b2e1f91f9a201c303deaa3037b7.png)
 
-微信号：seeai01 或者 13858104569
+🛰️号：seeai01 或者 13858104569

@@ -34,7 +34,7 @@
 
 **模型：**nano-banana-pro
 
-**素材来源：**[公众号推文](https://mp.weixin.qq.com/s/tgMJbHlMYYxkWElsol1WAg?click_id=45)
+**素材来源：**[👸号推文](https://mp.weixin.qq.com/s/tgMJbHlMYYxkWElsol1WAg?click_id=45)
 
 **模型图片输入：**
 

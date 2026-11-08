@@ -8,7 +8,7 @@
 
 **·向量光年科技有限公司创始人**
 
-·《开源AI项目落地》公众号及社群主理人
+·《开源AI项目落地》👸号及社群主理人
 
 专注于AI产品开发落地，移动端、PC端软件快速高质量交付
 
@@ -150,6 +150,6 @@ assistant.chat(message, use_cache=True, max_turns=50,               summary_meth
 
 https://github.com/AI4Finance-Foundation/FinRobot
 
-关注「 开源AI项目落地 」公众号
+关注「 开源AI项目落地 」👸号
 
 与AI时代更靠近一点

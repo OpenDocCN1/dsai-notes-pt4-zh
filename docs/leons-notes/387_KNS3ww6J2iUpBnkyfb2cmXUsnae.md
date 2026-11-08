@@ -12,7 +12,7 @@
 
 +   Podcast 「奇想驿&产品沉思录」主播；
 
-+   Newsletter 「[产品沉思录](https://xiaobot.net/p/pmthinking2023?refer=eac13849-d3e5-4cfa-b015-b4ee3f409f8b)」、公众号「产品沉思录」主理人；
++   Newsletter 「[产品沉思录](https://xiaobot.net/p/pmthinking2023?refer=eac13849-d3e5-4cfa-b015-b4ee3f409f8b)」、👸号「产品沉思录」主理人；
 
 原丁香园首席产品架构师、百姓网产品经理。历史作品有「摆摆书架」、「食色」等。
 
@@ -80,6 +80,6 @@
 
 **罗磊**
 
-> 因为公众号文章《独立开发者的10年》了解到，很厉害的老哥，
+> 因为👸号文章《独立开发者的10年》了解到，很厉害的老哥，
 
 +   [罗磊的独立博客](https://luolei.org/)

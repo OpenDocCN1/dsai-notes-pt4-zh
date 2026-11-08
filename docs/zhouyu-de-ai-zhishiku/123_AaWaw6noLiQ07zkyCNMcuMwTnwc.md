@@ -64,6 +64,6 @@ n8n
 
 ![](img/7dbeedb2ba7304c11ab3615a1b3e3c76.png)
 
-小红书图文仿写
+📕图文仿写
 
 ![](img/8c2d2fb07ec8f9a539fc79869da20e9d.png)

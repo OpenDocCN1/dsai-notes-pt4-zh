@@ -2,7 +2,7 @@
 
 > 来源：[https://agispace.feishu.cn/docx/ZgbMd9bdmodsUUx5LBWc27UgnWf](https://agispace.feishu.cn/docx/ZgbMd9bdmodsUUx5LBWc27UgnWf)
 
-> 公众号：AI 生活研究所
+> 👸号：AI 生活研究所
 
 >
 
@@ -18,7 +18,7 @@
 
 [AI生活研究所｜只要一句话，60秒，这个AI工具就做帮你做好PPT！](https://agispace.feishu.cn/wiki/ByxzwCx2MiAcplkOKK8cqOqonyb)
 
-[独家接入微信！腾讯的AI应用生态终于发力了](https://agispace.feishu.cn/wiki/XSc2wSTipiV3YQk3UCocJXGsnyc)
+[独家接入🛰️！腾讯的AI应用生态终于发力了](https://agispace.feishu.cn/wiki/XSc2wSTipiV3YQk3UCocJXGsnyc)
 
 [真免费！有了天工AI，可以卸载你手机里至少20个应用！](https://agispace.feishu.cn/wiki/PsUNwSzsPisba5k1qIyc2nUQnQe)
 

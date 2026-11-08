@@ -109,7 +109,7 @@ Exa搜索——功能很好，全网语义搜索，AI友好。
 
 ![](img/94ad24cd96787a41bcddfbcc6510a367.png)
 
-小红书——原文档说要Docker，但其实不需要。
+📕——原文档说要Docker，但其实不需要。
 
 npm装个rednote-mcp，扫个码就行。
 
@@ -152,7 +152,7 @@ Windows上会遇到一些奇葩问题。
 
 第三个 Cookie认证靠谱但要注意
 
-Twitter和小红书都是Cookie认证。
+Twitter和📕都是Cookie认证。
 
 老金我用了几天，Twitter读推文没出过问题。
 
@@ -196,7 +196,7 @@ twitter.py管Twitter，youtube.py管YouTube，各管各的。
 
 **Cookie认证的封号风险**
 
-Twitter和小红书用的都是Cookie认证。
+Twitter和📕用的都是Cookie认证。
 
 说白了就是模拟你的浏览器登录状态去抓数据。
 

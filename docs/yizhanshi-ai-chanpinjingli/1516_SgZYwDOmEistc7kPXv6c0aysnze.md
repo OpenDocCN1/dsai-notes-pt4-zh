@@ -172,4 +172,4 @@ CLIP 可以用来做零**样本分类（**zero-shot classifcation）任务。相
 
 ![](img/24caaf316e46d9bfa8e8fa0a2e2f9ad6.png)
 
-# 试看课 联系微信：AIGC7654
+# 试看课 联系🛰️：AIGC7654

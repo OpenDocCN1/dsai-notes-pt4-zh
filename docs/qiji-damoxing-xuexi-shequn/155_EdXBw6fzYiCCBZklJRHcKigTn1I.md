@@ -6,7 +6,7 @@
 
 ### OpenAI新模型「草莓」曝光：强推理/长任务规划/超大规模训练！还给出AGI分级
 
-https://mp.weixin.qq.com/s/t8qQCirCG5_JggvBOkGdQQ
+https://mp.weixin.qq.com/s/t8qQCirCG5_JggvBOkGd🐧
 
 OpenAI最新绝密项目曝光！知情**人士**透露，OpenAI正在开发一个名为“草莓（Strawberry）”的新模型，它的前身是Q*。其工作机制在内部被严格保密，且细节从未被外界报道过。消息称，“草莓”模型不仅在超大规模数据集上完成预训练，并且采用了一种特殊的方法。
 
@@ -308,7 +308,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

@@ -18,7 +18,7 @@ Pay it forward.
 
 ![](img/14725be62a24b557e0c8e33351519e04.png)
 
-另外推荐一下作者的公众号：Siddartha，非常有价值。
+另外推荐一下作者的👸号：Siddartha，非常有价值。
 
 ## 法案文本
 

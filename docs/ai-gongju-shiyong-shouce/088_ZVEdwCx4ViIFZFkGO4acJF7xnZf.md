@@ -14,7 +14,7 @@
 
 **正文：**
 
-AI[🎁Vega变现指南（微信表情包）](https://yw55ojhusnq.feishu.cn/wiki/CKhTw6GF5iXyVlkobH7csUYTnze)画变现方式，之前介绍了微信表情包的案例
+AI[🎁Vega变现指南（🛰️表情包）](https://yw55ojhusnq.feishu.cn/wiki/CKhTw6GF5iXyVlkobH7csUYTnze)画变现方式，之前介绍了🛰️表情包的案例
 
 今天我再介绍下自媒体账号变现，把几个变现模式分享给大家👇
 
@@ -48,7 +48,7 @@ AI[🎁Vega变现指南（微信表情包）](https://yw55ojhusnq.feishu.cn/wiki
 
 ![](img/48202ffc9251570cdb76a6884a53337a.png)
 
-微信扫一扫注册神图君
+🛰️扫一扫注册神图君
 
 ![](img/149630f895fa716c917c6374daaa316c.png)
 
@@ -132,7 +132,7 @@ vega[NO.06风格定制（炼丹）](https://yw55ojhusnq.feishu.cn/wiki/GI49wGek6
 
 #### 接单渠道
 
-目前炼丹的接单方式还是咸鱼小红书这些渠道为主！
+目前炼丹的接单方式还是咸鱼📕这些渠道为主！
 
 ❌抖音不适合这样做，会影响流量和账号权重，而且容易违规；
 

@@ -12,7 +12,7 @@ AI + 电商：[AI 人类模特换装](https://datawhaler.feishu.cn/wiki/R78awLh4
 
 ## 社交媒体
 
-小红书：奇想星球纪伦伦
+📕：奇想星球纪伦伦
 
 ![](img/dedd6d761f55125966217940bfc6952f.png)
 

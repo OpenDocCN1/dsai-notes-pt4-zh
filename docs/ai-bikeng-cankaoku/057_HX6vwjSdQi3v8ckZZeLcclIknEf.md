@@ -50,7 +50,7 @@ chrome浏览器，速度快，干净，另外很多AI工具都是国外公司研
 
 [图片视频下载](https://microsoftedge.microsoft.com/addons/detail/aix%E6%99%BA%E8%83%BD%E4%B8%8B%E8%BD%BD%E5%99%A8%E5%9B%BE%E7%89%87%E8%A7%86%E9%A2%91%E9%9F%B3%E4%B9%90%E6%96%87%E6%A1%A3/cdnlggbebabeoneeglhadpagegmflmbc?hl=zh-CN)
 
-[小红书图片视频下载](https://microsoftedge.microsoft.com/addons/detail/%E5%B0%8F%E5%9C%B0%E7%93%9C-%E2%80%94%E2%80%94-%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%9B%BE%E7%89%87%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B/kjeedhlknhdigkllmbadfobhfdihaghl?hl=zh-CN)
+[📕图片视频下载](https://microsoftedge.microsoft.com/addons/detail/%E5%B0%8F%E5%9C%B0%E7%93%9C-%E2%80%94%E2%80%94-%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%9B%BE%E7%89%87%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B/kjeedhlknhdigkllmbadfobhfdihaghl?hl=zh-CN)
 
 [全网资源搜索](https://microsoftedge.microsoft.com/addons/detail/%E5%AD%A6%E6%9C%AF%E8%B5%84%E6%BA%90%E5%85%A8%E7%BD%91%E6%90%9C%E7%B4%A2/jinddgjhfchibbpdohnllegfjllidhpk?hl=zh-CN)
 

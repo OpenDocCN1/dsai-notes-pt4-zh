@@ -14,7 +14,7 @@ https://github.com/QwenLM/Qwen
 
 🤗 H[ugging Face ](https://huggingface.co/Qwen)  |   🤖 Mo[delScope  ](https://modelscope.cn/organization/qwen) |    📑 Pap[er   ](https://arxiv.org/abs/2309.16609) ｜   🖥️ Demo[
 
-WeC](https://modelscope.cn/studios/qwen/Qwen-72B-Chat-Demo/summary)[hat (微信)   ](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png)|   Dis[cord   ](https://discord.gg/CV4E9rpNSD)｜   API
+WeC](https://modelscope.cn/studios/qwen/Qwen-72B-Chat-Demo/summary)[hat (🛰️)   ](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png)|   Dis[cord   ](https://discord.gg/CV4E9rpNSD)｜   API
 
 ## 1.Inference Performance
 
@@ -24,7 +24,7 @@ We measured the average inference speed (tokens/s) and GPU memory usage of gener
 
 🤗 H[ugging Face ](https://huggingface.co/Qwen)  |   🤖 Mo[delScope  ](https://modelscope.cn/organization/qwen) |    📑 Pap[er   ](https://arxiv.org/abs/2309.16609) ｜   🖥️ Demo[
 
-WeC](https://modelscope.cn/studios/qwen/Qwen-72B-Chat-Demo/summary)[hat (微信)   ](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png)|   Dis[cord   ](https://discord.gg/z3GAxXZ9Ce)｜   API[   ](https://dashscope.aliyun.com/)|   Web   |   APP
+WeC](https://modelscope.cn/studios/qwen/Qwen-72B-Chat-Demo/summary)[hat (🛰️)   ](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png)|   Dis[cord   ](https://discord.gg/z3GAxXZ9Ce)｜   API[   ](https://dashscope.aliyun.com/)|   Web   |   APP
 
 Important
 
@@ -66,7 +66,7 @@ Warning
 
 如果遇到问题，请优先考虑查询[FAQ](https://github.com/QwenLM/Qwen/blob/main/FAQ.md)。如仍未解决，随时提出issue（但建议使用英语或提供翻译，有助于帮助更多用户）。如果想帮助我们提升，欢迎提交Pull Requests！
 
-想和我们一起讨论和聊天的话，赶紧加入我们的微信群和Discord server（入口见文档开头部分）！
+想和我们一起讨论和聊天的话，赶紧加入我们的🛰️群和Discord server（入口见文档开头部分）！
 
 ## 2.新闻
 

@@ -6,7 +6,7 @@
 
 去 chat.openai.com 注册。你需要：
 
-+   一个良好的梯子（OpenAI 支持地区原生 IP 地址）
++   一个良好的🪜（OpenAI 支持地区原生 IP 地址）
 
 +   一个支持的邮箱（例如 Gmail 或者公司/学校邮箱，非 Outlook 或 qq 邮箱）
 

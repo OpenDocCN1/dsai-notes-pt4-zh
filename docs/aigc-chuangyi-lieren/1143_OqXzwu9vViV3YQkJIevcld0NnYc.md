@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/Qc8Cd7cdmotipyxQXHqcb8wGnOd](https://aigcreative.feishu.cn/docx/Qc8Cd7cdmotipyxQXHqcb8wGnOd)
 
-> 公众号：芯东西
+> 👸号：芯东西
 
 > 链接：https://mp.weixin.qq.com/s/WJuxERXMqQjxvosLhy7VKw
 

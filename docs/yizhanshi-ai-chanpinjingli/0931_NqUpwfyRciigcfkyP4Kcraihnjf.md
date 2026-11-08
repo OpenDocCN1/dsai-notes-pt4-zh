@@ -1,6 +1,6 @@
 # 编写提示
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/YJIYdnArMoyceYxp4wecfiQQnK2](https://v11enp9ok1h.feishu.cn/docx/YJIYdnArMoyceYxp4wecfiQQnK2)
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/YJIYdnArMoyceYxp4wecfi🐧nK2](https://v11enp9ok1h.feishu.cn/docx/YJIYdnArMoyceYxp4wecfi🐧nK2)
 
 Bot 的提示(人设与回复逻辑) 是一种自然语言指令，告诉大语言模型（LLM）执行什么任务。搭建 Bot 的第一步就编写提示词，为 Bot 设定身份和目标。Bot 会根据大语言模型对人物设定和回复逻辑的理解，来响应用户问题。因此提示编写的越清晰明确，Bot 的回复也会越符合预期。
 

@@ -38,8 +38,8 @@
 
 AI聚合助手。
 
-**欢迎加微信交流，请备注来意。**[看见AI及个人介绍](https://jlqyxzzvbk.feishu.cn/wiki/L8anw4IEViiNEAkuN42csd9xn4b?from=from_copylink)
+**欢迎加🛰️交流，请备注来意。**[看见AI及个人介绍](https://jlqyxzzvbk.feishu.cn/wiki/L8anw4IEViiNEAkuN42csd9xn4b?from=from_copylink)
 
 ![](img/322e7eb6035c6f2ba2a8e884c8ad3c1d.png)
 
-微信号：seeai01 或者 13858104569
+🛰️号：seeai01 或者 13858104569

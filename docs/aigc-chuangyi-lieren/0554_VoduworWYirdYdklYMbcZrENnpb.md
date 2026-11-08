@@ -4,7 +4,7 @@
 
 > 原文链接： https://mp.weixin.qq.com/s/HmYzInDGrUced5mhmVsPcQ
 
-> 来源：公众号-ComfyUI中文
+> 来源：👸号-ComfyUI中文
 
 ComfyUI 现已原生支持 nano-banana API 节点 , 这让你可以将最前沿的图像编辑生成能力直接集成到你的工作流中，所有操作都可在 ComfyUI 内完成。
 
@@ -68,9 +68,9 @@ https://cloud.google.com/vertex-ai/generative-ai/pricing#token-based-pricing
 
 ## **ComfyUI 官方渠道**
 
-1.  官方微信公众号：本账号，发布官方博客及重大社区更新
+1.  官方🛰️👸号：本账号，发布官方博客及重大社区更新
 
-1.  官方微信群（用户群/节点开发者群）：关注本账号获即可获取入群二维码
+1.  官方🛰️群（用户群/节点开发者群）：关注本账号获即可获取入群二维码
 
 1.  Discord中文：https://discord.gg/uRByrnqbeS
 
@@ -90,9 +90,9 @@ Email : Hello@comfy.org
 
 Bilibili : https://space.bilibili.com/3546886659115008
 
-微博 : https://weibo.com/8018380704/PEwFsaOqZ
+🧣 : https://weibo.com/8018380704/PEwFsaOqZ
 
-小红书 : https://www.xiaohongshu.com/user/profile/605847e4000000000100343e
+📕 : https://www.xiaohongshu.com/user/profile/605847e4000000000100343e
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 

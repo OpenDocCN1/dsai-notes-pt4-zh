@@ -18,7 +18,7 @@ Midjourney 是一个由 Midjourney 研究实验室开发的人工智能程序�
 
 2）Discord 频道是什么？
 
-Discord 是前几年诞生的非常火的一种新型聊天工具，类似 QQ、微信群。
+Discord 是前几年诞生的非常火的一种新型聊天工具，类似 🐧、🛰️群。
 
 Midjourney 的使用方式是：通过给 Discord 频道内的聊天机器人发送对应文本，聊天机器人返回对应的图片。
 

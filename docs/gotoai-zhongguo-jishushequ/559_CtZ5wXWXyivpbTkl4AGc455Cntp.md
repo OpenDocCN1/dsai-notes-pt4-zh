@@ -10,7 +10,7 @@
 
 1.  [文心一格](https://yige.baidu.com/)：百度旗下的人工智能绘画程序 文心一格
 
-1.  [奇域AI](https://www.qiyuai.net/)：由小红书推出的一个专注于中式美学的AI绘画创作平台 奇域AI
+1.  [奇域AI](https://www.qiyuai.net/)：由📕推出的一个专注于中式美学的AI绘画创作平台 奇域AI
 
 1.  无界版图：国产的基于Stable D[iffu](https://www.wujieai.com/)sion的智能人工AI绘画平台 无界版图
 

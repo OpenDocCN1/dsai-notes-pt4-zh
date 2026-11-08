@@ -12,11 +12,11 @@
 
 +   [闲鱼卖货引流项目 SOP](https://geek.liyoudong.cn/?cat=11)
 
-+   [小红书引流实战项目 SOP](https://geek.liyoudong.cn/?cat=7)
++   [📕引流实战项目 SOP](https://geek.liyoudong.cn/?cat=7)
 
 +   [口播IP短视频项目SOP](https://geek.liyoudong.cn/?cat=13)
 
-+   [公众号爆文 SOP ](https://geek.liyoudong.cn/?cat=3)
++   [👸号爆文 SOP ](https://geek.liyoudong.cn/?cat=3)
 
 ##                              洋哥副业
 
@@ -36,7 +36,7 @@
 
 +   [AI绘画变现（24.1）](https://geek.liyoudong.cn/?cat=28)
 
-##                            生财有术
+##                            龙哥盟
 
 +   [AI出海工具站（23.12）](https://geek.liyoudong.cn/?cat=17)（整理学习中）
 
@@ -52,11 +52,11 @@
 
 +   [闲鱼卖货引流项目 SOP](https://geek.liyoudong.cn/?cat=11)
 
-+   [小红书引流实战项目 SOP](https://geek.liyoudong.cn/?cat=7)
++   [📕引流实战项目 SOP](https://geek.liyoudong.cn/?cat=7)
 
 +   [口播IP短视频项目SOP](https://geek.liyoudong.cn/?cat=13)
 
-+   [公众号爆文 SOP ](https://geek.liyoudong.cn/?cat=3)
++   [👸号爆文 SOP ](https://geek.liyoudong.cn/?cat=3)
 
 ##                              洋哥副业
 
@@ -74,7 +74,7 @@
 
 +
 
-##                            生财有术
+##                            龙哥盟
 
 +   [AI出海工具站（23.12）](https://geek.liyoudong.cn/?cat=17)（整理学习中）
 

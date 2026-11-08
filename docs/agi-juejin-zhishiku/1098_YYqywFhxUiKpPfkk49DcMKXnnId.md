@@ -6,7 +6,7 @@
 
 > 知乎原文：[https://mp.weixin.qq.com/s/3w](https://mp.weixin.qq.com/s/3wvh3Xlz1LcUOqJ768uAFw)vh3Xlz1LcUOqJ768uAFw
 
-> 公众号原文：[https://mp.weixin.qq.com/s/Sl](https://mp.weixin.qq.com/s/Slnf-whAqOKtUX-K0TK3JQ)nf-whAqOKtUX-K0TK3JQ
+> 👸号原文：[https://mp.weixin.qq.com/s/Sl](https://mp.weixin.qq.com/s/Slnf-whAqOKtUX-K0TK3JQ)nf-whAqOKtUX-K0TK3JQ
 
 今天继续分享一篇大模型在推荐系统中的落地应用工作，是快手今年5月份发表的论文《Knowledge Adaptation from Large Language Model to Recommendation for Practical Industrial Application》。
 
@@ -18,9 +18,9 @@
 
 +   工作2：在排序模型中加一个CVR辅助任务，使用1学习到user embedding和item embedding接入一个MLP网络和推荐目标做进一步对齐，然后取出中间层特征供排序模型使用
 
-方法其实和上次介绍的小红书的NoteLLM（ NoteLLM: 大语言模型在小红书推荐系统的落地应用 ）有点类似的地方，都是想用大模型作为特征提取器来提取item文本中的语义信息来弥补推荐模型中的冷启动以及长尾物品由于行为稀疏学不好的问题，并且都使用对比学习的范式进行学习。
+方法其实和上次介绍的📕的NoteLLM（ NoteLLM: 大语言模型在📕推荐系统的落地应用 ）有点类似的地方，都是想用大模型作为特征提取器来提取item文本中的语义信息来弥补推荐模型中的冷启动以及长尾物品由于行为稀疏学不好的问题，并且都使用对比学习的范式进行学习。
 
-不过小红书的采用i2i的方式来训练，产出一个item embedding，最终用在i2i的召回上，这篇用的是u2i的方式，能够同时产生user embedding和item embedding，看文章的线上实验最终两个embedding是用在排序模型中作为特征使用（对应工作2），并没有用于u2i召回。
+不过📕的采用i2i的方式来训练，产出一个item embedding，最终用在i2i的召回上，这篇用的是u2i的方式，能够同时产生user embedding和item embedding，看文章的线上实验最终两个embedding是用在排序模型中作为特征使用（对应工作2），并没有用于u2i召回。
 
 所以个人认为这篇文章对于实践的价值参考意义更大的可能是工作2，虽然笔墨很少，但毕竟是有上线的，工作1花里胡哨一通操作，最终也就离线自己搞了个数据集和其他几个方法跑了跑对比，为了发文章也可以理解，但是思想也可以稍微参考下吧。
 
@@ -108,6 +108,6 @@
 
 **一起交流 **
 
-想和你一起学习进步！『 **NewBeeNLP』 ****目前已经建立了多个不同方向交流群（ 机器学习 ****/ 深度学**习 / 自然语言处理 / 搜索推荐 / 图网络 / 面试交流 / 等），名额有限，赶紧添加下方微信加入一起讨论交流吧！（注意一定o要 备注信息 才能通过）
+想和你一起学习进步！『 **NewBeeNLP』 ****目前已经建立了多个不同方向交流群（ 机器学习 ****/ 深度学**习 / 自然语言处理 / 搜索推荐 / 图网络 / 面试交流 / 等），名额有限，赶紧添加下方🛰️加入一起讨论交流吧！（注意一定o要 备注信息 才能通过）
 
 ![](img/6f036f9d3bb1f24278bd3954a07f5196.png)

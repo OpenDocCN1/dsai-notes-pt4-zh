@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/QaugdaxQOoT6XexwWi2cuqFGned](https://xuqiwei1986.feishu.cn/docx/QaugdaxQOoT6XexwWi2cuqFGned)
 
-Hello,生财的圈友们大家新年好呀！我是Darren，这两年Temu平台都挺火的，今天给大家分享一下关于Temu半托管模式的一些自己的见解，希望可以给有兴趣的圈友一些帮助！
+Hello,赚钱的圈友们大家新年好呀！我是Darren，这两年Temu平台都挺火的，今天给大家分享一下关于Temu半托管模式的一些自己的见解，希望可以给有兴趣的圈友一些帮助！
 
 ## 一、**为什么选择****Temu****半托管项目？**
 

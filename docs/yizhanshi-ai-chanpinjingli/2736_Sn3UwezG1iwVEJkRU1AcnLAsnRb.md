@@ -432,7 +432,7 @@
 
 +   [腾讯](https://www.tencent.com/)
 
-+   [小红书](https://www.xiaohongshu.com/)
++   [📕](https://www.xiaohongshu.com/)
 
 +   [快手](https://www.kuaishou.com/)
 

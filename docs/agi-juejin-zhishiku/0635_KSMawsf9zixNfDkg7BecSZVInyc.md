@@ -14,11 +14,11 @@
 
 **我正在参加Trae「超级体验官」创意实践征文， **[**本文所使用的 Trae**](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=techcall) 免费下载链接： www.trae.ai
 
-**⚠️注册时候要翻墙（建议使用git**hub授权登录），使用的时候可以不翻墙。
+**⚠️注册时候要🪜（建议使用git**hub授权登录），使用的时候可以不🪜。
 
-**⚠️注册时候要翻墙（建议使用git**hub授权登录），使用的时候可以不翻墙。
+**⚠️注册时候要🪜（建议使用git**hub授权登录），使用的时候可以不🪜。
 
-**⚠️注册时候要翻墙（建议使用git**hub授权登录），使用的时候可以不翻墙。
+**⚠️注册时候要🪜（建议使用git**hub授权登录），使用的时候可以不🪜。
 
 AI编程太牛了👍。零散时间(有效工作两个小时左右，全程chat自然语言交互），利用字节的Trae(大模型基座Claude-3.5-Sonnet）实现的初版CRM小程序。ui boy、crud boy、sql boy真得瑟瑟发抖了，先进生产力工具一定要用起来。未来一个人+AI就是无敌全栈了，未来都是AI Chat Boy。
 

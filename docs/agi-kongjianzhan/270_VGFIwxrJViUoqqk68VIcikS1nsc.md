@@ -2,7 +2,7 @@
 
 > 来源：[https://agispace.feishu.cn/docx/URZvduNwcoF9dbx2XrwcVDb1n2d](https://agispace.feishu.cn/docx/URZvduNwcoF9dbx2XrwcVDb1n2d)
 
-> 快速链接：[**知航 AI **](https://vip.metai.cn/)**｜**[**公众号文章**](https://mp.weixin.qq.com/s?__biz=MzkyOTY0MzMzNA==&mid=2247483701&idx=1&sn=e9066bdaf782d7870ef0964ea1f3eb6d&chksm=c2072f1cf570a60ae33d156d463d66a6d0ce1cd07ff9e73b5d816fb47875c8328ec3a93a1e9c&token=1175732415&lang=zh_CN#rd)
+> 快速链接：[**知航 AI **](https://vip.metai.cn/)**｜**[**👸号文章**](https://mp.weixin.qq.com/s?__biz=MzkyOTY0MzMzNA==&mid=2247483701&idx=1&sn=e9066bdaf782d7870ef0964ea1f3eb6d&chksm=c2072f1cf570a60ae33d156d463d66a6d0ce1cd07ff9e73b5d816fb47875c8328ec3a93a1e9c&token=1175732415&lang=zh_CN#rd)
 
 ![](img/acb59161b8b38f6f939965d18ebec4eb.png)
 

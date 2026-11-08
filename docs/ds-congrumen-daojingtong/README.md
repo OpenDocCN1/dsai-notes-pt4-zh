@@ -4,7 +4,7 @@
 
 > 从DeepSeek开始，入门AI
 
-> 知识来源：清华大学、五道口实验室、DeepSeek开源Github、谷歌研究员、微信公众号、YiGather.com官方网站
+> 知识来源：清华大学、五道口实验室、DeepSeek开源Github、谷歌研究员、🛰️👸号、YiGather.com官方网站
 
 ### [**清华大学 - DeepSeek -**](https://yigather.feishu.cn/wiki/Pbk4wTAnSi0gs6kY1hlctK7mnIb?fromScene=spaceOverview#share-WLlAdIYdnodwKlxA5Bkc0oxUnHf) 原版学习PPT（1-5部全）源文件下载
 

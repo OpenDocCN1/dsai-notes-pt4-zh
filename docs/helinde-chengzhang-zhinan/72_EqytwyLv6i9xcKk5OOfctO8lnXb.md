@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/XbnBdposFoqN8oxGKXOceJe8nkg](https://my.feishu.cn/docx/XbnBdposFoqN8oxGKXOceJe8nkg)
 
-原播客标题：业务起步、微博出圈、付费社群，我的上半年创业复盘
+原播客标题：业务起步、🧣出圈、付费社群，我的上半年创业复盘
 
 > ：
 

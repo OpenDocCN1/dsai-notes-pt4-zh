@@ -8,11 +8,11 @@
 
 > ⏰ 收录时间：2024-05-31 11:15:04 (UTC+8)
 
-> 🔗 原文链接：  h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/xC7NDm7K8p63UcnQvhPmQQ)q.com/s/xC7NDm7K...
+> 🔗 原文链接：  h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/xC7NDm7K8p63UcnQvhPm🐧)q.com/s/xC7NDm7K...
 
 ![](img/77a26e70422829430b06eb22ff2ccb8e.png)
 
-欢迎关注公众号👆
+欢迎关注👸号👆
 
 去年 西安交通大学开源了SadTalker模型，图片+音频可以生成视频，也就是会说话、会唱歌的数字人。这是 Stable Diffusion的插件， 网上也有很多安装教程了，看了教程还是要自己亲自装一次才更熟悉，数字人的效果在文末。
 
@@ -30,7 +30,7 @@ SadTalker会让照片的人像开口说话，我们称之为照片数字人，�
 
 （2）部署Stable Diffusion，这[个在前面的文章中有介绍，可以先看这篇（ 【](http://mp.weixin.qq.com/s?__biz=MzUzOTAzODI1Nw==&mid=2247484045&idx=1&sn=a721b49368ee000dfecb10479fdb8d5a&chksm=facfc5d3cdb84cc5b8d334ff6d7b8d5db619d59357b0d38e3a58c42499e0d93c8b8005a871fa&scene=21#wechat_redirect)保姆式教程】搭建属于自己的AI绘图工具——Stable Diffusion部署 ），这个建议部署起来，后面我们会介绍很多这个平台的插件，国内很多画图AI工具也是以这个为基础。
 
-**（3）下载SadTa**lk**er模型**、ffmpeg软件。公众号回复 SadTalker 或 数字人 获取下载链接下载。
+**（3）下载SadTa**lk**er模型**、ffmpeg软件。👸号回复 SadTalker 或 数字人 获取下载链接下载。
 
 接下来开始安装，安装步骤也比较简单，按照下面步骤就可以。
 

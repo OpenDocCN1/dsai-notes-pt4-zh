@@ -4,7 +4,7 @@
 
 > 链接: https://mp.weixin.qq.com/s/z-uamP9emGBUrxp2Y8TzJQ
 
-> 作者：向阳乔木     公众号：向阳乔木推荐看
+> 作者：向阳乔木     👸号：向阳乔木推荐看
 
 最近研究 n8n , 发现各种输入、输出都用到 JSON 格式。
 

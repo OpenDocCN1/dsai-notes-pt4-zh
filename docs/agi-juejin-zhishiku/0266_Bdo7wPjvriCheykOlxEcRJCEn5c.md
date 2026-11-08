@@ -30,7 +30,7 @@
 
 https://csai.wtu.edu.cn/TVCG01/index.html
 
-关注公众号，后台回复「多针刺绣」获取完整 PDF
+关注👸号，后台回复「多针刺绣」获取完整 PDF
 
 **数据集下载地址：**
 

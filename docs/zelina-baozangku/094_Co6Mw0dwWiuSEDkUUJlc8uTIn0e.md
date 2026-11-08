@@ -237,7 +237,7 @@
 
 到这里，整个模板的使用教程讲解也就接近尾声啦！如果模板有更好的建议或使用心得，欢迎交流。saluate~
 
-微信🧩：mondaylab712
+🛰️🧩：mondaylab712
 
 飞书🧩：周[一同学Zelina](https://www.feishu.cn/invitation/page/add_contact/?token=5fch34c2-7852-4d44-aade-fd8816e6f01b&unique_id=-EAQ0htdTh1yBN_MSSxzAA==)
 

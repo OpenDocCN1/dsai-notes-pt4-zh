@@ -2,7 +2,7 @@
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/TAMXdVHIgoJ57FxzoNscLJJwnUA](https://qqs7y1hozd1.feishu.cn/docx/TAMXdVHIgoJ57FxzoNscLJJwnUA)
 
-> 在这个板块，建议大家学习的时候，可以将你创作的绘图放在小红书上，这样可以有效的记录你的AI绘图上明显的进步，初期的时候可以沿着某一个你比较感兴趣的绘图风格持续创作，或许会收获到他人的点赞和认可，当然我们学习AI绘图的目的还是感受它的技术迭代，掌握这一门技能。
+> 在这个板块，建议大家学习的时候，可以将你创作的绘图放在📕上，这样可以有效的记录你的AI绘图上明显的进步，初期的时候可以沿着某一个你比较感兴趣的绘图风格持续创作，或许会收获到他人的点赞和认可，当然我们学习AI绘图的目的还是感受它的技术迭代，掌握这一门技能。
 
 > **让我们开始吧！**
 
@@ -52,7 +52,7 @@ www.artbreeder.com
 | --- | --- |
 | MJ软件开会员网站 | https://www.midjourney.com/app/ |
 | NJ画图找图官网网站 | https://nijijourney.com/en/ |
-| 魔法网站（梯子） |  |
+| 魔法网站（🪜） |  |
 | AI动态视频runway | https://app.runwayml.com/ |
 | 在线抠图网站 | https://www.remove.bg/zh |
 | ai魔术橡皮擦网站（擦图） | https://jpgrm.com/ |

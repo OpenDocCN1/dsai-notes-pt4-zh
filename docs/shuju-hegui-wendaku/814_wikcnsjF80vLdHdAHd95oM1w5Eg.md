@@ -6,6 +6,6 @@
 
 **-答1：**隐私计算：多方安全计算（MPC）中的7大数据合规挑战
 
-**-答2：**公众号“隐私计算联盟”。
+**-答2：**👸号“隐私计算联盟”。
 
 [阅读](https://cbe8t1r4a5.feishu.cn/wiki/SGrxwFQj1iD8zvk5HeackN5VnBf)

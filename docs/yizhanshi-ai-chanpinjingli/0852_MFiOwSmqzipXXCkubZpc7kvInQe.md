@@ -134,7 +134,7 @@ coze官方教程（网页）[扣子 - 文档中心](https://www.coze.cn/docs/gui
 
 大家可以关注一下[Coze官方社区](https://bytedance.larkoffice.com/docx/XJkIdcmbuodq2NxptOmcptdinKg)，有时候会有组队学习
 
-或者我们Datawhale社区公众号，每月可能会有组队学习
+或者我们Datawhale社区👸号，每月可能会有组队学习
 
 ## 如果学习或者开发出现了问题怎么办
 

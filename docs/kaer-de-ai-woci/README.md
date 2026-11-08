@@ -12,15 +12,15 @@
 
 ![](img/3055d9e0975d0d7420d696a55546b374.png)
 
-+   [**公众号**](https://mp.weixin.qq.com/s/OAeFH-pSZNskAKEgg3TsPA)：卡尔的AI沃茨（公众号AI自媒体连续9个月前10）
++   [**👸号**](https://mp.weixin.qq.com/s/OAeFH-pSZNskAKEgg3TsPA)：卡尔的AI沃茨（👸号AI自媒体连续9个月前10）
 
 +   **海外版 X ：**[**@aiwarts**](https://twitter.com/aiwarts?s=21&t=X4Wyu-b0lnJmwwLh9WXr7Q)（24小时在线，分享好玩的AI科技资讯）
 
-+   **视频号 & 抖音号 &  **[**小红书**](https://xhslink.com/m/7FvSPc7wIDG)** & **[**B站**](https://space.bilibili.com/1820008345?spm_id_from=333.1007.0.0)：卡尔的AI沃茨（AI工具合集 & 超全操作指南）
++   **视频号 & 抖音号 &  **[**📕**](https://xhslink.com/m/7FvSPc7wIDG)** & **[**B站**](https://space.bilibili.com/1820008345?spm_id_from=333.1007.0.0)：卡尔的AI沃茨（AI工具合集 & 超全操作指南）
 
-+   [**小红书**](https://www.xiaohongshu.com/user/profile/5b003bce11be10430bf33433?m_source=pinpai)：阿汤AI搞事儿｜AI视频 & 画风壁纸 & 头像分享
++   [**📕**](https://www.xiaohongshu.com/user/profile/5b003bce11be10430bf33433?m_source=pinpai)：阿汤AI搞事儿｜AI视频 & 画风壁纸 & 头像分享
 
-中间是公众号👇商务合作🤝也可以直接加我
+中间是👸号👇商务合作🤝也可以直接加我
 
 ![](img/6b9a211a1def5768ac05fc385d67d0df.png)
 

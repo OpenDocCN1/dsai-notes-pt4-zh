@@ -1,4 +1,4 @@
-# 01.15-小红书一夜冲爆美区榜首，1.7亿TikTok「难民」疯狂涌入！
+# 01.15-📕一夜冲爆美区榜首，1.7亿TikTok「难民」疯狂涌入！
 
 > 来源：[https://agijuejin.feishu.cn/docx/O9MUdMcP9oHh4OxNulEcVFWPnVf](https://agijuejin.feishu.cn/docx/O9MUdMcP9oHh4OxNulEcVFWPnVf)
 
@@ -10,13 +10,13 @@
 
 ## ⭐ 今日热点
 
-### 💡 小红书一夜冲爆美区榜首，1.7亿TikTok「难民」疯狂涌入！
+### 💡 📕一夜冲爆美区榜首，1.7亿TikTok「难民」疯狂涌入！
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JLSB0HPI0511ABV6.html?spss=dy_author)
 
 ![](img/60d87900ee52a87aab732523af6ffe85.png)
 
-2025 年 1 月 19 日 TikTok 即将在美国全面封禁，1.7 亿美国用户疯狂涌入小红书和 Lemon8。TikTok 禁令生效后可能从应用商店消失，用户将无法下载更新版本。特朗普曾试图封禁 TikTok，如今却成为坚定捍卫者。若字节跳动不出售 TikTok 美国业务，Lemon8 也可能被禁。
+2025 年 1 月 19 日 TikTok 即将在美国全面封禁，1.7 亿美国用户疯狂涌入📕和 Lemon8。TikTok 禁令生效后可能从应用商店消失，用户将无法下载更新版本。特朗普曾试图封禁 TikTok，如今却成为坚定捍卫者。若字节跳动不出售 TikTok 美国业务，Lemon8 也可能被禁。
 
 ### 💡 ChatGPT 变身 AI 私人助理：新 Tasks 定时播报全网热点、设置每日学习 / 健身计划
 

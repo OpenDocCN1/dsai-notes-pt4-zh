@@ -37,43 +37,43 @@
 
 ## 1-10
 
-### [如何判断一个项目值不值得做？](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=1525458545525212)（亦仁）
+### [如何判断一个项目值不值得做？](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=1525458545525212)（龙哥）
 
 ![](img/89a66e05af5d6311c5cfc89735ae7f6d.png)
 
-### [如何提升自己的心力？](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=8858255148588112)（亦仁）
+### [如何提升自己的心力？](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=8858255148588112)（龙哥）
 
 ![](img/66f2cab29b9fa24eb24c463f43065083.png)
 
-### 如果财富归零，我会去哪里寻找好的赚钱机会？（亦仁）
+### 如果财富归零，我会去哪里寻找好的赚钱机会？（龙哥）
 
 ![](img/ea635aa6082f96d9154e4b730af2f93c.png)
 
-### 如何对听到的各种赚钱信息做出有效判断？（亦仁）
+### 如何对听到的各种赚钱信息做出有效判断？（龙哥）
 
 ![](img/7ccb1f988c9f97d1b7b3497e342633cf.png)
 
-### [怎么熬过没有正反馈的低谷期？](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=1522851555245852)（亦仁）
+### [怎么熬过没有正反馈的低谷期？](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=1522851555245852)（龙哥）
 
 ![](img/c4803101bc514a1c945f3d2c9ebcf09a.png)
 
-### [如何平衡好主业与副业？](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=1522854158182212)（亦仁）
+### [如何平衡好主业与副业？](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=1522854158182212)（龙哥）
 
 ![](img/a6393f462d149ce5dae4dd2df67a4ce2.png)
 
-### [给所有圈友的一封信·电子版](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=5122512444281284)（亦仁）
+### [给所有圈友的一封信·电子版](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=5122512444281284)（龙哥）
 
 ![](img/9f092b75f5f2819ef8256db3eb3afa1f.png)
 
-### [价值9位数的认知](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=188524424524422)（亦仁）
+### [价值9位数的认知](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=188524424524422)（龙哥）
 
 ![](img/b1a8338f78b8c7554e17233ae06def06.png)
 
-### [亦仁：生财有术背后的运营逻辑](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=212824514445111)（亦仁）
+### [龙哥：龙哥盟背后的运营逻辑](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=212824514445111)（龙哥）
 
 ![](img/84676bdca3f137815a38467803757111.png)
 
-### 亦仁问答：怎么从 0-1 ，然后从 1-10 ？（亦仁）
+### 龙哥问答：怎么从 0-1 ，然后从 1-10 ？（龙哥）
 
 ![](img/30b8bf363d64142838a1a44d57fc1869.png)
 
@@ -103,11 +103,11 @@
 
 ![](img/1b8642166ec0eb8da8156ab7a5d68d60.png)
 
-### [杨涛：新手如何正确使用生财有术](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=585255112851154)（杨涛）
+### [杨涛：新手如何正确使用龙哥盟](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=585255112851154)（杨涛）
 
 ![](img/f6467c32f37316c9dc4b9a155f3f6161.png)
 
-### AI博主花生分享小红书爆火App开发经历（AI进化论-花生）
+### AI博主花生分享📕爆火App开发经历（AI进化论-花生）
 
 ![](img/13c2854a7303bb7722e6b8c57cf7cdb9.png)
 
@@ -115,7 +115,7 @@
 
 ![](img/44180efb4c81d5c84482fe26af4dbbbd.png)
 
-### [生财有术赚钱内容的正确打开方式](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=118825281442242)（Caoz）
+### [龙哥盟赚钱内容的正确打开方式](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=118825281442242)（Caoz）
 
 ![](img/a3e817c4144b743edff35ffa2af425e2.png)
 
@@ -129,7 +129,7 @@
 
 ![](img/066139294b7a6130d33ef021cb4d92cd.png)
 
-### 生财 10 问，测一下你对生财的使用方法了解有多深？（HEXIN）
+### 赚钱 10 问，测一下你对赚钱的使用方法了解有多深？（HEXIN）
 
 ![](img/dc9dc056db4416e4b7bffb3ea8504ff7.png)
 
@@ -149,7 +149,7 @@
 
 ![](img/e0545ca9f1eb68df2634882fe37c68c8.png)
 
-### 从项目爆雷到赚到生财百倍门票，我是如何通过公众号爆文矩阵化翻身的？（阿泽kk）
+### 从项目爆雷到赚到赚钱百倍门票，我是如何通过👸号爆文矩阵化翻身的？（阿泽kk）
 
 ![](img/282c82997ee5882bba9247e085207d26.png)
 
@@ -157,7 +157,7 @@
 
 ![](img/13961506db0181bada70302f4581cc6c.png)
 
-### 用ChatGPT创作90分高质量小红书笔记，提高30倍神仙效率（比比先森°）
+### 用ChatGPT创作90分高质量📕笔记，提高30倍神仙效率（比比先森°）
 
 ![](img/754aca0d15d82446b0b9aca01e89a3ba.png)
 
@@ -179,7 +179,7 @@
 
 ![](img/4364c75c288bf794634f60902444e962.png)
 
-### [我是如何通过「蓝海思维」，在小红书实](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=184211854424552)现粉丝 3000 ，月营收 20W 的？（陈铭 ivy）
+### [我是如何通过「蓝海思维」，在📕实](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=184211854424552)现粉丝 3000 ，月营收 20W 的？（陈铭 ivy）
 
 ![](img/fbc64f77cee05a6271f825bca298308e.png)
 
@@ -217,7 +217,7 @@
 
 ![](img/b506128872723d7e41f87f051c751f67.png)
 
-### 如何将生财的碎片信息拼凑成完整的商业模式，抓住视频号带货的红利？（郭晓文）
+### 如何将赚钱的碎片信息拼凑成完整的商业模式，抓住视频号带货的红利？（郭晓文）
 
 未做整了，建议看原文。
 
@@ -225,11 +225,11 @@
 
 ![](img/6109f2bf5b6516e838becfa8b8d8f1f6.png)
 
-### 小红书电商单人月入 6k 实战分享（行一（不吃饭））
+### 📕电商单人月入 6k 实战分享（行一（不吃饭））
 
 ![](img/0ca5ad996a5ec013a2e098587f20eded.png)
 
-### 浅谈一下，如何在生财有术建立自己的影响力？（黄小刀）
+### 浅谈一下，如何在龙哥盟建立自己的影响力？（黄小刀）
 
 ![](img/157c4167541cd61f356f74212812a91c.png)
 
@@ -237,7 +237,7 @@
 
 ![](img/1fee0351e5f1b8ff8f14e80d08975c55.png)
 
-### [从小红书电商小白到两周单店变现 78W GMV，](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=181488248448552)付费流打法实战 单周投放 Roi 10+（鲸鱼ken）
+### [从📕电商小白到两周单店变现 78W GMV，](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=181488248448552)付费流打法实战 单周投放 Roi 10+（鲸鱼ken）
 
 ![](img/bfc7d0e451dc77b60f35a4ea62b4aef7.png)
 
@@ -247,7 +247,7 @@
 
 # 51-60
 
-### 从电信诈骗负债70w到正向盈利50万，一个生财小白的浴火重生之路（乐天）
+### 从电信诈骗负债70w到正向盈利50万，一个赚钱小白的浴火重生之路（乐天）
 
 ![](img/44367ddc18cd9c11f0867770d157b50c.png)
 
@@ -255,7 +255,7 @@
 
 ![](img/f53dc88d38144db850370cccc3cbac7f.png)
 
-### 生财思维让我一天之内跑通mvp，小红书引流雅思督学成交四位数（玲娜贝琪）
+### 赚钱思维让我一天之内跑通mvp，📕引流雅思督学成交四位数（玲娜贝琪）
 
 ![](img/9537925edd46fd1a63331faff9728dfa.png)
 
@@ -267,37 +267,37 @@
 
 ![](img/6c11974c6adc04c1521500bbddd0589a.png)
 
-### 微信视频号实操经验、选品库、导图分享（李诚Sonic）
+### 🛰️视频号实操经验、选品库、导图分享（李诚Sonic）
 
 已有思维导图。
 
-### 我是怎样用生财有术赚到 1000 万的？（李鲆）
+### 我是怎样用龙哥盟赚到 1000 万的？（李鲆）
 
 ![](img/0b0acb7bc73bb0203710e46c7b7fdf16.png)
 
-### 小红书三个月涨粉 17W ，变现 10W+ ，我做对什么？（梨云）
+### 📕三个月涨粉 17W ，变现 10W+ ，我做对什么？（梨云）
 
 ![](img/fecc6d86b8b8c7e0bebe68fc49fdd17f.png)
 
-### 生财一年级新人，入局视频号口播带货 25天，单账号5天爆单30W（陆剑英Jian贱贱）
+### 赚钱一年级新人，入局视频号口播带货 25天，单账号5天爆单30W（陆剑英Jian贱贱）
 
 ![](img/bd1af96c80d3b13682b826c99e37e7dc.png)
 
-### 入生财1年，实现公众号爆文年入100w，超详细从0-10分享，万字长（猫哥）
+### 入赚钱1年，实现👸号爆文年入100w，超详细从0-10分享，万字长（猫哥）
 
 ![](img/a694b86d30adb58bf5b4005f4b0b1ba3.png)
 
 # 61-70
 
-### 公众号爆文全自动化，7个月收益37万复盘（毛韩）
+### 👸号爆文全自动化，7个月收益37万复盘（毛韩）
 
 ![](img/af70c64e21e7f6bd61df87d19dc913f3.png)
 
-### 新手小白如何借助生财小航海每月多赚 2 万元（毛韩）
+### 新手小白如何借助赚钱小航海每月多赚 2 万元（毛韩）
 
 ![](img/e65a105e6ada61852232ce54e0852ea6.png)
 
-### 身体残疾卧床 3 年，我在人生最低谷加入生财有术，有哪些成长？（明白）
+### 身体残疾卧床 3 年，我在人生最低谷加入龙哥盟，有哪些成长？（明白）
 
 ![](img/1034a039001a0a29ed7c6c1293a6f7bf.png)
 
@@ -305,7 +305,7 @@
 
 ![](img/5c1893b8bc52b47eea71ce616a7e0b63.png)
 
-### 召唤神龙亦仁价值10W元的2小时神龙咨询记录（炮爷（不睡觉））
+### 召唤神龙龙哥价值10W元的2小时神龙咨询记录（炮爷（不睡觉））
 
 ![](img/093af89926a190b7d061271d108c2a4f.png)
 
@@ -335,7 +335,7 @@
 
 ![](img/b36459b4fd5a0e8358bc8a8a35df3cdd.png)
 
-### 大二纯小白快速上手副业项目两周变现1w+，分享我的生财精华掘金秘诀（苏大强）
+### 大二纯小白快速上手副业项目两周变现1w+，分享我的赚钱精华掘金秘诀（苏大强）
 
 ![](img/02c27a711af38686c28313c749a86711.png)
 
@@ -351,7 +351,7 @@
 
 ![](img/9538861b41942b579a386d67d233c2b5.png)
 
-### 生财一年，让我实现十倍增长的八个关键节点（小鹅）
+### 赚钱一年，让我实现十倍增长的八个关键节点（小鹅）
 
 ![](img/59952165addfeed0d7f143275649544f.png)
 
@@ -359,21 +359,21 @@
 
 ![](img/7863c969ef8ed159926d373af64051d1.png)
 
-### 加入生财有术一年，终于实现副业月入过万（小嵩）
+### 加入龙哥盟一年，终于实现副业月入过万（小嵩）
 
 ![](img/950c1e1ab3c23a4ad6be5aea5dfb73e8.png)
 
-### [谈谈我对生财这个宝库的使用心得](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=811244248888482)（星辰）
+### [谈谈我对赚钱这个宝库的使用心得](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=811244248888482)（星辰）
 
 ![](img/f3a5ad7e655bae09d102d5cf08105817.png)
 
-### 我跟亦仁的神龙咨询分享：从算账和概率的角度去理解问题（西猫仁）
+### 我跟龙哥的神龙咨询分享：从算账和概率的角度去理解问题（西猫仁）
 
 ![](img/43b6acfd7b75f7491b8a67e406fd8188.png)
 
 # 81-90
 
-### 小红书商业知识体系｜年入百万的数据验证方法论（徐宿）
+### 📕商业知识体系｜年入百万的数据验证方法论（徐宿）
 
 内容思维导图就有，不做二次的制作。
 
@@ -389,7 +389,7 @@
 
 操作步骤非常详细，不做思维导图了。
 
-### [我用生财教我的方法做短剧](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=584514518515224)（云珞YunL）
+### [我用赚钱教我的方法做短剧](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=584514518515224)（云珞YunL）
 
 ![](img/8688c7971b98ccccb768b805d8761cf9.png)
 
@@ -397,25 +397,25 @@
 
 ![](img/76b2e5bef16891656270b46bf226efcf.png)
 
-### [为什么你的副业总做不起来?](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=588812821254284)（鱼丸 | 亦仁助理）
+### [为什么你的副业总做不起来?](https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=588812821254284)（鱼丸 | 龙哥助理）
 
 视频建议直接观看！
 
-### 视频号小黄车带货，利用投流让收益翻倍（（鱼丸 | 亦仁助理））
+### 视频号小黄车带货，利用投流让收益翻倍（（鱼丸 | 龙哥助理））
 
 视频建议直接观看！
 
-### [一个自媒体人，如何从 0](https://articles.zsxq.com/id_4hjg21t04ca4.html)-1 高效完成内容输出（自媒体内容输出30个技巧）（鱼丸 | 亦仁助理）
+### [一个自媒体人，如何从 0](https://articles.zsxq.com/id_4hjg21t04ca4.html)-1 高效完成内容输出（自媒体内容输出30个技巧）（鱼丸 | 龙哥助理）
 
 ![](img/44ed0dd84ce235fbe4cde691d20a3016.png)
 
-### 如何利用剪映“蒙版”搞定95%以上的短视频、图文去重（（鱼丸 | 亦仁助理））
+### 如何利用剪映“蒙版”搞定95%以上的短视频、图文去重（（鱼丸 | 龙哥助理））
 
 视频建议直接观看！
 
 # 91-100
 
-### 如何在抖音上挖掘一批能赚钱的对标账号？（鱼丸 | 亦仁助理）
+### 如何在抖音上挖掘一批能赚钱的对标账号？（鱼丸 | 龙哥助理）
 
 视频建议直接观看！
 
@@ -423,7 +423,7 @@
 
 ![](img/cfba795d10857f117ea288e343bef52a.png)
 
-### 扬帆正当时：小白的生财之旅，一年成就月入十万的梦（张波）
+### 扬帆正当时：小白的赚钱之旅，一年成就月入十万的梦（张波）
 
 ![](img/15aec1aa036bb8942f82fdcf956fe0e1.png)
 

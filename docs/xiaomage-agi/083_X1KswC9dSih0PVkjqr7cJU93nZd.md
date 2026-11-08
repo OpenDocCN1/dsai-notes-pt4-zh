@@ -12,7 +12,7 @@
 
 <https://player.bilibili.com/player.html?bvid=13g4y1K7Yj&t=20.7&p=4>
 
-# 3、用chatGPT写小红书爆款笔记
+# 3、用chatGPT写📕爆款笔记
 
 <https://player.bilibili.com/player.html?bvid=13g4y1K7Yj&t=45.3&p=5>
 

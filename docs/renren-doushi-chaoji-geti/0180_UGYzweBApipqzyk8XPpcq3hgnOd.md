@@ -1,4 +1,4 @@
-# 在小红书卖老师 AI 工具需求很多，虚拟产品的第二春
+# 在📕卖老师 AI 工具需求很多，虚拟产品的第二春
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/AvPSde8OUoC2w2xpp1zc8oMRnve](https://xuqiwei1986.feishu.cn/docx/AvPSde8OUoC2w2xpp1zc8oMRnve)
 
@@ -12,9 +12,9 @@
 
 ### 一、发现一个需求
 
-平时我都会花很多时间刷小红书，就刷到了这样一个笔记，致歉：可能有些老师朋友拿不到了，这种封面当时一眼就要敏感起来，这是一个比较真诚的口吻，然后这种标题换一下改成自己行业的也可以，很多人就会好奇，是什么拿不到就想进去看一下，所以这个标题模板大家可以去借鉴。
+平时我都会花很多时间刷📕，就刷到了这样一个笔记，致歉：可能有些老师朋友拿不到了，这种封面当时一眼就要敏感起来，这是一个比较真诚的口吻，然后这种标题换一下改成自己行业的也可以，很多人就会好奇，是什么拿不到就想进去看一下，所以这个标题模板大家可以去借鉴。
 
-86 【早读神器无法分享说明 - 周天兵 | 小红书 - 你的生活兴趣社区】 😆 zeLTgatwGv0VrG7 😆 https://www.xiaohongshu.com/discovery/item/68ff179c000000000303613a?source=webshare&xhsshare=pc_web&xsec_token=ABlAp2FRsJkbMfI3MHxw_UaUGFY2LpErgTBnHdWCTxgxw=&xsec_source=pc_share
+86 【早读神器无法分享说明 - 周天兵 | 📕 - 你的生活兴趣社区】 😆 zeLTgatwGv0VrG7 😆 https://www.xiaohongshu.com/discovery/item/68ff179c000000000303613a?source=webshare&xhsshare=pc_web&xsec_token=ABlAp2FRsJkbMfI3MHxw_UaUGFY2LpErgTBnHdWCTxgxw=&xsec_source=pc_share
 
 ![](img/bdf25c60d8fb80b45eb1ac933989216e.png)
 
@@ -32,11 +32,11 @@
 
 如果你刷到这样的需求，你会怎么想，有需求就是有市场，有没有人为这样的需求买单？这样的产品是我们自己做能不能完成？能不能做出各种更丰富的产品出来，接下来哆元接着说。
 
-那我们就要去验证在小红书是不是还有类似的内容甚至有产品在卖了。
+那我们就要去验证在📕是不是还有类似的内容甚至有产品在卖了。
 
 搜索关键词早读监控工具后，就发现了下面这个笔记，他也是监控早读声音，但是就明显比上面好看多了，变得更加个性化了，一棵树会随着声音的大小变大变小，就有了趣味性，并且同样需求很多。
 
-74 【朗读养小树，早读再也不困噜～ - 喵喵喵喵老师 | 小红书 - 你的生活兴趣社区】 😆 AF5gTWEuj5AUUnZ 😆 https://www.xiaohongshu.com/discovery/item/67d82b4e000000001201d53d?source=webshare&xhsshare=pc_web&xsec_token=AB5w1WSOPc2bSPFchvfc0MUR_OlFAe0Le-kmO777b3MLE=&xsec_source=pc_share
+74 【朗读养小树，早读再也不困噜～ - 喵喵喵喵老师 | 📕 - 你的生活兴趣社区】 😆 AF5gTWEuj5AUUnZ 😆 https://www.xiaohongshu.com/discovery/item/67d82b4e000000001201d53d?source=webshare&xhsshare=pc_web&xsec_token=AB5w1WSOPc2bSPFchvfc0MUR_OlFAe0Le-kmO777b3MLE=&xsec_source=pc_share
 
 ![](img/a99c4705b5b6d8d55a8219e4d7c88830.png)
 
@@ -58,7 +58,7 @@
 
 关于这样的老师工具有很多，比如下面这个笔记也是，解决什么痛点，学生怕考试不想考试的痛点。
 
-70 【我们班学生最近疯了，居然求着我多考试！ - 小满AI英语 | 小红书 - 你的生活兴趣社区】 😆 0O0PW2I2iJfsi6A 😆 https://www.xiaohongshu.com/discovery/item/6900685400000000030121f0?source=webshare&xhsshare=pc_web&xsec_token=AB07YFJMIu0dvViYgyaDh-S7fsN5w270ee2HlJIMsI29w=&xsec_source=pc_share
+70 【我们班学生最近疯了，居然求着我多考试！ - 小满AI英语 | 📕 - 你的生活兴趣社区】 😆 0O0PW2I2iJfsi6A 😆 https://www.xiaohongshu.com/discovery/item/6900685400000000030121f0?source=webshare&xhsshare=pc_web&xsec_token=AB07YFJMIu0dvViYgyaDh-S7fsN5w270ee2HlJIMsI29w=&xsec_source=pc_share
 
 ![](img/3e11f34ff3da4d9c5645bbcf8a5c34e2.png)
 
@@ -70,7 +70,7 @@
 
 ![](img/45957eef7f22f64feed2a789b98d12c2.png)
 
-这类产品除了在小红书卖，我们还可以看闲鱼，也有需求
+这类产品除了在📕卖，我们还可以看闲鱼，也有需求
 
 ![](img/1594c4c4f93e5b05206b5c10bcc7ac54.png)
 
@@ -104,7 +104,7 @@
 
 ![](img/4b47c543343d38ca4e739d0284066018.png)
 
-这个html代码有的 AI 是可以直接下载，有的不行，不行的怎么办，就在桌面建立一个 txt 文件，然后把代码复制粘贴进去保存，然后对这个 txt 文件命名更改一下后缀的txt为html确定就好，如果看不到后缀名，就小红书搜电脑文件看不到后缀名怎么打开，去设置一下就好了。
+这个html代码有的 AI 是可以直接下载，有的不行，不行的怎么办，就在桌面建立一个 txt 文件，然后把代码复制粘贴进去保存，然后对这个 txt 文件命名更改一下后缀的txt为html确定就好，如果看不到后缀名，就📕搜电脑文件看不到后缀名怎么打开，去设置一下就好了。
 
 最后就做成了，这个产品就是一个 html 文件，双击就能使用，但是别人怎么使用呢，就需要发文件给对方，那他麻烦了吧，我们还可以把这个文件封装成一个网站，这样的话用户使用就简单方便多了。
 
@@ -254,7 +254,7 @@ OK，上面哆元就讲了怎么做简单的工具并封装成网址的步骤。
 
 ![](img/2812f4d20ad85a41d86ad0c69618b1da.png)
 
-直接甩给 AI ，跟他说自己想在小红书发笔记宣传自己的早读工具，这里最好把上面的下拉词截图也一并发给 AI ，这样 AI 了解的信息多一点，然后让 AI 根据这批心理学赛道标题输出很多适合我们用的标题。
+直接甩给 AI ，跟他说自己想在📕发笔记宣传自己的早读工具，这里最好把上面的下拉词截图也一并发给 AI ，这样 AI 了解的信息多一点，然后让 AI 根据这批心理学赛道标题输出很多适合我们用的标题。
 
 他就会先分析后生成了，可以看一下标题，有些还是不错的。
 

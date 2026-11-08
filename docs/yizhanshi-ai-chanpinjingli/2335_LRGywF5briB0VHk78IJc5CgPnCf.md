@@ -36,7 +36,7 @@
 
 [12🈷️17日](https://v11enp9ok1h.feishu.cn/wiki/FIwowUzcOiKEtvkxswHcJ3g0ncf)
 
-[12🈷️18日](https://v11enp9ok1h.feishu.cn/wiki/VANBwQBgyi7f11kQQINccqz8nsb)
+[12🈷️18日](https://v11enp9ok1h.feishu.cn/wiki/VANBwQBgyi7f11k🐧INccqz8nsb)
 
 [12🈷️19日](https://v11enp9ok1h.feishu.cn/wiki/Knq3wmciriixAikkFCEcj4Tcnbf)
 

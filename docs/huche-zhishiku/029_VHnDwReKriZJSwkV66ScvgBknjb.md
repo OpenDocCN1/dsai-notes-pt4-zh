@@ -10,19 +10,19 @@
 
 ---
 
-从2018年4月微信小游戏开创这个赛道开始，直到2023下半年，这个赛道才开始出现井喷式的增长。
+从2018年4月🛰️小游戏开创这个赛道开始，直到2023下半年，这个赛道才开始出现井喷式的增长。
 
-对于一个小游戏行业从起步到爆发的亲历者，下面几篇文章记述了我在2018年微信小游戏发布早期的一些创业思考：
+对于一个小游戏行业从起步到爆发的亲历者，下面几篇文章记述了我在2018年🛰️小游戏发布早期的一些创业思考：
 
-+   [微信小游戏：风口还是泡沫](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656288408&idx=1&sn=d932dd275df932c0f036c56df946aa58&scene=21#wechat_redirect)
++   [🛰️小游戏：风口还是泡沫](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656288408&idx=1&sn=d932dd275df932c0f036c56df946aa58&scene=21#wechat_redirect)
 
-+   [做个靠谱的微信小游戏 CP](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656288423&idx=1&sn=8da343fedf3688feef0891260e355f71&scene=21#wechat_redirect)
++   [做个靠谱的🛰️小游戏 CP](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656288423&idx=1&sn=8da343fedf3688feef0891260e355f71&scene=21#wechat_redirect)
 
-+   微信小游戏从立项到上线！谈谈《开心射手》的开发历程
++   🛰️小游戏从立项到上线！谈谈《开心射手》的开发历程
 
 +   [20人以下的游戏团队，谁能保证数量又保证质量](https://mp.weixin.qq.com/s?__biz=MzU0MTA2MDA0Mw==&mid=2247485231&idx=1&sn=6b15801a65b3a86c797849e219fd2427&scene=21#wechat_redirect)？聊聊“SAGITEAM”这个游戏工作室
 
-想了解更多我的创业故事，了解一个几人团队如何做到百人规模的自研自发、国内海外IAA/混变/小游戏/APP均有涉猎的游戏企业，可以看「曾嵘胡扯的地方」公众号的这个主题 SAGIGAMES（复制链接访问）。
+想了解更多我的创业故事，了解一个几人团队如何做到百人规模的自研自发、国内海外IAA/混变/小游戏/APP均有涉猎的游戏企业，可以看「曾嵘胡扯的地方」👸号的这个主题 SAGIGAMES（复制链接访问）。
 
 https://mp.weixin.qq.com/mp/homepage?__biz=MzA5NzQ3NDM3MA==&hid=6&sn=bf48c69a27e549ee76bf585e1d1eb9d0&scene=18
 
@@ -76,7 +76,7 @@ https://mp.weixin.qq.com/mp/homepage?__biz=MzA5NzQ3NDM3MA==&hid=6&sn=bf48c69a27e
 
 # **远程办公**
 
-昨[天公众号「腾讯](https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650977057&idx=1&sn=62e8b21039b211ccb1b134a035d8eecc&scene=21#wechat_redirect)研究院」发了一篇文章： 远程办公的终结，看完很有感触。
+昨[天👸号「腾讯](https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650977057&idx=1&sn=62e8b21039b211ccb1b134a035d8eecc&scene=21#wechat_redirect)研究院」发了一篇文章： 远程办公的终结，看完很有感触。
 
 因为我上一次创业的时候，也在武汉疫情期间，不得已被动组织过远程办公：
 

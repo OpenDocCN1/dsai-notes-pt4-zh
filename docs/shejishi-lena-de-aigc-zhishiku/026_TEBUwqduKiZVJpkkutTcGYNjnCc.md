@@ -4,9 +4,9 @@
 
 > 版权申明:无授权，不可利用原创课程，进行商业牟利!
 
-> 页面描述：自己在官方购买的方式，需科学上网。梯子链接：可免费使用24小时👉https://dddd.pics/#/register?code=xCHskvfd
+> 页面描述：自己在官方购买的方式，需🪜。🪜链接：可免费使用24小时👉https://dddd.pics/#/register?code=xCHskvfd
 
-> 更多梯子相关请移步[【新人扫盲必看】](https://aigclena.feishu.cn/wiki/BRCuwa1vdiZWyTkFWT4ckXOenre)
+> 更多🪜相关请移步[【新人扫盲必看】](https://aigclena.feishu.cn/wiki/BRCuwa1vdiZWyTkFWT4ckXOenre)
 
 # 购买地址
 

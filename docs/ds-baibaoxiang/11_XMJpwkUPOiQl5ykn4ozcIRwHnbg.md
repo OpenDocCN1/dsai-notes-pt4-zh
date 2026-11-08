@@ -34,7 +34,7 @@ DeepSeek X主页https://x.com/deepseek_ai
 
 ![](img/39fe6cbbf3318f6237be421e598bdbac.png)
 
-之前从未登录过的用户需要进行登陆，使用手机号、微信或者邮箱登陆即可。
+之前从未登录过的用户需要进行登陆，使用手机号、🛰️或者邮箱登陆即可。
 
 ![](img/ea4a2d9f0cd967f990f900d94f45dd0a.png)
 

@@ -18,7 +18,7 @@
 
 ![](img/79cf4cb039b1169827bb9b0056c40e95.png)
 
-新智元｜[阅读原文](https://mp.weixin.qq.com/s/klIvHE09KPRDG20YIvzWQQ)
+新智元｜[阅读原文](https://mp.weixin.qq.com/s/klIvHE09KPRDG20YIvzW🐧)
 
 Meta 的 GenAI 团队推出了 3D Gen 模型，该技术能在 60 秒内从文本直接生成高质量的 3D 资产，其纹理清晰、形态逼真，生成速度比现有技术快 3 到 60 倍。该模型特别适用于电影特效、AR/VR 和视频游戏等领域，大幅简化了 3D 内容的创作流程。3D Gen 模型通过 AssetGen 和 TextureGen 两个组件，分别负责 3D 资产和纹理的生成，有效结合了视图空间、体积空间和 UV 空间的表示，提高了生成效率和质量。尽管模型尚未开放 API 和代码，但其技术报告已公布，展示了模型的创新和潜力。
 

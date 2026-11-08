@@ -204,7 +204,7 @@ Monica 是一个功能强大的 AI 助手工具，它提供了多种 AI 模型�
 
 以下是 Monica 的官方地址：
 
-https://monica.im/invitation?c=BOQQMGZB/
+https://monica.im/invitation?c=BO🐧MGZB/
 
 最近，Monica 已经直接集成了完整版的 DeepSeek R1（671B 参数）模型并且可以直接结合联网搜索来回答问题：
 
@@ -244,7 +244,7 @@ https://monica.im/invitation?c=BOQQMGZB/
 
 +   提供网页版访问
 
-+   微信小程序随时可用
++   🛰️小程序随时可用
 
 +   支持移动端和桌面端
 
@@ -264,7 +264,7 @@ https://metaso.cn/s/W4TJaq9
 
 ## 普通人玩转 AI 的正确姿势：把专业的事交给专业的人
 
-看完这篇指南你会发现：**用好 AI 根本不需要懂技术！** 就像我们不会自己造手机却能用微信聊天一样，AI 时代真正的聪明人是：
+看完这篇指南你会发现：**用好 AI 根本不需要懂技术！** 就像我们不会自己造手机却能用🛰️聊天一样，AI 时代真正的聪明人是：
 
 1️⃣ **会挑工具的咖啡师**
 

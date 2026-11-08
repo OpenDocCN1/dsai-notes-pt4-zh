@@ -1,4 +1,4 @@
-# 2023-08-28用ChatGPT写个爬虫爬取微信公众号文章
+# 2023-08-28用ChatGPT写个爬虫爬取🛰️👸号文章
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/UlrndTcTooLXP3xpk7qc38ttn9f](https://xuqiwei1986.feishu.cn/docx/UlrndTcTooLXP3xpk7qc38ttn9f)
 
@@ -6,9 +6,9 @@
 
 >
 
-在生财看到很多圈友用ChatGPT写代码，今天分享一个我以前用ChatGPT写的爬虫。
+在赚钱看到很多圈友用ChatGPT写代码，今天分享一个我以前用ChatGPT写的爬虫。
 
-3月底的时候，AIGC比较火，天天在知乎和微信里面刷相关内容，切换app比较麻烦，就想到了用爬虫去爬一些比较火的文章去读，于是想到了搜狗(搜狗里面有知乎和微信的搜索)，在搜狗中搜索【AIGC】抓取每天发布的阅读量高的文章来看。
+3月底的时候，AIGC比较火，天天在知乎和🛰️里面刷相关内容，切换app比较麻烦，就想到了用爬虫去爬一些比较火的文章去读，于是想到了搜狗(搜狗里面有知乎和🛰️的搜索)，在搜狗中搜索【AIGC】抓取每天发布的阅读量高的文章来看。
 
 当时ChatGPT也是🔥的不行，于是就用ChatGPT写了个爬虫做这件事，下面是实操的步骤👇🏻
 
@@ -36,7 +36,7 @@
 
 5.抓取前10页的内容
 
-6.爬取的结果输出到Excel文件中,Excel文件命名为AIGC+微信+日期
+6.爬取的结果输出到Excel文件中,Excel文件命名为AIGC+🛰️+日期
 
 如图：
 
@@ -136,7 +136,7 @@ source = ""
 
 date_str = [datetime.now ](http://datetime.now/)().strftime( "%Y%m%d" )
 
-filename = f"AIGC微信{date_str}.xlsx"
+filename = f"AIGC🛰️{date_str}.xlsx"
 
 [wb.save ](http://wb.save/)(filename)
 
@@ -224,7 +224,7 @@ WebDriverWait(driver, 10 ).until(EC.presence_of_element_located((By.CLASS_NAME, 
 
 date_str = [datetime.now ](http://datetime.now/)().strftime( "%Y%m%d" )
 
-filename = f"AIGC微信{date_str}.xlsx"
+filename = f"AIGC🛰️{date_str}.xlsx"
 
 # 创建Excel工作簿
 
@@ -292,7 +292,7 @@ break
 
 [driver.quit ](http://driver.quit/)()
 
-这次我们执行代码后获取到了满意的效果，在搜狗输入【AIGC】后把前10页的微信公众号文章到抓取到了。
+这次我们执行代码后获取到了满意的效果，在搜狗输入【AIGC】后把前10页的🛰️👸号文章到抓取到了。
 
 篇幅有限只截取一部分。
 
@@ -326,6 +326,6 @@ break
 
 ![](img/24743534586c7ede3092360072015256.png)
 
-关于【爬取微信公众号文章和知乎】的代码感兴趣同学可以找我要，我私下发。
+关于【爬取🛰️👸号文章和知乎】的代码感兴趣同学可以找我要，我私下发。
 
 这个代码其实是通用的代码，咱们把【AIGC】换成你感兴趣的关键字就可以自己采集信息了。

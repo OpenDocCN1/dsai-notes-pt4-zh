@@ -24,7 +24,7 @@
 
 [🎧 点击收听音频](https://y.qq.com/n/ryqq/songDetail/1028501)
 
-当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放 Cap Diamant 音乐： Cœur de pirate - Blonde
+当前浏览器不支持播放音乐或语音，请在🛰️或其他浏览器中播放 Cap Diamant 音乐： Cœur de pirate - Blonde
 
 ![](img/cc461a6bf307929680e5e63847fcbcc5.png)
 

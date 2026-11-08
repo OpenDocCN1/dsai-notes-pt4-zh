@@ -96,7 +96,7 @@ DeepSeek-R1 和 V3 模型正式发布后，其优秀的推理能力、代码生�
 
 1.  发布智能体。
 
-在页面右上角单击**发布**，将[智能体发](https://www.coze.cn/open/docs/developer_guides/chat_v3)布到扣子商店、飞书、微信等其他渠道，成功发布后可以在对应的社交渠道中体验 DeepSeek 模型。如果你需要将 DeepSeek 模型接入到你的自建应用中，也可以将其发布为 API，通过调用 发起对话 API 和这个具备思维链和联网搜索技能的 DeepSeek 模型实时对话。
+在页面右上角单击**发布**，将[智能体发](https://www.coze.cn/open/docs/developer_guides/chat_v3)布到扣子商店、飞书、🛰️等其他渠道，成功发布后可以在对应的社交渠道中体验 DeepSeek 模型。如果你需要将 DeepSeek 模型接入到你的自建应用中，也可以将其发布为 API，通过调用 发起对话 API 和这个具备思维链和联网搜索技能的 DeepSeek 模型实时对话。
 
 ![](img/97d865647eee77dc9c5b09da5dea7682.png)
 

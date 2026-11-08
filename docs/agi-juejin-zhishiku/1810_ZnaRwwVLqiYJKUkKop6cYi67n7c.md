@@ -26,15 +26,15 @@ AI绘画软件目前主流的主要是Midjourney 和 Stable Diffusion。其他�
 
 ### **1. 重点提示（ **Midjourney **）**
 
-Midjourney是一种在线服务（Discord无法在国内注册，QQ频道比较难以申请），需要每个月缴纳固定费用，其使用门槛较低，但是可控性不足，相对于SD而言，上下限差距并不明显。
+Midjourney是一种在线服务（Discord无法在国内注册，🐧频道比较难以申请），需要每个月缴纳固定费用，其使用门槛较低，但是可控性不足，相对于SD而言，上下限差距并不明显。
 
 ### **2. 软件介绍（ **Midjourney **）**
 
-Mi[djour](https://www.zhihu.com/search?q=%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A638635160%7D)ney是一款由总部位于旧金山的独立研究[实验室M](https://www.zhihu.com/search?q=%E5%9B%BE%E7%94%9F%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A638635160%7D)idjourney, Inc.创建和托管的人工智能程序和服务。它是基于Discord平台（目前也已经登陆Slack以及国内的QQ频道）的，在进行 自然语言 描述时（称为“提示”），可以快速生成对应的图像。Midjourney还支持“ 图生图 ”功能，为用户提供更多在线AI图像服务。使用Midjourney需要先登录Discord账号（或者是Slack及QQ频道），然后在聊天界面发送指令即可获得AI图像服务。
+Mi[djour](https://www.zhihu.com/search?q=%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A638635160%7D)ney是一款由总部位于旧金山的独立研究[实验室M](https://www.zhihu.com/search?q=%E5%9B%BE%E7%94%9F%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A638635160%7D)idjourney, Inc.创建和托管的人工智能程序和服务。它是基于Discord平台（目前也已经登陆Slack以及国内的🐧频道）的，在进行 自然语言 描述时（称为“提示”），可以快速生成对应的图像。Midjourney还支持“ 图生图 ”功能，为用户提供更多在线AI图像服务。使用Midjourney需要先登录Discord账号（或者是Slack及🐧频道），然后在聊天界面发送指令即可获得AI图像服务。
 
 ### 3.特点介绍（Midjourney）
 
-[1.它无需高性能](https://www.zhihu.com/search?q=discord&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A638635160%7D)硬件，只需通过科学上网访问 discord （国内可通过QQ频道申请）即可使用。
+[1.它无需高性能](https://www.zhihu.com/search?q=discord&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A638635160%7D)硬件，只需通过🪜访问 discord （国内可通过🐧频道申请）即可使用。
 
 2. 部署过程非常简单，没有复杂的门槛。
 

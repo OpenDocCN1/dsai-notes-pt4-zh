@@ -63,7 +63,7 @@ GPT-OSS 模型设计用于以下场景：
 
 ⭐️ [GPT-OSS高效微调实战（上）丨高效微调入门](https://kq4b3vgg5b.feishu.cn/docx/F1Mtdi4qtoM5AIxVdROc9Ai4noh?from=from_copylink)、环境准备、微调数据集专题...（课件）
 
-⭐️ [高效微调提升模型Agent性能基本](https://kq4b3vgg5b.feishu.cn/docx/DYH5d4G1HoLnCKxhveBcuQQwnNd?from=from_copylink)原理丨GPT-OSS高效微调实战（课件）
+⭐️ [高效微调提升模型Agent性能基本](https://kq4b3vgg5b.feishu.cn/docx/DYH5d4G1HoLnCKxhveBcu🐧wnNd?from=from_copylink)原理丨GPT-OSS高效微调实战（课件）
 
 ⭐️ Unsloth快速上手指南丨中文微调链实战过程（课件）
 

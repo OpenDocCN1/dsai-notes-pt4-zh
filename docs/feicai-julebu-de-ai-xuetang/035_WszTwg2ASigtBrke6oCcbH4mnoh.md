@@ -172,4 +172,4 @@ AI生图指令优化 - 框架会将设计方案转化为一套专业的文生图
 
 > 我们期待你成为社群的第 n+1 位成员！
 
-> [社群微信群入口](https://feicaiclub.feishu.cn/wiki/JBNXwZ5QZidRtuk1HCCcvgZmnNg?from=from_copylink)（戳这里，跳转去社群微信群页面扫码入群）
+> [社群🛰️群入口](https://feicaiclub.feishu.cn/wiki/JBNXwZ5QZidRtuk1HCCcvgZmnNg?from=from_copylink)（戳这里，跳转去社群🛰️群页面扫码入群）

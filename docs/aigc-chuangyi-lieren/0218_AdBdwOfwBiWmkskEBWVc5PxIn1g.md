@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/T3U9RsjBSLrNEepLAfEfEw)qq.com/s/T3U9RsjB...
 
-> 公众号：胡润百富
+> 👸号：胡润百富
 
 ![](img/89aacb405567d7f727ee3b87954718b3.png)
 

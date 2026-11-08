@@ -62,7 +62,7 @@ PMAI是一款面向产品经理的生产力工具，具有一键生成PRD、输�
 
 ## 10个Prompt提示词场景化应用
 
-> 需要复制提示词可以移步微信推文：https://mp.weixin.qq.com/s/XZ4XhpEKwcDRBBfINHjUYg
+> 需要复制提示词可以移步🛰️推文：https://mp.weixin.qq.com/s/XZ4XhpEKwcDRBBfINHjUYg
 
 ### 行业洞察分析
 

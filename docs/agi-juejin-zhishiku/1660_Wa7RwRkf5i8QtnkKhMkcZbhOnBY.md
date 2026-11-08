@@ -578,7 +578,7 @@ p = subprocess.Popen([&quot;streamlit&quot;, &quot;run&quot;, &quot;webui.py&quo
 &quot;--server.port&quot;, str(port)])
 ```
 
-但是在 [云托管docker部署streamlit后无法建立we](https://link.zhihu.com/?target=https%3A//developers.weixin.qq.com/community/develop/doc/0006607719cd80a92f60b38446b000%3FhighLine%3D%2525E5%2525BE%2525AE%2525E4%2525BF%2525A1%2525E5%25258C%2525BA%2525E5%2525A4%2525A9%2525E4%2525B9%25259D%2525E8%2525A6%252581%2525E5%2525BB%2525BA%2525E7%2525BE%2525A4%2525E8%2525B0%252581%2525E6%25259C%252589%2525E9%252593%2525BE%2525E6%25258E%2525A5%2525E3%252580%252590%2525E2%252595%252585%2525E8%252596%252587%2525EF%2525BC%25259B11511989)bsocket链接？ | 微信开放社区 也提到了，设置了也无法使用：
+但是在 [云托管docker部署streamlit后无法建立we](https://link.zhihu.com/?target=https%3A//developers.weixin.qq.com/community/develop/doc/0006607719cd80a92f60b38446b000%3FhighLine%3D%2525E5%2525BE%2525AE%2525E4%2525BF%2525A1%2525E5%25258C%2525BA%2525E5%2525A4%2525A9%2525E4%2525B9%25259D%2525E8%2525A6%252581%2525E5%2525BB%2525BA%2525E7%2525BE%2525A4%2525E8%2525B0%252581%2525E6%25259C%252589%2525E9%252593%2525BE%2525E6%25258E%2525A5%2525E3%252580%252590%2525E2%252595%252585%2525E8%252596%252587%2525EF%2525BC%25259B11511989)bsocket链接？ | 🛰️开放社区 也提到了，设置了也无法使用：
 
 ```
 尝试过在streamlit run后面加--server.enableXsrfProtection=false --server.enableCORS=false --server.enableWebsocketCompression=false --browser.serverAddress=公网域名 --server.port=80 中的一个或几个都没用，当然改server.port也会对应修改EXPOSE端口号和流水线的端口号。

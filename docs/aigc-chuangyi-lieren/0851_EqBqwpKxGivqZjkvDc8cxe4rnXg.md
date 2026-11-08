@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/7cy_Nslr_ylLfX_SWKw_gA)qq.com/s/7cy_Nslr...
 
-> 公众号：极客见识 GeekSavvy
+> 👸号：极客见识 GeekSavvy
 
 今天跟大家分享一些 Cursor 干货，Cursor 的常用提示词手册，以及我们如何重置机器码，实现 Cursor 的永久免费使用。
 

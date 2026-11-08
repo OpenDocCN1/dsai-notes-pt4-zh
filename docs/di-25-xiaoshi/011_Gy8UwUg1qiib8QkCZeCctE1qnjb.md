@@ -2,11 +2,11 @@
 
 > 来源：[https://my.feishu.cn/docx/G64wdwfwMogBsTxsewDcrNkKnCb](https://my.feishu.cn/docx/G64wdwfwMogBsTxsewDcrNkKnCb)
 
-> 关注公众号：**星期一研究室**，与你分享前沿的生产力工具🧙‍♀️
+> 关注👸号：**星期一研究室**，与你分享前沿的生产力工具🧙‍♀️
 
 # 🧙🏻‍♀️前言
 
-偶然间在小红书的评论区刷到小伙伴在讨论和豆包的语音cosplay，让我产生了一些好奇：究竟是什么样的AI让用户便捷使用的同时还产生了情感连接？
+偶然间在📕的评论区刷到小伙伴在讨论和豆包的语音cosplay，让我产生了一些好奇：究竟是什么样的AI让用户便捷使用的同时还产生了情感连接？
 
 ![](img/4fa1a637606f6097a4b3318393deb3e1.png)
 

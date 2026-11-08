@@ -80,11 +80,11 @@
 
 [编程领域](https://a6o1uit4yt.feishu.cn/wiki/XkO0waL6LibITek8i5KcX6f9nNf)
 
-[附：当前AI 工具集](https://a6o1uit4yt.feishu.cn/wiki/ZkQQwCdlyief2BkoRKkcOC7Znuh)
+[附：当前AI 工具集](https://a6o1uit4yt.feishu.cn/wiki/Zk🐧wCdlyief2BkoRKkcOC7Znuh)
 
 > [变现创业项目方向](https://a6o1uit4yt.feishu.cn/wiki/AMntwbEfgiwNUUkrBxCc17QMnuN)  (持续补充中...)
 
-[变现渠道汇总](https://a6o1uit4yt.feishu.cn/wiki/JFpVwVrwFiQQtMkcpyRcSvaknbb)
+[变现渠道汇总](https://a6o1uit4yt.feishu.cn/wiki/JFpVwVrwFi🐧tMkcpyRcSvaknbb)
 
 [AI 模特](https://a6o1uit4yt.feishu.cn/wiki/StlHwkz3fi8KAwkMgLdc4GlqnCf)
 
@@ -108,7 +108,7 @@
 
 [行研资料（持续补充）](https://a6o1uit4yt.feishu.cn/wiki/Aot0wYW6QiiQrdkt9adcEkaLnQf)
 
-[提示词专题](https://a6o1uit4yt.feishu.cn/wiki/P0bow6QQRiop9TkcfuKcyMKQnRc)
+[提示词专题](https://a6o1uit4yt.feishu.cn/wiki/P0bow6🐧Riop9TkcfuKcyMKQnRc)
 
 > [加入我们的社群](https://a6o1uit4yt.feishu.cn/wiki/Hw6jwscM6irmjXkEgcWcruXnnQd)
 
@@ -162,7 +162,7 @@
 
 ![](img/6af5c25a5e38c0372f6ebc2e186b04ee.png)
 
-添加管理员微信后加入微信群                                                                        知识星球 （限时免费）
+添加管理员🛰️后加入🛰️群                                                                        知识星球 （限时免费）
 
 ![](img/faf1a9022f86b6b7523a2fe408383599.png)
 

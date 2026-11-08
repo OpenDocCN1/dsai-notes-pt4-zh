@@ -36,7 +36,7 @@ https://github.com/user-attachments/assets/87f00f97-1c4f-4152-b7c0-d145742cb910
 
 ---
 
-# 🏠 公众号
+# 🏠 👸号
 
 ![](img/113d46c0591487644baefa15b6967b88.png)
 

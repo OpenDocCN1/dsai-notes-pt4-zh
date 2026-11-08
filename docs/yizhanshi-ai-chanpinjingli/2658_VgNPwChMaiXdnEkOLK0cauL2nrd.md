@@ -50,7 +50,7 @@
 
 +   恶搞奥特曼的Sora视频受关注，OpenAI考虑对Cameo功能收入分成等商业模式。
 
-+   奥特曼认为能被AI消灭的工作并非真正的工作，ChatGPT不想做成美国版微信。
++   奥特曼认为能被AI消灭的工作并非真正的工作，ChatGPT不想做成美国版🛰️。
 
 > 关键词：OpenAI，奥特曼，ChatGPT，GPT-6，AGI
 

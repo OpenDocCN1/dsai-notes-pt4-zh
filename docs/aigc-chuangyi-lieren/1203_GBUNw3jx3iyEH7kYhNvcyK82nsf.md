@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/Y74bdMja8oJfXpxg6wdcP4cAnNc](https://aigcreative.feishu.cn/docx/Y74bdMja8oJfXpxg6wdcP4cAnNc)
 
-> Original 作者：张小珺 公众号：腾讯科技 Source
+> Original 作者：张小珺 👸号：腾讯科技 Source
 
 > 链接: https://mp.weixin.qq.com/s/FI19Sc6GA8eXC4zzbdMTlg
 
@@ -86,7 +86,7 @@ ChatGPT是对话式，从填空到对话，更符合直觉。
 
 从ChatGPT到Monica这种自带上下文、自带context的，豆包和夸克都在此范畴—— 不仅是一个Chatbot（聊天机器人），而且是给Chatbot补充了上下文。 用户所看到的屏幕里的文章，或者在某个应用里、邮箱里，在用户授权的情况下可以帮他回邮件。就相当于，不单纯是一个Chatbot，而是带上了context的Chatbot。
 
-再往后到Cursor。它火了之后，两个人群在用：一类是工程师，另一类接近产品经理，甚至都不一定是产品经理。举个例子，他在运营公众号，通过Cursor分析公众号数据——这显然不是工程师需求。
+再往后到Cursor。它火了之后，两个人群在用：一类是工程师，另一类接近产品经理，甚至都不一定是产品经理。举个例子，他在运营👸号，通过Cursor分析👸号数据——这显然不是工程师需求。
 
 他可能也把他当Chatbot用——左边是代码内容，右边是像co-pilot（副驾驶员）区域，他是不会看左边的。写出来代码，有问题也只跟 Chatbot说；他不会说这里有问题，手动改代码。
 
@@ -252,7 +252,7 @@ By the way，在所有人中，我感觉DeepSeek对要不要做Chatbot，反而�
 
 他一直在开源，前面没火他也在开源，只是在按照自己的节奏做事情。
 
-我记得我们在微信聊天，你问我，如果我是其他几家foundation model公司，我会怎么办？我后来想一下——就是“做自己”最重要，而不是“应激”。
+我记得我们在🛰️聊天，你问我，如果我是其他几家foundation model公司，我会怎么办？我后来想一下——就是“做自己”最重要，而不是“应激”。
 
 当然foundation model公司创始人们，取得成绩比我们大很多啊。我只是假定，如果我在经营公司，在这种时候最重要的还是按自己节奏来。你会发现简单做好技术，也会得到巨大奖励。尽管这不可复制。
 

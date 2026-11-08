@@ -28,7 +28,7 @@
 
 > https://console.bce.baidu.com/support/?_=1774495202480#/ticket/#/ticket/create?productId=329&createDirectly=1
 
-**微信扫码下载地址**
+**🛰️扫码下载地址**
 
 ![](img/d99ed9d1f91a0a2ea6be555209c9ea4e.png)
 

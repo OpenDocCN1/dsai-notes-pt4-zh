@@ -26,13 +26,13 @@
 
 电脑端：https://www.xiaobaogong.com/
 
-微信小程序：搜索「小包公法律AI」小程序
+🛰️小程序：搜索「小包公法律AI」小程序
 
 **更多介绍**：https://mp.weixin.qq.com/s/atdM-dKAYdu1RRs1G0JLXw
 
 **开发者**：无忧吾律
 
-**产品链接**：搜索「无忧吾律」微信小程序
+**产品链接**：搜索「无忧吾律」🛰️小程序
 
 **更多介绍**：https://mp.weixin.qq.com/s/3FQ5F4HYon5he3q2r7mu1g
 
@@ -68,6 +68,6 @@
 
 **开发者：**艾特律宝
 
-**产品链接**：添加微信开通
+**产品链接**：添加🛰️开通
 
 **更多介绍**：https://mp.weixin.qq.com/s/VptL3jvpCiU2IpcyfAgBkw

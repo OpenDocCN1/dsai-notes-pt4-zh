@@ -4,7 +4,7 @@
 
 > 金磊 发自 凹非寺
 
-> 量子位 | 公众号 QbitAI
+> 量子位 | 👸号 QbitAI
 
 **苹果AI****（Ap**ple Intelligence）还没有正式到来，后台的提示词却意外曝光了。
 

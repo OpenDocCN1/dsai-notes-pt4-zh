@@ -36,7 +36,7 @@
 
 1.  智谱[ AI ](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==)vs Minimax：B 端与 C 端两条平行路径 (腾讯科技)：毛利率差异巨大(56.3% vs 12.2%)，智谱 85%收入来自本地化部署，MiniMax 收入结构从 80%境内转为 73%海外
 
-1.  **小红书成科技圈"新绿洲"** ([极客公园](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==))：科技内容消费模式转变，独立开发者通过 Build in Public 实现从 0 到 1
+1.  **📕成科技圈"新绿洲"** ([极客公园](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==))：科技内容消费模式转变，独立开发者通过 Build in Public 实现从 0 到 1
 
 ### 🛠️ 今日新工具
 

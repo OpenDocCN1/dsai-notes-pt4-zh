@@ -246,6 +246,6 @@ KKBot 作为 Copilot，还有一个很大的优点。简仁贤强调说，「它
 
 © THE END
 
-转载请联系本公众号获得授权
+转载请联系本👸号获得授权
 
 投稿或寻求报道：content@jiqizhixin.com

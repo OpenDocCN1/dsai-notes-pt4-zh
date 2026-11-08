@@ -244,7 +244,7 @@ https://mp.weixin.qq.com/s/7lpPSYJX1qCEyBsFCsiOvQ
 
 ![](img/5c0606d6aebc1db40b99f8a237866c34.png)
 
-### AI+音频社交｜Airchat，硅谷i人的微信，还是下一个Clubhouse？
+### AI+音频社交｜Airchat，硅谷i人的🛰️，还是下一个Clubhouse？
 
 贡献人：
 
@@ -522,7 +522,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

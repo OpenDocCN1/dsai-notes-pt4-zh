@@ -2,7 +2,7 @@
 
 > 来源：[https://agijuejin.feishu.cn/docx/TScsdU2FhoFSd5xscFSc9PpJnzg](https://agijuejin.feishu.cn/docx/TScsdU2FhoFSd5xscFSc9PpJnzg)
 
-来源：小红书博主@野菩萨 - 最强AIGC教程的[小红书笔记来源](https://www.xiaohongshu.com/explore/65d4d27c00000000070252f8?app_platform=ios&app_version=8.24.4&author_share=1&share_from_user_hidden=true&type=normal&xhsshare=WeixinSession&appuid=5513fe8ed39ea24fec6cf63b&apptime=1708447254)，一起来看一下吧
+来源：📕博主@野菩萨 - 最强AIGC教程的[📕笔记来源](https://www.xiaohongshu.com/explore/65d4d27c00000000070252f8?app_platform=ios&app_version=8.24.4&author_share=1&share_from_user_hidden=true&type=normal&xhsshare=WeixinSession&appuid=5513fe8ed39ea24fec6cf63b&apptime=1708447254)，一起来看一下吧
 
 # Sora时代稀缺的小众电影提示词
 

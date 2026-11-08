@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/Nze9dXTh4obKE3xstLAcwdzKnBf](https://yunyinghui.feishu.cn/docx/Nze9dXTh4obKE3xstLAcwdzKnBf)
 
-> **本文来源公众号：**阿里巴巴
+> **本文来源👸号：**阿里巴巴
 
 > **推荐语：**2025 年云栖大会上阿里吴泳铭的 AI 演讲太干货，他说 AGI 只是起点，终极是能自我迭代的超级 AI（ASI），还拆解了 ASI“智能涌现-自主行动-自我迭代”三阶段路线。阿里云也亮实招：通义千问坚定开源做 AI 版 Android，造超级 AI 云当下一代计算机，更砸三年 3800 亿建基建，远期能耗还要涨 10 倍。不管是盯 AI 未来方向，还是找开发机遇，这篇都值得读。
 

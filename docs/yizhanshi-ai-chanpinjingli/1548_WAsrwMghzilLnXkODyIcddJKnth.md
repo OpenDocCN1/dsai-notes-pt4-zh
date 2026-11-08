@@ -64,13 +64,13 @@
 
 [玩转 Coze，帮开源 AI社区搞了一个社群运营机器人](https://v11enp9ok1h.feishu.cn/wiki/L447w2qoDizElDkOfIYcnfUDnLc?from=from_copylink)
 
-[Coze工作流之抖音热门视频转小红书图文详细配置](https://v11enp9ok1h.feishu.cn/wiki/Zp2lwHSUCisqTWkHkj6cJFRunZg?from=from_copylink)
+[Coze工作流之抖音热门视频转📕图文详细配置](https://v11enp9ok1h.feishu.cn/wiki/Zp2lwHSUCisqTWkHkj6cJFRunZg?from=from_copylink)
 
 [Coze定制开发插件案例：根据食物识别营养热量](https://v11enp9ok1h.feishu.cn/wiki/ZhoVwQVpHi7YpVk97y0clozznsp?from=from_copylink)
 
 [用Coze工作流制作行业简报：实战案例日报](https://v11enp9ok1h.feishu.cn/wiki/TZHrwM5HOidyuUkOnHKcaywUnZc?from=from_copylink)
 
-[用 Coze 免费打造自己的微信 AI 智能客服](https://v11enp9ok1h.feishu.cn/wiki/C8a3wclLQi7STvkfAo8cufnonAg?from=from_copylink)
+[用 Coze 免费打造自己的🛰️ AI 智能客服](https://v11enp9ok1h.feishu.cn/wiki/C8a3wclLQi7STvkfAo8cufnonAg?from=from_copylink)
 
 [手把手教你使用Coze搭建企业知识](https://v11enp9ok1h.feishu.cn/wiki/BGLOw52WjivlzhkYaoScIYOKnCh?from=from_copylink)
 

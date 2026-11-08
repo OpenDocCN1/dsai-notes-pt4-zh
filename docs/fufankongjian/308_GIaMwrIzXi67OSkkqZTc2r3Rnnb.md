@@ -122,7 +122,7 @@
 
 ![](img/4637d650f333796f2ed93002e64db3e6.png)
 
-> 目前huggingface访问需要科学上网方法。
+> 目前huggingface访问需要🪜方法。
 
 就huggingface和Github来说，Github的功能更偏向代码托管和项目管理，而huggingface和ModelScope类似，都是深度学习、大模型的模型库，模型发布门槛较低，并且huggingface还负责托管了奠定整个大模型基础的transformer库，后续的开源大模型部署和使用也将用到transformer库。因此，整体来看，Github更适合查阅模型各类深度详细信息，而huggingface和ModelScope则更加适合模型关键信息检索与模型快速部署。并且对于huggingface而言，发布的各项模型都可以直接在网页端下载项目文件。例如对于Qwen/Qwen1.5-MoE-A2.7B模型，模型主页https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B 如下：
 

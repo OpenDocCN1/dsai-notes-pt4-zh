@@ -34,7 +34,7 @@ Anthropic 内部做了一个疯狂的实验：让 16 个 Claude Agent 并行协�
 
 OpenClaw 的故事颇具传奇色彩。它最早是奥地利开发者 Peter Steinberger（PSPDFKit 创始人，公司以约 8 亿美元出售）的个人项目。2025 年 11 月开源后迅速走红，到 2026 年 1 月底已经火遍全球开发者社区。Steinberger 随后加入 OpenAI，并将项目转交给一个独立的 501(c)(3) 基金会运营。
 
-数据说明一切：OpenClaw 在 GitHub 上拥有 346K+ Stars，超越 React 成为 GitHub 历史上 Stars 最多的软件项目。React 花了十年多才积累到约 24.3 万 Stars，OpenClaw 在 60 天内就突破了 25 万。它支持 20+ 消息渠道（WhatsApp、Telegram、Slack、飞书、微信等），让任何人——不只是开发者——都能拥有一个随时在线的个人 AI 助手。
+数据说明一切：OpenClaw 在 GitHub 上拥有 346K+ Stars，超越 React 成为 GitHub 历史上 Stars 最多的软件项目。React 花了十年多才积累到约 24.3 万 Stars，OpenClaw 在 60 天内就突破了 25 万。它支持 20+ 消息渠道（WhatsApp、Telegram、Slack、飞书、🛰️等），让任何人——不只是开发者——都能拥有一个随时在线的个人 AI 助手。
 
 ![](img/e678de9ca686e6b802984726d74e3612.png)
 
@@ -153,7 +153,7 @@ Hermes Agent 来自 NousResearch——一个在开源大模型微调领域深耕
 
 +   **工具编排**：47 个内置工具，按功能分成 20 个 Toolset（终端执行、浏览器操控、网页搜索、文件管理、视觉理解、语音交互、定时调度......），开箱即用
 
-+   **消息网关**：14+ 消息平台内建网关——Telegram、Discord、Slack、WhatsApp、Signal、Email、Home Assistant、DingTalk（钉钉）、Feishu（飞书）、WeCom（企业微信）......一个 Agent 同时活跃在所有平台
++   **消息网关**：14+ 消息平台内建网关——Telegram、Discord、Slack、WhatsApp、Signal、Email、Home Assistant、DingTalk（钉钉）、Feishu（飞书）、WeCom（企业🛰️）......一个 Agent 同时活跃在所有平台
 
 +   **记忆系统**：四层持久记忆架构（MEMORY.md + USER.md + SQLite FTS5 全文检索 + 8 种外部 Provider 可插拔），每次对话都在积累经验
 
@@ -161,9 +161,9 @@ Hermes Agent 来自 NousResearch——一个在开源大模型微调领域深耕
 
 +   **自我进化**：集成 DSPy（Stanford 提示词自动优化框架）+ GEPA（反思式提示词进化，Reflective Prompt Evolution），自动分析失败原因、生成改进变体、评估后提交最优方案。GEPA 是 ICLR 2026 的 Oral Paper，跨 6 个任务平均超越 GRPO（强化学习方法）6%，最高超越 20%，而所需的 rollout（推演）次数少 35 倍
 
-+   **国产模型原生支持**：DeepSeek、Kimi（Moonshot）、MiniMax、智谱 GLM 通过直连 Provider 或 OpenRouter 接入，不需要翻墙
++   **国产模型原生支持**：DeepSeek、Kimi（Moonshot）、MiniMax、智谱 GLM 通过直连 Provider 或 OpenRouter 接入，不需要🪜
 
-+   **国内通信平台内建**：飞书、钉钉、企业微信网关开箱即用，不需要自己写一行对接代码
++   **国内通信平台内建**：飞书、钉钉、企业🛰️网关开箱即用，不需要自己写一行对接代码
 
 它的口号是 "The agent that grows with you"——越用越强的 Agent。这不是营销话术，而是由四层记忆 + 技能自生成 + GEPA 进化优化三套独立但协作的工程系统支撑的真实能力。官方数据显示，同类任务执行 10-20 次后，Agent 的效率可以提升 2-3 倍。
 
@@ -823,9 +823,9 @@ Agent Layer（Agent 层）
 | Matrix | v0.4.0 | v0.8.0 升级为 Tier 1：反应、已读回执、富文本、房间管理 |
 | Webhook | v0.4.0 | 通用 HTTP 接入，对接任意系统 |
 | Feishu/Lark（飞书） | v0.6.0 | 国际版 Lark 和国内版飞书均支持 |
-| WeCom（企业微信） | v0.6.0 | 企业内部沟通 |
+| WeCom（企业🛰️） | v0.6.0 | 企业内部沟通 |
 
-> 注：个人微信（WeChat）目前不在官方支持列表中。社区有第三方 Bridge 方案，但稳定性参差不齐。
+> 注：个人🛰️（WeChat）目前不在官方支持列表中。社区有第三方 Bridge 方案，但稳定性参差不齐。
 
 #### Skill 系统与 GEPA 自演化
 
@@ -959,7 +959,7 @@ awesome-hermes-agent——社区策展的资源列表，收录了 80+ 个项目�
 | --- | --- | --- |
 | **核心侧重** | 多渠道个人 AI 助手（连接一切） | Harness 工程化 Agent 运行时（越用越强） |
 | **上手方式** | 多平台部署 + 渠道接入 | 一行 curl 安装，零代码启动 |
-| **渠道覆盖** | 20+ 渠道（WhatsApp/Telegram/Slack/飞书/微信/邮件等） | 14+ 平台内建网关（Telegram/Discord/Slack/飞书/钉钉/企微等） |
+| **渠道覆盖** | 20+ 渠道（WhatsApp/Telegram/Slack/飞书/🛰️/邮件等） | 14+ 平台内建网关（Telegram/Discord/Slack/飞书/钉钉/企微等） |
 | **记忆与成长** | 会话记忆 + 用户偏好存储 | 四层记忆（MEMORY.md + USER.md + SQLite FTS5 + 8 种外部 Provider）+ 技能自生成 + GEPA 进化 |
 | **多 Agent 协作** | 多 Agent 架构成熟 | 仅子 Agent 委派（隔离上下文），完整多 Agent 在路线图 |
 | **工具生态** | 核心工具链 + 44K+ 社区技能 | 47 个工具 x 20 个 Toolset（终端/浏览器/搜索/文件/视觉/语音/调度等） |
@@ -979,7 +979,7 @@ Hermes Agent 的短板：
 
 +   **多 Agent 协作是弱项**。当前只有 delegate_task（生成隔离的子 Agent，不能互通），真正的多 Agent 架构还在路线图上（GitHub Issue #344）。如果你的场景需要多个 Agent 协作分工，OpenClaw 的方案目前成熟得多。
 
-+   渠道覆盖面略窄于 OpenClaw。OpenClaw 支持 20+ 消息渠道（含个人微信、WhatsApp），Hermes Agent 当前为 14+ 平台，部分渠道仍在开发中。
++   渠道覆盖面略窄于 OpenClaw。OpenClaw 支持 20+ 消息渠道（含个人🛰️、WhatsApp），Hermes Agent 当前为 14+ 平台，部分渠道仍在开发中。
 
 +   **生态体量差距大**。OpenClaw 有 346K Stars 和 44K+ 社区技能，Hermes Agent 的 40K Stars 和 80+ 社区项目在规模上不在一个量级。
 
@@ -995,7 +995,7 @@ Hermes Agent 的短板：
 
 | 你的场景 | 推荐工具 | 原因 |
 | --- | --- | --- |
-| 多渠道消息接入（WhatsApp/个人微信/邮件等） | OpenClaw | 渠道覆盖面最广，50+ 平台原生支持 |
+| 多渠道消息接入（WhatsApp/个人🛰️/邮件等） | OpenClaw | 渠道覆盖面最广，50+ 平台原生支持 |
 | 需要 Agent 越用越强、自动积累经验 | Hermes Agent | 技能自生成 + GEPA 进化 + 四层持久记忆 |
 | 终端深度自动化（47 个工具覆盖终端/浏览器/视觉/语音） | Hermes Agent | 工具覆盖面和终端后端选择最丰富 |
 | 飞书/钉钉 AI 助手 | 两者均可 | 都原生支持飞书/钉钉 |
@@ -1066,7 +1066,7 @@ Hermes Agent 的版本迭代速度，即便在 2026 年快节奏的 AI 开源世
 | **v0.3.0** | 2026-03-17 | Streaming &amp; Plugins | 统一流式输出、插件架构、Anthropic 原生 Provider、智能审批、语音模式、并发工具执行、Honcho 记忆集成 |
 | **v0.4.0** | 2026-03-23 | Platform Expansion | OpenAI 兼容 API 服务器、6 个新平台适配器（Signal/DingTalk/SMS/Mattermost/Matrix/Webhook）、4 个新 Provider、MCP OAuth 2.1、200+ Bug 修复 |
 | **v0.5.0** | 2026-03-28 | Hardening Release | 供应链安全审计、50+ 安全修复、HuggingFace Provider、Modal SDK、Nix flake、插件生命周期 Hook |
-| **v0.6.0** | 2026-03-30 | Multi-Instance Release | Profile 多实例系统、MCP Server 模式、Doc**ker 容器、Pro**v**ider 故**障链、飞书/Lark 支持、企业微信支持、Slack 多 Workspace OAuth |
+| **v0.6.0** | 2026-03-30 | Multi-Instance Release | Profile 多实例系统、MCP Server 模式、Doc**ker 容器、Pro**v**ider 故**障链、飞书/Lark 支持、企业🛰️支持、Slack 多 Workspace OAuth |
 | **v0.7.0** | 2026-04-03 | Resilience Release | 可插拔记忆 Provider（8 种后端）、凭证池轮换、Camofox 反检测浏览器、内联 diff 预览、深度安全修复。168 个 PR、46 个 Issue 解决 |
 | **v0.8.0** | 2026-04-08 | Intelligence Release | 后台任务自动通知、在线模型切换、自优化 GPT/Codex 引导、Google AI Studio 原生 Provider、MCP OAuth 2.1 PKCE + OSV 恶意软件扫描、集中日志、插件扩展、Matrix Tier 1 |
 
@@ -1128,7 +1128,7 @@ Hermes Agent 的版本迭代速度，即便在 2026 年快节奏的 AI 开源世
 
 ### 4.1 模型提供商支持清单（v0.8.0）
 
-Hermes Agent 不绑定任何特定模型——它兼容所有 OpenAI-compat**i**ble API，原生支持 18+ 模型提供商。对国内用户而言，最重要的信息是：国产四大模型（DeepSeek / Kimi / MiniMax / 智谱）均有原生支持，API 端点在国内，无需翻墙。
+Hermes Agent 不绑定任何特定模型——它兼容所有 OpenAI-compat**i**ble API，原生支持 18+ 模型提供商。对国内用户而言，最重要的信息是：国产四大模型（DeepSeek / Kimi / MiniMax / 智谱）均有原生支持，API 端点在国内，无需🪜。
 
 #### 云端 API 提供商
 
@@ -1138,15 +1138,15 @@ Hermes Agent 不绑定任何特定模型——它兼容所有 OpenAI-compat**i**
 | **Kimi（Moonshot）** | KIMI_API_KEY | 直连可用 | 128K 超长上下文 |
 | **MiniMax** | MINIMAX_API_KEY | 直连可用 | v0.8.0 新增 TTS（Text-to-Speech，文字转语音）Provider（speech-2.8） |
 | **智谱（z.ai / GLM）** | GLM_API_KEY | 直连可用 | Z.AI 端点自动探测（v0.8.0） |
-| Nous Portal | OAuth（开放授权协议）授权 | 需翻墙 | Hermes 系列模型原生托管，含免费 MiMo v2 Pro |
-| OpenRouter | OPENROUTER_API_KEY | 需翻墙 | 200+ 模型聚合（Claude / GPT-5 / Gemini 等） |
-| OpenAI | OPENAI_API_KEY | 需翻墙 | GPT-5 / o-series / Codex 系列 |
-| Anthropic | ANTHROPIC_API_KEY | 需翻墙 | Claude 系列 |
-| Google Gemini | GOOGLE_API_KEY | 需翻墙 | v0.8.0 新增原生 Google AI Studio 集成 |
-| Hugging Face | HF_TOKEN | 需翻墙 | 17+ Inference Providers |
-| GitHub Copilot | GH_TOKEN | 需翻墙 | 通过 Device Code Flow 认证 |
+| Nous Portal | OAuth（开放授权协议）授权 | 需🪜 | Hermes 系列模型原生托管，含免费 MiMo v2 Pro |
+| OpenRouter | OPENROUTER_API_KEY | 需🪜 | 200+ 模型聚合（Claude / GPT-5 / Gemini 等） |
+| OpenAI | OPENAI_API_KEY | 需🪜 | GPT-5 / o-series / Codex 系列 |
+| Anthropic | ANTHROPIC_API_KEY | 需🪜 | Claude 系列 |
+| Google Gemini | GOOGLE_API_KEY | 需🪜 | v0.8.0 新增原生 Google AI Studio 集成 |
+| Hugging Face | HF_TOKEN | 需🪜 | 17+ Inference Providers |
+| GitHub Copilot | GH_TOKEN | 需🪜 | 通过 Device Code Flow 认证 |
 | 阿里（DashScope / Qwen） | DASHSCOPE_API_KEY | 直连可用 | 通义千问系列 |
-| xAI（Grok） | XAI_API_KEY | 需翻墙 | v0.8.0 新增 Prompt Caching |
+| xAI（Grok） | XAI_API_KEY | 需🪜 | v0.8.0 新增 Prompt Caching |
 
 #### 本地 / 自托管模型
 
@@ -1364,7 +1364,7 @@ v0.8.0（代号 "The Intelligence Release"）于 2026 年 4 月 8 日发布，�
 
 前面我们花了不少篇幅建立认知框架——Harness Engineering 的理论、OpenClaw 的对比、项目生态的全景。现在，是时候动手了。
 
-接下来我们要做三件事：**安**装 Hermes Agent v0.8.0、配置 DeepSeek 国内直连、跟 Agent 进行第一次真正的中文对话。整个过程不需要翻墙，不需要写代码，不需要提前安装 Python 或 Node.js——安装脚本会自动搞定一切。
+接下来我们要做三件事：**安**装 Hermes Agent v0.8.0、配置 DeepSeek 国内直连、跟 Agent 进行第一次真正的中文对话。整个过程不需要🪜，不需要写代码，不需要提前安装 Python 或 Node.js——安装脚本会自动搞定一切。
 
 > 注：本节所有操作在 macOS（Mac Mini M4）上执行并截图。Linux 用户操作完全相同，Windows 用户需要先安装 WSL2。
 
@@ -1439,7 +1439,7 @@ hermes doctor 会对 Hermes Agent 的所有组件做一次全面体检，分成 
 
 #### 第三步：配置 DeepSeek 国内直连
 
-Hermes Agent 支持 18+ 模型提**供商，但对国内用**户来说，最推荐的首选是 DeepSeek——完全不需要翻墙，API 稳定，价格亲民（100 万 tokens 约 1 元人民币）。
+Hermes Agent 支持 18+ 模型提**供商，但对国内用**户来说，最推荐的首选是 DeepSeek——完全不需要🪜，API 稳定，价格亲民（100 万 tokens 约 1 元人民币）。
 
 配置只需要三条命令：
 
@@ -1536,7 +1536,7 @@ hermes chat -q 只是冰山一角。Hermes Agent 围绕一个 AIAgent 核心类�
 
 +   **安装就绪**：所有依赖自动配置完成
 
-+   **国内直连**：DeepSeek 模型无需翻墙
++   **国内直连**：DeepSeek 模型无需🪜
 
 +   **端到端验证**：Agent 已成功完成工具调用 + 中文对话
 
@@ -1604,7 +1604,7 @@ LangChain、Google ADK、Claude Code、Manus、Hermes **Agent——这些**名�
 
 1.  **四大 Harness 层级构成了** Hermes Agent 的完整架构。 L1 运行时基座（47 个工具）→ L2 消息网关（14+ 平台）→ L3 持久记忆（四层记忆 + 8 种 Provider）→ L4 Skill 自主进化（GEPA + ICLR 2026）。每一层都在填补模型能力的一个缺口。
 
-1.  安装只需三条命令，国内直连不翻墙。 一行 curl 安装 v0.8.0，hermes doctor 全绿确认环境，DeepSeek API Key 配置后即可用中文对话。Agent 启动即内置 28 个工具和 77 个技能，开箱即用。
+1.  安装只需三条命令，国内直连不🪜。 一行 curl 安装 v0.8.0，hermes doctor 全绿确认环境，DeepSeek API Key 配置后即可用中文对话。Agent 启动即内置 28 个工具和 77 个技能，开箱即用。
 
 #### 回答开篇的三个问题
 

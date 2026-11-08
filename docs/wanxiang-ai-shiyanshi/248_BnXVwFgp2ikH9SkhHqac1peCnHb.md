@@ -20,11 +20,11 @@
 
 ### 🐛 npm error code 128
 
-表现如图，如果有魔法上网，从上网工具复制环境变量粘贴到终端回车执行，再执行 OpenClaw 安装命令
+表现如图，如果有🪜，从上网工具复制环境变量粘贴到终端回车执行，再执行 OpenClaw 安装命令
 
 ![](img/8f6a6f422ee58ef5d81eb79f1fa19792.png)
 
-**如果没**有魔法上网可以尝试下面的步骤，每一行命令复制出来执行，不要全部复制一次执行：
+**如果没**有🪜可以尝试下面的步骤，每一行命令复制出来执行，不要全部复制一次执行：
 
 ```
 git config --global url.&quot;https://&quot;.insteadOf ssh://git@git config --global url.&quot;https://&quot;.insteadOf ssh://git

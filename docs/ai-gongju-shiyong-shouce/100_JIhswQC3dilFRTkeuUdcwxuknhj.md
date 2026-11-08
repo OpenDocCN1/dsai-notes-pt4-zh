@@ -1,8 +1,8 @@
-# NO.04 公众号起号测试
+# NO.04 👸号起号测试
 
 > 来源：[https://my.feishu.cn/docx/JgTzdig8JoO1THxagFCcNVMRnlb](https://my.feishu.cn/docx/JgTzdig8JoO1THxagFCcNVMRnlb)
 
-首先推荐一个AI工具，免梯子直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
+首先推荐一个AI工具，免🪜直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
 
 # 前言
 
@@ -10,7 +10,7 @@
 
 # **流程简介**
 
-1.注册公众号：https://mp.weixin.qq.com/
+1.注册👸号：https://mp.weixin.qq.com/
 
 2.选择账号类型：订阅号（账号类型说明文档：https://kf.qq.com/faq/170815aUZjeQ170815mU7bI7.html
 
@@ -44,21 +44,21 @@
 
 5.发布：这个不用讲了，点发布就行了
 
-# 公众号红利❤
+# 👸号红利❤
 
-以前我们写公众号，只有粉丝能看到，而且订阅号每天只能发一条推送。直到这次更新👇
+以前我们写👸号，只有粉丝能看到，而且订阅号每天只能发一条推送。直到这次更新👇
 
 ![](img/1eafdbc0ccf4f84486bc86bfe92ed447.png)
 
 更新后：
 
-1、公众号每天发文不限数量（参考今日头条）
+1、👸号每天发文不限数量（参考今日头条）
 
-2、公众号发文，能拿到公域流量（参考今日头条）
+2、👸号发文，能拿到公域流量（参考今日头条）
 
-> **以上两点结合****AI**工具，意味着无限流量。（微信日活8亿+）
+> **以上两点结合****AI**工具，意味着无限流量。（🛰️日活8亿+）
 
-**公众号有**流量主功能，推文读的人多，还有收益分成（配图用的gigi，我自己的测试号还没拿到权限）
+**👸号有**流量主功能，推文读的人多，还有收益分成（配图用的gigi，我自己的测试号还没拿到权限）
 
 **如果是带货**文章，还能直接挂商品链接按CPS结算（一般佣金在20%-40%，40%+的佣金，只有超头才能拿到）
 

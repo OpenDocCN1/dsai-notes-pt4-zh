@@ -1,6 +1,6 @@
 # AIGC 检测兴趣小组
 
-> 来源：[https://aicarrier.feishu.cn/docx/BMhtd6mkNoPtQQx64pKcwU6jnMd](https://aicarrier.feishu.cn/docx/BMhtd6mkNoPtQQx64pKcwU6jnMd)
+> 来源：[https://aicarrier.feishu.cn/docx/BMhtd6mkNoPt🐧x64pKcwU6jnMd](https://aicarrier.feishu.cn/docx/BMhtd6mkNoPt🐧x64pKcwU6jnMd)
 
 # 书生·浦语 AIGC 检测兴趣小组
 
@@ -24,7 +24,7 @@ AIGC 检测兴趣小组讨论区：【待补充】
 
 ![](img/ed28520fc4a7133451b62dee4a31e184.png)
 
-> **备注：**加入 AIGC 检测兴趣小组欢迎微信联系浦语小助手（微信搜索InternLM）或者小组长ajupyter（微信搜索aJupyter）
+> **备注：**加入 AIGC 检测兴趣小组欢迎🛰️联系浦语小助手（🛰️搜索InternLM）或者小组长ajupyter（🛰️搜索aJupyter）
 
 ## 在兴趣小组可以做什么？
 

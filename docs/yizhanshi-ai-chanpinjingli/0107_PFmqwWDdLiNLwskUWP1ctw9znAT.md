@@ -111,7 +111,7 @@ done
 
 ![](img/3fc2d0d7e153e8aafbfd72065879a005.png)
 
-[抽样.txt](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HJHTbViuOoQQb6xyxM9cgOfLnPc)
+[抽样.txt](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HJHTbViuOo🐧b6xyxM9cgOfLnPc)
 
 之前从sat导出diffuser的框架lora权重出现的 图像融合、丢失样本细节的情况，在这里并没有发生，
 
@@ -149,7 +149,7 @@ done
 
 #### checkpoint-1000
 
-多维表格（KPFrbtclUareVqsQXnEcClApnxg_tblwWITjYblpLvQQ）
+多维表格（KPFrbtclUareVqsQXnEcClApnxg_tblwWITjYblpLv🐧）
 
 #### checkpoint-4000
 

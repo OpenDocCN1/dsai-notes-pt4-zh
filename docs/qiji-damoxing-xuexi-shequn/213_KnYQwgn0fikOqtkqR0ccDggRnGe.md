@@ -60,7 +60,7 @@ https://mp.weixin.qq.com/s/PR4fCky5a6geBdCbxsOURg
 
 贡献人：
 
-https://mp.weixin.qq.com/s/9GkSQkEax3D5boQQ9LNIRQ
+https://mp.weixin.qq.com/s/9GkSQkEax3D5bo🐧9LNIRQ
 
 两天前，图灵奖得主 Yann LeCun 转载了「自己登上月球去探索」的长篇漫画，引起了网友的热议。其实，产出这些漫画的研究出自南开大学、字节跳动等机构。在《StoryDiffusion：Consistent Self-Attention for long-range image and video generation》这篇论文中，该研究团队提出了一种名为 StoryDiffusion 的新方法，用于生成一致的图像和视频以讲述复杂故事。
 
@@ -666,7 +666,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://docs.feishu.cn/docx/Gs4udIf8LooBwRx9XqHcxBYSnAb](https://docs.feishu.cn/docx/Gs4udIf8LooBwRx9XqHcxBYSnAb)
 
-**-问：**微信小程序对监管承担责任，是不是全部看登记主体啊？如果登记主体是A，底层app是B，除非明示A共享给B，否则都是A兜底对吧？
+**-问：**🛰️小程序对监管承担责任，是不是全部看登记主体啊？如果登记主体是A，底层app是B，除非明示A共享给B，否则都是A兜底对吧？
 
 **-答1：**是，登记谁就是谁，**登记的是实名认证**。
 

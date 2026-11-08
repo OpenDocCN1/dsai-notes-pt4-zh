@@ -1,4 +1,4 @@
-# 社群微信群入口
+# 社群🛰️群入口
 
 > 来源：[https://feicaiclub.feishu.cn/docx/Ct7jdQHZ2oFrOPxEItPcQTEbncf](https://feicaiclub.feishu.cn/docx/Ct7jdQHZ2oFrOPxEItPcQTEbncf)
 
@@ -10,7 +10,7 @@
 
 ![](img/0a72fbeed9f5bd4f5d35f00769a85601.png)
 
-# **👑 加入废才俱乐部微信群**
+# **👑 加入废才俱乐部🛰️群**
 
 学AI，你是不是也遇到过这些问题？
 

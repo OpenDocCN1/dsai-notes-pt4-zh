@@ -4,7 +4,7 @@
 
 > 原创：是莫尔索
 
-> 公众号：莫尔索随笔
+> 👸号：莫尔索随笔
 
 > 原文链接：https://mp.weixin.qq.com/s/Ym6QYBfouJLuyELEqAAeTw
 
@@ -87,7 +87,7 @@ llm = ChatOpenAI(base_url=&quot;https://api.siliconflow.cn/v1&quot;,
 
 ### 74篇原创内容
 
-### 公众号
+### 👸号
 
 ### 我写过的 LangChain 相关文章合集
 

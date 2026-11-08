@@ -142,9 +142,9 @@ Nano Banana Pro的世界知识，真的是太丰富了~~~无敌！
 
 > **满足极致的窥探欲。** 将复杂产品（如机械、汉堡、电子设备）瞬间“炸开”，把内部成百上千个精密零件平铺展示，强调工业设计的硬核美感与结构之美。
 
-> [Mechanical Heart] A densely packed knolling deconstruction of a complex steampunk mechanical heart. Hundreds of brass gears of all sizes, miniature copper pistons, glass ventricles filled with glowing red fluid, intricate clockwork mechanisms, filigree metal plates, screws, springs, and wires, all arranged in a strict, crowded grid filling the entire frame. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 公众号：AIGC创意猎人" written at the bottom center
+> [Mechanical Heart] A densely packed knolling deconstruction of a complex steampunk mechanical heart. Hundreds of brass gears of all sizes, miniature copper pistons, glass ventricles filled with glowing red fluid, intricate clockwork mechanisms, filigree metal plates, screws, springs, and wires, all arranged in a strict, crowded grid filling the entire frame. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 👸号：AIGC创意猎人" written at the bottom center
 
-> [机械心脏] 对复杂蒸汽朋克机械心脏进行的密集排列解构。数百个大小各异的黄铜齿轮、微型铜活塞、充满发光红色液体的玻璃心室、精密的发条装置、金属雕花板、螺丝、弹簧和电线，均以严格、紧凑的网格排列，填满整个画面。采用密集排列风格、便当式网格布局、严格的正投影俯视视角、平铺展示、排列密集、画面边缘无缝填充、无空白空间、超精细、柔和均匀的摄影棚灯光、8K分辨率、超写实，底部中央有小文字“由公众号：AIGC创意猎人生成”
+> [机械心脏] 对复杂蒸汽朋克机械心脏进行的密集排列解构。数百个大小各异的黄铜齿轮、微型铜活塞、充满发光红色液体的玻璃心室、精密的发条装置、金属雕花板、螺丝、弹簧和电线，均以严格、紧凑的网格排列，填满整个画面。采用密集排列风格、便当式网格布局、严格的正投影俯视视角、平铺展示、排列密集、画面边缘无缝填充、无空白空间、超精细、柔和均匀的摄影棚灯光、8K分辨率、超写实，底部中央有小文字“由👸号：AIGC创意猎人生成”
 
 ![](img/e1db183973218beb09a9a8d0cda6e96c.png)
 
@@ -176,9 +176,9 @@ GameboyColor解构
 
 > **一眼看尽“沧海桑田”。** 按照时间轴（通常是从左至右），展示同一品类从古董级“初代机”到未来“概念版”的完整进化史，体现迭代与传承。
 
-> [Music Storage] Evolution of music storage timeline, hyper-dense. Starting with stacks of vinyl records and sleeves, moving to a large collection of cassette tapes, then hundreds of CDs in jewel cases, followed by various generations of iPods and MP3 players, ending with multiple glowing glass icons representing cloud storage. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 公众号：AIGC创意猎人" written at the bottom center
+> [Music Storage] Evolution of music storage timeline, hyper-dense. Starting with stacks of vinyl records and sleeves, moving to a large collection of cassette tapes, then hundreds of CDs in jewel cases, followed by various generations of iPods and MP3 players, ending with multiple glowing glass icons representing cloud storage. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 👸号：AIGC创意猎人" written at the bottom center
 
-> [音乐存储] 音乐存储时间线的演变，超密集。从一摞摞黑胶唱片和封套开始，过渡到大量的卡式磁带收藏，接着是数百张装在珠宝盒里的CD，再到历代iPod和MP3播放器，最后是代表云存储的多个发光玻璃图标。采用规整排列风格，以便当网格布局，严格的正投影俯视视角，平铺展示，密集排列，画面边缘到边缘都被填满，没有空白空间，超细节呈现，柔和均匀的影棚灯光，8K分辨率，高度逼真，底部中央有小文字“由公众号：AIGC创意猎人生成”
+> [音乐存储] 音乐存储时间线的演变，超密集。从一摞摞黑胶唱片和封套开始，过渡到大量的卡式磁带收藏，接着是数百张装在珠宝盒里的CD，再到历代iPod和MP3播放器，最后是代表云存储的多个发光玻璃图标。采用规整排列风格，以便当网格布局，严格的正投影俯视视角，平铺展示，密集排列，画面边缘到边缘都被填满，没有空白空间，超细节呈现，柔和均匀的影棚灯光，8K分辨率，高度逼真，底部中央有小文字“由👸号：AIGC创意猎人生成”
 
 ![](img/337e0101c059ab63185f32cb2a59b43b.png)
 
@@ -222,9 +222,9 @@ GameboyColor解构
 
 > **上帝视角的“炼金术”。** 讲述“如何诞生”的故事，将杂乱的原材料、加工工具、半成品到最终精美成品同框展示，体现从无到有的创造快感。
 
-> [Knitting] Knitting process, surface covered. Piles of raw wool fleece, hundreds of spun yarn balls, knitting needles, half-knitted patterns, and finished intricate sweaters tightly arranged. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 公众号：AIGC创意猎人" written at the bottom center
+> [Knitting] Knitting process, surface covered. Piles of raw wool fleece, hundreds of spun yarn balls, knitting needles, half-knitted patterns, and finished intricate sweaters tightly arranged. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 👸号：AIGC创意猎人" written at the bottom center
 
-> [编织] 编织过程，表面覆盖。成堆的原羊毛、数百个纱线球、编织针、未完成的编织图案和完成的复杂毛衣紧密排列。采用Knolling风格，Bento网格布局，严格的正射顶视图，平铺，密集排列，填满画面边缘，没有空白空间，超细节，柔和均匀的摄影棚灯光，8K分辨率，超写实，底部中央有小文字“由公众号：AIGC创意猎人生成”
+> [编织] 编织过程，表面覆盖。成堆的原羊毛、数百个纱线球、编织针、未完成的编织图案和完成的复杂毛衣紧密排列。采用Knolling风格，Bento网格布局，严格的正射顶视图，平铺，密集排列，填满画面边缘，没有空白空间，超细节，柔和均匀的摄影棚灯光，8K分辨率，超写实，底部中央有小文字“由👸号：AIGC创意猎人生成”
 
 ![](img/7f3b9d2b97586b0de2310247e146db54.png)
 
@@ -268,9 +268,9 @@ UI设计过程
 
 > **制造强烈的视觉冲突。** 采用左右分屏构图，让两种截然不同或对立的状态（如数字vs模拟、混乱vs秩序、平价vs奢华）正面硬刚，戏剧张力拉满。
 
-> [Analog vs Digital] A super-dense split-screen knolling composition filling the frame. The entire left half is packed with analog tools: hundreds of colored pencils, markers, worn sketchbooks, metal rulers, paint tubes, brushes. The entire right half is packed with digital tools: multiple iPads displaying complex interfaces, Apple Pencils, keyboards, digital color palettes, cables, SSD drives. A sharp dividing line in the middle. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 公众号：AIGC创意猎人" written at the bottom center
+> [Analog vs Digital] A super-dense split-screen knolling composition filling the frame. The entire left half is packed with analog tools: hundreds of colored pencils, markers, worn sketchbooks, metal rulers, paint tubes, brushes. The entire right half is packed with digital tools: multiple iPads displaying complex interfaces, Apple Pencils, keyboards, digital color palettes, cables, SSD drives. A sharp dividing line in the middle. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 👸号：AIGC创意猎人" written at the bottom center
 
-> [模拟与数字] 一个超密集的分屏平铺构图填满画面。整个左半部分摆满了模拟工具：数百支彩色铅笔、马克笔、破旧的素描本、金属直尺、颜料管、画笔。整个右半部分摆满了数字工具：多台显示复杂界面的iPad、Apple Pencil、键盘、数字调色板、线缆、SSD硬盘。中间有一条明显的分界线。平铺风格，便当网格布局，严格的正投影俯视视角，平面摆放，密集排列，填满画面边缘，没有空白空间，超细节，柔和均匀的影棚灯光，8K分辨率，超写实，底部中央写有小文字“Gen by 公众号：AIGC创意猎人”
+> [模拟与数字] 一个超密集的分屏平铺构图填满画面。整个左半部分摆满了模拟工具：数百支彩色铅笔、马克笔、破旧的素描本、金属直尺、颜料管、画笔。整个右半部分摆满了数字工具：多台显示复杂界面的iPad、Apple Pencil、键盘、数字调色板、线缆、SSD硬盘。中间有一条明显的分界线。平铺风格，便当网格布局，严格的正投影俯视视角，平面摆放，密集排列，填满画面边缘，没有空白空间，超细节，柔和均匀的影棚灯光，8K分辨率，超写实，底部中央写有小文字“Gen by 👸号：AIGC创意猎人”
 
 ![](img/2ad68e86d570ce2ce3178cf80b182276.png)
 
@@ -314,9 +314,9 @@ UI设计过程
 
 > **众星捧月的“生态圈”。** 确立一个绝对 C 位的主角（Hero Object），周围密密麻麻地环绕着与其相关的配件或装备，强调核心地位与系统的丰富性。
 
-> [Astronaut] Astronaut gear ecosystem, radial layout. Center: Astronaut Helmet. Surrounding: hundreds of items including oxygen tanks, gloves, boots, freeze-dried food packets, mission patches, tools filling the background. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 公众号：AIGC创意猎人" written at the bottom center
+> [Astronaut] Astronaut gear ecosystem, radial layout. Center: Astronaut Helmet. Surrounding: hundreds of items including oxygen tanks, gloves, boots, freeze-dried food packets, mission patches, tools filling the background. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 👸号：AIGC创意猎人" written at the bottom center
 
-> [Astronaut]宇航员装备生态系统，放射状布局。中心：宇航员头盔。周围：数百件物品，包括氧气瓶、手套、靴子、冻干食品包、任务徽章、工具等，填满背景。采用Knolling风格，Bento网格排列，严格的正投影俯视图，平铺，排列紧密，填满画面边缘，无空白空间，超细节，柔和均匀的摄影棚灯光，8K分辨率，超写实，底部中心有小文字“Gen by 公众号：AIGC创意猎人”
+> [Astronaut]宇航员装备生态系统，放射状布局。中心：宇航员头盔。周围：数百件物品，包括氧气瓶、手套、靴子、冻干食品包、任务徽章、工具等，填满背景。采用Knolling风格，Bento网格排列，严格的正投影俯视图，平铺，排列紧密，填满画面边缘，无空白空间，超细节，柔和均匀的摄影棚灯光，8K分辨率，超写实，底部中心有小文字“Gen by 👸号：AIGC创意猎人”
 
 ![](img/806835ee332ec04adfc910d7a6760f05.png)
 
@@ -360,9 +360,9 @@ UI设计过程
 
 > **治愈强迫症的“视觉按摩”。** 利用海量的同类物品，严格按照颜色光谱（红→紫）或材质明暗进行无缝拼接与过渡，追求极致的秩序感与流动美。
 
-> [Succulents] Succulent plant collection, color gradient. Hundreds of succulent plants arranged by color gradient from dark green to light green to pink to purple to red, filling the entire frame. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, mosaic effect, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 公众号：AIGC创意猎人" written at the bottom center
+> [Succulents] Succulent plant collection, color gradient. Hundreds of succulent plants arranged by color gradient from dark green to light green to pink to purple to red, filling the entire frame. Knolling style, Bento grid organization, strict orthographic top-down view, flat lay, densely packed, filling the frame edge-to-edge, no empty space, mosaic effect, hyper-detailed, soft even studio lighting, 8k resolution, hyper-realistic, small text "Gen by 👸号：AIGC创意猎人" written at the bottom center
 
-> [多肉植物] 多肉植物集合，色彩渐变。数百株多肉植物按照从深绿到浅绿，再到粉色、紫色、红色的色彩渐变排列，填满整个画面。采用陈列式风格、便当网格布局，严格的正投影俯视视角，平铺排列，密集紧凑，画面边缘无缝填充，没有空白，呈现出马赛克效果，超细节，柔和均匀的摄影棚灯光，8K分辨率，超写实，底部中央有小文字“Gen by 公众号：AIGC创意猎人”
+> [多肉植物] 多肉植物集合，色彩渐变。数百株多肉植物按照从深绿到浅绿，再到粉色、紫色、红色的色彩渐变排列，填满整个画面。采用陈列式风格、便当网格布局，严格的正投影俯视视角，平铺排列，密集紧凑，画面边缘无缝填充，没有空白，呈现出马赛克效果，超细节，柔和均匀的摄影棚灯光，8K分辨率，超写实，底部中央有小文字“Gen by 👸号：AIGC创意猎人”
 
 ![](img/787fa1ef84e2c2962b08d002f8877131.png)
 

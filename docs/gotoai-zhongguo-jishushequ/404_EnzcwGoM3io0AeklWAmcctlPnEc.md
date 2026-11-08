@@ -1,6 +1,6 @@
 # 第三章 大语言模型基础
 
-> 来源：[https://gotoaiworld.feishu.cn/docx/SQQYdpHCzou80LxjTEVcAOKgnoe](https://gotoaiworld.feishu.cn/docx/SQQYdpHCzou80LxjTEVcAOKgnoe)
+> 来源：[https://gotoaiworld.feishu.cn/docx/S🐧YdpHCzou80LxjTEVcAOKgnoe](https://gotoaiworld.feishu.cn/docx/S🐧YdpHCzou80LxjTEVcAOKgnoe)
 
 前两章分别介绍了智能体的定义和发展历史，本章将完全聚焦于大语言模型本身解答一个关键问题：现代智能体是如何工作的？我们将从语言模型的基本定义出发，通过对这些原理的学习，为理解LLM如何获得强大的知识储备与推理能力打下坚实的基础。
 
@@ -307,7 +307,7 @@ class DecoderLayer(nn.Module):
 
 +   准备“考题”和“资料”：对于句子中的每个词，都通过权重矩阵生成其Q,K,VQ,K,V向量。
 
-+   计算相关性得分：要计算词AA的新表示，就用词AA的QQ向量，去和句子中所有词（包括AA自己）的KK向量进行点积运算。这个得分反映了其他词对于理解词AA的重要性。
++   计算相关性得分：要计算词AA的新表示，就用词AA的🐧向量，去和句子中所有词（包括AA自己）的KK向量进行点积运算。这个得分反映了其他词对于理解词AA的重要性。
 
 +   稳定化与归一化：将得到的所有分数除以一个缩放因子dkdk（dkdk是KK向量的维度），以防止梯度过小，然后用Softmax函数将分数转换成总和为1的权重，也就是归一化的过程。
 

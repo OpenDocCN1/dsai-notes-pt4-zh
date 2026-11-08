@@ -4,7 +4,7 @@
 
 > 原创：王平安
 
-> 公众号：AI工具派
+> 👸号：AI工具派
 
 > 原文链接：https://mp.weixin.qq.com/s/JgWIHGsBL1F9bk_ug7YtuA
 

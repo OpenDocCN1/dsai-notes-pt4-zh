@@ -628,7 +628,7 @@ While pre-training (and “full finetuning”) requires applying gradient update
 
 Resources: 资源：
 
-+   [LoRA paper walk](https://youtu.be/dA-NhCtrrVE?si=TpJkPfYxngQQ0iGj)through (video, part 1)
++   [LoRA paper walk](https://youtu.be/dA-NhCtrrVE?si=TpJkPfYxng🐧0iGj)through (video, part 1)
 LoRA 论文演练（视频，第 1 部分）
 
 +   LoRA code demo [(video, part 2)](https://youtu.be/iYr1xZn26R8?si=aG0F8ws9XslpZ4ur)
@@ -897,9 +897,9 @@ Here w[e’ll look](https://developer.nvidia.com/blog/mastering-llm-techniques-i
 
 ## Chapter 35: Parameter Quantization 第35章：参数量化
 
-With the rapi[d increas](https://timdettmers.com/2022/08/17/llm-int8-and-emergent-features/)e in p[aram](https://www.tensorops.ai/post/what-are-quantized-llms)eter counts for leadin[g LL](https://www.maartengrootendorst.com/blog/quantization/)Ms and difficulties (both in cost and availability) in acquiring GPUs to run models on, there’s been a growing interest in quantizing LLM weights to use fewer bits each, which can often yield comparable output quality with a 50-75% (or more) reduction in required memory. Typically this shouldn’t be done naively; Tim Dettmers, one of the pioneers of several modern quantization methods (LLM.int8(), QLoRA, bitsandbytes) has a great blog post for understanding quantization principles, and the need for mixed-precision quantization as it relates to emergent features in large-model training. Other popular methods and formats are GGUF (for llama.cpp), AWQ, HQQ, and GPTQ; see this post from TensorOps for an overview, and this post from Maarten Grootendorst for a discussion of their tradeoffs.
+With the rapi[d increas](https://timdettmers.com/2022/08/17/llm-int8-and-emergent-features/)e in p[aram](https://www.tensorops.ai/post/what-are-quantized-llms)eter counts for leadin[g LL](https://www.maartengrootendorst.com/blog/quantization/)Ms and difficulties (both in cost and availability) in acquiring GPUs to run models on, there’s been a growing interest in quantizing LLM weights to use fewer bits each, which can often yield comparable output quality with a 50-75% (or more) reduction in required memory. Typically this shouldn’t be done naively; Tim Dettmers, one of the pioneers of several modern quantization methods (LLM.int8(), QLoRA, bitsandbytes) has a great blog post for understanding quantization principles, and the need for mixed-precision quantization as it relates to emergent features in large-model training. Other popular methods and formats are GGUF (for llama.cpp), AWQ, H🐧, and GPTQ; see this post from TensorOps for an overview, and this post from Maarten Grootendorst for a discussion of their tradeoffs.
 
-随着领先LLMs参数数量的快速增加以及获取GPU来运行模型的困难（成本和可用性方面），人们对量化LLM权重越来越感兴趣每个位数更少，通常可以产生相当的输出质量，同时所需内存减少 50-75%（或更多）。通常这不应该天真地完成； Tim Dettmers 是多种现代量化方法（LLM.int8()、QLoRA、bitsandbytes）的先驱之一，他发表了一篇很棒的博客文章，介绍了量化原理以及混合精度量化的必要性大型模型训练中的新兴特征。其他流行的方法和格式有 GGUF（对于 llama.cpp）、AWQ、HQQ 和 GPTQ；请参阅 TensorOps 的这篇文章来了解概述，以及 Maarten Grootendorst 的这篇文章来讨论它们的权衡。
+随着领先LLMs参数数量的快速增加以及获取GPU来运行模型的困难（成本和可用性方面），人们对量化LLM权重越来越感兴趣每个位数更少，通常可以产生相当的输出质量，同时所需内存减少 50-75%（或更多）。通常这不应该天真地完成； Tim Dettmers 是多种现代量化方法（LLM.int8()、QLoRA、bitsandbytes）的先驱之一，他发表了一篇很棒的博客文章，介绍了量化原理以及混合精度量化的必要性大型模型训练中的新兴特征。其他流行的方法和格式有 GGUF（对于 llama.cpp）、AWQ、H🐧 和 GPTQ；请参阅 TensorOps 的这篇文章来了解概述，以及 Maarten Grootendorst 的这篇文章来讨论它们的权衡。
 
 In addition to enabling inference on smaller machines, quantization is also popular for parameter-efficient trainin[g; i](https://www.youtube.com/watch?v=fQirE9N5q_Y)[n QL](https://huggingface.co/blog/4bit-transformers-bitsandbytes)oRA, most weights a[re quanti](https://www.answer.ai/posts/2024-03-14-fsdp-qlora-deep-dive.html)zed to 4-bit precision and frozen, while active LoRA adapters are trained in 16-bit precision. See this talk from Tim Dettmers, or this blog from Hugging Face for overviews. This blog post from Answer.AI also shows how to combine QLoRA with FSDP for efficient finetuning of 70B+ parameter models on consumer GPUs.
 

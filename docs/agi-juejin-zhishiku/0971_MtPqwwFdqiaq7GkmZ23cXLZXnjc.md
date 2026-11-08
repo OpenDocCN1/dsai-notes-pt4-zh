@@ -88,7 +88,7 @@ Meta AI 和大学合作者于2021年推出了检索增强生成，以解决 LLM 
 
 **向量检索实验室**
 
-微信号：VectorSearch
+🛰️号：VectorSearch
 
 扫码关注 了解更多
 

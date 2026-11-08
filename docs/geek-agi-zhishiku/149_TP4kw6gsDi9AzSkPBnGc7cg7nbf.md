@@ -80,5 +80,5 @@
 | DeepSeek + 本地知识库的部署  【来源：5ycode】 | ![](img/14ee87db68227291bd0e97ab50723d15.png) | https://mp.weixin.qq.com/s/IKoBga2iKfpkdD4Qgy8iLg |
 | 本地部署视频教程 | 方法一：使用ollama+PageAssist 插件部署 | https://www.bilibili.com/video/BV1NBfSYMEG8/ |
 |  | 方法二：使用 LM Studio部署 | https://www.bilibili.com/video/BV1NGf2YtE8r/ |
-| Deepseek 接入微信【喂饭版】 |  | https://mp.weixin.qq.com/s/mk5D8YedWzC0yTjiiZ1H5Q |
+| Deepseek 接入🛰️【喂饭版】 |  | https://mp.weixin.qq.com/s/mk5D8YedWzC0yTjiiZ1H5Q |
 | 一个超实用脚本，让你的DeepSeek自动重试解放双手。 |  | https://mp.weixin.qq.com/s/t8lyNZ0sOkd0XsicYPF0-Q |

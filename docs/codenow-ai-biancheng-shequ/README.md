@@ -18,7 +18,7 @@
 
 #### [使用Skills把你的工作流变成可复用的AI能力单元](https://qwyofiv4bd3.feishu.cn/wiki/Fd7JwrflwiXC9pksKHfcVg58nJe)
 
-**训练营小助手微信**
+**训练营小助手🛰️**
 
 ![](img/06a643b4d0a68be380568996a94b015f.png)
 
@@ -140,13 +140,13 @@ MiX Copilot 联合创始人
 
 前华为人机交互实验室高级工程师、小鹏资深交互设计师、百度高级交互设计师。
 
-公众号：
+👸号：
 
 ![](img/215ba47d2c308ae28e1ed1759a6a4751.png)
 
-小红书：@薛志荣
+📕：@薛志荣
 
-微信：
+🛰️：
 
 ![](img/bf90585d094835f8d5f6ee7b325afb9d.png)
 
@@ -160,13 +160,13 @@ MiX Copilot 联合创始人
 
 毕业于上海交通大学、同济大学，蚂蚁集团高级前端架构师，负责服务日活上亿用户的支付宝智能UI引擎，数字人创新项目
 
-小红书：@shadow带你做实验
+📕：@shadow带你做实验
 
-公众号：
+👸号：
 
 ![](img/f6f494058b27a545fd834b7ce6624fc3.png)
 
-## CodeNow 公众号
+## CodeNow 👸号
 
 ![](img/90d1864cdd0ba5ac3e57266ead1803b9.png)
 

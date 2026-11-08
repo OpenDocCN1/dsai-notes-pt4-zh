@@ -82,7 +82,7 @@ AI时代，蒙牛正在借助AI驱动新智生产力
 
 阿里设计团队正在如何用AI为企业做设计
 
-### 优质公众号推荐**：**
+### 优质👸号推荐**：**
 
 机器之心
 
@@ -141,7 +141,7 @@ AI新榜
 | [AI绘画](https://waytoagi.feishu.cn/wiki/Q5ddwxfkMiVUZBkQXN7cgXf4nOb) | [AI视频](https://waytoagi.feishu.cn/wiki/SPXQwl5TXiau0mkKb1zcqHxVnEm) | [AI音乐](https://waytoagi.feishu.cn/wiki/P7N8wwy0tirs79klAgJc6FlCn0d) |
 | [AI数字人](https://waytoagi.feishu.cn/wiki/IOO6wQKDKiMrmzk1oDxcGFpFnFh) | [AI 3D](https://waytoagi.feishu.cn/wiki/TRJEwdbQEiJjvykq8nJc6juvn6g) | - |
 | [AI工具精选](https://waytoagi.feishu.cn/wiki/XCiTww8c6iEPyWkDa7IcWAv3n7g?table=tbldn9PphRqWcB2X&amp;view=vewlWAyVx6) | [AI行业报告](https://waytoagi.feishu.cn/wiki/WvhZwk16WiEnSvk8AcpcdZetnMe?table=ldxthSdnltXbtSvg) | [AI视频精选](https://waytoagi.feishu.cn/wiki/LEnvwwEy0iufT3k4kfVc8Ehenvf?table=tbllpoPWJn6MNOR6&amp;view=vew68BlUHo) |
-| [AI好图分享](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblyh76bHrCi4PXq&amp;view=vewUunvDn1) | [AI书籍推荐](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbl2sA7TLn8L4uYp&amp;view=vewjfsOgyJ) | [AI信息源](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblgixk9XUcxuSFa&amp;view=vewfKOofLh) |
+| [AI好图分享](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblyh76bHrCi4PXq&amp;view=vewUunvDn1) | [AI书籍推荐](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl2sA7TLn8L4uYp&amp;view=vewjfsOgyJ) | [AI信息源](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblgixk9XUcxuSFa&amp;view=vewfKOofLh) |
 
 [ 写出高质量 Prompt](https://langgptai.feishu.cn/wiki/C9i7wrU4eir4BmkIgQucUYUQndd)丨[高质Prompt合集](https://langgptai.feishu.cn/wiki/JCZHwwrsOizzaOktD4fcuGbFnzg)丨[李继刚Prompt合集](https://waytoagi.feishu.cn/wiki/OWTow2oPViaMZ4ky2CKcRI30nGg)丨
 

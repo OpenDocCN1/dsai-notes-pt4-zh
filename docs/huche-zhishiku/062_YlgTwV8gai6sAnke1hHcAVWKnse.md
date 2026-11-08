@@ -446,7 +446,7 @@ Bag Fight 的问题
 
 ![](img/5febc22af716ff761079c04ebe0f75d9.png)
 
-配图是 2024 年 10 月的微信小游戏畅销榜 Top30。
+配图是 2024 年 10 月的🛰️小游戏畅销榜 Top30。
 
 曾老师想说的是，榜上的这些产品，和我们草台班子没关系。
 
@@ -486,7 +486,7 @@ Bag Fight 的问题
 
 关注行业会议是重要的环节，跟随平台给出的建议，往往能得到事半功倍的效果。
 
-[例如昨天我写的根据两大平台建议，关注](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656293326&idx=1&sn=94827271c03b82d09fa6de628c8c32a5&scene=21#wechat_redirect)垂直品类的文章，可以参考： 什么是垂类？为什么要关注垂类？分析抖音微信年度大会后的2025小游戏立项思考
+[例如昨天我写的根据两大平台建议，关注](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656293326&idx=1&sn=94827271c03b82d09fa6de628c8c32a5&scene=21#wechat_redirect)垂直品类的文章，可以参考： 什么是垂类？为什么要关注垂类？分析抖音🛰️年度大会后的2025小游戏立项思考
 
 ![](img/45104825bfebace85633812f5487140c.png)
 
@@ -494,25 +494,25 @@ Bag Fight 的问题
 
 +   GameX·FIRE 2025巨量引擎小游戏生态大会直播
 
-+   2025微信公开课PRO小游戏专场直播文字PPT实录
++   2025🛰️公开课PRO小游戏专场直播文字PPT实录
 
-+   [IAA小游戏之什么值得做：逆袭和塔防—](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292775&idx=1&sn=475552d19adcbb60ac5a86e7361e9bc1&scene=21#wechat_redirect)—2024腾讯广告IAA微信小游戏私享会
++   [IAA小游戏之什么值得做：逆袭和塔防—](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292775&idx=1&sn=475552d19adcbb60ac5a86e7361e9bc1&scene=21#wechat_redirect)—2024腾讯广告IAA🛰️小游戏私享会
 
 +   抖音小游戏发行人计划，排行榜上的直播和短视频标签，可能是错的
 
-+   微信视频号互选平台 VS 星图游戏发行人
++   🛰️视频号互选平台 VS 星图游戏发行人
 
-+   消除类小游戏前中后期调优细则——2024腾讯广告IAA微信小游戏私享会
++   消除类小游戏前中后期调优细则——2024腾讯广告IAA🛰️小游戏私享会
 
-+   [IAA小游戏之什么值得做：逆袭和塔防—](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292775&idx=1&sn=475552d19adcbb60ac5a86e7361e9bc1&scene=21#wechat_redirect)—2024腾讯广告IAA微信小游戏私享会
++   [IAA小游戏之什么值得做：逆袭和塔防—](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292775&idx=1&sn=475552d19adcbb60ac5a86e7361e9bc1&scene=21#wechat_redirect)—2024腾讯广告IAA🛰️小游戏私享会
 
-+   2024微信公开课小游戏开发者大会PPT（部分）
++   2024🛰️公开课小游戏开发者大会PPT（部分）
 
-+   2024微信小游戏开发者大会逐字稿
++   2024🛰️小游戏开发者大会逐字稿
 
 +   IAA异军突起，基于抖小IAA用户研究报告的立项思路分析
 
-+   让创造产生价值：2024(武汉)微信小游戏公开课IAA专场实录
++   让创造产生价值：2024(武汉)🛰️小游戏公开课IAA专场实录
 
 +   智游破浪启迪未来：2024抖音IAA小游戏生态大会实录
 

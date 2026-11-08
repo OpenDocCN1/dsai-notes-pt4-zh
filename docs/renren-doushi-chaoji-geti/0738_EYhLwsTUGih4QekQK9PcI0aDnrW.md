@@ -86,7 +86,7 @@
 
 这是针对**”是否要来义乌“**发布的视频，可以直接跳转看：
 
-48 【带人游学逛义乌新赛道？轻创业到义乌怎么样？ - 年轻朋友阿甜 | 小红书 - 你的生活指南】 😆 XOlzMTy9QutmBkp 😆 https://www.xiaohongshu.com/discovery/item/67052233000000002c0172bd?source=webshare&xhsshare=pc_web&xsec_token=ABNbZHFESUe8Mo-vOTc5PK4O9bpuwinUZtWhF_R1j9jBU=&xsec_source=pc_share
+48 【带人游学逛义乌新赛道？轻创业到义乌怎么样？ - 年轻朋友阿甜 | 📕 - 你的生活指南】 😆 XOlzMTy9QutmBkp 😆 https://www.xiaohongshu.com/discovery/item/67052233000000002c0172bd?source=webshare&xhsshare=pc_web&xsec_token=ABNbZHFESUe8Mo-vOTc5PK4O9bpuwinUZtWhF_R1j9jBU=&xsec_source=pc_share
 
 ![](img/23fe428def44f179df92ee73fb33d031.png)
 
@@ -268,7 +268,7 @@
 
 > **具体可以参考这条笔记：**
 
-56 【👉义乌的搞钱信息都在公告栏上！ - 阿甜义乌创业录 | 小红书 - 你的生活指南】 😆 bmJATf60oXqWB1j 😆 https://www.xiaohongshu.com/discovery/item/652b5aaf000000001e00d58e?source=webshare&xhsshare=pc_web&xsec_token=ABhSducNRp3TvRQsjvX-xM4oV_GRNAiCObMVbVx6FfRkU=&xsec_source=pc_share
+56 【👉义乌的搞钱信息都在公告栏上！ - 阿甜义乌创业录 | 📕 - 你的生活指南】 😆 bmJATf60oXqWB1j 😆 https://www.xiaohongshu.com/discovery/item/652b5aaf000000001e00d58e?source=webshare&xhsshare=pc_web&xsec_token=ABhSducNRp3TvRQsjvX-xM4oV_GRNAiCObMVbVx6FfRkU=&xsec_source=pc_share
 
 ![](img/2927ec36c27ade73b28f915c61a44d00.png)
 
@@ -310,7 +310,7 @@
 
 简单说说【无货源】模式：
 
-就是1688或者拼多多的货，放到淘宝或者小红书去卖赚差价
+就是1688或者拼多多的货，放到淘宝或者📕去卖赚差价
 
 倒爷也是一样
 
@@ -334,7 +334,7 @@
 
 1、去商贸城拍视频，看到什么拍什么，至少给网上的人知道你能做这事，你能找货，让别人主动提出需求
 
-2、在小红书帖子去找评论区，看看想要创业的人都想要求什么货，你就去拍那种类型的产品吸引他们
+2、在📕帖子去找评论区，看看想要创业的人都想要求什么货，你就去拍那种类型的产品吸引他们
 
 要记住：我们刚开始做，选品思维是比较薄弱的，不要觉得你选择的就是大家喜欢的
 
@@ -346,7 +346,7 @@
 
 但是目前我观察下来，e人比较适合做走播
 
-959 【义乌走播，是小白轻创业的方式吗？ - 阿甜义乌创业录 | 小红书 - 你的生活指南】 😆 GaUfPqA9JNtgrNB 😆 https://www.xiaohongshu.com/discovery/item/6704ad02000000001b020c26?source=webshare&xhsshare=pc_web&xsec_token=ABWDldV0AmYO1qeM5zjlaOXXzHufE3NEmFr_2B6UtImXg=&xsec_source=pc_share
+959 【义乌走播，是小白轻创业的方式吗？ - 阿甜义乌创业录 | 📕 - 你的生活指南】 😆 GaUfPqA9JNtgrNB 😆 https://www.xiaohongshu.com/discovery/item/6704ad02000000001b020c26?source=webshare&xhsshare=pc_web&xsec_token=ABWDldV0AmYO1qeM5zjlaOXXzHufE3NEmFr_2B6UtImXg=&xsec_source=pc_share
 
 ![](img/cd41f85e73d2537f8b0c359c29215181.png)
 
@@ -354,7 +354,7 @@
 
 走播一般是在商贸城里的一区——饰品小玩意居多，利润高的地方
 
-1、建议最好有一个自己的账号，小红书抖音都可以（目前小红书有自然流，可以试试）
+1、建议最好有一个自己的账号，📕抖音都可以（目前📕有自然流，可以试试）
 
 2、和老板说好你们的合作方式，你就在他的门店直接直播卖货的方式
 
@@ -366,7 +366,7 @@
 
 ### 走播不轻松
 
-走播难度如何？虽然小红书很多都在说走播，也算是一个低门槛启动的方式
+走播难度如何？虽然📕很多都在说走播，也算是一个低门槛启动的方式
 
 但是它一定不轻松！
 
@@ -404,7 +404,7 @@
 
 但是外语主播有个问题：一般是晚上到半夜上播，算是在国内的外国时间
 
-63 【义乌培训西班牙语主播，跨境贸易直播新宠 - 阿甜义乌创业录 | 小红书 - 你的生活指南】 😆 iZ7NtRgq9Y1p5bp 😆 https://www.xiaohongshu.com/discovery/item/670f893b0000000026036fe9?source=webshare&xhsshare=pc_web&xsec_token=ABoHzeYEF2rdYe7L6BwoO2Ps7sX1k0jmU9nDOtw1Qj5UQ=&xsec_source=pc_share
+63 【义乌培训西班牙语主播，跨境贸易直播新宠 - 阿甜义乌创业录 | 📕 - 你的生活指南】 😆 iZ7NtRgq9Y1p5bp 😆 https://www.xiaohongshu.com/discovery/item/670f893b0000000026036fe9?source=webshare&xhsshare=pc_web&xsec_token=ABoHzeYEF2rdYe7L6BwoO2Ps7sX1k0jmU9nDOtw1Qj5UQ=&xsec_source=pc_share
 
 ![](img/f69dadba02387536413c20db91ae3383.png)
 
@@ -446,7 +446,7 @@
 
 现在各行各业都在公域平台增加自己的曝光和流量
 
-比如我们熟悉的抖音、小红书平台，给他们产品做宣传和曝光的
+比如我们熟悉的抖音、📕平台，给他们产品做宣传和曝光的
 
 有的公司有运营岗位或者需要代运营，都是基于自媒体运营的
 
@@ -474,7 +474,7 @@
 
 你要把这些信息全部用起来，卖出来！
 
-如果能开个账号发小红书、抖音就说外卖小哥在义乌的信息差，是不错的方向
+如果能开个账号发📕、抖音就说外卖小哥在义乌的信息差，是不错的方向
 
 ## 手工活
 
@@ -500,7 +500,7 @@
 
 ### 商贸城分区
 
-这里大家可以小红书搜索：商贸城分区，因为非常丰富
+这里大家可以📕搜索：商贸城分区，因为非常丰富
 
 但是你是一两天是逛不完的，一年也是逛不完的
 
@@ -528,7 +528,7 @@
 
 ### 商贸城记名片和产品方法
 
-73 【逛义乌商贸城？完全忘了产品和名片怎么办？ - 阿甜义乌创业录 | 小红书 - 你的生活指南】 😆 yLj6KGrFmc6NPF4 😆 https://www.xiaohongshu.com/discovery/item/663eef21000000001e03196a?source=webshare&xhsshare=pc_web&xsec_token=ABm_50ko-_y2D151RnNWSQvw8a4xhiP-nHbSwLWtWey_Y=&xsec_source=pc_share
+73 【逛义乌商贸城？完全忘了产品和名片怎么办？ - 阿甜义乌创业录 | 📕 - 你的生活指南】 😆 yLj6KGrFmc6NPF4 😆 https://www.xiaohongshu.com/discovery/item/663eef21000000001e03196a?source=webshare&xhsshare=pc_web&xsec_token=ABm_50ko-_y2D151RnNWSQvw8a4xhiP-nHbSwLWtWey_Y=&xsec_source=pc_share
 
 ![](img/e2a41c55a28077e864eecb03bffddea4.png)
 
@@ -594,7 +594,7 @@
 
 ![](img/9b0c3f9d03b0236fa923926374e0400c.png)
 
-79 【义乌夜市，价格震惊！简直是线下拼xx！ - 阿甜义乌创业录 | 小红书 - 你的生活指南】 😆 7vOWdpOGOUXQdRR 😆 https://www.xiaohongshu.com/discovery/item/66cb2882000000001d03b950?source=webshare&xhsshare=pc_web&xsec_token=ABLcOYC1hJyyNU750LB42htUkrnvAp4-OpRs8a8lkMTxk=&xsec_source=pc_share
+79 【义乌夜市，价格震惊！简直是线下拼xx！ - 阿甜义乌创业录 | 📕 - 你的生活指南】 😆 7vOWdpOGOUXQdRR 😆 https://www.xiaohongshu.com/discovery/item/66cb2882000000001d03b950?source=webshare&xhsshare=pc_web&xsec_token=ABLcOYC1hJyyNU750LB42htUkrnvAp4-OpRs8a8lkMTxk=&xsec_source=pc_share
 
 ![](img/fa1e896fe3d9bcf03ff4734dfdf47f16.png)
 
@@ -674,7 +674,7 @@
 
 ## 从1688联系是否有工厂能参观
 
-## 在小红书找线下沙龙交流
+## 在📕找线下沙龙交流
 
 如果在义乌三天时间，可以卡着时间来，如果是纯逛是逛不出什么名堂的
 
@@ -710,7 +710,7 @@
 
 # 我们刚到义乌的心态和想法
 
-**去义乌前没有**查任何攻略，小红书没看、抖音也没看，当时的想法：
+**去义乌前没有**查任何攻略，📕没看、抖音也没看，当时的想法：
 
 1、要做自己的生意，义乌可以去看看，毕竟有个商贸城
 
@@ -732,7 +732,7 @@
 
 **最开始和绝**大多数大家的第一站一样——国际商贸城
 
-商贸城有五个区，大部分都会去一区，都是饰品、配件，就是小红书出现最多的片区
+商贸城有五个区，大部分都会去一区，都是饰品、配件，就是📕出现最多的片区
 
 **其他的**汽配、新能源、宠物等，我们逛了，也是一脸懵
 
@@ -778,7 +778,7 @@
 
 但是我理性了：
 
-逛**了很多次商贸城，虽然每**次去都能看到新鲜店铺、加到老板微信、还能录不少视频，但是我不再冲动拿货也不再那么兴奋了！因为这里就是一个巨大供应链，东西再多不是你的，东西再便宜你没有卖出去都没有意义。反而会看到这里一座金矿，但是你竟然守着ta不赚钱，会觉得自己的无力以及可惜
+逛**了很多次商贸城，虽然每**次去都能看到新鲜店铺、加到老板🛰️、还能录不少视频，但是我不再冲动拿货也不再那么兴奋了！因为这里就是一个巨大供应链，东西再多不是你的，东西再便宜你没有卖出去都没有意义。反而会看到这里一座金矿，但是你竟然守着ta不赚钱，会觉得自己的无力以及可惜
 
 **现在那里对我的意义是：**拍视频好的背景图！是游学的必备一站！加到老板，如果有一天有人要货有资源！就是很值得的！
 
@@ -794,7 +794,7 @@ https://www.bilibili.com/video/BV1cu411e7Tq/?vd_source=cd57d3a123a254526b23c45b1
 
 老板娘也知道你拿不了多少，所以态度也比较冷淡
 
-所以这也是为什么小红书很多人都说商贸城老板态度不好
+所以这也是为什么📕很多人都说商贸城老板态度不好
 
 因为他们的店铺几百万，之前都是走【批发】，零售小单他们看不上
 
@@ -838,7 +838,7 @@ but，
 
 根本不懂什么是货架电商？什么是兴趣电商？我之前深圳的职场世界哪里听过这样的词？
 
-淘宝、拼多多、小红书、抖音、快手，要做什么，怎么做？
+淘宝、拼多多、📕、抖音、快手，要做什么，怎么做？
 
 但是就如前面说，最快的方式是【摆摊】和用户面对面，还能加不少人
 
@@ -1368,7 +1368,7 @@ https://www.bilibili.com/video/BV13u4y1r7PH/?vd_source=cd57d3a123a254526b23c45b1
 
 > 4、里面也可以直接直播，也可以拍视频对接，他们都很欢迎
 
-> 5、他们的销冠送一辆奔驰作为鼓励，销售都是在小红书引流，然后收钱
+> 5、他们的销冠送一辆奔驰作为鼓励，销售都是在📕引流，然后收钱
 
 > 6、后来发现这个并不是好生意，因为囤货量特别大，当然这些老板都很有钱，无所谓
 
@@ -1378,7 +1378,7 @@ https://www.bilibili.com/video/BV1z84y117Be/?vd_source=cd57d3a123a254526b23c45b1
 
 ## 接直播运营副业
 
-那时候也是自由职业状态，主线恐怕只有小红书、直播运营了
+那时候也是自由职业状态，主线恐怕只有📕、直播运营了
 
 正好有之前的同事也会找到承接一些合作，给教授搭建直播间+中控运营就是中间尝试副业的一部分
 
@@ -1404,11 +1404,11 @@ https://www.bilibili.com/video/BV1Fu4y1C797/?share_source=copy_web&vd_source=17e
 
 > 在义乌说“看看品”，就是看看你的货的意思
 
-又因为自己喜欢串珠，就想要给老板在小红书打一下这个品
+又因为自己喜欢串珠，就想要给老板在📕打一下这个品
 
-在小红书同步开始做【珠子】图文内容， 也找了二十多个伙伴一起用我的sop跑，没想到效果很不错
+在📕同步开始做【珠子】图文内容， 也找了二十多个伙伴一起用我的sop跑，没想到效果很不错
 
-后来把这个sop放到**【生财有术】社群**，还拿到了龙珠精华帖，价值一万多！
+后来把这个sop放到**【龙哥盟】社群**，还拿到了龙珠精华帖，价值一万多！
 
 当然我也放到了我的星球，但是内容比较多，这部分和此文档差距较大，就不展开了
 
@@ -1668,7 +1668,7 @@ https://www.bilibili.com/video/BV14N411u7rh/?vd_source=cd57d3a123a254526b23c45b1
 
 **货架电商：**就像超市货架一样的，喜欢就买走了，不在乎是小商场还是大超市，以拼多多、淘宝、京东为代表
 
-**兴趣电商：**没讲到的时候可能不太感兴趣，但是喜欢的博主在推荐，可能会心动了，以小红书、抖音为主
+**兴趣电商：**没讲到的时候可能不太感兴趣，但是喜欢的博主在推荐，可能会心动了，以📕、抖音为主
 
 因为我们当时在做抖音和视频号直播，主要是视频号为主，所以也打算试试拼多多
 
@@ -1716,7 +1716,7 @@ https://www.bilibili.com/video/BV1Hp4y1d743/?vd_source=cd57d3a123a254526b23c45b1
 
 >
 
-> 2、因为没有经验所有什么都是从0开始，虽然学习到很多东西，但是也浪费时间；那时候没有什么付费意识，只有朋友带着，现在市场上的圈子，比如群响啊，比如生财有术啊，我都舍不得进。也许那时候进去花钱问别人会更快。现在就学聪明了，如果不懂，他们也正好想问我业务的话，就做一个交换价值了
+> 2、因为没有经验所有什么都是从0开始，虽然学习到很多东西，但是也浪费时间；那时候没有什么付费意识，只有朋友带着，现在市场上的圈子，比如群响啊，比如龙哥盟啊，我都舍不得进。也许那时候进去花钱问别人会更快。现在就学聪明了，如果不懂，他们也正好想问我业务的话，就做一个交换价值了
 
 >
 
@@ -1854,31 +1854,31 @@ https://www.bilibili.com/video/BV1qx4y1t7ov/?vd_source=cd57d3a123a254526b23c45b1
 
 ![](img/d3b19cc90dafe8d79cdd9615bee91977.png)
 
-## 给义乌厂家做小红书运营培训
+## 给义乌厂家做📕运营培训
 
 > 因为前面参加了很多活动，认识了一些义乌老板，所以有了一些合作：
 
 > 1、厂二代IP出海：就是把人物IP克隆后分发到海外平台，做产品对接和批发
 
-> 2、义乌产品做小红书引流：接到的是一家车企，低粉高变现的模式和玩法
+> 2、义乌产品做📕引流：接到的是一家车企，低粉高变现的模式和玩法
 
-> 3、教义乌厂家做小红书，引流b端客户，卖生产机器
+> 3、教义乌厂家做📕，引流b端客户，卖生产机器
 
 > 这些也是电商之后的探索和摸索
 
-> 做小红书、做抖音IP、对接工厂，其实这条路其实也是很大的市场
+> 做📕、做抖音IP、对接工厂，其实这条路其实也是很大的市场
 
-> 而且现在小红书和义乌都在加大力度推义乌电商发展
+> 而且现在📕和义乌都在加大力度推义乌电商发展
 
-在义乌做小红书，打一个新的市场，听起来是很诱惑的，为什么又没有做呢？
+在义乌做📕，打一个新的市场，听起来是很诱惑的，为什么又没有做呢？
 
-1、义乌对小红书这个新平台还是不信任阶段，因为他们是靠抖音起家的，小红书太小看不上。而且投流时，客户有选择性，不像抖音那么：暴力！
+1、义乌对📕这个新平台还是不信任阶段，因为他们是靠抖音起家的，📕太小看不上。而且投流时，客户有选择性，不像抖音那么：暴力！
 
-2、小红书以内容为王，对义乌暴力玩法的生态来说，是相反的逻辑
+2、📕以内容为王，对义乌暴力玩法的生态来说，是相反的逻辑
 
-3、没有理由再有一个小红书团队来卖相同的产品，而且投产非常不确定
+3、没有理由再有一个📕团队来卖相同的产品，而且投产非常不确定
 
-4、义乌老板对小红书运营、代运营都觉得是韭菜方式，我们也就懒得解释了
+4、义乌老板对📕运营、代运营都觉得是韭菜方式，我们也就懒得解释了
 
 5、有付费意识的非常少，都是免费给思路和全案，做起来没有奔头
 
@@ -1890,11 +1890,11 @@ https://www.bilibili.com/video/BV16W42197MB/?vd_source=cd57d3a123a254526b23c45b1
 
 7月，前同事创业做海外市场，内容出海，找到我做交付，那时候开始做基本盘
 
-核心业务是小红书海外代运营和定位全案
+核心业务是📕海外代运营和定位全案
 
 一是因为我也是【三节课】IP讲师
 
-再一个是因为也是在前公司唯一一个做小红书的，所以业务就分给我做了
+再一个是因为也是在前公司唯一一个做📕的，所以业务就分给我做了
 
 和他们沟通开始了解大陆以外的营销、产品、出海市场
 
@@ -1924,7 +1924,7 @@ https://www.bilibili.com/video/BV1GbxFe5ENY/?vd_source=cd57d3a123a254526b23c45b1
 
 > 不过这个尝试好的是，至少我们走过了这条路，知道了潜在用户的的反馈
 
-48 【义乌西班牙语🇪🇸主播，我们先冲 - 阿甜义乌创业录 | 小红书 - 你的生活指南】 😆 vEkXjS0x64Ef8zN 😆 https://www.xiaohongshu.com/discovery/item/6727086f000000001b01383e?source=webshare&xhsshare=pc_web&xsec_token=ABOtwuDG28TysRC_xsg1VTzUAHmXRGJtr7xTcMRXAroKA=&xsec_source=pc_share
+48 【义乌西班牙语🇪🇸主播，我们先冲 - 阿甜义乌创业录 | 📕 - 你的生活指南】 😆 vEkXjS0x64Ef8zN 😆 https://www.xiaohongshu.com/discovery/item/6727086f000000001b01383e?source=webshare&xhsshare=pc_web&xsec_token=ABOtwuDG28TysRC_xsg1VTzUAHmXRGJtr7xTcMRXAroKA=&xsec_source=pc_share
 
 ![](img/c69188748b242d5f38e4c82916f6a1ab.png)
 
@@ -1946,7 +1946,7 @@ https://www.bilibili.com/video/BV1GbxFe5ENY/?vd_source=cd57d3a123a254526b23c45b1
 
 ## 上了热搜，网曝开始
 
-上热搜非常突然，是在微博上了榜一，但是我们丝毫不知情，还是之前同学提到
+上热搜非常突然，是在🧣上了榜一，但是我们丝毫不知情，还是之前同学提到
 
 有话题讨论度、有水军、有互动才有讨论，但是我没接这波流量，对我来说意义不大
 
@@ -1982,21 +1982,21 @@ https://www.bilibili.com/video/BV1Tw4m127WC/?vd_source=cd57d3a123a254526b23c45b1
 
 ![](img/01a0ddb7120ed80cb13f4e0e6c1812a6.png)
 
-## 受邀录制小红书官方账号视频
+## 受邀录制📕官方账号视频
 
-因为发了很多关于小红书电商、义乌创业电商了，所以接到了小红书官方账号要求录制
+因为发了很多关于📕电商、义乌创业电商了，所以接到了📕官方账号要求录制
 
-9 【听劝点进来👉瓜分商家千亿流量曝光扶持～ - 好生意薯 | 小红书 - 你的生活指南】 😆 9MH0UJuK4ORXvRB 😆 https://www.xiaohongshu.com/discovery/item/66d6f2f70000000012010d3a?source=webshare&xhsshare=pc_web&xsec_token=ABOJ4Qiva4qQDw8TMyE1eLVZDM9x5R3_0ABK80MqgSNpk=&xsec_source=pc_share
+9 【听劝点进来👉瓜分商家千亿流量曝光扶持～ - 好生意薯 | 📕 - 你的生活指南】 😆 9MH0UJuK4ORXvRB 😆 https://www.xiaohongshu.com/discovery/item/66d6f2f70000000012010d3a?source=webshare&xhsshare=pc_web&xsec_token=ABOJ4Qiva4qQDw8TMyE1eLVZDM9x5R3_0ABK80MqgSNpk=&xsec_source=pc_share
 
 ![](img/37a41cca205ac21ccb4d05dcafcdce28.png)
 
-## 义乌线下生财——阿甜组局
+## 义乌线下赚钱——阿甜组局
 
-生财有术是我们进的一个副业创业圈子
+龙哥盟是我们进的一个副业创业圈子
 
-义乌线下都是进了生财圈子的创业者，质量都非常高
+义乌线下都是进了赚钱圈子的创业者，质量都非常高
 
-那时候刚从外地回来答应他们把我在生财的精华帖给大家分享一波，把颗粒度缩小
+那时候刚从外地回来答应他们把我在赚钱的精华帖给大家分享一波，把颗粒度缩小
 
 ![](img/6041f78baa765e4fb1ad34e90a115bb8.png)
 
@@ -2046,7 +2046,7 @@ https://www.bilibili.com/video/BV1dh4y1T7jd/?vd_source=cd57d3a123a254526b23c45b1
 
 [义乌创业三件套](https://vow6kdbiak.feishu.cn/mindnotes/V8cXb0FbrmCVdonzPzycankunee?from=from_copylink)
 
-[小红书官方义乌线下沙龙，信息量有点大！](https://vow6kdbiak.feishu.cn/docx/QLRvdmFYnoeJqwxXkAXcBOXZnHd?from=from_copylink)
+[📕官方义乌线下沙龙，信息量有点大！](https://vow6kdbiak.feishu.cn/docx/QLRvdmFYnoeJqwxXkAXcBOXZnHd?from=from_copylink)
 
 [10天亏了1w](https://vow6kdbiak.feishu.cn/mindnotes/QNTxbWivJmO4w5nkxeHcjLKZnNb?from=from_copylink)
 
@@ -2132,7 +2132,7 @@ https://www.bilibili.com/video/BV1dh4y1T7jd/?vd_source=cd57d3a123a254526b23c45b1
 
 1.  抖音客服的考核时间是 8 点到 23 点，在这期间的客服消息一定要第一时间回复
 
-1.  抖音小额打款会直接打到用户零钱里，需要确认用户是否有开通过，没有开通的话，可以让用户发送微信收款码
+1.  抖音小额打款会直接打到用户零钱里，需要确认用户是否有开通过，没有开通的话，可以让用户发送🛰️收款码
 
 1.  如果打单后用户退款了，快递还没有揽收，就要回收单号，如果快递已经发货在路上了，需要通知对应快递客服，进行快递拦截，如果快递员在派送中，就需要通知用户拒收
 

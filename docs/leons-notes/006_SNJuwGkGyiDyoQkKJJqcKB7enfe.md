@@ -365,7 +365,7 @@ MCP.so 上提供了大量面向开发者的工具服务器：
 
 1.  [《人人都能学会的 AI 教程》资源合集](https://rncg5jvpme.feishu.cn/wiki/U9rYwRHQoil6vBkitY8cbh5tnL9)
 
-1.  公众号《MCP + 数据库，一种比 RAG 检索效果更好的新方式！》： https://mp.weixin.qq.com/s/jV46NMDfcJRiklUG_RLsmQ
+1.  👸号《MCP + 数据库，一种比 RAG 检索效果更好的新方式！》： https://mp.weixin.qq.com/s/jV46NMDfcJRiklUG_RLsmQ
 
 1.  Cherry Studio 官网：https://cherry-ai.com/
 

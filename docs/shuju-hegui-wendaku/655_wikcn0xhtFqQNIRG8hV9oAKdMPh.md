@@ -1,6 +1,6 @@
 # 自动化决策认定
 
-> 来源：[https://docs.feishu.cn/docx/W6JUd3y0oo9T1Yxe7gsc9qQQnYZ](https://docs.feishu.cn/docx/W6JUd3y0oo9T1Yxe7gsc9qQQnYZ)
+> 来源：[https://docs.feishu.cn/docx/W6JUd3y0oo9T1Yxe7gsc9q🐧nYZ](https://docs.feishu.cn/docx/W6JUd3y0oo9T1Yxe7gsc9q🐧nYZ)
 
 **-问**：一个视频里，会自动选出算法认为最佳的几帧，截成图片给用户展示。这个功能是否涉及“自动化决策”呢？
 

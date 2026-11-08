@@ -119,7 +119,7 @@ Docker Desktop 支持最新的 Windows 10/11 和 MacOS 版本，访问 Docker De
 
 首先下载 MateGen Pro 最新的项目镜像，执行命令如下：
 
-注意：对于国内网络，Dokcer和Github类似，经常会访问不通导致拉取失败，如多次尝试仍然无法拉取镜像，请开启魔法上网环境
+注意：对于国内网络，Dokcer和Github类似，经常会访问不通导致拉取失败，如多次尝试仍然无法拉取镜像，请开启🪜环境
 
 ```
 docker pull snowball1996/mategen:latest 
@@ -359,7 +359,7 @@ jupyter lab
 
 +   更多MateGen使用方法，详见《MateGen使用教程》。
 
-+           免费API获取👉**MateGen目前正处于测试阶段，限量免费开放3亿免费token额度，送完即止，API-KEY**领取、加入技术交流群、其他任何问题，扫码添加客服小可爱(微信：littlelion_1215)，回复“MG”详询哦👇
++           免费API获取👉**MateGen目前正处于测试阶段，限量免费开放3亿免费token额度，送完即止，API-KEY**领取、加入技术交流群、其他任何问题，扫码添加客服小可爱(🛰️：littlelion_1215)，回复“MG”详询哦👇
 
 ![](img/cf064709527595c21ce1e4825d4c4dce.png)
 

@@ -4,7 +4,7 @@
 
 > 原文链接： [Claude Code 2025](https://mp.weixin.qq.com/s/LsLd0TzLFoFaCgIbQaQbcQ)年终盘点：从研究预览到编程平台的蜕变之路
 
-> 来源：公众号：与AI同行之路
+> 来源：👸号：与AI同行之路
 
 说实话，回顾2025这10个月，我对Claude Code的感受是： 它不再只是一个AI编程工具了，它正在变成一个完整的开发平台。
 

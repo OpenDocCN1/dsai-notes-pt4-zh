@@ -2,7 +2,7 @@
 
 > 来源：[https://agispace.feishu.cn/docx/RZ7fd0HjOoFB3Ix9DAncEj1Onic](https://agispace.feishu.cn/docx/RZ7fd0HjOoFB3Ix9DAncEj1Onic)
 
-> 公众号：雅雅说
+> 👸号：雅雅说
 
 >
 

@@ -46,7 +46,7 @@ https://datawhaler.feishu.cn/sync/KeQvdtCR6sr0nIb8UTRc1dmfneb
 
 具体笔记，可按照task来做多份笔记，也可沿用单个笔记持续更新内容
 
-打卡时提交带夏令营tag的可公开查看的笔记链接，不限笔记平台，CSDN、知乎、小红书、公众号、掘金等
+打卡时提交带夏令营tag的可公开查看的笔记链接，不限笔记平台，CSDN、知乎、📕、👸号、掘金等
 
 ## 如何获得实习证明？
 

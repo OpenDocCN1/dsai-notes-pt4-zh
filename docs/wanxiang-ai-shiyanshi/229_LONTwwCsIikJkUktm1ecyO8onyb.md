@@ -34,7 +34,7 @@
 
 ![](img/1f686b1a5b8a3ebaadbe3867adce315c.png)
 
-安装后，注册时需要使用科学上网。如果出现以下界面，这个时候 windows subsystem for linux 版本太旧，需要更新。
+安装后，注册时需要使用🪜。如果出现以下界面，这个时候 windows subsystem for linux 版本太旧，需要更新。
 
 ![](img/3a91ef79fc4b9171f7da0c509c771fb7.png)
 
@@ -63,7 +63,7 @@ docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n
 
 ![](img/fc434dc4434030571ae33654d215aba2.png)
 
-进行 docker 换源，设置→Docker Engine→把以下这段复制进去→记得科学上网一定要开全局模式并重新输入之前的命令行
+进行 docker 换源，设置→Docker Engine→把以下这段复制进去→记得🪜一定要开全局模式并重新输入之前的命令行
 
 ```
 {
@@ -92,7 +92,7 @@ containers 打开就会显示 n8n：
 
 ![](img/38d1b79c3f32a1b56192214a47044425.png)
 
-**打开这个 ports，**进行 n8n 账号的登录和注册：这一步需要科学上网哈～
+**打开这个 ports，**进行 n8n 账号的登录和注册：这一步需要🪜哈～
 
 ![](img/d87185fc54d2dafc035d46b06ccbd544.png)
 

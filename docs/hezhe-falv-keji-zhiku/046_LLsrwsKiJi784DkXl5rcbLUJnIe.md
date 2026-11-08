@@ -4,7 +4,7 @@
 
 ---
 
-> 本文档收录了**法律 AI**、**法律科技**[相关岗位，如您有求职意愿（](https://mp.weixin.qq.com/s?__biz=MzE5MTY1MjA5OA==&mid=2247493102&idx=1&sn=80baa80dc53930bb301cdc5c5aa353bc&scene=21#wechat_redirect)候选人）或者有相关岗位需要发布（老板），可联系何者社区发起人吴世杰，获取简历投递链接或提交岗位信息 📲微信：18825075686
+> 本文档收录了**法律 AI**、**法律科技**[相关岗位，如您有求职意愿（](https://mp.weixin.qq.com/s?__biz=MzE5MTY1MjA5OA==&mid=2247493102&idx=1&sn=80baa80dc53930bb301cdc5c5aa353bc&scene=21#wechat_redirect)候选人）或者有相关岗位需要发布（老板），可联系何者社区发起人吴世杰，获取简历投递链接或提交岗位信息 📲🛰️：18825075686
 
 # **阿里巴巴-法律科技产品经理**
 

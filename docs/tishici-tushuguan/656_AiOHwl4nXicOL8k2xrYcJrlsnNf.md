@@ -14,6 +14,6 @@
 
 [自我反思](https://vxc3hj17dym.feishu.cn/wiki/XNddwGZSrigcI0ktOHLc7ncwnQe)
 
-[小红书SEO实战分析师](https://vxc3hj17dym.feishu.cn/wiki/VsiewfkwOijpRRkQGLFciXi1nBb)
+[📕SEO实战分析师](https://vxc3hj17dym.feishu.cn/wiki/VsiewfkwOijpRRkQGLFciXi1nBb)
 
-[小红书"一人公司"话题内容SEO与创作策略深度分析](https://vxc3hj17dym.feishu.cn/wiki/MYeAwj0jUisLhkk7XCUcNDybnzh)
+[📕"一人公司"话题内容SEO与创作策略深度分析](https://vxc3hj17dym.feishu.cn/wiki/MYeAwj0jUisLhkk7XCUcNDybnzh)

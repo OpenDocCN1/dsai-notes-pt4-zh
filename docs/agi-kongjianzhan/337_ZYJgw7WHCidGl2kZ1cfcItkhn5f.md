@@ -2,7 +2,7 @@
 
 > 来源：[https://agispace.feishu.cn/docx/VIaUdO9mMo1la2xjC0rcFka8nBe](https://agispace.feishu.cn/docx/VIaUdO9mMo1la2xjC0rcFka8nBe)
 
-> 公众号：莫尔索随笔
+> 👸号：莫尔索随笔
 
 >
 

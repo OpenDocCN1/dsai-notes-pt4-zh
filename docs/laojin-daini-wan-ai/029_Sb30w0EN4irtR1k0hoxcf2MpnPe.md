@@ -1652,7 +1652,7 @@ openclaw config set agents.defaults.model &quot;ollama/qwen2.5:7b&quot;
 
 +   飞书 / Lark（国内原生支持，OpenClaw 通过扩展支持飞书 Channel）
 
-+   注意：钉钉、微信公众号、个人微信均不受官方支持
++   注意：钉钉、🛰️👸号、个人🛰️均不受官方支持
 
 ```
 # 配置飞书（推荐中国用户）
@@ -1782,7 +1782,7 @@ openclaw skills check my-awesome-skill --input &quot;测试&quot;
 
 +   Discord 社区（有中文频道）
 
-+   微信群：关注 OpenClaw 公众号获取入群二维码
++   🛰️群：关注 OpenClaw 👸号获取入群二维码
 
 ### Q72: 文档有错误怎么反馈？
 

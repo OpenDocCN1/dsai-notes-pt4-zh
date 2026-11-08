@@ -2,7 +2,7 @@
 
 > 来源：[https://agispace.feishu.cn/docx/LHHFd3bOpoe9anxsFxqczMelnhd](https://agispace.feishu.cn/docx/LHHFd3bOpoe9anxsFxqczMelnhd)
 
-> 公众号：特工宇宙
+> 👸号：特工宇宙
 
 >
 
@@ -22,7 +22,7 @@
 
 [AI 搜索产品千千万，谁是你的 No.1？](https://agispace.feishu.cn/wiki/GXUFwVByBiXWaCkGPKqc6fVUnGf)
 
-[ 小红书悄咪咪公测 AI 达芬奇！附小红书 AI 功能大盘点](https://agispace.feishu.cn/wiki/IVMQw7EJIiXLBtkRdrOcZQOInqf)
+[ 📕悄咪咪公测 AI 达芬奇！附📕 AI 功能大盘点](https://agispace.feishu.cn/wiki/IVMQw7EJIiXLBtkRdrOcZQOInqf)
 
 [这款 AI 陪伴产品，被央视发文批评！专家称其为“新违法行为”。](https://agispace.feishu.cn/wiki/AhuHwrCqkilGfokaiFZcpisHnpb)
 
@@ -44,7 +44,7 @@
 
 [来养一只治愈自己的 AI 小动物吧](https://agispace.feishu.cn/wiki/NvSAw2RYNiVbsjktxgRcCLY2nqg)
 
-[（读书）混元大模型接入微信读书，AI 问书功能正式上线。](https://agispace.feishu.cn/wiki/VS6iw7vcOivrpnkiJOtcMAmtnCb)
+[（读书）混元大模型接入🛰️读书，AI 问书功能正式上线。](https://agispace.feishu.cn/wiki/VS6iw7vcOivrpnkiJOtcMAmtnCb)
 
 [（游戏）换你来当爹？赛博养儿？又一款 AI 小游戏正在风靡。](https://agispace.feishu.cn/wiki/WRdtwpjHziORGXkgxncccNk6nkg)
 
@@ -52,7 +52,7 @@
 
 [（海螺 AI）MiniMax 悄咪咪上线的这款 AI 产品，好用到爆炸！](https://agispace.feishu.cn/wiki/CmgGwrBJgii8gAkwgGwcno1Knzb)
 
-[（微信）微信，悄咪咪上线了这三款 AI 产品！](https://agispace.feishu.cn/wiki/VBHTwZyFQiLhnGk6gJ7cGI6anQr)
+[（🛰️）🛰️，悄咪咪上线了这三款 AI 产品！](https://agispace.feishu.cn/wiki/VBHTwZyFQiLhnGk6gJ7cGI6anQr)
 
 [智谱，闷声不响发了个「100w 长文本模型」](https://agispace.feishu.cn/wiki/TQaEweK4ni7BzmkUBFOcyAepnad)
 

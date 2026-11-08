@@ -6,7 +6,7 @@
 
 [使用 GPT，构建全自动化的EXCEL](https://jalicvoygc0.feishu.cn/wiki/S5TJwgllti1xq3k359gc7Lpwnkd)
 
-[使用GPT，写小红书文案](https://jalicvoygc0.feishu.cn/wiki/RIIQwGYIpiQt17kCoB7cyGwWnVc)
+[使用GPT，写📕文案](https://jalicvoygc0.feishu.cn/wiki/RIIQwGYIpiQt17kCoB7cyGwWnVc)
 
 [使用Gamma快速生成PPT：文稿一键转写PPT](https://jalicvoygc0.feishu.cn/wiki/Lx3ZwnWQ1ihYddkg9T2cGLUGnXG)
 

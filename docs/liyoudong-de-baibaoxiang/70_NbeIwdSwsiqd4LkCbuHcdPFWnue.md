@@ -42,7 +42,7 @@
 
 > 计胜一筹合伙人 / 鹏磊技术实战合伙人/
 
-> 生财有术志愿者/ 靠谱销冠群top销冠/
+> 龙哥盟志愿者/ 靠谱销冠群top销冠/
 
 > 副业和自媒体导师
 
@@ -50,7 +50,7 @@
 
 > 🎁【我能提供的】
 
-> 1、副业，创业各种项目教学+带队，最近的是红包封面项目、公众号爆文项目。详见文章：https://www.liyoudong.cn/hynr/tdgjxm
+> 1、副业，创业各种项目教学+带队，最近的是红包封面项目、👸号爆文项目。详见文章：https://www.liyoudong.cn/hynr/tdgjxm
 
 > 2、AI相关的知识体系，AI提示词、AI绘画、Ai自媒体，打造AI相关产品。
 
@@ -62,15 +62,15 @@
 
 > 【链接我】
 
-> #公众号：李又懂
+> #👸号：李又懂
 
-> #公众号：李又懂的百宝箱
+> #👸号：李又懂的百宝箱
 
 > #限免星球：https://t.zsxq.com/15OpLILTN
 
 > #我的论坛：https://www.liyoudong.cn/forums
 
-> #微信号：4314991，可以围观朋友圈哦~
+> #🛰️号：4314991，可以围观朋友圈哦~
 
 **以下好礼**，本站（www.liyoudong.cn）注册登录后均可免费领取
 
@@ -122,7 +122,7 @@
 
 【社保保险 | 对标帐号、爆款内容、话题、关键词 】
 
-【拆解小红书账号 | 对标帐号、爆款内容、话题、关键词 】
+【拆解📕账号 | 对标帐号、爆款内容、话题、关键词 】
 
 【个人IP营销 | 对标帐号、爆款内容、话题、关键词 】
 
@@ -156,17 +156,17 @@
 
 ## [素材更新](https://www.liyoudong.cn/forum/1632.html?index=3)
 
-[【小红书模板】金融行业](https://www.liyoudong.cn/forum-post/3518.html)
+[【📕模板】金融行业](https://www.liyoudong.cn/forum-post/3518.html)
 
-[【小红书模板】春节出游](https://www.liyoudong.cn/forum-post/3582.html)
+[【📕模板】春节出游](https://www.liyoudong.cn/forum-post/3582.html)
 
-[【小红书模板】年夜饭菜谱](https://www.liyoudong.cn/forum-post/3585.html)
+[【📕模板】年夜饭菜谱](https://www.liyoudong.cn/forum-post/3585.html)
 
-[【小红书模板】旅游行业](https://www.liyoudong.cn/forum-post/3589.html)
+[【📕模板】旅游行业](https://www.liyoudong.cn/forum-post/3589.html)
 
-【小红书模板】旅游模板-景点推荐
+【📕模板】旅游模板-景点推荐
 
-【小红书模板】教育模板-学习方法
+【📕模板】教育模板-学习方法
 
 [Excel表格类模板](https://www.liyoudong.cn/forum-post/4439.html)
 
@@ -220,7 +220,7 @@
 
 +   [短视频无水印下载工具合集](https://www.liyoudong.cn/forum-post/2798.html)
 
-+   [微信聊天记录制作工具大全](https://www.liyoudong.cn/forum-post/2799.html)
++   [🛰️聊天记录制作工具大全](https://www.liyoudong.cn/forum-post/2799.html)
 
 +   [单个(批量)视频提取文案工具](https://www.liyoudong.cn/forum-post/2800.html)
 
@@ -256,7 +256,7 @@
 
 ## 营销案例
 
-+   各行业微信私域运营打法和案例拆解.pdf
++   各行业🛰️私域运营打法和案例拆解.pdf
 
 ## 信息差 （ [赚钱风向标 ](https://www.liyoudong.cn/forum/722.html)）
 
@@ -264,15 +264,15 @@
 
 # 论坛关键词分类整理（更新中）
 
-## [小红书](https://www.liyoudong.cn/topics/xhs)
+## [📕](https://www.liyoudong.cn/topics/xhs)
 
-+   [小红书笔记](https://www.liyoudong.cn/topics/xhsbj)
++   [📕笔记](https://www.liyoudong.cn/topics/xhsbj)
 
-+   [小红书引流](https://www.liyoudong.cn/topics/xhsyl)
++   [📕引流](https://www.liyoudong.cn/topics/xhsyl)
 
-## [公众号](https://www.liyoudong.cn/topics/gzh)
+## [👸号](https://www.liyoudong.cn/topics/gzh)
 
-+   [公众号文章](https://www.liyoudong.cn/topics/gzhwz)
++   [👸号文章](https://www.liyoudong.cn/topics/gzhwz)
 
 ## AI
 

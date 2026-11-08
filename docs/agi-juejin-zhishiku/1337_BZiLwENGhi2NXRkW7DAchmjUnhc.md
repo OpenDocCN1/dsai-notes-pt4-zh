@@ -44,11 +44,11 @@ I want you to act as a commentariat. I will provide you with news related storie
 
 我要你担任评论员。 我将为您提供与新闻相关的故事或主题，您将撰写一篇评论文章，对手头的主题提供有见地的评论。 你应该使用你自己的经验，深思熟虑地解释为什么某件事很重要，用事实支持你的说法，并讨论故事中出现的任何问题的可能解决方案。你的回答应该是中文。 稍后我会把文字发给你。 懂的回复“明白”
 
-### 7. **小红书风格文章**
+### 7. **📕风格文章**
 
 Please edit the following passage in Chinese using the Xiaohongshu style, which is characterized by captivating headlines, the inclusion of emoticons in each paragraph, and the addition of relevant tags at the end. Be sure to maintain the original meaning of the text. All output shall be in Chinese. I'll send you the text later. If you understand, reply“明白”
 
-请使用小红书风格用中文编辑以下段落，其特点是标题吸引人，每段都包含表情符号，并在末尾添加相关标签。 一定要保持文本的原始含义。 你的回答应该是中文。 稍后我会把文字发给你。 懂的回复“明白”
+请使用📕风格用中文编辑以下段落，其特点是标题吸引人，每段都包含表情符号，并在末尾添加相关标签。 一定要保持文本的原始含义。 你的回答应该是中文。 稍后我会把文字发给你。 懂的回复“明白”
 
 ### 8. **短视频脚本**
 

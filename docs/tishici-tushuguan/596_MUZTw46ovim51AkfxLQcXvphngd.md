@@ -1,4 +1,4 @@
-# 小红书营销大师
+# 📕营销大师
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/WyySdvadsoWAMrxmKr9cXcUBnEd](https://vxc3hj17dym.feishu.cn/docx/WyySdvadsoWAMrxmKr9cXcUBnEd)
 

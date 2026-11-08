@@ -1,20 +1,20 @@
-# 微信读书
+# 🛰️读书
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/UiACdvWXBon97ixTWSVcIXOlnbe](https://v11enp9ok1h.feishu.cn/docx/UiACdvWXBon97ixTWSVcIXOlnbe)
 
 ![](img/99dbbee051ce54ce40343c5b5a39a30f.png)
 
-@package/mcp-server-weread -一个为微信读书提供MCP（Model Context Protocol）服务的工具，支持将微信读书的书籍、笔记和划线数据提供给支持MCP的大语言模型客户端，如Claude Desktop。
+@package/mcp-server-weread -一个为🛰️读书提供MCP（Model Context Protocol）服务的工具，支持将🛰️读书的书籍、笔记和划线数据提供给支持MCP的大语言模型客户端，如Claude Desktop。
 
 ---
 
-# 微信读书 MCP Server
+# 🛰️读书 MCP Server
 
-一个为微信读书提供MCP（Model Context Protocol）服务的工具，支持将微信读书的书籍、笔记和划线数据提供给支持MCP的大语言模型客户端，如Claude Desktop。
+一个为🛰️读书提供MCP（Model Context Protocol）服务的工具，支持将🛰️读书的书籍、笔记和划线数据提供给支持MCP的大语言模型客户端，如Claude Desktop。
 
 ## 功能特点
 
-+   从微信读书获取书架信息
++   从🛰️读书获取书架信息
 
 +   搜索书架中的图书
 
@@ -52,7 +52,7 @@
 
 +   Node.js 16.x 或更高版本
 
-+   微信读书账号和有效的Cookie
++   🛰️读书账号和有效的Cookie
 
 ### 安装教程
 
@@ -128,9 +128,9 @@
 
 ## Cookie获取方法
 
-微信读书的Cookie可以通过以下步骤获取：
+🛰️读书的Cookie可以通过以下步骤获取：
 
-1.  使用Chrome浏览器登录[微信读书网页版](https://weread.qq.com/)
+1.  使用Chrome浏览器登录[🛰️读书网页版](https://weread.qq.com/)
 
 1.  按F12打开开发者工具，切换到Network标签页
 

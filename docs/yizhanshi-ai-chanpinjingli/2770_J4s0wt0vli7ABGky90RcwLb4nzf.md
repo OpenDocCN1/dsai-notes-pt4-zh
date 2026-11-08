@@ -92,7 +92,7 @@
 
 +   。
 
-+   斯坦福博士生张奇正将在NICE学术直播分享该研究，直播覆盖多时区，平台包括微信视频号、B站、Youtube。
++   斯坦福博士生张奇正将在NICE学术直播分享该研究，直播覆盖多时区，平台包括🛰️视频号、B站、Youtube。
 
 > 关键词：ACE，长上下文学习，持续学习，推理时学习，ICLR2026
 
@@ -196,4 +196,4 @@
 
 +   [原文链接](https://a16z.com/putting-ads-in-ai/)
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/qXyp0pcZb627QuZkG7JVCA)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/qXyp0pcZb627QuZkG7JVCA)

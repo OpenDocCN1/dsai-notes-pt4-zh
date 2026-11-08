@@ -22,7 +22,7 @@ https://www.maxai.me/usechatgpt （需施展魔法）
 
 1.  我们可以安装自己的需求自定义自己的 prompts，比如总结、扩写、修改语法等
 
-1.  免费集成多个 AI 聊天机器人，如 ChatGPT、Bard、Bing、Claude，最炸裂的是可以不需要 API，一方面你只要有自己的 ChatGPT 账号，就可以免费永久使用（如果是 plus 就可以享受 GPT4 的体验，不过我担心被封号），另一方面如果你没有 ChatGPT 账号并且不会魔法上网，你可以使用 Free AI，享用无需翻墙半年无限制免费使用的时长
+1.  免费集成多个 AI 聊天机器人，如 ChatGPT、Bard、Bing、Claude，最炸裂的是可以不需要 API，一方面你只要有自己的 ChatGPT 账号，就可以免费永久使用（如果是 plus 就可以享受 GPT4 的体验，不过我担心被封号），另一方面如果你没有 ChatGPT 账号并且不会🪜，你可以使用 Free AI，享用无需🪜半年无限制免费使用的时长
 
 1.  快捷键可以自定义，可以设定 Stable mode，不需要担心网络不稳定
 

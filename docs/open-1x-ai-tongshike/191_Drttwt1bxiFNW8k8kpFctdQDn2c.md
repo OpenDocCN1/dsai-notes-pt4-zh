@@ -188,7 +188,7 @@ https://huggingface.co/spaces/BAAI/open_cn_llm_leaderboard
 
 # 微调介绍
 
-## 2.1 微调技术分享 [参考自 公众号 follow_bobo]
+## 2.1 微调技术分享 [参考自 👸号 follow_bobo]
 
 [PS: 此部分补充内容较多, 会讲的时候简略下, 资料供参赛者自行阅读查看]
 

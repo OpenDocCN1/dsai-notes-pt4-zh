@@ -12,7 +12,7 @@
 
 ![](img/7c4a854cd8ab9d35aab1e0dc9c186f04.png)
 
-欢迎关注作者公众号
+欢迎关注作者👸号
 
 本文旨在让无大模型开发背景的工程师或者技术爱好者无痛理解大语言模型应用开发的理论和主流工具，因此会先从与LLM应用开发相关的基础概念谈起，并不刻意追求极致的严谨和完备，而是从直觉和本质入手，结合笔者调研整理及消化理解，帮助大家能够更容易的理解LLM技术全貌，大家可以基于本文衍生展开，结合自己感兴趣的领域深入研究。若有不准确或者错误的地方也希望大家能够留言指正。
 
@@ -226,7 +226,7 @@ gpt模型：文字接龙 创造性好
 
 > 更多大模型
 
-> [张腾飞 译，公众号](https://mp.weixin.qq.com/s/BQOJNwfkApiZnFveMDBQ-w)：分布式实验室 开源大语言模型汇总
+> [张腾飞 译，👸号](https://mp.weixin.qq.com/s/BQOJNwfkApiZnFveMDBQ-w)：分布式实验室 开源大语言模型汇总
 
 可商用大模型：https://github.com/eugeneyan/open-llms
 
@@ -840,7 +840,7 @@ https://arxiv.org/pdf/2203.06904.pdf
 
 #### **工具实践篇**
 
-前面大篇幅的介绍了微调相关的理论知识，接下来介绍四款工具或产品，借助它们我们可以比较方便的完成参数高效的finetune。为了让大家能够体验下面的例子，普及了两篇关于colab使用的文章（点公众号查看），不熟悉的朋友可以查看：
+前面大篇幅的介绍了微调相关的理论知识，接下来介绍四款工具或产品，借助它们我们可以比较方便的完成参数高效的finetune。为了让大家能够体验下面的例子，普及了两篇关于colab使用的文章（点👸号查看），不熟悉的朋友可以查看：
 
 开发必备工具-Colab使用介绍
 
@@ -1117,7 +1117,7 @@ $ python web_demo.pyLoading checkpoint shards: 100%|█████████�
 
 ![](img/b4f33a9b8e1f19bb28e28847412b9908.png)
 
-开发者利用huggingface提供的包，可以方便 地 进行NLP模型的训练和推理及优化（高效参数微调库（PEFT），就是其中一部分）。 例如通过下面代码就可以拉取ChatGLM2-6B模型，在本地调试 （若网络不畅，可手工下载，关注公众号后续介绍） 。
+开发者利用huggingface提供的包，可以方便 地 进行NLP模型的训练和推理及优化（高效参数微调库（PEFT），就是其中一部分）。 例如通过下面代码就可以拉取ChatGLM2-6B模型，在本地调试 （若网络不畅，可手工下载，关注👸号后续介绍） 。
 
 +
 
@@ -2564,7 +2564,7 @@ TensorRT可以直接解析某些框架（如PyTorch、TF）的模型或通过 ON
 
 > Hugging Face作为开源AI领域的独角兽，在LLM开发工具链和模型生态领域持续领跑。就在前几天英伟达新品发布会上，Hugging Face作为英伟达新产品AI workbench的重要部件被集成，从某种意义上，这是绿色巨人对这家独角兽公司的认可，也反映了Hugging Face在模型开发领域的独到理解。
 
-> ully，公众号：AI工程化 [Hugging Face偷偷放大招了](https://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&mid=2461141343&idx=1&sn=80cc9d01ca15512edfe9edf68334340b&chksm=87396b71b04ee2674f1675a6700d7b473fb41418c50538081375d0e80fe2cf06a34237c5f326&token=239254008&lang=zh_CN#rd)，Rust版本的ML框架Candle曝光
+> ully，👸号：AI工程化 [Hugging Face偷偷放大招了](https://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&mid=2461141343&idx=1&sn=80cc9d01ca15512edfe9edf68334340b&chksm=87396b71b04ee2674f1675a6700d7b473fb41418c50538081375d0e80fe2cf06a34237c5f326&token=239254008&lang=zh_CN#rd)，Rust版本的ML框架Candle曝光
 
 另一方面，也在不断完善自己在大模型层面的技术，特别是大模型推理。最近9月，英伟达将TensorRT的深度学习编译器、FasterTransformer的优化内核、预处理和后处理以及多 GPU/多节点通信，封装在一个简单的开源Python API中并且搭配硬件（GPU H100等）进行了一体优化，形成了产品级的大模型推理的方案TensorRT-LLM。TensorRT-LLM提供了一个易用、开源和模块化的Python应用编程接口，不需要深入的C++或CUDA专业知识，能够部署、运行、调试各种大语言模型，还能获得顶尖性能表现，以及快速定制化的功能，其在GPT-J 6B的推理性能较A100提升了8倍。在LLaMA2上提升了4.6倍。不得不说，软硬一体优化是英伟达独有的优势。
 

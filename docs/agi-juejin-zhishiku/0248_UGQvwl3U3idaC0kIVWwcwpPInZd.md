@@ -26,7 +26,7 @@
 
 https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.133.076401
 
-关注公众号，后台回复「神经网络 DFT」获取完整 PDF
+关注👸号，后台回复「神经网络 DFT」获取完整 PDF
 
 ## 深度学习与 DFT 集成，实现物理信息的无监督学习
 

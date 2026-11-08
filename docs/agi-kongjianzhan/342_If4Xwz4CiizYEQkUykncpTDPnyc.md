@@ -4,7 +4,7 @@
 
 > 原创：是莫尔索
 
-> 公众号：莫尔索随笔
+> 👸号：莫尔索随笔
 
 > 原文链接：https://mp.weixin.qq.com/s/Pb-l4vON8PvgXwRwgOt2FQ
 

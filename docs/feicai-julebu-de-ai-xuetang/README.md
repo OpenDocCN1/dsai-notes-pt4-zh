@@ -134,7 +134,7 @@
 
 ![](img/94bd65195b07f9239ee359ad3c5cab61.png)
 
-[AI 编程 | 微信小程序 Cursor Rule 框架](https://feicaiclub.feishu.cn/wiki/FvSLwJCf6iIMt8k9tS9cj7fxnjc?from=from_copylink)
+[AI 编程 | 🛰️小程序 Cursor Rule 框架](https://feicaiclub.feishu.cn/wiki/FvSLwJCf6iIMt8k9tS9cj7fxnjc?from=from_copylink)
 
 ![](img/fbc61c9134303c18beb7ffdccde08360.png)
 
@@ -166,7 +166,7 @@
 
 ![](img/25376fc7ff53aa08af508c4218d8a3fd.png)
 
-[自媒体 | 微信公众号文章生成提示词框架](https://feicaiclub.feishu.cn/wiki/UyumwOUisivFVckYxjgcoHWDnHb?from=from_copylink)
+[自媒体 | 🛰️👸号文章生成提示词框架](https://feicaiclub.feishu.cn/wiki/UyumwOUisivFVckYxjgcoHWDnHb?from=from_copylink)
 
 ![](img/67adece86ec181138c9f2a308e56745c.png)
 

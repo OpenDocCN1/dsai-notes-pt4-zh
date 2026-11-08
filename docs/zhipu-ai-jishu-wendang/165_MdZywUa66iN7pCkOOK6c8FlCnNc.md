@@ -28,7 +28,7 @@
 
 > CodeGeeX官网：https://codegeex.cn/
 
-> CodeGeeX微信公众号：[CodeGeeX](https://lslfd0slxc.feishu.cn/wiki/ET71wGlnmiU6rbkfogecMhfjnde)
+> CodeGeeX🛰️👸号：[CodeGeeX](https://lslfd0slxc.feishu.cn/wiki/ET71wGlnmiU6rbkfogecMhfjnde)
 
 > CodeGeeX用户群：[联系我们](https://lslfd0slxc.feishu.cn/wiki/ET71wGlnmiU6rbkfogecMhfjnde)
 

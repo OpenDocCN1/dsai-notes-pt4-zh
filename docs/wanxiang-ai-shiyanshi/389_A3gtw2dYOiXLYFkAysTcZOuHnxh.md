@@ -56,6 +56,6 @@
 
 ![](img/977c846255dad1f7f466e761e7a270fc.png)
 
-微信好友（ID：zhangyuguo94s）
+🛰️好友（ID：zhangyuguo94s）
 
-**扫码加微信入微信群**
+**扫码加🛰️入🛰️群**

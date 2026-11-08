@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/QfYLdcFPno0lajxeZzBcSmDonLg](https://aigcreative.feishu.cn/docx/QfYLdcFPno0lajxeZzBcSmDonLg)
 
-> 作者：良    公众号：AI绘画日记
+> 作者：良    👸号：AI绘画日记
 
 > 链接：https://mp.weixin.qq.com/s/V-4EPJ2cj5KQMpmgfpmmQw
 

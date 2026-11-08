@@ -94,7 +94,7 @@ https://pagespeed.web.dev/analysis/https-raphael-app/wo1c55rnfu?form_factor=mobi
 
 品**质，就是传播本身。
 
-只要画得够好看，用户会自发帮你发到 Reddit / Twitter / 小红书。
+只要画得够好看，用户会自发帮你发到 Reddit / Twitter / 📕。
 
 有人认为我SEO做得好，全靠发外链发得多。我还听到有人在传说，说我发明了自动发外链的AI ……
 
@@ -138,7 +138,7 @@ Raphael AI 由于要提供无限数量的画图，我以前是靠人机验证，
 
 其中的技术机制还挺复杂的，有很多细节。
 
-做完后发现可以进行分享一些使用AI编程的经验，我就顺便写了[ 人生第一篇付费阅读的公众号 ，你如果喜欢，感谢支](https://mp.weixin.qq.com/s?__biz=MzI1MTUxNzgxMA==&mid=2247499915&idx=1&sn=3c27ef4939e22a9cf8ac1a8781a79ddf&scene=21#wechat_redirect)持我 → 复杂需求如何让AI一次写对？面对复杂需求，这是我实战沉淀的Vibe Coding终极SOP
+做完后发现可以进行分享一些使用AI编程的经验，我就顺便写了[ 人生第一篇付费阅读的👸号 ，你如果喜欢，感谢支](https://mp.weixin.qq.com/s?__biz=MzI1MTUxNzgxMA==&mid=2247499915&idx=1&sn=3c27ef4939e22a9cf8ac1a8781a79ddf&scene=21#wechat_redirect)持我 → 复杂需求如何让AI一次写对？面对复杂需求，这是我实战沉淀的Vibe Coding终极SOP
 
 说回来。这一招的结果非常离谱： 这是最立竿见影的增长加速器。
 

@@ -130,7 +130,7 @@ AI Agents 正是对此观点的合理回应！在构建 AI Agents 时，我会�
 
 利用** A**I Agents 来自动化（automating）或增强（augmenting）人类的知识型工作，蕴藏着巨大的潜力，但仅仅建立一个优秀的 AI Agents 还远远不够。将 AI Agents 推向市场，服务于用户，就需要在一系列非 AI 的基础设施上投入大量心血，确保 AI Agents 能够真正高效运作 —— 而这正是我们能够塑造差异化竞争优势的地方：
 
-+   **安全性（security）**：AI Agents 应严格在用户授予的权限范围内运行，由用户全面掌控。在实际中，这意味着要跨越 OAuth Integrations（译者注：OAuth 通常用于社交登录，如使用微信或 Google 账户登录其他网站或应用程序。）、Single Sign-On Providers（译者注：单点登录（SSO）是一种身份验证机制，允许用户在多个应用程序和服务中使用单一的登录凭证。）、Cached Refresh Tokens（译者注：指在 OAuth 认证过程中，为了保持用户会话的有效性和减少重复认证次数，而存储在客户端或服务器上的 refresh token。）等一系列的安全门槛。妥善管理这些安全环节，无疑将为我们的产品加分。
++   **安全性（security）**：AI Agents 应严格在用户授予的权限范围内运行，由用户全面掌控。在实际中，这意味着要跨越 OAuth Integrations（译者注：OAuth 通常用于社交登录，如使用🛰️或 Google 账户登录其他网站或应用程序。）、Single Sign-On Providers（译者注：单点登录（SSO）是一种身份验证机制，允许用户在多个应用程序和服务中使用单一的登录凭证。）、Cached Refresh Tokens（译者注：指在 OAuth 认证过程中，为了保持用户会话的有效性和减少重复认证次数，而存储在客户端或服务器上的 refresh token。）等一系列的安全门槛。妥善管理这些安全环节，无疑将为我们的产品加分。
 
 +   **data connectors**：AI Agents 通常需要实时从源系统（source systems）获取数据才能好好工作。这就意味着需要与各种 API 接口及其他连接协议集成，通常是内部系统和外部第三方平台。这些 integrations 不仅需要初始的构建、部署，更需要长期的维护与优化。
 

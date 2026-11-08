@@ -75,7 +75,7 @@ huggingface_hub.errors.LocalTokenNotFoundError: Token is required (`token=True`)
 
 如何提供token呢？首先我们去huggingface官网注册一个账号（如果打不开网页需要使用VPN），然后在用户头像那里，点击Settings，再点击Access Tokens，在里面设置。
 
-不能翻墙的朋友们不用担心，可以使用下面 方案一 。
+不能🪜的朋友们不用担心，可以使用下面 方案一 。
 
 # **问题修复**
 

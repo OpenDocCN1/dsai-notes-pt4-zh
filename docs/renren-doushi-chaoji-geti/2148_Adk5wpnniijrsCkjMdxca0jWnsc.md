@@ -10,7 +10,7 @@
 
 虎嗅注：从创业者到CEO不是一个简单的蜕变过程，自我的提升、领导力的培养都是必经之路。这是Adam Bryant在《纽约时报》Corner Office专栏的最后一篇文章，总结了成为一名成功的CEO一般所具备的特质，还给出了一些建议。这可不是鸡汤，如果你正在创业，可以大概目测一下自己离一名成功的CEO的距离还有多远了。
 
-[本文 ](https://mp.weixin.qq.com/s/JP8mnDkW7TZ8xv1udcySkA)转自公众号“腾讯创业（ID：qqchuangye）”，文：达达，来源： “EGONetworks（ID：egonetworks）”。
+[本文 ](https://mp.weixin.qq.com/s/JP8mnDkW7TZ8xv1udcySkA)转自👸号“腾讯创业（ID：qqchuangye）”，文：达达，来源： “EGONetworks（ID：egonetworks）”。
 
 这一切都始于一个非常简单的想法：如果我在采访其他公司 CEO 的过程中不问有关他们公司的问题，会怎么样呢？
 

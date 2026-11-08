@@ -10,7 +10,7 @@
 
 > 鱼羊 发自 凹非寺
 
-> 量子位 | 公众号 QbitAI
+> 量子位 | 👸号 QbitAI
 
 Stable Diffusion 背后公司 Stability AI 又上新了。
 

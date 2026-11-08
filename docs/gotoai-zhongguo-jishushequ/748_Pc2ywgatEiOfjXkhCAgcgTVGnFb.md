@@ -2,7 +2,7 @@
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/DOaid6nNco6TkBxtoPwcW9JVn2f](https://gotoaiworld.feishu.cn/docx/DOaid6nNco6TkBxtoPwcW9JVn2f)
 
-《从AI工具到“最佳拍档”V10》是北京大学AI肖睿团队编写的，系统介[绍了如何将](https://ai-bot.cn/manus/)各[类AI工具协同](https://ai-bot.cn/skywork/)应[用在实际场景。报](https://ai-bot.cn/genspark/)告[首先对1](https://ai-bot.cn/coze-space/)[1款](https://ai-bot.cn/sites/4189.html)主[流AI Agent，Man](https://ai-bot.cn/minimax-agent/)u[s、Sk](https://ai-bot.cn/sites/53747.html)y[work、Gensp](https://ai-bot.cn/perplexity-ai/)a[rk、扣](https://ai-bot.cn/namiso/)子空间（低代码开发）、秘塔AI（学术搜索）、豆包、MiniMax-Agent、KIMI、Perplexity、纳米AI和Deep Research，进行分类和功能解析，通过五大核心场景展开：知识学习（文献综述、知识梳理）、行业分析（新技术研究、商机挖掘）、内容创作（公众号、播客制作）、产品测评（数码产品对比）和创意设计（品牌IP开发）。每个场景都提供具体案例，对比不同工具的优势，给出”工具组合使用”的实战策略。报告强调AI已从单一工具进化为任务导向的”智能伙伴”，关键在于根据需求选择适配工具组合，通过详细评分表帮助读者快速选择最佳方案。
+《从AI工具到“最佳拍档”V10》是北京大学AI肖睿团队编写的，系统介[绍了如何将](https://ai-bot.cn/manus/)各[类AI工具协同](https://ai-bot.cn/skywork/)应[用在实际场景。报](https://ai-bot.cn/genspark/)告[首先对1](https://ai-bot.cn/coze-space/)[1款](https://ai-bot.cn/sites/4189.html)主[流AI Agent，Man](https://ai-bot.cn/minimax-agent/)u[s、Sk](https://ai-bot.cn/sites/53747.html)y[work、Gensp](https://ai-bot.cn/perplexity-ai/)a[rk、扣](https://ai-bot.cn/namiso/)子空间（低代码开发）、秘塔AI（学术搜索）、豆包、MiniMax-Agent、KIMI、Perplexity、纳米AI和Deep Research，进行分类和功能解析，通过五大核心场景展开：知识学习（文献综述、知识梳理）、行业分析（新技术研究、商机挖掘）、内容创作（👸号、播客制作）、产品测评（数码产品对比）和创意设计（品牌IP开发）。每个场景都提供具体案例，对比不同工具的优势，给出”工具组合使用”的实战策略。报告强调AI已从单一工具进化为任务导向的”智能伙伴”，关键在于根据需求选择适配工具组合，通过详细评分表帮助读者快速选择最佳方案。
 
 ![](img/05306b66d2bf640859c8703748d6fa81.png)
 
@@ -36,9 +36,9 @@
 
 ## 内容创作与媒体制作
 
-+   **自动化内容生产**：用AIWriteX和Cursor实现公众号日更内容的自动化生成，用扣子空间生成播客脚本和音频，实现一站式播客制作。
++   **自动化内容生产**：用AIWriteX和Cursor实现👸号日更内容的自动化生成，用扣子空间生成播客脚本和音频，实现一站式播客制作。
 
-+   **测评与教程**：用豆包、Genspark和MiniMax生成数码产品横向测评报告，用Genspark生成小红书美食教程的图文和视频脚本。
++   **测评与教程**：用豆包、Genspark和MiniMax生成数码产品横向测评报告，用Genspark生成📕美食教程的图文和视频脚本。
 
 ![](img/2097984cd483db2478ec65b079735284.png)
 

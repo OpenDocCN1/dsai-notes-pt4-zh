@@ -28,7 +28,7 @@ AIGC工具库将会持续更新迭代，如有遇到工具无法访问或使用�
 
 [豆包](https://www.doubao.com/chat/)丨[DeepSeek](https://www.deepseek.com/)丨[Kimi Chat](https://kimi.moonshot.cn)
 
-点击上方工具链接，微信扫码登录
+点击上方工具链接，🛰️扫码登录
 
 通过对话就能辅助你解决各类问题
 
@@ -338,7 +338,7 @@ AI配音/声音克隆：
 
 ### 更快探索AI【经验分享】
 
-推荐通过[B站](https://search.bilibili.com/all?keyword=AIGC&from_source=webtop_search&spm_id_from=333.1007&search_source=5)、[小红书](https://www.xiaohongshu.com/explore)、[即刻](https://web.okjike.com/recommend)（AI探索圈），搜工具、找教程、查干货，也可以直接私聊阿赵为你解答各类问题
+推荐通过[B站](https://search.bilibili.com/all?keyword=AIGC&from_source=webtop_search&spm_id_from=333.1007&search_source=5)、[📕](https://www.xiaohongshu.com/explore)、[即刻](https://web.okjike.com/recommend)（AI探索圈），搜工具、找教程、查干货，也可以直接私聊阿赵为你解答各类问题
 
 > 你还可以通过下面这些导航网站找到更多AI工具；如果精力有限，优先查看上面阿赵为你筛选好的工具
 

@@ -186,9 +186,9 @@ pt_model = AutoModelForSequenceClassification.from_pretrained(&quot;./pt_save_pr
 
 ##### 🏷️小Tips：
 
-在这一小节的实践，如果你的电脑没有VPN，可能会卡住（此处体现科学上网的重要性），因为 Huggingface 现在已经墙掉了。假设你不幸遇到这个情况，有两种办法可以解决：
+在这一小节的实践，如果你的电脑没有VPN，可能会卡住（此处体现🪜的重要性），因为 Huggingface 现在已经墙掉了。假设你不幸遇到这个情况，有两种办法可以解决：
 
-（1）给服务器/机器 挂个梯子，然后直接运行上述代码，如果你没有指定下载目录，transformers会自动将模型保存在.cache目录下，当下一次调用模型时，transformers库就不会下载，而是去.cache目录下查找。
+（1）给服务器/机器 挂个🪜，然后直接运行上述代码，如果你没有指定下载目录，transformers会自动将模型保存在.cache目录下，当下一次调用模型时，transformers库就不会下载，而是去.cache目录下查找。
 
 （2）给本地机器连上vpn，然后到 Huggingface 的官网上下载模型文件，放到本地的目录上，
 

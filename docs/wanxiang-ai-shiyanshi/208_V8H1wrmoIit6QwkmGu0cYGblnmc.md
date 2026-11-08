@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/B6JcdQBKmo8P3mxzsSHcYWV5nec](https://yunyinghui.feishu.cn/docx/B6JcdQBKmo8P3mxzsSHcYWV5nec)
 
-> **本文作者：**饼干哥哥，**来源公众号：**饼干哥哥 AGI
+> **本文作者：**饼干哥哥，**来源👸号：**饼干哥哥 AGI
 
 > **推荐理由：**梳理了比较实用和热门的 Github 开源项目
 

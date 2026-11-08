@@ -32,7 +32,7 @@
 
 # 二、社群和我的联系方式
 
-我会长期更新这个帖子，致力于将它做成全网最全的 ChatGPT 项目知识库。如果你有看到好的材料、工具、玩法、案例，也欢迎您加微信【微信号：muningpm】与我联系。
+我会长期更新这个帖子，致力于将它做成全网最全的 ChatGPT 项目知识库。如果你有看到好的材料、工具、玩法、案例，也欢迎您加🛰️【🛰️号：muningpm】与我联系。
 
 ### 1、【10 分钟轻松赚杯咖啡钱】
 
@@ -46,19 +46,19 @@
 
 **步骤四：**用获得的推荐费去买咖啡即可
 
-### 2、【微信群】
+### 2、【🛰️群】
 
 > 本群主要提供一些实操案例的详细展开介绍，和日常学习资料的第一时间分享、学习与答疑，以及与群友的日常信息交流、思维碰撞与沟通探讨。无论你是小白还是大牛，都欢迎你的加入。只要你对 ChatGPT 抱有足够的学习兴趣，我们都欢迎。
 
 > 【设置了一定的入群门槛，介意勿扰，入群后享有知识库内所有资料下载权限】
 
-### **3、【微信】**
+### **3、【🛰️】**
 
 **muningpm**，欢迎沟通随便聊（只聊 ChatGPT 相关内容），欢迎扫描下方二维码也可以的。
 
 ![](img/7fe4ca4309c1d3e0af3a11d85dfd0c51.png)
 
-### **4、【公众号】**
+### **4、【👸号】**
 
 **穆宁 morning**，主要分享 ChatGPT、产品经理、知识管理、思维模型领域相关内容，欢迎关注
 
@@ -264,11 +264,11 @@ https://ingestai.io/
 
 [5个chatgpt开源项目.rar](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnArL45bGKF02PIxvs5Wwisd)
 
-## 【源码】chatGPT 微信小程序源码
+## 【源码】chatGPT 🛰️小程序源码
 
 ![](img/6908c29802406f4dd1dbd0151cd2a8bf.png)
 
-[ChatGPT微信小程序源码.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnigszyYkTSeXIWhmgccLCMb)
+[ChatGPT🛰️小程序源码.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnigszyYkTSeXIWhmgccLCMb)
 
 ## 【插件】chatGPT 多搜索引擎接入浏览器插件
 
@@ -300,11 +300,11 @@ https://ingestai.io/
 
 [chatgpt-dingtalk.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnsN7lB1RSa1kg4H1d4HE3pf)
 
-## 【玩法】ChatGPT 接入公众号
+## 【玩法】ChatGPT 接入👸号
 
 ![](img/d1589165eb52f8e42e6a4cb9a6659b02.png)
 
-[ChatGPT接入公众号.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcn2afDZV33GZR1CgUYFWdCtb)
+[ChatGPT接入👸号.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcn2afDZV33GZR1CgUYFWdCtb)
 
 ## 【攻略】chatGPT 小程序安装全攻略
 
@@ -312,19 +312,19 @@ https://ingestai.io/
 
 [ChatGPT小程序安装全攻略.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnpJMfML8SyTyzY1LcESuqDb)
 
-## 【源码】ChatGPT 接入微信源码
+## 【源码】ChatGPT 接入🛰️源码
 
 ![](img/8f4466444573469cd754c464cd87cbbf.png)
 
 [wechatbot-main.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnzIWR3fZG7eG8AGdBLti0pg)
 
-## 【源码】ChatGPT 微信智能聊天机器人
+## 【源码】ChatGPT 🛰️智能聊天机器人
 
 ![](img/6b989a8c8a4b4f0e546df4e308a99f7e.png)
 
 [聊天机器人chatGPT_x64.rar](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnr7lJyBeCVZIYjDxhVFM3Yc)
 
-## **【源码】ChatGPT 十分钟速成基于** OpenAI 的智能 QQ 机器人搭建
+## **【源码】ChatGPT 十分钟速成基于** OpenAI 的智能 🐧 机器人搭建
 
 ![](img/f33eb228258c5c0f659f1dcd75251618.png)
 
@@ -346,9 +346,9 @@ https://ingestai.io/
 
 **声明：以下所有资料均从公开渠道收集整理而来，仅做学习参考**所用。如涉及侵权，请第一时间联系我删除。
 
-## 【推荐】生财有术 ChatGPT 相关内容
+## 【推荐】龙哥盟 ChatGPT 相关内容
 
-[生财有术｜ChatGPT相关内容【持续更新】](https://shengcaiyoushu01.feishu.cn/sheets/shtcnG6woIJ5EhYSq0Tv6FChTUg)
+[龙哥盟｜ChatGPT相关内容【持续更新】](https://shengcaiyoushu01.feishu.cn/sheets/shtcnG6woIJ5EhYSq0Tv6FChTUg)
 
 ## 【推荐】（51 个）AIGC 开源商业项目库 Beta
 
@@ -370,7 +370,7 @@ https://docs.qq.com/sheet/DRE5jalZKeVZzQlFj?tab=u22b16
 
 ![](img/fef050934eaa6753ee68059cd66e8c47.png)
 
-[ChatGPT 快速流行，重构 AI 商业模式.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnOQMkBQQf3DwgCoEv9t17Tf)
+[ChatGPT 快速流行，重构 AI 商业模式.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnOQMkB🐧f3DwgCoEv9t17Tf)
 
 ## 【华泰证券】ChatGPT 行研分析：深度拆解
 

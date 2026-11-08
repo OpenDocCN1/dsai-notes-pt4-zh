@@ -2,7 +2,7 @@
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/P4BQdeyEHoqrrVxEWYFcMksZnMc](https://qqs7y1hozd1.feishu.cn/docx/P4BQdeyEHoqrrVxEWYFcMksZnMc)
 
-> 这两天，X.com、微博、小红书被一款名叫 Seedance 2.0 的 AI 视频生成模型刷屏。从 Tom Cruise 和 Brad Pitt 的"对打"，到《复仇者联盟》的重制版，再到"水獭版"《老友记》……这些一度被认为需要好莱坞团队耗时数月才能完成的视频，如今只需一句提示词就能秒生成。今天，我们为你汇总了全网最实用的 Seedance 2.0 提示词和使用技巧，让你快速从入门到精通。
+> 这两天，X.com、🧣、📕被一款名叫 Seedance 2.0 的 AI 视频生成模型刷屏。从 Tom Cruise 和 Brad Pitt 的"对打"，到《复仇者联盟》的重制版，再到"水獭版"《老友记》……这些一度被认为需要好莱坞团队耗时数月才能完成的视频，如今只需一句提示词就能秒生成。今天，我们为你汇总了全网最实用的 Seedance 2.0 提示词和使用技巧，让你快速从入门到精通。
 
 ### 一、Seedance 2.0 是什么？为什么突然爆火？
 
@@ -1392,7 +1392,7 @@ Seedance 2.0 虽然降低了提示词难度，但写好提示词仍是出片的�
 
 +   X.com：搜索 #Seedance2 #AIVideo
 
-+   小红书：搜索"Seedance 2.0"
++   📕：搜索"Seedance 2.0"
 
 +   B 站：搜索"Seedance 2.0教程"
 
@@ -1410,7 +1410,7 @@ Seedance 2.0 虽然降低了提示词难度，但写好提示词仍是出片的�
 
 +   ComfyUI 官方文档（结合工作流设计）
 
-+   即梦官方微博（定期发布案例和教程）
++   即梦官方🧣（定期发布案例和教程）
 
 +   各大内容创作者的深度测评
 

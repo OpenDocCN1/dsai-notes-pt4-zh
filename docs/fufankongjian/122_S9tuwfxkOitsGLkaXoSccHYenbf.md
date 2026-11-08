@@ -579,7 +579,7 @@ Claude: 根据图表显示，Claude 3.5 Sonnet 的性能表现非常出色：
 
 为了能够调用OpenWeather服务，和OpenAI的API使用过程类似，我们首先需要先注册OpenWeather账号，并获取OpenWeather API Key。这里需要注意的是，对于大多数在线服务的API来说，都需要通过API key来进行身份验证，尽管OpenWeather相对更加Open，有非常多的免费使用的次数，但身份验证仍然是必要的防止API被滥用的有效手段。OpenWeather API key获取流程如下：
 
-+   Step 1.登录OpenWeather官网并点击Sign—>create account完成注册。该网站无需魔法即可直接登录，可以使用国内邮箱或者QQ邮箱均可进行注册，官网地址为：https://openweathermap.org/
++   Step 1.登录OpenWeather官网并点击Sign—>create account完成注册。该网站无需魔法即可直接登录，可以使用国内邮箱或者🐧邮箱均可进行注册，官网地址为：https://openweathermap.org/
 
 ![](img/b2999c139f8714df72ce9d587764f1f1.png)
 
@@ -1372,7 +1372,7 @@ Claude: 根据查询结果,旧金山(San Francisco)今天的天气情况如下:
 
 ![](img/6dde537a8959781d3ee897b1be0ee68c.png)
 
-**此外为持续保证学员大模型技术竞争力，课程实时追更最新大模型技术进展，近期额外新增增了GPT-4o、Qwen2系列模型和GLM-4-9B，以及RAG企业级**项目实战最新前沿技术内容！课程大纲获取、领取体验课学员专享优惠券，扫码添加客服小可爱(微信：littlecat_1207)，回复“大模型”，即咨询课程信息哦👇
+**此外为持续保证学员大模型技术竞争力，课程实时追更最新大模型技术进展，近期额外新增增了GPT-4o、Qwen2系列模型和GLM-4-9B，以及RAG企业级**项目实战最新前沿技术内容！课程大纲获取、领取体验课学员专享优惠券，扫码添加客服小可爱(🛰️：littlecat_1207)，回复“大模型”，即咨询课程信息哦👇
 
 ![](img/ccafe43a0d219247bde15998ef2ccdc3.png)
 

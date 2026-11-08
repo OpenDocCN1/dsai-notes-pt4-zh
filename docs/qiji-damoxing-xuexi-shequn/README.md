@@ -62,7 +62,7 @@
 
 +   **往期日报详见：**[大模型日报合集（分享版）](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh?fromScene=spaceOverview)
 
-+   我们的日报公众号 **LLM SPACE **，欢迎大家关注！
++   我们的日报👸号 **LLM SPACE **，欢迎大家关注！
 
 +   新功能：可以来这里找到心仪的**初创**公司~
 
@@ -82,7 +82,7 @@
 
 ![](img/9ad6cd35e32500c6d2cfc3f7f21c9aeb.png)
 
-## 日报公众号LLM SPACE
+## 日报👸号LLM SPACE
 
 ![](img/c404b9e7bbb55ceade8e70b71aa76d91.png)
 
@@ -94,7 +94,7 @@
 
 +   **往期日报详见：**[大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh?fromScene=spaceOverview)
 
-+   我们的日报公众号 **LLM SPACE **，欢迎大家关注！
++   我们的日报👸号 **LLM SPACE **，欢迎大家关注！
 
 ---
 

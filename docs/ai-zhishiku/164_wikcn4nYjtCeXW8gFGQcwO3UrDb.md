@@ -6,13 +6,13 @@
 
 > [**点击查看**](https://ssw9noe1h6.feishu.cn/wiki/J0qLw50vviIWgukljxKcuSDUnLe)**知识星球会员福利**
 
-> 图 2：免费微信群交流群，关注公众号回复【进群】
+> 图 2：免费🛰️群交流群，关注👸号回复【进群】
 
 **图 1：加入知识星球**
 
 ![](img/de0fb966fd7162198351818234409cfa.png)
 
-**图2：更多福利请关注公众号：**[**你今天 AI 了吗**](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4NTk2MzM1MQ==&scene=124#wechat_redirect)
+**图2：更多福利请关注👸号：**[**你今天 AI 了吗**](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4NTk2MzM1MQ==&scene=124#wechat_redirect)
 
 **回复【艺术】教你用 ****AI**** 做一个酷炫二维码**
 

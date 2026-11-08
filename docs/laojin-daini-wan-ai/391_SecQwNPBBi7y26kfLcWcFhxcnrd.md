@@ -4,7 +4,7 @@
 
 ## 转载自Github官网：https://github.com/fatwang2/sum4all?tab=readme-ov-file
 
-## 不支持微信视频号分析，文字在链接前会走COW中的LLM，而不会走sum4all的总结
+## 不支持🛰️视频号分析，文字在链接前会走COW中的LLM，而不会走sum4all的总结
 
 ## 推荐使用Gemini，包含识图在内都可以使用，是免费的
 
@@ -22,7 +22,7 @@
 
 +   支持图片总结，包括png、jpeg、jpg
 
-+   支持视频、播客内容总结，包括抖音、b站、小红书、YouTube等
++   支持视频、播客内容总结，包括抖音、b站、📕、YouTube等
 
 +   支持多种内容总结服务，可自由组合
 

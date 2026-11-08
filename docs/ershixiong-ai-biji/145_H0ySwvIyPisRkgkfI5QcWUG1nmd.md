@@ -1,4 +1,4 @@
-# 微信群聊日报生成器
+# 🛰️群聊日报生成器
 
 > 来源：[https://qianniucity.feishu.cn/docx/U16jdbjmeoI7YjxDit6cRhHVnfg](https://qianniucity.feishu.cn/docx/U16jdbjmeoI7YjxDit6cRhHVnfg)
 

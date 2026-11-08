@@ -220,4 +220,4 @@ ResearchAgent使用一种名为“迭代研究想法精炼”的方法，该方�
 
 [2] BLINK实体链接器: https://aclanthology.org/2020.emnlp-main.519.pdf
 
-+   **👇**关注公众号 NLP PaperWeekly ，对话框输入“ ResearchAgent ”，即可领取 上述PDF论文 👇
++   **👇**关注👸号 NLP PaperWeekly ，对话框输入“ ResearchAgent ”，即可领取 上述PDF论文 👇

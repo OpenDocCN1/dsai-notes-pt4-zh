@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/HmbHdLv3qoBQzAxbPvPcIhetnDf](https://my.feishu.cn/docx/HmbHdLv3qoBQzAxbPvPcIhetnDf)
 
-教程中使用的是智谱 AI。这步的意义是获取外部（微信）调用 AI 的接口。
+教程中使用的是智谱 AI。这步的意义是获取外部（🛰️）调用 AI 的接口。
 
 智谱 AI 是由清华大学计算机系技术成果转化而来的公司，致力于打造新一代认知智能通用模型。
 

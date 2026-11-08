@@ -10,7 +10,7 @@ Teamo + Clawdbot = YYDS
 
 +   加密货币数据
 
-+   社交媒体数据（Twitter、微博等）
++   社交媒体数据（Twitter、🧣等）
 
 +   商业分析工具：企业工商信息，招投标，专利商标，行业报告
 
@@ -68,7 +68,7 @@ Teamo 版 Clawdbot 不仅是一个专业版的 Clawdbot，还是一个增强版�
 
 ![](img/a0c025ba0cb0a3c473ebf11d80e8151f.png)
 
-上线一个小时，光小红书社媒分析工具都已经有 10 个了...
+上线一个小时，光📕社媒分析工具都已经有 10 个了...
 
 真的是，用的人越多越强大啊...
 
@@ -84,6 +84,6 @@ Teamo 版 Clawdbot 不仅是一个专业版的 Clawdbot，还是一个增强版�
 
 ![](img/2828359e2d05ebb062346bc697d0b1e5.png)
 
-Teamo Clawdbot 可以立即创建技能，并且可以在 10 分钟后提醒你写小红书文案。
+Teamo Clawdbot 可以立即创建技能，并且可以在 10 分钟后提醒你写📕文案。
 
 ![](img/caab16fca4e4531655d1ee4cae3587a8.png)

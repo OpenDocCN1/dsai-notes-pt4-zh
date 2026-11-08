@@ -18,7 +18,7 @@
 
 (推荐) 注册后免费使用，无次数限制，官方出品，性能最强，技术最佳。缺点是国内注册困难：
 
-+   需要科学上网，使用的代理 IP 质量不好的话无法成功
++   需要🪜，使用的代理 IP 质量不好的话无法成功
 
 +   需要国外手机号验证，googl[e vo](https://sms-activate.org/)ice 等虚拟号码无法通过验证，可使用淘宝解决 or 海外号码
 
@@ -30,7 +30,7 @@
 
 +   [Depay卡：](https://github.com/gclhaha/chatGPT-plus-guide) 技术路线是 RMB -> USDT —> Depay 虚拟卡 -> 充值，优点是匿名性好，缺点是操作复杂
 
-+   [nobepay 开卡：](https://zhuanlan.zhihu.com/p/619289623), 【[nobepay 官网](https://www.nobepay.com/)】，【防止失效备份教程】 技术路线是: RMB -> nobepay 虚拟卡 -> 充值，优点是操作简单，缺点是需要绑定微信手机号等个人信息
++   [nobepay 开卡：](https://zhuanlan.zhihu.com/p/619289623), 【[nobepay 官网](https://www.nobepay.com/)】，【防止失效备份教程】 技术路线是: RMB -> nobepay 虚拟卡 -> 充值，优点是操作简单，缺点是需要绑定🛰️手机号等个人信息
 
 +   最新：Onekey Card 开卡： 技术路线是 RMB -> USDT —> Onekey 虚拟卡 -> 充值
 
@@ -38,13 +38,13 @@
 
 #### 💻 p[oe](https://poe.com/chatgpt)
 
-(推荐) 注册后免费使用，可免费试用当前最先进的 GPT-4，提供多种模型选择。能科学上网即可注册，有 iPhone 客户端可以使用。
+(推荐) 注册后免费使用，可免费试用当前最先进的 GPT-4，提供多种模型选择。能🪜即可注册，有 iPhone 客户端可以使用。
 
 ### 💻 微[软必应](https://www.bing.com/)
 
 (推荐) 注册后免费使用，有次数限制(经常调整)[，需要使用微软的 Edg](http://www.bing.com)e 浏览器访问 www.bing.com, 国内会重定向到 cn.bing.com 导致无法使用。国内使用有两种方法：
 
-+   科学上网访问 [www.bing.com](http://www.bing.com)
++   🪜访问 [www.bing.com](http://www.bing.com)
 
 +   重定向访问 [www.bing.com](http://www.bing.com)
 
@@ -58,7 +58,7 @@
 
 ####  💻 Bard
 
-+   https://bard.google.com/ 谷歌出品，使用需申请，与 OpenAI GPT 相比不支持代码功能，需翻墙注册使用
++   https://bard.google.com/ 谷歌出品，使用需申请，与 OpenAI GPT 相比不支持代码功能，需🪜注册使用
 
 #### 💻 Claude
 
@@ -304,7 +304,7 @@ Prompt 编写模式是一份中文教程，介绍了系列 Prompt 编写模式�
 
 生成各种组会、周会汇报内容，周一、五、六、日可免费使用，其余时间需要自备 OpenAI API Key
 
-### [小红书小作文生成器](https://open-gpt.app/app/clf2awmv0001mjt08hjtcpe90)
+### [📕小作文生成器](https://open-gpt.app/app/clf2awmv0001mjt08hjtcpe90)
 
 帮助姐妹们一键生成小作文，在舆论场里立于不败之地。
 

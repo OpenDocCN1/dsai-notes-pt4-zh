@@ -2,7 +2,7 @@
 
 > 来源：[https://agijuejin.feishu.cn/docx/IMTFdKxHYoAyzRx9SegcL3Mjnxg](https://agijuejin.feishu.cn/docx/IMTFdKxHYoAyzRx9SegcL3Mjnxg)
 
-+   **本文作者**：群友 @熊猫Jay （公众号 熊猫Jay字节之旅）
++   **本文作者**：群友 @熊猫Jay （👸号 熊猫Jay字节之旅）
 
 +   **原文**：[万字解读ChatGPT提示词最佳实践](https://sif8f6uboze.feishu.cn/docx/H2C2devTSoZBRUx1m6YcOoFynuh)
 

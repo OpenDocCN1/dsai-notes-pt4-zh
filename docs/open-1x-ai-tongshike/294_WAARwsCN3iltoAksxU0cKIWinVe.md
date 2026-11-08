@@ -1,6 +1,6 @@
 # （已结束）《“千帆杯”K12教育常规赛》
 
-> 来源：[https://datawhaler.feishu.cn/docx/YfQVdiz8mooRJXxIHQQcl9yon6d](https://datawhaler.feishu.cn/docx/YfQVdiz8mooRJXxIHQQcl9yon6d)
+> 来源：[https://datawhaler.feishu.cn/docx/YfQVdiz8mooRJXxIH🐧cl9yon6d](https://datawhaler.feishu.cn/docx/YfQVdiz8mooRJXxIH🐧cl9yon6d)
 
 # 参赛流程一览表
 

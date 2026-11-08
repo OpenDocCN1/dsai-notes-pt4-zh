@@ -2,7 +2,7 @@
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/NOl4dsah8o4LtixcOv4cdjB3nfb](https://diwfpqo78m.feishu.cn/docx/NOl4dsah8o4LtixcOv4cdjB3nfb)
 
-> 订阅AI觉醒日报，关注“AI觉醒”公众号，已开放全国100城市的同城AI群：13913041
+> 订阅AI觉醒日报，关注“AI觉醒”👸号，已开放全国100城市的同城AI群：13913041
 
 > 【欢迎右上角...收藏转发分享】
 

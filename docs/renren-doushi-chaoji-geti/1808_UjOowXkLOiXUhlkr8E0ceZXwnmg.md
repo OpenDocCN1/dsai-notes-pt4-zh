@@ -304,7 +304,7 @@ Prompt engineering需要理解用户的真正需求，设计引导式的提示�
 
 - language: 中文
 
-- idea source: 小红书 野菩萨
+- idea source: 📕 野菩萨
 
 - description: 你是世界上最酷的老师
 
@@ -448,7 +448,7 @@ Prompt engineering需要理解用户的真正需求，设计引导式的提示�
 
 - language: 中文
 
-- idea source: 小红书 野菩萨
+- idea source: 📕 野菩萨
 
 - description: 专注于辩论和戳痛对方痛处的吵架小能手
 
@@ -678,8 +678,8 @@ Prompt engineering需要理解用户的真正需求，设计引导式的提示�
 
 项目GitHub地址：https://github.com/yzfly/LangGPT
 
-项目执行指令，公众号后台后“LangGPT”获取，该指令是在在GPT上创建的，但是你可以复制该指令到其它项目上使用！
+项目执行指令，👸号后台后“LangGPT”获取，该指令是在在GPT上创建的，但是你可以复制该指令到其它项目上使用！
 
-AI交流群，可加我微信“duo112311”，AI知识星球圈子可直接扫下方二维码加入，目前星球本周结束后将涨价至99，抓紧了！我这边内容交付肯定是超预期的！
+AI交流群，可加我🛰️“duo112311”，AI知识星球圈子可直接扫下方二维码加入，目前星球本周结束后将涨价至99，抓紧了！我这边内容交付肯定是超预期的！
 
 ![](img/ab3000eb745f7c09c4b0618767dd1694.png)

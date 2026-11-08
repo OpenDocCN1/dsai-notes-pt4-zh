@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/BSHrd4E80oBVSCxdO9Kco4SOnYb](https://xuqiwei1986.feishu.cn/docx/BSHrd4E80oBVSCxdO9Kco4SOnYb)
 
-大家好，我是eaton，之前从事广告公司和自媒体；国内做过抖音、快手、小红书，有丰富的起号经验。但第一次接触AI赛道；5月6号发的第一个Youtube Shorts视频，随后“命运的齿轮”开始转动，希望这篇文章对做AI宠物故事的人有所帮助。希望大家可以看到最后，会帮你少走很多弯路。
+大家好，我是eaton，之前从事广告公司和自媒体；国内做过抖音、快手、📕，有丰富的起号经验。但第一次接触AI赛道；5月6号发的第一个Youtube Shorts视频，随后“命运的齿轮”开始转动，希望这篇文章对做AI宠物故事的人有所帮助。希望大家可以看到最后，会帮你少走很多弯路。
 
 ## 前言
 

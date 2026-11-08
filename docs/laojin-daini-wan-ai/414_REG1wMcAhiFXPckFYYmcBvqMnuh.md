@@ -4,11 +4,11 @@
 
 # **简介**
 
-> **本项目属于chatgpt-on-wecha**t 的 PC windows端个人微信版，基于WeChat-AIChatbot-WinOnly，由于跃迁大佬停更，所以备份一下，同时丰富一下原ntchat消息通道监听类型，方便开发对应类型插件。
+> **本项目属于chatgpt-on-wecha**t 的 PC windows端个人🛰️版，基于WeChat-AIChatbot-WinOnly，由于跃迁大佬停更，所以备份一下，同时丰富一下原ntchat消息通道监听类型，方便开发对应类型插件。
 
 > **本项目仅供学习和技术研究，请勿用于非法用途，如有任何人凭**此做何非法事情，均于作者无关，特此声明。
 
-+   **2024.4月开始微信限制低版本登录，为提高本项目使用门槛**，故不提供低版本登录解决方案，请自行解决 *
++   **2024.4月开始🛰️限制低版本登录，为提高本项目使用门槛**，故不提供低版本登录解决方案，请自行解决 *
 
 +   **只**能在Win平台运行项目！只能在Win平台运行项目！只能在Win平台运行项目! （ 重要的事情说三遍 ）
 
@@ -161,11 +161,11 @@ cp config-template.json config.json
 
 +   clear_memory_commands: 对话内指令，主动清空前文记忆，字符串数组可自定义指令别名。
 
-+   hot_reload: 程序退出后，暂存微信扫码状态，默认关闭。
++   hot_reload: 程序退出后，暂存🛰️扫码状态，默认关闭。
 
 +   character_desc [配置中保存](https://github.com/zhayujie/chatgpt-on-wechat/issues/43)着你对机器人说的一段话，他会记住这段话并作为他的设定，你可以为他定制任何人格 (关于会话上下文的更多内容参考该 issue)
 
-+   subscribe_msg：订阅消息，公众号和企业微信channel中请填写，当被订阅时会自动回复， 可使用特殊占位符。目前支持的占位符有{trigger_prefix}，在程序中它会自动替换成bot的触发词。
++   subscribe_msg：订阅消息，👸号和企业🛰️channel中请填写，当被订阅时会自动回复， 可使用特殊占位符。目前支持的占位符有{trigger_prefix}，在程序中它会自动替换成bot的触发词。
 
 [**本说明文档可能会未**](https://github.com/zhayujie/chatgpt-on-wechat/blob/master/config.py)**及时更新**，当前所有可选的配置项均在该config.py中列出。
 
@@ -185,7 +185,7 @@ python3 app.py
 pip install ntchat
 ```
 
-2.安装指定PC微信版本：WeChat3.6.0.18版本，扫码登陆好，关闭自动更新微信
+2.安装指定PC🛰️版本：WeChat3.6.0.18版本，扫码登陆好，关闭自动更新🛰️
 
 3.修改主项目配置项：config.json文件内
 

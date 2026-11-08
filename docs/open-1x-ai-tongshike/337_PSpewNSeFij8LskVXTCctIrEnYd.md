@@ -160,4 +160,4 @@ https://huggingface.co/spaces/SimFG/LangChain-Zilliz-Cloud
 
 ![](img/46e1eac7e7c4d4a7b797074707da807a.png)
 
-> 本手册由 编写，觉得不错在下方点个赞吧，更多建议与反馈，欢迎评论或联系玉鑫（微信：a1434088958）
+> 本手册由 编写，觉得不错在下方点个赞吧，更多建议与反馈，欢迎评论或联系玉鑫（🛰️：a1434088958）

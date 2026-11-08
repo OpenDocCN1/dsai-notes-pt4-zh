@@ -225,7 +225,7 @@ def load_layer1_knowledge_graph():
 
 这个Hook在Claude Code每次使用工具后自动触发，分析对话内容，提取有价值的信息保存下来。
 
-比如老金我写完一篇公众号文章后，它会自动提取一条记录：
+比如老金我写完一篇👸号文章后，它会自动提取一条记录：
 
 ```
 {
@@ -520,7 +520,7 @@ irm https://raw.githubusercontent.com/KimYx0207/claude-memory-3layer/main/instal
 
 这种语义级别的洞察，老金我的关键词匹配提取不了。
 
-但老金我写完一篇公众号文章后，PostToolUse Hook会自动提取一条结构化记录：标题、分类、公式、时效性，存到items.json里。
+但老金我写完一篇👸号文章后，PostToolUse Hook会自动提取一条结构化记录：标题、分类、公式、时效性，存到items.json里。
 
 这种结构化的知识管理，官方的MEMORY.md做不到。
 
@@ -534,7 +534,7 @@ irm https://raw.githubusercontent.com/KimYx0207/claude-memory-3layer/main/instal
 
 装上这套系统之前，老金我每次开新会话至少要花5分钟重新介绍项目。
 
-"我的项目是公众号写作助手"、"文章保存在articles/drafts目录"、"用老金风格写"。
+"我的项目是👸号写作助手"、"文章保存在articles/drafts目录"、"用老金风格写"。
 
 每次都是这一套，烦得很。
 
@@ -548,7 +548,7 @@ irm https://raw.githubusercontent.com/KimYx0207/claude-memory-3layer/main/instal
 
 知识条目超过20条后，Claude Code开始"懂"一些东西了。
 
-比如老金我说"写公众号"，它已经知道要用什么风格、文章保存在哪里。
+比如老金我说"写👸号"，它已经知道要用什么风格、文章保存在哪里。
 
 **第三周之后：真的回不去了**
 

@@ -184,7 +184,7 @@ https://mp.weixin.qq.com/s/CbVpS3OyNDXeyyxzOYBE0g
 
 ### 清华接手，YOLOv10问世：性能大幅提升，登上GitHub热榜
 
-https://mp.weixin.qq.com/s/3mQQbD1GJ8JBCMOXWDWJYA
+https://mp.weixin.qq.com/s/3m🐧bD1GJ8JBCMOXWDWJYA
 
 目标检测系统的标杆 YOLO系列，再次获得了重磅升级。自今年 2 月 YOLOv9 发布之后， YOLO（You Only Look Once）系列的接力棒传到了清华大学研究人员的手上。上周末，YOLOv10 推出的消息引发了 AI 界的关注。它被认为是计算机视觉领域的突破性框架，以实时的端到端目标检测能力而闻名，通过提供结合效率和准确性的强大解决方案，延续了 YOLO 系列的传统。
 
@@ -452,7 +452,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

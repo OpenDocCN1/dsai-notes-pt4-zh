@@ -1,8 +1,8 @@
-# 分享一个给小红书类型号做生产力工具的prompt编写思路
+# 分享一个给📕类型号做生产力工具的prompt编写思路
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/PUbzdW327ornKZxsdevcXrZRnjd](https://aiyanxishe.feishu.cn/docx/PUbzdW327ornKZxsdevcXrZRnjd)
 
-一位朋友在小红书用midjoumey做关于MBTI（16型人格）生成对应人格肖像的方式创作内容。得到了相当多的赞，于是他找到我，问能不能设计一个prompt，让小红书的粉丝可以利用这个prompt自己玩一下测试小游戏，确定自己是哪一类人格后抱走对应的肖像海报。
+一位朋友在📕用midjoumey做关于MBTI（16型人格）生成对应人格肖像的方式创作内容。得到了相当多的赞，于是他找到我，问能不能设计一个prompt，让📕的粉丝可以利用这个prompt自己玩一下测试小游戏，确定自己是哪一类人格后抱走对应的肖像海报。
 
 于是我先去其他小测试工具那里做了几轮测试，大概了解了这个测试的逻辑。又向朋友要了16型人最终的定义看了一遍，大概有了思路：
 
@@ -102,7 +102,7 @@ Soft warm dark lightfacial close-up，Expressiveforce，Film，Soft focus，Virt
 
 4、在一些重要“条款中，如果你希望chatGPT严格执行词条，可以加入“你必须“这样的强调语
 
-最后贴几张朋友在小红书的真吸引妹子·16型人格美图（质量当然比白送的小彩蛋好多了）
+最后贴几张朋友在📕的真吸引妹子·16型人格美图（质量当然比白送的小彩蛋好多了）
 
 ![](img/c5746b930e24f4d2500cba3a37ca40e7.png)
 

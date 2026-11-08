@@ -94,7 +94,7 @@ ruby
 wget https://huggingface.co/vdo/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt.safetensors?download=true -P checkpoints/ -O svd_xt.safetensors
 ```
 
-大模型发布在HuggingFace 上，文件大小接近10G，直接下载可能比较慢，随后我会上传到网盘，如果被封了，你也可以加我的微信 yinghuojun007 获取。
+大模型发布在HuggingFace 上，文件大小接近10G，直接下载可能比较慢，随后我会上传到网盘，如果被封了，你也可以加我的🛰️ yinghuojun007 获取。
 
 然后我们就可以启动程序了。
 

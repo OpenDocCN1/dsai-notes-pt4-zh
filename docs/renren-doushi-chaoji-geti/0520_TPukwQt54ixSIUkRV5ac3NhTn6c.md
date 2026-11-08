@@ -32,7 +32,7 @@
 
 +   剪映专业版（电脑）
 
-## 第一步：定制 Chrome 插件（抖音/小红书）
+## 第一步：定制 Chrome 插件（抖音/📕）
 
 ![](img/c44676d8a78c624789ef7b3be60857f4.png)
 
@@ -46,9 +46,9 @@
 
 [douyin extension.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DWrJbLNyboW08lx48cDcRt2Nn2c)
 
-### **Chrome小红书插件：**
+### **Chrome📕插件：**
 
-在抖音插件的基础上，我用 trae改写了脚本，做成了小红书的插件。可以按照@Super 黄的教程自行开发，或者找我获取；
+在抖音插件的基础上，我用 trae改写了脚本，做成了📕的插件。可以按照@Super 黄的教程自行开发，或者找我获取；
 
 ![](img/cc7f998c9cb4632b7780aa1d9d6dae45.png)
 
@@ -129,7 +129,7 @@ Base ID、Table ID：在飞书多维表的 link 内截取；
 
 ⚠️注意事项：
 
-+   飞书多维表的基础设置可以参考：[🌍Deepseek+飞书🐦=「小红书爆文生产机」](https://r0rel9lqdms.feishu.cn/docx/HxSXdAkvdos1MZx70aDcuWPVnof)中的教程步骤；
++   飞书多维表的基础设置可以参考：[🌍Deepseek+飞书🐦=「📕爆文生产机」](https://r0rel9lqdms.feishu.cn/docx/HxSXdAkvdos1MZx70aDcuWPVnof)中的教程步骤；
 
 +   字段设置时，请拉到最下面，开启“自动更新”选项。
 

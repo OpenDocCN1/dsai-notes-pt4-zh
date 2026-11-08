@@ -2,7 +2,7 @@
 
 > 来源：[https://aithinkup.feishu.cn/docx/NpcRdQbj5o7grnx1xMVchoSDnKM](https://aithinkup.feishu.cn/docx/NpcRdQbj5o7grnx1xMVchoSDnKM)
 
-[必看文章合集=【AGI观察】微信公众号+知乎](https://aithinkup.feishu.cn/wiki/EpyNwOUe1irXPlkcZZncQfFsn6f)
+[必看文章合集=【AGI观察】🛰️👸号+知乎](https://aithinkup.feishu.cn/wiki/EpyNwOUe1irXPlkcZZncQfFsn6f)
 
 ### 子目录：5.4 小技巧
 
@@ -12,7 +12,7 @@
 
 发布日期：2026年9月22日
 
-微信链接：https://mp.weixin.qq.com/s/Z-0IWz-L954M-ebjADBxRQ
+🛰️链接：https://mp.weixin.qq.com/s/Z-0IWz-L954M-ebjADBxRQ
 
 **归档理由：** “实用贴”且内容是如何“重构知识库”，这是非常具体、可操作的实践指南。
 
@@ -22,7 +22,7 @@
 
 发布日期：2025年9月17日
 
-微信链接：https://mp.weixin.qq.com/s/Sn1yB5kKbkHDROJNsZepMg
+🛰️链接：https://mp.weixin.qq.com/s/Sn1yB5kKbkHDROJNsZepMg
 
 **归档理由：** 这是一篇对AI生图工具的趣味性实测和体验分享，虽然风格轻松，但本质仍是对工具实践的记录。
 
@@ -32,7 +32,7 @@
 
 发布日期：2025年1月26日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/xNjXJ4enkw62fNMi-_qnqQ
 
@@ -44,7 +44,7 @@ https://mp.weixin.qq.com/s/xNjXJ4enkw62fNMi-_qnqQ
 
 发布日期：2025年2月25日
 
-微信链接：https://mp.weixin.qq.com/s/u2oBAu-lmw4gMXAF5hQXwg
+🛰️链接：https://mp.weixin.qq.com/s/u2oBAu-lmw4gMXAF5hQXwg
 
 **归档理由：** 引导读者去“试试”一个新应用或新功能，并介绍其用法，属于带有指南性质的实践分享。
 
@@ -54,6 +54,6 @@ SVG转JPG格式功能，#vibe coding一点小用处
 
 发布日期：2025年9月2日
 
-微信链接：https://mp.weixin.qq.com/s/qNXCkx_-oNIz7nUFQbpAzA
+🛰️链接：https://mp.weixin.qq.com/s/qNXCkx_-oNIz7nUFQbpAzA
 
 归档理由： 介绍一个具体的功能和“小用处”，是轻量级的实用技巧分享。

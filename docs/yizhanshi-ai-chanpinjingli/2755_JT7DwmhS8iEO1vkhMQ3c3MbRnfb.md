@@ -84,7 +84,7 @@
 
 +   [原文博客](https://loud-phalange-7f5.notion.site/Eleven-years-in-AI-What-does-it-actually-mean-to-be-a-researcher-2d56d9bccef780038ae9c27ffab59404)
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/Z3VtgQ7fhAU30gt4enGoBg)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/Z3VtgQ7fhAU30gt4enGoBg)
 
 > 4️⃣
 

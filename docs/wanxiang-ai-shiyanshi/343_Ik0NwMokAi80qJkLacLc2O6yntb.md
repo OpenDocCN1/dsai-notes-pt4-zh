@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/Ezhpdm0tmoV7JVxxfqWcPHSZnzh](https://yunyinghui.feishu.cn/docx/Ezhpdm0tmoV7JVxxfqWcPHSZnzh)
 
-> **作 者：**孙超  **来源公众号：**Datawhale
+> **作 者：**孙超  **来源👸号：**Datawhale
 
 > **推荐理由：**这篇文章介绍了如何使用字节跳动的方舟知识库来搭建个人或企业的AI知识库，重点在于其多模态能力和复杂文档处理能力。
 

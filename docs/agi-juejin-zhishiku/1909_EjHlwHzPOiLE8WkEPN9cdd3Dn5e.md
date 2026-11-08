@@ -140,7 +140,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/833/776.htm)
 
 ![](img/054e9e579f3d6cb1bf1b046140c8ad68.png)
 
-2月26日酷派宣布完成与「DeepSeek满血版本」深度融合，搭载该版本的原生智能系统「COOL OS」将通过OTA陆续推送升级。截至发文，OPPO、vivo等多家手机厂商已接入DeepSeek模型，百度搜索、微博等应用也在陆续接入 。
+2月26日酷派宣布完成与「DeepSeek满血版本」深度融合，搭载该版本的原生智能系统「COOL OS」将通过OTA陆续推送升级。截至发文，OPPO、vivo等多家手机厂商已接入DeepSeek模型，百度搜索、🧣等应用也在陆续接入 。
 
 ### 💡 Anthropic 新旗舰 AI 模型 Claude 3.7 Sonnet 训练成本曝光：仅数千万美元
 

@@ -66,7 +66,7 @@
 +   [函数应用](078_L27YwbzTaieNjqkXO2mcrTb9nAh.md)
 +   [各种文档汇总](079_UV6zwQrk8iHB2Ik2Ncvck11Qn0b.md)
 +   [04 高效工具合集](080_INKawgVS2i5VHtkniZxcA3FgnQb.md)
-+   [飞书向公众号定点排版](082_VPXLwTo3wiyZGkkGwe4cQUl9nze.md)
++   [飞书向👸号定点排版](082_VPXLwTo3wiyZGkkGwe4cQUl9nze.md)
 +   [PS快捷键操作](083_wikcnaSqvEn31vHPPrOsU55VPXg.md)
 +   [MacOS快捷键](084_MmnQwYpa8ir4spkv4bEcfMTHnre.md)
 +   [05 最佳实践加速器](086_BeSjwHiyciOFqlkicLOcJxc4nlb.md)

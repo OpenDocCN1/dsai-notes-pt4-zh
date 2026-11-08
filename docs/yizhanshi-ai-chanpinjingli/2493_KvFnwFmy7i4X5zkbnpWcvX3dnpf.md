@@ -36,27 +36,27 @@
 
 > 🎯
 
-> 用Qwen3+MCPs实现AI自动发布小红书笔记！支持图文和视频
+> 用Qwen3+MCPs实现AI自动发布📕笔记！支持图文和视频
 
 >
 
-+   魔搭自动发布小红书MCP更新，支持图文与视频发布，结合大模型及相关MCPs实现全自动化内容生产与发布。
++   魔搭自动发布📕MCP更新，支持图文与视频发布，结合大模型及相关MCPs实现全自动化内容生产与发布。
 
 +   准备Mac电脑与Cherry Studio，通过命令安装环境、登录账号，可选择用inspector调试发布功能。
 
-+   配置小红书发布助手，借助Qwen3-235B模型生成文案并自动发布。
++   配置📕发布助手，借助Qwen3-235B模型生成文案并自动发布。
 
 +   配置文生图MCP-server，如免费的魔搭文生图MCP等，可自动生成图片并发布。
 
 +   生成视频可使用MiniMax MCP。
 
-> 关键词：Qwen3，MCPs，小红书自动发布，AI内容生成
+> 关键词：Qwen3，MCPs，📕自动发布，AI内容生成
 
 >
 
 > 🔗 文中引用的链接
 
-+   [小红书发布MCP魔搭地址](https://www.modelscope.cn/mcp/servers/@XGenerationLab/xhs_mcp_server)
++   [📕发布MCP魔搭地址](https://www.modelscope.cn/mcp/servers/@XGenerationLab/xhs_mcp_server)
 
 +   Qwen3-235B-A22B模型地址
 

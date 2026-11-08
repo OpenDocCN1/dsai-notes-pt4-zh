@@ -4,7 +4,7 @@
 
 # 万能公式
 
-> 91 AIGC娜娜子发布了一篇小红书笔记，快来看吧！ 😆 YhEcsigLtirWZUt 😆 http://xhslink.com/a/TWDLwkoc31VX，复制本条信息，打开【小红书】App查看精彩内容！
+> 91 AIGC娜娜子发布了一篇📕笔记，快来看吧！ 😆 YhEcsigLtirWZUt 😆 http://xhslink.com/a/TWDLwkoc31VX，复制本条信息，打开【📕】App查看精彩内容！
 
 效果棒棒，试了国内外七八个在线AI生图软件，在线软件直出，没做任何调整。
 

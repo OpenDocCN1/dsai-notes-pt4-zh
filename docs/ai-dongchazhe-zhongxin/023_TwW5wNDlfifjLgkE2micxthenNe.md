@@ -46,7 +46,7 @@ bot互助群
 
 1.  智能体开发者流量变现能力，详情可参见 https://bluead.ai/
 
-1.  智能体应用市场排名优化，如**果您想优化 Coz**e 应用市场上的 Bot 排名，寻求更大的流量曝光，请联系我们，或进入我们的官方群聊。📧Email： yucheng.jin@bluefocus.com   ，微信请添加  jin_yucheng
+1.  智能体应用市场排名优化，如**果您想优化 Coz**e 应用市场上的 Bot 排名，寻求更大的流量曝光，请联系我们，或进入我们的官方群聊。📧Email： yucheng.jin@bluefocus.com   ，🛰️请添加  jin_yucheng
 
 ## **四、 我们的更新日志**
 

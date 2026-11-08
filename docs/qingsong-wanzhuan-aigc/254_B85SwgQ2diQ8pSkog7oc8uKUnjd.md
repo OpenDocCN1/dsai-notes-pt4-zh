@@ -112,7 +112,7 @@ ChatGPT 个人使用场景分享 @Joe Hu
 
 AIGC 给品牌全案助力 | 个人单刷全案@大摩托车
 
-我用我的微信聊天记录和 280 篇博客文章，做了我自己的数字克隆 AI @王登科
+我用我的🛰️聊天记录和 280 篇博客文章，做了我自己的数字克隆 AI @王登科
 
 哄哄模拟器的完整复盘，火了，但一度让我很发愁 @王登科
 
@@ -138,9 +138,9 @@ AIGC 给品牌全案助力 | 个人单刷全案@大摩托车
 
 **@Lex Fridman**：[YouTube 主页](https://www.youtube.com/@lexfridman) —— MIT 研究科学家出身的顶流播客主。以超长深度的面对面访谈闻名，嘉宾包括 Sam Altman、Elon Musk、Mark Zuckerberg 等科技巨头及顶级学者。内容不仅限于技术，更深入探讨 AI 的哲学、伦理、意识以及人类的未来，思想密度极高。
 
-**@Jeff Su**：[YouTube 主页](https://www.youtube.com/@JeffSu)、小红书（杰夫）——Google 上海从业。自媒体提供工作效率和个人成长的相关内容，分享技术专业技巧，特别是与 ChatGPT 和 Google Bard 等 AI 工具的使用相关。特别高质量的 youtuber
+**@Jeff Su**：[YouTube 主页](https://www.youtube.com/@JeffSu)、📕（杰夫）——Google 上海从业。自媒体提供工作效率和个人成长的相关内容，分享技术专业技巧，特别是与 ChatGPT 和 Google Bard 等 AI 工具的使用相关。特别高质量的 youtuber
 
-**@宝玉**：[微博](https://weibo.com/u/1727858283)&X——AIGC 技术的应用、趋势以及相关的技术分享大牛，提出“两遍翻译法”长文翻译大受欢迎
+**@宝玉**：[🧣](https://weibo.com/u/1727858283)&X——AIGC 技术的应用、趋势以及相关的技术分享大牛，提出“两遍翻译法”长文翻译大受欢迎
 
 **@Tina Huang**：[YouTube 主页](https://www.youtube.com/@TinaHuang1) —— 前 Meta 数据科学家（Data Scientist）。主要分享数据科学领域的职业规划、高效学习方法论（如 SQL、Python）以及如何利用 AI 工具提升职场与学习效率。风格清晰干练，非常适合学生及希望通过 AI 技能实现职场进阶的打工人。
 

@@ -138,7 +138,7 @@
 
 [55个值得收藏的 Midjourney 生成图片关键词](https://xmgtoagi.feishu.cn/wiki/LROJw2jLuifJF7kJOUTcTzdQn6c)
 
-[7000字干货全面解析Midjourney参数和指令](https://xmgtoagi.feishu.cn/wiki/JOXQwQQMSijhxOklUxJczzZwnsc)
+[7000字干货全面解析Midjourney参数和指令](https://xmgtoagi.feishu.cn/wiki/JOXQw🐧MSijhxOklUxJczzZwnsc)
 
 [AI 绘画神器 Midjourney 进阶使用技巧总结](https://xmgtoagi.feishu.cn/wiki/YjLqwSw5siVxhdkbmMxczCDAnje)
 

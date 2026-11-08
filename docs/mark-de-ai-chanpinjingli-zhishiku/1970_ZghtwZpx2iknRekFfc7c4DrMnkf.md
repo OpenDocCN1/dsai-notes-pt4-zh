@@ -1,4 +1,4 @@
-# AI工具 链接直达（部分需要挂梯子）
+# AI工具 链接直达（部分需要挂🪜）
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Jqf2d6E75oWH8GxGe3WcoB7knLf](https://qqs7y1hozd1.feishu.cn/docx/Jqf2d6E75oWH8GxGe3WcoB7knLf)
 

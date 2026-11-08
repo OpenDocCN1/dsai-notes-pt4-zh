@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/FXcSdbXOAoVpumxLuYScRZjrndb](https://yunyinghui.feishu.cn/docx/FXcSdbXOAoVpumxLuYScRZjrndb)
 
-> **说明：**原文作者 mitin，发布于公众号腾讯技术工程，本文为Mix AI Lab推荐的 prompt 学习优质分享内容。
+> **说明：**原文作者 mitin，发布于👸号腾讯技术工程，本文为Mix AI Lab推荐的 prompt 学习优质分享内容。
 
 # 前言
 
@@ -605,7 +605,7 @@ reflection = reflexion(score, result)
 
 1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国微信 ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 3.**关于文档负责人大国**：高帆文化 CEO，曾就职于教培大厂，目前创业，主攻研究 AI 落地应用、企业流量增长及达人 IP 孵化。
 
@@ -617,11 +617,11 @@ reflection = reflexion(score, result)
 
 ![](img/f701d1d3e356341e6ebed855248be7ce.png)
 
-**微信好友**
+**🛰️好友**
 
 （ID：zhangyuguo94s）
 
-**扫码加微信入微信群**
+**扫码加🛰️入🛰️群**
 
 进群或者加好友了解更多 AI 相关信息
 

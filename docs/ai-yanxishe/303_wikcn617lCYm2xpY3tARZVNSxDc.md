@@ -42,7 +42,7 @@
 
 ![](img/62977346bb056a99a5b7161b2bf5dd54.png)
 
-### 《小红书AI美图项目》保姆级教学，单号即可
+### 《📕AI美图项目》保姆级教学，单号即可
 
 ![](img/9b0a0da98fc853998d9870d31f691f73.png)
 
@@ -50,7 +50,7 @@
 
 ![](img/6305364b732c820b58587cd8d277b539.png)
 
-### [《小红书旅游掘金计划》三分钟一个](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&op=display&id=12359&do=lesson&m=fy_lessonv2&uid=6)作品，AI一键生成文案，宝妈轻松300+
+### [《📕旅游掘金计划》三分钟一个](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&op=display&id=12359&do=lesson&m=fy_lessonv2&uid=6)作品，AI一键生成文案，宝妈轻松300+
 
 ![](img/aeb2263bf1399b421e11e769a85f0390.png)
 
@@ -66,7 +66,7 @@
 
 ![](img/3c124204407ea9a5e92dab1ef394693b.png)
 
-### 《小红书AI帅哥赛道》涨粉迅速，轻松万元
+### 《📕AI帅哥赛道》涨粉迅速，轻松万元
 
 ![](img/252d9540170af27cb8a2446ba7630096.png)
 
@@ -98,7 +98,7 @@
 
 ![](img/5a657f6a33b64a9405e38bd8d4bbfbce.png)
 
-### 《AI公众号日引200+创业粉》日稳定变现4000+
+### 《AI👸号日引200+创业粉》日稳定变现4000+
 
 ![](img/4d6ee2d8471db23adb5e7c5aa6923c60.png)
 
@@ -118,7 +118,7 @@
 
 ![](img/656b5a189cd067761d4db6c8e4ef5b9b.png)
 
-### 《AI小红书涨粉变现训练营》抓住AI智能生成与小红书时代双重红利
+### 《AI📕涨粉变现训练营》抓住AI智能生成与📕时代双重红利
 
 ![](img/7033d6f33e2f28afba3512898c52cea7.png)
 
@@ -146,7 +146,7 @@
 
 ![](img/49f8f462d27aa1f2266a8c098ca51c2c.png)
 
-### 《小红书AI宠物图片定制项目》500+
+### 《📕AI宠物图片定制项目》500+
 
 ![](img/6537b0018d50e988c27c6a73824f1c79.png)
 
@@ -186,7 +186,7 @@
 
 ![](img/0eb42ab2784e7c9b31dbe2f8d8f15a8a.png)
 
-# 小红书搞钱指南
+# 📕搞钱指南
 
 <https://aiyanxishe.feishu.cn/sync/OtQ2dguH7slySbbLhuucEV6inQi>
 

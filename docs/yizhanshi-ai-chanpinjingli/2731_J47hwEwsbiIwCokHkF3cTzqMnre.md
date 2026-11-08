@@ -1,6 +1,6 @@
 # 1🈷️08日
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/Pg6QdP3ExoHDeExQQhOcGZ8Un2f](https://v11enp9ok1h.feishu.cn/docx/Pg6QdP3ExoHDeExQQhOcGZ8Un2f)
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/Pg6QdP3ExoHDeEx🐧hOcGZ8Un2f](https://v11enp9ok1h.feishu.cn/docx/Pg6QdP3ExoHDeEx🐧hOcGZ8Un2f)
 
 > 🔔AI情报助手晚报「01月08日」
 
@@ -122,7 +122,7 @@
 
 +   Qwen-Image技术报告
 
-+   （注：文中提及未附直接链接，可关注AINLP公众号回复"image"获取）
++   （注：文中提及未附直接链接，可关注AINLP👸号回复"image"获取）
 
 > 5️⃣
 

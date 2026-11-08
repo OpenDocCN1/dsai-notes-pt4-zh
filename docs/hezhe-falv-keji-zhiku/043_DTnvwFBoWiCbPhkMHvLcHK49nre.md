@@ -16,7 +16,7 @@
 
 ![](img/15d7d9dce566fbb62202a37d91160328.png)
 
-+   **课程资料**：课程回放、课件、作[业习题等课程资料，将](https://legalstudio.feishu.cn/docx/DpfCdLHqboG6myxXKPpcj4Qpnog#XhsbdNrkZohKiix2jmHcs15mnsv)于每天课程结束后发送到【法律人的 AI 应用课 0 期】微信群，同时也会上传至本文档汇总 👉 课程资料（持续更新）
++   **课程资料**：课程回放、课件、作[业习题等课程资料，将](https://legalstudio.feishu.cn/docx/DpfCdLHqboG6myxXKPpcj4Qpnog#XhsbdNrkZohKiix2jmHcs15mnsv)于每天课程结束后发送到【法律人的 AI 应用课 0 期】🛰️群，同时也会上传至本文档汇总 👉 课程资料（持续更新）
 
 +   **提前准备**：
 
@@ -66,10 +66,10 @@ https://appoff2dael4481.h5.xiaoeknow.com/p/course/ecourse/course_2tsS2dohbb5fqf1
 
 [0307线上分享V4.0-刘红林.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZP8Nb1sbUoiE0Vx264hck6pBnTe)
 
-+   微信里的“无感”AI
++   🛰️里的“无感”AI
 
 +   [法律 AI 通识：10x 法律人进阶之路
-—— 微信里的“无感”AI](https://legalstudio.feishu.cn/wiki/KgF1wMD0diQFXgkCdTRcPwBQnI3?from=from_copylink)
+—— 🛰️里的“无感”AI](https://legalstudio.feishu.cn/wiki/KgF1wMD0diQFXgkCdTRcPwBQnI3?from=from_copylink)
 
 +   如何利用 AI 赋能法律研究与诉讼实务
 

@@ -2,9 +2,9 @@
 
 > 来源：[https://now.feishu.cn/docx/WqT4dhJy0oxHlExtl3xcBKiCnve](https://now.feishu.cn/docx/WqT4dhJy0oxHlExtl3xcBKiCnve)
 
-如果没有梯子，看第一步流程，如果没有Google账号，看第二步流程
+如果没有🪜，看第一步流程，如果没有Google账号，看第二步流程
 
-# 第一步：准备梯子
+# 第一步：准备🪜
 
 1.  访问并注册登录：https://www.zpcloud01.site/auth/register?code=Ig5r
 

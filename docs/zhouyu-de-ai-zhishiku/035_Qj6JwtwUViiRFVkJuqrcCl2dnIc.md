@@ -2044,7 +2044,7 @@ generateCodes();
 
 请刷新页面测试 Credits 页面的修复效果！
 
-1、用户账号界面菜单栏，打开的网页地址不对，怎么都是http://localhost:3000/#pricing-section？应该改成对应的子页面例如（/credits）。；2、This Month Usage移除掉，简化后的方案即可；3、生成的图片同步在My Creations的情况要检查，因为我发现不会上传同步用户生图图的历史；4、批量创建 50 个优惠码，我的firebase账号是我的谷歌账号qzyecho354912808@gmail.com;密码：QQq354912808;你试试看对不对，另外我想问我们项目中有两个cloud 项目信息@DEPLOYMENT.md#L72-83 ，生成的时候使用哪个项目cloud shell服务生成呢？我有点混淆，请给我解答。似乎firebase里面没有cloud shell，要进入到google cloud里面才能用cloud shell。
+1、用户账号界面菜单栏，打开的网页地址不对，怎么都是http://localhost:3000/#pricing-section？应该改成对应的子页面例如（/credits）。；2、This Month Usage移除掉，简化后的方案即可；3、生成的图片同步在My Creations的情况要检查，因为我发现不会上传同步用户生图图的历史；4、批量创建 50 个优惠码，我的firebase账号是我的谷歌账号qzyecho354912808@gmail.com;密码：🐧q354912808;你试试看对不对，另外我想问我们项目中有两个cloud 项目信息@DEPLOYMENT.md#L72-83 ，生成的时候使用哪个项目cloud shell服务生成呢？我有点混淆，请给我解答。似乎firebase里面没有cloud shell，要进入到google cloud里面才能用cloud shell。
 
 ![](img/2e1db49e9a957c1aefdb2cc8c3ac715a.png)
 

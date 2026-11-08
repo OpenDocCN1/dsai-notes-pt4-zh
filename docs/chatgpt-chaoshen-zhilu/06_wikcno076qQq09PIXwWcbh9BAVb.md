@@ -2,7 +2,7 @@
 
 > 来源：[https://bwiny5w2svt.feishu.cn/docx/MadwdNhgooa4dIxSI55cGXgHn1g](https://bwiny5w2svt.feishu.cn/docx/MadwdNhgooa4dIxSI55cGXgHn1g)
 
-> 打造最NB的ChatGPT资料库，加入免费社群（见底部微信）获取每日更新资讯，如有帮助请**收藏并转发**
+> 打造最NB的ChatGPT资料库，加入免费社群（见底部🛰️）获取每日更新资讯，如有帮助请**收藏并转发**
 
 ## 做PPT简单快速
 
@@ -808,7 +808,7 @@ GPTs提示词：
 
 ** - ****ChatGPT****让每个普通人，不再平庸 -**
 
-链接博主+免费AI社群+商务合作                                                      公众号：AI超体进化室
+链接博主+免费AI社群+商务合作                                                      👸号：AI超体进化室
 
 ![](img/37e74dec225e030e515a68f3866200f0.png)
 

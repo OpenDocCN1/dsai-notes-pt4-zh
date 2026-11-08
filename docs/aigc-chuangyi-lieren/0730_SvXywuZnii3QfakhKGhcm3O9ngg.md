@@ -4,7 +4,7 @@
 
 > 链接: https://mp.weixin.qq.com/s/HmEijK18I1E9_jFZu2un6A
 
-> 作者：阿真   公众号：阿真Irene
+> 作者：阿真   👸号：阿真Irene
 
 嗨大家好！周末愉快！
 

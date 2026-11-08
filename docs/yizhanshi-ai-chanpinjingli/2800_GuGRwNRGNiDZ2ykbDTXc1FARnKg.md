@@ -22,7 +22,7 @@
 
 +   用sub-agent、上下文压缩、heartbeat机制处理复杂长期任务
 
-+   本质是大模型从“会聊天”升级为“会干活”，关键在于Context Engineering；课件可关注AINLP公众号回复'lhy2026'获取
++   本质是大模型从“会聊天”升级为“会干活”，关键在于Context Engineering；课件可关注AINLP👸号回复'lhy2026'获取
 
 > 关键词：AI Agent，OpenClaw，李宏毅，Context Engineering，工具调用
 

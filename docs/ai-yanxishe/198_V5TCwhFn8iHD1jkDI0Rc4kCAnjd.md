@@ -2,7 +2,7 @@
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/YB2ndvyw7obNksxANWncAEZjnde](https://aiyanxishe.feishu.cn/docx/YB2ndvyw7obNksxANWncAEZjnde)
 
-🔥加下方微信ID：mufansay123 领AI副业工具资料包，涵盖60+AI搞钱必备工具，并进入免费AI学习群。
+🔥加下方🛰️ID：mufansay123 领AI副业工具资料包，涵盖60+AI搞钱必备工具，并进入免费AI学习群。
 
 ![](img/ecdd14ecbd2aa642219b7dca00ac884a.png)
 

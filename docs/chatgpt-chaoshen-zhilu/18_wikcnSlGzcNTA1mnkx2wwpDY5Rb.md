@@ -108,13 +108,13 @@ GPT-4 currently has a cap of 25 messages every 3 hours.
 
 **相关书籍： **
 
-+   chatGPT亚马逊热销书籍：[点击查看书籍具体介绍 ](https://zhuanlan.zhihu.com/p/622622750)（加博主微信领取。中文/英文版本）
++   chatGPT亚马逊热销书籍：[点击查看书籍具体介绍 ](https://zhuanlan.zhihu.com/p/622622750)（加博主🛰️领取。中文/英文版本）
 
 ![](img/04ff0794b814b191ef7517424da0d839.png)
 
 ## 有哪些不错的chatGPT github项目？
 
-+   把chatGPT接入微信和微信群：https://github.com/zhayujie/chatgpt-on-wechat
++   把chatGPT接入🛰️和🛰️群：https://github.com/zhayujie/chatgpt-on-wechat
 
 ## ChatGPT用不了，有哪些平替产品？
 
@@ -122,7 +122,7 @@ GPT-4 currently has a cap of 25 messages every 3 hours.
 
 Claude优缺点介绍：
 
-优点：免费、不用魔法上网，响应速度比较快、也能理解上下文。
+优点：免费、不用🪜，响应速度比较快、也能理解上下文。
 
 缺点：和ChatGPT一样不能联网。
 
@@ -188,7 +188,7 @@ chatGPT页面如果长时间不使用，再发送问题时，它会报错。
 
 1.  身份设定：你是我的数字分身，我将把我所有的私人信息告诉你。你将模仿我的一切，包括：回答的思想，语气等。
 
-1.  资料投喂：把你数字相关的资料都投喂给它，evernote笔记、网易云音乐喜欢的音乐、各大平台发表的文章（知乎、QQ空间、微信朋友圈等）、阅读的书籍、抖音喜欢/收藏列表... （技术点：chatGPT接收的token长度有限制，得其他办法优化数据源）
+1.  资料投喂：把你数字相关的资料都投喂给它，evernote笔记、网易云音乐喜欢的音乐、各大平台发表的文章（知乎、🐧空间、🛰️朋友圈等）、阅读的书籍、抖音喜欢/收藏列表... （技术点：chatGPT接收的token长度有限制，得其他办法优化数据源）
 
 1.  制作分身：通过绘画工具生成数字人模型，通过声音[工具打造你的声](https://chat.openai.com/)音[，通过chatGPT](https://midjourney.com/)生[成回答的](https://studio.d-id.com/)内[容。从思想+](https://mubert.com/)声音+外形三位一体建立你的数字分身。使用的技术：ChatGPT，Midjourney，D-ID，Mubert
 
@@ -196,7 +196,7 @@ chatGPT页面如果长时间不使用，再发送问题时，它会报错。
 
 在线对话体验地址：https://ai.greatdk.com/
 
-+   [我用我的 10 万条微信聊天记录和 280](https://www.v2ex.com/t/931521) 篇博客文章，做了我自己的数字克隆 AI
++   [我用我的 10 万条🛰️聊天记录和 280](https://www.v2ex.com/t/931521) 篇博客文章，做了我自己的数字克隆 AI
 
 ![](img/ec026e4b08b3cccf36df592a5ea37dfb.png)
 
@@ -406,7 +406,7 @@ GPTs学习资源：
 
 4、GPTs相关资源：https://github.com/EmbraceAGI/Awesome...
 
-## 如何让GPTs返回我的微信二维码图片？
+## 如何让GPTs返回我的🛰️二维码图片？
 
 分两步：
 
@@ -431,7 +431,7 @@ https://gd-hbimg.huaban.com/574359e9e71d07e554dd6eb35936985de95625c22c011-4J3e1G
 
 比如我之前写的两个应用场景：
 
-+   3分钟极速、免费搭建自己的ChatGPT网站，再也不用魔法上网了
++   3分钟极速、免费搭建自己的ChatGPT网站，再也不用🪜了
 
 +   ChatGPT插件+Webstorm效率再翻翻，快的飞起来
 
@@ -542,7 +542,7 @@ gpt-3.5-turbo，gpt-3.5-turbo-0301之间的区别如下：
 
 ** - ****ChatGPT****让每个普通人，不再平庸 -**
 
-链接博主+免费AI社群+商务合作                                                      公众号：AI超体进化室
+链接博主+免费AI社群+商务合作                                                      👸号：AI超体进化室
 
 ![](img/c161dc2f9ad39a79fe81b5122797a3ad.png)
 

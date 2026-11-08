@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/Oo1ndCLRkoORWpxTyNscFCEUnVg](https://aigcreative.feishu.cn/docx/Oo1ndCLRkoORWpxTyNscFCEUnVg)
 
-> 来源：公众号-机器之能
+> 来源：👸号-机器之能
 
 > 链接：https://mp.weixin.qq.com/s/uxS_juW35vSejDUi0iKmfA
 
@@ -116,7 +116,7 @@ https://sketch.metademolab.com/
 
 最后下载保存。
 
-不过，Animate Drawing 生成的是个 mp4 格式的视频。我们可以去微信小程序上搜「视频转动图」类的小工具，将其转成 gif 动图。
+不过，Animate Drawing 生成的是个 mp4 格式的视频。我们可以去🛰️小程序上搜「视频转动图」类的小工具，将其转成 gif 动图。
 
 上效果：
 

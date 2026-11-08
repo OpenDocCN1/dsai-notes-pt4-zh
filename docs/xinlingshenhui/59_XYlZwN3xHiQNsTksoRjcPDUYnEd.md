@@ -312,6 +312,6 @@ A bell 3D icon design, cute and cartoonish, smooth and glossy, with a frosted gl
 
 # 如有错误❌，欢迎指正。👏
 
-同时也欢迎各位宝子的补充。大家共同学习。欢迎加微信和社群！
+同时也欢迎各位宝子的补充。大家共同学习。欢迎加🛰️和社群！
 
 ![](img/4adac5bbda45903be38351d132c63215.png)

@@ -202,7 +202,7 @@
 
 +   案例：[律商联讯](https://mp.weixin.qq.com/s/iniB21m0_H-TF_09wObraA)｜[秘塔](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247489851&idx=1&sn=faa55058950fbea3e94ae4daf472eaf3&scene=21#wechat_redirect)｜[跨盈数字名片](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247489905&idx=1&sn=45978b898219f1d73b5dde8666df8ef5&scene=21#wechat_redirect)｜[幂律智能](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247490845&idx=1&sn=3d0c2b77ae6bfd7f5de118b80d649183&scene=21#wechat_redirect)｜[无忧吾律](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247491278&idx=1&sn=a63771d9fff80e518266761a8ccdf419&scene=21#wechat_redirect)｜[法大大](https://mp.weixin.qq.com/s/aRISdf8pPdAFj59jfraOlw)｜[慧卷卷](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247489338&idx=1&sn=9bc5dc342e969507676b39de7c4df84c&scene=21#wechat_redirect)｜[金山晓法](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488909&idx=1&sn=add1cb28042bcba27f7eac6e13f36453&scene=21&token=442954942&lang=zh_CN#wechat_redirect)｜法保网｜法智
 
-+   **文章发布**：在「法律修音机」公众号头条发布文章，能够精准覆盖 1W+ 对法律科技感兴趣的活跃人群。
++   **文章发布**：在「法律修音机」👸号头条发布文章，能够精准覆盖 1W+ 对法律科技感兴趣的活跃人群。
 
 +   **智库收录**：文章被收录至「何者 Hezher 法律科技智库」（飞书官方社区收录并推荐，部分页面被搜索引擎收录），长期留存，覆盖飞书企业用户，如大企业法务部、数字化良好的律所、关注法律科技的律师等。
 

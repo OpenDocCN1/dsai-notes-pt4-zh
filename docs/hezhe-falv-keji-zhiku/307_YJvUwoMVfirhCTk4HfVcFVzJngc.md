@@ -146,7 +146,7 @@
 
 +   营销端：
 
-+   撰写公众号文章：[【工作流】写公众号文章](https://legalstudio.feishu.cn/wiki/FaHOwcCtRibV15kBC38c2Dptndg)
++   撰写👸号文章：[【工作流】写👸号文章](https://legalstudio.feishu.cn/wiki/FaHOwcCtRibV15kBC38c2Dptndg)
 
 +   工具：[各类 AI Chat 工具](https://legalstudio.feishu.cn/docx/RQL0dXkrhoZmDsx2umrcZLqCnqf#JIiydVqcmogaWixixDwctHNjnRc)
 

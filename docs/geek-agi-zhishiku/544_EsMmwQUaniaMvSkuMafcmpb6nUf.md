@@ -4,7 +4,7 @@
 
 # [卷疯了！最强开源大模型Llama 3发布，最大参数4](https://mp.weixin.qq.com/s/GoxWufZhemddpvCkOwYAKg)000亿，小扎内心：大模型比元宇宙香多了
 
-文章来源：公众号：AI前线
+文章来源：👸号：AI前线
 
 ## ▎一句话描述
 

@@ -66,6 +66,6 @@
 
 +   技术社区：GotoAI中国技术社区、Reddit r/LangChain
 
-+   求职社群：大模型应用开发交流群（微信 / QQ）
++   求职社群：大模型应用开发交流群（🛰️ / 🐧）
 
 +   开源社区：Hugging Face Discussions、GitHub Issues

@@ -6,7 +6,7 @@
 
 视频链接："Will digital intelligence replace biological intelligence? https://www.youtube.com/watch?v=N1TEjTeQeg0
 
-建议看原视频，一些公众号视频号有这个演讲，可以找找看。我找到了一个相对全面的内容翻译：https://mp.weixin.qq.com/s/8qc-jzc3jrEoltz6PaKRQg
+建议看原视频，一些👸号视频号有这个演讲，可以找找看。我找到了一个相对全面的内容翻译：https://mp.weixin.qq.com/s/8qc-jzc3jrEoltz6PaKRQg
 
 ## **基础文档分析：**
 

@@ -80,7 +80,7 @@
 
 分析完以后我觉得，**把MJ收购了**应该就能用中文了、而且不用魔法。
 
-结果小马哥还真入股了MJ，直接在QQ频道开了[中国区Mindjourney](https://yw55ojhusnq.feishu.cn/wiki/YGJbwdk5HiHepok9MlUceB18n35)国区的Midjourney（加入方法看这里  ）
+结果小马哥还真入股了MJ，直接在🐧频道开了[中国区Mindjourney](https://yw55ojhusnq.feishu.cn/wiki/YGJbwdk5HiHepok9MlUceB18n35)国区的Midjourney（加入方法看这里  ）
 
 ![](img/6b37d9a504bf77f92e92ad5b79ed5345.png)
 
@@ -94,7 +94,7 @@
 
 门[最强Ai绘画工具VEGA.AI（制作中）](https://yw55ojhusnq.feishu.cn/wiki/P58pw4353irg4mkko1bcU4A6ndb)极低、完全免费、可控性强、学习门槛低、不要魔法访问、不要英文prompt、出图效果好……甚至超出了我的需求，还可以免费定制的模型：👉
 
-**1.门槛极低**：网页版，任何手机电脑都能用，微信还有小程序；
+**1.门槛极低**：网页版，任何手机电脑都能用，🛰️还有小程序；
 
 **2.完全免费**：到目前为止不收取任何费用；**（而且他们家炼丹也是免费的）**
 

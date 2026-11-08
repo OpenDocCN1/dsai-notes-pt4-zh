@@ -2,7 +2,7 @@
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/NrVQdq2U5onLbBxRT5ucgndbnLt](https://v11enp9ok1h.feishu.cn/docx/NrVQdq2U5onLbBxRT5ucgndbnLt)
 
-11 月 12 日至 11 月 16 日 EMNLP 202[4 在美弗罗里达火热举办中，](https://aclanthology.org/events/emnlp-2024/)本文精选了 EMNLP 2024 论文集中被引量最高的15篇论文*。不出意外的是，绝大**多数**工作和LLM相关。后续我们还会继续陆续发布不同领域的 EMNLP 2024 高引盘点，在机智流公众号后台对话框回复“盘点”，加入顶会论文盘点交流群。
+11 月 12 日至 11 月 16 日 EMNLP 202[4 在美弗罗里达火热举办中，](https://aclanthology.org/events/emnlp-2024/)本文精选了 EMNLP 2024 论文集中被引量最高的15篇论文*。不出意外的是，绝大**多数**工作和LLM相关。后续我们还会继续陆续发布不同领域的 EMNLP 2024 高引盘点，在机智流👸号后台对话框回复“盘点”，加入顶会论文盘点交流群。
 
 *注：引用数据来自谷歌学术，数据统计截止 2024 年 11 月 13 日
 

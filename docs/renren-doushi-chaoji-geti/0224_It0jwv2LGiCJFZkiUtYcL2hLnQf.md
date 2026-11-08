@@ -6,7 +6,7 @@
 
 # GPT-Image-1 工作流
 
-OpenAI 在今天发布了 GPT-Image-1 API（与 ChatGPT 4o 图像模型相同的模型）。ComfyUI 现在支持通过原生的 API 节点（测试版）来使用 OpenAI 最新的图像生成模型，让你无需复杂的 API 密钥，直接在 ComfyUI 中访问最先进的功能。而且可以使用微信或者支付宝直接充值使用OpenAI GPT-Image-1，OpenAI DALL·E 3，OpenAI DALL·E 2三个不同的生成图片模型，无需CHATGPT账号。下面来来详细介绍ComfyUI 工作流中使用 OpenAI 三种生图模型 批量出图保姆级教程。
+OpenAI 在今天发布了 GPT-Image-1 API（与 ChatGPT 4o 图像模型相同的模型）。ComfyUI 现在支持通过原生的 API 节点（测试版）来使用 OpenAI 最新的图像生成模型，让你无需复杂的 API 密钥，直接在 ComfyUI 中访问最先进的功能。而且可以使用🛰️或者支付宝直接充值使用OpenAI GPT-Image-1，OpenAI DALL·E 3，OpenAI DALL·E 2三个不同的生成图片模型，无需CHATGPT账号。下面来来详细介绍ComfyUI 工作流中使用 OpenAI 三种生图模型 批量出图保姆级教程。
 
 ### **为啥用ComfyUI？核心是批量自动**生成图片 且可以结合其他AI视频模型，AI音频模型，AI数字人模型，共同制作AI视频。
 

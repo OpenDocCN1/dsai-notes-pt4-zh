@@ -12,7 +12,7 @@
 
 > 转载自 真故研究室
 
-> 量子位 | 公众号 QbitAI
+> 量子位 | 👸号 QbitAI
 
 ![](img/706d20c505ccfacab7453552ce2e2e0b.png)
 

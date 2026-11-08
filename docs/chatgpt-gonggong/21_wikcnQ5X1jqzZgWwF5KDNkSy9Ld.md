@@ -10,7 +10,7 @@
 
 > **持续更新 **ChatGPT 应用的相关学习知识，包含入门学习，商业应用，提效应用，优势应用，赚钱案例等教程内容，永久免费在线查看，欢迎收藏转发支持，文末有惊喜，Harload出品，必属精品。
 
-> 友情提示：需要**科学上网**及懂一些**英文基础**。
+> 友情提示：需要**🪜**及懂一些**英文基础**。
 
 > 其他文档：[ChatGPT学习和应用工具包](https://nqa5sj7i45.feishu.cn/wiki/wikcn25R3JMlWxtY84aRxZd6x0f)
 
@@ -84,7 +84,7 @@ ChatGPT的主要功能是回答用户的问题和完成各种语言任务，如�
 
 1.  关于 AI 的 900+ 个项目，一口气看完【下】
 
-1.  [「用 ChatGPT 搞钱年入百万！」各路](https://mp.weixin.qq.com/s/QlrpZ_tpue_EnhelwLfAcQ)博主发布生财之道，网友回呛：答辩的搬运工
+1.  [「用 ChatGPT 搞钱年入百万！」各路](https://mp.weixin.qq.com/s/QlrpZ_tpue_EnhelwLfAcQ)博主发布赚钱之道，网友回呛：答辩的搬运工
 
 1.  [注册 200 个账号，卖 5 万一套](https://mp.weixin.qq.com/s/xmZAYix3aDdMVQ4N2LiwZg)的系统，那些靠 ChatGPT 赚钱的人
 
@@ -96,15 +96,15 @@ ChatGPT的主要功能是回答用户的问题和完成各种语言任务，如�
 
 # **【ChatGPT 技能课】**
 
-> 微博职场官方开始投放 ChatGPT 技能课，可以预见，在未来几个月，各种 ChatGPT 的应用课会层出不穷，除了 ChatGPT 基础课，可以结合行业开发更加细化的垂直细分课程。
+> 🧣职场官方开始投放 ChatGPT 技能课，可以预见，在未来几个月，各种 ChatGPT 的应用课会层出不穷，除了 ChatGPT 基础课，可以结合行业开发更加细化的垂直细分课程。
 
 # 【批量训练 ChatGPT】
 
-> 批量训练 chatGPT 机器人，用 mj 制作美女图当做头像，通过 API 接入微信并制作小程序，批量管理账号，留两个人进行运营管理，遇到 chatGPT 解决不了的问题可以由人工介入解决。
+> 批量训练 chatGPT 机器人，用 mj 制作美女图当做头像，通过 API 接入🛰️并制作小程序，批量管理账号，留两个人进行运营管理，遇到 chatGPT 解决不了的问题可以由人工介入解决。
 
-# 【ChatGPT 小红书账号】
+# 【ChatGPT 📕账号】
 
-> 专门分享 chatgpt 问答的小红书号，三天达到千粉。
+> 专门分享 chatgpt 问答的📕号，三天达到千粉。
 
 # 【ChatGPT 抖音账号小说推文变现】
 
@@ -136,31 +136,31 @@ ChatGPT的主要功能是回答用户的问题和完成各种语言任务，如�
 
 ## 1.各种聊天机器人
 
-### **集成微信机器人**
+### **集成🛰️机器人**
 
-微信机器人有开源方案可以选择，对技术比较熟悉的朋友可以在 github 上搜索 chatgpt 可以看到各种使用技巧，以及各种 Bot。这里不做过多介绍（友情提醒：使用微信集成 ChatGPT，内容会受到微信监管，有封号的风险，建议谨慎尝试）。
+🛰️机器人有开源方案可以选择，对技术比较熟悉的朋友可以在 github 上搜索 chatgpt 可以看到各种使用技巧，以及各种 Bot。这里不做过多介绍（友情提醒：使用🛰️集成 ChatGPT，内容会受到🛰️监管，有封号的风险，建议谨慎尝试）。
 
-1.  ChatGPT 自动接入-微信/Telegram 电报群 二合一懒人版
+1.  ChatGPT 自动接入-🛰️/Telegram 电报群 二合一懒人版
 
-1.  3 小时！开发 ChatGPT 微信小程序
+1.  3 小时！开发 ChatGPT 🛰️小程序
 
-1.  [企业微信接入 ChatGPT](https://github.com/fanchunke/chatgpt-wecom)
+1.  [企业🛰️接入 ChatGPT](https://github.com/fanchunke/chatgpt-wecom)
 
-1.  花了半个小时基于 ChatGPT 搭建了一个微信机器人
+1.  花了半个小时基于 ChatGPT 搭建了一个🛰️机器人
 
-1.  10 分钟教你搭建属于自己的 ChatGPT 微信机器人
+1.  10 分钟教你搭建属于自己的 ChatGPT 🛰️机器人
 
-1.  微信公众号接入 ChatGPT 机器人的方法
+1.  🛰️👸号接入 ChatGPT 机器人的方法
 
 ### 其他的聊天机器人
 
-1.  使用 OpenGPT（ChatGPT）搭建 QQ 机器人
+1.  使用 OpenGPT（ChatGPT）搭建 🐧 机器人
 
 1.  [【3 分钟制作 PPT】ChatGPT 搭配闪击 P](https://juejin.cn/post/7202984088185307191)PT 生成 PPT，你只需要输入一个标题
 
 1.  [ChatGPT 接入飞书教程](https://www.bilibili.com/video/BV1aA411B7ya/?spm_id_from=333.337.search-card.all.click&vd_source=93310bee4d519f35bce25905cc4b6dab)
 
-1.  [ChatGPT 接入 QQ 群](https://www.bilibili.com/video/BV1VG411M7vR/?spm_id_from=333.337.search-card.all.click&vd_source=93310bee4d519f35bce25905cc4b6dab)
+1.  [ChatGPT 接入 🐧 群](https://www.bilibili.com/video/BV1VG411M7vR/?spm_id_from=333.337.search-card.all.click&vd_source=93310bee4d519f35bce25905cc4b6dab)
 
 ## 2.教育行业应用
 
@@ -180,7 +180,7 @@ ChatGPT的主要功能是回答用户的问题和完成各种语言任务，如�
 
 ## 5.【ChatGPT 训练师，为企业定制专属的 ChatGPT】
 
-根据产品和服务进行私人定制，比如： 公众号、小红书、朋友圈文案等。
+根据产品和服务进行私人定制，比如： 👸号、📕、朋友圈文案等。
 
 ## 6.跨境电商领域
 
@@ -206,7 +206,7 @@ ChatGPT 做了一个二次元游戏！
 
 > **1.持续关注并更新 Chat**GPT 的相关资讯动态，研究报告，赚钱案例，常见问题，永久免费在线查看，无收费内容，目标是成为最有价值的ChatGPT 学习社群。
 
-> 2.已建立社群聊聊 ChatGPT 发展及应用，没进群的可以加我微信**拉你进群，提前了解最新学习**内**容，群满可加 ChatGP**T研究爱好者微信 ID: harload_world (备注: chatGPT)，已经在社群内的无需重复加入，暂无任何 ChatGPT 相关收费群、课程及服务，全部为公开公正免费整理汇总分享
+> 2.已建立社群聊聊 ChatGPT 发展及应用，没进群的可以加我🛰️**拉你进群，提前了解最新学习**内**容，群满可加 ChatGP**T研究爱好者🛰️ ID: harload_world (备注: chatGPT)，已经在社群内的无需重复加入，暂无任何 ChatGPT 相关收费群、课程及服务，全部为公开公正免费整理汇总分享
 
 > 3.关于文档负责人Harload: 新晋人工智能玩家和互联网流量观察家，现就职于某互联网小厂，日常爱好研究 AI 实战应用，努力给大家发掘更多有价值的资讯。
 

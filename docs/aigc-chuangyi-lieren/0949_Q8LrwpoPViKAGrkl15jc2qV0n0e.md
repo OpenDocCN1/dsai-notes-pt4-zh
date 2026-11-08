@@ -4,7 +4,7 @@
 
 > 原文链接： https://mp.weixin.qq.com/s/5fCnulSML6hK2JKc5oK_cw
 
-> 来源：公众号：栗子智培
+> 来源：👸号：栗子智培
 
 还记得前两天我给大家安利的 Google 神器 NotebookLM 吗？
 

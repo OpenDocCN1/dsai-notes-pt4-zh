@@ -174,7 +174,7 @@ git tag -a 1.3.9 -m &quot;修改内置服务器和 key&quot;
 
 ![](img/1a358845e0ea7cca5c94b6dc52dca847.png)
 
-## 四.个人化定制（微信：dqtx33）
+## 四.个人化定制（🛰️：dqtx33）
 
 | 集成ID/中继服务器 | 20 | **hbb_common ****仓库下的 ****src/config.rs** |
 | --- | --- | --- |

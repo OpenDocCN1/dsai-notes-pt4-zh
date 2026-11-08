@@ -40,7 +40,7 @@
 
 给你讲个真实场景。
 
-上周我用Claude Code写公众号文章，配了这些MCP服务器：
+上周我用Claude Code写👸号文章，配了这些MCP服务器：
 
 1、brave-search（网页搜索）
 
@@ -150,7 +150,7 @@ npx -y @mcp_router/cli connect
 
 2、不需要：BrowserTools、playwright、search1api
 
-**项目B：公众号写作**
+**项目B：👸号写作**
 
 1、需要：brave-search、exa、search1api、Memory Tool、thinking
 
@@ -168,7 +168,7 @@ npx -y @mcp_router/cli connect
 
 用MCP Router的Projects功能：
 
-1、创建3个Project：技术研究、公众号写作、自动化测试
+1、创建3个Project：技术研究、👸号写作、自动化测试
 
 2、每个Project里配置需要的MCP服务器
 
@@ -194,7 +194,7 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 **使用场景**：
 
-老金我白天写代码做技术研究（工作模式），晚上写公众号文章（创作模式）。
+老金我白天写代码做技术研究（工作模式），晚上写👸号文章（创作模式）。
 
 **工作模式需要的服务器**：
 
@@ -224,7 +224,7 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 **用Workspaces功能**：
 
-1、创建两个Workspace：技术研究、公众号创作
+1、创建两个Workspace：技术研究、👸号创作
 
 2、每个Workspace配置不同的服务器组合
 
@@ -542,7 +542,7 @@ brave-search、exa、context7、Github、playwright......服务器越来越多
 
 你的精力，应该用在创造上，而不是配置上。
 
-老金我现在用AI写公众号，一键切换到"创作模式"，所有搜索、记忆、思考工具全开。
+老金我现在用AI写👸号，一键切换到"创作模式"，所有搜索、记忆、思考工具全开。
 
 写代码做技术研究，一键切换到"工作模式"，文档、代码、工作流工具全上。
 

@@ -538,7 +538,7 @@ Sora的应用潜力取决于其技术的成熟度、生成视频的质量以及�
 
 ## 使用Sora生成的视频作为个人自媒体账号内容
 
-如果你是一个短视频，或者自媒体从业者。那么你可以优先考虑，直接用Sora生成短视频，然后发布到你的自媒体账号上。国内的平台，比如抖音、快手、视频号、小红书、b站，这些都是流量比较好的平台，尤其是像小红书、视频号这样不那么内卷的平台。比如今天我们有些朋友就已经开始用一些能找到的Sora素材，开始发到视频号上，流量都还不错。
+如果你是一个短视频，或者自媒体从业者。那么你可以优先考虑，直接用Sora生成短视频，然后发布到你的自媒体账号上。国内的平台，比如抖音、快手、视频号、📕、b站，这些都是流量比较好的平台，尤其是像📕、视频号这样不那么内卷的平台。比如今天我们有些朋友就已经开始用一些能找到的Sora素材，开始发到视频号上，流量都还不错。
 
 当然，长期来看，如果你想靠自媒体的流量进行转化变现，还是和上一条一样，需要形成自己独特的ai视频风格。比如去年爆火的几类AI视频风格有复活AI名人进行访谈、宠物视频、二次元动漫混剪、电影混剪等等。名人、宠物、大IP都是好的创作方向。
 
@@ -676,84 +676,84 @@ OpenAI表示，Sora是能够理解和模拟现实世界的模型的基础，Open
 
 +   OpenAI全新发布文生视频模型Sora - 现实，不存在了
 
--公众号：数字生命卡兹克
+-👸号：数字生命卡兹克
 
 https://mp.weixin.qq.com/s/C-wSkjzkNsX0EFaJFTv38w
 
 +   OpenAI发布首个视频生成模型Sora - 现实，不存在了？
 
--公众号：小石AI之旅
+-👸号：小石AI之旅
 
 https://mp.weixin.qq.com/s/jb8uTGAsnN1amb5y0WC5nA
 
 +   **OpenAI首个AI视频模型炸裂登场，彻底端掉行业饭**碗！60秒一镜到底惊人，世界模型真来了？
 
--公众号：新智元
+-👸号：新智元
 
 https://mp.weixin.qq.com/s/93z4Ta91yLv7PB1pnBM9mg
 
 +   OpenAI Sora发布：视频AI界的top1
 
--公众号：AIGC新知
+-👸号：AIGC新知
 
 https://mp.weixin.qq.com/s/c9ovxjBx0e-PoQikJd38lQ
 
 +   **眼见不再为实！OpenAI发布最强**文生视频模型Sora【附60s演示视频】
 
--公众号：腾讯科技
+-👸号：腾讯科技
 
 https://mp.weixin.qq.com/s/fIM5PT5InZOAS8i2ZqB6sg
 
 +   OpenAI王炸模型引爆科技圈，我们第一时间深读了官方技术报告
 
--公众号：腾讯科技
+-👸号：腾讯科技
 
 https://mp.weixin.qq.com/s/gSvxvOVqYtGcKw0ueDGbFA
 
 +   OpenAI首个文生视频模型亮相，你觉得咋样？
 
--公众号：央视网
+-👸号：央视网
 
 https://mp.weixin.qq.com/s/PS_WfoOX35XoScgoQJJVcA
 
 +   重磅！OpenAI发布文生视频模型Sora，一次可生成1分钟！
 
--公众号：AIGC开放社区
+-👸号：AIGC开放社区
 
 https://mp.weixin.qq.com/s/m8DtOLmn_JkqZ5D5NYLIhA
 
 +   **Sora来了，现实不存在了？**
 
--公众号：每日经济新闻
+-👸号：每日经济新闻
 
 https://mp.weixin.qq.com/s/y82KaPSIjCROi9FLHXdf2A
 
 +   又一次被OpenAi刷屏，文生视频模型Sora真的要淘汰一波人
 
--公众号：伟豪学长AI
+-👸号：伟豪学长AI
 
 https://mp.weixin.qq.com/s/Cksnawt-L73KInM2s5b7Mg
 
 +   OpenAI发布首个视频生成模型Sora
 
--公众号：CGTN
+-👸号：CGTN
 
 https://mp.weixin.qq.com/s/fnAOmwH8gOoO-Mc-pHs2hw
 
 +   48个演示视频，最长60秒，看懂OpenAI视频大模型Sora
 
--公众号：深网腾讯新闻
+-👸号：深网腾讯新闻
 
 https://mp.weixin.qq.com/s/4_hBzafAqZSC9GWJsIMVPA
 
 +   OpenAI深夜发布首个文生视频模型Sora，现实将被彻底颠覆
 
--公众号：界面新闻
+-👸号：界面新闻
 
 https://mp.weixin.qq.com/s/0RdUwGoVfQjKYRULZLabxw
 
 +   炸裂AI技术Sora背后：奥特曼清单法
 
--公众号：孤独大脑
+-👸号：孤独大脑
 
 https://mp.weixin.qq.com/s/XfUKz8Q0ybXaTgLIeA7Csg

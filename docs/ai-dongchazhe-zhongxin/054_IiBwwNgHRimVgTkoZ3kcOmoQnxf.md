@@ -66,7 +66,7 @@
 
 > **📧 Email： y****uch**eng.jin@bluefocus.com
 
-> ☎️ 微信请添加  jin_yucheng
+> ☎️ 🛰️请添加  jin_yucheng
 
 **检查提现可用性**
 

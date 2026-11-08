@@ -134,7 +134,7 @@ https://datawhaler.feishu.cn/share/base/form/shrcnCOsHzjmMKTbrEAQqcthTmf
 
 学生跟随指导完成账户注册和创建助手的操作。
 
-**第三****节（可选）****：通过星火****API****创建微信机器人**
+**第三****节（可选）****：通过星火****API****创建🛰️机器人**
 
 时长：1小时
 
@@ -146,13 +146,13 @@ https://datawhaler.feishu.cn/share/base/form/shrcnCOsHzjmMKTbrEAQqcthTmf
 
 介绍讯飞星火API的功能和用途。
 
-1.  创建微信机器人的步骤（20分钟）
+1.  创建🛰️机器人的步骤（20分钟）
 
-演示如何使用星火API创建一个微信机器人。
+演示如何使用星火API创建一个🛰️机器人。
 
 1.  编写机器人的基本功能（15分钟）
 
-学生跟随指导编写微信机器人的基本功能。
+学生跟随指导编写🛰️机器人的基本功能。
 
 第四天（可选）：进阶应用与实际案例分享
 

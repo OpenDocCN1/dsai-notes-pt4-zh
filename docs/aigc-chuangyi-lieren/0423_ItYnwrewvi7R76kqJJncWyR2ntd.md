@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/w4FENljyc6e9qXHI3xCCfQ)qq.com/s/w4FENljy...
 
-> 公众号：AI生活研究所
+> 👸号：AI生活研究所
 
 马斯克 的xAI上线了Grok网 页版
 

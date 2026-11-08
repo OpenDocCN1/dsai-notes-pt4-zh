@@ -20,7 +20,7 @@
 
 # 我的内容分享
 
-> 公众号丨[B站](https://space.bilibili.com/21391009?spm_id_from=333.1007.0.0)丨[小红书](https://www.xiaohongshu.com/user/profile/61fdcb7a0000000010004f68?xsec_token=YBRG7o2sq281kkCcCgfpr6pUa47FH6LWM8SfSsxzUr92M%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=61fdcb7a0000000010004f68&apptime=1743407634&share_id=a66b64066e30492e9e56c7ddd7c19621&share_channel=copy_link)丨抖音 账号名称：**阿赵的所见所得**
+> 👸号丨[B站](https://space.bilibili.com/21391009?spm_id_from=333.1007.0.0)丨[📕](https://www.xiaohongshu.com/user/profile/61fdcb7a0000000010004f68?xsec_token=YBRG7o2sq281kkCcCgfpr6pUa47FH6LWM8SfSsxzUr92M%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=61fdcb7a0000000010004f68&apptime=1743407634&share_id=a66b64066e30492e9e56c7ddd7c19621&share_channel=copy_link)丨抖音 账号名称：**阿赵的所见所得**
 
 # 我的AI知识库
 
@@ -250,7 +250,7 @@ Agentic Workflow：AI重塑工作流
 
 > 如果你想围绕个人成长、职业规划、创作分享、AIGC等领域和我聊聊，欢迎随时找我，期待和你的沟通~
 
-### 扫码添加阿赵微信沟通
+### 扫码添加阿赵🛰️沟通
 
 ![](img/a0f7510762aa6334d46f29b3b7362eb4.png)
 

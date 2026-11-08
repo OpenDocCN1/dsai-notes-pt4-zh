@@ -65,7 +65,7 @@ SDC设计师⽹址导航：https://hao.uisdc.com/
 
 +   有赞设计：https://design.youzan.com/
 
-+   微信官方文档：[https://developer](https://developers.weixin.qq.com/doc/)s.weixin.qq.com/doc/
++   🛰️官方文档：[https://developer](https://developers.weixin.qq.com/doc/)s.weixin.qq.com/doc/
 
 +   Material Design：https://material.io/
 
@@ -227,7 +227,7 @@ SDC设计师⽹址导航：https://hao.uisdc.com/
 
 +   秋叶PPT：[https://study.qiuyeppt.](https://study.qiuyeppt.com/?utm=ppt_brand_1)com/?utm=ppt_brand_1
 
-+   旁门左道PPT（公众号&知乎）
++   旁门左道PPT（👸号&知乎）
 
 +   OfficePLUS：[http://www.officeplus.cn](http://www.officeplus.cn/Template/Home.shtml)/Template/Home.shtml
 

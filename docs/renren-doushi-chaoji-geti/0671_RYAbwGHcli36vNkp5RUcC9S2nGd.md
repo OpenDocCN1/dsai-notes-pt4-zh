@@ -8,7 +8,7 @@
 | V1.1 | 增加云端玩法，家里没有电脑也可以玩 | 科学羊 | 2025-02-14 |
 | V1.2 | 增加云端扫码登陆异常的处理方法 | 科学羊 | 2025-02-24 |
 
-大家好，我是科学羊，公众号专栏日更作者，知名报社签约编辑、海外内容创业实践者、游戏视频创作者。
+大家好，我是科学羊，👸号专栏日更作者，知名报社签约编辑、海外内容创业实践者、游戏视频创作者。
 
 马上就要春节放假了，今天在临放假之前给大家分享一个独一无二，且奇特的赛道和玩法，希望大家在假期有时间可以去研究一波。
 
@@ -260,7 +260,7 @@ How to install mods
 
 如果没有家里电脑或者配置不够怎么办？
 
-大家可以参考这个视频：[能](https://www.bilibili.com/video/BV1AwtJeHEwZ/?buvid=XX22CDB2DF921803E2021B7CFD7C53EA079DA&from_spmid=search.search-result.0.0&is_story_h5=false&mid=RaHn0Wo5Y6662D89woOsQQ%3D%3D&plat_id=114&share_from=ugc&share_medium=android&share_plat=android&share_session_id=6924dacb-9f8e-4d2f-9dc5-cf5c4ae6f50a&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1739493645&unique_k=76OJKDV&up_id=36544298&vd_source=db7302203989bbe3f44cdd9ea6a8ff5c)玩《悟空》的赛博网吧？海马云电脑/网易云游戏/腾讯Start云游戏/顺网云电脑/ToDesk云电脑横评
+大家可以参考这个视频：[能](https://www.bilibili.com/video/BV1AwtJeHEwZ/?buvid=XX22CDB2DF921803E2021B7CFD7C53EA079DA&from_spmid=search.search-result.0.0&is_story_h5=false&mid=RaHn0Wo5Y6662D89woOs🐧%3D%3D&plat_id=114&share_from=ugc&share_medium=android&share_plat=android&share_session_id=6924dacb-9f8e-4d2f-9dc5-cf5c4ae6f50a&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1739493645&unique_k=76OJKDV&up_id=36544298&vd_source=db7302203989bbe3f44cdd9ea6a8ff5c)玩《悟空》的赛博网吧？海马云电脑/网易云游戏/腾讯Start云游戏/顺网云电脑/ToDesk云电脑横评
 
 云端电脑访问：https://pc.todesk.com/
 

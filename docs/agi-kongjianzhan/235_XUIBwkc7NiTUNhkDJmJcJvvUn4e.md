@@ -4,7 +4,7 @@
 
 > 作者：毅鸣
 
-> 公众号： AI洞察笔记
+> 👸号： AI洞察笔记
 
 > 原文链接：https://mp.weixin.qq.com/s/-esuEM2ArPLqG-T7C47z2w
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/Kb63dnH2ioNnabxQMkMcyDS9nvb](https://aigcreative.feishu.cn/docx/Kb63dnH2ioNnabxQMkMcyDS9nvb)
 
-> 公众号：张小珺
+> 👸号：张小珺
 
 > 链接：https://mp.weixin.qq.com/s/ZpeJozZhrQYWTNONHTa7YA
 

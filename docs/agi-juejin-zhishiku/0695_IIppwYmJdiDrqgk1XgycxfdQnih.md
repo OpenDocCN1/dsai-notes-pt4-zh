@@ -6,7 +6,7 @@
 
 > 链接：[https://mp.weixin.qq.com/s/6o](https://mp.weixin.qq.com/s/6o2UFIBbNhFBHfSjRyK90w)2UFIBbNhFBHfSjRyK90w
 
-> 来源：微信公众号丨AI寒武纪
+> 来源：🛰️👸号丨AI寒武纪
 
 > 如有侵权，请联系删除。
 

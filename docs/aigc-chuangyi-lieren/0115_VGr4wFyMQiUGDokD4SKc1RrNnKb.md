@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/M5KTdr8rHor3D1xglBXcd0K8nCC](https://aigcreative.feishu.cn/docx/M5KTdr8rHor3D1xglBXcd0K8nCC)
 
-> 作者：孟埃里克      公众号：Mtian梦天
+> 作者：孟埃里克      👸号：Mtian梦天
 
 > 链接：https://mp.weixin.qq.com/s/C6hH3xVDwIofwqrRwW4o3A
 

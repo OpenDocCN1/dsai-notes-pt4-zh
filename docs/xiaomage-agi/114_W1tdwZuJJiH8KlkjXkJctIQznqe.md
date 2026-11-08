@@ -24,7 +24,7 @@ AI绘画技术（Stable Diffusion）或许就是解决这个问题的关键。�
 
 ![](img/d37396a1d1ae1347c8675b354da28bdc.png)
 
-方式一：公众号免费获取：AI飞行家，回复：genshin
+方式一：👸号免费获取：AI飞行家，回复：genshin
 
 ![](img/970cee64b288b7e4560e8f1cf732dc3b.png)
 

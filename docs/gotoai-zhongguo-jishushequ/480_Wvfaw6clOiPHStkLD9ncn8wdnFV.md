@@ -22,7 +22,7 @@
 
 +   🇨🇳 国内**用户：推**荐 飞书**（现**代化、开发者友好、功能丰富）
 
-+   备选：企业微信、钉钉、QQ
++   备选：企业🛰️、钉钉、🐧
 
 **部署方式**：
 
@@ -590,7 +590,7 @@ openclaw channels login whatsapp
 # 用手机WhatsApp扫码
 ```
 
-1.  **企业微信（国内推荐）**
+1.  **企业🛰️（国内推荐）**
 
 ```
 # 安装企业微信插件
@@ -979,7 +979,7 @@ https://cloud.baidu.com/product/BCC/moltbot.html
 
 1.  **接入方式配置**（可选）：
 
-+   支持接入：飞书、钉钉、企业微信、QQ
++   支持接入：飞书、钉钉、企业🛰️、🐧
 
 +   选择你常用的通讯工具
 
@@ -1049,7 +1049,7 @@ https://www.aliyun.com/activity/ecs/clawdbot
 
 腾讯云提供了详细的视频教程，跟着视频操作更简单：
 
-1.  云上OpenClaw一键部署并接入企微和QQ
+1.  云上OpenClaw一键部署并接入企微和🐧
 
 +   视频地址：https://cloud.tencent.com/developer/video/85003
 
@@ -1097,7 +1097,7 @@ https://www.aliyun.com/activity/ecs/clawdbot
 
 **Q3: 手机怎么访问？**
 
-+   通过QQ、企微、飞书等平台
++   通过🐧、企微、飞书等平台
 
 +   详见[第9章节：多平台集成](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html)
 
@@ -1418,11 +1418,11 @@ openclaw-cn message send --target +15555550123 --message &quot;Hello from OpenCl
 
 +   飞书（字节跳动）
 
-+   企业微信（腾讯）
++   企业🛰️（腾讯）
 
 +   钉钉（阿里）
 
-+   QQ（腾讯）
++   🐧（腾讯）
 
 1.  **优化的网络配置**：
 
@@ -3216,7 +3216,7 @@ openclaw gateway restart
 
 +   国内直连，无需魔法
 
-+   支持支付宝、微信支付
++   支持支付宝、🛰️支付
 
 ### 成本对比
 

@@ -16,7 +16,7 @@
 
 ### 关于网络节点
 
-1）梯子所选择的**地区不对**，推荐哪些地区，参照上文。部分地区直接不支持ChatGPT访问。
+1）🪜所选择的**地区不对**，推荐哪些地区，参照上文。部分地区直接不支持ChatGPT访问。
 
 **2）如果**在手机ChatGPT APP上使用，有时需选择：全局模式。
 
@@ -44,7 +44,7 @@ Reply：ChatGPT 对国内不是很友好。
 
 Please try again later. If you are using a VPN, try turning it off.Check the status page for information on outages。
 
-原因是：当前用的科学上网的节点地区不行。
+原因是：当前用的🪜的节点地区不行。
 
 #### 2 登录上去后，响应慢，加载不出来
 
@@ -62,7 +62,7 @@ We ran into an issue while authenticating you. lf this issue persists, please co
 
 首先排除是不是官方目前平台的故障。
 
-如果不是，请继续切换梯子的节点地区。
+如果不是，请继续切换🪜的节点地区。
 
 #### **5** 登录时，提示拥堵 Oops! We ran into an issue while signing you in
 
@@ -70,15 +70,15 @@ Oops! We ran into an issue while signing you in, please take abreak and try agai
 
 稍后再试
 
-#### 6 使用时，左侧的聊天记录加载不出来！！ 梯子网络问题。
+#### 6 使用时，左侧的聊天记录加载不出来！！ 🪜网络问题。
 
-Unable to load history 错误！典型的梯子地区问题。
+Unable to load history 错误！典型的🪜地区问题。
 
-#### 7 登录时，自动跳回到登录网页，梯子问题
+#### 7 登录时，自动跳回到登录网页，🪜问题
 
 被自动带回了登录页面。
 
-#### 8 注册与登录时，点击登录按钮没有响应，也是梯子问题
+#### 8 注册与登录时，点击登录按钮没有响应，也是🪜问题
 
 没有响应是因为网络不通，界面就无法跳转。
 
@@ -86,7 +86,7 @@ Unable to load history 错误！典型的梯子地区问题。
 
 与ChatGPT对话返回的错误：Something went wrong. lf this issue persists please contact us through our help center at help.openai.com.
 
-同样是梯子地区问题。
+同样是🪜地区问题。
 
 #### 10 ChatGPT 手机 APP 语音对讲时：Connection failed, tap to retry
 
@@ -100,4 +100,4 @@ Unable to load history 错误！典型的梯子地区问题。
 
 Something went wrong. Please make sure your device’s date and time are set properly. Check that your internet connection is stable, then restart the appand try again.
 
-报错这个，其实也是梯子地区问题。
+报错这个，其实也是🪜地区问题。

@@ -2,15 +2,15 @@
 
 > 来源：[https://docs.feishu.cn/docx/PqTKdVBfWomYqxxUkQFcI7qxnvc](https://docs.feishu.cn/docx/PqTKdVBfWomYqxxUkQFcI7qxnvc)
 
-导航栏 [😀 原创好文](https://yx58nd06ei.feishu.cn/wiki/LNUiwfPsnid7gPkQU5BcBMVknFg)  | [公众号精选文集](https://mp.weixin.qq.com/mp/homepage?__biz=MzkxODU1NjM5OQ==&hid=2&sn=b7783180ec241d51aecda9c7fd2518f1&scene=18) | [个人网站](http://www.doumoman.site)
+导航栏 [😀 原创好文](https://yx58nd06ei.feishu.cn/wiki/LNUiwfPsnid7gPkQU5BcBMVknFg)  | [👸号精选文集](https://mp.weixin.qq.com/mp/homepage?__biz=MzkxODU1NjM5OQ==&hid=2&sn=b7783180ec241d51aecda9c7fd2518f1&scene=18) | [个人网站](http://www.doumoman.site)
 
-# 案例 1 小红书 > 微信 > 神图君
+# 案例 1 📕 > 🛰️ > 神图君
 
 变现内容：AI 绘画
 
-公域引流：小红书笔记/小红书群
+公域引流：📕笔记/📕群
 
-私域变现：微信小程序“神图君”
+私域变现：🛰️小程序“神图君”
 
 变现方式：
 
@@ -22,7 +22,7 @@ B. 用户注册“神图君”会员，免广告下载图片，提成 9.9 元 x7
 
 ![](img/7db9cb9ccdf85b6adb58c930238bcea4.png)
 
-小红书内：
+📕内：
 
 ![](img/e81715fd276b3ff08eddae204506e50c.png)
 
@@ -92,13 +92,13 @@ B. 用户注册“神图君”会员，免广告下载图片，提成 9.9 元 x7
 
 ![](img/1d64079395a34ecdbcc32269e5ed9eb3.png)
 
-# 案例 4  小红书 AI 绘画+饰品日用品（ChatGPT 细聊的结果）
+# 案例 4  📕 AI 绘画+饰品日用品（ChatGPT 细聊的结果）
 
-变现内容：小红书商铺中的饰品、日用品
+变现内容：📕商铺中的饰品、日用品
 
-公域引流：小红书笔记、群
+公域引流：📕笔记、群
 
-私域变现：小红书店铺商品
+私域变现：📕店铺商品
 
 变现方式：1688 一件代发
 

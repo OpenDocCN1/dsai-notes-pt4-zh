@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/NRgpdvMwaoLuB7xlViDcTIWGnde](https://yunyinghui.feishu.cn/docx/NRgpdvMwaoLuB7xlViDcTIWGnde)
 
-> **菜菜简介：**13年互联网内容营销经验，万象 AI 实验室提示词教练，三节课特邀AI营销讲师，生财有术ChatGPT航海教练，学员5000+，专注研究AI+营销，帮助企业和有产品的个人IP通过AI做内容引流、产品推广宣传、销售话术等，提升内容营销的效率和质量。
+> **菜菜简介：**13年互联网内容营销经验，万象 AI 实验室提示词教练，三节课特邀AI营销讲师，龙哥盟ChatGPT航海教练，学员5000+，专注研究AI+营销，帮助企业和有产品的个人IP通过AI做内容引流、产品推广宣传、销售话术等，提升内容营销的效率和质量。
 
 # 营销方法论
 
@@ -40,7 +40,7 @@
 
 菜菜的AI营销案例004：ChatGPT如何洗稿
 
-菜菜的AI营销案例005：如何用ChatGPT做小红书账号定位
+菜菜的AI营销案例005：如何用ChatGPT做📕账号定位
 
 菜菜的AI营销案例006：如何用ChatGPT写10W+开幕雷击标题
 
@@ -60,7 +60,7 @@
 
 [菜菜的AI营销案例014：让ChatGPT帮你写"主](https://balfcirt91j.feishu.cn/docx/CeYydmFJ1ochnvxZLJbcCUIAnTf?from=from_copylink)动选择增强版"文案，75%的用户乖乖买单
 
-[菜菜的AI营销案例015：用ChatGPT在推广](https://balfcirt91j.feishu.cn/docx/RAjydQQfYovbXgxa9vPcQsYjntf)文案中加入清晰具体的细节，说服效果杠杠的
+[菜菜的AI营销案例015：用ChatGPT在推广](https://balfcirt91j.feishu.cn/docx/RAjyd🐧fYovbXgxa9vPcQsYjntf)文案中加入清晰具体的细节，说服效果杠杠的
 
 菜菜的AI营销案例016：如何用ChatGPT做数据型盘点文案
 
@@ -94,7 +94,7 @@
 
 [菜菜的AI营销案例031：我训练ChatGP](https://balfcirt91j.feishu.cn/docx/K9Okd5ZX4oJRdfxvAfrcmFdenCh)T写短视频分镜头脚本，它的表现，让我惊讶
 
-[菜菜的AI营销案例032：1天搞定40](https://balfcirt91j.feishu.cn/docx/N0ild2mF1ovN7nxmhiEcbY33nzg?from=from_copylink)篇，如何用ChatGPT写小红书种草笔记
+[菜菜的AI营销案例032：1天搞定40](https://balfcirt91j.feishu.cn/docx/N0ild2mF1ovN7nxmhiEcbY33nzg?from=from_copylink)篇，如何用ChatGPT写📕种草笔记
 
 [菜菜的AI营销案例033：如何用Ch](https://balfcirt91j.feishu.cn/docx/URkFdaNDGoy7AixXIxVckFOTnbh)atGPT追热点？这个方法你一定要知道！
 
@@ -104,7 +104,7 @@
 
 [菜菜的AI营销案例036：如何用C](https://balfcirt91j.feishu.cn/docx/ETw9dnfutoUfyxxVGiLcdsetn0e)hatGPT写出董宇辉式的直播卖货文案？
 
-[菜菜的AI营销案例037：卖货5W+的小红书种草笔记模版，千](https://balfcirt91j.feishu.cn/docx/JedndMIWJo8w2oxZf03cwxCBnEg?from=from_copylink)万要收藏好！附ChatGPT写文案全流程
+[菜菜的AI营销案例037：卖货5W+的📕种草笔记模版，千](https://balfcirt91j.feishu.cn/docx/JedndMIWJo8w2oxZf03cwxCBnEg?from=from_copylink)万要收藏好！附ChatGPT写文案全流程
 
 [菜](https://balfcirt91j.feishu.cn/docx/XNt3dJkk7odk2wxBP9dcn0PHneg)菜的AI营销案例038：带货短视频的评论区异议，如何用ChatGPT生产回复话术，转危为机，提升成交率？
 
@@ -118,7 +118,7 @@
 
 我是菜菜，13年互联网内容营销经验，三节课特邀AI内容营销讲师，人人都是产品经理专栏作者。
 
-生财有术chatGPT航海教练，目前专注在AI+营销内容创作上，指导和帮助个人IP、创业团队、企业高效高质地创作营销内容。
+龙哥盟chatGPT航海教练，目前专注在AI+营销内容创作上，指导和帮助个人IP、创业团队、企业高效高质地创作营销内容。
 
 **加我请说明来意****：**
 

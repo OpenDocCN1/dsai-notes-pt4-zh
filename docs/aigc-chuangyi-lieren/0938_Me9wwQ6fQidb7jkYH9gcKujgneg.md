@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/JlsqdaQxho2yZXx4SWrcGp6xnX9](https://aigcreative.feishu.cn/docx/JlsqdaQxho2yZXx4SWrcGp6xnX9)
 
-> 来源：公众号：卡尔的AI沃茨
+> 来源：👸号：卡尔的AI沃茨
 
 > 链接：https://mp.weixin.qq.com/s/h1H7K8x8KRwyNKvl1O0YDQ
 

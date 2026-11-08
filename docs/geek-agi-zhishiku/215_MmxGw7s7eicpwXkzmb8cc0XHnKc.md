@@ -10,13 +10,13 @@ https://github.com/yzfly/awesome-chatgpt-zh
 
 ## ChatGPT 应用案例
 
-###  小红书
+###  📕
 
-+   用ChatGPT玩赚小红书，每天产100条高质量笔记
++   用ChatGPT玩赚📕，每天产100条高质量笔记
 
-+   [如何用Chatgpt做一个小红书起号方案+15天发笔记计划](https://yu8abm8f0q.feishu.cn/docx/Ditxd7VDSoOwDyx6IY5c4mtbnab?from=from_copylink)
++   [如何用Chatgpt做一个📕起号方案+15天发笔记计划](https://yu8abm8f0q.feishu.cn/docx/Ditxd7VDSoOwDyx6IY5c4mtbnab?from=from_copylink)
 
-+   手把手教你用ChatGPT写爆款小红书文案
++   手把手教你用ChatGPT写爆款📕文案
 
 ### 工作提效
 

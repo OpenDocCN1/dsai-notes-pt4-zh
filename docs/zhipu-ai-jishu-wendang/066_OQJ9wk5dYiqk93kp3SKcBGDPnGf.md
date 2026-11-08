@@ -28,7 +28,7 @@ CogVLM2 官方仓库：https://github.com/THUDM/CogVLM2
 
 ---
 
-# 🏠 公众号
+# 🏠 👸号
 
 ![](img/706c64ae2af5e939b3f17838874b869d.png)
 

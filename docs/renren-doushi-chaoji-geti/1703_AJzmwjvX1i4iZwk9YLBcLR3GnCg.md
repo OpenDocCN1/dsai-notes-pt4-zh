@@ -338,4 +338,4 @@ Holy shit！You can do this now。
 
 我们面临这样一个时代的机会。它既是机会，也是挑战。我们建议你就这个机会做全方位思考。
 
-（如需交流欢迎添加作者微信号，Benita_ZhangJun，烦请备注公司和职务）
+（如需交流欢迎添加作者🛰️号，Benita_ZhangJun，烦请备注公司和职务）

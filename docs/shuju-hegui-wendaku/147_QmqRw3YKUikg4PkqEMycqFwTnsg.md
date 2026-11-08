@@ -2,7 +2,7 @@
 
 > 来源：[https://docs.feishu.cn/docx/C7oBdQin0on9RexTXpNc3GafnEd](https://docs.feishu.cn/docx/C7oBdQin0on9RexTXpNc3GafnEd)
 
-**-问：**我想问一下，如果我们APP需要获取是“拍摄照片和录制视频”的权限，必须要说明目的吗？我看微信也没做呀，告知目的是什么场景必须做呀？有监管历史惩罚案例嘛？我记忆中调取权限是要说明目的，但是在这个场景我自己把自己绕晕了。
+**-问：**我想问一下，如果我们APP需要获取是“拍摄照片和录制视频”的权限，必须要说明目的吗？我看🛰️也没做呀，告知目的是什么场景必须做呀？有监管历史惩罚案例嘛？我记忆中调取权限是要说明目的，但是在这个场景我自己把自己绕晕了。
 
 ![](img/dd93d9416ed491bab6bcf93918b9b911.png)
 
@@ -20,7 +20,7 @@
 
 **-答6：**paste notice在**iOS上也可以不弹**，有一个接口：the copy-and-paste permission prompt only appears when an app attempts to access the clipboard directly. The prompt does not appear when a user selects the "Paste" option in the menu that pops up after highlighting text or interacts with apps that have paste buttons based on the UIPasteControl framework.
 
-**-答7：**现在微信做的是分场景权限可撤回，有些**app做了分场景精**细化管理，每个索权场景单独弹窗打开或关闭。
+**-答7：**现在🛰️做的是分场景权限可撤回，有些**app做了分场景精**细化管理，每个索权场景单独弹窗打开或关闭。
 
 ![](img/d2dc0c0d50ff943852c17dc06d7e6ad6.png)
 

@@ -12,7 +12,7 @@
 
 ![](img/52d8504ad8d826b253e4f7879f579389.png)
 
-欢迎关注公众号👆
+欢迎关注👸号👆
 
 ```
 论文题目：A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications

@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/GsQTdEH1moTxz8xFKiicpbhCnGd](https://aigcreative.feishu.cn/docx/GsQTdEH1moTxz8xFKiicpbhCnGd)
 
-> 来源：公众号：张小珺
+> 来源：👸号：张小珺
 
 > 链接：https://mp.weixin.qq.com/s/MG_aUwTasrXqGn9IbhLP6Q
 
@@ -544,7 +544,7 @@ Q：在AI 的大浪潮变化下，你对一级、二级市场有什么预测？
 
 第二，中国的海康威视先前就是一家卖摄像头的硬件公司，但经历上一轮计算机视觉的变革后，商业模式变得更好，规模也变大了，增速、 PE multiple 都变好了。这一波  AI 也会有类似的故事，只是这个大幕还没有开始。AGI 的第一幕还是科技巨头受益，第二幕下，会有更多几百亿美金的公司，因为 AI 改变了商业模式、发生了规模上的变化。
 
-也因为这样的观察，我们内部推出了一个二级市场追踪 AI 的指数：AGIX ，可以更好的追踪成熟公司，也可以更好理解它们。我们希望 AGIX 可以成为 AI 领域的 QQQ ，或是一个长期收益可以超过 QQQ 的指数，AGIX 也是一个 AI-native 的产品。
+也因为这样的观察，我们内部推出了一个二级市场追踪 AI 的指数：AGIX ，可以更好的追踪成熟公司，也可以更好理解它们。我们希望 AGIX 可以成为 AI 领域的 🐧Q ，或是一个长期收益可以超过 🐧Q 的指数，AGIX 也是一个 AI-native 的产品。
 
 +   本文内容仅为研究分享，不作为投资建议 -
 

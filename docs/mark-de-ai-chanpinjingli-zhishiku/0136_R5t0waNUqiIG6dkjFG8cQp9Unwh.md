@@ -152,7 +152,7 @@ LightGBM 的核心是使用决策树拟合残差，并通过梯度提升进行�
 
 数据集：使用Kaggle 上的 "House Prices: Advanced Regression Techniques"
 
-也可以在，公众号「深夜努力写Python」后台回复『数据集』获取~
+也可以在，👸号「深夜努力写Python」后台回复『数据集』获取~
 
 **导入库 & 加载数据**
 

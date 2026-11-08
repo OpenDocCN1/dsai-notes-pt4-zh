@@ -264,7 +264,7 @@ Model Scope支持多种下载模式：SDK下载、Git下载、命令行下载（
 
 ![](img/066c508abfd5d8d063215a82ad83c20a.png)
 
-这是一种快捷的本机下载方式，首先通过命令pip install modelscope安装好达摩社区的安装包，然后通过以下指令可以下载模型的权重文件，这种方法无需翻墙，无需下载额外的插件。
+这是一种快捷的本机下载方式，首先通过命令pip install modelscope安装好达摩社区的安装包，然后通过以下指令可以下载模型的权重文件，这种方法无需🪜，无需下载额外的插件。
 
 ```
 modelscope download --model Qwen/Qwen2.5-7B-Instruct

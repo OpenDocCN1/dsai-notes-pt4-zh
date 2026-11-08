@@ -1,6 +1,6 @@
 # 0. 【 0基础】赛事必知必会
 
-> 来源：[https://datawhaler.feishu.cn/docx/Kl8mdCnMNoSHygx7DQ8cOoQQn8d](https://datawhaler.feishu.cn/docx/Kl8mdCnMNoSHygx7DQ8cOoQQn8d)
+> 来源：[https://datawhaler.feishu.cn/docx/Kl8mdCnMNoSHygx7DQ8cOo🐧n8d](https://datawhaler.feishu.cn/docx/Kl8mdCnMNoSHygx7DQ8cOo🐧n8d)
 
 <https://datawhaler.feishu.cn/sync/DThjdz4ucsio9sbVLnKc0Gc2nHh>
 

@@ -106,7 +106,7 @@ Except for the above links, all other websites are unauthorized third-party webs
 
 +   Integrated methods: (Continuous) pre-training, (multimodal) supervised fine-tuning, reward modeling, PPO, DPO, KTO, ORPO, etc.
 
-+   Scalable resources: 16-bit full-tuning, freeze-tuning, LoRA and 2/3/4/5/6/8-bit QLoRA via AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ.
++   Scalable resources: 16-bit full-tuning, freeze-tuning, LoRA and 2/3/4/5/6/8-bit QLoRA via AQLM/AWQ/GPTQ/LLM.int8/H🐧/EETQ.
 
 +   [Advanc](https://github.com/jiaweizzhao/GaLore)ed[ algo](https://github.com/Ledzy/BAdam)ri[thms: ](https://github.com/zhuhanqing/APOLLO)Ga[Lore, BAd](https://github.com/zyushun/Adam-mini)am[, AP](https://github.com/KellerJordan/Muon)OL[LO,](https://github.com/huggingface/peft/tree/main/src/peft/tuners/oft) Adam-mini, Muon, OFT, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ and PiSSA.
 
@@ -1146,7 +1146,7 @@ Note
 
 +   集成方法：（增量）预训练、（多模态）指令监督微调、奖励模型训练、PPO 训练、DPO 训练、KTO 训练、ORPO 训练等等。
 
-+   多种精度：16 比特全参数微调、冻结微调、LoRA 微调和基于 AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ 的 2/3/4/5/6/8 比特 QLoRA 微调。
++   多种精度：16 比特全参数微调、冻结微调、LoRA 微调和基于 AQLM/AWQ/GPTQ/LLM.int8/H🐧/EETQ 的 2/3/4/5/6/8 比特 QLoRA 微调。
 
 +   先进算法：[GaLore](https://github.com/jiaweizzhao/GaLore)、[BAdam](https://github.com/Ledzy/BAdam)、[APOLLO](https://github.com/zhuhanqing/APOLLO)、[Adam-mini](https://github.com/zyushun/Adam-mini)、[Muon](https://github.com/KellerJordan/Muon)、[OFT](https://github.com/huggingface/peft/tree/main/src/peft/tuners/oft)、DoRA、LongLoRA、LLaMA Pro、Mixture-of-Depths、LoRA+、LoftQ 和 PiSSA。
 

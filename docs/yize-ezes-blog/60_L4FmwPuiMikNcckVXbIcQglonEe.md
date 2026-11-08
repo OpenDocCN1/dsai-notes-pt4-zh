@@ -14,7 +14,7 @@
 
 > 🔗 项目地址：https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web?tab=readme-ov-file （这个不是体验地址）
 
-> 👥 开发者微信：elricliu1008
+> 👥 开发者🛰️：elricliu1008
 
 前两天发布了[个人社交名片生成器｜By 一泽Eze](https://zkv549gmz8.feishu.cn/wiki/YRf2wb6BAil2j9kXMiVcfGBSnhd)，通过 Claude Artifacts 就能用提示词一键创作出精美的社交名片。
 

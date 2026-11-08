@@ -52,7 +52,7 @@
 
 **附件电子书：**
 
-[智慧的疆界](https://weread.qq.com/web/bookDetail/b9732f007168ac3cb976eca)（微信读书）
+[智慧的疆界](https://weread.qq.com/web/bookDetail/b9732f007168ac3cb976eca)（🛰️读书）
 
 ![](img/817bbb2aee8ee29d4bdea3824e9c0ac3.png)
 
@@ -122,7 +122,7 @@
 
 **附件电子书：**
 
-[AI3.0](https://weread.qq.com/web/bookDetail/a72320c072289166a7200ff)（微信读书）
+[AI3.0](https://weread.qq.com/web/bookDetail/a72320c072289166a7200ff)（🛰️读书）
 
 ## **《**AI 3.0》
 
@@ -208,7 +208,7 @@
 
 **附件电子书：**
 
-[科学的极致：漫谈人工智能](https://weread.qq.com/web/bookDetail/6f4324f0715c01bd6f41018)（微信读书）
+[科学的极致：漫谈人工智能](https://weread.qq.com/web/bookDetail/6f4324f0715c01bd6f41018)（🛰️读书）
 
 ## 《科学的极致：漫谈人工智能》
 
@@ -250,7 +250,7 @@
 
 **附件电子书：**
 
-[深度学习](https://weread.qq.com/web/bookDetail/e2332fe07159a1b5e232f89)（微信读书）
+[深度学习](https://weread.qq.com/web/bookDetail/e2332fe07159a1b5e232f89)（🛰️读书）
 
 ## 《深度学习》
 
@@ -386,7 +386,7 @@
 
 [机器学习公式详解](https://weread.qq.com/web/bookDetail/d89322a072327b15d896afb)
 
-**说明：**微信读书已上架。
+**说明：**🛰️读书已上架。
 
 ![](img/b94c7a7882cbae17d63a0d919e561f75.png)
 
@@ -412,7 +412,7 @@
 
 [机器学习实战](https://weread.qq.com/web/bookDetail/e8e327a07208f4d1e8ec475)
 
-说明：微信读书已上线。
+说明：🛰️读书已上线。
 
 **英文原版：**
 
@@ -440,7 +440,7 @@
 
 [Python 机器学习基础教程](https://weread.qq.com/web/bookDetail/b0d32910718ff601b0d0aee)
 
-**说明：**微信读书已上架。
+**说明：**🛰️读书已上架。
 
 ![](img/4432e0dea9c471f766c884e174dc0579.png)
 
@@ -466,7 +466,7 @@
 
 [统计学习方法](https://weread.qq.com/web/bookDetail/c0032560813ab6c02g010482)
 
-**说明：**微信读书已上架。
+**说明：**🛰️读书已上架。
 
 ![](img/6a13c0ced7ca864547ae300ed83294d0.png)
 
@@ -512,7 +512,7 @@
 
 **附件电子书：**
 
-[Python 神经网络编程](https://weread.qq.com/web/bookDetail/a0b328807159b27ba0ba937)（微信读书）
+[Python 神经网络编程](https://weread.qq.com/web/bookDetail/a0b328807159b27ba0ba937)（🛰️读书）
 
 ![](img/26b02823135de48650418acc1d8653f3.png)
 
@@ -588,7 +588,7 @@
 
 算法（第 4 版](https://weread.qq.com/web/bookDetail/7cc32910718ff66b7cc8d9d)）
 
-说明：微信读书已上架。
+说明：🛰️读书已上架。
 
 ![](img/64d71514b751bcdfff1715a40625c9c7.png)
 
@@ -612,7 +612,7 @@
 
 **附件电子书：**
 
-[终极算法](https://weread.qq.com/web/bookDetail/a38329305e00bca3852990b)（微信读书）
+[终极算法](https://weread.qq.com/web/bookDetail/a38329305e00bca3852990b)（🛰️读书）
 
 ![](img/560d81cb0020f93c5efbf83648258ce0.png)
 
@@ -660,7 +660,7 @@ Thomas H. Cormen （托马斯•科尔曼） 达特茅斯学院计算机科学�
 
 **附件电子书：**
 
-[深度学习进阶：自然语言处理](https://weread.qq.com/web/bookDetail/c81324b0720befa3c81025e)（微信读书）
+[深度学习进阶：自然语言处理](https://weread.qq.com/web/bookDetail/c81324b0720befa3c81025e)（🛰️读书）
 
 ![](img/a3e70e3db4e70cd0fda258c53ed08a76.png)
 
@@ -686,7 +686,7 @@ Thomas H. Cormen （托马斯•科尔曼） 达特茅斯学院计算机科学�
 
 ## **附件电子书：**
 
-## 贝叶斯的博弈：数学、思维与人工智能（微信读书）
+## 贝叶斯的博弈：数学、思维与人工智能（🛰️读书）
 
 ![](img/f771911d2c5d6c3aabfd51e3b3c25a66.png)
 
@@ -736,7 +736,7 @@ Thomas H. Cormen （托马斯•科尔曼） 达特茅斯学院计算机科学�
 
 **附件电子书：**
 
-[硬战：人工智能时代的爆款产品](https://weread.qq.com/web/bookDetail/3f832fa0811e37944g017c0f)（微信读书等上架）
+[硬战：人工智能时代的爆款产品](https://weread.qq.com/web/bookDetail/3f832fa0811e37944g017c0f)（🛰️读书等上架）
 
 ## 《硬战：人工智能时代的爆款产品》
 
@@ -756,7 +756,7 @@ Thomas H. Cormen （托马斯•科尔曼） 达特茅斯学院计算机科学�
 
 **附件电子书：**
 
-[《手把手构建人工智能产品》](https://weread.qq.com/web/bookDetail/3c632a90811e3794cg0146e8)（微信读书待上架）
+[《手把手构建人工智能产品》](https://weread.qq.com/web/bookDetail/3c632a90811e3794cg0146e8)（🛰️读书待上架）
 
 ## 《手把手构建人工智能产品》
 
@@ -776,7 +776,7 @@ Thomas H. Cormen （托马斯•科尔曼） 达特茅斯学院计算机科学�
 
 **附件电子书：**
 
-产品经理的 AI 实战—人工智能产品和商业落地（微信读书）
+产品经理的 AI 实战—人工智能产品和商业落地（🛰️读书）
 
 ## 《产品经理的 AI 实战—人工智能产品和商业落地》
 
@@ -796,7 +796,7 @@ Thomas H. Cormen （托马斯•科尔曼） 达特茅斯学院计算机科学�
 
 **附件电子书：**
 
-人工智能产品经理技能图谱：AI 技术与能力升级（微信读书等上架）
+人工智能产品经理技能图谱：AI 技术与能力升级（🛰️读书等上架）
 
 ## 《人工智能产品经理技能图谱：AI 技术与能力升级》
 
@@ -816,7 +816,7 @@ Thomas H. Cormen （托马斯•科尔曼） 达特茅斯学院计算机科学�
 
 **附件电子书：**
 
-[AIGC 未来已来](https://weread.qq.com/web/bookDetail/db0323d0813ab7cb1g017765)（微信读书）
+[AIGC 未来已来](https://weread.qq.com/web/bookDetail/db0323d0813ab7cb1g017765)（🛰️读书）
 
 ## 《AIGC 未来已来》
 
@@ -930,7 +930,7 @@ https://bookauthority.org/books/best-selling-chatgpt-ebooks
 
 1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国微信 ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 3.**关于文档负责人大国**：高帆文化CEO，曾就职于教培大厂，目前创业，主攻研究AI落地应用、企业流量增长及达人IP孵化。
 
@@ -942,9 +942,9 @@ https://bookauthority.org/books/best-selling-chatgpt-ebooks
 
 ![](img/968c5a735d0d5f38368693e460c8f8b6.png)
 
-微信好友（ID：zhangyuguo94s）
+🛰️好友（ID：zhangyuguo94s）
 
-**微信入群渠道**
+**🛰️入群渠道**
 
 进群或者加好友了解更多 AI 相关书单
 

@@ -99,4 +99,4 @@ PS: 这里跟作者交流过，实际上仅数学任务采用了这种责令，�
 
 自我蒸馏方法在不引入额外数据的情况下，可以极大程度的减轻模型的遗忘现象。后期可以利用外部模型，将自我蒸馏数据保留机制进行完善，说不定会有意想不到的效果。
 
-[**欢迎多多关注**](https://mp.weixin.qq.com/s?__biz=Mzg5MTU1NTE1OQ==&mid=2247486601&idx=1&sn=dd2f338675de1448981bcfbe1efa71e3&scene=21#wechat_redirect)公众号「NLP工作站」， 加入交流群 ，交个朋友吧，一起学习，一起进步！
+[**欢迎多多关注**](https://mp.weixin.qq.com/s?__biz=Mzg5MTU1NTE1OQ==&mid=2247486601&idx=1&sn=dd2f338675de1448981bcfbe1efa71e3&scene=21#wechat_redirect)👸号「NLP工作站」， 加入交流群 ，交个朋友吧，一起学习，一起进步！

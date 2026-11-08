@@ -50,13 +50,13 @@ IT之家 | [阅读原文](https://www.ithome.com/0/873/566.htm)
 
 2025年8月5日，谷歌DeepMind推出Genie 3，引发关注。它实现从静态视频到交互式世界的飞跃，是世界模型和AGI发展转折点。与Genie 2相比，Genie 3实时性强，能模拟数分钟交互式环境。前谷歌员工称其将颠覆游戏行业，虽有物理学、社交交互等问题，但记忆功能出色。它还是训练机器人的杀手级应用，是迈向人工世界的重要一步，目前仍处于研究原型阶段 。
 
-### 💡 小红书首个多模态 AI 大模型 dots.vlm1 发布并开源，基于 DeepSeek V3 LLM
+### 💡 📕首个多模态 AI 大模型 dots.vlm1 发布并开源，基于 DeepSeek V3 LLM
 
 IT之家 | [阅读原文](https://www.ithome.com/0/873/524.htm)
 
 ![](img/7f5f136647b3bee06d3588d5ecddb3dd.png)
 
-8月6日，小红书hi lab研发并开源首个多模态大模型dots.vlm1 ，它借助12亿参数视觉编码器及DeepSeek V3 LLM构建。该模型在多数多模态评测集上接近闭源SoTA模型水平，文本能力与主流文本模型相当。在视觉评测集上接近领先模型，文本推理上相当于DeepSeek-R1-0528。不过部分细分任务有差距，需优化。同时还给出了开源地址：https://github.com/rednote-hilab/dots.vlm1 。
+8月6日，📕hi lab研发并开源首个多模态大模型dots.vlm1 ，它借助12亿参数视觉编码器及DeepSeek V3 LLM构建。该模型在多数多模态评测集上接近闭源SoTA模型水平，文本能力与主流文本模型相当。在视觉评测集上接近领先模型，文本推理上相当于DeepSeek-R1-0528。不过部分细分任务有差距，需优化。同时还给出了开源地址：https://github.com/rednote-hilab/dots.vlm1 。
 
 ### 💡 摩尔线程：MUSA 成功适配 llama.cpp，直通全球 AI 生态圈
 

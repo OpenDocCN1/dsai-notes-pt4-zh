@@ -48,7 +48,7 @@ OpenClaw 结合了多种架构模式：
 
 +   WebSocket 服务器 (ws://localhost:18789)
 
-+   [JSON-RPC 2.0](https://zhida.zhihu.com/search?content_id=269849406&content_type=Article&match_order=1&q=JSON-RPC+2.0&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzIyODIwNTAsInEiOiJKU09OLVJQQyAyLjAiLCJ6aGlkYV9zb3VyY2UiOiJlbnRpdHkiLCJjb250ZW50X2lkIjoyNjk4NDk0MDYsImNvbnRlbnRfdHlwZSI6IkFydGljbGUiLCJtYXRjaF9vcmRlciI6MSwiemRfdG9rZW4iOm51bGx9.j4IySdL49j-DuLJJoSPhv9jsdZu5uxcDcBLOWJZgy8k&zhida_source=entity) 方法调度 (70+ 方法，8 个命名空间)
++   [JSON-RPC 2.0](https://zhida.zhihu.com/search?content_id=269849406&content_type=Article&match_order=1&q=JSON-RPC+2.0&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzIyODIwNTAsInEiOiJKU09OLVJ🐧yAyLjAiLCJ6aGlkYV9zb3VyY2UiOiJlbnRpdHkiLCJjb250ZW50X2lkIjoyNjk4NDk0MDYsImNvbnRlbnRfdHlwZSI6IkFydGljbGUiLCJtYXRjaF9vcmRlciI6MSwiemRfdG9rZW4iOm51bGx9.j4IySdL49j-DuLJJoSPhv9jsdZu5uxcDcBLOWJZgy8k&zhida_source=entity) 方法调度 (70+ 方法，8 个命名空间)
 
 +   多层认证系统 (off/local-only/token/tailscale/tailscale-local)
 

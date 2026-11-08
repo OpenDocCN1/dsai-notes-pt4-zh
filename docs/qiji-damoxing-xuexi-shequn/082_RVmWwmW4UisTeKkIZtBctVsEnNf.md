@@ -244,7 +244,7 @@ Framer是一种交互式帧插值工具，通过用户定制的关键点轨迹�
 
 ![](img/e79d0e7788627b0f05380ad1b6353421.png)
 
-[temp_1_20240925-165555_mode2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TZQQbYuFaoLvNGxpdjFc6LiWnCb)
+[temp_1_20240925-165555_mode2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TZ🐧bYuFaoLvNGxpdjFc6LiWnCb)
 
 # 投融资
 
@@ -468,7 +468,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

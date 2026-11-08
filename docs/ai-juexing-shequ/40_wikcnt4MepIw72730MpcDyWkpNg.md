@@ -1,4 +1,4 @@
-# 如何把自己多余的微信号变成一个ChatGPT机器人
+# 如何把自己多余的🛰️号变成一个ChatGPT机器人
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/C4GedCoiwoxYFpxxX1YcsdEWn9S](https://diwfpqo78m.feishu.cn/docx/C4GedCoiwoxYFpxxX1YcsdEWn9S)
 
@@ -6,7 +6,7 @@
 
 [项目地址 ，](https://pan.baidu.com/s/1J5yrYqVZvfP1CfhAgbZ-MA?pwd=8jvu)考虑到很多人可能没有github账号，可以下载 百度云文件 解压搭建
 
-前置：运行的机器需要能科学上网
+前置：运行的机器需要能🪜
 
 [环境安](https://www.python.org/downloads/)装：需要安装python3，官网下载地址： 官网 ，不知道用哪个版本可以使用3.9.16这个版本就好了，之后我们根据我们的机器系统下载对应的安装包
 
@@ -49,7 +49,7 @@ python3 app.py
 
 ps：出现 no module "xxx" 的错误的时候，运行 pip3 install xxx 即可
 
-4、用你想成为机器人的微信号去扫码就可以了
+4、用你想成为机器人的🛰️号去扫码就可以了
 
 效果图如下：
 

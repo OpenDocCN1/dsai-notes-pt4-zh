@@ -295,9 +295,9 @@ print(f&quot;Cosine similarity between dense_vecs1 and dense_vecs2: {cosine_simi
 
 > 🙋♂️ 入群交流
 
-+   公众号菜单点击「社群」，扫码直接入群
++   👸号菜单点击「社群」，扫码直接入群
 
-+   回复关键词「入群」，添加作者微信人工邀请
++   回复关键词「入群」，添加作者🛰️人工邀请
 
 ## 📒 总结与展望
 

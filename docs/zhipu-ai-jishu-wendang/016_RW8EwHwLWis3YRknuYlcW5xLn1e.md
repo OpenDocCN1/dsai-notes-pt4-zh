@@ -60,7 +60,7 @@ Github仓库：https://github.com/THUDM/GLM-4-Voice
 
 ---
 
-# 🏠 公众号
+# 🏠 👸号
 
 ![](img/7b26847a032092abef78f1455a6092f3.png)
 

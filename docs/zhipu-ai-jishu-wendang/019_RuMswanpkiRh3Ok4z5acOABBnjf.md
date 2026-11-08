@@ -100,7 +100,7 @@ Github仓库：https://github.com/THUDM/GLM-4
 
 ---
 
-# 🏠 公众号
+# 🏠 👸号
 
 ![](img/3e17caacb09c0896e548e886f4eb7a8a.png)
 

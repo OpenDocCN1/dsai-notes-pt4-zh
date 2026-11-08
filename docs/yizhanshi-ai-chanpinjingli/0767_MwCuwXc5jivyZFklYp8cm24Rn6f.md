@@ -36,7 +36,7 @@ OWL 项目地址：https://github.com/camel-ai/owl
 
 ![](img/8f85cdf81158a9ffadbd4dfff74b78cc.png)
 
-下面我们先来看一个 case，我的问题是"帮我在小红书上找一些3.8女神节适合送妈妈的礼物":
+下面我们先来看一个 case，我的问题是"帮我在📕上找一些3.8女神节适合送妈妈的礼物":
 
 ![](img/58c45127299e77364983d693d530589d.png)
 
@@ -163,7 +163,7 @@ Your output should be in json format, including the following fields:
 &quot;&quot;&quot;
 ```
 
-其中{task_prompt}就是我们提供的原始任务输入："帮我在小红书上找一些3.8女神节适合送妈妈的礼物"。
+其中{task_prompt}就是我们提供的原始任务输入："帮我在📕上找一些3.8女神节适合送妈妈的礼物"。
 
 {detailed_plan}则是上一次生成的规划内容，{self.history_window}默认为5，也就是说planning_agent会动态地结合最近地一些信息来进行下一步规划。在prompt中要求了planning_agent要使用结构化的输出。生成的规划内容会传输给web_agent来帮助它完成任务。
 
@@ -259,7 +259,7 @@ json
 &quot;&quot;&quot;
 ```
 
-其中{task_prompt}就是我们提供的原始任务输入："帮我在小红书上找一些3.8女神节适合送妈妈的礼物"，
+其中{task_prompt}就是我们提供的原始任务输入："帮我在📕上找一些3.8女神节适合送妈妈的礼物"，
 
 {detailed_plan_prompt}是由planning_agent生成的，{AVAILABLE_ACTIONS_PROMPT}中定义了web_agent可以使用的方法列表。
 

@@ -8,7 +8,7 @@
 
 ##    GPT-4o
 
-微信：OpenAI 重磅发布 GPT-4o ：见证《Her》的诞生！
+🛰️：OpenAI 重磅发布 GPT-4o ：见证《Her》的诞生！
 
 Bilibili：[【双语】OpenAI春季发布会，重磅官宣免费多模态](https://www.bilibili.com/video/BV1by411Y7jw/?buvid=Z84FA2895A3C48034C41947042F097E495DB&from_spmid=search.search-result.0.0&is_story_h5=false&mid=l%2F1Ir50IGwjiF7XlqrDGTA%3D%3D&p=1&plat_id=116&share_from=ugc&share_medium=iphone&share_plat=ios&share_session_id=1168D77E-D5A7-40BF-9DC9-07D3CAD6834E&share_source=COPY&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1715628619&unique_k=4YAR4Su&up_id=1845434732)GPT4o！_哔哩哔哩_bilibili
 

@@ -6,7 +6,7 @@
 
 > 📃 作者介绍：目前就职于金融银行AI部门，资深解决方案架构师。
 
-> 🛖 公众号：AIWithGary
+> 🛖 👸号：AIWithGary
 
 > ⏰ 收录时间：2024-05-27 11:20:58 (UTC+8)
 
@@ -216,7 +216,7 @@ print(f"Query张量: \n{query}\nKey张量: \n{key}\nValue张量: \n{value}")
 
 #         [ 0.3880,  1.0525, -0.3866, -0.1292]], grad_fn=<MmBackward0>)
 
-关注公众号获取完整代码 ，回复口令”6“
+关注👸号获取完整代码 ，回复口令”6“
 
 现在我们有了这三个矩阵，让我们逐步计算单头注意力。
 
@@ -378,7 +378,7 @@ print(f"注意力张量大小：\n{x.shape}\n注意力张量：\n{x}")
 
 #          [-0.1592,  0.5489, -0.0584,  0.3137]]], grad_fn=<UnsafeViewBackward0>)
 
-关注公众号获取完整代码 ，回复口令”6“
+关注👸号获取完整代码 ，回复口令”6“
 
 我们已经计算了单头注意力，而多头注意力则由多个单头注意力组成，正如我之前所述；下面是一个视觉示意图：
 
@@ -528,7 +528,7 @@ print(f"线性变换回输入向量维度的张量大小：\n{attention_ouput_x.
 
 #        grad_fn=<MmBackward0>)
 
-关注公众号获取完整代码 ，回复口令”6“
+关注👸号获取完整代码 ，回复口令”6“
 
 # 02
 
@@ -630,7 +630,7 @@ print(f"Norm之后的ouput: \n{normalized_x}\nMean矩阵：\n{mean_matrix}\nStd�
 
 #         [1.0974]])
 
-关注公众号获取完整代码 ，回复口令”6“
+关注👸号获取完整代码 ，回复口令”6“
 
 # 03
 
@@ -710,7 +710,7 @@ print(f"relu输出：\n{relu_output}")
 
 #        grad_fn=<ReluBackward0>)
 
-关注公众号获取完整代码 ，回复口令”6“
+关注👸号获取完整代码 ，回复口令”6“
 
 # 04
 
@@ -838,7 +838,7 @@ print(f"Encoder最后的Norm之后的ouput: \n{encoder_normalized_x}\nMean矩阵
 
 # tensor([0., 0., 0., 0., 0., 0.], requires_grad=True)
 
-关注公众号获取完整代码，回复口令”6“
+关注👸号获取完整代码，回复口令”6“
 
 # 05
 
@@ -856,7 +856,7 @@ print(f"Encoder最后的Norm之后的ouput: \n{encoder_normalized_x}\nMean矩阵
 
 总的来说，自注意力机制是Transformer成功的关键因素之一，它不仅提高了模型的性能，还为后续的研究者和开发者提供了灵感，促进了自然语言处理领域的发展；随着对这一机制理解的深入，我们期待未来会有更多创新的变体出现，推动人工智能技术向前发展。
 
-点击关注公众号👇
+点击关注👸号👇
 
 感谢您阅读完
 
@@ -878,7 +878,7 @@ print(f"Encoder最后的Norm之后的ouput: \n{encoder_normalized_x}\nMean矩阵
 
 +   [第](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484353&idx=1&sn=452b5e450b9eba799ba9b024099a2e87&chksm=fd61758cca16fc9aab3f99af1ce9662f1e029799f90e9f5fc30feff2a038bbca9a9c5298c47b&scene=21#wechat_redirect)三篇：要真正入门AI，OpenAI的官方Prompt工程指南肯定还不够，您必须了解的强大方法论和框架！！！
 
-公众号回复口令，领取资料，一起学习吧！🏃
+👸号回复口令，领取资料，一起学习吧！🏃
 
 “ 1 ”：领取开源书籍《动手实战人工智能》
 

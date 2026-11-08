@@ -268,7 +268,7 @@ https://mp.weixin.qq.com/s/Ehs6ad34HpWIdM0JypJETQ
 
 贡献人：
 
-https://mp.weixin.qq.com/s/aInYT8QQUb-qK06G6LH00Q
+https://mp.weixin.qq.com/s/aInYT8🐧Ub-qK06G6LH00Q
 
 Hugging Face 宣布收购了 XetHub，这是一家专注于为 AI 开发提供软件工程最佳实践的公司。XetHub 的技术能够扩展 Git 到 TB 级别的存储库，并通过分块文件和重复数据删除技术，优化大型数据集和模型的处理。Hugging Face 的 CTO Julien Chaumond 表示，这一收购将帮助公司解锁未来五年的数据集和模型增长，通过更高效的 LFS 存储后端实现对大文件的更优化管理。随着 AI 领域趋向于拥有万亿参数模型，Hugging Face 希望通过新技术解锁社区和企业内部的新规模，并提高协作效率。此外，XetHub 的创始人 Yucheng Low 强调了数据在 AI/ML 领域的重要性，以及通过大规模协作来推动该领域的发展。
 
@@ -414,7 +414,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

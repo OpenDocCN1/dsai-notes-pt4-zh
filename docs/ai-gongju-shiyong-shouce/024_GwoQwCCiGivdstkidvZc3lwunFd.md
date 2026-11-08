@@ -127,7 +127,7 @@ AI生成画面描述词
 
 ![](img/a681c76848051e11c6a0680055bd0cbc.png)
 
-如果发小红书，这里还有配套的写文章prompt👇
+如果发📕，这里还有配套的写文章prompt👇
 
 ```
 你现在是小红书文案专家，我需要你输出一封信，这封信是一只去出家修行的猫叫小猫，正在河边禅修，有感而发，写给他的猫主人的信，我希望你能按照拟人化的方式，以猫猫的第一视角，来写这个信，信中对主人的称呼为妈妈，需要写得比较感人，且容易引发猫主人的深思，预计输出400字，记得要在每句文本中适当插入表情
@@ -139,6 +139,6 @@ AI生成画面描述词
 
 介绍见这里👇
 
-[微信上能用的MJ及教程](https://yw55ojhusnq.feishu.cn/wiki/WZbSwbbSOijAeTke1Qtcjiagn4e?from=from_copylink)
+[🛰️上能用的MJ及教程](https://yw55ojhusnq.feishu.cn/wiki/WZbSwbbSOijAeTke1Qtcjiagn4e?from=from_copylink)
 
 > 我是热爱生活的小黑子，热爱当下生活，永远忠于自己。

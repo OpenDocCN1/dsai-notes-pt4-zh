@@ -2,7 +2,7 @@
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/YrUAdLUa3osIGXxjOhycwHF1nZb](https://xodnytdcaw.feishu.cn/docx/YrUAdLUa3osIGXxjOhycwHF1nZb)
 
-> [稳定梯子推荐 Co](https://www.kdocs.cn/l/:https://cokecloud.buyzur.com/#/register?code=L2FOV7Yb)keCloud ：点此注册试用1小时
+> [稳定🪜推荐 Co](https://www.kdocs.cn/l/:https://cokecloud.buyzur.com/#/register?code=L2FOV7Yb)keCloud ：点此注册试用1小时
 
 > 全线路解锁流媒体，同IP下不限设备，自用2年，相当稳定
 
@@ -14,7 +14,7 @@
 
 ## 二.软件激活
 
-### 方式一：命令激活（需科学上网）
+### 方式一：命令激活（需🪜）
 
 先输入1 ，之后输入 9
 

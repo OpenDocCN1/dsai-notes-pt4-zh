@@ -4,7 +4,7 @@
 
 > 作者：产品欧sir
 
-> 原文：https://mp.weixin.qq.com/s/HL5WWYQQgGFnbf7YYBpPCw
+> 原文：https://mp.weixin.qq.com/s/HL5WWY🐧gGFnbf7YYBpPCw
 
 > 先说明一个事实： 像ChatGPT这样的AI大语言模型不仅仅是和聊天机器人有关，AI Agent和人类文明模拟的AI模型正在编译 着 我们文明的本质！
 
@@ -110,7 +110,7 @@ AI Agent充当大语言模型的大脑，主要有以下几个关键组件进行
 
 https://lilianweng.github.io/posts/2023-06-23-agent/
 
-我这边创建的AI交流群，想进群的可以关注公众号后获取我的微信添加我拉你！
+我这边创建的AI交流群，想进群的可以关注👸号后获取我的🛰️添加我拉你！
 
 最近很火的AI agent一览表↓
 
@@ -480,7 +480,7 @@ BabyAGI 的快速实现。
 
 https://github.com/pj4533/yourgoal/?utm_source=awesome-ai-agents
 
-我这边创建的AI交流群，想进群的可以关注公众号后获取我的微信添加我拉你！
+我这边创建的AI交流群，想进群的可以关注👸号后获取我的🛰️添加我拉你！
 
 ---
 

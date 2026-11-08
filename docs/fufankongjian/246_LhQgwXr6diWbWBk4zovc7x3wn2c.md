@@ -1411,20 +1411,20 @@ Tailwind v4:  @import &quot;tailwindcss&quot; ← 一条语句生成全部，包
 
 到这里，我们已经用 GStack 完成了两个完整的开发冲刺。你可能会想：这个工具很棒，但它只能写代码吧？下一节，我们用一个对比实验来回答这个问题——同时揭示 Harness 架构的真正价值。
 
-## §7 超越代码：用 GStack 写一篇公众号文章
+## §7 超越代码：用 GStack 写一篇👸号文章
 
 到目前为止，我们用 GStack 完成了两个冲刺——从 Landing Page 到反馈墙，体验了完整的 Think → Plan → Build → Review → Ship 流程。你可能会觉得：这个工具就是写代码用的。
 
 **  但 GSt**ack 的核心不是代码生成——而是结构化思考流程。/office-hours 的本质是需求分析，/plan-ceo-review 的本质是方案审查，/review 的本质是质量把关。这些能力并不局限于软件开发。
 
-为了验证这个假设，我们做一个真实的对比实验：用 GStack 写一篇介绍 GStac**k 的微信公众号文章。**对照组是普通的 Claude Code（没有安装任何 Skill），实验组是安装了 GStack 的 Claude Code。同一个任务，同一个模型，唯一的区别是——有没有 Harness。
+为了验证这个假设，我们做一个真实的对比实验：用 GStack 写一篇介绍 GStac**k 的🛰️👸号文章。**对照组是普通的 Claude Code（没有安装任何 Skill），实验组是安装了 GStack 的 Claude Code。同一个任务，同一个模型，唯一的区别是——有没有 Harness。
 
 ### 7.1 实验设计
 
 | 维度 | 对照组 A（普通 Claude Code） | 实验组 B（GStack 工作流） |
 | --- | --- | --- |
 | 工具 | Claude Code（无 Skill） | Claude Code + GStack |
-| 任务 | 写一篇 GStack 介绍的公众号文章 | 相同任务 |
+| 任务 | 写一篇 GStack 介绍的👸号文章 | 相同任务 |
 | 提示词 | 直接描述需求 | /office-hours 开始 |
 | 底层模型 | Claude Sonnet | Claude Sonnet |
 | 约束 | 约 3000 字，中文 | 相同约束 |
@@ -1466,7 +1466,7 @@ Tailwind v4:  @import &quot;tailwindcss&quot; ← 一条语句生成全部，包
 
 ### 7.3 实验组：GStack 的 6 分钟深度思考
 
-现在让我们看看 GStack 做了什么。在同一个 ShipLog 项目中，我们输入 /office-hours，然后告诉它我们想写一篇公众号文章。
+现在让我们看看 GStack 做了什么。在同一个 ShipLog 项目中，我们输入 /office-hours，然后告诉它我们想写一篇👸号文章。
 
 #### 第一步：上下文理解（Phase 1）
 

@@ -36,7 +36,7 @@ Manus 是一个由** Monica 团队**打造的通用 AI 智能体平台，**全�
 
 打造 Manus 的，是来自 Monica 团**队，**一家土生土长的中国公司。近期，创始人肖弘接受张小珺访谈表示，"AI Agent 不是代码竞赛，而是'让用户忘记技术'的设计战争。"
 
-肖弘，男，1992 年出生，华中科技大学软件学院 2011 级本科生，华中科技大学联创团队毕业队员，Monica 创始人、CEO。2011 年，肖弘进入华中科技大学软件工程专业学习。2015 年，创办武汉夜莺科技（产品：微伴助手、壹伴），专注于微信生态的应用研发与推广。2021 年，完成腾讯等数亿人民币战略融资。2022 年，肖弘创立了“蝴蝶效应”公司，并推出了 AI 浏览器插件 Monica。2023 年，收购 chatgpt4google 浏览器插件工具，和 Monica 进行矩阵运营。
+肖弘，男，1992 年出生，华中科技大学软件学院 2011 级本科生，华中科技大学联创团队毕业队员，Monica 创始人、CEO。2011 年，肖弘进入华中科技大学软件工程专业学习。2015 年，创办武汉夜莺科技（产品：微伴助手、壹伴），专注于🛰️生态的应用研发与推广。2021 年，完成腾讯等数亿人民币战略融资。2022 年，肖弘创立了“蝴蝶效应”公司，并推出了 AI 浏览器插件 Monica。2023 年，收购 chatgpt4google 浏览器插件工具，和 Monica 进行矩阵运营。
 
 ### manus的原理以及场景
 
@@ -820,7 +820,7 @@ OpenManus 3小时复刻Manus核心功能
 
 🔥  AI研习社正在努力搭建硬核实用的AI知识库&学习社区，由30余位AI爱好者共同组建。
 
-目前已有 ** 6000+ **AI人工智能相关爱好者加入，目前已经建立20个微信群
+目前已有 ** 6000+ **AI人工智能相关爱好者加入，目前已经建立20个🛰️群
 
 请注意，这是一个**免费的公益社群**
 
@@ -844,7 +844,7 @@ OpenManus 3小时复刻Manus核心功能
 
 +   [AI 实战小册子](https://zl49so8lbq.feishu.cn/wiki/U1E2wedqLiJ0VgkvicqcixeNnfd?from=from_copylink)
 
-+   🧠 公众号：AiSClub365
++   🧠 👸号：AiSClub365
 
 +   [AI研习社志愿者简介](https://zl49so8lbq.feishu.cn/wiki/ChOZwy16Gif31Ok1JELcjYepn8y)
 
@@ -914,19 +914,19 @@ OpenManus 3小时复刻Manus核心功能
 
 **AI商业变现**
 
-+   《AI公众号日引200+创业粉》日稳定变现4000+
++   《AI👸号日引200+创业粉》日稳定变现4000+
 
 +   《抖音AI数字人一周涨粉10万+》单月变现30万
 
-+   [《AI小红书涨粉变现训练营》](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&op=display&id=12743&do=lesson&m=fy_lessonv2)
++   [《AI📕涨粉变现训练营》](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&op=display&id=12743&do=lesson&m=fy_lessonv2)
 
-+   [《小红书矩阵达人变现实操》](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&op=display&id=14295&do=lesson&m=fy_lessonv2)
++   [《📕矩阵达人变现实操》](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&op=display&id=14295&do=lesson&m=fy_lessonv2)
 
 +   [《私域拼团裂变实操教程》](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&op=display&id=14129&do=lesson&m=fy_lessonv2)
 
 +   [《AI数字人系统代理》](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&op=display&id=12951&do=lesson&m=fy_lessonv2)
 
-+   [9000+生财副业分享](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&t=1&do=index&m=fy_lessonv2&uid=6)
++   [9000+赚钱副业分享](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&t=1&do=index&m=fy_lessonv2&uid=6)
 
 ---
 
@@ -938,7 +938,7 @@ OpenManus 3小时复刻Manus核心功能
 
 [📖【2024版】小](https://t.zsxq.com/16CTbCL3O)[报童IP类内容库（](https://zl49so8lbq.feishu.cn/wiki/U1E2wedqLiJ0VgkvicqcixeNnfd?from=from_copylink)[持续更新）](https://t.zsxq.com/16CTbCL3O)
 
-📖【2024版】小红书&AI实战运营全攻略（持续更新）
+📖【2024版】📕&AI实战运营全攻略（持续更新）
 
 📖【2024版】视频号&AI实战运营全攻略（持续更新）
 

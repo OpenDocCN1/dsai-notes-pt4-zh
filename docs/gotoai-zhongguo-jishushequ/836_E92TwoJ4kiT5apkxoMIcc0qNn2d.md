@@ -97,7 +97,7 @@ Host dev-server
 
 ### 3.1 国际平台访问方案
 
-+   科学上网工具：
++   🪜工具：
 
 +   使用 Clash 或 V2RayN 客户端，通过订阅节点绕过网络限制，推荐使用支持 UDP 协议的 WireGuard 节点。
 
@@ -555,6 +555,6 @@ sysctl -w vm.max_map_count=262144  # 满足Elasticsearch需求sysctl -w net.core
 
 # 四、网络环境配置
 
-必须具备科学上网条件
+必须具备🪜条件
 
 DMVPN ，新加坡/日本节点推荐

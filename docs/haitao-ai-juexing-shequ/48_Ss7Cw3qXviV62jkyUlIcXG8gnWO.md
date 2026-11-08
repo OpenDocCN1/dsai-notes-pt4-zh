@@ -1,4 +1,4 @@
-# 新|即创公众号爆文使用说明
+# 新|即创👸号爆文使用说明
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/MfoPdK18CoXK1ix1Vvccx4MLnkc](https://zinxkclpk97.feishu.cn/docx/MfoPdK18CoXK1ix1Vvccx4MLnkc)
 
@@ -6,25 +6,25 @@
 
 旧版地址：https://www.coze.cn/store/agent/7452722873921208320?from=bots_card
 
-[新|即创公众号爆文小程序](https://zinxkclpk97.feishu.cn/wiki/Ss7Cw3qXviV62jkyUlIcXG8gnWO)
+[新|即创👸号爆文小程序](https://zinxkclpk97.feishu.cn/wiki/Ss7Cw3qXviV62jkyUlIcXG8gnWO)
 
-# 一、公众号账号设置（新手必看）
+# 一、👸号账号设置（新手必看）
 
-+   **系统使用需对接公众号，需要使用公众号**的开发权限，因此请按照下面步骤进行配置。
++   **系统使用需对接👸号，需要使用👸号**的开发权限，因此请按照下面步骤进行配置。
 
-## 网页登录微信公众号管理平台
+## 网页登录🛰️👸号管理平台
 
 https://mp.weixin.qq.com/
 
-## 设置公众号开发权限
+## 设置👸号开发权限
 
-登录公众号之后，在菜单栏【设置与开发-开发接口管理】点击开通，成为开发者，如果已经是开通过了，则进行下一步
+登录👸号之后，在菜单栏【设置与开发-开发接口管理】点击开通，成为开发者，如果已经是开通过了，则进行下一步
 
-## 账号开发信息配置【近期公众号官方调整，配置入口变更了】，按下面最新的来操作
+## 账号开发信息配置【近期👸号官方调整，配置入口变更了】，按下面最新的来操作
 
 访问路径：https://developers.weixin.qq.com/platform?tab1=basicInfo&tab2=dev
 
-登录公众号之后，在菜单栏【设置与开发-开发接口管理】点击开通，成为开发者，如果已经是开通过了，则进行下一步
+登录👸号之后，在菜单栏【设置与开发-开发接口管理】点击开通，成为开发者，如果已经是开通过了，则进行下一步
 
 ![](img/15ea8f935679cde196862d944fe3cfa2.png)
 
@@ -32,7 +32,7 @@ https://mp.weixin.qq.com/
 
 ![](img/b9a5ea6606af65fb3faf7b0eda36865b.png)
 
-登录后找到，我的业务与服务，选择公众号
+登录后找到，我的业务与服务，选择👸号
 
 ![](img/ac9170c95bbe1a47491a9d8c2b400a35.png)
 
@@ -42,7 +42,7 @@ https://mp.weixin.qq.com/
 
 ![](img/5063b2a336f1b2c7987a7f6bc571a71b.png)
 
-1.  设置公众号白名单IP地址
+1.  设置👸号白名单IP地址
 
 1.  点击编辑
 
@@ -68,7 +68,7 @@ b. 提示api unauthorized rid xxx.
 
 ![](img/c6e8bd19fa58dd5fe0c0aa111cc751be.png)
 
-可检查公众号后台，设置与开发->账号设置->主体信息
+可检查👸号后台，设置与开发->账号设置->主体信息
 
 ![](img/6ada934840b20f044cf981bfc3004b44.png)
 
@@ -82,7 +82,7 @@ c.提示appsecret 错误 invialid appsecret
 
 ## 首屏入口
 
-+   小红书转小绿书
++   📕转小绿书
 
 ![](img/ab46b7f66253daedcc14f61c30191bb2.png)
 
@@ -118,7 +118,7 @@ c.提示appsecret 错误 invialid appsecret
 
 # 三、视频演示
 
-## 1、公众号配置
+## 1、👸号配置
 
 文字版说明可以看[第一节](https://zinxkclpk97.feishu.cn/wiki/Ss7Cw3qXviV62jkyUlIcXG8gnWO#share-EZgqdyg1QolVyFxNszecqsTanfh)
 
@@ -126,7 +126,7 @@ c.提示appsecret 错误 invialid appsecret
 
 [20251116231758_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vrt0b8dIcogpR2x5KzccXbTdnRe)
 
-## 2、小红书复制小绿书
+## 2、📕复制小绿书
 
 ![](img/4268a8554fdbcaa62f6a6ebe4c3aa5ba.png)
 
@@ -154,7 +154,7 @@ c.提示appsecret 错误 invialid appsecret
 
 ![](img/67dea0ae3de31cfc04d8796185494e8e.png)
 
-之后就按照公众号配置里面的步骤进行操作即可。
+之后就按照👸号配置里面的步骤进行操作即可。
 
 ![](img/4efba36382471de27320b2097697056e.png)
 

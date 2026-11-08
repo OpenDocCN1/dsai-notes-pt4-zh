@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/Yc68dgqfPo8p1BxbiXuc1fz6nJM](https://aigcreative.feishu.cn/docx/Yc68dgqfPo8p1BxbiXuc1fz6nJM)
 
-> 来源：公众号-百度MEUX
+> 来源：👸号-百度MEUX
 
 #### **前言**
 
@@ -164,6 +164,6 @@ tile 模型本质上是一个重绘模型，但是会在保持原图构图、画
 
 单纯用 AI 设计方式设计视觉只能让你跟上设计步伐不掉队，MEUX 内容生态设计团队致力于研究出更多方式控制 AI 的创意、风格、品质和效率，探索 AI 生图中更多可能性，让 AI 成为设计师手上一款好用的设计工具。
 
-欢迎关注作者的微信公众号：「百度MEUX」
+欢迎关注作者的🛰️👸号：「百度MEUX」
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>

@@ -519,7 +519,7 @@ BM25 打分公式进行打分排序返回给用户(关于公式的详细解释�
 
 1.  **embedding 召回**
 使用已有的开源 embedding：
-基于已有领域数据，基于embedding 进行标注和微调，即用 QQ 和 QD 语料对向量模型进行 **Finetune**
+基于已有领域数据，基于embedding 进行标注和微调，即用 🐧 和 QD 语料对向量模型进行 **Finetune**
 
 embedding 召回的优缺点
 优势：考虑语义相似性，更加智能

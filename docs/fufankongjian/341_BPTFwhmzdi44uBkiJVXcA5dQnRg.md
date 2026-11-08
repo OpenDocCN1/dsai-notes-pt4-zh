@@ -14,7 +14,7 @@
 
 此外，公开课全套学习资料，已上传至网盘
 
-（链接: https://pan.baidu.com/s/11nFqw4w2kIvypKqzBW9NQQ 提取码: 6k24 ）
+（链接: https://pan.baidu.com/s/11nFqw4w2kIvypKqzBW9N🐧 提取码: 6k24 ）
 
 需要更系统深入学习大模型可扫码⬆️添加助教咨询喔～
 

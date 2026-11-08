@@ -14,21 +14,21 @@
 
 > 4、欢迎圈友补充更多工具，赠人玫瑰手有余香，利他便是利己！
 
-# 1、微信工具
+# 1、🛰️工具
 
-1）5款微信多开神器（电脑版无限开）：5款电脑版微信多开神器（无限开）
+1）5款🛰️多开神器（电脑版无限开）：5款电脑版🛰️多开神器（无限开）
 
-[2）公众号文章采集下](https://pan.quark.cn/s/c85d9342b8ff)载器（免费版）：公众号文章采集下载器
+[2）👸号文章采集下](https://pan.quark.cn/s/c85d9342b8ff)载器（免费版）：👸号文章采集下载器
 
-3）微信朋友圈采集备份 ：[微信朋友圈采集备份工具](https://pan.quark.cn/s/b74e5a448cb1)
+3）🛰️朋友圈采集备份 ：[🛰️朋友圈采集备份工具](https://pan.quark.cn/s/b74e5a448cb1)
 
-[4）2款在线微信对](https://pan.quark.cn/s/34f22f39d8d9)话生成器（文字/图片/语音/红包转帐）：2款微信对话生成器
+[4）2款在线🛰️对](https://pan.quark.cn/s/34f22f39d8d9)话生成器（文字/图片/语音/红包转帐）：2款🛰️对话生成器
 
-5）2款微信低版本修复：[2款微信低版本修复](https://pan.quark.cn/s/518ec1fa504d)
+5）2款🛰️低版本修复：[2款🛰️低版本修复](https://pan.quark.cn/s/518ec1fa504d)
 
-[6）微信公众号图文素材转移](https://pan.quark.cn/s/5fa1009ef5d8)助手：微信公众号图文素材转移助手
+[6）🛰️👸号图文素材转移](https://pan.quark.cn/s/5fa1009ef5d8)助手：🛰️👸号图文素材转移助手
 
-[7）微信公众号文章搜索导出](https://pan.quark.cn/s/a0a98481b951)助手：微信公众号文章搜索导出助手
+[7）🛰️👸号文章搜索导出](https://pan.quark.cn/s/a0a98481b951)助手：🛰️👸号文章搜索导出助手
 
 # 2、视频类工具（爆）
 
@@ -138,13 +138,13 @@
 
 # 3、热门平台工具
 
-1）QQ空间说说采集导出：[QQ空间说说采集导出](https://pan.quark.cn/s/0426ae5e3580)
+1）🐧空间说说采集导出：[🐧空间说说采集导出](https://pan.quark.cn/s/0426ae5e3580)
 
-2）微博批量采集下载：[微博批量采集下载工具](https://pan.quark.cn/s/3a43865dd46e)
+2）🧣批量采集下载：[🧣批量采集下载工具](https://pan.quark.cn/s/3a43865dd46e)
 
-3）微博博客采集：[微博博客采集导出助手](https://pan.quark.cn/s/32046f50d3a5)
+3）🧣博客采集：[🧣博客采集导出助手](https://pan.quark.cn/s/32046f50d3a5)
 
-4）小红书笔记批量下载：小红书笔记批量下载助手V1.1.3
+4）📕笔记批量下载：📕笔记批量下载助手V1.1.3
 
 5）知乎文章采集导出：[知乎文章采集导出助手](https://pan.quark.cn/s/0050fdad576a)
 
@@ -210,7 +210,7 @@
 
 ## 7.3、素材
 
-[7个无版权视频网站，二创混剪必备](https://w91h2gmtrn.feishu.cn/docx/JCf1d0QREobGLkxO9YTcJWO4nHh)）7个无版权素材库（不用科学上网）：
+[7个无版权视频网站，二创混剪必备](https://w91h2gmtrn.feishu.cn/docx/JCf1d0QREobGLkxO9YTcJWO4nHh)）7个无版权素材库（不用🪜）：
 
 [7个无版权高清图片库](https://w91h2gmtrn.feishu.cn/docx/HDWcdIwdjorCi4xRMlAcNBEOnQb)）7个无版权图片素材库（免费）：
 
@@ -300,7 +300,7 @@
 
 1.  [黑科技竟然垫底！互联网5大最火赚钱技术揭秘](https://w91h2gmtrn.feishu.cn/docx/IoESdpgpVojhPaxKKLJcJBCNnmc)
 
-1.  [花了2个月看完生财1万篇技术类赚钱文章，精选300篇内容，整理出这篇——技术赚钱实践指南](https://w91h2gmtrn.feishu.cn/docx/HJTtd44mZoTWPbxQwXncLHW1nje)
+1.  [花了2个月看完赚钱1万篇技术类赚钱文章，精选300篇内容，整理出这篇——技术赚钱实践指南](https://w91h2gmtrn.feishu.cn/docx/HJTtd44mZoTWPbxQwXncLHW1nje)
 
 1.  [内部解密：我做约会APP如何烧掉100万，以及从中总结的六大经验感悟](https://w91h2gmtrn.feishu.cn/docx/Ohe2dA2SyoHCcsxaz0CcbsZjnkc)
 
@@ -318,8 +318,8 @@
 
 +   [《乔帮主往期干货合集》](https://w91h2gmtrn.feishu.cn/docx/XpSDdtNN1oOKwGxjyBkcifrZnsc)
 
-微信：qiaobangzhu-cn，添加请备注：点金帮友。欢迎交流！
+🛰️：qiaobangzhu-cn，添加请备注：点金帮友。欢迎交流！
 
-**公众号：点金乔帮主**
+**👸号：点金乔帮主**
 
 ![](img/76a7383dc33fd1bfecebb8d9546e27cb.png)

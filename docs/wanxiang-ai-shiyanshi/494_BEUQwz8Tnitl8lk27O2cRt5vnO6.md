@@ -50,7 +50,7 @@
 
 ### 🛠️ 工具/教程
 
-1.  **AI智能体发朋友圈** ([链接](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651018653&idx=1&sn=5d8578072edd5a01bd4f4fbfb20aadb8))：复旦大学A3实验室研发的自进化智能体GenericAgent学会操作微信，在朋友圈自主发消息并与好友互动，其具备自学习、自组织记忆和极简架构等特性。
+1.  **AI智能体发朋友圈** ([链接](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651018653&idx=1&sn=5d8578072edd5a01bd4f4fbfb20aadb8))：复旦大学A3实验室研发的自进化智能体GenericAgent学会操作🛰️，在朋友圈自主发消息并与好友互动，其具备自学习、自组织记忆和极简架构等特性。
 
 1.  开源[桌面](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651018653&idx=3&sn=76dfe0bb2832efadbd7d245d34f5afe8)虚拟同事 Open Cowork (链接)：支持远程操控和通用GUI操作，让AI模型在安全沙箱内操作电脑，自动完成跨应用流程并生成PPT/Word等交付物，可接入飞书协作。
 

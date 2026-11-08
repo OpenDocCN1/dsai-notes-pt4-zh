@@ -4,7 +4,7 @@
 
 > 作者：APlayBoy | AI生成未来
 
-> 公众号原文：https://mp.weixin.qq.com/s/mZOBAeqVPqnv4j06hnbP4Q
+> 👸号原文：https://mp.weixin.qq.com/s/mZOBAeqVPqnv4j06hnbP4Q
 
 > 知乎原文：https://zhuanlan.zhihu.com/p/691719636
 

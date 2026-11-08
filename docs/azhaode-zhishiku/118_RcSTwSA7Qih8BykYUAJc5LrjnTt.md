@@ -164,6 +164,6 @@ AI时代的营销升级，并不是在营销中强行融入AI，而是让品牌�
 
 [1] Chain， 《销售额提升2.3倍！AI比人类更懂“卖得好”的设计？》，2023年8月23日，FBIF食品饮料创新
 
-作者：Yanyan（微信号：fbif_media2019），欢迎交流内容。
+作者：Yanyan（🛰️号：fbif_media2019），欢迎交流内容。
 
 <https://my.feishu.cn/sync/CV7edZp1nspUQobYJhicxeP7nrb>

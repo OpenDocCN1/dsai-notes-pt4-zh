@@ -21,7 +21,7 @@
 | # 导 航 目 录 |  |  |  |  |
 | --- | --- | --- | --- | --- |
 | [**阿里**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-HZh1d5aGpo3w4wxiG0Bc820SnNe) | [**百度**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-XFHMdgxQEoa8WTxHlsYcrCivnKb) | [**字节**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-AlBadvTeao5fsDxrcZxc2O8qnBx) | [**腾讯**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-XvgSdbllyore9ZxfocWcZ6rtnQd) | [**华为**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-ODWdd2yApoB3drxuoKZcD3KSngK) |
-| [**小红书**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-IQRod7uOgo08VEx35mHcLnZsnuh) | [**美图秀秀**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-JiSndx1lXoHsCNxt0PucutRrnNf) | [**科大讯飞**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-A90CdBYMKoua7cxu6qhcIFBMndc) | [**网易**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-S45Udic7zoqwWmxthMMckgfznUh) | [**360**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-YWgzddvDYoqGjsxZKMccxYO9nSc) |
+| [**📕**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-IQRod7uOgo08VEx35mHcLnZsnuh) | [**美图秀秀**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-JiSndx1lXoHsCNxt0PucutRrnNf) | [**科大讯飞**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-A90CdBYMKoua7cxu6qhcIFBMndc) | [**网易**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-S45Udic7zoqwWmxthMMckgfznUh) | [**360**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-YWgzddvDYoqGjsxZKMccxYO9nSc) |
 | [**金山**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-QCiSdFb3VoGpUOxOJkwcRIklnpf) | [**美团**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-TVTJdqhv9ohHtLxmQ8ncBZTDnng) | [**快手**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-PftQdge0coDdD0x6thtcDgFmnEh) |  |  |
 
 # 一、阿里
@@ -180,7 +180,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**大众用户
 
-**体验地址：**微信小程序搜索妙鸭相机
+**体验地址：**🛰️小程序搜索妙鸭相机
 
 ## 2023 年 4 月
 
@@ -208,7 +208,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **上线时间：**2023 年 8 月 31 日
 
-**产品介绍：**百度输入法推出基于文心大模型的创作助手“超会写”，可以为用户提供场景化的高质量文本创作服务。用户只需在“超会写”界面输入需求，AI 助手就会提供几个符合条件的文本供选择。例如高情商沟通、神评论、改写文案、短视频配文、小红书爆款标题、创意微博等。
+**产品介绍：**百度输入法推出基于文心大模型的创作助手“超会写”，可以为用户提供场景化的高质量文本创作服务。用户只需在“超会写”界面输入需求，AI 助手就会提供几个符合条件的文本供选择。例如高情商沟通、神评论、改写文案、短视频配文、📕爆款标题、创意🧣等。
 
 **主要作用：**AI 写作工具
 
@@ -462,7 +462,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **体验地址：**https://hunyuan.tencent.com/
 
-微信小助手：腾讯混元助手
+🛰️小助手：腾讯混元助手
 
 ## 2023 年 3 月
 
@@ -512,7 +512,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **体验地址：**https://pangu.huaweicloud.com/
 
-# 六、小红书
+# 六、📕
 
 ## 2023 年 9 月
 
@@ -524,9 +524,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **产品介绍：**为用户提供智能问答和个性化服务。它基于 Meta 旗下的 LLAMA 大模型进行训练，涵盖了旅游攻略、美食攻略、地理和文化常识、生活技巧、个人成长和心理建议，以及活动推荐等多个方面。通过与"达芬奇"的互动，用户可以获得准确、有用的信息和建议，节省时间和精力，提升生活质量和幸福感。
 
-**主要作用：**为小红书内部用户提供智能问答服务
+**主要作用：**为📕内部用户提供智能问答服务
 
-**面向人群：**小红书用户
+**面向人群：**📕用户
 
 **体验地址**：
 
@@ -538,7 +538,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **上线时间：**2023 年 8 月
 
-**产品介绍：**小红书内测的 Midjourney 中文版，专著于“国风”小模型，体验下来是为数不多的适合普通用户使用的免费 AI 图片创作工具。
+**产品介绍：**📕内测的 Midjourney 中文版，专著于“国风”小模型，体验下来是为数不多的适合普通用户使用的免费 AI 图片创作工具。
 
 **主要作用：**AI 绘画工具
 
@@ -1010,7 +1010,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国微信 ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 3.**关于文档负责人大国**：高帆文化CEO，曾就职于教培大厂，目前创业，主攻研究AI落地应用、企业流量增长及达人IP孵化。
 
@@ -1022,9 +1022,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 ![](img/8ec2c619cea37c67b3fbba8133b2bc6a.png)
 
-微信好友（ID：zhangyuguo94s）
+🛰️好友（ID：zhangyuguo94s）
 
-**扫码加微信入微信群**
+**扫码加🛰️入🛰️群**
 
 **欢迎扫码了解更多AI创业知识**
 

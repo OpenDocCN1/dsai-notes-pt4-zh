@@ -148,15 +148,15 @@ https://pan.baidu.com/s/19QGDWZeBfX_SjVRJhLDcFg?pwd=vtkz
 | Llama中文社区 | Llama模型、技术和爱好者的家园 | https://llama.family/wiki |
 | FastGPT | 全球知名的开源 AI 智能体构建平台 | https://github.com/labring/FastGPT |
 | 硅基流动 | 国内口碑大模型云平台 | https://siliconflow.cn/ |
-| 刘润 · 进化岛 | 提供最新的AI商业洞察。 | 公众号：进化岛 |
+| 刘润 · 进化岛 | 提供最新的AI商业洞察。 | 👸号：进化岛 |
 | 得到 · AI学习圈 | AI应用大爆发，前沿课程抱回家 | 得到APP |
 | 提示词图书馆 | 基于个人收藏和教学目的收录的优秀的提示词创作者的开源 Prompt | [h](https://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc)ttps://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc |
 | 清华大模型通识课 | “迈向通用的人工智能”开放课程 | https://maic.chat/ |
-| 赛博禅心 | 面向 AI 从业者提供 AI 行业的精准资讯，国内唯一参与OpenAI 发布活动的媒体。 | 公众号：赛博禅心 |
-| 云中江树 | 关于提示词你需要知道的一切。 | 公众号：云中江树 |
-| 李继刚 | 李继刚的开源prompt | 公众号：李继刚 |
-| 甲木 | Prompt，AI Agent，致力于分享AI前沿科技 | 公众号：甲木未来派 |
-| 小七姐 | AI 提示词知识分享 | 公众号：夜航星小七姐 |
+| 赛博禅心 | 面向 AI 从业者提供 AI 行业的精准资讯，国内唯一参与OpenAI 发布活动的媒体。 | 👸号：赛博禅心 |
+| 云中江树 | 关于提示词你需要知道的一切。 | 👸号：云中江树 |
+| 李继刚 | 李继刚的开源prompt | 👸号：李继刚 |
+| 甲木 | Prompt，AI Agent，致力于分享AI前沿科技 | 👸号：甲木未来派 |
+| 小七姐 | AI 提示词知识分享 | 👸号：夜航星小七姐 |
 
 ## **福利八：线下发布会干货分享**
 
@@ -194,7 +194,7 @@ https://pan.baidu.com/s/19QGDWZeBfX_SjVRJhLDcFg?pwd=vtkz
 
 > 福利九：配套电子资源 AI 知识库
 
-用微信扫码即可加入知识库，用 DeepSeek 自由问答~
+用🛰️扫码即可加入知识库，用 DeepSeek 自由问答~
 
 ## **福利10：6节直播课**
 

@@ -22,7 +22,7 @@
 
 ##### 用Coze的图像流生成/修改自己的图片
 
-##### 将AI智能体对接微信，成为个人AI助理
+##### 将AI智能体对接🛰️，成为个人AI助理
 
 ## 📖课程资料直达👇
 
@@ -32,7 +32,7 @@
 
 +   【第二讲】[2. Coze 核心功能讲解与实战](https://agijuejin.feishu.cn/docx/SXdidjUO1okEDrxCeXpc1DR0nud)
 
-+   【第三讲】[3. 零基础搭建 AI 微信聊天机器人](https://agijuejin.feishu.cn/docx/JwyFdu9dwoRjlAxLDrFcBtzLnSb)
++   【第三讲】[3. 零基础搭建 AI 🛰️聊天机器人](https://agijuejin.feishu.cn/docx/JwyFdu9dwoRjlAxLDrFcBtzLnSb)
 
 多维表格（OHVkbiwSLaG4XHsvRuccrbERnkh_tblO4JtgI5iBBr6L）
 

@@ -4,7 +4,7 @@
 
 # [资源导航首页](https://yunyingmenghai.feishu.cn/wiki/Y6BWwtKvXiGJr5kXb81c4GYLnVe)
 
-> QQ交流群: **1034472934**
+> 🐧交流群: **1034472934**
 
 > 点击链接加入群聊【七木数字人】：https://qm.qq.com/q/z72DxEkOdi
 

@@ -104,7 +104,7 @@
 
 **5元支付宝立减金 **，去杭银直销的约惠生活，任意消费一笔；
 
-**支付减金 **，支付宝、微信等三方支付首次 绑定杭银卡，有较大概率获得8.8元立减金；
+**支付减金 **，支付宝、🛰️等三方支付首次 绑定杭银卡，有较大概率获得8.8元立减金；
 
 其余福利，包括秒杀，不定期展开。
 
@@ -253,7 +253,7 @@
 
 [**平安卡详细介绍**](http://mp.weixin.qq.com/s?__biz=Mzg5NDMyNjIyOA==&mid=2247496054&idx=1&sn=a5b5215e978a5a405b2417c6d87f3242&chksm=c023f5cdf7547cdb0f87ab995fd1a7f9fdc14cfc685648ef59ff74d0f153f5c240d1b5ae005b&scene=21#wechat_redirect)
 
-微信立减金54元(每月）+京东PLUS季卡（每季度）+好物一分购+96元新户立减金+京东120支付券+200元
+🛰️立减金54元(每月）+京东PLUS季卡（每季度）+好物一分购+96元新户立减金+京东120支付券+200元
 
 [**中信卡详细介绍 **](http://mp.weixin.qq.com/s?__biz=Mzg5NDMyNjIyOA==&mid=2247495962&idx=1&sn=125649ab46775612563586f08be156c1&chksm=c023f5a1f7547cb70b4eeb6dad264b0da13d8c83f8f905b273e0aef8d40db8b9a1de51f6a063&scene=21#wechat_redirect)
 

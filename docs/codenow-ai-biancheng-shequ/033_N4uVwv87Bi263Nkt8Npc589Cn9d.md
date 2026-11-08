@@ -98,7 +98,7 @@ http://mixlab-co.mikecrm.com/IHvkMlG
 
 报名后
 
-微信联系 litnmnm
+🛰️联系 litnmnm
 
 # 过往活动
 

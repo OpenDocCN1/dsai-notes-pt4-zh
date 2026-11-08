@@ -1,6 +1,6 @@
 # DeepSeek-V4 上架模型广场，支持不同大模型之间无缝切换与灵活供给
 
-> 来源：[https://docs.feishu.cn/docx/J2KBdLAnxoIVQQxzGV7cApDQnxb](https://docs.feishu.cn/docx/J2KBdLAnxoIVQQxzGV7cApDQnxb)
+> 来源：[https://docs.feishu.cn/docx/J2KBdLAnxoIV🐧xzGV7cApDQnxb](https://docs.feishu.cn/docx/J2KBdLAnxoIV🐧xzGV7cApDQnxb)
 
 ---
 
@@ -14,6 +14,6 @@
 
 目前，TokenHub 模型广场已覆盖混元（含最新 Hy3 Preview）、智谱、月之暗面、MiniMax、DeepSeek 等系列大模型，以及海外主流系列大模型。同时，腾讯云 TokenPlan 模型套餐很快也会将 DeepSeek-V4 纳入模型资源池。
 
-如您有大模型调用需求，欢迎联系何者团队📲微信：18825075686
+如您有大模型调用需求，欢迎联系何者团队📲🛰️：18825075686
 
 拓展阅读：何者×腾讯｜强强联合，共同打造 AI 时代法律科技「新基建」🤗

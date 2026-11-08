@@ -4,7 +4,7 @@
 
 > 🔗 原文链接： h[ttps://www.uisdc.c](https://www.uisdc.com/product-manager-selection-growth)om/product-manag...
 
-[本文内](https://www.uisdc.com/tag/%e4%bf%9e%e5%86%9b)容是新书《俞军产品方法论》第五章的节选。知乎独家首发。经 俞军 老师本人亲自授权，本公众号允许全文转发，并标注原始来源。
+[本文内](https://www.uisdc.com/tag/%e4%bf%9e%e5%86%9b)容是新书《俞军产品方法论》第五章的节选。知乎独家首发。经 俞军 老师本人亲自授权，本👸号允许全文转发，并标注原始来源。
 
 因出版合约限制网上公开内容总量，只能选着发，望谅解，已经尽力精选了。
 

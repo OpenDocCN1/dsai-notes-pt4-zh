@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/ENh3dSd4xo0XI0xzeCPcZ9WBnJc](https://aigcreative.feishu.cn/docx/ENh3dSd4xo0XI0xzeCPcZ9WBnJc)
 
-> Nano Banana生图专属社群（群已满200人，加微信拉您入群）
+> Nano Banana生图专属社群（群已满200人，加🛰️拉您入群）
 
 ![](img/d59d2d4bd98e42c0ec547da861f4a32a.png)
 

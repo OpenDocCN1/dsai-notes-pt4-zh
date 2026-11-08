@@ -114,9 +114,9 @@ https://mp.weixin.qq.com/s/M74ywq5uPSq6cj7RXye7Jg
 
 https://mp.weixin.qq.com/s/Zrdx2Bq_WCRF49FnO9i59w
 
-[极客时间] 0基础新手用ChatGPT创作90分高质量小红书笔记
+[极客时间] 0基础新手用ChatGPT创作90分高质量📕笔记
 
-[《0基础新手如何用ChatGPT创作90分的高质量小红书笔记，提高30倍神仙效率！》](https://qdrlbziuml.feishu.cn/docx/SPXXd89EFoyWMixuvgOcRnu7nof)
+[《0基础新手如何用ChatGPT创作90分的高质量📕笔记，提高30倍神仙效率！》](https://qdrlbziuml.feishu.cn/docx/SPXXd89EFoyWMixuvgOcRnu7nof)
 
 [极客时间] 新发现一个AI导航网站
 
@@ -126,7 +126,7 @@ https://ai-tools.plus/
 
 https://articles.zsxq.com/id_fzjiu617i5w7.html
 
-[极客时间] 开发微信小程序版ChatGPT
+[极客时间] 开发🛰️小程序版ChatGPT
 
 https://articles.zsxq.com/id_ox6x0adpsqe7.html
 
@@ -138,6 +138,6 @@ https://mp.weixin.qq.com/s/h_eUHZLpces2las6UJ4Nfw
 
 [ChatGPT流量实战变现5万+：超高效的自然流量自动成交术](https://xq6mz7nkknp.feishu.cn/docx/CP0WdXDBxooCgZxLzUTcEBwCnxh)
 
-[极客时间] 如何让ChatGPT做一个小红书起号方案+15天发笔记计划
+[极客时间] 如何让ChatGPT做一个📕起号方案+15天发笔记计划
 
-[如何用Chatgpt做一个小红书起号方案+15天发笔记计划](https://yu8abm8f0q.feishu.cn/docx/Ditxd7VDSoOwDyx6IY5c4mtbnab)
+[如何用Chatgpt做一个📕起号方案+15天发笔记计划](https://yu8abm8f0q.feishu.cn/docx/Ditxd7VDSoOwDyx6IY5c4mtbnab)

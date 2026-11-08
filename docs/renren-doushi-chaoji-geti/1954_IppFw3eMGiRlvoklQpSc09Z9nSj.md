@@ -30,7 +30,7 @@ GitHub
 
 知识星球
 
-优秀公众号
+优秀👸号
 
 [🌈 通往 AGI 之路 ](https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e)
 
@@ -42,7 +42,7 @@ https://github.com/yzfly/LangGPT
 
 [openai官方《提示词工程课》超详细中文笔记](https://ec26ubh65w.feishu.cn/docx/PuULdQP3wojyZYxn157cnsDXnqe)
 
-一些公众号推荐：
+一些👸号推荐：
 
 南瓜博士
 

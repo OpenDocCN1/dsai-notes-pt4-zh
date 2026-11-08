@@ -152,7 +152,7 @@
 
 > 🧠
 
-> [喝](https://mp.weixin.qq.com/s/4V7I070t6GSFQQGC7zTt8Q)点VC｜红杉对话OpenAI Deep Research团队：AI Agent将成为今年最具突破性技术，强化学习重新回归主流
+> [喝](https://mp.weixin.qq.com/s/4V7I070t6GSF🐧GC7zTt8Q)点VC｜红杉对话OpenAI Deep Research团队：AI Agent将成为今年最具突破性技术，强化学习重新回归主流
 
 >
 

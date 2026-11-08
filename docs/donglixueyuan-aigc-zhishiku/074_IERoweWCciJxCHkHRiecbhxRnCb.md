@@ -87,7 +87,7 @@ https://twitter.com/i/status/1664828003845545986
 /imagine prompt: In a remote, rural area, Alice controls a high-powered drone, collecting excess trash and refuse in the verdant landscape, showcasing Alice&#x27;s proficiency in piloting the drone and the technology&#x27;s role in preserving the environment, Paperwork, utilizing dynamic brush strokes and vivid colors to capture the beauty of the rural landscape and the sophistication of the drone&#x27;s mechanical arm, --ar 16:9 --niji
 ```
 
-> 上图中这个工具，是一个我写的用来输出Midjourney描述词的ChatGPT prompt,已经打包为了AI小应用(微信打开):https://zelinai.com/s/kavvHSjs2nZSiufjajw2vT
+> 上图中这个工具，是一个我写的用来输出Midjourney描述词的ChatGPT prompt,已经打包为了AI小应用(🛰️打开):https://zelinai.com/s/kavvHSjs2nZSiufjajw2vT
 
 ### 步骤四：Midjourney绘制想象图
 

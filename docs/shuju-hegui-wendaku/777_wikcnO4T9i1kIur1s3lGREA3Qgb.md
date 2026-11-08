@@ -10,6 +10,6 @@
 
 （2）https://www.dataguidance.com/。
 
-（注：需科学上网）
+（注：需🪜）
 
 [其他国家/地区](https://cbe8t1r4a5.feishu.cn/wiki/wikcn3WFjwJky6fZB5JxFbYxc0e)

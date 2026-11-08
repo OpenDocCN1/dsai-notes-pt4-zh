@@ -34,7 +34,7 @@ ChatGPT是何方神圣？
 
 她在TikTok上分享了自己和ChatGPT互动的经历，并表示在与ChatGPT交流之后，她的负面情绪得到了缓解。
 
-除了Kyla，世界各地同样有很多网友向ChatGPT倾诉情绪。如果你在微博搜索「ChatGPT 心理咨询」，就会看到不少用户都表示， 与ChatGPT的对话让他们体验到了心理咨询的效果。
+除了Kyla，世界各地同样有很多网友向ChatGPT倾诉情绪。如果你在🧣搜索「ChatGPT 心理咨询」，就会看到不少用户都表示， 与ChatGPT的对话让他们体验到了心理咨询的效果。
 
 ![](img/05ae28ae0c7f5534cdd821842ac5104b.png)
 

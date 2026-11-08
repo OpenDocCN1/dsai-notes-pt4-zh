@@ -48,9 +48,9 @@
 
 ## 平台集散地
 
-| **公众号：**xxxxxxxxxx | ………… |  |
+| **👸号：**xxxxxxxxxx | ………… |  |
 | --- | --- | --- |
-| **小红书：**xxxxxxxxxx | ………… |  |
+| **📕：**xxxxxxxxxx | ………… |  |
 | **个人博客：**xxxxxxxxxx | ………… |  |
 | **Github：**bxxxxxxxxxx | ………… |  |
 | **掘金：**xxxxxxxxxx | ………… |  |
@@ -163,7 +163,7 @@
 
 +   ……
 
-## 联系方式 / 公众号
+## 联系方式 / 👸号
 
 > **Wechat:** ……  |  **Email:** …………
 

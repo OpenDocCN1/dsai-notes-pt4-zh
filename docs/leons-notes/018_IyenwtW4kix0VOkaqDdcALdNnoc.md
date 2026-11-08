@@ -201,7 +201,7 @@ AI 智能投顾是利用人工智能技术和大数据分析，提供投资建�
 
 +   论文地址：[SSRN-Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models.pdf](https://sm84lfdag7.feishu.cn/wiki/U7DVwPc80iU6Z4kruIrcaZYhnIh)
 
-+   [微信更新金融类直播准入标准：须真](https://www.ithome.com/0/739/892.htm)人出镜，不得展示 K 线 - IT 之家
++   [🛰️更新金融类直播准入标准：须真](https://www.ithome.com/0/739/892.htm)人出镜，不得展示 K 线 - IT 之家
 
 +   [《非银行支付机构监督管理条例》今日发布，支付宝、微](https://www.ithome.com/0/739/829.htm)信支付、美团、抖音等发声 - IT 之家
 

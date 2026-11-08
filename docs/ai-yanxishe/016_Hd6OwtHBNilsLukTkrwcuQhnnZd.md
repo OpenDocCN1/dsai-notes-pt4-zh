@@ -12,7 +12,7 @@
 
 > 加入我们：https://t.zsxq.com/19EOflzkQ
 
-> 购买后，添加群主微信加入 AI研习社陪伴社群，限时领取超值福利。
+> 购买后，添加群主🛰️加入 AI研习社陪伴社群，限时领取超值福利。
 
 # **说明：**
 
@@ -193,7 +193,7 @@ ChatGPT详情文档过程请看 ( 需要合理的网络环境 ) ：
 
 [h](https://chat.openai.com/share/d794f7dd-cd82-4117-b42c-bf9133a32d94)ttps://chat.openai.com/share/d794f7dd-cd82-4117-b42c-bf9133a32d94
 
-文章来自斑码AI团队的老陈，欢迎链接和关注作者公众号「AI船长陈零一」，欢迎交流~
+文章来自斑码AI团队的老陈，欢迎链接和关注作者👸号「AI船长陈零一」，欢迎交流~
 
 更多内容可以点击目录： [手册内容汇总](https://aiyanxishe.feishu.cn/wiki/LBXcwPv6UiZgdfkp14Xc1Wo1n3b)
 

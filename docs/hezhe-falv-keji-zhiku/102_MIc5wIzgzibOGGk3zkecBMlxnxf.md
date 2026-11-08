@@ -98,7 +98,7 @@ GPT-4o 语音功能，为何迟迟不上线？
 
 这也是继多文件、超长文泛读总结后，腾讯元宝在 AI 辅助提效方面的又一新进展。在最新版本的腾讯元宝中，当用户上传论文、财报、研报等专业内容的 URL 链接或文件，除获得文字概括总结外，还可进入深度阅读模式，对长文进行精读。该模式可提供核心内容概览及模块化解析，生成总结性图表，辅助用户快速理解关键信息。
 
-> 拓展阅读：https://mp.weixin.qq.com/s/nRLsAvs7t3CJizxmp78mQQ
+> 拓展阅读：https://mp.weixin.qq.com/s/nRLsAvs7t3CJizxmp78m🐧
 
 ### 钉钉发布 “AI 迎新百事通”，智能化助力高校开学季
 
@@ -148,7 +148,7 @@ AI Python for Beginners 课程由四个部分组成，包括：
 
 8 月 3 日，知名科技博客 Lex Fridman 邀请到了埃隆·马斯克（Elon Musk ）以及 Neuralink 团队的其他成员进行了深入讨论，时间达到了惊人的八个半个小时，谈话内容涉及 Neuralink 扩展人类思维的能力、对文明的思考、火星殖民为人类创造一个后备、以及人工智能与机器人的结合等话题。对话里，马斯克和 Lex Fridman 畅谈了他对未来科技和 AI 应用的设想，技术性超强，内容覆盖面超广，探讨内容从深度到高度都是难得一见。
 
-> 拓展阅读：https://mp.weixin.qq.com/s/EMtJUdhB7LsWQQ3R_b6ytw
+> 拓展阅读：https://mp.weixin.qq.com/s/EMtJUdhB7LsW🐧3R_b6ytw
 
 # **四、优质文章分享**
 

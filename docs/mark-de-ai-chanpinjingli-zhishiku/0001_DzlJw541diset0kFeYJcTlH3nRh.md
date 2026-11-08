@@ -234,6 +234,6 @@
 
 **课程学习：**[AI产品经理特训班-学习大纲（148课时）](https://v11enp9ok1h.feishu.cn/wiki/OgZ2wWPpHiSfhBk2aGMcissNnbc?from=from_copylink)
 
-**小红书：**[Alexe的AI产品进阶](https://www.xiaohongshu.com/user/profile/6563f42a000000001000b314?xhsshare=CopyLink&appuid=6563f42a000000001000b314&apptime=1732951637&share_id=193bce27e5a64838b57d1cd994010c7f)
+**📕：**[Alexe的AI产品进阶](https://www.xiaohongshu.com/user/profile/6563f42a000000001000b314?xhsshare=CopyLink&appuid=6563f42a000000001000b314&apptime=1732951637&share_id=193bce27e5a64838b57d1cd994010c7f)
 
 ![](img/5b027d722c8425e8fb3ebb24756f8549.png)

@@ -20,6 +20,6 @@
 
 ### [全行业600+份原型库目录](https://v11enp9ok1h.feishu.cn/wiki/T2AKw0bzAiwEwZkmqQIc7vynnAb?from=from_copylink)（目录仅支持查看，不支持下载）
 
-# 扫码付款后加微信自动获取600+原型库网盘链接
+# 扫码付款后加🛰️自动获取600+原型库网盘链接
 
 ![](img/cf63560da1e9da6462291551bdf39b5e.png)

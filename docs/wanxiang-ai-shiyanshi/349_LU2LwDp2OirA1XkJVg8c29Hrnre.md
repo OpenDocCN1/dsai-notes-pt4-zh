@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/KNPNdz2CaonWpNxnrMAcCJjXnSc](https://yunyinghui.feishu.cn/docx/KNPNdz2CaonWpNxnrMAcCJjXnSc)
 
-> **公众号：**噪点 noisepoint
+> **👸号：**噪点 noisepoint
 
 > **发文时间：**2025 年 11 月 24 日
 
@@ -162,13 +162,13 @@ skills 可以支持 ai 自动调用，只要在 SkILL.md 文档中写清楚触�
 
 # 📱交流合作
 
-持续关注并更新skills 的相关资讯动态，**研****究报告，商业落地，常见问题，永久免费在线查看。已建立社群聊聊 skills 发展、应**用、对接及合作，邀请嘉宾讲课，没进群的可以扫码加入，群满可加大国微信 ID：zhangyuguo94s（备注：skills），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+持续关注并更新skills 的相关资讯动态，**研****究报告，商业落地，常见问题，永久免费在线查看。已建立社群聊聊 skills 发展、应**用、对接及合作，邀请嘉宾讲课，没进群的可以扫码加入，群满可加大国🛰️ ID：zhangyuguo94s（备注：skills），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
-> **特别说明：**不要申请编辑和复制文档，有需求请进群加微信沟通。
+> **特别说明：**不要申请编辑和复制文档，有需求请进群加🛰️沟通。
 
 ![](img/080dfbfdb2459afc65a58864c1ecaf62.png)
 
-**微信学习交流群**
+**🛰️学习交流群**
 
 ![](img/e9f89573944192099a4c5c0b239cf77b.png)
 

@@ -265,7 +265,7 @@ const docs = await chromadb.similaritySearchWithScore(
 
 #### 2）多模态输出适配：
 
-根据终端类型动态渲染结果：手机端推送图文卡片，互联网医院推送微信消息。
+根据终端类型动态渲染结果：手机端推送图文卡片，互联网医院推送🛰️消息。
 
 ![](img/9d4f4c93b97541c60308fe13c34cdc00.png)
 

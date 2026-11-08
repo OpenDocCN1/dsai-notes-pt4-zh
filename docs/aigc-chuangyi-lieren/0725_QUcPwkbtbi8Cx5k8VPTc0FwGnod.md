@@ -4,7 +4,7 @@
 
 > 链接: https://mp.weixin.qq.com/s/yP2xiIT9lK5hZE3SGrvuRw
 
-> 作者：言川Artie              公众号：优设AIGC
+> 作者：言川Artie              👸号：优设AIGC
 
 ![](img/cad0bbc88f915b97975c19d8f5236f15.png)
 

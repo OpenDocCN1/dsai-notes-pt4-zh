@@ -162,7 +162,7 @@ Captain 邀请你加入[飞书群](https://applink.feishu.cn/client/chat/chatter
 
 # ✍️ 友情链接
 
-> 共建和合作联系：captain 微信号：229199157
+> 共建和合作联系：captain 🛰️号：229199157
 
 # 🚀 社区共建者
 
@@ -208,7 +208,7 @@ LangGPT 结构化提示词
 
 **铁柱AGI**
 
-公众号：铁柱AGI
+👸号：铁柱AGI
 
 wechat：AI_tiezhu
 

@@ -18,7 +18,7 @@
 
 # 各版本功能介绍和对比
 
-| **手机往←滑动** | [**Midjourney 微信个人**](https://ssw9noe1h6.feishu.cn/wiki/LVfowksXAi4241kBqFYc1O2TnHf)[**版**](https://ssw9noe1h6.feishu.cn/wiki/LVfowksXAi4241kBqFYc1O2TnHf) | [**Midjourney 微信群版**](https://ssw9noe1h6.feishu.cn/wiki/LVfowksXAi4241kBqFYc1O2TnHf) | **Midjourney **国际版 |
+| **手机往←滑动** | [**Midjourney 🛰️个人**](https://ssw9noe1h6.feishu.cn/wiki/LVfowksXAi4241kBqFYc1O2TnHf)[**版**](https://ssw9noe1h6.feishu.cn/wiki/LVfowksXAi4241kBqFYc1O2TnHf) | [**Midjourney 🛰️群版**](https://ssw9noe1h6.feishu.cn/wiki/LVfowksXAi4241kBqFYc1O2TnHf) | **Midjourney **国际版 |
 | --- | --- | --- | --- |
 | **国内直接访问** | **✅** | ✅ | ❌ |
 | **超高清出图** | **✅** | **✅** | ✅ |
@@ -26,9 +26,9 @@
 | **中文指令输入** | **✅** | **✅** | **❌** |
 | **图片仅自己可见** | **✅** | ❌ | ✅ |
 | **混图，识图，垫图功能** | **✅** | **✅** | ✅ |
-| 微信**违禁词****解封🔞（官方不可解）** | **✅** | ✅ | **✅** |
+| 🛰️**违禁词****解封🔞（官方不可解）** | **✅** | ✅ | **✅** |
 | **图片商业版权** | **✅** | ✅ | ✅ |
-| **使用流程** | **添加 ****AI**** 佩奇使用** | **进微信群直接使用** | **需要注册登录** |
+| **使用流程** | **添加 ****AI**** 佩奇使用** | **进🛰️群直接使用** | **需要注册登录** |
 | 使用限制 | **不限时不限次数绘图** | **定期开放** | **不限时不限次数绘图** |
 | **价格** | **188 元/季度** | **免费** | **420 元/月** |
 | **🎁限时福利** | **赠送不限次【****GPT****】使用** | **赠送不限次【****GPT****】使用** | ❌ |
@@ -54,7 +54,7 @@
 
 **运营：李麟**
 
-**更多福利请关注公众号：**[**你今天 AI 了吗**](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4NTk2MzM1MQ==&scene=124#wechat_redirect)
+**更多福利请关注👸号：**[**你今天 AI 了吗**](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4NTk2MzM1MQ==&scene=124#wechat_redirect)
 
 **回复【艺术】教你用 ****AI**** 做一个酷炫二维码**
 

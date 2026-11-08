@@ -186,7 +186,7 @@
 
 [AI 原生应用架构简介](https://v11enp9ok1h.feishu.cn/wiki/IIyvwVlsqi1i2ykpGmMcoJklndf)
 
-[本地开发环境搭建](https://v11enp9ok1h.feishu.cn/wiki/V7uOwsHQQiiN7KkXTmGcdsUEn1f)
+[本地开发环境搭建](https://v11enp9ok1h.feishu.cn/wiki/V7uOwsH🐧iiN7KkXTmGcdsUEn1f)
 
 [LLM 推理与调度实操](https://v11enp9ok1h.feishu.cn/wiki/QPV6wf7TBiiHQlkZJCAcT2aHnTb)
 

@@ -1,4 +1,4 @@
-# PM必关注的微信公众号
+# PM必关注的🛰️👸号
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/SQbqdZVntoxuHBxmr8icX2hlnze](https://xuqiwei1986.feishu.cn/docx/SQbqdZVntoxuHBxmr8icX2hlnze)
 
@@ -192,17 +192,17 @@
 
 ![](img/9862644d1a81111c02eca110a66ebd5b.png)
 
-# 如何快速关注以下微信公众号
+# 如何快速关注以下🛰️👸号
 
-> **打开搜索微信搜索**
+> **打开搜索🛰️搜索**
 
 https://weixin.sogou.com/
 
 ![](img/bfe5fb52d109857f292252bfb62417cb.png)
 
-> 将公众号名复制到搜索框中，搜公众号，进行微信扫码关注
+> 将👸号名复制到搜索框中，搜👸号，进行🛰️扫码关注
 
-> 有1/10概率在pc搜索不到，请用手机微信搜索
+> 有1/10概率在pc搜索不到，请用手机🛰️搜索
 
 ![](img/fdc2a6cb60512cd9dfd31e959ec1ce0a.png)
 

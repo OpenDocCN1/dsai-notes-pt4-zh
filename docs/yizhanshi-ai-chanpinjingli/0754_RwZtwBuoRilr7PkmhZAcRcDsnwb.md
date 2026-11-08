@@ -1,6 +1,6 @@
 # 第三章 | 并行化模式（Parallelization Pattern）
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/MlS3dpwcvoxGEwxCQQHcdGQvnPh](https://v11enp9ok1h.feishu.cn/docx/MlS3dpwcvoxGEwxCQQHcdGQvnPh)
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/MlS3dpwcvoxGEwxC🐧HcdGQvnPh](https://v11enp9ok1h.feishu.cn/docx/MlS3dpwcvoxGEwxC🐧HcdGQvnPh)
 
 ![](img/1f356d4b3e06dd263faec56d1c9043a7.png)
 

@@ -80,7 +80,7 @@
 
 想加入 **创作群 **了解详情，
 
-可添加Datawhale教研负责人 微信👉🏻
+可添加Datawhale教研负责人 🛰️👉🏻
 
 ![](img/5a03b2ce88da912a3d3fd196f1eff3c6.png)
 

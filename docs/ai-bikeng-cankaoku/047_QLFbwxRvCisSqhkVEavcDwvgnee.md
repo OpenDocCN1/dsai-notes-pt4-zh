@@ -36,7 +36,7 @@ PicList 默认没有内置 Gitee 图床，所以需要单独安装插件。打�
 
 > gitee插件版本：gitee-uploaderv1.1.2
 
-> webp:v1.0.0  (安装这个插件可以压缩图片大小，从而解决mdnice排版后粘贴公众号不显示图片的问题，不过上传GIF图片就会变静态图片)
+> webp:v1.0.0  (安装这个插件可以压缩图片大小，从而解决mdnice排版后粘贴👸号不显示图片的问题，不过上传GIF图片就会变静态图片)
 
 ![](img/ae7f7e89e4bec08ffc3bbcb9517af939.png)
 

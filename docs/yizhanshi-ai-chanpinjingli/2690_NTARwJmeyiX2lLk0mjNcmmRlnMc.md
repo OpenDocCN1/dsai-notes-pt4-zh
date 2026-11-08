@@ -10,21 +10,21 @@
 
 > 🤖
 
-> [一句话启动AI打工人？我用Claude Skil](https://mp.weixin.qq.com/s/SrXiNKYyexKUk2URLhP_TQ)ls做了个“微博热搜挖掘机”，效率炸了！
+> [一句话启动AI打工人？我用Claude Skil](https://mp.weixin.qq.com/s/SrXiNKYyexKUk2URLhP_TQ)ls做了个“🧣热搜挖掘机”，效率炸了！
 
 >
 
-+   作者用Claude Skills创建“微博热搜挖掘机”，无需写代码，自然语言指令即可让AI自动抓取热搜、过滤垃圾并生成创意分析报告🎯。
++   作者用Claude Skills创建“🧣热搜挖掘机”，无需写代码，自然语言指令即可让AI自动抓取热搜、过滤垃圾并生成创意分析报告🎯。
 
 +   Claude Skills像给AI发《员工手册》（SOP），按标准执行任务，避免重复教学的低效问题🗒️。
 
-+   准备工作仅需注册天行数据获取微博热搜接口API Key，免费且每日调用次数足够🔑。
++   准备工作仅需注册天行数据获取🧣热搜接口API Key，免费且每日调用次数足够🔑。
 
 +   输入指令后，Claude自动写代码、修复报错，生成带当日日期的HTML报告，高分内容高亮🌟。
 
 +   该工具帮用户逃离低价值重复劳动，体现自然语言编程在大模型应用中的高效落地🛠️。
 
-> 关键词：Claude Skills，自然语言编程，微博热搜分析，大模型应用，SOP自动化。
+> 关键词：Claude Skills，自然语言编程，🧣热搜分析，大模型应用，SOP自动化。
 
 >
 

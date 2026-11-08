@@ -1,4 +1,4 @@
-# 【集成示例】微信客服
+# 【集成示例】🛰️客服
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/QUopdds9Go08Dixo0EdcRiJZnbe](https://v11enp9ok1h.feishu.cn/docx/QUopdds9Go08Dixo0EdcRiJZnbe)
 
@@ -10,13 +10,13 @@
 
 1.  ApplyForStreamAccessToken接口，返回的连接签名信息有效期2小时，必须在到期前重新获取
 
-1.  [监听并接收微信](https://kf.weixin.qq.com/api/doc/path/94745)客服的消息事件（用户问客服问题的这个动作）：接收消息和事件
+1.  [监听并接收🛰️](https://kf.weixin.qq.com/api/doc/path/94745)客服的消息事件（用户问客服问题的这个动作）：接收消息和事件
 
 1.  获取上一步的消息事件，从回调参数里获取查询消息明文的Token
 
-1.  获取微信的AccessToken，每次调用微信的接口都会用到。获取调用凭证access_token
+1.  获取🛰️的AccessToken，每次调用🛰️的接口都会用到。获取调用凭证access_token
 
-1.  [使用消息](https://kf.weixin.qq.com/api/doc/path/94745#%E8%8E%B7%E5%8F%96%E6%B6%88%E6%81%AF)Token和微信AccessToken，调用获取消息接口，得到用户提问的内容。
+1.  [使用消息](https://kf.weixin.qq.com/api/doc/path/94745#%E8%8E%B7%E5%8F%96%E6%B6%88%E6%81%AF)Token和🛰️AccessToken，调用获取消息接口，得到用户提问的内容。
 
 1.  计算会话接口签名。[会话接口签名](https://help.aliyun.com/zh/beebot/intelligent-dialogue-robot-tongyi-version/chat-api-signature)
 
@@ -38,13 +38,13 @@ wx-kf-example.zip
 
 1.  根据[**智能对话机器人配置**](https://help.aliyun.com/zh/beebot/intelligent-dialogue-robot-tongyi-version/integration-example-wechat-customer-service?spm=a2c4g.11186623.help-menu-59495.d_3_2.2c277bcaLd7Puc&scm=20140722.H_2842687._.OR_help-T_cn~zh-V_1#a435a1d1adgw8)操作完成后，获取[**示例工程参数**](https://help.aliyun.com/zh/beebot/intelligent-dialogue-robot-tongyi-version/integration-example-wechat-customer-service?spm=a2c4g.11186623.help-menu-59495.d_3_2.2c277bcaLd7Puc&scm=20140722.H_2842687._.OR_help-T_cn~zh-V_1#4762430712auv)中智能对话机器人部分的参数
 
-1.  根据[**微信客服配置**](https://help.aliyun.com/zh/beebot/intelligent-dialogue-robot-tongyi-version/integration-example-wechat-customer-service?spm=a2c4g.11186623.help-menu-59495.d_3_2.2c277bcaLd7Puc&scm=20140722.H_2842687._.OR_help-T_cn~zh-V_1#3d4fc8ad5deoc)操作完成后，获取[**示例工程参数**](https://help.aliyun.com/zh/beebot/intelligent-dialogue-robot-tongyi-version/integration-example-wechat-customer-service?spm=a2c4g.11186623.help-menu-59495.d_3_2.2c277bcaLd7Puc&scm=20140722.H_2842687._.OR_help-T_cn~zh-V_1#4762430712auv)中微信客服部分的参数
+1.  根据[**🛰️客服配置**](https://help.aliyun.com/zh/beebot/intelligent-dialogue-robot-tongyi-version/integration-example-wechat-customer-service?spm=a2c4g.11186623.help-menu-59495.d_3_2.2c277bcaLd7Puc&scm=20140722.H_2842687._.OR_help-T_cn~zh-V_1#3d4fc8ad5deoc)操作完成后，获取[**示例工程参数**](https://help.aliyun.com/zh/beebot/intelligent-dialogue-robot-tongyi-version/integration-example-wechat-customer-service?spm=a2c4g.11186623.help-menu-59495.d_3_2.2c277bcaLd7Puc&scm=20140722.H_2842687._.OR_help-T_cn~zh-V_1#4762430712auv)中🛰️客服部分的参数
 
 1.  将上面提到的参数填写到示例工程的application.properties配置文件中
 
 1.  运行com.aliyun.chatbot.channel.WebApplication，也可打成jar包，通过java -jar命令运行
 
-1.  浏览器打开 http://localhost:8091/ ，微信扫描二维码，即可进行大模型客服对话
+1.  浏览器打开 http://localhost:8091/ ，🛰️扫描二维码，即可进行大模型客服对话
 
 ### 示例工程参数
 
@@ -62,9 +62,9 @@ wx-kf-example.zip
 
 > 阿里云账号AKSK获取，地址：[AccessKey](https://ram.console.aliyun.com/manage/ak)
 
-## 四、微信客服配置
+## 四、🛰️客服配置
 
-1.  登录[微信客服](https://kf.weixin.qq.com/)平台
+1.  登录[🛰️客服](https://kf.weixin.qq.com/)平台
 
 1.  选择企业信息菜单，然后复制企业 ID
 
@@ -106,4 +106,4 @@ Q：机器人回复图片接收不到
 
 Q：富文本答案展示效果不好
 
-A：微信客服不支持富文本（Markdown、HTML）答案的渲染
+A：🛰️客服不支持富文本（Markdown、HTML）答案的渲染

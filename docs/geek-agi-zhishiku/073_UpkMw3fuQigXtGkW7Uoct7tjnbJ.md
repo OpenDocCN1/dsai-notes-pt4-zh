@@ -6,7 +6,7 @@
 
 原文档****：https://mp.weixin.qq.com/s/z**a8egfvFZEMQPgAQ8rsloQ
 
-当你装好了 OpenClaw，配好了 API Key，连上了飞书 、钉钉或者企业微信。助手能回消息、能写代码、能查天气。感觉不错。
+当你装好了 OpenClaw，配好了 API Key，连上了飞书 、钉钉或者企业🛰️。助手能回消息、能写代码、能查天气。感觉不错。
 
 但用几周你就会发现：这只是皮毛。
 

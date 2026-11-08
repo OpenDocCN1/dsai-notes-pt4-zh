@@ -35,4 +35,4 @@ AI Maker：[AI maker Day 嘉宾分享](https://bytedance.larkoffice.com/docx/LSK
 
 MBTI堪称社交的最佳神器☺️
 
-多维表格（CvnWbHjnUaAdlPscQWXcl5qRnGb_tblQVwkQQcwMeknW）
+多维表格（CvnWbHjnUaAdlPscQWXcl5qRnGb_tblQVwk🐧cwMeknW）

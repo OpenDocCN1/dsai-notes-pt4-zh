@@ -44,39 +44,39 @@ NovelAILeaks animefull-latest:https://pub-2fdef7a2969f43289c42ac5ae3412fd4.r2.de
 
 **文章目录**
 
-+   [开始](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-FZfIduPekoqatmxZiaZcqi8NnFd)
++   [开始](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-FZfIduPekoqatmxZiaZcqi8NnFd)
 
-+   [准备运行环境](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-La0eddXq7owVQkxNmWJcOjWknTg)
++   [准备运行环境](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-La0eddXq7owVQkxNmWJcOjWknTg)
 
 +   安装 Python 3.10.6 与 pip
 
-+   [安装 Git](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-ZD6VdoIXmo1ZPtxc2b7co47znEb)
++   [安装 Git](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-ZD6VdoIXmo1ZPtxc2b7co47znEb)
 
-+   [安装 CUDA](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-QexLde5RZoRqZfxUcqwc5HUInLe)
++   [安装 CUDA](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-QexLde5RZoRqZfxUcqwc5HUInLe)
 
 +   下载stable-diffusion-webui
 
-+   [下载模型文件](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-LZHNd3Be4okmmLx9t0jcClWVnfq)
++   [下载模型文件](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-LZHNd3Be4okmmLx9t0jcClWVnfq)
 
-+   [模型的大致区别](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-NsgxdSZ7TovQDkxvM3xc9OfPnde)
++   [模型的大致区别](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-NsgxdSZ7TovQDkxvM3xc9OfPnde)
 
 +   下载stable-diffusion
 
 +   下载 waifu-diffusion
 
-+   [下载 NovelAILeaks](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-MJiNdnvhyomZd9xx9hfcJOiUn8d)
++   [下载 NovelAILeaks](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-MJiNdnvhyomZd9xx9hfcJOiUn8d)
 
-+   [下载其他模型](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-SL2gd4RRnoSyG6xIoENcVqXznRf)
++   [下载其他模型](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-SL2gd4RRnoSyG6xIoENcVqXznRf)
 
-+   [运行](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-BUo7d9CDuopt3bx5km0cqyVvnMb)
++   [运行](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-BUo7d9CDuopt3bx5km0cqyVvnMb)
 
-+   [生成第一张AI作图](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-FAQcdJKT1oFJ8Fxffz7cIEy5nJe)
++   [生成第一张AI作图](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-FAQcdJKT1oFJ8Fxffz7cIEy5nJe)
 
-+   [后话](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLqQQtZsXwAJ0Gf#part-Et3Jd7pYoo00qnxaTnQcbK3onig)
++   [后话](https://diwfpqo78m.feishu.cn/wiki/wikcnWg7fxGmBLq🐧tZsXwAJ0Gf#part-Et3Jd7pYoo00qnxaTnQcbK3onig)
 
 # 开始
 
-首先请确定你有基本的理解能力和动手能力，基本的网络搜索检索信息的能力。过于基础的东西比如“什么是命令行”，“如何下载文件”，“magnet是什么东西”，“满屏英语看不懂”，“怎么给Python，Git加上魔法上网”等等这些过于基础的问题，我这里无法做出说明，也不会解答。
+首先请确定你有基本的理解能力和动手能力，基本的网络搜索检索信息的能力。过于基础的东西比如“什么是命令行”，“如何下载文件”，“magnet是什么东西”，“满屏英语看不懂”，“怎么给Python，Git加上🪜”等等这些过于基础的问题，我这里无法做出说明，也不会解答。
 
 要顺利运行 **st**able-diffusion-webui与模型，
 
@@ -110,7 +110,7 @@ OS：win11 21H1
 
 Python 3.10.6，Git ，CUDA，这三个的下载地址在文章的最前边。
 
-视情况，你可能还需要一个魔法上网工具（假设你的魔法上网工具代理在127.0.0.1:6808）
+视情况，你可能还需要一个🪜工具（假设你的🪜工具代理在127.0.0.1:6808）
 
 ## 安装 Python 3.10.6 与 pip
 

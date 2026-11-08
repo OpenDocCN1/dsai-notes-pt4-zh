@@ -26,7 +26,7 @@
 1.  仅用[600行](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555028&idx=2&sn=30541e4e780b951a805a550dfdd0dd02)代**码训**练GPT-2，效果超越原版！ (源处链接)：基于Andrej Karpathy的nanochat项目，开发者用极简的600行代码完成了GPT-2训练，训练效果竟然超过原始GPT-2！代码精简且质量高，是学习大模型训练的绝佳教材。想自己动手训练大模型？这个教程不容错过。
 [标签: #GPT-2, #模型训练, #技术教程]
 
-1.  微博[团队推出](https://mp.weixin.qq.com/s?__biz=MzkyMzcwMDIyMQ==&mid=2247500309&idx=1&sn=ce01b58ce08b85511b25aee091823a97)V**ib**eThinker：15亿参数打败600倍参数的模型！ (源处链接)：微博团队开发的VibeThinker只有15亿参数，但在数学推理任务上竟超越了参数量大400倍的DeepSeek R1模型！训练成本仅7800美元，却能与GPT这样的大模型相媲美。小而美的模型时代来了，AI不再是只有巨头才玩得起的游戏。
+1.  🧣[团队推出](https://mp.weixin.qq.com/s?__biz=MzkyMzcwMDIyMQ==&mid=2247500309&idx=1&sn=ce01b58ce08b85511b25aee091823a97)V**ib**eThinker：15亿参数打败600倍参数的模型！ (源处链接)：🧣团队开发的VibeThinker只有15亿参数，但在数学推理任务上竟超越了参数量大400倍的DeepSeek R1模型！训练成本仅7800美元，却能与GPT这样的大模型相媲美。小而美的模型时代来了，AI不再是只有巨头才玩得起的游戏。
 [标签: #VibeThinker, #小模型, #性能突破]
 
 1.  谷歌[推出Ge](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652159977&idx=1&sn=f26d469b1863190ca7a715366f2b6948)m**ma** 3 270M：手机上就能跑的超轻量级AI模型 (源处链接)：谷歌发布Gemma 3 270M，这个只有2.7亿参数的轻量级模型可以直接在你的手机或电脑上运行和微调！无需昂贵硬件，普通人也能打造专属AI模型。文章还提供了详细的设备端微调教程，让你快速上手。

@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/TRoXd2qltoVBoqxEERxcT77LnZe](https://yunyinghui.feishu.cn/docx/TRoXd2qltoVBoqxEERxcT77LnZe)
 
-> **原创公众号：**云舒的 AI 实践笔记
+> **原创👸号：**云舒的 AI 实践笔记
 
 > **发文时间：**2026-01-21 09:01:53
 

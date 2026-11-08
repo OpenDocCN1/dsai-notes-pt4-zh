@@ -498,7 +498,7 @@ OpenAI今日宣布ChatGPT上线“朗读”功能，可将对话文本内容读�
 
 ![](img/dcc3c8e5ec83fa9fc5129bc53fabd591.png)
 
-图片来源：银海inhai，公众号：AI产品经理inhai
+图片来源：银海inhai，👸号：AI产品经理inhai
 
 链接：https://mp.weixin.qq.com/s/HrxBniehnLluB8gXwWN-1g
 

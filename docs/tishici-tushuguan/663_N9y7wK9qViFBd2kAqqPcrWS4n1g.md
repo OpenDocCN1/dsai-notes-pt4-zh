@@ -2,7 +2,7 @@
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/AyUpdF2R3oPWCnxS7UhcLYRNnef](https://vxc3hj17dym.feishu.cn/docx/AyUpdF2R3oPWCnxS7UhcLYRNnef)
 
-> 微信公众号：**投资兔子洞**
+> 🛰️👸号：**投资兔子洞**
 
 ![](img/5fc400ac46927eba75695fb40ef668ff.png)
 

@@ -1,4 +1,4 @@
-# 趣味漫画公众号工作流源码
+# 趣味漫画👸号工作流源码
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/H0rHdAcdwoU0GoxHZEvca89Cneh](https://zinxkclpk97.feishu.cn/docx/H0rHdAcdwoU0GoxHZEvca89Cneh)
 
@@ -22,7 +22,7 @@
 
 4、按照上述图片，串联开始节点与结束节点，并设置好相同的输入参数名
 
-注意：公众号授权节点卡密aigc_key，需自行购买，买断制
+注意：👸号授权节点卡密aigc_key，需自行购买，买断制
 
 ![](img/5f57fe1bae6cc18b733c1a803b6d271a.png)
 
@@ -36,8 +36,8 @@
 
 ![](img/b4053c1a54df07dfcc6f11e7988760b2.png)
 
-[漫画公众号高清工作流.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WYxDbe759o3X6LxNkzjcrv2pnrc)
+[漫画👸号高清工作流.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WYxDbe759o3X6LxNkzjcrv2pnrc)
 
-公众号开通IP白名单，参考第一节⬇️
+👸号开通IP白名单，参考第一节⬇️
 
-[即创公众号爆文-说明书](https://zinxkclpk97.feishu.cn/wiki/LYYUwjJG5iMmxwktj1Gcq2cfnYT?fromScene=spaceOverview)
+[即创👸号爆文-说明书](https://zinxkclpk97.feishu.cn/wiki/LYYUwjJG5iMmxwktj1Gcq2cfnYT?fromScene=spaceOverview)

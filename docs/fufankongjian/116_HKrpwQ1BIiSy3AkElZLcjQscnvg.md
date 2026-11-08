@@ -1,6 +1,6 @@
 # GPT4o（README）
 
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/TkFEd1dgkosCnNx1dVWcKmQQnhh](https://kq4b3vgg5b.feishu.cn/docx/TkFEd1dgkosCnNx1dVWcKmQQnhh)
+> 来源：[https://kq4b3vgg5b.feishu.cn/docx/TkFEd1dgkosCnNx1dVWcKm🐧nhh](https://kq4b3vgg5b.feishu.cn/docx/TkFEd1dgkosCnNx1dVWcKm🐧nhh)
 
 # 模型介绍
 

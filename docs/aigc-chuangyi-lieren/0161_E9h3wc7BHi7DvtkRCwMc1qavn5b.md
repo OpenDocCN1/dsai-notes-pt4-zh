@@ -1870,7 +1870,7 @@
 
 > Shenzhen-based Honor’s newest flagship phones (like the Magic 7 Pro) ship with a built-in deepfake detector. The tool scans video for the telltale signs, like broken frames or unnatural facial movements, on the device itself, which cuts lag and avoids sending data elsewhere. The result is a first-of-its-kind safeguard that “shifts the burden of detection from the user to the device, empowering everyone to navigate the complex AI era with confidence and security,” says Honor vice president Jianfa Sun. The feature works within Honor’s own calling apps and WeChat, WhatsApp, Messenger, and Botim, as well as in short-form video apps like Douyin (China’s version of TikTok) and the streaming network Bilibili, according to the company.
 
-> 总部位于深圳的荣耀最新旗舰手机（例如 Magic 7 Pro）内置了深度伪造检测器。该工具会在设备端扫描视频，查找诸如断帧或不自然的面部动作等可疑迹象，从而减少延迟并避免将数据传输到其他地方。荣耀副总裁孙建发表示，这开创了一项“将检测负担从用户转移到设备，让每个人都能自信安全地应对复杂的人工智能时代”的先河。据荣耀公司称，该功能适用于荣耀自有的通话应用、微信、WhatsApp、Messenger 和哔哩哔哩等短视频应用，以及抖音（中国版 TikTok）和流媒体网络哔哩哔哩等短视频应用。
+> 总部位于深圳的荣耀最新旗舰手机（例如 Magic 7 Pro）内置了深度伪造检测器。该工具会在设备端扫描视频，查找诸如断帧或不自然的面部动作等可疑迹象，从而减少延迟并避免将数据传输到其他地方。荣耀副总裁孙建发表示，这开创了一项“将检测负担从用户转移到设备，让每个人都能自信安全地应对复杂的人工智能时代”的先河。据荣耀公司称，该功能适用于荣耀自有的通话应用、🛰️、WhatsApp、Messenger 和哔哩哔哩等短视频应用，以及抖音（中国版 TikTok）和流媒体网络哔哩哔哩等短视频应用。
 
 ## k-ID  孩子 - 在线年龄确认
 

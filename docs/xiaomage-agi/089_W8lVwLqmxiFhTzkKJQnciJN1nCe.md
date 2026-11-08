@@ -2,7 +2,7 @@
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/Q52adxdtKoZrUBxZcg2cVmJRnPc](https://xmgtoagi.feishu.cn/docx/Q52adxdtKoZrUBxZcg2cVmJRnPc)
 
-+   **本文作者**：耙耳朵的光 （公众号 耙耳朵的光）创作
++   **本文作者**：耙耳朵的光 （👸号 耙耳朵的光）创作
 
 ## 编者按
 

@@ -4,7 +4,7 @@
 
 https://lin64850.github.io/posts/81cc5063.html
 
-1.  微信读书
+1.  🛰️读书
 
 1.  得到
 

@@ -30,7 +30,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/0rABJFsKguyGbzaDxEUrnw)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/0rABJFsKguyGbzaDxEUrnw)
 
 +   [原文链接](https://www.databricks.com/blog/building-knowledge-graphs-healthcare-and-life-sciences-databricks-lakehouse)
 

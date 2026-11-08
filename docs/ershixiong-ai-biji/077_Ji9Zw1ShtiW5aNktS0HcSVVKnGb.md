@@ -94,7 +94,7 @@ v1.3.0 中 Trae 引入了“规则系统”，让 AI 的行为不再随机。
 
 Trae 的 Agent 已不仅仅是“AI 助手”，而是真正意义上的“自动化执行者”。
 
-使用 Agent 使用示例：[MCP 案例 021｜用 Trae 做了一个51 出游避坑攻略 Agent](https://qianniucity.feishu.cn/wiki/QQqEwPkTFiYYo8kuq0yczmx9ncc)
+使用 Agent 使用示例：[MCP 案例 021｜用 Trae 做了一个51 出游避坑攻略 Agent](https://qianniucity.feishu.cn/wiki/🐧qEwPkTFiYYo8kuq0yczmx9ncc)
 
 ---
 

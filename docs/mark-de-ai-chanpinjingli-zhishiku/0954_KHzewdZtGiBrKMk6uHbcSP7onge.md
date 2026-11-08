@@ -1,4 +1,4 @@
-# 实战：拿Claude Design改一版QQ音乐
+# 实战：拿Claude Design改一版🐧音乐
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/UAzcduRitorFQ9xqE8tcTfAdntu](https://qqs7y1hozd1.feishu.cn/docx/UAzcduRitorFQ9xqE8tcTfAdntu)
 
@@ -128,7 +128,7 @@ UI生成的过程在左边都能实时看到，交互还比较友好。整个第
 
 好了，到这里我们来算一下账。
 
-从0开始做这个QQ音乐首页改版，如果是我在Figma里手动画，包括前期找参考、定风格、拉组件、排版、调细节，全套走下来，至少要1-2天。
+从0开始做这个🐧音乐首页改版，如果是我在Figma里手动画，包括前期找参考、定风格、拉组件、排版、调细节，全套走下来，至少要1-2天。
 
 用Claude Design，从第一次prompt到我觉得大概是一个初级原型的版本，我总共花了半个小时吧。效率这个事儿，没什么好争的，就是碾压。
 

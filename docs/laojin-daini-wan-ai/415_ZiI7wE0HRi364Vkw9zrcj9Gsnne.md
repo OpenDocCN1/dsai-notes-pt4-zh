@@ -1,4 +1,4 @@
-# 企业微信专用 Enterprise-WeChat-GPTbot
+# 企业🛰️专用 Enterprise-WeChat-GPTbot
 
 > 来源：[https://my.feishu.cn/docx/SFIYdAdPHokhhbxh8Uxc7REUnZb](https://my.feishu.cn/docx/SFIYdAdPHokhhbxh8Uxc7REUnZb)
 
@@ -18,13 +18,13 @@
 
 ![](img/b2eb57a077b1d6fbf92682b03b3289bf.png)
 
-# **企业微信机器人使用教程：**
+# **企业🛰️机器人使用教程：**
 
-[1](https://dldir1.qq.com/wework/work_weixin/WeCom_4.1.13.6002.exe).打开项目下载最新企业微信发布的的4.1.13.6002版本 下载：https://dldir1.qq.com/wework/work_weixin/WeCom_4.1.13.6002.exe
+[1](https://dldir1.qq.com/wework/work_weixin/WeCom_4.1.13.6002.exe).打开项目下载最新企业🛰️发布的的4.1.13.6002版本 下载：https://dldir1.qq.com/wework/work_weixin/WeCom_4.1.13.6002.exe
 
 1.   获取 AIWIS API 密钥和 APP ID 的步骤
 
-1.   为了使企业微信机器人助手能够与 AIWIS API 交互，您需要获取 API 密钥（AIWIS_KEY）和应用程序 ID（APP_ID）。请按照以下步骤操作：
+1.   为了使企业🛰️机器人助手能够与 AIWIS API 交互，您需要获取 API 密钥（AIWIS_KEY）和应用程序 ID（APP_ID）。请按照以下步骤操作：
 
 1.   步骤 1：访问 AIWIS 网站
 
@@ -50,7 +50,7 @@
 
 1.   步骤 5：配置到项目中
 
-1.   打开您的企业微信机器人项目文件夹。
+1.   打开您的企业🛰️机器人项目文件夹。
 
 1.   找到 .env 配置文件并打开它。
 
@@ -116,7 +116,7 @@ AI驱动的交互：利用AI技术（如AIWIS API）自动生成回复，支持�
 
 #### **适用场景**
 
-该机器人适合用于企业微信环境中，提高团队的沟通效率，特别适用于客服、FAQ自动回复、互动活动和内部沟通辅助等场景。 群管理配置：当自己在群发消息的时候还会脚本文件里message_log.txt 有”r“开头的一串数字，这是群的id 用户id也在其中会有提示
+该机器人适合用于企业🛰️环境中，提高团队的沟通效率，特别适用于客服、FAQ自动回复、互动活动和内部沟通辅助等场景。 群管理配置：当自己在群发消息的时候还会脚本文件里message_log.txt 有”r“开头的一串数字，这是群的id 用户id也在其中会有提示
 
 # **开始**
 

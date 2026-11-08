@@ -1,4 +1,4 @@
-# 10 分钟制作微信表情包 SOP | 每个人都可以拥有自己的专属表情包
+# 10 分钟制作🛰️表情包 SOP | 每个人都可以拥有自己的专属表情包
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/TEuIdp8xyoo5xixCmZQcmeEEn6e](https://aiyanxishe.feishu.cn/docx/TEuIdp8xyoo5xixCmZQcmeEEn6e)
 
@@ -12,13 +12,13 @@
 
 > 加入我们：https://t.zsxq.com/19EOflzkQ
 
-> 购买后，添加群主微信加入 AI研习社陪伴社群，限时领取超值福利。
+> 购买后，添加群主🛰️加入 AI研习社陪伴社群，限时领取超值福利。
 
 本篇文章，重点是记录分享下以下部分内容：
 
-1.  了解微信表情包上架审核规范
+1.  了解🛰️表情包上架审核规范
 
-1.  使用 Midjourney 制作微信表情包素材图
+1.  使用 Midjourney 制作🛰️表情包素材图
 
 1.  抠图、切图技巧
 
@@ -34,13 +34,13 @@
 
 ![](img/d0f851499bef203e71b8b8548d4c9ea9.png)
 
-## 二）了解微信表情包上架审核规范
+## 二）了解🛰️表情包上架审核规范
 
-想要自己制作的表情包在微信中可以使用，需要到“微信表情开放平台”按规范提交作品并审核通过后，才可以哦。
+想要自己制作的表情包在🛰️中可以使用，需要到“🛰️表情开放平台”按规范提交作品并审核通过后，才可以哦。
 
 ![](img/08d113221d82c4e8fe3ef775b14025ac.png)
 
-1.  [首先，进入“微信表情开放平台”，进行账号注册： https](https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/index.html#/makingSpecifications#specifications_stickers)://sticker.weixin.qq.com/，我们使用个人注册，按照指引完成注册；
+1.  [首先，进入“🛰️表情开放平台”，进行账号注册： https](https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/index.html#/makingSpecifications#specifications_stickers)://sticker.weixin.qq.com/，我们使用个人注册，按照指引完成注册；
 
 1.
 
@@ -48,7 +48,7 @@
 
 1.
 
-## 二） 使用 Midjourney 制作微信表情包
+## 二） 使用 Midjourney 制作🛰️表情包
 
 AI 绘画实操的目标：使用 Midjourney 生成同一形象的不同表情、动作的表情图片。如果打算上架 8 个一组的表情包，则生成的表情数量大于 8 个，以便筛选掉不合适的后，还能有 8 个，我经验是最好大于 16 个哈哈。
 
@@ -148,9 +148,9 @@ emm ... 都好满意啊哈哈
 
 1.  聊天面板图标可以在提交界面看到模拟图，点击聊天面板就能确认能否看清会不会太小。如果太小就裁剪出角色头像。
 
-### 8、提交到 **微信表情开放平台进行审核**
+### 8、提交到 **🛰️表情开放平台进行审核**
 
-[https://sticker.weixin.qq.com，进入微信表情开放平台，注](https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/index.html#/makingSpecifications#specifications_stickers)册后提交作品即可。注意：审核通过后，还需要自行到后台进行上架，不然是搜索不到滴。
+[https://sticker.weixin.qq.com，进入🛰️表情开放平台，注](https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/index.html#/makingSpecifications#specifications_stickers)册后提交作品即可。注意：审核通过后，还需要自行到后台进行上架，不然是搜索不到滴。
 
 ### 9、 补充分享：使用 Midjourney 制作横幅
 
@@ -168,7 +168,7 @@ emm ... 都好满意啊哈哈
 
 ![](img/488851d96bc8d68e068abecd58a53389.png)
 
-# 三、微信表情包小成绩
+# 三、🛰️表情包小成绩
 
 12 月 6 日发布，到 13 日，已经有 106 次下载，目前打赏的基本都是亲朋，赚不赚钱是小事，毕竟还有长尾效应。重点是在 AI 践行这条路，完成了一次小闭环，也输出了文章，而且创造自己喜欢的角色形象能够被大众看到，确实是一件快乐的小事！
 
@@ -176,7 +176,7 @@ emm ... 都好满意啊哈哈
 
 ![](img/6ba062e8e77014e3439231ea3d168bbe.png)
 
-如果想交流学习如何通过AI制作自己的表情包，可关注作者公众号获取联系方式：「AI船长陈零一」
+如果想交流学习如何通过AI制作自己的表情包，可关注作者👸号获取联系方式：「AI船长陈零一」
 
 更多内容可以点击目录： [手册内容汇总](https://aiyanxishe.feishu.cn/wiki/LBXcwPv6UiZgdfkp14Xc1Wo1n3b)
 

@@ -12,7 +12,7 @@
 
 ![](img/7961ccf2fde862519af6538dcdc2458d.png)
 
-关注作者公众号，获取更多AI知识
+关注作者👸号，获取更多AI知识
 
 本文承接上篇P-tuning，介绍prefix-tuning与P-tuning v2并列出其区别，最后对整个系列的技术做总结。
 

@@ -184,7 +184,7 @@ Meta[ 用于训](https://www.ithome.com/0/784/734.htm)练 Llama 3 的 16384 个�
 
 我是 **战场小包** ，一个喜欢 AI 和前端的小编程。
 
-如果喜欢小包，可以在 [**掘金**](https://juejin.cn/user/4424090519078430)[** 关注我，**](https://www.picgo.net/image/e19c556e550943a08e03cc56593c63e2tplv-73owjymdk6-jj-mark-0-0-0-0-q75.awebp.kwL8lO)同样也可以关注我的小小公众号——小包学前端，公众号会持续地更新 AI 和前端的知识。
+如果喜欢小包，可以在 [**掘金**](https://juejin.cn/user/4424090519078430)[** 关注我，**](https://www.picgo.net/image/e19c556e550943a08e03cc56593c63e2tplv-73owjymdk6-jj-mark-0-0-0-0-q75.awebp.kwL8lO)同样也可以关注我的小小👸号——小包学前端，👸号会持续地更新 AI 和前端的知识。
 
 一路加油，冲向未来!!!
 

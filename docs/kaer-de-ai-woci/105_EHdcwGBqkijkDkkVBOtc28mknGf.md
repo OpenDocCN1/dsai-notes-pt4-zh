@@ -12,7 +12,7 @@
 
 原文链接，有对应Skills的使用用途：
 
-https://mp.weixin.qq.com/s/8HI7nVi_wOVGS8L4zQEIQQ
+https://mp.weixin.qq.com/s/8HI7nVi_wOVGS8L4zQEI🐧
 
 大家如何有新的想要的Skills也可以发评论区我去踩踩坑
 
@@ -36,7 +36,7 @@ https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research
 
 ### x-reader
 
-公众号阅读？
+👸号阅读？
 
 ### BrowserWing
 

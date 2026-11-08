@@ -8,7 +8,7 @@
 
 **-答2：****使用vpn**跨境和租用跨境专线是两个概念，如果有业务需要那就租用三大运营商的跨境专线吧，不涉及跨境传输个人信息和重要数据的话，合规风险不大，当然前提是你的业务是合法的，不是黄赌毒这种。
 
-**-答3：**还可以参考这几篇：（1）[国内VPN资质怎么申请](https://mp.weixin.qq.com/s?__biz=MjM5MzM0NDAyMg==&mid=2655965344&idx=1&sn=08ba29b0002172d61c7c311f4924d77b&scene=21#wechat_redirect)；（2）[关于VPN的申请和使用](https://mp.weixin.qq.com/s?__biz=MzIyMjQ0NzkyNw==&mid=2247485590&idx=1&sn=1e2256b6c1ec0ff5b7bdeb40371ef800&scene=21#wechat_redirect)；（3）VPN的[法律基础分析及典型案例评](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg2OTIyMzY0Ng==&scene=1&album_id=1351392258079260674&count=3#wechat_redirect)析；（4）关于翻墙法律问题系列文章。
+**-答3：**还可以参考这几篇：（1）[国内VPN资质怎么申请](https://mp.weixin.qq.com/s?__biz=MjM5MzM0NDAyMg==&mid=2655965344&idx=1&sn=08ba29b0002172d61c7c311f4924d77b&scene=21#wechat_redirect)；（2）[关于VPN的申请和使用](https://mp.weixin.qq.com/s?__biz=MzIyMjQ0NzkyNw==&mid=2247485590&idx=1&sn=1e2256b6c1ec0ff5b7bdeb40371ef800&scene=21#wechat_redirect)；（3）VPN的[法律基础分析及典型案例评](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg2OTIyMzY0Ng==&scene=1&album_id=1351392258079260674&count=3#wechat_redirect)析；（4）关于🪜法律问题系列文章。
 
 **-答4：**我理解租用国际网络是需要备案**的，但这种备案**在三大运营商是他们负责为其客户做备案。
 

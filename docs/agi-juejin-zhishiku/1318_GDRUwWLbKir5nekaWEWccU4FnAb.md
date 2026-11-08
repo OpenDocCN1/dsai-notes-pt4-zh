@@ -86,9 +86,9 @@
 
 1.  加入方式:
 
-+   方式 1 —— 托管方式，如🚀世界终局模拟-走到时间的尽头🚀 。请联系微信（xiaotu012chp）或邮件 (contact@embraceagi.com) 发送给项目负责人，负责人将会将游戏添加到项目。
++   方式 1 —— 托管方式，如🚀世界终局模拟-走到时间的尽头🚀 。请联系🛰️（xiaotu012chp）或邮件 (contact@embraceagi.com) 发送给项目负责人，负责人将会将游戏添加到项目。
 
-+   方式 2 —— 收录方式，如[🤡👿规则怪谈解密游戏 𝐑𝑢𝑙𝑒 𝐺𝒉𝑜𝑠𝑡 𝑇𝑎𝑙](https://github.com/EmbraceAGI/Rule-Ghost-Talk)𝑘👿🤡。自建项目，将内容通过微信（xiaotu012chp）或邮件 (contact@embraceagi.com) 发送给项目负责人，负责人将会将游戏收录到项目。
++   方式 2 —— 收录方式，如[🤡👿规则怪谈解密游戏 𝐑𝑢𝑙𝑒 𝐺𝒉𝑜𝑠𝑡 𝑇𝑎𝑙](https://github.com/EmbraceAGI/Rule-Ghost-Talk)𝑘👿🤡。自建项目，将内容通过🛰️（xiaotu012chp）或邮件 (contact@embraceagi.com) 发送给项目负责人，负责人将会将游戏收录到项目。
 
 +   （注：内容可以飞书文档的方式提供，GitHub 老司机推荐通过 Pull Request 或者 issue 的方式直接向本项目提交项目内容 收录）
 
@@ -106,7 +106,7 @@
 
 +   📧 Email: 陈[财猫](mailto:hamusuta@bupt.cn)
 
-+   📞 微信：xiaotu012chp
++   📞 🛰️：xiaotu012chp
 
 🌟 感谢您的关注和参与，一起探索这个由 GPT 驱动的神奇游戏世界吧！ 🌟
 

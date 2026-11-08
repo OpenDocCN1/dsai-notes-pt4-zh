@@ -154,9 +154,9 @@
 
 +   2024 年第三十七期法律科技周报（9.9-9.15）
 
-+   腾讯把我的公众号，变成了一个巨大的"数字生命"。
++   腾讯把我的👸号，变成了一个巨大的"数字生命"。
 
-+   [月亮的事，问问@微信输入法](https://mp.weixin.qq.com/s/mDaLbytufz9cROq8jNxpJA)
++   [月亮的事，问问@🛰️输入法](https://mp.weixin.qq.com/s/mDaLbytufz9cROq8jNxpJA)
 
 +   [中秋佳节，AI与你共绘团圆画卷](https://mp.weixin.qq.com/s/mS-5irCg1MKZ3YwlNmnljg)
 

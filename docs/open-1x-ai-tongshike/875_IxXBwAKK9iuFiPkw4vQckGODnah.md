@@ -1,4 +1,4 @@
-# 【基于Deepseek的智能卡片工坊】🔥一秒变设计大神！这个AI神器让我在小红书爆单了💥
+# 【基于Deepseek的智能卡片工坊】🔥一秒变设计大神！这个AI神器让我在📕爆单了💥
 
 > 来源：[https://datawhaler.feishu.cn/docx/A1F4dpXfrogPyPxGmHmcqwdmn3b](https://datawhaler.feishu.cn/docx/A1F4dpXfrogPyPxGmHmcqwdmn3b)
 

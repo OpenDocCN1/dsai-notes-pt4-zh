@@ -36,11 +36,11 @@
 
 > 🌏
 
-> 小红书语音识别新突破！开源FireRedASR，中文效果新SOTA
+> 📕语音识别新突破！开源FireRedASR，中文效果新SOTA
 
 >
 
-+   小红书FireRed团队开源了基于大模型的语音识别模型FireRedASR，中文普通话测试集上性能达到新SOTA。
++   📕FireRed团队开源了基于大模型的语音识别模型FireRedASR，中文普通话测试集上性能达到新SOTA。
 
 +   FireRedASR包含FireRedASR-LLM和FireRedASR-AED两种核心结构，分别针对精度和推理效率优化。
 

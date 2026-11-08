@@ -12,7 +12,7 @@
 
 +   📨 M**ail Client:** Mail Master,
 
-+   📮 M**ail Server:** Gmail, QQ mail, Foxmail,
++   📮 M**ail Server:** Gmail, 🐧 mail, Foxmail,
 
 +   📝 N**otes:** f[lomo,](https://v.flomoapp.com/register/?MzA3MTI5) O[bsidian,](https://obsidian.md/)
 

@@ -4,7 +4,7 @@
 
 > 作者：PaperAgent
 
-> 原文：https://mp.weixin.qq.com/s/RBKc08usND_ut42qYQQrcA
+> 原文：https://mp.weixin.qq.com/s/RBKc08usND_ut42qY🐧rcA
 
 今天最大的瓜莫过于： 斯坦福 Llama3-V PK 清华 MiniCPM-Llama3-V-2.5，详细 证据：
 
@@ -81,4 +81,4 @@ The Evolution of Multimodal Model Architectures
 
 ---
 
-欢迎关注我的公众号“ **PaperAgent **”， 每天一篇大模型（LLM）文章来锻炼我们的思维，简单的例子，不简单的方法，提升自己。
+欢迎关注我的👸号“ **PaperAgent **”， 每天一篇大模型（LLM）文章来锻炼我们的思维，简单的例子，不简单的方法，提升自己。

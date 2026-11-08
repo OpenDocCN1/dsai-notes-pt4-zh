@@ -324,9 +324,9 @@ Perplexity AI 提供类似于 Google Search 和 Bing Search 的搜索服务，�
 
 +   对话小冰 CEO 李笛：听到要卷 AI 应用，我挺担心「重蹈覆辙」
 
-+   钉钉不穷：AI时代，我最想和微信互通
++   钉钉不穷：AI时代，我最想和🛰️互通
 
-+   [AI时代微信最应该有的新功能](https://mp.weixin.qq.com/s/Jc8KsbkbSRjkySnpm_zloA)
++   [AI时代🛰️最应该有的新功能](https://mp.weixin.qq.com/s/Jc8KsbkbSRjkySnpm_zloA)
 
 +   谁能做好中国的 GPT Store？
 

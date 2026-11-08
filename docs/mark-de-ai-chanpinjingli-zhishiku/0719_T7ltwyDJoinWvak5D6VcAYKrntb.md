@@ -477,7 +477,7 @@ R(θ)⋅**v**=(cos⁡θ−sin⁡θsin⁡θcos⁡θ)(xy)R(θ)⋅v=(cosθsinθ−s
 
 当我们对Q、K矩阵都进行旋转后：
 
-Q1=R(m)⋅QQ1=R(m)⋅Q
+Q1=R(m)⋅🐧1=R(m)⋅Q
 
 K1=R(n)⋅KK1=R(n)⋅K
 

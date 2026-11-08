@@ -2,7 +2,7 @@
 
 > 来源：[https://chengchaungai.feishu.cn/docx/PfeSd6LqZoa6rPxlqL2cdhRznIY](https://chengchaungai.feishu.cn/docx/PfeSd6LqZoa6rPxlqL2cdhRznIY)
 
-本文作者：**vigor**       twitter：**@cryptocake777**     公众号：**AI****兔子洞**
+本文作者：**vigor**       twitter：**@cryptocake777**     👸号：**AI****兔子洞**
 
 **👉进入 **[🤖 AI 智库（首页）](https://ki6j1b0d92h.feishu.cn/wiki/wikcnAFcEccJ5iXiU8MRntc2Vyb?from=from_copylink)**获取更多A****IGC内****容👈**
 
@@ -76,13 +76,13 @@
 
 ![](img/c30d9e859ade98df3cf442ee2ef0cac9.png)
 
-> 关注**公众号**，加入**AI****实战交流群**，掌握全面专业的**行业资讯**、**工具分享**、**变现指南**和**实战教程**，开启你的AI智慧之旅👇👇
+> 关注**👸号**，加入**AI****实战交流群**，掌握全面专业的**行业资讯**、**工具分享**、**变现指南**和**实战教程**，开启你的AI智慧之旅👇👇
 
-联系微信**JUGO737Y****（备注来意）**
+联系🛰️**JUGO737Y****（备注来意）**
 
 ![](img/0643107abdee76f1bef45a145b9e0ee0.png)
 
-公众号：**橙创****AI**
+👸号：**橙创****AI**
 
 ![](img/69c55590a0e66f6d40a80ba55e0b4636.png)
 

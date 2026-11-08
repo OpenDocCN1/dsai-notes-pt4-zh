@@ -2,11 +2,11 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ADekdIdHJo17tUxnGM9cBYz6nac](https://xuqiwei1986.feishu.cn/docx/ADekdIdHJo17tUxnGM9cBYz6nac)
 
-之前几周手把手教大家从n8n的部署，到公众号的自动发布工作流的搭建，还有自动排版的搭建。还没有操作的，可以看看我之前的内容，全是几千字的详细实操，建议收藏后，慢慢跟着练！
+之前几周手把手教大家从n8n的部署，到👸号的自动发布工作流的搭建，还有自动排版的搭建。还没有操作的，可以看看我之前的内容，全是几千字的详细实操，建议收藏后，慢慢跟着练！
 
-[保姆级n8n教程来了：手把手教你打造一个AI生成内容并自动发布公众号的工作流](https://b121w2zgwyx.feishu.cn/docx/Dpm6dHYWToC2GgxRSElcMfMgnHj)
+[保姆级n8n教程来了：手把手教你打造一个AI生成内容并自动发布👸号的工作流](https://b121w2zgwyx.feishu.cn/docx/Dpm6dHYWToC2GgxRSElcMfMgnHj)
 
-[超详细教程又来啦：教你用n8n打造一个AI自动排版公众号的工作流](https://b121w2zgwyx.feishu.cn/docx/S3UfdX1Tjow9PAxGpAuc8yN1nWf)
+[超详细教程又来啦：教你用n8n打造一个AI自动排版👸号的工作流](https://b121w2zgwyx.feishu.cn/docx/S3UfdX1Tjow9PAxGpAuc8yN1nWf)
 
 **现在**自动生成和发布有了，又有了新的问题，我们该写点什么呢？
 
@@ -40,7 +40,7 @@
 
 接着我们点击节点设置一下订阅地址
 
-一个节点订阅的是百度热点，另一个节点订阅的是微信最新的文章
+一个节点订阅的是百度热点，另一个节点订阅的是🛰️最新的文章
 
 地址分别是：
 
@@ -249,7 +249,7 @@ return $input.item;
 
 进入星球可以获得配套的完整工作流学习。今后一些进阶的玩法会在星球分享。
 
-感兴趣，快来加入吧，星球初建，给大家准备了优惠券，可在公众号领取后加入
+感兴趣，快来加入吧，星球初建，给大家准备了优惠券，可在👸号领取后加入
 
 ## 资源地址
 

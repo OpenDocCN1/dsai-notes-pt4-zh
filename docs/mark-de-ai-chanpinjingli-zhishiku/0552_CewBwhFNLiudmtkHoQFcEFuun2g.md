@@ -121,7 +121,7 @@ class SessionManager:
 
 ## 多渠道融合实现
 
-### 3.1 微信小程序接入
+### 3.1 🛰️小程序接入
 
 ```
 from flask import Flask, request, jsonify

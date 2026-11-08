@@ -98,7 +98,7 @@ AI 绘画的基本步骤包括：
 
 +   https://desktop.youchuanai.com/
 
-+   也是需要订阅，可以支持微信、支付宝，支持中文
++   也是需要订阅，可以支持🛰️、支付宝，支持中文
 
 +   Midjourney 官方：
 
@@ -110,7 +110,7 @@ AI 绘画的基本步骤包括：
 
 +   其他使用方式
 
-+   以上两种使用成本都比较高，可以淘宝、小红书拼单
++   以上两种使用成本都比较高，可以淘宝、📕拼单
 
 注册成功之后，在 Discord 中使用 Midjourney bot使用
 
@@ -190,7 +190,7 @@ AI 绘画的基本步骤包括：
 
 +   https://catjourney.life/
 
-+   [Prompt全览](https://rnrjayevh1.feishu.cn/wiki/wikcnHF7TTmr35bOwydpW4D3vbh?table=tbl9uQQLonUuCClB&view=vewhjOF3qU)
++   [Prompt全览](https://rnrjayevh1.feishu.cn/wiki/wikcnHF7TTmr35bOwydpW4D3vbh?table=tbl9u🐧LonUuCClB&view=vewhjOF3qU)
 
 +   https://big-amber.notion.site/big-amber/2afb973ea42a4817b478671c54cfe5a6?v=43d5b1d70e454b1d88289dc115cf31e2
 
@@ -302,7 +302,7 @@ Hyperrealism, Hyper detailed, Cute, Sci-fi, 3D, cute, robot assistant made of th
 
 Amazing epic chinese ancient theme,chinese ink style, a young man is preparing to climb the stonesteps ladder, martial arts style, dynamic, expressiveclean lines, cinematic, stunning, realistic lighting andshading, vivid, vibrant, 8k, octane render, unrealengine, very detailed, concept art, realistic --ar 16:9
 
-令人惊叹的史诗中国古代主题，中国墨水风格，一个年轻人正在准备爬石阶梯子，武术风格，动态，富有表现力的干净的线条，电影，令人惊叹，现实的灯光和阴影，生动，充满活力，8k，辛坦渲染，不真实的引擎，非常详细，概念艺术，现实
+令人惊叹的史诗中国古代主题，中国墨水风格，一个年轻人正在准备爬石阶🪜，武术风格，动态，富有表现力的干净的线条，电影，令人惊叹，现实的灯光和阴影，生动，充满活力，8k，辛坦渲染，不真实的引擎，非常详细，概念艺术，现实
 
 (young man is preparing to climb the stonesteps ladder,) 其他的关键词不变，改变这句话创作出不同的场景
 
@@ -378,7 +378,7 @@ Midjourney 生成的图片：
 
 ### 表情包
 
-+   [教程：1分钟10套表情包](https://waytoagi.feishu.cn/wiki/QQzlwOOjtie4hJk6srLcFBMunbg)
++   [教程：1分钟10套表情包](https://waytoagi.feishu.cn/wiki/🐧zlwOOjtie4hJk6srLcFBMunbg)
 
 +   https://www.bilibili.com/video/BV1dH4y1J7Rc/?spm_id_from=333.999.0.0&vd_source=b2c556c92eaad2e3330b8aa1ae47c210
 
@@ -892,7 +892,7 @@ https://www.whee.com/
 
 ## InstantID
 
-小红书做的妙鸭相机
+📕做的妙鸭相机
 
 +   介绍：https://mp.weixin.qq.com/s/Etl0HUVRdxwsgcM0ErqHjA
 
@@ -934,7 +934,7 @@ https://www.whee.com/
 
 +   **意间AI绘画 **目前支持App和小程序，可以根据输入的提示词生成图片，还可以根据上传的图片生成魔法头像，或一键转为二次元风格图片
 
-+   **造梦日记 **微信小程序，操作便捷，五到十秒出图
++   **造梦日记 **🛰️小程序，操作便捷，五到十秒出图
 
 +   **SparkAI花火**：Spark-火花AI集成了AI聊天和Midjourney，还有Stable Diffusion、 DALL-E， 国内就可以使用，移动端也兼容 https://www.huohuaai.com/
 

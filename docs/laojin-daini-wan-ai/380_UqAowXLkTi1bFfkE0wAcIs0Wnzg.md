@@ -150,7 +150,7 @@ Tell me where I’m going to die, so I’ll never go there.
 
 ---
 
-想要今天我提到的全部**提示词模板合集**，公众号后台留言：**xf**，我会发链接给你。
+想要今天我提到的全部**提示词模板合集**，👸号后台留言：**xf**，我会发链接给你。
 
 ![](img/c0d963e2b725fdcd96cfc98ad19d9cb6.png)
 

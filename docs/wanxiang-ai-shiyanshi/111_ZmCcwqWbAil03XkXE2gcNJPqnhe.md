@@ -28,7 +28,7 @@ https://jimeng.jianying.com/ai-tool/generate
 
 ## 影视二创
 
-轻松学会丨藏海传爆照二创画手视频教程 - 小红书
+轻松学会丨藏海传爆照二创画手视频教程 - 📕
 
 ![](img/e5ae134fe4ecaccbf68643c0a6346695.png)
 
@@ -68,7 +68,7 @@ https://jimeng.jianying.com/ai-tool/generate
 
 ## 短片分镜
 
-60 AIGC大丸家发布了一篇小红书笔记，快来看吧！ 😆 ikntbAqBNcFL8Ql 😆 http://xhslink.com/a/hxCFqpRlbizeb，复制本条信息，打开【小红书】App查看精彩内容！
+60 AIGC大丸家发布了一篇📕笔记，快来看吧！ 😆 ikntbAqBNcFL8Ql 😆 http://xhslink.com/a/hxCFqpRlbizeb，复制本条信息，打开【📕】App查看精彩内容！
 
 ![](img/ccca27d20df30910e3680f72c2128225.png)
 
@@ -94,7 +94,7 @@ https://jimeng.jianying.com/ai-tool/generate
 
 ![](img/4550bb9ab5e1fc0a4c2b7ffebb254cc8.png)
 
-太神了！一个公式比别人测试一周都管用 - 小红书
+太神了！一个公式比别人测试一周都管用 - 📕
 
 ![](img/5fd676cd9836179af0a841fb78d0fcdb.png)
 
@@ -198,7 +198,7 @@ https://jimeng.jianying.com/ai-tool/generate
 
 ## 上述case来源：
 
-**微信公众号：**
+**🛰️👸号：**
 
 **3W+浏览：**即梦图片3.0又重磅更新，这可能是对普通人最有用的一次。
 
@@ -208,9 +208,9 @@ https://jimeng.jianying.com/ai-tool/generate
 
 **4k+浏览：**从今天起，奶奶也能一句话做出爆款设计了｜即梦AI图片3.0智能参考指南
 
-**小红书：**
+**📕：**
 
-1.  [制作小红书爆款封面](https://www.xiaohongshu.com/explore/6842d8930000000022036c5d?app_platform=android&ignoreEngage=true&app_version=8.86.2&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBToOvTiU5suS25QMtdZCbM_yw6s_3DsecGjFgdsnP7Qw=&author_share=1&xhsshare=CopyLink&shareRedId=N0dFNjM-NkFKSTdHPzg0R0c0Szg9SDY_&apptime=1749212132&share_id=e4ddf879ff4d44d78b643adaa24df304&share_channel=copy_link)，互动4.5k+
+1.  [制作📕爆款封面](https://www.xiaohongshu.com/explore/6842d8930000000022036c5d?app_platform=android&ignoreEngage=true&app_version=8.86.2&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBToOvTiU5suS25QMtdZCbM_yw6s_3DsecGjFgdsnP7Qw=&author_share=1&xhsshare=CopyLink&shareRedId=N0dFNjM-NkFKSTdHPzg0R0c0Szg9SDY_&apptime=1749212132&share_id=e4ddf879ff4d44d78b643adaa24df304&share_channel=copy_link)，互动4.5k+
 
 1.  [风格转绘/玩梗x影视二创](https://www.xiaohongshu.com/explore/684554a10000000021004d1a?app_platform=ios&app_version=8.76.1&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CB5yeAbtB3_4oYWiy6hqdJhMyOi0d1gB5kdijVWDPqrAA=&author_share=1&xhsshare=CopyLink&shareRedId=OD1HMElIPDo2NzUyOTgwNjY3OTpGNTc7&apptime=1749436758&share_id=a98691b871a14dd5899450f639fa3b54)，互动1k+
 

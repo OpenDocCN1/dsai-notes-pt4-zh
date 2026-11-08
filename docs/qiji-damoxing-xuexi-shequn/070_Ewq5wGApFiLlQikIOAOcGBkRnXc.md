@@ -444,7 +444,7 @@ https://zhuanlan.zhihu.com/p/783999520
 
 ![](img/2c41a4468ef7b541755f5c1834c3ca86.png)
 
-### 小红书搜索：生成式检索的探索与实践
+### 📕搜索：生成式检索的探索与实践
 
 https://mp.weixin.qq.com/s/yApGxCGxjWnZQu8PoO9Qeg
 
@@ -508,7 +508,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

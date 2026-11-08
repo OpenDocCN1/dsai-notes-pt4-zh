@@ -10,7 +10,7 @@ ChatGPT 的图像生成功能迎来升级
 
 周二OpenAI CEO Sam Altman 在直播中宣布，ChatGPT 现已支持使用 GPT-4o 直接生成和编辑图像，该功能已上线 Pro 订阅用户，并计划向 Plus 和免费用户推广。相比 DALL·E 3，GPT-4o 生成的图像更加精准和细节丰富，还可编辑已有图像，包括人物照片。
 
-官方介绍（需梯子）：https://openai.com/index/introducing-4o-image-generation/
+官方介绍（需🪜）：https://openai.com/index/introducing-4o-image-generation/
 
 ![](img/e48c4148bbe8c2b98b7cdd7ca6767b08.png)
 
@@ -904,7 +904,7 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 # 真空logo小白保姆级教程
 
-[中国大](https://www.zhihu.com/search?q=%E6%8B%BC%E5%A4%9A%E5%A4%9A&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%221904480515358163375%22%7D)厂吉祥物真·真空出道，小红书的薯薯、拼多多的心心、京东的狗子、天猫的黑猫…每一个都熟悉又陌生，教程在文中，快来get起来哦~~
+[中国大](https://www.zhihu.com/search?q=%E6%8B%BC%E5%A4%9A%E5%A4%9A&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%221904480515358163375%22%7D)厂吉祥物真·真空出道，📕的薯薯、拼多多的心心、京东的狗子、天猫的黑猫…每一个都熟悉又陌生，教程在文中，快来get起来哦~~
 
 生成平台：gpt4o、豆包超能创意
 

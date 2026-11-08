@@ -45,7 +45,7 @@
 +   [如何使用ChatGPT写小说](42_Vmahwswh8iM3QMkKZPDczLVKnrc.md)
 +   [如何使用ChatGPT写周报](43_MMJ0wFvsFimyLekrKfGcU6DJnLh.md)
 +   [如何使用ChatGPT统计数据](44_J1YMwL1jdiX26okrLHucLaKfnXe.md)
-+   [如何使用ChatGPT做小红书](45_WiURwyAz5i5koAkUkoUcMnK9n9k.md)
++   [如何使用ChatGPT做📕](45_WiURwyAz5i5koAkUkoUcMnK9n9k.md)
 +   [使用ChatGPT自动化文件管理](46_Wnh0wkMxniOtLXknoGFc3Pgsnse.md)
 +   [未命名文档 副本 副本](47_IH7KwA1czitvPgkyL2icUzQYnAh.md)
 +   [如何使用ChatGPT写代码](48_TS96wA406iWjpYkzZ30cJQzUnKd.md)

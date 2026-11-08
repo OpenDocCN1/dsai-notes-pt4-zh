@@ -16,9 +16,9 @@
 
 ![](img/9d8f740cae34abd515004d46a75bfd3a.png)
 
-公众号：通往 AGI 之路
+👸号：通往 AGI 之路
 
-[Bilibili](https://space.bilibili.com/259768893)｜[小红书](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)｜[Twitter](https://twitter.com/WaytoAGI)
+[Bilibili](https://space.bilibili.com/259768893)｜[📕](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)｜[Twitter](https://twitter.com/WaytoAGI)
 
 ## **🥳加入飞书知识问答**
 
@@ -110,7 +110,7 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 ###  4 月 1 日
 
-+   《[26年3月开源模型汇总！Agent很火，但模型貌似没跟上~](https://waytoagi.feishu.cn/wiki/GZFWwI4pGinY4FkTbxScNblJnud?from=from_copylink)》3月份，是OpenClaw制霸的一个月，各家主要以推出各种Claw为主，大模型这一块，超大尺寸的模型，基本上各家都是发布，但没更新，比如， 智谱的GLM5-Turbo模型 、 千问的Qwen3.5-Omni-Plus模型 、MiniMax的M2.7模型、 小米的MiMo-V2-Pro模型 等等。不过盘点下来，还是开源了不少模型，Qwen开源了3.5系列的小模型、美团开源了全模态和定理模型、腾讯开源了视觉&音频模型、小红书开源了OCR&图像编辑模型。
++   《[26年3月开源模型汇总！Agent很火，但模型貌似没跟上~](https://waytoagi.feishu.cn/wiki/GZFWwI4pGinY4FkTbxScNblJnud?from=from_copylink)》3月份，是OpenClaw制霸的一个月，各家主要以推出各种Claw为主，大模型这一块，超大尺寸的模型，基本上各家都是发布，但没更新，比如， 智谱的GLM5-Turbo模型 、 千问的Qwen3.5-Omni-Plus模型 、MiniMax的M2.7模型、 小米的MiMo-V2-Pro模型 等等。不过盘点下来，还是开源了不少模型，Qwen开源了3.5系列的小模型、美团开源了全模态和定理模型、腾讯开源了视觉&音频模型、📕开源了OCR&图像编辑模型。
 
 +   《[Claude Code CLI 源码分析 : 从 Prompt 架构到工业级 AI Agent缓存黑科技+自我进化+多Agent协作+遥测监控](https://waytoagi.feishu.cn/wiki/EWgZw2kq3i8ZrIkFTIRcCn2vnKe?from=from_copylink)》Anthropic 这种量级的公司，他们会怎么设计 AI Agent？看完源码才发现，这不是“Prompt 工程”那么简单，而是 缓存架构 + 自我进化记忆 + 多模式编排 的完整基础设施。
 
@@ -270,7 +270,7 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 ###  3 月 25 日
 
-+   《[一句话搞定公众号排版、封面生成、发布](https://waytoagi.feishu.cn/wiki/Ze6mw90iLi6x5ikEV4GcN1kgnBd?from=from_copylink)》最近小互一直研究 Claude Code 工作流，自动化搜集素材、处理素材、写文章、自动配图、自动排版、自动同步到各个平台。从今天开始他将陆续公布最近研究和实战的结果，帮助大家学习 Claude Code 工作流，如何实现各种复杂工作的自动化...
++   《[一句话搞定👸号排版、封面生成、发布](https://waytoagi.feishu.cn/wiki/Ze6mw90iLi6x5ikEV4GcN1kgnBd?from=from_copylink)》最近小互一直研究 Claude Code 工作流，自动化搜集素材、处理素材、写文章、自动配图、自动排版、自动同步到各个平台。从今天开始他将陆续公布最近研究和实战的结果，帮助大家学习 Claude Code 工作流，如何实现各种复杂工作的自动化...
 
 +   《[Sora 死了，OpenAI 正在变成另一家公司](https://waytoagi.feishu.cn/wiki/J5YHwOwFsio6XZkvkI5cnlhwneb?from=from_copylink)》就在昨天，OpenAI 官方账号发布了一则简短的告别声明：“我们要和 Sora 说再见了。”不仅 App 关停、API 下线，就连原本计划接入 ChatGPT 的视频功能也一并搁置。这背后，究竟藏着怎样不为人知的深层原因？
 
@@ -292,7 +292,7 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 ---
 
-#   💬 飞书 & 微信交流群
+#   💬 飞书 & 🛰️交流群
 
 #### **说明：**
 
@@ -302,7 +302,7 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 1.  飞书群内置 AI 智能机器人，可以回复任何与 AI 相关的问题，欢迎加入。
 
-# 🏠加入WaytoAGI-填写后加入飞书/微信群
+# 🏠加入WaytoAGI-填写后加入飞书/🛰️群
 
 <https://waytoagi.feishu.cn/share/base/form/shrcnlIVMcuAn2jFHfJ2Bez7RWe?iframeFrom=docx&ccm_open=iframe>
 
@@ -358,7 +358,7 @@ Prompt 版块共建者
 
 「互联网的那点事」
 
-微博互联网观察家
+🧣互联网观察家
 
 ![](img/37b6efa37e21ec79a0b0644fcfa186ff.png)
 
@@ -424,7 +424,7 @@ AI 领域产品经理
 
 [Web3 天空之城](https://space.bilibili.com/351754674)
 
-推荐 B 站与微信公众号
+推荐 B 站与🛰️👸号
 
 高质量 AI 内容原创者
 
@@ -568,15 +568,15 @@ AI春晚导演
 
 ### 推荐布鲁姆分类法学习路径
 
-1.  **记忆**：先从[ AI 的历史](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbl1tOC3ZKbrcHVn&view=vewTtypUZc)、[基本术语](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbltvr7KExCt7Jpw&view=vewjxk9tDu)、[重要人物](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblLtN12KuvP5reO&view=vewuvGBXhd)、[方法和原理](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblolGx2mprs1EQz&view=vewx5ROYtl)等开始了解，看看[入门课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)
+1.  **记忆**：先从[ AI 的历史](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl1tOC3ZKbrcHVn&view=vewTtypUZc)、[基本术语](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbltvr7KExCt7Jpw&view=vewjxk9tDu)、[重要人物](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblLtN12KuvP5reO&view=vewuvGBXhd)、[方法和原理](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblolGx2mprs1EQz&view=vewx5ROYtl)等开始了解，看看[入门课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)
 
-1.  **理解**：进一步了解 AI 领域的[主要思想和概念](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblC69kVi8xZMQ4B&view=vewFgR7hhS)，将[精选 AI 网站](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblrU3QwceYkyu5Y&view=vewhpVxSzR)和[ APP 产品](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblLFKWXaBNu2RC8&view=vewDRCDZJH)都试一试
+1.  **理解**：进一步了解 AI 领域的[主要思想和概念](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblC69kVi8xZMQ4B&view=vewFgR7hhS)，将[精选 AI 网站](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblrU3QwceYkyu5Y&view=vewhpVxSzR)和[ APP 产品](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblLFKWXaBNu2RC8&view=vewDRCDZJH)都试一试
 
 1.  **应用**：深入[了解 Prompt](https://ywh1bkansf.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tbldSgFt2xNUDNAz&view=vewo2g2ktO)，选择适合自己的[ AI 对话](https://ywh1bkansf.feishu.cn/wiki/QddLw0teKi7nUCkDRIecskn3nuc)、[绘画](https://ywh1bkansf.feishu.cn/wiki/Q5ddwxfkMiVUZBkQXN7cgXf4nOb)和[语音](https://ywh1bkansf.feishu.cn/wiki/ZXPiw2OuLi2YsxkkmaLcPTyInrc)产品，每天都用它，并使用[它们来解决实际问题或提升效率](https://waytoagi.feishu.cn/wiki/A0Y0wpBOcig7HLkSFNcceTA6nwb)
 
 1.  **分析**：大量阅读[各类文章](https://ywh1bkansf.feishu.cn/wiki/YjJgwbKnriZBZ0kVn6Kc1gSKnsf?table=tblsQKR3a22uFqsp)、[视频](https://ywh1bkansf.feishu.cn/wiki/LEnvwwEy0iufT3k4kfVc8Ehenvf?table=tbllpoPWJn6MNOR6&view=vew68BlUHo)以及[行业报告](https://ywh1bkansf.feishu.cn/wiki/FnXcwGrwSimQxnkNo1kcJzPYn7f)，理解各知识之间的关系
 
-1.  **评价**：通过[各类课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)与[书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ)更深入学习，判断信息的价值、提出自己的观点和论证
+1.  **评价**：通过[各类课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)与[书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ)更深入学习，判断信息的价值、提出自己的观点和论证
 
 1.  **创造**：积极参与[社区共创项目](https://waytoagi.feishu.cn/wiki/KexVwLKhYiHm7bk2IL9cym0WnTb)，创造你自己的新想法或产品
 
@@ -586,25 +586,25 @@ AI春晚导演
 
 ### 0. 起点
 
-💾 人[工智能简史 ](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbl1tOC3ZKbrcHVn&view=vewTtypUZc)& A[I 绘画简史](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblbBhy4ig3JTr5z&view=vewTtypUZc)
+💾 人[工智能简史 ](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl1tOC3ZKbrcHVn&view=vewTtypUZc)& A[I 绘画简史](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblbBhy4ig3JTr5z&view=vewTtypUZc)
 
 📝 10 篇从 0 到 1 的文章
 
-🤔 1[0 篇深度文章](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblC69kVi8xZMQ4B&view=vewFgR7hhS)
+🤔 1[0 篇深度文章](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblC69kVi8xZMQ4B&view=vewFgR7hhS)
 
-🧑‍🏫 10[ 个重要人物 &](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblLtN12KuvP5reO&view=vewuvGBXhd) 10[0 位领军人物](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblPSIB8sJSwq8bb&view=vewuvGBXhd)
+🧑‍🏫 10[ 个重要人物 &](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblLtN12KuvP5reO&view=vewuvGBXhd) 10[0 位领军人物](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblPSIB8sJSwq8bb&view=vewuvGBXhd)
 
-👄 言[之有物 | 金句引用](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblnGZ55rkjJxQKJ&view=vewa05IP7l)
+👄 言[之有物 | 金句引用](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblnGZ55rkjJxQKJ&view=vewa05IP7l)
 
-🗃 8[0+名词解释](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbltvr7KExCt7Jpw&view=vewjxk9tDu)
+🗃 8[0+名词解释](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbltvr7KExCt7Jpw&view=vewjxk9tDu)
 
-📚 2[0 本 AI 中文书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ)
+📚 2[0 本 AI 中文书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ)
 
-📖 豆[瓣 9 分以上的英文书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblgNFDO4ySr9ks7&view=vewjfsOgyJ)
+📖 豆[瓣 9 分以上的英文书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblgNFDO4ySr9ks7&view=vewjfsOgyJ)
 
-🎬 豆[瓣 8 分以上的 AI 电影](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblB56vIgfZImxP2&view=vewUunvDn1)
+🎬 豆[瓣 8 分以上的 AI 电影](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblB56vIgfZImxP2&view=vewUunvDn1)
 
-🖼 一[图胜千言 | AI 好图分享 ](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb?table=tblyh76bHrCi4PXq&view=vewUunvDn1)
+🖼 一[图胜千言 | AI 好图分享 ](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblyh76bHrCi4PXq&view=vewUunvDn1)
 
 ### 1. AI 入门系列
 
@@ -680,7 +680,7 @@ AI春晚导演
 
 ![](img/9663dd43939fa8c25b2d302e8f839a57.png)
 
-[小红书](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)
+[📕](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)
 
 AI 消息及时传递
 
@@ -694,12 +694,12 @@ AI 消息及时传递
 
 |  | 要求 | 进群方式 | 备注 |
 | --- | --- | --- | --- |
-| 🌈 AI 音乐之路 | 热爱音乐 | ![](img/96a5f22b71c569262c1e38b750377163.png) | 添加左侧微信 |
+| 🌈 AI 音乐之路 | 热爱音乐 | ![](img/96a5f22b71c569262c1e38b750377163.png) | 添加左侧🛰️ |
 | 🌈 关键词学社 | AI 绘画群：一起根据群中的每天给出的关键词，通过出图测试关键词效果，有 Midjourney 账号，喜欢 AI 绘画即可。进群请加 大狐，把你拉进群 | ![](img/8b3656469e05cc44b04eb1a40c8efa3e.png) | 添加左侧飞书群  备注：关键词学社 |
 | 🌈 SD 学社 | 学习 Stable diffusion 的相关操作和每周两个案例实操，申请链接 | ![](img/17c8f1d5534e59530417679de6d16917.png) | 添加左侧飞书群  备注：SD 学社 |
-| 🌈 AI 视频学社 | 至少参加一次活动或出图（其实很简单，都有教程，可以尝试动手一下出一张图就可以进群 pk） | ![](img/526625e1b45ce2b7222cc97b7ffc8508.png) | 添加左侧微信  备注：视频学社 |
-| 🌈 微信机器人搭建 | [熊猫大侠：基于COW框架的ChatBot实现步骤](https://waytoagi.feishu.cn/wiki/YNNuwEqCXiSj2akS5mlcjpZgnrb) | ![](img/a79c08de39a571e0545f321c63a5afd5.png) | 添加左侧微信  备注：机器人 |
-| 🌈  AI编程 | [2.0 AI 开发](https://waytoagi.feishu.cn/wiki/Pxj8wsMmOii7ZSkN0mYc8xdtnHb) | ![](img/244d1a4e38406173373018efda981663.png) | 添加左侧微信  备注：编程 |
+| 🌈 AI 视频学社 | 至少参加一次活动或出图（其实很简单，都有教程，可以尝试动手一下出一张图就可以进群 pk） | ![](img/526625e1b45ce2b7222cc97b7ffc8508.png) | 添加左侧🛰️  备注：视频学社 |
+| 🌈 🛰️机器人搭建 | [熊猫大侠：基于COW框架的ChatBot实现步骤](https://waytoagi.feishu.cn/wiki/YNNuwEqCXiSj2akS5mlcjpZgnrb) | ![](img/a79c08de39a571e0545f321c63a5afd5.png) | 添加左侧🛰️  备注：机器人 |
+| 🌈  AI编程 | [2.0 AI 开发](https://waytoagi.feishu.cn/wiki/Pxj8wsMmOii7ZSkN0mYc8xdtnHb) | ![](img/244d1a4e38406173373018efda981663.png) | 添加左侧🛰️  备注：编程 |
 
 ![](img/6ad0a1237eee953e3906091904c7a840.png)
 

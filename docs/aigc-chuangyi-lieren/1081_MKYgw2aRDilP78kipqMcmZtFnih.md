@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/XzfMdQ6inoijjdx198Dc23wVnEb](https://aigcreative.feishu.cn/docx/XzfMdQ6inoijjdx198Dc23wVnEb)
 
-> 公众号：福布斯
+> 👸号：福布斯
 
 > 链接: https://mp.weixin.qq.com/s/h7PYzTcaDOMmzcSuRTEFaQ
 

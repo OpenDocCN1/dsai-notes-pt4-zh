@@ -2,7 +2,7 @@
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/L9wpdPVrBodQdNxcY39c8IhGnZb](https://v11enp9ok1h.feishu.cn/docx/L9wpdPVrBodQdNxcY39c8IhGnZb)
 
-[关于AI Agent，公众号里最近涉](http://mp.weixin.qq.com/s?__biz=MzU2Njg0OTEyNQ==&mid=2247485488&idx=1&sn=09a620250c55e8ce91b802ffb7a81a65&chksm=fca7733acbd0fa2c3dc7961bd3f9808ec950d686475beedfd8cce9ce05595f8562034fd89c10&scene=21#wechat_redirect)**及**不少——
+[关于AI Agent，👸号里最近涉](http://mp.weixin.qq.com/s?__biz=MzU2Njg0OTEyNQ==&mid=2247485488&idx=1&sn=09a620250c55e8ce91b802ffb7a81a65&chksm=fca7733acbd0fa2c3dc7961bd3f9808ec950d686475beedfd8cce9ce05595f8562034fd89c10&scene=21#wechat_redirect)**及**不少——
 
 比如这是Google眼里的Agent版图：谷歌最新发布！185个头部AI应用落地案例，6大方向Agent前景一览。
 

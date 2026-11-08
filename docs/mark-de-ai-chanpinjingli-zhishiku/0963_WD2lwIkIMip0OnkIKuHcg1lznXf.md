@@ -152,7 +152,7 @@ https://getgpt.progetgpt.pro/i/ig2
 
 ### 案例 6：美食摄影（餐厅菜单/外卖平台）
 
-适用场景：餐饮品牌宣传、外卖平台头图、小红书/Instagram 内容
+适用场景：餐饮品牌宣传、外卖平台头图、📕/Instagram 内容
 
 提示词：
 

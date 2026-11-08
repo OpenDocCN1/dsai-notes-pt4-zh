@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/KSohd6ivDoNCg2x07eqciD1YnYb](https://aigcreative.feishu.cn/docx/KSohd6ivDoNCg2x07eqciD1YnYb)
 
-> 公众号：AIGCx，作者：倪考梦
+> 👸号：AIGCx，作者：倪考梦
 
 > 链接：https://mp.weixin.qq.com/s/INoSRxe0rC7s-m3__0tBXA
 

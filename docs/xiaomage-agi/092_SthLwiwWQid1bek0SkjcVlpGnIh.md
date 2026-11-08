@@ -216,13 +216,13 @@ write an article about [主题] in a human-like style， simple Chinese， using
 
 Using the provided text below as the basis for a weekly report in Chinese, generate a concise summary that highlights the most important points. The report should be written in markdown format and should be easily readable and understandable for a general audience. In particular, focus on providing insights and analysis that would be useful to stakeholders and decision-makers. You may also use any additional information or sources as necessary. Please begin by editing the following text: [工作内容]
 
-## 11、小红书风格
+## 11、📕风格
 
-👉 将文本改写成类似小红书的 Emoji 风格。
+👉 将文本改写成类似📕的 Emoji 风格。
 
 请使用 Emoji 风格编辑以下段落，该风格以引人入胜的标题、每个段落中包含表情符号和在末尾添加相关标签为特点。请确保保持原文的意思。
 
-Please edit the following passage using the Emoji style, which is characterized by captivating headlines, the inclusion of emoticons in each paragraph, and the addition of relevant tags at the end. Be sure to maintain the original meaning of the text. Please begin by editing the following text: [小红书内容]
+Please edit the following passage using the Emoji style, which is characterized by captivating headlines, the inclusion of emoticons in each paragraph, and the addition of relevant tags at the end. Be sure to maintain the original meaning of the text. Please begin by editing the following text: [📕内容]
 
 ## 12、文章续写
 
@@ -590,11 +590,11 @@ I want you to act as a Developer Relations consultant. I will provide you with a
 
 Create a Vue 3 component that displays a [开发项目] using Yarn， Vite， Vue 3， TypeScript， Pinia， and Vueuse tools。 Use Vue 3's Composition API and <script setup> syntax to combine template, script, and style in a single .vue file. Display Chinese text in the view and include styles. Provide only the necessary code to meet these requirements without explanations or descriptions.
 
-## 10、开发：微信小程序
+## 10、开发：🛰️小程序
 
-👉 辅助微信小程序开发。
+👉 辅助🛰️小程序开发。
 
-作为微信小程序开发者，您的任务是使用微信小程序原生开发，编写一个计数器页面。请回复满足以下要求的代码：创建一个包含 wxml、js、wxss 和 json 文件的微信小程序页面，并在其中实现一个计数器页面。视图中显示的文本应为中文。请注意，您应该只提供满足这些要求所必需的代码；不需要解释或描述。
+作为🛰️小程序开发者，您的任务是使用🛰️小程序原生开发，编写一个计数器页面。请回复满足以下要求的代码：创建一个包含 wxml、js、wxss 和 json 文件的🛰️小程序页面，并在其中实现一个计数器页面。视图中显示的文本应为中文。请注意，您应该只提供满足这些要求所必需的代码；不需要解释或描述。
 
 Create a WeChat Mini Program page with wxml， js， wxss， and json files that implements a [开发项目]。 The text displayed in the view should be in Chinese. Provide only the necessary code to meet these requirements without explanations or descriptions.
 
@@ -1982,11 +1982,11 @@ Imagine you are a highly empathetic and intuitive counselor, tasked with guiding
 
 Create a Vue 3 component that displays a [开发项目] using Yarn， Vite， Vue 3， TypeScript， Pinia， and Vueuse tools。 Use Vue 3's Composition API and <script setup> syntax to combine template, script, and style in a single .vue file. Display Chinese text in the view and include styles. Provide only the necessary code to meet these requirements without explanations or descriptions.
 
-## 12、开发：微信小程序
+## 12、开发：🛰️小程序
 
-👉 辅助微信小程序开发。
+👉 辅助🛰️小程序开发。
 
-作为微信小程序开发者，您的任务是使用微信小程序原生开发，编写一个计数器页面。请回复满足以下要求的代码：创建一个包含 wxml、js、wxss 和 json 文件的微信小程序页面，并在其中实现一个计数器页面。视图中显示的文本应为中文。请注意，您应该只提供满足这些要求所必需的代码；不需要解释或描述。
+作为🛰️小程序开发者，您的任务是使用🛰️小程序原生开发，编写一个计数器页面。请回复满足以下要求的代码：创建一个包含 wxml、js、wxss 和 json 文件的🛰️小程序页面，并在其中实现一个计数器页面。视图中显示的文本应为中文。请注意，您应该只提供满足这些要求所必需的代码；不需要解释或描述。
 
 Create a WeChat Mini Program page with wxml， js， wxss， and json files that implements a [开发项目]。 The text displayed in the view should be in Chinese. Provide only the necessary code to meet these requirements without explanations or descriptions.
 
@@ -2464,13 +2464,13 @@ If you understand the above system instructions, say "I understand." Starting my
 
 Using the provided text below as the basis for a weekly report in Chinese, generate a concise summary that highlights the most important points. The report should be written in markdown format and should be easily readable and understandable for a general audience. In particular, focus on providing insights and analysis that would be useful to stakeholders and decision-makers. You may also use any additional information or sources as necessary. Please begin by editing the following text: [工作内容]
 
-## 2、小红书风格
+## 2、📕风格
 
-👉 将文本改写成类似小红书的 Emoji 风格。
+👉 将文本改写成类似📕的 Emoji 风格。
 
 请使用 Emoji 风格编辑以下段落，该风格以引人入胜的标题、每个段落中包含表情符号和在末尾添加相关标签为特点。请确保保持原文的意思。
 
-Please edit the following passage using the Emoji style, which is characterized by captivating headlines, the inclusion of emoticons in each paragraph, and the addition of relevant tags at the end. Be sure to maintain the original meaning of the text. Please begin by editing the following text: [小红书内容]
+Please edit the following passage using the Emoji style, which is characterized by captivating headlines, the inclusion of emoticons in each paragraph, and the addition of relevant tags at the end. Be sure to maintain the original meaning of the text. Please begin by editing the following text: [📕内容]
 
 ## 3、文章高亮
 

@@ -1,4 +1,4 @@
-# 2023-05-29零代码，使用 Dify 两分钟接入企业微信 AI 机器人
+# 2023-05-29零代码，使用 Dify 两分钟接入企业🛰️ AI 机器人
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/XZ2fdjRPlo61ncxVyahc5u3nnYc](https://xuqiwei1986.feishu.cn/docx/XZ2fdjRPlo61ncxVyahc5u3nnYc)
 
@@ -20,11 +20,11 @@ yuhao Dify
 
 **【本文由** Dify 深度用户 @李昱昊 投稿整理所得。基于 Dify 能力进行 AI 应用的创建，产出本篇最佳实践文章。我们欢迎更多优秀开发者向我们投稿最佳实践，投稿联系邮箱：hello@dify.ai,或加入 Discord 社群（https://discord.com/invite/FngNHpbcY7）联系官方工作人员。】
 
-以下为内容正文，将首先展示 AI 机器人接入企业微信后的效果，然后一步步讲解实操演示。
+以下为内容正文，将首先展示 AI 机器人接入企业🛰️后的效果，然后一步步讲解实操演示。
 
 ---
 
-Dify 允许创建AI应用，并提供二次开发的能力。这里我将演示创建一个法律问答助手的 AI 应用（机器人），称作“知法”。在本篇教程中，我将指导你为“知法”接入企业微信。
+Dify 允许创建AI应用，并提供二次开发的能力。这里我将演示创建一个法律问答助手的 AI 应用（机器人），称作“知法”。在本篇教程中，我将指导你为“知法”接入企业🛰️。
 
 **效果展示**
 
@@ -54,7 +54,7 @@ Dify 允许创建AI应用，并提供二次开发的能力。这里我将演示�
 
 **前置准备**
 
-+   企业微信的管理员权限；
++   企业🛰️的管理员权限；
 
 +   一个 Dify 的帐号（https://dify.ai/）；
 
@@ -122,23 +122,23 @@ WXWORK_TOKEN=&quot;&quot;WXWORK_AESKEY=&quot;&quot;WXWORK_CORPID=&quot;&quot;WXW
 
 （查看 Dify 官方文档中关于创建应用的更多操作： https://docs.dify.ai/v/zh-hans/application/creating-an-application）
 
-**创建企业微信应用**
+**创建企业🛰️应用**
 
-**1. 记录企业信息： ****进入企业微信管理后台-我的****企业， 记录这里的企业 ID**** **为 WXWORK_CORPID。
+**1. 记录企业信息： ****进入企业🛰️管理后台-我的****企业， 记录这里的企业 ID**** **为 WXWORK_CORPID。
 
 ![](img/cf624812eb3ed464353b4e25e906a894.png)
 
-**2. 创建企业微信应用： **进入应用管理页面，点击【创建应用】进入创建页面，填写应用信息后点击【创建应用】。如果已经有现成的应用，可以跳过此步骤。
+**2. 创建企业🛰️应用： **进入应用管理页面，点击【创建应用】进入创建页面，填写应用信息后点击【创建应用】。如果已经有现成的应用，可以跳过此步骤。
 
 ![](img/b1a4567e0e57a1614544f985fd86a840.png)
 
 ![](img/aec5623a746bff032043baa4b243843b.png)
 
-**3. 记录企业微信应用信息： **在应用管理页面点击刚刚创建好的应用，进入应用详情页面。记录这里的 Ag**entId 和 Secret（需要点击**获取按钮，在企业微信聊天窗口里面获取）， 分别为 WXWORK_AGENTID 和 WXWORK_CORPSECRET。
+**3. 记录企业🛰️应用信息： **在应用管理页面点击刚刚创建好的应用，进入应用详情页面。记录这里的 Ag**entId 和 Secret（需要点击**获取按钮，在企业🛰️聊天窗口里面获取）， 分别为 WXWORK_AGENTID 和 WXWORK_CORPSECRET。
 
 ![](img/eba4ea27852d746f545752b09ee8ad88.png)
 
-**4. 企业微信应用接收信息： **在应用详情页面，接收消息处点击【设置 API 接收】。
+**4. 企业🛰️应用接收信息： **在应用详情页面，接收消息处点击【设置 API 接收】。
 
 ![](img/1cea37bd958479cbc5e8450203194972.png)
 
@@ -152,7 +152,7 @@ WXWORK_TOKEN=&quot;&quot;WXWORK_AESKEY=&quot;&quot;WXWORK_CORPID=&quot;&quot;WXW
 
 ![](img/c29091eb886a4fab9f1f05a4db214aa0.png)
 
-**2. 添加依赖： **企业微信应用需要添加 @wecom/crypto , xml2js 两个依赖。添加好后，你的依赖列表应该像下面一样。
+**2. 添加依赖： **企业🛰️应用需要添加 @wecom/crypto , xml2js 两个依赖。添加好后，你的依赖列表应该像下面一样。
 
 ![](img/fb1e7f77b9062d0922095edb222000b6.png)
 
@@ -172,11 +172,11 @@ WXWORK_TOKEN=&quot;&quot;WXWORK_AESKEY=&quot;&quot;WXWORK_CORPID=&quot;&quot;WXW
 
 ![](img/9fdf95a1f12a2d0f8b6bbb1933872b8b.png)
 
-现在把 URL 粘贴到企业微信后台【设置 API 接收】的页面中刚刚留白的地方，然后点击保存。
+现在把 URL 粘贴到企业🛰️后台【设置 API 接收】的页面中刚刚留白的地方，然后点击保存。
 
 ![](img/a06541e70e8d420a13a1bcdd58d48954.png)
 
-**5. 配置 IP 白名单： **在企业微信中找到刚刚创建应用，发送一句消息。不出意外收不到任何消息。这是因为企业微信默认屏蔽了 Laf 云的 IP。 点击日志，应当能看到这样一条报错' not allow to access from your ip '
+**5. 配置 IP 白名单： **在企业🛰️中找到刚刚创建应用，发送一句消息。不出意外收不到任何消息。这是因为企业🛰️默认屏蔽了 Laf 云的 IP。 点击日志，应当能看到这样一条报错' not allow to access from your ip '
 
 ![](img/f1c1d1814e39db9611dfffe034d5d8cd.png)
 
@@ -184,7 +184,7 @@ WXWORK_TOKEN=&quot;&quot;WXWORK_AESKEY=&quot;&quot;WXWORK_CORPID=&quot;&quot;WXW
 
 ![](img/e6b74b0447b463216d8b02ed4cf79fa0.png)
 
-回到企业微信的管理后台，点击刚刚创建的应用，为应用配置可行 IP：
+回到企业🛰️的管理后台，点击刚刚创建的应用，为应用配置可行 IP：
 
 ![](img/1dc434f80ef750311f85d53d01875c5e.png)
 
@@ -194,7 +194,7 @@ WXWORK_TOKEN=&quot;&quot;WXWORK_AESKEY=&quot;&quot;WXWORK_CORPID=&quot;&quot;WXW
 
 **验证效果**
 
-**1. 测试聊天： **在企业微信中找到刚刚创建应用，发送一句消息。现在应当能收到推送的消息了。
+**1. 测试聊天： **在企业🛰️中找到刚刚创建应用，发送一句消息。现在应当能收到推送的消息了。
 
 ![](img/795d556e10ef93a568dcec245b25f620.png)
 
@@ -202,7 +202,7 @@ WXWORK_TOKEN=&quot;&quot;WXWORK_AESKEY=&quot;&quot;WXWORK_CORPID=&quot;&quot;WXW
 
 **附录**
 
-## 企业微信应用代码 - (伪流式响应)
+## 企业🛰️应用代码 - (伪流式响应)
 
 +
 

@@ -10,7 +10,7 @@ No**tebookLM **是** Google 推出的一款智**能笔**记助手****，它能�
 
 网址：https://notebooklm.google/
 
-快来新建一个属于自己的notebook吧！！！（需要科学上网）
+快来新建一个属于自己的notebook吧！！！（需要🪜）
 
 ![](img/cd44e08502d59cd8c534577d7e83705e.png)
 

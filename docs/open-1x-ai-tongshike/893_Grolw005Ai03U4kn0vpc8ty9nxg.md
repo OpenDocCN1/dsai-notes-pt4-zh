@@ -12,7 +12,7 @@
 | 微学习10 | 原理科普：文生图/视频（视频） | 星星 | [点击给作者留言](https://datawhaler.feishu.cn/record/VTg0rcaG4e1JOfclDWFcVj3Mn8g) | AI底层原理,AIGC | 文生图/生视频 | 原理讲解 | OPEN 1+X 共建组 | 视频,PPT | &lt; 10分钟 | 单篇内容 |  | 无需基础 |
 | [深度学习介绍_王茂霖](https://datawhaler.feishu.cn/wiki/DTkTwg8NZi0WAmklAV9cteD0nRe) | 王茂霖 | [点击给作者留言](https://datawhaler.feishu.cn/record/KytCrhaB1erVwfc0R8XcgBW6nxb) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 1 小时 | 单篇内容 |  | 无需基础 |
 | [1.2 NLP_秀宝](https://datawhaler.feishu.cn/wiki/Qq7hww1xPisSv3kTvHccTVAyntb) | 王星辰 | [点击给作者留言](https://datawhaler.feishu.cn/record/SQtfrgUiNeGw5ecZIpmcH93anGc) | AI底层原理 | 通俗比喻讲解,NLP |  | OPEN 1+X 共建组 | 图文 | &lt; 10分钟 | 单篇内容 |  | 无需基础 |
-| 1.2 分类、回归、决策优化、语言识别与生成_蔡鋆捷 &amp; 杨璐 | 蔡鋆捷 | [点击给作者留言](https://datawhaler.feishu.cn/record/Wcr8rDCAleQQaQcrxWBcrZOznHd) | AI底层原理 | 通俗比喻讲解,机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 高中数学 |
+| 1.2 分类、回归、决策优化、语言识别与生成_蔡鋆捷 &amp; 杨璐 | 蔡鋆捷 | [点击给作者留言](https://datawhaler.feishu.cn/record/Wcr8rDCAle🐧aQcrxWBcrZOznHd) | AI底层原理 | 通俗比喻讲解,机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 高中数学 |
 | 1.2 分类、回归、决策优化、语言识别与生成_蔡鋆捷 &amp; 杨璐 | 杨璐 | [点击给作者留言](https://datawhaler.feishu.cn/record/W9HQrKYWfeFAIdcTSQ7cWIpZnwd) | AI底层原理,多模态 | 通俗比喻讲解,AIGC |  | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
 | [1.2 推荐系统_慕灵&amp;清晖](https://datawhaler.feishu.cn/wiki/O3tywfCvyirloPkWtEsc19ygnnb) | 柯慕灵 | [点击给作者留言](https://datawhaler.feishu.cn/record/KpSwrtsDqe2hI9cjrZZcz1wbnbc) | AI底层原理 | 通俗比喻讲解 |  | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
 | [1.2 推荐系统_慕灵&amp;清晖](https://datawhaler.feishu.cn/wiki/O3tywfCvyirloPkWtEsc19ygnnb) | 清晖 | [点击给作者留言](https://datawhaler.feishu.cn/record/K0I8ra685eSrJoco189cf436nPf) | AI底层原理 | 通俗比喻讲解 |  | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
@@ -65,7 +65,7 @@
 | 微学习10 | 原理科普：文生图/视频（视频） | 星星 | [点击给作者留言](https://datawhaler.feishu.cn/record/VTg0rcaG4e1JOfclDWFcVj3Mn8g) | AI底层原理,AIGC | 文生图/生视频 | 原理讲解 | OPEN 1+X 共建组 | 视频,PPT | &lt; 10分钟 | 单篇内容 |  | 无需基础 |
 | [深度学习介绍_王茂霖](https://datawhaler.feishu.cn/wiki/DTkTwg8NZi0WAmklAV9cteD0nRe) | 王茂霖 | [点击给作者留言](https://datawhaler.feishu.cn/record/KytCrhaB1erVwfc0R8XcgBW6nxb) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 1 小时 | 单篇内容 |  | 无需基础 |
 | [1.2 NLP_秀宝](https://datawhaler.feishu.cn/wiki/Qq7hww1xPisSv3kTvHccTVAyntb) | 王星辰 | [点击给作者留言](https://datawhaler.feishu.cn/record/SQtfrgUiNeGw5ecZIpmcH93anGc) | AI底层原理 | 通俗比喻讲解,NLP |  | OPEN 1+X 共建组 | 图文 | &lt; 10分钟 | 单篇内容 |  | 无需基础 |
-| 1.2 分类、回归、决策优化、语言识别与生成_蔡鋆捷 &amp; 杨璐 | 蔡鋆捷 | [点击给作者留言](https://datawhaler.feishu.cn/record/Wcr8rDCAleQQaQcrxWBcrZOznHd) | AI底层原理 | 通俗比喻讲解,机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 高中数学 |
+| 1.2 分类、回归、决策优化、语言识别与生成_蔡鋆捷 &amp; 杨璐 | 蔡鋆捷 | [点击给作者留言](https://datawhaler.feishu.cn/record/Wcr8rDCAle🐧aQcrxWBcrZOznHd) | AI底层原理 | 通俗比喻讲解,机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 高中数学 |
 | 1.2 分类、回归、决策优化、语言识别与生成_蔡鋆捷 &amp; 杨璐 | 杨璐 | [点击给作者留言](https://datawhaler.feishu.cn/record/W9HQrKYWfeFAIdcTSQ7cWIpZnwd) | AI底层原理,多模态 | 通俗比喻讲解,AIGC |  | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
 | [1.2 推荐系统_慕灵&amp;清晖](https://datawhaler.feishu.cn/wiki/O3tywfCvyirloPkWtEsc19ygnnb) | 柯慕灵 | [点击给作者留言](https://datawhaler.feishu.cn/record/KpSwrtsDqe2hI9cjrZZcz1wbnbc) | AI底层原理 | 通俗比喻讲解 |  | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
 | [1.2 推荐系统_慕灵&amp;清晖](https://datawhaler.feishu.cn/wiki/O3tywfCvyirloPkWtEsc19ygnnb) | 清晖 | [点击给作者留言](https://datawhaler.feishu.cn/record/K0I8ra685eSrJoco189cf436nPf) | AI底层原理 | 通俗比喻讲解 |  | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 无需基础 |

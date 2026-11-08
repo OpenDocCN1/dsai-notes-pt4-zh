@@ -14,7 +14,7 @@
 
 >
 
-+   作者利用爆火的nano banana生图模型制作“封面工作流”，使小红书封面点击率从最高7%提升到12.9%。
++   作者利用爆火的nano banana生图模型制作“封面工作流”，使📕封面点击率从最高7%提升到12.9%。
 
 +   工作流逻辑简单，输入标题，AI分析关键词、生成配图提示词，再由nano banana生成配图并制作HTML封面。
 
@@ -22,9 +22,9 @@
 
 +   配置完成后，使用特定指令即可生成封面，站点agentxmcp.com提供更好使用体验。
 
-+   涉及AI在小红书封面制作上的落地应用，实现自动化生成高点击率封面。
++   涉及AI在📕封面制作上的落地应用，实现自动化生成高点击率封面。
 
-> 关键词：nano banana，AI，小红书封面，工作流，API Key
+> 关键词：nano banana，AI，📕封面，工作流，API Key
 
 >
 
@@ -36,7 +36,7 @@
 
 +   nanobanana mcp教程
 
-+   [小红书生图agent使用教程](https://agentxmcp.com/nanobanana/xiaohongshu-cover-tutorial)
++   [📕生图agent使用教程](https://agentxmcp.com/nanobanana/xiaohongshu-cover-tutorial)
 
 > 2️⃣
 
@@ -138,7 +138,7 @@
 
 +   [4] Google DeepMind Lead Researchers on Genie 3 & the Future of World-Building:
 
-+   [https://youtu.be/tWgjhC7dJRo](https://youtu.be/tWgjhC7dJRo?si=QQiqQVeNnCjUqlY3)?si=QQiqQVeNnCjUqlY3
++   [https://youtu.be/tWgjhC7dJRo](https://youtu.be/tWgjhC7dJRo?si=🐧iqQVeNnCjUqlY3)?si=🐧iqQVeNnCjUqlY3
 
 > 5️⃣
 

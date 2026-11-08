@@ -1,4 +1,4 @@
-# 手把手教你使用影刀RPA批量获取小红书低粉爆款的商品！全自动解放双手！
+# 手把手教你使用影刀RPA批量获取📕低粉爆款的商品！全自动解放双手！
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/EkcLdKXHSowEJ1xsX67csVhunad](https://xuqiwei1986.feishu.cn/docx/EkcLdKXHSowEJ1xsX67csVhunad)
 
@@ -24,9 +24,9 @@
 
 ![](img/39b91b0e6a4c52807557e89ddb4becb7.png)
 
-[影刀抓取小红书低粉爆款商品链接.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G3uQbr2RKocLPkxup5qc0PJYnRb)
+[影刀抓取📕低粉爆款商品链接.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G3uQbr2RKocLPkxup5qc0PJYnRb)
 
-## 1.2 批量抓取小红书商品的销量视频演示
+## 1.2 批量抓取📕商品的销量视频演示
 
 ![](img/671c104297c21d84325dfc9cca74790b.png)
 
@@ -36,7 +36,7 @@
 
 ## 2.1 为什么要写这样一个脚本
 
-因为很多人在刚开始接触小红书电商带货，卡在了选品阶段.
+因为很多人在刚开始接触📕电商带货，卡在了选品阶段.
 
 买一些**数据网站的会员又比较贵****，对新手不是很友好，**所以很多新手选择了刷对标账号，自己跟品
 
@@ -62,7 +62,7 @@
 
 #### 手动抓取详细的步骤为：
 
-1.打开小红书app
+1.打开📕app
 
 2.点击左下角的购物按钮，会出来商品链接
 
@@ -146,15 +146,15 @@ https://www.bilibili.com/video/BV1Zk4y1w7HA/?spm_id_from=333.337.search-card.all
 
 ![](img/1bae861e379fd8d148e68eaec87524ac.png)
 
-连接手机之后，第一步打开小红书APP
+连接手机之后，第一步打开📕APP
 
 直接使用 打开手机APP的命令，具体配置如下
 
 ![](img/e933445696da06b93f73e4f1a081a69c.png)
 
-如果APP包名那边是空的，在影刀手机管理器里面打开小红书app，这里点击右边的获取就可以获取到了！
+如果APP包名那边是空的，在影刀手机管理器里面打开📕app，这里点击右边的获取就可以获取到了！
 
-打开小红书app之后还需要点击购物按钮，才能跳转到商品链接
+打开📕app之后还需要点击购物按钮，才能跳转到商品链接
 
 我们使用：
 
@@ -162,7 +162,7 @@ https://www.bilibili.com/video/BV1Zk4y1w7HA/?spm_id_from=333.337.search-card.all
 
 这里的购物图标元素，直接捕获元素就可以直接捕获了比较简单！
 
-这里加了一个等待2秒的动作，是因为有时候手机比较卡，打开小红书账号页面还是空白的，所以加2秒的等待
+这里加了一个等待2秒的动作，是因为有时候手机比较卡，打开📕账号页面还是空白的，所以加2秒的等待
 
 至此，我们流程图的第一部分已经搞定了！是不是很简单
 
@@ -188,7 +188,7 @@ https://www.bilibili.com/video/BV1Zk4y1w7HA/?spm_id_from=333.337.search-card.all
 
 **注意！！！注意！！注意！！：**
 
-这个时候我们需要捕获很多元素，包括返回，分享，微信图标等等！
+这个时候我们需要捕获很多元素，包括返回，分享，🛰️图标等等！
 
 这里有两个元素需要注意，我们使用直接捕获是捕获不到的，或者捕获到了换了一个商品链接就没办法校验了
 
@@ -314,11 +314,11 @@ B获取粉丝数量子程序代码如下：
 
 我们需要返回上一个页面，就是商品链接页面
 
-点击右上角三个点，点击分享到微信
+点击右上角三个点，点击分享到🛰️
 
-分享到我们设定好的微信好友或者微信群聊！
+分享到我们设定好的🛰️好友或者🛰️群聊！
 
-###### 导出目标链接到微信
+###### 导出目标链接到🛰️
 
 具体代码如下:
 
@@ -532,7 +532,7 @@ Try命令和Catch命令
 
 这几天刚好给自己写了这个脚本，希望这个分享对你有帮助！
 
-本人刚开始做小红书电商，如果你喜欢影刀RPA或者正在做小红书电商·
+本人刚开始做📕电商，如果你喜欢影刀RPA或者正在做📕电商·
 
 **希望可以多交流！**
 
@@ -540,11 +540,11 @@ Try命令和Catch命令
 
 往期跟RPA有关的文章：
 
-[影刀RPA，一键下载小红书博主所有笔记标题和文案](https://riodtlbegu.feishu.cn/docx/YsotdRZPdoMxqtxWr9Jc6ohUnSc)
+[影刀RPA，一键下载📕博主所有笔记标题和文案](https://riodtlbegu.feishu.cn/docx/YsotdRZPdoMxqtxWr9Jc6ohUnSc)
 
 ## **本文所提到的所有链接：**
 
-1.思路来源于：https://articles.zsxq.com/id_xwveu3e0usfv.html  书豪的文章【小红书单店铺单月6000+利润选品保姆级教程】
+1.思路来源于：https://articles.zsxq.com/id_xwveu3e0usfv.html  书豪的文章【📕单店铺单月6000+利润选品保姆级教程】
 
 2.影刀配置电脑端环境：
 

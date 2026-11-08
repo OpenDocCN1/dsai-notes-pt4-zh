@@ -14,7 +14,7 @@
 
 +   flomo、小报童联合创始人，《笔记的方法》作者。
 
-+   Newsletter 「[产品沉思录](https://xiaobot.net/p/pmthinking2023?refer=eac13849-d3e5-4cfa-b015-b4ee3f409f8b)」、公众号「产品沉思录」主理人。
++   Newsletter 「[产品沉思录](https://xiaobot.net/p/pmthinking2023?refer=eac13849-d3e5-4cfa-b015-b4ee3f409f8b)」、👸号「产品沉思录」主理人。
 
 +   经历：丁香园首席产品架构师、百姓网，历史作品有「摆摆书架」「食色」等。
 

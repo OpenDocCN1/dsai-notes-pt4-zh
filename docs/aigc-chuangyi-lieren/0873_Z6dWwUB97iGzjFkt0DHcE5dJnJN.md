@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/OCTIdmdkmorjkCxhwQVcf6gtnbd](https://aigcreative.feishu.cn/docx/OCTIdmdkmorjkCxhwQVcf6gtnbd)
 
-> 作者：iaiuse  公众号：AI决策者洞察
+> 作者：iaiuse  👸号：AI决策者洞察
 
 > 链接：https://mp.weixin.qq.com/s/i5p_I6APR9lNhomSuggSSg
 

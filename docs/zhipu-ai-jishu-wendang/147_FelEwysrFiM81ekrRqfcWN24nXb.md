@@ -42,11 +42,11 @@
 
 > ABC-request-sdk
 
-# 🏠 微信交流群
+# 🏠 🛰️交流群
 
 ![](img/2cf3bc73719a24817130a3cbc911af56.png)
 
-# 🏠 关注公众号
+# 🏠 关注👸号
 
 ![](img/f28d1a4b5f8ccfdf21f6d53616f3d023.png)
 

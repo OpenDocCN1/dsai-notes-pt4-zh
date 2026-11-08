@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/AG84dd2GNoK8GFxQkoGcg14znBd](https://xuqiwei1986.feishu.cn/docx/AG84dd2GNoK8GFxQkoGcg14znBd)
 
-> 现在亦仁大大的超级标也已经出来了，
+> 现在龙哥大大的超级标也已经出来了，
 
 > 很多人想入场这个外卖推客也不太了解。
 
@@ -42,7 +42,7 @@
 
 # 佣金活动链接获取：
 
-> 公众号搜索「美团联盟」、「美团圈圈」「饿了么联盟」
+> 👸号搜索「美团联盟」、「美团圈圈」「饿了么联盟」
 
 > 京东外卖推广在「京粉APP」
 
@@ -62,7 +62,7 @@
 
 ![](img/f6f21e57e946d36ddd63b229a5c9dd00.png)
 
-通过饿了么联盟公众号也可以获取到官方的交流群
+通过饿了么联盟👸号也可以获取到官方的交流群
 
 需要「自定义推广口令」需要满足周订单超过700单可填表申请。
 
@@ -96,7 +96,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ### 口令防折叠技巧
 
-> 有些微信号权重不够，或者发的多，就算发一行口令也会被折叠展示。
+> 有些🛰️号权重不够，或者发的多，就算发一行口令也会被折叠展示。
 
 > 这里分享下我的实操解决方案：
 
@@ -320,7 +320,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ## 京东华莱士，塔斯汀0吃玩法
 
-> 原理是叠加微信支付的金币兑换券，搭配华莱士店铺的20-16
+> 原理是叠加🛰️支付的金币兑换券，搭配华莱士店铺的20-16
 
 > 达到20-20的效果，
 
@@ -356,15 +356,15 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 # 引流篇
 
-## 小红书发帖
+## 📕发帖
 
-铺量发小红书笔记
+铺量发📕笔记
 
 发布活动内容制作成笔记。
 
 笔记直接挂群聊链接
 
-群聊里引导➕V或者公众号
+群聊里引导➕V或者👸号
 
 ![](img/c9c87dd25fe16f38e4cd80cc5c19cd4d.png)
 
@@ -404,13 +404,13 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 放个简单攻略飞书链接，
 
-然后底下放个群里或者公众号二维码
+然后底下放个群里或者👸号二维码
 
 #### 方式二：
 
 参考同行
 
-抖音主页@小号。小号里放公众号或者V。
+抖音主页@小号。小号里放👸号或者V。
 
 ![](img/bd67eaa7e44d841dc4ebf01641ad0fca.png)
 

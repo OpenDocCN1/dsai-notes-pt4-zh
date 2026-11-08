@@ -52,7 +52,7 @@ https://mp.weixin.qq.com/s/lZT6JSb4PkRS3HiLMmlOJA
 
 贡献人：
 
-https://mp.weixin.qq.com/s/v4ybh_ObrtOi5prahBFTQQ
+https://mp.weixin.qq.com/s/v4ybh_ObrtOi5prahBFT🐧
 
 2024年技术快速迭代，NOA收获性能和渗透率双提升。从年初BEV +Transformer，摆脱高精度地图，实现全国都能开；到年中端到端架构的兴起，减少了模型间信息损耗，提高泛化能力；再到年底引入视觉语言大模型和云端模型，进一步提高对长尾场景的处理能力；由此将L2功能在空间维度延展到接近极限，车位到车位成为新的竞争锚点。并且头部车企开始降低硬件配置，以现配套售价的下探和标配。2025年随着功能完善和硬件降本，我们认为城市NOA渗透率有望提升至11.6%。
 
@@ -522,7 +522,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 学术分析报告：ResearchFlow -- 奇绩F23校友的开发的深度研究产品，PC端进入RFlow的分析报告，可直接点击节点右侧的小数字展开节点，登录后可在节点上直接“询问AI”，进一步探索深度信息
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

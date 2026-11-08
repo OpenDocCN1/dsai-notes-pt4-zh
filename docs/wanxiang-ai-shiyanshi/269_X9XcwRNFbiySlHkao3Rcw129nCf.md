@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/I6K9ddNLvojdbwxAyXbcW9Gknfg](https://yunyinghui.feishu.cn/docx/I6K9ddNLvojdbwxAyXbcW9Gknfg)
 
-> **公众号：**阿里云
+> **👸号：**阿里云
 
 > **发布时间：**2026-01-28 17:28:22
 
@@ -38,6 +38,6 @@ c.配置 Moltbot ：单击 执行命令 ，生成访问 Moltbot 的 Token。
 
 d.访问控制页面 ：单击 打开网站页面 可进入 Moltbot 对话页面。
 
-此外，阿里云无影云电脑也已上线内置 Moltbot 和各种应用软件的专属镜像，预装了包括 VS Code、TMUX、钉钉、WPS 等组件，并支持钉钉、QQ 等软件唤醒 Moltbot，只需一键导入镜像即可启动。
+此外，阿里云无影云电脑也已上线内置 Moltbot 和各种应用软件的专属镜像，预装了包括 VS Code、TMUX、钉钉、WPS 等组件，并支持钉钉、🐧 等软件唤醒 Moltbot，只需一键导入镜像即可启动。
 
 / END /

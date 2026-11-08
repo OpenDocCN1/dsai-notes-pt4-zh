@@ -68,7 +68,7 @@
 
 +   之前的 AI 产品如果你下了一个指令，要修改指令内容，需要先终止对话，再重新发指令。Manus 可以直接继续发指令。
 
-## 📚 Manus 能做什么？（测试案例回放合集，科学上网观看）
+## 📚 Manus 能做什么？（测试案例回放合集，🪜观看）
 
 [研究类案例](https://geek-agi.feishu.cn/wiki/EzYFwg51GiimA2kgFHjcWB5DnHe)
 
@@ -335,7 +335,7 @@
 
 [DeepSeek彻底火了，如何用，有多强，一文带你看懂！.pdf](https://geek-agi.feishu.cn/wiki/DSj1wM0v6idv9tkouj7csK4Tnig)
 
-### ✨ 公众号好文推荐 ⬇️
+### ✨ 👸号好文推荐 ⬇️
 
 《分享10个我最常用的DeepResearch提示词模板和用法。》
 
@@ -425,7 +425,7 @@
 
 +   **预言家模式**:担心决策翻车时，在提问时加上“如果选择这个方案，未来三个月可能会发生什么”，Deepseek 会从行业趋势、政策因素、竟品动向等方面进行深度分析，提前预见到如供应商突然涨价这类细节问题，比算命先生靠谱。
 
-+   **灵魂拷问模式**:担心自己写的方案有问题却看不出来时，输入“启动杠精模式”可启动 Deepseek 的灵魂拷问模式。它会先列出方案的致命漏洞，再给出答案。也可以提出如“先写一份六幺八促销方案，再模拟评论区杠精从五个角度狂喷这个方案，最后根据杠精意见出 VR 版本”“模拟甲乙方在微信群里互喷二十条，最后给折中方案”等要求。
++   **灵魂拷问模式**:担心自己写的方案有问题却看不出来时，输入“启动杠精模式”可启动 Deepseek 的灵魂拷问模式。它会先列出方案的致命漏洞，再给出答案。也可以提出如“先写一份六幺八促销方案，再模拟评论区杠精从五个角度狂喷这个方案，最后根据杠精意见出 VR 版本”“模拟甲乙方在🛰️群里互喷二十条，最后给折中方案”等要求。
 
 +   **驯服专业话痨**:当 Deepseek 的回答过于复杂或专业看不懂时，回复“说人话”三个字，它就会简化回答，让复杂原理变得易懂。比如询问量子纠缠是什么，收到“说人话”指令后，它会改变回答方式，便于理解。
 
@@ -475,7 +475,7 @@
 
 > [Deepseek公文写作提示词大全.docx](https://geek-agi.feishu.cn/wiki/L7J6wooFIiBQ1tkSwYpcvAw3nHc)
 
-> [Deepseek喂饭指令，一天一篇SCI.docx](https://geek-agi.feishu.cn/wiki/GJGIwatBeiQQwVkBV9RctCpInTd)
+> [Deepseek喂饭指令，一天一篇SCI.docx](https://geek-agi.feishu.cn/wiki/GJGIwatBei🐧wVkBV9RctCpInTd)
 
 > [法律人deepseek使用指南.docx](https://geek-agi.feishu.cn/wiki/VsM4wPH2oilOqPk0vUdc4QvMnkb)
 
@@ -851,7 +851,7 @@ DeepSeek 相比传统 Al 模型，无需复杂提示词模板，能直接理解�
 | 02 | DeepSeek + 本地知识库的部署  【来源：5ycode】 | ![](img/e40118240f96102370631930f28e259f.png) | https://mp.weixin.qq.com/s/IKoBga2iKfpkdD4Qgy8iLg |
 | 03 | 本地部署视频教程 | 方法一：使用ollama+PageAssist 插件部署 | https://www.bilibili.com/video/BV1NBfSYMEG8/ |
 | 04 |  | 方法二：使用 LM Studio部署 | https://www.bilibili.com/video/BV1NGf2YtE8r/ |
-| 05 | Deepseek 接入微信【喂饭版】 |  | https://mp.weixin.qq.com/s/mk5D8YedWzC0yTjiiZ1H5Q |
+| 05 | Deepseek 接入🛰️【喂饭版】 |  | https://mp.weixin.qq.com/s/mk5D8YedWzC0yTjiiZ1H5Q |
 | 06 | 一个超实用脚本，让你的DeepSeek自动重试解放双手。 |  | https://mp.weixin.qq.com/s/t8lyNZ0sOkd0XsicYPF0-Q |
 | 07 | Deepseek V3登录&amp;注册使用教程 |  |  |
 | 08 | [DeepSeek在Mac上本地可视化部署，保姆级教程，再也不怕崩了！](https://geek-agi.feishu.cn/wiki/GAugwEqbYiKhltkxRtzchWV1nnc?from=from_copylink) |  |  |
@@ -915,13 +915,13 @@ DeepSeek 相比传统 Al 模型，无需复杂提示词模板，能直接理解�
 | **OPPO** | Find N5官宣接入DeepSeek-R1：小布语音唤醒 一句话操控 | / | / | / |
 | **腾讯** | 腾讯元宝接入 DeepSeek 满血版 | 可在应用市场下载体验 | / | / |
 | **百度搜索** | 全面接入DeepSeek | / | / | / |
-| **微信** | 全面接入DeepSeek | / | / | / |
+| **🛰️** | 全面接入DeepSeek | / | / | / |
 
 # 💰 提效 / 变现思路、案例
 
 ## 工作提效
 
-> [如何用DeepSeek半小时生成一篇阅读量10万+的公众号爆文](https://geek-agi.feishu.cn/wiki/Kn2hwWTl0iLROGkomRac3va4nff)
+> [如何用DeepSeek半小时生成一篇阅读量10万+的👸号爆文](https://geek-agi.feishu.cn/wiki/Kn2hwWTl0iLROGkomRac3va4nff)
 
 > [办公新利器：DeepSeek+Word，让你的工作更高效](https://geek-agi.feishu.cn/wiki/AVilwPtGPiBAMskKkPcctcwznTb)
 

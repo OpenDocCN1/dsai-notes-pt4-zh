@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/QsAPd5JnQoEAzAxPpuVcF2LDn5w](https://aigcreative.feishu.cn/docx/QsAPd5JnQoEAzAxPpuVcF2LDn5w)
 
-> 作者：韦恩 公众号：韦恩AI智能体
+> 作者：韦恩 👸号：韦恩AI智能体
 
 > 链接：https://mp.weixin.qq.com/s/JLFbWxDIs7bZVfx0Uf7EMA
 

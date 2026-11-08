@@ -1,4 +1,4 @@
-# 小红书SEO诊断
+# 📕SEO诊断
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/VtjDduPRroqjASxdG6jcNpsOnth](https://xodnytdcaw.feishu.cn/docx/VtjDduPRroqjASxdG6jcNpsOnth)
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/KneudAkpho2ihuxK9nWcilWenIe](https://aigcreative.feishu.cn/docx/KneudAkpho2ihuxK9nWcilWenIe)
 
-> 作者： 轩辕之风O         公众号：轩辕的编程宇宙
+> 作者： 轩辕之风O         👸号：轩辕的编程宇宙
 
 > 链接：https://mp.weixin.qq.com/s/BGT32Xo2yDzoyjwm8VaLPQ
 

@@ -1,4 +1,4 @@
-# 🎁Vega变现指南（自制微信表情包！）
+# 🎁Vega变现指南（自制🛰️表情包！）
 
 > 来源：[https://my.feishu.cn/docx/BIfkdiF0Toi2XRxISfWcclKXnpf](https://my.feishu.cn/docx/BIfkdiF0Toi2XRxISfWcclKXnpf)
 
@@ -10,7 +10,7 @@ AI绘画变现方式市面上已经有很多案例了，今天我把收集的案
 
 ### 表情包制作流程简介
 
-①去微信表情包平台注册个账号：https://sticker.weixin.qq.com/
+①去🛰️表情包平台注册个账号：https://sticker.weixin.qq.com/
 
 ![](img/e07af3e3093fb4d588116c5090f252cc.png)
 

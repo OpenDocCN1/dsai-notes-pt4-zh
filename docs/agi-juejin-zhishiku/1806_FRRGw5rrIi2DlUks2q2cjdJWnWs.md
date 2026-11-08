@@ -16,11 +16,11 @@
 
 ### [使用工具 ](https://www.zhihu.com/search?q=%E4%BD%BF%E7%94%A8%E5%B7%A5%E5%85%B7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689830546%7D)：
 
-1.Whee(简单易上手）教程以此为例，Stable Diffusion（较为复杂）的Controlnet插件 2.微信 3.草料二维码+QRCORD
+1.Whee(简单易上手）教程以此为例，Stable Diffusion（较为复杂）的Controlnet插件 2.🛰️ 3.草料二维码+QRCORD
 
 ### 出图步骤：
 
-1. [打开微信 ](https://www.zhihu.com/search?q=%E6%89%93%E5%BC%80%E5%BE%AE%E4%BF%A1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689830546%7D)[，点击右下角](https://www.zhihu.com/search?q=%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689830546%7D)“我”，点击上方微信号，输出 微信二维码 图像，然后进行剪裁，图片保存备用
+1. [打开🛰️ ](https://www.zhihu.com/search?q=%E6%89%93%E5%BC%80%E5%BE%AE%E4%BF%A1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689830546%7D)[，点击右下角](https://www.zhihu.com/search?q=%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689830546%7D)“我”，点击上方🛰️号，输出 🛰️二维码 图像，然后进行剪裁，图片保存备用
 
 ![](img/155093776c90ef4d7093a8cc26d5f7b8.png)
 

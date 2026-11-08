@@ -6,7 +6,7 @@
 
 > 📃 作者介绍：分享人工智能，让所有人玩转AI
 
-> 🛖 公众号：架构师带你玩转AI
+> 🛖 👸号：架构师带你玩转AI
 
 > ⏰ 收录时间：2024-05-23 11:28:42
 
@@ -14,7 +14,7 @@
 
 ![](img/a520095a7b7666dc5df6320da264d099.png)
 
-关注作者公众号，获取更多AI知识
+关注作者👸号，获取更多AI知识
 
 本文将从 BERT的本质、BERT **的**原**理 、 BERT**的应用 三个方面，带 您一文搞懂 Bidirectional Encoder Representations from Transformers  | BERT 。
 

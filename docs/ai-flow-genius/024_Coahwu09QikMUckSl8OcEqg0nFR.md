@@ -16,7 +16,7 @@
 
 步骤：
 
-1.  [导出任何人的](https://m.okjike.com/originalPosts/64804a27b0f25cc918ee9c95?s=eyJ1IjoiNWJmMmIyMGNlZmE3ZGUwMDE3YjBjMDY1In0%3D)文本资料。比如微博等 点击查看教程
+1.  [导出任何人的](https://m.okjike.com/originalPosts/64804a27b0f25cc918ee9c95?s=eyJ1IjoiNWJmMmIyMGNlZmE3ZGUwMDE3YjBjMDY1In0%3D)文本资料。比如🧣等 点击查看教程
 
 1.  将文件传输给Claude 2
 

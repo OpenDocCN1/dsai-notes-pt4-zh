@@ -99,7 +99,7 @@
 
 ![](img/b35cf11fd92f4ef54dbf98b8fe9ea832.png)
 
-[图片：小红书内容数据分析表格]
+[图片：📕内容数据分析表格]
 
 #### 🎥 一枚扣子老师的故事影片全流程生产
 
@@ -181,7 +181,7 @@
 | **飞书开发套件** | 飞书 aPaaS、aily 已发布 | [飞书开发套件：CIO 落地 AI 的最佳伙伴【公开版】](https://bytedance.larkoffice.com/wiki/BNqYwTfvXiE6IQkVYiVcrXMDn2S) | 点击 [体验飞书 aily](https://aily.feishu.cn/ai/ailyplay)，有一定免费额度；更多功能请预约咨询 | [点击预约咨询](https://www.feishu.cn/landing/feishu_future_caio_2025?tracking_code=701TL00000o9Kp8YAE) |
 | **飞书项目** | 部分功能已上线 | [2025 飞书发布会：飞书项目六大能力更新一览](https://bytedance.larkoffice.com/wiki/GXXFw6QC5iMXrHklmQpcSpqLnyg) | [飞书项目官网](https://project.feishu.cn/home) | [购买咨询](https://project.feishu.cn/home/service) |
 
-获取更多信息，关注公众号，发送飞书未来无限大会获取申请入口和直播回放
+获取更多信息，关注👸号，发送飞书未来无限大会获取申请入口和直播回放
 
 > 🎉 结语
 

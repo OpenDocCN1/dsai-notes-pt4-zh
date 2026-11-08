@@ -89,7 +89,7 @@
 | 2023-10-10 | [2023-10-10媲美Midjourney，微软New Bing免费提供DALL-E3](https://xuqiwei1986.feishu.cn/wiki/KdPTw2Qkbi2BRdk0ZAWckKmwnbb) |
 | --- | --- |
 | 2023-10-07 | [2023-10-07 min 搞定用户画像-爆肝拆解 AI 生成用户画像工作流](https://xuqiwei1986.feishu.cn/wiki/ZJJBwquZaiLMI1k1WhucWwETnJe) |
-| 2023-09-29 | [midjourney做可以搞钱的微信表情包避坑指南](https://xuqiwei1986.feishu.cn/wiki/G7VGwr4TviuRenk4GaccmhKZnEb) |
+| 2023-09-29 | [midjourney做可以搞钱的🛰️表情包避坑指南](https://xuqiwei1986.feishu.cn/wiki/G7VGwr4TviuRenk4GaccmhKZnEb) |
 | 2023-09-26 | [2023-09-26Midjourney如何做创意美甲设计？](https://xuqiwei1986.feishu.cn/wiki/PMgwwXopEif8MYkssdCcyl3Fnab) |
 | 2023-09-23 | [2023-09-23Midjourney 很出效果的 40 位艺术家推荐](https://xuqiwei1986.feishu.cn/wiki/O8XGwxbDcikwZHkXQsfcdTrNnhb) |
 | 2023-09-21 | [2023-09-21Fooocus 逆天王炸级更新](https://xuqiwei1986.feishu.cn/wiki/Z5Ugwy0NMixkWnk6PY2ck3VnnYf) |

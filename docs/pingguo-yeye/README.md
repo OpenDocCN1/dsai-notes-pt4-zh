@@ -20,6 +20,6 @@
 
 #### [【交流社群】](https://e0lrm2v2v1u.feishu.cn/wiki/wikcnkJwLkv3fyFDuNDYvR3uFbe)** 与其他****AI****爱好者和专家交流学习。**
 
-### 公众号：苹果爷爷（知识库地址随时可能会失效，关注公众号防失联）
+### 👸号：苹果爷爷（知识库地址随时可能会失效，关注👸号防失联）
 
 ![](img/7dd177404f6ca6bdb4a13fd2ebf1582e.png)

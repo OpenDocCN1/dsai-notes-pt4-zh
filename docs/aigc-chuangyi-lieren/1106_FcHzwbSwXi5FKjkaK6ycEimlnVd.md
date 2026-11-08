@@ -1,4 +1,4 @@
-# 微博：商业化主视觉设计全流程
+# 🧣：商业化主视觉设计全流程
 
 > 来源：[https://aigcreative.feishu.cn/docx/HrdgdH6uVoybcfx3ZAIcCPl8n4e](https://aigcreative.feishu.cn/docx/HrdgdH6uVoybcfx3ZAIcCPl8n4e)
 

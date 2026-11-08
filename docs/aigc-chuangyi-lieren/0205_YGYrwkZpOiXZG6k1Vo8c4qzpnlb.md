@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/Mmrqdf7x8oZrkqxnu65c9bPPnae](https://aigcreative.feishu.cn/docx/Mmrqdf7x8oZrkqxnu65c9bPPnae)
 
-> 来源：公众号：抱脸，https://mp.weixin.qq.com/s/u4h-MJFPMNpHd2RBBDpZ9w
+> 来源：👸号：抱脸，https://mp.weixin.qq.com/s/u4h-MJFPMNpHd2RBBDpZ9w
 
 在 2023 年，大型语言模型（Large Language Models，简称 LLMs）受到了公众的广泛关注，许多人对这些模型的本质及其功能有了基本的了解。是否开源的议题同样引起了广泛的讨论。在 Hugging Face，我们对开源模型抱有极大热情。开源模型的优势在于，它们不仅促进了研究的可复制性，还鼓励社区参与到人工智能模型的开发中来，这样做有助于我们更容易地审视模型中可能存在的偏差和局限性。此外，通过重复利用已有的检查点，我们还能够减少整个领域的碳足迹（这只是 众多优点 中的一部分）。
 

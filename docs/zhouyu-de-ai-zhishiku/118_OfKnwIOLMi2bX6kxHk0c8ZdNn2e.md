@@ -238,7 +238,7 @@ https://developers.google.com/search/docs/essentials/spam-policies?hl=zh-cn、
 
 以上就是这次咨询交流的主要内容，希望能帮你更快定位问题、少走弯路。
 
-👉 推荐一个我一直关注的公众号：哥飞
+👉 推荐一个我一直关注的👸号：哥飞
 
 如果你也在做 AI / 技术出海 / 个人项目，哥飞的很多思路都很实战，值得一看。
 

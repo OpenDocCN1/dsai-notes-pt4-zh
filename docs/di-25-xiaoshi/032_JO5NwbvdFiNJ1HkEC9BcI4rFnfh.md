@@ -288,7 +288,7 @@ Studio 里集成了** 9 种**非常有用的功能。它们是：
 
 ### （4）实际案例
 
-我们用之前在「星期一研究室」公众号发表的往期文章《YouMind：一个真正让创作自然发生的 AI 工作室》作为素材，来尝试生成介绍 YouMind 的播客，看看生成效果如何。
+我们用之前在「星期一研究室」👸号发表的往期文章《YouMind：一个真正让创作自然发生的 AI 工作室》作为素材，来尝试生成介绍 YouMind 的播客，看看生成效果如何。
 
 > YouMind 是一个专门为内容学习者、内容创作者打造的一站式 AI 工作室，可以查看下方文章链接了解这款产品。
 
@@ -784,7 +784,7 @@ NotebookLM 的信息图功能可以自动总结文章的内容，不过如果你
 
 众所周知，劝人学法千刀万剐，法学专业的学生往往拥有大量的记忆和背诵任务，比如法律规则、名词解释以及法定期限等，学起来非常辛苦。
 
-对于法学生而言，民事**诉讼法是**重点科目之一。因此，小编想尝试使用 NotebookLM 的闪卡功能为民事诉讼法这一学科制作背诵卡片，所用的参考资料是戴鹏老师在微博发布的「民诉主观题必背 60 句」。
+对于法学生而言，民事**诉讼法是**重点科目之一。因此，小编想尝试使用 NotebookLM 的闪卡功能为民事诉讼法这一学科制作背诵卡片，所用的参考资料是戴鹏老师在🧣发布的「民诉主观题必背 60 句」。
 
 > 附上闪卡功能测评的 NotebookLM 笔记本：https://notebooklm.google.com/notebook/327da279-c296-489c-9c07-febe66bc46b9
 
@@ -1077,7 +1077,7 @@ NotebookLM 帮我收集了 8 个来源。对话区中有对所有来源的总结
 
 > 上述提示词思路来源于 Youtube 博主 Tina Huang 的视频 NotebookLM In 30 Minutes
 
-> 附上网址：[https://www.youtube.com](https://www.youtube.com/watch?v=qbt-MFVvQQY)/watch?v=qbt-MFVvQQY
+> 附上网址：[https://www.youtube.com](https://www.youtube.com/watch?v=qbt-MFVv🐧Y)/watch?v=qbt-MFVv🐧Y
 
 ![](img/c7527c3ce3df006dcb9c15af4f899fa7.png)
 
@@ -1157,7 +1157,7 @@ PRD 输出格式要求：
    - Phase 3: 部署与测试
 ```
 
-> 附上上述提示词改编来源：[https://docs.google.com/document/u/0/d/11tkkCXsJBgyeVXVxLG_kJh31a6m](https://docs.google.com/document/u/0/d/11tkkCXsJBgyeVXVxLG_kJh31a6mzp1NBWrARGJHuKQQ/mobilebasic?pli=1&tab=t.0&_immersive_translate_auto_translate=1)zp1NBWrARGJHuKQQ/mobilebasic?pli=1&tab=t.0&_immersive_translate_auto_translate=1
+> 附上上述提示词改编来源：[https://docs.google.com/document/u/0/d/11tkkCXsJBgyeVXVxLG_kJh31a6m](https://docs.google.com/document/u/0/d/11tkkCXsJBgyeVXVxLG_kJh31a6mzp1NBWrARGJHuK🐧/mobilebasic?pli=1&tab=t.0&_immersive_translate_auto_translate=1)zp1NBWrARGJHuK🐧/mobilebasic?pli=1&tab=t.0&_immersive_translate_auto_translate=1
 
 ---
 
@@ -1507,16 +1507,16 @@ NotebookLM **的价**值，正是帮助我们构建这种能力。它通过 AI �
 | **类别** | **标题** | **链接** |
 | --- | --- | --- |
 | Youtube 视频 | How to Use Notebooklm Better than 99% of People | https://youtu.be/SogSf-1p9t4?si=z-86yuWS3DaB7EmZ |
-|  | NotebookLM In 30 Minutes | https://youtu.be/qbt-MFVvQQY?si=zBa95w4RzBiaO0Gq |
+|  | NotebookLM In 30 Minutes | https://youtu.be/qbt-MFVv🐧Y?si=zBa95w4RzBiaO0Gq |
 |  | 35+ INSANE Ways To Use NotebookLM (For FREE) | https://youtu.be/8Jw5Wa_8K0Y?si=kEMWEx1p64kSg4bE |
 |  | NotebookLM 完整教學！93%的人還不知道的 8 個隱藏用法，完勝 ChatGPT| 分析報告 | 會議記錄 | 自動生成 Podcast、教學影片 | https://youtu.be/zgWerTIynVA?si=RurkKgpa_wVlcraT |
 | Gemini Deep Research | NotebookLM 功能与应用调研 | https://docs.google.com/document/d/1rfQ7Dub3qOJ1d_-dzjIiHvJTJZPNG6ELiF_C7dkSZe4/edit?usp=sharing |
 |  | NotebookLM 应用场景深度调研 | https://docs.google.com/document/d/1808FpAugnnUWUItjaT0_ZCC9GdDP5An2JrOuxjE5xEA/edit?usp=sharing |
-| 微信公众号文章 | 颠覆学习的新范式：NotebookLM | https://mp.weixin.qq.com/s/iFqNJ961Z0Mo12WbFJiduw |
-|  | Notebooklm 将微信公众号文章变成知识库 | https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg |
+| 🛰️👸号文章 | 颠覆学习的新范式：NotebookLM | https://mp.weixin.qq.com/s/iFqNJ961Z0Mo12WbFJiduw |
+|  | Notebooklm 将🛰️👸号文章变成知识库 | https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg |
 |  | Get 笔记、腾讯 ima 被甩几条街？NotebookLM 的 3 个设计巧思，重新定义 AI 知识管理 | https://mp.weixin.qq.com/s/ytuj3IV3zBjiPtqm4z9sAQ |
 |  | 我试了 NotebookLM 学习法后，彻底抛弃传统学习方式 | https://mp.weixin.qq.com/s/e9ZMHIoaiqWUlFUG6RMNXg |
 |  | 推荐给每个人的学习神器：NotebookLM | https://mp.weixin.qq.com/s/9AxLL00WEMz47KcITjWM6Q |
-|  | 有了 NotebookLM，所有公众号内容都值得重做一遍 | https://mp.weixin.qq.com/s/KPAUq-EVnZb6MbU4dsGijA |
+|  | 有了 NotebookLM，所有👸号内容都值得重做一遍 | https://mp.weixin.qq.com/s/KPAUq-EVnZb6MbU4dsGijA |
 |  | NotebookLM PPT 创作 8 大高阶玩法｜谷歌官方指南实测，多模态创作玩出花 | https://mp.weixin.qq.com/s/VJSKBOPedt1m6aHGRJZusg |
 | 播客 | AI 时代是谁的黄金时代？｜和张咋啦聊：文科生、积极行动、爆款的规律、普通人也能赢 | https://www.xiaoyuzhoufm.com/episode/695af1289b7892496e9811cb |

@@ -53,7 +53,7 @@ Atom大模型默认支持4K上下文，利用位置插值PI和Neural Tangent Ker
 
 2、 可在 Atom-7B-Chat Hugging Face 仓库获取模型
 
-1）由于hugging face无法直接访问，推[荐一个速度较快、好用的“科](https://go.91merry-1.top/auth/register?code=rSHT)学上网”工具 91merry 科学上网 ，我买的30/季度，每月100G流量，我百兆带宽实际下载最大能够达到15M/s。
+1）由于hugging face无法直接访问，推[荐一个速度较快、好用的“科](https://go.91merry-1.top/auth/register?code=rSHT)学上网”工具 91merry 🪜 ，我买的30/季度，每月100G流量，我百兆带宽实际下载最大能够达到15M/s。
 
 2）把这里面的每一个文件都下载了。（推荐用IDM，浏览器默认的下载没IDM快，总共下载下来大概14G）
 

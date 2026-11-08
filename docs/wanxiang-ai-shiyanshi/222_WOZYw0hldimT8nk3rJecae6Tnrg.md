@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/IrbZdfg7FoLwUVxCVbwcRXZintg](https://yunyinghui.feishu.cn/docx/IrbZdfg7FoLwUVxCVbwcRXZintg)
 
-> **本文作者：**枕海，**来源公众号： ** 阿里云开发者
+> **本文作者：**枕海，**来源👸号： ** 阿里云开发者
 
 > **推荐理由：**这篇文章详细介绍了蚂蚁国际信贷技术团队如何利用AI Coding技术（特别是CodeFuse工具结合提示词工程）来提升Java后端业务代码的开发效率，实现从系统分析文档（系分）到可执行代码的自动化生成。
 

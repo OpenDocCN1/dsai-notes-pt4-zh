@@ -1,8 +1,8 @@
-# NO.05公众号写文/查重/广告收益
+# NO.05👸号写文/查重/广告收益
 
 > 来源：[https://my.feishu.cn/docx/XFXMdD0nMoz62ux7PNmc02BOn92](https://my.feishu.cn/docx/XFXMdD0nMoz62ux7PNmc02BOn92)
 
-首先推荐一个AI工具，免梯子直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
+首先推荐一个AI工具，免🪜直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
 
 这里只介绍产出方式，真正的爆款需要有好思路。
 
@@ -40,7 +40,7 @@ prompt可以自己按需调整，这里只是一个思路
 
 ![](img/71a0c78ff94a1cb529aa032ebab3c2cf.png)
 
-然后复制到公众号后台发布就行，公众号[NO.04 公众号起号测试](https://yw55ojhusnq.feishu.cn/wiki/JIhswQC3dilFRTkeuUdcwxuknhj)得点原创。具体公众号注册与发布教程见：
+然后复制到👸号后台发布就行，👸号[NO.04 👸号起号测试](https://yw55ojhusnq.feishu.cn/wiki/JIhswQC3dilFRTkeuUdcwxuknhj)得点原创。具体👸号注册与发布教程见：
 
 ![](img/cc1a4acacbce6f7f9cb5a544dcf879ff.png)
 

@@ -84,11 +84,11 @@
 
 [收藏夹-case-新.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VSTWbo3nAowlfSxbvkncmvt5nIb)
 
-> 分析一下我的小红书内容和点赞，给一些建议
+> 分析一下我的📕内容和点赞，给一些建议
 
 ![](img/06c0922e64c531a363bc9bba96da1215.png)
 
-[小红书分析-新.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/USlNbYIByo5YujxDFxwcZedsnXd)
+[📕分析-新.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/USlNbYIByo5YujxDFxwcZedsnXd)
 
 > 测试case提取提示词：
 
@@ -108,8 +108,8 @@
 
 [屏蔽广告.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gw2nbHzZRoOYrHxxVf4cWwqYnxO)
 
-> 一键发布微博
+> 一键发布🧣
 
 ![](img/38c02ab85e992ed445287f3e4c950514.png)
 
-[微博发布case.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SQfQbnIxQoQHn5xKOA4c6SxjnKe)
+[🧣发布case.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SQfQbnIxQoQHn5xKOA4c6SxjnKe)

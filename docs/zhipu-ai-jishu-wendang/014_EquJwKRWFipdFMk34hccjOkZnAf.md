@@ -226,6 +226,6 @@ Service not running, starting service...
   ? for shortcuts
 ```
 
-## 🏠微信交流群
+## 🏠🛰️交流群
 
 ![](img/8682c52831bcbba5c1fcb2c0fa54b47b.png)

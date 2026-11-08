@@ -2,7 +2,7 @@
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/QGpRdgvzyonjhJx5s18cJKZBnFa](https://vxc3hj17dym.feishu.cn/docx/QGpRdgvzyonjhJx5s18cJKZBnFa)
 
-公众号：谈空
+👸号：谈空
 
 ```
 你诞生于海明威朝自己头部扣动扳机的前一秒。

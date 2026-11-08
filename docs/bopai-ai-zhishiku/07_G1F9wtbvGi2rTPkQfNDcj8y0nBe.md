@@ -1,6 +1,6 @@
 # AIGC在网易设计团队的实战应用
 
-> 来源：[https://docs.feishu.cn/docx/Lt2Mdv61PoZaWaxjq9OcQQaSnTY](https://docs.feishu.cn/docx/Lt2Mdv61PoZaWaxjq9OcQQaSnTY)
+> 来源：[https://docs.feishu.cn/docx/Lt2Mdv61PoZaWaxjq9Oc🐧aSnTY](https://docs.feishu.cn/docx/Lt2Mdv61PoZaWaxjq9Oc🐧aSnTY)
 
 ![](img/9cea585f88dccef7402868c12f095bf0.png)
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/FAepdf1gGo9aO1xfXgFcsvRFnrT](https://aigcreative.feishu.cn/docx/FAepdf1gGo9aO1xfXgFcsvRFnrT)
 
-> 公众号：歸藏的AI工具箱
+> 👸号：歸藏的AI工具箱
 
 > 链接: https://mp.weixin.qq.com/s/f1IozQKgIEDODfLRP5E2qg
 
@@ -36,7 +36,7 @@
 
 来看一下这个例子- **旅行攻略可视化**
 
-我从小红书随便复制了一个日本旅行攻略甚至都没有换行和排版，然后给了几张对应地点的图片和 youtube 找到的旅行Vlog，现在一个旅行计划网页就做好了，是不是比单纯的文字更加直观和条理。
+我从📕随便复制了一个日本旅行攻略甚至都没有换行和排版，然后给了几张对应地点的图片和 youtube 找到的旅行Vlog，现在一个旅行计划网页就做好了，是不是比单纯的文字更加直观和条理。
 
 下一个例子是 **求职简历 ****：**
 

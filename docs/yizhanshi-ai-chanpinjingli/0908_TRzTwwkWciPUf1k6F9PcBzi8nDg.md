@@ -8,7 +8,7 @@
 
 ![](img/fb90b30a731d6d140dfa56fef1ae4fdf.png)
 
-[AI自动化.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LUQQbgTMioEOyMx1re0cfbITn5g)
+[AI自动化.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LU🐧bgTMioEOyMx1re0cfbITn5g)
 
 工作流整体实现思路是：
 

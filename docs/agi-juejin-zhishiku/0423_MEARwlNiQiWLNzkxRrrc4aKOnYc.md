@@ -1,6 +1,6 @@
 # 登顶开源AI软件工程师榜首，UIUC无Agent方案轻松解决SWE-bench真实编程问题
 
-> 来源：[https://agijuejin.feishu.cn/docx/COrld32U3oJa7cx3cdLcXQQsnke](https://agijuejin.feishu.cn/docx/COrld32U3oJa7cx3cdLcXQQsnke)
+> 来源：[https://agijuejin.feishu.cn/docx/COrld32U3oJa7cx3cdLcX🐧snke](https://agijuejin.feishu.cn/docx/COrld32U3oJa7cx3cdLcX🐧snke)
 
 > 机器之心｜[阅读原文](https://www.jiqizhixin.com/articles/2024-07-15-12)
 

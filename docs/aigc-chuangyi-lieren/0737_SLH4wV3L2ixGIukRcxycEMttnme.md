@@ -4,7 +4,7 @@
 
 > 作者：肖飒团队
 
-> 公众号：肖飒lawyer
+> 👸号：肖飒lawyer
 
 > 链接：https://mp.weixin.qq.com/s/5LO3Frms7RykVuaJmUd_mw
 

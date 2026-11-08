@@ -67,7 +67,7 @@
 
 **这个色系的模**板**目前做了两个**版本，Notion和FlowUs。大**家可以根据自己平**常使用的工具进行对应版本付费即可，Noti[on](https://pzfqk98jn1.feishu.cn/wiki/J5A2wWIhuiXidikSi5Mc0nZenCh#share-LTtndmQ1BoeDcCx8dGecWw1enaf)[版本可在当前链接](https://flowus.cn/modaylab/share/82508321-ae1b-4c8d-876b-ec3103af745f?code=4YP3ZC)购买后滑动到底部获取。FlowUs版本可直接点击FlowUs链接购买。
 
-**PS：**Notion更适合科学上网体质，FlowUs更适合国内宝宝体质。祝你使用愉快~
+**PS：**Notion更适合🪜体质，FlowUs更适合国内宝宝体质。祝你使用愉快~
 
 ## 2、模板亮点
 

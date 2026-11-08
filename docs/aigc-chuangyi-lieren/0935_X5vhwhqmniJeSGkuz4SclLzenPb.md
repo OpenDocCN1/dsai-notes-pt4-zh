@@ -4,7 +4,7 @@
 
 > 原文链接： https://mp.weixin.qq.com/s/MBewcoOLH_kJgHpCs-ZxAg
 
-> 来源：公众号：卡尔的AI沃茨
+> 来源：👸号：卡尔的AI沃茨
 
 ## AI视频的下一步会是什么？
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/KRnWdev5koeL70xwH7DcRSHJnyd](https://aigcreative.feishu.cn/docx/KRnWdev5koeL70xwH7DcRSHJnyd)
 
-> 公众号：特工宇宙
+> 👸号：特工宇宙
 
 > 链接：https://mp.weixin.qq.com/s/AMD54juGaKDGSalC3N51iw
 

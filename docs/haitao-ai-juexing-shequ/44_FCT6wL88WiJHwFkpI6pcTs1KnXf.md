@@ -6,7 +6,7 @@
 
 hello，朋友们，本周刚开工，春节期间被讨论更多的是一只龙虾~
 
-就是这个项目OpenClaw，它的持续火爆，github star数破20w，微信指数热度也是翻倍。
+就是这个项目OpenClaw，它的持续火爆，github star数破20w，🛰️指数热度也是翻倍。
 
 > https://github.com/openclaw/openclaw
 

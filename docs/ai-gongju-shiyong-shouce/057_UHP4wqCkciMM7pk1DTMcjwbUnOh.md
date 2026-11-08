@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/CuGRdZyVyoF1D0xUQxQcTEWLndd](https://my.feishu.cn/docx/CuGRdZyVyoF1D0xUQxQcTEWLndd)
 
-首先推荐一个AI工具，免梯子直接用G[P](https://ai.qixinba.com/me/;)T和MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
+首先推荐一个AI工具，免🪜直接用G[P](https://ai.qixinba.com/me/;)T和MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
 
 事情是这样的，我写SD教程卡壳了，这不找上了bing大小姐，让他给我支支招；
 

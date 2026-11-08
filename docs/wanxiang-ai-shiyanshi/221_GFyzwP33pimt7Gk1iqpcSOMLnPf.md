@@ -200,10 +200,10 @@ Claude 4 在每次执行完成后，都会对本次任务进行总结，你可�
 
 ![](img/2b9ab7d2da23724a13bb5acee54f9e0e.png)
 
-**公众号：飞哥数智谈**
+**👸号：飞哥数智谈**
 
 ![](img/55b09ab7ceb65afdfd0c315be3aab47c.png)
 
 好友（ID：zhangyuguo94s）
 
-**扫码加微信入微信群   **
+**扫码加🛰️入🛰️群   **

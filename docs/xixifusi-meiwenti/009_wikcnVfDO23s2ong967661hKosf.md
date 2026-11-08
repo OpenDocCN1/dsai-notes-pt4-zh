@@ -366,7 +366,7 @@ Develop a step-by-step project plan for implementing a (specific solution) in ou
 
 PPT：https://gamma.app/docs/AI-x-by--20bo1fh7ppsaom4?mode=doc
 
-+   [微信公众平台](https://k5ms77k0o1.feishu.cn/docx/Rg51dvvl7odF4axYb1VcwvSWnKf?from=from_copylink)
++   [🛰️公众平台](https://k5ms77k0o1.feishu.cn/docx/Rg51dvvl7odF4axYb1VcwvSWnKf?from=from_copylink)
 
 ## 产品起名
 

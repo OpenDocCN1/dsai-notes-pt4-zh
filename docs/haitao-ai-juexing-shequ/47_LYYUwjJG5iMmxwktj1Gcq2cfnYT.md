@@ -1,4 +1,4 @@
-# 即创公众号爆文-说明书
+# 即创👸号爆文-说明书
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb)
 
@@ -20,17 +20,17 @@ https://www.coze.cn/store/project/7569682451056918578?from=project_card
 
 ## 介绍
 
-> 即创是基于智能体Coze平台搭建的一款辅助公众号创作的系统，依据公众号爆文写**作的成熟方法论，保证系**统成文的品质。在提供了个性化的配置要求的同时，支持个人管理多账号的矩阵化运营模式。
+> 即创是基于智能体Coze平台搭建的一款辅助👸号创作的系统，依据👸号爆文写**作的成熟方法论，保证系**统成文的品质。在提供了个性化的配置要求的同时，支持个人管理多账号的矩阵化运营模式。
 
 > 如果你有这方面的需求，点击链接，即刻创作。➡️ https://www.coze.cn/s/iUTaBqEw/
 
 ## 功能特性
 
-+   一键成文：支持参考文章链接、素材、个人观点[即创公众号爆文-使用手册（内测中）](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-VTksdYR2Joooakx4UYOc6Cznnwc)创作形式，满足不同水平人群的创作情景。
++   一键成文：支持参考文章链接、素材、个人观点[即创👸号爆文-使用手册（内测中）](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-VTksdYR2Joooakx4UYOc6Cznnwc)创作形式，满足不同水平人群的创作情景。
 
 +   自动排版：丰富的排版，可定制固定文章开头与末尾排版。（支持markdown、135editor、壹伴）
 
-+   一键发文：一键成文，一键发布至公众号草稿箱。
++   一键发文：一键成文，一键发布至👸号草稿箱。
 
 +   风格设定：可以为每个账号配置写作风格，标题风格，配图风格。满足矩阵化、差异化运营的需求。
 
@@ -38,13 +38,13 @@ https://www.coze.cn/store/project/7569682451056918578?from=project_card
 
 +   联网模式：支持联网写作模式
 
-+   矩阵运营：单Coze用户可以添加设定多个公众号，并且支持独立配置写作风格。
++   矩阵运营：单Coze用户可以添加设定多个👸号，并且支持独立配置写作风格。
 
 +   支持使用影刀RPA，实现多账号矩阵化运营。
 
-+   [即创公众号爆文-使用手册（内测中）](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-AMADdbMXgoLbXmxiFDGcPqvUntg)款梗图：支持生成爆款梗图文章，一键排版发布。
++   [即创👸号爆文-使用手册（内测中）](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-AMADdbMXgoLbXmxiFDGcPqvUntg)款梗图：支持生成爆款梗图文章，一键排版发布。
 
-+   小红书转小绿书：支持一键复刻小红书笔记内容，搬运[即创公众号爆文-使用手册（内测中）](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-Vc7ldpwpYolhQhxKaxmcHk8FnEg)小绿书，支持图片文字OCR，文案改写。
++   📕转小绿书：支持一键复刻📕笔记内容，搬运[即创👸号爆文-使用手册（内测中）](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-Vc7ldpwpYolhQhxKaxmcHk8FnEg)小绿书，支持图片文字OCR，文案改写。
 
 快速扫盲
 
@@ -56,15 +56,15 @@ https://www.coze.cn/store/project/7569682451056918578?from=project_card
 
 [整体功能内容介绍.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RguBbTPVfosre8xHY22cCNFBnGf)
 
-# 一、公众号账号设置（必看）
+# 一、👸号账号设置（必看）
 
-+   **系统使用需对接公众号，需要使用公众号**的开发权限，因此请按照下面步骤进行配置。
++   **系统使用需对接👸号，需要使用👸号**的开发权限，因此请按照下面步骤进行配置。
 
-## 网页登录微信公众号管理平台
+## 网页登录🛰️👸号管理平台
 
 https://mp.weixin.qq.com/
 
-## 设置公众号开发权限
+## 设置👸号开发权限
 
 在菜单栏【设置与开发-开发接口管理】点击开通，成为开发者，如果已经是开通过了，则进行下一步
 
@@ -78,7 +78,7 @@ https://mp.weixin.qq.com/
 
 ![](img/9cc766cc9ee419e22f5f27a35f420b11.png)
 
-## 设置公众号白名单IP地址
+## 设置👸号白名单IP地址
 
 1.  点击查看白名单
 
@@ -98,7 +98,7 @@ a. IP白名单未配置或未生效，因配置不是及时生效，初次设置
 
 b. 插件add_material报错，提示api unauthorized rid xxx.
 
-需检查公众号是否为服务号，服务号使用此接口需要认证和授权，这是公众号平台限制
+需检查👸号是否为服务号，服务号使用此接口需要认证和授权，这是👸号平台限制
 
 ![](img/2f6171ca028113370f65b98a09ffbb35.png)
 
@@ -134,31 +134,31 @@ d.服务号限制问题，导致保存草稿失败
 
 ![](img/e4873afe4179c71ea4157d51a84998f2.png)
 
-## 添加公众号
+## 添加👸号
 
 ![](img/196c8cc28ac08510835e01ebf183095e.png)
 
-+   设置账号，添加你的公众号
++   设置账号，添加你的👸号
 
 ![](img/bf0c410cdf0a7c38b3de5469e32a11ba.png)
 
-+   支持添加多个公众号，体验用户最多添加1个，如需添加多个客联系作者加额度
++   支持添加多个👸号，体验用户最多添加1个，如需添加多个客联系作者加额度
 
 +   点击我的账户，可以查看已经绑定的账号信息和账户总体用量数据
 
 ![](img/82cd439e25b28073d97b4a5447e10bf0.png)
 
-## 设置公众号
+## 设置👸号
 
 ![](img/4ade58f6936f18706c21ba4b10d709ab.png)
 
 [账号风格设定.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QVHWbtLPwog0oJxzTuUccqJonEd)
 
-+   功能说明：用户设置每个公众号的基础信息、写作风格配置、排版配置
++   功能说明：用户设置每个👸号的基础信息、写作风格配置、排版配置
 
-+   **系统默认有通用的提示词和模板配置，用户可通过此功能个性化定制每**个公众号的配置（建议联系作者来设置模板）
++   **系统默认有通用的提示词和模板配置，用户可通过此功能个性化定制每**个👸号的配置（建议联系作者来设置模板）
 
-**点击快捷指令【设置公众号】-->选择设置的账号-->单独填写**需要修改的配置信息-->点击箭头设置完成
+**点击快捷指令【设置👸号】-->选择设置的账号-->单独填写**需要修改的配置信息-->点击箭头设置完成
 
 注意事项：每次设置其中一个参数
 
@@ -170,12 +170,12 @@ d.服务号限制问题，导致保存草稿失败
 
 | 参数名称 | 参数说明 |  |
 | --- | --- | --- |
-| 账号列表 | 已经添加的公众号列表，选择对应账号进行设定 | 展示已经添加的公众号 |
-| appsecret | 公众号appsecret |  |
-| 账号名称 | 公众号名称 |  |
+| 账号列表 | 已经添加的👸号列表，选择对应账号进行设定 | 展示已经添加的👸号 |
+| appsecret | 👸号appsecret |  |
+| 账号名称 | 👸号名称 |  |
 | 作者名称 | 作者名称 |  |
-| 标题风格（可选） | 标题提示词，根据生成的文章内容，生成文章标题。用户可按需自定义提示词风格 | 参考[即创公众号爆文-使用手册（开发中）](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-FPCedMvkqohsgJxPpAGcHKTSn2b) |
-| 正文风格（可选） | 标题提示词，参考链接和素材，生成文章正文。用户可按需自定义提示词风格 | 参考[即创公众号爆文-使用手册（开发中）](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-FPCedMvkqohsgJxPpAGcHKTSn2b) |
+| 标题风格（可选） | 标题提示词，根据生成的文章内容，生成文章标题。用户可按需自定义提示词风格 | 参考[即创👸号爆文-使用手册（开发中）](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-FPCedMvkqohsgJxPpAGcHKTSn2b) |
+| 正文风格（可选） | 标题提示词，参考链接和素材，生成文章正文。用户可按需自定义提示词风格 | 参考[即创👸号爆文-使用手册（开发中）](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-FPCedMvkqohsgJxPpAGcHKTSn2b) |
 | 正文样式（默认chazi） | 正文排版采用markdown转html，支持多款主题风格，具体可参考https://markdown.com.cn/editor/ | ![](img/1c8a76bd7b91bb8eb0d64c7ae76a0cf2.png) |
 | 配图风格（可选） | 配图提示词，目前配图仅支持封面配图、文章首图。默认提取正文内容关键词生成合适的配图。 | 示例： |
 | 开头元素（可选） | 系统默认：（引导关注+首图） | 示例： |
@@ -197,9 +197,9 @@ d.服务号限制问题，导致保存草稿失败
 
 为解决此类需求，系统提供了设置开头和末尾元素的功能，可按照如下步骤进行操作：
 
-1.  选择一篇我们排版好的公众号文章，并获取其文章链接
+1.  选择一篇我们排版好的👸号文章，并获取其文章链接
 
-1.  使用135editor编辑器，导入文章，用于查看公众号文章源码。这里用我的一篇文章为例。
+1.  使用135editor编辑器，导入文章，用于查看👸号文章源码。这里用我的一篇文章为例。
 
 +   135地址：https://www.135editor.com/beautify_editor.html#
 
@@ -207,11 +207,11 @@ d.服务号限制问题，导致保存草稿失败
 
 ![](img/ab2b23dd097d1b0febc2dba38a2c5a3c.png)
 
-1.  通过源码，我们可以看到公众号文章的层级，比如开头和末尾的源码。
+1.  通过源码，我们可以看到👸号文章的层级，比如开头和末尾的源码。
 
-1.  需要注意的是，公众号API保存草稿不支持使用外部素材链接，因此尽量使用自己发布过的文章进行提取。
+1.  需要注意的是，👸号API保存草稿不支持使用外部素材链接，因此尽量使用自己发布过的文章进行提取。
 
-1.  比如我希望将下面两部分作为公众号文章的固定开头和结尾，所以可以点击左上角HTML，查看其对应的源码信息。
+1.  比如我希望将下面两部分作为👸号文章的固定开头和结尾，所以可以点击左上角HTML，查看其对应的源码信息。
 
 | ![](img/f5fe55c4542ff48ac6cbf2a9e231023a.png) | ``` &amp;lt;section class=&amp;quot;undefined _135editor&amp;quot;&amp;gt;&amp;lt;/section&amp;gt; &amp;lt;section class=&amp;quot;_135editor&amp;quot; data-tools=&amp;quot;135编辑器&amp;quot; data-id=&amp;quot;116758&amp;quot;&amp;gt;         &amp;lt;section style=&amp;quot;margin: 20px auto;&amp;quot;&amp;gt;                 &amp;lt;section style=&amp;quot;display: flex;justify-content: flex-start;align-items: center;&amp;quot;&amp;gt;                         &amp;lt;section style=&amp;quot;flex-shrink: 0;padding-right: 10px;box-sizing:border-box;&amp;quot;&amp;gt;                                 &amp;lt;section class=&amp;quot;assistant&amp;quot; style=&amp;quot;width: 25px;box-sizing:border-box;&amp;quot;&amp;gt;                                         &amp;lt;img class=&amp;quot;assistant&amp;quot; style=&amp;quot;width: 100%; display: block;vertical-align:baseline;box-sizing:border-box;max-width:100% !important;&amp;quot; src=&amp;quot;https://bcn.135editor.com/files/images/editor_styles/0d6f9ba640c41e05427c54c43a9de3d1.png&amp;quot; data-width=&amp;quot;100%&amp;quot; draggable=&amp;quot;false&amp;quot; data-ratio=&amp;quot;1.4761904761904763&amp;quot; data-w=&amp;quot;42&amp;quot;/&amp;gt;                                 &amp;lt;/section&amp;gt;                         &amp;lt;/section&amp;gt;                         &amp;lt;section style=&amp;quot;max-width: 100% !important;background-color: #f8f7f7;border-radius: 10px;width: 100%;padding: 5px 0;box-sizing:border-box;&amp;quot; data-width=&amp;quot;100%&amp;quot;&amp;gt;                                 &amp;lt;section style=&amp;quot;font-size: 14px;color: #333;text-align: left;letter-spacing: 1.5px;border-bottom: 1px solid #d03428;padding: 5px 0 5px 20px;box-sizing:border-box;transform: translateX(-5px);-webkit-transform: translateX(-5px);-moz-transform: translateX(-5px);-o-transform: translateX(-5px);&amp;quot;&amp;gt;                                         &amp;lt;span class=&amp;quot;135brush&amp;quot; data-brushtype=&amp;quot;text&amp;quot; &amp;gt;点击上方“蓝字”关注我们吧！&amp;lt;/span&amp;gt;                                 &amp;lt;/section&amp;gt;                         &amp;lt;/section&amp;gt;                 &amp;lt;/section&amp;gt;         &amp;lt;/section&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;mp-common-profile data-pluginname=&amp;quot;mpprofile&amp;quot; data-id=&amp;quot;Mzk0MDc1OTU5Mw==&amp;quot; data-headimg=&amp;quot;https://mmbiz.qlogo.cn/mmbiz_png/Xia9z9iarwRP3NgDibdzFYjQ5DqpvvECvRZg81Tlz2anfjcEibQaETxIuQsicK15dZQ8y5ibhLiaPkQ5fyKgS6nYzD1wg/0?wx_fmt=png&amp;quot; data-nickname=&amp;quot;海涛AI智能体&amp;quot; data-alias=&amp;quot;&amp;quot; data-signature=&amp;quot;搞AI的程序员，努力分享AI领域干货，专注AI智能体、RPA自动化。AI精进每一天，早日脱离牛马生活&amp;quot; data-from=&amp;quot;2&amp;quot; data-is_biz_ban=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/mp-common-profile&amp;gt; ``` |
 | --- | --- |
@@ -221,7 +221,7 @@ d.服务号限制问题，导致保存草稿失败
 
 +   html普通压缩 http://www.jsons.cn/jsforamt/
 
-1.  使用【即创-设置公众号】功能，将压缩之后的源码，分别设置到公众号的"开头元素"和"文末元素"
+1.  使用【即创-设置👸号】功能，将压缩之后的源码，分别设置到👸号的"开头元素"和"文末元素"
 
 设置成功后可以看到结果。
 
@@ -239,7 +239,7 @@ d.服务号限制问题，导致保存草稿失败
 
 工作流背后使用了AI模型，像标题、内容、配图均需要单独的提示词来控制风格、及输出格式的稳定性。因此这个板块会持续更新和积累我们经过测试和优化后的提示词示例，使用过程中按需改写即可。
 
-参考提示词：[18个领域的公众号写作提示词](https://zinxkclpk97.feishu.cn/docx/A7T3dFqJwo9VryxhLdQckRd9nMb?from=from_copylink)
+参考提示词：[18个领域的👸号写作提示词](https://zinxkclpk97.feishu.cn/docx/A7T3dFqJwo9VryxhLdQckRd9nMb?from=from_copylink)
 
 #### 正文提示词
 
@@ -311,7 +311,7 @@ d.服务号限制问题，导致保存草稿失败
 
 [AI创作的核心.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D4Gubpwtko1i6JxUZfQcHdKVnFf)
 
-## 即创爆文（公众号写作）
+## 即创爆文（👸号写作）
 
 一键即创，是本应用的核心功能，为用户提供丝滑的创作体验，1分钟完成文章写作。
 
@@ -329,9 +329,9 @@ d.服务号限制问题，导致保存草稿失败
 
 +   仅素材或链接
 
-+   保存公众号草稿
++   保存👸号草稿
 
-+   支持创作的文章保存为公众号草稿
++   支持创作的文章保存为👸号草稿
 
 ![](img/0451b95073bbb7dfb3808f34cbe745a5.png)
 
@@ -359,29 +359,29 @@ d.服务号限制问题，导致保存草稿失败
 
 最新版支持了一键保存为小绿书风格图文类型草稿。
 
-## 小红书转小绿书（图片消息）
+## 📕转小绿书（图片消息）
 
 ![](img/d902d158adadc40ffa54d1275431f87b.png)
 
-[小红书转效率书.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Awkubzxa1oKfI7xEb9Scbilkn2c)
+[📕转效率书.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Awkubzxa1oKfI7xEb9Scbilkn2c)
 
 ### 操作指引
 
-1、选择你需要复刻的小红书，复制分享链接，例如：
+1、选择你需要复刻的📕，复制分享链接，例如：
 
-> 72 【必看，小绿书借热点玩法全解析，保姆级教程。 - 滔哥创业分享 | 小红书 - 你的生活指南】 😆 lwOQBIgGgWRaNXA 😆 https://www.xiaohongshu.com/discovery/item/6794f3360000000017038a86?source=webshare&xhsshare=pc_web&xsec_token=ABgGoXnNL8-m3ON4uTZFpfWWMY98kYSdiKm_OnNXKPdQw=&xsec_source=pc_share
+> 72 【必看，小绿书借热点玩法全解析，保姆级教程。 - 滔哥创业分享 | 📕 - 你的生活指南】 😆 lwOQBIgGgWRaNXA 😆 https://www.xiaohongshu.com/discovery/item/6794f3360000000017038a86?source=webshare&xhsshare=pc_web&xsec_token=ABgGoXnNL8-m3ON4uTZFpfWWMY98kYSdiKm_OnNXKPdQw=&xsec_source=pc_share
 
 ![](img/6ed832e77afd7468a21c955d49313144.png)
 
-2、点击即创公众号爆文-->小红书转小绿书的操作按钮
+2、点击即创👸号爆文-->📕转小绿书的操作按钮
 
 ![](img/c18dc80e3698df590e3079000a784850.png)
 
-3、选择你的公众号账号，粘贴小红书链接，点击一键复刻。
+3、选择你的👸号账号，粘贴📕链接，点击一键复刻。
 
 ![](img/b9e7cf1a6107702d143aad20d9d4f598.png)
 
-4、稍等片刻，系统会自动提取文章、配图、并且自动保存到你的公众号草稿，返回预览链接。
+4、稍等片刻，系统会自动提取文章、配图、并且自动保存到你的👸号草稿，返回预览链接。
 
 ![](img/6ab571d50a893f93f47be93c9900e997.png)
 
@@ -391,7 +391,7 @@ d.服务号限制问题，导致保存草稿失败
 
 ![](img/0a92502039808ab57d8a52f3a1bd714f.png)
 
-小红书笔记
+📕笔记
 
 ![](img/09d3b6b007f3499b4329fe85886296ec.png)
 
@@ -409,15 +409,15 @@ d.服务号限制问题，导致保存草稿失败
 
 [我的账户.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LVxVbeiw4o1wg9xMMdRckHS6n3g)
 
-+   本应用支持单用户绑定多个公众号，矩阵化管理和使用。
++   本应用支持单用户绑定多个👸号，矩阵化管理和使用。
 
 **功能说明**
 
-+   点击快捷指令【我的账户】，可查看当前用户已绑定公众号信息和账户总体用量情况。
++   点击快捷指令【我的账户】，可查看当前用户已绑定👸号信息和账户总体用量情况。
 
 +   **点击获取身**份码：每个Coze用户对应唯一用户身份码。
 
-+   支持查看公众号明细、配置公众号、删除账号等操作。
++   支持查看👸号明细、配置👸号、删除账号等操作。
 
 +   套餐升级，用户根据使用情况，升级套餐配置。
 
@@ -447,7 +447,7 @@ d.服务号限制问题，导致保存草稿失败
 
 ![](img/3f6d793df19ee494087b58f3f26a366d.png)
 
-获取即创公众号爆文程序
+获取即创👸号爆文程序
 
 > 程序获取：https://api.winrobot360.com/redirect/robot/share?inviteKey=7912c2feb62597a1
 
@@ -465,7 +465,7 @@ d.服务号限制问题，导致保存草稿失败
 
 RPA执行后会弹出“用户认证”窗口，输入用户身份码，点击记住内容，后续就无需填写。
 
-请在Coze即创公众号爆文，点【我的账户】，【点击获取身份码】，复制你的身份码。
+请在Coze即创👸号爆文，点【我的账户】，【点击获取身份码】，复制你的身份码。
 
 ![](img/4de5faaed20b8d8d510fd14c93022ad5.png)
 
@@ -473,9 +473,9 @@ RPA执行后会弹出“用户认证”窗口，输入用户身份码，点击�
 
 ![](img/fdb411cd0b43fa855403daee9cba9d4a.png)
 
-第二步：点击公众号爆文或爆款梗图，开始你的创作。
+第二步：点击👸号爆文或爆款梗图，开始你的创作。
 
-因为账户体系和Coze保持一致，所以公众号的添加、设置需在Coze侧完成。
+因为账户体系和Coze保持一致，所以👸号的添加、设置需在Coze侧完成。
 
 ![](img/7efb9b10703b1b2cc3200189424f5e8c.png)
 
@@ -495,7 +495,7 @@ RPA端功能与Coze端基本保持一致。相比其增加了账号选择支持�
 
 爆款梗图：100~120s/篇
 
-执行完成后，可在你的公众号草稿箱中查看生成的文章记录，可以通过运行日志获取草稿预览链接。
+执行完成后，可在你的👸号草稿箱中查看生成的文章记录，可以通过运行日志获取草稿预览链接。
 
 ![](img/4f046f5b0c422cd2b42f2f3f2ce04b4a.png)
 
@@ -507,23 +507,23 @@ RPA端功能与Coze端基本保持一致。相比其增加了账号选择支持�
 
 [整体功能内容介绍.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T9cAbdjQboekJoxcwhfciTo8npf)
 
-### 添加公众号
+### 添加👸号
 
 ![](img/10188fbd60f7e112d4fc03e8b66c8161.png)
 
 [入门实操演示.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QwUgbxxdyoMga2xsMGLcb0GCntd)
 
-### 设置公众号
+### 设置👸号
 
 ![](img/af8684b3d99cda88839cbeacad19e9f5.png)
 
 [账号风格设定.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZBxGbHK7OobE2PxWdXWcDVG2n4M)
 
-### 设置公众号-排版
+### 设置👸号-排版
 
 ![](img/470ce890cb8a01f3d1ab7a169f53e433.png)
 
-[公众号排版开头和文末样式.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VcKnbJMy2or0UDxL2uUczr94n0e)
+[👸号排版开头和文末样式.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VcKnbJMy2or0UDxL2uUczr94n0e)
 
 ### 参考文章风格提取
 
@@ -561,7 +561,7 @@ RPA端功能与Coze端基本保持一致。相比其增加了账号选择支持�
 
 [收费介绍.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RFqTb8U0XofNWjxofAMc2QCZnjg)
 
-> **单个Coze账号体验版可免费绑定1个公众号，免**费创作使用10次（以生文成功为1次使用）
+> **单个Coze账号体验版可免费绑定1个👸号，免**费创作使用10次（以生文成功为1次使用）
 
 > 套餐按使用次数收费，无时间限制
 
@@ -571,10 +571,10 @@ RPA端功能与Coze端基本保持一致。相比其增加了账号选择支持�
 
 # 五、问题Q&A
 
-[即创公众号爆文-使用手册](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-A6XcdTATBo7gnCxGYtFciPyVnTc)存公众号时提示授权失败，如何处理？
+[即创👸号爆文-使用手册](https://zinxkclpk97.feishu.cn/docx/AS2edZte1oN1oPx7rwTckviLnHb#share-A6XcdTATBo7gnCxGYtFciPyVnTc)存👸号时提示授权失败，如何处理？
 
 # 六、联系作者
 
-添加微信号：houhtai   请备注来意
+添加🛰️号：houhtai   请备注来意
 
 ![](img/a596ef425cb628c834468c53dab746a7.png)

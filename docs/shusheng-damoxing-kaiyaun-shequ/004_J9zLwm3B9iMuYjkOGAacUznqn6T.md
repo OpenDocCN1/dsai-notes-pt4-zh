@@ -16,7 +16,7 @@ Repo：https://github.com/InternLM/Agent-FLAN
 
 加入飞书群获取文档编辑权限
 
-| 翻译内容 | 人员 | 微信昵称 | 预计截止时间 |
+| 翻译内容 | 人员 | 🛰️昵称 | 预计截止时间 |
 | --- | --- | --- | --- |
 | 摘要 |  | A_Tang_abaaba | 已完成 |
 | 1.  介绍 |  | A_Tang_abaaba | 已完成 |

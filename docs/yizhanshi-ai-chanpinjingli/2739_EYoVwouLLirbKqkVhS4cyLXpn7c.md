@@ -82,7 +82,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/--1rz1Ev5OoGLRFK2t7vkQ)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/--1rz1Ev5OoGLRFK2t7vkQ)
 
 +   [Qwen3技术报告原版PDF](https://github.com/QwenLM/Qwen3/blob/main/Qwen3_Technical_Report.pdf)
 

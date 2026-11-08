@@ -2,7 +2,7 @@
 
 > 来源：[https://rxq0zfnkm77.feishu.cn/docx/Jg9odTgrwo0jykx2tuoc6rcmn5c](https://rxq0zfnkm77.feishu.cn/docx/Jg9odTgrwo0jykx2tuoc6rcmn5c)
 
-转载，公众号：PM维他命
+转载，👸号：PM维他命
 
 ##  单品单件、单品多件、多品单件、多品多件
 

@@ -50,9 +50,9 @@
 
 +   **平台:**
 
-+   **微信公众号:** DeepSeek
++   **🛰️👸号:** DeepSeek
 
-+   **小红书:** @DeepSeek（deepseek\_ai）
++   **📕:** @DeepSeek（deepseek\_ai）
 
 +   **X (Twitter):** DeepSeek（@deepseek\_ai）
 
@@ -248,7 +248,7 @@ If a user asks for comparisons or evaluations, provide balanced and objective in
 
 ![](img/1b269669e649cfc6397dcfe770b32c71.png)
 
-暗涌原来在公众号的那篇公众号文章我找不到了，有的朋友欢迎分享。
+暗涌原来在👸号的那篇👸号文章我找不到了，有的朋友欢迎分享。
 
 网上找到一个截图备份：https://news.ifeng.com/c/8gSU8rLEKgn
 
@@ -322,7 +322,7 @@ If a user asks for comparisons or evaluations, provide balanced and objective in
 
 +   [DeepSeek 资料合集](https://langgptai.feishu.cn/wiki/MoVfwLaKriBo59kD1ATcpgQEngb)
 
-关注「云中江树」公众号，私信「DeepSeek合集」获取
+关注「云中江树」👸号，私信「DeepSeek合集」获取
 
 ![](img/8e59855bd435af88b11f0612b0332f86.png)
 
@@ -332,7 +332,7 @@ If a user asks for comparisons or evaluations, provide balanced and objective in
 
 +   [DeepSeek 资料合集](https://langgptai.feishu.cn/wiki/MoVfwLaKriBo59kD1ATcpgQEngb)
 
-关注「云中江树」公众号，私信「DeepSeek合集」获取
+关注「云中江树」👸号，私信「DeepSeek合集」获取
 
 ![](img/9fe743396ffa3e4c765d9d1878b1e421.png)
 
@@ -342,7 +342,7 @@ If a user asks for comparisons or evaluations, provide balanced and objective in
 
 +   [DeepSeek 资料合集](https://langgptai.feishu.cn/wiki/MoVfwLaKriBo59kD1ATcpgQEngb)
 
-关注「云中江树」公众号，私信「DeepSeek合集」获取
+关注「云中江树」👸号，私信「DeepSeek合集」获取
 
 ![](img/0e54256b302d524337dcd085f4edbcf7.png)
 
@@ -350,7 +350,7 @@ If a user asks for comparisons or evaluations, provide balanced and objective in
 
 +   **链接:** [DeepSeek 资料合集](https://langgptai.feishu.cn/wiki/MoVfwLaKriBo59kD1ATcpgQEngb)
 
-关注「云中江树」公众号，私信「DeepSeek合集」获取
+关注「云中江树」👸号，私信「DeepSeek合集」获取
 
 赛博禅心总结：Lex Fridman 五小时播客实录：中美 AI 竞争与国运
 

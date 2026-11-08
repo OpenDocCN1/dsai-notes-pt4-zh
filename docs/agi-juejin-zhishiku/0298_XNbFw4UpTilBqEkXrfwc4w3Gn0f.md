@@ -278,7 +278,7 @@ https://arxiv.org/abs/2407.12679
 
 https://vision-cair.github.io/Goldfish_website/
 
-微信AI团队：大语言模型的补丁级训练
+🛰️AI团队：大语言模型的补丁级训练
 
 随着大语言模型（LLM）在语言理解和生成方面取得显著进展，其训练效率已成为一个关键问题。传统上，LLM 是通过预测序列中的下一个 token 来进行训练的。尽管 token 级训练取得了成功，但由于需要处理大量 token，导致计算成本相当高。
 

@@ -46,4 +46,4 @@
 
 [face_restored_video3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ANQubpqTtosdd9x96XOc63lSnsf)
 
-实际效果：尽管是在跳舞场景，有头发和手部遮挡的环境下，原视频内脸部能清晰看到片段都完成了换脸。如果你对数字人换脸有兴趣的话，欢迎链接我。微信🌍：aiwarts101
+实际效果：尽管是在跳舞场景，有头发和手部遮挡的环境下，原视频内脸部能清晰看到片段都完成了换脸。如果你对数字人换脸有兴趣的话，欢迎链接我。🛰️🌍：aiwarts101

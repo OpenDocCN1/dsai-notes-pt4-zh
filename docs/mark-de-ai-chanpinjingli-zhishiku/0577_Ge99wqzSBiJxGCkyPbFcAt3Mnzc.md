@@ -2,7 +2,7 @@
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/ZDRFdjdzloPh8kxZaxpc5oaJnnh](https://qqs7y1hozd1.feishu.cn/docx/ZDRFdjdzloPh8kxZaxpc5oaJnnh)
 
-**本项目来**自github大佬整理链接直达，需要挂梯子，梯子放在其他资料里了
+**本项目来**自github大佬整理链接直达，需要挂🪜，🪜放在其他资料里了
 
 ## 什么是AI Agent？
 

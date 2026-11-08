@@ -40,7 +40,7 @@ ClawdBot 爆火的背后，不只是”长了手的 Claude”，而是一套完�
 
 +   Google Chat、Matrix、WebChat
 
-+   甚至还有 Zalo（越南版微信）
++   甚至还有 Zalo（越南版🛰️）
 
 每个平台都有自己的 API、认证方式、消息格式。如果为每个平台单独写一套 Agent 逻辑，代码会变成一团乱麻。
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/QT5ldgOlwofhxaxV1ndcRTssnJf](https://yunyinghui.feishu.cn/docx/QT5ldgOlwofhxaxV1ndcRTssnJf)
 
-> **原创公众号：**林万劲的 AI 思考
+> **原创👸号：**林万劲的 AI 思考
 
 > **发文时间：**2026-02-09 19:00:47
 

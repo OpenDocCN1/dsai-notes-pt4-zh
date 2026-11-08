@@ -4,7 +4,7 @@
 
 > 🔗 原文链接： h[ttps://scys.com/ar](https://scys.com/articleDetail/xq_topic/14588544228221852)ticleDetail/xq_t...
 
-各位生财圈友大家好，我是sky陈天，一名AI企业培训讲师、企业AI业务提效顾问。
+各位赚钱圈友大家好，我是sky陈天，一名AI企业培训讲师、企业AI业务提效顾问。
 
 最近用Google的NotebookLM做了一套70多页的AI 营销主题的PPT，做了两场商业分享，效果出乎意料的好。
 
@@ -58,7 +58,7 @@ PPT 制作从"AI填内容+套模板"变成了"AI直接画图成PPT"。
 
 ### 账号获取
 
-NotebookLM是Google的AI 知识管理的产品，需要Google账号才能使用。如果你在国内，需要科学上网才能访问。
+NotebookLM是Google的AI 知识管理的产品，需要Google账号才能使用。如果你在国内，需要🪜才能访问。
 
 ![](img/5bf2a82cffda2b611183715f4fb5925f.png)
 
@@ -290,7 +290,7 @@ AI会重新生成一张几乎一样的图，但文字更清晰，水印也去掉
 
 ### 方法四：Windows智能圈选（Windows用户专属）
 
-这个方法是我在小红书上看到的，博主@brucevanfdm分享的，Windows用户可以试试。
+这个方法是我在📕上看到的，博主@brucevanfdm分享的，Windows用户可以试试。
 
 **操作步骤：**
 
@@ -304,7 +304,7 @@ AI会重新生成一张几乎一样的图，但文字更清晰，水印也去掉
 
 圈选后可以自动把图片内容转化成可编辑的PPT格式
 
-视频来源： 小红书 或 X 平台ID： @brucevanfdm
+视频来源： 📕 或 X 平台ID： @brucevanfdm
 
 这个方法的好处是不需要额外的在线工具，直接在本地就能完成。
 

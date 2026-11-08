@@ -274,7 +274,7 @@ this card entitles you to one glass of free coca cola at the fountain of any dis
 
 作者：吴凯
 
-公众号：我是狗阿木
+👸号：我是狗阿木
 
 题图来自 Unsplash ，基于 CC0 协议
 

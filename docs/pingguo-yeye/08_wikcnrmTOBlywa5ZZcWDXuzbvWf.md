@@ -1,12 +1,12 @@
 # gpt使用途径
 
-> 来源：[https://e0lrm2v2v1u.feishu.cn/docx/SEM4dQQzmo3ycBxjQMic2QR4nPf](https://e0lrm2v2v1u.feishu.cn/docx/SEM4dQQzmo3ycBxjQMic2QR4nPf)
+> 来源：[https://e0lrm2v2v1u.feishu.cn/docx/SEM4d🐧zmo3ycBxjQMic2QR4nPf](https://e0lrm2v2v1u.feishu.cn/docx/SEM4d🐧zmo3ycBxjQMic2QR4nPf)
 
 ### ** 1、**[**OpenAI 官网**](https://ai.com/)
 
 (推荐) 注册后免费使用，无次数限制，官方出品，性能最强，技术最佳。缺点是国内注册困难：
 
-+   需要科学上网，使用的代理 IP 质量不好的话无法成功
++   需要🪜，使用的代理 IP 质量不好的话无法成功
 
 +   需要国外手机号验证，google voice 等虚拟[号码无法](https://sms-activate.org/)通过验证，可使用淘宝解决 or 海外号码
 
@@ -18,13 +18,13 @@
 
 +   [Depay卡：](https://github.com/gclhaha/chatGPT-plus-guide) 技术路线是 RMB -> USDT —> Depay 虚拟卡 -> 充值，优点是匿名性好，缺点是操作复杂
 
-+   [nobepay 开卡：](https://zhuanlan.zhihu.com/p/619289623), 【[nobepay 官网](https://www.nobepay.com/)】，【[防止失效备份教程](https://github.com/yzfly/awesome-chatgpt-zh/blob/main/imgs/nobepay_chatgpt.png)】 技术路线是: RMB -> nobepay 虚拟卡 -> 充值，优点是操作简单，缺点是需要绑定微信手机号等个人信息
++   [nobepay 开卡：](https://zhuanlan.zhihu.com/p/619289623), 【[nobepay 官网](https://www.nobepay.com/)】，【[防止失效备份教程](https://github.com/yzfly/awesome-chatgpt-zh/blob/main/imgs/nobepay_chatgpt.png)】 技术路线是: RMB -> nobepay 虚拟卡 -> 充值，优点是操作简单，缺点是需要绑定🛰️手机号等个人信息
 
 +   最新：Onekey Card 开卡： 技术路线是 RMB -> USDT —> Onekey 虚拟卡 -> 充值
 
 ### ** 2、**[**poe**](https://poe.com/chatgpt)
 
-(推荐) 注册后免费使用，可免费试用当前最先进的 GPT-4，提供多种模型选择。能科学上网即可注册，有 iPhone 客户端可以使用。
+(推荐) 注册后免费使用，可免费试用当前最先进的 GPT-4，提供多种模型选择。能🪜即可注册，有 iPhone 客户端可以使用。
 
 ![](img/5f0ce28c76e7591671da399816f74ae7.png)
 
@@ -34,7 +34,7 @@
 
 (推荐) 注册后免费使用，有次数限制(经常调整)[，需要使用微软的 Edg](http://www.bing.com/)e 浏览器访问 www.bing.com, 国内会重定向到 cn.bing.com 导致无法使用。国内使用有两种方法：
 
-+   科学上网访问 [www.bing.com](http://www.bing.com/)
++   🪜访问 [www.bing.com](http://www.bing.com/)
 
 +   [国内使用教程](https://juejin.cn/post/7199557716998078522)
 

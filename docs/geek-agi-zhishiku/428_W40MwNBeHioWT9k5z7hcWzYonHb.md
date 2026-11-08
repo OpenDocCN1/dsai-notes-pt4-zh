@@ -6,7 +6,7 @@
 
 > 📃 作者介绍：专注分享高性能服务器后台开发知识，包括C/C++、Linux、网络协议、设计模式、中间件、云原生、数据库、分布式架构等领域知识。
 
-> 🛖 公众号：Lion莱恩呀
+> 🛖 👸号：Lion莱恩呀
 
 > ⏰ 收录时间：2024-05-27 11:15:56 (UTC+8)
 
@@ -439,7 +439,7 @@ Secret与ConfigMap类似，但是Secret是专门用来存储机密数据的。
 
 1.  Pod是Kubernetes非常重要的概念，就像容器对于docker的重要性；Pod和容器的区别：一个Pod可以包含多个容器，一个Pod一定有一个根容器，网络和数据卷都是挂在在根容器下。
 
-1.  Label类似微信朋友里的标签，用于资源管理的，在kubernetes中做资源管理。比如service里的Label可作为负载均衡的一个依据。
+1.  Label类似🛰️朋友里的标签，用于资源管理的，在kubernetes中做资源管理。比如service里的Label可作为负载均衡的一个依据。
 
 1.  RC（replication controller）已不推荐使用，可以使用deployment进行部署，比RC更具优势。
 
@@ -447,7 +447,7 @@ Secret与ConfigMap类似，但是Secret是专门用来存储机密数据的。
 
 1.  deployment用于部署无状态应用；有状态应用使用StatefulSet部署。
 
-欢迎关注我的公众号
+欢迎关注我的👸号
 
 每日推送文章
 

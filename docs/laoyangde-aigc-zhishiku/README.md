@@ -248,7 +248,7 @@
 
 > [NineS AI-“追妻火葬场”内部喂饭教程Plus](https://rq547mr4oez.feishu.cn/wiki/DUy7w1c3ViPkG0kJ1k7cvqQVnjb?from=from_copylink)（上新~new）
 
-> [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/QQEhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)
+> [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)
 
 > [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
 
@@ -302,7 +302,7 @@
 
 1.  [NineS AI实操-“仿写”的三个阶段（By 老杨）](https://rq547mr4oez.feishu.cn/wiki/F9gHwbDbni1386kI3ivcC0PSnRb?from=from_copylink)             PS：核心方法，洗稿-->换元法仿写-->融梗
 
-1.  [Nines写作实操-【短篇】换元法仿写的野路子（BY大能苗）](https://rq547mr4oez.feishu.cn/wiki/HaJWwcO0ziZH6UkQQUQc5y1Kncc?from=from_copylink)              PS：社群小伙伴，大能苗分享
+1.  [Nines写作实操-【短篇】换元法仿写的野路子（BY大能苗）](https://rq547mr4oez.feishu.cn/wiki/HaJWwcO0ziZH6Uk🐧UQc5y1Kncc?from=from_copylink)              PS：社群小伙伴，大能苗分享
 
 1.  [NineS AI实操-DeepSeek➕「换元法」让你灵感似尿崩](https://rq547mr4oez.feishu.cn/wiki/J0pNwmZiliR1SKkhmcQcYRCvnOD?from=from_copylink)           （新人入门最快的方法）
 

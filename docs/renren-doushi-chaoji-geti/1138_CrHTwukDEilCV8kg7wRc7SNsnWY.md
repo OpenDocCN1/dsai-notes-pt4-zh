@@ -38,7 +38,7 @@
 
 ![](img/3bbcefe8019b02aef18bdbda7f89946e.png)
 
-**关注公众号，加群一起学投资**
+**关注👸号，加群一起学投资**
 
 ![](img/bddacd56ca774c720cde2ab1854cc3de.png)
 

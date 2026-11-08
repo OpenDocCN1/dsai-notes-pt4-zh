@@ -66,13 +66,13 @@ python app.py
 
 ![](img/af69ce2de9215531bf29ec17c6372831.png)
 
-[微信公众平台 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FrJJbd3rDo1kbQx5ORicy41ln4b)
+[🛰️公众平台 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FrJJbd3rDo1kbQx5ORicy41ln4b)
 
 制作动图
 
 ![](img/ae86eb8c40e92c5eece6994a321746c2.png)
 
-[微信公众平台 (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QGIuby2QKoEQrMxMx76ctOWanae)
+[🛰️公众平台 (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QGIuby2QKoEQrMxMx76ctOWanae)
 
 SVG作画
 

@@ -24,7 +24,7 @@ https://pagespeed.web.dev/
 
 这意味着，无论是Google还是用户，都不会认为这是一个产品体验过关的网站。
 
-既然如此，那我单独写一篇公众号文章吧。
+既然如此，那我单独写一篇👸号文章吧。
 
 一、为什么我们需要提升网页PageSpeed性能
 
@@ -108,7 +108,7 @@ No！
 
 所有的RPA可以去死了！Claude Code可以只靠口喷完成一切！
 
-[C](https://mp.weixin.qq.com/s?__biz=MzI1MTUxNzgxMA==&mid=2247498894&idx=1&sn=65bdd89973e4750f9edb33e529813be5&scene=21#wechat_redirect)laude for Chrome 一手体验！自动回复微信、发Twitter、做调研……做AI浏览器的创业者该慌了，比赛已经结束
+[C](https://mp.weixin.qq.com/s?__biz=MzI1MTUxNzgxMA==&mid=2247498894&idx=1&sn=65bdd89973e4750f9edb33e529813be5&scene=21#wechat_redirect)laude for Chrome 一手体验！自动回复🛰️、发Twitter、做调研……做AI浏览器的创业者该慌了，比赛已经结束
 
 在优化PageSpeed这件事情上，我只推荐一个： Devtools MCP
 

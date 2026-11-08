@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/FZupdFVUbos0lwxH6pLcBrVDndE](https://aigcreative.feishu.cn/docx/FZupdFVUbos0lwxH6pLcBrVDndE)
 
-> 作者：nimbus          公众号：PromptExpert
+> 作者：nimbus          👸号：PromptExpert
 
 > 原文：https://mp.weixin.qq.com/s/XZ4XhpEKwcDRBBfINHjUYg
 

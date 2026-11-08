@@ -1,4 +1,4 @@
-# Claude for Chrome 一手体验！自动回复微信、发Twitter、做调研……做AI浏览器的创业者该慌了，比赛已经结束
+# Claude for Chrome 一手体验！自动回复🛰️、发Twitter、做调研……做AI浏览器的创业者该慌了，比赛已经结束
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/Dht2d0JBooGu0WxqhkCcrQWXnyg](https://xatc0v8uz5m.feishu.cn/docx/Dht2d0JBooGu0WxqhkCcrQWXnyg)
 
@@ -24,9 +24,9 @@ Claude for Chrome和其他的AI浏览器不同，它是一个Chrome浏览器插�
 
 下面所有视频未剪辑，一镜到底。一起来看看吧
 
-自动回复微信
+自动回复🛰️
 
-任务：帮我在微信上拒绝别人的约饭邀请
+任务：帮我在🛰️上拒绝别人的约饭邀请
 
 总评：爽啊！ 全程无人值守。 理论上，只需要挂上一个客服知识库，做私域生意的朋友们就可以高枕无忧了。
 

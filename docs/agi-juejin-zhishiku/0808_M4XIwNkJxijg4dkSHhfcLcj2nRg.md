@@ -6,7 +6,7 @@
 
 > 克雷西 发自 凹非寺
 
-> 量子位 | 公众号 QbitAI
+> 量子位 | 👸号 QbitAI
 
 苹果前脚刚用Apple Intelligence“重新定义”了AI，后脚就被马斯克杠上了。
 

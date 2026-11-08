@@ -60,7 +60,7 @@ AI容易胡说的通病，这个工具也有。
 
 ![](img/2ecf0340b6d0d3848fdf28c59ef4bfda.png)
 
-**工具太多了大家自行**体验吧，然后我再说说刚体验完感觉还不错的小红书种草文案🎁
+**工具太多了大家自行**体验吧，然后我再说说刚体验完感觉还不错的📕种草文案🎁
 
 文案搞定之后，咱们再用AI绘图和AI海报生成🤞就能直接用了。
 
@@ -70,7 +70,7 @@ AI海报：[让普通人成为设计师的 海报PPT制作神器！](https://yw5
 
 ---
 
-### 使用教程（小红书文章）
+### 使用教程（📕文章）
 
 #### 1、准备文案素材
 
@@ -108,7 +108,7 @@ prompt“简单介绍下雅诗兰黛品牌的小棕瓶精华，用关键词语�
 
 ![](img/f49e0077816796c315bda97159872c92.png)
 
-小红书内容
+📕内容
 
 ![](img/fce4939e9a6b87067612c439318cf015.png)
 
@@ -132,7 +132,7 @@ prompt“简单介绍下雅诗兰黛品牌的小棕瓶精华，用关键词语�
 
 最终内容咱们自己再调整下，适当加一些emoji表情润一润就OK了🤞
 
-[NO.06👉小红书文章自动写！](https://yw55ojhusnq.feishu.cn/wiki/NKZkwvgWsihymakOID0cYpmwnUe?from=from_copylink)体来说，出的内容比之前的纯prompt生成稳定多了：
+[NO.06👉📕文章自动写！](https://yw55ojhusnq.feishu.cn/wiki/NKZkwvgWsihymakOID0cYpmwnUe?from=from_copylink)体来说，出的内容比之前的纯prompt生成稳定多了：
 
 当然也可以用自动写工具，写好后丢给秘塔猫工具，分段润色😻
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/J4kddTo8po8oFPxGacWcU0OenDg](https://yunyinghui.feishu.cn/docx/J4kddTo8po8oFPxGacWcU0OenDg)
 
-> **来源公众号： ** 字节跳动技术团队
+> **来源👸号： ** 字节跳动技术团队
 
 > **推荐理由：**这篇文章总结了该AI Coding工具在2025年的发展历程和关键成就。
 

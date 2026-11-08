@@ -12,7 +12,7 @@
 
 👋 你好呀！我是 Leon，一个生在北方、现居江南且热爱生活的互联网产品经理，曾在一家智能硬件的创业公司做了两年的智能硬件，主要负责移动端的相关业务。
 
-关注 AI[**、前沿科技和数码产品，同时**](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU1ODc2MDA3OQ==&scene=124#wechat_redirect)也是一名摄影爱好者，公众号名称是「Stay Thinking」，也欢迎你不忙的时候来看看～
+关注 AI[**、前沿科技和数码产品，同时**](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU1ODc2MDA3OQ==&scene=124#wechat_redirect)也是一名摄影爱好者，👸号名称是「Stay Thinking」，也欢迎你不忙的时候来看看～
 
 ### 🏷️ 关于工作
 

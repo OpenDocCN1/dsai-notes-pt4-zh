@@ -133,7 +133,7 @@
 +   [GLM-4在线大模型生态介绍](135_HkZjwK3Pxi6tSMk5pf8caAZcnqg.md)
 +   [GLM-4模型介绍与本地调用方法](136_ASEywhIVdiEtPwkxAvmcJNOCn6f.md)
 +   [GLM-4 API-KEY获取与本地运行方法](139_Fb8QwlTd9iTl8wkqv9zcy5Ajnk6.md)
-+   [GLM-4开源模型零门槛部署与调用指南](141_K0BGwpoXfiCpDokz3QQc9ECRnnf.md)
++   [GLM-4开源模型零门槛部署与调用指南](141_K0BGwpoXfiCpDokz3🐧c9ECRnnf.md)
 +   [各类大模型模型编程问题测试【提示词模板】](143_GItnwENbTi3IOdk8QPucG6jNnhb.md)
 +   [国内零门槛接入 Grok4 & Gemini 2.5 & Claude 4指南](144_Tuoww3IRtixeNukZBDecDRfRnmb.md)
 +   [1.3 RAG全栈技术](145_GScpwiETcizzZMkwWuec2HObnbe.md)

@@ -18,7 +18,7 @@ Dify现在的用户量其实很多，只不过它没Coze那么多创作者，所
 
 ![](img/d911bc54161c535e7e55a85e1175f888.png)
 
-当然，你也可以配合老金我之前的[Dify-On-Wechat相关说明](https://tffyvtlai4.feishu.cn/wiki/SiGgwujIRiEkvwk6sBecFhoEnce)教程，把它加入到微信机器人中。
+当然，你也可以配合老金我之前的[Dify-On-Wechat相关说明](https://tffyvtlai4.feishu.cn/wiki/SiGgwujIRiEkvwk6sBecFhoEnce)教程，把它加入到🛰️机器人中。
 
 ## 工具类
 

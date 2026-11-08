@@ -167,7 +167,7 @@ print(response.choices[0].message.content)
 
 以上代码 文档在这里（ Colab ）
 
-https://colab.research.google.com/drive/1285hWi0mspXAcdgROe8eI5WjQQWlKS5v#scrollTo=QHp-zvtG55g1
+https://colab.research.google.com/drive/1285hWi0mspXAcdgROe8eI5Wj🐧WlKS5v#scrollTo=QHp-zvtG55g1
 
 参考链接：
 

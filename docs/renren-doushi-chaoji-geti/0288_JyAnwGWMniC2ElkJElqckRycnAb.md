@@ -46,7 +46,7 @@
 
 ![](img/4cc396a10a79c9d3354bd38b3c78059c.png)
 
-[微信视频_20250818110342_3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J9oqbS6fLov45wxpcl0cGh2onig)
+[🛰️视频_20250818110342_3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J9oqbS6fLov45wxpcl0cGh2onig)
 
 # 二、为什么会存在？
 
@@ -362,6 +362,6 @@
 
 以上就是我整理，快手ai带货的全部实操流程。觉得有用的话，麻烦给我一个小小的鼓励，非常感谢！！
 
-越分享，越幸运，少看多做，把手弄脏，一定会有收获。所有圈友一起生财！！！
+越分享，越幸运，少看多做，把手弄脏，一定会有收获。所有圈友一起赚钱！！！
 
 其实我个人还是更倾向于做原创相关的内容，但是这就比较熬人，但是做难而正确的事情，一定是对的，我已经在动了，等我做出一定成绩的时候，再来给各位圈友分享。加油！！我们一定会越来越好。

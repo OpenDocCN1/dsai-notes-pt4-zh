@@ -1,6 +1,6 @@
 # Part 2.高效微调提升模型Agent性能基本原理
 
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/DYH5d4G1HoLnCKxhveBcuQQwnNd](https://kq4b3vgg5b.feishu.cn/docx/DYH5d4G1HoLnCKxhveBcuQQwnNd)
+> 来源：[https://kq4b3vgg5b.feishu.cn/docx/DYH5d4G1HoLnCKxhveBcu🐧wnNd](https://kq4b3vgg5b.feishu.cn/docx/DYH5d4G1HoLnCKxhveBcu🐧wnNd)
 
 # GPT-OSS高效微调实战
 

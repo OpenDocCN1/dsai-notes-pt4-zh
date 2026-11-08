@@ -1,6 +1,6 @@
 # GraphRAG+Ollama运行本地大模型
 
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/BYSddliEso5adnxqmlWchQQxnEf](https://kq4b3vgg5b.feishu.cn/docx/BYSddliEso5adnxqmlWchQQxnEf)
+> 来源：[https://kq4b3vgg5b.feishu.cn/docx/BYSddliEso5adnxqmlWch🐧xnEf](https://kq4b3vgg5b.feishu.cn/docx/BYSddliEso5adnxqmlWch🐧xnEf)
 
 ## 《大模型与Agent开发实战》（12月班）体验课
 

@@ -4,7 +4,7 @@
 
 > 链接: https://mp.weixin.qq.com/s/z6WMNiIInLRY3tRsNrZdyw
 
-> 作者：汗青 AI Talk 公众号：汗青 AITalk
+> 作者：汗青 AI Talk 👸号：汗青 AITalk
 
 ![](img/3d39c48a0bc1e7dd3ab4e00d1a0faa72.png)
 

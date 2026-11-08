@@ -40,7 +40,7 @@
 
 1.  填写入群资料表。
 
-1.  **添加曾老师微信：**[填写入群资料表后怎么办？](https://huchegames.feishu.cn/wiki/EhAxwnXVOimURCkAzpBcjlvpnFd)料提交后，击右边链接加曾老微信拉您入群：
+1.  **添加曾老师🛰️：**[填写入群资料表后怎么办？](https://huchegames.feishu.cn/wiki/EhAxwnXVOimURCkAzpBcjlvpnFd)料提交后，击右边链接加曾老🛰️拉您入群：
 
 1.  **入群后自助发红包和介绍。**
 

@@ -12,7 +12,7 @@
 
 ![](img/e4ddee8fe961d5f4b01056f8d1091a4a.png)
 
-关注作者公众号，获取更多AI知识
+关注作者👸号，获取更多AI知识
 
 本篇从模型结构、细节设计、注意力机制类型、位置编码、LayerNorm与激活函数优化角度，介绍目前较常用的框架LLama2和chatGLM原理，及其相对于transformer的优化。
 

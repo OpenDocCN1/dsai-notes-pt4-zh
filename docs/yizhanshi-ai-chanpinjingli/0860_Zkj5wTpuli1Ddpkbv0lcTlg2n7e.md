@@ -16,7 +16,7 @@ coze的发布有比较多方式，但可分为三类，一是官方渠道发布�
 
 ### 官方渠道发布
 
-抖音、微信小程序、飞书、微信客服、服务号、订阅号、企业号等等，其实都可以归为官方渠道发布。
+抖音、🛰️小程序、飞书、🛰️客服、服务号、订阅号、企业号等等，其实都可以归为官方渠道发布。
 
 #### **智能体发布**
 
@@ -30,13 +30,13 @@ coze的发布有比较多方式，但可分为三类，一是官方渠道发布�
 
 [发布到抖音企业号](https://www.coze.cn/open/docs/guides/douyin_business_account)
 
-[发布到微信小程序](https://www.coze.cn/open/docs/guides/publish_to_wechat_app)
+[发布到🛰️小程序](https://www.coze.cn/open/docs/guides/publish_to_wechat_app)
 
-[发布到微信客服](https://www.coze.cn/open/docs/guides/wecom)
+[发布到🛰️客服](https://www.coze.cn/open/docs/guides/wecom)
 
-[发布到微信服务号](https://www.coze.cn/open/docs/guides/wechat_service_account)
+[发布到🛰️服务号](https://www.coze.cn/open/docs/guides/wechat_service_account)
 
-[发布到微信订阅号](https://www.coze.cn/open/docs/guides/wechat_subscription)
+[发布到🛰️订阅号](https://www.coze.cn/open/docs/guides/wechat_subscription)
 
 [发布到掘金](https://www.coze.cn/open/docs/guides/juejin)
 
@@ -46,15 +46,15 @@ coze的发布有比较多方式，但可分为三类，一是官方渠道发布�
 
 [发布应用到抖音小程序](https://www.coze.cn/open/docs/guides/publish_app_to_douyin_microapp)
 
-[发布应用到微信小程序](https://www.coze.cn/open/docs/guides/publish_app_to_wechat_mini_program)
+[发布应用到🛰️小程序](https://www.coze.cn/open/docs/guides/publish_app_to_wechat_mini_program)
 
 [发布应用到飞书](https://www.coze.cn/open/docs/guides/publish_app_to_lark)
 
-[发布应用到微信客服](https://www.coze.cn/open/docs/guides/publish_app_to_wechat_customerService)
+[发布应用到🛰️客服](https://www.coze.cn/open/docs/guides/publish_app_to_wechat_customerService)
 
-[发布应用到微信服务号](https://www.coze.cn/open/docs/guides/publish_app_to_wechat_serviceAccount)
+[发布应用到🛰️服务号](https://www.coze.cn/open/docs/guides/publish_app_to_wechat_serviceAccount)
 
-[发布应用到微信订阅号](https://www.coze.cn/open/docs/guides/publish_app_to_wechat_subscriptionAccount)
+[发布应用到🛰️订阅号](https://www.coze.cn/open/docs/guides/publish_app_to_wechat_subscriptionAccount)
 
 [发布应用到抖音企业号](https://www.coze.cn/open/docs/guides/publish_app_to_douyin_businessAccount)
 
@@ -82,7 +82,7 @@ coze的发布有比较多方式，但可分为三类，一是官方渠道发布�
 
 ### 详解
 
-#### 发布到微信小程序
+#### 发布到🛰️小程序
 
 > 参考文章：https://mp.weixin.qq.com/s/2yKPNXqDOxbTFdK9FcvcbA
 
@@ -110,13 +110,13 @@ coze的发布有比较多方式，但可分为三类，一是官方渠道发布�
 
 分享形式支持4种
 
-+   发送给朋友：以小程序卡片形式分享到好友聊天/微信群中
++   发送给朋友：以小程序卡片形式分享到好友聊天/🛰️群中
 
 +   复制链接：以链接形式分享，当用户点击链接可以跳转到智能体详情页
 
-+   公众号传播：复制路径支持嵌入到公众号文章以及公众号菜单中
++   👸号传播：复制路径支持嵌入到👸号文章以及👸号菜单中
 
-+   复制VID：适用在微信生态外分享，在首页输入VID即可跳转智能体详情
++   复制VID：适用在🛰️生态外分享，在首页输入VID即可跳转智能体详情
 
 当你分享后，可以在「我的」菜单页的「数据统计」中看到具体数据。
 
@@ -124,6 +124,6 @@ coze的发布有比较多方式，但可分为三类，一是官方渠道发布�
 
 ##### OAuth 应用
 
-#### 发布到微信和微信群
+#### 发布到🛰️和🛰️群
 
-[【智能体】让Coze智能体机器人连上微信和微信群详细配置文档](https://waytoagi.feishu.cn/wiki/ExHMwCDZ7i6NA7knCWucFvFvnvJ)
+[【智能体】让Coze智能体机器人连上🛰️和🛰️群详细配置文档](https://waytoagi.feishu.cn/wiki/ExHMwCDZ7i6NA7knCWucFvFvnvJ)

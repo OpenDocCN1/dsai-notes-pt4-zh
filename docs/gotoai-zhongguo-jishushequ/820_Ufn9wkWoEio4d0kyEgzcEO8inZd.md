@@ -1,6 +1,6 @@
 # 一本院校 + 计算机科学与技术专业学生12个月成长计划
 
-> 来源：[https://gotoaiworld.feishu.cn/docx/TeucdHGQQo9kgNxcqLbczd0Qnre](https://gotoaiworld.feishu.cn/docx/TeucdHGQQo9kgNxcqLbczd0Qnre)
+> 来源：[https://gotoaiworld.feishu.cn/docx/TeucdHG🐧o9kgNxcqLbczd0Qnre](https://gotoaiworld.feishu.cn/docx/TeucdHG🐧o9kgNxcqLbczd0Qnre)
 
 ### 一、规划总览
 

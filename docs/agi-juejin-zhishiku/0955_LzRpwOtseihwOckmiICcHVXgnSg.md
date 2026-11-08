@@ -186,6 +186,6 @@ class RAG(object):
 
 RAG类[的实现的关](https://www.zhihu.com/search?q=%E6%A8%A1%E5%9E%8B%E8%B7%AF%E5%BE%84&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A695643553%7D)键点介绍 - qa_prompt=PromptTemplate.from_template(""): 使用langchain提供的prompt模板管理工具，配置上下文信息: {context} 和问题: {question} - self.model_n[ame =](https://www.zhihu.com/search?q=%E7%9F%A5%E8%AF%86%E9%97%AE%E7%AD%94&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A695643553%7D) os.environ.get("MODEL_NAME")：模型名或 模型路径 获取，这里计划将所有的与模型相关的配置均从环境变量获取的方式配置，后面会介绍如何统一管理环境变量的配置。 - model_init-Text2embedStore： 模型初始化，包括了embedding模型的初始化（如果是调用第三方的embedding接口则可以不初始化），这个定义了核心的类Text2embedStore，用于管理本地知识文档上传的解析、分割、向量化和持久化操作。 - model_init-大模型配置：这里根据环境变量读取的模型名称，初始化baidullm或chatglm3类，本项目是使用langchain来做 知识问答 的，所以这里定义的类要么直接使用langchain提供的，要么继承langchain的基类，并实现其几个核心的方法，后续介绍模型类的实现时会介绍。 - model_init-RetrievalQA：这里同样使用langchain的chains的检索类实现模型类，检索器和模板的封装，该类中实现了先调用检索，然后将检索结果和用户问题按prompt模板组装，最后调用大模型的整个流程。具体chains模块的介绍，可以看我的系列文章 langchain源码剖析系统文章 或系列视频 langchain源码剖析系统视频 - as_retrival_qa(): 将RetrievalQA()实例返回，方便在UI中调用。
 
-更多相关内容，感兴趣的朋友可以同步关注B站(视频)：acedar-C大，知乎&公众号：aC大，也可加v进群交流：aa836304831
+更多相关内容，感兴趣的朋友可以同步关注B站(视频)：acedar-C大，知乎&👸号：aC大，也可加v进群交流：aa836304831
 
 发布于 2024-05-01 22:57 ・IP 属地广东

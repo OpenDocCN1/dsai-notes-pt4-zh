@@ -72,7 +72,7 @@ async def main(args: Args) -&gt; Output:
     return ret
 ```
 
-接下来画板节点，用于制作视频的封面图，我们以小红书的图片比例制作。
+接下来画板节点，用于制作视频的封面图，我们以📕的图片比例制作。
 
 ![](img/155d5206e867187c312ae3f47dfa6d53.png)
 
@@ -239,7 +239,7 @@ async def main(args: Args) -&gt; Output:
 
 [coze-1739553279407.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SfzibWfPjorwIzxURHrc3uUTnUe)
 
-**你如果对这套视频制作的方案感兴趣、有意向学习了解，也可关注**公众号“海涛AI智能体”。👏欢迎交流。
+**你如果对这套视频制作的方案感兴趣、有意向学习了解，也可关注**👸号“海涛AI智能体”。👏欢迎交流。
 
 附：
 
@@ -247,4 +247,4 @@ async def main(args: Args) -&gt; Output:
 
 [剪映小助手下载](https://krxc4izye0.feishu.cn/wiki/SPgzwSCYyicTu8kw86hcgwaNnpg)册完成后下载剪映小助手客户端：
 
-> 作者公众号：海涛AI智能体
+> 作者👸号：海涛AI智能体

@@ -121,7 +121,7 @@ BISHENG团队：开放诚恳、长期主义、关注业务价值不炫技，为�
 | [FAQ](https://dataelem.feishu.cn/wiki/XdGCwkDJviC0Z8klbdbcF790n9b) | 关于BISHENG的常见问题。 |
 | [大模型基础知识入门](https://dataelem.feishu.cn/wiki/HMcKwjfA3iJEEXk5c3ucViqunif) |  |
 | [BISHENG产品文档离线版](https://dataelem.feishu.cn/wiki/USLnw2I16iNnv0kCkmDcD9KgnCb) | 由于许多企业内部无法访问外网，故提供离线版本，约一个月更新一次 |
-| [毕昇BISHENG品牌视觉素材](https://dataelem.feishu.cn/wiki/VHBnwbeqMiFQQ6kWfCqclOCLnyb) | LOGO、Slogan图像文件 |
+| [毕昇BISHENG品牌视觉素材](https://dataelem.feishu.cn/wiki/VHBnwbeqMiF🐧6kWfCqclOCLnyb) | LOGO、Slogan图像文件 |
 
 ---
 
@@ -371,7 +371,7 @@ BISHENG团队：开放诚恳、长期主义、关注业务价值不炫技，为�
 
 1.  优化 arxiv、bing 内置工具的检索逻辑。
 
-1.  新增以下内置工具：Firecrawl、发送邮件、Jina AI 单网页爬取、飞书消息、企业微信消息、钉钉消息、硅基流动Stable Diffusion/Flux 生图工具。
+1.  新增以下内置工具：Firecrawl、发送邮件、Jina AI 单网页爬取、飞书消息、企业🛰️消息、钉钉消息、硅基流动Stable Diffusion/Flux 生图工具。
 
 1.  自定义工具支持 custom 自定义鉴权。
 
@@ -465,9 +465,9 @@ BISHENG团队：开放诚恳、长期主义、关注业务价值不炫技，为�
 
 +   bug修复：配置文件中注释内容太长导致启动报错的问题
 
-# 微信群/飞书群
+# 🛰️群/飞书群
 
-扫码加入微信群/飞书话题群
+扫码加入🛰️群/飞书话题群
 
 ![](img/72dec2772042277883e92b7cf1bd699d.png)
 

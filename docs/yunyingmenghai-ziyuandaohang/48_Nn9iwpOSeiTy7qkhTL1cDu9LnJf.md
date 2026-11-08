@@ -8,17 +8,17 @@
 
 链接：https://pan.quark.cn/s/f57352cf5745
 
-基于大模型搭建的聊天机器人，同时支持 微信公众号、企业微信应用、飞书、钉钉 等接入，可选择GPT3.5/GPT-4o/GPT-o1/ Claude/文心一言/讯飞星火/通义千问/ Gemini/GLM-4/Claude/Kimi/LinkAI，能处理文本、语音和图片，访问操作系统和互联网，支持基于自有知识库进行定制企业智能客服。
+基于大模型搭建的聊天机器人，同时支持 🛰️👸号、企业🛰️应用、飞书、钉钉 等接入，可选择GPT3.5/GPT-4o/GPT-o1/ Claude/文心一言/讯飞星火/通义千问/ Gemini/GLM-4/Claude/Kimi/LinkAI，能处理文本、语音和图片，访问操作系统和互联网，支持基于自有知识库进行定制企业智能客服。
 
-使用需谨慎，容易封号，我个人实现了一个微信GPT聊天机器人
+使用需谨慎，容易封号，我个人实现了一个🛰️GPT聊天机器人
 
-[基于ChatG](https://github.com/openai/openai-python)PT的微信聊天机器人，通过[ ChatG](https://github.com/littlecodersh/ItChat)PT 接口生成对话内容，使用 itchat 实现微信消息的接收和自动回复。已实现的特性如下：
+[基于ChatG](https://github.com/openai/openai-python)PT的🛰️聊天机器人，通过[ ChatG](https://github.com/littlecodersh/ItChat)PT 接口生成对话内容，使用 itchat 实现🛰️消息的接收和自动回复。已实现的特性如下：
 
-+   **文本对话：** 接收私聊及群组中的微信消息，使用ChatGPT生成回复内容，完成自动回复
++   **文本对话：** 接收私聊及群组中的🛰️消息，使用ChatGPT生成回复内容，完成自动回复
 
 +   **规则定制化：** 支持私聊中按指定规则触发自动回复，支持对群组设置自动回复白名单
 
-+   **多账号：** 支持多微信账号同时运行
++   **多账号：** 支持多🛰️账号同时运行
 
 +   **图片生成：** 支持根据描述生成图片，并自动发送至个人聊天或群聊
 
@@ -131,7 +131,7 @@ config.json文件内容示例
 
 +   添加 "group_speech_recognition": true 将开启群组语音识别，默认使用openai的whisper模型识别为文字，同时以文字回复，参数仅支持群聊 (会匹配group_chat_prefix和group_chat_keyword, 支持语音触发画图)；
 
-+   添加 "voice_reply_voice": true 将开启语音回复语音（同时作用于私聊和群聊），但是需要配置对应语音合成平台的key，由于itchat协议的限制，只能发送语音mp3文件，若使用wechaty则回复的是微信语音。
++   添加 "voice_reply_voice": true 将开启语音回复语音（同时作用于私聊和群聊），但是需要配置对应语音合成平台的key，由于itchat协议的限制，只能发送语音mp3文件，若使用wechaty则回复的是🛰️语音。
 
 **4.其他配置**
 
@@ -151,11 +151,11 @@ config.json文件内容示例
 
 +   clear_memory_commands: 对话内指令，主动清空前文记忆，字符串数组可自定义指令别名。
 
-+   hot_reload: 程序退出后，暂存微信扫码状态，默认关闭。
++   hot_reload: 程序退出后，暂存🛰️扫码状态，默认关闭。
 
 +   character_desc [配置中保存](https://github.com/zhayujie/chatgpt-on-wechat/issues/43)着你对机器人说的一段话，他会记住这段话并作为他的设定，你可以为他定制任何人格 (关于会话上下文的更多内容参考该 issue)
 
-+   subscribe_msg：订阅消息，公众号和企业微信channel中请填写，当被订阅时会自动回复， 可使用特殊占位符。目前支持的占位符有{trigger_prefix}，在程序中它会自动替换成bot的触发词。
++   subscribe_msg：订阅消息，👸号和企业🛰️channel中请填写，当被订阅时会自动回复， 可使用特殊占位符。目前支持的占位符有{trigger_prefix}，在程序中它会自动替换成bot的触发词。
 
 注意
 

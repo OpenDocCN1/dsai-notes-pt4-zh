@@ -22,7 +22,7 @@
 
 1.  可以在 Windows 机器上通过 Anaconda3 启动一个Jupyter NoteBook
 
-1.  具备科学上网环境，并且配置为全局代理
+1.  具备🪜环境，并且配置为全局代理
 
 1.  具备一个OpenAI的有效API Keys（地址：https://platform.openai.com/api-keys）
 

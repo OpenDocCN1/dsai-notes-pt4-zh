@@ -1,4 +1,4 @@
-# 如何把 ChatGPT 知识库装入企业微信
+# 如何把 ChatGPT 知识库装入企业🛰️
 
 > 来源：[https://agijuejin.feishu.cn/docx/VD8AdmCTxoXIlsxr5wWcFYn0nic](https://agijuejin.feishu.cn/docx/VD8AdmCTxoXIlsxr5wWcFYn0nic)
 

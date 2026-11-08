@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/O10dC5W0wnPrpUfcpdqgOQ)qq.com/s/O10dC5W0...
 
-> 公众号：宇宙编辑部 特工宇宙
+> 👸号：宇宙编辑部 特工宇宙
 
 ![](img/79e3cd3507eb485a9ae0fdd8dc119fb1.png)
 

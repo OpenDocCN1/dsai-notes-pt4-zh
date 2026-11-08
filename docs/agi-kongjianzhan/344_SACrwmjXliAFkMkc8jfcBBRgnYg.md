@@ -2,7 +2,7 @@
 
 > 来源：[https://agispace.feishu.cn/docx/CyAzdn55VoRgdmxlGm9cMvZzndh](https://agispace.feishu.cn/docx/CyAzdn55VoRgdmxlGm9cMvZzndh)
 
-> 公众号：每天译点晓知识
+> 👸号：每天译点晓知识
 
 >
 

@@ -4,7 +4,7 @@
 
 **生**财圈友大家好，我是唐杰，距离上次分享快手聚星时隔一年多，今天分享一下抖音星图短剧一个月时间，从一个新号变现10来万的玩法。
 
-加入生财这2年当中从一个小白到过手15＋个实战项目
+加入赚钱这2年当中从一个小白到过手15＋个实战项目
 
 有了自己1家公司，同时还组建了3个合伙分公司
 
@@ -12,7 +12,7 @@
 
 也感谢成长路上朋友们不惧风雨携手同行
 
-同时感谢生财提供的平台让信息更加透明化
+同时感谢赚钱提供的平台让信息更加透明化
 
 **从快手聚星，视频号分成，tk基金这些项目到**抖音星图，感觉到还是在抖音上赚钱比较舒心
 
@@ -146,7 +146,7 @@
 
 ![](img/9a1bc0424f6d24ca3fa9f4bac341a148.png)
 
-[13374048387712003.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OTtcbBGfVoygAvxQQJdchAJ9ngh)
+[13374048387712003.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OTtcbBGfVoygAvx🐧JdchAJ9ngh)
 
 前20秒的视频画面是一模一样的（滤镜画面大小镜像除外）
 
@@ -254,7 +254,7 @@
 
 [亨亨猫去水印_v3.5.3.exe](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ix14bf7BMonr0XxcAmAcYf1gnhP)
 
-哼哼猫是收费的，如果不想花钱，用上边的小程序用电脑微信打开一样用
+哼哼猫是收费的，如果不想花钱，用上边的小程序用电脑🛰️打开一样用
 
 ![](img/b161044240044872dbf7d652a94388df.png)
 

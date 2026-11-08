@@ -12,7 +12,7 @@
 
 **这家初创公司 **Eureka Labs 推出的首门课程叫 LLM101n。
 
-在此机智流联合书生·浦语兴趣小组发起 LLM101n-CN 中文版共建，旨在将 LLM101n 中优质的 AI 内容带给中文社区的小伙伴们，公众号回复 “101n”加入 LLM101n-CN 共建！！！
+在此机智流联合书生·浦语兴趣小组发起 LLM101n-CN 中文版共建，旨在将 LLM101n 中优质的 AI 内容带给中文社区的小伙伴们，👸号回复 “101n”加入 LLM101n-CN 共建！！！
 
 Repo 地址：https://github.com/SmartFlowAI/LLM101n-CN
 
@@ -44,7 +44,7 @@ Repo 地址：https://github.com/SmartFlowAI/LLM101n-CN
 
 LLM101n-CN 中文版 Repo 地址：https://github.com/SmartFlowAI/LLM101n-CN
 
-公众号回复 “101n” 加入 LLM101n-CN 共建计划！
+👸号回复 “101n” 加入 LLM101n-CN 共建计划！
 
 ---
 

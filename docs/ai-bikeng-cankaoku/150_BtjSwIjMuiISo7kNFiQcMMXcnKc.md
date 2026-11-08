@@ -38,6 +38,6 @@
 | TVbox 教程+直播源 | https://kdocs.cn/l/cbqzlC3waPFX |  |
 | Windows系统镜像合集下载 | https://kdocs.cn/l/cgTGWjbUVnMf |  |
 | 网盘产品解决方案 | https://kdocs.cn/l/cjsLE86M8d99 |  |
-| 小红书封面风格 | https://kdocs.cn/l/crD0Gi9h18bd |  |
+| 📕封面风格 | https://kdocs.cn/l/crD0Gi9h18bd |  |
 | GPT4O改图案例库 | https://kdocs.cn/l/cuqiElhL7qgd |  |
 | 迅雷资源下载链接 | https://kdocs.cn/l/csHo2mdNnsiA |  |

@@ -96,4 +96,4 @@ Cherry Studio同时可以创建自己的智能体
 
 从技术小白的角色做分享，望多指正🙏
 
-另外有篇文档[🌍Deepseek+飞书🐦=「小红书爆文生产机」](https://r0rel9lqdms.feishu.cn/docx/HxSXdAkvdos1MZx70aDcuWPVnof)在私域已经破千浏览了，大家有兴趣可以移步参考🌹
+另外有篇文档[🌍Deepseek+飞书🐦=「📕爆文生产机」](https://r0rel9lqdms.feishu.cn/docx/HxSXdAkvdos1MZx70aDcuWPVnof)在私域已经破千浏览了，大家有兴趣可以移步参考🌹

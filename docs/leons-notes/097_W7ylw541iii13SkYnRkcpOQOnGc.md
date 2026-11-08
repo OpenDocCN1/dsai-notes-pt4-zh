@@ -88,10 +88,10 @@
 
 +   无需预约、无需提前购票
 
-+   每[天 1](https://www.xiaohongshu.com/user/profile/59757acd50c4b45e6e9a90df?xhsshare=CopyLink&appuid=59757acd50c4b45e6e9a90df&apptime=1699580927)2pm 和 2pm 有志愿者带团讲解（免费，无需预约）；我预计 3 月开始周末带团，如果想听我的 tour 可以关注我的小红书“张咋啦”，具体时间会发到小红书上
++   每[天 1](https://www.xiaohongshu.com/user/profile/59757acd50c4b45e6e9a90df?xhsshare=CopyLink&appuid=59757acd50c4b45e6e9a90df&apptime=1699580927)2pm 和 2pm 有志愿者带团讲解（免费，无需预约）；我预计 3 月开始周末带团，如果想听我的 tour 可以关注我的📕“张咋啦”，具体时间会发到📕上
 
 # 联系我
 
 +   这是我的飞书
 
-+   欢迎关注我的小红书“[张咋啦](https://www.xiaohongshu.com/user/profile/59757acd50c4b45e6e9a90df?xhsshare=CopyLink&appuid=59757acd50c4b45e6e9a90df&apptime=1699580927)”和关于 AI 的 Substack newsletter
++   欢迎关注我的📕“[张咋啦](https://www.xiaohongshu.com/user/profile/59757acd50c4b45e6e9a90df?xhsshare=CopyLink&appuid=59757acd50c4b45e6e9a90df&apptime=1699580927)”和关于 AI 的 Substack newsletter

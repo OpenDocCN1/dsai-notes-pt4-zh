@@ -8,7 +8,7 @@
 
 ![](img/0d4d589ba7a99825294702be18fe28bf.png)
 
-[2024 年 AI商业应用 中标风向标](https://fieghf3pzz6.feishu.cn/docx/QZnjdrApIoXWKQxu9z2cC1d6n8g?from=from_copylink)[**，其他翻译请加 AI**](https://immersivetranslate.com/?via=general)同行侠--文卓 的微信：394710556，沉浸式翻译95折会员
+[2024 年 AI商业应用 中标风向标](https://fieghf3pzz6.feishu.cn/docx/QZnjdrApIoXWKQxu9z2cC1d6n8g?from=from_copylink)[**，其他翻译请加 AI**](https://immersivetranslate.com/?via=general)同行侠--文卓 的🛰️：394710556，沉浸式翻译95折会员
 
 ## **您将在本课程中学到什么**
 

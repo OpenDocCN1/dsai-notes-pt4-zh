@@ -170,7 +170,7 @@
 
 ![](img/af3e4780fd6e96eca1ba545b107f30b9.png)
 
-[华泰证券：文心一言：技术与能力拆解.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V9c9b5QQaoAieCxiVGoc1LyinHf)
+[华泰证券：文心一言：技术与能力拆解.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V9c9b5🐧aoAieCxiVGoc1LyinHf)
 
 ![](img/ea4ff58bc6cd667630e49f6f95370b45.png)
 

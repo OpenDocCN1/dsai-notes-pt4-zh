@@ -1076,7 +1076,7 @@ ps：当时直接去了解了一下该项目，后面我会对AI女友陪伴进�
 
 ![](img/e3a1ad99be7cc49ae890009ca52cab94.png)
 
-> 哦对了关于结构化提示词推荐三个公众号文~
+> 哦对了关于结构化提示词推荐三个👸号文~
 
 > 江树的：https://mp.weixin.qq.com/s/I2KfZt83c_7RmDNcDAuzCA
 

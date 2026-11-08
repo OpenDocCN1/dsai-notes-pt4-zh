@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/V0o5dJOVfo3B3Rx51BWctVUxnYc](https://xuqiwei1986.feishu.cn/docx/V0o5dJOVfo3B3Rx51BWctVUxnYc)
 
-[手把手教你使用影刀RPA批量获取小红书低粉爆款的商品！全自动解放双手！](https://xuqiwei1986.feishu.cn/wiki/Ji3YwT1etijw2lkzH0TcW0VOnrg)
+[手把手教你使用影刀RPA批量获取📕低粉爆款的商品！全自动解放双手！](https://xuqiwei1986.feishu.cn/wiki/Ji3YwT1etijw2lkzH0TcW0VOnrg)
 
 [《如何通过影刀RPA提升抖音图文10倍跟款的效率》@Leeka ](https://xuqiwei1986.feishu.cn/wiki/RJ0XwS1HKiJ5Iwk8OV0cCNfEnee)
 

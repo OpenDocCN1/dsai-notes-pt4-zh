@@ -94,4 +94,4 @@ RAG检索流程中包括了数据上传与处理、[文本划分、](https://www
 
 +   摘要生成：1）优化prompt模板，让模型更好的输出结果；2[）合理](https://www.zhihu.com/search?q=llm&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A692305040%7D)组合检索的信息，必要时可多次调用 llm
 
-更多相关内容，感兴趣的朋友可以同步关注B站(视频)：acedar-C大，知乎&公众号：aC大，也可加v进群交流：aa836304831
+更多相关内容，感兴趣的朋友可以同步关注B站(视频)：acedar-C大，知乎&👸号：aC大，也可加v进群交流：aa836304831

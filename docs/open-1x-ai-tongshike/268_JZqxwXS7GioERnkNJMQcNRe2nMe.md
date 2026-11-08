@@ -104,7 +104,7 @@ https://github.com/ybai34/Mobile-Agent-Development
 
 我目前用的中转站：https://api.chatllm.vip/
 
-建议用国内中转站是有原因的……不过这个中转站在充钱之前建议先加客服微信，因为它在充钱方面经常出BUG
+建议用国内中转站是有原因的……不过这个中转站在充钱之前建议先加客服🛰️，因为它在充钱方面经常出BUG
 
 ![](img/7953a95dbb4445bdd97c31ef9dcabb18.png)
 

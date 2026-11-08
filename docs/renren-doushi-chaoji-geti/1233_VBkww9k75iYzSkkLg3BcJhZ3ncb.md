@@ -114,6 +114,6 @@ AI 模型的消息调用需要消耗 token，Dify 提供了 OpenAI GPT 系列（
 
 你也可以加入我们的好友群，相互分享使用经验
 
-零代码，使用 Dify 两分钟接入企业微信 AI 机器人
+零代码，使用 Dify 两分钟接入企业🛰️ AI 机器人
 
 [D](http://mp.weixin.qq.com/s?__biz=Mzg5MDkyOTY3NA==&mid=2247484669&idx=1&sn=c19206507d0d2d6fd1042090e48713e1&chksm=cfd45398f8a3da8e25e1030dbd1f809c08978a287d5d7c19442ea54c7dc2b1d92a5f0067b482&scene=21#wechat_redirect)ify.AI 接入 Claude2 模型：支持 100K token 上下文，登录即免费获得 1000 次消息额度

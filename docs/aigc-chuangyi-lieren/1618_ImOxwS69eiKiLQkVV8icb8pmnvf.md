@@ -1,6 +1,6 @@
 # RPDC：《52 个设计原则》
 
-> 来源：[https://aigcreative.feishu.cn/docx/GCH1dcWJGoulkZxJOFGcQQbgnYc](https://aigcreative.feishu.cn/docx/GCH1dcWJGoulkZxJOFGcQQbgnYc)
+> 来源：[https://aigcreative.feishu.cn/docx/GCH1dcWJGoulkZxJOFGc🐧bgnYc](https://aigcreative.feishu.cn/docx/GCH1dcWJGoulkZxJOFGc🐧bgnYc)
 
 > 网址:https://rpdc.xiaohongshu.com/52-design-principles
 

@@ -1,12 +1,12 @@
-# 必看文章合集=【AGI观察】微信公众号+知乎
+# 必看文章合集=【AGI观察】🛰️👸号+知乎
 
 > 来源：[https://aithinkup.feishu.cn/docx/PudWdJRIFoBSywxZV4acySp5njc](https://aithinkup.feishu.cn/docx/PudWdJRIFoBSywxZV4acySp5njc)
 
-> 9月24日，本飞书知识库完成第二波更新。我把我的微信公众号完成了整理！
+> 9月24日，本飞书知识库完成第二波更新。我把我的🛰️👸号完成了整理！
 
-> 10月1日，本飞书知识库完成第二波更新。我把我的微信公众号完成了整理！
+> 10月1日，本飞书知识库完成第二波更新。我把我的🛰️👸号完成了整理！
 
-# 微信公众号文章目录合集
+# 🛰️👸号文章目录合集
 
 ## 归档至：商业服务 | AI培训与咨询
 
@@ -16,7 +16,7 @@
 
 发布日期：2025年3月6日
 
-微信链接：
+🛰️链接：
 
 https://mp.weixin.qq.com/s/FKVKVXN1tQrG7IXqsVhbvg
 
@@ -38,7 +38,7 @@ AI 产品洞察目录（专栏）- 飞书知识库持续更新中
 
 发布日期：2025年9月18日
 
-微信链接：https://mp.weixin.qq.com/s/5maQ_bQ_-O77nPzGQ0J4UA
+🛰️链接：https://mp.weixin.qq.com/s/5maQ_bQ_-O77nPzGQ0J4UA
 
 **归档理由：** 这是关于您知识库本身目录和更新情况的“元信息”，是面向读者和社群的公告，应放在此处。
 
@@ -70,7 +70,7 @@ AI 产品洞察目录（专栏）- 飞书知识库持续更新中
 
 ![](img/cdc60235812680ea36d4ac2b9f5f9133.png)
 
-## 微信公众号【AGI观察】
+## 🛰️👸号【AGI观察】
 
 ![](img/e35989a8ee49021e957d6a9fd333a24b.png)
 

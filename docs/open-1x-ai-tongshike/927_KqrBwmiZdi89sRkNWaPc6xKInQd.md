@@ -77,7 +77,7 @@
 
 想加入 **创作群 **了解详情，
 
-可添加Datawhale教研负责人 微信👉🏻
+可添加Datawhale教研负责人 🛰️👉🏻
 
 ![](img/0c61fcd4b9fe3490e33e90708c6efae0.png)
 

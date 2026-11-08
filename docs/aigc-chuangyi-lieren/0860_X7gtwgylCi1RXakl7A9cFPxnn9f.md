@@ -4,7 +4,7 @@
 
 > 原文链接： https://mp.weixin.qq.com/s/XI6KKl62O1lHAMxPAuyayg
 
-> 来源：公众号：跟雷哥探究HR领域的AI
+> 来源：👸号：跟雷哥探究HR领域的AI
 
 > 字数 2098，阅读大约需 11 分钟
 
@@ -14,9 +14,9 @@
 
 比如雷神Vibecoding 做了以后个自己名字命名的 雷神管理文件软件，虽然目前试用群已经150人了
 
-[Vibecoding实战：我用AI手](https://mp.weixin.qq.com/s?__biz=MzU3OTYxODc2Mg==&mid=2247489459&idx=1&sn=a5c6eb4bd27e47a8d7cf833b04dbc070&scene=21#wechat_redirect)搓了“雷神”，专治微信文件爆炸与知识焦虑
+[Vibecoding实战：我用AI手](https://mp.weixin.qq.com/s?__biz=MzU3OTYxODc2Mg==&mid=2247489459&idx=1&sn=a5c6eb4bd27e47a8d7cf833b04dbc070&scene=21#wechat_redirect)搓了“雷神”，专治🛰️文件爆炸与知识焦虑
 
-[A](https://mp.weixin.qq.com/s?__biz=MzU3OTYxODc2Mg==&mid=2247489492&idx=1&sn=2a45316486d37e6a8c735e0c1840ce05&scene=21#wechat_redirect)I落地实战：我如何用AI打造的“雷神 + NotebookLM”搭建第二大脑？把微信群聊变成私有知识库
+[A](https://mp.weixin.qq.com/s?__biz=MzU3OTYxODc2Mg==&mid=2247489492&idx=1&sn=2a45316486d37e6a8c735e0c1840ce05&scene=21#wechat_redirect)I落地实战：我如何用AI打造的“雷神 + NotebookLM”搭建第二大脑？把🛰️群聊变成私有知识库
 
 [雷神智能文件管理软件 ](https://mp.weixin.qq.com/s?__biz=MzU3OTYxODc2Mg==&mid=2247489455&idx=1&sn=2d2eb58d9319fea68dd9957c39f1c6eb&scene=21#wechat_redirect)2026开工第一天|AI落地，从触动到行动
 
@@ -128,7 +128,7 @@ Google Antigravit**y 的**所有回复（包括思考过程）默认都是 英�
 
 一种规划模式，一种快速模式
 
-我直接用微信截图给大家翻译了一下，大家看图就行
+我直接用🛰️截图给大家翻译了一下，大家看图就行
 
 ![](img/e916fb2ae7f11d21c6098bb747a25e50.png)
 

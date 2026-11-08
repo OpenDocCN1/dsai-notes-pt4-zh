@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/TDXqd5mWLod36YxHxokcXuhjnnf](https://aigcreative.feishu.cn/docx/TDXqd5mWLod36YxHxokcXuhjnnf)
 
-大概一个月前，创意猎人发布了《Midjourney创意风格书-V1.0》，用Midjourney跑了--sref 1~5000共计5000种效果（可在公众号回复“风格书”获取下载链接），揭开了Midjourney创意黑箱的一个小角落，得到了一些AI绘画领域小伙伴的围观，交流~~这个过程虽然有点辛苦，但还是受益颇多。
+大概一个月前，创意猎人发布了《Midjourney创意风格书-V1.0》，用Midjourney跑了--sref 1~5000共计5000种效果（可在👸号回复“风格书”获取下载链接），揭开了Midjourney创意黑箱的一个小角落，得到了一些AI绘画领域小伙伴的围观，交流~~这个过程虽然有点辛苦，但还是受益颇多。
 
 本来想就此作罢，5000种效果，应该够平时使用。但有的小伙伴表示还不过瘾，不断催更，想看更多~~
 

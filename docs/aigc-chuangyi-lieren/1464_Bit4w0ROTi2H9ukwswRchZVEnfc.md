@@ -30,7 +30,7 @@
 
 Nano Banana Pro不令人失望，真的是每一次出图都被他强大的推理能力所震撼。
 
-我昨天看到一篇公众号文章讲解字节跳动 Agent 实践全景的，内容很丰富全面，原文链接：https://mp.weixin.qq.com/s/ym31A2y45Q2GeN8mOjvOAg。
+我昨天看到一篇👸号文章讲解字节跳动 Agent 实践全景的，内容很丰富全面，原文链接：https://mp.weixin.qq.com/s/ym31A2y45Q2GeN8mOjvOAg。
 
 我想着能不能把它做成信息图：一张PPT、一张单页或者手机里的长图整体呈现一下，于是得到下面的结果：
 

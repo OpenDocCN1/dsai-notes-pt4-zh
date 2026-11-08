@@ -2,7 +2,7 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/MLkQdU6MsoDtu0xhumJcIkQ9nxh](https://xuqiwei1986.feishu.cn/docx/MLkQdU6MsoDtu0xhumJcIkQ9nxh)
 
-大家好，我是小宋，00后程序员，6月份加入生财，加入生财已经有三个月。 本期n8n 教练,这是最新n8n+sora2.0 批量复刻YouTube视频，分享给大家。
+大家好，我是小宋，00后程序员，6月份加入赚钱，加入赚钱已经有三个月。 本期n8n 教练,这是最新n8n+sora2.0 批量复刻YouTube视频，分享给大家。
 
 欢迎大家来链接我，我需要和懂需求的，懂流量操盘手的聊聊。
 

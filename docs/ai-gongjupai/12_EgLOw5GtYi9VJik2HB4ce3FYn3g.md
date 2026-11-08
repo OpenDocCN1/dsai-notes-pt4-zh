@@ -1,16 +1,16 @@
-# 5 款不错的 AI 工具：小红书做号神器、漫画生成、AI 学术、文本转语音等
+# 5 款不错的 AI 工具：📕做号神器、漫画生成、AI 学术、文本转语音等
 
 > 来源：[https://docs.feishu.cn/docx/AJ9gdJEMGokCc1xCiJfc0lwFnuc](https://docs.feishu.cn/docx/AJ9gdJEMGokCc1xCiJfc0lwFnuc)
 
 Hi，大家好，今天 Chris 和大家分享 5 款不错的 AI 工具，它们不仅功能强大，而且操作简便，能够帮助你在各个领域提升效率和创造力。接下来一起看看吧：
 
-# 1.Postnitro：小红书做号神器
+# 1.Postnitro：📕做号神器
 
 工具地址：https://postnitro.ai/
 
 工具亮点：免费、无需🪜、高效便捷、模板多样、高度定制化
 
-Postnitro 是一款专为社交媒体内容创作者、品牌和个人博主设计的AI工具，专注于快速创建吸引人的社交媒体封面图片，尤其适合小红书等平台。用户通过输入主题，Postnitro 能迅速生成封面设计。
+Postnitro 是一款专为社交媒体内容创作者、品牌和个人博主设计的AI工具，专注于快速创建吸引人的社交媒体封面图片，尤其适合📕等平台。用户通过输入主题，Postnitro 能迅速生成封面设计。
 
 ![](img/ff3c07abe9cbc5747ad2e0b7c85329c4.png)
 

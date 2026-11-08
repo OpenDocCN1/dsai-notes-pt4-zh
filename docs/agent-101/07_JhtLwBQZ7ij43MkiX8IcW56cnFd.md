@@ -1,4 +1,4 @@
-# 通过coze构建一键生成抖音、小红书视频RPA自动化工具
+# 通过coze构建一键生成抖音、📕视频RPA自动化工具
 
 > 来源：[https://docs.feishu.cn/docx/PRwZdUfC1oMDV2xtrdRcbatmnKe](https://docs.feishu.cn/docx/PRwZdUfC1oMDV2xtrdRcbatmnKe)
 
@@ -8,7 +8,7 @@
 
 ![](img/706628607c20337c9139f8e9c166486c.png)
 
-[小红书-工作流.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CO8fbcl6WoSiFMxjQBRckcwfnVd)
+[📕-工作流.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CO8fbcl6WoSiFMxjQBRckcwfnVd)
 
 https://telegraph-image-djt.pages.dev/file/afe453234bf035d1bb77f.mp4
 
@@ -113,7 +113,7 @@ prompt：写一个post请求：请求地址：xxx.com，body参数为{"text":"} 
 
 ![](img/2b4c1de3549d4db929d4b2a334d2d5e9.png)
 
-[小红书-工作流.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zh6sbXvDwoftaIxLYDccBzKvnnf)
+[📕-工作流.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zh6sbXvDwoftaIxLYDccBzKvnnf)
 
 # 其他
 

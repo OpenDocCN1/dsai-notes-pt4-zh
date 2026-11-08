@@ -6,9 +6,9 @@
 
 **一、自我介绍**
 
-各位圈友好，我是前行，自23年加入生财以来，做过不少项目，每期航海基本都有报名参加，目前收获了一些小结果，赚到了工资以外的第一个1万。
+各位圈友好，我是前行，自23年加入赚钱以来，做过不少项目，每期航海基本都有报名参加，目前收获了一些小结果，赚到了工资以外的第一个1万。
 
-非常感谢生财提供了这么多航海，让我不断地试错，从而找到了我接下来将投入巨大精力持续深耕的项目——AI web。我相信这个项目将是我赚到工资以外的第一个10万，第一个100万的项目。
+非常感谢赚钱提供了这么多航海，让我不断地试错，从而找到了我接下来将投入巨大精力持续深耕的项目——AI web。我相信这个项目将是我赚到工资以外的第一个10万，第一个100万的项目。
 
 之所以有这么大的信心，主要有2点：
 
@@ -66,15 +66,15 @@
 
 我主要学习的航海：
 
-a、出海工具站 [生财有术·航海实战](https://scys.com/activity/landing/4245?tabIndex=0)
+a、出海工具站 [龙哥盟·航海实战](https://scys.com/activity/landing/4245?tabIndex=0)
 
-b、出海第一站 [生财有术·航海实战](https://scys.com/activity/landing/3044?tabIndex=0)
+b、出海第一站 [龙哥盟·航海实战](https://scys.com/activity/landing/3044?tabIndex=0)
 
-c、英文工具站 [生财有术·资料文档](https://scys.com/view/docx/M0LZd0HI5o2nEjxVwYdcrj8BnAd#doxcnYBvx7xCmRp1mD7gTQI9Ryf)
+c、英文工具站 [龙哥盟·资料文档](https://scys.com/view/docx/M0LZd0HI5o2nEjxVwYdcrj8BnAd#doxcnYBvx7xCmRp1mD7gTQI9Ryf)
 
-[d、Cursor-](https://scys.com/activity/landing/4668?tabIndex=0)零基础做软件应用 生财有术·航海实战
+[d、Cursor-](https://scys.com/activity/landing/4668?tabIndex=0)零基础做软件应用 龙哥盟·航海实战
 
-e、AI 应用-web网站 [生财有术·航海实战](https://scys.com/activity/landing/5121?tabIndex=0)
+e、AI 应用-web网站 [龙哥盟·航海实战](https://scys.com/activity/landing/5121?tabIndex=0)
 
 这5本航海手册我前前后后应该看了4遍，包括高手领航，收获非常大，建议新手一定要看。
 
@@ -134,7 +134,7 @@ c、直接在Google搜索
 
 这一知识非常重要，在你开发之前一定要搞清楚git的用法，不然对后续的开发效率会有非常大的影响。我专门花了一晚上专门进行学习，然后在开发中不断验证自己对git用法的理解。
 
-gi[t是用来控制网站的版](https://scys.com/activity/landing/4668?tabIndex=0)本的，很多时候，让AI改代码，它会把不相关的代码都改了，导致网站不是你想要的效果，你就能用git回退到你想要的版本。具体的学习，你可以看看Cursor-零基础做软件应用 生财有术·航海实战 里面有非常详细的讲解。然后在实战中遇到不懂的，可以直接问AI。
+gi[t是用来控制网站的版](https://scys.com/activity/landing/4668?tabIndex=0)本的，很多时候，让AI改代码，它会把不相关的代码都改了，导致网站不是你想要的效果，你就能用git回退到你想要的版本。具体的学习，你可以看看Cursor-零基础做软件应用 龙哥盟·航海实战 里面有非常详细的讲解。然后在实战中遇到不懂的，可以直接问AI。
 
 ② cursor（或其他AI 编程软件）生成代码
 
@@ -366,4 +366,4 @@ b、vercel部署
 
 以上就是一位0代码背景的普通人通过AI工具做出3个AI工具站的完整复盘，希望对新手们有一点启发，然后果断下场。
 
-再次感谢生财有术提供这么多项目让我不断试错，最终选定了AI web这条赛道。
+再次感谢龙哥盟提供这么多项目让我不断试错，最终选定了AI web这条赛道。

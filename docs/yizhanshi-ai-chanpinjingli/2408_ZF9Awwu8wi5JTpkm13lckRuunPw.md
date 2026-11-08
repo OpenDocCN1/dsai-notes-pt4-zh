@@ -148,11 +148,11 @@
 
 +   [YouTube视频](https://www.youtube.com/watch?v=JHq4EKMg7fI)
 
-+   [小红书链接1](http://xhslink.com/a/ezzKngq9wzo5)
++   [📕链接1](http://xhslink.com/a/ezzKngq9wzo5)
 
-+   [小红书链接2](http://xhslink.com/a/hFE9aGMYUzo5)
++   [📕链接2](http://xhslink.com/a/hFE9aGMYUzo5)
 
-+   [小红书链接3](http://xhslink.com/a/YMBGSb442zo5)
++   [📕链接3](http://xhslink.com/a/YMBGSb442zo5)
 
 > 6️⃣
 

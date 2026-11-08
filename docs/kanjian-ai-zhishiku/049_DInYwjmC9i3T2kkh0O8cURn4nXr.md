@@ -94,7 +94,7 @@ https://www.d-id.com/
 
 3.35 TYz:/ 复制打开抖音，看看【看见AI的作品】AI制作# 封神第一部 预告片，Midjourne... https://v.douyin.com/iJVGdmVK/
 
-### 欢迎大家加微信详细交流
+### 欢迎大家加🛰️详细交流
 
 13858104569 看见AI
 

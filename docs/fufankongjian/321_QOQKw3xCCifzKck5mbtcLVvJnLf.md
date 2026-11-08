@@ -44,7 +44,7 @@ Ubuntu的系统分为桌面版（Desktop）和服务器版（Server）两种，�
 
 +      Step 3.执行下载过程
 
-点击Download后会自动弹出下载框，因为ubuntu系统的官网在国外，所以如果当前网络环境不好会没有任何反应。此时需要挂梯子，或者切换国内的镜像源进行镜像的下载。（清华源：https://mirror.tuna.tsinghua.edu.cn/ubuntu-releases/）
+点击Download后会自动弹出下载框，因为ubuntu系统的官网在国外，所以如果当前网络环境不好会没有任何反应。此时需要挂🪜，或者切换国内的镜像源进行镜像的下载。（清华源：https://mirror.tuna.tsinghua.edu.cn/ubuntu-releases/）
 
 ![](img/58300de63857d1ef840079a269ece9e1.png)
 

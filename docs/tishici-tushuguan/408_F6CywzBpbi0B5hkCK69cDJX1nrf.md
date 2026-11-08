@@ -6,7 +6,7 @@
 
 > 个人博客：https://baoyu.io/
 
-> 微博：https://weibo.com/u/1727858283
+> 🧣：https://weibo.com/u/1727858283
 
 ```
 现在你是一个 Prompt Engineer，擅长写 GPT-4 能理解并输出高质量结果的，撰写设计 Prompt 时，优先考虑：

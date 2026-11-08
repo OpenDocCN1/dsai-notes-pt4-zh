@@ -4,17 +4,17 @@
 
 # **平台**
 
-[公众号](https://ghlf0s3q3l.feishu.cn/wiki/YPVgwoFXQiLLbzkOy07cUaqLnNe)
+[👸号](https://ghlf0s3q3l.feishu.cn/wiki/YPVgwoFXQiLLbzkOy07cUaqLnNe)
 
 [抖音](https://ghlf0s3q3l.feishu.cn/wiki/KjtUwjeUti6v3KkiOqQctS5pnDw)
 
 [闲鱼](https://ghlf0s3q3l.feishu.cn/wiki/JlzowVkydiodJ3kh35EcRNhynbf)
 
-[小红书](https://ghlf0s3q3l.feishu.cn/wiki/A7mrwuHRzinc6CkYVSlcvuDVnzf)
+[📕](https://ghlf0s3q3l.feishu.cn/wiki/A7mrwuHRzinc6CkYVSlcvuDVnzf)
 
 [视频号](https://ghlf0s3q3l.feishu.cn/wiki/DQ8swxdKriLed1kTPIyc5Blqnjd)
 
-微信
+🛰️
 
 快手
 
@@ -50,7 +50,7 @@
 
 [TikTok 电商](https://ghlf0s3q3l.feishu.cn/wiki/ICT4wxsqQicYCWkLEAicv9bRn1g)
 
-[小红书电商](https://ghlf0s3q3l.feishu.cn/wiki/EI2jwD7AHi1r28keq4qcpVLUnVf)
+[📕电商](https://ghlf0s3q3l.feishu.cn/wiki/EI2jwD7AHi1r28keq4qcpVLUnVf)
 
 [信用卡CPS](https://ghlf0s3q3l.feishu.cn/wiki/Wteqw2OlKi4K02kXOuKc8XyfnDg)
 
@@ -66,22 +66,22 @@ AI漫剧
 
 AI自媒体
 
-公众号爆文
+👸号爆文
 
-公众号垂直小号
+👸号垂直小号
 
-小红书虚拟产品
+📕虚拟产品
 
-小红书商单
+📕商单
 
 TikTok 中视频计划
 
 抖音伙伴计划
 
-微信小程序
+🛰️小程序
 
 闲鱼RPA定制
 
 今日头条
 
-微信视频号
+🛰️视频号

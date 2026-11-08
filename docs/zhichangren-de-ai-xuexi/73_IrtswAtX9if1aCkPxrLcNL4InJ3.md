@@ -6,7 +6,7 @@
 
 作者：[@晓声识器](https://www.yuque.com/clnote)
 
-微信链接：https://mp.weixin.qq.com/s/8AFhoHaXC6PgWv8rezwrnw
+🛰️链接：https://mp.weixin.qq.com/s/8AFhoHaXC6PgWv8rezwrnw
 
 上个周六，我有幸参加了在上海 CPDA 数据分析师线下沙龙活动，分享了我这一年来在 AI 学习之路上的点滴体会与收获。　时逢年终岁尾，宛如一次年度总结回顾，我把此前散落在 gamma 中的资料整理了一遍，分享了其中一些个人观点。
 

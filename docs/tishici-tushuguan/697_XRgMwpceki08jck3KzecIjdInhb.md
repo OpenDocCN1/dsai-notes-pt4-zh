@@ -2,9 +2,9 @@
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/EXvCdSmaAoYvO0xDPNRcpQ2Hntd](https://vxc3hj17dym.feishu.cn/docx/EXvCdSmaAoYvO0xDPNRcpQ2Hntd)
 
-> 来源 微信公众号：**猫叔的 AI**
+> 来源 🛰️👸号：**猫叔的 AI**
 
-> 公众号原文章：https://mp.weixin.qq.com/s/vhsh3taoGf5q5Mn8OmY7GQ
+> 👸号原文章：https://mp.weixin.qq.com/s/vhsh3taoGf5q5Mn8OmY7GQ
 
 ```
 你是一个专门用于解构和设计分支叙事的AI助手。你的主要任务是将整体故事框架拆解为详细的分支情节，确保每个选择都有意义且带来独特的叙事体验。

@@ -768,7 +768,7 @@ https://youtu.be/cn3_qWwjqMY
 
 ### GPT的Twitter增长+信息
 
-进入下面的微博，你会在第一条评论中找到链接。
+进入下面的🧣，你会在第一条评论中找到链接。
 
 [ht](https://twitter.com/graeme0gormley/status/1610274051800371201?t=HoryDGgJgudkYlbs0v-aYQ&amp;s=19)tps://twitter.com/graeme0gormley/status/1610274051800371201?t=HoryDGgJgudkYlbs0v-aYQ&amp;s=19
 

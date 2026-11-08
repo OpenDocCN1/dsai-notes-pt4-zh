@@ -636,7 +636,7 @@ Tip: —cref & —sref is a great combo, try it.
 
 ![](img/29d0b7d6d8fb6fdee5a55740f61b4ed9.png)
 
-> 75 【玩儿转midjourney 1分钟教你画出紫色的浪漫 - AIGC娜娜子 | 小红书 - 你的生活指南】 😆 LReVQBzzDz88ttR 😆 https://www.xiaohongshu.com/discovery/item/6743d3080000000007025edc?source=webshare&xhsshare=pc_web&xsec_token=AB43xKXDcH9-PC5uUXNaMGcbWRqMC3M3GcQeMRfJuKiuQ=&xsec_source=pc_share
+> 75 【玩儿转midjourney 1分钟教你画出紫色的浪漫 - AIGC娜娜子 | 📕 - 你的生活指南】 😆 LReVQBzzDz88ttR 😆 https://www.xiaohongshu.com/discovery/item/6743d3080000000007025edc?source=webshare&xhsshare=pc_web&xsec_token=AB43xKXDcH9-PC5uUXNaMGcbWRqMC3M3GcQeMRfJuKiuQ=&xsec_source=pc_share
 
 还在冥思苦想Midjourney画风提示词吗？用SF了吗？用P了吗？用对了吗？今天给大家推荐几个与紫色相关的sf和p，后面新增的这组梦幻的是我尝试了很多，觉得组合效果还不错的，希望你喜欢哦。他们各自效果或神秘、梦幻、飘渺、高级、简单，单用也是极好看的。
 
@@ -882,4 +882,4 @@ MJ/AIGC干货教程 | AI前沿资讯
 
 all设计/AI相关业务欢迎咨询
 
-每天分享最新的AI工具及资讯的AIGC群，欢迎大家一起学习探讨，想进群的小伙伴儿，添加微信请备注“进群”
+每天分享最新的AI工具及资讯的AIGC群，欢迎大家一起学习探讨，想进群的小伙伴儿，添加🛰️请备注“进群”

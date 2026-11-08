@@ -1,6 +1,6 @@
 # OpenClaw 命令手册（全网首发&持续更新 ing...
 
-> 来源：[https://yunyinghui.feishu.cn/docx/M4AMdghQWoKV8qxS9vOcmXQQnBe](https://yunyinghui.feishu.cn/docx/M4AMdghQWoKV8qxS9vOcmXQQnBe)
+> 来源：[https://yunyinghui.feishu.cn/docx/M4AMdghQWoKV8qxS9vOcmX🐧nBe](https://yunyinghui.feishu.cn/docx/M4AMdghQWoKV8qxS9vOcmX🐧nBe)
 
 > **适用人群：** OpenClaw 部署安装人员
 
@@ -82,19 +82,19 @@
 
 # 📱交流合作
 
-持**续关注并更新 Op****enClaw 的相关资讯动态，研究报告，商业落地，常见问题，永久免费在线查看。已建立社群**聊聊 OpenClaw 发展、应用、对接及合作，邀请嘉宾讲课，没进群的可以扫码加入，群满可加大国微信 ID：zhangyuguo94s（备注：OpenClaw），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+持**续关注并更新 Op****enClaw 的相关资讯动态，研究报告，商业落地，常见问题，永久免费在线查看。已建立社群**聊聊 OpenClaw 发展、应用、对接及合作，邀请嘉宾讲课，没进群的可以扫码加入，群满可加大国🛰️ ID：zhangyuguo94s（备注：OpenClaw），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
-> **特别说明：**不要申请编辑和复制文档，容易错乱编辑，有需求请进群加微信沟通。
+> **特别说明：**不要申请编辑和复制文档，容易错乱编辑，有需求请进群加🛰️沟通。
 
 ![](img/07e15fc40bf46edf0bb8ae06d4e6acce.png)
 
-**微信学习交流群**
+**🛰️学习交流群**
 
 ![](img/2d2ec3d9fc6ab9882b6f581a6aa53d75.png)
 
-**微信学习交流群**
+**🛰️学习交流群**
 
-微信 ID：zhangyuguo94s，备注：OpenClaw
+🛰️ ID：zhangyuguo94s，备注：OpenClaw
 
 **扫码交流、进群、合作**
 
@@ -128,7 +128,7 @@ OpenClaw 的核心是「模型调度中枢+本地执行代理+多端通信桥梁
 
 +   **本地权限可控：**可安全调用本地设备的文件系统、命令行、软件程序，实现本地自动化操作；
 
-+   **全平台打通：**通过通道体系，一次部署即可在飞书、Telegram、企业微信、微信公众号等数十个平台同步使用；
++   **全平台打通：**通过通道体系，一次部署即可在飞书、Telegram、企业🛰️、🛰️👸号等数十个平台同步使用；
 
 +   **无限可扩展：**通过 Skill 技能、Plugin 插件体系，可自定义 AI 的能力边界，适配从个人内容创作到企业自动化运维的全场景；
 

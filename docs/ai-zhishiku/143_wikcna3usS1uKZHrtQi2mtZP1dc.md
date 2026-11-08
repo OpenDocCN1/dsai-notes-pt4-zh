@@ -22,7 +22,7 @@
 
 可以参考 webui 的官方 wiki 部署：[**H**](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki)ome · AUTOMATIC1111/stable-diffusion-webui Wiki （github.com）
 
-stable diffusion webui 的完整环境占用空间极大，能达到几十 G。同时，webui 需要联网下载安装大量的依赖，在境内的网络环境下下载很慢，请自带科学上网工具。
+stable diffusion webui 的完整环境占用空间极大，能达到几十 G。同时，webui 需要联网下载安装大量的依赖，在境内的网络环境下下载很慢，请自带🪜工具。
 
 1.  安装 Python 安装 [**Python 3.10**](https://www.python.org/downloads/windows/)，安装时须选中 Add Python to PATH
 

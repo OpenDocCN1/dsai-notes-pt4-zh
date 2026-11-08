@@ -28,7 +28,7 @@ ICPC 2025全球总决赛上，谷歌Gemini与OpenAI推理模型同时获金牌�
 
 ### 💡 刚刚，DeepSeek登上Nature封面！梁文锋带队回应质疑，R1训练真29.4万美金
 
-新智元 | [阅读原文](https://www.163.com/dy/article/K9NLQQJH0511ABV6.html?spss=dy_author)
+新智元 | [阅读原文](https://www.163.com/dy/article/K9NL🐧JH0511ABV6.html?spss=dy_author)
 
 ![](img/6c10d5f110f9d39af7cdd9ab7678b8f2.png)
 

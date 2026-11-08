@@ -16,4 +16,4 @@
 
 即日起至 2026 年 3 月 15 日
 
-如果您感兴趣欢迎微信搜索 van-sin 添加闻星私聊加入项目社区版 InternOmni-1B-Community 项目
+如果您感兴趣欢迎🛰️搜索 van-sin 添加闻星私聊加入项目社区版 InternOmni-1B-Community 项目

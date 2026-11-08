@@ -360,7 +360,7 @@ OpenAI的此次估值事件，将对全球科技和风险投资领域产生深�
 
 九天Hector 抖音： https://v.douyin.com/lqASAa2Hs_0/
 
-九天Hector 小红书：https://www.xiaohongshu.com/user/profile/62321335000000001000885e
+九天Hector 📕：https://www.xiaohongshu.com/user/profile/62321335000000001000885e
 
 九天Hector YouTube：https://www.youtube.com/channel/UCj8tyDLSxIdivnweBnG4H9Q/
 

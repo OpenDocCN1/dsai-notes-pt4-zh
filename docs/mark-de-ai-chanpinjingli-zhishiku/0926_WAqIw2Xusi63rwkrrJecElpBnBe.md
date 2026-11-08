@@ -2,7 +2,7 @@
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/LcZVdaNRrobV2gxbnkgcLm5znFh](https://qqs7y1hozd1.feishu.cn/docx/LcZVdaNRrobV2gxbnkgcLm5znFh)
 
-> 文章出处来源：公众号二红笔记  老师
+> 文章出处来源：👸号二红笔记  老师
 
 > 让大模型写SQL查个数据、做个简单的demo用作演示，很多博主都分享过，我们就直接进入产品经理最核心的工作交付物——需求文档。
 

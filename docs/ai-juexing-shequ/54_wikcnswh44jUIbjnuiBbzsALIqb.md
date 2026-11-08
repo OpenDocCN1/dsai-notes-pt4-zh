@@ -202,7 +202,7 @@ ChatGPT的论文还没有放开。我们在此先奉上官方blog第一段的字
 
 **第一个时代是****PGC**(Professionally-Generated Content)&OGC(Occupationally-Generated Content)，即专家生产内容与专业生产内容。举两个例子，我们在爱奇艺上看到的电视剧《狂飙》，是专业的演员参与、专业的团队制作的；我们在人民网上看到的新闻报道，是专业的记者写的。
 
-**第二个时代是****UGC**(User Generated Content)，即用户生产内容。相对应的例子，如抖音、各种blog、小红书上的大部分内容，都是普通用户自己创作生成的。
+**第二个时代是****UGC**(User Generated Content)，即用户生产内容。相对应的例子，如抖音、各种blog、📕上的大部分内容，都是普通用户自己创作生成的。
 
 **第三个时代即将到来，我们称之为AIGC（AI-****Ge****nerat**ed Content），即AI生产内容。而ChatGPT的出现以及其展现的能力，对文字模态的AIGC应用有着重要的意义。
 

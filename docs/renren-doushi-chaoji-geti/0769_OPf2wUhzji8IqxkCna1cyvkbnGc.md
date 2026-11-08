@@ -4,11 +4,11 @@
 
 大家好，我是浅笑。
 
-看到亦仁老板发在星球的龙珠悬赏，是关于工具的，我比较喜欢探索各个领域的信息，也喜欢整合，正好趁这个机会去梳理一下工具。
+看到龙哥老板发在星球的龙珠悬赏，是关于工具的，我比较喜欢探索各个领域的信息，也喜欢整合，正好趁这个机会去梳理一下工具。
 
 这个工具我整理了以下几个分类，
 
-生财有术航海资料库工具,
+龙哥盟航海资料库工具,
 
 数据分析工具，
 
@@ -32,57 +32,57 @@
 
 [视频号航海｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/doxcnBgsFkFZqGviyWZ0iAXRPIb)
 
-来自生财有术视频号航海实战资料库
+来自龙哥盟视频号航海实战资料库
 
 ## 二、抖音
 
 [抖音航海｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/GDpAden9ho7bzJxt2clcRXbBn7f)
 
-来自生财有术抖音航海实战资料库
+来自龙哥盟抖音航海实战资料库
 
-## 三、小红书
+## 三、📕
 
-[小红书｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/WTeQd9k0Eoc3W5xTiXkcEvKhn9f)
+[📕｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/WTeQd9k0Eoc3W5xTiXkcEvKhn9f)
 
-来自生财有术小红书航海实战资料库
+来自龙哥盟📕航海实战资料库
 
 ## 四、 B 站
 
 [B 站航海｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/VBwhd5VCTowWEGx4GBscDi0lnhg)
 
-来自生财有术 B 站航海实战资料库
+来自龙哥盟 B 站航海实战资料库
 
 ## 五、英文工具站
 
 [英文工具站航海｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/Pyo1d29xkodpCYxoKgNcjvNVn14)
 
-来自生财有术英文工具站航海实战资料库
+来自龙哥盟英文工具站航海实战资料库
 
 ## 六、亚马逊
 
 [亚马逊航海｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/NWmfds964oUWIjxUBJTcJhzCnJf)
 
-来自生财有术亚马逊航海实战资料库
+来自龙哥盟亚马逊航海实战资料库
 
 ## 七、快团团
 
 [快团团航海｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/VPL3dFxd8o60BDxbPW7ckXuznqe)
 
-来自生财有术快团团实战资料库
+来自龙哥盟快团团实战资料库
 
-## 八、公众号
+## 八、👸号
 
-[公众号航海｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/YxD4d1oBronCtFxp79Jc8x8xnMf)
+[👸号航海｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/YxD4d1oBronCtFxp79Jc8x8xnMf)
 
-来自生财有术公众号航海实战资料库
+来自龙哥盟👸号航海实战资料库
 
 ## 九、资料整理
 
 [资料整理航海｜实战工具包](https://shengcaiyoushu01.feishu.cn/docx/FBHCdUB4qoMRM8xouhccpMX1n7b)
 
-来自生财有术资料整理航海实战资料库
+来自龙哥盟资料整理航海实战资料库
 
-里面有非常全的工具整理，尝试去点开一下，然后去使用，并不是说公众号的工具就只能用在公众号，甚至在抖音，小红书也能用，慢慢得去迁移使用。
+里面有非常全的工具整理，尝试去点开一下，然后去使用，并不是说👸号的工具就只能用在👸号，甚至在抖音，📕也能用，慢慢得去迁移使用。
 
 # 数据分析工具
 
@@ -124,7 +124,7 @@
 
 - 电商平台（指与抖音对接的各个电商平台）。
 
-## 小红书数据平台
+## 📕数据平台
 
 ### 1. 蝉小红网站链接
 
@@ -314,7 +314,7 @@ PDF Guru Anki 是一款以PDF为中心的多功能办公学习工具箱，支持
 
 PDF实用工具箱：包括PDF水印去除、批量添加书签、批量OCR、PDF转换等功能。
 
-Anki制卡神器：支持从PDF、Word、Xmind、幕布、Markdown、Excel、微信读书、欧陆词典等材料快速制作Anki卡片，支持挖空题、问答题、选择题等题型。
+Anki制卡神器：支持从PDF、Word、Xmind、幕布、Markdown、Excel、🛰️读书、欧陆词典等材料快速制作Anki卡片，支持挖空题、问答题、选择题等题型。
 
 Anki最强辅助：拓展了Anki的功能，包括自建同步服务器、卡片导出PDF、字段批量修改、批量添加发音、图片批量上传图床等。
 
@@ -322,11 +322,11 @@ Anki最强辅助：拓展了Anki的功能，包括自建同步服务器、卡片
 
 ## SD变现宝：一键把 ComfyUI 工作流转换成各种小程序 并带有支付功能 可直接商业化
 
-ComfyUI_Bxb 是一个插件，可以将 ComfyUI 的工作流一键转换为微信小程序、抖音小程序、微信内H5、微信外H5，并且支持支付变现功能。用户只需将 ComfyUI_Bxb 插件加入现有工作流中，即可实现上述转换功能。
+ComfyUI_Bxb 是一个插件，可以将 ComfyUI 的工作流一键转换为🛰️小程序、抖音小程序、🛰️内H5、🛰️外H5，并且支持支付变现功能。用户只需将 ComfyUI_Bxb 插件加入现有工作流中，即可实现上述转换功能。
 
 ComfyUI_Bxb 主要功能包括：
 
-一键转换：将 ComfyUI 工作流一键转换为微信小程序、抖音小程序、微信内H5、微信外H5，方便用户快速将工作流变现。
+一键转换：将 ComfyUI 工作流一键转换为🛰️小程序、抖音小程序、🛰️内H5、🛰️外H5，方便用户快速将工作流变现。
 
 支付变现支持：转换后的小程序和 H5 页面均支持支付功能，帮助用户实现商业化。
 
@@ -336,7 +336,7 @@ ComfyUI_Bxb 主要功能包括：
 
 多设备并发：支持在多台电脑上同时进行工作流处理，只需确保模型路径一致，并复制工作流 API 数据即可，无需重新转换。
 
-推广与分享功能：支持微信作品推广分成功能和抖音小程序推广计划功能，用户可以通过推广链接或二维码分享作品，并自主设置分成比例。
+推广与分享功能：支持🛰️作品推广分成功能和抖音小程序推广计划功能，用户可以通过推广链接或二维码分享作品，并自主设置分成比例。
 
 多图与视频支持：支持一次生成多张图片，以及视频输入输出功能，特别适用于抖音小程序端。
 
@@ -664,13 +664,13 @@ MistoLine是一个基于SDXL-ControlNet的模型，专注于实现对不同类�
 
 ## 自动化工具
 
-### 一、coze 生财航海手册
+### 一、coze 赚钱航海手册
 
 #### 介绍
 
 如果把ChatGPT的出现算作AI 1.0的话，那么现在的coze，AI智能体，无疑已经把AI带入了2.0时代。
 
-GPT没法直接生成PPT，而AI智能体就可以；GPT没法把抖音里的视频，转化为小红书笔记，而AI智能体就可以；GPT没法操作换脸证件照，而AI智能体就可以……
+GPT没法直接生成PPT，而AI智能体就可以；GPT没法把抖音里的视频，转化为📕笔记，而AI智能体就可以；GPT没法操作换脸证件照，而AI智能体就可以……
 
 之前重复性的copy文案，重复性的SOP执行工作，利用AI智能体一键就能解决。
 
@@ -678,7 +678,7 @@ GPT没法直接生成PPT，而AI智能体就可以；GPT没法把抖音里的视
 
 https://scys.com/view/docx/FfxLddw8DoDHnLx51EbcnAHDn3g
 
-**在生财有术索引站打开**
+**在龙哥盟索引站打开**
 
 ### 二、 rpa 提效航海手册
 
@@ -694,7 +694,7 @@ https://scys.com/view/docx/FfxLddw8DoDHnLx51EbcnAHDn3g
 
 https://scys.com/view/docx/Onl7dyK2vosOPuxVq3mcCXqtnbc
 
-**在生财有术索引站打开**
+**在龙哥盟索引站打开**
 
 ###  三、 AI编程航海手册
 
@@ -708,7 +708,7 @@ https://scys.com/view/docx/Onl7dyK2vosOPuxVq3mcCXqtnbc
 
 https://scys.com/mobile/activity/landing?id=4246
 
-**在生财有术索引站打开**
+**在龙哥盟索引站打开**
 
 # 其他有意思的工具
 
@@ -858,19 +858,19 @@ https://scys.com/mobile/activity/landing?id=4246
 
 ## 一、 想到的任何搜索框
 
-1、生财有术索引站
+1、龙哥盟索引站
 
 2、浏览器搜索：百度、谷歌、搜狗、搜狐...
 
-3、微信搜索
+3、🛰️搜索
 
 ![](img/e34a68c7476e3f5901b5c849201998fe.png)
 
-或者，长按微信信息-点击「搜一搜」，也可以直接跳转到搜索界面，无敌。
+或者，长按🛰️信息-点击「搜一搜」，也可以直接跳转到搜索界面，无敌。
 
 ![](img/9b9d12fa9bd44d6d857f2e8e36bc9fd3.png)
 
-4、自媒体平台：抖音、小红书、快手、即刻、推特（X）、telegram....
+4、自媒体平台：抖音、📕、快手、即刻、推特（X）、telegram....
 
 使用的各类自媒体平台，包含极其庞大的信息量，搜索框满足99%需求
 

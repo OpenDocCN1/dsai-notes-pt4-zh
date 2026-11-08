@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/Yf3wdwlZ9oLwQBxifTAc9JJVnyf](https://aigcreative.feishu.cn/docx/Yf3wdwlZ9oLwQBxifTAc9JJVnyf)
 
-> 来源：公众号：FishAI
+> 来源：👸号：FishAI
 
 > 链接：https://mp.weixin.qq.com/s/jUHG00e8v0SjOuWSmqVwGw
 

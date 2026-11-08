@@ -118,7 +118,7 @@ motion-effect：https://github.com/CatxFish/motion-effect
 
 在obs调用手机作为摄像头
 
-手机版：需要加**微信dqtx33****有优惠**
+手机版：需要加**🛰️dqtx33****有优惠**
 
 Windows下载：https://www.e2esoft.cn/ivcam/
 

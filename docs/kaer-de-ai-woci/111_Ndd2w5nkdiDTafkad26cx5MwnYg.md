@@ -62,7 +62,7 @@ https://clawhub.ai/alex3alex/openclaw-backup
 
 https://github.com/chenhg5/cc-connect
 
-我愿称之为超级连接器，把主流的7个Agent， Claude Code，Codex，Gemini CLI，OpenCode等接到9个im平台， 飞书，Discord，QQ啊，啥的都有。
+我愿称之为超级连接器，把主流的7个Agent， Claude Code，Codex，Gemini CLI，OpenCode等接到9个im平台， 飞书，Discord，🐧啊，啥的都有。
 
 都支持切换模型，调整推理强度，设置权限模式和定时任务。
 

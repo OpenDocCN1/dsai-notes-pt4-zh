@@ -156,7 +156,7 @@
 
 #### **扣子账号**
 
-扣子平台大家应该都熟悉了，怎么注[AI智能体-安卓手机也能玩转自动化：打造小红书文案提取+AI二创一条龙工作流教程](https://w63nbfedzw.feishu.cn/docx/JLxDdgB43ocSV2xpoadcuP9Yn4b?w0J6w=1#A7SNdp3YroOBPnx7opCcq7N0nQe)和获取令牌就不详细描述了，我之前的文章 里有令牌获取的方法。
+扣子平台大家应该都熟悉了，怎么注[AI智能体-安卓手机也能玩转自动化：打造📕文案提取+AI二创一条龙工作流教程](https://w63nbfedzw.feishu.cn/docx/JLxDdgB43ocSV2xpoadcuP9Yn4b?w0J6w=1#A7SNdp3YroOBPnx7opCcq7N0nQe)和获取令牌就不详细描述了，我之前的文章 里有令牌获取的方法。
 
 官网：https://coze.cn/
 

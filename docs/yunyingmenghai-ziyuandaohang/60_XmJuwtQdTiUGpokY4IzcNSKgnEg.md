@@ -60,7 +60,7 @@
 | arxiv-watcher | ArXiv 论文搜索 | 学术论文监控与摘要生成 |
 | github-ai-trends | GitHub AI 趋势排行 | 开源项目热度追踪 |
 | news-summary | 国际新闻摘要 | BBC/Reuters/NPR 等 RSS 聚合 |
-| xiaohongshu | 小红书 MCP | 小红书内容获取与数据分析 |
+| xiaohongshu | 📕 MCP | 📕内容获取与数据分析 |
 
 ### 2. 内容创作类（4个）
 
@@ -154,7 +154,7 @@
 | --- | --- | --- |
 | **核心定位** | 个人 AI 助手 + 自动化工作流 | 企业办公 + 浏览器增强 |
 | **文档处理** | 依赖 Tencent Docs（在线） | 原生 Office 全家桶（本地） |
-| **信息获取** | 17搜索引擎 + ArXiv + 小红书 | 钉钉生态 + 12306/携程/大众点评 |
+| **信息获取** | 17搜索引擎 + ArXiv + 📕 | 钉钉生态 + 12306/携程/大众点评 |
 | **平台支持** | Win(30)/Mac(33)/Linux(15) | Win/Mac/Linux 全平台 |
 | **最佳用户** | 自媒体创作者、研究员、极客 | 企业办公人员、商务人士 |
 | **特色功能** | 财报追踪、创业验证、去AI味写作 | 钉钉全家桶、差旅查询 |
@@ -203,7 +203,7 @@ powershell -ExecutionPolicy Bypass -File file-skill/scripts/organize.ps1 &quot;~
 bash file-skill/scripts/organize.sh ~/Desktop phase1
 ```
 
-场景 2：搜索小红书热点（QClaw）
+场景 2：搜索📕热点（QClaw）
 
 ```
 xiaohongshu/scripts/search.sh &quot;春节旅游攻略&quot;
@@ -245,7 +245,7 @@ openclaw run 12306-train-query --from 北京 --to 上海 --date 2026-03-22
 
 +   **使用范围**：提取仅用于学习研究，商用请遵守原软件许可协议
 
-+   **API 密钥**：涉及第三方服务的 Skills（邮件、钉钉、小红书、12306 等）需自行配置 API 凭证
++   **API 密钥**：涉及第三方服务的 Skills（邮件、钉钉、📕、12306 等）需自行配置 API 凭证
 
 ### 5.2 平台兼容性
 

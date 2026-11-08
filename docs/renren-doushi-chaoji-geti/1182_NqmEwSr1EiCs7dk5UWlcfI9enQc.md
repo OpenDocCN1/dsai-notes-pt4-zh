@@ -29,7 +29,7 @@
 
 # 活动链接
 
-微信打开活动页链接，或复制链接手机浏览器打开
+🛰️打开活动页链接，或复制链接手机浏览器打开
 
 https://wmt.aibank.com/operation/marketing/#/novice/home/ACT20230131135608898377/TF001/TF001
 

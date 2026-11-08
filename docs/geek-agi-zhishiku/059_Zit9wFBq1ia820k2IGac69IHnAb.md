@@ -25,6 +25,6 @@
 | 阿绎 AYi([@AYi_AInotes](https://x.com/@AYi_AInotes)) | 《2026最新OpenClaw接入Telegram喂饭级教程(小白零基础适用),7分钟上手、代码命令一键复制即可》 | [h](https://x.com/AYi_AInotes/status/2027000350646161722)ttps://x.com/AYi_AInotes/status/2027000350646161722 |
 | [Karry | Vibi](https://x.com/@karry_viber)ng ...(@karry_viber) | 《Discord 才是 OpenClaw 正确的打开方式》 | [ttps://](https://x.com/karry_viber/status/2023227390433079722)[x.com/karry_viber/status](https://x.com/karry_viber/status/2023227390433079722)/2023227390433079722 |
 | 知县｜zhixian([@zhixianio](https://x.com/@zhixianio)) | 《Agent 训练师进阶指南：用 Discord 打造高效 OpenClaw 协作系统》 | [https://x.com/zhixianio/status](https://x.com/zhixianio/status/2018595121084994002)/2018595121084994002 |
-| scavin([@scavin](https://x.com/@scavin)) | 《QQ 官方开放 OpenClaw 接入（详细教程）》 | [https://x.com/scavin/status](https://x.com/scavin/status/2030179259520528761)/2030179259520528761 |
+| scavin([@scavin](https://x.com/@scavin)) | 《🐧 官方开放 OpenClaw 接入（详细教程）》 | [https://x.com/scavin/status](https://x.com/scavin/status/2030179259520528761)/2030179259520528761 |
 | 俊哥AI([@jungeAGI](https://x.com/@jungeAGI)) | 《OpenClaw在飞书和Telegram上养了12个AI员工，它们还会自己开会》 | [https://x.com/jungeAGI/status](https://x.com/jungeAGI/status/2024791301783503083)/2024791301783503083 |
 | [Berryxia.AI](https://berryxia.ai/)([@berryxia](https://x.com/@berryxia)) | 《五步用Telegram创建 OpenClaw 多角色群聊！附邪修大法！（实战分享+学不会打我）》 | [https://x.com/berryxia/status](https://x.com/berryxia/status/2029950589313101902)/2029950589313101902 |

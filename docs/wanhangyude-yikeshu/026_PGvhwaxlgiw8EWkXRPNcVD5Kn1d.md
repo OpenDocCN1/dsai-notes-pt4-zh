@@ -146,7 +146,7 @@
 
 +   需要OpenAI账号
 
-+   可能需要梯子
++   可能需要🪜
 
 ---
 
@@ -280,9 +280,9 @@ A: Cursor体验更好，Claude Code能力更强。建议都用，不同场景用
 
 A: 如果你用ChatGPT Plus，Codex是不错的选择。
 
-**Q: 需要梯子吗？**
+**Q: 需要🪜吗？**
 
-A: Cursor需要梯子（或用镜像）。Claude Code可以用国内模型（智谱/DeepSeek），不需要梯子。
+A: Cursor需要🪜（或用镜像）。Claude Code可以用国内模型（智谱/DeepSeek），不需要🪜。
 
 ---
 

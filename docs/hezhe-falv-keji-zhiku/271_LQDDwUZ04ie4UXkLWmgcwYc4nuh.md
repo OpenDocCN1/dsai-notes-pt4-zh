@@ -74,6 +74,6 @@
 
 因此，我们不做代运营、不做陪跑，而是和大家一起成长。
 
-ps：对我们[【新质律所】](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488076&idx=1&sn=dbef5b7fd991f3093b986860f23fe16c&chksm=fac528eccdb2a1fa2ff57b6ca251cffb59667058105b0b4d5f79c1df7d3b5b2a2b2f5226c4fa&scene=21#wechat_redirect)感兴趣的朋友，可以关注我们牵头人：公众号「智勤原凯」。
+ps：对我们[【新质律所】](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488076&idx=1&sn=dbef5b7fd991f3093b986860f23fe16c&chksm=fac528eccdb2a1fa2ff57b6ca251cffb59667058105b0b4d5f79c1df7d3b5b2a2b2f5226c4fa&scene=21#wechat_redirect)感兴趣的朋友，可以关注我们牵头人：👸号「智勤原凯」。
 
 总之，对于律师来说，现阶段最应该做的，其实是钻研内容，先自己低成本做起来 —— 创业的精神在于快速推出、小步迭代，先完成、再完美，而不是一上来就花很多钱买各种设备，俗话说得好：“差生文具多”。这就像开公司，很多决策必须创始人自己想清楚，如果创始人把一些重要事情交给咨询公司，基本上拿不到结果，公司也要完了。

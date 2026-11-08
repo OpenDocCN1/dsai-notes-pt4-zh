@@ -10,7 +10,7 @@
 
 方式2：请到手机google邮箱APP尝试注册一遍，大概率可以成功
 
-方式3：安装QQ邮箱，添加gmail账号，在这里新建账号【好处是google无法检测注册环境】
+方式3：安装🐧邮箱，添加gmail账号，在这里新建账号【好处是google无法检测注册环境】
 
 ![](img/d185f3f87f9a0ae3eb89610c036320a6.png)
 
@@ -76,7 +76,7 @@
 
 # 注册ChatGPT账号
 
-魔法上网：
+🪜：
 
 https://chat.openai.com/chat
 
@@ -116,7 +116,7 @@ https://chat.openai.com/chat
 
 > 目前通过外国手机接码平台sms，大概率会失败，如卡在绑手机号这一步时
 
-> 可以将【GPT注册邮箱+密码】，发博主微信xuqiwei1986，找其它渠道帮您完成注册
+> 可以将【GPT注册邮箱+密码】，发博主🛰️xuqiwei1986，找其它渠道帮您完成注册
 
 ![](img/ccda4f630d445254e8f4fc23dd466d10.png)
 

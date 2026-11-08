@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/uVFSrYWQTxQFkseULI4aKA)qq.com/s/uVFSrYWQ...
 
-> 公众号：设计师doo
+> 👸号：设计师doo
 
 今天向大家推荐一个Midjourney的新功能：情绪板（moodboard） 。该功能简明易用，效果显著。
 

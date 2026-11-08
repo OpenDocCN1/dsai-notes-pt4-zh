@@ -120,7 +120,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/rEmBs6_wcgQZqSzfqLHp9A)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/rEmBs6_wcgQZqSzfqLHp9A)
 
 +   [techcrunch原文](https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/)
 
@@ -166,7 +166,7 @@
 
 +   该研究涵盖RAG、长上下文压缩、KV Cache管理、模型内部知识编辑等记忆方向🧠。
 
-+   主题直播将于2025.12.24 20:00-21:00在微信视频号和B站直播间进行📺。
++   主题直播将于2025.12.24 20:00-21:00在🛰️视频号和B站直播间进行📺。
 
 +   论文《Rethinking Memory in LLM-based Agents...》已开源，含arxiv和github链接🛠️。
 
@@ -176,7 +176,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信文章链接](https://mp.weixin.qq.com/s/z4l-TwilB58lancOp_ojog)
++   [🛰️文章链接](https://mp.weixin.qq.com/s/z4l-TwilB58lancOp_ojog)
 
 +   [论文地址](https://arxiv.org/abs/2505.00675)
 

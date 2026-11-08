@@ -94,7 +94,7 @@
 
 > 视频：用Coze的工作流，攒一个爆款短视频文案工具
 
-> [万](https://mp.weixin.qq.com/s/r40BDHKq8NC547cehAzOzw)字实践教程，全面入门 Coze 工作流｜用 Coze 打造 AI 精读专家，复刻 10 万粉公众号的创作生产力
+> [万](https://mp.weixin.qq.com/s/r40BDHKq8NC547cehAzOzw)字实践教程，全面入门 Coze 工作流｜用 Coze 打造 AI 精读专家，复刻 10 万粉👸号的创作生产力
 
 > 3分钟用字节“扣子”打造股票AI分析工作流
 
@@ -222,7 +222,7 @@
 
 ### Bot 分享
 
-> [万](https://mp.weixin.qq.com/s/r40BDHKq8NC547cehAzOzw)字实践教程，全面入门 Coze 工作流｜用 Coze 打造 AI 精读专家，复刻 10 万粉公众号的创作生产力
+> [万](https://mp.weixin.qq.com/s/r40BDHKq8NC547cehAzOzw)字实践教程，全面入门 Coze 工作流｜用 Coze 打造 AI 精读专家，复刻 10 万粉👸号的创作生产力
 
 > [Coze教程] “菜品秀秀”bot制作流程大揭密
 
@@ -244,7 +244,7 @@
 
 > 视频：用coze一键生成朋友圈文案
 
-> [视频：COZE：中小企业均可0门槛创建业务agent，支持接入微信公众号、微信](https://www.bilibili.com/video/BV1DA4m1w72p/)客服、discord、tele等各种终端，实现公司AI客服、销售机器人等触达客户
+> [视频：COZE：中小企业均可0门槛创建业务agent，支持接入🛰️👸号、🛰️](https://www.bilibili.com/video/BV1DA4m1w72p/)客服、discord、tele等各种终端，实现公司AI客服、销售机器人等触达客户
 
 > [视频：【Agent共学第二期】许键分享｜](https://www.bilibili.com/video/BV1Cx4y1n7yU/)拆解“离谱村捏剧本”coze bot思路
 

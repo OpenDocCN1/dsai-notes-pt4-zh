@@ -170,7 +170,7 @@ False，则表明没有安装GPU版本的PyTorch，或者CUDA环境没有正确�
 
 ![](img/560b0a3ea1faa989f2cef495453cbef6.png)
 
-注：需要开科学上网才能进入Hugging Face官网执行下载，如果没有，可以选择进入 ModelScope 魔搭社区，按照教程执行下载。
+注：需要开🪜才能进入Hugging Face官网执行下载，如果没有，可以选择进入 ModelScope 魔搭社区，按照教程执行下载。
 
 ![](img/ce359385bd4f01f4a9942b64e896eff5.png)
 

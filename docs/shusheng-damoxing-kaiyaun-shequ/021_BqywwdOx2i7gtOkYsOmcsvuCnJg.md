@@ -360,7 +360,7 @@ docker compose up -d
 # 首次启动可用docker compose --profile &quot;*&quot; up -d
 ```
 
-注意：首次启动docker服务的时候会从镜像源拉取镜像，默认镜像源https://registry-1.docker.io/v2/ 需要挂梯子访问，也可按如下方式修改为国内镜像源：
+注意：首次启动docker服务的时候会从镜像源拉取镜像，默认镜像源https://registry-1.docker.io/v2/ 需要挂🪜访问，也可按如下方式修改为国内镜像源：
 
 +   **linux环境下 **打开/etc/docker/deamon.json文件，若配置阿里镜像源，编辑如下：
 

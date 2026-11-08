@@ -163,7 +163,7 @@ openai.ChatCompletion.create(
 
 1.  在PostgreSQL得出对应的结果集。然后根据拿到的结果集，将结果集加入到请求ChatGPT的prompt中。
 
-系统交互图来自宝玉的微博（ [https:// m.weibo.cn/status](https://link.zhihu.com/?target=https%3A//m.weibo.cn/status/4875446737175262)/48754 46737175262  ）如下：
+系统交互图来自宝玉的🧣（ [https:// m.weibo.cn/status](https://link.zhihu.com/?target=https%3A//m.weibo.cn/status/4875446737175262)/48754 46737175262  ）如下：
 
 ![](img/832b9fe179830af8161e2af929b4fbc0.png)
 
@@ -487,7 +487,7 @@ langchain的向量搜索
 
 在开始搭建垂直知识库的问答机器人前，你需要做以下准备：
 
-+   微信小程序账号：如果您还没有微信小程序账号，可以在微信公众平台注册（如果没有小程序，也可以发布为移动端H5应用）
++   🛰️小程序账号：如果您还没有🛰️小程序账号，可以在🛰️公众平台注册（如果没有小程序，也可以发布为移动端H5应用）
 
 +   开通腾讯云微搭低代码：微搭低代码是腾讯云官方**推出的一款低代码开发工**具，可以直接访问 腾讯云微搭官网[4] 免费开通注册
 

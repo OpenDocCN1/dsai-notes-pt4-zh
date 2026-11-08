@@ -1,4 +1,4 @@
-# 公众号文章
+# 👸号文章
 
 > 来源：[https://qianniucity.feishu.cn/docx/KHMudKOrioHWKOxIR2zcSZZnnsO](https://qianniucity.feishu.cn/docx/KHMudKOrioHWKOxIR2zcSZZnnsO)
 
@@ -48,4 +48,4 @@ Gemini 2.0并不是简单的技术迭代，而是AI发展史上的重要里程�
 
 你是否已经迫不及待想体验Gemini 2.0的强大能力？欢迎在评论区分享你的看法，与我们一起探讨这款AI模型的无限可能！
 
-这篇博文针对Gemini 2.0的技术特性进行了详细解读，同时结合了未来趋势和应用场景，适合发布在科技类公众号或博客中吸引读者关注。
+这篇博文针对Gemini 2.0的技术特性进行了详细解读，同时结合了未来趋势和应用场景，适合发布在科技类👸号或博客中吸引读者关注。

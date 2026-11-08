@@ -24,7 +24,7 @@
 
 +   注重将AI技术与创意内容相结合。
 
-+   有合作需求可联系微信zhouxiangaspirin，备注整活编辑部。
++   有合作需求可联系🛰️zhouxiangaspirin，备注整活编辑部。
 
 > 关键词：WaytoAGI，整活编辑部，AI创意，合作
 

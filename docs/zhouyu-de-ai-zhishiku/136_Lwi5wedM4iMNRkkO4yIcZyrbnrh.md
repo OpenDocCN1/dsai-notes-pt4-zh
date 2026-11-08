@@ -1,12 +1,12 @@
-# 公众号
+# 👸号
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/X2TOdrX6No3w22xUGWVc2uUVn8e](https://xatc0v8uz5m.feishu.cn/docx/X2TOdrX6No3w22xUGWVc2uUVn8e)
 
-# 公众号封面
+# 👸号封面
 
 使用的提示词
 
-[向阳乔木：一键解决公众号封面难题，这个工具太省心了！附：提示词解决方案，也很赞。](https://waytoagi.feishu.cn/wiki/QQEmwosqGiPHs8kuhyKc1xBun4e)
+[向阳乔木：一键解决👸号封面难题，这个工具太省心了！附：提示词解决方案，也很赞。](https://waytoagi.feishu.cn/wiki/🐧EmwosqGiPHs8kuhyKc1xBun4e)
 
 提示词秘籍生成器
 
@@ -589,6 +589,6 @@ Markdown 是一种简单、强大且易于掌握的标记语言，通过学习�
 }
 ```
 
-[Doocs公众号文章配色主题](https://xiangyangqiaomu.feishu.cn/wiki/A0xEweLIiib4MTkBePTcuElnnZb)
+[Doocs👸号文章配色主题](https://xiangyangqiaomu.feishu.cn/wiki/A0xEweLIiib4MTkBePTcuElnnZb)
 
 使用说明

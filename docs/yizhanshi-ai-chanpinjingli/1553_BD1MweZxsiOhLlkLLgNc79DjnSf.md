@@ -20,7 +20,7 @@
 | --- | --- | --- |
 | 总 | [Dify、n8n、Coze、Fastgpt、Ragflow到底该怎么选？超详细指南～](https://waytoagi.feishu.cn/wiki/VNb1w4qOGiAUo4kSQPRcS9n8nEc) |  |
 | Dify | [缪斯：Dify + MCP Agent 新手实操指南](https://waytoagi.feishu.cn/wiki/YqqNwzKg7iodD0kL2PqctIean3e?from=from_copylink) |  |
-| n8n | [n8n 全流程教程 | 一键实现从 YouTube 视频到公众号文案！](https://waytoagi.feishu.cn/wiki/OeUcwSFENi4t29k7pSccXw2Dntf) |  |
-| Coze | [一泽Eze:万字实践教程，全面入门 Coze 工作流｜用 Coze 打造 AI 精读专家智能体，复刻 10 万粉公众号的创作生产力](https://waytoagi.feishu.cn/wiki/CDkjwEQceiGc3qkbkuucW5WAnTb?from=from_copylink) |  |
-| Fastgpt | [张梦飞：【全网最细】从LLM大语言模型、知识库到微信机器人的全本地部署教程](https://waytoagi.feishu.cn/wiki/LjcLwLM5hihSOukoPBzcqOlon7f?from=from_copylink)[张梦飞：【知识库】FastGPT+OneAPI+COW带有知识库的机器人完整教程](https://waytoagi.feishu.cn/wiki/XnvIwd8NkiDefHkmbobcCfsBnKg?from=from_copylink) |  |
+| n8n | [n8n 全流程教程 | 一键实现从 YouTube 视频到👸号文案！](https://waytoagi.feishu.cn/wiki/OeUcwSFENi4t29k7pSccXw2Dntf) |  |
+| Coze | [一泽Eze:万字实践教程，全面入门 Coze 工作流｜用 Coze 打造 AI 精读专家智能体，复刻 10 万粉👸号的创作生产力](https://waytoagi.feishu.cn/wiki/CDkjwEQceiGc3qkbkuucW5WAnTb?from=from_copylink) |  |
+| Fastgpt | [张梦飞：【全网最细】从LLM大语言模型、知识库到🛰️机器人的全本地部署教程](https://waytoagi.feishu.cn/wiki/LjcLwLM5hihSOukoPBzcqOlon7f?from=from_copylink)[张梦飞：【知识库】FastGPT+OneAPI+COW带有知识库的机器人完整教程](https://waytoagi.feishu.cn/wiki/XnvIwd8NkiDefHkmbobcCfsBnKg?from=from_copylink) |  |
 | Ragflow | [RAGflow 能力拆解](https://waytoagi.feishu.cn/wiki/GLrLw9Jh7i4qFokN8bXcMO2MnLc?from=from_copylink)[大模型RAG问答行业最佳案例及微调、推理双阶段实现模式：基于模块化(Modular)RAG自定义RAG Flow](https://waytoagi.feishu.cn/wiki/OGlLwsUR2iHajokZ4Fecxf5Pncb?from=from_copylink)[胎教级教程：万字长文带你理解 RAG 全流程](https://waytoagi.feishu.cn/wiki/QBssw7z4oiGS40kDlltcjozBnxc?from=from_copylink) |  |

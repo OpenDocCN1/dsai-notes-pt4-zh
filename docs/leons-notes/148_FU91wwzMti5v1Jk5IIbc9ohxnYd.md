@@ -75,7 +75,7 @@
 
 或学习或研究都很重要，更重要的是要学以致用。知必然要表现为行，不行则不能算真知。
 
-[以门缝中窥世界 👀](https://sm84lfdag7.feishu.cn/docx/GqP7dKulpoOHC5xwgCPcBKWHnLd#WPuud4LQQoN4L3xrToWcY85Onzf)023 年 8 月份的其他思考：
+[以门缝中窥世界 👀](https://sm84lfdag7.feishu.cn/docx/GqP7dKulpoOHC5xwgCPcBKWHnLd#WPuud4L🐧oN4L3xrToWcY85Onzf)023 年 8 月份的其他思考：
 
 ## 有什么好玩的事情发生
 

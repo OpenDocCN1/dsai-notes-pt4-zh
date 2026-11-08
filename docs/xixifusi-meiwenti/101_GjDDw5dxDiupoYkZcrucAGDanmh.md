@@ -6,7 +6,7 @@
 
 >
 
-> [微信文章](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2652991241&idx=1&sn=98dc060da3a9ac70402e25bfa0f6c223&chksm=7e5412bf49239ba9c3c32ccb3d12bad2a61a8844b5ccbeb0967eba81293017e0fb1e49530b59&mpshare=1&scene=1&srcid=0501bymh4PhvmLsF7kpPrGDb&sharer_sharetime=1682914422175&sharer_shareid=53419fa24e911f32abc2fd25def030d6#rd)
+> [🛰️文章](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2652991241&idx=1&sn=98dc060da3a9ac70402e25bfa0f6c223&chksm=7e5412bf49239ba9c3c32ccb3d12bad2a61a8844b5ccbeb0967eba81293017e0fb1e49530b59&mpshare=1&scene=1&srcid=0501bymh4PhvmLsF7kpPrGDb&sharer_sharetime=1682914422175&sharer_shareid=53419fa24e911f32abc2fd25def030d6#rd)
 
 《Make Something Wonderful》是本值得一读的书，我归纳了四个要点：
 

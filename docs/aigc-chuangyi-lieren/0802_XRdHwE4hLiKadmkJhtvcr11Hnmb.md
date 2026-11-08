@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/oFg0DVfNd-wHWXH14B2kSA)qq.com/s/oFg0DVfN...
 
-> 公众号：齐木AI
+> 👸号：齐木AI
 
 现在领先的编程平台有哪些？
 

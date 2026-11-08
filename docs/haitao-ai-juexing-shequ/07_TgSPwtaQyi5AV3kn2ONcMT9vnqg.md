@@ -1,12 +1,12 @@
-# Coze+多维表格+DeepSeek 实现小红书素材采集
+# Coze+多维表格+DeepSeek 实现📕素材采集
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/F6GOdSIe7oyztcxxwq8c1giknQf](https://zinxkclpk97.feishu.cn/docx/F6GOdSIe7oyztcxxwq8c1giknQf)
 
-拆解如何搭建Coze工作流，实现小红书笔记采集+记录至飞书表格
+拆解如何搭建Coze工作流，实现📕笔记采集+记录至飞书表格
 
 流程要点：
 
-+   小红书笔记获取
++   📕笔记获取
 
 +   图片文字OCR提取
 
@@ -18,7 +18,7 @@
 
 流程搭建：
 
-+   小红书插件
++   📕插件
 
 +   循环节点
 
@@ -34,4 +34,4 @@
 
 最后，发布飞书机器人/bot/豆包
 
-多维表格：[小红书采集案例](https://zinxkclpk97.feishu.cn/base/VVC3bH4fIa8zuOs7wyFc4Dgknjd?table=tblSZ8xr2NlwbAX7&view=vew2hyO2Bw)
+多维表格：[📕采集案例](https://zinxkclpk97.feishu.cn/base/VVC3bH4fIa8zuOs7wyFc4Dgknjd?table=tblSZ8xr2NlwbAX7&view=vew2hyO2Bw)

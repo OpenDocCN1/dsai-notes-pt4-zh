@@ -27,7 +27,7 @@
 | 付费服务 | [Coze智能体实战VIP专属](https://zinxkclpk97.feishu.cn/wiki/XFcWwmKSGirqXTkJGZScqvZLnWb?fromScene=spaceOverview) |
 | [公开学习资料（持续更新）](https://zinxkclpk97.feishu.cn/wiki/PEi5wneRoihWvJkxYducNHDOnQe) | [AI智能体基础速通（附视频）](https://zinxkclpk97.feishu.cn/wiki/GmilwuxjIiuIPjkNzhtcqFyXnbb) |
 |  | [优质资源站点同步](https://zinxkclpk97.feishu.cn/wiki/SbDJw20tSiDAk7kFpNKc6JbVnYf) |
-|  | [公众号公开案例](https://zinxkclpk97.feishu.cn/wiki/COYdweFkKiZzZ0ktmnzcQjPNnbc) |
+|  | [👸号公开案例](https://zinxkclpk97.feishu.cn/wiki/COYdweFkKiZzZ0ktmnzcQjPNnbc) |
 |  | [AI工具大礼包](https://zinxkclpk97.feishu.cn/wiki/Rd7KwM8n0ibxnvkooWmcgFianbg) |
 |  | [超级个体从零到百万变现](https://zinxkclpk97.feishu.cn/wiki/CX9fwpuQoivgrakbY0aceXhxn4e) |
 |  | [DeepSeek资料](https://zinxkclpk97.feishu.cn/wiki/KCBew4BowiMG5Kkem4sc0a3knph) |

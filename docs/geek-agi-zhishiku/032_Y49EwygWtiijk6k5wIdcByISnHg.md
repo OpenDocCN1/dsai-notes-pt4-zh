@@ -12,7 +12,7 @@
 
 ![](img/e5eba3967b31981c47f3ba95af2a0775.png)
 
-欢迎关注公众号👆
+欢迎关注👸号👆
 
 ```
 论文题目：BGE Landmark Embedding: A Chunking-Free Embedding Method For Retrieval Augmented Long-Context Large Language Models

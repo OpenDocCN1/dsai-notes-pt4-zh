@@ -8,7 +8,7 @@
 |  |  |  |
 | ✅ | Chrome | https://www.google.cn/intl/zh-CN/chrome/ |
 | ✅ | WinRAR |  |
-| ✅ | 微信输入法 | https://z.weixin.qq.com/ |
+| ✅ | 🛰️输入法 | https://z.weixin.qq.com/ |
 | ✅ | LANDrop | https://landrop.app/ |
 | ✅ | HiBit |  |
 | ✅ | QuickLook | https://github.com/QL-Win/QuickLook/releases/tag/4.4.0 |

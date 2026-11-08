@@ -4,7 +4,7 @@
 
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/qrImaZ5wi8McjutMONkcrw)qq.com/s/qrImaZ5w...
 
-> 公众号：卡尔的AI沃茨
+> 👸号：卡尔的AI沃茨
 
 **过**去一周，一个神秘模型伪装成小熊猫，以评分1172获得#1名，击败了FLUX1.1、Midjourney v6.1等一系列主流模型
 

@@ -1,16 +1,16 @@
-# 第一次参与生财有术分销，成为王牌种草官，我的从0到1之路
+# 第一次参与龙哥盟分销，成为王牌种草官，我的从0到1之路
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/IQBcdtV0ToTDtFxolrNcvhnYnLf](https://xuqiwei1986.feishu.cn/docx/IQBcdtV0ToTDtFxolrNcvhnYnLf)
 
 # **前言**
 
-圈友们好，我是吴泽承，第9期「生财有术」的王牌种草官。
+圈友们好，我是吴泽承，第9期「龙哥盟」的王牌种草官。
 
-说实话，在今年4月20日之前，我完全没有拉新经验，而且我是在4月19日晚上才续费的「生财有术」。所以，整个过程从有了拉新的想法，到开始行动，再到最后实现6天18万营业额、单日最高9.6万，且没有一单退费，可以说是一次全新的尝试。
+说实话，在今年4月20日之前，我完全没有拉新经验，而且我是在4月19日晚上才续费的「龙哥盟」。所以，整个过程从有了拉新的想法，到开始行动，再到最后实现6天18万营业额、单日最高9.6万，且没有一单退费，可以说是一次全新的尝试。
 
-这个过程对我来说非常有价值，也让我决定将分销「生财有术」作为一个长期项目来推进。
+这个过程对我来说非常有价值，也让我决定将分销「龙哥盟」作为一个长期项目来推进。
 
-我相信，有不少圈友同样认可「生财有术」的价值，并希望能推荐合适的人加入。因此，我整理了这段时间以来的实践经验，将从0到1完整分销的操作手册分享给大家，涵盖了引流、转化和交付的各个环节。
+我相信，有不少圈友同样认可「龙哥盟」的价值，并希望能推荐合适的人加入。因此，我整理了这段时间以来的实践经验，将从0到1完整分销的操作手册分享给大家，涵盖了引流、转化和交付的各个环节。
 
 为了尽可能呈现操作过程的全步骤，细节信息我会通过飞书链接呈现，大家可以点击跳转内容，深入了解每一个环节的具体操作。
 
@@ -22,7 +22,7 @@
 
 # **一、引流板块：精准触达潜在用户**
 
-想要分销「生财有术」，第一步就是精准找到真正对社群感兴趣的意向用户。
+想要分销「龙哥盟」，第一步就是精准找到真正对社群感兴趣的意向用户。
 
 这次我尝试了三种引流方式：
 
@@ -30,7 +30,7 @@
 
 +   合作社群，通过分享吸引意向用户
 
-+   利用「生财有术」提供的免费体验卡进行全渠道分发与付费推广。
++   利用「龙哥盟」提供的免费体验卡进行全渠道分发与付费推广。
 
 以下是我实践这三种引流方式的要点和操作细节。
 
@@ -54,11 +54,11 @@
 
 +   **释放价值**：清楚讲解价格及赠送福利，展示优惠力度，让潜在用户有行动的动力。
 
-+   **展示个人成长**：分享自己在「生财有术」中的成长与收获，让用户产生认同感，看到自己加入后的可能性。
++   **展示个人成长**：分享自己在「龙哥盟」中的成长与收获，让用户产生认同感，看到自己加入后的可能性。
 
 **实际操作：**
 
-+   [吴泽承：朋友圈激活引流（生财418活动内容分享）](https://sqtgjk175rz.feishu.cn/wiki/SouNwt6fPik1wDkeCngc52gHn0f)
++   [吴泽承：朋友圈激活引流（赚钱418活动内容分享）](https://sqtgjk175rz.feishu.cn/wiki/SouNwt6fPik1wDkeCngc52gHn0f)
 
 ## 三天体验卡引流（全渠道分发与付费推广）
 
@@ -70,7 +70,7 @@
 
 **实际操作：**
 
-+   利用免费体验卡进行全渠道分发，配合付费推广，精准触达更多对「生财有术」感兴趣的用户，形成有效的引流效果。
++   利用免费体验卡进行全渠道分发，配合付费推广，精准触达更多对「龙哥盟」感兴趣的用户，形成有效的引流效果。
 
 +   [吴泽承：三天体验卡引流（全渠道分发）](https://sqtgjk175rz.feishu.cn/wiki/Xk5qw335HihqCpkFap7cIJXlnMe)
 
@@ -78,13 +78,13 @@
 
 ## 分人群进行 1v1 转化
 
-当**潜在用户进入**到我的视野之后，接下来的重点就是如何展现「生财有术」的独特价值，并引导他们做出加入的决策。我采取了 1v1 转化 的方式，将意向用户分为三类，针对每一类用户制定量身定制的转化话术。
+当**潜在用户进入**到我的视野之后，接下来的重点就是如何展现「龙哥盟」的独特价值，并引导他们做出加入的决策。我采取了 1v1 转化 的方式，将意向用户分为三类，针对每一类用户制定量身定制的转化话术。
 
-在此基础上，我还通过展示「生财有术」的平台实力，结合我个人的成功案例，来增强他们的信任感与信心，最终促成转化。
+在此基础上，我还通过展示「龙哥盟」的平台实力，结合我个人的成功案例，来增强他们的信任感与信心，最终促成转化。
 
 我已经在文档中详细阐述了这些转化技巧，以及提高成交率的一些加分操作，可以点击查阅：
 
-[（吴泽承）如何精准说服不同类型用户加入「生财有术」社群](https://sqtgjk175rz.feishu.cn/wiki/FgWPwCEvTiYaudkKSNtcph1nnvk)
+[（吴泽承）如何精准说服不同类型用户加入「龙哥盟」社群](https://sqtgjk175rz.feishu.cn/wiki/FgWPwCEvTiYaudkKSNtcph1nnvk)
 
 ## 沟通时保持专注与激情
 
@@ -94,7 +94,7 @@
 
 我也分享了一些自己在转化过程中保持激情的小技巧，大家可以参考：
 
-[吴泽承「生财」陪伴群：群分享（与客户沟通如何保持专注与激情）](https://sqtgjk175rz.feishu.cn/wiki/YuDtwJKwoiOIDFknYIacEIInnDb)
+[吴泽承「赚钱」陪伴群：群分享（与客户沟通如何保持专注与激情）](https://sqtgjk175rz.feishu.cn/wiki/YuDtwJKwoiOIDFknYIacEIInnDb)
 
 ## 成交后分享成果与“报喜”心态
 
@@ -104,13 +104,13 @@
 
 [吴泽承：种草官俱乐部（报喜）](https://sqtgjk175rz.feishu.cn/wiki/WJJZwrAm9iHwtnkggsXcLUBpn6f)
 
-如果你也成功分销了「生财有术」，记得找生财官方加入“种草官俱乐部”，一起交流经验与心得。
+如果你也成功分销了「龙哥盟」，记得找赚钱官方加入“种草官俱乐部”，一起交流经验与心得。
 
 # 三、交付板块：如何增强新人加入社群后的参与感与变现能力
 
 我一直认为，成交是开始，不是结束。
 
-**所有通过我加入的**新圈友，我都会邀请他们进入我的专属「生财」陪伴群。我会在群内安排活动，邀请厉害的圈友进行群分享，持续给大家提供一个好的氛围。
+**所有通过我加入的**新圈友，我都会邀请他们进入我的专属「赚钱」陪伴群。我会在群内安排活动，邀请厉害的圈友进行群分享，持续给大家提供一个好的氛围。
 
 后续也有圈友通过群内分享，成功变现并做了复盘分享。这对我来说也是很大的正反馈。
 
@@ -120,7 +120,7 @@
 
 比如下面这个 **“送龙珠碎片”活动** 就是通过赠送奖励，激励大家参与航海实战。
 
-[吴泽承「生财」陪伴群：群活动（送龙珠碎片）](https://sqtgjk175rz.feishu.cn/wiki/LJR5wp5s1i2ZnrkQZxGcdI6VnDh)
+[吴泽承「赚钱」陪伴群：群活动（送龙珠碎片）](https://sqtgjk175rz.feishu.cn/wiki/LJR5wp5s1i2ZnrkQZxGcdI6VnDh)
 
 ## **群分享**
 
@@ -132,11 +132,11 @@
 
 +   正反馈快的项目，取得成果，更容易建立信心
 
-生财（5期）随心：“做项目如何选择手机”
+赚钱（5期）随心：“做项目如何选择手机”
 
 https://sqtgjk175rz.feishu.cn/wiki/P2SuwpO6Gi1lfAk5pfIc8hrQnQg
 
-吴泽承「生财」陪伴群：群分享“京东一号店会员权益如何最大化”
+吴泽承「赚钱」陪伴群：群分享“京东一号店会员权益如何最大化”
 
 https://sqtgjk175rz.feishu.cn/wiki/F9AqwI4xbiz6rrkOc0ucVyKMnyf
 
@@ -144,59 +144,59 @@ https://sqtgjk175rz.feishu.cn/wiki/F9AqwI4xbiz6rrkOc0ucVyKMnyf
 
 https://sqtgjk175rz.feishu.cn/wiki/Kq60wW14gibCkzkiSXiczMw9nnd
 
-生财（3期）渊杰：“免费坐高铁！如何进高铁贵宾室？”
+赚钱（3期）渊杰：“免费坐高铁！如何进高铁贵宾室？”
 
 https://sqtgjk175rz.feishu.cn/wiki/M9lswr92qiNHS8kjjhycmNcFnCc
 
-生财（3期）渊杰：“纪念币抢购和转让”
+赚钱（3期）渊杰：“纪念币抢购和转让”
 
 https://sqtgjk175rz.feishu.cn/wiki/NMumwEYw2iJIMpkAGiGcxlbznyb
 
-生财（8期）哆元：“比较基础的AI应用”分享
+赚钱（8期）哆元：“比较基础的AI应用”分享
 
 https://sqtgjk175rz.feishu.cn/wiki/UUmewHKdyiLUnWkPvpOcjgI7n8g
 
-吴泽承「生财」陪伴群：群分享（坚持的故事）
+吴泽承「赚钱」陪伴群：群分享（坚持的故事）
 
 https://sqtgjk175rz.feishu.cn/wiki/UYWWwjeZqicMmTk2fP3c5uK6nNx
 
-生财（航海教练）荷包蛋糕【 AI写作】实操教学分享
+赚钱（航海教练）荷包蛋糕【 AI写作】实操教学分享
 
-[生财（航海教练）荷包蛋糕【 AI写作】实操教学分享](https://sqtgjk175rz.feishu.cn/wiki/ZEDYwNxkti8DF5kw9KjcTseMn7b)
+[赚钱（航海教练）荷包蛋糕【 AI写作】实操教学分享](https://sqtgjk175rz.feishu.cn/wiki/ZEDYwNxkti8DF5kw9KjcTseMn7b)
 
-生财（5期）谢无敌《做对小红书关键词SEO布局，拿捏消息99+的流量密码！》
+赚钱（5期）谢无敌《做对📕关键词SEO布局，拿捏消息99+的流量密码！》
 
-[生财（5期）：谢无敌《做对小红书关键词SEO布局，拿捏消息99+的流量密码！》](https://sqtgjk175rz.feishu.cn/wiki/Vemcw5DSKiW1zPkXPrFc9HzmnFc)
+[赚钱（5期）：谢无敌《做对📕关键词SEO布局，拿捏消息99+的流量密码！》](https://sqtgjk175rz.feishu.cn/wiki/Vemcw5DSKiW1zPkXPrFc9HzmnFc)
 
-生财（6期）董文杰：“瞎学、瞎花、瞎忙”是阻碍我们赚钱、成长的三大隐形杀手！
+赚钱（6期）董文杰：“瞎学、瞎花、瞎忙”是阻碍我们赚钱、成长的三大隐形杀手！
 
-[ 生财（6期）董文杰：“瞎学、瞎花、瞎忙”是阻碍我们赚钱、成长的三大隐形杀手！](https://sqtgjk175rz.feishu.cn/wiki/PgIKwT0d0irwIzk7I84cwEtinyb)
+[ 赚钱（6期）董文杰：“瞎学、瞎花、瞎忙”是阻碍我们赚钱、成长的三大隐形杀手！](https://sqtgjk175rz.feishu.cn/wiki/PgIKwT0d0irwIzk7I84cwEtinyb)
 
-生财（8期）孙太太：从"羊毛党"到月入过万：一个温州人的互联网摆摊逆袭之路
+赚钱（8期）孙太太：从"羊毛党"到月入过万：一个温州人的互联网摆摊逆袭之路
 
-[「生财」8期：从"羊毛党"到月入过万：一个温州人的互联网摆摊逆袭之路](https://sqtgjk175rz.feishu.cn/wiki/DTr2weiGjiD3lzkdK6GcXbxqnHb)
+[「赚钱」8期：从"羊毛党"到月入过万：一个温州人的互联网摆摊逆袭之路](https://sqtgjk175rz.feishu.cn/wiki/DTr2weiGjiD3lzkdK6GcXbxqnHb)
 
-生财（7期）Sky陈天:995打工人，如何靠做AIP副业变现10w+，迈入自由职业
+赚钱（7期）Sky陈天:995打工人，如何靠做AIP副业变现10w+，迈入自由职业
 
-[生财（7期）Sky陈天：995打工人，如何靠做AIP副业变现10w+，迈入自由职业](https://sqtgjk175rz.feishu.cn/wiki/KCNpwRlyGilWl4kSl9wcXJjcnjB)
+[赚钱（7期）Sky陈天：995打工人，如何靠做AIP副业变现10w+，迈入自由职业](https://sqtgjk175rz.feishu.cn/wiki/KCNpwRlyGilWl4kSl9wcXJjcnjB)
 
-生财（7期）海盐：拍照出片不靠脸！3招拯救素人颜值
+赚钱（7期）海盐：拍照出片不靠脸！3招拯救素人颜值
 
-[生财（7期）海盐：拍照出片不靠脸！3招拯救素人颜值](https://sqtgjk175rz.feishu.cn/wiki/IshrwkJADicRerkgcxvcxngJnvh)
+[赚钱（7期）海盐：拍照出片不靠脸！3招拯救素人颜值](https://sqtgjk175rz.feishu.cn/wiki/IshrwkJADicRerkgcxvcxngJnvh)
 
-生财（航海教练）拾一：《新人做项目的思维方法论+虚拟资料避坑指南》
+赚钱（航海教练）拾一：《新人做项目的思维方法论+虚拟资料避坑指南》
 
-[生财（航海教练）拾一《新人做项目的思维方法论+虚拟资料避坑指南》](https://sqtgjk175rz.feishu.cn/wiki/JCFlw0NNdinumEki1wXcyZWVnMg)
+[赚钱（航海教练）拾一《新人做项目的思维方法论+虚拟资料避坑指南》](https://sqtgjk175rz.feishu.cn/wiki/JCFlw0NNdinumEki1wXcyZWVnMg)
 
-生财（航海教练）荷包蛋糕：AI短篇小说写作项目全流程关键点分享
+赚钱（航海教练）荷包蛋糕：AI短篇小说写作项目全流程关键点分享
 
-[生财（航海教练）荷包蛋糕：AI短篇小说写作项目全流程关键点分享](https://sqtgjk175rz.feishu.cn/wiki/R12Vw1hMmiQnUpkhpXncvaiNnNg)
+[赚钱（航海教练）荷包蛋糕：AI短篇小说写作项目全流程关键点分享](https://sqtgjk175rz.feishu.cn/wiki/R12Vw1hMmiQnUpkhpXncvaiNnNg)
 
-生财（超级术作者）晴子：如何用Ai做出自己表情包
+赚钱（超级术作者）晴子：如何用Ai做出自己表情包
 
-[生财（超级术作者）晴子：如何用Ai做出自己表情包](https://sqtgjk175rz.feishu.cn/wiki/PMHLwRxFui1tnck0wHHcPRUfn1d)
+[赚钱（超级术作者）晴子：如何用Ai做出自己表情包](https://sqtgjk175rz.feishu.cn/wiki/PMHLwRxFui1tnck0wHHcPRUfn1d)
 
-生财（深海圈总教练）方波妮：《AI 视频，海外 Youtube如何获得7倍流量收益》
+赚钱（深海圈总教练）方波妮：《AI 视频，海外 Youtube如何获得7倍流量收益》
 
 [方波妮](https://sqtgjk175rz.feishu.cn/wiki/MDhXwiR74iyg7lkGdrmc1HPpn0d)
 
@@ -216,37 +216,37 @@ https://sqtgjk175rz.feishu.cn/wiki/UYWWwjeZqicMmTk2fP3c5uK6nNx
 
 群友提到了珍妮子，吴泽承邀请珍妮子来群里做分享
 
-生财（5期）珍妮子：“小红书高客单”
+赚钱（5期）珍妮子：“📕高客单”
 
 https://sqtgjk175rz.feishu.cn/wiki/HN6vw1oghivnMYk4U3tcTi9knnc
 
 群友提到张集慧“慧姐”，吴泽承邀请“慧姐”来群里做分享
 
-生财（3期）张集慧：“公众号爆文”
+赚钱（3期）张集慧：“👸号爆文”
 
 https://sqtgjk175rz.feishu.cn/wiki/CNVwwajeSizdERkw3dJcu9aInHg
 
 群友通过吴泽承的分享成功变现并做复盘分享
 
-生财（9期）陈泽梅：“一天从一号店回本➕赚钱”
+赚钱（9期）陈泽梅：“一天从一号店回本➕赚钱”
 
 https://sqtgjk175rz.feishu.cn/wiki/M0LMwQniKiO4jWkQWozcnTNpnQr
 
-吴泽承「生财」陪伴群：（群友成功变现记录）注：两位执行力强的群友已经赚回门票！
+吴泽承「赚钱」陪伴群：（群友成功变现记录）注：两位执行力强的群友已经赚回门票！
 
 https://sqtgjk175rz.feishu.cn/wiki/X6hCw0NoKiO8nLk1Lg4c81Ryn1f
 
-群友：生财（9期）深潜：（如何在撸货与票务行业快速破冰）
+群友：赚钱（9期）深潜：（如何在撸货与票务行业快速破冰）
 
 https://sqtgjk175rz.feishu.cn/wiki/K3eswK5v2iTTNBk105rcewNMnzb
 
-吴泽承「生财」陪伴群：（群氛围迎接新同学）
+吴泽承「赚钱」陪伴群：（群氛围迎接新同学）
 
 https://sqtgjk175rz.feishu.cn/wiki/OVN7wZp8hi1CV4kOe8BcmHM3nyg
 
 # 致谢
 
-在「生财有术」9期的拉新过程中，我也一直是摸着石头过河，能做出这个成绩，离不开大家的鼓励与帮助
+在「龙哥盟」9期的拉新过程中，我也一直是摸着石头过河，能做出这个成绩，离不开大家的鼓励与帮助
 
 首先感谢@黄小鱼@千城@哆元@吴佳文@码叔@随心 因为你们的鼓励，我才有了源源不断的动力
 

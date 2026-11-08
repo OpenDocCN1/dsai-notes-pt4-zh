@@ -1,4 +1,4 @@
-# 2023-05-19利用FastGPT和Laf将GPT接入企业微信 - Sealos 开发者社区
+# 2023-05-19利用FastGPT和Laf将GPT接入企业🛰️ - Sealos 开发者社区
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/CaaBd4JbYoGfmYxNQjic1gW9n1e](https://xuqiwei1986.feishu.cn/docx/CaaBd4JbYoGfmYxNQjic1gW9n1e)
 
@@ -8,11 +8,11 @@
 
 FastGPT一个快速使用 openai api 的平台。支持一键构建AI知识库，支持多用户、多模型管理。
 
-这篇文章教你用两分半的时间，利用FastGPT和Laf将GPT接入企业微信 😂
+这篇文章教你用两分半的时间，利用FastGPT和Laf将GPT接入企业🛰️ 😂
 
 ## 条件
 
-1.  你需要有企业微信管理权限
+1.  你需要有企业🛰️管理权限
 
 1.  你需要一个 [FastGPT ](https://fastgpt.run/)账号
 
@@ -30,9 +30,9 @@ FastGPT一个快速使用 openai api 的平台。支持一键构建AI知识库�
 
 ![](img/e16fdd38c7984eb235f4a847782ec701.png)
 
-## 企业微信操作
+## 企业🛰️操作
 
-1.  进入企业微信管理后台-我的企业，记录这里的企业ID为 WXWORK_CORPID
+1.  进入企业🛰️管理后台-我的企业，记录这里的企业ID为 WXWORK_CORPID
 
 ![](img/1432e470155f918c7168b97890c255b7.png)
 
@@ -42,7 +42,7 @@ FastGPT一个快速使用 openai api 的平台。支持一键构建AI知识库�
 
 ![](img/822d8b6b4e653fc448e2a3c8686d6898.png)
 
-1.  在应用管理页面点击刚刚创建好的应用，进入应用详情页面。记录这里的AgentId和Secret（需要点击获取按钮，在企业微信聊天窗口里面获取），分别为WXWORK_AGENTID和WXWORK_CORPSECRET。
+1.  在应用管理页面点击刚刚创建好的应用，进入应用详情页面。记录这里的AgentId和Secret（需要点击获取按钮，在企业🛰️聊天窗口里面获取），分别为WXWORK_AGENTID和WXWORK_CORPSECRET。
 
 ![](img/81ee8b850633af9b97bdd78d7dd7070c.png)
 
@@ -208,13 +208,13 @@ async function asyncSendMessage(xml) {
 
 ![](img/2a7d6555a1fa30f066b7a611f14251d6.png)
 
-1.  复制 wxwork-gpt-api 这个云函数的调用地址，将它填写到企业微信管理后台【API接收消息】页面中的URL中，并保存上述信息。
+1.  复制 wxwork-gpt-api 这个云函数的调用地址，将它填写到企业🛰️管理后台【API接收消息】页面中的URL中，并保存上述信息。
 
 ![](img/e156aa940a184d25931c308f77e6c2df.png)
 
 ![](img/b277d6e249d5d8d2162b3a387f3870d5.png)
 
-1.  在企业微信中，进入你刚刚创建的应用，就可以跟机器人愉快的聊天了~~
+1.  在企业🛰️中，进入你刚刚创建的应用，就可以跟机器人愉快的聊天了~~
 
 ![](img/50c4a22d0bc89f9be550950c34797d54.png)
 

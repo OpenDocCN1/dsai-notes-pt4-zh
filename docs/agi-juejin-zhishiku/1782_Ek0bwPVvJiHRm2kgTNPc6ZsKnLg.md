@@ -8,7 +8,7 @@
 
 **让人工智能AI治愈了你的四肢不协调！人工智能AI究竟有多神奇，它可以只通过一张照片，让**画面跟着我们想要的动作跳起来，是不是很有趣，快来看看人工智能AI是怎么做到的吧！
 
-[**最近我的朋**](https://www.zhihu.com/search?q=%E5%85%A8%E6%B0%91%E8%88%9E%E7%8E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)友圈被阿里通义千问APP的“ 全民舞王 ”占领了，朋友圈和微信群里都是魔性的“科目三”，先看看究竟是什
+[**最近我的朋**](https://www.zhihu.com/search?q=%E5%85%A8%E6%B0%91%E8%88%9E%E7%8E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)友圈被阿里通义千问APP的“ 全民舞王 ”占领了，朋友圈和🛰️群里都是魔性的“科目三”，先看看究竟是什
 
 ![](img/331cb1286d3917e377677603b56ceef0.png)
 

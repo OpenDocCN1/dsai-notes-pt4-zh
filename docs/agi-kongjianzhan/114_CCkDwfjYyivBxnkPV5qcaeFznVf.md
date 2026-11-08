@@ -18,11 +18,11 @@
 
 **🌟假如你是自媒体博主：**
 
-[小红书](https://agispace.feishu.cn/wiki/XbX7w9NGsi0wVwkGIE6c3YebnBg?table=tblpAKIB3JRbgBzB&view=vewJeTTgxv)
+[📕](https://agispace.feishu.cn/wiki/XbX7w9NGsi0wVwkGIE6c3YebnBg?table=tblpAKIB3JRbgBzB&view=vewJeTTgxv)
 
 [短视频](https://agispace.feishu.cn/wiki/XbX7w9NGsi0wVwkGIE6c3YebnBg?table=tblZHlA6yhta2Wsa&view=vewtbaCfht)
 
-[公众号](https://agispace.feishu.cn/wiki/XbX7w9NGsi0wVwkGIE6c3YebnBg?table=tblZHlA6yhta2Wsa&view=vewHdJwLMo)
+[👸号](https://agispace.feishu.cn/wiki/XbX7w9NGsi0wVwkGIE6c3YebnBg?table=tblZHlA6yhta2Wsa&view=vewHdJwLMo)
 
 ---
 

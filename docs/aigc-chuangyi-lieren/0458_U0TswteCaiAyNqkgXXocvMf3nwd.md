@@ -40,7 +40,7 @@ Prompt: "Follow the VISUAL framework to create a guideline that will help me des
 
 ## 筛选最优推广平台
 
-提示：“比较公众号、抖音、小红书、知乎、视频号5大引流入口，结合[我的产品]，评估它在这5大入口宣传推广、引流、变现的优缺点。”
+提示：“比较👸号、抖音、📕、知乎、视频号5大引流入口，结合[我的产品]，评估它在这5大入口宣传推广、引流、变现的优缺点。”
 
 Prompt: "Compare the five major drainage portals of official account, Douyin, Xiaohongshu, Zhihu, and video account, and combine [my product] to evaluate its advantages and disadvantages in promoting, attracting traffic, and monetizing these five major portals."
 
@@ -178,7 +178,7 @@ Prompt: "Prepare a five-minute pitch for our product, using the AIDA framework. 
 
 ## 提升500%转化率的10个好方法
 
-提示：“销售拜访后，后续用电话、微信等渠道，让转换率提升500%的10个好方法。”
+提示：“销售拜访后，后续用电话、🛰️等渠道，让转换率提升500%的10个好方法。”
 
 Prompt: "After the sales visit, follow up with telephone, WeChat and other channels to increase the conversion rate by 500% 10 good ways."
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/Mexpdbb5koOCjrxhuANcCqFanOe](https://aigcreative.feishu.cn/docx/Mexpdbb5koOCjrxhuANcCqFanOe)
 
-> 来源：公众号：琢磨事
+> 来源：👸号：琢磨事
 
 > 作者：老李话一三
 

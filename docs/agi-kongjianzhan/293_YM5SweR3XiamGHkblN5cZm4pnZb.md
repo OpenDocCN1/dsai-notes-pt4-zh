@@ -4,7 +4,7 @@
 
 > 作者： 译点
 
-> 公众号：  每天译点晓知识
+> 👸号：  每天译点晓知识
 
 > 原文链接：https://mp.weixin.qq.com/s/ZJx7ZApfubypx_e5qTxzFA
 

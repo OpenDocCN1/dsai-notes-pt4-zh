@@ -4,7 +4,7 @@
 
 > 克雷西 发自 凹非寺
 
-> 量子位 | 公众号 QbitAI
+> 量子位 | 👸号 QbitAI
 
 > 原文：https://mp.weixin.qq.com/s/JE0w-ksh5TRby_TRfjWbzw
 

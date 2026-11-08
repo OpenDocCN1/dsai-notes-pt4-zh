@@ -10,7 +10,7 @@ GPTS上线后给大家带来的新的财富密码
 
 ![](img/9ec0b7ae2d5fe60d63f4beccef2bd3ef.png)
 
-> 之所以说是财富密码，因为参考过去科技尤其是互联网发展的历史，只要有流量平台的出现，就很可能带来一波新（发）的（财）机会。新的平台意味着额外的流量，而平台早期因为供给不足，对于提供供给的人来说，自然是难得的机会。从微博，公众号，抖音等社交媒体，到app store，taobao等商店，都是如此。
+> 之所以说是财富密码，因为参考过去科技尤其是互联网发展的历史，只要有流量平台的出现，就很可能带来一波新（发）的（财）机会。新的平台意味着额外的流量，而平台早期因为供给不足，对于提供供给的人来说，自然是难得的机会。从🧣，👸号，抖音等社交媒体，到app store，taobao等商店，都是如此。
 
 > 那么，抓住财富密码，就要知道，这些空着的货架都是什么，有的放矢，才能抓住机会。
 
@@ -108,7 +108,7 @@ GPT Store将会展示由经过验证的开发者创建的GPTs。
 
 到目前为止，只有订阅 OpenAI 付费套餐的用户才能制作和使用自定义 GPT。这是 OpenAI 在 ChatGPT 庞大用户基础上所做的一次尝试。
 
-ChatGPT 也要像微信、钉钉那样变成全功能 App 了？
+ChatGPT 也要像🛰️、钉钉那样变成全功能 App 了？
 
 ![](img/7baa839873cdb1e3568eb3a7bdcc0bed.png)
 
@@ -136,7 +136,7 @@ GPTs开放后会有一大波财富新机遇
 
 如果你还在观望、犹豫，或许你将失去一次机会。
 
-如果想了解，GPTs[构建者](https://zl49so8lbq.feishu.cn/wiki/CCgIw9tRXiBhPWkJ0lwcSrNEnNf?from=from_copylink)收益计划实操SOP，可加入微信群领取。
+如果想了解，GPTs[构建者](https://zl49so8lbq.feishu.cn/wiki/CCgIw9tRXiBhPWkJ0lwcSrNEnNf?from=from_copylink)收益计划实操SOP，可加入🛰️群领取。
 
 欢迎关注【AI研习社】，做一个用AI持续赚钱的人。
 

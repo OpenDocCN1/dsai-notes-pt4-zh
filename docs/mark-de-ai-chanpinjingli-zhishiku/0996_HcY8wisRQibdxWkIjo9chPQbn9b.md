@@ -1,16 +1,16 @@
-# Dify智能聊天机器人接入微信
+# Dify智能聊天机器人接入🛰️
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/CQQedeDD3oV32yxMQ6zce6jJnLf](https://qqs7y1hozd1.feishu.cn/docx/CQQedeDD3oV32yxMQ6zce6jJnLf)
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/C🐧edeDD3oV32yxMQ6zce6jJnLf](https://qqs7y1hozd1.feishu.cn/docx/C🐧edeDD3oV32yxMQ6zce6jJnLf)
 
-微信作为最热门的即时通信软件，拥有巨大的流量。
+🛰️作为最热门的即时通信软件，拥有巨大的流量。
 
-微信友好的聊天窗口是天然的AI应用LUI(Language User Interface)/CUI(Command User Interface)。
+🛰️友好的聊天窗口是天然的AI应用LUI(Language User Interface)/CUI(Command User Interface)。
 
-微信不仅有个人微信，同时提供了公众号、企业微信、企业微信应用、企业微信客服等对话渠道，拥有良好的微信生态。
+🛰️不仅有个人🛰️，同时提供了👸号、企业🛰️、企业🛰️应用、企业🛰️客服等对话渠道，拥有良好的🛰️生态。
 
-把Dify应用接入微信生态，就能打造一个功能强大的智能客服，大大降低客服成本，同时也能够提升客户体验。本篇教程就是手摸手地教你如何利用Dify on WeChat项目，把Dify应用接入微信生态。
+把Dify应用接入🛰️生态，就能打造一个功能强大的智能客服，大大降低客服成本，同时也能够提升客户体验。本篇教程就是手摸手地教你如何利用Dify on WeChat项目，把Dify应用接入🛰️生态。
 
-本文讲解的是将Dify编排的聊天助手应用接入到个人微信中。
+本文讲解的是将Dify编排的聊天助手应用接入到个人🛰️中。
 
 ## Dify编排聊天助手应用
 
@@ -18,7 +18,7 @@
 
 Dify如何编排聊天助手应用我们在[Dify编排聊天助手应用](https://personel-zhouxinle888-a66353926f9185cff28f2bd374a5c3a9dd89d5206.gitlab.io/dify/dify-2.html)一文中有详细讲解。
 
-下图是本课程微信聊天机器人应用编排截图：
+下图是本课程🛰️聊天机器人应用编排截图：
 
 ![](img/8f558f98e46f9437cc07a69fd5263962.png)
 
@@ -28,7 +28,7 @@ Dify如何编排聊天助手应用我们在[Dify编排聊天助手应用](https:
 根据用户的问题，使用幽默诙谐的口吻回答用户，在回答中添加一些有趣的表情符号。
 ```
 
-设置了大语言模型，智普AI的GLM-4模型，并将其温度 tempature设置成0.95，温度 tempature的取值范围是(0.0, 1.0]，数值越大，生成的文本越随机，更具创造性。因为该 智能聊天机器人接入个人微信，所以这里更具创造性的回复是合理的。
+设置了大语言模型，智普AI的GLM-4模型，并将其温度 tempature设置成0.95，温度 tempature的取值范围是(0.0, 1.0]，数值越大，生成的文本越随机，更具创造性。因为该 智能聊天机器人接入个人🛰️，所以这里更具创造性的回复是合理的。
 
 ### 获取API秘钥和API服务器地址
 
@@ -44,7 +44,7 @@ Dify如何编排聊天助手应用我们在[Dify编排聊天助手应用](https:
 
 ## 部署Dify on WeChat项目
 
-Dify on WeChat是 ChatGPT on WeChat的下游分支，额外实现了对接Dify API，支持Dify聊天助手、支持Agent调用工具和知识库，支持Dify[工作流，详情请查看GitHu](https://github.com/hanfangyuan4396/dify-on-wechat)b仓库Dify on WeChat。 部署了Dify on WeChat项目，就可以将上面我们编排的智能聊天助手应用接入到个人微信中。
+Dify on WeChat是 ChatGPT on WeChat的下游分支，额外实现了对接Dify API，支持Dify聊天助手、支持Agent调用工具和知识库，支持Dify[工作流，详情请查看GitHu](https://github.com/hanfangyuan4396/dify-on-wechat)b仓库Dify on WeChat。 部署了Dify on WeChat项目，就可以将上面我们编排的智能聊天助手应用接入到个人🛰️中。
 
 ### 下载Dify on WeChat
 
@@ -97,7 +97,7 @@ nohup python3 app.py &amp; tail -f nohup.out   # 在后台运行程序并通过�
 
 ### 扫码登录
 
-Dify-on-wechat启动成功后，在终端中会输出二维码，使用微信扫码登录。
+Dify-on-wechat启动成功后，在终端中会输出二维码，使用🛰️扫码登录。
 
 ![](img/693be53eb542277e40214c3934599dce.png)
 
@@ -105,10 +105,10 @@ Dify-on-wechat启动成功后，在终端中会输出二维码，使用微信扫
 
 注意！
 
-> 本项目使用itchat实现个人微信登录，有封号风险，建议使用实名认证过的微信小号进行测试。
+> 本项目使用itchat实现个人🛰️登录，有封号风险，建议使用实名认证过的🛰️小号进行测试。
 
 ### 对话测试
 
 ![](img/9aba51bde7305fa250197360cefc98eb.png)
 
-我们看到，微信机器人的回复与在Dify测试页面上的回复一致。至此，恭喜你成功把Dify接入了个人微信🎉🎉🎉
+我们看到，🛰️机器人的回复与在Dify测试页面上的回复一致。至此，恭喜你成功把Dify接入了个人🛰️🎉🎉🎉

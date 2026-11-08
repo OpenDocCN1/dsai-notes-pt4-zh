@@ -1,4 +1,4 @@
-# 【万字长文】飞书多维表格+DeepSeek的奇妙组合——AI在内容电商中的应用 （生财）
+# 【万字长文】飞书多维表格+DeepSeek的奇妙组合——AI在内容电商中的应用 （赚钱）
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/M8X0d8XEpoIpmaxeFXKcQAZEn1f](https://xuqiwei1986.feishu.cn/docx/M8X0d8XEpoIpmaxeFXKcQAZEn1f)
 

@@ -10,7 +10,7 @@
 
 **-答2：**这是海外业务用。
 
-**-答3：**ga在国内是可用的，封掉的只是google.com域名，但ga用的是google-analytics.com域名，我自己都还天天用ga.js上报数据，只是ga的后台要翻墙才能访问而已。
+**-答3：**ga在国内是可用的，封掉的只是google.com域名，但ga用的是google-analytics.com域名，我自己都还天天用ga.js上报数据，只是ga的后台要🪜才能访问而已。
 
 ![](img/d8f7495f3d39c3907af70b5d366598a7.png)
 

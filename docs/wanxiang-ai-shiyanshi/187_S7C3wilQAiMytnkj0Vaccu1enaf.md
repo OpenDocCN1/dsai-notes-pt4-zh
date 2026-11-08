@@ -2,7 +2,7 @@
 
 > 来源：[https://yunyinghui.feishu.cn/docx/C6FXdjhqnofPilxpF8zcjcOJn2b](https://yunyinghui.feishu.cn/docx/C6FXdjhqnofPilxpF8zcjcOJn2b)
 
-> **作者：**苍何  **公众号：**苍何
+> **作者：**苍何  **👸号：**苍何
 
 > **推荐理由：**这篇文章详细介绍了作者如何将 Gemini Cli（谷歌的 AI 终端工具）与 Obsidian（本地化双链笔记软件）结合，构建高效的知识管理与内容创作工作流。
 
@@ -40,7 +40,7 @@ Obsidian 是一款本地化的双链笔记软件，所有文件存储都以 mark
 
 ![](img/960610b6d52f147a8e9e4427a27357de.png)
 
-我的所有笔记、公众号文章以及每日总结，统统都放在了 Obsidian。
+我的所有笔记、👸号文章以及每日总结，统统都放在了 Obsidian。
 
 **经过长时间的使用，我摸出了一套**超高效的 AI 工作流，它能帮我们 自动排版、辅助创作、一键发布 。
 
@@ -78,7 +78,7 @@ Gemini Cli 能直接在 Obsidian 中使用，借助其强大的 Agent 能力，�
 
 ![](img/eba96e11bbef86608d590b638345d18c.png)
 
-这里的素材来源是我在微信读书中划线的内容，配置了插件，自动同步到了 Obsidian，所以 gemini 能快速的帮我检索到具体摘要。
+这里的素材来源是我在🛰️读书中划线的内容，配置了插件，自动同步到了 Obsidian，所以 gemini 能快速的帮我检索到具体摘要。
 
 ![](img/cf347acc137977605f0297eccc739f48.png)
 
@@ -100,7 +100,7 @@ Agent 帮我做了这些用传统 ob 搜索无法解决的问题，关于生命�
 
 ![](img/09ef2ad317fd8c051bce8d946aa7015b.png)
 
-等文章写完后，在右侧会有对应公众号预览，直接就可以一键发布，整个效率拉满。
+等文章写完后，在右侧会有对应👸号预览，直接就可以一键发布，整个效率拉满。
 
 这是当下我用 Gemini Cli + Obsidian 辅助创作的思路，你会发现 AI 在整个过程中起了非常多的作用。
 

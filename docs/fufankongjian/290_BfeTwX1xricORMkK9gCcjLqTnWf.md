@@ -179,7 +179,7 @@ MCP 配置完成后，在CherryStudio的对话栏中，选择DeepSeek模型，�
 
 ### MCP服务器Server合集
 
-实际上，除了高德 MCP ，现在市面上还有很多 MCP 工具，我在文档中给大家贴了现在主流的MCP工具网站，大家可以根据自己的需求，选择合适的MCP工具接入 CherryStudio。利用这些 MCP 工具，你可以快速创建数据分析报告、自动操作浏览器、一键下单购物、甚至帮你自动编写小红书图文，还可以自动发布！
+实际上，除了高德 MCP ，现在市面上还有很多 MCP 工具，我在文档中给大家贴了现在主流的MCP工具网站，大家可以根据自己的需求，选择合适的MCP工具接入 CherryStudio。利用这些 MCP 工具，你可以快速创建数据分析报告、自动操作浏览器、一键下单购物、甚至帮你自动编写📕图文，还可以自动发布！
 
 +   MCP官方服务器合集：[https://github.com/modelcon](https://github.com/modelcontextprotocol/servers)textprotocol/servers
 

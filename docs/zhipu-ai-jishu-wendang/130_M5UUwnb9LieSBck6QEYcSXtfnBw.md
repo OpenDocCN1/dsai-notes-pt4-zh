@@ -174,7 +174,7 @@ https://chatglm.cn/main/gdetail/65bd8a07d04f3e58c5bf775a
 
 ## 五、宣传推广
 
-[考虑到功能复杂，](https://uestc.feishu.cn/docx/GUBudY0QIo1fLwxyvxOcvwJxn8f)无[法在智能体简介或](https://weibo.com/7509138928/O2mN6Bjer)者开场白中描述清楚，所以写了文档（点击查看）进行介绍。为了让考研人直观感受到GLM4的实力，文档中包括了简短的视频教程。为了触及到24考研人，积极在微博（点击查看）和豆瓣进行宣传。
+[考虑到功能复杂，](https://uestc.feishu.cn/docx/GUBudY0QIo1fLwxyvxOcvwJxn8f)无[法在智能体简介或](https://weibo.com/7509138928/O2mN6Bjer)者开场白中描述清楚，所以写了文档（点击查看）进行介绍。为了让考研人直观感受到GLM4的实力，文档中包括了简短的视频教程。为了触及到24考研人，积极在🧣（点击查看）和豆瓣进行宣传。
 
 ## 六、书籍推荐
 

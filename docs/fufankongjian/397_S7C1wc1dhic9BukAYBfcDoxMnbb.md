@@ -250,7 +250,7 @@ InfinityHuman的核心创新在于其独特的架构设计，有效解决了长�
 
 九天Hector 抖音： https://v.douyin.com/lqASAa2Hs_0/
 
-九天Hector 小红书：https://www.xiaohongshu.com/user/profile/62321335000000001000885e
+九天Hector 📕：https://www.xiaohongshu.com/user/profile/62321335000000001000885e
 
 九天Hector YouTube：https://www.youtube.com/channel/UCj8tyDLSxIdivnweBnG4H9Q/
 

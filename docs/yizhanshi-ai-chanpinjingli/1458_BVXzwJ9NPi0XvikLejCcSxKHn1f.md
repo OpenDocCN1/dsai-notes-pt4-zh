@@ -214,4 +214,4 @@ SurroundSDF: Implicit 3D Scene Understanding Based on Signed Distance Field
 
 +   **Graph AD **[的gith](https://link.zhihu.com/?target=https%3A//github.com/OpenDriveLab/UniAD)ub可以看[到Our ](https://link.zhihu.com/?target=https%3A//github.com/WangYueFt/dgcnn)code i**s bas**ed on UniAD and DGCNN，还是借鉴了UniAD的工作，用图的形式来做交互上的优化无疑是更好的。但代码目前还没有开源，大家可以mark一下。
 
-# 试看课 联系微信：AIGC0002
+# 试看课 联系🛰️：AIGC0002

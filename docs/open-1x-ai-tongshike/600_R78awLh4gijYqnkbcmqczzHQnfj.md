@@ -124,7 +124,7 @@ https://www.zhihu.com/zvideo/1637944442459037696
 
 **OOTDiffusion**
 
-目前此方案开源，且可免费使用demo(人多需排队，且使用需梯子)
+目前此方案开源，且可免费使用demo(人多需排队，且使用需🪜)
 
 https://huggingface.co/spaces/levihsu/OOTDiffusion
 
@@ -142,9 +142,9 @@ Emmm..但有时也会生成这种
 
 **Anydoor**
 
-目前此方案开源，且可免费使用demo(人多需排队，且使用需梯子)，但不是专门针对换装训练的，可能稳定性与效果没有OOTDiffusion效果稳定
+目前此方案开源，且可免费使用demo(人多需排队，且使用需🪜)，但不是专门针对换装训练的，可能稳定性与效果没有OOTDiffusion效果稳定
 
-免费使用链接（需要梯子）：https://huggingface.co/spaces/xichenhku/AnyDoor-online
+免费使用链接（需要🪜）：https://huggingface.co/spaces/xichenhku/AnyDoor-online
 
 代码开源仓库：https://github.com/ali-vilab/AnyDoor
 

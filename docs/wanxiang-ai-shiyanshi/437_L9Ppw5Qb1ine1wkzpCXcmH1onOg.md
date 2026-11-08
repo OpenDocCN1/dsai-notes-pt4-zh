@@ -23,13 +23,13 @@
 | [**腾讯**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-SyHPd4EbJofvVWxyq2QcCGWtnRe) | [**阿里**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-LBl8d7MxNox8vPxKty0cBUKFn8e) | [**百度**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-MFTsdGwPQoLk77xKnsLc2VDFnSf) | [**网易**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-O7Zode1YpoXXMzxtMfAcg1mjnkN) | [**字节**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-VNxndYhc9oJYiHxVLNIcAgfHntc) |
 | [**快手**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-G8SRd5QnuowduYxZvWVcgcp6n5g) | [**美团**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-OvISdulS3oB2g0x7fnicdqdanae) | [**京东**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-HEBKd4Y4moy5ftxMmYFcwxHanvb) | [**哈罗出行**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-GTMldgq4ioC4YdxxG1scfyzlnsc) | [**58同城**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-DpGXddC3Vo9fDrxhwf3c3CTon9S) |
 | [**智行**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-VWBPdfNnLoA28Ix5nKxct2i6n5b) | [**携程**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-M0aedZUcjow2yBxMpLwcdpV8nXb) | [**高途**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-QUf4dLxGmod1OZxhmqncKW16nQg) | [**群核**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-H1KydhAKsoUtjkx1NOqccY2qnCb) | [**乐信**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-UmhpdjbOPoNDUUxZsxQcMzwlnKe) |
-| [**饿了么**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-ISJkdmiOyoeTGpx3b5bct64tncc) | [**值得买**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-ZGxpd6iuIorjekx0n21cmZFwn6d) | [**36kr**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-XnjHd5eWJoFP52xrCOAcAyManig) | [**知乎**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-TjZjdjawjoE8YhxC6F4cE34enZe) | [**小红书**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-ROA5dYia0oZLZmxaDh4cpHAxngc) |
+| [**饿了么**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-ISJkdmiOyoeTGpx3b5bct64tncc) | [**值得买**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-ZGxpd6iuIorjekx0n21cmZFwn6d) | [**36kr**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-XnjHd5eWJoFP52xrCOAcAyManig) | [**知乎**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-TjZjdjawjoE8YhxC6F4cE34enZe) | [**📕**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-ROA5dYia0oZLZmxaDh4cpHAxngc) |
 
 # 腾讯
 
 AIGC应用实践丨30秒生成可视化用户旅程地图&精益画布
 
-[QQ AI画画｜探索机器创造力](https://mp.weixin.qq.com/s/P3gafEsve9wny_SoQ1HJMA)
+[🐧 AI画画｜探索机器创造力](https://mp.weixin.qq.com/s/P3gafEsve9wny_SoQ1HJMA)
 
 [运用AIGC人工智能生产内容](https://mp.weixin.qq.com/s/b10sqhA9-IvUT44U9-5dLA)
 
@@ -77,7 +77,7 @@ AI服饰新时代，唤醒你的想象力。
 
 淘宝设计+AI ，让世界多了百万插画师
 
-产品观察丨淘宝想用AI打败小红书
+产品观察丨淘宝想用AI打败📕
 
 # 百度
 
@@ -225,9 +225,9 @@ AIGC在运营设计中的探索和思考
 
 设计师失业？我们让AI做了一次双十一
 
-# 小红书
+# 📕
 
-[小红书，要量产AI美女了？](https://36kr.com/p/2250093721366150)
+[📕，要量产AI美女了？](https://36kr.com/p/2250093721366150)
 
 # 饿了么
 
@@ -247,7 +247,7 @@ AIGC在运营设计中的探索和思考
 
 1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国微信 ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 3.**关于文档负责人大国**：高帆文化CEO，曾就职于教培大厂，目前创业，主攻研究AI落地应用、企业流量增长及达人IP孵化。
 
@@ -259,9 +259,9 @@ AIGC在运营设计中的探索和思考
 
 ![](img/f67bb71538f899abb20d9ece0e04faac.png)
 
-微信好友（ID：zhangyuguo94s）
+🛰️好友（ID：zhangyuguo94s）
 
-**扫码加微信入微信群**
+**扫码加🛰️入🛰️群**
 
 **扫码加好友了解更多大厂实战案例**
 

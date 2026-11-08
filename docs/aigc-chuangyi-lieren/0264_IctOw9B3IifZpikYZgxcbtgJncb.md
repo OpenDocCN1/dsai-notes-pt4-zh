@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/UlEFdRG2hoPblPxKxVYc4TxtnKe](https://aigcreative.feishu.cn/docx/UlEFdRG2hoPblPxKxVYc4TxtnKe)
 
-> 来源：公众号：通义
+> 来源：👸号：通义
 
 > 链接：https://mp.weixin.qq.com/s/E71JnW2BsADV_e6tMio0kw
 

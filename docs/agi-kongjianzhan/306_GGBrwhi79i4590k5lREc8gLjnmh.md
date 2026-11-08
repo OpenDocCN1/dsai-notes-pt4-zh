@@ -2,7 +2,7 @@
 
 > 来源：[https://agispace.feishu.cn/docx/CrLBddZzBo1X2Dx1Dpbc0kUbnEc](https://agispace.feishu.cn/docx/CrLBddZzBo1X2Dx1Dpbc0kUbnEc)
 
-> 公众号：AI 工具派
+> 👸号：AI 工具派
 
 >
 
@@ -26,7 +26,7 @@
 
 [AI工具派：2024 年必备的 9 款 AI PPT 生成工具](https://agispace.feishu.cn/wiki/WMGTwelKViVuE8kwle6cG63Lnrh)
 
-[微信藏了个 AI 任意门！一键使用秘塔AI、智谱清言、腾讯元宝、讯飞星火等 40+ AI 应用](https://agispace.feishu.cn/wiki/FBMewE5SBilkk7k6V9icvS8VnSm)
+[🛰️藏了个 AI 任意门！一键使用秘塔AI、智谱清言、腾讯元宝、讯飞星火等 40+ AI 应用](https://agispace.feishu.cn/wiki/FBMewE5SBilkk7k6V9icvS8VnSm)
 
 [百度文库智能PPT：80%市场份额的 AI 生产力工具，一站式创作服务](https://agispace.feishu.cn/wiki/EVH4wA1lhiOdAMkIgUAcbp8Nnjg)
 

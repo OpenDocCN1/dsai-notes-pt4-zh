@@ -176,7 +176,7 @@ red渠道：https://www.reddit.com/user/Trae_AI/
 
 官方自动发放渠道：https://traesolocodedcln-5o418fy5b-ambershens-projects.vercel.app/
 
-小红书渠道评论区：https://www.xiaohongshu.com/user/profile/661f6cf4000000000d027e6c
+📕渠道评论区：https://www.xiaohongshu.com/user/profile/661f6cf4000000000d027e6c
 
 b站渠道评论区：https://www.bilibili.com/opus/1092296696955666452?
 

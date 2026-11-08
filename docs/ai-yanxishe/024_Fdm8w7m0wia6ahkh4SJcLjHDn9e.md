@@ -12,7 +12,7 @@
 
 > 加入我们：https://t.zsxq.com/19EOflzkQ
 
-> 购买后，添加群主微信加入 AI研习社陪伴社群，限时领取超值福利。
+> 购买后，添加群主🛰️加入 AI研习社陪伴社群，限时领取超值福利。
 
 面对一篇晦涩难懂的论文，尤其是英文论文，在没有人工智能的时候，理解它的成本非常高（包括英文阅读的困难、专业知识的限制等等），因此大部分人基本上都会放弃阅读。 有了ChatGPT就不一样了，小白也能很快读懂一篇英文论文了。
 
@@ -20,7 +20,7 @@
 
 ## **开通GPT plus**
 
-参考公众号文章： [https://mp.weixin.qq.com/s/8p](https://mp.weixin.qq.com/s/8pD80_xC3FbNXb5ckbgyoA)D80_xC3FbNXb5ckbgyoA
+参考👸号文章： [https://mp.weixin.qq.com/s/8p](https://mp.weixin.qq.com/s/8pD80_xC3FbNXb5ckbgyoA)D80_xC3FbNXb5ckbgyoA
 
 ## **安装AskYourPdf插件**
 

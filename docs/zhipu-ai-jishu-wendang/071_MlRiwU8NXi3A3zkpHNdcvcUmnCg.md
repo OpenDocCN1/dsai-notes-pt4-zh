@@ -30,7 +30,7 @@ CharacterGLM-6B 是 聆心智能和清华大学 CoAI 实验室联合发布的新
 
 ---
 
-# 🏠 公众号
+# 🏠 👸号
 
 ![](img/313cdc2eb2f74407e9bf7fc087c6ca6e.png)
 

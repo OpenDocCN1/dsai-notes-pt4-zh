@@ -32,7 +32,7 @@
 
 https://arxiv.org/abs/2402.06852
 
-关注公众号，后台回复「ChemLLM」获取完整 PDF
+关注👸号，后台回复「ChemLLM」获取完整 PDF
 
 **化学大模型 ChemLLM-7B-chat 教程已在 h**yper.ai 上线，点击链接一键部署：
 

@@ -326,7 +326,7 @@ simple mascot logo for a Instant Noodles company
 
 ## 技巧四：增加风格——艺术运动
 
-> [因为篇幅的](https://www.xiaohongshu.com/user/profile/6073d38d00000000010068a6?xhsshare=CopyLink&appuid=6073d38d00000000010068a6&apptime=1679646639)原因，本教程不会介绍特别多的风格，我会在我的小红书账号上更新。感兴趣的朋友可以去关注下。
+> [因为篇幅的](https://www.xiaohongshu.com/user/profile/6073d38d00000000010068a6?xhsshare=CopyLink&appuid=6073d38d00000000010068a6&apptime=1679646639)原因，本教程不会介绍特别多的风格，我会在我的📕账号上更新。感兴趣的朋友可以去关注下。
 
 前面生成的 logo ，有一些估计各位会觉得平平无奇，比如 Lettermark Logo，原因并不是 Midjourney 能力不强，而是我们给的指令太少了，只要在 prompt 里加几个单词，就能生成不一样的 Logo： 左边四个的 prompt 是这样的，我仅仅在原来的 prompt 上加了两个单词 Pop Art：
 

@@ -128,7 +128,7 @@
 
 > 🤖
 
-> [消息称 DeepSeek V4 和腾讯新混元模型将同时于4月发布；传](https://mp.weixin.qq.com/s/D9BEPzTFzJfQQ23VuAmluA) Kimi 新一轮融资估值涨至180亿美元；部分院校禁用「小龙虾」| 极客早知道
+> [消息称 DeepSeek V4 和腾讯新混元模型将同时于4月发布；传](https://mp.weixin.qq.com/s/D9BEPzTFzJf🐧23VuAmluA) Kimi 新一轮融资估值涨至180亿美元；部分院校禁用「小龙虾」| 极客早知道
 
 >
 
@@ -148,7 +148,7 @@
 
 > 🔗 文中引用的链接
 
-+   [原文链接](https://mp.weixin.qq.com/s/D9BEPzTFzJfQQ23VuAmluA)
++   [原文链接](https://mp.weixin.qq.com/s/D9BEPzTFzJf🐧23VuAmluA)
 
 > 6️⃣
 

@@ -4,7 +4,7 @@
 
 作者：[赛博大福](https://vxc3hj17dym.feishu.cn/wiki/VhhZwxzpyiOyuukjnDycTIw4ngb)
 
-公众号：
+👸号：
 
 ![](img/28b0e904b9e2ae54d6f01d3c14dd9fc3.png)
 

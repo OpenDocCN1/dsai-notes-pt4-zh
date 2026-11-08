@@ -152,7 +152,7 @@ https://cloud.siliconflow.cn?referrer=clwwz14f1000xjg07ik1kl0pm
 
 **使用上述网址的新用户完成账号注****册**，立刻免费获得2000万Tokens！
 
-使用国内邮箱，如QQ邮箱，即可完成注册
+使用国内邮箱，如🐧邮箱，即可完成注册
 
 ![](img/0323c40bd94509fb02ef5b76b1c8c2cb.png)
 

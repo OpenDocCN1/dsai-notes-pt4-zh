@@ -108,7 +108,7 @@ ollama run deepseek-r1:70b
 
 ## 安装模型
 
-### 你可以直接在LM Studio里搜索下载R1相关的gguf模型（需要梯子）​
+### 你可以直接在LM Studio里搜索下载R1相关的gguf模型（需要🪜）​
 
 ### 国内打开以下链接：​[h](https://www.modelscope.cn/collections/R1-03d90cabe39248)ttps://www.modelscope.cn/collections/R1-03d90cabe39248
 

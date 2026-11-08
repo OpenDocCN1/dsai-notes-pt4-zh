@@ -186,7 +186,7 @@
 
 咱们数据集使用Kaggle House Prices 数据集（大家可从 https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data 下载）。
 
-或者在公众号后台回复「数据集」，找到house-prices-advanced-regression-techniques.zip 文件。
+或者在👸号后台回复「数据集」，找到house-prices-advanced-regression-techniques.zip 文件。
 
 这里的案例，应用多个数据转换算法（归一化、对数变换、分箱、独热编码、PCA），然后进行深入分析与可视化，最后构建优化的数据集用于模型训练。
 

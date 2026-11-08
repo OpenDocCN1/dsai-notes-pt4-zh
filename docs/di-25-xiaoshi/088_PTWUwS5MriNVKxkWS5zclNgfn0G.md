@@ -70,6 +70,6 @@
 
 [里程碑式突破！谷歌DeepMind推出新一](https://baijiahao.baidu.com/s?id=1798515014518291743&wfr=spider&for=pc)代药物研发AI模型AlphaFold 3
 
-##    小红书大模型小地瓜
+##    📕大模型小地瓜
 
-小红书自研大模型“小地瓜”悄然内测，AI布局加速
+📕自研大模型“小地瓜”悄然内测，AI布局加速

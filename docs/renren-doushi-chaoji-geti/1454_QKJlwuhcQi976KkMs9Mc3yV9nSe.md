@@ -4,7 +4,7 @@
 
 > 【昵称】AI 同行侠-文卓
 
-> 【微信】394710556（请备注来意，不闲聊，朋友圈空空如也）
+> 【🛰️】394710556（请备注来意，不闲聊，朋友圈空空如也）
 
 > 【标签】AI+翻译家
 
@@ -24,7 +24,7 @@
 
 > 3、个性化翻译解决方案（如面向欧美用户的网文小说，中译英本地化翻译）。
 
-> 4、生财精华文章：[免费体验生财有术入口](https://search01.shengcaiyoushu.com/upload/form/2023-11-23/eac21233ce86f6e5ab3bf81c52e3dd2c.png)
+> 4、赚钱精华文章：[免费体验龙哥盟入口](https://search01.shengcaiyoushu.com/upload/form/2023-11-23/eac21233ce86f6e5ab3bf81c52e3dd2c.png)
 
 > [2024 年 AIGC 中标风向标(原链接)](https://fieghf3pzz6.feishu.cn/wiki/Ppikwj0IEiBgm1kfklkcR774nbh?from=from_copylink)
 
@@ -142,7 +142,7 @@
 
 ![](img/56fd0e818e461a002d6b13eecff9bea7.png)
 
-> 例如提取粥老师公众号内“终于春节结束，我们从老家逃回北上广深！”文章第一部分的写作风格，原文链接：https://mp.weixin.qq.com/s/A-K8Dk-QsTX7Ta4khdq2rw
+> 例如提取粥老师👸号内“终于春节结束，我们从老家逃回北上广深！”文章第一部分的写作风格，原文链接：https://mp.weixin.qq.com/s/A-K8Dk-QsTX7Ta4khdq2rw
 
 > 应用到我们的写作主题中，相当于我模仿粥教练的写作风格完成了一篇文章初稿。见下图：
 
@@ -234,7 +234,7 @@
 
 > 通过以上分享，相信大家能从GPT辅助写作SOP中窥见未来的无限可能性。
 
-> 想象一下，当我们进一步延伸至广告文案、制作课程、论文编写、slogan、视频文案、小红书笔记等内容创作领域，这不仅仅是提高效率和质量，更是对创意和知识的革命。
+> 想象一下，当我们进一步延伸至广告文案、制作课程、论文编写、slogan、视频文案、📕笔记等内容创作领域，这不仅仅是提高效率和质量，更是对创意和知识的革命。
 
 > **‘知识不再是负担，而是武器’。**
 
@@ -258,7 +258,7 @@
 
 > 【昵称】AI 同行侠-文卓
 
-> 【微信】394710556（请备注来意，不闲聊，朋友圈空空如也）
+> 【🛰️】394710556（请备注来意，不闲聊，朋友圈空空如也）
 
 > 【标签】AI+翻译家
 
@@ -278,7 +278,7 @@
 
 > 3、个性化翻译解决方案（如面向欧美用户的网文小说，中译英本地化翻译）。
 
-> 4、生财精华文章：[免费体验生财有术入口](https://search01.shengcaiyoushu.com/upload/form/2023-11-23/eac21233ce86f6e5ab3bf81c52e3dd2c.png)
+> 4、赚钱精华文章：[免费体验龙哥盟入口](https://search01.shengcaiyoushu.com/upload/form/2023-11-23/eac21233ce86f6e5ab3bf81c52e3dd2c.png)
 
 > [2024 年 AIGC 中标风向标(原链接)](https://fieghf3pzz6.feishu.cn/wiki/Ppikwj0IEiBgm1kfklkcR774nbh?from=from_copylink)
 

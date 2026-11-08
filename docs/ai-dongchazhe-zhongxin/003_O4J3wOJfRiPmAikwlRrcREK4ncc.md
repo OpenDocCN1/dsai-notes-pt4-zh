@@ -214,7 +214,7 @@
 
 > 1. “毒舌AI”海外爆火，国内推出“AI嘴替”被称平替
 
-> -日前，“毒舌AI”Twitter Personality因为犀利的点评在海外爆火。8月13日，国内类似AI应用“嘴替”上线，堪称微博版的毒舌AI。
+> -日前，“毒舌AI”Twitter Personality因为犀利的点评在海外爆火。8月13日，国内类似AI应用“嘴替”上线，堪称🧣版的毒舌AI。
 
 > 2. 据称华为将于今年10月发布AI算力新品，媲美英伟达H100
 
@@ -772,7 +772,7 @@ OpenAI宣布推迟发布ChatGPT语音助手，以进一步加强内容检测和�
 
 ## 极简 Python：10 段代码，学会基础 python
 
-> 原文地址：https://mp.weixin.qq.com/s/nixQQaEe0EUTxgghq1euHQ
+> 原文地址：https://mp.weixin.qq.com/s/nix🐧aEe0EUTxgghq1euHQ
 
 Python 代码的编写和执行速度较快，使得研究人员和开发者能够快速迭代和测试想法，这对于AI领域尤为重要，因为该领域往往需要频繁试验不同的模型和算法。Python 成为学习AI的首选语言，是因为它在易用性、库支持、广泛的应用范围、社区资源和快速开发等方面具有明显的优势。
 
@@ -1326,13 +1326,13 @@ https://pan.baidu.com/s/1IbFFW8iSsRAVsMq5iB6K5w?pwd=drkj  提取码: drkj
 
 +   她是一个24岁的平面设计师，居住地是上海
 
-+   微信号 luoyun_project
++   🛰️号 luoyun_project
 
 +   肖像画由Stable Diffusion图生图生成
 
-+   她是模拟真人的微信个人号
++   她是模拟真人的🛰️个人号
 
-+   注意她是个人号，不是企业号，不是公众号
++   注意她是个人号，不是企业号，不是👸号
 
 +   她有性格，有人设，有记忆
 
@@ -1344,7 +1344,7 @@ https://pan.baidu.com/s/1IbFFW8iSsRAVsMq5iB6K5w?pwd=drkj  提取码: drkj
 
 ### 如何做到？
 
-#### **基础**：自我认知修正&微信个人号能力
+#### **基础**：自我认知修正&🛰️个人号能力
 
 一**般的大模型是**有自我认知模块的，它会被限定为一个虚拟助手。使用一些prompt进行越狱（jail break）之后，我们可以做到大模型的自我认知修正，从而使得大模型认为自己是其他角色
 
@@ -1438,7 +1438,7 @@ https://pan.baidu.com/s/1IbFFW8iSsRAVsMq5iB6K5w?pwd=drkj  提取码: drkj
 
 +   有概率主动聊天（跟亲密度正相关）
 
-+   微信朋友圈
++   🛰️朋友圈
 
 +   根据每天人物剧本，挑选1-2个发布朋友圈，同时配图
 

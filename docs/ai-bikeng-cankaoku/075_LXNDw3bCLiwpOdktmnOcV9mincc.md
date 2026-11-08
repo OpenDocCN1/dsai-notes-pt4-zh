@@ -736,6 +736,6 @@ https://github.com/AlistGo/alist/issues/5446
 
 # 五. 远程服务
 
-微信：dqtx33
+🛰️：dqtx33
 
 部署，挂载，映射，美化，

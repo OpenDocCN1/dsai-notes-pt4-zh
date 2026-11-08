@@ -10,7 +10,7 @@
 
 对它不熟悉的，可以看老金之前的文章[硅基流动 SiliconCloud](https://tffyvtlai4.feishu.cn/wiki/NRYiwIw84iMXGOkGLvxc62kvnNj)一站式AI大模型，参考链接在这里 -
 
-[Siliconflow2cow - 一站式AI大模型](https://tffyvtlai4.feishu.cn/wiki/BZwdwISL7irlzdkWim5cZYgnnCd)且我Fork了一个微信机器人插件，介绍在这里 -
+[Siliconflow2cow - 一站式AI大模型](https://tffyvtlai4.feishu.cn/wiki/BZwdwISL7irlzdkWim5cZYgnnCd)且我Fork了一个🛰️机器人插件，介绍在这里 -
 
 最近它新增了**SD3.5**，我把它整合到了Siliconflow2cow插件中，并对它进行了一些优化。
 
@@ -28,7 +28,7 @@ Siliconflow注册链接：https://cloud.siliconflow.cn/i/wdyoipMi
 
 ---
 
-##   微信机器人使用方法
+##   🛰️机器人使用方法
 
 老金Fork了原插件版本lemodragon/Siliconflow2cow进行了优化调整。
 

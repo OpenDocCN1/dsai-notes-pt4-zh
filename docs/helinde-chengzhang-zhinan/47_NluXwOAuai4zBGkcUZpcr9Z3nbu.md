@@ -4,7 +4,7 @@
 
 > 资料库整理人
 
-> 公众号：河林成长说
+> 👸号：河林成长说
 
 > vx：nanruihu
 
@@ -200,15 +200,15 @@
 
 [抖音全套违禁词与违规行为规避指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O7Jqbca3uoYmv4xHmV9cqGjinte)
 
-## 小红书运营
+## 📕运营
 
 ### 官方教程
 
-[小红书店铺关联教程](https://school.xiaohongshu.com/lesson/normal/c2c6b9410e694102a87571d162b92935?viewSource=LESSON&fromPage=LessonList&uba_pre=8.school_course_list..1743580033741&uba_index=2&jumpFrom=school&from=ark-login)
+[📕店铺关联教程](https://school.xiaohongshu.com/lesson/normal/c2c6b9410e694102a87571d162b92935?viewSource=LESSON&fromPage=LessonList&uba_pre=8.school_course_list..1743580033741&uba_index=2&jumpFrom=school&from=ark-login)
 
 群聊产品能力 & 商家经营案例（可对外）
 
-小红书新锐品牌618抢量指南（可对外）
+📕新锐品牌618抢量指南（可对外）
 
 【对外版】KOS（企业员工号）产品使用手册
 
@@ -216,9 +216,9 @@
 
 【企微文档】私信获客工具_整体产品说明及操作手册
 
-小红书小清单playbook2.0（对外版）
+📕小清单playbook2.0（对外版）
 
-小红书新手商家入门指南（商业产品all in one）
+📕新手商家入门指南（商业产品all in one）
 
 【企微文档】【聚光】-笔记「合作码」产品使用说明
 
@@ -226,87 +226,87 @@
 
 ![](img/1b1637a0534c2a59916a4800a53e44c2.png)
 
-[小红书达人Brief模版.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kss5buLFvo594GxMugicFmrqnyb)
+[📕达人Brief模版.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kss5buLFvo594GxMugicFmrqnyb)
 
 ![](img/a3aebfea6e6a0590dd2fb724d675f4a6.png)
 
-[小红书商家账号起号步骤和技巧.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NbZSbUksqoEd6pxALlacScwnnwc)
+[📕商家账号起号步骤和技巧.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NbZSbUksqoEd6pxALlacScwnnwc)
 
 ![](img/556925a7879b5dc7baf77a7c256cd081.png)
 
-[小红书获客运营手册丨图文矩阵版.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CvgSbeZSzo7tHnxQ9Ndc1JtVnfd)
+[📕获客运营手册丨图文矩阵版.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CvgSbeZSzo7tHnxQ9Ndc1JtVnfd)
 
 ![](img/08272553982f3e4eb9ea36a548663dd8.png)
 
-[小红书选题没思路？5大万能公式搭建选题库【小红书运营】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JT4MbUpJCorj3lxmMb1c9fETnoe)
+[📕选题没思路？5大万能公式搭建选题库【📕运营】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JT4MbUpJCorj3lxmMb1c9fETnoe)
 
-[📕2025小红书必看运营攻略](https://ycnkryrzlftr.feishu.cn/wiki/T6kxwYGQBi108Wkv93wcw3jinmd?from=from_copylink)
+[📕2025📕必看运营攻略](https://ycnkryrzlftr.feishu.cn/wiki/T6kxwYGQBi108Wkv93wcw3jinmd?from=from_copylink)
 
 ![](img/2a06cf2edb9ac944432e74093afe5262.png)
 
-[小红书0-1落地玩法（引流 带货详细最终最新版本）_202406.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QrwkbPu9PogNgrxR6iyc4ol4n1d)
+[📕0-1落地玩法（引流 带货详细最终最新版本）_202406.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QrwkbPu9PogNgrxR6iyc4ol4n1d)
 
 ![](img/805e560d1861c5ddd79e745fa811e701.png)
 
-[小红书笔记及直播高效运营表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RSGRbVR9eosjNjxpdq8c2JPbnWb)
+[📕笔记及直播高效运营表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RSGRbVR9eosjNjxpdq8c2JPbnWb)
 
 ![](img/24afa2db9ca737ef5f6aaccfc4bb4a44.png)
 
-[小红书运营28天落地SOP-.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y6c3bLk3WoZOPoxToykcnu6MnAg)
+[📕运营28天落地SOP-.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y6c3bLk3WoZOPoxToykcnu6MnAg)
 
-小红书新锐头客-4月优质闭环笔记分享【对外版】
+📕新锐头客-4月优质闭环笔记分享【对外版】
 
 ![](img/b443ee85c00ffda9059d265a4dce5fe2.png)
 
-[2025小红书直播违禁词与违规问题手册.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YJohbOxrEozLPdxMA4dcpn6OnYg)
+[2025📕直播违禁词与违规问题手册.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YJohbOxrEozLPdxMA4dcpn6OnYg)
 
 ![](img/0bb8c4da58541a116905c82fb8aaa771.png)
 
-[2025小红书平台营销通案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S4Ejbkb27owg2BxucLwcSzvRn9v)
+[2025📕平台营销通案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S4Ejbkb27owg2BxucLwcSzvRn9v)
 
 ![](img/b6f91b11e7da1e89931acec359c9aed6.png)
 
-[小红书社区高危词表.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JhBxbk4gUoP4HHxeO8eckYB4nOb)
+[📕社区高危词表.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JhBxbk4gUoP4HHxeO8eckYB4nOb)
 
 ![](img/03fd2871b3a68ca73084e6705831d393.png)
 
-[2024小红书运营工具大全【运营干货】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P0X5b75PNoiqc6xteMYcN7N8n4c)
+[2024📕运营工具大全【运营干货】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P0X5b75PNoiqc6xteMYcN7N8n4c)
 
 ![](img/da292cc436ea5288f81529e86be1944f.png)
 
-[2024小红书教育营销习题册.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KNnJbBo8PovdTGxQCjIcuQa4nPb)
+[2024📕教育营销习题册.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KNnJbBo8PovdTGxQCjIcuQa4nPb)
 
 ![](img/bd04b4de740184c7273b930b0e71180d.png)
 
-[「小红书」如何快速涨粉成为小红书创作达人？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IAnpbvL1josNQexA7nIcxkLinhb)
+[「📕」如何快速涨粉成为📕创作达人？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IAnpbvL1josNQexA7nIcxkLinhb)
 
 ![](img/9d33d7842dcfafb3168d3a61015f6394.png)
 
-[24年如何撬动小红书更多流量？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RXR6bTrGcoQknkxtAFwcdIgAnkd)
+[24年如何撬动📕更多流量？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RXR6bTrGcoQknkxtAFwcdIgAnkd)
 
 ![](img/07ea806aa50b84ef789d81214c0b23bb.png)
 
-[小红书X科特勒《营销的第三种范式》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rw0Tb2FohouXx3xRzzcc4Uexnzb)
+[📕X科特勒《营销的第三种范式》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rw0Tb2FohouXx3xRzzcc4Uexnzb)
 
-[小红书商业圈最全知识库（持续更新中）](https://qwdqp1xy5k3.feishu.cn/wiki/O0auwWm4siCqrmkaL21cCJpWnFb?from=from_copylink)
+[📕商业圈最全知识库（持续更新中）](https://qwdqp1xy5k3.feishu.cn/wiki/O0auwWm4siCqrmkaL21cCJpWnFb?from=from_copylink)
 
-[狂扒84个官方薯账号，包教包会的小红书运营指南](https://idht1d7o1m.feishu.cn/docx/Oms8dlBbZobhTKxH4XEcdq5FnOe)
+[狂扒84个官方薯账号，包教包会的📕运营指南](https://idht1d7o1m.feishu.cn/docx/Oms8dlBbZobhTKxH4XEcdq5FnOe)
 
 ![](img/978a6d90e5c1aadb28035d99d867def2.png)
 
-[母婴品牌如何玩转小红书.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DFUjb2qWeolStxxvo4Zcf5OVnCl)
+[母婴品牌如何玩转📕.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DFUjb2qWeolStxxvo4Zcf5OVnCl)
 
 ![](img/7b248d1e53e8d1eb09f6bb8ff64795f3.png)
 
-[rise100小红书电商小报.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NXyVbPaNdoEU7MxScjIcwyzinNe)
+[rise100📕电商小报.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NXyVbPaNdoEU7MxScjIcwyzinNe)
 
 ![](img/0ba7c63af86eb3dbe376acb724fde2d3.png)
 
-[小红书爆文攻略【互联网】【新媒体运营】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GHp9bSwI8oikZTxMqvBcOQ5OnAc)
+[📕爆文攻略【互联网】【新媒体运营】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GHp9bSwI8oikZTxMqvBcOQ5OnAc)
 
 ![](img/73232e52da4c713984229e0a3db98b4b.png)
 
-[小红书养号发文SOP.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C4jabu9z0oMAlYxWvldcpCSUnfh)
+[📕养号发文SOP.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C4jabu9z0oMAlYxWvldcpCSUnfh)
 
 ![](img/fa369ea7fa4449f08e8b5deaa2a2bf8a.png)
 
@@ -314,79 +314,79 @@
 
 ![](img/c03aa9a9fac3b42e852cd78798a7fda6.png)
 
-[怎样写出小红书最受欢迎标题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JraAbbqaGoVENBxcc9scfhrQnWg)
+[怎样写出📕最受欢迎标题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JraAbbqaGoVENBxcc9scfhrQnWg)
 
 ![](img/d5462dfd3fa3fe7dffd0732ec10abc94.png)
 
-[小红书爆款封面的底层逻辑.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S4n4bmmyEoMZiFx5hqMciQc9nfe)
+[📕爆款封面的底层逻辑.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S4n4bmmyEoMZiFx5hqMciQc9nfe)
 
 ![](img/4cc0897405232f6c0afd201d8375b7e9.png)
 
-[小红书最受欢迎的封面图，到底长什么样？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZZKNbXCIFofq6lxieRkcxVPsnEd)
+[📕最受欢迎的封面图，到底长什么样？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZZKNbXCIFofq6lxieRkcxVPsnEd)
 
 ![](img/9682dcd2d8da573a36aea7f71c7b8ab3.png)
 
-[《小红书内容运营技巧》内部培训文件.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N40gbBDq9oZjlQxmyCxcpbqjnMh)
+[《📕内容运营技巧》内部培训文件.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N40gbBDq9oZjlQxmyCxcpbqjnMh)
 
 ![](img/bb95d986248e0be36b21f3bbfd4a4ea9.png)
 
-[【小红书】2022如何做好内容爆文进阶指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IJTUbkVHKo86UFx5vXYcParNnof)
+[【📕】2022如何做好内容爆文进阶指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IJTUbkVHKo86UFx5vXYcParNnof)
 
 ![](img/4015e353a5ef6c94e252419053d013c6.png)
 
-[【小红书】（精品）内容爆文进阶指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nwe1bgxiPo5BndxCz5scKeBfnWc)
+[【📕】（精品）内容爆文进阶指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nwe1bgxiPo5BndxCz5scKeBfnWc)
 
 ![](img/4221186cafe53a498d4b5a83074fd793.png)
 
-[小红书从注册到运营全流程-小红书运营方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZEu7b9PxCoDj4bx4Y3rcaweGnIc)
+[📕从注册到运营全流程-📕运营方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZEu7b9PxCoDj4bx4Y3rcaweGnIc)
 
 ![](img/20d352a7169580c299cf0d1fed86db75.png)
 
-[小红书运营全流程&爆文创作攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GLocblNFfo7BbPxLGibcLb8NnAb)
+[📕运营全流程&爆文创作攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GLocblNFfo7BbPxLGibcLb8NnAb)
 
 ![](img/e6ce77cd4053fa131dc9b6e18365d870.png)
 
-[【小红书官方】小红书商业笔记避坑指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KJ9Pb7zS0o8HGaxyAr6cMSQHncc)
+[【📕官方】📕商业笔记避坑指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KJ9Pb7zS0o8HGaxyAr6cMSQHncc)
 
 ![](img/f324f156abf0d31965be25bcf9325de7.png)
 
-[【小红书官方】小红书大促期间爆文打造攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Khzib9T57oHt8IxdbMEcIoXqnOe)
+[【📕官方】📕大促期间爆文打造攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Khzib9T57oHt8IxdbMEcIoXqnOe)
 
 ![](img/cb93e6efc3fabf8946b1bee2bb2bb844.png)
 
-[【小红书官方】小红书笔记内容指导.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bf3Mb0oHIo791Kxt74ncBhwrnvc)
+[【📕官方】📕笔记内容指导.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bf3Mb0oHIo791Kxt74ncBhwrnvc)
 
 ![](img/5b413d153bca1717d44524c7095deaf8.png)
 
-[【小红书官方】如何在小红书打造优质种草笔记？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MYzabJpG8oS3fRxOAXXc73Jlnod)
+[【📕官方】如何在📕打造优质种草笔记？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MYzabJpG8oS3fRxOAXXc73Jlnod)
 
 ![](img/d3c5740f95b47adb49dc950c12f3774e.png)
 
-[【小红书官方】如何做好内容爆文进阶指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NUmQbtCEEokDWYx5ZaocWYlLnwd)
+[【📕官方】如何做好内容爆文进阶指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NUmQbtCEEokDWYx5ZaocWYlLnwd)
 
 ![](img/2e6354f7c142d5e75baa9087471e11f0.png)
 
-[如何通过小红书快速打爆新品牌.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LnoXbj5N3oLiOpxaUfjcD5Uun2g)
+[如何通过📕快速打爆新品牌.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LnoXbj5N3oLiOpxaUfjcD5Uun2g)
 
 ![](img/557c9089a108403861c804e003e2f3f7.png)
 
-[小红书企业新账号学起来手把手教你早期运营思路.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B0bhb3XA3ox8TqxFW15cvkJFnEd)
+[📕企业新账号学起来手把手教你早期运营思路.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B0bhb3XA3ox8TqxFW15cvkJFnEd)
 
 ![](img/a60ff1b0d914a5c9e4b7ce837e17bb6c.png)
 
-[小红书：小红书内容运营技巧培训SOP.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JyZsbZspyorZEOxanficjpXrnpc)
+[📕：📕内容运营技巧培训SOP.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JyZsbZspyorZEOxanficjpXrnpc)
 
 ![](img/60420fdfaf8b7d5b49b98b059d930e8d.png)
 
-[四步打造小红书优质专业号.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IlhBbe16boDhOWxicsecl0snned)
+[四步打造📕优质专业号.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IlhBbe16boDhOWxicsecl0snned)
 
 ![](img/930fd781a1a29e8ebdeaa578249dcd71.png)
 
-[学好这五步-入局小红书.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X5hYb4OWroXFbgx6tfbceHQCnFc)
+[学好这五步-入局📕.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X5hYb4OWroXFbgx6tfbceHQCnFc)
 
 ![](img/189503ec4787ec9b0095663e55471f5a.png)
 
-[小红书合规运营.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L9qjb2DfJoUFa8xbxLdcI3CKnde)
+[📕合规运营.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L9qjb2DfJoUFa8xbxLdcI3CKnde)
 
 ### 直播运营
 
@@ -396,15 +396,15 @@
 
 ![](img/08a9a360de4b8bc38280e3ccac74dc41.png)
 
-[小红书直播推广技巧.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OaAwb1Nu5oXraWxxo3JcSHoJn7e)
+[📕直播推广技巧.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OaAwb1Nu5oXraWxxo3JcSHoJn7e)
 
 ![](img/f180989c48bcc0fb003e55f5d0a9295c.png)
 
-[小红书直播策划模板表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZoCFbxmGGoOOMYx3zKUcNMe2njc)
+[📕直播策划模板表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZoCFbxmGGoOOMYx3zKUcNMe2njc)
 
 ![](img/d62a1523338b054752a9062f339dc004.png)
 
-[小红书直播间直播规范.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TPqobAJM6o2vGkx6eDmcJAsInyg)
+[📕直播间直播规范.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TPqobAJM6o2vGkx6eDmcJAsInyg)
 
 ### 品牌种草
 
@@ -416,31 +416,31 @@
 
 聚光种草直达（阿里代投-UD）产品操作手册
 
-小红书官方营销学习平台——小红书种草学
+📕官方营销学习平台——📕种草学
 
-[小红书平台电商中心](https://school.xiaohongshu.com)
+[📕平台电商中心](https://school.xiaohongshu.com)
 
-[小红书电商系列细节篇](https://hi428l7bh89.feishu.cn/docx/AtczdJ2Ttog6slx61MTcyMsnnLd?from=from_copylink)
+[📕电商系列细节篇](https://hi428l7bh89.feishu.cn/docx/AtczdJ2Ttog6slx61MTcyMsnnLd?from=from_copylink)
 
-[小红书直播推广手册](https://doc.weixin.qq.com/doc/w3_Ac0ArQYCAEQl50cUvcuSTaSLTa8oh?scode=ANAAyQcbAAgeA9mQgnAc0ArQYCAEQ)
+[📕直播推广手册](https://doc.weixin.qq.com/doc/w3_Ac0ArQYCAEQl50cUvcuSTaSLTa8oh?scode=ANAAyQcbAAgeA9mQgnAc0ArQYCAEQ)
 
 ![](img/8a0f6fd6d871ea8372e04331184ab073.png)
 
-[小红书品牌投放考核表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UEwdb96VOoXZ62x7qZGc22UXnBb)
+[📕品牌投放考核表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UEwdb96VOoXZ62x7qZGc22UXnBb)
 
 ![](img/6a6e4a71ac388283a76b8fd0a8e4bb6f.png)
 
-[2026小红书全年热点规划表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TqK1b7L36osmhDxRvU5coxDlnWh)
+[2026📕全年热点规划表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TqK1b7L36osmhDxRvU5coxDlnWh)
 
 ![](img/632833a1b1268f4d3c9b6d8b66072b57.png)
 
 [品牌工作推进：品牌月度规划表（5张）.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OCZRbMxLVolTu2xzyoWcr7c6nbh)
 
-[小红书电商行为人群定向产品手册](https://doc.weixin.qq.com/doc/w3_Ac0ArQYCAEQcbeo2wgMTwWUV8z8jS?scode=ANAAyQcbAAg72D0x6qAc0ArQYCAEQ)
+[📕电商行为人群定向产品手册](https://doc.weixin.qq.com/doc/w3_Ac0ArQYCAEQcbeo2wgMTwWUV8z8jS?scode=ANAAyQcbAAg72D0x6qAc0ArQYCAEQ)
 
 ![](img/ba998b33e2d308e4c036b7740df852b5.png)
 
-[电商卖家做小红书的八大案例.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IRRgbO28IoAGzZxShSlcBhbTnFc)
+[电商卖家做📕的八大案例.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IRRgbO28IoAGzZxShSlcBhbTnFc)
 
 ![](img/95cf63511d2a256e6378813de04d28a5.png)
 
@@ -448,161 +448,161 @@
 
 ![](img/ed9705571b98a676f4ab03281646f69f.png)
 
-[小红书医疗健康行业KOS账号玩法指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OzKibEsulowh66xTXdJcNCE5njg)
+[📕医疗健康行业KOS账号玩法指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OzKibEsulowh66xTXdJcNCE5njg)
 
 ![](img/f1f988b0cb65905b0cb18378a94351ec.png)
 
-[2024小红书营销通案-美妆IP版图.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GeR8b6oVqolRx0xhOQeciaI5nGe)
+[2024📕营销通案-美妆IP版图.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GeR8b6oVqolRx0xhOQeciaI5nGe)
 
 ![](img/7238a5bdb3b22aa744feb375608201f2.png)
 
-[2024小红书搜索推广白皮书.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MRcPbv39XoUc5hxRPKbcprwFnRh)
+[2024📕搜索推广白皮书.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MRcPbv39XoUc5hxRPKbcprwFnRh)
 
 ![](img/9f908c2c946f64a2e66ea7b8fbd8dfde.png)
 
-[2024小红书平台营销通案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TxUhbzkLro13tnx8LqkcQVdrnqe)
+[2024📕平台营销通案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TxUhbzkLro13tnx8LqkcQVdrnqe)
 
 ![](img/44777b184b2c8bd40931e98c08c521c1.png)
 
-[小红书龙年营销划重点.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CHFNbEuACoytj0xPIO9cojVSnbf)
+[📕龙年营销划重点.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CHFNbEuACoytj0xPIO9cojVSnbf)
 
 ![](img/4ecf6c65feba6ee20e5b3d9bc72a2d4c.png)
 
-[小红书种草值 - 产品手册.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XqXgbkX3Rosef5x5G3ScBbA2ngb)
+[📕种草值 - 产品手册.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XqXgbkX3Rosef5x5G3ScBbA2ngb)
 
 ![](img/a436bcc490447ba13ec306135a8a8709.png)
 
-[小红书不同行业下的用户有哪些差异化偏好？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UTr0bkiwcouPPQxhRNRcSqkTnbg)
+[📕不同行业下的用户有哪些差异化偏好？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UTr0bkiwcouPPQxhRNRcSqkTnbg)
 
 ![](img/3d153ade4f05ce2e25926027be664aff.png)
 
-[2023小红书企业号笔记创作指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JTDIb8Ov2oQvHPxBigVclwL6nBe)
+[2023📕企业号笔记创作指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JTDIb8Ov2oQvHPxBigVclwL6nBe)
 
 ![](img/da8e8c5bc755dd1d2ef1220d7999d65c.png)
 
-[小红书-达人营销四步法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XkFvbilCWoJmjwxfFbXcgfcUnqe)
+[📕-达人营销四步法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XkFvbilCWoJmjwxfFbXcgfcUnqe)
 
 ![](img/3a3854aa92daeceb581f06f89c13aec4.png)
 
-[【小红书】从0-1运营企业号.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X6AnbVHRzo8WC2xdfTOcNmBUnLc)
+[【📕】从0-1运营企业号.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X6AnbVHRzo8WC2xdfTOcNmBUnLc)
 
 ![](img/c6f0617ad721b8304d96f20f4d831181.png)
 
-[小红书低粉高变现起号指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ut21bx6geoklNjxkO96c8V13njc)
+[📕低粉高变现起号指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ut21bx6geoklNjxkO96c8V13njc)
 
 ![](img/79d4b7c24cf970d1ee1d97344c562ef5.png)
 
-[小红书教育品牌营销方法拆解.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GE1nbkVR5oiq4oxKQFccOBDnnhe)
+[📕教育品牌营销方法拆解.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GE1nbkVR5oiq4oxKQFccOBDnnhe)
 
 ![](img/e918dee892785063a75071a2f5ad1646.png)
 
-[【小红书官方】小红书整体框架及玩法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AJ2ebXumSoD7gXxdukZc0JqWnMc)
+[【📕官方】📕整体框架及玩法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AJ2ebXumSoD7gXxdukZc0JqWnMc)
 
 ![](img/54e870984dbc9d28391e519272509429.png)
 
-[【小红书官方】小红书运营知识地图.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UbgzbRK1FoowJFxekCkcHAv9njc)
+[【📕官方】📕运营知识地图.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UbgzbRK1FoowJFxekCkcHAv9njc)
 
 ![](img/eeb053a8b91f7e620ce8c2568b03d70a.png)
 
-[【小红书官方】小红书KOL养成方法论.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GDD9bAxQpod5NCxi6EYc2SZrnmd)
+[【📕官方】📕KOL养成方法论.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GDD9bAxQpod5NCxi6EYc2SZrnmd)
 
 ![](img/7ba2768279036fb5a07327840c923726.png)
 
-[新商家入局小红书的4x4方法论.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O6nMb8wRHoGYvzxFlnNcfnEJn2I)
+[新商家入局📕的4x4方法论.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O6nMb8wRHoGYvzxFlnNcfnEJn2I)
 
 ![](img/20284603d076fdca01a693abf7b2d9b0.png)
 
-[小红书商业产品全景介绍.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DWBfbbbZ8o4eX7x94vhcpYrCnnc)
+[📕商业产品全景介绍.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DWBfbbbZ8o4eX7x94vhcpYrCnnc)
 
 ![](img/faee6aa23e16ac66d930970299d71688.png)
 
-[小红书新商家指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TuZjbyIcWolSW5xoDPuckj3lnAf)
+[📕新商家指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TuZjbyIcWolSW5xoDPuckj3lnAf)
 
 ![](img/275c00108d35103d326d7e377575f345.png)
 
-[小红书品牌号运营地图.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AAZwbWKYFoEr8cxkzP7czIb7nQt)
+[📕品牌号运营地图.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AAZwbWKYFoEr8cxkzP7czIb7nQt)
 
 ![](img/96fb0de56731e95ff91f53f85bf3c362.png)
 
-[珍珠品牌小红书推广方案【珠宝KOL营销】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OFHZb07RLoBLeIxstLzcjc9Infe)
+[珍珠品牌📕推广方案【珠宝KOL营销】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OFHZb07RLoBLeIxstLzcjc9Infe)
 
 ### 行业趋势
 
 ![](img/09a67346c389b8c357eb0bb930774ec4.png)
 
-[2024小红书职业教育行业营销通案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cos6b1fgPokAmnxKG3sct1cTnEb)
+[2024📕职业教育行业营销通案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cos6b1fgPokAmnxKG3sct1cTnEb)
 
 ![](img/ff4a871d2ba882875d34ca4064d8e6ce.png)
 
-[2023年小红书9大行业趋势分析报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SQF5bQXmko11nexhv0rcYwc7nph)
+[2023年📕9大行业趋势分析报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SQF5bQXmko11nexhv0rcYwc7nph)
 
 ![](img/824efeac637400002fc8b34a91c13b3b.png)
 
-[【增长黑盒】小红书增长策略研究：潮流时尚行业.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bfc9bx00kos8Krx0enkcyBSWnad)
+[【增长黑盒】📕增长策略研究：潮流时尚行业.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bfc9bx00kos8Krx0enkcyBSWnad)
 
 ![](img/873fcd388d1a1e1828380b8d0af87d47.png)
 
-[《小红书本地行业整合解决方案》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DAcxb972AoUjPpxjR84cyJPenzc)
+[《📕本地行业整合解决方案》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DAcxb972AoUjPpxjR84cyJPenzc)
 
 ![](img/514efb9c1c55c9ed766be3846ff9dc8f.png)
 
-[小红书：2023小红书年度生活趋势报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H5QebKL89o42xRxQmu2cEI0An5g)
+[📕：2023📕年度生活趋势报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H5QebKL89o42xRxQmu2cEI0An5g)
 
 ![](img/df469d30bf7b0b23217f1a686730b8e9.png)
 
-[小红书：2024小红书父母观察报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DZJzbaosqoAqUQxxnqScu837n2f)
+[📕：2024📕父母观察报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DZJzbaosqoAqUQxxnqScu837n2f)
 
-小红书食品饮料行业洞察报告2024
+📕食品饮料行业洞察报告2024
 
 ### 投放推广
 
-[小红书聚光投放红宝书](https://poho6ch9zt.feishu.cn/docx/UB1vdG4DkovS18xw8FacggdJngb)
+[📕聚光投放红宝书](https://poho6ch9zt.feishu.cn/docx/UB1vdG4DkovS18xw8FacggdJngb)
 
-[小红书聚光平台](https://doc.weixin.qq.com/doc/w3_Ad0AnwamAGsr05edYt0SvmdFMNvan?dver=)
+[📕聚光平台](https://doc.weixin.qq.com/doc/w3_Ad0AnwamAGsr05edYt0SvmdFMNvan?dver=)
 
 聚光「商品推广」投放策略完全手册
 
-[小红书私信营销手册](https://doc.weixin.qq.com/doc/w3_ACwAJQbSACQg935I3jxRkeQH7nqqp?scode=ANAAyQcbAAgnRXFhjuACwAJQbSACQ&sojumpparm=520866&from=%E7%AB%99%E5%86%85banner)
+[📕私信营销手册](https://doc.weixin.qq.com/doc/w3_ACwAJQbSACQg935I3jxRkeQH7nqqp?scode=ANAAyQcbAAgnRXFhjuACwAJQbSACQ&sojumpparm=520866&from=%E7%AB%99%E5%86%85banner)
 
-小红书 KOB3.0 使用指南及开通流程
+📕 KOB3.0 使用指南及开通流程
 
-[小红书 私信通产品使用手册](https://doc.weixin.qq.com/doc/w3_ACwAJQbSACQ6rLW1mGrRTmz4PUltA?scode=ANAAyQcbAAgUWHJfnrACwAJQbSACQ)
+[📕 私信通产品使用手册](https://doc.weixin.qq.com/doc/w3_ACwAJQbSACQ6rLW1mGrRTmz4PUltA?scode=ANAAyQcbAAgUWHJfnrACwAJQbSACQ)
 
 【企微文档】【客资｜企微】投放操作具体流程（对外）
 
-[【知识共享】小红书聚光投放知识库](https://stbi33audx.feishu.cn/docx/RCUEdrpcNo1FzXxr1qAc7PnSnhS?from=from_copylink)
+[【知识共享】📕聚光投放知识库](https://stbi33audx.feishu.cn/docx/RCUEdrpcNo1FzXxr1qAc7PnSnhS?from=from_copylink)
 
 ![](img/0d1fb265cae9a8a61029261aa4a57cbb.png)
 
-[小红书竞价广告资源介绍.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FPwubJnz2ooL83x37X2cMfPungP)
+[📕竞价广告资源介绍.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FPwubJnz2ooL83x37X2cMfPungP)
 
 ![](img/bf794efcac23f16383757516b9974086.png)
 
-[1.小红书聚光平台营销玩法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DNoob1PhPoJY6txkra5c5dwZnhd)
+[1.📕聚光平台营销玩法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DNoob1PhPoJY6txkra5c5dwZnhd)
 
 ![](img/08e6d48bf671ec5956a97f8dba003e3f.png)
 
-[【小红书】效果投放分阶段精细化运营.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AQSQbaOihowuHsxhRZKcSJRlnCh)
+[【📕】效果投放分阶段精细化运营.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AQSQbaOihowuHsxhRZKcSJRlnCh)
 
 ![](img/a1e1518414f8f840965c31da5bba4c33.png)
 
-[《小红书运营投放指南》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TsmGb1z8wohv1FxFxNhcYFbOnEd)
+[《📕运营投放指南》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TsmGb1z8wohv1FxFxNhcYFbOnEd)
 
 ![](img/ce111e087a809667acc8a169a049befb.png)
 
-[小红书蒲公英笔记投放复盘方法论.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Uew4budALonXQZx2BZycII7cn1g)
+[📕蒲公英笔记投放复盘方法论.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Uew4budALonXQZx2BZycII7cn1g)
 
 ![](img/afa6cd640dfab6086daae9b1b3416e67.png)
 
-[小红书薯条操作指南-企业号.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AdnNbfKptojcsxxN3YXcFqTon4g)
+[📕薯条操作指南-企业号.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AdnNbfKptojcsxxN3YXcFqTon4g)
 
 ![](img/8e5ea736300b24063a38e9dc3418a5bb.png)
 
-[小红书效果营销运营手册-信息流优化四大抓手.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P8f1bZJDlooCNJxLUyhcfpoInWg)
+[📕效果营销运营手册-信息流优化四大抓手.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P8f1bZJDlooCNJxLUyhcfpoInWg)
 
 ![](img/34d3005f51d4b1887d35b1fb7b75ea38.png)
 
-[小红书搜索词布局实战手册-小红书.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YyhqbailWoIrpHxJ2PJcgKNnnic)
+[📕搜索词布局实战手册-📕.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YyhqbailWoIrpHxJ2PJcgKNnnic)
 
 ### 活动案例
 
@@ -612,39 +612,39 @@
 
 ![](img/eec5190cbe9d71ac52995bd0347c1edd.png)
 
-[小红书项目复盘（适合广告公司种草引流天猫.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M54NbUa4UoqqZ1xRNCcctwpunvc)
+[📕项目复盘（适合广告公司种草引流天猫.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M54NbUa4UoqqZ1xRNCcctwpunvc)
 
 ![](img/39cc4da25f671665858c129bf2fe4c5a.png)
 
-[如何做好小红书项目复盘 ？.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BYpdbKNN6omA8gxfqbscZdjFnFh)
+[如何做好📕项目复盘 ？.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BYpdbKNN6omA8gxfqbscZdjFnFh)
 
 ![](img/db0e1c2631800bb55946fdd04de6a24a.png)
 
-[2024小红书平台营销通案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MzPsbmMMmo52i2xypIQcDtJoneh)
+[2024📕平台营销通案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MzPsbmMMmo52i2xypIQcDtJoneh)
 
 ![](img/daef42c35a7541c2af2b8fcdeac4b764.png)
 
-[2023在小红书解锁品牌经营新风潮【互联网】【通案】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ReqjbVyoooZPi3xQYTYcgsInntd)
+[2023在📕解锁品牌经营新风潮【互联网】【通案】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ReqjbVyoooZPi3xQYTYcgsInntd)
 
 ![](img/da3bee21620f31175b63ca67d0208aec.png)
 
-[Adam男士凉感内裤七夕小红书营销方案2023.06.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O9Y1bkdChoi7zzxYRymcSjhinTb)
+[Adam男士凉感内裤七夕📕营销方案2023.06.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O9Y1bkdChoi7zzxYRymcSjhinTb)
 
 ![](img/b2d48c3ae1c18cdc16c5ea725f999c6d.png)
 
-[EM小红书灵感出游指南-正文.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CF1zbEqnro3jUVxa5ALcAgy6nWb)
+[EM📕灵感出游指南-正文.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CF1zbEqnro3jUVxa5ALcAgy6nWb)
 
 ![](img/072fc729c111fa7f06f1af6174373b2f.png)
 
-[2023小红书S+级外人节IP招商方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UxfkbHsHHowVQDxQCrWcasebnlb)
+[2023📕S+级外人节IP招商方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UxfkbHsHHowVQDxQCrWcasebnlb)
 
 ![](img/438fdd265a8030a347988c5e86c8475b.png)
 
-[2023小红书商业化营销IP招商通案-89页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UlXPbbsi0oXgsmxaJAgcz4wtnEd)
+[2023📕商业化营销IP招商通案-89页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UlXPbbsi0oXgsmxaJAgcz4wtnEd)
 
 ![](img/18fd3a872432e82bf059da28f76d893b.png)
 
-[2024小红书营销IP新版图【美护行业】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zli7b7Seso0L4gxVa9fcfOeXnEc)
+[2024📕营销IP新版图【美护行业】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zli7b7Seso0L4gxVa9fcfOeXnEc)
 
 ## 私域运营
 
@@ -666,13 +666,13 @@
 
 ![](img/a04476483a08a15d8156e866792b4ceb.png)
 
-[2024微信朋友圈用户研究报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SiVWbOQxVow1NOxWO5kchd7QnOd)
+[2024🛰️朋友圈用户研究报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SiVWbOQxVow1NOxWO5kchd7QnOd)
 
-企业微信全套裂变方案-星耀裂变出品 · Yuque
+企业🛰️全套裂变方案-星耀裂变出品 · Yuque
 
 ![](img/3f46f7013a3fa11d7cdef977eecfe9e7.png)
 
-[【小裂变出品】企业微信对外信息展示页配置.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B5NebscwCoABLbxKBdjceEX3nrd)
+[【小裂变出品】企业🛰️对外信息展示页配置.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B5NebscwCoABLbxKBdjceEX3nrd)
 
 ![](img/b5ed2655d214fc73b53dcec4ac073407.png)
 
@@ -772,11 +772,11 @@
 
 ![](img/56b3e2a02ef7257504d82ff6a1ff57f2.png)
 
-[瑞幸咖啡企业微信引流及引导下单话术SOP.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YntJbPk8ko66wfxaSRucymdknve)
+[瑞幸咖啡企业🛰️引流及引导下单话术SOP.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YntJbPk8ko66wfxaSRucymdknve)
 
 ![](img/f0271f2fae4a176de5536d11b1d2936f.png)
 
-[企业微信敏感词&敏感行为&养号手册.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OcLGbeOElovZl2xRqPFckyFWnlg)
+[企业🛰️敏感词&敏感行为&养号手册.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OcLGbeOElovZl2xRqPFckyFWnlg)
 
 ![](img/6303525f275a62cb756fb66e61fb57b9.png)
 
@@ -860,11 +860,11 @@
 
 ![](img/590408e74c179f16136ae309a6fb2592.png)
 
-[勿传！群响企业微信最新又全的养号流程.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A0n9bQT85oz8IBxKPulcZA33nJe)
+[勿传！群响企业🛰️最新又全的养号流程.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A0n9bQT85oz8IBxKPulcZA33nJe)
 
 ![](img/520e3d3b06f35ba423ee9b462c08b9c1.png)
 
-[勿传！群响最新微信养号和防封全教程.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/StD9bD9kMoVcNZxbImIcdSBgnbf)
+[勿传！群响最新🛰️养号和防封全教程.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/StD9bD9kMoVcNZxbImIcdSBgnbf)
 
 ![](img/5e81c13456d7da1a4fa57aab780ec05d.png)
 
@@ -872,7 +872,7 @@
 
 ![](img/ce99a7eab4d9f04fc06b2059ca24f599.png)
 
-[群响：微信助手群发小技巧.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FGJIbUqo1ocrstxg4xacchsAnYe)
+[群响：🛰️助手群发小技巧.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FGJIbUqo1ocrstxg4xacchsAnYe)
 
 ![](img/6624bdf8c82d7874c11dca08752aad2a.png)
 
@@ -884,7 +884,7 @@
 
 ![](img/5f5db9885c53ed14118c26bd52cdb10b.png)
 
-[绝密！！微信养号细则及其他规则.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F8s1btfOSoQQ0mxtJ1tczGjTnDh)
+[绝密！！🛰️养号细则及其他规则.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F8s1btfOSo🐧0mxtJ1tczGjTnDh)
 
 ![](img/2736a9de9af79abb4498c9fc9e7979ed.png)
 
@@ -908,7 +908,7 @@
 
 ![](img/814bb4aa66dd54baf81b2e7527314823.png)
 
-[企业微信使用指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XaHsbgVFooiJbrxMPX6ckvwcnXN)
+[企业🛰️使用指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XaHsbgVFooiJbrxMPX6ckvwcnXN)
 
 ![](img/dd11c7fd9925e6dda45e09ae1fc6b6dd.png)
 
@@ -958,7 +958,7 @@
 
 ![](img/b9d29a3ee0c8f37d790a11b827187e5a.png)
 
-[2022小红书笔记内容特征分析报告-千瓜数据-202209.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DwFwbmAuqov2o7xQMN2cRA2Anpg)
+[2022📕笔记内容特征分析报告-千瓜数据-202209.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DwFwbmAuqov2o7xQMN2cRA2Anpg)
 
 ![](img/c60020463f12eb9be3ab21a338b7e078.png)
 
@@ -1034,7 +1034,7 @@
 
 ![](img/7ec27c840fd9860b9ae23d558c0ad79e.png)
 
-[小红书项目复盘（适合广告公司种草引流天猫.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EuUdb7V8HoK3vKxsDXScRRwbnuf)
+[📕项目复盘（适合广告公司种草引流天猫.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EuUdb7V8HoK3vKxsDXScRRwbnuf)
 
 ![](img/47787cae423334bd4913c6b41c0f3620.png)
 
@@ -1272,7 +1272,7 @@
 
 ![](img/e93fe171d117f8cba21ede9228f64f88.png)
 
-[商业IP公众号定位诊断表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DYDIb76txo1CuExyIYzctEh6nfd)
+[商业IP👸号定位诊断表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DYDIb76txo1CuExyIYzctEh6nfd)
 
 ![](img/119f0ed2f8753788c5616231ecbbff55.png)
 
@@ -1404,7 +1404,7 @@
 
 ![](img/790d306dfc5be21d3bdd7382e5ad90a4.png)
 
-[社媒电商直播间货盘运营方法论-集瓜-202207.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jwywb2tUqompmdx0EEEcQQNIn7e)
+[社媒电商直播间货盘运营方法论-集瓜-202207.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jwywb2tUqompmdx0EEEc🐧NIn7e)
 
 ![](img/94301c915b1a60cb9c622862dc7fcf38.png)
 
@@ -1412,7 +1412,7 @@
 
 ![](img/1ebf16627b573d0b3cc74c5a60004c83.png)
 
-[「微信广告」效果广告投放指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EKD3bsy6noNw6Nxsj4CcOn5vn5j)
+[「🛰️广告」效果广告投放指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EKD3bsy6noNw6Nxsj4CcOn5vn5j)
 
 ![](img/9556ffc816785ebdfc1b7b9c3304b0f6.png)
 
@@ -1486,7 +1486,7 @@
 
 ![](img/12cd22760378174ef570c4c2a8d76fb1.png)
 
-[2024奢品趋势白皮书&人群灵感图鉴-VOGUE Business×小红书.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RBMGbvMyzoYd1bxruLPcSRtfnRc)
+[2024奢品趋势白皮书&人群灵感图鉴-VOGUE Business×📕.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RBMGbvMyzoYd1bxruLPcSRtfnRc)
 
 ![](img/d9b4122009fb69a7267181ddf6c89f17.png)
 
@@ -1546,7 +1546,7 @@
 
 ![](img/4c41f2b8a2fafebd65576af52ad85172.png)
 
-[2020滴滴出行微博营销结案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DYLdbTbVLoUkfzxLHdQcCCuAnfg)
+[2020滴滴出行🧣营销结案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DYLdbTbVLoUkfzxLHdQcCCuAnfg)
 
 ![](img/384737ffda525c92daca75ce5018194b.png)
 
@@ -1776,7 +1776,7 @@
 
 ![](img/b59fdb380464ce80adb40d2baf1e6604.png)
 
-[达人签约合同(小红书).docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q9xzbAioeoFAN5xMGiUcBsUgnZb)
+[达人签约合同(📕).docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q9xzbAioeoFAN5xMGiUcBsUgnZb)
 
 ![](img/8dde0c0b565f827a78a8ab10b48a35eb.png)
 
@@ -1820,7 +1820,7 @@
 
 ![](img/bc6b31ea81e37edd22033b52581c8b43.png)
 
-[小红书代运营合同模板.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OdUCbFATQoK7tqxijcKcqWLKn5f)
+[📕代运营合同模板.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OdUCbFATQoK7tqxijcKcqWLKn5f)
 
 ![](img/d2d38357239a57dc2fa0613a48c86946.png)
 
@@ -1874,7 +1874,7 @@
 
 ![](img/7cd4a8d95dcee68d873bc56fa8b93431.png)
 
-[2023年中国户外运动鞋服行业研究报告：静待黎明-艾瑞咨询.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bk92b7L8GoeyFuxQQZ1cTa6bnGe)
+[2023年中国户外运动鞋服行业研究报告：静待黎明-艾瑞咨询.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bk92b7L8GoeyFux🐧Z1cTa6bnGe)
 
 ![](img/3beeb465d67887ff7af32ba3192972c9.png)
 
@@ -1946,7 +1946,7 @@
 
 ![](img/7b3fce4788d50ab54a5ce3d3765cc025.png)
 
-[勿传！把自己做成产品，小红书IP+2个助理年营收300W.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DmdKbcHSbomddRxj3Ivc5Zzsn7y)
+[勿传！把自己做成产品，📕IP+2个助理年营收300W.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DmdKbcHSbomddRxj3Ivc5Zzsn7y)
 
 ![](img/41535ae4c1d72c7a8afc5eb6027e1f55.png)
 
@@ -1966,7 +1966,7 @@
 
 ![](img/48287395a1906d123aed6fee1e6cd305.png)
 
-[AppGrowing：抖音快手B站知乎小红书，广告媒体投放增长洞察.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/R7YQb7FGPogNzjxL1rRcyrBVnKh)
+[AppGrowing：抖音快手B站知乎📕，广告媒体投放增长洞察.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/R7YQb7FGPogNzjxL1rRcyrBVnKh)
 
 ![](img/988af0895c61a73af4a9fe7ae347a84a.png)
 
@@ -2120,7 +2120,7 @@
 
 ![](img/242f36547347315edf0fdb30bd03263d.png)
 
-[张潇雨微博精选（2023日历版）v1.1.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WGI4bcpSHocH3yxWH4ScUneGnVb)
+[张潇雨🧣精选（2023日历版）v1.1.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WGI4bcpSHocH3yxWH4ScUneGnVb)
 
 ![](img/98f8380f298e4be02408cff62c0f8c72.png)
 

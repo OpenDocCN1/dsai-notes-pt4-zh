@@ -145,7 +145,7 @@ Stack Overflow 平台提供了一个很好的例子，最近通过混合搜索�
 
 ###### **向量检索实验室**
 
-微信号：VectorSearch
+🛰️号：VectorSearch
 
 扫码关注 了解更多
 

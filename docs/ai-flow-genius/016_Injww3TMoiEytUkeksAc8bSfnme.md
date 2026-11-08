@@ -22,7 +22,7 @@
 
 ![](img/c9c41c7bdec8709160f66ddea28cecd9.png)
 
-[使用GPT，写小红书文案](https://jalicvoygc0.feishu.cn/wiki/RIIQwGYIpiQt17kCoB7cyGwWnVc)篇中的Prompt，也是用了这个2版方案技巧。
+[使用GPT，写📕文案](https://jalicvoygc0.feishu.cn/wiki/RIIQwGYIpiQt17kCoB7cyGwWnVc)篇中的Prompt，也是用了这个2版方案技巧。
 
 可以进群直接玩：
 

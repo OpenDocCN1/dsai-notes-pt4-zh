@@ -1,6 +1,6 @@
 # 腾讯丨运用 AIGC 人工智能生产内容
 
-> 来源：[https://my.feishu.cn/docx/RlQQd52KfojtGDxfaaIcGXQ3nVd](https://my.feishu.cn/docx/RlQQd52KfojtGDxfaaIcGXQ3nVd)
+> 来源：[https://my.feishu.cn/docx/Rl🐧d52KfojtGDxfaaIcGXQ3nVd](https://my.feishu.cn/docx/Rl🐧d52KfojtGDxfaaIcGXQ3nVd)
 
 ![](img/0502a72683f1d91a0bee0ad6b550882c.png)
 

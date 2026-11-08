@@ -130,7 +130,7 @@ https://blog.langchain.dev/semi-structured-multi-modal-rag/
 
 **向量检索实验室**
 
-微信号：VectorSearch
+🛰️号：VectorSearch
 
 扫码关注 了解更多
 

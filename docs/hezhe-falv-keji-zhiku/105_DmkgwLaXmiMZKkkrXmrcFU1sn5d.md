@@ -88,7 +88,7 @@ Mary O'Carroll 认为，法律生态系统转型的核心正在律师事务所�
 
 > https://mp.weixin.qq.com/s/0nNSIZgcsdRHmt3z4vFw_A
 
-> https://mp.weixin.qq.com/s/aaEnTDz7nlxKI3_oQQ5laQ
+> https://mp.weixin.qq.com/s/aaEnTDz7nlxKI3_o🐧5laQ
 
 > https://mp.weixin.qq.com/s/pru1HOXomtc8i-joGqW5uQ
 

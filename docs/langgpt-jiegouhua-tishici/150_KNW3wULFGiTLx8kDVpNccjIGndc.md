@@ -6,9 +6,9 @@
 
 源文件：https://www.nitrd.gov/coordination-areas/ai/90-fr-9088-responses/
 
-公众号：云中江树
+👸号：云中江树
 
-微信公众号文章：
+🛰️👸号文章：
 
 翻译版 PDF 如下:
 

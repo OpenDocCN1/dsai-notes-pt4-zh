@@ -32,7 +32,7 @@
 
 ![](img/1954fee25b8705ce7c9a4ddff47c792a.png)
 
-[AI Genius线下Meetup_分享03.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YQQgbPPu9otfmkxBTiScMmqZnNb)
+[AI Genius线下Meetup_分享03.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y🐧gbPPu9otfmkxBTiScMmqZnNb)
 
 ![](img/7c0dde87b31ff123db9587b17389edd8.png)
 

@@ -196,7 +196,7 @@
 
 2025.9.9
 
-官方公众号：https://mp.weixin.qq.com/s/lJgwXV3iStUvddAIwcFW8g
+官方👸号：https://mp.weixin.qq.com/s/lJgwXV3iStUvddAIwcFW8g
 
 官网：https://seed.bytedance.com/zh/seedream4_0
 

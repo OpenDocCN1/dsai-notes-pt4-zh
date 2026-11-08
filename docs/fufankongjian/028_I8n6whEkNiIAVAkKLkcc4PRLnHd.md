@@ -26,7 +26,7 @@ Baichuan-7B在发布之初，相关评测的数据集及对应的评测指标如
 
 Baichuan-7B模型基于标准的Transformer结构，采用了和LLaMA一样的模型设计，在约 1.2 万亿 tokens 上训练得到的 70 亿参数模型，使用自有的中英文双语语料进行训练，在中文上进行优化，从上述评测结果上看，Baichuan-7B模型在标准的中文和英文 benchmark（C-Eval/MMLU）上均取得同尺寸最好的效果。
 
-> Baichuan更多的模型细节，可查看：https://huggingface.co/baichuan-inc/Baichuan-7B （注：需要开启科学上网访问）
+> Baichuan更多的模型细节，可查看：https://huggingface.co/baichuan-inc/Baichuan-7B （注：需要开启🪜访问）
 
 在实际评测过程中，均使用5-shot 进行，baichuan-7B与同级别的其他模型评测效果对比如下：
 

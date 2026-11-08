@@ -149,9 +149,9 @@ KB的输入是语料库，然后经过一系列处理，成为可被LLM调取的
 
 **汪力迪**
 
-公众号：techcomm / htstory
+👸号：techcomm / htstory
 
-**微信号：bgrichi**
+**🛰️号：bgrichi**
 
 邮箱：hash_0813@163.com
 

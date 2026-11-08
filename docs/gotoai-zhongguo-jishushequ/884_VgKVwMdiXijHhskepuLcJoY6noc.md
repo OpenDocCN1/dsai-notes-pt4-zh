@@ -2,7 +2,7 @@
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/IOX8dtrMko5rxox92DJc697Lnbd](https://gotoaiworld.feishu.cn/docx/IOX8dtrMko5rxox92DJc697Lnbd)
 
-> GotoAI 中国技术社区诚邀您成为 AI + 教育合伙人！在这里，以您的热情与资源，结合我们的专业优势，撬动巨额财富，获取令人咋舌的高回报收益，改写人生财富版图！！
+> GotoAI 中国技术社区诚邀您成为 AI + 教育合伙人！在这里，以您的热情与资源，结合我们的专业优势，撬动巨额财富，获取令人咋舌的高回报收益，改写人赚钱富版图！！
 
 > 顺势而为，乘风而上，抓住AI时代红利期，携手一飞冲天！！！！
 

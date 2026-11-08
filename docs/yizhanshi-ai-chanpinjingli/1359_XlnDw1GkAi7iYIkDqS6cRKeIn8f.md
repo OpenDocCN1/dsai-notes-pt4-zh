@@ -24,4 +24,4 @@
 
 ![](img/9ee822d584a58484a534221824840f5d.png)
 
-[【集成示例】企业微信.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E6RKbxvpmoUsKXxBVy0cr2T6nsc)
+[【集成示例】企业🛰️.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E6RKbxvpmoUsKXxBVy0cr2T6nsc)

@@ -4,15 +4,15 @@
 
 # **一、准备工作**
 
-> 1.要求能访问村外的网络（必须，科学上网方法本文不提供）
+> 1.要求能访问村外的网络（必须，🪜方法本文不提供）
 
-> **想要使用**[Midj](https://nqa5sj7i45.feishu.cn/wiki/wikcnoDi4Us7M96ThOSgFYTO5Vd#part-U17Kdu01wotup8xSmgKcsSDCncg)ourney需要先搞定科学上网（这块需要自己解决，有疑问的请加 QQ【229834707】，这里也有解决方案）。
+> **想要使用**[Midj](https://nqa5sj7i45.feishu.cn/wiki/wikcnoDi4Us7M96ThOSgFYTO5Vd#part-U17Kdu01wotup8xSmgKcsSDCncg)ourney需要先搞定🪜（这块需要自己解决，有疑问的请加 🐧【229834707】，这里也有解决方案）。
 
 > 2．最好准备一个国外邮箱（国内的不知道是否还可以），最好是Google邮箱，如果注册不了，可尝试下微软 outlook 邮箱。
 
 **简单科普一下：**
 
-> 要使用Midjourney首先需要创建Discord账号，Midjourney和Discord的关系类似于小程序和微信的关系（Discord相当于微信，Midjourney相当于小程序），日常使用Midjourney是在Discord上的。
+> 要使用Midjourney首先需要创建Discord账号，Midjourney和Discord的关系类似于小程序和🛰️的关系（Discord相当于🛰️，Midjourney相当于小程序），日常使用Midjourney是在Discord上的。
 
 # 二、注册过程
 

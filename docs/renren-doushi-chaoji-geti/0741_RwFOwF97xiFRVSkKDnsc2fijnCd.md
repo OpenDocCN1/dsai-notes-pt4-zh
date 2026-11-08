@@ -52,7 +52,7 @@
 
 ![](img/8beb00ddabf467d8cf45bd71830ef5d0.png)
 
-[10月18日(1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WffbbjavroJrOCxms1BcQQaenOc)
+[10月18日(1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WffbbjavroJrOCxms1Bc🐧aenOc)
 
 在美区我们也尝试做了**虚拟网红****的**账号，打造我们自己的健身博主sophia，一条2万多播放的视频就涨了1000粉，吸粉率还是很不错的。后期账号就可以带健身相关的产品。虚拟网红不仅不用担心达人红了之后的稳定性问题，而且还省了拍摄成本，我觉得未来会成为短视频领域的一个趋势。
 
@@ -454,7 +454,7 @@ TikTok 在不同的地区可能会有不同的内容和功能限制。通过合�
 
 海外有个最大的优势就是可以批量用邮箱注册TK账号，不像国内需要实名，非常麻烦。
 
-> 1、国内邮箱不推荐，比如QQ、网易 等
+> 1、国内邮箱不推荐，比如🐧、网易 等
 
 > 2、可以使用国外的**outlook、gmail **等
 

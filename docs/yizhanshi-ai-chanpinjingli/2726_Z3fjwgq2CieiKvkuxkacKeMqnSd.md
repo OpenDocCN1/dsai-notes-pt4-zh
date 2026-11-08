@@ -140,7 +140,7 @@
 
 +   vLLM中文社区小助手
 
-+   （注：文中提及微信号vllm_project）
++   （注：文中提及🛰️号vllm_project）
 
 > 5️⃣
 

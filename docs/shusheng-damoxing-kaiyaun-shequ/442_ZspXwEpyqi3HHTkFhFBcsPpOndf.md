@@ -289,7 +289,7 @@ def _parse_response(self, response: dict) -&gt; dict:
 
 +   完成第三期书生大模型实战营 MindSearch 闯关任务（将 MindSearch 部署到 Hugging Face）。
 
-+   联系浦语小助手（微信：InternLM），开启你的 MindSearch 探索之旅。
++   联系浦语小助手（🛰️：InternLM），开启你的 MindSearch 探索之旅。
 
 > 不要犹豫，立即行动！让我们一起在 MindSearch 的世界里，探索未知，创造未来。
 

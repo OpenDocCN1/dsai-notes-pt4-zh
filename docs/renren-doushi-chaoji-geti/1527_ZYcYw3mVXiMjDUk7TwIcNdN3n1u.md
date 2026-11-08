@@ -2,13 +2,13 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/X4ucdpobWoEBTHxcLJbcS8PQnSb](https://xuqiwei1986.feishu.cn/docx/X4ucdpobWoEBTHxcLJbcS8PQnSb)
 
-> 前开放贴 [副本迭代  003 AI+公众号爆文 一条prompt助力大家爆文掘金](https://w194sny3eli.feishu.cn/wiki/SRyaw2ujjiWhSrkemEvc6uofnSe?from=from_copylink) 帮助了 10000+人的高赞贴
+> 前开放贴 [副本迭代  003 AI+👸号爆文 一条prompt助力大家爆文掘金](https://w194sny3eli.feishu.cn/wiki/SRyaw2ujjiWhSrkemEvc6uofnSe?from=from_copylink) 帮助了 10000+人的高赞贴
 
 大家好，我是枫晓陌，微软认证的 AI 工程师。未来一年、我要用 AI 切入一百个工作场景，让大家感受到 AI 给我们带来的便利。
 
-大家想要用 AI 切入什么领域都可以告诉我呀，AI+写作、阅读、小红书、健身教练、AI+朋友圈营销、AI+简历、AI+热点分析……都可。
+大家想要用 AI 切入什么领域都可以告诉我呀，AI+写作、阅读、📕、健身教练、AI+朋友圈营销、AI+简历、AI+热点分析……都可。
 
-写下你的需求，我给你一个 prompt，下一个 prompt，我想切入小红书。
+写下你的需求，我给你一个 prompt，下一个 prompt，我想切入📕。
 
 前两天参加了一个 AI+拆书稿的快闪群，听老师说，现在拆书稿还有市场，但没有以前那么火，知识付费刚起来的时候，一篇拆书稿可达万元，有兴趣的朋友可以单独去了解一下。
 
@@ -1350,4 +1350,4 @@ https://chat.openai.com/share/1a883177-2eb2-411e-be29-fc56fe976f9c
 
 9、当不确定 ai 生成文章的重复率合不合格的时候，建议还是去第三方查重网站测一测
 
-[副本迭代  003 AI+公众号爆文 一条prompt助力大家爆文掘金](https://w194sny3eli.feishu.cn/wiki/SRyaw2ujjiWhSrkemEvc6uofnSe?from=from_copylink) 帮助了 700+人的高赞贴
+[副本迭代  003 AI+👸号爆文 一条prompt助力大家爆文掘金](https://w194sny3eli.feishu.cn/wiki/SRyaw2ujjiWhSrkemEvc6uofnSe?from=from_copylink) 帮助了 700+人的高赞贴

@@ -1,6 +1,6 @@
 # 基于知识图谱的问答在美团智能交互场景中的应用和演进
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/IQQOd7H4hoFcvfxUTm8cnBeqnYD](https://qqs7y1hozd1.feishu.cn/docx/IQQOd7H4hoFcvfxUTm8cnBeqnYD)
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/I🐧Od7H4hoFcvfxUTm8cnBeqnYD](https://qqs7y1hozd1.feishu.cn/docx/I🐧Od7H4hoFcvfxUTm8cnBeqnYD)
 
 **目前为止 IT 产业经历了六次浪潮，分别为：大****型机时代，小型机时代，个人电脑时代，桌面互联网时代，**移动互联网时代和 AI**OT 时**代。在这些时代背后可以发现是人机交互方式的变化：从鼠键交互，到触控交互，再到语音智能交互，可以看到人机交互的方式在向更自然更直接化的方式演进。今天会和大家分享基于知识图谱的问答在美团智能交互场景中的应用和演进
 
@@ -20,7 +20,7 @@
 
 智能交互的划分基本上是根据人类需求拆分：
 
-+   **检索式交互—信息获取，比较经典**的方法 FAQ：QA 匹配，QQ 匹配
++   **检索式交互—信息获取，比较经典**的方法 FAQ：QA 匹配，🐧 匹配
 
 +   **任务式交互—执行任务**，比如订机票 ( 酒店 ) 的特定任务
 

@@ -84,7 +84,7 @@
 
 ## [Datawhale](http://www.datawhale.club)
 
-扫描下方二维码关注公众号：@Datawhale
+扫描下方二维码关注👸号：@Datawhale
 
 更多组队学习和赛事等你参与~
 
@@ -102,7 +102,7 @@ Datawhale开源学习已经有20多万人参与线上学习，覆盖了海**内�
 
 ## [MARS](https://www.marsbigdata.com/)
 
-扫描下方二维码关注公众号：@MARS数据科学平台
+扫描下方二维码关注👸号：@MARS数据科学平台
 
 更多赛事等你参与~
 

@@ -7,7 +7,7 @@
 +   [使用 GPT，构建全自动化的EXCEL](006_QCgYw3nNCi1zxUk5qLucb4k5nph.md)
 +   [GPT+麦肯锡，十分钟火速了解一个行业](007_MVN7wyqjIiNJaVk7zMJcGntzncg.md)
 +   [文案策划](008_PR0QwkwZ5iyg1zkRzFRcs4kfnj2.md)
-+   [使用GPT，写小红书文案](009_RIIQwGYIpiQt17kCoB7cyGwWnVc.md)
++   [使用GPT，写📕文案](009_RIIQwGYIpiQt17kCoB7cyGwWnVc.md)
 +   [使用GPT-4，优化任何文案](010_D02twhJ03iugeIkQczwcnkeCnmc.md)
 +   [3分钟写出99分朋友圈文案！亲测超实用～](011_Oa9DwdDvwiVzDmkhg9DcTAA8nLd.md)
 +   [为你提供创作灵感，让你的文字更有魅力](012_WKeDwHinvi0e9NkRaNocIQFFnqd.md)

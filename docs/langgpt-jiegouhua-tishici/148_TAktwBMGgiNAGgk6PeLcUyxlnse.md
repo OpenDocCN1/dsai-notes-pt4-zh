@@ -2,7 +2,7 @@
 
 > 来源：[https://langgptai.feishu.cn/docx/SNV1dHp75oIbr5xFmcjcCFKHnle](https://langgptai.feishu.cn/docx/SNV1dHp75oIbr5xFmcjcCFKHnle)
 
-> 来自社区群友投稿 @皮皮Peter （公众号 皮皮Peter）
+> 来自社区群友投稿 @皮皮Peter （👸号 皮皮Peter）
 
 **概览：**
 

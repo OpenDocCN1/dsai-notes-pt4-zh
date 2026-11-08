@@ -496,7 +496,7 @@ Business Model Canvas
 
 +   知识
 
-+   公众号输出
++   👸号输出
 
 +   个性化信息推送
 

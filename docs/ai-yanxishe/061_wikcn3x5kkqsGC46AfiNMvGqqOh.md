@@ -68,13 +68,13 @@ OpenAI使用 RLHF（人类反馈强化学习） 技术对 GPT 进行了训练，
 
 ## 🔧 GPT如何使用？
 
-1、首先，你要先进行科学上网
+1、首先，你要先进行🪜
 
 2、点击网址进入GPT官网 https://chat.openai.com/chat
 
 如果没有账户可以从AI研习社群里找管理员购买，普通账户和GPT账户都有。
 
-购买账户联系招财猫，微信：zcyl921530
+购买账户联系招财猫，🛰️：zcyl921530
 
 3、点击登陆，输入要提问的问题即可生成答案
 
@@ -234,9 +234,9 @@ OpenAI使用 RLHF（人类反馈强化学习） 技术对 GPT 进行了训练，
 
 ### **其他平台 ****GPT**** 使用**
 
-+   【微信】 迅速接入 GPT，让它成为你最好的助手！
++   【🛰️】 迅速接入 GPT，让它成为你最好的助手！
 
-+   [【微信】 bot](https://github.com/AutumnWhj/ChatGPT-wechat-bot)
++   [【🛰️】 bot](https://github.com/AutumnWhj/ChatGPT-wechat-bot)
 
 +   [【Telegram】 bot](https://github.com/franalgaba/chatgpt-telegram-bot-serverless)
 

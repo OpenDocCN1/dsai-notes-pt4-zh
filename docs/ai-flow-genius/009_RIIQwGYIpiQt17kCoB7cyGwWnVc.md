@@ -1,6 +1,6 @@
-# 使用GPT，写小红书文案
+# 使用GPT，写📕文案
 
-> 来源：[https://jalicvoygc0.feishu.cn/docx/ZFx0dX8gPoIfe3xMTyCcQQz9nid](https://jalicvoygc0.feishu.cn/docx/ZFx0dX8gPoIfe3xMTyCcQQz9nid)
+> 来源：[https://jalicvoygc0.feishu.cn/docx/ZFx0dX8gPoIfe3xMTyCc🐧z9nid](https://jalicvoygc0.feishu.cn/docx/ZFx0dX8gPoIfe3xMTyCc🐧z9nid)
 
 **工作场景：**文案编辑、自媒体运营
 
@@ -10,7 +10,7 @@
 
 +   主要依赖Prompt，3.5就够用。
 
-**工具：** [基于微信群的ChatBOT](https://jalicvoygc0.feishu.cn/wiki/OagnwWk9diGw0dkX2czcbKBEnVh)
+**工具：** [基于🛰️群的ChatBOT](https://jalicvoygc0.feishu.cn/wiki/OagnwWk9diGw0dkX2czcbKBEnVh)
 
 **AI****工作流****：**①预设角色 ②输入活动主题
 

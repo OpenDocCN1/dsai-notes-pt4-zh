@@ -2,7 +2,7 @@
 
 > 来源：[https://agijuejin.feishu.cn/docx/CKqKd0hslos1syxk94OccTganyc](https://agijuejin.feishu.cn/docx/CKqKd0hslos1syxk94OccTganyc)
 
-> 微软亚洲研究院 投稿 量子位 | 公众号 QbitAI
+> 微软亚洲研究院 投稿 量子位 | 👸号 QbitAI
 
 有CPU就能跑大模型，性能甚至超过NPU**/GPU！
 

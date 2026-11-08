@@ -134,7 +134,7 @@ IMO 2024 中六个问题的每一个问题满分为 7 分，总分最高 42 分�
 
 ### 天猫精灵合伙人创业，用AI大模型复活毛绒玩具，被“大疆教父”相中了
 
-https://mp.weixin.qq.com/s/vNplHWz25YZJHZ_mQUyhQQ
+https://mp.weixin.qq.com/s/vNplHWz25YZJHZ_mQUyh🐧
 
 **Bubb**lePal背后就是成立于2021年的深圳AI硬件玩家跃然创新，目前已经拿到香港科技大学前工学院院长、半导体领域知名投资人、“大疆教父”高秉强，香港科技大学教授、大疆DJI天使投资人李泽湘旗下资金的投资，同时拿到了全球最大电子教育玩具企业Vtech和国内最大玩具上市企业Alpha Group的注资，这在国内实属少见。
 
@@ -312,7 +312,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 封面生成——右脑科技
 
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～微信：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 

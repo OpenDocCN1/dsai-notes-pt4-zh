@@ -56,7 +56,7 @@
 
 > 🔗 文中引用的链接
 
-+   [微信原文链接](https://mp.weixin.qq.com/s/0npx4W6Iurcadxxa2UZeNg)
++   [🛰️原文链接](https://mp.weixin.qq.com/s/0npx4W6Iurcadxxa2UZeNg)
 
 +   延伸阅读：Why AI Needs Graph
 

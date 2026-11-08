@@ -8,7 +8,7 @@
 
 > 《互联网信息服务算法推荐管理规定》第十六条
 
-**-答1：****美团、微博、智联招聘、豆瓣**都有发过的，详见：[算法公示如何抄作业](https://cbe8t1r4a5.feishu.cn/wiki/wikcn4JFpgPregqKKvUuNw2oXRp)
+**-答1：****美团、🧣、智联招聘、豆瓣**都有发过的，详见：[算法公示如何抄作业](https://cbe8t1r4a5.feishu.cn/wiki/wikcn4JFpgPregqKKvUuNw2oXRp)
 
 **-答2：**互联网信息服务算法备案系统已经备案通过的公示都有，https://beian.cac.gov.cn/#/searchResult。
 

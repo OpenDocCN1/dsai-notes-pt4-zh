@@ -130,7 +130,7 @@
 
 > 🔗 文中引用的链接
 
-+   [AINLP公众号](https://mp.weixin.qq.com/s/gMkSeQVncvm1qBWXcSjEvA)
++   [AINLP👸号](https://mp.weixin.qq.com/s/gMkSeQVncvm1qBWXcSjEvA)
 
 > 6️⃣
 
@@ -224,7 +224,7 @@
 
 +   AutoGLM支持自定义短语执行长任务，提供了“随便模式”让AI帮助用户决策，带来惊喜体验。
 
-+   智谱CEO张鹏通过简单语音指令展示了Agent的能力，如发送微信红包和远程指挥电脑发送文件。
++   智谱CEO张鹏通过简单语音指令展示了Agent的能力，如发送🛰️红包和远程指挥电脑发送文件。
 
 +   GLM-PC是基于PC的自主Agent，探索“无人驾驶”PC，支持会议替身、文档处理等功能。
 

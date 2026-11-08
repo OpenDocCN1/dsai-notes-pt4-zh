@@ -26,7 +26,7 @@
 
 https://zkv549gmz8.feishu.cn/wiki/YRf2wb6BAil2j9kXMiVcfGBSnhd
 
-一泽Eze 的微信文章中拆解的很详细，推荐大家看看：
+一泽Eze 的🛰️文章中拆解的很详细，推荐大家看看：
 
 https://mp.weixin.qq.com/s/7vrhxQYdgQ_WpGK6Xi49aw
 
@@ -279,7 +279,7 @@ https://langgptai.feishu.cn/wiki/WG7OwFMcOi1GQ1kHIsjctEUnnC1
 
 ![](img/d3a03af20399a998afbfb05e3071a06d.png)
 
-群友@老金 将其接入了微信机器人
+群友@老金 将其接入了🛰️机器人
 
 ![](img/79f68ac7216268f72a9b58dfa386e42e.png)
 

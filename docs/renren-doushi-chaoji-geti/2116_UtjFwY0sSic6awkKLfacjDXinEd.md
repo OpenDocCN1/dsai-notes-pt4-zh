@@ -1,8 +1,8 @@
 # 2023-09-04大厂的Git代码管理规范是怎样的？
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/N0YddW3Onoe6hvxJ82ucQQEcnxe](https://xuqiwei1986.feishu.cn/docx/N0YddW3Onoe6hvxJ82ucQQEcnxe)
+> 来源：[https://xuqiwei1986.feishu.cn/docx/N0YddW3Onoe6hvxJ82uc🐧Ecnxe](https://xuqiwei1986.feishu.cn/docx/N0YddW3Onoe6hvxJ82uc🐧Ecnxe)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/LWQolvFQQndBhFQ2lP2vhQ)q.com/s/LWQolvFQ...
+> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/LWQolvF🐧ndBhFQ2lP2vhQ)q.com/s/LWQolvFQ...
 
 > ⏰ 剪存时间：2023-09-11 19:52:47 (UTC+8)
 

@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/RpAJdkW3aotTpex00HTcNm0fnAg](https://aigcreative.feishu.cn/docx/RpAJdkW3aotTpex00HTcNm0fnAg)
 
-> 作者：公众号-小宝聊AI
+> 作者：👸号-小宝聊AI
 
 > 链接：https://mp.weixin.qq.com/s?src=11&timestamp=1709453369&ver=5115&signature=DrLyd5V-bUqKqFowizY**3KnBAvWbkrHJ4oHFPKstfS1LSw7mSd-qyEg-Q8LgxSlrdMk22YYxYm6SfbdFn403Bog9YCooLvbw6pUH-KSuuucHDK9tA1znH3OYUwxX*IB&new=1
 

@@ -4,7 +4,7 @@
 
 > 作者：毅鸣
 
-> 公众号： AI洞察笔记
+> 👸号： AI洞察笔记
 
 > 原文链接：https://mp.weixin.qq.com/s/K-CsZ3AgCBXGIUfcdiKVfQ
 
@@ -54,7 +54,7 @@ GitHub：https://github.com/HumanAIGC/EMO
 
 1.   一文搞懂OpenAI推出的AI文本视频生成模型Sora
 
-1.  利用AI一步到位高效高质量完成微信红包封面设计，附详细教程
+1.  利用AI一步到位高效高质量完成🛰️红包封面设计，附详细教程
 
 ![](img/5b762626ccefa9cea1ba9a19ff640630.png)
 

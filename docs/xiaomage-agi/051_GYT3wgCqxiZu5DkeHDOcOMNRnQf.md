@@ -14,7 +14,7 @@
 
 ## 注册谷歌账号
 
-> 在登录谷歌网站之前，请确保你已经打开科学上网工具
+> 在登录谷歌网站之前，请确保你已经打开🪜工具
 
 #### 1、电脑打开谷歌网站：https://accounts.google.com/，点击创建账号
 
@@ -136,7 +136,7 @@
 
 ![](img/bd47cb2d6de3b2fb9149f7503bfd626f.png)
 
-#### 2、安装好后打开谷歌商店，点击右上角登录谷歌账号即可（登录之前确保已科学上网）
+#### 2、安装好后打开谷歌商店，点击右上角登录谷歌账号即可（登录之前确保已🪜）
 
 ![](img/1b4b7ada4590b21e411d12b4e8fb033b.png)
 
@@ -308,7 +308,7 @@
 
 ![](img/cfaa8abb646b9b3b7f85873d3f9e42fd.png)
 
-例如小火箭（科学上网必备）、ChatGPT、Discord、X、TikTok等等
+例如小火箭（🪜必备）、ChatGPT、Discord、X、TikTok等等
 
 ![](img/3abcb4da10eac50be74bb0bb120fe9a4.png)
 
@@ -368,7 +368,7 @@
 
 #### 3、到ChatGPT订阅Plus
 
-##### 1）打开ChatGPT，用谷歌邮箱登录后点击最上方的Get Plus（登录之前记得科学上网）
+##### 1）打开ChatGPT，用谷歌邮箱登录后点击最上方的Get Plus（登录之前记得🪜）
 
 ![](img/94460b88af24bab77a412746d93b78b2.png)
 

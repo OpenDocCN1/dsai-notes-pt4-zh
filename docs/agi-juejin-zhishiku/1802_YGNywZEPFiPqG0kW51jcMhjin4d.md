@@ -1,4 +1,4 @@
-# 10分钟完成微信红包封面——AI绘画制作攻略
+# 10分钟完成🛰️红包封面——AI绘画制作攻略
 
 > 来源：[https://agijuejin.feishu.cn/docx/EmG9dgZNUo3dXix35NFcUlwondb](https://agijuejin.feishu.cn/docx/EmG9dgZNUo3dXix35NFcUlwondb)
 
@@ -14,7 +14,7 @@
 
 ![](img/9425529e4d7c904e8ec851922065f791.png)
 
-每到新年时刻，微信红包封面可以让你体现不同的个性，往年这种红包的封面制作往往需要专业人员花费长时间通过设计软件制作，但是今年AI绘画让更多人可以无门槛制作微信红包封面。
+每到新年时刻，🛰️红包封面可以让你体现不同的个性，往年这种红包的封面制作往往需要专业人员花费长时间通过设计软件制作，但是今年AI绘画让更多人可以无门槛制作🛰️红包封面。
 
 完成的红包封面可以通过淘宝抖音等渠道直接售卖，网上有这个需求，买的人很多。
 
@@ -24,11 +24,11 @@
 
 ## 一、准备工作
 
-首先你得需要有一个100粉的公众号或者视频号，才可以定制红包封面，当你有了这一准入资格后，搜索进入微信红包平台：
+首先你得需要有一个100粉的👸号或者视频号，才可以定制红包封面，当你有了这一准入资格后，搜索进入🛰️红包平台：
 
 [  ](https://link.zhihu.com/?target=https%3A//cover.weixin.qq.com/)
 
-[然后，采用](https://www.zhihu.com/search?q=%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)你的公众号或视屏号进行认证并登录，就能看到微信红包 创建页面 。
+[然后，采用](https://www.zhihu.com/search?q=%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)你的👸号或视屏号进行认证并登录，就能看到🛰️红包 创建页面 。
 
 下图是我的界面，只需要点击定制封面就可以进入，需要注意的是同时进行审核的红包封面数量不能超过3个。
 
@@ -78,11 +78,11 @@ AI绘画实战营｜送工具教程+提示词库+变现渠道
 
 ### 1.封面信息
 
-接下来回到微信红包 [开放平台 ](https://www.zhihu.com/search?q=%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)界面，首先可以看到的是封面简称，建议与公众号名称保持一致就可以了，要是调整会需要提供复杂的证明材料，耗时耗力。
+接下来回到🛰️红包 [开放平台 ](https://www.zhihu.com/search?q=%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)界面，首先可以看到的是封面简称，建议与👸号名称保持一致就可以了，要是调整会需要提供复杂的证明材料，耗时耗力。
 
 ![](img/4df86646c52679fd515f1937ce813f69.png)
 
-同时个人LOGO建议不填，一个是影响观感，另外是哪怕你采用了公众号LOGO，也需要你提供版权证明，非常麻烦。我因为这个原因被打回两次了，后面直接放弃。
+同时个人LOGO建议不填，一个是影响观感，另外是哪怕你采用了👸号LOGO，也需要你提供版权证明，非常麻烦。我因为这个原因被打回两次了，后面直接放弃。
 
 ### 2.封面图
 
@@ -102,15 +102,15 @@ AI绘画实战营｜送工具教程+提示词库+变现渠道
 
 ### 3. [封面故事](https://www.zhihu.com/search?q=%E5%B0%81%E9%9D%A2%E6%95%85%E4%BA%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)
 
-接着是封面故事，我这里建议是能选就选，可以宣传自己的公众号或视频号。
+接着是封面故事，我这里建议是能选就选，可以宣传自己的👸号或视频号。
 
 ![](img/4683997880d7d91b58040d879916df30.png)
 
-点击添加公众号（或视频号）后，我们需要填入公众号[的原始ID,](https://www.zhihu.com/search?q=%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)这个内容是需要登录你自己的 微信公众号 操作的，也很简单根据下图操作就好。
+点击添加👸号（或视频号）后，我们需要填入👸号[的原始ID,](https://www.zhihu.com/search?q=%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)这个内容是需要登录你自己的 🛰️👸号 操作的，也很简单根据下图操作就好。
 
 ![](img/c409a5b2465f2c3735581329c7193984.png)
 
-接着回到红包界面，复制黏贴ID，点击搜索找到自己的公众号，点击添加即可。
+接着回到红包界面，复制黏贴ID，点击搜索找到自己的👸号，点击添加即可。
 
 ![](img/3ade788467ad83c888730b8e771a46e2.png)
 
@@ -142,13 +142,13 @@ AI绘画实战营｜送工具教程+提示词库+变现渠道
 
 ![](img/e0d2b5ad3bc7ab92bad0821b5ca04538.png)
 
-如果想要购买发给其他人， [红包封面 ](https://www.zhihu.com/search?q=%E7%BA%A2%E5%8C%85%E5%B0%81%E9%9D%A2&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)[1元/个。当](https://www.zhihu.com/search?q=%E6%88%91%E7%9A%84%E5%85%AC%E4%BC%97%E5%8F%B7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)然如果你的公众号流量大，腾讯会发给你额度， 我的公众号 做的迟，腾讯没有送我……想要只能花钱买。
+如果想要购买发给其他人， [红包封面 ](https://www.zhihu.com/search?q=%E7%BA%A2%E5%8C%85%E5%B0%81%E9%9D%A2&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)[1元/个。当](https://www.zhihu.com/search?q=%E6%88%91%E7%9A%84%E5%85%AC%E4%BC%97%E5%8F%B7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)然如果你的👸号流量大，腾讯会发给你额度， 我的👸号 做的迟，腾讯没有送我……想要只能花钱买。
 
 ![](img/62cd0069f1e4d66afa677765d2b93ca6.png)
 
 ## 结语
 
-好[了，以上](https://www.zhihu.com/search?q=%E7%A4%BA%E6%84%8F%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)就是我用AI绘画在10分钟完成微信红包封面的攻略内容，你是否学会了呢？也附上这次我做的一些不同风格的微信红包封面 示意图 ，大家有喜欢的风格吗？
+好[了，以上](https://www.zhihu.com/search?q=%E7%A4%BA%E6%84%8F%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)就是我用AI绘画在10分钟完成🛰️红包封面的攻略内容，你是否学会了呢？也附上这次我做的一些不同风格的🛰️红包封面 示意图 ，大家有喜欢的风格吗？
 
 ![](img/bcfe99802f66615288ac2d47ec930329.png)
 

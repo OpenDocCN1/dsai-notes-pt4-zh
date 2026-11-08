@@ -2,7 +2,7 @@
 
 > 来源：[https://my.feishu.cn/docx/QSDLdZTNBoeOPMxoUnucdSSHnid](https://my.feishu.cn/docx/QSDLdZTNBoeOPMxoUnucdSSHnid)
 
-> 首先推荐一个AI工具，免梯子直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
+> 首先推荐一个AI工具，免🪜直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
 
 Ai一键生成模特图、电商图！
 

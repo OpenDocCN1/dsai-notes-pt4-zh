@@ -1,6 +1,6 @@
 # QWQ-32B本地部署与调用指南
 
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/QQuNdKF9coJr6DxwvsKciUoUnBd](https://kq4b3vgg5b.feishu.cn/docx/QQuNdKF9coJr6DxwvsKciUoUnBd)
+> 来源：[https://kq4b3vgg5b.feishu.cn/docx/🐧uNdKF9coJr6DxwvsKciUoUnBd](https://kq4b3vgg5b.feishu.cn/docx/🐧uNdKF9coJr6DxwvsKciUoUnBd)
 
 ![](img/487c335f6ea2cacb03fcc541f40f27ed.png)
 

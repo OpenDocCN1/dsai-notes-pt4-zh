@@ -22,7 +22,7 @@
 +   [谷歌团队称 AI 标注已达人类水平；开源模型仍将落后闭源 2-3 年；OpenAI 首席执行官获印尼黄金签证丨 RTE 开发者日报 Vol.43](021_YyLtwpFuCicLdBksg5XciJV0ndZ.md)
 +   [V 社严打 AI 生成内容；中国每百户家庭仅 17 户有车美将继续对华出售芯片丨 RTE 开发者日报 Vol.42](022_SZPZwPr2Eit8wkk3bnXcZhzznmu.md)
 +   [罗永浩吐槽苹果“几乎零贡献”；AI 算力黄牛4 年估值 560 亿丨 RTE 开发者日报 Vol.41](023_J8Tfw3AuNinIaTkFwx9cPAffnwh.md)
-+   [AI 在无人机竞速领域战胜人类冠军；X 平台即将更新“音频与视频通话”；微博上线明星 AI 情感伴聊丨 RTE 开发者日报 Vol.40](024_OFhXw6pnUiPiNpkEw9Hct0gXnue.md)
++   [AI 在无人机竞速领域战胜人类冠军；X 平台即将更新“音频与视频通话”；🧣上线明星 AI 情感伴聊丨 RTE 开发者日报 Vol.40](024_OFhXw6pnUiPiNpkEw9Hct0gXnue.md)
 +   [谷歌发布 AI 摸鱼神器；鸽子数据传输速度远超互联网？丨 RTE 开发者日报 Vol.39](025_WPy5w7NQoiz8ffklvBxcKIbDned.md)
 +   [90 后是网络诈骗的主要对象；我国将建设国家计算机病毒库；亚马逊 CEO 警告员工每周至少坐班三天丨 RTE 开发者日报 Vol.38](026_H9oKwbzshiUq5okTUHKcdKOunMc.md)
 +   [OpenAI 发布 ChatGPT 企业版；科技巨头工程师平均年薪报告发布；智能隐形眼镜可用眼泪充电丨 RTE 开发者日报 Vol.37](027_JGwwwZ8GNi7iMQkIYARcvgUQnmd.md)

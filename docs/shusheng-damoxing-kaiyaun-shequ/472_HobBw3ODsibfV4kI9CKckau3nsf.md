@@ -24,7 +24,7 @@
 
 **长上下文兴趣小组讨论区：**https://github.com/InternLM/Tutorial/discussions/1336
 
-**想要加入 长上下文 SIG 的同学欢迎微信联系浦语小助手（微信搜索 InternLM）**或者小组长法律人（微信搜索 Valeria_Wong），也可扫描以下二维码进群。
+**想要加入 长上下文 SIG 的同学欢迎🛰️联系浦语小助手（🛰️搜索 InternLM）**或者小组长法律人（🛰️搜索 Valeria_Wong），也可扫描以下二维码进群。
 
 ![](img/11e5a60675dcf3ccec27184f2ddb330a.png)
 

@@ -6,7 +6,7 @@
 
 > 明敏 发自 凹非寺
 
-> 量子位 | 公众号 QbitiAI
+> 量子位 | 👸号 QbitiAI
 
 大神卡帕西（Andrej Karpathy）刚 “复工”，立马带来神作：
 

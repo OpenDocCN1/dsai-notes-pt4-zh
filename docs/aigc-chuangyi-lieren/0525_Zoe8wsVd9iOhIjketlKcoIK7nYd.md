@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/QAVBdD6lvozyoaxJNkjciW8hnPe](https://aigcreative.feishu.cn/docx/QAVBdD6lvozyoaxJNkjciW8hnPe)
 
-> 作者：卓sir          公众号：考研英语TED
+> 作者：卓sir          👸号：考研英语TED
 
 > 原文：https://mp.weixin.qq.com/s/4fmNQUNZAugj8ISCC-E4xA
 

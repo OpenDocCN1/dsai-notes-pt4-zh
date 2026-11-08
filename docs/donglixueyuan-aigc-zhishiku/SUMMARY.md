@@ -95,7 +95,7 @@
 +   [AI 商业案例- 如何使用Midjourney做副业挣钱](116_DPwpwBIJMiK6fekU1FYcV2Efnlf.md)
 +   [【案例】如何用Midjourney做故事绘本](117_HasVw93QUins52kyOyAcDAIdnjc.md)
 +   [【案例】如何用Midjourney做服装设计](118_Bd8TwFl53iX2l7k9hM5c1GRcnac.md)
-+   [【案例】如何用Midjourney生成微信表情包](119_Pw79whya8iPY7OkkcTYcrswGn5d.md)
++   [【案例】如何用Midjourney生成🛰️表情包](119_Pw79whya8iPY7OkkcTYcrswGn5d.md)
 +   [【案例】如何用Midjourney做家具设计](120_WAQYwqBAPi7CSokC8Y0ccqdqnfb.md)
 +   [ChatGPT 基础知识介绍](121_R1ATwJHmTidNHZkJiCQcrb2Tn9d.md)
 +   [ChatGPT注册及付费教程，亲测可用！](122_Nw2Zw0lB3ijpjfkvkwVcuosBnvf.md)

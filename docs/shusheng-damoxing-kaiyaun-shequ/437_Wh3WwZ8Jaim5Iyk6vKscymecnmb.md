@@ -24,7 +24,7 @@ MindSearch 是上海人工智能实验室书生·浦语团队推出的 AI 搜索
 
 +   完成任一 MindSearch 共建任务。
 
-完成上述任一任务可私聊浦语小助手（微信：InternLM）后可以加入 MindSearch 兴趣小组。
+完成上述任一任务可私聊浦语小助手（🛰️：InternLM）后可以加入 MindSearch 兴趣小组。
 
 ### 社区共建任务
 

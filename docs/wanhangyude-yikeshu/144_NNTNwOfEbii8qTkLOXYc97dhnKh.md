@@ -8,7 +8,7 @@
 
 [金字塔原理](https://ghlf0s3q3l.feishu.cn/wiki/MbunwKhgmiWMC6kaXieci3Olnoh)
 
-[倒金字塔结构](https://ghlf0s3q3l.feishu.cn/wiki/VYkrwCEYni13hrkzvtRcQQ18nDc)
+[倒金字塔结构](https://ghlf0s3q3l.feishu.cn/wiki/VYkrwCEYni13hrkzvtRc🐧18nDc)
 
 [福格行为模型](https://ghlf0s3q3l.feishu.cn/wiki/QSnLwo8Mui0EzzkJeSdcfxKZnJd)
 

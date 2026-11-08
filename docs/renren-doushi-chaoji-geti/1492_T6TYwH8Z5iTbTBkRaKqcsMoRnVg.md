@@ -194,4 +194,4 @@ Demis Hassabis在此前接受采访表示，Gemini将结合AlphaGo类型系统�
 
 https://80000hours.org/podcast/episodes/mustafa-suleyman-getting-washington-and-silicon-valley-to-tame-ai/
 
-https://twitter.com/AISafetyMemes/status/1697960264740606331 本文来自微信公众号 “新智元”（ID:AI_era） ，作者：润 桃子，36氪经授权发布。
+https://twitter.com/AISafetyMemes/status/1697960264740606331 本文来自🛰️👸号 “新智元”（ID:AI_era） ，作者：润 桃子，36氪经授权发布。

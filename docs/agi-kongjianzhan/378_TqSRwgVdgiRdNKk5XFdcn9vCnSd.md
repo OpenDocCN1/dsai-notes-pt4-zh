@@ -12,7 +12,7 @@
 
 # 公司背景：
 
-> [官网传送](https://www.zhiyuan-robot.com/) ｜[ 微信公众号：智元机器人](https://mp.weixin.qq.com/s/J1x1GYxRazmFJPUSVtWLQw)
+> [官网传送](https://www.zhiyuan-robot.com/) ｜[ 🛰️👸号：智元机器人](https://mp.weixin.qq.com/s/J1x1GYxRazmFJPUSVtWLQw)
 
 ![](img/a50e24adfbe660be6528ca8aa1e02671.png)
 

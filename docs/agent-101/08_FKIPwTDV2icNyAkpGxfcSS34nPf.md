@@ -1,4 +1,4 @@
-# AI自动生成小红书/Twitter 封面
+# AI自动生成📕/Twitter 封面
 
 > 来源：[https://docs.feishu.cn/docx/GPzMdIcUHoNOMvxVRxdcTvh4n1c](https://docs.feishu.cn/docx/GPzMdIcUHoNOMvxVRxdcTvh4n1c)
 

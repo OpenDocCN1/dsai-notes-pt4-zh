@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/WjC6dlgGeom8U1xfhsdctSMLnZb](https://aigcreative.feishu.cn/docx/WjC6dlgGeom8U1xfhsdctSMLnZb)
 
-> 来源于微信公众号“雷克智能”
+> 来源于🛰️👸号“雷克智能”
 
 > [原文刊登于《机器](http://article.cechina.cn/word/378136.aspx)人产业》2023年7月刊，作者为浙江大学控制科学与工程学学院副教授、博士生导师朱秋国，以及浙江大学控制科学与工程学学院教授、博士生导师熊蓉
 

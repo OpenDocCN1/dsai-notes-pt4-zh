@@ -4,7 +4,7 @@
 
 ## 新必应申请
 
-下载安装 Edge dev 版本，这个版本可以直接申请(不用梯子)使用
+下载安装 Edge dev 版本，这个版本可以直接申请(不用🪜)使用
 
 Edge dev 下载链接：https://www.microsoftedgeinsider.com/zh-cn/download/dev
 

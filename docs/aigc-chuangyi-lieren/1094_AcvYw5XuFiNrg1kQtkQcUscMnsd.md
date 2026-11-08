@@ -2,7 +2,7 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/JGZ5dqExEoVmSixzQeVcbUkqnxb](https://aigcreative.feishu.cn/docx/JGZ5dqExEoVmSixzQeVcbUkqnxb)
 
-> 来源：公众号-「淘宝设计」
+> 来源：👸号-「淘宝设计」
 
 ![](img/d2ae52ee042d489f7620734cfb939b99.png)
 

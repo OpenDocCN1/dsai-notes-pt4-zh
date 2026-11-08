@@ -4,7 +4,7 @@
 
 > 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/JT2oOG2SYw2pDYEHlEmcyQ)q.com/s/JT2oOG2S...
 
-> 来源：公众号：数字生命卡兹克
+> 来源：👸号：数字生命卡兹克
 
 我想，任何在AI圈学习过Prompt的人，一定不会对李继刚这个名字陌生。
 

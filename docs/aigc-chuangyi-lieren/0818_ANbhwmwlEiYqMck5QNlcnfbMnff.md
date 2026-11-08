@@ -4,7 +4,7 @@
 
 > 原文链接： https://mp.weixin.qq.com/s/lRRohVefaLU8ITyfaokZyA
 
-> 来源：公众号：Tony出海
+> 来源：👸号：Tony出海
 
 Claude Code 是 Anthropic 公司（Claude AI 的开发公司）官方推出的终端 AI 编码工具。它由 Anthropic 的工程团队开发和维护，包括创始工程师 Boris Cherny（原型发起人）、Sid Bidasaria 等多人，以及产品经理 Cat Wu 等参与。
 

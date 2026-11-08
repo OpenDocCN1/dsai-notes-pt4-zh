@@ -16,7 +16,7 @@
 
 >
 
-> 胡扯资源库&知识库创建者介绍：[关于曾老师](https://huchegames.feishu.cn/wiki/Fh3Uwg78yiijp1kgZNHcXMwtnWf)。添加[曾老师微信号](https://huchegames.feishu.cn/wiki/ADROwoBUViGQHdk4aG4c8VkEnYb)。
+> 胡扯资源库&知识库创建者介绍：[关于曾老师](https://huchegames.feishu.cn/wiki/Fh3Uwg78yiijp1kgZNHcXMwtnWf)。添加[曾老师🛰️号](https://huchegames.feishu.cn/wiki/ADROwoBUViGQHdk4aG4c8VkEnYb)。
 
 # 胡扯知识库
 
@@ -70,7 +70,7 @@ https://docs.qq.com/smartsheet/DVXZNTEpRYWhUalFq?viewId=vEjgSC&tab=BB08J2
 
 如果你有资源想分享，可以在下面[上传或者提交资源](https://docs.qq.com/smartsheet/form/UvMLJQahTjQj%2FtSkz6H%2FvccTdn?tab=tSkz6H)，然后联系曾老师拉入「胡扯知识群」。同样拥有「胡扯群友专享」资源权限。
 
-提交资源后，添加[曾老师微信号](https://huchegames.feishu.cn/wiki/ADROwoBUViGQHdk4aG4c8VkEnYb)，进入「胡扯知识群」。
+提交资源后，添加[曾老师🛰️号](https://huchegames.feishu.cn/wiki/ADROwoBUViGQHdk4aG4c8VkEnYb)，进入「胡扯知识群」。
 
 提交共建资源：
 

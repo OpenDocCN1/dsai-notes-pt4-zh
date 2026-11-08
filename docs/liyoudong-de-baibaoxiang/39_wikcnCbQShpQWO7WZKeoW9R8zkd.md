@@ -38,7 +38,7 @@ squared with round edges mobile app logo, an icon for a Instant Noodles company,
 
 ## 技巧五：增加风格——艺术家
 
-> [因为篇幅的原](https://www.xiaohongshu.com/user/profile/6073d38d00000000010068a6?xhsshare=CopyLink&appuid=6073d38d00000000010068a6&apptime=1679646639)因，本教程不会介绍特别多的风格，我会在我的 小红书账号 上更新。感兴趣的朋友可以去关注下。
+> [因为篇幅的原](https://www.xiaohongshu.com/user/profile/6073d38d00000000010068a6?xhsshare=CopyLink&appuid=6073d38d00000000010068a6&apptime=1679646639)因，本教程不会介绍特别多的风格，我会在我的 📕账号 上更新。感兴趣的朋友可以去关注下。
 
 前一章介[绍了增加艺术运动，从](https://zh.wikipedia.org/zh-tw/%E4%BF%9D%E7%BD%97%C2%B7%E5%85%B0%E5%BE%B7)而使[得生成的图片更加特别](https://zh.wikipedia.org/zh-tw/%E7%B4%A2%E7%88%BE%C2%B7%E5%B7%B4%E6%96%AF)，本章再教大家一个方法，是增加艺术家的名字。 首先需要注意，Midjourney 支持大部分的艺术运动，但在艺术家的支持上，相对来说比较少，经过网友们的不懈努力，截止到 3 月 31 日，V4 已知支持的艺术家有 2000 多位，V5 有 100 多位。 其中在榜的 Logo 设计师，只有 Paul Rand 和 Saul Bass ，Paul 是 IBM、英孚、NeXT logo 的设计师，Saul 是美国联合航空、AT&T logo 的设计师。 使用方法很简单，在 prompt 最后加上 by Paul Rand 即可：
 

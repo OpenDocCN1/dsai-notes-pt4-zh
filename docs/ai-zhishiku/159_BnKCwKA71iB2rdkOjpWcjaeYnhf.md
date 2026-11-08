@@ -178,7 +178,7 @@ https://new.aigc369.com/redeemCode
 
 +   支持超长对话，在节省 Token 的同时自动压缩上下文聊天记录
 
-+   **我****们对****接了前腾讯云技术**项目总监，支持 GPT ，New Bing 直连镜像站代搭建，微信或公众号接入，GPT4 接口对接，AI 系统课程合作等
++   **我****们对****接了前腾讯云技术**项目总监，支持 GPT ，New Bing 直连镜像站代搭建，🛰️或👸号接入，GPT4 接口对接，AI 系统课程合作等
 
 # 十月份更新日志：
 
@@ -188,7 +188,7 @@ https://new.aigc369.com/redeemCode
 
 # 限时福利
 
-关注公众号：[你今天 AI 了吗](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4NTk2MzM1MQ==&scene=124#wechat_redirect)
+关注👸号：[你今天 AI 了吗](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4NTk2MzM1MQ==&scene=124#wechat_redirect)
 
 回复【福利】免费领取额外额度
 

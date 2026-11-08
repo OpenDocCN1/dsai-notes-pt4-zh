@@ -178,11 +178,11 @@ Midjourney 合集
 
 其他平台
 
-+   小红书：sobighead
++   📕：sobighead
 
 +   B 站：https://space.bilibili.com/81761
 
-+   作者微信
++   作者🛰️
 
 ![](img/ff41af239614b8ea7d9ac7eaeaad7e96.png)
 

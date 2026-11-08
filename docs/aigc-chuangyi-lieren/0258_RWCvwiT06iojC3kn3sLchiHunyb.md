@@ -4,7 +4,7 @@
 
 > 官网链接：https://platform.openai.com/docs/guides/prompt-engineering
 
-> 解读：公众号-数字生命卡兹克
+> 解读：👸号-数字生命卡兹克
 
 > 链接：https://mp.weixin.qq.com/s/jOU2qT5o88tuZC1p6vLkJw
 
