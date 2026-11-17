@@ -198,15 +198,12 @@ Every Noise at Once是一个持续进行的尝试，使用算法生成的、可�
 
 这里的话，我会从intro—verse入手，还是那个问题，要让Chirp能够准确地读出你给它的指令。intro 部分一般情况下只是一段旋律，没有歌词，所以我们需要特殊处理，把它作为一个独立部分与verse隔开，这里用一些括号进行处理，可以是(intro)—[verse] ，intro—[verse]，(intro),(verse)，我个人比较倾向于用第一和第三种，下面是生成例子：
 
-![](img/18ce9d6923663ee23ca444a8ef1ba3c4.png)
 
 [1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CcirbnJJ1ofOUtxJMVscFKcGndh)
 
-![](img/4f23339d5d0e4a138a513b4a7f746e61.png)
 
 [2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OroMbcwytoyhHnx1Ov2c4r3hnha)
 
-![](img/e577613e4340e424f56ae63a402940d6.png)
 
 [3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HjvdbCThuoOSwYxpDu6c1UyVnFy)
 
@@ -228,27 +225,22 @@ Every Noise at Once是一个持续进行的尝试，使用算法生成的、可�
 
 下面是Chirp采样成功的例子，感受下：
 
-![](img/2b09e60a54e12c143d827990f11ec084.png)
 
 [中文rap.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CYqtbwy5mob7fCxr5Eoc68PlnQf)
 
 像上面这个例子，确实很好地延续了创作焦点，但是这个歌曲结构并不能增大生成创作焦点的概率，在论坛上有人提出用乐器去辅助生成创作焦点，所以我根据其提出的结构进行了优化，整合为新的结构：(intro)—[乐器1]—[乐器2]—[instrumental]，下面是生成例子：
 
-![](img/f3da2507087a741a11e16875c23d8ece.png)
 
 [4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A5ZEbETBtoF4x6x8zBTcEBfMnCh)
 
-![](img/a819110ef2bb0d21d3e5cdbfeb598275.png)
 
 [5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bnbtbic6FoYHhNx8zWXcVoCRnKb)
 
 当然也可以把instrumental 换成 melodic instrumental，效果是这样的：
 
-![](img/c12271ecf87e94e1b30a80de12f0ffc2.png)
 
 [6.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QzWob8XA6oW5AnxTxOycOwTWnZc)
 
-![](img/f2ccbcfdaabf7f7d25757f78a86d5639.png)
 
 [7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QMWbb9ACgoiWQIxKHX6cSi9Ynof)
 
@@ -258,7 +250,6 @@ Every Noise at Once是一个持续进行的尝试，使用算法生成的、可�
 
 可以加入类似Wawawa Ahhh这类词语，能改变一些音质，有些时候Chirp是不唱这些词语的。
 
-![](img/426a7a0b1a775063f18291246d80bb75.png)
 
 [8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O9esbpCTBohoVmxmBoXcjtESn5e)
 
@@ -282,35 +273,27 @@ Chirp会优先识别你输入的元标签，所以在输入的时候结构不要
 
 ## 作品赏析
 
-![](img/687134b0ae141fe22d41bff2a7fdd61f.png)
 
 [案例11.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KM7dbpER2o3CqGxEdeBc4e5fnLe)
 
-![](img/95617986ada19c9aed594794e626736b.png)
 
 [案例12.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WLIGbEM2Poc7k8xnyv2cmpNgn2f)
 
-![](img/bf579a0dc7abdc57c352dbb280da7882.png)
 
 [soulful jazz neofunk.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z7Y5b8ZrFok6AaxpPPScM4QmnEf)
 
-![](img/e1bbfe94141b450066bfa2680799f541.png)
 
 [Dante and Beatrice.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Meo7bIT6Lom3oQxLhLJc5xROnYe)
 
-![](img/3983921bf875ebfd479b3252bba01efb.png)
 
 [Country_road 猫王.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B3CebT3fBoz6bxxsmZ9cqhg4nbb)
 
-![](img/fd42db6f225ee621bdbab44be4f5d5b4.png)
 
 [监狱蓝调.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PfCob84BcoX9RCxHvyCcShNhn9f)
 
-![](img/35fba6d766768e2f85dfb4db5d0b07d4.png)
 
 [话剧.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H4K4bcn8zodNN0xyQwRct0xZnuc)
 
-![](img/44e8b4788807bf74692e7d76b8881c11.png)
 
 [Afro Reggaeton.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BXAjbELS2o94dPxqisFcHdHunLe)
 

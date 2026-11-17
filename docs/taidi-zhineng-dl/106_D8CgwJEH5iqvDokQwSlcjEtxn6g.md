@@ -18,23 +18,18 @@ Spring 2022
 
 ## Dataflow Model Introduction
 
-![](img/412f742d4daf945019add940fe247dfe.png)
 
 sequential 的最大好处，是 debugable。
 
-![](img/ec045daceec59d98fe822cb7595ffb10.png)
 
 Dataflow ISA representation
 
-![](img/3eea3c0ba082893753c9a7fe2a812ee0.png)
 
 dataflow node example
 
-![](img/d61f155c6141a87761cad57c3852e389.png)
 
 下图，在做的是阶乘。输出是 N 的阶乘。
 
-![](img/b5a395be47b7c0a3f3fdb094ae1f00fd.png)
 
 ## ISA-Level Tradeoff
 
@@ -48,7 +43,6 @@ tradeoff 上，一般认为：
 
 1.  能耗比上，dataflow 的能耗一般更低。因为，sequential model 需要反复维护 PC 的递增。
 
-![](img/da0d5fc2007a43d2ca182c9f0c278097.png)
 
 ## Micro Arch - Level Tradeoff
 
@@ -56,7 +50,6 @@ Micro Arch 可以用 dataflow 乱序执行，只要给 programmer 可感知的�
 
 也就是，micro-arch 层面可以乱序执行，基本是，现在的 HPC 机器都是这么设计的。
 
-![](img/a47a0b2e91a9ef9cfe4f48cba0d7a83d.png)
 
 ## More Reference
 

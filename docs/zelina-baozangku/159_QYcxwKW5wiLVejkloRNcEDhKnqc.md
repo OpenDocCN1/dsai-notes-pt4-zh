@@ -220,7 +220,6 @@ Q4的时候，这个时候业务的发展趋于平稳期，但项目里面会存
 
 附上一些读书笔记：[01 阅读与思考Thinking](https://pzfqk98jn1.feishu.cn/wiki/FD9PwxGyPiPS4gkbXdtcfS0hn2c)
 
-![](img/7f9357cb4da4dd49c831778496b46d63.png)
 
 ---
 

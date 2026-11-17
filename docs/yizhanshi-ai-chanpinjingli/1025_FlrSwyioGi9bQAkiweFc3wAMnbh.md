@@ -46,7 +46,6 @@
 
 ![](img/2f5190bd0ab32d0545bc9cdc19ae273b.png)
 
-![](img/5aa8e209bd474c8fd0a6f2bb4c19cf2f.png)
 
 ### 2.3 离线安装
 

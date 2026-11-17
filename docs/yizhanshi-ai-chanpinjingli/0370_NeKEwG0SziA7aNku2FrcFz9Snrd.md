@@ -150,7 +150,6 @@ GPU**有大量的threads用于执行操作（an ope**r**ation，也称为a kerne
 
 计算前半部分指数项，此时指数项减去的最大值 仅为局部最大值：
 
-![](img/1bb7f1b54381b2b9457a7ec0402ad3f1.png)
 
 计算后半部分指数项，此时指数项减去的最大值 同样仅为局部最大值：
 
@@ -158,7 +157,6 @@ GPU**有大量的threads用于执行操作（an ope**r**ation，也称为a kerne
 
 分别计算前后两部分exp求和项，这里计算出来的指数项同样为局部最大值：
 
-![](img/30a0be5be96164fe784ca00d9b0cdfc0.png)
 
 ![](img/5a9a51029b4a161275c28599a94dab3b.png)
 

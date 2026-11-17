@@ -18,59 +18,46 @@
 
 ## 技术层
 
-![](img/fecc4f19da66203477f85b8aa69605f3.png)
 
 [1.技术解析篇-DeepSeek入门宝典.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CYsFbLAfZohOcZx6zKYceIM8nYg)
 
-![](img/ae795454dd14c21b737242860b4a9e60.png)
 
 [2.开发实战篇-DeepSeek入门宝典.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CvMtbtRjRo58szxTXvOcI8IYnqb)
 
-![](img/2150ad0c79ce4fcfbcf4a884b24ddbba.png)
 
 [3.行业应用篇-DeepSeek入门宝典.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZpWBbz3S1oT7Q2xArvScuEJKn8d)
 
-![](img/04c073192571aa0fcd404b0a8043d11b.png)
 
 [4.个人使用篇-DeepSeek入门宝典.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EjW5bHxfEoLP3QxdQuEcN2hOn9d)
 
 ## 清华团队
 
-![](img/9e885e45d299c4b5e9aac19e1b2c21a1.png)
 
 [【清华大学】普通人如何抓住DeepSeek红利.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MchLb0bIeobVC8xQ6xxcZvmUnle)
 
-![](img/c4cfcccc40e302974bf356ef7e1364a3.png)
 
 [DeepSeek从入门到精通-清华大学.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A6IZbCXU0oEzEmx0fKgcuGvinCH)
 
-![](img/8f0d0819d1de80a4b3c776548f263020.png)
 
 [DeepSeek与AI幻觉-清华大学.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/R7jXblVZKoB5xFxcXiTcsMTgn7f)
 
-![](img/f54e7d0e67a24e89b5c49dcc90d153e9.png)
 
 [【清华大学】普通人如何抓住DeepSeek红利.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DMyqbofrloyc48xCgArcbN9bnob)
 
-![](img/30495df7a37db0e713ff90dc6839aadb.png)
 
 [清华大学第五讲：DeepSeek与AI幻觉.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JIsPbSXG2oapk2xjHhzc1vvHn5e)
 
-![](img/e82182091db20bc58a33320a78e92b56.png)
 
 [清华大学第四讲：DeepSeek+DeepRsearch，让科研像聊天一样简单.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FUvmbKZ9goyMtcx20Lqcxe5UnBc)
 
 ## 厦大团队
 
-![](img/c31fda1d1609c797a7457dd25d9d65de.png)
 
 [厦大团队：DeepSeek大模型赋能政府数字化转型.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AufzbUZfIomQLTxhF8icleEynBS)
 
-![](img/3e3a39d27d035ac7ca93065dfdaac9a1.png)
 
 [厦大团队：DeepSeek大模型及其企业应用实践.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BlUabcfHHo75NgxEeN5cJPCInJf)
 
-![](img/73d9357ff6d32856a10cde921628786a.png)
 
 [厦大团队：大模型概念、技术与应用实践.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TLp3b18K6oYjjPxG4V5c2lPbn9b)
 

@@ -4,15 +4,10 @@
 
 ![](img/bf9ded087dc893b2dcba4e7987f515f5.png)
 
-![](img/7dad4557acee04666ae5fea8d70a6db5.png)
 
-![](img/ff62833bfb78dec1ea08383d8dce74ed.png)
 
-![](img/40cdd7cc0c23b910e5eea7e214c245ad.png)
 
-![](img/0cb98b5146f9828db66c79e09dded194.png)
 
-![](img/5801867a5e642354638471009be7f616.png)
 
 ![](img/28375fc01b26819be6e7d0dc74eaf306.png)
 

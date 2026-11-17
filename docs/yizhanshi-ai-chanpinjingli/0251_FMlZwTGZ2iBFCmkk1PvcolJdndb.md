@@ -252,7 +252,6 @@ plt.show()
 
 输出的图如下所示：
 
-![](img/7e219232a17c6e9fd4a4c61e5fe9edf2.png)
 
 ### 主成分分析（PCA）
 

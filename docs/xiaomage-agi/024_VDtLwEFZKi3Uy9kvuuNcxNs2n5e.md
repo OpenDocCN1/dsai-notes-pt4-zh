@@ -22,13 +22,9 @@
 
 ## 1、通过媒体自适应移动端
 
-![](img/2dd9b225755469e7872d9450d5d3a60e.png)
 
-![](img/a933398cec50d8a77091c78b4daf9c94.png)
 
-![](img/9dd8f000887e09d36c059002a7baeac1.png)
 
-![](img/944a59e29950621a4b829eb293f631ce.png)
 
 ![](img/c510da73a400639a87dff6552c739fb0.png)
 
@@ -341,7 +337,6 @@ const pageList = ref([
 
 移动端
 
-![](img/9ee94748ea517a315b452304eff50c6e.png)
 
 ![](img/b62f0c7f0686c16d5b903635e9a5e336.png)
 

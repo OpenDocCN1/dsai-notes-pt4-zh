@@ -89,7 +89,6 @@
 
 ### 搜索地图小程序，并打开
 
-![](img/5f25c3bebdbae27be19eeaf064ea0c0b.png)
 
 ![](img/ca1c73f4c596168ab5458de49d4da787.png)
 
@@ -188,7 +187,6 @@
 
 ### 搜索地图小程序，并打开
 
-![](img/2e8d17358c7c639ee73d487b93470c8c.png)
 
 ![](img/5e5b39ce746f6ece264ee342a2e3cd93.png)
 

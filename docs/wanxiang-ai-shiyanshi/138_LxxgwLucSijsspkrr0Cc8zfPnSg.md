@@ -156,7 +156,6 @@ Prompt精确公式适用于对于镜头运动或画面呈现有明确需求，�
 
 [66786ad306b3fb7071304db6147f3306937158937723cb56c4be9986.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hp2wbrjCPozs1Qx6rGUc1FE6npb)
 
-![](img/3f051fd6729e2fc32bc90d852058ba34.png)
 
 [0de49a91b0981c2153a13e172ea9e9d1c25d8f6f530b4fb792e676bb.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X6pObovzYowGy8xzMSWcZMTpnmf)
 
@@ -200,7 +199,6 @@ Prompt精确公式适用于对于镜头运动或画面呈现有明确需求，�
 | --- | --- | --- |
 | **改进后的Prompt** | 镜头透过一扇透明玻璃拍摄一座现代的玻璃外观高楼，楼体在阳光下闪烁着反射光。镜头之后贴近一扇窗户，窗户玻璃上的反射展现出外面繁华的城市景象。镜头缓缓后拉，通过玻璃，最终聚焦到窗内一位身穿西装的女性。她坐在一个装饰简约的办公室里，专注地盯着电脑屏幕。她的面容在柔和的光线下显得沉思而内敛，与窗外的喧嚣形成了鲜明的对比。办公室内的装饰简洁而现代，突显了她的专注和内敛。 |  |
 
-![](img/9c0c1a2fde2857532cfdb2d29ac32f39.png)
 
 [dc4b40f9345002b367cc8949430c9427519a2ebb3b53af19f01cc58b.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VZEGbCvfWofMw2x2AKichIoKn0g)
 
@@ -276,7 +274,6 @@ Prompt精确公式适用于对于镜头运动或画面呈现有明确需求，�
 | ![](img/82c72dad095a72e36bfe54199b15bc83.png) | 画面中的猫快速向镜头跑来，眼睛里冒出白色的电光，然后整个身体被电光包围，越跑越快，两边的景物快速向后飞去，两侧场景产生动态模糊形成散发白色光芒的时空隧道。 |  |
 | ![](img/6a115393ca48199f67716364cfaa25e4.png) | 拉镜头拍摄，男人朝镜头奔跑。身后的人影快速追赶上来，并变得巨大。人影凑近后，可见那是一个有着山羊面孔的人形生物，面部被偏黄色的光照亮，画面色调变得诡异，充满恐怖的氛围。 |  |
 
-![](img/c5b2671063638b045352c0108ab177a1.png)
 
 [图生优质2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IxLGbXEypoYLTex5T1NcYSF2nid)
 

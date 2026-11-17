@@ -229,7 +229,6 @@ Drone view from above of a beautiful Amazon jungle and river, the drone descendi
 
 an old photograph from the WW II, capturing a dramatic and surreal scene. A huge shark as if it were a gallant steed. This is no ordinary scene; the shark, charges fiercely across a smoky battlefield
 
-![](img/e3d2b4ad8d4b064968290d4ab7a95996.png)
 
 [[twi]@Javi _twi (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YI8bboZH0ofxjfxYhDMcc2GFnYc)
 
@@ -477,7 +476,6 @@ Low-angle static shot: The camera is focused on a white-collar worker working ov
 
 The camera focuses on the maple leaves on the ground. When a gentle breeze sweeps across the scene, the leaves start to float gently. The background is a maple forest, which is blurred. Camera Movement: Zoom in on the leaves on the ground and then pan up as the leaves float.
 
-![](img/776733eaa2a8face14b87f67d6cea69e.png)
 
 [Gen-3 Alpha 3327067266, An elegant black pia.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Iv62bb6R2o9QeaxxwoGc3nQfnGd)
 

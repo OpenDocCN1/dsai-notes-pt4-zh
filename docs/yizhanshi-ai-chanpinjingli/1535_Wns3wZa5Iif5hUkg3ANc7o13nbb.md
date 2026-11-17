@@ -8,7 +8,6 @@
 
 英文版
 
-![](img/a20a324c37470571527c8ab14285688a.png)
 
 [CES_2024_Industry_Mapping.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q2wfbk2qaoTta3xmh8ccSTt4nYd)
 

@@ -4,7 +4,6 @@
 
 报告内容浏览
 
-![](img/f0b16cb0ebfcac64a766d183dc5f966a.png)
 
 ![](img/f3966349480cbb368eb01b1e46d7d03e.png)
 

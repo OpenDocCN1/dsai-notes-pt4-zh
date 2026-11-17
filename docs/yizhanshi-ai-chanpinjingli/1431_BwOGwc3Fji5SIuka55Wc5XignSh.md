@@ -108,7 +108,6 @@ prompt-tuning可以认为是prefix-tuning的简化版。**固定整个预训练�
 
 # LLM高效微调技术
 
-![](img/b923a89aa0e334701222ba29effc0f6e.png)
 
 [Prefix-Tuning Optimizing Continuous Prompts for Generation.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P6NpbX1W4o6CX9xrlAfcXz83nkb)
 

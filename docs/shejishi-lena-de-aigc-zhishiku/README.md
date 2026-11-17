@@ -430,7 +430,6 @@ Flat illustration [prompt] --ar 2:3 --exp 100 --raw --sref 935888290 --profile f
 
 --sref 3341290694
 
-![](img/22bb190f7662623d3eca83b25867e1ce.png)
 
 --chaos 25 --ar 2:3 --sref 3320822815 --profile 4d36t2k --sv 4 --sw 1000 --stylize 1000 --weird 100 --v 7
 
@@ -446,21 +445,17 @@ Flat illustration [prompt] --ar 2:3 --exp 100 --raw --sref 935888290 --profile f
 
 Illustration of [subject] --sref 3250775335 --profile ch85yes --c 8 --ar 2:3 --q 2 --sw 320 --s 320 --v 6.1
 
-![](img/1d5700dc9f45b6fe162585919ab5763c.png)
 
 --sref 1602835718
 
 ### 更多
 
-![](img/383472466a9b742075552879f8b2828c.png)
 
 --sref 464625254
 
-![](img/2c27d62f03a22f264cece93ceaf249b1.png)
 
 --sref 3863161396
 
-![](img/4b163f3b5beaf3f12499fe25b8297f1b.png)
 
 --sref x + 垫图
 
@@ -992,7 +987,6 @@ Midjourney生成出来的这个小怪物，我也不知道怎么形容，于是�
 
 语义理解90
 
-![](img/98653b0106d19a7624cc0d25d253084b.png)
 
 语义理解92
 
@@ -1018,7 +1012,6 @@ Midjourney生成出来的这个小怪物，我也不知道怎么形容，于是�
 
 # [AI商业片欣赏](https://aigclena.feishu.cn/wiki/XCA3wI0WYiJLFokmy6DcJ4lvnEg)
 
-![](img/fd3d0f52d028933e49f852f88a650ef5.png)
 
 [X2Twitter.com_1823378542886793216(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O2GFbLIFOotD7exHq1ucUXQwnSb)
 
@@ -1026,7 +1019,6 @@ Midjourney生成出来的这个小怪物，我也不知道怎么形容，于是�
 
 [X2Twitter.com_8cmchCiyuu0uJ72L_720p (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TGx9bEZgToVnuWxD8X2cIJKknOS)
 
-![](img/f35b04c487e2a09ac3dd1933217283a3.png)
 
 [X2Twitter.com_1823722253365678080(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GTjSbLF98oxbnVx2kUMcp7RknZc)
 

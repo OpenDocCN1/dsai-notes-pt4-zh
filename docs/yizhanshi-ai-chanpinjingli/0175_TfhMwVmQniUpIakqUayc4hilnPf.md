@@ -84,7 +84,6 @@ In the haunting backdrop of a war-torn city, where ruins and crumbled walls tell
 
 A single butterfly with wings that resemble stained glass flutters through a field of flowers. The shot captures the light as it passes through the delicate wings, creating a vibrant, colorful display. HD.
 
-![](img/a1e16b32257f71d6b748712d36599f13.png)
 
 [000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PrcCbJST6oZYpXxfL8jcAQeQncl)
 

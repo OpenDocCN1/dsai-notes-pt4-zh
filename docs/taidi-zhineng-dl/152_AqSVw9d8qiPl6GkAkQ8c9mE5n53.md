@@ -6,7 +6,6 @@
 
 一共 5 步
 
-![](img/a10e93b2f4ee1d9c7a544138685c441e.png)
 
 ![](img/c567734e372798ee7900b0db6c9f6a3a.png)
 

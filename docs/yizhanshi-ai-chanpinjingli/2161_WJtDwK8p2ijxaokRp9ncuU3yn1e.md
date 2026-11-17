@@ -136,7 +136,6 @@ Tesla Bot（人形机器人Optimus）
 
 Podcastfy 专注于从多种多模式源中以编程方式和定制方式生成引人入胜的对话文本和音频，从而实现定制和规模化。
 
-![](img/68c2d9ed534cb5f52c118676da777766.png)
 
 # JobJump：AI辅助面试工具
 

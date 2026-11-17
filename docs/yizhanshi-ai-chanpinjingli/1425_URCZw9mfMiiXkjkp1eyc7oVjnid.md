@@ -244,7 +244,6 @@
 
 **GraphET****训练系统的架构如下图所示：**
 
-![](img/b7d0ca07bffa87aad9251a83310c4d2a.png)
 
 **系**统由负责模型训练的Worker进程和负责Hashtable保存的Parameter Server进程两部分构成。
 
@@ -314,7 +313,6 @@ worker进程对重复查询Embedding做了两方面优化：
 
 基于图模型离线训练流程，建设图在线引擎。图在线引擎建设包括两部分内容：图采样和图推理，如下图所示：
 
-![](img/eb74ffe6253b135ae3082004d8aec7e7.png)
 
 ![](img/ba87db92d934d67d759da80f2926741e.png)
 

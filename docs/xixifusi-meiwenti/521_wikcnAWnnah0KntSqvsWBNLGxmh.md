@@ -1065,7 +1065,6 @@ contract DutchAuction is Ownable, ERC721 {
 
 Merkle Tree，也叫默克尔树或哈希树，是区块链的底层加密技术，被比特币和以太坊区块链广泛采用。Merkle Tree是一种自下而上构建的加密树，每个叶子是对应数据的哈希，而每个非叶子为它的2个子节点的哈希。
 
-![](img/1cf4e11c12b6fa454c9536f69e603bc4.png)
 
 Merkle Tree允许对大型数据结构的内容进行有效和安全的验证（Merkle Proof）。对于有N个叶子结点的Merkle Tree，在已知root根值的情况下，验证某个数据是否有效（属于Merkle Tree叶子结点）只需要log(N)个数据（也叫proof），非常高效。如果数据有误，或者给的proof错误，则无法还原出root根植。 下面的例子中，叶子L1的Merkle proof为Hash 0-1和Hash 1：知道这两个值，就能验证L1的值是不是在Merkle Tree的叶子中。为什么呢？ 因为通过叶子L1我们就可以算出Hash 0-0，我们又知道了Hash 0-1，那么Hash 0-0和Hash 0-1就可以联合算出Hash 0，然后我们又知道Hash 1，Hash 0和Hash 1就可以联合算出Top Hash，也就是root节点的hash。
 

@@ -2,39 +2,30 @@
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/IKo0dS7oDojQMTxYFQ0cxj5jnYe](https://v11enp9ok1h.feishu.cn/docx/IKo0dS7oDojQMTxYFQ0cxj5jnYe)
 
-![](img/c0a6399ade72431d7bf61748e93f18bc.png)
 
 [大模型 RAG 检索增强生成面.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JYqAbYJylok9b7xgUJwc9it4nUg)
 
-![](img/2c2b13f1bef4f221489b9bbbee80f11c.png)
 
 [大模型校招面试题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NHtjbxkEno1gFExb8vxcbdcRn0e)
 
-![](img/3f9c9eed32a0b0764eccb713b4a1fedb.png)
 
 [多模态常见面试题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IBLcbO0v5ocukNxG4YFcl1r0n3f)
 
-![](img/ea666170cf1c8ed951f8113f1133e55d.png)
 
 [大模型（LLMs）Tokenizer篇.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/On9kbsjEuopFXmx4mW6ciR6Ln0e)
 
-![](img/a0ad6724e0839cecd082cb244086d467.png)
 
 [大模型（LLMs）分布式训练面.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JM84btnlMoOiMsxKO6GcBkWjnoe)
 
-![](img/4133f33b3ddcf20fd125e98dda0d4c8f.png)
 
 [大模型（LLMs）推理加速篇.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UMM2bn2ako3TMaxTTAqcyZr8nCc)
 
-![](img/972c086783360de9b09383957a528ba6.png)
 
 [大模型（LLMs）增量预训练篇.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TSnobYWfeoz2JJx0t2LcB4SInrf)
 
-![](img/f9edf64aade546741aa9ccd35ab57a69.png)
 
 [大模型（LLMs）面试题答案Plus.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZGGsbxGlLopeoyxx2Mwc1RgunBg)
 
-![](img/f04ff463989181c578a81fdfb3a12567.png)
 
 [大模型（LLMs）显存问题面.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z9uzb1ZlnormCmxKdOJcBQuinIc)
 

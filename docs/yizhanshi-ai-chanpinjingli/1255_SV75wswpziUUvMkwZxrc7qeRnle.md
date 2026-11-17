@@ -2,23 +2,18 @@
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/A6WNdEgBLot1oFx1VlBcSJV8nJe](https://v11enp9ok1h.feishu.cn/docx/A6WNdEgBLot1oFx1VlBcSJV8nJe)
 
-![](img/58aee786dc7ff302526fc9e7ac267534.png)
 
 [12306-MCP车票查询工具.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HwQRbN62joRr8VxSmptcrnFdnTg)
 
-![](img/688db664040e39f7a8412aa0a2964f67.png)
 
 [Figma.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IDLRbYKLooadRYxWVe5ck1sincg)
 
-![](img/e16908cc73ececc9f6ee784abbf4723c.png)
 
 [百度地图+MCP.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Tfbtbx9wSo2tBMxLAVxcxLxcn5f)
 
-![](img/d01232e56cd04634b8e4dc6e5a452a16.png)
 
 [必应搜索中文.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DyxTb5uh6o0UNIxQR3vcZmYynsn)
 
-![](img/30e86fe2dbc1110180b02cf1f76dafd2.png)
 
 [基于 MCP 架构实现知识库答疑系统.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VNHXbETPSojBNGxeJ5vcgUjEnEh)
 

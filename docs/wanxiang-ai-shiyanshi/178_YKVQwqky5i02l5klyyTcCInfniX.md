@@ -342,7 +342,6 @@
 
 ▫️ AI 是炼「客户之声」为「战略洞察」的炼金石：
 
-![](img/3677b672a3d2d63d68e69e6c57979b65.png)
 
 ![](img/10b672f38e8fedb09053ad6f0ca906cd.png)
 
@@ -402,7 +401,6 @@
 
 胖东来董事长于东来抖音发飞书多维表格：
 
-![](img/ead070dc8b1449d601af9b79d4eb37bd.png)
 
 ![](img/b05c70ad74ff0814fbee8c54fbf0929c.png)
 
@@ -478,7 +476,6 @@ Cayson 卖记账模板@📕：
 
 ![](img/1d68d41105bf5d8785178d3ca7f1e307.png)
 
-![](img/98c945669ae83e62e974cf08469b35ee.png)
 
 ![](img/1bae1cc26f31ff199684f9a318c974ad.png)
 

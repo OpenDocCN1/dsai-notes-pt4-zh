@@ -104,7 +104,6 @@ Luma v1.5版本在视频生成领域取得了巨大进步，提升了视频质�
 
 > 4.大幅提升图像生成质量,通过改进或优化模型和算法，使生成的内容更加精细、准确和高质量。
 
-![](img/1f86960ab2c13d63e2bf22b479fbe306.png)
 
 [6385976347137368121350829.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EPvpbeWAzoRmKDx7OM7cPXi3nqd)
 

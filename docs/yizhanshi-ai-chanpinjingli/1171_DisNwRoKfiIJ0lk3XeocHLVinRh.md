@@ -379,7 +379,6 @@ System.out.println(result);
 
 我继续问：
 
-![](img/c441d7be2e8a09ffcf80f287203b839a.png)
 
 继续问：
 

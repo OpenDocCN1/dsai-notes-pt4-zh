@@ -93,7 +93,6 @@
 
 1.  安装步骤如下：
 
-| ![](img/fcd97305721c9a7720788bb9ca39416c.png) | ![](img/188d27053963f896b3f55db24486e2e8.png) | ![](img/44d7eb08e9e85e5bb0d6a7c8e7de188d.png) |
 | --- | --- | --- |
 | ![](img/3cc3675246363a8f2fc6b83433a6a339.png) | ![](img/a9050f629801e49c733ab3569deb692d.png) | 最后一步输入系统登录密码即可安装完成 |
 
@@ -211,7 +210,6 @@ openclaw onboard --install-daemon
 
 #### **忽略安全警告**
 
-![](img/569325c4bb501024cb7d756064045832.png)
 
 #### **配置模式**
 
@@ -253,11 +251,9 @@ openclaw onboard --install-daemon
 
 这一步会自动完成，等待即可
 
-![](img/5b35d0a3286bddffcd27d713019f90b9.png)
 
 #### 选择对话方式
 
-![](img/850dbb8986dccbc7dbba52553da40ab2.png)
 
 建议本地部署选择 **Web UI**，云服务器选择 **TUI**
 

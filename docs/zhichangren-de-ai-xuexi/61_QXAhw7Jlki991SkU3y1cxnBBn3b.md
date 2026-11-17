@@ -171,13 +171,9 @@
 
 注：图片来自原报告。报告下载在原文链接：https://www.battery.com/blog/state-of-ai-2025/
 
-![](img/a252632776949794af96885b690cc322.png)
 
-![](img/a5afd574917f96c37f6871752000ceaf.png)
 
-![](img/37e7fa7ca690e414b723aa9a4caba4e9.png)
 
-![](img/42a8dde8fa425d6e7d40ef1fe4d2ac04.png)
 
 ![](img/85f644aadf565e8fc252f50a268954ea.png)
 

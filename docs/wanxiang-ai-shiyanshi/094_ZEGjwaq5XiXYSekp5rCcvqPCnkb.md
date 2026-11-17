@@ -84,7 +84,6 @@
 
 **原链接：**[https://x.com/dotey/status](https://x.com/dotey/status/1907870919852179850)/1907870919852179850
 
-![](img/e102907e2af306ed45c50a4ae959a7be.png)
 
 ## **复古宣传海报**
 
@@ -156,7 +155,6 @@
 
 **原链接：**https://x.com/dotey/status/1909332895115714835
 
-![](img/410ee04960bae73b9455cfe31b9f063c.png)
 
 ## Q 版表情包
 
@@ -450,7 +448,6 @@ A paper craft-style 【Emoji】 floating on a pure white background. The emoji i
 
 **原链接：**https://x.com/richardchang/status/1909086122959139312
 
-![](img/2ccf772868be05f0ce9b6ed5156a88ac.png)
 
 ## Q 版扁平风格贴纸
 
@@ -518,7 +515,6 @@ a hyper realistic twitter post by Albert Einstein right after finishing the theo
 
 **原链接：**https://x.com/egeberkina/status/1914299716394778713
 
-![](img/eaae623dff8781634b62b14c9f951246.png)
 
 ## 迷你 3D 风格建筑
 
@@ -614,7 +610,6 @@ a hyper realistic twitter post by Albert Einstein right after finishing the theo
 
 **原链接：**https://x.com/hellokaton/status/1910902266481217928
 
-![](img/5512060fd13fd9b1c1e7a5ac6d52ee1f.png)
 
 ## 涂鸦社交媒体
 
@@ -626,7 +621,6 @@ a hyper realistic twitter post by Albert Einstein right after finishing the theo
 
 **原链接：**https://x.com/op7418/status/1906208691877253536
 
-![](img/0368f7117726eec1420c0778a10e6b80.png)
 
 ## 涂鸦照片穿搭分析
 

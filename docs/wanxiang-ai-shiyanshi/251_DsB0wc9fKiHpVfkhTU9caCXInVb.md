@@ -28,7 +28,6 @@
 
 +   AI 爱好者：关注开源生态与 AI Agent 实践的兴趣群体。
 
-![](img/7abd017db6763a076de2fc2c043ebcb7.png)
 
 # 〽️学习目标
 

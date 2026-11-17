@@ -216,7 +216,6 @@ The image conveys a message about the challenges and realities faced in data sci
 
 # 视频理解
 
-![](img/79587f319f22d34168f0bd93471ab250.png)
 
 [basketball.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cq0Gbfyw6oSdslx3aCIcsfYanId)
 

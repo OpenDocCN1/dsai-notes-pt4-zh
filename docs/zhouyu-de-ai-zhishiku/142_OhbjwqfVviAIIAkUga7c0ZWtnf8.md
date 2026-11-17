@@ -14,7 +14,6 @@ ComfyUI官方版本举例：
 
 打开Comfy UI页面，点击顶部工具栏中的【日志与终端】，切换终端模式，输入下方代码
 
-![](img/7bb6f2a972f5bc1ed39c232612c91dae.png)
 
 ![](img/20b04be6fce48ff94e32219acff7957c.png)
 

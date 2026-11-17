@@ -4,7 +4,6 @@
 
 ## 自我介绍
 
-![](img/4f7ef206dbfbd653246c3a62e81a62ef.png)
 
 ![](img/76cc76391613924a60d024b54ffd6307.png)
 

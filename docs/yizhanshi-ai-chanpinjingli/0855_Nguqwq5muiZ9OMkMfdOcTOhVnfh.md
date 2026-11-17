@@ -741,7 +741,6 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/adebee067bc8e40b5f22123f4087e74e.png)
 
-![](img/3a0aae6346d3210ca0b403227b816da1.png)
 
 ![](img/decdd8be1f50ad5659b4e2911b88d98f.png)
 

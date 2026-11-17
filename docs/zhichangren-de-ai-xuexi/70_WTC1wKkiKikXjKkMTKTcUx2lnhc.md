@@ -12,7 +12,6 @@
 
 ## 二、操作流程
 
-![](img/a6fffd0a5c60028d2e4344f7c07e4b93.png)
 
 字段捷径的使用非常简单，与普通的字段配置没有太大差别。新建字段时，你可以选择使用普通字段或字段捷径。选择字段捷径后，只需根据指引完成配置，即可创建一个新的捷径字段。
 
@@ -32,7 +31,6 @@
 
 使用 AI 类的字段捷径，可以调用多维表格 AI 能力对字段进行翻译、总结等处理。
 
-![](img/24a2963f1cc7440bbf6b487b64790a65.png)
 
 ### 公式类
 
@@ -94,7 +92,6 @@
 
 +   测试你的个性化 AI 指令
 
-![](img/8421d40701f14e101314b79ae46d0422.png)
 
 **AI 自动化文本场景？**
 
@@ -146,7 +143,6 @@
 
 ### 数据问答
 
-![](img/e1005469128af74891d3a8e3d1dd119d.png)
 
 [20260105114241_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DMVjbqLjEoehZYxJzf1cbVPbnBg)
 
@@ -179,15 +175,12 @@
 | 计算项目的关联任务中，已完成的任务数占任务总数的百分比 |  |
 | 需要找到当前项目的关联任务里，任务截止时间晚于项目截止时间前7天的任务。列出这些任务的名称，用逗号分隔。 |  |
 
-![](img/fa6df121eb2d0e9efffd31931e3290dc.png)
 
 [20240830102739_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/R1PWbo8CNofhHOxnvAZcFPfwnnf)
 
-![](img/a9f7d12f3c2791ff92ea45a23c3c8bda.png)
 
 [20240830104528_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PE1FbcQYNoHU93xqZaGcdhBXnCc)
 
-![](img/e1ded4f5ca3512701a396a818cf285c7.png)
 
 [20240830102312_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TYFJb3tC6oaOLtxUYLEcD10nnPd)
 

@@ -10,11 +10,8 @@
 
 来看看每个平台的销售情况：
 
-![](img/20dec0f7ebe807ef269e41cd8bf4e1f7.png)
 
-![](img/e6337c321df709cb0e6b5a0d30f9bb25.png)
 
-![](img/d113f9bf80dda7cf058710cd15c690a2.png)
 
 ![](img/9ebda471e95d791fcaf9b476bc98a595.png)
 

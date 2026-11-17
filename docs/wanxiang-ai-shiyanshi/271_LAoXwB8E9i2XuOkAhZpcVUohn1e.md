@@ -26,7 +26,6 @@
 
 ### 1️⃣ SSH远程连接：一键管理云服务器配置
 
-![](img/8673121b10525814b4b0dfced56acbac.png)
 
 **再也不用记密码、敲命令了！**
 
@@ -102,7 +101,6 @@ vim /etc/openclaw/config.json
 
 **步骤 1：** 打开 [官方接入文档](https://help.aliyun.com/zh/model-studio/openclaw-coding-plan)，复制 JSON 配置
 
-![](img/5e084d2e95f4b5f151cd507c5e5e19e9.png)
 
 **步骤 2：** 从[百炼平台](https://bailian.console.aliyun.com/) 获取 API Key
 
@@ -110,7 +108,6 @@ vim /etc/openclaw/config.json
 
 **步骤 3：** 粘贴 JSON 和 Key 到弹窗对应位置
 
-![](img/97a41b1e7ebe619acf1fdedf63e0efc6.png)
 
 **步骤 4：** 点击保存，选择 Qwen 3.5-Plus 模型为主要模型
 

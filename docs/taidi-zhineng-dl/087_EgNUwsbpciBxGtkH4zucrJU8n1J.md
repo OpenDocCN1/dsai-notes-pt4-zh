@@ -424,6 +424,5 @@ Vector **Quantized **Variational Autoencoder，简称 VQ-VAE。名字的核心�
 | Prompt | 模型：https://civitai.com/models/25494/beautiful-realistic-asians | 用 2 个 LoRA 模型画民国风的周淑怡 (mikuya) |
 | 图片效果 | ![](img/667da732eaefd7d6e7c1fe194d7ea24d.png) |  |
 
-![](img/7bf5ca4687bf2ea1eb15e0c235269bee.png)
 
 ![](img/7e3d74f13aa925e36e99496534d57334.png)

@@ -36,9 +36,7 @@
 
 在「首页」、「灵感」、「生成流」都可以通过模态切换按钮进入「agent 模式」
 
-![](img/39e017b7a0c569782ec929502c98b099.png)
 
-![](img/7e7466d4546bb3086d0dada8e04db03d.png)
 
 ![](img/bdf726126ff6fa7aa0c4e1f7c3ef68fc.png)
 
@@ -66,7 +64,6 @@
 
 > 输入指令：做 12 张上海像素风图片，竖屏，然后用智能多帧串起来
 
-![](img/cb36d6f917c26b982e43cd27d4f70466.png)
 
 [Jimeng Aug 15 2025.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T9edbZU32oua9Rxg9e2cUv1VnSh)
 
@@ -145,7 +142,6 @@
 | **传入参考图↓** |  |  |  |
 | --- | --- | --- | --- |
 | **产物：** |  |  |  |
-| ![](img/2456625d7c260ff55487e89854973991.png) | ![](img/3c434f940b1f95697b30fa2612bc3512.png) | ![](img/5514304b864771b813b8900f63adaf24.png) | ![](img/9fd85f53f342e2a25637977c0bd2c8e5.png) |
 | ![](img/de8b32119fa826dafd52356f21639748.png) | ![](img/5a152fcd2f040797ebf90a6fe9205d62.png) | ![](img/2c6f567d44ccdcc6a658e3d16eb90618.png) | ![](img/89839d1ae9c9e5fa7a2982aa9c57f547.png) |
 
 ## 灵感融合
@@ -207,7 +203,6 @@
 | **得到故事大纲**：圣光降临（神权确立）→ 2. 暗影密语（阴谋滋生）→ 3. 神殿刺杀（危机爆发）→ 4. 凡间救赎（人性觉醒）→ 5. 预言石碑（真相揭露）→ 6. 熔岩锻剑（复仇准备）→ 7. 荆棘加冕（牺牲精神）→ 8. 星轨解读（命运抗争）→ 9. 刺客忏悔（善恶交织）→ 10. 审判日（阴谋败露）→ 1. 苦路攀登（救赎之旅）→ 12. 终极对决（光明暗影之战）→ 13. 新星陨落（神性牺牲）→ 14. 麦田转世（轮回开始）→ 15. 神殿修行（力量传承）→ 16. 幻境对峙（自我认知）→ 17. 龙宫取珠（命运转折）→ 18. 救赎之戒（宽恕与爱）→ 19. 星界藏书（智慧觉醒）→ 20. 圣泉重生（神性回归） |  |  |  |
 | --- | --- | --- | --- |
 | ![](img/f2c64befaa90a8da7ac4626e0c3e880b.png) | ![](img/71c492972424c7f88598ef595958bcda.png) | ![](img/1315ee15cdef2efdd54f386776398f57.png) | ![](img/09b910ad50108c6f8814be6c5c5e552b.png) |
-| ![](img/bb205d2ae24108c654f71a6b1c4543c0.png) | ![](img/a9f9fc02793e0cd9d62035e571bd218a.png) | ![](img/be5dcf5889561672e81a9c16325d2ee1.png) | ![](img/abfc9eee86114735cae10459d6d890cd.png) |
 | ![](img/26f65d810bb3a33023ab259b16f0ce60.png) | ![](img/683efad69a2bef23cb053cc01d48abe1.png) | ![](img/2e99715eb0cff32324fdf2efa58d058a.png) | ![](img/87091ef97c606a8bcd5fa6e3f9405755.png) |
 | ![](img/7b71917543cba94fbff3af4b52b80f12.png) | ![](img/6cd58b6b5882dff44a9e265f208b1acb.png) | ![](img/9b32cc25efd17ac4be839e059ed323fc.png) | ![](img/3a2b22ba2cdc7f6a8abc87b84cb81507.png) |
 
@@ -226,8 +221,6 @@
 | **传入参考图：** |  |  |  |
 | --- | --- | --- | --- |
 | **产物：** |  |  |  |
-| ![](img/b5cda8f2833f3b617fcfd2b3e424d033.png) | ![](img/f9db52c09dfdcffa91220a97ef1f49ec.png) | ![](img/fd49295987577ff0c45f6a0856fb5554.png) | ![](img/fe36a7416fd8fc96ce6102980b8174c6.png) |
-| ![](img/6f05fb61305dcaccb60521a05768787f.png) | ![](img/09615413094dd114f26a9f9f33c31e85.png) | ![](img/cbed8b9fd1c7f60f4d94afe1ed878c55.png) | ![](img/ee8ba17631d65d58f0b92723c12c5375.png) |
 | ![](img/4e6d9ac544dfa2aeeb65ef7f90762a56.png) | ![](img/ec38eeb6ef931e4eeab341c8920b80b5.png) |  |  |
 
 ## 批量改图
@@ -237,7 +230,6 @@
 | **传入参考图：** |  |  |  |
 | --- | --- | --- | --- |
 | **产物：** |  |  |  |
-| ![](img/3eb1c211a2acfd3841b29d2669088441.png) | ![](img/333886bc13452c124952ba14d127041c.png) | ![](img/e3f843fdf1072b4b6ef65a03eabf0572.png) | ![](img/03dfc4accf201eb0cc9815d06e6b0486.png) |
 | ![](img/b4c00952b9d5efa0598679661e24d708.png) | ![](img/3e274b27616c69bd90650f5567adc97c.png) | ![](img/59a00818268e332f03c19bc2b00b7b16.png) | ![](img/9546623dcef932610a310b1f66ab7738.png) |
 
 > **输入指令**：生成 8 张，把耳环换成不同样式的，底图人物不变
@@ -245,7 +237,6 @@
 | **传入参考图：** |  |  |  |
 | --- | --- | --- | --- |
 | **产物：** |  |  |  |
-| ![](img/a5db20679c0d119a9f344fff292e95e8.png) | ![](img/a7ee7c9022006b82f8b09acb2b648595.png) | ![](img/42e571a04b84e78c5ce65f38c3cbf352.png) | ![](img/cdcfb8cb35b2f0d3d719f0661e6f76f7.png) |
 | ![](img/661fe159c81832f58b85cfe630e10c76.png) | ![](img/f1b82ac9fd55c72b6cb4554e96942617.png) | ![](img/27addc7720a8025b9dad50c4981a85d8.png) | ![](img/50ebee9ab78de29a0098df4164fcdccc.png) |
 
 > **输入指令**：保持这个形象的肤色、头发、饰品不变，随机发挥你的创意生成不同的表情 8 张
@@ -253,7 +244,6 @@
 | **传入参考图：** |  |  |  |
 | --- | --- | --- | --- |
 | **产物：** |  |  |  |
-| ![](img/a0ec3edc886031abb2677d10b6280a47.png) | ![](img/f0260272ff7a89f34ea2d7f27087a233.png) | ![](img/7b24418c0b0259ab85cb3231ed824f80.png) | ![](img/1ce7c7fcf58187c63557199630df04fb.png) |
 | ![](img/61678d6ced922315972a6a55f1fcd2c5.png) | ![](img/e70c7817d6e3adf911ca717d1f173227.png) | ![](img/874f7aa487687097b5afa7c5d74a2979.png) | ![](img/8f562b4e7628b57edc01398eb6205cb1.png) |
 
 > **输入指令**：把图中文字改成 8 种不同的文案，保持原图文字样式
@@ -261,7 +251,6 @@
 | **传入参考图：** |  |  |  |
 | --- | --- | --- | --- |
 | **产物：** |  |  |  |
-| ![](img/652a8249bd6d8a1169f390a60d48f6ce.png) | ![](img/c8c2c423f087755c02642d2114288d90.png) | ![](img/4f57b6c055bbd916dc26f1f70cb973c8.png) | ![](img/dcd349d13b18895c5959ab243ba5436c.png) |
 | ![](img/467018fd4dd8cadedd54b43aa9e43bd5.png) | ![](img/dbe81221ea7de898afbaf6169eb69a5c.png) | ![](img/1342f5a55b1163c0fa59bfdd255105a7.png) | ![](img/02edc3d1d2d3ce26ca5ac1dbcc0bd5ab.png) |
 
 ## 批量生视频
@@ -278,7 +267,6 @@
 
 [jimeng-2025-07-13-3062-赛博朋克文字闪烁故障效果，背景流体波浪起伏，科技线条横向快速扫描.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X9Eeb62C7oy3N6xohfKcVpTCnng)
 
-![](img/da00163bb7ec2924cccb7734b2465169.png)
 
 [jimeng-2025-07-13-9587-水彩颜料逐渐晕染扩散，文字颜色缓慢变化，背景色块有轻微上下浮动.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PWh5bTtTVoyznCxDPHNcbbdunXf)
 
@@ -326,11 +314,8 @@
 
 > **输入指令**：帮我把四张图串成视频
 
-![](img/5190347a8664236d577a2d48f2a0978c.png)
 
-![](img/e1cc3481d383007e286dc5783fa36a58.png)
 
-![](img/2df4d47384f1deff7c44df4b00d8e93a.png)
 
 ![](img/c365e5276c89faa51bf279ca8fa275ee.png)
 
@@ -349,7 +334,6 @@
 
 ![](img/e96eb339da7d9c807f338c4c15bdfa4f.png)
 
-![](img/2439c43b737691a877cfe88c235c9710.png)
 
 ![](img/1ee2c6d446d84c61bbe2883e18c8e2b0.png)
 

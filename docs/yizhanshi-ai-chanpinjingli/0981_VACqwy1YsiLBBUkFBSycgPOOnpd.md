@@ -40,9 +40,7 @@
 
 放大看看
 
-![](img/9bf03ca64fdf6a181e9b2d446ad817e2.png)
 
-![](img/a47e27024518533f4e5192dd7c29b6d5.png)
 
 ![](img/9b8b470e176f103b25966b4d0aeba833.png)
 
@@ -52,9 +50,7 @@
 
 放大看看效果
 
-![](img/eae7c59206558a019aea43fa31bc12b3.png)
 
-![](img/d78c573d3500518fd55a8f0bd96cedfe.png)
 
 ![](img/19f35e9090b4c61c4d8d9ac525afcaba.png)
 
@@ -168,11 +164,8 @@ Lovart 不一样，因为它似乎自带了一个知识库的功能，每一步�
 
 ![](img/61825cb1f27d2d28175d9d83cf5455f4.png)
 
-![](img/bdd15cd3885e29e838aec7a0c326bd1f.png)
 
-![](img/c15e8cc878dce85e48a611d9b03d4f73.png)
 
-![](img/267d8741b0c7831545973c788202c8c6.png)
 
 ![](img/d4d4ad53bc9481424879cdf4aa2e1fe7.png)
 
@@ -304,9 +297,7 @@ Bittersweet, nostalgic, tender.
 
 ![](img/8056c79065401e3ad59c0aa76f4e3c8d.png)
 
-![](img/a02003921654b485a2c3be75d16f9367.png)
 
-![](img/b95bfeb0f2d77173936a565b2fad61bd.png)
 
 ![](img/abc3738dec66e23f0ab11055cd31fbf4.png)
 

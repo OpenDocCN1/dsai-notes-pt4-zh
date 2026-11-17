@@ -74,13 +74,10 @@ https://labs.google/fx
 
 #### Whisk 图像
 
-![](img/dc27bf225d2023c45e04ff2d9d335428.png)
 
-![](img/7b3eca499cf1516b464d57887bae46ff.png)
 
 右边可以提供三类参考图（图片数量可以增加），对生成效果进行控制
 
-![](img/bfb7ff75a47c19d760b1fad5f086a93c.png)
 
 ![](img/ce77ddcff906ea28ecc49775abb42a1c.png)
 
@@ -102,7 +99,6 @@ http://labs.google/experiments
 
 Google 实验室的最新 AI 工具，用户可探索并找到适合自身需求的 AI 产品。其中有些产品点击是申请页面，有的是独立页面，可以登录试用。部分产品由于地区限制无法登录。
 
-![](img/c46b20178fd09b8e00283d5700ecf927.png)
 
 这些是我浏览过的部分产品链接和摘要：
 
@@ -194,13 +190,11 @@ Gemini 目前排名仅次 ChatGPT， 的确它目前是我常用的模型之一�
 
 +   这是 Google AI Studio，下次会来研究下它。
 
-![](img/e0b34b16d1038295079925cd5b3d1368.png)
 
 +   这是 NotebookLM，AI 驱动的知识管理
 
 去年上线我就试用过，今年其实还没怎么用。在一段对 Google Labs 副总裁的采访中，我才首次了解到这个产品背后的故事。下次专门来研究这个产品时，一起写进去。
 
-![](img/18b001d0858287cdcec3dae64b9c3438.png)
 
 +   这是 Gemini，Nano-banana 图像生成近期热度很高
 
@@ -266,7 +260,6 @@ Gemini 目前排名仅次 ChatGPT， 的确它目前是我常用的模型之一�
 
 ##### A-2 Whisk（google labs）提供了狐狸图片和折纸图片
 
-![](img/a683a66524359a30c5fe68b3124c48ff.png)
 
 ##### A-3 ImageFX( google labs)
 

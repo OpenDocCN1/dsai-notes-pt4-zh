@@ -246,13 +246,9 @@ github：https://github.com/xmgcode/xmgai-like
 
 ![](img/b8fa1ef6265e79e364691c3e2a936363.png)
 
-![](img/93f8cf528a139f134833315c75d9497f.png)
 
-![](img/a8e7ff2eff07e6bf383dac74573aa873.png)
 
-![](img/d514a22195b5cda7006e8fb95762216d.png)
 
-![](img/645cbb39a3106695dcc09603e7b7b9b4.png)
 
 ![](img/cad279505f81050f05ed457fcf7ee984.png)
 

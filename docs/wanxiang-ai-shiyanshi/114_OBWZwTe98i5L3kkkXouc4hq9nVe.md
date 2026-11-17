@@ -52,7 +52,6 @@
 
 ![](img/fb4dad5fbcd617d44f3d754730b04165.png)
 
-![](img/8d008578af768f3a0b4c76ed735314ac.png)
 
 ![](img/cab3cd0b53426eb68abfca1ce4883f20.png)
 
@@ -164,9 +163,7 @@
 
 ![](img/52ac31085b81381177ce37a5dc4922f9.png)
 
-![](img/6f1540ca8cfe1470e65a4b0c7d4c0113.png)
 
-![](img/947a77a3dcc7714c0256b456423ec341.png)
 
 ![](img/4c31c1b5c4acd3a3b916ce1834a53600.png)
 
@@ -174,17 +171,11 @@
 
 > 萌趣动物玩偶套装，玩具位于画面正中上方，底色为统一暖橘卡通平面背景，色调以饱和黄色与巧克力棕为主导，融合红心元素作为亮点点缀，风格定位为童趣卡通，玩具促销海报创作，营造欢乐无忧的节日氛围，高品质拍摄效果，运用卡通主题视觉表现手法，顶部区域专注展示产品形象，底部配置醒目宣传语"全世界最可爱的搭子来了！"，副标题"限时上架 一起回到童年"，点缀文字"软萌贴贴·温暖不掉线"，彰显商品品质"萌物大赏年度推荐"，英文标识"CUDDLE FRIENDS FOREVER TOGETHER"，文字采用卡通涂鸦字体排列下方，整体画面活泼生动，商品突出，童趣风格极致体现亲和视觉冲击，设计输出须严格符合网格系统布局规范，确保元素对齐、间距统一、比例协调。
 
-![](img/70705bce6402dc91fff4184b78b0f902.png)
 
-![](img/b4d1e84ab43cd9278002c7814772f4ba.png)
 
-![](img/b272547d732ff573c308271eaedb95e7.png)
 
-![](img/4f460ca1c1028f72a79742fa2bfa4591.png)
 
-![](img/e32c04e8e9a0bf53c64817468556f627.png)
 
-![](img/394291641ad2c5d3de6f026ba2620c30.png)
 
 ![](img/0f5f87c6703f94b2546d0d1466ef2abc.png)
 
@@ -208,7 +199,6 @@
 
 ![](img/cc9402b6ffa9281443fb9439e22cc78f.png)
 
-![](img/af0f94ea1a258db9ff167fd6c720f6c2.png)
 
 ![](img/78e2a6a1b5210d575c5935ffc3d762bf.png)
 
@@ -296,7 +286,6 @@
 
 ![](img/7cf9ffd8e6503fd4700acdc9591adc3e.png)
 
-![](img/7369e9d9b45a5e01ceabcb3ecf3848fc.png)
 
 ![](img/a298bff743ecc24fce60eceb43c47c18.png)
 
@@ -312,7 +301,6 @@
 
 # **免冠照换背景：**
 
-![](img/cc30922660174674be9c987be7c942fb.png)
 
 ![](img/1736daf4cae071983526311feb2ab9b9.png)
 
@@ -332,9 +320,7 @@
 
 ![](img/94e79b270cfd7da243134dd5174bee14.png)
 
-![](img/195c6e4577e9c7354c422a1283da5b28.png)
 
-![](img/85ee8c614cbf2fa32a2b42883f0421e8.png)
 
 ![](img/cef9a36f7296c87330cef9146dd1c345.png)
 

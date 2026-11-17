@@ -102,7 +102,6 @@ async def main(args: Args) -&gt; Output:
 
 ### 其他节点
 
-![](img/31e11a2211a656e15d5e7185c0b4167a.png)
 
 统计数据总量
 
@@ -159,7 +158,6 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 搜狐热闻：https://www.coze.cn/store/plugin/7343894357063385100
 
-![](img/d612b693832a77cd5d9cf57b935781da.png)
 
 ```
 async def main(args: Args) -&gt; Output:
@@ -215,7 +213,6 @@ async def main(args: Args) -&gt; Output:
 
 联网问答（扣子搜索）：https://www.coze.cn/store/plugin/7380276977141465088
 
-![](img/7aae7cdcdff5010397cb8ee6c743b1ac.png)
 
 ```
 async def main(args: Args) -&gt; Output:
@@ -254,7 +251,6 @@ async def main(args: Args) -&gt; Output:
 
 头条搜索：https://www.coze.cn/store/plugin/7328315124756807717
 
-![](img/42430ace2ac0119474b26f224b5e0da1.png)
 
 ```
 async def main(args: Args) -&gt; Output:
@@ -298,19 +294,16 @@ async def main(args: Args) -&gt; Output:
 
 ### 📕搜索
 
-![](img/4566899863c1b76e1c88003e2687b8a2.png)
 
 📕插件——xhs_search_note工具：https://www.coze.cn/store/plugin/7413263498387423242
 
 > 根据【关键词】搜索【📕笔记】
 
-![](img/95b91940686686629b5eadda8eca68c4.png)
 
 📕笔记提取：https://www.coze.cn/store/plugin/7426236806493995062
 
 > 获取📕笔记信息添加到我的智能体
 
-![](img/98bee0453f63c92b294544e40d7f6c13.png)
 
 批处理：
 
@@ -344,21 +337,17 @@ async def main(args: Args) -&gt; Output:
 
 ### 热榜检索
 
-![](img/3928692fe364b22c807b43f1502af9d3.png)
 
 热搜榜聚合：https://www.coze.cn/store/plugin/7351343435422433280
 
-![](img/7530d51d2139ae3dbd5e9c0e696916b9.png)
 
 筛选知乎链接
 
-![](img/a2129195ac39d2cb540aff290f84ec7a.png)
 
 是否与关键词相关
 
 > 大模型节点
 
-![](img/899c3c0688c1a41ba54372bb7b0a7232.png)
 
 ```
 # 角色
@@ -385,11 +374,9 @@ async def main(args: Args) -&gt; Output:
 
 判断是否相关输出
 
-![](img/da6e33ea7ca975195c6ba06cb2368910.png)
 
 格式化
 
-![](img/7a92a1490ac2886a904fea4032c9789a.png)
 
 ```
 async def main(args: Args) -&gt; Output:

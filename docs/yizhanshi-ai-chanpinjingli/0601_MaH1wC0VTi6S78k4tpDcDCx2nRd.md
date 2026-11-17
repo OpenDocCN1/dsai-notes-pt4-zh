@@ -847,7 +847,6 @@ im:message,im:message.group_at_msg,im:message.group_at_msg:readonly,im:message.p
 
 同时支持 dall-e-3 和 midjourney
 
-![](img/1958cbfbf756f8c87397517157bd94dd.png)
 
 ##### 3.文本总结
 

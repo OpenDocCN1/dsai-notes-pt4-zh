@@ -422,7 +422,6 @@ curl http://localhost:8180/v1/models
 
 ## 功能展示与效果
 
-![](img/1960aac7cb6707e5474b0d59389df3cf.png)
 
 ![](img/587bca30c6632d45c34dace84bf58ac8.png)
 

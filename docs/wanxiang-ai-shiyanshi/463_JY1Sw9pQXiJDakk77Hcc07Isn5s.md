@@ -44,19 +44,14 @@
 
 •  打开脉脉 app ，手机号注册后 ，填写个人信息
 
-![](img/49f517d05890d29782de929fcb7252ff.png)
 
-![](img/83dbc7d88655a7e578b9e1a1d52c97c7.png)
 
-![](img/3d17213a66da75c38f0cb6861725421c.png)
 
-![](img/65625187009b5e829b33d28623f72260.png)
 
 请与站外名称保持一致
 
 •  注册后 ，点击右下方我的 ，下滑找到身份认证 ，选择第一个 ，点击认证后先进行实名认证
 
-![](img/480b3406fb5e2d25564b9e39ca5b4be0.png)
 
 ![](img/b8daf8b10e03e9da89dac09acbf5b963.png)
 
@@ -70,31 +65,20 @@
 
 1.打开脉脉 app 后左下角点击 【我】 ，下滑找到并点开钱包 ，点击余额 ，点击活动红包 ，点击提现跳转到绑定银行卡页面
 
-![](img/94d6c1132e1a1592acf2a7181aa29f2e.png)
 
-![](img/5223fd01354afa930178fc91d60b7cc4.png)
 
-![](img/556b99243e011abad0b9505851ca3fdc.png)
 
-![](img/0cbf35127d787ff2f4968ece8eed1820.png)
 
 2.绑定一张银行卡 ，根据步骤操作即可
 
-![](img/d2057f575f643fb7d8ab5cf10bc30b61.png)
 
-![](img/241aa84115433c0e70ba4a9368728035.png)
 
-![](img/0fe190f09ebf8324656b6877ef57851a.png)
 
-![](img/9164d21ae4d4406147fa7ed9c29a34b8.png)
 
 ##
 
-![](img/dd98e2f9b459208d050189129f452b38.png)
 
-![](img/5e109d5b1c08949473a7c58e412e98b2.png)
 
-![](img/32cd2b6502ec778bc1a654b3441df468.png)
 
 ![](img/4263ef504a78e7dc110386eb8ff55033.png)
 

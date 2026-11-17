@@ -80,7 +80,6 @@ Genie 3，通用型世界模型，能够生成前所未有的多样化交互环�
 
 3D游戏设定
 
-![](img/922c6843b9ef97665e4ef8c448615171.png)
 
 [genie_modelling_animation_fiction_1_cTvKl3P.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XknTbx2iqoA5x8x40KRcnDxPnxc)
 
@@ -91,7 +90,6 @@ Prompt: Walking on a pavement in Florida next  a two-lane road from one side and
 提示:在佛罗里达州的人行道上行走，一边是双向车道，另一边是海洋，正值即将来临的飓风，强风和波浪拍打着路面。代理人的左侧有一道栏杆，将他们与海洋隔开。道路沿着海岸线延伸，代理人前方可见一座短桥。波浪接连不断地拍打着栏杆，涌上路面。棕树在风中弯曲。大雨倾盆，代理人穿着雨衣。真实世界，第一人称。
 ```
 
-![](img/e407b0e7721a8fe8eed5133a0b41e864.png)
 
 [genie_modelling_physical_properties_3_I8KO3kl.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NdnBbkb2Som22ExCOuScrQVWnQh)
 
@@ -99,7 +97,6 @@ Prompt: Walking on a pavement in Florida next  a two-lane road from one side and
 
 genie3 出了能够设定好物理世界规律，同时能够有记忆功能，就是在空间的某处我们做了特定的标记，回头过来看我们产生标记还在，而不会被抹除。玩过3D游戏的朋友都知道，在环境里面做标记一般都是会几秒内小时的，游戏只是做了一个痕迹效果的展示，但是并不会保留。而且数据墙路过之后就会消失，重新渲染。
 
-![](img/96e01360297cc336fd1a068c76a3df1a.png)
 
 [genie_environmental_consistency_1_iNVUBuv.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JLSCb8TfTozVELxuY5dcyPjVnqe)
 

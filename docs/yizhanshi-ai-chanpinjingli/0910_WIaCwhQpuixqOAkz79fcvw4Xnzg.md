@@ -28,7 +28,6 @@
 
 ### 假如书籍会说话
 
-![](img/810190f3c2439df2441585ab0713e49a.png)
 
 [a661d9cf-ea7b-4c8c-bcb4-b02895483ab5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AVYqb1wYVouqgmxh5u7cc4qGnAd)
 

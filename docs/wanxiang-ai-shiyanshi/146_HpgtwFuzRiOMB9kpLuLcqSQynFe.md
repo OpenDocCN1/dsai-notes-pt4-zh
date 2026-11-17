@@ -32,11 +32,9 @@
 
 全新对话式创作
 
-![](img/2930cf2552ede4a537caea206d1953db.png)
 
 连续创作
 
-![](img/97636e587c0f4adfa3412426e275049a.png)
 
 局部修改
 
@@ -98,11 +96,9 @@
 
 ![](img/4557445a290eb02fdd7878503b1c7106.png)
 
-![](img/6e227f8f0cac64018b18859b7bf865a8.png)
 
 ![](img/2986b12980993f75b199562bfd389774.png)
 
-![](img/0e521242e0466305e72528542c85e717.png)
 
 ![](img/40ab19fb54dc8f3559f63c0c087a506c.png)
 
@@ -126,25 +122,21 @@
 
 > 将画面改为冷色调，让画面充满雨后的氛围，朦胧雾气环绕
 
-![](img/e44f7baf3792428c98409defc65e622b.png)
 
 ![](img/31d30c4cff241317a0bbfb3157491423.png)
 
 > 改变背景改成下雪天的雪地里，冬天白天，一束光打进来，头发丝在发光，有一点雪落在头上和肩上，逆光照亮发丝， 丁达尔效应
 
-![](img/71b8e4186747bb5a025d03c64f3dccdd.png)
 
 ![](img/49023be718fea19e2fd0ed86cfefadc7.png)
 
 > 不改变人物主体的情况上，增加王家卫风格滤镜；暖色光氛围感
 
-![](img/ba3c6a7df4a30a17aafd195567fbac55.png)
 
 ![](img/2f84076bc4b6ef5d630f8732fe56075f.png)
 
 > 添加梦幻朦胧感，环境变为晴天人物周围有朦胧的蝴蝶和花瓣飞舞，还有柔和的光线笼罩，仙女下凡既视感。
 
-![](img/d26a9bfd9ea6dbd4e2ebbb7d4050b8f9.png)
 
 ![](img/0c2da207144e7b7f278e69ebafe65f0a.png)
 
@@ -158,7 +150,6 @@
 
 ![](img/94a1637e67f285fa67bea9dc2c800b7e.png)
 
-![](img/81d7920a87b78911609e8435f4df30d2.png)
 
 ![](img/c3c8b95d984039188ea099e44926cd31.png)
 
@@ -168,9 +159,7 @@
 
 ![](img/643964ddee14aca6300935f4e44f87f1.png)
 
-![](img/def3c2fe0a59eb6434e0fea1c249e1e5.png)
 
-![](img/4a3b24830bba2ebe5366be4d3d826af3.png)
 
 ![](img/07f1ac117c55d3596b254bd62f0ff5ad.png)
 
@@ -235,17 +224,11 @@
 
 ![](img/d240200fe9955f57931baf2cf455efcd.png)
 
-![](img/689d8bcabebf39981be8d74b94964b86.png)
 
-![](img/95d5c8ed6c4cc304e9e07eaabc6dc619.png)
 
-![](img/13d7a464c6a2e3d13825744e8264b7fc.png)
 
-![](img/8f43547e33021c21c061d66095260d44.png)
 
-![](img/1f6dffc15fc59f901442cb903aa67f59.png)
 
-![](img/650555fd1501352c6aa8e73a9c2af105.png)
 
 ![](img/9e2eaa2801d41b24d668e1791065b727.png)
 
@@ -275,9 +258,7 @@
 
 ![](img/5f0e45abc1fa64aa39463f309b74fe30.png)
 
-![](img/136573e4acf83fcbbb62ea1eaadd914e.png)
 
-![](img/3f055fd41c5ed3bc0a2907647ab06460.png)
 
 ![](img/388f11383110f4fb9dc887d9cb1b282f.png)
 
@@ -297,11 +278,8 @@
 
 ![](img/4ee4bf709134e6c85b8569a3c812e05c.png)
 
-![](img/11f8c9067a286ea3571b9845582a86d1.png)
 
-![](img/a72d6f6e9f2d2dc17e390ca0423580b0.png)
 
-![](img/5a8a543d6680c1b3ab5a5c9d1b7f672c.png)
 
 ![](img/01789f816d5e98e2ffa52438306283e6.png)
 
@@ -309,9 +287,7 @@
 
 > 指令：不改变人物主题，将图中的人物衣服变成深棕色和墨绿色
 
-![](img/55248bf4e4dff642886147fda5de1613.png)
 
-![](img/7ddd68f3054e8d955b69a01aee40cee4.png)
 
 ![](img/d75cac5d1aca5521e5242545ef6c024f.png)
 
@@ -340,11 +316,9 @@
 
 ![](img/c38464387ea0b8f25a170534e4cb96e2.png)
 
-![](img/f57292d3ee3eb2678a07fbdaff5b1d1e.png)
 
 ![](img/d142886a1f3f32acb9d5f88322b26fe0.png)
 
-![](img/2f18d224ec1ca9358e9686503ff9b33f.png)
 
 ![](img/47cc47d3e7f1e25f07ca9ea2d5435966.png)
 
@@ -410,13 +384,9 @@
 
 > 指令：帮我出4张类似的咖啡宣传海报，参考海报主体构图和设计风格；并且在海报上写不同的格言
 
-![](img/68bf3dcbf79145ca9c07d1c131431a7c.png)
 
-![](img/07c8c05eb751bdbd64ffd9b35b5ae280.png)
 
-![](img/81640fcee574a6d9ad6d3ad7ad2a7da3.png)
 
-![](img/3169df9bc59c45bc614ad857d49d3a4f.png)
 
 ![](img/88d6ebc336d61c16a67e0ffdc53e7094.png)
 
@@ -440,9 +410,7 @@
 
 ![](img/02f684e3a0301586cc9c33b12f8e4304.png)
 
-![](img/3046e3f35f06f5f36409f57066f6bc8c.png)
 
-![](img/f3a41bd293048175d6c5df31f0090bab.png)
 
 ![](img/d944aa80271635912d2305e70eabdab0.png)
 
@@ -454,7 +422,6 @@
 
 ![](img/0aca6ea91b7716b051c20918bbd0afdb.png)
 
-![](img/eaab4434eb6bbbefd90906625689b182.png)
 
 ![](img/afdd9d879e4d507cddd2f8d0169a012a.png)
 
@@ -478,17 +445,12 @@
 
 > 指令：帮我做8张漫画，讲述小李五一计划好去三亚旅游，却被领导叫去加班的故事；请保持画面中每个人物的一致性
 
-![](img/28f4d09b32fcca81f595d23bf6f31215.png)
 
-![](img/5aa7663f383c8ddf7a39600d5679c051.png)
 
-![](img/a2f659a6aa1681e86f78e80c802216f0.png)
 
-![](img/25bb9950ee9ab8974772b7ec7f3fda18.png)
 
 ![](img/4859d61edcb8060f4217bb34c84aa099.png)
 
-![](img/94458393c668da478e1312c84b69738d.png)
 
 ![](img/944a5f37e35bdd65d19832d45f283a92.png)
 
@@ -500,7 +462,6 @@
 
 > 指令：10分钟后这里会发生什么？生成与参考图同画风、同尺寸的场景图
 
-![](img/c30b82b914a95e39396ae07bcc9d05ed.png)
 
 ![](img/f59d028cfea50902a7f523e0ff2df23b.png)
 
@@ -526,7 +487,6 @@
 
 ![](img/8d92dcdba089cc41231d2add241b3496.png)
 
-![](img/d95f267e9110a3507f7be6efe15fe21c.png)
 
 ![](img/eb80039fba9377ceb7915f6b905e7ed9.png)
 

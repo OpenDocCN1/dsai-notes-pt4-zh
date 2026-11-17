@@ -70,7 +70,6 @@
 
 +   **Claude**
 
-![](img/e67f058e9e7ea4b7a01ed61ded0daaa2.png)
 
 +   **o1-mini**
 
@@ -644,7 +643,6 @@ in 72002ms
 
 +   失败 1 次：失败原因：Token 超了
 
-![](img/140e8363288397dc6b441062328a639f.png)
 
 +   **o1-mini：**
 

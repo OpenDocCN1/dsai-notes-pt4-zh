@@ -221,7 +221,6 @@ print(format_transcript($user_input))
 
 ![](img/7412a8a403b8008a6b9d40cc53e780d5.png)
 
-![](img/783df4e97cf39a619552b666f8b669d7.png)
 
 ![](img/b2d2f61fe96cd966b63a5db9b633e805.png)
 

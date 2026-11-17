@@ -17,11 +17,7 @@
 |  | 688 | **雅鸭 —— 雅思作文小助手** | 雅鸭Team | **雅鸭**** ****IELTSDuck**** **是一款基于 [InternLM2](https://github.com/InternLM/InternLM.git) 进行 QLoRA 微调，专为雅思考生（主要针对初级与中级水平学习者）开发的创新 LLMs 辅导工具，旨在提升学生的雅思写作能力。 | ![](img/0b4871e93a266f68c1695c0e349d58d8.png) | ![](img/d0214831e4aa347a0c0d14bfc15180a5.png) | https://github.com/neverbiasu/IELTSDuck | https://www.bilibili.com/video/BV1Xf421X7K | https://openxlab.org.cn/apps/detail/Fayche/IELTSDuck |  | 从未有如此简单之作文 |
 |  | 767 | 医学文献综述助手 (又名 不想看文献) | 不想看文献的小杨 | 这是一款基于 RAG 的医学文献综述小工具。用户可配置本地或远程大语言模型，通过关键词或 PMID 搜索 PubMed，上传 PDF 文件，并创建和管理文献数据库。通过聚类算法对文本分块进行聚类，用更少的算力生成对数据库内容的整体认识。最后工具可以基于用户提问生成带有参考文献的综述文本。旨在帮助科研人员高效检索、管理、阅读和总结文献。 | ![](img/98dda4a138b07b55ba7e25b9b31696c2.png) | ![](img/08be3dfa8866ed7b1cbdc3c1418189b9.png) | https://github.com/jabberwockyang/MedicalReviewAgent | https://www.bilibili.com/video/BV1df421X7Mk/ | https://huggingface.co/spaces/Yijun-Yang/ReadReview |  | 不想看文献😛 |
 |  | 700 | 狐言乱语-EssayAssistant论文小助手 | What does the fox say? | 狐言乱语论文小助手旨在**解决论文的找、读、用等难题**，项目分为**狐聊、狐说、狐找、狐写**四个模块，结合大模型帮助用户**快速掌握论文概况**，并可**结合单页论文细读、精读****相关内容。**用户也可以通过关键词搜索遍览**大量论文生成本地**知识库，交由大**模型推荐相关论文。**亦可以上传本地论文组成知识库，由大模型生成论文综述。 |  | ![](img/3828c89a2610cd133908fd5807b882ab.png) | https://github.com//BigWhiteFox/EssayAssistant | https://www.bilibili.com/video/BV1NRVjeEECF/?spm_id_from=333.999.0.0 |  |  | 不如问一问神奇大狐狸吧 |
-|  | 675 | **煤矿安全大模型———矿途智护者** | A100换你AD钙奶 | 本项目利用包括煤矿历史事故案例、事故处理报告、安全操作规程、规章制度、技术文档以及煤矿从业人员入职考试题库等在内的丰富数据资源，通过微调 InternLM2 模型，构建出一个专门针对煤矿事故和煤矿安全知识智能问答的煤矿安全大模型。为煤矿企业负责人、安全管理人员、矿工提供一个精确、迅速的信息查询、学习与决策支持平台。 | ![](img/c234f9e547ea36e0f335afa3b7719067.png) | ![](img/375acd7a3353954f2ac19ef15b669200.png) | https://github.com/yaosenJ/CoalQA | https://www.bilibili.com/video/BV1k7421R7qc | https://openxlab.org.cn/apps/detail/milowang/CoalQAv1 |  | 矿途智护者，守护每一次地下的平安旅程 |
-|  | 658 | 智能营销助手 | AI-Labs | 获客、活客、留客是电商行业的三大难题，谁拥有跟客户最佳的沟通方式，谁就拥有客户。 | ![](img/868a6d2cd6c94084d86ecfa89a37c7b1.png) | ![](img/3564c2e560292c3979563c9d3649c910.png) | [h](https://github.com/wux-labs/OpenXLab-IntelligentSalesAssistant)ttps://github.com/wux-labs/OpenXLab-IntelligentSalesAssistant | https://www.bilibili.com/video/BV1W1421y7hW | [h](https://openxlab.org.cn/apps/detail/AI-Labs/IntelligentSalesAssistant)ttps://openxlab.org.cn/apps/detail/AI-Labs/IntelligentSalesAssistant |  | 智慧营销， |
-|  | 730 | 千面英雄 | 幻影旅团 | 偶像、榜样的力量是无穷的，让人敢想敢干，克服困难，不放弃。 千面英雄，利用时代最新的大模型技术，基于书生浦语大模型生态（基于 InternLM-7B 模型，利用 XTuner 微调，LMDeploy 部署），提供对话的形式，基于用户的价值观、兴趣、想要的成就、成长经历，个性化地推荐最契合用户的英雄偶像。让活生生的人和经历激励你，让你不怕摔倒，敢想，敢干的同时也能深刻意识到世界的复杂和交换成功所要付出的代价。 | ![](img/9e690635a29d2fc18f92cdb605ebc4cf.png) |  | https://github.com/Dimen61/face-hero | https://www.bilibili.com/video/BV127421R7Lv/ |  |  | 千面英雄，你的英雄与众不同 |
 |  | 701 | layout_magic_llava ——基于类llava架构多模态大模型的法律证据材料智能处理 | 代码魔法师 | 本项目主要基于以聊天截图证据为核心的法律诉讼及非诉讼案件的自动化处理场景，核心技术在于使用 XTuner训练 llava 架构模型，其中 llm 为垂直领域适配的 InternLM2 系列模型，该场景下 internvl 表现优秀，技术方案中亦有采用 internvl 预训练权重及数据集的考量。 |  | 注：截止信息录入之日，v0.5版本尚未支持多图推理，多图推理为v2版本计划 | https://github.com/ValeriaWong/layoutocr_magic_llava | https://www.bilibili.com/video/BV12eGpewEpj/ | [ht](https://openxlab.org.cn/apps/detail/ValeriaWong/layout_magic_llava_v0.5#basic-information)tps://openxlab.org.cn/apps/detail/ValeriaWong/layout_magic_llava_v0.5#basic-information |  | Gaining insight into the truth |
-|  | 761 | 业务流程生成助手 | 周木炎 | 业务流程（Business Process，BP）是为实现目标而使用的可重复的一组步骤。本项目以生成 BPMN 格式的业务流程为目标，以对地观测卫星的业务流程为背景，构建了相应的BP数据集，利用 InternLM2-chat-7B 作为基座模型，XTuner库进行 lora 微调，获得微调后的模型。最后生成的 BPMN 文件基本可以满足用户的需求，使得普通用户可以通过自然语言描述模型。 | ![](img/3952696eb3adf277249788949ef0f02f.png) |  | https://gitee.com/zhou-muyan/bpgen.git | https://www.bilibili.com/video/BV1oFVpeEEuc/ |  |  | 让业务流程构建从此变得简单 |
 |  | 677 | smartPlanter智能花盆 | 不挖野菜 | 一个集智能养护与互动娱乐于一体的智能花盆。 | ![](img/776f7e0e759dcf430ffcb54331dce954.png) |  | **https://github.com/Luch**en-0420/smartPlanter | https://www.bilibili.com/video/BV1M4V7exEf4/ | https://openxlab.org.cn/apps/detail/test001/test_hua_pen |  | 不挖野菜 |
 |  | 758 | 医疗助手 | 我是白菜 | 本项目旨在开发一个基于茴香豆 RAG 框架和 InternLM2-7B 大模型的医疗助手，帮助患者和医生了解疾病信息和诊断流程。目标是使患者能够提前了解疾病信息，减少恐惧，并提高医生的诊断效率。 | ![](img/59f0b89e6d2db9fcfca378195a2fa885.png) |  | **https://github.com/ai**zhweiwei/super-agent | ** ****https://www.bilibili.com**/video/BV1EAVLePELH/ |  |  | 医疗助手在手，谈病不在恐惧 |
 |  | 760 | 罪恶克星-法律大模型 | YueTan | 罪恶克星是一个融合法律问答与审计助手功能的创新项目。通过推动法律技术的进步，罪恶克星希望在助力依法治国的道路上迈出坚实一步，为建设法治社会贡献力量。 | ![](img/835fcf6c03e561ee3115a8f0f2692019.png) | +   法律咨询 | https://github.com/yuetan1988/lawer-llm | https://www.bilibili.com/video/BV1zNV7e6E5n |  |  | 其实，我还是一名律师 |
@@ -467,11 +463,9 @@ https://openxlab.org.cn/apps/detail/Nobody-ML/Magic_LLaVA_test
 
 1.  另有中型种植柜，实现蔬菜水果自由
 
-![](img/426df1d0a776439b84fd02cd170c5a3b.png)
 
 矮株番茄
 
-![](img/95ec4ad03b078d670f514490418a6d35.png)
 
 黄瓜苗
 

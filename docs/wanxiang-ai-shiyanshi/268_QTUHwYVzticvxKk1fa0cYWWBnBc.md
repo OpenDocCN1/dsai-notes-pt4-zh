@@ -26,11 +26,9 @@ Cherry Studio 是一款国产开源的多模型 AI 桌面客户端，被很多�
 
 下载好后选择任何人安装，下一步，需要权限点确定。
 
-![](img/fc17201adde045f3a29e62cb46ff4704.png)
 
 然后选择一个安装位置，下一步。
 
-![](img/3cebf4576b2be552d3ad1d08172809a6.png)
 
 运行即可。
 
@@ -40,7 +38,6 @@ Cherry Studio 是一款国产开源的多模型 AI 桌面客户端，被很多�
 
 然后我们打开 cherrystudio，进入右上角这个设置位置
 
-![](img/bc0fcd1559539620d8eb1929bdb94ea7.png)
 
 这里我们输入 openrouter
 
@@ -56,7 +53,6 @@ https://openrouter.ai/
 
 然后咱们来到 charrystudio，先输入 openrouter 的密钥
 
-![](img/032b6dc83962a7e4bf92c273a1565e09.png)
 
 然后右边模型滑到最下，点击添加
 
@@ -64,21 +60,17 @@ https://openrouter.ai/
 
 这里 将这个免费模型名称粘贴进去： stepfun/step-3.5-flash:free
 
-![](img/d136f46e8092a80c46ecc45a85d5a336.png)
 
 接着来到首页，选择阶跃模型。
 
-![](img/179b1e3ddbe524c9c8a611f0a1d2037e.png)
 
 测试一下，配置通过～
 
-![](img/3920a7a00a964a9fa9528c74a94bfc03.png)
 
 # **三、OpenClaw 的配置**
 
 大家点击上面加号找到 OpenClaw 虾虾
 
-![](img/f2039b5a435cec8e77456bfe698dfa4a.png)
 
 点击安装 OpenClaw 即可
 

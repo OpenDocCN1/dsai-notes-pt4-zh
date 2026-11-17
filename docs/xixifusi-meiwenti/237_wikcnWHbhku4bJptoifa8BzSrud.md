@@ -1222,7 +1222,6 @@ H停机
 
 这样的函数，我们称之为递归函数/可计算函数
 
-![](img/882a799ed493ce8399f3ba3175c1b35b.png)
 
 C是copy manchine
 

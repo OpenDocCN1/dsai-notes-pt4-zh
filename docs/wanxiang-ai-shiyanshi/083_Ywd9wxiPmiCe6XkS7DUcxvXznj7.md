@@ -197,9 +197,7 @@ ng_deepnegative_v1_75t,(badhandv4:1.2),(worst quality:2),(low quality:2),(normal
 
 最后附上2张二维码：
 
-![](img/f14811ef5410e731d9cfc44f1dd7683f.png)
 
-![](img/61bd366522cd7f9edb09ce7272db0264.png)
 
 ![](img/f44f00d5f3e5b283b0200e300826a3c8.png)
 

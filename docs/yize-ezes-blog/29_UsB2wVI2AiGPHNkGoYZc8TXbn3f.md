@@ -210,9 +210,7 @@ Kimi K2 有审美了，代码生成任务也挺稳定。
 
 然后自主使用 Claude Code 内封装的工具，对完整的项目内容进行查找、分析，并对代码进行修改编写：
 
-![](img/7f3cbf80c18f443c6ae3645b3528be24.png)
 
-![](img/219969f4256ac9f23e40234d4d70589f.png)
 
 > ……Kimi，你为什么用 Claude 的工具这么熟练啊？总感觉有种 Claude 被 Kimi NTR 的感觉
 

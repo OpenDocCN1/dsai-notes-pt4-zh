@@ -58,47 +58,36 @@ Coze开源地址：https://github.com/coze-dev/coze-studio
 
 https://www.aliyun.com/product/ecs
 
-![](img/62f438ff3e494ddb505370c246e3d890.png)
 
 找到**产品**中的**云服务器ECS**
 
-![](img/8480ba68346e8ab09bbfaa21c084b4e5.png)
 
 选择“**按量付费**”、“**新加坡**”
 
-![](img/3b0ffadb4885e9aaa95b2351e61d9465.png)
 
 网络及可用区选择“**默认**”
 
-![](img/7f379a23ce93384a2417f69fd417ecdc.png)
 
 （可自行优化）选择x86计算中的**2vCPU**、**4.0GiB**
 
-![](img/f006c232bd1789fffda25ac8a89abc1f.png)
 
 系统选择**Ubuntu**，同时在下面的拓展程序选择**Ducker社区版**
 
-![](img/252e68e32d4c0717c0c9a34fecd51a16.png)
 
 在网络和安全组的带宽峰值调到**100Mbps**
 
-![](img/da03eb162ee06346c82b6094e78ec557.png)
 
 登录密码，我建议直接使用“登录密码”，快速一点，有安全需求的建议密钥对
 
-![](img/924b5d1c39629d6c618985f9f6b93038.png)
 
 检查无误之后，“**确认下单**”
 
-![](img/76142ef2c8be8b1420fb854d0a4384e6.png)
 
 跳转充值100元，**后面可以退**
 
-![](img/a91b6f01201a4bc9e60b5a96f27c933a.png)
 
 等待跳转，点击“**远程连接**”
 
-![](img/6fe77efb00d234171ab74de2968c2d18.png)
 
 点击“**立即登录**”
 
@@ -106,11 +95,9 @@ https://www.aliyun.com/product/ecs
 
 建议选择“**终端连接**”
 
-![](img/698ef5c3a83314a95474bdd4b9bfbfc6.png)
 
 等待进入这个页面
 
-![](img/a09d223c6937a2b7eb760297a2a94679.png)
 
 ## 在云服务上部署[coze-studio](https://github.com/coze-dev/coze-studio/tree/main)
 
@@ -128,7 +115,6 @@ docker --version
 docker-compose --version
 ```
 
-![](img/099e9946f9259c589a1c6b590f437fa8.png)
 
 下面是运行的过程
 
@@ -145,7 +131,6 @@ git clone https://github.com/coze-dev/coze-studio.git
 cd coze-studio
 ```
 
-![](img/b1978be24277532c58b341cf569393bc.png)
 
 ### 配置模型（以火山方舟 doubao-seed-1.6 为例）
 
@@ -169,19 +154,14 @@ vim backend/conf/model/ark_doubao-seed-1.6.yaml
 
 1.  meta.conn_config.model: 在线模型服务的 [model ID，在本示例中](https://www.volcengine.com/docs/82379/1099522)为火山方舟 doubao-seed-1.6 模型接入点的 Endpoint ID，获取方式可参考获取 Endpoint ID。
 
-![](img/86e3639b4806f70ba6c36c548e96ee04.png)
 
-![](img/f6ebf8ebf0ae6e4c15baa393aff48e96.png)
 
-![](img/a14c28be90c162e002416d70e0b21153.png)
 
-![](img/287484f135ec8d55e914ba34c83a7cdd.png)
 
 ![](img/0558b5115866e3813803f9426c871011.png)
 
 1.  按 Esc，输入 :wq 保存退出，回到这个页面
 
-![](img/ff5bab73ebcd45fc9fa069c0f39efba4.png)
 
 ### 启动 Coze Studio
 
@@ -193,11 +173,9 @@ cp .env.example .env
 sudo docker compose --profile &#x27;*&#x27; up -d
 ```
 
-![](img/e92cf8c5dc828503790241473f142bd2.png)
 
 可能需要稍等有一段时间
 
-![](img/b61ff1e345ba7824887c5b5c97a6b1b7.png)
 
 重新如下，表示运行成功
 
@@ -205,19 +183,14 @@ sudo docker compose --profile &#x27;*&#x27; up -d
 
 打开阿里云-云服务器安全组
 
-![](img/e668573892130dc41ce0da7a95143d2a.png)
 
 点击“管理规则”
 
-![](img/0465422227cf75a577fb3aeb795945d0.png)
 
 入、出方向，添加规则
 
-![](img/6de13dcae34bd38a81e77d73f87b9d29.png)
 
-![](img/ae14df85741c82ff7dfea85b5633cbf9.png)
 
-![](img/d46cbcb303f0915e01fb91b3552710cf.png)
 
 ## 下面很重要！除非你钱多
 
@@ -233,7 +206,6 @@ sudo docker compose --profile &#x27;*&#x27; up -d
 
 找到“提现”
 
-![](img/ee2ef5db4347fbce28bb741766ccbcaa.png)
 
 ![](img/30841ab2f5c4e5e9d97e228cae7da105.png)
 

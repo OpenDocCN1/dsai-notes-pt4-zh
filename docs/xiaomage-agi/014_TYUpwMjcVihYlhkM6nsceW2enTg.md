@@ -10,7 +10,6 @@
 
 # 效果图
 
-![](img/d2cf494f127a5af8493a1bb484fee846.png)
 
 ![](img/910e8d0b4e111010ceceba6087e2797a.png)
 

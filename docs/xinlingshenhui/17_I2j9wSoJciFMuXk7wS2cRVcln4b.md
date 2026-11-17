@@ -48,31 +48,24 @@
 
 提示词：一张可爱的猫咪表情包，列表排列整齐有序，白色简约背景,低饱和度色彩匹配 --ar 3:4 --niji 5 --style expressive
 
-![](img/d55c8a83d761a6b05a6417616b11fdf6.png)
 
-![](img/30b687c6beb7c5d03d5b211cfa7c7285.png)
 
 ### 3.可爱女孩
 
 英文提示词：sheet of cute girl stickers,a individual ui design app icon ulinterface happy delightjoyful --ar 3:4 --niji 5 --style expressive（这个提示词用英文效果才好)
 
-![](img/347920f4565faf24a0f18e1ac1877b34.png)
 
-![](img/b40e01a2dee6bfcad02571d90f5799fb.png)
 
 ### 4.卡通人物
 
 卡通娃娃的多种姿势和各种表情，快乐，愤怒，悲伤，惊讶，困惑，不安，害怕，兴奋，白色背景，表情符号，动作姿势，三乘三网格 --ar 3:4 --niji 5 --style expressive
 
-![](img/2ae5c412fbfa503b8482a9b20aaf3d7d.png)
 
-![](img/1ce2decaebf1c6ce85bf73b7fecf93b8.png)
 
 ### 5.黑兔
 
 可爱的黑兔表情符号，表情包，各种姿势和表情，卡通，简约 --ar 3:4 --niji 5 --style expressive
 
-![](img/90db5d6171c582dbe6ac8329d57f6228.png)
 
 ![](img/dc5c4569f63c8824f854be9582ba8b7a.png)
 
@@ -80,7 +73,6 @@
 
 sheet of cool boy sticker, a separate ui design app icon ulinterface funny funny --ar 3:4 --niji 5 --style expressive
 
-![](img/a58e397b660ee3b1f5fedcf022bb4302.png)
 
 ![](img/13975bc313763456c40f19082f79f527.png)
 
@@ -88,7 +80,6 @@ sheet of cool boy sticker, a separate ui design app icon ulinterface funny funny
 
 Various expressions of panda, happy, sad, angry, expectant, disappointed, big eyes, white background, illustration, Pixar style --ar 1:1 --v 5.2 --style raw
 
-![](img/0e08f3d6f78f66d8b3ff69eb953083d7.png)
 
 ![](img/066e8e4fd6ce88c0c48f032eb7b7de3f.png)
 
@@ -98,15 +89,10 @@ Various expressions of panda, happy, sad, angry, expectant, disappointed, big ey
 
 A little girl, long black hair, bangs, big black eyes, long eyelashes, light eyebrows, high nose and reddish blush,eating delicious food,all kinds of expressions, happy, sad, angry, expectant laughter, disappointed, cute eyes, white background, illustration-nit 5-style cute, emoji as illustration set, with boold manga line style, dynamic pose dark white,f/64 group, related characters, Old Meme Kernel,style very high, Cute Style, --ar 3:4 --niji 5 --style expressive
 
-![](img/6767e420dad68b0cec8e66e961328270.png)
 
-![](img/e51be9c77916be17087195be4a160c1c.png)
 
-![](img/160b79dd3cfb1607ebef5299c99cebca.png)
 
-![](img/f75ce2db64f3fa12fdf068abacbb051d.png)
 
-![](img/eecc47f22ee2e856e2b6c6476b6d3a1e.png)
 
 ![](img/e02bb2b3723b5b007917cbe735558d60.png)
 
@@ -148,7 +134,6 @@ A little girl, long black hair, bangs, big black eyes, long eyelashes, light eye
 
 跟着一步一步操作
 
-![](img/7107c652fc42708afd95e630f61f7032.png)
 
 ![](img/cce5a62a3ff32527dea13bfd2ed16706.png)
 
@@ -252,13 +237,10 @@ Prompt: A sticker design of a bunny, whimsical and magical --ar 1:1 --niji 5 --s
 
 关键术语： White border: 为每个单独的贴纸留出足够的空间 Knolling：为了确保我们的贴纸包装干净整洁 Color & Style --可选
 
-![](img/5f77f4a830fc63d1223ff5909afacb83.png)
 
-![](img/21527c68d019fe9aec91fedbeff365e6.png)
 
 提示词：一张可爱的猫咪贴纸，列表排列整齐有序，白色简约背景,低饱和度色彩匹配 --ar 3:4 --niji 5 --style expressive
 
-![](img/501911a632f8d3e90917b14810f32022.png)
 
 ### 2.食品和饮料
 
@@ -266,9 +248,7 @@ Prompt: A sticker design of a bunny, whimsical and magical --ar 1:1 --niji 5 --s
 
 中文提示：快餐贴纸包，小圆布局，白色边框，色彩和谐 --ar 3:4 --niji 5 --style expressive
 
-![](img/c5e07daccab187546aeed7f0f5a623c6.png)
 
-![](img/568820748ff2313964f8411d9def5eab.png)
 
 ### 3.哈利波特
 
@@ -276,13 +256,9 @@ Prompt: A sticker design of a bunny, whimsical and magical --ar 1:1 --niji 5 --s
 
 中文提示：哈利波特贴纸包，小圆丘布局，白色边框，色彩和谐 --ar 3:4 --niji 5
 
-![](img/963bdb202e99c92d0763e0176f3d1dd7.png)
 
-![](img/7c516b827870375b7d337210f19bbf86.png)
 
-![](img/19f49962dbe63f6ac36f4e5d40f993f8.png)
 
-![](img/55b140baaaf1e96a3391ec39ab4b8dad.png)
 
 ### 4.爱丽丝梦游仙境
 
@@ -290,7 +266,6 @@ Prompt: A sticker design of a bunny, whimsical and magical --ar 1:1 --niji 5 --s
 
 中文提示：爱丽丝梦游仙境贴纸包，凹凸布局，带白色边框 --ar 3:4 --niji 5 --s 180
 
-![](img/4a13f20d83beb89f3b4035f849c46c48.png)
 
 ![](img/d8675538fefdfccf59149504187c38fb.png)
 
@@ -300,9 +275,7 @@ Prompt: A sticker design of a bunny, whimsical and magical --ar 1:1 --niji 5 --s
 
 中文提示：漫威贴纸包，诺林布局，白色边框 --ar 1:1 --niji 5 --s 180
 
-![](img/e3742e2e5649d75d83f806dd51c4c0de.png)
 
-![](img/a718eda4755f7aa5b5b37d6d41ac81ad.png)
 
 ### 6.圣诞节
 
@@ -310,7 +283,6 @@ Prompt: A sticker design of a bunny, whimsical and magical --ar 1:1 --niji 5 --s
 
 中文提示：圣诞贴纸包，诺林布局 --ar 1:1 --niji 5 --s 180
 
-![](img/494d5748c1c158421104e4dca07fb999.png)
 
 ### 7.万圣节
 
@@ -318,7 +290,6 @@ Prompt: A sticker design of a bunny, whimsical and magical --ar 1:1 --niji 5 --s
 
 中文提示词： 万圣节贴纸包，克诺林布局， --ar 1:1 --niji 5 --s 180
 
-![](img/15989500d9e1b359bd5b1131af453b6f.png)
 
 ![](img/ee1fb07b3b55c118a7373fa9d49e4d4d.png)
 

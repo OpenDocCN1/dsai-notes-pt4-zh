@@ -34,9 +34,7 @@
 
 # 效果
 
-![](img/da8a5c16220f7787b3ad98511d4a40fd.png)
 
-![](img/a8d6b5a4c7a4a85883a690c99a01016c.png)
 
 ![](img/3e9ef2f18f23808f5f17fcfe4c85f00f.png)
 
@@ -46,9 +44,7 @@
 
 这是效果图，出图时间大概是20秒左右。
 
-![](img/643533bcee9f970a7a2e4803937bc042.png)
 
-![](img/4dfe4328ac1901860acadb0d022f2c22.png)
 
 ![](img/b4a51dfffd6e65b54d1bc3a67c25b424.png)
 
@@ -312,7 +308,6 @@ onMounted(() =&gt; {
 
 这只是一个简单的例子，实现的效果如下：
 
-![](img/adae62e0b3d1c28855d66518624d9580.png)
 
 ![](img/870bdd59f52c623376941aadb459517b.png)
 

@@ -104,7 +104,6 @@ https://www.concetto.cn/render/
 
 原图：
 
-![](img/3d984b435023e15584993e328fd06615.png)
 
 提示词：
 
@@ -112,7 +111,6 @@ https://www.concetto.cn/render/
 
 结果：
 
-![](img/fa3134b43811eec2c2bc3e23624e3727.png)
 
 然后再这张图的基础上，咱们再来个AR加持，让科技感瞬间拉满
 

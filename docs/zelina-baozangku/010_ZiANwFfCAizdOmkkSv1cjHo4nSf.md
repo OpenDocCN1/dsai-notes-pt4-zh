@@ -68,9 +68,7 @@ Subscribe
 
 ## （2）**前端三件套**
 
-![](img/23d3aeaf83b8479e2a82d7e156ff7596.png)
 
-![](img/ed7c76a35a28a759d9cf9922cee28ff2.png)
 
 ![](img/adb3784eb38979865770c5aec629ab58.png)
 

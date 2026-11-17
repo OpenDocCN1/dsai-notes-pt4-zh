@@ -54,11 +54,9 @@
 | --- | --- | --- | --- |
 | **Prompt** | +   一只斑马斑纹的猫科动物在广袤的沙漠上行走。 | 可爱的小兔子长着蜻蜓翅膀，在蓝天中飞翔 | 特写镜头拍摄一只由白色水晶构成的蜘蛛在一个小孩的手掌上爬动，蜘蛛背部生长着绚烂的水晶柱，反射着五彩斑斓的光线，周围是黑暗的洞穴 |
 
-![](img/8dbc3aef8b8f1c7c4d71f47c32ea9c4a.png)
 
 [教程使用-4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HSbdbx2xRoiBC4xfF2tcTfS8nwb)
 
-![](img/c9001f56dd54bda3a178bbc9ad9fa15a.png)
 
 [教程使用-3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gq8xbKdfUomAXOxqLRCch6zSnhg)
 

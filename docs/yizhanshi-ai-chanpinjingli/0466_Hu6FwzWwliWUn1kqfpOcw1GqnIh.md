@@ -4,7 +4,6 @@
 
 # 一、原型库行业概览
 
-![](img/00375bdae300dc641db8305eb347a1d2.png)
 
 ![](img/01e6337f0f416bf672bd6b7c5d14a910.png)
 

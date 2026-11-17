@@ -10,7 +10,6 @@
 
 ![](img/db6bd82009379f719688ece8cb863ff8.png)
 
-![](img/f95c783bd276d1cb43b1cc761389605b.png)
 
 ![](img/66a49c439f3a5bb3794cadfc7e80ad33.png)
 

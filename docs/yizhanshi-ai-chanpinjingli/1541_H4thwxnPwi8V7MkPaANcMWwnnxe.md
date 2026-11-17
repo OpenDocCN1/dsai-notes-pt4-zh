@@ -34,15 +34,12 @@
 
 Arduino UNO R4 WIFI  开发板
 
-![](img/ffa5a64818c602a0877164ca2511ac00.png)
 
 MG90s/SG90舵机 9g云台支架
 
-![](img/c4a80e5062f27b831fbb2f5fa9584186.png)
 
 *可选 八爪鱼手机支架
 
-![](img/bf3147c04ad034e2ff804af56a281a89.png)
 
 杜邦线 公对公
 

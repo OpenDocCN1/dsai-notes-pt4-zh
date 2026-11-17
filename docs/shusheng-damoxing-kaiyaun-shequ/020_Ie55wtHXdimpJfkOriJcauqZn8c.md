@@ -64,7 +64,6 @@ https://www.eigent.ai/
 
 可以用Google和Github登录，也可以用自己的邮箱
 
-![](img/14670bb82ecf1949f700fc3b75216f19.png)
 
 登录成功后开始system installing：
 

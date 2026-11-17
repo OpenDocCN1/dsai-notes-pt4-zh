@@ -40,7 +40,6 @@ AI 从文字到图片再到视频, 仿佛在宣誓着AI完全时代马上就要�
 
 一条由气泡制成的龙，完美渲染8k
 
-![](img/cb5c6a70d3956f3e14b34f04c85b008d.png)
 
 [sz-S7ZVWrofiRioO.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B7a6bqBRFop7mKxZ2ewcqivonwg)
 
@@ -48,7 +47,6 @@ AI 从文字到图片再到视频, 仿佛在宣誓着AI完全时代马上就要�
 
 一只透明的景观乌龟在沙滩爬行
 
-![](img/efae26f21de6b9fcd18b41478b843190.png)
 
 [u-opBcMDI8jcxGBR.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VWNIbiK5YoIDu0xvjgTctZFTn8f)
 
@@ -104,7 +102,6 @@ an alien blending in naturally with new york city, paranoia thriller style, 35mm
 
 ![](img/7b45218f728eb8505a646d481986c621.png)
 
-![](img/854cd4e5e2ffcfe7c2ee562a5a79f8a9.png)
 
 [20240312_013322.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P1zNbNWmwozptaxsb2VcyHcYntd)
 
@@ -114,7 +111,6 @@ an alien blending in naturally with new york city, paranoia thriller style, 35mm
 
 这个思路写出的提示词, 果然效果好了很多! (写文章的时候, 再次看到提示词框中的提示, describe your sound effect 恍然大悟!)
 
-![](img/6d5db490fbed70655e2109c09e2e9cf9.png)
 
 [20240312_011653.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M6QfbDmdNo5qoNxJlL8cDxw0nrb)
 
@@ -134,7 +130,6 @@ an alien blending in naturally with new york city, paranoia thriller style, 35mm
 
 在保留核心内容并去掉“没有意义”的物体单词后，音效有效变长还复现了准确的吹泡泡的感觉。
 
-![](img/9ae4db9d1cea3f1274a71d313220ee78.png)
 
 [3月12日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MXrGbrRCHoy37bxbxSlcJGUEnpe)
 
@@ -146,7 +141,6 @@ an alien blending in naturally with new york city, paranoia thriller style, 35mm
 
 +   轻柔的沙沙声，微妙的贝壳运动，柔和的海风，翻滚的海浪低语，远处的鸟叫声。
 
-![](img/f611fb8c9714a4e7331844fbb69f7efa.png)
 
 [3月12日(1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UtwHbDhTdotsUAxdpm7c0LdEnbc)
 

@@ -49,11 +49,9 @@ ChatGPT Team (团队版）使用测试
 
 ![](img/7e6d5568e7528c66cd4cf356e9885fe9.png)
 
-![](img/351ba9f3d2ede1e9a7fd65a7697db1d8.png)
 
 # 4. **退出 Team**
 
-![](img/71d937cd990270ed6c4337d729323da8.png)
 
 ![](img/262095fdad762caee353a311b0c28159.png)
 

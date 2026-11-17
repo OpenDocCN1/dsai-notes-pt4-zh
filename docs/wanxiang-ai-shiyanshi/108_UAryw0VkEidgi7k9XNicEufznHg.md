@@ -70,7 +70,6 @@
 | **发型｜提示词编辑** |  |  |
 | --- | --- | --- |
 | **输入词** | **4.0模型结果** | **✨ 4.1模型结果** |
-|  | ![](img/a6553955addc913329eaf7a2eaec296e.png) | ![](img/841c4d21fc0a06c3ba3b946b9871553a.png) |
 
 ![](img/948ec1875717fc692c84eb8c07d0a739.png)
 
@@ -81,9 +80,7 @@
 | **服装｜提示词编辑** |  |  |
 | --- | --- | --- |
 | **输入词** | **4.0模型结果** | **✨ 4.1模型结果** |
-|  | ![](img/3af3b63b3267dcc2b97ec62dd2dab8cd.png) | ![](img/ad2aded41e736181ed5b1771a53ed271.png) |
 
-![](img/33a38c99dd3353caf6dcc398f7587cda.png)
 
 > 将小女孩的白色大翻领长袖衬衫替换为黑色高领长袖上衣，蓝色背带裤替换为银灰色无袖马甲，蓝白条纹袜替换为灰色格纹长裤，调整黑色高领长袖上衣、银灰色无袖马甲、灰色格纹长裤的尺寸和形状以适配小女孩身形，保留小女孩的姿态、双麻花辫发型、黄色发饰、眼镜、棕色鞋子及背景
 
@@ -129,7 +126,6 @@
 
 > 把“xxx”替换成“xxx”、在图片上添加“xxx”
 
-![](img/421ab9afae42a401d6b69af936b18124.png)
 
 ↓
 
@@ -137,7 +133,6 @@
 
 图片添加文字
 
-![](img/e6f612c9806647174f42ffb005ee0a40.png)
 
 ↓
 
@@ -145,7 +140,6 @@
 
 图片添加文字
 
-![](img/47b8903ae781e39bff4794eff50223c4.png)
 
 ↓
 
@@ -161,7 +155,6 @@
 
 替换文字风格
 
-![](img/2178cf53812913bbfc2c113ceb6ea0d9.png)
 
 ↓
 
@@ -186,9 +179,7 @@
 
 ![](img/f8fb1aa182810e6f3691c6eb678a8fb9.png)
 
-![](img/acf5b1256cb31a001bc333176c03d594.png)
 
-![](img/f37760457a51f1d6bb93f10df11bd68d.png)
 
 专辑封面
 
@@ -211,25 +202,20 @@
 | **输入编辑指令：** |  |
 | --- | --- |
 | **参考图** | **生成图** |
-| ![](img/d2a70660a29e29f74812f7aadc8b1e6e.png) |  |
 
 > 指令：美化指令
 
 > 例子：人物美白，其他保持不变
 
-![](img/c887992b6d7f3c86b19b1ec244acdbc5.png)
 
 祛痘
 
-![](img/ad8cefb49d0e6893d8492b782544e215.png)
 
 小v脸
 
-![](img/cb26cf599b188042f234aaa4042553dd.png)
 
 美白
 
-![](img/f6085051f4d01c780438bde9adf304d1.png)
 
 脸部磨皮
 
@@ -249,39 +235,30 @@
 
 > 例子：人物增加**蛇系冷艳烟熏妆**，其他不变
 
-![](img/7a529fdc2d68737c48b79962cc584ae7.png)
 
 上镜水光肌妆
 
-![](img/9d5b99fef7c65acd0a12c343376cd194.png)
 
 野生眉雀斑妆
 
-![](img/919873e7fb92ccfc539265632aabf10a.png)
 
 暖栗棕日杂晒伤妆
 
-![](img/aa09a3396a8d4068f353a4cb202fba10.png)
 
 蛇系冷艳烟熏妆
 
-![](img/82c4d1c68f73c57aec743c35c77fa26b.png)
 
 银灰色古早妆
 
-![](img/52a34cc16d81550f814cfada51f645ca.png)
 
 浓颜系混血轻泰妆
 
-![](img/a9e06f73dc86f90dda79194a263f4ded.png)
 
 薄荷氧气妆
 
-![](img/64f8f39df2414b63b8553c9edb45a2bd.png)
 
 东方气质红唇妆
 
-![](img/a6de1e0056bad9ff94aa34b783fa4c3e.png)
 
 雾面杏仁妆
 
@@ -289,15 +266,12 @@
 
 万圣蜘蛛烟熏钻妆
 
-![](img/1c78449f1f4a0ccb93a3dfcb441f1371.png)
 
 美式男高雀斑妆
 
-![](img/7aba3d77dfe97801e1ed93ba6a6b726a.png)
 
 男团爱豆妆
 
-![](img/c0f26d84a13c2f88c8d2c8e88f3295dd.png)
 
 战损妆
 
@@ -313,7 +287,6 @@
 | --- | --- | --- | --- | --- |
 | **参考图** | **生成图** |  | **参考图** | **生成图** |
 | ![](img/bd451c4d26614d07dbd83e619e1c1044.png) | ![](img/d6a5b56dfb66ecd9107b336cbd1a27cf.png) |  | ![](img/60fdc75d9e695382f9cb8a13501df4ee.png) | ![](img/51705956d93469dc531cd62addfa43cc.png) |
-| ![](img/18c11b01b33111c59720801487210b65.png) | ![](img/0cb6b4c93d66c21567d4a27259c74069.png) |  | ![](img/dcc213d69133c75221b07b9e82eb3328.png) | ![](img/062327522b687e1b22caa17735627927.png) |
 
 > 指令：图片的妆容以图x为参考+参考图x图尺寸比例大小+其他不变
 
@@ -331,47 +304,36 @@
 
 > 例子：人物变成**一刀切波波头短发发型**，其他不变
 
-![](img/5e46a407963423b77049fad09033a1dd.png)
 
 中长发高层次
 
-![](img/726722f84e64aaa36bc5d1a7cdd94d45.png)
 
 日系街头中短发
 
-![](img/8042c6f3fdab3217d1006843eb396591.png)
 
 深紫色波波头直发
 
-![](img/cb1cfcb0250887c2c03dda0a339c1288.png)
 
 巧克力棕大波浪卷
 
-![](img/2ca77b7e8a5b583159dbdd19def571d2.png)
 
 白金色一刀切短发
 
-![](img/12642a215ae7185becc661b1aa8683a2.png)
 
 一刀切波波头短发
 
-![](img/d5ca8a9659b4ef40f5b5173441240933.png)
 
 深红色短发造型
 
-![](img/1927a2bd056ba794165e5d2cba28234c.png)
 
 超A高中长烫发
 
-![](img/155609fa9bfd2eb52a86f559b410a86c.png)
 
 阴阳黑白层次短发
 
-![](img/3198caa1274b380ad6caef002d42a96c.png)
 
 高层次空气刘海
 
-![](img/918153c7a4ac204c21e3fecfcedae2d9.png)
 
 挑染孔雀绿长发
 
@@ -379,23 +341,18 @@
 
 浅金色爆顶渐变
 
-![](img/49876b61fa18470d8dccfec419e3c47e.png)
 
 粉色Y2K炸毛发型
 
-![](img/db0e009d1e1813240e966d96f8ce5696.png)
 
 日系少年感短发
 
-![](img/b418cac0713a8541b2b96c27a043c891.png)
 
 侧背短发
 
-![](img/776205d5fd842bbb41a134c94c6ec1f1.png)
 
 红色中分
 
-![](img/8d49232d8164a450c51f033ae549c7d3.png)
 
 无性别感重塑烫发
 
@@ -407,29 +364,23 @@
 
 | **输入编辑指令：** |  |
 | --- | --- |
-| ![](img/8527619bdb6dec7fe4fa5872b4dad0c9.png) |  |
 
 > 指令：人物表情变成xx表情+其他不变
 
 > 例子：人物表情变成**惊讶的表情**，其他不变
 
-![](img/5a63cb0f93847a1cefdd2b16dfd12320.png)
 
 惊讶
 
-![](img/14689cbcd12d1561177812536cac33f5.png)
 
 俏皮
 
-![](img/10b854873f043e756dbf30e687a584ba.png)
 
 怒视
 
-![](img/dd34fd83c567ac22c9bd4848cd1982a7.png)
 
 wink
 
-![](img/45a2aa08c59c1e49358cc07761f36dc5.png)
 
 皱眉
 
@@ -441,7 +392,6 @@ wink
 
 | **输入编辑指令：** |  |
 | --- | --- |
-| ![](img/6a5193f891635308fc22119e569ee36d.png) |  |
 | **输入编辑指令：** |  |
 |  |  |
 
@@ -449,27 +399,21 @@ wink
 
 > 例子：人物服装变成**棕色无肩T恤**，其他不变
 
-![](img/d38315ac3d69f1018c4d8bd7ad012c6a.png)
 
 浅灰色长袖衬衫
 
-![](img/e21bddd298360ef1b9ec2487f9007617.png)
 
 黑色夹克粉色短袖
 
-![](img/2dd833414b434c856f5f1193ef15489f.png)
 
 棕色无肩T恤
 
-![](img/2caf50c9ce8f3a02b746584f9737e1c9.png)
 
 灰色印花短袖
 
-![](img/9b88f61fec200e7215c0ce8774f2f5e3.png)
 
 红色吊带长裙
 
-![](img/724b7a4ab212840ebaef69a7045d371b.png)
 
 粉色亮片吊带
 
@@ -518,21 +462,16 @@ wink
 
 > 例子：画面变**高清**，其他不变
 
-![](img/386dfb7c8a9d1be90029df8a9d6b2e13.png)
 
 ![](img/62ebb9825c2a83758c377101d254d146.png)
 
-![](img/c0d3b1cb9dc460e7c23ec0cbf0072eed.png)
 
 ![](img/5aabaaaa8e059ea3ba8a1cec5920ea99.png)
 
-![](img/ab11b1f3619493080731da6a41682f9a.png)
 
 ![](img/4c045aa5d59030cbe86ea8e6bfdb479c.png)
 
-![](img/3d28f6d43353d3e8a805fbc6345a3a62.png)
 
-![](img/08f83238f0cd3d7d7ddefe5e34f70d1e.png)
 
 #### 光影
 
@@ -549,7 +488,6 @@ wink
 
 > 例子：画面添加光辉光效，其他不变
 
-![](img/f1cf19ca4f509b8ce117719900aafd13.png)
 
 ![](img/f8251872ca1afa1ffb22e6df1b9d1211.png)
 
@@ -557,11 +495,9 @@ wink
 
 ![](img/a5a49345580cc83c584f33d4dc94f565.png)
 
-![](img/1dfaf53a363981d511867a7eae51dce4.png)
 
 ![](img/564ecccad3cbb137b3e83b837f5af7fc.png)
 
-![](img/1d8e2e4fbeab66a4d616aabc110bf208.png)
 
 ![](img/0d49bb9a4eb3de6d80dd4fb63a7c1305.png)
 
@@ -580,17 +516,13 @@ wink
 
 > 例子：将变成雷雨天气，其他不变
 
-![](img/60d5bc17e53a52d5cdbb50bfd2c7ab20.png)
 
 ![](img/dfffabff0eb436941ab640a3e5fd0bf3.png)
 
-![](img/1c622407db8d067b1e3c2de617636ec7.png)
 
 ![](img/deb51ceb12610ef922e5e07cf6bdd5f7.png)
 
-![](img/5bae437df3ed52f29210eded0cc5423a.png)
 
-![](img/0109ea56b00e81762049fc8c3e0fbbcb.png)
 
 ![](img/63dac596a4860f674cf8cab9058b1af0.png)
 
@@ -611,19 +543,15 @@ wink
 
 > 例子：修复画面**暗光**，其他不变
 
-![](img/c028a8919e8f80beb4d5c047baa38596.png)
 
 ![](img/59492bfc4b4ac24bf75a0fa631be0900.png)
 
-![](img/e4ae8787a57a0aece4edad0b6a09d19a.png)
 
 ![](img/24a293d26a61adcee75ac1f47fbbfd22.png)
 
-![](img/e629d5e2fe0f6ddcf5ecbe03c6c2ce8c.png)
 
 ![](img/9e09e70ce048fc51e234ca1e10ee1bc7.png)
 
-![](img/d4834031dcea0a0e2fe91bba4836d265.png)
 
 ![](img/37fae94e5feea77fb6859b849eb1d7c1.png)
 
@@ -638,19 +566,15 @@ wink
 
 > 例子：画面添加**一个kitty猫玩偶**，其他不变
 
-![](img/4ce7aac56327701c0a411036e244c994.png)
 
 ![](img/8bdf249b91758f47b1a5eaa3b502cd03.png)
 
-![](img/c30b9df2c126cb35c1acde5363d0bac2.png)
 
 ![](img/8a7c3a806a10aae0228961fd6cf8f204.png)
 
-![](img/4bde6152c756af8b0cc69f55d236a388.png)
 
 ![](img/c9aacc5280fd4eee4edcc36eabfea41e.png)
 
-![](img/c487bbc7a1b8a7b4da5677fe46becb29.png)
 
 ![](img/ebbc4a157c14da743fed90ae6d2c1a3b.png)
 
@@ -669,7 +593,6 @@ wink
 
 > 例子：将画面变成**俯视视角**，其他不变
 
-![](img/719c74609831a258a28b7a5494f722bb.png)
 
 ![](img/d4b3f706127eea4f87fc8c9a05d645d5.png)
 
@@ -677,11 +600,9 @@ wink
 
 ![](img/d54811ba36565a215cef8a9480ef3826.png)
 
-![](img/c102c3342af341bf0c3a5141e546a459.png)
 
 ![](img/6bc82310699a94cbbd1afe344d305bee.png)
 
-![](img/40345f9d70900d106efdbef9b06b4e4c.png)
 
 ![](img/411d8ce93701b6d60049dfcc3af68f87.png)
 
@@ -703,7 +624,6 @@ wink
 
 日剧双格
 
-![](img/80a1a379e54a7891ea6c5189ff1ade0c.png)
 
 宠物包围
 
@@ -722,15 +642,12 @@ mini玩法
 
 ### 热门风格
 
-![](img/eac36a1331e2766598e6978f8cc693f2.png)
 
-![](img/942d0adc98475138e8264939f441024e.png)
 
 ![](img/eff04e3e98616f34464a0308614d1993.png)
 
 ![](img/28efb85246b6bac4e6f63c67d676c578.png)
 
-![](img/9b5017111ca8456800b39ea38aec9a25.png)
 
 ![](img/3a411e5e370de4facae01f8ec031b456.png)
 
@@ -738,17 +655,13 @@ mini玩法
 
 ![](img/c765ac2244f27fe0e49a35b63a3e93c1.png)
 
-![](img/e72cfbaf2f77086406b7ebea9c903003.png)
 
-![](img/13e856b3f5d02dc0a6f5ef936863a484.png)
 
-![](img/556d272face93473de68e414ad7f8dd3.png)
 
 ![](img/9d711f34b4241e6c90312923d7d4878b.png)
 
 ![](img/cb1761f0e7ecfbcd5945cbbc3dd22106.png)
 
-![](img/0bd3e2e7c892c264d8fd90603cb9e1e3.png)
 
 ![](img/97386d2236e170069dc18dcf426674cc.png)
 
@@ -774,7 +687,6 @@ mini玩法
 
 ![](img/027c3a279ed99846adcdd9d2ac1c5250.png)
 
-![](img/27c707aeccaa61861d8840b92219123f.png)
 
 ![](img/7815c316e44490077f6e00bcf3adae52.png)
 
@@ -792,9 +704,7 @@ mini玩法
 
 ![](img/2a4db17bf07bfd659b6847899914c615.png)
 
-![](img/f67f6fd1b62346ccadef028b543d6316.png)
 
-![](img/1a89da08b47c5a1eff9e8c04ded71337.png)
 
 ![](img/368b06ebb7077bed967f73825fc262b0.png)
 
@@ -808,9 +718,7 @@ mini玩法
 
 ![](img/7588418cdb550ea30ee8684786b8e480.png)
 
-![](img/7fe6c763540b17dd3b7bb749f20ac8ec.png)
 
-![](img/e56f6960f5e033c7d0e2799f3b106e1c.png)
 
 ![](img/171925f2851b6062840bf3a4ca8bef85.png)
 
@@ -820,15 +728,12 @@ mini玩法
 
 ![](img/43168b41f006f936a9b52329c71c1d1a.png)
 
-![](img/3287f12ecb54d06a2200cd8833082f16.png)
 
 #### 海报构图
 
-![](img/b93c7eeb88c5b16b82bea845617ed30f.png)
 
 ![](img/7f2a7f8d2860a8e44d09f16e3f1d8f08.png)
 
-![](img/482c9e94911d68f08d0f7040bac2b950.png)
 
 ![](img/7e996680e3186ba505b81fd23533ee81.png)
 
@@ -838,7 +743,6 @@ mini玩法
 
 ![](img/07e4587c3749c3f7066aab6f2025fca0.png)
 
-![](img/1fd050e63bbd0d936fd0dfd74e484fca.png)
 
 ![](img/eacb2b7be4da56bb940500010a25a503.png)
 
@@ -892,7 +796,6 @@ mini玩法
 
 ![](img/e56c4c2aae20b7c8a7c32ebd463a0f8b.png)
 
-![](img/2d606f516414abe1535f3dd2a6f107ff.png)
 
 ![](img/37c11d0d7882cc2892d8ad2ccb077314.png)
 
@@ -900,7 +803,6 @@ mini玩法
 
 ![](img/cdb6977f5397bc0d4bf2242b28b6b201.png)
 
-![](img/3fd81582f7617a3338dfc030132b3619.png)
 
 ![](img/b2ecfad78520a69ad5d0615ea6363006.png)
 
@@ -916,7 +818,6 @@ mini玩法
 
 ![](img/f63e6cc93c3327cad4f60dbe14d2e3c8.png)
 
-![](img/a87d400c420771d8c95aa55ded9f2c7f.png)
 
 ![](img/dcfc945174b646634d9c3542b7c4d806.png)
 
@@ -928,9 +829,7 @@ mini玩法
 
 ![](img/05210735b34029455755f814c5ad1db2.png)
 
-![](img/8a707fa32d3a7f368d7d1b5245f63c2b.png)
 
-![](img/67413090b86c37d5b3f19db90f2bdc38.png)
 
 ![](img/b2f849c401b32b51afe2444d885998dc.png)
 
@@ -996,9 +895,7 @@ mini玩法
 
 ![](img/5470029e5b20f84e39208df36d05b1f2.png)
 
-![](img/393c60bc12b79bdca3c6d0bd4dc6bb21.png)
 
-![](img/cbb0c119b4bcc427418b1eda735de79c.png)
 
 ![](img/8a830fbc83c77967e2ac59336a4a29bc.png)
 
@@ -1028,9 +925,7 @@ mini玩法
 
 ### 艺术
 
-![](img/adda0e906141aee02ba1b180e10c7d94.png)
 
-![](img/a65a9bcaef8474b1fa89690186616a07.png)
 
 ![](img/e1e6e0df82094369dc1bd6e97938b8cf.png)
 
@@ -1038,15 +933,11 @@ mini玩法
 
 ![](img/8ca97c809f4cacdab55411770b5d02c2.png)
 
-![](img/2deb9262b9d76139ff5ab0d3c3135ada.png)
 
 ![](img/b724de24cb406e24a8aac6072c83874b.png)
 
-![](img/93cee956d38e648ef1c04c7583f08002.png)
 
-![](img/d78f1982512f7d79a022484255f1df32.png)
 
-![](img/0be12f0dfec3f130872c0f33d54e9400.png)
 
 ![](img/056e9c34976c60df402222fdf9b915a5.png)
 
@@ -1060,52 +951,28 @@ mini玩法
 
 ### 材质
 
-![](img/2b8e8e761cc4dd16cee35f026dbe70a2.png)
 
-![](img/7784cc3fb24c9199b626fa2ffbf4a4b9.png)
 
-![](img/e3eca776dcfdb9ca3e2a02a3d154c7d9.png)
 
-![](img/07a27819309478f6ed0e0e32cfe601dc.png)
 
-![](img/d15882710ca7151d9663e7da10e91c12.png)
 
-![](img/9f3aba4916ca068d547d9e256440503a.png)
 
-![](img/939393ca1dd84a55db296afa50c7fad7.png)
 
-![](img/b6580b14c0877b2f9d582d11019d8007.png)
 
-![](img/e0ba3cab102385d135ae6e908cd8bb3c.png)
 
-![](img/0ee79265059d9e84c70de975693753d3.png)
 
-![](img/e14a3b61f6969d4dca4bfb6f7021f88f.png)
 
-![](img/400ad19b2eff7a98ca983eb886d6f2e0.png)
 
-![](img/8ba7406d67e89efe7ca8a01b968cc94f.png)
 
-![](img/371a9b9de2a3ac241ba65cdb5e6201c4.png)
 
-![](img/93d7c9bb37bfec6b687e7659f8477d65.png)
 
-![](img/93fa0917165f7b8977de880dc3724b4e.png)
 
-![](img/ca8b495d95a7d6c48d945e0120a9a842.png)
 
-![](img/7adcf006c92a54d200e31e3309e61f56.png)
 
-![](img/56890c6596d75ae2f0e0b54eb5990711.png)
 
-![](img/741fc187f0ef01124daf69b48563c2d0.png)
 
-![](img/bee7c3215aeac63f2a240f239435893d.png)
 
-![](img/c784b8c22d6d814ee0d25f598bc43e2d.png)
 
-![](img/b5d078038b51c6f8e8c2826653e29766.png)
 
-![](img/1344be93bad21b3fb27eec4a6632e697.png)
 
 ![](img/d2f8c826cb4b0294cbca159bb78a5348.png)

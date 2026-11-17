@@ -2,15 +2,11 @@
 
 > 来源：[https://aithinkup.feishu.cn/docx/UPsbddpgIolr4wxwmjgcEu9rn3e](https://aithinkup.feishu.cn/docx/UPsbddpgIolr4wxwmjgcEu9rn3e)
 
-![](img/70e4d67666374daa9104e194604db996.png)
 
 # 以下是40个场景选项
 
-![](img/4a97f5dc6cacddb3fb28fd746352e799.png)
 
-![](img/09d8cf1eded786d5d2c5ff0c6d703d65.png)
 
-![](img/2faf08bfe630a71de00e7078e6877722.png)
 
 ![](img/f52568a218bfadf0eba39f2d1692fdad.png)
 
@@ -47,13 +43,11 @@
 | --- | --- |
 | 4. 内容策划 | 凭感觉选题、素材散乱 |
 
-![](img/6cfd10c7eaea556fd69efcb0577214c7.png)
 
 智能体：行业笔记灵感整理专家 Ada（编号 29-1）
 
 智能体：https://leapility.cn/?agent=i-zc8iuuml4gy2
 
-![](img/fe6000768af74c652244acafe026254c.png)
 
 智能体：科技媒体专栏作家 Ada（编号 29-2）
 
@@ -65,7 +59,6 @@
 | --- | --- |
 | 6. 项目沟通和传播 | 当前的演讲、文章布道，传播效率有限 |
 
-![](img/3a9575c1901a2f016c012c8236104249.png)
 
 智能体：数字化项目管理专家 Ada（编号 06）
 
@@ -81,7 +74,6 @@
 | --- | --- |
 | 5. 教学内容设计 | 同一内容需多次手动改编为 PPT/文章/视频稿 |
 
-![](img/13abf685a9796cb6f380054846f21966.png)
 
 智能体：多形态学习资源设计专家 Ada（编号 21）
 
@@ -95,7 +87,6 @@
 | --- | --- |
 | 1. 流程管理 &amp; 复盘 | 会议、人工记录、SOP 滞后 |
 
-![](img/360a1ec041ca3426367b9c2e711d6dc4.png)
 
 智能体：活动项目 SOP 专家 Ada（编号 25）
 
@@ -111,7 +102,6 @@
 | --- | --- |
 | 3. 商业模式设计 | 白板手写、逻辑跳跃、难以验证 |
 
-![](img/acd037e3d5ab02749cade9e769f0c407.png)
 
 智能体： 战略级商业画布专家 Ada（编号 28）
 
@@ -123,13 +113,11 @@
 | --- | --- |
 | 2. 知识萃取 | 依赖专家访谈、观察，效率低、易流失 |
 
-![](img/db6ae35fa8a88f3d701f7b07ed5c9555.png)
 
 智能体 1：专家模型萃取专家 Ada（编号 13-A）
 
 智能体 1：https://leapility.cn/?agent=i-mqgevpdvdwx4
 
-![](img/9ef2a11dc00e9033f76168293e93de84.png)
 
 智能体 2：教练式销售场景专家 Ada（编号 13-B1）
 

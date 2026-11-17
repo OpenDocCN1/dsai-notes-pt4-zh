@@ -130,7 +130,6 @@ Manus 的底层其实也是用了类似 MCP 的方式进行了一系列的工具
 
 ![](img/17a4581a1d4feef6960d0df444446418.png)
 
-![](img/1d04bd1c8501503cdbf1f534df32ce62.png)
 
 来自社区好朋友idoubi大佬的杰作
 
@@ -208,7 +207,6 @@ Figma 的 MCP 文件读取，可以看到实际上是读取了 Figma 的文件 D
 
 给予对应的 figma 样式参考链接
 
-![](img/967e151b46d5c38bead38c755256f1a4.png)
 
 1.  **生成最后的效果**
 
@@ -236,7 +234,6 @@ Cherry Studio，支持了SSE（类似https接口形式）和npx的安装方式�
 
 以idoubi大佬的mcp服务市场对接为例：https://mcp.so/
 
-![](img/690ac096d24d51c907a379d3a7f8715d.png)
 
 +   SSE注册方法：
 
@@ -294,13 +291,9 @@ https://mp.weixin.qq.com/s/pFq6WhcOSCin4zl9msPvKg 高德的mcp已经支持sse，
 
 把多个figma的链接放到一个需求文档里面可以直接直接生成：
 
-![](img/06dd9c81317c7aa7305ac43615249881.png)
 
-![](img/debc44eb5135110ab99051662fcc0ae7.png)
 
-![](img/4fb4b12d20ab76c8805e45054e3e9d9e.png)
 
-![](img/937ddb61a702a943991d62fae0012340.png)
 
 +   Master go的mcp服务也可以支持生成界面。
 

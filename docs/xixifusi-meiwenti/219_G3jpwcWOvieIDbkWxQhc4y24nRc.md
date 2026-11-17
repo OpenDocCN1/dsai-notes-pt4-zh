@@ -44,11 +44,9 @@ IDA PRO可以把exe转化成汇编语言代码甚至也可以把exe转化成伪c
 
 没有库函数，和机器语言一一对应
 
-![](img/912fba015b1cc0d50ccebcf90d6140fe.png)
 
 [汇编语言.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WNcNb2Z4eoLwMZxP2CZcoUHgnMg)
 
-![](img/e47b052c82a0ffa26155f065d4896dfc.png)
 
 [汇编语言 期末总结.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LCzXbleklo9c4VxWfcNcUQ6sn3d)
 

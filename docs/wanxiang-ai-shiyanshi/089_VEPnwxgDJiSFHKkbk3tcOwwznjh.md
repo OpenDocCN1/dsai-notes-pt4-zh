@@ -96,19 +96,13 @@ https://gemini.google.com/
 
 ![](img/385c426d7a760b2946d06d50d7591d05.png)
 
-![](img/7eea480fd3a9e72d1b55dcae7523f9b9.png)
 
-![](img/55f49b2a16049e779798bda05d28e74e.png)
 
-![](img/94a7035a586a02937a4a1ca8bb2990b3.png)
 
-![](img/c778c6608babb51b20d72578b0e89d2c.png)
 
 ![](img/d5512dbdec7f5e44fc77575af98d0650.png)
 
-![](img/19f7b563f078be7632d6f60eb8acc209.png)
 
-![](img/b8be8090da4805ac91b45717ba9b2ce1.png)
 
 > **提示词：**
 
@@ -140,7 +134,6 @@ https://arc.tencent.com/zh/ai-demos/imgRestore
 
 ![](img/d504b40774446ecfb4dde37ee6683d13.png)
 
-![](img/3778d95fb323404f40b0d78e171e0947.png)
 
 ![](img/a8e5c4803388f71de0ff54f51d5e6930.png)
 
@@ -246,7 +239,6 @@ https://arc.tencent.com/zh/ai-demos/imgRestore
 
 ## 4.1 换造型+背景
 
-![](img/cedc1de9636327772cc324630745befd.png)
 
 ![](img/2e5a243e28e1497f07c72c90b0d330b8.png)
 
@@ -286,7 +278,6 @@ https://arc.tencent.com/zh/ai-demos/imgRestore
 
 ![](img/15383e4a0dae31a553b3396e451b28aa.png)
 
-![](img/18674688e1350fe7bbea1dbc4ab37d59.png)
 
 ![](img/4e6af4b87a055db206f790277f441456.png)
 
@@ -348,9 +339,7 @@ https://arc.tencent.com/zh/ai-demos/imgRestore
 
 ![](img/cd2299065d642d18e25ea31a6665afa8.png)
 
-![](img/4fbcb384909fa1df50c40d0185cf4bce.png)
 
-![](img/f70eeec9b93ab45e11aed12b6bcdb95d.png)
 
 ![](img/dc48dd1b8dc27229339bd62feb7e4a32.png)
 
@@ -366,11 +355,9 @@ https://arc.tencent.com/zh/ai-demos/imgRestore
 
 ![](img/1cce4b3b2b664c104733e684586b579e.png)
 
-![](img/e5c1d89118f0052867474639768852d5.png)
 
 ![](img/7caa7a6cedc60d70d8f800fcc082e532.png)
 
-![](img/0ed9764afb9cf25f1f30ba0fcffd8243.png)
 
 ![](img/109cddbf96338857238f935ac13dc569.png)
 
@@ -386,9 +373,7 @@ https://arc.tencent.com/zh/ai-demos/imgRestore
 
 ![](img/0cfae32bb6ebfda47143b8135761148f.png)
 
-![](img/c5f5a5260f2c516c2436bddf03890e07.png)
 
-![](img/09b40004d776fb3b2f2d8e32507112dc.png)
 
 ![](img/cd36496b03e2f03d86e15aef46285475.png)
 
@@ -396,7 +381,6 @@ https://arc.tencent.com/zh/ai-demos/imgRestore
 
 NB 模型确实牛，控制精准，我让它把效果图里的挂画换掉它也可以：
 
-![](img/86e1b3656dc24299e365046130e74d59.png)
 
 ![](img/84d697b33d85655b0a3238da91cc4766.png)
 
@@ -430,7 +414,6 @@ NB 的优点主要有以下几点：
 
 ![](img/2b06bcc535527ae8b8a9c616efc4a433.png)
 
-![](img/4abc5d5878c63427bf2b785cbba6647e.png)
 
 ![](img/7792fff22eb0b869c34303522dc64746.png)
 
@@ -440,7 +423,6 @@ NB 的优点主要有以下几点：
 
 ![](img/c20a2b409b0b4517464ad11f3e4588b9.png)
 
-![](img/51eebe1c9226486c12f6514e90aee119.png)
 
 ![](img/d895d9dd30a96e2a7ffccd1ecddf1588.png)
 
@@ -450,7 +432,6 @@ NB 的优点主要有以下几点：
 
 ![](img/a79ebb46bd6f87a7f806e21e7f4803c4.png)
 
-![](img/b6527c6e98d36a1617b72a6ec4bd881f.png)
 
 ![](img/67d2de51e943389ddc814218c9f2fa36.png)
 
@@ -460,7 +441,6 @@ NB 的优点主要有以下几点：
 
 ![](img/0de683c1059265d996d0242ce7fc2ddb.png)
 
-![](img/f6145e7c837de8b335ddeab33660b8ce.png)
 
 ![](img/d23989165c43295ef2ed23ec5941e62b.png)
 
@@ -472,7 +452,6 @@ NB 的优点主要有以下几点：
 
 ![](img/02aa53360eaf6e512cc7e7e8f22fd4e3.png)
 
-![](img/8661e97cd93b2299790bd78ea65a11dc.png)
 
 ![](img/132c80bc584621e90528c440bd365375.png)
 

@@ -130,7 +130,6 @@ AI 助手用了多个国内顶尖模型整合了一个思维链功能，继续�
 
 另外他们还推出了国内模型版本的 LLM 模型竞技场，可以用多种方式对国内主流 LLM 进行测试。
 
-![](img/3d50446683895579fe35c2af85529689.png)
 
 ### Void ：开源的 Cursor
 
@@ -138,13 +137,11 @@ AI 助手用了多个国内顶尖模型整合了一个思维链功能，继续�
 
 可以使用任何本地的 LLM 驱动，也可以使用Claude、GPT 或 Gemini 的 API，不会留存你的数据。
 
-![](img/6585063fe9c884c69cda73c7b1836480.png)
 
 ### [Genspark AI 搜索推出 Autop](https://mainfunc.ai/blog/genspark_autopilot_agent)ilot Agent 异步 AI 智能体
 
 Genspark AI 搜索推出 Autopilot Agent 异步 AI 智能体。可以处理复杂的研究、交叉检查、数据收集和其他耗时的任务。对一些需要复杂推理或者核查的事实性问题查询非常有帮助。
 
-![](img/a52baea9678f27be5877038fa696daa9.png)
 
 ### NotebookLM：为长内容生成对谈播客
 
@@ -154,7 +151,6 @@ Google 的 NotebookLM 现在可以将多个长文内容总结整理之后再生�
 
 [配合 HeyG](https://x.com/op7418/status/1836376761396814128)en 的虚拟人生成，直接就可以 搞定视频内容 ，还可以保证人物 ID 一致。
 
-![](img/b9f3b5070be04fdcdaa1298f67f112c8.png)
 
 ### FiveThirtyNine：自动化概率预测 AI
 

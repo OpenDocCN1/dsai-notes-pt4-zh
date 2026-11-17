@@ -56,7 +56,6 @@ https://github.com/JimmyMa99/Roleplay-with-XiYou
 
 ## 👏👏中医药知识问答助手
 
-![](img/f6d9556a08ed4cf46a372ecded0712f6.png)
 
 ## 👏👏AMchat 高等数学大模型
 

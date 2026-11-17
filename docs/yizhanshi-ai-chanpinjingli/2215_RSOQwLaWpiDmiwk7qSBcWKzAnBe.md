@@ -122,7 +122,6 @@ TsangerXuanSan04-W02
 
 #### 第三方插件市场
 
-![](img/75f8f07ff453c18264d53cb97936667c.png)
 
 +   点击左下角设置（小齿轮）1️⃣
 
@@ -224,11 +223,9 @@ TsangerXuanSan04-W02
 
 #### 切换不同工作区
 
-![](img/8b9c1c11570234c3f91002846d5f7d1b.png)
 
 #### 长文编写双排工作区示例
 
-![](img/580c6ed2dbc32a355422e880eb6fed3b.png)
 
 ### 第五步：嵌入 AI 辅助工具
 
@@ -236,11 +233,9 @@ TsangerXuanSan04-W02
 
 #### 打开插件市场
 
-![](img/fccc595b8f575e86aeda5c5c80437a7d.png)
 
 #### 搜索 custom frames 插件
 
-![](img/7cbdad967aa5bb2bcecb5e2014823bd5.png)
 
 #### 安装插件
 

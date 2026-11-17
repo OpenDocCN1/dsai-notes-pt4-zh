@@ -30,11 +30,9 @@
 
 [GenAI_hw5.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OCJDb3HkIonyrpxkI36cIEPGnqh)
 
-![](img/99cd28b9940de582d33d531ef62f5f19.png)
 
 [LLMtraining_part1 (v4).pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ujm8bca2Mo2OFfxNqCucP68Inad)
 
-![](img/359d0a6e99beb03f77a27428e5468072.png)
 
 [LLMtraining_part2 (v5).pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SfANbaEkKooD4YxfcXyc1XSfnQh)
 

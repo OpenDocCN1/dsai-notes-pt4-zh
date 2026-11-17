@@ -24,7 +24,6 @@
 
 同样是离线计算索引，在线召回的流程
 
-![](img/d70d95ee2d9c9dd9d1b52ef0fd6ee509.png)
 
 ![](img/4799b69acccf790cc918457faae5986e.png)
 
@@ -92,7 +91,6 @@ listwise考虑更多的负样本
 
 **一个常见的错误！**
 
-![](img/38511ce22757390dabd62df6c80a8121.png)
 
 ![](img/e99d0b0dafffe88c611858f4949442e2.png)
 

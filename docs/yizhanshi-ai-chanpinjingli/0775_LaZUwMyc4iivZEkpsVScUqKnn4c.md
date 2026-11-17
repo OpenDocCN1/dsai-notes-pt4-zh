@@ -320,7 +320,6 @@ parent_agent.add_message(role=&quot;system&quot;, content=&quot;OrdersAgent 无�
 
 +   我们将涵盖从拉取现有系统中的结构化数据到对 PDF 等非结构化内容进行索引的所有内容，以便你的系统在扩展时保持快速和准确。
 
-![](img/75216b9225a5ab65886936ec583f0dea.png)
 
 #### 数据检索和智能体 RAG
 

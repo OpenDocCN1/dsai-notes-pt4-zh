@@ -48,7 +48,6 @@
 
 ![](img/de1d0b56c8285e78c953d05588793b30.png)
 
-![](img/1de121c74cb4a9bf3e7cd7ef7b12443f.png)
 
 ![](img/e5a23764ca5c9fefa13354de47bd2c06.png)
 
@@ -131,26 +130,18 @@
 
 | **玩法** | **原图** | **生成图** | **原图** | **生成图** |
 | --- | --- | --- | --- | --- |
-| **九宫格漫画表情包** | ![](img/4c6085c0f8f05ce642c6cc21f5d0ce49.png) | ![](img/20072c69e8fb5ee9157d280cd7c4cf24.png) | ![](img/51d70eb81633e33a9ec59f4480ca641e.png) | ![](img/93383ac90c58a501ca2253ffc7681abd.png) |
 | **大头贴** | ![](img/18da744ecb647882e2f161d520b31b91.png) |  | ![](img/e0b5febda3ddbba5662d04ca47836b36.png) |  |
 
 > 创作一张图片，图片内包含表情、姿势不同的九宫格表情包，头部特写。
 
 > 生成大头贴四宫格，每张照片都要有不同的表情和动作，动作要夸张，每张图的周边都是大头贴的边框和贴纸装饰。
 
-![](img/1e11cf536810a30a3aad4e1f63599cd9.png)
 
-![](img/82201c4ac098925afa939af33c5ea63d.png)
 
-![](img/a6b526e4cc742204d75ea16dfb7243e9.png)
 
-![](img/3d4edb21cc402d6a6edce81a4bc892b1.png)
 
-![](img/39330583dbb5c55479839e2c65667d7c.png)
 
-![](img/5e6e898fd0085f434b3e6abe5e9db77f.png)
 
-![](img/2cab4e2636515a98d48a16b2f210a17b.png)
 
 ![](img/ddd42200c772497de75a2c5306b5f70b.png)
 
@@ -159,9 +150,7 @@
 | **原图** | **生成图** |
 | --- | --- |
 | ![](img/92eb6f7d864a477fda64e629892904ae.png) |  |
-| ![](img/52dc7966119ca27a5a0b90c2cf793682.png) |  |
 
-![](img/c798953f945a66c54a4ed34343eae589.png)
 
 ![](img/effed37258e0db6c49f931ffddd249ec.png)
 
@@ -169,17 +158,11 @@
 
 ![](img/6f23b68d251d9d4f56855e62c720e82e.png)
 
-![](img/5e585d6fef4fad53cda783cde0961868.png)
 
-![](img/af776961eeead467d2d9dd59b3705ad0.png)
 
-![](img/cd223ee6616deb8b9c7bf41289e1424e.png)
 
-![](img/2ebfadf2f6ed23c42b787e5d68e17262.png)
 
-![](img/c33f6295de898a61f5a9fa38ba06ad12.png)
 
-![](img/45c788f5a94dbddcce8e743bc2112ba1.png)
 
 ![](img/ef44c18b3a49d4a7110d4f6880abc3bb.png)
 
@@ -211,51 +194,32 @@
 
 > 将海报的排版修改成居中排版、上下排版、对角线排版、左右排版等4种常见排版设计。
 
-![](img/cf629e091447b5150da1566066c89db3.png)
 
-![](img/6c36f8df08766b608e1052e279b0b839.png)
 
-![](img/5fc23ebbd0d0133a9a5c6cce6722f94b.png)
 
-![](img/0cb834e1932929cbc5c1e688e62d15eb.png)
 
 > 将海报的排版修改成居中排版、上下排版、对角线排版、左右排版等4种常见排版设计。
 
-![](img/d5b4c12b4a578c6b8c53c9873e253a97.png)
 
-![](img/891546f65800c5cc8bd616c116b54a87.png)
 
-![](img/9f00e4ef9a7fe2c808dfb551a54a1a17.png)
 
-![](img/6086d565d561ac99ac565f063c0dc0e4.png)
 
 > 参考图中的风格，生成上海、北京、杭州、成都的城市海报各一张，将主体改成城市的地标建筑，文字部分根据城市的宣传语来修改。
 
-![](img/7dae627f93416cc0f3bb9cb4b690bdfc.png)
 
-![](img/6d7737bf74a1c4abe3f9aa020d9f6098.png)
 
-![](img/ce3f6c83292ae53af29e26b2d1d68464.png)
 
-![](img/f46e1b5a974708142b1928db562c2461.png)
 
 > 参考这个设计风格，生成母亲节、教师节、儿童节、妇女节的海报
 
-![](img/1219005ad9d2a91f19e5b4d974e5c628.png)
 
-![](img/8c870a7115757f5b701f2ab9f057fbff.png)
 
-![](img/29a9cea2b3ff6d189229c99c7fb1407c.png)
 
-![](img/a30fdc742d8a6bd7a0c959b6882a27ce.png)
 
 > 生成四张不同标题的海报，文字分别是“Happily”、“Joyfully”、“Pleasantly”、“Interestingly”，用不同的手写字体。
 
-![](img/a2bca3723cfd51c1957c63708b1b0c47.png)
 
-![](img/cb6385361952f2fc686f42c9c7b6f52c.png)
 
-![](img/55c8eb45a6267304de65076fa52e99b1.png)
 
 ![](img/a9458d007483906e9b3681ee215f24e7.png)
 
@@ -301,11 +265,8 @@
 
 | **原图** | **生成图** |
 | --- | --- |
-| ![](img/90323588ca7f061d4ccbda78c4a46529.png) |  |
 
-![](img/fa47868debcf1e1bfdf695e7a22d8448.png)
 
-![](img/66a364e747eb780977939b71eb2f16d1.png)
 
 ![](img/0027c607dfff9f14655d1ca4f7f6c825.png)
 
@@ -320,17 +281,13 @@
 
 > 将图片中的房间装修成不同的风格，如：新中式风、日式原木风、中古风。
 
-![](img/8f01c97ca99fe0f1c958858e89d2a601.png)
 
-![](img/44758b65c8b7ae7d5125bc151af82783.png)
 
 ![](img/5a215f25a4c2f4e70e55724002a19dbd.png)
 
 > 为图片中的店铺更换装修，换成咖啡店、汉堡店、轻食店，根据不同店铺的商业属性匹配店铺名称和色调、风格。
 
-![](img/6e28c5ca26c91f212c3c73e540c648b7.png)
 
-![](img/ffa240779ee17e0cd3fd2489948a5930.png)
 
 ![](img/604abef9bdf5950c7ce2d88d7d3a699e.png)
 
@@ -342,13 +299,9 @@
 
 > 使用图中的logo，设计品牌名称为“Seedream 4.0”的文化衫、帽子、工牌、帆布包、手环等周边产品，紫色调为主，时尚潮流风格。
 
-![](img/5db1cae413d38c5875ed26bbec5b3d89.png)
 
-![](img/42ba884fcf2462ab191870820d673eb6.png)
 
-![](img/a29bc1f5d58b94a36d1a7e0e78e73dc3.png)
 
-![](img/039ff90256193c0b54823c67f2412266.png)
 
 ![](img/d91763a98828531760935cf375510ac1.png)
 
@@ -367,7 +320,6 @@
 
 ![](img/0eb433540fe8aeef658cc2d7c7c98ed8.png)
 
-![](img/93f5a01cab57fc7076efe20c9125b239.png)
 
 ![](img/73b640249c6ed52a7e4764d20347521e.png)
 
@@ -384,15 +336,12 @@
 | ![](img/9c7501182e265f66b8f06220a2c3d5bb.png) |  |
 | ![](img/b5144ee8c547246e1a37a3a276ed5071.png) |  |
 
-![](img/6b6f5f9e8b4bc7b4027137a66a05f870.png)
 
-![](img/891ee864e2a576c116847f80eadc7ab0.png)
 
 ![](img/3a6a718ede1b7246293c7b483dd110bb.png)
 
 ![](img/fce402d461e53c56c5b7e7c9f10de400.png)
 
-![](img/065f453c6e58bd429415bb9311a57cd1.png)
 
 ![](img/49270f70c561bf0172d14bb5a27d50e3.png)
 
@@ -404,13 +353,9 @@
 
 ![](img/965dc2dd4a9bea3f65bf51ac11f32cb3.png)
 
-![](img/bcb33a1fddf0e4b68ee68e9aa999eead.png)
 
-![](img/9d08138ec4bf73b966ee2f28a7228df3.png)
 
-![](img/6fec656eec47032e3339bcf1d694ef80.png)
 
-![](img/8291c2deddd8f24142fde615962bb90a.png)
 
 ![](img/f25bedd834aa483e66d2f509bd2370fc.png)
 
@@ -422,7 +367,6 @@
 | --- | --- |
 | ![](img/032fa8a43dac894489a4ee1a41a82e89.png) |  |
 
-![](img/e54474e6fef00205018cb94c8f117722.png)
 
 ![](img/83cfb77cdafa7e2ccd9a0809c96e6401.png)
 
@@ -434,13 +378,9 @@
 
 | **原图** | **生成图** |
 | --- | --- |
-| ![](img/a10e8dd9bb5a0339f96bb4eb1276c003.png) |  |
 
-![](img/f729dfe7deffafac1e6a1eb786b7b30b.png)
 
-![](img/70b09fa86ab6a134170575d5f0b1969e.png)
 
-![](img/505c0e3d79ed03e5db4c65b1b01c9240.png)
 
 ![](img/b84cdf5202f873c523cacba543ff25ba.png)
 
@@ -450,8 +390,6 @@
 
 | **原图** | **生成图** |
 | --- | --- |
-| ![](img/2dfeebda3b8a2d63c690b0b3f4b1eb7d.png) | ![](img/6a19a2bb4c523ca542c1c2f4cd449095.png) |
-| ![](img/af417f9b55289c85dc107860edcb24c0.png) | ![](img/bfd3b18cdac2dd258f7fc1dad2f17869.png) |
 | ![](img/7794ea63bfd7d5cb16ba13fd7234913c.png) | ![](img/cc894d2a289a215458d2358a108714d6.png) |
 
 # ⭐️ 多图图生图：编辑与重绘
@@ -460,7 +398,6 @@
 
 | **玩法** | **原图** | **生成图** | **原图** | **生成图** | **原图** | **生成图** | **原图** | **生成图** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | ![](img/a9d64aba2b44ed823b8a1bd4005c8bff.png) | ![](img/26366d4b5f6eddca7af70445e1b6894f.png) | ![](img/01670f19d8baf0b04203d0ef2123417a.png) | ![](img/ddb88271aabe7f7ddb84f19a8b2c7e1d.png) | ![](img/32e253aec965068b52594bb8be2501cb.png) | ![](img/9b885841db39e303d02d3a338044bd68.png) | ![](img/35d86167cc4a67e06456bb204d5c0fb8.png) | ![](img/ca19cd1793c2da5e0efb60868a65ff71.png) |
 |  | ![](img/47fb7a15031b6f20f0fb519cefdf6749.png) | ![](img/d588649a8fbedd1c2e947fb2320a5d01.png) | ![](img/a0de3e1c6494fbd31fe309046d22357e.png) | ![](img/9da6445300e567e3d4668fdff88d809d.png) | ![](img/fe64aa221669d798304bf54500a81cfc.png) | ![](img/46079b8a92847ec345047ab682a99c86.png) | ![](img/074e4eae4f252b3537a8c26f7dd91973.png) | ![](img/33a14adc23380dc4b47dcf181a3eecdf.png) |
 
 > 参考图2的风格，将图1做风格转换。
@@ -509,7 +446,6 @@
 | **Prompt ** | **原图** | **生成图** |
 | --- | --- | --- |
 | 把图二替换到图一手机壳上 |  | ![](img/51751f0d582500c50fe4904dc7e6c87a.png) |
-| 把图一应用到图二的墙壁上。 | ![](img/5668862054686564046548c060c96597.png) | ![](img/0bd7818e99cb9d7760f78e51672192e6.png) |
 
 ![](img/f2897635836d8d44a5ec05dc72aaf4a3.png)
 
@@ -519,7 +455,6 @@
 
 | **玩法** | **原图** | **生成图** | **原图** | **生成图** | **原图** | **生成图** | **原图** | **生成图** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | ![](img/7ee3ffabe0493622efcc1f96ffb0f5aa.png) | ![](img/f93dabbaf86a40cda98193d743ef2dd8.png) | ![](img/48d01d602ede41fb81246569212e62c7.png) | ![](img/5d91c417c74be3495864c7b97938d528.png) | ![](img/4511d5e416ddc4fc60ba25377750f55e.png) | ![](img/a0c25a4dc1825a80483c54a0f22e6d34.png) | ![](img/5d95380484f0e719630477327ec3c7c6.png) | ![](img/bed251588c04b98fc61f85174dc682a5.png) |
 |  | ![](img/b72d93d388f645346aa9cb9770cd325f.png) | ![](img/eecac26ba51da59550d811afd3617332.png) | ![](img/f99a6af5e85db513389bc81a5730fb6a.png) | ![](img/383c4fd9d0c592ce94cc218e40afb199.png) | ![](img/93b447f49cb580c8ed67b47261b02e6a.png) | ![](img/7813dcd0cf537c5ce1ad2214f838b701.png) | ![](img/1317c4685a4f7944321e7eee2e286e7d.png) | ![](img/43aeb3ddbe4633b70983504feed243a8.png) |
 
 > 将图1的材质变成图2的材质
@@ -577,13 +512,11 @@
 
 | **原图** | **大疆pocket3** | **白边富士拍立得** | **白柔富士** | **徕卡DL7** | **古早CCD** | **徕卡黑白** | **iphone16** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ![](img/8c5a3b14cfdb1ecf8a9fbfd70c3d4813.png) | ![](img/a425b529b0e0c2fce5fa09057704a745.png) | ![](img/3d46e0851aa18e893a3d2575c8da0b75.png) | ![](img/b3b0b637b646cbf4e560b6163dc03782.png) | ![](img/c4f173e2c1d4e83781de838364f65642.png) | ![](img/b55ddc081a8e4f11d0301db2da1289b2.png) | ![](img/2a6538f385f10ab606c686da83c60d58.png) | ![](img/b1233053d94261fdd78566a4fb9c6447.png) |
 
 ### 证件照生成
 
 | **原图** | **生成图** |  |  |  |
 | --- | --- | --- | --- | --- |
-| ![](img/10b61688c27dbd199a32f685c279dc01.png) | ![](img/afbde8d7dbdf50a763038acf0961fa8f.png) | ![](img/4ad348f0b4c7b2102766a3f549fa0b2f.png) | ![](img/2a163bf88c0b8cef093d37630e630c58.png) | ![](img/c9372c62dcfd331d433247d4ac9491fb.png) |
 | ![](img/c87a4c2b79918e9d5ebaddcfc4e56c66.png) | ![](img/ce372b61da1e10cf8ec1d5dffc4caf8e.png) | ![](img/1edfb1e1184e5ac7356ce334ef96c33d.png) | ![](img/d35a024d2030a045627263088a5c00f2.png) | ![](img/a76649ba46c49d9742addce50024c181.png) |
 
 ### 视角/景别修改
@@ -592,7 +525,6 @@
 
 | **原图** | **正面视角** | **俯视视角** | **仰视视角** | **侧面视角** | **背面视角** |
 | --- | --- | --- | --- | --- | --- |
-| ![](img/082cd48c40544a7b8ef625c268b11348.png) | ![](img/be08f10859f8b85f44da8780cf568c04.png) | ![](img/bcfcf425cf6fc8e7fde7c05680a49326.png) | ![](img/73e9c8079e6dd207aa204c2bbc95cf2e.png) | ![](img/69cfec9e1f25d8580e184f2905440408.png) | ![](img/788a8fc9d3e6cbfb18d79a41376a6410.png) |
 
 +   **景别修改**
 
@@ -640,7 +572,6 @@
 
 +   使用精确的风格词或直接输入图像作为风格参考，有助于获得更理想的效果
 
-![](img/3446a03b8e616d66e82bccfba07765c5.png)
 
 ![](img/71dc573036425f855ab2c6563136f60c.png)
 
@@ -707,7 +638,6 @@
 
 ### 美学
 
-![](img/a0de7a1545ba08e8ff29fb049372789a.png)
 
 ![](img/aea25020bbd9cf96a04affffeb864c8c.png)
 
@@ -721,7 +651,6 @@
 
 ![](img/8e52ffc60518ace5c0118f56c36ae307.png)
 
-![](img/53d3331c1aeff50d8233492398fb9541.png)
 
 ![](img/cd762f96725c54155d63fe91eff56ef7.png)
 
@@ -731,19 +660,15 @@
 
 ![](img/0ef69482be9a15dd5f2702e194e1f357.png)
 
-![](img/ffc8756ccab43e33e60be99a1c45b3f2.png)
 
 ![](img/89d9058d285d3240c5ad3e0935859e26.png)
 
-![](img/eb661d0aadee21779c71bc6f55c29cdd.png)
 
-![](img/513724ea5d0f9b09aa5ce260e6440fb6.png)
 
 ![](img/2ce080d437fb5eb9e9abb50f26ab1d55.png)
 
 ![](img/9ab9b088994f8f68e8e59da1af7390b5.png)
 
-![](img/320ccabce9b22707050496de3b3c7d8e.png)
 
 ![](img/8e6b9ede5adb0794a2acf4b676d27cae.png)
 
@@ -753,17 +678,13 @@
 
 ![](img/ae58f8863b0df1ceb077b64021452137.png)
 
-![](img/4ae884ebb35c8c47625f178bfee454ee.png)
 
-![](img/0d5f762543ae65b1ead99183e226ae2c.png)
 
-![](img/ff0d8fdb8af0dcff86851d90be39fcc1.png)
 
 ![](img/f4c8fcafb569e24ce6df317f1a528c97.png)
 
 ![](img/f2671107ce33c0d340fee2b899fbf7ea.png)
 
-![](img/27ff828027894b42aaca23ef2d9e32fe.png)
 
 ![](img/0e0074fbba1d5b5248c64064b7faee35.png)
 
@@ -781,7 +702,6 @@
 
 ![](img/ce8a385338fad11a496bbcf501b353b2.png)
 
-![](img/c0631e204bb44ab05b8a50f18130c7c7.png)
 
 ![](img/5235ccc02d7229d0ea6d78c136bbd96a.png)
 
@@ -791,15 +711,12 @@
 
 ![](img/e5cf0c903429b160dc05b944de57922c.png)
 
-![](img/717fdaef980b1be470ee2445df421e8a.png)
 
-![](img/f9f629d117e82cdb396a25d585a3e450.png)
 
 ![](img/986bee9bb3f8933bd0c42162cab5b05d.png)
 
 ![](img/4903a4ffdcf0851ccf19b8b203db626f.png)
 
-![](img/8066989732fbb9ec0d747ed62f271bf4.png)
 
 ![](img/27b89fc366c47df0e9b062f64d4424b2.png)
 
@@ -807,15 +724,11 @@
 
 ![](img/1c73e0c153914b2e0dc31a1da8511dc2.png)
 
-![](img/f75a15ec8b9af2612d541fbf1fa783f1.png)
 
-![](img/9232a3ca30ae3b9fb0c13a7d828fd762.png)
 
-![](img/b4e91617f6532969da426b348231297e.png)
 
 ![](img/e2b22c1d81e3d7f74af68e114cccf5a7.png)
 
-![](img/d352076f02da1e477e0438b53e1275e1.png)
 
 ![](img/dbf86cc2f1351af677eba39d4842476e.png)
 
@@ -823,7 +736,6 @@
 
 ![](img/1de8532af63882b422dd3b2b9809b559.png)
 
-![](img/8133f8fe95fcced562b43b9771677671.png)
 
 ![](img/073581ad58da42a1b0dd5fbdfbc5c5f3.png)
 
@@ -847,7 +759,6 @@
 
 ![](img/88678c0a42f0a2139e94e86221833423.png)
 
-![](img/d4096b3cc93f511e6278aafdfedd15d1.png)
 
 ![](img/70ced2576eb51e0cd7842472155a5472.png)
 
@@ -863,7 +774,6 @@
 
 ![](img/f1414265dc398cfac605e7fe8347cfa2.png)
 
-![](img/52e50ac893c6f987f09a1d19fc2433a2.png)
 
 ![](img/5be6623be353a6a700d7d9f47b4158cf.png)
 
@@ -871,7 +781,6 @@
 
 ![](img/89f948074154fd8621f0186bcc88cc55.png)
 
-![](img/676b7b65d2bf782bd41efe9de8fbe6e6.png)
 
 ![](img/2f299106e38cdc1144867636f2b1b41e.png)
 
@@ -881,7 +790,6 @@
 
 ### 艺术
 
-![](img/088ce3eab5085a1d81f73fbac4e348a5.png)
 
 ![](img/19ea557f6ac394afc0629388a76ee0ca.png)
 
@@ -899,25 +807,18 @@
 
 ![](img/b003c3675d756f7ebcc89ad972738fe7.png)
 
-![](img/09e4dd50d549aad84e7fb82de7cae387.png)
 
-![](img/0d8a4796252829c4e2f40a7f469648db.png)
 
-![](img/94571ecaa39e48af722bc0b4d3eb9e45.png)
 
-![](img/c8fdc939ff952ad924906a62724706fe.png)
 
 ![](img/f82f2514416223cd4f465e96722a8320.png)
 
-![](img/f103db7afcbeeb0beea880839d2b6286.png)
 
 ![](img/0a196b580676ea53739d7df10507e3af.png)
 
 ![](img/9747edff60ef4e14bf1fea4689c5ee96.png)
 
-![](img/8fd06279e01abccc076007bae8f5d821.png)
 
-![](img/c42e00885b20b6116b9657592fd773a2.png)
 
 ![](img/1782f2c76e08dec03316e4bba29ff4c8.png)
 
@@ -931,35 +832,21 @@
 
 ### 材质
 
-![](img/61236ae43ab23079eb02287adc4a00ab.png)
 
-![](img/d13144ee6646b850e4311998abbddf76.png)
 
-![](img/c2b4752515d885b153718aad95a710fa.png)
 
-![](img/5d71ba2b4de26b09cf59816d46330833.png)
 
-![](img/093faa4b7f8baf8201a3ad8defc915af.png)
 
-![](img/12ffa854efb173af63e515fee1229075.png)
 
-![](img/941d112d0e742f8f7da93502ccba1299.png)
 
-![](img/f06cb3fabfb43582fc7c6f128b1e28ef.png)
 
-![](img/458b6d67e6dcd5dace0de97124f0eb6f.png)
 
-![](img/58173b09ea76acf83ca7e3fe0bb49f4b.png)
 
-![](img/96c3659acbb79e51955c71b2c85c99e6.png)
 
 ![](img/83f91fd4d89959b0f78d1efe08511b4c.png)
 
-![](img/ed8040103f802bbcd3ca850a20476b44.png)
 
-![](img/78a9b58f7dfb46e29f6b06dee02a85d8.png)
 
-![](img/c20db54644c3fb7697f8cf5a502bc84c.png)
 
 ![](img/c5c1437895c201f98223d4b6d693476e.png)
 
@@ -967,69 +854,43 @@
 
 ![](img/cfa48888a7c86688d08cc24ddf67a755.png)
 
-![](img/bbeb420691067895d342c78201aa3153.png)
 
-![](img/3839d531155f6d337bbedd5b0d92782a.png)
 
-![](img/f1f05e568aa4009973e9fa83a7607423.png)
 
-![](img/af0b1c1f0b2bd5fb8727e730ff6d3627.png)
 
-![](img/1386a38fc87fe518957687afce1d5288.png)
 
-![](img/62821d7e5a87bdcdf8ba04965800f6e6.png)
 
-![](img/7d1fe115e92bf47a926eed91222b57dd.png)
 
-![](img/cdce4ef6c3b67f20ee1a1ee2fb37863a.png)
 
-![](img/b9e142e2ff0db85f3880d337395d9661.png)
 
-![](img/fb6ba3baec604f3557af121234e6ca05.png)
 
-![](img/8f1c1226f64126c9e83fba65aa8e750a.png)
 
 ![](img/6be636c49fa8c79115bb813bfb93a08b.png)
 
 ![](img/ef14e0a6ca3abcb8d5f1b36fb7f460ad.png)
 
-![](img/33091cdd9f5e21c11d2d65f0e8640f69.png)
 
-![](img/95e62fb105cb61430d183f998bbaf348.png)
 
-![](img/9567c61dcc55cd8b00ebbfdee2ac331a.png)
 
-![](img/ad146f75cbd003cc6ced720f7d57eb12.png)
 
 ![](img/d9aab13977df7367456c2b0f7da02f3b.png)
 
 ![](img/7cf7c4aa08a18a8af95ece789a06a687.png)
 
-![](img/7bdb4a515fc98ecab8d0569e84409486.png)
 
-![](img/69926b35779e98da366f244cc35ba182.png)
 
-![](img/745d1667c45e32d2f860b6bcf8376b65.png)
 
-![](img/5497565876fe709b29bbdeb83a216502.png)
 
 ![](img/97a52fbd39de9b50aecdc04355fd1f08.png)
 
 ### 民族
 
-![](img/56ab7b86166ff6d30c63ef9ae9df320d.png)
 
-![](img/6e3877f8c0e8cafa98dad11743757e3b.png)
 
-![](img/89547864a42aedb4559e89c4d008b066.png)
 
-![](img/d3b57605700a1acd156d7bcd9ae73635.png)
 
-![](img/91820a2c7933dcd469f15d497cacbb30.png)
 
-![](img/702f650bcb23488aea8ee58b1bea1f5e.png)
 
-![](img/c74c1c485a2e792a9c7be13af94b917d.png)
 
 ![](img/560150b03d5b83be131986376fa2562d.png)
 

@@ -8,7 +8,6 @@
 
 **Bot 的设计思路如下：**
 
-![](img/e1aeefb1adff66b5fa22abb379acd1a5.png)
 
 > 通过多 Agent 模式和 Prompt 工程，快速搭建一个雅思口语陪练 Bot。
 

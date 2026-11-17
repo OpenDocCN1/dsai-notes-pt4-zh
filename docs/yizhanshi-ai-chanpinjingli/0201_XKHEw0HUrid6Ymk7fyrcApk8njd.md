@@ -14,7 +14,6 @@
 
 图：基于 Self-Critique 方法，ChatGLM3-32B的传统学术数据集数学能力（GSM8k）和分布外测试集匈牙利国家数学考试分数（Hungarian Exam Score）都得到了的提升。
 
-![](img/ee44fe08ceb47876fcb59d8b305bbdbe.png)
 
 此外，为了更加准确地评估 LLM 解决现实世界数学问题的能力，我们开发了 MathUserEval 评测基准。
 

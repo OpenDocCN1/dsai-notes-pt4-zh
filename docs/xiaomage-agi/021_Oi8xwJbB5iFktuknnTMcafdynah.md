@@ -24,7 +24,6 @@
 
 ![](img/0d4776bc9c15c686ecff1d94ea7a8e30.png)
 
-![](img/1e268a16df382d74d45317fac7b5b0a8.png)
 
 暴富-coin
 

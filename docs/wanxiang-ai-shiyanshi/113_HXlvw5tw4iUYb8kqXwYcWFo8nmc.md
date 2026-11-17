@@ -54,11 +54,8 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 ![](img/6743b7eb1513816fdb1c1c11b8077677.png)
 
-![](img/c91b0a1925117ddd8e2bfda221ebfdf3.png)
 
-![](img/ccfc0f532f9b7abe0e56bf9166dedc37.png)
 
-![](img/17a0aa7387a04b7fd43ebd2ed7835eb7.png)
 
 ![](img/9692b039b3145bb1cfcf4af391f93afe.png)
 
@@ -66,9 +63,7 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 ![](img/9cd4b68c737a4e73c0a3c637f74679ac.png)
 
-![](img/b949d03f1f5a1e005542bc537895fc49.png)
 
-![](img/8a7f880b81ae3b051ad06e2b6fbc36e9.png)
 
 ![](img/9d9b8ffc28a5eca4aede1fd5742666c5.png)
 
@@ -121,13 +116,9 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 ![](img/70ca2fecd0d7b141de8df2e1200f5c68.png)
 
-![](img/143dffef6d4019b456bb894e233440da.png)
 
-![](img/1cfa93ac11d62f0f899cdfc7ef1f9470.png)
 
-![](img/45086c84476b57a41c366fb4ec2fca59.png)
 
-![](img/f453635b0c7473efa616d056c75f7986.png)
 
 ![](img/56f9a35cc5c1c26cf22d8935bf78dcbf.png)
 
@@ -173,7 +164,6 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 打个比方，我小侄女，就想要看一个狐狸和大象交朋友的故事。下面是我给的参考图原图👇
 
-![](img/343153d8edad8162daa1a1ce371d0e57.png)
 
 ![](img/a50e2dc34c9eff30fe8ef997f2b01a90.png)
 
@@ -181,17 +171,11 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 ![](img/bfa3439d303f472f67060ab4d1ca1fc2.png)
 
-![](img/e25d90727e81586e834077608f24d55a.png)
 
-![](img/541e9d78821c3dfb7862c5d7d9d0bb46.png)
 
-![](img/4cf02e59482977aa55021ca5143a53ac.png)
 
-![](img/aefd9b72334c3cdda5d103fb85a5675f.png)
 
-![](img/e2ad1b70933443d5908b1b96973bd65a.png)
 
-![](img/ee64eb3d789d2b5353f98fdd2ddc2015.png)
 
 ![](img/25dcb999af195005d772f053a982e205.png)
 
@@ -215,11 +199,8 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 还有这个我们很熟悉了，来，图一原图，基于 1 个延展多个看看效果，也可以智能修改文案（文案水平比较一般，但是右下方细节小字都有换水果，还是挺不错的了）👇
 
-![](img/8bdb385ffb7f214f17228051cfda9387.png)
 
-![](img/863a9c9c0f337bd15fcc5625d338c204.png)
 
-![](img/c8a52f28e6569bf38f0e7dad9b28025f.png)
 
 ![](img/bdb367d159cbf2223819b3291c2dd76e.png)
 
@@ -250,19 +231,12 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 ![](img/931939f9d076d34aa668003e38f34a22.png)
 
-![](img/c5fbb7dff9e2fb543ccafb294937adc2.png)
 
-![](img/aff71c22889e0e854a1276d72bb8aa8c.png)
 
-![](img/58d0c38f1a25be8b6cdaf50241d0d663.png)
 
-![](img/4c183505713393b8fafe34fd23a0c545.png)
 
-![](img/a43f904e61fc8117fc79faad9fe3d2ef.png)
 
-![](img/8e6f2513db0e6347be1421c3c3a87440.png)
 
-![](img/5c30161c1a4c6d14858ebba2bc3d81ec.png)
 
 ![](img/bede8619c106a051a87e5cfe3d9134a9.png)
 

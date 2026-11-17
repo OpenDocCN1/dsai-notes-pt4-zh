@@ -96,9 +96,7 @@
 
 +   **应用数量：**每个团队在比赛期间可提交任意数量的应用，最终择最优 20 个应用参与创作分与评审分计算
 
-![](img/9d75687b8eed7dddfee118a221147993.png)
 
-![](img/4a3f6d973cdbce0dfbd29e76503a2bbf.png)
 
 ![](img/903ece97a72ba7818d23adbb558b31cf.png)
 

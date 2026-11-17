@@ -31,11 +31,9 @@ paper 受限于当时认知的局限性，有一些理解错误、认知偏差�
 | An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale | 2020 | Dosovitskiy | 高 | 【李沐精读】By 朱毅 https://www.bilibili.com/video/BV15P4y137jb/ |
 | Swin Transformer: Hierarchical Vision Transformer using Shifted Windows | 2021 | 微软 MSRA | 高 | 【李沐精读】By 朱毅 https://www.bilibili.com/video/BV13L4y1475U |
 
-![](img/e063453d7b4277003fb35091ae7c6293.png)
 
 [2020-vit.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P8tIbZmQAoeRBKxyelJcI3Ftn2g)
 
-![](img/4fec7304563a1f81f4dab7fa5ef7aa2c.png)
 
 [2021-swin-transformer.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LmeibGdRno5KZKxvoqEceWiunVe)
 
@@ -62,11 +60,9 @@ paper 受限于当时认知的局限性，有一些理解错误、认知偏差�
 | Google’s Neural Machine Translation System: Bridging the Gap between Human and Machine Translation | 2016 | Yonghui Wu | 低 | 研究 translation 问题，提出了一个系统 &amp; 多个问题的解决方案。 |
 | Using the Output Embedding to Improve Language Models | 2016 |  | 低？ | 理解 embedding 具体怎么做的 |
 
-![](img/89e1f8e6622ae8ab53a4b7dd6f80c11a.png)
 
 [2021-swin-transformer-v2.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GDzMbfzBFoRUlUxymwRcaIlknQd)
 
-![](img/ecbae19e85f63b623046f5e3f2ab8c7c.png)
 
 [2021-Twins.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OMhSbYLkso0T5exvi5KcwXG3ni8)
 
@@ -74,7 +70,6 @@ paper 受限于当时认知的局限性，有一些理解错误、认知偏差�
 
 [2021-vit-intriguing-properties.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QV5ebsj7FoWY7Xx7wEUcsF9anjd)
 
-![](img/ba4af2aaf023733733cbe9124a2f808b.png)
 
 [2019-attention-visualization.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SfTkbccRSoRHTIxNtj4cRj4GnAe)
 

@@ -68,7 +68,6 @@ AlignBench 引入了细致的打分规则，提升和人类的一致程度。
 
 我们使用 gpt-4-0613 和 CritiqueLLM 分别作为评分模型对 17 个中文大模型进行了评测，结果分别如下。
 
-![](img/dc0b250fcfbad79f59a7b27feb53aab2.png)
 
 ![](img/bb523b6972e0d0401e5f239a4f20825e.png)
 

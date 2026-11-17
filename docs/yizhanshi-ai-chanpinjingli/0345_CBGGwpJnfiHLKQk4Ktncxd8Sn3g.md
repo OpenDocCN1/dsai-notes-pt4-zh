@@ -34,11 +34,9 @@ ReLU 函数不会同时激活所有神经元。只有当线性变换的输出小
 
 +   由于只有一定数量的神经元被激活，因此与 sigmoid 和 tanh 函数相比，ReLU 函数的计算效率要高得多。
 
-![](img/71266f64228b98371b8cba7fd02ce880.png)
 
 ReLU Activation Function
 
-![](img/f21f00ecfb68bde635514245ee2ea61f.png)
 
 The Dying ReLU problem
 
@@ -54,11 +52,9 @@ The Dying ReLU problem
 
 Leaky ReLU 是 ReLU 函数的改进版本，用于解决 Dying ReLU 问题，因为它在负区域具有较小的正斜率。
 
-![](img/d394deb36c14761de917b92b500a638c.png)
 
 Leaky ReLU
 
-![](img/9567427aa7a86194ba272bd5695f65b1.png)
 
 The derivative of the Leaky ReLU function
 
@@ -80,11 +76,9 @@ ELU（Exponential Linear Unit）最早是在论文 "Fast and Accurate Deep Netwo
 
 指数线性单元，简称 ELU，也是 ReLU 的一种变体**，它修改函**数负部分的斜率。ELU 使用 对数曲线 来定义负值，这与使用直线的Leaky ReLU 和 Parametric ReLU 函数不同。
 
-![](img/4831050495d1c05225afd354c4f0ec2f.png)
 
 ELU Activation Function
 
-![](img/bfa0ce55ee636bbd42a2ca8e6a76fa8b.png)
 
 ELU Activation Function and its derivative
 
@@ -110,7 +104,6 @@ Swish 激活函数最早是在论文 "Swish: a Self-Gated Activation Function" �
 
 +   当 X 接近负无穷大时，Y 接近常数值
 
-![](img/f7cdc226d1d81c0356e13ca94d0c4ee9.png)
 
 - Swish 激活函数以及其导数可以表示为：
 
@@ -188,7 +181,6 @@ GELU 函数的导数可以表示为：
 
 使用近似公式，GELU 的导数可以进一步表示为：
 
-![](img/c498d9abe2f7e6afa0fe9cf1245686b7.png)
 
 GELU Function and Its Approximation
 

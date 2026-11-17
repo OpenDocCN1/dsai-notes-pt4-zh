@@ -24,7 +24,6 @@ CogVLM2-Video不仅在公共视频理解基准上达到了最新的性能，还�
 
 # 效果演示
 
-![](img/8ec7516af12ea360258815daadaada98.png)
 
 [caixukun.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W2oVbkMaeoerJQxNBdhcWIisnCd)
 

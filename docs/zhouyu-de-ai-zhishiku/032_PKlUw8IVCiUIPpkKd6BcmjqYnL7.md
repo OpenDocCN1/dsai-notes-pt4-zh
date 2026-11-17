@@ -2777,7 +2777,6 @@ transactions
 
 ![](img/bbb270ecd3f2e79301e6e5512f5e35ce.png)
 
-![](img/db6bdecbb5d4acbff6783a283d80fc97.png)
 
 ```
 

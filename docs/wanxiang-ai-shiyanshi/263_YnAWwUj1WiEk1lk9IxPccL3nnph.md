@@ -68,7 +68,6 @@ https://github.com/mithun50/openclaw-termux/releases
 
 打开 App 后，会看到一键设置向导：
 
-![](img/c10844da5908f000aae8d0bbebdee570.png)
 
 一键设置界面
 
@@ -84,7 +83,6 @@ https://github.com/mithun50/openclaw-termux/releases
 
 1.  5. 配置 Bionic Bypass
 
-![](img/3df3d6e8de8964d74e1979a67bac43ab.png)
 
 安装完成界面
 
@@ -94,7 +92,6 @@ https://github.com/mithun50/openclaw-termux/releases
 
 安装完成后，点击「Configure API Keys」进入配置向导。
 
-![](img/81a8a8d3bfc6be99b3aa8aa6b017739b.png)
 
 OpenClaw 引导界面
 
@@ -104,11 +101,9 @@ OpenClaw 引导界面
 
 +   • Model/auth provider :选择你的 AI 模型供应商（如 Z.AI GLM 4.7）
 
-![](img/e2f6a545f69e3f0eadc80d00c541cf66.png)
 
 输入你的 API Key，然后配置 Discord Bot Token:
 
-![](img/b551fc1f80d4b89b98f1f0f8f911a28e.png)
 
 > 关于 OpenClaw 详细配置 :如果你还没有配置过 OpenClaw 的 API Keys 和 Discord Bot，可以参考我们之前的文章： 《小白都能上手的免费安装手册》 ，这里不再赘述。
 
@@ -116,13 +111,11 @@ OpenClaw 引导界面
 
 配置完成后，回到主界面点击「Start Gateway」:
 
-![](img/0056343715e72dc03341911793a99a87.png)
 
 启动网关
 
 看到 Gateway Running 绿色状态后，就可以通过 Discord 与 OpenClaw 对话了。
 
-![](img/0c1e16d8d4010e5b38acd80c2705855f.png)
 
 Web 控制面板
 
@@ -146,7 +139,6 @@ Web 控制面板
 
 返回设置，进入 系统 > 开发者选项 ，找到「无线调试」并开启：
 
-![](img/c415cf57723c8dd79654fe6c8b4d87e7.png)
 
 无线调试设置
 

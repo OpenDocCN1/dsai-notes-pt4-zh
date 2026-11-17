@@ -54,8 +54,6 @@
 
 | 模式 | 参考图 | prompt结构拆解 | 视频 |
 | --- | --- | --- | --- |
-| **图****+文****生视频** | ![](img/e82217d5e4164bc7e0b2e3c0f16d1fe8.png) | 主体（老虎）+简单的单一动作（走路） |  |
-|  | ![](img/507fe9e83ad3fd9cf246ef4b02a6b418.png) | 主体（机器人）+简单的单一动作（跑步），添加了运动方向（前） |  |
 |  | ![](img/0f7faaa275a9962b5dd64083c0a7565a.png) | 主体（巫师）+简单的单一动作（飞行），添加了运动方向（前） |  |
 |  | ![](img/e3bc16efb3562c16433802bea54e2102.png) | 主体（船）+单一动作（行驶），附加了运动方向（前） |  |
 |  | ![](img/1d90e4135a9ab73bb90d842630d69708.png) | 主体（蓝车）+进阶单一动作（逼近），附加了运动速度（极快） |  |
@@ -68,7 +66,6 @@
 |  |  | 主体（冲浪者）+场景（海上）+进阶的单一动作（冲浪） |  |
 |  |  | 主体（运动员）+场景（雪山）+进阶的单一动作（滑雪） |  |
 
-![](img/b5c9536cb016f5b0cc3276060fcc4487.png)
 
 [jimeng-2025-08-15-1825-老虎向前走.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U83lbrqA6oIEuxxxqPJcftvKnLf)
 
@@ -96,7 +93,6 @@
 
 [jimeng-2025-08-14-3007-激烈拳击赛，两个拳击手出拳快速有力，身体被击中后仰，动作自然流畅，表情专注，少量....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XQ4xbUxWJoXh5Ox6X6hcNwzRnhg)
 
-![](img/77dea400f0cc485c026899e4f2618795.png)
 
 [jimeng-2025-08-12-2687-小猫对着镜头打哈欠。.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VT53bNcVroC0ZZxhUNZctKWan8g)
 
@@ -112,7 +108,6 @@
 
 [jimeng-2025-08-15-2589-厨师颠勺翻炒锅里的菜肴.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HsZgbtA6coO19ax9lEAcWYYAnhd)
 
-![](img/73061e44b85dce23b2b80b1e7aff79aa.png)
 
 [jimeng-2025-08-14-2541-低角度跟拍冲浪者在巨浪管内蹲伏，慢动作展现浪花从板缘飞溅的动态轨迹.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IGBObR1VMop2dNxyc3vcDeOInHb)
 
@@ -165,7 +160,6 @@
 
 [jimeng-2025-08-22-1728-探险者在潜水的过程中发现了藏在珊瑚礁里面的一个宝箱.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LxNObgvwXogdEBxaudhcoSpunAd)
 
-![](img/6ca53411e90786e23f52d28974f3e2aa.png)
 
 [jimeng-2025-08-15-6956-一个穿着运动服的年轻人在公园里慢跑，然后突然停下来，弯腰捡起地上的一个废弃的空塑....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LtRxbur4Zovwuvx8DYVcL8qLnlh)
 
@@ -349,15 +343,12 @@ ps:控制情绪演绎生成时的注意事项：
 | **地点**+时间+空间氛围+（运镜/动态扩展） | 在氛围之上加入叙事或情感表达 | 柔和色调,清晨，被雾气笼罩的欧洲中世纪风格的城市街道。古老的哥特式建筑矗立着，整体色调偏冷，以灰蓝色和浅灰色为主，营造出一种朦胧清冷的氛围。潮湿的鹅卵石路、朦胧的光线呈现出冷色调的复古与静谧感。镜头从低角度上升，穿过个鸽群，行人悠闲地踱步。 |  |
 | **ps：**虽然t2v视频生成具备一定的随机性，但是通过我们在prompt里逐步加入“时间”“氛围”等细节，可以让生成结果更加可控、更丰富，也贴近我们想要的画面。但是如果在没有想法的时候我们也可以不用具体描写，让模型自由发挥 |  |  |  |
 
-![](img/56886f2ae2f1c350bd962abd423f98ad.png)
 
 [4 (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DhmOblJW2ocDZ1xECabcO82EnCf)
 
-![](img/8fb267e3d725d5d6fc828c23858d4ca1.png)
 
 [3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G508bhBrSoE6qLxDhdhcBsHKnLd)
 
-![](img/e39af6809eb41e669f10db0f9b3e3151.png)
 
 [2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J9E8btfoioyLTHxGw6AcuFhlnBd)
 
@@ -434,19 +425,15 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-08-22-3801-黑白线稿：一个黑白线稿的骑士跨马持剑，马鬃用排线表现，背景是线稿城堡剪影，线条刚....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I0nubf9gRoKAHOxgKM1ck3afnoh)
 
-![](img/4bfb75b7505845a4d9ad74f03cbd35ce.png)
 
 [jimeng-2025-08-22-9439-美漫风格：女警持枪侧身，风衣下摆扬起，眼神锐利带阴影，背景是倾斜的街道轮廓，线条....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K3sbbK8udojjG2xaWmvc8QMen0c)
 
-![](img/bb7d0171eef59411fc7fc6f1ca818683.png)
 
 [jimeng-2025-08-22-6671-日本平面漫画风格：少女侧坐窗边，黑直长发垂落，线条干净利落。.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IdWIbGc7JoxAoCxyL09czO7UnST)
 
-![](img/236996a19cc0296ed3a0743cd76838fd.png)
 
 [jimeng-2025-08-22-4325-2D 韩漫风格：校园走廊里，男生靠在墙边，单眼微眯，校服领带松散，阳光透过窗户形....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DqcZboY1CohyITx7TrCc19cqndc)
 
-![](img/889528170ebfff4574a73e1ed483142d.png)
 
 [jimeng-2025-08-13-5062-3D动画角色番茄（红衣绿冠）与玉米（黄身绿衣）坐于彩色桌前，桌上堆满纸张，背景房....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y7S8bDHPIoW22ZxlAbqc9aeHnYb)
 
@@ -454,15 +441,12 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-08-14-6639-低多边形 3D 动画（Low Poly）：由几何面片和色块拼接组成的外星星球场景....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MJqobsNjDowBcdx8J64ctsomn8f)
 
-![](img/0176b4d6e722c1f44e5dcef78fae4221.png)
 
 [jimeng-2025-08-13-2979-MG 图形动画：画面以简约的线条和几何图形构建出一个科技园区。随着镜头推进，不同....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jyr1bBq4vo6Q2sx5VdDcY34vnje)
 
-![](img/1dba010956875c0150dc08f5fb1b8b63.png)
 
 [jimeng-2025-08-22-4204-毛毡风格：棕白小狗蹲坐，绒毛边缘毛茸茸，耳朵耷拉，黑纽扣眼睛，背景是浅粉毛毡云朵....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XwowbBzrooRqkUxHWAecDNqBnXb)
 
-![](img/ff4746f2455b1f109bd5f8b8bf995c2d.png)
 
 [jimeng-2025-08-14-8102-一个像素风格的人物在天空中的像素世界里借助各种浮空的像素块跳跃，破碎的像素碎片，....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZevWbzmbUouBY5xy99ccZXgsn4f)
 
@@ -508,7 +492,6 @@ ps:控制情绪演绎生成时的注意事项：
 | **影偶动画** | 在平面光影下，一个古典造型的皮影人物站在宫殿场景中。 人物身着戏曲服饰，头戴精美头饰，肢体语言丰富，正在演绎一段传统故事。 | ![](img/02c10875b51b131398354ee0e2ea493d.png) |  |
 | **高定羊毛毡风格** | 高定羊毛毡艺术，32k,杰作，几米式叙事，留白式情绪铺垫，有张力，层次，动态定格风格 | ![](img/a9fb22de669bd31b6bba240bfd88681d.png) |  |
 
-![](img/3b7da824ca44d7592c004134d528f687.png)
 
 [jimeng-2025-08-13-5356-3D CG render, hyper-realistic, Eastern f....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E00HbMAhBoRyDqxPZw6ce9SKnY2)
 
@@ -524,11 +507,9 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-08-15-7881-阿勒泰的夏天，远山，草地，树木，花朵，湖水，阳光斑驳，湖面波光粼粼，一派欣欣向荣....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O6EnbvlsboRneKxXYxBcwEK1nde)
 
-![](img/4c58051487c17b814adb833d911fd92e.png)
 
 [jimeng-2025-08-14-5110-饱和度高的儿童插画风格，铅笔画风格，保持画风一致.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UZG1b0gK3oMe6kxZazHcS9NhnMd)
 
-![](img/3cb2c9b9c7bf3527cb50d1e3ba4caefb.png)
 
 [jimeng-2025-08-13-6370-画面俯拍荷塘，红鲤悠游。以水彩技法勾勒——荷叶边缘水渍晕染，叶面颗粒感似颜料堆叠....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Usk6bqzFNo38AqxIWWJcnMWanrh)
 
@@ -560,10 +541,8 @@ ps:控制情绪演绎生成时的注意事项：
 
 | **类型** | **prompt** | **图片** | **视频** |
 | --- | --- | --- | --- |
-| **插画风格** | 在这幅插画风格的画面中，加入一只橙色的小狗正跑向女孩，狗狗跳跃的动作和女孩周围的秋季景象融为一体，且狗狗的轮廓与画面其他元素协调，保持秋天的色调和细腻的笔触。 | ![](img/c01a4460f31d81f7859a8acc1e55d863.png) |  |
 | **油画风格** | 在一片色彩丰富的花田中，五彩斑斓的花朵随风轻轻摇曳，背景是朦胧的蓝天，几只蝴蝶飞舞在花间， | ![](img/9e48fd1ce6745ad56ba941cea6463798.png) |  |
 
-![](img/30499c2690c9e328d4fa6968848c6730.png)
 
 [jimeng-2025-08-22-8197-在这幅插画风格的画面中，加入一只橙色的小狗正跑向女孩，狗狗跳跃的动作和女孩周围的....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ik03bZrFMo6lvdxOCYocFwm1nhf)
 
@@ -593,9 +572,7 @@ ps:控制情绪演绎生成时的注意事项：
 | 拉镜头 | 与推镜头相反，拉镜头是镜头逐渐远离主体。这个动作常用于揭示主体与环境的关系，表现人物的孤独、失落感，或者从细节过渡到宏大场景，带来一种豁然开朗的“揭晓”感。 | ![](img/b18e46438c0d318e4dd6563ec267b537.png) | **镜头快速拉远**，展现他周围的环境。 |  |
 | 摇镜头 | 镜头以固定支点为轴，做水平或垂直转动。视觉上，画面如同人眼转动观察，能引导观众的视线扫过场景中的多个元素，构建空间关联性。 | ![](img/4964e60803c78a0a732fda2554bad83f.png) | **镜头快速向右摇**，焦点落在缝隙中一只血迹斑斑的小手上。 |  |
 | 移镜头 | 镜头沿水平方向（如左右、上下）平稳移动，与摇镜头的 “固定支点” 不同，移镜头的拍摄设备本身处于运动轨迹中。视觉上，画面能展现空间的纵深感与连续性。 | ![](img/7b2957cd1b7306dd28c65da0c8f88ad5.png) | **镜头垂直上移**，展现行军队伍。 |  |
-| 跟镜头 | 镜头始终跟随运动的主体，保持其在画面中的核心位置。视觉上，主体相对清晰稳定，背景则因运动产生模糊或流动感，突出主体的动态与存在感。 | ![](img/5c731de38b5db6e40750226c05ab247c.png) | **低角度手持跟拍镜头**，士兵一瘸一拐地缓慢前行。 |  |
 | 航拍镜头 | 通常指从空中（如无人机、直升机视角）进行拍摄。它能赋予画面一种上帝般的“全知视角”，常用于展现令人叹为观止的宏大景观或营造一种自由、开阔、史诗般的壮丽感。它也可以反过来，通过展现个体的渺小来表达孤独或疏离。 | ![](img/589b926673c2a82321671958d61fa753.png) | **航拍镜头**，镜头高空向前航拍变成垂直俯视视角，展现宏大与渺小对比。 |  |
-| 环绕镜头 | 摄像机以主体为圆心，进行360度的环绕移动。这个镜头能瞬间将所有焦点集中在主体身上，使其成为整个世界的中心。它常用于表现人物的顿悟，做出重大决定前的沉思，或是展现其与世隔绝的孤独感和被困住的眩晕感。 | ![](img/3ef38b791e4e1393f63feac4ad12a327.png) | 镜头以士兵为中心进行**环绕**拍摄。 |  |
 |  | 变焦是摄像机机位固定不动，通过改变镜头的光学焦距来放大或缩小主体。变焦镜头能创造一种更强烈的戏剧性，甚至是带有侵入感和非自然感的效果。它常用于表现角色的突然惊觉，或者强调某个决定性的线索。 | ![](img/d54f5bd02a4c1408017ca5a2f73feb9a.png) | **镜头焦点**由前景的士兵**转为**后景趴着的一排士兵。 |  |
 | 主观镜头 | 也是第一人称视角，指摄像机完全模拟角色的双眼。观众看到的就是角色看到的，听到他听到的。这种镜头能让观众身临其境地体验角色的紧张、恐惧、专注或迷茫，常用于射击或极端情绪状态的表达。 | ![](img/7455aecd0b0aaaf5327bca70c9891b61.png) | **第一人称视角**，人物快速匍匐前进。 |  |
 | 固定镜头 | 是指摄像机机位完全不动的拍摄方式。这种镜头语言极具力量感，它能通过精准的构图、光影和人物调度来引导观众视线，制造出强烈的戏剧张力、宿命感或纪实感。 | ![](img/c5ea5cb0f29b5c996f3a861a89a77710.png) | **固定镜头，**机位完全不动，士兵们势如破竹往前冲。 |  |
@@ -624,7 +601,6 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-08-13-1955-一个在战场废墟中负伤缓慢前行的士兵 ，航拍镜头，镜头高空向前航拍变成垂直俯视视角....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HOZqbBTYcoFTlRxGrVXccwYLncd)
 
-![](img/842067a600bb9057c20c588deb422a98.png)
 
 [jimeng-2025-08-18-7609-镜头围绕士兵进行360度快速环绕拍摄，周围是燃烧的残骸.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GxURbh5cZo3QCZxZzXrcS76GnYd)
 
@@ -697,7 +673,6 @@ ps:控制情绪演绎生成时的注意事项：
 
 [2025-08-14_15-47-57_ByteArtist.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lz9SbF6rRoLy8hxWpBrcHujRnTh)
 
-![](img/7a47fc621d2c61bbbcea62713a52742c.png)
 
 [jimeng-2025-08-13-6708-从一位穿着呢子大衣的外国军官背对镜头站在演讲台上的过肩视角看向下方排列整齐的军队....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GeztbI1lPoXkYrxYceWc97vCnwe)
 
@@ -792,7 +767,6 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-08-13-7868-顶视航拍镜头，车辆快速行驶在沙尘路上，后方扬起尘土.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OL67b2G6Gow8nKxn1vHcKpRMnvf)
 
-![](img/f30902a575c4c3e955748161a8a19dfb.png)
 
 [jimeng-2025-08-13-8558-水下视角，空中有着明媚的太阳，水体清新透亮，水中有着随波逐流的水草，四处游荡的小....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RH9bb3AK8oy7i6xPMzLcHjPtnve)
 
@@ -804,7 +778,6 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-08-18-4253-fpv，在森林的上方空中穿梭.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z4nWbt03Joa2lexwLFJcuRTBnid)
 
-![](img/96e2f87bf9fbca350dca517f5d915065.png)
 
 [jimeng-2025-08-15-8260-钓鱼的第一人称视角.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jsrmbu85bo3CaRxmtItcwnh2nqf)
 
@@ -816,7 +789,6 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-08-13-4068-微距镜头，蜜蜂用前腿擦了擦自己的头部并且将头部左右晃动，后腿弹了弹翅膀.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SRG7bZjDyoigvOxdMPNcGIVtnKJ)
 
-![](img/05ab8b0fc5e579de45639c5743bc0a54.png)
 
 [jimeng-2025-06-13-941-水底视角，仰视特写拍摄了一只小猫站在岸上，低头喝水，能清晰的看到小猫舌头与水面接触的瞬间。.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MZs0b9uUJoU7QVxMyTdcRvUqncp)
 
@@ -861,7 +833,6 @@ ps:控制情绪演绎生成时的注意事项：
 |  | 穿高定礼服，化精致妆容，眼神冷峻走猫步的时尚超模，在布满闪光灯的 T 台。 |  | 一个挺着啤酒肚，穿花衬衫戴金链子，眯眼的油腻中年胖子，坐在烟雾缭绕的小餐馆撸串 |  |
 |  | 一位留着浅色短发的年轻人站在阳台上，身着白色高领毛衣，外搭黑色西装外套，尽显现代时尚的气质。俯瞰着城市街道。一道醒目的红光映照在他脸上，与傍晚深蓝的色调形成鲜明对比。 |  | 一位白种男性，皮肤白皙，留着浓密且打理精致的胡须和髭须。他的头发整齐地向后梳，身着正式的黑色西装，内搭白色衬衫，手部部分可见，正握着翻领或一件首饰。 |  |
 
-![](img/68132a08217d6a19f5036b7e134e39d1.png)
 
 [jimeng-2025-08-14-9866-写实，穿着洛丽塔裙的甜美少女，蕾丝装饰，蝴蝶结发饰，在欧式花园蔷薇花丛中，.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QObPbGCFvonS4qxu8v9chXjfnNg)
 
@@ -873,15 +844,12 @@ ps:控制情绪演绎生成时的注意事项：
 
 [Seedance_1.0_T2V_LLM_一个美貌的中国女人穿着一身优雅的黑色旗袍，坐在西式客厅里抽烟.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O7VDbnoyaoFrphxfYpochj5enUg)
 
-![](img/d77f878e342614b0675a896212bed9f5.png)
 
 [jimeng-2025-08-14-3505-写实，穿着汉服曲裾的灵动少女，杏眼桃腮，裙摆绣着繁花，于江南水乡石桥上漫步.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PyQIboOcfoABpdxjONNc6bFVnXe)
 
-![](img/a12f5e74145904b506c68ad6d1d9eb3c.png)
 
 [jimeng-2025-08-14-3985-写实，身着武术服的英气少年，剑眉星目，手持长剑，在古式练武场青砖地上.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S3kHbkdUqoVP4mxRgECcZ8gYnPe)
 
-![](img/d96a58791dfe44c6ad8415095f46417f.png)
 
 [jimeng-2025-08-14-2624-写实风格，银发盘起、戴珍珠项链的优雅奶奶，坐在摇椅上翻看老相册，阳光洒在脸上.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GeqZb7VBUoMqn5xkIk7c7BwVnMz)
 
@@ -897,7 +865,6 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-08-14-2833-真实场景，写实风格，穿高定礼服，化精致妆容，眼神冷峻走猫步的时尚超模，在布满闪光....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SuDqbTjeqoiCs9xnC7scNDmlnjh)
 
-![](img/c6cbd25b3867f706bd96cfb70497f0b8.png)
 
 [jimeng-2025-08-15-1937-一个挺着啤酒肚，穿花衬衫戴金链子，眯眼的油腻中年胖子，坐在烟雾缭绕的小餐馆撸串，....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gbdcb9pyvo65roxOaQ7c7B1bnEh)
 
@@ -965,15 +932,12 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-08-15-4241-油画风格，十八世纪，夏日午后的宁静庭院。浅色系花卉盛放，枝叶丰茂的绿植郁郁葱葱，....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OzmXbtRQOoh70zxt7xKcWHgZnYg)
 
-![](img/044c2eb81ad23baa5d3be36de07fed0c.png)
 
 [jimeng-2025-08-15-6650-浓得化不开的白雾笼罩着山村，正午却暗如黄昏。镜头从村口的老槐树下摇起，树干上系着....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OQt5bTMB8oo1GOxcC8zcKRx2nyc)
 
-![](img/8aa4e0d34dd693c78f6ccfeffca5ca49.png)
 
 [微观世界，乐高小人.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bxxfblannou9dPxG0nTcB9ucnFd)
 
-![](img/483b15eac2f2b3ad390312ab8c1177e2.png)
 
 [微观世界，洗葡萄.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TSSBbppOhooNkOxp5HXckdnEnvd)
 
@@ -981,7 +945,6 @@ ps:控制情绪演绎生成时的注意事项：
 
 [Seedance_1.0_mini_1080P_T2V_LLM_花园的叶子上，住着一群小精灵。镜头右摇，主角从家里走出，主角身着花瓣斗篷、手持草叶魔杖，魔杖顶端嵌着一个发光的黄色宝石，微观世界风格。.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LYqEb130yoaVAOxMzHWc04Qnndc)
 
-![](img/9908def2b071c1e14ec739af046fcc51.png)
 
 [中式梦核，废弃商场.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MvkDbudf3oYNiDxvbP2cuDpsnct)
 
@@ -1203,8 +1166,6 @@ ps:控制情绪演绎生成时的注意事项：
 |  | **动物拟人** | 小狗狗拟人化的穿着保安制服戴着帽子站起来用它的手对着镜头做人类的敬礼动作 | ![](img/b7b2f6082ceabee44ddeace8abae235b.png) |  |
 |  | 沸腾 | 水果表面突然像岩浆般开始沸腾，表面冒泡，最后都融化为一滩粘稠的液体 | ![](img/b350b8e4b617a646132bf4f424430ae6.png) |  |
 |  | **捏捏乐** | 双手拿起椰子开始揉捏，像被挤压的捏捏乐般出现凹陷，表面浮现出细密的弹性纹理；镜头跟随双手揉捏的轨迹，逐渐变形：捏扁的表皮慢慢回弹，接着开始拉伸，像温热的橡皮泥一样可以随意扭曲；最后，完全变成柔软的橡皮泥质感，双手将其揉成不规则的团状， | ![](img/7134c18832e1140414eb9e2bd68badf6.png) |  |
-|  | **人物立体** | 杂志中的女郎从封面中缓缓 “钻出”，踏出封面边框，裙裾随着动作轻轻摆动，女郎迈出第二步时，脚下出现红毯最后以一个旋转上升的运镜结束，女郎站在真实场景中回眸微笑。 | ![](img/6bc635a87fd01e1ee1d53a149b053d34.png) |  |
-|  | **建筑冰封** | 卢浮宫被巨型冰晶包裹，透明冰层显露钢结构，冰棱垂挂折射晨光，冷蓝调通透质感 | ![](img/da2b97242d58f1f3e9106357a3eb492e.png) |  |
 |  | **人物像素化** | 人物轮廓逐渐拆解成彩色方块，再重新拼接成方块状肢体、像素化纹理、眼睛为十字形的我的世界像素人形态，方块碎片飘落时带起微小的像素颗粒特效，整个变化过程生动有趣。 | ![](img/becbf58d45fc9bc41c54fbfbdaac4592.png) |  |
 |  | **变出翅膀** | 男人的背后生长出一副火焰翅膀，然后翅膀扇动男人向空中飞去，镜头由平视转为仰视 | ![](img/15547dd02a3c5247c508f5e5d26a9b8c.png) |  |
 |  | **妙笔生花** | 一只手拿着一支水晶笔，在空白的笔记本上慢慢地打转。随着它的移动，大大小小的精致水晶海棠花从绘制的线条中绽放——柔和的粉红色，近圆形的花瓣优雅地展开。花朵有机地伸展和生长，仿佛注入了生命。 | ![](img/742b2b23d4539154a83672c482ba8fc3.png) |  |
@@ -1238,11 +1199,9 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-07-11-6602-双手拿起开始揉捏，像被挤压的捏捏乐般出现凹陷，表面浮现出细密的弹性纹理；镜头跟随....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YsczbNZxDo5p5BxVAfrcSBI6nGn)
 
-![](img/54657bd57ceab99aa603c7ef24bf58ff.png)
 
 [jimeng-2025-07-11-2648-镜头从特写杂志封面开始，缓慢拉远并以 0.5 倍环绕变焦跟随，杂志中的女郎从封面....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L8yIbWpW9oU5ahxuEpocCDU4nvd)
 
-![](img/230ea68926c2623cb9f4020d30b8ba62.png)
 
 [jimeng-2025-07-11-6495-卢浮宫被巨型冰晶包裹，透明冰层显露钢结构，冰棱垂挂折射晨光，冷蓝调通透质感.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TgfFbx29no0BpBxyPZJcmpvtnFc)
 
@@ -1250,7 +1209,6 @@ ps:控制情绪演绎生成时的注意事项：
 
 [jimeng-2025-07-07-5821-人物轮廓逐渐拆解成彩色方块，再重新拼接成方块状肢体、像素化纹理、眼睛为十字形的我....mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HnqebGk10oWLfRx5orPczpG6nFd)
 
-![](img/fae0b5445f086932d224d709838fca42.png)
 
 [jimeng-2025-07-04-5268-男人的背后生长出一副火焰翅膀，然后翅膀扇动男人向空中飞去，镜头由平视转为仰视.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VoMybM9OSovvcLxEB0Hcn4zcnMh)
 

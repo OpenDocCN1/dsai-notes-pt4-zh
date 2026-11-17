@@ -32,7 +32,6 @@
 
 ### AI视频自动化
 
-![](img/057a989aecbf086b6e0a41e4311b1630.png)
 
 [6月8日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GYoVbPeYEo8vgExKLqfcjwgsnsc)
 

@@ -12,7 +12,6 @@
 
 > **Slogan：**让更多想法因 AI 落地生花
 
-![](img/10820bc8ebf2712f6a93ebfe251819c5.png)
 
 ## 万象 AI 实验室社区简介
 
@@ -22,7 +21,6 @@
 
 ![](img/244a66b28100aaa183108b22de06c7af.png)
 
-![](img/1f536eb1d6abae8b3979c80695287b34.png)
 
 ## **新伙伴学习指南**
 
@@ -86,19 +84,15 @@
 
 ![](img/92038da23ebeda667f24a1be74b97a0b.png)
 
-![](img/01902574e0f358ac8289db2133a50d8b.png)
 
 ## 知识库更新日志
 
-![](img/fa3d0d7793a202b58139b87ac98438d8.png)
 
 **知识库动态**
 
-![](img/98cd4da4df8bf9ab85e3d8605961b0d0.png)
 
 ## 知识库内容导航
 
-![](img/d9355adb3b146fda41977d5f7b0f5d21.png)
 
 > 说明：知识库一直都在更新，没有的就是在更新中，请耐心等待...
 
@@ -122,11 +116,9 @@
 
 [Cursor 学习手册（持续更新 ing...) ](https://yunyinghui.feishu.cn/wiki/KHcpw5oNZi2xCRkuuvVcu0iXnYc?from=from_copylink)
 
-![](img/3769010439b3e4f8c94c58b3c51edbf3.png)
 
 ## 知识库最新活动
 
-![](img/1c27cbdef4dcfb6f2d3d647db04ff546.png)
 
 ### 线上活动
 
@@ -136,17 +128,14 @@
 
 [社区线下活动专区](https://yunyinghui.feishu.cn/wiki/ZLjowZ3UEiDkXokZsRUcFNGfnSc?from=from_copylink)
 
-![](img/c1230a8e189d4e0eb1731ff65edc6c1d.png)
 
 ## 知识库最新直播
 
-![](img/cd7bc733845b9e28cf9efc3e950a01e0.png)
 
 > [社区共学活动日历](https://yunyinghui.feishu.cn/wiki/JQZRwXWEbiWbHjkkSd6chQhrnff?from=from_copylink)
 
 > [社区线上共学直播](https://yunyinghui.feishu.cn/wiki/ZCXWwGfLTiXcj9kjNAEcabCgn6g?from=from_copylink)
 
-![](img/01c566bb2bbbc9d29f9a8adbbb91d0e8.png)
 
 ## 官方组织学习群
 
@@ -176,7 +165,6 @@ AI 应用及变现社群（5000 人）
 
 > [社区垂直🛰️社群分类](https://yunyinghui.feishu.cn/wiki/HC4RwiyZaitV7ZkLFKUcr440ncc?from=from_copylink)
 
-![](img/8216b33eed19cad565931de5494cbb8d.png)
 
 ## 知识库共创成员
 
@@ -189,7 +177,6 @@ AI 应用及变现社群（5000 人）
 |  |  | ![](img/8e9216769ca30f2b1a4e2392867d8cb1.png) | +   13 年互联网内容营销经验，，专注研究 AI+营销，帮助企业和有产品的个人 IP 通过 AI 做内容引流、产品推广宣传、销售话术等，提升内容营销的效率和质量。 |  |
 | 德里克文 | derekdevin |  | +   同济大学毕业，设计师 | AI 视频 |
 
-![](img/5d8cd1ff1b07e95f93fdd068d00a6ade.png)
 
 ## 知识库内容达人
 
@@ -251,7 +238,6 @@ AI 应用及变现社群（5000 人）
 
 **#👸号：**黄啊码
 
-![](img/6bfaf91d832135672798fe323e84f3a9.png)
 
 **铁柱 AGI**
 
@@ -289,7 +275,6 @@ AI 应用及变现社群（5000 人）
 
 **介绍：**万象 AI 实验室共创者，AI 出海博主，前上市公司程序员
 
-![](img/66267d634e482a0a004f975133c2da10.png)
 
 ## 官方新媒体矩阵
 
@@ -319,7 +304,6 @@ AI 应用及变现社群（5000 人）
 
 **官方知乎号：万象 AI 实验室**
 
-![](img/0c609a8bf196d90f288caef1a3765a91.png)
 
 ## 知识库鸣谢清单
 
@@ -353,11 +337,9 @@ AI 应用及变现社群（5000 人）
 
 ![](img/b4f6b7f44b6e5ad82083cccdacd35b69.png)
 
-![](img/b34718d3354fcd9aa9741f67924e734f.png)
 
 ## 知识库友情链接
 
-![](img/966cec762c45f5d31d16b600dcf98868.png)
 
 ##
 
@@ -373,7 +355,6 @@ AI 应用及变现社群（5000 人）
 
 **让更多想法因 AI 落地生花**
 
-![](img/9636f54fc798a7eecf660afe95960597.png)
 
 ## 知识库合作联盟
 
@@ -391,7 +372,6 @@ AI 应用及变现社群（5000 人）
 
 ![](img/9ac19f71b1580637720fb8baa01e9691.png)
 
-![](img/3400130d17e4005deaed95af62a9062b.png)
 
 ## 知识库企业鸣谢
 
@@ -425,7 +405,6 @@ AI 应用及变现社群（5000 人）
 
 ![](img/9b49a6058b13f7fae7cd666fcbd0c7be.png)
 
-![](img/d118c15c57e7175a57a45b7bb0bbcc09.png)
 
 ## 内容与版权声明
 

@@ -146,7 +146,6 @@ A top-down view of a steaming hot bowl of Tonkotsu ramen. The broth is rich and 
 
 主体： 云朵组成的鲸鱼。
 
-![](img/496bad3edb4a1cc1d85d6d4fcbc97c8a.png)
 
 ```
 A surreal dreamscape showing a giant whale formed entirely out of white fluffy cumulus clouds, swimming through a deep blue sky above a mountain range. Small birds are flying around the cloud whale. The lighting represents golden hour, illuminating the edges of the cloud shapes. Dreamy atmosphere, fantasy art style, detailed matte painting, sense of wonder and scale.

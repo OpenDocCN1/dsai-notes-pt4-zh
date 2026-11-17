@@ -68,13 +68,11 @@ Veo 2 绝对是**值得关注的视频生成模型**，现在还**支持了 P �
 
 +   **P 视频：****无**需手动修图，移除视频中不需要的元素。注意看，左图是有吊威亚的，右图的绳子就被自然 P 掉了
 
-![](img/da41641fab6636f847e810077006968e.png)
 
 [GenAI_Caorusel_Inpainting.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UlGQbGH85onY0OxyQYccp0wInWg)
 
 +   **关键帧生成视频：**用首尾画面（最左为首图、最右为尾图），生成视频，画面效果非常稳定
 
-![](img/fb7ee44c10e671ad50972e6700beee2f.png)
 
 [GenAI_Carousel_Veo.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EcrdbGzTaooWdKxft3TcBvzmnNf)
 

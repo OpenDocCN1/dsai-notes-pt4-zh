@@ -326,7 +326,6 @@ https://nodejs.org/en/
 npm install -g @anthropic-ai/claude-code
 ```
 
-![](img/03464f946159b319cea01ad52bf21b78.png)
 
 命令行输入claude进行验证尝试：
 

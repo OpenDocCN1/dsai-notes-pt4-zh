@@ -268,7 +268,6 @@
 
 下面是逼单神器和活动海报：
 
-![](img/e13f96c597ec03c056cea82f057f71ad.png)
 
 ![](img/cbac529a2f691a72d4a7e222039a962e.png)
 

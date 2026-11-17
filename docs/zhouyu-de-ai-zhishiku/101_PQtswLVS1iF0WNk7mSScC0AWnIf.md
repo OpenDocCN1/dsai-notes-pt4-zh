@@ -97,7 +97,6 @@ Prompt: A top-down view of a steaming hot bowl of Tonkotsu ramen. The broth is r
 A surreal dreamscape showing a giant whale formed entirely out of white fluffy cumulus clouds, swimming through a deep blue sky above a mountain range. Small birds are flying around the cloud whale. The lighting represents golden hour, illuminating the edges of the cloud shapes. Dreamy atmosphere, fantasy art style, detailed matte painting, sense of wonder and scale.
 ```
 
-![](img/a3184d71c720947f82edebd9253480d2.png)
 
 ```
 **维度：建****筑空间****与几何透视

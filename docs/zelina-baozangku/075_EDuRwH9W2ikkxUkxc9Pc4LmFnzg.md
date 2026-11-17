@@ -126,7 +126,6 @@
 
 [2026 · Notion个人管理系统 ◎ ⌈码⌋力全开，一⌈码⌋平川 🌁 韩系浪漫紫](https://my.feishu.cn/wiki/J5A2wWIhuiXidikSi5Mc0nZenCh)
 
-![](img/f9d703b448be07150e4003ca14d8de07.png)
 
 ## 2、2026Notion系统-冰川蓝色系
 

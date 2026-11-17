@@ -32,9 +32,7 @@
 
 ![](img/7d639f76155fa28d0880eb8a2d93c619.png)
 
-![](img/e317624886433a3f30c1df27517a174e.png)
 
-![](img/e7a35aefa36e4dcb229af438cd3adfaa.png)
 
 ![](img/d24f23ae3409df2c0cce120ec0536aa1.png)
 

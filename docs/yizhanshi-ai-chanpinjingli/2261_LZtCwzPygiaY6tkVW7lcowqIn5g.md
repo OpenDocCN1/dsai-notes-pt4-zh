@@ -64,7 +64,6 @@ OpenAI 还在最近的 DevDay 上宣布了Realtime API、提示缓存、模型�
 
 与 ChatGPT 的高级语音模式类似，实时 API 支持使用 API 中已支持的六种预设语音（在新窗口中打开）进行自然语音对话。但是非常贵。
 
-![](img/3e16742982e89cb1d707bfcc4611a1a0.png)
 
 ### [微软发布新版Copilot](https://blogs.microsoft.com/blog/2024/10/01/an-ai-companion-for-everyone/)
 
@@ -94,7 +93,6 @@ Microsoft Edge 中的 Copilot ：
 
 可以检验一下微软AI的新领导 Yusuf Mehdi 交出的答卷了，目前iOS APP可以体验新的界面和交互，但是语音之类的还没上。
 
-![](img/4f8e904e1dec842776ea3e3ef7d40067.png)
 
 ### Meta 发布 Meta Movie Gen 视频音频生成模型系列
 
@@ -196,13 +194,11 @@ Luma 直接将现有模型的生成速度提到了了 20 秒以内 ，没有搞 
 
 而且这个项目还是开源的：[https://github.com](https://github.com/stackblitz/bolt.new)/stackblitz/bolt.new
 
-![](img/39d3ca9e563476a849b73d3f3a72867c.png)
 
 ### Open NotebookLM：开源的Notebook ML
 
 使用开源 AI 模型（Llama 3.1 405B、MeloTTS、Bark）将 PDF 转换成播客。
 
-![](img/8dc8bca0bc3ab2705b9a266fb37351a0.png)
 
 ### Wispr Flow ：语音输入工具
 

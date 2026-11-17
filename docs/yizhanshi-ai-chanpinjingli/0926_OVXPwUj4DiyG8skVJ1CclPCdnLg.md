@@ -6,7 +6,6 @@
 
 ### 账号分析
 
-![](img/f1042b783746a7bb41665325fc1e2f17.png)
 
 ### 赛道分析
 
@@ -40,11 +39,9 @@
 
 ##### 配置管理页面
 
-![](img/ef405b6e0bcc312d1e122c876aba367a.png)
 
 ##### 账号分析页面
 
-![](img/dd73f35b4fb00bf49faf512207e59b94.png)
 
 ##### 赛道分析页面
 
@@ -312,11 +309,9 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 最后一步，测试。找到一篇📕笔记，然后，试运行对话流，直接在对话窗口输入地址，当你看到数据，那就是成功了。
 
-![](img/29f744ee895b5f9e75bd6b1727f37add.png)
 
 回到智能体的编排页面，同样的方式，也测试一下。确保对话流执行成功。
 
-![](img/16268285c1b4f9f534d6af2b5f2cc24f.png)
 
 #### 发布
 
@@ -324,7 +319,6 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 点发布后，只选择多维表格，然后，点配置
 
-![](img/8e40a1678550ee71b8ba04702b59deba.png)
 
 点击后，会打开配置页面。
 
@@ -454,7 +448,6 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 最后，在插件市场，搜索官方的多维表格插件
 
-![](img/ebc13d8f4fce033cc4310c884af7545e.png)
 
 然后，选择 add_records，添加到工作流中。并分配配置参数，第一个参数，使用多维表格的url就行，第二个参数要使用我们代码转换后的数据，第三个参数一定要和你的表名称一致。
 
@@ -486,7 +479,6 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 我们切换到UI部分，点击按钮，在右侧的属性面板中，选择事件，并选择点击时调用工作流。分别把三个输入框的值给到对应的参数。然后点击确定。
 
-![](img/66ac82cf609604124682efa43e610d14.png)
 
 #### 预览测试
 

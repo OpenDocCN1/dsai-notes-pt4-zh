@@ -56,7 +56,6 @@
 
 ![](img/5e5fc7cbc35ea7e3849c313415b9b91f.png)
 
-![](img/32a67c3a1327b8206089186fb4779cdf.png)
 
 ![](img/62b970d0736eba1018478ecda9643187.png)
 
@@ -217,7 +216,6 @@
 
 ![](img/2fec4a9b784fce8bd5e845295317f06e.png)
 
-![](img/539ba2ba8ed9fec9694ac352eab0188b.png)
 
 ![](img/ecf66a31d159d7d0c9c1b453ba1579b6.png)
 
@@ -375,7 +373,6 @@
 
 +   使用精确的风格词或直接输入图像作为风格参考，有[助于获得更](https://bytedance.larkoffice.com/docx/L4vCdah1DoDg7axVdYGcoplSn9f#doxcnOSmluK5aZKhsaeWi5Hpand)理想的效果，更多艺术风格可点击提示词手册
 
-![](img/b9e63b3ca359ce4880b78b048b9e1b72.png)
 
 ![](img/153de335d373f4c54a85b893f04ba683.png)
 
@@ -444,15 +441,10 @@
 | --- | --- | --- |
 |  |  |  |
 
-![](img/15d8c263790da6c403cf005364628614.png)
 
-![](img/7195cebe8419eb83508c875c1598f4c1.png)
 
-![](img/35f51b75367f96617026658d52477a93.png)
 
-![](img/c39776907805a7c5eb1004152ba0ac79.png)
 
-![](img/9b88f3882b040c3f6125763308c79d8b.png)
 
 ![](img/f88714258fe5fdc479b6db973bbc86e9.png)
 
@@ -462,15 +454,10 @@
 | --- | --- | --- |
 |  |  |  |
 
-![](img/d93095c0b71c83f1c088334361ea2e97.png)
 
-![](img/e9b5d518bde70262f176baee1ef9b430.png)
 
-![](img/704af0c3343b448e857d70366b81cb44.png)
 
-![](img/685fddf5634dfaedca34093f277717d5.png)
 
-![](img/b9643a32f52ccb45192d45a20684afb5.png)
 
 ![](img/5a18849534bd889fba899dc67207e4cb.png)
 
@@ -493,35 +480,23 @@
 
 ### 改变风格
 
-| **风格** | ![](img/24659290661ec27e5f7bc68d09a9213b.png) |  |
 | --- | --- | --- |
 |  |  |  |
 
 ![](img/deef752d61818a97673ce097ce0b71c9.png)
 
-![](img/1ce5d3236342ab703a490a44545020f9.png)
 
 ![](img/aeba828addb8e3e70a674500f11ca877.png)
 
-![](img/14a67f0442d2488c723fc3d9bf01e055.png)
 
-![](img/3c74b16d80ddfd12002971fef00e1c98.png)
 
-![](img/a50fc7d0878711acb0e6c8b1cc6d68e8.png)
 
-![](img/41b8f83dbcaa5e79561cea4b6816b130.png)
 
-![](img/c27b7e605e3a0dab73e462eeaf76dac9.png)
 
-![](img/eb1881fcf5056056ad939e62472b78f1.png)
 
-![](img/bd02abc610fc72014a3a10229d91d10f.png)
 
-![](img/8736e140e8e0a3777896da10af479969.png)
 
-![](img/7c121967c91286e049d238330f70bd31.png)
 
-![](img/bb5b58da0a7859ed5bebfd093ca67316.png)
 
 ![](img/72a6fe1eff31837786f93e5370a3c842.png)
 
@@ -539,17 +514,14 @@
 
 ![](img/c030d3b962d9bee0d6a53d0de4504f2d.png)
 
-![](img/85e41649f8b926abeb329ee35ad0a053.png)
 
 ![](img/4c559174791364a344a6b54c11d2efbc.png)
 
-![](img/96d0861023d465d2f448eb19f7b9d4ac.png)
 
 ![](img/fdba31e49d1738998e11765aeb9d8d4c.png)
 
 ![](img/eff45ecb813b06c0de6fb630360d6934.png)
 
-![](img/4c31b8a746e9a039bf1cc59839bdecd3.png)
 
 ![](img/c5bfdb874f5a5c242352f88317b8a9e8.png)
 
@@ -559,19 +531,14 @@
 | --- | --- | --- |
 |  |  |  |
 
-![](img/41a5411cf80601842c73fa264c3a6e5a.png)
 
-![](img/8609af04b5e341c739ec4d8bde3ed7d2.png)
 
 ![](img/4447a9edee5b5209a5b641b7663c1ee0.png)
 
 ![](img/05c538d54f2951b6e8380535d3f04b4e.png)
 
-![](img/00767066ed0d7db72fd39ff3a41a8a96.png)
 
-![](img/3561dae1f8d741003ffac86fe21566a7.png)
 
-![](img/d86099a056fd397b9329e551c113cdb8.png)
 
 ![](img/d721c84d57c0f054602b554e852488f2.png)
 
@@ -583,17 +550,12 @@
 | --- | --- | --- |
 |  |  |  |
 
-![](img/daefa91904beccfa289b63b165cfa666.png)
 
-![](img/6cd6af2bfffc1b67571d1be08327b323.png)
 
-![](img/2309f299a6aeece4f9b977364f70ee82.png)
 
 ![](img/65c72098d392458818d57a28a1cd084b.png)
 
-![](img/76a0b1ae5efb19c6fb4b5a78bee3d3a4.png)
 
-![](img/684fd6ba1fc2b74e6e7f66e9355828ae.png)
 
 ![](img/73e0f98d12d2f8794f7c819811b311cd.png)
 
@@ -603,17 +565,11 @@
 | --- | --- | --- |
 |  |  |  |
 
-![](img/e9e2b72ce46add0db00d599869ffb848.png)
 
-![](img/4c7f53f801d0e42e7a371bd596d037d8.png)
 
-![](img/7bf2172d5b320e7caae093d208d45c32.png)
 
-![](img/eeebad316976423736951b507b693f52.png)
 
-![](img/f02afab89b97ac13957a516f2ccee003.png)
 
-![](img/774a01b17beb1df6ec7c8deb7480780e.png)
 
 ![](img/c142ba626122e828d97f3242cc4fb3e5.png)
 
@@ -625,55 +581,32 @@
 | --- | --- | --- |
 |  |  |  |
 
-![](img/c6c8cd3d924f85196d43047e1448ce79.png)
 
-![](img/976a539e60ff65d443277a8f1912c146.png)
 
-![](img/a6706c5722149dcbac587bac1a76053e.png)
 
-![](img/b2c6260395ef1cbf2d4af7190fc0d5b7.png)
 
-![](img/f87c712a49401a00e9504a6f508d181b.png)
 
-![](img/0875514288250e9c1f081e48c901a06e.png)
 
-![](img/b79cd0d110899c35280e8cbd28710dd0.png)
 
-![](img/8b6e374b1737d15f4458677ad235bf64.png)
 
 x
 
-![](img/dd0c54641c49c84541a45c13a20e1268.png)
 
-![](img/d04126a6de4ab585e0966a14cfc0e852.png)
 
-![](img/66638d52a49f4f1e85bfef677b39cd36.png)
 
-![](img/286526a9cb5a6b964311c8890be58d5c.png)
 
-![](img/28c28efe926445b23c0b16e8c28cb3da.png)
 
-![](img/3a6c53e147d195bf057ef9c122235a1c.png)
 
-![](img/6f301669812e85708eb0bc0951b2bae4.png)
 
-![](img/d9d2407324a4cb4ca21be143983aaa5f.png)
 
 x
 
-![](img/765f0d90ce3c25ebe9a1d7f25a16ccb8.png)
 
-![](img/59599fe00611e836cdfa0ee1a77f0352.png)
 
-![](img/2e197332041d8acbdaa24cebf6d12d2d.png)
 
-![](img/ba0a80d3562b95208a2b89ba13b8f7d6.png)
 
-![](img/9cbcd5ef2925a1d08c57efaa56da7e87.png)
 
-![](img/ba26772da422037777d1d7b4c5353208.png)
 
-![](img/e6442378f426fc2bcc7b578f5b946b24.png)
 
 ![](img/57b9131445c43b6e2dcff160c31ad106.png)
 
@@ -685,13 +618,10 @@ x
 | --- | --- | --- |
 |  |  |  |
 
-![](img/08e87507d0163757d6583ce3038ee230.png)
 
-![](img/2dc776765416ce38082b3a1fb1e2af5c.png)
 
 ![](img/46d6a1e87ce075cc415b2529e36b75a1.png)
 
-![](img/820f52908f4e3a38cf3f03403ea62e82.png)
 
 ![](img/68f31eb6ba8178a1e59dd96f63314b53.png)
 
@@ -744,29 +674,20 @@ x
 | --- | --- | --- |
 |  |  |  |
 
-![](img/4abfd6f17fdc2c36c1aa91a03d3e3b50.png)
 
-![](img/06362489fef913b3a5f30904f5ce1668.png)
 
-![](img/c774d2d96f10fba0f94b884464b45f94.png)
 
 ![](img/8f38cfdd763f4d2689255b31fd397f25.png)
 
 > 编辑指令：给图片中的人
 
-| **美妆** | ![](img/c73528fead8391d8832a88e81b4f4aaa.png) |  |
 | --- | --- | --- |
 |  |  |  |
 
-![](img/84be6dcb11601ae60ef7759d49f1e862.png)
 
-![](img/58c7ef2646e61e2e1dafe79ee097447b.png)
 
-![](img/9e27aaf4362e6ea5a865aabc82f1a15a.png)
 
-![](img/408b9b50f0df18b9236fb16796fa6b99.png)
 
-![](img/b5911eaa70001d50e10787c52e80aed1.png)
 
 ![](img/ab1e85a2905895705f04b864e087c5df.png)
 
@@ -776,13 +697,9 @@ x
 | --- | --- | --- |
 |  |  |  |
 
-![](img/deca32da9fd7c2f7dd15e3b38b1ca224.png)
 
-![](img/25a49af59a1afc31e7769785d535ab58.png)
 
-![](img/905ab48fd7dc038f0ac5336b2f565486.png)
 
-![](img/03111bb67bb53144141dc5a3a5f4a859.png)
 
 ![](img/2aa374ab6b70cda40cc3d73e2ccd80bc.png)
 
@@ -792,17 +709,11 @@ x
 | --- | --- | --- |
 |  |  |  |
 
-![](img/ae0bc725b133812942ae84387854fccb.png)
 
-![](img/c7c523e11d0c0828dfa60f5c877ad31c.png)
 
-![](img/072b137cff5a2476660ede07a923dca0.png)
 
-![](img/b4934a380d0e645d4136d211bb320133.png)
 
-![](img/b8f7c02f520014afd6041b7a644fa7f8.png)
 
-![](img/09d65b79362af526ce2ae8229d92aa88.png)
 
 ![](img/04a788a02f779cb8f4396e49972e3f8a.png)
 
@@ -812,15 +723,10 @@ x
 | --- | --- | --- |
 |  |  |  |
 
-![](img/8b07b4779c0138276b13fda05c6a3953.png)
 
-![](img/3bfbd3fbfc4a61fbfdf0d2f55162406e.png)
 
-![](img/6cdf0be9a482064302272a5111734005.png)
 
-![](img/be2734e47e861b954b79cbff3f971699.png)
 
-![](img/82a383c1453db7794574cb4058a18b79.png)
 
 ![](img/cdcaf36b499cdd00563f34f5842336f8.png)
 
@@ -830,11 +736,8 @@ x
 | --- | --- | --- |
 |  |  |  |
 
-![](img/dffb4f7625b7ba35f418f9511e6737ca.png)
 
-![](img/a5648b0e4fc10a4644852769ca0a04ae.png)
 
-![](img/2f63435693f60b9b66a002fc139c6b65.png)
 
 ![](img/f5c94dc721bb4fbe4c720c4059150c39.png)
 
@@ -846,19 +749,12 @@ x
 | --- | --- | --- |
 |  |  |  |
 
-![](img/bee8f4d4797ab49b53c4f88a4fc37fc7.png)
 
-![](img/61a9609da51ce6383e40a1fa2f9797e9.png)
 
-![](img/5ac517f418cbd4b0dc669355447c028f.png)
 
-![](img/94561c478dec89bf872e14c1a07c0ca9.png)
 
-![](img/304cb7fedf679d785cb5b06068cabff1.png)
 
-![](img/c71b9d2d0ae384298cd34284143cf251.png)
 
-![](img/629425ce7526fb4af461f5db4aab4415.png)
 
 ![](img/d9bbba377c3574e89ce9c9f28ce55f5d.png)
 
@@ -868,23 +764,18 @@ x
 | --- | --- | --- |
 |  |  |  |
 
-![](img/81c6dd61b2f1ea53c3fe5cd5c113757b.png)
 
-![](img/4da6c30ce59a32cc19e2adaae3d942ac.png)
 
 ![](img/aace6ab5733bd29f8239515a2aefcce6.png)
 
-![](img/f79adcdeba136a162de88a604b3f2aa4.png)
 
 ![](img/96beacadd2dec085b089705b778f88a4.png)
 
 ![](img/66560f5fc0e77ca3f8f64b016de19a7c.png)
 
-![](img/08ce4151b12c6456e41e3ce50b5348b7.png)
 
 ![](img/c71f6df0e101c2e7f997b6527e1004c2.png)
 
-![](img/ed5f555e777ce3e6ee699d84b1c81f5d.png)
 
 ![](img/ea5b9bc3d5c151a88084e997048aa437.png)
 
@@ -894,11 +785,8 @@ x
 | --- | --- | --- |
 |  |  |  |
 
-![](img/fb5c3914d160ebc14b776d72db352a15.png)
 
-![](img/002efac3ed4fb053e893469ba3a909b1.png)
 
-![](img/f6362e2533c6305078f63d5c8ddb087e.png)
 
 ![](img/a112771c727623d4fb1c7656e6e0bcb0.png)
 
@@ -914,11 +802,8 @@ x
 
 ![](img/944190c785c357d6c673ca8a87cee418.png)
 
-![](img/97b05d4a8a76de23f51aaf6a7a22e025.png)
 
-![](img/482c9760e093964147572367b803df6d.png)
 
-![](img/ffe99af81ac9290f41d01a8cc66ceb62.png)
 
 ![](img/453e95f84bb7a2abc5ed6f1cc691a770.png)
 
@@ -930,41 +815,26 @@ x
 | --- | --- | --- |
 |  |  |  |
 
-![](img/7af2189db67961c37a38d67bf739ea89.png)
 
-![](img/a0a62e920021c6f7e4a98b7d5d0d7a0c.png)
 
-![](img/54603b1a7e54136a4fd564974cc6326b.png)
 
-![](img/98842fa4cd8defc55d64b5c2f83f9bda.png)
 
-![](img/7b2716c7508db57a962a5e3eff925fb8.png)
 
-![](img/13487c2ce081595930486be23e66e74d.png)
 
-![](img/6fa64e53a0c074550444aa2c4ca719d7.png)
 
 ![](img/0014f208082880c92f8c57329f4baf04.png)
 
 > 编辑指令：将画面中的字体颜色改为
 
-| **文字材质** | ![](img/982b8b4c8d996f04e1582a08ec49b35c.png) |  |
 | --- | --- | --- |
 |  |  |  |
 
-![](img/e73f6f0dba565dc0a5ac517a236db4f3.png)
 
-![](img/dee9c72dee9fc1d428c0eb3187af99bd.png)
 
-![](img/af0fb436922725363da1264e4000f064.png)
 
-![](img/f7ec88dc935274f893eb409098ebf6ae.png)
 
-![](img/1575a12cc83c6c280f38e08bed665d40.png)
 
-![](img/0f5f56085ae3f6b6c3fae10d0c39aef2.png)
 
-![](img/1c3cdbf6e7e09ba6c895dc49c826625b.png)
 
 ![](img/1a1ab0892aae313b26c7c93b6212e46d.png)
 
@@ -1040,7 +910,6 @@ x
 
 ### **风格****迁移**
 
-| ![](img/123f43627471ea80d4464875ebc5788d.png) | ![](img/2c3fdc20f75f7c8ee42d051499f84eef.png) | ![](img/7454c3e8aa3fcd39ae2755896ba9f9fd.png) | ![](img/f0f4bcca7d1cd1d7c11ef9f4ca6ad516.png) | ![](img/430e2970aa4ed7b211753b8ce5de4905.png) | ![](img/032310ee117e3d25c8366c87898999c5.png) | ![](img/d49cd4e53ab7947813b17a20e45db666.png) | ![](img/692da25b1503faec530cbc8d0ffc81bc.png) | ![](img/935b5b5e30fe73ceb12cf2ab6332c522.png) | ![](img/7569e3ab7ca44c20f34123c91afa4ed4.png) | ![](img/41b199b360bcc214e4bf268dc691aecf.png) | ![](img/6d62b3d337e00a5f4d0f966a55f537d2.png) | ![](img/65574bc13d74c4f8abcda51594378908.png) | ![](img/290b89eff1c57b6221a68f4fea66242b.png) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | ![](img/fb0b87f4b3b489fe5c5a181c2c831f74.png) | ![](img/5c3aafb09ba6a578faf8b5b9db8fffc0.png) | ![](img/94eb9863ec8ec3736f97b7947016bacb.png) | ![](img/183daa8c8494b1c5a01973c9e840b42f.png) | ![](img/58dffc7cd758eda39e2d5f56e5cc38e0.png) | ![](img/19fa64cf1e4dad701a9919340f9f2f94.png) | ![](img/e46e8427bdd0f42c862db8ce0197375e.png) | ![](img/66edd65ef37910d77fe89619a81db905.png) | ![](img/6b69750a079eaeb8b2235840d4e53f07.png) | ![](img/11234352bb7897bc998d0024024aeefb.png) | ![](img/371b80acc0cb0e6445e364a719c77697.png) | ![](img/d0317dd41bf8c057307d57430d9488b4.png) | ![](img/73e8a76f20b7b280c47550141a9903a4.png) | ![](img/8601d71da54f7a1d199f2c835d6e5508.png) |
 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -1096,7 +965,6 @@ x
 
 ### 美学
 
-![](img/10d067388415b491103b14e6a70c06b5.png)
 
 ![](img/de6f9581b80f548f8783593221b0c3aa.png)
 
@@ -1110,7 +978,6 @@ x
 
 ![](img/c64cf3984cdf24828d6eaf19f5c597f5.png)
 
-![](img/bcf97378892145bad5e10eb85ed21396.png)
 
 ![](img/8ef2fb6577568a07211bdf86084356ae.png)
 
@@ -1120,19 +987,15 @@ x
 
 ![](img/156ec9dc16704509f60695ad689b776c.png)
 
-![](img/9cbe35a7e20cc6287b71cb97dd2131e0.png)
 
 ![](img/92e14fd3c331b627a04900d97a8308bd.png)
 
-![](img/49c4d09f2e9823a2d91e491b279e2fdb.png)
 
-![](img/a916fae22e3e4bcf842d05185aa3cf2a.png)
 
 ![](img/5d712eee40399a7a9fab7aac0c497902.png)
 
 ![](img/00626f97387a2eebf3ad9878ae585595.png)
 
-![](img/d900e13517bacd47cfac45648c57ccaa.png)
 
 ![](img/4cc4d73ae794dfb43508c5622e2d5b52.png)
 
@@ -1142,17 +1005,13 @@ x
 
 ![](img/03ba71916324dd72431ee1ada4ee4d50.png)
 
-![](img/4127647167f7414ec96ba625b18d3b9c.png)
 
-![](img/bc9d8814a8a2194c24f1f58ad7f45488.png)
 
-![](img/f7e74f75c313b180f4952cc21e55f5ae.png)
 
 ![](img/5205972ba77fa0d242d551ab3b6d5a46.png)
 
 ![](img/033f056c8e5f27bcbfce2531bf43caef.png)
 
-![](img/3c0cde2dbc80ea61b7283abc92bbbea4.png)
 
 ![](img/f65743348e1682085376dcfb76324068.png)
 
@@ -1170,7 +1029,6 @@ x
 
 ![](img/423aad043d7c97d64526e9aa9f8806c4.png)
 
-![](img/2fb91423d561dea0f129d6e218f9e835.png)
 
 ![](img/36341ba4555db4dd57e81b0b2e7502d1.png)
 
@@ -1180,15 +1038,12 @@ x
 
 ![](img/cc307526f36c90293be0b26705998ee4.png)
 
-![](img/26503064e66c3bfe52d014ff678f410c.png)
 
-![](img/5167d77c0e001eb111649e58b4c58b61.png)
 
 ![](img/fe0bbbea759df71dc1aeaba4a4158904.png)
 
 ![](img/02e208e5829d5a5036a5b57333c8e37b.png)
 
-![](img/f8215796308d372289e9869384802394.png)
 
 ![](img/c43bc44b80bebc58c6b45188e1d6679a.png)
 
@@ -1196,15 +1051,11 @@ x
 
 ![](img/1a41290e08fbd9612c2b033f536da51d.png)
 
-![](img/9e396fe3c2f27f2fe199441213d0cffe.png)
 
-![](img/92bccb0fc15f31b96989c7587d4ce275.png)
 
-![](img/81014b63ce3338cb698c30ce8f6bee25.png)
 
 ![](img/4b1f34c2eaa067bf90cc4432371983e1.png)
 
-![](img/1da6f9dc6e76d1acf8fbb64607d234b7.png)
 
 ![](img/6aa8d74c4f54eace8400182b1f902306.png)
 
@@ -1212,7 +1063,6 @@ x
 
 ![](img/f0ac1d37f1a1ea6cb6cd0949d3c9cf6a.png)
 
-![](img/fd9dd43cda5854a3ab9e37130317fb60.png)
 
 ![](img/0d9dc5fecc0538d1e06cdb6df5ac68fa.png)
 
@@ -1236,7 +1086,6 @@ x
 
 ![](img/ed8ab70ade27ccaf1c5c665573d38bad.png)
 
-![](img/3113651d96daf9f03ce03f5d7d43f0ca.png)
 
 ![](img/6b28ac300f47d8f9393df43ba654595a.png)
 
@@ -1252,7 +1101,6 @@ x
 
 ![](img/14a8a9cf168e5acfe1ab3e3b5bef7c4d.png)
 
-![](img/bffde821c64e82e198f0a98ac17a3d3e.png)
 
 ![](img/609afc720d25e85e9cdab011dd9749b3.png)
 
@@ -1260,7 +1108,6 @@ x
 
 ![](img/5b26ab12a02c31efb5bff53f69486557.png)
 
-![](img/d57f994036357d36cdfd15764965680b.png)
 
 ![](img/1e304b27c9d72eaaf0c3c55789edc97f.png)
 
@@ -1270,7 +1117,6 @@ x
 
 ### 艺术
 
-![](img/0bc1d8e0b636b694f3838c6f1f807ee0.png)
 
 ![](img/5fc2d39919565567bc53b1202e1b383a.png)
 
@@ -1288,25 +1134,18 @@ x
 
 ![](img/10f092e89ddc8e3ad6229f98ea867368.png)
 
-![](img/4671598dfafa57ab0ebb5cf212dd359d.png)
 
-![](img/6fed146bae3f6ad9b3dc359a70c7918f.png)
 
-![](img/be63a9364e2da75ed5a0c88919f6faf0.png)
 
-![](img/0ad4e28cca3b9bb1b93795ab7c0a4c48.png)
 
 ![](img/fa21115c2fdb38306623bb8e4f5042f3.png)
 
-![](img/557c5ce8e549066e285e1eaf29be1f3f.png)
 
 ![](img/d4483653fc4352d9e07c77c3369080e4.png)
 
 ![](img/f39cd36cf4ec3cdd31b30d275888cd8f.png)
 
-![](img/6b479874df4f7f34e3f7a8e4dce6c865.png)
 
-![](img/a15132d089db371b8defe19be5c5fa23.png)
 
 ![](img/be4e6fc4b09a5100beae2479d6005214.png)
 
@@ -1320,35 +1159,21 @@ x
 
 ### 材质
 
-![](img/817f0d1078690ddd3b497c1935856eb9.png)
 
-![](img/467d4860b08b4ea85959ba24a81c5f9d.png)
 
-![](img/3190919f28463882e97fe0dae0fcf3e2.png)
 
-![](img/5723aa214d8e5df1400f555a9341b44a.png)
 
-![](img/c369aa9e5edf945be0750a2b9e424b35.png)
 
-![](img/164d6ac6aad0743f16726adbb00b8f54.png)
 
-![](img/62cc0e6a929d13c5e27ffc9bab4812e7.png)
 
-![](img/54f9fb10a71226f370ba65396cc8d06e.png)
 
-![](img/ebfcd6500b434ccd9800fad603874e93.png)
 
-![](img/4f03b28479533ce401730976c14b7864.png)
 
-![](img/96d7fc8b89007a277fdf7e1b758d8765.png)
 
 ![](img/8af0e3bd7cb1a3e13e210ad73bc1d039.png)
 
-![](img/8d2dac867e651b13faeb38e78dfdd67a.png)
 
-![](img/304c9fd9d5223eb1e7cd1edbe28b7bd7.png)
 
-![](img/5cf89457c008ce1d8892b3acfa925df9.png)
 
 ![](img/f792eac21bfa5fa2de7f3325c0c5cb69.png)
 
@@ -1356,50 +1181,31 @@ x
 
 ![](img/7fc464aecbebcf7a0bb63a82b79d0218.png)
 
-![](img/47f3f93160baa77ca4e7f2fa52f3873b.png)
 
-![](img/fc0e0bc7b9d293824da248915fb4dbea.png)
 
-![](img/ce37dea38d7ca2f27b740542315f2c82.png)
 
-![](img/0ab8ab9a823335f1a5f146acdb183836.png)
 
-![](img/3ebfe4d3cbe9ada0d160f90059a777ef.png)
 
-![](img/50ac77387956053dae6c4fe3b8622886.png)
 
-![](img/887060211bd7203048f94095c79cf939.png)
 
-![](img/c69c7f477fad04406806b0f8feb37ab2.png)
 
-![](img/59b6080e35083fa1ef4bdba3fb33c54b.png)
 
-![](img/426ade2bdf84fab7a4c6cf3240f6da92.png)
 
-![](img/8d6eb69c29b52aa408076853c819686a.png)
 
 ![](img/d3bd870adcfd4c75ea9c38844cb9b959.png)
 
 ![](img/30062a7ec700f3cfa836d1ae6ad62321.png)
 
-![](img/bdaa7becdb7abcd6c45dc4f56b21457a.png)
 
-![](img/86667cf52e00b3ad7482d5b1a371276f.png)
 
-![](img/cc9271361da375686521e544246a16e0.png)
 
-![](img/cfcf338c813de2a3d11bf85d2d98f359.png)
 
 ![](img/198d8275bd78d4e574bca4a2d1d26550.png)
 
 ![](img/d16d1aa22f0b2e3527b7679f238c8496.png)
 
-![](img/c855aa0da90c7bdb62764dd810ac7081.png)
 
-![](img/2de27cea1975861c535bfa0375254256.png)
 
-![](img/6acbbae96dbc152c5927d165b6aeebf3.png)
 
-![](img/5ef695fe8b14ac8fcdf83ab006d083d9.png)
 
 ![](img/27c4e964ab6a22e75d2bf51f287e3936.png)

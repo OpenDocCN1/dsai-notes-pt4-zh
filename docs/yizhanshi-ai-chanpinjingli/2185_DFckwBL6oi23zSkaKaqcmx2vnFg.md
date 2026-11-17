@@ -70,13 +70,11 @@ Cluade 已经可以写出很好的代码了，但是对于零基础的人来说�
 
 # 产品推荐 ✦
 
-![](img/49f5c3c9a65846e5ac6087524616d9eb.png)
 
 ## AdvancedLivePortrait：自定义面部表情动画
 
 Live Portrait 被玩出花了。AdvancedLivePortrait 这个插件可以让你手动编辑人脸图片的表情生成视频。而且也可以复用别人编辑的表情。也支持从图片里面提取表情参数。提取后可以直接讲表情参数合成到视频里。
 
-![](img/cd07598d191f51df580d463538a00f69.png)
 
 ## Polymet ：AI 生成前端界面
 
@@ -92,7 +90,6 @@ YC 投了一个类似V0 的前端代码生成项目 Polymet。
 
 最好的是可以选择区域告诉 AI 要修改的部分比文字描述精准。
 
-![](img/25cc273f5f0e8b45100aa871cc67b0e9.png)
 
 ## PackPack：保存和收集内容 AI 整理
 

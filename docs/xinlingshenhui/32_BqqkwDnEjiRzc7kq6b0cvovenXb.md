@@ -24,25 +24,21 @@
 
 中文:一张特写侧角照片，模特画着霓虹橙和薰衣草双色眼妆、大胆的黑色翼状眼线、浓密的睫毛和桃色哑光唇膏，她的目光固定在相机上，背景是纯黑色的背景 。 --ar 16:9 --v 6.0 --s 750
 
-![](img/9a5f1b2c45da0ca03d90cd3b924f516e.png)
 
 5.英文：An up-close side view of an extravagant model showcasing vivid neon avant-garde red eye makeup, thick winged eyeliner adorned with pink dotted Swarovski crystals, long pink lashes, and glossy lipstick, looking into the camera against a uniform pink background. --ar 16:9 --v 6.0 --s 750
 
 中文：奢华模特的近距离侧视图，展示生动的霓虹前卫红色眼妆、饰有粉红色点缀施华洛世奇水晶的粗翼眼线、长长的粉红色睫毛和光泽口红，在统一的粉红色背景下看着镜头 背景。 --ar 16:9 --v 6.0 --s 750
 
-![](img/669bffe298177996bbcf6399c0d7ac0a.png)
 
 6.英文：An image featuring a stunning Brazilian model with a voluminous messy bun, direct eye contact with the camera, dramatic smoky black eye makeup embellished with crystal lashes, and glossy lipstick, all against a beige striped background. --ar 16:9 --v 6.0 --s 750
 
 中文：一张照片中，一位令人惊叹的巴西模特，有着蓬松凌乱的发髻，目光直接与镜头接触，夸张的烟熏黑眼妆点缀着水晶睫毛，涂着光泽的口红，所有这些都映衬在米色条纹背景上。 --ar 16:9 --v 6.0 --s 750
 
-![](img/95e940bf20c97a9759eb39ca875ac9b8.png)
 
 7.英文：A closeup, side-angle photo of a model with eye-catching bright neon red eye makeup adorned with dotted hearts and shimmering effects, thick black winged eyeliner, and shimmering lipstick, as she looks into the camera, set against a solid pink backdrop --ar 16:9 --v 6.0 --s 750
 
 中文：一张特写侧角照片，模特的妆容引人注目，明亮的霓虹红眼妆，点缀着心形和闪闪发光的效果，浓密的黑色带翼眼线和闪闪发光的口红，她看着镜头，背景是 纯粉色背景 --ar 16:9 --v 6.0 --s 750
 
-![](img/282e288f1c42a04c44090d0d7505ef7a.png)
 
 8.英文：A closeup portrait capturing a woman's full face as she giggles, her makeup featuring matte lipstick, golden eyeshadow, and black eyeliner. --ar 16:9 --v 6.0 --s 750
 
@@ -54,7 +50,6 @@
 
 中文：一张侧面照片，展示了一位女性的脸，她的脸上画着令人惊叹的眼妆，包括带翼的眼线，延伸到她脸颊上手绘的浪漫小花朵，辅以有光泽的嘴唇，在粉红色的背景下。 --ar 16:9 --v 6.0 --s 750
 
-![](img/4655cbf7abc79f94edebcb309147d547.png)
 
 10：英文：A striking photo of a model with avant-garde white short hair, looking straight at the camera. Her makeup includes eyeliner with wings, super long pink Swarovski eyelashes, and gloss lipstick with obvious lip lines on a floral background. --s 750 --ar 16:9 --v 6.0
 
@@ -66,31 +61,26 @@
 
 中文：一张侧面照片中，模特有着引人注目的超长睫毛、从眼睑延伸到太阳穴的霓虹紫色眼妆，以及醒目的施华洛世奇项链，彰显出大胆的个性。 --ar 16:9 --v 6.0 --s 750
 
-![](img/442510a216ff556fd8e176d03f8711ee.png)
 
 12.英文：closeup side angle photo of a model with gorgeous bright neon dotted red eye makeup and thick black winged eyeliner, peachy shimmering lipstick, looking into the camera, solid pink color background --ar 16:9 --v 6.0 --s 750
 
 中文：模特的特写侧角照片，华丽明亮的霓虹灯点红眼妆和浓密的黑翼眼线，桃色闪闪发光的唇膏，看着镜头，纯粉色背景 --ar 16:9 --v 6.0 -- 750号
 
-![](img/2adb591f1399693b7a15eb207435d6f5.png)
 
 13.英文：closeup side angle photo of a model with gorgeous bright neon orange and lavender duotone eye makeup and thick black winged eyeliner, thick eyelashes,peachy matte lipstick, looking into the camera, solid black color background --ar 16:9 --v 6.0 --s 750
 
 中文：模特的特写侧角照片，华丽明亮的霓虹橙色和薰衣草双色调眼妆和浓密的黑色翼状眼线，浓密的睫毛，桃色哑光唇膏，看着镜头，纯黑色背景 --ar 16:9 - -v 6.0 --s 750
 
-![](img/157cbfa7b6eb4a4d28bee67d7ea7b2e3.png)
 
 14.英文：closeup side angle photo of an extravagant model with gorgeous bright neon avant-garde red eye makeup and thick pink dotted Swarovski winged eyeliner, long pink lashes, glossy lipstick, looking into the camera, solid pink color background --ar 16:9 --v 6.0 --s 750
 
 中文：一位奢华模特的特写侧角照片，华丽明亮的霓虹前卫红色眼妆和浓密的粉红色点缀施华洛世奇翼眼线，粉红色长睫毛，有光泽的口红，看着相机，纯粉红色背景--ar 16 ：9 --v 6.0 --s 750
 
-![](img/5b0e3a7232f0a341c7e31690196cc4a8.png)
 
 15.英文:closeup side angle photo of a model with gorgeous bright neon dotted hearts avant-garde shimmering red eye makeup and thick black winged eyeliner, shimmering lipstick, looking into the camera, solid pink color background --ar 16:9 --v 6.0 --s 750
 
 中文模特的特写侧角照片，华丽明亮的霓虹灯点心前卫闪闪发光的红色眼妆和浓密的黑翼眼线，闪闪发光的口红，看着相机，纯粉色背景 --ar 16:9 --v 6.0 --s 750
 
-![](img/73e502d97927f970c139028e23228fe6.png)
 
 16.英文：a side profile angle photo of a model with thick super long dramatic eyelashes, neon purple eye makeup that runs from her eyelid up to her temple, wearing a big swarovski necklace --ar 16:9 --v 6.0 --s 750
 

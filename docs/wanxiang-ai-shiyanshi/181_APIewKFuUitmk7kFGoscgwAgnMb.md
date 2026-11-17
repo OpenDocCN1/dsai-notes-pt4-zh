@@ -328,7 +328,6 @@ Return Boolean output​If the answer is affirmative, return Yes, if the output 
 
 把 AI 返回的 yes/no，跟有用信息整合在一起
 
-![](img/bcf49688bd4c92f4682e73a7dcc281ce.png)
 
 ## 11、过滤
 

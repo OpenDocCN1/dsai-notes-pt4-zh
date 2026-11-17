@@ -60,7 +60,6 @@ chatanywhere API 调用：https://api.chatanywhere.tech/v1/embeddings
 
 ## 2.1 提问论文细节
 
-![](img/96faefdb8df795ddac75f1ef53de9f7b.png)
 
 ## 2.2 总结论文工作
 

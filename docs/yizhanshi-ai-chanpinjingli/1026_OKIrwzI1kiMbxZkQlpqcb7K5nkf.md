@@ -138,13 +138,11 @@ run_task(task_cfg=task_cfg)
 
 可以看到模型的得分还是不错的，模型评测的文件保存在/root/autodl-tmp/outputs/Qwen3-8B/20250502_002809/reviews/Qwen3-8B目录下。
 
-![](img/d46ae5f41114072d1edd3243c31145eb.png)
 
 ## EvalScope 简介：
 
 +   EvalScope 支持多种模型评测 backend，包括 OpenAI API、OpenCompass、VLMEvalKit、RAGEval 等。
 
-![](img/00b6a64f45a01f31754beb38bcacc6b5.png)
 
 +   EvalScope 也支持自定义评测任务和数据集，支持多种评测指标。
 

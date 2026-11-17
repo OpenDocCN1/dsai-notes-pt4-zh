@@ -168,7 +168,6 @@ https://code.visualstudio.com/
 
 或者在 vs code 插件市场搜索「Claude code」，即可安装
 
-![](img/877dacf5c288a5f9b880572daa1e8a29.png)
 
 #### 如何使用
 
@@ -180,7 +179,6 @@ https://code.visualstudio.com/
 
 +   在 cc Switch 里勾选应用到 Claude code 插件，然后重新启动 vs code。
 
-![](img/469ef22663cd204366fe8d85fac0c2c8.png)
 
 ![](img/87ff8746ccf8709cbbd33274e38ab949.png)
 

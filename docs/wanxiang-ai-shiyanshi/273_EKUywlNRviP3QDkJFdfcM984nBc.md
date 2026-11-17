@@ -30,7 +30,6 @@
 
 **体验网址：**[扣子空间 - AI 办公助手](https://www.coze.cn/s/99-CJHODzCk/)
 
-![](img/e2346a8f81d50653005deba8f940cfd8.png)
 
 ## 产品定位
 

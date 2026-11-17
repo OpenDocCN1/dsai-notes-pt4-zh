@@ -118,8 +118,6 @@
 
 | #### [AI产品经理学习清单](https://v11enp9ok1h.feishu.cn/wiki/Cprcw2Xciiy1Jrkz8nRcwzwcnYg) |  |  |
 | --- | --- | --- |
-| ![](img/e41389b22a794590c665bb2e05974637.png) | ![](img/cfe977740717e4cae00a515e26d318d2.png) | ![](img/5a0a0e1ace1979d59c4f8201be8149f1.png) |
-| ![](img/1c45a234ab887eeac99d32e1554b7049.png) | ![](img/da064f467159b7f42ede3559f175f4cd.png) | ![](img/2015763adcf58679ef408c6b979ef318.png) |
 | ![](img/6931c33d6ce182553605831920deb5c0.png) | ![](img/e62ae934bd507e804f2433555092a8e1.png) | ![](img/c1313f57b475f07b1b502a0b337d8c88.png) |
 
 **书籍📚：**
@@ -208,6 +206,5 @@
 
 #### 大厂axure原型图案例库
 
-![](img/56f983022da02e48d7e6ba1f60e18a02.png)
 
 ![](img/f079eda0daeb7331ecc33832e95e7535.png)

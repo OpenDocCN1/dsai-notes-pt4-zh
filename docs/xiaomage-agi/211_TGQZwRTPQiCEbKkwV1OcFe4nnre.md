@@ -150,67 +150,38 @@ SuperCLUE认为，客观题相对主观题更容易通过题库形式进行训�
 
 具体内容如下
 
-![](img/512b8b33562bbc5689632a7617581293.png)
 
-![](img/c32f87ff342614075b45148fdf532e1d.png)
 
-![](img/bbfa23b726631b3ab51c17309cb81133.png)
 
-![](img/0156219095d5975337e8ccdba43f2b4e.png)
 
-![](img/e96b46ce90e89fc81547601ef614628b.png)
 
-![](img/7ff41de51a35feabf3ab3fa9cf19b6dd.png)
 
-![](img/5e1a0e536450ab2be54c020fde54ae0d.png)
 
-![](img/a7398f223713729724af98f12b9575d6.png)
 
-![](img/8345c314699ec43f49c1b2c48deedc5c.png)
 
-![](img/2991510e4043f62ce02bfb50273df196.png)
 
-![](img/1495371e124f6ad68a4e6e09fa95c78e.png)
 
-![](img/6f883d7e4efbd32353ce381878f4c11f.png)
 
-![](img/1b463f5fe9af870d264f621559eae63e.png)
 
-![](img/5ac4f128000b224340b3fea27c1a2c36.png)
 
-![](img/7c7dbeec3d31bb54eae22ce8cc5c7f02.png)
 
-![](img/bfb41f9bfd95f374e52c15714d3e5406.png)
 
-![](img/34638dcb2a9b2a4e7ff6a2fea9d89a6b.png)
 
-![](img/0beaeeb98d97929e5ce3f0daefcb5244.png)
 
 ![](img/8a4398585194ece61109a3116c1aad7d.png)
 
 ![](img/b2373c9702e4f1ad531c5c8389f3963b.png)
 
-![](img/8fa983c35d2f05afd96cfd4b05f62944.png)
 
-![](img/757a201cb350de09528b1b4370a86bdc.png)
 
-![](img/5931fb50925c47ebdb56a6b2da0aaaef.png)
 
-![](img/46989cda0c7c4e0aca62700066797849.png)
 
-![](img/97b05c9a122a6dc1d46885eabfd9bd64.png)
 
-![](img/33fa5160f67422df9ccd0b18a2f59981.png)
 
-![](img/79de16e033534ce0fb2abee7105031fd.png)
 
-![](img/1c894c897e7b4e73871066613bcf9306.png)
 
-![](img/ab6aa32adf7382053ee54802000d98e5.png)
 
-![](img/fe410430e8dcb213327994681acd453c.png)
 
-![](img/8f1da0b6a91b5a75850fef95624b5a4c.png)
 
 ![](img/0a603f2d6d51ea7e2d7275a79129a90d.png)
 

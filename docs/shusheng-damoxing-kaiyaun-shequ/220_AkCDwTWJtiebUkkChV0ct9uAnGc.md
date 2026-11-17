@@ -71,7 +71,6 @@ git lfs instal1 #然后才能运行git lfs install
 
 1.  git push 出错 @https://blog.csdn.net/wudiyjnewway/article/details/139663439
 
-![](img/789a3e9f8e75c7acf3305729a7dd0287.png)
 
 1.  解决办法：正确的密码其实是github给你的token，设置token方法，在Setting/Developer Settings/personal access token/tokens (classic)/Generate new token/Generate new token(classic)，里面设置
 

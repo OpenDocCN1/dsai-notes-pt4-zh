@@ -67,7 +67,6 @@ python /root/demo/cli-demo.py
 
 执行后效果如下：
 
-![](img/3c09938e05fae34c08667743adc4bced.png)
 
 ## InternVL3-2B的web-demo
 
@@ -192,7 +191,6 @@ ssh root@ssh.intern-ai.org.cn -p 你的ssh端口号 -CNg -L 6001:127.0.0.1:6000
 
 启动之后，找了一张老虎的照片进行测试，效果如下：
 
-![](img/e5e297ae6d843180108b6557d44d4349.png)
 
 # InternVL3-9B的微调
 
@@ -241,7 +239,6 @@ git clone https://oauth2:xxxxxxxxx@www.modelscope.cn/datasets/livehouse/SanguoVL
 
 复制最下面的代码git clone https://oauth2:xxxxxxxxx@www.modelscope.cn/datasets/livehouse/SanguoVLM-trainset.git
 
-![](img/240e072195ff5a81f1f79aa2264bdabb.png)
 
 ![](img/ce623fc8547ec3af60176fad53fb1177.png)
 
@@ -979,23 +976,14 @@ ssh root@ssh.intern-ai.org.cn -p 你的ssh端口号 -CNg -L 6004:127.0.0.1:6000
 
 max_epochs=8的时候，3小时的训练效果如下：
 
-![](img/bcb444b1f225fcc2ff8be61138325a61.png)
 
-![](img/60283c347cfea58308761df8b16df072.png)
 
-![](img/bca26929a4398bf348821d2d9754f950.png)
 
-![](img/26e5397c0c56c62dba2b5dfaa02b9e3d.png)
 
-![](img/dfc1badad0b8f4a0301c7f9dc9d0468d.png)
 
-![](img/4cd13affaf5ea9d86263a4355ee4c2ec.png)
 
-![](img/dfe210bc199d1ea30ffa2700f3691903.png)
 
-![](img/d5ea21c37370288ebc882eae02901c63.png)
 
-![](img/317e4b74d5702deb0fbb676816253697.png)
 
 人物识别上有一些准确度，但是剧情上很不准确。属于欠拟合，需要在细化上下功夫，先用大学习率快速学习总体特征，然后再用小学习率学习各种细化特征(各个人物之间的区别)。
 
@@ -1013,77 +1001,49 @@ max_epochs=8的时候，3小时的训练效果如下：
 
 成功案例：
 
-![](img/003c513ac746752415973be3c667e706.png)
 
-![](img/83020d058d24f074a0ddaec54e1a1387.png)
 
-![](img/7481cfbc78f4be4667dd16e24c01644e.png)
 
-![](img/8efcff0d2c2334e5c56d375308a671ff.png)
 
-![](img/dcf68c41919956d879350effc3c121af.png)
 
-![](img/5448673a8c18b3efca4c168ab19ba607.png)
 
-![](img/ba0ced2cdf0a7ccdcb57c1ae436079cb.png)
 
-![](img/67fc0b9c6cbbbe65c82b2cf0315b451e.png)
 
-![](img/4aecabda80042f7e8b3391ed5f792f95.png)
 
-![](img/b7fdff187fca1469af8b5cf732ca415b.png)
 
 > 剧情解读有些小瑕疵，估计是模型推理之时，随机参数设置过高。
 
-![](img/633d5d6027a7819c21cab10f4e90927d.png)
 
-![](img/f8754d06ea2c73c73558378776ecfadc.png)
 
-![](img/cc7712c95e9c5e12d0d9974a24769d61.png)
 
-![](img/d8ffb85618df6b5e91b0e3bea2301964.png)
 
-![](img/70bc925afee230208c91a410222cf735.png)
 
-![](img/f1a868421ae09a41a2f13d42e504c7bb.png)
 
-![](img/1f0764b1609349d520cbdcc2602d4249.png)
 
-![](img/54f394e840f13cb4dacba6064ad929fc.png)
 
-![](img/b6a7077e024efb66c970f5bf918dc041.png)
 
-![](img/f8905f2c3ee9a01b7224a8e3e2fcf299.png)
 
 > 曹操这个角色的人物识别和剧情解读的训练效果很好，除了训练过程合理安排了，还有个原因是训练集里曹操的图片很多。前5集《桃园三结义》、《十常侍乱政》、《董卓霸京师》、《孟德献刀》、《三英战吕布》，除了第一集曹操没啥出镜，其他每集里60%以上的分镜都有曹操出现。因此曹操图片多了，就能充分学习。
 
 失败案例：
 
-![](img/94432051096bf84789ffc40e500bf6aa.png)
 
-![](img/29161a2d0d029f17d990925f78852e1d.png)
 
 > 刘备识别失败原因，在于训练集里刘备的肖像太少了。训练集里一共259张图片，属于刘备的图片也就才10张左右，比张飞和关羽还少。训练集里图片最多的就是曹操了，有三四十张。
 
-![](img/840497595671c034b18a9faf5171b09c.png)
 
 > 剧情解读错误，这个画面是刘关张平定黄巾之后，在去安喜县赴任的路上，一共就截取了3张图放入训练集中。
 
-![](img/d2fe4f8db15d71fd9cb6c6e8fa4be698.png)
 
 > 身份识别正确，但剧情背景知识错误，算是模型生成时候，概率分布导致。
 
-![](img/336e8287823b30c5ed9669b630e02755.png)
 
 > 卢植只在训练集里出现了一次，无法准确识别也可以理解
 
-![](img/1cf22263934f0ec4db637b7db66ac22e.png)
 
 > 多人图片，448*448像素块里，难以准确识别
 
-![](img/88f20429ad449c629a581608aa4889a8.png)
 
-![](img/42c441ca78e9b255eeebc20326970e25.png)
 
 ![](img/86d6532028dbb9eb3afa2b61c5bcb14a.png)
 

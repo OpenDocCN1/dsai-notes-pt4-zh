@@ -564,7 +564,6 @@ python run.py internlm3-oc_eval.py --debug
 
 ![](img/d5c849ae64d3d3fce09fe380412ea897.png)
 
-![](img/3fe78ee4faa59393c5ceb61f60490c1d.png)
 
 接下来需要两个步骤：
 

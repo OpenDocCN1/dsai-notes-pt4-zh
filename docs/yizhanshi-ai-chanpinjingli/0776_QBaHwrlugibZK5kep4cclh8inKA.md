@@ -16,7 +16,6 @@
 
 1.  第二个Code-LLM接入了一个辅助代码生成的工具，以保证代码生成的稳定性。将上一步生成的因子表达式转换为可执行的代码，并计算结果。在此过程中如果发生错误，Code-LLM能够迭代地对代码进行修改。
 
-![](img/f8ace2b21ed926534e53ce10361f5b7a.png)
 
 [factor_mining2_output.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TmjUbWZmJoTELWxd1Z9cBeoSnQe)
 

@@ -193,7 +193,6 @@ PS：Gemini Web/App 里的 Imagen3 和 Imagenfx 是一样的
 
 最终也获得了相对稳定，且调整成果的生效成果 ⬇️
 
-![](img/ea9d9b451f0359df51794d9308cbe9f1.png)
 
 > 另外，你甚至还可以用这套提示框架，去逆推已有图像的文生图提示词。
 
@@ -207,7 +206,6 @@ PS：Gemini Web/App 里的 Imagen3 和 Imagenfx 是一样的
 
 来自 @一泽Eze ，使用 Imagefx
 
-![](img/691ee1c9dc05da3f88a14051610316d3.png)
 
 ```
 ## 原文
@@ -221,7 +219,6 @@ PS：Gemini Web/App 里的 Imagen3 和 Imagenfx 是一样的
 
 来自 @一泽Eze，使用 Imagefx
 
-![](img/5325e1062447cf1997899788027e75fb.png)
 
 ```
 ## 原文
@@ -235,7 +232,6 @@ PS：Gemini Web/App 里的 Imagen3 和 Imagenfx 是一样的
 
 来自 @一泽Eze ，使用 Imagefx
 
-![](img/4ef700807e14a0bb4497f8c15ff8f7c1.png)
 
 ```
 ## 原文

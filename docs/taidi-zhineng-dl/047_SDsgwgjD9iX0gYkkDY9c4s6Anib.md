@@ -62,7 +62,6 @@ stride = 8，就是 8-way bank conflict。
 
 stride = N 意味着，连续 N 个 SRAM bank，只有 1 个会工作，N 个 Thead 的数据，都在这里。
 
-![](img/b9bb2687e21ab38be4cb3bc40f5c0b69.png)
 
 ![](img/ba91ed3d7db6744b35ffadfcb7af325b.png)
 
@@ -104,7 +103,6 @@ https://www.youtube.com/playlist?list=PLZU5hLL_713ygweO3b_9KiZUJuEI7I5yK
 
 一个 cycle 可以读写多个 register，但 SRAM 必须是相同地址。（可以用多个 bank 提高 bandwidth）
 
-![](img/b5c34107d300b5142aa3ab5300651da2.png)
 
 RISC 里，必须用 load/store 才能访问 memory。在 CISC 里，有 instruction 可以直接访问 SRAM。
 
@@ -112,13 +110,10 @@ GPU 里面，H100 新增的 wgmma 可能是可以直接访问 SRAM 的。
 
 ![](img/30595d37e45f659c7dceee5fcef4b2ba.png)
 
-![](img/2a07c0e424eca34a922478e630c41c61.png)
 
 hierarchy 的搞出来了 banks
 
-![](img/f6951e8350d0c5f813d4cbabaef2d102.png)
 
-![](img/7a1d0a534d07ae069a01f2e87d59053f.png)
 
 ![](img/a489894ca866e63adabef90e716f66a8.png)
 
@@ -146,7 +141,6 @@ Padding: https://developer.nvidia.com/blog/efficient-matrix-transpose-cuda-cc/ F
 
 Naive Row-Major Layout
 
-![](img/59ce6f3e19498aacff2f9e0ee44fd440.png)
 
 按行访问时，没有 bank conflict。
 
@@ -407,7 +401,6 @@ Profile 结果如下：
 
 Naive Row-Major Layout
 
-![](img/7603e5c4d5f1b086e06ade5abfe8f62d.png)
 
 按行访问时，没有 bank conflict。
 
@@ -581,7 +574,6 @@ swizzle 原理：通过重映射的方式，能够将本来在相同 Bank 的内
 
 经过 Swizzle 后的内存映射如下图所示，此时可以见 T0/T4, T1/T5, T2/T6, T3/T7 之间的内存访问完全把 Bank 分开进行访问，此时前八个线程的内存访问达到了 Bank Conflict free。其他线程的访问同理可以避免 Bank Conflict，在这种情况下 Swizzle 可以实现 Bank Conflict free。在此时尽管对于物理地址的访问发生了变化，但对于用户来说逻辑地址依然是不变的。
 
-![](img/135fc8a51dd68babd961320fcd7579c8.png)
 
 作为对比，padding 后的效果
 

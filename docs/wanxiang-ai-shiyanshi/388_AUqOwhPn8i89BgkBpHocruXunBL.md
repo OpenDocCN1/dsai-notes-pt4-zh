@@ -1288,7 +1288,6 @@
 
 **🛰️扫码查看招聘岗位   **
 
-![](img/eb3db26697d27f9ff08954d3c2721bf1.png)
 
 黄老师 huangxinxuan@caict.ac.cn
 

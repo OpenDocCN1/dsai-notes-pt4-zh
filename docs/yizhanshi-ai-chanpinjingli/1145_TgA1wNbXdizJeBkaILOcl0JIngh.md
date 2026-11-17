@@ -397,7 +397,6 @@ Look-Alike 人群扩散召回：适用于发布一段时间已有点击、但是
 
 +   **Embedding**：两个用户 Embedding 向量的余弦相似度越大就越相似
 
-![](img/7f76162fddd4c3afbf42a7fb5fed923b.png)
 
 ![](img/b130f112108d7c7cb9bc4974e01a2a99.png)
 
