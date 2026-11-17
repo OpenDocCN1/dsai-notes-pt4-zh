@@ -1,0 +1,267 @@
+
+# 假如想做一个只有AI智能体的公司，那要分几步？
+
+> 来源：[https://agijuejin.feishu.cn/docx/EvdqdzCpqo1bObxm9AKcOXTwn9d](https://agijuejin.feishu.cn/docx/EvdqdzCpqo1bObxm9AKcOXTwn9d)
+
+> 作者：老李话一三 | 琢磨事
+
+> 原文：https://mp.weixin.qq.com/s/s4g_qxg95wyGs2GGcvztpw
+
+![](img/5baf4fa2ce2a5dd74d2e34dd993094b9.png)
+
+之前文章《智能原生：AI蓝海世界的关键钥匙》等里面提到过几次智能原生，普遍反馈是有点不好理解。
+
+大概是因为AI削薄了业务、产品、技术之间的边界，至少在现阶段很难像过去那样把这几者弄的泾渭分明，然后各研究各的，也能成为一个专业领用。想弄清楚就得一会在业务（领域模型）、一会在产品、一会在技术，来回贯穿，所以就麻烦（过去其实也是，没有网络的技术特征特征那里有互联网思维）。
+
+这次我们用一个例子来说明AI应用的各个关键环节。
+
+假如我们真想像某些开源项目那样，构建一个百分百基于AI的公司，那到底需要都干什么？又需要几个步骤？
+
+当然我们这不是个技术文章，最后还是要回到这种新的应用形式到底要匹配什么样的思维模式，能够创造什么样的价值。
+
+## 从自己到底想要干什么开始
+
+现实前提是现在的大模型到不了你和它说一句：给我干一个只有AI的公司，它就把活干了的程度。
+
+大模型很像一个有纯粹智商的瓮中之脑，所以要干什么，怎么干都需要人做引导和价值判断，从类似赚不赚钱、有没有趣这类视角做设定。
+
+所以所有的工作就简化成两部分：你输入给这个瓮中之脑（大模型）什么，它回复了你什么？
+
+最终智能的效能=瓮中之脑（大模型）的智商x现实的理解纵深（表现为`prompt`）。
+
+现在假设目标干个只有AI的软件公司，这个公司里面除了你全是`Agent`，你和它说几句话，它就帮你把软件干出来了。
+
+我们看看这事怎么干。
+
+需要注意的是，这个产品是个应用，但也是个公司。
+
+因为是个公司，所以第一步要对软件公司以及软件产品开发这事进行分解，这样才能构建好需要让大模型理解的东西。
+
+这是业务也是产品。
+
+先是要分解过程，为了简化我们这里假设就三个步骤：弄清楚要干什么（需求分析），把软件开发出来（开发和评审），测试发布。
+
+也要分解到底需要几个角色，比如要有个老板拍板，它要负责发起决定干不干；
+
+要有产品经理，它要负责确定产品到底干成什么样；
+
+要有程序员，它负责把代码写出来并且进行`CodeReview`；
+
+要有测试，他负责验证写出来的产品行为是不是对的。
+
+只有角色还不能充分描述我们的业务（软件开发），还要有过程和活动。
+
+过程再加上特定的活动（比如任务）负责把角色串起来，让他们彼此配合完成特定的目的。
+
+单有过程（决定了推进持续），角色（决定有事的时候谁干什么）也还是不够的，还要有数据的描述，比如当前的任务是什么，每个角色上一步的输出是什么等。
+
+这些设定比较清楚之后，就可以进入下一步打造不同的`Agent`。
+
+上面这个就是人对领域设定，也可以认为是经常说的领域模型。其实有N总解法，而解法本身的选择和价值判断有关。
+
+领域模型连接价值判断和瓮中之脑的纯粹智商（大模型）。
+
+这种对领域的分解有什么意义呢？
+
+简单可以理解成：为了更好的全自动的和瓮中之脑（大模型）交互。
+
+既然就说一句话不行，比如给我生成一个XX软件产品，瓮中之脑的智商又够了，那就需要让它清楚现实，好发挥它的智力。
+
+而需要输入什么给它其实的变化的，这种变化需要一种管理体系，这个管理体系需要依赖领域模型。（过程、角色、活动、数据等）
+
+这部分因为作为瓮中之脑的大模型只认识提示词，所以不管你干了多少事最终都要变成它能更好理解的提示词（当然你可以很长）。
+
+另一部分目的则是重用这些约定俗成的词，比如程序员，比如产品经理。每个词后面其实折叠了很多细节。现在的模型是基于人类累积到现在为止的知识训练出来的，所以这些词背后约定俗成的意义也被包含在模型里面了，不需要重头解释每个词了。这也能提高和大模型的交互效率。
+
+上面的工作做完了，就到了第二步，打造不同的`Agent`。
+
+这一步很诡异的是确实主要是技术的活，但本质却不是。由于这不是一个技术文章，我们就简略一些做描述，还是只关注它和过去的差异。
+
+## 打造不同`Agent`
+
+一个方法是不做抽象就按角色做出一个个`Agent`，比如总经理的`Agent`、程序员的`Agent`。`Agent`里面要有自己对应的基础提示词，还要有按照执行时间点填充的实时信息，比如：
+
+你是谁，要干什么；
+
+要有当前的阶段描述，比如现在需求分析阶段，有那些事要做。
+
+要有一定的记忆，比如我上一轮到底说什么了，我产出的代码是什么等。
+
+当然也可以抽象一点，按职能来分比如代表任务的`Agent`，代表对话的`Agent`等。
+
+之后任务的`Agent`要调度各种角色。
+
+真做的话，里面会包含很多细节，比如检查生成的代码是否合适这环节，那要检查多少轮次算合格呢？
+
+但基本定位就是声明自己的角色、以及当前活动的上下文、当前活动的目标。
+
+这里举个简单例子：
+
+比如`ChatDev`把程序员和`CodeReviewer`角色的`prompt`弄成了下面这样（{}里面的部分是要根据执行时 情况填写的。）
+
+```
+&quot;Programmer&quot;: [
+    &quot;{chatdev_prompt}&quot;,
+    &quot;You are Programmer. we are both working at ChatDev. We share a common interest in collaborating to successfully complete a task assigned by a new customer.&quot;,
+    &quot;You can write/create computer software or applications by providing a specific programming language to the computer. You have extensive computing and coding experience in many varieties of programming languages and platforms, such as Python, Java, C, C++, HTML, CSS, JavaScript, XML, SQL, PHP, etc,.&quot;,
+    &quot;Here is a new customer&#x27;s task: {task}.&quot;,
+    &quot;To complete the task, you must write a response that appropriately solves the requested instruction based on your expertise and customer&#x27;s needs.&quot;
+  ]
+```
+
+```
+&quot;Code Reviewer&quot;: [
+    &quot;{chatdev_prompt}&quot;,
+    &quot;You are Code Reviewer. we are both working at ChatDev. We share a common interest in collaborating to successfully complete a task assigned by a new customer.&quot;,
+    &quot;You can help programmers to assess source codes for software troubleshooting, fix bugs to increase code quality and robustness, and offer proposals to improve the source codes.&quot;,
+    &quot;Here is a new customer&#x27;s task: {task}.&quot;,
+    &quot;To complete the task, you must write a response that appropriately solves the requested instruction based on your expertise and customer&#x27;s needs.&quot;
+  ]
+```
+
+把阶段的`prompt`模版弄成了下面这样：
+
+```
+&quot;**Coding**&quot;: {
+    &quot;assistant_role_name&quot;: &quot;Programmer&quot;,
+    &quot;user_role_name&quot;: &quot;Chief Technology Officer&quot;,
+    &quot;phase_prompt&quot;: [
+      &quot;According to the new user&#x27;s task and our software designs listed below: &quot;,
+      &quot;Task: \&quot;{task}\&quot;.&quot;,
+      &quot;Task description: \&quot;{description}\&quot;.&quot;,
+      &quot;Modality: \&quot;{modality}\&quot;.&quot;,
+      &quot;Programming Language: \&quot;{language}\&quot;&quot;,
+      &quot;Ideas:\&quot;{ideas}\&quot;&quot;,
+      &quot;We have decided to complete the task through a executable software with multiple files implemented via {language}. As the {assistant_role}, to satisfy the new user&#x27;s demands, you should write one or multiple files and make sure that every detail of the architecture is, in the end, implemented as code. {gui}&quot;,
+      &quot;Think step by step and reason yourself to the right decisions to make sure we get it right.&quot;,
+      &quot;You will first lay out the names of the core classes, functions, methods that will be necessary, as well as a quick comment on their purpose.&quot;,
+      &quot;Then you will output the content of each file including complete code. Each file must strictly follow a markdown code block format, where the following tokens must be replaced such that \&quot;FILENAME\&quot; is the lowercase file name including the file extension, \&quot;LANGUAGE\&quot; in the programming language, \&quot;DOCSTRING\&quot; is a string literal specified in source code that is used to document a specific segment of code, and \&quot;CODE\&quot; is the original code:&quot;,
+      &quot;FILENAME&quot;,
+      &quot;```LANGUAGE&quot;,
+
+      &quot;&#x27;&#x27;&#x27;&quot;,
+
+      &quot;DOCSTRING&quot;,
+
+      &quot;&#x27;&#x27;&#x27;&quot;,
+
+      &quot;CODE&quot;,
+
+      &quot;```&quot;,
+      &quot;You will start with the \&quot;main\&quot; file, then go to the ones that are imported by that file, and so on.&quot;,
+      &quot;Please note that the code should be fully functional. Ensure to implement all functions. No placeholders (such as &#x27;pass&#x27; in Python).&quot;
+    ]
+  }
+```
+
+对这个步骤做简单总结就是下面这两点：
+
+最终目标都是要形成一段话(`prompt`)在不同的步骤上用（现在的大模型只认这个）。
+
+这段话是变的。
+
+根据不同的执行状态每次需要做出调整。
+
+这和人其实差不多，人也是每次接受不同的信息（按角色），然后给出自己的判断和理解。
+
+这就是为什么之前总说这次大模型的核心进展是概念理解和判断能力，没有这个这种`Agent`跑不起来。
+
+这步看着确实是技术的活，但底子其实不是。
+
+程序员的角色是提高效率，但本质这事行不行，能搞到什么程度，不是程序员能验证的。
+
+程序员解决效率问题，但理解领域的人才能判断上限。（智能效能= 大模型的智商高度x现实理解的纵深）
+
+也就是说过去说的图灵测试2.0的判断人不是程序员，甚至都不是人工智能科学家，而是理解领域的人要自己操练大模型做判断。要在这个背景下去理解角色中心式计算和图灵测试2.0。
+
+随着使用深入肯定发生角色的重新定义，而角色的重定义等也不是技术能定义的事。
+
+参见：AI的脉络：非共识时刻的认知价值
+
+## 启动整个公司
+
+上面这些都做完了就需要把整个软件公司启动起来。等着外面的输入。
+
+这个公司里有很多`Agent`，还保留了一个可以对话的入口。
+
+比如可以和它说，帮我干出来一个`TODO`的小应用。
+
+（和真的公司很像，你说一句，然后一堆人就把活干了）
+
+启动程序就需要按照指定过程，先需求再开发然后测试发布，依次给每个角色分配任务，直到最终认为产品合格了，再把产品发布出来。
+
+这时候最终的公司变成了这样：
+
+一个人：决定到底要干什么软件产品。用什么样的过程，用几个角色，每个角色到底负责什么。
+
+不同角色的`Agent`：每个的产出可以是一个阶段性成果，也可以是代码，当然复杂了也可以是美工的图，图标等。扩展起来还可以加上蜘蛛爬取某些实时的网上信息，让配图等更符合最新的风格。
+
+公司就是应用，应用的边界也就成了公司的边界。
+
+从公司角度看，和过去不一样的点是什么呢？
+
+大量的`Agent`在干活，人只做原则设定。
+
+从应用的角度看和过去比，不一样的点是什么呢？
+
+这个应用在一个大边界下你可以给它设定任何目的。
+
+什么软件都能开发。过去要依赖平台化才能张开自己的任务种类，现在靠AI干了。
+
+## 智能原生公司
+
+基于这个例子，我们可以进一步总结一些关于AI智能应用的关键特征：
+
+第一，和领域相关的部分是人的活。
+
+这部分拆分未来可能模型能做一部分，但是在众多变量里面判断那部分有价值，比如到底干什么，什么样才叫合格等估计一直是人的部分。也许方法论部分（比如什么过程等）未来可以模型干，但现在模型干这个费劲。这是边界问题。
+
+第二，这种应用是按角色来的（角色中心式计算）。比如程序员的角色可能需要调用一大堆工具`Git`、`Python`等才能完成自己的职责。但这些最终要变成提示词（`prompt`）才能驱动自己的活动。每个角色到底能不能成立，要看图灵测试2.0能不能过。
+
+很多时候可能物理约束大于智能约束。我们这个例子里面没有物理约束（比如把汽车从北京开到苏州）。
+
+所以智能原生化估计得从这类领域先开始。
+
+第三，需要很多的配套措施。`Agent`要记住自己说了什么，要知道当前在干什么等。这需要一套完备且繁琐的机制。写程序好像就记录代码就完了。真正的公司需要汇总业务、财务等各种数据，并且保证数据精度。需要的成本很高，挑战很大。
+
+第四，什么时候可以叫完成工作是个问题。产出内容到底合适不合适，幻觉了怎么办等，都是关键制约。放回到具体场景下智能和想象中的智能好像说的是一个东西，其实是两码事。所以之前我们说纯数字和幻觉本身不对应过大成本的领域会优先。
+
+过去琢磨事对此进行了一些总结，比如把公司的智能原生式思维提炼为：智能优先，万物皆、实时反馈、中心决策。这在上面这种应用的基础上可能更好理解。
+
+模型的技术特征决定了需要和它匹配的思维模式。
+
+参见：从1到10：AI产品和互联网产品的核心差异
+
+## 是普通人的机会么？
+
+上面这过程看着需要写代码驱动，但本质不是一个技术的事。不写代码顶多就笨一点，一步一步写一堆提示词。代码是让整个事串起来更自动一些，影响效率，不影响价值。
+
+所谓的领域，还真不是模型和代码能概括的事。
+
+也就是说把瓮中之脑的能力用起来正需要理解领域的普通人（不是AI科学家）。
+
+所以理论上是普通人的机会，但现在关键问题不在这里，而是你把智能放到自己想的那个场景下，它不一定创造价值。
+
+这是判断的关键。
+
+同时这也暗示了一个很多人都关心的问题的答案：
+
+AI会取代对应的岗位么？
+
+这是个必然发生的事。
+
+回到基础公式：智能效能= 模型的智商x现实理解纵深，就会发现这事取决于模型自身的发展，也取决于给它适配的对现实进行理解的系统（`Agent`）。在上面那个但上面软件公司里也还是要人的，只不过这个角色所需要的能力发生了巨大变化。
+
+## 小结
+
+
+
+最后要强调的是上面这个过程，做着玩是可以的，但不能创业。做领域拆分然后判断智能高度，这点会看的比较清楚。也就是说现在的技术成熟度不匹配合适的商业价值。但这不影响这趋势本身，模型的基本为此提供了源源不断的动力。理解这种基础原型其实提供了一个发现的视角和眼睛。地球上有石油亿万年了，只有嵌入到工业革命的上下文下它才是财富，所以能看到新现实的新视野还是关键的。
+
+## 琢磨事其它相关文章
+
+- 原点上的失败：十倍执行力提升可以换来一个成功的AI产品么
+- 为什么说这些倒腾AI的方式会把自己搞死
+- [AI原生得应用怎么做？](http://mp.weixin.qq.com/s?__biz=MzA5OTAzMzk2Ng==&mid=2649514084&idx=1&sn=5285e8a8e764ebb7076534453f9f24f5&chksm=8890b665bfe73f73308b5128e99a6339bcc9069853a878a9aedc62ea69330d548f8ec2f5f257&scene=21#wechat_redirect)
+- 第九生命：从文明限度的角度看AI
+- [AI如浪潮，谁是船上人！](http://mp.weixin.qq.com/s?__biz=MzA5OTAzMzk2Ng==&mid=2649514053&idx=1&sn=eb0d2051f543cc4531b3652d9d432a13&chksm=8890b644bfe73f52baf895da211813cf8292b5b149f38034a435708cac9f70a4803a5802ef7d&scene=21#wechat_redirect)
