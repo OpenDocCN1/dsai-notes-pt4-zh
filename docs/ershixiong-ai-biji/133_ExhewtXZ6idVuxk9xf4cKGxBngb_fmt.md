@@ -1,0 +1,260 @@
+
+# 网页内容总结成 html
+
+> 来源：[https://qianniucity.feishu.cn/docx/FU3Ld5VRdoCtsExVECmcZbzFnee](https://qianniucity.feishu.cn/docx/FU3Ld5VRdoCtsExVECmcZbzFnee)
+
+演示：https://ys1tcvvu1a.app.yourware.so/
+
+![](img/1574066bd34beee1e9c86eb22e639afd.png)
+
+
+
+```json
+{
+  "task": "Generate HTML Web Page: Fixed Style Bento Grid with Specific Content Sections from Article Link",
+  "input_article": {
+    "source_type": "url",
+    "url": "[https://www.modelscope.cn/models/Wan-AI/Wan2.1-VACE-1.3B]" // **唯一需要用户填写的字段**
+    // 例如: "url": "https://cline.bot/blog/why-patterns-matter-lessons-from-hyper-growth-startups"
+    // 如果 AI 无法直接访问 URL，可能需要提供文本内容，可考虑添加:
+    // "fallback_content_if_url_fails": "[如果AI无法访问URL，可在此处提供文章文本]"
+  },
+  "output_format": "HTML Code",
+  "page_specs": {
+    "title": {
+      "source": "generated_summary_title", // 页面标题基于生成的快速了解内容
+      "fallback_source": "original_article_title",
+      "prefix": "Article Insights: " // 标题前缀固定
+    },
+    "lang": "auto-detect", // 尝试根据文章内容自动检测主要语言
+    "head_elements_config": [
+      {"tag": "meta", "attributes": {"charset": "UTF-8"}},
+      {"tag": "meta", "attributes": {"name": "viewport", "content": "width=device-width, initial-scale=1.0"}},
+      {"tag": "title", "content_source": "page_title"},
+      {"tag": "link", "attributes": {"rel": "stylesheet", "href": "https://cdn.jsdelivr.net/npm/tailwindcss@^3.0/dist/tailwind.min.css"}}, // TailwindCSS CDN (v3.0+)
+      {"tag": "link", "attributes": {"rel": "stylesheet", "href": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"}}, // Font Awesome CDN (v6.0+)
+      // 可选：如果需要嵌入图表组件且有特定 CSS，在此添加
+      // {"tag": "link", "attributes": {"rel": "stylesheet", "href": "[Chart Library CSS CDN]"}}
+      {"tag": "style", "content_source": "generated_internal_css"} // 指示 AI 在 <head> 中生成 <style> 块，内容基于 design_system
+    ],
+    "body_structure": {
+      "container_tag": "div",
+      "container_attributes": {"class": "bento-grid-container min-h-screen p-4 md:p-8"},
+      "content_blocks": [ // **定义了固定的内容块及其顺序和内容类型**
+        {
+          "block_id": "title-block",
+          "type": "Page Title",
+          "layout_span_desktop": "span 2",
+          "layout_span_mobile": "span 1",
+          "content_source": "page_title",
+          "content_formatting": {
+             "tag": "h1",
+             "style_role": "Emphasis Title",
+             "secondary_text": {"source": "auto-generated-brief-english-tagline", "style_role": "Subtle Accent Text"}
+          }
+        },
+        {
+           "block_id": "one-sentence-summary-block",
+           "type": "One Sentence Description",
+           "layout_span_desktop": "span 1",
+           "layout_span_mobile": "span 1",
+           "content_source": "generated_one_sentence_summary", // AI 生成一句话总结
+            "content_spec": {
+               "type": "single_sentence_summary",
+               "focus": "Core Topic / Primary Argument",
+               "style": ["Very Concise", "Impactful"]
+            },
+            "content_formatting": {
+               "tag": "div", // 或 p, blockquote
+               "heading": {"tag": "h2", "content": "一句话概览", "style_role": "Block Title"},
+               "paragraph": {"tag": "p", "style_role": "Primary Text"}
+            }
+        },
+        {
+           "block_id": "tips-block",
+           "type": "Key Tips / Takeaways",
+           "layout_span_desktop": "span 1",
+           "layout_span_mobile": "span 1",
+           "content_source": "extracted_or_generated_tips", // 从原文提取或基于原文生成 Tips
+            "content_spec": {
+               "type": "list_of_tips",
+               "focus": "Actionable Advice / Practical Lessons",
+               "count": {"min": 2, "max": 4}, // 提取 2-4 个 Tips
+               "style": ["Concise", "Actionable", "Bulleted List"]
+            },
+            "content_formatting": {
+               "tag": "div",
+               "heading": {"tag": "h2", "content": "关键Tips", "style_role": "Block Title"},
+               "list": {"tag": "ul", "item_tag": "li", "style_role": "Primary Text"}
+            }
+        },
+        {
+           "block_id": "quick-understanding-block",
+           "type": "Quick Understanding Summary",
+           "layout_span_desktop": "span 2",
+           "layout_span_mobile": "span 1",
+           "content_source": "generated_quick_summary", // AI 生成一个比一句话详细的快速了解总结
+            "content_spec": {
+               "type": "paragraph_summary",
+               "focus": "Core Argument / Main Points Overview",
+               "style": ["Concise", "Clear", "Informative"],
+               "length": "Short Paragraph (approx. 80-120 words)"
+            },
+            "content_formatting": {
+               "tag": "div",
+               "heading": {"tag": "h2", "content": "快速了解", "style_role": "Block Title"},
+               "paragraph": {"tag": "p", "style_role": "Primary Text"}
+            }
+        },
+         {
+          "block_id": "detail-description-block",
+          "type": "Article Detail Description",
+          "layout_span_desktop": "span 3", // 细节描述块可能需要更宽的布局
+          "layout_span_mobile": "span 1",
+           "content_source": "extracted_and_structured_details_with_quotes", // 提取原文细节，可引用原文
+            "content_spec": {
+               "type": "structured_detail_presentation",
+               "focus": "Key Arguments, Explanations, or Examples from Article",
+               "style": ["Descriptive", "Analytical", "Can include short quotes"],
+               "length": "Moderate to Long (multiple paragraphs/points)",
+               "include_quotes": {"max_count": 2, "style": "inline or blockquote subtle"}, // 最多引用 2 段原文，风格内联或引用块
+               "ignore": ["Redundant information", "Minor formatting in original", "Lengthy disclaimers"]
+            },
+           "content_formatting": {
+             "tag": "div",
+             "heading": {"tag": "h2", "content": "细节阐述", "style_role": "Block Title"},
+             "content_elements": [ // 这个块内部可能有多个段落或引用块
+               {"tag": "p", "content_source": "generated_detail_paragraph", "style_role": "Primary Text", "attributes": {"class": "mb-4"}},
+               {"tag": "blockquote", "content_source": "original_quote", "style_role": "Quote Text", "optional": true, "attributes": {"class": "border-l-4 border-accent-vibrant pl-4 italic text-gray-400 my-4"}}, // 引用块样式
+               {"tag": "p", "content_source": "generated_detail_paragraph", "style_role": "Primary Text", "attributes": {"class": "mb-4"}, "optional": true} // 可以有多个段落和引用
+             ]
+           }
+        },
+         {
+            "block_id": "original-link-block",
+            "type": "Link to Original Article",
+            "layout_span_desktop": "span 1",
+            "layout_span_mobile": "span 1",
+            "content_source": "input_article.url",
+            "content_formatting": {
+               "tag": "div",
+               "heading": {"tag": "h2", "content": "阅读原文", "style_role": "Block Title"},
+               "link": {
+                  "tag": "a",
+                  "attributes": {"href_source": "content_source", "target": "_blank", "class": "flex items-center"},
+                  "content": "点击此处阅读完整文章",
+                  "style_role": "Link",
+                  "icon": {"library": "Font Awesome", "name": "fas fa-external-link-alt", "position": "right", "style_role": "Icon"}
+               }
+            }
+         }
+         // 块的顺序和类型是固定的，AI需要填充对应内容
+      ]
+    }
+  },
+  "design_system": { // **固定不变的视觉设计系统规范**
+    "overall_aesthetic": "Modern Tech / Bento Grid / High Contrast",
+    "color_palette": {
+      "description": "High contrast dark theme with a single vibrant accent color.",
+      "roles": {
+        "background_dark": "#0D0D0D", // 更深的背景
+        "surface_dark": "#1C1C1C", // 稍亮的深色表面用于块背景
+        "accent_vibrant": "#00FFFF", // 鲜艳高亮色 (青色)
+        "text_primary_light": "#F0F0F0", // 浅色主要文本
+        "text_secondary_muted": "#A0A0A0" // 柔和次要文本
+      }
+    },
+    "typography": {
+      "description": "Emphasis on large/bold elements contrasted with smaller text. Mix of main language (auto-detected) and English accents. Uses a modern sans-serif font.",
+      "font_family": "'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "styles": {
+        "Emphasis Title": {"tag": "h1", "font_size": "clamp(2.5rem, 6vw, 4.5rem)", "font_weight": "extrabold", "color_role": "accent_vibrant", "text_transform": "none", "letter_spacing": "tight", "line_height": "1.1"},
+        "Subtle Accent Text": {"tag": "p, span", "font_size": "0.875rem", "font_weight": "normal", "color_role": "text_secondary_muted", "language": "English", "text_transform": "uppercase", "opacity": "0.8"},
+        "Block Title": {"tag": "h2", "font_size": "1.5rem", "font_weight": "bold", "color_role": "text_primary_light", "margin_bottom": "1rem"},
+        "Primary Text": {"tag": "p, li", "font_size": "1.1rem", "font_weight": "normal", "color_role": "text_primary_light", "line_height": "1.8"},
+        "Quote Text": {"tag": "blockquote", "font_size": "1.1rem", "font_weight": "normal", "color_role": "text_secondary_muted", "line_height": "1.8", "font_style": "italic"}, // 引用文本样式
+        "Large Visual Element Text": {"tag": "div, span", "font_size": "clamp(5rem, 12vw, 8rem)", "font_weight": "extrabold", "color_role": "accent_vibrant", "opacity": "0.15", "position": "absolute", "inset": "0", "display": "flex", "justify_content": "center", "align_items": "center", "pointer_events": "none", "text_align": "center", "line_height": "1"} // 超大视觉元素样式（文本）
+      }
+    },
+    "layout_grid": {
+       "description": "Responsive CSS Grid layout for the main container.",
+       "gap": "20px",
+       "responsive_columns": [
+         {"screen": "default", "columns": "1fr"},
+         {"screen": "md", "columns": "repeat(2, 1fr)"},
+         {"screen": "lg", "columns": "repeat(3, 1fr)"}
+       ]
+    },
+    "block_styling": {
+      "description": "Styling for individual Bento Grid blocks.",
+      "padding": "24px",
+      "background_color_role": "surface_dark",
+      "border_color_role": "text_secondary_muted",
+      "border_width": "1px",
+      "rounded_corners": "12px",
+      "box_shadow": "rgba(0, 0, 0, 0.25) 0px 10px 30px", // 更明显的阴影
+      "interactive_effects": ["Subtle hover scale (e.g., scale-103)", "Slight background lighten on hover (optional)"],
+      "overflow": "hidden",
+      "position": "relative"
+    },
+     "color_effects": {
+      "type": "Transparency Gradient Overlay",
+      "application": "Backgrounds of specific blocks or the main container.",
+      "color_role": "accent_vibrant",
+      "style": "Subtle radial or linear gradient fading to transparent or background_dark, primarily on the top-left or corners."
+    },
+     "iconography": {
+       "library_source": "CDN (Font Awesome)",
+       "style": "Consistent with theme (e.g., solid or regular), modern",
+       "color_role": "accent_vibrant",
+       "size": "Standard",
+       "exclusion": "Avoid Emojis as primary icons."
+     },
+    "animation": {
+      "trigger": "Scroll into View",
+      "mimic_inspiration": "Smooth, Modern Scroll Reveal (like Apple)",
+      "types": [
+        "Fade-in",
+        "Subtle Slide-in (translateY from 20px to 0px)",
+        "Scale-up (transform scale from 0.98 to 1)"
+      ],
+      "application": "Apply animations to individual '.bento-block' elements as they become visible in the viewport.",
+      "duration": "600ms",
+      "easing": "cubic-bezier(0.25, 0.1, 0.25, 1.0)"
+    }
+  },
+  "technical_requirements": { // **固定不变的技术栈**
+    "html_version": "HTML5",
+    "css_framework": "TailwindCSS 3.0+ (via CDN)",
+    "javascript_usage": "Required for scroll-triggered animations.",
+    "external_resources": ["TailwindCSS CDN", "Font Awesome CDN"], // 简化，不强制要求图表库CDN
+    "data_visualization_handling": "If article contains data, present it textually or with simple formatting within a block. Do not attempt to embed complex chart components unless explicitly easy to style and integrate." // 简化数据可视化处理
+  },
+  "constraints": [ // **固定的生成约束**
+    "Strictly adhere to the color palette roles defined in 'design_system.color_palette.roles'.",
+    "Implement the typography styles as defined, including font sizes, weights, colors, line height, and language mix.",
+    "Ensure the Bento Grid layout is implemented correctly using CSS Grid and TailwindCSS classes, respecting the specified gap and responsive columns for each block's defined layout_span.",
+    "Implement scroll-triggered animations using JavaScript as specified.",
+    "Only use icons from Font Awesome via CDN.",
+    "Do not use emojis.",
+    "The generated HTML must be valid, semantic, and well-structured.",
+    "The generated CSS should be included in a <style> tag in the <head>.",
+    "All content for the specified blocks (One Sentence, Tips, Quick Understanding, Detail Description) must be derived *from* or based *on* the original article content, following the 'content_spec' for each block.",
+    "Ensure the Detail Description block accurately represents key arguments/explanations from the original article and includes up to 2 brief quotes if suitable ones are found.",
+    "The block types and their order must follow the 'content_blocks' array definition.",
+    "The generated page must render clearly and present the specified content sections in a visually engaging, structured manner using the fixed Bento Grid style."
+  ],
+  "instructions_to_ai": [ // **固定的执行指令**
+    "Access and read the article at the provided URL: [Insert URL from input_article.url].",
+    "Analyze the article to understand its core message, identify practical takeaways/tips, extract key arguments/explanations, and find suitable short quotes (max 2).",
+    "Generate content for each defined block type based on its 'content_source' and 'content_spec': a one-sentence summary, 2-4 key tips, a quick understanding paragraph summary (80-120 words), and a detail description block incorporating key arguments and selected quotes from the original article.",
+    "Generate a suitable HTML page title based on the generated 'Quick Understanding Summary', using the specified prefix.",
+    "Generate complete and valid HTML5 code. Structure the <body> content using a main container div with the specified class.",
+    "Create the specific sequence of '.bento-block' div elements exactly as defined in the 'page_specs.body_structure.content_blocks' array. Assign the correct classes and layout spans to each block.",
+    "Populate each block with the generated content (title, summaries, tips, link, details) and format the content elements (h1, h2, p, ul, li, blockquote, a, icons) according to their 'content_formatting' rules and 'style_role' references.",
+    "Generate the necessary CSS code within a <style> tag in the <head> based *strictly* on the 'design_system' specifications, mapping color roles to actual hex codes, implementing typography styles, responsive grid layout, block styling, color effects, and icon styling.",
+    "Implement the specified scroll-triggered animations using JavaScript, applying them to the '.bento-block' elements as they enter the viewport.",
+    "Ensure the generated HTML, CSS, and JS together create a functional, responsive page that precisely follows the defined Bento Grid layout and fixed visual style, presenting the extracted and generated content clearly."
+  ]
+}
+```
