@@ -10,12 +10,8 @@
 
 > 又比如律师在分析案件时，推理轨迹就是从收集的证据到最终形成完整诉讼策略的过程记录。
 
-![](img/029c4c6b692532b21029a49bd4d71caa.png)
 
-![](img/e01eba27f3cd76512ae747d152c30c77.png)
 
-![](img/2e8fb9c9be38cf4f366206b983d1d990.png)
 
-![](img/1f4136d374bf0ecec0762359530aaa76.png)
 
 ![](img/ef1c34355c04467fc1c6a32b69caab0d.png)

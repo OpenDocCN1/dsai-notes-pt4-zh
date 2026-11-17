@@ -190,7 +190,6 @@ Thought for <1s
 
 Scroll to bottom
 
-![](img/a59965463def003d02010cc560751c62.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -202,7 +201,6 @@ Thought for <1s
 
 Extracted DOM elements
 
-![](img/0cf81768b778299539d65baadcd849d4.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -210,7 +208,6 @@ Thought for 1s
 
 Scroll to top
 
-![](img/2c02ddef1222da614d322408aaf3d2c1.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -222,7 +219,6 @@ Thought for <1s
 
 Scroll to top absolute
 
-![](img/a4a9ffcad163c1306d47c726e1d5b7aa.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -246,7 +242,6 @@ Thought for <1s
 
 Scroll down 1500px
 
-![](img/4736e4c35cbbe698ff2453f21c9c6755.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -258,7 +253,6 @@ Thought for <1s
 
 Go to Pricing
 
-![](img/f5dd9577d7afdeea4a1c6a8f9714608b.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -274,7 +268,6 @@ Thought for <1s
 
 Go to Blog
 
-![](img/cdcc06847522ffc30a1418fc404315db.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -290,7 +283,6 @@ Thought for 1s
 
 Go to About Us
 
-![](img/31c008cfd1e4a89fc0b2c259878ea8a4.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -322,7 +314,6 @@ Thought for <1s
 
 Go to Privacy Policy
 
-![](img/b2aeced6ea10a533f70dbdc0fc2e55d5.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -338,7 +329,6 @@ Thought for <1s
 
 Go to Disclaimer
 
-![](img/01aa330b27786bce21075ccc5c0f84b1.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -354,7 +344,6 @@ Thought for <1s
 
 Go to Home
 
-![](img/a4d9720fea7bde5fa2e0b6e85a322a5f.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -382,7 +371,6 @@ Thought for <1s
 
 Scroll to bottom
 
-![](img/0f90a7f21993ee35eecbbf2e7eb72a50.png)
 
 AI 姿势变形器 |用任何姿势变换你的照片 --- AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -394,7 +382,6 @@ Thought for <1s
 
 Go to Blog again
 
-![](img/8afff94d3dab7e6b6c679016aa77bd6f.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 
@@ -410,7 +397,6 @@ Thought for 1s
 
 Go to Update Log
 
-![](img/aa781924e733ed51cbb420bf812c2501.png)
 
 AI Pose Shifter | Transform Your Photos with Any Pose
 

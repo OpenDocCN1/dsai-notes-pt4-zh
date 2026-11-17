@@ -449,7 +449,6 @@ if response:
 
 # 5、交流
 
-![](img/9bbf31349ecb4e04b0079cd1992577eb.png)
 
 权益申请表单
 

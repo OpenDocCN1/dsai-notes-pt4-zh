@@ -120,7 +120,6 @@ AI音乐生成的第一个应用场景是搭配AI图片和视频生成工具，�
 
 最近我用Runway最新的Gen-3模型重制了这个音乐视频：
 
-![](img/e2f847865e1ddd1b100727c37b0f81bd.png)
 
 [春节猫片重制.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QKaibnD4eo0dJJxdu1IcUomWn0g)
 
@@ -418,7 +417,6 @@ Endel基于自主研发的算法来生成音乐，相对于Suno那样的**大模
 
 A day in the life of a professional imaginary friend, indie pop, twee pop
 
-![](img/9e15e32e0d3555fca4cb2a816b1de968.png)
 
 [udioremix前.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B1nzb2JweocBHExFOpEcC8BQnCe)
 

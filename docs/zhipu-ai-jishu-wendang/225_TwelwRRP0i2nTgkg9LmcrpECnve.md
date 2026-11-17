@@ -30,7 +30,6 @@ ChatGLM2-6B 是开源中英双语对话模型 ChatGLM-6B 的第二代版本，�
 
 我们选取了部分中英文典型数据集进行了评测，以下为 ChatGLM2-6B 模型在 MMLU (英文)、C-Eval（中文）、GSM8K（数学）、BBH（英文） 上的测评结果。
 
-![](img/dca291acf823712ec949cbf4af869d03.png)
 
 ![](img/3954b52360b98b8c0e8d60015f2c6bbc.png)
 
@@ -66,7 +65,6 @@ Multi-Query Attention 同时也降低了生成过程中 KV Cache 的显存占用
 
 **长文档理解**
 
-![](img/c6aadb20c898f636eb59f66c90d8fcef.png)
 
 ![](img/9ecf4792dc345b17de7d81177f6fb0e4.png)
 

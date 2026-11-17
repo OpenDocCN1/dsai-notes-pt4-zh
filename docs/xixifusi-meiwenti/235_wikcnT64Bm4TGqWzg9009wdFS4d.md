@@ -584,7 +584,6 @@ P46
 
 #### 3.2 社会主义改造道路和历史经验
 
-![](img/961f85023e2614bf4119716e6f699928.png)
 
 [第三章 第二节-1.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnhyR2svRGvDadN5sAK6Kiih)
 
@@ -1122,7 +1121,6 @@ C是1981年中共中央通过了《关于建国以来党的若干历史问题的
 
 ##### 8.1.1 十八大以来历史成就和历史性变革
 
-![](img/5f7c35d2e74806b03a43aee08432498c.png)
 
 [第八章 第一节 十八大以来的成就与变革.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnhxHrJB4VJMdDgVibTO4WOq)
 
@@ -1142,7 +1140,6 @@ C是1981年中共中央通过了《关于建国以来党的若干历史问题的
 
 #### 8.2 习近平新时代中国特色社会主义思想的主要内容
 
-![](img/c74892b9ca86f03559b3b0d487906506.png)
 
 [第八章 第二节.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcndQZtTZBNf1jJKQ2eul7xwH)
 
@@ -1218,7 +1215,6 @@ C是1981年中共中央通过了《关于建国以来党的若干历史问题的
 
 #### 9.1 实现中华民族伟大复兴的中国梦
 
-![](img/eb4c7370a2214e75ddfa14b7de0cfda6.png)
 
 [第九章 第一节.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnJjmnuVr9ZxLnByB9HnnLdh)
 
@@ -1384,7 +1380,6 @@ C是1981年中共中央通过了《关于建国以来党的若干历史问题的
 
 ![](img/0427095201d9b4e37cfce3f869760f68.png)
 
-![](img/2c3f00a4a69c9b8197f4c6d17e0a2d63.png)
 
 [毛概笔记C8-11.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnPAJLutDNpAYlTeOkJuCmhe)
 
@@ -1396,10 +1391,7 @@ C是1981年中共中央通过了《关于建国以来党的若干历史问题的
 
 ![](img/aba12e7c7eea8c8c2082bdb443c579ab.png)
 
-![](img/fc52aaad0e8f5263ac98d270374b7f7f.png)
 
-![](img/1ce2cfc1174f9c04732b4cb5f18a7ecd.png)
 
-![](img/b1cafa46fe94abb4f97ca1bac331bc09.png)
 
 ![](img/ca1ed5de3d0b7354685b6e7f1437eda9.png)

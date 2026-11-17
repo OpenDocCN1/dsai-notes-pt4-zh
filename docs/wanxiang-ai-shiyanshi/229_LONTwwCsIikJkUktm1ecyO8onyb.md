@@ -44,7 +44,6 @@
 
 安装后，打开设置：
 
-![](img/d97500e95bccd1ecff7af6dd837bf21c.png)
 
 选择指定位置，以后拉取的项目都会存在这里。
 
@@ -154,7 +153,6 @@ containers 打开就会显示 n8n：
 
 ![](img/fb66c5a7f9abc624427ac47970bede3b.png)
 
-![](img/c015aeed8978379794acf6180e596e9a.png)
 
 1.  第四步：格式化新闻内容 （Set）
 

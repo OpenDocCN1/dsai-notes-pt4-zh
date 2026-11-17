@@ -10,17 +10,11 @@
 
 什么是艺术二维码呢，为什么会有这个项目呢？艺术二维码是一种通过AI技术将普通的二维码转化为具有艺术美感和创意性图案的技术。这种技术不仅提升了二维码的美观度，还增加了用户的扫码体验和粘性。比如以下这些
 
-![](img/693fc11f7af075afe504cb21ed78c35e.png)
 
-![](img/ef3523b473b2de476bacfdfb9ea6f4e7.png)
 
-![](img/0f6df95fa719ee27d80b68633d6bc6a8.png)
 
-![](img/753f1df72ec6dee25f14f8f6cf9550c3.png)
 
-![](img/bfc7a145c864d3fe3a479f7e56ee263b.png)
 
-![](img/40a10f287dbe0cac8f6c597a83ee1117.png)
 
 ![](img/4cad91ca70ff408954f53827102351d5.png)
 
@@ -94,7 +88,6 @@ DALL-E 3 是由OpenAI开发的一种先进的文本到图像生成模型，它�
 
 提示词1：一直头戴王冠呆有着漂亮鱼尾巴的可爱白色猫咪，猫咪有着像美人鱼一样的白色尾巴，尾巴如宝石一样闪闪发光，呆萌可爱，超详细，画面温暖干净，情感饱满，唯美，立体光线，高分辨率，8k， --q 5 --v 6 --ar 9:16
 
-![](img/b752701c14c59290a1b8b9c00fc63ec9.png)
 
 ![](img/f886f6314d88989113761c0351864a3c.png)
 
@@ -110,11 +103,8 @@ DALL-E 3 是由OpenAI开发的一种先进的文本到图像生成模型，它�
 
 提示词3：Create an image featuring two anthropomorphic glass cute dolls with long legs and smiling faces, holding hands, in a vibrant natural setting with sunlight filtering through the foliage, casting a soft glow on the scene. The dolls should have a translucent quality with light reflecting off them, and a sparkling effect. Both dolls are standing on leaves that are attached to thin branches or stems, with additional water droplets on the leaves and branches, some of which are falling, adding dynamic motion to the image.
 
-![](img/42dcd9346e779e2d05fb6f21c0534f54.png)
 
-![](img/aee30b1cdf0903dac63b038a25017271.png)
 
-![](img/79752e4138bbe3d8e3599eb8f2c0d0b9.png)
 
 ![](img/4f78ed5dce96ac999e4b2ce7d162a79a.png)
 

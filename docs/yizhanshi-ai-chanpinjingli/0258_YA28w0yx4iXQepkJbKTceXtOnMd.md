@@ -44,7 +44,6 @@ Bagging 的目标是通过减少模型的方差来提高性能，适用于高方
 
 +   结果难以解释，因为没有单一的模型。
 
-![](img/5ff9e4e8e698b058c3b704d22cbe660d.png)
 
 ### 2. **Boosting**
 
@@ -78,7 +77,6 @@ Boosting 的目标是通过减少模型的偏差来提高性能，适用于弱�
 
 +   训练过程较慢，特别是在数据量较大的情况下。
 
-![](img/53d1fdc82aef54b7c02ef54b850578bd.png)
 
 ### 3. Stacking（Stacked Generalization）
 

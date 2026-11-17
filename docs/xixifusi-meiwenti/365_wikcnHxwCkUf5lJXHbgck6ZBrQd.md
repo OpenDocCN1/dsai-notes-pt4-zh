@@ -10,7 +10,6 @@
 
 > Itp自己的孵化器
 
-![](img/762492da5ea9b203e7bc80c067fb3ce6.png)
 
 [王小毅：商业模式2022 123讲.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnojiUHNhuE5bvvetAtnWNHh)
 
@@ -284,11 +283,9 @@ Shein
 
 #### 1.1 Example
 
-![](img/27b41a633e40aa0aa1fc4ef4eb9a2aa3.png)
 
 [盒马鲜生究竟“鲜”在哪.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnbV6E6ZHB4bXMMFlJeODatd)
 
-![](img/6c8f51bc10ced7354bee8b33331847b6.png)
 
 [网红喜茶，能否成为东方星巴克.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnW8kIpuPc2bXvN3S26Pf7dk)
 
@@ -702,7 +699,6 @@ CS：
 
 ![](img/3a9663d58b4e4daf574433169318c29f.png)
 
-![](img/9c1eb077889bcf6ba1ce0d214c6819a4.png)
 
 ![](img/2d433c77eede335f2c8602067e0fe9b8.png)
 

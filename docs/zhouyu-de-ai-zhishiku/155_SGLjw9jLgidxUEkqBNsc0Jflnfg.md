@@ -198,13 +198,11 @@ https://cowboysafari.online/
 
 https://poe327.net/
 
-![](img/39744ace5117f48bdd82ce00a309ce92.png)
 
 期末成绩计算器：
 
 https://finalgradecalculator.app/
 
-![](img/c3bd98b8062729af62fda6c64d47aaf2.png)
 
 摩斯密码工具站：
 
@@ -308,7 +306,6 @@ https://morsecodetranslator.app/
 
 贪婪
 
-![](img/07876ccff2349dca6225a0b060e2dc70.png)
 
 我认为贪婪是人类的排名最靠前的人性，几乎所有人的本性都是贪婪的。
 

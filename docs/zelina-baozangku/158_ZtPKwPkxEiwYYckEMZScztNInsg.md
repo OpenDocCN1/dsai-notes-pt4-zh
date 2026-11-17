@@ -388,13 +388,9 @@ https://pzfqk98jn1.feishu.cn/wiki/DQROwoG9qizhqokVfF5c6T4Nnyg
 
 来分享下翻新后的某些角落：
 
-![](img/553338383f25d3dd098d46fa7e047698.png)
 
-![](img/6df03cd2607a6d4b8d68fb85bd05b854.png)
 
-![](img/2ea1afd5d0cc2c6948960e56a854a277.png)
 
-![](img/b73538b6796bec360680f37ffffa5b11.png)
 
 ![](img/3a8168c4d15c1b18e386ffbd665e08a6.png)
 
@@ -422,7 +418,6 @@ https://pzfqk98jn1.feishu.cn/wiki/DQROwoG9qizhqokVfF5c6T4Nnyg
 
 六月份去逛了碳中和，了解了下ESG。
 
-![](img/9e61ae095e3105783dadb63836461587.png)
 
 10月初的时候去找了小伙伴，在福州和泉州玩了一趟，然后还去拍了簪花。
 
@@ -440,7 +435,6 @@ https://pzfqk98jn1.feishu.cn/wiki/DQROwoG9qizhqokVfF5c6T4Nnyg
 
 ![](img/e412f0713e102d7111752b78b1f12a31.png)
 
-![](img/29a588e8c7a0b9084064a3ceba22af61.png)
 
 ![](img/58102168251cca3006152349c73827f8.png)
 

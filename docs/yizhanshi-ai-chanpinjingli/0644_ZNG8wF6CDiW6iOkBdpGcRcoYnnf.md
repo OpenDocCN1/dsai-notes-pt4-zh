@@ -16,11 +16,8 @@
 
 LSTM实现了三个门计算，即**遗忘门****、****输入门****和****输出门**
 
-![](img/22d503bcfd7eac6929bce05db9c9b526.png)
 
-![](img/13084ae1b6eef3be5383fe25f0a9ef13.png)
 
-![](img/38213933aecbca9b267fc894eae4e23d.png)
 
 ## **LSTM的训练过程**
 
@@ -38,9 +35,7 @@ LSTM的参数训练算法，依然是反向传播算法。主要有如下三个�
 
 #### **输入门、遗忘门、输出门**
 
-![](img/6c8fca4492a54ff01edf0723818ae8bf.png)
 
-![](img/fca327d9d06bccdfd4c10695ff394f90.png)
 
 ![](img/a47a24ded5f238591b7ec7bedd9484c8.png)
 

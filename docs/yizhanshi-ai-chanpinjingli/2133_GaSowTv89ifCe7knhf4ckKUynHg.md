@@ -36,7 +36,6 @@
 
 ## Backward Lens: Projecting Language Model Gradients into the Vocabulary Space
 
-![](img/999b4542e8fad4853c543e76c191ee66.png)
 
 ## Pretraining Data Detection for Large Language Models: A Divergence-based Calibration Method
 

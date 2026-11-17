@@ -680,7 +680,6 @@ https://app.suno.ai/song/2f54e0d6-68b5-4d29-9d61-ca144f5d5508
 
 +   **Prompt**：A rap-style song is required, with an old school vibe, leaning towards a British style. The lyrics should express that working is not the end goal; one must learn to enjoy life.
 
-![](img/f3b20cad6b69818bdb6aaba2a0bfb374.png)
 
 [Live Life to the Fullest.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EULTbqA65oX0fxxi2QZcrZYInce)
 
@@ -834,28 +833,18 @@ https://music.163.com/#/album?id=190497967
 
 | **歌曲名** | **风格** | **链接** | **作者/歌词** | **备注** |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ![](img/6425e016bb9d1a66037e20485208eb16.png) |  | https://app.suno.ai/song/b27c29f6-8ab4-47eb-81fd-efb85c848ada | ![](img/8f0421592cc5cc6cf0d3f0245e16ce46.png) | Suno 社区TOP1 |  |  |  |  |
-| ![](img/3b756c71e2bd649c5411af9a7385c95f.png) | 重金属 | https://app.suno.ai/song/ad5a966b-dea1-4cbc-aeee-d5e9541157b9/ | ![](img/dd43a18168f384346f606e62405bb66f.png) | Suno 社区TOP2 |  |  |  |  |
-| ![](img/28ad80a2db6fb80d8f30484f87af83a4.png) | 合唱团 | https://app.suno.ai/song/1ec6fa32-0b8a-4156-aa7d-a7735d2ca2e3 | ![](img/732ac1b6cef9c71d07b813b206684d1d.png) | Suno 社区TOP3 |  |  |  |  |
 | # **客户请百度** | Pop | https://app.suno.ai/song/60e8f164-eeca-451a-b51c-67b82ec351ad | **歌曲名：客户请百度** | 第一句男声有点出戏，但是第二句女声出来后非常惊艳！ |  |  |  |  |
 |  | 民谣 |  | 杨元 |  |  |  |  |  |
 |  | rap |  | 猫叔 | 法老的歌词直接丢进去 |  |  |  |  |
-| ![](img/34e8f5ff60f136b9150504b231bc7986.png) | 儿歌 | https://app.suno.ai/song/c5d9b2bf-8a81-44c8-9f79-37d0c2479caa | 素人极客 |  |  |  |  |  |
-| ![](img/d33b46bb83c6d5373eba8c220924806b.png) | pop ballad emotional | https://app.suno.ai/song/29276b85-1fa8-4613-bb9d-e9f2326a9dc9/ | 阿强 |  |  |  |  |  |
-| ![](img/b3b29dc129189beb0fde71854860d10a.png) | pop, trap, R&amp;B, Chinese Philosophy Traditional Classical | https://app.suno.ai/song/7d3ef080-6cee-4033-a04a-fceb01fba22a | 路遥 |  |  |  |  |  |
 |  |  |  | 阿肯 | 一首只有“汪”组成的歌 |  |  |  |  |
 |  |  |  | 阿肯 | 一首只有“喵”组成的歌 |  |  |  |  |
 |  |  |  | 阿肯 | 写给通往AGI之路 |  |  |  |  |
-| ![](img/2dea94b9a1453f6f6fdc9be352eaeded.png) |  | https://app.suno.ai/song/5d75e621-95e2-4742-8a17-489ba3b8bdf7 | ![](img/923a80a31807a6c4e28c6b23e8fc0b5b.png) | 阿飞写的离谱村之歌，歌词很有意思 |  |  |  |  |
-| ![](img/c0c5e740afb87ef689db575c79005117.png) |  | https://app.suno.ai/song/aa53bd75-e776-4662-bcd3-e6fa48d1df84/ | 刘洋 | suno ai做了一首猫王风格的音乐纯音乐无歌词 |  |  |  |  |
 |  |  | https://app.suno.ai/song/442c1388-c425-41aa-843c-5393692d275e | 猫叔 | 权利游戏系列1 |  |  |  |  |
 |  |  | https://app.suno.ai/song/9cc4596d-4c4e-41cf-b4e1-c428a4df98c4 | 猫叔 | 权利游戏系列2 |  |  |  |  |
 |  |  | https://app.suno.ai/song/eff648b8-8de8-464a-94ba-cda380852db4 | 猫叔 | 权利游戏系列3 |  |  |  |  |
 |  |  | https://app.suno.ai/song/7915d118-4124-4ba1-8880-2ed03992a8fc | 猫叔 | 女儿做的喵星人舞曲 |  |  |  |  |
-| ![](img/dd3ff16ab1a2f07f5595954d6f0516ce.png) | punk sarcastic fast-paced | https://app.suno.ai/song/be8bce2c-bd81-4588-9002-ab50bfb642e8 | 王博龙 | 去年 v2 版本 |  |  |  |  |
 | ### 恐龙妈妈提笔忘字 | jpop | https://app.suno.ai/song/5fa2daaa-581b-4f73-9822-93241d853124/ |  |  |  |  |  |  |
 |  |  | https://app.suno.ai/song/6de54942-2744-4c79-8bbe-5084f53bf04c | 猫叔 | 复仇者祸精 吐槽版 |  |  |  |  |
-| ![](img/dc0a6cc46338d578ac6487b1610d5967.png) | Electronic Pop | https://app.suno.ai/song/736d9133-5d9e-4226-a40b-708068c83f34 | Flower | ![](img/d407395e57050f80c55c5a48ed1e6dd5.png) |  |  |  |  |
 |  | pop,romantic,soft-pop |  | 玄德 | [Verse 1] |  |  |  |  |
 | 身骑白马 | Pop-folk/Soft Pop |  | 玄德 | [Verse 1] |  |  |  |  |
 | ## **父爱如山** | 温情 |  | GREG蓝天 | v3版本 |  |  |  |  |
@@ -863,7 +852,6 @@ https://music.163.com/#/album?id=190497967
 | ## **Rockin&#x27; Meow** | rock摇滚 |  | 可可 | ## **Rockin&#x27; Meow** |  |  |  |  |
 | 打工人 | Rock, Rebellious, Cynical, Guitar, 9-5 Work Life, Angsty Male Vocals |  | [instrumental intro] | 1.  参考卡兹克的歌词生成prompt； |  |  |  |  |
 | Rain(日文歌) | Japanese |  | 作者：十七 | 日文歌 |  |  |  |  |
-| ![](img/8bdde1e7e55092e6bf70774438bca46d.png) | Punk rock | https://app.suno.ai/song/f98da5d3-06bd-42bd-a8fd-dda81ad76254 | [Verse] | 节选屈原的天问歌词 |  |  |  |  |
 |  | aggressive trap | https://app.suno.ai/song/b3da854e-b699-4a5f-8ce4-956f20f812ca | 猫叔《将近酒》 |  |  |  |  |  |
 | ![](img/b8fba897309f3f0011d31c101a530769.png) | nordic folk | https://app.suno.ai/song/0a9c895a-8b4f-4d57-bb2a-d5f3118b1d43 | 作者：静流 | [E. E. Cummings](https://poets.org/poet/e-e-cummings)的诗《somewhere i have never travelled》 |  |  |  |  |
 | ![](img/3c5ed9b99a4c11f177e383eba0dfce2e.png) | Folk, Soft, Ethereal, Acoustic Guitar, Piano, Warm Gentle Female Vocals | https://app.suno.ai/song/0f03ef36-3d92-4c3c-8a8e-62df7a7a767b | 作者：阿杨 | 写给自家金毛的歌，用GPT生成歌词 |  |  |  |  |
@@ -881,27 +869,21 @@ https://music.163.com/#/album?id=190497967
 
 [5141_1711208861.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jsoob1XR8oHFt1xvhhGcYixAn1w)
 
-![](img/dae403a1b1e43610adcd894a73fed39e.png)
 
 [5149_1711209631.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KYGVbABWuoX6gyxVfYjc7LLDnKd)
 
-![](img/9f5e9425d8b799022cebb76328f74d6a.png)
 
 [2477_1711098519.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CWZGb5NXNohkswxVnEJcE2sknxd)
 
-![](img/172a6d1de62c4ba3b814ba811a66d9e6.png)
 
 [2468_1711097601.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L8dIb91OFoAJkxxizOPchsQWnZf)
 
-![](img/5e930be3eb0ef3934ec3c50a2306b7be.png)
 
 [铁王座之战歌.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EABVbZJEVohm0WxWiiJc5kIqnMd)
 
-![](img/f9f1356ac1d84a9a8a15c013f40d660b.png)
 
 [铁王座-流行版.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GFWobVIWUoIHFDxNFLecY69Nnfg)
 
-![](img/d90a1081b1a0a79c6f22b163e68af9ed.png)
 
 [铁王座——rap版.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mt5xbZgKlo68FbxqZD8cKDDknic)
 
@@ -913,15 +895,12 @@ https://music.163.com/#/album?id=190497967
 
 [2755_1711254290_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O8nhbbtGPoUWzlxh8NZcgRTQnif)
 
-![](img/27c7f4890c6fa467942ddca0ba280e65.png)
 
 [复仇者祸精A版.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XArAb8KVzoKjJixFOuhcDnOEnMe)
 
-![](img/39f42da92fed931ec4665f7648fb24c5.png)
 
 [君不见黄河之水天上来，奔流到海不复回。 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MVUKbTf9Qo97TjxRYGrcisXsnhg)
 
-![](img/5b26e8ef106d66245eec39bb42983085.png)
 
 [Duet.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WZ3Ebru8goxwbHxxcCaccquGnDb)
 

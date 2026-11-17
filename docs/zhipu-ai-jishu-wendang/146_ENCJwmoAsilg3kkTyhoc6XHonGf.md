@@ -69,7 +69,6 @@
 | **稳定的画面主体** |  |  |  |  |  |
 | **多样的场景风格** |  |  |  |  |  |
 
-![](img/1d14057ba34a19cbd22764536bbe0334.png)
 
 [178.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NzwobyHJ5oaN1dxAz37cG7aun5g)
 
@@ -77,7 +76,6 @@
 
 [82.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RR0ubJrmNoridpxnuNiclviMnDb)
 
-![](img/eb9dfa1746eb274c0f1766458f1cf695.png)
 
 [镜头从高空俯拍，一道.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Eu5Qb4BvDoCWvtxauIwcqmaBnWg)
 
@@ -93,11 +91,9 @@
 
 [31.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TfIjbjFC2os3HUxIs9VcE9P6nqb)
 
-![](img/723d1adaef9fca2bfed7c902cf60d7e8.png)
 
 [2d9f37a4-5b1e-11f0-aace-02c06ab77468_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TXWVbwzfBon2NOx6V2cc6gqnnQh)
 
-![](img/6390b584261f7102c978d9a5b53a3db9.png)
 
 [一位优雅女子站在维多.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VF1sbE6LPoF9nyxHZfQcRSIanmg)
 
@@ -113,7 +109,6 @@
 
 [136.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gexzb2AqHoXnbKxqKWVcwaKZn2d)
 
-![](img/324d6cdd6bd5a31e3af84cc6b9eccde2.png)
 
 [641c2aea-5d61-11f0-a5e3-d6bee6897a09_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JXa0bMeJion3FkxRHq1ceQHQnhd)
 
@@ -125,19 +120,15 @@
 
 [c3cfcd9e-5b26-11f0-aace-02c06ab77468_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mp4wbfUoloO8qhxd40Ycxyd2nhg)
 
-![](img/94b46f7f6b303815f60b8864777a8870.png)
 
 [A tiny sparrow lands gently on a sunlit cherry blossom, its wings stirring the a.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I8ZJbgQ5dojBP3xQ6wvcZpbPnbh)
 
-![](img/0ec3e40166f05e34099c6b124f426309.png)
 
 [2dd2ac50-5d63-11f0-a5e3-d6bee6897a09_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RdbUbNVdToGWM0xsSz0c9HdinX1)
 
-![](img/a5f1a778c0e0a6227a525c8c6611b05b.png)
 
 [aea52398-5bb6-11f0-aace-02c06ab77468_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LpMPb7OQpoH4KGxAsFzcWAhVns0)
 
-![](img/cd68e2d6cce17ae76b10619a7173b4c3.png)
 
 [一张古琴静静浮在浅浅溪水中，梅花瓣从空中飘落，落在琴身与水面之上，激起圈圈涟漪。镜头超低空扫过水面，捕捉琴弦微微震动与花瓣纹理的细腻质感。光影柔和，如诗如画，构.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OkRgb0tUXoy3KuxkXgcckLwznKe)
 
@@ -198,7 +189,6 @@
 
 [9e53b624-9c14-11ef-a2ac-ae61e9fb88b7_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L6R7bEh6uo84pCxd6Qccyt5Wnnh)
 
-![](img/ca67b51b2ac98d5bc88b5eef8be87e34.png)
 
 [307_1730882102(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M9llbXHq1oT2zvxzH3qcDtxwnwe)
 
@@ -214,7 +204,6 @@
 
 [latent_recon_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Tw0LbdV3UoF8ObxVKLscKL8yn0g)
 
-![](img/13fada5df67a6060b81532296f77d814.png)
 
 [latent_recon_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KmtlbI8mIoGM79xC1Y3c9Rwjnrd)
 
@@ -306,7 +295,6 @@
 
 [Demo5-2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ml5Sbfeaaog82BxjHSocJyfCnEg)
 
-![](img/360c9636c089fcb67707127edcda4dc2.png)
 
 [latent_recon_0 (10).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OZ3obUlSIoaVmIxOSCJcm23YnBZ)
 
@@ -418,7 +406,6 @@
 |  |  |  |  |  |  |
 | **效果等级** | 三星 | 二星 | 二星 | 三星 | 五星 |
 
-![](img/92ff36a73b0eacb5a6f91411aeeb26e4.png)
 
 [a9fe3e26-bb31-5482-88da-ad63b74c0732_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WUMwbeB51oQGdixNojtcd6v3nPg)
 
@@ -426,7 +413,6 @@
 
 [59b88bd0-e89d-5939-b8f2-277b46b4be58_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VCWZbiSf1o7rjexp3NVcXwCNn5r)
 
-![](img/ec721cce1d920f04c886096357355d03.png)
 
 [b688cc8d-eb8e-5619-ab3c-d132feb28a3d_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SP9Ab5mMYoaoAYxvR3eckb6Mnph)
 
@@ -434,7 +420,6 @@
 
 [88b7d088-6fab-568d-aa5b-d4364fd7daef_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DTLMbrDYwovDonxeuxIcUMfan0c)
 
-![](img/b2a11f6cbc688ffd389cc9401150c88e.png)
 
 [d0779722-ba0b-5e20-a879-c29d09a8b24b_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H9zVbDcdQogXo7x2a65cUuXNnMf)
 
@@ -455,7 +440,6 @@
 
 [video_gen1723777393327.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AapPbXcK3oJfDBxL7dUcm8Szn6d)
 
-![](img/47633996202c7e14bb09af5e7369e988.png)
 
 [video_gen1723777483251.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BwPAbZj9Soufg6xKRmYc6znYnQh)
 
@@ -484,7 +468,6 @@
 | **视频** |  |  |  |  |  |  |  |
 | **提示词** | 参考风格：文森特·梵高，种子发芽破土而出 | 参考风格：威廉·透纳，种子发芽破土而出 | 参考风格：古斯塔夫·克林姆特，种子发芽破土而出 | 参考风格：莫奈（Claude Monet），种子发芽破土而出 | 参考风格：草间弥生（Yayoi Kusama），几个蘑菇破土而出 | 参考风格：弗里达·卡罗，种子发芽破土而出 | 参考风格：爱德华·蒙克，种子发芽破土而出 |
 
-![](img/1e1d79b6d30efb105b1873c4cdd5af83.png)
 
 [video_gen1723789388234.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M1VRbI27OoWWTqx9WK2clo9gnK0)
 
@@ -567,7 +550,6 @@
 
 [video_gen1723798024300.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FFNcbiMGgog3wixltGlcxaESnSa)
 
-![](img/d262f533b031b4dfbff739590e62d1a3.png)
 
 [video_gen1723796367648.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q6rbbe73yoULiYxLwPGcTfTXngb)
 
@@ -598,11 +580,9 @@
 
 [7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wi06bHRIxoJfBHxrqnnc7HA8n6c)
 
-![](img/fd030f85b2dd34857b201d88dbd218dd.png)
 
 [10.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MPIZbTIpuo2Q7rxCIWXcLPVln0b)
 
-![](img/3f0fb9270f93f6573ab228bc5935085a.png)
 
 [11.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BhkAbAkqFobY5Oxf4ihcF4TMnwf)
 
@@ -610,7 +590,6 @@
 
 [13.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ThY1bNVQdoqMcTx1Pd5cERvHnTh)
 
-![](img/e1e0b13663e0291723dfb459b3bb1624.png)
 
 [14.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ba92boIB1oRhUxxMArYc0cgBnRH)
 
@@ -654,7 +633,6 @@
 
 [粉色怪兽.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RvWzbGs1UoawW8x2M3DcZ1JznGg)
 
-![](img/07cc1fd120c0390ef348be40dc78545f.png)
 
 [千与千寻好多吃的.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zg7fbOfsooIRjYxyD6FcHJqRnie)
 
@@ -678,7 +656,6 @@
 
 [8.土豆变薯条（音乐版）.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V7pSb6afToiYu2xDZtPchvoMnyb)
 
-![](img/306bc5accdb655424abbd266bd39bdff.png)
 
 [1.冰山恶龙（音乐版）.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SBOvbJeQBoazXRxq4jBcROhanUb)
 
@@ -738,11 +715,9 @@
 |  | 戴眼镜 | 无主体，唐僧未能遵从指令戴上墨镜 |  |
 |  | 唐僧伸出手，戴上墨镜 | 有主体 |  |
 
-![](img/742987b24fea9791db5e227ddc278bb2.png)
 
 [c1c5f954-64a1-581e-8d73-e42a5a55fa3f_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GHAAbBqYLoAPrgx55KCcDVrwnRe)
 
-![](img/a105a7dec7e02a599c7dcfdc4abaf486.png)
 
 [46c24d0c-cf11-5c6f-bd5e-3b62863eaf51_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SE1Wbu4yVoZE6wxWsOKcqk70nsc)
 
@@ -767,11 +742,9 @@
 | prompt | 无提示词 | 水豚慵懒地用吸管喝可乐，扭头朝向相机 | The primitive man raises his hand. The camera zooms out. | celine, classic photograph from Life magazine | An astronaut plays guitar in space, weightlessness, Christopher Nolan style | 天鹅挥动翅膀 | 一条龙的口中喷射出火焰，烧毁了一个小村庄 |
 | 视频 |  |  |  | ![](img/76bd560c75dee6662b6d8e1938116c73.png) |  | ![](img/8db2b3a1e06050c7ebf35611696a1f54.png) |  |
 
-![](img/e11f1750b7cc6ad40aec3a3e2179d10a.png)
 
 [甄嬛安陵容跨屏拥抱.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Sd5ebmwHFoIOKJxlhjucIshknXc)
 
-![](img/33aa8f5262f9f463926828feabcd002c.png)
 
 [6a8de3d4-000f-55fa-ac69-56c059e7d906_0 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TJxUbrJ7BoqCmgxTxEscvFQWnBe)
 
@@ -787,11 +760,9 @@
 
 [1-3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MngNbE5N9oXTyxxyhtAcloH4nVb)
 
-![](img/c7f6a4c14a08ffaf7f8826731aa8d3a3.png)
 
 [video_gen1721827217534.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WWpsbxjKwos0DaxOkvlc8Vbmnib)
 
-![](img/3db634f44e3196015840ad645113270a.png)
 
 [video_gen1721378695603.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B7NcbrLSRoWmUqxK7E3c0drXnuY)
 
@@ -803,11 +774,9 @@
 
 [000000-8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/On2Zb7O4Poiig4xkX2hck4mYnUh)
 
-![](img/5476dc73b2d737d1952db6b4709969a6.png)
 
 [000000-9.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TCAkb6piOonH8fxU2escMqminMv)
 
-![](img/60dcd07b1b69be0a7eb49c17702259a2.png)
 
 [000000-16.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PkV2b80WVoAChTx6pNJc5MDHnLg)
 
@@ -815,11 +784,9 @@
 
 [000000-11.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FKwXbOPccoL6qvxndxWcQuq7ncc)
 
-![](img/f855de329e5d2646e75c76439860560a.png)
 
 [000000-13.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YlK9b97iIolzUKx2etzch0E4n0f)
 
-![](img/789a4fba187fbf8d7c2a813316fc540f.png)
 
 [000000-15.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YUYWbkTkXoNrNmxdszEcZALOnUg)
 
@@ -827,31 +794,24 @@
 
 [000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IP13bbbclolOpExtwUpcDRbDn3f)
 
-![](img/58a37e98569fe82f293097a1615be441.png)
 
 [000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YzpUbWhUZon1H0xxRq1cywSKnhh)
 
-![](img/02f30f77772b09621d261f4a43e7e1a1.png)
 
 [000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZeXrbJmNUoxw2xxINg2cESrLnNc)
 
-![](img/bfae7e01d52f30e9ecbe211a0927f9cd.png)
 
 [000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ne78b2mLgoANGFxzXxscoW6jn4d)
 
-![](img/080ab43968feb8863e821342a3f49afc.png)
 
 [000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L14ybXVjkoZfW1xkn7IcXr5hn3e)
 
-![](img/05217dae2a69f8b1df0b953b1603d916.png)
 
 [000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SsFTbRb5gotBbNxOQwhc6cN5nFN)
 
-![](img/108ef70b92f0c280dfd6edd11524ee99.png)
 
 [000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LdnbbdKeioQO3Ex6mQqcErEUnhd)
 
-![](img/571e4a953a56a3707e50ab821f6059ca.png)
 
 [赛博美女.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Pq5sbrlRYoFx6Dxd3GSce7Zgnwd)
 
@@ -875,7 +835,6 @@
 
 ####  ➕欢迎关注我们的视频号获得更多教程&活动信息⬇️
 
-![](img/092229cdf243ba624d17e903af473121.png)
 
 ![](img/4be4ef5eada5b432258ebf4bdc944db2.png)
 

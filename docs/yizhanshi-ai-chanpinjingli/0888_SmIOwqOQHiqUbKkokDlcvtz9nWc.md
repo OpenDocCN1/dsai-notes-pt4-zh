@@ -42,7 +42,6 @@
 
 https://www.coze.cn/template/project/7483445293669957632?
 
-![](img/3159a01098a4ac01424f91acc3df89ab.png)
 
 https://www.coze.cn/template/agent/7418535986059067392?
 

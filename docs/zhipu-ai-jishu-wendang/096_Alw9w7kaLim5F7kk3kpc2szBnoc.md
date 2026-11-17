@@ -36,7 +36,6 @@ a yellow umbrella
 
 a purple suitcase
 
-![](img/4ab8e8aa637ecd2e356e2a9d59e91dd2.png)
 
 [cogvideo_00029.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QDyjbVuJtota8Px6DLxcIvnhnis)
 
@@ -48,13 +47,11 @@ a pink chair
 
 a yellow clock
 
-![](img/4f120acaaa7c782d1e372f5d559e9a2c.png)
 
 [cogvideo_00031.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YXqibYwTboK3s0xq6F0cqMgCncc)
 
 a white vase
 
-![](img/db5b1894e3a548152f07aac14148e642.png)
 
 [cogvideo_00032.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M29mbqzKyoVg8VxZ78LczlX3n9e)
 
@@ -66,43 +63,36 @@ a white vase
 
 A person is riding a bike
 
-![](img/d8a345d7b7da1e4e67ac7187bbc78f67.png)
 
 [cogvideo_00052.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BMNFbVNI0oJswDx3rDRc0zGtnrc)
 
 A person is roller skating
 
-![](img/0cc32c2bc1a9ccb091f68982c85c7196.png)
 
 [cogvideo_00054.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H3UVbrD75oGYKfxKSkQckJminEb)
 
 A person is petting animal
 
-![](img/ef34cdc494ea2902cf02b5aa6de7f877.png)
 
 [cogvideo_00058.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WWzVbxi8coMQfgxGlIRcKg5UnRJ)
 
 A person is sweeping floor
 
-![](img/e214cdf50be5bd1aae7806fb6dd8f772.png)
 
 [cogvideo_00063.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NqJXbIg9PoCKBux31ZgcIEtsnPF)
 
 A person is skateboarding
 
-![](img/614eb0a27d6ef5908362ab1c7c9f9907.png)
 
 [cogvideo_00064.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C9O0bXWIXoMQIUxaC4PcftRmn0g)
 
 A person is skydiving
 
-![](img/a4cbf4480b021fd928d058e6148775a1.png)
 
 [cogvideo_00069.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L0VTbvRVQoOa6Qx3zVocuQCjnFh)
 
 A person is shooting goal (soccer)
 
-![](img/483e641618a80f3f2c9404535ea3288a.png)
 
 [cogvideo_00070.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SKLIb8C8qo0kTqxIEsUc8QnCn6d)
 
@@ -126,25 +116,21 @@ a giraffe and a bird
 
 a chair
 
-![](img/35fffa161e307ab5743759bca50c8a06.png)
 
 [cogvideo_00078.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WJQEb2zFyo7rgfxc0iKc785KnMh)
 
 a remote
 
-![](img/18310930bb086ad9627c2870bb9e254c.png)
 
 [cogvideo_00080.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T87jbwVfGoNcMaxVCNKcmOjanUc)
 
 a keyboard
 
-![](img/b1d8b1e62921a63ce9fc736ec5f9ddb8.png)
 
 [cogvideo_00081.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UGaTb5QI6oK5oPxlJKXc4J8ynBd)
 
 a cell phone
 
-![](img/3e98b16b0bbc6109c91e577ef1e0cef4.png)
 
 [cogvideo_00082.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NsmAb7YuwoyhidxLvEucPIW4n5g)
 
@@ -156,13 +142,11 @@ a cell phone
 
 Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks.
 
-![](img/bce7dd68be8d148596312b011e1332c7.png)
 
 [cogvideo_00083.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PmnEbU4U2oaHDxxWGsLcV8p3nHh)
 
 Splash of turquoise water in extreme slow motion, alpha channel included.
 
-![](img/8e6f095978231f4a1a8dee01fffdd674.png)
 
 [cogvideo_00084.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IdpDbGXyAoaEA7x8SDTccwPynDc)
 
@@ -226,7 +210,6 @@ a person drinking coffee in a cafe
 
 a bicycle leaning against a tree
 
-![](img/6905ee5fac5480d9c341c6538bfe7814.png)
 
 [cogvideo_00100.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XreCbk3rCoriNTxx2Spc9gEpnDg)
 
@@ -250,7 +233,6 @@ a cow bending down to drink water from a river
 
 In a still frame, within the desolate desert, an oasis unfolded, characterized by the stoic presence of palm trees and a motionless, glassy pool of water
 
-![](img/61116ad05b4c51de4f62b2e90d469e46.png)
 
 [cogvideo_00111.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SMmlbPJdRoZyuSxUVjIcRR9onCH)
 

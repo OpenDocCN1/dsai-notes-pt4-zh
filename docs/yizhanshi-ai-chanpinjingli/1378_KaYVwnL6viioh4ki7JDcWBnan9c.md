@@ -100,7 +100,6 @@
 
 +   可以**对参考点进行一些随机偏移**。
 
-![](img/8f1a24616b75e6c6f1c13e4cee60eef5.png)
 
 [BEVDet：高性能多相机鸟瞰三维物体检测.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GvATbxBXGovICCx3aO8cVUdEn6d)
 
@@ -154,7 +153,6 @@ BevFusion
 
 > **DETR****：**优雅的2D目标检测算法。**DETR3D**，与**DETR****的思想一**致，直接**在多视角图片上进行3D检测**。采**用将object qu**ery 经过transformer获得3D参考点，然后投影到图像，提取特征获得3D检测框。
 
-![](img/e3a27fd13a103d86b81256864d47fecb.png)
 
 [DETR3D：通过3D到2D查询从多视图图像中检测3D对象.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dzl6bbnP0oo0uOxj57vcIqxpnLb)
 
@@ -202,7 +200,6 @@ DETR3D的过程可以总结如下：
 
 > 简单来说，即为增加一个3D**坐标****生****成器****，将**相机视锥空间的点离散为W*H*D并投影到3D空间中。将3D的位置编码到2D图片的特征中。通过FC到相同的通道数。
 
-![](img/9d9e578a09a2bdffaa9b4eb9040e5b11.png)
 
 [PETR：用于多视点三维物体检测的位置嵌入变换.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EgLHbqnf6oMsK9xVWcjcW8k6nrh)
 

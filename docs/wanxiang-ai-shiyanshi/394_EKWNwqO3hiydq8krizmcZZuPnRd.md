@@ -56,7 +56,6 @@ GEO**（Genera**tive Engine Optimization），即“生成式引擎优化”，�
 
 ### 研究论文：
 
-![](img/29bb12b224cc938c1961b5f093e42cef.png)
 
 [GEO Generative Engine Optimization.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KoudbkyfioEAenxOIsWccUvenEh)
 

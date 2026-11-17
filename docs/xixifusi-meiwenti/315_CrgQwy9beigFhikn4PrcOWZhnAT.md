@@ -2,7 +2,6 @@
 
 > 来源：[https://docs.feishu.cn/docx/Q4yGdPwylojOwrxHos5ccPU2nnc](https://docs.feishu.cn/docx/Q4yGdPwylojOwrxHos5ccPU2nnc)
 
-![](img/1638c17273074e95f7456965c486d717.png)
 
 [强化班 NPD & PM - 2023 - Part 1.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Pg9ObBmWIoEBtTxU9jAckS7cnKh)
 
@@ -202,7 +201,6 @@
 
 ## **2.2 用户画像**
 
-![](img/32187f158cbbc1da283f9bf9dfaa6ca4.png)
 
 +   Voice of the Customer
 

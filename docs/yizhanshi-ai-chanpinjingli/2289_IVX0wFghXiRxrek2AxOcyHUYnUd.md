@@ -96,13 +96,10 @@ Set-ExecutionPolicy RemoteSigned
 
 1.  型号1：小米AI音箱（1代），这个型号根据前述表格，型号码为S12（底部标签不一致，请按表格中型号为准
 
-![](img/dd45452934d27bacd56ca0b7e008ff13.png)
 
-![](img/9d1791758c4e6a85757e9a4be49f3c69.png)
 
 1.  型号2：小米AI音箱（2代），型号码为L15A（看底部标签）
 
-![](img/28c89fe35ecb566c7802b22723e748f4.png)
 
 ![](img/9e8910254a08ed3f321c0a668312c165.png)
 
@@ -110,7 +107,6 @@ Set-ExecutionPolicy RemoteSigned
 
 +   小米账号：登录米家或者小爱音箱APP后，可以在"我的"界面中看到ID，我这里是9开头的一串数字
 
-![](img/af1548213d97a33cb162dcacf74ca1df.png)
 
 ![](img/4d76f3d64435bb05f924b440529f517f.png)
 

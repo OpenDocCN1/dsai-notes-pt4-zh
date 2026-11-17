@@ -752,7 +752,6 @@ C. 不确定。
 
 +   对话原文：https://poe.com/s/gR0YpeURJyT6JFbQi8Hh
 
-![](img/6e85c5a221c2d48371df827f03905f75.png)
 
 ![](img/1e21ea7a84a8c513d63ba1a7274de1dc.png)
 

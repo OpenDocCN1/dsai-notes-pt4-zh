@@ -40,7 +40,6 @@
 
 Antigravity是谷歌11月18号发布的AI编程IDE，和Gemini 3一起亮相的。
 
-![](img/3ca242d21af0061f37bb4180a175ec1b.png)
 
 不是普通的代码编辑器，是Agent-First架构——你只需描述任务，AI代理自主完成从规划到测试的全流程。
 
@@ -50,7 +49,6 @@ Antigravity是谷歌11月18号发布的AI编程IDE，和Gemini 3一起亮相的�
 
 这两天玩下来，发现它不只是个编辑器，更像是个AI任务调度中心。
 
-![](img/d5708e74e39731234b05a014a83083a3.png)
 
 ---
 
@@ -74,7 +72,6 @@ Terminal-Bench上也是第一，59.3%，比Gemini 3 Pro的54.2%高出一截。
 
 省钱又省时间。
 
-![](img/287e4a25890d4d6cf8dc2394d36b08f7.png)
 
 ---
 
@@ -90,7 +87,6 @@ Antigravity的亮点核心，你可以同时开多个工作区，每个工作区
 
 基于VS Code构建，界面熟悉，支持Tab补全、内联对话、语法高亮、Git集成。有个"tab to jump"功能挺骚，智能推荐光标下一个跳转位置。
 
-![](img/77f5c0d0234a3df8cded055e0671d621.png)
 
 **Browser（内嵌浏览器）**
 
@@ -122,11 +118,9 @@ Agent会根据你的反馈调整，不用重新开始任务。
 
 这设计太人性化了，终于不用盯着一堆日志找问题。
 
-![](img/39515ede94481cd249e315893f641e11.png)
 
 推荐使用Planning先做计划，查看处理方案是否正确。
 
-![](img/5b3906c4f462574f93eca27b08cd414b.png)
 
 ### **浏览器控制**
 
@@ -154,7 +148,6 @@ Antigravity会提示你安装Antigravity Browser Control扩展。
 
 ![](img/1795903c880fc7ca627c7dc74582cf92.png)
 
-![](img/3e6e581c5a20831717b33fb755164987.png)
 
 ### **知识库功能**
 
@@ -218,9 +211,7 @@ Agent能执行终端命令，这有风险。Antigravity用Allow List/Deny List�
 
 建议设置：日常用Auto，把 rm 、 curl 这些危险命令加到Deny List。有个用户分享经验："我只白名单了jq、csvkit、ripgrep，其他全部要手动批准。"这样既高效又安全。
 
-![](img/24745988b2a0883b46162cda129cffd1.png)
 
-![](img/e25ded9322c96c346cf58ac76f8c955f.png)
 
 ![](img/79cc666092c937bd2effcc6c3a884570.png)
 
@@ -242,7 +233,6 @@ Agent能执行终端命令，这有风险。Antigravity用Allow List/Deny List�
 
 创建一个你的工作流规则
 
-![](img/a3dbcbc4bb0104b54fabc7fe8089a207.png)
 
 然后用 /工作流名字 触发
 

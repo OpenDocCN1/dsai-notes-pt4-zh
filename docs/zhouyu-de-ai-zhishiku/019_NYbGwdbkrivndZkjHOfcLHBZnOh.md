@@ -258,7 +258,6 @@ claude
 
 Normal Mode - 默认模式（新手推荐）
 
-![](img/78e06339401e4fd4fe4a6acfd8dbe480.png)
 
 **特点 **：所有操作都询问你，AI 不会擅自行动
 
@@ -266,7 +265,6 @@ Normal Mode - 默认模式（新手推荐）
 
 Accept Edits - 自动编辑（日常用这个）
 
-![](img/5f54385dc97313bcccf3170c05f3af3f.png)
 
 **特点 **：AI 可以自动改文件，但运行命令还是会问
 
@@ -276,7 +274,6 @@ Accept Edits - 自动编辑（日常用这个）
 
 Plan Mode - 先看计划（复杂任务用）
 
-![](img/0aba916f1f4deab29c964863e2e91198.png)
 
 **特点 **：AI 先列出完整计划，你审查后再执行
 
@@ -286,7 +283,6 @@ Plan Mode - 先看计划（复杂任务用）
 
 Bypass Permissions - 完全自动（⚠️ 危险！）
 
-![](img/d77f9d190ea34e4c19cb9ce91c1a7641.png)
 
 **特点 **：AI 可以做任何事，不问你（包括删除文件！）
 
@@ -429,15 +425,12 @@ argument-hint: [命令参数提示（可选）]
 
 1.  3. 选第一个，根据文件夹生成
 
-![](img/20030a24292d453ed5aef384ee7b6141.png)
 
 1.  4. 选自动生成（推荐）
 
-![](img/d7971e67bf18174bad4afe88193d21a8.png)
 
 1.  5. 输入你的要求
 
-![](img/5257c47343970b841f6daa3bbead8696.png)
 
 1.  6. AI 开始自动生成
 

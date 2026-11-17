@@ -50,7 +50,6 @@ A simple graphic illustration depicting a happy and smiling woman on Women's Day
 
 瞬间完成！贺卡就准备好了。
 
-![](img/2f36451e7d3478eaa009a39fe0e0af4c.png)
 
 ![](img/6cfc3446d5dfb3fcfc06c9b1d0f576cb.png)
 

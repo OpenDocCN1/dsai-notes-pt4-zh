@@ -130,7 +130,6 @@ We also plan to continue developing and releasing models in our GPT series, in a
 
 ## 官方视频集合
 
-![](img/c8aa00dc725421deec46cab4d3760e4e.png)
 
 [Scott Wu_ OpenAI o1 & Coding_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HFDgb84AZonNUOxqPsScsBYknwd)
 
@@ -138,11 +137,9 @@ We also plan to continue developing and releasing models in our GPT series, in a
 
 [Mario Krenn_ OpenAI o1 & Quantum Physics_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YYmnbHsy7oubfvxwy6EcyWtennd)
 
-![](img/de85e2e8f0c79f0967ec7f838b4a0174.png)
 
 [Catherine Brownstein_ OpenAI o1 & Genetics_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T64jbyPuKoEKpYxVruJc2Do7n1c)
 
-![](img/4262e87560dfa68e65585236271788bf.png)
 
 [Tyler Cowen_ OpenAI o1 & Economics_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OL1Mb7g8ZoOYyhxotY3cZC9Enze)
 
@@ -150,11 +147,9 @@ Game coding
 
 Reasoning
 
-![](img/c0777539de4d95254bd73606accf0502.png)
 
 [Video Game Coding with OpenAI o1_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ERvkbUhs5oPLv4xOpBLcMLienUe)
 
-![](img/571a4e1d49861d3d7cd18a4c1c3f6868.png)
 
 [Reasoning with OpenAI o1_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GBwJb4MvJoJEacxUncMcwQBpnBb)
 
@@ -162,11 +157,9 @@ Korean cipher
 
 Math
 
-![](img/f86d616177bd7a5f503abbec70152a1b.png)
 
 [Korean Cipher with OpenAI o1_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S2QGbGaXToBnQExrrFqcOuY1n2c)
 
-![](img/c099a3b05834ada264199f5d4025a4d4.png)
 
 [Math with OpenAI o1_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W5KTbkjJyoTrQPx7Wloc5ufUnyd)
 
@@ -174,11 +167,9 @@ Counting:著名的草莓单词里面有几个r
 
 coding
 
-![](img/d4eae2a5b496affbd0f9d23c5e4baa45.png)
 
 [Counting with OpenAI o1_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TgT8bHpTJok87UxM0Brcoly6nFd)
 
-![](img/cf18faba78b04781171499e07f4fc033.png)
 
 [Coding with OpenAI o1_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LujJbnveRoemuFxjaEWcsFGVnTo)
 
@@ -218,7 +209,6 @@ https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/
 
 https://openai.com/index/learning-to-reason-with-llms/
 
-![](img/9692c525c5235cbafc447e0c49f012be.png)
 
 [与LLMs学习推理 _开放人工智能 --- Learning to Reason with LLMs _ OpenAI.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RCBYbxRxPogjHbxJFKicpG7ZnLb)
 

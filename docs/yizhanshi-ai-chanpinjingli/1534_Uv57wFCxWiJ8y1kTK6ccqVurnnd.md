@@ -10,7 +10,6 @@
 
 推荐英文版
 
-![](img/877e3fa3a765384ab6d931463bde531e.png)
 
 [CES_2024_Industry_Mapping.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Tmeub2JMpo75HXxUBWdchLilnQg)
 

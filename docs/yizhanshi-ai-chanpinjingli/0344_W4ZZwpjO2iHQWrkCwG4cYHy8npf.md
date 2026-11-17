@@ -14,7 +14,6 @@ Attention（注意力）机制如果浅层的理解，就是「从关注全部�
 
 ![](img/fa881a92100fa968701bdf712936ab8c.png)
 
-![](img/62106833e7da8a2f69219c2089f60d9a.png)
 
 ![](img/eeff8aa2be0e285e55359a13184322d0.png)
 
@@ -226,7 +225,6 @@ def** **scaled_dot_p**r**oduct_atten**t**ion(query, key, val**u**e, q**ue**ry_ma
 
 +   现象：大部分pattern仅对当前token附近几个token有较强的注意力，但总有那么几个特立独行的pattern，比如6~10头的pattern就是奇形怪状的
 
-![](img/1ce784984a3aabc6701675b7a5a594d9.png)
 
 +   实验二：为了分析多头是否能捕获词序关系，通过打乱预料的词序和固定搭配
 

@@ -760,7 +760,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 
 ![](img/0ffc5de26c5111bbc68a5aa75d0b9ee8.png)
 
-![](img/caec8d54fd0f64e439a97775858e0c58.png)
 
 一張照片般真實的提示，描繪一位年輕女性在倫敦一家寧靜的戶外餐廳，時值三月清晨，天氣涼爽宜人。畫面採淺景深，呈現隨手用手機拍攝的自然氛圍。
 

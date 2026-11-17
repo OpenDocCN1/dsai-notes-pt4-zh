@@ -6,15 +6,12 @@
 
 ## 新年快乐 2025/01/01
 
-![](img/ed23cad5542e88d1bba7c24d7eaceba4.png)
 
-![](img/99b32a2f7ffc101361826694682300db.png)
 
 ![](img/a5c82e6499a94c5ce982983da97a9b75.png)
 
 ![](img/c81a2374e370b9c2c69e0a38b34fa510.png)
 
-![](img/c6ece99c6b0ce6968d8d57af9aac906b.png)
 
 ![](img/bbc7287d2606ea1e2429ea3d8d5bfa20.png)
 
@@ -40,7 +37,6 @@
 
 ![](img/be38a64b0da1c450b28e6192389e2306.png)
 
-![](img/978eff6f7f6d53c969a87fe09cb2762b.png)
 
 ![](img/cce1ea3b58da0ac168761968bc163af2.png)
 
@@ -52,7 +48,6 @@
 
 ![](img/6f1b23317d261618af16afc41a3abfa0.png)
 
-![](img/dc3637b8b0ac6fde44bbeb98a1809004.png)
 
 # 2025/03
 
@@ -66,9 +61,7 @@
 
 > 2025.03.06 部门节日前出去拉花~
 
-![](img/0425780cb841e5299a18d0514838014a.png)
 
-![](img/94e323032c43195e45f631035aca95f7.png)
 
 ![](img/c925b10b5fb4db17803bdf6137dbb83c.png)
 
@@ -86,9 +79,7 @@
 
 ![](img/18c6611b4b5ae1abd26dc3faa50a4b5a.png)
 
-![](img/2c1da3f6236832a9ee68bc5eb1076cae.png)
 
-![](img/1d483bd8e23e5fbb9ac2d86ea3866bca.png)
 
 ## 家里近期的软装升级
 
@@ -98,7 +89,6 @@
 
 ![](img/64dd2261f19d35001a474e432bf29c5f.png)
 
-![](img/e0ea8d8005a089661ead0973aafda219.png)
 
 ![](img/865439b30f2948b55984920cbd75d349.png)
 
@@ -106,13 +96,11 @@
 
 ![](img/2fd6297027f0b6a5d620c752ef277231.png)
 
-![](img/ab8645ad52229b6ba4af315fb04e69bc.png)
 
 ## 去ponyo家咯~
 
 > 2025.03.22-23
 
-![](img/9f009532e678a5747e72d4898af9b62b.png)
 
 ![](img/0d9ebce3993de83abed25847e7edb254.png)
 

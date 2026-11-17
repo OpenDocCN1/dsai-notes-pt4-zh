@@ -2,11 +2,8 @@
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/VRLHdpoWsorbKex2ZjucqKBsnVd](https://xmgtoagi.feishu.cn/docx/VRLHdpoWsorbKex2ZjucqKBsnVd)
 
-![](img/de4ec23d208f488e34243351df82e7e6.png)
 
-![](img/96c947bd14477d5cf14982627f490a74.png)
 
-![](img/fa1f756051a57506efcdad3604486ab9.png)
 
 ![](img/4c5b055e968e0b8c0e7979d6aec934e2.png)
 
@@ -14,35 +11,26 @@ Spring morning, Chinese Siheyuan, courtyard, bamboo forest, dark green gauze cur
 
 ![](img/122dd7e648bd5e8780d7dc4f2fba9f9b.png)
 
-![](img/4289e9a9eb4786135d0095959513e054.png)
 
-![](img/25947d156b5b73b1d28c287f7201f500.png)
 
 ![](img/dc23afdfd69cfc816f21bc5e049210ee.png)
 
 The most beautiful beach in Bali, with a blue sea and sky, had an overlooking view of green trees on both sides of the cliff and rocks below, with clear water, various tropical fruits in the style of chair under tree, sunlight shining through clouds, vibrant colors, photorealistic landscapes, exotic atmosphere, stunning scenery, high resolution, high definition images, sharp focus, detailed scenery.
 
-![](img/381c60ede7c0633b37db6c4fc1395069.png)
 
-![](img/ffb1d1ba9224741d6e6dfcb50cdfc20a.png)
 
-![](img/1ed9f6ae3902cafbb568bd535c0ca1e3.png)
 
 ![](img/9b082ecd08d09c27957e7438641c8819.png)
 
 诗情画意
 
-![](img/edfaa219c3b0c547cfa1016405343bca.png)
 
-![](img/b150f969b3072623142b75a65d9b4f5e.png)
 
-![](img/82ab5f2aedf7fba12fb2248728686a77.png)
 
 ![](img/b2bddb0e5669bf5e8cfb4bd42d7504de.png)
 
 卷轴里的中国
 
-![](img/6e2b9dfa65a9343e6447c4c34988eae5.png)
 
 ![](img/fd8167eb4b8573e9ad2df74708c1e4c3.png)
 

@@ -14,7 +14,6 @@ TRAE.ai2025年10月20日 20:42
 
 本文作者：茉卷，TRAE 开发者用户
 
-![](img/61f4d8457aa8e098c22fe86308ae71d4.png)
 
 # Spec Kit 介绍
 
@@ -68,7 +67,6 @@ Spec Kit 是 GitHub 开源的一个开发工具包（https://github.com/github/s
 
 +   开发效率低下
 
-![](img/57a36e326bc423a80f45cb1b6bc6e4a9.png)
 
 # Spec-kit 环境搭建详解
 

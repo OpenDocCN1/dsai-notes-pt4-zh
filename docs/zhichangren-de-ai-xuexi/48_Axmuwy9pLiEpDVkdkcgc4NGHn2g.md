@@ -6,7 +6,6 @@
 
 Character AI 是一个基于人工智能 LLM 的对话平台，用户可以与各种角色进行自然对话。利用先进的语言模型生成逼真的对话，旨在提供丰富的互动体验。
 
-![](img/223dae1187ea31b2db4a1f7ed0a35643.png)
 
 ![](img/5cd9e98b1bdba573a3d8c3d4354e7fa0.png)
 

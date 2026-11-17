@@ -6,7 +6,6 @@
 
 # TOOL01_Remix
 
-![](img/6d92f0e818b9d22ed79e6533436a923e.png)
 
 [Remix.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AaQtbYTsuoIf8wxFfLrca8yincc)
 
@@ -55,19 +54,16 @@ Ganache** 是一个适用于 **“开发场景”（或开发过程中的）的 
 
 Ganache 同时有着 GUI 版本，适合于新手快速配置使用。
 
-![](img/613e9188bc759576d54f14e762dab7e3.png)
 
 [Ganache.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HQTQbFrTLoEnStxXfB9ceuLLnoc)
 
 # TOOL04_Alchemy
 
-![](img/86cfc84965038fee711e605b6ab11f02.png)
 
 [Alchemy.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PiQqbTblcodgKsxwGWic6bAQnmc)
 
 # TOOL05_Dune
 
-![](img/2f405b6736eae45f660fee452f9e2f6b.png)
 
 [Dune.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FTBMb6PHHo5WtExrjv9ccmedn5B)
 

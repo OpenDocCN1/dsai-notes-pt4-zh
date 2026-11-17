@@ -200,7 +200,6 @@ SurroundSDF: Implicit 3D Scene Understanding Based on Signed Distance Field
 
 ![](img/e6a0d34fd7aec9e87336d6a0c5daf279.png)
 
-![](img/7f7999601a1c18168b0e0114bb43ea9a.png)
 
 ![](img/a273c314c49549fc3383ab804fddabe2.png)
 
@@ -330,7 +329,6 @@ SurroundSDF: Implicit 3D Scene Understanding Based on Signed Distance Field
 
 +   可以**对参考点进行一些随机偏移**。
 
-![](img/2d032531213f8e88ce76877275524aee.png)
 
 [BEVDet：高性能多相机鸟瞰三维物体检测.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CUVBbd4Y0oIpHmxyZJwcSu3Inke)
 
@@ -384,7 +382,6 @@ BevFusion
 
 > **DETR****：**优雅的2D目标检测算法。**DETR3D**，与**DETR****的思想一**致，直接**在多视角图片上进行3D检测**。采**用将object qu**ery 经过transformer获得3D参考点，然后投影到图像，提取特征获得3D检测框。
 
-![](img/383ae5198a9ef5b3a699cfeb4c19216b.png)
 
 [DETR3D：通过3D到2D查询从多视图图像中检测3D对象.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TDRVb0prNoGI4Kx5j1QcVFNdnyd)
 
@@ -432,7 +429,6 @@ DETR3D的过程可以总结如下：
 
 > 简单来说，即为增加一个3D**坐标****生****成器****，将**相机视锥空间的点离散为W*H*D并投影到3D空间中。将3D的位置编码到2D图片的特征中。通过FC到相同的通道数。
 
-![](img/7d659a8ab0502930281a76bc99b8b450.png)
 
 [PETR：用于多视点三维物体检测的位置嵌入变换.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LkEUbDYKiok4VYxyK9ucyUmRnCg)
 

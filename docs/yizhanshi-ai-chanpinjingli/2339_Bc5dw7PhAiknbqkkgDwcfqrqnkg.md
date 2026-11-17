@@ -643,7 +643,6 @@ SUNO需🪜
 
 ![](img/6f9be70f33d45750e2b9ed5bd6431b67.png)
 
-![](img/c96cbcd41afbd6c2ffaa032d38b311b8.png)
 
 ![](img/25fd238983cacf94045bfe6c754d796c.png)
 
@@ -665,7 +664,6 @@ SUNO需🪜
 
 ### **完成效果**
 
-![](img/d431e9da7e408e75e42792347c0e26a2.png)
 
 [10月31日 (1)(1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PcWBbFClzoqGqQx70VAcGrVZnfK)
 
@@ -703,16 +701,12 @@ SUNO需🪜
 
 | 提示词 | 原图 | AI工具 | 完成视频 |
 | --- | --- | --- | --- |
-| 老爷爷和小女儿看着镜头笑 | ![](img/2e01a1f305c22b8675fae9292449411d.png) | **海螺AI** |  |
-| 两个人相互拥抱，并微笑 | ![](img/fe4876e9e9010139b7def59e13f06d40.png) | **海螺AI** |  |
 | 小女孩和老奶奶看着镜头笑 | ![](img/9720cdc5017d070ef8ce241a2921640c.png) | **海螺AI** |  |
 | 老爷爷和小女孩在拍手 | ![](img/017dfc795da0d62dc47e480c79ada168.png) | **海螺AI** |  |
 
-![](img/81faa013d465849085e81645baeaece1.png)
 
 [1730361328685394161-video_watermark_9ceb23bdd2f174e4fb86d82491650bf2_308301817984847874.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KcI5bhEV3ohcsnxTdemcXiSon3g)
 
-![](img/a3da66f67133237612e6e831289080bb.png)
 
 [1730361716983058034-video_watermark_553c37e34df08672f7837615ed884502_308303414286614531.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NZ8HbB6eyoC7n5xWqi0cUomFnHh)
 
@@ -975,11 +969,9 @@ SUNO需🪜
 | 提示词 | 可灵1.0 | 可灵1.5 |
 | 小男生向前走 |  |  |
 
-![](img/73fc1a788c0ebd22ef5197f41e312fe1.png)
 
 [高品质_小男生向前走.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RGADbLyw2omMtTxfO4BcOO32n7f)
 
-![](img/387cccc86b5aca5143110411c2f9a5e2.png)
 
 [高品质_小男生酷酷的表情_向前走.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RAngblvqjoxwxZxLf5qcaZFbnPb)
 
@@ -990,15 +982,12 @@ SUNO需🪜
 | 小男孩看着镜头向前走 |  |  |
 | 小男孩看着镜头向前走 |  |  |
 
-![](img/fd3b284e0ab92ed88278481e2bdfc612.png)
 
 [高品质_镜头缓缓前推_拍摄到模特的衣服_然后_后退_模特微笑看镜头.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ao2LbxLbEofTglx9ojpc49aonqg)
 
-![](img/94cb5231be9892d9c8bb452867b0019b.png)
 
 [高品质_小男孩向镜头前走.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WGnkbAA8Oo6IkaxcChKckaamnLg)
 
-![](img/3b0c6fb769222191346b1346f6e1ae70.png)
 
 [高品质_小男孩向镜头前走-.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q6FabDy7uoZgj8xOJPycHregnUf)
 

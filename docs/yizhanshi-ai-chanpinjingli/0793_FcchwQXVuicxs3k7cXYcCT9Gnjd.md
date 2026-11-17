@@ -26,11 +26,8 @@
 
 #### 应用截图
 
-![](img/48028823a1f17cded837f72c5244bbb3.png)
 
-![](img/7c0aafc409ff193136f58beed41380d1.png)
 
-![](img/c10a686388868fecc403809bd524c5c2.png)
 
 ![](img/fe5273b4ac9ec2f5e15d3efeac09e3f6.png)
 

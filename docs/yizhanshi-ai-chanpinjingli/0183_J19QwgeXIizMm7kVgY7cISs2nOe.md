@@ -80,7 +80,6 @@ CodeGeeX4-ALL-9B的生成速度全面超越上一代模型，实现3倍速生成
 
 CodeGeeXv2.12.0版本可以为项目自动生成 README 文件。这个功能可以通过@Openedfile使用，通过分析已打开的项目代码结构、功能模块和依赖项，智能生成一个包含项目简介、安装步骤、使用方法、示例代码和贡献指南的 README 文件。
 
-![](img/5930f288cb462902802d008bdad5a041.png)
 
 [自动生成readme-音乐版.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J8UPb4WVlov8cBxslnIc7kS1ngc)
 

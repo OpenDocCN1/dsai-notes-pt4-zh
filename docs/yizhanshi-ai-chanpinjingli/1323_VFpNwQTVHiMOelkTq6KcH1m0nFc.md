@@ -206,23 +206,16 @@ Cursor还自动生成了一个README.md文件，内容超级专业：
 
 ![](img/b71ce9e83b1ffa6c8948349cef422ca1.png)
 
-![](img/a3f791a509b7bf3d05fc234da1a58ca9.png)
 
-![](img/685b23d69fa2b44b3660a27607986ee2.png)
 
-![](img/1deb5eb94a767256183286a245a47784.png)
 
-![](img/445236059b4a8203dad2fda59e5c3917.png)
 
-![](img/2ce0ba5d1cfd798eb72b376a18bdb448.png)
 
 ![](img/0819aeaaf7eca55e2de68186968bf781.png)
 
 ![](img/0a4b23893e4cb4742b3d5cf5667f59b5.png)
 
-![](img/18a6b2a905da2076a019abc29288b6b2.png)
 
-![](img/1015f994c93e37eb4fe8806c956b6146.png)
 
 ![](img/31b6fe923113fb5439f031d35174c14e.png)
 

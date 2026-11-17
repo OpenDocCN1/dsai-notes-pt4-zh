@@ -12,7 +12,6 @@
 
 ### **特效demo****：**
 
-![](img/10a1976a3de67c084840a0cac9c94e2c.png)
 
 [63b6a92d346f2e057d9af9f9e4444551.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D462b23Tho1Ww8xkaZDcK3uSnGf)
 

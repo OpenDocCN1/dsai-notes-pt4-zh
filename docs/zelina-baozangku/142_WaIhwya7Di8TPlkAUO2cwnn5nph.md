@@ -30,7 +30,6 @@ https://friends.figma.com/shanghai/
 
 Jolly：
 
-![](img/e511b34efcdb2fc3752eb5879c41c0d8.png)
 
 [MCP_FoF_Slides_Jolly.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U8TfbVCW8oLugPxpWL4cUdWwnNd)
 

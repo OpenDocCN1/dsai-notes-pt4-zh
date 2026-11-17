@@ -44,7 +44,6 @@
 
 ![](img/e426ac5ad147e3b6c8a7ea1b6eb41da4.png)
 
-![](img/64b5105d29e34fc6cc1806191a3d4212.png)
 
 ![](img/817c92b0b97d67fbd73d0948663bfbcd.png)
 
@@ -72,11 +71,8 @@
 
 ![](img/f49cf7538c67f32ee293d64370eb5ce9.png)
 
-![](img/d6df870ec4db1c473a9fbec67236e8ef.png)
 
-![](img/7e161a1104575b6c5a4fe09766f5f0a4.png)
 
-![](img/64f861ed5f3d161c624d851d052f6f65.png)
 
 周边产品设计 - 西游记主题：
 
@@ -90,7 +86,6 @@
 
 ![](img/06a275e21d23a6a3d80cec81033d49e8.png)
 
-![](img/6956c25f78e214bf5b66f1839f2ca589.png)
 
 ![](img/b83beed3f7788a63d5d958570dc3b040.png)
 
@@ -114,7 +109,6 @@
 
 +   现在的：在Lovart中生成素材 - 直接在画布上修改。
 
-![](img/0c7659532f1ab92f135155a265405af1.png)
 
 [513_8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XAYGb8HTuo67SFxpKANcpbYdnW9)
 
@@ -206,7 +200,6 @@ C
 
 生成LOGO和宣发素材：
 
-![](img/cec11f8a0611f290673400ba7caf3569.png)
 
 ![](img/f9d71b1a46c2e0cebac5e4e4febb03b4.png)
 
@@ -214,19 +207,14 @@ C
 
 生成海报：
 
-![](img/716ac7a3403baec97727cc15e387fb42.png)
 
 ![](img/063ddeb743b4851b587c3dde86ed4eaa.png)
 
 生成周边产品：
 
-![](img/9f22fbd4a8447b9e36ec7c12ae859a90.png)
 
-![](img/789dad6cd9c0f35479150190e15aa7a3.png)
 
-![](img/9e3d73d0476512779d30544a5c38ac6a.png)
 
-![](img/85b673e872e59576d0e295588c29e770.png)
 
 ![](img/f45193d2cec0c484982edee155d732cc.png)
 

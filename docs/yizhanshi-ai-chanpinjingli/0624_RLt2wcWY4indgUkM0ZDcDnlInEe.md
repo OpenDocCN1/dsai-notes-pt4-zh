@@ -44,7 +44,6 @@
 
 +   基于上述基础并行策略，**不同深度学习框架的实现方法不同**，**有的**是基**于 PyTorch 进行进一**步封**装形成单独的工具，如微软的D**eepSpeed-Mega**tron、NVIDIA 的** Megatron-LM、清华大学的 BMTrain 等；飞桨PaddePaddle 框架支持四维混合并行技术，可将基础的并行策略组合使用。
 
-![](img/31f59ab828411aeca0839c6673614aa7.png)
 
 [微软的DeepSpeed-Megatron.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hc82bpmaHosD1lxAizFch6jOnOh)
 

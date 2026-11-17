@@ -38,13 +38,9 @@
 
 ![](img/7fdc15fb83d198948f21bee29088d88e.png)
 
-![](img/9b047d76d306e22876e734a86d5f061b.png)
 
-![](img/f3cd3b686fe6c463ce2d19460909bdc2.png)
 
-![](img/a5376c5fccea2361aae4763bc860821c.png)
 
-![](img/e8dcdc18bb99d3fa7384fcaff85c7ab3.png)
 
 ![](img/56f54ab5377720460c2b94844ec4c3a0.png)
 

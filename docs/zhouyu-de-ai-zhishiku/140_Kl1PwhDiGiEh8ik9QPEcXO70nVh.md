@@ -200,13 +200,11 @@ https://www.comfy.org/zh-cn/download
 
 ![](img/a64d613f698f66fc5d1d4b7df3326d39.png)
 
-![](img/924591a1ea30c0e681cc3b984154535b.png)
 
 ![](img/1d72621b3e5378549118e0b1d2b934ae.png)
 
 ![](img/256c47bc3d70e386cb8dfdbb5ea367b1.png)
 
-![](img/cbf9b39d59244c77d22b849e0a75cee0.png)
 
 ![](img/d94419aa452aedbfb14bb66baa18b8e2.png)
 

@@ -10,7 +10,6 @@
 
 ### ImageBind:
 
-![](img/bcdb87bb04ce34d51a8cd6bc2482684c.png)
 
 ![](img/0996ac21943afa02509e7518c6665f29.png)
 
@@ -22,7 +21,6 @@
 
 ## 4M: Massively Multimodal Masked Modeling, Apple, 2023-2024
 
-![](img/b2922d09f02fce9538f7f3ee9924659d.png)
 
 [4M_Website_Video.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JNIrbP8XkoW8uGxKe5FcAI1knkf)
 
@@ -88,7 +86,6 @@
 
 **训练过程中**，模型会随机选择一些模态中的一小部分 token 作为输入，同样随机选择这些模态中的另一小部分 token 作为目标。以下是一个训练样本的具体构建过程：
 
-![](img/e3c72ff830b90da44c1dc1d94aebd2f3.png)
 
 +   **输入序列的构建****：从对称狄**利克莱分布中抽**取出每个模态**应该选取的 token** 长度比例 ** 为模态数量。然后从当前样本对**应的各个模态****所有 to**kens 中随机抽取出   个 tokens（对于原始数据为序列的模态，是随机抽取出连续的一个片段），其中   表示当前样本的第   个模态的 tokens 数量。这些从不同模态选出来的 token 片段按模态拼接成完整的输入序列，
 

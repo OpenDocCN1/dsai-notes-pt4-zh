@@ -117,7 +117,6 @@ bash run_pretrain_mcore-deepseek2.sh --model_size A2.4B --batch_size 1 --global_
 
 ![](img/c081d62d670900dd0c98b078e104eeea.png)
 
-![](img/a2096d29be01700b1780b3cfd6353d7a.png)
 
 ### 方式二：命令行
 
@@ -218,7 +217,6 @@ cp -f /vemlp-demo-models/model-deepseek-v2-lite/deepseek-v2-lite-tp2-pp1-ep4/*.j
 
 1.  打开负载均衡并配置端口。
 
-![](img/99255502f27a0d7dd7784232eeb151c5.png)
 
 在【服务管理】-【部署】处，点击新增部署。
 
@@ -240,11 +238,8 @@ python  -m vllm.entrypoints.openai.api_server  --model /vemlp-demo-models/model-
 
 1.  配置子网与安全组。
 
-![](img/f3ad85f9746594590ac8ae6b785c18c7.png)
 
-![](img/d59fa820b41855f38902b17bc8b73b7f.png)
 
-![](img/09a89d81c483c8ae656da2c53cd1a3ed.png)
 
 ![](img/9fd8194a5c7e1995c344d9176fb7572a.png)
 

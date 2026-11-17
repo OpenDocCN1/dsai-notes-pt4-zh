@@ -72,7 +72,6 @@ C值范围1-100 **，**较高的--chaos值会产生更不寻常和意想不到�
 
 still life gouache painting                      still life gouache painting --no fruit
 
-![](img/747def9ab9cedaab3f416b47bd8c851d.png)
 
 ![](img/42676b090bfd3bb850347af0851d1ef3.png)
 

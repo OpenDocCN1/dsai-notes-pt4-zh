@@ -84,11 +84,9 @@ Perplexity 最初由于没有广告而大受欢迎，近期已经不再提＂无
 
 比如，回答这个主题“Perplexity 在哪些方面类似于多功能瑞士军刀？”
 
-![](img/88e2cd3ed3b81d75f29a93444ec28a2d.png)
 
 可以跟进回答当前主题，专业搜索下面的思考步骤，每次都会给到我启发。
 
-![](img/e958c377dfae5531a169b61a3cd2ef67.png)
 
 ![](img/e7d1d55296e069d65ff66ed7c83b404e.png)
 
@@ -126,7 +124,6 @@ Page页面能够制作基于一个主题的知识内容，并且能够分享这�
 
 > 主图是自动生成，一个中规中矩的知识体系。
 
-![](img/53b2a3c03fd82c60badc925b99525555.png)
 
 [录屏2024-08-27 20.58.42.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PuwmbkAlAoZ59DxwO1Ec64s8nIg)
 
@@ -138,7 +135,6 @@ Page页面能够制作基于一个主题的知识内容，并且能够分享这�
 
 > 从主图可以看到对于初学者，用视觉化笔记形式展示这些抽象的概念，重点包括了很多基础概念。比如下面这个金字塔“数据-信息-知识-智慧”。
 
-![](img/fb24826a61b6e1e6526784c866b10210.png)
 
 [录屏2024-08-27 21.01.41.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BCuIb9cZOoHEIHxfgQAcotlznVg)
 
@@ -158,7 +154,6 @@ Page页面能够制作基于一个主题的知识内容，并且能够分享这�
 
 #### AI模型可以多种选择（仅限个人付费Pro版）
 
-![](img/5416c3c23a1cb74cac2341c15bcda66e.png)
 
 如果AI模型这里默认选择GPT-4O，如果回答时不满意，希望再次生成一个新回答，可以选择Claude 3 Opus，前面的回答就覆盖掉了。
 
@@ -184,15 +179,12 @@ Page页面能够制作基于一个主题的知识内容，并且能够分享这�
 
 可以在文章主题旁边，生成图像。这个功能我目前用的不多。目前有四种图像形式，都是在使用DALL-3情况下：
 
-![](img/4157cf6d92a38894d3193fdb55e7f68e.png)
 
 绘画DALL-3
 
-![](img/832c787f4b9a32bcad6ca826587e07b8.png)
 
 照片DALL-3
 
-![](img/703fef7475c9791a24391907325567e8.png)
 
 插图DALL-3
 
@@ -224,7 +216,6 @@ https://www.perplexity.ai/encyclopedia
 
 ![](img/7495fb0e091336c7279ab5a915be9f7e.png)
 
-![](img/dfa2c7d31bf6d0dd90e22551c53f454b.png)
 
 ![](img/8f90caa783470b5d1d84bf9d50647a2c.png)
 

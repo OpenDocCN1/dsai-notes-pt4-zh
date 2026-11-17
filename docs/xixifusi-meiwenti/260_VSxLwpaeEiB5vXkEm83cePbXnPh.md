@@ -10,19 +10,15 @@
 
 [创业估值与融资期末试卷.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H57QbF6qToku2zxrF64cvgXYnMb)
 
-![](img/abcd5256e71324cbd5b5f7611204edfa.png)
 
 [创业估值与融资作业1.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HPQqbvTtvof2cSxXI2ScI1hDn7d)
 
-![](img/f0b5b7e3fc5dc3ed3eac5cbd44d91e8b.png)
 
 [chpt 2 创业估值的原理和方法.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DZ1gbinz9oSp36xL25Lc6uvwn4d)
 
-![](img/ac94a151a759711230c531f832dfddf1.png)
 
 [chpt 3 私募股权（风险投资）市场.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cu8GbHLhtoHDeFxZRsQcc9pjnOb)
 
-![](img/41351381e0ffcf19ba6a81c9d0c2ba32.png)
 
 [chpt 4 公开股票市场.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AfbKbtUyMoBcggxa8hBczJ7BnHg)
 

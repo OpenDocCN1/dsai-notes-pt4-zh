@@ -38,13 +38,11 @@ POC由Arduino主板和双轴舵机云台组成，接线方式如下，成本约2
 
 作者@沐雯
 
-![](img/86a7cb66d9fe46a6db8ffdbfb786ebcf.png)
 
 [1638_1713923907.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F9o5bZoXyoun7FxrbAVcuVUxn2g)
 
 将SUNO AI放到小机器人里面，动作节奏不够
 
-![](img/1adc1e3d6f294828cfe1583ae4c16bfa.png)
 
 [2203_1714561985.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/My5UbRhxXoqL3nxW9PpcJIglnJc)
 
@@ -68,15 +66,12 @@ POC由Arduino主板和双轴舵机云台组成，接线方式如下，成本约2
 
 [[DEMO] Headshot Tracking  OpenCV  Arduino.webm](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G77abs8q3oE3KixCDGNcxwNBnAf)
 
-![](img/fed740051c1c898773b809704979a4b0.png)
 
 [动作指令.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RnGebMXMcoI9qHxk0nhcKhx3nlf)
 
-![](img/7508d04fc65cc78fa29d8e424e35ad18.png)
 
 [向左看向右看.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/R3L7bXjG2o1ThexquhvcrdO3nTd)
 
-![](img/9c4db22f4915ad40c0e97331a4e1f6d6.png)
 
 [知识问答.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mbq1bTXSHoxPl6x7yd9cEof1nMh)
 

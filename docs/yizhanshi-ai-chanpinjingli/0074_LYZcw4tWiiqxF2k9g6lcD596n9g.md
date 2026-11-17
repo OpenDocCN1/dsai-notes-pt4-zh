@@ -28,13 +28,11 @@ CogVideoX-5B 是中质量较高视频生成模型，提升了视频生成的质�
 
 # 生成案例
 
-![](img/5ff286ea803cd13469f6276c02222efa.png)
 
 [361438140-cf5953ea-96d3-48fd-9907-c4708752c714.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rs48b0VmKoY3fxxl6PZcWV20nYf)
 
 **Prompt:** A garden comes to life as a kaleidoscope of butterflies flutters amidst the blossoms, their delicate wings casting shadows on the petals below. In the background, a grand fountain cascades water with a gentle splendor, its rhythmic sound providing a soothing backdrop. Beneath the cool shade of a mature tree, a solitary wooden chair invites solitude and reflection, its smooth surface worn by the touch of countless visitors seeking a moment of tranquility in nature's embrace.
 
-![](img/e86116e9916fa9d8a57fe06ec3f27cad.png)
 
 [361438175-7db2bbce-194d-434d-a605-350254b6c298.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VWy2b1kRHop2QMxuBB9cB2WTnPh)
 

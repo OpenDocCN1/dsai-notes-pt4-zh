@@ -275,7 +275,6 @@ https://chat.openai.com/g/g-O8Y8pE85i-findgpts
 
 1.  https://app.tavily.com/chat 基于浏览器的GPT Research实现，可通过无代码平台访问
 
-![](img/cba9ad75f124830f300b1aca7a46b45c.png)
 
 [Tavily AI --- 塔维利人工智能.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WDHJbTXbeov9x1xEpdTcYbtRn1d)
 

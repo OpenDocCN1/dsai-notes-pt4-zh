@@ -8,7 +8,6 @@
 
 ## 搞懂 AI ：[🌿 搞懂 AI ](https://v11enp9ok1h.feishu.cn/wiki/DLviwLDh1igUGEkFBWKcV7RTnPf)
 
-![](img/4380ad31ce8ce13ce15d0c45798900e9.png)
 
 [AI产品经理转行指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KfoebjPfjo2lgPxqzcrcrYrxn6b)
 

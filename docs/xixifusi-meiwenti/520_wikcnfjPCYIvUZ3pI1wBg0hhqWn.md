@@ -1825,9 +1825,7 @@ contract CallContract{
 
 复制OtherContract合约的地址，填入callSetX函数的参数中，成功调用后，调用OtherContract合约中的getX验证x变为123
 
-![](img/9e09fb6dc609147d96e5fcd7fd4593b3.png)
 
-![](img/d834a6d685fc51610d916a6ff8c05bad.png)
 
 1.  传入合约变量
 
@@ -1843,7 +1841,6 @@ contract CallContract{
 
 复制OtherContract合约的地址，填入callGetX函数的参数中，调用后成功获取x的值
 
-![](img/2012608cc7296a986f61f4dd3e7fd45b.png)
 
 1.  创建合约变量
 
@@ -1858,7 +1855,6 @@ contract CallContract{
 
 复制OtherContract合约的地址，填入callGetX2函数的参数中，调用后成功获取x的值
 
-![](img/e1f1d899fabae00ebe7eba812b84d34f.png)
 
 1.  调用合约并发送ETH
 
@@ -1874,7 +1870,6 @@ OtherContract合约的setX函数是payable的，在下面这个例子中我们�
 
 复制OtherContract合约的地址，填入setXTransferETH函数的参数中，并转入10ETH
 
-![](img/675dac0049cafb5188782a84ff54b42b.png)
 
 转账后，我们可以通过Log事件和getBalance()函数观察目标合约ETH余额的变化。
 
@@ -2150,23 +2145,18 @@ callSetVars 函数通过 call 来调用 setVars 。它有两个参数 _addr 和 
 
 1.  首先，我们把合约 B 和 C 都部署好
 
-![](img/e108098bedc00fe07f3547b3ec2d367d.png)
 
 1.  部署之后，查看 C 合约状态变量的初始值， B 合约的状态变量也是一样。
 
-![](img/72814111081ddb97a58f78cd488a2e9f.png)
 
 1.  此时，调用合约 B 中的 callSetVars ，传入参数为合约 C 地址和 10
 
-![](img/03835434f9d3b9f41128a0e83c7e18e6.png)
 
 1.  运行后，合约 C 中的状态变量将被修改： num 被改为 10 ， sender 变为合约 B 的地址
 
-![](img/43b0135df1912e94f9719e413192ccb8.png)
 
 1.  接下来，我们调用合约 B 中的 delegatecallSetVars ，传入参数为合约 C 地址和 100
 
-![](img/2c1e48b820410c2a61169ae4786df6db.png)
 
 1.  由于是 delegatecall ，语境为合约 B 。在运行后，合约 B 中的状态变量将被修改： num 被改为 100 ， sender 变为你的钱包地址。合约 C 中的状态变量不会被修改。
 
@@ -2270,11 +2260,9 @@ BSC链上的PEOPLE地址:
 
 1.使用 WBNB 和 PEOPLE 的地址作为参数调用 createPair ,得到 Pair 合约地址：0xD3e2008b4Da2cD6DEAF73471590fF30C86778A48
 
-![](img/4e2fea5b21bcddf6d41d07bc0256f6c5.png)
 
 2.查看 Pair 合约变量
 
-![](img/cb1d1470cd2acf268cc95f94cf5d8da4.png)
 
 3.Debug查看 create 操作码
 
@@ -2908,11 +2896,9 @@ SuccessEvent是**调用成功会释放**的事件，而CatchEvent和CatchByte是
 
 当运行execute(0)的时候，因为0为偶数，满足require(b % 2 == 0, "Ups! Reverting");，没有异常抛出，调用成功并释放SuccessEvent事件。
 
-![](img/2880ac4ef2cfb8448baefea24233f910.png)
 
 当运行execute(1)的时候，因为1为奇数，不满足require(b % 2 == 0, "Ups! Reverting");，异常抛出，调用失败并释放CatchEvent事件。
 
-![](img/19a18ff7a126071b2a004139f2296a1b.png)
 
 ### 处理合约创建异常
 
@@ -2942,11 +2928,9 @@ SuccessEvent是**调用成功会释放**的事件，而CatchEvent和CatchByte是
 
 当运行executeNew(0)时，因为0不满足require(a != 0, "invalid number");，会失败并释放CatchEvent事件。
 
-![](img/8091922cca3c6e02ec12f0152c1c4a47.png)
 
 当运行executeNew(1)时，因为1不满足assert(a != 1);，会失败并释放CatchByte事件。
 
-![](img/d1aaf631569dc99bee98a5f1bcacbb3d.png)
 
 当运行executeNew(2)时，因为2满足require(a != 0, "invalid number");和assert(a != 1);，会成功并释放SuccessEvent事件。
 

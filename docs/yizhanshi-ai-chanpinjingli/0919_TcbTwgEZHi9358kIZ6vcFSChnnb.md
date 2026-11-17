@@ -20,7 +20,6 @@
 
 ### 工作流展示
 
-![](img/f0d7b0270d2e66560535d74f3c7c8392.png)
 
 ![](img/fb6648e25de490c64804df8a2305f2b9.png)
 
@@ -36,7 +35,6 @@
 
 我们一个输出做一个整体来说，共三个输出整体，加上准备共四个，如下：
 
-![](img/8e5ca55d1b6db194d65a621f936e1278.png)
 
 ### 准备
 
@@ -80,7 +78,6 @@
 
 #### 添加文本处理节点
 
-![](img/bf9e6491f2be41dc2170eb9f201027a5.png)
 
 #### 修改文本处理节点
 
@@ -275,7 +272,6 @@ quick_describe(df)
 
 #### 连接（输出）节点到结束节点
 
-![](img/b17af347dce2aa072b6ff828d3a87a27.png)
 
 ## 恭喜！
 
@@ -283,7 +279,6 @@ quick_describe(df)
 
 点击试运行，上传文件，再点击试运行
 
-![](img/c2fb22ffae932a0a1d242885fb1303ba.png)
 
 我们可以看到是可以正常输出的
 
@@ -307,7 +302,6 @@ quick_describe(df)
 
 #### 添加文本处理节点
 
-![](img/b3098fd146513d3fc98be6036bef12ed.png)
 
 #### 修改文本处理节点
 
@@ -499,7 +493,6 @@ df.to_csv(&#x27;Data.csv&#x27;, index = True)
 
 #### 添加文本处理节点
 
-![](img/cbcff02bb97ab564d19fe6a9a2c2d569.png)
 
 #### 修改文本处理节点
 
@@ -569,7 +562,6 @@ print(csv_string)
 
 #### 添加选择器节点
 
-![](img/624dc114d51a48c016ce1c44b795cf2f.png)
 
 #### 修改选择器节点
 
@@ -579,11 +571,9 @@ print(csv_string)
 
 +   重命名为判断执行是否成功
 
-![](img/62d24c79249e46dec296f392ce64633c.png)
 
 #### 添加文本处理节点
 
-![](img/2d34cefbd6872116dd56760c8041d010.png)
 
 #### 修改文本处理节点
 
@@ -642,7 +632,6 @@ except ImportError:
 
 ![](img/2b4984dacefdf67ff5bd9ef4f8025ff4.png)
 
-![](img/bbcbc00a3b342b103f47e539b195a5e3.png)
 
 #### 修改插件（代码执行器-CodeRunner）节点
 
@@ -656,7 +645,6 @@ except ImportError:
 
 ![](img/92e100edccf7dc14b6a0ef537a2ad2bc.png)
 
-![](img/b4b92231fd66f7dff5b2d0a97b6e1ee2.png)
 
 #### 修改插件（Doc Maker-create_spreadsheet）节点
 
@@ -664,11 +652,9 @@ except ImportError:
 
 +   修改名称为“下载CSV”
 
-![](img/27a2c6190886f18c899abd397347e43a.png)
 
 #### 添加文本处理节点
 
-![](img/08349a50bdb93dfa39266dd1b0cc23c4.png)
 
 #### 修改文本处理节点
 
@@ -687,13 +673,11 @@ except ImportError:
 
 +   命名为“特证工程成功”
 
-![](img/6b8d9674fc420bbe6e44f4b43255b5a9.png)
 
 ## 下面让我们返回判断节点
 
 #### 添加文本处理节点
 
-![](img/f9db4d54141cb23f3128666ee9712da1.png)
 
 #### 修改文本处理节点
 
@@ -708,19 +692,16 @@ except ImportError:
 
 +   命名为“特证工程失败”
 
-![](img/4bdb58483daa79e6971c3463ffe1c262.png)
 
 #### 添加变量聚合节点
 
 +   记得成功和失败都需要连接
 
-![](img/0d56c0a3949321e74a8323b60e0c30da.png)
 
 #### 修改变量聚合节点
 
 +   添加成功和失败的输出
 
-![](img/d1db566a8ef0b033c22d13b3ee9691e4.png)
 
 #### 添加输出节点
 
@@ -750,7 +731,6 @@ except ImportError:
 
 #### 点击试运行，上传文件，再点击试运行
 
-![](img/efcd3d741f9ed9093fc2a04cc1449919.png)
 
 我们可以看到是可以正常输出的
 
@@ -774,7 +754,6 @@ except ImportError:
 
 #### 添加文本处理节点
 
-![](img/9edbe814ca87fa11df8409b1882e43f9.png)
 
 #### 修改文本处理节点
 
@@ -827,7 +806,6 @@ print(df.head())
 
 ![](img/735ee44c74c3fcf1771c0139c581ac1b.png)
 
-![](img/b9130acecc7b9c363ba21bba4f592ec4.png)
 
 #### 修改插件（代码执行器-CodeRunner）节点
 
@@ -835,7 +813,6 @@ print(df.head())
 
 +   修改名称为“读取excel字段与前五行”
 
-![](img/3620072b88ad68a8334308ada216f797.png)
 
 #### 添加大模型节点
 
@@ -910,7 +887,6 @@ plt.show()
 
 #### 添加文本处理节点
 
-![](img/9ce73162b44ea8f4d853cb91abfc6e93.png)
 
 #### 修改文本处理节点
 
@@ -969,7 +945,6 @@ plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
 
 ![](img/773970d10d1e02003728fb97fbeb43f1.png)
 
-![](img/6946fc233da40b2b2240390743e6b406.png)
 
 #### 修改插件（代码执行器-CodeRunner）节点
 
@@ -977,11 +952,9 @@ plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
 
 +   修改名称为数据可视化
 
-![](img/1ab25cef6356ebeece8f11604f9565fe.png)
 
 #### 添加选择器节点
 
-![](img/eb45bcacd4215907406ae69a01d7ae2b.png)
 
 #### 修改选择器节点
 
@@ -991,7 +964,6 @@ plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
 
 +   重命名为判断图片是否生成成功
 
-![](img/b7bf86c35ae74a6ed481bf60e78ac480.png)
 
 #### 添加文本处理节点
 
@@ -1011,7 +983,6 @@ plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
 
 +   命名为图片生成成功
 
-![](img/010e5943b6f3b2ab91c6e64a402bf2bf.png)
 
 #### 添加文本处理节点
 
@@ -1032,19 +1003,16 @@ plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
 
 +   命名为图片生成失败
 
-![](img/d784d6fff6faa417bb9413ed964617ad.png)
 
 #### 添加变量聚合节点
 
 +   记得成功和失败都需要连接
 
-![](img/deb39de0c6ea16955857064db37545bc.png)
 
 #### 修改变量聚合节点
 
 +   添加成功和失败的输出
 
-![](img/2abd031bbdfd39bb279115e96099457b.png)
 
 #### 添加输出节点
 
@@ -1074,7 +1042,6 @@ plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
 
 点击试运行，上传文件，再点击试运行
 
-![](img/69e4998d1ad1056e02c792b0150d4f45.png)
 
 我们可以看到是可以正常输出的
 

@@ -72,7 +72,6 @@ severs 配置直接看：https://github.com/modelcontextprotocol/servers 别看�
 
 cherry 配置方法：
 
-![](img/d22e09403c5c44b60c50c10770f21afe.png)
 
 测试的有：
 

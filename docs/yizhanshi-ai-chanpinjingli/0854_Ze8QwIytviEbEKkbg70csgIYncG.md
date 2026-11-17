@@ -54,11 +54,9 @@
 
 +   **IDE 运行时**：Node.js
 
-![](img/a26c2ec6953557248e78dfbe7bef57d8.png)
 
 让我们创建一个工具，点击“在IDE中创建工具”
 
-![](img/bb43bf473ce977eeb66a9c8535e41705.png)
 
 点击左上角的“创建工具”
 
@@ -120,11 +118,9 @@
 
 1.  测试相关
 
-![](img/da4b14e8c80fa91506d1749ce2c4d830.png)
 
 让我们先看测试代码，分别有输入、输出；一般我们做测试的时候只需要写输入就可以使用了，输出后面可以让Coze一键生成。而控制台是我们查看运行日志。
 
-![](img/651fe5b16d0f0a3e6015165c00b3048c.png)
 
 这是日志，日志一般只保留7天
 
@@ -142,7 +138,6 @@
 
 复制代码粘贴
 
-![](img/063cc1199158930973217f80fd14ea41.png)
 
 ```
 import { Args } from &#x27;@/runtime&#x27;;
@@ -265,17 +260,14 @@ export async function handler({ input, logger }: Args&lt;Input&gt;): Promise&lt;
 
 出现这个说明正常，有的时候会卡
 
-![](img/0bca70f9f232cbfe53a0cb124985e4a5.png)
 
 我们可以看到输出参数给我们写好了
 
-![](img/11b12d0029634aa797cfbfd3984319ff.png)
 
 #### 发布
 
 点击发布，稍等
 
-![](img/4649acec4eca6d9a887bbafecf427a7b.png)
 
 返回到智能体就可以看到了~
 
@@ -305,7 +297,6 @@ export async function handler({ input, logger }: Args&lt;Input&gt;): Promise&lt;
 
 先让我们创建一个插件，点击导入
 
-![](img/bec3e2980c463cdd59e7d80f10bc05ff.png)
 
 点击“URL和原始数据”，复制粘贴下面内容
 
@@ -376,15 +367,12 @@ servers:
 
 开启“启用”
 
-![](img/4c4f267f0ecf66ee7539a4ce42f1a3aa.png)
 
 点击调试
 
-![](img/49edbc171029168a3877dc99062e1fc3.png)
 
 点击“试运行”
 
-![](img/28def3373fec3937953d16e87172ca81.png)
 
 点击运行（注意填写密钥）
 

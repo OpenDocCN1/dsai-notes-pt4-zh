@@ -14,7 +14,6 @@
 
 +   **第一次答疑 PPT：**
 
-![](img/74a233bdce144eb28d648e1f2c68781a.png)
 
 [2024金融行业·大模型挑战赛初赛答疑.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LBhqbdApKoB2Z8x11xGc5Zdjnge)
 

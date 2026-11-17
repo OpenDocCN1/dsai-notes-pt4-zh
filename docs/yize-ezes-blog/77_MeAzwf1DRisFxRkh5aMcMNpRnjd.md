@@ -403,7 +403,6 @@ Anthropic 分享了他们过去一年里，与数十个团队、客户合作构�
 
 +   和 Agent 的区别是，增强型 LLM 不会规划任务流程，也无法自行决定下一步做什么，不能自主进行多轮交互。
 
-![](img/f8406ff542b43b19c234b14b8fad324e.png)
 
 +   提示链工作流（Workflow： Prompt Chaining）
 
@@ -411,7 +410,6 @@ Anthropic 分享了他们过去一年里，与数十个团队、客户合作构�
 
 +   示例应用：营销文案生成 → 翻译为其他语言；文章大纲生成 → 检查 → 分段完成正文编写
 
-![](img/013bb65eefe66127e29ac34beac9b9c4.png)
 
 +   路由式工作流（Workflow：Routing）
 
@@ -419,7 +417,6 @@ Anthropic 分享了他们过去一年里，与数十个团队、客户合作构�
 
 +   比如：AI  客服、Chatbot 自主切换回答模型（简单问题就切换到小模型，类似 ChatGPT 5 网页服务，优化成本和响应速度）
 
-![](img/a0b8fd75e4b85f8b0d14fbf731bbaca0.png)
 
 +   并行式工作流（Workflow：Parallelization）
 
@@ -433,7 +430,6 @@ Anthropic 分享了他们过去一年里，与数十个团队、客户合作构�
 
 +   Voting：代码 or 内容审计，通过不同模型/不同提示，从不同方面对内容进行评估，甚至通过投票阈值来过滤假阳性。
 
-![](img/004d901c6049dbbd44ba2e77b02ac4bf.png)
 
 +   协调-执行式工作流（Workflow：Orchestrator-Workers）
 
@@ -441,7 +437,6 @@ Anthropic 分享了他们过去一年里，与数十个团队、客户合作构�
 
 +   示例应用：对多个文件进行复杂更改的 coding 产品， 分解需要从多个来源收集信息的 search 任务等。
 
-![](img/95c5d8b1b1c031d399bf82cefeec9a92.png)
 
 +   评估-优化式工作流（Workflow：Evaluator-Optimizer）
 
@@ -449,7 +444,6 @@ Anthropic 分享了他们过去一年里，与数十个团队、客户合作构�
 
 +   比如：Search 场景、多轮文学创作与编辑（Evaluator 对多轮生成内容，进行综合反馈与建议）
 
-![](img/aae94fd907ff8a1768ff6a20e5de6003.png)
 
 ### Agent
 

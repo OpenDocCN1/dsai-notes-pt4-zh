@@ -119,7 +119,6 @@ Sunkim 的模板说明书清晰的阐述了模板的功能介绍、使用方法�
 
 Cynthia 的模板说明书通过在文档里面穿插视频的形式极大减少了用户的上手理解成本，因此这个模板成为使用量前几的模板。
 
-![](img/a5b9580bd1cbfa551f693027d08fd6b7.png)
 
 **案例三：**[Deepseek 投资｜投资第二大脑](https://bytedance.larkoffice.com/base/Wjb4bXty3ajOhKsex3Vc1sd0nWf?table=ldxnn3Hr8cMfhNNH)
 

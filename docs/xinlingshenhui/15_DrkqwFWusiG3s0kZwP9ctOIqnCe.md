@@ -10,15 +10,12 @@
 
 怎么找：直接搜索框搜索头像。
 
-![](img/c680ad42eb8134a1d2dd748494053ffb.png)
 
 根据搜索结果可以大致把头像分为几类：
 
 > 搞怪头像 玄学头像 情侣头像 Ins风自由感头像 风景头像
 
-![](img/6f1b4471e5ac9e706b12e170e481550a.png)
 
-![](img/b2162aad172b1882fde835d41f9e3bb6.png)
 
 ![](img/12da55c9e4d18985d9a5f84b1e28b845.png)
 
@@ -40,9 +37,7 @@
 
 选品这事儿是关键，选对了，哪怕外面竞争再激烈，赚钱的人还是你。选品，不是光看那些花里胡哨的技巧，也不是看到别人赚了就跟着选。你得站在商品的角度，想想当时的人是怎么想的，当时的环境是怎么样的。得从最根本的地方出发，才能选出最有可能赚钱的热门商品。
 
-![](img/82e59fd9730abdba3e0970ebb9e392ed.png)
 
-![](img/4b05469c121f515ddc857d634563bf00.png)
 
 ![](img/c82e1a5dc51e965c7c8029d1e90fb5e5.png)
 
@@ -122,7 +117,6 @@ wechat小众艺术感头像
 
 ![](img/35ba5fe04f15cae8360133d669c56ff7.png)
 
-![](img/b9abde0df4137d2ed22cfece4902940d.png)
 
 ![](img/75e8532d1ed2748cd5a2e74c0cf20573.png)
 
@@ -142,9 +136,7 @@ A girl wearing glasses is sitting next to a laptop, typing seriously. The minima
 
 一个戴眼镜的女孩坐在笔记本电脑旁，正在认真打字，极简黑白配色方案 ，大胆的轮廓图，简单的形状，平面矢量艺术风格，白色背景，插图，单线条图，人物周围有纯黑色线条和白色空间，前侧方拍摄
 
-![](img/36c257c41136a8ad23f59d6d2699b9d8.png)
 
-![](img/3a05585dc38598c63b28a36be9f44534.png)
 
 ![](img/95d34bdc743594a4952a32930d2ba08a.png)
 
@@ -154,9 +146,7 @@ A girl wearing glasses is sitting next to a laptop, typing seriously. The minima
 
 一只戴着眼镜的可爱的Shiba Inu狗坐在办公桌旁，搞怪的表情，两只毛茸茸的爪子在笔记本电脑上工作。这只狗有白色的皮毛和棕色的耳朵，看起来它专注于电脑屏幕上显示的内容，这增加了严肃工作的整体氛围，桌子上有一个冰咖啡杯，这张照片是从外面拍的，用佳能EOS R5相机和标准镜头拍摄，它捕捉到了石贝诺皮毛纹理和富有表情的眼睛的每一个细节，同时也清晰地展示了白墙和现代办公室设计元素
 
-![](img/d506cf06855b5d6c1485eb4731270dc1.png)
 
-![](img/bef8536de139efd3bcafa98322c59f41.png)
 
 ![](img/0dd10eaaeb410ec3b3baa47235cc9dd9.png)
 
@@ -166,7 +156,6 @@ The scene of a man looking at snow capped mountains in Tianshan, with clear dist
 
 ![](img/24e1ab66a43b07542bee5d1e07b8896a.png)
 
-![](img/aa5eddf085bde13def67480be8a9d763.png)
 
 ![](img/895c68b4d348a1a599f2cb0c7fc4531e.png)
 
@@ -176,19 +165,14 @@ The scene of a man looking at snow capped mountains in Tianshan, with clear dist
 
 A cute cat with white paws and gray black stripes on its body. Its face lies in front of an apple shaped ball, and it has white paws that grab the sides of the red apple. It takes photos from the front, facing the camera. She has a pair of round big eyes, shot with a professional photographer's macro lens, and shot with a Canon EOS camera. The focus is clear. There is also a laptop next to it. The background is working from home, and behind it is a simple cream colored background wall. The photo style is realistic, with pink and gray tones, soft lighting, and high-definition photography --ar 1:1 --style raw --v 6.0
 
-![](img/c5d6fdc4baef6337a626dc246ea6280b.png)
 
-![](img/71452f884da977f6a587e2ae0429522c.png)
 
 5.一只可爱的猫的脸从灰色办公桌子上右上角的圆孔里向外张望，可爱而有趣，旁边是打开的笔记本电脑
 
 A cute cat's face looks out from the circular hole in the upper right corner of the gray office desk. The hole is filled with the cat's face, cute and interesting, with an open laptop next to it --ar 1:1 --style raw --v 6.0
 
-![](img/5a6dd8752347e770c6349cf079bf7aa9.png)
 
-![](img/f0c8707468b1259660e060330460f707.png)
 
-![](img/714e103354a1924fd889f12705789a7e.png)
 
 ![](img/b2b0f20c7ab9beca627ad1084d5fd666.png)
 
@@ -198,9 +182,7 @@ A cute cat's face looks out from the circular hole in the upper right corner of 
 
 A photo of the sea, with a foreground close-up of the upper body of a Korean idol boy, with a cool expression. He stands alone there, and photos taken at sunrise or sunset can highlight his silhouette against the backdrop of a vast winter sea view. He wears a black hat and a blue scarf, which covers his mouth and nose. He wears sunglasses and a long coat, fashionable, and snowflakes fall on her face. Below is an endless deep blue ocean, and the sky above is dark gray. In winter, he uses an iPhone camera to take photos from the side --weird 4 --c 3 --iw 2 --ar 1:1 --style raw --v 6.0
 
-![](img/bf86d7b5f021c037af73998c22b32c24.png)
 
-![](img/ffc605bcb99299e7d581edc3920714b4.png)
 
 ![](img/2cd40472d9c38e52711fc80279faad79.png)
 
@@ -212,8 +194,6 @@ A boy stands on the deck, wearing black pants and white short sleeves, with jet 
 
 8.一只戴着棕色假发的可爱猫，假发有刘海，白墙背景，像拟人化的人一样笔直地坐立，面朝前方，照片逼真，用索尼A7 III相机和35毫米镜头拍摄，在Instagram上的美发照片风格
 
-![](img/e5cd35f4af0456031d30aa764276f061.png)
 
-![](img/dbeb1ac76d030b8b134c2e4be78e8f1c.png)
 
 ![](img/f0eba4f5bbf2e888f9c892d290654c53.png)
