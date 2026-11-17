@@ -1,0 +1,277 @@
+
+# 基于LLM的摘要生成
+
+> 来源：[https://agijuejin.feishu.cn/docx/LisWdfCoFo7hNKxUQohckw8ynko](https://agijuejin.feishu.cn/docx/LisWdfCoFo7hNKxUQohckw8ynko)
+
+> 作者：lucas大叔
+
+> 原文：[https://zhuanlan.zhihu.com/p/687649833](https://zhuanlan.zhihu.com/p/687649833)
+
+构建`summarizer`的核心问题是如何将文档传递到LLM的上下文窗口中。两种常见的方法是：
+
+1. `Stuff`：将所有文档填充到一个 `prompt` 中。这是最简单的方法，需要LLM具有足够大的上下文窗口。
+
+2. `Map reduce`：采取 分而治之 的思想，在“`map`”步骤单独总结每篇文档，然后将所有摘要“`reduce`”为最终摘要。
+
+![](img/85d63dd18d198ef01748786f35e2aef1.png)
+
+## QuickStart
+
+任何一个 `pipeline` 都可以封装在单个 `load_summarize_chain` 对象中。假设我们想总结一篇博客，可以用几行代码实现。首先设置环境变量并安装 软件包 ：
+
+```
+%pip install --upgrade --quiet langchain-openai tiktoken chromadb langchain
+
+# Set env var OPENAI_API_KEY or load from a .env file
+# import dotenv
+# dotenv.load_dotenv()
+```
+
+我们可以使用 `chain_type="stuff"` ，尤其是使用有较大上下文窗口的模型时，例如：
+
+- 16k token 的 OpenAI `gpt-3.5-turbo-1106`
+- 100k token 的 Anthropic `Claude-2`
+
+除此之外，还可以令 `chain_type="map_reduce"` 或 `chain_type="refine"` 。 这里我选取了自己写的一篇 `Agent` 文章验证生成摘要的效果。
+
+```
+from langchain.chains.summarize import load_summarize_chain
+from langchain_community.document_loaders import WebBaseLoader
+from langchain_openai import ChatOpenAI
+
+loader = WebBaseLoader("https://zhuanlan.zhihu.com/p/668153266")
+docs = loader.load()
+
+llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-1106")
+chain = load_summarize_chain(llm, chain_type="stuff")
+
+chain.run(docs)
+```
+
+LLM可以替换为开源模型，例如 `Baichuan2-13B-Chat`
+
+```
+model_path = "Your Baichuan2-13B-Chat model local path"
+
+tokenizer = AutoTokenizer.from_pretrained(model_path,
+                                          device_map="auto",
+                                          trust_remote_code=True,
+                                          torch_dtype=torch.float16)
+
+model = AutoModelForCausalLM.from_pretrained(
+    model_path,
+    torch_dtype=torch.float16,
+    trust_remote_code=True,
+    device_map="auto",
+)
+
+pipeline = pipeline(
+    "text-generation",
+    model=model,
+    tokenizer=tokenizer,
+    return_full_text=True,
+)
+
+llm = HuggingFacePipeline(pipeline=pipeline)
+```
+
+## Stuff模式
+
+当使用 `chain_type="stuff"` 的 `load_summarize_chain` 时，将使用 `StuffDocumentsChain`。该chain将获取一个文档列表，将它们全部插入到 `prompt` 中，并将该 `prompt` 传递给LLM：
+
+```
+from langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.chains.llm import LLMChain
+from langchain.prompts import PromptTemplate
+
+# Define prompt
+prompt_template = """Write a concise summary of the following:
+"{text}"
+CONCISE SUMMARY:"""
+prompt = PromptTemplate.from_template(prompt_template)
+
+# Define LLM chain
+llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
+llm_chain = LLMChain(llm=llm, prompt=prompt)
+
+# Define StuffDocumentsChain
+stuff_chain = StuffDocumentsChain(llm_chain=llm_chain, document_variable_name="text")
+
+docs = loader.load()
+print(stuff_chain.run(docs))
+```
+
+`Stuff` 要求 LLM 的 `context` 比较大，否则无法将文档全部内容喂给 LLM。调用 `百川2` 生成的摘要如下（`prompt_template` 需要改为中文，以下同理都要改成中文的 `prompt`）：
+
+![](img/6e73a90c0e2fc847846676c24830453a.png)
+
+```
+本文介绍了基于大型语言模型（LLM）的自主agent系统的概念、主流框架及其应用场景。LLM在agent系统中扮演核心角色，负责任务规划和执行，同时具备自我反思和学习的能力。文章还探讨了当前AI agent面临的挑战，如效果不稳定、推理能力不足等问题，并提出了解决方案。此外，还介绍了一些著名的agent框架，如XAgent、ProAgent、AgentVerse、AutoGPT、AutoGen和ChatDev，它们各自具有独特的功能和优势。
+```
+
+## Map-Reduce模式
+
+首先用 `LLMChain` 将每个文档映射为一个单独的摘要，然后用 `ReduceDocumentsChain` 将这些摘要合并为一个 全局摘要 。
+
+`ReduceDocumentsChain` 封装了通用的 `CombineDocumentsChain`（类似 `StuffDocumentsChain`）。
+
+当文档的累积大小超过 `token_max` 时，在传递到 `CombineDocumentsChain` 之前增加了折叠文档的功能。
+
+```
+from langchain.chains import MapReduceDocumentsChain, ReduceDocumentsChain
+from langchain_text_splitters import CharacterTextSplitter
+
+llm = ChatOpenAI(temperature=0)
+
+# Map
+map_template = """The following is a set of documents
+{docs}
+Based on this list of docs, please identify the main themes 
+Helpful Answer:"""
+map_prompt = PromptTemplate.from_template(map_template)
+map_chain = LLMChain(llm=llm, prompt=map_prompt)
+
+# Reduce
+reduce_template = """The following is set of summaries:
+{docs}
+Take these and distill it into a final, consolidated summary of the main themes. 
+Helpful Answer:"""
+reduce_prompt = PromptTemplate.from_template(reduce_template)
+
+# Run chain
+reduce_chain = LLMChain(llm=llm, prompt=reduce_prompt)
+
+# Takes a list of documents, combines them into a single string, and passes this to an LLMChain
+combine_documents_chain = StuffDocumentsChain(
+    llm_chain=reduce_chain, document_variable_name="docs"
+)
+
+# Combines and iteratively reduces the mapped documents
+reduce_documents_chain = ReduceDocumentsChain(
+    # This is final chain that is called.
+    combine_documents_chain=combine_documents_chain,
+    # If documents exceed context for `StuffDocumentsChain`
+    collapse_documents_chain=combine_documents_chain,
+    # The maximum number of tokens to group documents into.
+    token_max=4000,
+)
+```
+
+把 `map` chain 和 `reduce` chain 合并为一个 `chain`：
+
+
+
+```python
+# Combining documents by mapping a chain over them, then combining results
+map_reduce_chain = MapReduceDocumentsChain(
+    # Map chain
+    llm_chain=map_chain,
+    # Reduce chain
+    reduce_documents_chain=reduce_documents_chain,
+    # The variable name in the llm_chain to put the documents in
+    document_variable_name="docs",
+    # Return the results of the map steps in the output
+    return_intermediate_steps=False,
+)
+
+text_splitter = CharacterTextSplitter.from_tiktoken_encoder(
+    chunk_size=1000, chunk_overlap=0
+)
+split_docs = text_splitter.split_documents(docs)
+
+print(map_reduce_chain.run(split_docs))
+```
+
+调用百川2生成的摘要效果如下：
+
+![](img/265ffdd4f2b16f56c0917aa7cc06691c.png)
+
+```
+智能体技术在工作流自动化中的应用，以及智能体在工作流中的组织和控制。智能体技术的工作流自动化包括使用智能体技术来提升流程自动化的效率和效果，以及实现智能体在工作流中的组织和控制。智能体技术的应用领域广泛，包括数学、编码、问答、运筹学、在线决策、娱乐等。此外，智能体技术还可以应用于软件开发自动化，从而解放人力，提高效率和经济效益。
+```
+
+在 [`map-reduce模式`](https://www.zhihu.com/search?q=map-reduce%E6%A8%A1%E5%BC%8F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A687649833%7D) 时会报错，报错信息如下：
+
+```
+Can't load tokenizer for 'gpt2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'gpt2' is the correct path to a directory containing all relevant files for a GPT2TokenizerFast tokenizer.
+```
+
+[网上也查到](https://www.zhihu.com/search?q=%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A687649833%7D)了一些解决方法，感觉实施起来还是挺麻烦，最后通过 配置代理 在执行时在线下载解决问题：
+
+[https://github.com/langgenius/dify/issues/1261](https://github.com/langgenius/dify/issues/1261)
+[https://github.com/langchain-ai/langchain/issues/9273](https://github.com/langchain-ai/langchain/issues/9273)
+
+此外，利用 [聚类辅助摘要生成](https://link.zhihu.com/?target=https%3A//blog.langchain.dev/llms-to-improve-documentation/) 也是值得探索的一个方向。
+
+![](img/d47c1b2d911414ea9c2b65aba634f517.png)
+
+## Refine模式
+
+`RefineDocumentsChain` 与 `map-reduce` 类似。
+
+`refine` 文档链 通过在输入文档上循环并迭代更新答案构建响应。
+
+对于每个文档，它将所有非文档输入、当前文档和最新的中间答案传递给 LLM chain，以获得新的答案。
+
+指定 `chain_type="refine"` 就可以用 `refine` 模式生成摘要。
+
+```python
+chain = load_summarize_chain(llm, chain_type="refine")
+chain.run(split_docs)
+```
+
+另外也可以提供 `prompt` 返回中间步骤。
+
+```python
+prompt_template = """Write a concise summary of the following:
+{text}
+CONCISE SUMMARY:"""
+prompt = PromptTemplate.from_template(prompt_template)
+
+refine_template = (
+    "Your job is to produce a final summary\n"
+    "We have provided an existing summary up to a certain point: {existing_answer}\n"
+    "We have the opportunity to refine the existing summary"
+    "(only if needed) with some more context below.\n"
+    "------------\n"
+    "{text}\n"
+    "------------\n"
+    "Given the new context, refine the original summary in Italian"
+    "If the context isn't useful, return the original summary."
+)
+refine_prompt = PromptTemplate.from_template(refine_template)
+chain = load_summarize_chain(
+    llm=llm,
+    chain_type="refine",
+    question_prompt=prompt,
+    refine_prompt=refine_prompt,
+    return_intermediate_steps=True,
+    input_key="input_documents",
+    output_key="output_text",
+)
+result = chain({"input_documents": split_docs}, return_only_outputs=True)
+```
+
+查看结果，调用百川2生成的摘要效果如下：
+
+```python
+print(result["output_text"])
+```
+
+![](img/b641ca033b82d5af830c59b9cfc2b81c.png)
+
+```
+Johnson7788：AutoGen：通过多agent对话支持下一代 LLM 应用程序[8]. OpenBMB：ChatDev：大模型AI Agent驱动的虚拟软件公司，荣登GitHub Trending榜首！[9]. 程序员在写作：AI Agent万字长文总结编辑于 2023-11-22 16:29・IP 属地江苏LLM赞同 474 条评论分享喜欢收藏申请转载 
+```
+
+查看中间步骤
+
+```python
+print("\n\n".join(result["intermediate_steps"][:3]))
+```
+
+从三种模式的生成效果来看，`stuff` 生成的效果比较靠谱。另外两种模式还需要多做测试，优化提示模板看是否可以进一步提升生成质量。
+
+## 参考资料
+
+Summarization | ️ Langchain
