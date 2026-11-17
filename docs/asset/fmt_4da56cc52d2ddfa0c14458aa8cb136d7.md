@@ -1,0 +1,24 @@
+
+# Deploying production ready DeepSeek R1 on AWS with `vllm`
+
+> 来源：[https://gotoaiworld.feishu.cn/docx/FMBYdvGwLo3WutxL7E6czLifnyb](https://gotoaiworld.feishu.cn/docx/FMBYdvGwLo3WutxL7E6czLifnyb)
+
+Deploying large language models (LLMs) into a production environment presents a unique set of challenges, from managing computational resources to ensuring low-latency inference and controlling costs. For engineers and developers looking to leverage state-of-the-art open-source models, finding the right combination of tools is critical for success. This guide provides a comprehensive walkthrough for deploying production ready Deepseek R1 on AWS with `vLLM`, a powerful trio that offers a cost-effective, high-performance solution. As organizations increasingly move away from proprietary APIs toward self-hosted models for greater control and data privacy, mastering this stack is becoming an essential skill.
+
+This article will equip you with the technical knowledge to navigate the complexities of setting up a scalable, secure, and optimized LLM serving infrastructure. We will cover everything from the initial setup of your AWS environment to advanced strategies for performance tuning, cost management, and troubleshooting. Whether you are a DevOps professional, a machine learning engineer, or a software developer, this step-by-step guide will help you unlock the full potential of Deepseek R1 and `vLLM` on the robust AWS cloud platform, transforming a powerful research model into a reliable production-grade service.
+
+## Introduction to DeepSeek R1 and `vllm` on AWS
+
+To build a robust deployment pipeline, it is essential to first understand the core components of our stack. Deepseek R1 provides the advanced reasoning capabilities, `vLLM` delivers the inference optimization, and AWS supplies the scalable infrastructure. This combination addresses the critical needs of modern AI applications: sophisticated intelligence, high-throughput performance, and reliable, flexible hosting. The synergy between these technologies allows development teams to build and scale powerful generative AI features while maintaining control over their operational costs and data security. This section provides an overview of each component and explains why their integration is a game-changer for production LLM serving.
+
+## DeepSeek-V3.1: Now on BytePlus! Get started with 500k free tokens!
+
+### Overview of DeepSeek R1 model
+
+Deepseek R1 is an open-source large language model developed by the Chinese AI startup DeepSeek. It has gained significant attention for its powerful reasoning capabilities, which are designed to handle tasks requiring logical inference, complex problem-solving, and mathematical reasoning. Unlike many models that primarily excel at language pattern recognition, Deepseek R1 is engineered for deeper cognitive operations, making it a strong competitor to leading proprietary models but at a potentially lower operating cost. The model's development involved a unique training methodology centered on reinforcement learning (RL), which allowed it to autonomously discover and refine its reasoning processes without extensive supervised fine-tuning. This RL-based approach enables the model to effectively perform chain-of-thought reasoning, self-verification, and error correction, which are critical for advanced applications in fields like coding, mathematics, and scientific inquiry. By being open-source, Deepseek R1 offers developers the freedom to customize and deploy it within their own infrastructure, providing full control over data and security.
+
+### What is `vllm` and its benefits for model deployment
+
+`vLLM` is a high-throughput and memory-efficient serving engine for LLMs that has become a go-to solution for optimizing inference performance. Developed by researchers at UC Berkeley, this open-source library addresses one of the most significant bottlenecks in LLM deployment: the management of attention key-value (KV) caches. The core innovation behind `vLLM` is `PagedAttention`, an algorithm inspired by traditional operating system techniques like virtual memory and paging. `PagedAttention` allows the system to store the KV cache in non-contiguous memory blocks, drastically reducing memory waste—by up to 80% in some cases. This efficiency gain enables much larger batch sizes and continuous batching, leading to significantly higher throughput, with benchmarks showing up to a 24x increase compared to standard HuggingFace Transformers. Furthermore, `PagedAttention` facilitates efficient memory sharing between multiple requests that use the same prompt, which is highly beneficial for complex decoding strategies like parallel sampling and beam search. For developers, `vLLM` offers a streamlined path to production with an OpenAI-compatible server, simplifying integration into existing applications.
+
+### Why AWS is a preferred platform for production deployment
