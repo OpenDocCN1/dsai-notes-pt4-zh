@@ -30,7 +30,6 @@
 
 这次3.8B参数的Phi-3-mini、7B的small和14B的medium，相比规模更大的模型，都展现出了更强的能力。
 
-![](img/7a2c80bcd9ba2c4e27f9acbdb4a6b455.png)
 
 并且作为开源模型，可以在手机上、甚至在树莓派上部署，微软简直太宠爱开发者了。
 
@@ -42,7 +41,6 @@
 
 在评论区，网友们尽情抒发对Phi-3这种开源且强大的小模型的喜爱之情。
 
-![](img/08032fc2bcc19654fca71f706235c3b0.png)
 
 甚至有人形容，这是「微软给开源世界的礼物」。
 
@@ -66,7 +64,6 @@ small版模型则使用OpenAI的tiktoken分词器，更适合多语言任务，�
 
 +   用GEGLU激活函数代替GELU
 
-![](img/b7c30753da04ea8ad247f1d89668a1fd.png)
 
 +   使用最大更新参数化策略（Maximal Update Parameterization）在代理模型上调整超参数，保证模型训练时的参数稳定
 

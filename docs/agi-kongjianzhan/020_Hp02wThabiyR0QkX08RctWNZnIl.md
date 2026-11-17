@@ -196,11 +196,9 @@ AutoGLM是由智谱AI开发的一款自主智能体，它能够通过文字或�
 
 今日，AI 技术再次惊艳众人！它竟能让古老的罗马半身像，如图拉真、尤利乌斯・凯撒、埃拉加巴鲁斯、卡利古拉等，从原始照片中 “活” 过来，生成栩栩如生的真人短视频。AI 的强大功能让历史与现代完美融合，充分展现了其在图像和视频处理领域的飞速发展，为我们带来了全新的视觉体验和历史感悟。
 
-![](img/1d8d98ca2b31a9ceabe0282e9cd22c53.png)
 
 [oN9NP9RV1XRWYBSv.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OtIIbnWVPo3BmpxjOT5cyep8nqb)
 
-![](img/fe787eb44f585f0aa50a1c4107ecc237.png)
 
 [WmcEUaYETfg_IabY.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KXcDb84iAoLpAzxROsKcYxDJnxh)
 
@@ -1148,7 +1146,6 @@ Theinformation消息，OpenAI将在未来两周内发布最新模型“草莓”
 
 ### 【OpenAI】OpenAI Japan 披露“GPT-Next”细节
 
-![](img/b4333deeb2b6f93c76afb31b73994c08.png)
 
 ![](img/119493b37a73eb034c8b5d2be3982fdd.png)
 
@@ -1534,7 +1531,6 @@ In the center of the picture is the little prince, wearing his yellow cape, stan
 
 画面中央是小王子，穿着他那件黄色的披风，站在他的小星球上。星球上有一朵玫瑰花，傲然绽放，旁边是小王子喜爱的三颗小小的火山（两颗活火山和一颗熄灭的火山）。背景是广阔的宇宙，点缀着璀璨的星星。小王子的表情温柔而略带忧伤，手中捧着一只狐狸，狐狸眼中带着温暖的光芒。整个画面色调柔和，带有梦幻般的质感。星空中的星星和行星轻轻闪烁，为画面增添了一种神秘而宁静的氛围。
 
-![](img/8c5ddc72a14739b9d417afbb598e05fc.png)
 
 ![](img/77c1b62718170cdcf28643f2f94707b2.png)
 

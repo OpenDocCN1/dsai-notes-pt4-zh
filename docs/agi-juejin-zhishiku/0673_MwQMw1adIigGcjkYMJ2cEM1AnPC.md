@@ -178,7 +178,6 @@ markdown
 
 ![](img/c54bdea346fe0460e666d7cbbcb3269c.png)
 
-![](img/70392a61268832b24bece853ac50cace.png)
 
 ![](img/c6e5b714497322b64817f448affea383.png)
 

@@ -34,7 +34,6 @@ Ai，最有应得，该！
 
 我们珍视创意，拒绝平庸。我们期待与有志之士一起，共同推动“真AI创意”的画时代。
 
-![](img/a74d722fb0be5370665f9e9743f0be46.png)
 
 [小宇宙AI](https://www.zhihu.com/search?q=%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A702390230%7D)创[意引力场](https://www.zhihu.com/search?q=%E6%95%B0%E6%8D%AE%E5%BA%93&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A702390230%7D)（思维奇点）采用了HiMM（隐 马尔科夫 模型）和SAS（意外发现注意力系统）多头注意力互引机制，通过大模型RAG构建了一个自我生长的“ING（创意节点图）向量场 数据库 ”。
 
@@ -58,13 +57,11 @@ Ai，最有应得，该！
 
 这一切都变得简单——你不需要绞尽脑汁去构思复杂的提示，只需简单表达你的真实想法，哪怕是模糊的意图。
 
-![](img/963c1ac8ba1905f27b87a83d3f7173a0.png)
 
 如果你希望将概念画面打磨得更加精细，【画时代】的“策画升级”服务将为你这样的“细节控”提供精心设计的模块组合。
 
 这项服务将逐步向Hi会员开放。我们强调“有节制”，因为只有在“概念至上”的基础上，细节的精细才能释放出更大的价值。如果策略概念不够到位，再好的细节也是徒劳。
 
-![](img/aa895360fadf2d4bb58e05a9c7f449cb.png)
 
 对于那些充满创意、热爱定制和创新、喜欢精美壁纸和独特头像、追求与众不同、紧跟时尚潮流、展现精致生活的“in时代·青年领秀”，【画时代】将激发你的创意潜能，为你提供展现个性的最佳工具。
 

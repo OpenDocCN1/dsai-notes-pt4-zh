@@ -18,7 +18,6 @@
 
 值得一提的是，以图画图才是本次 DALL·E 3 的重大更新，《清明上河图》或许是中国人最熟悉的宋画，那让它换一种风格，你又是否分辨得出来？
 
-![](img/1fcc21554361ac089c7d5d18387a48ab.png)
 
 ![](img/fedc9ea79afd0e9a7a0b5b27d7856f84.png)
 
@@ -26,7 +25,6 @@
 
 除了 DALL·E 3，OpenAI 配备的 Hot Mods GPT 也能生成并修改图片，X （原 Twitter）上一名网友在 GPTs 全量推送的当天，就迫不及待地分享了自己的作品，生成效果也非常酷炫。
 
-![](img/e86b521a9e55ea6b66d398daf7a47ee2.png)
 
 ![](img/259f9bd6a7836ef1888e47152aed226d.png)
 

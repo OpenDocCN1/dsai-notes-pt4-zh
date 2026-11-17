@@ -158,7 +158,6 @@
 
 点击这里的Environment Variables，进行全局变量的设置：
 
-![](img/10a9ac5ef68e613024371d52d300bc2a.png)
 
 修改环境变量需要Redeploy
 

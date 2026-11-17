@@ -130,9 +130,7 @@ Latent Diffusion 的研究团队之前主要研究语言模型。他们借鉴了
 
 ### 1.2 纵向来看，主流文生图技术的演进路径
 
-![](img/6cf92b4023f62e1c94d060c0946b873b.png)
 
-![](img/0650bae608f55bbc4479b014d4ad5e28.png)
 
 ![](img/108e0035c911f965c5b040a1d4630106.png)
 
@@ -180,9 +178,7 @@ Transformer 架构，原本在 NLP 领域取得巨大成功，开始被应用于
 
 ## **2.**** ****主流文生视频技术发展路径**
 
-![](img/70ac75b2ac7fa147e0e964729292f4de.png)
 
-![](img/4acbd26fd78d69ecb6b922d7f303a1e1.png)
 
 ![](img/2a248c13d22366be58485dd16b73b3cf.png)
 

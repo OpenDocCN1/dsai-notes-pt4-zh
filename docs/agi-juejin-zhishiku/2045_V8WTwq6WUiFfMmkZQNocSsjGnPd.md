@@ -12,7 +12,6 @@
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KCEVA0N90511ABV6.html?spss=dy_author)
 
-![](img/9a5da5d475815731423f0ca83c6d01ee.png)
 
 OpenAI发布AI浏览器ChatGPT Atlas，内置ChatGPT，具备浏览器记忆、智能体模式等功能。上手简单，部分功能付费，多平台将推出。它能理解用户意图，完成多种任务，还加强了隐私保护。网友试用反馈较好，但存在一些问题。此外，AI浏览器竞争激烈，Perplexity推出Comet，谷歌将集成Gemini AI进Chrome 。
 
@@ -38,7 +37,6 @@ DeepSeek推出的DeepSeek-OCR模型带来AI新突破。该模型以像素处理�
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KCD9ESD70511ABV6.html?spss=dy_author)
 
-![](img/780193188aeb799f25b0290afc0e0ea6.png)
 
 5G 基站功耗高，96%流量需求源于室内，信号穿墙强度下降90% - 99.9%。智能超表面是 6G 关键创新，室外超表面无法覆盖室内。东北大学张继良团队提出「建筑无线友好性」，整合材料提升建筑无线友好性。团队还提出嵌入超表面形成智能墙体，但用户移动带来挑战，团队提出多种应对方法，研究已被顶级期刊接收。
 

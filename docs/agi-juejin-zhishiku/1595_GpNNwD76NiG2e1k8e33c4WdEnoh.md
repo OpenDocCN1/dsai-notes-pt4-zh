@@ -522,6 +522,5 @@ Julius 目前的使用体验确实明显优于 Code Interpreter，能更好更�
 
 2. https://e2b.dev/blog/the-state-of-ai-agents-reliability-sdks-benchmarking-and-market-trends
 
-![](img/14c4476d9aed3807852c6b5ec9179523.png)
 
 ![](img/62b0ad97135dcfa67d4ad5734e33533c.png)

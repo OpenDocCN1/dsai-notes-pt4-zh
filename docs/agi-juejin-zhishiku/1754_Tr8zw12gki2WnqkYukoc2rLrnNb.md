@@ -134,15 +134,12 @@ AI工具训练🔥零基础上手20+主流AI工具 仅需0.1元
 
 【小说桥段】
 
-![](img/634b5f225627c83ef87fe71f5996d833.png)
 
 【创意标题】
 
-![](img/1effb9d05f3b4921ec7abb5d9343c6b5.png)
 
 【 [程序代码 ](https://www.zhihu.com/search?q=%E7%A8%8B%E5%BA%8F%E4%BB%A3%E7%A0%81&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3186388670%7D)】
 
-![](img/eb4cb1280c66c97dadc4f8b876d7e1f2.png)
 
 【种草文案】
 
@@ -158,11 +155,9 @@ AI工具训练🔥零基础上手20+主流AI工具 仅需0.1元
 
 火山写作是一款由 [字节跳动 ](https://www.zhihu.com/search?q=%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3186388670%7D)推出的免费AI智能写作助手，针对职场人士、科研人员、学生等常用英语写作的用户群体。
 
-![](img/c6858370174676436b92f07642360d44.png)
 
 它提供语法拼写纠错、表达润色、智能改写等功能，解决非英语母语用户在英语写作中词汇量不足、表达不熟练、不地道等问题，帮助用户更好地与世界沟通。
 
-![](img/550e2d1947ac7b8781451f8579ff030e.png)
 
 ![](img/341fc996ff7801df620b7d40034048cf.png)
 
@@ -196,15 +191,12 @@ AI工具训练🔥零基础上手20+主流AI工具 仅需0.1元
 
 - 点击 Begin My Stroy，进入下一个页面，在Story Prompt的方框下输入故事内容，再点击Submit
 
-![](img/59fc3c84b4261db2b31c2972c1b7afad.png)
 
 - 等待片刻便可得到一个完整的绘本故事书，这个网站会同时为你的故事配上精美的插图，插图生成的时间要稍慢一些
 
-![](img/d65baaf96ecc64b06388db9ba108838f.png)
 
 - 然后你点击打开生成的故事，网站会把你制作成一本书的模样
 
-![](img/8746fd033d22d7d4e5b472ef2cc189d6.png)
 
 - 这样就可以查看故事的内容了，你还可以对生成的故事进行编辑文本并重新生成插画
 
@@ -230,15 +222,12 @@ AI工具训练🔥零基础上手20+主流AI工具 仅需0.1元
 
 2. 选择照片尺寸
 
-![](img/1eb3e4a4749912d65fe1a4b1fca6123c.png)
 
 3. 可以智能换背景及底色
 
-![](img/a0c4ae8431f10a25dac945511ffcc23f.png)
 
 4. 可以通过AI快速提高分辨率
 
-![](img/a9f8bb56082782ff2b6c20e92df2fa3c.png)
 
 ![](img/a01117f6274b0514a8f05c741246e3f5.png)
 
@@ -258,15 +247,12 @@ AI工具训练🔥零基础上手20+主流AI工具 仅需0.1元
 
 1、在页面选择 [文生图](https://www.zhihu.com/search?q=%E6%96%87%E7%94%9F%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3186388670%7D)
 
-![](img/3e6d02ae95350de8650c3ac10a2f5ded.png)
 
 2、如果是新手选择推荐创作，进阶使用点击高级设定。在这里我就以推荐创作为例。风格模型保持默认的模型就可以
 
-![](img/5e6d55737da292e2b487cec167ff34da.png)
 
 3[、在创](https://www.zhihu.com/search?q=%E6%99%AF%E6%B7%B1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3186388670%7D)意描述中输入提示词：“大师[画作，最高质](https://www.zhihu.com/search?q=%E4%B8%81%E8%BE%BE%E5%B0%94%E6%95%88%E5%BA%94&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3186388670%7D)量，精致细节，美女近景，花朵，中心构图，侧颜，照片真实，EOS 35mm， 景深 ，自然光线，戏剧性视角， 丁达尔效应 ”，这些提示词是我自己调整测试出来的，中间的主体词语自己调整。
 
-![](img/7021ef5bf04cc7af87a56a81e4b99ee1.png)
 
 4、点击生成，你可以看到可以生成类似我想法图片的高质量作品，是不是很棒呢？一天现在可以最多生成100张，简直是大福利。
 
@@ -278,15 +264,12 @@ AI工具训练🔥零基础上手20+主流AI工具 仅需0.1元
 
 现在虽然出于内测阶段，但是只要注册申请就可以直接使用。
 
-![](img/cce37c5a31e01c13ecc209f00f699e05.png)
 
 我经过测试，对天工AI搜索的 [自然语言 ](https://www.zhihu.com/search?q=%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3186388670%7D)交流功能感到非常惊叹。它能够通过流畅的对话式交互准确[地理解用户](https://www.zhihu.com/search?q=%E5%A4%A9%E5%B7%A5AI&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3186388670%7D)的搜索意图。对比传统的搜索， 天工AI 搜索具备传统搜索引擎所不具备的整合信息和提炼资料的能力。
 
-![](img/74ad0ce25dab3c33864a14d99d5d4d7a.png)
 
 [一般来说，传统](https://www.zhihu.com/search?q=%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3186388670%7D)搜[索引擎只提](https://www.zhihu.com/search?q=%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3186388670%7D)供大量信息，而AI搜索通过 大型语言模型 的支持，能够整合、提炼和连接信息，更好地应对开放性问题，尤其是有关知识和创意的问题，因此在表现上远远超过传统 搜索引擎 。
 
-![](img/ed9a58a8183d390892dd106182b4f055.png)
 
 作为一个连接到互联网的AI搜索引擎，它会将回答时引用的资料整理在回答顶部的参考栏中，每一句回答后都会标注来源小标，以方便查阅和跳转到各种来源。用户可以点击这些来源直接跳转到相关页面。
 
@@ -294,13 +277,11 @@ AI工具训练🔥零基础上手20+主流AI工具 仅需0.1元
 
 这就意味着他的回复可信了很多，有来源，不会随口乱扯，而这正是大部分语言模型的通病。
 
-![](img/e9c098fdc819543b85dbaefce157778f.png)
 
 这个搜索还具备连续对话的能力。如果对给出的回答不满意，我们还可以继续追问。它会记录所有的对话历史，并将其整理进【我的历史】，以便方便随时寻找。
 
 我试着举例目前我正在了解的关于汽车行业的消息，他给了我很多来源并且整合成了有效的内容，并且还给出了追问推荐，有点类似微软 NEW BING 的功能，对于想要针对一个问题深究的话，是一个很好的方案。
 
-![](img/5f5cd3abf7fada59f7a02492f6efe5ac.png)
 
 我在测评中测试问了他关于许多关于汽车供应链的问题，可以看到哪怕总结的深度不足，但是我们依然可以通过他给出的链接再次进行人工核实和提取关键资料，我觉得这对于一个人工智能搜索来说非常重要。
 

@@ -48,15 +48,10 @@ Cla**ude 3.5 So**nnet 是由 Anthropic 公司研发的先进人工智能模型�
 
 ## Trae 的界面
 
-![](img/3d46f532b1abd15e42e952dedb5efd5c.png)
 
-![](img/3b32e82fbca9bfbbf512a955c1ed3c3c.png)
 
-![](img/b335bdfd7a0562128f0662627daffa40.png)
 
-![](img/653d22447f591e069b92dd5c0e43a8ce.png)
 
-![](img/ec8b0b8b81443dc055c77ce10f2c37d1.png)
 
 可是使用 trae 命令直接唤起 trae 应用 （前提是安装了trea命令）
 
@@ -64,25 +59,19 @@ Cla**ude 3.5 So**nnet 是由 Anthropic 公司研发的先进人工智能模型�
 
 **Trae-Chat模式 **随时对您的代码库或编程相关问题提问或寻求建议。这个不回给你直接**创建文**件等之类的你可以选择需要不需要去 应用 ，适合一些基础的问题应用
 
-![](img/fea354123cefebda6c4e47671feab67a.png)
 
 **Trae-Builder模式 **轻松完成从零到一的项目构建。在 Builder 模式下，对代码文件的任何更改都会自动保存。 这个模式下会自动根据你的需求创建一些资源文件，更适合需要它编写复杂的应用场景。
 
 接下来咱们使用Trae-Builder模式让他帮咱们搞一个vue3 的工程如下：
 
-![](img/2f86d9de4283013083cd85669d1523aa.png)
 
-![](img/bd3f91489e6172308287b3b5cfac2190.png)
 
 安装依赖的时候报错了，但是任务并没**有停止，或**者说我可能最想要的是它能帮我 解决报错 。之后它又提示我重新运行了下npm install，原来是进错目录了！！
 
-![](img/7576dea9f90a189c3783353f0ecf1180.png)
 
-![](img/0423e94aa5d3a5ac13cdb1c6c48cca31.png)
 
 接着运行时提示 **node **版本过低无法运行最新的 **vite **,其实也一直在帮我解决问题。那么咱们接受它的意见继续往下走，可以厉害帮我解决了！！！
 
-![](img/3d2c53ca4330d4ed4d0ff3af3e4b9ef2.png)
 
 走到这里，咱们来总结下，第一次错误时进错文件目录执行 npm install ,然后紧接着帮我切换目录让我重新运行 npm install 。
 
@@ -94,7 +83,6 @@ Cla**ude 3.5 So**nnet 是由 Anthropic 公司研发的先进人工智能模型�
 
 咱们接着往下走，我让他帮我创建一个 Login 界面看看他会怎么写：
 
-![](img/c4cfb9c4808450517e22a1aa6cd3169b.png)
 
 > 如上它写好了并能支持运行，它帮我自动引入了 router ，我本来项目中是没有的！！！ 而且我检查了下它的代码写的也是蛮规范的如下：
 

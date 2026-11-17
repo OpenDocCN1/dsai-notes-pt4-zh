@@ -40,7 +40,6 @@ Amazon Bedrock 全面升级
 
 迄今，Amazon Bedrock 支持的基础模型数量已有 33 个，分别出自 AI21 Labs、Anthropic、Cohere、Meta、Stability AI 、Mistral AI 等全球顶级大模型厂商以及亚马逊自己。鉴于 Amazon Bedrock 允许企业用户 通过微调来定制模型 ，强大的基础模型有了自定义的加持，更能实现与企业用户需求的紧密结合。
 
-![](img/b2e0652f69074cc627fc5479ab5c905d.png)
 
 在今天这场年度峰会上，亚马逊云科技宣布了最新成果： 「Claude 3 Haiku 微调」发布了预览版 。作为 Claude 3 系列模型中的「小杯」，Claude 3 Haiku 的速度最快、最紧凑，而 Amazon Bedrock 是第一个能让用户对 Claude 3 Haiku 模型进行微调的完全托管服务。
 

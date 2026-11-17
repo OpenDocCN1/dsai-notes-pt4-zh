@@ -90,7 +90,6 @@ Iyo 公司推出的 Iyo One 耳机，被定义为一款独立的"音频计算机
 
 ### 💡 AI 驱动谷歌云 Q2 营收超百亿，Waymo 获增投
 
-![](img/5fdc508f2411642c5b01472e5acefa8c.png)
 
 有新Newin｜[阅读原文](https://sourl.co/GHwnEH)
 

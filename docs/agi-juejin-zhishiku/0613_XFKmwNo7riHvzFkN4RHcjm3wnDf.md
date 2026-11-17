@@ -195,7 +195,6 @@ interface CloudArcPoint {
 
 这次虽然 generateCloudPath 及 CloudArcPoint 声明是正确的，但是我发现它的云朵生成路径有一个明显的逻辑问题，原始代码中 A 指令的参数中的中间纯数字部分是 0 1 1，而 Trae AI 给出的逻辑却是 0 0 1，可以看下面的截图：
 
-![](img/59517d21be63e7e86f3657c8fc0bb89b.png)
 
 于是我问 Trae AI：
 

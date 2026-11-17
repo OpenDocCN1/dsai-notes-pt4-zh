@@ -22,7 +22,6 @@
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KCBAG7710511ABV6.html?spss=dy_author)
 
-![](img/36a6e251079abc11ffde9e35056279fb.png)
 
 DeepSeek再开源DeepSeek-OCR模型，探索视觉-文本压缩边界。其编码器DeepEncoder创新架构，参数量约3.8亿，能处理高分辨率图像等。解码器用DeepSeek-3B-MoE 。在基准测试中表现出色，如100个视觉token超越GOT-OCR2.0等。还能解析多种内容、处理近100种语言，为LLM长上下文问题提供方向，推动视觉语言与大语言模型发展，且实际应用中生成数据能力强。
 

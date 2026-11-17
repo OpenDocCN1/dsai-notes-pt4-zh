@@ -152,9 +152,7 @@ Prompt：
 
 例如 "[clouds|pig] in sky"，在第一步时，提示词为 "clouds in sky "；在第二步时，提示词为 "pig in sky"；在第三步时，提示词为 "clouds in sky"，以此类推, 不断重复轮转。
 
-![](img/9505fb6dfc4740bbd8a3d7e1795f814a.png)
 
-![](img/e11345061768d88793d19501cb3dc310.png)
 
 ![](img/5df9178ad9890dc492d471c3137b3072.png)
 

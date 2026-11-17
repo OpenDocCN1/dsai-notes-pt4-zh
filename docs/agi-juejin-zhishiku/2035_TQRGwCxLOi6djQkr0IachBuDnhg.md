@@ -12,7 +12,6 @@
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KAHBCP6H0511ABV6.html?spss=dy_author)
 
-![](img/f67a98c7a0a321efa81f53f35954cae6.png)
 
 2025年9月23日，「北大-360大模型联合实验室」发布TinyR1-32B模型。该模型以仅20k数据微调，在安全性能上超同等尺寸模型，推理、通用能力出色。还提出Control Token技术破解安全与有用的「跷跷板效应」。实验室同步推出TinyR1-Safety-8B轻量级安全模型。目前TinyR1系列已全面开源，未来将推动形成安全普惠大模型生态 。
 

@@ -66,7 +66,6 @@ Trae 的“Builder 模式”简直绝了。我只用一句提示词：“使用 
 
 ![](img/b0a0b18a7f4dbdccc06fe95a993f5c28.png)
 
-![](img/37b366fae8c545db3811de89a1803721.png)
 
 ![](img/f84cae8b884c4c3ed5d2f543645d3566.png)
 

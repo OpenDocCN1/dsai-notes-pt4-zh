@@ -22,11 +22,9 @@
 
 根据XXXX，用dell-e生成XXXXX图片
 
-![](img/9c0ea28b3be39f056907ac8b27ed3319.png)
 
 然后给我这样的一组图片
 
-![](img/8dd6fb0cbd37a4e74997f44f37a20f64.png)
 
 其实就是根据之前我提供的内容，提取关键词生成图片，
 
@@ -40,7 +38,6 @@
 
 重新开始对话，同样prompt能用
 
-![](img/1deccb1fcf24b9b16f1c2dc10b0e23a0.png)
 
 总之不要做一些涩涩的事情，对话是不会扑街的
 

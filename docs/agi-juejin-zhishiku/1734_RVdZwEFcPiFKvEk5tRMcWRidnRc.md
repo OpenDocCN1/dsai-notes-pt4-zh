@@ -124,7 +124,6 @@ DifusionBee 提供了一个基于 stable diffusion 的应用程序，无需复�
 
 飞浆上租用运行环境需要算力支持，GPU最好的V100四卡需要8点算力/小时。正常运行建议可以考虑1点、4点算力一小时即可。https://aistudio.baidu.com/aistudio/projectdetail/6537485
 
-![](img/74cea6305cc075a24b8fc38cc11ab7b4.png)
 
 ![](img/b9249c6e6594eafc469d0fc4b811eb59.png)
 

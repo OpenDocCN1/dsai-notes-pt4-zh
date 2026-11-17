@@ -40,83 +40,44 @@ LangChain 团队技术报告：
 
 1.  **持续迭代 **：Agent的构建不是一次性的，而是一个持续迭代的过程，需要不断地测试、评估和改进。
 
-![](img/6488cb8b157d09fdb070f253e21aeaf1.png)
 
-![](img/b0f52bc7b0d278a02928316d4684ab7c.png)
 
-![](img/8718f5784133e3583d05f16382760fe6.png)
 
-![](img/137444dbedbd672079621b1773ae8eda.png)
 
-![](img/a7ed1243ad5d3f6e15ca1ed089739141.png)
 
-![](img/de150fd4418042fa1cbb941888d2ba17.png)
 
-![](img/3174695fb3cd9d1e0248d766ec4f1929.png)
 
-![](img/77b9da3e4190ecf3314f4ffe9eac1f91.png)
 
-![](img/f9d81e637163f5f8a11aadce3a04b19c.png)
 
-![](img/c35507f41dcc6681be9be5d94195f439.png)
 
-![](img/ca10797dd1942b3130621c8744bf55fe.png)
 
-![](img/80f572b053da84bb82ea6aab9e5fdd51.png)
 
-![](img/23cc168d6036f71fda4e9eaa537c0f5a.png)
 
-![](img/1f2cb8bd458cbb03116373a810621240.png)
 
-![](img/56ef0725082308dfbdaced9fbe87ee0a.png)
 
-![](img/a1e237943f361d663fc5049c4b1f5657.png)
 
-![](img/81b3a9e755264b145f767f34ea392259.png)
 
-![](img/21059792977c2942526409944ddf4994.png)
 
-![](img/658a6000da6930f91214f86367b2f8ef.png)
 
-![](img/3b83b4516680758f700f3f1ff3e9edbd.png)
 
-![](img/d5faf11bb914e37192490a52b304328c.png)
 
-![](img/fba5f4213d8c1faa137fe3d2607a87e0.png)
 
-![](img/0781aa5ce2e1768765486d505f2c2c8c.png)
 
-![](img/dea9bee57423288a17e6cbacd550af88.png)
 
-![](img/79fc7f04bd45a1405f1c6587c18c6f69.png)
 
-![](img/a95073a103add0941b131565b1e63eed.png)
 
-![](img/3028599774fb25419161c656aa234c75.png)
 
-![](img/f89f22097e7e239a83053e0c54ff4ab2.png)
 
-![](img/e19ff73276d77a90f98898a0a4778ee8.png)
 
-![](img/0fe9b4e5585ff4e71995b66b0200e91e.png)
 
-![](img/788104be997a46f27baa870555a045c3.png)
 
-![](img/138b3f9b68109f823bd86a307e138138.png)
 
-![](img/b59c0aa8966c8850bbfcded6447169f7.png)
 
-![](img/265845642288d18573ad09bbd54c991f.png)
 
-![](img/602d0016f90767965b7f47ff59bfd96b.png)
 
-![](img/102cad70f1df94c6d17e4e73d3cc4c06.png)
 
-![](img/515eeeba3ed79fece1991ede3659f3b1.png)
 
-![](img/2a17b6ea5f1b10fb7e41e0a9b3f4dbe9.png)
 
-![](img/0c86844130c8f999b239c00f21b4cc63.png)
 
 ![](img/ab9022956d18a4ec81e647be84d1db46.png)
 

@@ -12,19 +12,12 @@
 
 ### 1.钢铁侠
 
-![](img/b2e72c847283c1505436b669fbea6dee.png)
 
-![](img/1e48caec031d732d9f19226e2cf119aa.png)
 
-![](img/4980b918f4902f73865f199bdea5a9c7.png)
 
-![](img/02ed180cfa411773a6b1184176f0733a.png)
 
-![](img/4f2b90d8e95d7fe78e480470cb6b91b8.png)
 
-![](img/ebb3cf48a813021c5047885e0aa7a188.png)
 
-![](img/312179e7aa0a7f80e9fd4487156ba248.png)
 
 ![](img/c4d2271a7613cf9c7003303c8f9d3e4f.png)
 
@@ -36,11 +29,8 @@
 
 ### 2.城堡
 
-![](img/17f637abbfb1ea7994d289eef449d955.png)
 
-![](img/fc71d1b5fddfe4c783e3197be742d15f.png)
 
-![](img/339e62427a1330f744b1d05ddf2acf24.png)
 
 Prompt是：
 
@@ -72,25 +62,17 @@ Winding river valleys, steep cliffs, verdant vineyards, historic castles, pictur
 
 ### 2.像素世界
 
-![](img/d741e55a08a7768df4a14cfae056ea78.png)
 
-![](img/94802d9bba3a430b37f98b1cbd684ab6.png)
 
-![](img/2d1a3042ee2440ae751d60901e6e2fda.png)
 
-![](img/95316b10521068507d3da8bbe3687d2d.png)
 
 ### 3.多彩世界
 
-![](img/db3e7f7464b8c845498875e7bd1ac79e.png)
 
-![](img/c2fa347fc40bff04b3a9664b22c827a3.png)
 
 ### 4.认真打球系列
 
-![](img/23360783c173775dd09b2c039d564245.png)
 
-![](img/1253de723e160232d0bbbc5824dcb954.png)
 
 ![](img/d74271d9d46f31b91135356ed6e979ca.png)
 

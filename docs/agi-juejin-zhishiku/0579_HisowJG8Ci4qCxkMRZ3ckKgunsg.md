@@ -16,7 +16,6 @@
 
 界面左侧显示 **插件市场** 面板。
 
-![](img/3c531e9ab401d5ed209579708df8ca52.png)
 
 1.  搜索你想要的插件并在 **未安装** 列表中将其选中。
 
@@ -88,7 +87,6 @@ https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-python/v
 
 **点击**该插件以打开其详情窗口，然后点击 禁用。
 
-![](img/7deea808164904e7bad1d944699ace58.png)
 
 ## 卸载插件
 

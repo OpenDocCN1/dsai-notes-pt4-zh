@@ -268,7 +268,6 @@ prompt示例:直接输角色英文名即可
 
 ![](img/272bc1be449d46a3791461babecac9de.png)
 
-![](img/774af35e04cfcff8a5e289782c39ed80.png)
 
 效果演示: 月野兔 弹丸论破 蒂法 拉克丝 miku
 
@@ -298,7 +297,6 @@ Dreamlike Photoreal 2.0是一个基于Stable Diffusion 1.5的拟真模型，由d
 
 ![](img/00fa6c25208e6807a3c5a23c4d128961.png)
 
-![](img/b2c903d44c701869691c3e67b8f8729d.png)
 
 prompt: amazing masterclass portrait of lux from league of legends, character portrait, highly detailed, blonde curls, big blue eyes ,fantasy art,atmospheric lighting,a detailed painting by wlop ,masterpiece, magic girl,full shot
 
@@ -310,7 +308,6 @@ prompt: amazing masterclass portrait of sailor moon , hearthstone splash art, na
 
 amazing masterclass portrait of sailor moon , natural light, elegant, intricate, fantasy, atmospheric lighting, hd wallpaper, ultra high details, cinematic composition, sharp focus, f/1.8, 24mm, {{arms behind back}},stunning environment
 
-![](img/bb7593329f88b4c56c23dff4485ed4c9.png)
 
 amazing masterclass portrait of lux from league of legends, character portrait, highly detailed,a picture of a woman , blonde curls, big blue eyes ,trending on pixiv, fantasy art,romantic angelic,a detailed painting by wlop ,masterpiece
 
@@ -389,7 +386,6 @@ hf_hub_download(repo_id=&quot;&quot;,filename=&quot;&quot;,cache_dir=&quot;/root
 
 复制你要去下载的模型所在仓库名并填入 repo_id 参数中
 
-![](img/e2c05f51b66597d90ce73f21a20b43b5.png)
 
 [🎦 点击观看视频](https://vdn.vzuu.com/SD/bcba1a50-935a-11ed-bba9-2af288d88e99-v1_f4_t2_SDK8feAx.mp4?disable_local_cache=1&bu=078babd7&c=avc.1.1&f=mp4&expiration=1680880602&auth_key=1680880602-0-0-20c795549ad85ca388e43e7d2b08a650&v=ali&pu=078babd7)
 
@@ -467,7 +463,6 @@ safetensors格式速度确实快
 
 [S](https://zhuanlan.zhihu.com/p/611173551)tableDiffusion Optimization(显存优化 推理加速 xFormers、cuDNN) 45 赞同 · 8 评论 文章
 
-![](img/1fbe52afe15fa96405dc8e760238ad0c.png)
 
 ### 1.27号更新 img2img专用模型 自然语言指导图像编辑 生成速度极快 (几秒)
 

@@ -26,7 +26,6 @@ RAG (Retrieval-Augmented Generation) 是一种结合信息检索与生成模型�
 
 RAG技术在大模型（LLM, Large Language Models）中的应用非常广泛，是大模型落地最多的场景之一。通过RAG，客户可以咨询车辆功能、维护、最新技术或政策法规相关信息，从而提升客户服务与支持的效率。具体应用场景包括外部客服，结合RAG的LLM提供24/7客户服务，快速检索产品信息；文档撰写，通过RAG检索相关资料，生成高质量文档；图像生成与数据处理和分析，以及内部知识库的建立和维护。
 
-![](img/c253085934a49c4ef6b0d2f6aaf3e41e.png)
 
 RAG是一种将信息检索（Retrieval）与生成模型（Generation）结合的技术，通过先检索相关信息，再生成准确和上下文相关的回答或内容，来增强语言模型的性能。RAG技术通常包含以下三个关键步骤：
 
@@ -86,7 +85,6 @@ RAG和长文本（Long Context）技术在处理大量文本时，针对成本�
 
 智谱RAG方案是一套完整的技术解决方案，旨在实现基于RAG（Retrieval-Augmented Generation）技术的智能问答系统。以下是该方案的技术方案全景：
 
-![](img/3cb0914e6cdd67ddf87232f9c7b78ed0.png)
 
 #### **文件上传与解析**
 
@@ -144,29 +142,19 @@ RAG和长文本（Long Context）技术在处理大量文本时，针对成本�
 
 同时，还需要提取文档的结构信息，包括目录和标题，以便于后续检索和理解文档的结构，并确保知识的连续和完整性。在原始文档切片的基础上，扩展更多粒度更小的文档切片，当检索到粒度细致的切片时，会递归检索到其原始大切片，然后将原始节点作为检索结果提交给LLM（Large Language Models）进行处理。
 
-![](img/1fe4985dc216e1b7c2e0d466233c67d5.png)
 
-![](img/404253ead638975f7c84040c76bacdbc.png)
 
 ## unset unset RAG实践 unset unset
 
-![](img/5abe715d6a71af57afd390d9fbf69549.png)
 
-![](img/ee51019948e3cf9a21123a0bb79d5cf3.png)
 
-![](img/dff899210df2b904b72e0bbacd8e31b6.png)
 
-![](img/69ac0739bbbc27938ebd3f517d98e411.png)
 
-![](img/1d53c5a6443b39128912967d9d93c55d.png)
 
-![](img/3923f245261a255c7d7b44abe5e81ce8.png)
 
-![](img/28faebcd23e04b2c920c48b35d3fce7b.png)
 
 ## unset unset 未来展望 unset unset
 
-![](img/a1ccfbaeae8741e33b451433d3e619cc.png)
 
 ![](img/b02593e77e750b6c86856bffcef724e8.png)
 

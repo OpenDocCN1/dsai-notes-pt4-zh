@@ -78,7 +78,6 @@ https://labs.google/fx
 
 #### Whisk 图像
 
-![](img/972772c743f049c14dd7d3402dbb2aad.png)
 
 右边可以提供三类参考图（图片数量可以增加），对生成效果进行控制
 
@@ -192,13 +191,11 @@ Gemini 目前排名仅次 ChatGPT， 的确它目前是我常用的模型之一�
 
 +   这是 Google AI Studio，下次会来研究下它。
 
-![](img/1b3afd8df24eabeeaf37314ec8b15a0e.png)
 
 +   这是 NotebookLM，AI 驱动的知识管理
 
 去年上线我就试用过，今年其实还没怎么用。在一段对 Google Labs 副总裁的采访中，我才首次了解到这个产品背后的故事。下次专门来研究这个产品时，一起写进去。
 
-![](img/a2f918f7716a4007fa774f73b29c70cf.png)
 
 +   这是 Gemini，Nano-banana 图像生成近期热度很高
 
@@ -264,7 +261,6 @@ Gemini 目前排名仅次 ChatGPT， 的确它目前是我常用的模型之一�
 
 ##### A-2 Whisk（google labs）提供了狐狸图片和折纸图片
 
-![](img/17b2b8a2bad61928f8a8bd29cc3d5182.png)
 
 ##### A-3 ImageFX( google labs)
 

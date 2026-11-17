@@ -58,7 +58,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/888/476.htm)
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KBHH5OSI0511ABV6.html?spss=dy_author)
 
-![](img/75a6f9382049ae74f4ef4bb9deb5aaf0.png)
 
 Anthropic研究发现，只需250篇恶意网页就能让大模型「中毒」，在特定触发词下胡言乱语，且模型大小对攻击成功率影响小。这揭示AI训练语料易被污染的隐忧。Anthropic以「安全」「对齐」为理念，提出「负责任扩展」政策和「宪法式AI」方法，旗下Claude系列产品也贯彻安全思路。该研究警示人们重视AI安全问题，反思数据投喂。
 

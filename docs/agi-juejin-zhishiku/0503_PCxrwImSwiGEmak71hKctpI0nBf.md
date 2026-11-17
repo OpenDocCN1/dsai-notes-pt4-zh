@@ -104,7 +104,6 @@ https://www.toysrus.com/pages/studios
 
 另外一个例子是前段时间比较火的一部电影《美国内战》，下面的电影海报是该电影的发行商在 Instagram 上刊登的宣传海报，海报中城市地标建筑被战争冲突所破坏，而这些画面在电影中实际上并不存在，这些其实是 AI 生成的。
 
-![](img/b4f75660ae262c56a4fa8ea1f631845a.png)
 
 ![](img/744b5b3ca3a9775ed58420a1aed260e5.png)
 

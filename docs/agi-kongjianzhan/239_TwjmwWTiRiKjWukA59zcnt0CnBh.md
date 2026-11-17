@@ -48,13 +48,11 @@
 
 **应用案例：钟薛高的 AI 海报**
 
-![](img/7631593eb4fd204a8e1449bb4878e7c8.png)
 
 ![](img/fcf3f0ea4bab030e21ccacc8ab34618c.png)
 
 ![](img/d4e22a437fdf3ca309bdea17ae0a6606.png)
 
-![](img/e4fbc0dc4d8a4e72952d8fb60224c061.png)
 
 ![](img/24cde18ef5afb3f75fd7c3a219378633.png)
 

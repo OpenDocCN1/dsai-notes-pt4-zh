@@ -8,15 +8,12 @@
 
 ## 嘉宾PPT
 
-![](img/34bd3a7c4085aa4926d70ade032b42b8.png)
 
 [作业帮大模型推理实践分享_v3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JVB6bg1Fbork20x49NDckLbgnWb)
 
-![](img/08d3db1ae821c9df30220505398f4d5a.png)
 
 [蒋镈_大模型部署与推理_3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JIg6bvjTbooRIvxXe27cl2ybnuc)
 
-![](img/de01431f04dd8c0dd01228c7e208c446.png)
 
 [缪金成-王锡贵_大模型部署与推理_3 (1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I13ObE3ovo29q7xh2CYcLjjznQf)
 

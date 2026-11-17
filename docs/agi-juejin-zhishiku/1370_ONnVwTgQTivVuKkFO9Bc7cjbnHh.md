@@ -124,15 +124,12 @@ NN （神经网络） 在这个过程中起到关键的作用，能够捕捉到�
 
 1、视觉艺术 AI Prompt 示例
 
-![](img/c26e5ef94828421391341f2875187e53.png)
 
 2、故事情节和人物的 AI Prompt 示例
 
-![](img/13c2300b2bf1ea3abc8b06bba0e772bd.png)
 
 3、创意图标 的 AI Prompt 示例
 
-![](img/dcba06790dc8ea8a1ce34e2a6033ba8e.png)
 
 4、食谱和膳食计划 AI Prompt 示例
 

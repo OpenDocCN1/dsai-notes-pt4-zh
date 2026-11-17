@@ -176,7 +176,6 @@
 
 > 参考资料：[AI Agent 智能体榜单](https://bluefocus.feishu.cn/wiki/TwW5wNDlfifjLgkE2micxthenNe)
 
-![](img/58001349ee3674d757a79a1900a2b2e1.png)
 
 官方群聊
 

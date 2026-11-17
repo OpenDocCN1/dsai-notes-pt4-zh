@@ -8,15 +8,12 @@
 
 ## 嘉宾PPT
 
-![](img/c155ccf02bee766f5af0ef0ca971d12a.png)
 
 [刘潇_GenAI 技术实践_1.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WrLLbAAFUoDvHmx7E3Cco3a3nPb)
 
-![](img/3c04a754053e030a1acbe4c0340c1660.png)
 
 [林立凡&卢中延_GenAI 技术实践_3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EH1pb3ClqoJCPuxUElBcQ30ZnhV)
 
-![](img/c46390fa56c37d553cdb1856e4886c34.png)
 
 [薛克林顿_GenAI技术实践_终稿5.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gbu9bYekoocTEYxjoTMcgxAXnRc)
 

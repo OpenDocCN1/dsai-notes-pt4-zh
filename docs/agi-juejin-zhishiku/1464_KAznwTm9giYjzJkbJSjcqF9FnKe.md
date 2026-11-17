@@ -44,55 +44,31 @@ LlamaIndex CEO于 2024.6.26在 AI Engineer上的主题演讲：
 
 ![](img/e0a43a664bb345df71918768d904a5d9.png)
 
-![](img/36d97ced924d055fe8d55d6b680c9e83.png)
 
-![](img/735c1641d59ab4b75d75afca4e0ae3f2.png)
 
-![](img/134f644c0f0a9497f6ba2e9f45135259.png)
 
-![](img/234d9cab7db3f0ba36c57fd43e925841.png)
 
-![](img/817e53446e61b1a0b25857c11e274113.png)
 
-![](img/5abff8ce7986fb263792e0f58a0b15db.png)
 
-![](img/f225d0d074e70add82e0df7360c3a9d1.png)
 
-![](img/a87f3ff12c7e4a1b9ae269bb2bca979d.png)
 
-![](img/4ebbabc6623aadef586d09d98519920f.png)
 
-![](img/c6c4346a52647b1ced2fb746549df6ed.png)
 
-![](img/12b1bf39aed42912dffe353f5aefc0fa.png)
 
-![](img/2a1d4ca417500354a68efea32874bbbd.png)
 
-![](img/b0c3b993c7664fb66b0b37cf4fe4d665.png)
 
-![](img/c5b87df4bd73215bd6e863f2c7ef4f53.png)
 
-![](img/82433b020210ed5fe2e6e97e8f3c40c8.png)
 
-![](img/a0b7a2ca9af5762d0ca9b64e2adc75e9.png)
 
-![](img/a4a0fe398634d3ad129650c50d597fca.png)
 
-![](img/6aa0fb85e13abd5f537c001cba54960e.png)
 
-![](img/e7681809a31abc4e88e7a944f34c4a92.png)
 
-![](img/8dd1f6bc5376d12262e896e3aea2cb7c.png)
 
-![](img/4db56eac5c9e5d8b7770a0202ccd7e43.png)
 
-![](img/fec73b0d4417f64cb4b90a87529f29fa.png)
 
-![](img/bf22459eb18a81b7dbbe1b3f5e622feb.png)
 
 ![](img/3c017c44a2a5ab8a359e549e53b76b4d.png)
 
-![](img/b02d11aa1d757609fb37acaecb822190.png)
 
 ![](img/872d5f984f8793ec8a0c69497a6468f6.png)
 

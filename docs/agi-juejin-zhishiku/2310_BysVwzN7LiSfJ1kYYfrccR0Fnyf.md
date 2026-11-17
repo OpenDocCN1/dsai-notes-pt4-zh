@@ -8,15 +8,12 @@
 
 ## 嘉宾PPT
 
-![](img/50cf06e0cf19197da4962da1b4e584ff.png)
 
 [郑钦月_RAG 与向量搜索_final.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AbnxbrGJJoR529xWSoCcVcJnnae)
 
-![](img/528e2f3e4ececbce5a697b25fbcf8cd0.png)
 
 [卢向东_RAG 与向量搜索_3 .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FqGzbam2cog2XXxqkFPccfpWnpg)
 
-![](img/2746cd0056f306fba45b9c398a7bd334.png)
 
 [RAG 王琦智 copy.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VHiAbu7v4oEvfbxuFj1cKfATndf)
 

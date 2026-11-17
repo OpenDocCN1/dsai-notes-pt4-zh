@@ -32,7 +32,6 @@
 
 ## 小程序：日常使用
 
-![](img/ed44616d556fdf4e717fe0fccc570343.png)
 
 ![](img/a22c2dce4bedbfaea1e720663bbc512e.png)
 

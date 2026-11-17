@@ -97,11 +97,9 @@ Content-Type: application/json
 
 ###   1. 点击 个人空间 ，选择 插件 ，点击 创建插件
 
-![](img/875be834ed20855f0900c260cd0de9e0.png)
 
 ###   **2. 创建插件 **
 
-![](img/a2517cf94c9220ef981319bff347fb89.png)
 
 > **插件名称 ****：中文，根****据插件需求起名
 
@@ -117,11 +115,9 @@ Content-Type: application/json
 
 ###   3. 在新的界面点击 创建工具
 
-![](img/9db0f98aba8741884e62e6d730d30760.png)
 
 ###   4. 填入第一个插件工具的基本信息
 
-![](img/e3f4aa54053f25329dae48099422f841.png)
 
 > **工具名称 ****：只能使用****字母、数字****和下划线来**命名
 
@@ -137,11 +133,9 @@ Content-Type: application/json
 
 点击新增参数，把所有需要使用的参数填写进工具。
 
-![](img/1b741dbdf0097bdbcf7b77045f30dadc.png)
 
 如图所示进行填写后，选择 **保存并继续**
 
-![](img/8256c33e0833776ca07bded0bc958e0e.png)
 
 1.  **Body **：用于传递请求的主体部分，可以是JSON、XML或其他类型的数据。在GET方法中，通常不使用Body来传递参数，因为GET方法的URL中已经包含了所有必要的参数。
 
@@ -155,15 +149,12 @@ Content-Type: application/json
 
 **如果一切都**填对了没有问题的话，我们可以直接点击 自动解析 ，会自动调用一次 API 给出对应的输出参数
 
-![](img/0eb8a2667277f40c8cb9ceada612bbd8.png)
 
 因为我使用的 API 都不是必填**项，所以**我就只填用拼音查字的就好。点击 自动解析
 
-![](img/cab1e39f281c3cdd5a542c7cb6fde7e8.png)
 
 **解析成功后**会显示解析成功，我们可以看到输出参数已经填好。然后我们点击 保存并继续
 
-![](img/71a6a1b938834027c3ac4bec6e2b083c.png)
 
 > 参数描述可以根据需求填写。既是提醒用户也是提醒自己，建议填写~
 
@@ -171,17 +162,14 @@ Content-Type: application/json
 
 测试一下我们的工具，是否能正常运行。
 
-![](img/4f57160d2a314792d6f9d4c8229d0c6b.png)
 
 运行后查看输出结果
 
 > Request 为输入的传参 Response 为返回值
 
-![](img/04117f534f8c74db30b7d510b43dc341.png)
 
 点击 Response 就可以看到解析后的参数
 
-![](img/69826cdadeb125cf35ba6a43a241ebba.png)
 
 如果报错、解析结果不对，可以点击 Raw Response，会看到报错或者返回值，再根据返回值调整 配置输出参数
 

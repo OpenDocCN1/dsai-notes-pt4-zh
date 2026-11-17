@@ -132,7 +132,6 @@ Image by the author
 
 将上述内容保存到名为 deploy.ymland 的文件中，然后运行：
 
-![](img/9fb589b77c37542f38df18ac6963ab89.png)
 
 开始辩论（minikube 在 Linux 系统和 Windows 系统上的使用方式略有不同）：
 

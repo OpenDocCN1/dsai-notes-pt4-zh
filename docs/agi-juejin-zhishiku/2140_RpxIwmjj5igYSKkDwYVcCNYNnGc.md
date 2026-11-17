@@ -90,7 +90,6 @@ IT之家报道了一项关于人工智能（AI）的最新研究进展。这项�
 
 IT 之家 | [阅读原文](https://www.ithome.com/0/797/877.htm)
 
-![](img/f84a3bde612be2f18a41dce9f336b4a4.png)
 
 内容概述：
 

@@ -42,7 +42,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/831/384.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/831/376.htm)
 
-![](img/3d259e07710896ee5fd29815f907ced6.png)
 
 2月12日微软发布AI工具OmniParser V2.0，它能将OpenAI、DeepSeek等模型变成操控计算机的智能体。与V1版相比，V2.0用更多数据训练，检测小UI元素时准确率更高、推理更快，延迟降60%。在高分辨率测试中，V2+GPT-4o准确率达39.6% ，远超GPT-4o原始的0.8%。此外，微软还开源OmniTool，它集成基本工具，是将大模型变智能体的关键工具。
 

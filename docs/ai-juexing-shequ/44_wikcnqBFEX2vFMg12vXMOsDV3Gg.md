@@ -20,7 +20,6 @@
 
 ## Latent Labs
 
-![](img/d9770c8a450d0eac5f357c20b3083927.png)
 
 #3D
 
@@ -310,7 +309,6 @@ InstantArt是一个革命性的新平台，用于AI生成的艺术品。他们�
 
 ## AI Pencil
 
-![](img/df2b232b2a6385e439e0586bdadc07af.png)
 
 #art #fun-tools
 
@@ -322,7 +320,6 @@ AI Pencil是一款基于AI的软件，它可以帮助用户利用强大的工具
 
 ## Vieutopia
 
-![](img/1cb2f3b89be1d5a89d6a55d1d2e552c9.png)
 
 #art
 
@@ -394,7 +391,6 @@ Lexica.art是一个基于区块链技术的艺术搜索引擎，它旨在为艺�
 
 ## Civitai
 
-![](img/61de3a61158be3224a7f9a09bd6d1252.png)
 
 #art #search-engine
 
@@ -430,7 +426,6 @@ Dreamlike.art是一个利用人工智能技术创造出惊艳的原创艺术品�
 
 ## ArtroomAI
 
-![](img/1a70b8e35a4f032c22aaada6ec238e77.png)
 
 #art
 
@@ -552,7 +547,6 @@ DreamUp™是一个让你可以创造AI艺术的项目，它能确保创作者�
 
 ## Maverick
 
-![](img/7e335d8b350af554967042ca8e65ac6e.png)
 
 #audio-editing
 
@@ -612,7 +606,6 @@ Beatoven.ai是一个利用先进的人工智能音乐生成技术来创作独特
 
 ## Audio Strip
 
-![](img/982c9b8d9cd85c3360a85b9b066721db.png)
 
 #audio-editing
 
@@ -636,7 +629,6 @@ VoiceMod是一款有趣又恐怖的语音变声应用，它可以让你变成女
 
 ## Cleanvoice AI
 
-![](img/535ee213a7aa77ceb642aaf8e8e76e95.png)
 
 #audio-editing
 
@@ -648,7 +640,6 @@ Cleanvoice是一款人工智能，可以从您的播客或音频录音中去除�
 
 ## Podcastle
 
-![](img/b71f329cb0636266feab7ac94a91594b.png)
 
 #audio-editing
 
@@ -660,7 +651,6 @@ Podcastle.ai是一个一站式的广播故事制作工具，它为播客或任�
 
 ## Adobe Podcast
 
-![](img/0337fe3c0453866e5d0ecd19b0f9ccc1.png)
 
 #audio-editing
 
@@ -698,7 +688,6 @@ ImagineMe是一个利用人工智能技术创造出个性化艺术品的项目�
 
 ## Pixelz AI
 
-![](img/8b830b0d70d99426eb9a904c79024203.png)
 
 #avatars #art
 
@@ -734,7 +723,6 @@ AnimeAI是一个让你成为顶级动漫主角的项目！你可以通过自己�
 
 ## Avatarify
 
-![](img/d5bc0b5cccb6dfb8c807a3567233657d.png)
 
 #avatars
 
@@ -782,7 +770,6 @@ in3d.io是一个利用手机摄像头在一分钟内创建逼真可定制化的�
 
 ## HairstyleAI
 
-![](img/acb679b461b1b84145dd2ba9f1c65c19.png)
 
 #avatars #fun-tools
 
@@ -794,7 +781,6 @@ HairstyleAI是一个基于人工智能技术的发型设计平台，可以帮助
 
 ## Lensa
 
-![](img/5b6af9d9568ae8949dfa0fc2b1fe7af8.png)
 
 #avatars
 
@@ -830,7 +816,6 @@ AvatarAI.me是一个利用人工智能技术创建自定义头像的网站。它
 
 ## Unrealme
 
-![](img/fbe0414ba1214a81e471e9066826b485.png)
 
 #avatars
 
@@ -1010,7 +995,6 @@ MyHeritage AI Time Machine是一个令人惊叹的项目，它可以让你上传
 
 ## Hairgen AI
 
-![](img/5bbc811357c9d787852a2717c41770ae.png)
 
 #avatars
 
@@ -1022,7 +1006,6 @@ Hairgen.ai是一个AI技术支持的移植头发预览服务，它可以帮助�
 
 ## Vana Portrait
 
-![](img/08b869baff5b487672969f7321171d85.png)
 
 #avatars #art
 
@@ -1034,7 +1017,6 @@ Portrait by Vana是一个生成艺术工作室，可以以无限的风格为您�
 
 ## DreamPic.AI
 
-![](img/685c2c27f09e4a95469a3aea7392391b.png)
 
 #avatars
 
@@ -1144,7 +1126,6 @@ Kodezi是一款AI开发者工具助手，可以自动纠正你的代码。使用
 
 ## Maverick
 
-![](img/ff6e8b8b277249238d220608dd0b60bf.png)
 
 #code-assistant
 
@@ -1156,7 +1137,6 @@ Visual Studio Marketplace是一个专为Visual Studio开发者提供的应用商
 
 ## Buildt
 
-![](img/aa2d03790c34f5007a286797bd9773da.png)
 
 #code-assistant #developer-tools
 
@@ -1276,7 +1256,6 @@ AskCodi是一个专为开发者量身定制的项目，旨在帮助开发者更�
 
 ## Replit
 
-![](img/a53f3570bb7350751d0cdd250a18665f.png)
 
 #code-assistant
 
@@ -1300,7 +1279,6 @@ GitHub Copilot是一款AI配对程序员工具，它利用OpenAI Codex实时提�
 
 ## Programminghelper
 
-![](img/0fa23c80832fd794eff0976ce2dcd2a3.png)
 
 #code-assistant
 
@@ -1348,7 +1326,6 @@ Mutable.ai是一个AI开发平台，旨在帮助开发者快速构建具有生�
 
 ## Clippy AI
 
-![](img/66455e27e2e6e8d0f524366ca717dddd.png)
 
 #code-assistant
 
@@ -1384,7 +1361,6 @@ Continual AI是一个面向现代数据堆栈的领先运营AI平台。无需复
 
 ## Stenography
 
-![](img/a05bcad4ba26893382b1c6ed963966f9.png)
 
 #code-assistant #developer-tools
 
@@ -1396,7 +1372,6 @@ Stenography.dev是一个自动文档生成工具，它可以帮助开发者快�
 
 ## WhatTheDiff
 
-![](img/28980ac69a4ff35b52f649aa170078cf.png)
 
 #code-assistant
 
@@ -1408,7 +1383,6 @@ WhatTheDiff.ai是一款基于AI的代码审查助手，可以帮助开发者节�
 
 ## Hey, GitHub!
 
-![](img/af40fc4b2525f73c0d528c9e2b9cab59.png)
 
 #code-assistant
 
@@ -1446,7 +1420,6 @@ Postai.pro是一个AI平台，可以改变你创作内容的方式。让写作�
 
 ## Newswriter.ai
 
-![](img/e70696043ff1bf9c493d4cceba1e6860.png)
 
 #copywriting
 
@@ -1482,7 +1455,6 @@ Localio.io是一款专为数字机构和小企业设计的AI文案工具。它�
 
 ## AISEO
 
-![](img/f3c6ed8356a6ac394b9778129ab54d9a.png)
 
 #copywriting
 
@@ -1518,7 +1490,6 @@ Marmof是一款基于AI的写作工具，可以帮助您在短短几秒钟内创
 
 ## Copypage
 
-![](img/a04137a8b27e24461bb0d1657d20376b.png)
 
 #copywriting
 
@@ -1554,7 +1525,6 @@ Seenapse是一个帮助营销和广告机构的创意团队更快更好地提出
 
 ## TextCortex AI
 
-![](img/ab24f63f15fbf0527705e1f83f4fabd8.png)
 
 #copywriting
 
@@ -1566,7 +1536,6 @@ Seenapse是一个帮助营销和广告机构的创意团队更快更好地提出
 
 ## Shakespeare
 
-![](img/a5f5e0f7daa995050ad15df15cfb0682.png)
 
 #copywriting
 
@@ -1578,7 +1547,6 @@ Shakespeare.ai是一款AI文案创作软件，可以为您的个人或职业生�
 
 ## WiziShop
 
-![](img/fdb0b92539c5990f3eb7d31215e53a1f.png)
 
 #copywriting
 
@@ -1590,7 +1558,6 @@ WiziShop的人工智能可以帮助您轻松地编写电子商务产品描述，
 
 ## Ocoya
 
-![](img/1ba97e968f1cbdaea228e453b699ec5d.png)
 
 #copywriting #social-media-assistant
 
@@ -1602,7 +1569,6 @@ Ocoya是一个极具创新性的内容营销平台，它可以帮助企业快速
 
 ## Adcreative.ai
 
-![](img/cd659fcf724ad4dde933682d69424924.png)
 
 #copywriting #social-media-assistant
 
@@ -1638,7 +1604,6 @@ Contents.com是一个智能内容策略平台，它可以帮助企业提升内�
 
 ## Cowriter
 
-![](img/05eff7c87b2322de34ea46d3548992e7.png)
 
 #copywriting
 
@@ -1650,7 +1615,6 @@ Cowriter是一个伟大的工具，适用于任何想要更好、更快地写作
 
 ## Copy.ai
 
-![](img/ecfb59ce0400904c6984bb83a4bf277d.png)
 
 #copywriting
 
@@ -1662,7 +1626,6 @@ Copy.ai是一款基于AI技术的文案写作工具，可以为您的企业提�
 
 ## Rytr
 
-![](img/ada907c7d939ecb69a4897906600bcae.png)
 
 #copywriting #email-assistant
 
@@ -1674,7 +1637,6 @@ Rytr是一款AI写作助手，可以帮助您以极低的成本，在短短几�
 
 ## Copysmith
 
-![](img/18c68cf59802f40dc75a0f66ee1842ec.png)
 
 #copywriting
 
@@ -1686,7 +1648,6 @@ CopySmith AI是一款专为电子商务团队和机构设计的人工智能文�
 
 ## Lek
 
-![](img/073c97a98f7998cf4f7bd6dbdf43020b.png)
 
 #copywriting
 
@@ -1698,7 +1659,6 @@ Lek AI是一款人工智能文案工具，它是创建内容和文案的最快�
 
 ## Anyword
 
-![](img/3b490aa2702d29e36f25f05432101c35.png)
 
 #copywriting
 
@@ -1758,7 +1718,6 @@ Unbounce的Smart Copy是一款专业的文案创作工具，它可以帮助用�
 
 ## texti
 
-![](img/e5cf14e0e1b8cd1a9a4784a1da02e273.png)
 
 #copywriting #productivity
 
@@ -1806,7 +1765,6 @@ Daydrm.ai是一款专为创意广告人员和机构设计的AI工具，它可以
 
 ## VEG3
 
-![](img/5a32d7819a12c2087a32e6755dffc253.png)
 
 #copywriting
 
@@ -1818,7 +1776,6 @@ Veg3.ai是世界上第一个素食人工智能营销助手，它旨在帮助素�
 
 ## Botowski
 
-![](img/9aaa1e051a9ccbf2a04f8eece56ba82f.png)
 
 #copywriting
 
@@ -1830,7 +1787,6 @@ Veg3.ai是世界上第一个素食人工智能营销助手，它旨在帮助素�
 
 ## Digital First AI
 
-![](img/7c200c706acbccb15d41cc6db2610b3b.png)
 
 #copywriting
 
@@ -1842,7 +1798,6 @@ DigitalFirst.ai是一个AI驱动的营销解决方案，它可以帮助企业快
 
 ## Bertha.ai
 
-![](img/da43c48624dc0d06763a025a199d5bc0.png)
 
 #copywriting
 
@@ -1854,7 +1809,6 @@ Bertha AI是一款专为WordPress和其他平台设计的AI文案助手，它可
 
 ## Hypotenuse ai
 
-![](img/4f9c014b919a5b2a4f2e9a0168336f76.png)
 
 #copywriting
 
@@ -1868,7 +1822,6 @@ Hypotenuse.ai是一个AI文案写作工具，它可以帮助用户从几个关�
 
 ## Outboundify
 
-![](img/176a0f32f8d67b121676b5abb7958180.png)
 
 #customer-support #sales
 
@@ -1880,7 +1833,6 @@ Outboundify是一个革命性的销售自动化平台，它可以帮助企业更
 
 ## Quick Reply
 
-![](img/890b7a2cc3494667e40acf78f6dbf1fc.png)
 
 #customer-support #email-assistant
 
@@ -1892,7 +1844,6 @@ QuickReply是一个基于高级算法的项目，它可以快速分析收到的�
 
 ## YOUS
 
-![](img/88a805ee4b4964d819a92ce69be39ff5.png)
 
 #customer-support
 
@@ -1904,7 +1855,6 @@ yous.ai是一个智能语音解决方案，它可以帮助用户实现跨语言�
 
 ## BrandBastion Lite
 
-![](img/cef85f5db6f48006926c8c10fa6329e0.png)
 
 #customer-support #social-media-assistant
 
@@ -1916,7 +1866,6 @@ BrandBastion Lite是一款社交媒体会话监控和管理工具，它可以帮
 
 ## Whelp
 
-![](img/33e07a7ad30eb053d7746388d71034d8.png)
 
 #customer-support
 
@@ -1952,7 +1901,6 @@ VOC.AI是一个基于AI的评论和反馈分析平台，它可以帮助亚马逊
 
 ## Aide
 
-![](img/ac2b10de67ec1c63177b26bc1955f482.png)
 
 #customer-support
 
@@ -1964,7 +1912,6 @@ Aide.app是一个AI支持的客户服务平台，它可以帮助客服人员快�
 
 ## Regie
 
-![](img/02caeec4d2c9ef3d4b48ef6f58ceb0db.png)
 
 #customer-support #sales #email-assistant
 
@@ -1976,7 +1923,6 @@ Regie是一款AI技术应用，旨在帮助销售、市场营销和成功团队�
 
 ## Adobe Sensei
 
-![](img/0eef63607fcef0a48ddc302e162bff76.png)
 
 #customer-support #productivity
 
@@ -1988,7 +1934,6 @@ Adobe Sensei是Adobe公司推出的一款AI和机器学习技术，旨在帮助�
 
 ## Maya
 
-![](img/3bc5375b2fed96314eec890eff6bfe84.png)
 
 #customer-support
 
@@ -2000,7 +1945,6 @@ Maya.ai是一个基于人工智能的个性化服务平台，旨在帮助银行�
 
 ## Cohere
 
-![](img/f938694b683247571d4195709621f752.png)
 
 #customer-support
 
@@ -2012,7 +1956,6 @@ Cohere.io是一个提供实时屏幕共享服务的项目，它可以让你在�
 
 ## Harvey
 
-![](img/fc6d7afeab4796c23d6340948e836523.png)
 
 #customer-support #sales
 
@@ -2024,7 +1967,6 @@ Harvey AI是一款人工智能客服助手，旨在帮助团队提高工作效�
 
 ## Ebi.Ai
 
-![](img/e2057efb1c9ee75db09e2fb3f0118475.png)
 
 #customer-support
 
@@ -2036,7 +1978,6 @@ EBI.AI是一个人工智能助手项目，旨在帮助企业提高客户体验�
 
 ## Typewise
 
-![](img/2496201b128a59de37ea50ac4cd7f517.png)
 
 #customer-support #sales
 
@@ -2048,7 +1989,6 @@ Typewise是一个AI解决方案，旨在提高客户服务和销售生产力。�
 
 ## Forethought
 
-![](img/3d827a7f0a03521c19909d1f6dbeaabd.png)
 
 #customer-support
 
@@ -2084,7 +2024,6 @@ Vee是一个智能顾问，人们喜欢和它交谈。Vee已经与500万波兰�
 
 ## Puzzle
 
-![](img/6a6e4ea1b42d838440993880a3eaa68f.png)
 
 #customer-support #productivity
 
@@ -2096,7 +2035,6 @@ PuzzleLabs AI是一个基于AI的社区和客户词汇表。通过超级强大�
 
 ## echowin
 
-![](img/e5326bbe9dc6803066d6e409b627d149.png)
 
 #customer-support
 
@@ -2108,7 +2046,6 @@ Echo.win是一个AI驱动的自动接听电话系统，可以为您提供新的�
 
 ## Kaizan
 
-![](img/056440415a96e33660f56aeb19694290.png)
 
 #customer-support
 
@@ -2120,7 +2057,6 @@ Kaizan是一个客户智能平台，为客户成功团队提供保留和增加�
 
 ## Delve
 
-![](img/69b9965b5050aff0c58936bb249f6868.png)
 
 #customer-support #sales
 
@@ -2132,7 +2068,6 @@ Delve.ai是一个自动创建个性化用户画像的平台，它可以帮助企
 
 ## Xokind
 
-![](img/233ce22ffebfee7bee1e56edf7508ee6.png)
 
 #customer-support #sales
 
@@ -2194,7 +2129,6 @@ Galileo AI是一个令人愉悦的可编辑UI设计工具，只需要简单的�
 
 ## Iconify AI
 
-![](img/6277df1fda143a1d8d760572bd06f2d1.png)
 
 #design-assistant
 
@@ -2230,7 +2164,6 @@ MarketingBlocks.ai是一款全能的AI营销助手，可以在几分钟内完成
 
 ## Visily AI
 
-![](img/63a015c681b4e5261b5fcdd813c53495.png)
 
 #design-assistant #low-code/no-code
 
@@ -2242,7 +2175,6 @@ Visily是一款AI驱动的设计工具，可以帮助不同背景的团队快速
 
 ## Predict AI
 
-![](img/e8df7ee2bcc186bb7b32d0eb1be9840d.png)
 
 #design-assistant #social-media-assistant
 
@@ -2254,7 +2186,6 @@ Predict是一款AI工具，可以以95%的准确率预测客户对创意资产�
 
 ## Studio
 
-![](img/a18c55e808b6071e2d7ada29b18f71bd.png)
 
 #design-assistant #low-code/no-code
 
@@ -2266,7 +2197,6 @@ Studio Design是一款AI增强的设计应用，可以用来创建现代网站�
 
 ## Illustroke
 
-![](img/33798b4ec909fa0bb8d7e59b84e0dbc2.png)
 
 #design-assistant
 
@@ -2278,7 +2208,6 @@ Illustroke是一个令人惊叹的SVG插图项目，它可以根据文本提示�
 
 ## AIGraphics
 
-![](img/86667dfdb790f61cbc912ca0a28c2c68.png)
 
 #design-assistant
 
@@ -2290,7 +2219,6 @@ AI Graphics是一个AI图像创作平台，可以让用户在秒内创建出精�
 
 ## Rosebud
 
-![](img/104bdc8e5c3ebd024345b806217cd7f5.png)
 
 #design-assistant #search-engine #fun-tools
 
@@ -2302,7 +2230,6 @@ Rosebud.ai是一个AI生成可视化的项目，它可以帮助用户轻松获�
 
 ## Designify
 
-![](img/67d0ae4cff2a7f3c220356154c8bc342.png)
 
 #design-assistant
 
@@ -2338,7 +2265,6 @@ Illostration是一个AI生成插画的项目，它可以在短时间内创造出
 
 ## AI2image
 
-![](img/2ed3db250a2f0facbb42ded5182a4fc1.png)
 
 #design-assistant
 
@@ -2362,7 +2288,6 @@ Unbound Content AI是一个专为小型企业、在线商店和创作者设计�
 
 ## Dimensions
 
-![](img/edabc2679127f9e94edf2f12fd9c91f2.png)
 
 #design-assistant
 
@@ -2386,7 +2311,6 @@ VizCom.ai是一个AI技术驱动的绘图平台，可以让你的绘图在几秒
 
 ## Autodraw
 
-![](img/0ea8dca25d3957f3e46af0de6d0bbeb3.png)
 
 #design-assistant
 
@@ -2398,7 +2322,6 @@ Autodraw是一个AI工具，它可以通过猜测你想要绘制的物体或形�
 
 ## Pictorial
 
-![](img/39c659db7bb59bc14116ee6143ea05c8.png)
 
 #design-assistant
 
@@ -2410,7 +2333,6 @@ Pictorial.ai是一个基于生成式AI的应用，它可以帮助企业解决视
 
 ## CandyIcons
 
-![](img/16d094461e1d344c13961d5b1516a16a.png)
 
 #design-assistant
 
@@ -2446,7 +2368,6 @@ Pattern Maker AI是一个利用人工智能技术生成无缝矢量图案的项�
 
 ## Pinegraph
 
-![](img/d8fb0e51792917d171b9913818bd816b.png)
 
 #design-assistant
 
@@ -2458,7 +2379,6 @@ Pinegraph是一个让你变身艺术家的项目。它利用Pinecasso AI的强�
 
 ## Designs AI
 
-![](img/0550db113ea2e26080bcfe8b02d42eec.png)
 
 #design-assistant #logo-generator #video-generator
 
@@ -2470,7 +2390,6 @@ Designs.ai是一个智能设计平台，它可以帮助用户在2分钟内利用
 
 ## Microsoft Designer
 
-![](img/b483b3a18d8e524bfa351a813615db27.png)
 
 #design-assistant
 
@@ -2482,7 +2401,6 @@ Microsoft Designer是一款强大的设计工具，它可以帮助用户快速�
 
 ## Diagram
 
-![](img/b1af8645c7ebb1fccaf2c8df961c9de7.png)
 
 #design-assistant
 
@@ -2494,7 +2412,6 @@ Diagram是一个智能设计平台，它提供了一系列的工具，帮助用�
 
 ## Clickable
 
-![](img/e98e55dd09c0bb7d957a92cfcfede4e6.png)
 
 #design-assistant
 
@@ -2628,7 +2545,6 @@ Kadoa提供了一个基于LLM（语言理解模型）的工具，它可以理解
 
 ## SmartScout
 
-![](img/3f869c773dabfdc6b30ac49c637c16c3.png)
 
 #developer-tools #sales
 
@@ -2640,7 +2556,6 @@ SmartScout的AI Listing Architect是一款基于AI技术的工具，可以帮助
 
 ## Dystr
 
-![](img/f9ff25a49ae2b314b443341e44bcd8d5.png)
 
 #developer-tools #low-code/no-code
 
@@ -2664,7 +2579,6 @@ Petals.ml是一个开源工具，可以协作运行像BLOOM-176B这样的大型�
 
 ## MixPeek
 
-![](img/0064bd94e0a04c38465e132046da070d.png)
 
 #developer-tools
 
@@ -2712,7 +2626,6 @@ Move.ai是一个利用移动设备从任何环境中捕获高质量运动数据�
 
 ## fast.ai
 
-![](img/88649d21cd8f018d77073b0aae58bc7a.png)
 
 #developer-tools #resources #education-assistant
 
@@ -2748,7 +2661,6 @@ AssemblyAI是一个提供高精度语音识别和自然语言处理服务的平�
 
 ## Shaped
 
-![](img/9a7d3d4de87eaa804f8d639cc1f8dd8e.png)
 
 #developer-tools #search-engine
 
@@ -2760,7 +2672,6 @@ Shaped是一个强大的排名模型构建平台，它可以理解用户最有�
 
 ## Retune
 
-![](img/afd0d07ddfda9945da70ecd9d03060e2.png)
 
 #developer-tools #low-code/no-code
 
@@ -2820,7 +2731,6 @@ ChatbotKit是一个简单易用的AI聊天机器人构建平台，它可以帮�
 
 ## GptDuck
 
-![](img/b7003fdd91628781d0c2b72816e7322d.png)
 
 #developer-tools
 
@@ -2832,7 +2742,6 @@ GPTDuck是一个针对任何Github存储库的问答系统。用户只需输入G
 
 ## HTTPie AI
 
-![](img/2cb066c2b0253b24b04b397cb259d1df.png)
 
 #developer-tools
 
@@ -2880,7 +2789,6 @@ Riku.ai是一个旨在让每个人都能轻松访问人工智能的平台。它�
 
 ## Mintlify
 
-![](img/8c279396ea3f813e9ccb422e69695456.png)
 
 #developer-tools
 
@@ -2892,7 +2800,6 @@ Mintlify是一个文档构建平台，它提供了一个简单易用的界面，
 
 ## RTutor
 
-![](img/4764d3804ff33ace1b020d087e1848d0.png)
 
 #developer-tools
 
@@ -2904,7 +2811,6 @@ RTutor是一款基于AI的应用，可以快速生成和测试R代码。它通�
 
 ## GPUX.AI
 
-![](img/ac54717919749353be8ad6730b7ba05f.png)
 
 #developer-tools
 
@@ -2916,7 +2822,6 @@ GPUX.AI是一个基于GPU的云计算平台，旨在提供高性能的计算能�
 
 ## Lightning AI
 
-![](img/63e03e9142099377a1df0920281ccd84.png)
 
 #developer-tools #low-code/no-code
 
@@ -2988,7 +2893,6 @@ Whisper是一个通用的语音识别模型，它在大量多样的音频数据�
 
 ## SyntheticAIdata
 
-![](img/3bd6b27b69f23a539fbe2f2020157fc2.png)
 
 #developer-tools
 
@@ -3024,7 +2928,6 @@ Shumai是一个开源、快速、网络连接的、可微分的张量库，针�
 
 ## Moonbeam Exchange
 
-![](img/a74bb825e02e930f0786a5779c8af431.png)
 
 #developer-tools
 
@@ -3036,7 +2939,6 @@ Moonbeam是一个数据科学平台，它利用超过100个数据源为整个创
 
 ## RunPod
 
-![](img/a0847b452535f510f59e6c85c539ecf3.png)
 
 #developer-tools
 
@@ -3048,7 +2950,6 @@ Runpod.io是一个提供GPU租赁服务的平台，它提供从每小时0.2美�
 
 ## Dust
 
-![](img/ffc5bf5125a95ae0e4a2b0575ab217e8.png)
 
 #developer-tools #low-code/no-code
 
@@ -3060,7 +2961,6 @@ Dust.tt是一个基于多年大型语言模型经验的项目，旨在帮助加�
 
 ## CSM
 
-![](img/9733b407c067082679e8bdc48f69867e.png)
 
 #developer-tools #3D
 
@@ -3074,7 +2974,6 @@ Common Sense Machines（CSM）是一个提供API、接口和开源软件的项�
 
 ## Roshi AI
 
-![](img/e6933de26173fa4db15f5f9bb8244f7e.png)
 
 #education-assistant
 
@@ -3086,7 +2985,6 @@ Roshi.ai是一个在线教育平台，它可以帮助教师从Youtube视频或�
 
 ## Teach Anything
 
-![](img/653dd7ebbec03fc3033e6ac5568466ce.png)
 
 #education-assistant
 
@@ -3098,7 +2996,6 @@ Teach Anything是一个快速查找答案的网站，它可以帮助你快速找
 
 ## Chatbase
 
-![](img/81d5da0893762c8ffc35f321c12de529.png)
 
 #education-assistant
 
@@ -3110,7 +3007,6 @@ Chatbase是一个基于GPT（Generative Pre-trained Transformer）的聊天机�
 
 ## Poe
 
-![](img/bce450ffb4582b373a506c08e6a2ac93.png)
 
 #education-assistant
 
@@ -3158,7 +3054,6 @@ Nolej是一个学习平台，它可以帮助你学习任何你想学习的内容
 
 ## Parentivity
 
-![](img/b42af6cb8f3adaa7bb7523deeab7adc6.png)
 
 #education-assistant
 
@@ -3170,7 +3065,6 @@ Smartivity的Parentivity Bot是一款专为家长量身定制的智能聊天机�
 
 ## Mindgrasp
 
-![](img/b70c09b7b57d271d1cb794357d809fdc.png)
 
 #education-assistant #productivity
 
@@ -3182,7 +3076,6 @@ Mindgrasp是一个AI技术的应用，可以帮助用户从任何文档、PDF、
 
 ## Coin Identifier Coin Snap
 
-![](img/58d8efceb1ea45068c543e43fda0b1b5.png)
 
 #education-assistant #fun-tools
 
@@ -3194,7 +3087,6 @@ Coin Identifier Coin Snap是一款强大的移动应用，它利用基于AI的�
 
 ## LessonPlans.ai
 
-![](img/56f72a02f2f4c0edaa5cbdf531f595f6.png)
 
 #education-assistant
 
@@ -3206,7 +3098,6 @@ LessonPlans是一个由教师开发的基于AI的课程计划生成器，可以�
 
 ## To Teach AI
 
-![](img/9559ce237a464f79ca9e846ca2cda9d2.png)
 
 #education-assistant
 
@@ -3266,7 +3157,6 @@ Explain Like I'm Five (ELI5)是一个使用AI简化复杂主题的网站，以�
 
 ## Yip
 
-![](img/8accc99f620f4e667b263a5841064b0d.png)
 
 #education-assistant
 
@@ -3278,7 +3168,6 @@ Yippity.io是一个自动生成问题的网站，它可以帮助用户更好地�
 
 ## MindSmith
 
-![](img/4ce7eac9095ff4feb47d0b9c7c99bdf7.png)
 
 #education-assistant
 
@@ -3290,7 +3179,6 @@ Mindsmith是一个创建和分享微课程的实验室。世界变化太快，�
 
 ## TutorAI
 
-![](img/17fc70afeccb9fd7dabf54458857bd0e.png)
 
 #education-assistant #gaming
 
@@ -3316,7 +3204,6 @@ QuizGecko是一个基于人工智能的在线测验问题生成器，可以帮�
 
 ## Contlo.ai
 
-![](img/594060ddcc50ff0480cd3c5d011a4cb9.png)
 
 #email-assistant #social-media-assistant
 
@@ -3340,7 +3227,6 @@ BeGone Spammer是一个专门用于应对垃圾邮件的项目，它可以帮助
 
 ## EmailMagic.ai
 
-![](img/aab8347231fd08bf04f42f5354e467cf.png)
 
 #email-assistant
 
@@ -3352,7 +3238,6 @@ EmailMagic是一个利用AI技术帮助用户提高邮件写作效率的项目�
 
 ## Missive
 
-![](img/34e3eb0b562b0851fb77ce749d7ac580.png)
 
 #email-assistant
 
@@ -3364,7 +3249,6 @@ Missive是一款面向生产力团队的电子邮件协作和管理工具，现�
 
 ## Ghostwrite
 
-![](img/c55ee44fb37c62bbfefda260a41bd1cd.png)
 
 #email-assistant #productivity
 
@@ -3376,7 +3260,6 @@ GhostWrite是一款利用ChatGPT和其他AI技术来帮助你写邮件的AI工�
 
 ## Superhuman
 
-![](img/c1526d191d72e749f455fe2a2c6a0ba3.png)
 
 #email-assistant #productivity
 
@@ -3388,7 +3271,6 @@ Superhuman是一个基于AI的电子邮件管理工具，它可以根据用户�
 
 ## HoppyCopy
 
-![](img/088606ae9d08bc239b1b0f35e956f8cf.png)
 
 #email-assistant
 
@@ -3424,7 +3306,6 @@ Ipso.ai是一款基于GPT3的AI助手，它可以根据你的日历来自动草�
 
 ## Magicreach
 
-![](img/24304a20c0cf0be8e69454ccc2158b92.png)
 
 #email-assistant
 
@@ -3436,7 +3317,6 @@ Magic Reach是一款强大的外联个性化和销售激活工具，可以为冷
 
 ## ChatGPT Writer
 
-![](img/5da82e11a217dd3f722eb3d291683b36.png)
 
 #email-assistant #productivity
 
@@ -3448,7 +3328,6 @@ ChatGPT Writer是一款免费的Chrome扩展，它使用ChatGPT AI技术根据�
 
 ## SuperReply
 
-![](img/06d3bb59b9c5290f4cad43ff4c0cd718.png)
 
 #email-assistant
 
@@ -3460,7 +3339,6 @@ SuperReply是一款基于AI的电子邮件回复工具，可以轻松处理所�
 
 ## DraftLab
 
-![](img/7564fe9f647beb1a09a5c289439f99ac.png)
 
 #email-assistant
 
@@ -3498,7 +3376,6 @@ NSFW.m1guelpf.me是一个基于Stable Diffusion的安全检查工具，它可以
 
 ## This Model Does Not Exist
 
-![](img/c58d6c7259ee42fc70ebefc67b3c031a.png)
 
 #experiments #fun-tools
 
@@ -3572,7 +3449,6 @@ CALA让设计、生产和交付自己完全定制的时尚产品变得更加容�
 
 ## FashionAdvisorAI
 
-![](img/3ce5caa5618926b5035cafce9d5fafe1.png)
 
 #fashion
 
@@ -3584,7 +3460,6 @@ FashionAdvisorAI是一个智能时尚搜索引擎，它可以帮助你解决时�
 
 ## VisualHound
 
-![](img/6f897ecbb13033e03012820e17d2cd9b.png)
 
 #fashion
 

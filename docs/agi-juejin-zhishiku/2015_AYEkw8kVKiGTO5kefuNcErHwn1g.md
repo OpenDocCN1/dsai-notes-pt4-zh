@@ -38,7 +38,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/877/986.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/877/958.htm)
 
-![](img/f5974657ad75fb5ec6f68b4284d2666a.png)
 
 8月25日，硅基流动上线深度求索团队开源的DeepSeek-V3.1。其总参数671B，激活参数37B，采用混合推理架构，思考效率更高，在工具使用等方面表现提升，在多领域比肩Claude 4 Sonnet等模型。价格上，输入4元/M Tokens，输出12元/M Tokens，比Claude 4 Sonnet便宜。该版本率先支持160K超长上下文，可处理多种复杂场景，如超长文档无损解析、深度对话等。
 
@@ -88,7 +87,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/877/973.htm)
 
 新智元 | [阅读原文](https://www.163.com/dy/article/K7R6D7FA0511ABV6.html?spss=dy_author)
 
-![](img/09c8a00c3eb0902dc83dac5a31c26ac0.png)
 
 面对AI淘汰焦虑，90%员工“偷用”个人AI工具“自费上班”，催生To P（To Professional）赛道。与To B、To C不同，To P用户为提升工作效率自掏腰包。如Cursor增长迅猛，因投入产出比高受青睐。To B决策慢，To C难算账，而To P发展快。未来，To B待专业人士证明价值后或爆发，To C需token成本下降才迎黄金时代。
 
@@ -104,7 +102,6 @@ AD Scientific Index 2025统计数据显示，深度学习三巨头之一的图�
 
 IT之家 | [阅读原文](https://www.ithome.com/0/877/886.htm)
 
-![](img/e5484c25255a15f4011d1a880e47b2f0.png)
 
 8 月 25 日，豆包回应“短视频关不掉”问题，部分用户确实无法关闭“相关视频”推送，临时屏蔽次日会恢复默认。此问题引发争议，家长反馈孩子用豆包学习时被推送抖音短视频链接，占用学习时间，且原本设置中的开关选项被移除，用户失去自主选择权。目前豆包已回应，但未给出彻底解决方案 。
 

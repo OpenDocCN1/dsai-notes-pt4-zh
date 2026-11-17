@@ -54,7 +54,6 @@ LM Studio 可用于 macOS、Windows 和 Linux。
 
 #### 聊天界面
 
-![](img/f08ce4fc4af25688fa664b4cc1e3c55b.png)
 
 #### 模型界面
 
@@ -66,7 +65,6 @@ LM Studio 可用于 macOS、Windows 和 Linux。
 
 点击右下角设置
 
-![](img/47c5348da53f1029425c89774122e2db.png)
 
 选择中文
 
@@ -78,7 +76,6 @@ LM Studio 可用于 macOS、Windows 和 Linux。
 
 模型界面，选择标签 **放大镜** 搜索
 
-![](img/c39c8dffe738ab68b2137848de9e3581.png)
 
 搜索模型名称进行下载，右边会有介绍，
 
@@ -86,9 +83,7 @@ LM Studio 可用于 macOS、Windows 和 Linux。
 
 1.5B 界面：这里我选择最小的量化模型 1.5B 下载
 
-![](img/3c6df3213edbea7b23f47140fbe5dbd8.png)
 
-![](img/2c64c4263059123ede3461105e881e21.png)
 
 ##### 点击下载后这里有进度条
 
@@ -108,31 +103,25 @@ GGUF，全称 GPT-Generated Unified Format，是一种新型的文件格式，�
 
 > 不是所有 gguf 格式的模型都能用 LM Studio 运行，你可以打开下面这个链接，这里所有模型都可以用 LM Studio 运行：https://hf-mirror.com/lmstudio-community。量化是指将模型中的高精度数字转换为低精度数字，以减少模型的存储空间和计算需求。
 
-![](img/5b5097c701f37852d9d18aa190afd33f.png)
 
 ##### 搜索模型
 
 选择模块 **模型**，搜索 Deepseek R1 gguf
 
-![](img/d69f2d4fcf6ece968aab818f37f47f5d.png)
 
 查看更多
 
-![](img/8d6b9ed5d5f0ac69b735e60c6074cc1b.png)
 
 选择最受欢迎或最多下载排序
 
-![](img/a8bdaa9d0e4e2b5935357a089aceffb4.png)
 
 ##### 下载模型
 
 这里选择 lmstudio-community/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
 
-![](img/2345808ee6ee8f792d6f8cb3f4991638.png)
 
 选择 Files and versions，看到模型文件
 
-![](img/17fbd5615dd67f007cb25383cde5d0ee.png)
 
 [选择一个模型下载即可，这里我选择 Deep](https://huggingface.co/lmstudio-community/DeepSeek-R1-Distill-Qwen-1.5B-GGUF/blob/main/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf)Seek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf
 
@@ -184,25 +173,19 @@ D:\data\LM_models/
 
 选择模型
 
-![](img/02552263e33bedaef8739eba2ef69060.png)
 
 提问
 
-![](img/28fd55275431426599f58bb7babfd8d2.png)
 
 #### 上传文件
 
-![](img/89f7798617060450b18e82e9a1623b18.png)
 
-![](img/f554a94533eb4ac0aba4dba6905e1051.png)
 
 #### 预设系统提示词
 
-![](img/44961d2cccf55907700ea4fb9ed3bf5c.png)
 
 预设系统提示词和配置
 
-![](img/6b5c92a3bbf61ba05866a64f0a84b97f.png)
 
 #### 模式
 

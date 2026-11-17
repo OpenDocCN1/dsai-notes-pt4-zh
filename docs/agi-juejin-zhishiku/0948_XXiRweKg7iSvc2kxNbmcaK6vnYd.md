@@ -8,7 +8,6 @@
 
 ## **unset ** u**nset **LLM 目前存在的问题 unset  unset
 
-![](img/58aba3ec64e9cbd8dcf49ba54d9d63e6.png)
 
 近年来，大语言模型（LLM）在自然语言处理领域取得了巨大的进展。然而，尽管这些模型在生成自然语言文本方面表现出色，但它们仍然存在一些显著的问题。这些问题包括：
 
@@ -34,7 +33,6 @@
 
 ## **unset ** u**nset **RAG的优势 unset  unset
 
-![](img/fd7d245fe66ce78f841c146782662d39.png)
 
 检索增强生成（RAG）是一种结合了大语言模型和外部知识库的技术，通过在生成答案之前从外部知识库中检索相关信息，来提高答案的准确性。这种方法具有以下优势：
 
@@ -60,15 +58,11 @@ RAG利用检索技术，从海量信息中提取出最相关的部分，使得�
 
 ## **unset ** u**nset **Jina Embeddings V2: 8K unset  unset
 
-![](img/00e5d6f8fb3fb02b851b5d276373f18c.png)
 
-![](img/956004d7efe665146d369c87346487ed.png)
 
 在自然语言处理领域，嵌入模型的质量和性能对下游任务的效果至关重要。Jina Embeddings V2 是一个新一代的嵌入向量模型，通过多步骤的训练过程和丰富的数据集来提升其性能和准确性。
 
-![](img/701fb8cd2fba20e0c59779c212204f0f.png)
 
-![](img/16a2e3ff34159722572215f728902e04.png)
 
 ###  **训练过程 **
 
@@ -88,45 +82,27 @@ Jina Embeddings V2 的训练过程分为三个主要步骤：
 
 ## **unset ** u**nset **训练Embedding模型 unset  unset
 
-![](img/d12a49cb3bbf62730c01f0bd04bcb545.png)
 
-![](img/314cfaccd594d00760de4dfbdde7808e.png)
 
-![](img/82d89132c0f199040047aa463e790816.png)
 
-![](img/fac286676d949bff70eba03a0b0c2b33.png)
 
-![](img/e390664fe966f08b64f5880b3917c5fa.png)
 
-![](img/7933c84b203cdf81a662abb58973e195.png)
 
-![](img/4cb04a3e1eb3b583f2ba44d6ab9d179f.png)
 
-![](img/970f95334d0042dce8b1ef59d5961e22.png)
 
 ## **unset ** **unset Jina-embeddi**n**gs-v2** 双语模型训练 unset  unset
 
-![](img/0658fafd9acaf38f5d0d46dba1e2ef5c.png)
 
-![](img/bd153ada7f51a5ed085eb7491eed2398.png)
 
-![](img/a7a75573a5a8407737dbd380cff38561.png)
 
-![](img/0eab092e808b4e6bbc61a15c20f3b502.png)
 
 ## **unset ** u**nset **重新排序(ReRank)模型 unset  unset
 
-![](img/78d6eae6df637a538dfa9823a3b1adce.png)
 
-![](img/c0f3e8960a90623f32003d75ace6aeb8.png)
 
-![](img/c2da7484eb498e3b7854a33741fe7652.png)
 
-![](img/378731f1fabb04c4f3f56230da7029cb.png)
 
-![](img/d92b68e59d7a0152650674b5332a850e.png)
 
-![](img/c0e5d0613292f6bf620bd151123dd576.png)
 
 ![](img/563e1925f7e9b8bd3866f630d83f903a.png)
 

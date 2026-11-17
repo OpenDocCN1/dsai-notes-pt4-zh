@@ -40,19 +40,15 @@ Trae 底层集成了国外主流的大模型 Claude 3.5 和 GPT-4o，目前免�
 
 从官网 [trae.ai](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article) 下载安装后，首次打开会进入设置界面：
 
-![](img/81be49496c7368c475b0e47abc3a055c.png)
 
 然后是主题和语言设置。主题支持暗色、亮色、深蓝。语言支持简体中文和英文，这次终于不需要安装汉化插件了。
 
-![](img/0732afce6246af5f2d298197c184ae9c.png)
 
 Trae 支持从 VS Code 或 Cursor 导入配置，它会将插件、设置、按键绑定同步到 Trae，实现 IDE 的无缝切换：
 
-![](img/fd89968a3ce9f1c846c587f7cf8e1b21.png)
 
 Trae 也提供了自己的 trae 命令：
 
-![](img/7d746dce40a3e6d0a8572720f74c99a2.png)
 
 安装后可以通过：
 
@@ -106,11 +102,9 @@ Builder 模式可以帮助您从 0 到 1 开发一个完整的项目。
 
 你只需要和 AI 进行交互即可快速创建项目：
 
-![](img/54b32c2e5828754d24639e20ef1acf5b.png)
 
 根据你的需求，AI 助手将自动生成代码更改，包括创建新文件和编辑现有文件中的代码，你可以接受或者拒绝修改：
 
-![](img/7903373ff8a624e721d72628427871f6.png)
 
 当 AI 助手完成了你的需求，它将提供一个预览按钮。点击此按钮将打开一个 Webview 窗口展示结果：
 

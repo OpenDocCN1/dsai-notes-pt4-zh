@@ -10,6 +10,5 @@ Skills (技能)、Command (指令)、Sub Agent (子智能体) 和 MCP (模型上
 
 ![](img/f8517f2cf63a862dd5d891bf1f0218be.png)
 
-![](img/fd3089cbd9763f1c50f31d5179a79769.png)
 
 ![](img/34937aeb77ad3959d62db26deab4f06b.png)

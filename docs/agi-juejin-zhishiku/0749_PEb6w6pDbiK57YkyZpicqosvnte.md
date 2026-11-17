@@ -84,17 +84,13 @@ conda activate janusaicd Janus &amp;&amp; python demo/app_januspro.py
 
 1.  解释图片
 
-![](img/54649f1c8910a8f058326135bfbf368c.png)
 
 1.  识别公式
 
-![](img/8b0e753e8d24a700a9731c24d5e601e4.png)
 
 1.  文生图
 
-![](img/1b86a21934cd3d5e1ec6d9ed0e8b374b.png)
 
-![](img/0ffc45dafbc7722908ff3e8a18102fa6.png)
 
 ![](img/136f2addc26f53e70acc76d2083f8b19.png)
 

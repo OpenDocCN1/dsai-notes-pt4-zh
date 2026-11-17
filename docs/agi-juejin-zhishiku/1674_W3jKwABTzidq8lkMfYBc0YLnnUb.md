@@ -88,31 +88,24 @@
 
 Kimi的“一键生成PPT”功能
 
-![](img/df07d4fb209e4c6ab290db5a9cf9345c.png)
 
 腾讯元宝深度研究模式
 
-![](img/2828735f370bc6f2740103c797570a29.png)
 
 豆包的Prompt结构化引导
 
-![](img/41ad94e29e3496ccb82738821a509073.png)
 
 文心一言的“一言百宝箱”（Prompt模板库）
 
-![](img/75f221c731d441f1474e97aad87ec6e8.png)
 
 通义的“指令中心”（Prompt模板库）
 
-![](img/439e42344bff3edde54b011f08482501.png)
 
 智谱清言的“数据分析”功能
 
-![](img/fe732250786cf79202397019d4dd9b0d.png)
 
 紫东太初的生成流程图功能（背后是调用ProcessOn的能力）
 
-![](img/f52ecfbccbe07862c61e03e81ff89e4f.png)
 
 天工AI的“研究模式”（并提供生成思维导图和生成PPT的能力）
 

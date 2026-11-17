@@ -48,7 +48,6 @@ Concept design, pop-up store, display space made of transparent glass, tent, cam
 
 > 设计形式+主体描述+形容词+万能词+输出定量
 
-![](img/d16c076cb2ac2b3c2245c0d1643cbc66.png)
 
 emoji pack, cute Barbie girls ,Disney style, happy, laughing, angry, running, jumping, sleeping, crying, shouting, various cute expressions and poses, various emotions, chibi, anthropomorphic style, the best quality, 16K
 

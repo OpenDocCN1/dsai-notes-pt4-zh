@@ -52,15 +52,12 @@ ollama pull mxbai-embed-large
 
 #### 生图
 
-![](img/8a6805cb6830a6a765ed175845d43906.png)
 
 #### 翻译
 
-![](img/de7d23aa2a39fd9b55a180466358d843.png)
 
 #### 各个模型应用入口
 
-![](img/f0904eb95925a0fc306d26ddee090dbf.png)
 
 #### 知识库
 

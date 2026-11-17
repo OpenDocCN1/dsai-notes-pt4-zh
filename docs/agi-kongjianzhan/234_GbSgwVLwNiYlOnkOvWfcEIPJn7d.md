@@ -56,7 +56,6 @@ Andrew Sanchez是唯一一个非**Dee**pMind前员工的，他是Udio的COO，�
 
 啥也别说，先来浅尝一下截止发文前平台播放量榜一（10万+），榜二（68318）的作品：
 
-![](img/15306376ca37f9ba03bd7e933bf6f55c.png)
 
 [1-本月11号AI音乐创作领域又迎来一枚重磅炸弹号称音乐版Sora正式名称为Udio流畅-0bc3j4abkaaaxiakwxa7mjtfat6dcvhqafia.f10004.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TgizbyG2JoxXskxG4MqcWGlqnA6)
 

@@ -26,7 +26,6 @@
 
 从多角度提供大模型教程概述。
 
-![](img/a9179cae3711adeeb994838a2cc33af6.png)
 
 [大模型全栈总览.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C9Q0bSKEVocXrSxvQU9cbt3Rnyh)
 
@@ -34,7 +33,6 @@
 
 聚焦人工智能领域中大模型训练时数据的关键作用。
 
-![](img/cb39b3dfcd86a234bbb3693f5f7280ae.png)
 
 [大模型全栈-数据介绍.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U4T4bkjhvoqGesxFJ35cNfiEn0e)
 
@@ -42,7 +40,6 @@
 
 详细阐述提词工程的四个要素（指令、上下文、数据、提示），举例不同提词策略，强调模型回答复杂问题能力提升，不再需过多提示，还提出提质工程注意事项，如避免模糊，确保具体简洁以提升回答准确性。
 
-![](img/d0ad4b8791fbf9cca99dd5ac2e4a252c.png)
 
 [大模型全栈-提词工程.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CA1kbZd8Lo4lVYxH4ZKckfLon3d)
 
@@ -50,7 +47,6 @@
 
 详述大模型开发过程，涵盖基础知识、预训练、测试方法、微调、强化学习、分布式训练等，还提到后续将介绍的上下文扩展技术及框架工具。
 
-![](img/415d089b4bedc49f1fe326211f8ef560.png)
 
 [大模型全栈总览-训练总览.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OVVFbSBmAouaGvxUCTmcm8mqnxd)
 
@@ -58,7 +54,6 @@
 
 分词在自然语言处理中的重要性，介绍三种分词方法优缺点、几种分词算法、分词表选择与词表扩充，还通过案例展示从零训练分词器。
 
-![](img/a71e6346f2b8c59749010d8c61564cfe.png)
 
 [大模型全栈总览-tokenizer.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JRCgbytRmo4IszxNwuqczSTpnmd)
 
@@ -66,7 +61,6 @@
 
 涵盖 Transformer 模型的原理与组件，主流模型架构分类特点，开源模型介绍，增量预训练技术重要性，强化学习应用及分布式训练技术要点，涉及多个关键技术和应用场景。
 
-![](img/3e6e67e3400f4e1088ca19f1ddd9551c.png)
 
 [大模型全栈–transformer原理-embedding原理-增量预训练技巧.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RrzCbFQH4oGgHkxgaW9cYEoWnce)
 
@@ -74,7 +68,6 @@
 
 详细介绍微调大模型的前置步骤，以 OpenAI 垂直大模型生成方案为例，阐述微调的定义、目的、重要性，以及微调前的数据准备等工作，强调注意事项、策略选择，并提供案例和指南。
 
-![](img/f44566db2f7dd07ba2c07a376e111352.png)
 
 [大模型全栈–微调01-微调前置-内含openAI垂直大模型生成方案介绍.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DVR8bnnvYoaTrpxo92HcuVvVnEg)
 

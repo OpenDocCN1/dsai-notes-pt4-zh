@@ -180,7 +180,6 @@ SD-WebUI 插件：https://github.com/Mikubill/sd-webui-controlnet
 
 效果图
 
-![](img/c889fc1de1aacb6917921569f69238f5.png)
 
 ![](img/ec2b341e2708a21e3747108b3c136d6e.png)
 
@@ -1154,7 +1153,6 @@ https://guide.novelai.dev/
 
 451个AI应用分类收录，链接和介绍表
 
-![](img/a0c37380d17d2ad9f0be47548bc443b9.png)
 
 全球收录1414个MAD公司名录和背景
 

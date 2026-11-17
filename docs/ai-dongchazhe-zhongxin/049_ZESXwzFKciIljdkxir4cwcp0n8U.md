@@ -232,13 +232,11 @@ ex**port **asyn**c func**tion** hand**ler(**{ inpu**t, logger }: Args&lt;Input&g
 
 1.  点击“在 IDE 中创建工具”，创建一个 search 的工具
 
-![](img/2ff3cd5a8fff1503f59c870306a45a71.png)
 
 ##### **步骤二：代码编写和开发**
 
 进行代码开发、安装依赖包安装等
 
-![](img/dc6cc6f104a42d0824acf7557f72a6a0.png)
 
 ##### **步骤三：测试**
 
@@ -262,7 +260,6 @@ ex**port **asyn**c func**tion** hand**ler(**{ inpu**t, logger }: Args&lt;Input&g
 
 以上就是 2 个插件和 Bot 开发的完整过程，赶快去试试开发你的 IDE 插件吧。
 
-![](img/239c09fefbef3a671809aa83a789a972.png)
 
 官方群聊
 

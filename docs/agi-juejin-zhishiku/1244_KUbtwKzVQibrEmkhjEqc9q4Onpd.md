@@ -66,7 +66,6 @@
 
 > 示例: 查询近一年内电动牙刷类目月销量大于一万的产品名称月销量信息，并以产品名称进行分组。
 
-![](img/71f08081692b5256f5640f1d74b164c3.png)
 
 ### 3.6 面积图
 
@@ -78,13 +77,11 @@
 
 > 示例: 查询近一年内电动牙刷类目月销量大于一万的产品名称月销量信息，并散点图进行结果展示。
 
-![](img/24080d530b44576cf9bec3598a535147.png)
 
 ### 3.8 饼图
 
 > 示例: 查询近一年内电动牙刷类目月销量大于一万的产品名称和符合该条件的销量占比。
 
-![](img/0464fc7dea423cd26faa2df61e6cd464.png)
 
 ### 3.9 [环形图](https://www.zhihu.com/search?q=%E7%8E%AF%E5%BD%A2%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A674827776%7D)
 

@@ -20,7 +20,6 @@
 
 **v0** 是由 [**Vercel**](https://link.juejin.cn?target=https%3A%2F%2Fvercel.com%2F) 提供的一款基于云端的 AI 驱动前端开发工具，专注于高效的 UI 原型设计。它通过集成设计工具和 AI 自动化功能，旨在帮助开发者快速构建前端应用，并极大地简化 UI 设计和原型开发的过程。
 
-![](img/d4e50a9bd7b6096ee458ca1f8ae0d592.png)
 
 #### 功能
 

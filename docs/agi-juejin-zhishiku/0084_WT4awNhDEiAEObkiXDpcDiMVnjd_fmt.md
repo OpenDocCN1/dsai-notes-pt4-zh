@@ -203,7 +203,6 @@
 
 ![](img/9ddf66f5ba7bc0284bc8f7b12b8de994.png)
 
-![](img/e108c4b4f3a36ee7dfdda26641e77b35.png)
 
 3. 证明 神经网络 训练的第一阶段的交互变化动态过程。
 

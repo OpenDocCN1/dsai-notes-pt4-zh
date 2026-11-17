@@ -18,7 +18,6 @@
 
 🔗 h[ttps://www.buymeacoffee.com/c](https://www.buymeacoffee.com/chatswithcs/e/112532)hatswithcs/e/112532
 
-![](img/95b1a0ca3ae886a734e641785c64afb8.png)
 
 1.  Oracle
 
@@ -42,7 +41,6 @@
 
 🔗 https://webapi.ai
 
-![](img/186ff785c09ecf9309cdf3f03efcb3a6.png)
 
 1.  Text GPT
 
@@ -130,7 +128,6 @@
 
 🔗 https://www.kanyegenerator.com
 
-![](img/60867d0769a6a98a09d4dabcfb059bef.png)
 
 1.  Chai
 

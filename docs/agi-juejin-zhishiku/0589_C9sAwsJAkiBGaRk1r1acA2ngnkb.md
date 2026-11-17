@@ -32,7 +32,6 @@
 
 +   选择 “Go 应用程序” 模板（如果提供的话）。
 
-![](img/74eb3fc00e108fe356f87e54ab42ccee.png)
 
 +   **配置项目**：
 
@@ -42,7 +41,6 @@
 
 +   确保 Go SDK 已正确配置。
 
-![](img/704492489309137195f0b89481b03199.png)
 
 +   **完成项目初始化**：
 
@@ -69,7 +67,6 @@ package mainimport (    &quot;fmt&quot;    &quot;net/http&quot;)func handler(w h
 
 +   在 Trae 菜单中选择 “构建” > “构建项目”。
 
-![](img/317be150ec8d0222d9852cdfef7efe22.png)
 
 +   **运行项目**：
 
@@ -77,7 +74,6 @@ package mainimport (    &quot;fmt&quot;    &quot;net/http&quot;)func handler(w h
 
 +   确保控制台输出显示服务已启动。
 
-![](img/9ce569ac49af99ef87cf07778401a280.png)
 
 +   **测试服务**：
 

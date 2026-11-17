@@ -46,7 +46,6 @@ Gemini 是整个 Google 团队（包括 Google Research 的同事）大规模协
 
 <https://www.youtube.com/embed/jV1vkHv4zq8?enablejsapi=1&origin=https%3A%2F%2Fblog.google&widgetid=1>
 
-![](img/c1baaa5b5cf403fc08bcf655c64c3836.png)
 
 Gemini 简介：我们最大、能力最强的人工智能模型
 
@@ -94,7 +93,6 @@ Gemini 1.0 复杂的多模式推理功能可以帮助理解复杂的书面和视
 
 <https://www.youtube.com/embed/sPiOP_CB54A?enablejsapi=1&origin=https%3A%2F%2Fblog.google&widgetid=2>
 
-![](img/1dc1b0a676c5046813e94d39545254d5.png)
 
 双子座解锁新的科学见解
 

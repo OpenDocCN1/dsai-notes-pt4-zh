@@ -144,7 +144,6 @@ A dynamic, high-energy scene of an Olympic athlete mid-action, captured in a mom
 
 **效果展示 **
 
-![](img/84842b47426743a7ada9d496f8c68ea5.png)
 
 ![](img/cb68c7a179703719a3251a2da568eefa.png)
 

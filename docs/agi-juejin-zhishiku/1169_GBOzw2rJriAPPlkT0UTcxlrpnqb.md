@@ -26,7 +26,6 @@
 
 介绍强化学习的关键实体、交互过程，通过例子强调奖励设计，并且对奖励概念及在 NLP 领域的应用进行了讨论。
 
-![](img/cf7aa77c52eb7e353eac1f40438ac183.png)
 
 [08大模型全栈-强化学习01-RLHF前言传统强化学习 下午2.53.32.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VRd5bLNn5ooP2oxYqNRcn441n3e)
 
@@ -34,7 +33,6 @@
 
 阐述大语言模型中强化学习应用，包括概念、输出、收益、状态、策略区分及举例。
 
-![](img/7b12268f16fc17f2b8f39b1542782a13.png)
 
 [09大模型全栈-强化学习02-RLHF前言LLM强化学习.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IqNnbuFo9o5FzxxfaYjcA2JLndh)
 
@@ -42,7 +40,6 @@
 
 RLHF 模型由四个模型构成，训练流程分为三个阶段。各模型作用明确，有多种损失函数。但也存在算力消耗大、容易崩溃等挑战。
 
-![](img/013da04bc9a831f1c79231e6471473cf.png)
 
 [10大模型全栈-强化学习03-RLHF原理以及流程介绍 下午2.53.32.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YDwsbqKEcobSFBxLVGOcHswCnqe)
 
@@ -50,7 +47,6 @@ RLHF 模型由四个模型构成，训练流程分为三个阶段。各模型作
 
 微软开源的 DeepSpeed Chat 项目，解决大型模型强化学习问题。提出混合引擎等技术，降低内存消耗，提供易用训练代码，实验证明成果并指出不稳定性及建议。
 
-![](img/a3f65cc48729a7a156507102c62fc0e9.png)
 
 [11大模型全栈-强化学习04-RLHF实战-deepspeed-chat实战.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SjsebCxBsoLFp7xUIg5cFqmanyc)
 
@@ -66,7 +62,6 @@ RLHF 模型由四个模型构成，训练流程分为三个阶段。各模型作
 
 探讨强化学习中 DPO 相较 on policy 的优势，包括降低复杂度等，介绍训练流程、数据集、超参数及损失函数与代码。
 
-![](img/69bf29907dea3f2ab910d58c13326bd4.png)
 
 [13大模型全栈-强化学习06-DPO流程、代码以及损失函数介绍.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YvQ2bgjqqorkRdxBQihcSUWenje)
 
@@ -74,7 +69,6 @@ RLHF 模型由四个模型构成，训练流程分为三个阶段。各模型作
 
 介绍 DPO 算法中 DPU 和 PPU 优化目标一致，展开 KL 散度计算与公式推导，讨论奖励模型及 DPO 变体。
 
-![](img/07ff99637314e3d8bc030846fde763a8.png)
 
 [14大模型全栈-强化学习07-DPO原理公式推导 下午2.53.32.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KWaIbQJcSog2Zox7oIrcMqmznfh)
 
@@ -82,7 +76,6 @@ RLHF 模型由四个模型构成，训练流程分为三个阶段。各模型作
 
 介绍 DPO 变体 IPO 和 KTO，IPO 用正则项防过拟合，KTO 创新数据获取与反馈，比较二者实践表现。
 
-![](img/43453e1565ac5d7fa6163b9fdf7e0187.png)
 
 [15大模型全栈-强化学习08-DPO变体：IPO、KTO：无需偏好数据实现对齐.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PNvIbLSKGoGu2qxbPXrcHAvInec)
 
@@ -90,7 +83,6 @@ RLHF 模型由四个模型构成，训练流程分为三个阶段。各模型作
 
 讨论强化学习中 TDPO 和 RPO 改进模型，TDPO 控制 token 级 KL 散度，RPO 引入奖励差异性，二者实践效果良好。
 
-![](img/796d59f0f802ae55ea5e7d52d985b019.png)
 
 [16大模型全栈-强化学习09-DPO变体：TDPO：更细粒度控制的DPO；RPO：带有离线奖励的DPO 下午2.53.32.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OnWfbznr0o1dkxxJtX9cCerunpe)
 
@@ -106,7 +98,6 @@ RLHF 模型由四个模型构成，训练流程分为三个阶段。各模型作
 
 阐述数据并行和模型参数并行概念及应用，包括数据分割处理、参数同步更新等，还讨论相关并行策略及在 PyTorch 中的应用。
 
-![](img/0b257342bfd0f41a65bfc474241bcfb2.png)
 
 [18大模型全栈-分布式训练01-数据并行-Ring–Allreduce和PS原理.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AyoSbynQkocuDSxyoQhc2g8dnPg)
 

@@ -86,7 +86,6 @@ Stable Diffusion中的提示词相关性是指输入提示词对生成图像的�
 
 ![](img/6957704e71b0a6997e307e2728de3b1f.png)
 
-![](img/ca0f95a523027a963f8524d676bed0a6.png)
 
 需要注意的是，尽管输出分辨率会影响图像所包含的信息量，然而当直接输出的分辨率较大时，Stable Diffusion可能会尝试将多余的内容填充到图像中。
 
@@ -118,9 +117,7 @@ Stable Diffusion中的提示词相关性是指输入提示词对生成图像的�
 
 重绘幅度（Denoising [strength ](https://www.zhihu.com/search?q=strength&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3137378395%7D)）即降噪强度，表示生成图像与原始输入图像内容变化的程度。低降噪强度[意味着](https://www.zhihu.com/search?q=%E9%98%88%E5%80%BC&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3137378395%7D)主要用于修复原图，而较高的降噪强度表示生成内容与原图差异较大。一般来说， 阈值 约为0.7，超过0.7基本与原图无关，低于0.3则只会做一些微小的调整改变。
 
-![](img/c38154d72097ea97c636a1d434e98269.png)
 
-![](img/0889b89ffd2c6271d8e3c9b08a9d056b.png)
 
 [提升倍率 ](https://www.zhihu.com/search?q=%E6%8F%90%E5%8D%87%E5%80%8D%E7%8E%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3137378395%7D)（[Upsca](https://www.zhihu.com/search?q=%E6%94%BE%E5%A4%A7%E5%80%8D%E7%8E%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3137378395%7D)le by）是指最终图像的分辨率与原图的比值。例如，如果默认生成的图像分辨率为512×512，设定 放大倍率 为2倍，那么最终生成的图像分辨率将会是1024×1024。
 
@@ -166,7 +163,6 @@ Stable Diffusion中的提示词相关性是指输入提示词对生成图像的�
 
 如果是第一次使用，可以点击Reset进行重置，系统会自动计算[出最适合](https://www.zhihu.com/search?q=%E8%A7%A3%E7%A0%81%E5%99%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3137378395%7D)当前电脑配置的编码器区块大小和 解码器 区块大小。其他参数不需要调整。然后点击生成即可。
 
-![](img/08891bded274663e6546719c79702cb9.png)
 
 ![](img/03912a474c8250a44e9ac273d715dff1.png)
 

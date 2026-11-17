@@ -57,7 +57,6 @@ function generateModalComponent() {
 }
 ```
 
-![](img/a5d176f50740d56ba19d815624731985.png)
 
 #### 2. 代码优化系统
 
@@ -142,7 +141,6 @@ function initTheme() {
 
 +   智能推荐最佳实践和设计模式
 
-![](img/d6448c41488b64ea509a8b44a8379259.png)
 
 #### 2. 代码重构优化
 
@@ -265,9 +263,7 @@ Trae.ai 编译器代表了 AI 辅助开发的未来方向：
 
 ![](img/e044bdb5e52890f7e465efe30e1ace9e.png)
 
-![](img/d2850c6d4b50dc051f00b619f86ba632.png)
 
-![](img/0ac8efc1074a248339042a16400f0097.png)
 
 ![](img/a1715a352d0748924e2536dcffccc60a.png)
 

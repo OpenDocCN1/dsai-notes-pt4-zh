@@ -79,9 +79,7 @@ graph.add_graph_documents(
 
 可以看到，每种类型的节点除了自身的节点类型之外，多了一个__Entity__标签。
 
-![](img/eb4e44deb9dd401db8b4a028678da06e.png)
 
-![](img/258bf2865c2ad04249c6940d706c4d0b.png)
 
 同时，节点通过MENTIONS关系与源文档连接。
 

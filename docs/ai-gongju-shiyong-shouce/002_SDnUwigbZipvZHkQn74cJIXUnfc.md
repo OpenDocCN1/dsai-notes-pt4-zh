@@ -122,7 +122,6 @@ DeepSeek-r1本地部署【Windows】
 
 ![](img/8274b7303409754307af6b1e0e0da017.png)
 
-![](img/7d9fc56cccc5f68ea5507e11fa2f1009.png)
 
 ![](img/074460f9174e2b0df492285b15f98202.png)
 
@@ -142,11 +141,8 @@ DeepSeek-r1本地部署【Windows】
 
 ![](img/97b626f2176da4e54276fc2de42f32ee.png)
 
-![](img/e6d2a7db26a42b7379b188c69c68fde8.png)
 
-![](img/1f61bd58459aefd11da6690216127d0b.png)
 
-![](img/a2688263bcc1ad62679d6c30a51209c9.png)
 
 ![](img/9ef1904ed2920cc31c88f8830c0ae423.png)
 
@@ -199,9 +195,7 @@ DeepSeek-r1本地部署【Windows】
 
 ③卸载模型，输入“ollama rm deepseek-r1:8b”回车，提示“deleted 'deepseek-r1:8b'”表示删除成功。
 
-![](img/8e43addc3da35289d26600778368f340.png)
 
-![](img/2dce6540befe91952fb3e4b5648f678f.png)
 
 ![](img/46e222269a6e5dd88879c88369081172.png)
 

@@ -22,7 +22,6 @@ trae下载地址： [www.trae.ai](https://www.trae.ai/?utm_source=juejin&utm_med
 
 可以看到trae和cursor的布局基本没有差别
 
-![](img/9a3a9e3b32ae48f232407ba7adb81cee.png)
 
 Trae里的Builder功能是一个能从0到1开发完整项目的工具，和Cursor的Composer功能相同，能够理解多个文件，并且自动生成文件和代码
 
@@ -38,7 +37,6 @@ Trae里的Builder功能是一个能从0到1开发完整项目的工具，和Curs
 
 > 使用html、css、js开发一个春节倒计时网站，功能要求：例如明年是2026年，网站上就要显示距离2026年马年春晚还有 多少天多少小时多少分多少main，帮我生成可运行的代码
 
-![](img/c6ec7826504bcb8d35f912ae98ac70d4.png)
 
 虽然我写有错别字，但是trae依然能够理解我的意思，并把功能实现。果然，Claude-3.5-sonnet确实强大👍
 
@@ -52,7 +50,6 @@ trae能够根据我的描述生成对应的文件和代码，选择全部接受�
 
 > 把html和js分开写到不同的文件里，并添加注释增加代码的可读性
 
-![](img/f168b7ad47acf44ce49aabbd070ed7a4.png)
 
 现在代码和功能果然变得清晰明了了起来
 

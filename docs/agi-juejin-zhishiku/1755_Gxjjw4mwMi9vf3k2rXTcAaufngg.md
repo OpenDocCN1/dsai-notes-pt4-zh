@@ -46,19 +46,14 @@ FaceChain-Fact可以根据一张照片，生成不同角度的写真照片。我
 
 来看看我用这个新功能生成的效果把，可以看到生成的图片各自有各自的特点，不再是千篇一律的脸，稍微进行PS修改就可以用在电商图片中。
 
-![](img/e602a3f4d92fb250879a6422f85fc242.png)
 
-![](img/6ab3a94f52b281f1c421a6bb8edb9528.png)
 
-![](img/39894ee76b3ad5298134843c53f9f849.png)
 
-![](img/86f5348cbf3905ac65ce432eb7bd9966.png)
 
 ![](img/e2ddb615e95b74fa7353905f1206b67d.png)
 
 ![](img/828ba97b0de1f5b98410ba876a7676e4.png)
 
-![](img/b1b27ff956cbd7ed540f2edf09ff0177.png)
 
 ![](img/d090e645938e0445a705ab660dc0191e.png)
 
@@ -68,9 +63,7 @@ FaceChain-Fact可以根据一张照片，生成不同角度的写真照片。我
 
 ![](img/17848841a2986137c0b64e7b3359733c.png)
 
-![](img/67aac4e6ce094da815f334c72b8ecb94.png)
 
-![](img/8328f8e4b5fe1f557b900ec36a4c1c21.png)
 
 ![](img/aa32ea91b6fac49410ce5be595d791ce.png)
 

@@ -58,7 +58,6 @@
 
 +
 
-![](img/5c755cc14ceeeaf29892e346e9d0d6a2.png)
 
 [协同办公Al Agent市场厂商评估报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FdUQblrn0oParOxkkcac7EZjnmf)
 
@@ -106,7 +105,6 @@
 
 [中信建投-计算机行业AIGC应用系列 （四）：重塑交互体验，看好虚拟人、教育-230324-报告汇(vicsdf.com).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S24BbTz9loG733xXF5dcgJmUnsd)
 
-![](img/219e631432a736495e764384f04fd5eb.png)
 
 [【腾讯研究院】好看的皮囊到有趣的灵魂-数字人产业发展趋势报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UkwdbKcNjo57dXx288hcG3sfnHU)
 

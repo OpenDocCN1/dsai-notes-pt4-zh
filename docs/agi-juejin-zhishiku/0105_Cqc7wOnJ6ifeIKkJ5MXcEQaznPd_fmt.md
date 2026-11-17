@@ -106,23 +106,18 @@
 
 数位扩展，
 
-![](img/5a6905cca047f1c070ea1fbca130c117.png)
 
 整数 - 小数 - 分数转换，
 
-![](img/d915371030a8310d76e4c27649424e51.png)
 
 运算扩充，
 
-![](img/27ea878ff1d678a79e049aa6bdefd69f.png)
 
 运算逆转，
 
-![](img/b5873a54a63c696709e6fd4e90d1b5e9.png)
 
 问题理解，
 
-![](img/2613ce0b3ed8abd726fde7023c3d5323.png)
 
 干扰项插入，
 
