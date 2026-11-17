@@ -1,0 +1,92 @@
+
+# 【24年9月】智能时代 The Intelligence Age
+
+> 来源：[https://agispace.feishu.cn/docx/OU1MdsFrpo60zPx7B50ciOhXneg](https://agispace.feishu.cn/docx/OU1MdsFrpo60zPx7B50ciOhXneg)
+
+## The Intelligence Age
+
+**原文Deepl翻译版:**
+
+在未来的几十年里,我们将能够做到一些对我们的祖父母来说像是魔法的事情。
+
+这种现象并不新鲜,但会加速发展。随着时间的推移,人们的能力已经大大增强;我们现在能够完成的事情,我们的前辈们认为是不可能的。
+
+我们能力增强的原因不是基因改变,而是得益于比我们任何一个人都更聪明、更有能力的社会基础设施;从某种重要意义上说,社会本身就是一种高级智能。我们的祖辈以及更早的几代人创造并成就了伟大的事业。他们为人类进步奠定了基础,我们所有人都在其中受益。人工智能将为人们提供解决棘手问题的工具,帮助我们为人类进步添砖加瓦,这是单凭我们自身无法完成的。人类进步的故事将继续上演,我们的孩子将能够做到我们做不到的事情。
+
+虽然不会一蹴而就,但我们很快就能与人工智能合作,完成在没有人工智能的情况下无法完成的任务;最终,我们每个人都能拥有一支由不同领域的虚拟专家组成的个人人工智能团队,共同创造我们所能想象的一切。我们的孩子将拥有虚拟导师,他们能够以任何语言、以任何节奏提供任何学科的个性化指导。我们可以想象出类似的创意,比如更好的医疗保健、能够创建人们所能想象的任何类型的软件等等。
+
+凭借这些新能力,我们可以共享繁荣,达到今天难以想象的程度;未来,每个人的生活都会比现在更好。仅靠富裕并不一定能让人幸福——有很多悲惨的富人——但它可以有意义地改善世界各地人们的生活。
+
+人类历史的发展可以这样狭义地理解:经过数千年的科学发现和技术进步,我们终于弄明白了如何熔化沙子,添加一些杂质,以惊人的精度将其以极小的规模排列到计算机芯片上,通过芯片传输能量,最终形成能够创造越来越强大的人工智能的系统。
+
+这可能是迄今为止历史上最重要的事实。我们有可能在几千天后(!)拥有超级智能;可能需要更长的时间,但我相信我们终将实现这一目标。
+
+我们是如何走到繁荣的下一个飞跃的门槛的?
+
+用三个字来概括:深度学习奏效了。
+
+用15个字来概括:深度学习奏效了,随着规模扩大而变得越来越好,我们投入了越来越多的资源。
+
+事实就是这样,人类发现了一种算法,它能够真正学习任何数据分布(或者说是产生任何数据分布的潜在“规则”)。令人震惊的是,可用的计算和数据越多,它就越能帮助人们解决难题。我发现,无论我花多少时间思考这个问题,我永远无法真正理解它的重要性。
+
+虽然还有很多细节问题需要解决,但被任何特定的挑战分散注意力都是错误的。深度学习是可行的,我们也会解决剩余的问题。关于接下来会发生什么,我们可以畅想很多,但最主要的一点是人工智能会随着规模扩大而变得更好,从而为全世界人民的生活带来有意义的改善。
+
+人工智能模型很快将成为自主个人助理,代表我们执行特定任务,例如协调医疗护理。在未来的某个时刻,人工智能系统将变得非常强大,帮助我们开发更好的下一代系统,并推动全面科学进步。
+
+技术将我们带离石器时代,进入农业时代,再到工业时代。从今以后,计算、能源和人类意志将铺就通向智能时代的道路。
+
+如果我们希望尽可能让更多人掌握人工智能,就需要降低计算成本,并使其变得丰富(这需要大量的能源和芯片)。如果我们不建设足够的基础设施,人工智能将成为一种非常有限的资源,人们会为争夺它而战,它也将成为富人的专属工具。
+
+我们需要明智而坚定地采取行动。智能时代的到来是一个重大发展,伴随着非常复杂且风险极高的挑战。这并非完全乐观的故事,但好处是如此巨大,为了我们自己,也为了未来,我们必须想办法驾驭眼前的风险。
+
+我相信未来将无比光明,现在写未来,谁也说不准;智能时代的一个显著特征将是巨大的繁荣。
+
+虽然这一切会逐步实现,但令人惊叹的成就——解决气候问题、建立太空殖民地以及发现所有物理学——最终将成为司空见惯的事情。凭借近乎无限的智慧和充沛的精力——产生伟大创意的能力以及将其付诸实践的能力——我们可以做很多事情。
+
+正如我们在其他技术领域看到的那样,人工智能也会带来负面影响,我们需要从现在开始努力,在最大限度地发挥人工智能优势的同时,将其危害降到最低。举个例子,我们预计这项技术在未来几年内会对劳动力市场产生重大影响(有利有弊),但大多数工作的变化速度会比大多数人想象的要慢,我不担心我们会无事可做(即使这些工作在我们今天看来并不像“真正的工作”)。人们天生就有创造和互相帮助的欲望,人工智能将让我们以前所未有的方式提升自身能力。作为一个社会,我们将回到一个不断扩张的世界,并再次专注于玩正和博弈。
+
+我们今天从事的许多工作,在几百年前的人看来都是微不足道的浪费时间,但没有人会后悔过去,希望自己是个点灯人。如果一个点灯人能看到今天的世界,他会觉得周围的一切繁荣都是难以想象的。如果我们能快进一百年的时间,周围的一切繁荣也会让人难以想象。
+
+**原文：**
+
+In the next couple of decades, we will be able to do things that would have seemed like magic to our grandparents.
+
+This phenomenon is not new, but it will be newly accelerated. People have become dramatically more capable over time; we can already accomplish things now that our predecessors would have believed to be impossible.
+
+We are more capable not because of genetic change, but because we benefit from the infrastructure of society being way smarter and more capable than any one of us; in an important sense, society itself is a form of advanced intelligence. Our grandparents – and the generations that came before them – built and achieved great things. They contributed to the scaffolding of human progress that we all benefit from. AI will give people tools to solve hard problems and help us add new struts to that scaffolding that we couldn’t have figured out on our own. The story of progress will continue, and our children will be able to do things we can’t.
+
+It won’t happen all at once, but we’ll soon be able to work with AI that helps us accomplish much more than we ever could without AI; eventually we can each have a personal AI team, full of virtual experts in different areas, working together to create almost anything we can imagine. Our children will have virtual tutors who can provide personalized instruction in any subject, in any language, and at whatever pace they need. We can imagine similar ideas for better healthcare, the ability to create any kind of software someone can imagine, and much more.
+
+With these new abilities, we can have shared prosperity to a degree that seems unimaginable today; in the future, everyone’s lives can be better than anyone’s life is now. Prosperity alone doesn’t necessarily make people happy – there are plenty of miserable rich people – but it would meaningfully improve the lives of people around the world.
+
+Here is one narrow way to look at human history: after thousands of years of compounding scientific discovery and technological progress, we have figured out how to melt sand, add some impurities, arrange it with astonishing precision at extraordinarily tiny scale into computer chips, run energy through it, and end up with systems capable of creating increasingly capable artificial intelligence.
+
+This may turn out to be the most consequential fact about all of history so far. It is possible that we will have superintelligence in a few thousand days (!); it may take longer, but I’m confident we’ll get there.
+
+How did we get to the doorstep of the next leap in prosperity?
+
+In three words: deep learning worked.
+
+In 15 words: deep learning worked, got predictably better with scale, and we dedicated increasing resources to it.
+
+That’s really it; humanity discovered an algorithm that could really, truly learn any distribution of data (or really, the underlying “rules” that produce any distribution of data). To a shocking degree of precision, the more compute and data available, the better it gets at helping people solve hard problems. I find that no matter how much time I spend thinking about this, I can never really internalize how consequential it is.
+
+There are a lot of details we still have to figure out, but it’s a mistake to get distracted by any particular challenge. Deep learning works, and we will solve the remaining problems. We can say a lot of things about what may happen next, but the main one is that AI is going to get better with scale, and that will lead to meaningful improvements to the lives of people around the world.
+
+AI models will soon serve as autonomous personal assistants who carry out specific tasks on our behalf like coordinating medical care on your behalf. At some point further down the road, AI systems are going to get so good that they help us make better next-generation systems and make scientific progress across the board.
+
+Technology brought us from the Stone Age to the Agricultural Age and then to the Industrial Age. From here, the path to the Intelligence Age is paved with compute, energy, and human will.
+
+If we want to put AI into the hands of as many people as possible, we need to drive down the cost of compute and make it abundant (which requires lots of energy and chips). If we don’t build enough infrastructure, AI will be a very limited resource that wars get fought over and that becomes mostly a tool for rich people.
+
+We need to act wisely but with conviction. The dawn of the Intelligence Age is a momentous development with very complex and extremely high-stakes challenges. It will not be an entirely positive story, but the upside is so tremendous that we owe it to ourselves, and the future, to figure out how to navigate the risks in front of us.
+
+I believe the future is going to be so bright that no one can do it justice by trying to write about it now; a defining characteristic of the Intelligence Age will be massive prosperity.
+
+Although it will happen incrementally, astounding triumphs – fixing the climate, establishing a space colony, and the discovery of all of physics – will eventually become commonplace. With nearly-limitless intelligence and abundant energy – the ability to generate great ideas, and the ability to make them happen – we can do quite a lot.
+
+
+
+As we have seen with other technologies, there will also be downsides, and we need to start working now to maximize AI’s benefits while minimizing its harms. As one example, we expect that this technology can cause a significant change in labor markets (good and bad) in the coming years, but most jobs will change more slowly than most people think, and I have no fear that we’ll run out of things to do (even if they don’t look like “real jobs” to us today). People have an innate desire to create and to be useful to each other, and AI will allow us to amplify our own abilities like never before. As a society, we will be back in an expanding world, and we can again focus on playing positive-sum games.
+
+Many of the jobs we do today would have looked like trifling wastes of time to people a few hundred years ago, but nobody is looking back at the past, wishing they were a lamplighter. If a lamplighter could see the world today, he would think the prosperity all around him was unimaginable. And if we could fast-forward a hundred years from today, the prosperity all around us would feel just as unimaginable.
