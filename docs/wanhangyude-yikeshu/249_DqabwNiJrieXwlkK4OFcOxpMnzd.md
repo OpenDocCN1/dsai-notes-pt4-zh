@@ -38,7 +38,6 @@
 
 ## 特看TabCut [https://www.tabcut.com]
 
-![](img/046c8c18beedfe265858322bd76d7255.png)
 
 创始团队阿里出身，原淘宝鲁班视频团队，公司在杭州。
 

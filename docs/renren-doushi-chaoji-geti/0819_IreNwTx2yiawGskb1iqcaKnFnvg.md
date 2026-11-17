@@ -16,7 +16,6 @@
 
 ![](img/195dd7c699f071f86175bb25b6bbfe87.png)
 
-![](img/b1bc9c0e7fe5344f49b1043ca11f97b4.png)
 
 **那就是靠信息差赚钱！ **
 

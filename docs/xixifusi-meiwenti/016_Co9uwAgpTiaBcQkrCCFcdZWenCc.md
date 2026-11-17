@@ -152,31 +152,20 @@ AI 绘画的基本步骤包括：
 
 +   sref是风格一致性，同样的也是 -- sref
 
-![](img/abf5bee71688c132f86e5612b869bda6.png)
 
-![](img/ba240491ed07155164910185661bd548.png)
 
-![](img/ca9392b31de6f80ae0bd3211e60ff3f6.png)
 
-![](img/23bf80e2ade038af0dfd8203d18b18f2.png)
 
-![](img/69b6b6bd6964865e12f44da51f464962.png)
 
-![](img/c82a28bbccac1024dfd2450b2bb2d862.png)
 
 ![](img/87595f2d099895718d051d7bc9b38146.png)
 
 ![](img/c18fe963fd05775aa070540e93fd12c5.png)
 
-![](img/9de3a3642bf36f7bf0bd3f51ed4c02d4.png)
 
-![](img/98ef1ba18888e60b2f8d6d452f9e9aa2.png)
 
-![](img/0278d56c15e4c2aecb6fcd0d9f1ef639.png)
 
-![](img/5936eb16648323b8c041cae44dba7378.png)
 
-![](img/942b221135722531d36d20cb8fb997d0.png)
 
 ![](img/68769e4e71350593b7ac1d5523c901aa.png)
 
@@ -284,7 +273,6 @@ Tiny, Cute, small, An astronaut in space with distant planets in the background,
 
 微小，可爱，小，宇航员在太空中与遥远的行星为背景，微缩，立体，正投影视图，电影照明，Gediminas pranckeviius, Giuseppe Arcimboldo，藤田五郎，复杂，Hyp er 细节，4k
 
-![](img/ae07eea5dfb146f2211f0a65104a4c42.png)
 
 超写实主义机器人
 

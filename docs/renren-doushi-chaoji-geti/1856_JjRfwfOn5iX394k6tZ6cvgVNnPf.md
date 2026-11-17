@@ -182,7 +182,6 @@ Reference 是一组新的预处理器，可让您生成与参考图像相似的�
 
 下面是一个例子
 
-![](img/883f2c478a4ca33299baab2371ad8062.png)
 
 使用 CLIP 询问器猜测提示。
 
@@ -198,11 +197,9 @@ Model: Protogen v2.2 型号：Protogen v2.2
 
 [**Reference adain**](https://github.com/Mikubill/sd-webui-controlnet/discussions/1280)**: **
 
-![](img/446e35210533a34ee3b676a61280b666.png)
 
 ##### Reference only
 
-![](img/3333b4ae32e9cbc795953828493f33c1.png)
 
 ##### Reference adain
 
@@ -292,7 +289,6 @@ Reference Image: 参考图片：
 
 ![](img/8d5ae599c47803759e51d72aeb54fd63.png)
 
-![](img/769e37fa5376068a34b2e9e59d27e8b6.png)
 
 Prompt and negative prompt:
 
@@ -370,7 +366,6 @@ M-LSD（Mobile Line Segment Detection）是一种直线**检测器。它对于�
 
 ![](img/48109882e7b8d58aa2a130c423e50c1b.png)
 
-![](img/b4411d06e707b257a479e47b31c509cb.png)
 
 ### Normal maps 法线贴图
 
@@ -394,15 +389,12 @@ Normal Midas ：
 
 与 Midas 深度贴图一样，Midas 法线贴图非常适合将主体与背景隔离开来。
 
-![](img/5cb027799c725fdd0d59e255bdbf2dd1.png)
 
-![](img/78b6914b19ecc46980c86bdcb8aa7572.png)
 
 #### Normal Bae
 
 法线贴图倾向于在背景和前景中渲染细节。
 
-![](img/59ddeda208b7961cd9c78f3512377c87.png)
 
 ![](img/9d4c59582eaa6f0d4230e245a3a97aa6.png)
 
@@ -450,7 +442,6 @@ Pidinet 倾向于生成细节很少的粗线条。这对于复制没有精细细
 
 ![](img/511ea0a096416a5094a9eb0aea31cd84.png)
 
-![](img/af759bd03ae21015389e8f4efe973339.png)
 
 建筑物、天空、树木、人和人行道都标有不同的预定义颜色。
 
@@ -527,7 +518,6 @@ Input image:
 
 （1）下图是 ControlNet Shuffle 预处理器和 Shuffle 模型（与上一节提示相同）。配色方案大致遵循参考图像。
 
-![](img/6dcfa425cc0f409a2f9e93be513d8e35.png)
 
 （2）下图仅适用于 ControlNet Shuffle 模型（预处理器：无）。构图更接近原作。配色方案类似于洗牌。
 
@@ -581,7 +571,6 @@ T2I 适配器 – CLIP 视觉：
 
 > sci-fi girl 科幻女孩
 
-![](img/042ef7344ca29a40a778d74623fe46e4.png)
 
 ![](img/4a4ba91028160d646ffe5a173d50562d.png)
 
@@ -611,11 +600,9 @@ Negative prompt 提示否定
 
 我有这张图片，想通过修复来重新生成脸部。
 
-![](img/770e2d185faec383e3cde10a9fdba9bb.png)
 
 如果我仅用高去噪强度（> 0.4）修复面部，结果可能会全局不一致。下面是去噪强度为 1 的未绘制图像。
 
-![](img/fb12f49345900b79be9672c1761343c2.png)
 
 ![](img/75568200123c0ffad2564832a2879685.png)
 
@@ -651,7 +638,6 @@ Model: ControlNet  型号：控制网
 
 现在我得到了与全局图像一致的新面孔，即使在最大去噪强度 (1) 下也是如此！
 
-![](img/5f58aaeced22fd44c0253a917db0b40e.png)
 
 ![](img/732e3ccbff79cb3b1051f529e74f099f.png)
 
@@ -703,7 +689,6 @@ Preprocessor：预处理器（研究文章中称为注释器），用于对输�
 
 我会用下图来说明控制权重的效果。这是一个女孩坐下的图像。
 
-![](img/164b0722a4adb7f75ded65e4f293b2ce.png)
 
 但在提示中，我会要求生成一个站着的女人。
 
@@ -719,19 +704,15 @@ The following images are generated using ControlNet OpenPose preprocessor and wi
 
 以下图像是使用 ControlNet OpenPose 预处理器和 OpenPose 模型生成的。
 
-![](img/77d57803ae0020cfc40180a2d417aa5a.png)
 
 Weight 1
 
-![](img/61242f328518131326adaba7801f1c58.png)
 
 Weight 0.3
 
-![](img/a174db0ff9f91da5d4193da221ba1a8d.png)
 
 Weight 1
 
-![](img/f5821b96f28917d10cbb87bbd3d878e5.png)
 
 Weight 0.1
 
@@ -747,15 +728,12 @@ Ending ControlNet step: The step ControlNet ends. 1 means the last step.
 
 让我们将开始步骤固定为 0，并更改结束 ControlNet 步骤以查看会发生什么
 
-![](img/753ae70ae58fe0ca682c5e48b9aa2ced.png)
 
 Ending ControlNet step 1
 
-![](img/66b830e8ea89da0d7b6c23ab083296ab.png)
 
 Ending ControlNet step 0.2
 
-![](img/668fb55113a86bdc3af5138370510567.png)
 
 Ending ControlNet step 0.3
 
@@ -909,7 +887,6 @@ ControlNet 1 的设置：
 
 最终结果：
 
-![](img/a9352fcffa7d54ef192905e77127e529.png)
 
 ![](img/08d27610dc0d0d39e834330a0b877247.png)
 
@@ -1109,7 +1086,6 @@ Step 3: Press Preview. Take a screenshot of the model. You should get an image l
 
 下面是使用 1.5 模型和 DreamShaper 模型生成的一些图像。在所有情况下都很好地复制了姿势。
 
-![](img/d609144992f2ea4b1a3b5beef72562d9.png)
 
 ![](img/fe9bc768c097388f85f06bcfa97ebc0a.png)
 
@@ -1139,9 +1115,7 @@ Below are a few design ideas generated.
 
 下面是生成的一些设计思路。
 
-![](img/50b2d2b4bcfc4cd859777a907b837157.png)
 
-![](img/a1a8686a9d663d771324610c94e2fb16.png)
 
 或者可以使用深度模型。它将强调保留深度信息而不是直线。
 
@@ -1153,7 +1127,6 @@ Below are a few design ideas generated.
 
 生成的图像：
 
-![](img/59263fa3d1ed8198d1f18479eec0ed5f.png)
 
 ![](img/008965725f9ba087b2f7cb06e9250ea3.png)
 

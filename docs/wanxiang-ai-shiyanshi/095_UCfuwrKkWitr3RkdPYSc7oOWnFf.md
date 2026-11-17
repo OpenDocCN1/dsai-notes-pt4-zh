@@ -30,7 +30,6 @@
 
 ![](img/183948038f1a8b15bd4d24afe891b1d2.png)
 
-![](img/92088ffbe822dbdb43607d14bef86112.png)
 
 ![](img/cea0bb8c3075e49df1c802440bae535d.png)
 
@@ -46,7 +45,6 @@
 
 ![](img/7e11dec2a7349314a7e4e9c736c676a0.png)
 
-![](img/451813a957bb08bfb3c8a8828bca0e3e.png)
 
 ![](img/b1b36006cb8c0412a16ed315cc55cc24.png)
 

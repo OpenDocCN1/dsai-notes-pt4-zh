@@ -524,7 +524,6 @@ gpt服务目前有很多代理，也有很多免费服务。同样，在koishi�
 
 然后在qq中，发送暗号 “早苗on”，即可启动机器人服务
 
-![](img/96d081c1da0f00bcb1cf9288f658d196.png)
 
 **早苗官方帮助文档，**yuque.com/km57bt/hlhnxg/
 

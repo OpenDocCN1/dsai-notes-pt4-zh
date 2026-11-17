@@ -2162,7 +2162,6 @@ OpenAI为ChatGPT推出多项办公新功能，实现与Google Drive、Dropbox等
 
 申请内测地址：https://pro.diffusion.studio/
 
-![](img/f8b8f8d08b5547e24d501479ff41bd8a.png)
 
 [6388482258460408546784168.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xps7bE65joGiTOxqskVcykp5n7o)
 
@@ -2484,11 +2483,9 @@ Google据称计划终止与Scale AI价值2亿美元的合作合约，微软和Op
 
 TikTok推出三项AI广告视频生成工具，包括“图转视频”、“文转视频”和“数字人展示产品”，大幅提升品牌自动化创意效率。所有AI内容将被明确标注，确保内容透明和安全。TikTok还宣布与Adobe、WPP展开合作，推动工具在营销生态中的集成。
 
-![](img/d299fef926b5f16f391420073fcbf456.png)
 
 [e9822725e703481c2d134af11a4c2140.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NBKabDSXko1L7mxsQZTcfptyn3b)
 
-![](img/91c38d3ca43165ae346f5f5086789da5.png)
 
 [fbee03d099bb8d16fff5f1b3db92b6cd.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SW5Ybmj1toOHjBxuSIQcZjn7nWh)
 
@@ -2544,7 +2541,6 @@ OpenAI发布了一款结合计算代理与Playwright的自动化前端测试AI�
 
 [2aa3b2514a0267a6e12b289f769829b7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VDrPbR8K5o66zix7UNNc63ewnCf)
 
-![](img/2dc289cb2d36d6d5e0b2abdda02be2f7.png)
 
 ![](img/091c8f50ba0bb167819ccf6e77acb35b.png)
 
@@ -2552,7 +2548,6 @@ OpenAI发布了一款结合计算代理与Playwright的自动化前端测试AI�
 
 [abf5dbeb2108d4d115d0f4a58859bf30.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xs5db6pdjoH0bwxLOacc9jyan7g)
 
-![](img/e69c719548ab071f692570b4e91d877b.png)
 
 ![](img/94fadf981a3d7d4a19a33ef534b2c58e.png)
 

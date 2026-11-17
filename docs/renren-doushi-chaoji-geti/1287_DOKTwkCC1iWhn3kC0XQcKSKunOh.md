@@ -8,7 +8,6 @@
 
 ZelinAI ZelinAI 2023-08-24 17:00 发表于 北京
 
-![](img/54ecb3133ebfedccc51e422619cd0c3c.png)
 
 ![](img/28a9702febf450e0f2d337a80bafd0d6.png)
 
@@ -118,7 +117,6 @@ II. 用户填写输入内容中的变量。
 
 [https://zelinai.com/s/a2](https://zelinai.com/s/a2kAMCitMU4j9o8Yf4e2KC)kAMCitMU4j9o8Yf4e2KC
 
-![](img/8e748bde92a9bc82786222b1e03f54b3.png)
 
 **绘图应用-变量示例：**
 

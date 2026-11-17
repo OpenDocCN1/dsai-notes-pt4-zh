@@ -209,13 +209,9 @@ ps：如果不满意这个动态效果，要求高的小伙伴儿，可以尝试
 
 中国风动画、皮克斯，3d中国动画风格，低矮的茅草屋静立溪边，檐角炊烟袅袅，泥墙斑驳爬满青苔。竹影摇曳掩着菜园，篱笆上牵牛花绽放。黄狗趴门槛晒太阳。晨光洒在青石板上，溪水潺潺，一派静谧的田园春日图景。
 
-![](img/4824ab97535f8be2ae263f6a92ceeb0b.png)
 
-![](img/bc640fb5985b225f944c42155b0e309c.png)
 
-![](img/7290f64b3a486ab883b4124ce6f7303f.png)
 
-![](img/d255cfa956b701a13a2e1bc9c018744f.png)
 
 羊毛毡材质，24K超清,浅黄色茅草屋顶低垂，蓝天白云背景，竹篱笆点缀粉色野花，阳光斜照窗棂投影，扁平化线条+柔光滤镜
 
@@ -225,11 +221,9 @@ ps：如果不满意这个动态效果，要求高的小伙伴儿，可以尝试
 
 中国风动画、皮克斯，3d国风动漫风格，清澈溪流茅屋前流淌，溪底鹅卵石清晰可见，两岸艾草与野薄荷齐膝高。远处石板桥垂柳拂水，三只黑鸭纵队游过，尾羽划涟漪。水面倒映蓝天白云，小鱼跃出水面，蝉鸣回荡。画面通透，画面干净，芦苇丛白鹭惊飞。
 
-![](img/5aaf36909b87c94ab522134529ac8461.png)
 
 国风
 
-![](img/04962ef54d7878650215e9fdedf04918.png)
 
 3d
 
@@ -243,19 +237,15 @@ ps：如果不满意这个动态效果，要求高的小伙伴儿，可以尝试
 
 [imageinput_地上鸭子水中游 天上大雁在飞 柳絮芦苇飘飘_2025-03-20 18_17_44 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RkNMbwUK6oyXlMxh0YrcLzAznGg)
 
-![](img/1ff52735e9fd2832b7943f1644ca8f0b.png)
 
 国风
 
-![](img/b295205b5e663ef1c58dc83e74e72d07.png)
 
 3d
 
-![](img/02adaa9a18687d37d18c7c7807a6f650.png)
 
 国风
 
-![](img/09f46d9df1ec6342e55ed7772a6b87c0.png)
 
 3d
 
@@ -271,39 +261,26 @@ ps：如果不满意这个动态效果，要求高的小伙伴儿，可以尝试
 
 中国风动画风格，皮克斯风格，3d中国卡通风格，江南村落清晨，青瓦白墙的低矮茅屋，屋檐挂干辣椒串。院门口枇杷树花瓣飘落，老翁蹲门槛修补箩筐（浅灰粗布褂子 + 山羊胡），老妪喂鸡（藏青斜襟衣 + 围裙绣云纹），五只芦花鸡争食，花蝴蝶绕围裙飞舞。晨雾朦胧，青灰色调中点缀枇杷花暖白，竹篱笆旁艾草摇曳。
 
-![](img/c8a9a671eeebe0e7c231e8f3b018536e.png)
 
-![](img/d6d4e1b3d4c9cd9d31eee62ef40b7d0e.png)
 
-![](img/f2f92ba890875518a237e276cc01bf17.png)
 
-![](img/5716dee3d726f27c0e62d91c8b4b85d6.png)
 
 羊毛毡材质，中国卡通风格，24K超清，青瓦白墙的低矮茅屋，屋檐挂干辣椒串。院门口枇杷树花瓣飘落，老翁蹲门槛修补箩筐，老妪围着围裙喂鸡，3只芦花鸡争食，花蝴蝶绕围裙飞舞。竹篱笆旁艾草摇曳，画面干净简单
 
-![](img/70b9f80d9031a619bc3cbfd07acc8321.png)
 
-![](img/6ffe534e56285c2a2f825ba7787a2355.png)
 
-![](img/6d19544d45989f17f48d7b6e0e20da94.png)
 
-![](img/81eb243d66669ee83514c5f453fad6e6.png)
 
-![](img/73acda97f022afb170050a1ef452b458.png)
 
-![](img/08dcea562f1572ff61ea221a0a13f5d0.png)
 
-![](img/bbbd096a8f842152c099665e6dc41ebc.png)
 
 ![](img/39cf946b4471ebe151eac97e020ed9a3.png)
 
 动画
 
-![](img/8bec81fd33f7e0898422203712416669.png)
 
 [imageinput_皮克斯3d风格，一对村民老夫妇，老头在说话，老婆婆在开心的笑，猫咪在一旁捉蝴蝶，微风吹拂，竹叶飘飘_2025-03-20 18_20_47.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WtyobVX5IoUiMPxTrVVcuJ8unNE)
 
-![](img/dc2ac72cc77321594651ac40741fae8e.png)
 
 [imageinput_老爷爷择菜 鸡在地上觅食啄米 微风徐徐 树叶飘动 辣椒随风轻轻摆动_2025-03-20 14_59_32.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W4tnbXHtcoXeqlx3IXecXnYxn8g)
 
@@ -321,13 +298,9 @@ ps：如果不满意这个动态效果，要求高的小伙伴儿，可以尝试
 
 中国风动画、国风动漫风格，溪东的豆田里，齐腰高的豆苗绿油油一片。40岁左右的男性村民头戴一顶草帽，浓眉大眼，紧握木柄锄头，腰间系着棕色布带，脚穿草鞋，田埂上放着一只粗陶水壶，壶身上画着简单的几何图案，天空中飞过的雁群
 
-![](img/85511d7a1e16ef93837536c5191592b5.png)
 
-![](img/a68eb646d2e47a3a6d02a27dc93d895d.png)
 
-![](img/adf4204150886550ab86e4bf21d6690e.png)
 
-![](img/c3a86a9c67592a152ea20284b9979ea0.png)
 
 ![](img/8074c8f1affdc0c9e6836e11a0790b74.png)
 
@@ -351,17 +324,12 @@ ps：如果不满意这个动态效果，要求高的小伙伴儿，可以尝试
 
 中国风动画、皮克斯风格，3d国风动漫风格，茅屋后院的梧桐树下，一名30岁男性村民盘腿坐在草席上，瘦高个儿，穿浅青色交领上衣，腰间挂着一把小刻刀，穿浅青色交领上衣，腰间挂着一把小刻刀，身旁堆满了竹篾和半成品鸡笼，有2只鸡在旁边啄米，草席边蹲着一只三花猫，正用爪子拨弄掉落的竹片
 
-![](img/1a825a593254af57365376dc049a7e81.png)
 
-![](img/3de7268ef801cf58c90d8331cf630b37.png)
 
-![](img/34d6ca3b8a7e221b008d45e65e287989.png)
 
-![](img/cb4287f4fcdf7165ae3e3bb7e081b785.png)
 
 毛毡
 
-![](img/1052027f5482b6119dfdbc69482c894e.png)
 
 6、**最喜小儿亡赖 溪头卧剥莲蓬**
 
@@ -373,25 +341,16 @@ ps：如果不满意这个动态效果，要求高的小伙伴儿，可以尝试
 
 中国风动画、国风动漫风格，溪头草丛，一名8岁男童正在溪边的草丛里，他双手捧着半个莲蓬，侧坐在青石上，脚趾头沾满泥巴
 
-![](img/ce6a2030b969b26654fc7dc0d0034d71.png)
 
-![](img/f4bd8b0f313868fcf02a45902ad7b8cd.png)
 
-![](img/6a22496d0fe03ccc0e955896fd001ba9.png)
 
-![](img/69774400d7223920fccfca703d69b8f5.png)
 
-![](img/e2a838a650507d6ea78402e44f15cc97.png)
 
-![](img/379e893152ff90c073ec9c2344042292.png)
 
-![](img/092f87e3697bc7745945feed88a3089e.png)
 
 羊毛毡材质，中国卡通风格，24K超清，6岁红衣孩童赤脚奔跑，脚趾沾泥点特效，莲蓬爆开露出彩虹莲子，荷叶瞬间展开动画，画面干净简单
 
-![](img/94d96927283b95db3ae8e42f24250d8d.png)
 
-![](img/58360db917b4709a564b7ed8152c2bc3.png)
 
 ![](img/cba05493c4237dd74070802aef63dc4d.png)
 
@@ -399,11 +358,9 @@ ps：如果不满意这个动态效果，要求高的小伙伴儿，可以尝试
 
 提示词可写可不写
 
-![](img/5d6fc80aba61d10a8c8f99cd877ac9eb.png)
 
 [imageinput_2025-03-19 19_18_48.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GPK6bB8B1ol2QqxL0HVc6eWWnqd)
 
-![](img/a0fc9f1b0eb9c8e38bf8b22863f64f4b.png)
 
 [imageinput_拿着莲蓬在玩儿 脚在水里划水荡悠，开心调皮的表情_2025-03-20 18_02_36.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G6qbbDAMTo6KH7xcr17c83E2nkc)
 

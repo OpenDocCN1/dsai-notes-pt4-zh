@@ -10,7 +10,6 @@
 
 开创了多任务视觉生成的新纪元。Aleph能够对输入视频进行添加、删除、变换物体，生成新视角，并调整风格与光线等多种编辑操作。通过逐帧手动调整遮罩、使用克隆图章工具、色彩校正和噪点匹配等技术，Aleph实现了复杂视频内容的高效精细修改，极大提升了后期制作的灵活性与精准度。
 
-![](img/b01bb4b9c6ab88ace31017ffa006da5b.png)
 
 [twitter-video-1920x1080-video1 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FzPCbegmXo1mpexQAnHcoNGcnif)
 
@@ -46,7 +45,6 @@ runway发布了 Gen-4 References 的更新版本，显著提升了对象一致�
 
 [6388214230764573839831852.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HWscbsVC1ockXcx2TbIc7c7Rnnh)
 
-![](img/cd9f14eeb74664a20269cfde86eebe38.png)
 
 [X2Twitter.com_5i5TpkNLNrTeYcW__1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FmuKbtQIgonzE1xtuBIck1i1nGb)
 
@@ -58,7 +56,6 @@ Runway推出Gen-4 References功能
 
 该功能支持用户通过照片、生成图像、3D模型或自拍，实现人物、场景等元素的一致性生成，用户可轻松将自己或他人置入任意想象场景中，大幅提升创作自由度与个性化表现力。
 
-![](img/69256c616c8217619e1e3265716ec30d.png)
 
 [X2Twitter.com_coenLHVCFVPE_oZ2_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LAvHbykYmoT7gixkSUOcKHy7nNf)
 
@@ -70,11 +67,9 @@ Runway推出Gen-4 Turbo
 
 声称迄今为止最强大的视频生成模型,具备超快的生成速度，能够在30秒内生成一个10秒的视频。
 
-![](img/596702a735e748afa28ebb09e428c2fd.png)
 
 [X2Twitter.com_n-xmUUAhXe1Om4aS_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PcvHblSsOoP0ZhxuFpUcGwi7n3b)
 
-![](img/b94c94bd42f9def754ab90cb5f6d90e3.png)
 
 [00cbf080b152ac4ed94fa58ac6b542e4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XGnzbeTSCounnMxuSZ5csAconDd)
 
@@ -134,7 +129,6 @@ Runway介绍Act-One。一种在第三代 Alpha 中使用单一驱动视频和角
 
 [X2Twitter.com_2EyYj6GjSpT_loQf_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WBNIbuvT3oVqJlxjH8TczDkcn9g)
 
-![](img/3f7d597a80729fb3b6e0675060533a7b.png)
 
 [X2Twitter.com_TcWzpRl3kMfHM4ro_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N9b8bneUeo1xiZxeWgucyds8nne)
 
@@ -190,15 +184,12 @@ Runway介绍Act-One。一种在第三代 Alpha 中使用单一驱动视频和角
 
 runway+eleven labs voice
 
-![](img/1b65639ade947b4d5ac56052ed51c611.png)
 
 [Gen-3 Alpha 1125344391, A beautiful Asian gi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W7XAbKSvDocb1Bx1vTfc262wnOc)
 
-![](img/c8c7341eb8268670b1fe91f0c4524065.png)
 
 [Gen-3 Alpha 2292910583, A giant humanoid mon.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T0FObPcBEon3Y9x6ZOKcuRFUneb)
 
-![](img/df233d456f2bab4ab29995eb23716f2b.png)
 
 [Gen-3 Alpha 3362010646, panda fish is a crea.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OW0mbuyq0o8rvRxBcipcxVwzn80)
 
@@ -206,7 +197,6 @@ runway+eleven labs voice
 
 [Gen-3 Alpha 2661748514, Overhead time-lapse.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UtKQb1cVOoWdFlx2xmzcOdubnch)
 
-![](img/e7e3f8a86c869a9ba3cad13064aa779c.png)
 
 [Gen-3 Alpha 1734007040, A beautiful Asian gi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YDGMbtcNMoUvXmxWinHcALEhnvb)
 
@@ -232,7 +222,6 @@ Act-one更新案例1023👇👇
 
 [X2Twitter.com_iIpfgBtOjxvJnpPL_1296p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CSJ3bKhu1ovL4Exh9Pyc8A8OnYg)
 
-![](img/68d24363f763bbfcb3183e0c37105f8d.png)
 
 [X2Twitter.com_1812953726904115200(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WZJIbegQMo4l4sxzfHEczHBPn8c)
 

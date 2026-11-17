@@ -36,7 +36,6 @@
 
 ![](img/4830ae192a351aa7a8cefc4aa997e779.png)
 
-![](img/6c3bc8a49841b7691435d484b8126f1c.png)
 
 ![](img/18b1d64a10107782e325e1b61240bdf1.png)
 
@@ -736,10 +735,7 @@ https://i.shengcaiyoushu.com/t/BOA7Tzv2
 
 加入赚钱后，一开始是参加其他大佬的组局，到后来慢慢自己上手，围绕财富流、AI、搞钱等主题，作为组局官组织10余场聚会，帮助150多位圈友相互连接，自己也获得超多成长，再次感谢各位圈友线下碰撞带给我的诸多启发！以下是部分聚会合影：
 
-| ![](img/66f54b6e4e35a9695fc94f867a1aeefd.png) | ![](img/fd015b5581c2bf44a933237ad9eb996a.png) | ![](img/376ac769541da17c1a2a617a573717fb.png) |
 | --- | --- | --- |
-| ![](img/e2e265c2e5c7f25413a2226a028cbcf5.png) | ![](img/aa0b5252b9ed50ad1be8e72f07ea696c.png) | ![](img/f154f0ca2ab9cac95209f5065c9533ed.png) |
-| ![](img/f52800b70e613391a4ea27df5a1c1773.png) | ![](img/034323ed6b90dbb4961901a029030922.png) | ![](img/d653e3d8f1240ecd7ee326ebeb190131.png) |
 | ![](img/026205eefccb4f9e7e3df1362ef4df2a.png) | ![](img/e2168ad05725695a3df68cdbc7f6463a.png) | ![](img/2133335d91b39fbf3a58263ece8f2fe5.png) |
 
 ### 1）扩大认知半径

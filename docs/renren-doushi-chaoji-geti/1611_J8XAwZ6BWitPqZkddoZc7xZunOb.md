@@ -4,7 +4,6 @@
 
 先展示一些成品图（对卧室类不感兴趣的朋友也可以只参考思路，欢迎指正~）
 
-![](img/ca76572e6b14e1934e31dbe83fe8bca7.png)
 
 ![](img/04d0477765e2c0ba0e35463a3bec54e1.png)
 
@@ -98,7 +97,6 @@ warm tones（暖色调）
 
 a bed with lights on it by a small window near the ocean，in the style of romantic seascape，y2k aesthetic，festive atmosphere，warmcore，nature-inspired，romantic and nostalgic themes，warm tones.--ar 3:4
 
-![](img/c486f941513ad751818ab98fbb5126c8.png)
 
 #### 尝试2
 
@@ -136,7 +134,6 @@ travel（旅行）
 
 an ocean view bedroom set up at sunset,romantic seascapes,in the style of warmcore,light red and violet,y2k aesthetic,20th century Scandinavian style
 
-![](img/7209c38c6e5e33d42ec0d3c13a450bd7.png)
 
 #### 尝试3
 
@@ -164,7 +161,6 @@ in the style of romantic charm, maximalism（采用浪漫迷人、极致主义�
 
 a bed on a balcony with a view of the ocean,horizons,in the style of dreamy, romanticized cityscapes, festive atmosphere,light red and light amber,luminous skies, cottagepunk,warm color palette
 
-![](img/f76c643e04e2d95096e95fd6b24b778f.png)
 
 ### 词组归类：
 
@@ -260,13 +256,9 @@ seascapes（海景画风格）
 
 ### 各种重组尝试之后生成的成品图：
 
-![](img/f35872c15dbaabe6053bcde56d93a485.png)
 
-![](img/95b2acf5eceea9cdd4233df97ea0564d.png)
 
-![](img/22bf17edd024409202159ed06241988a.png)
 
-![](img/5775dee614923449232af3578c0714a6.png)
 
 ### ChatGPT与MJ搭配使用技巧
 
@@ -304,9 +296,7 @@ A room encoding the sea, an Amazing room, covering the ocean, capturing with bea
 
 ##### 4、成品展示
 
-![](img/ce3189892c3d3329937d6889fd9285cf.png)
 
-![](img/cabedf5bc91f6ada4c68a0b4da7e8feb.png)
 
 ![](img/a2faa09b2edb4885e422497be7039b70.png)
 
@@ -340,11 +330,9 @@ a bed by a small window near the ocean，warm tones，in the style of romantic s
 
 ##### **三次微调（整体咒语不变，另外加上--c 50，也就是**增加混乱度，可以生成不同风格的图。如下）
 
-![](img/e03dd56c712e6261ccb83608cb13fc4a.png)
 
 ![](img/9538bfe5d963c59046269a7882c6a5de.png)
 
-![](img/2dd2c1b0d5fc1e09dac8260bc456d2c4.png)
 
 ![](img/3cee1a48b88ef48cc0d677d9adc57c0c.png)
 
@@ -358,8 +346,6 @@ A room encoding the sea, an Amazing room, covering the ocean, capturing with bea
 
 ![](img/372fc55ccbf53d07e542f0429a572389.png)
 
-![](img/1d66deb42d9cd60079c50bac5acd0781.png)
 
-![](img/a0837d8eaafc4d0f526c9669cabccc01.png)
 
 ![](img/d83dbc8ac475dd969c05bbab8c9e4996.png)

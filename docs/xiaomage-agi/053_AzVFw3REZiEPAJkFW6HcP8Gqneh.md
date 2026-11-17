@@ -8,7 +8,6 @@
 
 众所周知，ChatGPT Plus比普通版更快、更强，能最先体验新功能，但是它是要付费的，很多小伙伴就卡在了付款这个环节。
 
-![](img/60974ce957e3554762f6685a96999e94.png)
 
 ![](img/f8128c14992cef4a63597830434cb5a4.png)
 
@@ -28,7 +27,6 @@ C**hatGP**T Plus在各种任务和项目中有广泛的应用。相比免费版�
 
 > 使用注册的用户名和密码登录ChatGPT官网
 
-![](img/61795343b30cbd105a94a9fc30939b3a.png)
 
 ![](img/5204fec8d7e2f13a992ee7dfd51656b6.png)
 
@@ -38,7 +36,6 @@ C**hatGP**T Plus在各种任务和项目中有广泛的应用。相比免费版�
 
 > 接着点击绿色按钮跳转到银行卡信息填写界面
 
-![](img/e666d334197ec2346bdeba8d63eb77d5.png)
 
 ![](img/f90bd838d639a197b876187fd3ce147e.png)
 
@@ -54,7 +51,6 @@ C**hatGP**T Plus在各种任务和项目中有广泛的应用。相比免费版�
 
 > 一般情况下，ChatGPT PLUS的充值处理速度较快，只需等待几分钟即可完成充值。
 
-![](img/3af8bf2ba528e7ba8ef6b0dd6817e673.png)
 
 ![](img/5e1f07872483e61fdc3a5444079c7b52.png)
 
@@ -96,13 +92,11 @@ ChatGPT 目前已经正式地作为一款 App 上架了苹果的 App Store，原
 
 > 进入订单详情，复制礼品卡号码
 
-![](img/86e4aac5b51d8cdc6c1535faded50a83.png)
 
 ![](img/61de1d59d4f114b22580cb484f171e2f.png)
 
 立即购买
 
-![](img/ab22e795b599017722149e69f34b512a.png)
 
 ![](img/a4b64b296c4b552b0d452840b344923e.png)
 
@@ -114,21 +108,17 @@ ChatGPT 目前已经正式地作为一款 App 上架了苹果的 App Store，原
 
 > 手动输入兑换码，输入刚刚购买的礼品卡号码充值
 
-![](img/0745540dcc213249e5d55fa11bbb6f6b.png)
 
-![](img/f608e51a5e88f44ae4cdb88085e558a1.png)
 
 **第三步：升级Plus**
 
 > 这一步需要[魔法网络](https://www.zhihu.com/search?q=%E9%AD%94%E6%B3%95%E7%BD%91%E7%BB%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3214783185%7D)，首先在设备上登录ChatGPT账号，点右上角的...->Settings->Upgrade To ChatGPT Plus
 
-![](img/2ce7dbff1a04f69764d06d0cf3be557e.png)
 
 ![](img/e9d10df33674590be35ddd57e72b3291.png)
 
 如果出现如下界面说明订阅成功
 
-![](img/26c20b20ae3a0ace7647adf42c3828df.png)
 
 ![](img/5a071e3712af2ad239d928fb42ef704d.png)
 
@@ -144,7 +134,6 @@ ChatGPT 目前已经正式地作为一款 App 上架了苹果的 App Store，原
 
 这个合租平台进行过网站实名备案，并且背后规模化运营的公司都可查！
 
-![](img/b89c7d70e041a815f40c047f3e1fe601.png)
 
 ![](img/f4cf351daf4aabf3ddf9811fe05abb09.png)
 
@@ -154,7 +143,6 @@ ChatGPT 目前已经正式地作为一款 App 上架了苹果的 App Store，原
 
 在完成了订阅之后，我们的订阅也会同步到[网页版上，](https://www.zhihu.com/search?q=GPT-4&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3214783185%7D)在网页版你也可以一样使用基于 GPT-4 的 ChatGPT 了。
 
-![](img/346cf466b0f90c519ed93d36ac35c832.png)
 
 ![](img/8b5f67001c34a20f1b2cd4b91a91a563.png)
 

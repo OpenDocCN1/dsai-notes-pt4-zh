@@ -296,7 +296,6 @@ Sep 26, 2023
 
 ![](img/184e5717fffd83feed36896315c1e7f2.png)
 
-![](img/9d696f23250c76bfc0b2f1e4b4ed445a.png)
 
 ![](img/89cc36d2feea9b7bfaf6c1a51815ec7c.png)
 

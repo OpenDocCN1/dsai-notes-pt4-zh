@@ -24,7 +24,6 @@
 
 **主入口流程**
 
-![](img/5f45296fc49aa09874387375a70c38fd.png)
 
 [一镜到底.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I9RobQXA7oljiqxQYKkcIyl2nIb)
 
@@ -117,12 +116,10 @@
 
 | 视频效果 | 图片1 | 提示词1 | 图片2 | 提示词2 | 图片3 | 提示词3 | 图片4 | 提示词4 | 图片5 | 提示词5 | 图片6 | 提示词6 | 图片7 | 提示词7 | 图片8 | 提示词8 | 图片9 | 提示词9 | 图片10 |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | ![](img/8d0923cb0d68de6b5dd3ded80ad9dbf0.png) | 镜头跟随，无牙仔从海面上飞到高空上，镜头上升 | ![](img/1692ea3f664d538799629ed6fbc93c71.png) | 镜头跟随，无牙仔从海面上飞到高空上，镜头上升 | ![](img/42bf4671097437006cd33b880d3cb320.png) | 镜头跟随无牙仔飞翔 | ![](img/c63651cab6363a894b36783c4362215a.png) | 无牙仔穿过云层，飞到石头上停下来 | ![](img/4838bf349dcc9349eb5228c00872d473.png) |  |  |  |  |  |  |  |  |  |  |  |
 |  | ![](img/06ea69887f22d9649fdfc6f883aa9c65.png) | 红色奔驰车在公路上快速行驶，环境从开满樱花的春天变成绿树成荫的夏天，镜头跟随汽车 | ![](img/e32404d4c5689c1f2832308a61d3fa9a.png) | 红色奔驰车在公路上快速行驶，环境从绿树成荫的夏天变成黄色枫叶的秋天，镜头跟随汽车 | ![](img/620545ff9a68266938573e1f41c66130.png) | 红色奔驰车在公路上快速行驶，环境从黄色枫叶的秋天变成大雪纷飞的冬天，镜头跟随汽车 | ![](img/1444653eb042806d2e2986de3c2b425b.png) |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | ![](img/ad0cf41e29c7362e9d04ffb9d08f2bb2.png) | 镜头跟随，男人左右看了看，然后向左边走去 | ![](img/042011b8e5e6e249e75beaad19290535.png) | 镜头跟随，男人向左边走去，走到一个便利店门口 | ![](img/20795dd009c3d14fd7271ad970635f8a.png) | 镜头环绕到男子背后，男人从门口走进了便利店，拿起了一瓶水 | ![](img/6d357906e43f00914ee062558bb7d78d.png) |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | ![](img/a269723ce74392d3a17baffbde7d296d.png) | 棕色的卡通熊变成了一只穿着红色外袍的狐狸，周身飘着云朵 | ![](img/235140d67d9924166b668f4cf2099f22.png) | 全身镜头推进至狐狸脸部特写，狐狸面向镜头 | ![](img/9326446cc917200e74a48a9e139213b9.png) | 镜头从狐狸面部特写拉远，狐狸张口说话，说话时抬手捋胡子 | ![](img/93d5fd416c8d5cb5e0fef749f6f9e9bc.png) |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-![](img/b10c47939cf142c3f3162d61ba37de7c.png)
 
 [jimeng-2025-08-12-4728.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZQaxbqndfoukj9xF6VucYkhtnae)
 
@@ -371,7 +368,6 @@ Just upload images and add prompts — and your continuous long take is done! �
 
 **Main Entry****:**
 
-![](img/898d00718d5a1f48214044ef7fc99134.png)
 
 [一镜到底.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PPMObpNWwoq702x2h0xcmLp9n5H)
 
@@ -464,12 +460,10 @@ Centered around the continuous movements of characters, it shows the action chan
 
 | Video Effect | Picture 1 | Prompt 1 | Picture 2 | Prompt 2 | Picture 3 | Prompt 3 | Picture 4 | Prompt 4 | Picture 5 | Prompt 5 | Picture 6 | Prompt 6 | Picture 7 | Prompt 7 | Picture 8 | Prompt 8 | Picture 9 | Prompt 9 | Picture 10 |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | ![](img/30fd7b7245a02aafa684bb735e11753f.png) | The camera follows. Toothless flies from the sea to the sky, and the camera rises. | ![](img/c0fc5b4201fa796ba978930d2ef1c9b7.png) | The camera follows. Toothless flies from the sea to the sky, and the camera rises. | ![](img/ca5136ab642783f2596d5b2b7368dab7.png) | The camera follows Toothless flying. | ![](img/6739ca8f836b08aa023e8e1f18fa04cf.png) | Toothless passes through the clouds and flies to a rock to stop. | ![](img/6f7b5625bddb019dae14a72dd42181df.png) |  |  |  |  |  |  |  |  |  |  |  |
 |  | ![](img/8788d2483349272ce973ac94ac0592d4.png) | A red Mercedes - Benz is speeding on the road. The environment changes from spring with cherry blossoms to summer with shady trees. The camera follows the car. | ![](img/228b56ad3fd914c6575717b984f8b702.png) | A red Mercedes - Benz is speeding on the road. The environment changes from summer with shady trees to autumn with yellow maple leaves. The camera follows the car. | ![](img/ad3f629f48142f2d023dd6b6c953b71d.png) | A red Mercedes - Benz is speeding on the road. The environment changes from autumn with yellow maple leaves to winter with heavy snow. The camera follows the car. | ![](img/2ddbf618742a76a5bf0c5a643ddc334b.png) |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | ![](img/6d50dc97582cba349353a660b83cf20f.png) | The camera follows. The man looks around and then walks to the left. | ![](img/05ea3567e4b1b71ad87dc5b89f715adc.png) | The camera follows. The man walks to the left and reaches the door of a convenience store. | ![](img/0363d5e30119c0ce894045cabfa0c376.png) | The camera circles around to the man&#x27;s back. The man walks into the convenience store from the door and picks up a bottle of water. | ![](img/59d1fd87ec0d2fddbb402befb39a9f1c.png) |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | ![](img/a0a5532a8302181ef23c7d448b479f14.png) | A brown cartoon bear turns into a fox in a red robe, with clouds floating around. | ![](img/68e2e463edbeb8f580d49abc7214d86a.png) | The full - body shot zooms in to a close - up of the fox&#x27;s face. The fox faces the camera. | ![](img/6c41940222bc3c65ea70517373a9ba2e.png) | The camera zooms out from the close - up of the fox&#x27;s face. The fox opens its mouth to speak and raises its hand to stroke its beard when speaking. | ![](img/4fc0f6cef363dce24d32da32c38ff318.png) |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-![](img/afaa697e65c0e2b95ccc1a12d589628a.png)
 
 [jimeng-2025-08-12-4728.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SRtTbzoVXo0CDyxfAUHcKmETnOg)
 

@@ -38,9 +38,7 @@ Bing Chat地址：https://www.microsoft.com/zh-cn/edge/launch/bing-chat-3p?form=
 
 ![](img/4885db60cc50eac7f306be8fd97fcbd9.png)
 
-![](img/668408e0ff9e68980282b0b9f710c2b1.png)
 
-![](img/ea744200bdb3c18bb201542801be6179.png)
 
 ![](img/4a9cdfc7bf3eef4b9a95fab241bf8185.png)
 
@@ -54,9 +52,7 @@ Bing Chat地址：https://www.microsoft.com/zh-cn/edge/launch/bing-chat-3p?form=
 
 ![](img/1a9fb64fe72fbbfac12a3d8fd7c9903c.png)
 
-![](img/178ae0a6f1fb1298c3ae2a845990ce2b.png)
 
-![](img/8fcf0072d59846ae89d370cc164b1da6.png)
 
 ![](img/5bb3ed924cf0fbda015d23e3dd817a67.png)
 

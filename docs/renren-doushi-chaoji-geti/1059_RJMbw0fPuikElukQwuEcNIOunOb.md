@@ -698,9 +698,7 @@
 
 ![](img/353760fb787d72e4ce50cb0efb674800.png)
 
-![](img/8009d7394da29049385b8a46094abe1f.png)
 
-![](img/9a682301c11dda63ca4b2cc744980186.png)
 
 ![](img/622b779d433bde06a4cc6f87e9dcba8e.png)
 
@@ -736,7 +734,6 @@
 
 谢谢无私的交流传授，让我没有去报名
 
-![](img/43c6655b5ef9794169f7aebce33c08f9.png)
 
 ![](img/e27a7ea0734aa5bcce5344a452d8c9a7.png)
 

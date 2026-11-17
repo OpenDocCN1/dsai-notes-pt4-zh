@@ -430,7 +430,6 @@
 
 记得有一次下大雪，办公的地方突然停电，下着大雪，愣是走了几公里过去，只是为了不断更账号。
 
-![](img/e96395ea519f5ed45cbcc6af72feb1f3.png)
 
 ![](img/8ce114e21e6e1fa19e4fc5b08b6eaf44.png)
 
@@ -732,7 +731,6 @@
 
 ![](img/a9f1a5d580bac0776ef8b32962552131.png)
 
-![](img/8a75ea8003cc604c3cba67f8769520ce.png)
 
 ![](img/477dcf17244832b2ee48ab5473472e59.png)
 
@@ -766,7 +764,6 @@
 
 ![](img/96a49c55fafeb045212fcc8f4b43c7a3.png)
 
-![](img/5b9ab38bfb16feb000dbc25a3eaf505e.png)
 
 ![](img/be818825c7bcacfade7bec35d498b95c.png)
 
@@ -838,7 +835,6 @@
 
 ![](img/108f417eff477811ba9deb092c8e9a10.png)
 
-![](img/bfd177d775e4f7c876f848424e12cd7d.png)
 
 ![](img/75139f46d414791d2fd8c717f129f2f7.png)
 

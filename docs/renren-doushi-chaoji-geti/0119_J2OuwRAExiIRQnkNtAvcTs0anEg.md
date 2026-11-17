@@ -88,7 +88,6 @@ hello大家好，我是清秋。今年是创业第二年，擅长深入社媒、
 
 我们来看一下下面这个视频，这个视频在lemon8和tiktok都有发布，他们团队也值得重点分析：
 
-![](img/cc5bd740dac2f9725b2be442ec461a06.png)
 
 [下载.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G93ybMjOlodZtlx87ZzcEwl8nhf)
 

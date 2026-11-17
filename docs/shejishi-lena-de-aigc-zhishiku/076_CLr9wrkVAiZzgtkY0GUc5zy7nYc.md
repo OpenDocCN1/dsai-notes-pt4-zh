@@ -44,7 +44,6 @@ Prompt: Footage of a camera on a drone flying over a desert with wind blowing ov
 
 [X2Twitter.com_aE038GnLAt1zm4q3_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WKtWbr1b5oHfFux58HkcAaE2n7g)
 
-![](img/61a847da21f41b2aca5d2d6431cbabf1.png)
 
 [X2Twitter.com_CMbEPiQJU9YTOeAG_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HtCKbD5gLo19l5xrCcQcQJBfnkc)
 
@@ -52,7 +51,6 @@ Prompt: Cinematic closeup and detailed portrait of a reindeer in a snowy forest 
 
 日落时分，雪林中的驯鹿特写和细节肖像，画面具有电影般的灯光效果，柔和而美丽，阳光洒在背面，呈现出金色光晕和梦幻的背景虚化效果以及镜头光晕。色调充满电影感和魔幻氛围。
 
-![](img/5d5206fb884fe812eabd46e4ca4538aa.png)
 
 [X2Twitter.com_dv4BIAmRJtZPDn4-_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TU8pbyVsCo9LFixs4nAcD9UMn0f)
 
@@ -60,7 +58,6 @@ Prompt: Detailed extremely macro closeup view of a white dandelion viewed throug
 
 通过一个大红色放大镜看白色蒲公英的极其微距特写视角，细节非常精致。
 
-![](img/8e3be19bfc104d8a335d5738033f8336.png)
 
 [X2Twitter.com_Gi-_dl_ADJuGLhPQ_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SWBFbDjhvoZP9Exb2g5cY4vtnNb)
 

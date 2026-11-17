@@ -204,7 +204,6 @@ bash config/internvl3.5_1b_train_npu.sh
 
 使用npu-smi info命令可以查看NPU使用情况，如果想要实时监控可以使用watch -n 1 npu-smi info
 
-![](img/173fee36ad8b6a2285089d01c5507f93.png)
 
 ## 合并权重
 

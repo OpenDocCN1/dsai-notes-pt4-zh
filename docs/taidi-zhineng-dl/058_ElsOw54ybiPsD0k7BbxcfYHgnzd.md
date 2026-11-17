@@ -62,7 +62,6 @@ multiple data elements, 可以是 in time or in space。
 
 需要 vector registers 存数据。
 
-![](img/a173d819516aa2f0e2d0ee9e0bbeec7a.png)
 
 SIMD v.s. VLIW
 
@@ -72,23 +71,16 @@ SIMD v.s. VLIW
 
 ## SIMD ISA Extensions
 
-![](img/6c695f1c4ba24f1be26bc2f4693a0d5f.png)
 
 ### Intel Pentium MMX Operations
 
-![](img/37b2fc99dc1ff495961b3c08a4361e16.png)
 
-![](img/97f9563b2ab009f3877193f13d3f6043.png)
 
-![](img/9d7eecb86f22518456d1d878b969aded.png)
 
-![](img/ff6fad03fbdec4af7bfad9b8b768c2aa.png)
 
 ### SIMD in ML accelerator
 
-![](img/4039b0766dc8eee98fb6e3533932fe8a.png)
 
-![](img/814035eece6e412194f527921ef83dd9.png)
 
 ### MIMD Machine with SIMD Processors
 
@@ -96,7 +88,6 @@ bottom-up: Tile -> Die -> Wafer
 
 每一个 Tile 是就一个 SIMD processor。
 
-![](img/5270ea65807eea6b5c1202dff0ac942f.png)
 
 4-wary 的 SIMD processor。
 

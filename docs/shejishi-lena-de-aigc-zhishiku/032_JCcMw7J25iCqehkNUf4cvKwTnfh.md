@@ -10,7 +10,6 @@
 
 ![](img/152f065d468c32234360392d98c8bbec.png)
 
-![](img/c36c081951d983aef561de036bfa1888.png)
 
 一键换脸效果
 
@@ -24,7 +23,6 @@ PS细微调整后
 
 ![](img/721caf4c2d57ae1278c3648b7c97af99.png)
 
-![](img/96b457c111cdd259870f1cf64f6bdc19.png)
 
 ![](img/f71190727a96dc054ae531e52ddaa35e.png)
 
@@ -80,7 +78,6 @@ PS细微调整后
 
 ![](img/7eeef8ac6c40b3ca17193cf1e7516517.png)
 
-![](img/4cb94b0c34a741674a4da6d6e080b222.png)
 
 ![](img/dea3266b620876a7485fe13134fbc646.png)
 

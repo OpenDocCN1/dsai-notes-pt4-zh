@@ -34,9 +34,7 @@ ControlNet 1.1.224, Tile model v11f1e
 
 ![](img/cc2a576829e48356eb9c031819194b32.png)
 
-![](img/615756785b0a0e5a62a15cd371a82c08.png)
 
-![](img/e648d558f5a8e97ce943118d3d85c2ff.png)
 
 ![](img/8db90a27e3d4241fc2ed90dba4d5b1ae.png)
 
@@ -68,11 +66,8 @@ ControlNet 1.1.224, Tile model v11f1e
 
 ## 2.1 预览
 
-![](img/efe2f7f83303c1754e731d74b991edbb.png)
 
-![](img/1900c42251827f2cd8d6ce01f59916d6.png)
 
-![](img/45aedeac9a2564af05359d22a956e63d.png)
 
 ![](img/0012c6decc698c5da2d72322ea564fef.png)
 
@@ -88,9 +83,7 @@ ControlNet 1.1.224, Tile model v11f1e
 
 ## 3.1 预览
 
-![](img/061809223027e5859fdc70cb19064b9c.png)
 
-![](img/9d6edf7430c4f37cffb4f4e57e260415.png)
 
 ## 3.2 原图购买与下载
 
@@ -104,7 +97,6 @@ ControlNet 1.1.224, Tile model v11f1e
 
 ## 4.1 预览
 
-![](img/6b68f1d33bacd41fe91f013f1d3260f5.png)
 
 ![](img/4cf0333ca009c842b1030e4d312137f8.png)
 

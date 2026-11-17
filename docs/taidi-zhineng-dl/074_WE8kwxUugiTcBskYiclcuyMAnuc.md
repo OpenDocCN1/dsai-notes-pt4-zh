@@ -76,6 +76,5 @@ Disjoint (tightly coupled) memory bites the bullet and lets different cores see 
 
 发展趋势
 
-![](img/9183ccb2e05cbfa4028e6446f14aa858.png)
 
 ![](img/d306bd12fef49c787a7baeb3d804ae2b.png)

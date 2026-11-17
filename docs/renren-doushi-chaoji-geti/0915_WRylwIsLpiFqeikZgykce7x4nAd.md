@@ -152,11 +152,9 @@
 
 ![](img/46f0a54549532edc8163eeaf7837f92a.png)
 
-![](img/8953398372a80c0ae54b5ef832e1f979.png)
 
 模型预处理中
 
-![](img/ae279a98ba662b1db977f3aacc4f99c4.png)
 
 ![](img/e2dec8189ad7de905abf30795059769b.png)
 

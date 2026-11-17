@@ -152,7 +152,6 @@ Qiu和Albrecht也非常有信心，在十年后，PPT上的成果，很可能就
 
 目前，团队已经发表了不少关于自监督学习的理论基础，以及神经网络等系统学习的基本规律的文章。
 
-![](img/7ad160aa445a3b62a811abbc5ff755a2.png)
 
 ![](img/5bbcc0b84dcaf8bc3b86eac5a807f5e1.png)
 

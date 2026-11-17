@@ -10,7 +10,6 @@
 
 +   特看TabCut：https://www.tabcut.com/
 
-![](img/81ae621b4165c3f6c095579330ad0628.png)
 
 +   超店有数：https://www.shoplus.net/
 
@@ -99,7 +98,6 @@ https://www.pipiads.com/
 
 +   有道智云AI在线图片翻译：https://ai.youdao.com/product-fanyi-picture.s
 
-![](img/920d54052763b15b5f215d3c9cc04f18.png)
 
 +   秒翻： https://personal.miaotranslation.com/
 

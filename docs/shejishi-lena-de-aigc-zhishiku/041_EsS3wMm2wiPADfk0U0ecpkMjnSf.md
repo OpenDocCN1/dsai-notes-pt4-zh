@@ -34,7 +34,6 @@ Ideogram推出2a，最快、最实惠的文本到图像模型——专为平面�
 
 ![](img/e8c9892160bc56feb3bfa6cdeb6d92d7.png)
 
-![](img/27a7afd7a50fbdd71dacdb5e45c2124f.png)
 
 [6387633349354599302936096.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B3r1b7cJYoesuuxa17zcwPjTnPd)
 

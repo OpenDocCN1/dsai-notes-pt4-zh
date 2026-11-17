@@ -106,7 +106,6 @@
 8.25 07/05 FUL:/ G@i.pq 牛油果：资本的巨大骗局# 科普一下 # 牛油果 # 轻奢 # 水果 # 资本  https://v.douyin.com/c_SDjQf4cLs/ 复制此链接，打开Dou音搜索，直接观看视频！
 ```
 
-![](img/1c930f57e080ee75b0c51035d5479d45.png)
 
 ![](img/dbe38f7484192ee78ffdb088888ba0a5.png)
 
@@ -150,7 +149,6 @@
 
 ![](img/b49e68dc49f2966cf3a4ae68662daf67.png)
 
-![](img/dc5577df17aadb3965c7aca7e2035aec.png)
 
 复制创建的令牌填写到插件的「**认证令牌**」。
 
@@ -208,9 +206,7 @@
 
 ![](img/bbc011faad86c7bd7f47616ff7ea5219.png)
 
-![](img/80f698035aec0a8fb71dbc3825dd464b.png)
 
-![](img/ff760e66ff0d96a052f231608d02082f.png)
 
 其他字段根据**字段变量对应信息**依次配置即可。
 

@@ -282,7 +282,6 @@ Controlnet 允许通过线稿、动作识别、深度信息等对生成的图像
 
 ![](img/a055f42f5c73b71b5511fc0ae1d5b878.png)
 
-![](img/7032b8552c51492094803f78022ad9b5.png)
 
 ![](img/b49b7d02ca889b891abc91fc696bcaa6.png)
 

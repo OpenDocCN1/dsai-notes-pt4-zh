@@ -613,17 +613,13 @@ Playwright Automation 主页：https://smithery.ai/server/@microsoft/playwright-
 
 然后我们可以将模型切换为 DeepSeek 官方的模型 API：
 
-![](img/12d50a336b92c44e6fe3d51a76ec2c0a.png)
 
 然后开启：
 
-![](img/104135b7f465370d5a4569dd00b6cdf8.png)
 
 并尝试进行使用：
 
-![](img/dd7eadb2b7e79e85f60b563d11957d1b.png)
 
-![](img/5770616f4a911d04e162a80e96493175.png)
 
 同时，为了能顺利调用 MCP 工具，我们还需要安装 uv 和 bun 文件：
 
@@ -666,13 +662,10 @@ Playwright Automation 主页：https://smithery.ai/server/@microsoft/playwright-
 
 然后点击开启：
 
-![](img/e26f631721ee5dc7ed7f7e5e3af66678.png)
 
 然后在对话中开启 MCP 工具，这里可选一个或者多个工具：
 
-![](img/ee5d509a18d21e6dcf2d53f5fc5c1db4.png)
 
-![](img/5ffa305db53a46a86264709272e6c10c.png)
 
 ![](img/17561eba39d908cb5cb0f302444ffbb3.png)
 
@@ -699,11 +692,9 @@ Playwright Automation 主页：https://smithery.ai/server/@microsoft/playwright-
   }
 ```
 
-![](img/f2f0c60243e6701e24a9dfa6adcaac58.png)
 
 然后开启工具：
 
-![](img/9560b0d3dff7e5397818b7479607da44.png)
 
 并尝试进行调用：
 

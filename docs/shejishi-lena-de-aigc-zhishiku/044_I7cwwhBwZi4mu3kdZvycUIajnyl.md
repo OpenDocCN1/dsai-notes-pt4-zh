@@ -86,7 +86,6 @@ Reve推出了文生图Reve Image 1.0  一周内登顶全球排行榜
 
 ![](img/7a1cb7acf78323f13c125eb98bf9efdf.png)
 
-![](img/2244fb092b45c9a83ca25f34bd127ff2.png)
 
 ![](img/5bc8179f9ec6a5e0df865adc8fc06185.png)
 
@@ -98,7 +97,6 @@ Reve Image 1.0（代号 Halfmoon）在图像质量和生成速度方面表现出
 
 # craft
 
-![](img/d6d2b66c3a437bcc4f23cdceb8d7b94d.png)
 
 [X2Twitter.com_g46zzViwfTeh_Qc3_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SDAlbR1C9oiR0FxjmVxcGGdjn1A)
 

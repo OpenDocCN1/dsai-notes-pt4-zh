@@ -8,7 +8,6 @@
 
 |  |  |
 | --- | --- |
-| ![](img/c28f672b4f29c9f394f6bd62271b7220.png) | ![](img/e6dc003116e0ba3934689f2d68e49fd9.png) |
 |  | ![](img/d7fe35ffa09c861ae0b4ae8febbb8a01.png) |
 | ![](img/4e33aaf56b54d2aa7ccad5ed960794b9.png) | ![](img/39dbc3677c0ae698ef63db7a9cddb9f0.png) |
 | ![](img/5a00b7c7c3e67e3ad87fd55c45f3ada1.png) | ![](img/c9e943c66e0bef0131cdc1a1b5401079.png) |

@@ -568,15 +568,12 @@ Tip: —cref & —sref is a great combo, try it.
 
 --sref 531168650
 
-![](img/6b93278340e1d83239f58b796a3a5303.png)
 
 --sref 481750233
 
-![](img/c18b79355d82f3a67e55cac950395f7e.png)
 
 --sref 1807099070
 
-![](img/1e6ae6bc64d9179fcb2807dcb5556dc7.png)
 
 --sref 2431547653
 
@@ -584,11 +581,9 @@ Tip: —cref & —sref is a great combo, try it.
 
 --sref 892259247
 
-![](img/310fcdeaef91291b111311ef30aaab8c.png)
 
 --sref 4093133087
 
-![](img/aa0b815a80a8f816bfcc159a9321c381.png)
 
 --sref 893246314
 
@@ -600,15 +595,12 @@ Tip: —cref & —sref is a great combo, try it.
 
 --sref 2927474314
 
-![](img/fffca4e0d3d5d572c674c399aff756db.png)
 
 --sref 184489506
 
-![](img/bfc72e5348f6394f5643510a887e5179.png)
 
 --sref 2473416940
 
-![](img/25fa984959b46814f52b9862d8a7183e.png)
 
 --sref 6
 
@@ -646,7 +638,6 @@ Tip: —cref & —sref is a great combo, try it.
 
 【your prompt】+ --sref 3577878952 + --personalize c6so3sz
 
-![](img/916a0cb9217805a94c66a536f244fd99.png)
 
 ![](img/8953b324b713b24978e083188a675452.png)
 
@@ -696,9 +687,7 @@ a front view of a peony flower, white lines --sref 2581180571::5  3577878952::1 
 
 ![](img/3b7450dd1700993cc770780b1f27f28c.png)
 
-![](img/07040dfbbc8a790b40dc6e955a50ba0f.png)
 
-![](img/7b1fe2f087fb16f373efb6c18621f02e.png)
 
 ![](img/3ae700eb2cbb514e1011f75fcba0590c.png)
 

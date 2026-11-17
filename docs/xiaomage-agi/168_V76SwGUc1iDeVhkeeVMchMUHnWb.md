@@ -62,11 +62,9 @@ https://github.com/OpenTalker/SadTalker
 
 看看效果
 
-![](img/0ba463514ad08b386ebb05474c7c38ce.png)
 
 [tmp606i48sh##小星星-0-100.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DxybbSn8SootP2xjVkScEfaXn0K)
 
-![](img/aa751e2f42e3fd1b47300a6b001e00a4.png)
 
 [tmpjl_co18w##赐我测试用-0-100.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WDwqbL60mosoFsxrK6dcrPM4nug)
 

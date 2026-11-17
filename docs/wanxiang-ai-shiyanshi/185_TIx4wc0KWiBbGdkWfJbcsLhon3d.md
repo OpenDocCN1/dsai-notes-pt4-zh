@@ -10,7 +10,6 @@ AI 侧边栏是多维表格新推出的 AI 功能，侧边栏将原有的智能�
 
 在多维表格页面的右上角，点击 **多维表格 AI** 图标即可打开侧边栏。
 
-![](img/cf7996dc1b1b2eeb4b40a134e77cd066.png)
 
 [唤起 AI 侧边栏.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NTJob2tjAossLbx9ZuWceTjPnhe)
 
@@ -40,7 +39,6 @@ AI 侧边栏是多维表格新推出的 AI 功能，侧边栏将原有的智能�
 
 +   创建工作流，每天早上10点，查找所有未处理反馈，根据门店区域在区域经理表中找到对应的多个区域经理，逐一发送反馈信息给每个区域经理。
 
-![](img/fe9b0fa8181ff472851569336042e6e6.png)
 
 [AI 搭建工作流.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MrgzbnaS5oRVFrxNnqqcJm2Qnnb)
 
@@ -58,7 +56,6 @@ AI 侧边栏是多维表格新推出的 AI 功能，侧边栏将原有的智能�
 
 +   货品编码是YL-615-X1-3的货品名称是什么
 
-![](img/ebb9fb492983874ed1b83c0abfc7e52e.png)
 
 [数据查询.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G4rrbYQewosssvxnR4EctoPSn6d)
 
@@ -76,7 +73,6 @@ AI 侧边栏是多维表格新推出的 AI 功能，侧边栏将原有的智能�
 
 +   调整行位置的方法？
 
-![](img/a554f36b042db4f2a11788b41ee2887b.png)
 
 [教程问答.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lgi8bUFxUofsjix4ReZcEcYontP)
 
@@ -90,7 +86,6 @@ AI 侧边栏是多维表格新推出的 AI 功能，侧边栏将原有的智能�
 
 +   帮我总结下这个多维表格
 
-![](img/1890540dc71dde525c0a8d5fc20e5aba.png)
 
 [总结多维表格.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GpB2blUIloS6bgxjot1cin9tnog)
 

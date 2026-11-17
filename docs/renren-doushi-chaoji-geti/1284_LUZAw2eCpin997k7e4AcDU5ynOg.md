@@ -12,15 +12,12 @@ https://console.bce.baidu.com/qianfan/overview
 
 # 数据集管理
 
-![](img/3d23785369a35a29df93c92837420b94.png)
 
 # 大模型训练
 
-![](img/7951532c5b2fe5b2b9247fa07ed9ce70.png)
 
 # 大模型管理
 
-![](img/967fef0c9c55b437b014889ae72669e6.png)
 
 # 大模型服务
 

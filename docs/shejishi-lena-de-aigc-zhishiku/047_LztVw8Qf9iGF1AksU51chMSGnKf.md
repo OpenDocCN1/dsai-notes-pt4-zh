@@ -6,31 +6,20 @@
 
 即梦B端图标：[绘画 | 即梦提示词](https://aigclena.feishu.cn/wiki/Kj4lwlqGZifNihkttBpccuRznyd)
 
-![](img/47b84fa71178f4d83af4c110d1f6d8a4.png)
 
-![](img/1e6fad2262afb2ec3f818d706366bfa1.png)
 
-![](img/e432b0a399fee5e22a4353e0fb95a3e7.png)
 
-![](img/469320e4636006b97044dcc5d1e53ae1.png)
 
-![](img/5d2f6ec7c3a0d3e6cf7d1e32f7a22d97.png)
 
-![](img/405e4a2971a12c0357c09030a2291c80.png)
 
-![](img/df3889ee4400d9996321d186862990cb.png)
 
-![](img/69443ac4fe7f1bd0a6a3889a2dc87531.png)
 
-![](img/2c7d84fb255f91f0415f8202e3fcca98.png)
 
-![](img/debb82be1cfed72bab4d9d1bdcc3d7ad.png)
 
 ![](img/a919de43dffefbcb8bedc8997ee6a3ce.png)
 
 ![](img/66bfaa615b0d29f660e5aece0b2f4e5e.png)
 
-![](img/e14174ccd461d198bd314c537790a9c8.png)
 
 ![](img/49c81d9f8286ca399cdb90dedc9e3c96.png)
 
@@ -38,7 +27,6 @@
 
 ![](img/49490e0b7c4ec1406b32eaebb9745ca7.png)
 
-![](img/6dd0961c6ecf7b07952b29399c636adc.png)
 
 ![](img/d2711cdbfffa127e2fe4c2f44c84ff41.png)
 

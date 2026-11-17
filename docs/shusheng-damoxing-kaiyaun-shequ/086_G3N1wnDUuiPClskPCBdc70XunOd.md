@@ -250,7 +250,6 @@ llamafactory-cli webui
 
 预览命令
 
-![](img/a76a2d45cbdbcb31e2787c21bd650000.png)
 
 点击开始，即可开始训练，同样 token 化部分加载数据较慢
 

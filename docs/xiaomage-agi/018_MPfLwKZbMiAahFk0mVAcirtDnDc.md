@@ -42,15 +42,12 @@
 
 这是我直接实战情况，只是基于艺术二维码，AI头像、AI绘画等方式还没开始弄呢，后续将随平台研发，逐步更新副业项目实战教程。
 
-![](img/427d47ca616bf6db00927a0038b893e3.png)
 
 ![](img/3c2580900ada2cdf8eeb25ee411678a4.png)
 
 这是我的引流情况
 
-![](img/79fcdde59e6a71126744a399f58252b8.png)
 
-![](img/76ad6a0b545e27c5099aca4f7ae0d8a0.png)
 
 ![](img/63ece5f29be6210d1df4661026e9da2c.png)
 
@@ -72,17 +69,11 @@
 
 什么是艺术二维码呢，为什么会有这个项目呢？艺术二维码是一种通过AI技术将普通的二维码转化为具有艺术美感和创意性图案的技术。这种技术不仅提升了二维码的美观度，还增加了用户的扫码体验和粘性。比如以下这些
 
-![](img/b19acfd43975f0aaeb674762bb367db6.png)
 
-![](img/45b0f568a83c409ca07045c2b87da7f7.png)
 
-![](img/ebcaa49d119da6c6daa21298d682ba13.png)
 
-![](img/de6d2d8ddb25c79349b961fc6c8472eb.png)
 
-![](img/e93219387939949bc4a23011876f22e4.png)
 
-![](img/c633580c34269f118e201cf2433288c7.png)
 
 ![](img/c237109339762adaf7821745e58ef1ab.png)
 
@@ -158,7 +149,6 @@ DALL-E 3 是由OpenAI开发的一种先进的文本到图像生成模型，它�
 
 提示词1：一直头戴王冠呆有着漂亮鱼尾巴的可爱白色猫咪，猫咪有着像美人鱼一样的白色尾巴，尾巴如宝石一样闪闪发光，呆萌可爱，超详细，画面温暖干净，情感饱满，唯美，立体光线，高分辨率，8k， --q 5 --v 6 --ar 9:16
 
-![](img/6cee251c4a8994c8e302026eef68ea28.png)
 
 ![](img/156a1e98e1cb075d08da2503816226df.png)
 
@@ -174,11 +164,8 @@ DALL-E 3 是由OpenAI开发的一种先进的文本到图像生成模型，它�
 
 提示词3：Create an image featuring two anthropomorphic glass cute dolls with long legs and smiling faces, holding hands, in a vibrant natural setting with sunlight filtering through the foliage, casting a soft glow on the scene. The dolls should have a translucent quality with light reflecting off them, and a sparkling effect. Both dolls are standing on leaves that are attached to thin branches or stems, with additional water droplets on the leaves and branches, some of which are falling, adding dynamic motion to the image.
 
-![](img/7d664302cc21f542a6edc0f274ca65cd.png)
 
-![](img/e41ca0a1f78f7873e7db67e0e79fa010.png)
 
-![](img/a87ca025124283f17a6d1fa8a2787e3e.png)
 
 ![](img/ff286d1eba5777b62ac53047ceb9a131.png)
 

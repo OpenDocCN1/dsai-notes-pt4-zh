@@ -112,7 +112,6 @@ Luma v1.5版本在视频生成领域取得了巨大进步，提升了视频质�
 
 +   四季变化
 
-![](img/99eaa22f3c211d90bc5a3345f1f68146.png)
 
 [X2Twitter.com_w4IcHO6_NurdadqE_1920p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UhchbjgXHoLxHXxGr2BcPykbngh)
 

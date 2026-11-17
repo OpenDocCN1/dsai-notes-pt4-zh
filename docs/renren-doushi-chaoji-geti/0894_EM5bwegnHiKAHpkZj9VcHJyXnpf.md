@@ -90,7 +90,6 @@
 
 ![](img/e902a05b9f6c3c1b4db15cbb2b314e50.png)
 
-![](img/cfff91ffcc0b8f1678ed7bf34abc444a.png)
 
 ## 二、提供矩阵资源
 
@@ -134,7 +133,6 @@
 
 [矩阵搭建方案【硬件+软件】](https://aajyscaau4a.feishu.cn/sheets/LIDpsgpyYh1VYvtjoOUcUs6EnFg)
 
-![](img/4d2b4a04651f0e60518237f16ca042d6.png)
 
 ## 四、📕矩阵系列教程【必看】
 
@@ -150,7 +148,6 @@
 
 查阅👉https://ycnjcevcyxco.feishu.cn/docx/Kw6TdEcIyonI7Mx8jagcrZvLnYg
 
-![](img/6fd943880fab8356f830c2b2fc5036d9.png)
 
 ## 五、刷机参考
 
@@ -166,7 +163,6 @@
 
 #### 6、苹果刷机：https://www.i4.cn/
 
-![](img/259fa0144230d7a67f38fd7ff693e84a.png)
 
 ## 六、内容分享
 

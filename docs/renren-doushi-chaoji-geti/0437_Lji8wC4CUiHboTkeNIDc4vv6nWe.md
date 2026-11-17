@@ -94,7 +94,6 @@ FLUX Kontext 让图片创作和视频创作一下丰富了很多 https://m.okjik
 
 https://replicate.com/flux-kontext-apps/face-to-many-kontext
 
-![](img/352e0375bdca6248056d62e38b0ededf.png)
 
 https://fal.ai/models/fal-ai/flux-pro/kontext/max/multi/api
 
@@ -206,7 +205,6 @@ AI工具加速独立开发者产品MVP制作：从两天到两小时https://scys
 
 ### 手把手教程 五十多个很详细的学习文档
 
-![](img/1b1dc599899a01637a7355db2141787b.png)
 
 我之前让CURSOR写了很多个文档，放在这里
 
@@ -214,7 +212,6 @@ https://github.com/CharlieLZ/flux-kontext-template/tree/master/docs
 
 (十几个文档，之前删了，我找下备份，晚点上传） 已传
 
-![](img/8cb22e8d4d6d1e033009d8dc9eccb07f.png)
 
 ![](img/197d49ed9703abd4348c9fcb48fd8210.png)
 

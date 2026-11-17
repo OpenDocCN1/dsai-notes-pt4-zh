@@ -44,7 +44,6 @@ Krea 推出全新 3D 生成功能
 
 2025.4.1
 
-![](img/265ccf5c27064aba02e76e7b9785008c.png)
 
 [X2Twitter.com_yx525PreVbS-ozew_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ITY8b5aquow1CpxxI1McQRoJnWh)
 

@@ -1484,9 +1484,7 @@ Gemini Live是谷歌推出的一款生成式AI助手，提供了更高度的便�
 
 谷歌已经向美国用户正式开放了最新文生图 AI 模型 Imagen 3，用户可以打开 AI Test Kitchen 体验该功能，官方称最新版本“节更清晰、光照更丰富、干扰性人工痕迹更少”。
 
-![](img/1410313e872c05fe561bb105cdb9bc68.png)
 
-![](img/520180c3e9f11d2c1509f391077e19e5.png)
 
 ![](img/0b72d4130c3d631db7b057bed24959cc.png)
 
@@ -2528,7 +2526,6 @@ Meta据报道计划通过引入名人声音来提升其AI聊天机器人的互�
 
 一种新的人工智能，可以从简单的输入（如角色、动作和场景）创建逼真的角色视频。
 
-![](img/1216c0c5687c0235244c7bf21ad56355.png)
 
 [SaveTwitter.Net_FtJdg5T-5qFBAJL7_(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QSE3btzAkoOyokxXjPrclSImn7g)
 

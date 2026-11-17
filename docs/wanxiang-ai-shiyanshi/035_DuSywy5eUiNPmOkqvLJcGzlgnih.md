@@ -242,15 +242,11 @@ Step2: 在社群内发帖，发帖格式要求如下：
 
 ![](img/85082653c965326a0951b2ba548acff9.png)
 
-![](img/785143f2eb57f722f709c1d53cd1c657.png)
 
-![](img/9657e15ed31f2bfb083e8e7d8113246c.png)
 
 小红花周边系列
 
-![](img/83ce377f0f0575962b3bff7e04f6b5ff.png)
 
-![](img/d74e1d41a1a6a62c1dc86401b7a8524c.png)
 
 ![](img/80dcb969cfb4e16b4a2965bb2420b09b.png)
 

@@ -86,7 +86,6 @@
 
 > 点击加载模型，与AI进行对话。
 
-![](img/3f6725ebab6cf7df1f1efdcb73c371bd.png)
 
 [加载模型进行对话.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UqF7bpA4fovU75xw2G9cKxivn6g)
 

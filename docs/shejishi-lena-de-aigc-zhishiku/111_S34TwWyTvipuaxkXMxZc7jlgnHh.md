@@ -116,19 +116,15 @@ figma截图
 
 ![](img/d3d79791c1a37f4eaf82799f489ddf2d.png)
 
-![](img/e7469ef18ca6d6c381558779b4694800.png)
 
-![](img/2ab3b5ec60d371598a9d5eb34643570b.png)
 
 ![](img/226fcf25850f7d9271d056d85c857b1b.png)
 
-![](img/bafc49b1a5caa2e97eb87de218c8fc01.png)
 
 ![](img/bf998e62ba8f5e48be8c94c5ad2cc058.png)
 
 ![](img/c2375084e66dd2286e5c8959e64c9ac5.png)
 
-![](img/377bb9737b800b98d3b4d8dcedf33107.png)
 
 ![](img/15a0ac79cfef44fcfe2975fe0d41ed3d.png)
 
@@ -136,9 +132,7 @@ figma截图
 
 ![](img/8a1f6fc303eaafe9fa44cda375fbf12d.png)
 
-![](img/7619329d1e2d6dc6c941cedbb6364e0d.png)
 
-![](img/e7c20022ee9a56bb27551b6ee3e32e28.png)
 
 ![](img/aa85b4b4fd812dcd32505c93078364c4.png)
 
@@ -154,7 +148,6 @@ figma截图
 
 企业后台👇 22年作品
 
-![](img/b5cb76f84517a659d43bbbc3c35d5e2e.png)
 
 [动效展示1126片头36.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U8YKbsQ2yoP42Ax4j2scOPLynhe)
 
@@ -208,7 +201,6 @@ figma截图
 
 ![](img/8ed94c282de9d7bb7c33b49366f1dd4c.png)
 
-![](img/fac4232964e1a2e8ca991ca257c51d52.png)
 
 ![](img/98ef33c50f2336b522c9cd9a432b65ab.png)
 

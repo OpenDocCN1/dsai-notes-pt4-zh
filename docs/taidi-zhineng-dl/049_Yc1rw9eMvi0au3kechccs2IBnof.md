@@ -70,7 +70,6 @@ a quick whiteboard talk
 
 ![](img/e76662878a11c71d9a0a8cd942fce75d.png)
 
-![](img/964a2bab8d0c2d3821e9bce2cac782a3.png)
 
 ![](img/f483c6beaa753c9044a5104924119823.png)
 

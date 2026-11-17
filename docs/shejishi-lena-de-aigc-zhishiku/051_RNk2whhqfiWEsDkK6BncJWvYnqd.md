@@ -10,7 +10,6 @@
 
 ![](img/d349c5de5ca82e57f14b8cd4e295554b.png)
 
-![](img/26a2dc640bcb05278071c5f74ba22556.png)
 
 ![](img/88d3c22c2d9212e79eb64fcfc1a5b5d0.png)
 
@@ -34,19 +33,16 @@ Dark hair flows gently into the water on the right side of the frame, moving nat
 
 Shallow depth of field, underwater macro photography style, dreamlike and ethereal mood, extremely detailed skin texture, surreal cinematic aesthetic, ultra-realistic lighting, 8K photorealistic, professional underwater beauty photography, aspect ratio 3:4.
 
-![](img/6fb1abad29a669f5856a9ce585c2ef95.png)
 
 Avant-garde black and white fashion portrait shot from a low angle. The woman stands tall wearing a long black structured coat with exaggerated shoulders. Floating mask fragments hover around the face, partially obscuring the eyes and forehead. Soft light grey studio background, dramatic editorial lighting.
 
 Add editorial text layout at the top: left side two lines read “Minimal Editorial Portrait”, right side two lines read “AI Prompt Lena”.
 
-![](img/721e09e15bb53b846ffcccf6ff580756.png)
 
 Ultra-realistic black and white avant-garde portrait of a woman wearing a sculptural white hood integrated into a black garment. The hood twists into exaggerated folds that distort the facial proportions. Soft light grey studio background, cinematic lighting, conceptual editorial photography.
 
 Add editorial text layout at the top: left side two lines read “Minimal Editorial Portrait”, right side two lines read “AI Prompt Lena”.
 
-![](img/87cb7b9c926dbe75edab9b39d5019939.png)
 
 Minimalist black and white fashion portrait of a woman wearing a black high-neck coat. Her face is partially erased and cut into sharp geometric fragments, creating a surreal identity distortion effect. Soft light grey studio background, dramatic editorial lighting, high fashion conceptual photography.
 
@@ -60,7 +56,6 @@ Ultra-realistic black and white portrait. Three-quarter profile facing right. Th
 
 High-fashion editorial portrait of a Japanese male model with short clean hair and sharp facial features. The model has a melancholic, fashionable and emotionally distant expression, looking sideways toward the camera with calm, slightly tired eyes and relaxed lips. Wearing a minimalist white sleeveless tank top. Dramatic cinematic studio lighting in blue tones with subtle purple highlights, creating a moody atmospheric glow on the skin. Solid blue seamless studio background with smooth gradient lighting. Side profile portrait composition, modern fashion magazine photography style, minimalist aesthetic, high contrast lighting, cinematic color grading, ultra realistic skin texture, sharp focus, 8k detail. Top editorial text layout: left side two lines read “Minimal Editorial Portrait”, right side two lines read “AI Prompt Lena”.
 
-![](img/395cbaae54e62f32034a0f85fba2e3a9.png)
 
 High-fashion editorial portrait of a young East Asian male model with short cropped hair and strong facial features. The model has a calm confident expression, looking slightly to the side with relaxed lips. Wearing a dark jacket over a simple shirt and a chunky metal chain necklace. Dramatic cinematic studio lighting casting shadows across the face, emphasizing facial structure and skin texture. Solid deep red seamless studio background creating strong color contrast. Close-up portrait composition, modern fashion magazine photography style, minimalist composition, sharp focus, high contrast lighting, cinematic color grading, ultra realistic skin texture, 8k detail.
 
@@ -74,11 +69,9 @@ Top editorial text layout:
 
 **right side two lines r**ead “AI Prompt Lena”
 
-![](img/d488629be4921ee47d919cdd7057699c.png)
 
 Minimal high-fashion beauty editorial portrait of a young female model with pale skin, soft freckles and delicate facial features. The model has a calm elegant expression, slightly parted lips, head gently tilted upward, looking slightly above the camera. She wears vivid orange eyeshadow with soft gradient blending, natural glossy lips and subtle luminous skin. Dark brown hair pulled back cleanly behind the ears. Wearing an avant-garde white pleated high-neck couture blouse with dramatic ruffled collar and sculptural texture. Close-up portrait composition, elegant fashion pose, clean light gray seamless studio background. Soft diffused studio lighting creating smooth shadows and highlighting facial contours. Professional high-fashion beauty photography, editorial magazine style, ultra realistic skin texture, visible pores, cinematic lighting, sharp focus, 8k detail.Top editorial text layout: left side two lines read “Minimal Editorial Portrait”, right side two lines read “AI Prompt Lena”.
 
-![](img/fbf73c52a0de657dce9a60baf5bf7dbb.png)
 
 Minimalist fashion editorial portrait of a young male model sitting on a white cube in a relaxed pose, shown in a full-body composition. The model leans slightly forward with his elbows resting on his thighs and hands loosely clasped, creating a natural editorial seated posture. He has short twisted braids and light facial hair, with a calm, slightly tired expression and relaxed gaze directed toward the camera. He wears a white sleeveless tank top, loose beige linen trousers and brown leather boots. Clean white seamless studio background with soft shadows on the floor. Natural directional studio lighting highlighting the contours of the body and realistic skin texture. Minimal modern fashion photography style similar to COS or Acne Studios campaigns, sharp focus, ultra detailed, realistic fabric textures, 8K.
 
@@ -88,7 +81,6 @@ left side two lines read “Minimal Editorial Portrait”
 
 right side two lines read “AI Prompt Lena”
 
-![](img/8989baeae6263d5a34dc64150def7e66.png)
 
 **Minimalist fash**ion editorial portrait of a young person with a shaved buzz cut hairstyle, shown in a clean side profile. The model has a confident, rebellious, slightly arrogant fashion-model expression with a subtle defiant attitude. Natural skin texture with freckles and subtle facial marks, wearing a black oversized blazer over a white t-shirt. Soft studio lighting with smooth shadows, light gray seamless background, minimal composition, realistic skin detail, medium portrait shot, sharp focus, Vogue style fashion photography, ultra detailed, 8K.
 
@@ -996,19 +988,12 @@ T-Shirt : Black-and-white fine art studio portrait of the uploaded person, seate
 
 ** **
 
-![](img/eb307b4894aad2f8e37edd3a6a743bd9.png)
 
-![](img/577119501d00a0a7c9be3446b8abdb6b.png)
 
-![](img/81ea59abeeef366b93ce5ba4ad0e675a.png)
 
-![](img/a416b06e7aaf711d6054bcc1c55dcce4.png)
 
-![](img/5ba25853a1ddbde1d6e102fc6eef3d0b.png)
 
-![](img/7567077b57f25cf5c9bfeeacd218d6b0.png)
 
-![](img/1a851df45b046d14773999b5389f47a6.png)
 
 ![](img/bdd990dac992d811719e60dcc39c6797.png)
 
@@ -1054,7 +1039,6 @@ Solid vibrant yellow seamless studio background enhancing contrast. Close-up por
 
 High-fashion editorial portrait of a young male model with short hair and dark skin. The model wears a bright orange jacket and a matching orange baseball cap. He poses with his head slightly turned to the side, looking subtly toward the camera with a calm, composed expression. The entire image is viewed through a strong vertical ripple refraction effect, with dense repeated wave-like slicing across the whole composition, creating distorted optical displacement, fragmented reflections, slit-scan style stretching, venetian blind distortion. Dramatic cinematic studio lighting. Solid dark green seamless studio background enhancing contrast. Close-up to mid-shot portrait composition, modern fashion magazine photography style, ultra realistic skin texture, sharp focus, high contrast lighting, cinematic color grading, experimental editorial photography, 8k detail. Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena
 
-![](img/191338b6643100e4d7678eb00ba3ba71.png)
 
 ![](img/021fa8ccc3748553016dee6e48cb0ecf.png)
 
@@ -1078,13 +1062,11 @@ Warm golden sunlight hits the face from the side, creating soft highlights on th
 
 Natural beauty editorial photography style, cinematic lighting, shallow depth of field, hyper-detailed skin texture, ultra-realistic photography, 85mm macro lens, Vogue beauty editorial aesthetic, 8K photorealistic.Add editorial text layout at the top: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/c55dc02edb7e4e266246efd60e3513a7.png)
 
 Ultra-realistic black and white fashion portrait. Side profile facing right. The woman wears a sleek black turtleneck garment. A melted sculptural mask grows from the cheekbone area and flows downward like liquid wax. Soft light grey studio background, dramatic studio lighting.
 
 Add editorial text layout at the top: left side two lines read “Minimal Editorial Portrait”, right side two lines read “AI Prompt Lena”.
 
-![](img/b1480892e4094e1419e76454f4862aa5.png)
 
 Ultra-realistic avant-garde fashion portrait in black and white. The model wears a sculptural black turtleneck garment. Her face appears stretched and distorted by a surreal melting mask that flows across the facial structure like liquid metal. Soft light grey studio background, dramatic fashion lighting, minimalist editorial composition, conceptual high fashion photography.
 
@@ -1118,7 +1100,6 @@ left side two lines read “Minimal Editorial Portrait”
 
 right side two lines read “AI Prompt Lena”
 
-![](img/74d704055be29e90be689a8ca55afa2c.png)
 
 Ultra-realistic luxury beauty and jewelry editorial portrait of a platinum blonde woman with pale blue eyes and natural freckles across her nose and cheeks. Extreme close-up composition with the model looking directly into the camera, resting her chin softly on her hand. Her skin appears luminous and dewy with subtle natural highlights. She wears multiple stacked diamond rings and elegant silver earrings. A white ruffled high-fashion blouse frames her face. Clean soft gray studio background with diffused soft lighting that gently highlights facial contours and jewelry reflections. High-end beauty photography aesthetic similar to Dior Beauty, Chanel Jewelry and Vogue beauty campaigns. Ultra detailed skin texture, visible pores, natural freckles, cinematic realism, sharp focus, 8K.
 
@@ -1128,7 +1109,6 @@ left side two lines read “Minimal Editorial Portrait”
 
 right side two lines read “AI Prompt Lena”
 
-![](img/34bf25ad2f180438e1a021b506d59ddc.png)
 
 Minimal beauty editorial portrait of an East Asian female model with long straight black hair, natural freckles across the cheeks and nose, soft pink blush makeup, glossy natural lips, smooth radiant skin.
 
@@ -1144,7 +1124,6 @@ left side two lines read “Minimal Editorial Portrait”
 
 right side two lines read “AI Prompt Lena”
 
-![](img/1668319de9fea626f6281f475969073b.png)
 
 Minimalist fashion editorial portrait of a young male model with messy wavy dark hair partially covering the face, natural freckles across the cheeks and nose, wearing thin round silver metal eyeglasses.
 
@@ -1152,15 +1131,12 @@ The model has a calm, slightly tired fashion expression, soft relaxed lips, look
 
 Close-up head and shoulders composition, centered portrait framing. Clean light gray seamless studio background. Soft diffused studio lighting creating subtle shadows and depth, professional high fashion editorial photography, cinematic lighting, ultra realistic skin texture, sharp focus, 8k.
 
-![](img/3436367efa001cfa9fdc6e33cebce907.png)
 
 Ultra-realistic minimalist editorial beauty portrait of a young woman with voluminous short curly hair, natural freckles across her cheeks and nose, shown in a close-up composition. The model slightly tilts her head upward while looking directly into the camera with relaxed eyelids and softly parted lips, creating a calm, confident editorial expression. She wears large gold hoop earrings and a structured black blazer with a minimal neckline. Clean light gray seamless studio background. Soft diffused studio lighting highlighting facial contours, realistic skin texture with visible pores and natural imperfections. High-end fashion photography aesthetic similar to Vogue, Saint Laurent and Celine beauty campaigns. Sharp focus, minimal composition, cinematic realism, ultra detailed, 8K.
 
-![](img/9fe9cd64e9f237a0d82d1ed73065325a.png)
 
 Minimalist fashion editorial portrait of a young female model sitting in a relaxed squat pose on a soft fabric stool. She has very short bleached hair with a white headscarf tied like a bow. The model shows a confident, rebellious, slightly arrogant fashion-model attitude. She wears a white polo shirt, beige cargo shorts, dark socks and chunky white sneakers, accessorized with simple gold jewelry. Clean light gray seamless studio background, soft studio lighting with natural shadows, realistic skin texture, modern street fashion editorial style, sharp focus, high-end fashion photography, ultra detailed, 8K.
 
-![](img/2e32f3364686f9380932f2d12a4a07b4.png)
 
 Minimalist male fashion editorial portrait of a young model with wet wavy hair and natural freckles, shown in a close-up composition. The model has a confident, rebellious fashion attitude with a calm, slightly defiant expression. He wears a white shirt layered under a brown trench-style jacket. Clean light gray seamless studio background, strong directional studio lighting creating subtle shadows, realistic skin texture and natural imperfections. Modern high-fashion editorial photography style similar to Saint Laurent campaigns, sharp focus, ultra detailed, 8K.
 
@@ -1236,7 +1212,6 @@ Replace the current face with my uploaded face image, ensuring correct facial al
 
 A high-end editorial photo of a [IMAGE UPLOADED] placed flat on a [green soft bedroom], captured from a direct top-down view. The surface is gently disturbed to suggest recent motion or interaction. The front of the product is fully visible and properly oriented upright. The area around the product is intentionally left open to optionally place [YOUR ELEMENTS] that visually enhance the scene. Natural sunlight from the upper left casts warm, realistic shadows. 3D realism, luxury product photography, shallow depth of field, 1:1 format.
 
-![](img/c5559288d884085cc171796b21c41e28.png)
 
 {
 
@@ -2744,7 +2719,6 @@ Double exposure surreal portrait of a young woman in profile, wearing a light bl
 
 # 静物
 
-![](img/e40a2cbc9919378278b885a97ef64fe2.png)
 
 Spring Tulip Ladybug
 
@@ -2758,7 +2732,6 @@ The insect crawls across a velvety tulip petal with soft natural texture, while 
 
 Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/d272a6b1fb9cd10b81b99c6215668de8.png)
 
 Ultra-detailed macro photograph of a full-body dragonfly constructed from translucent organza fabric, perched lightly on a blooming spring cherry blossom branch.
 
@@ -2782,7 +2755,6 @@ Material appearance must remain pure translucent organza, absolutely no lace tex
 
 Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/39376b11bfcaf115ce9b950fd5547db7.png)
 
 Ultra-detailed macro photograph of a full-body moth made from translucent organza, resting on a blooming purple hyacinth flower.
 
@@ -2800,7 +2772,6 @@ Shot with 100mm macro lens, f/2.8, dreamy purple spring background.
 
 Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/1473760a376a1899694558f3a78f2e29.png)
 
 Ultra-detailed macro photograph of a full-body grasshopper made from translucent organza, perched on a fresh green leaf bud.
 
@@ -2818,19 +2789,15 @@ Shot with 85mm macro lens, f/2.8, fresh spring greenery background.
 
 Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/33fbd3dd9c076afecd27043af28c7fed.png)
 
 Dragonfly in organza. Head: pale pink, black eyes, antennae black. Thorax: soft green. Abdomen: light coral. Wings: transparent lavender with soft pink edges resembling petals. Legs black. Soft spring floral background, airy macro aesthetic. Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/0260b71b0d40342cffe9589d776dceba.png)
 
 Full-body bee in organza. Head: pale gold, black eyes, black antennae. Thorax: light pastel pink. Abdomen: soft lemon yellow with pastel green segments. Wings: transparent pale lilac. Legs black. Springtime airy aesthetic, micro detail. Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/80ec84e14e5a45bf1b00e8f501e0e3e1.png)
 
 Ultra-detailed full-body butterfly made from translucent organza. Head: soft peach pink organza with black eyes, thin black antennae. Neck: ivory organza. Thorax: soft mint green. Abdomen: pale lemon yellow. Upper wings: translucent pale lavender, lower wings: soft blush pink, delicate stitched veins resembling petals. Legs black-jointed thread. Airy spring light, creamy background. Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/c84430f17972f082f6e8755fa7f04673.png)
 
 Ultra-detailed macro photograph of a full-body handcrafted textile butterfly sculpture, the entire butterfly fully visible in the frame, including antennae, wings, body, and legs.
 
@@ -2850,7 +2817,6 @@ Soft studio lighting, creamy ivory background, shallow depth of field, contempor
 
 Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/ac0b4d0b17967d9d4728ca65c521e02c.png)
 
 Ultra-detailed macro photograph of a full-body textile praying mantis made from translucent organza, the entire insect visible from head to legs.
 
@@ -2870,7 +2836,6 @@ Soft studio lighting, creamy neutral background, shallow depth of field, high fa
 
 Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/9ff7d2fcabf282a8741a47ee7dc553e6.png)
 
 Ultra-detailed macro photograph of a full-body dragonfly made from translucent organza, resting on a fresh willow branch with young leaves.
 
@@ -2890,19 +2855,15 @@ Shot with 100mm macro lens, f/2.8, blurred willow leaves swaying in soft spring 
 
 Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/e262f0715ac405251cbc806315bea4cf.png)
 
 Tiny insect in full translucent organza. Head: soft yellow, black eyes and antennae. Thorax: pale green. Abdomen: soft pink. Wings: lavender, delicate stitched veins. Legs black. Airy, spring micro aesthetic. Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/0be40c06aaa7f6b83668da1a381ca7f2.png)
 
 Full-body snail in translucent organza. Head: soft pink, black eyes, black antennae. Shell: soft pale peach organza spiral. Body: tender green, airy, slightly curling. Legs not visible. Spring-inspired, soft lighting, shallow depth. Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/afe93b76109ad2065f4b326bdd8a9e93.png)
 
 Full-body ladybug in organza. Head: soft ivory, black eyes and antennae. Thorax: pale rose pink. Abdomen: soft red with subtle spots in darker red organza. Legs black. Delicate floral spring macro style. Top editorial text layout: left side two lines read Minimal Editorial Portrait, right side two lines read AI Prompt Lena.
 
-![](img/00f91d69d41d2dd769c4df3b1c2db322.png)
 
 ltra-detailed macro photograph of a handcrafted textile scorpion sculpture.
 

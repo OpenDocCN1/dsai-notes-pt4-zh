@@ -52,7 +52,6 @@ revAnimated，breakdro，anything-v5-PrtRE，这几个二次元的大模型都�
 
 ### 日出
 
-![](img/daeb3f93fb9cc42751a4811b0e27efff.png)
 
 ```
 morning glow, pastel sky, cool tones, sun rays, soft light, peaceful atmosphere, early morning serenity
@@ -60,7 +59,6 @@ morning glow, pastel sky, cool tones, sun rays, soft light, peaceful atmosphere,
 
 ### 雨天
 
-![](img/ef3a1eab6255e548836032571f5b46d1.png)
 
 ```
 raindrops, wet surfaces, reflections, umbrellas, puddles, moody atmosphere, soothing sound of rain
@@ -76,7 +74,6 @@ snow-covered landscapes, winter wonderland, soft snowflakes, chilly atmosphere, 
 
 ### 森林
 
-![](img/c8da5f1d8e2758bfe0ab4a2d0b13805d.png)
 
 ```
 lush greenery, towering trees, dappled sunlight, serene atmosphere, nature&#x27;s embrace, forest tranquility
@@ -92,7 +89,6 @@ ocean waves, sandy shores, seashells, sea breeze, coastal landscapes, relaxing a
 
 ### 城市
 
-![](img/23e2e5f5e57fc5303c0e585a14f9bb8e.png)
 
 ```
 urban landscapes, city lights, skyscrapers, bustling streets, metropolitan atmosphere, modern architecture
@@ -100,7 +96,6 @@ urban landscapes, city lights, skyscrapers, bustling streets, metropolitan atmos
 
 ### 山脉
 
-![](img/3464aa6c9ce3d158c3d3bc2e05369aa7.png)
 
 ```
 majestic peaks, rugged terrain, panoramic vistas, alpine beauty, outdoor adventure, breathtaking heights
@@ -108,7 +103,6 @@ majestic peaks, rugged terrain, panoramic vistas, alpine beauty, outdoor adventu
 
 ### 沙漠
 
-![](img/1e11b8ec85cc6b977c5eb1cd8a0e639f.png)
 
 ```
 arid landscapes, sand dunes, endless horizons, sun-scorched earth, desert wildlife, stark beauty
@@ -116,7 +110,6 @@ arid landscapes, sand dunes, endless horizons, sun-scorched earth, desert wildli
 
 ### 花园
 
-![](img/2c42d6cac20adf3c5a61f7cd0392e38d.png)
 
 ```
 blooming flowers, colorful petals, fragrant scents, nature&#x27;s bounty, vibrant gardens, peaceful scenery
@@ -124,7 +117,6 @@ blooming flowers, colorful petals, fragrant scents, nature&#x27;s bounty, vibran
 
 ### 夜空
 
-![](img/8b3f3c50d2bcd39bce5abdb88cee3c38.png)
 
 ```
 starry skies, moonlit nights, celestial wonders, constellations, tranquil darkness, cosmic beauty
@@ -132,7 +124,6 @@ starry skies, moonlit nights, celestial wonders, constellations, tranquil darkne
 
 ### 日常生活
 
-![](img/e3f65e877120374d571044fcdfa657cb.png)
 
 ```
 everyday moments, candid snapshots, familiar surroundings, personal narratives, human connection, authentic experiences
@@ -140,7 +131,6 @@ everyday moments, candid snapshots, familiar surroundings, personal narratives, 
 
 ### 儿童游戏
 
-![](img/d5c0305d7dac6d3dc4150a23774d6b81.png)
 
 ```
 playful children, youthful energy, laughter, innocent joy, carefree fun, heartwarming scenes
@@ -148,7 +138,6 @@ playful children, youthful energy, laughter, innocent joy, carefree fun, heartwa
 
 ### 家庭时光
 
-![](img/1d613ea1f34e4c26f5d63a996e2d9149.png)
 
 ```
 family gatherings, shared memories, loving connections, generational bonds, intimate moments, emotional support
@@ -156,7 +145,6 @@ family gatherings, shared memories, loving connections, generational bonds, inti
 
 ### 友谊
 
-![](img/fe9b7e2a3750a74ef0e8a943f9106479.png)
 
 ```
 close friends, shared laughter, lasting bonds, heartfelt conversations, camaraderie, trust, and loyalty
@@ -164,7 +152,6 @@ close friends, shared laughter, lasting bonds, heartfelt conversations, camarade
 
 ### 爱情
 
-![](img/f69de33fe61d09e2eb64ff2292c127ba.png)
 
 grid-0438.png
 
@@ -174,7 +161,6 @@ romantic moments, loving gestures, passionate embraces, tender affection, intima
 
 ### 冒险
 
-![](img/207d8dd2048c2dde68702abd44f4752a.png)
 
 ```
 daring adventures, exhilarating experiences, outdoor exploration, personal growth, risk-taking, thrilling challenges
@@ -182,7 +168,6 @@ daring adventures, exhilarating experiences, outdoor exploration, personal growt
 
 ### 运动
 
-![](img/0d03cd6dc1b8b8591c5c9baf1ff343af.png)
 
 ```
 athletic pursuits, intense competition, physical exertion, teamwork, dedication, personal triumphs
@@ -190,7 +175,6 @@ athletic pursuits, intense competition, physical exertion, teamwork, dedication,
 
 ### 音乐
 
-![](img/0037fad1faa9ff90b4da8e72efa48d27.png)
 
 ```
 live performances, rhythmic beats, emotional melodies, musical instruments, creative expression, shared passions
@@ -198,7 +182,6 @@ live performances, rhythmic beats, emotional melodies, musical instruments, crea
 
 ### 舞蹈
 
-![](img/0d97c19499889507f570625c64e1082e.png)
 
 ```
 graceful movements, rhythmic motion, elegant expressions, cultural traditions, passionate performances
@@ -206,7 +189,6 @@ graceful movements, rhythmic motion, elegant expressions, cultural traditions, p
 
 ### 烹饪
 
-![](img/4408174ceb74ca179e5395dcf208412c.png)
 
 ```
 culinary creations, mouthwatering dishes, cultural cuisine, fresh ingredients, delicious flavors, shared meals
@@ -214,7 +196,6 @@ culinary creations, mouthwatering dishes, cultural cuisine, fresh ingredients, d
 
 ### 节日
 
-![](img/c80cb6739a7958c22588f5175d5f2e29.png)
 
 ```
 festive celebrations, colorful decorations, traditional customs, cultural performances, communal gatherings, high spirits
@@ -222,7 +203,6 @@ festive celebrations, colorful decorations, traditional customs, cultural perfor
 
 ### 旅行
 
-![](img/74444ae0684ddb045554911be9a50744.png)
 
 ```
 exploring new destinations, cultural immersion, wanderlust, breathtaking sights, global adventures, memorable experiences
@@ -230,7 +210,6 @@ exploring new destinations, cultural immersion, wanderlust, breathtaking sights,
 
 ### 艺术与创意
 
-![](img/433feb3cb646a983f9090cecc5db492d.png)
 
 ```
 artistic expression, creative projects, inspiring works, imaginative ideas, personal passions, skillful craftsmanship
@@ -238,7 +217,6 @@ artistic expression, creative projects, inspiring works, imaginative ideas, pers
 
 ### 宠物与动物
 
-![](img/bfc405dbee8a09901004182242534411.png)
 
 ```
 furry friends, loyal companions, wild creatures, animal encounters, playful antics, heartwarming bonds
@@ -254,7 +232,6 @@ stylish clothing, fashion-forward trends, personal style, self-expression, runwa
 
 ### 放松
 
-![](img/18d35d20d00602fc1d29468a00dc31ab.png)
 
 ```
 calming moments, peaceful solitude, rejuvenating activities, self-care, restful environments, mental well-being
@@ -262,7 +239,6 @@ calming moments, peaceful solitude, rejuvenating activities, self-care, restful 
 
 ### 工作场所
 
-![](img/4c919f2a7ed76dbefaab20758be00cc1.png)
 
 ```
 professional settings, collaborative teams, workplace challenges, career accomplishments, shared goals, personal growth
@@ -270,7 +246,6 @@ professional settings, collaborative teams, workplace challenges, career accompl
 
 ### 教育
 
-![](img/82b16dd77cd5cba2b220721e145c4f8d.png)
 
 ```
 learning environments, classrooms, teachers and students, educational materials, academic achievements, lifelong learning
@@ -278,7 +253,6 @@ learning environments, classrooms, teachers and students, educational materials,
 
 ### 灵性
 
-![](img/8706a4b24bb4f4c5eaf239df37b4d81c.png)
 
 ```
 meditation, mindfulness, spiritual practices, self-discovery, inner peace, personal growth, emotional healing

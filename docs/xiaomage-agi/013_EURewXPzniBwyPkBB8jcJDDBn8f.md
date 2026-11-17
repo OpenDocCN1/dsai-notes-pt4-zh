@@ -10,7 +10,6 @@
 
 这是生成的图
 
-![](img/2fb498de4e935c2cf18a3d6431edf996.png)
 
 ![](img/ce0056b5ccf3dc76d62b1fee39728c5b.png)
 

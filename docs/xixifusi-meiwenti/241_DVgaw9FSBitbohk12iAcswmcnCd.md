@@ -26,7 +26,6 @@ chatGPT
 
 ![](img/35ef0047b7e9979369ab578089060d00.png)
 
-![](img/cb3d3e50c5c02b787eb71074027f6348.png)
 
 ![](img/9acb4c58bca47163842f98faf3a24721.png)
 

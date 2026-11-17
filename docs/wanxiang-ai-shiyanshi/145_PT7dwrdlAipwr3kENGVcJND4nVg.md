@@ -87,9 +87,7 @@
 
 ![](img/1aeadd8bbb35a33a9241036faef6c3cb.png)
 
-![](img/6381c393e67371d46803a304dd926cda.png)
 
-![](img/ec044ee27362636afef04cad7b041f5c.png)
 
 > 沉浸式短片不支持二次编辑，如您有调整的需求，可以在本地进行优化。
 
@@ -118,7 +116,6 @@
 | **跨境电商** |  |  |  |  |  |  |
 | **儿童绘本** |  |  |  |  |  |  |
 
-![](img/f7df11ea6fc17cd9c3e3bfff6a210673.png)
 
 [5b622825-444c-48e9-b743-43089f81ede2 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gdjebo7Mho0aBUx87pUcvlpnnZf)
 
@@ -126,7 +123,6 @@
 
 [30351238-4222-419c-831c-38f98a0a1fed.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XrDLbxue4on0uPxwdKfcQi4HnXb)
 
-![](img/a561fdbf9c69365e406e7e776a68963a.png)
 
 [接下来的一分钟里我们的世界.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q5S0bDzX5oWe0mxvH9HcDkwwnSe)
 
@@ -146,11 +142,9 @@
 
 [胖橘上班.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RR9HbIxlmoME4NxczrrcRMOHnUf)
 
-![](img/168f279f2cb2d5ba12ba622982c55dd7.png)
 
 [下载 - 2025-11-10T204121.749.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZQwSbZorgoby4qx387Ncdd9bnXe)
 
-![](img/820ce51108860a89464e0802ac68c775.png)
 
 [高级商品仿写.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mi4Lb8a9oo33qnxOJMucyv6Xnef)
 
@@ -170,29 +164,23 @@
 
 [167129e5-bb25-4e12-befa-24fae24ee77d.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JRyFbGResoXxvcxxNKIcy6GonfA)
 
-![](img/2b882bcb4073987db273d0eb459b59c4.png)
 
 [5182337f.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CCGBbjThMo1dAGxJ1VncQzv4n9g)
 
-![](img/783d70d7f466ce6105c09f7948380d2a.png)
 
 [2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IkvubcV4OoDovixjBHJcQGlSnzc)
 
-![](img/5926f5721131dc4b377f2b64e422d540.png)
 
 [3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Afbfbs8bfoIKfLxdsekc2IOPnee)
 
 制作一个与模仿的视频类似的视频，突出强调产品的黑色星期五促销活动 - 六折优惠。
 
-![](img/c707da65bd066edf14ab89dfb067d0ed.png)
 
 [ea8af423168f61a0eefc5859c25d4bd6.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YeXvbKnUfo7aLvxpo9TcTWCSnrh)
 
-![](img/88ddf69c72731b22c7469db53683a9e5.png)
 
 [176f5fbe20bcbb7258f234c74c53905b.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OqKTbsbJjoN0fVxyGT3chM24nYb)
 
-![](img/1965420321deb28f577b3378b1c3e7f9.png)
 
 [download (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P0vrbH9oIodXn3xkEZKc2gq8n3e)
 
@@ -214,7 +202,6 @@
 
 [179feac3-cd06-4a24-8381-7d68e77357ed.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SHnPbDrh3oPo4yxawcbcCzn4nwh)
 
-![](img/1d3f3ec1c66ded54a71a64517f47c876.png)
 
 [44959c87.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G5vPbBUj7oRsC0xaVbgcc1rInLb)
 
@@ -225,27 +212,21 @@
 | **智能生视频** |  |  |  |  |
 |  |  |  |  |  |
 
-![](img/2ee9d08d558be4b4f28de43dc981c605.png)
 
 [筋膜枪.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GjEabUbFyoHnizxwp1JcuaS9nAh)
 
-![](img/3eab76a563047e164c93a652c21c2f00.png)
 
 [海鲜餐厅团购.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L19HbsGyEoLxctxTuP9cX5UmnWf)
 
-![](img/c3651d450210ff491176f80f16ded45b.png)
 
 [16ed7b16.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N6zxbZvhCovkcSxfae6cyK34nlf)
 
-![](img/a7f6850b61aaed3d7f9877df614a1f41.png)
 
 [20250515-142051.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QGaobD1JboD6OqxcpXscFLfSn3J)
 
-![](img/5b4cb55d054162b34dff3c4514b02ff9.png)
 
 [一张图带货.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F0WTbJygMoTtpUxc2YncBuI1nqb)
 
-![](img/0df5285d86719daa5fbf042980ba4287.png)
 
 [下载 (9).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MkW9bv26poOGaExmhuscaF89n6f)
 
@@ -262,7 +243,6 @@
 | **步骤** | **具体操作和概述** | **示例演示** |
 | --- | --- | --- |
 | Step1 | +   选择首页的【智能生视频】工具，进入视频创作环节； |  |
-| Step2 | AI创作环节分为以下步骤： | ![](img/b3a0b8fa66047793975ddbd5ad60ef46.png) |
 | Step3 | 当当当当，视频生成好了，让我们一起来看看～ | ![](img/863ea8d17e82f23458a8e75f69ad8202.png) |
 
 > 如您不想在视频中出现字幕、贴纸等包装元素，可以直接在【画面包装】选项中设置。
@@ -271,7 +251,6 @@
 
 > **爆款复刻功能上线！**请点击输入框下方点击「复刻爆款视频」→粘贴链接 / 上传本地视频→生成
 
-![](img/91be9bc7b4924e966c32164cda38886b.png)
 
 ![](img/e672089a6ddc95505d32bc7e3636d29b.png)
 
@@ -344,15 +323,12 @@
 
 上传照片
 
-![](img/d36f3bccd6ce5608b28d48426978b0f5.png)
 
 输入要读的文本，选择音色
 
-![](img/d17e0d31a1be59a9ed76987b9b619a7b.png)
 
 对角色设置动作（选填）
 
-![](img/b4866b99f0b66b23f9a8a1dbba439031.png)
 
 智能包装，如需要
 
@@ -364,7 +340,6 @@
 
 等待中
 
-![](img/9be518e85410e2f82ed0ce675570ce6f.png)
 
 预览
 
@@ -384,21 +359,14 @@
 
 | **分类** | **视频效果** | **图片1** | **提示词1** | **图片2** | **提示词2** | **图片3** | **提示词3** | **图片4** | **提示词4** | **图片5** | **提示词5** | **图片6** | **提示词6** | **图片7** | **提示词7** | **图片8** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **登录我的视角** |  | ![](img/6e4c3fdcf6ce45fc4700b53eb831fc1e.png) | 丝滑推镜聚焦到这名女性的左眼瞳孔，一直推镜到超特写 | ![](img/23dbb62237961254b063ef3f36e58ec4.png) | 2s | ![](img/203e46aab92eb3326a8be88c04164ea3.png) | 2s | ![](img/b19427bee6cf0b4b2e6d62955146f073.png) | 2s | ![](img/369973989d370c0bd1ea4d8156a20cb2.png) | 2s | ![](img/e9500706d54715c640d69cf18eb3e1dc.png) |  |  |  |  |
 |  |  | ![](img/e0f657a7933b6454b6938f2cffab61bb.png) | 丝滑推镜聚焦到小猫的左眼瞳孔，一直推镜到超特写 | ![](img/51974d219e89b641f12438ad8df665e0.png) | 2s | ![](img/e6aa6744ee94f0d991760e013b9b3b75.png) | 2s | ![](img/f48c22e9493108281938a17535f1cdb0.png) | 2s | ![](img/4c7c29c9c99689d973013b9fafec3204.png) |  |  |  |  |  |  |
 |  |  | ![](img/987c1acae4265bbc6d9d3c29f4c081e6.png) | 丝滑推镜聚焦到这名男性的左眼瞳孔，一直推镜到超特写 | ![](img/2bff2143e8e7f705e1791788d1b6247b.png) | 2s | ![](img/ec2630b3dcf2f055ecbcbaefeb0a4de4.png) | 2s | ![](img/a4960a2f3d1533fd0766aef8011edfa7.png) | 2s | ![](img/37d25cdeddefc79113096fca5421155b.png) | 2s | ![](img/406df6c2bf88995d72df85116a1a4054.png) |  |  |  |  |
-| **第一视角过山车** |  | ![](img/45929a123927847ff24889f29b62f446.png) | 第一视角双板滑雪快速穿越到下一个场景 | ![](img/3b13c2d6a3f06f34cab9ed53b9616ef2.png) | 第一视角双板滑雪快速穿越到下一个场景 | ![](img/9bb76ffd76f3c1b6163899ac92c75e32.png) | 第一视角双板滑雪快速穿越到下一个场景 | ![](img/12e2c2a411418b5b0d4cf18070fa835d.png) | 第一视角双板滑雪快速穿越到下一个场景 | ![](img/0beb992fc84fb13ade746eef4c361f1e.png) |  |  |  |  |  |  |
-|  |  | ![](img/f106d65e0b82ab2d02d639826f4524d7.png) | 过上车第一人称视角超快速穿越（也可不要提示词） | ![](img/3f9b725b9ee49681f3d47110d1c395d6.png) | 过上车第一人称视角超快速穿越（也可不要提示词） | ![](img/e9e8a6e81ea83a2324e4c522696b4ce1.png) | 过上车第一人称视角超快速穿越（也可不要提示词） | ![](img/c52a9546cab2d3ac23efa94e7f561d18.png) | 过上车第一人称视角超快速穿越（也可不要提示词） | ![](img/2a3ba85a3df99034ae1523f3b7ad5013.png) | 过上车第一人称视角超快速穿越（也可不要提示词） | ![](img/8fe4263b984c18ae8fbdafa56be063fd.png) | 过上车第一人称视角超快速穿越（也可不要提示词） | ![](img/581f3d96266305a7067d6afb7de96443.png) | 过上车第一人称视角超快速穿越（也可不要提示词） | ![](img/9f4bcfb83d5378820af5e6fdf0f60e49.png) |
-| **长大后我就成了你** |  | ![](img/e7fd0dca213fd802ea23747187f0cc22.png) | 图片1里的人物丝滑渐变成图片2 | ![](img/69536e85ae9112f20eeb27b222a1b818.png) | 图片2里的人物丝滑渐变成图片3 | ![](img/77d32f1d4fc834ceab0a99ca7b445b1f.png) | 图片3里的人物丝滑渐变成图片4 | ![](img/d600bca3b85412a4935329f506a03712.png) |  |  |  |  |  |  |  |  |
-|  |  | ![](img/a6a643ff1ca3881297c3a64960c92b93.png) | 图片1里的人物丝滑渐变成图片2 | ![](img/81470a6c32a8a9d4173c98b679875b79.png) | 图片2里的人物丝滑渐变成图片3 | ![](img/f169e374abfed102971d3564d80f1b2d.png) | 图片3里的人物丝滑渐变成图片4 | ![](img/28e0d652ee7a32bdf6ae37e5c16053bc.png) | 图片4里的牛丝滑渐变成图片5 | ![](img/aa4d43972e7ab7a0f3470cf2379f80e9.png) |  |  |  |  |  |  |
 | **换装秀** |  | ![](img/0514b5a1e189b885e238db1a6d2fd591.png) | 图1中的人物边走路边渐变到图2中的人物 | ![](img/206fa7e03b92ee4895bf7b89eb932ff6.png) | 图2中的人物边走路边渐变到图3中的人物 | ![](img/29e605f807c708bd0b941b4235b9c169.png) | 图3中的人物边走路边渐变到图4中的人物 | ![](img/6d7ff157bae12a3fe30f8fc0418c09e4.png) |  |  |  |  |  |  |  |  |
 |  |  | ![](img/c67bfc12b76fe55c43d750134018a405.png) | 图1中的人物边走T台边渐变到图2中的人物 | ![](img/679e9206041dccf24dd04f0f1618ace7.png) | 图2中的人物边走T台边渐变到图3中的人物 | ![](img/5e7a54086768aaa904ab42d6e5fddd0d.png) | 图3中的人物边走T台边渐变到图4中的人物 | ![](img/44a7ccae00fea47f2f07f767c16d7dc3.png) |  |  |  |  |  |  |  |  |
 | **表情包转场** |  | ![](img/fb24d2406119d2761a2e40a961607a43.png) | 图1里的人脸丝滑过渡到图2中的人脸 | ![](img/cd59ad07fc9296173e487b0c7cc07a78.png) | 2s | ![](img/010991f5aea6d2a8d2cdd2e73aa6df84.png) |  |  |  |  |  |  |  |  |  |  |
-| **梦核循环** |  | ![](img/5e406f9a9d808fe30149440bb73e0999.png) | 模拟第一视角在图1的场景中慌乱直行（镜头晃动），通过图1的门直达图2的场景 | ![](img/93cca8efcc27eaef418b9daf19af3a21.png) | 模拟第一视角在图2的场景中慌乱直行（镜头晃动），通过图2的门直达图3的场景 | ![](img/8ed0f505dc26c60fb988cb656d584728.png) | 模拟第一视角在图3的场景中慌乱直行（镜头晃动），通过图3的门直达图4的场景 | ![](img/528b54512d7852efdb1f59eb34b4e252.png) |  |  |  |  |  |  |  |  |
 | **我的四季** |  | ![](img/8405560c03586a9803275546e3f2cb98.png) | 3s | ![](img/4f2b9ee04bb72c8bf0681061ca37df80.png) | 3s | ![](img/462a404c3bf7cbe83b7140102874f314.png) | 3s | ![](img/225bf931ec903c22935cce70a44e0c83.png) |  |  |  |  |  |  |  |  |
 | **熔岩巧克力** |  | ![](img/77fcb2f457e8adf94212444037b830fb.png) | 5s | ![](img/3a62dad8892a5f04c27a7f26b46b942f.png) |  |  |  |  |  |  |  |  |  |  |  |  |
 
-![](img/0a54ea6f84ba46111b72134b4751e5e7.png)
 
 [jimeng-2025-08-31-3930.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Sxeubfp3roDtFax0X6wcvzcWnbe)
 
@@ -410,19 +378,15 @@
 
 [jimeng-2025-09-01-1092.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kb9BbqpmioOgnmxklSIc7Vcun0g)
 
-![](img/2b28288a50f894d63bda4c6cb811812d.png)
 
 [jimeng-2025-09-01-4835.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DOGfb7Umyo1IzVxCB53csGVsnXg)
 
-![](img/fe6867535311c952479135797a038d74.png)
 
 [jimeng-2025-08-22-4348.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MOAmborWgo4unhxA9C3cjjQWnBg)
 
-![](img/4e773f200310a23c0e1694d05b966456.png)
 
 [jimeng-2025-08-21-5084.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IU9sbs6BtoIECPx5ejTcX7pJnqc)
 
-![](img/a917e6bdfdfeeff2313a7b31fb02dc23.png)
 
 [jimeng-2025-09-01-8487.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QDmPbEqZLo4r8Zxt0SicTiGNntg)
 
@@ -438,7 +402,6 @@
 
 [jimeng-2025-08-31-7540.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S5C4bRy5XoVvtYxzgw7cpOBinwc)
 
-![](img/b53ed711f0d1c19bb3e1257538716189.png)
 
 [jimeng-2025-08-21-2677.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D4U5bKHBdoFe8ExQM5rcFkhPnMc)
 
@@ -476,7 +439,6 @@
 
 等待生成
 
-![](img/422dc8b61877fb8de201f5f0540fa6c1.png)
 
 ### 数字人讲解
 
@@ -495,11 +457,9 @@
 
 选择数字人讲解
 
-![](img/6d777e2c026088ba4ade8dfa18320ee1.png)
 
 选择数字人
 
-![](img/f9fd13699d4480466b6c2b84d94c1845.png)
 
 输入创作内容
 
@@ -541,31 +501,22 @@
 
 ![](img/aa53e917adf33611ec5ceb45f7b4c3f1.png)
 
-![](img/7f22b68d02d7e52083aa0e846e9b7e64.png)
 
 ![](img/397f9eae9083570478931684d0b134f2.png)
 
 ![](img/6b52bbefbcf22ad4d96987d82fc4a94c.png)
 
-![](img/5c66c3ef5d8a3b80e5c7564640d67c0c.png)
 
-![](img/d6db1935b96b80ee9b30f95ee0dba069.png)
 
-![](img/2627c1508c67798ffc1c79b0b1d3ab78.png)
 
 ![](img/fe85355966ce1c01fb05b7cb9b90d444.png)
 
-![](img/b246e83e1e860bc809f4b076b6fcacf7.png)
 
-![](img/816ba9449c9b089216cf0880e2cd1408.png)
 
-![](img/93945c835b60636540254ca56ef92ba6.png)
 
-![](img/11884f9ddf72b0e3aa522ac61c094e73.png)
 
 ![](img/7047528c25cdeb64f93e4c1bb9a80f19.png)
 
-![](img/350d05949293ea6303ce1ae8c6a60bbb.png)
 
 ![](img/cd02206122cffe316f61ab75cecd78fb.png)
 
@@ -623,15 +574,12 @@
 
 选择入口
 
-![](img/cfdc09372b5f005200e009c7548d8149.png)
 
 进入灵感世界
 
-![](img/d310da1f5ee569a5ff37189f6edd4ab8.png)
 
 热点模块
 
-![](img/8946fcc1be055cf436d06817b64c5bdf.png)
 
 创意玩法
 
@@ -645,23 +593,16 @@ Vol4：起号新捷径：兼职作者用复刻爆款快速涨粉2.5万
 
 > 用小云雀复刻爆款，不用苦想提示词，不用反复调参数，一键解析→自动生成，还能精准复刻你历史内容，风格高度统一、人设永不崩，小白也能轻松出同款爆款😜！
 
-![](img/e196118490388a1fe7a3e96a75504dbf.png)
 
-![](img/1ad7ecaa6de65d5117fb738f6a13fc17.png)
 
-![](img/f3c994df9daa6e2ba1ac8d3bd9fc37b0.png)
 
-![](img/45d946386a878dffe094e1b08593e76e.png)
 
 Vol3：一句指令，医生随手做出爆款科普视频。
 
 > 做知识科普视频，明明内容干货满满，却总卡在剪辑和呈现上！直到遇到小云雀，碎片时间就能轻松出片，还靠它跑出 200w+ 爆款内容！
 
-![](img/422622eb2dd079eb76e44c1ba7f3743c.png)
 
-![](img/4f89262cf41f3b0e170d0d38d463fdc6.png)
 
-![](img/92df9cc63e9e344a78de465ee1f1de38.png)
 
 ![](img/709197c12f28088858afd20cdc4ec3bc.png)
 
@@ -671,11 +612,8 @@ Vol2：少儿动漫作者-涨粉1w实战！
 
 > 播放量一路走高，粉丝稳步上涨，宝妈萌娃都追着看！新手/瓶颈期作者速冲！
 
-![](img/1801e17302fcc0f416f4b29b9ae9bd4a.png)
 
-![](img/608430cae2da70e0bfdf37ecd852036f.png)
 
-![](img/a73bfa4a82b97881a8eefb788eaf291b.png)
 
 ![](img/c104d16fd3c9037dd185ea09cdab0228.png)
 
@@ -687,7 +625,6 @@ Vol1：多品牌商家- AI增长之路。
 
 ![](img/a872ef81a6f479dc446e2c7b70f1b342.png)
 
-![](img/5d1b1de5913f574de79b45419ec2957a.png)
 
 ![](img/d03748fd45421a0d9e2a0475c39098f7.png)
 

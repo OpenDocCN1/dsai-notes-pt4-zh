@@ -2,7 +2,6 @@
 
 > 来源：[https://aigclena.feishu.cn/docx/LRIsdX97YoORKSxY8o9cSCxMnWf](https://aigclena.feishu.cn/docx/LRIsdX97YoORKSxY8o9cSCxMnWf)
 
-![](img/14bafd61d26ffcf767515d9bf5a1ad9d.png)
 
 [X2Twitter.com_NONsq6mxdcqLNZHI_1280p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kp5ybHZhEoGAJ2xlf67cP1SJn7e)
 

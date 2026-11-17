@@ -2,7 +2,6 @@
 
 > 来源：[https://my.feishu.cn/docx/G5uKdkqf2oEv2uxbimycqxTYncc](https://my.feishu.cn/docx/G5uKdkqf2oEv2uxbimycqxTYncc)
 
-![](img/ba01eb2fc168bfe3ad72ce41635cc510.png)
 
 您准备好将您的 AI 创作提升到新的水平了吗？
 
@@ -62,11 +61,9 @@
 
 # 电磁Electromagnetic
 
-![](img/94c22d1d38754703b203b01a1939c7f5.png)
 
 # 双重接触Double exposure
 
-![](img/461a793ac22e99ddfd7e5670949d6bc5.png)
 
 # 熔融玻璃Fused glass
 
@@ -78,11 +75,9 @@
 
 # 扎染Tie-dye
 
-![](img/0678653148eba4f6707a038ce8f63ee7.png)
 
 ## 金箔Gold leafing
 
-![](img/6241e29cedf1f694d937eaebf337e952.png)
 
 ## 雏娃娃Hina doll
 
@@ -110,11 +105,9 @@
 
 ## 马赛克Mosaic
 
-![](img/dac08489662bd5e0493660ec2c950179.png)
 
 ## 绗缝Quilted
 
-![](img/b987a07f5a9c1f7b485b018ae5dfd627.png)
 
 ## 转描动画Rotoscope animation
 
@@ -122,11 +115,9 @@
 
 ## 衍纸Paper quilling
 
-![](img/2bbf77d57c1803980883d4cae37a6a9b.png)
 
 ## 卵石艺术Pebble art
 
-![](img/cd701291ab40d931504827ea27ea9388.png)
 
 ## 折纸Origami
 
@@ -138,7 +129,6 @@
 
 ## 千花玻璃Millefiori glass
 
-![](img/3dc6d4e9d510347072c741da42033d0e.png)
 
 ## 翠绿挂毯Verdure tapestry
 
@@ -162,7 +152,6 @@
 
 ## 禅宗书法Zen calligraphy
 
-![](img/5e11cead90ab96809011e85b1be95b9e.png)
 
 ![](img/780211496e9a774cb93f5263f62d763c.png)
 

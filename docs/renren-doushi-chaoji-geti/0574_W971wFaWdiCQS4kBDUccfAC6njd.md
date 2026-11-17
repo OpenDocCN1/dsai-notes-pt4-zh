@@ -14,15 +14,10 @@
 
 而这是我花了5天(含工作日，实际更短)做出的app，功能有多样化日期记录、倒计时，事件时间线，准备清单，小组件，iCloud同步等一系列功能，我认为这应该算一个小而美的app了。所以我可以说，我做到了。
 
-![](img/32f11538437f6e43c48ea12603333390.png)
 
-![](img/fe28cac091b9428683a8bc85c2d3ad86.png)
 
-![](img/770f77ef1459a0e6ee21b8944b05d014.png)
 
-![](img/b54be0c9a0041a169f63075ea587883a.png)
 
-![](img/c0dd28b2210eabaf1fae90460beaa94d.png)
 
 ![](img/950efdb568f062a4bed50a65b4551f7b.png)
 
@@ -526,7 +521,6 @@ AI写好之后，尝试运行看看效果
 
 ![](img/148f3091e6515e5010e0ec2734b76833.png)
 
-![](img/605bcf6dfac7c3fd7f73217c5cc4704f.png)
 
 ![](img/edc9141d8a98c94dbb8f19e33e8cb4cc.png)
 

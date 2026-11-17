@@ -158,7 +158,6 @@ Prompt: Realistic documentary shot of high-resolution focused large crab walking
 
 Prompt: A drone that approaches a waterfall in a cliff before plunging down to the water
 
-![](img/03949e76f0866ea150edf5e7efb37545.png)
 
 [X2Twitter.com_k1iU9qfFzUdslI5g(576p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MoSmbLG5hoXbu9x3BebcPYpTnCe)
 
@@ -166,7 +165,6 @@ Prompt: A drone that approaches a waterfall in a cliff before plunging down to t
 
 Prompt: 3d render of green and blue glowing neon rhombus with smoke on dark background, minimalistic design. Glowing heart shaped frame in the clouds
 
-![](img/ef31c34acd44f92265ce072ba43d4324.png)
 
 [X2Twitter.com_1807509935724326915(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OqjhbjIZKoo3iLxUvIXcxeKrnYy)
 
@@ -178,7 +176,6 @@ Prompt: 3d render of green and blue glowing neon rhombus with smoke on dark back
 
 the text '[**text**]' is in flames and it's turning into ashes
 
-![](img/0e7073ce52aa5d5ee3bf1dedbfd4ffc9.png)
 
 [X2Twitter.com_1808136529996664836(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V9lubwdYHoCZEPxErstc5LZAnNe)
 
@@ -202,11 +199,9 @@ Cold promp**t:
 
 the **text '[text]' is cold over an iceberg
 
-![](img/91a14165aeb86677268c03cbf1ff53c4.png)
 
 [X2Twitter.com_1808140972335026180(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TJfybHKcUo5N4axiY2ec8jkmnKc)
 
-![](img/222ad20e939e36ee996f78f5abc08261.png)
 
 [X2Twitter.com_1808139639686897664(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JjpRbwv1ho1H2zxzfb6czBS1nWm)
 
@@ -214,11 +209,9 @@ Oasis prom**pt:
 
 the** text '[text]' is dust over a desert oasis. thin and elegant typography
 
-![](img/34024c516c07bef603bb4f6cbd316f51.png)
 
 [X2Twitter.com_1808140485132763139(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/R7uUbuWAXo4bLox91NrcGZJxnMf)
 
-![](img/07e7f8eaa24ebe21297468a16b3fc870.png)
 
 [X2Twitter.com_1808140189576896512(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MuKfbWNGBoDnhkxk2qzcj8nCnW5)
 
@@ -226,13 +219,11 @@ the** text '[text]' is dust over a desert oasis. thin and elegant typography
 
 A dinosaur surfing a wave, cinematic realistic shot LOL
 
-![](img/73586e629ab1738cc95ed6075b7394d2.png)
 
 [[twi]@Javi _twi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X71CbWEJqogM5mx5Oe6c5v0Xnxc)
 
 Drone view from above of a beautiful Amazon jungle and river, the drone descending and entering the dense jungle full of flowers, fast footage, speed
 
-![](img/89cc0cdc4bf5afda00ccad6cc2c10a23.png)
 
 [[twi]@Javi _twi (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XBhqbFJ2eoLu3bxca6RcS5X8nje)
 
@@ -244,7 +235,6 @@ an old photograph from the WW II, capturing a dramatic and surreal scene. A huge
 
 Close-up of a horrible zombie exploding and dismembering itself, on a sunny day, cinematic shot
 
-![](img/03bed046e71776cfb10213ac06786ac1.png)
 
 [[twi]@Javi _twi (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B8E9bZd1Ho8sYvxeBlhcbNgHnZd)
 
@@ -274,7 +264,6 @@ an old footage from the WW II, capturing a dramatic and surreal scene. A german 
 
 A pretty Swedish woman in the beach, palms, photography, hard sensual shadows over her nice body, zoom in
 
-![](img/bc8f53d01c8420ac46f97ba388df6c10.png)
 
 [[twi]@Javi _twi (8).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GzBYbIr13oCCXRxHVPicdpcPnvf)
 
@@ -292,7 +281,6 @@ a creature that is a blend of a penguin and a parrot in glittery overalls
 
 不知名网友：
 
-![](img/dd3b372bb68ed276c6c19005ea3aae42.png)
 
 [Gen-3 Alpha 2029060985, A woman wears a robe.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TbZUbX8EloBJRUxZ972ctvkknGc)
 
@@ -328,7 +316,6 @@ An Asian woman dressed in an elegant gown is concentrating on playing a crystal 
 
 复古的老式摄影机画面，一个模糊的UFO在天上飞行，动态镜头，VCR水印。
 
-![](img/f468181e0f475db64a3027b45840c6f9.png)
 
 [Gen-3 Alpha 3256777740, 世界大战，整个世界陷入一片战火，到处残垣.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XDdLb8EgQoSpOXxBkSmcYu1QnEb)
 
@@ -392,7 +379,6 @@ gen2 图生视频
 
 [Gen-2 3093451037, Screen movement, col, suimm0485_A_white_ex, brush_H -23.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rka0b2eYtoG3nixOsdJc8idxn5d)
 
-![](img/d0ac40f69eab54aa1b708069f0d9f441.png)
 
 [Gen-3 Alpha 3887507691, A super disaster mov.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CLhRbV9r8oYzOCx8RWZcw1mZnue)
 
@@ -416,7 +402,6 @@ A huge and ferocious beast is struggling to climb out of the crack in the street
 
 Under a dim and faintly visible rainbow is a lonely figure shedding tears in an environment of a gloomy sky with thick dark clouds and raindrops falling in the empty wilderness. Camera Movement: A medium shot starts with a side-lit view to emphasize the figure's solitude.
 
-![](img/4d1a1b6c52890e07ef2e197b1855902f.png)
 
 [Gen-3 Alpha 995187775, Soft warm light from.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EeXibNT7RoOo5jxPRawcNPzpnJb)
 
@@ -428,7 +413,6 @@ Soft warm light from street lamps on the flagstone road, As the sun sets gradual
 
 Comfortable wooden house with fireplace, snowing outside, still shooting inside, blanket sofa, dim but warm color tone
 
-![](img/5f39d7afc2b71b482a6da0807d0e3d1c.png)
 
 [Gen-3 Alpha 2904316966, POV surreal, black h.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BYf7bR33Mo65bExpPN1ckOJYnZb)
 
@@ -446,7 +430,6 @@ A Chinese man in a black suit and tie is fighting with many gangsters, surrounde
 
 Neon outline of a lightbulb, illuminated on a dark background as vibrant colorful wavy lines appear and ascend.
 
-![](img/371a4cfeb6239c59295131bbcc7f592f.png)
 
 [Gen-3 Alpha 1439492992, In the seaside scene.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XBcBbmNbWoUenPxazbkclMJMndb)
 
@@ -500,7 +483,6 @@ The camera focuses on the maple leaves on the ground. When a gentle breeze sweep
 
 An elegant black piano, whose body clearly reflects the blue of the ocean and the orange-red of the sunset, At the vast seaside, golden sand, undulating sea, orange-red sunset glow in the sky, Wide-angle shot, Beautiful artistic style
 
-![](img/17e364b234414f8ea060103cc81b940a.png)
 
 [Gen-3 Alpha 765983344, First-person view T.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AKjAbU4V2oNLfrxUafEc2LRTn4d)
 
@@ -530,25 +512,21 @@ In a ruined city, desolate and uninhabited, a humanoid horror robot appears. The
 
 There is a huge glowing butterfly flying in the deep sea, surrounded by a school of fish
 
-![](img/0a71242b3acb4ddb3689af1a09f4998e.png)
 
 [Gen-3 Alpha 2292910583, A giant humanoid mon.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Yzlcb0wjPol95lxIf5JcDko1nyh)
 
 A giant humanoid monster, made of fluffy light pink cotton candy, roaring to the sky, opened its mouths quickly, clear blue sky behind them, hand held camera fast zoom into the monster's mouth, there is a little blue fluffy cute monster baby inside of the monster's mouth. shallow depth of field, shaky camera, dynamic movement, 10x speed, dramatic, suspense
 
-![](img/a2cbbe8901cb892f1b1b521a8ad312c4.png)
 
 [Gen-3 Alpha 3362010646, panda fish is a crea.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DarkbGAWCo95D8xfo9vccWCfnge)
 
 panda fish is a creature ,with panda head and fish body, is swimming in the clouds
 
-![](img/91f3362d2acb77a7af1228cccfc27bee.png)
 
 [Gen-3 Alpha 3123194838, The beautiful Asian.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E09eb5TQSoCz1gx3CEscY5ggnNb)
 
 The beautiful Asian girl is on a runway, her clothes are a bunch of bubbles
 
-![](img/20b9f67d2415963e60f3a7e6ed53b789.png)
 
 [Gen-3 Alpha 2040206131, A beautiful Asian gi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PFpdbC72iozSUvxoiqQcSqrznq1)
 
@@ -644,7 +622,6 @@ Dynamic Close-Up Shot,  Zoom on a small, ordinary pebble lying on the ground. Th
 
 [X2Twitter.com_1807485110444556288(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JfhubgVc7oyCsGx7muLc2f6jnCc)
 
-![](img/27c1439942e066cd603a090b8effc0a7.png)
 
 [X2Twitter.com_1808929472218845184(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IMcJb8J2uoPWksxPm6fcY5mznfd)
 

@@ -72,13 +72,10 @@ image all - 表示4段关键词都想全部生成图片，使用这个命令时�
 
 原人物ip
 
-![](img/2552fc0a4c161f12b745c52de27deb6c.png)
 
-![](img/116af4829de2d33348836e2a3b7149ac.png)
 
 改变动作后
 
-![](img/570ce7f0788c888450fd4defc2b7fe91.png)
 
 ![](img/8b2ff5928918d0e2211e1255fb69d946.png)
 
@@ -88,7 +85,6 @@ image all - 表示4段关键词都想全部生成图片，使用这个命令时�
 
 如果喜欢以下这种风格的图片，也想生成一样风格的
 
-![](img/b4ced6de002b52fbab66b6b73708d341.png)
 
 ![](img/615f859f2da730f67d2338b33a0ae9a4.png)
 

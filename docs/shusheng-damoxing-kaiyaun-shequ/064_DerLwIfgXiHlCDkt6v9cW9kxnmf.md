@@ -12,17 +12,14 @@
 
 前往[InternStudio](https://internstudio-ascend.intern-ai.org.cn/console/dashboard)控制台 创建开发机->填写开发机名称->选择镜像->选择资源配置NPU*1，最后点击立即创建
 
-![](img/9759744144465a8d7ef1d950159933ff.png)
 
 ### 1-2.进入开发机
 
 当开发机的状态变成 【运行中】时点击进入开发机
 
-![](img/1b99b6520e6662e444d2035a2edd3a3c.png)
 
 ### 1-3.打开终端
 
-![](img/e79e40fd4890178eb32ea357a8767001.png)
 
 ## 2.Conda环境
 

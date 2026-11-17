@@ -18,7 +18,6 @@ Lovart大概率也会上，等我后续补充Lovart上Banana的更多趣味用�
 
 下列图片完全由AI生成。
 
-![](img/432f117c06ab70aaf815131727e086e9.png)
 
 ![](img/fb9c29808d2939697449ad12f8bbd8b0.png)
 
@@ -34,15 +33,11 @@ Lovart大概率也会上，等我后续补充Lovart上Banana的更多趣味用�
 做一些具有教育意义的条漫，使用中文，讲清楚淝水之战，图文信息丰富。/【上传上一张图】保持和图片一样的风格，做一个关于谢安的典故。
 ```
 
-![](img/bce745220c42d38c0e2b1ec4a01fd766.png)
 
-![](img/d4a5ef1f395f0164947e40c46a096234.png)
 
 ![](img/19dc0378086804cf82d9d5c245b1c829.png)
 
-![](img/cecd557549ebec573ab9dba4cf814a8f.png)
 
-![](img/09e15da1e6e85a7f2cc533de91f383f0.png)
 
 ![](img/bc69cce69ce65e56f0c4937d8f487508.png)
 
@@ -56,7 +51,6 @@ Lovart大概率也会上，等我后续补充Lovart上Banana的更多趣味用�
 做一些具有教育意义的条漫，使用中文，讲清楚淝水之战，图文信息丰富。
 ```
 
-![](img/1ab295bdcc571dd88f71646d6081bb79.png)
 
 +
 
@@ -94,17 +88,13 @@ Lovart大概率也会上，等我后续补充Lovart上Banana的更多趣味用�
 
 ![](img/2a3d78da0284d52c8074203ff3469666.png)
 
-![](img/93d81ddd4c5730f6c98318610b86dda4.png)
 
-![](img/945e43c89f4abd6d8cfe7154b2598e5e.png)
 
-![](img/f92777f8e7dc835ef0ad6b4c11bb4956.png)
 
 ```
 给我符合调性且突出产品特性的场景/给我模特和产品互动突出产品特性的场景
 ```
 
-![](img/ec9b82b834099a22332367e55858f079.png)
 
 +
 
@@ -120,7 +110,6 @@ Lovart大概率也会上，等我后续补充Lovart上Banana的更多趣味用�
 
 ![](img/fc5bbb5fd9e9403100cf07ebf5de984a.png)
 
-![](img/c391b1aad98f0507941b5beba95fbeec.png)
 
 ![](img/7c2605d75cc56261f08ada3030d3a660.png)
 
@@ -137,7 +126,6 @@ Lovart大概率也会上，等我后续补充Lovart上Banana的更多趣味用�
 做一个2025年圣诞季的主视觉，放在大屏的，我要红金色主题复古插画风格，Riso印刷风格，细节多，海报上的中文文字内容你自己写
 ```
 
-![](img/413ee95ddcd031f0202ccc40ef313615.png)
 
 +
 
@@ -151,7 +139,6 @@ Lovart大概率也会上，等我后续补充Lovart上Banana的更多趣味用�
 
 ![](img/3761e7297319c90d63661a12711f1192.png)
 
-![](img/1e842153f37ba533138200ef35443148.png)
 
 ![](img/822752814da918fbe26691ac0d01a0e9.png)
 

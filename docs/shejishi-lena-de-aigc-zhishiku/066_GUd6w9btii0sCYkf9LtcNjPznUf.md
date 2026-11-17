@@ -40,7 +40,6 @@
 
 3、A First-person shot of a person in their living room, sitting on a Swivel chair, rotating themselves rapidly at ultra-fast speed. Ending on a Giraffe in the room.
 
-![](img/04d951ccda0262a9facf2b2256ec5376.png)
 
 [X2Twitter.com_1814626561758515200(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MMG7bzRQsosZWBxd2f2cOhncnde)
 
@@ -52,7 +51,6 @@
 
 5、A First-person shot of a person in their living room, sitting on a Swivel chair, rotating themselves rapidly at ultra-fast speed.
 
-![](img/499692b64ee5c0cda79202eb3015f1e4.png)
 
 [X2Twitter.com_1814627850131283970(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SCePbeZ4HoWzQXxTQxYcMPzanMf)
 
@@ -76,7 +74,6 @@
 
 9、A first-person shot of a child in their bedroom, jumping on the bed, moving rapidly at ultra-fast speed. Ending on a dinosaur in the room.
 
-![](img/292e7fcb631cc5ed3490b60c40b361cd.png)
 
 [X2Twitter.com_1814629901036888064(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Aqk2b0zZQoFJfMxZEKZclllWnef)
 

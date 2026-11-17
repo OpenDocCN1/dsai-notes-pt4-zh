@@ -34,7 +34,6 @@
 
 完整预览可点击链接：http://www.easyjx.cn/article/126755/reader
 
-![](img/6d84dd8f1a5eba85d205ad8cee24a5c2.png)
 
 ![](img/33b668d6eb26888167d86b4007b8b1f4.png)
 
@@ -84,7 +83,6 @@
 
 ## （1）仪表盘
 
-![](img/13e9c5a558b15c0352ff776830466e54.png)
 
 ## （2）文章管理
 
@@ -114,11 +112,8 @@ vip用户在后台可以设置，并设置会员的有效期
 
 这个地方很关键，文件服务器的配置、租户配置、网站基础信息、站长信息、
 
-![](img/416d88ceb0594ca0ca37f6693c25dba4.png)
 
-![](img/4e6484ce01c747a28a60b61f8028a55c.png)
 
-![](img/b7806047e6cd4072e3062e5d1226c6c4.png)
 
 ![](img/7a6dc6f2566953fb42225cb0e8a2ed05.png)
 

@@ -74,7 +74,6 @@
 
 手机软件，应用商店下载
 
-![](img/af434328f6d4ac807ee83a21bf354d66.png)
 
 ![](img/3ef42a2584b781a06c46cfd371bcf2d1.png)
 
@@ -208,7 +207,6 @@
 
 | 1、下载快影 | 2、点击AI创作 | 3、AI生视频【申请体验】 |
 | --- | --- | --- |
-| ![](img/e57372203cadff6af25cbccf5726b819.png) | ![](img/dc5ac5361cfffcad75a939c298ebb6f4.png) | ![](img/4fedb8d8f38b18a4e9836e4654e805d8.png) |
 | 4、填写申请信息 |  |  |
 | ![](img/ea2d550175ce6c94e38e5afef976f6ef.png) | ![](img/55a30d8f16ebcaf8e9a57f4e99775c68.png) | ![](img/d69b14f9413019026beebc49da892ef2.png) |
 | 5、申请提交成功。目前已经有56万人提交了申请，申请下来之后会有短信提醒 |  |  |
@@ -244,13 +242,11 @@
 
 视频1：没什么动作
 
-![](img/10dc1421c20f1b2e58780f6b0706e319.png)
 
 [9c880515daba85e159d6e509062800a5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DHizbOm91of5nQxThDvcOy8KnHe)
 
 视频2：有小幅度动作
 
-![](img/bcda5becf41ca4c55db32ae523e96377.png)
 
 [7d5e7b3969907e45012243a524040653.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HDrIbHsT0oc3AWxmndscajNAnWb)
 

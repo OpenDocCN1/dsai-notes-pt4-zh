@@ -3120,7 +3120,6 @@ https://scys.com/view/docx/Onl7dyK2vosOPuxVq3mcCXqtnbc
 
 希望这本亏钱指南，能为你的人生风控提供帮助。
 
-![](img/d30831c3ab8019bf6e1eea5e6d56912d.png)
 
 [《人生亏钱指南》龙哥盟出品.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BT97b9mhqog13Rx7oDyc1tw8n8f)
 
@@ -3188,7 +3187,6 @@ https://scys.com/view/docx/Onl7dyK2vosOPuxVq3mcCXqtnbc
 
 ![](img/2f50161e68add549000f8e876d9b1dd1.png)
 
-![](img/3a5b005537053bc63e95c0f19c6f7466.png)
 
 ![](img/40e3e01ff3ac2aa7a0aa0517f9d1d22d.png)
 

@@ -28,7 +28,6 @@ LangGenius Dify
 
 它是为你而做的（ D o i t f or y ou）。
 
-![](img/c311d2f9108fd56791db4e6cb0f04ed0.png)
 
 ### （PS：LangGenius 是 Dify 正式发布前的名称，本号名称和 Logo 正在更换中。）
 
@@ -64,11 +63,8 @@ Dify.AI 是一款 LLMOps 平台，帮助开发者更简单、更快速地构建 
 
 **只**需 4 步，就可以创造一个适配各种场景的 AI 应用，例如个性化对话机器人、AI 智能客服、基于专业知识的文本生成等。
 
-![](img/7402538209106801d92f5b94ad673249.png)
 
-![](img/4598982cd10b54584dcaf4ec27c63b12.png)
 
-![](img/0e0bf50b722d2674d1c0c7a35ed0ac50.png)
 
 ![](img/761d06191035bc30332bd9f0ce5560e7.png)
 

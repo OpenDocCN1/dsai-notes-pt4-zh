@@ -14,43 +14,24 @@ Published Dec 19, 2024
 
 地址：http://anthropic.com/engineering/building-effective-agents
 
-![](img/b40f81adde64ff2f979be669d0c37bc2.png)
 
-![](img/2bfea9ae6ec202ed9ba281bed31c2ef4.png)
 
-![](img/b2cb746e8773d7c4fca4044d34c13576.png)
 
-![](img/3b05aa0ed731c4dc338bd2b2f93b8805.png)
 
-![](img/3b2fa10d32ac6e0ca4794118e864b427.png)
 
-![](img/ab7d5c5f1490477c11757039ffe9d2d6.png)
 
-![](img/90a3a476d28d9b6c8681b618edd59fe6.png)
 
-![](img/f07c27fc17ffd01f78025d8588215e89.png)
 
-![](img/d21ebf187d7162927105bfcba2acbf33.png)
 
-![](img/ba26d830052810addffbb540d2bcdc0a.png)
 
-![](img/0f40feb88d39aaf65f276afed76333de.png)
 
-![](img/77caa73454134d7e213f1b4b0d7a4dc0.png)
 
-![](img/0f5a948821461cc53d4a57b4a0645fef.png)
 
-![](img/0552b7c6b0befef5fa35d179950e22b2.png)
 
-![](img/adddb12a9f9d81cc5a4c8dea8c3a5dd7.png)
 
-![](img/ea965e6abe46dad153f44e3fe4134d1b.png)
 
-![](img/e081a01a67405a87d549319a5e19a75e.png)
 
-![](img/ac3a1dab68a1f225f035b161bccc755b.png)
 
-![](img/b4fe1d84f7025dd6c80d06f3f4ba7c0b.png)
 
 ![](img/8dc9735a00ac76037eee3f0d282b02ff.png)
 

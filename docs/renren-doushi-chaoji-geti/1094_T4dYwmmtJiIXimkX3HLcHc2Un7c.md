@@ -54,7 +54,6 @@ https://www.deepseek.com/
 
 https://platform.deepseek.com/usage
 
-![](img/ed73df80fdaa04ed5a95b42724026c69.png)
 
 现在它会免费送10元额度，也可以自己充值。点击创建API key，就可以创建自己的密钥了。
 
@@ -464,7 +463,6 @@ DeepSeek很擅长模仿各种风格，比如你假设一个情节，让它写作
 
 打开 DeepSeek 这个神奇的工具，然后大胆地输入你的提示词，比如 “我要做一张 30 个人的表格，帮忙写个代码” 。
 
-![](img/e3ee3e83e3dea2a401dbdc23f5375193.png)
 
 等它把代码生成后，再把 30 个人的名字输进去，它就会给出全新的代码，是不是超智能！
 

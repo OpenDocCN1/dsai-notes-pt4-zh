@@ -146,11 +146,9 @@ prompt的高质量决定chatgpt回应内容的高质量。因此，找对好的p
 
 1/https://bestprompts.cn/
 
-![](img/90f2643902185040607f1e140bbc1fe3.png)
 
 2/https://prompt-shortcut.writeathon.cn/
 
-![](img/f2687c06b9d918a5a10b20304923bf31.png)
 
 3/www.promptgenius.site
 

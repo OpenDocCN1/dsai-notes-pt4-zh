@@ -44,17 +44,14 @@ What’s New in Ray3.14
 
 ## 可灵
 
-![](img/ee934599560896bb48659b52c240c892.png)
 
 [kling_20260131_文生视频_Extreme_ma_4553_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SAkPbpcI1oKA7hx2KJmciOJanNg)
 
 ## luma
 
-![](img/697ccaf493394e11a0e0ead0bea8803c.png)
 
 [2026-01-31T09-48-10_extreme_macro_watermarked.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YnwpbvUGGoDSzVx5ECqcvWaEnNf)
 
-![](img/42ddbbf749fcff314ef7dcd276073e93.png)
 
 [2026-01-31T15-55-58_extreme_macro_watermarked.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EjVXb20Zto1JurxNOVdc4Md6n6f)
 
@@ -112,7 +109,6 @@ Extreme macro cinematic cherry pie landscape. Syrup flowing like molten lava, cr
 
 [Wan1_视频生成_Extreme macro cinematic cherry pie landscape. Syrup flowing like molten.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UAyubRvPxopRqFxqEGQcV78unSe)
 
-![](img/3f756dd12e29e17366a524ce53794671.png)
 
 [Extreme_Macro_Cherry_Pie_Landscape_Video.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QGbpbEKjyoJRetxKIa6cV2ebn7f)
 
@@ -146,15 +142,12 @@ Runway的效果
 
 这段提示词，可灵的整体的氛围感要稍强于Luma，比如太阳、有雾气升起这样的小细节
 
-![](img/48c754af9a7648a27e9b81be81b53772.png)
 
 [kling_20250919_图生视频_电影感的特写镜头_冰_5942_0 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FnAJbTVVJoOV4uxm7lCcLzgNnHf)
 
-![](img/4669d814129ce3a903fa16c668818dd3.png)
 
 [2026-01-31T09-54-20_%E7%94%B5%E5%BD%B1%E6%84%9F%E7%9A%84%E7%89%B9%E5%86%99%E9%95%9C%E5%A4%B4_%E5%86%B0%E5%B0%81%E7%9A%84%E6%B2%B3%E9%9D%A2%E7%BC%93%E6%85%A2%E8%A3%82%E5%BC%80_watermarked.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xe0nbYjTZoy0tTx5A85c7UejnVd)
 
-![](img/16a34833d8d85c011842a9795134e1d3.png)
 
 [冰封河流奇幻破裂视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TG5ib5hOroN0IsxTtlncKjNDnyp)
 
@@ -210,7 +203,6 @@ Runway的效果
 
 ![](img/8d82544e7c751a78634d34613cc22ec3.png)
 
-![](img/349c5c2907b4df564f1f949f91594d29.png)
 
 [2026-01-31T13-56-42_generation_with_audio_watermarked.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EIGubLCFvoGW79xH78NcGC66nHc)
 

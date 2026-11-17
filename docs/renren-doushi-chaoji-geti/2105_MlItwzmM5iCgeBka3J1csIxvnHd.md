@@ -212,7 +212,6 @@ AI 算法实践是门手艺活，特别是对于 非 AI 科班的同学，是必
 
 ![](img/db0f95904a4a0704dc73de766df77764.png)
 
-![](img/83252ec352a110b3ee15dc0ed688236c.png)
 
 ![](img/cae58a89f0fcf9147aa66d6150ccc45a.png)
 

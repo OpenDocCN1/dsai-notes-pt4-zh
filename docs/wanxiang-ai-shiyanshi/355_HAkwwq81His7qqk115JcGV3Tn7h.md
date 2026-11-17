@@ -14,7 +14,6 @@
 
 效果真的绝了。
 
-![](img/ce1f6a0db9f4f1af6679afd4fd88dc90.png)
 
 ![](img/36b6991b7cbfd46dbcff62e119e355b0.png)
 
@@ -95,7 +94,6 @@ Prompt 就像是一次性的便签纸。
 
 +    **Resources **（参考图片、文档）
 
-![](img/495cae689d7f4200e946583d706ef444.png)
 
 这带来一个关键变化： 按需加载（官方称它为渐进式披露 ） 。
 

@@ -12,7 +12,6 @@
 
 [Photo_To_Video_250707_1836627701929521.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NWvYba9RZoI061xXggYcuEwwn9g)
 
-![](img/94dff407611c642e7b8fc4c67e66778f.png)
 
 [Photo_To_Video_250707_1836627817543506.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SwBSbWwByoSz2yxed0KcpZwunEb)
 
@@ -56,7 +55,6 @@
 
 [360°环绕展示0702095651 (6).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MtdFb2kPUo0Oadx6jVcc9sXQnMc)
 
-![](img/c538d144dcf7f5c61afda6d99ecb909c.png)
 
 [360°环绕展示0702095651 (5).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Pupibrkmno0JFIxi0pIcFJ8lnhh)
 
@@ -68,7 +66,6 @@
 
 [360°环绕展示0702095651 (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zj4hb4GFbo1LRvxROpScuSDdnVc)
 
-![](img/f1590e966a594195852bbd3a30ae4151.png)
 
 [Photo_To_Video_250707_1836627882555996.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OATvbruMxoIYHoxtCjzcy7AKnGf)
 
@@ -78,7 +75,6 @@
 
 2024.7测试
 
-![](img/98b5db87c9c0b74ed072a1f89dbf730f.png)
 
 [output (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LUIqbIv7Bo91zGxvtqecRSBnnog)
 

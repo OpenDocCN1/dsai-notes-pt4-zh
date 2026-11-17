@@ -14,7 +14,6 @@
 
 # 1.清华大学DeepSeek教程【最简单明了】
 
-![](img/d443e9cc887dec42ac534d8abd8146bb.png)
 
 [DeepSeek从入门到精通(20250204)(4).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BuXObFbxFoZ4XzxvRYhcnhoinWg)
 
@@ -42,19 +41,16 @@
 
 ## 【清华大学】第二弹也来啦！
 
-![](img/1c4a2e066f8e41553c3f483b190bd891.png)
 
 [清华大学第二弹：DeepSeek赋能职场(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VcsWbow5HoyuBrxPAIoc5yeRn0g)
 
 ## 清华大学第三弹
 
-![](img/fcd1ed28605eced8f308e462fac068e7.png)
 
 [清华大学第三弹-普通人如何抓住DeepSeek红利(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jjl0bwfsioSbWFxeUS2cSGxanae)
 
 ## 清华大学第四弹
 
-![](img/512e3cf6741a6c80fab62e8aa3bf3076.png)
 
 [清华大学第四弹：DeepSeek+DeepResearch：让科研像聊天一样简单.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S4mRbGIfLoXIHrxpzlicqb9gnOc)
 
@@ -138,7 +134,6 @@ Monica AI
 
 https://monica.im/invitation?c=LAPIRW08 注册后会自动弹出**是否需要配置 e****d**ge 浏览器的应用扩展，扩展后你在 edge 浏览器上的搜索就会出现 Monica 给你反馈的 AI 搜索回复 最重要的是，Monica 是年费购买，聚合了市面上所有主流的 AI，800 块，一用用一年。效果一点不打折扣
 
-![](img/dd5d260ee762885d01cb158e2833f130.png)
 
 ![](img/88320e6a0664de90088cfd1cc70b1baa.png)
 
@@ -364,7 +359,6 @@ https://docs.siliconflow.cn/usercases/use-siliconcloud-in-chatbox
 
 点开之后会有一个复制按钮，点击复制，把复制完的内容填进我们刚刚的第五步模型填充的位置然后保存就可以使用了
 
-![](img/c85aec84c231828bdd54014144a1ba32.png)
 
 如果你找不到，还可以在官方的教程文档里 https://docs.siliconflow.cn/api-reference/chat-completions/chat-completions 找到这个地方
 
@@ -380,7 +374,6 @@ https://docs.siliconflow.cn/usercases/use-siliconcloud-in-chatbox
 
 最后，chatbox 是可以下载在手机客户端上的，你可以在手机上下载好，用网页版走完硅基流动 API 部署流程，然后在手机客户端选好模型提供方复制 API 保存，就可以在手机上使用满血版的 Deepseek 啦～
 
-![](img/93138213de66a7b292584157998f55c0.png)
 
 ![](img/5acf2e1cf76dfda5c228c2837550c298.png)
 
@@ -400,19 +393,15 @@ https://docs.siliconflow.cn/usercases/use-siliconcloud-in-chatbox
 
 打开之后忽略广告。选择第一个 DeepSeek-R1，然后点击箭头所指的推理按钮
 
-![](img/4bfec5883d7df63572529942426f24ee.png)
 
 出现这个页面后检查一下确认接入这个按钮能不能点，不能点的话就根据提示购买开通一个，购买不花钱的
 
-![](img/17a15db83c6607b0bddd6028d9569f7f.png)
 
 让然后我们点击确认接入
 
-![](img/884b4c81bc54330f52b16b9f0751f532.png)
 
 你就能看见你可以使用的 api 了，因为我开过一次，所以有两个
 
-![](img/b7b833caeeb23b1f052cb406d360ff62.png)
 
 好的，到这一步我们就要警惕一些，注意力集中啦，这里比较容易出错。
 
@@ -434,9 +423,7 @@ https://docs.siliconflow.cn/usercases/use-siliconcloud-in-chatbox
 
 火山云的调用地址是统一的 **https://ark.cn-beiji****ng.volc**es.com/api/v3【这个不能错】
 
-![](img/57b66521ae285333db9e31080f948e9e.png)
 
-![](img/5cbc96b73c303267e4ac03710bae26fa.png)
 
 然后其他的选项自行调整就好啦！
 
@@ -520,11 +507,8 @@ https://docs.siliconflow.cn/usercases/use-siliconcloud-in-chatbox
 
 这个提示词**不仅限于八字****，你可以**用这个来测算自己的八字和紫微斗数、西方占星术、星盘等等，分开对话，再根据结果交叉印证算的对不对，然后继续根据算对的来继续提问。【分开对话避免上下文干扰】
 
-![](img/3934598998947927399d56fe2a518924.png)
 
-![](img/02d26fa8ca4b70d0d2cb3fcd6509e0e9.png)
 
-![](img/625e1be497217b25a68861358985b179.png)
 
 ![](img/f477f5928ddd8041f91a6d2329997fc6.png)
 
@@ -1148,7 +1132,6 @@ deepseek 给了结果之后你还可以继续追问：
 
 > 时间 2025 年 2 月 11 日 17：19 分。请你帮我换算成农历年月日时按梅花易数的年月日时起卦法法起一个卦，求测我目前的 Deepseek 社群项目会不会黄【记得提要求换算并按年月日时起卦，不然 deepseek 默认按数字起卦的】
 
-![](img/ed5f3ab6c10b993b25fb811021290396.png)
 
 ![](img/329f821d9c1351932121db1183fe357b.png)
 
@@ -1232,7 +1215,6 @@ https://www.feishu.cn/community?from=app
 
 我们新建了一个表格后可以看见是这个样子的
 
-![](img/f92e992f47526fd0597679efe9aaf9fb.png)
 
 把第一列的表头「文本」，改成「输入」，这个输入就是我们日常和 DeepSeek 聊天时的提问框。
 
@@ -1244,21 +1226,17 @@ https://www.feishu.cn/community?from=app
 
 现在我们来添加 DeepSeek R1 字段，加上之后就可以自动对【输入】进行批量处理。怎么做，直接看图
 
-![](img/6d3f91624dc23aca4112df5dcaf175b5.png)
 
 注意！第一列是不能添加 deepseekR1 的，因为第一列我们要拿来输入，但是你也可以输入非文本内容，比如图片，比如附件，也可以几列一起混合输入
 
-![](img/d4b213934e0c637dea05e266fd755162.png)
 
 到这里其实就算完成了，至于你想怎么玩，其实就是跟你玩 deepseek 一样，只不过把提示词提前内置在【自定义要求】那里
 
-![](img/7f2b7cc9f004755d4b9fe6ef917f052c.png)
 
 ### AI 左脚踩右脚，螺旋升天，用飞书多维表格搭建 AI 小说推文工作流
 
 ok. 老规矩，我们来举个例子我之前是做小说推文的，我们使用 AI 绘画，会先使用 AI 将小说的故事内容用 AI 先“洗一遍”，将故事情节转化成一个个分镜，再将分镜转化成 AI 绘画好理解的 prompt 提示词。
 
-![](img/bf3e81d15ba44a96ead97d467bcd1bb0.png)
 
 因为只能一次性操作，所以**建议你的提示词要足够凝练，把自己的需求**一次性都让 Deepseek R1 满足。这里的提示词如果你担心不好控制结果，建议使用之前我们在使用 GPT 时的提示词模板。这里我贴一下一个好用的提示词示例网站 https://www.aishort.top/
 
@@ -1452,7 +1430,6 @@ Prompt 优解 工具链接： https://console.volcengine.com/
 
 比如我：
 
-![](img/bad6ea60e4ab3a7335690027a3c6173d.png)
 
 我的输出结果是：
 
@@ -1480,23 +1457,17 @@ Prompt 优解 工具链接： https://console.volcengine.com/
 
 我又重新添加了一列，增加字段，还是搭配 deep seek，这次我的提示词变成了让 AI 把刚刚帮我整理好的文本转换成【可以用于 AI 绘画的 prompt】
 
-![](img/f32a245b9ecc7909b0ee743580e8a0d1.png)
 
 然后把生成出来的提示词再开新的一【列】建一个新的字段
 
-![](img/72784bfee4056503773c46c1b8ee001d.png)
 
 点击这里的【添加为独立字段在表格中显示】就可以把思考过程也新建一【列】成为一个新字段，然后配合飞书多维表格内置的 AI 绘图工具
 
-![](img/da5e7a4acb0155b5be36357e40e1ce43.png)
 
-![](img/ca7b43d54002081057760373a4c09e49.png)
 
-![](img/5c41d47a95cbdd8bb460eefa4c9f1150.png)
 
 就能得到像我这样的结果，然后再批量操作，你看，是不是就实现了 10x 的增长效率
 
-![](img/9405735d1bccd6b78f9ffc1a017a29df.png)
 
 > 【注意】多个 AI 连用之间的的输入输出要区分清楚，比如上一个 AI 的输出内容是你下一个 AI 的输入内容，你就要在下一个 AI 工具创建的时候，在配置字段指令内容的时候选择上一个 AI 的输出结果
 
@@ -1598,11 +1569,9 @@ https://waytoagi.feishu.cn/minutes/obcnncazbaya21ys4d5bgkbb【2 月 10 日的直
 
 1.https://help.x.com/zh-cn/managing-your-account/suspended-x-accounts#how-to-unsuspend-Twitter-account
 
-![](img/c7e3206dbb122a97e5bfdfde4e380d3e.png)
 
 2.https://help.x.com/zh-cn/managing-your-account/locked-and-limited-accounts
 
-![](img/1b4c31d04d670ea841a9c7ec840a84f2.png)
 
 3.https://help.x.com/en/forms/account-access/appeals
 

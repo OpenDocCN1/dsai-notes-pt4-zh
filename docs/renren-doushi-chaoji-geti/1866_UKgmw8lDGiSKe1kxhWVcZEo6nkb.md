@@ -88,7 +88,6 @@ LoRA模型的应用场景
 (1girl, silver long hair, purple eyes, glasses),(yellow business_suit:1.4), lipstick, slim body, dynamic pose, dynamic angle,(street_background:1.3), (looking at viewer),BREAK(masterpiece:1.4, best quality), unity 8k wallpaper, ultra detailed, beautiful and aesthetic, perfect lighting, detailed background, realistic, solo, perfect detailed face, detailed eyes, highly detailed,  &lt;lora:害羞脸:0.8:0.6,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0&gt;
 ```
 
-![](img/5b4052c0aa9edd2517aa56260af7f3d2.png)
 
 可以发现：
 

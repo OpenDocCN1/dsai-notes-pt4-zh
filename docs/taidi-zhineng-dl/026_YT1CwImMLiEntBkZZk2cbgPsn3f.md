@@ -482,13 +482,11 @@ Lit的配置文件规则如下:
 
 首先需要增加以下两个编译参数-fprofile-arcs -ftest-converage重新编译LLVM：
 
-![](img/929f06780e91f39bf626b0f233914080.png)
 
 ![](img/5cdf76b188d44bdb91fbede487e0e253.png)
 
 运行[clang](https://zhida.zhihu.com/search?content_id=589182528&content_type=Answer&match_order=1&q=clang&zhida_source=entity)，[opt](https://zhida.zhihu.com/search?content_id=589182528&content_type=Answer&match_order=1&q=opt&zhida_source=entity)或是[llc](https://zhida.zhihu.com/search?content_id=589182528&content_type=Answer&match_order=1&q=llc&zhida_source=entity)程序，我们可以精心设计传入的参数和输入的文件，使得只有跟我们研究相关的代码被执行，运行后会生成.gcda程序运行的记录：
 
-![](img/7199677548139780c461bcbbea71a268.png)
 
 ![](img/ddab458bf33412b4a027e3323c6e2af6.png)
 

@@ -66,15 +66,12 @@
 
 [靠谱姐切片@泰来-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OoK3bMJ8zoLskzxvNZZcai4znDb)
 
-![](img/95357aa6ae7308f9cb6d1f934e5b65e6.png)
 
 [靠谱姐切片@泰来-2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UiOWbMoSOoFpO2xVveYcJMzbn5d)
 
-![](img/273b10e53870f7adfdb0a8c973cb18ba.png)
 
 [靠谱姐直播切片-@泰来5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GbDvbIYsDoWToqx9SGGcUUX9nAb)
 
-![](img/9ef2491a0b89f466ad4b2f92207b063f.png)
 
 [靠谱姐切片@泰来-3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MR3yb4cRxoDPC3xLpmtcDjzPnsq)
 
@@ -208,7 +205,6 @@ https://wx.zsxq.com/dweb2/index/topic_detail/5122188488818844
 
 **当时非**常激动，第一条作品就得到了正反馈。
 
-![](img/9e5b5a0e5abfa234bc7c59be0e685a33.png)
 
 ![](img/af7c08bc9a0eaf6eb557792b8a4aac26.png)
 

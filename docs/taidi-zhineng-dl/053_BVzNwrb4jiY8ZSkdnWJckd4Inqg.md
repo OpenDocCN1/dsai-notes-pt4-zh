@@ -440,15 +440,12 @@ CUDA runtime API默认的default stream是同步串行的，且一个进程内�
 
 ## Memory Layout
 
-![](img/f1e5ad91fed8f3b90885e7222b87f047.png)
 
 1D 指的是，grid/block/thread 都是 1D 的形式。还可以是 2D，与 Tensor 结构更容易匹配。
 
-![](img/673db435892ae6369ddb37db118a1d3b.png)
 
 2D 的，更好用。
 
-![](img/6d5b654fe62ab1c4b12bd33601666f07.png)
 
 ## intra-SM parallelism
 
@@ -674,7 +671,6 @@ GPGPU 的 bottlenecks:
 
 1.  data layout
 
-![](img/a926d7d17668f5bd76e2fae5f2c1e5f4.png)
 
 ## Memory Access
 
@@ -684,7 +680,6 @@ active warp 数量多一点，hardware 调度更容易 hide long latency operati
 
 但，warp 最大数量有上限，就是 FGMT 中的 register 和 PC 套数上限。
 
-![](img/321ca89432e0fff4a59fa5cc64585b09.png)
 
 ### Occupancy
 
@@ -692,17 +687,14 @@ active warp 数量多一点，hardware 调度更容易 hide long latency operati
 
 所以，max warp number 也可能不一样。
 
-![](img/5bb3ddaf2b1e0e4c8cf1b51324dd06c4.png)
 
 ### Memory Coalescing
 
 nearby 的核心目的是，提高 cache line 的命中率。如果没命中同一个 cache line，是否 nearby 都一样。
 
-![](img/ff3f23793f7373ad5ed261b73164a78e.png)
 
 ### AoS v.s. SoA
 
-![](img/a26c192822c17842cd55c6cde6fec5d7.png)
 
 所以，RISC-V CPU 和 GPGPU 可能很难共享同一套 data layout，进而导致没法兼容一套 pipeline / lowering 过程。
 
@@ -710,13 +702,10 @@ CPU 可以接受很大的 structure。每个 thread 有自己的 cache，把一�
 
 GPU 是多个 thread 执行相同的指令，访问不同的数据，所以，先 load 所有 A，再 load 所有 B，更容易在 thread 之间命中 cache line。
 
-![](img/06dfacd081e993ca3dc584b985b30476.png)
 
 ### Tiling
 
-![](img/8007e65412337d786e7d9aed470423b4.png)
 
-![](img/eb49766c3372bb2ae033a54f921ebfcc.png)
 
 ### Bank Conflict
 
@@ -728,39 +717,24 @@ warp发散。
 
 尽管warp中的线程从同一程序地址，但可能具有不同的行为，比如分支结构，因为GPU规定warp中所有线程在同一周期执行相同的指令，warp发散会导致性能下降。
 
-![](img/8972c6c1348bcbbb9c4bd1856f6bee8a.png)
 
-![](img/b7cb6dd2423d2d5e64ea968f19e96934.png)
 
-![](img/e72cf27b5e553bc91940026ba115d6ba.png)
 
-![](img/97e797e92b7ea621b07ef08f79fe9bc7.png)
 
-![](img/6971f0a08857f4d7f1f9eca67280fd2d.png)
 
-![](img/6e7c280188979f567b5e2b810fb73bf5.png)
 
-![](img/e051033eb343008f432bb7e12b0ac651.png)
 
 ## Atomic Operations
 
-![](img/998cfbb179abd10ba00226c8dc59b258.png)
 
-![](img/3573a58b88bedaf619ca8d32111d7dcc.png)
 
-![](img/045fd057a314394fcff779ac49aa8b32.png)
 
-![](img/7eb76b3659cf779e4ff240e5e1ff0b3a.png)
 
-![](img/e0546823ddfd712d1843511b967e6b32.png)
 
 ## CPU-GPU Data Transfers
 
-![](img/ba706d951f9ca42c37aae43b8ba91ad3.png)
 
-![](img/fa382cc8887da406b67c2f11e81e45d0.png)
 
-![](img/9b692b90cfa1440c25058b041f35cf3f.png)
 
 ![](img/708fe74b1816a6781664a371ebe6bbac.png)
 
@@ -793,95 +767,50 @@ GPU 的兴起
 
 # Collaborative Computing
 
-![](img/35f035140656b17b8c0f4e934a445a3a.png)
 
-![](img/ba66feb251f9daa90f8789667ef136b8.png)
 
-![](img/7c9eeb1e5ea5986d5d867d55ee18517e.png)
 
-![](img/61414dc0760143a5846c4a77e5cb347e.png)
 
-![](img/5ba72ceb39eae3e6c976c7332255b289.png)
 
-![](img/43f23896998cf41c297a049dda2930a8.png)
 
-![](img/34d66df77fbb5779cdffe4f4e7306541.png)
 
-![](img/4bf9484d1d9017075df3aa2337fb3e3e.png)
 
-![](img/f89d0cdadc4f7ff49438834b10f69f09.png)
 
-![](img/94d8dedc6a00b16ef5ef9167054e2a39.png)
 
-![](img/af63111c91a4bf4a53a05c5f607ca459.png)
 
-![](img/9d4091899b5f6c6bac6aba16de622c2b.png)
 
-![](img/d6eda11871d623fdc253faaca986cb95.png)
 
-![](img/ad3a7a0aea5391bbf3bb54769a2b188e.png)
 
-![](img/88823fa0201c8c6f368b63b9fc2bd367.png)
 
-![](img/eb9afe06970da5a5a1e381ea62926798.png)
 
-![](img/0ca2418d26e4e363234ec97ba8d468b3.png)
 
-![](img/2f1687839e1e87ba2b02e678ccb067ab.png)
 
-![](img/a0895db26bf2dd8261994f9db38b0981.png)
 
-![](img/ead1f9357d610f1fefbe3c468a7f11a2.png)
 
-![](img/192e54f8718074b72328179113be85ee.png)
 
-![](img/6022f7518a32ed9b24029a972bf402bc.png)
 
-![](img/975657284806bacca8b5848615c69b0c.png)
 
-![](img/257d04238762574196b79a8a6c3d9f20.png)
 
-![](img/75591dcf56569bfaad0c0ee65642e316.png)
 
-![](img/d4f9cf2db369152def27ff8071312179.png)
 
-![](img/c61f21a6dfcee7ae9a83e2eeee805979.png)
 
-![](img/a9a164b28b4e5592a91397d1adb730c2.png)
 
-![](img/195a6ee96b3de104b8d667ff721c3af7.png)
 
-![](img/f38debbeaa1ec09f3f1e11df1d3c6ace.png)
 
-![](img/67e104a5497f90825848ba3e6b943039.png)
 
-![](img/519abe181a1094f1b0eccc2c35900d44.png)
 
-![](img/d0794b73f01c391972acfbf6ecdbeff0.png)
 
-![](img/e0f5937a21bfc5c7a38be8a10c89288a.png)
 
-![](img/d5069072a6aff92b706ce4bafa5190c5.png)
 
-![](img/68081a95dd2d179afddb22f75d1441fc.png)
 
-![](img/7a2bc51d73f978878dcb95687c1488ca.png)
 
-![](img/cb46996b9821fc9abe86f31453bbbb28.png)
 
-![](img/845a16b577d13c0669a943c72a7db18f.png)
 
-![](img/fb7f02d36cc6c2908ee51acb36f1140c.png)
 
-![](img/8f59839c1c728938b501a4a060b41735.png)
 
-![](img/f7e6144ae107a2a915db9eaa1bf9cbcd.png)
 
-![](img/2305a819f081f20892822c40cd1b05b2.png)
 
-![](img/36f8e24d8375048520cbd789b7f1beb6.png)
 
-![](img/554b461fd8643221b1a76268aad578d9.png)
 
 ![](img/78cf521a19fe2965c9c2c5392fb732df.png)
 

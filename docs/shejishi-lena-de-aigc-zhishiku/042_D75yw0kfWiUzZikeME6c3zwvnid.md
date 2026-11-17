@@ -64,7 +64,6 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/659d50ebe91665ad960eb2ca8ab15d6a.png)
 
-![](img/ad3ac01efe2632f972c07b3726b017e7.png)
 
 变卡通
 
@@ -188,7 +187,6 @@ ChatGPT 的图像生成功能迎来升级
 
 ## 4、菜谱
 
-![](img/47a5f75ddf590d991a13397ff5d40813.png)
 
 ![](img/f964e030cbb5a7015a3da122fb7130c3.png)
 
@@ -210,7 +208,6 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/653ca6768deb22ef0f86a2a04ba6a1cb.png)
 
-![](img/ec4b3db5ba3c176499d198e2a22c4665.png)
 
 ![](img/88487720bde1356316d533fd9c2c9385.png)
 
@@ -318,7 +315,6 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/ac37ffd9618cfbe1efa5ee55040c8d63.png)
 
-![](img/995f5f3f1a66cff301a7bb3d021f4a42.png)
 
 ![](img/f0b46096336e552bebf8de5c222a5806.png)
 
@@ -352,7 +348,6 @@ ChatGPT 的图像生成功能迎来升级
 
 单词卡
 
-![](img/302f0d4bb3ff2a640c963acac0080a86.png)
 
 ![](img/88043e05dfec39735bd6b8a81e0ed1cd.png)
 
@@ -412,7 +407,6 @@ Create a hyperrealistic 3D render in 1:1 aspect ratio featuring the iconic [BRAN
 
 ## lego
 
-![](img/cbba4458bea6e045036626cebc5d5b4a.png)
 
 ![](img/b9fba1dcf74e7259022436045ff227e5.png)
 
@@ -726,9 +720,7 @@ Customizable prompt template
 
 A visually aesthetic image with a close-up photograph of attached image as the full background. Overlay a centered white Pantone-style frame in the middle of the image. Inside the frame, display a solid color swatch that is sampled from the most dominant color in the background image. Below the swatch, write "PANTONE" in bold black text and beneath that, include the Pantone code matching the swatch color. The swatch and text should be clean, minimal, and centered inside the white frame, mimicking official Pantone design cards. Maintain a modern, graphic, and clean aesthetic
 
-![](img/f735217b952da123f6df07de10b197cf.png)
 
-![](img/e8c9359380ddbc0342df838e7b0a7f11.png)
 
 ![](img/6f8369be219c34f3efac5c386cd9eebe.png)
 
@@ -762,7 +754,6 @@ A high-resolution 3D render of the [brand] logo made of polished sterling silver
 
 Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perroquet on a branch fully sculpted from twisted latex balloons. Each part of the body should clearly show the artisanal balloon modeling process: tight twists, knots, loops, pinched segments, and inflated tube geometry. Balloons should have a glossy, semi-transparent finish, with visible tension points and subtle stretching. Add small realistic imperfections like air pressure dimples, seams, or creases where balloons are bent or tied. Use vibrant, saturated colors for a playful party feel. Lighting should create sharp glossy highlights and soft shadows to enhance the rounded forms. Place the balloon animal on a clean pastel background . Focus on sculptural realism, joyful shapes, and a wow effect. The final image should feel like a pro balloon artist made it for a high-end cartoon birthday party.
 
-![](img/ee3bdf68aee6cc06fa52204dc2d0810d.png)
 
 ![](img/e9fb222cfe4252aaea379728a44d863b.png)
 
@@ -770,7 +761,6 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/a1262d11c9eeaefed2a8f5b706ff71e6.png)
 
-![](img/b622d9cf14a99e3e0460e8097302b5bc.png)
 
 ![](img/10f54b0825aa96578f3bed60c5468203.png)
 
@@ -796,9 +786,7 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/1538a19ff147f8cdcbfb61dac1187a8f.png)
 
-![](img/681b7d94e01bd6e08a299219b0b6c4a6.png)
 
-![](img/b2cd102b9c82b4c524740ae7a2241a75.png)
 
 ![](img/e5b1145a5d1174987afddf43d94cb76e.png)
 
@@ -808,11 +796,8 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/c787bf82f42a499e205c3a46596fde55.png)
 
-![](img/e0bc06fc71143a76258cd1391f3af297.png)
 
-![](img/206582e27bca61b99f2318c42d62bc6c.png)
 
-![](img/3b3eb404d1b2730258c1038271f7579b.png)
 
 ![](img/f2aac108049366951d0788695d32dbc1.png)
 
@@ -822,9 +807,7 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/6f029a0f1e11fb0a327808fd83c5d3f3.png)
 
-![](img/1ee4717079867331fe94fa00a38b3577.png)
 
-![](img/0256c42f916b6c72a33cde605b5f09a2.png)
 
 ![](img/8d517df9d08cccff202c30134dd6a814.png)
 
@@ -834,13 +817,10 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/b944e37aa1d68dbc5788114c93bb04e6.png)
 
-![](img/69a467a5287c38a551c4903d25b00689.png)
 
 ![](img/7e1d0d50330e1ea9bf67c85fcf0d8d5e.png)
 
-![](img/6b322277788f02d98b3443fd98f4a507.png)
 
-![](img/ae94d810ab514accc636b2ce8cc35c85.png)
 
 ![](img/fa94dd8022df1f713ebd3200d8956350.png)
 
@@ -848,7 +828,6 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/41cbe5f1f9e9eeeb93079c3fcd8d7971.png)
 
-![](img/05cda64b0167832d619e4e4bf5bbe847.png)
 
 ![](img/3c870f5d02342215216a06fd3d928bce.png)
 
@@ -862,11 +841,8 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/08cf745e6d2081255deb4a741c69a2d1.png)
 
-![](img/5843b50da1b217c9fd82b290ab29cf57.png)
 
-![](img/0a68add45a858c091c3e1c824805db80.png)
 
-![](img/2903d8b368013d623b4908f448b26022.png)
 
 ![](img/fa03d9d30595af83aabc4cbe835af2b6.png)
 
@@ -952,11 +928,8 @@ GPT生图有2个地方，对话框中使用和sora中使用。
 
 ‍♀️ 快来投票！你pick谁~
 
-![](img/c08905c5171fe366ce984c0879bcac41.png)
 
-![](img/dd79862c8dd26cd43a2624119812c4df.png)
 
-![](img/db24657ce894e5491b5613613d0e4875.png)
 
 ![](img/4255d555083b2c19e6d73b11ba3c1fb9.png)
 

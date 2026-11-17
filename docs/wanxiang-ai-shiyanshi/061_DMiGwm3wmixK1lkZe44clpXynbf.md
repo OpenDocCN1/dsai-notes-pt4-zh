@@ -372,7 +372,6 @@ Matthew Berman 的评测视频🔗：https://youtu.be/sX8Ri3w2MeM?si=70n41mO0gVM
 
 **飞书学习交流群**
 
-![](img/3f80ee590d29f2ac3afe98442ceed183.png)
 
 好友（ID：zhangyuguo94s）
 

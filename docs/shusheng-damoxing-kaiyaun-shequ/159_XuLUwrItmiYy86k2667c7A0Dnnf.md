@@ -907,11 +907,9 @@ print(f&quot;输入为{inp},数据流输出:&quot;, out_ppl1)
 输入为2,数据流输出: 5
 ```
 
-![](img/fa714f4e1a2e04f18aa2ac22dd8a3d28.png)
 
 [1pipeline.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PCTfbLIIQosuMwxphPGcp3tInrh)
 
-![](img/58dff266833b38da6b1e2e83a202c507.png)
 
 [1pipeline_with.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YWoVbUMy4oEHgqxvtAGcEbPsnwc)
 
@@ -1010,11 +1008,9 @@ print(&quot;输出字符串：prl5(1) -&gt; &quot;, prl5(1), type(prl5(1)))
 输出字符串：prl5(1) -&gt;  2，4，0.5 &lt;class &#x27;str&#x27;&gt;
 ```
 
-![](img/74450c0900f4f3b09f23f7417d31ffff.png)
 
 [2parallel.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RaTmb88gZo3t5HxTCnkcZbsBnJg)
 
-![](img/c69975c729f68c66d1d03d0a1a27ef49.png)
 
 [2parallel_with.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JrKtbKFGuovCCtxeIXycjOcHnUc)
 
@@ -1116,7 +1112,6 @@ print(&quot;输出字符串：prl5(1) -&gt; &quot;, prl5(inputs), type(prl5(inpu
 输出字符串：prl5(1) -&gt;  4.0，6.0，8.0 &lt;class &#x27;str&#x27;&gt;
 ```
 
-![](img/6b107c768ee1851f0a3a21b404b72b68.png)
 
 [4warp.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J9jzb1aLxojYXtxY4LecQL8Hnoe)
 

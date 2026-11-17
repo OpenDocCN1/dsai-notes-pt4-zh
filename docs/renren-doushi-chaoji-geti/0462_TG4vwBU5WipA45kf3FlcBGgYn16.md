@@ -34,9 +34,7 @@
 
 预期档期是什么时候发布，比较急需要最近发布，还是在确定下个月的档期？
 
-![](img/a0d99d9ca3f2046e97ecd8389571e78c.png)
 
-![](img/8c123405c43ad69ed285c4dd02b26545.png)
 
 ![](img/c27b76c9c1f65e06fad62b6ceee63cb1.png)
 

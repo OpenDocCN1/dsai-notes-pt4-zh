@@ -352,7 +352,6 @@ notebooklm
 
 ![](img/9b2a0603d74e5503517135a7c05232db.png)
 
-![](img/8f266ac32f5ff9cc552a6b79f9247990.png)
 
 ![](img/1aa42df8cf5321a5aed497d97ec2859e.png)
 

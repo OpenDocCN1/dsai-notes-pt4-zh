@@ -214,13 +214,11 @@ vidu是中国首个长时长、高一致性、高动态性视频大模型。
 
 ![](img/d7baeb6141b3141f5236ebc8a7b96ed9.png)
 
-![](img/48593106cc1397ae457d2df7f35c49d2.png)
 
 [vidu-video-3016076691754974.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lho0bztmvolXfExvN4Hc7B79nih)
 
 可以看出来两张图片对于生成的过程中的污染权重不同，多参考的视频只保留了人物对于它的污染权重，如果需要场景的话可以再单独放一个场景图来参考
 
-![](img/d2aa7e51d8a9bbbcb8f982e1325f7532.png)
 
 [vidu-video-3016076691754974.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MQxabuqLboz78mxJMbJcb0Vgnhf)
 

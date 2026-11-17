@@ -22,7 +22,6 @@
 
 ## 2 科研入门
 
-![](img/09005b0b18633c0f4cf379ad3479111a.png)
 
 [潘高宁-国奖面对面.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcntQKq6sHMAE11J3UMiRx74d)
 

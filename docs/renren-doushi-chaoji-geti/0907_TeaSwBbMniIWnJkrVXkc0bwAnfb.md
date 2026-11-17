@@ -84,7 +84,6 @@
 
 都跟钱挂上钩了，咋能没关系呢？
 
-![](img/1e496e8c4bd1fbb01ac01bebe519df82.png)
 
 ![](img/cc31523e8543eb14575ff0ceaac5f31d.png)
 
@@ -166,7 +165,6 @@
 
 12月3号，应暖安邀请去西乡参加赚钱的线下演讲技能小聚，这应该是我第一次参加此类活动：
 
-![](img/b193b26efeaf959454ae0196d2c51948.png)
 
 ![](img/2cd4a9e1dc13c45ae8a7d3e9937d0d22.png)
 
@@ -282,7 +280,6 @@
 
 > 以下是整个需求，从描述到开发完善的全部过程，有这方面需求的小伙伴可以认真看看。
 
-![](img/4921ef455c91e2a77616ce309ca24198.png)
 
 ![](img/080a61816f68ca7637a40d979fe055ac.png)
 
@@ -526,13 +523,11 @@
 
 ##### 7.3.1、【小米手机】下载安装教程
 
-![](img/025d8e97eea7fc513543374347fa6908.png)
 
 [小米手机如何下载安装TM软件教程.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bk8wbA041oHJLNxjxvhc2RognFc)
 
 ##### 7.3.2、【OPPO手机】下载安装教程
 
-![](img/d8af43ffa471719b9aead101ba2c91f9.png)
 
 [OPPO手机如何下载安装TM软件教程.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PmCHbFBkWofK1YxQJkpcAnfknMO)
 

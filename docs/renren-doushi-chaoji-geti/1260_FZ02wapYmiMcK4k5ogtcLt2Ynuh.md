@@ -26,7 +26,6 @@
 
 [LLM(大语言模型) - 开源软件 - ](https://www.oschina.net/project/tag/503/llm)OSCHINA - 中文开源技术交流社区
 
-![](img/4f3d413e03ee2956087582b995ccb63d.png)
 
 # 智源模型中心
 

@@ -142,9 +142,7 @@
 
 ![](img/35068e0a11d87d0d9f02b50ec7cee3fb.png)
 
-![](img/8c8e5e3368f4848168f909137f2b4a8a.png)
 
-![](img/6a0b227effba6887d59178289fb4e412.png)
 
 ![](img/f7300aacbbc9596c5f79e393cbe17aed.png)
 

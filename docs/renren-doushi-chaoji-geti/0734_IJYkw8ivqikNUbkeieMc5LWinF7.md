@@ -50,9 +50,7 @@ https://www.liblib.art/
 
 当然只是使用模型生成图片，瑕疵是避免不了的，比如口罩、多出的肢体、图片上面的字体等。可以多跑几次，跑多张数量，这样才能跑出自己想要的图片。
 
-![](img/26e57a64776a535f2e1e0cf202774ea2.png)
 
-![](img/735eb7cb7cd498c16837bb94dccfdc58.png)
 
 ![](img/1b32378c851de38525c404d2eb4ee1ca.png)
 
@@ -90,7 +88,6 @@ https://www.liblib.art/
 
 这里土豆随便从📕找了张美女照片，生成的图片感觉如何？看的出AI的痕迹么哈哈。
 
-![](img/13d37e36d4004ea29131310ee43316b8.png)
 
 ![](img/0cb9b0f181c10107059143ae55a3d661.png)
 
@@ -300,7 +297,6 @@ https://www.liblib.art/
 
 图片生成出来了，我们看下效果：
 
-![](img/fa9a0efb94a2e50bc328c737b9957f1e.png)
 
 ![](img/37d51760401c5ad047cdf2fd52edfdb7.png)
 
@@ -334,7 +330,6 @@ https://www.liblib.art/
 
 对比效果
 
-![](img/c5d1dfb04a3f54188a0508c6363f0fc4.png)
 
 [亚洲女孩-半身跳舞视频-吊带裙.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QcmXbyEGfoS0pRxcJaFcVVelnTe)
 

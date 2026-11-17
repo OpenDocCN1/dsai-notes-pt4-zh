@@ -30,7 +30,6 @@
 
 1、打开[官网](https://tuneflow.com/?lang=zh-CN)，点击开始创作
 
-![](img/41630b6e2dba557a38b59e68e39d99e2.png)
 
 2、点击下载桌面版（上传音频需要使用桌面版）
 
@@ -38,15 +37,12 @@
 
 3、跳过安装过程，点击登录，可以直接使用🛰️登录，关注一下👸号，然后创建一个用户名即可
 
-![](img/3d90aed8eea8289b8d93bd5d407da92c.png)
 
 4、点击新建项目
 
-![](img/8c2420c52daa63811e0953ec3cd58eb6.png)
 
 5、导入想要创建的歌曲（提前先下载好在本地哈！）
 
-![](img/ba0c4356acd9d07adb08e7bffb82c427.png)
 
 6、我先导入了一首 林俊杰的江南
 
@@ -58,7 +54,6 @@
 
 8、选择 **人声 + 伴奏** 模式，点击 **启用**（等待时间可能较长哦）
 
-![](img/6f101fa110bc39e68de7ca826f093b42.png)
 
 9、我们就获得以下音轨，其中最上面的是原音频，第**二**个是人声，第三个为伴奏。（我们可以点击静，来静音对应轨道，试听）
 
@@ -78,37 +73,29 @@
 
 13、发现前面音频有问题，我们把这段剪辑一下！（因为人声分离时候不够干净，有些杂音导致）
 
-![](img/da430174fcbc980f67f39985a82d95fd.png)
 
 14、调整轨道，到杂音后，右键 => 在播放头处分割选中片段
 
-![](img/3035836289516dfb19380199f508e9b5.png)
 
 15、点击分割后，分割线前面部分，删掉杂音部分，右键删除
 
-![](img/fe4e31e682d4a0bac6f52edb7be793e6.png)
 
 16、同样办法，处理音频轨道 4 ，但保留前面部分，删掉后面部分
 
-![](img/f9de8a7650465750f4ad29c027e16c97.png)
 
 17、同时打开 音频轨道 4、6、3，播放试听
 
-![](img/87ed3faaac349312899095c1f2f58144.png)
 
 中间有些瑕疵，主要是生成时的问题（我试听了我之前的音频，我本身上传音频有点小问题）
 
 18、删掉多余部分
 
-![](img/970855c206e8782c6ffec4eb584d1f0d.png)
 
 19、保存，然后导出音频
 
-![](img/5f81a082cd75ab1ea158a871b99b83eb.png)
 
 20、导出 => 导出音频 => 整首歌曲
 
-![](img/d9f07de553f2d98f3e2ca0548335f3c3.png)
 
 21、点击导出
 
@@ -466,11 +453,9 @@ https://chat.openai.com/share/72a6eec0-afc1-4457-956a-4d201ad92dae
 
 2、鼠标挪到 Pop 上， 点击 I have my own lyrics
 
-![](img/cb2679949bd6b7cdcfa55b16724916a7.png)
 
 3、把歌词放到 songR 对话框中，因超出了**字符限制，我**把格式清除了 ... 点击 Render
 
-![](img/e6e38efaacd98d15dad08deb07b4eb1f.png)
 
 4、等待一小会儿，然后我们下载下音频
 
@@ -508,7 +493,6 @@ https://chat.openai.com/share/72a6eec0-afc1-4457-956a-4d201ad92dae
 
 三）等待一会儿，一次生成了两个视频
 
-![](img/36061385f2995381681e7682fd2a876d.png)
 
 [chirp (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CpbVb6ZTLoJr3Gxxu9GcbI8vnhf)
 

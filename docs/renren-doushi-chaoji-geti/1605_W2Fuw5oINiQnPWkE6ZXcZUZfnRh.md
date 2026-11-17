@@ -24,9 +24,7 @@ PC端使用效果：
 
 移动端使用效果：
 
-![](img/8d7124e4b79728dc5d50c9312cfa7d89.png)
 
-![](img/69620a4d72d76fac9d7f2830c70e0996.png)
 
 ![](img/858a6d78df56c59001e7346cc21e97a2.png)
 

@@ -79,7 +79,6 @@ bert-base-chinese tokenizer 可视化
 
 BERT 就会依次查找词表中对应的字，并将句子切成词的组合。
 
-![](img/8118b5dbbe09dde26b09909508160bc7.png)
 
 BERT 切词测试图
 

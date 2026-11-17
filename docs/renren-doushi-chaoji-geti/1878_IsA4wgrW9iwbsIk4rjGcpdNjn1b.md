@@ -94,7 +94,6 @@ LoRA 的一个小缺点是一次只能激活一个：我们可以合并多个 Lo
 
 不夸张地说，训练好的 LoRA 在各种提示词下生成的 Ugly Sonic 图像都更好看、更有条理。
 
-![](img/9127585f4c0d1594434dbe2e98ac50a3.png)
 
 索尼克，但这次有牙了
 
@@ -126,7 +125,6 @@ SDXL 0.9 测试用例
 
 我们先用 SDXL 0.9 演示一个简单提示词开始测试：
 
-![](img/0c89b77462b670b758c5a921f258fac0.png)
 
 “A wolf in Yosemite National Park， chilly nature documentary film photography”
 
@@ -134,7 +132,6 @@ SDXL 0.9 测试用例
 
 然后我在提示词中添加“extreme closeup”，并复用之前的种子后，在相似的照片构图下获得了狼的不同视角特写。
 
-![](img/678b11455d5cd903322218192aeba461.png)
 
 “An extreme close-up of a wolf in Yosemite National Park， chilly nature documentary film photography”
 
@@ -162,7 +159,6 @@ SDXL 0.9 测试用例
 
 现在结论很明显了，wrong + LoRA 在每种情况下的输出都比单纯加上 wrong 负面提示的输出更有趣，因此我们下面只对比基本输出与 LoRA 输出。以下是基本模型与 wrong LoRA 的对比示例：
 
-![](img/f786e37329ed3510e0eba848ffaef387.png)
 
 “realistic human Shrek blogging at a computer workstation， hyperrealistic award-winning photo for vanity fair”
 

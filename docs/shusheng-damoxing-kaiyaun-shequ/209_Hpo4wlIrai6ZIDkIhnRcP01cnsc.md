@@ -1174,7 +1174,6 @@ https://github.com/iSenses/ITrieval
 
 ### **架构图：**
 
-![](img/6dda52d3fb07133b171640b66f7849e2.png)
 
 项目架构+关键效果图，比例 16:9 （一页 PPT导出的图片）
 
@@ -1218,7 +1217,6 @@ https://github.com/iSenses/ITrieval
 
 ### **架构图：**
 
-![](img/338793c40ba9142f5db1561350785a82.png)
 
 项目架构+关键效果图，比例 16:9 （一页 PPT导出的图片）
 

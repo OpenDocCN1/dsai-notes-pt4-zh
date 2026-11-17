@@ -532,7 +532,6 @@ InsightFace 和 Midjourney 的整合所带来的创造性的可能性是巨大�
 
 Prompt 关键词示例： /imagine prompt watermelon owl hybrid
 
-![](img/f6fc45f6ea142f451ce42b032d2b0f9c.png)
 
 使用极高的 --chaos 值，每次生成的初始网格图像，会产生最大程度的风格变化，产生更多意想不到的元素组合与艺术风格。（风格、造型变化最大）
 
@@ -542,7 +541,6 @@ Prompt 关键词示例：/imagine prompt watermelon owl hybrid --c 100
 
 使用 --chaos 或 --c 参数，在 Prompt 关键词末尾添加 --chaos <数值> 或 --c <数值>
 
-![](img/c24aef3e60369a03b659e573b70bda4b.png)
 
 ## 3.3 负面提示（no）--no 负面提示
 

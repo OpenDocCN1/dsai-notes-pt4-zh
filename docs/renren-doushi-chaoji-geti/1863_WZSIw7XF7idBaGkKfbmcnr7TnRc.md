@@ -226,7 +226,6 @@ paintings, sketches, (worst quality:2.0),(normal quality:2.0), (low quality:2.0)
 
 #### 5、成果展示：
 
-![](img/4d49c91b4b043d244c11c527cf77cf52.png)
 
 [这短短一生-deforum制作.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CFvQb6iEho1kSAxHaQwc4t00nZf)
 
@@ -260,7 +259,6 @@ paintings, sketches, (worst quality:2.0),(normal quality:2.0), (low quality:2.0)
 
 3、官方有提供了八个模版，选择你喜欢的模版，上传图片
 
-![](img/1014f90b748de199da510742f6045a15.png)
 
 4、等待生成，每个人有3次免费体验的机会
 

@@ -285,7 +285,6 @@ git config --global --add safe.directory /opt/homebrew/Library/Taps/homebrew/hom
 
 致命错误：无法访问 'https://github.com/AUTOMATIC1111/stable-diffusion-webui/'：HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
 
-![](img/7de5b84db77511006d8ed91edcbcfc26.png)
 
 解决：将通信协议改成 http/1.1
 

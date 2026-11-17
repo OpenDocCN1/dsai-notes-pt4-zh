@@ -64,7 +64,6 @@ Round2
 
 ![](img/00e54d511e5a9ee0530ca3e4627f7a5e.png)
 
-![](img/b058f1fb97ad73b82a5d4f69f5ad4557.png)
 
 ![](img/e483a6eba396baa1d79b70f6b5af1371.png)
 
@@ -186,9 +185,7 @@ Midjourney 团队由大卫・霍尔茨领导，他是 Leap Motion 的联合创�
 
 ![](img/ed98ce0a6f9abca31bf0f47d135b4480.png)
 
-![](img/48e3e40504bd242ec48c66975f08dded.png)
 
-![](img/1a1d8c03221694670be00e2c1704083c.png)
 
 ![](img/3737d5a986730e0eb8aa93f5c08806c9.png)
 
@@ -208,11 +205,9 @@ Midjourney 团队由大卫・霍尔茨领导，他是 Leap Motion 的联合创�
 
 Black Forest Labs 于 2024 年 8 月 1 日推出 FLUX.1 文生图功能，一经发布便引发轰动。其生成质量媲美“生图一哥” Midjourney，在图像细节、提示词理解、风格多样性和场景复杂性等方面更是超越了 Midjourney、DALL·E 等主流模型。背后团队由全球顶尖的 AI 研究人员组成，今年5月推出FLUX.1 Kontext，支持同时用文字与图像进行创作和编辑，可实现角色一致性、本地元素修改等功能，表现亮眼，广受好评。
 
-![](img/6f86d81c349d2a1d57288a11f5fd34af.png)
 
 ![](img/60d65d1fa526f5a6582b58995dec919e.png)
 
-![](img/76249b2fd22fb37a76f39d860d549de2.png)
 
 ![](img/97a1daf65b29da42b889976c9b016b23.png)
 
@@ -262,19 +257,15 @@ Stability AI是一款基于扩散技术的深度学习文本到图像模型，�
 
 Ideogram 是由 Ideogram 公司开发的一款免费增值的文本生成图像模型，采用深度学习方法根据自然语言描述（提示词）生成数字图像。与其他文本生成图像模型相比，该模型能够在生成的图像中呈现清晰可辨的文字。
 
-![](img/da4bf4c47e46b6df47d2b433ff112244.png)
 
 ![](img/12a30aa41b8d2991f4d07e3e977234ca.png)
 
-![](img/8dec186cd8085590140ceeb76dddd0bb.png)
 
 ![](img/700ca887681262da1acc0b6a59272bec.png)
 
-![](img/84e918718bfb91a1e28e9919172a58f1.png)
 
 ![](img/93862c6ed8f82f83d4175a01fa3b85f1.png)
 
-![](img/3158004e67c3052142131f86b96ad2d1.png)
 
 ![](img/074293b5fcce0ab51c432fb66f92a44b.png)
 
@@ -360,37 +351,29 @@ Ideogram 是由 Ideogram 公司开发的一款免费增值的文本生成图像�
 
 ![](img/0ce0264076bf7c68a5aa37cdba501b96.png)
 
-![](img/67859c02ef4bd2169b5e362665010551.png)
 
-![](img/1c6c48617ecef484eb02296e94952ac5.png)
 
 ![](img/d19e2806c4f40264fc3a9e1009d16aa2.png)
 
-![](img/ea2d8c6106d755532334b6b3804ada18.png)
 
 ![](img/08ff5787988b3e1e352a2febb485ea36.png)
 
-![](img/00ec280580293ba352ebf475cb7376d4.png)
 
 ![](img/94398f622d1e07009e78250bf9d7d15d.png)
 
 ![](img/c0424f189fec3ab6772691f4d7d1a86b.png)
 
-![](img/f5606c33e85e8cc1f06c41418f4bc1b8.png)
 
 ![](img/697aa26ad7590c984e170d914f1eaed7.png)
 
 ![](img/a42b409ae7289b460b66201855eff20a.png)
 
-![](img/cdae4cb2ca51dbe434e6a3f2c6ad5de9.png)
 
 ![](img/69ddf44245d4610e5922e299da4271ee.png)
 
-![](img/24698f768b8f505e8eb9195e8c1366e5.png)
 
 ![](img/dc944a5dc4eaac1975312a19389d99a1.png)
 
-![](img/82ffc5064f10644447f33284af01d3f2.png)
 
 ![](img/376ed6cfe8e01b6b3335a357cea96af6.png)
 
@@ -436,7 +419,6 @@ Ideogram 是由 Ideogram 公司开发的一款免费增值的文本生成图像�
 
 ![](img/0431a2dec32c81ba0dea149034128819.png)
 
-![](img/2fde422d5a81d53ef6f753faf1a34d01.png)
 
 ![](img/dba161f8c96641172480d01f5475affc.png)
 
@@ -452,23 +434,17 @@ Ideogram 是由 Ideogram 公司开发的一款免费增值的文本生成图像�
 
 ![](img/0079591c11253daeed86c98ef7698e3b.png)
 
-![](img/29aa7170e96aca4c6847347952c91238.png)
 
 ![](img/79f9749c5f1264f3eb68eb54f2cb8e91.png)
 
-![](img/7f2f480f8bd412e4e030c7befbff3338.png)
 
-![](img/b0ea8eff1c32707273b0d088b846ef2f.png)
 
-![](img/1bc88e77457837bd86aeeabd64d2c58c.png)
 
-![](img/2d605725a97909a57609628455a29876.png)
 
 ![](img/9ab407799a828dabe19da9eacad270e7.png)
 
 ![](img/7a02d65111f75f830a1605d9d850b1af.png)
 
-![](img/62498807f744e96ec56bde69de27617b.png)
 
 ![](img/776c2fcfa985dbe93e1bda3de8812eee.png)
 
@@ -494,7 +470,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ![](img/359f2b7096d8822e49cf6a689c205dc2.png)
 
-![](img/ae065f660b028c4011ac7f20ed6804c0.png)
 
 ![](img/e16ff84d1ab37162f1510543ca4626a1.png)
 
@@ -504,7 +479,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ![](img/ffa59b2d317bb52e7b48da94cec17f69.png)
 
-![](img/39693026b0d299eda4ff41e5f6fad118.png)
 
 ![](img/24a39d0f07af0c6018406f7ce44cc944.png)
 
@@ -520,7 +494,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 通义万相是阿里巴巴通义旗下的AI创意创作平台,旨在通过人工智能技术降低创作门槛,可提供文生图、图生图、文生视频、图生视频、图像编辑等创作场景。
 
-![](img/99ba17217d6bea8819e425d809de57b0.png)
 
 ![](img/708264d2531b26eb148d9beaf822a5c8.png)
 
@@ -530,7 +503,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ![](img/0b45c6fdfabd876bbd7621f0b56ffc0c.png)
 
-![](img/cb98d4f86ddba4838ae90bcc596cd5fa.png)
 
 ![](img/c77968e429404b34d2ba2ecfec7305c1.png)
 
@@ -554,7 +526,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 是一款基于文心大模型（ERNIE）的AI智能助手、拥有对话、创作、娱乐、AI绘画等热门免费功能,不仅能够根据用户的文字描述进行对话和文章创作,还能通过文字描述生成具有艺术感的图片。
 
-![](img/24d5b5f5e1d93dec69979fb893d6ad95.png)
 
 ![](img/79498e1982d89d9f01956f024ffdc0f5.png)
 
@@ -564,7 +535,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ![](img/cdd92727bf24780728776975ad6bb9b4.png)
 
-![](img/32519d503ecadc6674ad31e61c4be9e9.png)
 
 ![](img/9c67c547854141f1e34ee02a94e4879c.png)
 
@@ -588,11 +558,9 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 扣子空间是字节跳动推出的自动化AI协作平台，很厉害，可以批量生成或者处理图片。除此之外，还能干很多事。它定位为一个基于AI Agent的任务协作与自动化助手平台。能够帮助用户通过AI智能体自动完成从信息搜索、数据分析到文档生成的整个流程，极大提升工作效率。
 
-![](img/71bc5f86e2a4078cf61c1754fe97897e.png)
 
 ![](img/26696ff7ded2e3eaba1c69de010ae634.png)
 
-![](img/6ed115389fa49206f2145b46423d6368.png)
 
 ![](img/b2f41defc244efe73ff2fb9212dfed10.png)
 
@@ -602,11 +570,9 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ![](img/33a1c3b681a354675544cb7329405672.png)
 
-![](img/b62ee598f0485aa0bb1405383f22e0f7.png)
 
 ![](img/54849f7e133f1578d0addeeff553ae3b.png)
 
-![](img/43c338b7c75acb998022aec93863503f.png)
 
 ![](img/b0c5c05ac9df0947e5762bec6f33967e.png)
 
@@ -644,7 +610,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ![](img/2391390f030f6aa278558a78d229b300.png)
 
-![](img/de3d137227ea372c059013bbae42bfef.png)
 
 ![](img/00569d44466cfe68a97dd0b34ece4d2c.png)
 
@@ -694,27 +659,21 @@ Grok 是埃隆·马斯克旗下 xAI 公司开发的一款多功能 AI 聊天机�
 
 Leonardo.ai是一个基于开源Stable Diffusion技术的在线AI绘图平台，用户通过输入文字提示即可生成高质量的图片，生成的作品风格多样且可商用。由澳大利亚创业团队开发，在 2024 年被 Canva 收购，随后集成至 Canva 的 Dream Lab 工具套件中。平台通过 Phoenix、Flux、Lucid Origin、gpt-image、Lightning XL、Kino XL 等多个专用模型支持不同风格的生成。它特别适合游戏内容创作，如角色、物品、场景和概念图，支持用户训练自己的模型，生成3D材质图像，还有画布实时绘画等功能。
 
-![](img/d5e2e371f42da687e453d012d5b21251.png)
 
 ![](img/da36bcf9af42a183ffcfeaf660eeb0f4.png)
 
-![](img/4d097f2be1dec7c7acd67dc7e651d333.png)
 
 ![](img/78890b2674aaf106c98167a1640470ea.png)
 
-![](img/e18cf0d15473dc6e055300d9577aaa98.png)
 
 ![](img/c4dbeefe7abff4263eb01dabb1083ebc.png)
 
-![](img/64bb27f698df6aa1fda3601556e03593.png)
 
 ![](img/efbcd0af6eb12b69027925cfce84902b.png)
 
-![](img/c206455c9e1681b6267b6683684270b5.png)
 
 ![](img/dd06e297e1fcb726a0e8e13c23d348d7.png)
 
-![](img/f2944933209208dd11b21c03a306b039.png)
 
 ![](img/666e4da12af1f0e4053be76a61e81a23.png)
 
@@ -772,11 +731,9 @@ AI 聊天互动起草创意：融合“Chat”模块，让用户通过对话生�
 
 模型：Krea1.0
 
-![](img/ab65bb99c80897cc1a59688d79560c97.png)
 
 ![](img/c200755502da624c1a6c0b893261fd5f.png)
 
-![](img/0e2368319dcdbb08a9cfaf720ca64367.png)
 
 ![](img/4cde34abc12dcf3c4e4d2aae5b03caac.png)
 
@@ -784,11 +741,9 @@ AI 聊天互动起草创意：融合“Chat”模块，让用户通过对话生�
 
 ![](img/35d78627888b0ec69069e8b329f9c9e9.png)
 
-![](img/b8e4435c31401cfa529921ec98e2862b.png)
 
 ![](img/da17d27298a8bd840930e01a56eb1100.png)
 
-![](img/d0953fcb2b8a1d44cd33d9c2f9f11423.png)
 
 ![](img/c7c308f4c8efe42a0ff4a10633ebd63c.png)
 
@@ -810,13 +765,9 @@ Black Forest Labs 与 Krea AI 联手推出了开放的文本生成图像模型 F
 
 ![](img/aaf8aa421263edb05f7189e9aaabf9be.png)
 
-![](img/1ae5c7738d93a4a41c93de822dde147b.png)
 
-![](img/e091a2579ba978f25763639179e2471f.png)
 
-![](img/ac003495708fca38af87e961f99eeb5d.png)
 
-![](img/28f9f1becb1db51b1c618b3b720bac12.png)
 
 ![](img/25c9c938318f1692442da63e852be878.png)
 
@@ -876,7 +827,6 @@ emoji小人提示词：
 
 RoboNeo 是美图旗下的 AI 视觉设计助手，7月底左右发布的吧，通过自然语言操作，实现从图像编辑到品牌设计和短视频制作等多样创意需求，特别适合电商和内容创作者快速产出高质量视觉作品。它类似于视觉领域的 Copilot，能够理解用户的自然语言指令并执行相应的命令，实现高效的内容生成和编辑功能，让每位用户都能成为“发号施令的甲方”，仅通过语音指令即可完成复杂的视觉创作需求。
 
-![](img/0f8c6f5faae8026a8a512ee55f4e4ea6.png)
 
 ![](img/602738606283585545ac31b154f636b0.png)
 
@@ -916,13 +866,11 @@ LibLibAI是国内最大的绘画原创模型分享社区,10万+模型免费下�
 
 #
 
-![](img/65b972266cb8a87c0b6295e668b2b938.png)
 
 ![](img/5e2b43e4fb1e5cba93473cd7165ff6e5.png)
 
 ![](img/c304f874806d31a561a85b252f8179bb.png)
 
-![](img/f97017ff007e76b1e5e8c632b6f3eddc.png)
 
 ![](img/28b42953d8900025b825fa5f4138a33a.png)
 
@@ -974,19 +922,15 @@ LibLibAI是国内最大的绘画原创模型分享社区,10万+模型免费下�
 
 ![](img/c4a7b510f309669a67327f3174f7abc7.png)
 
-![](img/f25d90d8fe9a40734555e84262b0c87f.png)
 
 ![](img/8a7548bc31ba813600946b95636f12f9.png)
 
-![](img/3908abc6432257bacb35c1c059de6d39.png)
 
 ![](img/df51850faad16b29d1b749608c2d2f4d.png)
 
-![](img/7320d5033ec95e84d4920082533922e9.png)
 
 ![](img/488d26055e00fd060093438a88d53001.png)
 
-![](img/58277b627763ca7f50d838550f7f2e68.png)
 
 ![](img/1292cac349c615cebcac22c88ccc5ce9.png)
 
@@ -1080,7 +1024,6 @@ GPT-4o它可以处理并生成文本、图像和音频。可以做很多创意�
 
 ![](img/a11bb0bc6909af2ff2676044ae5383cb.png)
 
-![](img/8d9e32f35def260f5ce8649d9fcba23d.png)
 
 ![](img/20c436995173984d75531e4127a1e3cd.png)
 
@@ -1102,7 +1045,6 @@ GPT-4o它可以处理并生成文本、图像和音频。可以做很多创意�
 
 Microsoft Copilot 是微软推出的人工智能助手平台，旨在提升个人和企业的生产力、创意和协作效率。Copilot 集成于 Microsoft 365 应用（如 Word、Excel、PowerPoint、Outlook 和 Teams）以及 GitHub、Azure 等开发工具中，利用最新的 GPT-5 模型和多模态 AI 功能，提供智能写作、数据分析、任务自动化和实时协作等服务。
 
-![](img/3722a5459682f380bc28fd55cc35e7b9.png)
 
 ![](img/9a0ec30399b1b8db3d67467b948c4f86.png)
 
@@ -1130,17 +1072,11 @@ Microsoft Copilot 是微软推出的人工智能助手平台，旨在提升个�
 
 ![](img/6be29b38755afb6c256dc48e04e5855e.png)
 
-![](img/75c9a9cab3c7ca6d428f4f73aeb11f8b.png)
 
-![](img/3d0961656b7217df6f0b0353945c1e77.png)
 
-![](img/6a77e12faa715338468a57ee1d9474f1.png)
 
-![](img/bf0fbe4fa3aff41bf7a7a955efe2e8ef.png)
 
-![](img/b32be6a92f265a1120bb4ed638703950.png)
 
-![](img/a0480b5736aded8deba5879b2e7d3b90.png)
 
 ![](img/e5dc29cc1ce9659a80a69b0ff481cba9.png)
 
@@ -1148,17 +1084,11 @@ Microsoft Copilot 是微软推出的人工智能助手平台，旨在提升个�
 
 Lora权重不同，差别很大，调一下，效果还是好的。大部分是默认的，不一一细调了
 
-![](img/0329f896d7c1e5f65fad377994cf8f6d.png)
 
-![](img/1a775924338f1e72004c821efa2a814d.png)
 
-![](img/d178656e20efdf2b76a815a5be4fa8c6.png)
 
-![](img/b5005b30e40d6d7df8246dc9654005ba.png)
 
-![](img/b031fb63688840988f36b1b04096a5e1.png)
 
-![](img/9f6f538f2712dd09e5a4f43d584cced7.png)
 
 ![](img/32b2c29142f4a6db8cd98d1a19ae2f1c.png)
 
@@ -1178,11 +1108,9 @@ Lora权重不同，差别很大，调一下，效果还是好的。大部分是�
 
 ![](img/687f751f546af7ebf7f4d97a9d24ce24.png)
 
-![](img/f56be53adad0bd2d96b6e687aa7aa1a1.png)
 
 ![](img/ebfaf1d9ccb6c012fa5b89e930e4930b.png)
 
-![](img/9ba5b1fce1ec8ed407b2d6d4d3ba2103.png)
 
 ![](img/856291f02d1f23c5007e02373e47b026.png)
 
@@ -1238,15 +1166,12 @@ Lora权重不同，差别很大，调一下，效果还是好的。大部分是�
 
 最近lmarena 推出了谷歌的nano-banana 的图像编辑模型，效果很好比肩fluxkontext。
 
-![](img/5e13abc6b6159a96a10f1f897a5cb48b.png)
 
-![](img/b17429bfc030b24d2ab6f6ab83c269f9.png)
 
 ![](img/959f472f6bc4761cc32c7a18b110ccdf.png)
 
 ![](img/9140249e9ae6ea6a57420ac0fcea5714.png)
 
-![](img/6f020b83cda7020dc5cfba267ca809b2.png)
 
 ![](img/29e76ab2c3a4f0649cdde3ac9aed58b5.png)
 
@@ -1312,9 +1237,7 @@ AI Studio 是 Google 推出的网页端集成开发环境（IDE），提供了�
 
 ![](img/954026b2261ed8903f26b4e070bb1c7a.png)
 
-![](img/f7b4587dce45b2811f21b251c376c00c.png)
 
-![](img/565ebe3ccaf8480e075cbca29f278c84.png)
 
 ![](img/cfcf9e3aaee249d45864762bb8d99fed.png)
 
@@ -1332,7 +1255,6 @@ ImagineArt 是一个功能全面的 AI 创作平台，平台集成10多个模型
 
 ![](img/d59d8274b5caad2cd6dfc1668bdb2866.png)
 
-![](img/77548d6d0186f98fa2886780af6c0505.png)
 
 ![](img/6532136a66fa026e7ad1229f56451a4f.png)
 
@@ -1358,9 +1280,7 @@ ImagineArt 是一个功能全面的 AI 创作平台，平台集成10多个模型
 
 **Reve Art**** 开发团队推出的 AI 图像**生成平台的预览版本，称为 Reve Image 1.0。整体来说，它是一款专注于将文本提示转化为高质量视觉内容的工具，主要用于创造具有美感与排版效果的图像。
 
-![](img/4d96c010e6181034c186d0022baf36f2.png)
 
-![](img/fc9673714c39242b470cedb154c136a0.png)
 
 ![](img/3cee45c575d2eb124d25fa4ad252dc71.png)
 
@@ -1386,17 +1306,12 @@ ImagineArt 是一个功能全面的 AI 创作平台，平台集成10多个模型
 
 ![](img/0348709f3a2f846b81c5348f59c4fa1a.png)
 
-![](img/42dc5adbe72b94bae09249eefa701da7.png)
 
-![](img/6f7d6c3c08b85fe803190ffd65f1b8dc.png)
 
-![](img/6d29ba7e581cf12c137e82d76a333fd3.png)
 
 ![](img/33b8b83fba698c384668693c2496c025.png)
 
-![](img/e8754351451d499c93be8ba158b51514.png)
 
-![](img/c17529927508bfddaf58aec0b3d4cd8c.png)
 
 ![](img/4d83e2c23a8ad26143de61835dc928fa.png)
 
@@ -1412,7 +1327,6 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/3ce7d8f79db4c641a548c4377be6be6d.png)
 
-![](img/51d262e73b3bf301705eb60810275634.png)
 
 ![](img/55c0311ceef1ff42241febee3f494c10.png)
 
@@ -1438,9 +1352,7 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/947980185830536e33da3838d81d8384.png)
 
-![](img/b8fb421cbe4204f0699416afb1e4d3da.png)
 
-![](img/894878b0f6b6d9c1cdd97e5ca6cd7aa2.png)
 
 ![](img/0d022b9ddfec179d96cc704787faff62.png)
 
@@ -1450,9 +1362,7 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/71eb95ea06269684f2452e2cee04cfff.png)
 
-![](img/f37cdf2e06c072864a52357ca1667431.png)
 
-![](img/48bad943b3abc3f0622e077fc4e74c87.png)
 
 ![](img/8d62a5fcd0c0f67bcbea9acfa1c36ee3.png)
 
@@ -1480,7 +1390,6 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/293fc5c93f0e654b3edd99b885660484.png)
 
-![](img/9caba0b7aeca105b67f6dd8b9bef5109.png)
 
 ![](img/906d64bb7dfcd0c9018d09018784c597.png)
 
@@ -1500,7 +1409,6 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/f44631f94696334d61f6028a93822ec1.png)
 
-![](img/bd4d2c301c9ec0a00a535b1106ba7caf.png)
 
 ![](img/d82a223f6136c9ab10c3316e0c043a8b.png)
 
@@ -1554,7 +1462,6 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/cee3ebc9ebcdf5e78894cef50c933938.png)
 
-![](img/b56c97974ccb16bac99eef587e3cbdf4.png)
 
 ![](img/a0d873321b52badac2d2634c77e77f60.png)
 
@@ -1562,7 +1469,6 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/20508455f22e52d2fe59fc4af929ad6d.png)
 
-![](img/e0a5328d61abf90435367b744a749ffc.png)
 
 ![](img/5d48220431a8b8090eb121a17d8c338c.png)
 
@@ -1572,7 +1478,6 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/b43eea54236a8e40022cde4b7b620474.png)
 
-![](img/e35f61f97a1866caef8df4b595ceeb6e.png)
 
 ![](img/3538a0fcdfa875571a1fe0490bd9d0e8.png)
 
@@ -1596,13 +1501,10 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/a60d19cb93771361cd6fc58e245b4e2c.png)
 
-![](img/3e2a0000210c8dfc804c3e01a3f6e638.png)
 
 ![](img/5f37645e93c9e040f5190b4949d1ef6d.png)
 
-![](img/fc48b43983355ec26cf25b044c834e9b.png)
 
-![](img/cb00ae7ac08677ed6716c7f11d4d0ca8.png)
 
 ![](img/66c84522c24669f62efd6a5dd3cb43be.png)
 
@@ -2008,7 +1910,6 @@ a portal into a mythical forest on the wall of my small messy bedroom
 
 ![](img/291200e320c8afd2062b09627651f434.png)
 
-![](img/4a26507d991725e0f536453f945ceee1.png)
 
 ![](img/bbca0da4bf2d165f894533c9ad76d8c9.png)
 

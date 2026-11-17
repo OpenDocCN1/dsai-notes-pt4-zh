@@ -76,7 +76,6 @@ ChatGPT 是一个大型语言模型，它通过审查和分析大量的文本来
 
 **Z**elinAI 本质上就是基于 ChatGPT 的 API 来包装的一个 AI 应用，虽然它也有不少定制功能，但底层逻辑是一样的。
 
-![](img/536a8f0c709a435ea381e6619990a09e.png)
 
 以下是 ZelinAI 的优势：
 
@@ -132,7 +131,6 @@ ZelinAI 和我们的社区 Prompt 工程师已经在 ZelinAI 的应用市场打�
 
 应用链接：https://zelinai.com/s/bmQjxcby5UhXi5VhUNebya
 
-![](img/cbea7609734101c748751730d8ca9946.png)
 
 在估算园林景观业务的市场规模时，需要考虑到各种因素，如企业的竞争地位、地理位置、市场份额、销售策略等。所以，综合应用以上三种方法，我们可以更准确地估算园林景观业务的市场规模。
 
@@ -148,7 +146,6 @@ ZelinAI 和我们的社区 Prompt 工程师已经在 ZelinAI 的应用市场打�
 
 下面将提供公司业务关键词是：
 
-![](img/196a1013d3be5114b1191ced0528bdb6.png)
 
 竞争对手分析是一个很好的练习，可以衡量你的竞争对手为制定自己的策略以创造公平竞争环境所做的努力。此应用中只需添加你的产品或服务以及你的区域即可。
 
@@ -158,7 +155,6 @@ ZelinAI 和我们的社区 Prompt 工程师已经在 ZelinAI 的应用市场打�
 
 如上所述，我的提示是：{为每家公司提供他们的价值主张、优势和劣势}。
 
-![](img/c4f5c2c6d82d19c60a4adbbfc349dd5a.png)
 
 所谓知己知彼，百战不殆。
 
@@ -306,7 +302,6 @@ GPT 会尽力满足你的要求，即使这意味着编造一些信息或所谓�
 
 这里拿百度爱采购上面的一个**工业类广场创意不锈钢雕塑 **产品来举例。
 
-![](img/4b92fe00122ea33f964583c24908d760.png)
 
 像**许多 ZelinAI 的**应用一样，这个应用只是要求一个描述性的产品名称。一次只能有一个。对于上面的例子，我使用了{工业类广场创意不锈钢雕塑}。
 
@@ -324,7 +319,6 @@ GPT 会尽力满足你的要求，即使这意味着编造一些信息或所谓�
 
 应用链接：https://zelinai.com/s/oUrJeRrLvuVQFApDaxJcAK
 
-![](img/d28bec4d8302bd500ea329e4b750cefc.png)
 
 **对于这个应用，ZelinAI **要求提供三个要点。首先，你要宣传什么，**目标是谁，有什么好处？确保以清晰、简**洁的方式解决这些问题，以获得最佳结果。在这个例子中，我使用了{工业类广场创意不锈钢雕塑，热衷于传统文化的群体，提供现代艺术的震撼视觉效果。}
 
@@ -338,13 +332,11 @@ GPT 会尽力满足你的要求，即使这意味着编造一些信息或所谓�
 
 应用链接：https://zelinai.com/s/dXq66ZmdoipFyAhTURionh
 
-![](img/e9c104e2f0509a46f1b744d45110a8dc.png)
 
 #### ZelinAI 应用：📕热门标题创作
 
 应用链接：https://zelinai.com/s/mtgwxLkxYGwa4m9Rxzq84m
 
-![](img/14a6f3cf86e2786476e387426daf4417.png)
 
 ZelinAI 应用的一大优点是，你无需为要完成的任务而疯狂。所有这些都由打包好的应用来处理。对于这个，你只需要在帖子中包含你想要定位的关键词，剩下的就交给 AI 应用吧。
 
@@ -376,7 +368,6 @@ AI 可以为中小企业增加价值的最明显方式是通过生成长篇内�
 
 回到包含我之前整理的【博客文章大纲】的聊天窗口，我使用了{根据上面的大纲内容，补充为一篇完整的博客}并收到了以下输出：
 
-![](img/433918b61e29459416a9bb715f652811.png)
 
 ![](img/3224220fd46793aa07a55e7faf0302a0.png)
 
@@ -386,7 +377,6 @@ AI 可以为中小企业增加价值的最明显方式是通过生成长篇内�
 
 应用链接：https://zelinai.com/s/27GRT9uzzBkLVyGVwQkvrq
 
-![](img/9f3903d87b7debf7a59d77c91e3def7a.png)
 
 应用将确定包含的相关部分，并相应地起草。完成后，你可以对文章扩展某些区域或调整部分以达到理想的效果。
 
@@ -460,7 +450,6 @@ ZelinAI 应用还可以帮助你优化电子邮件，使其听起来更专业，
 
 应用链接：https://zelinai.com/s/jgAUjWXaXcC8ka3Zp2nXHg
 
-![](img/a864ad48715767d4e7b7d034d0430315.png)
 
 通过使用 ZelinAI 的两个电子邮件模板，我能够生成适用于我的客户和收藏家的两种不同样式的电子邮件。现在，我只需要根据需要进行改进，并安排它们发送出去。
 
@@ -476,7 +465,6 @@ ZelinAI 应用还可以帮助你优化电子邮件，使其听起来更专业，
 
 应用链接：https://zelinai.com/s/K5hu4vpJfoayPk7hXYhBTf
 
-![](img/3ba38b360af0ccb2b6550a5aa96f53ab.png)
 
 上面示例中的应用只需将长格式内容复制并粘贴到聊天中，ZelinAI 应用程序会审查并创建引人入胜的标题或描述，以吸引观众注意。
 
@@ -504,7 +492,6 @@ ZelinAI 可以更轻松地生成你想象的结果，以及你可能没有考虑
 
 > /imagine prompt: an illustration of an industrial square creative stainless steel sculpture inspired by Bansky, depicting a machine-like structure with clock gears and pipes merging into a head of a human figure looking up facing the sky, with a greyish-blue color temperature, a curious facial expression, bright backlighting, and a futuristic atmosphere. --q 2 --v 5.2 --stylize 1000
 
-![](img/b754dbc1910c994c38d0766db9791a31.png)
 
 > Prompt 2:
 
@@ -516,7 +503,6 @@ ZelinAI 可以更轻松地生成你想象的结果，以及你可能没有考虑
 
 **P**rompt 1 – 灵感来自艺术家理查德·塞拉 (Richard Serra)，该雕塑设计庞大、曲线优美
 
-![](img/ac34547643d09d2b17673eee2d911b0e.png)
 
 **P**rompt 2 – 灵感来自艺术家加里·诺克斯·贝内特 (Garry Knox Bennett)，古怪而有趣
 
@@ -534,7 +520,6 @@ ZelinAI 可以更轻松地生成你想象的结果，以及你可能没有考虑
 
 复制/粘贴的内容：
 
-![](img/15b8058f541fdfa7282662ef85495577.png)
 
 提示如何重写它：
 
@@ -544,7 +529,6 @@ ZelinAI 可以更轻松地生成你想象的结果，以及你可能没有考虑
 
 优化应用的工作方式与摘要或元描述提示类似，具有各种资源，以确保你永远不会发布或发送充满错误的内容。此示例将查看复制和粘贴的内容，并重写内容以解决所有错误。为了提高可见性，重写还包括它所做的更改列表：
 
-![](img/be582deb58b772f540fb840aaf49c14c.png)
 
 忽略其中一些小的、可避免的错误有时可以决定潜在客户是否转化为客户。他们希望确保你是你所在领域值得信赖、知识渊博的专业人士。拼写、语法和标点错误可能会妨碍你的努力。
 
@@ -556,7 +540,6 @@ AI 希望帮助你确定提高内容排名的方法。ZelinAI 的应用可帮助
 
 应用链接：https://zelinai.com/s/5ntW2gELQusWiffKonnZqF
 
-![](img/133c735622952bf57901dfc6d917977b.png)
 
 根据总体规划提示，商家资料的问答部分可以成为提高可见性的重要资源。ZelinAI 应用通过查看与你添加的关键字相关的常见问题来工作，旨在节省时间并增加工作价值。
 
@@ -578,7 +561,6 @@ AI 希望帮助你确定提高内容排名的方法。ZelinAI 的应用可帮助
 
 **在不到****一个小时的时间里，即可完成以上工作流，在以前**这通常需要几天甚至几周才能完成的事情。现在，有足够的时间去做我想做的事情了！
 
-![](img/03ae6cb152cf8d0723907406d64476b8.png)
 
 AI 的崛起正在改变我们的工作方式。AI 不仅能够提高效率，还能打开我们从未想象过的可能性，进一步推动各种行业的进步。现在，让我们更深入地了解 AI 如何影响企业运营，并重塑我们的未来。
 
@@ -590,7 +572,6 @@ AI 的崛起正在改变我们的工作方式。AI 不仅能够提高效率，�
 
 #### ZelinAI 应用：传感器售后助手
 
-![](img/191cfd8cc5831c70855e2e0275b66c7d.png)
 
 以上应用就是通过训练企业提供的数据集，通过 ZelinAI 训练之后获得一个人工智能助手来回答特定问题。
 

@@ -198,7 +198,6 @@ Github需要魔法，没条件的学员可以选择 Gitee 来使用。
 
 [项目链接](https://github.com/InternLM/Tutorial)
 
-![](img/eed5a996e2292730ae929136dbdf482d.png)
 
 3.获取仓库链接
 
@@ -264,7 +263,6 @@ git **push** origin camp3_577
 
 注：初始化时可能需要创建对应的token：（示例，可根据实际提示完成）
 
-![](img/2ef1cb0bfc2494cb28ef831d622fccea.png)
 
 ![](img/a52ee6821febc33197c3fec1107aa136.png)
 
@@ -296,11 +294,9 @@ PR示例链接：https://github.com/InternLM/Tutorial/pull/790
 
 也可以合并到自己仓库的代码
 
-![](img/d63d6525bbe89035664967ad295dacd4.png)
 
 自己的仓库，可以自行merge，作业提交的公开需要维护者审核。
 
-![](img/848d5fd2992ebfa2bfbe438f74d883f7.png)
 
 ## 实践项目：构建个人项目（简版）
 
@@ -324,9 +320,7 @@ PR示例链接：https://github.com/InternLM/Tutorial/pull/790
 
 1.先在github创建一个初始化仓库
 
-![](img/662fc9d00da1db5e4040e604fdca56ff.png)
 
-![](img/af6043844a06ecc5f972f8c20d0ef08f.png)
 
 这样你就得到一个空白的仓库：
 

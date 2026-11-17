@@ -24,7 +24,6 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 第一课内容：完整跑一遍流程 + 宽高比插件安装 + 图片高清讲解（图片高清很重要，没看的这部分要看一下）
 
-![](img/2695aae4c5d0a570ee6102fecd1d458c.png)
 
 [AI赛博教程第二课.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I4I7bL5sXoeLqaxJ4rwcO8t2nsh)
 
@@ -286,11 +285,8 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 加粗字体可以随意更换
 
-![](img/504ec4fa3147ad60983772a87bc2cf8d.png)
 
-![](img/c81e346806794e9bc044039d74d13f58.png)
 
-![](img/b6f1dd13e54375c174d05fd3b63ba106.png)
 
 ### 横向思考：
 
@@ -298,11 +294,8 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 > 穿着黑色夹克和头盔的女孩骑着粉色摩托车，可爱，帅气，全身，动漫风格，赤壁，运动模糊，赛博朋克，最好的品质--niji 5 --s 200
 
-![](img/c29da4d6c66606a08d30055d8b13ee8c.png)
 
-![](img/6447dcaa874ccd67f6e6255ee892e894.png)
 
-![](img/89b197c334260709f70f6ffce76fd84b.png)
 
 ![](img/716289705fd7862f7611ccd8eaca4dfc.png)
 

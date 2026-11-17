@@ -186,7 +186,6 @@ PS：挖个坑，嘉钰后续研究研究能不能配置中转服务以实现海
 
 ![](img/7cca890c0a48ad7165bdc2ff3e65e86f.png)
 
-![](img/ee208aef7a8d79cd40f5d043d0ecb6fa.png)
 
 ![](img/798a3060ff80d8d333be6c22614ee8ea.png)
 

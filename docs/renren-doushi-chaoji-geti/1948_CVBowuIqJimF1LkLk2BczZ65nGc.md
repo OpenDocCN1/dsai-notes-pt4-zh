@@ -114,15 +114,12 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[Claude Code CLI 源码分析 : 从 Prompt 架构到工业级 AI Agent缓存黑科技+自我进化+多Agent协作+遥测监控](https://waytoagi.feishu.cn/wiki/EWgZw2kq3i8ZrIkFTIRcCn2vnKe?from=from_copylink)》Anthropic 这种量级的公司，他们会怎么设计 AI Agent？看完源码才发现，这不是“Prompt 工程”那么简单，而是 缓存架构 + 自我进化记忆 + 多模式编排 的完整基础设施。
 
-![](img/07af1b1651c1640835eba812487b0c56.png)
 
 +   《[Claude Code 泄露代码隐藏的87个未发布功能 暴露其野心...](https://waytoagi.feishu.cn/wiki/PeSYwZR0kiiZmHkU6lccu1xAnZ0?from=from_copylink)》Claude Code 的完整源码泄漏后 有人说"44个隐藏feature flag"。小互翻完源码的实际数字是87个。让我们来一同看看这背后隐藏了哪些未上线的功能！
 
-![](img/f233e8bc40ab8279370b7ae3c7f80af0.png)
 
 +   《[一文讲透如何构建Harness——六大组件全解析](https://waytoagi.feishu.cn/wiki/BgldwwYM4iOZTHkaSWBcxc2dnrd?from=from_copylink)》Agent = Model + Harness。 模型提供智能，Harness 让智能变得有用。这不是一个新概念，但它正在成为 2026 年 AI 工程领域最核心的共识。本文将从"裸模型的四个硬伤"出发，逐一拆解 Harness 的六大组件——文件系统、Bash + 沙箱、记忆（AGENTS.md）、Web Search + MCP、上下文工程、编排 + Hooks——带你看清 AI Agent 真正的竞争壁垒，不在模型层，而在 Harness 层。
 
-![](img/637340453ff2ee2b36423a217e424aba.png)
 
 +   《[真开源！Claude Code75页橙皮书，带你从入门到精通](https://waytoagi.feishu.cn/wiki/Xc4gwuYxqio1vYkQArLc1rT8noe?from=from_copylink)》这份手册是作者和Claude Code一起写的。对，用CC写CC教程，它自己教你怎么用它。信息来源主要是Anthropic官方文档、Claude Code之父Boris Cherny的分享、吴恩达的Claude Code课程，再加上我自己用CC做了十几个产品踩过的坑。我用CC大半年了，每个月给Anthropic付200多美金（含税），烧过数十亿tokens，该踩的坑基本都踩了一遍。
 
@@ -146,7 +143,6 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[Nicholas Carlini：当 AI 比所有人都更擅长找漏洞，安全行业还剩几个月？](https://waytoagi.feishu.cn/wiki/OGI1wssooiDdxpk1iMMc7OU4nFf?from=from_copylink)》Anthropic 研究科学家 Nicholas Carlini 在 [un]prompted 2026 安全会议上用不到 25 分钟演示了一件事： 语言模型现在可以自主找到并利用零日漏洞 ，目标包括 Linux 内核这种被人类安全专家审计了几十年的软件。
 
-![](img/6310f6558b7aaa1b41ef9827fef565f5.png)
 
 +   《[PixVerse V6使用手册｜拍我AI上新！让 AI 视频拥有「生命感」](https://waytoagi.feishu.cn/wiki/K0sfw5w7NiDL04kXvjMc8Gh3nze?from=from_copylink)》万众期待的 PixVerse V6 终于上线啦！🎉社区专属福利：200份7天Pro会员兑换码，点击文档直接领取，手慢无！
 
@@ -158,15 +154,12 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[最近很火的 Harness-Engineering 到底是什么？](https://waytoagi.feishu.cn/wiki/Dtfmw3bmBiAqtqk1eVmczuMbnWc?from=from_copylink)》Harness 到底是什么？放到AI的语境里，Harness就是你给AI搭的整套工作环境：告诉它什么能做什么不能做的规则文件，自动检查它有没有犯错的校验脚本，帮它记住重要信息的上下文管理，出了问题能回滚的安全机制。
 
-![](img/723ffef032cae546e29bdbbf82ec0e3e.png)
 
 +   《[Claude Cowork产品技术负责人：AI同事、本地优先Agent以及知识工作的未来 丨Latent Space](https://waytoagi.feishu.cn/wiki/SaXhwfd03iQ5pokZMSIc6JhcnYb?from=from_copylink)》Claude Cowork产品技术负责人Felix 从产品设计的第一原则出发，解释了 Anthropic 为何在"云优先"的浪潮中，执意把 AI agent 留在你的本地电脑——以及虚拟机、Skills、零执行成本这套组合拳，究竟在改变哪些根本性的东西。如果你关心 AI agent的产品逻辑、知识工作的自动化路径、或者 Anthropic 内部的工程文化，这期值得细读。
 
-![](img/a9310a35d307e2ad86e8f2958c7846ed.png)
 
 +   《[回顾去年 AI 出海 6 问 + SEO 实战 7 答](https://waytoagi.feishu.cn/wiki/OslMwa2fpiofXsk5GYMcKyFdnuf?from=from_copylink)》AI出海正进入精细化增长阶段，OpenClaw、A2A支付等方向热度攀升。流量成本走高，GEO与传统SEO成为了关键入口。本篇文章带你揭秘不同区域市场的付费差异与选择逻辑，给出0-1阶段定ICP、跑通渠道、讲清价值的核心步骤，更有SEO页面优化、外链、小语种布局等实战方案。对AI出海创业者而言，能直接避开常见误区，快速搭建可落地的增长打法。
 
-![](img/4c9a57d7ee99d1f3a46aac8dda0f08ab.png)
 
 +   《[Claude Code创始人分享了他最新的15条CC使用技巧！](https://waytoagi.feishu.cn/wiki/Jq99wfZJEi1JWckvohFcjR8dn5b?from=from_copylink)》Claude Code创始人Boris Cherny分享了他最新的15条使用技巧，让我们一同来一探究竟！
 
@@ -180,23 +173,18 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[使用Claude Code两个月以来学到的一切](https://waytoagi.feishu.cn/wiki/ZsckwE66givJsxkWlRscbmuSnXd?from=from_copylink)》过去两个月，作者一直在深度使用Claude Code，不是随便玩玩，而是每天都在实战一线深耕。他完成了相关课程，考取了认证，用它搭建项目，搞砸过功能，再逐一修复，接着开发更多功能。这篇文章是他全部的实战心得：那些鲜有人提及的功能、真正高效可用的工作流、让他耗费数小时才踩完的坑，以及帮他节省数天时间的技巧。
 
-![](img/8059b11de08e7b99fc93fbfde784065f.png)
 
 +   《[一个从执行到记忆的完整 Agent Harness: gstack + Compound Engineering：](https://waytoagi.feishu.cn/wiki/QYdew4W0eivvsJk4aWccwl4enYM?from=from_copylink)》Compound Engineering凭借更先进的架构，成为了超越热门Superpowers的AI开发工作流。它贴合Anthropic的Harness设计，在规划、审查环节深度更强，还独创了知识沉淀机制，让AI不再每次从零开始。搭配gstack使用，可以覆盖决策、规划、执行、审核全链路，让AI开发更可靠、更具长期价值，对长期迭代项目的开发者极具实用意义。
 
-![](img/dcad1290b9286035adfdf7c155213fc5.png)
 
 +   《[从零开始两天构建一个 Claude Code：带你拆解 AI CLI 的每一层](https://waytoagi.feishu.cn/wiki/JyQjwf9JziRzv5klJB1cXSIxnDd?from=from_copylink)》一个生产级的 agentic CLI 到底需要哪些组件？每一层的具体怎么实现？SSE 缓冲区怎么管理、system prompt 怎么分段、工具权限怎么拦截、上下文满了怎么压缩。这些问题靠读文档回答不了，靠逆向混淆代码效率极低。作者以 Claude Code 为参照系，从零重建了一个功能等价的实现——纯 TypeScript，零框架，唯一的依赖是 fast-glob，得到了46 个文件，一万行 TypeScript。这篇文章记录的是这个过程中每一层的技术决策和实现细节。
 
-![](img/52caf813682ed9dd9c4078ccc078a326.png)
 
 +   《[我用9个AI Agent管理工作和家庭，省出来的时间你想象不到丨Lenny's Podcast](https://waytoagi.feishu.cn/wiki/MY9uwvYUPi0kTtkeX3kcIrNGnyf?from=from_copylink)》Claire Vo曾三度担任首席产品官，也是ChatPRD 的创始人。她几乎用过市面上所有AI产品。她第一次安装OpenClaw花了整整八个小时，换来的结果是——家庭日历被清空。然而半年后，她在家里摆了三台 Mac Mini，运行着九个专属 AI 智能体。克莱尔完整复盘了她从怀疑者到深度用户的全程，以及她如何用 OpenClaw 同时打理工作、播客、课程和三个孩子的日常。
 
-![](img/aa7ab7bf242544e8c72792ee0228be39.png)
 
 +   《[对谈Gamma创始人Grant：如何让7,000万用户爱上视觉创作｜Linkloud Talk](https://waytoagi.feishu.cn/wiki/IO0WwCUHOi2zK4kpDLBct45Pnc6?from=from_copylink)》Linkloud Talk本期邀请到Gamma的创始人Grant Lee。Gamma最早从“革命”Powerpoint 切入，在上线至今3年多的时间里，以极高的人效在去年突破1亿美金的ARR，用户突破 7000万，并且完成了a16z领投的6800万美金的融资，估值高达21亿美金。Grant 分享了创业以来的公司治理理念、以及在高速发展阶段如何保持竞争力，营销与增长上的挑战和最佳实践！
 
-![](img/424aaa0a203c8b6eace49f6a5a2e39f3.png)
 
 ###  3 月 28 日
 
@@ -204,7 +192,6 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[我们如何为Deep Agents构建评估体系](https://waytoagi.feishu.cn/wiki/GY8OwGeYWiB3RZkBj7QcGkmUnnc?from=from_copylink)》最优质的智能体评估方法会直接衡量我们所关注的智能体行为。本文将介绍我们如何采集数据、构建评估指标，并持续开展范围明确、目标精准的实验，从而让智能体更加精准可靠。
 
-![](img/eab3dcccc8f63ca55266f8dbb711fe3e.png)
 
 +   《[10个Claude工作流，每周为我节省10多个小时。](https://waytoagi.feishu.cn/wiki/OD5Ewi7nOiIEywkzopfczGrznJe?from=from_copylink)》作者连续两周记录自己使用Claude的情况，包括时间戳、处理任务，以及相较于手动操作节省的时间。每周可节省11.4小时。仅通过浏览器标签页里的10个工作流程，每月就能为你夺回45小时以上，也就是整整两天的时间。
 
@@ -220,7 +207,6 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[从Prompt到Context到Harness：AI工程的三次范式转移，第三次正在发生](https://waytoagi.feishu.cn/wiki/JT4PwNxiAi76TKkOGaBc8Y7fnae?from=from_copylink)》2026年初，Anthropic 和 OpenAI 几乎同一周发了各自关于 Harness Engineering 的实践文章。加上两篇关于 Agent 记忆基础设施的学术论文，以及关于三代工程范式演进的讨论。
 
-![](img/ddb90e49aaac82920742519f26e9e728.png)
 
 ###  3 月 27 日
 
@@ -236,11 +222,9 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[对谈海外增长“老兵”Iris与Kostja：出奇制胜，如何打出AI产品的增长组合拳｜Linkloud Talk](https://waytoagi.feishu.cn/wiki/PhUBwaF9Ei1fddkgWQ7cMdDVnwf?from=from_copylink)》Linkloud Talk 本期聊了一个过去一年被无数 AI 创业者反复提起、但又始终没有标准答案的话题：在产品高度同质化、推广成本持续上升的今天，一个产品到底是如何找到 PMF，又是如何完成冷启动与可持续增长。
 
-![](img/1c265c0166fbfe45dcda8405c59a397f.png)
 
 +   《[我用OpenClaw构建了一个AI记忆系统：从线性笔记到分层大脑](https://waytoagi.feishu.cn/wiki/HBKCwdP9Eig91NkhcTUc3QEhnXg?from=from_copylink)》大多数AI助手的记忆存储方式是 线性JSONL文件 ——就像把所有笔记按时间顺序塞进一个抽屉，没有分类，没有索引，没有优先级。作者基于OpenClaw构建了一个 高级Memory系统，很好地解决了这一问题！
 
-![](img/3aa54ae091ee5e5632f55fa5ebd0a43d.png)
 
 ###  3 月 26 日
 
@@ -254,19 +238,15 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[林俊旸离职后首发长文：从「想得更久」到「为行动而想」](https://waytoagi.feishu.cn/wiki/KHVGwZLd4iYUAVkeJTvchW3QnCe?from=from_copylink)》3月4日凌晨发出那句「me stepping down. bye my beloved qwen」之后，林俊旸在社交媒体上沉默了三周。今天，他在 X（Twitter）上发布了离职以来的 第一篇长文。在这篇文章里，他没有谈离职原因，没有回应去向传闻。全文只做了一件事：写下他对 AI 下一阶段方向的判断。
 
-![](img/8a08cfc413eaa50f545e87872a257141.png)
 
 +   《[一次设置，永久生效：Claude Skills 从入门到精通！玩转小龙虾直接原地起飞！](https://waytoagi.feishu.cn/wiki/A4mMwDtq9ijiP4kmt52cOnL4nLb?from=from_copylink)》这篇文章带你一同了解Skills 是什么、怎么建 、怎么建好以及Anthropic 在 2026 年 3 月刚推出的三个重要升级。
 
-![](img/04141f9fb5d1b54e3bd1c9ce36ee823d.png)
 
 +   《[2026 年初科技产品岗位市场全景：数据告诉我们的真相【译】](https://waytoagi.feishu.cn/wiki/UvKkwHFioiAD97kRd0RcLrq9nIh?from=from_copylink)》裁员新闻铺天盖地，AI 要抢走饭碗的焦虑四处蔓延——但如果暂时放下这些头条，认真看看数据，会发现一个截然不同的故事。科技行业的招聘正在呈现许多令人鼓舞的信号，同时也浮现了一些值得关注的新趋势！
 
-![](img/ec18b00fe23f75d57d33d43010187fb8.png)
 
 +   《[Claude Code auto mode 解析：如何用 AI 分类器替代人工审批](https://waytoagi.feishu.cn/wiki/Kg00wiLqOi8sFnkWyUCcs300nBc?from=from_copylink)》用 Claude Code 写代码的人都熟悉一个场景：Claude 每执行一个命令、每改一个文件，都要你点一次“同意”。Anthropic 的数据显示， 用户 93% 的操作都会批准 。也就是说，这个“安全审批”环节，绝大多数时候只是一个条件反射。Anthropic 刚发布了 Claude Code 的 auto mode（自动模式），试图解决这个问题。他们写了一篇工程博文详细解释了原理，里面有不少有意思的工程设计。
 
-![](img/09545ea84f236abc40bbf46aa4243f4c.png)
 
 ###  3 月 25 日
 

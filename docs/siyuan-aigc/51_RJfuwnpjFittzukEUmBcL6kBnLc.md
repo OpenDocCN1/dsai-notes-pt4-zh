@@ -45,7 +45,6 @@
 
 译：中国油画，一个带着白色帽子的少女，在乡间小路上，道路两旁是向日葵，柔和的光，暖色调，透视，8k，高品质，杰作 --q 2 --v 5In Chinese oil painting, a young girl with a white hat is on a rural road flanked by sunflowers, with soft light, warm colors, and perspective,8k,hyper quality，high detail，masterpiece --q 2 --v 5
 
-![](img/62a0b058d1a0a8426652a2f2d9755db9.png)
 
 1.  **抽象描述法：**
 
@@ -91,7 +90,6 @@
 
 下面是关于整个人物视角和拍摄角度的关键词：
 
-![](img/b96d9fabcbfba813f7712cdefcdabc32.png)
 
 1.  **卡通 IP 类人物**
 
@@ -133,7 +131,6 @@ soft color,model, fineluster,clean background, 3D*其他什么渲染器之类的
 
 Female doctor, wearing a nurse's cap and mask, wearing a white coat, and wearing a stethoscope,Look ahead,soft color,model, fineluster,clean background, 3D --v 5
 
-![](img/99d21260f18cb99f0dfef713b6bc82d6.png)
 
 例子 2：
 
@@ -141,7 +138,6 @@ Female doctor, wearing a nurse's cap and mask, wearing a white coat, and wearing
 
 Girl, brown hair, wearing glasses, holding a book,soft color,model, fineluster,clean background, 3D --v 5
 
-![](img/acf05383e365c2c713f59cdb5dc2e9f0.png)
 
 例子 3：
 
@@ -161,7 +157,6 @@ Girl by pop mart, brown hair, wearing glasses, holding a book,soft color,model, 
 
 ![](img/1c4dec7134440e991b4f4dd6303c0806.png)
 
-![](img/d0fc2b203d54e3418dfbf45458119591.png)
 
 做头像：
 
@@ -211,15 +206,12 @@ Girl by pop mart, brown hair, wearing glasses, holding a book,soft color,model, 
 
 例子①：low poly，airplane
 
-![](img/12bf605fb4e82fe482d33b0a0adfa97c.png)
 
 例子②：Low poly, Swimming pool, volleyball, swimming circle
 
-![](img/87549c1f7e47d6e7b25c210f2b6e549b.png)
 
 例子③：low poly,Office area, computer, keyboard, mouse
 
-![](img/91ccd9c1c08c8675d377a57cfd8a180b.png)
 
 效果就不多说了，有目共睹，这么简单粗暴，赶紧玩起来吧！
 
@@ -239,13 +231,11 @@ app icon 定义图标，dribble，Pinterest 是给定参考，Minimalis 是极�
 
 例子：app icon,isometric 3d,Water cup,pinterest,dribble,Clean background,minimalist --q 2 --c 100
 
-![](img/8c0e20ce5f073ee1c276248688dd1042.png)
 
 ② 渐变图标：gradient
 
 例子：app icon,gradient,Water cup,pinterest,dribble,Clean background,minimalist --q 2 --c 100
 
-![](img/b6dc16eb5dcb92618085c87c2cbacd89.png)
 
 ③ 扁平图标：flat
 

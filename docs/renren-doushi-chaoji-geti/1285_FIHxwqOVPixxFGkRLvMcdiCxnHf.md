@@ -6,7 +6,6 @@
 
 https://www.lanrui-ai.com/
 
-![](img/9d10cc61be42d877dc9e441120aaf1e2.png)
 
 ![](img/4c5a2d05ea8e35a5ae5dc9e8b0cc0f96.png)
 
@@ -76,7 +75,6 @@ XFL使用Secure Aggregation方法进行加密，以保护在传输过程中的�
 
 XFL为联邦大模型微调引入了细粒度的聚合机制，能实现Step级别的安全聚合，这与经典的横向联邦学习在Epoch级别进行聚合的方法有显著区别。 这种改进的动机在于，对于大模型来说，每个Epoch的微调时间可能会较长，如果仅在Epoch级别进行聚合，其时间间隔过长，聚合次数不足，可能会对模型的性能产生负面影响。通过实现更高频率的Step级别的安全聚合，XFL能够更频繁地更新和优化模型，从而提高模型的学习效果和性能。
 
-![](img/e36043829fc20e3ce4fbc4605e1011c9.png)
 
 此外，XFL还提供了独立模式（standalone模式） ，这使得在非联邦学习的环境下，单个参与方也能进行模型的微调。这种灵活的设计使得XFL既可以满足大规模联邦学习的需求，同时也可以适应单一参与方独立进行模型微调的场景。
 
@@ -150,7 +148,6 @@ LoRA，英文全称Low-Rank Adaptation of Large Language Models，是微软的�
 
 LoRA的结构示意图如下：
 
-![](img/6be6622329de283708649e7cbf946b23.png)
 
 #02 P-Tuning v2微调
 

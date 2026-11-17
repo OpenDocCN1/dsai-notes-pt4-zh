@@ -35,7 +35,6 @@
 | 卷不动了 ！！！ |  |  |  |
 | 书小生来啦！！！ |  |  |  |
 | 黑工启动 ！！！ |  |  |  |
-| 推荐浦语第五期被拒绝了？ | ![](img/4ea9c86ac89865a3d885a9f2a73f654f.png) | Keling-v1.6-img2video |  |
 | 假期我要继续学习 | ![](img/c25f5f9b81ae7107572d85be9a7705d6.png) | Prompt： |  |
 | 赞 |  |  |  |
 | InternVL 千里眼 |  |  |  |
@@ -58,9 +57,7 @@
 
 ![](img/ceaa828e8b9208aa31c2ec9ef32205d8.png)
 
-![](img/17efb0061b5cc0fcbe35604a72cf4473.png)
 
-![](img/41239f69e85834cbcd7b2b4427e539de.png)
 
 ![](img/e8b2c406bb19dfdc4b221d4fd0f96964.png)
 
@@ -86,15 +83,12 @@
 
 > 晚安：图中的男孩正在进入深度睡眠，睡觉打呼噜，发出“zzzZZZ”
 
-![](img/e483e0ce90a0b79e03d7d614a31f4caa.png)
 
 ![](img/20c9845582292e8e2dd94c9e18ae3ae4.png)
 
-![](img/983f82d8aefb7f00884d2093183b4ff0.png)
 
 ![](img/c0445c6fad01b3e5daa19ecd5e452990.png)
 
-![](img/c50f9f0f3ace91bd4cdeb7c9ed1417ac.png)
 
 ![](img/1aa368f3f89d53a9c2677bb94779d39a.png)
 
@@ -114,7 +108,6 @@
 
 ![](img/18b44ecde578e98ea9d7a3b447f80680.png)
 
-![](img/9056e63d3a59fcc9d322d057977c49a2.png)
 
 ![](img/5dc4b2f349624b8c8add1fabf81b25ed.png)
 
@@ -130,15 +123,10 @@
 
 > prompt:图中男孩把手上的汉字合并到一起，变成一串新的文本“SH AI Lab”
 
-![](img/2ae0aa8f6bfcfc1e5954bda9d4fa8113.png)
 
-![](img/0e2d3142f6107f1027a3b1ccd8da11f5.png)
 
-![](img/8135e9fd034b868aefa07e2371c5c37d.png)
 
-![](img/40db44050dcb17c7758077179dba663f.png)
 
-![](img/e07b5b93f0bdd9c19d42cec64c70ee08.png)
 
 ![](img/4ba7a010ac792f94ecd45a3e31a35f91.png)
 
@@ -164,7 +152,6 @@ Prompt：图片中的卡通男孩正在对着电脑发呆，展现出非常困�
 
 将这个小人角色改为脚踩 chatgpt，手拿gemini然后害怕
 
-![](img/956307f9bc8f91d75125fc27af4948db.png)
 
 ![](img/fb51f5c91fadc7c2979c412181ebb793.png)
 
@@ -206,7 +193,6 @@ Prompt：
 
 ## 卷起来了、卷不动了！
 
-![](img/106dd41d162770c0e45796cf19b18e19.png)
 
 ![](img/974dbe407aa8eb7a6ad2f9fc5879c713.png)
 
@@ -220,7 +206,6 @@ Prompt：
 
 ![](img/fe452d7d8743015f7c865640e14b88f6.png)
 
-![](img/59d8c36380db1f53f71d0818743d531d.png)
 
 ![](img/c77b1be6884b471bcb86cffbb9f2c1ff.png)
 
@@ -272,7 +257,6 @@ GPT-4o：请你根据这张图里的人物，创建一些stickers的表情包。
 
 ## 2.9. 通专融合
 
-![](img/8bcfdda8f318e21746d2746eef8da8d0.png)
 
 ![](img/699117353c8c98628b96f3e4149e0fad.png)
 
@@ -298,7 +282,6 @@ GPT-4o：请你根据这张图里的人物，创建一些stickers的表情包。
 
 ![](img/f19e48396b37b49c5406f0402f620bfc.png)
 
-![](img/a5bc75679f7b471315fb4d6c4dac64d7.png)
 
 ![](img/287ed97dd45ca87d70f9c00024ecdf80.png)
 

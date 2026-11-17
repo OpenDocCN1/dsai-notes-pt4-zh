@@ -566,7 +566,6 @@ y中的每一个小项也是可以推出J的
 
 # 2 静态语义和动态语义
 
-![](img/0ece6345ce7c1d81248b814d350d9ee2.png)
 
 [5 静态和动态语义.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnsvdFoymO67iz0uHtE7rgTh)
 

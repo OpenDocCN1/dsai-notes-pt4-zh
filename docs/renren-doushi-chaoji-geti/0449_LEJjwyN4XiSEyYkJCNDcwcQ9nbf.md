@@ -845,7 +845,6 @@ https://resplendent-daffodil-98fa86.netlify.app/
 
 ![](img/5057763d83896a8db3bb6c46e7a6b3da.png)
 
-![](img/81832e860c5598fb489b0f6a4bc6c197.png)
 
 ![](img/4131f8d168a47356d5ff0d5177be95a6.png)
 

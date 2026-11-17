@@ -141,7 +141,6 @@ Example Prompts: 提示示例：
 
 > “生成一个干净、现代的信息图表，总结本收益报告的主要财务亮点。包括‘收入增长’和‘净利润’的图表，并在风格化的引述框中突出显示首席执行官的关键引言。”
 
-![](img/f91c0823087a6dffd624070b7658bb31.png)
 
 Try it in AI Studio
 
@@ -181,7 +180,6 @@ Try it in AI Studio
 
 > “将‘变压器神经网络架构’的概念概括为适合大学讲座的手绘白板图。对编码器和解码器块使用不同颜色的标记，并为‘自注意力’和‘前馈’添加清晰的标签。”
 
-![](img/2d50b7d323ffcb036e52c620aeec7ff8.png)
 
 Try it in AI Studio
 
@@ -573,7 +571,6 @@ Example Prompts: 提示示例：
 
 > “按照此草图为[产品]制作广告。”
 
-![](img/d54e89ca4c448b32a13389908ec7056b.png)
 
 Try it in AI Studio
 

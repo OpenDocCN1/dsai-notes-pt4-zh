@@ -1912,7 +1912,6 @@ Luma Labs推出的Luma Photon和Photon Flash是两款革命性的图像生成模
 
 技术文档：https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html
 
-![](img/8b9d65d2c813ff2a6d967329dcf38114.png)
 
 [Pasta City, created with Amazon Nova Reel by Amazon Ads.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QfNVbMpx0osImGxusvAcZnEdnXg)
 

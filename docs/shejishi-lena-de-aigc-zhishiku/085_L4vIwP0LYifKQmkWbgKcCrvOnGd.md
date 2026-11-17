@@ -48,7 +48,6 @@ freepik更新，可以同时生成或编辑多张图片，快工作流程，保�
 
 [2aa3b2514a0267a6e12b289f769829b7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LZOHbDp2boLJsex3ZGHc1oaWnce)
 
-![](img/c9bba17d59e149c6661c09f958975685.png)
 
 ![](img/025251a84fb8fed60dde839c0e992591.png)
 
@@ -56,6 +55,5 @@ freepik更新，可以同时生成或编辑多张图片，快工作流程，保�
 
 [abf5dbeb2108d4d115d0f4a58859bf30.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N3XhbJk5coRGOKx8xAncEpgPncf)
 
-![](img/7797da5b4a2a3ba0bb951190e79ca4ff.png)
 
 ![](img/2c3a5f46d98de6185cfb23d57d443ed6.png)

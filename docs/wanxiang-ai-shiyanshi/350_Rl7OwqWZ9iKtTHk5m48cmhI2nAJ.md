@@ -266,7 +266,6 @@ Claude 读取 methods/03-market.md ，执行检查，返回结果：
 
 3 个步骤
 
-![](img/de60f304c82e2330f8e3026c5870bf46.png)
 
 ---
 
@@ -354,7 +353,6 @@ Claude 会自动帮你创建完整的 Skill 结构。
 
 写作问题
 
-![](img/4aba5c9b26d1f9b6810d20d349049076.png)
 
 每个阶段有检查清单，写完打分：≥80% 发布，60-79% 优化，<60% 重写
 
@@ -376,7 +374,6 @@ writing-assistant/
 
 使用流程是怎么样的
 
-![](img/0050eeaaa091f4e8225d149d3efb21b3.png)
 
 ---
 
@@ -403,7 +400,6 @@ writing-assistant/
 
 正向循环
 
-![](img/134c010dc888f4428874ae9f073ace69.png)
 
 ---
 

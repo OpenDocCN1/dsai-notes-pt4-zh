@@ -30,27 +30,21 @@
 
 借助 Gemini 模型的现实世界知识库，以及来自网络搜索的实时信息与图片，为特定主体生成更精准的渲染效果、创建信息图表，或将笔记转化为示意图。
 
-![](img/b2a489687b45bf595e652f5da2d6210e.png)
 
 > Prompt: The Layers of the Earth, depicted as a clean, isometric cutaway illustration. Showcase the distinct layers—Crust, Mantle, Outer Core, and Inner Core—with clear labels and texture variations. Include small icons on the crust representing mountains and oceans. The Inner Core should have a subtle, radiant glow. The style is Modern Isometric Infographic, characterized by clean lines, sharp angles, and a minimalist feel. A powerful color scheme of deep earth tones, fiery oranges, and molten yellows, contrasted with a cool blue for the surface.
 
-![](img/9efbaf4fc8bc23cd7fc8755c2b5c44a1.png)
 
 > Prompt: High-quality flat lay photography creating a DIY infographic that simply explains how the water cycle works, arranged on a clean, light gray textured background. The visual story flows from left to right in clear steps. Simple, clean black arrows are hand-drawn onto the background to guide the viewer's eye. The overall mood is educational, modern, and easy to understand. The image is shot from a top-down, bird's-eye view with soft, even lighting that minimizes shadows and keeps the focus on the process.
 
-![](img/5caee09a570db7f6f79ec8d5ee494899.png)
 
 > Prompt: Create an image of Museum Clos Lucé. In the style of bright colored Synthetic Cubism. No text. Your plan is to first search for visual references, and generate after. Aspect ratio 16:9.
 
-![](img/c35d573d8db873e8bb95f8b0f1ba85ff.png)
 
 > Prompt: Create an image of Museum Clos Lucé. In the style of a color chalk sketch, no text. Your plan is to first search for visual references, and generate after. Aspect ratio 16:9.
 
-![](img/e9d91f309341da345a79eb09bb81dbac.png)
 
 > Prompt: The Layers of the Earth, depicted as a clean, isometric cutaway illustration. Showcase the distinct layers—Crust, Mantle, Outer Core, and Inner Core—with clear labels and texture variations. Include small icons on the crust representing mountains and oceans. The Inner Core should have a subtle, radiant glow. The style is Modern Isometric Infographic, characterized by clean lines, sharp angles, and a minimalist feel. A powerful color scheme of deep earth tones, fiery oranges, and molten yellows, contrasted with a cool blue for the surface.
 
-![](img/d0af4a40287e1fdcdc71b35a2ff57951.png)
 
 > Prompt: A baker's guide to different types of flour (e.g., All-Purpose, Bread, Cake, Whole Wheat). A rustic, hand-drawn style comparing the protein content, best uses, and texture of each flour, displayed as sacks of flour.
 
@@ -76,7 +70,6 @@
 
 > Prompt: A sophisticated ‘New Job’ card is laid flat on a sleek, minimalist surface, perhaps black glass, with a subtle reflection. The design is elegant and empowering, featuring a distinguished color palette of deep navy blue, shimmering gold, and crisp white. The central graphic is a minimalist icon of a mountain peak or an upward-growing graph, subtly debossed into the card with gold foil accents, symbolizing achievement and growth. The text, “Congratulations on your exciting new adventure!” is inscribed in a refined, classic serif font, printed in gold ink. The message, “Wishing you success, fulfillment, and happiness in your new role,” is in a complementary, elegant sans-serif font. The card stock is thick and features a luxurious, smooth matte finish, providing a premium feel. The overall aesthetic is one of understated excellence and aspiration, celebrating a career milestone with grace and professionalism.
 
-![](img/ae25ce1c9d973baeb0534ed00f4ff78e.png)
 
 > Prompt: A bright and cheerful thank you card is set against a sunny yellow background, casting a soft shadow. The design is playful and modern, featuring a vibrant color palette of fuchsia, sky blue, and white. The main graphic is a whimsical pattern of small, overlapping polka dots in fuchsia and blue, creating a confetti-like effect. “Thank You!” is boldly written in a chunky, friendly sans-serif font, with a slight 3D shadow effect, making it pop. The message, “So grateful for your kindness and generosity. Your thoughtfulness truly brightened my day,” is presented in a clean, straightforward sans-serif font. The card has a glossy finish, enhancing the vividness of the colors. The overall impression is one of enthusiastic and heartfelt appreciation, delivered with a burst of joyful energy.
 
@@ -84,7 +77,6 @@
 
 将文本翻译成不同语言，或对图片内的现有内容进行本地化处理。你甚至可以修改照片的环境与场景，例如把孟买海岸替换为东京天际线。
 
-![](img/8ab046cb4a642da74dc9e835fcb96319.png)
 
 Prompt 1: An intimate, naturalistic cinematic close-up reveals a small, intricately illustrated sign made of recycled material, showing drawings of local birds and flowers. Delicate script below reads: "Native Wildlife: Please Observe from a Distance." Soft, diffused light filters through the leaves of a nearby fern, casting gentle shadows. The background is a soft blur of vibrant green foliage, emphasizing respect for the delicate ecosystem.
 
@@ -130,15 +122,12 @@ Prompt 1: This vibrant new baby card, perfect for a gender reveal or gender-neut
 
 在单个工作流程中，保持最多 **5 个角色**** 的形象统一**与相似度，同时保持最多 14 个物体 的还原度。角色与物体在不同场景中始终清晰可辨，让叙事拥有更流畅的视觉连贯性。
 
-![](img/e514d82ff3b04c7251efd8c72b2df0a1.png)
 
 > Prompt: Create an image of these 14 characters and items having fun at the farm. The overall atmosphere is fun, silly and joyful. It is strictly important to keep identity consistent of all the 14 characters and items.
 
-![](img/e0a67b33e1a0270287c2f82e58becbdc.png)
 
 > Prompt: Create an image of these 14 characters and items having fun at the farm. The overall atmosphere is fun, silly and joyful. It is strictly important to keep identity consistent of all the 14 characters and items.
 
-![](img/54f1a7b829ece7200b31658549ae7ab6.png)
 
 > Prompt: A medium shot of the 14 fluffy characters are on the bleachers, completely captivated by the end of a figure skating performance. The overall atmosphere is fun and cheerful. It is strictly important to keep identity and attire consistent of all the 14 characters.
 
@@ -166,11 +155,9 @@ Prompt: Create a funny 6 part story with these 3 fluffy friends building a tree 
 
 > Prompt: Cinematic still in the style of a dreamlike portrait, illuminated by the warm hues of a setting sun filtering through tall grasses. The subject, a person with sleek dark hair, is positioned amongst the golden stalks, their face catching the soft, glowing light. They are adorned with an intricately embellished collar and large, ornate earrings that add a touch of opulence to the natural setting. The background is a blurred expanse of field and sky, creating a sense of depth and isolating the subject in a moment of serene beauty. The lighting is the key element, casting a warm, almost ethereal glow on the skin and highlighting the textures of the grasses and the jewelry. The composition is a close-up, focusing on the subject's face and upper body, reminiscent of the evocative and painterly portraits captured by a visually sensitive filmmaker. The ambiance is one of magical realism and tranquil beauty, where the natural and the ornate blend seamlessly in the soft light.
 
-![](img/fa355fb82322ca6dbd2b1509abb609e8.png)
 
 > Prompt: Cinematic still in the style of a surreal dream sequence with a full shot of a woman standing in a field. The camera captures her from a slightly low angle, emphasizing the dramatic flow and volume of her fantastical garment. The dress is a multi-layered creation of sheer fabrics in pastel shades of lime green, pale pink, and soft yellow, billowing around her as if caught in a gentle breeze, creating abstract shapes and a sense of weightlessness. The woman has short, light pink-toned hair and a delicate expression. The background consists of a vast, golden grassland stretching towards distant, softly rendered mountains under a clear, light sky. The lighting is soft and diffused, contributing to the ethereal and dreamlike quality of the scene. The composition is carefully balanced, with the woman positioned centrally yet surrounded by the expansive landscape and the dynamic movement of her clothing. The overall ambiance is one of quiet fantasy and poetic motion, reminiscent of scenes that blur the lines between reality and imagination, with a focus on visual fluidity and gentle color transitions.
 
-![](img/aa4950196ea5d59c3732770aeb5b8224.png)
 
 > Prompt: This cinematic still, crafted with a wide-angle lens from an extremely low perspective, dramatically captures a young, slender man standing confidently. The camera is angled sharply upwards, making him appear towering and powerful, with his entire body filling the frame from his bell-bottomed trousers to his shaggy, sun-kissed hair. He's dressed in a light blue suit with subtle vertical stripes and a vibrant, gold-toned floral patterned shirt and tie, radiating a distinct retro vibe. The low angle distorts his legs, making them appear elongated and creating a dynamic sense of depth. His expression is obscured by circular, wire-rimmed glasses and the bright, golden sunlight flaring intensely from behind his right shoulder, creating significant lens flares and a hazy, dreamlike ambiance. His left hand is casually slipped into his trouser pocket, while his right hand loosely clutches a worn, reddish-brown leather briefcase. The background hints at a grand, somewhat opulent interior with arched windows reflecting the bright sky and a pale blue ceiling, typical of an elegant, older building. The lighting is bold and expressive, reminiscent of a highly stylized period drama, with a color palette dominated by cool blues and warm amber tones from the sunlight, lending the image a nostalgic, slightly surreal quality, characteristic of a classic art house aesthetic.
 
@@ -222,11 +209,8 @@ https://higgsfield.ai/image/nano_banana_flash
 
 ## 三、网友案例提示词
 
-![](img/65fed9aee1b9c8980bd52d8f8d4117e1.png)
 
-![](img/5ec4e97733c5d6617ee3b8a5fe6740df.png)
 
-![](img/ddc71e2629c0e7770d7955645ad7da7f.png)
 
 ![](img/771b50064430152774a473b3d65bbd7e.png)
 
@@ -258,13 +242,11 @@ with/without "same aesthetic"
 
 > Cinematic portrait of a Black woman in a 1940s burgundy suit, fox fur stole, and red hat with netting, holding a patterned clutch. She is backlit by a harsh, cool blue light from behind, creating a glowing halo around her silhouette. Her face is partially in shadow, with only the highlights of her cheekbones and lips catching the light. The background is a dark, moody rural town at dusk, with silhouetted telephone poles. Noir, high contrast, moody, 8K, hyper-detailed.
 
-![](img/702116390c292f964a2e3e55948e4191.png)
 
 ![](img/900aefb3fe9aa0544ddb9e00c48f0443.png)
 
 > Make a photo of a cute ball-shaped version of a [animal], with big adorable over-sized eyes, it has no head, instead its face is part of the ball, its head and body are one. They are in their usual habitat. Must be almost spherical and cartoonishly cute. Its eyes are looking up in the most adorable cheeky fashion.
 
-![](img/3b3c2f0c43398ed9a93be2db98a80f13.png)
 
 > Create step-by-step recipe infographic for creamy garlic mushroom pasta, top-down view, minimal style on white background, ingredient photos labeled: "200g spaghetti", "150g mushrooms", "3 garlic cloves", "200ml cream", "1 tbsp olive oil", "parmesan", "parsley", dotted lines showing process steps with icons sauté pan, final plated pasta shot at the bottom
 
@@ -298,9 +280,7 @@ This device is called the "Ominous Dream Machine",create a 9:16 advertisement ph
 
 ![](img/4a8d80b13258051c9497cff74eca53d7.png)
 
-![](img/ffcf4526649d2043c93fb5b28573d979.png)
 
-![](img/c73ed26a484e7af496091be1da31c358.png)
 
 ![](img/b3912a509ba960a57a9d1cdfb84c435f.png)
 
@@ -322,9 +302,7 @@ This device is called the "Ominous Dream Machine",create a 9:16 advertisement ph
 
 ![](img/9ac6b5910de41626900b55f8b02a44f5.png)
 
-![](img/1f080c3b8567d3e999cf37033ae7bb37.png)
 
-![](img/aafa199f6bed016aab4e831e85e42f2d.png)
 
 ![](img/1b4c236d043236640b5ad09871a14572.png)
 
@@ -484,13 +462,11 @@ Nano‑Banana Pro 拥有业界顶尖的清晰文字渲染能力，可将复杂�
 
 > “制作该建筑的正交蓝图，包含平面图、立面图和剖面图。用专业建筑字体标注‘北立面’和‘主入口’。16:9 比例。”
 
-![](img/a3084f5f442001c746cb84d04fcd014d.png)
 
 **复古信息图**
 
 > “制作一个关于美国餐厅历史的 1950 年代复古风格信息图表。包括‘食物’、‘点唱机’和‘装饰’等不同板块。确保所有文本清晰可读，并符合该时期的风格。”
 
-![](img/2024612896fb67117570d781e2c3246f.png)
 
 **白板教学图**
 
@@ -668,7 +644,6 @@ Nano‑Banana Pro 默认开启 “思考” 流程，会先生成中间思考图
 
 可一次性生成连续故事画面或分镜，无需网格，叙事流畅。也常用于 “电影概念图”（如伪泄露图）。
 
-![](img/2ff10620415a359e66cc8f3efdad6c11.png)
 
 示例：
 
@@ -1134,7 +1109,6 @@ From zho
 
 根据简笔画改变人物姿势
 
-![](img/3de798a3680f40eb5713739b0efb4ed9.png)
 
 ![](img/bf807811b79dad51cc9748f3c3d1df35.png)
 
@@ -1232,9 +1206,7 @@ Color grade the photo to make it more cinematic.
 
 ![](img/02d8c44e248ca3a5d81e9c2cd7755723.png)
 
-![](img/9a11e2326e0613036539cd927002b6a9.png)
 
-![](img/6a373cdece500692bd3d955e7accc734.png)
 
 ![](img/7464491544fa91f13760f8e5221c5301.png)
 
@@ -1266,7 +1238,6 @@ from [@oran_ge](https://x.com/oran_ge)
 
 ![](img/cb98c84727a960eb1c8b220857249e1f.png)
 
-![](img/713afbbe19ede143b88e2704182d86e9.png)
 
 ![](img/d73eadd524649e0b3918818cb1b28bf9.png)
 
@@ -1486,7 +1457,6 @@ lovart3天免费可用，截至9月2号
 
 from [@minchoi](https://x.com/minchoi)
 
-![](img/612c9eb569ce17cf8e8db8567b039ab3.png)
 
 [twitter-video-1280x720-video1 (12).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WcKObSG2joxVRSxLL4ochhein3f)
 

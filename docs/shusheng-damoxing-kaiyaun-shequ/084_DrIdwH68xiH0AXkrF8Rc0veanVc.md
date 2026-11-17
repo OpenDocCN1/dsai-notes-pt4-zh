@@ -502,11 +502,9 @@ https://aicarrier.feishu.cn/share/base/query/shrcnM5VzC2jnErQig5Wk88kgoe
 
 进行查看，输入你的 uid，比如闻星（uid：4）
 
-![](img/cf23a93b2e757d40c1089d028bc13977.png)
 
 在这里能够查看状态
 
-![](img/8ce243c7f75d499406e9aabd793ecbba.png)
 
 ![](img/0aec5443fe2adf066cce250753cacf85.png)
 

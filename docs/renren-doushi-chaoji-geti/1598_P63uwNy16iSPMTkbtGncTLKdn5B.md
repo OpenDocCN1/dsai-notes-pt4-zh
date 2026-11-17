@@ -18,11 +18,9 @@
 
 ChatGPT Next Web （B站UP主冻死企鹅）
 
-![](img/de19f3a08c7a15c137d6cc5b0761e2b2.png)
 
 [樱花博客ChatGPT ](https://link.zhihu.com/?target=https%3A//yh.tn/)（樱花博客）
 
-![](img/fe70b9d546cebef1fce5efaa7b1b2ed6.png)
 
 [Kami’s ChatGPT ](https://link.zhihu.com/?target=https%3A//chat.kamiyd.com/%23/chat)（本人网站）
 
@@ -100,7 +98,6 @@ ChatGPT Next Web （B站UP主冻死企鹅）
 
 ③修改侧边栏标题、副标题title
 
-![](img/b6989ea7c40b5645a43b614c4cba84e2.png)
 
 ### 修改侧边栏底部的Github按钮和链接
 

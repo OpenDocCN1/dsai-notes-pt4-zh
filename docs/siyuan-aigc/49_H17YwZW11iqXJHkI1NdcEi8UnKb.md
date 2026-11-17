@@ -21,15 +21,12 @@
 
 演示：加号方法
 
-![](img/13e4207d59ee3226a3fdc9b33986a88a.png)
 
 点击上方“上传文件”，弹出弹窗，选择图片，选择上传。
 
-![](img/37364a44c0ca3e716e4a36e0d1447de4.png)
 
 上传中
 
-![](img/9ff129e148cf8cfb963033eaf384e7af.png)
 
 回车
 
@@ -69,11 +66,9 @@
 
 在这里搜索。
 
-![](img/7ae78b0e9e5360cb4de8e9a471f56f8b.png)
 
 选择第一个
 
-![](img/f2eaa9b04ebea50b23e3bc3fb9a41dff.png)
 
 添加到自己服务器，后面点击授权即可。
 
@@ -105,7 +100,6 @@
 
 翻译：The little princess sat on the back of a goat on the prairie，children's book illustration，Fairy tale style。
 
-![](img/282c1b1b59285e5f39ffed3b299b0175.png)
 
 1.  **对称图标**
 
@@ -271,7 +265,6 @@ Tiny cute isometric（等距）+（物体）+maxemoji，soft lightingsoft pastel
 
 翻译：安子布利娃娃，柔和的背景，柔和的灯光，柔和的色彩，3d 图标粘土渲染，blender 3d，风格吉友奈良。
 
-![](img/6e7d3caf167765ed41b25c19f7945cc1.png)
 
 例子：Ball-Jointed Doll，pastelbackground, soft lighting, soft pastelcolors, 3d icon clay render, blender3d，Yoshitomo Nara
 

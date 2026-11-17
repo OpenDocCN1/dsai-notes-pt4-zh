@@ -10,19 +10,15 @@
 
 # 控制台
 
-![](img/f165ac9cf27ce7819e892214e6375608.png)
 
 # 应用定制
 
-![](img/3b23c79fa5e0d70a53085b8eb099be91.png)
 
 # 创建知识库
 
-![](img/3d268ab67f91cf292b47b29a732bfe4c.png)
 
 # 模版
 
-![](img/819d1f55f8d8f268b6b6d48b87acddf5.png)
 
 # 对话
 

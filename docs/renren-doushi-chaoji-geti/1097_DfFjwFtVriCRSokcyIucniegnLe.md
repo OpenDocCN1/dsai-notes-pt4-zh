@@ -94,7 +94,6 @@
 
 https://chat.deepseek.com/
 
-![](img/1218a3160573476541f28894b83f4a0e.png)
 
 ![](img/815fd2c95316387a5865f5da356a9d0a.png)
 

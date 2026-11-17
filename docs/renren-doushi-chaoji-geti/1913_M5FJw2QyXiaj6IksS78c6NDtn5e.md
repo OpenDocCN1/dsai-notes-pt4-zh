@@ -158,7 +158,6 @@ how：准备PPT、练习汇报、接受反馈
 
 +
 
-![](img/56a2a15c18b4f4c47ff0b94c0a596abc.png)
 
 +   [茶点故事 ](https://www.jianshu.com/u/0f438ff0a55f)阅读 34,105 评论 0 赞 185
 
@@ -180,7 +179,6 @@ how：准备PPT、练习汇报、接受反馈
 
 +
 
-![](img/d15b072b3f0e3ca898e3a792b8dc0acf.png)
 
 +   [茶点故事 ](https://www.jianshu.com/u/0f438ff0a55f)阅读 19,934 评论 1 赞 150
 
@@ -192,7 +190,6 @@ how：准备PPT、练习汇报、接受反馈
 
 +
 
-![](img/8a7cacc6aaf9de48445218040e642547.png)
 
 +   [茶点故事 ](https://www.jianshu.com/u/0f438ff0a55f)阅读 21,029 评论 0 赞 156
 
@@ -208,7 +205,6 @@ how：准备PPT、练习汇报、接受反馈
 
 +
 
-![](img/510c95c04961bd1877fcdf7ebfd20d61.png)
 
 +   [茶点故事 ](https://www.jianshu.com/u/0f438ff0a55f)阅读 21,840 评论 3 赞 150
 

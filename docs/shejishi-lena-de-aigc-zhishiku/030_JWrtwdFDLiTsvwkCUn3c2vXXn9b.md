@@ -50,7 +50,6 @@ https://www.midjourney.com/
 
 A [subject] rendered as a spectral chromatic aberration, where shifted colors in [color 1] and [color 2] tones create a ghostly, distorted appearance. The character moves in blurred, otherworldly steps, against a [background description], adding an unsettling effect to the image.
 
-![](img/da0bf9d508b158ec7b925f997ad52ceb.png)
 
 ![](img/41894ec3ab02254a55b28b8e5a1f3283.png)
 
@@ -76,7 +75,6 @@ A [subject] rendered as a spectral chromatic aberration, where shifted colors in
 
 ![](img/338be5e2f5b5f0611eb41024ee6b2e61.png)
 
-![](img/f9076e3f444418e53e49d5fe4248fa42.png)
 
 ![](img/fbdecfa51f7eb9a937c73d76f736398c.png)
 

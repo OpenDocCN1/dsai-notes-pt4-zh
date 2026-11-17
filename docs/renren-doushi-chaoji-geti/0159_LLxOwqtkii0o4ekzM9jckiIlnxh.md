@@ -196,9 +196,7 @@ https://www.douyin.com/user/MS4wLjABAAAA2Llp_pCrtROe8UAeLqzbPWtaxsOFO5Unln-K7zcq
 
 销售量25万，假设平均客单价为10元，利润率为10%，预估利润为25万。
 
-![](img/775775e58f6ca83e81de2e1d9935e859.png)
 
-![](img/48e61fd56b0d5385823438841674f0c6.png)
 
 ### 洗衣液
 
@@ -206,7 +204,6 @@ https://www.douyin.com/user/MS4wLjABAAAAdatnyOo-dqLA6wDyH8T9844Fu5ISEXBkw7WvLBy6
 
 销售量2014，假设平均客单价为20元，利润率为10%，预估利润为0.4万。
 
-![](img/4829e7803d6febdbfabbec433d83ad1e.png)
 
 ![](img/13bb1e4b7087c9116e9b01cc185ca95b.png)
 
@@ -238,7 +235,6 @@ douyin.com/user/MS4wLjABAAAAzxZSbKp9vg2UfLiMrzqBCUx7MszgOAuw-Qdm-6_RmKpLLgjjgFRG
 
 ![](img/2579207ec6af8027d171159e62f58fac.png)
 
-![](img/28c396449f0cdf79beb17ec7e7d04abb.png)
 
 ### 烟酰胺
 
@@ -246,9 +242,7 @@ https://www.douyin.com/user/MS4wLjABAAAA64V45KC5d4k5Qncue_m8lksOWSRbJQO2l5yIj-Br
 
 销售量为4292，假设平均客单为20元，利润率为20%，则预估利润1.6万。
 
-![](img/3ae19dacf58799514d030ec413041637.png)
 
-![](img/8067337b1b5ab948645e5b5e9fce50e1.png)
 
 ### 尿不湿
 
@@ -256,9 +250,7 @@ https://www.douyin.com/user/MS4wLjABAAAAOxHCBPHkZ2MOD7W9gHB51nQ_tsYSQDcOOkaWwjR1
 
 销售量为1万，假设平均客单为100元，利润率为10%，则预估利润10万。
 
-![](img/22969cc60191ec9936da5f5b900fde15.png)
 
-![](img/e8a38d19ab8147b9798f9d2467ffea59.png)
 
 ### 恰巴塔滑蛋厨具周边
 
@@ -266,9 +258,7 @@ https://www.douyin.com/user/MS4wLjABAAAAWCZPArLCVvokb7p_eAOJBEF9KGBmiSc-aIDB4uVI
 
 销售量为3万，假设平均客单为10元，利润率为20%，则预估利润6万。
 
-![](img/2bd535e086f9bf449839dadb24441a80.png)
 
-![](img/167097fd9820685c22f0e34e3c090043.png)
 
 ### 解压玩具
 
@@ -276,7 +266,6 @@ https://www.douyin.com/user/MS4wLjABAAAACiQvE8L6s_qY0xAie0JCR3gMmDegSPC6RktWZ1or
 
 销售量为2062，假设平均客单为20元，利润率为20%，则预估利润0.8万。
 
-![](img/4efb0d65bced280aaed2ee95f0a11bc3.png)
 
 ![](img/1267d0e1a97588cb8abc8f3c7018649e.png)
 
@@ -286,9 +275,7 @@ https://www.douyin.com/user/MS4wLjABAAAAeM0I32-0r3Wl_MbwrQejgA93oUtHKMhspY46ufss
 
 销售量为1万，假设平均客单为20元，利润率为20%，则预估利润4万。
 
-![](img/3b1e5280395e12e4c054bd2f1adf294f.png)
 
-![](img/a262646fc3f7cf564ce62ced55860bf1.png)
 
 # 视频号
 
@@ -296,31 +283,22 @@ https://www.douyin.com/user/MS4wLjABAAAAeM0I32-0r3Wl_MbwrQejgA93oUtHKMhspY46ufss
 
 客单为29.8～49.8，销售量为130，假设利润率为50%，则预估利润2000。
 
-![](img/cf0e652ca6a0d42cb0be4f27729813af.png)
 
-![](img/1206c750204801c2df6642be633c2b49.png)
 
-![](img/d1e59c050115de59321ac33d13bb2051.png)
 
 ### 洗地机
 
 客单为699，销售量为95，假设利润为100元，则预估利润9500。
 
-![](img/d3de7301ea12c57d73c2671020b81bcf.png)
 
-![](img/12bd632fa52af2ace7ffd96d0083652e.png)
 
-![](img/997518768bb2d341ae3fddda9635faa3.png)
 
 ### 茶吧机
 
 茶吧机客单为199，假设销售量为300，利润率为30%，则预估利润1.7万
 
-![](img/191587e1cfd1be0f57a14d424a660891.png)
 
-![](img/2526290e3741f4389aed36de5d9c1001.png)
 
-![](img/35c21954cdb981fa1fdd7269df3af4ba.png)
 
 ### 不粘锅
 
@@ -352,7 +330,6 @@ https://www.douyin.com/user/MS4wLjABAAAAeM0I32-0r3Wl_MbwrQejgA93oUtHKMhspY46ufss
 
 销量1.9万件，假设平均客单为20元，利润率为10%，则预估利润3.8万
 
-![](img/b369e3d8acecfb0ac0f8ee39f50a908e.png)
 
 ![](img/1696b126b210c4197ed37cd8c1cc3506.png)
 
@@ -360,9 +337,7 @@ https://www.douyin.com/user/MS4wLjABAAAAeM0I32-0r3Wl_MbwrQejgA93oUtHKMhspY46ufss
 
 销量1万件，假设平均客单为30元，利润率为30%，则预估利润9万
 
-![](img/874f24620944be10d8995a84dd87b2eb.png)
 
-![](img/53925565f5dd7525e4eda5ad69a347ec.png)
 
 ![](img/78f243b51cee8360cc989241fd23b9eb.png)
 
@@ -370,13 +345,9 @@ https://www.douyin.com/user/MS4wLjABAAAAeM0I32-0r3Wl_MbwrQejgA93oUtHKMhspY46ufss
 
 销量739件，客单为899元，假设一单利润为700，则预估利润50万
 
-![](img/f0149d3b31e604fe02042472228658f9.png)
 
-![](img/1b51614eb5fcf346e7661c4eb5800544.png)
 
-![](img/a74d1db701467812f7aa63db19504db7.png)
 
-![](img/c41e2f32399aae73f757ecd5ad58da21.png)
 
 ### 益智玩具
 
@@ -384,7 +355,6 @@ https://www.douyin.com/user/MS4wLjABAAAAeM0I32-0r3Wl_MbwrQejgA93oUtHKMhspY46ufss
 
 ![](img/131757a318d4b5a7613377ad7ea87d2a.png)
 
-![](img/6a84863928e8c2dd9d4a28667ef3d884.png)
 
 # b站
 
@@ -394,9 +364,7 @@ https://space.bilibili.com/3546933561920153
 
 销量为1000，假设平均客单为2000，佣金为1%，则预估利润2万。
 
-![](img/3485a79709541df49f681caa902b9f2f.png)
 
-![](img/1ab8589624eb663ed9973173bb715eb3.png)
 
 ### 充电宝
 
@@ -404,9 +372,7 @@ https://space.bilibili.com/2010195556
 
 销量为2000，假设平均客单为100，佣金为10%，则预估利润1.6万。
 
-![](img/a7242d173245a780bdd300d7ce83f521.png)
 
-![](img/00b09eb6313fc9eb514ca15bf39c386d.png)
 
 ### 枕头
 
@@ -414,9 +380,7 @@ https://space.bilibili.com/241230127
 
 销量为200，假设平均客单为300，佣金为20%，则预估利润1.2万。
 
-![](img/7b6d8106f873360d61be48efce276512.png)
 
-![](img/3a77265ddf354a3d5f724f137fbe30d8.png)
 
 ### 流量卡
 
@@ -424,9 +388,7 @@ https://space.bilibili.com/515399467
 
 假设点赞率为5%，浏览转化率为0.1%，每单30元，则预估利润10万元。
 
-![](img/81ed7867c90c296ee57b784394400681.png)
 
-![](img/7d6970979305542c91f922b45fbef44e.png)
 
 ### 沐浴露
 
@@ -434,9 +396,7 @@ https://space.bilibili.com/3493074919491727
 
 销量为3000，假设平均客单为80，佣金为10%，则预估利润2.4万。
 
-![](img/33df6ca92bb8ce4a6e9a077a04b643ff.png)
 
-![](img/194d8b3908305b87f73ef261779b54b3.png)
 
 ### 蛋白粉
 
@@ -444,9 +404,7 @@ https://space.bilibili.com/1484284806
 
 销量为5000，假设平均客单为379，佣金为10%，则预估利润18.9万。
 
-![](img/24da32ca7405de1be0e183b735dc0378.png)
 
-![](img/7a6237028797c89a6c4a844ba28203fe.png)
 
 ### 人体工学椅
 
@@ -454,9 +412,7 @@ https://space.bilibili.com/3546663356467899
 
 销量为500，假设平均客单为500，佣金为5%，则预估利润1.25万。
 
-![](img/5e37adcfbaac0b97536f1f416371bf87.png)
 
-![](img/db2b79cd8298d018cef1a939ca58f81c.png)
 
 ### 家用咖啡机
 
@@ -464,9 +420,7 @@ https://space.bilibili.com/3546568902838559
 
 销量为100，假设平均客单为2000，佣金为5%，则预估利润1万。
 
-![](img/37a20e86774b28ab3d7d224e7c8ccbd0.png)
 
-![](img/ac78fe3cbda6f3baf5562f433da68c61.png)
 
 ### 蓝牙耳机
 
@@ -474,9 +428,7 @@ https://space.bilibili.com/384727940
 
 销量为9000，假设平均客单为300，佣金为5%，则预估利润13.5万。
 
-![](img/624df945bc714c97804febeda887f522.png)
 
-![](img/7532c83239242751f80e997ed36f024c.png)
 
 ### 投影仪
 
@@ -484,6 +436,5 @@ https://space.bilibili.com/3546865542891812
 
 销量为300，假设平均客单为5000，佣金为1%，则预估利润1.5万。
 
-![](img/537089143c372e8bd977b7ee99b7cca1.png)
 
 ![](img/510e9e044633e3e28b2c5c6e54de68b0.png)

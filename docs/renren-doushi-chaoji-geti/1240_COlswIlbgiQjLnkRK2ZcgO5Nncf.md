@@ -8,9 +8,7 @@ https://tongyi.aliyun.com/dianjin
 
 阿里通义点金 是金融领域的AI助理，能够深度解读财报研报，轻松分析金融事件，自动绘制图表表格等各种金融方面的AI能力，这里我们来看下通义点金的各种AI功能介绍。
 
-![](img/6fdd0a92e5183eb3f298f6b9f8d82e8f.png)
 
-![](img/3185a132c3629e2b42985dc5b0648c19.png)
 
 通义点金（ [**点击进入 **](https://top.aibase.com/tool/tongyidianjin)）是一款智能金融助手，它有以下几个功能:
 

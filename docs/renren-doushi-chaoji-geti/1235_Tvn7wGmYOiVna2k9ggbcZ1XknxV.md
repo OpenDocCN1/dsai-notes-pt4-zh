@@ -98,7 +98,6 @@ WXWORK_TOKEN=&quot;&quot;WXWORK_AESKEY=&quot;&quot;WXWORK_CORPID=&quot;&quot;WXW
 
 **3. 文本嵌入： **大约 30s 时间，数据集就创建成功了。你可以随时回来向数据库里添加更多文件。
 
-![](img/16a942e073bc2645d4a05e35174f8b92.png)
 
 （查看 Dify 官方文档中关于搭建数据集的更多操作： https://docs.dify.ai/v/zh-hans/advanced/datasets）
 
@@ -106,7 +105,6 @@ WXWORK_TOKEN=&quot;&quot;WXWORK_AESKEY=&quot;&quot;WXWORK_CORPID=&quot;&quot;WXW
 
 **1. 创建应用： **根据图中的指示，创建一个对话型应用，并命名为“知法”。
 
-![](img/29c0e9861ed1fffa676bc46d1a8217f2.png)
 
 **2. 关联数据集： **在“提示词编排”页，在“上下文”模块中添加选择刚刚创建的数据集。
 

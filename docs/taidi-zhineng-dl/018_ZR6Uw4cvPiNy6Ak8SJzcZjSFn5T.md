@@ -12,7 +12,6 @@
 
 # Summary
 
-![](img/106bdbb427217da4ccf5d7730db1769a.png)
 
 # Intel CPU - OpenMP
 

@@ -102,7 +102,6 @@ a robotic eagle,intricate Mechanical,Black gold style,hyper-realistic detail,Fro
 
 ![](img/6fd4c83c8cf1bae03a8163719d741a0b.png)
 
-![](img/1725472d1e82011f5cc1fdea5f2a68ee.png)
 
 ![](img/7f459946caee20ee4b2c14ca6b5ecce1.png)
 
@@ -122,11 +121,9 @@ a robotic eagle,intricate Mechanical,Black gold style,hyper-realistic detail,Fro
 
 有了有了，是想象中的画面了。“鹰”站起来了！
 
-![](img/249a17b01811497e9c812a536ecc5f47.png)
 
 a robotic eagle,Stand with wings spread,intricate Mechanical,Black gold style,hyper-realistic detail,Frontal portrait,by Ohara Koson --ar 4:3 --q 2 --s 250
 
-![](img/5b1401503eaddad2868ebc620203911c.png)
 
 a robotic eagle,Stand with wings spread,full body,intricate Mechanical,Black gold styl**e,hyper**-realistic detail,Frontal portrait,by Ohara Koson --ar 4:3 --q 2 --s 250 --v 5.1
 

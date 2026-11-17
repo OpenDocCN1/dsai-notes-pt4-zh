@@ -34,7 +34,6 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 ⼈⼯智能训练师
 
-![](img/9c66503140c49733b746e8aae0cc068f.png)
 
 讯飞×Datawhale 「prompt engineer」
 
@@ -72,19 +71,16 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 **育儿视频工作流**
 
-![](img/8f75849a395774e5aa0872f8f9cf04e4.png)
 
 [动物运动会.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DCbrbrvKSojslUxdtKzcOZFanzc)
 
 **动物运动会视频工作流**
 
-![](img/370bc6b693c56034ac2b7980331b6bde.png)
 
 [裸眼3D.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ic3bbRZjao9vQKxEwoHc1MQIn4e)
 
 **卡通裸眼 3D 视频工作流**
 
-![](img/faa7b9192fc400c5e96959fa49afc95a.png)
 
 [第一人称.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LjNIbX0oDoa7G2x0XiEc8aWPn6f)
 
@@ -196,7 +192,6 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 ## 3.1 首先看下成品
 
-![](img/3a3eaf5956fb0007f9d615f9957e249d.png)
 
 [348c8513e6c3462c943227f002ce0054.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EOsTbYKKloMzOdxBhr6cMIALnnb)
 
@@ -403,7 +398,6 @@ Nano Banana 卡通手办
 
 **机甲变身实验室**
 
-![](img/273c8e147b87aba66db57b750b72d722.png)
 
 **视频风格转绘**
 
@@ -499,11 +493,9 @@ Nano Banana 卡通手办
 
 ![](img/e02f2c8a4a1a291a4ff55eb1f0e0b099.png)
 
-![](img/f2dd8284dd3a19e9d52fb774ac388567.png)
 
 ![](img/1278f457633f67bec02f10ee0e72ab85.png)
 
-![](img/10701641249677aa5c987072c0ad336d.png)
 
 ![](img/25429bdeb564f5b86e6021d5dcde75ca.png)
 

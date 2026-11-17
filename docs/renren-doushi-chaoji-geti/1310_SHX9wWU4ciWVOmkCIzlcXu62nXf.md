@@ -4,7 +4,6 @@
 
 引用：https://mp.weixin.qq.com/s/aVBIwY4DnPdfel76ofwj8w
 
-![](img/5a2658aadcb415c3aa9d2c92700d0b0f.png)
 
 **作者 | ****Li**** Yuan、siqi****
 

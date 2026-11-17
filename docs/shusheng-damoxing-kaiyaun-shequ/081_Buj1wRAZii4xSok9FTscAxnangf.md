@@ -309,11 +309,9 @@ https://aicarrier.feishu.cn/share/base/query/shrcnM5VzC2jnErQig5Wk88kgoe
 
 进行查看，输入你的 uid，比如闻星（uid：4）
 
-![](img/244ff052f96bd6127798ceac28ae0993.png)
 
 在这里能够查看状态
 
-![](img/f80979304e2b89eed7d8dc0592b8143b.png)
 
 ![](img/98ab15e0448ca7704f7ee381535f3689.png)
 

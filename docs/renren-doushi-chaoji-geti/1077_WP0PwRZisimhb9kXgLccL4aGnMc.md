@@ -20,17 +20,13 @@
 
 **数据表**：就是原始数据库，先进的excel表，可以调用ai大模型的excel表，要填的内容其实都是记载在这个位置的；
 
-![](img/6e1bc21ded2a2c27733d64e6b95c503b.png)
 
 **工作流**：「输入input」——「过程process」——「输出output 」的逻辑链，这个模板有个功能是：「输入」输入“点子”栏后（表格最左）——「过程」云端服务器处理完毕——「输出」会在飞书客户端提示完成内容；
 
-![](img/629e1fa9ba103cff308cebc2be0cda74.png)
 
 **仪表盘**：基于“数据表”内的数据，做可视化展示的页面，也就是“看板”。可以有图标、按钮等很多功能，更加直观的看到关键性数据。案例的“交互界面”就是一个仪表盘。
 
-![](img/0bc54bba746e8e224a84b5c89b5ca34d.png)
 
-![](img/48d4122c6d1a1f6c5ec28229880d4329.png)
 
 [📕AI爆款印钞机（逆向工程）](https://r0rel9lqdms.feishu.cn/base/WUFSbKATSaa5O0s6IrHcQhXnnVc?table=tbl9NEpitIG2qkc1&view=vewdntHFEV)小车把手请扶稳，我要开车了， 开始⚠️：
 
@@ -50,15 +46,12 @@
 
 +   “探索字段捷径”选择“Deepseek R1”
 
-![](img/85fd0f343904f054bfc494224dc376df.png)
 
 +   “选择指令内容”选择“点子”列
 
-![](img/cc30f9eda5ac3a64218c776fd7461c1b.png)
 
 +   “自定义要求”请黏贴以下咒语：
 
-![](img/616be3f47df10dc4f83cef922e455668.png)
 
 > 你是一个📕营销专家，需要基于文本生成一篇完整的📕爆款热文，结构和要求是：
 
@@ -72,7 +65,6 @@
 
 +   打开“获取更多信息”，☑️勾选“思考过程”、“输出结果”
 
-![](img/09b4262f1e367e8123fa2ee8a6720ad9.png)
 
 ## “标题”、“正文”、“话题词”、“互动问题”单元格设置：
 
@@ -158,7 +150,6 @@
 
 > [📕AI爆款印钞机（逆向工程）](https://r0rel9lqdms.feishu.cn/base/WUFSbKATSaa5O0s6IrHcQhXnnVc?table=tbl9NEpitIG2qkc1&view=vewOIH9fnM)-“请告诉我你的想法✍️”
 
-![](img/113430ab4a65051e14242ddc14b8dec8.png)
 
 ![](img/493194e60f8d992361bb1d7e2fb1c61f.png)
 
@@ -176,7 +167,6 @@
 
 ![](img/f2f2edf14fc456048ee3d85456190aa1.png)
 
-![](img/6e988b4024ee0db5a63958473a4ae83f.png)
 
 ## 点子总数统计窗口
 
@@ -190,11 +180,8 @@
 
 +   统计方式——统计记录总数
 
-![](img/a33dbb1d77c3b4fbfc1ba3b5e355fa3a.png)
 
-![](img/0248694adc7bb6535f944bf167ce061c.png)
 
-![](img/0cbd2a39c90cacf3572955b7af1b64bb.png)
 
 ## 数据表窗口
 
@@ -204,7 +191,6 @@
 
 ![](img/a91f6a568a17d924133abcaf17b08b96.png)
 
-![](img/e6f596a79d5bcf6317b7c06db9d8a909.png)
 
 # 第三步：生成工作流，设置内容生成完成后，客户端提醒功能
 
@@ -212,7 +198,6 @@
 
 +   新建工作流：左下角——新建——工作流——从空白开始
 
-![](img/dd0e960da9e9aa626579c9f074d5dc75.png)
 
 +   添加工作流触发条件：新增修改的记录满足条件时
 
@@ -232,13 +217,11 @@
 
 +   设置“内容”⚠️支持Markdown格式
 
-![](img/765aacb135d0763594e7bf1e6615670a.png)
 
 [2月19日(2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WJWibRbyhoXIt8xmelNcj9Gknpe)
 
 +   设置“接收方”
 
-![](img/2d98bf18ea8a4ecb915872a509667436.png)
 
 [2月19日(1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qy85b5UxOoResGx9uOHcFJ8unkg)
 

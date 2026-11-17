@@ -50,17 +50,14 @@ Midjourney的主要特点包括：
 
 ### 游戏场景/角色
 
-![](img/a385bda28ae5969fd03bf69eb7fdfccb.png)
 
 ![](img/0b6e1938e54a3f851bc6b68cb4a3adea.png)
 
 ![](img/434a356fd1f16fe854de4618010c27ff.png)
 
-![](img/c86ffe7e29300f0ffcde52bde8a3ff8c.png)
 
 ![](img/4b83b51e9a9bcebb3b9fd7987d8eb5ab.png)
 
-![](img/f11b398203213ee513c8c6d7b317082c.png)
 
 ### 图标
 
@@ -70,9 +67,7 @@ Midjourney的主要特点包括：
 
 ![](img/265d29433d8d029429eca2ab2f26c85a.png)
 
-![](img/85a35c20aa52dd659b84db4f28afbe34.png)
 
-![](img/384553b59b6e509302a2e8690572e091.png)
 
 ![](img/889e1965fab81716da91957d3e4b2b74.png)
 
@@ -92,49 +87,34 @@ Midjourney的主要特点包括：
 
 ![](img/d0f69f79a1a90d92ad59d37e4450059c.png)
 
-![](img/85c4db33e0cbd4fd3735e0eea3fce565.png)
 
 ### 表情包
 
-![](img/088dceaf5a4bb3a2f1424a3876d99d6a.png)
 
-![](img/16b3b89cbe91d44bd49d0d7d81cf6d5b.png)
 
 ### LOGO设计/界面设计
 
-![](img/f184411bca9439bdc02639caac529262.png)
 
-![](img/f55a8f32be33f7b0910667fb84538abf.png)
 
-![](img/f0c9003100f0de4e6bbd3b1927263c89.png)
 
-![](img/28c76513ccb28c5bc228ac2f01d4d120.png)
 
-![](img/9ba04c265f1dea67955d1c52b4dfe7ac.png)
 
-![](img/f5af9db420ac91eb23c86f9c5ca1d829.png)
 
-![](img/351c95cf8e0a4ae70f8b12af13552881.png)
 
 ![](img/5d500dcbac8fb502ec25479ec0f6b1e7.png)
 
-![](img/f3fc262c74e94bfb4c7671102dfb21ea.png)
 
-![](img/b0f38eb3841f1a81c8926747c0cc1954.png)
 
 ![](img/1f30221db6dadcd458933a0c22c104f6.png)
 
 ### 3d头像/插画
 
-![](img/eaf5810be64b1d394effb2b2a8d759f8.png)
 
 ![](img/9862a8ac1c4a9432916f7f26dd88fa49.png)
 
 ![](img/d8afaec1ce4a139d3965e104e5397b8f.png)
 
-![](img/c43bcc897f8294187be7e806ae981d76.png)
 
-![](img/1231ec86d4e0de09cf4ca7fed06f1dd8.png)
 
 ![](img/776dbaad39caf75f200684c7cec1c727.png)
 
@@ -174,7 +154,6 @@ Midjourney的主要特点包括：
 
 ### 汽车广告
 
-![](img/97e92a6ee2e37e42e488ee367f008f80.png)
 
 ![](img/808ba3c5a8bb702422a51f0a2c74eee2.png)
 
@@ -196,9 +175,7 @@ Midjourney的主要特点包括：
 
 ![](img/2f99e3cd7cd8d8017e39cdb6eec3f5ab.png)
 
-![](img/9ea32fde42c6890d6241f1cebeb5c92b.png)
 
-![](img/b6eba8f04afae85fdb06581518ec2635.png)
 
 ![](img/80f22ac2e561c01cb1188a3a4923fa00.png)
 
@@ -206,7 +183,6 @@ Midjourney的主要特点包括：
 
 ![](img/7fcc7cde32bf68f53ab9d5d4e36b370b.png)
 
-![](img/f3c1d3e4c8b35b8265d646eee34f1ec8.png)
 
 ![](img/b016b27c62f4b35bd43fd60eae4cd8ad.png)
 

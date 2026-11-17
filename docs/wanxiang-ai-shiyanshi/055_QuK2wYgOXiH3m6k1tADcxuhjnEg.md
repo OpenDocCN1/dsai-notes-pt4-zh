@@ -154,7 +154,6 @@ https://zhuanlan.zhihu.com/p/20908091643
 
 [DeepSeekV3技术报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ORnpbsqfooIrxuxQuwwcQbuqnvb)
 
-![](img/b9f8f948b34b40ff3ccd0224a9bb2718.png)
 
 [【天津大学】2025深度解读DeepSeek原理与效应.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OdgkbBUjromCeFx30T6coekFnqg)
 
@@ -556,7 +555,6 @@ DeepSeek 模型在教育、医疗、金融、工业等多个领域广泛应用�
 
 6、在模型服务的硅基流动下方，添加 R1 模型。
 
-![](img/af73a3e09889def8e515beb4e8b5c36e.png)
 
 7、记得点击检查，测试下 API 是否可以正常访问。
 
@@ -574,7 +572,6 @@ DeepSeek 模型在教育、医疗、金融、工业等多个领域广泛应用�
 
 按照同样的方式配置到 **Cherry Studio **中，这里不需要点击检查。
 
-![](img/4e7476f51d6f670882a4140b4b4221b2.png)
 
 9、在 **Cherry Studio** 创建知识库，选择刚才配置的嵌入模型，这样就会自动利用对应的模型来向量化数据。
 
@@ -596,7 +593,6 @@ DeepSeek 模型在教育、医疗、金融、工业等多个领域广泛应用�
 
 **11、测试使用，**这一步添加助手，并选择刚配置的 满血 R1 模型。
 
-![](img/c7e28c49b3f0818fa72ba34ccb14c55a.png)
 
 **如果不想**每次在添加助手时选择模型，可以将它设置为 默认模型。
 
@@ -630,11 +626,9 @@ DeepSeek 模型在教育、医疗、金融、工业等多个领域广泛应用�
 
 > 如果选不到，就手动添加模型，API 秘钥填不填无所谓）
 
-![](img/3298200e8d2fed2c9b42fa6f7769bee0.png)
 
 最后点击检查，测试下网络连通性，出现连接成功即可。
 
-![](img/f755507a5f657ef010f5785593f9eaee.png)
 
 接下来就可以在添加助手时，选择本地部署的 R1 模型啦。
 
@@ -808,7 +802,6 @@ DeepSeek** 能模仿不同作家的风格，如鲁迅、刘润、马伯庸等，
 
 ## 提问技巧
 
-![](img/4ce4821bdf9ccbb8ffb577013e627a9a.png)
 
 [deepseek 应该怎样提问.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M1X1bWVZEoJsVgxR8OAcbzd6nRF)
 
@@ -828,15 +821,12 @@ DeepSeek** 能模仿不同作家的风格，如鲁迅、刘润、马伯庸等，
 
 ## 提示词模板
 
-![](img/5bda064ba888e972fca9f8d7f41fe6e9.png)
 
 [DeepSeek指令公式大全.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Li98b25RMoHAwxx7jh0cLBnKnze)
 
-![](img/bd9cc3244f40f3142e7a955cd51b6d3b.png)
 
 [1000个DeepSeek神级提示词.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JgtSbaqlOoXRADxpD35cb3E1nxb)
 
-![](img/1e8667c29b051682066ae07064923969.png)
 
 [小白入门DeepSeek必备的50个高阶提示词.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V5VjbhDjtowRAXxQGVvcPYQSnne)
 
@@ -912,7 +902,6 @@ DeepSeek 建立个人知识库是非常实用的场景，这里有个很简易�
 
 借助 DeepSeek，5 分钟在 skyin 平台完成接入，实现智能回复等功能，解决服务效率问题。借助 deepseek 和企业🛰️，这些都能轻松解决！只需 5 分钟，在 skyin 平台就能完成接入，实现 24 小时智能带情绪回复、自动打标签、引导成单。
 
-![](img/b0e35f4f97b5a4b6abc24e54c93fb023.png)
 
 **教程参考：**一键部署开源 DeepSeek 并集成到企业🛰️
 
@@ -942,7 +931,6 @@ DeepSeek 接入 WPS 后，可以提供以下核心功能：
 
 ### 📕爆文生产
 
-![](img/1d67a4e1bb455f16091e3904d9db930c.png)
 
 [20个📕爆文创作必备DeepSeek指令.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KDYEbduyroDzi8xnMk5cQctbndb)
 
@@ -1010,7 +998,6 @@ deepseek 相关的一级域名，都是钱！！！提前抢注相关的域名�
 
 [2025年DeepSeek战略创新分析报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HQXYbrnQGokstxxWB2NcFahnnsb)
 
-![](img/a86ecc189c2208e00d7ad6dee2b47f3a.png)
 
 [人工智能专题：DeepSeek系列报告之AI+医疗.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QRPpbKAIPoFMsLxDgC1cTUNgnHd)
 
@@ -1024,15 +1011,12 @@ deepseek 相关的一级域名，都是钱！！！提前抢注相关的域名�
 
 [DeepSeek R1深度解析及算力影响几何-中信建投-20250203.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RiO1b691womQNZxE1v5cK🐧cngg)
 
-![](img/96f2b4ac3044ba7407f19f0216357cb7.png)
 
 [【国信证券】通信行业周报2025年第6周：Deepseek-R1开源推动AI应用发展，头部AI厂支持Deepseek.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TkrKbrypqoWZ5MxxNoZc20OOnGh)
 
-![](img/d20a94b55942bc4a24a1937e31485828.png)
 
 [【华泰证券】浅谈DeepSeek的成本和跟行业对比.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QdBAbkk5ZoFAm5x9794c3dnTnmh)
 
-![](img/26c48caaa04776481d161c742ef86b30.png)
 
 [【浙商证券】主题策略：DeepSeek引爆AI应用与国产算力——DeepSeek概念股票池及主题指数.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WBT1bertfoWgt6xIUQhchXNUnSc)
 
@@ -1040,11 +1024,9 @@ deepseek 相关的一级域名，都是钱！！！提前抢注相关的域名�
 
 [行业比较专题：DeepSeek策略三问-天风证券.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CmW8bmoTporB48xf3Nncu9w6ncg)
 
-![](img/3c3f9d90a34b73dd974b7d3bb3c0bcb8.png)
 
 [计算机行业深度-Deepseek：国产AI应用的“诺曼底时刻”.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EEbgblGPRokbY6xSN88cg4Vxnah)
 
-![](img/df04c829644beeb78bbf901a87c57598.png)
 
 [DeepSeek：全球AI影响（应用）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NCsWb0V3JotagrxgzZVcl8Wnnpy)
 
@@ -1108,11 +1090,9 @@ deepseek 相关的一级域名，都是钱！！！提前抢注相关的域名�
 
 [DeepSeek1小时快速入门（适合零基础小白）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RjT3b4I8GoclprxNH3DcVFzGnQf)
 
-![](img/f600e53874a7df168c3ae2a7e5477656.png)
 
 [【大国公开课】Deepseek助力10倍营销提效.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZRiObZV8FozcJ7xLMR6cfP32ne4)
 
-![](img/b6851b8860f0fe9d69bd597235c4b5e6.png)
 
 [DeepSeek实操方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N9hUbhF09oE8O9xcurAcSrvynyc)
 
@@ -1120,21 +1100,17 @@ deepseek 相关的一级域名，都是钱！！！提前抢注相关的域名�
 
 [北京大学：DeepSeek与AIGC应用.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UCJfbdma8ojlcwxEywYc1k8tnNc)
 
-![](img/e13d4f4bd88c1c3240e452f28d749b56.png)
 
 [2025年DeepSeek完全实用手册V1.5.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HsACbf1KponHIrxWfOUcYn9znye)
 
 ### 技术层
 
-![](img/7d933e0dbe76a27cab8ec3457f26a5b9.png)
 
 [人工智能专题：技术解析篇-DeepSeek入门宝典.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nv09bHMCjoxCm9x47eccJ9x1nCc)
 
-![](img/b2e3a05fb776e891a36a4c6a6270543f.png)
 
 [人工智能专题：开发实战篇-DeepSeek入门宝典.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AIxhbpb53o7NOoxIEEcc3CHnnnd)
 
-![](img/80ca63906e19adbe712bd9b5eace151d.png)
 
 [人工智能专题：行业应用篇-DeepSeek入门宝典.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DHPqbiEeNo3RokxLOPocoNlXnVg)
 
@@ -1148,7 +1124,6 @@ deepseek 相关的一级域名，都是钱！！！提前抢注相关的域名�
 
 [DeepSeek-R1使用指南（简版）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H2nPbfOMaoPi8jxemGycNDRUngg)
 
-![](img/13749780eb60960f72f54e8af75ea1ff.png)
 
 [DeepSeek如何赋能职场应用？从提示语技巧到多场景应用-清华大学.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BCkzbIZHWo0bmqxWaABc1X6Wn2f)
 

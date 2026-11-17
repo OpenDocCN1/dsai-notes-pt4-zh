@@ -26,7 +26,6 @@
 
 《异能契约》漫剧第1集
 
-![](img/9130e423a2aaafb05eb0fc8103d4a646.png)
 
 [第一集_x264.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G0XebdXmhoueUrxe2mgcJonUnVh)
 
@@ -50,7 +49,6 @@
 
 第二次练习：《锦绣农途-恶毒贵女只想归隐山林》
 
-![](img/dc94dac56595e493e32d3b3f975e1c4c.png)
 
 [【样片】锦绣农途.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TGCRbDvrPoccxdxaEwAcKeOBnkk)
 
@@ -518,7 +516,6 @@ Seedance2.0测试先导片
 
 灵魂错位模拟案例
 
-![](img/68c0892a9633f9804ec1ee3a50104766.png)
 
 [灵魂错位案例模拟.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UvJHbzo3XoL8Ygx9TDccFuBtnne)
 
@@ -580,7 +577,6 @@ Seedance2.0测试先导片
 
 《恋爱怪谈之美好的表面》
 
-![](img/288f26b39fb2246162ae69f8261e29c4.png)
 
 [1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Tns2bymPzoHxMUxItAGcgTmLnJe)
 
@@ -736,7 +732,6 @@ Seedance2.0测试先导片
 
 作品：《长安的诡秘》
 
-![](img/9b90afc9ca30e78be477f88ded7b7f89.png)
 
 [2月10日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LBmibDgTYorpgyxJeTucXCIunFh)
 
@@ -756,7 +751,6 @@ Seedance2.0测试先导片
 
 《儿童安全知识》
 
-![](img/5aafc701acf09aae861c326d611cbffc.png)
 
 [萌宝居家安全守护者-Seko-2026-02-11+23_07_16.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XAtnbE3fFoFoMzxOfk1c0gArnQf)
 
@@ -848,7 +842,6 @@ Seedance2.0测试先导片
 
 《KPI垫底后，我解锁了神明百年阴谋》
 
-![](img/7c92089538a35808097e062c2e063968.png)
 
 [54955406be92bd76799bb884990af06c.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N7HcbFbOnogc1cxxCILcedginEd)
 

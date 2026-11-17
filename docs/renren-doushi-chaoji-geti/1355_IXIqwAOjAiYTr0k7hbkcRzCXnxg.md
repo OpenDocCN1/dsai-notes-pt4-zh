@@ -184,7 +184,6 @@ Illustration by IconScout Store from IconScout
 
 -The End-
 
-![](img/968623b720afe9bdfbfa57d4f4731ea3.png)
 
 **扫码 观看 ！**
 

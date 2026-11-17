@@ -37,7 +37,6 @@ ElevenLabs推出「Text to Bark」文本转狗叫
 
 AI 语音技术再升级！继推出超逼真的文本转语音（TTS）和全球最精准的语音转文本（STT）模型 Scribe 后，AI 研究团队发布了全新的 Text to Bark 技术。该功能或许能将文字转换为狗叫声，标志着 AI 在动物声音合成领域的新探索。
 
-![](img/72fdd216a72cd5e1b1e50a4e6ab29da6.png)
 
 [X2Twitter.com_LuyTzdgAo3r6aCXq_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T1fjbyeEEo3MbrxwJ2LcZenPnvb)
 

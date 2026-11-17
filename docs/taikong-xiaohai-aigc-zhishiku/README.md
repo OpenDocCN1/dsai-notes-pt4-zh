@@ -20,7 +20,6 @@
 
 ---
 
-![](img/b64a4663c684539a0fc4d53d076eadb5.png)
 
 # 网络迷踪资源库
 
@@ -30,7 +29,6 @@
 
 +   飞书知识库：[网络迷踪资源库](https://ai.feishu.cn/wiki/YnvZwuM20inMu6k93kkc1UlTn5e)｜wiki.spacekid.me/osint
 
-![](img/9c3b665700ff0a089bf985073216e5c8.png)
 
 # 三国志战略版知识库
 
@@ -40,7 +38,6 @@
 
 +   飞书知识库：[三国志战略版知识库](https://ai.feishu.cn/wiki/GhIewYDYKivw33kM6ayc5UrDnXe)｜wiki.spacekid.me/sgz
 
-![](img/a8fa2dd72950b73597bbd0dee81d42ff.png)
 
 # 太空小孩的阅览室
 
@@ -48,7 +45,6 @@
 
 +   飞书知识库：[太空小孩的阅览室](https://ai.feishu.cn/wiki/XujZwJ3CKiCikBkLflNcNwzknLh)｜wiki.spacekid.me/read
 
-![](img/5d2cc16709cafca9298660d70e0f462f.png)
 
 # 饭否工具箱
 
@@ -56,7 +52,6 @@
 
 +   Notion 知识库：spacekid.me/fanfou-toolkit
 
-![](img/7909237888f393f27fa2d1f070371154.png)
 
 # 太空小孩 AIGC 知识库 (2024)
 

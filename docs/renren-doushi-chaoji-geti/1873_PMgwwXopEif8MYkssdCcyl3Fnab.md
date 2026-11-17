@@ -12,7 +12,6 @@
 
 先展示成果:
 
-![](img/f72b955b3890c2efc8d96694d592ff2c.png)
 
 ![](img/d18029c55dfa3efb711cb0966204f492.png)
 

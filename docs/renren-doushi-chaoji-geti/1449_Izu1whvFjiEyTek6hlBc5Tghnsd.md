@@ -390,7 +390,6 @@ http://localhost:3000
 
 5）FlowiseAI 界面
 
-![](img/62f8ba12c07103659e6590ae332efb0f.png)
 
 6）输入刚才设定的用户名和密码，点击 Login
 
@@ -398,25 +397,20 @@ http://localhost:3000
 
 7）点击 Add New , 创建新的聊天工具流
 
-![](img/ab64cbbf53e79d3580dd2c5fd840621a.png)
 
 8）操作界面
 
-![](img/3d6e970034d70dc98d099700ca50dc21.png)
 
 三） 创建核心提示词整理笔记功能
 
 **1）点击加号**
 
-![](img/32cffe2731f3da0bc4ab56441d0728f1.png)
 
 2）选择 Chat Models
 
-![](img/2b94ed95727593a61c2c0430fcb90820.png)
 
 3）找到 ChatOpenAI 把其拉到操作界面上
 
-![](img/7b2cad495cf7df62cb53027f48efe4c9.png)
 
 4）录入 OpenAI 的 API keys，点击下拉
 
@@ -432,11 +426,9 @@ http://localhost:3000
 
 7) 选择模型，我这边直接选择 GPT-4 了，根据需求来选择模型
 
-![](img/775b9dc72ba1e6c38e2c7ba3e4fb24ef.png)
 
 8）从"+" => "Chains"=>"LLM Chain" 拉到工作台
 
-![](img/8a4df3859488182ec1221478badb11c6.png)
 
 9）从"+" => "Prompt"=>"Chat Prompt Template" 拉到工作台
 
@@ -448,43 +440,33 @@ http://localhost:3000
 
 11）点击输出位置的小节点，按照箭头方向进行拉到 LLM Chain 的输入参数位置
 
-![](img/eb232f1ef96268387d8366c46c8c9680.png)
 
 12）给 LLM Chain 命名
 
-![](img/e3ffe6484401056684888d42749bf34d.png)
 
 13） 点击一下 LLM Chain ，确保 LLM Chain 边框为蓝色
 
-![](img/9403d02fba15f2064b52d07a12cd2332.png)
 
 14）点击右上角 **保存**
 
-![](img/d602ef82997277b4b268db05ffc3a78a.png)
 
 15）项目命名 点击 " **Save **"
 
-![](img/9f3baf926726b7ca1a2858f71c52df01.png)
 
 16）点击聊天，测试效果
 
-![](img/6b9489986fe5049a401ceb8215418fe6.png)
 
 17）按钮解释
 
-![](img/032069dcb2aa2f9be22e3efae4faba59.png)
 
 18）直接在对话框中输入 笔记内容，点击发送
 
-![](img/863e593663fee8e4c945db0e54aafc4f.png)
 
 19）先进行一次对话，可以是关于使用方法的内容等
 
-![](img/4d1c9b9bbbf3edfc7ae164e4540ba160.png)
 
 20）然后再把笔记发给它，等待结果
 
-![](img/ab9e8d0ada54947088aaba868742f6ad.png)
 
 **三）笔记关键词匹配搜索器**
 

@@ -104,7 +104,6 @@ GLSVLSI-2022：KunlunTVM: A Compilation Framework for Kunlun Chip Supporting Bot
 
 2023.12.29 from https://www.kunlunxin.com/technology
 
-![](img/8ff99708ab72df773bfe6312a6e6c16a.png)
 
 ![](img/b039c53d56e28cd6d7bb3f7da80fda0e.png)
 

@@ -10,11 +10,9 @@ TikTok推出全新AI广告创作工具，自动生成视频广告内容
 
 TikTok推出三项AI广告视频生成工具，包括“图转视频”、“文转视频”和“数字人展示产品”，大幅提升品牌自动化创意效率。所有AI内容将被明确标注，确保内容透明和安全。TikTok还宣布与Adobe、WPP展开合作，推动工具在营销生态中的集成。
 
-![](img/12e92eb433a316b7eb5d85f2a78a65ae.png)
 
 [e9822725e703481c2d134af11a4c2140.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Chjab5PZhoTzI1xCI1QcFy0GnYc)
 
-![](img/1e7570255a1314b98cffc2e8762dac94.png)
 
 [fbee03d099bb8d16fff5f1b3db92b6cd.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QaCPbq1hfohqISx2ROzcfd0Znfd)
 
@@ -390,7 +388,6 @@ Lovart地址：https://www.lovart.ai/zh/home
 
 ## Veo2 12月30日
 
-![](img/f6ec0998e30786dbad7812a2fecb6bae.png)
 
 [X2Twitter.com_h8tBa04h_ee7gGRI_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AU2BbIQgxotKtDxpz67cfo7dnxf)
 
@@ -408,7 +405,6 @@ Lovart地址：https://www.lovart.ai/zh/home
 
 +   官方demo
 
-![](img/0b4d1a72c49c8f1bdc5618df9589c478.png)
 
 [Pasta City, created with Amazon Nova Reel by Amazon Ads.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CkvAb5odqouNO0xp2BKcoYVonde)
 

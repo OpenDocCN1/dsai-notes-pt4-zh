@@ -34,7 +34,6 @@
 
 巨大火山喷发的第一人称镜头。结尾是鹿的脸。
 
-![](img/d2397914c333f6a4fc4346ab436ddfc2.png)
 
 [X2Twitter.com_1815362172274561024(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CXSfbVA6LoxeLwxYNxrc3zKPnob)
 
@@ -42,7 +41,6 @@
 
 航拍镜头快速掠过，画面中央是一道飞速奔跑的人影，他正穿越巨大的陨石爆炸中心。周围的城市景观在爆炸中被摧毁殆尽。最后，镜头定格在一只不知所措的流浪猫身上。
 
-![](img/99e78c8799e517e4ee0c9cdef2768329.png)
 
 [X2Twitter.com_1815362419931369472(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NbdFbaPwooEABuxmz2qcMj2ZnSg)
 
@@ -50,7 +48,6 @@
 
 镜头快速掠过，航拍仪器捕捉到一场巨大的爆炸，摧毁了广阔的城市景观。最后，镜头定格在一只茫然无措的流浪猫身上。
 
-![](img/2848e75d04b4ce4014369b74d3088867.png)
 
 [X2Twitter.com_1815362517197332480(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UYpkbA7R0omiJSxwwUVcAirRnNX)
 
@@ -68,19 +65,16 @@
 
 1.  Mirror explosion
 
-![](img/05d96344aa266314382ca148587c8917.png)
 
 [X2Twitter.com_1815363053707534336(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vcstbzu4XoDKANxxaXucc9xlnMg)
 
 1.  A slow pan-side-view shot of a massive plasma explosion disintegrating a military base. Ending on an old family photo.
 
-![](img/d1fe05b367190191e9918e4ba9bbb190.png)
 
 [X2Twitter.com_1815363122284449792(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VXgtbbO0DoDayAxLB1DcvtpEnJd)
 
 1.  A rapid tracking shot of a person escaping from the heart of a nuclear explosion obliterating a mountain range. Ending on a lone tree.
 
-![](img/fca15ed0e5c900a085be69a5ebbafa11.png)
 
 [X2Twitter.com_1815363363792449536(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HqFbb2506o3GiSx9Hkrc4oAVn2O)
 
@@ -122,13 +116,11 @@
 
 1.  Glass Explosion
 
-![](img/30786004e40e26f1c6eaca4fd65855d2.png)
 
 [X2Twitter.com_1815366492273479681(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ALyQbCuYuoJ7nVxrPF9cjEBUnZf)
 
 1.   Water explosion
 
-![](img/36f59db45cb9d1e92431a9be728c4e1b.png)
 
 [X2Twitter.com_1815366778987663360(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K65Fb2GZooiQlIxHSaPcuRg6nzb)
 
@@ -140,7 +132,6 @@
 
 1.  A first-person shot inside a hundred massive nuclear explosions in a city.
 
-![](img/aa1fe7ef6431073ca11d17d4d24bb1a7.png)
 
 [X2Twitter.com_1815366972827373568(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QXxRbxXdXot3gox6SiQcMIdynkf)
 

@@ -10,7 +10,6 @@
 
 ## 天水资源州地图
 
-![](img/1073b17090b50dd0475540bb43e2b1a9.png)
 
 > PDF 下载：
 
@@ -22,17 +21,14 @@
 
 ## 全资源州地图
 
-![](img/6bd578156c31747ec66b6ad1d35f4b4a.png)
 
 > PDF 下载：
 
-![](img/59e8214bdc7ca5d7f96f1020fb047cef.png)
 
 [三国志战略版天师举义剧本全资源州地图 v0.1.0.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RBobbBl17oAunmxnGItcYGNqnPf)
 
 ## 铺路距离示意图
 
-![](img/a26ceb323e009a84a6c22bf6bc5b9129.png)
 
 > PDF 下载：
 
@@ -66,7 +62,6 @@
 
 ## 大地图底图
 
-![](img/3fa296af414d793c0dd20445855eb06c.png)
 
 > PDF 下载：
 

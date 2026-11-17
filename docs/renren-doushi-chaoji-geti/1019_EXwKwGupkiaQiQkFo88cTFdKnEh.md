@@ -22,9 +22,7 @@
 
 **小掌柜部分佣金：**
 
-![](img/de7978ccf4313fdc6e7f3ce6ce218bf5.png)
 
-![](img/8b18678de0f74ca6c9ecd302563c84a7.png)
 
 ![](img/01d6c8d56ff3bd78a5a16b88a1284791.png)
 
@@ -72,7 +70,6 @@
 
 图片：
 
-![](img/f595ccd7c5bab8d3e56e8a79e41484de.png)
 
 ![](img/e28859d09c344c042d7f4c74756c9255.png)
 

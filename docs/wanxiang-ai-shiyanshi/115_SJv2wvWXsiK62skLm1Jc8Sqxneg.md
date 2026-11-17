@@ -152,7 +152,6 @@
 
 ![](img/fe4d000ebaf640636ff25a59ebc8b5bf.png)
 
-![](img/2ad4dfd57aeb35b499f3ee8dc1e29494.png)
 
 ![](img/efd7480d4fa410cc2eb250888b414c40.png)
 
@@ -288,7 +287,6 @@
 
 ![](img/fe4852d32d185bae511dbea8131a5e4e.png)
 
-![](img/a3ad89edfc5cee2374e2e4255a4e45c4.png)
 
 ![](img/f83f5ffbbf8ba6765e4d88e13ba38c45.png)
 
@@ -338,7 +336,6 @@
 
 ![](img/581806058279d52910f8f6d796683b0e.png)
 
-![](img/8634e864c7490ad6859fb8b19c758c80.png)
 
 ![](img/d393b642d873bfa29852d857caac4751.png)
 

@@ -254,7 +254,6 @@ bug 都修复完了，我们的产品也算做完啦。
 
 最后修了几轮 bug 在 vervel 成功部署上了： https://promptpal-delta.vercel.app/
 
-![](img/cca77eaab021ea637e8c596819251b23.png)
 
 Codex 对 vervel 的理解还是蛮不错的，模型对网站的信息理解的越全，对于我们这群开发者来说是越方便的。
 

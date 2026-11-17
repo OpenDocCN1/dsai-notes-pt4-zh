@@ -286,15 +286,10 @@ Suno 音乐创作大师【中文】：https://chat.openai.com/g/g-mlWtT8URF-suno
 
 我们将 Suno 官方全部“热门风格”整理出来，汇总成下面的表格，然后利用 GPT-4 直接生成提示词。
 
-![](img/e5e03042ec7115ba2cab62cff8384ffd.png)
 
-![](img/53f6212f27161a2059256fbe904361f6.png)
 
-![](img/9149d9c131cc7907ddc8904c4029df5b.png)
 
-![](img/87ab9d899c5dee020003581b557f63b6.png)
 
-![](img/ad1703ee2d1cb5785c352cdc80871ddd.png)
 
 ![](img/e517506d49f0f0d5e35baf4e0c4a039b.png)
 
@@ -348,7 +343,6 @@ Suno 音乐创作大师【中文】：https://chat.openai.com/g/g-mlWtT8URF-suno
 
 ## 纯音乐作品
 
-![](img/92ad9dcb0e9e1ffabf5e485b05dc765f.png)
 
 [烟雨江南.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AAWpbtnaeonZMmxrO1QcqDORnHg)
 

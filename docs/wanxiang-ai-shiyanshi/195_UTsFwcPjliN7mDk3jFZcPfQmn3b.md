@@ -98,11 +98,8 @@ https://3d.hunyuan.tencent.com/
 
 做一系列的十二星座轻轻松松。
 
-![](img/2e26c90836ead8aaefab3bb4996c542d.png)
 
-![](img/71acbc24eada42d1a78fb532db615c7b.png)
 
-![](img/57805cb9a70afdbf77a1b727c03b3471.png)
 
 ![](img/afef16d3e5fe80e24e3d252fd48323ed.png)
 
@@ -110,7 +107,6 @@ https://3d.hunyuan.tencent.com/
 
 面部和背部细节都不错，纹理上手指上色稍微有点瑕疵👇
 
-![](img/30add3657c91a67aef056a03616f8e5b.png)
 
 ![](img/25733bcaa41bb9045937d24c5cd91ec3.png)
 
@@ -170,7 +166,6 @@ https://3d.hunyuan.tencent.com/
 
 ![](img/153f3bf1de50d7696e2fd4421f752c91.png)
 
-![](img/feb242506341e506f75179d226208f8d.png)
 
 ![](img/e102240fd48d9119e2d97700a5796712.png)
 
@@ -212,9 +207,7 @@ https://3d.hunyuan.tencent.com/
 
 ![](img/0ef474bc4c0d65ec47888c9bb5cef0af.png)
 
-![](img/ab85dd87fa7fa568bd2d053d58e6ca3f.png)
 
-![](img/c42c2fbbbbc1f689be96225aff28dc8f.png)
 
 ![](img/aa89f77f072d9ee1e1aac7fb471b5ed6.png)
 
@@ -242,13 +235,9 @@ https://3d.hunyuan.tencent.com/
 
 真是老少咸宜啊。
 
-![](img/aaff4a70ae54139e09219553e2a86d2a.png)
 
-![](img/fd8def04e875db9dd88c70c81e91252f.png)
 
-![](img/15e396c9e9f7da0952f1ac171ab922b7.png)
 
-![](img/58f3f369f9af73ac8de576cf589a78c7.png)
 
 ![](img/b58a666986fb47f1ce4bfe9ad7c9dcd0.png)
 
@@ -306,7 +295,6 @@ https://3d.hunyuan.tencent.com/studio/
 
 然后是 UV 展开，UV 展开的重要性不言而喻，它是 3D 模型贴图的前提，把模型摊平到 2D 才能精准绘制和控制材质。下方提醒标记 UV 切线也快上线了，有需要的朋友们可以持续关注👇
 
-![](img/79812a4619d0efd773e2ac4537111dce.png)
 
 纹理绘制的方式有多种，可以基于概念设计直接生成，也可以文生、图生、上传多视图或上传模型👇
 

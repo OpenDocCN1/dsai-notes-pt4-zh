@@ -6,13 +6,9 @@
 
 “一生一芯”学习记录表 https://docs.qq.com/sheet/DT29weHpIRWNnYlFl?tab=zidsuk
 
-![](img/9b2092d6180cd3c12af58b9b15008d5c.png)
 
-![](img/57e4e8c0861c469b4cbd5ab29abdc66b.png)
 
-![](img/24e4250c691b01bb01f1571e6c3c8ba4.png)
 
-![](img/a569fc92625d5f567ce6873aa7efb3d1.png)
 
 ![](img/b077567420677d8ce597ba4eb0fd86f8.png)
 

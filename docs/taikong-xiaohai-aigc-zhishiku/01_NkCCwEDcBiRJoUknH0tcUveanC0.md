@@ -116,11 +116,9 @@
 
 > ** **
 
-![](img/ace865d800f589582985eb643a1fce76.png)
 
 请备注来意
 
-![](img/b024ae388164cfa870b2e6a9e89e69f6.png)
 
 [🛰️直达链接 →](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODgxODMyMQ==&scene=117#wechat_redirect)
 

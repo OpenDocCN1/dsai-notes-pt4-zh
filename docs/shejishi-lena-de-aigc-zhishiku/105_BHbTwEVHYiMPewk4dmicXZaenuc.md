@@ -20,7 +20,6 @@ ps:适用每个文生图平台
 
 ![](img/9c7952a16891428340a704a57169f674.png)
 
-![](img/d9979e6d3e810fa89f9a7b67bbc042a3.png)
 
 ![](img/cbe9ad2bdabb72796148a7818441fffb.png)
 
@@ -30,19 +29,13 @@ ps:适用每个文生图平台
 
 ![](img/b025be6821e05009d2715c0c179c113c.png)
 
-![](img/010e75fbfb4579e7644366a0c70f6213.png)
 
-![](img/b80004b9bd72777409639fa459bc7999.png)
 
-![](img/1f65aedff9d5f4ceb59100e22da51de4.png)
 
 ![](img/d8a80bc911b55de46e6c2c4a4ce60efb.png)
 
-![](img/a4b4b7a6968c21ac2159b2596d68f603.png)
 
-![](img/23c3fc7ecf952ed6e4d80b0b2134cf13.png)
 
-![](img/70057be6b4b52fb6f5d9363add0ee7e2.png)
 
 ![](img/3f24d2cea3a0c9054ea9f13c47ee13a9.png)
 
@@ -72,7 +65,6 @@ a kawaii style notepad, purple background, 3d miniature style, 8k
 
 The man is a bank manager, a 45-year-old European. the arms are folded on the chest. He is dressed in an expensive grey business suit and a white shirt. background : graphs, diagrams, stock growth scale on the wall on white sheets. super detailed. super realistic stock photo. office atmosphere --sref https://s.mj.run/8fqI3aXkg5s --ar 4:7
 
-![](img/2898f4ac66c3bc0e2a901c3e70ce6ef8.png)
 
 '' https://s.mj.run/TjE-t1rO5xM '' ''Ribeye Steak with French Onions and French Fries '' : NM , a beautiful showcase of culinary art. Captured as an amateur photo on reddit, taken with an iPhone 15 Pro. SHOT TYPE: Large Shot focusing on the intricate details of the dish, emphasizing the colors, textures, and arrangement on a sophisticated plate. Perfect for illustrating the appeal and complexity of any gourmet recipe. --personalize owdkheq --ar 5:6 --v 6.1 --s 750
 
@@ -132,7 +124,6 @@ Artistic close-up of dew-kissed bell peppers in vibrant hues, positioned on a sl
 
 A low angle full body shot of a muscular humanoid with an anaconda's head gliding confidently through the vibrant streets of a Venezuelan city at dusk, surrounded by colorful colonial buildings and bustling markets, dressed in a sleek emerald-green suit with gold accents, a flowing silk scarf, and polished leather shoes, its scaled skin shimmering under the warm glow of streetlights, adorned with a gold pocket watch and a serpent-shaped cane, exuding elegance and primal power, shot with a Nikon Z7 II, 85mm f/1.4 lens, vibrant and cinematic tones, --ar 9:16 --style raw --stylize 1000 --v 6.1
 
-![](img/9cb46b49ab5cf2e92a0707ee6f004cec.png)
 
 a picture of homemade Anti-Aging Magic Oil made with coffeea picture of homemade Anti-Aging Magic Oil made with coffee indicating it's effect on the skin andthe difference before and after using it --v 6.1
 
@@ -160,7 +151,6 @@ antipasti, view from the above, the main thing is salami, Italian style, summer,
 
 branding of a luxury organic pet food company
 
-![](img/43f4d8c7ae39f95e069581c5c5f38b35.png)
 
 '' https://s.mj.run/nujCo0TPErI '' '' Honey-Lime Garlic Butter Baked Salmon '' : NM , a beautiful showcase of culinary art. Captured as an amateur photo on reddit, taken with an iPhone 15 Pro. SHOT TYPE: Large Shot focusing on the intricate details of the dish, emphasizing the colors, textures, and arrangement on a sophisticated plate. Perfect for illustrating the appeal and complexity of any gourmet recipe. --personalize owdkheq --ar 5:6 --v 6.1 --s 750
 
@@ -212,7 +202,6 @@ A creamy avocado and berry fruit smoothie in a glass, topped with a sprinkle of 
 
 Food poster, featuring several oversized cherries with splashing water, set against a solid color background. The illustrations are in light colors with exquisite details, offering ultra-high definition in 16K --ar 16:9 --style raw --stylize 750 --v 6.1
 
-![](img/47e2b5e06c6c17b293db29cfbba7f0e5.png)
 
 Create a high-quality, amateur appetizing image of ( Easy Muffaletta Sandwich 🥪 Ingredients: - 1 large round loaf Italian bread - 1/2 cup olive salad see below - 4 oz turkey or chicken salami, thinly sliced - 4 oz cooked ham, thinly sliced - 4 oz provolone cheese, thinly sliced - 4 oz mozzarella cheese, thinly sliced - 4 oz turkey bologna, thinly sliced - 1/4 cup roasted red peppers, thinly sliced - 1/4 cup sliced pepperoncini peppers - 1/4 cup sliced black olives - 1/4 cup sliced green olives - 1/4 cup apple cider vinegar - 2 tbsp olive oil - 1 tsp dried oregano - 1 tsp dried basil - 1/2 tsp garlic powder - Salt and pepper to taste Olive Salad: 1. Mix black olives, green olives, roasted red peppers, pepperoncini, apple cider vinegar, olive oil, oregano, basil, garlic powder, salt, and pepper in a bowl. Let it sit for at least 30 minutes. Instructions: 1. Cut the Italian bread in half horizontally and spread the olive salad on the bottom half. 2. Layer turkey salami, cooked ham, provolone, mozzarella, and turkey bologna atop the olive salad. 3. Close the sandwich with the top half of the bread and press gently. 4. Wrap the sandwich tightly in plastic wrap and refrigerate for at least 1 hour or overnight. 5. Unwrap and cut into wedges before serving. Enjoy chilled or at room temperature! Prep Time: 15 min Refrigerate Time: 1 hr Nutrition Facts per serving: - Calories: 580 kcal - Sugar: 2g - Sodium: 2822mg - Fat: 50g - Saturated Fat: 15g - Carbohydrates: 26g - Fiber: 1g - Protein: 28g - Cholesterol: 83mg). --v 6.1
 
@@ -236,45 +225,31 @@ A close-up portrait of a woman from behind, tying her damp, sleek hair into a po
 
 工具：豆包、即梦
 
-![](img/a43eb439d66fa5d7b2e43d5eda43b98c.png)
 
-![](img/e70faac194ba5a166b38363fa204b0dc.png)
 
-![](img/a594ae1e422f44d1cceaff07ae162627.png)
 
-![](img/fb34cd41df6a15bc2fd37a322ee3f15d.png)
 
 极简白色背景前放置水晶切割香水瓶，三片新鲜茉莉花瓣落于瓶肩，青柠切片悬浮右侧，冷调环形灯光照射瓶身，水珠凝结表面，8K超清材质渲染，香水液体呈现琥珀色渐变
 
-![](img/6f9251dc629441488be8853478789d3b.png)
 
 白色茉莉花瓣环绕透明香水瓶，瓶身流线型设计，浅绿色果实点缀瓶口，柔光雾面背景，专业商业摄影质感，焦点清晰瓶体细节，虚化前景花瓣层次，淡金色光线穿透玻璃材质
 
-![](img/4848907e60b64dd104cee31f85eb9d9e.png)
 
 明亮的暖光场景，颜色通透，一朵小小的白色茉莉花瓣，还有一个小绿色的果子，模糊羽化 美女模特坐在桌前，高级香水专业级摄影，左下方前景虚化，写实逼真，模糊羽化的相搭配的背景，大气恢弘，体现出花果香气的氛围感，清透画面干净，简约，高级感，氛围感，香水背景
 
-![](img/5462f5ad602ad46e2c645cfb2de96058.png)
 
-![](img/e03dd8ed6ba0a51e46f7fccb86e01bef.png)
 
-![](img/e9fd6d317ea057d72ebf7ca2a96e0762.png)
 
-![](img/c550e4c22aad72769e0102d28cdb05b8.png)
 
-![](img/59edac7f09cb93218352e91ad14ce43a.png)
 
 深灰色大理石台面上立着方形香水瓶，瓶内悬浮茉莉干花标本，瓶侧放置切开青苹果，硬光塑造瓶体棱角，背景虚化处理成油画笔触，瓶身倒映隐约花枝投影，液态香水呈现双层色彩分离
 
-![](img/2de4beed17618ff2d4056cac50f0e822.png)
 
 晨曦光线洒在磨砂玻璃瓶身，瓶底铺满新鲜茉莉花苞，两片嫩叶托起香水瓶，背景采用渐变水彩质感，焦外光斑模拟阳光折射，瓶口金属部件特写，液体呈现淡金色透明感
 
-![](img/7e4e778bc7d8b7106cbbfdb59d46e3c9.png)
 
 明亮暖光场景，颜色通透，一朵小小的白色茉莉花瓣，还有一个小绿色的果子，高级香水专业级摄影，香水特写，精致的香水瓶身，左下方前景虚化，写实逼真，模糊羽化的相搭配的背景，体现出花果香气的氛围感，清透画面干净，简约，高级感，氛围感
 
-![](img/d6b3ecf4eaee5261684218e6b09f9418.png)
 
 ![](img/32c7d22ff672e001e65d9df24ac63cd8.png)
 

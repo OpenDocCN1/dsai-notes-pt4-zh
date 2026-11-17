@@ -34,7 +34,6 @@ Hailuo AI Agent 正式推出，提供一周免费体验。这款下一代创意�
 
 MiniMax旗下的海螺AI（Hailuo AI）推出了其Hailuo Image的新功能——“角色参考”，该功能允许用户根据单一参考图像生成多角度和动态姿势的角色图像。新增的功能不仅强化了表情控制，还融入了电影级光影效果，显著提升了AI图像生成在创意表达和角色一致性方面的表现。
 
-![](img/55be5f9b34a6087d89479f6fc8131918.png)
 
 [6388101951406059083202476.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D9uJb8vdpoHar7xlutvcWZdmn1e)
 
@@ -42,7 +41,6 @@ MiniMax旗下的海螺AI（Hailuo AI）推出了其Hailuo Image的新功能—�
 
 2025.4.24
 
-![](img/9f4341fbfbce6a1a4611acbb208c77bf.png)
 
 [48b26c2430706c0d2952423038208673.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CBiObUxiPoXbMjxKaKxcuHT8nnc)
 

@@ -290,7 +290,6 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ![](img/987aa379004c01a7c5940ffa6a824681.png)
 
-![](img/90f52a4ecfb84584d3baccd6e65fc20b.png)
 
 [《人生亏钱指南》龙哥盟出品.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NcCjb0pAho6p8JxIY0PceVc8n5e)
 

@@ -40,11 +40,8 @@
 
 1.  新增 Nano Banana 与图生视频（可灵）插件：覆盖文/图生图、多图参考生图、风格迁移及图生视频等场景，支持 3D 手办生成、人物姿势转换、虚拟试穿等近期热门玩法，可产出高质量图像与视频内容，丰富应用玩法
 
-![](img/338fd55d72433803573852db101b9ccc.png)
 
-![](img/b056031e27e8738f5fbd2ac9fc62a53c.png)
 
-![](img/49b151af87480a74fd5ab41558900e26.png)
 
 ![](img/916c369e1b0a47c65d5cc6b63e9531c8.png)
 
@@ -247,7 +244,6 @@ https://www.doubao.com/
 
 1.  等待优化完毕
 
-![](img/fcf019fa3c84459396dd54c074e09172.png)
 
 ![](img/910c92e4cf3e9d9cda68a2e4b0012c64.png)
 
@@ -297,7 +293,6 @@ https://www.doubao.com/
 
 ![](img/b08d115b5c0e50728b0115c5e7073ace.png)
 
-![](img/557a50635b04f0bc2b403d7c4d6db343.png)
 
 ![](img/2d9c2e50c00a68dec947428d7daca86a.png)
 
@@ -792,7 +787,6 @@ https://www.doubao.com/
 
 1.  将智能体嵌入网站侧边栏
 
-![](img/a0e91be3290089e100cad3bd3243505e.png)
 
 **用户体验**：
 
@@ -802,7 +796,6 @@ https://www.doubao.com/
 
 +   实现了从"查看"到"对话"的升级
 
-![](img/948250cc6b9d7d209d4491e483a347c7.png)
 
 ![](img/a8af3e0cd533e315b136d76b57b35650.png)
 

@@ -287,7 +287,6 @@ TK 这个行业别报课，电商报课学不来就电商的成功，你们报�
 | --- | --- |
 |  |  |
 
-![](img/20cf625aeed36e76ecb60c52aab8795c.png)
 
 [Screenrecorder-2024-10-22-19-39-12-296.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FcHQbDa4SoT0PXxcziyc4AGMnQf)
 
@@ -365,7 +364,6 @@ TK 这个行业别报课，电商报课学不来就电商的成功，你们报�
 | --- | --- |
 |  |  |
 
-![](img/591e6605b4e7c5a1bea81ce9671d2bb3.png)
 
 [Screenrecorder-2024-10-22-18-30-04-924.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PBBgbbBuGoCZhIxWC0OcCutongW)
 
@@ -394,7 +392,6 @@ TK海外跨境国学，我跟你这么讲，他这个项目是国内卖不动了
 
 ### 抖音官方讲师
 
-![](img/981879fe432b945e8bcb0d08c84f98e7.png)
 
 [官方芳芳老师.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WaIDbUsAuookU2xMkRtcXUdFnbb)
 
@@ -648,7 +645,6 @@ https://www.kaogujia.com/darenSquare/darenList?keyword=97743691788
 
 **哈哈，这个美团店铺的AI自习室，有人下单么，哪**个家长脑袋短路了，会让孩子去看电脑学习？
 
-![](img/00b2a50ac7390efac0ba3a011af6cdc7.png)
 
 ### AI 英语加盟：399到几十万不等❌
 
@@ -1124,7 +1120,6 @@ eBay（C2C海外版的淘宝）
 
 ### 方言学习
 
-![](img/ebd7853b9f18323d171c53421828ed64.png)
 
 [Screenrecorder-2024-10-22-18-37-03-342.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Tfz0bn5Ngo7IrMxw8Prcmy2Kndb)
 
@@ -1171,7 +1166,6 @@ eBay（C2C海外版的淘宝）
 |  |  |
 | --- | --- |
 
-![](img/b3476b9763b352f8d2df24830d6dadd8.png)
 
 [Screenrecorder-2024-12-11-16-19-58-743.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N9qPbIvGMoygqOxodVRcAUQdnyc)
 
@@ -1435,7 +1429,6 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/ab2fd4637382fa37669810c8f7f5da8d.png)
 
 [Screenrecorder-2024-10-24-20-20-02-754.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HW6fb6Crpo6ZiAx8laScSo1inxc)
 
@@ -1443,11 +1436,9 @@ eBay（C2C海外版的淘宝）
 
 [Screenrecorder-2024-10-24-21-21-29-128.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EExHblj0moWKO5x3FGacGxwKnjf)
 
-![](img/3b4a58fe05cf661ba5928030af5dfc55.png)
 
 [Screenrecorder-2024-10-22-19-13-47-401.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jy2jbWw0cojk6vx4x7yc6Kqonfe)
 
-![](img/4a2343e9dadec7591e5732c23b844dd9.png)
 
 [Screenrecorder-2024-10-20-21-02-40-613.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EjkYb4PNUo2lcUxUwwUcxeuMnrd)
 
@@ -1457,11 +1448,9 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/02319c866c415a7710d654eff531dc57.png)
 
 [Screenrecorder-2024-10-24-20-55-32-228.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WhonbZTmXotWbyxTXfRcQ6o7nkh)
 
-![](img/ab8f0404ff12eca62af702943af80fac.png)
 
 [Screenrecorder-2024-10-24-20-38-46-2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YMsqbNKn4owZYzx7VCKcsgPRn1d)
 
@@ -1483,7 +1472,6 @@ eBay（C2C海外版的淘宝）
 |  |  |
 |  |  |
 
-![](img/5d1c10580816acaf5eede5024d6de75e.png)
 
 [Screenrecorder-2024-10-30-17-21-10-203.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M9cjbBqoloROiXxEUlzcnYhfnIb)
 
@@ -1509,11 +1497,9 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/51e3d2b59cc13c7676bad9064d26472d.png)
 
 [西海情歌.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WA66b5RPAo8QzrxpOXEcqJkynqd)
 
-![](img/79ced194cf2045dff84d20d26d605744.png)
 
 [Screenrecorder-2024-10-24-20-56-07-396.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Le0Bb2rj0ouzdrxuqN6ccd0FnPh)
 
@@ -1527,25 +1513,21 @@ eBay（C2C海外版的淘宝）
 
 [Screenrecorder-2024-10-24-21-25-47-836.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K6TabuPSIomFabx0Y71cqUmRnTh)
 
-![](img/f6adc5db3439f4be0d36f3cd6d847a76.png)
 
 [Screenrecorder-2024-10-23-21-04-28-248.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z1H8bij8woFOdzxNi2vcxInenEg)
 
 ### 弹琴-美女-双排键
 
-![](img/c39f8cbeded47576b11c55148f21157b.png)
 
 [Screenrecorder-2024-10-24-21-01-39-640.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DLYwbyYNMoq0Xix1hivcVDe8nHc)
 
 ### 苏州评弹
 
-![](img/be2e78eeb29d18c4ce7780dae15d0b40.png)
 
 [Screenrecorder-2024-10-24-21-30-25-858.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TCDqbqv2aoKRSTxCwVcc2zXOnqF)
 
 ### 二胡
 
-![](img/6dbccd54d9bea7fd25815d95a3352709.png)
 
 [Screenrecorder-2024-10-24-20-56-52-138.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DZiybQUoeoThQzx4QgRcamsfndW)
 
@@ -1557,13 +1539,11 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/6327547546e4559d52a694716e3960cd.png)
 
 [Screenrecorder-2024-10-22-18-32-12-493.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YJbpbuDUQoCKrFxgCcAc6Raynxg)
 
 ### 哈哈姐
 
-![](img/a826dd4f3ef4253777624cae1ed11131.png)
 
 [Screenrecorder-2024-10-24-20-47-23-361.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UvdmbVKcNo10hqxc5QXcTm8Znbg)
 
@@ -1579,11 +1559,9 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/a969bb6e0f6317a57f76387eaa33f969.png)
 
 [Screenrecorder-2024-11-02-18-14-23-734.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TnMYbwEMaofuEmx2WvXcKABUnPf)
 
-![](img/9f7a33f1ac2b039a0c89f314aa817fbb.png)
 
 [Screenrecorder-2024-10-20-14-57-46-95.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O8Z4bINA9oNAtNxRT7IcZBZ5nLe)
 
@@ -1611,7 +1589,6 @@ eBay（C2C海外版的淘宝）
 
 ### 打赏-多米诺
 
-![](img/700e4d5531ed81fc67ae24a7df0d35e3.png)
 
 [Screenrecorder-2024-10-24-20-58-10-947.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YZK6b5uzioYUEMxVDpBcdQYenuf)
 
@@ -1686,15 +1663,12 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/58cbbf230104266ecb429c5886b560ea.png)
 
 [Screenrecorder-2024-11-01-16-02-07-18.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H380bpGc8oN2MHxuRU4cbS93nsc)
 
-![](img/2a0511de780e210237b3c8ce0134efa6.png)
 
 [Screenrecorder-2024-10-23-21-46-10-759.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FRDLbmvKYozrOOxgLBZcxigVnVc)
 
-![](img/809c10762e140cda4c0c781865f45c6d.png)
 
 [Screenrecorder-2024-10-23-20-55-07-576.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FabXbf4WGoViX9xoNWqcRCnKnRg)
 
@@ -1710,7 +1684,6 @@ eBay（C2C海外版的淘宝）
 | --- |
 |  |
 
-![](img/32c341bb6d9195db3966d83469b707c7.png)
 
 [Screenrecorder-2024-10-30-17-33-58-265.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QjNwbuv7zo0yKJxzefTcOc3snKc)
 
@@ -1720,15 +1693,12 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/e5899c96f31d3c767997db504f3b1ff5.png)
 
 [Screenrecorder-2024-11-02-18-08-22-896.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QhdgbgnxjoUJarxoq7CcOMAnn7d)
 
-![](img/b17b1bc25150a64bec8947786bb4c0ba.png)
 
 [Screenrecorder-2024-11-05-22-14-56-161.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VpZXbFSCTo8apCxO5OCcz8YDnOg)
 
-![](img/b4529f672ffecaa72931eed2bdc8c650.png)
 
 [Screenrecorder-2024-10-23-22-20-10-91.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DM3ablDfEoA38QxvuqqclqQFnGh)
 
@@ -1742,71 +1712,59 @@ eBay（C2C海外版的淘宝）
 
 ### 街头-炒菜
 
-![](img/e737232f41d589a54731e965be95605c.png)
 
 [Screenrecorder-2024-10-31-20-20-31-602.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PRaqbWaOJojRMMx4VuIckqGInnb)
 
 ### 街头-外国越南直播
 
-![](img/eac16456c31e01c333b15cfd1d49ebf8.png)
 
 [Screenrecorder-2024-10-22-19-15-09-120.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ch7IbUdAsoVNnPxbHQgc93agnIx)
 
 ### 街头-美女广场舞
 
-![](img/a890a2f6c0431b0af6301ace2b01c72b.png)
 
 [Screenrecorder-2024-10-30-19-27-09-743.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wjhkbk1i1oQhSuxLPwZc1ENtnpg)
 
 ### 街头-回答发红包
 
-![](img/65ed1ab5df901de8773354b30bbc94ce.png)
 
 [Screenrecorder-2024-10-21-21-09-44-613.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I5HQbwimLoxHAVx1V6TcqDyxnob)
 
 ### 街头-脑筋急转弯
 
-![](img/6fdcd0c99d2ffeaf2b566934264dc0c0.png)
 
 [Screenrecorder-2024-11-02-18-09-43-579.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M0ubbsIbhoasxDx6rs2cuamrnsf)
 
 ### 街头-美女小吃
 
-![](img/17deebbc944ab02959def85f9a4f914e.png)
 
 [Screenrecorder-2024-10-24-20-49-41-187.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ce3LbeXBFoob41xWqJFcxtAYnoh)
 
 ### 街头-卖饼
 
-![](img/5d82be2b03504fa8e557228ab6880c3d.png)
 
 [Screenrecorder-2024-10-30-17-25-36-272.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IhFDbdbYLoqxKGx6CIacWwAUn7f)
 
 ### 街头-烤饼
 
-![](img/6b19d9f2b226633c8a931e5dc36d9d78.png)
 
 [Screenrecorder-2024-11-02-18-13-39-67.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TU7DbVOaJompn9xis0Nc7WDdnvg)
 
 ### 街头-抓鱼
 
-![](img/66d74c483af427065904a8051802fb8d.png)
 
 [Screenrecorder-2024-11-01-15-59-26-84.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FZSrbPO1wolYzCxL9pic9xTUngp)
 
-![](img/3a1eaf8146083e58302c4c5632757965.png)
 
 [Screenrecorder-2024-11-01-16-10-59-118.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M7Reb1BNmoJceHxPCATc7P1GnSd)
 
 ### 街头-抓猪
 
-![](img/807eb9699889a42cf9687f0a124d5e5a.png)
 
 [Screenrecorder-2024-11-02-18-11-26-497.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OvK9bAZtxomcRxxXweGc3r0onLf)
 
 ### 街头-抓鸡鸭
 
-![](img/a6afbb0dd65c11ad47714bcff1e2a843.png)
 
 [Screenrecorder-2024-10-30-17-03-45-184.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qy1ibFFXmo0CIUxkw01c8tHHnjf)
 
@@ -1818,11 +1776,9 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/77cfc9e9297c05d1ba8cef78307c6ebe.png)
 
 [Screenrecorder-2024-10-20-21-10-30-882.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OMdNbSi2Jo9doex5X0LctnJpnQd)
 
-![](img/922acfb0a3366b5640709d8effbb900f.png)
 
 [Screenrecorder-2024-10-24-20-34-38-580.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HSZMbXRxFoKlbWxROnRchNYmnKe)
 
@@ -1844,13 +1800,11 @@ eBay（C2C海外版的淘宝）
 
 ### 情景剧-小品
 
-![](img/591f82526c383886517f28876c68b487.png)
 
 [Screenrecorder-2024-11-02-18-12-16-293.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SOvSbqWI2oywlxxrz1dcysIXnbc)
 
 ### 情景剧-乌龙山国军
 
-![](img/857cad6664ea194cc2af6c2d775bd438.png)
 
 [Screenrecorder-2024-11-02-18-24-49-472.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Oc8qb6GVGozGDNx67PMc76F7nRg)
 
@@ -1931,15 +1885,12 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/0c7720deb720842f71596ad7c1f5cbf7.png)
 
 [Screenrecorder-2024-10-22-19-12-14-351.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KHt5bJhIWoIlEGx1jF3cgPpnn0c)
 
-![](img/407505b84e186d8a36f8eb91b46d7e01.png)
 
 [Screenrecorder-2024-10-23-21-54-59-677.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X6rwbxLOFomgJCxk9Rpcl0Ovn3b)
 
-![](img/ddc3137452a4933ddc4663c7039dd671.png)
 
 [Screenrecorder-2024-10-23-21-25-27-551.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UnxubVMZOotebwxNIN9cw1kinch)
 
@@ -1949,7 +1900,6 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/ce3ce51dd6b4e4fd8f4d51cf67cf64e4.png)
 
 [Screenrecorder-2024-10-23-21-42-34-7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ESvAbfDvZodUzoxZimgcKWUcnGf)
 
@@ -1977,7 +1927,6 @@ eBay（C2C海外版的淘宝）
 
 记住，GMV达到1万，你可以想办法花一点刷一点，能明白意思了。
 
-![](img/f3b94c9cb9c01257347029be22a2b62a.png)
 
 [Screenrecorder-2024-12-10-11-55-06-270.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MunybGlnMoEut7xpJE2cplvPnVf)
 
@@ -1985,7 +1934,6 @@ eBay（C2C海外版的淘宝）
 
 ### 切牛肉卖刀
 
-![](img/5487bc0b0352e3cccbcfb7de69c1685a.png)
 
 [Screenrecorder-2024-10-22-18-38-56-887.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DpNZbHPbWoXWxkxm5QGc8W1wnsh)
 
@@ -1995,21 +1943,17 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/01cd86927ab8e15239e331fcb8cfe805.png)
 
 [Screenrecorder-2024-11-01-16-01-04-550.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Sp9rb13Glo3RHax2TFRcELEQnMz)
 
-![](img/527f4b3d9ccee6994316368b6d781c4e.png)
 
 [Screenrecorder-2024-10-30-17-32-21-122.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IDvdbm0teoXP45x92Dzcd058ngh)
 
-![](img/b6ee4effd9b541f18831e47897ce7db1.png)
 
 [Screenrecorder-2024-10-23-22-05-54-283.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VhjlbsvLaodVNnxmL0rcqhkunde)
 
 ### 火腿-现修
 
-![](img/bd531aa801ff117d42dcf0ae4100c662.png)
 
 [Screenrecorder-2024-10-30-19-40-03-663.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Go1abtQoko7xVvx2Ncccyl9ynBd)
 
@@ -2023,7 +1967,6 @@ eBay（C2C海外版的淘宝）
 
 2万人在线，那个投流成本很大的。
 
-![](img/54d8a301fa7f1fec283c4de2160dfd01.png)
 
 [Screenrecorder-2024-12-10-11-58-38-824.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KwPPbStygown1uxLiINcZYPknQx)
 
@@ -2035,11 +1978,9 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/dfdd2b0791f607ee910f98b254146187.png)
 
 [Screenrecorder-2024-12-10-12-01-04-800.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IdpsbnuUWo1fuWxNy8Rc5UOMnxb)
 
-![](img/ae44712fad92f55dcc706fe537df66f1.png)
 
 [Screenrecorder-2024-12-10-12-00-36-9.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JKYwbNdlnojwyxx6AbPc6weqnbf)
 
@@ -2095,7 +2036,6 @@ eBay（C2C海外版的淘宝）
 
 ### 吃播-砍椰子
 
-![](img/b533196bc837944b23f8d2021631f1c7.png)
 
 [Screenrecorder-2024-10-22-19-21-22-967.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GXRKbKYvao6N4gxqfv2cOKEsnIk)
 
@@ -2103,7 +2043,6 @@ eBay（C2C海外版的淘宝）
 
 可以，把自己剃个光头，抖音上很多成功案例，抄。
 
-![](img/28356e0a0dd4860fc3d59d09583830b4.png)
 
 [Screenrecorder-2024-10-22-18-35-28-234.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RJEmbuYRyosUWZxh3lscxQ57nGg)
 
@@ -2116,7 +2055,6 @@ eBay（C2C海外版的淘宝）
 |  |  |
 |  |  |
 
-![](img/dca35333101e312993ab4177723fe5ae.png)
 
 [Screenrecorder-2024-10-23-22-14-16-287.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MndDb4Kn4oAMPbxPP8icpcfqnie)
 
@@ -2172,7 +2110,6 @@ eBay（C2C海外版的淘宝）
 
 ### 🐧号-价格测评
 
-![](img/9b8d74275e18865818085e8df617aecc.png)
 
 [RPReplay_Final1729591221.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KVsbbOsnboFINWxnAZTcLOf5n0f)
 
@@ -2190,14 +2127,11 @@ eBay（C2C海外版的淘宝）
 
 |  |  |
 | --- | --- |
-| ![](img/584461511d5ec6e82bc65946c62cbc9d.png) | ![](img/1306b255dae801a0de4f429682a7f06c.png) |
 | ![](img/568534c4017812d7523b961adf20deb2.png) | ![](img/a64eb6861dbefdcdf7f17b4a8b40e269.png) |
 
-![](img/8ab9fb6a01ef7d7aa855a8b161173ca3.png)
 
 [Screenrecorder-2024-10-22-18-26-02-555.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DbwVbhHOcoz2zKxA4YWcqRVLnlc)
 
-![](img/a9013236558427c6f369ce51a23ba3ea.png)
 
 [Screenrecorder-2024-11-01-16-08-43-749.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QqXdbwpdtoTew2xK6Dec7GHbnke)
 
@@ -2233,11 +2167,9 @@ eBay（C2C海外版的淘宝）
 
 可以搞，找个美女，开当地同城位置，开个抖音直播，拉人进粉丝群，再导到🛰️私域，付费进群
 
-|  | ![](img/1d89b3c268672dce37cf44318665985a.png) |
 | --- | --- |
 | ![](img/19ac735eccd19556bb2f7663415a0578.png) | ![](img/8e64bcb27d84e8c2e8a35cd5c18eba77.png) |
 
-![](img/505663bdc4e66d67fbf491df9a762c5e.png)
 
 [Screenrecorder-2024-11-29-11-40-40-71.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LZJ1bRbhGoRi5lx9uaHcnLy9nNf)
 
@@ -2263,11 +2195,9 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/27b442feb3c336fa1f3218567aa5a1b2.png)
 
 [Screenrecorder-2024-10-30-19-28-55-559.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dg4SboETfoIRXnxIvxecclAInfe)
 
-![](img/fbb483df732a793528beca55dcb029e0.png)
 
 [Screenrecorder-2024-12-09-18-52-06-832.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GChhbD8iMogD38xbxfCcK6EKnfg)
 
@@ -2275,7 +2205,6 @@ eBay（C2C海外版的淘宝）
 
 拽毛线都是去年的机会了啊。拽毛线，聊天直播间拽个毛线，直播间上2万人在线，是不是直播间会挂假数据？也就是挂宝妈团两块 5 一个小时。互联网很多人都在卖宝妈团，两块 5 一个小时，会帮你打互动的，前期企业号是靠这，而且他们这种拽毛线的一般玩都是新号。所有的首播经验分享，云台走播，我不知道大家你们有没有长时间关注过这些主播，他们过几个月流量会下降的特别厉害。你像我之前在抖音上见到一个小布，我不知道大家有没有刷到过小布做首播的一个，一个外卖骑手，就美团外卖骑手的一个小哥，他也是假身份啊。当时直播间 8, 000 人在线，2万人在线，现在直播间 100 人在线，你能明白吗？首播下流量下特别快，他吃极速流量，因为他们的 ROI 转化率太，转得太低了。像我们这种直播，我们要想做到突破流量层级，我们想保持这个在线人数，我们每场直播不低于百 3.5 %的新粉转化，低于的话账号就做不起来。
 
-![](img/b298c5e056e0c0bbed8ab1b20d8e00b0.png)
 
 [Screenrecorder-2024-10-23-22-16-15-659.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OGkFbPDUgoyClDx4owVcbuzKnj8)
 
@@ -2315,11 +2244,9 @@ eBay（C2C海外版的淘宝）
 | --- | --- |
 |  |  |
 
-![](img/571165666f37cc766803b1f4e80754e7.png)
 
 [Screenrecorder-2024-10-22-18-35-53-82.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NavMb4PRioXH6Bx4L3ScQqVonZe)
 
-![](img/e31dd4e1310792c6709f38265cd30a9d.png)
 
 [Screenrecorder-2024-11-02-18-17-08-422.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RQzAbvrIbogRESxJLtCcLar6nab)
 
@@ -2369,7 +2296,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 
 直播佳佳软件一单就30。哥，你收徒卖节课 699 一节，你自己选吧。卖引用金融直播家一个单就30。卖节课一单699，你选吗？哥，你卖课还买软件卖给人家，只能说入门的基础，后面你要想搞得好，肯定是要靠卖课。第二点，绿幕直播间现在最难的是起号，新号起到 100 人到 200 人，在线都已经算是撑死了。能起到 1, 000 人到 2, 000 人在线的绿幕直播间都是 10 万粉丝朝上的，老号星号现在搞不到那种流量了。
 
-![](img/9cb0fe2992033d2c57a010d75b16d725.png)
 
 [RPReplay_Final1729419961.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X9OobpMDXohMkCxqAD0chqIAnmb)
 
@@ -2487,7 +2413,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 
 做自驾游直播，可以的，但是要游全世界，游全国现在不怎么火[，兄弟](https://www.douyin.com/user/MS4wLjABAAAAFKR6I9EGq30siJtA3SWj7LW7TbmcLERd0isdimHHHwg?from_tab_name=main)[们游全](https://www.douyin.com/user/MS4wLjABAAAAn-vTqtfLFPB8S6Q1-8QOxT9w4JhQFSNvFEho_guE2V4?from_tab_name=main)国真的没人看，你们抖音上现在湖远行，为什么火？6万人在线，还有那个蓝战非，为什么火？就因为它游，大家去不了的地方。
 
-| ![](img/ed47bb1225b96295269573253da341ec.png) | ![](img/70123c2edb1b3762712068790072c7fc.png) |
 | --- | --- |
 | ![](img/e4df532dc2e95245e3082fa97d433afc.png) | ![](img/e9675876e4add24b1acf065daec57554.png) |
 
@@ -2547,11 +2472,9 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 | --- | --- |
 |  |  |
 
-![](img/4d9e298a03a0706f7b5819a44f9a93aa.png)
 
 [Screenrecorder-2024-10-20-09-59-58-889.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZP4ubbKVEo1KVpxQGFacugkTn8f)
 
-![](img/17ccd4bc4efe153e99a0ee0a2902d495.png)
 
 [Screenrecorder-2024-11-04-19-18-48-152.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MRR9bhnXVoyISXxXavico63nnoe)
 
@@ -2605,7 +2528,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 
 [Screenrecorder-2024-10-24-20-43-43-322.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Io8XbAb2AokFcfxoFARciOW9njg)
 
-![](img/47ebe63069eefa8fa72e7ae9acfc9837.png)
 
 [Screenrecorder-2024-10-24-23-15-35-154.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Pgy0bOomgoBOFDxbfNrcc5SHnng)
 
@@ -2618,11 +2540,9 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 |  |  |
 | --- | --- |
 
-![](img/80c4507e6bea09a060e7cd68e4a43922.png)
 
 [Screenrecorder-2024-10-24-20-42-27-746.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OfPkbvzUiotww9xfBcfcQajOnFh)
 
-![](img/1aa37d5aa4e88313a53d1f83aedb90be.png)
 
 [Screenrecorder-2024-10-20-14-56-15-244.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TDSwbqbXXo0lioxGVqecycNzn1f)
 
@@ -2631,7 +2551,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 |  |  |
 | --- | --- |
 
-![](img/84e04ad09f7f9f232ed8b58125112c78.png)
 
 [Screenrecorder-2024-10-20-14-55-38-365.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kj82bADeroxmHwxMGeHcnYDJnhh)
 
@@ -2663,7 +2582,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 
 但是记住一句话，它只是门行业，它做得最牛逼，你们也只能挣到1万块钱。这玩意就是需要你去接到官品，官品接的越多，这他妈赚得越多，你要接不到官品，只能接第三方品牌的话，那你一个月佣金也就是五六百块钱进账，因为他还要考虑核销率的问题。
 
-![](img/7b0d8b55038c5f085e1decf9bd05e86f.png)
 
 [Screenrecorder-2024-11-01-16-04-29-779.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TFTYbCnUzoAu3LxzBUrcyNrxnxg)
 
@@ -2727,7 +2645,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 
 ### 新人20分钟学会直播
 
-![](img/ef29bb01da236600c11ca1c0a65443c7.png)
 
 [Screenrecorder-2024-10-22-18-34-48-373.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TaGubDLzJozpv0xKQ3Scz7K9nkb)
 
@@ -2759,7 +2676,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 | --- | --- |
 |  |  |
 
-![](img/ee8132b2b701ca6549f38d4d7037157f.png)
 
 [Screenrecorder-2024-10-23-21-18-09-237.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NVjkbY0JfoJk1jxfpLycVnESnk7)
 
@@ -2840,7 +2756,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 
 ### 体感游戏
 
-![](img/fd24fe10571b8d203f9e6256f636ccfa.png)
 
 [Screenrecorder-2024-10-20-20-57-37-219.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rycfbv7lfoKWhlxSWX9cN2xOnff)
 
@@ -2899,7 +2814,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 | --- |
 |  |
 
-![](img/bd7970a80073738d29b4f4f60f5ef06f.png)
 
 [Screenrecorder-2024-10-22-18-45-24-480.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BD8HbzQTfozmAXxklmPcpWAAnMb)
 
@@ -2989,7 +2903,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 
 普通人干不了，没颜值，没人看，推荐一个：赖天祈八段锦，人家早上6点半开播，再说人长的是真好看，我也爱看。
 
-![](img/4a39d959f6e4857e7db2c732cbe734b8.png)
 
 [Screenrecorder-2024-12-05-07-42-33-781.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FtvlboNMSo3KL1xETfvcZUrGntf)
 
@@ -3063,7 +2976,6 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 | --- | --- |
 |  |  |
 
-![](img/09a1d8e3750ec31a5f07268f90756492.png)
 
 [Screenrecorder-2024-10-30-17-36-01-513.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UqFFbOhAao4rhNxl0f4cf5z2nbe)
 
@@ -3079,37 +2991,31 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 
 是美女可以干，素人就免了
 
-![](img/a3b681de448afe8643cfcf46b58ced51.png)
 
 [Screenrecorder-2024-10-20-15-32-16-703.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZmR1b5Tfwo5ZMvxrfI1c6n9Fn3g)
 
 ### 田间收瓜子
 
-![](img/32d71110d8441f8af9f379d8676e0c2b.png)
 
 [Screenrecorder-2024-11-04-19-14-05-585.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Opodbm1LOo6oHUxqpkSclCeDneb)
 
 ### 田间收大枣
 
-![](img/7670872d00270cea004a1148f18c88bc.png)
 
 [Screenrecorder-2024-11-01-16-06-51-3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RzLNbrJZVocHv9xmAq3cObL2nWe)
 
 ### 农村烙煎饼
 
-![](img/538e8372f8a5836efc649650ed766358.png)
 
 [Screenrecorder-2024-10-30-19-34-08-54.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TVAhbjUc2o38CZxjYTWcO8d6nJc)
 
 ### 嗑瓜子机
 
-![](img/ea1b5023d415a9c0cd81f6f151cfaca3.png)
 
 [Screenrecorder-2024-10-20-21-02-07-181.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YZoYbpTgHokG6oxLlHXc2hXenif)
 
 ### 写字机
 
-![](img/c2002c1a03d4045009d0e39621807387.png)
 
 [Screenrecorder-2024-10-20-21-03-59-298.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HUQBbM91zoue6gxmaqdcUh2mn1e)
 
@@ -3121,39 +3027,32 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 | --- | --- |
 |  |  |
 
-![](img/00382c3d6fcbbb7dba3c82bbcbd95a35.png)
 
 [Screenrecorder-2024-10-24-21-14-04-111.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TeHfb0gNcoPAz9xMWTocrXl8nMh)
 
-![](img/e3aa259000842ba74933026d77ef3c93.png)
 
 [Screenrecorder-2024-10-23-22-04-01-541.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PAICbYj0YoZHwIxRua2ca2llnqd)
 
 ### 工厂流水线
 
-![](img/aedc5bb8ba0431ecff2183193a9bcafd.png)
 
 [Screenrecorder-2024-10-23-22-18-09-258.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CQExbsY2xoP6NBxENuwc6m13nyg)
 
 ### 工厂-手套反面
 
-![](img/31d4aa196e7aba605901d761f1a9f2c7.png)
 
 [Screenrecorder-2024-10-20-14-58-34-70.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Js5vbnLrMoetxNxxbu9cpfuCneh)
 
 ### 工厂-竹制品
 
-![](img/ab414e0511b8bb30829e71190dcf9954.png)
 
 [Screenrecorder-2024-10-24-10-08-45-407.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YyTubzbnQoTVf9x4YyncV5kdnHb)
 
 ### 回本乱卖
 
-![](img/7ff0f8c8a76498255648db58c26ba39c.png)
 
 [Screenrecorder-2024-11-01-16-10-30-49.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VkjMbaXYAoltGqxAvWkc6VAUnQh)
 
-![](img/d0274632f7f7df8b3e3920fdcbfd22cb.png)
 
 [Screenrecorder-2024-11-01-16-11-31-834.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GDktbel3Go1JQFx5G47cddR9nJd)
 
@@ -3211,17 +3110,14 @@ FK 是**复刻**，高仿，a 货，盗版，假货莆田的代称。
 | --- | --- |
 |  |  |
 
-![](img/8a618fffe5059b089283746b02ffb403.png)
 
 [Screenrecorder-2024-11-01-16-03-18-292.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WbFUbFHyJoW6I1xT8pJc6Ztzn4g)
 
-![](img/6691d9efac627374bf192890a77500b2.png)
 
 [Screenrecorder-2024-11-02-18-14-51-955.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CEH7bnQPPosGE7xq4AncXbFontf)
 
 ### 家庭厨具
 
-![](img/b3abca0354224515db636f6ed424d2d5.png)
 
 [Screenrecorder-2024-10-30-19-34-35-793.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LClGbBovgogOUpxWFpBcLKLonef)
 
@@ -3281,7 +3177,6 @@ https://school.jinritemai.com/doudian/web/rules/nHtCKQsq6mnK
 
 ### 国粹-花鸟画
 
-![](img/3b89a6dd3dfa4042560aa273677e9caf.png)
 
 [Screenrecorder-2024-10-22-19-22-38-201.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cyj3bFlGToqFGmxIBXuc2hOvnje)
 
@@ -3397,7 +3292,6 @@ b 站有流量也不挣钱，咱直播间是聊怎么样去 make money 的，怎
 | --- | --- |
 |  |  |
 
-![](img/e7f3d47308fc71584cec61664ffaf41f.png)
 
 [Screenrecorder-2024-11-01-21-07-16-572.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NjePbl7E5o1QEFxShozcgGzqnMf)
 
@@ -3431,7 +3325,6 @@ b 站有流量也不挣钱，咱直播间是聊怎么样去 make money 的，怎
 
 ### 餐饮店卖团券---例：防空洞火锅
 
-![](img/f39249e3d8ab9c35eddc76e8dc7d234b.png)
 
 [Screenrecorder-2024-10-22-18-34-13-399.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XGyubtm88oFQ03x9E6mcUh4JngX)
 
@@ -3444,7 +3337,6 @@ home bar就是在家里，或公寓了组织点人喝酒玩游戏，就是组织
 |  |  |
 |  |  |
 
-![](img/e4245c7fc92a098d49156c7bdcaf6ac3.png)
 
 [Screenrecorder-2024-12-10-14-17-30-754.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MNn4bqwLboReQ8xhDW6cdrDsnPf)
 
@@ -3924,7 +3816,6 @@ home bar就是在家里，或公寓了组织点人喝酒玩游戏，就是组织
 | --- | --- |
 |  |  |
 
-![](img/0035a963598ee4e541aa66441655a439.png)
 
 [Screenrecorder-2024-10-23-21-17-09-972.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U1rGbc4shohW1kxIcZZcDugEntd)
 
@@ -3934,31 +3825,26 @@ home bar就是在家里，或公寓了组织点人喝酒玩游戏，就是组织
 
 ### 益宠-六角恐龙
 
-![](img/509c66286206d24872f19497fed79e54.png)
 
 [Screenrecorder-2024-10-24-20-52-44-145.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Sn4XbB9HVoouoIx029DcDwYnnyg)
 
 ### 益宠-蛇
 
-![](img/2c21e7614413d9ad766ea7b6458eda37.png)
 
 [Screenrecorder-2024-10-22-19-04-47-599.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PfOFb0wYyowzvnxArLwczEzznkd)
 
 ### 益宠-蟾蜍
 
-![](img/06e79a74dc86758f0e10b5c0431b093c.png)
 
 [Screenrecorder-2024-10-22-19-43-16-11.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZZqVbB5IhoxRmhxD0d1cE5w1nie)
 
 ### 益宠-鸽子
 
-![](img/eaf8fb3288a9c225bbb943ab132d9897.png)
 
 [Screenrecorder-2024-10-22-19-42-36-219.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NBqjbU1UEoiLGsxERYFcs929nLf)
 
 ### 益宠-老鼠洗澡
 
-![](img/c4926e16509bfc1f19d8c061e12323d9.png)
 
 [Screenrecorder-2024-10-20-15-05-29-595.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WcbEbDYMxomr75xbvlJcj2OOnuh)
 
@@ -3968,7 +3854,6 @@ home bar就是在家里，或公寓了组织点人喝酒玩游戏，就是组织
 | --- | --- |
 |  |  |
 
-![](img/3b726782bcc2a4133809e95c42107f2a.png)
 
 [Screenrecorder-2024-10-24-21-11-26-301.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Sp3bbwJYPoEpaGxzozYceafnn0f)
 
@@ -3984,13 +3869,11 @@ home bar就是在家里，或公寓了组织点人喝酒玩游戏，就是组织
 
 ### 黄蜂
 
-![](img/1c18325590bc85a3de87f2e01938c84d.png)
 
 [Screenrecorder-2024-11-02-18-16-21-521.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xy20bqkheo7kicxqkNtcsKtZnrc)
 
 ### 农村动物表演
 
-![](img/ffa21ee9d5891c6fb38788daefcab2d5.png)
 
 [Screenrecorder-2024-10-22-19-17-29-78.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AkYvbqCN8oy5WfxXOXgclDz8nKd)
 
@@ -4715,15 +4598,12 @@ PCDN流量盒子，本质是薅电信运营的羊毛，很容易封你家宽带�
 | --- | --- |
 |  |  |
 
-![](img/3950af86a0e19348fb700ffcdcb4fb12.png)
 
 [Screenrecorder-2024-10-20-14-59-20-730.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NJrZbH8P6oWxOKx5GVhchNUfnod)
 
-![](img/8185f611aa09062f6f590e3cd62dc055.png)
 
 [Screenrecorder-2024-10-24-20-57-53-940.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OlPNbLhaKosi7xxn5nccDVshn6d)
 
-![](img/c59e86dbcf73edd2a1ad14fbc736044b.png)
 
 [Screenrecorder-2024-10-20-20-45-05-147.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JCxwbyVmdoQUZexl24fciEQqnqe)
 
@@ -4767,7 +4647,6 @@ PCDN流量盒子，本质是薅电信运营的羊毛，很容易封你家宽带�
 | --- | --- |
 |  |  |
 
-![](img/9f833da6e0cfbdb0608600054caaa354.png)
 
 [Screenrecorder-2024-10-20-21-17-08-131.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DbWUbI8gvoV2QCxspyKcfV10nid)
 
@@ -4779,7 +4658,6 @@ PCDN流量盒子，本质是薅电信运营的羊毛，很容易封你家宽带�
 
 [Screenrecorder-2024-10-20-20-47-47-933.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TXrQbpDJFoIniwx1PGycP8rQn2c)
 
-![](img/4d68ead2d4c4ab8f27912007acf55f97.png)
 
 [Screenrecorder-2024-10-20-20-49-08-40.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TJRnbGKmloKmbhxumMbchJzdnPg)
 
@@ -4795,7 +4673,6 @@ PCDN流量盒子，本质是薅电信运营的羊毛，很容易封你家宽带�
 
 [Screenrecorder-2024-10-24-21-03-40-260.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KA5wbnmpAoann1xgr22cnQoKnWd)
 
-![](img/710f343e03415e918cf33f56a15505be.png)
 
 [Screenrecorder-2024-11-01-16-14-43-610.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dbs1bc85VoebrxxJGpBcmAVrnTe)
 
@@ -4813,7 +4690,6 @@ PCDN流量盒子，本质是薅电信运营的羊毛，很容易封你家宽带�
 | --- |
 |  |
 
-![](img/adf527652531acb46bf52fa6651602bc.png)
 
 [Screenrecorder-2024-10-20-20-06-26-917.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QG3obPSdnov6I8xz1x2ctQNPnAd)
 
@@ -4828,11 +4704,9 @@ PCDN流量盒子，本质是薅电信运营的羊毛，很容易封你家宽带�
 |  |  |
 | --- | --- |
 
-![](img/52c7d5d729dc97941a547b0f596f1c6d.png)
 
 [Screenrecorder-2024-11-07-04-15-53-122.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NqLUb1RJJom9YoxpWNqc6QOAn4Y)
 
-![](img/979c8fbb4eb03e7c2c33ee156f3998af.png)
 
 [Screenrecorder-2024-11-04-19-07-13-7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NfQ9bdaxLozsLRxuZIkcglmnnlL)
 
@@ -4840,7 +4714,6 @@ PCDN流量盒子，本质是薅电信运营的羊毛，很容易封你家宽带�
 
 这玩意可不行，不能代人炒股。你可以当股票经纪人，你可以在直播间去发布理财知识，但你不能去带人干这种行业。
 
-![](img/99cf337cfd403212f097eb56a1467e5f.png)
 
 [Screenrecorder-2024-11-04-19-07-13-7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Po9ubJouJooqwtx8UrgcDaBLn4f)
 
@@ -4888,7 +4761,6 @@ PCDN流量盒子，本质是薅电信运营的羊毛，很容易封你家宽带�
 | --- | --- |
 |  |  |
 
-![](img/af5f232af6d2ffdcf89731cfd9365782.png)
 
 [Screenrecorder-2024-11-05-22-12-40-654.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RooKba2C0oCrzNxCmHRcvzB0nfe)
 
@@ -4904,7 +4776,6 @@ https://polymarket.com/
 
 ![](img/94c2a5f28ad1166cb0f9a22714bb97a2.png)
 
-![](img/0c229801987d10ed8f6b881497588628.png)
 
 ![](img/320eaae22214d56e192e651fedb18120.png)
 
@@ -4956,7 +4827,6 @@ https://polymarket.com/
 | --- | --- |
 |  |  |
 
-![](img/cd8b49cc1e8369ae4d1baa6e220d69e5.png)
 
 [山姆代购.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KAXFb27Qnod3xMxQma5cHonvntb)
 

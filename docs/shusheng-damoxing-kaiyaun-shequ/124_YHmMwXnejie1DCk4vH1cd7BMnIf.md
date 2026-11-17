@@ -10,7 +10,6 @@ MXC500是沐曦显卡，可以比较丝滑的用于大模型训练、量化、�
 
 这次的部署、量化和微调全都选择Dlinfer下属的Xtuner镜像：
 
-![](img/3a049e796fd940e3ccfaa8057d8e10cc.png)
 
 > 如果使用Dlinfer下属的Dlinfer镜像，会因为triton版本太老，而出现<triton> check failed报错。
 
@@ -202,7 +201,6 @@ python /root/demo/cli-demo.py
 
 > **目前平台的ssh登录出问题了，域名**和端口都没有，web-demo暂时搁置。
 
-![](img/875923827d24339c918d6fa18e7f0ec3.png)
 
 > 问题目前已经修复。
 
@@ -318,7 +316,6 @@ ssh root@sh-06.d.run -p 30041 -CNg -L 6001:127.0.0.1:6000
 
 然后本地浏览器输入https://127.0.0.1:6001，即可进行交互，之后使用图片进行了网页交互：
 
-![](img/a67d1ed176e95d07197a0ca0e125c9fe.png)
 
 ![](img/131dfe414da0cee0bc150f1ec492f96d.png)
 
@@ -1019,7 +1016,6 @@ ModuleNotFoundError: No module named &#x27;mpi4py&#x27;
 
 之后执行命令，开始训练了，随后在显示训练信息了：
 
-![](img/6a02fba4ce54ec082c7e254652231415.png)
 
 这里显示10/2000，说明一共要迭代2000步。我在训练配置文件里设置的保存间隔是100（save_steps = 100）。
 
@@ -1031,7 +1027,6 @@ eta之后的时间表明这次训练尽管最大epoch数量只有1，结果仍�
 
 经过**3小时**的训练，得到了训练的结果：
 
-![](img/3039c2413662e1e8fa5755943944e6ef.png)
 
 这个iter_2000.pth文件，需要跟InternVL3-8B模型合并，之后对合并后的模型进行推理，查看其是否能正确给一些梗图配上幽默的台词或者评论。
 

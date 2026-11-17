@@ -60,7 +60,6 @@
 
 ![](img/a042e54c34b4578910b0ee3ce75950ef.png)
 
-![](img/c984498bb3a5ffd3cb675ee2d4be179d.png)
 
 ## 4、选择地区/国家以及类型
 

@@ -46,17 +46,12 @@
 
 ![](img/df026a023062d646774fe45a08be73c7.png)
 
-![](img/ba9a5458d58aa034e97010d74b37f0e5.png)
 
-![](img/7e56ef4ec4854877fb0416c06d429fb6.png)
 
-![](img/947e2922b6eba95fa8c0e5cfee73b7e1.png)
 
 ![](img/87c3a99a27fa73c2260c1487bb060b87.png)
 
-![](img/31597dc74d42a4f4232e34050d53f5f2.png)
 
-![](img/f24f116f39a35d3ee980222a1e97246c.png)
 
 ![](img/562f275effeefb180e4fe524a528030a.png)
 

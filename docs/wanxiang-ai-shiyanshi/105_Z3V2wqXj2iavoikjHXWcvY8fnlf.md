@@ -255,7 +255,6 @@
 宫崎骏动画（Miyazaki Anime）**的柔和梦幻风格，增加环境光，降低黑色饱和度，提升绿色和蓝色的亮度，营造出清澈透明的画风。
 ```
 
-![](img/47344a195e2a9af3fd4126673c5b9d16.png)
 
 ![](img/c85ed79e792a62d7bf76644a91e465e2.png)
 
@@ -328,7 +327,6 @@ google logo 装饰
 参考这个PPT的样式版式设计，帮我把文字内容抹掉，然后重新生成一个介绍Gemini3新品亮点的PPT。icon都换掉
 ```
 
-![](img/a6174b1eb67ea160916c5f6c2e07d1c4.png)
 
 ![](img/30a34c135d1976ea5b69a41c2c136870.png)
 
@@ -467,7 +465,6 @@ Minimalist UI design cover art, Apple design aesthetics, isometric view, floatin
 High-end UI presentation cover, Bento grid layout, minimalist geometric shapes, 3D icon design, claymorphism style but with realistic textures, matte white and silver surfaces, subtle colorful accents, balanced composition, soft shadows, depth of field, clean lines, negative space, Apple Human Interface Guidelines style, bright and airy atmosphere, high key lighting, unreal engine 5 render, super crisp details, 4k.
 ```
 
-![](img/1e02cce95397252f1f5a58f5f730cd1b.png)
 
 ```
 Abstract minimalist background for UI design, fluid organic shapes, liquid metal and smooth glass textures, interplay of light and shadow, iridescent color palette with subtle shifts, elegance, purity, Apple wallpaper style, macro photography, shallow depth of field, smooth curves, soft reflections, caustic lighting effects, crisp 8k, cinematic lighting, futuristic yet organic.
@@ -556,7 +553,6 @@ Refer to the layout and painting style of this cartoon to generate a cartoon dra
 
 > **传播要点**：智能抠图、设计师福音
 
-![](img/a3f9a5ac6be2e78866deb88b921d6c03.png)
 
 ![](img/209b656022472c3ce17871c2b754f72d.png)
 
@@ -596,11 +592,8 @@ Refer to the layout and painting style of this cartoon to generate a cartoon dra
 
 ![](img/038335ac982b13764e26f1c211f3b9de.png)
 
-![](img/197a06d813f70c2582654f97146ca25a.png)
 
-![](img/b226bb75ecdf6b7980d091b41630d093.png)
 
-![](img/d203225cc97ef935c2408151219995e2.png)
 
 ![](img/e3531d8601ec81f40edb6f6e8134be9d.png)
 
@@ -707,7 +700,6 @@ Refer to the layout and painting style of this cartoon to generate a cartoon dra
 全身机甲设定草图，《荒天破城·辟阙机甲》原创造型，整体结构以“破城锤＋战鼓护甲”为灵感，机体肩部呈环形战鼓弧面，胸甲中央镶嵌巨型“破阙晶核”，腿部结构厚重如城墙支柱。主色调为褪色皇调＋黯金边纹，机甲表面带轻微战损划痕与磨蚀感。画面呈现做旧古籍手稿纸张质地（仿旧纸、纤维纹、泛黄边缘），并采用 水彩融合水墨 的渲染方式，让大块阴影以墨迹晕开，金属边线以水彩高光点缀。图纸包含适量的中文注释，仅标注零件名称，例如：“战鼓肩甲”“破阙晶核”“重砧腿节”“裂空臂锋”“后推能量囊”等，全为中文，无其他语言。画面中包含多角度缩略图：侧视肩甲弧度结构、背部动力囊与排气纹路、腿部支撑机关的展开形态、头部面罩的近距离轮廓草图、臂部武装的拆解草稿。整体布局类似研究院手稿，大量空白留给阴影、草图线稿、结构透视，提升史诗感。风格保持 《超级机器人大战》机械设计感 + CG 手绘风，线条紧致、局部金属特写具有压迫感。
 ```
 
-![](img/ba4c8bc7fdd4094cd160d70a02f568d5.png)
 
 ### 案例二十八：诗书画卷
 
@@ -862,7 +854,6 @@ Refer to the layout and painting style of this cartoon to generate a cartoon dra
 
 ![](img/a9650d887579e22a157f9748e723c494.png)
 
-![](img/f1f3c5144e7bfbaaa6bfa2b95d1cf367.png)
 
 ### 案例四十：黏土风格
 

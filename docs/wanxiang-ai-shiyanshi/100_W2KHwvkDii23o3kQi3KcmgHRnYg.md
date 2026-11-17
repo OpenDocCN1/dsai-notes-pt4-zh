@@ -408,11 +408,9 @@ The personification of the Halloween holiday in the form of a cute girl with sho
 
 第一按钮的意思是读取你上一张图的所有参数信息（包括关键词），比如你画一张图之后，关掉了软件，再次启动点击这个就会把参数复制进来。
 
-![](img/a5b53d3b18b02a87347be7a793e7b2ce.png)
 
 第二个按钮就是删除了，清空关键词；这里可以和第一个按钮结合用哦
 
-![](img/0e777f2fbe45049ced4a58c8cf382192.png)
 
 第三个按钮就是模型选择管理
 
@@ -420,7 +418,6 @@ The personification of the Halloween holiday in the form of a cute girl with sho
 
 这个按钮就是点击就会出现这些功能，你安装的模型和 Lora 都可以在这边调整。
 
-![](img/2a2655b4cb4461a94553239d177601ae.png)
 
 言川小知识：这里可以把你生成的图片添加到模型的封面上，方便你后面看这个模型的效果，看我怎么做：
 
@@ -704,7 +701,6 @@ Prompt 提示词可以分为 4 段式结构：画质画风 + 画面主体 + 画�
 
 [动物类-2写实3D.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xga2baJ0coei1VxDrYzcywlynbV)
 
-![](img/93c9af2846109c9ac0dabf4b53a86d8b.png)
 
 [关键词108.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U6FnbuQkaok4Pix9lUjcalY7nPc)
 
@@ -1020,11 +1016,9 @@ Stable Diffusion 开源后，生态能迅速发展，是离不开官方模型的
 
 该模型主打一个魔幻主义的风景效果，非常适合于插画设计或游戏的户外场景设计。
 
-![](img/2cccbc64a373b2ce60968d1ebce1d1bb.png)
 
 ![](img/5c7ab321ddde7257c8d450edce19e01c.png)
 
-![](img/27047f47f631d3fc7a937c7ba9daa8dd.png)
 
 ![](img/82e715608f59600554648e4261de949a.png)
 
@@ -1032,7 +1026,6 @@ Stable Diffusion 开源后，生态能迅速发展，是离不开官方模型的
 
 应该是最多人使用的现代建筑风格的模型，出来的效果图非常接近于专业软件绘制的设计图，这类模型注定会在专业设计师们的手中玩出花来。
 
-![](img/3ccc2f59dde4a3ef79533fc9e8cd3b2b.png)
 
 ![](img/866956065a118973b63d141f93d14b08.png)
 

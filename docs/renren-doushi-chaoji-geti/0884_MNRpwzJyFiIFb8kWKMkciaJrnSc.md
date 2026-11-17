@@ -38,7 +38,6 @@ My Dream 、 谬误 、 康康—向上而生 、 似水流年 、 hrx 、 鱼-�
 
 ![](img/15b95bdbae90e478e3adb9a2472c3ecc.png)
 
-![](img/07f13d836e895d399fef25602c45154f.png)
 
 ![](img/7e8d1cc0dc5f193a734556a562a55c31.png)
 

@@ -157,19 +157,15 @@
 
 [TikTok Shop跨境电商新人官方指南(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CD24beuGEoyfkzx4yOOcgnojnjg)
 
-![](img/bb5fa5f17f43eb5a846707a3c5ce267e.png)
 
 [美区TikTok Shop教程—1.新店铺注册(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GounbJFWnoH71SxpNm5cmOplnpb)
 
-![](img/15c005c4fd5f3899b664c4be697a21c7.png)
 
 [美区TikTok Shop教程—2.设置店铺物流(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NFd5bIRU4oTTVwxgNwocGZvAnjb)
 
-![](img/c1979f950fbcaef2afb642e6298caa43.png)
 
 [美区TikTok Shop店铺教程—3.上架产品(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UFppbunsYoPgcixgtA6csL1XnMc)
 
-![](img/ab517d0cf736bff74a46cb3451ca956d.png)
 
 [美区TikTok Shop教程—4.创建联盟计划(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZRmTbakm6oXuEoxDzLmchX12nGc)
 
@@ -312,11 +308,9 @@
 | 居家日用 |  |
 | 玩具爱好 |  |
 
-![](img/a6ae12da80905469290d458344d3e822.png)
 
 [【GlodaStory】TikTok美区9月宠物用品行业报告-星颖社群.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PExab6itEo2gWdxOMH4cI6u8nKh)
 
-![](img/eaf91991e11d2d3717a3f18dceeb4439.png)
 
 [【GlodaStory】TikTok美区9月居家日用行业报告-星颖社群.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XEwDbNofToNIoBx6zeSccgW2n1b)
 
@@ -419,19 +413,15 @@
 | 营销日历 |  |
 | 物料 | [2025年中SS大促Deals For You Days 主题氛围物料](https://bytedance.sg.larkoffice.com/docx/Gfn2dIQMJoqaBwxRlEwllCQUgod) |
 
-![](img/18c2f9e8a2202142295da4c692251c47.png)
 
 [【3C_行业】2024_TikTok_for_Business_黑色星期五营销攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HvLwbgwG5ozUb6xMFedcfN9ynyb)
 
-![](img/371d917e79a645ee3cd79dd7be8e7040.png)
 
 [【快消行业】2024_TikTok_for_Business_黑色星期五营销攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UxtybAnZeo0RBwxzuFKcp4Fmnjc)
 
-![](img/dd7c109badc8954103ddee2777c64c94.png)
 
 [【美妆行业】2024_TikTok_for_Business_黑色星期五营销攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wyx2bEGdeoIpSSx8eEGcE5gvnLg)
 
-![](img/6c2a12be4a78a022f80fbe5f81ea3bb1.png)
 
 [【服饰行业】2024_TikTok_for_Business_黑色星期五营销攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IMcUb2L5IogFUGx8cymcxGMtnod)
 

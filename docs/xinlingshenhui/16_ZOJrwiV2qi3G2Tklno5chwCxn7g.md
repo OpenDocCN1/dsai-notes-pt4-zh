@@ -102,9 +102,7 @@ https://cover.weixin.qq.com/cgi-bin/mmcover-bin/readtemplate?t=page/index.html#/
 
 设计师可以接定制的单，那么普通人又如何通过🛰️红包封面赚钱呢。先看看红包封面再各个平台售卖的情况。
 
-![](img/f1f7cbc066d85286638555cdd6804f60.png)
 
-![](img/5b2638bed4fc0330a8690346020a7648.png)
 
 ![](img/74c694a135055f597d6c6484fb4936bf.png)
 

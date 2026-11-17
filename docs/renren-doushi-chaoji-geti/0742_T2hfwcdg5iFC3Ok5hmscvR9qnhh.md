@@ -72,7 +72,6 @@
 
 ![](img/d009bf95020b88e696a7d54e3870d5e9.png)
 
-![](img/9070eb2c6a93c1afc5d01a73d412b3fd.png)
 
 ![](img/65c77fd9ff431c1f99b0cb6ebeb77f34.png)
 
@@ -138,7 +137,6 @@
 
 ![](img/0b7fddfc9c0b273c7e3ab537ef3dbc7d.png)
 
-![](img/f11d3957be4f84a12753801f9372a577.png)
 
 ![](img/44340d0107528f64e295c10660e5dfdb.png)
 
@@ -184,23 +182,18 @@
 
 **第一步、点三条杠**
 
-![](img/de503be132fbf8e7859a0b2796bf8bb7.png)
 
 **第二步、点创作者中心**
 
-![](img/6db65256e19bd40400d641b6ecd5a950.png)
 
 **第三步、点星图商单**
 
-![](img/800612c1d983addfa406272c9c82b3f9.png)
 
 **第四步、点短剧频道**
 
-![](img/4f5495c3beaf9f225127b56c1c62e6c4.png)
 
 **第五步、搜索要做的剧名**
 
-![](img/7634e1865ef2b6400cdfcbee6de0c7dc.png)
 
 **第六步、点参与投稿**
 

@@ -22,7 +22,6 @@
 
 ## 1.1 视频演示
 
-![](img/39b91b0e6a4c52807557e89ddb4becb7.png)
 
 [影刀抓取📕低粉爆款商品链接.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G3uQbr2RKocLPkxup5qc0PJYnRb)
 

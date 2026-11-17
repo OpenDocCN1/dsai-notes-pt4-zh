@@ -30,7 +30,6 @@
 
 先发下我8月的邀请数据
 
-![](img/c6bd485f2f265ff9761d1ee3283b1eff.png)
 
 8月份的时候，小鱼发起了一个“赚钱21天种草实战计划”当时小鱼让我们定任务！
 
@@ -38,7 +37,6 @@
 
 但是小鱼说，我定的太低了！我就顺嘴一句，那我定50？其实我是吹牛的，一个月种草50位新同学加入赚钱，对当时的我来说，还是天方夜谭的事情，我自己也没在意，当天晚上我躺在床上，看着这段聊天记录
 
-![](img/5e1d5583d4c719501359c2fae9ba342b.png)
 
 “学长出手，就知有没有”说实话，我内心还是有点小激动的，大家竟然都觉得我能种草超过50！这个时候，我想，要不要试一试？说不定这个月还真能种草满50人？
 
@@ -468,31 +466,19 @@ AI 到底能不能搞钱？我找了 10 个“真的跑通”的例子。
 
 在赚钱最大的价值是，当你身边都是在悲观主义的时候，在这里都是实战家，带给你希望和机会
 
-![](img/98a8906953941e5023199a28c45e14e8.png)
 
 ###### 朋友圈
 
-![](img/a0149a5208abf03fb16fc8ec841168fc.png)
 
-![](img/ec78da15e88f2029ccd56aa596433de0.png)
 
-![](img/b3d36132fb9d006ca0cdb2905f79fda4.png)
 
-![](img/f743cbab7345f63b90819d7d4ae09706.png)
 
-![](img/73f00c35fd73d7569e0537dbb3e7d0e1.png)
 
-![](img/8cc74fdbaecb44ba98b6121d5ae90aa2.png)
 
-![](img/4fb9f3cebb97bcb1cee743562262d476.png)
 
-![](img/0c6e586b54b52985b1857a7f3784adaa.png)
 
-![](img/abcaf2e878e10ec2be92aad8a581ac44.png)
 
-![](img/fb1029932a857864fb650aaa12fd411f.png)
 
-![](img/e318eb4f2966cfbbbc87eaba7fe37981.png)
 
 ![](img/1cefa2778d825d4cf7e8bf65bb5e3b5c.png)
 
@@ -510,107 +496,82 @@ AI 到底能不能搞钱？我找了 10 个“真的跑通”的例子。
 
 #### 不二要好好学习
 
-![](img/194d6197429503d18dd193dd0d156ff4.png)
 
 #### 互丽共萤（赚钱家人）
 
-![](img/524473387cc60d088c8dbb382f5752cb.png)
 
 #### 阿梦Ai百宝箱
 
-![](img/6050691b2585467c02bd34365b080aeb.png)
 
 #### 知予
 
-![](img/ec02a3e568dbdb87b76f11174a682fff.png)
 
 #### 鱼鱼
 
-![](img/a410df726b85526c6d0266c13e2730b9.png)
 
 ### 3：闲鱼体验卡
 
 #### 赚钱亿白
 
-![](img/d2dfb1a54f14a1603ad36cdf2bb28042.png)
 
 #### 小鱼多多
 
-![](img/184da9555358ce8aa067b8dacd0d0763.png)
 
 #### 知识蛋糕
 
-![](img/87864047c285fc308f6f6c2dafb17151.png)
 
 #### 网创大侠
 
-![](img/826d12a24a2cb378120497f949868db5.png)
 
 #### 秋刀鱼资料小卖部
 
-![](img/b7d481240ca7d21bbd69cd63015cf0f1.png)
 
 #### 炸弹布布
 
-![](img/2bf7ad849eee8216fc5d1de8dcfdb720.png)
 
 #### 北冰洋初级金桔
 
-![](img/c993adc9ab76937d4a7d552fb6e1e2b1.png)
 
 #### 悠悠有前途
 
-![](img/07a6b3f2c9e2b8960be9446b8212b78e.png)
 
 #### （不用等）秋刀鱼资料小卖部
 
-![](img/ac3a046cbb5fdf26ec907de04ff0b4fb.png)
 
 #### （不用等）石榴家铺子
 
-![](img/b3cd40864dd3b3a525dc9f82c3ee9274.png)
 
 #### （不用等）网创大侠
 
-![](img/f92ec8ad96886573aa2080f485c23db2.png)
 
 #### （不用等）第二曲线加油站
 
-![](img/706b63f45e6661b6b2fdef33fa2006eb.png)
 
 #### （不用等）天边的云
 
-![](img/1f92e60415757517ed758927676352eb.png)
 
 #### （不用等）副业推荐管金老师
 
-![](img/b1e4078a69eaa9914a70b94bf92bec4a.png)
 
 #### （不用等）赚钱不辞树
 
-![](img/9c2ac8c752934d53d5ccc36386937459.png)
 
 #### （不用等）Q弹的话梅
 
-![](img/a7701a9d53c732ba921ffba7d4572194.png)
 
 #### （不用等）不累自由
 
-![](img/d5487b14ab95af321941f4704d55f90c.png)
 
 #### （不用等）小初高资料库
 
-![](img/b350eebeda011e0472ad7f62cea5a831.png)
 
 ### 4：即刻
 
 #### 达达滚雪球
 
-![](img/26402b1361c779c245d3b85a9bfe68cd.png)
 
 #### 吴泽承
 
-![](img/72212a456e994e3c6dc5011f5b05e682.png)
 
 ### 5：🛰️👸号
 
@@ -618,65 +579,54 @@ AI 到底能不能搞钱？我找了 10 个“真的跑通”的例子。
 
 链接直达：https://mp.weixin.qq.com/s/7kElbwQwvgZSQttABPn8mQ
 
-![](img/2b7715c8f3209996b4eccf1ba4a76ac2.png)
 
 #### 小南瓜妈妈
 
 链接直达：https://mp.weixin.qq.com/s/F69NCKtWUbnUdtNsFSWDcA
 
-![](img/4e4bdb04f3920a7bcf3507eb3c5c1f5a.png)
 
 #### 郭晓文
 
 链接直达：https://mp.weixin.qq.com/s/egh3D_ZFoUN1hLacutz1nA
 
-![](img/3b6684139eaf7fa68b0f66492c660592.png)
 
 #### 旺小哥
 
 链接直达：https://mp.weixin.qq.com/s/fhCs3ujHMaKe1b_Cev6LPw
 
-![](img/6f7d09b5c72c2d3cc12227d1ba55ff19.png)
 
 #### 长乐
 
 链接直达：https://mp.weixin.qq.com/s/LGl-BCJQzm-Ez1zFStfUAg
 
-![](img/cd5ae93dca2b2687ed7070b738bb6c24.png)
 
 #### 小宇干项目
 
 链接直达：https://mp.weixin.qq.com/s/CIWXQOBRvS1jXMV7UZ-shg
 
-![](img/088c3c106bf8c4015ce886108b9975a6.png)
 
 #### again打品笔记
 
 链接直达：https://mp.weixin.qq.com/s/cN3a_641aeTsj7a329WbRA
 
-![](img/4ed207247f1a14e094ee9a4c0286adfd.png)
 
 #### 你就是魔法
 
 链接直达：https://mp.weixin.qq.com/s/w_jR8hVBz7crKoMW1hpmLw
 
-![](img/3946e0522415afd70777cf933d7425d7.png)
 
 #### Leeka
 
 链接直达：https://mp.weixin.qq.com/s/1uUzfbbtVbPUvT5bwjSc0Q
 
-![](img/b9f191e8747008cf920c1a019df18e34.png)
 
 #### 十分的世界
 
 链接直达：https://mp.weixin.qq.com/s/IG5OQvC92QXE812yAew5cg
 
-![](img/124ec98c0237e3607bbfa17cde68616c.png)
 
 ### 6：电子书广告
 
-![](img/1955ff1ad3ee8f7478575768808e330a.png)
 
 #### 人生亏钱指南
 
@@ -686,7 +636,6 @@ AI 到底能不能搞钱？我找了 10 个“真的跑通”的例子。
 
 #### 赚钱宝典
 
-![](img/4b3795828ac40d7ef03e0d18f4ea11be.png)
 
 ### 免费知识星球
 
@@ -698,65 +647,50 @@ AI 到底能不能搞钱？我找了 10 个“真的跑通”的例子。
 
 #### 星吟赚钱版
 
-![](img/6a0cfa966505f663044f3a0e9ca4e276.png)
 
 #### 成都流量人间电子商务有限公司
 
-![](img/7ff51a080557696c2f7e3824c5cda0f4.png)
 
 #### 爱吃鱼
 
-![](img/e2ecddf4dd25d14ae696022722513c9f.png)
 
 #### 安阳
 
-![](img/fa89f2d91bb66bfc5ef9719c79da7a50.png)
 
 #### YY已存在
 
-![](img/da1a1d138596f692b144a85ab18c30b9.png)
 
 #### 斗与斗鱼
 
-![](img/883e40ae0891d3a8d7bda88eff1fac90.png)
 
 #### 晒太阳的耶耶
 
-![](img/881aa31310c86c523a5d6700894aa199.png)
 
 #### 涛说赚钱
 
-![](img/5d483942efdfcc34270c625eede3aa3e.png)
 
 #### 杨涛带你龙哥盟
 
-![](img/8a974b53c1feb4accee0810c7fba1740.png)
 
 #### 杨涛聊龙哥盟
 
-![](img/63e2838ed42a43ecfacc3af78904ff33.png)
 
 ### 2：👸号文章引流
 
 #### Caoz的梦呓
 
-![](img/1068f154ea101d575270822dd3da4d16.png)
 
 #### 花爷梦呓换酒钱
 
-![](img/e6b442cf219845c4f0d4caecda9a06d1.png)
 
 #### 多元思维Hack
 
-![](img/2726b96efcc303e861c1a1b768d774d1.png)
 
 #### 七天成长笔记
 
-![](img/1504b4fd3ae79fa681bd56aaacb13571.png)
 
 #### 谢无敌的红书宝
 
-![](img/361eb4bb9b5691dd2729d91a2b6e9543.png)
 
 ![](img/40f6a2b8d5b8231bd0551021c12d653f.png)
 

@@ -258,7 +258,6 @@ The Browser Company 宣布其 AI 浏览器 Dia 正式在 macOS 上公开发布�
 
 谷歌发布 Gemini Enterprise，将所有AI办公工具包含无代码构建器和现成助理，用于研究、编程、客服等整合到一个平台中，提供无代码智能体构建、跨平台数据连接和智能体市场。企业用户每月30美元起，标志着AI竞争正从“技术领先”转向“体验领先”。
 
-![](img/5a566cca48b43a2f5020f1e381f8340a.png)
 
 [gemini_enterprise_agent_demo.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NHefb1GkMoVmYBxkDLicESzcnTg)
 
@@ -304,7 +303,6 @@ Open ASR Leaderboard对来自18家公司、60多款语音识别模型进行了�
 
 Googl**e 宣布为 **Video Overviews（由 Nano Banana 提供支持）新增 六种视觉风格，并推出简短的 “Brief” 选项，方便用户快速获取信息。新功能本周开始向 Pro 用户推送，随后将向所有用户开放。
 
-![](img/bf1db4e2d15713a1a63131a2bf0677e2.png)
 
 [wVhKcCJBMeoDu1Ac.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S0tjbXqG3oSfdpxKr3PcMXaKnJe)
 
@@ -1176,7 +1174,6 @@ Replit 推出全新 AI 集成，用户无需 API 密钥或设置，即可访问�
 
 官网：https://replit.com/
 
-![](img/29eece6e5c1c7433a5e47ea22dfbb657.png)
 
 [SaveTwitter.Net_rKpespc6HFfipoSR_(1080p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QXYebAlknoSRjFx2pgfcRAhinkg)
 

@@ -174,9 +174,7 @@ The key to success is to start before you ready.
 
 ![](img/d2700e99ff1d5f465f37dcc58047fd40.png)
 
-![](img/6c77db9f5e124d1b6f089ee940da2817.png)
 
-![](img/6c66cd68d88cc0afcfd2b66795e2e85e.png)
 
 稳定情绪，一个个和他们礼貌沟通。我发现有相当一部分客户他们只是因为自己的问题没有被重视，感觉自己没被看见所以很急；有部分用户因为被解决了问题就连声感谢；也有用户真的无理取闹，只是想要把个人情绪宣泄在公共场合，但是这是极少数。
 
@@ -190,15 +188,10 @@ The key to success is to start before you ready.
 
 在疯狂拉人的过程中反复出现这个事情真的很让人抓脑，我没法和客户对接凡总那边一堆更重要的事情也被耽误。。。
 
-![](img/ec0a73e6d11b566d261f030e543048a4.png)
 
-![](img/fb596947972765cdccefd2be270eb621.png)
 
-![](img/6adf68489394fad3d652f31d94a7543a.png)
 
-![](img/c120b0473ec53e8ce4a20e009fc26dc8.png)
 
-![](img/09fd8416071216d58474bdaee39db82a.png)
 
 #### 3.误会
 
@@ -206,9 +199,7 @@ The key to success is to start before you ready.
 
 真的好好玩，我可以装出ChatGPT的架势回答他们问题，虽然我装的这个ChatGPT可能相对于真的ChatGPT要逊的多~
 
-![](img/91b1ab7a8642891c422ff5714ceb73e6.png)
 
-![](img/d26f4acf7eb0d522140dce759b54ab4d.png)
 
 #### 4.进步
 
@@ -216,7 +207,6 @@ The key to success is to start before you ready.
 
 带来的好处：客户问题处理的效率提升的更快了，我在一开始作为小白会犯的错误也被及时纠偏，同时也和凡总他们同步了客户的相关信息。（图片放大看）
 
-![](img/807177b26ce52f83bd78104f356b3d1a.png)
 
 ![](img/6e4f233176a25a64ac6f9b8e6043677e.png)
 
@@ -382,7 +372,6 @@ SOP文档一路走走停停，最终给到了交付。
 
 **客服工作流程图**
 
-![](img/e4ccdd098a9db92cfc6bd88daaee0994.png)
 
 **志愿者工作流程图**
 
@@ -390,7 +379,6 @@ SOP文档一路走走停停，最终给到了交付。
 
 **文档部分内容**
 
-![](img/ac79c4adbdef225d5719870a8a12a4a0.png)
 
 ![](img/638e9849f4f8def7f4eb2249813ebe32.png)
 

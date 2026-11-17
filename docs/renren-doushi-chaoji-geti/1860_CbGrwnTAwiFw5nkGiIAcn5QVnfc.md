@@ -58,7 +58,6 @@ ControlNet一共有15种模型，每种模型对应不同的采集方式，再�
 
 ![](img/17f6102ee6b47ffe9d0e05a969d1fa75.png)
 
-![](img/48683f4a984856b4bbde314f4fc06f56.png)
 
 ![](img/9b1da3e81da639ef6b730a9adbcda2aa.png)
 
@@ -286,7 +285,6 @@ controlnet的使用方法就只有两步
 
 最后点击生成，小姐姐就摆出我们指定的姿势了
 
-![](img/2627957d02c93bcf0aa3a023ccb6d643.png)
 
 ![](img/6e9317336774e83e9f9e821f41a4e9d2.png)
 
@@ -454,7 +452,6 @@ controlnet的模型选择：
 
 ④安装“sd-webui-openpose-editor”
 
-![](img/66e16492e84946fb6a66e81cf004899b.png)
 
 ⑤点击“已安装”页面
 
@@ -606,9 +603,7 @@ controlnet的模型选择：
 
 ### 04.黑白线稿
 
-![](img/fa3f866b989a198b83e36b4036da65b9.png)
 
-![](img/d87936da5af2b193c758bfce6a2c4ef0.png)
 
 ![](img/53430ffd90f63e69a203b80e380f5685.png)
 
@@ -766,9 +761,7 @@ depth和seg除了用在建筑上，还可以用在人物照片
 
 下面第一张是原图，其他三张分别是由水墨画、油画、赛博朋克风格的图片转移过来的画风
 
-![](img/2510b7e98229b82b1fd08a8638e7fe43.png)
 
-![](img/8a307d8f59d8a87518f7556f288892d0.png)
 
 ![](img/b6f96daa85aac4d79ff23b832d22ea18.png)
 
@@ -802,7 +795,6 @@ controlnet的模型选择：
 
 让坐着的小狗跑起来
 
-![](img/9d761b62078562f0913695936e1888cb.png)
 
 ![](img/00be00131cd401f32083039d969e017b.png)
 
@@ -910,7 +902,6 @@ controlnet的模型选择：
 
 ## 2.给人物换衣服
 
-![](img/5df58c9313f252e170b262f533da41c6.png)
 
 ![](img/d621786130d4dfe6f7c19dcd68ddf0bc.png)
 

@@ -70,7 +70,6 @@
 
 《中国新闻周刊》2024年第10期（总第1132期）：Sora 来了（点击看大图）果然是权威的、专业的，毫不含糊。
 
-![](img/639ee7dfb59992c1c6f75faeb81c161a.png)
 
 +   [**南华早报：Alibaba-backed Moonshot AI narrows gap with**](https://www.scmp.com/tech/big-tech/article/3258367/alibaba-backed-moonshot-ai-narrows-gap-baidus-ernie-bot-chinas-generative-ai-rivalry-heats) Baidu’s Ernie Bot as China’s generative AI rivalry heats up
 
@@ -86,7 +85,6 @@
 
 +   [**央广网：全球AI新品增速榜发布，**](https://tech.cnr.cn/techph/20240412/t20240412_526661433.shtml)360AI搜索1798.76%增速居榜首
 
-![](img/541b92b637c4160925c08d5614fd8ab0.png)
 
 豆包给了Kimi一记重击，月之暗面开憋大招？
 
@@ -145,9 +143,7 @@
 
 ![](img/79897e7a05e338822954890060647b4f.png)
 
-![](img/ba5e30ce605938d54264ec79c375d339.png)
 
-![](img/a922d9acf7395b92be450661277d0556.png)
 
 ![](img/ffa387725b3b58bfbb2d5a92e0a9a133.png)
 
@@ -165,7 +161,6 @@
 
 大会地址：北京中关村国家自主创新示范区会议中心
 
-![](img/ef557b473f95c44807541141acfd10e6.png)
 
 ## AI产品榜·1周年大会 紫定能行 完美落幕 20240806
 

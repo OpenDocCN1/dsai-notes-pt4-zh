@@ -33,11 +33,9 @@ pip install requests openai dotenv
 
 +   访问 [书生 AI 官网](https://internlm.intern-ai.org.cn/) 注册并申请 API 权限。
 
-![](img/94761f49f841ab30a195bfb2d2838baf.png)
 
 +   进入到API页面（https://internlm.intern-ai.org.cn/api/tokens）之后，点击获取个人密钥，接着创建API Token。
 
-![](img/e480fc10cbb175f10d668e84bc1e5bde.png)
 
 +   给你的API Token取个名字，接着就能得到一串字符，注意，API Tokne 只能复制一次，点击确认之后，便不可见，妥善保管自己的API Token。且在使用过程中，不要显式地暴露在代码中。
 
@@ -388,7 +386,6 @@ python webui.py --ip 127.0.0.1 --port 7788
 
 启动后，打开 http://127.0.0.1:7788 即可看到以下界面
 
-![](img/65cce92dd5c0f46ff0247a0bd06e9504.png)
 
 ### 2.3.2 Web-UI 选项配置
 
@@ -400,7 +397,6 @@ API KEY 位置填入你的 API Token
 
 API KEY 也可以直接写入 .env 文件中
 
-![](img/bddf8c82b61987bf92b84b2a019dba06.png)
 
 ### 2.3.3 案例一：查看上海天气
 
@@ -408,7 +404,6 @@ API KEY 也可以直接写入 .env 文件中
 
 例如 "去百度查一下今天上海的天气，给我结果" ,模型执行过程如下
 
-![](img/a1fc1d038249516edd74aff281d7bc19.png)
 
 在Rcordings界面可以把Agent执行过程下载下来
 

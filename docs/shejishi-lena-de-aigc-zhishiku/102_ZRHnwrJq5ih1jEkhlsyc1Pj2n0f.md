@@ -48,7 +48,6 @@
 
 网友案例（仅供学习交流使用，侵删）👇
 
-![](img/b09d38d97b34ce63de374a7cd7ce7b1d.png)
 
 [814b13b4f349b80bb9b2c7d1d9642d9d.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C3wObxp0Ro5rIDx6slccQ14Bni6)
 

@@ -368,13 +368,11 @@ https://docs.qq.com/sheet/DRE5jalZKeVZzQlFj?tab=u22b16
 
 ## 【招商证券】ChatGPT 行研分析：快速流行，重构商业模式
 
-![](img/fef050934eaa6753ee68059cd66e8c47.png)
 
 [ChatGPT 快速流行，重构 AI 商业模式.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnOQMkB🐧f3DwgCoEv9t17Tf)
 
 ## 【华泰证券】ChatGPT 行研分析：深度拆解
 
-![](img/aeba364c17e8e2ad51b3ee60f9812621.png)
 
 [ChatGPT：深度拆解-20230209.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnVucQsE4qrARefGg3Adh6Xf)
 

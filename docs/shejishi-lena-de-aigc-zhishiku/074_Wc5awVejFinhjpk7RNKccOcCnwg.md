@@ -6,13 +6,10 @@
 
 最近发现可灵图片效果是真的好 from互联网
 
-![](img/900892a4e76095b9f8e54d2dc05abe78.png)
 
-![](img/eb499d62557ca396366b7ae8b709f97d.png)
 
 2025.9
 
-![](img/00447d217afcab5b9185a3c80ce24dea.png)
 
 ![](img/6c4d0bfd1965afccfd63324503448e68.png)
 
@@ -34,7 +31,6 @@
 
 可灵推出全新功能「即时胶片效果」，为用户照片增添3D拍立得风格与复古质感，让旅行风景、合影或宠物笑容更具立体感与情绪氛围，唤醒珍贵回忆。
 
-![](img/23f005c99f39430f20f44313d761fc77.png)
 
 [X2Twitter.com_5h43yYR-t8VChLcR_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HVzcbmukjoOnmMx7WZJcxA9knUf)
 
@@ -86,7 +82,6 @@
 
 2025.1.17
 
-![](img/048e8a789f70a068d8d959f9d1afdd45.png)
 
 [X2Twitter.com_RSewfbZ2ptA3Mtsw_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NvMNbaKclop49bxc9GtctiRhnJh)
 

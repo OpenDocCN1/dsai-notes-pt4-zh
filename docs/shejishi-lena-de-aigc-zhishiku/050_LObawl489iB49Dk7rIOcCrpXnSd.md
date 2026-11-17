@@ -22,7 +22,6 @@ The shot opens tight on a weather-carved face, wind tearing at his coat as he st
 
 [#](https://www.facebook.com/hashtag/%E5%8D%B3%E5%A4%A2?__cft__[0]=AZWAHoZBJabopS3VgzUyJpYZy058tsQXPq640xXAwYiASw43mMEVzxxCYhenPm0zxdM1tV6o64a5DN7uO4VzT7td56aI_cZGpL21TVU4Ac4rUWqC9yzWebQWKc07smlodrHBTOE8jlzR-nClqxHtbVebti-GS26zUnKJ-EXSbgzXn2wwsLUXa4PcT0qPj_bVVEf1r5JBGq_q_M7x-Mei6oaKeX_4TZsV-8YHDjuesmDmTA&__tn__=*NK-R)即梦
 
-![](img/92c73a80efc44f689358d0741abd9061.png)
 
 [32df4b788ae17c8112be5cc34fa05979.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nq3rbWWfdoP1rbx7Q7Sc2GGBnYe)
 

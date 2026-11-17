@@ -50,11 +50,9 @@ pip install requests openai  #推荐使用官方SDK或原生requests库
 
 +   访问 [书生 AI 官网](https://internlm.intern-ai.org.cn/) 注册并申请 API 权限。
 
-![](img/7770f8a72d90a1c0787df5145cc1e9b6.png)
 
 +   进入到API页面（https://internlm.intern-ai.org.cn/api/tokens）之后，点击获取个人密钥，接着创建API Token。
 
-![](img/b9b73edf849f61ad65d44fbc0361a023.png)
 
 +   给你的API Token取个名字，接着就能得到一串字符，注意，API Tokne 只能复制一次，点击确认之后，便不可见，妥善保管自己的API Token。且在使用过程中，不要显式地暴露在代码中。
 
@@ -462,7 +460,6 @@ uv pip install &quot;httpx[socks]&quot; -i https://pypi.tuna.tsinghua.edu.cn/sim
 
 启动后，打开 http://127.0.0.1:7788 即可看到以下界面
 
-![](img/da5fb8b81c1f7b624f2084a6ba726b73.png)
 
 ### 2.3.2 Web-UI 选项配置
 
@@ -476,7 +473,6 @@ API KEY 位置填入你的 API Token
 
 API KEY 也可以直接写入 .env 文件中
 
-![](img/ea97b95f45ddbfa1547577b2bffb0aca.png)
 
 ### 2.3.3 案例一：查看上海天气
 

@@ -78,7 +78,6 @@ ControlNet是一种用于精确控制图像生成过程的技术组件。它是�
 
 
 
-![](img/15e6df4e9eadbe8158b73f62d28ffb8c.png)
 
 
 ![](img/ac7ebb18573e331c138440188db9852c.png)

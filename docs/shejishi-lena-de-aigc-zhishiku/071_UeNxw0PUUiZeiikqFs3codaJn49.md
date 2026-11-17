@@ -22,7 +22,6 @@ OpenAI 推出全面升级的 Sora 2，在音频同步、物理真实感和场景
 
 [SaveTwitter.Net_VSkiatSKqZT4gkfl_(1280p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZiKqbVQoZokvJqxmL9ec48Kdndb)
 
-![](img/127cb8377377d601223139cc6ab031d7.png)
 
 [SaveTwitter.Net_EtTmzPjtOcnfTvnC_(1280p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UXdHbTVh0ouU2Hx2GJfcrkA2nvg)
 
@@ -78,7 +77,6 @@ OpenAI 推出全面升级的 Sora 2，在音频同步、物理真实感和场景
 
 [SaveTwitter.Net_mOWOCtdpWSUCJMcM_(704p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KXh3b8vFdoJ6ibxbUwPc0mMwnOf)
 
-![](img/318fe66be02c38ef67fb43f2a69d9139.png)
 
 [SaveTwitter.Net_ievEZwGRipvK-AoG_(704p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WydRb6vy8oD9uNxLBROcmd2Gn0e)
 
@@ -90,7 +88,6 @@ OpenAI 推出全面升级的 Sora 2，在音频同步、物理真实感和场景
 
 [SaveTwitter.Net_X4MaD62uGjHRquWr_(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BckVbgBS2ofIGCxJlxIcyaYcnpe)
 
-![](img/f18222be0804f198f56dd74f05dabac7.png)
 
 [SaveTwitter.Net_cldIKmgSOnx6SaGF_(704p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GkVFbF3pTotNhHxO2qWcxdbHnDg)
 
@@ -274,7 +271,6 @@ DJ: 身材纤瘦如模特，银色隐形眼镜，马尾发型，美甲。紧身�
 
 ## 广告唱跳
 
-![](img/b8ea7352c3b3f66faad32d78805c977e.png)
 
 [SaveTwitter.Net_ievEZwGRipvK-AoG_(704p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RIzXbuP6xoXt3uxFBAUcdA88nnb)
 
@@ -320,7 +316,6 @@ Make a professional ad for (your product, object, car,...)
 
 [SaveTwitter.Net_VSkiatSKqZT4gkfl_(1280p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GHc5bpJYcobBRUxTTD7ctTtUnmd)
 
-![](img/32ec72e48f13dbfa1b7e6011b19d6991.png)
 
 [2176000 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HGhjbJQ4MoVDL9xr5HicQaMFnlf)
 
@@ -338,7 +333,6 @@ Make a professional ad for (your product, object, car,...)
 
 ## 动物
 
-![](img/5edd2cf28f98fe18551fb7d3fd011573.png)
 
 [2176000 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zc3fbi6PQoDJeax6eFZcJW12nJf)
 
@@ -356,7 +350,6 @@ Make a professional ad for (your product, object, car,...)
 
 ## 卡通动漫
 
-![](img/eb534218bfdc2cf97d5909bb8b2c8db2.png)
 
 [SaveTwitter.Net_n6_hgCVP_ADhtrjy_(704p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rq6gbcEhxo9ssyxwfmacUnwgnFO)
 

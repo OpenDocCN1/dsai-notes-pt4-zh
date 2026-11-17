@@ -3142,15 +3142,12 @@ Obserable
 
 +
 
-![](img/cc92ae22aac3fb3927ab6ca52b597467.png)
 
 [22 - MVC and Swing MVC Components(2).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnjOR0imF9qmFZJA7sHTpvBc)
 
-![](img/cc4a532a378b9c868b39de810cdaa0dd.png)
 
 [23 - JTable and JTree(2).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnEqOwxxOQxYwD3pTnyx5Soc)
 
-![](img/c905c46e055758acb3e906e36ccce289.png)
 
 [24 - Graphics and Java 2D(2).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcn1qS2qTz5MUhDRXrbe5CTcg)
 

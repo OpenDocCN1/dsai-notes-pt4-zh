@@ -28,7 +28,6 @@
 
 ![](img/4fdd570a3fc86adf8ab5ca2ada0aa528.png)
 
-![](img/794eeb09c5f1dbe73c7a54e85d7028f6.png)
 
 ![](img/dcb89c8ce868ad0e16ff1ff216cab014.png)
 
@@ -100,7 +99,6 @@
 
 字重
 
-![](img/1e9c308d3b74481734c437fa31a80149.png)
 
 ![](img/30b6b3ea139bbf4c2d84eab4a0112010.png)
 
@@ -120,7 +118,6 @@
 
 ![](img/6d3aca3743d77513bc72c1c3ddf8f986.png)
 
-![](img/3ee4108c1a3801c5296bb5ce3ea7e225.png)
 
 ![](img/4fbc20d925c61ed6b539d3cc5c212886.png)
 
@@ -184,7 +181,6 @@
 
 +   **推荐写出图像用途和类型  **例如：用途PPT封面背景图、背景素材图/ 类型广告海报设计、纪实摄影
 
-![](img/8911dca83f49bbc2b5c1df957f0f8b26.png)
 
 ![](img/879449abe646016b04301ce370ec69b5.png)
 
@@ -198,7 +194,6 @@
 
 ![](img/f860b3660bf500d2fe84f7fd7ccc3883.png)
 
-![](img/d486a320d2d1a8b3d84ef64e25253c2f.png)
 
 ![](img/4bd4c64660297737aeee81661d7ef33f.png)
 
@@ -236,7 +231,6 @@
 
 ![](img/f4bb21cbee35724ed4ae7ff58f60bbf7.png)
 
-![](img/bdef87addee932a96a08f56944de1b98.png)
 
 ![](img/5486a6450b829244d7b3965a98ec430c.png)
 
@@ -382,7 +376,6 @@
 
 ![](img/8352a06f32a514d9d4b8a3ee40c3460d.png)
 
-![](img/2ad6148f5c155303b3eb34b9b8dfcdee.png)
 
 ![](img/aa0e1c0d57fb839412b992dc21ca9d15.png)
 
@@ -684,7 +677,6 @@
 
 ![](img/8ef4287bf92b57ed5b04f0f4dd772862.png)
 
-![](img/f64076a2080f762060bade1cba21564d.png)
 
 ![](img/61e73bd3fd4133f7ceb2850dacb338c0.png)
 
@@ -706,7 +698,6 @@
 
 ![](img/b9956839334206146385f25803727e50.png)
 
-![](img/726634fb4a96f870e8544fdd7a07c1a5.png)
 
 ![](img/8e4a32f338659a5ea6b84d8a542c14b7.png)
 
@@ -788,7 +779,6 @@
 
 ![](img/e6e9654369eac5a018ecd1dd9c0d0b4c.png)
 
-![](img/60e038dfaf733bd4700fdd15fef862b5.png)
 
 ![](img/c0f7f973c1772ead001ebf69a4b3832d.png)
 
@@ -820,11 +810,8 @@
 
 ![](img/5ec8afe1bce4858eefb99dcfd114e4ca.png)
 
-![](img/2898a04dd3d1c69c1dd2c29ded67c721.png)
 
-![](img/73211462d4242576bc398e1c00c8da1b.png)
 
-![](img/8520d70223b37d0d40ebd7d61077f4b3.png)
 
 ![](img/c1c450f8d4fcfdee7d58183498dc3511.png)
 
@@ -834,13 +821,11 @@
 
 ![](img/26516ad907968bc15c96d145f2570314.png)
 
-![](img/dd25c85f1a70a2636423aab221f39229.png)
 
 ![](img/670bcd743ff896e3c921cc1b88e79a47.png)
 
 ![](img/535d7a63a2608d99f12400199d8ee8d9.png)
 
-![](img/54f168e2571818d83425ea3cbaf9b490.png)
 
 ![](img/03c2c1ec011db5bbeb3afe9fcde70eed.png)
 
@@ -886,15 +871,11 @@
 
 ![](img/66dac441bfb66785ae962bdf64e40770.png)
 
-![](img/91f672188dc8879e7d906c9b22ce0634.png)
 
 ![](img/8847b8e3600a6b4c635fdad242585ab4.png)
 
-![](img/8e524d95f435ed211652dab8c843ba09.png)
 
-![](img/127fff7a7cd6d50ec507290eed1dfe06.png)
 
-![](img/d39449593c4263421164d2379b05a2f3.png)
 
 ![](img/fc2daae53001baa85094ba9e4bd06f47.png)
 
@@ -916,7 +897,6 @@
 
 ![](img/20d2d25e049635e3b6b745e32316c49a.png)
 
-![](img/be487523998f7f4dc68b43c328a90998.png)
 
 ![](img/d134d88d11c08f177d625d6ee787612b.png)
 

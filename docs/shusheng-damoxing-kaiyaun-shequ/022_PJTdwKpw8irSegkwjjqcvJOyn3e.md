@@ -18,7 +18,6 @@ github：[c](https://github.com/CherryHQ/cherry-studio/blob/main/docs/README.zh.
 
 地址：Cherry Studio - 全能的 AI 助手
 
-![](img/9a6fbaa2a1b27b1272dda52030d50c1f.png)
 
 # 玩转 Intern-S1
 
@@ -52,11 +51,9 @@ github：[c](https://github.com/CherryHQ/cherry-studio/blob/main/docs/README.zh.
 
 按照如下步骤输入 API Key 创建
 
-![](img/e230ee34d38e1ce31133d5996a27a334.png)
 
 确认后将生成的 API Key 粘贴到对应位置。
 
-![](img/57c978fca39bda7a9fabad05fd12f8d7.png)
 
 注：
 
@@ -76,7 +73,6 @@ github：[c](https://github.com/CherryHQ/cherry-studio/blob/main/docs/README.zh.
 
 初始界面，现在是一个类似各家大模型的 chat 页面，但不能用。因为没添加模型接口。
 
-![](img/f9601b53d3a8f4515b41853cc27101d9.png)
 
 添加提供商如下：
 
@@ -84,7 +80,6 @@ github：[c](https://github.com/CherryHQ/cherry-studio/blob/main/docs/README.zh.
 
 1.  5 的提供商名字可以随意取，有印象就行
 
-![](img/122c999487810039f294d9238dfe1aa5.png)
 
 添加 API 如下：
 
@@ -92,27 +87,22 @@ API 密钥：输入刚才获取的 API Key
 
 API 地址：https://chat.intern-ai.org.cn/api/v1/
 
-![](img/b499c1f8f72e48491b5c7c8cb95f437e.png)
 
 添加模型可以先点击下面的管理，选择合适的添加。
 
-![](img/a1f9cb619bcf9133ce1d6c7eb3e12014.png)
 
 如果找不到需要的可以点击添加。根据需要的进行填写。
 
 一般是 ollama 自己微调的模型进行部署后调用才会用到，其他基本通过管理可以解决。
 
-![](img/c637914d26683c18778c294015dbf362.png)
 
 测试是否可用：
 
 点击检测后选择使用的模型点击确定，如果可用会有提示。
 
-![](img/0ca31a7493142cdcceb5d72d8fbf38a8.png)
 
 成功结果
 
-![](img/23d37a7eb244d8daa9e93adc0774860b.png)
 
 之后就可以在聊天页面进行聊天了。
 
@@ -122,11 +112,9 @@ API 地址：https://chat.intern-ai.org.cn/api/v1/
 
 进入聊天页面，选择模型，开始聊天。
 
-![](img/9a0230b23f070aac70fad9cd36648d73.png)
 
 这里模型选择 Intern-S1
 
-![](img/5f8daad4929cef4b7d0043412fdceb30.png)
 
 输入聊天内容并发送，你就会收到回复。
 
@@ -215,11 +203,9 @@ API 地址：https://chat.intern-ai.org.cn/api/v1/
 
 一个比较常用的文本绘图提示词。
 
-![](img/bc6e9871265321a46dfcd4c53461bf6c.png)
 
 模型设置这边根据自己需求改，具体是什么也有介绍，鼠标悬浮到文本后面的？即可查看。
 
-![](img/06fbce7a3e1bfa44d2306b72a2f08bd9.png)
 
 在提示词设置中添加对应提示词，这样之后就不需要再写，每次都使用这个提示词作为系统提示词。
 
@@ -347,7 +333,6 @@ digraph LoginFlow {
 
 助手这里就可以看到修改了。点击添加助手可以添加新助手。
 
-![](img/2bb19476770a15842d30326595146e05.png)
 
 点击助手可以跳到助手对应的话题页面。
 

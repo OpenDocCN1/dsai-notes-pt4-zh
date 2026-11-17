@@ -432,7 +432,6 @@ hhh是不是很多小伙伴已经按捺不住去试了试呢，出来的照片�
 
 比如说：在街上，阳光，上半身照片（street, Sunshine, upper body photos,）
 
-![](img/0c76eb4ec0c69f00a55dacc3395bcbda.png)
 
 好啦，这样一套下来，我们的关键词就写的差不多了
 

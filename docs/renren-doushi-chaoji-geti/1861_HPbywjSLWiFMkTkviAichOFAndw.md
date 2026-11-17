@@ -64,15 +64,12 @@ https://www.bilibili.com/video/BV1H14y197Mv/
 
 添加一个衣服的Lora，就可以让人物穿上特定的衣服
 
-![](img/8b4e0f247aa8832bbe04e59d9c25089c.png)
 
-![](img/d6a00964acea9d3b61da11236ee7037c.png)
 
 ## 4.改变画风
 
 通过添加Lora改变照片的画风，这个画风可以自己去训练
 
-![](img/e79fe2ff5b23ab685ff50608bf497cfc.png)
 
 ![](img/1f9c82394edf6a9d0adf0dc09bd650d7.png)
 
@@ -156,7 +153,6 @@ https://account.qingjiaocloud.com
 
 然后点击“新增云桌面”
 
-![](img/e62fd65985a936d3aaf34581a005d0a0.png)
 
 先选择“定制产品”
 
@@ -164,7 +160,6 @@ https://account.qingjiaocloud.com
 
 2.5元一个小时，一般新注册的用户会有优惠券，可以免费试用几个小时
 
-![](img/1c25ae63cfd44323146e68afa5605d3f.png)
 
 这时候会多出来一个选项框，点击“开机”
 
@@ -172,7 +167,6 @@ https://account.qingjiaocloud.com
 
 进入云桌面之后，双击“赛博丹炉”的图标就可以开始炼丹啦
 
-![](img/7865bcfe8f04a92a7e5719b0ba204e2d.png)
 
 训练完之后，主页最上面有一个下拉按钮，然后点击“断开链接”就可以退出云桌面
 
@@ -226,7 +220,6 @@ https://account.qingjiaocloud.com
 
 右边的“样张预览”可以打开，这样我们等一下在训练Lora的过程中就可以实时看到照片
 
-![](img/f510ca3fefaf2b9b9a0ecdd1a298f239.png)
 
 再往下就可以选择一个我们要训练的Lora的类型
 
@@ -240,7 +233,6 @@ https://account.qingjiaocloud.com
 
 除此之外还可以自定义去炼平面设计图或者建筑之类的
 
-![](img/48f3f50e8a669e2483aeff1df28ea2f1.png)
 
 # 五、高质量素材的制作
 
@@ -266,7 +258,6 @@ https://account.qingjiaocloud.com
 
 然后点击“上传素材”，上传自己的照片
 
-![](img/1647468378e76609d51838b424eb47e8.png)
 
 一般情况下，下面的参数默认就可以了
 
@@ -278,19 +269,16 @@ https://account.qingjiaocloud.com
 
 接着点击“预处理”
 
-![](img/ea1ab001fe9195d33db7b63f01601404.png)
 
 处理完之后训练集里面就会有两组素材
 
 一组是原素材，还有一组就是裁剪的只有脸的素材
 
-![](img/9754a12beed99c0d0668456e438f31c1.png)
 
 人脸素材里面会有些识别不准确的照片
 
 我们点击照片右下角的图标把照片删掉
 
-![](img/0ce70251334fb74bccb6b39dd887a88f.png)
 
 再看到“TAG编辑”
 
@@ -300,7 +288,6 @@ https://account.qingjiaocloud.com
 
 单独点击某一张照片就可以看到这张照片的标签
 
-![](img/b55d55b3dc0742a16496edf7a5187b73.png)
 
 这里我们需要把照片大概检查一下
 
@@ -338,13 +325,11 @@ https://account.qingjiaocloud.com
 
 如果你想在SD里自定义头发的颜色，那这里的标签就要打上“粉色头发”
 
-![](img/bbf3f6ef667ffd55fc2813e78fda3359.png)
 
 好啦回归正题！
 
 所有标签处理好了就可以点击右下角的开始训练啦
 
-![](img/9b404650ec8855c7e1f74bd48120697f.png)
 
 # 六、耐心等待的训练过程
 
@@ -404,7 +389,6 @@ Loss可以用来参考模型的好坏
 
 > 可以在Lora文件夹里新建一个文件夹来存放
 
-![](img/4b10f0fafaed90f2580a2a01ef94fda6.png)
 
 然后把没有序号编码的那个Lora重命名
 
@@ -532,7 +516,6 @@ Y轴值输入：STRENGTH,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1
 
 点击“参数调优”我们就可以自行设置参数
 
-![](img/9d3d844e1e2301be9658da0f4b94455b.png)
 
 如果生成的照片不像本人，那就可以适当增加Repeat（学习步数）值
 

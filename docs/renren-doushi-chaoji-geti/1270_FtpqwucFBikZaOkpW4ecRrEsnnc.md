@@ -8,7 +8,6 @@ https://chat.jijyun.cn/home
 
 https://yuju.jijyun.cn/
 
-![](img/8443672f4dd8907d29264887a9114ae7.png)
 
 ![](img/229a73039e64d942b6538f82a8c24a46.png)
 

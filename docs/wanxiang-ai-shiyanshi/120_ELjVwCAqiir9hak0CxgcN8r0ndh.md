@@ -22,7 +22,6 @@
 
 ### 学员ID：晨晨
 
-![](img/0b1e44e33e497d8f382f20b572a03e03.png)
 
 [熊猫人_HD.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DOyhbExD8o4XxLxP5GIcHcEhn6g)
 
@@ -114,13 +113,11 @@
 
 ### 学员ID：li某人
 
-![](img/7290693017aaba20131df211f23af2e8.png)
 
 [《山海传说：神秘的召唤》.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y8VGbG8jcoSbT0xQYBrc2QJPncb)
 
 ### 学员ID：晨晨
 
-![](img/07755c54207212bedd66373c367c6222.png)
 
 [山海经.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L6gdb58zLokyQjxajKTcZHybnSb)
 
@@ -136,7 +133,6 @@
 
 ### 学员ID：一头象素
 
-![](img/335bd6a9094284a5081b807418d2fe1b.png)
 
 [作业2-梦坠大荒西.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D4QFbZ59Ro4Db4x8YhIcOVuTnzf)
 
@@ -178,13 +174,11 @@
 
 ### 学员ID：简。
 
-![](img/4a0ceaa577375f692852dd3555891f18.png)
 
 [山海经1013.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OKGvbijbioSvLxxCOpucJspJnze)
 
 ### 学员ID：小加
 
-![](img/37f386b9c1196f5cb8a2ef198f6a9329.png)
 
 [1728716375091269588-video_watermark_954c6e474ca6e4f6f6f63c2aa773529a_301396618069389317.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ja7nbMGSXorhSNxo5lSc4rAinxb)
 

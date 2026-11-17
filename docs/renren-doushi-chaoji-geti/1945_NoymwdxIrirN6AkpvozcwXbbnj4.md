@@ -92,7 +92,6 @@
 
 +   [星舰计划 - GPT、Claude、Grok、MJ、Sora](https://ssw9noe1h6.feishu.cn/wiki/AXOXwzvDyi44d4keAlVcv2MlnOb?from=from_copylink)舰计划ChatGPT已更新agent 代理功能，使用地址：
 
-![](img/260a25d100b9e57497ca4f3d62a9605e.png)
 
 +   **全新发布一站式使用新产品：**[星舰计划 - GPT、Claude、Grok、MJ、Sora](https://ssw9noe1h6.feishu.cn/wiki/AXOXwzvDyi44d4keAlVcv2MlnOb?from=from_copylink)
 

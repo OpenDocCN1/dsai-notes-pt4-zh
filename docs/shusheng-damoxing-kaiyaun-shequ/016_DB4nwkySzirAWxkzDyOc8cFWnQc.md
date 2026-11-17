@@ -46,11 +46,9 @@ pip install requests openai dotenv
 
 +   访问 [书生 AI 官网](https://internlm.intern-ai.org.cn/) 注册并申请 API 权限。
 
-![](img/02a8242db258491b6ae1b70d51862907.png)
 
 +   进入到API页面（https://internlm.intern-ai.org.cn/api/tokens）之后，点击获取个人密钥，接着创建API Token。
 
-![](img/5bc577f00819dbfe30039417c17ef0e1.png)
 
 +   给你的API Token取个名字，接着就能得到一串字符，注意，API Tokne 只能复制一次，点击确认之后，便不可见，妥善保管自己的API Token。且在使用过程中，不要显式地暴露在代码中。
 
@@ -399,7 +397,6 @@ python webui.py --ip 127.0.0.1 --port 7788
 
 启动后，打开 http://127.0.0.1:7788 即可看到以下界面
 
-![](img/0db28f8dd92e3a43213cf29ea5ec3403.png)
 
 ### 2.3.2 Web-UI 选项配置
 
@@ -411,7 +408,6 @@ API KEY 位置填入你的 API Token
 
 API KEY 也可以直接写入 .env 文件中
 
-![](img/4b8ea3ed26b7b4cc2629a131e74a6f79.png)
 
 ### 2.3.3 案例一：查看上海天气
 
@@ -419,13 +415,11 @@ API KEY 也可以直接写入 .env 文件中
 
 例如 "去百度查一下今天上海的天气，给我结果" ,模型执行过程如下
 
-![](img/eb16e53571b9aa317df1107a05b87273.png)
 
 在Rcordings界面可以把Agent执行过程下载下来
 
 ![](img/c69cb9a6f02435feb5e5ae6cf90a6d65.png)
 
-![](img/5d286de8b49ad319e2268d634bf987fc.png)
 
 ### 2.3.4  案例二：去📕搜索东方明珠
 

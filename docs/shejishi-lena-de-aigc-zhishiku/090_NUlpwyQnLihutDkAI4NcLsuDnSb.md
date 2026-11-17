@@ -10,7 +10,6 @@ heygen全球视频本地化工具支持 170+ 语言
 
 heygen新推出的视频本地化工具可将任何视频翻译成 170 多种语言，提供人类级口型同步、视觉感知翻译、音频优化，并智能匹配多说话人和性别。用户可通过上传视频或 YouTube 链接快速实现全球化分发，目前已支持 iOS，Web 与 API 版本即将上线
 
-![](img/b11452969f68a23dfb1f462b86ab0cee.png)
 
 [SaveTwitter.Net_UfInqgNulRk0xB4Z_(1080p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MDbobZL0Eoiyt5xA42ZcZH3anLf)
 
@@ -46,7 +45,6 @@ HeyGen 发布多项重磅更新，包括通过文本提示生成个性化视频�
 
 更多：https://www.heygen.com/article/whats-new-in-heygen-november-2024-highlights
 
-![](img/e87f6545d8f2e6796f875d35428d53cd.png)
 
 [X2Twitter.com_cTOpnkUNeG8O7Mo1_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q5zabyCabos7RfxaI8McLmthnCb)
 

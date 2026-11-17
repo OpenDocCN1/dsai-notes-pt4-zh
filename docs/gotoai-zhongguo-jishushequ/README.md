@@ -136,7 +136,6 @@ Empowering Intelligence, Together
 
 微软认证讲师（MCT）前微软公司Azure AI 解决方案技术顾问,Microsoft 365 资深讲师
 
-![](img/2e0b876cb5bbc928144f0a467bd48167.png)
 
 **Alec Chen**
 

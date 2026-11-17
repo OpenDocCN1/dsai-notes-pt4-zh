@@ -1274,7 +1274,6 @@ hugging：https://huggingface.co/tencent/Hunyuan-GameCraft-1.0
 
 可在6秒内制作任意长度和风格的高清短片，支持近乎实时的超真实表情。该技术比以往快20倍、成本更低，旨在让更多用户以轻松有趣的方式使用AI视频进行创作和社交互动。
 
-![](img/1b40b1b2113e5e70e451075642cd0007.png)
 
 [twitter-video-1920x1080-video1 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LUc9bF1BQoTGztxfB5QcPJSLntf)
 
@@ -1554,7 +1553,6 @@ Perplexity 推出 4,250 万美元分成计划，向在 AI 搜索结果中出现�
 
 号称可与本人无差别还原表情、动作与语气，让用户无需拍摄即可生成自然、逼真的个人视频。这一功能被定位为创作者与企业提升影响力与效率的利器。
 
-![](img/9ac7ac1fad0fc2663f796a709cb21fbe.png)
 
 [twitter-video-1920x1080-video1 (5).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LALYbRRe6ofhoaxofKsc1kANnVh)
 
