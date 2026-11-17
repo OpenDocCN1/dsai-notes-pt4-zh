@@ -4,7 +4,6 @@
 
 https://edu.aliyun.com/
 
-![](img/1b43448f0b80d175b2dac64e46f55e52.png)
 
 ## 最新训练营
 

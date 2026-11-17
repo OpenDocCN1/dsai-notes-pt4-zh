@@ -248,11 +248,8 @@ IPython
 
 注册并等登录后，可以直接查看到仪表板：
 
-![](img/25f0c332496318caf52d7dc7100082b5.png)
 
-![](img/24396cdc1ce3d6248e81fe25e75e3f02.png)
 
-![](img/fd1f5d047004a6ad83058bab61301ff0.png)
 
 ![](img/c1837a37ecacd23420526f16410d6235.png)
 
@@ -344,7 +341,6 @@ graph = create_react_agent(model=model,
             rompt=prompt)天气时候，请使用get_weather工具查询天气。当用户询问新闻时，请使用search_tool工具查询新闻。&quot;)
 ```
 
-![](img/e8e48dbbca3792408634159bc6a5e10f.png)
 
 +   **Step 6. 创建****langgraph.json****文件**
 
@@ -358,7 +354,6 @@ graph = create_react_agent(model=model,
 
 注意: 项目文件的名称必须为langgraph.json。如下所示：
 
-![](img/818dc51edfc56ac2670399d93ecd5501.png)
 
 ```
 {
@@ -405,7 +400,6 @@ graph = create_react_agent(model=model,
     pip install -U &quot;langgraph-cli[inmem]&quot;
 ```
 
-![](img/4cad30721ca1c619dde9b44651cad88d.png)
 
 />
 
@@ -415,7 +409,6 @@ graph = create_react_agent(model=model,
 pip install -r requirements.txt
 ```
 
-![](img/0df7b8238985c6180ea33ebe1a4c45a8.png)
 
 最后，进入到langgraph_chatbot文件夹，执行LangGraph dev即可启动项目
 
@@ -835,7 +828,6 @@ pip install -r requirements.txt
 python -m src.server
 ```
 
-![](img/87e692f8aa5829a7a56b403ee80c3233.png)
 
 +   安装前端依赖
 

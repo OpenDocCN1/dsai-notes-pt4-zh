@@ -77,7 +77,6 @@ Terminal &amp; Photos： 简单的占位符界面即可。
 确保代码处理好 Z-index 层级关系，避免背景遮挡窗口。
 ```
 
-![](img/ed70b3901c59a024fb391c97c0fb1f1e.png)
 
 [视频1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WMbsbeGl3oqsqYxNURncNZQdnlg)
 

@@ -38,7 +38,6 @@ Agent并不是一个全新的概念，而是自AI诞生以来就已经存在。2
 
 由大模型驱动的AI Agent架构是当前**比较常见的AI Agent落地架构，包含规划（P**lanning）、记忆（Memory）、工具（Tools）、执行（Action）四大要素。
 
-![](img/871d7f646de8517bf9b24efa34456dda.png)
 
 AI Agent在实现特定目标或任务时，通常涉及如下步骤：
 

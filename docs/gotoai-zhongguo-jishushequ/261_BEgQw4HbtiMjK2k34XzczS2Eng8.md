@@ -64,7 +64,6 @@ John McCarthy
 
 During the summer Dartmouth Conference—and two years after Turing’s death—McCarthy conceived of the term that would come to define the practice of human-like machines. or machines capable of human intelligence. In outlining the purpose of the workshop that summer, he described it using the term it would forever be known as, “artificial intelligence.”
 
-![](img/644196ac604de3688a2da6906023c54c.png)
 
 specialization
 
@@ -154,7 +153,6 @@ In 1996, IBM had its computer system Deep Blue—a chess-playing computer progra
 
 Deep Blue didn’t have the functionality of today’s generative AI, but it could process information at a rate far faster than the human brain. In one second, it could review 200 million potential chess moves.
 
-![](img/7ae9f46dbea9a8a9e7284ffa12a85d71.png)
 
 specialization
 
@@ -244,7 +242,6 @@ The an[c](https://deepmind.google/technologies/alphago/)ient game of Go is consi
 
 AlphaGO is a combination of neural networks and advanced search algorithms trained to play Go using a method called reinforcement learning, which strengthened its abilities over the millions of games that it played against itself. When it bested Sedol, it proved that AI could tackle once insurmountable problems.
 
-![](img/2808bcae04cba2e591e66548857c1406.png)
 
 specialization
 

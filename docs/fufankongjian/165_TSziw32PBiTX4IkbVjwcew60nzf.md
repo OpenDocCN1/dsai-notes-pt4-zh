@@ -859,7 +859,6 @@ classify_answer
 &#x27;否&#x27;
 ```
 
-![](img/9736ddef620fd1818ff9ab893a773b13.png)
 
 至此我们就完成了用户输入到guardrail_chain输出是或否的开发过程。需要注意的是，我们是让guardrail_chain通过输出是或否来区分是否是公司员工管理手册相关内容，而在很多场景下，我们实际上是通过guardrail_chain判断是否需要进行进一步检索。
 

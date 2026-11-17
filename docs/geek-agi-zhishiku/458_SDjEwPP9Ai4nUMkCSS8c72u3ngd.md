@@ -30,7 +30,6 @@ Stable Diffusion 在线版虽然使用简单，但是大部分为阉割版（不
 
 +   Stable Diffusion 2.1 Demo [10] ：Stable Diffusion 2.1 是 StabilityAI 最新的文本到图像模型。
 
-![](img/4f38da89e6b72cb04cf63ae30aa4d032.png)
 
 +
 

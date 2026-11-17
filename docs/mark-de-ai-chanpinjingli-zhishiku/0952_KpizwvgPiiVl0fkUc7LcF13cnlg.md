@@ -14,15 +14,12 @@
 
 发送~ 等
 
-![](img/9753decc39dda6a3fce83256d6eb4573.png)
 
 Claude Design马上给我发来一些问题要我确认
 
-![](img/77ca8bc0438f903b47fd44b37985504b.png)
 
 我认真选好、填好，点继续（在“需要哪些功能”那里，我额外加了一条：每次施肥后，选一下下次施肥的时间就行）
 
-![](img/cb1ba8e5c07daa7929db08ab932f7d88.png)
 
 Claude Design开始干活...
 
@@ -36,7 +33,6 @@ Claude Design开始干活...
 
 我额外提到的“下次施肥时间”，它也做了专门设计
 
-![](img/cbf77ab4884144e9c0146a68825ac0ae.png)
 
 预览发现，底部的导航图标随页面滚动，马上把修改意见发给Claude Design，很快就修改好了
 

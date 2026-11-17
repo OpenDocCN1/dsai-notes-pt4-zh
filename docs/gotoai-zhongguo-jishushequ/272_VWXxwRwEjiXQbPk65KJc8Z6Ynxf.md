@@ -22,13 +22,11 @@ WEBSITE - https://www.oneminutehistory.com
 
 PATREON -
 
-![](img/b7fb2d178b1f79966bf6b003ef8e2b7c.png)
 
 / oneminut[e](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa0hvTjAzLVF5VzJWSlBQYnpBYTRiVjlkV2d1d3xBQ3Jtc0tsWWZvbG5GUXlRWGhqZGdRcXlIblhLS24tclRFUUZDMGJEUGxCUWJCcTNWU25LZ0xSX3QwU0FwdjcyZmlOa0RTcEFVWjRoYlJBMlVwY05YQVFWRVVIdHNJWDBsdHRJRkJ1S2hrdm5BRHpRckRwQmpFSQ&q=https%3A%2F%2Fwww.facebook.com%2Foneminutehistory&v=PtG9_Zbm7Jw)history
 
 FACEBOOK -
 
-![](img/7f840f8d134f9b3631850a9e92ab6080.png)
 
 / oneminute[h](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXBZRlNwb2NvbEc5U0hEck9SUnp1eXRmNnNRQXxBQ3Jtc0tsZldmZTk4TG1XaUtqSmNEWE0tbkhGYi1aRXBDUmZKTkJPVXkwdkdzQjZ4S1I1bW9HajgwTW1tR3dpRlcwc2UxRjFsVEducWF3LUg1Nm1qZHdObTMwUVdYTTE5OHlVZl9manhlZkRpWXhRd3ZjQW44NA&q=https%3A%2F%2Fwww.instagram.com%2Foneminutehistory&v=PtG9_Zbm7Jw)istory
 

@@ -4,7 +4,6 @@
 
 Google AI Studio 最近悄然新增了多媒体生成功能的支持，包括 Veo 2 用于生成视频，以及 Imagen 3.0 用于生成图片。这些功能涵盖了多种生成方式，如文字生成图片、文字生成视频，以及通过参考图片生成视频。
 
-![](img/31053fc3e15aea7aff94baf3b4c08e47.png)
 
 体验入口已经开放，用户可以通过以下链接尝试：https://aistudio.google.com/gen-media。
 
@@ -18,7 +17,6 @@ Google AI Studio 最近悄然新增了多媒体生成功能的支持，包括 Ve
 
 > The picture style is a food shoot. A pile of blueberries fall into the water and slowly sink. The fruits are surrounded by blisters and have a leaf on them, creating an appetizing color tone
 
-![](img/ca7bf1d9c5e4ac7f7dc8afec9be4500e.png)
 
 > {
 
@@ -82,7 +80,6 @@ Google AI Studio 最近悄然新增了多媒体生成功能的支持，包括 Ve
 中文：图片风格为美食拍摄，一堆蓝莓掉入水中，慢慢沉入水中，水果周围都是水泡，带一片叶子，让人开胃的色调 
 ```
 
-![](img/ce06d1700e7459d7161a111c22612c09.png)
 
 ![](img/dbfd88a14fdf619ee0ad1742ac98e2de.png)
 

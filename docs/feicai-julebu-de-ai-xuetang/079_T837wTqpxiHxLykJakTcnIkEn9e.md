@@ -62,7 +62,6 @@
 
 ## 📰 动态消息类新闻
 
-![](img/5a702fcfa251d6a3c8cc9fc936686385.png)
 
 [新闻提示词框架 01.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VMknbtxVCoYKnGxx8dpcLeLwnKb)
 

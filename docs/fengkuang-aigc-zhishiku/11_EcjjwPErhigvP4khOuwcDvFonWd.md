@@ -98,13 +98,11 @@ Best quality,masterpiece,ultra high res,(photorealistic:1.4),raw photo,1girl,lon
 
 使用 Segment Anything，用户可以通过简单地指向所需区域来指定蒙版，而不是手动填充它们。这可以提高蒙版创建过程的效率和准确性，从而可能获得更高质量的修复结果，同时节省时间和精力。
 
-![](img/08d6bc7f7f837a68ce5e32ce46d0e28e.png)
 
 3.1 inpaint anything安装
 
 插件安装方法一直都是如此，相信看到本篇教程的你也绝不是小白了，我就简单带过，另一种方法可以通过网址下载：https://github.com/Uminosachi/sd-webui-inpaint-anything
 
-![](img/d3606775acfaa27b4778e5deea99bac4.png)
 
 安装完成后刷新【web-ui】即可看到这个插件，之后下载模型，这个插件就不做详细介绍，看操作路径即可。
 
@@ -204,7 +202,6 @@ https://github.com/nonnonstop/sd-webui-3d-open-pose-editor/tree/main
 
 安装完成后，重启【web-ui】即可在这看到【3D Openpose】，关于这个怎么用很简单，大家尝试着用用，熟悉一下即可（我个人觉得不是很好操作）
 
-![](img/015f828560be3cc2cb03178e8d770317.png)
 
 **4.3 创建人物骨骼图**
 

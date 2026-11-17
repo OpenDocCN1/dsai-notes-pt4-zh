@@ -24,7 +24,6 @@
 
 [DeepSeek 15天指导手册——从入门到精通 (2)(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GvFFbi20KoyM0cxzGe7c3HhhnTg)
 
-![](img/5a2a8520dfd81883d15ab652d748cbc3.png)
 
 [清华大学第三弹：普通人如何抓住 DeepSeek 红利.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ms0ub6qbzohOsRxVNuRcwYzjnXB)
 

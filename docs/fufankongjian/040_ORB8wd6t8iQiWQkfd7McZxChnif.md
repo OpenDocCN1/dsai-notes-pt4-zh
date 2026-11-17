@@ -60,13 +60,10 @@ Qwen2.5-Coder-32B-Instruct 在 40 多种编程语言上表现出色，可以作�
 
 可以看到该模型的意图识别、基本世界知识以及双语能力都是在线的。
 
-![](img/a7eb401ab2d9f21f9d5e0c24c9937217.png)
 
-![](img/5fe94e66d5f968a9c517f34043141ff6.png)
 
 可以看到该模型具有极强的代码纠错能力以及长文本输出能力。
 
-![](img/980c7895a160dc8e40b08ff7cc732305.png)
 
 作为代码助手，Qwen2.5-Coder-32B-Instruct可以很详尽且高效的为使用者提供对应的代码知识。
 
@@ -370,7 +367,6 @@ ollama run qwen2.5-coder:32b
 
 对该模型进行代码能力测试后可以看到，qwen2.5-coder:32b具有不错的代码生成能力以及代码纠正能力，可以用来辅助代码编程或实现一些自动化代码流程。
 
-![](img/1b2eb55052f84ae0a73d91bc81fc4608.png)
 
 ![](img/6f3ef84ae44420c63c1e89521c179f25.png)
 
@@ -690,11 +686,9 @@ Cursor直接注册即可试用2周pro计划，可以白嫖一众开源和闭源�
 
 下载好安装包直接点击运行即可，需要注意的是在下面的install'cursor'点击下载便可以以后在命令行中快速启动该应用了。
 
-![](img/1c5d20d35f5636e37728452fdfd95398.png)
 
 在这个界面，选择Use Extensions便可复制已有的VScode的配置，这样一步实现环境和插件的同步。
 
-![](img/2a2c9684ff2570c7d45b0a0da7cc50f0.png)
 
 在完成配置后需要进行账号登录来实现最后的授权，支持Github和Goggle的账号登录。
 
@@ -728,7 +722,6 @@ siliconFlow注册官网：https://cloud.siliconflow.cn/account/ak
 
 并且点击Verify，即可完成添加
 
-![](img/6deb0cf0a954b6d8907f3b4817997d30.png)
 
 ## 4.推理使用
 

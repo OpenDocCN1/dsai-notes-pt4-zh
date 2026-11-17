@@ -161,7 +161,6 @@ Sample outputs for digits 0 to 9:
 
 Sample outputs for digits 0 to 9:
 
-![](img/77c124e6937ec0a8cfe64f634a9eac1a.png)
 
 1.  [Stacked GAN](https://github.com/PacktPublishing/Advanced-Deep-Learning-with-Keras/blob/master/chapter6-disentangled-gan/stackedgan-mnist-6.2.1.py)
 

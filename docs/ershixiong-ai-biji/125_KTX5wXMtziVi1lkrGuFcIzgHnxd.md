@@ -34,7 +34,6 @@ Typography (top-left corner):
 “Salvador Dalí” in minimalist black sans-serif font, “Dalí” bolded.
 ```
 
-![](img/aff85d3037564962ac9acdf05509dd5d.png)
 
 ```
 **A high-resoluti****on vertical**** Pixar-style 3D character** illustrati**on.

@@ -24,7 +24,6 @@
 
 第一种：在安装虚拟机时修改：
 
-![](img/a3c650c417f9fcd6c153bce1e9c8380b.png)
 
 ![](img/5e435eadc2bd37f448a0cb163b931886.png)
 

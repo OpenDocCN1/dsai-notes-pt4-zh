@@ -46,7 +46,6 @@ README (assets & code): https://github.com/adrianhajdin/stora...
 
 💻 Join our Discord Community:
 
-![](img/175ecfa7ec6c95ed6417426901886581.png)
 
 [ / discord  ](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1ZweHpLcTRrR3ZSeUhnV0U3VXJyWU04Qld0QXxBQ3Jtc0ttbDlrM21mODQ2TE9EdkVGalhLMXRHUDE4VU1Yd3FydDJpNlNjOGtsdXdBZFVLRUIydTFabGVoWkM5a1JxczhvSHVJV0Y1bDNuR1kwNktKOWZERVl0ZWRtRUxGOXMxQXJubDdPQW9MREtkMGNMbEUtaw&q=https%3A%2F%2Fdiscord.com%2Finvite%2Fn6EdbFJ&v=lie0cr3wESQ)[
 
@@ -54,7 +53,6 @@ README (assets & code): https://github.com/adrianhajdin/stora...
 
 🖼️ Follow us on Instagram:
 
-![](img/41ff6b39c4e39fa79531c62e36f2b973.png)
 
 [ ](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnYwVE1LcnJUWklTa0lrdWxXY1E2NHpYR1VlQXxBQ3Jtc0tuT1ViWl9OamRLSm9iUzV6YzVDZGN2azZyODlKd1V3YTVLM3A2LXV1R1RRUGNXSlM5b01fdEthVmhWcWZhZmRtajBRdDFWNWUtRVlHRkFXbjg4NjBnQ01zVWkxcGFwUm9NWWxxS01MMVRNclZMd05Jcw&q=https%3A%2F%2Flinkedin.com%2Fcompany%2Fjavascriptmastery%2F&v=lie0cr3wESQ)/ javascriptmastery
 

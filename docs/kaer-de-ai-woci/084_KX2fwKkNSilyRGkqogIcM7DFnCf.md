@@ -32,13 +32,11 @@
 
 plan mode模式下，
 
-![](img/680e694fa9077923e11bf9545df835a5.png)
 
 [planmode.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O5zhboCS9oum4mxWhZycTaohnSg)
 
 > 编写一个经典的扫雷游戏要求：禁止使用任何改变应用结构或组件化范式的 JavaScript 框架/库（例如：React, Vue, Angular）。可以cdn引用第三方库以满足题目要求，如Three.js，p5js。最终产物必须是纯粹的 HTML、CSS 和 JS 文件。如果需要创建多个文件（HTML/CSS/JS），请确保所有文件引用均使用相对路径。所有文件需要保存在当前目录下
 
-![](img/cf22d301fd7e1cf3f56a9f1b91414158.png)
 
 [saolei2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IRD6b7JvioHPlyx9X4tcKMQdnmt)
 

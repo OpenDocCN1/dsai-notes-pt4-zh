@@ -32,19 +32,12 @@
 
 如需了解政策详情，可拨打宝安区工业和信息化局电话：27849120。
 
-![](img/893a4f0e9170b8fd073778a9a28c35ae.png)
 
-![](img/fa2071e3c38156585a5cef3cf3afb129.png)
 
-![](img/bd4e4f0b46ea2b9fbccdffdc72373183.png)
 
-![](img/537899ee4785b9b4b02444e9e1e42fe9.png)
 
-![](img/a016950ec91e35969e89c2021faa123e.png)
 
-![](img/1c19ed70bf579df66fd80d09c22fdadf.png)
 
-![](img/f86233d61431b4ff590049d254cc928e.png)
 
 ![](img/16a723778bbee33f2e8f2f7b3ff81269.png)
 

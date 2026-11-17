@@ -1823,9 +1823,7 @@ if __name__ == &quot;__main__&quot;:
 
 ![](img/1c30a1c008ac6c131fffaa8cdff67aa1.png)
 
-![](img/0849c34e9a3640b129db346a4aaf209c.png)
 
-![](img/295f583b8ed70af6aab05fcdb0ac085d.png)
 
 ![](img/217a7de5ee2026a8f5ab708863b4c659.png)
 
@@ -2003,15 +2001,12 @@ exit
 
 然后即可进入新的会话页面，输入任意内容留作标记：
 
-![](img/bbd0e54a20f5c0d512f3af8afcdc186e.png)
 
 然后关闭当前对话，再次打开一个新的会话：
 
-![](img/aecfeb79f0a21b0c63d33d1c2ef623c1.png)
 
 然后输入screen -r my_training_session，便可恢复之前的会话：
 
-![](img/6d2a8b8705300e0c4ad9078895f6e15c.png)
 
 此时my_training_session就是一个持久对话，并不会因为会话窗口关闭而关闭。接下来我们就在my_training_session中进行模型训练。
 

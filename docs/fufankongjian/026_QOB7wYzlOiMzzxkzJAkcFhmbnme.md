@@ -16,7 +16,6 @@ OpenAI在0613的更新中首次为目前最先进的Chat类模型增加了Functi
 
 毫无疑问，有了外部函数库的功能加持，Chat模型的处理和解决问题的能力也必将再上一个台阶。同时，相比于此前必须借助LangChain的agent模块才能实现LLM和外部工具API的协同调用，现在Chat模型内部集成的Function calling功能实现过程更简单、开发门流程更加清晰、开发槛更低，而如此种种，也必将促进新一轮的以大语言模型为核心的AI应用的爆发。
 
-![](img/172e9e69089439304a2c538e1bbe2a16.png)
 
 +   极简AI应用开发示例
 
@@ -32,13 +31,11 @@ OpenAI在0613的更新中首次为目前最先进的Chat类模型增加了Functi
 
 +   Step 1.登录OpenWeather官网并点击Sign—>create account完成注册。该网站无需魔法即可直接登录，可以使用国内邮箱或者🐧邮箱均可进行注册，官网地址为：https://openweathermap.org/
 
-![](img/066981f128d715bea5d4a50c473af061.png)
 
 ![](img/07eec5d94a568afa0eea3d73974e5d24.png)
 
 +   Step 2.获取API-key：注册完成后，即可在API keys页面查看当前账户的API key：
 
-![](img/df34d60a7fce2794feec1dcdcff7b828.png)
 
 ![](img/59d8ecff233148fe81fb0d2840c1bbb8.png)
 

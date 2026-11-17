@@ -917,13 +917,11 @@ def greet(name, age: int, location: str = &quot;New York&quot;):
 
 +   Step 1.登录OpenWeather官网并点击Sign—>create account完成注册。该网站无需魔法即可直接登录，可以使用国内邮箱或者🐧邮箱均可进行注册，官网地址为：https://openweathermap.org/
 
-![](img/9e23a1bfa019e4d4a200a8ffc917b249.png)
 
 ![](img/3c2c2297e1d5bef6674b02f66e99995b.png)
 
 +   Step 2.获取API-key：注册完成后，即可在API keys页面查看当前账户的API key：
 
-![](img/276c0ccfd4d7c4c50d132d6485962e0d.png)
 
 ![](img/86121b5d87b9cd0fc96723d2f3b65c88.png)
 

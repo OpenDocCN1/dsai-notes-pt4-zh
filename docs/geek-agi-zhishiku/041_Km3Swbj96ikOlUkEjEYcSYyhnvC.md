@@ -285,7 +285,6 @@ C:\ProgramData\Ableton\Live 12 Trial\Resources\MIDI Remote Scripts
 
 # 实录效果
 
-![](img/755bf2051eee28d479dd6be754e67214.png)
 
 [AbletonMCP测试案例1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XBeYbliUGoMuqyxz2gccQXCCnKd)
 

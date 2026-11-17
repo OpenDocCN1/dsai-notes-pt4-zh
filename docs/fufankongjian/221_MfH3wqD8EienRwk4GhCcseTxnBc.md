@@ -140,9 +140,7 @@ Tavily提供了更细粒度的内容过滤机制，支持对结果来源、领�
 
 +   Tavily官网：https://www.tavily.com/
 
-![](img/acbf682e6bb420a06da0fc5eeb667ce8.png)
 
-![](img/6c0e5c4700769b21ae25042b6d629b0c.png)
 
 ![](img/3c80e90e0be6b05f85c29178092aea9d.png)
 
@@ -394,7 +392,6 @@ LangGraph 的引入让 open_deep_researcher 易于部署和集成。例如项目
 pip install -e .
 ```
 
-![](img/8e2e00de3c632377ac5279483f83db73.png)
 
 接下来需要安装 LangGraph 的命令行工具 langgraph-cli，用于管理 LangGraph 的运行和部署。
 
@@ -437,11 +434,9 @@ Studio UI: https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
 
 用浏览器打开上述 Studio UI 链接，即可进入 LangGraph 提供的深度研究助手界面。在该界面上，你可以像使用 ChatGPT 一样与 deep researcher 交互：输入研究主题或问题，然后提交，观察代理自动检索和生成报告的全过程。界面还提供配置面板，可实时查看和调整部分参数（对应 .env 配置），以及一个 JSON 输入框用于反馈或控制流程（例如输入 true 确认计划，或输入字符串对提纲提供修改意见)
 
-![](img/d3048bbeb46b5126d1b921353ddd6e6d.png)
 
 这里需要关注的是langgraph.json 配置文件。当我们执行 langgraph dev 时，会启动所有三个图：
 
-![](img/3a7664af0949fdf91117024c6f59567e.png)
 
 1.  open_deep_research - 基于 ./src/open_deep_research/graph.py:graph
 
@@ -564,7 +559,6 @@ Gemini Fullstack LangGraph Quickstart 可以看作是 LangGraph 框架的一个�
 
 下载项目至本地后，首先需要通过一个Python IDE打开项目，比如VSCode、PyCharm、Cursor等，大家根据自己的实际情况选择即可。我们这里以Cursor为例，打开项目后，可以看到项目结构如下：
 
-![](img/8c6cac24058658016c404f933f63229d.png)
 
 这是一个前后端分离的架构，其中backend是后端，frontend是前端。我们需要依次启动前后端的服务。
 
@@ -580,7 +574,6 @@ source venv/bin/activate
 # Windows 内输入.\venv\Scripts\activate
 ```
 
-![](img/608e2b56e93f94b384dd02ad9a3f0ffd.png)
 
 然后安装所有的第三方依赖，执行如下代码：
 
@@ -592,7 +585,6 @@ pip install .
 
 接下来修改.env文件，分别配置DEEPSEEK_API_KEY、TAVILY_API_KEY 以及 LangSmith的配置。
 
-![](img/b395d126e6bb1b3c7ca30f326cbd727d.png)
 
 以上配置结束后，便可以开启后端服务了。执行如下代码：
 
@@ -615,7 +607,6 @@ cd frontend
 npm install
 ```
 
-![](img/9a4497e4aa678d55918493452e3874c0.png)
 
 如果操作系统中之前没有安装Node.js，则需要先安装Node.js。地址：https://nodejs.org/zh-cn
 

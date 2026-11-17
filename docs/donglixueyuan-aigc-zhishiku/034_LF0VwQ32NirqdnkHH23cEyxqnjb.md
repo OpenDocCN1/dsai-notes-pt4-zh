@@ -24,7 +24,6 @@ Ubuntu 20.04.6 LTS
 
 ### 2.2.** 申请服务**器
 
-![](img/95f6d4576c673126c815982d274a144c.png)
 
 > 点击试用，完成注册、实名、领取产品后进入如下页面。
 
@@ -64,7 +63,6 @@ Ubuntu 20.04.6 LTS
 
 选择镜像 URL，这里选择官方镜像就可以
 
-![](img/fd60c6505e0c81de650789dcc12d534c.png)
 
 然后点击下一步，耐心等待实例创建，这个过程还是比较耗时的。
 
@@ -244,7 +242,6 @@ print(&#x27;Python %s on %s\nsys path:\n%s&#x27; % (sys.version, sys.platform, s
 
 [现在，你应该能够](https://so.csdn.net/so/search?q=Notebook&spm=1001.2101.3001.7020)在 Jupyter Notebook 或 JupyterLab 中看到你添加的内核。在内核列表中选择你添加的内核，以在该环境中运行代码
 
-![](img/db0f3a59583d77c9852ceca9af466a6b.png)
 
 ![](img/9a03e7a7dfc20a06b79cb9e709ea8ca8.png)
 

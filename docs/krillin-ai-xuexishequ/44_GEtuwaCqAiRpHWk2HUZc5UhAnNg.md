@@ -14,7 +14,6 @@ Learn how Chat searches codebases using default search, embeddings, and advanced
 
 如果代码库未索引，Chat 将首先尝试计算一些搜索查询，用于在您的代码库中进行搜索。为了提高准确性，建议使用嵌入搜索。
 
-![](img/e9a28e85c53561917ad229e24474eb3a.png)
 
 ##
 

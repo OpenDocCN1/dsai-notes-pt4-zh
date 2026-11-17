@@ -52,7 +52,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 +
 
-![](img/a4a1689e53964f58917a279daa4b0c35.png)
 
 +
 
@@ -62,7 +61,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 +
 
-![](img/7cf55c42f5fd8c68def8c53cdc6d23d5.png)
 
 +
 
@@ -72,7 +70,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 +
 
-![](img/e2627ee96c31b9f136a55ab7ee95355e.png)
 
 +
 
@@ -100,7 +97,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 +
 
-![](img/67da7dba280be1149fd9ab8e946653eb.png)
 
 +
 
@@ -120,7 +116,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 +
 
-![](img/0d7164aaf650e2377c7b96546789339a.png)
 
 +
 
@@ -140,7 +135,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 +
 
-![](img/147fde047da1f23df229b70dd9eda04c.png)
 
 +
 
@@ -150,7 +144,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 +
 
-![](img/20c8fcc1fe4cacc9a931cee0fe58f7ec.png)
 
 +
 
@@ -180,7 +173,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 +
 
-![](img/cd826729a62b6b4e46fd1be75e7d04fd.png)
 
 +
 
@@ -190,7 +182,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 +
 
-![](img/80359da4f4f57dcc3960ab464a227ba3.png)
 
 +
 
@@ -220,7 +211,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 +
 
-![](img/5de6997f4c9b1ac351e5b75aa6d9e06c.png)
 
 +
 
@@ -330,7 +320,6 @@ C[ode Interpreter (Al](http://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247
 
 上传图片，依次输入以上 prompt。不但可以获取到图片信息，还可以对图片进行编辑操作（裁剪，制作 gif，颜色处理，格式转换等）。需要注意的是：会话过期需要重新上传图片，转换格式显示图片会受到内存限制。
 
-![](img/cf5a6da970beaded7ab40389a963456e.png)
 
 原始图像（Stable Diffusion @lencx）
 

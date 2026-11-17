@@ -114,15 +114,12 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[4.19-4.26｜本周 AI 论文精选](https://waytoagi.feishu.cn/wiki/PYyKweMx0ikbK2kqILrcuCy1nhd?from=from_copylink)》本期AI精选论文速递，集中拆解了十大重磅研究与模型革新。DeepSeek V4凭借原生百万超长上下文架构，以开源成本比肩闭源顶尖模型。自我进化Agent、轻量化模型蒸馏、按需检索等创新方案接连落地，高效解决传统架构高耗能、检索冗余、扩展受限等痛点。同时，研究深挖多智能体同质化、RAG落地短板等关键问题，结合无状态记忆设计、自主知识生成与EDA工具迭代实践，搭配深度学习理论新探索为模型部署、Agent开发、技术优化提供了前沿解法！
 
-![](img/8c3cab98a5f6063a8ef8d660e7881bea.png)
 
 +   《[用 Subagents 保持 Claude Code 上下文干净（译）](https://waytoagi.feishu.cn/wiki/Fq5lw2ZDVi0oNeku7ZCcaMk5nxb?from=from_copylink)》长时间使用 Claude Code 时，上下文会很快变得一团乱。每一次 grep、find、ls 都会留在你的上下文里，占掉大量你之后根本不会再读的空间。Subagents 就是为了解决这个问题：它们会在自己的窗口里完成工作，最后只把结果带回来。这篇文章会直接切入重点：subagents 是什么、如何创建一个、Claude Code 自带了哪些内置 subagents，以及如何通过 CLAUDE_CODE_FORK_SUBAGENT=1 来 fork 上下文。
 
-![](img/7cc7702e3765478931b2358e29a1c9ee.png)
 
 +   《[AI Engineer 学习路径（译）](https://waytoagi.feishu.cn/wiki/LCSHw5fXqi0UbIkfFXec4H7OnQc?from=from_copylink)》这是一份非常实用的路线图，告诉你该学什么、按什么顺序学，它基于大约 2000 份真实岗位描述中的需求总结而来。如果你想进入 AI engineering，而不只是停留在 ML 理论层面，这条路径更贴近生产环境中的真实系统构建方式。
 
-![](img/c57bb5bacf6c95f5f9461d058957f0fd.png)
 
 +   《[喝点VC｜a16z联合创始人：真正危险的不是投错项目，而是错过下一个Google](https://waytoagi.feishu.cn/wiki/ZSZCwzGsEigPFBkpqSmcvENunlb?from=from_copylink)》 a16z (Andreessen Horowitz) 是一家风险投资公司，以其多元化的投资领域著称，被投资公司包括 Airbnb 、 Meta 和 Twitter 等。本次访谈，20VC with Harry Stebbings和 a16z 围绕风险投资、创业者判断、AI、宏观环境与个人心智展开。
 
@@ -136,7 +133,6 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[你不知道的 AI Coding：非技术人的上手、场景与实战](https://waytoagi.feishu.cn/wiki/Nl2Xwa1vSifcCzkYMz2c4EitnDd?from=from_copylink)》这篇实用指南面向产品、运营等非技术人群，拆解了Claude Code零门槛落地玩法。本篇文章分享了需求精准描述、项目规范配置、Skill工作流沉淀等核心技巧。无需深厚的编程基础，就能搭建高效AI工作流，将重复繁琐工作自动化，全面提升日常办公与内容产出效率。
 
-![](img/34a79f049a4de8dfdfa8b56ddaa9edb8.png)
 
 +   《[为 Agent 设计产品【译】](https://waytoagi.feishu.cn/wiki/C01kwFKSEiRRZkkYGXVc2XIHnwd?from=from_copylink)》人机交互正在迎来颠覆性转折，传统图形界面不再是软件的核心入口。企业软件正全面向Agent适配升级，依托MCP等协议实现无界面自动化操作。本篇文章结合真实产品案例，拆解了Agent时代的产品设计关键：主动提供规范标准、搭建反馈机制、补齐信息缺口，为产品研发与企业数字化升级提供全新设计逻辑与落地方向。
 
@@ -152,7 +148,6 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[子智能体 vs 智能体团队：颠覆全局的架构抉择](https://waytoagi.feishu.cn/wiki/TAx1wE2XbiQ0dpkbZxFc0SOOn3e?from=from_copylink)》大多数的AI架构设计都存在核心误区，复杂任务盲目堆砌多智能体，反而加剧了协作混乱与信息损耗。本篇文章带你厘清sub-agent与agent teams的底层区别，可以帮助你规避上下文断层、协调成本过高的问题，高效搭建轻量化、高稳定、易维护的智能体系统！
 
-![](img/c32b83468f2968022fe57316a3070af3.png)
 
 +   《[AI / ML 所需线性代数知识（完整路线图）](https://waytoagi.feishu.cn/wiki/UTSCw2RD5i9W55kMiLZcM6HJnZF?from=from_copylink)》做 AI / ML 并不需要数学博士学位。你只需要掌握足够的线性代数，这样在打开论文或 PyTorch 文档时，不会总觉得自己在迷雾里打转。这份路线图会按正确顺序告诉你该学什么，以及为什么它重要。
 
@@ -164,15 +159,12 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[如何构建一个 Deep Researcher（译文）](https://waytoagi.feishu.cn/wiki/QVjbwk5bYiAT9Jk5cDlcC7g0nBd?from=from_copylink)》本篇文章带来一套百分百开源、支持本地自托管的深度研究技术栈。整合Onyx检索、CrewAI流程编排与Voxtral语音能力，通过分层隔离、迭代反思、多维度检索规避幻觉。整套方案代码完全开放、可以自由定制搭建，既能保障数据主权与合规性，又能低成本搭建高质量私有化AI研究工作流，快来上手试试！
 
-![](img/b8121648557baeb5aafcb6141433ae23.png)
 
 +   《[DeekSeekV4发布](https://waytoagi.feishu.cn/wiki/Cz3fwvWcVieOMxkePAtcQs41n6O?from=from_copylink)》4月24日，备受期待的DeepSeek全新系列模型——DeepSeek-V4预览版，终于正式上线并同步开源。在业界长达数月的猜测与等待后，DeepSeek没有让大家失望：它带来了1M（百万）超长上下文的普惠标配、Agent能力的全面跃升，以及一次引人瞩目的国产化转身。
 
-![](img/fdcfadf296e8f3a753c657f0921c4dfc.png)
 
 +   《[Cat Wu 面试了几百个 PM 候选人，几乎没人答对一个问题：AI 产品经理到底应该干什么？](https://waytoagi.feishu.cn/wiki/Vn35wYDOeiaVWmk2jIxcORTVnXg?from=from_copylink)》Anthropic Claude Code和Cowork的产品负责人Cat Wu和Boris Cherny搭档，带着团队把产品功能的交付周期从半年压到了一天 。在Lenny's Podcast最新一期中，Cat 聊了Anthropic内部的速度文化、PM 角色的剧变、源代码泄露的善后，以及那个让开源社区炸锅的OpenClaw封堵决定。
 
-![](img/e470882a19d58d35344ec4f930ebc222.png)
 
 ###  4 月 23 日
 
@@ -186,11 +178,9 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[斯坦福经济学家：职业阶梯正在失效，年轻人该怎么在 AI 时代往上走？丨EO](https://waytoagi.feishu.cn/wiki/FS2zwmVVdiH0hykH93acCJ5bnqb?from=from_copylink)》斯坦福学者通过海量职场数据，揭示了AI冲击职场的残酷真相。AI精准取代了入门级标准化执行工作，而资深从业者却凭借经验与综合能力站稳脚跟。未来职场或许将是人统筹方向、AI落地执行的全新模式。如果你关心的不只是“会不会被替代”，而是“职业的起点还在不在”，这期几乎每一句都值得划线。
 
-![](img/75ea6ba96477ec6f9912557f9efd71a5.png)
 
 +   《[OpenAI 发布 Workspace Agents，接替 GPTs](https://waytoagi.feishu.cn/wiki/GXK5wDOd4iyN3skNzWQcTyyVncO?from=from_copylink)》OpenAI重磅上线Workspace Agents，依托Codex底层架构，可以快速搭建智能体，联动Slack、办公软件等多类工具，可以自动承接IT审核、产品反馈、周报统计、销售运维、风控排查等高频重复的工作。非技术人员也能自主搭建团队专属Agent。现阶段限时免费体验，快来试试！
 
-![](img/038eb7c60f43a9a05468fc2064ff1a47.png)
 
 ###  4 月 22 日
 
@@ -222,11 +212,9 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[GPT-Image-2 全量上线，中文顶到爆，50+ Case 生图实测](https://waytoagi.feishu.cn/wiki/Vkv5wJzJuiRUsok0c6HcR2rInyd?from=from_copylink)》GPT-Image-2已经全量上线，在中文排版、复杂版式与长图文呈现上实现了跨越式升级。短短几句提示词，就能一键生成杂志封面、信息长图、复古海报、UI界面、古风印刷品等专业级内容，风格迁移精准、细节质感拉满。作者实测了五十张作品，覆盖实用设计与趣味创作，快来看看效果如何！
 
-![](img/351e3fb45444303c646e9bd1ebac64c0.png)
 
 +   《[前 Google PM：从 PRD 到原型，Claude Code 正在重写 PM 工作流丨Aakash Gupta](https://waytoagi.feishu.cn/wiki/BEWpwdZZtitMKXksJYXcpHHOnNh?from=from_copylink)》Mahesh Yadav，一个做过 Microsoft、Amazon、Meta、Google 的产品经理。本期谈话他将带我们一起拆解下：PM 的价值到底会变大，还是会被边缘化？ 他没有在讲一套空中楼阁的方法论，而是在用自己从大厂到独立 Builder 的切换，解释 PM 为什么必须重新定义自己的工作边界。
 
-![](img/74d8053a9bfbfbaf01d3ff95e8a733ea.png)
 
 ###  4 月 20 日
 
@@ -246,7 +234,6 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[Meta产品高管：旧版产品经理已死，取而代之的是AI-first建造者 | Lenny's Podcast](https://waytoagi.feishu.cn/wiki/Nh79wmWR9ivbbpk9AVXcN4H7nuh?from=from_copylink)》Nikhyl Singhal 曾在 Meta、Google、Credit Karma 做产品高管，也是 The Skip 社群的创始人，长期和一线产品负责人、创业者一起工作。这期最值得读的地方，不是再问一遍“AI 会不会替代 PM”，而是把岗位变化拆得很具体：哪些工作已经开始被吃掉，哪些能力正在被重新定价，为什么很多人明明很焦虑，却还没真正开始转向。
 
-![](img/3d1dbff90a2fd12557a75a1473438931.png)
 
 ###  4 月 19 日
 
@@ -254,11 +241,9 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[大语言模型中的提示词缓存技术详解](https://waytoagi.feishu.cn/wiki/IXL0wgX6sivJegk9oJ3cyxUdn3b?from=from_copylink)》长时程Agent工作流中，固定的超长系统提示词在多轮对话里会被重复计算，会产生大量无价值token消耗。Prompt caching正是破解这一浪费的关键方案，能显著降低使用成本。但如果你想把它真正用好，就得先理解它在底层到底是怎么工作的，让我们来一起一探究竟！
 
-![](img/0845293fd40d967e30db21c38a0312fe.png)
 
 +   《[4.13- 4.19｜本周 AI 论文精选](https://waytoagi.feishu.cn/wiki/IVMywh0nni420vkt7E5csxrmnoh?from=from_copylink)》本周AI论文精选汇聚十大前沿突破，直指Agent科研、长时程协作、产业评测等核心方向。从全自动AI科研团队高效攻克对齐难题，到文件驱动的长时程研究框架，再到贴合真实生产的Agent评测体系，同时覆盖高性能开源模型、记忆迁移、日志自动诊断等落地技术，清晰展现了AI Agent从实验室走向产业的关键进化，极具参考与落地价值。
 
-![](img/c042af198818579f036322ef5de9855c.png)
 
 +   《[Hermes Memory系统协议P链：让AI Agent永不遗忘的隐形纽带](https://waytoagi.feishu.cn/wiki/SuUEwKVnbiLoYWk2nqVc93gwnCc?from=from_copylink)》Hermes Agent独创的P链协议，打破了AI会话遗忘困境，让跨天、跨平台的连续协作成为现实。依托会话血缘链与全文检索，AI能完整追溯历史对话、自动沉淀经验技能，还能智能压缩上下文，高效又省Token。相比传统框架与RAG，AI从一次性工具升级为懂你的长期协作伙伴，大幅提升了复杂任务的执行效率。
 
@@ -652,19 +637,16 @@ AI春晚导演
 
 # 📅 周刊与兴趣小组
 
-![](img/5e962307992c1e9112fe9d275dda7d85.png)
 
 [WaytoAGI.com 网站](http://www.waytoagi.com)
 
 内置知识库 AI 助手
 
-![](img/68aea834ea3ac780cb609efe4ce78edc.png)
 
 [B 站｜Bilibili](https://space.bilibili.com/259768893)
 
 以视频普及 AI 知识
 
-![](img/9663dd43939fa8c25b2d302e8f839a57.png)
 
 [📕](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)
 

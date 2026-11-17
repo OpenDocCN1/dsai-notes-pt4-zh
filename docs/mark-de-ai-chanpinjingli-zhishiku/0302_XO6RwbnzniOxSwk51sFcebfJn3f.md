@@ -145,7 +145,6 @@ Position-Wise Feed-Forward Network
 
 也就是下图左边部分：
 
-![](img/545ec5aaef79af6c5ae513a5adaa5837.png)
 
 （3）将向量c 通过 FC layer 得到向量d ;
 
@@ -820,7 +819,6 @@ Mask 表示掩码，它对某些值进行掩盖，使其在参数更新时不产
 
 我们来举个例子：
 
-![](img/9b500199af64e213d36ffc44bf0fae98.png)
 
 ![](img/a5764ca62ee666fb192866f5a6b36f5f.png)
 

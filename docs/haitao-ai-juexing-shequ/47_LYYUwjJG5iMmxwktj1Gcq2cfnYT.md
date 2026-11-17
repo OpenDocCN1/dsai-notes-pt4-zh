@@ -509,7 +509,6 @@ RPA端功能与Coze端基本保持一致。相比其增加了账号选择支持�
 
 ### 添加👸号
 
-![](img/10188fbd60f7e112d4fc03e8b66c8161.png)
 
 [入门实操演示.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QwUgbxxdyoMga2xsMGLcb0GCntd)
 
@@ -527,13 +526,11 @@ RPA端功能与Coze端基本保持一致。相比其增加了账号选择支持�
 
 ### 参考文章风格提取
 
-![](img/ba52ce6804f2dee3a0e86896000eb2e6.png)
 
 [写好提示词-风格提取.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HlIVbD21pobrDUxlTLJcj07xnsb)
 
 ### 自定义风格
 
-![](img/96ea6bc38232614cc98a278c45919cff.png)
 
 [账号风格设定.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GIYjb5Gnvo5JYWxVebUcYC0ynpj)
 
@@ -551,7 +548,6 @@ RPA端功能与Coze端基本保持一致。相比其增加了账号选择支持�
 
 ### 套餐升级
 
-![](img/6294db56b475cf79cc018e862e0fbdff.png)
 
 [收费介绍.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SL64bSivUoNotAxUldZcfoosn4g)
 

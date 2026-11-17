@@ -283,7 +283,6 @@ npm start
 
 +   将分析结果保存到Notion
 
-![PR审查流程](img/a24aaaa9f7bdc75556742d08c393bec1.png)
 
 ![](img/2dfc03c27d0fb22fe413af8beabf3184.png)
 

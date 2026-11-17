@@ -2,7 +2,6 @@
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/PhF9dn8FeooBdKxRxe8cNFatnQf](https://gotoaiworld.feishu.cn/docx/PhF9dn8FeooBdKxRxe8cNFatnQf)
 
-![](img/825308b319e821d1468399c679ebe418.png)
 
 ## [介绍](https://microsoft.github.io/generative-ai-for-beginners/#/translations/zh/04-prompt-engineering-fundamentals/README?wt.mc_id=academic-105485-koreyst&id=%e4%bb%8b%e7%bb%8d)
 

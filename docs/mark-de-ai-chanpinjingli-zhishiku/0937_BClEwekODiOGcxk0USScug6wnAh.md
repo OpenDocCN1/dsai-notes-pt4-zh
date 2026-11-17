@@ -184,7 +184,6 @@ Nano Banana Pro 来了！效果只能用“炸裂”来形容！
 
 图14：MaynorAI 平台首页界面
 
-![](img/fb8c9070532548e05ed2099ae5f21686.png)
 
 图15：在模型列表中选择“SaaSGemini”节点
 

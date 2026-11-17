@@ -128,7 +128,6 @@
 
 需要注意的是，如果完成注册后页面没有自动跳转，则在浏览器地址栏再次输入outlook.com 进行登录即可。登陆后邮箱页面如下：
 
-![](img/6df274658fda4d75c940b22bc21f1a7a.png)
 
 至此，我们就完成了outlook邮箱注册全流程，接下来我们将使用该邮箱完成Claude账号注册。
 
@@ -140,11 +139,9 @@
 
 [C](https://claude.ai/)[laude-Chat是一个基于Claude模型的网页](https://claude.ai/)端聊天机器人，功能定位和ChatGPT类似。点击链接： https://claude.ai/即可进入到Claude-Chat登录页面。在登录页面中输入刚才注册的outlook邮箱地址：
 
-![](img/ad8c2e41dab9b6b6dfa3d4b5383c6cdb.png)
 
 然后点击发送验证码。回到outlook邮箱页面接收验证码：
 
-![](img/86701bdc8b1fc7ae1edc6f41246034ad.png)
 
 将验证码输入到Claude-Chat注册页面中：
 
@@ -242,7 +239,6 @@
 
 再次回到主页面时即代表已经完成5刀免费额度领取：
 
-![](img/c36b57884f2469f265676f1b667162bb.png)
 
 此时我们点击右上方个人头像—>Plans&Billing，即可查看当前账户剩余额度：
 

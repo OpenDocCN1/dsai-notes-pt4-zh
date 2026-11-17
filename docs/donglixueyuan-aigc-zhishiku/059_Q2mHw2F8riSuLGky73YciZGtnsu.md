@@ -160,11 +160,8 @@ Midjourney 生成的封面图
 
 # **庄园场景**
 
-![](img/2cdc75a1c1e184b7ef3485851ff7cf1e.png)
 
-![](img/6abb730fa47baaaf81958a9ed1e02d21.png)
 
-![](img/139b38f7cb88a6c8aa284ef5f8e649ee.png)
 
 ![](img/44f1ce79025cf89c3e3265ce01777a09.png)
 
@@ -188,11 +185,9 @@ Midjourney 生成的封面图
 
 # **《蒙娜丽莎》画前**
 
-![](img/d593094b2810933e17e257ea15a72469.png)
 
 ![](img/4e329febc110b662c2fc4f6d6c32557e.png)
 
-![](img/0b3859da0996b154cceb1f639164b966.png)
 
 ![](img/ff25755d73c393c32df47c9e27ce172f.png)
 

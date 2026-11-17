@@ -38,7 +38,6 @@ a financial data platfom with {blue,gray,red,orange} color, ui,ux,8k --ar 3:2 --
 
 ![](img/448270d17d1b63466bc6c18c2ff3b6bd.png)
 
-![](img/a19b53f080c31fa282fdcdd753972e9b.png)
 
 ![](img/3ae6336a80979d391e5d224abbdbd882.png)
 

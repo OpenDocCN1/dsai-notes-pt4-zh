@@ -30,7 +30,6 @@
 
 Manus过去的路线是做一个独立App——你打开它，告诉它做事，它做完了你关掉。这个交互模式跟ChatGPT没有本质区别，还是"你去找AI"。（现在也有龙虾了）
 
-![](img/849abe7b9e2d7c3c7c7854ee2d7b169a.png)
 
 OpenClaw走了另一条路：agent住在你已经在用的聊天软件里。你不需要"打开"它，它就在你的Telegram对话列表里，跟你的朋友、家人、同事的对话窗口并列。你想跟它说话，点一下就行，跟给朋友发消息没区别。
 
@@ -152,7 +151,6 @@ Manus或者类似的独立界面完全可以承担这个角色：一个你偶尔
 
 1、Telegram原生的multi-agent管理层。 现在要在Telegram里跑多个agent，你得自己部署多个OpenClaw实例，手动配置各自的SOUL.md和技能，手动处理它们之间的通信。没有一个产品把这件事做成"开箱即用"。谁先做出来"一键在Telegram里创建一组协同agent"的产品，谁就拿到第一波用户。
 
-![](img/f4023c4dbec640bd95c94c480f4178dc.png)
 
 **2、大总管调配层。** Casey Sapp的Scout/Engine/Editor/Judge方法论是对的，但现在全靠手动编排。需要一个中间层产品，能根据用户的消息自动判断该分给哪个agent，或者需要哪几个agent协作。Greg Isenberg说的"wrapper"就是这个东西，但目前还没有好用的实现。
 
@@ -270,7 +268,6 @@ Machina（@EXM7777）说得很准确："真正的价值在于本地运行+持续
 
 **"嵌入聊天"不代表好用。** Will Cheung对比了OpenClaw和Manus，结论是OpenClaw复杂很多："OpenClaw像自建房，Manus像精装房。"他还发现OpenClaw做简单查询要5-10分钟延迟，Manus几乎即时。"聊天窗口"形态的易用性天然受限于底层配置的复杂度。——by @willcheung，2月14日
 
-![](img/8c7779fdb1cafafd55710ab35f73f8f0.png)
 
 **大多数人根本用不了。** OpenClaw维护者Shadow自己在Discord上说过："if you can't understand how to run a command line, this is far too dangerous for you to use."（如果你连命令行都不会，这个项目对你来说太危险了。）这直接质疑了"聊天窗口降低门槛"这个假设——形态上是聊天窗口没错，但背后的搭建和维护门槛很高。
 

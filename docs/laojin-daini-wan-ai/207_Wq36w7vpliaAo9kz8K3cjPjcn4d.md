@@ -632,7 +632,6 @@ curl -X POST http://127.0.0.1:8888/mcp -H &quot;Content-Type: application/json&q
 
 当然交给AI自己安装
 
-![](img/32111fd34579d98cdd7df8f27669c9c8.png)
 
 ### 安装后验证
 

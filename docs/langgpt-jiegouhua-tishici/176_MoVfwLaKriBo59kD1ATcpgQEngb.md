@@ -24,19 +24,16 @@ DeepSeek 交流群，能好好说话的进，白嫖党伸手党勿扰，发广�
 
 ## 清华大学 DeepSeek 从入门到精通——第一版
 
-![](img/88c745f50c7552abd293c6303c5c3b29.png)
 
 [清华大学deepseek从入门到精通.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RAKSbvsdqoFkxVxEZaOcKuKxn6g)
 
 ## 清华大学 DeepSeek 从门到精通——第二版
 
-![](img/6e4e77221026f4844cbbd15265d0ded5.png)
 
 [DeepSeek如何赋能职场应用？从提示语技巧到多场景应用-清华大学(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EPA0b62swomaaGx0nBqcO7JinOf)
 
 ## 清华大学-普通人如何抓住DeepSeek红利——第三版
 
-![](img/e97c3660aee091d627cceeb65a69c3de.png)
 
 [03 清华大学_第三版_普通人如何抓住DeepSeek红利.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TlhKbi81aoIuWlxRARgcaB73nFe)
 
@@ -52,7 +49,6 @@ DeepSeek 交流群，能好好说话的进，白嫖党伸手党勿扰，发广�
 
 ## 北京大学-DeepSeek与AIGC应用
 
-![](img/53ead51d8e9a377fa9ca2ad2bca4d4b8.png)
 
 [北京大学-DeepSeek与AIGC应用.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AcbVbgaD8otY1zxluSycLAkxn3c)
 
@@ -64,7 +60,6 @@ DeepSeek 交流群，能好好说话的进，白嫖党伸手党勿扰，发广�
 
 ## Deepseek v3 论文
 
-![](img/dbc7a859eae8493e8e3966db2654d57a.png)
 
 [DeepSeek_V3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M68Sb4ZBEo37GUxGAMMcLWfFnCd)
 

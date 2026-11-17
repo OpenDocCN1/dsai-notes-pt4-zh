@@ -64,11 +64,8 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 # 二、第二轮提前测试~结果反馈（少部分截图，还有很多）
 
-![](img/49981894f3fa77138071ee94dd1ad57b.png)
 
-![](img/fd5cb8cc3222adb6c703f7516bd97429.png)
 
-![](img/c6df5732f4b6faada054ba82b2460e5d.png)
 
 ![](img/db2221a1b4665ab47e88c71d7ec98a0e.png)
 

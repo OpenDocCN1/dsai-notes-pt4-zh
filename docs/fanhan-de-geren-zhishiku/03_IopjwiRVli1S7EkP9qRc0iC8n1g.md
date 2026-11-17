@@ -18,7 +18,6 @@
 
 ![](img/dd4dfb0c8122276f5f5c948b1b2b8618.png)
 
-![](img/7e9d78ceec15313e15bf9b1e1c19e33e.png)
 
 ![](img/bcd8c688a11251fb6879acc390007e02.png)
 
@@ -28,15 +27,12 @@
 
 ![](img/2f3342ba62664f92ccc89dc36247c69b.png)
 
-![](img/851f2ba74b4bd0be38c18ec210e061a7.png)
 
 ![](img/421196b08bd02febbaade1a113469496.png)
 
 ![](img/0d31a2fffffa44bef4719370729d68ff.png)
 
-![](img/e3129f06eae753b115216054011aca33.png)
 
-![](img/ad97651432185a786fc2ae174e3ff739.png)
 
 ![](img/ae8ebfe75d1ddeeda29e6f9420aa464f.png)
 
@@ -50,9 +46,7 @@
 
 ![](img/b6e1fde1f8cc148abc05c6e767c10cbe.png)
 
-![](img/09eab9968fbc4f1a8df3aba8ca832ceb.png)
 
-![](img/5e0f7bc50f0c9da0783d016b1fafd9d4.png)
 
 ![](img/3c068f591b73758256923d972513e3bf.png)
 
@@ -68,7 +62,6 @@
 
 ![](img/a0ecaed6fdbcbf10656eeb0c4b295c10.png)
 
-![](img/51d450db001f7c46fe0644eb73309ab8.png)
 
 ![](img/73bfa1962d5ecffc342284fa84eea1ec.png)
 

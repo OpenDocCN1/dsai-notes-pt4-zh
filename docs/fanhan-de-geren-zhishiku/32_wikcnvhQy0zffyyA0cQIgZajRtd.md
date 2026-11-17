@@ -14,13 +14,9 @@
 
 ![](img/42ddbf6326dcaacbc5d6e59533e070d6.png)
 
-![](img/f70acc5422fb437c59353b8bdd6cb39f.png)
 
-![](img/d3dff6513581c82ad58b2371106a8db5.png)
 
-![](img/9d743f908f39f0313a0933175566ed87.png)
 
-![](img/dd75b0aa0a2de2bfc5e6f219432f896f.png)
 
 ![](img/74047b7aaebb7f8d064e655b7696ce46.png)
 

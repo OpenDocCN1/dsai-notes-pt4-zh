@@ -16,7 +16,6 @@ In summary, this part of the course provides a practical and informative explora
 
 ## History and Background
 
-![](img/f2c507e6a72c5da069537ba2663658bc.png)
 
 ```
                Image Source: [https://medium.com/womenintechnology/ai-c3412c5aa0ac](https://medium.com/womenintechnology/ai-c3412c5aa0ac)
@@ -52,7 +51,6 @@ The "Large" aspect amplifies their capabilities. Traditional language models, es
 
 Take a look at the infographic from “Information is beautiful” below t[o se](https://informationisbeautiful.net/visualizations/the-rise-of-generative-ai-large-language-models-llms-like-chatgpt/)e how many parameters recent LLMs have. You can view the live visualization here
 
-![](img/d91603231152d5ecda39cf1a9d1e8687.png)
 
 Image source: [https://informationisbeautiful.net/visualizations/the-ri](https://informationisbeautiful.net/visualizations/the-rise-of-generative-ai-large-language-models-llms-like-chatgpt/)se-of-generative-ai-large-language-models-llms-like-chatgpt/
 
@@ -104,7 +102,6 @@ We will be diving deep into each of these methods during the course.
 
 LLMs are already being leveraged in various applications showcasing their versatility and power of these models in transforming several domains. Here's how LLMs can be applied to specific cases:
 
-![](img/429163762f8670a0f37c7b04449e2b43.png)
 
 1.  Content Generation:
 
@@ -162,7 +159,6 @@ Summary of popular LLM use-cases
 
 Understanding the utilization of generative AI models, especially LLMs, can al[so be glean](https://www.sequoiacap.com/article/generative-ai-act-two/)ed from the extensive array of startups operating in this domain. An infographic presented by Sequoia Capital highlighted these companies across diverse sectors, illustrating the versatile applications and the significant presence of numerous players in the generative AI space.
 
-![](img/3c49ec0d094bc2652ce2954ec35867d5.png)
 
 ```
                             Image Source: [https://markovate.com/blog/applications-and-use-cases-of-llm/](https://markovate.com/blog/applications-and-use-cases-of-llm/)

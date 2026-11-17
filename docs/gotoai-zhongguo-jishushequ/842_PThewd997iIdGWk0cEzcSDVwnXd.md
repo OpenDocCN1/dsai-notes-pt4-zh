@@ -74,6 +74,5 @@ A list of notebooks and articles I wrote about LLMs.
 
 ### Other
 
-![](img/849e4fe73cac6fb538d5ad13461fc8ea.png)
 
 ![](img/5956aa9fa492059655e723c789bb7bb5.png)

@@ -40,19 +40,14 @@
 
 > **同**时开启有奖征文活动：NineS AI创作技巧、案例、使用说明等等，根据内容质量奖励“字数~月卡/现金”
 
-![](img/d11be380b4c1ed221cd219aa77765bf4.png)
 
-![](img/a605e53bb0c9db7873df52e2996c1280.png)
 
-![](img/5fbcb8ee8573850d4b969ab007fea53c.png)
 
-![](img/4376f376ce6b1d133f6b005a1bfe13d2.png)
 
 ![](img/fb9e946c21f1ba72781cdfb5e1e2de0b.png)
 
 ![](img/07e21e1d65464853bea8f043ad519f9c.png)
 
-![](img/ea100023a007605d1ab79b77af35d85f.png)
 
 ![](img/0dfb195ac642d43f4ad25a8a46b14faf.png)
 

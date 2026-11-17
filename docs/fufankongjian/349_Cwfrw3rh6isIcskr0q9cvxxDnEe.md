@@ -52,15 +52,11 @@
 
 ![](img/4df5d6114923e3d79de3ff0b30ee38e3.png)
 
-![](img/5687500cdf476a91e57b8a219d907574.png)
 
-![](img/ae6812638f46496cbbd09aee9b0f7ca1.png)
 
 ![](img/cbdde4ce397eecf08416b80b31ad1a69.png)
 
-![](img/7c27c19930d6b9c9f3641fe66c529d33.png)
 
-![](img/8867a73781c0600b458d3f5e67a720db.png)
 
 ![](img/112b3ddb751305ce8b265aa065c64be6.png)
 

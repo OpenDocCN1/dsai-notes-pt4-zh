@@ -64,7 +64,6 @@ By [薛志荣](https://www.xiaohongshu.com/user/profile/556e6d72e58d132ebb6fc920
 
 你只要输入一个问题，它就能拆解成若干问题并通过思维导图显示
 
-![](img/4223ec5ea762857c8ca0cce2b3b843ed.png)
 
 [2024-10-05_22-55-16.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RAekbyf0PoLzFRxFCCJcZ2oCnUf)
 

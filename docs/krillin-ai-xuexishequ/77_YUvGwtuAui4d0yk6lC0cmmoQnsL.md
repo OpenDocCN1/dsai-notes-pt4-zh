@@ -75,7 +75,6 @@
 
 ![](img/b02f7fdb8b3be52903305d27c6b8d654.png)
 
-![](img/49101e2a0d880f1055b3110419c8ca78.png)
 
 ![](img/8392fd0d175292297f84d03b5629b2a0.png)
 
@@ -277,7 +276,6 @@ AI对话栏：这是最主要的，AI在这里接受你的命令，哈哈哈
 
 顾名思义，这里是设置全局的AI规则，就相当于你给AI约定了一个国际法，不管AI在哪个项目里，都要优先遵循这些规则，在下图中的代码栏里，复制粘贴后面我提供的规则：
 
-![](img/f52d39e16a9efc94d8604951b0363e83.png)
 
 具体的命令规则可以复制后粘贴进去，粘贴后注意点保存   左上角的文件-》保存，或者Ctrl+S（苹果是Cmd+S）：
 
@@ -995,7 +993,6 @@ Pro版的DeepSeek R1/V3，需要充值余额，相当于你得充钱，但可以
 
 ### 第二，使用Windsurf打开它
 
-![](img/750f4a6f9fe44b6ff04b4c8a4a7b1ac7.png)
 
 打开后是上面这个样子。
 
@@ -2194,7 +2191,6 @@ TABLE_ID="***" ，这里对应table=后面的黄色部分
 
 generate_video_captions_sync插件名称是：字幕获取
 
-![](img/497f2602c0e1a0fc3c6b4e6ec77e5f77.png)
 
 ![](img/a341c2f5e81033bcb210ffe721458bbe.png)
 
@@ -3029,7 +3025,6 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 ### 第一，先说说这是一款什么产品
 
-![](img/0e6717859883464fa0e9081dd16e3976.png)
 
 ![](img/275dd8c621d4cb3eff4232257acca2b5.png)
 
@@ -3055,7 +3050,6 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 Windsurf完成代码开发，🛰️开发者工具进行调试，调试OK后直接上传到🛰️小程序后台：
 
-![](img/35a333fce3af024c39feb8f4620c17e8.png)
 
 在Windsurf生成部分代码后，可以在🛰️开发者工具里将文件夹（也就是Windsurf存放代码的文件夹）导入：
 
@@ -3087,7 +3081,6 @@ Windsurf完成代码开发，🛰️开发者工具进行调试，调试OK后直
 
 在云开发里，有几个重要的模块：
 
-![](img/a21c6f6292571d04ef1f6f838de1fb32.png)
 
 ![](img/bafb61c086aa88d296d6fc8db1b4f222.png)
 

@@ -2,7 +2,6 @@
 
 > 来源：[https://langgptai.feishu.cn/docx/IzZkdj6IUofQfPxUCwPcI8g6nqd](https://langgptai.feishu.cn/docx/IzZkdj6IUofQfPxUCwPcI8g6nqd)
 
-![](img/e21b18b4e533069d15c9a2b4e4bb3ff3.png)
 
 ![](img/cbfba1648992bdfd22fdd2f864fe94b7.png)
 

@@ -16,11 +16,9 @@
 
 注册完成后，点击个人中心，点击绑定阿里云账号：
 
-![](img/42f4c00f72f6c874a384ecd59dc8b917.png)
 
 在跳转页面中选择登录阿里云，未注册阿里云也可以在当前页面注册：
 
-![](img/9c2a770e36078f8d70919663cb2dab0d.png)
 
 点击授权：
 
@@ -42,19 +40,15 @@
 
 即可接入在线NoteBook编程环境：
 
-![](img/05357c63649f179647b6a7d2dc13eb10.png)
 
 当前NoteBook编程环境和Colab类似（谷歌提供的在线编程环境），可以直接调用在线算力来完成编程工作，并且由于该服务由ModelScope提供，因此当前NoteBook已经完成了CUDA、PyTorch、Tensorflow环境配置，并且已经预安装了大模型部署所需各种库，如Transformer库、vLLM库、modelscope库等，并且当前NoteBook运行环境是Ubuntu操作系统，我们可以通过Jupyter中的Terminal功能对Ubuntu系统进行操作：
 
-![](img/bc82fc49957cf829c7ab351adbffb6ad.png)
 
 进入到命令行界面：
 
-![](img/14de8f6974d9082205e773526eb714c9.png)
 
 输入nvidia-smi，查看当前GPU情况：
 
-![](img/d43b47c8bce3fec4dd316d5dc8eb3869.png)
 
 该功能也是我们操作远程Ubuntu系统的核心功能。
 
@@ -62,11 +56,9 @@
 
 此外，ModelScope NoteBooko还可以一键拉取ModelScope上发布的模型或项目，直接在云端环境进行运行和实验。这个点击+号开启新的导航页：
 
-![](img/47c8a6b5595c00f7cfdf984b49706f23.png)
 
 并在导航页下方点击模型库：
 
-![](img/6780b18a156dd5c945796e32a9f84bcd.png)
 
 即可选择任意模型文档，进行尝试运行：
 
@@ -74,7 +66,6 @@
 
 例如我们点击选择CodeQwen1.5-7B-Chat，一个基于Qwen1.5-7B微调得到的代码模型。点击即可获得一个新的Jupyter文件，包含了该模型的说明文档和运行代码（也就是该模型在ModelScope上的readme文档）：
 
-![](img/47ace84119a54c44c07170ec9727d696.png)
 
 而如果想要下载某个Jupyter文件到本地，只需要选择文件点击右键、选择Download，即可通过浏览器将项目文件下载到本地：
 
@@ -675,7 +666,6 @@ image1 = Image.open(BytesIO(response.content)).convert(&#x27;RGB&#x27;)
 image1
 ```
 
-![](img/888e1fd66ee51d9dc69df5ecf5763613.png)
 
 ```
 # 使用聊天模板应用分词器，并生成输入张量

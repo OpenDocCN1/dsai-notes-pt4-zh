@@ -26,11 +26,9 @@
 
 [391405673044058121.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ARYqbERNeo5bG2xpOHjcFFbJnAh)
 
-![](img/3bc7487adc0ddda22ee8628516031481.png)
 
 [392076401749876745.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ToqabJOyfo70i7xLgy8cBGWfnmd)
 
-![](img/8aa1cdb2c30d22b44ba168014382bce9.png)
 
 [392083059473502208.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZpYWbe2cZopFO9xmFhLcZbSinuc)
 
@@ -42,7 +40,6 @@
 
 [392132587740360705.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LDa3bsTS0oIq2dxNdXDczXqxn7e)
 
-![](img/2d4bbe14e65f8e391c1fbdcf9e39906c.png)
 
 [392141196746465287.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VKtqb2t7yoLEXcxvItWcBbUBnog)
 
@@ -58,7 +55,6 @@
 
 [392157786946830339.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JYStb3cnNolvDHxNEWic6Ohqnnf)
 
-![](img/be8b5a40b41f13db321644e781fcf1bf.png)
 
 [392173594406182913.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fod7bBdLko9AC0xqYqac8dNAnDd)
 
@@ -74,7 +70,6 @@
 
 [392193665195216905.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RF7zbN6jeorWJQxl2WzcqhGNnFf)
 
-![](img/36b56474ba761dba31efe93dad2672bb.png)
 
 [392197643832299520.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DNtAbYyZDosiYZxALCHcLFgontc)
 
@@ -94,7 +89,6 @@
 
 [392205352723968002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AQA5b8F6po3hRhxfuk6cWl07nZb)
 
-![](img/64d2fd76dc7474ebfbd102a3fc70dc27.png)
 
 [392205407182811143.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WlDnbH5aRoUSDwxLrWocbGtXnIg)
 
@@ -106,7 +100,6 @@
 
 [392208134961012745.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BYbobYlp4oIwHlxufVhcNiqunHh)
 
-![](img/e013e5acf77356935db918310febe86c.png)
 
 [392210604428800003.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KBHCbHdd2o9NksxNfiAcagLWnaf)
 

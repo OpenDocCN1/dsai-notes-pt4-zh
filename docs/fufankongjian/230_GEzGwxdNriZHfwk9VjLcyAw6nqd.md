@@ -91,7 +91,6 @@ mcp-get-weather --api-key YOUR_OPENWEATHER_KEY
 
 +   先创建MCP工具
 
-![](img/278643da45c6a6fb544136ee1246fd0e.png)
 
 +   然后进行调用测试
 
@@ -144,21 +143,17 @@ OpenAI Codex 的出现，为多个领**域的工作**流程带来变革。以下
 
 此时打开Codex，点击环境——创建环境，就能codex-debut-test项目了：
 
-![](img/ad0378185ae61fb20c0b418c5390e3b5.png)
 
 然后选择codex-debug-test项目，点击创建环境：
 
-![](img/0b08bbc4ad8d9bfa315f69bc1af62966.png)
 
 创建成功：
 
-![](img/67f6c72cd5cbab26f3fe07d83d8c3d9a.png)
 
 ### 4.4 进行codex-debug-test项目对话
 
 接下来回到codex主页，选择codex-debug-test项目，并简单询问项目功能（注意点击询问，而不是验证码），开启codex使用：
 
-![](img/cb3764ae4b87e1e1ee23d6f8a4d98611.png)
 
 此时codex会先创建一个任务，点击任务就能看到codex正在创建沙盒环境容器，并查询项目核心功能：
 
@@ -166,7 +161,6 @@ OpenAI Codex 的出现，为多个领**域的工作**流程带来变革。以下
 
 在执行每个任务时，codex都会尽量遍历更多的代码和README文档，因此每个任务，哪怕是比较小的任务，都需要花费一小段时间。查询结束后回答结果如下：
 
-![](img/3ccd25c5ba2c8f349ee2a3d648234a31.png)
 
 关于其他任何项目问题，也都可以直接提问。
 
@@ -178,11 +172,9 @@ OpenAI Codex 的出现，为多个领**域的工作**流程带来变革。以下
 
 +   启动运行：
 
-![](img/553daa8e21c273e6853bbcb3ad9a8e1c.png)
 
 +   完成代码和README文档修改：
 
-![](img/ec3216eaee1f3546fbb327a5d77670ac.png)
 
 +   本地测试，接下来尝试将Codex修改后的代码直接copy覆盖原始项目代码，在本地进行测试：
 
@@ -209,13 +201,10 @@ OpenAI Codex 的出现，为多个领**域的工作**流程带来变革。以下
 
 最后，当我们修改完代码并且本地测试无误后，即可进行代码推送，创建PR或者创建PR草案了：
 
-![](img/98d1d00934f61516cd7683438befee0c.png)
 
 然后就能在项目主页中看到Codex编写的PR：
 
-![](img/1dc0a7cd1ab177bb7f6507ee0dbae911.png)
 
-![](img/322e1ca66812e6b2424e430f836ed0a9.png)
 
 仔细看到这里的小伙伴，九天老师还为大家额外准备了一个单独的GitHub项目，用于进行CodeX的功能测试！
 

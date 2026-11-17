@@ -150,11 +150,8 @@
 
 ### 内容资源整理分享
 
-![](img/235ffb7d2c19660538836077935967f9.png)
 
-![](img/ed3e4ba1b9b6e33de51a21dc78a24670.png)
 
-![](img/9970d4b0baee8ae68d60a9e2e4215331.png)
 
 ![](img/224227365b885dbcaa7fbe2e33b25f34.png)
 
@@ -340,7 +337,6 @@
 
 ### 在特定的多维表格模板中进行细致的爆款拆解。
 
-![](img/d3383a42f063bc1962fa6002776cdd06.png)
 
 ![](img/cc8ecb27c624a66b8b4159e1dc4830de.png)
 

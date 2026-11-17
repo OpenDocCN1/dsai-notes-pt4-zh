@@ -112,23 +112,19 @@ https://qwenlm.github.io/
 
 https://qwenlm.github.io/publication/
 
-![](img/67ad7fea6cc00d4e109de4e6065d2ec5.png)
 
 ## 2.Qwen GitHub Blog 技术博客
 
 https://qwenlm.github.io/blog/
 
-![](img/e3497fa79d522cfe55365904697cfa8c.png)
 
 ## 3.Qwen Chat体验试用
 
 https://chat.qwen.ai/
 
-![](img/fca41c74bd9970b91354d72a79aa0333.png)
 
 # 三、Qwen HuggingFace
 
-![](img/dcb0e6ffe791c679f00d866f6dea5d29.png)
 
 https://huggingface.co/Qwen
 

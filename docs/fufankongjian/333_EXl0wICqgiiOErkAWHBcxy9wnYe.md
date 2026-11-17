@@ -124,17 +124,14 @@ AutoDL部署是最简单也最轻量级的部署方法， AutoDL部署指的是�
 
 注册完成之后点击登录，即可自动跳转到包含了DB-GPT镜像的可租用的在线算力主页（AutoDL算力市 场）。
 
-![](img/952513fcaab2fad880fdce4615bd90ec.png)
 
 我们可以直接在算力市场租赁运行DB-GPT所需算力，不过在此之前，我们需要先为账户充值。考虑到后 续需要租用4090GPU服务器，且需要Intel CPU，而4090单显卡服务器约2.5元/小时，这里可以根据自己 实际需要使用的时常选择充值金额。
 
 鼠标移至右上方账号昵称，即会弹出充值选项，点击充值：
 
-![](img/fcb59f8ce6f28ac51ccdc4150da149c3.png)
 
 选择金额和支付渠道，扫码充值即可。首次充值时会提示进行个人身份绑定，可以选择支付宝刷脸进行 认证：
 
-![](img/84636de093ac5250cbbf6334159f57f2.png)
 
 [充](https://www.autodl.com/create?image=eosphoros-ai/DB-G)[值后回到包含GB-GPT镜像的](https://www.autodl.com/create?image=eosphoros-ai/DB-GPT/dbgpt:v0.5.1)[算力市场： https://www](https://www.autodl.com/create?image=eosphoros-ai/DB-GPT/dbgpt:v0.5.1).autodl.com/create?image=eosphoros-ai/DB-GPT/dbgpt:v0.5.1，选择地区与4090GPU服务器。需要注意的是，不同时间段内、不同地区包含
 
@@ -142,9 +139,7 @@ AutoDL部署是最简单也最轻量级的部署方法， AutoDL部署指的是�
 
 分，确认当前在线服务器会预安装DB-GPT 0.5.1版本镜像：
 
-![](img/f2d969549b60711a23e5ecc843b2bf16.png)
 
-![](img/288c9b2d3c88d953f04b2659dd487024.png)
 
 创建完成后，页面会自动跳转到当前账号的在线服务器管理页面，这里可以看到刚刚租赁的服务器正在 开机中：
 
@@ -558,7 +553,6 @@ OpenAI的API-KEY也是一个字符串，接下来以 YOUR_API_KEY 表示OpenAI�
 
 就会自动跳转到基于在线服务器的Jupyter编程环境中：
 
-![](img/fa12b1fa358a322b360027b77163bbb9.png)
 
 这里我们点击Python 3进入到编程环境，并输入如下命令完成modelscope库的安装
 
@@ -595,11 +589,9 @@ https://www.modelscope.cn/qwen/Qwen1.5-7B.git
 
 下载完成后我们可以在 /root/.cache/modelscope/hub/qwen/Qwen1     5-7B 看到下载的模型文 件：
 
-![](img/5d6174fde446e605251f79bc5207aa3c.png)
 
 以及模型文件具体内容：
 
-![](img/d9bd1d462f51388341bc570fe8dbdcaa.png)
 
 接下来我们需要将模型文件移动到DB-GPT的模型文件中，便于之后DB-GPT直接运行该模型。 DB- GPT原始模型文件位于 /root/DB-GPT/models 中：
 

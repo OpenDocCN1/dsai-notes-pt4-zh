@@ -90,7 +90,6 @@ GPT 制作 "镜子画布"小游戏
 
 生成结果
 
-![](img/56db73884ce66c8413ecc3f481271166.png)
 
 提取绘画提示词
 
@@ -116,7 +115,6 @@ GPT 制作 "镜子画布"小游戏
 
 生成结果
 
-![](img/d3d8ebfc6b016c0989b8d5cb86ca19e4.png)
 
 ###  **2、“田字格"辅助线模式 **
 
@@ -193,7 +191,6 @@ final_img.save(final_img_path)
 final_img_path
 ```
 
-![](img/5ef480eec6632758ca0f3fc0cda1ad50.png)
 
 #  **三、提示词编写测试 **
 
@@ -425,19 +422,15 @@ final_img_path
 
 ###  **1、原图 **
 
-![](img/26695824a7e3d240cc09b685890cfb1b.png)
 
 ###  **2、“橡皮擦”难度 **
 
-![](img/957fd618ee1d50273a0c4ed49bc5c470.png)
 
 ###  **3、“田字格"辅助线模式 **
 
-![](img/7a69387058a732636102015c50fc020c.png)
 
 ###  **4、“描红” 辅助线模式 **
 
-![](img/ae88af1f25c8a6ab24ff04ed963e6eea.png)
 
 #  **四、GPTs 使用链接 **
 
@@ -449,15 +442,12 @@ https://chat.openai.com/g/g-KNNVk0KgA-hai-zi-wang-xi-lie-jing-zi-hua-bu-xiao-you
 
 ###  **1、原图 **
 
-![](img/8c7c71f5d9ffc19f322c6aac50e54949.png)
 
 ###  **2、“橡皮擦”难度 **
 
-![](img/e92e2acd1e49cd63dcad64eb986124ab.png)
 
 ###  **3、“田字格"辅助线模式 **
 
-![](img/85f960c615cc3f4bad787c25afd9853f.png)
 
 ###  **4、“描红” 辅助线模式 **
 

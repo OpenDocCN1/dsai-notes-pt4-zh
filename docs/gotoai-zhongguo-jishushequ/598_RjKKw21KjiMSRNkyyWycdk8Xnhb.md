@@ -93,13 +93,11 @@ vLLM 专注于 “大模型推理加速”，通过创新的内存管理和计�
 
 https://github.com/vllm-project/vllm
 
-![](img/5fbff93ed7357d6fc50253788b11b921.png)
 
 ## vLLM Docs文档库
 
 https://docs.vllm.ai/en/latest/
 
-![](img/caf8cc5a6e45f41fd92a18d98082f363.png)
 
 ## vLLM Blog
 

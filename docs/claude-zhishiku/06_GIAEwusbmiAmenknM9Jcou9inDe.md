@@ -72,7 +72,6 @@
 Cookie就是，sessionKey=sk-ant-sid01XXXXXXXAA这一串，有没有双引号号和逗号无所谓，不影响
 关于Cookie如何获取，可以参考别的教程
 
-![](img/12c2c082fc66880faa71d309d03ae4f2.png)
 
 ![](img/9d531aaa89786cc0c3f653422beef449.png)
 
@@ -90,7 +89,6 @@ Cookie就是，sessionKey=sk-ant-sid01XXXXXXXAA这一串，有没有双引号号
 
 1.  先点击那个红色的插头，API选择聊天补全，聊天补全来源选择OpenAI
 
-![](img/6625616f007ac02fcec55cff50c85b07.png)
 
 1.  点击展开API的配置，然后填写代理服务器 URL和代理密码，那个OpenAI API 密钥不用管
 代理服务器 URL就是你的ClewdR地址，一般是前面的http://127.0.0.1:8484/v1

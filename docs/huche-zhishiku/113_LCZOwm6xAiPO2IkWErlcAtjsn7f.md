@@ -34,11 +34,8 @@ Create THREE cohesive sprite sheets.
 
 > 曾老师用即梦试了试，由于即梦的提示词有 800 字数限制，无法完整使用上面的所有内容。
 
-![](img/81e7451ad7de68f734ad67230cc1339c.png)
 
-![](img/aa930be50cf71aed8c3790c084e2d2eb.png)
 
-![](img/5fa7a645a70f1c073615ed48638ddbe7.png)
 
 ![](img/839c85de66bb54b4f8e84eb3fbc0763e.png)
 
@@ -46,11 +43,8 @@ Create THREE cohesive sprite sheets.
 
 > https://labs.google/fx/tools/image-fx
 
-![](img/f14ba33bdad26818945ef4186343b999.png)
 
-![](img/b16ca460cefaf00187f5ccae8f49bf6d.png)
 
-![](img/a7559d718c2f68591b71411660d41bea.png)
 
 ![](img/6a19d548bf3c9be5acba9f4a1b69a925.png)
 

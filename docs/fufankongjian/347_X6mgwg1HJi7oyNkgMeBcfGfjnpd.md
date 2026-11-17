@@ -814,17 +814,14 @@ _ = model.generate(
 
 +   HuggingFace数据集主页：https://huggingface.co/?activityType=all&feedType=following&trending=dataset
 
-![](img/c7d50482c781eb9c7617d4df5d287655.png)
 
 其中右侧都是目前最流行的数据集，目前排名第一的是英伟达的Nemotron-CrossThink数据集，该数据集用于训练英伟达最新开源的号称最强开源推理模型的Llama-Nemotron，涵盖物理、法律、社会科学、经济学等多个领域的问答对，采用多项选择题和开放式问答格式，旨在提升模型的通用推理能力。而排名第二的OpenMath数据集，则是我们接下来用于微调Qwen3模型的数据集。
 
 +   魔搭社区数据集主页：https://www.modelscope.cn/datasets
 
-![](img/b492d3e1a52051c8e16b8226cd448005.png)
 
 其中关于中文满血DeepSeek-R1模型蒸馏数据集，是非常高质量的可以用于训练模型中文推理能力或者模型蒸馏的数据集。
 
-![](img/c0280faa8a3b28b8665141a57440e18d.png)
 
 在Part 3中我们已经详细探讨了Qwen3模型在进行数学能力微调时的数据集构造思路，并介绍了用于进行微调的数据集基本情况。接下来我们尝试下载OpenMathReasoning-mini和FineTome-100k数据集，并进行微调数据集的拼装。
 

@@ -10,7 +10,6 @@ Headquartered in Vancouver, B.C., we acknowledge we are on the unceded and ances
 
 https://hubpilot.digitalsupercluster.ca/
 
-![](img/5bea44edaa2fdaaa8f28577d85077ba0.png)
 
 https://hubpilot.digitalsupercluster.ca/
 

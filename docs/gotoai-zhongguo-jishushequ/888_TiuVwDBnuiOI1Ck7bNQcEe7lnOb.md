@@ -58,7 +58,6 @@
 
 ![](img/82356abcb71684520558be39f3515b7d.png)
 
-![](img/2397cac14e8cca9edf87cfef977827df.png)
 
 ![](img/882573b1251f4ee3fd4d6ce1b91a70df.png)
 
@@ -72,9 +71,7 @@
 
 ## 中国航发集团
 
-![](img/041992deeb6598fa6339e52783cf2e0d.png)
 
-![](img/942cd41666c670e3a909b864cdf59fe3.png)
 
 ![](img/d814bbbc703937f3f25517e789bf2c22.png)
 
@@ -88,7 +85,6 @@
 
 ## **广东广电网络**
 
-![](img/3161852dfd4f4e2b6026ba3281dca16b.png)
 
 ![](img/8bc30e7558d9bc99370464c20510fb13.png)
 
@@ -122,11 +118,9 @@ https://science.hbut.edu.cn/info/1050/4081.htm
 
 ![](img/4222126ebc599191d2f53b26e255e976.png)
 
-![](img/4378e696d791a580aa43f7978c286833.png)
 
 ## **香港都会大会**
 
-![](img/39fee97a533a08e0f5eaf0efa7a9896b.png)
 
 ![](img/7ad441d264c51cb3f1490ee662e382e9.png)
 
@@ -154,9 +148,7 @@ https://science.hbut.edu.cn/info/1050/4081.htm
 
 ![](img/d823412c3a9bef42bd713a109b599dc1.png)
 
-![](img/d9699f57481e22c75feee86661857739.png)
 
-![](img/21807c8c74677ad168a533d3ed5d0751.png)
 
 ![](img/4a5072a18304459788b5e43d96fde939.png)
 
@@ -166,11 +158,8 @@ https://science.hbut.edu.cn/info/1050/4081.htm
 
 ![](img/e154510bc05f9d5195de0ddca94045d5.png)
 
-![](img/b02b105d2e5ec9180bca8c6ad00ba348.png)
 
-![](img/3460b5e416e2b4064ed0810a1057ad76.png)
 
-![](img/a275c533ca3ba1d76d88a9e8c2aca8f5.png)
 
 ![](img/027b97578326562036acac692deb76c3.png)
 
@@ -180,7 +169,6 @@ https://science.hbut.edu.cn/info/1050/4081.htm
 
 ## 湖北省信息技术协会
 
-![](img/60e2230f2d5151aa7ae594d6160cbdb1.png)
 
 ![](img/1685049d3da29b11f8ce727e30b41618.png)
 
@@ -202,7 +190,6 @@ https://science.hbut.edu.cn/info/1050/4081.htm
 
 ![](img/3a7ab56730ccef654e389aa1d83f07df.png)
 
-![](img/bd66938af30b6323baffd005bb9a0d6a.png)
 
 ![](img/ddf7535d5bd6db9c47b9b87af2c7cf49.png)
 
@@ -212,7 +199,6 @@ https://science.hbut.edu.cn/info/1050/4081.htm
 
 ![](img/a4a3434c8d9295a42367004f6ce0254c.png)
 
-![](img/d366527f55da6f8e6302e19d52e96253.png)
 
 ![](img/156914ed2d8a5791e3b4205b3949e773.png)
 
@@ -226,7 +212,6 @@ https://science.hbut.edu.cn/info/1050/4081.htm
 
 ## 深圳半导体企业
 
-![](img/b79d1d8d8bad2f89ad6e586fea36f0b9.png)
 
 ![](img/716b8d7f4e40c1ea595131048e6ce80d.png)
 
@@ -294,7 +279,6 @@ https://science.hbut.edu.cn/info/1050/4081.htm
 
 ![](img/2962be014860f51337db6521dd88c444.png)
 
-![](img/8d41d6fd39b433b36a8ebac8503c8dfc.png)
 
 ![](img/375a1903f17058321aabc6554d9bef87.png)
 
@@ -316,7 +300,6 @@ https://www.yb.cdut.edu.cn/info/1074/4259.htm
 
 ## 广东小家电巨头-中山伊莱特电器集团
 
-![](img/6cb7bb3cf73580f84dce573bdffabc28.png)
 
 ![](img/206300e2325936839e62bc2258da9c46.png)
 
@@ -340,7 +323,6 @@ https://www.yb.cdut.edu.cn/info/1074/4259.htm
 
 ## **广州山水彼得股份有限公司**
 
-![](img/5d51c22fb35a94dd5eb7f464de3e622a.png)
 
 ![](img/43fac26aa66063c0913daeb9be0055c8.png)
 
@@ -366,13 +348,9 @@ https://www.yb.cdut.edu.cn/info/1074/4259.htm
 
 ![](img/88c9f935770552754c61fa8d0754b47b.png)
 
-![](img/0a6892b3c832b0c3d3955cb405220225.png)
 
-![](img/625be14dffdfcb62e9bcb08afe31ab9b.png)
 
-![](img/170d227845eee40e72fa8dc37c5b5462.png)
 
-![](img/e5e074fab2e9c727f998810105fdfe34.png)
 
 ![](img/e03970a1a3103d8f499f99d496b8bdad.png)
 
@@ -406,21 +384,16 @@ AI座谈会
 
 产业服务中心
 
-![](img/877752b157ad4a195f5e373d48ff81c5.png)
 
 ## 广东技术师范大学
 
-![](img/37e58f62538ad00e038b3f541e2cdeec.png)
 
 ![](img/e3d48a8ff65561f5ed36f001f98a3bce.png)
 
 ## 湖南大学
 
-![](img/28819c4681b5e36ef80fd70ad8826891.png)
 
-![](img/dfeb49c1d8485397a262101e41f1a840.png)
 
-![](img/b67c1c2ccc87fc8d4a9b4f421365b1ce.png)
 
 ![](img/7c91124a3662788e7725c41746291b55.png)
 
@@ -432,11 +405,8 @@ AI座谈会
 
 ## 湖南化工职业技术学院
 
-![](img/ad098f96fd5b15db36ccd16cc96576aa.png)
 
-![](img/e78a7de472f5b41ac27c2beb95dd4dc6.png)
 
-![](img/32055af5888fedfae9a939b86e70988e.png)
 
 ![](img/3754019c0b54c612aa39ef118bc27f9b.png)
 
@@ -446,11 +416,9 @@ AI座谈会
 
 ## 湖南长沙环境保护职业技术学院
 
-![](img/7f70ff7d958947cc66e436209f8c357f.png)
 
 ## 湖北职业技术学院
 
-![](img/3ad11464a0e130c5ac160c6d8456a967.png)
 
 ![](img/338f68383ef602855cc5b8eab94f9a17.png)
 
@@ -468,7 +436,6 @@ AI座谈会
 
 ## 广州黄埔区高新企业
 
-![](img/4fc93060d414378773e0a43ff91f3073.png)
 
 ![](img/3c356f3517f7313cc8f58616a8d67434.png)
 
@@ -482,7 +449,6 @@ AI座谈会
 
 ## 深圳光峰科技
 
-![](img/7cbef858d7c8293d90da57cb98839cf2.png)
 
 ![](img/3a34ef3d993ebbd11a206ecc010e4cb1.png)
 
@@ -518,15 +484,10 @@ AI座谈会
 
 ## GotoAI走进首届广州智算产业大会
 
-![](img/fea65e9129d2c999a027f71862e20406.png)
 
-![](img/394bf45ecaee809d080c8a69181b8c88.png)
 
-![](img/47b06c0c818b38e3de1bce7a9a6ae951.png)
 
-![](img/6f1bc5163295c95530111fe9dda36a36.png)
 
-![](img/1d924c8d7fba3fefce7bf2eff8493493.png)
 
 ![](img/60f977dd0fda3778054f264f854d43f6.png)
 
@@ -536,7 +497,6 @@ AI座谈会
 
 ![](img/445480a421f0f22e593be894f37b5c2a.png)
 
-![](img/4551ce3385b1b934def02c261be0ec92.png)
 
 ## GotoAI成为粤港澳大湾区人工智能产业发展联盟AI+教育专家委员会
 
@@ -546,7 +506,6 @@ AI座谈会
 
 ![](img/7b73a904e08a6960a77c392a8e04e4c9.png)
 
-![](img/c05285c81d4c5089a0c29018e5c5b689.png)
 
 ![](img/63e387acd95374b8c8f5511988fe5eb2.png)
 

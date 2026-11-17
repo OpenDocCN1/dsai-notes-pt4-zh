@@ -12,7 +12,6 @@
 
 通过自定义风格功能，用户可以调整Claude的回答，以匹配自己的沟通偏好、语气和结构。不论是开发者编写技术文档、市场营销人员制定特定的品牌指南，还是产品团队规划详细的项目需求，Claude都能适应用户的写作风格。
 
-![](img/2b07b523616b3b1d77f08bce01d7cf66.png)
 
 [6ca179cd03e0dcd9e0c98a7005305a35a94ebefa.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DU19bqG1WotuZmx5nDYctWSknJc)
 

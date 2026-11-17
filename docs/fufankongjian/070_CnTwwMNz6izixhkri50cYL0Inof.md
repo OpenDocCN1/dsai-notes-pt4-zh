@@ -48,7 +48,6 @@
 
 **DeepSeek V3.1**
 
-![](img/659565b9cf403cf1d6fc18d41bb5237b.png)
 
 [2025-08-19 19-54-09.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KkrXbxcXgo8mLcxzenjcQJwxnxb)
 
@@ -107,7 +106,6 @@
 
 **DeepSeek V3.1**
 
-![](img/43d2ec5217fb3e649f3192e3d882d8f7.png)
 
 [2025-08-19 19-58-36.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HiPJbr3ySo8jU0xT1iPcU8uEnfe)
 
@@ -153,7 +151,6 @@
 
 在以往**的测试中**，只有GPT-5模型和Claude 4.1 Opus能够全自动自主处理复杂问题而没有bug，而当我们将基座模型切换为DeepSeek V3.1模型之后，无论是用户意图识别准确率、还是检索关键词提取的准确率，无论是调用Agent的准确率，还是长文档编写性能，都得到了显著提升。可以说DeepSeek V3.1模型的Agent性能也同样是和Claude 4.1 Opus相差无几。
 
-![](img/7a2cfaac338e192c2dc69e1ec61af01f.png)
 
 [2025-07-28 19-22-37.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EhVobUxz1oIPQjxXFE8crbFQnVg)
 
@@ -190,7 +187,6 @@
 
 **Claude 4.1**
 
-![](img/ba3cc7710def17b392602cc35f6a395b.png)
 
 [2025-08-08 14-08-59.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HpNGbLSM3oOpaSxDTwBcWk7qnah)
 
@@ -211,7 +207,6 @@
 
 **GPT-5**
 
-![](img/12c308f8e0acd8a7972a8028446db8e1.png)
 
 [2025-08-08 14-14-02.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GeHBbhB06oedwqx2X4GcyVWZnXe)
 

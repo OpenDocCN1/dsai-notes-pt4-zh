@@ -963,7 +963,6 @@ from transformers import RobertaConfig, RobertaModelWithHeadsconfig = RobertaCon
 
 微调的特点就是可以在大量标记的数据集上训练，这比prompt中提供的少量例子的方式（ few shot） 能 够更好的 提升模型效果，从而提高下游任务的表现（内容和风格）。 另外，由于模式已经被学习到模型，因此，prompt上就可以精减一些，不需要再携带例子，从而节省token，并且也能获得更快的响应。
 
-![](img/0313cf2883b4beb45b1b2c51afaa0a31.png)
 
 ![](img/50d07423de2a6266e09895fc8b633c5e.png)
 
@@ -1515,7 +1514,6 @@ GPU 一般在不同精度计算上有不同的指标。如图：
 
 国外有人做过一些实际评测，下面是所有GPU的原始相关性能图表。我们可以看到，H100 GPU的8位性能与针对16位性能进行优化的旧显卡存在巨大优势。
 
-![](img/2cf07181eeaa69b448253f7c3dd4d081.png)
 
 再结合售价来看，RTX系列产品性价比更高。下图是所有GPU的每美元性能图表，按照8位推理性能排序。
 
@@ -2192,7 +2190,6 @@ b）设备的类型，即是服务器设备，个人电脑，还是边缘嵌入�
 
 前文对模型服务层做了简单的分类，基于封装程度不同，有大量的框架和工具，笔者结合目前趋势，在每个类别中挑选了几个常见的项目和大家分享，它们各有特点，将从内向外一一介绍，最后最后给出一些选型建议以供参考。
 
-![](img/83e5812a774ed1ee587809112a39b2fc.png)
 
 **模型服务层相关工具和框架 **
 
@@ -2568,7 +2565,6 @@ TensorRT可以直接解析某些框架（如PyTorch、TF）的模型或通过 ON
 
 另一方面，也在不断完善自己在大模型层面的技术，特别是大模型推理。最近9月，英伟达将TensorRT的深度学习编译器、FasterTransformer的优化内核、预处理和后处理以及多 GPU/多节点通信，封装在一个简单的开源Python API中并且搭配硬件（GPU H100等）进行了一体优化，形成了产品级的大模型推理的方案TensorRT-LLM。TensorRT-LLM提供了一个易用、开源和模块化的Python应用编程接口，不需要深入的C++或CUDA专业知识，能够部署、运行、调试各种大语言模型，还能获得顶尖性能表现，以及快速定制化的功能，其在GPT-J 6B的推理性能较A100提升了8倍。在LLaMA2上提升了4.6倍。不得不说，软硬一体优化是英伟达独有的优势。
 
-![](img/a05233d5042c9717a2d08877eef481ae.png)
 
 ![](img/1e45640fa50870d4502c5679523a46a2.png)
 
@@ -3781,7 +3777,6 @@ INSTRUCTIONS:You are a customer service agent tasked with kindly responding to c
 
 未使用Least-To-Most方式，text-danvnci-003回答错误。
 
-![](img/f25a6b01f638a99edfa017ab24537574.png)
 
 采用该方法，首先诱导提出子问题：
 
@@ -4448,7 +4443,6 @@ Please draft the job description using the format of this existing job descripti
 
 5. Format
 
-![](img/4b623a532da1c22ec917cf32b8b9fa8a.png)
 
 为了便于阅读或者编程使用，也可以增加一些格式要求，让大模型以某种指定的格式输出。比如表格。在本例中，我们要分析即将去秘鲁旅行的典型菜肴的价格，我要求它向我展示一张表格，其中包含游览地点、典型菜肴及其价格等栏目。
 

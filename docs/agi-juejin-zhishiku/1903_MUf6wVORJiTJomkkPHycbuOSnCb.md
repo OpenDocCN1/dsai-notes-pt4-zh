@@ -14,7 +14,6 @@
 
 IT之家 | [阅读原文](https://www.ithome.com/0/832/186.htm)
 
-![](img/72d3e9a87dfb9b5c686a54c1dbe2ac2c.png)
 
 2月20日凌晨微软发布首个为游戏创意设计的生成式AI模型Muse。它由微软多团队合作开发，基于《Bleeding Edge》游戏数据训练，在超10亿张图片和手柄动作（相当于超7年人类连续游戏时长）上训练。给定游戏截图，它能生成后续画面，用手柄控制角色也能生成对应内容。微软还向社区发布其开源权重、演示器和样本数据。
 
@@ -22,7 +21,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/832/186.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/832/133.htm)
 
-![](img/fa93837a2c4e25334ae6d4a0e1ca9ae3.png)
 
 继上次分享两部秘籍后，又拿到两部清华大学的 DeepSeek 宝典并分享。即使对 AI 和 LLM 大语言模型了解不多，也能用 DeepSeek 解决工作、学习、生活、社交和科研难题。工作上可用框架复制等策略；学习中能让其解读数学公式；生活里可借助它处理琐事；社交中能应对催婚等问题；科研方面可完成数据采集等操作，还有类似 Deep Research 功能的开源项目值得期待。
 
@@ -74,7 +72,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/832/211.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/832/202.htm)
 
-![](img/0d53c3284874b6e92dec9d38d3a10d8b.png)
 
 去年上半年多款AI“赋能”小玩意儿入市，命运不同，Humane AI Pin已失败，Rabbit仍在发展。Rabbit公司展示“通用安卓智能体”，可控制平板应用程序，基于“通用网页智能体”LAM Playground完成。演示中通过笔记本输入指令转化为安卓平板操作，能完成多种任务。不过Rabbit AI智能体仍在开发，Rabbit R1未实现创始人当时展示的功能。公司承诺未来几周分享“跨平台多代理系统”详情 。
 
@@ -98,7 +95,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/832/167.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/832/156.htm)
 
-![](img/f7c187e2fd492d2d4016db5bb5bcda73.png)
 
 2月19日，昆仑万维宣布Opera团队在Opera Developer中接入DeepSeek R1系列模型，支持本地个性化部署。2024年Opera将把内置本地大语言模型引入浏览器，提供超50种LLM访问权限。Opera Developer利用Ollama框架支持该模型部署，用户能本地运行。还附上昆仑万维给出的用户访问模型的具体步骤。
 
@@ -106,7 +102,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/832/156.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/832/136.htm)
 
-![](img/dcd0bb569ec8d9301536a2f30a364431.png)
 
 2月19日，联发科创新基地发布两款支持繁体中文的轻量级多模态模型：可在手机运行的Llama-Breeze2-3B和适用于轻薄本的Llama-Breeze2-8B。它们基于Meta Llama 3.2打造，主打繁体中文处理，支持多模态输入与函数调用。对比显示，Llama-Breeze2-3B在繁体中文处理上更优。此外，联发科还基于Llama-Breeze2-3B开发安卓AI助理App，推出AI文字转语音模型BreezyVoice 。
 
@@ -114,7 +109,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/832/136.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/832/122.htm)
 
-![](img/75e63f3bbe20004d9237b365099c024a.png)
 
 2月19日，腾讯元宝官方宣布旗下深度思考模型“混元 T1”面向所有用户不限量开放使用，混元 + DeepSeek 两大模型免费不限量。腾讯混元 T1 和 DeepSeek-R1 是推理模型，适合复杂任务。腾讯元宝成「AI 聚合体」，用户能自由切换模型免费使用。此前腾讯元宝已让 DeepSeek R1 模型联网、满血上线，腾讯部分产品也已接入 DeepSeek。
 
@@ -122,7 +116,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/832/122.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/832/113.htm)
 
-![](img/6ecff9c62b4a853606703a02de820c18.png)
 
 2月19日，理想汽车宣布旗下人工智能助手理想同学App全面接入DeepSeek R1&V3 671B满血版，还支持与理想自研MindGPT大模型双向切换。接入后能提供更好的复杂逻辑推理等能力。实测该App已升级到V1.2.0版本，底部输入框有多种功能。两款模型思考过程展示不同，DeepSeek还支持深度思考功能。
 
@@ -138,7 +131,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/832/022.htm)
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JOOSEC5G0511ABV6.html?spss=dy_author)
 
-![](img/d6b124e3e0d247e20a63d1adae2b3e54.png)
 
 OpenAI发布SWE-Lancer编码基准测试，让AI模型挑战价值100万美元的真实外包任务。结果Anthropic的Claude 3.5 Sonnet狂赚40万夺冠，超越OpenAI自家的GPT-4o和o1。SWE-Lancer含两种任务类型，能全面真实评估AI编码能力。实验发现所有模型报酬远低于潜在总报酬，在IC SWE任务上表现较差；增加尝试次数、计算资源能提升通过率；有效使用工具是关键；AI智能体定位问题快但常找不出根本原因。
 

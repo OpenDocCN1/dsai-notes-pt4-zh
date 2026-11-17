@@ -32,7 +32,6 @@
 
 点击上方“上传文件”，弹出弹窗，选择图片，选择上传。
 
-![](img/f45d72cedaab49f985b016c0c929aef0.png)
 
 上传中
 
@@ -76,11 +75,9 @@
 
 ![](img/2909c7332d9d92f38b6911f1dc1a6e25.png)
 
-![](img/473f658bc471e02c6ea4c6d6cb8c0d0a.png)
 
 在这里搜索。
 
-![](img/ed447ac4ba98470596417de5b1e3d6b7.png)
 
 选择第一个
 
@@ -114,7 +111,6 @@
 
 翻译：The little princess sat on the back of a goat on the prairie，children's book illustration，Fairy tale style。
 
-![](img/0a143ab2007cdfd8d491ffd04e1f389d.png)
 
 1.  **2. 对称图标**
 

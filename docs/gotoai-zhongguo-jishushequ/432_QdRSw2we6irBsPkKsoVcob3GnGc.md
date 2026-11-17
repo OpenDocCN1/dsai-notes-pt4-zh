@@ -302,7 +302,6 @@ PromptPilot：字节新产品，一键生成高质量提示词，还支持提示
 
 https://promptpilot.volcengine.com/
 
-![](img/576ebb93cdc5535f6c07b915dd11f984.png)
 
 使用手册
 

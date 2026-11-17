@@ -90,7 +90,6 @@ DeepSeek使用方法非常简单，直接访问官网：https://www.deepseek.com
 
 1.  下载后，将Chatbox 拖进应用程序内；
 
-![](img/d2cfe59d1992a4536eaf1ec9c1070338.png)
 
 1.  选择 [使用自己的API Key 或本地模型]；
 

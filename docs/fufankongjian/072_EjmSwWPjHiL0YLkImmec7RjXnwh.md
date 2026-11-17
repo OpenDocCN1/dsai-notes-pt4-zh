@@ -56,13 +56,11 @@ sys.path.insert(0, &#x27;.\\functions\\tested functions&#x27;)
 
 和Gmail API的获取类似，这里我们首先需要在谷歌云API库中搜索谷歌搜索API，并获取谷歌搜索API使用权限，然后查阅相关使用说明文档，并最终在代码环境中实现谷歌搜索。这里哦我们首先登录谷歌云Google Cloud：https://console.cloud.google.com/ 。还是在之前创建的Project内点击API和服务进行谷歌搜索API搜索：
 
-![](img/0e211fce68b55859702a078648a52def.png)
 
 > 首次使用谷歌云并创建Project流程，请参考《Ch.11 借助Google API库进行高效AI应用开发》部分相关内容。
 
 然后点击库，进入谷歌云API库的搜索页面：
 
-![](img/6af39e7310c869ab677f4eaf3e05fe2f.png)
 
 并在其中搜索Google search：
 
@@ -212,7 +210,6 @@ data = response.json()
 
 除了这些参数外，更多完整参数解释可以参考官网给出的说明文档：https://developers.google.com/custom-search/v1/reference/rest/v1/cse/list ：
 
-![](img/a46459465438ce0280e6ffbdef2a435c.png)
 
 > 不难发现，在调用API时有些参数调整的内容和网页端设置页面调整内容是一样的，例如siteSearch要求搜索结果必须包含某个网址，其实就是要求在某网页内进行搜索。这里需要注意，API调用时参数设置和网页端参数页面的参数设置是相互独立的，即网页端的设置只对利用Web进行搜索时起作用，而调用API时的参数设置，则对代码环境中调用返回结果起作用。
 
@@ -1367,7 +1364,6 @@ Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHT
 
 > 需要注意的是，这里一定需要再次定义header才可以运行之后的代码。为避免cookie滥用，当前ipy文件删除了具体的cookie和user-agent定义过程。
 
-![](img/4f7b16a507cc7aaaaac40395c6df93b1.png)
 
 ![](img/f2c79d00a3d23c58e13b44df08cf9246.png)
 

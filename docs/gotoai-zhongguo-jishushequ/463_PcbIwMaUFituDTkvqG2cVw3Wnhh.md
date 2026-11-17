@@ -8,7 +8,6 @@
 
 ### 核心架构特征
 
-![](img/fd89e4ba2be1aec56e3c07f0c4a6a5eb.png)
 
 1.  Gateway 控制平面: 单一 WebSocket 服务器管理所有会话、渠道和事件
 
@@ -32,7 +31,6 @@ OpenClaw 结合了多种架构模式：
 
 ### 2.2 架构层次
 
-![](img/90e1050c68a57d5fd0c691e3181abe30.png)
 
 ---
 
@@ -40,7 +38,6 @@ OpenClaw 结合了多种架构模式：
 
 ### 3.1 Gateway 控制平面
 
-![](img/08870edf2cf852f5932d8a1feca37051.png)
 
 职责: 整个系统的核心控制器
 
@@ -148,7 +145,6 @@ interface Channel {
 
 ### 3.3 消息路由系统
 
-![](img/10a550f35d253263331ef6987f3320da.png)
 
 职责: 将收到的消息路由到正确的代理和会话
 
@@ -225,7 +221,6 @@ interface Channel {
 
 ### 3.5 AI 代理引擎
 
-![](img/ad88aed8a576dcf178e91af01a8e745e.png)
 
 职责: 处理用户消息，生成 AI 响应
 
@@ -679,7 +674,6 @@ interface Plugin {
 
 ### 4.1 消息接收流程
 
-![](img/ae8a8c372b609500ea54e4bbfecc6193.png)
 
 详细说明：
 

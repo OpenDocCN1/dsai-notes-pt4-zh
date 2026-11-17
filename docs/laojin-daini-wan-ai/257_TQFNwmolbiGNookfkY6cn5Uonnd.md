@@ -160,7 +160,6 @@ Cloudflare里继续下一步，这里显示24小时，实际上几分钟就行�
 
 你就能收到一个自己域名的申请记录了，大功告成。
 
-![](img/0567f32b19f82ac74affc0fcdcef400a.png)
 
 ## Windsurf
 

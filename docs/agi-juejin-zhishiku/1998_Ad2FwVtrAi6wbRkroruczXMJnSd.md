@@ -66,7 +66,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/868/711.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/868/590.htm)
 
-![](img/de29073191dd2c63151673da7f2ecde7.png)
 
 7月16日消息，Mistral AI 推出开源的Voxtral语音理解模型系列。该系列由Mistral Small 3.1派生，有不同版本以适用于生产、本地/边缘部署等场景。模型支持32K Token上下文长度，可处理较长音频，内置生成问题、摘要能力，支持多种印欧语言。Mistral AI宣称，Voxtral Mini Transcribe在敏感用例中性能优于OpenAI Whisper，价格不到一半；Voxtral Small在高级用例中性能与ElevenLabs Scribe接近，价格减半。
 
@@ -90,7 +89,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/868/550.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/868/546.htm)
 
-![](img/c5b998120f0746d16ac5ae5788af7bb0.png)
 
 **谷歌宣布未来**两年将在美国最大电力网区域投资250亿美元建设AI**数据中心，**总裁鲁思・波拉特预计与特朗普在人工智能峰会上宣布该计划。此外，谷歌将斥资30亿美元改造宾夕法尼亚州两座水电站，购买3000兆瓦水电能源。PJM互联电网压力大。特朗普将宣布700亿美元相关投资计划，Meta的扎克伯格称将投数百亿美元建人工智能数据中心 。
 

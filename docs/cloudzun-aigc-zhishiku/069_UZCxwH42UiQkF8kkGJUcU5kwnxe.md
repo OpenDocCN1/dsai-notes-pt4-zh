@@ -676,11 +676,9 @@ People in image:
 
 street.jpg
 
-![](img/331b52524cdfc641738867bd0370b303.png)
 
 objects.jpg
 
-![](img/d0f335d6410e72f1c241421f52521e33.png)
 
 people.jpg
 

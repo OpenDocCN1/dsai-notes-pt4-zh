@@ -245,15 +245,12 @@ python demo/app_januspro.py
 
 然后即可按照如下方式进行使用：
 
-![](img/225c8d1e456c682cf441facd9ae37590.png)
 
 运行得到结果如下：
 
-![](img/80ce41fb25fbf6225f8f012aa04822a1.png)
 
 图像创建流程如下，下滑至Text-to-Image Generation页面：
 
-![](img/f5e2dad95dc52e6585789789ca4c8ec5.png)
 
 稍等片刻，即可查看最终运行结果：
 

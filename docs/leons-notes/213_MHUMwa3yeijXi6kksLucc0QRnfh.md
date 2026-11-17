@@ -6,7 +6,6 @@
 
 In 1984, Tom Zito interviewed a 29-year-old Steve Jobs, months after he introduced his first Mac.
 
-![](img/fdb4db78c90a1d8679cd19e30c890163.png)
 
 No technological advance has more quickly captured the imagination and opened the pocket books of Americans than personal computers . Like the space program that initially nurtured computer research, these new information appliances have come to symbolize America’s return to technological superiority—a place seemingly lost in the past decade to imported televisions, cameras, digital watches and Walkmen.
 

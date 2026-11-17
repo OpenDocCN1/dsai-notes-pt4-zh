@@ -8,7 +8,6 @@
 
 基于此，我们精选整理了 6 款面向产品经理场景的热门 Skills，覆盖从方案设计、实施拆解到上线后数据追踪的全链路环节，助力产品经理在各关键节点提升工作效率。
 
-![](img/209148ccd9a0f4ff4cd71336c807048e.png)
 
 方案头脑风暴
 
@@ -56,7 +55,6 @@ npx skills add obra/superpowers --skill brainstorming
 “帮我分析这个功能的三种实现方案并给出建议”
 ```
 
-![](img/043f96bcbb73906cc61ab806d5597d83.png)
 
 需求设计
 
@@ -117,7 +115,6 @@ npx skills add mattpocock/skills --skill write-a-prd
 “帮我把这个功能想法梳理成 PRD，我希望解决的问题是：用户无法感知到自己的成长路径”
 ```
 
-![](img/f6465a665fbb5ff18da788645464ae4d.png)
 
 实施计划拆分
 
@@ -165,7 +162,6 @@ npx skills add obra/superpowers --skill writing-plans
 “帮我把用户增长平台这个设计方案直接拆分成可执行的不同计划”
 ```
 
-![](img/7eb9926253efdefe3e88d340259c8651.png)
 
 A/B 实验设计
 
@@ -210,7 +206,6 @@ npx skills add coreyhaines31/marketingskills --skill ab-test-setup
 “我们的定价页转化率是 3%，我想测试一个新的价值主张，需要多少样本量？”
 ```
 
-![](img/419a12c716d0a593835b60582a54bb70.png)
 
 数据埋点与追踪
 

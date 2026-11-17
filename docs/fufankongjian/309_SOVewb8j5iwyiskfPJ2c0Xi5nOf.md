@@ -1265,33 +1265,19 @@ Train: 100%|██████████| 89/89 [05:34&lt;00:00,  3.76s/it]
 best_model_checkpoint: /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89
 ```
 
-![](img/0d7cacb5f38eec3ab30f24a5b1b25ad9.png)
 
-![](img/08f124f346befeb0c9883a30c487f92a.png)
 
-![](img/fb67ccf871ef19994da1b4d90263d29a.png)
 
-![](img/8631ed31aa73ff235256641c29653918.png)
 
-![](img/f5ac272a1d62af10a313580ebeef91a9.png)
 
-![](img/2072cd50149f9faf29c5d287dad561bb.png)
 
-![](img/62427bbace3c8f53f19647d93ec6a40e.png)
 
-![](img/8bbf0cd83e158626ca3eb0e77ee15197.png)
 
-![](img/33cb20a47f722bb655a8af7a6a784212.png)
 
-![](img/33d7b0ec2469a7df60a556b9019b536c.png)
 
-![](img/6706ff1602a674f0e5a8642bd0e83436.png)
 
-![](img/d11173da052c94a80ac62dedf747dd85.png)
 
-![](img/04e576560c5c7a6d583e6f525591cc2e.png)
 
-![](img/096c19f68b7f61b100fcaf3fe299b0e7.png)
 
 ![](img/5d22814a954a47f91f3de8447a431a5b.png)
 

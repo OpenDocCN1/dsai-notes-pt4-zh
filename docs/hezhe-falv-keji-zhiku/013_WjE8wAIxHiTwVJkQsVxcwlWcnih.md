@@ -66,7 +66,6 @@
 
 **🎁产品试用：扫**码注册/登录→兑换试用→下载APP/登录使用
 
-![](img/dc2f038a493ba7dc94f8af2ba6c22c98.png)
 
 ![](img/5bffd3dd17da8d35726efb7a95f50c0a.png)
 

@@ -32,39 +32,30 @@ Kimi+即梦。
 
 **狗 **（Dog）
 
-![](img/1f953c449a82b59180ff4fa22f1b92cf.png)
 
 **猫 **（Cat）
 
-![](img/63f39a7523efa17831768deec678f088.png)
 
 **马 **（Horse）
 
-![](img/02e254fd422b97846a33be42ddf7653a.png)
 
 **牛 **（Cow）
 
-![](img/3a0b44152173e3f34cff68408175dbbb.png)
 
 **羊 **（Sheep）
 
-![](img/94563fe001a5994241de76f1ce6190dd.png)
 
 **猪 **（Pig）
 
-![](img/f0d32673da6a546a1124b22d51b39310.png)
 
 **鸡 **（Chicken）
 
-![](img/061e87361717482b950bf5965f07dd2a.png)
 
 **鸭 **（Duck）
 
-![](img/d0483ec72fb160017212f27cf0468a65.png)
 
 **鱼 **（Fish）
 
-![](img/7b1739b9866b2f7293a69dc01a2f2d9c.png)
 
 **鸟 **（Bird）
 
@@ -82,7 +73,6 @@ Kimi+即梦。
 
 在对话文本框输入提示词： 十种常见动物
 
-![](img/6cc40bd910625a62edda965b3a70bb11.png)
 
 得到答案。
 
@@ -114,7 +104,6 @@ Kimi+即梦。
 
 在浏览器地址栏输入 jimeng.jianying.com ，按回车进入即梦官网，点击【图片生成】。
 
-![](img/f03bb1a8faf2aeddc1b853e46e11a6fa.png)
 
 输入图片生成描述提示词，选择模型，比例，点击【立即生成】。
 

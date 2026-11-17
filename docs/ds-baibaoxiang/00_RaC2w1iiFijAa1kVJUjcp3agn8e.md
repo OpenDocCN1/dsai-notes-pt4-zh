@@ -48,7 +48,6 @@ Github链接：https://github.com/deepseek-ai/DeepSeek-V3
 
 技术报告链接：https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf
 
-![](img/595f3a23d2637c298a1c9744e4a3997a.png)
 
 [DeepSeek_V3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QE2obffVkoNs5Uxnl8ncWpeZn9e)
 

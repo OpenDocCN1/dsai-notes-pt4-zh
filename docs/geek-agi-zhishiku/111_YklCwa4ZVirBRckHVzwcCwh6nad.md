@@ -8,13 +8,9 @@
 
 [**当我问de**](https://www.xiaohongshu.com/user/profile/65de04d5000000000500bc37?channel_type=web_search_result_notes&parent_page_channel_type=web_user_board&xsec_token=AB4o7rhbIF-yld_e7vRn9t09naX3z1ehNr2NyGsLJSlDo=&xsec_source=pc_note)epseek人类都问了他什么离谱问题--📕：栗栗小宇宙
 
-![](img/7eddd6d782b173787d05be5a774d33c7.png)
 
-![](img/69be88c7fe57584c4bdd3a3cff1b1b70.png)
 
-![](img/06ecefc0ab378ee6b71e02faa62f08e4.png)
 
-![](img/fabf0b9fd725fb8efbaf95fc82653101.png)
 
 ![](img/5cdb54cf1eaf5c50c48e433849445a8b.png)
 
@@ -36,15 +32,10 @@ DeepSeek写诗--📕：疾风突兀
 
 DeepSeek 锐评 java 找工作现状
 
-![](img/8f35a0d101a0a3f8a18591c6c9881420.png)
 
-![](img/58c93a840d015c4fe38a08e1f49e7179.png)
 
-![](img/f190698aa40a14033c6a5b616fc5e042.png)
 
-![](img/21d7d542bc28792548b543e8778b2403.png)
 
-![](img/de45bb5ae587f2afcf255a0a361f8d69.png)
 
 ![](img/e8e02af49416726adbc9888cb139d6a8.png)
 
@@ -60,15 +51,10 @@ DeepSeek 锐评程序员是否要考公
 
 当deepseek回答亲子博主故意让女儿摔倒
 
-![](img/734c5079ec01e386eee28c516b401349.png)
 
-![](img/fcb48d9dcfc0ac61d650863f561dce3b.png)
 
-![](img/388ab918e3a19c35852cdf55ae179827.png)
 
-![](img/0f3d2d15be437a5a4ec6bd561b3896b5.png)
 
-![](img/a61b7a55d2f1e30612c869ded5408c8e.png)
 
 ![](img/0bda90175182ec154f2a6cdc9bf6db19.png)
 
@@ -76,25 +62,15 @@ DeepSeek 锐评程序员是否要考公
 
 ![](img/90b7dad02d3c559185dffb85c58db49e.png)
 
-![](img/77a20073aa2b68b9b0dc684446ef07c2.png)
 
-![](img/838e0685828319ba5428a017450c8bcf.png)
 
-![](img/d3fb1f140328f1f200a24a4acfea078f.png)
 
-![](img/bf62efdb40fc6f825ae408b4ceb81782.png)
 
-![](img/0202f948501c5d0ac9ab2dc1ce26d0a3.png)
 
-![](img/75dfa6ece5b3b689bf2909c4d2a89621.png)
 
-![](img/f463af21ef8eb7e4a76d447ff8dc4226.png)
 
-![](img/bbc3ed3ef25612f7ceeffbd7ab33ef62.png)
 
-![](img/038bdf442be3ce259f794a9f5cdb7d62.png)
 
-![](img/b3033eb4231d0b75ddd153d3908ea8d3.png)
 
 ![](img/30dbf24a90ed2e948ec1260665cbbcf4.png)
 
@@ -136,19 +112,12 @@ DeepSeek 教 plog 博主，2025 如何破局
 
 ![](img/78322923478059342bc0ccf8934d743c.png)
 
-![](img/de851b12f3539555d86a58ecd0e55e9d.png)
 
-![](img/0e2fcce5711b9f5e4c51f38e676e3076.png)
 
-![](img/ae770c7f857c450778626d2f6dd3692d.png)
 
-![](img/1357cb92ad0eb5f75b7937daa3d5072e.png)
 
-![](img/2637e9d20cf8a8b49908910f6990deed.png)
 
-![](img/48fee99857260626f30c65202052285f.png)
 
-![](img/82ceea2212f94a56b98897f4139d17ea.png)
 
 ![](img/56ff21bc9470561e5fb457675f5f15cc.png)
 
@@ -158,9 +127,7 @@ DeepSeek 教 plog 博主，2025 如何破局
 
 ![](img/24ab9b726a9843b9dfabb9fdc6281702.png)
 
-![](img/31234125ccaa22d7f4a22ea365440263.png)
 
-![](img/84c99e101bdd7ba54a333e0b83a847b0.png)
 
 ![](img/6eb713ed34b43c28ddff782e1941048d.png)
 
@@ -200,19 +167,14 @@ DeepSeek 教 plog 博主，2025 如何破局
 
 DeepSeek认为情侣谈到这个程度才可以结婚
 
-![](img/514f6f3285d5b04c7a871c0190d813ae.png)
 
-![](img/2da06c19053efe70cba59b03496ac2fd.png)
 
 ![](img/d80a69a1fa1fd960377562c61b380b86.png)
 
 和**DeepSeek玩游戏**
 
-![](img/efd88d48b68c4547f7fb23e2b628f7a3.png)
 
-![](img/514f2585634d9e711fc5c50916955364.png)
 
-![](img/689a83871f5fd7544b1e6e356ad28c93.png)
 
 ![](img/1eb07be95dedf00b507d89742ba111f4.png)
 
@@ -280,11 +242,8 @@ deepseek给出人生回报率最高21件事基础版
 
 deepseek➕Xmind做思维导图，有多牛
 
-![](img/942ca38b7a3f113fbd9c6cf53c866201.png)
 
-![](img/fea4fb7a38b544d9b0251581cf97a745.png)
 
-![](img/40bcc7cf5ee99e08378cc46c73803564.png)
 
 ![](img/e211d86d0b76bed255d2a71e45fdfe43.png)
 
@@ -318,15 +277,10 @@ deepseek深度思考：人这一辈子，什么东西是最没用的？
 
 deepseek认为童年时最幸福的十件事是什么
 
-![](img/9d13d60614570cd8fd0466f78be50221.png)
 
-![](img/d20b19513436e8e29f2479bcf2f9d787.png)
 
-![](img/e1600eade026fcf55e21cd640e4385f4.png)
 
-![](img/2d3be7e4990bd4d46049a571dc0fdb1d.png)
 
-![](img/60c6ce4e70f7e75ab67861e6babf2198.png)
 
 ![](img/2bbab2e3459cd63c51c68bd8879de731.png)
 

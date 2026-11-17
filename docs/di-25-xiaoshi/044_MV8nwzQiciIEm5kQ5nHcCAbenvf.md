@@ -80,7 +80,6 @@ Fine-tuning和In-conte**xt Lear**ning是机器学习中用于调整预训练模�
 
 **因此，基于上**述两种学习方式的调研后，最终V1.0版本选择了 In-context Learning 的预训练方式。
 
-![](img/7edf350f9c5d30a6fe6bb987d47fb22d.png)
 
 ### （2）in-context learing
 
@@ -114,7 +113,6 @@ Fine-tuning和In-conte**xt Lear**ning是机器学习中用于调整预训练模�
 
 接着是攻克第二和第三个问题，请看关于该系统 V1.0 版本的全局流程图：
 
-![](img/45285351ff32e9c49774df8d1846fb46.png)
 
 ## 3、线上数据表现
 
@@ -204,7 +202,6 @@ AutoGPT内置了很多工程上的能力，比如：
 
 AutoGPT的记忆缓冲区是指用于存储临时数据或信息的区域。在AutoGPT中，记忆缓冲区可能用于存储生成的文本片段、上下文信息或其他临时数据，以便在生成过程中使用。这样的缓冲区有助于AutoGPT在处理长文本序列时保持连贯性和一致性，从而提高生成文章的质量和准确性。
 
-![](img/8ce96f3c7b94c502962bd558999b36da.png)
 
 ## 4、AutoGPT流程图
 
@@ -250,7 +247,6 @@ AutoGPT的记忆缓冲区是指用于存储临时数据或信息的区域。在A
 
 ![](img/812c14dadd5b3c96e8280b0dd50ec2c8.png)
 
-![](img/68ede7c445791334e4578168518c1661.png)
 
 ![](img/dfd5384254551ad0dd7088d44cd065f0.png)
 

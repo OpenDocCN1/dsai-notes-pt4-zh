@@ -80,7 +80,6 @@ Unsloth提出的动态量化方案会更加综合一些，所谓动态量化的�
 
 +   独家KTransformers技术实战：https://www.bilibili.com/video/BV1kyAke9EBA/
 
-![](img/024e2175066f15ecbc6809d23de68868.png)
 
 +   独家Unsloth动态量化部署满血DeepSeek：https://www.bilibili.com/video/BV1oePLezEZD/
 
@@ -275,7 +274,6 @@ KTransformers支持在Windows、Linux等操作系统下，使用源码部署或�
 
 +
 
-![](img/64a94f3506e5b281b77b715247a22a99.png)
 
 +
 
@@ -285,7 +283,6 @@ KTransformers支持在Windows、Linux等操作系统下，使用源码部署或�
 
 ![](img/bf014cf43c759fe7b867fc2dade9f147.png)
 
-![](img/7c9e16410a9e6699294b01ff465930a6.png)
 
 ![](img/be171eee8c0c5e48c504555dd87746af.png)
 
@@ -731,17 +728,14 @@ open-webui serve
 
 然后点击登录即可。稍等片刻，即可进入到如下页面：
 
-![](img/a3e332c481e3b82c2c77a5058495bdd3.png)
 
 +   连接本地模型API
 
 此时后台没有检测到任何模型，需要我们手动创建和本地的API连接，才能顺利调用本地模型。这里点击左下角设置—>函数—>加号：
 
-![](img/6b75910b7fe5068d53926e6a3d7fb211.png)
 
 写入如下脚本代码：
 
-![](img/3d43befc9272df5ab69e2f8458a18658.png)
 
 ```
 import json
@@ -1138,11 +1132,9 @@ class Pipe:
 
 点击保存，回到对话页面，则能看到本地运行的DeepSeek-R1模型：
 
-![](img/342942961a2e39c2f351ec182a609ce7.png)
 
 然后即可开启对话：
 
-![](img/186e00396ee01c9a5a85c5252bf33687.png)
 
 ![](img/7c94ed39d5df4d731ec344b579741592.png)
 

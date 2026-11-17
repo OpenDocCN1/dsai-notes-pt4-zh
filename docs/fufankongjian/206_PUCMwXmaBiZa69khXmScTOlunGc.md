@@ -296,7 +296,6 @@ Requirement already satisfied: sniffio&gt;=1.1 in e:\01_木羽研发\11_trafficv
 
 +   hwchase17/openai-tools-agent提示词模板介绍
 
-![](img/1ebe7e26162de13370512c2671540f1e.png)
 
 ![](img/2c85c4416477408114a48541e25c40a9.png)
 

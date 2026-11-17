@@ -18,7 +18,6 @@
 
 > 镜头一，中景描绘 @卡尔 背对镜头， @卡尔 站在巴黎公寓的落地窗前俯瞰着夜晚的埃菲尔铁塔；镜头二，转为手部特写， @卡尔 的手拿起一把吉他；镜头三，人物的表情特写， @卡尔 坐在巴黎公寓的落地窗抱着吉他做出深情的表情
 
-![](img/a2a1721b67a2b334b88ad519bcd97881.png)
 
 [Wan_Video_Starring_镜头一，中景描绘 @卡尔 背对镜头， @卡尔 站在巴黎公寓的落地窗前俯瞰着夜晚的埃菲尔铁塔；镜头二，转为手部特写， @卡尔.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EXrLbMQUzoWOTox8i5TcKiRsngb)
 
@@ -42,19 +41,16 @@
 
 > 制作一个有趣的“Wan”炸鸡广告和表情包版本的广告，带有对话，其中有一个拟人小猫角色
 
-![](img/5451df4ec5dd3775f9246b5457864293.png)
 
 [炸鸡.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XtEBbC1FIokfYQx1APqcdJCjn8b)
 
 >
 
-![](img/b16213120dd1a9b5e0b92a89d2f7893b.png)
 
 [2fc8300934523ead96bbf9b6d7d83e2d.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IltRbam4QoMzQYxWcBdcAs9mnJf)
 
 > 这是一个充满温馨的场景， @小猫7 在桌子上把水杯推到地上， @卡尔 转头看向小猫， @小猫7 一脸震惊的表情说：“别看咪，咪什么都没做！”
 
-![](img/685935f9e5b1be50085cd1c3c224458f.png)
 
 [Wan_视频角色_这是一个充满温馨的场景， @小猫7 坐在桌子上把桌子上的水杯推到地上， @卡尔 听到声音转头看向小猫露出惊讶的表情， @小猫7 一脸震惊的表情.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FCnIbwStToN36ox0Ux4cOrvPn8e)
 

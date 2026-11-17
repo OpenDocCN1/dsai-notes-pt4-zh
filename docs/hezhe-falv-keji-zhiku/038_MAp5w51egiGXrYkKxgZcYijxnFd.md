@@ -95,7 +95,6 @@
 
 ![](img/6ccbb940b9553bcfd47872e5a5f5fe9a.png)
 
-![](img/080478ca26412464dece7c6401575240.png)
 
 ![](img/4f199abb671caa9ab134012c825ccbe4.png)
 

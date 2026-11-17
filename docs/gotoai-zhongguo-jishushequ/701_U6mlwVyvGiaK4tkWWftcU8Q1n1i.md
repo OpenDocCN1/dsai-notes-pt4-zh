@@ -16,19 +16,16 @@
 
 https://fmhy.xyz/
 
-![](img/c34369c9ed80b4012e9fe359d17aec6f.png)
 
 Freemediaheckyeah Post每日更新
 
 https://fmhy.net/posts
 
-![](img/e6e8f70382ecd810f2d5fb17ccd3192e.png)
 
 Freemediaheckyeah GitHub
 
 https://github.com/fmhy/edit
 
-![](img/73215c439b850d94fa277359aa3789f7.png)
 
 Artificial Intelligence
 

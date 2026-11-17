@@ -64,9 +64,7 @@
 
 比如在知识服务平台「得到 App 」上，就有几位新晋的网红法律人：
 
-![](img/c3258dfa4c7013f785938d782f16c910.png)
 
-![](img/df22656b7e2cdaa5ee204d5b542ee9f3.png)
 
 ![](img/3be83c4e6738550f792e8f7ec0fc87cc.png)
 

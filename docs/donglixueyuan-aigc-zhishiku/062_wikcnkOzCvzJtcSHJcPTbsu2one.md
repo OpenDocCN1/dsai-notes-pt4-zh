@@ -36,7 +36,6 @@
 
 翻译：The little princess sat on the back of a goat on the prairie，children's book illustration，Fairy tale style。
 
-![](img/2db7d9660fb40088df5d250e2bf4664d.png)
 
 1.  **2. 对称图标**
 

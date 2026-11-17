@@ -108,7 +108,6 @@ GitHub项目地址：https://github.com/lobehub/lobe-chat
 
 同其他主流大模型对话Web框架类似，AnythingLLM 同时支持调用在线模型API、或本地模型进行推理， 并且AnythingLLM 本身是一款集成度非常高的聊天框架，我们只需要借助可视化页面手动点击选择在线 模型AP 或者本地推理框架即可，例如一些主流API厂商：
 
-![](img/73025b613746ab3477b769c570c60d99.png)
 
 **或者一些主流的本地推理框架。**
 
@@ -120,7 +119,6 @@ GitHub项目地址：https://github.com/lobehub/lobe-chat
 
 首先需要先安装ollama  地址，下载地址： https://ollama.com/
 
-![](img/8c905d49fdb2082d1d984b021bf52cb2.png)
 
 选择对应的操作系统进行安装即可：
 
@@ -196,7 +194,6 @@ AnythingLLM  是一款集成度非常高、且功能非常稳定的大模型对�
 
 点击Get   started,则进入到选择LLM页面：
 
-![](img/f51ff4cd75f5e2c55e26ffc141afa28f.png)
 
 这里我们选择借助Ollama 来调用本地的14B模 型 。这 里需要注意的是，AnythingLLM 会自动检测Ollama  进程是否存在(也就是Ollama 是否启动),以及现在Ollama 中已经注册了哪些模型。因此在进入到上面 这个设置也面前，需要确保Ollama 已经启动，并且已完成了相关模型注册。选择好14B模型之后即可点  击进入下一步：
 
@@ -216,7 +213,6 @@ AnythingLLM  是一款集成度非常高、且功能非常稳定的大模型对�
 
 在浏览了当前模型配置后，接下来即将进入AnythingLLM注册页面，这里可以直接跳过：
 
-![](img/9d553f086427fece2ecfe2366ee08bda.png)
 
 然后需要创建一个workspace,  相当于是ChatGPT 或者其他开发项目的一个Project,用于对对话进行分 类：
 
@@ -234,7 +230,6 @@ AnythingLLM  是一款集成度非常高、且功能非常稳定的大模型对�
 
 并且支持多轮对话：
 
-![](img/674802c0168c89855a71292bfe9c84d8.png)
 
 # 四、借助AnythingLLM进行本地知识库问答
 
@@ -274,23 +269,18 @@ AnythingLLM 是一款集成度非常高、且运行稳定的RAG+ 前端对话框
 
 这里我们额外上传一份DeepSeek V3技术报告，该报告的内容超出了当前模型只是范畴，适合进行本地 文档问答测试：
 
-![](img/f4a33089a4a64b1e1b2a0285c96251b2.png)
 
 上传后即可在当前文件夹中看到该文件，这里点击Move to Workspace,即可将其列举为备选问答文 档：
 
-![](img/84473735a12092ad900293f671ad1e70.png)
 
 当Move to workspace后，在右侧即可看到这篇文档，然后点击Save and Embed,即可开始进行文档切分和词向量化过程：
 
-![](img/5738a419b00031a9c5043a446cd898e3.png)
 
 **需要稍等片刻：**
 
-![](img/981fe93599d0d5a56116a196527749fc.png)
 
 完成后，再点击图钉按钮，即可将这篇文档设置为当前对话的背景文档：
 
-![](img/48dcabdf0a6ca30032bbc9bd7400cf1c.png)
 
 **然后点击got it**
 
@@ -310,23 +300,18 @@ AnythingLLM 是一款集成度非常高、且运行稳定的RAG+ 前端对话框
 
 最后，让我们来看下如何借助DeepSeek R1 API+AnythingLLM来进行本地知识库问答。 首先，新建一个工作区，并命名为RAG Test2
 
-![](img/ae8846976bd39fd7878ceafd0c404976.png)
 
 **然后点击设置按钮：**
 
-![](img/38f672842f028959cb40ca3ddc77371b.png)
 
 设置页面，我们可以灵活设置当前工作区域的名称(或者删除工作区)
 
-![](img/f5214a879270a429889ec0f448de1267.png)
 
 或者修改默认模型，以及system message (系统默认提示):
 
-![](img/c5e523a7dd01bbba3e642e112f306699.png)
 
 **以及进行词向量数据库设置等。**
 
-![](img/cd97b52fb9f8f3af8ccd5cd18dd7bf75.png)
 
 这里我们需要在聊天设置中修改模型为DeepSeek R1 API,先点击聊天设置，然后选择模型：
 
@@ -338,7 +323,6 @@ AnythingLLM 是一款集成度非常高、且运行稳定的RAG+ 前端对话框
 
 然后在弹出的页面输入API-KEY
 
-![](img/161706a8cf5de935337d3e383cc6f243.png)
 
 输入完API-Key后，即可选择对话模型，deepseek-chat 就是DeepSeek  V3,而 deepseek-reasoner则是 DeepSeek  R1。这里我们选择deepseek-reasoner:
 
@@ -346,11 +330,9 @@ AnythingLLM 是一款集成度非常高、且运行稳定的RAG+ 前端对话框
 
 然后点击Save, 即可返回设置页面：
 
-![](img/eb6fc23632639cae40847a63e47e8716.png)
 
 然后翻到最下面点击Update    workspace,即可完成设置：
 
-![](img/d19df6e8b8e7460457c20c103dae2fd0.png)
 
 然后点击左侧聊天栏，选择default会话即可开始聊天了：
 

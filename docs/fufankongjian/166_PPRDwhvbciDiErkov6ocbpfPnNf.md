@@ -69,7 +69,6 @@ response = openai.ChatCompletion.create(
 
 整个Model I/O工作流如下图所示：
 
-![](img/cad1b896ca3fd80c2c2e933bd53c3975.png)
 
 +   **Format**
 

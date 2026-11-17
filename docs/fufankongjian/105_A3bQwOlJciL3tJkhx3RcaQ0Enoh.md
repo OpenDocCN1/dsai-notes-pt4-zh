@@ -96,15 +96,12 @@
 
 然后即可点击Credits进行充值：
 
-![](img/aef1ce4073e924305087e47141e7b1bd.png)
 
 点击Add Credits，可选择各类信用卡进行充值：
 
-![](img/3a8744206d23ced35ed6c17abb9ed762.png)
 
 然后点击创建API-KEY即可：
 
-![](img/41ed3c7500d78c374903d64f8af1f5cc.png)
 
 +   OpenRouter网站功能介绍
 
@@ -219,9 +216,7 @@ print(or_completion.choices[0].message.content)
 
 接下来继续测试DMXAPI账号注册与API调用流程。同样我们在DMX官网：https://www.dmxapi.cn/ ，点击进行注册：
 
-![](img/8fcdb47b1b51c0c595e82823ff0b4d71.png)
 
-![](img/be8ba3a55ccd16cfc3aaec705cf7ed28.png)
 
 然后即可在价格页面查看所需要的模型及其相应的定价：
 
@@ -229,7 +224,6 @@ print(or_completion.choices[0].message.content)
 
 并且可以在教程页面看到DMXAPI各类模型采用OpenAI风格API进行调用的方法：
 
-![](img/13a48307db9b700f10fc06f2d3615bdf.png)
 
 此外，DMXAPI还提供了非常便捷的开票通道，对企业用户非常友好：
 
@@ -239,11 +233,9 @@ print(or_completion.choices[0].message.content)
 
 同样的，我们可以在工作台中进行余额充值：
 
-![](img/acefdb75443e2aacae5574e4ec74308f.png)
 
 然后可以在工作台主页进行DMXAPI的API-KEY创建：
 
-![](img/6b59076ff4da0f478dd2c7a97a63348c.png)
 
 并可以在使用日志中看到每一次模型调用的情况及计费：
 
@@ -346,11 +338,9 @@ print(dmx_completion.choices[0].message.content)
 
 最后，让我们来介绍smallAI的注册和使用流程。和DMXAPI类似，smallAI也是国内开发团队创建的，一款更加轻量级的模型聚合平台。我们可以登录管smallAI官网：https://www.smallai.asia/shop ：
 
-![](img/68dcaf114f7a604bc371a82367766c8d.png)
 
 直接下滑选择一款模型套餐进行购买即可：
 
-![](img/e44b476370d6845f50a57d67001b5597.png)
 
 ![](img/c1df3c5e51a6bc96227a128321e1c298.png)
 
@@ -476,7 +466,6 @@ print(sai_completion.choices[0].message.content)
 
 > 需要注意的是，哪怕不使用聚合API，如果开通了Cursor的付费服务，也是可以直接调用Cursor内置的Claude 4模型的：
 
-![](img/a733d7c61a1a89b132807b86cb6983d4.png)
 
 整个设置过程也并不复杂，我们只需要整理好三个聚合平台的API-KEY、Base-URL和模型名称即可。具体汇总结果如下：
 
@@ -494,17 +483,13 @@ print(sai_completion.choices[0].message.content)
 
 首先创建并勾选google/gemini-2.5-flash-preview-05-20模型：
 
-![](img/bc4fc4b6cf608bdb8e9741302de905d5.png)
 
-![](img/40c9885541e8a40040a39de0503dc2d5.png)
 
 然后输入OpenRouter的API-KEY和Base URL：
 
-![](img/d74d1165067cb57ed5bafe691bdb4e49.png)
 
 然后即可测试进行对话：
 
-![](img/52880b58fc0fe133c7dae30f04c76e8c.png)
 
 > 注，如果需要激活多个模型，需要再创建多个模型名称即可。
 
@@ -512,13 +497,10 @@ print(sai_completion.choices[0].message.content)
 
 紧接着，我们再测试使用Small AI的API-KEY，在Cursor中接入claude-opus-4-20250514模型。这里还是一样的，首先我们需要创建一个claude-opus-4-20250514模型：
 
-![](img/151509d1fafaa1cbdcddf6fea118db5a.png)
 
-![](img/929bb9abf23133d20c1ab0a64bbca74f.png)
 
 然后输入smallAI的API-KEY和Base URL，并启用：
 
-![](img/f43be48df479d0c19c6444ab9b22da23.png)
 
 然后即可测试进行对话了：
 
@@ -552,37 +534,28 @@ print(sai_completion.choices[0].message.content)
 
 而在Cherry Studio中，我们能够非常便捷的接入DMXAPI，我们只需要输入DMXAPI的密钥：
 
-![](img/d913d579607f63b92c0f31dca1fb7277.png)
 
-![](img/e1ead45a378859de560dc4c4c6fdbbf5.png)
 
 然后点击管理模型：
 
-![](img/413241be74d0d4ac623ceed1a7a3e5ba.png)
 
 然后选择claude4：
 
-![](img/55a93c84ab5cdaa29ae0b3d009c50a31.png)
 
 最后，即可在对话页面调用Claude4模型了：
 
-![](img/5be841ee65a32a62554960960024d396.png)
 
-![](img/d8b768a70749be4721e21c3aa9be3ad7.png)
 
 同时，Cherry Studio也是MCP客户端，可以无缝接入MCP服务器，这里我们可以选择一个查询天气的Stdio服务器：
 
-![](img/2b96a05f4c68753fd002215262fbdb68.png)
 
 然后进行对话测试：
 
-![](img/4e571991d2720678d9febe2c185f3cea.png)
 
 ![](img/a8c93b553b95b66efa9e1bf0ee0c6ad9.png)
 
 +   Open-WebUI借助OpenRouter调用Gemini 2.5模型流程
 
-![](img/315e01457f9bfa06fc421915deed5063.png)
 
 🌐 Open-WebUI 简介
 
@@ -614,15 +587,12 @@ open-webui serve
 
 打开Open-WebUI后，即可在左下角点击管理员面板，点击设置：
 
-![](img/6aba6ca5c9b386df1e5af3f33f62cb75.png)
 
 并在外部连接中输入openrouter的base url，以及API-KEY，并点击保存：
 
-![](img/eba4045e55b78e26cdfb48a64fcb7918.png)
 
 然后回到对话页面，找到Gemini 2.5 flash模型并进行对话即可：
 
-![](img/ac82f7b0ec8803b06a186d100461f930.png)
 
 ![](img/f35ef74772a8bbff496dca70f016aea0.png)
 

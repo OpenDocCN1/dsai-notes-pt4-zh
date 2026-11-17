@@ -210,11 +210,9 @@ Temperature 是控制生成模型输出随机性的参数，取值范围 0 到 1
 
 > 提示：“骑马的兔子，手持棒棒糖，站在长满水仙花的雾气弥漫的草地上”
 
-![](img/61cd28ded3e214aa69a9cdfdb3f4ccec.png)
 
 再运行同样的提示，看看是否会得到相同图像：
 
-![](img/375758236b8d0ca5bcfb86f3e8b353e2.png)
 
 可以看到，图像相似但不完全相同。接下来将 temperature 调低到 0.1，看看效果：
 
@@ -234,7 +232,6 @@ generation_response = openai.Image.create(prompt='Bunny on horse, holding a loll
 
 运行后得到以下两张图：
 
-![](img/464bd07edfcf57e4cf4226fd070daf9c.png)
 
 ![](img/b81a902ac3f92a3301a5c7dcab6750bc.png)
 

@@ -48,7 +48,6 @@
 
 +   多Agent模式（Multi-Agent Pattern）：多个Agent协同工作，每个Agent都有特定的角色和任务，共同完成最终结果。
 
-![](img/02865a476000149a69dc0a3dfc0a0f53.png)
 
 ## 五级智能体系统
 

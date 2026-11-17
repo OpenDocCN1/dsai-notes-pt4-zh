@@ -44,7 +44,6 @@ Stay Up-To-Date
 
 https://ai4k12.org/activities/
 
-![](img/5f4459cf2ce73de141ed5545ef141fe9.png)
 
 # List of Resources
 

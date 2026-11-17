@@ -214,7 +214,6 @@ https://mp.weixin.qq.com/s/rWSDhIDfe6hx3q_37YNUWA
 
 MCP（模型上下文协议）是一种新的开放协议，旨在标准化应用程序如何为大型语言模型提供上下文 （LLMs）。将 MCP 想象成一个 USB-C 端口，但用于 AI agent：它提供了一种将 AI 系统连接到各种工具和数据源的统一方法。
 
-![](img/3fdbc1f777af8676c4e80c0754b4bb62.png)
 
 传统方式将 AI 系统连接到外部工具涉及集成多个 API。每个 API 集成都意味着单独的代码、文档、身份验证方法、错误处理和维护。
 

@@ -136,7 +136,6 @@ Mixlab：跨学科创新社区，致力于探索人机协作的未来模式。�
 
 ## 共学营作品分享
 
-![](img/12a81ca2eb557b90762571a9523af199.png)
 
 [jinjin-爱的一万种方式-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NvJNbCmsuo3E07xdbMrcjC6Vn40)
 
@@ -192,7 +191,6 @@ Mixlab：跨学科创新社区，致力于探索人机协作的未来模式。�
 
 [设计串珠网页-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RsKObbpHCoeQv8xdFYpcxnSnnle)
 
-![](img/b53867ef0a1b977d22f2b716038f5a48.png)
 
 [天赋星球-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KCEib8MFoobEtzxmDdEcczPinyA)
 
@@ -204,23 +202,18 @@ Mixlab：跨学科创新社区，致力于探索人机协作的未来模式。�
 
 [总裁裁-交互小demo-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J9bIbJTctol2SzxxTDDcqhodnkb)
 
-![](img/0de8cf961f200f095fb249721d225f4a.png)
 
 [总裁裁-情绪记录APP，你今天怎么样？-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PzGnbSJ23oQHzPxneGwcctDSn2T)
 
-![](img/f9f698fc9f6c2ab0e30defe1f13d4407.png)
 
 [总裁裁-趣味调酒app-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YSKcbtYuXoOXqixJUHJcfpMmnqd)
 
-![](img/57d5e26ee4b038de253eb07e4be93cff.png)
 
 [总裁裁-旋转计时器APP-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U9qebuDoqoUtYBxwXMic2tsRn4d)
 
-![](img/63dfeffbd1a6198c79e57360df2803bc.png)
 
 [作品1-打卡-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M7M5bvTaroADnwx9X7PcVW7cnah)
 
-![](img/8336b8c4ee5369e4a461dceadc28d8c4.png)
 
 [作品2-找东西-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JLxPbSnSJoSTapxtSD7cWsJInxr)
 

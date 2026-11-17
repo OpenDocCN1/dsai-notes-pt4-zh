@@ -386,11 +386,9 @@ The personification of the Halloween holiday in the form of a cute girl with sho
 
 第一按钮的意思是读取你上一张图的所有参数信息（包括关键词），比如你画一张图之后，关掉了软件，再次启动点击这个就会把参数复制进来。
 
-![](img/045f78d31fb6b65cb4fda5a4bb8a01b5.png)
 
 第二个按钮就是删除了，清空关键词；这里可以和第一个按钮结合用哦
 
-![](img/f3d4b66db731acfdfbe50b3e9c222591.png)
 
 第三个按钮就是模型选择管理
 
@@ -398,7 +396,6 @@ The personification of the Halloween holiday in the form of a cute girl with sho
 
 这个按钮就是点击就会出现这些功能，你安装的模型和 Lora 都可以在这边调整。
 
-![](img/3b49ccae6ac7e177948760a7a654d1e8.png)
 
 言川小知识：这里可以把你生成的图片添加到模型的封面上，方便你后面看这个模型的效果，看我怎么做：​
 

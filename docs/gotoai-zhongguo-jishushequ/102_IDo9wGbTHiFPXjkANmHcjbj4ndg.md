@@ -4,7 +4,6 @@
 
 https://2025.aksi.co/gartner-ai-maturity-model-2025/
 
-![](img/c7de2f501d98d029495e37fad0b35064.png)
 
 https://2025.aksi.co/gartner-ai-maturity-model-2025/
 
@@ -100,7 +99,6 @@ Ultimately, the model’s principles underscore the importance of a phased appro
 
 ## Strategies for Improving AI Maturity
 
-![](img/05221f991b51c690a3e2f3ca2c235ad7.png)
 
 Organizations can accelerate AI adoption and improve maturity levels through various strategies. These strategies focus on building a strong foundation, effective change management, and iterative improvement.
 

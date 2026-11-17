@@ -202,6 +202,5 @@ https://www.youtube-nocookie.com/embed/XxFj5jdb6qQ?rel=0&autoplay=0&showinfo=0&e
 
 https://share.snipd.com/episode/211cbca7-c118-4a1d-9cb3-74f2fb21b299
 
-![](img/0a53003b2a8792d27590bdbc404deeb1.png)
 
 ![](img/32d557aec521b5e1faabc65af701eb92.png)

@@ -80,21 +80,16 @@
 
 ![](img/478c1d900a880d93fff5e73cb0f156ab.png)
 
-![](img/cb3b6fb425bd8c427e4328a6636ff9e7.png)
 
-![](img/0fbdb994ecdace9c29020bc50a484d3f.png)
 
 ![](img/262ea792abcc90b5bd8fb416a9cd15ef.png)
 
-![](img/da525ceddc1c92b26b78f7a6c822b20d.png)
 
-![](img/63f68fa2e64e6bc2499f259ba7d6d42f.png)
 
 ![](img/75f6f53ae22463114ddcd835662ad123.png)
 
 ![](img/94f8a33a09b561bcf61c573fc0f73b4a.png)
 
-![](img/47ce20ccebc0e1dce4db74bfa7fe04a1.png)
 
 ![](img/91a369a426022f07e02986de72a6dc7d.png)
 

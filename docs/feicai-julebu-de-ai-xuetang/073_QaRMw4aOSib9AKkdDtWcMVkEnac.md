@@ -191,19 +191,14 @@ Google AI Studio Builder 配合 Gemini 3.0 Pro 的超强前端能力已经把 AI
 
 ## **完整分镜图（第一版）**
 
-![](img/dcea8dd7ef88c320ea748b2caefeca8a.png)
 
-![](img/555151dfad0912820caf33adca1c410f.png)
 
 ![](img/7e36ab7096dbb4f4bc17b6a305ff4f74.png)
 
 ## **完整分镜图（第二版）**
 
-![](img/3c08f42eb4563b33f9954ae0926888eb.png)
 
-![](img/ebd1b0c5779506f3fded5f490a1d7970.png)
 
-![](img/496eda0954d16bd54bcdbea1a3234ba6.png)
 
 ![](img/6512b10c5e8d6cd160e45a726e676a72.png)
 

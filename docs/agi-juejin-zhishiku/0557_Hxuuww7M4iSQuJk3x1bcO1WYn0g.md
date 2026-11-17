@@ -18,7 +18,6 @@ https://live.juejin.cn/5982/aiforcode2025vol10
 
 ## **国内版下载二维码**
 
-![](img/4992b642ba510bf9ece9c20e1e0e6d3b.png)
 
 ## **海外版下载二维码**
 
@@ -42,7 +41,6 @@ https://live.juejin.cn/5982/aiforcode2025vol10
 
 🔥如有问题欢迎加群咨询🔥
 
-![](img/c7d997e03d90337f16c4445b23d1d312.png)
 
 # [第八期直播回放](https://juejin.cn/live/aiforcode2025vol8)
 
@@ -54,7 +52,6 @@ https://live.juejin.cn/5982/aiforcode2025vol10
 
 🔥如有问题欢迎加群咨询🔥
 
-![](img/3587f08b21177940b20ca3d67d98d121.png)
 
 # [第七期直播回放](https://juejin.cn/live/aiforcode2025vol7)
 
@@ -64,7 +61,6 @@ https://live.juejin.cn/5982/aiforcode2025vol10
 
 🔥如有问题欢迎加群咨询🔥
 
-![](img/d3f7b78924379cc80a6403fe3d37b34e.png)
 
 # [第六期直播回放](https://juejin.cn/live/aiforcode2025vol6)
 

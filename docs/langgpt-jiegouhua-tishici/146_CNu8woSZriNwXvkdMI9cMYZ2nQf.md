@@ -145,7 +145,6 @@ ollama run phi3
 
 问题一：你相信AGI的到来吗？
 
-![](img/0755fde459efd3fefd08162c7d83bc6a.png)
 
 问题二：使用python写出冒泡代码。使用最简洁写出来。
 

@@ -6,7 +6,6 @@
 
 > 原文：https://mp.weixin.qq.com/s/-h3Bz3GaBcywFcOe2PpNOQ
 
-![](img/0c30bb36391dfafdaae87a094765e1c6.png)
 
 > **❝**
 
@@ -24,7 +23,6 @@
 
 1.  多智能体协作（Multi-agent collaboration） ：多个智能体共同工作，通过分配任务和讨论来提出更优的解决方案。
 
-![](img/3b8741e13888cd086f7fb16fae4bd39f.png)
 
 ##  反思（Reflection）的深度解析
 
@@ -32,7 +30,6 @@
 
 ###  **反思的过程 **
 
-![](img/2088ecef26d684fb8ef6adc21cd3dded.png)
 
 反思过程通常包括以下几个步骤：
 

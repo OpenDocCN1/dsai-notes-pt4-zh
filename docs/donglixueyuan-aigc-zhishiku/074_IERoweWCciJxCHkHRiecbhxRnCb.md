@@ -95,7 +95,6 @@ https://twitter.com/i/status/1664828003845545986
 
 > https://www.midjourney.com/home
 
-![](img/d121aa5234349f4fd0d9e062fb2d1aa9.png)
 
 选择一张图U1，Midjourney Bot生成后通过Web进行浏览
 

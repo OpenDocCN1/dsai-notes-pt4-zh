@@ -28,7 +28,6 @@ https://azure.microsoft.com/zh-cn/solutions/ai/
 
 https://ai.azure.com/labs
 
-![](img/6c2074772ebedd5ee8672306791ce3fd.png)
 
 # 二、Azure AI Foundry 文档库
 
@@ -52,7 +51,6 @@ https://blogs.microsoft.com/
 
 https://www.microsoft.com/zh-cn/ai/ai-customer-stories?msockid=19935c696a296c44172a49e46be96d9b
 
-![](img/5bf03d1988f29e8985470b4f11d5bdd9.png)
 
 ## 1.2 微软中国客户成功案例
 

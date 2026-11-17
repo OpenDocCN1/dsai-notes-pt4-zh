@@ -28,7 +28,6 @@
 
 [MySQL官网主页即可下载Installer](https://dev.mysql.com/downloads/installer/)：https://dev.mysql.com/downloads/installer/
 
-![](img/84c2129368dafd0f4e3b9d88b743d4e8.png)
 
 这里我们选择MySQL 8版本进行下载和安装，不同操作系统的安装流程类似，需要注意的是Installer支持 两种不同的安装模式， 一种是在线安装，这种模式的安装包很小，但会在实际执行安装时一边下载一边   安装；另一种则是本地版本安装，安装包较大，支持离线安装。两种安装模式安装流程没有区别，推荐   选择离线安装模式Installer下载。下载过程无需开启魔法，下载过程非常流畅，不用担心网络问题。
 
@@ -48,7 +47,6 @@
 
 首次运行Installer时会提示选择安装模式，根据此前介绍， MySQL软件架构是为了满足企业生产环境需   求，所以是Server（服务端）和Client  （客户端）分离的模式，因此这里如果选择Server模式，则会安装 专门用于提供MySQL服务相关的组件，而如果选择Client模式，则会只安装一些数据库管理工具和数据   库连接组件。而根据此前的介绍，由于是在本地个人电脑中安装MySQL，因此需要选择full模式，同时安 装Server组件和Client组件：
 
-![](img/8029b34e0640e844866b2fc68f4e644e.png)
 
 此外这里的Custom模式指的是可以自定义安装组件，并不建议初学者选择。
 
@@ -76,7 +74,6 @@ Samples and Examples则属于解释、说明和引导类的组件，其并不影
 
 接下来就进入了安装环节，待安装完成， Installer会引导进入设置配置环节。这里需要设置的配置并不 多，主要是要“打通前后端” ，即需要设置MySQL后端应用服务的端口、账户和密码等，然后测试前端能 否顺利使用该账户在特定的某端口调用MySQL服务。
 
-![](img/c2abd45db6aa0d69ec24c065a95b92d6.png)
 
 一般的配置流程是先设置Server，即点击Next，则会先进入Server配置页面：
 
@@ -106,17 +103,14 @@ Samples and Examples则属于解释、说明和引导类的组件，其并不影
 
 接下来点击Next进入到Router配置，这里需要注意，在没有启用高可用集群InnoDB时Router是无法配  置成功（这里是否成功并不影响之后启用和调用MySQL服务），这里按照如下方式进行配置，然后点击 Test Connection，若安装了InnoDB并设置了正确的Hostname，则可以Connect成功，此时可以点击   Next，若没有安装InnoDB，则此处配置不成功，此时点击Cancel：
 
-![](img/5bb19f787dd4d2d51a10f2b12888acb7.png)
 
 再次强调， MySQL Router无论是否配置成功，都不影响接下来的使用。
 
 无论点击哪个，接下来都会进入到下一个组件的配置过程中。这里我们输入root账户的密码即可，首次 安装时该环节是可以配置成功的：
 
-![](img/f2d14a58951493b3e8bde5d3d0663d01.png)
 
 当全部组件的配置都生成之后，接下来会提示全部安装完成。我们勾选安装完成后启动MySQL Workbench和MySQL Shell，通过这两个组件的使用来测试是否安装成功：
 
-![](img/8b094655197419b8659b59729c795354.png)
 
 当我们点击Finish之后，系统会自动打开MySQL Workbench和MySQL Shell。我们点击MySQL Workbench，并新建一个和MySQL服务的连接：
 

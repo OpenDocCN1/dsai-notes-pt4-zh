@@ -214,7 +214,6 @@ Abigail Larson, an original painting of a scene, a broken village in the middle 
 
 从生成图中挑选数张，选取每一张突出的地方进行合成、重制笔触和添加细节后，得到如下图所示的背景图：
 
-![](img/51af50cacf1fc35f90d06a471f71c663.png)
 
 最后加上狼人和光束变身特效后，进行简单排版就完成了终稿。
 
@@ -246,7 +245,6 @@ Abigail Larson, an original painting of a scene, a broken village in the middle 
 
 Chinese palaces surround the central stage, there are mechanical gears on the building, Chinese style, red, Volume cloud, Volume light
 
-![](img/1f78bdb1a674f1a360c4e97f4e49995f.png)
 
 ![](img/9d285d53d912ae109858b8f0f82a2094.png)
 
@@ -282,9 +280,7 @@ A piece of Chinese architecture floating in the sky, the building is built on fl
 
 这次改动如果不借助 Midjourney，我们就要大面积重新制作，而使用 Midjourney 来制作浮空岛的场景，只需要将我们之前合成好的建筑场景后期替换进去。
 
-![](img/27adc27e358621999ffecf4293993fcc.png)
 
-![](img/6c0bd8a0f0c253a60f1571ea06201973.png)
 
 经过多张类似的推演，我们得到了一张适合通过后期手绘合成的图，做出的设计图如下所示：
 
@@ -296,7 +292,6 @@ A piece of Chinese architecture floating in the sky, the building is built on fl
 
 AR 部门搭建演播厅的设计图，如下所示：
 
-![](img/fd2061574b3e919835dab71387995eff.png)
 
 下图虚拟演播厅中的解说桌也是使用类似的 AI 辅助流程完成的制作：
 

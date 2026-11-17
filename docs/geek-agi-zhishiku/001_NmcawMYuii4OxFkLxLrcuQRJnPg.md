@@ -16,7 +16,6 @@
 
 [2025年 AI Agent行业报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H3rPbfwBloLHgpxKor3cREyun3g)
 
-![](img/a06270ce9117430cbda9b9d9dd676f1f.png)
 
 [Agent研发前沿技术与趋势.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YxjWb2KkroLvjHxjzRZcgRLknAh)
 
@@ -60,107 +59,81 @@
 |  | 利用 SLM 结合边缘设备构建 AIoT Agent |  |
 |  | 零售连锁行业内智能分析 AI Agent 的应用探索 |  |
 
-![](img/d923bb7614f16fe180513230d1269fd1.png)
 
 [虎兴龙-腾讯云wedata+agent的思考与实践.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SvkkbXsnAoCmYExr5QlcnW1Zn4b)
 
-![](img/f2242712f4e45132c559c85a8538d55d.png)
 
 [AICon深圳2025-纷享销客AIAgent平台落地实践.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VCcJbH6RKooIVZxiI3Jc5mHWn7c)
 
-![](img/9c29c001428a8e5defe3327850687d7a.png)
 
 [Agent开发挑战：如何在敏捷与可靠之间做到既要、又要、还要？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DbwEbmrQkoXXM5x4M8scJSDKn4f)
 
-![](img/73519810799103055bca88dc6b28a435.png)
 
 [冯绪-TRAE+在+Agent+代码编辑的实践.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HuLHbciC3oLT3Lx6IItcVRZPnSd)
 
-![](img/ee9437aa5ab30cfbfd0246a003225729.png)
 
 [当AI+Agent成为营销新引擎+破解流量困局与ROI迷局-0823.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F0NVbdyMOoJiDlxP95ecJ56jnob)
 
-![](img/bd1d9c20c03d56a70f7b24c6005fd4ca.png)
 
 [AICon深圳2025+-+终稿+徐奕成.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MiZebYWpyouJuexb2f7c0JNenGe)
 
-![](img/896b9d9f77ae44be285726de3ccd8e50.png)
 
 [AI+Native应用的新范式：Trae在Coding+Agent中的工程实践.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xg0hbJf8WoeuIuxKfPjcOMwUnld)
 
-![](img/5d071d3a372d18746c995ddde71db0e4.png)
 
 [CodeArts+Doer+全流程多+Agent+协同，驱动研发全流程效能跃升.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Avi6bXWKmogevpxNuVFcPBM7n0g)
 
-![](img/0a2c26d48f374f1b4e9c8cf56c5658ce.png)
 
 [周絮-AI+Agent+++AI+Profiling，构建高效智能运维双支柱.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KDo2b7YiaofTlyxH4BWc6csHnxU)
 
-![](img/d5fd236b417dc79cfc68a5cd37638738.png)
 
 [03+AICon2025_MarkCollier+final.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O97WbGqdVoZWFux58xac8mujnWd)
 
-![](img/592051c7321f5eda091f7b3f1ef1050b.png)
 
 [AICon北京2025-叔同-脱敏版.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VnWJbxZnlooUNTx4Dhvc0U9QnNE)
 
-![](img/fb1e6aa5a2781bab37d9d080ab15f34a.png)
 
 [吴方方-AI+Agent+IoT技术方案新场景创新应用.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IUnCbhjHKogGfex6gRMc037Lnxd)
 
-![](img/bfc6d0a3c9502e505503aa5c7e422928.png)
 
 [徐文健-AI+Agent+如何重塑有声内容的生产与分发.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BB1EbogdPoHhuYxGFIDc9SU4nbT)
 
-![](img/9aba9268f1631c41e527dc4b8830105c.png)
 
 [杨方伟-Coding+Agent+驱动研发提效：从实践到流程改进.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VwYhbPFwSo5VdaxX3dVcoC6knWh)
 
-![](img/c00a427ae2e5c08e9a91df2205dea81d.png)
 
 [董鑫-CangjieMagic：基于仓颉语言的Agent开发框架实践.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SUv5bAplTo31mUxBkuVc5ffGnUb)
 
-![](img/bf2d4a926f805c9cd1cab08d63ee9ea7.png)
 
 [李飞-Multi-Agent架构驱动的Data+Agent路线与工程实践.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MvbEbYLO1o22NKxFlvXcuEGcnhe)
 
-![](img/7efd4131577b223116f861e72ed6caf3.png)
 
 [0627-AICon北京2025-让+Agent+进化+Agent+企业自动化的新范式构想.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VUbGblwfJo52roxVyeBcYRXtnuj)
 
-![](img/ad5af9c63b9f33f463a0d774d8adafc2.png)
 
 [AICon_数势科技_岑润哲.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NkOtbsieDoODo0xVFb7cQ793nMb)
 
-![](img/c42e7640f9327b2e50fe99b09171cb06.png)
 
 [从辅助编程到协同编程-张玉明.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lst4bo4iTovQVuxJn0LcppJOn4e)
 
-![](img/8290753ff67bc1549b16cb146dccbf2e.png)
 
 [AICon上海站-陈仲寅+3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qbj2bwsCaoaPkYxuSrucfmFAnTf)
 
-![](img/55264efe072c89135f5962ffd44f5acb.png)
 
 [从指令到+Agent：基于大语言模型构建智能编程助手.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HAfeb2vBEoDQmSxnDGycbAGgnIc)
 
-![](img/f90cab1e38b634ca22fdec94ff5345be.png)
 
 [杨晨-从原型到生产-AgentOps+加速字节+AI+应用落地实践（0410）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OcEVbB3jgoY4UKxERrhciUR2nCc)
 
-![](img/914a18c679a924a229b09944abcd46ae.png)
 
 [邹盼湘-多智能体协同调度.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xv9DbIhyBoQ9vvxIocpcefnInEd)
 
-![](img/efecf58efefa5661e9ca2457c0e2200e.png)
 
 [杞坚玮-Agent技术在小爱同学中的应用++.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VFwab5MuIoEB9WxMJ3Ec8Lr6n2c)
 
-![](img/b7679ab2efd2fd776339b781796c14f4.png)
 
 [李飞-+如何利用+Agent+解决企业数据分析与洞察的经验探索.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NklGbHJTyoA0yDx1SYVcDeLHnvh)
 
-![](img/d1c4840ecd01333caabe1731573e5eac.png)
 
 [多环境下的+LLM+Agent+应用与增强.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UCUFbcByeoEREnxk1rUc6KkdnUg)
 
@@ -168,11 +141,9 @@
 
 [The+Future+is+Here,+A+Deep+Dive+into+Autonomous+Agent.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MrS9bpX3FoiPmmxq9Q3cjYjAnYc)
 
-![](img/16d155cba366ade991495701f7aca378.png)
 
 [面向开放域的大模型智能体-李鹏.v2--优化.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Exeub81mRooJXgxbmIMcqXd8nrb)
 
-![](img/d99573e504cd97a293e3ba0785e4242f.png)
 
 [AI+Agent+在企业生产中的技术实践-陈星亮.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XRAtb3QYfovUBhxasvbcmFHAnFb)
 
@@ -583,19 +554,15 @@
 
 以下是为AI Agent开发工程师精心整理的高频面试题及参考答案，涵盖基础理论、算法设计、系统架构、工程实践与前沿技术，另外也有其他大模型方向的面试题供你查看。
 
-![](img/8827848d66513278c80d611c8d82f2b4.png)
 
 [Agent-架构设计&工程化.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P6E7bWU6kogI6Axq5cbcq7X6nYS)
 
-![](img/70928fc19046ef6874ebc436a4116e31.png)
 
 [Agent-前沿技术与开放问题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OYePbEPzAoimSwxw31Ic5UJonqd)
 
-![](img/74a21c0d904a785e6a0daa4fc7d9d202.png)
 
 [大模型进阶面试题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YUWlbynlyoFpLzxmJC1cp0hFnUb)
 
-![](img/b9c75d75e13d0329f0345a1ec5049dfd.png)
 
 [Agent-基础理论与算法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ERP3bphwzoCAqUx9VwAcyMLYnRh)
 
@@ -607,7 +574,6 @@
 
 [LLMs大模型面试问题和答案（97）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OMbjbYiW9oL8GZx6J7KcG1Mln4g)
 
-![](img/794af3a95f688342eec2339551e596cc.png)
 
 [AI大模型面试题(102).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XhYtbmxxzokkrmxjn4ccWrlnn3e)
 

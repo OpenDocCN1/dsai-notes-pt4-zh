@@ -1608,7 +1608,6 @@ https://info.microsoft.com/ww-thankyou-ai-business-resources.html?LCID=ZH-CN
 
 ## 1.微软《AI 战略路线图》
 
-![](img/583d7827fcb5bd078cfcff84819ba2b3.png)
 
 [微软AI 战略路线图.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LIIfbQLk1oSy6axytQKcBIuJnZb)
 
@@ -1626,7 +1625,6 @@ https://info.microsoft.com/ww-thankyou-ai-business-resources.html?LCID=ZH-CN
 
 ## 4.业务领导者 AI 用例： 借助 AI 实现价值
 
-![](img/d30f9cbb552cf57f3d79c3c161836ef1.png)
 
 [业务领导者 AI 用例.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LxzHbCrd5opLAOxj2l7clKrNnCb)
 
@@ -1640,7 +1638,6 @@ https://info.microsoft.com/ww-thankyou-ai-business-resources.html?LCID=ZH-CN
 
 AI-powered success—with more than 1,000 stories of customer transformation and innovation
 
-![](img/a6c28ab7a605317a9bcc4c6865d37238.png)
 
 ## 7.Drive your business forward with proven AI use cases
 

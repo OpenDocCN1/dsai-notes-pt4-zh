@@ -44,7 +44,6 @@
 
 [漫剧 | 网文改编漫剧 Claude Agent+Skill方法](https://feicaiclub.feishu.cn/wiki/KP4OwdAsyiON2MkeVFXclVybn2d?from=from_copylink)
 
-![](img/db8b0cab476e76d76e6222628ac6620c.png)
 
 [漫剧 | 玄幻类 漫剧剧本创作 Claude Skill](https://feicaiclub.feishu.cn/wiki/GqVLwFcx0iOghhkKZvIcI3dJnBh?from=from_copylink)
 

@@ -4,7 +4,6 @@
 
 阿里《AI应用（AI Agent）开发新范式》是关于AI应用开发的指导性文档。详细介绍AI Agent（智能代理）的开发模式、架构设计、核心组件及与大语言模型（LLM）的结合方式。文档强调AI Agent从传统工具向智能伙伴的进化，基于LLM的推理能力和工具调用实现复杂任务的自动化执行。文章探讨了企业级MCP服务的构建、AI应用的开发路径选择、及云原生技术在AI应用中的应用。《AI应用（AI Agent）开发新范式》提供函数计算、云原生API网关等技术在AI Agent开发中的最佳实践，帮助企业开发者更好地理解和应用AI技术，推动业务智能化转型。
 
-![](img/b59df07b4fccfe7e106dbedc4214d30a.png)
 
 ## **AI 应用概述**
 
@@ -16,7 +15,6 @@
 
 +   构建AI应用的两种路径：全新开发vs.存量改造：全新开发适合颠覆性创新，存量改造适合在现有业务中嵌入AI能力。
 
-![](img/d52e75fb811785e4fe2fd8f9e678309d.png)
 
 ## **AI Agent 概述**
 
@@ -30,7 +28,6 @@
 
 +   **构建AI Agent的核心问题**：如何构建企业级MCP管理体系和选择合适的运行时是关键。
 
-![](img/2a2e91120cbadd6ba9fdcc4c2e9fcca1.png)
 
 ## 函数计算FC概述
 
@@ -46,7 +43,6 @@
 
 +   **函数计算FC应用场景**：介绍了函数计算在HTTP应用、内容处理、大数据、游戏、AI等场景中的具体应用。
 
-![](img/cd784d984191e7d67d0732a8e17cee63.png)
 
 ## 函数计算FC作为AI Agent运行时
 
@@ -64,7 +60,6 @@
 
 +   **AIStudio控制台**：提供了可视化构建AI Agent的平台，支持项目管理、流程编排等功能。
 
-![](img/d3b350301b253bb554e4efc3bed16fa7.png)
 
 ## 函数计算FC作为AI Agent Sandbox
 
@@ -86,7 +81,6 @@
 
 +   Sim Sandbox on FC优势：支持Isaac Sim/Isaac Lab环境，具备异步任务管理和仿真训练能力。
 
-![](img/4cb50cfb3a7cd4b4a83ded86223343b1.png)
 
 ## 云原生API网关&AI网关介绍
 
@@ -100,7 +94,6 @@
 
 +   **云原生API网关–内部实践**：在阿里集团内部的实践案例，展示了其稳定性和性能。
 
-![](img/a36ebc135ceefe601283ec8fc63b560e.png)
 
 ## AI网关代理LLM最佳实践
 
@@ -112,7 +105,6 @@
 
 +   **AI网关代理LLM最佳实践**：提供了消费者管理、模型服务高可用、闭源模型QPS/Token限制等问题的解决方案。
 
-![](img/56b0c3008009ddd6176edadd4d90076d.png)
 
 ### MCP概述
 
@@ -132,7 +124,6 @@
 
 +   **MCP的本质和挑战**：MCP的本质是系统提示词和协同关系的结合，面临系统提示词管理、安全性、现存业务转换等挑战。
 
-![](img/13f51692d15153bd3bd0891ef23cb345.png)
 
 ## AI网关代理MCP服务最佳实践
 
@@ -156,7 +147,6 @@
 
 +   插件机制灵活设置MCP服务代理策略：通过插件机制支持灵活设置MCP服务代理策略，如并发控制、流量控制等。
 
-![](img/67e5bc30caa8dc367515fd30e5af9333.png)
 
 ### MSE Nacos MCP Registry最佳实践
 
@@ -174,7 +164,6 @@
 
 +   **MCP效果验证体系–规划中**：规划中将构建MCP Server效果验证体系，实现Agent对MCP工具的精准触发验证，提供效果展示视图和动态调整建议。
 
-![](img/6b38aa8a3c08a2b17870b8dadb2c0146.png)
 
 ### 基于函数计算FC构建Agent的最佳实践
 
@@ -200,7 +189,6 @@
 
 +   **Azure通过Durable Functions编排实现Multi-Agent**，基于Functions构建Agent/Function Calling最佳实践：Azure通过Durable Functions实现Multi-Agent编排和Agent构建。
 
-![](img/3300e3de007d7320d77dc989290673e8.png)
 
 ### AI应用可观测体系
 
@@ -236,7 +224,6 @@
 
 +   **模型生成结果评估**：通过新的模型对原有模型的Prompt/Response进行二次评估，提升生成效果。
 
-![](img/16f2e662a0cb39ecb15068bbdc8903d4.png)
 
 ### AI应用开发新范式对企业的影响
 

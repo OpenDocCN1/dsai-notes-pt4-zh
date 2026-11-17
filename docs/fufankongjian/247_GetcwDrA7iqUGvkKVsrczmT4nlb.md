@@ -222,7 +222,6 @@ Hashimoto 的核心定义值得反复品味：
 
 > 注：这个类比来源于社区讨论，不是 Hashimoto 原文的内容。但它确实帮助有 DevOps 经验的学员快速建立直觉。
 
-![](img/3f095749a534657d6f813b42e0d6ee10.png)
 
 ### 2.4 里程碑时间线
 
@@ -240,7 +239,6 @@ Hashimoto 的核心定义值得反复品味：
 | 2026.03 | Stripe 公开 Minions 系统：1,300+ PRs/周，500 MCP 工具 | Stripe |
 | 2026.03.24 | Anthropic 发布 GAN 式三 Agent 架构博文 | Anthropic Labs |
 
-![](img/4b826da0796e1847e7fbee85b50fbb58.png)
 
 ---
 
@@ -309,7 +307,6 @@ Agent 犯错 → 分析根因 → 写成规则 → 加入 AGENTS.md
 
 这是一种**增量式学习机制**——不是一次性写出"完美的"配置文件，而是在实际使用中不断积累。这意味着你的 CLAUDE.md 会随着项目推进越来越"聪明"，覆盖越来越多的边界情况。
 
-![](img/fa7b232e90e2eec39b1b1cc9e05df280.png)
 
 #### 三层配置策略
 
@@ -341,7 +338,6 @@ Claude Code 支持三层配置文件，从全局到个人逐级细化：
 | **角色层** | .claude/agents/teacher.md 等 | 各 Agent 的角色定义——Teacher 怎么写课、Student 怎么提问、Researcher 怎么调研 | 对应 Agent 启动时加载 |
 | **任务层** | courses/{slug}/writing-plans/ | 每章课件的写作规划——Block 级大纲、预期产出、截图需求 | Teacher 开始写该章时读取 |
 
-![](img/064b23d047c6f291eb279b8cf9011a49.png)
 
 此外，系统维护着一份 gl**obal-learnings.**md（永久经验库），记录跨课程的通用教训。这正是 Hashimoto 方法论的落地——每当 Agent 犯错或九天老师给出反馈，有价值的经验就会被提炼写入这个文件，下一次会话的 Agent 启动时自动读取，确保同一个错误永远不会犯第二次。
 
@@ -357,7 +353,6 @@ Claude Code 支持三层配置文件，从全局到个人逐级细化：
 
 这里的 Hooks 是什么？如果你用过 Git，可能听说过 Git Hooks——在 git commit 或 git push 时自动触发的检查脚本。AI Agent 的 Hooks 是同样的概念：在 Agent 执行某个操作的前后，自动触发一段检查程序。比如，Agent 准备执行一条命令时（PreToolUse），Hook 先检查这条命令是否安全；Agent 修改完文件后（PostToolUse），Hook 自动运行代码格式化。通过就继续，不通过就拦截——Agent 没有"选择忽略"的余地。
 
-![](img/d069ed267d146625a644ad4a7fe8f6fd.png)
 
 #### Why：为什么"建议"不够，必须有"法律"
 
@@ -378,7 +373,6 @@ Types → Config → Repo → Service → Runtime → UI
 
 **  这不是一个检查清单**，而是一个自动执行的"法律体系"。当 Agent 试图在 UI 层直接调用 Types 层的内部实现（跳过中间抽象层），结构测试会立即失败，告诉 Agent："违反了分层规则，请通过 Service 层调用。"
 
-![](img/3365afdce3bfda471d95c89b99a90e06.png)
 
 #### Claude Code 的 Hooks 系统
 
@@ -443,7 +437,6 @@ prompt** 类型的 Hook 是机械化约束的**高阶形态——它不运行 Sh
 
 OpenAI 的 linter 设计中还有一个精妙之处：自定义 linter 的错误消息同时也是 Agent 的修复指南。当 Agent 违反了某条规则，linter 不只是说"错了"，还告诉 Agent 怎么修——这等于把 Agent 的学习能力嵌入了约束体系。
 
-![](img/7f567f9bcfcd95bb6a6f4170c4944c40.png)
 
 #### Watch-out：约束设计的三个陷阱
 
@@ -463,7 +456,6 @@ OpenAI 的 linter 设计中还有一个精妙之处：自定义 linter 的错误
 
 **第三，EDW 协议**（Expect-Execute-Align）。当 Teacher Agent 编写操作步骤时，必须遵循"先预期→再执行→基于真实输出写文字"的流程。这个协议从机制上杜绝了"凭经验想象输出"的可能——你没有真正执行过的命令，就不能写进课件。
 
-![](img/7f9f0773d6f97f26ae77b4e6cece434a.png)
 
 ### 3.3 支柱三：反馈循环（Feedback Loops）
 
@@ -605,7 +597,6 @@ Generator 完成第一轮实现后，Evaluator 用 Playwright 自动打开页面
 
 标准流程是 3 轮对抗迭代：第一轮发现表面问题（命令跑不通、术语没解释），第二轮暴露深层问题（技术不严谨、竞品差距），第三轮验证修复并收敛。这和 Anthropic 博文中 Generator 的多轮 Sprint 迭代是同一种模式。
 
-![](img/ede3a9bc9b252ef3600ada0ebd2436b9.png)
 
 ### 3.4 支柱四：熵管理（Entropy Management）
 
@@ -613,7 +604,6 @@ Generator 完成第一轮实现后，Evaluator 用 Playwright 自动打开页面
 
 **主**动管理 AI 代码生成带来的独特"系统退化"——不是传统意义上的 bug，而是渐进式的文档漂移、架构侵蚀和风格不一致。 如果不管理，Agent 产出的代码库会越来越难以维护，最终陷入"生成得越快、烂得越快"的恶性循环。
 
-![](img/de1a0a0c3de2b2686c9341100c99234e.png)
 
 #### Why：AI 代码的"独特垃圾"
 
@@ -781,7 +771,6 @@ Stripe 的 Minions 系统可能是目前企业级 Harness Engineering 最成熟�
 
 #### ③ LangChain：不换模型只改 Harness 的逆袭
 
-![](img/69098aa6d7cce8ec9404b0635cf3c108.png)
 
 **  Lan**gChain 的案例之所以特别有说服力，是因为他们控制了变量：模型不变（GPT-5.2-Codex），只调整 Harness 的三个变量（系统提示词、工具、中间件 Hooks），结果排名从 30+ 跃升到 Top 5。他们的独特贡献包括 Doom Loop 检测中间件和 Reasoning Sandwich 推理预算优化。
 
@@ -789,7 +778,6 @@ Stripe 的 Minions 系统可能是目前企业级 Harness Engineering 最成熟�
 
 #### ④ GStack (Garry Tan)：个人开发者的 Harness 标杆
 
-![](img/bd071744c2ae1f63c00065c4f7e78a41.png)
 
 Y Combinator 总裁 Garry Tan 开源了他的 Claude Code 工作流 GStack，48 小时内拿到 10,000 GitHub Stars（截至本课发布时已超过 48k Stars）。
 
@@ -874,7 +862,6 @@ Harness Engineering 才诞生 7 周，前景令人兴奋但也需要保持清醒
 
 > 原文：[H](https://openai.com/index/harness-engineering/)arness engineering: leveraging Codex in an agent-first world（2026 年 2 月）
 
-![](img/dc0cc9d694c4052bb761f6013d6bb947.png)
 
 **价值定位**：整个 Harness Engineering 的方法论宣言，也是价值密度最高的一篇。
 
@@ -896,7 +883,6 @@ Harness Engineering 才诞生 7 周，前景令人兴奋但也需要保持清醒
 
 > 原文：[U](https://openai.com/index/unlocking-the-codex-harness/)nlocking the Codex harness: how we built the App Server
 
-![](img/a81b27a8247ff6568077989c182c3eaa.png)
 
 **价值定位**：回答"怎么让一个 Agent 引擎同时驱动 CLI、VS Code、Web 等六个平台"。
 
@@ -908,7 +894,6 @@ Harness Engineering 才诞生 7 周，前景令人兴奋但也需要保持清醒
 
 > 原文：Unrolling the Codex agent loop
 
-![](img/4a200731e19855da31f8569ba1fe6a07.png)
 
 **价值定位**：揭示 Agent 不是"一次推理"而是"持续循环"——理解循环的每个阶段，才能在正确的位置插入 Harness 组件。
 
@@ -922,7 +907,6 @@ Harness Engineering 才诞生 7 周，前景令人兴奋但也需要保持清醒
 
 > 原文：[Effective Context Engin](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)eering for AI Agents（2025 年 9 月）
 
-![](img/10e352b9de65a8678418ea9103c6b28c.png)
 
 **价值定位**：Context Engineering 的系统方法论，Harness Engineering 的理论前身。
 
@@ -936,7 +920,6 @@ Harness Engineering 才诞生 7 周，前景令人兴奋但也需要保持清醒
 
 > 原文：[Effective Harnesses for](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) Long-Running Agents（2025 年 11 月）
 
-![](img/d9fb743d2c9b85958a2814bf9fb2d1d3.png)
 
 **价值定位**：从理论到工程实践的跨越——解决"Agent 重启后记忆断裂"问题。
 

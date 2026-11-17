@@ -84,7 +84,6 @@ At its core, OpenClaw is a self-hosted autonomous agent. Unlike ChatGPT, which s
 
 ## 💰 Best Budget pc for openclaw
 
-![](img/e62995bcbd322ff6a03bc5d2b4b87c95.png)
 
 ### KAMRUI Pinova P1
 
@@ -142,7 +141,6 @@ Rating: **4.4** (total: 1,754+)
 
 ## 🎯 Best Business option
 
-![](img/fbc61bdfac8dcf1173e1dc1368bebdb5.png)
 
 ### **ACEMAGIC K1**
 
@@ -196,7 +194,6 @@ Rating: **4.3** (total: 116+)
 
 ## 🎮 Best for openclaw & light Gaming
 
-![](img/dcf55d39edbd33a3b4eb70cdaff38b9a.png)
 
 ### **Beelink SER5**
 
@@ -252,7 +249,6 @@ Rating: **4.6** (total: 662+)
 
 ## 🚀 Best for AI Performance & LLM
 
-![](img/a5e2f8011fc7af0da18a7ed00f52da77.png)
 
 ### **GEEKOM A9**
 
@@ -308,7 +304,6 @@ Rating: **4.4** (total: 322+)
 
 ## 🔰 Best Workstation – most powerful & ideal for commerical use-cases
 
-![](img/8ac5dee589018176858de3d6e14f3a7e.png)
 
 ### MINISFORUM MS-S1
 
@@ -364,7 +359,6 @@ Rating: **5** (total: 10+)
 
 ## 🧩 Most Versatile
 
-![](img/4a3ee42a7d8e06a799b8bfa305cc5db2.png)
 
 ### **ASUS NUC14**
 

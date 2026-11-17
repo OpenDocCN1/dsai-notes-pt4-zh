@@ -96,7 +96,6 @@ Llama-Index 最初的初衷非常纯粹：构建一个高效的“接口”，�
 
 +   评估 (Evaluation)： 独有的 "Evaluation-First" 理念，内置了基于 LLM 的评估模块，能够对检索的准确性（Retrieval metrics）和生成的质量（Response metrics）进行自动化评分，解决了 RAG 难以优化的痛点。
 
-![](img/e122cb05fe8d8e1ac30d689b0a90bd43.png)
 
 2.2 极致的定制化空间与丰富的功能接口
 
@@ -1604,7 +1603,6 @@ df.groupby([&#x27;Contract&#x27;, &#x27;Churn&#x27;]).size().unstack().plot(kind
 ```
 ```
 
-![](img/fc7d2e5bc13f79affc502fc4cfa964cb.png)
 
 ```
 # 获取当前的 prompt 模板
@@ -2287,7 +2285,6 @@ print(&quot;\n🎉 恭喜！全链路多模态 RAG 完美跑通！&quot;)
 📂 路径: mineru_output\c25ef0fd-eb56-4851-967a-959e56fe93bd\images\2cebee5ebf8eec7ed07852655b11655a8692178737c5aef72131ee770ed92ca9.jpg
 ```
 
-![](img/33519455e9904bc5b9bedb8268e65534.png)
 
 ```
 🎉 恭喜！全链路多模态 RAG 完美跑通！
@@ -2531,7 +2528,6 @@ display_results(retrieval_results, title=f&quot;Query: {query_str}&quot;)
 ❓ [文搜图] 正在搜索: &#x27;最近家里装修，希望推荐一些好看的家具&#x27;
 ```
 
-![](img/cb2fd8860aaba963939fc1ba3b714bfb.png)
 
 ```
 # --- 测试 ---
@@ -2554,7 +2550,6 @@ display_results(retrieval_results, title=f&quot;Query: {query_str}&quot;)
 ❓ [文搜图] 正在搜索: &#x27;男士穿搭推荐。&#x27;
 ```
 
-![](img/8513bb654df17cb19218d4da661da910.png)
 
 ```
 # --- 测试 ---
@@ -2577,7 +2572,6 @@ display_results(retrieval_results, title=f&quot;Query: {query_str}&quot;)
 ❓ [文搜图] 正在搜索: &#x27;请帮我查询四室一厅的户型图纸。&#x27;
 ```
 
-![](img/b5103a9ce8ca340112dd5da4f6df3f3c.png)
 
 ```
 # === Cell 4: 图搜图 (Image-to-Image) ===
@@ -2612,7 +2606,6 @@ display_results(retrieval_results, title=&quot;Image-to-Image Results&quot;)
 🖼️ 查询图片 (Input):
 ```
 
-![](img/ba16fc94fd0180e0bfe0e0415ea9c583.png)
 
 ```
 🔍 [图搜图] 正在库中寻找相似图片...

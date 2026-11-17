@@ -52,13 +52,11 @@ OpenWeather是一家提供全球范围内的气象数据服务的公司，该公
 
 +   Step 1.登录OpenWeather官网并点击Sign—>create account完成注册。该网站无需魔法即可直接登录，可以使用国内邮箱或者🐧邮箱均可进行注册，官网地址为：https://openweathermap.org/
 
-![](img/213fc03129c4f6c027052433e4fc8a72.png)
 
 ![](img/45c5eb4dc2973a2243b5d7404bc85ef3.png)
 
 +   Step 2.获取API-key：注册完成后，即可在API keys页面查看当前账户的API key：
 
-![](img/42b40279de8016c03a1f7a51a7b7f3ac.png)
 
 ![](img/ba8950dab8fb2ab35cafe69174e704d4.png)
 

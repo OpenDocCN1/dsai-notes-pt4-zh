@@ -12,25 +12,21 @@ Visual Studio Code（简称 VS Code）是微软开发的轻量级开源 IDE，�
 
 https://code.visualstudio.com/
 
-![](img/8f6b05ab38295b95b1bc31649f5339fb.png)
 
 # Visual Studio Code Docs
 
 https://code.visualstudio.com/docs
 
-![](img/1565ab565349dddad779641595a50ef3.png)
 
 # Visual Studio Code for MCP
 
 https://github.com/mcp?utm_source=vscode-website&utm_campaign=mcp-registry-server-launch-2025
 
-![](img/52511822af4f8eec1ee301d9ba51c0a1.png)
 
 # Visual Studio Code API
 
 https://code.visualstudio.com/api
 
-![](img/e82d044269187d4bc6ad35de45034ff7.png)
 
 # Visual Studio Code Extensions
 

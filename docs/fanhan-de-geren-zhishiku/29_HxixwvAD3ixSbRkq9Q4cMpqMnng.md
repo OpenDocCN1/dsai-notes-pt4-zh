@@ -26,7 +26,6 @@
 
 [蒋程驰的简历 AIGC 暑期实习 投递用.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CHCDbufNqoW9V8xGdzfcpuD2nYd)
 
-![](img/3f6482289b21f3ee8d54e256fc2b2332.png)
 
 ![](img/9dc08e545ac981717f01333af6f0766d.png)
 

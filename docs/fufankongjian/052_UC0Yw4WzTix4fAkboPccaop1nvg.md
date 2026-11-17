@@ -233,7 +233,6 @@ huggingface地址：https://huggingface.co/unsloth/DeepSeek-R1-GGUF/tree/main
 
 为了测试所有量化模型，Unsloth没有依赖一般的基准测试，而是要求 DeepSeek R1 创建一个 Flappy Bird 游戏，并进行 3 次尝试（pass@3）。我们根据 10 个标准来打分（比如使用随机颜色、随机形状，是否能在 Python 解释器中运行等）。我们使用了种子值 3407、3408 和 3409，以及推荐的温度值 0.6。以下是chat.deepseek.com 生成的示例：
 
-![](img/446730ee1a320548ab67ee9f61e433eb.png)
 
 而以下则是1.58bit 版本的结果。能够发现，尽管模型大小减少了 80%，我们的动态 1.58bit 版本仍然能够生成有效的输出：
 

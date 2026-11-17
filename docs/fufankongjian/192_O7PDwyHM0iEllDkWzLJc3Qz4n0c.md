@@ -159,11 +159,8 @@ IPython
 
 注册并等登录后，可以直接查看到仪表板：
 
-![](img/233d910e1ea64613201f5e8c27c8056f.png)
 
-![](img/a754bca0c4d47efb52a5fd85ac42165f.png)
 
-![](img/2b468ecae49701364d9ab3284def3c65.png)
 
 ![](img/4ceb78da7c7744ccc66ffa4a72441006.png)
 
@@ -316,7 +313,6 @@ graph = create_react_agent(model=model,
     pip install -U &quot;langgraph-cli[inmem]&quot;
 ```
 
-![](img/9de9df26b638552885350a4d4008e64d.png)
 
 />
 
@@ -326,7 +322,6 @@ graph = create_react_agent(model=model,
 pip install -r requirements.txt
 ```
 
-![](img/a207ba475a721d8c8e8c4e8d7214de91.png)
 
 最后，进入到langgraph_chatbot文件夹，执行LangGraph dev即可启动项目
 
@@ -971,7 +966,6 @@ model = ChatDeepSeek(model=&quot;deepseek-chat&quot;)
 agent = create_agent(model=model, tools=tools, system_prompt=prompt)
 ```
 
-![](img/b7f1b51085083e59ec66a05506a8f188.png)
 
 +   Step 2.创建requirements.txt
 

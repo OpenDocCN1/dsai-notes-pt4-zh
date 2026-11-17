@@ -149,7 +149,6 @@ Nano Banana Pro 是继 Nano Banana 之后，AI 图像生成与编辑领域的一
 
 +   地址：https://gemini.google.com/
 
-![](img/1824c37bb2996eb5ae8846116d4de78e.png)
 
 ![](img/3f548cc7765cb312a46827f019d6aaa5.png)
 
@@ -161,7 +160,6 @@ Nano Banana Pro 是继 Nano Banana 之后，AI 图像生成与编辑领域的一
 
 +   地址：https://aistudio.google.com/
 
-![](img/460f567c87ae966799f778467752f81a.png)
 
 ![](img/f8769cee1275935fe037657d7d76fd9d.png)
 
@@ -175,7 +173,6 @@ Nano Banana Pro 是继 Nano Banana 之后，AI 图像生成与编辑领域的一
 
 +   地址：https://notebooklm.google.com/
 
-![](img/fa8b1f6fc572f44605a339e1d5a56a60.png)
 
 ![](img/2f78f4b6836da747a9b34925c517972d.png)
 
@@ -322,7 +319,6 @@ for part in response.parts:
 
 +   OpenRouter官网地址：https://openrouter.ai/
 
-![](img/cc430114065ad7518bf1f2fd376a0e5a.png)
 
 #### 2.1 OpenRouter中转平台介绍
 
@@ -342,11 +338,9 @@ for part in response.parts:
 
 在官网主页进行注册https://openrouter.ai/，可以使用GitHub账号或者其他任意邮箱进行注册。
 
-![](img/ab8fc7a1b4981743671c27f6a49a1437.png)
 
 完成后需要绑定银行卡：https://openrouter.ai/settings/credits
 
-![](img/152554d181f3cb00cf538e2c43edf4b1.png)
 
 ![](img/31c241bafc57d7685a5ed65789b66a28.png)
 
@@ -597,7 +591,6 @@ Nano Banana Studio 并非单纯**的 API 调试工**具，而是一个功能完�
 
 +
 
-![](img/1cd81c122baf1a22e89fc8aca16426ee.png)
 
 +   安装后端依赖
 
@@ -606,7 +599,6 @@ cd .\backend\
 pip install -r .\requirements.txt
 ```
 
-![](img/fffb79c40380a5040095e8c1316d2aa7.png)
 
 +   开启后端服务
 
@@ -640,7 +632,6 @@ npm run dev
 
 +   在本地浏览器输入：http://localhost:3000/ ，即可开启对话：
 
-![](img/3558fc84aa78e83751d18a6f731aff33.png)
 
 +
 
@@ -652,19 +643,15 @@ npm run dev
 
 +   同时支持对话和绘图模式：
 
-![](img/c9fa4ea795f059cd9d07bd825ca41fe2.png)
 
 +
 
-![](img/4ad5102d956d7baee5f883beb1b5cb07.png)
 
 +   支持多轮对话
 
-![](img/ec52b8e2d9cf9cc8245424aa0cade208.png)
 
 +
 
-![](img/acc00fb773319e4581bbf993fdc40625.png)
 
 +   支持多组图片创作和图片文字混合创作
 
@@ -2144,7 +2131,6 @@ if __name__ == &quot;__main__&quot;:
 
 +
 
-![](img/ddc9d21b52a5f543c9284b2eaedae922.png)
 
 +   安装后端依赖
 
@@ -2153,7 +2139,6 @@ cd .\backend\
 pip install -r .\requirements.txt
 ```
 
-![](img/21ac7ef3ae9fa46bd27087fd1d9c4c2e.png)
 
 +   开启后端服务
 
@@ -2191,7 +2176,6 @@ npm run dev
 
 +
 
-![](img/bded34656243d652f6e3dc12fbbc7a16.png)
 
 +
 

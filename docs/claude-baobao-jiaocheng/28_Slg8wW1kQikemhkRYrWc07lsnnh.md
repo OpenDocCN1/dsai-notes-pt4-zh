@@ -26,7 +26,6 @@ Cookiecounter选项
 
 注册和登入完成后，就是购买动态住宅（可以免费领取200M，基本都是够用的
 
-![](img/8b28c7637110b85b4c152900306fb94c.png)
 
 弄到住宅流量之后，我们下[载指纹浏览](https://www.bitbrowser.cn/)器（注册和安装就不用教了吧....
 
@@ -38,15 +37,12 @@ Cookiecounter选项
 
 它就会自动识别并且拆分，最后保存就行了
 
-![](img/e8c21a0b3d0adb578d5e7ddb5928fc84.png)
 
 接着我们创建浏览器，并且使用代理，代理IP选择你刚刚保存的就行了
 
-![](img/c843caa76de925995bb4718a9fb04d41.png)
 
 别的设置可以你也可以参考我的
 
-![](img/2caa2a6c50432fb92f3c086e92840492.png)
 
 ![](img/9ab6c3cef02d958543a7ea64f2580870.png)
 
@@ -76,19 +72,15 @@ https://ipdata.co/
 
 在注册之前，将魔法的节点调整至非亚洲区域节点，随后打开Adspower Browser将代理填入并且检测是否连接（连接成功状态为绿色，且确保代理地址是美国地区）
 
-![](img/b3ce20763cd2a5640ea7870bc88b3420.png)
 
 在创建浏览器之前，下载一个插件EditThisCookie（此插件目的是为了方便提取cookie并且抹除浏览痕迹，在教程最后会有提及）
 
 （插件网址：https://chromewebstore.google.com/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=zh-CN）
 
-![](img/f0b275f90e8c7870554c8ea9670e7f56.png)
 
-![](img/f3a3b390b3954002f61ee506e03b1e96.png)
 
 随后新建浏览器，在这一步确保内核选择已经下载好的，选择智能匹配会默认给你随便选择一个，导致需要下载对应内核
 
-![](img/01df301ec0fd9a813875455431069319.png)
 
 ![](img/4abc644986e3962ee570f893c87c9d81.png)
 
@@ -100,11 +92,9 @@ ipfoxy刷新住宅ip的网址：http://6.6.6.6:54321/exchange?different=1 使用
 
 以下是ipv6的格式
 
-![](img/60fa1c3c1b0a11dfa1b8b713cbc6d238.png)
 
 关于EditThisCookie插件的使用
 
-![](img/3c5ceaa60797e60dbb4529e750666e37.png)
 
 以下页面可能偶尔显示不出，再次重复上面的操作即可
 

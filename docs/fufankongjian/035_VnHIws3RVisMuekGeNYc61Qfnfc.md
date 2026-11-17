@@ -925,11 +925,9 @@ open-webui serve
 
 接下来即可进入到对话页面：
 
-![](img/c4f1944ae0ad49d37c3195ea090de187.png)
 
 对话效果如下所示：
 
-![](img/10e69ef9a7574f3db2d085b773c7d1a3.png)
 
 ![](img/bb28844b75a2cd651c7e959d877d94f2.png)
 
@@ -937,13 +935,11 @@ open-webui serve
 
 ![](img/2c8d065d3009cfcbd29d6fdec8e69a4d.png)
 
-![](img/1dc7e67d42e054bfe71437338919a4eb.png)
 
 ![](img/a2598822912a2838cc395eed114ad466.png)
 
 ### 4. 代码解释器
 
-![](img/d77c1b12e044121f872f233e6224cf69.png)
 
 ![](img/7b0e854dc7a9d24fac82605b143ca728.png)
 
@@ -957,7 +953,6 @@ https://ollama.com/blog/tool-support
 
 +   Open-WebUI工具调用功能实现
 
-![](img/5e13693cb58f3cdeb5dc1d0a56810c94.png)
 
 然后编写天气查询函数：
 
@@ -1055,7 +1050,6 @@ class Tools:
 
 并将函数进行写入：
 
-![](img/287a6a90817f8336ae766e4dd11e7114.png)
 
 完成后即可看到新的工具：
 
@@ -1063,7 +1057,6 @@ class Tools:
 
 在对话时可以开启天气查询函数：
 
-![](img/d8d8e89bcea7b89c3f4fd7f923655357.png)
 
 ![](img/f3c0b3ef19d0d782d564748d06020116.png)
 

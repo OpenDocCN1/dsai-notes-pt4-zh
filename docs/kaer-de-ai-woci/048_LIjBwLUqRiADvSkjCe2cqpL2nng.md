@@ -16,7 +16,6 @@ https://agent.minimax.io/share/281149687627966
 
 https://agent.minimax.io/share/281183294947504
 
-![](img/ef0ed28a7096d3b7a45e70ee33b9ae4f.png)
 
 [ma2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fm6Hbz71CoR4FdxCWpecTuJNnCh)
 

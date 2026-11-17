@@ -553,13 +553,11 @@ OpenWeather是一家提供全球范围内的气象数据服务的公司，该公
 
 +   Step 1.登录OpenWeather官网并点击Sign—>create account完成注册。该网站无需魔法即可直接登录，可以使用国内邮箱或者🐧邮箱均可进行注册，官网地址为：https://openweathermap.org/
 
-![](img/cd878e61aca1f4236fd8bc3f4eac592f.png)
 
 ![](img/65cc08c1f6fca14a89ca77ce879f7770.png)
 
 +   Step 2.获取API-key：注册完成后，即可在API keys页面查看当前账户的API key：
 
-![](img/b1fe999deb82bebdf6f97335f69b1a45.png)
 
 ![](img/6a184e3fe8b51136f2112071d14253e0.png)
 
@@ -919,7 +917,6 @@ function_args
 
 需要注意的是，外部函数的计算过程仍然是在本地执行，即Chat模型并不会将代码读取到服务器上再进行在线计算，因此接下来我们需要根据模型返回的函数和函数参数，在本地完成函数计算，然后再将计算过程和结果保存为message并追加到messages后面，并第二次调用Chat模型分析函数的计算结果，并最终根据函数计算结果输出用户问题的答案。
 
-![](img/16e6fc16d5a7eede99c4cdbc9eff7798.png)
 
 #### 3.2 Second response
 
@@ -1361,7 +1358,6 @@ C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\IPython\core\pylabto
   fig.canvas.print_figure(bytes_io, **kw)
 ```
 
-![](img/b3b903c47ed5d0b4a1943d616bc4f10d.png)
 
 Assistant: 以下是根据您的Python代码生成的核密度分布图（KDE Plot）结果：
 

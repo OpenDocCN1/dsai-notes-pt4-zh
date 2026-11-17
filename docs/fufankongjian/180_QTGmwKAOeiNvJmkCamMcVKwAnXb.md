@@ -36,7 +36,6 @@
 node -v
 ```
 
-![](img/87af151b0597f4a28fb1f6dd786abe58.png)
 
 然后输入npm install命令，安装ClawdBot，
 
@@ -192,7 +191,6 @@ ClawdBot自带了一套完整的监控、运维、组装Skills的全部功能，
 brew install steipete/tap/imsg
 ```
 
-![](img/3ae0c606de4cbcb7346476b051612a95.png)
 
 安装完成后，输入which imsg来查看工具安装的位置，记住这个地址，
 

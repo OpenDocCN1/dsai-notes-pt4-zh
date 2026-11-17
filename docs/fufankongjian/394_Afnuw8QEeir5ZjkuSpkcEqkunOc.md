@@ -24,9 +24,7 @@
 
 人工智能领域的领军企业OpenAI于9月26日正式发布了一项名为“ChatGPT Pulse”的预览版新功能，标志着其旗舰产品ChatGPT正从一个被动的问答工具，向一个主动的、深度个性化的AI助手发生根本性转变。该功能旨在让ChatGPT能够预见并主动满足用户的需求，每日为用户提供定制化的信息摘要。
 
-![](img/b8d062e47fcb4c3cc4c4e84137f8dfc7.png)
 
-![](img/295052206dbce82cebf46036fbed6a90.png)
 
 ![](img/2ffc2e3b258e9974afd94910c1c97d67.png)
 

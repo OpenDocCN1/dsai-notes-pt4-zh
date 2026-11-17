@@ -30,7 +30,6 @@ MateGen基础功能如下：
 
 +   MateGen Air：是一款基于JupyterLab的智能编程插件，也是全球首款Jupyter**Lab的智能编程插件，轻量级**实现MateGen的各项功能，旨在为数据技术人和Python用户提供更加智能便捷的编程环境，无任何使用门槛，且完全免费；
 
-![](img/2522973f029b0e1db2e490c3a9a79044.png)
 
 +   MateGen API：拥有完整的MateGen各项功能，在Python环境中通过sdk进行调用，是旗舰款Agent API，需要MateGen API-KEY才能使用；
 

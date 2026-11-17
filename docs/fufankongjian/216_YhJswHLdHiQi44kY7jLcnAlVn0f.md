@@ -12,7 +12,6 @@
 
 [深度搜索yml文件.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G44zbbVkjoN9OhxWy7mcxNTwnff)
 
-![](img/ee45e309e3f86b508280ba011e1f8646.png)
 
 **此外，更多企业级大模型技术****学习内容，联系****⬆**️助教回复“Llm”，即可进行咨询（目**前**咨询人数较多，助教老师在加急一一回复啦，小伙伴们发送后耐心等待一下哦🌹～）。
 
@@ -104,7 +103,6 @@
 
 **Deep Research = AI** 从“会回答”升级为“会查证后再回答”。
 
-![](img/be7d7372fcdc96e16f64e3a1b17d572f.png)
 
 ## 什么是“大模型 Agent”？
 
@@ -752,7 +750,6 @@ AI 的演化可以用一句话概括：
 +   **Deep Re**search 让系统能 查清楚并留证据。
 二者结合，才真正让“AI 从能说话 → 能做研究 → 能推动行动”。
 
-![](img/364f917f6a78ddb21b13d76918791678.png)
 
 # 4. DeepResearch Agent 核心原理与系统架构概览
 

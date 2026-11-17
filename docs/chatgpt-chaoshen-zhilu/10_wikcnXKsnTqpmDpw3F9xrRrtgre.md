@@ -428,7 +428,6 @@ https://cloud.tencent.com/developer/news/1024774
 
 ![](img/36fb6a3c2c9e50a0e1410d2d975f4cc8.png)
 
-![](img/bb8e7eecf37f6d2e0355e248efe5587b.png)
 
 ![](img/14f0c5e3aba0e9016560fb17f1b8cdce.png)
 

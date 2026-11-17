@@ -132,7 +132,6 @@ B端活动弹窗一般需要传达专业、正式的氛围，符合商业环境�
 
 A man walking with phone and briefcase, in the style of folk-inspired illustrations, animated gif, elegant lines, blue and light blue, illustration --ar 4:3 --niji 5 --style expressive 带着手机和公文包行走的男子，民俗风格插图，gif 动画，优雅线条，蓝色和浅蓝色，插图
 
-![](img/de5e0fbe54c51919278b073dedb388cb.png)
 
 **数据分析与可视化的背景 **，直接生成数据图表的效果并不是很理想，把办公室场景全部描绘出来生成的素材更加符合需求，但是还需要再手动对素材进行细化。
 

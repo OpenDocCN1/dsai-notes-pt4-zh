@@ -456,7 +456,6 @@ https://chat.openai.com/g/g-cxdULuwpW-16-9tu-pian-wen-zi-rong-he-hui-ben-tu
 
 #  **六、使用剪映 **
 
-![](img/d5184720048326bc565f8f2ca8f6bed8.png)
 
 这边用剪映制作，做了两种不同的绘本，一种是利用 Pike 制作的动画版的。另外一种可以算是有声绘本。
 
@@ -470,7 +469,6 @@ https://chat.openai.com/g/g-cxdULuwpW-16-9tu-pian-wen-zi-rong-he-hui-ben-tu
 
 添加图片，调整音频位置。
 
-![](img/977e9689acc3ee601d167997c1bc7d44.png)
 
 视频可点击阅读原文，移步飞书观看
 

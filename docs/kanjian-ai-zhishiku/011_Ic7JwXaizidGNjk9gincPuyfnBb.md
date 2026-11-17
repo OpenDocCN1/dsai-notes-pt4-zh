@@ -158,11 +158,9 @@
 
 [mmexport1718966314147.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VmdgbW0WIo6rnsxq8yPcpfecnje)
 
-![](img/a4c648698ddb19e1fad245ca2868b80e.png)
 
 [RNFetchBlobTmp_pn6bwzro4sn6oipgxw6hq.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B0sEbhPlQowGiOxbqJIch5Xknjb)
 
-![](img/0deb70dbbbeefc68b4285555b31a6e03.png)
 
 [RNFetchBlobTmp_ntrrwb9qndo8r8zdgvo1ks.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ax9dbkoHDorJpsxldAvcG298nFc)
 
@@ -224,7 +222,6 @@
 
 [WeChat_20240621201327.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MIffbOm8NoSL8CxaA2fcq4Lynkb)
 
-![](img/d7412ee73173721adb64f36c22d963e8.png)
 
 [WeChat_20240621183535.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OJBwb4NnboKFAox0gIDcHIhfnjc)
 
@@ -236,7 +233,6 @@
 
 [WeChat_20240621201343.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YkScb3UJkoh98GxkmUKcOZ2OnJh)
 
-![](img/077fd6d14befe2a3581ccf49a588fa71.png)
 
 [WeChat_20240621183520.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SN6zb4C6Qoa4ZixdKYpcLtVBnVb)
 
@@ -252,7 +248,6 @@
 
 [WeChat_20240621183530.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FavebRzNbo8zGpxUjEdcMA3Xnyd)
 
-![](img/461712c8794ea2e1ec6acd465e47a6ea.png)
 
 [WeChat_20240621183525.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PrHMb04oloyIfKxij4kcegr1n2g)
 
@@ -308,7 +303,6 @@
 
 [a783cb3ac04621378f986a49df2c63b5_WC-EditVideo_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BXELbSFqDorawOxk1KBc5YrhnPb)
 
-![](img/f98d6455a2304a862558ef01f482c8fd.png)
 
 [RNFetchBlobTmp_0c9jptl5uw4gb7drth82kht.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QvDPb4UF1oYNmRxgfurcVLO6n6g)
 
@@ -326,7 +320,6 @@
 
 [7369_1718949801.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QNrPb6OKVo8FOqxqmUvcrup3nmb)
 
-![](img/e20d61f0fc28442e5b2f6168b2a3d7f9.png)
 
 [7367_1718949800.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YAJMbgilQohnvUx7UEacNMSLnVh)
 
@@ -422,7 +415,6 @@
 
 +   一群人在街道上行走，背景有车辆、行人和商店。
 
-![](img/6fa4fd3ef544098f93165fe51ee95b38.png)
 
 [RNFetchBlobTmp_napjgw4u0bnuowyajil7o.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZvDibmEnJoxrbBx1cR3cPar9n3f)
 
@@ -430,7 +422,6 @@
 
 +   **静态物体**: 评估模型对静止物体的识别能力，如家具、车辆、建筑物等。
 
-![](img/949dc6dd674eae3062fd8834e9d3d2fa.png)
 
 [RNFetchBlobTmp_915arcfoqygtq9dilcm1vs.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TdVTbqaXQoRqZTxkLUkcEhjwnue)
 
@@ -474,7 +465,6 @@
 
 一个人躺在床上（啊？2个人）
 
-![](img/5403f055173c622a288a8bff93d2c31c.png)
 
 [RNFetchBlobTmp_q0q1nof0hwqsiig31frjpm.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hf3Zb9xM5oespcxDVBNcwucZn1d)
 
@@ -482,7 +472,6 @@
 
 +   **基本动作**: 评估模型对基本动作的识别能力，如走路、跑步、跳跃等。
 
-![](img/34811b69c11a9d7d305fde94f6cf4756.png)
 
 [RNFetchBlobTmp_dgiiod9mnvg94la0jsduv.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GLF4beqmhoTLMcx8aH4cQyLdnNd)
 
@@ -504,7 +493,6 @@
 
 一群人在舞蹈室里跳舞。
 
-![](img/48e45efe987a48b18a1e7cb8093442d4.png)
 
 [RNFetchBlobTmp_lb90pswoe5g6bl1h2gt2i5.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C1yvb2m3coUQlxxZmaecaf0XnJM)
 
@@ -518,11 +506,9 @@
 
 [RNFetchBlobTmp_570gtmsa9mmuora3es7y0l.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cehpb5N6KonJFHxdSaXcSPLhnSe)
 
-![](img/2387a804290287a9580bf0b60418671d.png)
 
 [RNFetchBlobTmp_oja167y6hffb6omkt69ls.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Px2UbENt6oIkZex2D5icYWF8nOe)
 
-![](img/9aef7c62325209f322885b86c891a2fa.png)
 
 [RNFetchBlobTmp_umuq3wpcd7fx7gz7hcimid.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GVRDbQSZcoEsZDxrJrpcazaennf)
 
@@ -576,7 +562,6 @@
 
 街道在下雨的情况下。
 
-![](img/cda65dd47704f7b50ffccf9eb4d80439.png)
 
 [RNFetchBlobTmp_1ljl5izkwc77m2dtvb840m.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C9eIbOqQPo6fhkxu9XrcPLFenld)
 
@@ -608,7 +593,6 @@
 
 +   一个行人的面部被手遮挡。
 
-![](img/a3123a96a813db0cc5fb35ce7cbe3721.png)
 
 [RNFetchBlobTmp_7d15tobm1pum2o6srjclk.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S3esbGqIdov35JxHQCScRWhOnKf)
 
@@ -642,7 +626,6 @@
 
 [RNFetchBlobTmp_j79b22fyaaqe817mwkaaxb.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IKjOb1bpSoWy90xEu6DcmiEJn9g)
 
-![](img/521a884cc4170af8c5afbd50e5c04ec8.png)
 
 [RNFetchBlobTmp_ichpgaxfv5c9fmulxzc46.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ENWybADevo0Mn8x08otccc4lnTh)
 
@@ -1235,7 +1218,6 @@
 
 测试SORA，花瓣老虎飞天
 
-![](img/9069b91ccce3b87711bdf22f60d41cf3.png)
 
 [WeChat_20240608000533.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DIdLbCFcSoxCjLxkkKrcWjnMnlg)
 
@@ -1259,13 +1241,11 @@
 
 镜头推进，东方韵味，千里江山图
 
-![](img/444cac1952001cb50f3717382bb9e2d1.png)
 
 [WeChat_20240608001154.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DQJ2bhVxDoTsFvxG1WOcKM4qneg)
 
 一个美丽性感的中国女人在泳池里吃苹果
 
-![](img/fcec99d5f63cb5df87cea4147f7d5543.png)
 
 [WeChat_20240608001143.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bhb8bYW08oXjMQxBl2rcuXK5n9g)
 

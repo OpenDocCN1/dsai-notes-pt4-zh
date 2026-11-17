@@ -18,7 +18,6 @@
 
 ---
 
-![](img/1b8223cdbed7e084f34c48fb7b32e154.png)
 
 # [**🟥A**](https://emojipedia.org/large-red-square)**I头条 ｜ 从****“+AI”到“AI+”：**国务院发表关于“人工智能+”行动的意见，万亿产业迎来“聚变”时刻
 

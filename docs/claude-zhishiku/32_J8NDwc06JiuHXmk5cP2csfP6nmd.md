@@ -34,9 +34,7 @@
 
 部分破限需导入正则，请参考：[正则表达式与插图DLC等](https://sqivg8d05rm.feishu.cn/wiki/QKkYwUsGAivp4ukhvBRcYlf6nCd)。
 
-![](img/3154150c63e1ea7e8122bfb5c400b895.png)
 
-![](img/2d092b202ab27bd8845bb20f6480ba2c.png)
 
 ## 导入角色卡
 

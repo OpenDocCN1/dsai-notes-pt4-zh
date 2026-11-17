@@ -12,7 +12,6 @@ CherryStudio官网链接：https://docs.cherry-ai.com/
 
 打开CherryStudio官网链接，点击左侧的"客户端下载"进入客户端下载页面，CherryStudio适用于Windows、macOS以及Linux三种操作环境，你可以根据自己的环境选择合适的安装包。我的演示环境是M1芯片的Mac电脑，我就选择对应安装包，下载安装就可以了。
 
-![](img/9ae9a6012ce29d354c935b3a68742073.png)
 
 ![](img/1f74d2183b7bb77a33ab0f21f24eb707.png)
 
@@ -46,7 +45,6 @@ CherryStudio可以接入各种不同类型的大模型，包括国外的OpenAI�
 
 回到CheryStudio的客户端设置页面，点击“深度求索”进入DeepSeek模型API设置页面，将刚刚获取的DeepSeek模型的API-key，输入到API密钥中，然后点击“检查”，如果出现对号√，则表示可以顺利调用DeepSeek模型。最后记得将右上角的开关打开。
 
-![](img/71f240720d6a6b5901958224e8facc51.png)
 
 点击对话页面，选择 DeepSeek 模型，即可开启对话：
 
@@ -122,7 +120,6 @@ CherryStudio可以接入各种不同类型的大模型，包括国外的OpenAI�
 
 之后，点击“编辑MCP服务器”
 
-![](img/829ca889e33948e174caecbfde40d4f2.png)
 
 之后，点击“编辑MCP服务器”，把这段咒语贴到窗口中
 
@@ -147,13 +144,11 @@ CherryStudio可以接入各种不同类型的大模型，包括国外的OpenAI�
     }
 ```
 
-![](img/d0d04fc8544cb5ef100803bbf4f3fcb0.png)
 
 > 高德MCP Server官方文档：https://lbs.amap.com/api/mcp-server/summary#s6
 
 在MCP服务栏可以看到你添加的所有MCP Server，点击刚刚添加好的高德MCP，名字为“amap-maps”。点击它，即可看到右边的MCP Server详情。打开右上角的开关，如果顺利打开则表示配置成功。（保持开启状态）
 
-![](img/8ff5de46e47ea1536f5348308029cbfa.png)
 
 ## 第四步：调用高德MCP为你规划行程
 
@@ -167,7 +162,6 @@ MCP 配置完成后，在CherryStudio的对话栏中，选择DeepSeek模型，�
 
 （我是来北京旅游的，帮我规划3天的旅游计划并提供可视化地图）
 
-![](img/f036a770dd62409af517598bd1816838.png)
 
 [20250423185519_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ej8nbFNoSoxchrx1tLicItmRnNe)
 
@@ -183,7 +177,6 @@ MCP 配置完成后，在CherryStudio的对话栏中，选择DeepSeek模型，�
 
 +   MCP官方服务器合集：[https://github.com/modelcon](https://github.com/modelcontextprotocol/servers)textprotocol/servers
 
-![](img/9ba01bcf827528dc623f03d41861c039.png)
 
 +   MCP Github热门导航：[https://github.com/punkpeye](https://github.com/punkpeye/awesome-mcp-servers)/awesome-mcp-servers
 
@@ -258,6 +251,5 @@ MCP 配置完成后，在CherryStudio的对话栏中，选择DeepSeek模型，�
 
 > 把以上的三天旅游规划生成三张现代风格的手帐插画图提示词，我希望插画偏可爱风格，每张插画是要包含景点、交通和天气的全部信息，插画是以人物旅行为主视角（比如一个女生旅行），手写文字。
 
-![](img/5b417b37bf7a708dce30c04366ca8477.png)
 
 ![](img/1530b923b4b5b799847c465e1b20eb7c.png)

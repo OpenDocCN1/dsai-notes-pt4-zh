@@ -32,9 +32,7 @@ GotoAI中国技术社区解决方案画册
 
 ![](img/fabe846a6355a319aff24099f3c70ad1.png)
 
-![](img/6f118887c3470024690a7fa9230bc145.png)
 
-![](img/972fdca68097d258986052dd52b1f5a3.png)
 
 ![](img/46aca4170b15aa12eea1a79a79edfac2.png)
 
@@ -48,7 +46,6 @@ GotoAI中国技术社区与新华三H3Cd达成战略合作，在广州，深圳�
 
 GotoAI中国技术社区与新华三H3Cd达成战略合作，在广州，深圳两地共建两个华三GotoAI技术体验中心，
 
-![](img/0e2606aba73dbc2f455c54a6c333f4a3.png)
 
 ## GotoAI中国技术社区与宝德共建宝德GotoAI技术体验中心
 

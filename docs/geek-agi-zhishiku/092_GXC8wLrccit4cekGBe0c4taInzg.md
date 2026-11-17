@@ -103,7 +103,6 @@ https://surl.amap.com/1FT1tlIw3Qe
 | --- | --- | --- |
 | ![](img/0e7496a608555592bf3b5e6c10426fdb.png) | ![](img/0b3dcf66f9e67e57be2a7aa8d89c49c9.png) | ![](img/959e187beee79de18372e48046836607.png) |
 | 深圳站 | 广州站 | 成都站 |
-| ![](img/ee8cfee708fd43bae0ba9ced8ca8a92c.png) | ![](img/051a9db28b9476b5dd2764ab662d1104.png) | ![](img/ce79f432e26d1942f94ca1f46cf5b7e7.png) |
 | 南京站 | 苏州站 | 武汉站 |
 | ![](img/fba0a91c13678281219fde510239c567.png) | ![](img/081479b85fac501f853626140deae726.png) | ![](img/d36f29a04465fcab5a8745c6b11c4f88.png) |
 

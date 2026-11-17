@@ -52,7 +52,6 @@
 
 这里我们在公开课参考资料总，为大家整理了一份从零手动实现Qwen3 Function calling的代码实战流程：
 
-![](img/24a316bcff99984f1fe6ef3612b3338d.png)
 
 ![](img/4cb59ca5681c4cf11d146fae154ef543.png)
 
@@ -100,7 +99,6 @@
 
 +   MCP官方服务器合集：https://github.com/modelcontextprotocol/servers
 
-![](img/35a777db0b891e6d609c578b6c191f8f.png)
 
 +   MCP Github热门导航：https://github.com/punkpeye/awesome-mcp-servers
 
@@ -180,7 +178,6 @@ npx -y @amap/amap-maps-mcp-server
 
 而这个@amap/amap-maps-mcp-server库是一个托管在https://www.npmjs.com/上的库，
 
-![](img/124aa671bea48c1505d761d6c84d8223.png)
 
 可以使用npx命令进行下载。搜索库名即可看到这个库的完整代码，https://www.npmjs.com/package/@amap/amap-maps-mcp-server：
 

@@ -42,7 +42,6 @@
 
 +   项目地址：https://github.com/allenai/olmocr
 
-![](img/a513c4477dd1bd9dbae2eacfc2818901.png)
 
 **        模型**方面，官方已发布 7B 等级的 V**LM 权重，微调自 Qwen2****.5-VL-**7B-Instruct，并提供了相应训练数据集 olmOCR-mix-0225（约 25 万页，保自然阅读顺序），其中还有FP8 量化版本便于推理。
 

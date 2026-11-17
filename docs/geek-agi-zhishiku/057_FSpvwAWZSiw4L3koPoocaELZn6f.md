@@ -336,7 +336,6 @@ WUTpwh
 
 ## 0. 虚拟机环境信息
 
-![](img/3866df9d87bbbc12e350ffc174e2e848.png)
 
 OpenClaw 项目推荐使用 pnpm 作为包管理器，建议安装：
 
@@ -409,7 +408,6 @@ cd openclaw
 
 +   • OPENCLAW_HOME_VOLUME — 在命名卷中持久化 /home/node
 
-![](img/bb9e59e3132100c4a0aaee10026932d0.png)
 
 ![](img/f3b09dbc1f9886a5e70114c2e2270767.png)
 
@@ -442,7 +440,6 @@ docker compose -f /openclaw/docker-compose.yml run --rm openclaw-cli onboard --i
 
 若之前已经初始化，您也可以运行 openclaw config 选择 model 配置。
 
-![](img/d40422e66efe8cbab4f3574ee65b9fa5.png)
 
 ### 2.1 开始配置：
 
@@ -517,7 +514,6 @@ docker compose -f /openclaw/docker-compose.yml run --rm openclaw-cli onboard
 
 1.  5. **开启所需的权限：**
 
-![](img/04e4f532fff335aa7333657b8f9491dc.png)
 
 ![](img/5586302df4554a38236fc674ead40c5b.png)
 
@@ -748,7 +744,6 @@ openclaw pairing approve feishu DNE7FHRR
 
 ## 5.openclaw 命令行
 
-![](img/1fcd92a05a1270cad22ddc5e739c9355.png)
 
 为了让你在排查和日常管理时更加一目了然，我将最常用的 OpenClaw 核心命令整理成了下方的速查表。
 
@@ -785,7 +780,6 @@ source ~/.bashrc
 
 ## Docker Compose 常用运维命令
 
-![](img/72010f8026537572cfb125cfba61d9ce.png)
 
 ## OpenClaw 核心文件说明
 
@@ -983,7 +977,6 @@ Save the new SOUL.md. Welcome to having a personality.
 
 “保存配置”，API 部分搞定！
 
-![](img/e2e0f72eef53daa6aa6c471a88f45851.png)
 
 这**里还要提醒一下**，配置好 API Key、BASE URL 后，如果点左下角的“测试连接”，可能会出现红色的报错信息，直接忽略就行。
 
@@ -1003,7 +996,6 @@ Save the new SOUL.md. Welcome to having a personality.
 
 在弹出页面里填好“应用名称”和“应用描述”。
 
-![](img/bcf4211a7319aa238cd15ae7343995ce.png)
 
 保存好以后，在左边菜单栏找到第一个选项“凭证与基础信息”，点击进入下一个页面。
 
@@ -1017,15 +1009,12 @@ Save the new SOUL.md. Welcome to having a personality.
 
 **在钉钉开发**者平台点击左侧的“添加应用能力”，找到最右边那个“机器人”，点“添加”，其他不用管。
 
-![](img/26a996873d0249944e5dac57a29aaa1a.png)
 
 添加完成，点击左侧菜单栏出现的“机器人”选项。在右边的页面里打开“机器人配置”后面的开关。
 
-![](img/9b1f23cc82a471bfc8a3a80c99be22fc.png)
 
 **把页面上所有带星星***的选项填好，页面底部的“消息接收模式”也选择“Stream模式”。（这里有一个必填项叫“机器人消息预览图”，我随便传了一张图上去）
 
-![](img/82b57cf283e9567b33476b610478b469.png)
 
 接下来就到最后一步了！点击页面上方的“查看版本详情”，依次填写“版本详情”和“版本描述”。最后保存，发布。（一定要保存，直接点右侧的“发布”按钮会报错）
 

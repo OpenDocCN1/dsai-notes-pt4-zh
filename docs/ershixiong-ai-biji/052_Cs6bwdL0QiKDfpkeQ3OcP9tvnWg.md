@@ -2,7 +2,6 @@
 
 > 来源：[https://qianniucity.feishu.cn/docx/VFnidsYbToYh6TxrR45c25p1n8f](https://qianniucity.feishu.cn/docx/VFnidsYbToYh6TxrR45c25p1n8f)
 
-![](img/fd4ff94496241a2d8273e353df350f28.png)
 
 今天和大家分享一个我最近完成的项目——一个 emoji 生成网站，并且我已经将它开源啦！在这个项目中，我使用了 21st 和 Cursor，这两者的结合让我在开发过程中实现了速度与美观的双向飞跃。
 

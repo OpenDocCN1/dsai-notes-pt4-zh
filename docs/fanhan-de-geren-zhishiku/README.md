@@ -136,7 +136,6 @@
 
 ![](img/1d94d2050ec5d16d6cf8a560f9677b2d.png)
 
-![](img/4bc15af6075b0254e3c2e93e6db604c6.png)
 
 ![](img/044567c35685697ff4b721f6af196a83.png)
 
@@ -276,7 +275,6 @@
 
 # 👀 你可能在这些地方见过我
 
-![](img/aafbdb465d0b71365d2a4e81e5eabeaf.png)
 
 ![](img/6de93587929238c64f60519458143736.png)
 
@@ -300,7 +298,6 @@
 
 ![](img/7aa61120a7d515072b524a5ed20c06ed.png)
 
-![](img/827d1ec3e5f703d49e0232bb7233866c.png)
 
 ![](img/c236a908478b975c90bd240411db5f54.png)
 
@@ -326,9 +323,7 @@
 
 ![](img/fdf5f40b2d22de219dc21128e23c2671.png)
 
-![](img/a4521c6315c7e065ec63afdb22ae9639.png)
 
-![](img/e70d8e184f414cc65f341c0716fc80d4.png)
 
 ![](img/830bb4ee873efdbaab62bf1d5d63b572.png)
 

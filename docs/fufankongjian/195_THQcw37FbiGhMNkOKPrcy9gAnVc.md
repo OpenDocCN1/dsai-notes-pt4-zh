@@ -28,11 +28,9 @@
 
 核心功能一：源码部署 MinerU，使用 vLLM 启动推理服务，并以 MCP Server方式与LagnChain完成集成，支持批量解析多模态PDF、图片格式文件；
 
-![](img/cef4d5aefcea589c4beb0000c686874d.png)
 
 核心功能二：使用 vLLM 推理框架部署启动 DeepSeek-OCR 解析服务接口，并支持批量解析PDF和图像文件格式；
 
-![](img/e2bb39519935b08dbb710aa1ed3ebc16.png)
 
 核心功能三：本地部署 PaddleOCR-VL ，并通过 PaddleOCR CLI 工具挂载 vLLM 推理服务，提供极高性能的OCR解析服务，支持批量解析PDF和图像文件格式；
 
@@ -1143,7 +1141,6 @@ PaddleOCR-VL 是在这个生态内新发布的一个专注于“文档解析／�
 ![](img/67252fc5ececb01bb5461ade8e749f06.png)
 
 
-![](img/03309c1e2baccb8e14b80f61efb77b96.png)
 
 ```
 如果看到如下“”信息，说明 PaddlePaddle 已成功安装。

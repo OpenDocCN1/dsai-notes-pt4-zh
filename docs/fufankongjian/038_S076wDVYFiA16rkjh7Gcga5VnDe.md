@@ -208,7 +208,6 @@ ollama -v
 
 ![](img/87b13da174a3f939306be34f62ec801c.png)
 
-![](img/31e0943b017348b648ab8ff0fb2b9714.png)
 
 ![](img/28e9ae8ff429bc7779ad60983efd1d9f.png)
 
@@ -246,7 +245,6 @@ If I have 5 apples and give away 2, how many do I have left?
 
 问，他们应该如何分赃
 
-![](img/a37caa6aef171b759d38c7e922c70d3f.png)
 
 ![](img/f734439b53d2ef5a4d6fdd47f92249e5.png)
 
@@ -527,13 +525,9 @@ while True:
 
 ![](img/5cc57877cd499fb413234ca599570239.png)
 
-![](img/3d741bb8443a89359641bbc465acc771.png)
 
-![](img/4e2f4667f8fac3b6734306bd01098e83.png)
 
-![](img/cf594bdff5068900116716c095f2a562.png)
 
-![](img/b4fee287ef3af4f960d7fb9ec1cdec85.png)
 
 ![](img/0905214917bca90f0b548cd937326dc9.png)
 
@@ -623,7 +617,6 @@ Prove that the limit of the sequence (a(n)) defined by a(n) = 1/(n^2) is 0
 
 计算巴黎距离柏林之间的距离
 
-![](img/74daeee6a550e57fac3eb1998a8c8528.png)
 
 ![](img/3baf565edca3cb2668d9413cf9929d83.png)
 
@@ -637,11 +630,8 @@ Prove that the limit of the sequence (a(n)) defined by a(n) = 1/(n^2) is 0
 
 ![](img/56aecc58a8a8990e293df89e7aa052fd.png)
 
-![](img/d6ffa60997cfc53d09e1064695713f71.png)
 
-![](img/3f0d1ccc6c134c6f4067c4df71b4a8da.png)
 
-![](img/dfd95f570a3230915e7285a982dba469.png)
 
 ![](img/61129dcaff2fafe79287c3315d0bbe03.png)
 

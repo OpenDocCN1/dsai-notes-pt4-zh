@@ -28,7 +28,6 @@
 
 > 给我制作一段动漫里情侣吵架互怼的名场面，人物动作和配音要合理，台词设计的要毒舌要有趣，人物生气，语速比较快，使用可以直接生成配音并作出口型同步的模型，严格保证人物的一致性
 
-![](img/a70758910db65ead34f1e07e607f824a.png)
 
 [毒舌情侣吵架：动漫名场面的幽默碰撞-1766037132116.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D2GJbHou0o3K4gxSIzfc9p9TnHg)
 

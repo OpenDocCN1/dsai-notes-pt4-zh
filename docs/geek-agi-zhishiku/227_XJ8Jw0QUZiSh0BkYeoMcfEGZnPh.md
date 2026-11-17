@@ -68,7 +68,6 @@ LangUI **[1] **：一个基于 Tailwind **[2] **，专门为 AI 和 GPT 项目�
 
 从 LangUI 文档 **[7] **中复制所需组件的 HTML 或 JSX 代码。将代码粘贴到项目的 HTML 或 React / Vue / Angular 组件中即可（这部分没啥难度，自己看文档即可操作，不再赘述）。
 
-![](img/3929034962a0744f28651f0f50f71020.png)
 
 ![](img/d126cda3bcb07c32cf97be82cb7efd37.png)
 

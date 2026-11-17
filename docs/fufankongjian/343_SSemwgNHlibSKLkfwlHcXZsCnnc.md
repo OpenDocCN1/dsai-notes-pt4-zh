@@ -22,11 +22,9 @@
 
 +   vLLM开启思考模式对话效果展示（同SGLang）
 
-![](img/92362156e1e15031a9d36f5659870ad7.png)
 
 +   vLLM关闭思考模式对话效果展示（同SGLang）
 
-![](img/1b8cc7e206a064598c7ebb159a8d0c6c.png)
 
 +   ollama开启思考模式对话效果展示
 

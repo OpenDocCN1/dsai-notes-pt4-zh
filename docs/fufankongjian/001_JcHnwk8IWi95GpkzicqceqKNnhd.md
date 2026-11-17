@@ -86,17 +86,13 @@
 
 ### README文档
 
-![](img/34dbd2a47fea7c03f45096c6bcb762a0.png)
 
-![](img/43fc04d7531cad66b6c20ee79761f62a.png)
 
 ---
 
 ### 热门项目实战合集
 
-![](img/910e0ff3cb625ef2b238aeed06f511da.png)
 
-![](img/41e630173e3669bfdc03584f7eaba22c.png)
 
 ---
 
@@ -128,7 +124,6 @@
 
 ### 确定自己的学习路径
 
-![](img/7a1095126549b3a2246d84be86976c31.png)
 
 ---
 

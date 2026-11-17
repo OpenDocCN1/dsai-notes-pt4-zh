@@ -14,7 +14,6 @@
 
 ![](img/97507b7b61558a44611ddc03ae32c361.png)
 
-![](img/71232a13811cb0c4a1e5f2116d36555a.png)
 
 ![](img/13a230c63caab82eac341e2928452626.png)
 
@@ -66,7 +65,6 @@
 
 ![](img/95ab5aafbd894fa266295558a4d0f909.png)
 
-![](img/9a7ed78717fd39f5b36b221d4f3a4e27.png)
 
 ![](img/f6a7d15ad48d2a36337b337a0af17baa.png)
 

@@ -178,7 +178,6 @@
 
 ![](img/6edfa50ee98846a74fb9a483e731add1.png)
 
-![](img/3775e79fb9b0b886cbc27c739b2fce33.png)
 
 **测试提示词如下：**
 

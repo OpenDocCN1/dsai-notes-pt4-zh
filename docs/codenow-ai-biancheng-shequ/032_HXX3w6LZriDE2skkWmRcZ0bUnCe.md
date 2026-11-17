@@ -20,7 +20,6 @@
 
 ## 3-21 APPSO AIDONE 第三期
 
-![](img/482c55d4c4cecef19441388d95482929.png)
 
 ![](img/41c2a28e4c270f138d9d73f599ad4947.png)
 
@@ -32,7 +31,6 @@
 
 ## 3-7 如皋 OPC 和 AgentOS
 
-![](img/854d5f270343dcd7d13524dae3f03c24.png)
 
 ![](img/dd6842f72615e09d042deaa1aa933d43.png)
 
@@ -46,7 +44,6 @@
 
 ![](img/aa63748d76a9ce2dd947565505fff426.png)
 
-![](img/fffdd89a93b1f4229a56a5269ea1ed81.png)
 
 ![](img/93326d01fabb4f3cd90588fd60ea0767.png)
 
@@ -58,7 +55,6 @@
 
 ![](img/166d721592c33c234d4b4bdc0fd0417f.png)
 
-![](img/3bf4a0e0a0d8506ee385c6836a81f13d.png)
 
 ![](img/229e225828d4cc0e26a5a7397f7d02e3.png)
 
@@ -72,7 +68,6 @@
 
 ## 11-22 Trae Friends @ 广州
 
-![](img/6b02662bc04a42b60563a6543502a3e2.png)
 
 ![](img/a08f4bce753915cc4821d3c9f58b3515.png)
 

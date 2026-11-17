@@ -184,11 +184,8 @@ uv
 
 注册并等登录后，可以直接查看到仪表板：
 
-![](img/ea84ad301b2e8e8b373e11978ca696c9.png)
 
-![](img/906554b4b41b92e13dee834cc514cfa4.png)
 
-![](img/a6a3207332dc3c9aa25bca0f8d3a263e.png)
 
 ![](img/af0be7fad5afc368974d4a0ab2f7a636.png)
 
@@ -362,7 +359,6 @@ Your browser does not support the video element.
 
 而如果此前设置了追踪，此时就能在LangSmith中看到当前项目运行情况：
 
-![](img/d3384f429b995333fbec1858d2996ce3.png)
 
 ```
 Video(&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/2025-06-26%2019-52-57.mp4&quot;, width=800, height=400)
@@ -403,7 +399,6 @@ npm install -g pnpm
 pnpm -v
 ```
 
-![](img/5a8f4bd532b9c83f2b6ad15aeb94355b.png)
 
 +   Step 3. 安装前端项目依赖
 
@@ -419,7 +414,6 @@ pnpm dev
 
 ![](img/83deabb2541aacc98fa4b6174f721a58.png)
 
-![](img/096b480a9b81ebb1a8ea45c4dbb6da00.png)
 
 ![](img/8afdd6ffb09408d2b44072d0ffe1a303.png)
 

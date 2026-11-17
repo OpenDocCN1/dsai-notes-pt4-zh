@@ -18,11 +18,9 @@ https://sora2.guide/
 
 https://sora2.guide/comparison
 
-![](img/b68815295e19786c8faf1193978b031d.png)
 
 # Sora 2 Tutorials
 
-![](img/9bdd55366f3d5884f5d036ec6635ca4b.png)
 
 https://sora2.guide/tutorials
 

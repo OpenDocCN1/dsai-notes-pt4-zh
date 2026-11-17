@@ -18,7 +18,6 @@
 
 安装后，codex就出现在菜单栏中，直接点击这个图标，进入codex对话界面
 
-![](img/caae96f7b4c62bb9048daef80361e4b6.png)
 
 ## 三、导入GitHub项目文件
 
@@ -76,7 +75,6 @@ https://finnhub.io/
 
 我这里因为对前端设计比较有要求，同时我看到项目的前端框架是streamlit，所以要求codex帮我改一下前端框架，从streamlit调整为Vue3，如果大家对前端没特殊要求，可以跳过这步，因为Vue3还需要依赖云数据库MongoDB和Redis的配置，对非技术用户来说有点麻烦
 
-![](img/5bea06d6bc5e9443110b3884eacc083f.png)
 
 云服务配置地址：
 
@@ -185,11 +183,9 @@ python -m cli.main
 
 界面将显示可选参数：股票代码、日期、大语言模型、研究深度等。
 
-![](img/03086ef70be67ae877ccb11eaa9dbb59.png)
 
 运行时会实时显示加载结果，可追踪代理执行进度。
 
-![](img/7554e2c625a7d098e73a4040a69771e1.png)
 
 ![](img/9b8330958d1f0ed052d415418d23007b.png)
 

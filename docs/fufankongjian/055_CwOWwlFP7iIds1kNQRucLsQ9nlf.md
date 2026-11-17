@@ -387,9 +387,7 @@ data[&#x27;train&#x27;][0]
 
 ![](img/e13a0ed4cfe63aaffb3c4cf0ee090feb.png)
 
-![](img/eae865f51dd7eaae0bd7141375700818.png)
 
-![](img/64365ad34daf326a4a2730156fa94f13.png)
 
 ![](img/1d7f1a85b0758521c35ef036410bf6e5.png)
 

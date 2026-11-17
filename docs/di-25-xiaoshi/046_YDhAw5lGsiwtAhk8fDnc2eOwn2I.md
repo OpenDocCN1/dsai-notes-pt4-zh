@@ -34,7 +34,6 @@ Vector Search是指使用向量空间模型（Vector Space Model）进行信息�
 
 其中这个插件计划里面也举例了一些可以存放的向量数据库：Milvus、Pinecone、Qdrant、Redis、Weaviate or Zilliz。
 
-![](img/99c00361deafd4e7cc647b41f40b52db.png)
 
 ## 4、MVP framework：LLM + VectorDB + Prompt
 
@@ -86,7 +85,6 @@ towhee也预置了很多主流的模型，基本上国外的主流模型都已�
 
 在这里，可以理解为：每一个模型相当于一个算子，直接配置进来进行切换就好了。
 
-![](img/62046e49c4537fba1e01c3d40e519cfd.png)
 
 ## 3、Zilliz
 

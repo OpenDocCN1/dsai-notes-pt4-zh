@@ -6,15 +6,12 @@
 
 [大模型 RAG 经验面.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vo2IbC4E2oSwhDxeA8ocLVOjnXe)
 
-![](img/91f013bb032abf6cf127e98f513fdd88.png)
 
 [大模型进阶面试题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V3tkbBbTEospvOxvjvQc6l5fnxh)
 
-![](img/c23178b7324db2c9ac24ebaa70b2e866.png)
 
 [大模型面试题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MEwYbZrUJomWWuxp3QGctl8Qnvb)
 
-![](img/c636b3d0a97a40b934cb5c6e5106ae7c.png)
 
 [最新大厂AI面试题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HJxObx5xUolxmexH5eqcom9pnWc)
 

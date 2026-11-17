@@ -32,7 +32,6 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 #### 自动完成网络等检验过后选择模式一
 
-![](img/84b57f28b7aad6778f0467b0c29e044c.png)
 
 #### 选择已安装的浏览器（Edge/Chrome）
 

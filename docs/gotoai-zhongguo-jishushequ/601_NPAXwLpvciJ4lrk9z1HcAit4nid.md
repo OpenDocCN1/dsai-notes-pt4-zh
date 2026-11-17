@@ -113,7 +113,6 @@ https://unsloth.ai/
 
 https://docs.unsloth.ai/
 
-![](img/0b44820d2e5ebd09adcd53d48412a30d.png)
 
 # 四、Unsloth GitHub
 

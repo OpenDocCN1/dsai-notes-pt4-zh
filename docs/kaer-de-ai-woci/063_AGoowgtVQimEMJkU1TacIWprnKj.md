@@ -106,13 +106,9 @@ Reimagine the person in this photo in the style of the ${decade}. This includes 
 
 > Using the style of this image, the ingredients—West African cocoa powder (from Ghana/Côte d'Ivoire), milk, cinnamon, black pepper (a pinch), brown sugar, and milk foam—are transformed into a complete step-by-step recipe infographic, presented from a top-down perspective. The infographic is presented in a minimalist style with a white background. The image includes labeled ingredient photos, with dotted lines connecting icons representing the preparation steps. A photo of the finished West African cocoa latte in a cup appears at the bottom of the infographic.
 
-![](img/73049db484e7b02e96be7ff63d33be66.png)
 
-![](img/ca2df61a7be98b650defb867ad8369ac.png)
 
-![](img/9d53ca7d9b1bd09fd90137b81eab937e.png)
 
-![](img/c92d9be4546263d1effae6d0f9074206.png)
 
 ![](img/e3c3f49c9e288de2ccf7b5c35eb93370.png)
 
@@ -132,9 +128,7 @@ Reimagine the person in this photo in the style of the ${decade}. This includes 
 
 ![](img/257859049aeb1cff94efd579d908bbc6.png)
 
-![](img/54880bb5753706f4757d492a9f23245c.png)
 
-![](img/da64a2df2902c26230e6b49666bf1efd.png)
 
 ![](img/315329c9160d536c081101a94c2dc1cd.png)
 
@@ -158,7 +152,6 @@ Reimagine the person in this photo in the style of the ${decade}. This includes 
 
 ![](img/95b8c51a481a78f2a697bf170c3c53aa.png)
 
-![](img/9b27001150b0b0cf878dbf0518e5c844.png)
 
 +   转成3D建模的白模，去掉背景
 
@@ -170,9 +163,7 @@ Reimagine the person in this photo in the style of the ${decade}. This includes 
 
 ![](img/3b0c8b93d202e1d17418e8ccc9ba1d6d.png)
 
-![](img/9c409faffa751db4c1a8f6c3bd3502bb.png)
 
-![](img/8b19dd38ca9888e3fa6ca341db8e397b.png)
 
 ![](img/fb3e408966ddf7972806e8fe660d3af7.png)
 
@@ -186,9 +177,7 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/541786f5ea00689b20b4aeef211563bc.png)
 
-![](img/b48773ce1ccd1b7a2417d9a7a04cff89.png)
 
-![](img/d0ea3ec8536561fecbd01b9fe2bce5f7.png)
 
 > you are a location-based AR experience generator. highlight [point of interest] in this image and annotateelevant information about it.
 
@@ -216,9 +205,7 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/ce1f1e285d28e1d258483d80a7431e3f.png)
 
-![](img/627fc69f1643053604ea84327462bf6c.png)
 
-![](img/aab4bf87bd42d6380064e33c48c6fd7d.png)
 
 ![](img/c8fab6fa27f040a4fb889328c06219a5.png)
 
@@ -228,7 +215,6 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/e3096d618cdc0fb21fb7778a893a5b62.png)
 
-![](img/18821fd07edb0b8e5adb71d307e7c4a6.png)
 
 ![](img/6418f9fdacdbec7405872928be6b8710.png)
 
@@ -280,11 +266,8 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 > replace the brush area with a chanel bag
 
-![](img/b6d0a19d8fd31783a11fa2627f52c5b9.png)
 
-![](img/cb7050e57a81d9bce2ed0fb44ef35e5d.png)
 
-![](img/2b360bbb0226b8953cbe2c92a20dae4f.png)
 
 ![](img/80509e166efbefe4ed2429b4c2dd6b7c.png)
 
@@ -356,7 +339,6 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/6447e68bc8a49b6eb8122635731b119a.png)
 
-![](img/44c70231037232561c1f5617f592cc89.png)
 
 ![](img/e9376de2e1cad8b5335fed332c031409.png)
 
@@ -388,11 +370,9 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 解释GPT5是什么
 
-![](img/6b3258250ba81b72aaddc3de0eba9c3a.png)
 
 解释AI coding和人工codng的区别
 
-![](img/859db2279af450ab131a0e4b66b56fb1.png)
 
 > 为文章内容生成信息图
 

@@ -78,7 +78,6 @@
 
 打开无痕浏览，登录后获取Cookie。
 
-![](img/b6ee9b3f9d7e55ab66a29d717346ec4c.png)
 
 ![](img/8a3549bc29e6156986650557313abc10.png)
 

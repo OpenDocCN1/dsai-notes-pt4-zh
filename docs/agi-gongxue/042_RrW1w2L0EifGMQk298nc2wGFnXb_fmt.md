@@ -129,11 +129,9 @@ wsl --set-default-version 2
 
 https://www.docker.com/
 
-![](img/d18c7f86bcb37c7223f5ff7c731a5f6b.png)
 
 #### 选择 windows 版本
 
-![](img/1cdb510d5239193b23bbdeeca2e2906b.png)
 
 #### 下载后一直点击安装到最后
 

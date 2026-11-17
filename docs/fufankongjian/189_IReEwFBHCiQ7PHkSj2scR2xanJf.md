@@ -325,11 +325,9 @@ Dashscope阿里百炼原名是阿里云的灵积社区，也是国内最大的AP
 
 阿里百炼平台官网：https://bailian.console.aliyun.com/?switchAgent=11366636&productCode=p_efm&switchUserType=3&tab=home#/home
 
-![](img/2b27306d1ee4450768bd2ba721af4beb.png)
 
 而百炼API获取方式也非常简单，只需注册阿里云账号，然后前往我的API页面：https://bailian.console.aliyun.com/?tab=model#/api-key 进行充值和注册即可：
 
-![](img/cf7d1e18096ee668699903030aa7ce04.png)
 
 然后即可调用海量各类模型了：
 

@@ -12,7 +12,6 @@ https://promptengineering.org/enterprise-generative-ai-implementation-model/
 
 Empower your organization or business with AI through this comprehensive framework and blueprint.
 
-![](img/334084771f51751367fbba90d9bb91db.png)
 
 ## TLDR:
 
@@ -28,7 +27,6 @@ This article outlines a layered model for strategically adopting generative AI w
 
 +   Application layer – Providing interfaces for end users to interact with the intelligent assistant or services.
 
-![](img/8681ca37ca4857c52eb9b396c6b80a70.png)
 
 Together these layers enable businesses to leverage generative AI as a flexible tool tailored to enhance workflows across operations. The model demystifies implementation, providing a valuable framework for integrating these powerful capabilities into existing systems. With thoughtful adoption, enterprises can realize substantial gains in productivity, personalization, innovation, insights and new opportunities.
 
@@ -56,7 +54,6 @@ The following sections present a simplified, high-level model for implementing G
 
 The model is structured and ordered to provide executives, managers, and other business stakeholders with an understandable overview of how the parts fit together into a cohesive generative AI stack. Overly technical details are purposely omitted to focus on the big picture.
 
-![](img/767baad643506d6896f5f68b042a4211.png)
 
 By outlining the key layers, this model clarifies how crucial functions like data curation, knowledge indexing, prompt optimization, and orchestration combine to enable customizable, scalable AI solutions tailored to business needs.
 

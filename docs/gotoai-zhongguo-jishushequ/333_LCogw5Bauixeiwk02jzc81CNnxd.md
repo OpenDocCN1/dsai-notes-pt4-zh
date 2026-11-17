@@ -12,19 +12,16 @@
 
 1.  [访问 Deepseek 开](https://platform.deepseek.com/)放平台 打开浏览器，访问 Deepseek 开放平台。
 
-![](img/0f6e24e121eea9f1a056b9f054fe37a0.png)
 
 1.  登录或注册账号 如果你已有账号，请直接登录。如果没有，请点击页面上的注册按钮，使用邮箱或手机号完成注册。
 
 1.  创建新的 API 密钥 登录成功后，在页面左侧的导航栏中找到并点击 API Keys。在 API 管理页面，点击 创建 API key 按钮。输入一个跟其他api key不重复的名称后点击创建
 
-![](img/2282d226047dccf7715f83658d3cac0a.png)
 
 1.  保存 API Key 系统会为你生成一个新的 API 密钥。请立即复制并将其保存在一个安全的地方。
 
 1.  注意：出于安全原因，这个密钥只会完整显示一次，关闭弹窗后就没法再看到了。
 
-![](img/19f09a5e04e02b89551cd07142d5c6d9.png)
 
 ## 二、GitHub Codespaces 环境配置（推荐）
 
@@ -40,13 +37,10 @@ GitHub Codespaces 是 GitHub 提供的一项服务，允许开发者在云端创
 
 1.  创建新分支 在项目页面的右上角，点击 Fork 按钮，创建一个新的分支。稍等一会儿即可创建成功。
 
-![](img/2495b9ad6eb543d61ce2cad63451e0c9.png)
 
-![](img/0d47d9090b5b5b14ad1a3c3bbddc86c3.png)
 
 1.  创建Codespaces 在项目页面的右上角，点击 Code 按钮，然后选择 Codespaces 选项卡。点击 New codespace 按钮，等待新的 Codespaces 环境创建成功。
 
-![](img/cafc6e7155b5745b7dfffa3c2617662b.png)
 
 1.  再次进入Codespaces 网页关闭后，找到刚才新建的存储库，点击红框框选内容即可重新进入 codespace 环境。
 
@@ -160,7 +154,6 @@ Cloud Studio 是腾讯云推出的一款基于浏览器的集成开发环境（I
 
 1.  再次进入 后续在[应用管理页面](https://cloudstudio.net/my-app)找到之前创建的应用，点击后选择右上角编写代码即可再次进入。
 
-![](img/2759c1a8bedb5ae013a1ffcf5544ec38.png)
 
 ### [3.2 python环境配置](https://datawhalechina.github.io/all-in-rag/#/chapter1/02_preparation?id=_32-python%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae)
 

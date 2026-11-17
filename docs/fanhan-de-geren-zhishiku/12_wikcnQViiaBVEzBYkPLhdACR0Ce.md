@@ -48,7 +48,6 @@
 
 ##### 论文：Artificial and Computational Intelligence in Games: AI-Driven Game Design
 
-![](img/4b79a86c5a8e65ee0b7f8fc912144d9e.png)
 
 [dagrep_v007_i011_p086_17471.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnULDrU4aT4h9Y8uAxYnaDce)
 

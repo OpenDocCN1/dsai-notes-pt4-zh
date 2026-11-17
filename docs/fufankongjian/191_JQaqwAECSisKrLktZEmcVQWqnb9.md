@@ -81,7 +81,6 @@ result[&#x27;messages&#x27;][-1].content
 
 而从底层架构来看，从 LangChain 1.0 开始，官方对框架的整体架构进行了根本性的角色重置：LangGraph 被正式确立为 LangChain 的底层运行框架（Runtime Foundation），而非附属扩展。在 0.x 时代，LangGraph 还被视作 LangChain 的“高层封装”——它是开发者在 LangChain 基础上进一步实现复杂 Agent 编排、状态流转与多节点控制的可选工具；换言之，那时 LangChain 是核心、LangGraph 是外挂。而进入 1.0 之后，情况彻底反转：LangGraph 被下沉为 LangChain 的底层执行引擎，一切新的高级 API（包括统一的 create_agent()、中间件系统、状态管理机制、流式回调与事件调度等）都直接运行在 LangGraph 架构之上。这样一来，LangChain 不再只是一个“Prompt 组织与调用库”，而是一个基于图结构的智能体运行时系统：每个 Agent 的生命周期、每次模型调用、每个工具执行，都是图中一个节点或边的执行过程。LangGraph 提供了稳定的调度、状态传递与事件流控制，而 LangChain 则提供了上层接口与开发体验。也就是说，上述Agent的实际运行逻辑，如果用LangGraph的语言来描述就是：
 
-![](img/c53d84806a62df3996af293ad3e8b60d.png)
 
 这种统一架构并以LangGraph为底层框架带来的优势如下：
 

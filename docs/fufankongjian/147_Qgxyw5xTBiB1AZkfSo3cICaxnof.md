@@ -90,7 +90,6 @@ RAG，Retrieval-Augmented Generation，也被称作检索增强生成技术，�
 
 还是面向企业应用场景的通用开源前端Open-WebUI:
 
-![](img/4c419037f135f80cd3346c166bed55ae.png)
 
 都毫无例外都配置了RAG功能，而对于OpenAI-WebUI这种企业级前端，还为用户展示了RAG检索过程诸多技术细节：
 
@@ -437,7 +436,6 @@ dots.ocr是📕近期发布的OCR大模型。不同于传统 OCR 工具链依赖
 
 +   Qwen2.5模型开源地址：https://github.com/QwenLM/Qwen2.5-VL
 
-![](img/06b77f683c53b30dd40f1b16d906c675.png)
 
 #### 2.4 SmolVLM
 
@@ -469,7 +467,6 @@ dots.ocr是📕近期发布的OCR大模型。不同于传统 OCR 工具链依赖
 
 +   模型地址：https://huggingface.co/google/gemma-3-4b-it
 
-![](img/57f740fd399995f910d113367dbfb74b.png)
 
 各类VLM模型对比如下
 
@@ -517,7 +514,6 @@ dots.ocr是📕近期发布的OCR大模型。不同于传统 OCR 工具链依赖
 
 +   项目地址：https://github.com/docling-project/docling
 
-![](img/19b882457ba432d4ec0c9639839a0075.png)
 
 #### 3.3 MarkItDown：轻量化的通用文档转 Markdown 工具
 

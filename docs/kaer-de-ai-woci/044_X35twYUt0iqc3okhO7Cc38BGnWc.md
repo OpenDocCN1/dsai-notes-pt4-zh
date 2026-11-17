@@ -18,11 +18,9 @@
 
 [Boss招聘.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q1FcbRRuXoF7PSxfal9cS40ingf)
 
-![](img/e02243873c57b2a553e79e40cf27e108.png)
 
 [Fellou1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SNcgbOW26o9uKfxkckKcSXwlnob)
 
-![](img/feb0a41bae0375a8bacc70deeed4d405.png)
 
 [Fellou1结果.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZatYbteDkoZ27cx7vg4cRrZEnKc)
 

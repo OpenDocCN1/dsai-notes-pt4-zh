@@ -318,7 +318,6 @@ Transformer模型的一个核心特点是其并行计算能力，它不像循环
 
 2、我们先只看其中一列的V向量计算过程；为了生成其中一个向量，我们执行矩阵向量乘法并添加偏差。每个输出单元都是输入向量的某种线性组合。例如，对于 Q 向量 ，这可以通过 Q 权重矩阵的一行与输入矩阵的列之间的点积来实现。
 
-![](img/5177d230c1ae5477c46c2663d46f0d91.png)
 
 [V向量计算过程.gif](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OsvWbGF8co0rl4xQTTrcHx6tntg)
 
@@ -336,7 +335,6 @@ Transformer模型的一个核心特点是其并行计算能力，它不像循环
 
 5、接着我们将其他列的向量也计算出来，如此一来，我们将其中一个注意力头的注意力分数算出来了。
 
-![](img/14ebb6dcae31f9adf46cd8cbbfc66c0c.png)
 
 [注意力头的注意力分数.gif](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JIS1bCpDHogYvextdF2cFwefnQe)
 

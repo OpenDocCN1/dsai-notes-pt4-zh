@@ -300,7 +300,6 @@ OpenClaw 的护城河并非代码本身，而是其背后庞大的技能生态�
 
 当用户输入指令后，当前上下文（Context）中包含了 System Prompt（内含 Skill 简要索引）和 User Message。当我们把 get_weather 文件夹拖入系统时，OpenClaw 并没有立即读取 SKILL.md 的全文。为了节省上下文，它只读取了文件名和元数据。我们在系统日志中可以看到这样一条 System Message：
 
-![](img/daae62a225959489fabe411856e178af.png)
 
 **Phase 2: 技能注入与上下文增强 (Turn 2 **- Context Injection)
 

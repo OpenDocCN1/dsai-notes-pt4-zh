@@ -70,7 +70,6 @@ Tips：如果是[买的Cookie](https://h5.m.taobao.com/awp/core/detail.htm?ft=t&
 
 1.  **然****后选1启动clewd。显示Lo****ggin in等字样代表**启动成功。该黄色网址便是你的Clewd反代地址（可尝试在浏览器打开）。
 
-![](img/07124d2147e0b8171fb7aeba1df68d6f.png)
 
 警告，不要急着进酒馆！确认启动成功了再下一步！
 
@@ -142,7 +141,6 @@ source /data/data/com.termux/files/home/.bashrc #刷新自启动文件
 
 +   命令执行完后变成这样就是进入了Ubuntu环境，称为初始环境：
 
-![](img/1d1c01127fc3a7e01c534136df54ea25.png)
 
 +   由于配置了自启动，每次打开termux就会默认进入Ubuntu环境，可以重新把酒馆也部署在Ubuntu里面，如果要退出Ubuntu回termux打开酒馆记得新开一个终端页面（不会的别急，下面有说），然后输入：
 

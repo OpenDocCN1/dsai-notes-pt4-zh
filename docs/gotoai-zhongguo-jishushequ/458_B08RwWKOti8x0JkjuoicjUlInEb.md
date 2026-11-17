@@ -14,7 +14,6 @@ https://www.learnclawdbot.org/
 
 https://www.learnclawdbot.org/zh/docs
 
-![](img/d9aa7dd617aa20a680638a63edfa4940.png)
 
 ## Learn Clawdbot Blog
 

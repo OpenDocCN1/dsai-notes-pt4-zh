@@ -152,7 +152,6 @@ npx -y @amap/amap-maps-mcp-server
 
 而这个@amap/amap-maps-mcp-server库是一个托管在https://www.npmjs.com/上的库，
 
-![](img/71c4e5707e38ab9c80c195351e7a72e1.png)
 
 可以使用npx命令进行下载。搜索库名即可看到这个库的完整代码，https://www.npmjs.com/package/@amap/amap-maps-mcp-server：
 
@@ -180,7 +179,6 @@ npx -y @amap/amap-maps-mcp-server
 
 +   MCP官方服务器合集：https://github.com/modelcontextprotocol/servers
 
-![](img/3cdad156e4a690262f2a539cc51c7856.png)
 
 +   MCP Github热门导航：https://github.com/punkpeye/awesome-mcp-servers
 
@@ -1442,15 +1440,12 @@ npx -y @modelcontextprotocol/inspector uv run ./src/mcp_server_deepresearch/serv
 
 首次进入Inspector页面时需要设置响应时间，由于当前外部工具运行时间较长，Inspector默认只给出10秒响应窗口，超时未响应则会报错，因此这里需要在Configuration中进行响应时间设置：
 
-![](img/4bb1d73a6e1e075153c4741e2eb2704c.png)
 
-![](img/d612a05dc6ccf5dd12f005b718b8d807.png)
 
 然后点击Connect即可连接MCP Server。
 
 > 超时响应报错示例：
 
-![](img/749b76152e8519e083983d62a2a89f2e.png)
 
 +   Step 4.在线运行
 
@@ -1472,7 +1467,6 @@ npx -y @modelcontextprotocol/inspector uv run ./src/mcp_server_deepresearch/serv
 
 +   pipy：https://pypi.org/
 
-![](img/321f52b840bb2d0ee4ccfe7f9ef01cbc.png)
 
 +   npm：https://www.npmjs.com/
 
@@ -1788,7 +1782,6 @@ python -m twine upload dist/*
 
 上传完成后即可在pypi中搜索到包的信息：
 
-![](img/cddfed3d511606064ff2e943f6d8578d.png)
 
 ![](img/8c15293654c15f52e22eb65551565d82.png)
 
@@ -1796,7 +1789,6 @@ python -m twine upload dist/*
 
 这里以Cherry studio为例，尝试调用我们刚刚发布的DeepResearch包。点击添加服务器：
 
-![](img/3db0bdde03e72d6cd2afa29c706d8b94.png)
 
 ![](img/d6219679d64e9e78fd2a9ae42c5b3b80.png)
 
@@ -1872,7 +1864,6 @@ SSE 是基于 HTTP 协议的流式传输机制，它允许服务器通过 HTTP �
 
 +   MCP更新公告：https://modelcontextprotocol.io/development/updates
 
-![](img/bd8fe33b24f0a7d0a286ae958560fe34.png)
 
 +   Streamable HTTP协议内容：https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-03-26/basic/transports.mdx#streamable-http
 
@@ -2140,7 +2131,6 @@ npx -y @modelcontextprotocol/inspector uv run ./src/mcp_get_weather/server.py --
 
 然后打开Inspector，并选择SSE模式，选择默认运行地址：http://localhost:8000/sse，然后点击connect：
 
-![](img/5eba3528077996b5f62d06d7b13a0729.png)
 
 然后输入地名进行测试：
 

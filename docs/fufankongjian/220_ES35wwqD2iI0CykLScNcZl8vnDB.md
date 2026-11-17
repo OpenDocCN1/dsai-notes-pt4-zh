@@ -204,11 +204,9 @@ def get_weather(city: str) -&gt; str:
 
 +   MCP官方服务器合集：https://github.com/modelcontextprotocol/servers
 
-![](img/2b2f4504def0fa04aa7ab4d98e8061f3.png)
 
 +   MCP Github热门导航：https://github.com/punkpeye/awesome-mcp-servers
 
-![](img/141b24e558337ef29edf12d252b55e56.png)
 
 +   Smithery：https://smithery.ai/
 
@@ -216,7 +214,6 @@ def get_weather(city: str) -&gt; str:
 
 +   MCP导航：https://mcp.so/
 
-![](img/05f25c17c0aeb5ab2b60a5ad4a459a0b.png)
 
 +   阿里云百炼：https://bailian.console.aliyun.com/?tab=mcp
 
@@ -306,7 +303,6 @@ npx -y @amap/amap-maps-mcp-server
 
 而这个@amap/amap-maps-mcp-server库是一个托管在https://www.npmjs.com/上的库，
 
-![](img/83bdb43a1cbe6c754228a21ddf08b525.png)
 
 可以使用npx命令进行下载。搜索库名即可看到这个库的完整代码，https://www.npmjs.com/package/@amap/amap-maps-mcp-server：
 
@@ -723,7 +719,6 @@ npx -y @modelcontextprotocol/inspector
 
 然后打开Inspector：http://127.0.0.1:6274/ ，并在页面中进行如下设置：
 
-![](img/aa5f3020f3ccb30ae7e4555471240c26.png)
 
 同时，需要输入Proxy Token，可以在启动环境中查看：
 
@@ -733,13 +728,10 @@ npx -y @modelcontextprotocol/inspector
 
 然后即可点击连接，显示Connected后则代表MCP工具服务已顺利启动。接下来即可进行功能测试了：
 
-![](img/3409bb5ca2089af92efcdf2700655273.png)
 
-![](img/08a26bc674027a7cc49442d174c08d00.png)
 
 然后即可测试下一项工具write_server.py：
 
-![](img/5c948d7e237c41c2a56f1ec4f8283a06.png)
 
 ![](img/182123e1bf788f422d39698adb263a1f.png)
 
@@ -747,7 +739,6 @@ npx -y @modelcontextprotocol/inspector
 
 选择SSE模式，选择默认运行地址：http://localhost:8000/sse，然后点击connect：
 
-![](img/dfc245d93351b045382705aa54b75c82.png)
 
 然后输入地名进行测试：
 
@@ -1393,7 +1384,6 @@ uv run client.py
 
 +   LangGraph服务部署工具：LangGraph Cli
 
-![](img/8128d1df77ab6c662f48db2d6ad03d0b.png)
 
 +   LangGraph运行监控框架：LangSmith
 
@@ -1421,27 +1411,22 @@ LangGraph智能体后端服务对MCP功能是完全兼容的，一旦我们顺�
 
 紧接着需要修改.env配置文件，需要填写的内容如下，需要注意的是，如果不需要连接本地MySQL数据库，相关配置空着即可。
 
-![](img/b42e4be31291fd41de56b4ca341f30cd.png)
 
 +   LangSmith API Key获取
 
 +           LangSmith需要先登录LangSmith官网进行注册，https://www.langchain.com/langsmith，
 
-![](img/e1e63f3dc4fc73cfdb87a4d230b472be.png)
 
 +   然后选择开启项目追踪功能，
 
-![](img/7603dcc951c19693c4422fb6a36036b0.png)
 
 +   然后点击创建API-KEY即可。
 
-![](img/28b24a76ec42b784061a999b5c02a720.png)
 
 +   Tavily搜索引擎API KEY获取
 
 +   获取用于进行网络搜索的Tavily API Key，https://www.tavily.com/，同样需要在Tavily官网注册账号，
 
-![](img/81d17a048be5773ae2a42a90db5ebb62.png)
 
 +   然后在个人主页即可获取API-KEY，
 
@@ -1453,7 +1438,6 @@ LangGraph智能体后端服务对MCP功能是完全兼容的，一旦我们顺�
 pip install -r requirements.txt
 ```
 
-![](img/65d0026c19a3557714b47572aef458ab.png)
 
 #### Step 3. 开启Data Agent项目后端服务
 
@@ -1558,7 +1542,6 @@ uv run client.py
 
 此时在LangSmith中就能实时查看当前对话情况：
 
-![](img/1ba9009d3421ae1213c047bb13ab75ce.png)
 
 ![](img/0ddb5a9587618d2c4fdadf5c63598898.png)
 

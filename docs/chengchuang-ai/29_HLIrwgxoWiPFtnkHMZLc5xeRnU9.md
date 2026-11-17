@@ -34,7 +34,6 @@ Midjourney官方群组的消息太多了，一不小心消息就冲得找不到�
 
 如果想将 Midjourney 机器人添加到您的 Discord 服务器，第一步是加入Midjourney Discord 服务器。
 
-![](img/e58d72aa47300f4711c2203d9e1b05c3.png)
 
 ## 2、找到 Midjourney Bot 机器人
 
@@ -62,7 +61,6 @@ Midjourney官方群组的消息太多了，一不小心消息就冲得找不到�
 
 [🎁【快速上手】必看！AI绘画【提示词/参数】基础入门](https://chengchaungai.feishu.cn/wiki/XaHCwCCfyi1RehksEyNcivYdnch?wiki_all_space_view_source=space_sidebar)
 
-![](img/7f495628fa6247674355bc08cdfc7347.png)
 
 > 如果您不希望机器人在特定频道中可用，则需要更改频道权限。 为此，请转至频道 > 编辑频道 > 权限 > @everyone > 取消选中 “Use Application Commands”。 这将确保该机器人只能在您允许其使用的频道中使用。
 

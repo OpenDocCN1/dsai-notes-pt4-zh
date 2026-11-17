@@ -42,7 +42,6 @@
 
 在此前的公开课中，我们曾分别介绍过独家KTransformers技术实战 ：https://www.bilibili.com/vi deo/BV1kyAke9EBA/
 
-![](img/4ab7f90c72d30afa9ed489e765c6dc69.png)
 
 以及独[家Unsloth动态量化部署满血DeepSeek](https://www.bilibili.com/video/BV1oePLezEZD/)：https://www.bilibili.com/video/BV1oePLezEZD/
 

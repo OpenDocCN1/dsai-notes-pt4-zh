@@ -78,7 +78,6 @@ AI生图指令优化 - 框架会将设计方案转化为一套专业的文生图
 
 ![](img/934891f93fbde53baa5e8fd75bae13c7.png)
 
-![](img/ad0e76ce6e4b1fa4fbe991e95279e553.png)
 
 ![](img/a6fe8a0fcf6be5ae4ca8487a21b5b6fb.png)
 

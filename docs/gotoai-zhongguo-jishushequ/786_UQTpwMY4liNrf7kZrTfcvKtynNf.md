@@ -10,13 +10,11 @@ Anthropic Claude
 
 https://www.anthropic.com/claude
 
-![](img/a6193ef52716352750d0a7e390fb663a.png)
 
 # 二、Anthropic Claude API
 
 https://www.anthropic.com/api
 
-![](img/d57c080d0c05cf75dbb5f34b7adac6ce.png)
 
 # 二、Anthropic Claude Docs
 

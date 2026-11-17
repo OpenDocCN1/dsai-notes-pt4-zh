@@ -62,7 +62,6 @@
 
 这就像人类在看图表或阅读论文时，不仅识别出图形和文字，还能在大脑中把它们融合成“意**义”：看到“**上升趋势”这个图形，你会自动想到“增长”；看到公式，你能联想到逻辑推理。多模态模型正是试图在计算机中复现这种语义联想机制。
 
-![](img/d7c6404e6aa9cd616b8d8a0e2e510f75.png)
 
 ![](img/109af9ee2971f00feb16044989b428d1.png)
 
@@ -459,7 +458,6 @@ DeepSeek-OCR-2 的出现，标志着 OCR 从单纯的“像素搬运”进化到
 
 +   【权重】魔搭社区DeepSeek-OCR模型权重下载地址：https://www.modelscope.cn/models/deepseek-ai/DeepSeek-OCR-2
 
-![](img/1a1d56b0cd12d3e206f17881b092a279.png)
 
 +   【权重】HuggingFace DeepSeek-OCR模型权重下载地址https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 
@@ -1223,7 +1221,6 @@ cd /root/autodl-tmp/test/DeepSeek-OCR/DeepSeek-OCR-master/DeepSeek-OCR-vllm
 python run_dpsk_ocr2_pdf.py
 ```
 
-![](img/7e880490993c12ce077d03c2c55b3cda.png)
 
 ![](img/bd552e604cb4617a32eb7f69b119d4ad.png)
 

@@ -220,7 +220,6 @@ Model name 输入：deepseek-ai/DeepSeek-R1
 
 1.  打开设置界面：
 
-![](img/ad59597d2bc1f8c98b879e3882495b3f.png)
 
 1.  选择硅基服务，并填写API
 
@@ -228,33 +227,25 @@ Model name 输入：deepseek-ai/DeepSeek-R1
 
 1.  添加模型
 
-![](img/5dc38a0bb7126493ddf52c372d834310.png)
 
-![](img/8e6416b67555d941fb4b97a77d42aad6.png)
 
 1.  添加嵌入模型
 
-![](img/2bc1e5b25d14606de15c8a116d7bd53b.png)
 
 1.  聊天测试是否安装成功
 
-![](img/6597ddfc99972ed8d8d09c30a9233010.png)
 
 1.  添加知识库
 
 ![](img/36eccfb284d90607338a6faec4678faf.png)
 
-![](img/126cc2f3007873d6180176b08dec94d9.png)
 
 ![](img/184cf2f64f6eb9da78b62d606c135b06.png)
 
-![](img/88a09db057243376aaaed86e4f768146.png)
 
 1.  确认知识库安装成功，并尝试搜索
 
-![](img/39e60ecf384122a66f44dcf7c97b9d71.png)
 
-![](img/5f7efdbe2b5dd315a97246cff522a5d7.png)
 
 1.  聊天中设置知识库
 

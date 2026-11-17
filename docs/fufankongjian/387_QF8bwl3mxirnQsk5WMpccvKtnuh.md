@@ -1481,7 +1481,6 @@ root_agent = Agent(
     description=&quot;回答用户的问题。&quot;
 )
 
-![](img/017f35c58589df88ae1977d445b114db.png)
 
 ```
 然后再次确认当前环境是否安装adk和litellm两个库：
@@ -1496,7 +1495,6 @@ pip install google-adk
 ```
 adk run test_agent
 
-![](img/06bc3b67607ad9ba562c5253bf8a523b.png)
 
 ```
 
@@ -1511,7 +1509,6 @@ adk web --port 8002
 ![](img/b1bac1d038065f43b0182ea5c3cb5b82.png)
 
 
-![](img/d2a2ce974e659a2f7ebb343f5378899d.png)
 
 
 ![](img/15c36842611415a67408d817f990df55.png)

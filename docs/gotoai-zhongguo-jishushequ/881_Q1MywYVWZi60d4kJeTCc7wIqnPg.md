@@ -14,7 +14,6 @@
 
 AI 大模型正掀起全球科技变革狂潮，AI 培训市场迎来前所未有的爆发式增长！据权威机构预测，未来几年，这一市场规模将突破千亿元。在这场财富盛宴中，专业 AI 职业讲师极度稀缺，已然成为市场上的 “香饽饽”。GotoAI 中国技术社区重磅推出 AI 职业讲师培养计划，现面向全国广纳英才，诚邀你加入这场改变人生的创富之旅！
 
-![](img/297e070995f48f92937c2090efba980f.png)
 
 ![](img/bf5e94090001a6271fb6fca769d15275.png)
 
@@ -362,11 +361,8 @@ https://hrss.gd.gov.cn/zwgk/xxgkml/bmwj/qtwj/dwjs/content/post_4677694.html
 
 ![](img/e6118c916380f1e526e3181c8ee240d3.png)
 
-![](img/2b1d8995d0086de426defdbe429b34c6.png)
 
-![](img/99cced3e2085d41a9e55b6d2dc865f26.png)
 
-![](img/cc36e4bc70229ea0b0cbaa522ddb79f2.png)
 
 ![](img/7f623e108165cef903a13c26b0e6ce69.png)
 
@@ -486,7 +482,6 @@ https://hrss.gd.gov.cn/zwgk/xxgkml/bmwj/qtwj/dwjs/content/post_4677694.html
 
 **证书样本：**
 
-![](img/8b619fb6e219074d1b2f996fe95021ca.png)
 
 ![](img/d2701f019bac4c804324fc4ac8e1b452.png)
 

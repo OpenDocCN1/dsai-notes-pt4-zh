@@ -6,7 +6,6 @@
 
 > N8N 是一款开源的工作流自动化工具，同时也可作为智能体引擎，通过可视化界面连接各种应用程序、服务和 API，实现任务的自动化执行和智能体的开发与编排
 
-![](img/069cddea3ffcd2c113bab110b2178eb2.png)
 
 https://n8n.io/
 
@@ -20,13 +19,11 @@ n8n 技术文档库
 
 https://docs.n8n.io/
 
-![](img/a9f185fed8e5ed3a17613d1155703dff.png)
 
 n8n API 文档
 
 https://docs.n8n.io/api/
 
-![](img/c75476312d43887228b366b736d4a9d0.png)
 
 n8n Blog
 

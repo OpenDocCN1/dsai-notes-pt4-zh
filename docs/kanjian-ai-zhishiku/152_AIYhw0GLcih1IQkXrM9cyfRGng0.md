@@ -10,7 +10,6 @@
 
 ### 全身数字人
 
-![](img/a39f4a414517f13749a3881ddcfdd588.png)
 
 [20240717104610-898.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NCh0b8S9so8bmhx7G4Ycau4jnud)
 

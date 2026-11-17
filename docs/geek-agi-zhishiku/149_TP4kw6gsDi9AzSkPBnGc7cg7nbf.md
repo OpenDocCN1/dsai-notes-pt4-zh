@@ -28,17 +28,14 @@
 
 第一步：点击进去官网：https://bot.n.cn/，登录账号。
 
-![](img/973171bc0928bfe548014408e8a155b6.png)
 
 第二步：点击左侧「模型广场」-选择模型「DeepSeek」
 
-![](img/9e8e79445988aa9cc13f54b411cf4832.png)
 
 #### 3、秘塔
 
 官网：https://metaso.cn/
 
-![](img/d00af45f606f4e27ce428489d81b8cef.png)
 
 #### 4、Monica
 
@@ -46,7 +43,6 @@
 
 打开官网-点击登录-登录完成在首页即可选择「DeepSeek R1」
 
-![](img/e86e2872c5247eb710911d7cc18d2c03.png)
 
 #### 5、Poe
 
@@ -54,7 +50,6 @@
 
 打开官网-点击登录账号-选择「您的机器人」-下拉选择「DeepSeek R1」
 
-![](img/657e36851ac37f660b2f55a157bc732b.png)
 
 ![](img/03b64e37edbea4d548cee974eaf626d5.png)
 

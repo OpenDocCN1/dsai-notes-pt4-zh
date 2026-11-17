@@ -350,7 +350,6 @@ project/
 
 ![](img/164f5b2e01cfc4bef6a7da80c0f19017.png)
 
-![](img/5846672f0a28b1a22ffcb2420db2c6ec.png)
 
 ![](img/716454295c224910e842641805513cfc.png)
 

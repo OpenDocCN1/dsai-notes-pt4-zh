@@ -14,7 +14,6 @@
 
 [得助大模型平台免费试用](https://link.zhihu.com/?target=https%3A//www.51ima.com/dmx-plan%3Fzhihu1920795889569604647)[www.51ima.com/dmx-plan?zhih](https://link.zhihu.com/?target=https%3A//www.51ima.com/dmx-plan%3Fzhihu1920795889569604647)u1920795889569604647
 
-![](img/1ac9624ab94e210d64592aadf2f6b433.png)
 
 ### 2.交通基建垂类大模型：新智能化，效率与业务革新
 
@@ -26,7 +25,6 @@
 
 员工OA信息填报效率提升50%、全面提升流程自动化与智能化
 
-![](img/43f73f15d32846d7d2bc1f7737dd36c0.png)
 
 ### 4.政务服务垂类大模型：新智能化，服务提效有温度
 

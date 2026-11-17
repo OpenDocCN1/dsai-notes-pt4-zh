@@ -50,13 +50,11 @@
 
 ## Claude 3.7 Sonnet Thinking
 
-![](img/6f9905d49a4566e62104408823e5ba64.png)
 
 [录屏1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UZtgbTbpXoTjdMxmPaXcFrRUnyb)
 
 ## DeepSeek V3-0324
 
-![](img/238841717c5c13757af55ad4c33a7eb1.png)
 
 [录屏2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NUAdb5YCWo75nex9iqicD7Plnne)
 

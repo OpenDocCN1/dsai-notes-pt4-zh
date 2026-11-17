@@ -46,7 +46,6 @@ QVERIS_API_KEY = 1234567890
 
 登陆QVeris官网: https://qveris.ai/ 点击 get api key
 
-![](img/0004c1a88e8504855360da6ecf3be93e.png)
 
 生成一个key，并复制粘贴你的key发给你的openclaw (现在他们官方搞活动，邀请好友还能得双倍积分，足够用一个月了)
 

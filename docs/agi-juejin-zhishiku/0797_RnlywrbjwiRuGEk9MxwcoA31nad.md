@@ -168,7 +168,6 @@ Word Embedding 和 Sentence Embedding 是大语言模型（Large Language Models
 
 既有“大力出奇迹”的训练内容，更有承载“大力出奇迹”的结构，最终导致 Transformer 必然产生了这样的“奇迹”，使它能够在机器翻译领域达到了人类翻译的“信达雅”的成就。
 
-![](img/59a912201ee651cabaaf66080b0fc0b7.png)
 
 BLEU 英译德评分
 

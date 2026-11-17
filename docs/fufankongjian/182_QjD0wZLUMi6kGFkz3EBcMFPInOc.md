@@ -458,7 +458,6 @@ sudo npm install -g clawdbot@latest
 
 ![](img/090917c46fa25b48ab4687c8d70b8a86.png)
 
-![](img/c9ef8087fbb212230d31379ee4354d87.png)
 
 ![](img/206075a77629b6edc362a4809fb6e1c5.png)
 
@@ -472,7 +471,6 @@ sudo npm install -g clawdbot@latest
 
 ![](img/b9b999b8fb0e6cb2f6ff18b9f2be6d7e.png)
 
-![](img/2fa6f1615416ead28e631222c13d1bea.png)
 
 ![](img/db658015c45f3b51a260316d8dca7a11.png)
 
@@ -568,7 +566,6 @@ sudo npm install -g clawdbot@latest
 
 ![](img/c81da8bb437e6357c3087fdcd25bebcc.png)
 
-![](img/5b12ac374b6ce765829faa0bc1626754.png)
 
 ![](img/edbb04ab36940f35412656be217048e5.png)
 
@@ -777,7 +774,6 @@ B. 典型案例：Blogwatcher (博客观察者)
 
 Clawdbot 的记忆系统设计非常独特且具有高度的工程实用性。它放弃了传统的云端数据库，转而采用**“本地 Markdown 文件 + 嵌入式 SQLite 向量库”**的混合架构。
 
-![](img/dca2e8c666c8d0386927d74e4cbca0d7.png)
 
 #### 4.1 基础功能 (Basic Functions)
 
@@ -799,7 +795,6 @@ Clawdbot 的记忆系统旨在解决 LLM 上下文窗口有限（Context Window�
 
 +   没有专门的“写入记忆”工具，Agent 使用标准的文件操作工具（write, edit）直接修改上述 Markdown 文件。系统会自动监测文件变化并更新索引。
 
-![](img/f7da4372f174635fe8b22548e6c341b5.png)
 
 #### 2.2 核心特性 (Core Features)
 
@@ -836,7 +831,6 @@ openclaw --version
 openclaw plugins list
 ```
 
-![](img/78851b0efd6d9f446f51287516b8615b.png)
 
 安装飞书插件
 
@@ -844,7 +838,6 @@ openclaw plugins list
 openclaw plugins install @m1heng-clawd/feishu
 ```
 
-![](img/ac34db9e98a3aef9d1c796de19e44ab8.png)
 
 重启OpenClaw
 
@@ -876,7 +869,6 @@ openclaw gateway restart
 
 ![](img/bc3f45bb294dcd65bc87408704013dde.png)
 
-![](img/5f5dea32b8fdc60bde3ccfdd7ca74b42.png)
 
 ![](img/a97fe988927e2d90311cd95834032c3b.png)
 
@@ -915,25 +907,17 @@ openclaw gateway restart
 
 ![](img/4a841df613ceaeef9f8b0e66eff336f8.png)
 
-![](img/63697dcf1a5651ef552f3b8502bf0341.png)
 
 ![](img/08f4a28f40b4a9f7dd936c5f6d7e4db5.png)
 
 ### 2. 重新设置OpenClaw
 
-![](img/eb09ca48e211bcc17b97ad68cb6df2b8.png)
 
-![](img/f1990db79129df601b7252fe66b13271.png)
 
-![](img/a91406b23630dced8e87d9728da5b724.png)
 
-![](img/fdcaea074b8be7ac6db4950079018980.png)
 
-![](img/31d786c9951b00240c31efc4ca342008.png)
 
-![](img/ebf0ae7a7ae6eea410f6f0950b097756.png)
 
-![](img/71597e229b84c7df75bf12b7a776bc8b.png)
 
 ![](img/48d428599fe4d36a1c520b43c17a2a71.png)
 
@@ -945,7 +929,6 @@ openclaw gateway restart
 
 +   Gmail功能安装
 
-![](img/0668dc7f955431cd5ffa874103fd7da6.png)
 
 ![](img/ba6cd03f784b47678bc0b5bb71ee9f57.png)
 
@@ -982,7 +965,6 @@ clawhub install gmail
 
 ![](img/71c4e29a3e3e7e0d9bd081444be6abfb.png)
 
-![](img/35d774688d0f4c0f4e1547b83739c8de.png)
 
 ![](img/2581701adfa9dc0f0d21a8b15bae3ef6.png)
 

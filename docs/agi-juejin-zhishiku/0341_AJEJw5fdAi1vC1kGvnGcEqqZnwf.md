@@ -16,9 +16,7 @@ chat.openai.com在11月底推出之前从零访问量开始，12月份达到了2
 
 **SimilarWeb**认为主要是 因为美国学生放暑假 （ChatGPT的绝大部分流量来自美国），损失了大量的学生用户。这也解释了为什么 8 月的流量较为稳定，因为美国学生大部分在 8 月底返校，回血了。
 
-![](img/859e7b5c2ffcabaf5c2c4db16d7cc564.png)
 
-![](img/0749cc25314e8b94a777173ad74c3e0b.png)
 
 3、**不仅ChatGPT， Cha**racter AI 、Goolge 的 Bard、OpenAI Platform 也出现了流量下滑，其中代表调用API使用量的OpenAI Platform流量下滑最为明显—— 开发者的热情开始下降了吗？ 虽然我觉得应该没有。
 
@@ -32,7 +30,6 @@ chat.openai.com在11月底推出之前从零访问量开始，12月份达到了2
 
 9月份，Character AI的iO**S和And****roid应**用的月活跃用户数为 420万 ，而ChatGPT的月活跃用户数约为 600万 。
 
-![](img/0a3f4ece853626cb132662120291f214.png)
 
 ![](img/da2d039174054c3aa669bba87abe93cd.png)
 

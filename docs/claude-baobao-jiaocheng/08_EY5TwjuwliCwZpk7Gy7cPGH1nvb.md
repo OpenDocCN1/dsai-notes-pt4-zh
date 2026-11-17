@@ -150,7 +150,6 @@ Claude Gemini等，点击蓝色链接直接跳转：
 
 需要使用预设
 
-![](img/e4ed8df902ee5b85053e734be37d345d.png)
 
 ![](img/5e478927dc331dd6ab32184e3e404524.png)
 

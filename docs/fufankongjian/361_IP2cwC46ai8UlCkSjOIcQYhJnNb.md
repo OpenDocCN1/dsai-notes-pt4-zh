@@ -322,7 +322,6 @@ DeepAgents 支持自定义配置以构建不同的代理场景：
 
 所以接下来，我们将详细介绍如何通过自定义model、system_prompt 以及 Tools来构建一个具备实时联网检索能力的深度研究AI助手。
 
-![](img/3d5ea0cae25ee3ddc4ed9a7ff6ba2476.png)
 
 # 二、LangChain 1.0 接入 DeepSeek-v3.2模型
 

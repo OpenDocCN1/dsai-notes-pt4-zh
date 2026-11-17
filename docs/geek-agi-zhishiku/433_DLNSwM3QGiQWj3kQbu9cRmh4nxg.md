@@ -272,7 +272,6 @@ def get_mask(row, box, img_width, img_height):
 
 但是我们需要的并不是这样一张图片，而是需要用于表示这个目标的轮廓，这可以通过 OpenCV 的 findContours 函数来实现。 findContours 函数返回的是一个用于表示该目标的点集，然后我们可以在原始图像中用 fillPoly 函数画出该目标的分割结果。
 
-![](img/24f3dc42a1365b7b766055dfc9f6e6d9.png)
 
 全部目标的检测与分割结果如下：
 

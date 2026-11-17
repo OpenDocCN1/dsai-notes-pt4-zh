@@ -22,7 +22,6 @@ Sora这几天的爆炸性新闻，让所有人工智能相关从业者及对应�
 
 [494c9adc-cda8-11ee-8611-d2edd8d9eff0-v8_f2_t1_4oYSxhi5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NcYmb4o3DoreW9xgbPGcQk2Nni2)
 
-![](img/8957b8e91b8e62caa5900172d4d4b46d.png)
 
 [6304ddae-cda8-11ee-8485-dafec810f3f1-v8_f2_t1_linU4p5O.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K6dIb3oxzoWNxexySQgc9hV2nFh)
 

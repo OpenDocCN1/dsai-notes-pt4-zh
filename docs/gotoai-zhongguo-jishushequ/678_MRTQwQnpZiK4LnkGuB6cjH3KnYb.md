@@ -74,7 +74,6 @@
 
 +   接收到应用响应后，点击消息卡片下方的调试按钮，开启调试面板查看执行细节
 
-![](img/93589e1b488173937dd2e7c43b95bb22.png)
 
 +   单击【参数设置】，可设置 max_tokens、frequency_penalty、temperature 、top_p等参数。
 

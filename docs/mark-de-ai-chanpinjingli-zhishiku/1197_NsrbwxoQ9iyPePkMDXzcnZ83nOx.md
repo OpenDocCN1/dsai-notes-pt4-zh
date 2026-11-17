@@ -8,7 +8,6 @@
 
 ### 1.MCP服务器Server合集
 
-![](img/73e70be810d6c6841ba99303d08c92e1.png)
 
 ![](img/d258b2331df95f0f321907e1da1f0eff.png)
 
@@ -40,17 +39,13 @@
 
 然后我们可以将模型切换为DeepSeek官方的模型API：
 
-![](img/04ba67929a7d885a382748b039c003aa.png)
 
 然后开启：
 
-![](img/9793bd83099afcdddc799717b39deeb5.png)
 
 并尝试进行使用：
 
-![](img/43e6d1a85f65632127a51fc748037c98.png)
 
-![](img/d04c618caa4a10eed1a4a7ee17d32862.png)
 
 同时，为了能顺利调用MCP工具，我们还需要安装uv和bun文件：
 
@@ -81,17 +76,13 @@
 }
 ```
 
-![](img/168d6917f18c0c98d4caced21956cd25.png)
 
 然后点击开启：
 
-![](img/fec40d73eedae680c7dd2808b7242787.png)
 
 然后在对话中开启MCP工具，这里可选一个或者多个工具：
 
-![](img/767e8f9cafebaaea9dfbfa3b92891139.png)
 
-![](img/140f80b4675d7de7bd58a90f8c17a2f2.png)
 
 ![](img/dd2e2d1eb191ee94413768363db26ecf.png)
 
@@ -118,11 +109,9 @@ Fetch MCP 服务器是一个遵循模型上下文协议（Model Context Protocol
   }
 ```
 
-![](img/12192fafe2fa057fba2c1c45a70c8ef8.png)
 
 然后开启工具：
 
-![](img/6f601f68cd29b6f7faea96578065f98a.png)
 
 并尝试进行调用：
 
@@ -160,7 +149,6 @@ SSE 是基于 HTTP 协议的流式传输机制，它允许服务器通过 HTTP �
 
 ##### 1.1.3 Streamable HTTP
 
-![](img/ad0e71c64be56eeb4ecc904189807f8e.png)
 
 ![](img/6d04e88dedf034fc1875a78ecee0ded6.png)
 
@@ -1342,7 +1330,6 @@ uv run main.py
 
 ![](img/bd6b2fc68b6ccde131f756447f18c407.png)
 
-![](img/d2e7a342079c2dab7296e79bae025073.png)
 
 同时写入配置文件：
 
@@ -1420,7 +1407,6 @@ npm init
 
 这将引导您我们创建一个新的 package.json 文件。在提问时，我们可以按默认值按下 Enter，或者输入我们自定义内容。
 
-![](img/008c80e354dfaa6a3d7068da95a60c04.png)
 
 **安装 uvx 工具： **uvx 是一个用于 Python 脚本和工具管理的工具，可以让我们通过 npm 来管理和运行 Python 工具包。
 
@@ -1460,7 +1446,6 @@ npm install uvx --save
 
 +   **scripts 字段：**指定使用 uvx 启动 Python 脚本。
 
-![](img/d6459f9e9dc54f567c97cfebc11f0ef1.png)
 
 创建一个简单的启动脚本：在项目根目录下创建一个简单的 index.js 文件来调用 Python 脚本。
 
@@ -1507,7 +1492,6 @@ __pycache__
 npm login
 ```
 
-![](img/215524ada6e586c11651a50871db84b1.png)
 
 这将把我们的包上传到 npm registry，其他用户就可以通过 npx 或 uvx 下载并运行您的 Python 服务器了。
 

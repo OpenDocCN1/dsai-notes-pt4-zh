@@ -8,7 +8,6 @@
 
 ![](img/b5849c0d85fff2001c33e623a2d78664.png)
 
-![](img/75757aa1e981f812411ed58e4875d2b4.png)
 
 https://huggingface.co/models
 

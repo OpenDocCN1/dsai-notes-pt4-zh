@@ -68,7 +68,6 @@ RAG，Retrieval-Augmented Generation，也被称作检索增强生成技术，�
 
 还是面向企业应用场景的通用开源前端Open-WebUI:
 
-![](img/aad55fdce2b11325be9a6b5bd2377c8e.png)
 
 都毫无例外都配置了RAG功能，而对于OpenAI-WebUI这种企业级前端，还为用户展示了RAG检索过程诸多技术细节：
 
@@ -219,7 +218,6 @@ Llama-Index 最初的初衷非常纯粹：构建一个高效的“接口”，�
 
 +   评估 (Evaluation)： 独有的 "Evaluation-First" 理念，内置了基于 LLM 的评估模块，能够对检索的准确性（Retrieval metrics）和生成的质量（Response metrics）进行自动化评分，解决了 RAG 难以优化的痛点。
 
-![](img/bc0a1ab8800b3ad4386741bb62c5edb3.png)
 
 2.2 极致的定制化空间与丰富的功能接口
 

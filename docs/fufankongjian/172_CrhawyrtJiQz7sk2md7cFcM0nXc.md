@@ -78,7 +78,6 @@ OpenClaw 是一个开源的通用型 AI 智能体 (AI Agent)。与传统的聊�
 
 理解 Claude Code 的架构原理，也就同时理解了 OpenClaw 这类通用 Agent 的核心机制——因为它们是同一个时代、同一套思想的两种实现。
 
-![](img/a24f1bc8b9634273f7bef2de45d6acba.png)
 
 #### 2.2 关键区别：通用网关 vs 专业纵深
 
@@ -456,7 +455,6 @@ Settings 页面采用两步验证流程 (Two-Step Checklist) 设计：
 
 **Step 1 — 环境检测**：自动检查 Claude Code 是否已安装、当前版本号、代理连通性。页面底部内嵌 MiniTerminal，可直接执行安装和更新命令
 
-![](img/51cf55096b34d311f92844c02dfcc761.png)
 
 **Step 2 — 模型配置**：配置 Anthropic 官方 API Key 或切换国产基座模型（后续章节详细介绍）
 
@@ -628,7 +626,6 @@ claude              # 启动 Claude Code
 
 同时，双击CTRL+C即可退出对话。
 
-![](img/5fbfcfaac0504e02baa99d12c36fe523.png)
 
 退出对话时能看到当前对话ID。而下次再次进入会话的话，需要在同一文件夹内输入resume命令：
 
@@ -636,7 +633,6 @@ claude              # 启动 Claude Code
 claude --resume f06bc5d1-1523-4e1e-bead-9bf9f522953a
 ```
 
-![](img/248a5fbb3ee817cb5788afba29e493db.png)
 
 或者直接输入claude -c就能直接恢复上一次停止的会话。
 
@@ -782,7 +778,6 @@ Anthropic 官方发布了 Claude Code for VS Code 扩展，在 VS Code 中提供
 
 1.  搜索 **"Claude Code"**，安装发布者为 **Anthropic** 的扩展（注意区分第三方扩展）
 
-![](img/32405cb8510990d4fc940b56313361d0.png)
 
 安装完成后，通过编辑器右上角的 Spark 图标或 Ctrl+Shift+P → Claude Code 启动交互面板。扩展提供了 GUI 聊天面板、内联 Diff 预览、@ 文件引用等功能。
 
@@ -1028,7 +1023,6 @@ claude
 
 官网地址：https://www.aliyun.com/benefit/scene/codingplan?tlog=yuekan_2
 
-![](img/aef661be5a6113e7b5d52d9873f23499.png)
 
 接入 Claude Code 的配置方法：
 
@@ -1251,7 +1245,6 @@ claude
 
 **  观察终**端输出——你会看到 Claud**e Co**de 调用了 Write 工具创建文件，可能还会调用 Bash 工具确认文件是否正确生成。整个过程不到 10 秒。双击打开 index.html，一个深色主题的页面已经呈现在浏览器中。
 
-![](img/331d49128c1cff3c38ffd37f7b2e34d4.png)
 
 ![](img/87c3b30763ac45f61cc95d8bdb62afa4.png)
 
@@ -1299,7 +1292,6 @@ claude
 
 然后清空当前对话（输入 /clear），
 
-![](img/bba1094e789e4b4783798910a99e3787.png)
 
 开启一轮全新会话，输入：
 
@@ -1359,9 +1351,7 @@ Claude Code 执行后，打开页面——之前精心设计的深色主题消�
 
 ** 终**端会列出最近的 Checkpoint 节点，每个节点标注了对应的用户指令和变更文件。选择"重写为极简白色风格"之前的那个节点——index.html 立即恢复为深色主题版本，所有样式完好无损。
 
-![](img/302d1f7ef18f8d14e9fc2f6d349fe538.png)
 
-![](img/f532c058f54dbe3195d9a98b7a2d4208.png)
 
 ![](img/6ee55f391f2261c03d7ced263d3616a0.png)
 
@@ -1512,11 +1502,9 @@ Claude Code 会自动扫描当前目录的所**有文件****（index.ht**ml、�
 
 其中 /context 的输出特别直观——一个彩色网格展示上下文窗口的使用情况，已占用的空间用色块标记，剩余空间一目了然。
 
-![](img/6b3932341a0bd943f783d0e404de2581.png)
 
 当你发现上下文快用满时，/compact 就是救命稻草——它会智能总结之前的对话，释放大量空间继续工作。
 
-![](img/ae1da66db028f21ab89f0b528ca938ad.png)
 
 ![](img/8e75e2e7d397a73c17f808bfb9aa4c0f.png)
 
@@ -1555,7 +1543,6 @@ Skills 是三种扩展中最容易上手的——本质上就是一个 Markdown 
    包含文件结构树、使用的技术、核心功能列表，保存为 PROJECT-SUMMARY.md
 ```
 
-![](img/765d9f0d5115668ab8a0493831210839.png)
 
 **  Cl**aude Cod**e 会调用** Bash（创建目录）和 Write（写入 Skill 文件）完成操作。现在，清空对话（/clear）再重新启动一轮会话，输入：
 
@@ -1643,7 +1630,6 @@ mkdir ~/chatbot-project &amp;&amp; cd ~/chatbot-project
 claude
 ```
 
-![](img/0f9cad7f49a98cd9de57d3c133d32b85.png)
 
 在对话中输入以下需求（注意：Prompt 的质量直接决定输出质量，所以我们把需求描述得足够具体）：
 
@@ -1885,7 +1871,6 @@ Claude Code 会调用 Pencil MCP 的工具——你可以在终端中看到 batc
 
 整个过程约 30-60 秒，Claude Code 会自主完成从规划到部署的全部步骤。
 
-![](img/976a10323961bfea3ab48bb954682a8a.png)
 
 ![](img/58dd7cf417b7d27e0a7b53bbd494bb2b.png)
 

@@ -200,7 +200,6 @@ https://n8n.io/case-studies/stepstone/
 
 ![](img/96b6ca9aa8a70e7279c88a8e586a1dbf.png)
 
-![](img/64c40bcabd0f9eb9e69cdae143826255.png)
 
 **平台选择实用建议：**
 

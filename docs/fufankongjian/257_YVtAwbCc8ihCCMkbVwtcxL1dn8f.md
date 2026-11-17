@@ -10,7 +10,6 @@
 
 ![](img/f8d285543e74fe55d108bedadd5e4eeb.png)
 
-![](img/3885235c6f0d3230b6693ab8e3008124.png)
 
 NL2SQl 微调数据链接➡️链接: https://pan.baidu.com/s/1Fsl53jyPk0i0fSDJaDEurQ  密码: pbvt ，更多大模型学习内容详情可扫码添加助教老师咨询详情
 
@@ -3137,11 +3136,9 @@ llamafactory-cli train \
 
 ## 模型导出
 
-![](img/4b2da3e5b88e4b28b414707d8b460560.png)
 
 ## 模型验证
 
-![](img/9dac819d9d49213eaf36f98737e8b53d.png)
 
 ![](img/56c47bbda7702069578c88e0112a2ca9.png)
 

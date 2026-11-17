@@ -84,7 +84,6 @@ System Prompt 的分层架构是我花了不少时间琢磨的。最终定下来
 
 每个问题都有示例和引导，每个问题都可以跳过。像朋友在聊天，不是冰冷的表单。
 
-![](img/f6b4d5e6458405aa9f8ab9c617adeaa2.png)
 
 背后的机制是模板填充。我在 System Prompt 里预设了一套模板，用户的回答被自动填充到对应的占位符位置，融合后分门别类写入各个文件。不是从零开始生成，而是在一个已经有合理结构的骨架上补充个性化内容。
 
@@ -160,7 +159,6 @@ CLI 化不是为了人。它是为了 AI。
 
 这不是单个 Agent 加单个 Skill 能搞定的。
 
-![](img/e24dc16bc9c2f5db122f3ce0e6d27420.png)
 
 这是一套组合方案。
 
@@ -172,7 +170,6 @@ Claude Code 支持把 Skills 和 Agents 保存到 User Level，全局可用。�
 
 Forge 的 Marketplace 不是传统意义上的"插件商店"。传统 Marketplace卖的是单个 Skill 或者单个 Agent，你挑一个下载安装就好。Forge 的 Marketplace 保存的是一整套编排方案。一个项目规则做调度，多个 Agent 各司其职，每个 Agent 关联多个 Skill，全部打包成一个可复用的方案模板。
 
-![](img/cf5d34b31b583154df5732404c8cb743.png)
 
 保存很简单，输入 /save-as-template，当前项目的 .claude/ 配置就被完整打包。复用也很简单，选一个模板，点"Use This Template"，Forge自动创建新项目、导入全部配置、打开新会话，直接开始工作。
 

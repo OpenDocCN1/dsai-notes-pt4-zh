@@ -48,7 +48,6 @@ OpenAI 高级研究副总裁 Mark Chen 驳斥 Scaling Law 撞墙论，称 OpenAI
 
 IT之家 | [阅读原文](https://www.ithome.com/0/813/017.htm)
 
-![](img/d16daac3a958e9f2eb538371eec6cbf5.png)
 
 2024 年 11 月，Neuralink 联创 Max Hodak 宣布新型脑机接口技术路线。采用体外培养神经元植入大脑并与电子设备连接的方式，避免了电极对大脑的损伤，提高了信息传递信噪比，在小鼠实验中初步证明可行性。但也面临排异等问题，距离人类应用还有很长距离。该技术由其创立的 Science 公司研发，公司目前重点在视网膜假体 PRIMA 项目，脑机接口为长期项目。
 
@@ -58,7 +57,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/813/017.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/813/140.htm)
 
-![](img/9efdcedbc1d785dff5e20f1627ce6783.png)
 
 2024 年 11 月 25 日，安全公司卡巴斯基披露 PyPI 中有两个恶意软件包，分别名为‘gptplus’和‘claudeai-eng’，伪装成 GPT 和 Claude AI 辅助工具，实为木马勒索软件。它们会下载 JavaUpdater.jar 文件并运行 JarkaStealer 木马窃取受害者隐私。这些恶意软件包在 PyPI 上架一年多，下载量超 1700 次。卡巴斯基呼吁开发者提高警惕。关键词：黑客、PyPI、AI。
 

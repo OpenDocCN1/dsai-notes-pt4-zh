@@ -6,7 +6,6 @@
 
 ![](img/6a317c417f275b4e315594ed65bde189.png)
 
-![](img/e77cb9355978a3ea0049cf7932dc208b.png)
 
 ![](img/cee692aa1f841187f5218cc6edbf31d0.png)
 

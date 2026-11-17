@@ -22,9 +22,7 @@
 
 +   打开浏览器，在地址栏输入 https://ollama.com/。在官网页面，根据你的操作系统（Windows 或 macOS），点击对应版本的下载按钮。
 
-![](img/5b003bab9b876e63383a6c97b714e133.png)
 
-![](img/54ada9a4e15f37f3ef88036207dc8126.png)
 
 1.  **下载并安装 Ollama**
 
@@ -56,7 +54,6 @@ ollama --version
 
 +   根据你的操作系统，选择对应的 Docker 客户端版本下载。
 
-![](img/6d214e943898882e20da838d229d3757.png)
 
 1.  **下载并安装 Docker**
 
@@ -132,7 +129,6 @@ http://localhost:3000
 
 +   如果你已有 **X（Twitter）账号**或 **Google 账号**，可以直接登录。
 
-![](img/36393d999c35324b82664363fa1f1b8d.png)
 
 1.  **生成 API 密钥**
 
@@ -140,7 +136,6 @@ http://localhost:3000
 
 +   系统会自动生成一个 API 密钥，复制该密钥保存备用。
 
-![](img/ea3d5fd86ce46789ac818ee387425c44.png)
 
 ![](img/2d0d029a75d1e0b722b68e519c1f3360.png)
 
@@ -152,7 +147,6 @@ http://localhost:3000
 
 +   在左侧导航栏选择 **Admin Settings**。
 
-![](img/93d5732b3fcd10908869ca88ea2adde9.png)
 
 1.  **配置 API 信息**
 
@@ -160,7 +154,6 @@ http://localhost:3000
 
 +   将刚刚复制的 API 密钥粘贴进去。
 
-![](img/a0b483bbee7e2ef8d427b648e5e90349.png)
 
 1.  **设置域名**
 

@@ -10,7 +10,6 @@ https://repo.anaconda.com/archive/
 
 # **安装**
 
-![](img/08fe74605284a3e45925fcdbd59a2397.png)
 
 ![](img/4da86256e876848d155cf760a657ac18.png)
 

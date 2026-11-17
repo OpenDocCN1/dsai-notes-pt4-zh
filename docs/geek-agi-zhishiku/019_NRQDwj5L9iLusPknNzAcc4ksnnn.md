@@ -20,13 +20,9 @@
 
 这两个月我使用了不同的平台制作各类 bot，依赖 prompt+插件，或者挂载知识库，或者调用复杂工作流，很多都成为了我日常使用的工具。
 
-![](img/bd71dc6f36fbb20d5b763fd506d90b00.png)
 
-![](img/00923767e154745416ffbce3bd2dfbb2.png)
 
-![](img/9fa7fb74c343670182ed1da3655b4aac.png)
 
-![](img/81683f8c19a791ee6bf31eb05bd4b45d.png)
 
 ![](img/80f329e7307a2aea218e70968a03a9ef.png)
 
@@ -162,7 +158,6 @@ coze/扣子，Dify，千帆 AppBuilder，天工 SkyAgents，钉钉 AI 助理，�
 
 ▍ **4.天工 SkyAgents**
 
-![](img/99023443e6fc02847e1b8d91f3bce16c.png)
 
 SkyAgents 的基础配置就不说了， 它的规划板块，也就是工作流，有点不同 。 它提供了一些额外信息处理的节点，比如信息分类、字段提取。
 

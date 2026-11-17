@@ -252,7 +252,6 @@ prompt 示例：/imagine prompt flowers.jpg birthday cake --iw .5，不同权重
 
 **赋予Prompt 具体的年代感**同样的文字prompt，赋予年代描述后，产生的风格，差异是很大的prompt 示例: /imagine prompt <decade> cat illustration
 
-![](img/03d3e1df92635a357a7680a5757a5d6a.png)
 
 ![](img/415520241576281cff13999b3769c450.png)
 

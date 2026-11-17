@@ -4,7 +4,6 @@
 
 # 一、AI Agents for Beginners
 
-![](img/71ee26a3b6fa270464256992f7a0986b.png)
 
 https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst
 
@@ -126,7 +125,6 @@ Created by Korey Stegared-PaceCreated by Korey Stegared-Pace on behalf of
 
 # 三、Video-AI Agents for Beginners
 
-![](img/3289e525cc2a9fcdd44cecdd4f585590.png)
 
 https://learn.microsoft.com/en-us/shows/ai-agents-for-beginners/
 

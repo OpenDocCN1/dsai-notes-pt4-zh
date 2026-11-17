@@ -57,7 +57,6 @@ bash install.sh
 
 该脚本能够一键完成DeepSeek-OCR模型环境搭建、依赖安装、模型权重下载、前端环境搭建和依赖安装等各项工作，并且运行稳定，还适配了国内网络环境。怎么样，是不是非常便捷。而由于这个要下载模型权重，所以实际运行时间可能需要20分钟左右。
 
-![](img/d402bf22dc78d4d30f66c9b021be3470.png)
 
 [2025-10-23 18-46-37.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XaZdbBQHJoTO41xG7OGc43kHnXg)
 
@@ -68,7 +67,6 @@ chmod +x start.sh
 bash start.sh
 ```
 
-![](img/8fc7f166b704f0dc2a5185bddd13cd2c.png)
 
 [2025-10-23 18-47-48.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MXZgbB68uolUHVxlBoucDTVenPb)
 
@@ -84,7 +82,6 @@ bash start.sh
 
 ![](img/286d81018f2f4cf2e37a0a919e05c11c.png)
 
-![](img/04530aa8ad16b5fc2b7e96e006d33091.png)
 
 此外，web工具源码：链**接: https://**pan.baidu.com/s/1_lRm_BweJO6XssxSkOU7DQ?pwd=wjjp，更多企业项目落地内容，扫码咨询⬆️助教老师～
 

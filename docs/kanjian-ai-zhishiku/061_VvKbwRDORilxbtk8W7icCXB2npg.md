@@ -54,7 +54,6 @@
 
 **以“柯基犬游泳”为例**
 
-![](img/2838cac6b5bb3f1642fafa56ef7b79f4.png)
 
 [a94bc656_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gh6gb1mqZoDr0PxwG6mc62hAnCc)
 
@@ -64,13 +63,11 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 ### 3.3  提示词分析
 
-![](img/8e2ffe9f6413684cddab0d71138f73c9.png)
 
 [71cbe2f0_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NiptbMb63o0cv2xwdyqc5HyvnRf)
 
 **原始提示词：**A baby corgi swims in a large pool
 
-![](img/108536a495cf69fa0992bb50dd5b3ff9.png)
 
 [a94bc656_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HjAnbqx3RoDERXxNh9ScJ381nTc)
 
@@ -167,7 +164,6 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 [8398b7e6_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LFN5bryAoovBQlxmGlxcDbqhn0g)
 
-![](img/d0adeecfb61858798fe43e9f3e997064.png)
 
 [48a7828c_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BFzMbZv2bo24VExBUZ7clw7rnib)
 
@@ -193,23 +189,18 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 [6f5a789d_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ye4TbCCGZoZxoYxFFEUc5CwPnoh)
 
-![](img/338f3474401c52ad9f8301c3a5ba136a.png)
 
 [fedc6d1a_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X5SzbpbnNoWDLfxPXIscwpX8nEh)
 
-![](img/4c9dba7a363c46df4258c056ef8b97b1.png)
 
 [48e02ab3_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XMb0biAZtoXxPqxKb48cmiAqnpd)
 
-![](img/7f3219956da6bcf2a7b9b40388e44755.png)
 
 [664ffe9f_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OvzWbBKAFow8rRxvZxCcsayonBe)
 
-![](img/7ed18c5b556f58aaa845a163d1d519bf.png)
 
 [5c9c167e_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OMmKbObMAo4icNxQjZZcgAZ9nvb)
 
-![](img/01a32fd3dcc8ad7d04856f6d02280a1f.png)
 
 [6e652e54_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NcX0bpZnVosfbdxCMjoc5WYAnGc)
 
@@ -251,11 +242,9 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 [3b53cae3_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MYlebIu7MoDXQWxKKnrcNG3pn4b)
 
-![](img/9a89725014f3a81b513ae695c6853c42.png)
 
 [615c6fe4_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M4OVbwEBBow8sUxn857cyIAxnah)
 
-![](img/c29f2af23b4a96bbb97fce132c99cfdc.png)
 
 [6f23d6e0_fi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AQDmb03ExoGvf9x31RYcyfcvnyd)
 
@@ -273,13 +262,10 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 | **视频效果** | **原始图** | **关键点** |
 | --- | --- | --- |
-|  | ![](img/e2d6a8318e6e8d897c8bd9b654e4d4d2.png) | 特效：烟雾、闪光 |
 |  | ![](img/94f53eaa1dd74d001037c75e8c863e41.png) |  |
 |  | ![](img/465cccd028bfc4160c3421c6eca9ab4d.png) | 特效：镜头推进 |
-|  | ![](img/f7c0737f799025f9e142cb27e626d771.png) | 特效：故障艺术 |
 |  | ![](img/6953ba30d1eeb43b02b886d77c5e5896.png) |  |
 
-![](img/31728c927f56274c5b6938c7e3415168.png)
 
 [04d9d67f_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FUyKb2ryeoeb4vxrtNjcPmhYnrc)
 
@@ -287,7 +273,6 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 [c62d26f8 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UMG0bBnOEoCaKHxhvGzcayQcnae)
 
-![](img/77f945d132bce1d84d59a18863f00155.png)
 
 [94612b42_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZiZ7b4yMSo0563xn6RzcEeq3nmc)
 
@@ -330,11 +315,9 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 [file_v3_00ct_3199764e-7859-4fc3-b600-b5381c5b14fg.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WSeLbZR4xouat0xETMXcDWkVn9O)
 
-![](img/bc4e0cb67f533cb6fc1c61cad8bccea4.png)
 
 [76003bde_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EEkJbtTAKoX7k7xbDSfcbsstn0b)
 
-![](img/6404d044a97056254cdd364281fe5180.png)
 
 [c9d532d4_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GLDIbzFKuoPIPpxEH2ScuagbnMf)
 
@@ -350,11 +333,9 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 [92d35756_fi_sr (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BC5Xbo4lno4fenx688Pc7UXJngh)
 
-![](img/d4d762149d9a8d1b058e59d1ec4ba57d.png)
 
 [a5ce6066_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RxtDbZaUBo9LDMxerK5cg2PLn2c)
 
-![](img/d889852544875fe34abc359d7e4972ce.png)
 
 [eaa5bfd4_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LLH8bLKyKod3RmxDuYlchLqGnHb)
 
@@ -366,7 +347,6 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 [d3f5d983_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZWzbb4rpOoZmLLxQV4ncAdVNn1e)
 
-![](img/f30174eecb5f2e0b3b771e4189b25985.png)
 
 [8dec395f_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZVMOb96xaoCnKDxAK9rc1dAQnmh)
 
@@ -374,7 +354,6 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 [13f050d2_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MScJbkGujoulP0x398sc58CxnG8)
 
-![](img/faf33d2a9ebb25802f6427dc68136d44.png)
 
 [674d4c87_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LPL8bZBoAo2Ui8xRpgHc0Qhpnid)
 
@@ -388,7 +367,6 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 | **序号** | **视频效果** | **原始图** | **关键点** |
 | --- | --- | --- | --- |
-|  |  | ![](img/39d087a7695f1403433cbe415ade559a.png) | 符合画面效果的紫色迷雾、飞扬的裙摆。 |
 |  |  | ![](img/8392bbd43bccceaeccb9464c70aeb80f.png) | 符合画面的动作延续 |
 |  |  | ![](img/a06489a734897211aee513c7adf4b35b.png) | 符合画面氛围的场景效果 |
 |  |  | ![](img/4934da12932c5eabd7dfb6282dfcb5df.png) | 符合画面氛围的情绪表达 |
@@ -396,11 +374,9 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 |  |  | ![](img/b51c1f7bd8cf3ae94abafb626f13a220.png) | 符合画面效果的材质表达 |
 |  |  |  | **风格升级：** |
 
-![](img/8f19252708ab9efa9228255b2ca4e936.png)
 
 [356e8cef_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EVPfbqeCLo23chxbUKWc1qLKnGp)
 
-![](img/44ac28c75350844d455254230427e5c2.png)
 
 [610416cc_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JBuDbmDvqoFo6SxUQNmcnt1XnQe)
 
@@ -424,11 +400,9 @@ Capture a serene moment featuring a baby Corgi swimming gracefully in a large, s
 
 [1dc4ad36_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IDdpbS0zdonqYdxBkiscyxHsn9e)
 
-![](img/1b50810a802679872407272782b2c120.png)
 
 [136547b7_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SuqXbHwXao5yzHx0GsPccnsdn3g)
 
-![](img/51d25287dc56be6c528f64ce19fb6e37.png)
 
 [04ab66be_fi_sr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VQhzbmrA8o582dx5TK4c9toHnYb)
 
@@ -468,7 +442,6 @@ Vidu允许用户上传多个主体图像，包括人物角色、道具物体、�
 
 此外，Vidu还支持融合不同主体特征，例如将角色A的正面与角色B的反面无缝融合，创造出全新的角色或物体。
 
-![](img/858dfd93c92e03ba936dbef2339a5db8.png)
 
 [飞书20241113-173737.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hc2DbbMvKoM4nVxx4cAciDlEnSh)
 

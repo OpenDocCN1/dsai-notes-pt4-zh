@@ -18,9 +18,7 @@
 
 > **一句话能做什么？ **
 
-![](img/40e68edf34e0eaa7a9447a63061565c8.png)
 
-![](img/c275adf8bcf94693e6de53ecd2d8dc98.png)
 
 ![](img/69998bfecc7cbe6770c615af71f1af8e.png)
 

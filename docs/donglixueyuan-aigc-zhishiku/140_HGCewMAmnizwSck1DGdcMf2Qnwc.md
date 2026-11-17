@@ -14,7 +14,6 @@ Threads四天破亿，扎克伯格暴击马斯克
 
 链接直达:https://www.digitaling.com/articles/951880.html
 
-![](img/a413e884365b6b365ed31e7750067cda.png)
 
 **Adobe 护充生成式 ****Al** Firefly：支持 100 多种语言 prompts 输入
 
@@ -108,7 +107,6 @@ ClipDrop是Stability AI今年三月收购的一个平台，前身是由前谷歌
 
 官网链接：https://clipdrop.co/stable-doodle
 
-![](img/413460ef5bb2717c13a8afc0ee409ef4.png)
 
 **AI****对话聊天助手Claude**
 
@@ -116,7 +114,6 @@ Claude具有更强的常识推理与记忆能力，可以真正地进行对话�
 
 链接直达：https://claude.ai/login
 
-![](img/46cbe5275b184427eb1ebd3ec7682bc9.png)
 
 谷歌Bard支持中文了！十级过关，看懂梗图，直接上手免费体验
 
@@ -152,7 +149,6 @@ Aptos和20世纪中叶的Swiss排版有相似之处，都属于无衬线字体�
 
 Aptos由多个几何形状组成，具备大胆、明确和指导性的特点，并受到限制。它适用于表达各种语言和语气。字母轮廓中微妙的圆形方块使其即使在小尺寸屏幕上也具有很高的可读性。
 
-![](img/94d9b4f464013f59d78d99143b339a44.png)
 
 **设计体系的变迁与构建**
 
@@ -160,7 +156,6 @@ Aptos由多个几何形状组成，具备大胆、明确和指导性的特点，
 
 链接直达：https://www.woshipm.com/pd/5865228.html
 
-![](img/ee4b9701adb38b00b99f2b2b776b9fcc.png)
 
 尊重字体版权，我整理了一个免费商用字体库
 

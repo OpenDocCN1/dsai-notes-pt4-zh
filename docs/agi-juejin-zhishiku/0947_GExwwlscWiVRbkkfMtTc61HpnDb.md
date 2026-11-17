@@ -12,7 +12,6 @@
 
 ## **unset ** u**nset **RAG产生背景 unset  unset
 
-![](img/4061c748abdd222cb60d201a49163486.png)
 
 在垂直领域中，企业通常需要处理大量特定领域的知识和数据。这些数据往往包括企业内部文档、业务数据和经营数据。而直接使用大模型来处理这些信息，常常会遇到以下问题：
 
@@ -34,7 +33,6 @@ RAG（Retrieval-Augmented Generation）是一种结合信息检索和生成的�
 
 +   减少幻觉：答案基于知识库，避免了大模型单独生成答案时可能出现的幻觉问题。
 
-![](img/7d5afa5a059b3cf6674ec9b60a1c70c5.png)
 
 ## **unset ** u**nset **阿里云OpenSearch RAG unset  unset
 
@@ -42,7 +40,6 @@ RAG（Retrieval-Augmented Generation）是一种结合信息检索和生成的�
 
 ####  **数据准备 **
 
-![](img/4d22eba33c43cfa4345e6ac03b0f3623.png)
 
 离线链路的数据准备包括处理各种格式的文档，如HTML、Markdown、PDF、DOC等。这些文档被解析、切片并索引，以便于后续的检索和生成。
 
@@ -80,7 +77,6 @@ RAG系统使用定制模型，通过预训练、SFT（Supervised Fine-Tuning）�
 
 ###
 
-![](img/ed22597100c40a74881d4e2e42f1bb4a.png)
 
 ###
 
@@ -90,7 +86,6 @@ RAG系统使用定制模型，通过预训练、SFT（Supervised Fine-Tuning）�
 
 ####
 
-![](img/670c3e742769c38edff30a49f6aff94c.png)
 
 ####
 
@@ -98,7 +93,6 @@ RAG系统使用定制模型，通过预训练、SFT（Supervised Fine-Tuning）�
 
 在线链路也涉及对实时数据的解析、切片和索引，以保证系统能快速响应用户查询。
 
-![](img/c7a050f1f710051997d5cccc6b5bf2ce.png)
 
 ####  **Query扩展和大模型总结 **
 
@@ -108,13 +102,11 @@ RAG系统使用定制模型，通过预训练、SFT（Supervised Fine-Tuning）�
 
 Prompt生成是在线链路中的重要步骤。系统会根据检索结果生成适当的Prompt，指导大模型生成答案。此外，训练链路使用客户数据和第三方开源模型进行持续优化，确保系统性能不断提升。
 
-![](img/578780f2714823b8f4e7f818df4b1684.png)
 
 ## **unset ** u**nset **大模型优化方法选择 unset  unset
 
 在大模型的优化过程中，有多种方法可供选择，每种方法适用于不同的场景和需求。本文将介绍几种主要的大模型优化方法，包括Prompt、预训练、持续预训练、监督微调（SFT）以及通过强化学习优化的DPO方法。
 
-![](img/4ee51a9b1290f2d6efbf2f56a46a4527.png)
 
 ![](img/8d652de3a01d34c1a24b082b726926db.png)
 

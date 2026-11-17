@@ -92,7 +92,6 @@ Function calling是个非常不错的技术设计，自诞生以来，一直被�
 
 +   MCP官方服务器合集：https://github.com/modelcontextprotocol/servers
 
-![](img/218b9d9ef4fa8c04b87088f4bae61a3e.png)
 
 +   MCP Github热门导航：https://github.com/punkpeye/awesome-mcp-servers
 
@@ -270,7 +269,6 @@ Sequential Thinking 是一个基于 Model Context Protocol（MCP）的服务器�
 
 然后打开cursor：
 
-![](img/26ac0db7f13675b0f9273a95484c8c0d.png)
 
 并写入如下内容：
 
@@ -290,15 +288,12 @@ Sequential Thinking 是一个基于 Model Context Protocol（MCP）的服务器�
     }
 ```
 
-![](img/ae3c767c74a0bb78abcac0072b077b48.png)
 
 然后回到MCP Servers页面，等待验证：
 
-![](img/f9a5ee5a560c2952de96b49eacc50f80.png)
 
 验证通过后，即可开启自动调用工具选项：
 
-![](img/6e9a2f6756e8c5fbd3fc37ff8c999c7c.png)
 
 点击确认：
 
@@ -328,7 +323,6 @@ P[laywright ](https://playwright.dev/)Automation 是一个基于 Model Context P
 
 Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-mcp
 
-![](img/7ab2ce70b35c6a4a34bd6ddbe24f7514.png)
 
 ![](img/a2cb9f3967671fa5a5723e764bd2cdb2.png)
 
@@ -350,7 +344,6 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
     }
 ```
 
-![](img/602d255b8fa36345ddb8fed29b01627c.png)
 
 ![](img/86b376a9f5289b1b097797b009ac65cf.png)
 
@@ -398,9 +391,7 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
     }
 ```
 
-![](img/8df14502c046a9a4167f82d2d13623c8.png)
 
-![](img/f463f8bc5e459a4a34c420f34f6e6947.png)
 
 然后进行测试：
 
@@ -408,7 +399,6 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 非常好，接下来请把你的这份调研报告，调用filesystem工具，以md格式写入本地文件，并取名为MCP技术初级调研报告
 ```
 
-![](img/e2bb793b7400ab3528836ffc662d42b7.png)
 
 ![](img/2c2243d1667dafe0ba7a409bdd05c8e5.png)
 
@@ -454,17 +444,13 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 
 然后我们可以将模型切换为DeepSeek官方的模型API：
 
-![](img/691b83c0e9a8d787d759d623de277677.png)
 
 然后开启：
 
-![](img/af1d373ccc4141f309442317db6f41e6.png)
 
 并尝试进行使用：
 
-![](img/24332c50f8f4a15569092ebd5cabe043.png)
 
-![](img/7001063dd3d6f0d7b4ad2d2eecc92679.png)
 
 同时，为了能顺利调用MCP工具，我们还需要安装uv和bun文件：
 
@@ -505,17 +491,13 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 }
 ```
 
-![](img/58073a4e8ae257be5af7296e9e7b7daf.png)
 
 然后点击开启：
 
-![](img/f8fd87ef669b7cee2ba38772384686f1.png)
 
 然后在对话中开启MCP工具，这里可选一个或者多个工具：
 
-![](img/e211905ed6456754bde8b01814e055cf.png)
 
-![](img/9d68ba88213330c2e9a6ea4fbf033e36.png)
 
 ![](img/9f1605057c4f9b1c2485fbb83f29d83b.png)
 
@@ -542,11 +524,9 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
   }
 ```
 
-![](img/a092d767fb1ebc1575ba39a102ea149d.png)
 
 然后开启工具：
 
-![](img/6736784d7a0ec5724d1df7b91e27ea6f.png)
 
 并尝试进行调用：
 
@@ -556,7 +536,6 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 
 +   阿里云百炼平台：https://bailian.console.aliyun.com/#/home
 
-![](img/65b2357c2e97a3e158d4b63dd09b0998.png)
 
 ### 1. 阿里云百炼平台介绍
 
@@ -580,11 +559,9 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 
 然后我们进入MCP服务中心，先选择高德MCP工具进行测试：
 
-![](img/1aae3a7bf9a78b0d1a7925a08cccf8f9.png)
 
 点击开启服务：
 
-![](img/2fcb9f9ef806c8e064144e6e43b3ab7d.png)
 
 ![](img/f1ffeba6d6ae4700145db373bec01f03.png)
 
@@ -604,37 +581,27 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 
 然后进入应用管理，即可看到当前开启的MCP服务：
 
-![](img/ba3458c439959d0cb8aa6abe6fcf669e.png)
 
 然后点击创建新的应用，其实也就是新的Agent：
 
-![](img/743dc2863d20428047ed410a55763e29.png)
 
 点击创建
 
-![](img/431896a97dbfd765daeec7f2b6c98060.png)
 
 然后即可进行模型和MCP工具配置了：
 
-![](img/32b2dfc7a1fdc8acb66d9551ec3a3f5a.png)
 
-![](img/dd81a360a3f2c8a428ed711ff781cc08.png)
 
-![](img/cf6fdf78c823303b5fa6cec3b3eac339.png)
 
-![](img/826de5e5dd39e2a352a4a44dd6a08142.png)
 
 然后输入系统提示词：你是一名经验丰富的导游，请耐心认真的为用户规划出游行程。
 
-![](img/8e82c6bd96e0b84dd6cc423a40cab1f9.png)
 
 然后测试进行出游路线规划：
 
-![](img/f4e0adb6e9088b092f19382a360d9e58.png)
 
 能够看到规划结果和MCP工具调用流程：
 
-![](img/4a6ac844a326adfb44b40da06628838f.png)
 
 ### 2. Firecrawl MCP工具
 
@@ -672,13 +639,10 @@ Firecrawl MCP 工具是一款基于模型上下文协议（MCP）的企业级网
 
 然后需要创建Firecrawl API：
 
-![](img/7285c2c69727f1969982e7be4ce753a1.png)
 
-![](img/5a2ade7ff3f33a014c2bed788f2a2708.png)
 
 点击复制即可：
 
-![](img/a9b65030ee68997d310bf52855345529.png)
 
 然后开启Firecrawl MCP工具：
 
@@ -706,9 +670,7 @@ Firecrawl MCP 工具是一款基于模型上下文协议（MCP）的企业级网
 
 ### 3. 百炼应用API获取与调用
 
-![](img/c8c0171c45f34022c512f49c96de4d26.png)
 
-![](img/4fbcc378c0a2d49fc1dbf796ce3779e5.png)
 
 ![](img/736218e5607191935b03f2b072692f1f.png)
 
@@ -1025,7 +987,6 @@ uvx mcpo --port 8000 -- uvx mcp-server-time --local-timezone=Asia/Shanghai
 
 ![](img/5047cc5297636f8408c6077488438fad.png)
 
-![](img/3667bcd613c91119ce9cb88f2b1a3d80.png)
 
 ![](img/ea8e3ddc582459f982d7d76f0a402f08.png)
 
@@ -1035,7 +996,6 @@ uvx mcpo --port 8000 -- uvx mcp-server-time --local-timezone=Asia/Shanghai
 
 ![](img/a57e485dc9094a5043f382c1e3df1fb0.png)
 
-![](img/7a301a861f4959c30007357b38ac3cb5.png)
 
 ![](img/432eba0ab8b5f3c2bbff3828159020eb.png)
 

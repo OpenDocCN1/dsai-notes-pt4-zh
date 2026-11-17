@@ -24,7 +24,6 @@
 
 接下来继续下载Codex IDE插件，我们需要登录Codex官网主页，然后点击Cursor按钮，然后点击打开Cursor，就会自动跳转到Cursor的Codex插件页面，直接点击Installing安装即可。
 
-![](img/9cd9e1e410502d30074e9ac760ec741e.png)
 
 [2025-09-16 14-42-45.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JO0hbuAk6oxTp6xJSJocwBnnnTf)
 
@@ -48,13 +47,11 @@
 
 这里我们需要点击Cursor光标打开Chat对话页面，然后点击Open Chat as Editor，然后再点击Configure Editors进入设置页面，然后进入workbench.activite页面，找到默认布局，并设置为垂直。
 
-![](img/223fa93681ba0268b470d49eebb1b826.png)
 
 [2025-09-18 14-26-36.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B🐧fb4WJnoDRDUx8JrGclkfCnig)
 
 设置完重启Cursor，我们就能把Codex功能按钮拖拽到右侧了。
 
-![](img/d17c7911abf53ebca790fd4cfeb4196f.png)
 
 [2025-09-18 14-27-08.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YWcxbLnrDoi8APxmMKycQ5PwnKb)
 
@@ -62,7 +59,6 @@
 
 在Codex对话页面，我们能自由的设置对话上下文，同时在默认情况下Codex也会开启自动上下文（Auto context）模式，灵活的自主添加上下文。此外，我们还可以选择Codex三种不同的模式，分别是Chat对话模式、Agent开发模式、以及拥有全部权限的Agent开发模式。此外，开发者还能选择各种不同的模型和思考程度，以便于执行各类任务。
 
-![](img/2a971223d1a18753d1916c1345d6efd2.png)
 
 [2025-11-20 19-14-14.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XIKIb910JoiGu6x5e5CcDdl4npg)
 
@@ -86,7 +82,6 @@ UI 要求：
 
 而在实际运行过程中，Codex会自动规划任务（task），并在对话页面下方打印任务完成情况。同时对于每一项任务，还会拆分具体执行环节，并在上方打印每个环节的完成进度，并且会根据运行情况不断反馈调整，
 
-![](img/40d71d82b449ea5b58caa07f6359c8ea.png)
 
 [2025-11-20 20-03-18.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TOBQbAat3ouPMcx9iC7cd1YWnpT)
 

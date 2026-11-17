@@ -22,7 +22,6 @@
 
 [蒋程驰的简历 生成式 AI 商业化落地版.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ROjfbuHYioupPHxcuOZcyJ4jndX)
 
-![](img/d2d56287e80044892a48e28e51eef8e2.png)
 
 ![](img/9b16e878baeae04ba1f8af951ac4496c.png)
 

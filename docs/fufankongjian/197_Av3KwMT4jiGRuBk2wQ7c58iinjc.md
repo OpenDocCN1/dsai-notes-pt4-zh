@@ -23,7 +23,6 @@ cd backend
 pip install --upgrade -r requirements.txt -i https://mirrors.huaweicloud.com/repository/pypi/simple
 ```
 
-![](img/3c7ca07ab444f03f30419a0017dd1531.png)
 
 +   所有基础依赖如下：
 
@@ -64,7 +63,6 @@ charset_normalizer
 
 +   创建.env文件
 
-![](img/71560f166af9522b473a1a664c77d4f7.png)
 
 +   核心需要写入DEEPSEEK_API_KEY。
 
@@ -176,7 +174,6 @@ https://ml2022.oss-cn-hangzhou.aliyuncs.com/5669e323f6d870b5240a76470253e6f8_raw
 
 +   OpenAI Agents SDK & Google ADK：巨头下场定义标准，推动了 Agent 开发向工程化、模块化发展。
 
-![](img/55945003b2d0a72d9ca8a371e8f2d663.png)
 
 +
 

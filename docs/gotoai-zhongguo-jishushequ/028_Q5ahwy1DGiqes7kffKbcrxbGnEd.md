@@ -6,7 +6,6 @@
 
 2026新年伊始，GotoAI中国技术社区携手深圳AGI云塔，共同组建粤港澳大湾区AGI生态创新中心，进驻深圳AGI云塔大厦。
 
-![](img/6a387b3a9b9f7004f5b0438f6728b9fc.png)
 
 ## Solgan
 
@@ -30,7 +29,6 @@
 
 以GotoAI 中国技术社区为灵魂，AGI生态创新中心为运营载体，AGI云塔大厦为物理底座，英文组合兼顾统一性与功能区分，适配不同场景展示。
 
-![](img/cb44e858a2013ec6ecddfc7571fdcc7d.png)
 
 ## 1. 核心品牌
 
@@ -80,7 +78,6 @@ Located at AGI Cloud Tower
 
 电话：400 862 1600
 
-![](img/e2c0f0068eb90d51f63780c006d1a43a.png)
 
 ![](img/a1b2899cc5f6cd413facdbf000809f10.png)
 
@@ -160,9 +157,7 @@ Located at AGI Cloud Tower
 
 +   **媒体与品牌传播**为生态伙伴提供品牌曝光、媒体宣传、案例发布等服务。
 
-![](img/5aef91e70213a1872b9bcecf662875b9.png)
 
-![](img/c70d3420e6bec3d754db6e7be08bfe1c.png)
 
 ![](img/e99d9737fc94440e19c9344e490fcb0e.png)
 

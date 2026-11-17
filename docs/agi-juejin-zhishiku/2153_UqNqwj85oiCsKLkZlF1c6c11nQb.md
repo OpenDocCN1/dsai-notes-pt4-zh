@@ -92,7 +92,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/804/419.htm)
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JF5CH10C0511ABV6.html?spss=dy_author)
 
-![](img/f90a447cc17dd894babc48ecc6c8a994.png)
 
 2024 年 10 月，纽约大学谢赛宁团队发表研究，提出 REPA 方法提升表征质量以突破扩散模型瓶颈。该方法将扩散模型中的表征与外部视觉表征对齐，仅在损失函数添加一项相似度最大化，就将 SiT/DiT 的训练速度提升近 18 倍，在 ImageNet 256x256 上实现 FID=1.42 的最先进性能。REPA 方法简单却效果惊人，获得了同在纽约大学的 Yann LeCun 的转发。
 

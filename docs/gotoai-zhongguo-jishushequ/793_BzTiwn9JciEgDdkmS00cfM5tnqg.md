@@ -134,8 +134,6 @@
 
 https://www.nvidia.cn/data-center/where-to-buy/
 
-![](img/b4f200b79c2e677cf7d1cbc93890907f.png)
 
-![](img/90374a5fece03a407a45de7fa775af47.png)
 
 ![](img/8a7cb57c87bbc462d397b898048fe405.png)

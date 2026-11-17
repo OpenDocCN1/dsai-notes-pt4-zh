@@ -582,13 +582,11 @@ Claude: 根据图表显示，Claude 3.5 Sonnet 的性能表现非常出色：
 
 +   Step 1.登录OpenWeather官网并点击Sign—>create account完成注册。该网站无需魔法即可直接登录，可以使用国内邮箱或者🐧邮箱均可进行注册，官网地址为：https://openweathermap.org/
 
-![](img/b2999c139f8714df72ce9d587764f1f1.png)
 
 ![](img/804d5646dfc7f661b9a382670ebb140a.png)
 
 +   Step 2.获取API-key：注册完成后，即可在API keys页面查看当前账户的API key：
 
-![](img/f78c9e926bca5de4e890a539d852e798.png)
 
 ![](img/f2c5bf7efb37472cf43dea8a759faeac.png)
 

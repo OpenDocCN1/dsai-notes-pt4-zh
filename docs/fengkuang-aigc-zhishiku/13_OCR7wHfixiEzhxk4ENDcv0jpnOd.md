@@ -183,7 +183,6 @@ Emma Watson as a powerful mysterious sorceress, casting lightning magic, detaile
 
 对应的生成图如下：
 
-![](img/1103a76d6fac15921a6e95d80b74f39d.png)
 
 图9 Emma Watson女巫图+额外细节
 

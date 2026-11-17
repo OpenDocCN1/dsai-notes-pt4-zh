@@ -22,7 +22,6 @@
 
 [🎁2026蝉妈妈年度大会【干货大礼包】](https://chanmamagroup.feishu.cn/wiki/Sr1AwP9wai3dcKk4L8Nc5PVcn8f?from=from_copylink)
 
-![](img/5113288e4760b44cb2e27a686ab42cac.png)
 
 ![](img/3df5f9015c4dec42daa7525b356d6e0c.png)
 
@@ -44,7 +43,6 @@
 
 [抖音起号SOP.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B3AJbde6IopjHIxTxE0cd9DLnmq)
 
-![](img/c6df12c5af513045dc64238bc7bad600.png)
 
 [2024抖音个人IP的打造计划培训课件.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SNsWbiThUoiQEbxSQ0RcWFWUnzd)
 
@@ -156,11 +154,9 @@
 
 [2024抖音财经内容生态报告-巨量算数.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ECGobTPMhoKm8oxGkg6c6qsJnug)
 
-![](img/d6c1e58240965251e92c4b5efe77f38b.png)
 
 [2024长青爆品生意经-巨量引擎.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GXcubikcloiMwbxmWKJct4ybne5)
 
-![](img/6e2ff6b2ccf4f1f0cf4f3f3c60eee6c9.png)
 
 [2024抖音体育运动潮流趋势报告-巨量引擎.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E0O1bfoJponweVxeHVlc0YXJnGh)
 
@@ -176,7 +172,6 @@
 
 [2024巨量引擎日化行业白皮书.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HNzsb7PAhoH9mVxFENqcd1n1n4V)
 
-![](img/0f08bd166e0c73c3008417d98860d957.png)
 
 [抖音短视频带货投流运营手册.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RK7obNF0no9pbDxzh4Wcstn7nJh)
 
@@ -304,19 +299,15 @@
 
 [📕爆文攻略【互联网】【新媒体运营】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GHp9bSwI8oikZTxMqvBcOQ5OnAc)
 
-![](img/73232e52da4c713984229e0a3db98b4b.png)
 
 [📕养号发文SOP.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C4jabu9z0oMAlYxWvldcpCSUnfh)
 
-![](img/fa369ea7fa4449f08e8b5deaa2a2bf8a.png)
 
 [评论区和私信的互动指引的方法论.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LHsobmeqTo0lumxqiaycFZosnPf)
 
-![](img/c03aa9a9fac3b42e852cd78798a7fda6.png)
 
 [怎样写出📕最受欢迎标题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JraAbbqaGoVENBxcc9scfhrQnWg)
 
-![](img/d5462dfd3fa3fe7dffd0732ec10abc94.png)
 
 [📕爆款封面的底层逻辑.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S4n4bmmyEoMZiFx5hqMciQc9nfe)
 
@@ -328,7 +319,6 @@
 
 [《📕内容运营技巧》内部培训文件.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N40gbBDq9oZjlQxmyCxcpbqjnMh)
 
-![](img/bb95d986248e0be36b21f3bbfd4a4ea9.png)
 
 [【📕】2022如何做好内容爆文进阶指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IJTUbkVHKo86UFx5vXYcParNnof)
 
@@ -340,27 +330,21 @@
 
 [📕从注册到运营全流程-📕运营方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZEu7b9PxCoDj4bx4Y3rcaweGnIc)
 
-![](img/20d352a7169580c299cf0d1fed86db75.png)
 
 [📕运营全流程&爆文创作攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GLocblNFfo7BbPxLGibcLb8NnAb)
 
-![](img/e6ce77cd4053fa131dc9b6e18365d870.png)
 
 [【📕官方】📕商业笔记避坑指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KJ9Pb7zS0o8HGaxyAr6cMSQHncc)
 
-![](img/f324f156abf0d31965be25bcf9325de7.png)
 
 [【📕官方】📕大促期间爆文打造攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Khzib9T57oHt8IxdbMEcIoXqnOe)
 
-![](img/cb93e6efc3fabf8946b1bee2bb2bb844.png)
 
 [【📕官方】📕笔记内容指导.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bf3Mb0oHIo791Kxt74ncBhwrnvc)
 
-![](img/5b413d153bca1717d44524c7095deaf8.png)
 
 [【📕官方】如何在📕打造优质种草笔记？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MYzabJpG8oS3fRxOAXXc73Jlnod)
 
-![](img/d3c5740f95b47adb49dc950c12f3774e.png)
 
 [【📕官方】如何做好内容爆文进阶指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NUmQbtCEEokDWYx5ZaocWYlLnwd)
 
@@ -368,19 +352,15 @@
 
 [如何通过📕快速打爆新品牌.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LnoXbj5N3oLiOpxaUfjcD5Uun2g)
 
-![](img/557c9089a108403861c804e003e2f3f7.png)
 
 [📕企业新账号学起来手把手教你早期运营思路.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B0bhb3XA3ox8TqxFW15cvkJFnEd)
 
-![](img/a60ff1b0d914a5c9e4b7ce837e17bb6c.png)
 
 [📕：📕内容运营技巧培训SOP.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JyZsbZspyorZEOxanficjpXrnpc)
 
-![](img/60420fdfaf8b7d5b49b98b059d930e8d.png)
 
 [四步打造📕优质专业号.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IlhBbe16boDhOWxicsecl0snned)
 
-![](img/930fd781a1a29e8ebdeaa578249dcd71.png)
 
 [学好这五步-入局📕.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X5hYb4OWroXFbgx6tfbceHQCnFc)
 
@@ -622,7 +602,6 @@
 
 [2024📕平台营销通案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MzPsbmMMmo52i2xypIQcDtJoneh)
 
-![](img/daef42c35a7541c2af2b8fcdeac4b764.png)
 
 [2023在📕解锁品牌经营新风潮【互联网】【通案】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ReqjbVyoooZPi3xQYTYcgsInntd)
 
@@ -638,7 +617,6 @@
 
 [2023📕S+级外人节IP招商方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UxfkbHsHHowVQDxQCrWcasebnlb)
 
-![](img/438fdd265a8030a347988c5e86c8475b.png)
 
 [2023📕商业化营销IP招商通案-89页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UlXPbbsi0oXgsmxaJAgcz4wtnEd)
 
@@ -674,11 +652,9 @@
 
 [【小裂变出品】企业🛰️对外信息展示页配置.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B5NebscwCoABLbxKBdjceEX3nrd)
 
-![](img/b5ed2655d214fc73b53dcec4ac073407.png)
 
 [4月私域营销建议.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nzg1bQU1BoBBZdxOYMncM8zSnih)
 
-![](img/695c2736cca79e3fe0c368c0c24f46dc.png)
 
 [25年5月私域营销建议.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bp9HbKTjJomxHXxeJs2cKBmunEb)
 
@@ -830,7 +806,6 @@
 
 [见实《私域代运营爆发》白皮书.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WWSEb70ijoAPgVxDcM9cCFkMnpc)
 
-![](img/f535056d0986b889423d4adfec892755.png)
 
 [见实《私域用户分层运营》白皮书完整版.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XxXobg27doq1gqxxgpkc6zf6nZZ)
 
@@ -858,27 +833,21 @@
 
 [增长黑客如何玩转私域流量-范冰.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AnH1bZWdhoi1FoxIUpoc7oLUnQd)
 
-![](img/590408e74c179f16136ae309a6fb2592.png)
 
 [勿传！群响企业🛰️最新又全的养号流程.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A0n9bQT85oz8IBxKPulcZA33nJe)
 
-![](img/520e3d3b06f35ba423ee9b462c08b9c1.png)
 
 [勿传！群响最新🛰️养号和防封全教程.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/StD9bD9kMoVcNZxbImIcdSBgnbf)
 
-![](img/5e81c13456d7da1a4fa57aab780ec05d.png)
 
 [群响私域养号操作手册.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lhv0bJPKCon9Jjxb9RGcGUmMnZf)
 
-![](img/ce99a7eab4d9f04fc06b2059ca24f599.png)
 
 [群响：🛰️助手群发小技巧.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FGJIbUqo1ocrstxg4xacchsAnYe)
 
-![](img/6624bdf8c82d7874c11dca08752aad2a.png)
 
 [私域养号SOP合集.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QDlGbqlPdo5GU6x8J0scOEMUnzf)
 
-![](img/b75d328aeff0ccecfc3c720a5d8da1b1.png)
 
 [私域团队建议&考核标准.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KCoybxHkpodX6GxtJY3co8EqnFb)
 
@@ -976,15 +945,12 @@
 
 [2024年Q2B站奢侈品行业营销指南-拥抱新世代引领新审美-B站营销中心.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CAt6brRZ6o9pz1xknDEcvy86nIe)
 
-![](img/13e8a213be01880482178337e0c39e9d.png)
 
 [果集行研：2024年B站交易生态趋势报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GMBWbtf62oMsLEx1hUec8RpAnkb)
 
-![](img/c91576d6220b7b591910922f0aa73b94.png)
 
 [B站精享内容起飞业务介绍.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JqjVbkzkJoRshjxW0H6cDE2dnlS)
 
-![](img/6abe1e9e51683dd35c2af92886f38b47.png)
 
 [短视频运营：快手、抖音、B站营销策略异同研究.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IKhGbHyWbocVCixeQDVcaR9onPd)
 
@@ -1120,15 +1086,12 @@
 
 [知识博主直播间卖课的话术模板.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UDHvbZFVhoz8cVxxPZ0cG4KJnfc)
 
-![](img/b37c5ee279212226597f0c187b8ca766.png)
 
 [食品类目直播带货脚本2.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wt3ubcze4oq0tcxjHw9cSU5Onke)
 
-![](img/54da537daa6c20da91314e7873371e49.png)
 
 [食品类目直播带货脚本1.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fj11b6SnpoLEKKxtgLEcNi2sntm)
 
-![](img/cfe004d33aa7dc3b7858b10656b55796.png)
 
 [食品类-蓝莓蜜直播话术.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HYuybs95boJPWdxPehMcCdronld)
 
@@ -1150,7 +1113,6 @@
 
 [同行直播场景记录表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NaGDboEAloj3tyxJtNXcJkCinwh)
 
-![](img/77a95aea77a89aa8f3beaeaaa07d2218.png)
 
 [绿幕直播间设备清单.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jc4xbWdwKovCKZxnPU6cF5b8ned)
 
@@ -1198,7 +1160,6 @@
 
 [直播资料1：直播流程设计脚本.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MX0bb9SlmoDxvdxTlBrct4hZneh)
 
-![](img/6d4c992d85ad63b01d95988bbdd07a48.png)
 
 [直播资料2：主播培训技巧全集.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LVDnblT5YoYdGkxEb4hcOv1HnYz)
 
@@ -1288,11 +1249,9 @@
 
 [各行业短视频运营规划及案例.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kpxabuwpkov0bbxdbL3c4qkcn9g)
 
-![](img/40ff544fe275b6f2e101b12d264c10fa.png)
 
 [知识付费内容自检表.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Oo5lbF8qno5XVyxWsyNc5Okvnpg)
 
-![](img/ad2b0c40e0aea21f2d9cd40f9453df5c.png)
 
 [专业文案工作手册.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IKSVbEEMloAML4xmh1ucI3LgnBg)
 
@@ -1358,7 +1317,6 @@
 
 [【SocialBeta出品】2023节日营.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fo93b4eVToBH7gxpH4uc1ORznZX)
 
-![](img/d77cee40e1e66be1b69ac71fc9173693.png)
 
 [【有赞官方】2023年618营销活动方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q4C9bVxIYo17JBxtrcwcMWfHnhb)
 
@@ -1476,7 +1434,6 @@
 
 [小马宋《营销实战工具手册》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RmcMbiejDotCYJxJfZNca556nub)
 
-![](img/c10f8ae3ea3613a6f43c8382a570f88d.png)
 
 [洽洽X葵珍溯源季整合营销方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HzShbqVH5oPQpPxrySecK0KUnxe)
 
@@ -1496,11 +1453,9 @@
 
 [【密】刀法轻分享第86期 浴见：核心4问，找到真正支撑品牌和生意的「明星单品」 .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ol7kbsLLuolJY1x8ODtcDPuUnSb)
 
-![](img/35eb4bed6fa6d39bfbb873bd2f6c3a0c.png)
 
 [策略词汇大全_市场品牌传播渠道.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Yh51bTp3eoE7tIxUeg1cQVPyneb)
 
-![](img/8d4febcd073acef3a96d547f546e334a.png)
 
 [运营策略岗专业词汇大全.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NtuCbI2RHo2bfoxBGMscBSETnvh)
 
@@ -1524,7 +1479,6 @@
 
 [蕉内品牌手册（仅供学习欣赏，版权属于蕉内公司）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I7X4bhzFPoig2gxvsNocGJXpnnc)
 
-![](img/6fca31b0383e029ed3d2435040cb6d92.png)
 
 [丸美天猫双十一整合营销方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P9zjbRi5CoNuefxImTHcWlq1nsc)
 
@@ -1576,7 +1530,6 @@
 
 [2020年人民日报新媒体重磅规划方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IJ68bTwgKoDqm2xGwJ2cAYSInHg)
 
-![](img/976dc9924770f11762b5ab86ae4fea62.png)
 
 [林清轩品牌手册最终版（可对外）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BpoTbMjyKooxd5xfjchcJCw0nWe)
 
@@ -1624,7 +1577,6 @@
 
 [CSM商务能力指南](https://h9v8ibz4lt.feishu.cn/wiki/wikcnVHbhhQ30r74Pp7DQruNCtg)
 
-![](img/622d980bcd8d65d99f555e9c8e67c649.png)
 
 [2022竞品分析方法大全.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I0I6bBdjtow2Juxxzo8cLq8tnCb)
 
@@ -1884,7 +1836,6 @@
 
 [2022年中国兴趣消费趋势洞察白皮书.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FVtEbBnUNo8RAnx6kF8cvSbfn5c)
 
-![](img/ccee86c024e8d82ec607dbb5f30e9214.png)
 
 [天猫国际跨境保健品消费者洞察报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KqQwbQc8lo3DEgx3jincFuMmnof)
 
@@ -1900,7 +1851,6 @@
 
 [2022私域电商平台趋势报告-浪潮新消费.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KPPdbVcATocK5Fxv6dtcAyW3nqh)
 
-![](img/fb56624c628d348c77de5f869d74a7d1.png)
 
 [2023年宠物保健品消费趋势报告-果集行研.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DO6RbB0kUogFUUxWJ7hcx0Sbn2f)
 
@@ -1924,7 +1874,6 @@
 
 [后浪研究所：2022年轻人潮流电器新品报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vr3HbkRrionFJtxaSGJcEHE6n2K)
 
-![](img/9c90df1e655c14fa04de125d5e803173.png)
 
 [星图数据：《2023年双十一全网销售数据解读报告》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Puflbytnoo7aSCxi1I8c4K7znGf)
 
@@ -1938,7 +1887,6 @@
 
 [2025黄碧云：实体生意最新 5 大获客方法课件分享【实体店获客】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SMyXbOa2doBkEoxBc5Fcg7WdndZ)
 
-![](img/9ec9be65157596cd35c9598d7f97b0a7.png)
 
 [以实体商家为例，如何通过低成本短视频拍摄，提高客户到店率？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PtbKbzivZotaYtx3QpPc1KVtnRe)
 
@@ -1968,11 +1916,9 @@
 
 [AppGrowing：抖音快手B站知乎📕，广告媒体投放增长洞察.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/R7YQb7FGPogNzjxL1rRcyrBVnKh)
 
-![](img/988af0895c61a73af4a9fe7ae347a84a.png)
 
 [抗老护肤品牌内容营销研究.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GFCnb3MmcoURZdxVSAFcLhD8nnh)
 
-![](img/139fc70ba085e662ce459a639bdab958.png)
 
 [【艾瑞咨询】2022年移动应用运营增长洞察白皮书【发现报告 fxbaogao.com】.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XaKcbK5szoZLgrx0q2bc7GW9nRg)
 
@@ -1996,7 +1942,6 @@
 
 [2023出海营销洞察报告—角逐品牌力把握出海营销新范式-创业邦.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PWB2bRV7dofZa2xWBPqcuHpgnRh)
 
-![](img/eb54a0ef6152d06d07dd8afdc7fe5d8e.png)
 
 [2022下沉市场洞察报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DtC4bkD33okGdRx7DfmcPXZtnqb)
 
@@ -2042,7 +1987,6 @@
 
 ## 母婴行业
 
-![](img/e722f5fa4e2af3f7ffdafebe7652bac8.png)
 
 [《2025母婴品牌抖音内容增长策略》-白泽.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OuifbGwzvofOLSxsYnkcn948n1e)
 
@@ -2148,7 +2092,6 @@
 
 [💼 飞书资源合集（持续更新）](https://sudo.feishu.cn/wiki/wikcnTGckC2OBrqZQAhN6JLidff)
 
-![](img/077da66f5175ab8a6dd8f0cd0be991e6.png)
 
 [29个心理效应在运营中的运用.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JKrHb9EgVoSVUcxVnUTcuY4Jnrg)
 

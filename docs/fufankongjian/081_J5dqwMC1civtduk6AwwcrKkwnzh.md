@@ -784,13 +784,11 @@ Swarm 智能体可以直接调用 Python 函数。通常情况下，函数应该
 
 +   Step 1.登录OpenWeather官网并点击Sign—>create account完成注册。该网站无需魔法即可直接登录，可以使用国内邮箱或者🐧邮箱均可进行注册，官网地址为：https://openweathermap.org/
 
-![](img/2a96c9e2a71cee621a05105e52968dcf.png)
 
 ![](img/58301ad37d7f048a57167f6530ea2c7e.png)
 
 +   Step 2.获取API-key：注册完成后，即可在API keys页面查看当前账户的API key：
 
-![](img/a011fa3bf1ccb089a3401cebd5c6563a.png)
 
 ![](img/e9323d4322a3294e7181d59c52a0c123.png)
 

@@ -74,19 +74,15 @@
 
 https://curl.qcloud.com/
 
-![](img/bb4f30ee0007e8dbf2bca926c1eb3147.png)
 
 这里选择产品体验，如果你这个时候没有登录，会让你自动登录，以🛰️登录即可，然后就可以进入到体验中心了，这里虽然有体验模型，但是千万不要选择，这个是会收费的，我们进入应用管理，然后新建应用
 
-![](img/1539512ee76d783d4735352d5f8d99ea.png)
 
 输入应用名称
 
-![](img/7ecf4dc454fc62d3a669499d25a0f6c6.png)
 
 我们这里选择大模型，记得选择R1模型哦
 
-![](img/89bbafbb983b30df796d1d9b2ea73dc6.png)
 
 这里主要关注左侧输入框
 
@@ -190,13 +186,10 @@ OK，我们来测试一下
 
 这里我们如果觉得已经调试完成了，就可以发布了
 
-![](img/e1795aeef145e3dc7766aedc84b51991.png)
 
-![](img/a87e22d3bde05825a320f6fe044a9c33.png)
 
 发布成功之后，在通知中心就可以看到结果了
 
-![](img/da178f6f8b9284345defcf34dd012fbf.png)
 
 我们可以点进去调用了
 
@@ -250,13 +243,10 @@ https://lke.cloud.tencent.com/webim_exp/#/chat/aNGfzv
 
 **登录平台之**后，在顶部导航栏里找到大模型->火山方舟，点击进入火山方舟。
 
-![](img/f5e37b3e65c2d85b6c9699fc18f96e83.png)
 
 进入之后点击立即体验，就可以获得DeepSeek的免费额度了
 
-![](img/3434bc1f940e298c3429c01cae79e595.png)
 
-![](img/ad62babe05512a7c5293b429362dfd25.png)
 
 鼠标悬浮在DeepSeek-R1模型卡片上，点击立即体验，你就可以在字节的火山方舟在线使用DeepSeek-R1了！
 
@@ -274,7 +264,6 @@ https://lke.cloud.tencent.com/webim_exp/#/chat/aNGfzv
 
 火山引擎与腾讯云类似，也是支持自己创建应用的，使用的Token也是从免费的50万中扣除，大家感兴趣可以尝试着自己创建。
 
-![](img/4fc51e4ecaa7695842d88bea2b20c282.png)
 
 ## **扣子**
 
@@ -286,23 +275,18 @@ https://lke.cloud.tencent.com/webim_exp/#/chat/aNGfzv
 
 地址：https://www.coze.cn/
 
-![](img/3ddd1f14fd912ade7393f57bd811ee1c.png)
 
 登录平台之后，点击左上角的+新建智能体
 
-![](img/3751375e7e6dd97b62ee0a801a3a603d.png)
 
 点击创建智能体
 
-![](img/11aad99f5caa12ac42aa71f1e8e63a4d.png)
 
 选择 标准创建，然后在对话框中输入 智能体名称和 智能体功能介绍。我们今天尝试开发一个爆款标题助手，所以起名字为 萝卜爆款标题助手，功能介绍填写为 帮助生成爆款标题。
 
-![](img/9b2ebf27e8feebcc7a8d2b0044eef34a.png)
 
 进入智能体开发界面后，缺省的大模型是 豆包·工具调用，点击模型切换，选择 DeepSeek-R1大模型。
 
-![](img/b9934542e7f8feb260e62331a2a2073b.png)
 
 不过我们发现，选择了DeepSeek模型之后，扣子的很多功能还不支持，不知道以后会不会逐步都支持起来
 
@@ -366,15 +350,12 @@ https://lke.cloud.tencent.com/webim_exp/#/chat/aNGfzv
 
 之后就可以对话啦
 
-![](img/75f0e57e69e8f7e10b1c75cf7688c6ac.png)
 
 当然在扣子里直接创建智能体，是比较简单的玩法，而更加高级和灵活的完整则是创建工作流玩法，也就是第一步，我们需要创建应用
 
-![](img/8cb2c81f1a5a216576ba9a3707e3a6a4.png)
 
 在应用当中，我们就可以添加不同的模块来满足自己的需求，要灵活多了，但是相对来说也复杂一些
 
-![](img/8a4c19ded15a7d1b744284011a6eae96.png)
 
 但是因为这个过程确实比较复杂，流程非常长，需要重点的事项也很多，所以萝卜哥准备单独写一篇文章来介绍，在这里就不过多展示了，大家可以先自己研究一下。
 
@@ -402,13 +383,11 @@ https://lke.cloud.tencent.com/webim_exp/#/chat/aNGfzv
 
 我真的，他哭死，这个回答上来就是浓浓的逼乎味道，太熟悉啦，哈哈哈哈。
 
-![](img/cc28eb874af7d0b09ba69cfba81bd47f.png)
 
 再切换为专业搜索试试
 
 在专业搜索中，可以专注于中英文文献库，AI 可参考的信源质量更高，而且还可以选择自己的知乎收藏和接入的RSS源，也就是根本不需要自己本地有资料，所有的知识课都可以来源于网络，这一点真的好方便。
 
-![](img/06ada82138409d1e076292904c949302.png)
 
 确实专业搜索回答的似乎更好一些，毕竟参考来源更丰富
 
@@ -432,7 +411,6 @@ OpenRouter是一个大模型API路由器，旨在将各种AI模型和服务集�
 
 地址：https://openrouter.ai/deepseek/deepseek-r1:free
 
-![](img/0fcc55083165944e0f598d55fc21342e.png)
 
 虽然说这个是国外的网站，但是在国内可以直接访问，只不顾我测试下来，有一点点小阻碍，就是登录的时候，需要魔法哈，大家自己根据情况选择是否使用
 
@@ -440,9 +418,7 @@ OpenRouter是一个大模型API路由器，旨在将各种AI模型和服务集�
 
 我们在左侧搜索deepseek，选择那个free版本
 
-![](img/1a3ba78385711bdc85df1b972ad193b2.png)
 
-![](img/b99ed254cecda729270c7db542abaa9f.png)
 
 点击Chat按钮，就可以进入聊天界面了
 

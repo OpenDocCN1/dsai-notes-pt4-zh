@@ -68,7 +68,6 @@ Transformer注意力计算公式
 
 +   因此，整个Query矩阵Q（形状为(batch_size, sequence_length, d_k)）可以通过E * W_Q计算得到。
 
-![](img/8d34b560180f7cf2e33baaca456d5a3e.png)
 
 **计算Q（Query）**
 
@@ -88,7 +87,6 @@ Transformer注意力计算公式
 
 +   **因**此，整个Key矩阵K（形状为(batch_size, sequence_length, d_k)）可以通过X * W_K计算得到。
 
-![](img/9be42681ca8b7c19c9ffaa7433736341.png)
 
 **计算K（Key） **
 
@@ -108,7 +106,6 @@ Transformer注意力计算公式
 
 +   **因**此，整个Value矩阵V（形状为(batch_size, sequence_length, d_v)）可以通过E * W_V计算得到。
 
-![](img/d0372327a01a8c293ef6fefcddf9a23b.png)
 
 **计算V（Value）**
 

@@ -6,6 +6,5 @@
 
 https://oshwhub.com/explore
 
-![](img/1c96011ff6ff767c511bf811c3a86a23.png)
 
 ![](img/b77a99bae6ed0bf132346fa578a237c6.png)

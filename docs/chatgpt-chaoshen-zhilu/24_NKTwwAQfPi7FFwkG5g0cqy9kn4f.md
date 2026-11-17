@@ -36,7 +36,6 @@
 
 **地址：**杭州市余杭区良渚数字文化园
 
-![](img/b22f2a0ead1bf26e28931d4696f6f36e.png)
 
 ![](img/86577cdb5c6267307df07c1cb589fe59.png)
 
@@ -44,7 +43,6 @@
 
 **时间**：2023/11/11
 
-![](img/1351f7a686b7a65e15846a5817aff6dd.png)
 
 ![](img/99b685506855aa3ddbb0fee4298ffe7b.png)
 
@@ -56,7 +54,6 @@
 
 ![](img/21b84646fcc8d719aa4c0a2cd4304021.png)
 
-![](img/8f9b2ef219397b4d60b9f17157c5d9c9.png)
 
 ![](img/b070f75ae5ae3e1754d58cf533c328c5.png)
 
@@ -64,7 +61,6 @@
 
 AI四方荟是我在23年1月14日创建的一个新的社群
 
-![](img/05b2bdc8e4de0f1fdc4d214c76683bb3.png)
 
 ![](img/0fc5744636b8de1f25d9b829db8dff0c.png)
 
@@ -72,21 +68,17 @@ AI四方荟是我在23年1月14日创建的一个新的社群
 
 ## 我在亚马逊分享
 
-![](img/b1a5bc3097e519cb19c196d892ac388a.png)
 
-![](img/21f34b95a94f05c04b08faaaf8365478.png)
 
 ![](img/d5131f99c9da0185e20418bf41fb8bba.png)
 
 ## 在华中科技大学MBA班分享AI
 
-![](img/c3fc6a023030774bbfc1f72a686b74f7.png)
 
 ## 武汉华中HRBP大会分享AI
 
 2024年8月16日
 
-![](img/8932066e69fe52bc085d868bf8b4fb31.png)
 
 ![](img/793f3b909274d865e06aaee067741e1f.png)
 
@@ -100,7 +92,6 @@ AI四方荟是我在23年1月14日创建的一个新的社群
 
 ## 在深圳、杭州上AI线下课
 
-![](img/cb18c670e2dc813ad9fb12e0e3e4ed7c.png)
 
 ![](img/38b571f6161c64f95695307afcd6e30e.png)
 
@@ -118,7 +109,6 @@ AI四方荟是我在23年1月14日创建的一个新的社群
 
 ## 第二届AI商业产投大会
 
-![](img/317df6aa759d86e3821aa8de4c69ef6d.png)
 
 ![](img/7a2bb58c9ef761de4522614e012951f5.png)
 
@@ -132,7 +122,6 @@ AI四方荟是我在23年1月14日创建的一个新的社群
 
 ![](img/79a2d551c6a8ae079b3b3f3869989e2f.png)
 
-![](img/5b7464cb1b95c7de8923d89dc5740e9d.png)
 
 ![](img/091c03c4539a42e7d8d0ef396aaceeb7.png)
 

@@ -100,7 +100,6 @@ ChatGLM系列模型的硬件门槛相对更低，而且支持多种不同的运�
 
 选择精简安装。
 
-![](img/1e8b015ecc49b31f605bfbc92d7a4f1f.png)
 
 这个安装过程会有几次黑屏，属于正常现象。
 
@@ -180,7 +179,6 @@ ChatGLM3-6B模型的项目文件托管在GitHub上，而GitHub是基于Git的服
 
 ![](img/92c098e93c6aa5f8cc482dc48da80e1c.png)
 
-![](img/9dbac721707142d284e1bb995d53722a.png)
 
 ![](img/377807fd8a05e4ec28c42a69b2e7b9b4.png)
 

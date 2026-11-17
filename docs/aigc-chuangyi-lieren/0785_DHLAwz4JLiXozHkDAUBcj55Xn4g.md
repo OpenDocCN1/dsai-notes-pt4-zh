@@ -471,7 +471,6 @@
 
 [X2Twitter.com_1801046225669783552(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AUH8bxhpXoa1S7x1x7Zcn7eXnfC)
 
-![](img/75f717de8b97ccfb893e93d31b563935.png)
 
 [X2Twitter.com_1800928596829057025(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G9LMbKVUWo2wiKxibvbcOffZnSg)
 

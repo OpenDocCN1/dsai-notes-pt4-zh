@@ -4,7 +4,6 @@
 
 #### 用Github Desktop直接打开Cursor
 
-![](img/42e9cd2c65db23ee3501556b7a315b79.png)
 
 ![](img/572d80b97d570e1b1e00bdf72f688a73.png)
 

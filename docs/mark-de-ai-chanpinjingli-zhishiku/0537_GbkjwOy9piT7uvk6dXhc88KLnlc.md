@@ -6,11 +6,9 @@
 
 ### 应用效果图
 
-![](img/c25a4ec63f860f9793c37a24a8e04dd8.png)
 
 ### workflow拆解
 
-![](img/593f58e8f9c97698d67a556326ed473f.png)
 
 ## 开始
 
@@ -18,7 +16,6 @@
 
 ### 任务拆解（LLM）
 
-![](img/d883c13598972ca6996d37b8ea70d342.png)
 
 ### prompt
 
@@ -28,7 +25,6 @@
 
 1.  任务提取（参数提取器）
 
-![](img/87b8c58812d76b7f6cd0dde1961248f9.png)
 
 ##### prompt
 
@@ -49,11 +45,9 @@
 
 1.  任务迭代（迭代）
 
-![](img/db2d0a4d7cc6d5e71ea32fb1c38b7a5b.png)
 
 #### 4.1 任务解析（代码执行）
 
-![](img/9d004472f3a48a2ea0eb7bb9dc035ee9.png)
 
 ```
 def main(step) -&gt; dict:
@@ -68,7 +62,6 @@ def main(step) -&gt; dict:
 
 #### 4.2 任务执行（LLM）
 
-![](img/fdc409d12c3a90ebdfa14e14290aaee1.png)
 
 ##### prompt
 
@@ -97,7 +90,6 @@ def main(step) -&gt; dict:
 
 1.  输出结果
 
-![](img/0eb7e554c380ab01b8628767966301b1.png)
 
 ```
 {{ step_answer | join(&quot;\n&quot;)}}
@@ -105,7 +97,6 @@ def main(step) -&gt; dict:
 
 1.  归纳答案
 
-![](img/57a3391d5a502829cd901beaef336703.png)
 
 ```
 ## 原问题

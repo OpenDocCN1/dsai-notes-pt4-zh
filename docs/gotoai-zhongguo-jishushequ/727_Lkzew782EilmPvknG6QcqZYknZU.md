@@ -12,7 +12,6 @@ https://learn.microsoft.com/en-us/shows/generative-ai-for-beginners-dotnet/
 
 # 二、Video-Generative AI for Beginners - .NET
 
-![](img/9ed023f001fa09a41ed863b09b56d17b.png)
 
 ![](img/8f2cceb43d0bc72ce714c739686432d8.png)
 

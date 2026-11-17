@@ -12,87 +12,66 @@
 
 **法律修音机收集了美国历任首席大法官发布的《联**邦司法年终报告》（2000-2025）：
 
-![](img/01bc4de5ea1b8bad22b1aba69ec4db30.png)
 
 [2025 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G1z4b6ZyZocCvix9ZnScX6fvnkh)
 
-![](img/735f925223c29d42bf29295f9c61954f.png)
 
 [2024 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JL5ibcjqxoXcm1xQt5ocNxeIn1f)
 
-![](img/6815f35c6a9462dc23397a7a2cbd1686.png)
 
 [2023 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jmd0b8hzQo6eF2xXdbwcnHzqnCg)
 
-![](img/7e524b69423280d919fec31411241522.png)
 
 [2022 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BAdVb6JHfowQGOxT7N7cenVOnVf)
 
-![](img/50492c28db0e401a01d6f44475f9343c.png)
 
 [2021 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UyNyb6SsLoORW1xSjEEc7GvTnxf)
 
-![](img/0b7327a82f444090e3beadafb38da394.png)
 
 [2020 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UbD9bpPqEoUzJpxa42ucyJ6Zn3d)
 
-![](img/21dddb756c3dd228efd431ae493a72c4.png)
 
 [2019 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MqJ3byUzjo6nH8xyKztcuZOdndb)
 
-![](img/ae18b7ef2e33e7d2c55b5f3030256a7a.png)
 
 [2018 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DeL5bZl4ToYBjoxpZxXcFiR7ndc)
 
-![](img/da9c17cc9f715d0efd765564593bdd03.png)
 
 [2017 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WDJHbchBpo8e5dxB7E2clcijnpc)
 
-![](img/d1cb883ccb5768eb0aafa3be7e62a179.png)
 
 [2016 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BnmZbpdbzo6U1OxK7e7chutYnLc)
 
-![](img/05930cbd413c720e8869f863cf8975c0.png)
 
 [2015 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XExqbVRBDoxFT0xPeSdcScRlnfc)
 
-![](img/baf26cb3e0867b907eb388bea7ee0ae6.png)
 
 [2014 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H4O8b5jDgoADCvxNnUBcQ96cnqc)
 
-![](img/7e20c137300e0f4cf2ff087fb74e1646.png)
 
 [2013 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EGr2bdl7xoj86bxSHVzcQXRAnnc)
 
-![](img/8cf835f8210e82d14e6e9d7e7aa49d33.png)
 
 [2012 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GGT4bkljmo9MDYxDIiHcAQTdn3g)
 
-![](img/37bd4458d9b3675d3a557d9715dae167.png)
 
 [2011 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NMILbj3j6oQj89x4GPJcbbrWnac)
 
-![](img/b3f597b928166855df52753e9119b4d1.png)
 
 [2010 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G7Yabfv9xoq3OJxECVccQrh0npc)
 
-![](img/8584b27d1e1150119b24477b8484a0b7.png)
 
 [2009 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/At7GbrW2Sok6kMxXVW8cFRbHn4f)
 
-![](img/5bdd491ebef7966503c99571c0db39ac.png)
 
 [2008 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VLzpbVIMdoi7iixrP46cFJHEnvb)
 
-![](img/294ae89462dbd9eab07e9a935a3e167e.png)
 
 [2007 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UXJ7bnLX9oP6y9xiw7Scc38kn7b)
 
-![](img/9fa4e2befd1557e20e97a1d02cef7403.png)
 
 [2006 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jxrnb6oOBonEtvxk4RBcqUREnqe)
 
-![](img/04ee23ae8e85d16d1347e5a72ab01883.png)
 
 [2005 年终报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IfAmbgk9Uoyy1zxLnCacaczhnCh)
 

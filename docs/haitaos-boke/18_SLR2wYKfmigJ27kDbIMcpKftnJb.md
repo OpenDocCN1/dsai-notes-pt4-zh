@@ -62,6 +62,5 @@
 
 工作流演示链接：https://www.coze.cn/work_flow?space_id=7361413642614915082&workflow_id=7362438593786265634
 
-![](img/70b53f852005e679d647b79a598b21b6.png)
 
 ![](img/badd5e4be01d1aa10195a5ffe255d1db.png)

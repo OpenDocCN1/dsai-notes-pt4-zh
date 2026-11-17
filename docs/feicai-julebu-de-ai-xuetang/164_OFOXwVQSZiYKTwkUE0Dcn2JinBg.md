@@ -76,7 +76,6 @@ Llama 3.1是由Meta（Facebook）最新发布的开源AI模型系列，包括8B�
 
 ## 步骤2：安装Open WebUI
 
-![](img/73674cde920425890f47e2bfb1bd73a3.png)
 
 1.  访问Open WebUI的Github项目页面 https://github.com/open-webui/open-webui
 

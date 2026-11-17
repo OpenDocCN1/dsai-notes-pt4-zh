@@ -20,7 +20,6 @@ AutoDL是一个稳定高效的算力租赁平台， AutoDL支持一键部署基�
 
 除[了常规登录流程外， AutoDL还要求绑定🛰️和进行实名认](https://www.autodl.com/console/center/account/auth)证[。](https://www.autodl.com/console/center/account/auth)实名认证其实是目前所有算力租赁 平台的基本要求，大家按照AutoDL官网指引合https://www.autodl.com/console/center/account/aut h ，一步步操作即可：
 
-![](img/796ef4343c93acf974a3c6dedc34e6ea.png)
 
 +   账户充值
 
@@ -44,11 +43,9 @@ AutoDL采用的是预付费模式，即需要先在AutoDL平台上储值，然�
 
 这里我们选择Pytorch 2.3.0（即最高版本） +Python 3.12+CUDA 12.1
 
-![](img/2b6414cd4bdfaf7a75612644fefb428e.png)
 
 选择完毕后，点击立即创建即可：
 
-![](img/27ff2619589c732f39c15c1b0aab9bb8.png)
 
 注，这里的镜像配置和计费方式，都可以随时修改。
 

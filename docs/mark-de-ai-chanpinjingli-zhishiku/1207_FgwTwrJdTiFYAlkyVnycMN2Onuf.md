@@ -140,7 +140,6 @@ OK，前置环节准备成功。接下来正式进入 MCP 的配置环节。
 
 Server Name 填写 wuying_mcp_server。
 
-![](img/009ba79bb569e8a6c0ef0f82fec1949e.png)
 
 点击 Add Server 即可启用。为了避免和其它 MCP 服务混用，建议在 Installed 页关闭其它服务。
 

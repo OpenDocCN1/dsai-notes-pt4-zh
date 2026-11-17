@@ -82,7 +82,6 @@ st.title(&quot;Excel可视化&quot;)
 uploaded_file = st.file_uploader(&quot;请选择Excel文件&quot;, type=[&quot;xlsx&quot;, &quot;xls&quot;])
 ```
 
-![](img/c001d63edafbbc73b9700b14fadb5541.png)
 
 **显示数据**
 

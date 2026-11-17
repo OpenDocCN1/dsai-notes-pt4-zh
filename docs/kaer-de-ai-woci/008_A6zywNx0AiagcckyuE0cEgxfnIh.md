@@ -82,7 +82,6 @@
 
 1.  为了保证原版视频清晰度，建议用百度网盘发送。
 
-![](img/76ad6f9d40ea283167635efb1aa097c5.png)
 
 [教程.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YUXQbkuJHohW5axafCtcHPjOnug)
 

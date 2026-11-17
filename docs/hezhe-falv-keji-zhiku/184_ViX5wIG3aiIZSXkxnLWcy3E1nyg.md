@@ -82,7 +82,6 @@
 
 [Best Lawyer：法律市场调查报告（2025）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T1hEbFUIpoVPVCxSBi6c7jpPnMd)
 
-![](img/ce9748fee77e12c3e86eeff6578e5a97.png)
 
 [Definely：2025 年法律科技采用情况调查报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CqzWbxj5noxpN1xLYHlcltywnWh)
 

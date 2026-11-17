@@ -4,7 +4,6 @@
 
 +   2025.5.10 上海
 
-![](img/9c8fe5ca9915db6eadb02fc729bfd975.png)
 
 ![](img/39e8572003dabd31dbe054c354f264ed.png)
 

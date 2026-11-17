@@ -68,7 +68,6 @@ Qwen2.5 的一项重要更新是重新推出了 Qwen2.5-14B 和 Qwen2.5-32B。�
 
 近年来，小型语言模型（SLMs）出现了明显的转向趋势。尽管历史上小型语言模型的表现一直落后于大型语言模型（LLMs），但二者之间的性能差距正在迅速缩小。值得注意的是，即使是只有约 30 亿参数的模型，现在也能够取得高度竞争力的结果。附带的图表显示了一个重要的趋势：在 MMLU 中得分超过 65 的新型模型正逐渐变得更小，这凸显了语言模型知识密度增长速度的加快。特别值得一提的是，Qwen2.5-3B 成为这一趋势的典型例子，凭借约 30 亿参数实现了令人印象深刻的性能，展现了相较于前辈模型的高效性和能力。
 
-![](img/f03d13bc630de86051a56b7d87f8d657.png)
 
 Qwen2.5 还推出了专门针对数学问题的模型——Qwen2.5-Math。其数学能力得分十分亮眼，这得益于其大规模的训练数据和专门的数学模型设计。与其他顶尖模型相比，Qwen2.5 不仅在数学推理上表现优异，还在编程能力上展现出强大的竞争力。该模型在数学推理方面进行了特别优化，支持中文和英文，并整合了多种推理方法，包括：思维链（Chain of Thought, CoT）：帮助模型在解决复杂问题时进行逐步推理。工具集成推理（Tool-Integrated Reasoning, TIR）：增强模型在解决数学问题时的灵活性和准确性。
 
@@ -306,7 +305,6 @@ modelscope download --model Qwen/Qwen2.5-7B-Instruct README.md --local_dir ./dir
 
 注册完成后，点击个人中心，点击绑定阿里云账号：
 
-![](img/c314704dca2d58a4912d21a57d680a7c.png)
 
 在跳转页面中选择登录阿里云，未注册阿里云也可以在当前页面注册：
 
@@ -326,11 +324,9 @@ modelscope download --model Qwen/Qwen2.5-7B-Instruct README.md --local_dir ./dir
 
 即可接入在线NoteBook编程环境：
 
-![](img/dd1993d405eeef91891b3ece1b276ee5.png)
 
 当前NoteBook编程环境和Colab类似（谷歌提供的在线编程环境），可以直接调用在线算力来完成编程工作，并且由于该服务由ModelScope提供，因此当前NoteBook已经完成了CUDA、PyTorch、Tensorflow环境配置，并且已经预安装了大模型部署所需各种库，如Transformer库、vLLM库、modelscope库等，并且当前NoteBook运行环境是Ubuntu操作系统，我们可以通过Jupyter中的Terminal功能对Ubuntu系统进行操作：
 
-![](img/4ed8b4640fc0edb9892029873f60febe.png)
 
 进入到命令行界面：
 
@@ -506,7 +502,6 @@ https://ollama.com/download
 
 在Windows平台运行和在Linux系统中进行的指令一样，执行ollama run qwen2.5:0.5b即可实现该模型的下载和运行。
 
-![](img/72b701b0eb2d90df9e8de382c8b22a6b.png)
 
 同样的，在完成模型下载之后会直接开启模型的推理任务，可以通过命令行的方式进行模型对话交互。
 

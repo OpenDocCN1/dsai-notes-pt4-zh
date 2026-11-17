@@ -32,7 +32,6 @@
 
 @Web 支持互联网内容搜索
 
-![](img/e95b532fc3910daf40e85718b9271bcd.png)
 
 ### 使用 Claude 3.5 Sonet 200k
 
@@ -40,13 +39,11 @@
 
 在对话过程中，也可以通过 ⌘ + . 随时切换
 
-![](img/5e18b7a0f17d03cb1360298535d89cd7.png)
 
 ### Composer 生成应用骨架
 
 **Cursor** 的 Compose[r 能力隐藏得很深，需要 ⌘](https://t.co/M6cN8eyfzh) + I 键唤起。有点类似于 https://v0.dev，可以直接生成应用骨架
 
-![](img/a4a8c61c587ad20aebbeb3d106b1be89.png)
 
 ### ⌘ + K
 

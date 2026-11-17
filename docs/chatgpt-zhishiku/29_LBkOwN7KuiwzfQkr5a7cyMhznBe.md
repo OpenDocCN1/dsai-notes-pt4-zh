@@ -25,10 +25,7 @@
 1.  在openai中购买plus
 会员通用，app购买的web也可以用
 
-![](img/695c711855a249d2d1ec409a8f3fc319.png)
 
-![](img/45e993777b9445b5d8a83d969552194b.png)
 
-![](img/c19859ab00beb782cd3247289102c8a6.png)
 
 ![](img/4c1cb2178a3c9276e91003963772c5ef.png)

@@ -54,7 +54,6 @@ Building block: The augmented LLM
 
 The basic building block of agentic systems is an LLM enhanced with augmentations such as retrieval, tools, and memory. Our current models can actively use these capabilities—generating their own search queries, selecting appropriate tools, and determining what information to retain.
 
-![](img/614e7285bef6bd768a95de2e7e7c8785.png)
 
 The augmented LLM
 
@@ -66,7 +65,6 @@ For the remainder of this post, we'll assume each LLM call has access to these a
 
 Prompt chaining decomposes a task into a sequence of steps, where each LLM call processes the output of the previous one. You can add programmatic checks (see "gate” in the diagram below) on any intermediate steps to ensure that the process is still on track.
 
-![](img/a30fd9268b1268a1328f59c14548a922.png)
 
 # The prompt chaining workflow
 
@@ -82,7 +80,6 @@ Workflow: Routing
 
 Routing classifies an input and directs it to a specialized followup task. This workflow allows for separation of concerns, and building more specialized prompts. Without this workflow, optimizing for one kind of input can hurt performance on other inputs.
 
-![](img/2d9f3f46d323afdbd811e454eb0d9be9.png)
 
 The routing workflow
 
@@ -102,7 +99,6 @@ Sectioning: Breaking a task into independent subtasks run in parallel.
 
 Voting: Running the same task multiple times to get diverse outputs.
 
-![](img/8224f3e0355e2490e7e942f3a873ac6e.png)
 
 The parallelization workflow
 
@@ -126,7 +122,6 @@ Workflow: Orchestrator-workers
 
 In the orchestrator-workers workflow, a central LLM dynamically breaks down tasks, delegates them to worker LLMs, and synthesizes their results.
 
-![](img/fc24a0acc04f1174497c3d3061051bcb.png)
 
 The orchestrator-workers workflow
 
@@ -142,7 +137,6 @@ Workflow: Evaluator-optimizer
 
 In the evaluator-optimizer workflow, one LLM call generates a response while another provides evaluation and feedback in a loop.
 
-![](img/002df187273ab5f4d7e7b4beafc7952b.png)
 
 The evaluator-optimizer workflow
 

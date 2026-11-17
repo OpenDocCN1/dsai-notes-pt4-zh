@@ -408,7 +408,6 @@ Skills并非一蹴而就。一个真正好用的Skill，是在团队的实际使
 
 整个流程跑下来，一篇文章从"纯文字"到"图文并茂"，基本上是几分钟的事，主要速度瓶颈还在生成图片上。
 
-![](img/74c7e36e52ed42851ad87ac2ed2a8ecc.png)
 
 +   **SKILL.md 怎么写？**
 
@@ -546,7 +545,6 @@ name 是 Skill 的唯一标识，description 是简介。这两个字段 Agent �
 
 +   自动创建 Git 工作树，支持并行任务
 
-![](img/e3c707a985b57291e60f18e84cd4d5a6.png)
 
 为啥推荐：
 
@@ -628,7 +626,6 @@ obra（作者）在博客里说，Superpowers 把 Claude Code 从"对话工具"�
 
 #### 📚 知识管理类
 
-![](img/b2e94db3250fb8f6425c38c4ac5dbe96.png)
 
 1.  PleasePrompto/notebooklm-skill - 知识库神器
 
@@ -802,7 +799,6 @@ NotebookLM 本身很强大，但手动上传太麻烦。这个 Skill 自动化�
 
 anthropics/skills - Anthropic 官方 Skills 仓库
 
-![](img/065c6fc63015163a3c717201ea19a864.png)
 
 +   链接https://github.com/anthropics/skills
 
@@ -837,7 +833,6 @@ anthropics/skills - Anthropic 官方 Skills 仓库
 
 tfriedel/claude-office-skills - Office 文档处理套件
 
-![](img/ae81a74b5e996843383677f49b5424a0.png)
 
 +   链接: https://github.com/tfriedel/claude-office-skills
 
@@ -887,7 +882,6 @@ npm install
 
 daymade/claude-code-skills - 专业演示文稿生成
 
-![](img/e2311a16361df7526bc7bc752b7672d8.png)
 
 +   链接: https://github.com/daymade/claude-code-skills
 
@@ -915,7 +909,6 @@ daymade/claude-code-skills - 专业演示文稿生成
 
 op7418/NanoBanana-PPT-Skills - AI 动效 PPT 生成器
 
-![](img/0f7e8091bf13a448c5a9b67d89b3feec.png)
 
 +   链接: https://github.com/op7418/NanoBanana-PPT-Skills
 

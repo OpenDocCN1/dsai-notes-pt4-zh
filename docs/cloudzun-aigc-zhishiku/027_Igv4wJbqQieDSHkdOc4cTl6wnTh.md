@@ -960,11 +960,9 @@ TranslationRecognizer 返回语音输入的翻译听录，实质上是将语音�
 
 +   在 **RG1 中创建名为 **lang-36478729** 的新语言服务**。
 
-![](img/1e27388f91d8ffb0ae249cfa12fdf538.png)
 
 +   保语言服务支持自定义文本分类和命名实体识别 （NER）。
 
-![](img/256128f83772e47d7eaaa4108ab9efd6.png)
 
 +   确保语言服务使用免费层，并在北欧 Azure 区域中预配。
 
@@ -1006,27 +1004,20 @@ TranslationRecognizer 返回语音输入的翻译听录，实质上是将语音�
 
 +   项目必须命名为 Webshop。
 
-![](img/1822fb78fc19bc24faecb1bbd9ba8583.png)
 
-![](img/1d8aabe718ca75f7e899539cf1575263.png)
 
 +   语言必须是英语（美国），而不是多语言。
 
-![](img/75b644ce8a2b771a34e995de86cb9bb2.png)
 
-![](img/6825254f714c18c72f8a3149b7be08ca.png)
 
 +   项目必须使用两个名为 Price 和 CustomerName 的新实体。
 
-![](img/79e836129f5bfea7a8d2e53ecf484b0e.png)
 
 +   sa@labinstanceid/webshop 容器中的示例数据必须标有 Price 和 CustomerName。
 
-![](img/2deef720d425126013b6d623a750cc60.png)
 
 +   必须启动模型训练。
 
-![](img/e43a19ca75319689c78d4529edde09b2.png)
 
 ![](img/a44386bc7bfc80a65195c280bec37b26.png)
 
@@ -1060,9 +1051,7 @@ TranslationRecognizer 返回语音输入的翻译听录，实质上是将语音�
 
 +   **使用 C:\pr**ojects 文件夹中 lang4567 的现有项目定义。
 
-![](img/40aeb3b655c3747f34bde34260a57a1c.png)
 
-![](img/bf4b0a1c07ec67a5d7a773c9c56c2769.png)
 
 ![](img/74c2fe91003d0b59dc949df6f8e1a7b6.png)
 
@@ -1070,11 +1059,9 @@ TranslationRecognizer 返回语音输入的翻译听录，实质上是将语音�
 
 +   将数据拆分为训练占比 85% 和测试占比 15%。
 
-![](img/bef1fa08eed9b145ef36005bedad19b8.png)
 
 +   将模型的部署配置为使用名称 **lang4567**。
 
-![](img/625b2da419985fba5fd9a2fb5350eb5a.png)
 
 ![](img/bfaeb008666598d10aceab24993db40f.png)
 

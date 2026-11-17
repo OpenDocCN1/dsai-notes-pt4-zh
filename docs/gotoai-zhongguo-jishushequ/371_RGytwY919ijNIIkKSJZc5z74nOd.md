@@ -28,7 +28,6 @@
 
 1.  在浏览器打开的连接界面中，使用刚刚设置的密码进行连接。
 
-![](img/736e4f4ff3bbb7175b7d7e73f127a958.png)
 
 1.  图 2.4: 使用密码连接数据库
 
@@ -88,7 +87,6 @@ CREATE (n:Ingredient {name:&#x27;鸡蛋&#x27;}) RETURN n;Copy to clipboardErrorC
 
 执行上述三条命令后，数据库中就创建了三个 Ingredient 类型的节点。能够通过 Neo4j Browser 的可视化界面直观地看到这些新创建的数据。
 
-![](img/691b2c12e1173daeba1b6c87e08cc99b.png)
 
 图 2.5: 执行创建命令后，左侧面板显示已有 3 个 Ingredient 节点
 
@@ -100,7 +98,6 @@ CREATE (n:Ingredient {name:&#x27;鸡蛋&#x27;}) RETURN n;Copy to clipboardErrorC
 
 +   自定义属性：name、category、origin 三个字段的值与前面 CREATE 语句中设定的值完全一致。
 
-![](img/db4f40b00f5839dc20d0ed198ce56bd0.png)
 
 图 2.6: 查询并查看新创建的节点及其属性
 

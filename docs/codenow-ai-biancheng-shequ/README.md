@@ -82,13 +82,11 @@
 
 [《驾驭 Gemini 3 与 Nano Banana》](https://qwyofiv4bd3.feishu.cn/wiki/EVwXwaeZWigvatkB4C1cW2XpnLe)
 
-![](img/6b036d3ac217959418a232756720b2c2.png)
 
 [购买链接](https://item.jd.com/15295954.html)
 
 [《人人皆可Vibe编程：玩转氛围编程》](https://qwyofiv4bd3.feishu.cn/wiki/LDsjwAikaiF7Z6kj1EHcCN7onwe)
 
-![](img/2a143d56be550a79acf9edf6dea07593.png)
 
 [购买链接](https://item.jd.com/15093632.html)
 

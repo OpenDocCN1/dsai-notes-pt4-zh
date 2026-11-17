@@ -14,7 +14,6 @@ https://poe.com/
 
 https://openrouter.ai/
 
-![](img/9b1900bcdc4b890f133f4d0cf5d3efd0.png)
 
 ## 一、国内主流 OpenRouter 落地服务商（2026 最新）
 

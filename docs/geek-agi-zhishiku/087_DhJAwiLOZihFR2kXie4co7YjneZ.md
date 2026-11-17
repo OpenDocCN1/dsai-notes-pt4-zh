@@ -242,7 +242,6 @@ OpenClaw中国行，就是这个社区的开始。
 
 报名入口陆续开放。可以先加入我发起的“万人养虾”群，随后各种信息会在这儿发布：
 
-![](img/d4f83d0e1e4e4edf52adf58acabdf1f0.png)
 
 你也可以直接加入自己所在城市的飞书群，先和当地的爱吃虾的小伙伴交流起来：
 
@@ -250,7 +249,6 @@ OpenClaw中国行，就是这个社区的开始。
 | --- | --- | --- |
 | ![](img/3f65469bf20ba12f3cc07a35e63e4908.png) | ![](img/ae8adff1fed59d59825d7fdc129883e4.png) | ![](img/73e1e0f52cca0c3ed2ca006bde2dd255.png) |
 | 深圳站 | 广州站 | 成都站 |
-| ![](img/8a8bb8c8bf3c0f7bb2987b986f2ac31e.png) | ![](img/d0bda6f2e12bceb932c6ed180065a3fc.png) | ![](img/937eea6a8679bf36c5d11374113d38fd.png) |
 | 南京站 | 苏州站 | 武汉站 |
 | ![](img/9f615cc3a6e376df5498a8a470764961.png) | ![](img/28a85c364875b661f0e84eed65b88481.png) | ![](img/77684303974050546b00343b20d9e7ed.png) |
 
@@ -298,6 +296,5 @@ OpenClaw中国行，就是这个社区的开始。
 
 ![](img/54025599f68f4bd5e5d97daecffecfee.png)
 
-![](img/a07de19ef0c1f0ee53209cf7950d9b97.png)
 
 ![](img/72e90c3f785c21660e15650df39a02bc.png)

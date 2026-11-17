@@ -30,7 +30,6 @@ Automatically scrolls to the bottom of the Composer pane when a new message is g
 
 自动滚动到Composer面板底部，当生成新消息时。
 
-![](img/8c1c843c6667d958cb55c2e657e14f6f.png)
 
 #### Auto-Apply to Files Outside Context 自动应用于上下文外的文件
 
@@ -38,7 +37,6 @@ Allows Composer to automatically apply changes to files outside your current con
 
 允许 Composer 自动将更改应用到当前上下文之外的文件。
 
-![](img/6e68429e2686cb3a2a1dc3d6ba4f66c7.png)
 
 #### Collapse Input Box Pills in Pane or Editor 折叠面板或编辑器中的输入框药丸
 
@@ -46,7 +44,6 @@ Collapses pills in the Composer pane or the editor input box to save space.
 
 折叠Composer面板或编辑输入框中的药丸以节省空间。
 
-![](img/f01d873614977641aec3426c9682d325.png)
 
 ####
 
@@ -56,7 +53,6 @@ Collapses Composer code blocks into pills instead of rendering them as code bloc
 
 将 Composer 代码块折叠成药丸形状，而不是以代码块的形式渲染。
 
-![](img/8fadb3a02b9a3cd85e5d561265b5bd4d.png)
 
 ####
 
@@ -66,7 +62,6 @@ If there are linter errors, Composer will try to fix them iteratively.
 
 如果存在代码检查错误，Composer 将尝试迭代地修复它们。
 
-![](img/354ae1263b6962f407bf6378ade71b18.png)
 
 ### Codebase Indexing  代码库索引
 
@@ -106,7 +101,6 @@ If enabled, shows a chat/edit tooltip near highlighted code in your editor.
 
 如果启用，将在您的编辑器中突出显示的代码附近显示聊天/编辑提示。
 
-![](img/d81f492dfa72cbf2da1bac946b5a4202.png)
 
 ####
 
@@ -116,7 +110,6 @@ If enabled, Cursor automatically parses links and adds them to the context.
 
 如果启用，Cursor 会自动解析链接并将它们添加到上下文中。
 
-![](img/e8144deca1d43dc7b94e08ef0f55d024.png)
 
 ####
 
@@ -126,7 +119,6 @@ If enabled, Cursor automatically selects regions for inline code editing.
 
 如果启用，Cursor 会自动选择区域进行内联代码编辑。
 
-![](img/58cfc645a3584a7617f82648b757556c.png)
 
 ####
 
@@ -136,7 +128,6 @@ If enabled, Cursor uses themed background colors for inline diffs in your editor
 
 如果启用，Cursor 将在您的编辑器中使用主题背景颜色显示内联差异。
 
-![](img/7efe832853654a4824ab6cb97cf84c20.png)
 
 ### Terminal  终端
 
@@ -148,7 +139,6 @@ If enabled, shows a hover hint in the terminal with the command to ‘Add to Cha
 
 如果启用，将在终端中显示悬停提示，显示“添加到聊天”或“用 AI 调试”的命令。
 
-![](img/e29c136a2ad142ee96392c796a778fae.png)
 
 ####
 

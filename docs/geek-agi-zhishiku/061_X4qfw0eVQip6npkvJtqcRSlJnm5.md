@@ -26,7 +26,6 @@ openclaw plugins install @openclaw/feishuopenclaw plugins list     # 确认 feis
 
 2、创建企业自建应用
 
-![](img/548c0c65f3ccf9f72eec01d8c1fce4c6.png)
 
 ◆ 应用名称：随便填（如 “我的 OpenClaw 助手”）
 
@@ -34,7 +33,6 @@ openclaw plugins install @openclaw/feishuopenclaw plugins list     # 确认 feis
 
 **◆ **图标：可选，上传一个清晰的图标，点击 创建
 
-![](img/ef6c0818f60e25e5e3155cea581a22ec.png)
 
 3、获取凭证（**重要！**）
 
@@ -46,23 +44,19 @@ openclaw plugins install @openclaw/feishuopenclaw plugins list     # 确认 feis
 
 ◆ **App Secret**（一串长字符串，务必复制后立即保存到密码管理器，切勿泄露）
 
-![](img/f80234233777a8e11c2ed9b094b87d94.png)
 
 4、添加机器人能力
 
 左侧 → 添加应用能力 → 选择 机器人 → 添加
 
-![](img/88da38160ee559a9df0c6ccf13d9e957.png)
 
 设置机器人名称（如 “OpenClaw 助手”）并保存
 
-![](img/48615f8d2110f83158755339c8a8d7a4.png)
 
 5、批量导入权限（**关键！**）
 
 左侧 → 权限管理 → 点击 批量导入导出权限 → 导入
 
-![](img/3a02ef4e840a035e33468b8be08834bd.png)
 
 粘贴以下官方推荐 JSON（直接复制）：
 
@@ -72,19 +66,15 @@ openclaw plugins install @openclaw/feishuopenclaw plugins list     # 确认 feis
 
 点击导入 → 全选 → 粘贴
 
-![](img/7b07311a51a4a3badbc05d41272b317b.png)
 
 点击下一步 → 申请开通 → 保存成功
 
-![](img/27939ed6bf85eff224707edfddfaf081.png)
 
-![](img/130f95a44c7fcc9d14572fb5404c4eb9.png)
 
 6、发布应用
 
 左侧 → 版本管理与发布 → 创建版本
 
-![](img/1b03ad3811aca65c4dc8f971ebd252e8.png)
 
 填写版本号 → 填写更新说明 → 点击发布（首次创建免审核，保存提交后即可上线使用）。
 

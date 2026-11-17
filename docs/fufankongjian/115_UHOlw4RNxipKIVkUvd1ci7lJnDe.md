@@ -124,13 +124,10 @@ ChatGPT Plus 的订阅也需要绑定银行卡再付款：
 
 +   最低充值金额为 **50 美元**。
 
-![](img/39b116e67666291b00fa197d44251b49.png)
 
-![](img/c6adf656bcc99703d86c3d7d771bc4dd.png)
 
 点击支付宝扫码支付之后，进入支付页面，选择合适的充值金额（最低充值金额是50刀）点击提交：
 
-![](img/eb663f8028c02fa3be367003d60ab345.png)
 
 ![](img/61385eaf1d276b676734afde6c1cce5d.png)
 
@@ -202,7 +199,6 @@ ChatGPT Plus 的订阅也需要绑定银行卡再付款：
 
 1.  **查看卡片信息**：开卡成功后，可在 **“卡片列表”** 中查看卡片详情。
 
-![](img/67b9b54eebc332e43b8e914d1a3bf93d.png)
 
 1.  
 （第一次开卡应该只有一张卡，这里我开了两张，所以有两个选项）
@@ -320,7 +316,6 @@ client = OpenAI(
 
 1.  **登录开发者平台**：访问 https://platform.openai.com/，使用您的 OpenAI 账号登录。
 
-![](img/cb40854cefdee5a97405ee4742553ad5.png)
 
 1.  进入 Billing 页面，添加付款方式：依次点击Settings-->Billing-->Add payment method**。
 
@@ -388,7 +383,6 @@ client = OpenAI(
 
 1.  **创建新密钥**：点击 “+ Create new secret key”。
 
-![](img/2b2fcc3487b02ba17149987041dc0df6.png)
 
 1.  **命名密钥**：为您的 API Key 取一个名称，便于管理。
 

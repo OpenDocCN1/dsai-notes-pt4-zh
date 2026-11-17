@@ -99,13 +99,11 @@ open-webui serve
 
 ![](img/649d8fb6a1cf9182b1223a5815bdb3f7.png)
 
-![](img/5bad06ca978201fb92e96dae1b440402.png)
 
 ![](img/c4c63a65fdc5b6dccbb7461e2d8f8685.png)
 
 ![](img/f5b8b47b3668c2a941349e2d7f9ed3ce.png)
 
-![](img/1ac46f4120d4fdf5673fa600e2ab8594.png)
 
 ![](img/d1961a00783aa57f799d4085df2c19f7.png)
 

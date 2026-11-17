@@ -51,7 +51,6 @@ Anthropic 自己在 2025 年 11 月发表了一篇重要的工程博客《Effect
 | **Progress Files** | 跨会话记忆——让新的上下文窗口知道之前做了什么 | claude-progress.txt 等状态文件 |
 | **Git** | 状态追踪——原子提交记录每步变更，可回溯 | 每个 Agent 独立分支、clean commit |
 
-![](img/76750f638f13cdbb19f4722a5bc19a23.png)
 
 > Anthropic 博客原文：[Effective Harnesses for](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) Long-Running Agents
 
@@ -69,7 +68,6 @@ Anthropic 自己在 2025 年 11 月发表了一篇重要的工程博客《Effect
 
 这个项目叫 **GStack**。上线 48 小时突破 10,000 星，不到一周超过** 33,000 星**，截至今天已经积累了 47,900+ 星。
 
-![](img/dbed80f1f78fb6d966cfa4c7b44ba999.png)
 
 > GStack 仓库地址：https://github.com/garrytan/gstack
 
@@ -94,7 +92,6 @@ GStack 的核心是 28 个 Markdown 文件——没有复杂的框架代码，�
 
 加上 /canary（金丝雀监控）、/benchmark（性能基线）、/browse（浏览器操控）、/codex（跨模型审查）、/retro（周度复盘）等辅助工具，合计 **28 个 Skill**——覆盖了从灵感到上线的完整软件工程生命周期。
 
-![](img/a5dde128cc17ec6996752e2c49b08316.png)
 
 > 完整 Skill 文档：GStack Skills Deep Dives
 
@@ -104,13 +101,11 @@ GStack 的核心是 28 个 Markdown 文件——没有复杂的框架代码，�
 
 **CLAUDE.md** 是整个项目的"宪法"——它告诉 Claude Code：你有哪些可用的 Skill、遇到问题该怎么做、如何管理浏览器自动化。所有 28 个 Skill 在这里注册，相当于这支虚拟团队的"通讯录"。
 
-![](img/4e1224762266914e214214761e41b7a1.png)
 
 > [GStack CLAUDE.md 源码：github](https://github.com/garrytan/gstack/blob/main/CLAUDE.md).com/garrytan/gstack/blob/main/CLAUDE.md
 
 **ETHOS.md** 则是团队的"价值观手册"——它定义了三条核心设计哲学，会被自动注入到每个 Skill 的提示词中：
 
-![](img/2d67a580313e5e42488f7a6016c95422.png)
 
 > [GStack ETHOS.md 源码：github](https://github.com/garrytan/gstack/blob/main/ETHOS.md).com/garrytan/gstack/blob/main/ETHOS.md
 
@@ -178,7 +173,6 @@ GStack 不是只能做 Web 应用——它的 Harness 架构适用于任何需�
 
 GStack 的爆发速度，在 GitHub 开源史上都算得上罕见——Star 增长曲线几乎是一条垂直线。
 
-![](img/ac43b26d0274218374294486b532b137.png)
 
 但伴随热度而来的是质疑。视频博主 Mo Bitar 发布了一条标题为"AI is making CEOs delusional"的视频，直言 GStack 本质上"就是一堆文本文件里的提示词"。TechCrunch 的报道标题也颇为意味深长："Why Garry Tan's Claude Code setup has gotten so much love, and hate"。Hacker News 上数百条评论分成了旗帜鲜明的两派。
 
@@ -231,7 +225,6 @@ ShipLog 是一个独立开发者的产品发布日志和用户反馈平台。 �
 
 > Linear 官网：https://linear.app——产品开发管理系统，以极致的设计美感著称
 
-![](img/54feb184a4672c260e043467541d8c1a.png)
 
 > Canny 官网：https://canny.io——产品反馈管理平台，ShipLog 反馈墙的灵感来源
 
@@ -256,7 +249,6 @@ ShipLog 是一个独立开发者的产品发布日志和用户反馈平台。 �
 | 2012-2022 | 联合创办 Initialized Capital，管理 $7 亿+基金，投资了 Coinbase、Instacart、Flexport | 从投资者视角理解产品成败 |
 | 2023-至今 | Y Combinator 总裁兼 CEO | 全球顶级孵化器掌门人 |
 
-![](img/e22cf7ac256ebf5bbdbfc352fd53beaf.png)
 
 > [Y Combinator 官网 Garry Ta](https://www.ycombinator.com/people/garry-tan)n 主页：https://www.ycombinator.com/people/garry-tan
 
@@ -266,7 +258,6 @@ GStack 的 README 里有一段 Garry 的自述，值得引用：
 
 > "gstack is my answer. I've been building products for twenty years, and right now I'm shipping more code per hour than ever. In the last 60 days: 600,000+ lines of production code (35% tests), 10,000-20,000 lines per day, part-time, while running YC full-time."
 
-![](img/c767c20cc76267ddde49d5f332bc5b03.png)
 
 > Garry Tan 维基百科：[https://en.wikipedi](https://en.wikipedia.org/wiki/Garry_Tan)a.org/wiki/Garry_Tan
 
@@ -274,7 +265,6 @@ GStack 的 README 里有一段 Garry 的自述，值得引用：
 
 > **保持批判**：名人效应 ≠ 技术含金量。GStack 的价值不在于 Garry Tan 的头衔，而在于它的设计哲学是否经得起检验。接下来我们就拆解这些哲学。
 
-![](img/94b8223ea07489125bb65d44b5693362.png)
 
 > Initialized Capital：https://initialized.com
 
@@ -290,7 +280,6 @@ GStack 的代码量不大，真正值钱的是它背后的三个设计原则。�
 
 GStack 把这个组织管理学原理直接搬进了 AI 交互：每个 SKILL.md 文件定义一个角色，明确规定这个角色能做什么、不能做什么、输出什么格式。比如 /review（代码审查）这个角色被约束为"只找 CI 通过但生产会炸的 bug"——它不会帮你重构代码风格，不会讨论架构方向，只做一件事并且做到极致。
 
-![](img/38675a107fc337b9d13c5fa1deb79e61.png)
 
 > GStack 源码：/office-hours/SKILL.md
 
@@ -394,7 +383,6 @@ GStack 的 README 中有一个真实示例：
 
 > **常见误区**：很多人看到 GStack 仓库里有 TypeScript 文件就以为"这是一个 TS 项目"。实际上，GStack 的核心是 28 个 Markdown 文件——TypeScript 只服务于浏览器自动化这一个功能模块。正如 GStack 架构文档所说："The browser is the hard part — everything else is Markdown."
 
-![](img/42c5f3cfcaf5ce8fa1cdf2b8d054ca40.png)
 
 ### 3.2 GStack 28 Skill 全景速查表
 
@@ -686,7 +674,6 @@ claude
 
 > 注：如果命令列表中没有出现 GStack 的 Skill，请确认 ~/.claude/skills/gstack/ 目录存在并且包含 SKILL.md 文件。如果目录为空，回到 Step 2 重新运行 ./setup。
 
-![](img/8e0ba538e9c29ff0cfb706f4d9f74877.png)
 
 ### 4.3 初体验：用 /office-hours 拷问 ShipLog 的产品想法
 
@@ -702,7 +689,6 @@ claude
 
 第一件事你会注意到：它没有直接问"你要做什么"。而**是先展示了 GStack **的核心哲学——Boil the Lake（烧开整个湖），并询问你要不要在浏览器中阅读 Garry Tan 的原文。
 
-![](img/f11a9793b7bd6963048ccf92ef3c5f42.png)
 
 > **深入理解**：为什么一个产品咨询工具要先讲哲学？因为 /office-hours 的 SKILL.md 中明确要求：在开始任何产品讨论之前，先对齐思维模式。这就是"角色即约束"——不是 AI 想聊哲学，而是 Skill 的约束要求它必须先建立认知框架。
 
@@ -716,7 +702,6 @@ claude
 
 /office-hours 读取了 CLAUDE.md 中的项目描述后，抛出第一个选择：你做 ShipLog 的目标是什么？创业？内部项目？黑客马拉松？还是学习？
 
-![](img/833e5019c0d7d2d10c6d0de1d369b3c9.png)
 
 ** 我们选**择"Building a startup"（创业）。这个选择不是随便的——它决定了后续所有问题的追问深度。如果你选"Hackathon / demo"，灵魂拷问会温和得多；选了创业，/office-hours 就会用 YC 合伙人的标准来拷问你。
 
@@ -730,7 +715,6 @@ claude
 
 注意措辞的精准："not 'is interested'"——它在逼你区分"觉得不错"和"真正需要"。
 
-![](img/7bee31b4b42dcf0ff3c76045a668214c.png)
 
 我们回答："It's my own pain"（这是我自己的痛点）。/office-hours 接受了这个回答，**但立刻追问：你说"产**品发布日志 & 用户反馈平台"，这其实是三个产品捏在一起——到底哪个是核心痛点？
 
@@ -740,7 +724,6 @@ claude
 
 "I need a concrete scene, not a category"（我要具体场景，不要品类描述）——这句话点出了一个常见错误：很多创业者描述痛点时只会说"反馈收集很麻烦"，而不是"上周二我发了新功能，想知道用户反应，但发现除了 Twitter DM 没有任何渠道，于是放弃了"。
 
-![](img/90ed8cb4d72e95e2638dd15b7634c0c5.png)
 
 我们选择"Feedback pain"（反馈收集的痛苦）。
 
@@ -752,7 +735,6 @@ claude
 
 然后问：你试了这些工具，哪个环节让你放弃的？太贵？太复杂？还是受众不对？
 
-![](img/a4f455c5798f864736ef81285e2f2645.png)
 
 > **重要提醒**：这是 /office-hours 最有价值的时刻。普通的 AI 对话会说"好的，那我们来做一个反馈工具吧"。但 /office-hours 的 SKILL.md 中有明确的指令：在用户提出方案时，必须列举现有替代品并挑战其差异化。这就是为什么它能帮你避免"做一个没人需要的东西"。
 
@@ -764,7 +746,6 @@ claude
 
 > **Let **me reframe what I think you might actually be building: A feedback tool that's right-sized for solo builders — simple, affordable, and doesn't assume you have a product team.
 
-![](img/8f68ea36a16f470d434e6b590b35fb68.png)
 
 注意这个节奏：先挑战（Canny 有免费版，Fider 可以自托管——你说太贵站不住脚），再重构（也许你真正要做的不是"便宜的 Canny"，而是"专为独立开发者设计的轻量反馈工具"）。
 
@@ -776,13 +757,11 @@ claude
 
 > **Q2 **— Status Quo: Right now, when you ship a feature and want to (a) log it and (b) hear what users think — what do you actually do?
 
-![](img/57dc21688cc61a10f00cee9d76cb8533.png)
 
 我们回答"Nothing"（什么都没有）。/office-hours 的反应很直接：
 
 > **I need to be direct: "not**hing" is a red flag. If collecting feedback is painful enough to build a company around, it should be painful enough that you've at least cobbled together something.
 
-![](img/fae114b463ac5bf4db5ef0cd97275ac6.png)
 
 这段分析犀利而坦诚：如果你说这个痛点大到值得创业，但你自己连 Google Form 都没用过来凑合——那可能有两个原因：(1) 痛点没你说的那么痛；(2) 你还没有真实用户，反馈需求还没变得紧迫。
 
@@ -796,11 +775,9 @@ claude
 
 "Give me a real person"——它要的不是"独立开发者"这个品类，而是一个具体的人。
 
-![](img/8e0077a9a7f6cef873dd99777c8ab3be.png)
 
 我们选择"A type of builder"，/office-hours 要求进一步具体化：不是"独立开发者"这个人口统计标签，而是一幅肖像画——多大规模？什么收入？在哪里出没？用什么工具？
 
-![](img/1c1bc6be2a3d01621965a4717b6734a5.png)
 
 我们选择"Vibe coder / AI builder"（用 AI 工具快速构建产品的开发者）。
 
@@ -816,7 +793,6 @@ claude
 
 1.  Distribution will be organic through indie dev communities
 
-![](img/ee8f3b5328fac289e6e9ff115d6ba9ee.png)
 
 每个假设旁边都标注了风险（比如"cheaper Canny is not a defensible moat"），你可以逐个确认或修正。我们同意了全部 4 条，进入方案选择环节。
 
@@ -828,13 +804,11 @@ claude
 | B) Feedback-First Widget | 一行脚本嵌入反馈收集 | CC ~1 小时 | 8/10 |
 | C) Full Platform（推荐） | 完整集成平台：仪表盘 + 反馈板 + 变更日志 + 路线图 | CC ~3 小时 | 10/10 |
 
-![](img/e4f699304e633b361eb5c6d218a28716.png)
 
 推荐理由很 GStack：**"the** marginal cost of compl**eteness is ne**ar-zero with CC（Claude Code），and the full platform is what differentiates ShipLog from existing lightweight alternatives"——用 AI 构建的边际成本趋近于零，所以应该做完整的产品而不是最小可行产品。这正是 Boil the Lake 哲学的实战演绎。
 
 我们选择方案 C。/office-hours 随即生成了线框图（wireframe），展示三个核心页面的布局：
 
-![](img/6729c9030a3e0e45deeeddf957f6dd98.png)
 
 #### Step 4：设计文档产出
 
@@ -1066,7 +1040,6 @@ Claude Code 读取了 /plan-eng-review 产出的架构方案，从零开始搭�
 
 来看一下结果——浏览器打开 http://localhost:3000：
 
-![](img/cb62f7d1dfd287505c3ea1c1c7f6cf2c.png)
 
 页面从上到下包含七个区域：
 
@@ -1130,7 +1103,6 @@ Claude Code 逐一修复了所有问题：
 
 修复前，在手机屏幕宽度下导航链接直接消失了——用户无法访问 Features、Pricing 等页面。修复后，右上角出现了一个标准的汉堡菜单按钮（☰），点击展开完整导航：
 
-![](img/1c39966160713113512ec81389ad8e0d.png)
 
 ![](img/057fa42a443e208e705bf53e141f6ed6.png)
 
@@ -1200,7 +1172,6 @@ Build（构建反馈墙）→ /cso（安全审计）→ Debug（发现并修复�
 
 先看最终效果——一个参考 Canny 设计的投票式反馈墙：
 
-![](img/916372890bd594c16a9e352ca000352a.png)
 
 这个页面包含了一个完整反馈系统的核心交互元素：
 

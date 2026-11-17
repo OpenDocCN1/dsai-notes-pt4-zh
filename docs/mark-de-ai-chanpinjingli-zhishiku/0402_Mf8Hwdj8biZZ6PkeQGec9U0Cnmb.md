@@ -25,7 +25,6 @@
 | [Agentic RAG(智能体RAG) 以及Multi-Source RAG(多数据源RAG)等关于RAG技术的新进展及Function Calling示例 ](https://qqs7y1hozd1.feishu.cn/wiki/CpPgwmLGHi7l6QkJ61EcYqcDnth?from=from_copylink) | [Agentic RAG(智能体RAG) 以及Multi-Source RAG(多数据源RAG)等关于RAG技术的新进展及Function Calling示例 ](https://qqs7y1hozd1.feishu.cn/wiki/CpPgwmLGHi7l6QkJ61EcYqcDnth) |
 | [RAG从原理到应用，技术解析+实践拆解](https://qqs7y1hozd1.feishu.cn/wiki/DhwYweUzhi9P9ikcn18cUsjcnuf) | [多模态RAG项目实战——表格、文本](https://qqs7y1hozd1.feishu.cn/wiki/K2Qhw44ZNiIKyvkQWC5cK9Dbnqg) |
 
-![](img/6a02121ab562e1937aee23f68261f931.png)
 
 [RAG从原理到应用，技术解析+实践拆解 (1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EzFDbJEEio28dOxvFxkcx26snqg)
 

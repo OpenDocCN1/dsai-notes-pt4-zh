@@ -80,7 +80,6 @@
 
 火影 AI 翻唱
 
-![](img/0490df061c90b5c0049bc89fd1e0b266.png)
 
 有了声音克隆技术，甄嬛传 AI 翻唱也是可以拿下。（奶茶小肥仔是真人翻唱，咱们可以用 AI 翻唱）
 
@@ -102,7 +101,6 @@
 
 第一版发售海报朋友圈（全是文字，而且很难描述清楚项目亮点）
 
-![](img/3648f86f56a9b39616986c4026ced578.png)
 
 ![](img/bb84d9836f9b5df9a7e2d5d897b09d73.png)
 
@@ -136,7 +134,6 @@
 
 ![](img/c45246eef38bd4f13be0aa965e295ec0.png)
 
-![](img/286201a8c5b1697326285e48919f9c77.png)
 
 ![](img/f428f22fc4f5ce180fcfe1d300b79117.png)
 
@@ -148,9 +145,7 @@
 
 有些小伙伴建立了粉丝群，开启了卖图、收徒变现
 
-![](img/4b947ccba2becefaf37c089691225893.png)
 
-![](img/f77640c5e902b048c00267faef04c1fb.png)
 
 ![](img/7edf3133386a42213ed6db36968c580f.png)
 
@@ -180,11 +175,9 @@
 
 最后再来看看咱们这次《AI 翻唱实战营》小项目小伙伴们的表现吧
 
-![](img/d3edf677cf0cdeb5c1680db480cfcc01.png)
 
 [WeChat_20240530110046.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zxctb1ugRoJD7KxLHhzc868Rn6c)
 
-![](img/5eceac53a40f6535931da1f6dd34b758.png)
 
 [f9af6292bf70618b17e5deac5ccd7b71.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XuEObVXNho7i0BxGRxecnV2ZnWi)
 
@@ -208,7 +201,6 @@
 
 [WeChat_20240530110030.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BP6XbODS6oifRTxEoIccrpgCnUg)
 
-![](img/31c1edaafac8ab8fc67c33301bc27534.png)
 
 [48507d46943364a4595414ed75e5d47c.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RbuNb1EGloCIa2xF9z4ca15cnih)
 
@@ -390,7 +382,6 @@
 
 紧接着水月给大家展示了目前比较火的一些 AI 翻唱视频案例，以及延伸出来的一些玩法，比如最近超级火的，【嬛嬛，朕 emo 了～】这个也可以通过 AI 翻唱的技术实现，以及唱解说电影、电视剧。
 
-![](img/2dc5aef828010609dfe1a960abf0e594.png)
 
 ![](img/9aa332d3e4d296626556ee3314877753.png)
 
@@ -508,9 +499,7 @@ UVR5 下载链接：[h](https://pan.baidu.com/s/1YjHaoWdbTjVJXa10W0xblA?pwd=rq97
 
 按照图中设置即可提取出干净的人声
 
-![](img/cda17e7517c209486dafbe8cf4600c2c.png)
 
-![](img/6e3469f2c1af829e1da9f83d96c99869.png)
 
 ![](img/6b72914eb93d7654078859afdf64b633.png)
 
@@ -524,15 +513,12 @@ UVR5 下载链接：[h](https://pan.baidu.com/s/1YjHaoWdbTjVJXa10W0xblA?pwd=rq97
 
 ![](img/4884105660e655cab708a3481e9e4a1f.png)
 
-![](img/0daaf14c6dda7777f99943ddb6bdd56a.png)
 
 ### 3、上传声音素材并开始训练
 
 新建文件夹上传使用 UVR5 处理好的素材（无杂音，纯净，至少大于 10 分钟）
 
-![](img/d342e5a653de462969af5b577d81ac38.png)
 
-![](img/cb08127f7a350f406a4fdbba998e635a.png)
 
 ![](img/002716435b643129aa60c4c2de09bb43.png)
 
@@ -540,15 +526,11 @@ UVR5 下载链接：[h](https://pan.baidu.com/s/1YjHaoWdbTjVJXa10W0xblA?pwd=rq97
 
 设置实验名、声音素材路径
 
-![](img/3f203c5b79d0a38b304a2b3ec9efdd5c.png)
 
-![](img/89d52c13dd3e3476be7b8d2c26343b3a.png)
 
 设置保存频率，总训练轮数，以及每张显卡的 batch size，点击一键训练即可
 
-![](img/c0ac28c9b24318c16d05011625568203.png)
 
-![](img/f4cfd02327ac2c0f2a096ab86acd9ae2.png)
 
 ![](img/2a1a8511421e4b6b6dc7b92e2ae305dc.png)
 
@@ -556,7 +538,6 @@ UVR5 下载链接：[h](https://pan.baidu.com/s/1YjHaoWdbTjVJXa10W0xblA?pwd=rq97
 
 在 weight 文件夹下保存模型
 
-![](img/46771a6885242bb8fcf10ae3846fc373.png)
 
 ![](img/26b478b9fcc5b10ffe4b4cd3126d5fe8.png)
 
@@ -572,7 +553,6 @@ UVR5 下载链接：[h](https://pan.baidu.com/s/1YjHaoWdbTjVJXa10W0xblA?pwd=rq97
 
 先上传一首歌，然后上传 RVC 模型，之前让大家训练好的 。pth 后缀的文件
 
-![](img/be3445c4b9db40748731787cec55f369.png)
 
 ![](img/5a2557adec4fb32733cfc4b84cad8f39.png)
 
@@ -598,17 +578,14 @@ UVR5 下载链接：[h](https://pan.baidu.com/s/1YjHaoWdbTjVJXa10W0xblA?pwd=rq97
 
 设置歌词大小、样式
 
-![](img/92c47bb47cbdc10e973b8b49d2eed49e.png)
 
 ### 2、裁剪音频、添加背景图
 
 根据歌词的长度，裁剪音频
 
-![](img/e2d18a15ddbef61323dc7c79c9178848.png)
 
 添加背景图
 
-![](img/dc44466b54662978aa549bdaf0908db5.png)
 
 ### 3、添加人物图片、入场出场动画
 
@@ -616,17 +593,13 @@ UVR5 下载链接：[h](https://pan.baidu.com/s/1YjHaoWdbTjVJXa10W0xblA?pwd=rq97
 
 添加人物对齐歌词，调整大小，歌词在左边，人物就在右边，反之亦然
 
-![](img/4932309c92d0b6cfcda4f0e9c87e7cf8.png)
 
 添加特效（左右摇晃）设置右侧所有参数到 20
 
-![](img/abbc6a5259f9593350febf80924dc396.png)
 
-![](img/f2761da7cf330b5cea9182741f777e02.png)
 
 给人物添加入场、出场动画（0.7s，方向和歌词相反即可，歌词向上滑动，人物就向下滑动）
 
-![](img/4fa5eff52313789f170ec49bd70a2ac0.png)
 
 ### 4、添加全局特效、导出视频
 

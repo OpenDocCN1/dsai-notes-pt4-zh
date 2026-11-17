@@ -265,7 +265,6 @@ pip install --upgrade protobuf==3.19.6
 
 +   **上传知识库**
 
-![](img/834dac600556b1d90b78c22472f1fe2c.png)
 
 +   **基于** ChatGLM2-6B 的知识库问答
 

@@ -905,7 +905,6 @@ pip install -r requirements.txt
 python -m src.server
 ```
 
-![](img/bcebdeb4ed6c380640a09eb8c8189a71.png)
 
 +   安装前端依赖
 

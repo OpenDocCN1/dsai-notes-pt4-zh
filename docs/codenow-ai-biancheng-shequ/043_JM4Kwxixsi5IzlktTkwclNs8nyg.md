@@ -30,7 +30,6 @@
 
 ## 学情能力看板
 
-![](img/9d5eec382bd20b3fcc6708e4450a0be1.png)
 
 [学情能力看板-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FgKcbpBYbo9bLwxmvUIcuiI7ndf)
 
@@ -72,7 +71,6 @@
 
 ## 英语学习助手
 
-![](img/4a742bfc5b28c81fe754ded94b44342e.png)
 
 [英语学习助手1-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OO0hbyk5Bo2Y5qxn0oAcfnExnJh)
 
@@ -96,7 +94,6 @@
 
 ## 个人习惯管理助手
 
-![](img/9b4c75e7a15a8c89d838c481952174ca.png)
 
 [个人习惯管理助手-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JtqBbYYwToGu4oxCziNcUwk4nxg)
 
@@ -108,7 +105,6 @@
 
 ## 海报生成器+疯狂发明家+海底捞模拟器+平行宇宙生成器
 
-![](img/c5c95908209a8d2cbe1c08f0cc2b1cff.png)
 
 [12月29日-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CFJkbXwyioJthLx24EwchnbCnIb)
 

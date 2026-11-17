@@ -24,11 +24,9 @@
 
 [王慧文清华产品课Allen修订版.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TTgfbwW3hoKdA6xwD8rcyRKDnLd)
 
-![](img/ef907e07b15d0bf6e90162f9cb52cfed.png)
 
 [商业变现, 掌握AI场景的投资密码（2023中国AI商业落地投资价值研究 ）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MhvZbi66XoeHToxdxLhc7shKnfb)
 
-![](img/90dfc57d8a06784ba7e8e0c991c0c38a.png)
 
 [腾讯：数字人产业发展趋势报告（2023）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Uy13bsQRkouG8FxCqp0cLLE1nKe)
 
@@ -36,7 +34,6 @@
 
 [AIGC发展研究报告1.0-2023-清华大学-202305.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VZUJbCM8Vo6ctCxNlq7cw8C0nHf)
 
-![](img/6e246dbb0d7df74381a723aca5df7516.png)
 
 [AI大模型评测报告-新华社研究院中国企业发展研究中心.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GVTrb0PeHo5uXRxYfhTcVARDnSd)
 
@@ -70,7 +67,6 @@
 
 1.  入门经典
 
-![](img/e466a5d747f34bc48abca2e9658d2e03.png)
 
 [Attention is all you need.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QEkOb4Mk8owYVlxpfnycb68pnsc)
 

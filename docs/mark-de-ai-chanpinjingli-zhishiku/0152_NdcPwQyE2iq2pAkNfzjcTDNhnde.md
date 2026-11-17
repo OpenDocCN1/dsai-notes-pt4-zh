@@ -321,7 +321,6 @@ plt.legend(loc=&quot;lower right&quot;)
 plt.show()
 ```
 
-![](img/1dcbe8fea8e2d99955d99b3c6926862e.png)
 
 +   **ROC 曲线**：通过绘制 ROC 曲线，我们可以了解模型在不同阈值下的敏感性和特异性。
 
@@ -449,7 +448,6 @@ y_pred_best = best_etc.predict(X_test)
 print(&quot;Optimized Model Accuracy:&quot;, accuracy_score(y_test, y_pred_best))
 ```
 
-![](img/91e62c8a36b2299b25fad8d548c2ea63.png)
 
 +   **网格搜索**：通过在预设的参数空间内搜索最佳组合，我们可以优化模型性能，找到使模型在交叉验证上得分最高的参数设置。
 

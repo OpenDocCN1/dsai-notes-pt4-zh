@@ -285,9 +285,7 @@ https://chatgpt.com/g/g-lmnHctA3O-er-tong-zhi-ye-qi-meng
 
 ##  **三）MJ 出图展示 **
 
-![](img/96a57b9dd4347143743e399b48c95d5c.png)
 
-![](img/f0842dcd1f6c8c7707015e2a56ead997.png)
 
 ![](img/ea4ce301e240eff6a595ec1f9d533d2f.png)
 

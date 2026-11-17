@@ -188,7 +188,6 @@ npx @modelcontextprotocol/inspector
 
 #### 按照检查器中"OAuth 流程进度"部分的步骤操作，单击"继续"直到到达"身份验证完成"。
 
-![](img/d77b9e6333b6c2f0ce0aa17b91b751f7.png)
 
 #### 复制access_token的值
 

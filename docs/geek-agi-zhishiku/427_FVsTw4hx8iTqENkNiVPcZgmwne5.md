@@ -315,7 +315,6 @@ sudo apt-get remove kubelet kubectl kubeadm
 
 # 四、主机环境调整
 
-![](img/1f3f4daf346f0e80f7d23830ab205b52.png)
 
 ## 4.1、修改节点上Docker 的cgroup driver为systemd
 

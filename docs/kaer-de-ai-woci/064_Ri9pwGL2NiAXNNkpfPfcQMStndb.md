@@ -54,7 +54,6 @@ https://aiwarts101.feishu.cn/wiki/Ri9pwGL2NiAXNNkpfPfcQMStndb?from=from_copylink
 
 > convert this photo into a architecture model. Behind the model, there should be a cardboard box with an image of the architecture from the photo on it. There should also be a computer, with the content on the computer screen showing the Blender modeling process of the figurine. In front of the cardboard box, place a cardstock and put the architecture model from the photo I provided on it. I hope the PVC material can be clearly presented. It would be even better if the background is indoors
 
-![](img/fe378b2b91691d98f41f91321db2c303.png)
 
 ![](img/e8078ee062e6b94d24f83f9c64a2433c.png)
 

@@ -12,7 +12,6 @@ Cursor的RAG功能可以将一些网站内容变成先验知识，例如你要�
 
 https://www.coderwithai.top/
 
-![](img/cbafe979169bbea0015c4d1f724aa073.png)
 
 ## 树莓派
 

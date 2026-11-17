@@ -14,31 +14,24 @@
 
 +   官网地址：https://bailian.console.aliyun.com/#/home
 
-![](img/fe8c3ea28fc33dd0824f5b04d2a57326.png)
 
 点击登录：
 
-![](img/53409e2fbfc1c19b0bfd704bc4ee1635.png)
 
 注册或扫码登录即可：
 
-![](img/241e62781bd1863c49bf477782a482aa.png)
 
 +   查看模型
 
-![](img/51e0011e1e0626462081f414f1b67783.png)
 
 点击查看详情
 
-![](img/72a454898e4b2f36baf78c5c8751e44d.png)
 
 即可查看模型调用价格与赠送额度：
 
-![](img/05efe284ff4e40041cff80fd19db982b.png)
 
 点击立即体验，可以跳转到对话页面进行对话测试：
 
-![](img/e675ce54e8227af1cad5f11b4ac84bee.png)
 
 ### 注册API-KEY
 
@@ -109,9 +102,7 @@ open-webui serve
 
 在本地登录Open-WebUI：http://localhost:8080/
 
-![](img/3ec720fa712013d42ad8538b77f5a1df.png)
 
-![](img/47f5fd093d81375edc8871fb10b9d6b5.png)
 
 ![](img/a7ea30033ba67503d042a6c845d66ce6.png)
 
@@ -119,7 +110,6 @@ open-webui serve
 
 点击保存即可。然后回到主页即可开始进行对话：
 
-![](img/7103b1b48ed8b723c1b71b5caa54dbfc.png)
 
 ![](img/cf339bafd77753c8391297e270a1a181.png)
 

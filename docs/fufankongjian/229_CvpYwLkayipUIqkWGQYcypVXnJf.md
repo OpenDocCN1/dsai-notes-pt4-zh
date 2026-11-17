@@ -103,7 +103,6 @@ openai.__version__
 
 而在获得了OpenAI账号之后，接下来则需要获取API-Key，作为每位用户单独的身份认证，也就是API-Keys，我们在openai主页https://platform.openai.com/ 中心可以创建和查看已经创建的openai的AIP keys。注意API-Key是调用模型和扣费的依据，各人需要妥善报关API-Key，防止被盗用从而造成不必要的经济损失。而如果API-Key被盗，也可以停止原有的API-Key，并创建新的Key。
 
-![](img/88cbc61c19b67a61abfa906941c128eb.png)
 
 ![](img/9cc01992a18d7bdc35b2b65f92056c88.png)
 

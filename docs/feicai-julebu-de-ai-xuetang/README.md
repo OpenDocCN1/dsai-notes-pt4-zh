@@ -40,7 +40,6 @@
 
 # **最新更新**
 
-![](img/2180cdd5dd509e885b370b1bfa2301ff.png)
 
 [AI 短剧 | Seedance 2.0 分镜师团队，Agent + Skill 方法](https://feicaiclub.feishu.cn/wiki/TcDDwsdYGibLdqkgi15c7rBTnch?from=from_copylink)
 
@@ -80,7 +79,6 @@
 
 [漫剧 | 网文改编漫剧 Claude Agent+Skill方法](https://feicaiclub.feishu.cn/wiki/KP4OwdAsyiON2MkeVFXclVybn2d?from=from_copylink)
 
-![](img/753f7dcd10c501f42799aec6bcdf70e8.png)
 
 [漫剧 | 末世重生类 漫剧剧本创作 Claude Skill](https://feicaiclub.feishu.cn/wiki/JQ8bwixhSimnGFkWTUOcl3jZnBf?from=from_copylink)
 
@@ -92,7 +90,6 @@
 
 [AI 剧本 | Claude Code 搭建短剧编剧团队](https://feicaiclub.feishu.cn/wiki/EAPpwh0MvicGX5kc09GcEwovnDo?from=from_copylink)
 
-![](img/ae590087b29cb7f10fb8c0e3ebb7a125.png)
 
 [AI Agent | 如何用Agent Skill创建技能以及技能包](https://feicaiclub.feishu.cn/wiki/RZDGw7z1ViOskTkEK8WcAcjGnGd?from=from_copylink)
 
@@ -120,7 +117,6 @@
 
 [小说 | 古代权谋类 短篇小说创作 Claude Skill](https://feicaiclub.feishu.cn/wiki/QvAhwkSClivoEmktuYDcqs5Vn2d?from=from_copylink)
 
-![](img/c6f9be72ec16a9f8bb633da8fe7c0cb1.png)
 
 [小说 | 现代言情类 短篇小说创作 Claude Skill](https://feicaiclub.feishu.cn/wiki/I6r3wWSrrihoL4ku0Y8cmOl7nrg?from=from_copylink)
 
@@ -136,7 +132,6 @@
 
 [AI 编程 | 🛰️小程序 Cursor Rule 框架](https://feicaiclub.feishu.cn/wiki/FvSLwJCf6iIMt8k9tS9cj7fxnjc?from=from_copylink)
 
-![](img/fbc61c9134303c18beb7ffdccde08360.png)
 
 [新闻媒体 ｜ 新闻稿件提示词框架 - 通用](https://feicaiclub.feishu.cn/wiki/T837wTqpxiHxLykJakTcnIkEn9e?from=from_copylink)
 
@@ -160,11 +155,9 @@
 
 [AI 设计 | 高质量海报设计提示词框架 - ChatGPT 4o专用](https://feicaiclub.feishu.cn/wiki/WszTwg2ASigtBrke6oCcbH4mnoh?from=from_copylink)
 
-![](img/1f0b80b1b7778d56a0ed97a59a320555.png)
 
 [AI 编程 | 产品UI设计提示词框架 - 暗黑模式科技风](https://feicaiclub.feishu.cn/wiki/ZuYSwBOKqib54nkOXwtcWRSvnYc?from=from_copylink)
 
-![](img/25376fc7ff53aa08af508c4218d8a3fd.png)
 
 [自媒体 | 🛰️👸号文章生成提示词框架](https://feicaiclub.feishu.cn/wiki/UyumwOUisivFVckYxjgcoHWDnHb?from=from_copylink)
 
@@ -212,7 +205,6 @@
 
 [慢思考 | 思维链提示词框架](https://feicaiclub.feishu.cn/wiki/HG7VwksR3iFRB5koTiAcVaZOnFf?from=from_copylink)
 
-![](img/5ea27de86899d3d07008265ac54c12d8.png)
 
 [知识付费 | 网课开发提示词框架](https://feicaiclub.feishu.cn/wiki/JzUbwnCwviyzOYkJagJckhNynQL?from=from_copylink)
 

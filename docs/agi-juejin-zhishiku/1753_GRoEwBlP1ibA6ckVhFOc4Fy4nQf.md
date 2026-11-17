@@ -208,7 +208,6 @@ AI工具训练🔥零基础上手20+主流AI工具 仅需0.1元
 
 接下来我再来介绍一个非常全的AI工具集网站：这个网站有这[500+A](https://www.zhihu.com/search?q=%E6%AF%8F%E6%97%A5%E8%B5%84%E8%AE%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3206590319%7D)I工具导航大全，同时还有AI 每日资讯 等内容，对AI工具学习非常感兴趣的朋友们可以看看。
 
-![](img/42a6d2f987d9a9ab935cb18e32e75dad.png)
 
 ![](img/b3d2e33a389ad35dba2520c2045ea37a.png)
 

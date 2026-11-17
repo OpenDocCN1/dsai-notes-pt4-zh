@@ -516,7 +516,6 @@ For each function call, return a json object with function name and arguments wi
 
 在了解了微调数据集结构背后的基本原理后，接下来的问题是应该如何构造微调数据集呢？一般来说我们可以在huggingface、ModelScope或llama-factory中挑选合适的数据集，并根据实际情况进行组装。例如围绕Qwen3模型的高效微调，为了确保其仍然保留混合推理能力，我们可以考虑在微调数据集中加入如普通对话数据集FineTome（https://huggingface.co/datasets/mlabonne/FineTome-100k），以及带有推理字段的数学类数据集OpenMathReasoning（https://huggingface.co/datasets/nvidia/OpenMathReasoning），并围绕这两个数据集进行拼接，从而在确保能提升模型的数学能力的同时，保留非推理的功能。同时还需要在持续微调训练过程中不断调整COT数学数据集和普通文本问答数据集之间的配比，以确保模型能够在提升数学能力的同时，保留混合推理的性能。
 
-![](img/28fb8cec76d6b9fd83874891403433f1.png)
 
 ![](img/d24fc4034e32272411a07d0b7d37caab.png)
 
@@ -998,9 +997,7 @@ wandb官网：https://wandb.ai/site
 
 ![](img/2ab7a64eaf6eed3980b6b025bca19d04.png)
 
-![](img/26c23dd6aadb92535536dd10bbc57d49.png)
 
-![](img/bde66c8d478faa736d49aa2c0067a865.png)
 
 ![](img/1f15e6657accb803ab59c5464907030e.png)
 

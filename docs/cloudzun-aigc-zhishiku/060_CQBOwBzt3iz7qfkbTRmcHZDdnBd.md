@@ -772,11 +772,9 @@ People in image:
 
 street.jpg
 
-![](img/c706ee723f117a25733aeb2ba2abdfe5.png)
 
 objects.jpg
 
-![](img/313482022a174059018b4a9f9b35c5e6.png)
 
 people.jpg
 
@@ -2446,11 +2444,9 @@ Analysis complete.
 
 +   在 **RG1 中创建名为 **lang-36478729** 的新语言服务**。
 
-![](img/6d74d038a2ece12bee253fc5e9ed50a5.png)
 
 +   保语言服务支持自定义文本分类和命名实体识别 （NER）。
 
-![](img/090219992d47503b282d7fe0c87d53b1.png)
 
 +   确保语言服务使用免费层，并在北欧 Azure 区域中预配。
 
@@ -2492,27 +2488,20 @@ Analysis complete.
 
 +   项目必须命名为 Webshop。
 
-![](img/8a393557fba279bd13258a1d3b6c1bd1.png)
 
-![](img/6db726636fc35d97f928ffae36e7ac3b.png)
 
 +   语言必须是英语（美国），而不是多语言。
 
-![](img/1bb72e228daf595ce9c5f923f1b2d5bb.png)
 
-![](img/4980c1e4d00faf6096c2440bc12e55aa.png)
 
 +   项目必须使用两个名为 Price 和 CustomerName 的新实体。
 
-![](img/dfe0f3e4685e18c1bcaf86c03170d49e.png)
 
 +   sa@labinstanceid/webshop 容器中的示例数据必须标有 Price 和 CustomerName。
 
-![](img/2622442607424eb2474c98480250ee73.png)
 
 +   必须启动模型训练。
 
-![](img/1e934564bab4f969d4168e757b55b8a2.png)
 
 ![](img/6d22bef89935e7a8ad5f25ffcefe8795.png)
 
@@ -2546,9 +2535,7 @@ Analysis complete.
 
 +   **使用 C:\pr**ojects 文件夹中 lang4567 的现有项目定义。
 
-![](img/c56bab305940d422d3b391aecd9017e7.png)
 
-![](img/9ff82a8028299d9524846d6df5e836d5.png)
 
 ![](img/a75fe10e8808ffff58c342871c90e459.png)
 
@@ -2556,7 +2543,6 @@ Analysis complete.
 
 +   将数据拆分为训练占比 85% 和测试占比 15%。
 
-![](img/1ec93c14e5c36a05c5d4eb621c11dd8e.png)
 
 +   将模型的部署配置为使用名称 **lang4567**。
 
@@ -2698,7 +2684,6 @@ if __name__ == &#x27;__main__&#x27;:
 
 ![](img/05343223e7ada3ef36ce557189577ac9.png)
 
-![](img/fdbc5c765c7d33259ec6bdb92b14889d.png)
 
 +   ** 将每个文件的 **JSON 输出保存到 c:\files
 
@@ -2742,17 +2727,14 @@ if __name__ == &#x27;__main__&#x27;:
 
 +   将项目链接到 form@labinstanceid 资源。
 
-![](img/81d921fc2d2d30d6e223e61c05ae8eed.png)
 
 ![](img/a1e7151db55e54952cb68df85e18d94b.png)
 
 ![](img/6fa1de11bbd4e1966d06aff20310af77.png)
 
-![](img/92b9a3e0180cd01237750a7c9c3a9402.png)
 
 +   使用 qualityassurance@labinstanceid 存储帐户中的 documents-training 容器。
 
-![](img/8884f0aaa800effb0f0db1cb1a3e025f.png)
 
 +   使用下表中显示的标签。
 

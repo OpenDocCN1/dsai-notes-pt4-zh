@@ -120,7 +120,6 @@ pip show pip
 
 python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple openai
 
-![](img/06f16784a9a5fd2c056bcfcb12b5ead3.png)
 
 回车后安装
 

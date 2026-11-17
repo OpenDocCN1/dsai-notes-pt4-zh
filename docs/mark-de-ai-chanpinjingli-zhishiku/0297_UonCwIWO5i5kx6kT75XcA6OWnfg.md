@@ -10,9 +10,7 @@ Stable Diffusion将“图像生成”过程转换为逐渐去除噪声的“扩�
 
 +   与DALL·E和Midjourney相比，Stable Diffusion最大的优势是开源，这就意味着Stable Diffusion的潜力巨大、发展飞快。Stable Diffusion已经跟很多工具和平台进行了集成，且可用预训练模型数量众多（参见Stable Diffusion资源列表）。正是由于社区的活跃，使得Stable Diffusion在各种风格的图像生成上都有着出色的表现，随便给大家看几张我生成的图片：
 
-![](img/828e64e3fffd50624e8006aa4123ee01.png)
 
-![](img/fbf741ecc65ae3b0dcc9bd63cab23f98.png)
 
 ![](img/d63062ced566e7eecdfc7761b84fea4e.png)
 
@@ -178,7 +176,6 @@ Stable Diffusion Web Ui安装过程中会默认下载Stable Diffusion v1.5模型
 
 下载后将模型复制到models目录下的Stable-diffusion目录即可。完成后点击页面左上角的刷新按钮，即可在模型下拉列表中看到新加入的模型。
 
-![](img/0f7bc22757df0d3497601bc72db6ef14.png)
 
 除了标准模型外，Stable Diffusion还有其他几种类型的模型，models目录下每一个子目录就是一种类型的模型，其中用的最多的是LoRA模型。
 

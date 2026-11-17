@@ -169,7 +169,6 @@ class SparseAutoEncoder (nn.Module):    &quot;&quot;&quot;    A one-layer autoen
     l1_loss = l1_coefficient * encoded_representation_BF.sum ()    loss = l2_loss + l1_loss    return loss
 ```
 
-![](img/cb5684e36a0181283989440d023033c9.png)
 
 稀疏自编码器的前向通过示意图。
 

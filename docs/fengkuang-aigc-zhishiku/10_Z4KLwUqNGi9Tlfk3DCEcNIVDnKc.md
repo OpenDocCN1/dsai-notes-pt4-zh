@@ -26,7 +26,6 @@
 
 模型下载推荐使用civitai（国外）以及哩布哩布AI（国内），前者需要特殊网络，下载也比较慢，但是模型丰富，数量极其的多。后者下载速度很快，我一般是在【civitai】上找到模型然后去【哩布哩布AI】上搜，如果有需要的模型，那就直接在【哩布哩布AI】上下载。
 
-![](img/f185587488f8983bf62e727b054a63d1.png)
 
 ![](img/0b2ece3542f3bd3f5d3f8a7196c068ac.png)
 
@@ -56,7 +55,6 @@ Changjing_3d，((最佳画质))，((杰作))，no_human，水，天空，天，�
 
 (worst quality:2),(low quality:2),(normal quality:2),lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,jpeg artifacts,signature,watermark,username,blurry,bad_pictures,DeepNegativeV1.x_V175T,nsfw,
 
-![](img/a9d832c435f357493f0f1eb903d93513.png)
 
 ![](img/77a009d3b5bff46873bb07db6b00b298.png)
 
@@ -68,13 +66,11 @@ Controlnet我们需要使用两个预处理器及模型：【canny】和【depth
 
 【canny】的权重可以保持默认 1，【depth】的权重设置为0.8（比canny权重小一点即可）。
 
-![](img/6742002ab50156cab26e6c6a0b1ca9fa.png)
 
 ![](img/49cde103f87772614e51afb1cbd4ae65.png)
 
 回到上面，使用 Euler a 采样方法，迭代步数为 30，尺寸与上传的图片一致。
 
-![](img/78d049b9484dc200da7c25b94a1e0075.png)
 
 ![](img/d03c90fe8969df081e4a9bc2c307bc35.png)
 
@@ -82,7 +78,6 @@ Controlnet我们需要使用两个预处理器及模型：【canny】和【depth
 
 把上述的参数调整好了之后，我们就可以进行初步的跑图了，可以调整总批次数量（显卡一般的控制在4左右）。
 
-![](img/9bb670f60faebb005a57a2f86b017cda.png)
 
 ![](img/b4c5666287e12313c80227a53e6a8ac5.png)
 
@@ -100,21 +95,17 @@ Controlnet我们需要使用两个预处理器及模型：【canny】和【depth
 
 启动【Controlnet插件】，预处理器及模型选择【Tile】 ，权重调整为1.2。【Tiled Diffusion 和 Tiled VAE】都都选上，并在这个插件下控制最终生图尺寸，在 288*512基础上乘以3倍，即【864*1536】。
 
-![](img/55622b90f45eedc3f66742795c892065.png)
 
 ![](img/35d67740c9fc401fbe2d185e27a295f0.png)
 
 在漫长的等待之后，我们就得到了一张被放大之后的图片，并且这张图片的细节之处更加丰富。这一步完成之后，SD就可以暂退了，下一步我们结合【PS Beta】略微修复下细节。
 
-![](img/af82ecb397d8a3c6b94429c0724f71bd.png)
 
-![](img/a705ea6282f1c2804528222215fa3d9b.png)
 
 **2.6 后期微调+排版**
 
 使用PS Beta等工具，进行后期的微调处理，再加上排版，一张抖音开屏页海报即可完成。其他品牌符号也可用这个案例的思路创作，方法是一致的，看会了就去试试吧。
 
-![](img/c0f3015c1c3aada7f3d949205c3c3aad.png)
 
 ![](img/f1ba5cdc8c5bbc1cbe021469f6e89aac.png)
 
@@ -126,7 +117,6 @@ Controlnet我们需要使用两个预处理器及模型：【canny】和【depth
 
 在设计前期我们首先需要确定视觉风格，可以找一些设计参考，这一步的准备也是在后续通过SD关键词反推中使用，你没听错，SD也可以图生文。
 
-![](img/8ac0851bb5c770c5ce6e83af8e4c7328.png)
 
 ![](img/78864e95c8b5ed0e25489f5ab23efe30.png)
 
@@ -140,7 +130,6 @@ Controlnet我们需要使用两个预处理器及模型：【canny】和【depth
 
 3、controlnet插件模型以及白底黑字图片。
 
-![](img/8fc4c064e019cbdce32444d1a51ce9e5.png)
 
 ![](img/cb86ef1ad65975858576789d14513dbb.png)
 
@@ -154,7 +143,6 @@ Controlnet我们需要使用两个预处理器及模型：【canny】和【depth
 
 关键词：no humans, science fiction, cable, scenery, indoors（没有人，科幻小说，有线电视，风景，室内）
 
-![](img/1eb0c0196b593276bb87615a50d5daf6.png)
 
 ![](img/d080881157c839652fa6a6393161b243.png)
 
@@ -176,7 +164,6 @@ no humans,science fiction,cable,scenery,indoors,(masterpiece, best quality:1.3),
 
 使用Controlnet插件上传黑字白底图，预处理和模型选择【canny】即可，老生常谈的东西了。
 
-![](img/858361f73b8d96da3665a3f2528a8811.png)
 
 ![](img/f4a37abf87e0ac607406955422741432.png)
 
@@ -186,7 +173,6 @@ no humans,science fiction,cable,scenery,indoors,(masterpiece, best quality:1.3),
 
 重点：尺寸比例与上传的图片一致。然后就可以批量跑图了。
 
-![](img/233531e0e7edffb689c2bc2353779815.png)
 
 ![](img/a4557aa23d45d1b42e6517130c03d802.png)
 
@@ -198,15 +184,12 @@ no humans,science fiction,cable,scenery,indoors,(masterpiece, best quality:1.3),
 
 选中一张低分辨率图片，固定Seed值，点击绿色的按钮即可。
 
-![](img/eab24f69f1f2c708d711cbe03084865e.png)
 
-![](img/77cc9831e3bffedf76e5f4224cebea2b.png)
 
 打开高清修复，放大算法选择【R-ESRGAN 4X+】，放大倍数调整为 3倍，重绘幅度 0.5。
 
 重绘幅度不能过大，不然会导致主体数字变形，大概在0.5~0.7之间。
 
-![](img/7f8a2a6de1ade70816a3da0ce4b71736.png)
 
 ![](img/ce94b811e3df28d8b0a0ff786c9831ad.png)
 
@@ -214,7 +197,6 @@ no humans,science fiction,cable,scenery,indoors,(masterpiece, best quality:1.3),
 
 最后根据需求信息进行排版即可，运用这种操作方法，我们只需要更换controlnet的白底黑字图即可做出倒计时海报的延展图，完事！
 
-![](img/0312bb201336d8f17c594b21bacd1031.png)
 
 ![](img/06c94d6318face0a77059ae5223ad9f5.png)
 
@@ -230,7 +212,6 @@ no humans,science fiction,cable,scenery,indoors,(masterpiece, best quality:1.3),
 
 2、Lora模型：C4D几何背景geometry-bg
 
-![](img/ad85321714b6d6e31ebd9cf79994a216.png)
 
 ![](img/fa4c2ef88e7b9224759a83f764c111f1.png)
 
@@ -288,7 +269,6 @@ no humans,science fiction,cable,scenery,indoors,(masterpiece, best quality:1.3),
 
 2、黑白蒙版图的黑色产品区域是与产品图的产品位置一样的，会PS的朋友都知道哈，不再啰嗦了。
 
-![](img/f39e6391a140ebe99c51a2373fd88029.png)
 
 ![](img/b3977dfa77afb676b36ade4f7b63594f.png)
 
@@ -300,15 +280,12 @@ no humans,science fiction,cable,scenery,indoors,(masterpiece, best quality:1.3),
 
 接下来点击【上传重绘蒙版】，上传准备好的场景图以及蒙版图。其他参数默认即可，采样方法与【文生图】使用一致即可，分辨率可以在此处再次放大，看大家需要调整。
 
-![](img/678bef22b9a94b1048be2ec799da52e9.png)
 
 ![](img/97a06f88a7ebeeb18a97e4157ceb85e9.png)
 
 生成之后可以看下对比，在产品周围，SD会自动把产品融合到场景中去，可以调整【蒙版边缘模糊度】的值控制产品边缘的融合度，建议不要太高，不然产品会出现变形。
 
-![](img/372964294c903bd50ed9b6d9a38a0943.png)
 
-![](img/03c96eb5ab90100012620582b8c586bc.png)
 
 ![](img/61a28f542c5c8abafcf2593073bbf5ff.png)
 

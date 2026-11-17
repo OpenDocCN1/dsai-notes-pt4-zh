@@ -24,7 +24,6 @@
 
 ![](img/8cb0687e9e382fb91d6b63fe9bf4041e.png)
 
-![](img/2ca4668b631a172642ecdc3e4bca98a1.png)
 
 自由分享阶段，考虑到 20 人左右的线下沙龙大家可以交流的充分一点，因此给每人都留出五分钟的分享时间，并且分享完后可就感兴趣的点进行 1-2 分钟的讨论。
 
@@ -42,9 +41,7 @@
 
 ![](img/7b382df34c898566e45adf1fe238aa7d.png)
 
-![](img/1f1c273342dae6d7ed86a33d50c2dc29.png)
 
-![](img/fd98c6ad34d1377a6ba3ffedbfa1136d.png)
 
 ![](img/31a48498af1a464d82a3d416154d424f.png)
 

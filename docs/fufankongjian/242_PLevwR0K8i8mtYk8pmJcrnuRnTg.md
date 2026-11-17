@@ -276,11 +276,9 @@ vllm serve /root/autodl-tmp/models/Qwen3.5-27B \
 
 **输入启动命令**：
 
-![](img/d82c3e0adbb6be79391fe9ef2cf21c71.png)
 
 **模型加载中**（1-3 分钟）：
 
-![](img/17a7757b54cdb7b92af35e715ea4b4f4.png)
 
 **服务就绪**——看到 Uvicorn running on http://0.0.0.0:8000：
 

@@ -16,8 +16,6 @@ https://oxford.shorthandstories.com/ai-a-history/index.html
 
 ![](img/79c1da96f65041764b7530387fe84969.png)
 
-![](img/0d4028ef9ed688332ee84e8e9ccca075.png)
 
-![](img/f7fdee6195237ad528ce26b458139808.png)
 
 ![](img/84f2443c51bb545c03f02b877153cfb5.png)

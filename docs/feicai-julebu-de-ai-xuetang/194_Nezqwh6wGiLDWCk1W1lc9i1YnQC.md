@@ -18,7 +18,6 @@ Blender MCP（Multi-Client Protocol）是一个开源项目，它允许你通过
 
 # **准备工作**
 
-![](img/67edecc0cef5334cd5a81e1891dd7ba4.png)
 
 ## **下载Blender MCP插件**
 
@@ -28,7 +27,6 @@ Blender MCP（Multi-Client Protocol）是一个开源项目，它允许你通过
 
 ## **安装Python（视情况而定）**
 
-![](img/08c0ba98e8272146cac3cd6e784fce90.png)
 
 > **注意**：是否需要安装Python取决于你使用的MCP Server的编程语言。如果MCP Server是用Python编写的，你需要安装Python；如果是用C++或JavaScript等其他语言编写的，则不需要。
 
@@ -104,7 +102,6 @@ Blender MCP（Multi-Client Protocol）是一个开源项目，它允许你通过
 
 **Cursor下载链接：**http://cursor.com/
 
-![](img/77de2bfab5252a6951ffb7e788a67234.png)
 
 1.  打开Cursor（如果尚未安装，请先下载并安装）
 

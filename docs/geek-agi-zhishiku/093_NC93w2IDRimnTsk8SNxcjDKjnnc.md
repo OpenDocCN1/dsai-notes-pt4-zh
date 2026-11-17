@@ -40,7 +40,6 @@ OpenClaw Day——OpenClaw中国行·杭州站
 
 报名入口陆续开放。可以先加入我发起的“万人养虾”群，随后各种信息会在这儿发布：
 
-![](img/c7fb41d55b5834a39648c30bf2fe9e36.png)
 
 你也可以直接加入自己所在城市的飞书群，先和当地的爱吃虾的小伙伴交流起来：
 
@@ -48,6 +47,5 @@ OpenClaw Day——OpenClaw中国行·杭州站
 | --- | --- | --- |
 | ![](img/fe66969aa46a86018c770f1efc00f82d.png) | ![](img/d0f99a4f819321da99603446200010f8.png) | ![](img/26997f7f862dd72e629f923ff69a40eb.png) |
 | 深圳站 | 广州站 | 成都站 |
-| ![](img/583eaf46352f18be21b0fe7890820615.png) | ![](img/f8611095c204bc4baa20582176028bac.png) | ![](img/0bf81ec446fb3ed62fbc1bf4209e7f0b.png) |
 | 南京站 | 苏州站 | 武汉站 |
 | ![](img/5d23c9f844a560e7eb77e3f667f901e0.png) | ![](img/c4a2fdf18d0c352bcd157c6f4b8a05dd.png) | ![](img/495c98f86ba726ff55e7d803a394162c.png) |

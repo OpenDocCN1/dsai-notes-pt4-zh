@@ -52,7 +52,6 @@ OpenClaw Day——OpenClaw中国行·苏州站
 
 报名入口陆续开放。可以先加入我发起的“万人养虾”群，随后各种信息会在这儿发布：
 
-![](img/841e9b9ed860f02a37c77ff62758ab46.png)
 
 你也可以直接加入自己所在城市的飞书群，先和当地的爱吃虾的小伙伴交流起来：
 
@@ -60,6 +59,5 @@ OpenClaw Day——OpenClaw中国行·苏州站
 | --- | --- | --- |
 | ![](img/0b1db110a9589e2d3f5e04cdedb37e7f.png) | ![](img/121abdd7f9768596e7d1943208615b2f.png) | ![](img/78ff40a42eaf204710c0bff14c143779.png) |
 | 深圳站 | 广州站 | 成都站 |
-| ![](img/99c8df67230a88abd5c8c7ff66e11c2c.png) | ![](img/d688e1610c727ec4740f1d5369b0f433.png) | ![](img/04ff08ffec40c62a566966df6273fa33.png) |
 | 南京站 | 苏州站 | 武汉站 |
 | ![](img/d97c5e1ce26942574bc34e75b7c82669.png) | ![](img/e814b4c6809d884e25f008213340e3e1.png) | ![](img/cc2d3f70bb66bd0d3f73a3765358acb2.png) |

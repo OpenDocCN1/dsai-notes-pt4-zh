@@ -62,7 +62,6 @@ REGLE 旨在使用变分自动编码器 (VAE) 模型克服这些限制。该方�
 
 研究人员观察到，与现有方法（例如由专家定义的特征、PCA 和 PRS）相比，由肺量图编码创建的肺功能 PRS 改善了 COPD 和哮喘预测，并且比风险谱两端的特征 PRS 更有效地对风险组进行分层。哮喘和 COPD 的多个独立数据集（COPDGene、eMERGE III、Indiana Biobank 和 EPIC-Norfolk）中的多个指标（AUC-ROC、AUC-PR 和 Pearson 相关性）在统计学上显著改善，如下所示。
 
-![](img/670c3f7cee7baf2ef4d025b0f0cff9f7.png)
 
 图示：肺量图编码 (SPINC) 和残差肺量图编码 (RSPINC) PRS 与专家定义的特征 PRS 对哮喘患病率的比较。（来源：论文）
 

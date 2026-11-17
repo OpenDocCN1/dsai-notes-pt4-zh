@@ -88,7 +88,6 @@ Dify 是一个优秀的 LLMOps（大型语言模型运维）平台，Dify 的详
 
 （3）创建 Dify 基础编排聊天助手应用
 
-![](img/a2c021f60d5f65f51bf89c1e690d4e01.png)
 
 登录成功后，进入 Dify 页面，我们按照下方步骤创建一个基础编排聊天助手应用
 
@@ -104,7 +103,6 @@ Dify 是一个优秀的 LLMOps（大型语言模型运维）平台，Dify 的详
 
 1.  点击创建
 
-![](img/b66652a7baf86434ed769d158225f064.png)
 
 创建成功后我们会跳转到上图所示页面，我们继续配置应用
 
@@ -114,7 +112,6 @@ Dify 是一个优秀的 LLMOps（大型语言模型运维）平台，Dify 的详
 
 1.  填写应用提示词
 
-![](img/c0486230aae72433d32b64ee79aec3b6.png)
 
 在配置完成后，我们可以在右侧对话框进行测试，在测试完成后，进行如下操作
 
@@ -314,7 +311,6 @@ docker logs -f dify-on-wechat
 
 最后点击保存并处理
 
-![](img/8bcfad28819c3715abb2d5d0cb009b73.png)
 
 我们看到知识库正在进行嵌入处理，稍等片刻，即可嵌入成功。
 
@@ -326,7 +322,6 @@ docker logs -f dify-on-wechat
 
 我们进入 Dify 工作室，点击从应用模板创建
 
-![](img/aaa6e7c1b2f3a4875b7f583774e36e9e.png)
 
 我们使用知识库+聊天机器人类型的模板，设置应用图标与名称，点击创建
 
@@ -388,19 +383,15 @@ docker logs -f dify-on-wechat
 
 #### 2.4.1. 创建 Agent 应用
 
-![](img/f1aef49ffbcbc6fcef4eb4801f6d619b.png)
 
 进入工作室页面，点击创建空白应用，选择 Agent，设置图标和应用名称，最后点击创建
 
-![](img/4aad66c2bf01bd06f2d0699d9890ca39.png)
 
 创建成功后，我们会进入 Agent 应用配置页面，在这个页面我们选择好对话模型，然后添加工具。我们首先添加 DALL-E 绘画工具，首次使用该工具需要授权，一般我们设置好 OpenAI API key 和 OpenAI base URL 即可使用该 DALL-E 绘画工具。
 
-![](img/7e7bd9b1b886644cb691960635d9b52a.png)
 
 授权成功后，我们添加 DALL-E 3 绘画工具
 
-![](img/6ee27725ac516f278e3277e608aa6db8.png)
 
 接着，继续添加 DuckDuckGo 搜索引擎和数学工具，进行后续的工具测试
 
@@ -450,7 +441,6 @@ docker logs -f dify-on-wechat
 
 #### 2.5.1. 创建工作流应用
 
-![](img/d2fc9a8b9d75360ed7d07ec898cc0d0e.png)
 
 [首先你需要提](https://github.com/hanfangyuan4396/dify-on-wechat/blob/master/dsl/chat-workflow.yml)前下载好我预先创建的 DSL 文件，点击此处下载。下载完成后，进入工作室页面，点击导入 DSL 文件，上传提前下载好的文件，最后点击创建。
 

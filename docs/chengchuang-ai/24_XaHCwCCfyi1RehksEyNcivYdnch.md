@@ -88,7 +88,6 @@ highest picture quality, illustration, girl, long hair, red clothes, happy, runn
 absurdres, 8k, comic, viewfinder, 1male, run, black hair, orange sun, blue sky --ar 4:2 --v 5
 ```
 
-![](img/da2630c022658063648501760e6d08d5.png)
 
 --seed 3014855368
 
@@ -123,7 +122,6 @@ absurdres, 8k, comic, viewfinder, 1male, run, black hair, orange sun, blue sky -
 (absurdres), 8k, comic, ((viewfinder)), 1male, running, (jumping:1.5), black hair, orange sun, blue sky --ar 4:2 --v 5
 ```
 
-![](img/6f36dad04010263cb0776783e7c5b1ad.png)
 
 组合运算
 
@@ -180,8 +178,6 @@ best quality, very detailed, absurdres,  8k, comic, [viewfinder], one lady with 
 | --niji 5 |  | Niji是Midjourney中用于绘制二次元（动漫）风格的专用模块。新版本新增 cute 和 expressive 两种模式。cute就是字面意思，更可爱的风格；expressive更偏3D和欧美样式。 在--niji 5 后输入 --style cute 或 --style expressive 即可 | ![](img/53b967c0f43e46c2e455d40b7d6434ed.png) |
 | **--no + ****prompt** | **否定加权** | 如果不想画面出现某些元素，就可以用否定命令。如：--no plants 会尝试移除植物 |  |
 | --quality  number | 质量 | 影响生成时间和质量，各版本支持参数： |  |
-| --uplight | 光线微调 | 添加适量的细节和纹理，对于面部和光滑表面非常有用 | ![](img/c4d17acdc7b35dc135f4a0f5f3fc6eaa.png) |
-| --upscale | 精细细节微调 | 为图像添加许多其他精细细节，使用详细放大器放大的图像可以使用按钮再次放大，最终分辨率为 1664 * 1664px。 | ![](img/5014ce434e0884c3203eb69b6922126c.png) |
 | --upbeta | 测试调整 | 结果更接近原始网格图像，放大后的图像添加的细节明显更少，对面部和光滑表面很有用 | ![](img/dd38ddd302da4529f01cdfeb6dd17b58.png) |
 | --test | 测试模型 | 偶尔会临时发布新模型以供社区测试和反馈 | ![](img/aec08dfe5db7026cce2ef810e2d8c786.png) |
 | --testp | 摄影测试模型 | 以摄影为重点的测试模型 |  |
@@ -191,15 +187,12 @@ best quality, very detailed, absurdres,  8k, comic, [viewfinder], one lady with 
 
 V4 50
 
-![](img/972b222fd9b565e0342691f894a88f52.png)
 
 V4 100
 
-![](img/1e8f86f179ca908e481dfaa06f7b9daf.png)
 
 V4 250
 
-![](img/f19a13ffad5bcdadf07d7e2dfe77c65a.png)
 
 V4 750
 

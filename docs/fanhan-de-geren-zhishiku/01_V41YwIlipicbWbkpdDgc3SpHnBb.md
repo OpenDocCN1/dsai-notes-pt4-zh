@@ -32,7 +32,6 @@ pokémon pikachu enamel pin, in the style of light yellow and brown, mischievous
 
 ![](img/bd569cd49fd9353858c9cb38440e6c1e.png)
 
-![](img/0141c2a8b6fe69519591659755f270cf.png)
 
 ![](img/035200afd5a9680bb37edf92ffe4fc74.png)
 
@@ -44,9 +43,7 @@ pokémon pikachu enamel pin, in the style of light yellow and brown, mischievous
 Pikachu, oversized plush toy, furry, realistic, on the couch
 ```
 
-![](img/39f1c33a145195ee45db4fbc51b5b8e8.png)
 
-![](img/2edcb04b2bc7649ef15ca02de3344b50.png)
 
 ![](img/0b00c32f2d46bd5b7ed34084e98642e5.png)
 
@@ -60,7 +57,6 @@ a person with an pokemon pikachu keychain and key lock, in the style of dao tron
 
 ![](img/deb6efb5eda694a7f22577842d0c9863.png)
 
-![](img/d0f891bff2ab1a7968e647fb3e3ba8e2.png)
 
 ![](img/9aa1fd8762f4ce4183d027ade38ab502.png)
 
@@ -74,7 +70,6 @@ Pikachu elements, plastic cups, cute --ar 2:3
 
 ![](img/13a8fd327f3c1a8191a257eb3701458d.png)
 
-![](img/e6ce2f259206e31c77e943c20c043072.png)
 
 ![](img/71cb80d3036bc2caf7ee6e460a40084e.png)
 
@@ -86,7 +81,6 @@ Pikachu elements, plastic cups, cute --ar 2:3
 Full body view product render of grandiose pikachu, child size,in jumpsuit of glistening fabric design,in the style of Juicy Couture and PowerPuff-girls,ZBrush,digital fashion,OctaneRender,CG rendering, CGI-artist,film lighting, --ar 2:3 --s 750 --style raw
 ```
 
-![](img/91824e10dbd8bfd2544d23440e3b7ee5.png)
 
 ![](img/b5f18c2e2ce82a717e09723b4768f280.png)
 
@@ -130,11 +124,8 @@ pikachu sleepwear pajamas set men&#x27;s sleepwear, in the style of dark silver 
 Pikachu anime-style card playing the guitar, cute, with special effects around the edges --ar 4:5
 ```
 
-![](img/50b3798c6ad91b5a7220a10038ced426.png)
 
-![](img/fd947fafe20888d070001c9b7fd9f2f8.png)
 
-![](img/cced29b0c6daaff79c825e73828d2ad9.png)
 
 ![](img/4b48039f378c64c8ee506c49a85ac0b1.png)
 
@@ -164,7 +155,6 @@ super cute pikachu, Chibi, sticker
 
 ![](img/761fc38791f346fd3f2020ccfdba5928.png)
 
-![](img/8b350cad44340dd05e6093c6f67e11de.png)
 
 ![](img/85ea923022af9f638b0d0b9c6ec89757.png)
 
@@ -284,9 +274,7 @@ super cute pikachu, Chibi, sticker
 A pikachu eating chocolate in chocolate dream factory, very happy and colorful --ar 3:2
 ```
 
-![](img/6d3038d7af3b6aa19ac6bcd7005e5cf4.png)
 
-![](img/cd4a2585d5909bf67c3d6f206d4a49a3.png)
 
 ---
 
@@ -296,23 +284,18 @@ A pikachu eating chocolate in chocolate dream factory, very happy and colorful -
 A pikachu is sitting in a McDonald&#x27;s shop eating a burger, french fries and drinking a coke, very happy --ar 3:2
 ```
 
-![](img/3d00f39a4bb4281cb6fb84f921397695.png)
 
-![](img/ed76cdf10c564bbfa2ac3c70958c8c13.png)
 
 ```
 Pikachu and one of his friends eating Lay&#x27;s chips --ar 3:2
 ```
 
-![](img/6fef91698316aea1a8af1bd6d1154ce6.png)
 
-![](img/8699760cdcb84721d4ccd08ad4461874.png)
 
 ```
 Pikachu and one of his friends drinking coke --ar 3:2
 ```
 
-![](img/863f56d05a55f30a292f4cbf799b329b.png)
 
 ![](img/957964a8d3632ee543c4bc1343fe2684.png)
 
@@ -396,7 +379,6 @@ pikachu sitting on the beach and eating watermelon, in the style of concept art,
 
 ![](img/58d341cecf8d0aca9e2c899e326f23b7.png)
 
-![](img/c8b2b312af2e596f859615030da947cc.png)
 
 ---
 
@@ -406,9 +388,7 @@ pikachu sitting on the beach and eating watermelon, in the style of concept art,
 pikachu,Solid color background wallpaper, eat watermelon, mobile phone wallpaper, border, rich fruit, strong contrast
 ```
 
-![](img/833cab14b4b24dadce4780157285f0d8.png)
 
-![](img/d4730f25521844ce4012b93164337b9d.png)
 
 ---
 
@@ -600,7 +580,6 @@ pikachu,School uniform, classroom, ultra HD, high definition, graduation
 A cute schoolgirl wearing a pikachu style dress ar--2:3
 ```
 
-![](img/53a13ea728648d0f43f56a97b194e0d8.png)
 
 ![](img/f63f50e346c0c1333f5375bc7407f900.png)
 
@@ -610,9 +589,7 @@ A cute schoolgirl wearing a pikachu style dress ar--2:3
 Pikachu wearing a Chinese Hanfu with ancient Chinese style in the background --ar 2:3 
 ```
 
-![](img/0d1edf3d86e83dce7eda46dc4fa2e050.png)
 
-![](img/ec32ada583a42193b3aedc18962ee7ed.png)
 
 ### 😉穿着中国汉服的宝可梦
 
@@ -620,9 +597,7 @@ Pikachu wearing a Chinese Hanfu with ancient Chinese style in the background --a
 Pikachu wearing a Chinese Hanfu with ancient Chinese style in the background --ar 2:3 
 ```
 
-![](img/3318efbe8f7dad96de598a4245cd48bd.png)
 
-![](img/2e43b42300a51f825b35c8e58765c687.png)
 
 ---
 
@@ -632,7 +607,6 @@ Pikachu wearing a Chinese Hanfu with ancient Chinese style in the background --a
 Pikachu in Chinese ink painting style --ar 2:3
 ```
 
-![](img/3063a22fb47c4c3497b4c8367da24ab9.png)
 
 ![](img/c9a122572745c253b945eac27086f7bd.png)
 
@@ -658,7 +632,6 @@ Pikachu in Chinese ink painting style --ar 2:3
 Pikachu and his family, family portrait --ar 3:2
 ```
 
-![](img/8579bd259c730f59d6cb49fc3af8eae5.png)
 
 ![](img/8dafd53d24559044f688b20bec0a98c6.png)
 
@@ -708,7 +681,6 @@ Pikachu and his family, family portrait --ar 3:2
 A new Pokémon character, an elegant Frost Djinn with blue and white scales and a crystal-like sheen all over its body. Jingluna&#x27;s ears are like wings of ice, and there is a string of ice crystals on Jingluna&#x27;s back. --ar 2:3
 ```
 
-![](img/734d596fb4eebe51f254a254c75328fc.png)
 
 ![](img/c68a9022c2fa16455f93aa7945425155.png)
 
@@ -726,7 +698,6 @@ A cute pikachu looking at the viewer wearing a headset, with a chat border, text
 
 ![](img/735aa940624d7d069d1b68463e5fede7.png)
 
-![](img/c8d66a0c1c1d34a2b1b361b13b365c2e.png)
 
 ![](img/698d508c143590d34b5e58a85bdf8232.png)
 
@@ -738,7 +709,6 @@ A cute pikachu looking at the viewer wearing a headset, with a chat border, text
 A happy pikachu waving hello to the front --ar 3:4
 ```
 
-![](img/26e360eccae5aa78281926ccceb48a74.png)
 
 ![](img/84ff4017c77c8d4b478b2d49bb90e4ac.png)
 

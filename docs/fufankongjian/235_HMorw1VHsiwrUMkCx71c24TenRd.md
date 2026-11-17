@@ -28,7 +28,6 @@
 
 +   Agents SDK（OpenAI 出品）强调 Agent 自主决策能力；
 
-![](img/df2fc237411c88cd3265a430e0c78862.png)
 
 +   ADK (Agent Development Kit)（谷歌推出）也将 ReAct 模式作为默认范式；
 
@@ -76,7 +75,6 @@ AgentScope 对齐了 ADK 等前沿框架的思路，支持多模态（文本、�
 
 在记忆管理方面，该框架同时支持“短期记忆（Short‐Term Memory）”和“长期记忆（Long-Term Memory)”两层结构，并兼容第三方记忆框架如 ReMe、mem0。其 GitHub README 明确指出：“Support agent-controlled long-term memory”。
 
-![](img/bf41b0bfbbadb7433411716795ad442f.png)
 
 ![](img/7f3d969b644a28f00b5f860534acae8a.png)
 
@@ -446,7 +444,6 @@ python .\SimpleAgent.py
 
 ![](img/cbec22a0fbcb61d6cbbc965d9f7536d5.png)
 
-![](img/e24aaeda87196ad78297907e414de701.png)
 
 ![](img/0a5609dc34ba973e660284fbb9172ee6.png)
 

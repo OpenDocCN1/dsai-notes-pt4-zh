@@ -394,7 +394,6 @@ echo "[${transposed[*]}]" | sed 's/] \[/],[/g'
 
 ![](img/4aab13c187764487e39ee06a7dbc6e7b.png)
 
-![](img/fa4e4e541cf307e6760f60be437f5f39.png)
 
 假设有 7 个海盗，他们需要分配一批金币。每个海盗都具有以下特点：
 

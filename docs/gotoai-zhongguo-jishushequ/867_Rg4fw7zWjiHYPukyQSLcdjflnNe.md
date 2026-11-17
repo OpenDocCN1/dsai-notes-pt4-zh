@@ -6,7 +6,6 @@
 
 https://university.aliyun.com/lesson/ai-general?spm=5176.28623341.J_vY6wx4VrmLm18KH_mThvF.1.300c3180Kq6vOc
 
-![](img/3492bbbd47a26b90800aedd5e49bef4a.png)
 
 ## AI实践：真实场景实操
 

@@ -118,7 +118,6 @@
 
 ![](img/c2f98fd67fcd3436ed8c937596687e2b.png)
 
-![](img/b52ff7a1bc2ab4f91c6aaf4450bcace0.png)
 
 ![](img/488448c5d4448f159a25e9e939ebbbf2.png)
 
