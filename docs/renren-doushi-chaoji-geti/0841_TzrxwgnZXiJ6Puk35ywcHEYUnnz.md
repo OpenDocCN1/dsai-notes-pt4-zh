@@ -78,23 +78,19 @@
 
 1、进入[云平台](https://cloud.tencent.com/act/pro/free)。
 
-![](img/3c1355b90d2e26cb6661854f925d1f20.png)
 
 2、先点击 **立即试用**，再修改 **镜像**，最终点击立即试用。
 
 > 镜像选择：选择 Docker CE 19.03.9，这样减少安装 Docker 的步骤。
 
-![](img/2e5b96eb2722446f014a295b1b789b0e.png)
 
 3、可能需要进行人脸认证。
 
 [4、再稍](https://console.cloud.tencent.com/expense/deal)微等待一会，等待**分配**服务器资源。如果不显示，可以进入 订单管理 查看。再点击 详情 进入订单详情界面。
 
-![](img/ea06ba2b875a35bcf1430fb62821c202.png)
 
 5、点击 **资源 ID** 对应的链接，跳转到服务器即可。
 
-![](img/b66a5ce382234c59c506637349a84302.png)
 
 6、点击进入 [服务器列表](https://console.cloud.tencent.com/lighthouse/instance/index)，向下滑动后，点击 **更多 > 重置密码**，进行修改密码, 并记住密码，用于接下来配置环境使用。
 
@@ -196,7 +192,6 @@ docker-compose --version
 
 等待验证，个人实名基本上几分钟就好了。
 
-![](img/3eb2b6cc1079dcb6142ac20b22d64eea.png)
 
 ![](img/73682d75cf757e14633695f84141ebdc.png)
 
@@ -208,7 +203,6 @@ docker-compose --version
 
 4.2）填写应用信息。
 
-![](img/795799c007288f8866605cea2ff1d9ee.png)
 
 4.3）选择刚创建的应用，再选择对应的套餐。向下滚动后，勾选服务协议，再点击 **确认下单**。
 
@@ -276,7 +270,6 @@ cd /root
 docker-compose up -d
 ```
 
-![](img/771508c6cc00dabb5291b6b360f6a156.png)
 
 2、查看日志和登录的二维码，再用🛰️号来扫码 (扫码时要对准了、离近点才能成功)。
 
@@ -654,19 +647,16 @@ xxx
 
 1、进入[云平台](https://cloud.tencent.com/act/pro/free)。
 
-![](img/32d10493d44128b4890223dc07badc9e.png)
 
 2、先点击 **立即试用**，再修改** 镜像**，最终点击立即试用。
 
 > 我建议不了解 linux 系统的小伙伴选择镜像： 宝塔 Linux 面板 8.0.5。
 
-![](img/c1479df7059763a948e026a18de21f17.png)
 
 3、可能需要进行人脸认证。
 
 [4、再稍](https://console.cloud.tencent.com/expense/deal)微等待一会，等待分配服**务器**资源。如果不显示，可以进入 订单管理 查看。再点击右侧的 详情 进入订单详情界面。
 
-![](img/41c04870b2872dd6c3079a201e14627e.png)
 
 5、点击 **资源 ID** 对应的链接，跳转到服务器即可。
 
@@ -765,11 +755,9 @@ make install
 
 5.1）点击左侧 SFTP、再鼠标点击移动到 home / lighthouse 文件夹下。用于上传文件。
 
-![](img/15f13ac49af4f0325282bb304e58a2c7.png)
 
 5.2）上传从网盘上或者其他地方下载的 python 文件。
 
-![](img/69af2940095690674cde93a99ef16319.png)
 
 注意：第一种情况才是正确上传。若出现下方第二种情况：是因为文件目录不对，右侧文件夹没有移动到  /home/lighthouse
 
@@ -968,7 +956,6 @@ pip3 install -r requirements.txt
 
 调整后，上传到目录：/home/lighthouse/chatgpt-on-wechat/plugins/linkai
 
-![](img/c001615540c8f26f4dea46c8d3905c28.png)
 
 ### 六）服务器启动
 

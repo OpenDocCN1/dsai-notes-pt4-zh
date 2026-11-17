@@ -98,11 +98,9 @@ https://www.youtube.com/@storys.meowia/shorts
 
 原视频中的木棍人、卡布奇诺小姐和鲨鱼怪我都替换成以下角色（你可以换成任何你喜欢的角色）
 
-![](img/d63a571bc122b09899f42ba91e1a3935.png)
 
 我垫图的命名：菜花头木棍人
 
-![](img/1dc72aba2fdd97967299e95da204bc83.png)
 
 我垫图的命名：长裙卡布奇诺小姐
 
@@ -124,7 +122,6 @@ https://www.youtube.com/@storys.meowia/shorts
 
 截图很难讲清楚，所以我录制了视频教程：
 
-![](img/68de17b144f172a3df5c2043dae0a94d.png)
 
 [1.图生视频演示教程.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VGWobvjLMojhgZxjUMTccCpcnAd)
 
@@ -682,7 +679,6 @@ Youtube上的动物视频有很多分类，大体分为这么几种：
 
 救援类视频
 
-![](img/bda305b6381fded2b480d1c3dbdca44c.png)
 
 [嘲笑故事视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O9tobPrVeoEvsnxVd4ncowxMn1g)
 
@@ -978,25 +974,21 @@ https://www.youtube.com/shorts/uMjoTCpdpsQ  （7月8日发布，8400万播放）
 
 我的山海经复刻真人视频案例：
 
-![](img/d9b1a2e9551c9727d4746541dbd6c227.png)
 
 [变骷髅原视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KU1Zb6baHo3vXCx7Rpjc2C8znMn)
 
 真人博主原视频
 
-![](img/f8cc1419a9975dc67446656e20128588.png)
 
 [咖啡妹变骷髅YT版.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MuqmbZyk2oIhbOxdeeXcSVJ2n5g)
 
 我复刻的视频，1900万播放
 
-![](img/a2d69b9b627abc1040fed10f43259812.png)
 
 [偷金鱼原视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YYFNb5hTnonXfyxEIG9cVIJ4nky)
 
 真人博主原视频
 
-![](img/093c3557bc1a868d295701c38febe3e4.png)
 
 [吃金鱼成品YT版.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AkNbbBSXIobG2ux4Kcgcmm5dnyf)
 
@@ -1022,13 +1014,11 @@ https://www.youtube.com/shorts/uMjoTCpdpsQ  （7月8日发布，8400万播放）
 
 即观众的注意力被故事本身吸引，对角色的表现力（动作和表情）要求不高，看一个正面案例：
 
-![](img/30fbc2cb1f625704eb8c7c32cbe2791e.png)
 
 [变骷髅原视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IETFb69d9oMgbzxXkY8ch1ozndc)
 
 真人博主原视频播放9000万
 
-![](img/63d5fd50bfd644acb4de956a10515721.png)
 
 [咖啡妹变骷髅TK版.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NS5wbGGshot5CwxFCOlcGaoVnN1)
 
@@ -1080,13 +1070,11 @@ https://www.youtube.com/shorts/uMjoTCpdpsQ  （7月8日发布，8400万播放）
 
 真人博主原视频播放5000万
 
-![](img/5dfdf326e4d1c4a8a1e320f4889bfb24.png)
 
 [分冰棍_成品.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OxHcb0B🐧oWIaHxbOvhcoEKWnzg)
 
 复刻视频1播放5万
 
-![](img/c97565362d2af4ab52f1553f1a9e3228.png)
 
 [videoplayback.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zc9PbiUrKo27TKxfpcicBNAjnyb)
 

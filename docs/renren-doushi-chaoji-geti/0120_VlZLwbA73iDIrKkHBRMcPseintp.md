@@ -8,7 +8,6 @@
 
 补上龙哥老大的超级标：https://scys.com/articleDetail/xq_topic/45811414184521888，当时我还进行评论了，我说还有🛰️👸号垂直小店（🛰️小店），一直在做，还挺不错的，佣金很高。🛰️👸号垂直小号+垂直小店绝杀受到了很多圈友的点赞，还有很多圈又追问我细节，这一下就坚定了我要写这篇分享的决心。
 
-![](img/a0b5d766088d892860267e7852906e7a.png)
 
 ![](img/dc83036f4e72a09a7447cdecd77fcdee.png)
 
@@ -56,7 +55,6 @@
 
 ![](img/bc3cbeeac50cbfe184ea3754ce7db618.png)
 
-![](img/25cd81614ff912969d63037706acd3fc.png)
 
 ![](img/386e790af1d06c7904912a33cda50fc3.png)
 
@@ -84,7 +82,6 @@
 
 ![](img/71546d5398fd6e1fada224f714497547.png)
 
-![](img/07e2fd31f6080761cdd72decd9071161.png)
 
 ![](img/41e7604e3a4cd474a68d6ffd2d41bc9e.png)
 
@@ -184,15 +181,10 @@ Mark：https://scys.com/articleDetail/xq_topic/2852148812488541
 
 🛰️小店入驻有两种方式，一种是个人0押金开店，一种是企业。咱们一般开个人就可以。开通流程如下：
 
-![](img/1ec518de01fcff4798398d0576e891db.png)
 
-![](img/87d0882d250ae71efedf68ead5005203.png)
 
-![](img/79d34dfb1c40440da9786764841330b0.png)
 
-![](img/a7fada173992c79c2efcce7d663c374c.png)
 
-![](img/eef214170c87babd481df3fde410c25d.png)
 
 ![](img/228553b8f8fa029477198597d7b3a16a.png)
 
@@ -200,19 +192,14 @@ Mark：https://scys.com/articleDetail/xq_topic/2852148812488541
 
 然后加入垂直商品，比如垂直书籍，然后绑定好视频号和👸号，如下：
 
-![](img/b8fda82e6328778be996497b6e388869.png)
 
-![](img/30225067923ec4586e7d651a7b7480f8.png)
 
-![](img/4d59e3b1dce6c214551a203ff474a0bb.png)
 
 垂直小店还可以进行小店布局，展示你的垂直内容、商品和信息，如下：
 
 ![](img/0c47edcb5b6088491418795477669aba.png)
 
-![](img/7d8140c9dee22f7075ca3afd0e1d1a03.png)
 
-![](img/baffcbb8bbaa1d9ead093cc33ed5f676.png)
 
 ![](img/57ee2ab88e2a285acad90b3deaa75825.png)
 
@@ -330,7 +317,6 @@ Mark：https://scys.com/articleDetail/xq_topic/2852148812488541
 
 +   **找对标账号：**在🛰️搜一搜输入关键词，比如输入穷爸爸富爸爸，点击全部，筛选最热，最近半年。就会出现一大堆十万加的账号，这个时候逐一关注。然后在🛰️建立一个对标账号群把对标账号转发到里面去。
 
-![](img/bed218e2173a3b27b0644497690957f2.png)
 
 +   **找对标低粉爆款文章：**还是以穷爸爸富爸爸为例，上一步找到了很多对标账号，这个时候逐个点击，找到低粉爆文账号，比如图片中的凤眼观书账号。他的账号注册时间2025年，只有68篇原创文章，但是有两篇十万加，其它都是两三位数，所以这个就符合低粉爆文的规律，把这两篇爆文赶紧转发到🛰️群爆文群中，以做备用。
 
@@ -372,15 +358,10 @@ Mark：https://scys.com/articleDetail/xq_topic/2852148812488541
 
 ![](img/5de4194994d74864ac62e7d373e97c6c.png)
 
-![](img/2cdbecaed5d887cccb1ce99c2ed619d6.png)
 
-![](img/99bae17ccaaf6ce64405b19ae3da4582.png)
 
-![](img/195ee6eb80f79b51f048e57fa534a9c3.png)
 
-![](img/2eb97cad2197b6b9f8eb93476d5538bc.png)
 
-![](img/fe292b83030d2f38ffa4762b02d18097.png)
 
 ![](img/6850b205d362f6a3b4142088dc8e8e18.png)
 
@@ -388,11 +369,8 @@ Mark：https://scys.com/articleDetail/xq_topic/2852148812488541
 
 ![](img/7e31dc8d92349bc592d26ebd52740e29.png)
 
-![](img/a395b542f2b412445f5e4999c1c6dc87.png)
 
-![](img/01c7d781b6192712347ed0c92e266792.png)
 
-![](img/e55c11b40d57c64ff90c1de2dbd506ba.png)
 
 ![](img/af69aae99f4bc32c54ed0d365ba70ffe.png)
 
@@ -670,7 +648,6 @@ Initialization:
 
 ![](img/29f48b88d4b13e698827df9195f6fc86.png)
 
-![](img/e37c34278ab48b89a86d9fa7c38c9c40.png)
 
 ![](img/492a13c80205044d0e9bf4b7b17fd00b.png)
 
@@ -730,9 +707,7 @@ Initialization:
 
 1.  数据复盘：定期分析哪些关键词带来的进店量高、哪些商品转化率高，优化内容和选品。
 
-![](img/1a8e46e52b772b9a862cfdb2bf667d2b.png)
 
-![](img/deb8b4c388eb61735cada91609f6028f.png)
 
 **五、避坑要点**
 
@@ -758,21 +733,15 @@ Initialization:
 
 1.  垂直商品抽奖：定期在社群里搞抽奖，奖品就是小店的商品，比如书籍、课程，提升用户活跃度；
 
-![](img/b47c07f40291b05929cbdd456b0a4450.png)
 
-![](img/2833218022d330f3fda503f8f1863a99.png)
 
-![](img/bfd1aedb37be7782a59353f7204f3100.png)
 
-![](img/64b2801712aeb7672d69cd22cb793352.png)
 
 1.  垂直内容分享：每天在社群里分享垂直领域的干货，比如读书技巧、变现方法，再同步推荐小店的相关商品；
 
-![](img/b6edbd6728c3143da90df2f0ce705183.png)
 
 1.  用户互动：鼓励用户在社群里分享自己的使用体验、副业成果，形成正向循环。
 
-![](img/f00ae19dedd7718c01272700221a5aac.png)
 
 #### 3⃣️朋友圈+垂直小店：人格化内容，缩短信任链路
 
@@ -780,7 +749,6 @@ Initialization:
 
 1.  垂直内容种草：比如“今天拆解《小狗钱钱》，发现普通人搞副业的3个核心逻辑，小店有这本书，还送读书笔记”；
 
-![](img/a2ebba78daae7156191f8c2468bafb45.png)
 
 1.  个人日常：比如“今天带学员做👸号，他的第一篇爆文阅读量破万了，太开心了！”，举例如下；
 

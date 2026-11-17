@@ -96,15 +96,12 @@
 
 # 三、AI大模型厂商
 
-![](img/f74ceb1ca5bcc2652e1c9e3e65f8d978.png)
 
 # 四、云平台厂商
 
-![](img/bdd71c03c1682fd1a710920583558ae0.png)
 
 # 五、AI算力厂商
 
-![](img/10f6ee4d8ad8271abe119bc5d732ce42.png)
 
 ![](img/fc41ecbdecb3854edc41af6753e262b6.png)
 

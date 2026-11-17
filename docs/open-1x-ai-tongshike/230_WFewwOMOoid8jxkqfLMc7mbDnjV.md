@@ -60,7 +60,6 @@
 
 1.  **【核心】角色指令**，instruction，即Prompt
 
-![](img/f62675dd96ed8acc8b5ea30b270d8cd7.png)
 
 +   在**【角色指令区】**[2.【 0代码】应用调优：Prompt工程入门](https://datawhaler.feishu.cn/wiki/C6CiwV0LFi8xWQk8wI1c3w92nSg)可应用各种Prompt工程技巧，更多入门细节可参考
 
@@ -70,7 +69,6 @@
 
 +   如果在【预览与调试】测试时发现效果并不满足需求，且不是很了解Prompt工程时，可直接【优化】
 
-![](img/fadd90009e00d29a3f96b67d00eb5a10.png)
 
 > 如果对优化效果不满意，还可【重新生成】或【进一步优化】
 

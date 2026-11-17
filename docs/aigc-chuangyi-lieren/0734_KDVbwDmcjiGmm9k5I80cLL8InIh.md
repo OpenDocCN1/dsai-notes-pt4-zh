@@ -186,7 +186,6 @@ Case：
 
 | **prompt** | **img1** | **img2** | **img3** | **img4** | **img5** | **img6** | **img7** | **vid1** | **vid2** | **vid3** | **生成结果** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 参考@图1的男人形象，他在@图2的电梯中，完全参考@视频1的所有运镜效果还有主角的面部表情，主角在惊恐时希区柯克变焦，然后几个环绕镜头展示电梯内视角，电梯门打开，跟随镜头走出电梯，电梯外场景参考@图片3，男人环顾四周，参考@视频1用机械臂多角度跟随人物的视线 | ![](img/7afd3132820a339102a462eb5d7bedc3.png) | ![](img/5673ce925a8ef2b2fc0f16643399d6cb.png) | ![](img/f2fdc5cd32f7c8bc15b158bdd48da8e8.png) |  |  |  |  |  |  |  |  |
 | 参考@图1的男人形象，他在@图2的走廊中，完全参考@视频1的所有运镜效果，还有主角的面部表情，镜头跟随主角在@图2拐角奔跑，然后在@图3的长廊里，镜头从背面的跟随视角，通过低视角环绕到主角正面；镜头再右摇90度拍摄@图片4的分叉路口，急停后右摇180度，怼脸拍摄主角正面：主角气喘吁吁，镜头跟随主角的视角环顾四周，参考@视频1里急速的左右环绕运镜展示场景，后拉到@图片5的场景，继续跟拍主角奔跑的侧面视角 | ![](img/8e985b577c370e231a510cdf10d67d8b.png) | ![](img/55bb6d8d02c4f9a8cd60ab4d566272d4.png) | ![](img/555278230e150a7e034b349ad350098f.png) | ![](img/111fd4fa1a35d0b5db85c6625231f30f.png) | ![](img/caede299a2f1ffd81cf4dfb0c0b47726.png) |  |  |  |  |  |  |
 | @图片1的平板电脑作为主体，运镜参考@视频1，推近到屏幕的特写，镜头旋转后平板反转展示全貌，屏幕中的数据流一直在变化，周围的环境逐渐变成科幻风格的数据空间 | ![](img/f2a54cfb7b5c4f2c629b90a6c86c421a.png) |  |  |  |  |  |  |  |  |  |  |
 | @图片1的女星作为主体，参考@视频1的运镜方式进行有节奏的推拉摇移，女星的动作也参考@视频1中女子的舞蹈动作，在舞台上活力十足地表演 | ![](img/1139accef13a41a57d178f8c48a88b05.png) |  |  |  |  |  |  |  |  |  |  |
@@ -206,11 +205,9 @@ Case：
 
 [1月30日(1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F9DwbgFCtosIPvxTwzQcnpBTnwb)
 
-![](img/82e5b13289550ae054b4205718812e1a.png)
 
 [jimeng-2026-02-05-3654.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Es4Rb81tTol9RlxAugpcJCnAnp6)
 
-![](img/b5e1a7d2540f2c9f81f113e6a1fd57f9.png)
 
 [聚焦旋转.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PFLObGK6So2uhPxLKWJceTX0nWb)
 
@@ -234,7 +231,6 @@ Case：
 
 [okI4k2Elxfe5eFYM86DD4BAvIkCfLJ4ApIAIEc.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DQjNb9YnYoPhUKxIiDScj8LZnzh)
 
-![](img/8a482967baa07b6ec7c8ccdf658786c6.png)
 
 [打斗.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZDiUbdVkPoVt5LxCa7JcAL30nxb)
 

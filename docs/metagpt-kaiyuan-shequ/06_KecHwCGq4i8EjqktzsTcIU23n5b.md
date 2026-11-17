@@ -30,7 +30,6 @@
 
 ![](img/00210eaf6926ec5a5be895b58c78a80f.png)
 
-![](img/eab0fe9fe93a5b60be5444af11e7564b.png)
 
 ![](img/16705be12f8cd3cd71efaa8ef81a5d76.png)
 
@@ -48,21 +47,16 @@
 
 打开刚刚安装的 VS Code，点击 Clone Git Repository，提前将 MetaGPT 的代码仓库复制好：https://github.com/geekan/MetaGPT
 
-![](img/775c63dff178153ea0ce7a62cd368336.png)
 
-![](img/079fbcf29e630180c9c55c343bc389fd.png)
 
 完成下载后，左侧可以看到 METAGPT 的代码库
 
-![](img/79185efa1940ee684a601ca7dab79e03.png)
 
 找到 Terminal，创建一个新的 Terminal
 
-![](img/b8c8e4c4df2207bfa6f83609eaedf571.png)
 
 Terminal 如下
 
-![](img/eb04611a0f81e6a4410424ec9b73f581.png)
 
 在 Terminal 内输入以下这段代码，然后运行
 
@@ -72,11 +66,9 @@ pip install -e .
 pip install -e .[rag]
 ```
 
-![](img/a788043b82ee77624320e4b013027918.png)
 
 完成以上两个的指令安装后，准备好你的 OpenAI 的 API KEY，然后在 VS Code 里，在 METAGPT 目录下，找到 config.yaml 文件，将你的 API KEY 更新到文档内。
 
-![](img/65b08524ccfebeeadb336799b1e6b47c.png)
 
 ## Ready To GO!
 
@@ -88,17 +80,13 @@ pip install -e .[rag]
 metagpt &quot;write a cli snake game&quot;
 ```
 
-![](img/68c31cfd1b0a13c3e284955c6fb90b44.png)
 
-![](img/a9c7a6a6b7e0b277ee862966baff65bc.png)
 
 等待运行完成后，即可在左侧找到 workspace\snake_game 的路径，里面就包括所有的输出（产品文档、技术文档、以及代码等）
 
-![](img/28f31848eab4b7c540f1c217f6b192d7.png)
 
 最后，运行 main.py 文件即可
 
-![](img/3b26d6eeebc7d72632f75a2e36383b83.png)
 
 ![](img/9445a45a9f15321690d8dc7656e561e2.png)
 

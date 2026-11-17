@@ -202,11 +202,9 @@ Google Play商店：安装好谷歌三件套后，打开Google Play商店，在�
 | --- | --- | --- | --- | --- | --- |
 | **热门话题** | **趋势解读** |  |  |  |  |
 | **热门内容参考** |  |  |  |  |  |
-| ![](img/4d3a53fdf67d37193c2194cee04377e6.png) | ![](img/d49d6c9c4b62fc81d4556001cf5261e6.png) | ![](img/66b956501a05c08ff0aad8268568c61c.png) | ![](img/f018c72b0975d8939f123094e7110707.png) | ![](img/5187da84da91ed066b3f602114595797.png) | ![](img/15b910a179aa9cc80e7879ccf04e83a2.png) |
 | **假发风格&amp;效果话题🏷️** |  |  |  |  |  |
 | **热门话题** | **趋势解读** |  |  |  |  |
 | **热门内容参考** |  |  |  |  |  |
-| ![](img/6bf987152704b84f454239a3dba87036.png) | ![](img/7385fc8fdf8f5f1f1921ebc670210c69.png) | ![](img/16a5f68bafb147fa1c23139ec947082d.png) | ![](img/c5f69b95b58ebf6f4e0bd3c2e381b580.png) | ![](img/d37eba2bc05230df7d11d4152656ec44.png) | ![](img/b157f6ef749d4028c80cf53519fb267d.png) |
 | TikTok站内长青热门话题🏷️ |  |  |  |  |  |
 | **热门话题** | **趋势解读** |  |  |  |  |
 | **热门内容参考** |  |  |  |  |  |
@@ -248,19 +246,15 @@ Google Play商店：安装好谷歌三件套后，打开Google Play商店，在�
 | **亮点内容** | +   达人情绪饱满，口喷夸张描述如“没有任何缺点”“哪里我都很满意”，吸引用户兴趣 | +   达人情绪饱满，试戴后展现惊喜之感 | +   产品测评+拆箱，全程口播，慢节奏带领用户深入感受产品品质与核心卖点。 | +   回应评论区问题，一镜到底展示产品不掉发的核心卖点，同时以答疑形式强调物流快、产品尺寸、厚度等问题，信任感强 |
 | **公式** | +   口喷产品优点+强调对产品喜爱+引导点击 | +   产品展示+试戴+成果展示 | +   拆箱+产品展示+造型设计+成果展示 | +   回答问题+一镜到底+强调产品属性+引导点击 |
 
-![](img/ebed2cd49595fa84dc67edb83004b62d.png)
 
 [download.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SgHxb3nwaoym70x3oYGcqzIInHd)
 
-![](img/866b23d3df86ca77f13b2822f9bc2e9d.png)
 
 [download (5).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JvGqbjzACo4ikoxz3JOczbfDnNh)
 
-![](img/93c8a1209e2de08a22fba5d3ae0ca1b6.png)
 
 [3_download (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KlFCbAHUto8ceXxfNY2c53Hgnmf)
 
-![](img/c901660c894baa3e6ae7566ef5912f00.png)
 
 [4_download (8).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TZTObzVBTogDKKxp5GJc0YQwn9e)
 
@@ -268,7 +262,6 @@ Google Play商店：安装好谷歌三件套后，打开Google Play商店，在�
 
 [5_download (4).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P8cybUHsloP0xBx2tn2chPE9ngf)
 
-![](img/27ca3b60abc341642c990bdce56d0f7c.png)
 
 [6_download (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IQccbolFyoDVKcxRjArcp31rnNb)
 
@@ -276,7 +269,6 @@ Google Play商店：安装好谷歌三件套后，打开Google Play商店，在�
 
 [7_download (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qpixb7V2ToMgblxFOXKcmyt2nDh)
 
-![](img/fc32ecc70c68b23764b848a455d3a4bd.png)
 
 [8_download (7).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Chmlbj05XoTF7mxUuUxc0phenJf)
 
@@ -304,7 +296,6 @@ Google Play商店：安装好谷歌三件套后，打开Google Play商店，在�
 | **亮点内容** | +   开头将使用过的假发拉直，假发依旧保持顺滑柔顺，发丝依然饱满无损，充分展现其耐用性和高品质工艺 | +   产品拆箱后，详细陈述产品的尺寸以及属性，加深用户对产品的直观感受 | +   既有达人口喷引导用户关注产品核心性能，也有配音描述产品的原生自然感 | +   回应评论区问题，一镜到底展示产品不掉发的核心卖点，同时以答疑形式强调物流快、产品尺寸、厚度等问题，信任感强 |
 | **公式** | +   拉直假发+佩戴展示+成果展示+引导点击&amp;看评论 | +   效果前置+拆箱+产品展示+造型设计+引导点击 | +   产品展示+试戴+造型设计+成果展示+引导点击 | +   回答问题+一镜到底+强调产品属性+引导点击 |
 
-![](img/ccff6527823b2e56b8a1d87aa183b65e.png)
 
 [9_download.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WwqSbDP7do5Vsfx6gg0cSUvTnLd)
 
@@ -312,27 +303,21 @@ Google Play商店：安装好谷歌三件套后，打开Google Play商店，在�
 
 [10_download (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Eh7SbcJblocjKNxpZGecAEtUnEe)
 
-![](img/6e03a44ac49369dd92b0957ce0c24a76.png)
 
 [11_download (4).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OGY7bEYh7oVAB7xFallcdps2nNd)
 
-![](img/ea323394047d065158b70d53c394e287.png)
 
 [12_download (5).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HMOwbklkloyKzvxCISkc21kUn6e)
 
-![](img/de437b0ee14bc7947fe79a8d515ba143.png)
 
 [13_download (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gn3cbwy76optzNx3IUNc4AGRnpf)
 
-![](img/1cb06da6a929a76b46eab3799d85ac76.png)
 
 [14_download (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FQqubDlEWo7ro4x6yoQcfJicnhe)
 
-![](img/f8ef8f12fb846878c9a402783c6c830d.png)
 
 [15_download (6).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O5Okb3mYIoRN2UxohDScFDzznqc)
 
-![](img/47262daeca35fb34370431d013452e34.png)
 
 [16_download (7).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W2Tubj7g0oZcMix43lbcPDMInih)
 
@@ -360,19 +345,15 @@ Google Play商店：安装好谷歌三件套后，打开Google Play商店，在�
 | **亮点内容** | +   小品类短视频，通过路人以为达人原生发，展示假发优质自然的卖点 | +   达人配合动感bgm欢快舞动，用户注意力聚焦「有了它就稳了」的字幕 | +   大字幕轮播展示产品核心卖点，小字幕贴合站内话题趋势 | +   细致的造型设计过程 |
 | **公式** | +   假装被路人打断，夸赞头发 | +   产品展示+动感舞蹈 | +   产品展示+字幕轮播产品卖点 | +   造型设计+成果展示 |
 
-![](img/88eef37f52db193975f132c652f70921.png)
 
 [17_download (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K2nqboUiloDojcxTL2OcYQGrnVb)
 
-![](img/6b307f2c78e59b66385ba49b097b52ec.png)
 
 [18_download (6).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Decib2JZCoAWNNx5LPmcV6Alnge)
 
-![](img/0f3ae6e37194b2de7c717377d48df90d.png)
 
 [19_download (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QALXb8nHuoq4MLxttpacHXaYnte)
 
-![](img/aa7ae1c3f97b83236d09ec6655a510bd.png)
 
 [20_download.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SI9fbr2CNob2GDxv6ABcEquynjs)
 
@@ -380,7 +361,6 @@ Google Play商店：安装好谷歌三件套后，打开Google Play商店，在�
 
 [21_download (4).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W6vqbVQuLotSrmxCLPncM39gnqe)
 
-![](img/39f8e186b718597fce93f3597a9f6241.png)
 
 [download (7).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Te4JbA7fDoWh5jxyzgDcyQgwnrF)
 
@@ -428,7 +408,6 @@ Google Play商店：安装好谷歌三件套后，打开Google Play商店，在�
 
 [download (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FxtTbTsX9oWfzZxqsKXcZJVanDh)
 
-![](img/b87d494362f118585617748435649bed.png)
 
 [download.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UMfXbvoT0oijfKxgPc6cv78xnpe)
 
@@ -436,7 +415,6 @@ Google Play商店：安装好谷歌三件套后，打开Google Play商店，在�
 
 [download (8).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Oj2ibMfbSon3zQxpPO7cWINindb)
 
-![](img/d06f08c5c3383fd9c1807113ec13f73f.png)
 
 [download (5).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ln8rbtEXzofCTex9y2WcCgQ9nid)
 

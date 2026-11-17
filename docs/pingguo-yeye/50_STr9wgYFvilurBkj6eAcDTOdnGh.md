@@ -42,7 +42,6 @@ OpenPose预处理器包括：
 
 +   OpenPose_faceonly: facial details only
 
-![](img/4c99519c557c235b0c37e7f7a21bf725.png)
 
 +   **OpenPose_full**: All of the above
 
@@ -54,7 +53,6 @@ OpenPose预处理器包括：
 
 （2） 将您的图片上传到ControlNet 单张图片部分，如下所示
 
-![](img/7471d0a7f08b3b2a9f864d0b6e70e7d1.png)
 
 （3） 通过选中启用复选框来启用ControlNet 扩展。
 
@@ -108,7 +106,6 @@ ControlNet 需要选择预处理器和兼容型号。
 
 现在我们已经介绍了使用 ControlNet 的功能和设置，让我们来看看每个模型可以做什么！
 
-![](img/ddcb41c27557e5e0a32141a741aa27c6.png)
 
 # **示例**
 
@@ -122,7 +119,6 @@ Positive Prompts: (a photograph of a beautiful girl jumping in the air wearing t
 
 Negative Prompts: deformed, disfigured, nudity, nsfw, blurry, lowres, cartoon, anime, multiple people, warped face
 
-![](img/e5b25c97a972187f114ca0a1addea24f.png)
 
 ## **OpenPose Full **
 
@@ -136,7 +132,6 @@ Positive Prompts: Photograph of a man sat in a chair, waving, shot on a Sony mir
 
 Negative Prompts: Nudity, nsfw, blurry, lowres, cartoon, anime
 
-![](img/78cfb96f93ccf36ad44da19185921ad2.png)
 
 ## **OpenPose_face**
 
@@ -150,7 +145,6 @@ Positive Prompts: Photograph of a lady sat in a chair, waving, shot on a Sony mi
 
 Negative Prompts: Nudity, nsfw, blurry, lowres, cartoon, anime
 
-![](img/0ec99f7d0ed55c57b1886e656be4082f.png)
 
 ## OpenPose_faceonly
 

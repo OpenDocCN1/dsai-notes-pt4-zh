@@ -14,7 +14,6 @@
 
 ![](img/a847352e25380c9d3e3510dfef4fb40b.png)
 
-![](img/f0a7055d90a1d175bbbfe50f94443841.png)
 
 ![](img/5cc23e71d440e0066a39f5d9ee3e2d7d.png)
 
@@ -200,23 +199,18 @@ https://pan.baidu.com/s/19QGDWZeBfX_SjVRJhLDcFg?pwd=vtkz
 
 > **福利10：6节直播课**
 
-![](img/69e35d047e20fdfcf5b969cb18270a1f.png)
 
 [1、从克隆自己到自动化办公_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Sux3bk322ojETSxYYZicbAr8noc)
 
-![](img/96b0d86008d3cf352ce4732287cfc531.png)
 
 [2、学会与AI对话_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AwcvbtE6jogNBdx2ZEdcmTIGnUg)
 
-![](img/0fd2ea865c90b1f1ae70da042cb83e0d.png)
 
 [3、DeepSeek推理大模型与通用大模型_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CNpHbRFQAotDgdxrf8HcC4oyngY)
 
-![](img/08ff2d6ca39b48d99ba8aecdf567f2b1.png)
 
 [4、AI辅助office办公自动化_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NUGibJ6MRo291lxQVdIcSagAnfc)
 
-![](img/052a098f46c071a83e31d17d2d360953.png)
 
 [5、AI辅助Python批量办公自动化_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TXS1bLsttoWElEx1LKqcja9Fnpd)
 

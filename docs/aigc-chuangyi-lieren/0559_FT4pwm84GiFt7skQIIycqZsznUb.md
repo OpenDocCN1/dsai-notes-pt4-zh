@@ -238,7 +238,6 @@ Lovart与NanoBanana Pro的强强结合，打造的工业级AI图片编辑能力�
 
 简单把两个人物主体标记一下，提示词都不用怎么写，直接互换衣服。
 
-![](img/316335724721ca460b2594b5c1c6fdd2.png)
 
 ![](img/621e5aceb1929debf84282ee117e7802.png)
 
@@ -246,7 +245,6 @@ Lovart与NanoBanana Pro的强强结合，打造的工业级AI图片编辑能力�
 
 ![](img/8d5ac5505e55addd28aae688d7c25026.png)
 
-![](img/6c7bc77de06beab593a287242cea6d2a.png)
 
 ![](img/e2ccb20a15978f1dc6556efac058516b.png)
 

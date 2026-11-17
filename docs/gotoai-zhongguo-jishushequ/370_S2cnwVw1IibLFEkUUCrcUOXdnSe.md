@@ -127,7 +127,6 @@ RETURN actor.nameCopy to clipboardErrorCopied
 
 1.  访问 [Neo4j 官网](https://neo4j.com/download/)，在 “Neo4j for Desktop” 板块点击 “Download” 按钮。
 
-![](img/0f228126e52b5fb1c00a3350e277206d.png)
 
 1.  图 1.2: 在官网点击下载
 

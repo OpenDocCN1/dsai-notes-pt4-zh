@@ -98,7 +98,6 @@
 
 部署好了就是下面的样子
 
-![](img/42e652044de145d813e52c93f41399f1.png)
 
 链接EdgeOne Pages Deploy MCP
 

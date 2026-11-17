@@ -26,7 +26,6 @@ Task2中我们对时间序列做了详细的EDA，在这里我们将提供一个
 
 [Task3_Baseline.ipynb](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FaQkbYj3VoOme1xZr4PcxBewnSg)
 
-![](img/24f6df55839b7eec78df28ebd0c5fca8.png)
 
 [sample_submit.csv](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZOegbsyJ8oadClxI4Xvcehnynyd)
 

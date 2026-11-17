@@ -20,11 +20,9 @@ https://chato.cn/manager/center
 
 # 训练
 
-![](img/f07e32ea3db21f362911cba8ac289392.png)
 
 # 对话
 
-![](img/f35a5876a02ef00851ebc76896abc277.png)
 
 # 模版
 

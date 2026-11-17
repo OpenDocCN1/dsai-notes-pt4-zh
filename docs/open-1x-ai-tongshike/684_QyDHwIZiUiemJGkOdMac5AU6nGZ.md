@@ -10,35 +10,28 @@
 
 点击数据管理：https://modelscope.cn/aigc/modelTraining?tab=dataset
 
-![](img/4d9eb9eca9b981c9040a634751a63749.png)
 
 点击上传图片数据
 
-![](img/bcc4f4b447532347da1244692405ee55.png)
 
 上传表情包的数据集
 
 **注意，表情包的风格最好要统一！**
 
-![](img/f51396edb121039ee541bf8461b083ee.png)
 
 然后点击智能打标，为图片进行打标
 
-![](img/a39b7fbcb85e8304a25ec6d9ee30f96a.png)
 
 点击图片，可以单独处理
 
-![](img/d48ba77a1feb0bff83688e1cf9bd183d.png)
 
 **如果表情包上有****l**ogo，可以在打标时加上"__ logo"
 
 点击开始训练，进行LORA的训练
 
-![](img/93f7e39a24a98f54a933dc58abb8e235.png)
 
 发起训练：https://modelscope.cn/aigc/modelTraining?datasetId=750&tab=train
 
-![](img/f9290c9dc43af6ed4dbdfef95a32635d.png)
 
 **注**意底模的选择，比如我们想要动态表情表，就可以选择wan2.1-1.3b，通常情况下可以选择FLUX.1_dev
 
@@ -46,7 +39,6 @@
 
 点击开始训练
 
-![](img/636c74cc8f151288c29518abffe15326.png)
 
 训练完成后选择第一个，点击开始生成，生成图片：https://modelscope.cn/aigc/imageGeneration?taskId=739&versionId=2932&tab=advanced
 

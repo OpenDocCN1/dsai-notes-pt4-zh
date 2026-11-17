@@ -18,13 +18,10 @@
 
 ![](img/6a40739da78582ee4215ba6359ea2c05.png)
 
-![](img/192bf343fe8f2fe9b32efd3b78989b7b.png)
 
 ![](img/5d9d705d49e346b6e2e8ea82b0e3ece9.png)
 
-![](img/06aaff394c3474be74c08b745378085f.png)
 
-![](img/feae28695c679ddc294c5cf0178a72c2.png)
 
 ![](img/6219fd1afc83eb44e6fb72f7eb16f525.png)
 

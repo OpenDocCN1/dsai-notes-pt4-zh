@@ -28,13 +28,9 @@
 
 OpenAI 不再是让用户自己小打小闹，而是直接邀请了像 Booking、Coursera、Canva、Zillow、Figma 这样成熟的第三方应用，把它们的功能“集成”到 ChatGPT 内部。
 
-![](img/2e453fb04a09cf99cae42515a939e8af.png)
 
-![](img/f87d624970b3cbb33dae54863110c5e5.png)
 
-![](img/e4b1a461259e9114bc5f8fa19b4ba19a.png)
 
-![](img/6d044b32e714dc2888f04dabe51d5ff7.png)
 
 这个思路，其实很像当年智能手机从功能机时代，迈向智能机时代的关键一步：推出 App Store。
 
@@ -100,7 +96,6 @@ GPT-5 Pro 来了，并且已经可以在 API 中使用。从 “Pro” 这个名
 
 发布了这么多强大的模型和平台功能，背后都需要海量的计算资源来支撑。
 
-![](img/c437078d108376f5ce348855bc4ff455.png)
 
 这次 OpenAI 公开宣布了和 AMD 的大规模合作，要采购部署巨量的 GPU。这个消息其实也透露了他们的决心。
 

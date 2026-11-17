@@ -10,7 +10,6 @@ Andreessen Horowitz（ a16z ）第五版《全球前100名Gen AI消费级应用�
 
 +   **网页端50强**
 
-![](img/28a4561408acfec662181be9ee432df5.png)
 
 +   **移动端50强**
 
@@ -38,7 +37,6 @@ Web端新上榜应用仅11款，较上期（17款）显著减少。
 
 +   **Google Labs**[（第39名](https://ai-bot.cn/veo-3/)）：作为消[费者体验谷](https://ai-bot.cn/doppl/)歌前沿[AI（如Veo](https://ai-bot.cn/project-mariner/) 3视频模型、Doppl试衣、Mariner智能体浏览器）的主站，在Veo 3发布后流量单月暴涨13%。
 
-![](img/b9ee4d74b63e1b4312627455b4f39a51.png)
 
 ## ChatGPT领先，Grok和Meta AI奋力追赶
 

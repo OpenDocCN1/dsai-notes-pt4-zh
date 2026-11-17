@@ -16,9 +16,7 @@ Comfyui 安装方式相对简单，只需要在官网上下载解压缩后就可
 
 解压完成后，启动运行有两个选择：run_cpu.bat 是 cpu 模式，AMD或无显卡使用；run_nvidia_gpu.bat 是 gpu 模式，英伟达显卡使用。
 
-![](img/e8c551ec5ed3975efe9e41d03adfd334.png)
 
-![](img/8e91c25afc29fdce71ad288e40893b46.png)
 
 ### ComfyUI 模型安装：
 
@@ -28,13 +26,11 @@ b. VAE 模型放入：ComfyUI_windows_portable\ComfyUI\models/vae
 
 c. Lora 模型：ComfyUI_windows_portable\ComfyUI\models/loras
 
-![](img/9d39b52d0401954b0743f7c8a1bee89b.png)
 
 ### ComfyUI 模型共享：
 
 如果本机部署过 Webui，那么 ComfyUI 可以与 WebUI 公用一套模型，防止复制大量模型浪费空间。
 
-![](img/d96add590bed66098adefff56dcbafc5.png)
 
 ### ComfyUI 更新：
 

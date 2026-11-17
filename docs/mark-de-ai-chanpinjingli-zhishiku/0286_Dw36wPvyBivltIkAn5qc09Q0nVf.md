@@ -24,7 +24,6 @@
 
 [逐层分解transformer模型](https://qqs7y1hozd1.feishu.cn/wiki/HTakwDdwOiMwQPkeazCceNuunJb)
 
-![](img/2528c9d50a9c4327cbc81d130f82bb26.png)
 
 [卷积神经网络从原理到应用 (1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BUutboZBnopO6CxqbkEc8ScbnAh)
 

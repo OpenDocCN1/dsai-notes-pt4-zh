@@ -428,7 +428,6 @@ chatgpt绝对是做SEO的利器，在流量越来越贵的时代，能高效产�
 
 ![](img/0d3eddaafaebf1f12299d603bbea8645.png)
 
-![](img/8f704af80ecac5d7bc1783b9df5e84dd.png)
 
 官方群聊
 

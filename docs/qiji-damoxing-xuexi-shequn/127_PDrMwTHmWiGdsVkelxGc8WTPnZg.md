@@ -260,7 +260,6 @@ https://apps.apple.com/us/app/toontalk-ai-chat-for-kids/id6504600938
 
 ToonTalk 是一款专为儿童设计的 AI 朋友，能够分享有趣的故事、回答孩子的疑问，并鼓励语音互动，减少屏幕时间。它具有安全性和教育性，提供父母控制功能，帮助家长更好地理解孩子的情感和需求。
 
-![](img/79076eadba2ee608b7fa74a30818c00f.png)
 
 ![](img/27de3f4b05b54b44374a1f9ce8888904.png)
 

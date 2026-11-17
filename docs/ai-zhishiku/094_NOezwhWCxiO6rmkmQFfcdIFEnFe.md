@@ -14,7 +14,6 @@
 
 让我们一起迎来数字艺术与经典玩具的完美结合吧！
 
-![](img/5997bf92e6cb5bfc2436c730a2cecf33.png)
 
 Lego design,motorbike,clean background, hyper - detailed renderings, 3D render
 
@@ -34,7 +33,6 @@ Lego design,motorbike,Blue and white,clean background, hyper - detailed renderin
 
 Lego design,pink SUV, sports car,clean background, hyper - detailed renderings, 3D render --s 750 --v 5.2
 
-![](img/a80cf78fbb8fb3cce32a4d8cb924b3e7.png)
 
 ![](img/3258b0f5699aa6f6aaf1cea0c4580f4d.png)
 

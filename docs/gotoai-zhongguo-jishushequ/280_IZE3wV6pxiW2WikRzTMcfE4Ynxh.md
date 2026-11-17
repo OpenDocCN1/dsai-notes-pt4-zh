@@ -64,7 +64,6 @@ Transformer动画讲解 - 多模态
 
 +   **To**kens转换为向量：Embedding层负责将输入的Tokens转换为向量，将文本中的Tokens（如单词或字符）映射为固定大小的实数向量来捕捉这些Tokens的语义信息。
 
-![](img/c61e7f17b0e69fe235686eef92bb392b.png)
 
 **Tokens转换为向量**
 

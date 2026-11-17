@@ -22,37 +22,29 @@
 
 ....
 
-![](img/c597241eaad8cd9d782631e08a844af7.png)
 
 一键生成自媒体图文 （📕/🛰️推文）
 
-![](img/705d3c975528ee9261c6cf69f6854794.png)
 
 [撰写大理一月旅居攻略配图](https://space.coze.cn/share/7540341484442468642?share_id=7540345427229901094&secret=FznQKb35&from=home_case_list)
 
-![](img/96b8bd6536caed00f3bca15432a55454.png)
 
 [为文件每条内容配图](https://space.coze.cn/share/7535375602087297319?share_id=7535375347459572002&secret=jBXbJHby)
 
-![](img/822ff6181c21a2f3d6944b5e879c9f22.png)
 
 [高中语文《红楼梦》教学 PPT](https://space.coze.cn/share/7533215738195476745?share_id=7533221782913597748&secret=8UHrc2e3&from=home_case_list)
 
-![](img/0d51876d2c74a2b0fe59a0ae56f17333.png)
 
 [插画做库丘林传说PPT](https://space.coze.cn/share/7535124480680558848?share_id=7535129680723149108&secret=5XJtxDCe)
 
-![](img/aafda9302b42556b97fd9c5f4138895c.png)
 
 [制作银发客群维护挖掘PPT](https://space.coze.cn/share/7535083161823281446?share_id=7535085711121989907&secret=TFjkKX3V)
 
 [甚至还有](https://space.coze.cn/share-coding-expert/7540640755552731446?share_id=7540968887719379200)很贴心的同学直接用扣子空间搭建出来一个开学清单
 
-![](img/4ddc8f9b3fec2d8d1a3a0999706fd7c8.png)
 
 **这些看着**好玩，其实背后都用了一个宝藏平台 —— 扣子空间。
 
-![](img/ed3a228cb488db5cbf1b058b0cef82e5.png)
 
 扣子空间官网：https://www.coze.cn/s/kilDonYgjY0/
 
@@ -72,19 +64,16 @@
 
 https://space.coze.cn/s/PuhBpzB5xVI/
 
-![](img/296a8c737d6c957813db04394eac465f.png)
 
 +   “我是产品小白，想做一个课程推荐导航”
 
 https://space.coze.cn/s/gB3lC0y-bL4/
 
-![](img/42456cf95902ecdf7df3134d80afff4c.png)
 
 +   “我们是环保社团，要有活动照片和招新链接”
 
 https://space.coze.cn/task/7540701293988839723
 
-![](img/47e602a47f27cd83cde516d7e81cc582.png)
 
 这些都能**实时生成网页结构和内容**，你点开就能用。
 
@@ -98,11 +87,9 @@ https://space.coze.cn/task/7540701293988839723
 
 https://space.coze.cn/s/QNYL_sGtXFc/
 
-![](img/13346977c7a9bad65dcefe3985eada9c.png)
 
 +   “图书馆阅读挑战，文艺风”
 
-![](img/dd5bdd8acafae32962f15b99269edab3.png)
 
 https://space.coze.cn/s/qYuyt0haYqY/
 
@@ -120,7 +107,6 @@ https://space.coze.cn/s/qYuyt0haYqY/
 
 https://space.coze.cn/share/7531987513914818857?share_id=7531989008937042218&secret=ncJEKSbe&from=home_case_list
 
-![](img/d646b2be7f955933e62540d7505c6840.png)
 
 +   “食堂排队时偶遇未来恋人”
 
@@ -138,19 +124,16 @@ PPT 是大学生活动里的万金油，但手动做又慢又土。
 
 https://space.coze.cn/s/b4beas6FB-M/
 
-![](img/e1cdb097ebc73a4b6da73559dcca4139.png)
 
 +   “我要一份摆烂型学习计划，学得少但看起来很努力”
 
 https://space.coze.cn/s/lb93Vro_Ftc/
 
-![](img/a8019e244806808645abbbfe93b0c192.png)
 
 +   “我要给室友们演讲：为什么我们不该早起上早八”
 
 https://space.coze.cn/s/lbX8W3abX40/
 
-![](img/6d5f991e73c5ec47a024679d807b4e2a.png)
 
 AI 都能帮你**几分钟生成一个“能看的版本”**，再稍微美化一下就能用了。节省的时间，正好去“摆烂”。
 

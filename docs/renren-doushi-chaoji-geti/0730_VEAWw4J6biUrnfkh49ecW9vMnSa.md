@@ -66,7 +66,6 @@ YARN   | Search clips by quote
 
 找台词
 
-![](img/77298ac541e680203f1b380528f8a362.png)
 
 QuoDB | The movie quotes databas
 

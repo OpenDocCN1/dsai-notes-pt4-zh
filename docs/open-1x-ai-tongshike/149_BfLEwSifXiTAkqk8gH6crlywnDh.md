@@ -104,7 +104,6 @@ PS：在社交媒体发布AI视频作品的时候可以介绍下自己的作品�
 
 > 新疆雪景，蓝调时刻。Non-Cut Master Shot（一镜到底），一位男生单板滑雪者（黑色雪服，紫色雪镜）冲向大跳台，腾空瞬间舒展身体完成抓板动作。camera 180 degree orbit tracking（镜头 180 度环绕追踪），定格雪板划破空气带起的雪雾。运动模糊感，张力十足。电影感，柔焦雪雾边缘，高对比度明暗层次。
 
-![](img/20c598541a9e0eaf4a808ccb1116a9e0.png)
 
 [6aee45b26a2e4848ad39169f6a5a78a4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FIkhbyrlWohAv7xbrjUclDjnnfb)
 
@@ -112,7 +111,6 @@ PS：在社交媒体发布AI视频作品的时候可以介绍下自己的作品�
 
 > 晨曦破晓时刻，雪道两侧有雾凇。无人机视角，鸟瞰镜头，迅速推进至滑雪运动员，跟随运镜。一位女生在滑双板，动作姿势为Super-G（超级大回转）。高山速降，双板划过的地方有雪雾产生。运动感，自由感。电影氛围，大师级叙事，决定性瞬间，高对比度，真实感。
 
-![](img/0e72a73bc0ba12ec8d000c5d24842f8c.png)
 
 [01f8aef87ee34e0e9440abfeea52448e.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mvg1bCstxo1KfgxRyYTcTTx1n3e)
 
@@ -134,7 +132,6 @@ PS：在社交媒体发布AI视频作品的时候可以介绍下自己的作品�
 
 [a8400d7254954da3bc4c0d5cbb128fb8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/COwzbrxoioaLsgxbOHGc3E2ZnJe)
 
-![](img/3fb587deb86175409da7d4979423ab80.png)
 
 [b78064d30ef14724b32ebd7a0c1d9274.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S8ujb1QyxogW7hxKtJgcRkf8nSe)
 
@@ -207,19 +204,15 @@ PS：在社交媒体发布AI视频作品的时候可以介绍下自己的作品�
 
 +   创作基于花样滑冰、短道速滑、**高山滑雪**、单板滑雪四项冬奥赛事运动的AI视频内容，选择一项运动进行AI视频生成
 
-![](img/2de570e9a95a907ae7f5bb1b6e2068ed.png)
 
 +   http://xhslink.com/o/3P04gHILLa4
 
-![](img/3a21f8184d811cf76b46957bb63ef786.png)
 
 +   http://xhslink.com/o/AyNV8a3WWwT
 
-![](img/46dd99dd7fef6035a34acae66ef7d14e.png)
 
 +   http://xhslink.com/o/7zYRjIeK9BQ
 
-![](img/55cb6bd9fcf21eae6c47b92cb8cd35bc.png)
 
 +   http://xhslink.com/o/5KuimhTsUWz
 

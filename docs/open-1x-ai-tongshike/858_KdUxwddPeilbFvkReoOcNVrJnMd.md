@@ -232,7 +232,6 @@
 
 #### 初级PPT（视频中的）：
 
-![](img/e0624ea26c368934d7228069bb4fa3de.png)
 
 [大模型原理新版.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KwrWbPbXAoOcd4xiEzxccMOQn8e)
 

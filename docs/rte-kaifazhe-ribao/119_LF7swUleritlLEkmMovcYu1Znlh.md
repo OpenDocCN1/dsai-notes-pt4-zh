@@ -46,7 +46,6 @@
 
 5、中国信通院首批 AIGC 绘画平台评测解读
 
-![](img/0b5e7afc0c9c3e91dfe4a5537d810c8e.png)
 
 ![](img/e22425bda0a990031d8f8901124fd07d.png)
 

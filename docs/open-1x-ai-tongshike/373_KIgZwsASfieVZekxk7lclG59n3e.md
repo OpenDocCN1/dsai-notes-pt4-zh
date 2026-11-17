@@ -120,7 +120,6 @@ mkdir code
 
 > unzip dataset.zip
 
-![](img/0e9677c28c1431975f15dd17de7e7fa4.png)
 
 ![](img/74996889290f5e9e20076812957a3951.png)
 

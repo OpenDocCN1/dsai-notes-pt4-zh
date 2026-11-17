@@ -88,7 +88,6 @@ OK，话不多说，直接开始~
 
 关于正能量语录大家直接去抖音搜索就可以了，有很多，然后用豆包或者小程序提取出来，小程序直接搜“文案提取”就行了，一大堆。
 
-![](img/39e3fc1a07e2a68fae16f2d2e0189e47.png)
 
 ![](img/20cd75b1d2da5e16acf0f57ca8ee398c.png)
 
@@ -452,7 +451,6 @@ wenshao3@2925.com，
 
 最后我们来看看效果：
 
-![](img/9bbb85bdde013994928299a8aec4f127.png)
 
 [林黛玉-2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JHRAb3JERolbmhxRDBhcbrrbnEh)
 

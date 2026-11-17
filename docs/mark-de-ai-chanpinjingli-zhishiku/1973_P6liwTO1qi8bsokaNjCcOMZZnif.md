@@ -28,19 +28,16 @@
 
 +   《人人都是产品经理》
 
-![](img/05cd261afd95d613c69fd87ff70cf2e9.png)
 
 [人人都是产品经理-苏杰.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZR4kb5T1Mo0Muax5pnTcAt1AnEg)
 
 +   《项目管理知识体系指南（PMBOKGuide）》
 
-![](img/55c7bcb76f421651b2897d9acec7c6d5.png)
 
 [项目管理知识体系指南- PMI.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XJ8gbf5rwolGYBxCCK0cvNTcn66)
 
 +   《用户体验要素》
 
-![](img/1a378c06ca6850946ccf6c4056d1bb08.png)
 
 [用户体验要素.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jg06bgJ0ooMMoax3yQgcwRxwnhf)
 
@@ -54,7 +51,6 @@
 
 +   《交互设计之路》
 
-![](img/0295dda083d3db2c30906c2dd8ed8f2d.png)
 
 [交互设计之路.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GzIzbkW5yomxuOxcMmBcTkncnng)
 
@@ -130,7 +126,6 @@
 
 +   《大数据时代 》
 
-![](img/55f6999f9c8b7e94b4bec272a3fdc054.png)
 
 [大数据时代.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IVmTbdXHvor8T1x69JWcwWPwnCd)
 

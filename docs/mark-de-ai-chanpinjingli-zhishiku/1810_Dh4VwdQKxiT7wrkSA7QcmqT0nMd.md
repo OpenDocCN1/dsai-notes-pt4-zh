@@ -206,7 +206,6 @@ Locally Conditioned Eikonal Implicit Scene Completion from Sparse LiDAR
 
 ![](img/b127c355c024527d6bcd1758241ee23a.png)
 
-![](img/1d5c8494628ece60ced4a538429f95b6.png)
 
 ![](img/d38e0bf2271fcb6bebf9e9fb13fa7134.png)
 

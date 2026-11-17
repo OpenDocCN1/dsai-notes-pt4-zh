@@ -18,7 +18,6 @@
 
 ![](img/9c599f7927d229c73b6af0ab10319301.png)
 
-![](img/c7ee63dd0ea933787f0233c038efb983.png)
 
 [苹果演示_20250816_10023786.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZHWAbz6YfozSPUxCh3EcI9VGnAc)
 
@@ -152,9 +151,7 @@
 
 2、按照流程图让AI指导你一步一步编写指令。
 
-![](img/6cb968096496c60ad898bc3473dc1dd7.png)
 
-![](img/b1bf9c797fdcf1dffb44d53118031e20.png)
 
 ![](img/ef9521b214a5ebaa8798e7b90cc3c9b2.png)
 
@@ -170,13 +167,10 @@
 
 ![](img/0793c8b507cfced98203312b075a745f.png)
 
-![](img/3960ceb7eabda209556e6c2a42925255.png)
 
 2、按照流程图让AI指导你一步一步编写指令。
 
-![](img/1055b17b71c46e8e901f530988401b27.png)
 
-![](img/ca2f4a159a7766f6ccd8832485ad250d.png)
 
 ![](img/6850cdb0479153ba3c33f00f98525342.png)
 
@@ -190,11 +184,9 @@
 
 应用地址：https://www.coze.cn/s/lDcdBC8ynmc/
 
-![](img/4e82dc108e8c4e194ca5abf6588c8942.png)
 
 1、扣子创建应用，创建路径见下图。
 
-![](img/63e4075cad7197f7b644aadd1374eb63.png)
 
 2、搭建应用页面，拖现成的组件到页面里，然后美化下。
 
@@ -206,13 +198,10 @@
 
 4、搭建页面数据存储、操作交互需要的工作流，新增编辑删除刷新，每一个逻辑都要匹配对应的工作流才能让应用正常运转。
 
-![](img/70e1ff6a98f02317eb03784817f2e385.png)
 
 5、页面交互逻辑跟工作流绑定，完善每一步交互操作反馈。
 
-![](img/5339f63331ffcfa74be3c3b2650d8398.png)
 
-![](img/a64f23801aa015618043d31fc9609806.png)
 
 6、测试每一个逻辑，确保所有逻辑、交互反馈都正确。
 

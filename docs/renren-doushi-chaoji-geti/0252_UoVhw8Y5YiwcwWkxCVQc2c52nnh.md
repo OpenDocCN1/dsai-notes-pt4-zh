@@ -568,11 +568,8 @@ IP是都会改变。
 
 这样就可以访问里面的共享文件夹，复制粘贴里面的任意文件了。
 
-![](img/ad2a9c7eaa491bebfcda7baf1fbc17d6.png)
 
-![](img/18e57e2820812c14a87326ee5d91703b.png)
 
-![](img/823a7c346f5e660fbf7357b27a293560.png)
 
 ![](img/d40cf4b68a681299099f84ba68ce3c3d.png)
 

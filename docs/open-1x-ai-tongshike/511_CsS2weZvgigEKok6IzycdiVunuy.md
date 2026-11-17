@@ -48,7 +48,6 @@
 
 1.  而**输出**则是传递给其他神经元的信号。
 
-![](img/7e1a53af41e4eaed68e852ac419d8aca.png)
 
 ![](img/94fd370b121dd7c7b8fb257d712fb44d.png)
 

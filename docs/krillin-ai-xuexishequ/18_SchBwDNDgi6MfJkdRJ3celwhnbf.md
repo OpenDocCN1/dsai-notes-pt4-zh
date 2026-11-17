@@ -2,19 +2,15 @@
 
 > 来源：[https://kcn9ut4m7icc.feishu.cn/docx/Kv1ydysIHoFE7XxqQq5cXtyOnIb](https://kcn9ut4m7icc.feishu.cn/docx/Kv1ydysIHoFE7XxqQq5cXtyOnIb)
 
-![](img/b316b09321bfa4a9204007a58b60121f.png)
 
 [清华大学AI课01：DeepSeek从入门到精通.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EJgPbaxcAoW08Fx8EF0cySlNnFf)
 
-![](img/59e84913661ed70d484422f9af76c96b.png)
 
 [清华大学AI课02：DeepSeek赋能职场.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N4q7b1hFco1GhJxyZxjc367OnMb)
 
-![](img/6513944c61865a39c2d8e6698118acf0.png)
 
 [清华大学AI课03：普通人如何抓住 DeepSeek 红利.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ILn1bKxMqoFSbsxBq1UciFzqnRc)
 
-![](img/ce242f887886ce33682509606e46759b.png)
 
 [清华大学AI课04：DeepSeek+DeepResearch：让科研像聊天一样简单(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dcpzb1RuCoSEJ8xMEKfcADifnhd)
 

@@ -120,7 +120,6 @@ https://sketch.metademolab.com/
 
 上效果：
 
-![](img/df78eed0e623ea3bed2b2e329c63ca5c.png)
 
 ![](img/09bd7d2b08d8c35efd82859fe9063d9e.png)
 

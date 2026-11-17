@@ -52,9 +52,7 @@
 
 ![](img/b2197c7cb7b84cc9bdff8d4df0e3f11b.png)
 
-![](img/a980439616097623641a0f35bd189cc1.png)
 
-![](img/86a5798cb359e1bc4dd0330907ad7d9c.png)
 
 ![](img/27aac2d79faea07433d5af7a6cd1689d.png)
 
@@ -96,7 +94,6 @@
 
 [Un-AI上海3.15线下活动过程](https://je80mgsrbe.feishu.cn/docx/LE9MdOxmJoxPGnxY49Nc5PbBnnd?from=from_copylink)细的Un-AI上海交大工研院线下活动链接在此：
 
-![](img/350eb4d528d8eb91b70eb68ca7424483.png)
 
 ![](img/0958bc944e8411f628d8bdd03f842ae1.png)
 
@@ -120,7 +117,6 @@
 
 ## 三、PPT制作分享
 
-![](img/338cfdc13fa6c615867fce0015b3009e.png)
 
 [通俗语言分享大模型原理3.0.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YEYNbJv1GohJptxNc9RcqwUhnah)
 

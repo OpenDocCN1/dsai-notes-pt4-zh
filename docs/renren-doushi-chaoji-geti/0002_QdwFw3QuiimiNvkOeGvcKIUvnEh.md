@@ -304,7 +304,6 @@ AI 会读取本周所有相关内容，分析完成了什么、遇到了什么�
 
 点这里
 
-![](img/520e9486fd605457558710232f792c43.png)
 
 跟openclaw说我要连接飞书，复制这些发给他
 
@@ -444,7 +443,6 @@ AI 会读取本周所有相关内容，分析完成了什么、遇到了什么�
 
 （如果没有在频道这个栏目下面找到Feishu这个板块的，可以重新在终端/cursor去跑Openclaw Onboard，然后在channel那一栏里选择Feishu/Lark（飞书），在里面先Download from npm，然后把这两个凭证app id和app secret给填进去，之后一路回车就好了）
 
-![](img/a5c1a73e968fc8bc63b4dfeb20b5b79c.png)
 
 保存
 
@@ -454,23 +452,17 @@ AI 会读取本周所有相关内容，分析完成了什么、遇到了什么�
 
 1.  左侧菜单「事件与回调」
 
-![](img/fd56601efedab5ae74e1995b8cd1abd3.png)
 
-![](img/9b7bad269a5d457b3795299587a981d7.png)
 
-![](img/763ab2c391d1ca8874b9ed5d5d08b920.png)
 
 把所有message选上添加
 
-![](img/7d98b3d404f99185ed31d2901a4c71da.png)
 
 ### 6.版本管理
 
-![](img/71ad94ef32aaa75fcfabc66621d80aac.png)
 
 一定要填1.0.0
 
-![](img/5489c338c532d1c8ab21c394f8f79561.png)
 
 这里控制谁能用这个机器人
 

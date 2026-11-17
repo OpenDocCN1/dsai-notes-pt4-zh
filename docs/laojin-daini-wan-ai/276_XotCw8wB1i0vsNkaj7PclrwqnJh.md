@@ -80,7 +80,6 @@ Windsurf 的 Codeium Chat 和实时聊天功能不仅仅是回答问题，还可
 
 导入VS Code或新的都行，然后点击注册。
 
-![](img/dc3da195bb7e12d48c5c530c347395a9.png)
 
 ![](img/5aaa3ce655947c197430cbeaccfa284a.png)
 

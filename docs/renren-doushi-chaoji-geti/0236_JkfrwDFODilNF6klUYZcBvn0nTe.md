@@ -102,7 +102,6 @@ comfy node install bizyair
 1.  打开链接注册账户：https://cloud.siliconflow.cn/i/FDP8U9uZ（来来zonghe邀请链接，注册双方会送100万TOKEN的免费算力）
 注册后点击登录：https://account.siliconflow.cn/login
 
-![](img/adfed04a8c233282250f185493075703.png)
 
 1.  登录后点击API密钥，创建您的 API KEY（有100万TOKEN的免费算力）。
 
@@ -122,7 +121,6 @@ comfy node install bizyair
 
 1.  选择加载内置的现成工作流，左侧前两个都是工作流，一个是官方上传的，一个是用户上传的工作流。右侧可以选择适合的模型版本。我以图片放大工作流举例。
 
-![](img/a88ce28c50582587cc324aa17c00d85a.png)
 
 1.  点击缩略图，可以打开工作流，点击LOAD就是加载工作流，点击下面FILE的就是下载保存工作流。
 
@@ -168,7 +166,6 @@ JoyCaption 更容易使用，JoyCaption 2 更强大。
 
 利用 FLUX 和放大模型对图片进行放大。通过调整参数，还可以实现修复、高清等效果。
 
-![](img/0c759451a818b005e51fa828c2d1aa38.png)
 
 ### 细节增强工作流
 

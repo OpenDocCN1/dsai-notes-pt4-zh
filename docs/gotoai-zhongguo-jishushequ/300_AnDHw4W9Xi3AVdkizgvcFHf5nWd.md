@@ -10,9 +10,7 @@ https://llmdb.com/providers
 
 https://llmdb.com/providers
 
-![](img/af7417c546619be533760bb54240b84f.png)
 
-![](img/98a6e90d42617495dffcc4bd07878cf0.png)
 
 # 2.ModelScope 魔塔中文社区
 
@@ -24,7 +22,6 @@ https://www.modelscope.cn/models
 
 https://llm-models.org/
 
-![](img/21316c1cae1b36a665c6c649df0427bc.png)
 
 # 4.All Large Language Models
 

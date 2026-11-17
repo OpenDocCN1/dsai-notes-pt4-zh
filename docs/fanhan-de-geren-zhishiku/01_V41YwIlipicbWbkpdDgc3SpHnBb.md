@@ -33,7 +33,6 @@ pokémon pikachu enamel pin, in the style of light yellow and brown, mischievous
 ![](img/bd569cd49fd9353858c9cb38440e6c1e.png)
 
 
-![](img/035200afd5a9680bb37edf92ffe4fc74.png)
 
 ---
 
@@ -68,7 +67,6 @@ a person with an pokemon pikachu keychain and key lock, in the style of dao tron
 Pikachu elements, plastic cups, cute --ar 2:3
 ```
 
-![](img/13a8fd327f3c1a8191a257eb3701458d.png)
 
 
 ![](img/71cb80d3036bc2caf7ee6e460a40084e.png)

@@ -8,7 +8,6 @@
 
 ![](img/5ac92a76d1f7f3ec88a01229e05cbdcf.png)
 
-![](img/d1a3dd06d79b1febb36c544af10ebfbd.png)
 
 ![](img/b69682faea9f86530502e351172ac3bb.png)
 
@@ -16,9 +15,7 @@
 
 ![](img/cbd3d1a99ce5531eb965d5347a4509fe.png)
 
-![](img/62192f17b0824f0ebbd9baa2131c5abf.png)
 
-![](img/c5624368103307e22e280102ba26920a.png)
 
 ![](img/defebfac641978e4dc9df14ab71371fb.png)
 
@@ -78,7 +75,6 @@ Tips：这时候我们就需要一个有摄影/剪辑/后期经验的导演来�
 
 ![](img/5acff39bcc6c1f83da2e64e84eb78eff.png)
 
-![](img/5614f3f1b1281be754509ab082de85b7.png)
 
 ![](img/656a535112720e44601ef3f07d55b517.png)
 
@@ -150,11 +146,8 @@ gmasterpiece, best quality,artist logo,3D,steampunk, machine detail,cinematic te
 
 ## 案例图展示
 
-![](img/911f70eda61ec46c79762213d2a5d5e8.png)
 
-![](img/2de2622b2e7ba4ecf1df84f87399db12.png)
 
-![](img/4bf761d70ab2fc3745c7d144d7ab099e.png)
 
 ![](img/bfb2ee9a2e63c39a83718faf0919b236.png)
 
@@ -248,7 +241,6 @@ gmasterpiece, best quality,artist logo,3D,steampunk, machine detail,cinematic te
 
 ## 生成图片
 
-![](img/8aa0d007e8f912079c3970feffcf8b3f.png)
 
 ![](img/5f11cd16965f62b3dde93dd11a3b961d.png)
 

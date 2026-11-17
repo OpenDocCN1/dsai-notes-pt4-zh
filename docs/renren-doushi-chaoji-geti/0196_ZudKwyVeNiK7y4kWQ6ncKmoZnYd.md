@@ -78,13 +78,9 @@ Starla 是一个星座app，融合星座解读与 AI 聊天体验，主打一个
 
 看看tiktok的内容时间线，**6月4日最早**，再往前是2023年的
 
-![](img/aac0881a340f9a5cbbee527e707fa34e.png)
 
-![](img/b0d904f0389126fd5052d87493152956.png)
 
-![](img/a8a8703d3468f24c06f7454bd3041282.png)
 
-![](img/65419c5213f3f107437836908cb1e7da.png)
 
 当然 astra肯定也是看到了这个热度，开始跟了！
 
@@ -94,7 +90,6 @@ Starla 是一个星座app，融合星座解读与 AI 聊天体验，主打一个
 
 ![](img/8960f940886c6be584fff875472548e1.png)
 
-![](img/8adaebfc9340e6add09e5abaf8b21fa1.png)
 
 ![](img/c4152d6243deb9c5f3e6b931286f3480.png)
 

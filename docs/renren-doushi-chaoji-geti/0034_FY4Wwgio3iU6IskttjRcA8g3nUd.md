@@ -16,7 +16,6 @@ hello，大家好，我是逸尘，今天给大家分享一下X的冷启动和�
 
 ![](img/5a4c92fd25b495458b943570cede46f8.png)
 
-![](img/c4bbfb260d84ffc67e031c091a169697.png)
 
 ![](img/ab7b1d829d4f21fd173f831349c61431.png)
 

@@ -100,13 +100,11 @@ https://www.capcut.cn/
 
 这里我就借用一段坤坤的视频作为示范啦
 
-![](img/60274021e7376b1cc0ccdbaef51be729.png)
 
 然后把我们需要进行视频转换的片段全部切成4秒内的小片段
 
 我这里只切成了2秒左右的片段
 
-![](img/b250d4eb115b2a6b3c7b56def6852937.png)
 
 接下来我们就要把这些小片段全部分别保存下来
 
@@ -148,7 +146,6 @@ https://runwayml.com/
 
 ![](img/27d942f5f4e198e043afc90ae4536edb.png)
 
-![](img/dc67ec9a5fc4d64f5a6129bf0be5fc45.png)
 
 按照网站上面的提示输入用户名和密码
 
@@ -174,7 +171,6 @@ https://runwayml.com/
 
 导入刚刚保存的视频片段，右边可以进行照片风格的设置
 
-![](img/2601fa2937c617257c864693f8e1543c.png)
 
 我们先看到图片风格设置
 
@@ -182,7 +178,6 @@ https://runwayml.com/
 
 还可以点击“Upload”自己上传照片
 
-![](img/7b1c88d18bf0870b962db04937c596f0.png)
 
 我这里上传了一张奥特曼的照片，点击选用
 
@@ -210,7 +205,6 @@ https://runwayml.com/
 
 把刚刚保存的视频导入到剪映
 
-![](img/e098b62e0f00137384e8c1faa0221730.png)
 
 因为runway生成出来的视频会比原来的视频时长稍微长了一点
 
@@ -218,11 +212,9 @@ https://runwayml.com/
 
 一般加速到1.5倍就可以了
 
-![](img/f0a0b09827df10094387cd07533e90c0.png)
 
 然后把这三段视频缩短按顺序排，这样一个片段就剪好啦！
 
-![](img/4c814df293adeb209d6b363cc8ff5daa.png)
 
 接下来把其他片段都这样剪辑好，然后加上BGM
 
@@ -254,7 +246,6 @@ https://smailpro.com/advanced
 
 点击链接进入网站，然后点击加号新建一个邮箱
 
-![](img/5144f8403ce4767bebe21a8c098bbed0.png)
 
 然后在弹出来的文本框里面随便输入一些数字或者字母
 
@@ -262,7 +253,6 @@ https://smailpro.com/advanced
 
 随便点一个，然后点击右边的绿色按钮
 
-![](img/408a20890ac1bcd4737ae44188e87211.png)
 
 这里就会出现刚刚选择的邮箱
 
@@ -270,7 +260,6 @@ https://smailpro.com/advanced
 
 这时候就可以去注册新的runway账号
 
-![](img/284e7198f84a110a364c0cf0cef11154.png)
 
 等需要在邮箱接受验证码的时候，回到这个网站
 
@@ -278,7 +267,6 @@ https://smailpro.com/advanced
 
 就会看到新的邮件
 
-![](img/cd6e0874728c487781e0990155bd41d5.png)
 
 点击邮件就可以看到验证码啦
 

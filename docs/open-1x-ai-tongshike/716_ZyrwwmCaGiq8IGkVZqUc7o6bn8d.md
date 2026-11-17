@@ -94,7 +94,6 @@ No**tebookLM **是** Google 推出的一款智**能笔**记助手****，它能�
 
 +   时间线
 
-![](img/37e1ccdf8b8327c749f4df54215bb6a2.png)
 
 ![](img/2dd97546d8c51b1bbfa713db4c9faf44.png)
 

@@ -150,7 +150,6 @@ Flat geometric vector graphic logo of curved wave shape, blue green gradient ,si
 
 最后生成的结果是这样的，我很喜欢花的第三个，浪的第二个：
 
-![](img/39416d85578d6e5aafbff1f9d2193c01.png)
 
 ## Mascot Logo
 

@@ -140,7 +140,6 @@ style cute
 
 ![](img/4adf1d3f4da1746eacfaade87f78a336.png)
 
-![](img/d4601938d634b9b43520db2bf0aff659.png)
 
 ![](img/c49636eb067288213f5809830aea16d8.png)
 
@@ -156,9 +155,7 @@ style cute
 
 字体大多是方方正正的，很死板的样子，没法换角度和放到喜欢的位置。
 
-![](img/951edca878ac127b12b08eaa94dc9189.png)
 
-![](img/bab5608662a1bd8d4df0054df786a90d.png)
 
 ## （二）避坑填坑
 

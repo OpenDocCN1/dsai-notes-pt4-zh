@@ -30,7 +30,6 @@ Prompt
 
 > Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afternoon light with wispy clouds and a sun high in the distance creates a warm glow, the low camera view is stunning capturing the large furry mammal with beautiful photography, depth of field.
 
-![](img/9ab5f95e50f9a9cde47cec1067d62eb1.png)
 
 [wooly-mammoth.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X1shbD2aMo8OZVxK3m1cREQ7nUd)
 
@@ -60,7 +59,6 @@ Prompt:
 
 > A corgi vlogging itself in tropical Maui.
 
-![](img/b09f48de1cae2b2af33d997aca0bb292.png)
 
 [vlogger-corgi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CD4rbivYroo3AVxTpeqcG1fhnEb)
 
@@ -70,7 +68,6 @@ Prompt:
 
 > A litter of golden retriever puppies playing in the snow. Their heads pop out of the snow, covered in.
 
-![](img/d89c0a2b79b4386def44aaab24b164b6.png)
 
 [snow-dogs.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HXoabEmtxoDc6Sx2AfFcsm1rnve)
 
@@ -130,7 +127,6 @@ Prompt:
 
 > Photorealistic closeup video of two pirate ships battling each other as they sail inside a cup of coffee.
 
-![](img/eb8214d84cc12c801fcccc516d1b3c04.png)
 
 [ships-in-coffee.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ukz7bvan2oW0g8xil8VccyLinfc)
 
@@ -150,7 +146,6 @@ Prompt:
 
 > Historical footage of California during the gold rush.
 
-![](img/1ce3915c4548259da04392557c3865e2.png)
 
 [gold-rush.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RUC4bSm6woXMXOxUyQ8cYA8On5g)
 
@@ -160,7 +155,6 @@ Prompt:
 
 > A close up view of a glass sphere that has a zen garden within it. There is a small dwarf in the sphere who is raking the zen garden and creating patterns in the sand.
 
-![](img/42426003e33085f426eb3a95ac299ae8.png)
 
 [zen-garden-gnome.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BwrZbyH5kozL6Nxyu7YcUoUbnhh)
 
@@ -190,7 +184,6 @@ Prompt:
 
 > A beautiful homemade video showing the people of Lagos, Nigeria in the year 2056. Shot with a mobile phone camera.
 
-![](img/36a9f29ebccd5c631b8bc697e9161f0a.png)
 
 [lagos.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Br8XbVVxVo4NX5xwO81cA6VYncb)
 
@@ -370,7 +363,6 @@ Prompt:
 
 > New York City submerged like Atlantis. Fish, whales, sea turtles and sharks swim through the streets of New York.Prompt: New York City submerged like Atlantis. Fish, whales, sea turtles and sharks swim through the streets of New York.
 
-![](img/7bfa2cbe3ac3072b3019c637269ad7af.png)
 
 [aquarium-nyc.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EEIDb8UbBolqy8xcNqcczVEAnTf)
 
@@ -460,7 +452,6 @@ Prompt:
 
 > The camera directly faces colorful buildings in Burano Italy. An adorable dalmation looks through a window on a building on the ground floor. Many people are walking and cycling along the canal streets in front of the buildings.
 
-![](img/1adaf30111567092a639d2f9a5ec9160.png)
 
 [italian-pup (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ERg2bkhFzogBi1xjp7CckrlDnmc)
 
@@ -550,7 +541,6 @@ Prompt:
 
 > The Glenfinnan Viaduct is a historic railway bridge in Scotland, UK, that crosses over the west highland line between the towns of Mallaig and Fort William. It is a stunning sight as a steam train leaves the bridge, traveling over the arch-covered viaduct. The landscape is dotted with lush greenery and rocky mountains, creating a picturesque backdrop for the train journey. The sky is blue and the sun is shining, making for a beautiful day to explore this majestic spot.
 
-![](img/666facea72a27e9acd93f0dd1f148c3a.png)
 
 [photoreal-train.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IgS9bcSRxoLJm0xS1ypcb24mng9)
 
@@ -558,7 +548,6 @@ Prompt:
 
 2月21日下午最新sora狗片，由OpenAI Sora工作人员发布： 1、“一群萨摩耶小狗学习成为厨师的电影预告片”2、“一群爱冒险的小狗探索天空废墟的电影预告片”
 
-![](img/b5266417b5970a88638892f923869c31.png)
 
 [59153722.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IkBMbngXhoKs4WxPUTmcrm9en6G)
 

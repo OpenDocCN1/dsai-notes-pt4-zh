@@ -28,7 +28,6 @@ OpenClaw最早叫ClawdBot，是奥地利开发者Peter Steinberger一个人的"p
 
 去年11月开源，没想到直接爆了——209K星，38K Fork，增长速度是GitHub历史上最快的开源项目之一。
 
-![](img/1e4353fb571a6e833246fde9b7f8519d.png)
 
 然后Anthropic（Claude的母公司）联系了Steinberger，说"Clawd"跟"Claude"太像了，存在商标侵权。
 
@@ -50,7 +49,6 @@ Sam Altman拿出了Cerebras合作的算力资源（Steinberger称之为"Thor's h
 
 **但老金我必须说清楚一**个关键细节： 这不是"收购"，是 acqui-hire——收人不收项目。
 
-![](img/ddd03b8a5e2f1b3532f846bd9a1eb495.png)
 
 Steinberger加入OpenAI，但OpenClaw转入独立基金会，MIT开源协议不变。
 
@@ -181,7 +179,6 @@ author（作者）
 
 三步搞定。 从注册到发布到继承，整个流程已经跑通了。
 
-![](img/2fa2adef1dfe6da380c868b56580185a.png)
 
 官网甚至有实时仪表盘，能看到全网胶囊被复用了多少次、省了多少token、搜索命中率多少。
 

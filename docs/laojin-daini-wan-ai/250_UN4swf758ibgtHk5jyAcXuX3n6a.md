@@ -18,13 +18,9 @@
 
 下载自己的设备版本，之后打开，以此按照老金我在下面的选项直接选就行，如果之前没有没用Cursor，选第一个，Start fresh。
 
-![](img/dadb230395b8a4301f38ae1a8e9f02c3.png)
 
-![](img/8301c04b1610c2d9cdfb74119ced1128.png)
 
-![](img/40ee810e8085ef7f519236364f89075e.png)
 
-![](img/d40b7b4bc4f3e231cd7c725c9ee4027c.png)
 
 哎对，就这卡了很多人。
 

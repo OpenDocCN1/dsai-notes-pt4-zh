@@ -30,11 +30,9 @@
 
 > **data**
 
-![](img/1bc08f5f72b4d9321859ea5116e90ae1.png)
 
 [cleaned_data.csv](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H7ObbFDpEoxMyrxNoXxcnbqHnRb)
 
-![](img/546be298bec600b9665feb3c1fd0708c.png)
 
 [Energy_and_Water_Data_Disclosure_for_Local_Law_84_2017__Data_for_Calendar_Year_2016_.csv](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EblRbJ06HoeSSWxsT8Pc2YFynSb)
 
@@ -76,15 +74,12 @@
 
 > **images**
 
-![](img/21804eb43a4e57e29ffb8847110041a3.png)
 
 [tree_single_small.dot](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C3inbMEBaotr4NxzFgmcWHRunEf)
 
-![](img/f792a5d4c9393478d0d378591ec0b5dd.png)
 
 [tree_single.dot](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JXrkbOWnEok05bxuAxNcgVpHnlh)
 
-![](img/a58011c30b97cb121ea434b0e62fce39.png)
 
 [tree_small.dot](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WndRbTjD5omurRxb9lJcDxQrn5d)
 
@@ -108,7 +103,6 @@
 
 # 隐马尔科夫模型
 
-![](img/6a32d8a4ac501e4dce6450903ce30465.png)
 
 [HMM.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KfSMbOTO9oac6gxEh1Fc2vsanqg)
 

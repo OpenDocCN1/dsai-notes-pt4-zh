@@ -40,7 +40,6 @@ Docker Desktop安装完成打开后的界面如下：
 
 ![](img/4e620db1b1704f566486763c4fe3908c.png)
 
-![](img/7af90bd075715b35ed06c178bb768658.png)
 
 ### Linux服务器
 

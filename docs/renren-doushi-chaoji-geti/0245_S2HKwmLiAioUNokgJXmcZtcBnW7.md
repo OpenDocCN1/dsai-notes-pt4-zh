@@ -104,7 +104,6 @@
 
 然后开通【云文档】所有权限和【多维表格】所有权限：
 
-![](img/336eee5abddd5e3efda0b5aa69223491.png)
 
 ![](img/17ec0cebaf2d1c1690935f8d1334d2bd.png)
 

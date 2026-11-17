@@ -157,7 +157,6 @@ npm install -g @amap/amap-maps-mcp-server
 
 1.  那就果断干！把 UI 设计需求简单描述给 Trae ，把工作流简单描述给 Trae ，它帮我生成“**页面**** ****UI**** ****设计**” “**长辈友好工作流**”的 Markdown 文档，记录了一些**提示词的细节**（我附在后面，可直接复制）：
 
-![](img/d8662fe8d0df071527bd922dbd9b68f9.png)
 
 ```
 根据上面内容生成一个 HTML 动态网页（长辈友好的网页），以下为长辈友好的网页设计要求：
@@ -230,7 +229,6 @@ npm install -g @amap/amap-maps-mcp-server
 
 1.  然后基于它写的工作流，直接拖到对话框里面，调用 MCP ，进行提问：
 
-![](img/24ed90c5a83461bb703ee4701a7bcd7f.png)
 
 ![](img/30b5565dbc68098914397de62364a602.png)
 
@@ -250,7 +248,6 @@ npm install -g @amap/amap-maps-mcp-server
 
 1.  此外，还可以**分享到手机**，更便于长辈和小孩使用手机进行交互：
 
-![](img/3363756508e041d3c726801278c0c7cc.png)
 
 ![](img/b1f7f843296cc897eacd839f3fd17d39.png)
 
@@ -266,7 +263,6 @@ npm install -g @amap/amap-maps-mcp-server
 
 1.  高德 MCP 能力获取**每个景点的信息**
 
-![](img/5feb85882f00fb6dde2d61b926c00785.png)
 
 1.  工具调用结束，生成**可视化网页**
 

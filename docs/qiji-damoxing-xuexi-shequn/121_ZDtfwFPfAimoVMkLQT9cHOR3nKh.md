@@ -192,7 +192,6 @@ TTFT 已经过时了，是时候讨论首次音频时间 (TTFA) 了！
 
 我们正在将本地、实时语音生成带到所有开源 LLMs。我们不是使用分离的、拼凑的模块，而是构建一个单一的引擎，以大约 300 毫秒的首次音频时间同时提供文本和音频。 🧵
 
-![](img/415682f02dbec3d1665de2283063fd28.png)
 
 [ssstwitter.com_1723026529793.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PeLVbfv0FoPg5cxW6j8cdBL3nMd)
 

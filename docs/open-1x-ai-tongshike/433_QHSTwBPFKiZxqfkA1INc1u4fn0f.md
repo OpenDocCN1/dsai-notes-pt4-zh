@@ -34,7 +34,6 @@ GUI 是 "Graphical User Interface"（图形用户界面）的缩写。简单来�
 
 > [本小节内容来](https://datawhaler.feishu.cn/wiki/QHSTwBPFKiZxqfkA1INc1u4fn0f#part-P5ufdxyIEo1U6ixULfGcQA8bnSf)自魔搭社区，具体内容可点击查看：魔搭官方教程。
 
-![](img/67485d7e8bdba4e4bd95541c9ee64a2b.png)
 
 ![](img/bf4c77b55e1f7a991c8dab9356abcaed.png)
 

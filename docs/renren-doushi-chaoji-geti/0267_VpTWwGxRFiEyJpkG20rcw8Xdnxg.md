@@ -151,7 +151,6 @@
 
 9键/26键切图范围标注图：
 
-![](img/c48d724fa7796ba1883941010fcd8675.png)
 
 ![](img/d3404fc9c45f4b977377eebbe0b3f5e0.png)
 
@@ -205,7 +204,6 @@ b羊驼
 
 搜狗输入法编辑器下载地址：https://pinyin.sogou.com/skins/design.html?f=idx_makeskin?f=idx_rmzt
 
-![](img/68a55f84be4ce0ccedff9d91671c5c4e.png)
 
 ![](img/7993c6dd83ad39e4d591ad68eebcab39.png)
 

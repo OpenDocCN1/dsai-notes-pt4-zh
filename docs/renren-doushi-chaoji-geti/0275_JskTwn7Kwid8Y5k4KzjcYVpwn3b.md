@@ -198,9 +198,7 @@
 ![](img/3fcd36243521fcb3e35e1d01eefdbea2.png)
 
 
-![](img/62a6c9e1c23af2bf8d4f69c43737613b.png)
 
-![](img/ce17017c3ff562abd611f7ec8cc38307.png)
 
 
 ![](img/717a2de9e647c19b4ea681053a154ece.png)

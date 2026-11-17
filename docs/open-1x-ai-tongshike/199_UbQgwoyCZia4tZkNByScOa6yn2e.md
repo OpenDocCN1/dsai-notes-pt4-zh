@@ -32,7 +32,6 @@
 
 ![](img/c9be21bb85353b56607896c9ef37a281.png)
 
-![](img/340b3d2b58921c47340e39c059c33b4d.png)
 
 ![](img/1ed8f6d2323343e77a376585561cf5bf.png)
 
@@ -194,7 +193,6 @@ python3 run.py
 
 > 点击 “local URL” 后的链接即可开始聊天
 
-![](img/b1925f193f55bc92c1b0a2bccb351b72.png)
 
 ![](img/f0452cbf6aa7cf4a0ad6de0038fa5a1b.png)
 

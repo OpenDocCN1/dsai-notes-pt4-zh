@@ -2,7 +2,6 @@
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/D7XLdXqWBoLQWNxUlzxcH0GPnNb](https://gotoaiworld.feishu.cn/docx/D7XLdXqWBoLQWNxUlzxcH0GPnNb)
 
-![](img/fa85348a68817da482b512eb95703ee8.png)
 
 ![](img/6452e090ff221905846a2744656472fc.png)
 
@@ -36,7 +35,6 @@ https://oneask.gotoai.world/hbgydx
 
 5.**“云启智能，学以致‘智’”**依托云端技术，平台打破时间与空间限制，让优质 AI 教育触手可及。海量课程资源与智能工具云端共享，师生随时随地开启学习。更重要的是，平台倡导 “学以致‘智’”—— 不仅传授知识，更注重培养 AI 思维与实践能力，让每一位用户都能将所学转化为智慧，在智能时代游刃有余。
 
-![](img/6ec51517b63556e48aef57f70acd7c0f.png)
 
 人工智能通识+专业课程，线上培训+线下实操
 
@@ -120,9 +118,7 @@ AI 工具与专业课程教学结合，深入到教学内容和专业业务场�
 
 通过智能匹配供需、全流程服务及校企合作，精准对接学生技能与企业需求，缩短求职周期、提升就业质量，助力高校优化培养、企业降本增效，推动 AI 人才生态良性发展。
 
-![](img/82db94b4ff87adf097de973b48d86671.png)
 
-![](img/5e73606d63848a20a305b2e5cf8d68af.png)
 
 # 八、**AI 创业加速器**
 

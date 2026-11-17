@@ -28,15 +28,12 @@ PPT 轮播 + 角色配音 + 文案快节奏
 
 贴几个行业对标：
 
-![](img/8491f9c95716891077b4c07017bf4389.png)
 
 [The Ants Stole Ronaldo s Cookies .mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O4ctbl3YnoTyzVxrlVycRVu8nme)
 
-![](img/c9f56ec0208f134780305227308cab00.png)
 
 [Ronaldo Coco Agua Envenenada.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IYjybdVMIoitXcxFnrBc22WCnqc)
 
-![](img/ad7bb3609a8617203cbaf61378b1792c.png)
 
 [Why Did Ronaldo Spray The Water Gun Into His Own Mouth aiart ronaldo cr7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JYdgb6H7SoasLLxODHzcZjTTn88)
 
@@ -44,11 +41,9 @@ PPT 轮播 + 角色配音 + 文案快节奏
 
 [Neymar Cant Escape the Pencil Flood ️.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WC2eb9aAnoeGOZxXz7hc5t4SnJC)
 
-![](img/a685bda665a27ba1d1d51614c826b0ca.png)
 
 [Ronaldo Teeth Grew Too Much .mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A785bWhtIoO3p8xbNyHcwaten1E)
 
-![](img/8e9562a2ef60a4646c918d21ea55f901.png)
 
 [Evil Sonic Straws Challenge Messi vs Ronaldo (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EGYObBGZEovtpQxf62acE9Bunlf)
 
@@ -706,7 +701,6 @@ You: I can&#x27;t use it.
 
 1.  **处理图片背景填充，因为生成的图片是 1:1 的，**上下是有黑色背景，为了美观填充整个画面。
 
-![](img/4f2868bbc461f89c6c16b8d58621ad3f.png)
 
 1.  **添加震动特效，调整想要的参数。**
 
@@ -760,7 +754,6 @@ You: I can&#x27;t use it.
 
 > 以下截图就是脚本直出的**“粗剪版本”。**
 
-![](img/a18cc679823b469db2ac1a19f71ccf50.png)
 
 之后我会在 CapCut 里再做这些人工微调：
 
@@ -774,7 +767,6 @@ You: I can&#x27;t use it.
 
 ![](img/a058472ad649422b3fb043d4d9b6e67e.png)
 
-![](img/39279a6e454a219d97b3735aff09b1b9.png)
 
 [抽烟粗剪版本.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LzxkbYndRo4V3Fx48U3co3uQnIc)
 

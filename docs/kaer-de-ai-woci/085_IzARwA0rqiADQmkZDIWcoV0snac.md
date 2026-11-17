@@ -146,7 +146,6 @@
 
 > 创建一个 3D HTML 山脉场景，包含悬崖、河流和昼夜光照变化。支持拖动和缩放、动画过渡、真实感渐变色，并可切换等高线显示
 
-![](img/dd1b6ddb633d3435d9e37dc3b3d6ba16.png)
 
 [shanmai.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ECLEbgwqhoebaJxeNhZc3jBYn0b)
 

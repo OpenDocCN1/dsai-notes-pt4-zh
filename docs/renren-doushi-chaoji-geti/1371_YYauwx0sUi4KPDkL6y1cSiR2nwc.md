@@ -2,7 +2,6 @@
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/YbIrdLBMfovVzexwPfHcyOpmneb](https://xuqiwei1986.feishu.cn/docx/YbIrdLBMfovVzexwPfHcyOpmneb)
 
-![](img/ffc52fb511afdb8fb33e1f7a97aaff9a.png)
 
 ![](img/1359d9b1a1597f8086247cf4c4adf586.png)
 

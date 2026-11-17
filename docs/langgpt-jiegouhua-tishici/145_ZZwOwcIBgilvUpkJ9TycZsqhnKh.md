@@ -278,19 +278,16 @@ AgentGPT撰写的引言部分简要介绍了大型语言模型的概念和重要
 
 具备完整数据的产品合集：
 
-![](img/6a983966c6d160e37419b1386618b93b.png)
 
 [matched.csv](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OrJFb4fZAoI8RyxwVtEc1IuNnRb)
 
 156 个可以搜集到产品数据的产品数据集：
 
-![](img/a1ba64588ae52c3175c537b01c4116c2.png)
 
 [master.csv](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GS5QbSHHaoPS5wxf52pcKsyPnYc)
 
 各个因素的关联性分析数据集（对应上文中的关联性热度图）：
 
-![](img/a3608c05ce744c6d6bf1b45f0b84fd7b.png)
 
 [matched_corr.csv](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UDoybsg0wo5X3hx2SPecScolnag)
 

@@ -8,7 +8,6 @@ Date: 2024/04/06
 
 #月度总结 #个人成长 #Life Blog
 
-![](img/2a8fd11898e4456721c84d466325f85d.png)
 
 > Steve Jobs: Once you learn that, you'll never be the same again.
 

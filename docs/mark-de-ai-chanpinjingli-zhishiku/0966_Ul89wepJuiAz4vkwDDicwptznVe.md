@@ -195,7 +195,6 @@ a screenshot from gta 6 with Jason walking in leonida keys
 
 就这一句。出来的画面带游戏 UI、光影、天气，看起来像官方泄露图。想换场景就改地点和动作：driving at night in Port Gellhorn、near the beach with Lucia。
 
-![](img/0e4fabb94a8de39cf449959a37402c47.png)
 
 或者换成《流浪地球3》的电影剧照：
 

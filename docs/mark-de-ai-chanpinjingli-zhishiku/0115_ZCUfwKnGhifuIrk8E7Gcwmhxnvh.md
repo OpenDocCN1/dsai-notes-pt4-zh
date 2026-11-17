@@ -56,11 +56,9 @@
 
 [分类算法-朴素贝叶斯](https://qqs7y1hozd1.feishu.cn/wiki/S75IwHjz3im8U6ksBFtc3eL4nfc)
 
-![](img/47e29128109d83fc584596c24bb847a4.png)
 
 [分类算法-随机森林.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WA3vbTkEkoEzrYxTlgXcEBmmncd)
 
-![](img/21586dd2ade09b8946035c7c7f77b35c.png)
 
 [分类算法-支持向量机.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NCsubLl6Uo5glbxgvPecyqWJnvh)
 
@@ -122,11 +120,9 @@
 
 [概率分布-指数分布](https://qqs7y1hozd1.feishu.cn/wiki/CZyUwjkmiiOIqck5X8Cc1OlOngc)
 
-![](img/5f5ebae298e46276dc205a0c2112e814.png)
 
 [概率分布-泊松分布.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PIfPbkCqLoEIydxH0lBcxGK9nub)
 
-![](img/e97bc60046bb6b5fdbfacd88a6c0e509.png)
 
 [概率分布-正态分布.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GRkGbsn1yokYMvxSr5EcQiJUnoc)
 
@@ -180,11 +176,9 @@
 
 [优化算法-网格搜索](https://qqs7y1hozd1.feishu.cn/wiki/TgD5w3WQriOc2hkkUX2cOMohnDY)
 
-![](img/fccbb623be1aceeff9da24c30c7784a7.png)
 
 [优化算法-批量梯度下降法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NTKFbnaGwoRgQ9xaJuacgSMynXe)
 
-![](img/9762102584faf37529a4b87bd6f34c7f.png)
 
 [优化算法-随机梯度下降法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LmHmbeVFGo2pF6xkLVQcKAk1nVe)
 
@@ -242,11 +236,9 @@
 
 [数据预处理方法-特征选择](https://qqs7y1hozd1.feishu.cn/wiki/CzLlw1T97iI2vAkm5DNcfr3Hn0b)
 
-![](img/6d5d52cdd43d03dd430da9edf9d872c8.png)
 
 [数据预处理方法-特征缩放.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FWiwb6Y0WocwRdxzDqGcstrpnJe)
 
-![](img/3534c3ee1f58b7a8b058e95c18067a1d.png)
 
 [数据预处理方法-特征选择.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H72fbz5qboCRhSxQpijcUoKBnKb)
 
@@ -298,11 +290,9 @@
 
 [机器学习模型评估方法-准确率](https://qqs7y1hozd1.feishu.cn/wiki/ZHkPwRgsFiwN6IkG2Pbc1FGLnYb)
 
-![](img/1d35eb3591761db933e69653c9b61491.png)
 
 [机器学习模型评估方法-均方误差.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TaN5b3o57o4SFPxvs1GcmWA6nQe)
 
-![](img/08a89ecd3caaac4cba9d66a6a665da51.png)
 
 [机器学习模型评估方法-召回率.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OXzkbSzyko9GbzxeTj2cWIV9nac)
 
@@ -336,7 +326,6 @@
 
 [神经网络-自编码器](https://qqs7y1hozd1.feishu.cn/wiki/IttIwCev0iGCv0k6RLLckPURnuh)
 
-![](img/041479db035abfdef795cb71247d2176.png)
 
 [13-13神经网络-注意力机制.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xb8ubEzeVoErgMxR245cBiaYncf)
 

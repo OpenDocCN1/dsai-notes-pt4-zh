@@ -58,7 +58,6 @@ AI 生成的规则让你更快地让 AI “懂你”的项目，后续的编码�
 
 细节： 这让 Cursor 的理解能力从纯文本扩展到了视觉层面，交互更丰富。
 
-![](img/d122c9ea088514e74fee4c939d266cbc.png)
 
 ## **三**、 精准操控：Agent 终端命令可编辑/跳过 (Improved Agent Terminal Control)
 

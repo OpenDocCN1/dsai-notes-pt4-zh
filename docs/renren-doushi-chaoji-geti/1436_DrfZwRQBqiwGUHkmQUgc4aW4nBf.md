@@ -294,7 +294,6 @@ https://openai.com/blog/new-model
 
 ## 现场照片
 
-![](img/f623056b489bcdcb63554bb3a4528ecc.png)
 
 ![](img/ce6fce7c26b6576a2dfc6855fe31573f.png)
 

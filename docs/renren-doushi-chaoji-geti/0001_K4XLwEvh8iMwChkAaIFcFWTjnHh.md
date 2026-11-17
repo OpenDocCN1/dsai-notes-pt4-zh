@@ -444,7 +444,6 @@ AI会自动：
 
 点这里
 
-![](img/e12e729a58393bbb9f4d5eb4aed025bf.png)
 
 跟openclaw说我要连接飞书，复制这些发给他
 
@@ -584,7 +583,6 @@ AI会自动：
 
 （如果没有在频道这个栏目下面找到Feishu这个板块的，可以重新在终端/cursor去跑Openclaw Onboard，然后在channel那一栏里选择Feishu/Lark（飞书），在里面先Download from npm，然后把这两个凭证app id和app secret给填进去，之后一路回车就好了）
 
-![](img/10a62e88ade0d71bd3888c6281dd4da2.png)
 
 保存
 
@@ -594,23 +592,17 @@ AI会自动：
 
 1.  左侧菜单「事件与回调」
 
-![](img/46339a5b0fdd156df008df071de7e193.png)
 
-![](img/20a662ded258f138ada50b120a9040f3.png)
 
-![](img/3b9324e0796e803bdaeb3b199288b5b5.png)
 
 把所有message选上添加
 
-![](img/21419e66dc65212df1b89c454ffb1633.png)
 
 ### 6.版本管理
 
-![](img/082c30fb8c14d2a1579334d6e18cf3ad.png)
 
 一定要填1.0.0
 
-![](img/3bf4de767757a426ff1a8de441c5c87f.png)
 
 这里控制谁能用这个机器人
 

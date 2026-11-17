@@ -236,7 +236,6 @@ test[[&#x27;uuid&#x27;, &#x27;Keywords&#x27;, &#x27;label&#x27;]].to_csv(&#x27;s
 
 在提交结果处提交，分别提交 submit_task1.csv 文件和提交 submit_task2.csv 文件，在排名结果页查看自己的成绩排名。完整baseline运行后a榜分数在0.97655左右
 
-![](img/99f966d4c55b6376f12d2168c31b1e3c.png)
 
 # **进阶技巧 **
 
@@ -562,7 +561,6 @@ test_data[[&#x27;uuid&#x27;, &#x27;Keywords&#x27;, &#x27;label&#x27;]].to_csv(&#
 
 在提交结果处提交，分别提交 submit_task1.csv 文件和提交 submit_task2.csv 文件，在排名结果页查看自己的成绩排名。
 
-![](img/5f551269572d1980a173287e286cabc0.png)
 
 ### 使用预训练的BERT模型解决关键词提取
 
@@ -658,7 +656,6 @@ test[[&#x27;uuid&#x27;, &#x27;Keywords&#x27;]].to_csv(&#x27;submit_task2.csv&#x2
 
 在提交结果处提交，分别提交 submit_task1.csv 文件和提交 submit_task2.csv 文件，在排名结果页查看自己的成绩排名。
 
-![](img/178e7d4c11a8b1e58aaa3e7208495a0f.png)
 
 ## 大模型
 

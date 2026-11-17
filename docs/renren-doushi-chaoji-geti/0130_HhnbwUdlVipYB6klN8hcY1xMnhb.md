@@ -173,7 +173,6 @@ setx CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC 1
 
 #### 3.3.1 配置 Figma MCP（Cursor 版）
 
-![](img/6fd2a9fdb764833d9b44ab0f2554dc33.png)
 
 Figma MCP 配置信息如下，请复制后进行配置：
 

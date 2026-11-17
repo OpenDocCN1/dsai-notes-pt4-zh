@@ -12,6 +12,5 @@
 
 ![](img/4b4ba044985412002f9c1afd87793dd7.png)
 
-![](img/d102312c7ff9b94e75edd6bb3d741a69.png)
 
 ![](img/1092572fcac5573f259d9ce289b2269c.png)

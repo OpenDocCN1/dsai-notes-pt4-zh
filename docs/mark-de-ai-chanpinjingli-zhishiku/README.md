@@ -260,7 +260,6 @@
 
 [MiniMax M2.7：核心亮点解析 + 真实Agent实战测试](https://qqs7y1hozd1.feishu.cn/wiki/CwHWwnAqhiz67NkhbYWc7eU1ntc)
 
-![](img/71ef399415a9fbf2dde1084bfeec92f3.png)
 
 [MiniMax M2.7：核心亮点解析 + 真实案例测试.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KUnobUuwuoemD0xP5WxcKrl7n7g)
 
@@ -366,11 +365,9 @@
 
 [Agentic强化学习.pdf](https://qqs7y1hozd1.feishu.cn/wiki/LN2iwQoJTipncqknEatcPowpnWc)
 
-![](img/d6c29281503da6264e87a3051d836509.png)
 
 [从零开始搞定 AI Agent 搭建全流程.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UqVXbDBPioX5ZwxJwJMcMdo4ne7)
 
-![](img/82367e0ca5c7c4fa8050b7ee810c83d9.png)
 
 [基于Agent智能客服中的意图识别优化.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DCcdbbH8Gom2Qhxe6FRcJ833neh)
 
@@ -384,7 +381,6 @@
 
 [Agentic chunking：接近人类水平的RAG分块方法](https://qqs7y1hozd1.feishu.cn/wiki/Z1DYwbwMPih0ORksfJhcjqiWn8T)
 
-![](img/a824dbfc0bbe9419eb019f00f250ac0c.png)
 
 [LLM底层技术原理轻松入门.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BnBObzpbloz339xaQHtcvHi7nVg)
 

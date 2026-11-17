@@ -76,7 +76,6 @@ https://cloud.baidu.com/qianfandev/topic/268516
 
 在千帆Modelbuilder 可以很方便地上传数据集。
 
-![](img/c943b55e621ec8aabc5c64957e712e2d.png)
 
 而且还能很方便地进行数据增强, 轻松扩充你的数据集。
 
@@ -122,7 +121,6 @@ Low-Rank Adaptation (LoRA)是一种更为节省资源的参数更新策略。在
 
 ![](img/8794e2b54e5a07d41318e4dbd4782510.png)
 
-![](img/f2a9b9e08ef4f0bb845ad03aa7ef78d9.png)
 
 在我们训练得到满意的模型之后可以发布模型。
 

@@ -12,11 +12,9 @@
 
 翻译版 PDF 如下:
 
-![](img/b62f1dd1b877e6e91ee705e9b175ecf9.png)
 
 [OpenAI向美国科技政策办公室提交的提案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Sza0bwsIfoM7nWxSENFchdfrnKd)
 
-![](img/11aa67ddfdfdff2452d380fb7f1c368b.png)
 
 [Claude提案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HP5PbbHMmo8DiixJdIGcWzF8nyd)
 

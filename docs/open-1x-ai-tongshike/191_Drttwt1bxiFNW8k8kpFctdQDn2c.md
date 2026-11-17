@@ -432,7 +432,6 @@ https://zhuanlan.zhihu.com/p/693147811
 
 微调后
 
-![](img/81655a826acdc404f6601a65ce98259a.png)
 
 过拟合举例
 

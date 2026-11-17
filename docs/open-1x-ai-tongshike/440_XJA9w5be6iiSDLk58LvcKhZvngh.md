@@ -114,7 +114,6 @@ OpenAI在 2022 年初发布了 InstructGPT 论文，详尽阐述了如何实现�
 
 截止到目前，浪潮信息已经发布了三个大模型：源1.0 ，源2.0 和 源2.0-M32，其中 源1.0 开放了模型API、高质量中文数据集和代码，源2.0 和 源2.0-M32 采用全面开源策略，全系列模型参数和代码均可免费下载使用。
 
-![](img/c0b097616212c2c003517a638f29816f.png)
 
 2021年9月，源1.0大模型发布，它采用76层的Transformer Decoder结构，使用5T数据训练，拥有2457亿参数量，超越OpenAI研发的GPT-3，成为全球最大规模的AI巨量模型，表现出了出色的中文理解与创作能力。
 
@@ -124,7 +123,6 @@ OpenAI在 2022 年初发布了 InstructGPT 论文，详尽阐述了如何实现�
 
 +   [论文链接: https://arxi](https://arxiv.org/abs/2110.04725)v.org/abs/2110.04725
 
-![](img/22296b1effe29576d3bb706f8ae4f85e.png)
 
 2023年11月，源2.0大模型发布，它使用10T数据训练，包括1026亿、518亿、21亿 三款参数规模，在数理逻辑、代码生成等方面表现出色。
 
@@ -136,7 +134,6 @@ OpenAI在 2022 年初发布了 InstructGPT 论文，详尽阐述了如何实现�
 
 +   [论文链接: https://arxi](https://arxiv.org/abs/2311.15786)v.org/abs/2311.15786
 
-![](img/189f4ea126a2d18b25c130990cfc6785.png)
 
 2024年5月，源2.0-M32发布，它是一个混合专家（Mixture of Experts, MoE）大模型，使用2000B Tokens训练，包含400亿参数，37亿激活参数
 
@@ -493,7 +490,6 @@ pip install streamlit==1.24.0
 streamlit run AICamp_yuan_baseline/Task\ 1：零基础玩转源大模型/web_demo_2b.py --server.address 127.0.0.1 --server.port 6006
 ```
 
-![](img/dd6ad99665ebfccc84a0831753ce5f50.png)
 
 ### Step3：对话体验！
 
@@ -513,7 +509,6 @@ streamlit run AICamp_yuan_baseline/Task\ 1：零基础玩转源大模型/web_dem
 
 > 弹出对话框，现在开始对话吧！
 
-![](img/9ad0986576e9c9a8be50bd75c5116519.png)
 
 > 下面，让你的编程助手简单写个代码吧！输入后回车即可运行！
 

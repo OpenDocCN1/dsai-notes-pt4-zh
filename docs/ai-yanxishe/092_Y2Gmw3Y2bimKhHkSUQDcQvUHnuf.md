@@ -20,7 +20,6 @@ Sora和Pika、Runway、SVD的区别，哪一个更好❓同个咒语效果对比
 
 ![](img/69d0d3b7d83f6c6e14f6e291fbabdef2.png)
 
-![](img/80fdeee1a3f150ae6ca97229498dbf74.png)
 
 ![](img/59219b2622132722b7000034bebced41.png)
 

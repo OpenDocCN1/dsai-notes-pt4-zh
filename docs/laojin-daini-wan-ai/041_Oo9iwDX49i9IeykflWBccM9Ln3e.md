@@ -64,7 +64,6 @@ python app.py
 
 制作游戏
 
-![](img/af69ce2de9215531bf29ec17c6372831.png)
 
 [🛰️公众平台 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FrJJbd3rDo1kbQx5ORicy41ln4b)
 

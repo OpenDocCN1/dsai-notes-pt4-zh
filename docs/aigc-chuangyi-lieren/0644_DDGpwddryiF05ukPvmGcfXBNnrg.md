@@ -252,15 +252,12 @@ Niji（ --niji ）在 --v 7 的初始版本中暂时用不了**。不过别急**
 
 对比下前面的版本我们看看有何区别，去掉多余的命令「只有尺寸比例」，纯提示词测试更为准确。
 
-![](img/1ab8d73ddf6a9ccf30e210860c11d894.png)
 
 Milk tea with [ordinary fruit], summer drink, ice cubes, clear/translucent medium, disposable cup, style focuses on bright colors, imaginative drinks, surrounded [by jasmine and osmanthus], Canon EOS R5 --ar 16:9
 
-![](img/3d4727c250f3c68d4f7bd257762250da.png)
 
 A human skull depicted in Molten Metal Morphogenesis, where liquid metal flows and solidifies into dynamic, abstract forms. Use fiery hues of bronze and emerald green to capture the heat and energy of the transformation. --ar 16:9
 
-![](img/2cf805a77f6e851faed5c66543191cc1.png)
 
 A Goddess portrait in the style of Vaporwave Baroque, with classical elements juxtaposed against 80s retrofuturism, drenched in hues of Lavender, Neon Pink --ar 16:9
 

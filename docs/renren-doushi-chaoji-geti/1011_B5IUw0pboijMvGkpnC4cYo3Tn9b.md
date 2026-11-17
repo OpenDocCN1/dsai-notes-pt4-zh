@@ -122,7 +122,6 @@ CEO、CTO、KOL、KOC们都来了。
 
 这一切不过是每天的一小时。
 
-![](img/bfd5e9ecaf69f059d0e9fb813e0a891b.png)
 
 ![](img/d76f6d2a713e21a117dd6dadd7ebfaaa.png)
 
@@ -226,11 +225,8 @@ AI时代来临后，我更意识到它会让超级个体井喷。
 
 创造价值，获得认可，才是我追求的最宝贵的东西。
 
-![](img/9ce45a8bc76708815e5de2209b798dd9.png)
 
-![](img/ed5cde680a275e44b96d3ae5c4840c84.png)
 
-![](img/b2fd13c4adfe406f356b4f5f748c0b74.png)
 
 ![](img/6b7385e472108d6da41c23d3b9cf37e1.png)
 

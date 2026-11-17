@@ -64,7 +64,6 @@ Lovart的核心理念在于其“**Agent**”属性。通过创新性的功能�
 
 ![](img/ce9b73cd92c5e6b1f741343d8ef0ae93.png)
 
-![](img/00210069236acf8daebe3523c133d306.png)
 
 ![](img/b664c11895c2a5909d3a904361e31ce8.png)
 

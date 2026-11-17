@@ -309,15 +309,10 @@ augment会帮你搞定。
 
 市面常见的爆款模板，都可以按这个思路来流水线生产。
 
-![](img/77e3587ea1c54d9dba3aaad67c92ad75.png)
 
-![](img/13655a0c9bdc26a205d2dcd9fff45f28.png)
 
-![](img/d6b87d0b6d6c7fad4fb661cbdf4174ca.png)
 
-![](img/bd4e080e3ada8be4a576e7d916d8161c.png)
 
-![](img/b6d6c25da7247b44e98f7bfb6d2486a0.png)
 
 ![](img/a2cf8c44dd5c66c27a1a7f302431f96a.png)
 

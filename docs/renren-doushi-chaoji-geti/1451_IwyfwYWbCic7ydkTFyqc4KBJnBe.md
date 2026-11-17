@@ -62,7 +62,6 @@
 
 向量Embedding非常灵活，包括音频、视频、文本和图像都可以表示为向量Embedding。
 
-![](img/6ce7d0bd88e3a590e9cdd7aae8bcbeed.png)
 
 从不同类型的数据创建向量Embedding的过程：音频，文本，视频。
 

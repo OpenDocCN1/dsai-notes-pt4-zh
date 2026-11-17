@@ -42,11 +42,9 @@ Sora 是一个扩散模型21,22,23,24,25；给定输入的噪声 patches（以�
 
 在这项工作中，我们发现扩散变换器作为视频模型也能有效扩展。下面，我们展示了固定种子和输入的视频样本在训练过程中的对比。随着训练计算量的增加，样本质量明显提高。
 
-![](img/e1e31badb4fd21cb0b6e74bd52da43f3.png)
 
 [scaling_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GDhebQ12Do5jhWxvAHqcDDUJn2b)
 
-![](img/88c192ade2f8a3c34e84d0a4a2354228.png)
 
 [scaling_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EnYQbQrrxonVV5xFYGYc1fKanMe)
 
@@ -78,7 +76,6 @@ Sora 可以采样宽屏 1920x1080p 视频、竖屏 1080x1920 视频以及介于�
 
 我们根据经验发现，在原始长宽比的视频上进行训练可以改善构图和取景。我们将 Sora 与将所有训练视频裁剪成正方形的模型版本进行了比较，这是训练生成模型时的常见做法。在正方形裁剪下训练的模型（左图）有时生成的视频只能看到主体的一部分。相比之下，Sora（右）生成的视频取景更好。
 
-![](img/f8dee203451c0a2fe39e1d674cbbc43e.png)
 
 [sampling_3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DpJBbYkTVoY0HCxzt0DcN5rDn4f)
 
@@ -154,7 +151,6 @@ Sora 还能生成图像。我们通过在空间网格中排列高斯噪声斑块
 
 Sora 可以生成动态摄像机运动的视频。随着摄像机的移动和旋转，人物和场景元素会在三维空间中持续移动。
 
-![](img/480d2af8d937aede56ca36cd4834c6f6.png)
 
 [simulation_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CRndb5AXxopx69xWYFMc8ywinOd)
 
@@ -190,7 +186,6 @@ Sora 有时可以模拟一些影响世界状态的简单动作。例如，画家
 
 Sora 还能模拟人工进程，视频游戏就是一个例子。Sora 可以通过基本策略同时控制 Minecraft 中的玩家，同时高保真地呈现世界及其动态。只需在 Sora 的提示字幕中提及 "Minecraft"，就能零距离激发这些功能。
 
-![](img/ab817a04061da8bfc70e7a70058a6a1c.png)
 
 [simulation_6.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HpCqbcARJolrLxx8Zh2ccEMtnDh)
 

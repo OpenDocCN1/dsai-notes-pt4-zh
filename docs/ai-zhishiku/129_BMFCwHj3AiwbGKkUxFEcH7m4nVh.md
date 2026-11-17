@@ -406,7 +406,6 @@ Midjourney生成的图像，不仅用在了本次活动的前期沟通阶段，�
 
 询问 AI 该数据所反映的问题。使用大语言模型分析文档的内容，例如ChatGPT开通Plus后，可以解锁上传文档功能的插件。这里用的是一个当前免费的LLM工具 claude.ai，也可以支持pdf、txt、csv等格式的文件上传。
 
-![](img/11ddb4cab7248293e9e4c7db8eadec4d.png)
 
 **STEP3： **
 

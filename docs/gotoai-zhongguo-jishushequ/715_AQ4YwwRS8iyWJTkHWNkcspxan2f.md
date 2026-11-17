@@ -236,7 +236,6 @@ Exam C1000-185: IBM watsonx Generative AI Engineer v1 - Associate
 
 https://edu.aliyun.com/certification/aca05?spm=a2cwt.28380597.J_1564692210.18.5eef3487sFsdP4
 
-![](img/c678cc96e50d9fd2c38b0d2b06e129c4.png)
 
 ### 阿里云大模型高级工程师ACP认证
 
@@ -244,7 +243,6 @@ https://edu.aliyun.com/certification/aca05?spm=a2cwt.28380597.J_1564692210.18.5e
 
 https://edu.aliyun.com/certification/acp26?spm=a2cwt.28380597.J_1564692210.19.5eef3487sFsdP4
 
-![](img/2d652ebc5ea526d8c6d925d3ffc76975.png)
 
 ### 阿里云人工智能工程师ACA认证
 
@@ -252,7 +250,6 @@ https://edu.aliyun.com/certification/acp26?spm=a2cwt.28380597.J_1564692210.19.5e
 
 https://edu.aliyun.com/certification/aca13?spm=a2cwt.28380597.J_1564692210.17.5eef3487sFsdP4
 
-![](img/fa4b768ad0e6991ee9ef082cf243f2ef.png)
 
 ### 阿里云人工智能高级工程师ACP认证
 
@@ -322,23 +319,18 @@ https://aistudio.baidu.com/course/introduce/33172
 
 ## Microsoft AI Agent for Beginners
 
-![](img/817b33dac70be20d945aac0bb5b0d762.png)
 
 ## Midjourney Al-Generated Art lmages for Beginners
 
-![](img/f89f842c11514bc1652eea07892f5384.png)
 
 ## Coze 智能体开发工程师(初级)
 
-![](img/a99c5afd9dc72998757c5399675f8e2b.png)
 
 ## n8n 智能体与工作流开发工程师(初级)
 
-![](img/bd55cbb76f102f42f8cf47df2e74b570.png)
 
 ## Dify 智能体与工作流开发工程师(初级)
 
-![](img/bce702c8a3a5afd33ad12c61ad64f18d.png)
 
 ## RAGFIoW RAG应用开发工程师(初级)
 

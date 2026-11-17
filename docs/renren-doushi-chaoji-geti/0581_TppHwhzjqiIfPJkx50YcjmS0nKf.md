@@ -38,7 +38,6 @@
 
 我这里要分享的是，在实操中遇到的这种做的比较精致的ai绘画案例：
 
-![](img/7be349d0e5de3a9e4826eafeafd20705.png)
 
 [23c4e8240da05a7e00990841c02157c5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RsdVbfSu1oxHGdxZf7tcB6Ocnfc)
 

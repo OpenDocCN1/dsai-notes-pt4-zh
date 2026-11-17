@@ -60,7 +60,6 @@
 
 > 填写完信息后刷新即可
 
-![](img/394c7d00d0643d4f47aa2d1b25f9e0f9.png)
 
 ![](img/c1ffa5d04111a3a57b3dcb1311f6aaa4.png)
 

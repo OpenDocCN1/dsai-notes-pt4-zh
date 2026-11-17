@@ -30,7 +30,6 @@ Ring-1T使用地址 ling.tbox.cn
 
 **DeepSeek V3.2：**
 
-![](img/6669ef3cdc6f79ef8cc21d7ba4f1dc1c.png)
 
 [word02.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QUSKbAY2Go2I1vxHN36cDomDnxe)
 

@@ -166,7 +166,6 @@ mac 需要先安装 homebrew。进入 homebrew 官网：https://brew.sh/，然�
 
 下载完成后进行安装，安装方式也极为简单。一直点继续就可以了。
 
-![](img/27b5e9c805fb8c6396c7a3ee77703af4.png)
 
 然后到这，就安装好了。
 
@@ -559,19 +558,15 @@ https://gemini.google.com/share/b0c21b7b4422
 
 然后打开你的代码编辑器，我这里以vscode为例。
 
-![](img/7a82c533a7831d9ecbf3c09f50e48870.png)
 
 在welcome页面点击“open”，选择你刚刚新建好的文件夹，现在开始它就是我们的项目文件夹了。
 
-![](img/e5d1a6c69846885a6ef907367d7a36a6.png)
 
 进去之后，点击“Yes, I trust the authors”。然后你就进入了IDE，IDE的内容如下。
 
-![](img/d7584c1cedfcb9b7be740484f226dd7d.png)
 
 现在什么都没有，我们需要开始起nextjs项目了。
 
-![](img/9fc9d310ff9ff8fc81e733db319fc240.png)
 
 点击右上角的底栏按钮。
 
@@ -585,7 +580,6 @@ https://gemini.google.com/share/b0c21b7b4422
 
 点击左上角的Docs。
 
-![](img/aca7d4d0a648800e58b1492e11830a1c.png)
 
 在官方文档的页面左端，点击Installation，然后在Installation页面找到Quick start，在Terminal的选项里选择pnpm，pnpm包管理器相对来讲安装更简单。
 
@@ -616,19 +610,15 @@ pnpm dev
 
 这里我把my-app换成了.，这样就在当前文件夹安装nextjs应用了。复制这段代码块，进入vscode的终端粘贴进去，回车。
 
-![](img/df0b87b1b40885519e67c93cdba6a8fc.png)
 
 过了一会，看到Success就表明安装成功了。然后左边就“嗖”地多了一堆新文件。
 
-![](img/6cc44be6d492ce178c1d31ba41a6b987.png)
 
 然后，我们要把这个仓库直接传到github上。点击左边第三个图标（分支管理），接着点击Publish Branch。
 
-![](img/79cb9335f757cb050d9d097099b9d26b.png)
 
 点击之后vscode会让你登录github账号，我们就正常登录就行。登录完成之后，顶上会提示要发布成什么仓库，这里我选择发布为private仓库（私有仓库），下面那个public仓库选项是公开仓库，大家可以自己按需选择。
 
-![](img/a902833437db092e562bd71e3b773fee.png)
 
 过了一会，发布好了，我们可以在左下角看到一个main分支右边一个紫色的云朵就表示已上传到云端仓库。
 
@@ -656,15 +646,12 @@ pnpm dev
 
 回到vscode，把这段复制下来的命令粘贴到终端里，回车。
 
-![](img/47557fb2743e985788148ef147d6525a.png)
 
 随便选一个，反正后面都要换。按上下选择，回车确认。
 
-![](img/76b07ce5b29b5fe41b15922874f0a93d.png)
 
 过了一会，安装好了。
 
-![](img/68182c606efe55af377b43f05fee1cc7.png)
 
 这样shadcn/ui就安装好了。
 
@@ -672,29 +659,23 @@ pnpm dev
 
 在根目录下点击第二个图标“新建文件夹”。
 
-![](img/ed71ff1d544f698994a456c5edd465c5.png)
 
 然后在新建的文件夹空白名字这里填上docs，回车。
 
-![](img/2ebaf6ae11287c74ad14387dce89cf9c.png)
 
 选中docs文件夹，点击第一个图标“新建文件”。
 
-![](img/b547642fb190bca2e64ac3fab939c706.png)
 
 在新建文件的名字里输上requirement.md，回车。
 
-![](img/797a110f383b32eeb8a9bfa88c784f2d.png)
 
 把在第定骨架那个步骤里AI给你提供的coding agent requirement提示词粘贴进去。
 
 注意看，粘贴进去之后右边会有一个圆点，这个原点表示你还没保存。在没有保存的情况下给claudecode它读不出来，所以一定要保存。使用Ctrl+S（Mac电脑是Command+S）快捷键进行保存。
 
-![](img/31c005fd415488cfd952f23d6f663bdc.png)
 
 保存完成后，原点就变成一个叉了，这个时候claudecode就能读到了。
 
-![](img/fc4ab6e832021af2f8e41c92d8e8d29d.png)
 
 > 说明：有同学可能会问，这个文件的绿色和黄色代表什么意思，绿色的意思就是这个文件自上次上传代码到github后新增的文件，文件的右边会显示U；黄色的意思就是这个文件自上次代码上传到云端GitHub后，被修改过的文件的右边会显示M。
 
@@ -704,7 +685,6 @@ pnpm dev
 
 点击右上角的Claudecode插件按钮，如果你没有使用插件，你可以在终端输入claude，回车。我习惯使用native mode的claudecode版本，所以我的插件打开仍然是一个终端。
 
-![](img/b15bcbcdd23bbf40012f6d3746286db7.png)
 
 打开之后，输入/init，然后把初始化的提示词输入进去。在我这个项目里，初始化提示词就是让他基于requirement.md进行初始化。所以我的提示词如下：
 
@@ -714,17 +694,14 @@ pnpm dev
 
 把初始化提示词弄进去，然后回车。紧接着就是claude一顿输出。
 
-![](img/0267691826448b0b34ac64f608a3a84e.png)
 
 然后CLAUDE.md就做好了。
 
-![](img/332063697b673034879a84ad168edbde.png)
 
 打开CLAUDE.md看一下是不是我们想要的。
 
 页面结构正确，工作流程正确，配色风格正确。
 
-![](img/5c978d81d095e4c5fbb35203844cd4df.png)
 
 注意：一定要去看CLAUDE.md的内容是否正确，看不懂就复制出来翻译出来检查，检查出有欠缺的地方一定要补充进去，补充的方式就直接给claudecode提就行。
 
@@ -1059,7 +1036,6 @@ Prompt:A glowing, finished artifact cube floating inside a digital cloud mesh ne
 
 然后点击官网左下角的 Start Customizing。
 
-![](img/60695a8c0ab6d65ce71558585f12c1d2.png)
 
 进来了之后，在dashboard的左上角去选你喜欢的主题。
 
@@ -1083,7 +1059,6 @@ Prompt:A glowing, finished artifact cube floating inside a digital cloud mesh ne
 
 有点小报童的感觉了，这个时候我们就可以导出css了。点击右上角的code。
 
-![](img/890cb1f447d62a8347f712372da59179.png)
 
 弹出了Theme Code的弹窗。
 
@@ -1093,7 +1068,6 @@ Prompt:A glowing, finished artifact cube floating inside a digital cloud mesh ne
 
 globals.css的文件位置在app文件夹下面。
 
-![](img/a27368ec9d2038eeef4cd816424e3275.png)
 
 再看一下我们的Tailwind版本。我这里是V4。
 
@@ -1151,7 +1125,6 @@ https://xiaobot.net/p/cnzhihao-001?refer=7db16d14-e55f-471e-accc-909453053e1f
 
 至此，我们的landing page就全部做完了，发布到github上去。先输入一个commit的说明，比如我这里输入的是“completed”，然后点击commit。
 
-![](img/081d8a4c624de24c7c17b8ffbb4ca676.png)
 
 commit完了点击 Sync Changes。
 
@@ -1167,7 +1140,6 @@ commit完了点击 Sync Changes。
 
 在vercel的dashboard上点击 add new。
 
-![](img/54a624f9608daff263a5b255c113f2d9.png)
 
 选择Project。
 
@@ -1219,7 +1191,6 @@ https://aiworkbook.vercel.app/ 有了。
 
 把你刚买的域名输进去。
 
-![](img/727238608f512638c4f3927c05762b2a.png)
 
 这里我输入了一个二级域名，然后它报错了。报错是很正常的，因为我没有配置DNS。也别管DNS是什么了，Vercel能帮我们解决。
 
@@ -1235,7 +1206,6 @@ https://aiworkbook.vercel.app/ 有了。
 
 我这个域名是挂载在cloudflare上的，所以它就跳转到cloudflare了，如果你是在spaceship上管理的DNS，它就会自己跳到spaceship上。
 
-![](img/fad9fc9cbadbe6e85e898dfa09ab89ee.png)
 
 登录之后自动就到授权页了，点击“授权”。
 

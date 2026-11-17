@@ -48,15 +48,12 @@ Zapier是一个在线自动化工具，它通过“Zaps”（自动化工作流�
 
 > 地址： https://zapier.com/
 
-![](img/72eb8ccc2fee14ec1229d179b6894c50.png)
 
 输入简单个人信息，点击 **Continue**。
 
-![](img/55b313fd1358cff791dc1325206bdda0.png)
 
 **选择需要集成的应用程序。有众多知名的应用软件， 如 Gmail、Nition、Google** Forms、Discord、Stripe、ChatGPT、YouTube、Microsoft 系列、 EverNote（印象笔记）等。我这边为了案例演示， 选择了 Gmail、ChatGPT 等几款软件。
 
-![](img/280c79b7dd1cf695da9e659dc902f19d.png)
 
 **目前国内支持的软件较少，**相对著名的国内办公软件里 我看到了 Tencent Docs。
 
@@ -120,11 +117,9 @@ Step 4. Using the available_action_id (returned as the `id` field within the `re
 
 > 若之前没有登陆,这里会要求先登陆。
 
-![](img/c14a8bd2822859e47fd842d1589ada4e.png)
 
 10、搜索 **查看邮件** 的**功**能。输入关键词 Gmail，找到 Gmail：Find Email 选项。
 
-![](img/330e006dec67bb42d5cab61552454a7c.png)
 
 11、点击 Connect a new Gmail account，并绑定邮箱。
 
@@ -136,7 +131,6 @@ Step 4. Using the available_action_id (returned as the `id` field within the `re
 
 选择邮箱账号。
 
-![](img/85d2048afe593fe647a3f5bbb72859f7.png)
 
 点击**允许，**进行授权访问邮箱账号。
 
@@ -144,7 +138,6 @@ Step 4. Using the available_action_id (returned as the `id` field within the `re
 
 12、点击 **Enable action。**
 
-![](img/79113e42f9f2b0b4ede51483a6c9485c.png)
 
 这样代表已经启动了，如果需要添加其他动作，可以点击 Add a new action 来操作。
 

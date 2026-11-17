@@ -460,7 +460,6 @@ https://github.com/aixcoder-plugin/aiXcoder-7B
 
 aiXcoder是一个针对软件开发人员的人工智能工具，旨在提高代码编写的效率和准确性。它是基于大型代码模型训练的，具有广泛的上下文信息和预训练任务，可以用于代码完成和代码生成任务。aiXcoder 7B Base是其中一个版本，经过了1.2T独特标记的广泛训练，在代码完成场景中表现出色，并在多语言nl2code基准测试中超过了其他类似参数大小的模型。
 
-![](img/d0a2c233c9d8024e0a1cf0455d128935.png)
 
 ### parler-tts
 

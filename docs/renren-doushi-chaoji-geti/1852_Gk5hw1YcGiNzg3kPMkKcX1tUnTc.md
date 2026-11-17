@@ -90,7 +90,6 @@
 
 左边是第一次保存的衣服，右边是第二次保存的衣服蒙版
 
-![](img/fdf8b12ec3be9b887b773d16cb7aefac.png)
 
 ![](img/1ce8b40c67f7f4491e2864ea34651db8.png)
 

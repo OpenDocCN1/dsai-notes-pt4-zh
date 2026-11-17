@@ -179,7 +179,6 @@ n8n节点是支持多线运行的，可以一对多，也可以多对一，
 
 > （鼠标左键点住content然后话到fx的操作框松手就可）之后通过Test step就可以看到结果
 
-![](img/67008925f461fe66ca5b74e4f8f7ae0a.png)
 
 下方还有一个Destination Key 意思就是Markdown解析后的数据放到哪里，再右边的输出狂往下滑就会看到有一个data字段，存储的就是这段转换后的数据
 
@@ -410,7 +409,6 @@ Notion就理解为是一个**在线文档**就好，通过配置密钥，可以�
 
 > 内容就是选用markdown中的content字段，同时也支持该字段类型，这里统一用的是string
 
-![](img/c528ee564f3083d6e7103315e29f60fd.png)
 
 ### 第八个节点Convert to File
 

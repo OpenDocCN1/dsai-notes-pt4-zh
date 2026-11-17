@@ -6,7 +6,6 @@
 
 https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-computer-vision/?msockid=32d22e7f0285690d3255386403b56895
 
-![](img/7e080b4ef411b21482dca9799871f9e7.png)
 
 # What is deep learning?
 

@@ -147,7 +147,6 @@ lmdeploy serve api_server /root/share/new_models/Shanghai_AI_Laboratory/internlm
                             --cache-max-entry-count 0.1
 ```
 
-![](img/b5354399234f553493b5a47498ca0ca3.png)
 
 ## 2.3 启动 AgentLego WebUI
 
@@ -187,7 +186,6 @@ ssh -CNg -L 7860:127.0.0.1:7860 -L 23333:127.0.0.1:23333 root@ssh.intern-ai.org.
 
 1.  点击 load 以加载配置。（如⑦所示）
 
-![](img/f5dd8350f9dbf3e184306abb2fc8c1b7.png)
 
 然后配置工具，如下图所示。
 

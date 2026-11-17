@@ -26,7 +26,6 @@
 
 打开[ModelScope 魔搭社区](https://www.modelscope.cn/my/myspace)，然后点击“创空间”
 
-![](img/b4fb581b070e279fd38353441b6c81ea.png)
 
 点击“创建创空间”，一般大家是没有的创建过，所以不一样
 
@@ -46,7 +45,6 @@
 
 1.  空间描述
 
-![](img/d475f0cf1fcf99033a8559df5dce7c70.png)
 
 1.  配置
 
@@ -72,7 +70,6 @@
 
 打开PAI的交互式建模（DSW）
 
-![](img/16f09e35c8ea7f36375550f4f6b61a00.png)
 
 ### 拉取git
 
@@ -165,7 +162,6 @@ git add app.py
 git add requirements.txt
 ```
 
-![](img/5eac81ad2d20170a70f8d1b4f89c792d.png)
 
 ### 提交更改
 
@@ -180,7 +176,6 @@ git config --global user.name &quot;John Doe&quot;
 git commit -m &quot;Add IEITYuan, output directories, app.py, requirements.txt file&quot;
 ```
 
-![](img/79447e9704667fbe01e829e13556514b.png)
 
 ### 推送更改到远程仓库
 
@@ -196,7 +191,6 @@ git push
 
 打开自己创空间的设置页面
 
-![](img/1de8ffc491197a408b9767ea63ee7dcc.png)
 
 点击“上线空间展示”
 

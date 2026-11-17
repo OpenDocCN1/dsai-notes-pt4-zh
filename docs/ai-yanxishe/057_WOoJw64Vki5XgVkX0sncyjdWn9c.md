@@ -516,7 +516,6 @@ deepseek不稳定的同学，可以通过以下方式使用体验。
 
 6、在模型服务的硅基流动下方，添加 R1 模型。
 
-![](img/3909a23227413d10146fd1801f5da794.png)
 
 7、记得点击检查，测试下 API 是否可以正常访问。
 
@@ -534,7 +533,6 @@ deepseek不稳定的同学，可以通过以下方式使用体验。
 
 按照同样的方式配置到 **Cherry Studio **中，这里不需要点击检查。
 
-![](img/bb11af1c2a040b7d50f21f58844c42a4.png)
 
 9、在 **Cherry Studio** 创建知识库，选择刚才配置的嵌入模型，这样就会自动利用对应的模型来向量化数据。
 
@@ -556,7 +554,6 @@ deepseek不稳定的同学，可以通过以下方式使用体验。
 
 **11、测试使用，**这一步添加助手，并选择刚配置的 满血 R1 模型。
 
-![](img/02648be723fef72c70ae8755a1e10db6.png)
 
 **如果不想**每次在添加助手时选择模型，可以将它设置为 默认模型。
 
@@ -602,11 +599,9 @@ deepseek不稳定的同学，可以通过以下方式使用体验。
 
 如果选不到，就手动添加模型，API 秘钥填不填无所谓）​
 
-![](img/1ac539f58edbedbe2ecfafdb9d72547a.png)
 
 最后点击检查，测试下网络连通性，出现连接成功即可。
 
-![](img/c8a0c361f70e1342a2f96dcd4c1d0c49.png)
 
 接下来就可以在添加助手时，选择本地部署的 R1 模型啦。
 
@@ -810,7 +805,6 @@ DeepSeek 会自动理解需求，提供精准内容。
 
 ### 内DeepSeek中小学生使用手册
 
-![](img/194f4a6c31a962eb93b5e1483a4c882d.png)
 
 [【AI制作】DeepSeek+豆包制作.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EsdUbxbZ1o770xxhZVCcSQWDnVg)
 
@@ -822,27 +816,21 @@ DeepSeek 会自动理解需求，提供精准内容。
 
 [DeepSeek 15天指导手册——从入门到精通.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Drh4bOA6EoSmW2xzQdJc4F82nXb)
 
-![](img/556bfd8131870b09e0566f9b3840142a.png)
 
 [DeepSeek 30个喂饭指令.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CboIb7tyJox014xuSN6cvtjsnKe)
 
-![](img/404e44f9a3ed96f96afaf49e1369df7c.png)
 
 [DeepSeek Kimi 即梦配合使用.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZWblbIjKioUGB3x8fbHcBZGwnnh)
 
-![](img/551dd6bb26e61e00b2ba86c456a2473d.png)
 
 [deepseek 传统文化古诗词赛道教程.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CG9PbFIIyoc24ZxvUkucJkZKnlg)
 
-![](img/2806fffab84c4a10e39be435234d32e4.png)
 
 [DeepSeek 和 通义万相AI生成视频.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZEE6b2m8po2OS6x1ZL3ckkjAnUf)
 
-![](img/22b5264d2c766dbba847560257291aad.png)
 
 [deepseek 与mj做 AI 视频教程.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZUxdbPVYNoZip1xpTGdcIqb3nmb)
 
-![](img/8f41e77280f86b1e9c353837b3d43222.png)
 
 [DeepSeek 在线版 vs 本地版，哪个适合你的部署.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/URSAbWdaKon2d1xzSkLc0aesnMd)
 
@@ -910,7 +898,6 @@ DeepSeek 建立个人知识库是非常实用的场景，这里有个很简易�
 
 借助 DeepSeek，5 分钟在 skyin 平台完成接入，实现智能回复等功能，解决服务效率问题。借助 deepseek 和企业🛰️，这些都能轻松解决！只需 5 分钟，在 skyin 平台就能完成接入，实现 24 小时智能带情绪回复、自动打标签、引导成单。
 
-![](img/eeef1a4388076a196ed0e9988584f17f.png)
 
 **教程参考：**一键部署开源 DeepSeek 并集成到企业🛰️
 
@@ -988,67 +975,51 @@ deepseek 相关的一级域名，都是钱！！！提前抢注相关的域名�
 
 [DeepSeek 15天指导手册——从入门到精通.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P7hlb9Pppoeum4x7xBxc7rU3nVd)
 
-![](img/da841647a6530565d996027d36c2e8b1.png)
 
 [Deepseek 高效使用指南.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BmsMbrZEFo3LtsxGVwMcU9HOnnc)
 
-![](img/b9ebd35400ee7877a002807f7f735ac7.png)
 
 [DeepSeek 全面指南，90% 的人都不知道的使用技巧（建议收藏）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ErlSb6AHmopnyRxcoRzcCEWtnXg)
 
-![](img/dcd4105df7774eb3ee1d049feb2f417b.png)
 
 [deepseek 应该怎样提问.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DIU5buzN2o5OeQxuVN9cJX4snTh)
 
-![](img/6252d1c5b8434fde7550bbb7bfff0eb3.png)
 
 [DeepSeek-R1使用指南（简版）(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YMrfb1luLoOTikxRBMfcTskCnGc)
 
-![](img/9d8a385e81769296873b0822d40b9dc9.png)
 
 [Deepseek不好用，是你真的不会用啊！.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W5ctbSuyOoBSJ2xKfp2crn9Sn8f)
 
-![](img/0cb93cef4b436f0beb5930951d1f9147.png)
 
 [DeepSeek全面使用指南：手把手教你从零基础小白进阶AI大神.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Pq67bEzpKo5BjoxNwnKcxvXAnca)
 
-![](img/70200399ec4c5793add03e1f22009236.png)
 
 [DeepSeek小白使用指南，99% 的人都不知道的使用技巧（建议收藏）docx.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HJmJbikaXoDxQUxL4cDc4FLln7y)
 
-![](img/eff72d782f37ab86692ba7cf651b1bce.png)
 
 [DeepSeek新模型大揭秘，为何它能震动全球AI圈.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VRUsbqXqNoqHbMxeCdkcJLiMnvd)
 
-![](img/1d54fb6ff4c0d91879ec6ffde20b3c6b.png)
 
 [DeepSeek最强使用攻略，放弃复杂提示词，直接提问效果反而更好？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QLvCbMHrtoz9r2x5yJAc2HsYnag)
 
-![](img/fc155e909fb9b3533a21735f04b7a0a3.png)
 
 [当我用 DeepSeek 学习、工作和玩，惊艳！含提问攻略、使用实例和心得.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hp0vbP7EhoJ6V0xCYMRcpkTpnbg)
 
-![](img/cf0488e9fdea036ef90481fc5df5a675.png)
 
 [当下DeepSeek可以帮你赚钱的几个路径.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E1Hyb8jrUosierxIvsxcKeF4nae)
 
-![](img/1dafc528f76cad1a20e929f9fbadd5ce.png)
 
 [感谢deepseek，20天赚了15000.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M7JRb67j7oLDHPxoJuTcH4kIngf)
 
-![](img/9e2801b9b1f626f343810edb87698ba6.png)
 
 [教师别错过DeepSeek，一个高效有温度的偷懒工具。.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OVm6bw4zpozTPVx1FZ8c1SPFngd)
 
-![](img/84742c5bfa85a5dda3feffef679cc750.png)
 
 [如何正确使用deepseek？99%的人都错了.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QXUbbdge6oSNndxQHUiccslGntd)
 
-![](img/73fcfa480c2abda04f7c3f26ad1e565d.png)
 
 [使用DeepSeek必备的10个技巧.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ko7tbfYxIog7UWxlxf9cTIKvnvg)
 
-![](img/8adae0ddfdda95d60877b4653c99b338.png)
 
 [所有人都在讨论的“DeepSeek”，究竟是啥？.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LBokb9Z1SobJiexvDJZcYBx1n0d)
 

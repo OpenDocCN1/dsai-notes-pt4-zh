@@ -81,7 +81,6 @@ graph.add_graph_documents(
 
 +   include_source 参数则将节点与其原始文档关联起来，便于数据追溯和理解上下文
 
-![](img/c6f261adf381d8f7944e232c37c1c68b.png)
 
 ## **RAG 的混合检索**
 

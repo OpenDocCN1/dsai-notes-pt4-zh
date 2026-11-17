@@ -142,7 +142,6 @@
 
 1.  点击右侧打开体验地址 👉 讯[**飞星火SparkDesk，**](https://xinghuo.xfyun.cn/?ch=815_datawhale_09)**点**击「**开****始对话」**
 
-![](img/44c5da8cf0edf49ae34d26bbd27cad0d.png)
 
 1.  **「手机号快捷登录」**即可立即使用
 

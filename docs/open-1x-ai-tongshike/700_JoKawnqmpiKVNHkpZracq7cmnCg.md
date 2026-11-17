@@ -184,7 +184,6 @@ https://datawhaler.feishu.cn/sync/GlHpdUPtGsydkEbXUU7cby5Unyd
 
 ![](img/b8008927d05725a3fb569be7f2108a3e.png)
 
-![](img/5bf7ba18f6d1e03bcb7b741a89569cca.png)
 
 ![](img/4d847a0eb11d2d2beb69f150e6a99f98.png)
 

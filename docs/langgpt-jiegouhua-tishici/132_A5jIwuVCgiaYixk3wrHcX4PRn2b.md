@@ -18,7 +18,6 @@
 
 ![](img/505e010eddd123c9bfc365701c7be872.png)
 
-![](img/9ba5197e35ec9d0fdf9946a41720910e.png)
 
 ![](img/c79f5677fac3da5eb1eb287303d4bf3f.png)
 
@@ -38,7 +37,6 @@
 
 ![](img/6236a2d93a716fb679edb89fe677eeb6.png)
 
-![](img/da4d4b1084f95aef41118bf31efc4c1e.png)
 
 ![](img/cd4edb0523e471c6754645ca899f193a.png)
 

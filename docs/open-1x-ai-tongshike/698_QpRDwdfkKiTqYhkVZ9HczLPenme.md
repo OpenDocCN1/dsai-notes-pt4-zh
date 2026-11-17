@@ -58,7 +58,6 @@
 
 ![](img/db03cdeaf18710d8365256c7412dded0.png)
 
-![](img/4eb41d93b51b08090691acaa170b181c.png)
 
 ![](img/8db3a2adb9dafb9d6eb431abb686e508.png)
 
@@ -70,7 +69,6 @@
 
 +   另外在遇到问题时，可自主寻找解决方案
 
-![](img/0221d1be7359116fa2adac6f03e47690.png)
 
 ![](img/c954aeea49e84d9e476292df97543567.png)
 
@@ -343,9 +341,7 @@
 
 ![](img/045c30437c64b3caabf04a4fadd9054c.png)
 
-![](img/c53cd15951577e84bd41d02be95ebefa.png)
 
-![](img/30bb6c25e4da41c11cb7d26e2e1060d0.png)
 
 ![](img/c73ec074c0036ff19b6166a8a6fca25c.png)
 

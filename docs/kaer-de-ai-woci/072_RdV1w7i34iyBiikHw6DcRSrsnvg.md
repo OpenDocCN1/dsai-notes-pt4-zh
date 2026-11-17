@@ -17,7 +17,6 @@
 | 补充6 |  | ![](img/d3fddade369dfa728aaf10fee0c6b6e2.png) | 这图片有啥异常？ |  |  |
 | 补充7 |  | ![](img/23e2aa5c61663366836b151247fa3eb0.png) | 辅助线解题 |  |  |
 | 补充8 |  | ![](img/3a7c95dabe4b6b628bd1ae2456c2d4ee.png) | 辅助线解题 |  |  |
-| 补充9 |  | ![](img/429eb7fdc51bc61e45a084af30a96f77.png) | 辅助线解题 |  |  |
 | 补充10 |  | ![](img/10c876150a43e314dbd98fa86d4f4942.png) | 辅助线解题 |  |  |
 | 补充11 |  | ![](img/0d70c4244869c07b328e9383518e9c23.png) | 辅助线解题 |  |  |
 | 2 |  | ![](img/63db495a64c56e8f32ee9219afec9863.png) | 你能发现这是国内哪个景点吗 | https://www.volcengine.com/experience/ark/share/exsc-202508292234-%5BDjN6paEZE5ldahwt3ky9U%5D? |  |

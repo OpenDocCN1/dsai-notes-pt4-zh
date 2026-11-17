@@ -180,7 +180,6 @@ plt.title(&#x27;Residuals Distribution&#x27;)
 plt.show()
 ```
 
-![](img/f1e5954187ed095307cca6641f1b1359.png)
 
 ![](img/fa94ecf77681fae3334f6bec1d16ca19.png)
 

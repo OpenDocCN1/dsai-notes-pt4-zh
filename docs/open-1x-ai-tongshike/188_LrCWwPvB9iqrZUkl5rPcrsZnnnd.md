@@ -74,17 +74,12 @@ ControlNet是一种用于精确控制图像生成过程的技术组件。它是�
 
 ![](img/e6deb42f192ef513eed03714ac0b6aaf.png)
 
-![](img/e72fb9f922b9318d643d136d5c2b15fc.png)
 
-![](img/1173664acae27c8843b2dbff22d12b9e.png)
 
-![](img/a0dc00dd8f9c8820294a2f08396751f0.png)
 
-![](img/ef6a1bdb84b3f134dc159d1b90e9ecf9.png)
 
 ![](img/15e6df4e9eadbe8158b73f62d28ffb8c.png)
 
-![](img/221092fa305b61746d91416edb442760.png)
 
 ![](img/ac7ebb18573e331c138440188db9852c.png)
 
@@ -205,15 +200,12 @@ cp /mnt/workspace/kolors/1.jpg /mnt/workspace/kolors/output/
 
 点击[魔搭链接](https://www.modelscope.cn/models/create?template=text-to-image-lora)，创建模型，中文名称建议格式：队伍名称-可图Kolors训练-xxxxxx
 
-![](img/9bb4b0b4ca2505eb122eaa58da436640.png)
 
-![](img/8e1ef9425094435c8d8da33ce955bada.png)
 
 这样就算创建完成并发布在创空间讨论区了。
 
 1.  来到[创空间](https://www.modelscope.cn/studios)，查看自己的模型是否发布
 
-![](img/2092758bb475d7ffbf5dba6ec2753a60.png)
 
 ![](img/e7616993b7dd36651310391990ff1902.png)
 

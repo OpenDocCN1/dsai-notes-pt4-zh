@@ -198,7 +198,6 @@ bad eyes, deformed eyes, bad ears, wrong ears, wrong body, deformed body, extra 
 
 当你填到反向提示词后，就会 ……呃呃
 
-![](img/bf3f18c5062e1be5f330ecaec058069b.png)
 
 那写提示词是不是很难？其实没那么难，下面我们来聊聊写提示词的技巧
 

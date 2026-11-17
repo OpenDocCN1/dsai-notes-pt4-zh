@@ -232,7 +232,6 @@ EasyPhoto 是一个基于SDWebUI生态的AIGC插件，专门用于生成真/像/
 
 tshirt
 
-![](img/eabd3fd94bd58c62fffa09b9ea491644.png)
 
 卫衣
 

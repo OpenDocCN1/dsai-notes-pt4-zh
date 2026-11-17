@@ -36,7 +36,6 @@
 
 原视频：
 
-![](img/00590629ed19a1aa8128a56a6c6c99d6.png)
 
 [bard org.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nzz5bWsxXo6q8mxatZ2cHRV0n2e)
 

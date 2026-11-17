@@ -500,9 +500,7 @@ https://www.xiaohongshu.com/explore/680a22d0000000000d0146f6?xsec_token=ABRRl7rD
 
 ![](img/92a6108d60f5c2611c4c1d2c95f02398.png)
 
-![](img/f9c813e3c1788c72d590391f4695be67.png)
 
-![](img/35e9238624326d3ff4d70b41fb09f811.png)
 
 # 五、赚到了第一笔Stripe收入
 
@@ -546,7 +544,6 @@ https://www.xiaohongshu.com/explore/680a22d0000000000d0146f6?xsec_token=ABRRl7rD
 
 高峰时期网站每天要画2000多张图，有三四十人支付。
 
-![](img/45168503518b3777f05fd17bb077eb3f.png)
 
 ![](img/5fecc21ad8d199e8b1e078d785f7e0e5.png)
 
@@ -588,7 +585,6 @@ https://www.xiaohongshu.com/explore/680a22d0000000000d0146f6?xsec_token=ABRRl7rD
 
 想要通过做一些视频，发到YouTube和TikTok上给自己的网站导流，在个人主页的简介里留下了网站链接。
 
-![](img/caf806b1a1200adf915f725f09d30bf8.png)
 
 [4.25视频1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LVg4bvjTKoWh5exTyqycBfbonKi)
 
@@ -598,7 +594,6 @@ https://www.xiaohongshu.com/explore/680a22d0000000000d0146f6?xsec_token=ABRRl7rD
 
 YouTube视频的流量有时候能上万，还不错
 
-![](img/e3141dfce474c3f7874ef59119db02cc.png)
 
 TikTok流量不行
 
@@ -646,7 +641,6 @@ Adsterra给我带来了5美元的广告收入
 
 ![](img/7ecd4bf157ee1d01ca61c97b4396b2c0.png)
 
-![](img/f23d3da3bd78bda9475a8ffce322aaaf.png)
 
 ![](img/958fc4a5be3d2140d543fe9c5ca4decb.png)
 

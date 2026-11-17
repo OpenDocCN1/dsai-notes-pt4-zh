@@ -42,9 +42,7 @@
 
 如：序列图的生成，也可以使用sd一健生成。
 
-![](img/a40d338e87636a26aba7fcbcf0385215.png)
 
-![](img/ee59b387cfd42699203b7f7dd07b8968.png)
 
 ![](img/2356f5ec9c2ec5e0bbd45b0cf8675552.png)
 

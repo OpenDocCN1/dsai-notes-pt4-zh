@@ -10,7 +10,6 @@
 vibrant California poppies
 ```
 
-![](img/348bfa2b4024ab86b709018db0938368.png)
 
 从上图里其实你就能看到 Midjourney 的进化方向：
 

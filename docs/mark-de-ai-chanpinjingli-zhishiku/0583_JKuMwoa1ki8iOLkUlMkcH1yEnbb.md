@@ -170,7 +170,6 @@ Sharpe Ratio显示TradingAgents在风险调整回报方面表现卓越，AAPL、
 
 当前深度学习交易方法的复杂性导致决策难以解释，而基于LLM的交易框架通过自然语言沟通决策，提供了更高的可解释性。TradingAgents的交易日志展示了其决策过程，增强了透明度和可调节性。
 
-![](img/7397c77bfc1912c585798ca679b4fe7c.png)
 
 ![](img/5ebaff4733696b4eb2e4296c93067082.png)
 

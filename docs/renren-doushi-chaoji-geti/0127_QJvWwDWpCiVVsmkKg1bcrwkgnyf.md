@@ -200,7 +200,6 @@ e.g.作业要领书
 
 **这也是为什么我3个视频产生的收益能比有的账**号做200多个视频的收益还多十几倍的原因
 
-![](img/e143ed40b79c2d3a01ef00dab60a6808.png)
 
 ![](img/53274b7283c167f148e000e667f9e1d8.png)
 
@@ -256,7 +255,6 @@ e.g. 即使佣金少我也会带类似于京东京造的百货模式的牌子
 
 你没卖这个品类，卖了别的，有佣金，例如推京造充电宝的链接，他买了京造的椅子，毛巾和雨伞
 
-![](img/c834de6fb1b011a7854e75b9caa02dc0.png)
 
 ![](img/ccfa81f377d3b6314a10b26e21033ffb.png)
 
@@ -404,7 +402,6 @@ e.g. 即使佣金少我也会带类似于京东京造的百货模式的牌子
 
 **#****图片效果：**
 
-![](img/d5b645f788a43673dfd47db231a13650.png)
 
 [02动图.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JacebVCffoYmSvxjYyec5NmznKb)
 

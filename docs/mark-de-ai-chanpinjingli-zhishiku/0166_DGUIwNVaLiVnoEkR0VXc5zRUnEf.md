@@ -188,7 +188,6 @@ print(&quot;Theoretical Variance:&quot;, theoretical_var)
 
 +   **统计量计算**：通过计算数据的均值与方差，并与公式  和  对比，验证几何分布的基本统计性质。
 
-![](img/0cda3364a0510d93d6d1272f0c3ed86f.png)
 
 ### 几何分布在机器学习中的应用
 

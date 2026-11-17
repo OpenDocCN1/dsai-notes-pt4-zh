@@ -24,7 +24,6 @@
 
 ☎️ 🛰️：ZhenyaLawyer
 
-![](img/13d383580c7595f3fc3a9191c2f72fca.png)
 
 # **震亚发展**
 

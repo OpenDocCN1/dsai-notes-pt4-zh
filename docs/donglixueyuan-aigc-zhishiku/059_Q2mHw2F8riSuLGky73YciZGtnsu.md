@@ -186,7 +186,6 @@ Midjourney 生成的封面图
 # **《蒙娜丽莎》画前**
 
 
-![](img/4e329febc110b662c2fc4f6d6c32557e.png)
 
 
 ![](img/ff25755d73c393c32df47c9e27ce172f.png)

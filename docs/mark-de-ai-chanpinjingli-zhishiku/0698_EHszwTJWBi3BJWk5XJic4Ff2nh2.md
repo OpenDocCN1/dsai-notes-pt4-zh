@@ -163,11 +163,9 @@ python -m cli.main
 
 界面将显示可选参数：股票代码、日期、大语言模型、研究深度等。
 
-![](img/8ca38926ae6d9c317a7e47e275e7891a.png)
 
 运行时会实时显示加载结果，可追踪代理执行进度。
 
-![](img/e0bb5bfcdda6f7733a71006e36f44810.png)
 
 ![](img/42b6791b5483882ac603cede2ec8f46b.png)
 

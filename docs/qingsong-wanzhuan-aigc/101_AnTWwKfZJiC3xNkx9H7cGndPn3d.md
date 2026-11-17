@@ -91,13 +91,11 @@ Use the uploaded product image exactly as it is regarding its design and identit
 
 ![](img/704afc017deda0e57713d5e74b9c3e2a.png)
 
-![](img/7ae4272cff851fb17fad7ec3a715a235.png)
 
 ![](img/35903c24517ae121e1ad3cf2b2cf7785.png)
 
 ![](img/8aac9126ca4dfed4b59b87319290240c.png)
 
-![](img/fe639d8df8e93952bf4d08fe75def8b5.png)
 
 ![](img/4b9f24cff472d7042b015f8a2e737302.png)
 
@@ -368,7 +366,6 @@ VISUAL DESIGN RULES:
 
 效果示例：
 
-![](img/6fc2e5a91b7cc877018a79d05dbd747e.png)
 
 ### 论文转白板风格
 
@@ -448,11 +445,8 @@ Remove all the tourists/people in the background behind the main subject. Intell
 使用简洁统一的构图，在丰富性和美感之间取得平衡，并以柔和的纯色背景衬托。
 ```
 
-![](img/d29eac0b60bb377f5a80299d972073b5.png)
 
-![](img/7478baec2ceba3257b28a4eb2cb94aa3.png)
 
-![](img/f1c43a1e67b5e5cf8a6dc1df18f63e89.png)
 
 ![](img/c80ff1585968cd41975a6974bce71d69.png)
 
@@ -516,7 +510,6 @@ Translate the text in the speech bubbles/captions from [Japanese/English] to [Ch
 
 测试示例：
 
-![](img/4dec7b9b1a5924867bc79e8dd28051e3.png)
 
 ![](img/ae9a8f3e18e794999e5f58d7b976ff27.png)
 
@@ -607,11 +600,8 @@ Role：日历插画提示词
 
 测试示例：
 
-![](img/b6972b5d4049aa311844cea741fafe59.png)
 
-![](img/bbd66f6e77b92913ab9fd47e370d80bd.png)
 
-![](img/c6255fb6fa7af99d6df5caa003d708df.png)
 
 ![](img/a95975e6edd1bff954b72c79158ab324.png)
 
@@ -720,9 +710,7 @@ Role：日历插画提示词
 
 > Via. https://x.com/0xbisc/status/1992952171432902793?s=20 在此基础上微调成了中文展示版
 
-![](img/001f4e29ae4d4269c4b254067a2cc9f2.png)
 
-![](img/de6ac1ad6ae3ff379753b6203cd15560.png)
 
 ![](img/4e3eee272371468afc4918f28c5c586b.png)
 
@@ -838,10 +826,7 @@ Clear Lighting: Facial features and clothing details need to be clear for the AI
 最后是底部的排版，请生成中文文字。居中写上小说名称，字体要有与原著风格匹配的设计感。在书名下方，自动检索并排版一句原著中关于该场景的经典描写或台词，字体使用优雅的衬线体。整体布局要像一个高级的博物馆藏品铭牌那样精致平衡。
 ```
 
-![](img/ca33ceed5e47c57c2ffab87776332358.png)
 
-![](img/96cf439363d739396f839445aad93f79.png)
 
-![](img/15b8167cffb920342e3f6be1a21bd8ce.png)
 
 ![](img/d3c1e95d89b0ae2b0e2038f8e7551f63.png)

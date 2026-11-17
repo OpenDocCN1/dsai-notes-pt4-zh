@@ -14,7 +14,6 @@
 
 > (后面是每张表的详细设定)
 
-![](img/3920808a3ca5f6c537612184add5e1ae.png)
 
 [gpt表格.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OMv6b0Rm5o5wUmxktEYchlJwnAf)
 
@@ -74,7 +73,6 @@
 
 >
 
-![](img/ba92431ce844036a77d4942aac18bbe9.png)
 
 [12月12日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fupyb5bX3o5uhMxhn3fcbk6Jn0r)
 

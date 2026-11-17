@@ -128,7 +128,6 @@
 
 >
 
-![](img/41459ed80ebce5689488843575147c3b.png)
 
 [DeepSeek从入门到精通-清华大学-202502.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TYGDbngi2oxq87xvbxEcJ2X3nJg)
 

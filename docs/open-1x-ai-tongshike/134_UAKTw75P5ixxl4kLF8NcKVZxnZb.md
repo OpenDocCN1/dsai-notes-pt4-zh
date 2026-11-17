@@ -122,7 +122,6 @@ Datawhale成立于2018年——是国内AI领域最大的开源学习组织，�
 
 到场约 200 人，邀请浙大AI协会创始人，阿里达摩院技术专家罗浩就在浙大的研究经历和工作心得，为浙大同学们做了分享和答疑交流
 
-![](img/60300b2882672f457b76d2fdecbd0731.png)
 
 ![](img/c06cc8bfbffdb629f29ffcbf493cc8f3.png)
 
@@ -164,11 +163,8 @@ Datawhale在华理，我们彼此陪伴了三年
 
 2024年03月23日，到场约 80 人。
 
-![](img/60621b90f1b85db7368d0a558a03f99c.png)
 
-![](img/017263b5547645a6bcb3304fe20f8cf0.png)
 
-![](img/f71cc9f1cc60127070708e71d28af518.png)
 
 ![](img/904752b77e6f685be8138cec0e2dce8c.png)
 
@@ -200,7 +196,6 @@ Datawhale在浙工大，学生不止于梦想
 
 ![](img/67807a55f9032e3dc1bbe0d73a0a7416.png)
 
-![](img/49dba8e3452296190646ae0789192dd6.png)
 
 ![](img/0d0121c2b5cbecaa39be51308b8ab1b3.png)
 
@@ -210,7 +205,6 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 2024 年 3 月 25-26 日，三场到场共约 100 人。
 
-![](img/7a24b7b0013de637b144251646371f08.png)
 
 ![](img/94651800f96d8a8c7f6b66e53976f611.png)
 
@@ -224,9 +218,7 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/ce5d2eafa7b27d8e80bb8558897eac1e.png)
 
-![](img/ea2b0efcaa028d0953d2b2080366e606.png)
 
-![](img/7a196ae80aac957b071903e7f923f622.png)
 
 ![](img/15c7c1f46ec090573216d37a9f220cdd.png)
 
@@ -250,11 +242,8 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 南京邮电大学工程与实验教学部党总支书记张强代表发言，并邀请阿里云、魔搭社区、趋动科技、燧原科技、智海 Mo、爱可生 等大模型生态合作伙伴的负责人到场与高校师生交流。
 
-![](img/8907b6f31c9c4bb337a8b7f1a34e93b4.png)
 
-![](img/3094148899320bd06c46bab60d0f143f.png)
 
-![](img/a696a714ee8b25a280d556c7fee80c36.png)
 
 ![](img/35920eb49d7948c7ae4d6f985a36f1b1.png)
 
@@ -266,7 +255,6 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/1c9fa725dba4de3860733dfaa2b6d9b5.png)
 
-![](img/e59fed5ead1c6749d81b8ecb57b0d46a.png)
 
 ![](img/f8ce0c339302cc280bfa603d2758fb63.png)
 
@@ -278,7 +266,6 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/c4ca390118bc4bc1be62f2d7aafabe18.png)
 
-![](img/ba112dc414e30ae934c265937587ecf2.png)
 
 ![](img/d66686db8955c6fc1145afec05402989.png)
 
@@ -288,9 +275,7 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ## 清华大学（深圳）研究院
 
-![](img/5b30f5b887d2a077ea7ffee62565abf0.png)
 
-![](img/db6a14c7213efcf6a9d7ffd37fbdda10.png)
 
 ![](img/f1f900d2940a524a0aebe8df32a2509c.png)
 
@@ -306,9 +291,7 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/77043f6480f1fda4ae0b02d46f559302.png)
 
-![](img/15c255a5f12edbea5cac2c6ac44308eb.png)
 
-![](img/4029851fcc45aff933041d0f8facaf63.png)
 
 ![](img/e93929a36170fa6df3053ce43f88f745.png)
 
@@ -320,15 +303,12 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/df80f95bb2c13e51bd7d4e60342624a9.png)
 
-![](img/4bdbaf7675c43778800e6163b33db14c.png)
 
 ![](img/d5e0997ea2501eb032dcae43215fe125.png)
 
 ## 陕西师范大学
 
-![](img/976331db6da4e45ea04f99096542b659.png)
 
-![](img/fb57fd0570d4939ce1d9874a56571409.png)
 
 ![](img/e1fb90c37edc8be73472b4824fcb94f3.png)
 
@@ -338,17 +318,12 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/dadb827072e073daca4a2d5e3778010b.png)
 
-![](img/47c466f39d4a8d73a8fee11087f7bf34.png)
 
-![](img/f7e0f24ea657aa805be05533aa6df78c.png)
 
-![](img/38684103c4394d77ead000b6c9a53f95.png)
 
 ## 华北电力大学
 
-![](img/dedf36b33aa17e6eb224f75ef3e64242.png)
 
-![](img/d5b26d884b80dd5bca647a17c5bfa1fb.png)
 
 ![](img/e8a0a7026371a3f3ab22ea6e66e620ef.png)
 
@@ -368,7 +343,6 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/7af37b0a5cf874fa278684fc9427b0fa.png)
 
-![](img/e2730c30dae353e35f4ccbdaab55ba54.png)
 
 ![](img/416564aa87cf16b244e184a33eb9bf69.png)
 
@@ -384,13 +358,11 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/c138e67d8f3eb1c2819691c89d602c8d.png)
 
-![](img/1caa78549fe68f70d5460e83fe74b53a.png)
 
 ![](img/6dec3cfea0aaba464e7271113f7e538f.png)
 
 ## 北京信息科技大学
 
-![](img/76c33a020e7b1b61636610365198537a.png)
 
 ![](img/c2871600548046d0d4fdacae6f634c7a.png)
 
@@ -400,7 +372,6 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/c07c2bc40a18d8d843164bd7e42d2781.png)
 
-![](img/5a9dd28c9ac3025d747e667547f57452.png)
 
 ## 东北财经大学
 
@@ -408,29 +379,20 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/c38885fbfc9358b3b5705267eefac1e7.png)
 
-![](img/5417363c11183dad65dfa2d9f58b0f67.png)
 
-![](img/e2e61a6df9bcb5b0ab0f6b6016db634a.png)
 
-![](img/4bc1dc199033421cfb60f145d86922c1.png)
 
 ![](img/39d37d02b0ffbf7aab83c1726c7ae1fb.png)
 
 ## 郑州升达经贸管理学院
 
-![](img/8976d7cd7e88c04ab562cd23e0351948.png)
 
-![](img/4efbd7bb12c586fdeece88ea27a75133.png)
 
-![](img/df68b934891f56b8fe254717613fe216.png)
 
 ![](img/3fb8527ae4cb9dc9b1d88cc61b9f32e7.png)
 
-![](img/769d6fc03c3f1da11f29f9a41645ebc2.png)
 
-![](img/ce58c392405ef65c3d8be4c12aeca450.png)
 
-![](img/0e4ffed872aa40e820721d73f5b09f90.png)
 
 ![](img/d4797d6f5ed1f8bbdbb07c801692006e.png)
 
@@ -454,7 +416,6 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/f77db71ff1952e7eca7c8a8972aa0d15.png)
 
-![](img/fa2505a05c4e7f2e7193b7a7df559810.png)
 
 ![](img/7387be1e58d1089b7a8a27c597ce8039.png)
 
@@ -462,23 +423,17 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/4c3c3bde6fdb5de2875fb8f455770b1a.png)
 
-![](img/61840ec4f2b5c653cb2ec8d75631a513.png)
 
-![](img/21c6f8ba9e82f922b4eb6339ecaf7697.png)
 
 ![](img/e8188810444666d77302b3ff7cd3e01a.png)
 
-![](img/32a2cfda89b5928ec4e8717e50fb8b13.png)
 
 ![](img/ecabfdeee6ff1323e56531755e072565.png)
 
 ## 北京航天航空大学
 
-![](img/1b9a4fe40737b667f8347a57e4474462.png)
 
-![](img/8c687a6d231449eddd07d71f07e8c641.png)
 
-![](img/cf14e3556082e437198c8bf90132a479.png)
 
 ![](img/ba6dc9d8ef38ff56c65ccb3d037f75a2.png)
 
@@ -486,7 +441,6 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/cabc246c57e900fcf82b39e33b4ce08a.png)
 
-![](img/f933dc6941afe83cfae22ec5e5775655.png)
 
 ![](img/ed6522d5126eb4b50fff4d7d57479313.png)
 
@@ -498,21 +452,15 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ## 闽南师范大学
 
-![](img/d58a69e26466276552ae91b70bd1a854.png)
 
-![](img/cf43eacd2c720881342041034d48e7fa.png)
 
-![](img/7ad062e30b31836e967adabd07131625.png)
 
-![](img/876404edca94d74d4d58d6133fdf814f.png)
 
 ## 国防科技大学（长沙）
 
 ![](img/6c476d643e0877c3a2dbc7918cc50b3d.png)
 
-![](img/26324430a23797baba88f827ac764921.png)
 
-![](img/2752d2f2523db1fabece673fdf7b9645.png)
 
 ![](img/6e4f1e229f42f7d33475eb9f7ce80a13.png)
 
@@ -528,17 +476,13 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ## 苏州大学
 
-![](img/d130a17dea98d26caf9c608d93961bd2.png)
 
-![](img/b7a26e4a28d10eb661c51abf3ab22011.png)
 
 ![](img/3f2bc04e3a0d5e89e3ae9ed2762ae32b.png)
 
 ![](img/804c52c654414ecbc9ac0a2224a2ad16.png)
 
-![](img/f26d0a65222fa365a3224da0c0b7d0c1.png)
 
-![](img/15f1e71a940528c6e3415fd839661c2f.png)
 
 ## 杭州电子科技大学
 
@@ -550,13 +494,11 @@ AI+X高校行：Datawhale见面会圆满结束！
 
 ![](img/4f0041072b2672b81a466bb9772bbf91.png)
 
-![](img/0a382e93671acc5be8941f4e9d70a044.png)
 
 ![](img/3303914cd40224e137ffc1f476133322.png)
 
 ## 上海科技大学
 
-![](img/aea5c294c1a54fbd12c230b33203801f.png)
 
 ![](img/0fae9a13d86c183cc152cf7cba62d6d4.png)
 

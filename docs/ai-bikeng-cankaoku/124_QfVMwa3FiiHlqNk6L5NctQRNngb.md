@@ -24,9 +24,7 @@ https://github.com/PicoTrex/Awesome-Nano-Banana-images
 A beautiful woman wearing a pink qipao, adorned with delicate floral accessories on her head and colorful blossoms woven into her hair. Around her neck is an elegant white lace collar. One of her hands gently holds several large butterflies. The overall photography style features high-definition detail and texture, resembling a fashion magazine cover. The word “FASHION DESIGN” is placed at the top center of the image. The background is a minimalist light gray, designed to highlight the subject.
 ```
 
-![](img/ce6fa7ce931d983ea399356dfeaef919.png)
 
-![](img/eefdabadf5f8ad52cc378d3c1f1f260a.png)
 
 超真实3D手办：
 
@@ -42,7 +40,6 @@ A beautiful woman wearing a pink qipao, adorned with delicate floral accessories
 Create a 1/7 scale commercialized figure of the character in the illustration, in a realistic style and environment. Place the figure on a computer desk, using a circular transparent acrylic base without any text. On the computer screen, display the ZBrush modeling process of the figure. Next to the computer screen, place a BANDAl-style toy packaging box printed with the original artwork.
 ```
 
-![](img/271134fed4cf9e451a1221bb59f37abe.png)
 
 ![](img/f4cceef8a3bf5733e42b80e2af80a26e.png)
 
@@ -267,7 +264,6 @@ Transform uploaded photos into cinematicportraits, masterpieces, photorealism, c
 
 ### 9宫格照片（[来源](https://x.com/songguoxiansen/status/2000055154415182214)）
 
-![](img/2e82c6bf558eb7f9842bae8731ab3226.png)
 
 ```
 {

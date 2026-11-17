@@ -2,7 +2,6 @@
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/L2fKd4pzoo2wqWxKodKcQcjon3c](https://qqs7y1hozd1.feishu.cn/docx/L2fKd4pzoo2wqWxKodKcQcjon3c)
 
-![](img/c7fb86af738fb9b8111390f582ed43bc.png)
 
 最近，我在负责重构产品的会员积分系统。
 
@@ -96,7 +95,6 @@ Notion 极具结构美感，很适合存东西。
 
 以前做业务决策，我问完 AI 得到结论就结束了。两天后要写逻辑，我和 AI 都忘了为什么这么选，只能重来。现在，我强制自己写一份最小文档：
 
-![](img/0d1fa63928db9954299987de6cd4e4a4.png)
 
 ### 动作 2：把“聊天记录”变成“状态驱动的 Checklist”
 

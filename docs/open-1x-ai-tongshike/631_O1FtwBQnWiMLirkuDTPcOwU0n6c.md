@@ -34,6 +34,5 @@
 
 1.  初级认证 **Agent Engineer**
 
-![](img/c39ba500c2fe6ac394b6efa5c06f4e5c.png)
 
 ![](img/241eb4431f74cc15f1aef7b1704d4949.png)

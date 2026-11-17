@@ -26,7 +26,6 @@ https://www.langchain.com/
 
 https://python.langchain.com/docs/introduction/
 
-![](img/9b1f60161be27dc56530191b49a030e7.png)
 
 LangChain Tutorials
 

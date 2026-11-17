@@ -466,9 +466,7 @@
 
 ![](img/0e9f5ab62eef1e879883467d04802f6d.png)
 
-![](img/da02c969067316b601a6b1d25ac08c89.png)
 
-![](img/41a1acfa25b96dddb2ec2178ffa97986.png)
 
 ![](img/73b569f31ea1c66afdf9987fec97c648.png)
 
@@ -592,15 +590,10 @@ mini航海的经历也让我明白：
 
 钱不是唯一目标，热爱和长期愿意坚持的事，才是我真正要追寻的方向。
 
-![](img/93eaf3420fbc4c7d37b708b075271f40.png)
 
-![](img/9fb4f7a2807baf08a48235ae995b0646.png)
 
-![](img/f1cb84812bb26b79994cdf040aa77182.png)
 
-![](img/dd6a8d8dd8cc7b3965f52a837904e1b2.png)
 
-![](img/e5e4198f5cc0c94b55b98a7dfa226d32.png)
 
 ![](img/be02c2d61f3576dffb050d859c51aa65.png)
 
@@ -610,7 +603,6 @@ mini航海的经历也让我明白：
 
 ![](img/59b5e67f56f5e128780d3caffd8b802e.png)
 
-![](img/9bd6d88f23897047d9aab3e5d4620106.png)
 
 ![](img/43c3f2e44187dd034422efadce338d46.png)
 
@@ -648,7 +640,6 @@ mini航海的经历也让我明白：
 
 ![](img/205211f406f81f6eb7ded5d1477c79a9.png)
 
-![](img/2cf9fd9d13b775baf33406a24c98a699.png)
 
 ![](img/b712fc15f0243956aaae0921ff70eabe.png)
 
@@ -686,7 +677,6 @@ mini航海的经历也让我明白：
 
 ![](img/07716c86595601f322a1c87fad8ecd49.png)
 
-![](img/92474c74b80196d276a06f6d9f4be078.png)
 
 ![](img/0cb2a90d75cf07da2ee6babc74d7f32f.png)
 
@@ -718,23 +708,15 @@ mini航海的经历也让我明白：
 
 虽说是租来的房子，但我愿意添置装饰，让空间变得温馨。每天推开门，看到整洁的小屋，心情就会放松。
 
-![](img/b5a24bb57a8158ae32b1a35e64ebdc43.png)
 
-![](img/4187f0beec60f1783689d9f4c916d6bb.png)
 
-![](img/61d7e2550a6d2324e9c64132a7a844e5.png)
 
-![](img/1093e29373bca832f13ba3f553c86ceb.png)
 
 我也喜欢在厨房琢磨，做些小料理，偶尔给自己一点“烟火气”的犒劳。
 
-![](img/a839aa838869453c93be88da6491e508.png)
 
-![](img/a440083ca981cdb8a912c1c0f35061d0.png)
 
-![](img/5e564f06d8b8cfde6c31fea420f0ef5f.png)
 
-![](img/127abee322021cd5b7c5e3fe3eb6aeec.png)
 
 ![](img/f2d451205c650a95f83e59f81818951f.png)
 
@@ -828,7 +810,6 @@ mini航海的经历也让我明白：
 
 ![](img/53984e2a826605360331fe69fe670665.png)
 
-![](img/76e817631deea5024277756089278b2f.png)
 
 ![](img/58e9ffab896fb95cb5763058397a8c90.png)
 
@@ -844,7 +825,6 @@ mini航海的经历也让我明白：
 
 ![](img/f7d95e287e43bcfcffd197a6decd4bad.png)
 
-![](img/c55fc820ba3746ceb5db8b4d8d671839.png)
 
 ![](img/9c9f7138c4809133ba0dcfee3677efab.png)
 

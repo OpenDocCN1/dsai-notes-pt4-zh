@@ -77,13 +77,11 @@ DOUBAO CreationAgent v1.0Beta 闪亮登场!
 
 他就能生成20个，别急，还有下一步。
 
-![](img/87d794cfe8104d8a9839fc3d2f50c26d.png)
 
 ```
 背景换成不同国家的标志性建筑
 ```
 
-![](img/b13b479b45222fd78c1f4b07e5dd8b8d.png)
 
 然后还有。。。
 

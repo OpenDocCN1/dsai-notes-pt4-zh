@@ -183,7 +183,6 @@ API节点是基础节点类型之一，您可以通过该节点，将已有服�
 
 1.  在API调试环节，可以通过表单或JSON方式填写输入参数并点击运行，运行成功后点击【保存】。
 
-![](img/23dc674adb5307aa272ec9248692a741.png)
 
 ![](img/a2c290867a683fbc27f4b384e293db45.png)
 
@@ -508,17 +507,14 @@ It is important for people to take risks, both in their professional lives and t
 
 自动生成的雅思大作文助手如下：
 
-![](img/3157156c250c89fa5e6fe0a883368f3a.png)
 
 1.  应用调试
 
 使用AI自动配置的内容，在对话框令应用生成雅思大作文，结果如下：
 
-![](img/09c3473033260f7efc5b67886bac6829.png)
 
 发现出现了点问题，输出的内容为中文，修改提示词如下，再次提问输出内容如下：
 
-![](img/2238d22c76c2427f38f298efd9b7dced.png)
 
 可以看到输出内容如下：
 

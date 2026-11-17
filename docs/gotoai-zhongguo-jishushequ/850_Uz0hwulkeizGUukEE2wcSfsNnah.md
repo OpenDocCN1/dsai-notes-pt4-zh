@@ -24,7 +24,6 @@ GotoAI 自营人工智能产业园
 
 # 三、大学生AI就业路线图
 
-![](img/f911fdd1cb9205b8ad63d2fb44cf3002.png)
 
 ![](img/24fbc2e9d48fd3224595241c45f19aa1.png)
 

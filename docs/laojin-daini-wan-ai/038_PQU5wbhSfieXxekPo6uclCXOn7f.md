@@ -66,11 +66,9 @@ GLM-5在Coding与Agent能力上达到当前开源模型最优水平（SOTA）。
 
 **OCR.z.ai**：图文解析，处理手写体、表格、印章这些复杂场景。
 
-![](img/4f4369a29fb8242df83aceedfcbbb365.png)
 
 **Image.z.ai**：图像生成，GLM-Image模型。
 
-![](img/0abb811fa00e8fd96799e00a6af05edd.png)
 
 **Audio.z.ai**：语音合成和音色克隆。
 

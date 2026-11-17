@@ -203,7 +203,6 @@
 
 **功能**：将输入的故事整理成6幕剧本,每幕包含一个核心视觉镜头。
 
-![](img/2ac9f6f0e8a483631946e5de07e633c0.png)
 
 **参数配置：**
 
@@ -287,7 +286,6 @@ Act I: 森林的呼唤
 
 **功能**：将6幕剧本转换为6个关键帧的图片生成提示词。
 
-![](img/6217eb68d2c69ad01a537a05b0ba9401.png)
 
 **参数配置：**
 
@@ -325,7 +323,6 @@ Act I: 森林的呼唤
 
 Output Parser Schema 配置：
 
-![](img/90694e08e2e7dc843f3d189396c391e6.png)
 
 ```
 [
@@ -354,7 +351,6 @@ Output Parser Schema 配置：
 
 **类型**：splitOut
 
-![](img/32ffb47a2d6102b44b423f61339f7b3f.png)
 
 **配置参数**：
 
@@ -372,7 +368,6 @@ Output Parser Schema 配置：
 
 **功能**：从Google Drive下载之前上传的参考图片。
 
-![](img/d63742353e85bba6ccd4a883f4249464.png)
 
 **参数配置：**
 
@@ -456,7 +451,6 @@ Output Parser Schema 配置：
 
 **模式**：combineByPosition
 
-![](img/bf9138f1dc1541d5e9766b381f9991c8.png)
 
 **功能**：合并生成的图片URL与关键帧描述信息。
 
@@ -481,7 +475,6 @@ Output Parser Schema 配置：
 
 **模型**：google/gemini-2.5-flash-preview
 
-![](img/56226892fe2c2d55c267ef699bedc5ea.png)
 
 **Prompt 定义完整内容：**
 
@@ -540,7 +533,6 @@ Output Parser Schema 配置：
 
 **功能**：验证视频提示词输出格式(video_prompt数组)。
 
-![](img/b41032e9498920bb7a41e08aea7c4f9d.png)
 
 **连接关系：** → Merge
 
@@ -618,7 +610,6 @@ Output Parser Schema 配置：
 
 **功能**：[等待fal.ai](http://xn--fal-9o3fo93j.ai)后台处理图生视频任务。
 
-![](img/9b2f3f789eaeeaa197e081cf488126a2.png)
 
 **连接关系：** → 轮询(海螺)
 
@@ -654,7 +645,6 @@ Output Parser Schema 配置：
 
 +   **COMPLETED**：已完成
 
-![](img/6902385023711c3d5bc27974d785cfa3.png)
 
 **连接关系：** → Switch
 
@@ -695,7 +685,6 @@ Output Parser Schema 配置：
 
 +   **输出 2 (IN_QUEUE)** → Wait1 (继续等待)
 
-![](img/7c3bede03fb0aab9393e6a214fb6d32b.png)
 
 ---
 
@@ -713,9 +702,7 @@ Output Parser Schema 配置：
 
 **功能**：[下载fal.ai](http://xn--fal-y28dw501a.ai)生成的视频结果JSON文件。
 
-![](img/d516ecada3bffeeb0f304728fd0cf1f9.png)
 
-![](img/4d3062920a9350c791e33d1fc469dbd6.png)
 
 **连接关系：** → Extract from File
 
@@ -731,7 +718,6 @@ Output Parser Schema 配置：
 
 +   [data.video](<http://data.video>).url
 
-![](img/297fdf3910c1fc9b3127c2e5ef9acd1b.png)
 
 **输出示例：**
 
@@ -756,7 +742,6 @@ Output Parser Schema 配置：
 
 **功能**：收集所有6段视频的URL,聚合成一个数组。
 
-![](img/67195fa104af7303cd34189155e74737.png)
 
 **输出结构：**
 
@@ -857,7 +842,6 @@ Output Parser Schema 配置：
 
 此时会进入模板编辑器（Template Editor）界面。
 
-![](img/32690705ccac6c1b3fa9b8273359f5da.png)
 
 ---
 

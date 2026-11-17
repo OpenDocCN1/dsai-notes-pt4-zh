@@ -188,7 +188,6 @@ Instrumental：是否创建纯无歌词曲子接下来，就可以开始创建�
 
 [Dancing through the Cruelty.mp3](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IgkJbjlQxoEn3IxUkDJcUl9hnXb)
 
-![](img/be53a2152823a245d190be924e8231a9.png)
 
 [a06e1167b2af0e527a804ddaa4f682f3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B4JUbw9Z4opNLbxGu24ci96HnUc)
 

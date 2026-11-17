@@ -52,7 +52,6 @@ Hugging Face 推出的基于各种免费开源大模型的聊天工具——Hugg
 
 另外，新推出了 iOS app 版本，据说反应速度比较快。
 
-![](img/5ef7dd3508921cf3f7e1daa7a2cda423.png)
 
 # DuckDuckGo AI Chat
 

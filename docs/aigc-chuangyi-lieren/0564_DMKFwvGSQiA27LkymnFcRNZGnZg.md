@@ -202,25 +202,17 @@
 
 喜欢的朋友可以识别二维码，安装使用：
 
-![](img/d1be6b7e4cd3dfaf069586ed88b8e454.png)
 
-![](img/14d23b0e49987387d70e6c8344f8435b.png)
 
 ![](img/30e6b88fa339808c0bd8301ed9ea58ad.png)
 
-![](img/9dfbddd9da5bfe36c059194619e4e878.png)
 
 ![](img/fc6f641ea36b73cab9e2583ce794d649.png)
 
-![](img/2e84b45c3d12652eb45cfc4ddac0a6be.png)
 
-![](img/cc058bc92dfe0da6f57490b8b5597cdb.png)
 
-![](img/a12ed5401be037c3cb87f73f854ee53d.png)
 
-![](img/5640423ab239a546d2f6ba7bc469a0ae.png)
 
-![](img/d568d678430eed234eb467d71f7cc55c.png)
 
 ![](img/0134fcb2e9a8815faaad7f5fb302b639.png)
 

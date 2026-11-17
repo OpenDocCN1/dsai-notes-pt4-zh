@@ -49,7 +49,6 @@ Atom大模型默认支持4K上下文，利用位置插值PI和Neural Tangent Ker
 
 [G](https://github.com/FlagAlpha/Llama2-Chinese/)itHub [-](https://github.com/FlagAlpha/Llama2-Chinese/) FlagAlpha/Llama2-Chinese: Llama中文社区，最好的中文Llama大模型，完全开源可商用 下载源码： GitHub - FlagAlpha/Llama2-Chinese: Llama中文社区，最好的中文Llama大模型，完全开源可商用
 
-![](img/17d22f07f59cd72d1169175d101f02d9.png)
 
 2、 可在 Atom-7B-Chat Hugging Face 仓库获取模型
 

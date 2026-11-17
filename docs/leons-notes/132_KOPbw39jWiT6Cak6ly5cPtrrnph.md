@@ -6,7 +6,6 @@ Leon Zhang, Mon. 10, 2024
 
 #月度总结 #个人成长 #Life Blog
 
-![](img/f30edd8764e3c1d5b622969326f1e853.png)
 
 > Thinking will not overcome fear, bat action will.  思考无法克服恐惧，但行动可以。
 
@@ -58,7 +57,6 @@ Leon Zhang, Mon. 10, 2024
 
 > All the best things in my life came to me unexpectedly. 美好之事总是不期而至。
 
-![](img/721bb4ccbcca0a5b1717cfaa6b082ac2.png)
 
 意义对于每一个人来说都是不一样的。有些人觉得登上高峰就很有意义，对于鹰来说，是再平常不过的一件事。很多事情，不是因为有意义才会去做，是因为做了之后才发现真正的意义。
 

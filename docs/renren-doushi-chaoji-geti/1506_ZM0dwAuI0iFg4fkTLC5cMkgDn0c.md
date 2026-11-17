@@ -772,7 +772,6 @@ A close-up portrait of a beautiful young woman outdoors. She has flawless glowin
 
 一张近距离外拍美女写真肖像。她有晶莹光滑的肌肤,粉嫩脸颊,明亮双眸。长长的黑发柔软披散在肩上。阳光在她发间和精致脸庞上打下一圈光晕。画面色彩鲜艳,细节精致,背景虚化柔化。
 
-![](img/caa3614c08db4dd40ef43b01c31e1654.png)
 
 你可能发现了，对于画质并没有很好的表现出来，我们对模板的参数做一下微调
 
@@ -832,7 +831,6 @@ A light pink floral print sundress photographed hanging against a white backgrou
 
 一件淡粉色碎花连衣裙悬挂在白色背景上拍摄的电商产品照片。这件裙子有细肩带,V字领口,及A字型飞扬的裙摆。柔和的散射光线照亮裙子上精致的花朵图案和薄纱质感的细节。图像聚焦凸显裙子,背景模糊柔化。达到8K超高清分辨率的商品图片。
 
-![](img/3867121f74e7638f058b5d38850e088b.png)
 
 哎呀！图有点素是不是，那咱给他个模特？
 

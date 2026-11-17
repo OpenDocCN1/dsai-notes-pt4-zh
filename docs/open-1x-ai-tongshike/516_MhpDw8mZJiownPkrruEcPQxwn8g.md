@@ -47,7 +47,6 @@ Deepfake技术虽然在多个领域展现出其创新潜力，但其滥用也带
 |  |  |
 | --- | --- |
 
-![](img/c15e7413329ee58d49ed9d38849c3b74.png)
 
 [下载.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LJ4Zbgu2woT70jxbBAfcmHnhnNg)
 

@@ -32,7 +32,6 @@ landscape of holographic futuristic brick city made by fractal geoglyphic zentan
 
 字节海外推出的 ChitChop 是一款基于云雀大语言模型的 AI 集合工具产品，提供多达 200+的智能机器人服务，涵盖创作、工作、AI 画画、娱乐、AI 学习、生活等六大场景，支持文章生成、文件剖析、搜索互动等功能，尽管使用场景广泛，但在准确性方面仍需提升。
 
-![](img/eba92cd5834c8a3f65148838d6871704.png)
 
 ![](img/1acac0d07ec19567e3592f9d237c6451.png)
 

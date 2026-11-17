@@ -137,6 +137,5 @@
 
 ![](img/ad105869db205da9dcf939c3560ef3bc.png)
 
-![](img/b4d4d74e7e79cdd3ab5ca7ef88525fc9.png)
 
 ![](img/56a042e6c1072a39d52ffda42607c8fa.png)

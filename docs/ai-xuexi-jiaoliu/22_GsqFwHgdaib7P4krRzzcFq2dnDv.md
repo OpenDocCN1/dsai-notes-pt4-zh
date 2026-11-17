@@ -19,7 +19,6 @@
 
 ![](img/c6815f8a2154d4a47b9fb1a4b619983d.png)
 
-![](img/cc865fdc147b2b8abccee62d425273b8.png)
 
 ![](img/e995c569d75296e5446f14bffc8687c2.png)
 
@@ -57,11 +56,8 @@
 | **辅助参数** | 众横比3:4 | --ar 3:4 |
 | **汇总** | A Chinese swordsman wearing Hanfu, holding a sharp weapon, with a determined look and heroic posture::A mountain forest in the early morning, shrouded in mist, with sunlight filtering through the leaves, giving it an exceptionally fresh look::Traditional ink painting style, with simple and smooth lines, a majestic atmosphere, and full of classical Chinese beauty:: A bird&#x27;s-eye view, displaying the swordsman&#x27;s upper body in great detail, showcasing his resolute and unyielding temperament,Natural light, with the sun&#x27;s rays shining through the leaves and casting soft shadows on the swordsman, adding a sense of mystery and romance to the scene --ar 3:4 |  |
 
-![](img/44c8d40a69072458869ecaa53b07cdc6.png)
 
-![](img/13df4a4b73e5edafbfcc5c7672dacaa9.png)
 
-![](img/e4a1981176fb309822f84c1153526bc6.png)
 
 # 案例4
 
@@ -74,38 +70,24 @@
 | **辅助参数** | 众横比3:4 | --ar 3:4 |
 | **汇总** | A masked Chinese warrior in a futuristic world, A high-tech futuristic city filled with robots and flying vehicles, with towering buildings reaching into the clouds::Science fiction and futuristic, with a bright and intense visual effect and sharp lines::A low-angle shot, emphasizing the visual effect and creating a sense of awe in the viewer,Cold fluorescent lighting, creating a cold and ruthless atmosphere --ar 3:4 |  |
 
-![](img/ca87ff8032c4865acdb2b00c30300166.png)
 
-![](img/a167ceae111c38e2a6869f9a2ff5dd2d.png)
 
 ![](img/1100d254f4a5d0430919ae9d9ea1223e.png)
 
-![](img/6216695c2d5e2b2b7209c34275b4c6b7.png)
 
-![](img/fb13a8fb6d3309ab16422e165befdec5.png)
 
-![](img/1504639348b63ce6edaeb448f19a7c09.png)
 
-![](img/6e88333f8d259356ace235852eaaa14d.png)
 
-![](img/f63a9809596c537090b1c433db577d5e.png)
 
 ![](img/6da4db006945f67c9e0843a88590c808.png)
 
 **Digital **avatar, solid color background, futuristic and technological style, fashionable, front-facing view, highlighting the features and expression of the digital avatar, soft lighting emphasizing the contours and details, highlighting the three-dimensional sense of the digital avatar,3d,oc rander --ar 3:4
 
-![](img/d03b830b93b890c84ea6d572fc9adcab.png)
 
-![](img/69c655ef582ae2012844d37d800ec9a3.png)
 
-![](img/12ce2dad15c6e9edbb54f29a0d6d3011.png)
 
-![](img/80902ba142c43ec81ebbbdb2d54c77c5.png)
 
-![](img/f19939e8bba1b21c611f59d295a8dbcb.png)
 
-![](img/6fd831d991d0c5fe0aa65ccf81dfb132.png)
 
-![](img/7d4e95c8170989bed374c5ff917edbfb.png)
 
 ![](img/492aff3613f5d541e9345befe77cdc96.png)

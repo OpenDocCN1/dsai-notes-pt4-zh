@@ -72,7 +72,6 @@
 
 ![](img/82efe4c471937b2dcd40521b0c56a619.png)
 
-![](img/cf2fa0247283617d0c8b643960b1d058.png)
 
 ![](img/d7894d4f33dfea07d2a9717cc2d8c2e0.png)
 

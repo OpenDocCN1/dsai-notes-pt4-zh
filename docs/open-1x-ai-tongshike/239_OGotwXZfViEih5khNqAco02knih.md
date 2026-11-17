@@ -14,7 +14,6 @@
 
 **双亲照片**** ****+**** **提示词 👉🏻
 
-![](img/fe983f78392876093a8b32414274ad87.png)
 
 ![](img/fcffec7e8d96c1e6adabd9324f5c0c8d.png)
 
@@ -58,9 +57,7 @@
 
 ![](img/661092482fadac3f811698ed740b5883.png)
 
-![](img/3828dbafae3f44ddfa5561e39636b510.png)
 
-![](img/a855af243c2d87a7710777d15c1c65a2.png)
 
 ![](img/60f47234423f7ab352b258240fee5b20.png)
 
@@ -68,7 +65,6 @@
 
 ![](img/23fadafbbfacd10dd343d7e2608ec4f2.png)
 
-![](img/84c640ec237869c28e6b61f7911bde5f.png)
 
 ![](img/cb8bc213ad38d97af94358002608742b.png)
 

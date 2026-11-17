@@ -190,7 +190,6 @@ submit.to_csv(&#x27;submit1.csv&#x27;, index=None)
 
 在提交结果处提交，提交 **submit.csv **文件，在排名结果页查看自己的成绩排名。
 
-![](img/92f430360efbd3542ba107b60308f675.png)
 
 # **进阶技巧**
 

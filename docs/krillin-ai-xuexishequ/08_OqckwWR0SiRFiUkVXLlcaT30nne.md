@@ -36,7 +36,6 @@ https://introtodeeplearning.com/
 
 +
 
-![](img/4fb2d8d9754c6b032ce23dfe67c9263c.png)
 
 [6S191_MIT_DeepLearning_L1.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PRREbkrlFok29mxyQlRcb06gn1d)
 
@@ -44,7 +43,6 @@ https://introtodeeplearning.com/
 
 ## 【第2课】循环神经网络，Transformers，注意力（Recurrent Neural Networks, Transformers, and Attention）
 
-![](img/b5814175469bf9e1b4ffd9ed61aa92c4.png)
 
 [6S191_MIT_DeepLearning_L2.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KET0b07A6oYKW7x8knwcKtmxnxI)
 
@@ -52,7 +50,6 @@ https://introtodeeplearning.com/
 
 ## 【第3课】卷积神经网络 CNN
 
-![](img/042e6286b5555b37be6351bc76f27f38.png)
 
 [6S191_MIT_DeepLearning_L3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A3rFbAcBJoGM7Fxyiovc3Ug3nyX)
 

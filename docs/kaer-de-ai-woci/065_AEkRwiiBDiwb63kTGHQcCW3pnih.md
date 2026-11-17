@@ -8,17 +8,13 @@
 
 ![](img/bf89666d03baf42cd8fa69318b5a509e.png)
 
-![](img/293da1e89f05553633ae939783cc8637.png)
 
 ![](img/5c0daefaa20248c14a9aa8f076a746a0.png)
 
-![](img/3e269ff9b3a2db801688ac6295ad16fd.png)
 
-![](img/165cf31a1a12a178a94aa055342be6e8.png)
 
 > 面条延伸扭曲，幻化成中国龙的影子从碗中腾起，汤汁飞溅化作火焰光晕，厨师露出惊讶的表情，金龙身上逐渐冒出七彩光晕飞向天空，风格夸张热血，模仿动漫美食战斗场景
 
-![](img/826a1b50fa9d557f88241d6aa19766b1.png)
 
 ![](img/0a3bebdffc112f009ac626fe5389fee0.png)
 
@@ -30,15 +26,12 @@
 
 > 草图中的建筑逐渐搭建成实景
 
-![](img/fd9cce89b20a8e58069d727811d8252c.png)
 
 ![](img/b968139c25513f055a460ea76c7f96f5.png)
 
 > 无提示语，直接生成
 
-![](img/6b615fe5b76584823cc1a90e229964df.png)
 
-![](img/8f998ab7e60fbdfb956f1a2625326d9d.png)
 
 ![](img/fd44e910495c1534afc20685269bce54.png)
 
@@ -50,15 +43,12 @@
 
 > 女孩向后转身跑进动漫海报里
 
-![](img/71d11361924a1916693e89362d47544a.png)
 
 ![](img/115436b4588688f081ac9dcb28f68ea1.png)
 
 > 无提示语，直接生成
 
-![](img/b6ead4ce6716dc1a2ff7a0dd99d77331.png)
 
-![](img/fd8e742afda1e280d2a314ff5dc8835e.png)
 
 > 无提示语，直接生成
 
@@ -74,6 +64,5 @@
 
 > 超级英雄向前快速穿越飞行
 
-![](img/eb410f20c16a2f70a1ce301cf90d8025.png)
 
 ![](img/40587df13ab840a67cbc6caf66e4b634.png)

@@ -138,9 +138,7 @@
 
 ### 🐷 3.1 实验 1: 单边加长句子
 
-![](img/21122b9dc351a97f4795c96bb5339640.png)
 
-![](img/1bf963a722ce6beb00cf5c4fb6137621.png)
 
 ![](img/62f5ab3b8c59eea76faaad10b770b7a6.png)
 
@@ -166,9 +164,7 @@
 
 ### 🐰 3.2 实验 2: 单边加长与内容相关性
 
-![](img/cf1750ef5f2453e58ab78f7029b9bccb.png)
 
-![](img/e82c13137ec401587e07338dcbfafc22.png)
 
 ![](img/c456f309529179ed59c80e5cfb360c55.png)
 
@@ -190,9 +186,7 @@
 
 ### 🦊 3.3 实验 3: 双边加长与内容相关性
 
-![](img/6b2f2dec64f32c6cf2dcdc2c5303ce72.png)
 
-![](img/2fc602cb8a09bf56409a7f4b51d5a3cf.png)
 
 ![](img/5e20edc2a05a284598808a5b3c0066bc.png)
 
@@ -216,9 +210,7 @@
 
 ### 🧐 3.4 实验 4: 双边加长与内容相关性 (相关/不相关)
 
-![](img/55bd740d62078f2bdbaa62631a88e12e.png)
 
-![](img/073651d4cd6fc8c0ba510f09b37603e3.png)
 
 ![](img/bee9f84f063c2d569e48cd64a8190b45.png)
 
@@ -252,9 +244,7 @@
 
 ### 🤖 3.5 实验 5: 关键词重叠与无关内容
 
-![](img/8647c8c73d26a799fe8198ed02b855b8.png)
 
-![](img/6bffd5c1f75acbcab318ea6a4eaddfa0.png)
 
 ![](img/aecc08f3564982111aa298d8c71804ff.png)
 
@@ -344,9 +334,7 @@
 
 ## 📒五、实验小测试解密
 
-![](img/d1528fc344303936334419bb11527d70.png)
 
-![](img/62d02ae265e0bbd7392479d81ee510e8.png)
 
 ![](img/a62b08692bb63460f76a4136462643c5.png)
 

@@ -14,7 +14,6 @@ https://azure.microsoft.com/en-us/free/students/
 
 https://learn.microsoft.com/zh-cn/azure/education-hub/about-azure-for-students
 
-![](img/cb18d5065e3597ae8c4c289a4935e5ce.png)
 
 +   进阶策略：
 

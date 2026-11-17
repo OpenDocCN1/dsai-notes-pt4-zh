@@ -46,11 +46,9 @@
 
 1.  设置 Header Editor插件
 
-![](img/eed47554a24b9db1acc12d799ae93acb.png)
 
 ![](img/59e4f63c916dd0767c5e43a02c6e0853.png)
 
-![](img/62fe43a328245a437c4d09eac1a97412.png)
 
 ![](img/4378f8511c2cb06b2c07b90a39e17ffa.png)
 
@@ -60,11 +58,8 @@
 
 > 🔗链接：https://www.kaggle.com/account/login?phase=emailRegister&returnUrl=%2Fcompetition%2FInclusion%E3%83%BBThe+Global+Multimedia+Deepfake+Detection
 
-![](img/4d365781c23689309ad3041c8f6fc3d8.png)
 
-![](img/b2ffc12e7a888f5310f7d02ba486a411.png)
 
-![](img/89c69b66b54cedf0b7428df9a13c9c98.png)
 
 ![](img/4ef526f280c1113d4551c9e5bf408611.png)
 
@@ -108,7 +103,6 @@
 
 1.  复制项目内容，启动项目
 
-![](img/18a187212ff050a3528c704de1962679.png)
 
 ![](img/584d6bee76409f5252bcc03ff5d3a949.png)
 

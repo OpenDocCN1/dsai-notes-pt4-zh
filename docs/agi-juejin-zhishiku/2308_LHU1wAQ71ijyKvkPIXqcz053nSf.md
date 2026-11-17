@@ -8,11 +8,9 @@
 
 ## 嘉宾PPT
 
-![](img/d78403e48c2b755007bd20f5bd5c54a4.png)
 
 [稀土开发者大会2024-张涛-Final.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PSRYbXAOPoAUHNxtylZc2nDSnVe)
 
-![](img/ab68ffd134aeed70eb6ba821953678f3.png)
 
 [宋顾杨_AI Agent 与应用创新_3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DE2dbLkYoodMILxZQkccnjPHn3g)
 

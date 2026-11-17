@@ -214,9 +214,7 @@ GPT介绍：在日常使用中，文件夹中常常会混杂多种格式的文�
 
 [xhs简单过图.rar](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C3c1bAV7IoS6fRxZrXrclJlLnve)
 
-![](img/4ee1df119a0aa4b1fa06db53b3f9656a.png)
 
-![](img/bc2160748cbc948c95d420958fe024ec.png)
 
 ![](img/83f67401640a4930586d7d139974f025.png)
 
@@ -316,9 +314,7 @@ GPT介绍：在日常使用中，文件夹中常常会混杂多种格式的文�
 
 这里用到了之前做截流的玩法，留痕，不时在客户朋友圈冒泡，点赞，评论，也是激活老客户的一种方法，更自然，谁不喜欢朋友圈被夸呢？ 贴几张后来成功转化了的，有主动留的，也有去客户朋友圈耍的。
 
-![](img/968ef4bfde4ff5479c88c406cb358228.png)
 
-![](img/e086f8821709660d4d440f2bb6bdd2e3.png)
 
 ![](img/b1f47818e5f1e40bf1b249e3ea158639.png)
 
@@ -330,9 +326,7 @@ GPT介绍：在日常使用中，文件夹中常常会混杂多种格式的文�
 
 ![](img/4d72f9f09ecfdc4fa78b866fd03a0c0e.png)
 
-![](img/e1ce04a51073eb6696359f6e3584ee38.png)
 
-![](img/34f1b179cb49041a9493f5fb4138e77b.png)
 
 ![](img/11aa1dcd79885a480dc7fbf49c57fcf7.png)
 

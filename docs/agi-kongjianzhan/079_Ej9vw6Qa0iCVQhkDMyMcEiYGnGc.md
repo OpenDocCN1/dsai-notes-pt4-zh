@@ -222,7 +222,6 @@ PixVerse能够根据用户的文本描述或图片自动生成视频内容，支
 
 5月，PixVerse正式上线Magic Brush运动笔刷功能，已在外网掀起试玩热潮。
 
-![](img/6a4a5a4adf320b63f33cdc0c5d18f871.png)
 
 ![](img/1581cd42b83d86946a7a1f5028888d5c.png)
 

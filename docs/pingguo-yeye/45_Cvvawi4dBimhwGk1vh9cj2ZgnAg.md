@@ -26,11 +26,9 @@
 
 （4）CFG等级11
 
-![](img/b1c8d9806c9214f15622819a7743c7ea.png)
 
 然后，我们可以将图像上传到txt2img选项卡中的ControlNet。
 
-![](img/b9c2f9ec6801bf1349f78858eb1cc38d.png)
 
 （1） 确保选中启用复选框**以确保Co**ntrolNet **已激活
 
@@ -42,31 +40,25 @@
 
 （5） 将控制网模型设置为control_sd15_depth
 
-![](img/4bae66fd274f7ba30aebf801e4018853.png)
 
 然后，输入描述所需视觉效果的提示了。下面是一个示例：
 
 Positive Prompt: Sand on a beach, aerial view
 
-![](img/fddcd260ae0f2044a97a1e26eee37c11.png)
 
 # 更多示例
 
 Positive prompt: Bread on a kitchen table
 
-![](img/078b49257e26cf33cd80254673ee73e6.png)
 
 Positive prompt: water, water droplets, ocean, bright colours, reflection
 
-![](img/894cc30d98915fb7a5ff051d953a916d.png)
 
 Positive prompt: wood on grass, dramatic lighting, 8k
 
-![](img/90c14dfe42320d4f67af31e94c143d98.png)
 
 Positive prompt: paint dripping, vivid colours, colours spilling on the ground, in the style of Alberto Seveso
 
-![](img/792244eb736c7951fcf00bcd13618e42.png)
 
 Positive Prompts: Ice, icicles
 

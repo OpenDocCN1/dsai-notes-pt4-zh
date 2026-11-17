@@ -28,19 +28,16 @@ AutoGen 官网
 
 https://microsoft.github.io/autogen/0.2/
 
-![](img/8c0f8b7260f21a62e1ecec9cbf144c13.png)
 
 AutoGen 文档库
 
 https://microsoft.github.io/autogen/0.2/docs/Getting-Started/
 
-![](img/647c5630be673439d70aa94f3ca18102.png)
 
 AutoGen 用户手册
 
 https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/index.html
 
-![](img/069f0181aab51e3165c4de52d5186802.png)
 
 AutoGen GitHub
 

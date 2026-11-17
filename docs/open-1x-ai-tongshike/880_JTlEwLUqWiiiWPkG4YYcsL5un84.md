@@ -261,7 +261,6 @@ pip  install  -r  requirements.txt
 
 +   在控制台创建应用并获取API密钥
 
-![](img/ce171cd93bd9749bb979241b68a90ca8.png)
 
 #### 4.2.2 配置文件设置
 
@@ -929,7 +928,6 @@ def init_session():
 
 ## 六、实战：运行与使用爆款标题生成助手
 
-![](img/fc6c5bc8d959e8598212bbf0fa17e47a.png)
 
 6.1 启动应用
 
@@ -953,7 +951,6 @@ streamlit  run  main.py
 请为&quot;使用deepseek构建本地爆款标题生成助手&quot;这个主题生成爆款标题
 ```
 
-![](img/ab0a020e222601664d40cd63a59a5d53.png)
 
 #### 步骤2：调整参数设置（可选）
 

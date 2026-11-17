@@ -26,29 +26,21 @@
 
 请根据步骤打开到以下界面：
 
-![](img/e1500ace2c88391fa855b1ddfbc57a9a.png)
 
 ![](img/4326a37162bf8941ee3fffeedbc59dbb.png)
 
 ### 2️⃣复制硅基流动API Key
 
-![](img/6aadf956dc4392f201ea9747720b86ad.png)
 
 ![](img/cac9cc0db83915f0c1f7194aeeab46b3.png)
 
-![](img/b8c13ce83fb9b7177595076822271126.png)
 
-![](img/de8bb82a448b2a51989b0b82c7226627.png)
 
-![](img/8516ddab4610995a5cb151c139fb68d7.png)
 
-![](img/d0fa19d5773289c9b3f46567a479ef2c.png)
 
 ### 3️⃣Cherry Studio窗口使用
 
-![](img/f08c201f958fde73f6b1981e92585aaf.png)
 
-![](img/47591df82a78e25180b6f74a4a6637f0.png)
 
 ![](img/39c6826805ac558add8cd65e94562e01.png)
 
@@ -78,11 +70,9 @@
 
 ## Cherry Studio官方搭建知识库教程🔗：https://docs.cherry-ai.com/knowledge-base/knowledge-base
 
-![](img/65458c0a6af75491d16c889c0bc79b4e.png)
 
 Cherry Studio同时可以创建自己的智能体
 
-![](img/6821c004a0e826098d3ee93060380ad6.png)
 
 也有内置智能体库可以很顺滑的调用
 

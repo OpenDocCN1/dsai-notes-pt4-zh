@@ -87,11 +87,8 @@
 
 ![](img/3aabb2cdf074608921c6d84851b16fba.png)
 
-![](img/41b16cd9d16c8fddef010799f93be3ab.png)
 
-![](img/3dc6357c5a3115acad8c8c22afce17af.png)
 
-![](img/9d081e39c200d37d2bbf029088d6991b.png)
 
 ![](img/08cba002cc770999b77ecd884385138d.png)
 
@@ -916,7 +913,6 @@
 
 ![](img/5b2edb2f82c46be126c33467f58be4f0.png)
 
-![](img/cc1369c8cc2ca14aa0572c35fd889305.png)
 
 ![](img/985a4bbf17264d260386d0d5dc5d7c02.png)
 
@@ -1227,7 +1223,6 @@
 
 ![](img/4dc14da18ae3f1b0e54c51e409487170.png)
 
-![](img/a45e02a355896c24f56cdcb6ef821469.png)
 
 ![](img/f31e6e0e7ef5d9bb369d5d9ddd337ccc.png)
 

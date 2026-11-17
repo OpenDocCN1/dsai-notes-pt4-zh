@@ -30,57 +30,45 @@
 
 # 官方案例-中文翻译版
 
-![](img/f6130307d906a78b05031b7071a73419.png)
 
 [Fast counting with GPT-4o 快速计数 .mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JnFhbZNhPo6JWDxbms8c5q8onGb)
 
-![](img/2c705f77997e6e1ec4d474d7ae15f039.png)
 
 [Dad jokes.爸爸开玩笑说.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QRSzbGwaho864kxBTyFcs4Z3nvb)
 
-![](img/2d6dd55f62344b2fc07a045e5f059f7d.png)
 
 [Happy Birthday.生日快乐.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YbuGb1Clho3KiOx69DRcNLmVnpb)
 
 Fast counting with GPT-4o ｜Dad jokes. 爸爸开玩笑说。｜Happy Birthday. 生日快乐。
 
-![](img/6c6f4a47ab0b12169ac4fabe5348d913.png)
 
 [Be My Eyes Accessibility with GPT-4o 辅助功能做我的眼睛.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Upp3bwe7FoSIDdx5bCGcpvsmnsb)
 
-![](img/76f63a6ca8534122e7222f470e5b71d4.png)
 
 [Dog 狗.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GMrKbCm7vo9lOUxxt9qcqpoHnHh)
 
-![](img/e3be978f782cf44a237508afc33fa425.png)
 
 [Interview Prep with GPT-4o 面试准备.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YvkgbxY0uocVDpx1CCDcxpR2nUc)
 
 Be My Eyes Accessibility with GPT-4o ｜ Dog. 狗。 ｜Interview Prep with GPT-4o
 
-![](img/c402affba1be97ef0731e351e8bd73e3.png)
 
 [Harmonizing with two GPT-4o  gpt -40协调.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GQqRbzXC8om5bmxIVl6cBZannac)
 
-![](img/2e41e2f5f2869d9bc92b6bea837aa38a.png)
 
 [Rock Paper Scissors.石头剪刀布.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XkgCbZevfozN3SxR6ZBcJD0PnGf)
 
-![](img/938991ff6b24bc1b6835f0eafbbcef4e.png)
 
 [Point and Learn Spanish with GPT-4o指定学习物品的西班牙名字.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YBQPbyfXfo4IHlxOpMxcjxP2nBc)
 
 Harmonizing with two GPT-4os  ｜Rock Paper Scissors. 石头剪刀布。 ｜ Point and Learn Spanish with GPT-4o
 
-![](img/9110bc973dfd0519bd8c31fa35104ad3.png)
 
 [Math with Sal and Imran Khan.萨尔和伊姆兰汗的数学.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zx7wbyNuEoyDi0x2pRncIZ21nbb)
 
-![](img/e31908f9e7ed394ef3e01a785ad12436.png)
 
 [Sarcasm.讽刺.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NCOEbp02SogpS9xAfnPc8fuCnte)
 
-![](img/7526c503d22dfcae66799bb46d41e30d.png)
 
 [Meeting AI. 遇见 AI..mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Az6sbCW7ooToihxvuc3ccl5Inud)
 
@@ -90,7 +78,6 @@ Sarcasm. 讽刺。
 
 Meeting AI. 遇见 AI。
 
-![](img/bcc70ce09b295059111ab51c5f16018c.png)
 
 [Lullaby.催眠曲.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JIW0bx5gPodyqExgVSYcVDE5nNc)
 
@@ -108,7 +95,6 @@ Real-time translation. 实时翻译。
 
 Customer service proof of concept.客户服务概念验证。
 
-![](img/39261f82e6795328163f77cf4945cc68.png)
 
 [Two GPT-4os intracting and singing. 两个GPT-4o互动和唱歌.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zt6gb0bHfo7gi1xUv0cctbiDnfc)
 

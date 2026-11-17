@@ -44,7 +44,6 @@ SuperCLUE-Opt评测基准是Sup**erCLUE**综合性三大基准之一，每期**�
 
 2023年7月SuperCLUE-Opt基础能力榜单：
 
-![](img/c1d97c7672f2ae9b286441f3822438de.png)
 
 注： 国外代表性非开源模型（GPT4.0/Claude/gpt-3.5）参与榜单，但不参与排名
 
@@ -70,7 +69,6 @@ https://www.cluebenchmarks.com
 
 https://github.com/CLUEbenchmark/SuperCLUE
 
-![](img/6fa064dc26c3326c6350ef8c1a5c6d68.png)
 
 **SuperCLUE7月评测变动**
 

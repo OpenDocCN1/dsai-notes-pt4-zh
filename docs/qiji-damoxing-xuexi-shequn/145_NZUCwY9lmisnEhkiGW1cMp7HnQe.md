@@ -92,7 +92,6 @@ README文件我还在完善中，请不要评价我。
 
 在体育运动中，每一厘米和每一秒都至关重要。这就是为什么Roboflow决定将体育作为测试平台，以极限推进我们的物体检测、图像分割、关键点检测和基础模型。这个仓库包含可在体育及其他领域应用的可重用工具。
 
-![](img/5799d4c25ec2302c9f8edee621a54a0a.png)
 
 [ssstwitter.com_1721915156157 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YZvabD4y8odPthx3kkVcCgEgn2e)
 

@@ -42,7 +42,6 @@ Claude3官方网站：https://www.anthropic.com/news/claude-3-family
 
 ### Claude3速读版
 
-![](img/64849d1d4b5d0239b959349a96daf398.png)
 
 ![](img/8f1a286fdf390da4ab2a79a452d2d12f.png)
 
@@ -126,7 +125,6 @@ Claude3的英文技术报告（后续会补充中文版）
 
 2.在线测试运行效果对比。
 
-![](img/74b4b31b7dfb2ff4b4176f57cc23c6a0.png)
 
 3.Claude 3和GPT4效果可以说是不相上下了。
 

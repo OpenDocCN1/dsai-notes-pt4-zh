@@ -137,7 +137,6 @@ http://localhost:3000
 +   系统会自动生成一个 API 密钥，复制该密钥保存备用。
 
 
-![](img/2d0d029a75d1e0b722b68e519c1f3360.png)
 
 ### 在 OpenWebUI 中配置 API 密钥：
 

@@ -106,7 +106,6 @@ https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
 
 于是综合了上面各种方案以后，我在 PocketPal 开源项目的基础上打造了更符合中国宝宝体质的「口袋AI」APP。
 
-![](img/72a8edde6eb998e1fc682bbd51a4e76d.png)
 
 不用看英文了！内容全部翻译为中文。
 
@@ -120,9 +119,7 @@ https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
 
 也许是国内目前最快捷的部署方法。
 
-![](img/59d49d387dd499fcfff0f980522d5b7f.png)
 
-![](img/01d98a1e07758f1952eaaa4dde804e14.png)
 
 希望能让大家在手机上更方便省心的用好 AI。
 

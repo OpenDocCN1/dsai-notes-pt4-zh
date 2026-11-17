@@ -8,19 +8,14 @@
 
 ## 扫码点击：立即开户，输入手机号；
 
-![](img/4cb67ad97df207e17f32b80449ef7396.png)
 
-![](img/c21c66fadc8f6579f525a6ae6f1adf90.png)
 
 ## **核对服务经理工号**
 
-![](img/0b4ba800b69366a897237bf09ad84cb1.png)
 
-![](img/5a7c6b4d12608b1be95832839ef88e69.png)
 
 ## **上传身份证，填写身份信息如图示**
 
-![](img/ae137ac27bf28c1a0d74cc4de95c27f5.png)
 
 ![](img/1d8795b37984b2e6541b4feca32fef65.png)
 

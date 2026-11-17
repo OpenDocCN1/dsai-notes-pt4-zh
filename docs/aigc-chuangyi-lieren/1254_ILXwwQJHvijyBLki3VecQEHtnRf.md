@@ -4,7 +4,6 @@
 
 近日，硅谷顶级风投公司Andreessen Horowitz（a16z）发布了最新一期的《全球生成式AI消费级应用TOP100》。
 
-![](img/f50e61f739da627b80171db019a29cbb.png)
 
 ![](img/7e2aaa7a3fc41368ad2373ae1a5028d7.png)
 

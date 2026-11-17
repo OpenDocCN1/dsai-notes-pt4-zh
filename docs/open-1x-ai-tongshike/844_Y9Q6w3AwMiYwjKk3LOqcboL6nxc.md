@@ -120,7 +120,6 @@ Langchain 作者 Horrison：Agent是一个使用大语言模型（LLM）决定�
 
 https://platform.openai.com/docs/guides/text-generation
 
-![](img/b312b943e00dc6bc3bf3d228cf77533c.png)
 
 ## 3.1 自主智能体（Autonomous Agent）
 
@@ -160,7 +159,6 @@ https://platform.openai.com/docs/guides/text-generation
 
 Prompt Chaining 将任务分解为顺序执行的子步骤，每一步都由一个 LLM 调用来处理上一步骤的输出。你可以在任意中间步骤添加程序检查（见下图中的“gate”）以确保整个过程依然按计划执行。
 
-![](img/2e5018beaa31d3a53cb9ffc76cf31dae.png)
 
 Prompt Chaining 工作流
 
@@ -176,7 +174,6 @@ Prompt Chaining 工作流
 
 Routing 先对输入进行分类，再将其分配到专门的后续任务中。这让我们能更好地实现任务分工，以及针对不同类型的输入构建更为专门化的提示（prompt）。若没有这种路由机制，针对某类输入的优化可能会损害其他输入的性能。
 
-![](img/51dbdb6164bd86b2da8d9cca8faf1cd0.png)
 
 Routing 工作流
 
@@ -196,7 +193,6 @@ Routing 工作流
 
 +   投票**Voting**：对同一任务进行多次执行，从而获得多样化的输出，以进行对比或投票。
 
-![](img/0beccd1f1c57c73014b29ca66aa7dd1b.png)
 
 Parallelization 工作流
 
@@ -220,7 +216,6 @@ Parallelization 工作流
 
 在 Orchestrator-Workers 工作流中，“协调者”LLM 会动态拆解任务、将其分配给“工作者”LLM，然后再将结果综合起来。
 
-![](img/b264ec8608c602cfcfc26beef338ecad.png)
 
 Orchestrator-Workers 工作流
 

@@ -152,7 +152,6 @@ https://x.com/elevenlabsio/status/1869462840941461941
 
 你从未体验过如此快速且接近人类的文本转语音技术！
 
-![](img/bdfea84ed2bb04ea83169f5fd7e409e5.png)
 
 [6CGGmhAQG4ZPUdKR.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SneFb1JC5oVfxDxDyRVcJpNunyg)
 

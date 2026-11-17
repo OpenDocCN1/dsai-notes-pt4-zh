@@ -176,15 +176,10 @@
 
 你帮别人解决问题，你就成了"资源节点"。
 
-![](img/c330f1128e66eee63a9222c3150e09a2.png)
 
-![](img/9d5d706c4d5f62aba8de0b36b9f501f6.png)
 
-![](img/31df1f7b828f87e5f199c6ea50d71d8f.png)
 
-![](img/5949233a4fa846c633ebcb819f040993.png)
 
-![](img/83f0d8ce9974d65c613f214b718082f1.png)
 
 ![](img/8e07e72b55c405d9f2315b7def90bfed.png)
 
@@ -242,7 +237,6 @@
 
 效果：让客户感觉--虽然人没盯着，但猫咪被照顾得很好。
 
-![](img/09faea6b9b8a57ca981e9bcb8c1f7041.png)
 
 ![](img/676c0e7e02538541b8d77f1825ddf581.png)
 
@@ -258,7 +252,6 @@
 
 ![](img/d540bad244373d5f28f30a42afe259b2.png)
 
-![](img/0863eca4d847b977db018a3db0f05324.png)
 
 ![](img/93cd0060c98e55e08aa6efc8a333d132.png)
 

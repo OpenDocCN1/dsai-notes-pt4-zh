@@ -40,12 +40,9 @@ Suzuki car in Dubai --qrw 0.8 --steps 16 --seed 4932759074885710
 
 然后我们得到了艺术风格的二维码：
 
-![](img/d65fe6a02ced72bdea60c9c2993bc345.png)
 
 分享一些别人做的二维码：
 
-![](img/58d112a2799b4e7ef0fa992e6ed4343e.png)
 
-![](img/5fa8f47f4a074a193d887375d3682ccd.png)
 
 ![](img/9611ba7e67302fcf37507175fd8b9062.png)

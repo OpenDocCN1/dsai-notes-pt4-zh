@@ -216,7 +216,6 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/0a51fe667604bed84ba1b7e8666f7f1c.png)
 
-![](img/8f092a99f77166afa0e9dd37be769e24.png)
 
 ![](img/69a6d86c6fdf727779d5bfad9b118abe.png)
 
@@ -276,13 +275,10 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/2e97983e740a0ea64996a768a1a685dc.png)
 
-![](img/76ad670e81c0e96c9fc0573f25559844.png)
 
 ![](img/211df3995fdb8df8ddf9bd7ae4876e54.png)
 
-![](img/5b99b2bbbf684897200cba820454fc5d.png)
 
-![](img/0d4a540025353999211a45f8263593d7.png)
 
 ![](img/4f3a78e434dc27f6466bd1e4a1aed545.png)
 

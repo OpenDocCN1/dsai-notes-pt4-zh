@@ -60,7 +60,6 @@
 
 ![](img/b7afcef61745bbd75cad109f66196f29.png)
 
-![](img/266435b53df35f33e39fb534f34e796a.png)
 
 ### 2.2 开启YOLO模式
 

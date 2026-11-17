@@ -127,7 +127,6 @@ apikey为上一步创建的ragflow api，复制填入即可。
 
 ![](img/e2ebbe19b09caac9786ed6e6cd656c60.png)
 
-![](img/bcd2cad9a6dccad056a5bfc4f4b33287.png)
 
 可以看到我们的知识库是调用成功了。
 

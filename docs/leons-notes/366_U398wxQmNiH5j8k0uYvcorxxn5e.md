@@ -24,7 +24,6 @@
 | ![](img/d20b313781c65bf2ab194c41642b23af.png) | ![](img/ea9c7b48b8386b65d988c542cb9b9999.png) | ![](img/a454bb6860b51e9fbb75d1cebd13a028.png) |
 | --- | --- | --- |
 | ![](img/e09ef3d20966b2a0c6995b10c1af3f73.png) | ![](img/c88770fd4a9705578a21df90dba46b71.png) | ![](img/e49da87876ffb143a6fc12a99e8fec8c.png) |
-| ![](img/d2dd44425b2362a1cb0210db5f1dfcee.png) | ![](img/940d97f812a45f8cedf2d6c777fd096e.png) | ![](img/77cd415e06f0eec0bfa6e0bc62bd2db2.png) |
 
 ### 香格里拉
 

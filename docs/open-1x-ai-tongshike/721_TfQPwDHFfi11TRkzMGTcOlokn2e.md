@@ -286,7 +286,6 @@ prompt：【】
 
 对比效果如下：
 
-![](img/d31f8c0b7fbe216a598c1b4bfa293280.png)
 
 ![](img/7f5afe341db4f8b551525a9f9337ac03.png)
 

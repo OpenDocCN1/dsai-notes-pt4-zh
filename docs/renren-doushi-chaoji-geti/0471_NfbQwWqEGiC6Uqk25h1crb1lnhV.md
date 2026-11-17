@@ -191,21 +191,16 @@ https://bailian.console.aliyun.com/?tab=model#/api-key
 
 1.  在工作空间-资源库中，新建插件
 
-![](img/2f0e28e66ad4ee58ae3fa18b7e53c715.png)
 
 1.  填写相关信息
 
-![](img/a922e866814ec9607947b7fcd8532f8a.png)
 
 1.  点击创建工具
 
-![](img/0154a06a1152da328a193c298fd7b326.png)
 
 1.  点击添加工具并输入信息
 
-![](img/58e1de4060a20433b661f7d2c9776111.png)
 
-![](img/5fb6bef033c251c32e60554c695f59c3.png)
 
 1.  在代码区域复制以下代码，一样可以让deepseek帮你写和优化
 
@@ -274,23 +269,18 @@ def handler(args) -&gt; Output:
 
 1.  添加相关依赖
 
-![](img/107eeae2b4a8d5d819b005286713b6b2.png)
 
-![](img/857f8f4abb46d7f1c81f13f00d8822b1.png)
 
 1.  在元数据中填写对应输入参数，注意名称和类型都要正确
 
-![](img/45bec9366b0256d1864460c470fcd4c7.png)
 
 1.  点击测试代码
 
 把你的阿里云api和插件解析后的视频链接填入
 
-![](img/8892d896315e00d1416e5b4de96c0a9b.png)
 
 1.  点击运行，确认插件运行成功
 
-![](img/41b2232cf42be0d7d5714571b384d6ac.png)
 
 1.  发布插件
 

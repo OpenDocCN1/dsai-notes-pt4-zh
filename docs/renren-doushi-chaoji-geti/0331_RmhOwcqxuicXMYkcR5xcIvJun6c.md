@@ -50,7 +50,6 @@ https://github.com/asxez/DockerDesktop-CN
 
 ## 2.3 重启DockerDesktop就可以看到汉化效果了
 
-![](img/0c4306908addd9c9b728f788d8faf0b5.png)
 
 # 三、N8N下载与汉化步骤
 

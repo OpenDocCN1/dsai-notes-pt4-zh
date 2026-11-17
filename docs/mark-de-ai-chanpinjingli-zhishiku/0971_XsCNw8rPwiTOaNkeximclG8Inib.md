@@ -256,11 +256,9 @@ GPT Image 2 给出的结果相当有设计感：
 
 这感觉太对了！
 
-![](img/89b68282b6306e7443d3576632e7ff6c.png)
 
 基于这个，我又用 Lovart 把这段对话提取成了 Skill，顺手跑了一大堆当时流行的 BBS 论坛和聊天室的截图。
 
-![](img/b539f61a495cf82ca2be55e4a40c9333.png)
 
 ![](img/a11497140071cacaa5a18c75c170fe1a.png)
 

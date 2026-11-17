@@ -14,7 +14,6 @@ https://github.com/asgeirtj/system_prompts_leaks
 
 https://kh18s6uvdi.feishu.cn/share/base/view/shrcnm6JDJzeITUAee3sbsipUee
 
-![](img/c161cac7228aa8368e3685b09f278372.png)
 
 **这个文档，由Kimi团队的@奥古斯书整理，里面涵盖了许多使用**Kimi的用法，以及好用的经验技巧、提示词、AI工作流，以及相关技术文章和访谈等。
 
@@ -24,13 +23,11 @@ https://kh18s6uvdi.feishu.cn/share/base/view/shrcnm6JDJzeITUAee3sbsipUee
 
 [1.2 入门：Prompts（提示词）](https://waytoagi.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tbldSgFt2xNUDNAz&view=vewo2g2ktO)
 
-![](img/5b3edfb9a6f51905d687f84959737c36.png)
 
 ## 3、AI提示词课程：「我的大模型课」
 
 https://ishell.online/blog/llm_course/
 
-![](img/ad6cbf061c1f3ea1721a0e1f259cc423.png)
 
 这是一个在Github上开源的AI提示词课程，虽然课程整体是基于ChatGPT的，不过里面许多知识点套用在国内的AI上依旧适用。
 

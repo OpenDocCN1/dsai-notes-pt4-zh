@@ -4,7 +4,6 @@
 
 > 即梦3.0直出
 
-![](img/a3e8e353db25f72b4b68e9a8815d54fd.png)
 
 ![](img/429943b00c1b9cc0697250e29a4e52a2.png)
 
@@ -32,7 +31,6 @@
 
 ![](img/c3345658f694d11f8fd1b650089f1cd1.png)
 
-![](img/3c5c53e87037ef9f97e70ff149e588d7.png)
 
 ![](img/e6fae153311dd506d0f89985dc074496.png)
 
@@ -52,9 +50,7 @@
 
 ![](img/c088e3620450dabe554b970e5b0f7a8b.png)
 
-![](img/28583b3cb8a63caba408c5e5ff928b64.png)
 
-![](img/3def43beb6eb91cff1f6020c35aa9c19.png)
 
 ![](img/aad1be002447e958cd1de77542e449bf.png)
 
@@ -64,9 +60,7 @@
 
 ![](img/afacdc37e86159fd5d5a4e6454eed559.png)
 
-![](img/6f6efdd47c051225a6cf5bf6d6e0ffdf.png)
 
-![](img/95073b7114c0889566fd2bc517a9ea6c.png)
 
 ![](img/eda8f95cbb027dca62db22d953177a80.png)
 
@@ -76,13 +70,9 @@
 
 ![](img/e3b6ae28a5cc96606ea8b639486885f9.png)
 
-![](img/c5a05ca42a4cf13d93aa252d68e1fc33.png)
 
-![](img/1d9a4a8e8d822c100ada57d26d1b72d5.png)
 
-![](img/d7dac6b9ca33a02f8eece5ff141025a1.png)
 
-![](img/20438f67e93b43452f88cabd5f007d2d.png)
 
 ![](img/21cba3a61d4302839c579c608e0ae223.png)
 

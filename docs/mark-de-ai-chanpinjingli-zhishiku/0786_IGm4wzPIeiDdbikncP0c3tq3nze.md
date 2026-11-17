@@ -6,7 +6,6 @@ Claude Code 是一个强大的智能体助手，它在终端运行，擅长编�
 
 本教程将深入探讨 Claude Code 的工作原理、核心功能及如何在 VS Code 高效使用它。
 
-![](img/4996c9b26badfa7ee2c18474385f60bb.png)
 
 ---
 

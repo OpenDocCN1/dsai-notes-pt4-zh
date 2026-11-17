@@ -12,9 +12,7 @@ LangGPT登上刘润老师的「进化的力量·年度演讲」啦，我们从�
 
 ![](img/84fbe86ef2d614c23d038ea89a60b89a.png)
 
-![](img/fbabb5206016f56e9cd46e1a57913a1d.png)
 
-![](img/78c7086245c767ddb3329df1e0470592.png)
 
 ![](img/a6a0b5bcf4aaddb9a92e9608b3fd0a50.png)
 

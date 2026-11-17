@@ -34,7 +34,6 @@ python3 main.py \
  --timestep_to_start_cfg 1 --num_steps 25 --true_gs 3.5
 ```
 
-![](img/5eb499a22b647e6d2dc1d83f43ed33fa.png)
 
 ## mjv6_lora  mjv6
 
@@ -45,7 +44,6 @@ python3 main.py \
 --device cuda:4 --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-![](img/45de540807af617cc2369384004fe8f1.png)
 
 ```
 python3 main.py \
@@ -54,7 +52,6 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-![](img/bb6cce65ae50c7e65ae7fa4b6257cab1.png)
 
 ## anime_lora  动漫
 
@@ -65,7 +62,6 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-![](img/8a694384fdcd20ccc62559c0cb3ad53d.png)
 
 ```
 python3 main.py \
@@ -74,7 +70,6 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-![](img/bd1c41b8f3d4f51bc5403521d76e02a4.png)
 
 ## disney_lora  迪士尼
 
@@ -85,7 +80,6 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-![](img/6f595db04cf497fc3247ae70b302ed81.png)
 
 ```
 python3 main.py \
@@ -94,7 +88,6 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-![](img/a97e3ebea451da4b819d40c680b9fd90.png)
 
 ## scenery_lora  风景
 
@@ -114,7 +107,6 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-![](img/8e6d5e094dc40b827cb0c4e01252132b.png)
 
 ## art_lora  艺术
 

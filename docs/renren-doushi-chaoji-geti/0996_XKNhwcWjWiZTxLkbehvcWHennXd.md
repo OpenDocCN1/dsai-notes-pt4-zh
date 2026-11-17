@@ -236,17 +236,11 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 +   或者购买影刀付费企业版本（据说年费好几万）使用这个发布到市场的脚本
 
-![](img/d5445d7445a93705ddaec14511fb78f2.png)
 
-![](img/351edce8c4b8b650a4a9dfbf181c4f12.png)
 
-![](img/6c9589d7ab500a0a95aac4a70bce3199.png)
 
-![](img/a7862818b44e7e49e522c020d733f851.png)
 
-![](img/240625fc808f92794857b2fd75484bb7.png)
 
-![](img/17507de23c047b6d6cd42a298c314f56.png)
 
 ![](img/2d1e3d610f6451a59266d4c0ccbb5be1.png)
 

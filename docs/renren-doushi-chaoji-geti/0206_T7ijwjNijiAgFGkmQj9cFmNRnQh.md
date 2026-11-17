@@ -26,9 +26,7 @@
 
 **以下是亿点点的聚会合照**
 
-![](img/9b5ce6b10d9f51afa4f602e9bbe35753.png)
 
-![](img/684804e9344b298e7a87260200ef71fd.png)
 
 ![](img/be9be7d6d0427d441b8eac167f43c1ac.png)
 
@@ -112,7 +110,6 @@
 
 ![](img/f46b99867be8ee98683ccaedb63a70ec.png)
 
-![](img/4c4be32778f91fffc55d8cb75a6faffc.png)
 
 ![](img/e9fd73417b9767ef4c25ddb7f5b9eeda.png)
 
@@ -254,11 +251,8 @@
 
 当我掌握“**6人 + 垂直主题 **”这个组局“节奏”后，一切都顺了。每一场局的反馈都非常好，我也从手忙脚乱变得游刃有余。
 
-![](img/07f7bd52bd1c5c13339cc934ea225546.png)
 
-![](img/030052239bddea8ec0f6ab35c2cac3d5.png)
 
-![](img/e66e0b36dd24a61b41e86c3c99169560.png)
 
 ## **3.2**** ****真诚利他，是最高级的“套路”**
 

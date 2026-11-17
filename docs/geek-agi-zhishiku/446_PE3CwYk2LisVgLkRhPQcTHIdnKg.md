@@ -2,7 +2,6 @@
 
 > 来源：[https://geekbang.feishu.cn/docx/QdXNdlezXo3qm2x7vkRc12ySntg](https://geekbang.feishu.cn/docx/QdXNdlezXo3qm2x7vkRc12ySntg)
 
-![](img/430eca4cefc9991285aae15cd8e42432.png)
 
 **板块主理人：尼福财**
 

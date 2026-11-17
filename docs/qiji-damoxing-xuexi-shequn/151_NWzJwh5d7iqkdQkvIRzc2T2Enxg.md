@@ -66,7 +66,6 @@ https://x.com/bycloudai/status/1813311769047138568
 
 Bycloud：我给大家准备了一个超棒的预告片。
 
-![](img/5886f4c7767d56bea9361d0259e9c25d.png)
 
 [ssstwitter.com_1721309305361.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q7utbt0sPo3AGcx4XwscRVpRnGf)
 

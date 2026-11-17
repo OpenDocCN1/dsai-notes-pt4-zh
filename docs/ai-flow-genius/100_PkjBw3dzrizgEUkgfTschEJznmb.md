@@ -10,7 +10,6 @@ AI领域里面大家可能更多关注的是LLM相关的内容，但是AI画图�
 
 下面是这个数据分析的主要内容：
 
-![](img/408181e58696fd6c9e704e1eda261846.png)
 
 **→自去年以来，使**用文本转图像算法创建了超过 150 亿张图像。客观地说，**从 1826 年拍摄**第一张照片到 1975 年，摄影师花了 150 年的时间才达到 150 亿张大关。
 
@@ -40,7 +39,6 @@ Adobe Firefly Adobe
 
 Adobe 推出了 Firefly，于 2023 年 3 月发布。上线 6 周内，用户创建了超过 1 亿资产。随着 Firefly 于 2023 年 5 月集成到 Adobe Photoshop，考虑到全球使用 Photoshop 的人数，图像数量呈指数级增长。 Adobe 在最新的新闻稿中分享了其 AI 图像统计数据：推出仅 3 个月，使用 Adobe Firefly 创建的图像数量就已达到 10 亿张。
 
-![](img/4df1e97be613082c2c673b4eaa371efb.png)
 
 使用 Stable Diffusion、Adobe Firefly、Midjourney 和 DALLE-2 总共生成了超过 150 亿张人工智能创建的图像。这比 Shutterstock 的整个照片、矢量图和插图库还要多，而且是 Instagram 上传的图片数量的三分之一。
 

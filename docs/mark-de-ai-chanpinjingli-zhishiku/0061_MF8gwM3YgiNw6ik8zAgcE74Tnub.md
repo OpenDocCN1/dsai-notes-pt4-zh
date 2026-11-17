@@ -46,23 +46,18 @@
 
 # 十四、AI产品经理面试高频题
 
-![](img/cf2024b85128f1672b4ec726af1d2512.png)
 
 [AI产品经理面试高频100题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W54Ebirbaod3Y7xfqTIckY7PnAg)
 
-![](img/45695cf8ce2fd3977e5d01b7e450f856.png)
 
 [200道B端产品经理面试题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LXuibLjkUoTpoNxsGqScYskVn5f)
 
-![](img/514d09e66dc5d03bbb09b0653be0ed42.png)
 
 [2024产品经理高频面试14题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IdQEbOfEMolUn9xJqHCcuiyRntb)
 
-![](img/d33cd888391ed413bce91dbacd3d9019.png)
 
 [2024字节产品经理面试真题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M8V9bu7UgoVAkexvqmycTLwvnhd)
 
-![](img/75c4e76712f9a13f390c1ddcaf4704e2.png)
 
 [产品分析合集.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X7c9byfoxoOZlzxexdTc0rtAngh)
 

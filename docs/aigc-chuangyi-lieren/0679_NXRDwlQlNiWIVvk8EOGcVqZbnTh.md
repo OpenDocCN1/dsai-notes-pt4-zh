@@ -24,9 +24,7 @@
 
 提供各种工作流模板方便易用，小白也能轻松上手。
 
-![](img/c944112a66f9665bb0e4289972271fca.png)
 
-![](img/db52c6a482c5fcecdea6dab9f1168786.png)
 
 ![](img/b565c7121da5eca3b096a35d9401f404.png)
 

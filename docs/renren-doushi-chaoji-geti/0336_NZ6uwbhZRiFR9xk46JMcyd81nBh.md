@@ -166,7 +166,6 @@ cc用playwright进行浏览器操作时，它是会打开一个全新且独立�
 
 通过cc的努力，终于在刚才的基础上多增加了足足“两条笔记”哈哈哈
 
-![](img/c9fba6f353df989c1ae08c9e9f7f906f.png)
 
 这很明显也不正常，所以我继续追问，然后它告诉我，可能是被平台检测了。
 
@@ -186,7 +185,6 @@ cc用playwright进行浏览器操作时，它是会打开一个全新且独立�
 
 通过这个方法，它就能成功定位笔记的位置了。
 
-![](img/fc0160694f8ce8dcaecef02cec09b0b3.png)
 
 然后我就让它按照这个方法去找所有的笔记
 
@@ -562,7 +560,6 @@ deepseek的url填这个：https://api.deepseek.com/chat/completions
 
 看不懂没关系，发给cc，cc会告诉你的
 
-![](img/e18f04dab1a0484345fb219009d487d3.png)
 
 ![](img/7cbcfa58dce64c8f5485deec3dc73878.png)
 
@@ -598,7 +595,6 @@ Specify body选择 using json
 
 也可以直接从左栏里面选择你要分析的内容
 
-![](img/bf40b707f0b39650116eca5e361572e0.png)
 
 比如我这个是要分析标题的，那我就可以从左侧找到标题，然后拖过来
 

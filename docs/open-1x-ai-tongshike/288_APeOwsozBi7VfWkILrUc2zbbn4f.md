@@ -18,7 +18,6 @@
 | stack | 公式解析助手 | +   解析PDF中的公式 |
 | 314383107 | 就业培训 | 简历修改 |
 
-![](img/ba8a58857bef99a5871c9398aee4e389.png)
 
 [高考志愿填报0.1版.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B6bdb3772oNxlex9z8acURLrnYe)
 

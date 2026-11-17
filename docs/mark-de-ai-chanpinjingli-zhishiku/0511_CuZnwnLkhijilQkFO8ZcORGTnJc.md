@@ -354,7 +354,6 @@ class AgentState(TypedDict):
 
 所谓创建框架，其实就是需要按照下面图片的样子搭建起Agent的基本节点内容：
 
-![](img/9c80f3e28a65bec3a412e2eb372d4439.png)
 
 这一切的起点，就是创建一个名为 Agent 的类，并在其中定义一个构造方法（def __init__:）。这个构造方法会在每次实例化 Agent 时自动被调用，用于初始化这个 Agent 的内部状态。
 

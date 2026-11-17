@@ -326,17 +326,14 @@
 
 1.  **提示词编排中开启标注回复**
 
-![](img/fd8049c037ff10413fceb075d4fa7434.png)
 
 1.  **日志与标注中开启标注回复**
 
-![](img/5d8ec51470fecfac9ca62e9707b6239e.png)
 
 ## 添加标注
 
 1.  在会话调试页添加标注：编辑成你需要的高质量回复并保存
 
-![](img/b4a3b828f0e29a2555f3ae94cff528a9.png)
 
 ![](img/a75a0b8f54757429f6f6e8d14ca870f5.png)
 
@@ -434,6 +431,5 @@
 
 ![](img/414bf67c21e5cfbd65f8f19eb55605df.png)
 
-![](img/f4ec0fe1c660851641fc7b97090e0520.png)
 
 ![](img/c45b55c1d85aa356bc882cb7327f5d43.png)

@@ -62,9 +62,7 @@ http://faka.fyshark.com/invite.html?lang=zh&u=3304此链接复制到浏览器打
 
 ![](img/92591de505a62148720c5cb0c67b85a9.png)
 
-![](img/f34e69b8bf26b24534098efe9e964d10.png)
 
-![](img/c23670faf537db73e79f8e87e724d316.png)
 
 ![](img/f447b39255f8c3d316b9ea0f6c2dc2ed.png)
 

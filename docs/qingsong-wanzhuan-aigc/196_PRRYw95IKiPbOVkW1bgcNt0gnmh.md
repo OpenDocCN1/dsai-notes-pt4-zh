@@ -112,7 +112,6 @@ Cherry Studio 这个软件挺好用的，我用了近一年了，借助它可以
 
 +   **配置 API** ：在 Cherry Studio 中，找到 API 配置选项（左下角⚙设置按钮），选择「硅基流动」并将其勾选为“开启”状态，然后依次输入 API 地址（即 DeepSeek 的 Base URL：https://api.deepseek.com）、 API 密钥（即你前面获取的 API Key）、选择模型 deepseek-ai/DeepSeek-R1。
 
-![](img/02947f235bd484616da0ef47b247708d.png)
 
 （Cherry Studio 电脑客户端界面）
 
@@ -196,13 +195,11 @@ Knowledge cutoff: {{current_date}}
 
 +   然后，回到设置中的「配置」一栏，选择好前面部署的硅基流动接口以及 deepseek-ai/DeepSeek-R1 模型。
 
-![](img/2f2dbbe1f56fd8bcf2a7e49f784a6de0.png)
 
 （Chatbot 手机 APP 模型接口界面）
 
 除此之外，这个 APP 的设置栏还提供了「角色」项，其实也就是智能体。可以将承担各种不同任务处理或对话聊天角色的 Prompt 填入进去，给智能体预设一个 System Prompt（与前面的 Cherry Studio 智能体设置同理），这样对话起来就更高效实用了，感兴趣的朋友可以后期慢慢摸索体验～
 
-![](img/540819c581f67b3470f8d40121da3c4a.png)
 
 （Chatbot 手机 APP 智能体配置界面）
 

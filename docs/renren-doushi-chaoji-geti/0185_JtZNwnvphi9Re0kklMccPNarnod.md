@@ -260,7 +260,6 @@ https://ram.console.aliyun.com/profile/access-keys
 
 **编辑选项卡，根据你**找到的商品，修**改商品标**题，商**品价格，**还有把上面的商品参数放进去商品描述里。
 
-![](img/1689c134b9c587fcbb37d76603a6b73c.png)
 
 ##### 2.2.3.3 生成单个视频
 

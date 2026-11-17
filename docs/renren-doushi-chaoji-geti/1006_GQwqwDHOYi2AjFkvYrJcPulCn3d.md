@@ -16,9 +16,7 @@
 
 1，手机举例
 
-![](img/bcce507e0e0652e9a2ad9c166146d207.png)
 
-![](img/87dcd3fb44134501f9e2f31bd1fac824.png)
 
 ![](img/0c4c95f50e9b13391ba2dad86f9d4aac.png)
 
@@ -34,7 +32,6 @@
 
 2，茅台举例
 
-![](img/d7dcc6f59fc29dd393ae8b9d0cee6227.png)
 
 ![](img/18e3abb154ac96fa314a53cadc3c4d36.png)
 
@@ -48,7 +45,6 @@
 
 搜索游戏机，找到SWITCH，日版，白色
 
-![](img/b82fa7d147902aa32d32a0fa9d2df391.png)
 
 ![](img/a394ce86fec31aeb1e36e4720b644a5e.png)
 
@@ -60,7 +56,6 @@
 
 4,美妆举例
 
-![](img/cc4cdef14449ff2e0799828e84daaf0f.png)
 
 ![](img/a4d80ee7c9726b01aa16078e8bd6b287.png)
 
@@ -224,7 +219,6 @@
 
 # 三：I茅台抽签
 
-![](img/ba7a6718f9f2fabf2fb616ba882eed4e.png)
 
 ![](img/1108fded711db63ceae83c56952a64b9.png)
 

@@ -166,11 +166,9 @@ liunx下载： [h](https://link.zhihu.com/?target=https%3A//links.jianshu.com/go
 
 接下来就是加入Midjourney这个社区，同样，它会让你验证，我们按步骤点击就好了。
 
-![](img/97b087a6c789cbad0decc8938437ad52.png)
 
 注意：这里可能验证一遍之后你并没有加入社区，可能是网络原因，影响不大，重复验证一遍即可（一次过的忽略）下面是加入成功之后的界面：
 
-![](img/e9541e6b04b302050014223d4b036746.png)
 
 然后我们切换下频道，频道这边的随便点击一个，然后点击右边顶部的“成员名单”按钮（注意哦，需要点击下面的一个频道才会显示“成员名单”按钮）：
 
@@ -218,7 +216,6 @@ Midjourney给予普通用户25分钟的免费作图时间（这个时间是机�
 
 回到我们的服务器，然后在下面的输入框输入“/”，它会弹出一系列的命令（如果没弹窗，退出重新登录即可），我们先点击“/imagine”（这个参数我后面再做详细解释），然后会出现如下画面：
 
-![](img/ed1c325aead8238e07cea72326132832.png)
 
 输入一组关键词，切记：一组关键词的后面需要加上英文的逗号“,”然后按空格键，空一格就行，看我下面这组关键词：
 
@@ -230,7 +227,6 @@ An mascot robot, smiling, modern robot, round robot, cartoon, flying, fist up, c
 
 点击回车发送，然后它会让我们进行授权，我们点击“Accept tos”授权就行了。
 
-![](img/6a96cd5b87908acb65e347e9e0cc4e33.png)
 
 然后等待机器人的出图，在发送的关键词后面可以看到图片生成的进度，等一会就会出来图片了：
 
@@ -444,7 +440,6 @@ MJ test 偶尔会临时发布新模型以**供社区测试和****反**馈。**�
 
 **在公共模式和隐****身**模式**之间切换。对应于**** **/public 和 /stealth 命令。
 
-![](img/b76e033a61840316f2ec49f8823d7d99.png)
 
 切换到混音模式
 
@@ -476,7 +471,6 @@ MJ test 偶尔会临时发布新模型以**供社区测试和****反**馈。**�
 
 /prefer option set <name> <value> 创建可用于将多个参数快速添加到提示末尾的自定义参数。
 
-![](img/80f6b87c6e558b0bb201112f9be6439c.png)
 
 **
 
@@ -1090,7 +1084,6 @@ Midjourney关键词助手： https:// prompt.noonshot.com/
 
 Prompt Hunt： https://www. prompthunt.com/
 
-![](img/202932aaa7095126b84c07f6bd31f48f.png)
 
 PromptBase： https:// promptbase.com/
 

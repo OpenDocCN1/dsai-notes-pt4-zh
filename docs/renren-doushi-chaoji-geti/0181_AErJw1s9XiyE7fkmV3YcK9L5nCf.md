@@ -44,7 +44,6 @@
 
 故事概述：爷孙俩在玩拳击，小朋友不小心把爷爷的牙打掉了，吃牛排的时候，爷爷没牙齿咬不动，小朋友用拳击手套帮爷爷打碎牛排，爷爷顺利吃上了牛排。
 
-![](img/da467df768db9b2f24a6c889e0d665c2.png)
 
 [Sigma Kid Power #funny #sigma.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B2T9b0vQmox9X7x447tcKebknjf)
 
@@ -146,7 +145,6 @@ tips：关于角色设定，自己可以提前设计并生成，例如：木棍�
 
 案例视频片段：
 
-![](img/410ecb8ef6139a0ba17d95ffc1155a31.png)
 
 [10月29日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FzMsbdgRgovGTTxsiNncC0xan0b)
 

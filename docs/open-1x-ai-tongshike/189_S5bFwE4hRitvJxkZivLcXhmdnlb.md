@@ -52,7 +52,6 @@
 
 ![](img/719ae21a3fa53a528a89985b1abd02c0.png)
 
-![](img/03d7f49a45ce93173452ee2822c034ed.png)
 
 ![](img/a49fec838b6059faa773b897bd78b161.png)
 

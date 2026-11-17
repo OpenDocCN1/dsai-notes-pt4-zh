@@ -77,7 +77,6 @@ DeepSeek坚持开源路线，主动向全球开发者分享核心技术成果，
 
 根据需要是否选择【深度思考】和【联网搜索】。
 
-| ![](img/ad4a25e7bfe48141e455758c47ed1fcd.png) | ![](img/753edff8e657d8d9a800bde453bee91a.png) | ![](img/c30b07c3c7bf7bdc37f7306415bbb30a.png) | ![](img/c5ff347e4080ce7c08a4ef970d64e2c8.png) | ![](img/b5bb150bb210e7ab72d227da9b38e6ba.png) |
 | --- | --- | --- | --- | --- |
 
 | ![](img/a8cebefa99ccd6b52cf8d0f4eef969d8.png) | ![](img/39c4e16807b2415af5857009e2a69558.png) | ![](img/db5fcab37a7dceea2b9d4d4c6b7a75a9.png) | ![](img/0027d4c6ccebb90dee1fc0b6db5e56bc.png) |

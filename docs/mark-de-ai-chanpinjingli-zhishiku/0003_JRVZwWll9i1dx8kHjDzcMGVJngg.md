@@ -72,7 +72,6 @@
 
 +   解释二
 
-![](img/ea7183b9a954850fab7f76d63d6e2369.png)
 
 ![](img/aca0ff51b1222289dfb893f7e6aa0f72.png)
 

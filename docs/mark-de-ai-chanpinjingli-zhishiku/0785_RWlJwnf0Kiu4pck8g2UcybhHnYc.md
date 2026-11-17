@@ -68,7 +68,6 @@
 
 > 注意：这种无互联网连接的限制是 Messages API 特有的。当我们在 Claude AI 或 Claude Desktop 中使用代码执行工具时，我们是可以访问互联网的，并且可以下载和安装包。
 
-![](img/ffc4dbfeaff121ba1f86a49a49121d33.png)
 
 ## Files API
 

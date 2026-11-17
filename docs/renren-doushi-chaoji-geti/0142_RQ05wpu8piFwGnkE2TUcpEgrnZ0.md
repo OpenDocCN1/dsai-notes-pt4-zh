@@ -8,7 +8,6 @@
 
 ![](img/1efbb7ef1d71eb20b212bada32f88307.png)
 
-![](img/e759ef0d7b5939f9f05826fc52aae742.png)
 
 ![](img/3cd2a7d77af6b809b9e0c83a11cffe6e.png)
 

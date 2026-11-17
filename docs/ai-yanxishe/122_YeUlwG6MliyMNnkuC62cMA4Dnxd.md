@@ -10,11 +10,8 @@
 
 天猫双11超级发布｜TOP品牌联合海报
 
-![](img/6a7b9fe3c778d4ebbf360cd4b329d04e.png)
 
-![](img/3d7a5ac92f0138642b316a8c18ba8a50.png)
 
-![](img/62bfcef34511ae84342b307bfdfd531c.png)
 
 ![](img/21a63246b2ba871c2c8fc521e65f97b6.png)
 
@@ -88,11 +85,8 @@ Q：AI对于实际出街项目，真的会降低设计师们的实际执行成�
 
 # **部分视频动态演绎分享**
 
-![](img/37822d967c2a362606ca4c5f185ec17e.png)
 
-![](img/4bf54210085601bb053c04c5def29e3d.png)
 
-![](img/d4259958edbee584afb466c719136332.png)
 
 ![](img/85f029fbe283a2beafa8061d2dbf509c.png)
 

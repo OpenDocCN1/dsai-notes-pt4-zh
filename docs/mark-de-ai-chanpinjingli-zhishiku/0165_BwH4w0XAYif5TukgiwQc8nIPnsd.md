@@ -179,7 +179,6 @@ plt.show()
 
 接着通过 np.random.gamma 方法生成样本数据，并利用 Matplotlib 绘制直方图以及由 SciPy 中 gamma.pdf 计算得到的理论概率密度曲线，从而直观地展示了伽玛分布的形状和特征。
 
-![](img/4c786ffcd3d584011682de7329ed5f55.png)
 
 ### 机器学习算法应用示例
 

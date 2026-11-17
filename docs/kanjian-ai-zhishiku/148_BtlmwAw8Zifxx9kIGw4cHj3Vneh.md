@@ -8,7 +8,6 @@
 
 追影
 
-![](img/52b2ba5ac791292e986022bb088f43a4.png)
 
 [dreamoving-video_stylization-2024-07-16-1000006-862717-result.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZWFcbcMjko6cbUx0gGfc9P6Vnne)
 
@@ -16,7 +15,6 @@
 
 faceswap
 
-![](img/0c912f5867767002521036bf755c42e3.png)
 
 [微笑_眨眼_捋头发.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UzHGbPnLtoaCZexqh1DcqsQDnud)
 

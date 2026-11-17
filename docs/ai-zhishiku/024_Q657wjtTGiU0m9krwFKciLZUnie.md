@@ -28,7 +28,6 @@
 
 登陆 Azure 之后，直接在顶部搜索关键词“openai”，就可以找到
 
-![](img/6310d2d22496377a192ec8ca13fa698f.png)
 
 然后点击“Azure OpenAI”进入接口创建页面，在底下有提示，点击“创建 Azure OpenAI”
 
@@ -88,7 +87,6 @@
 
 然后点击这个资源，配置所需的资源版本，目前是 GPT-3.5，如下图所示：
 
-![](img/ab25fd082a9177348c0a75aa461f2b95.png)
 
 Azure OpenAI 目前所使用的版本只有 GPT-3.5，如果需要 GPT-4，只能去申请 ChatGPT，直接开 Plus 订阅就有了。不过 GPT-3.5 已经足够使用啦。
 
@@ -106,7 +104,6 @@ Azure OpenAI 目前所使用的版本只有 GPT-3.5，如果需要 GPT-4，只�
 
 开始调戏一下吧：
 
-![](img/2c082c963d3f9c383f2f152bcc828bae.png)
 
 ## **申请 OpenAI API**
 

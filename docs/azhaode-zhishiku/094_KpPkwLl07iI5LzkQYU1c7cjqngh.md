@@ -135,7 +135,6 @@ stable diffusion在学习后的测试效果还是有的，但形体固化，几�
 
 
 
-![](img/fdddc77a66e5931c533bb64e5bdda522.png)
 
 
 

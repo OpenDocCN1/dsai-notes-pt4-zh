@@ -122,9 +122,7 @@
 
 下面是我们自己转化报名的图片：
 
-![](img/fcd7f322f7d7c2bcffc476dc981483c9.png)
 
-![](img/e842f777a2c3d308219c4c362573e9cb.png)
 
 ![](img/6f00ea08254de8a6f1457bc3b397d2c0.png)
 

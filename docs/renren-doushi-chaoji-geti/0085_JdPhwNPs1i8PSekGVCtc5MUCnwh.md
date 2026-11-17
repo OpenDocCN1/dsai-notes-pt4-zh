@@ -208,9 +208,7 @@
 
 知名的域名商有很多，国内的有阿里云、腾讯云等，国外的有Godaddy、Namecheap等，但是，当你注册某个域名的时候，不同域名商的价格是不一样的：
 
-![](img/532362f1be54be6b9af0a909f7da2d16.png)
 
-![](img/b711f8a95a9cf8fc0bd2983c8df76682.png)
 
 ![](img/80f4b1a0c498cb431854e25d06f1bbe7.png)
 
@@ -354,7 +352,6 @@
 
 我们以前段时间在Tiktok突然火了一下的“AI robot lion”为例。这个词不建议大家去做，这种词是在社媒中突然爆火，热度不一定能持久，这个词仅热了两三天，热度就下去了，不像之前的另一个词“Wplace”那么火爆，因此，这个词仅仅是作为本次分享随便找的一个例子。
 
-![](img/0f5d01e4b0c23e3d3db2d02fab2c25a1.png)
 
 ![](img/3613a5894e3fe232c669879e4cebd3f9.png)
 
@@ -506,7 +503,6 @@ Claude Code按照我们的要求做了完善：
 
 接下来，不要忘记修改一下网站的Logo。我让ChatGPT在原来生成文案的对话记录中，根据前面的文案，帮我生成这个网站的Logo图标，然后我用Photoshop修改了一下，准备了这几个图标，放在“/public/”文件夹中：
 
-![](img/ef90dc9b3b75ac4497ab704afb4d8919.png)
 
 ![](img/971ccde35f4dd292e231e446465cd347.png)
 
@@ -672,19 +668,15 @@ Claude Code按照我们的要求做了完善：
 
 在Cursor中打开我们前面修改好的项目：
 
-![](img/d5ac08709227d2d3481c0859370e92de.png)
 
 点击进入Git窗口：
 
-![](img/eaea7616d09fbfb8d351c4018c3c4c23.png)
 
 点击“Initialize Repository”初始化仓库：
 
-![](img/0815101b03e0e29bf7ccf454dab0ee4a.png)
 
 输入提交时的备注信息，然后点击“Commit”提交：
 
-![](img/757f7fbd5bfdfffeac33541daa559440.png)
 
 接着点击“Publish Branch”推送代码到仓库：
 
@@ -704,15 +696,12 @@ Claude Code按照我们的要求做了完善：
 
 打开GitHub Desktop，登录你的Github账号后，点击左上角这个向下的小三角形图标：
 
-![](img/d91d19b35232de22265b8806df573013.png)
 
 点击点击“Add”下拉框，选择“Add existing repository...”添加我们刚刚提交的项目：
 
-![](img/ca3a1f29db9ea7878b70e64e09f7d2ca.png)
 
 选择项目所在文件夹，然后点击“Add repository”添加：
 
-![](img/b757b83219ddb7fb74c1974f03f72ebc.png)
 
 添加成功：
 
@@ -872,19 +861,16 @@ Cloudflare的Nameservers生效后，可以看到绿色的“Active”状态，�
 
 添加我们的域名，一般添加根域名和带“www”的二级域名，以我们这个网站为例，需要添加“airobotlion.com”和“www.airobotlion.com”这两个域名。由于我习惯使用不带“www”的域名，因此没有选择把根域名跳转到“www”的域名上。
 
-![](img/509700246ec52dc1877b933f65cf5a9c.png)
 
 ![](img/2fa03688dc01a003c2d7c852252c7fe3.png)
 
 接下来，分别点击这两个域名的“Learn more”链接，可以看到Vercel已经告诉我们怎样解析这两个域名：不带www的根域名通过A记录解析到指定的IP地址，带www的二级域名通过CNAME解析到指定的域名。
 
-![](img/2b08c85a63d2a393766d3be8b6abc752.png)
 
 ![](img/ac3a24cc7d01a4be44634e2487bba484.png)
 
 回到Cloudflare，点击“DNS”的“Records”添加域名解析记录，分别添加一条A记录和一条CNAME记录并分别保存。
 
-![](img/d7deff0314c88133406e9efdca171fd8.png)
 
 ![](img/a82c3be3459599f9d13036116e3b7956.png)
 
@@ -900,7 +886,6 @@ Cloudflare的Nameservers生效后，可以看到绿色的“Active”状态，�
 
 比如，我想把“www.airobotlion.com”和“ai-robot-lion.vercel.app”这两个域名重定向到“airobotlion.com”这个域名上，对外只使用“airobotlion.com”这个域名，那么可以通过编辑域名，然后选择301重定向，把域名重定向到“airobotlion.com”这个域名上。反之，如果你想使用“www.airobotlion.com”这个域名，则把“airobotlion.com”和“ai-robot-lion.vercel.app”这两个域名重定向到“www.airobotlion.com”这个域名上。
 
-![](img/ead8a94076e839d2a46a05db789a5770.png)
 
 ![](img/86fa470f0c240b212b188360630ea601.png)
 
@@ -930,9 +915,7 @@ Cloudflare的Nameservers生效后，可以看到绿色的“Active”状态，�
 
 点击左侧菜单“Email”中的“Email Routing”，点击“Get started”。
 
-![](img/2ece18d4c2dba62e12da6c2d94fc4029.png)
 
-![](img/70b14b6abcc4215896791868e4a6a64e.png)
 
 ![](img/a94467a20904b10a98c97ef79f2f22eb.png)
 
@@ -1004,9 +987,7 @@ Cloudflare的Nameservers生效后，可以看到绿色的“Active”状态，�
 
 打开左上角网站下拉列表，点击底下的“Add property”添加新的网站：
 
-![](img/0ee61c37432738d66f79f17aacfd9c5d.png)
 
-![](img/8cc77e40f6f959ccafeaf8b2c2994e59.png)
 
 ![](img/f809c7cada2433bcf70fa98b5ae11ce5.png)
 
@@ -1036,9 +1017,7 @@ Cloudflare的Nameservers生效后，可以看到绿色的“Active”状态，�
 
 可以看到我们的网站首页链接状态为“URL is not on Google”。这很正常，因为我们的网站是新网站，链接是新链接。点击“REQUEST INDEXING”提交我们的网站首页，提交成功后可以看到显示“Indexing requested”。
 
-![](img/05fcc867163320ffdb89c3aa0932bd86.png)
 
-![](img/61a7bc2cc984f973a8596cf7551c4350.png)
 
 ![](img/ff1dfa9d8f1a522561d529408f2a1a7b.png)
 
@@ -1058,21 +1037,14 @@ Cloudflare的Nameservers生效后，可以看到绿色的“Active”状态，�
 
 选择通过从“Google Search Console”导入，页面会跳转到谷歌进行登录和验证：
 
-![](img/b568f0ada506e089a91b93533cc36f27.png)
 
-![](img/6be2f9fc59c88abc01d905288fae6b5c.png)
 
-![](img/800fbdd73f8964aabce544e4346a7436.png)
 
-![](img/4a5ccc479ff017964ea818a2e3bb9d56.png)
 
 验证成功后，可以看到刚刚我们新添加到GSC中的网站，勾选这个网站并导入。导入成功后，在左上角网站下拉列表中找到你新添加的网站打开，就进入这个网站的Webmasters页面。
 
-![](img/cf3c8996fa075be05405000c2a122b5c.png)
 
-![](img/6d2f379f3c3943de330a24b387cb6ff1.png)
 
-![](img/b262f10db7b7338e34e26fc041be8159.png)
 
 ![](img/6a2e8a964999ab633ff839b9b294b57c.png)
 
@@ -1080,11 +1052,8 @@ Cloudflare的Nameservers生效后，可以看到绿色的“Active”状态，�
 
 点击左侧菜单“Sitemaps”进入Sitemaps管理页面，然后点击“Submit sitemap”，输入我们网站的Sitemap链接，点击“Submit”即可提交网站的Sitemap文件。
 
-![](img/de6236fef91f2d390b3ea23b7feb6674.png)
 
-![](img/3143ddfc6a1c0ecf57d964db24268692.png)
 
-![](img/7bcf6b3827f4c001f7e277ecadc431d2.png)
 
 接下来提交网站的首页，点击左侧菜单“URL Inspection”，然后输入你的网站首页链接，比如：
 
@@ -1092,11 +1061,8 @@ Cloudflare的Nameservers生效后，可以看到绿色的“Active”状态，�
 
 然后点击“Inspect”提交。
 
-![](img/bf0f3870b3d2a1bb17e4872a95a18a3c.png)
 
-![](img/43e62ec68233e084b994c640f10ae820.png)
 
-![](img/74fa54d497eb710fac9420c4e3e1e42f.png)
 
 ![](img/d8b3851ccd74079f2c490170718221af.png)
 
@@ -1112,25 +1078,17 @@ Cloudflare的Nameservers生效后，可以看到绿色的“Active”状态，�
 
 点击左下角的齿轮，打开GA Admin管理页面。然后在左上角的“+ Create”处添加“Property”，如果你是第一次添加，需要先添加一个Account账号（你可以通过不同的Account账号来对多个网站进行分组管理）。
 
-![](img/70a1c31b2964559b5fe73573fb093974.png)
 
-![](img/ea518976a09546b1bb94e5b36d9b522b.png)
 
 点击“Property”添加1个Property，输入网站相关信息并选择相应的选项：
 
-![](img/78da210cf2886ff016c2010cbefe3331.png)
 
-![](img/ac9bdea6bf5f5591ae1e584e437402fd.png)
 
-![](img/bd7e381095232cb7c040dccfde758709.png)
 
 接下来，添加你的网站信息和Data Stream。
 
-![](img/bec80e47c12ab16620af895b812b8ba9.png)
 
-![](img/b54ea7d7f684b49613000659a16a250d.png)
 
-![](img/1f6a6672aca565ff1d915b23c55f9ef6.png)
 
 在开始收集数据之前，谷歌将会给你提供一段这个网站的GA跟踪代码：
 
@@ -1156,7 +1114,6 @@ Claude Code很快修改好了代码。
 
 Git的Push操作会触发Vercel重新部署最新的代码。等待部署完成后，我们需要确认一下GA代码是否安装成功。
 
-![](img/39f2fcd8e6430143c39553ba92e4c63b.png)
 
 ![](img/9f58c14a622ac5362e172a3b789aea06.png)
 
@@ -1166,7 +1123,6 @@ Git的Push操作会触发Vercel重新部署最新的代码。等待部署完成�
 
 确认之后，回到GA管理页面，点击右上角的测试按钮，确认GA可以识别到添加到我们网站的跟踪代码。添加成功后，意味着GA可以开始对我们的网站流量和用户进行跟踪了。
 
-![](img/1fb0e51461fbc789a78a46fde8a85f86.png)
 
 ![](img/f264b26e0850c9946591f570dc2580f0.png)
 
@@ -1212,7 +1168,6 @@ Claude Code很快添加好了Clarity的跟踪代码。
 
 ![](img/9d32657b222d2ee86bf9ac0c9bab4c51.png)
 
-![](img/b96fe97ce69122982ff24813300ebef2.png)
 
 ![](img/edcbf3e547b89cf20e37b88513ba7629.png)
 
@@ -1250,15 +1205,12 @@ GSC、GA、Webmaster和Clarity这4个工具十分强大：既能跟踪网站流�
 
 登录Fal.ai网站后，点击右上角“Account”进入用户中心，点击“API Keys”菜单进入API Key页面，然后点击“Add key”按钮添加一个新的API Key。
 
-![](img/a6f6e2ab78c8f966a3368f88ae2569e6.png)
 
-![](img/93e2ff0fa997a564f44d8b703f583a4d.png)
 
 ![](img/bf0d74e7c4d5238414d9fb62121a8b0e.png)
 
 生成新的API Key之后，记得马上复制这个API Key并保存好，因为这个Key只显示1次。
 
-![](img/0b92bda1ba3aabf2921fb0e1ab72e465.png)
 
 ![](img/740ed53af451bb2556c613a819eea151.png)
 
@@ -1278,7 +1230,6 @@ ChatGPT输出了“同步直返”和“队列三段式”两种CURL的调试方
 
 > https://www.postman.com/
 
-![](img/4037841c62e58bde0f174243030c9938.png)
 
 登录Postman后，进入一个Workspace（如果第一次登录，需要创建1个Workspace）：
 
@@ -1304,19 +1255,14 @@ curl -X POST &quot;https://queue.fal.run/fal-ai/gemini-25-flash-image/edit&quot;
 
 点击“Import Into Collection”保存。
 
-![](img/edf49f84b82fbc84b23b023394b70dbc.png)
 
-![](img/b846bf87b00deaa8fdbb1ad65fc5cfb5.png)
 
 接下来，我们需要关注“Headers”和“Body”这两项，“Headers”中需要配置API Key，而“Body”中包含我们这个API调试的示例输入（你可以理解为是我们发送给API的参数）。
 
-![](img/ca06d78c9f822f628115e1001ed9b666.png)
 
 打开“Headers”，把这里边的“$FAL_KEY”改成刚刚复制的API Key：
 
-![](img/e4040ec313f26395569cb574983d1a67.png)
 
-![](img/7df20c1c3f90a2ed1f32cb3e59a9c61c.png)
 
 打开“Body”，可以看到显示一段json代码，包含prompt、image_urls、num_images和output_format这4个发送给API的参数，分别是生成图片时的描述、参考图（多张）、输出图片的数量（1~4张）和输出图片的格式（jpg/png），你可以根据你的需要修改这些参数。
 
@@ -1356,7 +1302,6 @@ ChatGPT调整了“轮询状态”和“获取结果”的CURL语句（去掉了
 
 重新调试“轮询状态”的CURL，这次返回“200 OK”，调试成功，返回一段json代码，这是“轮询状态”的CURL的示例输出。你可能会问，那这个CURL的示例输入是什么？点开“Body”会发现并没有内容，这是因为这个CURL发送的是GET请求，不是POST，因此参数已经包含在请求的链接中，因此没有其它示例输入。
 
-![](img/8bf365f840a7fed006874fef14113a37.png)
 
 接下来，调试“获取结果”的CURL语句：
 
@@ -1368,7 +1313,6 @@ curl -X GET \
 
 与“轮询状态”的CURL语句同理，这个CURL语句发送GET请求，参数已经包含在GET请求的链接中。调试成功显示“200 OK”，返回一段json代码，这是“获取结果”的CURL的示例输出。
 
-![](img/f9f83d5edfd73cbe6e179770ba52ab5b.png)
 
 ![](img/a8ab85b6ede0d3954c415f9a4d919c35.png)
 
@@ -1520,11 +1464,8 @@ Claude Code修改完成后，重新测试仍然报错：
 
 API Keys和数据库URL这个页面过了一会会自动跳转到其它页面，如果你来不及复制，可以按照以下方式找到这些配置信息：
 
-![](img/d502726a9e96e51d2b653ebe025cae61.png)
 
-![](img/ade56a546ad913fb187dab2361582093.png)
 
-![](img/8ea4b38208e974d4ac0807ed46f396c3.png)
 
 ![](img/2a8d2470bd0339519ed34757fdfa9dfe.png)
 
@@ -1536,13 +1477,10 @@ API Keys和数据库URL这个页面过了一会会自动跳转到其它页面，
 
 点击左侧“Project Settings”，点击“Authentication”，然后点击“Sign In / Providers”进入时候第三方授权登录配置页面。
 
-![](img/47d8283023ff64eb190e4170cf1bd9f7.png)
 
-![](img/b1b5af305be543cfa6504855927a3111.png)
 
 可以看到这里罗列了很多授权登录，也包括我们常用的谷歌授权登录和GitHub授权登录。找到Google，点击右侧的“Disabled”，配置谷歌授权登录：
 
-![](img/60955c7447a253b51b4f4ddd376a9001.png)
 
 ![](img/6f9f1873f36ce04807e30cb7a31edf12.png)
 
@@ -1558,15 +1496,11 @@ API Keys和数据库URL这个页面过了一会会自动跳转到其它页面，
 
 点击左上角项目名称位置，添加新项目：
 
-![](img/4b370920b6408528a21524c1a90985c8.png)
 
-![](img/e49a3cebe819af9bd037fecca1b617b2.png)
 
 输入项目名称，点击“Create”完成新项目创建，然后重新点击左上角项目名称位置，并选择进入刚刚添加的项目：
 
-![](img/8661d10a073a404bf63e6e0410703316.png)
 
-![](img/a90af55aa61f12d0b1d5f542ccbb8d25.png)
 
 接下来，点击“APIs & Services”进入API配置页面，然后点击“OAuth consent screen”创建创建OAuth 2.0客户端ID（Web应用类型）：
 
@@ -1576,13 +1510,9 @@ API Keys和数据库URL这个页面过了一会会自动跳转到其它页面，
 
 点击get started开始创建，按照下面步骤输入项目名称、用户支持的邮箱，选择“External”表示项目对外，然后输入联系邮箱，最后点击同意完成项目“Branding”的添加。
 
-![](img/24eace177e4aaf448dd8ece8159d2f8c.png)
 
-![](img/92b7fa0dbf427f44c649097be051768a.png)
 
-![](img/6a025d52138c9747ec00c36219ce442a.png)
 
-![](img/5a4479892dd6e4521db447bd7f982d64.png)
 
 接下来添加OAuth Client ID，点击“Create OAuth client”：
 
@@ -1602,11 +1532,9 @@ API Keys和数据库URL这个页面过了一会会自动跳转到其它页面，
 
 创建后拿到Client ID和Client Secret。这两个需要复制下来，需要粘贴到Supabase的谷歌授权登录的配置中：
 
-![](img/dd5571b2df7f2e38dd4103188768ff95.png)
 
 如果你忘记复制，后面也可以重新编辑Client查看client ID和client secret：
 
-![](img/9c58b72d842e0ddfb2da5d1b6f367833.png)
 
 ![](img/98e9ff42066c68bed16b633d0937738a.png)
 
@@ -1622,17 +1550,13 @@ API Keys和数据库URL这个页面过了一会会自动跳转到其它页面，
 
 最后，我们回到Supabase刚刚配置谷歌授权登录的页面。填写“Client ID”和“Client secret”，点击“Save”保存，即完成Supabase中的谷歌授权登录配置。
 
-![](img/2fccdcfbe50dd8245ba0bbb9f80dbb3a.png)
 
 ![](img/5f76d9914fe96420b08927b3c1bdf769.png)
 
 就这样，我们完成了通过谷歌授权登录网站：
 
-![](img/bca5019cab34738ba9f2701b40276a9a.png)
 
-![](img/215a807c8f1606916dc7a6703379f7fd.png)
 
-![](img/f68de701b19bf0e1df1146288008cc26.png)
 
 ![](img/b335730a022625cd61267a617be93ca9.png)
 
@@ -1646,9 +1570,7 @@ API Keys和数据库URL这个页面过了一会会自动跳转到其它页面，
 
 点击左侧“Project Settings”，点击“Add ons”，找到页面右下角“Change custom domain”，可以选择设置自定义域名：
 
-![](img/79572797700b02f8e35c30c1e164047a.png)
 
-![](img/195763145daf428b026435c23fc8ed9f.png)
 
 然而这个功能是付费的，因此这里不做进一步演示。
 
@@ -1662,9 +1584,7 @@ API Keys和数据库URL这个页面过了一会会自动跳转到其它页面，
 
 在配置谷歌授权登录的时候，正式上线时我经常遗忘一个步骤，那就是你的网站正式上线时，需要把Supabase中Authentication → URL Configuration修改成你的线上域名：
 
-![](img/d61a8c411489436e1559c938c262cb6e.png)
 
-![](img/e4f95c2a25ef2d93f9aa3676cdb131b2.png)
 
 ![](img/5282618f414d2c4a200e7d57d7ec5f6f.png)
 
@@ -1834,15 +1754,11 @@ Cloudflare给我们提供了两个Nameservers，我们需要回到我们注册�
 
 前面第5部分的内容提到怎样把代码提交到Github上，这里我们简单过一遍。
 
-![](img/1f4ddadaf4677513663c59d5c0da840d.png)
 
-![](img/4ef3189a5ef52927eb56dcba8ee48c06.png)
 
-![](img/a4ee83ed465e2714e29f7a3f7ed58864.png)
 
 在Cursor中打开我们前面修改好的项目，点击进入Git窗口，点击“Initialize Repository”初始化仓库，输入提交时的备注信息，然后点击“Commit”提交。
 
-![](img/611feffb4616d7b26448209f5562a082.png)
 
 ![](img/c1a5c07aa065e97b3ae14c764fd3dab8.png)
 
@@ -1862,19 +1778,15 @@ Cloudflare给我们提供了两个Nameservers，我们需要回到我们注册�
 
 切记点击进入“Pages”页面，然后导入Github仓库的项目：
 
-![](img/dd29ba08906b6d6a67e00b4672de4c13.png)
 
 ![](img/3c3e56a95347feca4f27de64dec7cb43.png)
 
 首次需要先连接你的Github账号，连接成功后，选择你的项目对应的Repository：
 
-![](img/e4d7f0c314e038da9f4a087b54a7cab4.png)
 
-![](img/698bc02c7533fb6c4b71fac5e59c7e71.png)
 
 默认进入下一步，然后Cloudflare开始编译部署网站：
 
-![](img/2d8ce644d8456bc1acd2b5e288a1b587.png)
 
 ![](img/ce50076fbeea7b3e42ea3c09637e9fab.png)
 
@@ -1886,13 +1798,9 @@ Cloudflare给我们提供了两个Nameservers，我们需要回到我们注册�
 
 进入项目后，点击“Custom domains”进行域名绑定：
 
-![](img/9b610988df1492a2be8f07f9cc8b063a.png)
 
-![](img/5171bc4b5819be08bbcfe194fbe31c09.png)
 
-![](img/eedeb03d62047cc35a2ec148c7c06b36.png)
 
-![](img/91808e504bf6f537216f2ce1ade92129.png)
 
 按步骤输入域名，我们先输入不带www的根域名并启用：
 
@@ -1904,11 +1812,8 @@ Cloudflare给我们提供了两个Nameservers，我们需要回到我们注册�
 
 域名启用成功后，Cloudflare体贴地帮我们配置好SSL，网站已经可以通过根域名打开。
 
-![](img/c413d7fc7a73da051bbbbb68fa10e3a4.png)
 
-![](img/3f0d4db59c3988971ae8a59f50ea70fb.png)
 
-![](img/c8061e647e333de4f8c807cc5288d6b0.png)
 
 ![](img/8d04c3e27aa68df34950cd295cd1164f.png)
 

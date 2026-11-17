@@ -18,13 +18,11 @@
 
 3.长沙
 
-![](img/7a8d878955d16d392bc27e7d07f53822.png)
 
 ![](img/0904e18912da5a8bfe9d77ccf02a1195.png)
 
 ![](img/d0c3148ddfd149e14903483190ebf163.png)
 
-![](img/b12c8437e6862e4845e484fbcedbec6e.png)
 
 ![](img/4a44bd02881698de11139dab6cb9c0c0.png)
 

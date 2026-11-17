@@ -18,7 +18,6 @@
 
 # 🪩 知识库主要内容
 
-![](img/9fddb1319198437c85b86c1f545bac76.png)
 
 [**每天 AI 快报**](https://km3dl0ffdl.feishu.cn/wiki/UvJPwhfkiitMzhkhEfycUnS9nAm#CHp1d6NJWoNrzXx16CecclYxnze)
 
@@ -26,7 +25,6 @@
 
 [**学术研究更新**](https://agijuejin.feishu.cn/wiki/YfAHwRoGwitjbAkMKfgc3XEinfg)
 
-![](img/a9c0f441ba117cea13c95a14459eb0cf.png)
 
 [**AI 基础学习**](https://km3dl0ffdl.feishu.cn/wiki/JEWpwDijZihVwGkcW9AcO8OendA)
 
@@ -34,7 +32,6 @@
 
 [**智能体学习**](https://agijuejin.feishu.cn/wiki/JUSPw6EDZiVpKckRLUicc1iAnOg)
 
-![](img/61499b290bba2b5000cc83fbd3714829.png)
 
 [**技术前沿应用**](https://agijuejin.feishu.cn/wiki/EtoiwSfomiHnmukOCDncsdnenYd)
 

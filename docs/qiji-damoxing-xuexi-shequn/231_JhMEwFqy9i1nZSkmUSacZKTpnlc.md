@@ -140,7 +140,6 @@ https://x.com/AndrewYNg/status/1778075380886495676
 
 请在此注册:https://deeplearning.ai/short-courses/preprocessing-unstructured-data-for-llm-applications
 
-![](img/cbca5af14d6d6113d2c581dea8210222.png)
 
 [ssstwitter.com_1712819989749.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AZ3Tbkt3loPInaxH2SwcA4TInZe)
 
@@ -154,7 +153,6 @@ https://x.com/sanchitgandhi99/status/1778093250324189627
 
 为了促进开源TTS研究的发展,我们正在开源所有数据集、训练代码以及我们的第一个迭代检查点:Parler-TTS Mini v0.1。
 
-![](img/febb309f4d6b62c73656993973350921.png)
 
 [ssstwitter.com_1712774816128.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YHx4bkCjDoNUttxXn0IcYBS5nPe)
 

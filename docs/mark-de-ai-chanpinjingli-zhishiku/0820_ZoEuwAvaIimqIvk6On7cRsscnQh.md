@@ -144,7 +144,6 @@ class Encoder(nn.Module):
 
 解码器块结构如图所示
 
-![](img/d1f137e4a92077bdfe5713c109844bf3.png)
 
 **代码实现**
 

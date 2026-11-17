@@ -238,9 +238,7 @@ Lovart 现在可以直接识别出图里的字。比如你生了一张圣诞海�
 
 你做好的海报，点一下就能自动贴到马克杯、T恤、户外广告牌上。而且它不是生硬地贴上去，它会模拟材质的反光、褶皱。
 
-![](img/a1b654187f4e5394c1cbfb1d2caf633b.png)
 
-![](img/86df5d438813f6933e35172eb914e198.png)
 
 比如前面的这张圣诞节晚会海报，它会有透视变形和反光效果，看着非常真。
 
@@ -452,7 +450,6 @@ Lovart 现在可以直接识别出图里的字。比如你生了一张圣诞海�
 
 > 用红色毛线编织的圣诞快乐海报。
 
-![](img/f628465d22aff880c94e38d3eb197615.png)
 
 ![](img/b08d997006cfd3a4fe569209efe3d148.png)
 
@@ -464,7 +461,6 @@ Lovart 现在可以直接识别出图里的字。比如你生了一张圣诞海�
 
 > 加入北欧风格的家具，摆上圣诞树，营造温馨的氛围。
 
-![](img/8750a5fb4b969f2fc3b53e6c9c26b58d.png)
 
 ![](img/6dcd8cd19b7ff0d6b0b97d09e0ffb04c.png)
 
@@ -486,7 +482,6 @@ Lovart 现在可以直接识别出图里的字。比如你生了一张圣诞海�
 
 > During the Christmas preparation season, the dog has turned the house into a total mess. The owner hangs a sign on it that says “Sorry,” but the dog looks extremely pleased with itself, as if it believes it just did something truly praiseworthy.
 
-![](img/f57332adbaca14254d089cfb8f0d96c8.png)
 
 ![](img/50df24959d3e5793ecd6ac00650c83fe.png)
 

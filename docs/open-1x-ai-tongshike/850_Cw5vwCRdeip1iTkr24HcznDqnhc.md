@@ -36,7 +36,6 @@
 
 ### 动画演示
 
-![](img/85ef828bbcaaf120286149e2ae9cd3ad.png)
 
 [KVCache2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K3gjbg4emoY3PyxiIOpcvUALnPg)
 

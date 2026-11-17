@@ -74,7 +74,6 @@ https://x.com/reach_vb/status/1868608027156250906
 
 祝贺 **@AIatMeta** 的精彩发布，再次感谢他们对开源社区的坚定承诺！🤗
 
-![](img/d73987bf5bbf138afd66875cc181ddd6.png)
 
 [3NyEBbMMmcnLNDYf.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cxr3bR42BorP4Yxkg7ecdesqnKd)
 

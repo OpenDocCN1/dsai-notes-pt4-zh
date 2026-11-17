@@ -19,7 +19,6 @@
 
 > 赛事链接：https://challenge.xfyun.cn/h5/detail?type=interpretation-challenge&ch=dw24_tjsmU3
 
-![](img/186da6813dc32a5512a623210f7aaf37.png)
 
 1.报名参赛
 
@@ -60,13 +59,11 @@ git lfs install
 git clone https://www.modelscope.cn/datasets/Datawhale/Idiom_Definition_iFLYTEK_AI_2024.git
 ```
 
-![](img/7c4d25c849868189a300b2c16a5a8ace.png)
 
 1.  打开baseline文件一键执行
 
 > PS：注意baseline文件的后缀是.ipynb
 
-![](img/7a334f8ea4b2c4957a5e7d7bd4b0e816.png)
 
 ![](img/100f9c902fd4ad49d4c999bf6a1a09d2.png)
 
@@ -84,7 +81,6 @@ git clone https://www.modelscope.cn/datasets/Datawhale/Idiom_Definition_iFLYTEK_
 
 > 点击【提交结果】，选择本地文件，提交并等待。
 
-![](img/fb86d0b102f6af8cb24f2aebd1f7a134.png)
 
 ![](img/0af32db84c3e6c2d000fa8007907d6d9.png)
 

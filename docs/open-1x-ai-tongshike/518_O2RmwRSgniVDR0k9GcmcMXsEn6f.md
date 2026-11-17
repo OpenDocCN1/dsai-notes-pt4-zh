@@ -70,11 +70,8 @@ torchvision是一个流行的开源Python包，它提供了许多用于深度学
 
 ## 几何变换
 
-![](img/7a0b709ffbf103066a35dccc8c4f0496.png)
 
-![](img/eb6972357c2852e86ec56a2af181f18c.png)
 
-![](img/a5564c3a5239c92761c0f47da055e751.png)
 
 +   调整大小: Resize可以将图像调整到指定的大小。
 
@@ -94,7 +91,6 @@ torchvision是一个流行的开源Python包，它提供了许多用于深度学
 
 ## 颜色变换
 
-![](img/3f27d91bf8ecd6b562efc991eaddfa6e.png)
 
 ![](img/3ba20c976909615832a1e225d6249bb0.png)
 

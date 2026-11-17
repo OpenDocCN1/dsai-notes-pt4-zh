@@ -26,7 +26,6 @@ CogAgent的厉害之处就在于，它懂得“人性化操作”！
 
 **亮点来了**：为了避免打扰你的正常使用，它还专门开发了“虚拟屏幕”功能，这个头脑简直像个“贴心小棉袄”，信息搜集和操作都不碰你主屏幕，给隐私再加一层锁！
 
-![](img/7742d44cf0377ada512981db10a06506.png)
 
 [CogAgent.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lo8tb1GWboIdDdxvUZccFPDfnfb)
 
@@ -40,7 +39,6 @@ CogAgent的厉害之处就在于，它懂得“人性化操作”！
 
 更酷的是，这个Agent用上了“WEBRL”强化学习框架，简直是自我提升的学霸！训练初期就能理解复杂的网页操作，一步步变得更智能，感觉让人类都快失业了 [破涕为笑]
 
-![](img/58b21027156105ed3959cf7246378e84.png)
 
 [AutoGLM-Web.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IAhAbQ6GoogR5cxjicvcTIwYnCf)
 

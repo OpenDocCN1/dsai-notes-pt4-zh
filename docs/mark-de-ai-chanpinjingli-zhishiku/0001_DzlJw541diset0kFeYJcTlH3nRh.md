@@ -136,7 +136,6 @@
 
 ## 原型库行业概览
 
-![](img/d1d2496a27125ec54f2c7b5e7818efbd.png)
 
 ![](img/bc5fd4f3b9e50844ae84d4eb53896094.png)
 
@@ -208,15 +207,12 @@
 
 [产品经理面试分类问题及回答汇总（100个）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XNPgb1I5qouEW5xl8gEcxUysnKb)
 
-![](img/eefd26e774622d1643fbba6a841f3b12.png)
 
 [产品经理 30 天速成宝典.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EehvbSngxoED6Gx14YFclItSnsh)
 
-![](img/380cc51afff6aca3e964ec4c670f9668.png)
 
 [互联网产品经理面试真题参考.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G2BGbVzmZoCOJvxnrzyc8VgmnGb)
 
-![](img/dcb2cb0d646a8426ae35dc67be4105a9.png)
 
 [产品分析合集.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WNXgbf6fZouYJAxaOPNcgmkunNb)
 

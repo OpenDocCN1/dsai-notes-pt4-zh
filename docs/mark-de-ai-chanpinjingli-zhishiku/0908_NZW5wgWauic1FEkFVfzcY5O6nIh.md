@@ -86,7 +86,6 @@ codex下载mac地址：https://openai.com/zh-Hans-CN/codex/codex
 
 选择智谱模型，再往下滑输入API。
 
-![](img/8b974e3e6cbc4b9d129fcdc1aed0f6e7.png)
 
 粘贴刚刚复制的API key，点击【添加】就可以了。
 

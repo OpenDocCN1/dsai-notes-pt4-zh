@@ -700,7 +700,6 @@ async function yourMainFunctionName(bot) {
 
 1.  **探索性能**：这个指标用发现的不同物品的数量来衡量游戏玩家在开放世界中的探索能力。"发现的物品"定义为被收集到玩家的库存中的物品。发现的物品越多，说明代理越能完成各种任务，解锁各种技术，发现各种新奇的事物。本文使用玩家发现的物品种类Variety items collected over rounds，收集的物品总数Items collected over rounds，完成的任务数Completed Tasks来衡量智能体控制下游戏玩家的探索性能。
 
-![](img/501ce872091dd34b6bdbf5a2f412a7a7.png)
 
 ![](img/871b777ed4e554ec7fb78dde358465d9.png)
 
@@ -712,7 +711,6 @@ async function yourMainFunctionName(bot) {
 
 1.  **地图覆盖**：这个指标即通过游戏玩家在Minecraft世界中行走的距离Total distance和经过的不同地形来衡量玩家的空间探索能力。行走距离Total distance越长，地形种类越多，说明玩家越能广泛地探索环境，适应各种情况。本文使用游戏玩家行走的总距离d来衡量。
 
-![](img/6cf9d2ad57fe3aa765d32a5fcc80cfb2.png)
 
 ![](img/c43f10ce3bc402d09b2706405d16c4ce.png)
 
@@ -728,9 +726,7 @@ async function yourMainFunctionName(bot) {
 
 ![](img/d91aea9dd8e7bb6366a26d6f3bec6089.png)
 
-![](img/b3da66c6d0f4e629af43ff2b683b5772.png)
 
-![](img/e7850a55b153f8c584f4235a24adb177.png)
 
 1.  20231014 （20轮）挖到钻石， by
 
@@ -740,7 +736,6 @@ async function yourMainFunctionName(bot) {
 
 ![](img/aab1973ec54d4f3c74a34f1a85dbfea2.png)
 
-![](img/511c5f65e5d8cd137d21da980bccd481.png)
 
 ![](img/f537e199764a2b6e07533f78393e5db8.png)
 
@@ -748,7 +743,6 @@ async function yourMainFunctionName(bot) {
 
 我们以Voyager的实现效果作为baseline，分别进行了MetaGPT和Voyager在物品采集和任务完成数上的直观表现说明。以MetaGPT的任务轮次作为观测周期，从图中可以看到，MetaGPT控制的游戏玩家在物品采集上有一定优势。
 
-![](img/eba870d86e090038f3ae1b711305d272.png)
 
 ![](img/af7b749ac96be60e9e4bc2d3f21d1024.png)
 
@@ -774,7 +768,6 @@ async function yourMainFunctionName(bot) {
 
 游戏过程中，任务执行统计 & 物品采集统计图
 
-![](img/e4c4c329cfd99c67033ea5226c682181.png)
 
 [MG1_Success_Failure_and_Types_over_Rounds  (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M7kwbIrLeoDzt0xCfLFcERujnxh)
 

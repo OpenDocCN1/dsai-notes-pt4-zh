@@ -372,7 +372,6 @@
 
 ![](img/95caa503a3063a224e0d39913c8c996c.png)
 
-![](img/bcb88aaa2b457c8914bd7382354dbd47.png)
 
 ![](img/0e2aac73dff5c3af69d78ca5df1f15f3.png)
 

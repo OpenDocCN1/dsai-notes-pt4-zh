@@ -16,7 +16,6 @@
 
 ![](img/4cc791a24ac3d414460993a83765dbce.png)
 
-![](img/3441da0385ed976f443007e3f00cf515.png)
 
 ## 3-21 APPSO AIDONE 第三期
 

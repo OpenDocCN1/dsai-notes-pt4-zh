@@ -68,7 +68,6 @@
 
 ### 剪映【所有】图片视频素材一键对齐字幕或音频片段
 
-![](img/11429f958663f2ef845b2450f3f8a823.png)
 
 [神技巧！剪映【所有】图片视频素材一键对齐字幕或音频片段，再也不用手动繁琐拖拽对齐了，批量操作省时省力，解放视频剪辑生产力~适用于Windows&mac.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HBm6bAHikogg9vxaKwEcQcrmnLg)
 
@@ -80,31 +79,26 @@
 
 ### 用文稿在剪映中快速生成梗图视频
 
-![](img/7290a548c9131a91e676237dc52bab45.png)
 
 [用文稿在剪映中快速生成梗图视频，极大节约劳动量，生产力飞升。自己或ChatGPT写稿都行，梗图幽默搞笑，容易爆火走红~适用于Windows&mac.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H7u4bxfbCoqalwxrH55c84lunzh)
 
 ### 剪映一键批量音频变速到对齐视频画面
 
-![](img/d9f80077bfc7ff221560df4cc34e3085.png)
 
 [[神技巧2.0]剪映一键批量音频变速到对齐视频画面，不再粗糙突变，提升1000倍精细度，还能重新对齐字幕的方法介绍~解放生产力，适用Windows&mac.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VIN8b2UQroeCvyxlcj9cNL9lnke)
 
 ### 人声口播和歌唱剪辑，剪映字幕拖动对齐很繁琐？如何一键批量对齐所有字幕和语音？
 
-![](img/ddeed4c7c1a1d0b8a3ec1107aa5a743c.png)
 
 [人声口播和歌唱剪辑，剪映字幕拖动对齐很繁琐？如何一键批量对齐所有字幕和语音？释放劳动力~Windows&mac.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S37HbKaPxouAqixqmkvcaFEkngg)
 
 ### 剪剪映一键批量音频变速，变速后可靠左紧密排列，还有重新对齐字幕的方法
 
-![](img/a86bcc204b91c3d8edc7580ad2bc7be6.png)
 
 [剪映一键批量音频变速，变速后可靠左紧密排列，还有重新对齐字幕的方法~解放生产力的剪映技巧~适用Windows&mac.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WQxUb4Dzuod9XtxXggscaHWEnnb)
 
 ### 剪映一键批量添加叠化转场，自适应对齐时间线
 
-![](img/daee378c1a1e9539cb6f49447ae7b941.png)
 
 [剪映一键批量添加叠化转场，自适应对齐时间线~想用叠化转场提升观众视觉体验吗？不用再手动繁琐添加与对齐时间线啦~适用Windows&mac.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C9yvb6tERogYbix6nNzcgv3unmd)
 

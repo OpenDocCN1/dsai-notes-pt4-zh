@@ -18,7 +18,6 @@
 
 +   [Reflexion: Language Agents with Verbal Rein](https://openreview.net/pdf?id=vAElhFcKW6)forcement Learning, Shinn et al., (2023)
 
-![](img/886de2b46f7b8b753c133c9629d4c116.png)
 
 [2303.17651v2.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S5kqb5MTDo1ct9xsnKZcfVsAnXd)
 
@@ -92,7 +91,6 @@
 
 +   [MM-REACT: Prompting ChatGPT for Multimodal ](https://arxiv.org/pdf/2303.11381)Reasoning and Action, Yang et al. (2023)
 
-![](img/98ee9e5bbb032e24a5a9df3f01c76734.png)
 
 [2305.15334v1.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JfMRbwVnroZa6dxaIT8cEoMDnud)
 
@@ -136,7 +134,6 @@
 
 +   [Hu](https://arxiv.org/pdf/2303.17580v4)ggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face, Shen et al. (2023)
 
-![](img/cd7ded838f3dfdfb35c5f15846792abf.png)
 
 [WXFX_Chain-of-Thought_Prompting_Elicits_Reasoning_in_Large_Language_Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vy1DbtsSToLIYox287rcCoW9nkh)
 
@@ -230,7 +227,6 @@
 
 > 每一个聊天由两个不同的角色来完成任务相关的角色扮演。
 
-![](img/22632c250bb80877c313e3402e36bd7c.png)
 
 **接下来是四个阶段的实现细节。**
 

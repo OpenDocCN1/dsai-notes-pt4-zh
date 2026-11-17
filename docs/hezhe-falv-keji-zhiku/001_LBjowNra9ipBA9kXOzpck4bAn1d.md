@@ -40,7 +40,6 @@ Stay Tuned！
 
 受[邀出席+自办活动共](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzE5MTY1MjA5OA==&action=getalbum&album_id=4211361534909612050#wechat_redirect) [70 余场，与多](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzE5MTY1MjA5OA==&action=getalbum&album_id=4332892984082907144#wechat_redirect)家[律师事务所、企业法务部、律师](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzE5MTY1MjA5OA==&action=getalbum&album_id=4399653091034284036#wechat_redirect)协[会、高校法学院等](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzE5MTY1MjA5OA==&action=getalbum&album_id=4117313071134277633#wechat_redirect)交流合作，并逐渐形成法律 AI 工作坊、法律 AI 夜校、法律 AI Café Day、法律科技产品路演等颇受好评的社区品牌活动。
 
-![](img/ab3284b4bd24f64a9ea968583691d7eb.png)
 
 ![](img/5ca6bc2f9580aa4202b3ae96ccb1da5d.png)
 

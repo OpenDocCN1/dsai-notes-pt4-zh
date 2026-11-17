@@ -74,7 +74,6 @@
 
 ![](img/e3d0ddb276d255aeafc97d0af96b2e03.png)
 
-![](img/c92487ff67c7a5ae0707ed63f19de26c.png)
 
 [vidu-video-2850679173617170.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CW3Gbqc5Do2HMfxageGccK0qnAg)
 
@@ -108,11 +107,9 @@
 
 [vidu-video-2851248841020587.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SB8Zb7yR6ooHzHxcAFqc6jJAnkb)
 
-![](img/5032e96c72ad61854e58907218be76fc.png)
 
 [vidu-video-2851249785860952.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L7XCbngaPohMKOxRZbAcfv2WnOc)
 
-![](img/21a1e4c618818713a0c80bad4d7e0aca.png)
 
 [vidu-video-2851250046760183.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MO7wbLjXdoFUqIxgCpGcAatInnf)
 
@@ -126,7 +123,6 @@
 
 [vidu-video-2851415444830271.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KHFzbQeBkoWadWxjYnocrgbqnfb)
 
-![](img/d3be6f312e49e439ed6189eb8f8bfeb9.png)
 
 [vidu-video-2851318992075325.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XIOeb8bLLorUmaxqDxacpXsVnLb)
 
@@ -140,15 +136,12 @@
 
 ![](img/0bd43a163065d1b36d24e9fae456b505.png)
 
-![](img/f8604ea18440b839483c85469584bd7d.png)
 
 [vidu-video-2851336513244452.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BuAcbjsRvoQhnYxvHnmctnFbnBh)
 
-![](img/2890b4fd031441feef62d6f530e625f5.png)
 
 [vidu-video-2851331315916262.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MGFcbbI1AoCxL9xW7ihcSFXFnNk)
 
-![](img/4d836ce0c4eb283f45ef458f4c26e19b.png)
 
 [vidu-video-2851352741673735.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G3PWbTa2Co3jeFxoRtUc3UXwnCb)
 

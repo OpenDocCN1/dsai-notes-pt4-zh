@@ -22,7 +22,6 @@ AI文物复活馆是一个运用人工智能多模态技术让残缺文物重焕
 
 [进入到首页优先](https://link.csdn.net/?target=https%3A%2F%2Fwww.aionly.com%2FkeyApi%3Flogin%3Dfrom_csdn)输入AiOnly Maas平台的API KEY，并且会检查API KEY是否有效。
 
-![](img/d592083c538cc434965770dd9bbda6ba.png)
 
 #### (三) 上传文物图片
 
@@ -40,9 +39,7 @@ API密钥配置好之后就进入到图片上传界面
 
 图片上传完毕之后，应用会调用gemini模型进行图片理解和故事生成
 
-![](img/ce3d9db5e1e15fa1279935c459f1f684.png)
 
-![](img/72aba679b099f7cb14192b511aa98df8.png)
 
 #### (五) AI复原生成
 
@@ -80,7 +77,6 @@ API密钥配置好之后就进入到图片上传界面
 
 AiOnly 的诞生，正是为了**打破这种碎片化局面**。它以“一站式”为核心理念，将国内外主流模型整合为标准化服务，让开发者从“到处找模型”转向“专注于业务逻辑”。
 
-![](img/a260e295a6696f42fdba6046afc2f10a.png)
 
 ---
 
@@ -100,11 +96,9 @@ AiOnly 的诞生，正是为了**打破这种碎片化局面**。它以“一站
 
 +   **价格低于官方定价**：例如 GPT 的调用成本比 OpenAI 官方低 15%~20%；
 
-![](img/303c80895bb6156902083fb8a0b56695.png)
 
 +   **灵活计费模式**：
 
-![](img/026897e3cf0cf1de954d554ef4ee69d6.png)
 
 这种“先用后付”模式非常适合 MVP 阶段的项目验证，避免前期投入风险。
 
@@ -128,7 +122,6 @@ AiOnly 的诞生，正是为了**打破这种碎片化局面**。它以“一站
 
 +   **API Key 管理**：统一创建、监控调用情况，避免 Key 泄露风险；
 
-![](img/bda9dea8e2aa40a9e01b35a1c2fffab3.png)
 
 +   **可视化调用监控**：实时查看 Token 消耗、响应延迟，定位性能瓶颈；
 
@@ -140,7 +133,6 @@ AiOnly 的诞生，正是为了**打破这种碎片化局面**。它以“一站
 
 +   提供**Prompt 优化建议**，比如输入“写一个 Python 爬虫”，平台会自动提示结构化指令模板。
 
-![](img/28a850552a9070b27a66fd9cb20e38a2.png)
 
 ##### 未来规划：AIGC 创作中心（值得期待）
 
@@ -178,7 +170,6 @@ AiOnly 的真正亮点，在于它与主流开发工具的深度整合：
 
 [如果需要](https://link.csdn.net/?target=https%3A%2F%2Fwww.aionly.com%2Fdocument%3Flogin%3Dfrom_csdn)调用API，AiOnly也提供了详细的文档，参考官方的帮助文档
 
-![](img/9287a787efee0b05ec9dd5dbfac82ca2.png)
 
       {&quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: {&quot;url&quot;: &quot;https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20241022/emyrja/dog_and_girl.jpeg&quot;}},
 
@@ -214,15 +205,12 @@ AiOnly 的真正亮点，在于它与主流开发工具的深度整合：
 
 1.  点击[模型广场](https://link.csdn.net/?target=https%3A%2F%2Fwww.aionly.com%2FmodelSquare%3Flogin%3Dfrom_csdn)，开通模型
 
-![](img/9ccb3529adffaab45e3c6b5820db5313.png)
 
 1.  选择Claude 4.5，Claude 4.5 在广泛的使用场景中展现出接近前沿的性能，并且作为最佳的编程和代理模型之一脱颖而出——其速度和成本恰到好处，能够为免费产品和高流量用户体验提供支持。
 
-![](img/e729ce0c4d2f9036a9a106bd76f26609.png)
 
 1.  开通之后查看开通管理
 
-![](img/59388db177595b7ce814f4c9bcebba14.png)
 
 1.  创建API KEY
 
@@ -232,13 +220,10 @@ AiOnly 的真正亮点，在于它与主流开发工具的深度整合：
 
 npm install -g @anthropic-ai/claude-code
 
-![](img/0dab9a93ec2c433945fc3842e9787bd9.png)
 
 **claude**
 
-![](img/53ef56297a093eb732484c75e888b205.png)
 
-![](img/9a5291cd0e21d2a051078432ab20de82.png)
 
 #### (四) 配置环境变量
 
@@ -258,19 +243,16 @@ claude-code 内部会自己拼接路径（如 /v1/messages）它会发请求到�
 
 https://api.aiionly.com/v1/messages/v1/messages
 
-![](img/cbe28950c5acac8e3180cf34d76d4049.png)
 
 #重启命令行，查看是否配置成功
 
 echo %ANTHROPIC_API_KEY%echo %ANTHROPIC_BASE_URL%echo %ANTHROPIC_MODEL%
 
-![](img/e35d259739eb4f4035a8ce96765f176d.png)
 
 #进入到claude code后查看模型
 
 /model
 
-![](img/2704c4015b5b4a5c7798824618a96159.png)
 
 [https://i-blog.csdnimg.cn/img_conv](https://i-blog.csdnimg.cn/img_convert/e093893f148ad4458a1ade2c0c122cd6.png)ert/e093893f148ad4458a1ade2c0c122cd6.png
 
@@ -280,7 +262,6 @@ echo %ANTHROPIC_API_KEY%echo %ANTHROPIC_BASE_URL%echo %ANTHROPIC_MODEL%
 
 准备好下方的提示词，输入给claude code
 
-![](img/07a268ae5e71fa89fddd0f519839b77d.png)
 
       {&quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: {&quot;url&quot;: &quot;https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20241022/emyrja/dog_and_girl.jpeg&quot;}},
 
@@ -324,7 +305,6 @@ curl -X POST https://api.aiionly.com/v1/images/generations
 
 Cluade Code会按照我们的要求优先生成一份claude.md 项目文档，如果有什么不满意的地方，再跟claude code继续交流直至项目开发文档满足你的所有需求。
 
-![](img/3e1dfaac5f7da258d36f02c9021312b0.png)
 
 ```
 AI**文物复活**馆 **- 产品**需求**文档##** 项**目概述

@@ -8,11 +8,9 @@
 
 ## 嘉宾PPT
 
-![](img/c6704dfe711891f86f89153d849e92a9.png)
 
 [林旅强_掘金创作者专场_1.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TiX2bU737oaJRpxOeNrcDRsznWg)
 
-![](img/8280d3e95ef19116d6658012b072b951.png)
 
 [张晋涛_掘金创作者专场_2.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NrCsbKXAHo0GS9x3wQucnvULnMd)
 

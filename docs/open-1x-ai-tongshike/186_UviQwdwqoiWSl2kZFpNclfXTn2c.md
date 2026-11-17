@@ -169,7 +169,6 @@ apt install axel zip file
 pip install modelscope
 ```
 
-![](img/8f55aecd7e5872120d0f42a4fc2a58f7.png)
 
 1.  下载模型和相关数据集（约50分钟左右，网速好也会很快～）
 
@@ -281,7 +280,6 @@ zip -r submit.zip solution output
 
 ![](img/f81de4606bef8c91c299e349ccdda19c.png)
 
-![](img/da15b6a45e1d79cf7f1e1ec1579409a2.png)
 
 ## Step3：在官网提交结果(submit.zip文件)
 

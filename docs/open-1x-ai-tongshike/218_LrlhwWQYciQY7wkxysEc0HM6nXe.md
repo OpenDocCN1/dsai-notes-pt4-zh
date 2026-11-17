@@ -166,13 +166,11 @@ openAI在技术报告里面展示了非常多的SORA演示视频，而通过这�
 
 报告中这一部分也极其让人印象深刻，同一个输入视频，可以做不同的变化，生成结果惊人的稳定！
 
-![](img/1ce0c5473bf53bb37cbf7e4a06c9fc51.png)
 
 [最强文生视频模型_SORA_技术路线解读 (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DGeqbAmCLovLgFxV4wfc6IZUnob)
 
 视频之间的流畅过渡，真的做到了无缝切换可以利用 Sora 把两个风格迥异的视频平滑连接起来，使它们之间能够自然过渡，仿佛融为一体。
 
-![](img/4c658d576b73c542dc34e94d2456ce4b.png)
 
 [最强文生视频模型_SORA_技术路线解读 (10).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LhfMbAHOYoWrHdxz4OBcEIlln9d)
 
@@ -194,7 +192,6 @@ Sora 可以让静态图片动起来只需一张图片和一个提示，Sora 就�
 
 虽然Sora是一个目前为止性能最强悍的文生视频模型（很可能短期之内也难逢敌手），但Sora也有一些比较失败案例视频被人讨论。虽然Sora在视频长度、一致性、分辨率以及对世界的理解等方面表现出了许多突破，但是文生视频领域中一个非常非常重要的问题Sora目前并没有给出完美的解决方案，这就是真实世界的事件运行方式需要符合物理定律。比如从手中不慎摔落的玻璃杯掉在地板上，Sora不会把玻璃碎片生成出来。如果是让玻璃杯原地爆炸，散落到地上的碎片也不会是呈正态分布。
 
-![](img/93062bc51b3adf7bb97463e241ab56a2.png)
 
 [最强文生视频模型_SORA_技术路线解读 (11).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q9EBbg0jvo5Vl8x5EFEc7GI3nuh)
 

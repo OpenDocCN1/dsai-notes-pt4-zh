@@ -8,7 +8,6 @@ AWS Prescriptive Guidance
 
 https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/strategy-gen-ai-maturity-model.pdf
 
-![](img/b541a0205fcc897ba8aefc85596b533f.png)
 
 https://docs.aws.amazon.com/
 

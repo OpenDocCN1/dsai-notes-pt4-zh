@@ -79,19 +79,16 @@ DeepSpeed 是大模型训练与推理的 “效率引擎”，通过创新的内
 
 https://www.deepspeed.ai/
 
-![](img/ee0ab85ee8e7c8a718e6ca14a9260a8b.png)
 
 # 三、DeepSpeed Tutorials 培训
 
 https://www.deepspeed.ai/tutorials/
 
-![](img/ea716e2c2b81c1e865293ab782895626.png)
 
 # 四、DeepSpeed GitHub
 
 https://github.com/deepspeedai/DeepSpeed
 
-![](img/374fb5030bf1a01b87a85fff1406becd.png)
 
 # 五、DeepSpeed Blog
 

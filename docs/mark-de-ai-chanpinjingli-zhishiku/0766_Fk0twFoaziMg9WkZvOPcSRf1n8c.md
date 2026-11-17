@@ -56,9 +56,7 @@ PRD 到位，我开始继续制作一个能让 PRD 快速变成产品 Demo 的�
 
 读完内容，我发现它不仅写了所有我说的功能点，还补充了很多细节。
 
-![](img/f4930d7f527dedbc2c5c109fa94d93b8.png)
 
-![](img/cec42320f76bf6eced184185229f289e.png)
 
 ![](img/98226bb52543e00ec8ee8be259ab77f3.png)
 

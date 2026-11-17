@@ -40,21 +40,17 @@
 
 ![](img/7a0562b006180e1f037987efbdad3738.png)
 
-![](img/3f92b2706a60314ae420d35d9eaadaa9.png)
 
 ![](img/4ec135fd294159d06a56a858c7e03f27.png)
 
 ![](img/71aed43f185f9304eef2a90fd2e2ee58.png)
 
-![](img/f091efcb15db52abdae1a44b845c4dca.png)
 
-![](img/6d759b0a54eb5ce1018157ab0123280c.png)
 
 ![](img/33b342b33b6b7d80107e27ebd1cb931e.png)
 
 ![](img/585e00f0b383a03e0f06587f2b9dbc41.png)
 
-![](img/bd2a44c63743f8b583e62b57adc44c1a.png)
 
 ![](img/1771b9ebede670571677ca4ef85dda82.png)
 

@@ -12,39 +12,30 @@
 
 **由**于自己也是新人但是之前借朋友的号看了赚钱小半年所以对赚钱还是有点了解的。所以在新人群分享了自己中标的喜悦并引发项目的探讨
 
-![](img/e75489b6d8c61ae8c6aeaaa280b25e32.png)
 
 1
 
-![](img/992dbc4a87d648e99d9316880008d48b.png)
 
 2
 
-![](img/dd4ea8178e10bc8c46115f0e5bcbd24d.png)
 
 3
 
-![](img/ecad481b0d8d71f6deecf7141bc9f5f5.png)
 
 4
 
-![](img/ddf4ed8434d484a157b3f29360c69b0f.png)
 
 5
 
-![](img/9510591ec3949bbe2b4766cbbb591517.png)
 
 6
 
-![](img/7be6dd4c2e8af0c52fe3bb9a18c900b1.png)
 
 7
 
-![](img/69de32c17f9f22b3b53654da6bf4f88b.png)
 
 8.**帮助群友拓展思路得到认可**
 
-![](img/36c7dd88aeb312daf2a2c3760e2f5ec1.png)
 
 9
 
@@ -60,11 +51,9 @@
 
 ![](img/624f424f74751a1ea4d244eeeb126c0a.png)
 
-![](img/a7fc3e9e49ca037d0042632753a65f62.png)
 
 **帮助圈友寻找热点**
 
-![](img/93c87331ac0e5e91fd1666950b9a4b91.png)
 
 ![](img/55f8a4eee2b5ee86a1e7ccaabf2319f4.png)
 

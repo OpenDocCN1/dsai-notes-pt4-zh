@@ -12,15 +12,12 @@ Office第三方部署安装工具，市面上有Office Tool Plus()、LKY Office 
 
 ## 2.软件安装
 
-![](img/327a14d6fef4a0975115b039c6cfcb08.png)
 
 3个地方需要先选择
 
-![](img/34948da372fcdeb9f7964b6175d53cc7.png)
 
 产品添加如上图
 
-![](img/ce5b9359588014329be917d7bebddaab.png)
 
 点击“是”
 

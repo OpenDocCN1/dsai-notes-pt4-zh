@@ -426,13 +426,11 @@ ctrl或者shift，加鼠标左键可以进行多选账号，多选后，右键�
 
 ### 1.注册飞书企业号
 
-![](img/472ca74e84cae5770f7800f50194a3bb.png)
 
 [飞书企业号注册.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S2JLbuXuXoF9VHxgPRfcNl9tnSh)
 
 ### 2.自建应用
 
-![](img/d4e3437defc07004113cb19d3815e574.png)
 
 [如何飞书自建应用.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ODo0bkAgIoaMssxqSt2cTotknad)
 
@@ -444,19 +442,16 @@ ctrl或者shift，加鼠标左键可以进行多选账号，多选后，右键�
 
 文档模板 https://b1wy3h4qfoe.feishu.cn/drive/folder/WsKafdBXllp908dJf3dcpBLUnle?from=from_copylink
 
-![](img/bbe349271fabad2ad60307c7d274cf3d.png)
 
 [创建飞书接口环境.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DK6XbCL6Xo44hYxKrR0c192fntc)
 
 ### 4.软件接入飞书模板链接
 
-![](img/7f5c5a0836e4a26fb7311a7e82df8994.png)
 
 [软件接入飞书模板链接.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZLRzbGLTDot31HxuWOAcYNgyn6g)
 
 ### 5.设置飞书机器人
 
-![](img/029e36864e697ddc240c4f8fefc6f9bb.png)
 
 [飞书机器人.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QysBbB15yoHD1vx9ZkZcXjo3nBd)
 

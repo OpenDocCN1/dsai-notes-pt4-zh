@@ -152,7 +152,6 @@
 
 ## ** 3. 中场休息**
 
-![](img/1b850599d61fb4025714dcb66fa142a1.png)
 
 ![](img/97ed5beea1f5075a4ecde8bbbef9dc82.png)
 

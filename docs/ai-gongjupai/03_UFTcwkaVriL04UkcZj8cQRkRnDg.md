@@ -92,7 +92,6 @@ AI 洞察者中心知识库面向 AI 产品创作者爱好者、想了解使用 
 
 核心内容：Midjoury 专栏、Stable Diffusion 专栏、大厂 AI 实践汇总
 
-![](img/cde0b69b4ba5244853adc52804de62c2.png)
 
 ## 6.AI 知识库｜AI 实验室
 
@@ -104,7 +103,6 @@ AI 实验室旨在分享 AI 相关内容并探索其对未来的影响，**而�
 
 核心内容：ChatGPT 系列、AI 绘画系列、AI 工具教程 、AI 实用工具分享、变现思路、AI 研报资料库
 
-![](img/eb0aceb16d540c4faa956c8ea9f4c5b5.png)
 
 ## 7.LangGPT 结构化提示词
 
@@ -152,7 +150,6 @@ AI 产品榜单由李榜主主导，联合 30 多位 AI 领域👸号主理人�
 
 核心内容：赛道总榜、全球 APP 增长榜、国内总榜、出海总榜、全球总榜、GPTs 总榜
 
-![](img/7f48dedcd14c45c6cf889d61858dadf2.png)
 
 ## 11.AI 产品数据榜
 

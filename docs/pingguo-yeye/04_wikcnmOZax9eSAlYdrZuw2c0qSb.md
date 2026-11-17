@@ -22,7 +22,6 @@
 
 如果页面无法正常显示，需要更换其他的网络节点，或者清理下浏览器cookie再次尝试。
 
-![](img/92bada17e0d472b9d9c0aa90bb519d02.png)
 
 ## **2. 邮箱注册**
 
@@ -102,7 +101,6 @@
 
 ![](img/84272825aa15c70926626a50a64b6eb0.png)
 
-![](img/1b2190cfadb4a491d8d3b6426aef9f02.png)
 
 [13）如果确认](http://mp.weixin.qq.com/s?__biz=MjM5NzYyNDAyMA==&mid=2453527407&idx=1&sn=df598aa8f8e13dc8d8ee1a0282ec301e&chksm=b11e5ad48669d3c2314fb4a3802374c93fe97bdb45bfaf6985699fe63a04b82d458c1423308a&scene=21#wechat_redirect)这个手机号可以使用，那么点击激活。激活后返回到ChatGPT的页面，填入对应的手机号码，页面会自动显示出收到的短信。
 

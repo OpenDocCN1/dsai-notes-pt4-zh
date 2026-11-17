@@ -98,7 +98,6 @@ Example Prompts:
 
 > "Generate a clean, modern infographic summarizing the key financial highlights from this earnings report. Include charts for 'Revenue Growth' and 'Net Income', and highlight the CEO's key quote in a stylized pull-quote box."
 
-![](img/e3d1821d04b62c294efc2d7fc53c3a84.png)
 
 Try it in AI Studio
 
@@ -124,7 +123,6 @@ Try it in AI Studio
 
 > "Summarize the concept of 'Transformer Neural Network Architecture' as a hand-drawn whiteboard diagram suitable for a university lecture. Use different colored markers for the Encoder and Decoder blocks, and include legible labels for 'Self-Attention' and 'Feed Forward'."
 
-![](img/0d6c0dcd559f5f64e0f50b9715c08ae6.png)
 
 Try it in AI Studio
 
@@ -338,7 +336,6 @@ You can generate sequential art or storyboards without a grid, ensuring a cohesi
 
 > "Creat**e an addictively intriguing 9-part story w**ith 9 images featuring a woman and man in an award-winning luxury luggage commercial. The story should have emotional highs and lows, ending on an elegant shot of the woman with the logo. The identity of the woman and man and their attire must stay consistent throughout but they can and should be seen from different angles and distances. Please generate images one at a time. Make sure every image is in a 16:9 landscape format."
 
-![](img/a3db7153fae573184e90f89940148843.png)
 
 Try it in AI Studio
 
@@ -360,7 +357,6 @@ Example Prompts:
 
 > "Create a ad for a [product] following this sketch."
 
-![](img/622da1e94882eca325ecbe72f9721aa0.png)
 
 Try it in AI Studio
 

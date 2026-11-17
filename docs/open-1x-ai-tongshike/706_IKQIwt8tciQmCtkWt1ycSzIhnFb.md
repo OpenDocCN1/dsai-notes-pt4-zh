@@ -38,7 +38,6 @@ API是什么，这个并不复杂。但是有一句话：“用过API后，自�
 
 "模型提供方" 选择 “OPENAI” 然后点击“模型”，将你刚刚的APIK[EY 粘贴进去。注意，粘贴的是你自己刚刚获取的API](https://dashscope.aliyuncs.com/compatible-mode)KEY，不是我途中的API_KEY！ API域名一栏填写： https://dashscope.aliyuncs.com/compatible-mode
 
-![](img/9a5fccaa5b6becae36ff1fe090087815.png)
 
 “模型”一栏点进去一个列表，拉到底，选择“自定义模型” “自定义模型名”一栏填“qwen-max”，然后点击“保存”
 

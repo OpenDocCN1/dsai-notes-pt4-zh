@@ -22,9 +22,7 @@
 
 ![](img/93d86bd0c4e5ce89f69844dbb7ccfa3b.png)
 
-![](img/122465f70163f2a7327c88534795a0ba.png)
 
-![](img/bc68e45d76bd9e215dfcfd426433f0ac.png)
 
 ![](img/1ec3b2ff6ad0541e723dd829d1718702.png)
 
@@ -50,21 +48,16 @@
 
 > git clone https://www.modelscope.cn/datasets/Datawhale/LeeDL-HW3-CNN.git
 
-![](img/0613abb74f4043ce345e3aecabbb57bc.png)
 
-![](img/0b0f8d73d7e717b32671773ed3523e16.png)
 
-![](img/7166e1e737d73917024f05da5f013191.png)
 
 ### 一键运行代码
 
 **点击打开****LeeDL-HW3-CNN****文件夹**
 
-![](img/a0931979d427eca87e4c9d26286a0cea.png)
 
 **点击**HW3-ImageClassification.ipynb
 
-![](img/e58b1bc81c2e8f72db30d564530b5d42.png)
 
 ![](img/472ec7fe300bb0a456886455fe5e3a43.png)
 
@@ -72,13 +65,10 @@
 
 **等待约12分钟后即可获得结果。通过单元格（cell）查看模型的训练准确率。生成的**`submission.csv`文件包含分类结果，可提交至Kaggle进行评估。
 
-![](img/f5b017c683aa9118d24e1ac6e65a3fbc.png)
 
-![](img/33bbd5c14def0156aefa5176cf7da12f.png)
 
 代码将打印出当前模型的结构，并绘制两个数据集的图像分析和分类结果分布图，以帮助更好地理解模型的表现。
 
-![](img/d4a79e75cbed83e4dd434c809d7486a5.png)
 
 ![](img/1ca6e5cba4955a572417aca83e3a4569.png)
 

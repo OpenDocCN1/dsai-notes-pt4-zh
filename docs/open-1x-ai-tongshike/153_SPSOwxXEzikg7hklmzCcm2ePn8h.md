@@ -72,7 +72,6 @@ DAY2作品墙：https://datawhaler.feishu.cn/share/base/view/shrcn0jw98SJ8D5Ty5l
 
 🔄 作品修改迭代：若存在功能问题请及时修改更新，作品更新直接在原作品基础上即可，无需重新提交新作品，方式如下⬇️
 
-![](img/e194f62a93aa896b34bf9a0666927423.png)
 
 ![](img/9870db212c5e95cdbd60c512628ada3b.png)
 

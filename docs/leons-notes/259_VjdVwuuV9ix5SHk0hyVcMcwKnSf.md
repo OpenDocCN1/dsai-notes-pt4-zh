@@ -140,6 +140,5 @@
 
 · FIN ·
 
-![](img/91765d0fa029dd30af12534a61924b12.png)
 
 ![](img/694e73286e612855d49ec4a4de004cfa.png)

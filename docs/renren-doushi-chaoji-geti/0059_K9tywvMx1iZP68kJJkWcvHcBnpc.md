@@ -104,7 +104,6 @@ sora2/veo3类的形式爆款，是属于工具类的创新迭代，让我们做�
 
 ![](img/c2894e144d55113a4948353e7e5e8c69.png)
 
-![](img/dceaf7a5ee0325f703ae472dc0054317.png)
 
 ![](img/569de79810efc16c5b7f7e1d14681352.png)
 
@@ -448,7 +447,6 @@ GAS，谷歌的aistudio，https://aistudio.google.com/，再发一问，GAS的�
 
 **也可看这里：****https://ai.feishu.cn/minutes/obc**njtd8gvysp4r36915je9g?from=from_copylink
 
-![](img/b0a27ffbbf2e74b06d5490860b91d2d2.png)
 
 [12月7日 (3)(4).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LlcYbJMVtoDKMtxFVAvcKN1BnVc)
 
@@ -464,7 +462,6 @@ GAS，谷歌的aistudio，https://aistudio.google.com/，再发一问，GAS的�
 
 [提示词与kpop角色图复制下载看这里](https://ai.feishu.cn/wiki/ANkkwZbG6idgj0kVJMgcM51Jntg?from=from_copylink)
 
-![](img/a2de29deda3a5e2d6020e5133f1be359.png)
 
 ![](img/c250f0760686cfcd193371783a023f9c.png)
 
@@ -540,7 +537,6 @@ GAS，谷歌的aistudio，https://aistudio.google.com/，再发一问，GAS的�
 现在，请根据上述规则，分析我发送的视频内容（或链接），并输出完整的分镜提示词。
 ```
 
-![](img/79e9fd213c5cf01e4e48e7687a5e9bb1.png)
 
 [12月7日 (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QlRWb84iIoBftkxmVHdcQljQnkV)
 
@@ -626,7 +622,6 @@ Step 2: 分镜生成 (Shot Breakdown)****
 | --- | --- | --- |
 | ![](img/0b2f3252f4d9e4c1fd597e8ab7d22dbc.png) | **2号**将白色的球体用力推下高楼边缘，动作干脆利落。镜头跟随球体极速下坠落入下方水中，瞬间一只巨大的白色蚕宝宝状的巨型怪兽从水中探出半个身子，头部超级无比巨大且圆润，背景是城市高楼。 | **2号将****白色的****球体用力推下高楼边缘，****动作干脆利落。镜头跟随巨大的****球体极速下坠落入下**方水中，然后瞬间一只巨大的白色巨蟒状的巨型怪兽从水中探出，整个无比巨大的身体占据了画面，背景是城市高楼。 |
 
-![](img/7470bb254d9e11f180108a82dec5e5bf.png)
 
 [根据图片生成视频 (75).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TPzfb8igvoMweOxkd3ecnkTenLh)
 
@@ -638,7 +633,6 @@ Step 2: 分镜生成 (Shot Breakdown)****
 
 [kling_20251207_图生视频_1号转身_用力将头顶_6065_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KjRlbD8ZUoipDjxXpJZcri4Yn3g)
 
-![](img/c6db4c3477e7c4e0127972bf67aeecd4.png)
 
 [根据图片生成视频 (77).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RcMeb9dK9oxrWwxtX8tcBvctnBh)
 

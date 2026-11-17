@@ -18,7 +18,6 @@ https://github.com/lbjlaq/Antigrav[ity-Ma](https://github.com/nguyenphutrong/quo
 
 > ⚠️：授权登录不了的话，可以使用开启了“TUN模式"或“虚拟网卡模式”，或者切换魔法新加坡
 
-![](img/304414a642fb1983d82e9f55f83ef2ae.png)
 
 ## 配置环境变量
 

@@ -14,7 +14,6 @@
 
 # **一、起源：从一本AI教科书说起**
 
-![](img/9eef64203c5a61d18277bfa58df5b354.png)
 
 《人工智能：现代方法》被誉为人工智能领域最受欢迎的教科书，被135个国家的1500多所大学采用（很遗憾计算机专业的我没学过），这本书当前出到了第四版，作者是斯图尔特·罗素（Stuart Russell），加州大学伯克利分校计算机科学家，人类兼容人工智能中心（CHAI）主任，人工智能研究实验室指导委员会（BAIR）成员。世界经济论坛人工智能和机器人委员会副主席，美国科学促进会（AAAS）会士，美国人工智能协会（AAAI）会士。
 
@@ -68,13 +67,11 @@
 
 组合转移模型（世界如何运转的常识）和传感器模型（世界状态如何反应在感知上）。
 
-![](img/918ccaef0cbb8975d876fc9e57b4cb2c.png)
 
 ● 基于目标的智能体
 
 目标包含了搜索和规划，相比规则稳定性更高。
 
-![](img/fe78a4212ff2ce463d1e1ca76cd4f000.png)
 
 ● 基于效用的智能体
 
@@ -164,7 +161,6 @@
 
 [https://mp.weixin.qq.com/s/Al](https://mp.weixin.qq.com/s/AluYfD6BQOkLo6XpJMyQnQ)uYfD6BQOkLo6XpJMyQnQ
 
-![](img/2678be19be86193d9331a6e0c5bbe91a.png)
 
 ![](img/dbd66c2abcdbee0b8f5cbe4294f59a62.png)
 

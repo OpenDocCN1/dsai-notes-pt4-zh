@@ -16,7 +16,6 @@
 
 希望这本亏钱指南，能为你的人生风控提供帮助。
 
-![](img/5f8e63d52194a1111ed67dba8407f356.png)
 
 [《人生亏钱指南》龙哥盟出品.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hge3bwwZIoGipixZS4Vcg6Z6ndd)
 

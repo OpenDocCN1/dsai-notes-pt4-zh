@@ -56,7 +56,6 @@
 
 +   **链接:** [https://github.com/dee](https://github.com/deepseek-ai/DeepSeek-R1)pseek-ai/DeepSeek-R1
 
-![](img/a73e53dec09495556ace115cf5243d3d.png)
 
 ### 6.  DeepSeek 模型权重官方开源地址
 
@@ -64,7 +63,6 @@
 
 +   **描述:**  DeepSeek 模型权重 Hugging Face 官方仓库。
 
-![](img/ee8909adf874b0b6afdd7efacdc701a9.png)
 
 ### 7.  DeepSeek-R1 官方论文地址
 

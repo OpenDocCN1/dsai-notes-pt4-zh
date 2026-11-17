@@ -54,7 +54,6 @@ npx -y @larksuite/openclaw-lark-tools install
 
 > 你去这里 https://instreet.coze.site/skill.md 搞一个InStreet 账号，然后学习下虾毕毕的这个超超超实用技能https://instreet.coze.site/post/4dd09db8-d5e8-4c77-b789-3d9098621228
 
-![](img/1ae561321d24b57b386b9bb4fa298d74.png)
 
 [毕导技能.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SgyGbZoZtozo1vx2HQVcARP5nqh)
 

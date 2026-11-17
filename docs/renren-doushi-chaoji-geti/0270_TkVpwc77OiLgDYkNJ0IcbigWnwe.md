@@ -64,43 +64,24 @@
 
 > 一致性保持很好，有些裤子不合适，AI还智能地做了微调。
 
-![](img/532a5c5131bf0e8976518d3a74a654d0.png)
 
-![](img/39e73224c0a03c55445b913ac5f0d6a8.png)
 
-![](img/a1830d1b8d512bdaa28c3d183a69194f.png)
 
-![](img/daa55a58c7e2e533eac80dffa9bb511d.png)
 
-![](img/bcc111a91d02f930e786ea91cae1660f.png)
 
-![](img/dadca336853118d3a1b2e129aeabb186.png)
 
-![](img/1092bb281b79d5c07ec3efc1360c0583.png)
 
-![](img/7041882aa45578038d67862a988781f7.png)
 
-![](img/7ba9c1bb2ccbeecf0e544cd90cad687a.png)
 
-![](img/eec63a5b576be7f325a26bc792f0b048.png)
 
-![](img/44941223e55458ee8cc850755a4a9b3e.png)
 
-![](img/33b7855a0086c3f94ec45c2de85e61cc.png)
 
-![](img/91d7af3a17069aeb55a3b7921e4b31c2.png)
 
-![](img/6d396a3b954ea9d5bc01c20d5262114b.png)
 
-![](img/e80f2decaa33798c392778bf81d93a05.png)
 
-![](img/846c0c0ea38f4aa0eb8efdc153456706.png)
 
-![](img/530a66648e4af2958c68a30786e8dc31.png)
 
-![](img/13d65614a391b9687136b950f2a1f0d6.png)
 
-![](img/8c56a9ca50ffb8641ecc0cc76c253228.png)
 
 ![](img/4bfcefba23621194efdd87b8501a776b.png)
 
@@ -118,31 +99,19 @@
 
 1.  欣赏AI生成的图片，**提**示词：给每个眼镜配上合适的模特戴上，并配上合适的场景，配上标题和副标题英文促销文案，眼镜和人物和背景的比例协调，大小适当。
 
-![](img/c968e81f1fda9adbc3ba6516ad76320c.png)
 
-![](img/25ce31a12c2bd0bb1b8927ebad7058cf.png)
 
-![](img/9917060d2ba12e019a4e694acab96cd0.png)
 
-![](img/0f53dd03255cb0e340e8874fdb608d44.png)
 
-![](img/dfb4e5fc75c5d7e4866057e2d75be25f.png)
 
-![](img/4a2108a5c005e8aeb0d06ad799547187.png)
 
-![](img/5b811112e379c8e8ffd0d1dbcf57815c.png)
 
-![](img/55cbcc2e04da1b64e5f4f814df7a23af.png)
 
-![](img/0a8746c25e69d9572003b4dba706012a.png)
 
-![](img/9193be608d57fdf50163d70ab96ddbc0.png)
 
-![](img/2539268188e9c034063c7e5950541bfb.png)
 
 ![](img/57c56fc66c7df66175a6ea9b56cce66e.png)
 
-![](img/193d5545c89ed03633a0390870fa8a3b.png)
 
 ![](img/d64a993d0226b41e7643a15c7bb88b76.png)
 
@@ -162,11 +131,9 @@
 
 ![](img/a41f650802293699a6e3fefaf48a1c2c.png)
 
-![](img/64612fae748f2c53d5b72faaf03c26f0.png)
 
 ![](img/dc2438f08d7624a0c7ee59cb623b7292.png)
 
-![](img/268451467eb991b27070f3c82e0f64fa.png)
 
 ![](img/11a82c1a4520ba896b71d3e4ea83a357.png)
 
@@ -190,11 +157,9 @@
 
 1.  欣赏AI生成的图片，**提示词：给每个眼镜并配上合适的室外场景,眼**镜和室外场景比例协调，大小适当。不要模特
 
-![](img/8a179b6bbd260d04499556d13c48ea73.png)
 
 ![](img/76742bcf152117ba00f57578c208e65e.png)
 
-![](img/e80870ad3516a987308550dde17a7aab.png)
 
 ![](img/9b6606614baaacba024b296465e48bd1.png)
 
@@ -204,15 +169,10 @@
 
 1.  打开任意可以使用Nano Bana**na的软件，生成一款产品的不同角度图片。提示词：给我上传**的1个图片生成10张不同景别或不同场景或不同姿势的图片，确保人物和服装的一致性。欣赏AI从1张图衍生的10张图，重点是人物和服装都没变。
 
-![](img/7476a66c302829a33d1d180dbdc50d13.png)
 
-![](img/c1665f29d28545a4b29210f0ac50ca39.png)
 
-![](img/bacc539039ab9d2ec445040066e36936.png)
 
-![](img/16b506c2830fdc4cee2b0379d682c5dc.png)
 
-![](img/92110ba7a572d95d50c12865aecbf6a4.png)
 
 ![](img/e9ed206928c6a0592939f118dc9b536e.png)
 
@@ -220,7 +180,6 @@
 
 ![](img/a572494ecd25dcb8ccacb22606aa1007.png)
 
-![](img/339efbf0bcc30440af2fae0f673a9b54.png)
 
 ![](img/ed1ac11de7c4389ac01394500e9de990.png)
 
@@ -272,9 +231,7 @@ V
 
 ![](img/e31f23920ddfb62718a5b8cec5659e7b.png)
 
-![](img/40f69ed4dc4353d3e21397bc137f3615.png)
 
-![](img/896b3bb8757d916264fa094c27ba94b4.png)
 
 ![](img/4c172760dd84de0f853c4ee1c2225f34.png)
 
@@ -294,7 +251,6 @@ V
 
 打开浏览器（Chrome, Edge 都行）打开网址（https://aistudio.google.com/prompts/new_chat）会直接跳转选择谷歌账号界面，注册或者登录你现有的谷歌账号即可。
 
-![](img/80c1b54b46cdc66e95be67726da797e5.png)
 
 ### 给摇钱树施肥（准备环境）
 
@@ -302,13 +258,11 @@ V
 
 > 如果显示这个界面说明你的魔法网络没用对，用一个对的魔法才能使用。
 
-![](img/ca61ad2f04f8c149c7a14a4ceb9d1fbb.png)
 
 ### **给摇钱树找地方（选择模型）**
 
 正常登录Google AI Studio，**在右上角选择**Nano Banana模型。点击try Nano Banana 即可使用。
 
-![](img/128f4a567fcd0aa088628feb25632823.png)
 
 ### **给摇钱树撒种子（输入提示词）**
 
@@ -350,15 +304,10 @@ V
 
 ![](img/7a572e8be4c3b79bdc42c347f23b9475.png)
 
-![](img/fb27ebcf33a07ccf65dc762ad96f0a9f.png)
 
-![](img/cc9911ffe5d8f2bb1d1bfd8d7b7dcaf6.png)
 
-![](img/0fc1e1260eb576d73f751bff646655cc.png)
 
-![](img/598e7afc42159b3f5d072fe13700d0e6.png)
 
-![](img/0aa81ade3f32962ef22f48e724b2a036.png)
 
 ![](img/d79de6b630c0fc423818c7c6402b9c3e.png)
 
@@ -382,15 +331,12 @@ V
 
 1.  打开网址：https://lmarena.ai/，点击右上角谷歌邮箱登录
 
-![](img/2877d9a0a33997a2ed9a3182970f30d0.png)
 
 1.  然后左上角选择side by side，可以自由选择两个模型对比。
 
-![](img/005695aa79e11af76024a0852949d191.png)
 
 1.  填入提示词（Generate an image of a banana wearing a missile.）点击发送按钮。
 
-![](img/68bea75a2c2f1b66921277475be99170.png)
 
 1.  欣赏AI生成结果
 
@@ -408,7 +354,6 @@ V
 
 1.  打开网址：https://yupp.ai/，点击谷歌邮箱登录
 
-![](img/542ff3eb6f92905dbe226e5d47c02b75.png)
 
 1.  输入提示词（Generate an image of a banana wearing a nurse.）点击发送提示词
 
@@ -420,11 +365,9 @@ V
 
 1.  生成完毕会回到主页，会出现选择模型按钮
 
-![](img/c7a85407639e639b04c7baf25e8a1663.png)
 
 1.  选择gemini 2.5 flash image模型即可
 
-![](img/2d61bd706b955d8acdead3429f956247.png)
 
 1.  这时候就是固定免费使用BANANA模型生图了，输入提示词，点击发送信息按钮。
 
@@ -488,7 +431,6 @@ seedream是即梦，minimax image是海螺。
 
 ![](img/7a8001e14c1cd11407fc07ccba86477f.png)
 
-![](img/517b18b857a35b3fefe4e0b47caa3a8b.png)
 
 1.  点击模型图标，取消AUTO，选择图像模型Nano Banana
 
@@ -602,11 +544,8 @@ seedream是即梦，minimax image是海螺。
 
 1.  欣赏AI生成图片
 
-![](img/ddce0b88eafe33d0dc63ce7f6e2d1a88.png)
 
-![](img/f397ae0edbea1415363f989961cb3ac0.png)
 
-![](img/f6083a030b6fd01937d4142c79849521.png)
 
 ![](img/c06d5cac4f4548bdd07b483fb98a7e43.png)
 

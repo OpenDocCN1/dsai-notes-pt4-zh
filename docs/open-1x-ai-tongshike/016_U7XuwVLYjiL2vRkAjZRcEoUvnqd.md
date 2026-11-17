@@ -24,23 +24,18 @@
 | **信息简介** | **论文摘要** |
 | +   **发布时间**：2025年1月 |  |
 
-![](img/173487f428a25dd29f3362ce7233e279.png)
 
 [[24.01]DeepSeek LLM.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YK9gbrrkTo2jz3xnT6Tcdk4Dnjh)
 
-![](img/0bef534272bcc9f6a95f526202a33f6e.png)
 
 [[24.02]DeepSeekMath- Pushing the Limits of Mathematical  Reasoning in Open Language Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SU2Ib8yFloWqyzxLgCncxDGonNh)
 
-![](img/16075087eeb331c99a7f372199e3e89c.png)
 
 [[24.05]DeepSeek-V2.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WpOibEviMot7fQxUfUCcpI9Xn7c)
 
-![](img/527f93dc295f261196664c1a2ff88095.png)
 
 [[24.06]DeepSeek-Coder-V2.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q5MEbqk38ojTowxAVxRcJ5Kxnpc)
 
-![](img/0d0803897ac93b3966203c756f9ed042.png)
 
 [[24.12]DeepSeek-V3 Technical Report.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vqh1baO8qooWLdxEtJHcCcUEnod)
 

@@ -434,7 +434,6 @@ NLU 自然语言处理的基石之一，涵盖了文本分类、命名实体识�
 
 > 在工业应用中，计算时间是一个至关重要的指标。尽管 LFrefn 可能引入一些错误，但这些错误可以通过图谱的纠正和完善来改善。值得注意的是，在当前实验中，我们为了减少计算时间，接受了度量标准的轻微下降，这为工业应用提供了一个可行的改进方向。
 
-![](img/2ea16262e20f6cb19d5a7634f6a091bd.png)
 
 [KAG, Boosting LLMs in Professional Domains via Knowledge Augmented Generation.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CMppbax9coSjDcx8MiucwE3qnxc)
 

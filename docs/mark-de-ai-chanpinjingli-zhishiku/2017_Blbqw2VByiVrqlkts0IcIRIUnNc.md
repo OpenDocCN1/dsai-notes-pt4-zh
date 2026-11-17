@@ -280,11 +280,9 @@ Midjourney定期发布新模型版本以提高效率、一致性和质量。不�
 
 指令--v 1使用原始的Midjourney算法 (更抽象)
 
-![](img/9b7efb7acb31c35cf0374c43b2ca6f21.png)
 
 指令--v 2，2022年7月25日之前使用的原始Midjourney算法
 
-![](img/84a54b8d1f3df61c8324fa926cd2b872.png)
 
 指令--v 3这是比较很有创意和艺术感的Midjourney算法
 
@@ -444,7 +442,6 @@ a. **Only Parameter**s可以与/prefer suffix一起使用
 
 **envelop：**信封表情符号可以将带有seed种子、生成ID和生成视频的图像发送给你的DM
 
-![](img/716c96539fe8fee05aa06dfc888a7112.png)
 
 **star：**星星表情符号可以将图像标记为“收藏”，收藏的图像会显示在画廊中，并将图像发送到#favorites频道
 

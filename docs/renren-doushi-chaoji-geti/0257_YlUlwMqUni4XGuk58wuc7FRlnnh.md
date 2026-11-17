@@ -184,7 +184,6 @@
 
 +   我录了两条视频，给大家演示一下，发布笔记的整个流程
 
-![](img/7b63f390fc06fb627a2b56d37b90ab3a.png)
 
 [保存图片.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BVYLbN6MtoacpjxaIr8cQZ5HnLS)
 
@@ -254,7 +253,6 @@
 
 +   给大家演示一下，自动作图和自动发笔记、自动上品的工作流
 
-![](img/4cd37178ac814ee735416726cf764e72.png)
 
 [自动发布.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FYIdbsG8PoJ1XdxEk5hczq9EnMg)
 

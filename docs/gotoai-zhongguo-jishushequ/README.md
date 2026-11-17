@@ -106,37 +106,31 @@ Empowering Intelligence, Together
 
 资深微软AI技术顾问，微软认证AI架构师，微软MCT培训讲师，前微软(中国)有限公司MCS团队高级技术顾问，北京联合大学主修计算机科学。
 
-![](img/1d13459549501b061c6b372782674584.png)
 
 **Terry Wan**
 
 资深微软AI技术顾问，微软MCT培训讲师，前IBM企业云技术顾问，主修计算机科学。
 
-![](img/6003ffc5cf8f2916543b95d1ac58f2b2.png)
 
 **Leon Liang**
 
 资深微软AI技术顾问，微软MCT培训讲师，前微软(中国)有限公司Azure架构师，云解决方案技术顾问，武汉理工大学主修计算机科学。
 
-![](img/3b2046acfe2afe0383d8fab39afe4760.png)
 
 **Tim Zhang**
 
 前微软MCS 技术解决方案专家，微软认证培训讲师MCT，前东方瑞通资深培训讲师, 国内知名智算厂商AI技术专家
 
-![](img/b69764bb21f13089c761e94eff8b442f.png)
 
 **Jim Shu 舒永春**
 
 微软认证讲师（MCT），微软最有价值专家（MVP）,前微软公司解决方案技术顾问
 
-![](img/b66ca0257b26de896ce9c66ae0681f84.png)
 
 **Liang Yao**
 
 微软认证讲师（MCT）, 前微软公司EPG解决方案技术顾问, Microsoft 365 资深讲师
 
-![](img/898d79b1c9f58a2f6731f9d7e5c339a0.png)
 
 **周爱华**
 
@@ -148,13 +142,11 @@ Empowering Intelligence, Together
 
 前腾讯云产品解决方案技术顾问，国内知名云和AI平台运维经理，AI驱动运维、多模态资源管理、 部署自动化技术专家
 
-![](img/18d21aad2c885534cd93e761c17190e2.png)
 
 **Samuel Xia**
 
 前微软公司MCS技术顾问，资深技术工程师
 
-![](img/e06f57dee6267b95a95f39a0770cca03.png)
 
 **Eric Sun**
 
@@ -172,7 +164,6 @@ Empowering Intelligence, Together
 
 阿里达摩院人工智能高级训练师， 国内知名电信研究院AI高级研究员
 
-![](img/b517f326eced585c09d44bbdc0ff119b.png)
 
 **洪玉材**
 
@@ -190,31 +181,24 @@ Empowering Intelligence, Together
 
 AI+行业专家委员会
 
-![](img/66c209542dd9f3cd043afd3340b65d0c.png)
 
 **AI+教育：Steven Li**
 
-![](img/8922f29870148cb20f9705e8dd852923.png)
 
 AI+智能制造:Steven Li
 
-![](img/c711a1319c6caeff200b24f7f8b4d813.png)
 
 **AI+互联网：陈东泉**
 
-![](img/a1848327248366317f23df475221a6b1.png)
 
 **AI+电商：陈有为**
 
-![](img/a833a7670a48ec89dff526122bdc5267.png)
 
 **AI+新媒体：赵文平**
 
-![](img/2a0f3e8285d2ff42fe576cad119c58e7.png)
 
 **AI+政务：喻坤**
 
-![](img/d644edc9a87128364dba531b7aa782ff.png)
 
 **AI+医疗：何玮**
 
@@ -240,7 +224,6 @@ https://www.gotoai.world
 
 成员来自于Microsoft,AWS, Google，为AI大模型开发人员提供交流平台，促进技术研讨、资源共享、难题攻关，推动技术创新。
 
-![](img/2d7659105baa611be7576c01ff3874bc.png)
 
 ## GotoAI产品体验中心
 
@@ -272,7 +255,6 @@ https://lab.gotoai.world
 
 提供AI资讯、应用分析、案例分享和创新研究，助力企业和机构把握AI趋势，洞察应用场景，借鉴成功经验。
 
-![](img/1d134b0c4aca706b21eda56e7a6d2831.png)
 
 ## GotoAI 创业加速器
 
@@ -280,7 +262,6 @@ https://startups.gotoai.world
 
 提供培训、商业评估、企业孵化和资本对接，为初创企业和开发者快速赋能，推动AI项目商业化。
 
-![](img/3e75beaab1f065a9a124c3b4f8da0d0c.png)
 
 ## GotoAI 精英职通车
 
@@ -422,11 +403,9 @@ GotoAI培训学院目前已培训学员超过2000多人。
 
 ## 云厂商
 
-![](img/b5b32f6dd57a8e837988945c31b6af54.png)
 
 ## 大模型厂商
 
-![](img/81d0d01d4b84a57c096eba0b6dbb24e6.png)
 
 ## 大模型算力平台
 
@@ -436,7 +415,6 @@ GotoAI培训学院目前已培训学员超过2000多人。
 
 ## AI 智库
 
-![](img/3cd21a3c7d6f484b79d1b13d27164b70.png)
 
 ## AI技术社区合作伙伴
 
@@ -530,19 +508,15 @@ GotoAI培训学院目前已培训学员超过2000多人。
 
 ## GotoAI走进广东省广电集团
 
-![](img/c62275fcc50452c5e4d86535df1a6d6a.png)
 
-![](img/269ff5ebb689754b07fde7fcac18d91c.png)
 
 ## GotoAI走进广州市黄埔区机关单位
 
 ![](img/e9b1b316e9499b5bac2714099e3918dc.png)
 
-![](img/f87ac3f30f4fc4a55fffcbdfac13a261.png)
 
 ## GotoAI走进香港都会大会
 
-![](img/8d475370265c44805be66e1fc5d7b581.png)
 
 ![](img/4b5f3f4ff3cd98da19ee0bdbbe222872.png)
 
@@ -552,7 +526,6 @@ GotoAI培训学院目前已培训学员超过2000多人。
 
 ## GotoAI走进粤港澳大湾区创新创业基地
 
-![](img/0feeb4c67afcf2ac148cefb716db6fc5.png)
 
 ## GotoAI 走进中国瓷都-陶瓷行业协会
 
@@ -588,15 +561,10 @@ GotoAI走进全国高校联盟
 
 ## GotoAI走进首届广州智算产业大会
 
-![](img/8fcb3e4feaa7aa62dcbf71e5b5fb477f.png)
 
-![](img/909d63a650c210ea5c2e11a2141b8293.png)
 
-![](img/ef4834f204b6ef168165faf9807215e5.png)
 
-![](img/0b9ea23b6dd809ccc519a97c100237ce.png)
 
-![](img/d7573b3ba21962ce3ec91bd9a33f620e.png)
 
 ![](img/7e068085d17d111c3cd42a864c1d164d.png)
 
@@ -606,7 +574,6 @@ GotoAI走进全国高校联盟
 
 ![](img/8caa7a198396631f4df618fe01886b23.png)
 
-![](img/f4d230dd94a463921d75cf00caa2c45e.png)
 
 ## GotoAI成为粤港澳大湾区人工智能产业发展联盟AI+教育专家委员会
 
@@ -616,7 +583,6 @@ GotoAI走进全国高校联盟
 
 ![](img/c090a4d67bf2d6f0e20dd0a4ef49c463.png)
 
-![](img/a167c672f908621b56a071667b1eacc4.png)
 
 ![](img/a5a6a490a9b9ea3ff6ae795444da96d1.png)
 
@@ -652,13 +618,9 @@ GotoAI走进全国高校联盟
 
 ![](img/3c16dd5f1f8004b908b12c337adcfb81.png)
 
-![](img/2485190ef0b7dcc3ee5b096a4a502ebb.png)
 
-![](img/3efa941a6bb632d259fdd6f58d6cc1f5.png)
 
-![](img/ad0aece60a72a80c6839f4648125a053.png)
 
-![](img/d1d30c5976c0abf4747f7ad10a8b980a.png)
 
 ![](img/ba693e9a7966dd8500cd2f8f7e9b6d89.png)
 
@@ -798,7 +760,6 @@ GotoAI联络处
 
 ![](img/716991045b439e81f218079a6c713d97.png)
 
-![](img/8b571e59bbf9b1f147f3b97c3940c27c.png)
 
 ![](img/2f85918c0e567b8e2fe8fe487bd3e935.png)
 
@@ -842,7 +803,6 @@ GotoAI中国技术社区与新华三H3Cd达成战略合作，在广州，深圳�
 
 GotoAI中国技术社区与新华三H3Cd达成战略合作，在广州，深圳两地共建两个华三GotoAI技术体验中心，
 
-![](img/e56a3d5fb8513787be3f2495a11c7115.png)
 
 ### GotoAI中国技术社区与宝德共建宝德GotoAI技术体验中心
 

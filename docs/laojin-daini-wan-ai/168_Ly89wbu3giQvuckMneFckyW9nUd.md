@@ -62,15 +62,12 @@ Claude Code （简称CC）是由 Anthropic 开发的可在本地运行的自动�
 帮我安装 https://www.anthropic.com/claude-code
 ```
 
-![](img/035caa0c115e83950c11f13adb5c38d6.png)
 
 依旧全自动：
 
-![](img/0645c6ea1adf164497b5496459f3745b.png)
 
 还是和上次的Gemini Cli时候说的一样，自己检查，自己安装，图的就是一个省事儿。
 
-![](img/b7fe444840ff741e3f60b47c84d204ab.png)
 
 下载卡住了的话，记得跳过（对话框右下角的Skip）一下。可能是网络环境等等导致的，它自己会尝试其他办法。
 
@@ -84,11 +81,9 @@ Claude Code （简称CC）是由 Anthropic 开发的可在本地运行的自动�
 
 当然，你也可以使用老金提供的这几个脚本一键启动，key就保存在env文件或者json文件就好，说明在 文件列表里。
 
-![](img/ddadf1b9adae44f905b13560554c0b79.png)
 
 老金把**这些文件放到文末**了，方便大家使用，有兴趣的可以下载下来，以后直接双击bat就行了，很快。
 
-![](img/ba1c3b8bb5289d3b1a22b06d9da4c293.png)
 
 以下是一些简单的用法说明。
 

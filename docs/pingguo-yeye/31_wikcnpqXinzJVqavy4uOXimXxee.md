@@ -126,7 +126,6 @@ Negative prompt: easynegative, (worst quality:1.2), (low quality:1.2), (lowres:1
 
 Steps: 30, Sampler: DPM++ 2M Karras, CFG scale: 7.5, Seed: 378389555, Size: 612x849, Model hash: 5801911d1a, Model: [M]LoliV1_Fix_FP16, Clip skip: 2, ENSD: 31337
 
-![](img/40c4de4f8cc29203acf1065c92761c29.png)
 
 best quality:1.4, (loli:1.2), very long eyes, very huge eyes, very small height, very innocent face, white hair, (low twintails:1.4), (very long low twintails), pink eyes, smile, rabbit ears, (playboy bunny), jacket, heels, pantyhose, 1girl,
 

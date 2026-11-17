@@ -104,7 +104,6 @@
 
 真的是唯一的三张了！
 
-![](img/44245405a245d913d268d5f78f32da26.png)
 
 ![](img/48c71e1ae835eb148595acce0b47af00.png)
 
@@ -132,7 +131,6 @@
 
 香是香了，就是有点糊。
 
-![](img/caed97d92610bcdb0498b7628f6f4f51.png)
 
 ## 那些年尝试的各种副业，换来的只有焦虑
 
@@ -164,11 +162,8 @@
 
 2023年3月，通过钱瑞👸号广告加入黄小刀的chat**gpt付费训练营，才第一次听说龙哥盟，2**023年4月加入赚钱，迄今参加13次航海，一半以上都没打完卡，更别提实操从0-1
 
-![](img/26d933a189ac4377a18ca9f8e237ff7e.png)
 
-![](img/db02b07ed1f807cb01392c71fa80a109.png)
 
-![](img/f19274c84dd01a0f13858a75f31b23c4.png)
 
 2024年12月参加了youtube航海，正如过去两年未完成的那些航海一样，还是勉强看完航海手册，reddit故事号的第一个视频只做了一半，本职工作的忙时开始了，就把youtube丢到一边，想都想不起来的程度
 
@@ -354,7 +349,6 @@
 
 这是跟酷拉皮卡教练一对一咨询之后，被提醒，做了这么多了，还没出大爆款，要考虑开YPP的问题了，要加快进度，做那些太简单的跳舞、带孩儿之类的，对于积累视频制作技能毫无帮助，于是赶快去做故事，复刻了一个山海经人物表白戒指被吃下去的，只有三万多，然后尝试做印度故事试试水，这条上过作业点评
 
-![](img/282383d099864a3fd2fa772eddb7cf6b.png)
 
 [8月5日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EBOIbnkWgoURC1xKcmBcZbPSnJf)
 
@@ -366,7 +360,6 @@
 
 当时觉得没把儿童置于危险境地，但是现在标准更加严格，让未成年人受到不必要的关注、有斥责、欺负的情节都不行，吓得我一下子全删完了
 
-![](img/966aaf004f64b1c81fd4f521e78192df.png)
 
 [8月9日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DK5EbBtY3oUCROxFPvqcwZ6XnJg)
 
@@ -378,7 +371,6 @@
 
 附上豆包生图记录：https://www.doubao.com/thread/wd468244b0634c688
 
-![](img/206101680314a9da2490f18a13c9bec1.png)
 
 [8月20日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XG5tbIGVLoGqH3xwcoTcUHgznZc)
 

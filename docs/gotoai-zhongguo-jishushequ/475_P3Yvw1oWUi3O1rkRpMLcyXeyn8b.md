@@ -4,7 +4,6 @@
 
 https://www.molt.win/index.html
 
-![](img/73c45b4a1567d3969e44184d8169be67.png)
 
 https://clawos.minapp.xin/#oem
 

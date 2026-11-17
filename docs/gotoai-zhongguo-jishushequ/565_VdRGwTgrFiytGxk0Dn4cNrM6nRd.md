@@ -18,13 +18,11 @@ https://sorainvitecode.org/prompt
 
 https://ciliy.com/
 
-![](img/8de71f359e693f8e95cbadc0a2fcbdaa.png)
 
 # Get Free Sora 2 Invite Codes!
 
 https://sora-2-invite-code.lovable.app/
 
-![](img/ac12b36e1e1adb8ee6601cd8be674b20.png)
 
 ![](img/bc38598b16d0b0e0a1350d09f4908f40.png)
 

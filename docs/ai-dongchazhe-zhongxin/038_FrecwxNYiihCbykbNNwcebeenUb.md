@@ -68,7 +68,6 @@ Bot 链接 - DALLE 3：https://www.coze.com/store/bot/7375114153545187345?bid=6c
 
 输出效果：
 
-![](img/378c830a57d1d00f2880a0bfb872ccee.png)
 
 +   Stable Diffusion
 
@@ -78,7 +77,6 @@ Bot 链接 - Stable Diffusion：https://www.coze.com/store/bot/73761151897726484
 
 输出效果：
 
-![](img/0b216218a2e6e9026d696466436ae8cd.png)
 
 # 三、 应用制作详细步骤拆解
 
@@ -295,7 +293,6 @@ outputcontent 是解析后的JavaScript对象，及将input content由一个字�
 
 1、我们如果想要输出内容为固定格式需要使用markdown格式，什么是markdown及常见用法可查看下图
 
-![](img/bcbcfaf3d36669ab011f4478649b69e5.png)
 
 2、该bot中标题、分割线、图片展示等语法
 

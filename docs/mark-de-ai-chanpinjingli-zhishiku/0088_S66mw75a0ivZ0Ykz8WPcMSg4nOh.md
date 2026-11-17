@@ -76,7 +76,6 @@ class treeNode:
 
 最终得到下面这样一棵FP树
 
-![](img/1ae137b30b45081aaf77a024cdf9d08c.png)
 
 从FP树中挖掘出频繁项集
 

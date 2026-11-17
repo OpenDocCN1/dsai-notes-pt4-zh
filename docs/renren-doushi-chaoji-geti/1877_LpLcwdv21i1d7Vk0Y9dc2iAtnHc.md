@@ -124,7 +124,6 @@ novel ai，听名字好像跟小说有关？是的，这个工具就是让ai来�
 
 ![](img/f8ce614f64692f4f59fdf7855d799cea.png)
 
-![](img/ecc99087b3c04452be89188a0a0f3244.png)
 
 ![](img/778dda157da623b0aa86e65ecea5c4f5.png)
 
@@ -140,11 +139,9 @@ novel ai，听名字好像跟小说有关？是的，这个工具就是让ai来�
 
 ![](img/ac947c2eedcd97cb38a15ccf5d4dda52.png)
 
-![](img/6c19e6161887212bfbd6fd02a1ec7cec.png)
 
 ![](img/6c652ebe42b32c38df01ce6172cb6396.png)
 
-![](img/b55cff7bf80ad60ce1028ac3b09bb70c.png)
 
 《科技与狠活》已经更了15期，有几集喂的已经不是活物了，别说还真的有点东西。
 

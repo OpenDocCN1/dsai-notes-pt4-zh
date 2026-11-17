@@ -94,7 +94,6 @@
 
 1.  发布的时候，对标的标题是什么样子，有没有加标签，都跟他一致。
 
-![](img/3861514577628998bbea681f01a5a6b9.png)
 
 [🌟She’s hungry and wants to eat grilled fish..mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WDGWbwTH6oNsTbx2H3tcBy5rnch)
 

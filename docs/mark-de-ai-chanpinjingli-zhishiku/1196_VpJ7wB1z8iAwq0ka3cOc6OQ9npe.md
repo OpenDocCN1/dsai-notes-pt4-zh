@@ -381,7 +381,6 @@ npx @modelcontextprotocol/inspector npx -y @modelcontextprotocol/server-filesyst
 
 下面我们在 Cline 中配置测试一下我们刚刚开发好的 MCP Server，这里我们直接使用 node 执行：
 
-![](img/f274ef246fb8d778baa6803119ba5e76.png)
 
 测试结果：
 

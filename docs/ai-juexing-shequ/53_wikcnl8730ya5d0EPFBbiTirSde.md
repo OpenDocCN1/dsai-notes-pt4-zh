@@ -6,7 +6,6 @@
 
 原创 不合时宜TheWeirdo 不合时宜TheWeirdo
 
-![](img/f4d1f9466d638d19ded954c31726cebc.png)
 
 本期主播：王磬
 

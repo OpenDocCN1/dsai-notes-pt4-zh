@@ -146,7 +146,6 @@ https://ddownr.com/zhPY/youtube-video-downloader
 
 首帧1
 
-![](img/7e6b56885164dd4b91943afd6edec6f6.png)
 
 尾帧1
 
@@ -154,7 +153,6 @@ https://ddownr.com/zhPY/youtube-video-downloader
 
 首帧2
 
-![](img/0ff429a07923c9140ed6314c49d0aa2f.png)
 
 尾帧2
 
@@ -421,13 +419,9 @@ https://ddownr.com/zhPY/youtube-video-downloader
 
 可以在即梦用提示词：将角色占画面的比例缩小50%，得到玩偶版大小
 
-![](img/2091ee5bf97f4722b6afd058f5010905.png)
 
-![](img/1c31f76476081be80ac0e9363d94a452.png)
 
-![](img/94db682c3f40dd8e8b7c1f3c03402b0f.png)
 
-![](img/b4f63c350a51678ee930bb0080ee9803.png)
 
 ![](img/002f90384b94c620c28378c15a33929f.png)
 
@@ -441,7 +435,6 @@ https://ddownr.com/zhPY/youtube-video-downloader
 
 快节奏的动作，运镜，转场，会给观众带来一种爽感，shorts就是讲究一个快，短，爽。
 
-![](img/d2826f513d734a916503cf5e7485f3cd.png)
 
 [16.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ioc7bhPH5o1Y1Axd0POcAn47njc)
 
@@ -453,7 +446,6 @@ https://ddownr.com/zhPY/youtube-video-downloader
 
 1.  镜头快速推进，流泪
 
-![](img/5fccd95862b8f8b538201cfc4034584f.png)
 
 [08.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LqZAbb1tCoJ6jYxuP7Mc6aKcntf)
 
@@ -463,7 +455,6 @@ https://ddownr.com/zhPY/youtube-video-downloader
 
 1.  镜头拉远，喷出蓝色冷冻风暴
 
-![](img/10f6c29e86c45641ff487f057d0654aa.png)
 
 [06.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OjBtbzgK2oydtUxuED6cs0dDnfg)
 

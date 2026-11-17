@@ -102,7 +102,6 @@ A kawaii-style sticker of a happy red panda wearing a tiny bamboo hat. It's munc
 
 Example output:  输出示例：
 
-![](img/95ef18e65e10ad9b282389a22b6baeb5.png)
 
 A kawaii-style sticker of a happy red panda...
 

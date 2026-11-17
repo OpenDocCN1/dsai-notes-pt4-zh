@@ -6,7 +6,6 @@
 
 [趋动云活动准备](https://yundingshuyuan.feishu.cn/docx/Pfdxd8xLMoutByxooEyc3zDAnff?from=from_copylink)
 
-![](img/96a21c985fe68455b3cfc51ee7e138d2.png)
 
 ![](img/3835fa72ab46f4c1a5bae1cf5c15441d.png)
 

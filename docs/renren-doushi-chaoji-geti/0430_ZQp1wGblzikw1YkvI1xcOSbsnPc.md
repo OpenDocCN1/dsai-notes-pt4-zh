@@ -116,7 +116,6 @@ hello，大家好，我是七天假，赚钱航海家。18年开始做互联网�
 
 ![](img/2d630d239608e5fffe1bcf1d6fcf8e09.png)
 
-![](img/b4562027c554f777c56abffed4598d44.png)
 
 [116_1751100231.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PPombzKWhoucUgxZMG7c7Wavn7d)
 
@@ -196,7 +195,6 @@ hello，大家好，我是七天假，赚钱航海家。18年开始做互联网�
 
 什么是测评内容，给大家看下（现在也是随处可见的）
 
-![](img/50a5cfb759c16030ee09c4c4679efc4f.png)
 
 ![](img/3bcb6441996212c13333ce5c41e6fcba.png)
 

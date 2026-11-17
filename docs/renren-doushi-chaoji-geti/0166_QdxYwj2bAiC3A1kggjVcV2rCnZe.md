@@ -168,7 +168,6 @@ zone序列对比国内理解为：1为市内；23为省内；456为省外；78�
 
 但他是唯一一个可以清晰看到商品运费和快速以图搜款的软件。
 
-![](img/3bfa4cb0dc8f2ef15697aaa1f9f23c16.png)
 
 ![](img/a972ec78a20029caefd1cf2be2e2203c.png)
 
@@ -270,11 +269,8 @@ zone序列对比国内理解为：1为市内；23为省内；456为省外；78�
 
 ![](img/9ea5d219761e81aef134352d837ed8bd.png)
 
-![](img/656b959c758b003edc5a64cbf1124d6d.png)
 
-![](img/f87f28c0e501d969c83805a1c52010ea.png)
 
-![](img/4d06bc208e9e9ff5d6adbe75c230ad79.png)
 
 ## 5.1资源搜索与解答
 
@@ -290,11 +286,8 @@ zone序列对比国内理解为：1为市内；23为省内；456为省外；78�
 
 亲测有效，可复用全行业。
 
-![](img/5845d36608ac75724c554dd64cc07895.png)
 
-![](img/6dfaf6aab0dc27401ecc8b5d81de7d3c.png)
 
-![](img/80569e4bf006c42e0effa2b7f17dcba1.png)
 
 ![](img/7a2b0bba3c22833bf433bf883398b505.png)
 

@@ -22,7 +22,6 @@
 
 ## **一些背景**
 
-![](img/02797b866d282c4bbc65a5e1c680950b.png)
 
 知己知彼，百战不殆
 
@@ -70,7 +69,6 @@ https://colab.research.google.com
 
 ![](img/468a35140bb2c874fe104b4147e98045.png)
 
-![](img/86439fe367bd0bdbb3b5ded74b46c154.png)
 
 ### **完成一个 Python 程序**
 
@@ -236,7 +234,6 @@ https://platform.openai.com/playground
 
 这里，我将 SYSTEM 定义成了缩略信息助手，而在 USER 中输入了文章内容
 
-![](img/d9478db0702fbd0b09dd8a1f0013fbb2.png)
 
 运行后，结果很令人满意
 
@@ -282,7 +279,6 @@ https://platform.openai.com/playground
 
 先复制第一段，运行试试
 
-![](img/7a38e1e1e4a7d08402889e1414d3bd5b.png)
 
 然后是第二段，记得把 Key 改一下
 

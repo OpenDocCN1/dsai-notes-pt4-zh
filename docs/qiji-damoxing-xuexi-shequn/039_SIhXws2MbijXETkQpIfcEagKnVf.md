@@ -88,7 +88,6 @@ https://x.com/watneyrobotics/status/1861170411788226948
 
 这是我们远程操控的实时部署之一的夜间延时视频，距离超过7000英里。我们的机器人全年无休，全天候运行，无需人工干预，轻松应对长尾边缘案例且零停机时间。
 
-![](img/34f99a4e0c85a91c3fb121b9b4e89f54.png)
 
 [sLlF9tfyreiiETtr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O60ebVqk9ooNepxf4PTcYFZxnzc)
 

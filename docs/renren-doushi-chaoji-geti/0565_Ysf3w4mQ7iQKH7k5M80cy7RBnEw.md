@@ -276,19 +276,12 @@
 
 而且，我也上网去搜了一些其他人对这个项目的看法。
 
-![](img/ca7a0ec2ac5ee99c45fda16e75af5a3f.png)
 
-![](img/cf4f2fb0c5911ba4f3ce97284c871e5b.png)
 
-![](img/f82eb71726fe012d26531ce34f9127b2.png)
 
-![](img/856cc1b87c1cd5b7edc8ed59e7945e5a.png)
 
-![](img/10d6c1ffede031360d9f8b2404a857f0.png)
 
-![](img/b4ea204de213356ea73ca88e037af744.png)
 
-![](img/aa8aad7eed667a61f693503559b303e9.png)
 
 ![](img/257ea8935196ca1d28aa1130a6eb1763.png)
 

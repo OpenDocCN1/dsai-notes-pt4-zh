@@ -8,11 +8,9 @@ Get in the know with Anthropic resources. From API development guides to enterpr
 
 https://docs.claude.com/en/home
 
-![](img/cb7e64545ab8d5bab71381fda9c66fce.png)
 
 # Anthropic Academy
 
-![](img/6d167b18fa4fcf71dc1d1a4c334e0c75.png)
 
 https://www.anthropic.com/learn
 
@@ -20,7 +18,6 @@ https://www.anthropic.com/learn
 
 https://www.anthropic.com/events
 
-![](img/f9483ffab1c14edb00a850a3898d2dba.png)
 
 # Anthropic Blog
 

@@ -56,15 +56,12 @@ Suzuki car in Dubai --qrw 0.8 --steps 16 --seed 4932759074885710
 
 输入完毕后，点击“发送”按钮。稍等片刻，你就会看到你的艺术二维码出现在屏幕上。是不是很惊艳呢？
 
-![](img/6a384865d714979dab73be8883d65552.png)
 
 你可以尝试不同的prompt和参数，来生成不同风格的艺术二维码。你也可以参考其他用户在“showcase”频道中分享的作品，来获取更多的灵感和建议。
 
 下面是一些我觉得很棒的艺术二维码，供你欣赏：
 
-![](img/9cf0a3ae746bbf72648c80bacec19b03.png)
 
-![](img/28a9aa0b9a2cf2b3f28fe10a2f3f61ad.png)
 
 ![](img/db4f503fe3a764e8bfebf43e051a10d0.png)
 

@@ -38,11 +38,9 @@
 
 最后确定好了对标，但是，太卷了，之前的达人秀都是十几秒，二十几秒，一两个变身就完事了，这个对标账号，居然做到了快一分钟，而且，不是文生图那么简单，需要智能画布p图，还需要即梦的智能参考，局部改动作，图生视频也难搞，为了精细化的效果，要反复roll。一个完整的视频我都要花费五个小时左右。还有一个对标账号，我后来才知道是困困教练的。
 
-![](img/24439cef762b7010220b2212535d9f71.png)
 
 [0成品.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AtShbGn92osRWxxChsxcxd0GnZb)
 
-![](img/9d677151b8157bae0aaa1b9a1e6a80d3.png)
 
 [4月4日 (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PbIabfsN8oqGDvxR70kcWimCnPh)
 
@@ -64,7 +62,6 @@
 
 如果，我现在来复盘的话，我觉我的错误就是一直没有持续，这一类视频没做透彻，没有足够熟练。思维逻辑不够清晰。就停止了，然后又开始新的探索。所以一直效率提不上来。
 
-![](img/5193f6c1159b9c92efafba5c4fb3b06a.png)
 
 [0成品.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SKiDbbZ7YoZOBrx6ltTcVwMknOM)
 
@@ -96,15 +93,12 @@
 
 5.31-6.01端午三天，可以说是最痛苦，心态最崩溃的三天。  因为这时候我同步养了一新号，连着发两天的实拍了，已经有流量了，但是发了两个印度故事的作品。三天都是零播放。我心情很低落，再次被挫了，这几天，我压力很大，因为啥也没干。早上起来就做视频，一直做到晚上，做梦都是做视频。然后视频还没播放，我控制不住自己的情绪了，在深海圈群里寻求心里按摩，没想到教练们感知到我的情绪了，纷纷给我鼓励，还有解决办法。如下图一~三。
 
-![](img/ca7ae6de9f87016ea96df76c539f9b6c.png)
 
 图一
 
-![](img/944b291c83f9a1668bf8d912981850d0.png)
 
 图二
 
-![](img/b29556e0d131c380b188679d290efd3e.png)
 
 图三
 
@@ -126,11 +120,9 @@
 
 图一
 
-![](img/b1cb84245f0ca5a2374aca9350d7c210.png)
 
 图二
 
-![](img/fbb23b25782d5c77a7fdb6a099186107.png)
 
 图三
 
@@ -190,7 +182,6 @@ Gemini给我的方法
 
 +   1.借鉴小圈教练的经验，替换元素，有个对标视频是老虎，我给改成大象了，大象也是印度的一个神。420万播放。而且，局部画面我进行了优化，比如原视频故事情节很平淡，但是我的视频增加了冲突，大象跟老虎战斗，但是就是一个画面，我自己下一个类似视频，我把这个画面形成视频了，冲击力更好，大象受伤我也没弄很血腥的那种感觉。这种扔孩子的流量很好，但是我没在做了，不安全，没必要。
 
-![](img/320cc91fe6ab35b42af64740cb094277.png)
 
 [Sakyamuni Works in Silence – Do You Notice？ ✨#spirituality #buddha#blessed #ai - HiLanbuff (1080p, h264).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UyYlbHaeQo5u8qx3iucccT80nsh)
 
@@ -218,7 +209,6 @@ Gemini给我的方法
 
 +   3.island教练的爆款重组的方法，我将两个大几千万的爆款视频故事情节组合在一起。做出来一个两千万播放的视频
 
-![](img/a497cd0dcf37028687bbe1a0e4136dba.png)
 
 [Rich but Cold Mother, Poor but Loving Adoptive Father - sunshine (1080p, h264).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WIKWbdUXcoDm5exYRqacTlvOnlb)
 
@@ -268,7 +258,6 @@ Gemini给我的方法
 
 +   10.如何能知道自己的观众喜欢看什么样的视频，可以在手机端右下角点击我，然后页面上方有个查看频道，进来之后有个数据分析，再进去往下拉就看到了。
 
-![](img/d1c6f1d2f964c30dfe80b49ae5c4ffe0.png)
 
 ![](img/9e2fb2d7097a5233253d9a466bbeb57a.png)
 

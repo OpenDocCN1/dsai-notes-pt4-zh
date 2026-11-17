@@ -24,11 +24,9 @@ AI基础群 & AI+X系列群（一共3个群）
 
 # 第21期群活动  用Flux做一场属于自己的TED“真人”演讲
 
-![](img/808727b81a35452b4932036e7694de5d.png)
 
 [feko7xjbSYxI9IKM.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DooVbEBgkoQVPdxMiBccTFnbn8d)
 
-![](img/c7f6b88ed3f39d215fb0895bb20e37ae.png)
 
 [C-1ggGh7rDZQrvVl.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UkcwbWRhuoKp1bxKc9ccHXu0nWe)
 
@@ -164,9 +162,7 @@ AI搜索 - MindSearch
 
 # 第10期 群活动 📕爆火拟人潮牌小狗 MJ提示词破解
 
-![](img/c17f150a75f6ce8eff2fdaaad6791e47.png)
 
-![](img/0ed496813dc4ce7c92b2555f81745cb5.png)
 
 ![](img/c56ee7727491f4317f4bac8dc782d284.png)
 
@@ -204,21 +200,14 @@ AI搜索 - MindSearch
 
 [295_1705158620.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Yl26b0zOooMhS9xHMkecpSkLnld)
 
-![](img/a28fb97ff39316e16f865a5dec8b6350.png)
 
-![](img/25b0dd7e5262a2944cdd87ffbe11f76c.png)
 
 # 第六期 群活动 26个Prompt编写原则和普通人最简单的Prompt公式
 
-![](img/578925c7a69afec3443dc20904bb5626.png)
 
-![](img/1167362c35ae4f84d99760b0d4458de4.png)
 
-![](img/4915b50c6733f88d507a2bd53c2a24f4.png)
 
-![](img/702eb9486bfdc0ebe6bcf558bee31a6b.png)
 
-![](img/571ede54d479613b295e68d3c5fa7e00.png)
 
 ![](img/c9c5902eb73197eb9a9890f1a4efd80a.png)
 
@@ -260,7 +249,6 @@ AI搜索 - MindSearch
 
 ![](img/e9172ca764400daa190f1012f51c0a7f.png)
 
-![](img/4fc51daf5f7bd07b8860512157f54f4f.png)
 
 ![](img/b0372638342b4153a9cc1e5383913d7f.png)
 

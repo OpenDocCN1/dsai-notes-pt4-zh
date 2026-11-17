@@ -2,7 +2,6 @@
 
 > 来源：[https://datawhaler.feishu.cn/docx/DqaydpsFdovWonxDrYxcrBYxnkf](https://datawhaler.feishu.cn/docx/DqaydpsFdovWonxDrYxcrBYxnkf)
 
-![](img/0b6b82492d8ad1390be557c875b77194.png)
 
 ![](img/0d2a249dc74082245b6207806bc883aa.png)
 
@@ -179,7 +178,6 @@
 
 1.  下载发布的Agent的代码：直接复制链接环境变量中的 AGENT_URL ，粘贴到浏览器地址栏下载
 
-![](img/6b956d4ede246fb799bd10b9ac758c4c.png)
 
 1.  解压并修改对应代码
 

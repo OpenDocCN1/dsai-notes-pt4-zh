@@ -114,7 +114,6 @@
 
 ![](img/119648376a759fda9fa30fb8d40cbcba.png)
 
-![](img/10c6c2351f9563085344731122e0bcc6.png)
 
 +   打开实例
 
@@ -228,7 +227,6 @@ python download_blip.py
 
 +   然后确定、启动即可
 
-![](img/9131ab30569917836a7250c174740cba.png)
 
 ![](img/220ab671bee5cfa305e429bd5eb63872.png)
 

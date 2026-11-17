@@ -114,7 +114,6 @@ https://juejin.cn/live/1109649
 
 [飞书 Aily 在企业场景的落地实践.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HlqqbduheoZ21MxWZLtcCozFn0f)
 
-![](img/65909288fbbcc884faa3a1f4557faf1e.png)
 
 [Copy of 去哪儿机票售前AI客服落地实践.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YYJkbxGYUoeNnIxAIivcbidQnlb)
 

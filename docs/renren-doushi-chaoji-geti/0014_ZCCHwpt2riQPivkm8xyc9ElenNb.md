@@ -42,9 +42,7 @@
 
 我最近在X里也浏览了很多大家对openclaw的观点和评论。
 
-![](img/33f91928d6b8734ebe2a97ed5b9eda7b.png)
 
-![](img/e82fcc16c6e28530c47a2db01673d10f.png)
 
 ![](img/4cd9436dfa6b3d300cdf4216add55d04.png)
 
@@ -535,7 +533,6 @@ GOOGLE_IMAGE_MODEL=gemini-3.1-flash-image-preview
 
 把第一步的内容直接一键复制，然后发给小龙虾，告诉他让他自己去配置。顺便你可以把这个 Key 直接给他，等他安装好之后就可以测试了。
 
-![](img/da87a21daea1669fcca069f5ff17985c.png)
 
 ![](img/553e9447c9669c3a9c49a0cb97569cbd.png)
 

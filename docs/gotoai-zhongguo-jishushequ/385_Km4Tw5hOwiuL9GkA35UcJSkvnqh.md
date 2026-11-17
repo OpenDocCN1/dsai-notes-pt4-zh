@@ -20,7 +20,6 @@ https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agent
 
 循环运行的智能体会生成越来越多可能与下一轮推理相关的数据，这些信息必须被循环提炼。语境工程正是从不断演化的信息宇宙中，策划哪些内容应进入有限语境窗口的艺术与科学。
 
-![](img/b6427e0f3c526ab8d38eeb73553c0b16.png)
 
 ### 为何上下文工程对构建强大智能体至关重要
 

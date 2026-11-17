@@ -82,7 +82,6 @@ Compute Unified Device Architecture）是 NVIDIA 提供的一种并行计算平�
 
 在开始菜单栏通过 Uninstall 来卸载
 
-![](img/6cbfd10c7b17cd246cfe799d05a90a73.png)
 
 **卸载 cuDNN**
 
@@ -124,7 +123,6 @@ cuDNN 通常不提供标准的卸载程序，因为它由多个库文件和一�
 
 点击：组件
 
-![](img/6d9a730795a4c88af87e929658b30cbb.png)
 
 低于这个版本的就可以：我的就是低于12.6.65即可
 
@@ -180,7 +178,6 @@ NVIDIA cuDNN Archive
 
 ![](img/77604a5cd7ba54b6e6f4f457f245188e.png)
 
-![](img/b51fc7a1c9dfc57dda1cbf7533a7ddfa.png)
 
 选择自定义：
 
@@ -244,7 +241,6 @@ cd到C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\extras\demo_suite,
 bandwidthTest.exe
 ```
 
-![](img/a14586d297baf0bffef1524cc06342d1.png)
 
 ```
 deviceQuery.exe

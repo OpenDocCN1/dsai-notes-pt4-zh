@@ -10,7 +10,6 @@
 
 +   **赚钱 AI 问答助手：**如果想要整合项目信息、获取结构化回答，可以使用赚钱 AI 问答助手：https://scys.com/ai
 
-![](img/9d123d7fe6d446864a09c0d184a1b3da.png)
 
 # 目录 & 月度要点总结
 
@@ -40,7 +39,6 @@
 
 +   [**线下聚会**](https://shengcaiyoushu01.feishu.cn/docx/PWjQdSgpDoXBO4xTj1HcaT4qnaf?302from=wiki#share-IWnXdgxH9o7VsPxzbQjcbMRAnsc)**：**全国各个城市，线下聚会持续开展中，学习局、运动局、娱乐局等你来参与
 
-![](img/f24377c03590408497854c75f5f3b3c4.png)
 
 # 一、龙哥观点
 
@@ -336,7 +334,6 @@ AI网站出海半年零1天，11月网站终于破千刀
 
 ![](img/20bb69d397dbb5d978b957c1a7b0f06a.png)
 
-![](img/7e29d120c2c6f8ae031ad5aa87936b9d.png)
 
 # 三、超级标
 
@@ -512,7 +509,6 @@ AI PPT赋能教学课件，需求大且有长尾流量
 
 > [h](https://scys.com/articleDetail/xq_topic/22811515821244141)ttps://scys.com/articleDetail/xq_topic/22811515821244141
 
-![](img/005f817c285c2db2f1a760d32e41312b.png)
 
 ![](img/575eb1765487004896fb7dcfcee23292.png)
 
@@ -1102,7 +1098,6 @@ Mini 航海是周期更短、聚焦更窄的小航程。
 
 同时，这个月我们尝试做了一个新的形式，小灯塔手机壁纸。如果你把它设成锁屏，或许就能在忙碌的时候给你一点鼓励，让你随时看到一条值得实践的方法。
 
-![](img/43854957eb6e13cae33f996345b2cb03.png)
 
 ![](img/f4b4a81ae132159ee347fdb04071f217.png)
 
@@ -1110,7 +1105,6 @@ Mini 航海是周期更短、聚焦更窄的小航程。
 
 ![](img/d71c449666a979516d637ca67471f64a.png)
 
-![](img/893099e775a8c138482cbdbf1d4373d3.png)
 
 ![](img/fffc9f32dba773b850b48d36cb93e6d3.png)
 
@@ -1272,7 +1266,6 @@ Mini 航海是周期更短、聚焦更窄的小航程。
 
 > 航海家大会；个人IP，私域流量，AI提效交流局；AI实战交流局；畅游北京故宫娱乐局；心力交流局...
 
-![](img/45231275325951d2b285da45a67eecb5.png)
 
 ![](img/9f0cd897a27ec4751f3563a884758877.png)
 

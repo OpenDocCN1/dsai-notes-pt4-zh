@@ -24,7 +24,6 @@ Claude Code是AI工具，实际用起来它能做很多事情。比如写文章�
 
 学卡神这样的大佬怎么写文章（我朝鲜族，汉语不好，有理由了 = = ）：
 
-![](img/8aad8d1a7b8ae9fbb62900d4b02181cc.png)
 
 再或者数据分析（网页是拿Claude Code搭建的，展示在Cursor内，用了昨天介绍的Cursor2.2的Browser随便调整的强大功能）：
 

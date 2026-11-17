@@ -172,7 +172,6 @@ async def main(args: Args) -&gt; Output:
 
 同样的方法，我们可以调整提示词，制作其它的形象人物，比如智慧老爷爷和它的小狗子。
 
-![](img/2ed05d40e016605ac3ab52ea425a9b96.png)
 
 ![](img/0f02dd4ae570d9e4fbaf7089d86529b7.png)
 

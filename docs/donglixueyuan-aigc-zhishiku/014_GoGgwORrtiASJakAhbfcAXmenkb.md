@@ -263,7 +263,6 @@
 
 1.  访问mindshow(https://www.mindshow.fun/#/home), 将上面内容复制，导入到Markdown创建。
 
-![](img/1d3e4a073a71401001ecccbe0f5040e8.png)
 
 
 选择模板

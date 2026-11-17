@@ -12,13 +12,11 @@
 
 ### **🔍 扣子2.5宣传片**
 
-![](img/f8d9d773103330823d56d9d9c06c76fe.png)
 
 [扣子2.5【1080p】【结尾带二维码】-0414.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ClMhbNivqoGs4gx7of5csb2Mnif)
 
 ### **🔍 扣子编程全面升级**
 
-![](img/c16307c121035e8927b9b8012aa34ef6.png)
 
 [扣子编程4k.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WI7ibWTGZol2Xxx0F62cV0Mun9d)
 
@@ -60,13 +58,11 @@
 
 ### **🔍 扣子- PPT 功能上新**
 
-![](img/1abf6ec5d1e42b1e04dc4a79671ed770.png)
 
 [扣子空间PPT功能.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hr1ab77Ploqh1nxOfXycVozPnxb)
 
 ### **🔍 扣子-简单介绍**
 
-![](img/a39dce6e16ded8af80c962392aee1a17.png)
 
 [飞书20250418-160742.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XqbIbQKIioRFB2xoEADc00GTnsL)
 
@@ -106,7 +102,6 @@
 
 1.  优质 Bot 体验：《读书小助手》、《爸妈防骗助手》
 
-![](img/22aa515a94cee6938c98c151bccc9556.png)
 
 [第一期 Agent与扣子介绍 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UYKxboQdQo1aAWxvKYecz0DWnJY)
 
@@ -122,7 +117,6 @@
 
 1.  实操：通过扣子助手搭建一个《高情商老板回复话术Bot》
 
-![](img/171d2bee297409fa62438a00e709b1e1.png)
 
 [扣子官方教程-第二课.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rg0iboUJ2om4VwxBJAYcxysen4d)
 
@@ -134,11 +128,9 @@
 
 1.  实操：插件的使用、自定义插件的使用&插件商店
 
-![](img/380c447e02e8a06c219a62a6bbf514c8.png)
 
 [官方教程第三节-上（插件入门）.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N3LibUIP5oafDyxACBkcV9CAnNd)
 
-![](img/7b75c44d7c29015293205eab8c04eeb3.png)
 
 [官方教程-第三节下（插件进阶）.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PiyobZ4nmosHhkx5FnxcoH3OnWf)
 
@@ -150,11 +142,9 @@
 
 1.  搭建工作流最佳实践演示：旅行计划工作流
 
-![](img/3d50d87106efac5163558a4d4c2563e8.png)
 
 [官方教程-第四节上（工作流）.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ANj4bGEbwoZiaVxWSt2cqRCNntc)
 
-![](img/9e4a004901b3d4c4dc136d84db7bbcda.png)
 
 [官方教程-第四节中（工作流）.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GXjub7k5so5osRxn5wscLpsAnng)
 
@@ -164,7 +154,6 @@
 
 ### **🔍 扣子智能客服助手**
 
-![](img/6bd8cfbf77825834272f3664a0d22e9c.png)
 
 [扣子-智能客服.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WyIebWRuLoFyaqxsNnLcvf1Mnoh)
 

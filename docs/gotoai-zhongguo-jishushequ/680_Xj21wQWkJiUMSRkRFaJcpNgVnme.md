@@ -8,7 +8,6 @@
 
 +   点击链接进入：[应用广场](https://console.volcengine.com/ark/region:ark+cn-beijing/application?utm_campaign=2025H2&utm_content=gongjuxiang&utm_medium=xianshang&utm_source=LBM-zhyx&utm_term=dyjx_wendang)，下滑选择“DeepSeek+Doubao长记忆方案”
 
-![](img/1716730c0d2e1b1d97dbd9982f2ce234.png)
 
 +   进入应用详情页，可以免费在线体验应用，点击右上角「Github代码查看」，可获取开源代码进行本地部署
 
@@ -34,7 +33,6 @@ PS. 本地部署可以修改虚拟角色prompt、开场白生成prompt等，打�
 
 +   找到下载的文件夹，修改ai-app-lab/demohouse/longterm_memory/backend/code/config.py 中的配置
 
-![](img/a09dea242e03c1f7ddc1a9787f59086e.png)
 
 ![](img/89215ad77a52fb7709e49258a01e81da.png)
 
@@ -42,7 +40,6 @@ PS. 本地部署可以修改虚拟角色prompt、开场白生成prompt等，打�
 
 +   进入[火山方舟控制台](https://console.volcengine.com/ark/region:ark+cn-beijing/overview?)，点击右上角个人中心，选择「API访问密钥」
 
-![](img/cafd0c83e5d200dc8c7217323947efa8.png)
 
 +   点击「新建密钥」，复制Access Key ID、Secret Access Key并填入文件对应处，修改后保存文件
 
@@ -62,13 +59,10 @@ PS. 本地部署可以修改虚拟角色prompt、开场白生成prompt等，打�
 
 +   创建 Doubao-1.5-pro-32K-character-250715 的endpoint
 
-![](img/c4dcde12bfddc10202216e5767c30b1d.png)
 
-![](img/1e5860216b1bf3996033afabe017b3ea.png)
 
 +   创建  Doubao-embedding 的endpoint
 
-![](img/a111ed961b7bee9709525d9b790682f8.png)
 
 +   创建 DeepSeek-V3 的endpoint
 
@@ -86,7 +80,6 @@ PS. 本地部署可以修改虚拟角色prompt、开场白生成prompt等，打�
 
 [参考文档](https://www.volcengine.com/docs/84313/1254444)
 
-![](img/6df5b942404469ebbddf68eeb81ff548.png)
 
 ![](img/128488487a8d52564dd5b4320b556080.png)
 
@@ -206,11 +199,9 @@ SUMMARY_PROMPT = &quot;&quot;&quot;你是一个个人信息管理器，负责从
 
 +   记忆抽取过程演示
 
-![](img/0ad958bab82aba23008d2092fd7894c3.png)
 
 更新记忆
 
-![](img/7102f0fd956f235052d7515c28484330.png)
 
 记忆提取结果
 
@@ -234,7 +225,6 @@ SUMMARY_PROMPT = &quot;&quot;&quot;你是一个个人信息管理器，负责从
 
 修改前：
 
-![](img/e2e6b40e47026af4ca5ac119d2e1484d.png)
 
 修改后：
 

@@ -60,7 +60,6 @@ Covariant Brain 通过向所有联网机器人学习来不断改进，使得 Cov
 
 ![](img/c93858ceaf069a76257d04b0e2dafd2c.png)
 
-![](img/90afdbce85f3033f156dd36c2d2046e3.png)
 
 Source：Covariant 官网
 
@@ -68,7 +67,6 @@ Source：Covariant 官网
 
 自动感应到单元分拣机、袋式分拣机、自动导向车和自动装袋机（Automated induction onto unit sorters,  pocket sorters,  AMRs,  and auto-baggers）：机器人自主将物品投入单元分拣机、袋式分拣机、自动导向车和自动装袋机等设备，机器人可以自动执行重复的手动流程。
 
-![](img/8bde234af766188c04a05a55921b57e5.png)
 
 Source：Covariant 官网
 
@@ -76,7 +74,6 @@ Source：Covariant 官网
 
 机器人从存储、穿梭车、自动导向车和其他自动化仓储与检索系统中进行拣选（Robotic picking from cube storage, shuttles, AMRs, and other ASRS）：机器人可以将传统的货到人系统转变为自动化的货到机器人系统。
 
-![](img/800cbf7438eb0dec617a88d5047c5b63.png)
 
 Source：Covariant 官网
 
@@ -84,7 +81,6 @@ Source：Covariant 官网
 
 用于联合包装、配餐和订阅服务的自动化组装（Automated assembly for co-packing,  meal kitting,  and subscription services）：机器人自动从装了食品等的袋子中挑选物品并将其放入外发箱、垃圾箱或袋子中。
 
-![](img/f2dcd54a6cac729c7d91388846c69d0f.png)
 
 Source：Covariant 官网
 

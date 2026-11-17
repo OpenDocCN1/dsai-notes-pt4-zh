@@ -104,9 +104,7 @@ git lfs install
 git clone https://www.modelscope.cn/datasets/Datawhale/AI_Camp5_baseline_CV.git
 ```
 
-![](img/d1e5778be9ebc317e55a1de2148c49d2.png)
 
-![](img/05f6a3449bef2952fe90b3bfe0d378d3.png)
 
 ![](img/f00d1fa8a85c00916339776f66c6006d.png)
 

@@ -270,7 +270,6 @@ lemon说：所有东西都是可以靠数据验证的。
 
 ![](img/b976bc559dadd74437f2804e7fda2903.png)
 
-![](img/8a9c46a290cf58e18c57b46fae206d1c.png)
 
 ![](img/9f5e569e24b7e2820fea85b1f9eafc6e.png)
 

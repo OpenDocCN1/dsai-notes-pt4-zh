@@ -110,9 +110,7 @@
 
 > 手机设置➟通用➟传输还原 iphone➟抹除所有内容和设置
 
-![](img/70be8727da94944798c58f3971da7840.png)
 
-![](img/945b32787bd91cd7a688d05398fe3291.png)
 
 ![](img/ac5b17e95ed0c90205cd0aae295700fa.png)
 
@@ -128,7 +126,6 @@
 
 > 锦上添花，非刚需
 
-![](img/09c7e80106d7ae1811be8de515147a35.png)
 
 ![](img/764acbc9fed18f0b01f557aef0f485ae.png)
 
@@ -198,7 +195,6 @@
 
 很多用这类型账号的都是做一些擦边、违法行业居多。各位互联网小白，或者新手村小伙伴，一定要谨慎对待账号问题，不要贪图方便就轻易使用接码类型账号。
 
-![](img/063f989a561a647bd0bf52cac76e80dd.png)
 
 ![](img/5ed2beee1fef36bf67b0e9f84e6f2015.png)
 
@@ -376,19 +372,15 @@ https://pay.weixin.qq.com/
 
 [每日招聘邀约表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WVulbLokKohkSjxrmF8cg0dFnie)
 
-![](img/3393c6bec841f727034eb4ce64537ef1.png)
 
 [邀约话术技巧.doc](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I9OTbRrJDoC7l7xzvcrcx4lynsd)
 
-![](img/716e22e7bb59ccf6e854109cfe804c6d.png)
 
 [应聘者常见问题.doc](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QvkNbCg9JooTgdxJUZqc8dK4nkf)
 
-![](img/b9004c28049367b33abe6d4371a10705.png)
 
 [面试常见问题.doc](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SMwSb9u2tou1Mxx8dvUcrHmFnNf)
 
-![](img/b2dabfab03c3c430fc174cd12ec813e1.png)
 
 [员工应聘登记表.xls](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LuxPbq3cboF3RUxtuRXcE8r4n4c)
 
@@ -410,7 +402,6 @@ https://pay.weixin.qq.com/
 
 [廉洁自律承诺书.doc](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HUtvbVXEKoS67px3nhhc4HHNnJg)
 
-![](img/2e84cc4cd16225a0dc6d5b06d391bd02.png)
 
 [不购买社保申请书.doc](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CEJpbXAtLokQlnxaSuWcANOensD)
 

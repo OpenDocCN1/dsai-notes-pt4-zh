@@ -48,7 +48,6 @@
 
 -上传视频，进入 /opt/Re-2.5.0/Real-ESRGAN/inputs/video
 
-![](img/c5bb5334cdd86ed1ae0f67917b123545.png)
 
 ④　点击此处上传按钮选择本地文件上传
 

@@ -112,7 +112,6 @@ Prompt 工程是上手难度最低的，一切 LLM 应用推荐先从 prompt 工
 
 ### **分析问题的两个维度**
 
-![](img/2a521b30484d3d4ff85a2a3a10608304.png)
 
 如图所示，主要从下面两个维度考虑问题：
 
@@ -186,7 +185,6 @@ prompt 工程 -> 进阶 prompt 工程 -> 简单 RAG -> 微调模型 -> 进阶 RA
 
 ## **Prompt 工程**
 
-![](img/26231a37ef49dd6ef1748ff59ef4b74b.png)
 
 > 提示工程: 一种通过输入文本指令让模型按照要求输出期望结果的技术。
 
@@ -290,7 +288,6 @@ prompt 工程 -> 进阶 prompt 工程 -> 简单 RAG -> 微调模型 -> 进阶 RA
 
 > Advanced RAG Techniques: an Il[lustrated Overview: https://pub.towardsai.net/](https://pub.towardsai.net/advanced-rag-techniques-an-illustrated-overview-04d193d8fec6)advanced-rag-techniques-an-illustrated-overview-04d193d8fec6
 
-![](img/15375c89f868f8f54314c5c737b08e56.png)
 
 高性能的 RAG 系统类似传统的信息检索系统，可以结合大模型特性使**用 reranking, classif**ication, and finetuning your embeddings 等多种技巧。不过不论使用的 RAG 技术有多复杂，RAG 的核心都是如何将知识检索的又快又准。还记得我们开卷考试那个例子吗？时间有限，如何在多本书之间（知识库间检索），如何在一本书里（知识库内部检索）把目标知识检索的又快又准确，是 RAG 效果好坏的关键。
 
@@ -322,7 +319,6 @@ RAGAS 是一个用于 RAG 评估的知名开源库，推荐使用：
 
 如果 LLM 应用面临的问题与上下文有关，那么 RAG 就是一个强大的工具。它使模型能够访问外部数据源，提供模型训练数据中不存在的必要上下文。这种方法可以显著提高模型的性能，尤其是在最新信息或特定领域信息至关重要的情况下。为模型提供参考文本的情况下，也能大大降低模型幻觉。
 
-![](img/49aba124fa055bfb273b2b7a0cf66abe.png)
 
 需要注意的是 RAG 的局限性如下：
 

@@ -6,7 +6,6 @@
 
 ![](img/1aa4459c584f6de17f210c63b577e895.png)
 
-![](img/e710b993a1f735698ab8c1baa60a0a72.png)
 
 +   一种轻量、开放的格式，用于扩展 AI agent 能力 | open format for extending AI agent capabilities
 

@@ -202,7 +202,6 @@ Gary 说，“培养高校学生就是在培养 XR 行业的未来”。深以�
 
 第三，持续推进与 Unity 的深入合作，包括有 UUG 开发者活动、Unite 大会、Unity GameJam 等。
 
-![](img/7da2c0b51a5300a4044addcabfc96099.png)
 
 ## 空间计算下的文娱与教育
 

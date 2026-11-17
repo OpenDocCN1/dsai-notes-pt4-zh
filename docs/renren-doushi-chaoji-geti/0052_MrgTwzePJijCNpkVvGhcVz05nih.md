@@ -140,9 +140,7 @@
 
 > 后面职场类漫画我会为你演示在一个主题下如何一次生成多段文字，并顺利添加到画板里。这个类型就是刚开始说的，对于提示词的要求比较难了，难在对于输出信息的规范。
 
-![](img/c22d964e04f55f7d4e6ff9436a1967f9.png)
 
-![](img/294c415581e9412b835a794c21f1aab3.png)
 
 ![](img/c6f00df2295e260d2f6fbbb7b5bce7e3.png)
 
@@ -626,7 +624,6 @@ async def main(args: Args) -&gt; Output:
 
 > 进入🛰️开发者平台，下滑找到【我的业务】，点击【👸号】
 
-![](img/69d26dd53cc981533e269e439e274426.png)
 
 > 1、复制 AppID，保存好，粘贴到 11 号员工 appid 那里。记住粘贴到 appid 那里后，要把第 1 位数字前面的空格删掉。
 
@@ -870,7 +867,6 @@ api 网址：https://evolink.ai/z-image-turbo
 
 ![](img/06f35572ef05cbd7632b2c9ef4333372.png)
 
-![](img/e3a404c0eff5a2da0d982f645b4da93e.png)
 
 ![](img/82ddeb25e8cfa6dd2e3057700aea4f2b.png)
 
@@ -910,7 +906,6 @@ api 网址：https://evolink.ai/z-image-turbo
 
 > 演示完毕，流程跑通。
 
-![](img/46e2cd844d3fd84a76f85f3d615cea18.png)
 
 ![](img/c8efa3aaf1121046561ba702882c1f56.png)
 
@@ -924,7 +919,6 @@ api 网址：https://evolink.ai/z-image-turbo
 
 > 上的难度不是说提示词要写的多么高级，而是在于对上一个节点输出的规范，以保证下一个节点能准确无误接收，然后处理信息。
 
-![](img/abc2b11a4d0cd2dd89dd404f66bef052.png)
 
 ![](img/4c76d7b1b7aa6a19f02ec79128d17d31.png)
 

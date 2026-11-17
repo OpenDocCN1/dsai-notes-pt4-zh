@@ -28,7 +28,6 @@ openskills install anthropics/skills
 
 然后就可以看到当前工作目录下多出了一个.claude目录
 
-![](img/ef378d2f7bf5e575ba46bd7503145dcb.png)
 
 步骤三：教会AI工具使用Skills
 

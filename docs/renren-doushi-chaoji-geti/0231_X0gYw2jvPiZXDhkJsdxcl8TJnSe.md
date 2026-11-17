@@ -14,7 +14,6 @@
 
 # 搞钱经历
 
-![](img/011e4f074ee48ffdd8c0d7d84c92aaab.png)
 
 首先用三个数字讲一下我搞钱的经历
 
@@ -30,7 +29,6 @@
 
 第三个数字是10000，大学的时候觉得经济独立不找家里要钱这事好酷，然后这里搞一下，那里搞一下，当时通过👸号引流一周的时间赚到了人生的第一万块钱
 
-![](img/5363a962c309f40ceb5a8340e00180fd.png)
 
 上面是属于搞钱的一个小打小闹，真正开始创业是从大三开始
 
@@ -42,7 +40,6 @@
 
 2022年开始用抖音投放引流私域，到23年7月单日引流至私域15w+
 
-![](img/9cf92d0c58cb5f8fdead3ac59715cb7a.png)
 
 懂流量的人都知道这张图的含金量有多深——
 
@@ -52,7 +49,6 @@
 
 # 素材决定命运，消耗改变人生
 
-![](img/4817d92b538ff1ffcb61d21a4503f6f1.png)
 
 行业有一句话叫做素材决定命运，消耗改变人生
 
@@ -72,13 +68,11 @@
 
 **①贪婪**：《外卖员教你点外卖》：便宜骚操作满足信息差
 
-![](img/267c15d1cb3a5b1dddb54989aeb6d857.png)
 
 [tmpwppvideo_20241123_1.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BBBtb59FcomazsxWULJcwGjWnPL)
 
 **②好奇：**《采访00后打工人》：采访同事，满足好奇心，满足人的八卦和窥视欲
 
-![](img/3cda14f1547b471f8fcf8d4df4fdc9c7.png)
 
 [tmpwppvideo_20241123_2.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nx26b3QGqo1k6QxpTUscEdyrnUe)
 
@@ -90,9 +84,7 @@
 
 ### 持续的情绪刺激
 
-![](img/3ca3e406e23b284842c90ab5e2620bb1.png)
 
-![](img/e1529d86f95109c5c4f3310c998bcfa7.png)
 
 短视频不是视频时长短，而是信息的间隔时间非常短。
 
@@ -100,9 +92,7 @@
 
 短视频需要信息浓度，需要痛点密集，以3秒为一个时间单元，进行持续的情绪化刺激。短视频不在乎是 3 秒、 30 秒还是 3 分钟，它只是以 3 秒为一个时间单位，对人进行一个持续化的情绪刺激，在每个 3 秒之内又有新的信息去承接。
 
-![](img/8b0bd74f1b8daf654b204d7df6d6f1d4.png)
 
-![](img/0868df2008e2907f1c878060ffaadb69.png)
 
 ### 直接的利益点
 
@@ -114,7 +104,6 @@
 
 形式：大字报+抖音特效；优点：短小精悍/简单直接/人群精准；缺点：标签模型窄，能推流的人群有限。
 
-![](img/4b7a0fd2e87f609d140ae6ddb0362f1c.png)
 
 [tmpwppvideo_20241123_4.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BceLbyoGpozkejxlsL1c0colnhb)
 

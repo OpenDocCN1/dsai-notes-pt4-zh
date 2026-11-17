@@ -124,11 +124,9 @@ GPTs有什么用呢？对于初始使用者、进阶使用者、开发者都有�
 
 1、点击 **Explore**
 
-![](img/f2b9bb23ba1a46099ffe4991a707d6d6.png)
 
 2、点击 **Create a GPT**  进入配置页面。
 
-![](img/9c1d265b2036a0eb09ff481d1286c622.png)
 
 3、进入自定义 GPT 配置界面
 
@@ -499,7 +497,6 @@ Action 简单理解, 就是通过一系列外部动作让 GPTs 的功能更加�
 
 1）进入 Unsplash, 网址: https://unsplash.com/
 
-![](img/1f6bb933d55e0384f7fe0e991ff67fd7.png)
 
 **2）登录或注册。**如果存在账号点击 Log in 进行登录。
 
@@ -517,7 +514,6 @@ Action 简单理解, 就是通过一系列外部动作让 GPTs 的功能更加�
 
 2）点击 **Documentation** 查看 API 文档。
 
-![](img/16b0ef490a9d4ae90e6b2e158638e97e.png)
 
 3）查看是否有自己需要的功能。 本次的需求是为了在 GPTs 中根据句意查询符合要求的图片，我们来找一下。
 
@@ -543,11 +539,9 @@ Action 简单理解, 就是通过一系列外部动作让 GPTs 的功能更加�
 
 1）回到首页，点击右侧菜单栏, 再点击 Developers / API.
 
-![](img/0492b4af828e04f3e8f36e9df04ca994.png)
 
 2）点击** Your apps**, 准备进行新建一个应用 。
 
-![](img/cb6b93d86951545cfe82b8014d63d48c.png)
 
 3）点击 New Application, 开始创建。
 
@@ -587,7 +581,6 @@ Action 简单理解, 就是通过一系列外部动作让 GPTs 的功能更加�
 
 1、点击 **New** > 选择 **Request**。
 
-![](img/d1999530c57a840df36830d007befc8f.png)
 
 2、创建请求。
 
@@ -625,33 +618,26 @@ Action 简单理解, 就是通过一系列外部动作让 GPTs 的功能更加�
 
 1、打开官方链接：https://www.postman.com/
 
-![](img/a0d1152a7534734b9e689db61d67f439.png)
 
 2、登录或注册，点击 Sign Up Fo**r Free **进行注册， 点击 Sign In 进行登录。我这边使用谷歌账号登录。
 
 > 注册比较简单，我这边就不演示啦！
 
-![](img/ecbc615fb03470b26c90dec9efc238bc.png)
 
 3、点击 REST API basics
 
-![](img/0b196d991735a428bbcd82935661a43e.png)
 
-![](img/c030b1cb11e7e02aa0320ccf43e481b1.png)
 
 4、点击左上角 **New** , 再点击 **HTTP**。
 
-![](img/872d70cb13b7afd4f3097f8ca6433303.png)
 
 5、选择请求方式，并输入 **api** 地址
 
 > 注意 api 地址以 https://api.unsplash.com 开头。
 
-![](img/a0b2abe5d06d5e7afea3e8b30588ad19.png)
 
 6、输入参数名称，以及参数值
 
-![](img/6d1d9954c9be9c9bffc260873c1fa641.png)
 
 7、配置授权码
 
@@ -1141,11 +1127,9 @@ Zapier是一个在线自动化工具，它通过“Zaps”（自动化工作流�
 
 登录地址： https://gapier.com/
 
-![](img/15ebf513a87415659d99faf300261553.png)
 
 点击 **Copy Link** 进行复制 Actions API 链接。
 
-![](img/cd5a2733ced91ccf3ef76becab7e8f17.png)
 
 #### 2、配置 GPTs Actions API
 
@@ -1171,11 +1155,9 @@ Zapier是一个在线自动化工具，它通过“Zaps”（自动化工作流�
 
 在 Gapier 复制授权码，用于授权。
 
-![](img/9225874420a7902e6ec6d9b945602abc.png)
 
 在 **Authentication** 下选择配置图标，进入授权页面。
 
-![](img/105c22cea7e5ea7659321632321c34d0.png)
 
 开始配置授权码：
 
@@ -1205,7 +1187,6 @@ Zapier是一个在线自动化工具，它通过“Zaps”（自动化工作流�
 
 方式二：网页查看，地址为 https://gapier.com/actions
 
-![](img/895bb0bd3df4250f853ae28c17814967.png)
 
 回到 **GPT > Configure** 页面，引用 **Action**，比如这里我调用思维导图的API，直接输入 调用 GenerateMindMap API 即可。
 

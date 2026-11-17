@@ -244,7 +244,6 @@ SDXL-Lightning 的主要特性：
 
 **从**数据上来看，Coze暂时比扣子做的更好。2024年3月，Coze的网页端月访问人数为330万人，是扣子的3倍。
 
-![](img/6d8bff95eec0f9ca2b2b82aab5be19d9.png)
 
 ![](img/9ae4ccea118988e679fe4863e39f8ee1.png)
 

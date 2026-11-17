@@ -458,7 +458,6 @@
 
 +   在节日大促的时候建议福袋少用，比如双十一，这个时候用福袋会吸引进来很多羊毛党
 
-![](img/829a8d575080ff43a99bc01fc3246b3d.png)
 
 ### 2.2、红包的正确使用
 
@@ -576,7 +575,6 @@
 
 ### 4.1、小风车跳转（首选）
 
-![](img/605c6513b000047f6fb517ca262b8ae8.png)
 
 [小风车跳转.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NzbdbEyEzoDV9txFvoxceayRnlg)
 
@@ -640,17 +638,11 @@
 
 ### 1.2、手机端
 
-![](img/b210526a6439bf5ee8e5981ee20d5ddd.png)
 
-![](img/ba7458c33bd5ef353873911776625fce.png)
 
-![](img/085a29e30e722881c58622fed9c92445.png)
 
-![](img/4690d33b9cbd960f0a6db3df6ede2346.png)
 
-![](img/98ca0dbb6e18df8f78759f0940003018.png)
 
-![](img/c543acc30d224d0c2cda3d628b1bb358.png)
 
 ![](img/0e832907047418950b3eec818ea37eb6.png)
 

@@ -164,7 +164,6 @@ Cameo"，就是这个*世界里，专属于你的“任意门”这才是真正�
 
 [20251002_2208_01k6jks74cfwmby57t77qrfn8k.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Uo5Jb0EoMo1Pnuxy4OWcRsRHnWh)
 
-![](img/50b89203c0977e53b02f6446d93d0515.png)
 
 [20251002_2208_01k6jks376ebpajjk2fyc7sh6m.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M0IGb0FVVoL8CgxbmiMc2uUOn3e)
 
@@ -176,11 +175,9 @@ Cameo"，就是这个*世界里，专属于你的“任意门”这才是真正�
 
 +   **一键生成带货视频**：输入产品图片 + 场景提示词，就能立刻生成高清短片。
 
-![](img/396f219605e4f11e66d07af904729d5e.png)
 
 [p (4).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y5EIbjqJ9o7XCZxRM0FcbffUnXA)
 
-![](img/a462d635c6afcbe6537b6cb9c3d8a156.png)
 
 [p (5).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZhsWbu4VDoPUKtxTAMGc6jCGn4c)
 
@@ -194,7 +191,6 @@ Cameo"，就是这个*世界里，专属于你的“任意门”这才是真正�
 “高清电影质感，10秒广告短片。开头镜头：夏日城市街头，阳光透过高楼洒在地面，一位年轻中国都市青年走入画面，身穿 小宋T恤。T恤剪裁利落，面料轻盈透气，在阳光下显得质感高级。中景镜头：他骑着单车穿过林荫大道，风吹动衣角，展现舒适与自由。特写镜头：胸前简洁的 小宋T恤 LOGO，领口与衣料细节清晰可见，凸显精致工艺。最后镜头拉远：青年站在城市天台，迎风张开双臂，背景是落日余晖，字幕缓缓浮现——‘自在 · 年轻 · 小宋T恤’。风格参考国际大牌广告，极简、清新、现代。
 ```
 
-![](img/d6f7034f3d75456896dfba1d9656814b.png)
 
 [20251002_1856_01k6j8zdv3frr8hrrbw1q51fzt (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NTJvbDIo6ohnThxDTVhc0uiZnHc)
 
@@ -222,7 +218,6 @@ Cameo"，就是这个*世界里，专属于你的“任意门”这才是真正�
 孙悟空大闹天宫打翻炼丹炉，玉帝急得跳脚突然掏出游戏机放下，孙悟空立刻坐下来玩游戏，玉帝擦汗“早说啊”动漫风格
 ```
 
-![](img/38ad3022a32e2dcec808cb63a2d79f6c.png)
 
 [20251002_1750_01k6j56zm2e3r9kgqf2tbh2j28.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KQkeboc1ro60Ibxrj8ecFprnnwc)
 
@@ -230,7 +225,6 @@ Cameo"，就是这个*世界里，专属于你的“任意门”这才是真正�
 [场景]天宫金碧辉煌的大殿，祥云缭绕。[分镜1·全景]中国青年孙悟空风格的角色，大吼一声，挥棒把炼丹炉打翻，烈焰冲天。[分镜2·中景]玉帝气得跳，表情夸张，准备下令天兵天将。[分镜3·中心]玉帝额头冒汗，急忙掏出一台闪着光的最新游戏机递过去。[分镜4·慢动作]孙悟空瞬间坐下，双眼放光，疯狂玩游戏。[分镜5·特色]玉帝擦汗长出吐，表情极度夸张搞笑。[风格]喜剧夸张，色彩缤纷，快节奏切换，10秒短剧。
 ```
 
-![](img/f2f6050ffc05dd28cc2e748728da8a80.png)
 
 [20251002_1812_01k6j5ya8vf8fr06c8erxr3b2p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P943blv9KoBMwjxe5rBc5T2xnNd)
 
@@ -240,7 +234,6 @@ Sora 让人人都能拍微电影，人人都能做动漫导演。
 
 ### 5.搞笑无厘头短视频
 
-![](img/f709a2b5329aeb5b1c4ee08988a563b4.png)
 
 [20251002_1748_01k6j53hnefcsadajkd6s0z702.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FDbvb2RLwoFmNsx4MhjcLw2hntf)
 
@@ -256,7 +249,6 @@ Sora 让人人都能拍微电影，人人都能做动漫导演。
 一个中国打工人，穿着普通工装，站在老板面前被秒骂惨惨突然。镜头切换：他拿出手机，账户余额显示十亿人民币。老板瞬间跪下求饶。打工人冷冷地说：“迟了。”镜头近距离动作，背景光芒闪耀，十剧爽朗风格
 ```
 
-![](img/d774c95379376e355c417f02482ee9ec.png)
 
 [20251002_1814_01k6j5xw4besftn9bmzk7e3wy6.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Od1eblrtVocppHxLhTicYrCPnZf)
 
@@ -277,7 +269,6 @@ Sora 让人人都能拍微电影，人人都能做动漫导演。
 
 **北方的冲锋衣：**
 
-![](img/b8ccb53aac1dc162346fec187c04e830.png)
 
 [20251002_1854_01k6j8tve9evs8fpy0b9w491v8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U4PYbt6BEoQalexgg9acDywZnkf)
 
@@ -289,7 +280,6 @@ Sora 让人人都能拍微电影，人人都能做动漫导演。
 
 **16:9**
 
-![](img/34017a42c060d33468bd7b89f7b01c51.png)
 
 [20251002_1858_01k6j92kc7fqpv3k81d8amkdxd.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZvZPbsHTSoUZvDxi0P7c0s4fnQb)
 
@@ -315,7 +305,6 @@ Sora 让人人都能拍微电影，人人都能做动漫导演。
 
 [20251002_2016_01k6jars88e549fqdm2590nqbw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BKvMb8a0Mo1ybpxOsrbcSf1Hnre)
 
-![](img/f341b44836486b561a9d4e5fbb6257a0.png)
 
 [20251002_2016_01k6japrkjexav7vrqpqkaf17p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MNl0bQUv6oYdcixhZiJcqiWgnag)
 
@@ -355,7 +344,6 @@ Sora 让人人都能拍微电影，人人都能做动漫导演。
 
 但现在，有了 Sora 的虚拟生成与场景模拟
 
-![](img/1715671fcdf9802ef10fbc4d74d10dff.png)
 
 [20251002_2046_01k6jexrhtejnbsm2ehtjmzfrt (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JU7CbMdEgoGenixrOv0cIGLOnJh)
 

@@ -156,15 +156,12 @@
 
 👉 了解更多：#[法律 AI 共创行、](https://mp.weixin.qq.com/cgi-bin/appmsgalbummgr?action=edit&type=8&id=3435805156338319364&lasttab=-1&token=804809582&lang=zh_CN)#[活动后续](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3435805156338319364&scene=142#wechat_redirect)
 
-![](img/8bd5462079f508c26cf52c2a4288f22b.png)
 
 上海站：[活动照片](https://live.photoplus.cn/live/6760407?accessFrom=qrcode&userType=null&code=051rCV000BknQS19xf400uWJsC2rCV0K&state=STATE#/live)
 
-![](img/adbbe33812cae6c4ac9b5a88d3967594.png)
 
 北京站：[活动照片](https://live.photoplus.cn/live/pc/96595029/#/live)
 
-![](img/3ffbd4dc18096ed6a22b73c7f73194b3.png)
 
 深圳站：[活动照片](https://live.photoplus.cn/live/pc/94871797/#/live)
 

@@ -248,7 +248,6 @@ plt.show()
 
 +   **可视化**：生成散点图和残差直方图，使用配 "tab:blue" 和 "tab:orange"展示模型表现。
 
-![](img/f3f4ffb69c014fb40878576f28c1c31c.png)
 
 ![](img/5c4e216f4a678801dfb20ffff7589a74.png)
 

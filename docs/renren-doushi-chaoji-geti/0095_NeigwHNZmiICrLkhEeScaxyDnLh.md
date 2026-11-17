@@ -99,7 +99,6 @@ Ai工具站则是完全基于执念在做，上线20多个游戏站和大小工�
 
 +   参与和优化：Vidu自动化生视频工具、Grok自动化生视频、Flow（Veo3.1）自动生成视频
 
-![](img/64f3f88c16b8f93f02cd5ee1eddcf393.png)
 
 ![](img/25ac1bf86cb46e6e4a7accc016384ca1.png)
 
@@ -307,15 +306,12 @@ B）多做视频，在过程中获得的数据反馈会让你更有体感
 
 +   元素：彩虹液体、流质液体、果冻、吐宝石金币
 
-![](img/01dc05626b5c13fab5bf081956973427.png)
 
 [救金龟 Hafiz Quran Qari Abu rayhan official gojol#shorts #shortsviral#shortsfeed#gojol#islamicmusic#ghazal-1080x1920-avc1-mp4a.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kjx2bTnGCoNlzSx4Mk7coDMYnHg)
 
-![](img/ba99d7d5c9e682c1b19e54dd2020843e.png)
 
 [救金龟(2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CZZ5bbsWOoXhNlxYJUJcvqfUnXf)
 
-![](img/29398cc078551a39a0d1728858dbcf26.png)
 
 [救金龟(1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PUyQbmJftoMXgAxDP55cION5nFo)
 
@@ -343,7 +339,6 @@ B）多做视频，在过程中获得的数据反馈会让你更有体感
 
 > 思考题：**这个复仇脚本可以怎么改？**（谜底在文档里）
 
-![](img/16b1701a54d3bdb4f1d2f43b8f317349.png)
 
 [#cat cats    #kitten    #kittens    #meow    #kitty    #catlovers  #shortfeed #catstory        -1080x1920-avc1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q5WDbUDJ0ojY7wxMufkcoUZsnzb)
 
@@ -373,7 +368,6 @@ B）多做视频，在过程中获得的数据反馈会让你更有体感
 
 +   删除了追逐的镜头，因为可能涉及儿童风险，这里改成了一群狗路过把果冻踩碎
 
-![](img/fb1188e4f7dff5c5e0b1c1cc0150626e.png)
 
 [the adorable monkey buys the sweet Candy in the supermarket #cutecat-1080x1920-mp4a.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XrkJbGeaIo1to2xSxTmcQOAknCm)
 
@@ -391,15 +385,12 @@ B）多做视频，在过程中获得的数据反馈会让你更有体感
 
 > **2改这个脚本失**败原因个人理解：破了内核。为了规避被追赶这个元素，悬念戳破得太快，追赶的刺激感一下就结束了，应该让胡桃匣子多追一个镜头再把钱给Rumi。
 
-![](img/cc03d319174cb0afb833424848acd468.png)
 
 [Labubu Steals Kinder Joy #labubu #catvideos #cat-1080x1920-avc1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q5FybDMojoYcNtxY6z4cyNVwnsd)
 
-![](img/2bbe4cd512ec037c244c8b409a44bc7c.png)
 
 [买奇趣蛋-01.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JbQ6bvoUMoSCNwxjGFkcSEBhn3g)
 
-![](img/ccf2aa8d5b76bb518661551665e29613.png)
 
 [奇趣蛋短-美人鱼.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H8oObf1Aqo5HxVxXOiMcVlQWn9e)
 
@@ -419,11 +410,9 @@ B）多做视频，在过程中获得的数据反馈会让你更有体感
 
 > PS：追逐元素可能会有儿童危害，一定要谨慎处理。现阶段总结，如果一定要追，追逐者一定不要拿武器等，追逐镜头尽量只有一个，有小孩子的镜头不要有哭声。
 
-![](img/dbb6baee2bc0fda13436ca143d96a27f.png)
 
 [发光果冻-Golden.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RjiVbsf1EoylNCxpApRcyWgonBf)
 
-![](img/d907da2b970cd86fadd0e9b216cd634a.png)
 
 [the adorable monkey buys the sweet Candy in the supermarket #cutecat-1080x1920-mp4a.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SAeRbLWesofpAfxkY8DcYrB7n86)
 
@@ -627,11 +616,9 @@ https://www.youtube.com/shorts/ss3mkizi9HI A看见一只鹰在地上——鹰飞
 
 ##### 不容易修改
 
-![](img/0b9e031d025e22f08cad273500ac4c62.png)
 
 [The smart dog was misunderstood when he asked for bread to help the blind old woman #goldenretriever-1080x1920-avc1-mp4a.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZZiCbUPNzoAzYFx6nLucgUhZnT1)
 
-![](img/3586a57bb6a77135503d13fc39b3d4c2.png)
 
 [Amaira n puppy bacha liye #shorts #thegeetagurjar-1080x1920-avc1-mp4a.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SqWCbpZuyocDbyxNX5FcrzsRnIb)
 
@@ -655,7 +642,6 @@ A干活失误被B打 > B故意为难A不让吃饱 > A干活失误又被B打 > B�
 
 > 这个脚本是一个很适合删减改编的脚本，有很多镜头都在表达主角被虐，删掉一些是完全可以的
 
-![](img/d5985e06040d36de5fd9735e4f90396f.png)
 
 [💔No One helps this Poor Puppy Until...😢 #puppy #animalrescue #story-1080x1920-avc1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X4xaboR8koWFNAxdOYuc365InCg)
 
@@ -759,19 +745,14 @@ Nano2出图（一次性出图效果）
 
 参考图非常关键，不管是即梦还是Nano2，参考图都直接决定了分镜风格的一致性。
 
-![](img/356ce6a9b4afb1438c971627fc751611.png)
 
 ![](img/20057acc64df248bd397c14aa7739179.png)
 
-![](img/57003c8d94adeafe69cc799278599426.png)
 
 ![](img/3d41eb4bd26a664b4ba952a0f90a038d.png)
 
-![](img/03bbd18ad0a353a0c41c6b866cf99baf.png)
 
-![](img/9be7a7f88e2e4d9da328842ddd719370.png)
 
-![](img/a283a302ed2e938aeb34977b2207a19a.png)
 
 ![](img/e174142c77ddb0af15dee5557670d3c5.png)
 

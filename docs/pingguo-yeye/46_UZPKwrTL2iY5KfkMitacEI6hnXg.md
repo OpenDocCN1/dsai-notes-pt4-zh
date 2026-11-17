@@ -46,7 +46,6 @@ a full body shot of a young beautiful woman
 
 > Watermark, Text, censored, deformed, bad anatomy, disfigured, poorly drawn face
 
-![](img/26a8c69295608bdcecea6f5b66a41f07.png)
 
 ### Rim lighting 轮辋照明
 
@@ -118,7 +117,6 @@ a full body shot of a young beautiful woman
 
 完成后，您将看到我们有一个名为区域提示器 regional prompter 的下拉选项
 
-![](img/dd9b09109a94da400aa1447ab0db9630.png)
 
 # 使用regional prompter的示例
 

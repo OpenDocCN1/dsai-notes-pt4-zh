@@ -46,11 +46,9 @@
 
 1.  设置 Header Editor插件
 
-![](img/084ce2ad8b2236f9bcc000ff1ac170f6.png)
 
 ![](img/ba5bf12946db1871c6e817d0abaeb25d.png)
 
-![](img/bc707b4609a6856f36722a9ed72d2a30.png)
 
 ![](img/9865879df99e44bf92684062e3c906b1.png)
 
@@ -60,13 +58,9 @@
 
 > 🔗链接：https://www.kaggle.com/account/login?phase=emailRegister&returnUrl=%2Fcompetition%2FInclusion%E3%83%BBThe+Global+Multimedia+Deepfake+Detection
 
-![](img/2189e7739ea6acb485d3def90e18b267.png)
 
-![](img/ee7a797212d0b519d7723b52185d12c4.png)
 
-![](img/9cb2fef432fb16946aa1f2bbe0aa6fcf.png)
 
-![](img/f4007d01ccd7ea23f418156e4ccbbdb3.png)
 
 ## [Step1](https://challenge.xfyun.cn/h5/detail?type=role-element-extraction&ch=dw24_y0SCtd)[：报名赛事！(点击即可跳转)](https://www.kaggle.com/competitions/multi-ffdi)
 

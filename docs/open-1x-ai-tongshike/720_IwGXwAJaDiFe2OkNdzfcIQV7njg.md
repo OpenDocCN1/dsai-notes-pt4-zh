@@ -176,7 +176,6 @@
 
 +   **输入：**在表单中上传作文图片，还有自己写的作文
 
-![](img/37a1785d772ec57b6bc2d88fcddf7e0d.png)
 
 ![](img/f0898f0b450efae43e11271dae1c6ba8.png)
 

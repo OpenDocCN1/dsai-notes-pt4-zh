@@ -30,7 +30,6 @@
 
 不**到一分钟，ChatGPT 就把**封面做好了。可以看到全新的 Images 2.0，不仅不会把基础图片重绘（这是大多数生图 AI 的通病），甚至连中文的部分都能正确绘制。
 
-![](img/c5eb2a8f906cc2162c4c49f07747902c.png)
 
 图片来源：雷科技
 
@@ -86,15 +85,10 @@
 
 ![](img/abb8e6ee5ce430fb50f64bc9e7a988f7.png)
 
-![](img/0e3e3f123d518a09bf96e697f491932f.png)
 
-![](img/17c8d2211bb534fe3aa5cfae66d443ad.png)
 
-![](img/91e0cffac49fa698cd6023f81109aeae.png)
 
-![](img/769ee60def988feb225dd4bd86407ecd.png)
 
-![](img/20ea67273f976320d6c004fd15cd323f.png)
 
 ![](img/376eebfc218beec04e4c22c8bbbbf077.png)
 
@@ -106,7 +100,6 @@
 
 除了支持中文（及印地语、日语等多种亚洲语言）、连续推理等能力外，在直播中，OpenAI 还提到了 Images 2.0 能在米粒上写字的超精细制图能力，以及生成 360 度全景照片的能力。
 
-![](img/d49d1350892cef45cde1bc4b2d387f3d.png)
 
 图片来源：OpenAI
 

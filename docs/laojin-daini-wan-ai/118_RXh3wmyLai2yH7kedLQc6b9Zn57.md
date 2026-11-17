@@ -32,7 +32,6 @@ https://aistudio.google.com/
 
 再给他改个头像，这个更离谱，10秒不到。
 
-![](img/b3dfe9de096008b2ddbfdf5bc50b3158.png)
 
 效果说完了，这个老金花了10秒想到的提示词分享给大家。
 

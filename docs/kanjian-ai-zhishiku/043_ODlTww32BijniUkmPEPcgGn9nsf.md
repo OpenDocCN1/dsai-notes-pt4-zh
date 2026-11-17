@@ -84,9 +84,7 @@ OpenPose_face 执行 OpenPose 处理器执行的所有操作，但会检测其�
 
 Sample images: 示例图像：
 
-![](img/a04ece13e0dd6d96ab10c3eb81634424.png)
 
-![](img/aede87ee2f27f54b03bef22eadee0952.png)
 
 ### OpenPose_faceonly
 
@@ -98,7 +96,6 @@ OpenPose面部仅检测面部而不检测其他关键点。这对于仅复制面
 
 请参阅下面从文本到图像的示例。身体不受约束。
 
-![](img/024fce2e669a471c794bf832bc15153d.png)
 
 ![](img/3a2610497924b6de531f8174f5af0d55.png)
 
@@ -112,7 +109,6 @@ OpenPose_hand 将关键点检测为 OpenPose 以及手和手指。
 
 Sample images: 示例图像：
 
-![](img/293907db0eed3380ac862025025694f8.png)
 
 ![](img/6499cf33c78134daf6093c6b9c9d1ae2.png)
 
@@ -126,9 +122,7 @@ OpenPose 全面检测 openPose 面部和 openPose 手所做的一切。
 
 Sample images: 示例图像：
 
-![](img/d93e60e8d733dc0295bd027f1184476c.png)
 
-![](img/c8cac4f9a4e399d0294d2e5f5f0357e2.png)
 
 ### dw_openpose_full
 
@@ -170,7 +164,6 @@ DW OpenPose 在检测手和手指方面做得更好。
 
 > 下面是一个例子。
 
-![](img/629cc9c9c63bb4a6a8ede4cbd7e81b23.png)
 
 Reference 图像
 
@@ -190,15 +183,12 @@ Reference 图像
 
 #### Reference adain
 
-![](img/dbc765d4cdb433a4d87c868fa49f5473.png)
 
 #### Reference only
 
-![](img/302dee4b665ce6a04e8f6d75cd2d698e.png)
 
 #### Reference adain+attn
 
-![](img/338c0206172ee04e8343429c90fa1c24.png)
 
 以上图片均来自平衡模式。我认为改变风格保真度没有太大区别。
 
@@ -214,9 +204,7 @@ Canny 边缘检测器是一种通用的老式边缘检测器。它提取图像�
 
 生成的图像将遵循轮廓。
 
-![](img/6041783e3efa507c9c80450ff0b6bae8.png)
 
-![](img/5343e8cfdf2d537b6f97780990f4870c.png)
 
 ## Depth 深度
 
@@ -238,15 +226,12 @@ Canny 边缘检测器是一种通用的老式边缘检测器。它提取图像�
 
 深度图：
 
-![](img/fbf6b41fd46fb1e2fb45ddffb3ce9f94.png)
 
 Midas
 
-![](img/b483f3cceeef1627391be4da7bce2ca0.png)
 
 Leres
 
-![](img/d97e46d6d2271779b71f42f825d91577.png)
 
 Leres++
 
@@ -266,7 +251,6 @@ Zoe
 
 > 毁容、丑陋、不好、不成熟
 
-![](img/3f76ac75e4d805020248029f2133cc48.png)
 
 **         **                                               Depth Zoe的文本到图像 。
 
@@ -328,7 +312,6 @@ M-LSD（移动线段检测）是一种直线检测器。它对于提取具有直
 
 ![](img/9f4369ac25db8c0b09460b23b0de3df5.png)
 
-![](img/c9d279f1b05158618edcbb25ffc8d11d.png)
 
 ## Normal maps 法线贴图
 
@@ -346,15 +329,12 @@ M-LSD（移动线段检测）是一种直线检测器。它对于提取具有直
 
 与 Midas 深度图一样，Midas 法线贴图非常适合将主体与背景隔离。
 
-![](img/0105018a5fc5452046e8b4500ca07143.png)
 
-![](img/3ef9abe9a63a1c53163418a37653f260.png)
 
 ### Normal Bae
 
 Bae 法线贴图倾向于在背景和前景中渲染细节。
 
-![](img/543a1cdf937c7a690073589cb02e5076.png)
 
 ![](img/672c175f6ee041a57b84d6506cf3f95c.png)
 
@@ -402,7 +382,6 @@ Pidinet往往会产生粗线条，细节很少。它非常适合复制没有细�
 
 ![](img/28fe49a553f0204c30ee0e594bec1487.png)
 
-![](img/862fe97d086bb72fb76b652626ecde6d.png)
 
 The buildings, sky, trees, people, and sidewalks are labeled with different and predefined colors.
 
@@ -500,7 +479,6 @@ Input image:
 
 > 一个现代的客厅
 
-![](img/4a6affb73f0702f6ea989fc3c6f6ff28.png)
 
 增加 ControlNet 权重以使其更紧密地跟随。
 
@@ -518,15 +496,12 @@ t2ia_style_clipvision 将参考图像转换为 CLIP 视觉嵌入。这种嵌入�
 
 参考图片：
 
-![](img/b8f98fc33a678c75ffc9befd70fcfbaf.png)
 
 T2I 适配器 – CLIP 愿景：
 
 > sci-fi girl 科幻女孩
 
-![](img/0f21f9ff32a78952cbbb0614b47daede.png)
 
-![](img/7cfb44097f41d03410603cc578d4e82a.png)
 
 以下是关闭 ControlNet 时会生成的提示信息。
 
@@ -554,7 +529,6 @@ ControlNet 修复可让您在修复中使用高降噪强度来生成较大的变
 
 我用这张图像，想通过修复来重新生成脸部。
 
-![](img/9b9a8e1e5cbea8a9748a0acb4a5bb770.png)
 
 如果我用高去噪强度（> 0.4）修复脸部，结果可能会在全局上不一致。下面是去噪强度为1的未绘制图像。
 
@@ -586,7 +560,6 @@ ControlNet 修复可让您在修复中使用高降噪强度来生成较大的变
 
 现在，即使在最大去噪强度 (1) 下，我也能得到与全局图像一致的新面孔！
 
-![](img/e94b06ba0a99aa74f63ceab5437f2b86.png)
 
 ![](img/12dd34c3699ddb8984c20806b27be8b0.png)
 

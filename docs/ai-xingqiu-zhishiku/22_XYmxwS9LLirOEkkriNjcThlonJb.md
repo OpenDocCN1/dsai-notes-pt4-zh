@@ -18,7 +18,6 @@
 
 **入门视频课程（在线观看）：**
 
-![](img/a9e11d14bb79dd6a78826877e316c987.png)
 
 [第1集 注册与添加.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W2WWbyJzcoOB41xNJkDcpAITnGb)
 
@@ -30,15 +29,12 @@
 
 [第3集（上）Mid journey imagine指令详解 知识点：Midjourney prompt结构、AR指令.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PoxJbzLcfoggonxOgDCcc8DYnKh)
 
-![](img/6585fdea57d5fa84b4948829f6b63c12.png)
 
 [第3集（下）Mid journey imagine指令详解 知识点：用Midjourney V4和Niji模型 画出卡通风格的绘图.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TjtObkNRfoYPiWxi4K0c2Mrinic)
 
-![](img/023277e062f54fba63b66ba3899f35a6.png)
 
 [第5集 Seed参数 以图作图 知识点：用Seed指令在Mid journey中进行连续创作.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HqPBbrtQto4piwxWMj8cAW8Pn7d)
 
-![](img/39e37f5ded4bdddfaa088f573fb52754.png)
 
 [第4集 CHAOS参数详解 知识点：用Chaos指令激发Mid journey的创造力.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EAelbdHnlo0l7oxVRkecYm4fnBf)
 

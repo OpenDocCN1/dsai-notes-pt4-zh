@@ -16,7 +16,6 @@
 
 [EPRS_Artificial intelligence act and regulatory sandboxes zhening 翻译.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T6qabWQehofEw0xj4EPcIw7xnph)
 
-![](img/9f13f9341c39a8bf2d7e6278f6a0a4c0.png)
 
 [EPRS_Artificial intelligence act and regulatory sandboxes .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PFAxbo0Rkopz7lxl7UAcy9H5nfg)
 

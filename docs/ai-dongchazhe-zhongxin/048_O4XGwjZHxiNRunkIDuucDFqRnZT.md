@@ -660,7 +660,6 @@ async def main(args: Args) -&gt; Output:
 
 > 参考资料：[AI Agent 智能体榜单](https://bluefocus.feishu.cn/wiki/TwW5wNDlfifjLgkE2micxthenNe)
 
-![](img/6fe0d6cbba1d1dbf4943980bd6e71b4d.png)
 
 官方群聊
 

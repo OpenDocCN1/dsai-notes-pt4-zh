@@ -24,25 +24,20 @@
 
 ![](img/392559f7f917c6b9c0db95397b12084a.png)
 
-![](img/3da3c9dac566044f9cf87bd1a82c502e.png)
 
 1.  AI 2.0时代，如何拥抱与驾驭大模型？—— 杨芳贤（LangGPT 联创，腾讯云TVP 最具价值专家）
 
 [LangGPT线下分享0221-杨芳贤.pdf](https://langgptai.feishu.cn/wiki/GKgYwrofkiKMQvklv9zcg7vqnRf)
 
-![](img/f9e9385e1239a908b8e7fc849115551e.png)
 
-![](img/0b2deced25cd367bef9a7becce23d5a9.png)
 
 1.  提示词工程师对于 Sora 文生视频模型的思考—— 刘海 （LangGPT 社区成员，提示词工程师）
 
-![](img/ef467939e2b4775e707115e2fad8c49c.png)
 
 （三）圆桌交流 (1h)：
 
 1.  自我介绍环节:
 
-![](img/e0e41d825b323ca15a633c0ab9a569db.png)
 
 ![](img/77ceef3f9e6ef69a979c7dc1056b8289.png)
 

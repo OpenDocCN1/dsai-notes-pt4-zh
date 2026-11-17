@@ -202,27 +202,21 @@ mv {datapath}/data/coding /data/
 
 +   Vs code 安装 Romote - SSH 插件
 
-![](img/03407d19ed9d4219740a7d280ac35974.png)
 
 +   新建远程
 
-![](img/717108a0ee332e3ca4bc30a34f73b393.png)
 
 ![](img/5da534bead2d57b1b080e280192181e2.png)
 
-![](img/f8771cc8bb9fe420392c88fb1f039f8d.png)
 
 ![](img/34333b3d1705a1aade91bb8fa0f23b0c.png)
 
 ![](img/8d6de178e96e26a1b23b9711a99ae0ba.png)
 
-![](img/5eaf6e6904f2b313652e225c256e5e79.png)
 
 ![](img/651ea62f7068564b08c70f4e25587f4a.png)
 
-![](img/658ae1b46e4d729e3a672d66822588a9.png)
 
-![](img/8bf869142d567d0afbb8bdb5094e7163.png)
 
 ![](img/0b0e6593f79d36c8e50c1b27beed6f73.png)
 

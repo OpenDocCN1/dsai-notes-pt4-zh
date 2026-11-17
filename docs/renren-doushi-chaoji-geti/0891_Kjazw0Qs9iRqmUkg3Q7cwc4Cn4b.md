@@ -74,13 +74,9 @@
 
 **📕与小黄书对比图：**
 
-![](img/1b0cc27349e5af38e2ccd5539649f285.png)
 
-![](img/e8bda0af4709ee700cc2fadd404b0c96.png)
 
-![](img/3291ff10cb08af1fd3af75c32664e43b.png)
 
-![](img/94e1b7336f03302388ffbeba1dda73d5.png)
 
 ![](img/8361e8ffd2fe5de066f6bc1b547a4fb1.png)
 

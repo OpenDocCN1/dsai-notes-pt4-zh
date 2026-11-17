@@ -78,7 +78,6 @@ Leon Zhang, Nov. 25, 2024
 
 #### 发布会前
 
-| ![](img/f4612f12d31daff4d5aff7290fb30da2.png) |
 | --- |
 
 这次我去的早一些，上午下班后就打车过去了，大约 40 多分钟车程。
@@ -176,7 +175,6 @@ Misa 在现场演讲时说，“2024 年是 Rokid 成立十周年。Rokid 的十
 
 这次发布的新品除了 **Rokid Glasses**，还有 Rok**id Station** 2 创作版 以及 Rokid Spatial Link 两款，另外，合作伙伴 BOLON 暴龙眼镜也提到了自己的 AI 影像智能眼镜。因为现场没有透露售价，但据说售价上会有惊喜。
 
-| ![](img/a4d204f3f973c87b23e47a9d073a2749.png) | ![](img/ca82ad5b674ab6b98a332ed50598c5b3.png) | ![](img/4126e2cbed5645b1f57da2e59065f2b4.png) |
 | --- | --- | --- |
 
 Misa 说，“**AR 眼镜是 AI 的最佳载体，从**感知、理解、交互、展现上讲，甚至是一件事。”

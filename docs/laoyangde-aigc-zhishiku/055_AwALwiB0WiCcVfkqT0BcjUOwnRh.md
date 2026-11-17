@@ -294,14 +294,9 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 # 四、种子测试~结果反馈（少部分截图，还有很多）
 
-![](img/858a4ae510b7226e19f16a28464457f5.png)
 
-![](img/5c43fba6fcb158ee51454c17b5209739.png)
 
-![](img/61118f23de8e10d4ea36738492f67e47.png)
 
-![](img/623ca75e34bdcf4e34159565ead85f9f.png)
 
-![](img/7b73be65c79dab3fc26671363864ea51.png)
 
 ![](img/50cc18dcbcfbad61bff37fed9f7cfbf4.png)

@@ -8,15 +8,11 @@ WPS AI已经成功拿到激活码开始体验了，申请方式给大家分享�
 
 ![](img/b8c59f251dfe5f866fdcb7a515ca0808.png)
 
-![](img/37933d134189be24460bb2abd6fc46b3.png)
 
 简单体验了一下对话，我对他的回复还是非常满意的！！！😻
 
-![](img/99239087bd2ff81be287d8f27b80fc01.png)
 
-![](img/9334cea2f01d6a4b855152386bf17ff3.png)
 
-![](img/87065af70ba1629ae9267c082d641e3a.png)
 
 ![](img/28a3cd7d7af47796457e568833f3df55.png)
 

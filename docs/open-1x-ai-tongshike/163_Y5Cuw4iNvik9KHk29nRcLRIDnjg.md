@@ -90,7 +90,6 @@
 
 ![](img/371866a6d0ffaddaef653a6df7226053.png)
 
-![](img/884a14bf55ef47cadce768febc815818.png)
 
 ![](img/43a094475a94f114a90196412f6dd2bf.png)
 
@@ -106,7 +105,6 @@
 
 ![](img/ae4a49acb86bd6969fb206b804dec19a.png)
 
-![](img/4253411f6b2a5b48a478b0faa6d987f8.png)
 
 ![](img/908e9cb9a170a8c3b04b2eb438148d94.png)
 

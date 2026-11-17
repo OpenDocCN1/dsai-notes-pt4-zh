@@ -4,9 +4,7 @@
 
 ![](img/7fc2dfbbfec84bf59a1e7f91b39c5506.png)
 
-![](img/e96c6f8101be0521d22035152f7419dc.png)
 
-![](img/d65eaa21f4294af18c9389b449b233e3.png)
 
 ![](img/bffc45207a169adb6653927fcedd9364.png)
 
@@ -22,9 +20,7 @@
 
 [《Program of Thoughts Prompting Disentangling Computation from Reasoning for Numerical Reasoning Tasks》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F9jVbhN04o5WItxCWcOc7JtXn5e)
 
-![](img/78a12e9787636c4bdaf0b4f5fc57af84.png)
 
-![](img/a8ed0a4e2a530b5c1f66bd47aad6a72d.png)
 
 ![](img/0c8fa4658f9cc3492d5bf2879c5b984e.png)
 
@@ -32,9 +28,7 @@
 
 [《Measuring and Narrowing the Compositionality Gap in Language Models》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ULOtb2Lx1osktoxaxEzcd64VnxA)
 
-![](img/2b7142ea641af5c0947d83fa20f31b56.png)
 
-![](img/80da8cdb0d442ae287ccb3fe142f7833.png)
 
 ![](img/9a251cfa910fc0e458efdc93fc40fe09.png)
 
@@ -44,7 +38,6 @@
 
 突[破了思维链局限: L2M PROMP](https://zhuanlan.zhihu.com/p/655344565)TING让LLM迈向更复杂推理——时空猫的问答盒，北京大学 微电子学与固体电子学硕士https://zhuanlan.zhihu.com/p/655344565
 
-![](img/0de426e7fd38f665520fe5565a3a56d0.png)
 
 ![](img/4f1024254e9deabf2038658be9c39c9f.png)
 
@@ -58,11 +51,8 @@
 
 ![](img/2a710d19b7195468e4a93d1bfc8dac8e.png)
 
-![](img/ebf17c4606d6222dc005c9ab513d37ba.png)
 
-![](img/9254e27185ae6702bf21342b545abcc4.png)
 
-![](img/63021529f3b34c61bf0a5d2b78af3002.png)
 
 步骤一：准备“母体”提示词
 
@@ -174,11 +164,8 @@
 
 ![](img/acfa4204db52ca8d727fecee99419e7f.png)
 
-![](img/2a0ae0af886d2963b3aef042518f59a0.png)
 
-![](img/14888c88f6168c38b5b1dfef0ad1f96f.png)
 
-![](img/62e0468142b4cff0cc7d7783c1beaa60.png)
 
 ![](img/aee79a19bbc6ab1fe67c3b89a1405c53.png)
 
@@ -186,13 +173,9 @@
 
 ![](img/f05739d5447f4463f63406ca41767fdd.png)
 
-![](img/ee76df83aa06314221ad087b43750b71.png)
 
-![](img/b749554be801f3c25c27acfa14b88d40.png)
 
-![](img/139ee683b29d42e0a4ce6cede28b712c.png)
 
-![](img/77641125f58de04d93ab1dc7b4bbacc4.png)
 
 ![](img/b03dce05b171c7b26367232ca670bb2b.png)
 
@@ -206,7 +189,6 @@
 
 ![](img/0349fc7a7e607f838b6d2dea5d3611ef.png)
 
-![](img/e3f9f1a917ebd8b52d483846b5eae0ac.png)
 
 **通用办公类**
 

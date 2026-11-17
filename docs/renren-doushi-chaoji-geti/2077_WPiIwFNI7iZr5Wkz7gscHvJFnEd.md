@@ -162,11 +162,9 @@
 
 ![](img/bcd31f9d635c0e4671401253de145aad.png)
 
-![](img/78b23fc55310a8f680523facf0a3be9e.png)
 
 ![](img/7978d7a6bdb2ba2f470ec6995262a668.png)
 
-![](img/0b505a7a07be3166c0b17d91b39e50df.png)
 
 ![](img/e49aa9fe98ba04bd69f0fd9baf03517e.png)
 

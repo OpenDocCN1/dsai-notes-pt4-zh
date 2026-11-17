@@ -182,7 +182,6 @@ submit.to_csv(&#x27;submit1.csv&#x27;, index=None)
 
 在提交结果处提交，提交 **submit.csv **文件，在排名结果页查看自己的成绩排名。
 
-![](img/96bd5ec4f6cb1db968a6fcc56a398f0b.png)
 
 # 任务2：深度学习**Baseline**
 

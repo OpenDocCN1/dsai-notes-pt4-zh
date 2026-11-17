@@ -370,11 +370,9 @@ def show_generated_images(images, epoch):
 
 1.  **Epoch 10**：生成的图像有些“数字轮廓”，但形状不标准
 
-![](img/6c7ac8c9f66870cfc1d4a6ad870c9c66.png)
 
 1.  **Epoch 30+**：许多数字接近真实，但还有些变形
 
-![](img/7d690ea5a7d0f720b2841ce8cf569ab0.png)
 
 1.  **Epoch 50**：图像清晰可辨，数字基本上都符合 MNIST 风格
 

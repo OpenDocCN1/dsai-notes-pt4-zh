@@ -18,7 +18,6 @@
 
 > 提醒：注意API key的保密，不要随意泄漏
 
-![](img/752998907090e59c0eaf6c9fa1ec52cd.png)
 
 ![](img/fa1999e659b074ababd3289280e73bbc.png)
 
@@ -56,11 +55,8 @@
 
 #### 自定义推理接入点
 
-![](img/e5285a7b028d3704c834faac66c08399.png)
 
-![](img/a034f9bcc6984cb640d2f63122c57592.png)
 
-![](img/1fe9de2e1501df815a515ce73f9dffa1.png)
 
 ![](img/d18ad42e489520d84d5cb42a7b26d1bf.png)
 
@@ -76,6 +72,5 @@
 
 [参考文档](https://www.volcengine.com/docs/84313/1254467)
 
-![](img/c76b94a030f31562b1ebef812a84bfed.png)
 
 ![](img/51051db36286086900980ee9620bd210.png)

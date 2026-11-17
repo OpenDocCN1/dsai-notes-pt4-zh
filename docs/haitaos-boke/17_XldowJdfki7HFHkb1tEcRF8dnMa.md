@@ -47,7 +47,6 @@
 
 1.  使用 Claude 视觉模型
 
-![](img/160cb6fc4e07392a89f00b7aa73800c5.png)
 
 1.  调用API
 

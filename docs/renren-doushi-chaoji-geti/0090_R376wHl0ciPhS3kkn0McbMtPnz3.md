@@ -642,7 +642,6 @@ curl -X POST https://note.limyai.com/api/openapi/publish_note \
 }
 ```
 
-![](img/53b599ed5cc1fb1ba5e36f1d54ff453c.png)
 
 +   发布草稿预览
 
