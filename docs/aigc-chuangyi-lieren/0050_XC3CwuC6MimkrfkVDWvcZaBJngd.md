@@ -26,7 +26,6 @@
 
 > 链接：https://a16z.com/100-gen-ai-apps-4/
 
-![](img/400231123e6241abc71cd38a099d1b58.png)
 
 ![](img/bf7c0be67e4857dbdb9889c5d85d74fd.png)
 
@@ -66,7 +65,6 @@
 
 ![](img/b317059d954707c1bb91654ce9b2179f.png)
 
-![](img/e52aa3a1bde2e9cabebf3f5e1d0e8e0d.png)
 
 ![](img/2f03246209c4a7116b8873bd221aa97f.png)
 

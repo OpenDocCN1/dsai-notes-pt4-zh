@@ -10,7 +10,6 @@
 
 1.  访问[控制台](https://console.cloud.google.com/)，登入谷歌账号，该授权的授权，该同意的同意
 
-![](img/01bb034dbfa1e05d1ef70df236ab6cac.png)
 
 1.  打开Shell，该授权的授权，该同意的同意
 
@@ -24,7 +23,6 @@ bash &lt;(curl -sL https://raw.githubusercontent.com/3753910346/geminiscripts/re
 
 1.  跟着脚本引导走就好了，一个号最多能创建12个项目，更多需要申请，一个项目一天可用100次2.5Pro
 
-![](img/775558fe972027ec977ba91abbbac563.png)
 
 1.  等待创建完成后脚本输出密钥信息，跟图上一样就是创建好了，使用逗号进行分割
 
@@ -36,7 +34,6 @@ bash &lt;(curl -sL https://raw.githubusercontent.com/3753910346/geminiscripts/re
 
 如果你关闭了依旧截断空回复，请尝试更换破限或者检查角色卡是否为未成年
 
-![](img/09fe73d59a7bafddead67c2c0cc921cc.png)
 
 题外话，如果你连不上谷歌，可以试试看关魔法直连我的反代，使用方法如图
 

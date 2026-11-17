@@ -22,7 +22,6 @@
 
 *Sora 尚未向公众开放。
 
-![](img/052515f19ce6f7f906d3424885a5773f.png)
 
 [WeChat_20240225083832.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wt51bNm3zoyvZ7xNK4UcvB7lnuh)
 
@@ -40,7 +39,6 @@
 
 “一名水肺潜水员发现了一艘隐藏的未来沉船，其中有控制论海洋生物和先进的外星技术” 视频由 Sora 生成。
 
-![](img/c6418adbbfbcb545825df415b356d6ed.png)
 
 [WeChat_20240225084104.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NN0NbMCfyoU8NWx5VihcL8Qenjh)
 
@@ -208,13 +206,11 @@ Tour of an art gallery with many beautiful works of art in different styles.
 
 Step-printing scene of a person running, cinematic film shot in 35mm.
 
-![](img/276ade76d76f0bb7b67ed5dafa4dde3e.png)
 
 [openai-sora-video (22).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OilHbbZkIoZfgGxHijOckggXnJf)
 
 A close up view of a glass sphere that has a zen garden within it. There is a small dwarf in the sphere who is raking the zen garden and creating patterns in the sand.
 
-![](img/fe541131844c95e068325814ff2aa4ff.png)
 
 [openai-sora-video (23).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LVaGb4jw3oQGgXxTTqmcDySrnlh)
 
@@ -226,7 +222,6 @@ A corgi vlogging itself in tropical Maui.
 
 An adorable happy otter confidently stands on a surfboard wearing a yellow lifejacket, riding along turquoise tropical waters near lush tropical islands, 3D digital render art style.
 
-![](img/2031c86d4280a8298c0d67f75cdad567.png)
 
 [openai-sora-video (25).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ie1PbHeA7o3M22xgbAxcNZ33nK2)
 
@@ -250,31 +245,26 @@ The camera directly faces colorful buildings in burano italy. An adorable dalmat
 
 The camera follows behind a white vintage SUV with a black roof rack as it speeds up a steep dirt road surrounded by pine trees on a steep mountain slope, dust kicks up from it’s tires, the sunlight shines on the SUV as it speeds along the dirt road, casting a warm glow over the scene. The dirt road curves gently into the distance, with no other cars or vehicles in sight. The trees on either side of the road are redwoods, with patches of greenery scattered throughout. The car is seen from the rear following the curve with ease, making it seem as if it is on a rugged drive through the rugged terrain. The dirt road itself is surrounded by steep hills and mountains, with a clear blue sky above with wispy clouds.
 
-![](img/39f2486c22a9ad13f278bb7e1883bff7.png)
 
 [openai-sora-video (29).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Pfv3bCzFGo0T3lxt41Pc6euvn9g)
 
 A beautiful homemade video showing the people of Lagos, Nigeria in the year 2056. Shot with a mobile phone camera.
 
-![](img/b18187cf5dc89b48d1a81f1d95ac3d44.png)
 
 [openai-sora-video (30).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UMRrbzH5UoTOHvxdY50cFPEknOe)
 
 A woman wearing purple overalls and cowboy boots taking a pleasant stroll in Mumbai, India during a winter storm
 
-![](img/9a3cb09bdfb1f6a78aba9333c4cc009f.png)
 
 [openai-sora-video (31).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AFi5b4WdjoP2pdxi0ddcIA9Snie)
 
 A litter of golden retriever puppies playing in the snow. Their heads pop out of the snow, covered in.
 
-![](img/0a49fbffbfa75c9a8c53eb485fe350ce.png)
 
 [openai-sora-video (32).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O4QZbFZntoj2E4xgdNKciqhOnCd)
 
 A bicycle race on ocean with different animals as athletes riding the bicycles with drone camera view
 
-![](img/27c892f565cf1ab620d3ecbcf72a1c33.png)
 
 [openai-sora-video (33).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CKUJb356Ro3LYSxuFfTcpGaPnEe)
 
@@ -310,13 +300,11 @@ An image of a realistic cloud that spells “SORA”.
 
 In an ornate, historical hall, a massive tidal wave peaks and begins to crash. Two surfers, seizing the moment, skillfully navigate the face of the wave.
 
-![](img/48d81d269a914477ee25f8d930b70d62.png)
 
 [openai-sora-video (39).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N5nZbWGglo6D9SxQ65UcftP1n74)
 
 A gorgeously rendered papercraft world of a coral reef, rife with colorful fish and sea creatures.
 
-![](img/015c94854f5fc9fe39bb0a4d715d62cf.png)
 
 [openai-sora-video (40).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K0Uzbjz4XoqxLtxROSbcgCTVnMg)
 

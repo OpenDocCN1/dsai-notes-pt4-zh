@@ -196,7 +196,6 @@
 
 # ChatGPT for product 产品篇
 
-![](img/b7a4bf618a8e7edbb78174abcd3ef6ac.png)
 
 > https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-product
 
@@ -408,7 +407,6 @@
 
 # ChatGPT for engineers 工程师篇
 
-![](img/7b5a02c2d6540fa25788e14107cb6d2f.png)
 
 > https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-engineers
 
@@ -628,7 +626,6 @@
 
 # ChatGPT for sales 销售篇
 
-![](img/34ca244c010573ac0c7ceafeef31a504.png)
 
 > https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-sales
 
@@ -848,7 +845,6 @@
 
 # ChatGPT for marketing 营销篇
 
-![](img/c849ab7dca50855858abd6ce3a97f55a.png)
 
 > https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-marketing
 
@@ -1068,7 +1064,6 @@
 
 # ChatGPT for IT IT篇
 
-![](img/83e66997254ba6dbb38dd82c28e2e942.png)
 
 > https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-it
 
@@ -1280,7 +1275,6 @@
 
 # ChatGPT for HR 人力资源篇
 
-![](img/814d55d26edb833b4f1589204a8bf944.png)
 
 > https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-hr
 
@@ -1492,7 +1486,6 @@
 
 # ChatGPT for managers 经理人篇
 
-![](img/0d4671b5a77ae5cc46fef5fd907d64ca.png)
 
 > https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-for-managers
 
@@ -1672,7 +1665,6 @@
 
 # ChatGPT for finance 财经篇
 
-![](img/6ae8e63c05d086ce4c593f8657380381.png)
 
 > https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-finance
 
@@ -1884,7 +1876,6 @@
 
 # ChatGPT for customer success 客户成功篇
 
-![](img/5e9f4046956bb9f13b48313753ccb3fe.png)
 
 > https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-customer-success
 

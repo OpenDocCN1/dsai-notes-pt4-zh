@@ -86,39 +86,22 @@
 
 +   南瓜图：https://github.com/lllyasviel/Fooocus/discussions/14
 
-![](img/950d8580e0790f5df6bc72e1f80f6c97.png)
 
-![](img/d31c68e38e052c2f57e3f784668751c5.png)
 
-![](img/bcdf6a4e36b9fd777b9161e042f3c768.png)
 
-![](img/eab7f2bd07cb6d5e24db48e150bed1ba.png)
 
-![](img/2b33df9b29a52237fdfb55600c59ec12.png)
 
-![](img/2b088ed3d3fc3b0309089c7292740bf8.png)
 
-![](img/b24f7a2a8d38b208a1815089ddb77fa5.png)
 
-![](img/1690137aff9ffea2d74101411e99b80a.png)
 
-![](img/8127b938f4f430a9fd5ab6daf0898dd1.png)
 
-![](img/26c7a07d77da1e8a8bae74c420dae18d.png)
 
-![](img/122fafeb7eded146f6cc30ad5129d8b8.png)
 
-![](img/75c575d0bf2cd85527bcb30075836431.png)
 
-![](img/08f4ba58b7e5a9014ae32dcc2e72c98a.png)
 
-![](img/32d4f0714d32c0b31701cf0bd8893c7c.png)
 
-![](img/ee65949262c0c370963e3cf7d6a65809.png)
 
-![](img/d77ba64c3bd2bb6624e7b6481416e87e.png)
 
-![](img/edbed3127defc34897745b5ffb81ecf0.png)
 
 ![](img/0456213826f4135c847effb81a8cf603.png)
 

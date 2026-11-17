@@ -84,7 +84,6 @@ LiblibAI 2.0，已经不能叫它“工具集”**了，它现在给我的感觉
 
 ![](img/41d6bf92248c5de9cf2cc845c3741432.png)
 
-![](img/07fc7078d3d22cb879d39bdf9815cd1e.png)
 
 ![](img/af4f49a9c1b9c8746f21610977fc9d38.png)
 
@@ -100,7 +99,6 @@ LiblibAI 2.0，已经不能叫它“工具集”**了，它现在给我的感觉
 
 ![](img/f3131c158a0916c74d408e5fae9643b1.png)
 
-![](img/fecf4c5eab5f532d0b7cf9f84cd01f9c.png)
 
 ![](img/831616489f602c71e0b3a43c77b70c88.png)
 
@@ -146,7 +144,6 @@ LiblibAI 2.0，已经不能叫它“工具集”**了，它现在给我的感觉
 
 比如这个**天使降临**，我传了个生成的小女孩的图片，点一下应用。好家伙，大约1分钟后，就生产了小女孩长出翅膀的视频，效果非常惊艳。
 
-![](img/de3ffa921db8a139e6d33ab7d5bc2b89.png)
 
 [83fdee2589949aa142fe257baca93ace7b4e67171664810fb4c7cd564ae7df69.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NDu4baTS1oOmqgx0ulwcVfClnlh)
 
@@ -158,7 +155,6 @@ LiblibAI 2.0，已经不能叫它“工具集”**了，它现在给我的感觉
 
 我还试了“**如烟飘散**”、“**瞬间冻住**”，视频能很快按照模板的效果生成出来，这些玩起来也特别有意思。
 
-![](img/c3046c37ad1824578ca7f5c70d36c761.png)
 
 [363c74c0d2f8d3809735da4b4094e671fb4e2f5d4f268f0c4a3ce1e6b97fa6e5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lo1XbraVko5uLexTRV5cLxNBnpg)
 

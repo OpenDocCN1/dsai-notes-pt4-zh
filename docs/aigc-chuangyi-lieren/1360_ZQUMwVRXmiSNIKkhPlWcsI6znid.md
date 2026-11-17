@@ -58,7 +58,6 @@ Nano Banana最初是匿名出现在LMArena的AI模型评测平台上的，在大
 
 这光影，这质感，没得说！
 
-![](img/3718c0662791086b0c738aaee4e57fe7.png)
 
 ![](img/6e5acf9d019d7304c7a6d95b936b5c33.png)
 

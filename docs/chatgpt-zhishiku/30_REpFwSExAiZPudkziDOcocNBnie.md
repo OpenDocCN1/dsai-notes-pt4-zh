@@ -10,10 +10,7 @@
 
 找之前记得把手机的地区、语言、IP 都伪装成美国，并确认自己的账号没有任何滥用行为。（客服有一定几率直接封号）
 
-![](img/3d0eeaa71df7af6454c53fbb298c3cb8.png)
 
-![](img/268aef07559d5eb40a0aca3ddb93bf8c.png)
 
-![](img/3e26157c7a812a9a429b9a80fac517f0.png)
 
 ![](img/747e9af74954e4095e26adb7d2f8e153.png)

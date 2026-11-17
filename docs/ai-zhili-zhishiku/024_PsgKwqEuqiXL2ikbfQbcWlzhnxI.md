@@ -18,7 +18,6 @@ ICO官网的人工智能板块：https://ico.org.uk/for-organisations/uk-gdpr-gu
 
 https://mp.weixin.qq.com/s/wIPs-kuhQeg9kGkJ5qU05A
 
-![](img/21249bb6f0f01d292c0b58e7f49028c0.png)
 
 [AI-Judicial-Guidance.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AMGRbD5XgoUxFMxt2TVcHsSinZM)
 

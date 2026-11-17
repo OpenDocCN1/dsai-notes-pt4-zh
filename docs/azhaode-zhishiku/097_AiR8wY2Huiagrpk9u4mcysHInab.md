@@ -120,7 +120,6 @@
 
 AI试衣间新势力周7大趋势主题延展
 
-![](img/d4e90ba0de1857db4f9efbed39f8b501.png)
 
 ![](img/9fb3e77306bdb0275386f83ca65c7c2a.png)
 

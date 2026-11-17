@@ -589,7 +589,6 @@ Response&lt;DocumentModel&gt; operationResponse = await operation.WaitForComplet
 
 ![](img/7df19023a3c7829ae0cc17e12faccb8f.png)
 
-![](img/16d0a2f8423ed9f5d4fb5d31c4bbdcd1.png)
 
 +   ** 将每个文件的 **JSON 输出保存到 c:\files
 
@@ -633,17 +632,14 @@ Response&lt;DocumentModel&gt; operationResponse = await operation.WaitForComplet
 
 +   将项目链接到 form@labinstanceid 资源。
 
-![](img/02dae6c397d8bb260e3a88abf9b22c45.png)
 
 ![](img/c0c486693a1ed55787f1b5b11c8f5b86.png)
 
 ![](img/3c6a724c41e145216e93cfdbf9c0ecf0.png)
 
-![](img/05d8a8ed55352b5a0c2c50a8dd7b2176.png)
 
 +   使用 qualityassurance@labinstanceid 存储帐户中的 documents-training 容器。
 
-![](img/69dd7390ff8df1d134cbdd5d1e16217c.png)
 
 +   使用下表中显示的标签。
 

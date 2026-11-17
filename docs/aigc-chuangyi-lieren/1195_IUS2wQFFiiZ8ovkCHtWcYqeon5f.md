@@ -38,7 +38,6 @@
 
 ![](img/3f016a842a2c29da12747de4b82797b8.png)
 
-![](img/9b914969704eea0c3fa6fe91b417c36b.png)
 
 # 01 Self-play RL开启AGI下半场
 
@@ -108,7 +107,6 @@ Q：不能支持模型在GPT-4o 的基础上大幅跃升的原因是什么？
 
 目前还不知道 OpenAI 会发布什么进展，但草莓已经造势很久了，我感觉也应该还是在强化学习这条路线下。代码和数学能力肯定是大幅度提升的，而提升幅度不会亚于 Claude-3-Sonnet 到 Claude-3.5-Sonnet 的幅度。OpenAI 会不会发布新的模型还不好说。
 
-![](img/7e73ff365d934215b4372beb620c08fe.png)
 
 # 02 RL是新的Scaling Law
 

@@ -8,7 +8,6 @@
 
 > ⏰ 剪存时间：2023-09-13 17:45:55 (UTC+8)
 
-![](img/8ab7d01288e96895ee8e7172df759179.png)
 
 # **一、前言**
 
@@ -22,7 +21,6 @@
 
 Midjourneny除了付费，基本上不会有其他问题，适合广大的新手同学们使用，而且出图效果也不差，只要控制得当，也能在我们设计工作场景中得到大量的应用。
 
-![](img/f8ad89ed51308dea55d4f6858159a475.png)
 
 但是，要说谁最适合应用工作流中，还得是老大哥【StableDiffusion】，原因大家都知道（controlnet插件简直强的离谱）。Midjourneny除了控制性差，效果还是很不错的，关键是也简单。好了，废话太多了，小孩子才做选择，我们都用！
 
@@ -50,11 +48,8 @@ Midjourneny除了付费，基本上不会有其他问题，适合广大的新手
 
 把上述图生文的4组关键词全跑一遍，测试的实际效果如下：
 
-![](img/d2aebade40e860d14b81736cfb69ccb3.png)
 
-![](img/0cd34c62428062dbc84ac1151de25ed8.png)
 
-![](img/ccd1b32b65e3a1db039f5a0472841f2b.png)
 
 ![](img/8e3d9e2cd8627dc22ece444ccc846679.png)
 
@@ -88,13 +83,11 @@ green tea moisturizing essence, in the style of realistic hyper-detailed renderi
 
 比如上述使用图生文的那张图片（也是经过处理的），利用PS Beta工具，把原图上的文字都清除掉，我们就得到了一张无文字污染的图片。这种图片上传给Midjourney就不会有任何问题。
 
-![](img/0e44febd24422d38dfebbc5eeb8cb242.png)
 
 我们使用这张图片来测试出图效果吧，垫图+关键词：
 
 【图片链接】+ green tea moisturizing essence, in the style of realistic hyper-detailed rendering, sparkling water reflections, matte photo, playful illustrations, yankeecore, high-angle, light white and light green --ar 4:6 --v 5.2 --iw 2
 
-![](img/836a79c441e30aefec720e4e4e177741.png)
 
 不看产品，看图片效果及元素，已经很接近原图了，而且有些图的效果甚至在细节上比原图还丰富。到这一步其实就可以拿着我们的产品进行后期的合成，这海报就结束了。不过我教大家另一种做垫图的方式，扩展下思路。
 
@@ -102,15 +95,12 @@ green tea moisturizing essence, in the style of realistic hyper-detailed renderi
 
 在此处还需要注意一点的是，垫图的比例最好与最终生成图的比例一致，相比大家都遇到黑边的情况吧，就是垫图不规范导致的，这个我们是可以控制的，切记！
 
-![](img/10c9d4a5bf886bc0d720d86df22b9ee3.png)
 
 接下来重复上面的操作，用这张垫图生成效果图：
 
-![](img/5b33406ad53bc3db380467cae06e0689.png)
 
 （图像权重 --iw 1默认）
 
-![](img/6d9dbe6e93abf5ce5d4d3032e62f141e.png)
 
 （图像权重 --iw 2）
 
@@ -120,7 +110,6 @@ green tea moisturizing essence, in the style of realistic hyper-detailed renderi
 
 把产品初步叠加上去，盖住AI原有的产品即可。
 
-![](img/b06cbee9caa13c4ac6178ed6a1857bd9.png)
 
 使用“创意式填充”融合产品底部与水面的接触面，最后整体润色调整一下，那合成部分即可完成。
 
@@ -240,11 +229,9 @@ lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits
 
 可以选择官方的模板生成，效果真不错，看我上面写了一大堆教程，这工具1分钟就搞定了，啪啪啪打脸🥲🥲
 
-![](img/1ad8f02cc514c15ee0f79610a57a9a4f.png)
 
 这个工具还可以手动添加一些元素，然后生成....也可以自己上传元素，要是不收费该多好呀!
 
-![](img/29222477970336e54764c46e92328d5e.png)
 
 手也可以添加，这才是人工智能呀（ps：图中我随意生成，大家可以深入研究试试）
 
@@ -256,13 +243,10 @@ lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits
 
 现在美图秀秀也有这个功能，每天15次免费次数，冲，不用白不用！
 
-![](img/1327afc70a2d47ee1b52ff3276c9d350.png)
 
-![](img/295af6c8a11fa0af2b9f9d9c253d24e1.png)
 
 上传图片就给我们生成了这些场景图，也是有模板的，不过与Flair对比还是有一定的差距，不论是出图效果还是功能，期待后续的优化！
 
-![](img/15a96bfbb1959035abd6e35772083a10.png)
 
 此类电商AI工具有很多，大家在网上一搜一大堆，我这里只列举两个出来，没有任何商业行为，纯个人分享哦~
 

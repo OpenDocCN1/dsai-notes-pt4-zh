@@ -4,9 +4,7 @@
 
 ![](img/db0dfd62236c8fafaeb9aa582a645fbb.png)
 
-![](img/c1a57e849adc432100a4662b484ed66b.png)
 
-![](img/a9617cc6f6c1165836e33992f7aa4e94.png)
 
 ![](img/a316fa6f0b3fd268972a51a95878ea01.png)
 

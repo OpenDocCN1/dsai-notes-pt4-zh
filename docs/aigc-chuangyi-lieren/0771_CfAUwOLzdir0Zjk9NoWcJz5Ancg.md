@@ -78,19 +78,16 @@ Sora
 
 Dreamina
 
-![](img/409c2f453d44d0f2cecaa78a510effad.png)
 
 [A young man at his 20s is sitting on a piece of cloud in the sky, reading a book._2024-03-18.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wd65b3DrsoCPWMxbqQkcI1HXnyh)
 
 Sora
 
-![](img/6de17794654b330f9743fce058e36277.png)
 
 [man-on-the-cloud.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YNUebcSoPoZnlcxXTvfcn2IlnTe)
 
 Dreamina
 
-![](img/4e6b85166c699cb0f92f65a4f1c0c2d6.png)
 
 [Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afterno.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XUZgb9SaQonlrtxl1TlcLjSfnKd)
 
@@ -140,7 +137,6 @@ Sora
 
 Dreamina的核心优势在于其出色的功能实现能力。在测试过程中，尝试了多种复杂的场景，包括人物和动物的行走、汽车驶过、烟雾和风的流动，以及三维物体的表现。
 
-![](img/a8e3cc2825d1acde21d0f9ec09b5ed41.png)
 
 [three men on top of a mountain, red clouth, in the style of precisionism influence, photo-realistic landscapes, 32k uhd, romantic_ dramatic landscapes, swiss style, outdoor scenes, panorama_2024-03-18.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PXhxbSypUogqHXxudgOc0tWYnpg)
 
@@ -170,11 +166,9 @@ Dreamina展现出了令人印象深刻的画面识别能力，尤其是在处理
 
 尽管Dreamina在功能实现上表现出色，但在稳定性方面还有待提高。
 
-![](img/0f74c434716bf98cc07425160483900d.png)
 
 [Anthropomorphic a small potato, wearing a thick bright down jacket, skiing in the cold winter, lovely appearance, 3D,C4D_2024-03-18.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MHgMbtPApoPK5oxEwJdcyUaInuc)
 
-![](img/58b4cdd4a6d1aa93befee641779092e4.png)
 
 [a teddy style pig in a waterslide with a pair of sunglasses in the water park, photorealistic, Ultra HD 4K, cinematic style with all different water slides in the background of the scene_2024-03-18.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VCLxbkCAUo9rQTxhSvAc1JE6nSc)
 
@@ -238,7 +232,6 @@ Dreamina的创新之处在于其首尾帧相连的新功能。这项功能允许
 
 这一功能的推出，为故事叙述和视觉表达提供了更多的可能性。搭配上其他编辑工具，如补帧和缩放等功能，Dreamina能够帮助创作者构建出更加丰富和动态的视觉故事。
 
-![](img/979a36f76a97ea21244a4028463c19b9.png)
 
 [Pet Photography.The Ragdoll cat is swimming, under the water, it has yellow and white fur,smiled, surrounded by flowers, art by Rinko kawauchi, in the style of naturalistic poses,fisheye lens, soft light, clear wat.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FNHqbNaeNogyewxSaSccaPbOnDd)
 

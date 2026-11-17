@@ -222,9 +222,7 @@
 
 ![](img/527a7da6ece7b8499901c36ceb8197fa.png)
 
-![](img/18c65f2acd2df103e917af83fcd6f548.png)
 
-![](img/6a2d040b34f156d6d196ecee3a90f093.png)
 
 ![](img/85826de2406fcd6c280d12612d5ce76d.png)
 

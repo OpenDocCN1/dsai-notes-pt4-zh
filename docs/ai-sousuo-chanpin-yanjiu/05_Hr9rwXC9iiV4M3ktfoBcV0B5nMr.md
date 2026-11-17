@@ -604,7 +604,6 @@ https://arxiv.org/abs/2312.10997
 
 ## Gemini Token
 
-![](img/cc66d31597b0f9dfb1b000ada1fac650.png)
 
 ![](img/25d50cb07c412bc452d64f7588cecafb.png)
 
@@ -828,7 +827,6 @@ https://arxiv.org/abs/2312.10997
 
 +   王小川那篇除过评价李彦宏这段，其他没太看明白，一直打太极，还是没有朱啸虎和杨植麟有个性
 
-![](img/7b1fdaac2868319ee90e38f0aa265b36.png)
 
 ![](img/f0f3d9ae141ccee411e0dc1f41d6bed5.png)
 

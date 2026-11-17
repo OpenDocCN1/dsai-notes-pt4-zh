@@ -22,9 +22,7 @@
 
 ![](img/86a5560708e3fdb39dd172b49412012b.png)
 
-![](img/74f43fcaec43796e85e5430a27f11cdc.png)
 
-![](img/f260a55ba9ba66f519dce9735b63523e.png)
 
 ![](img/0a823c3b933e426cdd6cfcf8aec0b94b.png)
 
@@ -32,7 +30,6 @@
 
 ![](img/8907094e417d69fb239e886bcfca1a46.png)
 
-![](img/3d18895bd057d61eb0d0ea4fef005ab4.png)
 
 ![](img/0afa826248cd47561586c390965c0496.png)
 

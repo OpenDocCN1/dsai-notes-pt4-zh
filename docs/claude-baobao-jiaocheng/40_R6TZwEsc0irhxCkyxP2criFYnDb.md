@@ -30,7 +30,6 @@ Replace With（替换）：
 &lt;center&gt;&lt;img src=https://files.catbox.moe/
 ```
 
-![](img/606bde8aec763301adf7594f784608e4.png)
 
 Script Name：photo1（名称随意，你开心就好）
 

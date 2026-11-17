@@ -64,7 +64,6 @@ Illustration, Cyberpunk , an old man in a jacket picking up garbage on the stree
 
 In Chinese oil painting , a young girl with a white hat is on a rural road flanked by sunflowers, with soft light, warm colors, and perspective,8k,hyper quality,high detail,masterpiece --q 2 --v 5
 
-![](img/aada13cf4e0864fefc1343bf046e0833.png)
 
 **2）抽象描述法： **这种方法不需要描述具体的事物，只通过描述一个场景的情绪氛围和故事来进行出图
 
@@ -160,7 +159,6 @@ soft color,model, fineluster,clean background, 3D
 
 Female doctor, wearing a nurse's cap and mask, wearing a white coat, and **wea**ring a stethoscope,Look ahead,soft color,model, fineluster,clean background, 3D --v 5
 
-![](img/b11ae835a528c1534f5c9db393970162.png)
 
 例子2：
 
@@ -168,7 +166,6 @@ Female doctor, wearing a nurse's cap and mask, wearing a white coat, and **wea**
 
 Girl, brown hair, wearing glasses, holding a book,soft color,model, fineluster,clean background, 3D --v 5
 
-![](img/ef9478bc005c2a02a44116b6f6d54423.png)
 
 例子3： 想要更风格化一点，可以加上【by pop mart】
 
@@ -186,7 +183,6 @@ Girl by **pop mart, **brown hair, wearing glasses, holding a book,soft color,mod
 
 换了参考图，同样的关键词，出图↓↓↓
 
-![](img/4fb13bf28a7b0a464942eb3da7984439.png)
 
 做头像：当然，如果你想用真人照片来生成卡通头像，就用【真人照片】+【照片描述】+【方法1的关键词】来处理即可，下面是我拿自己照片头像生成的，还不错。大家自行尝试。↓↓↓
 
@@ -216,7 +212,6 @@ Girl by **pop mart, **brown hair, wearing glasses, holding a book,soft color,mod
 
 ③换个灯光：3d,air blower, neon cold lighting ,blender
 
-![](img/1fc6b16178f71176dc571f78eb4ee208.png)
 
 ④把所有的都搞里头试试~
 
@@ -242,19 +237,16 @@ Girl by **pop mart, **brown hair, wearing glasses, holding a book,soft color,mod
 
 **low poly **，airplane
 
-![](img/68b42993413b976c3951b754442d96dd.png)
 
 例子②：
 
 **Low poly **, Swimming pool, volleyball, swimming circle
 
-![](img/720472ec00d890be18d5621f2f00a8d7.png)
 
 例子③：
 
 **low poly, **Office area, computer, keyboard, mouse
 
-![](img/e2241b8017e29b52c791f0fe8802f2e0.png)
 
 效果就不多说了，有目共睹，这么简单粗暴，赶紧玩起来吧！low poly
 
@@ -276,19 +268,16 @@ app icon定义图标，dribble，Pinterest是给定参考，Minimalis是极简�
 
 例子： **app icon **, **isometric 3d **,Water cup,pinterest,dribble,Clean background,minimalist --q 2 --c 100
 
-![](img/d050ca0ad37f7c2008eb067a48d17fd1.png)
 
 ②渐变图标：gradient
 
 例子：app icon, **gradient, **Water cup,pinterest,dribble,Clean background,minimalist --q 2 --c 100
 
-![](img/ffeda6c5f38f9204e6e57602090141e7.png)
 
 ③扁平图标：flat
 
 例子：app icon, **flat **,Water cup,pinterest,dribble,Clean background,minimalist --q 2 --c 100
 
-![](img/8caefd6e8e1d2784dca7575466d928f8.png)
 
 # **五、扁平插画**
 
@@ -308,7 +297,6 @@ Se**ver**al** middle sch**ool students discussing problems in the classroom,,Blu
 
 译：几个中学生在讨论问题,蓝色调
 
-![](img/9d893ac343a3fbd48b97dd8980ae40c6.png)
 
 例②：
 
@@ -316,7 +304,6 @@ Several children playing games on the grass,vibrant colors,solid one color backg
 
 译：几个小朋友在草地上玩游戏
 
-![](img/cfa51a954fd6d38fd952e1bde6e3825d.png)
 
 例③：
 

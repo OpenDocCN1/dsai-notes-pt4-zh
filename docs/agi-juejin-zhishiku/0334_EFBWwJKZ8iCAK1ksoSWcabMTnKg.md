@@ -74,11 +74,8 @@ toB/toC、内容/工具/社区、国内/出海
 
 > 大模型是棵分叉无数的大树，先搞清楚是什么，才不会鸡同鸭讲
 
-![](img/58a09a6c9a93723b6ed6fe733137899a.png)
 
-![](img/26d88746adaa670a253bfbe63c953cdf.png)
 
-![](img/cd71dbdb9e3dadd112d3f4711da06d5f.png)
 
 ![](img/d1b456e2a2d61db3ac58e6c6fbf99d36.png)
 
@@ -86,7 +83,6 @@ toB/toC、内容/工具/社区、国内/出海
 
 ![](img/8794346d6b6bdf2f692a6d3365bfe943.png)
 
-![](img/61b339fc63eaf4eef5678d98dec6f1ff.png)
 
 ![](img/8a0be9538fbcead9870c7e7024551acf.png)
 
@@ -186,7 +182,6 @@ GPT训练的四个主要阶段：
 
 **1、Pretrain 预训练**
 
-![](img/62914e1811ebdd044093538ecdf5a4df.png)
 
 数据集、tokenization、参数
 

@@ -240,7 +240,6 @@
 
 +   国内访问：https://hf-mirror.com/datasets/THUDM/webglm-qa
 
-![](img/77db5a2297e98368693074a36124b632.png)
 
 数据集
 

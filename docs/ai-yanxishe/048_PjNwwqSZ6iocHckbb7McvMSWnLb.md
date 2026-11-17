@@ -539,7 +539,6 @@ print(&#x27;%s Seconds&#x27;%(end-start))
 
 这是搜索smiling man的top5结果，确实是可以实现通过我们的语义进行搜索图片了！
 
-![](img/d12763c047c51bf379ad57cf1208edab.png)
 
 再搜索Say hello，也搜到了上面大笑打招呼的图片。
 

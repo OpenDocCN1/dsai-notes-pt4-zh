@@ -146,7 +146,6 @@ NotebookL+Nano Banana Pro这套组合，拥有现在业界我也许见过最强�
 
 > 国际极简风 (International Minimalist / Swiss Style)
 
-![](img/e27da5155166a73e4012ef4f47304ba4.png)
 
 ![](img/987713512d49e350d51680d0babb14d8.png)
 
@@ -156,7 +155,6 @@ NotebookL+Nano Banana Pro这套组合，拥有现在业界我也许见过最强�
 
 ![](img/52ad31e3c398a030541f810470e9073c.png)
 
-![](img/eae311058e2321eeb5c3bfc30e937180.png)
 
 ![](img/854c0c5a577f5b79557d82981e39ecdb.png)
 
@@ -174,7 +172,6 @@ NotebookL+Nano Banana Pro这套组合，拥有现在业界我也许见过最强�
 
 ![](img/61160c34ce01a3c4ef2d950a00d6963b.png)
 
-![](img/4eccf46b3d79c7f5efb2e3f370a74b22.png)
 
 ![](img/811ce61bb1320240607e45e49ce81160.png)
 
@@ -194,7 +191,6 @@ NotebookL+Nano Banana Pro这套组合，拥有现在业界我也许见过最强�
 
 ![](img/d02745fe2f1283f0ab0b961fc083c48d.png)
 
-![](img/498d668a48b43dd0a75cbbcf044da7a6.png)
 
 ![](img/87fa050b53c77f5abd836bf93859c14f.png)
 
@@ -278,7 +274,6 @@ NotebookL+Nano Banana Pro这套组合，拥有现在业界我也许见过最强�
 
 ![](img/a8026b4fb536ddece37c3ed00abbd4b6.png)
 
-![](img/344213e48cc18cd4840215d1f13eb26c.png)
 
 ![](img/743546d07d869c0f26498f9a4240bde6.png)
 
@@ -298,11 +293,9 @@ NotebookL+Nano Banana Pro这套组合，拥有现在业界我也许见过最强�
 
 可以看到上面的提示词可以写的非常详细，也可以很简单一个词它也能很好的理解：
 
-![](img/a29508be18866109631a160effcac92b.png)
 
 ![](img/e3f2593129637c5c069d5da56b4c9d34.png)
 
-![](img/18882766dbfb1d20a34364c9a3b8da88.png)
 
 ![](img/223d8d094c8cf0cff4b94035ff0d0537.png)
 

@@ -40,7 +40,6 @@ Loft3Di × Semir
 
 截至目前，入迷**AI团队已向合作品牌交付了 超 1300张 AI模特图，其中已有大量图片代替“实拍模特图”投放于线上店铺。
 
-![](img/89df70a1cf11ba663360b9fe26f995ed.png)
 
 ![](img/30e131fdb14a8e79a54771d1b579d3d5.png)
 
@@ -70,9 +69,7 @@ Loft3Di × Semir
 
 <整体制作方案示意图>
 
-![](img/959eef5dc0e7133c1d31fe8a24743e75.png)
 
-![](img/380aa4443193e218dc9bcf30cb1fb9f4.png)
 
 ![](img/824630b9177eebae5c6e5d9b4a3c2f3d.png)
 

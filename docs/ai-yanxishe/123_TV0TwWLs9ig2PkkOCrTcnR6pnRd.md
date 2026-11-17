@@ -178,11 +178,9 @@ Dataset Tag Editor 地址：https://github.com/toshiaki1729/stable-diffusion-web
 
 +   春秋季
 
-![](img/6d639b37ec27c32bbe8335d240e4958b.png)
 
 +   夏季
 
-![](img/23c938763a6d549281bdf495eff342ef.png)
 
 +   冬季
 

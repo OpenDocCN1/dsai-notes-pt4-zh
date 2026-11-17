@@ -6,7 +6,6 @@
 
 > 👸号：甲子光年
 
-![](img/8e2b114cf803e7362d65e1438268ead7.png)
 
 AI的下一个浪潮，正在开始重塑物理世界。
 
@@ -48,81 +47,43 @@ AI的下一个浪潮，正在开始重塑物理世界。
 
 **关**注👸号「 甲子光年 」，后台回复“2025具身智能”，获得高清版完整PDF。或者点击文末“阅读原文”，进入甲子光年官网下载。
 
-![](img/773ddd1456bf11f62712114279a88531.png)
 
-![](img/14196a6da1bd5eeaf104c07f4caca6ae.png)
 
-![](img/f5a0819ee266badbf47c612b70ed56ca.png)
 
-![](img/e15a76412e908c28e768b132f7e7c39d.png)
 
-![](img/7a58d0158493106843385bd02265a96a.png)
 
-![](img/75e785607bad19031e3f6f0c18a035f1.png)
 
-![](img/7b0e87f9239216dccc1ea99b964741b8.png)
 
-![](img/94bf97cf876bf246eba9488fa411b261.png)
 
-![](img/2f47043ac1e38691f64709c8fb5857ff.png)
 
-![](img/bee6b1e8f7a104573c5986b15689710d.png)
 
-![](img/b3a8aa1601212991aaf044972aec7aa0.png)
 
-![](img/d844bf3f3fdc317bc5467f6c8d0225fc.png)
 
-![](img/3a795292e9d64f095cc07bc2ae2063a6.png)
 
-![](img/90c22ec17c21418a4132ad50656ffe50.png)
 
-![](img/7e9763a4dcfa020f9b45935d81e06369.png)
 
-![](img/1b5748974c3c9c6d47f4bf1c5f8146bc.png)
 
-![](img/8ea03c1a051e6ac0e324dfee4edb1571.png)
 
-![](img/2f98b246c50be17081362abe607c73a7.png)
 
-![](img/9a2f5701a15b85f570fcabc600530520.png)
 
-![](img/6c3e2b74458b71e9774419faacc1dadf.png)
 
-![](img/d2a683fd2a8d7d06502277ab66e1af3e.png)
 
-![](img/71c952cd5fde8340e0881bd0b0cd6304.png)
 
-![](img/1075ce5399370150f56120da560c3917.png)
 
-![](img/86b1341aa68265ed8e9ec9f6297ea806.png)
 
-![](img/90abb49899dfa632dc31c35677830cc8.png)
 
-![](img/a4572d14d04bd90f501b9a6da581ec09.png)
 
-![](img/2266b665a3c8508608743a1d400f73a4.png)
 
-![](img/1065ad4274173a5e14560b69be0fcf76.png)
 
-![](img/d41f601c961c8365380cee66edec514a.png)
 
-![](img/a60c2e0dc8299610bf3893076996bb03.png)
 
-![](img/83fe1c9908e7c29df29168957597f5a3.png)
 
-![](img/af49d3fe91e3653eef809df24807feaa.png)
 
-![](img/9fe0a52e39bf5cca7c626faba121bd9c.png)
 
-![](img/9e06bcc9de6244226a8c80da0a024d10.png)
 
-![](img/cdf6091f6035994398e3d8b22ebc8459.png)
 
-![](img/96c50d6e94ebd9c061cedbf9d2e698d4.png)
 
-![](img/b10211e41558468871599c5a12935a1a.png)
 
-![](img/84469730d45709ef960b8f36899fb43a.png)
 
 ![](img/ffe19e8a85a52b51d6280378bfc00209.png)
 

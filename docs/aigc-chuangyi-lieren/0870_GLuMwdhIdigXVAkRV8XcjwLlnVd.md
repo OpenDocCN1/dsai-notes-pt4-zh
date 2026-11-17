@@ -2,7 +2,6 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/IxGPduyU5oqKAixqmhucJRL1nKb](https://aigcreative.feishu.cn/docx/IxGPduyU5oqKAixqmhucJRL1nKb)
 
-![](img/960236fd17cc387320cbe071a7ca27e1.png)
 
 大家好，我是创意猎人。
 
@@ -74,11 +73,9 @@
 
 仪表盘：
 
-![](img/9af49f074ab042fbbae110364d991e8e.png)
 
 新增商品模块：
 
-![](img/f49e9d3d9c201b049f8cd97c29cc108a.png)
 
 分类管理模块：
 
@@ -136,7 +133,6 @@
 
 通过链接查看：https://www.miaoda.cn/apps/app-73o9ys5lxu69
 
-![](img/60a9079ab663c2125e7422c99bb7a0c0.png)
 
 ![](img/9f32913531f004d2bc14507f27fe147e.png)
 
@@ -150,7 +146,6 @@
 
 通过链接查看：https://app-5riwwf9lxnuq.appmiaoda.com/
 
-![](img/a8136368a9071845b139914e359b0b9f.png)
 
 真是高手在民间，是不是觉得脑洞真的太大了~~
 
@@ -158,7 +153,6 @@
 
 你**想想，百度手里有多**少资源？地图、搜索、百科，还有各种AI的能力，文本处理、生图、生视频、多模态，这些它都能直接调用，最牛的还是它的智能理解和自动调用能力。
 
-![](img/3d167e168f4cee15a746acce5e10c0a5.png)
 
 在秒哒里，你不需要像以前写代码那样去死磕接口文档。
 

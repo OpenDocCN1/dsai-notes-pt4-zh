@@ -226,9 +226,7 @@ public void playText(String text) {
 
 下面列出一些官方能提供的虚拟形象“皮肤”示例：
 
-![](img/50b571b20baf46c0cb5d7822d91d7dcb.png)
 
-![](img/a11c13f900f3f3ee9204084781b71264.png)
 
 ![](img/66fdc4de7df454fc3c7d3335cb6c19df.png)
 

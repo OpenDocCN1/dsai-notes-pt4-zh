@@ -20,6 +20,5 @@
 
 ![](img/e237b530cf43d06f2a0a8028764c10e0.png)
 
-![](img/eb23411d3e8c93a58a39939de0e46a08.png)
 
 ![](img/3bf0bd2cf20aadea6e9cb5014bd7cbb5.png)

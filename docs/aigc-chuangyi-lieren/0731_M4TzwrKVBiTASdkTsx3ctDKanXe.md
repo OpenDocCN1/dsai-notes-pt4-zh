@@ -124,7 +124,6 @@
 
 把英雄联盟“改成“即梦牛逼”
 
-![](img/3e950f2dd49d95613dece43fca50ae84.png)
 
 ![](img/ec4a77d6cf2c9c3cce30fbc32c62e4e1.png)
 
@@ -210,7 +209,6 @@
 
 ![](img/fd3d02b97c472b3821a72b2a9011c0e4.png)
 
-![](img/269e135d1c7451768f31cd9631528f1f.png)
 
 ![](img/10910bc8c4ee755e763694dd2ecc44ac.png)
 
@@ -234,7 +232,6 @@
 
 ![](img/7b7a4a09fbc0532686fbb2a960422cce.png)
 
-![](img/dfcc7c1537b73fb60fc0404e1472fbfe.png)
 
 ![](img/fae2a6c333848b82ff3815223a40a17f.png)
 
@@ -244,7 +241,6 @@
 
 改成文艺复兴时的画作风格
 
-![](img/c214a91e675bf6e5ec285e40cb28a304.png)
 
 ![](img/5aa4a0724b8461dd38e7d94d05d7311a.png)
 
@@ -282,7 +278,6 @@
 
 整体效果应当像是由顶级动画工作室制作的电影海报或宣传图，具有专业的3D渲染质感和现代动画电影的视觉风格。
 
-![](img/273105e63c2437ea9c0b427e32dcf17d.png)
 
 ![](img/011b40be8eee3b3c333f4399c1360bea.png)
 
@@ -300,17 +295,11 @@
 
 ![](img/eea041760a5425f6a865b3596b692b83.png)
 
-![](img/f7fd5799260200778964eca3c811ab28.png)
 
-![](img/dacb38a77b769aaffd9062b5adffe730.png)
 
-![](img/628ee87dfef8ac196dfad69331de9e6b.png)
 
-![](img/5720bd71503d006de7fea3757b8f8ce9.png)
 
-![](img/2e6d8c75a2651e267bde9f2e6a8d1963.png)
 
-![](img/6f9dec00fd71864e1d89f9e1849c2777.png)
 
 ![](img/07b7bfca97e1c9d109c12c1187056615.png)
 
@@ -322,19 +311,12 @@
 
 改成莫奈/达芬奇/梵高/伊藤润二/宫崎骏/达利/葛饰北斋的绘画风格，其他不变
 
-![](img/f834c97be56e271adf3873278170517d.png)
 
-![](img/dd71c2c4036e5bbafe6233158de3890b.png)
 
-![](img/808487208401bfa608d17246b314c84b.png)
 
-![](img/5605a7ed460940120482f6eefdd0b644.png)
 
-![](img/510572678fc67a58c4e51e240105c3e0.png)
 
-![](img/0bd90fe6530a43f37829ee1481ece66c.png)
 
-![](img/45f17275f4e4c2771a75bbd3d99aa640.png)
 
 ![](img/a3527067a78f3d420a8caf8e439b779c.png)
 
@@ -418,11 +400,8 @@
 
 +   立体阴影增强层次感
 
-![](img/a4ccc4956edc461e6a0c252aacb503ea.png)
 
-![](img/0967b019925f33ad4d62c248be4a5fdd.png)
 
-![](img/f16b3f87d629a6929d1107005cbd798d.png)
 
 ![](img/c5cecce752f2e162b5985f7cb4cb0eab.png)
 

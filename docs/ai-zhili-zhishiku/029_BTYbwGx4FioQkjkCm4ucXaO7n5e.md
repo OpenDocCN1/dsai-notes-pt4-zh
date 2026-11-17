@@ -32,7 +32,6 @@ Pay it forward.
 
 +   2023年10月11日EDPS意见：  （https://www.edps.europa.eu/system/files/2023-10/23-10-11_opinion_ai_liability_rules.pdf）
 
-![](img/23a658945d502cc335394a60e51156bb.png)
 
 [23-10-11_opinion_ai_liability_rules.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WblqbfPX9oijPTxA9MQcgjzTnHh)
 

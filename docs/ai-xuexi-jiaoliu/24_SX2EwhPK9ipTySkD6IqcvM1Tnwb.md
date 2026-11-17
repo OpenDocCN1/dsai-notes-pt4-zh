@@ -24,7 +24,6 @@ The label should include a beautiful, detailed illustration of flowers such as l
 
 标签上应包括与蜂蜜生产相关的薰衣草、三叶草和橙花等花朵的美丽、详细的插图。设计应优雅自然，体现蜂蜜的有机健康本质。颜色应该是温暖的，有黄色、橙色和紫色的色调，以反映产品的甜味和天然来源。标签应包括品牌元素的空间，如产品名称和公司标志。
 
-![](img/6dfb0bd8d37834358f72653a66c17246.png)
 
 1.  产品包装设计
 

@@ -112,7 +112,6 @@ https://www.doubao.com/thread/w4826e1550967701d
 
 有三种方式：链接、小程序码、图片
 
-![](img/4445f0c83eeb7b1a3cc906ee0301d86d.png)
 
 ![](img/71806bc65557ee4b36c7e2e21916212a.png)
 

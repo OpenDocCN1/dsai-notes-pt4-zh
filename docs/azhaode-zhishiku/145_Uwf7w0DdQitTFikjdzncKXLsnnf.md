@@ -120,15 +120,12 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[Mythos 全面解读：Anthropic 最强模型发布](https://waytoagi.feishu.cn/wiki/UiqJweUYGi5QPUkIzbfcmYArnyd?from=from_copylink)》Anthropic 发布了 Claude Mythos Preview 。这是一个通用前沿模型，定位在 Opus 之上，是 Claude 产品线的全新最高层级。Anthropic 同时宣布，Mythos Preview 不会公开发布，只向 12 家核心合作方和 40 余家关键基础设施组织开放，让我们来一探究竟！
 
-![](img/dd0ce9da5283ad09d73d215adb67b686.png)
 
 +   《[Claude Code 实战：如何用一个工具支撑整个小团队丨Aakash Gupta](https://waytoagi.feishu.cn/wiki/PbHRwt1oTihG9Ek2IXHc9pGDnBg?from=from_copylink)》Hannah Stulberg 是DoorDash的PM，前Google APM，她在 Claude Code上已经投入超过1500个小时，而且至今仍在每天改进自己的工作流。这期Aakash Gupta的播客里，她把自己的「Team OS」完整拆解给了所有人——一个让 PM 一个人撑起 20 人团队的共享知识库系统。如果你是 PM、工程师或设计师，正在思考如何用 AI 真正放大自己的工作效率，这篇文章值得认真读完。
 
-![](img/4c1390e9275272e1c9118305a9410ccd.png)
 
 +   《[贝叶斯定理：AI 决策背后的秘密](https://waytoagi.feishu.cn/wiki/MNDZwUCK1iYSN9karvAcI3MPnj6?from=from_copylink)》贝叶斯定理是概率论和机器学习中的一个核心思想。它告诉你，当你看到新数据之后，应该如何更新自己的判断。在这篇文章里，会把整个内容一块一块拆开来讲。
 
-![](img/2a5a878f374b3485f28d8d5583603be5.png)
 
 ###  4 月 7 日
 
@@ -138,19 +135,15 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[解码 Transformer 架构](https://waytoagi.feishu.cn/wiki/ELr2wI0sSimXTMkWu6lcygSJn6L?from=from_copylink)》在这篇文章里，我们会通过逐块拆解的方式学习 Transformer 架构，理解每个组件的作用、它们如何协同工作，以及为什么这种架构支撑了每一个现代大语言模型（LLM）。当我们听到 “Transformer” 这个词时，它听起来很复杂。但别担心。如果我们把它拆成各个独立的部分来看，每一个部分其实都很简单。
 
-![](img/50fcbe0c0727e8ff2b37e6945e690578.png)
 
 +   《[AI Agent的持续学习](https://waytoagi.feishu.cn/wiki/RXCswIHmUiJSJukLfetcBaR6nOc?from=from_copylink)》关于 AI 中持续学习的大多数讨论都聚焦于一件事：更新模型权重。但对于 AI 智能体来说，学习可以发生在三个不同层次上：模型、harness 和上下文。理解这三者的区别，会改变你构建可随时间持续改进系统的思路。
 
-![](img/6ec2cefc023e7da9773416b4d3638bb4.png)
 
 +   《[一文深度解析 Agent Harness](https://waytoagi.feishu.cn/wiki/LjEVw72ogiz5pukRrEhc7VDrnFe?from=from_copylink)》一篇深入解析，讲清 Anthropic、OpenAI、Perplexity 和 LangChain 实际上在构建什么。涵盖编排循环、工具、记忆、上下文管理，以及其他一切能把一个无状态 LLM 变成有能力的 agent 的部分。
 
-![](img/1056fb5c311255dcf7a0fad87940fd0e.png)
 
 +   《[Anthropic增长主管：工程师越多，产品经理越稀缺丨Lenny's Podcast](https://waytoagi.feishu.cn/wiki/AY0fwzGTyiabBdkFm25cP2Ibnuf?from=from_copylink)》Amol Avasare是Anthropic的增长负责人。在他之前，他在MasterClass和Mercury做过增长，做过创始人，做过投资银行家。这一期他和Lenny聊的，是在史无前例的增速下，Anthropic的增长团队实际上在干什么，哪些传统打法彻底失效了，以及工程师生产力爆炸后PM和设计师的真实处境。
 
-![](img/0308bc87d8246e26f64762eb97c3292b.png)
 
 ###  4 月 6 日
 
@@ -160,7 +153,6 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[一文彻底打通AI底层逻辑：从LLM到Agent，所有核心概念拆解透彻](https://waytoagi.feishu.cn/wiki/VngEwIAxGikoOKkFQdQcNPoTnrc?from=from_copylink)》AI圈每天都在冒新名词——LLM、token、context、prompts、tool、mcp、agents、agent skill... 你真的能准确说出每个概念的确切含义吗？这是一篇从工程视角出发的硬核解析，没有虚头巴脑的商业概念，只有最底层的技术真相。 看完这篇，你对AI的理解将上升一个台阶 。
 
-![](img/90cec2fc7b46d92bb379eab74974160d.png)
 
 +   《[笑川：懒得重配100个 Skills？我用一套配置搞定 Claude Code+OpenClaw 双向同步](https://waytoagi.feishu.cn/wiki/R4OuwKIooitWvYkzeHtcgy68nfh?from=from_copylink)》重度使用Claude Code与AutoClaw的用户，常常会被多设备配置无法同步困扰。本文分享一套实用同步方案，借助Git仓库与符号链接，实现两台设备上的技能、工作流、代理配置实时互通，再配合定时任务自动同步。全文步骤详细、零基础可操作，还贴心标注避坑要点。配置完成后可随时随地调用完整工作流，大幅提升移动办公效率。
 
@@ -168,11 +160,9 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[喝点VC｜红杉美国专访全球首个太空数据中心创始人：太空数据中心将成为算力终极形态，未来十年年投入近万亿美元](https://waytoagi.feishu.cn/wiki/SWhMwJfyjifUHpk14C4cUBIanLy?from=from_copylink)》Philip Johnston ， StarCloud 创始人兼 CEO ，全球首个实现太空数据中心在轨运行的创业者，深耕航天与算力基础设施。 Sonya Huang 、 Pat Grady ，科技领域资深主持人。这期对话则聚焦太空数据中心的技术、成本、规模化与商业未来。
 
-![](img/c016feeb0e9050578d844d935d8fda6e.png)
 
 +   《[访谈｜Codex 团队如何用自己的产品构建产品——整个 Spec 只有 10 个要点](https://waytoagi.feishu.cn/wiki/DgCnwKSM0iehTPkY7SBcmTi5nIf?from=from_copylink)》OpenAI Codex 团队的 产品规格文档只有 10 个要点 。不是说每个功能的文档只有 10 个要点，而是整个产品的 spec 就这么多。 设计师写的代码量超过了六个月前工程师写的 。50 到 100 人的团队，直到最近才有了第二个产品经理。来让我们看看他们是如何用自己的产品构建产品！
 
-![](img/b444843b1c4d6722decf48a4dfc4aece.png)
 
 ###  4 月 5 日
 
@@ -184,7 +174,6 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[本周 AI 论文精选](https://waytoagi.feishu.cn/wiki/U1UVwlxafiSgH1kROw9cnQ1fnde?from=from_copylink)》本周AI精选论文覆盖模型安全、Agent架构、成本与效率等核心突破，极具实战与研究价值。Claude被证实存在情绪向量，为安全对齐提供新方向；AI Agent陷阱揭示网络攻击新形态，风险与责任亟待明确。多Agent异步协作、自组织架构大幅提升工程效率，Harness自动化优化与编码Agent替代长上下文，显著降低落地成本。
 
-![](img/5a3302462be09950d3b3ad21cd104570.png)
 
 +   《[编程智能体的核心组件【译】](https://waytoagi.feishu.cn/wiki/Q6bwwf8Ifi6ir2kKtE7cHOx9nMc?from=from_copylink)》这篇文章和大家聊聊编程智能体（Coding Agent）和 Agent harness（智能体 Harness）的整体设计。它们到底是什么？怎么工作的？在实际应用中，各个部件又是如何协同配合的？
 
@@ -200,23 +189,18 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[如何让RAG的内存效率提高32倍（代码详解）！](https://waytoagi.feishu.cn/wiki/HMzDwpGQMiWMyBkDoDtcVtdanbd?from=from_copylink)》RAG 特别吃内存，不优化就跑不动、跑太贵、跑太慢。通过这篇文章，来让我们看看Perplexity、Azure、HubSpot等众多公司如何使用二进制量化技术，使检索增强生成（RAG）的内存效率提高32倍（附代码解释）！
 
-![](img/d629203df445037897cb503eabb1c31e.png)
 
 +   《[25个当下即可打造的实用Skills、Agent和自动化方案——完整清单](https://waytoagi.feishu.cn/wiki/D7A9wwzcriQ8hGkLu53cm3🐧nif?from=from_copylink)》大多数人学习了AI相关知识后，却完全不知道该打造什么作品。或许掌握了理论知识，熟悉各类工具，可一旦坐下来动手创作，就只能对着空白屏幕发呆。这份清单就是为了解决这个问题。25个项目按难度分级整理，每个项目都能在一个周末内完成，每个项目都能解决实际问题，每个项目所学到的技能，还能为后续项目打下基础、层层叠加。
 
-![](img/d8feade0e88e65576ef4f42214ee90bd.png)
 
 +   《[8 个 Claude Code Hooks 实战（译）](https://waytoagi.feishu.cn/wiki/AnJIwnyATiXRZekuJNtclt0qnrd?from=from_copylink)》在用Claude Code开发时误改配置、乱删文件、漏跑测试的痛点，靠Hooks就能一键解决。这篇文章推荐了8个Claude Code Hooks，对日常使用AI写码的人来说实用性极强，快上手试试！
 
-![](img/ca530ba10620835d80734297b21c096c.png)
 
 +   《[Anthropic 设计主管的工作流：垃圾进去，宝贝出来](https://waytoagi.feishu.cn/wiki/LXbFwrHp9ihq7ykvOXkciGUZn0b?from=from_copylink)》**Jenny Wen **，Anthropic 的设计负责人，Cowork 的设计主导者。她最近上了一期播客，完整展示了自己怎么用 Cowork 干活，还讲了 Cowork 的真实诞生过程，以及产品界面经历了多少次推翻重来。
 
-![](img/80d63a2e240f8c40c3fb3e4f51dea7bb.png)
 
 +   《[从Vibe coding到Dark factories：AI接管软件生产的完整路线图丨Lenny's Podcast](https://waytoagi.feishu.cn/wiki/PvQVw2GfziEbuIkYHEwcgDhZnsy?from=from_copylink)》Simon Willison 是 Django 的联合创始人——那个同时托着 Instagram、Pinterest、Spotify 的 Web 框架。他创造了"prompt injection"这个词，普及了"AI slop"和"agentic engineering"的概念，还有超过 100 个开源项目，其中 Datasette 已经成为全球调查记者的常用工具。在这期 Lenny's Podcast 对谈里，他带来的不是预测，而是一个在最前线工作的工程师，对这个行业正在发生的事情最诚实的描述。
 
-![](img/173b12810a85b172fb3be5f03a6a43de.png)
 
 ###  4 月 3 日
 
@@ -252,15 +236,12 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[零基础如何构建你的第一个AI Agent——完整指南](https://waytoagi.feishu.cn/wiki/JsyFwEtAtibxJskilImcfhfUnVd?from=from_copylink)》本篇文章将从智能体框架、多智能体协同调度、智能体循环机制、工具调用、子智能体协作这几个方面一步步带你搭建出你的第一个真正意义上的AI Agent！
 
-![](img/ff0de68eafb2090053412cb0da4f3462.png)
 
 +   《[OpenAI 总裁 Greg Brockman：AI 自我改进、Super App 豪赌、通往 AGI 之路、算力扩张](https://waytoagi.feishu.cn/wiki/Veanw2x4QidHe7ksmqYcWxeFn4b?from=from_copylink)》OpenAI总裁访谈背后，藏着这家巨头的真实焦虑与战略赌局。砍掉Sora不只是技术聚焦，更是止损巨额烧钱与用户流失；即将推出的Super App想要整合聊天、编程与浏览器能力，意图打造统一 AI 入口，却直面微软与Anthropic的夹击。OpenAI 又将会如何应对？让我们来一探究竟！
 
-![](img/8c2ac39f3de02dde6d1e40684344425b.png)
 
 +   《[我做了一个精美 PDF 排版 Skill，以生成 100+ 页 Claude Code 系统报告为例](https://waytoagi.feishu.cn/wiki/ZfzSw4oidi1OJ1khFLzcGGbJnVe?from=from_copylink)》Claude Code 的完整源码被意外泄露，作者让Claude自己读自己的源码，做了一个精美PDF排版Skill，最终产出了一份超过 10 万字、覆盖 30+ 章节的深度技术报告。
 
-![](img/76056b9c32d00dba0276c986f3d17d24.png)
 
 ###  4 月 1 日
 
@@ -268,15 +249,12 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 +   《[Claude Code CLI 源码分析 : 从 Prompt 架构到工业级 AI Agent缓存黑科技+自我进化+多Agent协作+遥测监控](https://waytoagi.feishu.cn/wiki/EWgZw2kq3i8ZrIkFTIRcCn2vnKe?from=from_copylink)》Anthropic 这种量级的公司，他们会怎么设计 AI Agent？看完源码才发现，这不是“Prompt 工程”那么简单，而是 缓存架构 + 自我进化记忆 + 多模式编排 的完整基础设施。
 
-![](img/07af1b1651c1640835eba812487b0c56.png)
 
 +   《[Claude Code 泄露代码隐藏的87个未发布功能 暴露其野心...](https://waytoagi.feishu.cn/wiki/PeSYwZR0kiiZmHkU6lccu1xAnZ0?from=from_copylink)》Claude Code 的完整源码泄漏后 有人说"44个隐藏feature flag"。小互翻完源码的实际数字是87个。让我们来一同看看这背后隐藏了哪些未上线的功能！
 
-![](img/f233e8bc40ab8279370b7ae3c7f80af0.png)
 
 +   《[一文讲透如何构建Harness——六大组件全解析](https://waytoagi.feishu.cn/wiki/BgldwwYM4iOZTHkaSWBcxc2dnrd?from=from_copylink)》Agent = Model + Harness。 模型提供智能，Harness 让智能变得有用。这不是一个新概念，但它正在成为 2026 年 AI 工程领域最核心的共识。本文将从"裸模型的四个硬伤"出发，逐一拆解 Harness 的六大组件——文件系统、Bash + 沙箱、记忆（AGENTS.md）、Web Search + MCP、上下文工程、编排 + Hooks——带你看清 AI Agent 真正的竞争壁垒，不在模型层，而在 Harness 层。
 
-![](img/637340453ff2ee2b36423a217e424aba.png)
 
 +   《[真开源！Claude Code75页橙皮书，带你从入门到精通](https://waytoagi.feishu.cn/wiki/Xc4gwuYxqio1vYkQArLc1rT8noe?from=from_copylink)》这份手册是作者和Claude Code一起写的。对，用CC写CC教程，它自己教你怎么用它。信息来源主要是Anthropic官方文档、Claude Code之父Boris Cherny的分享、吴恩达的Claude Code课程，再加上我自己用CC做了十几个产品踩过的坑。我用CC大半年了，每个月给Anthropic付200多美金（含税），烧过数十亿tokens，该踩的坑基本都踩了一遍。
 
@@ -662,19 +640,16 @@ AI春晚导演
 
 # 📅 周刊与兴趣小组
 
-![](img/5e962307992c1e9112fe9d275dda7d85.png)
 
 [WaytoAGI.com 网站](http://www.waytoagi.com)
 
 内置知识库 AI 助手
 
-![](img/68aea834ea3ac780cb609efe4ce78edc.png)
 
 [B 站｜Bilibili](https://space.bilibili.com/259768893)
 
 以视频普及 AI 知识
 
-![](img/9663dd43939fa8c25b2d302e8f839a57.png)
 
 [📕](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)
 
@@ -691,7 +666,6 @@ AI 消息及时传递
 |  | 要求 | 进群方式 | 备注 |
 | --- | --- | --- | --- |
 | 🌈 AI 音乐之路 | 热爱音乐 | ![](img/96a5f22b71c569262c1e38b750377163.png) | 添加左侧🛰️ |
-| 🌈 关键词学社 | AI 绘画群：一起根据群中的每天给出的关键词，通过出图测试关键词效果，有 Midjourney 账号，喜欢 AI 绘画即可。进群请加 大狐，把你拉进群 | ![](img/8b3656469e05cc44b04eb1a40c8efa3e.png) | 添加左侧飞书群  备注：关键词学社 |
 | 🌈 SD 学社 | 学习 Stable diffusion 的相关操作和每周两个案例实操，申请链接 | ![](img/17c8f1d5534e59530417679de6d16917.png) | 添加左侧飞书群  备注：SD 学社 |
 | 🌈 AI 视频学社 | 至少参加一次活动或出图（其实很简单，都有教程，可以尝试动手一下出一张图就可以进群 pk） | ![](img/526625e1b45ce2b7222cc97b7ffc8508.png) | 添加左侧🛰️  备注：视频学社 |
 | 🌈 🛰️机器人搭建 | [熊猫大侠：基于COW框架的ChatBot实现步骤](https://waytoagi.feishu.cn/wiki/YNNuwEqCXiSj2akS5mlcjpZgnrb) | ![](img/a79c08de39a571e0545f321c63a5afd5.png) | 添加左侧🛰️  备注：机器人 |

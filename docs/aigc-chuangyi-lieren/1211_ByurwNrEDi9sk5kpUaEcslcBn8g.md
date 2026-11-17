@@ -2,7 +2,6 @@
 
 > 来源：[https://aigcreative.feishu.cn/docx/SsMudwxAQoKJnqxhw4lcqcPMnXb](https://aigcreative.feishu.cn/docx/SsMudwxAQoKJnqxhw4lcqcPMnXb)
 
-![](img/6fdb3ff6c040527cd7d92ad6ebe8f963.png)
 
 如何精确衡量一个人的“影响力”？既不能以公司的营收来衡量，也不能依据个人的资历来评判。谁更具影响力？是管理一家市值为200亿美元的公司的首席执行官，还是离开官僚作风盛行的大公司，创办了一家灵活的、颠覆性的初创公司的人工智能天才？是富有远见、为初创公司提供融资的风险投资家，还是做空衰退的老牌科技巨头并迫使其首席执行官下台的卖空者？答案不尽相同。影响力是微妙的，它来之不易却又很容易失去，它从来不会一成不变。
 
@@ -16,7 +15,6 @@
 
 首席执行官兼创始人
 
-![](img/6c8c00731273ac799924adc256c028a3.png)
 
 图片来源： FREDERIC J. BROWN—AFP/Getty Images
 
@@ -30,7 +28,6 @@
 
 英伟达（Nvidia）首席执行官兼创始人
 
-![](img/595912b7382ce314b7aeaf526fa44e2d.png)
 
 图片来源：Michael M. Santiago—Getty Images
 
@@ -42,7 +39,6 @@
 
 微软（Microsoft）首席执行官兼董事长
 
-![](img/5ff5651da6308c5f1d90468613f7b4f6.png)
 
 图片来源：JASON REDMOND—AFP/Getty Images
 
@@ -56,7 +52,6 @@
 
 伯克希尔-哈撒韦首席执行官兼董事长
 
-![](img/1909d5faa58fa511d23d089cf322e820.png)
 
 图片来源：Daniel Zuchnik—WireImage
 
@@ -70,7 +65,6 @@
 
 摩根大通首席执行官兼董事长
 
-![](img/3de38813b57bc78e04d265159e97a3cd.png)
 
 图片来源：Hollie Adams—Bloomberg/Getty Images
 
@@ -84,7 +78,6 @@
 
 苹果（Apple）首席执行官
 
-![](img/aad7a7399981946d3a82d4b30f4ea022.png)
 
 图片来源：Victor J. Blue—Bloomberg/Getty Images
 
@@ -96,7 +89,6 @@
 
 Meta首席执行官、董事长兼创始人
 
-![](img/3c4984fadc841bfa23b5bf48aeeb1201.png)
 
 图片来源： David Paul Morris—Bloomberg/Getty Images
 
@@ -110,7 +102,6 @@ Meta推出的准开源大语言模型Llama被众多初创公司广泛采用，�
 
 OpenAI首席执行官兼联合创始人
 
-![](img/421e7f8939a8faf30279ddb68b0003ff.png)
 
 图片来源：Chris Ratcliffe—Bloomberg/Getty Images
 
@@ -124,7 +115,6 @@ OpenAI首席执行官兼联合创始人
 
 通用汽车首席执行官兼董事长
 
-![](img/632e67815f1a9850e28ecdd2586cfa44.png)
 
 图片来源：Anna Moneymaker—Getty Images
 
@@ -138,7 +128,6 @@ OpenAI首席执行官兼联合创始人
 
 Alphabet（谷歌）首席执行官
 
-![](img/410fcfdf85cd431ee7c0fd307899e06c.png)
 
 图片来源：David Paul Morris—Bloomberg/Getty Images
 
@@ -150,7 +139,6 @@ Alphabet（谷歌）首席执行官
 
 亚马逊（Amazon）董事长兼创始人
 
-![](img/4c9b24e1ff9d2a767439b11a661e8397.png)
 
 图片来源：MICHAEL TRAN—AFP/Getty Images
 
@@ -164,7 +152,6 @@ Alphabet（谷歌）首席执行官
 
 信实工业董事长兼总经理
 
-![](img/f305e3f65c2173a7de7e73f07c169698.png)
 
 图片来源：SUJIT JAISWAL—AFP/Getty Images
 
@@ -178,7 +165,6 @@ Alphabet（谷歌）首席执行官
 
 美国银行首席执行官兼董事长
 
-![](img/6928bc05e44a8bccfc216ac8188e760c.png)
 
 图片来源 ： Hollie Adams—Bloomberg/Getty Images
 
@@ -192,7 +178,6 @@ Alphabet（谷歌）首席执行官
 
 华为技术有限公司首席执行官兼创始人
 
-![](img/89ea63ea73f9d59a85b4b52ce5279380.png)
 
 图片来源：JESSICA YANG—AFP/Getty Images
 
@@ -204,7 +189,6 @@ Alphabet（谷歌）首席执行官
 
 花旗集团（Citigroup）首席执行官
 
-![](img/1c415b159d2f399d185952f52c0f5cde.png)
 
 图片来源：Valerie Plesch—Bloomberg/Getty Images
 
@@ -218,7 +202,6 @@ Alphabet（谷歌）首席执行官
 
 Greylock Partners合伙人
 
-![](img/107fdff75671f40c5a4e4048649490e3.png)
 
 图片来源：David Paul Morris—Bloomberg/Getty Images
 
@@ -232,7 +215,6 @@ Greylock Partners合伙人
 
 路威酩轩（LVMH）首席执行官兼董事长
 
-![](img/820c74e6f077e6911829da6e511d9f29.png)
 
 图片来源：Nathan Laine—Bloomberg/Getty Images
 
@@ -246,7 +228,6 @@ Greylock Partners合伙人
 
 沃尔玛（Walmart）首席执行官兼总裁
 
-![](img/f4b0508314eecfd96627ec60de13cccd.png)
 
 图片来源：Ethan Miller—Getty Images
 
@@ -258,7 +239,6 @@ Greylock Partners合伙人
 
 比亚迪首席执行官、董事长兼创始人
 
-![](img/b0a856aa6d96b0590932df921c2f8dc2.png)
 
 图片来源 ：Valeria Mongelli—Bloomberg/Getty Images
 
@@ -272,7 +252,6 @@ Greylock Partners合伙人
 
 高盛集团首席执行官兼董事长
 
-![](img/0c84419aa82172dd5d2797abf557bff3.png)
 
 图片来源：Stefan Wermuth—Bloomberg/Getty Images
 
@@ -284,7 +263,6 @@ Greylock Partners合伙人
 
 星巴克（Starbucks）首席执行官兼董事长
 
-![](img/1daf15bcc144d008fd13c17a39f1e47c.png)
 
 图片来源：Ryan Miller—Getty Images/Orange County Museum of Art
 
@@ -296,7 +274,6 @@ Greylock Partners合伙人
 
 微软联合创始人
 
-![](img/c3865d61cc52a0a8ec125d8142c831d0.png)
 
 图片来源：Hollie Adams—Bloomberg/Getty Images
 
@@ -310,7 +287,6 @@ Greylock Partners合伙人
 
 埃森哲（Accenture）首席执行官兼董事长
 
-![](img/4ca512b7a30cf20793d6915ae0e6cb35.png)
 
 图片来源：Hollie Adams—Bloomberg/Getty Images
 
@@ -324,7 +300,6 @@ Greylock Partners合伙人
 
 赛富时首席执行官、董事长兼联合创始人
 
-![](img/2d85a90d07c818502a1b8e46d2771334.png)
 
 图片来源：Mike Coppola—Getty Images/TIME
 
@@ -336,7 +311,6 @@ Greylock Partners合伙人
 
 葛兰素史克（GSK）首席执行官
 
-![](img/22bb959bd6a7c73ac4d92a5ff25faee3.png)
 
 图片来源：Jason Alden—Bloomberg/Getty Images
 
@@ -348,7 +322,6 @@ Greylock Partners合伙人
 
 亚马逊首席执行官兼总裁
 
-![](img/de26d3991d1f0af38f9b838c6da212d6.png)
 
 图片来源：Randy Shropshire—Getty Images/Vox Media
 
@@ -362,7 +335,6 @@ Greylock Partners合伙人
 
 Uber首席执行官
 
-![](img/f18bd663b9b0506c57b21ad04ce6b55a.png)
 
 图片来源：Jose Sarmento Matos—Bloomberg/Getty Images
 
@@ -378,7 +350,6 @@ Uber首席执行官
 
 伯克希尔-哈撒韦能源董事长
 
-![](img/588ed341163124d10894277d94a6f33e.png)
 
 图片来源：David Paul Morris—Bloomberg/Getty Images
 
@@ -392,7 +363,6 @@ Uber首席执行官
 
 诺和诺德（Novo Nordisk）首席执行官兼总裁
 
-![](img/643fba834514b7f415d093790278fe81.png)
 
 图片来源：Nanna Navntoft—Bloomberg/Getty Images
 
@@ -406,7 +376,6 @@ Uber首席执行官
 
 首席执行官兼联合创始人
 
-![](img/5cf4c071a22393445da0fb04807826d3.png)
 
 图片来源：Jeenah Moon–Bloomberg/Getty Images
 
@@ -420,7 +389,6 @@ Uber首席执行官
 
 礼来公司（Eli Lilly）首席执行官兼董事长
 
-![](img/796caa61a2d9b13b31c18b43e20107d8.png)
 
 图片来源：Paulo Nunes dos Santos—Bloomberg/Getty Images
 
@@ -432,7 +400,6 @@ Uber首席执行官
 
 KKR联席首席执行官
 
-![](img/a2a9e99b10a5947b2fecc0ee59897476.png)
 
 图片来源：PJMP IMAGES
 
@@ -446,7 +413,6 @@ KKR联席首席执行官
 
 Alphabet（谷歌）联合创始人
 
-![](img/868d1c04d3620471115cc42bb12d7833.png)
 
 图片来源：MICHAEL TRAN—AFP/Getty Images, C Flanigan—FilmMagic
 
@@ -460,7 +426,6 @@ Alphabet（谷歌）联合创始人
 
 Palantir Technologies董事长兼联合创始人
 
-![](img/0fc44bb2919375150ff1002d4d885330.png)
 
 图片来源：Nordin Catic—Getty Images/The Cambridge Union
 
@@ -474,7 +439,6 @@ Palantir Technologies董事长兼联合创始人
 
 甲骨文（Oracle）首席执行官
 
-![](img/33463441054f7cd5e7d26ee436417650.png)
 
 图片来源：Spencer Platt—Getty Images
 
@@ -486,7 +450,6 @@ Palantir Technologies董事长兼联合创始人
 
 AMD首席执行官兼董事长
 
-![](img/7346f5ab3702ec75d46d68cd30b60bc0.png)
 
 图片来源：Marlena Sloss—Bloomberg/Getty Images
 
@@ -498,7 +461,6 @@ AMD首席执行官兼董事长
 
 Spotify首席执行官兼联合创始人
 
-![](img/49e102413a848f3217a88b61f39e0fbb.png)
 
 图片来源：Noam Galai—Getty Images/Spotify
 
@@ -510,7 +472,6 @@ Spotify的“货币化之年”对用户的钱包并不友好，但对于公司�
 
 安德森·霍洛维茨公司普通合伙人兼联合创始人
 
-![](img/fbb9d3c6c68f58454cdee7763f6820bb.png)
 
 图片来源：Tayfun Coskun—Anadolu/Getty Images
 
@@ -524,7 +485,6 @@ Spotify的“货币化之年”对用户的钱包并不友好，但对于公司�
 
 科氏公司（Koch Inc.）联席首席执行官兼董事长
 
-![](img/78335b7d7a18cd08f741b9a075a47536.png)
 
 图片来源：Bo Rader—Wichita Eagle/Tribune News Service/Getty Images
 
@@ -538,7 +498,6 @@ Spotify的“货币化之年”对用户的钱包并不友好，但对于公司�
 
 台积电（TSMC）首席执行官兼董事长
 
-![](img/e633af9bdfcbda3c152a3911f3e2b01d.png)
 
 图片来源：Liesa Johannssen—Bloomberg/Getty Images
 
@@ -550,7 +509,6 @@ Spotify的“货币化之年”对用户的钱包并不友好，但对于公司�
 
 Netflix联席首席执行官
 
-![](img/1a8d5d8d41c8bd6763b94a84bdbb130f.png)
 
 图片来源：Valerie Plesch—Bloomberg/Getty Images, Dan Steinberg—Variety/Penske Media/Getty Images
 
@@ -564,7 +522,6 @@ Netflix联席首席执行官
 
 黑石集团首席执行官、董事长兼联合创始人
 
-![](img/44f8a6fbfbea7724df6cb92e3ee2de56.png)
 
 图片来源：Noriko Hayashi—Bloomberg/Getty Images
 
@@ -576,7 +533,6 @@ Netflix联席首席执行官
 
 爱彼迎（Airbnb）首席执行官兼联合创始人
 
-![](img/e4fae8b96d68267d007bb9654f80039a.png)
 
 图片来源：Dustin Chambers—Bloomberg/Getty Images
 
@@ -590,7 +546,6 @@ Netflix联席首席执行官
 
 Palantir Technologies首席执行官兼联合创始人
 
-![](img/3afd2b748cc8a15147ddefea098a37c4.png)
 
 图片来源：David Paul Morris—Bloomberg/Getty Images
 
@@ -604,7 +559,6 @@ Palantir Technologies首席执行官兼联合创始人
 
 公共投资基金（Public Investment Fund）总裁
 
-![](img/a10fd4b7f76161f41205ccf00fd7e3ba.png)
 
 图片来源：Chris Ratcliffe—Bloomberg/Getty Images
 
@@ -618,7 +572,6 @@ Palantir Technologies首席执行官兼联合创始人
 
 黑石集团总裁兼首席运营官
 
-![](img/0759a17bb88f9fa28210dc4e0ca5141f.png)
 
 图片来源：Chris Ratcliffe—Bloomberg/Getty Images
 
@@ -630,7 +583,6 @@ Palantir Technologies首席执行官兼联合创始人
 
 迪士尼（Disney）首席执行官
 
-![](img/5f5e379b6635ad81d434929486a6d360.png)
 
 图片来源：Emma McIntyre—Getty Images
 
@@ -644,7 +596,6 @@ Anthropic首席执行官兼联合创始人（达里奥）
 
 Anthropic总裁兼联合创始人（丹妮拉）
 
-![](img/77732e4150edea209420a80f9cac1cef.png)
 
 图片来源：David Paul Morris—Bloomberg/Getty Images, Chesnot—Getty Images
 
@@ -658,7 +609,6 @@ Anthropic自创立以来已经获得亚马逊40亿美元和谷歌20亿美元的�
 
 贝莱德（BlackRock）首席执行官兼董事长
 
-![](img/f4ee7efc2dd8e93be06fafb2b51cfe84.png)
 
 图片来源：Victor J.Blue—Bloomberg/Getty Images
 
@@ -670,7 +620,6 @@ Anthropic自创立以来已经获得亚马逊40亿美元和谷歌20亿美元的�
 
 Coinbase首席执行官兼创始人
 
-![](img/0e9ab39bb0e5bba0ec8067a5e5362fcd.png)
 
 图片来源：Victor J.Blue—Bloomberg/Getty Images
 
@@ -682,7 +631,6 @@ Coinbase首席执行官兼创始人
 
 联合健康集团首席执行官
 
-![](img/ca8078441df4777e3e02079a53a0314f.png)
 
 图片来源：Al Drago—Bloomberg/Getty Images
 
@@ -694,7 +642,6 @@ Coinbase首席执行官兼创始人
 
 Adobe董事长兼首席执行官
 
-![](img/7b645a9f8b6cdc44282b1129d60a86b2.png)
 
 图片来源：SAJJAD HUSSAIN—AFP/Getty Images
 
@@ -708,7 +655,6 @@ Stripe首席执行官兼联合创始人（帕特里克）
 
 Stripe总裁兼联合创始人（约翰）
 
-![](img/35e6e509c9fff3850a657217d1352508.png)
 
 图片来源：Jeenah Moon—Bloomberg,Getty Images, STRIPE
 
@@ -720,7 +666,6 @@ Stripe总裁兼联合创始人（约翰）
 
 Citadel首席执行官兼创始人
 
-![](img/9c25f641865b673b7ae2b606c6675a39.png)
 
 图片来源：Bryan van der Beek—Bloomberg/Getty Images
 
@@ -732,7 +677,6 @@ Citadel首席执行官兼创始人
 
 红杉资本（Sequoia Capital）管理合伙人
 
-![](img/f358a0f0526fbe05d22ba807815523ae.png)
 
 图片来源： Jason Alden—Bloomberg/Getty Images
 
@@ -744,7 +688,6 @@ Citadel首席执行官兼创始人
 
 立讯精密董事长、总经理
 
-![](img/2fbaf2463f7449ed6f89fefc2356e8a9.png)
 
 图片来源：Courtesy of Luxshare
 
@@ -756,7 +699,6 @@ Citadel首席执行官兼创始人
 
 小米首席执行官、董事长、创始人
 
-![](img/8e55c02fb214279f518656f23d0992a0.png)
 
 图片来源：MICHAEL ZHANG—AFP/Getty Images
 
@@ -768,7 +710,6 @@ Citadel首席执行官兼创始人
 
 埃克森美孚董事长兼首席执行官
 
-![](img/76f76654d38de552ecc17562efb49b50.png)
 
 图片来源：Artur Widak—NurPhoto/Getty Images
 
@@ -780,7 +721,6 @@ Citadel首席执行官兼创始人
 
 联合包裹运送服务公司（UPS）首席执行官
 
-![](img/adaa59a03de83a9ed4b68e73e4448d93.png)
 
 图片来源：Dustin Chambers—Bloomberg/Getty Images
 
@@ -792,7 +732,6 @@ Citadel首席执行官兼创始人
 
 Elevance Health总裁兼首席执行官
 
-![](img/5c8021cedbaee8806870a50c962dfb2a.png)
 
 图片来源：Taylor Hill—Getty Images
 
@@ -806,7 +745,6 @@ Elevance Health总裁兼首席执行官
 
 宁德时代董事长、总经理
 
-![](img/e0a361d7b9d8192f613ba508d3d520ff.png)
 
 图片来源：Paul Yueng—Bloomberg/Getty Images
 
@@ -818,7 +756,6 @@ Elevance Health总裁兼首席执行官
 
 Stellantis首席执行官兼执行董事
 
-![](img/e447ef111a8633f6ff08f81761d586bb.png)
 
 图片来源：Massimo Di Vita—Mondadori Portfolio/Getty Images
 
@@ -832,7 +769,6 @@ Stellantis的首席执行官唐唯实（Carlos Tavares）自称“燃油车粉�
 
 丰田汽车公司（Toyota）董事长
 
-![](img/96f3bc19da4a064deaffb9553dbb7f07.png)
 
 图片来源：YUICHI YAMAZAK—AFP/Getty Images
 
@@ -844,7 +780,6 @@ Stellantis的首席执行官唐唯实（Carlos Tavares）自称“燃油车粉�
 
 富达投资董事长兼首席执行官
 
-![](img/a790b9b068123b0e32590ba1494de057.png)
 
 图片来源：Barry Chin—The Boston Globe/Getty Images
 
@@ -856,7 +791,6 @@ Stellantis的首席执行官唐唯实（Carlos Tavares）自称“燃油车粉�
 
 欧莱雅（L’Oréal）首席执行官
 
-![](img/ab5a95b32f41ff16968da3e9c3ef6513.png)
 
 图片来源：Nathan Laine—Bloomberg/Getty Images
 
@@ -868,7 +802,6 @@ Stellantis的首席执行官唐唯实（Carlos Tavares）自称“燃油车粉�
 
 美国教师保险和年金协会总裁兼首席执行官
 
-![](img/30be30f7571fc2411da20d455a6c9064.png)
 
 图片来源：Paras Griffin—Getty Images
 
@@ -880,7 +813,6 @@ Stellantis的首席执行官唐唯实（Carlos Tavares）自称“燃油车粉�
 
 桑坦德银行（Banco Santander）执行主席
 
-![](img/d9c819458751d35a41e7c29e8e1c91b7.png)
 
 图片来源：Pablo Blazquez Dominguez—Getty Images
 
@@ -892,7 +824,6 @@ Stellantis的首席执行官唐唯实（Carlos Tavares）自称“燃油车粉�
 
 挪威中央银行投资管理公司首席执行官
 
-![](img/91a4bbde4dec4b0a26407f9321bfebf6.png)
 
 图片来源：Chris Ratcliffe—Bloomberg/Getty Images
 
@@ -904,7 +835,6 @@ Stellantis的首席执行官唐唯实（Carlos Tavares）自称“燃油车粉�
 
 YouTube首席执行官
 
-![](img/05df050ab0c2b1b59d58ccda85f78f62.png)
 
 图片来源：Kevin Mazur/\—Getty Images/Made on YouTube 2024
 
@@ -916,7 +846,6 @@ YouTube首席执行官
 
 新闻集团（News Corp.）创始人
 
-![](img/390e715311816e7590b8cc3c259628e3.png)
 
 图片来源：Victoria Jones—PA Images/Getty Images
 
@@ -928,7 +857,6 @@ YouTube首席执行官
 
 华侨银行集团（OCBC）首席执行官
 
-![](img/d1eac8334f702c38bcc7dac24476708a.png)
 
 图片来源：Lam Yik—Bloomberg/Getty Images
 
@@ -940,7 +868,6 @@ YouTube首席执行官
 
 甲骨文董事长兼联合创始人
 
-![](img/b7ff2893575a59c4483d2538f088d63d.png)
 
 图片来源：Phillip Faraone—Getty Images
 
@@ -952,7 +879,6 @@ YouTube首席执行官
 
 Ariel Investments总裁兼联席首席执行官
 
-![](img/bb3cea1a9d0de0f701f1febd0d770d1f.png)
 
 图片来源：Taylor Hill—Getty Images
 
@@ -966,7 +892,6 @@ Ariel Investments总裁兼联席首席执行官
 
 Khosla Ventures管理合伙人、创始人
 
-![](img/48ef194ced5ae38505f27c99a7c8f909.png)
 
 图片来源：David Paul Morris—Bloomberg/Getty Images
 
@@ -980,7 +905,6 @@ Khosla Ventures管理合伙人、创始人
 
 达拉斯小牛队前主要所有者、现小股东
 
-![](img/5649672a3ccddc6c75523832b3f83f60.png)
 
 图片来源：Christopher Willard—ABC/Getty Images
 
@@ -992,7 +916,6 @@ Khosla Ventures管理合伙人、创始人
 
 CrowdStrike首席执行官兼创始人
 
-![](img/d3f85ee3c75be04cca23988606b78178.png)
 
 图片来源：Lauren Justice—Bloomberg/Getty Images
 
@@ -1014,7 +937,6 @@ CrowdStrike首席执行官兼创始人
 
 高通（Qualcomm）总裁兼首席执行官
 
-![](img/f87cdfe33ab4d015ce9d62280aff4f00.png)
 
 图片来源：Stefan Wermuth—Bloomberg/Getty Images
 
@@ -1026,7 +948,6 @@ CrowdStrike首席执行官兼创始人
 
 软银集团首席执行官、董事长、创始人
 
-![](img/6c8fec90071fb7eed7332cca77b2850f.png)
 
 图片来源：Tomohiro Ohsumi—Getty Images
 
@@ -1040,7 +961,6 @@ CrowdStrike首席执行官兼创始人
 
 腾讯公司董事会主席兼首席执行官、联合创始人
 
-![](img/80d3ca2c08adcb12c7e359234d8f2059.png)
 
 图片来源：Visual China Group—Getty Images
 
@@ -1052,7 +972,6 @@ CrowdStrike首席执行官兼创始人
 
 Anduril创始人
 
-![](img/8524e95f020e91a39e04ced1ca551e68.png)
 
 图片来源：Kyle Grillot—Bloomberg/Getty Images
 
@@ -1066,7 +985,6 @@ Anduril创始人
 
 通用电气董事长兼首席执行官
 
-![](img/07dd3b094379eb3dd14150b97e515668.png)
 
 图片来源：Ilya S. Savenok—Getty Images/GE
 
@@ -1078,7 +996,6 @@ Anduril创始人
 
 Chobani首席执行官、董事长、创始人
 
-![](img/67fd8c0e0b7d8b17206142b142e8f529.png)
 
 图片来源：Courtesy of Chobani
 
@@ -1090,7 +1007,6 @@ Chobani公司的首席执行官兼创始人哈麦迪·乌鲁卡亚（Hamdi Uluka
 
 Y Combinator Management总裁兼首席执行官
 
-![](img/d2814985ae9cbcdbc7fde14c42b7c36d.png)
 
 图片来源：David Paul Morris—Bloomberg/Getty Images
 
@@ -1102,7 +1018,6 @@ Y Combinator Management总裁兼首席执行官
 
 三星电子（Samsung Electronics）执行主席
 
-![](img/85e719f0e1cb5a6748e8ce77243a329e.png)
 
 图片来源：SeongJoon Cho—Bloomberg/Getty Images
 
@@ -1118,7 +1033,6 @@ Y Combinator Management总裁兼首席执行官
 
 联席首席执行官、总裁、创始人
 
-![](img/6d2f0fe4590deca022346ec465f67a8b.png)
 
 图片来源 ：Chris Ratcliffe—Bloomberg/Getty Images
 
@@ -1130,7 +1044,6 @@ Y Combinator Management总裁兼首席执行官
 
 阿里巴巴集团董事会主席、创始人
 
-![](img/8a089614e2eb3860f5d4a39908b9cd0b.png)
 
 图片来源：JOHN LAMPARSKI—AFP/Getty Images
 
@@ -1144,7 +1057,6 @@ Y Combinator Management总裁兼首席执行官
 
 戴森（Dyson）董事长、创始人
 
-![](img/ebd3d8e01deb9649a366713142734288.png)
 
 图片来源：Sebastian Reuter—Getty Images/Dyson
 
@@ -1156,7 +1068,6 @@ Y Combinator Management总裁兼首席执行官
 
 红龙虾（Red Lobster）首席执行官
 
-![](img/80625a5f223daf52d504e8c73def351a.png)
 
 图片来源：Michelle Bruzzese—Red Lobster Seafood Co.
 
@@ -1168,7 +1079,6 @@ Y Combinator Management总裁兼首席执行官
 
 大众汽车（Volkswagen）董事长兼首席执行官
 
-![](img/9cd6c536ee7ac95787677900530fc191.png)
 
 图片来源：Alexander Hassenstein—Getty Images
 
@@ -1182,7 +1092,6 @@ Y Combinator Management总裁兼首席执行官
 
 彭博（Bloomberg）大股东、联合创始人
 
-![](img/b8aa5fa777d6b958634630d552821a73.png)
 
 图片来源：Noam Galai—WireImage
 
@@ -1194,7 +1103,6 @@ Y Combinator Management总裁兼首席执行官
 
 字节跳动创始人
 
-![](img/4f0442d22ddd28787518463bdb3d4f30.png)
 
 图片来源：Zheng Shuai—VCG/Getty Images
 
@@ -1206,7 +1114,6 @@ Y Combinator Management总裁兼首席执行官
 
 嘉吉公司（Cargill）董事会主席兼首席执行官
 
-![](img/3609f7c82225fd3dc5f9ca93e068f69c.png)
 
 图片来源：Courtesy of Cargill, Inc.
 
@@ -1220,7 +1127,6 @@ Y Combinator Management总裁兼首席执行官
 
 e.l.f. Beauty董事长兼首席执行官
 
-![](img/79c36ef3ca33575422d43e857c140193.png)
 
 图片来源：Patrick MacLeod—WWD/Penske Media/Getty Images
 
@@ -1234,7 +1140,6 @@ e.l.f. Beauty董事长兼首席执行官
 
 Engie首席执行官
 
-![](img/48be9db360685ef05cb7f172e60d2a10.png)
 
 图片来源：Courtesy of Microsoft
 
@@ -1246,7 +1151,6 @@ Engie首席执行官
 
 Thrive Capital首席执行官兼创始人
 
-![](img/87df4f15f1d72c0808c3f45d8e8a50d9.png)
 
 图片来源：Mackenzie Stroh
 
@@ -1260,7 +1164,6 @@ Thrive Capital首席执行官兼创始人
 
 辉瑞公司（Pfizer）董事长兼首席执行官
 
-![](img/9ad57b1772fda4010ce39251c32092f8.png)
 
 图片来源：Dia Dipasupil—Getty Images
 
@@ -1272,7 +1175,6 @@ Thrive Capital首席执行官兼创始人
 
 通用动力董事长兼首席执行官
 
-![](img/8b3c9b7499f60717a717256464972c48.png)
 
 图片来源：Paul Morigi—Getty Images/Ovation
 
@@ -1284,7 +1186,6 @@ Thrive Capital首席执行官兼创始人
 
 开云集团（Kering）董事长兼首席执行官
 
-![](img/2d8d8870f0717ccb2734f14235091fbe.png)
 
 图片来源：Swan Gallet—WWD/Getty Images
 

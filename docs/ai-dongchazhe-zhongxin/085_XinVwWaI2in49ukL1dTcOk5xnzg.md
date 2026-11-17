@@ -54,7 +54,6 @@ close up shot,Chanel perfume, transparent bottle, natural, translucent, Water an
 
 > （真人照片叠图链接）+镜头+主体描述+形容词+万能词+输出定量
 
-![](img/45b6c820900331a5a2eb2cb5a93b42cd.png)
 
 （真人照片叠图链接）super cute girl IP by popmart， brown curly hair, Scenes in winter, pastel color, Mockup, fine luster, clean background,3D render， Soft focus ，oc, blender，best quality， --ar 3:4
 

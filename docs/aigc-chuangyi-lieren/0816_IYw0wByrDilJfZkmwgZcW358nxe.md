@@ -94,13 +94,11 @@ https://play.google.com/store/apps/details?id=com.ex3ndr.happy
 
 +   接收进度通知
 
-![](img/c5ce5663c74f6bb6bc3136f9ed3c391d.png)
 
 第四步：开始使用！！
 
 直接在手机App里就可以聊天了
 
-![](img/7b9a1a07e5e8a3d6150c0dd11d64a1aa.png)
 
 对了，是可以同时打开多个Session的，多个任务可以并行做。
 

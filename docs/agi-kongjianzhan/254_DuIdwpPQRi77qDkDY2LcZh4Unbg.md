@@ -64,9 +64,7 @@ https://x.com/gizakdag/status/1811424873119699375/photo/3
 
 # 《色彩》
 
-![](img/30b1b612dabd8d8fbf6e1d52945a4b0a.png)
 
-![](img/70c7199bca691058a79153fa4d8bfadb.png)
 
 ![](img/42f79832760af714ae08d8032a6f43ce.png)
 

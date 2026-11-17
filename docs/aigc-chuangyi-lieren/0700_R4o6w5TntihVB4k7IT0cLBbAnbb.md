@@ -28,7 +28,6 @@ FLUX.**1 重新定义了 AI 生成艺术的可能性。以下是其**突出的�
 
 ![](img/7f0a116a7e2c695e36b23420f832dcfc.png)
 
-![](img/4c540b6a818242b69f371b9e493981a6.png)
 
 ![](img/5324c598d007c84d86b14b075d2ff150.png)
 
@@ -38,9 +37,7 @@ FLUX.**1 重新定义了 AI 生成艺术的可能性。以下是其**突出的�
 
 ![](img/30f3ce2d2d1cc3c5bff309f228ec4d28.png)
 
-![](img/4ba912134ae96d5f5c122932c3cb62ee.png)
 
-![](img/58fea228ab2949abe8a732497dca1162.png)
 
 ![](img/d69a5c1ec099b216e8b25983f849a424.png)
 

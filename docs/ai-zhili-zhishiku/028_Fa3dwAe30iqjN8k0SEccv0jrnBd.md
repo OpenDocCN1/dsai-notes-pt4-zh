@@ -6,7 +6,6 @@
 
 [EPRS_Generative AI and watermarking, 2023 zh.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S5QtbaewQoUK0PxJ01rcuT9bnXU)
 
-![](img/bc6e88d0c7353ba536f1c1ea9f896fec.png)
 
 [EPRS_Generative AI and watermarking, 2023.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BuUBbHjVeoA3S7xqqR3cQJxAnRe)
 

@@ -50,7 +50,6 @@ a mascot logo of a robot, simple, vector --no shading detail
 
 然而，您提供给 A.I. 的数据越多，就会得到更准确的结果 - 在本文中，我将向您展示如何编写更好的提示。
 
-![](img/2eceb20d4e77ec0c5971f8adc72521b0.png)
 
 如何在 Midjourney 中编写 Logo 设计提示？
 
@@ -80,7 +79,6 @@ a lettermark of letter A, logo, serif font, vector, simple --no realistic detail
 
 它通常是公司名称的第一个字母或公司缩写以某种方式进行风格化，以创建独特，独特的外观和感觉。
 
-![](img/40c7331a6775502440cb52c34477a401.png)
 
 / 想象一下一个字母 A 的字母标志，徽标，衬线字体，矢量，简单 - 没有逼真的细节。
 
@@ -96,7 +94,6 @@ a mascot logo of a robot, simple, vector --no shading detail
 
 吉祥物是使品牌更具亲和力和感触性，进而帮助营造与受众之间的强大联系。
 
-![](img/e358515b989d9eeae54a5000fe07ff59.png)
 
 想象一下一个简单、失量化的机器人吉祥物标志，没有阴影细节。
 
@@ -112,7 +109,6 @@ an emblem for a motorcycle group, vector, simple --no photorealistic details
 
 标志通常被用于汽车、教育、政府和军事等行业的公司，因为它传达了遗产、传统和权威的感觉。
 
-![](img/edb589f61f1a490142e5d1b2cd422d7e.png)
 
 一个摩托车团体的标志，矢量图，简单 - 不要有写实细节。
 
@@ -134,7 +130,6 @@ a logo for an ice cream brand, simple, vector, Psychedelic Art --no text realist
 
 这种风格常常与幻觉药物使用有关，反映了这些物质的邪乎和意识扩展的效果。
 
-![](img/e87aa5578fd88f69f331279f10d87ddf.png)
 
 想象一个冰淇淋品牌的标志，简单、向量、迷幻艺术——没有文字的现实细节。
 
@@ -150,7 +145,6 @@ a logo for an ice cream brand, simple, vector, De Stijl--no text realistic detai
 
 /想象一个冰淇淋品牌的标志，简单、向量、德斯泰尔风格——没有文本的真实细节。
 
-![](img/66714727b733019e9d2e6af114036434.png)
 
 /想象一个冰淇淋品牌的标志，简单、向量、德斯泰尔风格——没有文本的真实细节。
 
@@ -168,7 +162,6 @@ a logo for an ice cream brand, simple, vector, Pop Art--no text realistic detail
 
 这种风格包括广告、漫画和日常物品等元素，通常采用大胆鲜艳的风格。
 
-![](img/7acdda1ca298ae02959363083ce14c39.png)
 
 冰淇淋品牌的标志，简洁的向量，Pop Art——没有文字的逼真细节。
 
@@ -190,7 +183,6 @@ a flat vector logo of a lion head, minimal, by Paul Rand --no realistic photo de
 
 想象一只由Paul Rand创作的简洁平面矢量狮子头标志，不要有逼真的照片细节。
 
-![](img/29cb2c683eab8e0fc0a51c769682c0c7.png)
 
 想象一只由Paul Rand创作的简洁平面矢量狮子头标志，不要有逼真的照片细节。
 
@@ -206,7 +198,6 @@ Piet Mondrian
 
 虽然这可能会给您带来类似于在设计中使用De Stijl的结果，但您会明白我的意思。
 
-![](img/1e141f8ba3285745072d41b1ad5759dc.png)
 
 想象一只由Piet Mondrian创作的简洁平面矢量狮子头标志，不要有逼真的照片细节。
 
@@ -222,7 +213,6 @@ a flat vector logo of a lion head, minimal, by Pablo Picasso --no realistic phot
 
 我想在这种情况下，A.I. 选择了立体派，因为毕加索以此最为著名。
 
-![](img/ef1600d4ca2d0516d1fca94edcd65395.png)
 
 一个狮子头的扁平向量标志，由毕加索创作 - 没有逼真的照片细节。
 
@@ -242,7 +232,6 @@ a flat vector logo of a lion head, minimal, by Pablo Picasso --no realistic phot
 
 如果您想将伪3D元素融入设计中，但又不想使其过于复杂（没有阴影，渐变等），使用轮廓效果是个好主意。
 
-![](img/f6f3321fc32b40c1fa8949fbaaca04d3.png)
 
 /想象一下一个简单的钻石标志，渐变，扁平，矢量--没有真实照片细节。
 
@@ -254,7 +243,6 @@ a simple logo of a diamond, gradient, flat, vector --no realistic photo details
 
 想象一个简单的钻石标志，渐变，平面，矢量--无真实照片细节。
 
-![](img/14a9017b99af283fae12c92d2303e62b.png)
 
 想象一个简单的钻石标志，渐变，平面，矢量--无真实照片细节。
 

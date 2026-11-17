@@ -594,7 +594,6 @@ Krisp是一款基于AI的解决方案，可以从会议中消除背景噪音和�
 
 ## Beatoven.ai
 
-![](img/982aaf5e7342508274eabfce31208010.png)
 
 #audio-editing #music #video-editing
 
@@ -2533,7 +2532,6 @@ Gooey.ai是一个低代码平台，可以发现、调整和组合AI工作流程�
 
 ## Kadoa
 
-![](img/34b703a367515c37c892e1a465cb8319.png)
 
 #developer-tools #low-code/no-code
 

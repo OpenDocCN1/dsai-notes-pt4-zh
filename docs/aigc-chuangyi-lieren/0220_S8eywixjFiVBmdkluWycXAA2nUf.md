@@ -8,11 +8,9 @@
 
 ![](img/2512363b602c4e9b249f70ed05d51307.png)
 
-![](img/e14668c9601fe1ac9965aaaa9a866504.png)
 
 ![](img/ecc95875bb734c77c4d378dd7ec84b07.png)
 
-![](img/de1d9146a2e4a8c71e4ff59f3f38e98a.png)
 
 ![](img/808cd6e60274670395671a88745f68e1.png)
 
@@ -30,7 +28,6 @@
 
 https://multiagentbook.com/news/
 
-![](img/6ba55106ba346463c9319426d54faaf0.png)
 
 企业正在采用 AI Agents，关键是如何部署
 
@@ -98,7 +95,6 @@ Agent-Native 基础模型
 
 🤗 趋势：模型从设计之初就内置了多步骤任务分解、规划、工具使用和多模式交互功能。
 
-![](img/5cbe759b7495d17c8816a9b72df33ec7.png)
 
 Interface Agents 成为主流
 

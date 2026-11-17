@@ -285,11 +285,9 @@ Temperature 是控制生成式 AI 模型输出随机性的参数。 Temperature 
 
 > Prompt : "Bunny on horse, holding a lollipop, on a foggy meadow where it grows daffodils"
 
-![](img/b3ef1db530708498d505fd807bbb6ace.png)
 
 现在让我们运行相同的提示，我们不会两次获得相同的图像：
 
-![](img/24f6cc122f27577e41aeac172573ef54.png)
 
 正如您所看到的，图像相似，但不相同。 让我们尝试将 temperature 值更改为 0.1，看看会发生什么：
 
@@ -318,7 +316,6 @@ generation_response = openai.Image.create(
 
 现在，当您运行此代码时，您会得到这两个图像：
 
-![](img/d3bd434c2e7ce1fc9b3749dcd8360944.png)
 
 ![](img/3215755616a3e904741d9937b1f297bc.png)
 

@@ -50,37 +50,23 @@ CMDPE安装器：[点此下载](http://193.200.134.86:5244/d/Cloud189/cmdpe/CMDP
 
 打开桌面上的“**安装系统”**，选项【1】可以全盘搜索系统镜像安装。
 
-![](img/2fc1b46aa413076fb3a1d7ef87896842.png)
 
-![](img/1e662536e3e6b9b9d3ce2843f6d7da37.png)
 
 ### 搜索本地安装安装（输入1后）
 
-![](img/4458b893f8b3fc16a14775ed30d57c7c.png)
 
-![](img/5ba2c2364b6163d5fc8f60674359c2c9.png)
 
-![](img/db43f7420e180297921a109ac71219d4.png)
 
-![](img/3b03a849f5cd48ec7599d3b436f34603.png)
 
-![](img/a7e75d9c0c5bf98293f315c00f1493fa.png)
 
-![](img/46c5d2b39eb31c65df6723aae810f62b.png)
 
 ### 在线下载安装系统（输入2后）
 
-![](img/0470fb75c13988c0cbcd5b989407d75c.png)
 
-![](img/83531c2fafd05b7e789864accd27c0e4.png)
 
-![](img/12f26f024ef14d328738976b191e2b0e.png)
 
-![](img/d203ad8fd8be5b0f75b40b735ce5fc3a.png)
 
-![](img/8f11453167a135847e99c08e70556b57.png)
 
-![](img/852c46b8ba98309562fffcd7eff2c1f7.png)
 
 ![](img/e400cd0be6c29a03081777f43bf16d1b.png)
 

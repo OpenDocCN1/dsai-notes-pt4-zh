@@ -84,7 +84,6 @@ a decision-making body of the Hong Kong Special Administrative Region government
 
 It promotes science and technology and coordinates related affairs within the government.
 
-![](img/f11d7d7fccf56c667d6258b8685f2991.png)
 
 https://www.ogcio.gov.hk/
 
@@ -272,7 +271,6 @@ https://www.pcpd.org.hk/tc_chi/resources_centre/publications/files/guidance_ethi
 
 ![](img/ddd1f00a4dff3b8ea3738501a8ed48cd.png)
 
-![](img/1464523f534da61af84f17f854f6d75f.png)
 
 私隱公署於2018 年10月出版的《中國香港的道德問責框架》9 建議機構採納三項數據管理價值，分 別是尊重、互惠及公平。這三項價值是制定有關開發及使用人工智能的道德原則 和措施的出發點。
 

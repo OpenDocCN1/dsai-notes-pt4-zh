@@ -138,7 +138,6 @@ Google 这次还干了一件很“鸡贼”但很聪明的事：它把 Gemini 3 
 
 以前你搜“三体问题”，Google 给你一堆维基百科链接。
 
-![](img/26a793da4e18e09582b579d12aaa5c88.png)
 
 [07.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G8uVbBCtKok1RPxNbGscEUjOnIg)
 

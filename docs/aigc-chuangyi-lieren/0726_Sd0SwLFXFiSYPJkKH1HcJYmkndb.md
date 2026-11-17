@@ -52,11 +52,8 @@
 
 ![](img/ee532339b52ea7bb29ca1b0ec47f7804.png)
 
-![](img/fee2ecd2c3b7fe5711da676cecec3ac8.png)
 
-![](img/77b6bb3c1bb503217fbf37ec459ef494.png)
 
-![](img/d4897e9e48bd55f7bb46922a0664adb1.png)
 
 ![](img/fcd513470d3d4bb57dc44f51c33de7d2.png)
 
@@ -252,11 +249,8 @@
 
 ![](img/a32161bed023275a8878c93faa4d2949.png)
 
-![](img/9a483a8177514a3f1263dc47b736c86f.png)
 
-![](img/ffff6ebe04fda30787fc8fdfe0cdf4ca.png)
 
-![](img/337c5c8b69a8533413ecc7296ecd9216.png)
 
 ![](img/1cc42d55272c6da96ada322652f15e93.png)
 
@@ -268,11 +262,8 @@
 
 ![](img/1822e035f215fed8a6d453efff9622a4.png)
 
-![](img/57ce4dafd2e13e306b24a67c3518cd7c.png)
 
-![](img/b1f3944f4eba53bc065826ae92508779.png)
 
-![](img/1e4a2b68603c2343196b9c454f951886.png)
 
 ![](img/7159a9460c91db3732203be5547b8645.png)
 
@@ -292,15 +283,12 @@
 
 > 场景感：模拟杂志印刷纸张质感，带有新闻纸颗粒感或印刷微色差，比例 「2:3」
 
-![](img/7f848c99781d011b3251d7f57517f4ca.png)
 
 ![](img/15cb074ca5b8e8371a5364c80d8656ac.png)
 
 ![](img/83806e5c511e3aa6ce19364123308360.png)
 
-![](img/ca776351ba7b8578b5d57d67d195bcab.png)
 
-![](img/52efd02554739c1fd01e4afe096e11e3.png)
 
 > 8张
 
@@ -320,9 +308,7 @@
 
 > 杂志信息加一些小英文元素点缀在下方，比例 「2:3」
 
-![](img/760eb3e9bf9771e9eddb0ed19df2fea9.png)
 
-![](img/e75f8876457609c6998492c0bed5ba1f.png)
 
 ![](img/92429e4f79138cb6db93f0eed0fe3dab.png)
 
@@ -364,11 +350,8 @@ https://a80cyp5nki.feishu.cn/docx/Kajcdocgmo2IuyxAA0nccowVnxf?from=from_copylink
 
 ![](img/8019fddf49cb5bfaabfad03cb085d7e4.png)
 
-![](img/3d0663817d90b17a47a6bac918e88d88.png)
 
-![](img/2c30f93a7101d4adea794f27984d4980.png)
 
-![](img/8dbeefc55397cef30e8191a6e0f56d88.png)
 
 ![](img/6ce6d34c6aa22186b0b706bdf276c82d.png)
 
@@ -380,15 +363,11 @@ https://a80cyp5nki.feishu.cn/docx/Kajcdocgmo2IuyxAA0nccowVnxf?from=from_copylink
 
 > 应用属性：适合商业宣传海报、产品氛围展示、品牌想象图创作，比例 「9:16」
 
-![](img/a0e66ad62ff4ca0279d7b4f0628a3469.png)
 
-![](img/7d82c9e124634a9a09771d347d25c279.png)
 
-![](img/74279db596e6b0028df72f78a7c376a9.png)
 
 ![](img/c6a310b7b64dafc0033d7ad0e5345854.png)
 
-![](img/0fab683ac379920f17570d29554229ae.png)
 
 ![](img/9236647db66c213ecb6ed8f872b238e4.png)
 
@@ -398,11 +377,8 @@ https://a80cyp5nki.feishu.cn/docx/Kajcdocgmo2IuyxAA0nccowVnxf?from=from_copylink
 
 ![](img/175b86096638b5daa08cf3a70a17e3bd.png)
 
-![](img/0559a97d353a7528e57d73445150ecee.png)
 
-![](img/40b748ec3cdb625c4a3cb2019f800c96.png)
 
-![](img/9c188af5a3a12afd2a68ab1524075876.png)
 
 ![](img/2daa951a900a4d29c4b5ce1a3a7f6590.png)
 
@@ -424,11 +400,8 @@ https://a80cyp5nki.feishu.cn/docx/Kajcdocgmo2IuyxAA0nccowVnxf?from=from_copylink
 
 > 适用场景：剧场/诗歌/哲学/文学项目/出版艺术类视觉
 
-![](img/2564e8ae19c8c3bc1da3c572c269f9c3.png)
 
-![](img/d6dbc62731c15b2a7c7177a029a56f33.png)
 
-![](img/b85050334cab2216ab8ab98b52c8cc62.png)
 
 ![](img/0e4fa8ac7e1983f099a10246c1d46f09.png)
 
@@ -444,11 +417,8 @@ https://a80cyp5nki.feishu.cn/docx/Kajcdocgmo2IuyxAA0nccowVnxf?from=from_copylink
 
 > 材质语言：衣饰带金丝点缀、翅膀如玻璃水膜，金线描边呈露珠高光感，比例 「1:1」
 
-![](img/0e5c20e47d6ddf95706eb0d2e524a408.png)
 
-![](img/11fe20cd940c26a2e6b0d2175fb62404.png)
 
-![](img/3420c36b587972abe14a266fc9e537a0.png)
 
 ![](img/6908ec19f72a2c29fcf4f6544c929f21.png)
 
@@ -464,11 +434,8 @@ https://a80cyp5nki.feishu.cn/docx/Kajcdocgmo2IuyxAA0nccowVnxf?from=from_copylink
 
 > 风格关键词：酷感 / 情绪剧场 / 个性装置感 / 黑色空间感 / 极简霓虹光影，比例，比例 「2:3」
 
-![](img/875c1fa46e0b50a41df8e308095e2237.png)
 
-![](img/a8fc8052f655dd46c7a95b600c29b544.png)
 
-![](img/e00ab11f7ddbb5c9541524b867020e5f.png)
 
 ![](img/317c748a71fed6e6fa0b2840aea18547.png)
 
@@ -476,11 +443,8 @@ https://a80cyp5nki.feishu.cn/docx/Kajcdocgmo2IuyxAA0nccowVnxf?from=from_copylink
 
 ![](img/3220f23190d347d2eff793e4b389190a.png)
 
-![](img/123c0b498f0b979961f8b7ad1566c6ef.png)
 
-![](img/bb1ed75718337e576b2d46d0d48b5e51.png)
 
-![](img/6e0dd86b8b536dfc604cc3c5206e739f.png)
 
 ![](img/9932c2f148708abe4a2ffaddb7a7b991.png)
 
@@ -500,7 +464,6 @@ https://a80cyp5nki.feishu.cn/docx/Kajcdocgmo2IuyxAA0nccowVnxf?from=from_copylink
 
 ![](img/c9e08fd217b696ae9120306a13fa00e2.png)
 
-![](img/50aada8d560f7f25a4a2aca16688f389.png)
 
 ![](img/ba5e7367926cb74cbe3cfd99363a00a6.png)
 
@@ -514,7 +477,6 @@ https://a80cyp5nki.feishu.cn/docx/Kajcdocgmo2IuyxAA0nccowVnxf?from=from_copylink
 
 ![](img/e9ac8804aef2031398ed8d81a7cd8533.png)
 
-![](img/938063dd9d232171e6516c3a530078d5.png)
 
 ![](img/0aeef667f01fc3aa32c145d5f1c3f9f3.png)
 

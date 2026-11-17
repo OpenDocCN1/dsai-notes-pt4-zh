@@ -12,15 +12,10 @@
 
 高**品质3D素材上新****不能**停！继上期联合蚂蚁集团官方素材普惠之后，本期我们要隆重为友友们介绍一批新素材亮相，它们出自杭州八仙广告旗下的杭州小仙科技团队之手。堆友联手小仙科技，共同将这批高品质的免费可商用素材分享给大家。
 
-![](img/40b7efca1d1411ec4057d32b98262432.png)
 
-![](img/eeaefb9fdbf06bca3e727ec3d2aa5b07.png)
 
-![](img/7640d931abe5cc2675f97fadf0c89adb.png)
 
-![](img/4eb888d3d495aa8ce747a120bd2e3218.png)
 
-![](img/44c34e3fba69f8daa07230fbdb40c4c4.png)
 
 ![](img/ae927feb127a389bd3be9a314d59f1f8.png)
 

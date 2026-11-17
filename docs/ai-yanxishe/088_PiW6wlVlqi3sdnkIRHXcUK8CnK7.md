@@ -414,13 +414,11 @@ Sora 首先在这个压缩的潜在空间上进行训练，学习如何理解和
 
 Sora 的底层基础仍然是基于 Transformer 架构的扩散模型，通过输入噪声 Patches 和文本提示等调节信息，能够用于预测"干净”的 Patch。此外，Transformer 架构同样也被广泛的应用于大语言模型，计算机视觉和图像生成等领域。在训练过程中，使用固定的种子和输入，随着训练计算量的增加，生成样本质量显著提高。
 
-![](img/197e99651861a439fd8f823f1cd6fafc.png)
 
 [scaling_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AK5fb9vLuoCxrTxdDDLcmbLmneh)
 
 Base compute
 
-![](img/ff562a00e88ecf7a9b375faa6ab78031.png)
 
 [scaling_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TJrwb9XuYoayqbxlpy5cJhzbn9e)
 
@@ -456,7 +454,6 @@ Sora 可以采样宽屏 1920x1080p 视频、垂直 1080x1920 视频以及介于�
 
 研究根据经验发现，以原始长宽比对视频进行训练可以改善构图和取景。将 Sora 与将所有训练视频裁剪为正方形的模型版本进行比较，这是训练生成模型时的常见做法。在方形作物（左）上训练的模型有时会生成仅部分可见主体的视频。相比之下，Sora（右）的视频取景有所改善。
 
-![](img/44717824d80c6911400d20528e0a4759.png)
 
 [sampling_3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HRMtb91rdoYzOnxj62cc3vNbnbf)
 
@@ -522,7 +519,6 @@ Extending generated videos 扩展生成的视频
 
 Sora 还能够在时间上向前或向后扩展视频。下面的几个视频都是从生成的视频片段开始向前延伸的。因此，尽管这几个视频的开头都不同，但所有视频的结局都是相同的。
 
-![](img/a5b58e8953fe1395cac195e6410da8a8.png)
 
 [extend_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RGblbaOiwoDblNxNQprcJtdhnbc)
 
@@ -536,7 +532,6 @@ Sora 还能够在时间上向前或向后扩展视频。下面的几个视频都
 
 通过这种方法，可以向前和向后扩展视频以生成无缝的无限循环。
 
-![](img/095de9f625f7a57572ff03733432a782.png)
 
 [bike_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LUBdb3w9LorXTZxkX6ScAXiTnSf)
 
@@ -562,35 +557,27 @@ Output video
 
 [rewrite the video in a pixel art style.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WRp2bCaVjo6699x90QXcSMfZnNd)
 
-![](img/99464c8a1798e0b35c4ce609c714c508.png)
 
 [make it have dinosaurs.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EftnbxRWsoXzNYxanzVcmLHYnVd)
 
-![](img/3f41f5f3d49823dc4ae402cb52f559d9.png)
 
 [change the video to a medieval theme.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KFjSbTz0ZoVk7XxYiiLcgBE5nEf)
 
-![](img/4d6508eeddf1c5afea33d92a5ebe1c95.png)
 
 [change the sitting to be cyberpunk.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CoWgbFqoPoD0OWxVR4pcRUoLnAz)
 
-![](img/19051147c5357cd401a254398488e015.png)
 
 [make it in claymation animation style.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QU0VbHMazokuaxxksZ7c78JXnMg)
 
-![](img/558c1b27bd1dcd14e1d9844b0c3ed18d.png)
 
 [keep the video the same but make it be winter.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MB4db0OuFoFi8Wxfm8EcEcJUn9d)
 
-![](img/7bc2a77be476a359ca3d9944e85ba7a8.png)
 
 [put the video in space with a rainbow road.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CVzFbaeVcogRVJx1c55chczdn7f)
 
-![](img/c46e1bf555e3337784fa70b68b33ce9f.png)
 
 [change the video setting to be different than a mountain perhaps joshua tree.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NMwzb3G7EoVUj9xiaF2cal1dnWh)
 
-![](img/cae29e650230ed4981403806c0731c61.png)
 
 [make it go underwater.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hg6abtzjWouuK6xYcVGcKfrynLf)
 
@@ -621,19 +608,15 @@ Connecting videos 连接视频
 |  |  |  |
 |  |  |  |
 
-![](img/d076da1b9a66b88778570ed596cfdae2.png)
 
 [a0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XchEbK9kto8EJjxxw8fc4OxJn7b)
 
-![](img/f617646a42a41d3ae64aeba9b4111bed.png)
 
 [a1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YwIibj1nPoOiw9x1ODycdRujnIg)
 
-![](img/a357f9378a513dfd7cbcb13544d9293e.png)
 
 [a2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Se3hbjnS4ooVtqx5CJbckFt0nge)
 
-![](img/4f5cbdc11df5f9d069f81c8836df7486.png)
 
 [b0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UwflbDTbyoPaj8xTfdIck8Uknib)
 
@@ -645,7 +628,6 @@ Connecting videos 连接视频
 
 [b2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZqzLbbKhVoZLuixzKwmcLgBAnqc)
 
-![](img/d7e74a14ea780523e5a9c9e2aada92ce.png)
 
 [c0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XvirbMSfdoTUbpxbr2Bc1tltnrd)
 
@@ -657,7 +639,6 @@ Connecting videos 连接视频
 
 [c2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KY4sbNeeIobpsrxv07EcUKYon4d)
 
-![](img/1c5946fe9636671c8b3e7bbc0bdb5873.png)
 
 [d0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VKiob3bSsoxdbbxNhv2cLvHfncb)
 
@@ -669,11 +650,9 @@ Connecting videos 连接视频
 
 [d2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F2sAbs2onoi1YYxApgKc0OKXnrf)
 
-![](img/709958f934defc5e2b3338d09b15d3c1.png)
 
 [e0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WYHqbN8yFoIw2BxVa5HcgwNince)
 
-![](img/6230361ddfe0d25ecbac9ef453df6cab.png)
 
 [e1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rc2Dbi7bXoklfGxAx20clZkQnVe)
 
@@ -711,7 +690,6 @@ A snowy mountain village with cozy cabins and a northern lights display, high de
 
 Sora 可以创造出看起来像是用摄像机拍摄的视频，摄像机在移动和转动时，视频里的人物和场景也会像在真实世界中那样，按照三维空间的规则移动。这让生成的视频看起来更加真实和自然。
 
-![](img/f0f9c0fc2e07e597ebe4d204675de0b3.png)
 
 [simulation_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SYmKb0cQcoqxqKxtFl0ct56dnfb)
 
@@ -745,7 +723,6 @@ Sora 有时能够以简单的方式模拟影响世界状态的行为。例如，
 
 Simulating digital worlds. 模拟数字世界。
 
-![](img/c013fc6f013a2b8ea0825c3acd0ab058.png)
 
 [simulation_6.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H23cbpRXUoYK4Wxt5NQcdDuGnOf)
 

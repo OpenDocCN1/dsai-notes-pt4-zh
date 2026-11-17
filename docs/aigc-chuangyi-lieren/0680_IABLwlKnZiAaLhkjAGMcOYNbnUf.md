@@ -58,7 +58,6 @@ Stability Matrix内置了一个重新构想的、功能强大的推理界面，�
 
 ![](img/98a6fd0526dc912acdefa7b4c514e54c.png)
 
-![](img/9b4006548f97bf95e506ca2310fe683f.png)
 
 ## 有调理、可视化模型管理
 

@@ -32,7 +32,6 @@ IMA知识库，通过导入自己的知识库文章等打造属于自己个人�
 
 ## 小程序：日常使用
 
-![](img/ed44616d556fdf4e717fe0fccc570343.png)
 
 ![](img/a22c2dce4bedbfaea1e720663bbc512e.png)
 

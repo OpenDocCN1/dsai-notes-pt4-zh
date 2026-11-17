@@ -169,13 +169,11 @@ a close up view of A round red diamond with red light,Placed on a metal surface,
 
 这里的设置，需要跟上文deforum的设置一致。
 
-![](img/e02fa77e064c04780e7077a8f52bf26e.png)
 
 ### 添加motion bro的3D预设
 
 将3D预设添加到合成中。
 
-![](img/a5dd950443ce136fca05971034267f51.png)
 
 ### 设置运动镜头
 

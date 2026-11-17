@@ -915,7 +915,6 @@ print(response)
 
 # 文本摘要 / Summarizing
 
-![](img/23d8ec594272b82b60688422b9a4b73e.png)
 
 [prompt_eng_04_summarizing.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IkNTbw0IHoOPLzxJsv1cYvb7nPd)
 
@@ -1172,7 +1171,6 @@ for i in range(len(reviews)):
 
 # 文本推理 / Inferring
 
-![](img/a2790942b2a4c5566c1af2ad8169b03d.png)
 
 [prompt_eng_05_inferring.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NdaebMTYjo2Sg7xIV53c5X35ncg)
 
@@ -1372,7 +1370,6 @@ print(response)
 
 ## 主题分类
 
-![](img/5f59824db05b5268c3539c1e18a812d1.png)
 
 [prompt_eng_05_inferring.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QUhgbVnhQotNZkxbtMXcYdhxnse)
 
@@ -1781,7 +1778,6 @@ In conclusion, if you&#x27;re looking for a soft and cute panda plushie for your
 
 # 文本扩写 / Expanding
 
-![](img/9f09886cbca552fe842deb123be5937f.png)
 
 [prompt_eng_07_expanding.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FW1HbARtWoBd9OxziafcQ6dKn4g)
 

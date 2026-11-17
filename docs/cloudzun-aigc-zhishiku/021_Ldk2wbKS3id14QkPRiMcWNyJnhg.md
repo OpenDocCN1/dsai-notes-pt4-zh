@@ -452,7 +452,6 @@ Microsoft 365 Copilot  是一个不断发展的工具。 保持其定期更新�
 
 ### 查看提示设计最佳做法
 
-![](img/0fe98b58c9583245c84daa61be04cbe4.png)
 
 ![](img/5145d7e7741c8e9343c680e567b585a8.png)
 

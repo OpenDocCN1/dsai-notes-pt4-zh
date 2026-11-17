@@ -64,7 +64,6 @@
 
 > 创作一组通俗易懂的插画介绍Agent的工作原理，带上文字说明
 
-![](img/c74953fef806dec3dc1d335a93f7b3ef.png)
 
 > Create step-by-step recipe infographic for creamy garlic mushroom pasta, top-down view, minimal style on white background, ingredient photos labeled: "200g spaghetti", "150g mushrooms", "3 garlic cloves", "200ml cream", "1 tbsp olive oil", "parmesan", "parsley", dotted lines showing process steps with icons (boiling pot, sauté pan, mixing), final plated pasta shot at the bottom
 
@@ -92,7 +91,6 @@
 
 > 黑底白字，书法连笔潇洒飘逸灵动字体设计“满江红”，草书字体狂野奔放，长笔画，视觉张力富有动感，笔画流畅飘逸，笔画巧妙延长变形，飞白效果，字体大小变化，错位排版。笔画流畅洒，干净背景，搭配衬线小英文“HunyuanImage 3.0”排版，右边点缀红色传统印章；大师作品，电影主题字体，视觉冲击力强。
 
-![](img/98738086c364a7ab9b22c98e7e8afff3.png)
 
 ![](img/29ef057e9ac56423683fdbef2235c53f.png)
 
@@ -138,7 +136,6 @@
 
 > 暗黑朦，隐约的淡彩+橙黄褪色，逆朦，泛朦，特写，一个灵动纯美的明日香女生人像及场景，突出动态发丝的凌乱美，超高颜值，复古，迷离，伦勃朗光，低饱和，反射，折射，肌理质感，泛光模糊晕染，极简风，柔焦灰度美学，情绪写意，前卫视觉艺术美学，大片高级感，电影美学，大师杰作，细节英文信息解析点缀，超高清，艺术写真
 
-![](img/3fb80ab7598865fe49022899b815b01d.png)
 
 ![](img/b0805397050c9764db6b561276a862cd.png)
 
@@ -146,11 +143,9 @@
 
 > 矢量插画，意识流，春天气息，清新淡雅，由树叶和花瓣以抽象艺术的形式构成一位端庄典雅的东方女性轮廓，正负形，同形异构，色彩几何，柔和的色彩渐变，东方禅意，唯美意境，画面大面积留白，极简主义，创意大赛金奖作品，大师级作品，高清，8k
 
-![](img/1b4d6073a53e6148a80224bcd1fc0f84.png)
 
 > A dramatic, front-facing close-up portrait of Hayao Miyazaki. The composition is perfectly symmetrical, with his face divided vertically into two distinct artistic styles. The left half is hyper-realistic
 
-![](img/4f398c0522592bfea79f78579d4c2e6c.png)
 
 ![](img/d831bd30e7d24186c859e98a3e517682.png)
 
@@ -190,7 +185,6 @@
 
 > 中秋夜晚，巨大的月饼造型房屋，上面刻有“中秋”字样，屋内有一家三口在吃团圆饭，房屋在挂着灯笼的大树下，夜空挂着圆月，暖光，氛围温馨喜庆，AI生成，3D风格，细节精致。
 
-![](img/41a36c46ecdfd6f1de1d0da5dbb807ce.png)
 
 ## 创意宣传海报：
 
@@ -218,7 +212,6 @@
 
 > 可以向其他品牌延伸。
 
-![](img/221c6c5a387b020634ea83bf8ba4143b.png)
 
 ![](img/613e9c212e9b5d0579ce37f3162431b2.png)
 
@@ -262,7 +255,6 @@
 
 > 创意猎人品牌文创周边包装设计，潮流文创风格。以橙色和白色为主色调，搭配可爱卡通猎人图案。涵盖手机壳、手提袋、抱枕、眼罩、贴纸、杯子、日历、滑板、雨伞等多样物品，突出‘CREATIVE’‘HUNTER’等简洁时尚字体文字。营造轻松愉悦、充满潮流感的氛围，契合创意猎人品牌文创定位 。
 
-![](img/d532b4bd5887715fdcffece36ff1cf97.png)
 
 ## IP形象设计：
 

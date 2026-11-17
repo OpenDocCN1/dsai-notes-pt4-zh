@@ -12,7 +12,6 @@
 
 别墅二楼平面布置
 
-![](img/49bf482d4a4955cb836ee43d50f0890f.png)
 
 ## 2.平面效果图
 
@@ -20,13 +19,11 @@
 
 > 建筑平面效果图，住宅建筑平面图，包括两间卧室、一个客厅、浴室、厨房、阳台等建筑空间，每个空间都要有相对应的家具布置——ar 16:9——v 5
 
-![](img/cb385bb3770d96f9cc3e8826fa26df57.png)
 
 > Architectural plan renderings, architectural plans of large shopping malls, including public toilets, shops and other architectural Spaces, each space should have a corresponding layout -- ar 16:9 -- v 5
 
 > 建筑平面效果图，大型商场建筑平面图，包括公共厕所、商铺等建筑空间，每个空间都要有相对应的布置——ar 16:9——v 5
 
-![](img/daff4bbbfdbd71ac904bf10560f9fafe.png)
 
 ## 3.三维平面透视图
 
@@ -34,7 +31,6 @@
 
 > 建筑平面透视效果图，中学建筑平面图，包括老师办公室、教室、音乐教室等等建筑空间，每个空间都要有相对应的布置——ar 16:9——v 5
 
-![](img/5e30bf5d642de8753c768bc9c8035864.png)
 
 > The three-dimensional renderings of the building, the stadium building plan, each space should have a corresponding layout -- ar 16:9 -- v 5 建筑三维平面效果图，体育场建筑平面图，每个空间都要有相对应的布置——ar 16:9——v 5
 
@@ -86,15 +82,12 @@
 
 > prompt： A dressing room with pale pink walls with a forest green velvet armchair, natural wood accents, and vintage-inspired botanical prints --v 5
 
-![](img/63889abc6ff81a235198fe895d525660.png)
 
 > prompt：Earthy brown walls with a soft cream-colored linen sofa, rattan accents, and muted green foliage. --v 5
 
-![](img/d0a8a9a736cef6f84578f88ba5497b57.png)
 
 > prompt： interior design Warm beige walls with a plush, cream-colored shag rug and textured throw pillows in shades of brown and rust. --v 5
 
-![](img/d7996c208ef90dd71686b583c73dd293.png)
 
 ## 8.提示中增加设计师
 
@@ -104,11 +97,9 @@
 
 > prompt： a high-tech and aesthetically pleasing home office with a futuristic design and sleek materials, influenced by the works of Karim Rashid
 
-![](img/7c64aef3e4d542d5142428de32c132f6.png)
 
 > prompt： a modern and minimalist living space with an emphasis on natural light and a neutral color palette, inspired by the works of Axel Vervoordt --v 5
 
-![](img/05029dc4cab412de6b15df03501bbb5b.png)
 
 > prompt： a luxury home interior with biophilic design elements and a natural color scheme, inspired by the works of Kelly Wearstler --v 5
 

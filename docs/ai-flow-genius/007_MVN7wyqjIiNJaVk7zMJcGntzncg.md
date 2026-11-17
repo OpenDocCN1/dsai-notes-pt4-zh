@@ -24,11 +24,8 @@
 
 1.  让GPT推荐5本某某行业的专业书籍，帮助你快速了解这个行业
 
-![](img/b54d86f49bf7ed2bb4f24d347e11871c.png)
 
-![](img/e3a8ea2fe0cb30fd71c21cccefc6808e.png)
 
-![](img/68eb907283128c425a0d1e724889a11a.png)
 
 ![](img/407dbda29beb61e8f52af48f8091e129.png)
 

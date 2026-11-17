@@ -50,11 +50,9 @@
 
 ![](img/4aabfd999cba6d90bf6362ef0a201f4a.png)
 
-![](img/a221d6f2b362ce7a67e455b993fd8cda.png)
 
 ![](img/ad3f4a34f2369b3941004d633c721733.png)
 
-![](img/8a8226d065e899c91c28aaabf7424504.png)
 
 ![](img/e378ba564b8a40f27f1893265d14b984.png)
 

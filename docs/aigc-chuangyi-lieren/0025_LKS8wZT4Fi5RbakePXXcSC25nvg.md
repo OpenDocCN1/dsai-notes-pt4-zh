@@ -138,7 +138,6 @@ Google正式发布的Vids工具，可通过简单提示或Google Drive中文档�
 
 设计师X@Everett World在X上分享了其使用Gen-3 Alpha Turbo的高级相机控制功能来制作室内设计视频的经验，表示这一工具极大地提升了其工作流程的效率。使用的资源包括Udio V1.5的音乐、Capcut的编辑、Midjourney V6.1的图片以及RunwayML的Gen-3 Alpha Turbo视频制作。整体效果很不错~~
 
-![](img/5641c99eecba7a15ecfebaf5453de0f7.png)
 
 [a53a3f19eef19dd57b65cf74a28219b8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Za1GbSq8qoJBEvxvqFZcK5BUnMg)
 

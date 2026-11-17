@@ -14,7 +14,6 @@
 
 +   中文：自定义贴纸设计在一个孤立的白色背景上，用[优雅]字体写着[“瑞秋”]，由[水彩蝴蝶，雏菊和柔和的粉彩色调]装饰。
 
-![](img/7019afd0b1f4d9736713ccf9882da3ae.png)
 
 ### 贴纸组图
 
@@ -64,9 +63,7 @@
 
 ![](img/c575a9d0b8306108c9209e78014ef965.png)
 
-![](img/56ead5797f59241bef4b70ecae015bc2.png)
 
-![](img/1333bc83fb7e31e5d54d2d34db199164.png)
 
 ## 生命周期图
 
@@ -80,9 +77,7 @@
 
 1.  使用ChatGPT给予你灵感：复制下面任何一个例子👇，然后让GPT给你一些类似的建议
 
-![](img/53e0862f04016dee55c7c447f4d59eaf.png)
 
-![](img/e4a466ff5ab1f1f6cdc82c1e42edc061.png)
 
 ![](img/f9d05fbdc86099713dd2cc63c8e1c705.png)
 
@@ -122,33 +117,22 @@ The image I want you to create is of: [desired image].
 
 ![](img/09991e017fcde6dc97d6920cea650330.png)
 
-![](img/b351bc012d27a278a32eaf9cbca033fd.png)
 
-![](img/44095eb4587ab9f083e867f2afdeea5e.png)
 
-![](img/d55bf67d2c17d66fc479e6a27bd5a85e.png)
 
 ![](img/9b4511804b299be8f453b8da541d89d6.png)
 
-![](img/e529c04e40a90d51e78e6cf5e2da92e8.png)
 
-![](img/c7b0440fde9ef37276960c7fd06f16e4.png)
 
 ![](img/c0786fcb259858e4739dcc6ff76d45f6.png)
 
-![](img/14bee40155e68cc06a6f854b5454b001.png)
 
-![](img/69901b46a8f49696b9b91af7a0b3cfe2.png)
 
-![](img/3504f79526a998608c16b15a1f51ac99.png)
 
-![](img/845bb21c40b78e331fa0b68038c2ef1a.png)
 
 ![](img/d35ccddc7013e38a565ba08fc00672e1.png)
 
-![](img/0cdcc9478c4f21b561c8f869de350179.png)
 
-![](img/ff6db52cf55e871b995d2adbcd8df6ea.png)
 
 ![](img/156b2bcfe0d2a5901733aa3ca8561bf1.png)
 
@@ -162,13 +146,10 @@ The image I want you to create is of: [desired image].
 
 ![](img/9e8856ed11dca23afb072ecdb0f8f356.png)
 
-![](img/61af58a5e3ae1a001ab2cd94ec9723bd.png)
 
 ![](img/dc1e3880691e78190f6c4c97b4903fdd.png)
 
-![](img/03a20614e4a377758521898386656901.png)
 
-![](img/2289ae4fc96abbf4ef289936630aba19.png)
 
 ![](img/35bfb3dd47c410a40b5d776421bcbc84.png)
 
@@ -262,19 +243,14 @@ The image I want you to create is of: [desired image].
 
 +   Dalle-3更擅长文字生成，对于提示词的遵循更准确
 
-![](img/e2a5573806dab3c3687c634297a67718.png)
 
 ![](img/f5f9567f6f7022b17d6d5ce33ce2d8d6.png)
 
-![](img/9bc499d863db3cd7e7608e3765b92f74.png)
 
-![](img/b36a0e3828d360566f18e39fc9517a43.png)
 
-![](img/4fb44e0db4020a7914747891bf3171b9.png)
 
 ![](img/47e4dc67d0cb37c8d171f7277fbb19dd.png)
 
-![](img/93d521cf1a6c5cf3f5b36edf9276c94c.png)
 
 ![](img/ae137fbf892973b855d4fe488e840876.png)
 

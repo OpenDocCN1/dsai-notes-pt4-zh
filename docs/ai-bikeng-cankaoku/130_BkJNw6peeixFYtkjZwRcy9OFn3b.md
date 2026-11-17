@@ -141,7 +141,6 @@
 
 [heygen](https://app.heygen.com/loginhttps://app.heygen.com/login)
 
-![](img/7cc28b628d11962ac76f763136f19b2e.png)
 
 [23.数字人入门-heygen.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wf2IbqUBwodWJ8xT92ocgzD1nah)
 

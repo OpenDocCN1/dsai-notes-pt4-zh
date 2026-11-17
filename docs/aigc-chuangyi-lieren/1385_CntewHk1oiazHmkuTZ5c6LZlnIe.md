@@ -100,7 +100,6 @@ Lovart对于标题的字体、设计样式理解得挺准的，新生成的文�
 
 更绝的是，Lovart完全可以当成三维软件来使用，场景材质渲染，完成不成问题：
 
-![](img/6b95f890b38a37478cb2284b5a35dd75.png)
 
 ![](img/8af17ea78563f14d6547e0bfdde84ea9.png)
 
@@ -264,9 +263,7 @@ Lovart 有个绝活，叫结构化九宫格。你可以强行要求它在一张�
 
 使用上面提示词，很快就能得到以下结果：
 
-![](img/73fa7b0c3eae9f7fc8f01616faef5a42.png)
 
-![](img/6a0806582aeb1ecbc353f8ebfc3b64ab.png)
 
 ![](img/f7be8250d023c9349a6bb69bdd1098fe.png)
 
@@ -348,19 +345,13 @@ Lovart 现在可以直接生成这种博物馆级的陈列图，最最最关键�
 
 它是真能干活啊，哐哐一顿输出！
 
-![](img/fa864f713b61a87c9f8ce65d2f46385f.png)
 
-![](img/140b4f1e4f0acba69846d7127bc2e0d8.png)
 
-![](img/dae4d44bf0b1bbbd3bbd774b133ec2fd.png)
 
-![](img/419c9ed8dd44545359db0ff557f53694.png)
 
-![](img/9f8c929a4ad9498ba2af6547c746392c.png)
 
 ![](img/64f34b9b3174900c3067ecdc2fe7d853.png)
 
-![](img/a9215050a3dd711899c7ff11de5efd16.png)
 
 ![](img/bfe4a04b099d909c607bd2b09d9a313f.png)
 

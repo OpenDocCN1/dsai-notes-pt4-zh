@@ -188,7 +188,6 @@ TapNow，可能有很多朋友是第一次听说。
 
 1分钟不到就能出片了！
 
-![](img/69c88e3eca8458a69bd4c767087287bc.png)
 
 [Clip 2-1762251552571.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PPa7bKDlLouXcVxDDVycPNOLn6d)
 

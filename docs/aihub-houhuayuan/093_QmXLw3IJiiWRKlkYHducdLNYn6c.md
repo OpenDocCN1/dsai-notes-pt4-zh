@@ -282,7 +282,6 @@
 
 |  | **单图**默认Fooocus V2风格**无**提示词 | **单图**默认Fooocus V2风格**有**提示词 |
 | --- | --- | --- |
-| 对比操作 | ![](img/ffb7d79a51715038788f73a9b8ec76c1.png) | ![](img/40511686efd3dddbb2a2833cd9738e7f.png) |
 
 ### 图片融合
 
@@ -392,11 +391,9 @@
 
 > embeddings：https://civitai.com/models/119032/unaestheticxl-or-negative-ti
 
-![](img/0b4ecc785510975f0d75d8898c357843.png)
 
 ![](img/8eac049ade54f3c5d6a61ddade19a47f.png)
 
-![](img/b9905b16b67ec522583a7c9de5ae6d0b.png)
 
 ![](img/f374a2f3aa69c05146937e84cb13fdf6.png)
 
@@ -416,7 +413,6 @@
 
 ![](img/7a34128d25099639623832a4d27d62e5.png)
 
-![](img/e8870b4079fbb50ead1961796107fb94.png)
 
 ![](img/aff6bd695523a36d77925009bf3665de.png)
 

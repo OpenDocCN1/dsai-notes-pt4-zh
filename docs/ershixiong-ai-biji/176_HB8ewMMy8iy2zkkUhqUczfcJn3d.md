@@ -20,7 +20,6 @@
 
 +   👍 强大的视频 VAE：Wan-VAE 提供了卓越的效率和性能，能够编码和解码任何长度的 1080P 视频，并保留时间信息，是视频和图像生成的理想基础。
 
-![](img/653346fec37bbf96a6b5460134bcce0f.png)
 
 ## 通义万相2.1-VACE-视频生成编辑-1.3B
 
@@ -28,13 +27,11 @@
 
 > 地址入口：https://www.modelscope.cn/models/Wan-AI/Wan2.1-VACE-1.3B
 
-![](img/27c2153ed77ef3f04a52054bf0a42ff2.png)
 
 ## 使用魔塔平台提供的免费示例
 
 ModelScope社区与阿里云合作，Notebook功能由阿里云提供算力支持，CPU 环境不限量，GPU 有免费额度
 
-![](img/ee86ba9711d0961c7f7b6d4107264d76.png)
 
 ## 选择 GPU 环境
 
@@ -58,7 +55,6 @@ ModelScope社区与阿里云合作，Notebook功能由阿里云提供算力支�
 
 修改后的 ipynb 文件已经准备好了，大家可以进入页面下载
 
-![](img/d9df1c75c118e06ceb055886015acee7.png)
 
 ## 启动项目
 
@@ -66,7 +62,6 @@ ModelScope社区与阿里云合作，Notebook功能由阿里云提供算力支�
 
 > 运行前，请先修改自己的千问 API KEY，https://dashscope-intl.aliyuncs.com/api/v1
 
-![](img/175d4b378c1100a79da89e1339c3264d.png)
 
 ## 视频地址
 

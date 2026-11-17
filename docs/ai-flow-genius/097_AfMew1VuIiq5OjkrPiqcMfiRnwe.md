@@ -414,7 +414,6 @@ Typeface 目前的功能暂时未涉及用户反馈等，可目前营销最关�
 
 Source：Typeface 官网
 
-![](img/ca74f04e7ca2e4aed64f5cefacf06bd2.png)
 
 ![](img/033d89d15912c2525e125c158d2a2ef6.png)
 

@@ -52,13 +52,9 @@
 
 4月中旬，在3CE与天猫为品牌年度会员日发布的“春日AI花神装”活动中。品牌为每一款主推的口红产品对应设计了不同的“花神妆容”。消费者被邀请上传自己的照片，通过AIGC以图绘图的方式，消费者可以生成自己独一无二的AI花神装照片。
 
-![](img/23df1158453fd9e1486296a19a34ea48.png)
 
-![](img/af9761fe36e354c8e35ef06496b58634.png)
 
-![](img/e8956e3990b5c37b4234c355979ec631.png)
 
-![](img/d78b1353193fec17851c0a56f76943f8.png)
 
 ![](img/1434975cba5649b8361e983a8e6d7b36.png)
 
@@ -110,7 +106,6 @@ but lab苦命甜心海报
 
 ![](img/281f3f914329e0b3625fa9ad9bc4e565.png)
 
-![](img/427d4b8af88703e7d3e042e49138996a.png)
 
 ![](img/679e361fcea04be553d4a179b8876129.png)
 
@@ -158,11 +153,9 @@ Youtube博主Wade Mcmaster在《BEST AI Art Generator? Dall E 2 vs Midjourney vs
 
 Stable Diffusion： 风格更加写实，对"照片"风格的艺术作品往往有稳定的把握。但有时容易丢失一些面部细节和材质细节。
 
-![](img/adef0b06e0dbde4f268e3ca5ee462cb7.png)
 
 关键词：商人,照片
 
-![](img/7b6549cdd48cd1356ead41b975bf35d0.png)
 
 关键词：忙碌的城市街道
 
@@ -210,17 +203,11 @@ Stable Diffusion： 风格更加写实，对"照片"风格的艺术作品往往�
 
 **5月3日，特赞AIGC STUDIO 为**伊利品牌创作的微缩食物海报正式上线了。 在大家即将回归上班的日子，伊利提出“继续放假”的畅想。而我们利用AIGC，将伊利的明星产品与各种脑洞场景相结合，对应伊利的9款明星产品分别设计了9张海报。
 
-![](img/a90ab63d33909529ff2c57230aecabb2.png)
 
-![](img/4495f23442592aeed32069e956697c60.png)
 
-![](img/f0c0286a9441bd1f88aec680afe6a98d.png)
 
-![](img/32b6bfacd39e219709b05a496cd5f281.png)
 
-![](img/93b5f7306247ba964d87704ab177f1a3.png)
 
-![](img/d95a74075fe6b49d97b2e49da1c77366.png)
 
 ![](img/985f500bb8996647d96f69b251e37892.png)
 

@@ -26,7 +26,6 @@ Midjourney v7上线后，配套的角色参考（cref）功能一直迟迟未公
 
 ![](img/7a5e170df3b7edca36d80c62cc575822.png)
 
-![](img/291036423d9058cff0d261b346bf0a76.png)
 
 ![](img/a53c35c9f0539ae3442e1b60bf7b2a18.png)
 
@@ -74,21 +73,13 @@ side shot of a girl is cookingside shot of a girl is drinking a girl is running 
 
 结果如下：
 
-![](img/cb553f44bbdd6ea40d317156d4aae7e7.png)
 
-![](img/dbf3cf20c8fa82634820a480fc73d114.png)
 
-![](img/356176c77e926983d8b19032ba3cb2ae.png)
 
-![](img/48876467a508e0df489ac8ae8853f7ca.png)
 
-![](img/0c7a6023b118c46390cf7fd03b7f82af.png)
 
-![](img/4d0cc1bed251f96195e60aef2523960e.png)
 
-![](img/997f13ee642034568781667ea5e2b05e.png)
 
-![](img/ecff868d0a1933c33c2cd34e346153e9.png)
 
 无论是场景的变化还是服装的变化，完成得都非常好，这和之前MJ的角色参考功能完全不是一个段位的效果（用过的都知道那玩意儿基本没用）
 
@@ -96,7 +87,6 @@ side shot of a girl is cookingside shot of a girl is drinking a girl is running 
 
 好了，聊到这儿说说很多人力捧的用4o做角色一致性的问题，为什么我一直强调4o很强大但它代替不了工业生产呢？因为本质上它目前就干不了这个活，同样的图片，看看4o的模仿结果，我开了几次，根本得不到能体现一致性的长相，尤其实在写实风格下：
 
-![](img/f92c285179757c8428c7cfd946fb37e5.png)
 
 ![](img/6dc6cae0ee4d920bf9ba8cb338eb6598.png)
 
@@ -126,13 +116,10 @@ Lora的逻辑是建立在多张照片参考的基础之上的，而MJ只需要�
 
 看下面这个逆天的例子，参考原图如下：
 
-![](img/0de8e70f26cf3a85f1b36da0de04ca39.png)
 
 ow设置在300-600区间，模拟这个机械体的各种状态：
 
-![](img/e0ed925a26d8d72ca9341c1a1351173b.png)
 
-![](img/f4d72a3573fa9ddc822dd2e6385efb48.png)
 
 ![](img/3d93000b2626bd5115b207c24756c074.png)
 
@@ -150,13 +137,11 @@ ow设置在300-600区间，模拟这个机械体的各种状态：
 
 再看一个装置物体的测试，有非常多的细节, 同时我们把它们迁移到不同的场景里。 你会发现效果强悍得变态，
 
-![](img/623b2f73403e3e7b856a960b169fcb31.png)
 
 ![](img/d8a2486c58734a5267348890047abd0f.png)
 
 同时，「 Omni-Reference 全向参考」还能实现同样一个场景的不同角度，做设计的同学都明白这个功能的重要性，因为需要维持一致性的不仅仅是角色，叙事的背景和环境同样重要，一旦穿帮，代入感急剧下降。
 
-![](img/dac92a3a74f6e36af3dff828d6fa0041.png)
 
 ![](img/dd3d4fdfa7c2751c7a4a6e12a14b8c51.png)
 
@@ -172,17 +157,13 @@ Midjourney配合 Omni-Reference完全解决了这个问题。看下面这个2D�
 
 生成不同角度，人物的细节和画风维持得非常稳定：
 
-![](img/9cfad124c9c89a8dbc46ba8c2705bbc5.png)
 
-![](img/6d87d8e910603dd4b06308d45dd3fd50.png)
 
-![](img/989bdb17ec3f00fbfd5c09fb62e36a7b.png)
 
 ![](img/0edb70da14504880e820312656d7626e.png)
 
 3D萌系风格效果：
 
-![](img/b49a35d08a52f098b5fd007f8d0af1ed.png)
 
 ![](img/fadb4e2163705c005a5d9bc11a0ad15e.png)
 

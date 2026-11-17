@@ -134,11 +134,9 @@
 
 [DeepSeek崛起、应用与未来竞争.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XGhibaZsOo6wx7xOfEBcVjFwnCf)
 
-![](img/5f65ca5a4850acd32df1a528a906e3dd.png)
 
 [2_清华大学第二弹：DeepSeek赋能职场.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RXT2bos0goGIkZxX16fchw05nff)
 
-![](img/993fcb6f16c7def59aed6366c0c56d56.png)
 
 [清华大学 普通人如何抓住DeepSeek红利.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TpTYbJKePo2jdex0w9QcDYb6nyd)
 

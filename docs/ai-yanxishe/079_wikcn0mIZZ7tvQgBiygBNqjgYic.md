@@ -68,7 +68,6 @@ Stable Diffusion 的代码和模型权重已开源，并且可以在大多数消
 
 ### 找到你想生成的画风图片，查看详细信息并下载相应包和模型。
 
-![](img/1a8d48ba9e1fbc9320efb1006a1c8ada.png)
 
 以韩国美女小姐姐lora包（Korean Doll Likeness）为例。
 
@@ -256,11 +255,9 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
 [觉得麻烦的](https://space.bilibili.com/250989068)同学可以使用整合包，解压[即用。比如独](https://www.bilibili.com/video/BV1ne4y1V7QU)立研究员的空间下经常更新整合包。秋叶的启动器 也非常好用，将启动器复制到下载仓库的目录下即可，更新管理会更方便。
 
-![](img/d1de80c7e05e36e4f8708b7d726a0604.png)
 
 打开启动器后，可一键启动：
 
-![](img/823e69b38c2eb1e37fbcce2b46327869.png)
 
 如果有其他需求，可以在高级选项中调整配置。
 
@@ -387,11 +384,9 @@ pip3 install fairscale
 
 +   不同采样步数与采样器之间的关系：
 
-![](img/2617f8cc144dcd4d2d73ed7e6886787c.png)
 
 +   CFG Scale（提示词相关性）图像与你的提示的匹配程度。增加这个值将导致图像更接近你的提示，但它也在一定程度上降低了图像质量。可以用更多的采样步骤来抵消。过高的 CFG Scale 体现为粗犷的线条和过锐化的图像。一般开到 7~11。CFG Scale 与采样器之间的关系：
 
-![](img/3c11dbe11d946df74002c12362972e1c.png)
 
 +   **生成批次**每次生成图像的组数。一次运行生成图像的数量为“批次* 批次数量”。
 
@@ -405,7 +400,6 @@ pip3 install fairscale
 
 +   **高清修复**
 
-![](img/7d99dd1523dbedcd40951941726eff12.png)
 
 通过勾选 “Highres. fix” 来启用。默认情况下，文生图在高分辨率下会生成非常混沌的图像。如果使用高清修复，会型首先按照指定的尺寸生成一张图片，然后通过放大算法将图片分辨率扩大，以实现高清大图效果。最终尺寸为（原分辨率*缩放系数 Upscale by)。
 
@@ -419,7 +413,6 @@ pip3 install fairscale
 
 +   **点击“生成”**
 
-![](img/03cf0e0f4a9defae32c71a440ab29374.png)
 
 ## Stable Diffusion提示词
 
@@ -435,7 +428,6 @@ pip3 install fairscale
 
 +   Emoji、颜文字 Emoji (💰👨👩🎅👼🍟🍕) 表情符号也是可以使用并且非常准确的。因为 Emoji 只有一个字符，所以在语义准确度上表现良好。关于 emoji 的确切含义，可以参考Emoji List, v15.0 (unicode.org)，同时 Emoji 在构图上有影响。
 
-![](img/576035c7751f1c5336badc94b0944f90.png)
 
 > 💐👩💐
 
@@ -473,7 +465,6 @@ pip3 install fairscale
 
 还可以通过 Prompt Editing 使得 AI 在不同的步数生成不一样的内容，譬如在某阶段后，绘制的主体由男人变成女人。
 
-![](img/28abb1d583a3a9262ab58fa485a471c1.png)
 
 语法为：
 
@@ -535,33 +526,25 @@ pip3 install fairscale
 
 下载模型后需要将之放置在指定的目录下，请注意，不同类型的模型应该拖放到不同的目录下。模型的类型可以通过Stable Diffusion 法术解析检测。
 
-![](img/37620e049f223ebd49a53dd7466a025c.png)
 
 +   大模型（Ckpt）：放入 models\Stable-diffusion
 
-![](img/2cffd89f64a0bea06404b4e02f7dd708.png)
 
 +   VAE 模型：一些大模型需要配合 vae 使用，对应的 vae 同样放置在 models\Stable-diffusion 或 models\VAE 目录，然后在 webui 的设置栏目选择。
 
-![](img/0b709a29263b8907e3be71c57494e812.png)
 
-![](img/d946ee015596faacc4038778eb8ea8f1.png)
 
 +   Lora/LoHA/LoCon 模型：放入 extensions\sd-webui-additional-networks\models\lora，也可以在 models/Lora 目录
 
-![](img/811ddefe21882e4df37c6f683c14ba8f.png)
 
-![](img/f7fac64af595b28a5e0f682bd88fd205.png)
 
 +   Embedding 模型：放入 embeddings 目录
 
-![](img/7f578e7da0daf68e38e22657537c00ee.png)
 
 #### 模型使用
 
 +   Checkpoint(ckpt)模型 对效果影响最大的模型。在 webui 界面的左上角选择使用。
 
-![](img/46952ee41b09f70bc15e112a17a7eba8.png)
 
 一些模型会有触发词，即在提示词内输入相应的单词才会生效。
 
@@ -569,7 +552,6 @@ pip3 install fairscale
 
 对人物、姿势、物体表现较好的模型，在 ckpt 模型上附加使用。在 webui 界面的 Additional Networks 下勾线 Enable 启用，然后在 Model 下选择模型，并可用 Weight 调整权重。权重越大，该 Lora 的影响也越大。不建议权重过大（超过 1.2），否则很容易出现扭曲的结果。
 
-![](img/0a0df536b4cd4257fb4f5f7a7c601d60.png)
 
 多个 lora 模型混合使用可以起到叠加效果，譬如一个控制面部的 lora 配合一个控制画风的 lora 就可以生成具有特定画风的特定人物。因此可以使用多个专注于不同方面优化的 Lora，分别调整权重，结合出自己想要实现的效果。
 
@@ -589,13 +571,11 @@ LoCon 模型也一种 LORA 模型的改进，泛化能力更强。
 
 如果需要在 L[inux](https://github.com/P2Enjoy/kohya_ss-docker) 上部署且需要 GUI，请参考GitHub – P2Enjoy/kohya_ss-docker: This is the tandem repository to exploit on linux the kohya_ss training webui converted to Linux. It uses the fork in the following link
 
-![](img/b12d37f87830eaec217204f387322198.png)
 
 需要保证设备拥有 Python 3.10.6 及 git 环境。
 
 1.  首先，以管理员模式启动 Powershell，执行“Set-ExecutionPolicy Unrestricted”命令，并回答“A”。然后可以关闭该窗口。
 
-![](img/fc0033ddbafe2e5da6eb8d17a81021e1.png)
 
 1.  启动一个普通的 Powershell 窗口，在需要克隆该仓库的路径下，执行以下命令：
 
@@ -647,9 +627,7 @@ pip install --use-pep517 --upgrade -r requirements.txt
 
 双击 gui.bat 也可以。弹出以下界面后，直接访问 URL 即可。
 
-![](img/5b7e8c87fceb8bfe9b2aca1a87691b36.png)
 
-![](img/37fa537dab3f08a118005ea6849bc4db.png)
 
 ##### 训练流程
 
@@ -659,7 +637,6 @@ pip install --use-pep517 --upgrade -r requirements.txt
 
 图片尽可能高清，风格统一但内容形式多样（譬如动作多样、服装多样）。
 
-![](img/f1a367b311258bfef6130869804ca6f1.png)
 
 样本数量可能影响到拟合结果。
 
@@ -671,7 +648,6 @@ pip install --use-pep517 --upgrade -r requirements.txt
 
 将训练集裁剪为多个尺寸相同的图片。可以在 SD webui 界面中自动裁剪，也可以手动裁切。
 
-![](img/bc45769dc12d639f3a3466d916a90748.png)
 
 一般使用的图片尺寸是 512*512，也可更换为其他尺寸，尺寸越大占用显存越高，但对细节的捕捉也会越好。
 
@@ -679,17 +655,13 @@ pip install --use-pep517 --upgrade -r requirements.txt
 
 +   关键词生成 可以在训练环境的页面下打标：
 
-![](img/c054b1919674de8d444b3570068b6d1f.png)
 
 也可以在 sd webui 的页面下打标：
 
-![](img/4c62337bf7e00a9ceb9de96119eb9937.png)
 
-![](img/b2db0241b92a246a584c6314b15f964c.png)
 
 比较这几种不同的打标器的效果，在同一输入下：
 
-![](img/934050e6a840f59cfb644e40d963444d.png)
 
 【本义：一个在铁匠铺里打铁的男铁匠】
 
@@ -701,7 +673,6 @@ pip install --use-pep517 --upgrade -r requirements.txt
 
 +   编组 一些具有同组关系的图片可以利用关键词引导 AI 去归纳它们。譬如，我们训练的对象 Smith 有三张图，分别是全图、背景、前景，那么我可以如此处理：
 
-![](img/35b1a6b26e4ad493447ce35b54678feb.png)
 
 1.  正则化
 
@@ -731,45 +702,37 @@ reggirls 目录下放置的是正则化内容。命名规则是“训练次数<�
 
 **a. 底模**
 
-![](img/9a803353b1a5cc4a31d57a47561a71a0.png)
 
 它表明我们此次训练将以哪个模型为基础进行训练。这个模型需要根据自己的需求选择。如果很明确自己的目标是属于某一大类下的分支，那么可以用接近这一大类的模型进行训练。譬如想训练一个二次元角色，那么可以使用二次元的底模（如 NovelAI）进行训练。如果自己的像训练的目标需要比较好的泛化性，可以使用 sd 模型，因为它包含的人物、物品、风格最多。如果模型为 sd2.0，则需要勾选 v2 和 v_parameterization
 
-![](img/9aa1f679c6b3ef2569e8c5e630dfebaa.png)
 
 b. 最大分辨率 Max resolution
 
 Training parameters 下的 Max Resolution 用于指定当前输入训练集图片的分辨率，请与文件夹内的保持一致。如果尺寸不一会被裁切。
 
-![](img/5825bc748ccbd18548d72c58993eb750.png)
 
 **c. Epoch**
 
-![](img/2f893adf152f3bdbfaff70b65acbe831.png)
 
 Epoch 是指一次将训练集中的所有样本训练一次（即对每个样本完成一次正向传播与一次反向传播）的过程。有时，由于一个训练样本过于庞大，它会被分成多个小块分批学习，每个小块就叫 batch。
 
 > 在深度学习**中，程**序**通过不**断地将数据集在神经网络中往复传递来更新网络中的权重，以此建立对目标的拟合关系，因此只有反复地迭代才能增强数据集的拟合度。随着 ep**oc**h 的增加，模型将从欠拟合（右一，表示即便是来自于数据集中的输入，模型也很难达到它应该有的结果，类似于“只做题库里的题都做不对的差生”）变为过拟合（左一，表示模型对于来自于数据集中的输入，总能精确地达到对应的对结果，但是如果输入一旦有些许偏差，比如输入一些不是训练集中的输入，那结果就会很差，类似于“只会做题库里的题的书呆子”）。我们希望能达到中间的效果，即对训练集输出相对准确的结果，又对不在训练集里的输入也有较好的表现。这种特征就叫泛化。
 
-![](img/7d2bf672c4a46a68f649454bf26b2483.png)
 
 > 因此，我们需要不少于一个 epoch 才能建立起较好的拟合关系，当然也不能太多。对于不同的数据集，使用的 epoch 都可能有所不同。
 
 **d. Batch size**
 
-![](img/1fe4ca35d8e35617d0660afe86a35f37.png)
 
 batch size 表示训练时的批量大小，也就是一次训练中选取的样本数量。这个参数对性能有一定要求，如果性能足够，增加 batch size 在理论上会提高模型的准确性。如果数据集样本量较小，Batch Size 可以等于样本数量，即把所有数据集一起输入网络进行训练，这样做的效果也很好；但是如果样本量较大，这肯定让设备吃不消，因此需要减小 Batch Size。但是，如果 Batch Size 太小，那么意味着在一个 Epoch 中迭代的次数也会减小，训练时权重的调整速度变慢，为了抵消这种影响，还得提高 epoch 才能有更好的效果。所以 Batch Size 与 Epoch 参数二者是相辅相成的，他们二者的关系就好比一次刷多少题和总共刷多少次题。合适的 batch size 应该让 GPU 正好满载运行。
 
 e. Save every N epochs
 
-![](img/4a5916ed791143fdb0503f0819cc65f9.png)
 
 每 N 个 Epoch 保存一次
 
 **f. ****学习率**** ****Learning Rate**
 
-![](img/8276ea7fca4c165c00becee1d6bbd44d.png)
 
 学习率指的是一次迭代（即输入一个样本对它学习，并用此次学习的经验调整神经网络）的步长。这个值越大，表明一次学习对模型的影响越大。为了让学习循序渐进，学习率不应该太高，我们需要 AI 在训练中反复总结一点点经验，最后累积为完整的学习成果。合理的学习率会让学习过程收敛，Loss 达到足够低。
 
@@ -777,7 +740,6 @@ e. Save every N epochs
 
 **g. ****学习率****调度器 ****Learning Rate**** Scheduler**
 
-![](img/617808c1d4e0bf862795df9b8ca06834.png)
 
 学习率调度器是一种用于动态调整学习率的技术，它可以在训练过程中根据模型的表现自动调整学习率，以提高**模型**的**训练**效果和泛化能力。通常，学习率在训练开始时设置为比较高的值，允许 AI“在一次训练中学得更多更快”。随着训练的进行，学习率会降低，逐步收敛到最优。在训练过程中降低学习率也称为退火或衰减。
 
@@ -797,7 +759,6 @@ e. Save every N epochs
 
 h.学习率预热比例 LR warmup
 
-![](img/328c1c958207fa0847d4f78c1dda33e2.png)
 
 刚开始训练时模型的权重是随机初始化的，如果此时选择一个较大的学习率，可能会带来模型的不稳定。学习率预热就是在刚开始训练的时候先使用一个较小的学习率，先训练一段时间，等模型稳定时再修改为预先设置的学习率进行训练。
 
@@ -805,7 +766,6 @@ h.学习率预热比例 LR warmup
 
 i. 优化器 Optimizer
 
-![](img/80d6171a7c3517964f848540475ea72f.png)
 
 在训练神经网络时，我们需要在反向传播中逐步更新模型的权重参数。优化器的作用就是根据当前模型计算结果与目标的偏差，不断引导模型调整权重，使得偏差不断逼近最小。Adafactor 和 Lion 是推荐使用的优化器。
 
@@ -827,13 +787,11 @@ i. 优化器 Optimizer
 
 j. Text Encoder 与 Unet
 
-![](img/358c4bdc66120c25db32475b1c694a2a.png)
 
 机器不[能](https://medium.com/analytics-vidhya/nlp-text-encoding-a-beginners-guide-fa332d715854)直接识别人类的语言，Text Encoder 是一种用于将文本数据转换为机器可读形式的模型或算法。对于输入的一串提示词，程序会将它们分解为一个个标记（Token）输入给 Text Encoder（一个 Token 通常代表着一个特征），这样一句话就能被转为一个向量为机器所识别 4
 
 Unet 是一种用于图像分割的深度学习模型，它的作用是将图像分割为多个不同的构[成](https://medium.com/analytics-vidhya/painting-sketches-with-ml-33a3ece74d31)部分。经过训练后，它可以来填充图像中缺失或损坏的部分，或者对灰度草图进行着色。5
 
-![](img/7a97e5315dff34ab58adee5f41d0114f.png)
 
 我们可以为它们设置不同的学习率，分别对应了“识别文字描述”和“识别图片”的能力。
 
@@ -841,7 +799,6 @@ Unet 是一种用于图像分割的深度学习模型，它的作用是将图像
 
 k. Network Rank(Dimension)
 
-![](img/c669cfa9ae2978d03d47e0e8fd2fd992.png)
 
 表示神经网络的维度，维[度越](https://github.com/KohakuBlueleaf/LyCORIS)大，模型的表达能力就越强。如果训练 lora，该值不要超过 64；如果训练 loha，该值不要超过 32；如果训练 locon，该值不要超过 12 参考 ，但还是要根据具体的训练目标来定，如果目标比较简单，就完全不需要太高的 Rank。
 
@@ -849,7 +806,6 @@ k. Network Rank(Dimension)
 
 l. Network Alpha
 
-![](img/c9e603222ad2f75aa06e1b09c5cc0f83.png)
 
 对模型过拟合的惩[罚权](https://github.com/KohakuBlueleaf/LyCORIS)重。它表示对模型在训练时出现完全拟合（即输出结果与样本一致）时的惩罚的权重，适当提高它可以增加模型的泛化能力（当然也不能太高）。目前经验认为设置为 alpha 设置在 1 以下效果更好 参考。
 
@@ -857,7 +813,6 @@ l. Network Alpha
 
 m. Caption Dropout
 
-![](img/ee691695dba6d3dd23cc9bdec2e96c6a.png)
 
 Dropout 是在深度学习中一种防止过拟合的技术，在训练中，可能模型会反复计算某些节点，随着训练的进行，这可能导致错误的路径依赖，即模型会变得总是依赖这些节点解决问题，就像某个学生碰巧刷到了几道解题方法相似的题目，就误认为所有的题目都要用这种解题方法。Dropout 的解决方法是随机关闭某些神经元，迫使模型在训练时减少神经元之间的依赖关系，从而让神经网络的泛化能力更强。当然，在实际使用模型的时候，Dropout 是关闭的。
 
@@ -865,23 +820,19 @@ Dropout 是在深度学习中一种防止过拟合的技术，在训练中，可
 
 **n. Noise Offset**
 
-![](img/e4d7b3577ea0ea48130636a359075cc3.png)
 
 在原版的 Stable Diffusion 中，模型得出的图片在亮度上总是很平均，[亮](https://www.crosslabs.org//blog/diffusion-with-offset-noise)的场景不够亮，暗的场景不够暗，而且用传统的训练方法也无法让它学会避免这个问题 7 。一般输入 0.1。
 
 通过 Noise Offset，我们可以让图像在亮和暗上的表现更加明显（右图）。
 
-![](img/d46121b9269ba160bee115dc9562e3e8.png)
 
 **o.xformers**
 
-![](img/dabfbb885c037b3acc8ddee20e49294d.png)
 
 Xformers 是一个用于加快图像生成速度并减少显存占用的库。
 
 p. Gradient checkpointing
 
-![](img/0d2a4a5e3b173711e0858272ba74d016.png)
 
 梯度检查点（Gradient checkpointing）是一种在训练模型时减少显存占用的方法，但是会增加训练时长。它避免在训练期间一次计算所有权重，而是逐步计算权重，从而减少训练所需的显存量。关闭它不会影响模型的准确性，但打开它后我们可以使用更大的 Batch Size。
 
@@ -889,7 +840,6 @@ p. Gradient checkpointing
 
 **q. ****shuffle**** caption**
 
-![](img/9c8e67d1d0d85a6c282ca8f9e0d48c8b.png)
 
 打开它，可以让训练时训练集的标签被打乱（Shuffle，洗牌）。如输入”铁匠铺，工人，打铁”，可能被转换为”铁匠铺，打铁，工人“或”工人，铁匠铺，打铁“。
 
@@ -899,11 +849,9 @@ Shuffle caption 可以在多种相似的图像中使用。如果差异较大，�
 
 > 在每一个 epoch 中，输入的前 4 个 token 会被当做触发词，此外的 token 会被当做排除集。ai 会将排除集中的元素在素材中删除后，把素材的剩余部分学进前 4 个 token 中。因此，如果不开启 keep tokens，在进行打乱后，打标中的每一个 tag 在足够多的 epoch 后，都将成为触发词。
 
-![](img/7a84f77eec84ca81a28578d37607c9b7.png)
 
 **r. Token**
 
-![](img/41bcb96970a7fa0da06b1303d528a806.png)
 
 如果你的 Caption 比较长，那么可以扩充一次输入允许的 Token 量。如果不是必要，保持默认值 75。
 

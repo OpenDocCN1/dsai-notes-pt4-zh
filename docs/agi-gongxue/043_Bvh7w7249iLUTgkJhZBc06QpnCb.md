@@ -34,7 +34,6 @@ https://ide.cloud.tencent.com/dashboard/gpu-workspace
 
 ## 效果
 
-![](img/7d1c5587040405260ec9f70056266489.png)
 
 #
 
@@ -74,7 +73,6 @@ https://ide.cloud.tencent.com/dashboard/gpu-workspace
 
 点击【大模型广场】
 
-![](img/9286da08d9b626d7f6d0e178df15364e.png)
 
 ### 点击 Deepseek 打开详情查看介绍
 

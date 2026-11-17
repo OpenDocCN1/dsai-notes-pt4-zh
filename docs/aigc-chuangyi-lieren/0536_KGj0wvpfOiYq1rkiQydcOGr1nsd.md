@@ -6,11 +6,8 @@
 
 # 猜地点
 
-![](img/52f6882590eef5d697e2e905c51cb4b7.png)
 
-![](img/90b5e0659a4212490cb83036b3663542.png)
 
-![](img/860137d9aa31d2c051f361578bf74dc5.png)
 
 ![](img/c9b1dd2ee4d652aaedc8df928c8f13a2.png)
 

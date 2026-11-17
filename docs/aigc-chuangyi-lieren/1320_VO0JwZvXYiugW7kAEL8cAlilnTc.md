@@ -4,7 +4,6 @@
 
 OpenAI正式宣布，ChatGPT的高级语音功能将面向所有Plus和团队用户推出。虽然这项功能会分阶段在一周内完成上线，但很多用户已经迫不及待想要体验这场语音技术的革新。
 
-![](img/a5d084b9b89c0cfc838b27b583f0c42f.png)
 
 [1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HqS7bTjnOoLichxEeBZcJqeYnUc)
 
@@ -24,7 +23,6 @@ AI的声音是否会过于“机械”？这是很多用户关心的问题。这
 
 这次更新的另一个重磅亮点就是记忆功能的加入。借助这一功能，ChatGPT不再是一个仅仅“执行指令”的工具，而更像是一个能够长期“记住”用户偏好的助手。
 
-![](img/c4d4f393942d5eb4a48d95643625950c.png)
 
 [3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HT3vbUXNYow5IBx8a32ch1MBnsf)
 

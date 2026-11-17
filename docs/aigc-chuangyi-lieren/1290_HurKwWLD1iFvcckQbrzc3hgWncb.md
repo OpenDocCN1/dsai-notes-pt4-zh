@@ -18,7 +18,6 @@ PIXART-Σ是由华为诺亚方舟实验室、大连理工和香港大学的研�
 
 PixArt-Sigma此次的更新发布，标志着图像生成技术的一次重大飞跃。传统的图像生成技术往往需要复杂的编程知识和大量的时间投入，而PixArt-Sigma则通过简化训练和测试流程，无论是专业的开发者还是图像爱好者，都能轻松上手，体验到图像生成的魅力。
 
-![](img/3f244f937c3ea99874d8afa9fffdf04b.png)
 
 ## 基于Transformer的核心框架
 
@@ -64,9 +63,7 @@ PixArt-Sigma的发布，它让更多的人能够参与到数字艺术的创作�
 
 ![](img/95670a2cd4a3cb8c9e515e3f8b5db4d0.png)
 
-![](img/1448e19b4d170a97e6b7415d78d29a5d.png)
 
-![](img/3f3a1cc95de4d32a6a18b0a0a250d1e8.png)
 
 ![](img/767d4c6185bbd0b862c23d0ba9ed2294.png)
 

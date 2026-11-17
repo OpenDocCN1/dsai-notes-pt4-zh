@@ -84,7 +84,6 @@
 
 ![](img/39a7af4d85178a47884a17520a1a6f36.png)
 
-![](img/806cb6151f4a8e53d7bb8559be9593a0.png)
 
 ![](img/c103734eb4b610b8d39a7a7cf8ecc64c.png)
 

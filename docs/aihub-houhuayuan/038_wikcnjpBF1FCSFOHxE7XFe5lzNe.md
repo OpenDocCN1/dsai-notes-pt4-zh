@@ -46,7 +46,6 @@ OpenAI 插件不是一种可以让开发人员将 OpenAI 的人工智能模型�
 
 很多人都看到了 ChatGPT 的强大能力，但是限于一些合规的因素，很多内部的数据没办法利用到，这块有两个思路，一个是自己训练个开源的模型，消费自己的定制数据库，另一个就是 OpenAI 给出了他的解法，只提供自己的分析处理能力，然后公开透明数据获取处理的过程，让你放心食用，他们开放了自己这个插件的开源仓库代码：https://github.com/openai/chatgpt-retrieval-plugin
 
-![](img/71e859da19c2eb969fa2dc2b69a23fb7.png)
 
 [ChatGPT-retrieval-plugin-demo.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnSfhs9BeGCJj2F2hByAlehb)
 
@@ -179,7 +178,6 @@ OpenAI 的 ChatGPT 产品破圈的过程大家还记忆犹新，最开始是提�
 
 |  | 官方最佳实践 | 我的理解 |
 | --- | --- | --- |
-| 您的描述不应试图控制 ChatGPT 的情绪、个性或确切响应。ChatGPT旨在为插件编写适当的响应 | ![](img/bead8980529853d8a265324f6156ebbe.png) | ChatGPT 不接受你的指令，规则是 ChatGPT 定义的 |
 | 您的描述不应该鼓励 ChatGPT 使用插件当用户没有要求您的插件的特定类别的服务 | ![](img/e1bdfc98e36760843ad52b7a713e5697.png) | 不要对 ChatGPT 过度SEO，不然他会给你限流哦 |
 | 您的描述不应该规定 ChatGPT 使用插件的特定触发器。ChatGPT 旨在适当时自动使用您的插件 | ![](img/3238a9c6319fe237632148237f88ea0a.png) | 不要你告诉 ChatGPT 什么时候可以用你的插件，ChatGPT 会决定好什么时候用 |
 | 除非必要，插件 API 响应应该返回原始数据而不是自然语言响应。ChatGPT 将使用返回的数据提供自己的自然语言响应 | ![](img/642cdd80881effed3efaa45e72b01404.png) | ChatGPT 调用你的插件时候，你可不要夹带私货，就老老实实给 ChatGPT 没有的数据就好 |

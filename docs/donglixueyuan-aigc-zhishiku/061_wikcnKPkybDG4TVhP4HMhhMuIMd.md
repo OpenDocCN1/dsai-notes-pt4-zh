@@ -28,7 +28,6 @@
 
 点击上方“上传文件”，弹出弹窗，选择图片，选择上传。
 
-![](img/2043ec3237fe11d32861631ae49fb8fa.png)
 
 上传中
 
@@ -72,11 +71,9 @@
 
 ![](img/21d83bfde6419ff99c542c4dec8bd8d0.png)
 
-![](img/fa5e7bfc4d8baa640df4cb046c585013.png)
 
 在这里搜索。
 
-![](img/a02c05fe96cb7691cf98d38a5f1cbe51.png)
 
 选择第一个
 

@@ -6,7 +6,6 @@
 
 > 由沙粒科技 @AI研究室-帆哥 整理 https://space.bilibili.com/2161614
 
-![](img/c70f881965178054cc3e4e65937bea73.png)
 
 ![](img/c087008338163961427f2032750f48fc.png)
 

@@ -10,21 +10,15 @@
 
 ## 国内大模型
 
-![](img/789c2833bb45a47b4f5cf1aada606401.png)
 
 ## AIGC产业图谱
 
-![](img/7e8d3d0dd440e622c9a78bd3e113050f.png)
 
-![](img/bdd3854acf4fac80177b5c0811a9e4d6.png)
 
 ## AIGC产业应用
 
-![](img/d6790cd0753e89192bec08b6c513e0ce.png)
 
-![](img/0c8ceb754683b08112bc659cc7ea8689.png)
 
-![](img/6ece8ea591ee0cc4c38aa1ad7165abd4.png)
 
 ![](img/d1e666a354766bba174b7c92507642c0.png)
 

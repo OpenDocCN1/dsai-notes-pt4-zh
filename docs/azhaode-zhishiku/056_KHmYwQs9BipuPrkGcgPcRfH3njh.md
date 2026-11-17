@@ -52,7 +52,6 @@ AIGC工具库将会持续更新迭代，如有遇到工具无法访问或使用�
 
 例如热门的ChatGPT和Claude等
 
-![](img/da215fec46ba038d28ccd76f2fb7b182.png)
 
 ---
 
@@ -220,7 +219,6 @@ AI浏览器：Comet丨Dia
 
 [讯飞绘文](https://turbodesk.xfyun.cn/home)丨[橙篇](https://cp.baidu.com/)丨[Copy AI](https://www.copyai.cn/)
 
-![](img/8b95ee0677b3ec4ea779b022c0d2b776.png)
 
 可根据不同使用场景生成文案
 
@@ -228,7 +226,6 @@ AI浏览器：Comet丨Dia
 
 文案审核纠错和润色：[TextWell](https://www.text-well.com/zh?ref=watcha.cn)
 
-![](img/04b6ab70c1e74fb1326c5c7064ee2758.png)
 
 ---
 
@@ -246,7 +243,6 @@ AI浏览器：Comet丨Dia
 
 [稿定AI](https://www.gaoding.art/create)丨[星流AI](https://www.xingliu.art/)丨[Lovart](https://www.lovart.ai/zh)
 
-![](img/35cbb4114281c6a5ce65844c990b92bd.png)
 
 没有设计经验也可以轻松使用
 
@@ -348,7 +344,6 @@ AI配音/声音克隆：
 
 [Toolify](https://www.toolify.ai/zh)
 
-![](img/6ac7766ce07cd27fea39574232768431.png)
 
 [Ai-bot](https://ai-bot.cn/)
 
@@ -360,7 +355,6 @@ AI配音/声音克隆：
 
 [AI-Bot](https://ai-bot.cn/)
 
-![](img/98791427dac4b7849e21ae38b29ec9ce.png)
 
 [观猹-特工宇宙](https://watcha.cn/)
 
@@ -372,11 +366,9 @@ AI配音/声音克隆：
 
 > 可前往：[阿赵的AI资料库](https://mq1nzy47gs.feishu.cn/wiki/IxFew33ruiHG7Skp115c0G2Pnsd)
 
-![](img/142a972aff786b802bf058e175b88024.png)
 
 > 正在看：阿赵的AI工具库
 
-![](img/151728845b3f7fd7c5998d05db0ed376.png)
 
 > 可前往：[阿赵的AI案例库](https://mq1nzy47gs.feishu.cn/wiki/YJr5wpanBiRCdvkI0bFcRehZnlg)
 

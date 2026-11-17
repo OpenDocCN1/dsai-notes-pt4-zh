@@ -54,7 +54,6 @@ https://www.icloud.com/shortcuts/e90b59faf5e4494997887129b13185a9
 
 **打开「快捷指令」app，找到下载的「智能聊天****」快捷****指令，长按选择「编辑」，将上面**的 API key 粘贴到下面文本框中。
 
-![](img/707e36bdc76cf48d29ddb039bedb19ed.png)
 
 ![](img/7c459c8363afc25d2f162f4b89c9871a.png)
 

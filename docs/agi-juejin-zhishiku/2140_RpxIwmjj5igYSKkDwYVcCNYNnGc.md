@@ -78,7 +78,6 @@ OpenAI起源于一个非营利研究项目，旨在为全人类的利益开发�
 
 IT 之家 | [阅读原文](https://www.ithome.com/0/797/907.htm)
 
-![](img/dccfd2e293c8b56358bde552df07df8a.png)
 
 IT之家报道了一项关于人工智能（AI）的最新研究进展。这项研究来自苏黎世联邦理工学院（ETH Zurich），它表明AI现在能够成功破解CAPTCHA网站验证系统。CAPTCHA是一种常见的验证系统，用于区分人类用户和机器人用户。
 

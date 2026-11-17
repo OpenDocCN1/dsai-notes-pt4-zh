@@ -24,7 +24,6 @@
 
 **🛰️小程序**** **** ****   **                                                                  👸号
 
-![](img/9be5441f3c9ce06bb8ceac8cadb18d83.png)
 
 ![](img/b6e80116d5a8bd89289dc63a87373ff0.png)
 

@@ -32,7 +32,6 @@
 
 ## **Unitree R1** - 超灵活的人形机器人
 
-![](img/93e8ba3a6f3ff60746b63ea6d07711bf.png)
 
 > From drones to self-driving cars, most robots today aren’t the humanoid versions imagined in science fiction. One exception is the R1 from China-based Unitree Robotics. Introduced in July with a shockingly low starting price of just $5,900, this bipedal programmable robot caters to researchers, educators, and software developers testing AI and robotics projects. It weighs just 55 pounds, features built-in AI that supports voice recognition and image processing, and has 26 joints (humans have some 300) that have allowed it to wow audiences with complex movements like boxing, running, and even cartwheeling.
 
@@ -150,7 +149,6 @@
 
 ## Adobe Podcast Enhance Speech - 影响者音频工具
 
-![](img/46b0f95d099ac533d225ab9c6be9bb1e.png)
 
 > Joe Rogan, Call Her Daddy, Huberman Lab. Podcasts are booming, and Adobe’s latest AI speech enhancement tool is giving them more polish. In November 2024, the company released version two of Enhance Speech within Adobe Podcast, its online suite of podcasting tools. Enhance Speech instantly removes noise, echo, and distortion from audio captured in busy public places or in rooms with poor acoustics. “You can have the most brilliant story to tell, but if it’s muffled by background noise or echo, people tune out,” Adobe Head of AI Audio Jay LeBoeuf says. Enhance Speech has already enhanced more than 100 million files.
 
@@ -174,7 +172,6 @@
 
 ## Pindrop Pulse for Meetings - 企业级深度伪造检测
 
-![](img/3339098efa37e555f5204a1d864f8ace.png)
 
 > Pindrop Pulse takes aim at the growing threat of real-time deepfake fraud. “Identity, consent, and accountability are society’s contracts. Deepfakes erode all three,” says CEO [and c](https://www.pindrop.com/article/why-your-hiring-process-now-cybersecurity-vulnerability/)o-foun[der](https://www.pindrop.com/article/why-your-hiring-process-now-cybersecurity-vulnerability/)[ Vijay Balasub](https://edition.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk)ramaniyan. Pulse for Meetings verifies that the right person is on the other end of a call—audio or video—stopping scams within as little as two seconds of speech. The need is urgent: Pindrop found deepfakes were becoming increasingly common in job interviews, and a single deepfake CFO triggered $25 million in scam transfers last year. Pindrop’s product is built on Georgia Tech research and battle-tested across major enterprise deployments.
 
@@ -364,7 +361,6 @@
 
 ## Netgear Nighthawk M3 - 5G 旅行热点
 
-![](img/f579ee3aafc1d6048f68a7f53c2dbef4.png)
 
 > Getting a good signal while traveling can be nearly impossible. Netgear’s Nighthawk M3 is a portable Wi-Fi router with immense power—providing 5G internet at up to 2.5 Gbps, to up to 32 devices, with a 13-hour battery. The device works with any mobile carrier across 140 countries, including the U.S., “so travellers don’t have to do anything,” says Netgear product line manager Arodi Dalpathadu. Ports support antennas to boost signal in rural spots, or add Ethernet if needed. It also moonlights as a power bank. The Nighthawk M3 is currently available in most of the world, with a similar U.S. release by early 2026.
 
@@ -374,7 +370,6 @@
 
 ## 70mai Dash Cam 4K Omni - 更智能的事故检测
 
-![](img/ed0188ff01fe24169f3c4ec60d02d8e5.png)
 
 > In response to unpredictable urban traffic, several consumer dash cams promise video coverage by merging footage from two fixed cameras into a distorted fish-eye view that’s prone to split-second delays. Launched in May, 70mai’s Dash Cam 4K Omni offers a single intelligent eye. Rotating a full 360 degrees, the camera combines magnetic sensor-directed gimbals and AI-powered motion detection to spot trouble in real time and record with greater precision. (Recording can be turned off at any time.) “If you’re in a supermarket when someone hits your car, this device will notice, lock onto the other car, record high-definition evidence, and send an alert to your phone,” says product manager Zhiyi Liu.
 
@@ -398,7 +393,6 @@
 
 ## Belkin Stage PowerGrip - 指向充电
 
-![](img/fb8e8da7ec3605f132759f0a6511b403.png)
 
 > This handy smartphone accessory does double duty while magnetically attached to a smartphone. It’s a backup battery that can wirelessly recharge phones (and other devices via a retractable cable and USB port). And it’s a content creation tool, mimicking the shape of an old-school camera to make it easier to point and shoot, and with a big Bluetooth-enabled shutter button. It’s made for content creators on the go, says Belkin’s Logan Olson, and it turns out that’s “a large segment of people.” The Powergrip can also function as a phone stand and is tripod-compatible.
 
@@ -406,7 +400,6 @@
 
 ## Belkin Switch 2 充电盒 - 延长游戏时间
 
-![](img/4141e14616a0f428f3b0a0b4e3cefb15.png)
 
 > [T](https://bsky.app/profile/matpiscatella.bsky.social/post/3lun37i6gok2k)he Nintendo Switch 2 is the fastest-selling video game hardware device in U.S. history. There’s just one problem: the on-the-go console runs out of juice often. “We knew battery, which was already an issue on the Switch 1, was going to be even more of an issue on the Switch 2,” says Logan Olson, Belkin’s director of product management for future ventures. Belkin, a third-party tech accessories firm, made a charging case for the console with a removable 10,000mAh power bank—enough to recharge the handheld 1.5 times. The case also has space for 12 game cards and an AirTag.
 
@@ -414,7 +407,6 @@
 
 ## **Biwin Mini SSD** - 小驱动器中的大存储
 
-![](img/f0d17da1fc093ca9efc249638ffcaaa3.png)
 
 > Ti[ny gadge](https://www.biwintechnology.com/product/mini-ssd/)ts and handheld c[onsoles ](https://www.biwintechnology.com/product/mini-ssd/)need desktop-level storage, but a whole lot smaller. Biwin’s Mini SSD crams up to 2TB of storage into an NVMe drive the size of a micro-SIM card. “We brought this thing down to the size of a coin,” says Will Lin, director of Biwin Storage Technology USA. Its 15mm by 17mm by 1.4mm land-grid-array slab has 3,700 MB/s of read speed in a tiny footprint. The drive comes in three sizes: 512GB, 1TB, and 2TB. While Lin can’t disclose clients, major gaming handheld manufacturer GPD has said publicly that it’s already using the Biwin Mini SSD.
 
@@ -554,7 +546,6 @@
 
 ## Infinite Machine Olto - 一种在城镇中快速穿梭的方式
 
-![](img/7e111fc45892ce6fa5a92c21c498de5d.png)
 
 > In [the ](https://www.infinitemachine.com/olto?lp_location=wf)world of micro-mobility v[ehic](https://www.infinitemachine.com/olto?lp_location=wf)les, there’s now a dizzying array of mopeds, e-bikes, and scooters to choose from. The futuristic Olto combines features of all three in one slick design. Weighing 176 pounds (swappable battery included) and spacious enough for two passengers, it’s bike lane-legal and doesn’t require a license, registration, or insurance. Its 40-mile battery range can zip you to work as fast as 33 miles per hour. “To get people out of cars, you need alternatives,” says Infinite Machine co-founder Joseph Cohen. Olto aims to include several of the best.
 
@@ -562,7 +553,6 @@
 
 ## Moft Snap-on 手机支架和钱包 - 折纸 MagSafe 钱包
 
-![](img/ea3c06effb8bfdd882ff654ebebc4ad8.png)
 
 > Moft’s clever magsafe wallet has enough space for two credit cards—or a handful of bills—in the small vegan leather slab that attaches to the iPhone’s MagSafe connector, leaving your camera clear for quick snaps. The 6 mm thick origami-inspired design also unfolds into three separate angles to act as a stand for your phone on a flat surface. That’s ideal for taking selfies, watching YouTube, or scrolling through social media. It comes in 27 modern colors, including terracotta, lavender, and soft avocado. And at just over 2 oz., it’s a barely noticeable addition to your pocket.
 
@@ -570,7 +560,6 @@
 
 ## NordicTrack Ultra 1 - 顶级跑步机
 
-![](img/a898932b32d696d919cf0b27caa9f29a.png)
 
 > The typical treadmill is all function and no form. The super-sleek NordicTrack Ultra 1 offers plenty of both. Released earlier this year for NordicTrack’s 50th anniversary, the machine features metal and hardwood uprights, brass control handles, dual vertical fans for full-body cooling, a control hub decoupled from the deck for vibration-free running, a 24-inch touchscreen that pivots to support non-treadmill workouts, and an eight-speaker surround sound system. Although the bestselling NordicTrack Commercial 1750 also has impressive features—and for a fraction of the price: $2,799 compared to $15,000—it can’t compete on style.
 
@@ -578,7 +567,6 @@
 
 ## **Quip Ultra** - 智能电动牙刷
 
-![](img/a8a2b80ebc609303a039f659a648067a.png)
 
 > Replacing electric toothbrush heads usually means substituting the neck up. That’s “like changing half your car when you need it serviced,” says Tom Johnstone, CMO at Quip. The Quip Ultra is a sonic electric toothbrush with replaceable brush “pods.” Not much bigger than the bristles, these heads reduce toothbrush waste by 70%, Quip says. A haptic strip on the handle lets users adjust power and set timers as easily as scrolling on a classic iPod, the wireless charging dock and magnetic mirror mount are elegant bathroom decor, and a connected app tracks your brushing habits with feedback for cleaner teeth.
 
@@ -586,7 +574,6 @@
 
 ## Samsung The Frame Pro - 完美融合的无线电视
 
-![](img/9f3569fcf236bb26749398edac90e089.png)
 
 > Building on its predecessor’s success, Samsung’s The Frame Pro, released in April, tries to make technology less intrusive in your home. It mounts with a customizable fra[me to mi](https://www.samsung.com/us/lifestyle-tvs/the-frame/85-inch-class-the-frame-pro-neo-qled-4k-tv-ls03fw-sku-qn85ls03fwfxza/)mic a gallery wall, blending in with framed photographs and artwork, and can display art from museum collections when asleep. It also has 4K resolution, a speedy 120 Hz refresh rate, and a slew of other tools that make it competitive with other smart TVs. But a sleek-looking television is no good if unsightly cables trail from its frame. The Wireless One Connect Box can sit up to 30 feet away and beam signals to the TV, no strings attached—literally.
 
@@ -626,7 +613,6 @@
 
 ## Yukai Engineering Nekojita FuFu - 一只可爱的猫来冷却你的汤
 
-![](img/d61a4a39b1e387af2a55d46db32e5b26.png)
 
 > This rechargeable cat robot solves an occasiona[l inconvenien](https://globalstore.ux-xu.com/products/nekojita-fufu)ce in a very adorabl[e wa](https://globalstore.ux-xu.com/products/nekojita-fufu)y. Nékojita FuFu blows air to quickly cool off steaming bowls and mugs while perching on their rims. Nékojita—which is Japanese for “cat tongue” and a reference to temperature-sensitive palates—can be set to a constant blow or random intervals, bringing a steaming hot mug to a drinkable temperature in just three minutes. CEO Shunsuke Aoki says the device is designed for parents with young children to reduce “the burden of constantly blowing on food.” Nékojita FuFu has shipped to over 5,000 customers worldwide.
 
@@ -652,7 +638,6 @@
 
 ## Squirrel Ai 智能自适应学习系统 - 个性化人工智能课程计划
 
-![](img/b51b84bfbacd7823f530b455fee5b36a.png)
 
 > Squirrel Ai’s platform is based on what it calls a “large adaptive model,” a combination of education-specific AI systems, trained and ev[aluat](https://www.technologyreview.com/2019/08/02/131198/china-squirrel-has-started-a-grand-experiment-in-ai-education-it-could-reshape-how-the/)ed by human [educat](https://www.bloomberg.com/news/features/2025-09-18/ai-in-schools-a-chinese-entrepreneur-is-betting-on-algorithms-as-teachers)or[s and stu](https://learningpolicyinstitute.org/blog/addressing-teacher-shortages-insights-four-states)dents in Pre-K through 12th grade. The company has been educating more than 24 million students in China with its AI tutoring—in some cases fully supplanting in-person lessons—and is now expanding into the U.S. Unlike other AI learning tools that partner with schools, Squirrel operates its own learning centers that use AI to personalize each student’s lesson plan and testing. The company’s expansion may be buoyed, in part, by a severe shortage of teachers: In the U.S.; an estimated 400,000 open teaching positions went unfilled last year. “Our LAM engine acts as a really good teacher, someone who’s been a teacher for 20 or 30 years,” claims Joleen Liang, president of Squirrel’s U.S. division.
 
@@ -660,7 +645,6 @@
 
 ## **Superfluent** - 对话式语言学习应用
 
-![](img/1fa2ea399a3d8f5e14f0cf454aae4ade.png)
 
 > When [Superfluent](https://www.superfluent.com/)[ founder Sa](https://www.superfluent.com/)m Nevada moved to Denmark, he found learning conversational Danish from apps—most of which are vocabulary-based—frustrating. “I could say, ‘The bear is having ice cream in a red car,’ but I couldn’t actually do much more than that,” he says. When large language models like ChatGPT arrived, Nevada saw an opportunity to create something more useful for daily life. Superfluent, built on a combination of OpenAI’s and Google’s models, uses conversational AI to assess users’ fluency and create appropriate dialogue scenarios, like ordering a coffee in a cafe, or inviting a friend to a party. Each lesson takes around five minutes.
 
@@ -718,7 +702,6 @@
 
 ## **ROG Xbox Ally X** - 便携式游戏 PC
 
-![](img/0ce2ddadd669998f73450d5b76a1f088.png)
 
 > Gaming habits have become more portable, and the ROG Xbox Ally X is ASUS and Microsoft’s response to the trend. The two companies partnered to build a powerful handheld that’s designed to meet players across platforms. “It would have been easy mode for us to make another walled garden,” says Jason Beaumont, vice president of Xbox experiences at Microsoft. “But [players] wanted to be able to play their games regardless of where they came from.” Launching in October, the handheld can play compatible games from across a user’s PC or Xbox library. And because the device runs Windows 11, it can play PC games from third-party storefronts, too.
 
@@ -760,7 +743,6 @@
 
 ## **Carbios Enzymes** - 回收纺织废料
 
-![](img/584fc9cbc649d000163b51cdd827688b.png)
 
 > For Carbios, a French biotech firm, one man's trash is another man's classic white T-shirt. Working with cl[othing man](https://www.k-online.com/en/media_news/k-mag/sustainability/circular-economy/enzyme-recycling-textile-carbios)ufacturers like Patagonia, Puma, and Salomon, the company developed recycling technology that uses enzymes to break down polyester fibers in t[ex](https://www.k-online.com/en/media_news/k-mag/sustainability/circular-economy/enzyme-recycling-textile-carbios)t[ile wa](https://www.waste360.com/waste-recycling/carbios-figures-out-polyester-fiber-to-fiber-recycling)ste; the enzymes act like microscopic scissors on the polyester, leaving behind raw material that can be reconstituted, spun into yarn, and woven into fabric for new garments. The company’s first commercial plant, scheduled to open in France in 2026, will process tens of thousands of tons of waste per year to manufacture fresh plastic packaging and textiles—including about 400 million T-shirts.
 
@@ -824,7 +806,6 @@
 
 ## **XRlabs SIM** - 练习手术
 
-![](img/4e22d92c6136cf0371dc84816080a6d9.png)
 
 > When n[eurosurgeo](https://www.xrlabs.ai/xrlabs-sim)n [Ali Rezaei](https://www.xrlabs.ai/xrlabs-sim) Haddad learned in 2003 that Iranian conjoined twins had died during separation surgery, he vowed to build technology that could prevent such tragedies. Two decades later, his London-based company has developed XRlabs SIM, which uses AI to transform ordinary medical scans into immersive 3D environments where surgeons can rehearse life-or-death procedures. Last year the technology enabled the successful separation of conjoined Pakistani twins Minal and Mirha, allowing doctors to explore the 11-month-olds’ shared anatomy in advance and practice the 14-hour surgery. The mixed-reality platform has been used by doctors in the U.K., U.S. and Turkey.
 
@@ -940,7 +921,6 @@
 
 ## **Kara Pod** - 来自空气的咖啡
 
-![](img/076d3f40e582302a0083b799297d866b.png)
 
 > No need to refill this coffeemaker’s water reservoir every day to support the daily habit: The machine can pull 1 gallon of water a day out of thin air. Kara Water spent two years miniaturizing its patented air-to-water technology to develop the countertop product, which dispenses mineralized water and can use either Kara’s own biodegradable coffee pods or Nespresso-compatible pods to make coffee. It’s not cheap, but even with operating costs factored in, CEO and founder Cody Soodeen says Kara Pod still offers savings to customers who normally buy bottled water or coffee from a shop.
 
@@ -1006,7 +986,6 @@
 
 ## Bluetti Apex 300 - 充电
 
-![](img/8911080aeec636a182bd9a3f11774b40.png)
 
 > This 80-pound portable power station is ready for campsites, RV and van-life nomads, and home blackouts. It’s the first to offer 12,000-watt bypass capability, enough to simultaneously run heavy appliances (like a dryer) and even charge an electric car. A voltage switch toggles between 120V and 240V, and ports allow direct hookup to RVs. As camping and RVs become more popular, and extreme weather more widespread, “people's need for energy is getting more and more complex," Bluetti’s Ellen Lee says. The Apex 300 can be recharged via gas generator or solar panels during extended outages.
 
@@ -1030,7 +1009,6 @@
 
 ## Fortescue Green Pioneer - 解决航运污染的海上解决方案
 
-![](img/f1d7e451f347d255249ae7c6a168a5b6.png)
 
 > The maritime shipping industry is facing a reckoning over polluting vessels, with international regulators requiring significant reductions in carbon emissions by 2050. Fortescue, an Australian mining company that transports iron ore, is tackling the problem with ammonia, a promising alternative to traditional marine fuels. “It doesn't produce carbon dioxide when you burn it," says Andrew Hoare, the company’s head of marine systems and green shipping. Fortescue's Green Pioneer, a first-of-its-kind vessel powered by ammonia and diesel, set sail on a global tour this year, demonstrating safe refueling with the corrosive chemical, which requires special handling. Fortescue plans to refurbish its fleet with ammonia-only engines by 2030.
 
@@ -1080,7 +1058,6 @@
 
 ## Frontline Defense System 2 - 保护房屋免受野火侵害
 
-![](img/b2724e78a758d42bda9eb0b9a981ef48.png)
 
 > In early 2025, wildfires destroyed more than 12,000 properties in Los Angeles County—but only two of the 61 homes protected by Frontline Wildfire Defense’s fire safety system were lost. The system installs spray nozzles on roofs and other key areas around the property; when Frontline’s app detects a nearby fire, they release water for 20 minutes per hour that’s then supplemented with Class A firefighting foam, creating a perimeter of protection around the house. The service is now available in 12 Western U.S. states and has been installed on roughly 2,000 homes. “People are realizing they have to take matters into their own hands,” says CEO Harry Statter.
 
@@ -1170,7 +1147,6 @@
 
 ## **January AI** - 虚拟连续血糖监测仪
 
-![](img/5b43183ce5359d5c81e0769a9c54ee77.png)
 
 > Wh[en a user ](https://www.nature.com/articles/s41746-025-01430-7)[searches a ](https://www.nature.com/articles/s41746-023-00956-y)menu, scans a barcod[e,](https://www.nature.com/articles/s41746-025-01430-7)[ o](https://www.nature.com/articles/s41746-023-00956-y)r takes a photo of their meal, the January AI app uses an algorithm to predict how much the food will spike their blood sugar, and suggests timely behavior changes like exercise or increasing time between meals to control glucose levels without a continuous glucose monitor (CGM) or any needle pricks. The algorithm builds on clinical trial data from thousands of users’ fitness trackers, CGMs, and food logs. “We wanted to come up with an easy and affordable way for everyone to have access to their blood sugar,” says CEO Noosheen Hashemi.
 
@@ -1194,7 +1170,6 @@
 
 ## Nuance Audio Glasses - 镜框内的助听器
 
-![](img/295256865029704d90eeb238948d24b8.png)
 
 > Hear[ing l](https://www.nuanceaudio.com/en-us)oss is common as people age, but a large majority of people who could benefit from hearing aids don’t wear them, often due to stigma. Nuance Audio Glasses offer a new way to hear better, with built-in speakers that amplify sound directionally while hiding discreetly in the stylish frames. Users can customize sound settings on a connected smartphone app and even use a tiny remote to control volume. In February, the $1,200 over-the-counter glasses were approved by the FDA as the first “software as medical device.” Nuance Audio Glasses can accommodate prescription or non-prescription lenses.
 
@@ -1202,7 +1177,6 @@
 
 ## **Osteoboost** - 用腰带减少骨质流失
 
-![](img/028c8b0983bf0d7d4c048f78e2cc22a2.png)
 
 > Osteoporosis weakens bones a[s we age, ](https://my.clevelandclinic.org/health/diseases/4443-osteoporosis)affecting 50 million Americans, and women disproportionately. Half of all women will fracture a bone in their lifetime, according to Laura Yecies, CEO of Osteoboost, and hip fractures in old age often lead to complications or death. Mechanical loading associated with stepping and jumping maintains bone strength, but those actions decrease with age. Osteoboost was inspired by technology used to provide that mechanical loading for astronauts to stay healthy in space. The FDA-cleared vibrating belt worn around the hips consistently reduced spinal bone loss in study participants by 85%.
 
@@ -1234,7 +1208,6 @@
 
 ## SoundHealth Sonu - 无药物鼻窦缓解
 
-![](img/ca0b1cc4691737c6a2cb9e3ccd11d51b.png)
 
 > Paramesh Go[pi expected s](https://soundhealth.life/products/sonu-band)urgical treatment when he approached Dr. Peter Hwang with a months-long sinus infecti[on. Inst](https://soundhealth.life/products/sonu-band)ead, the entrepreneur ended up discussing a new decongestion method that Hwang and a colleague were developing. It would use targeted vibrations to constrict inflamed sinus tissue and move mucus, clearing stuffed passages. The experience inspired Gopi, now SoundHealth's CEO, to join them in creating the Sonu headband, which emits sound waves after the companion smartphone app scans a user’s face to determine their sinuses’ resonant frequencies. In June, Sonu became the first FDA-approved device for treating nasal congestion and allergies without drugs.
 
@@ -1300,7 +1273,6 @@
 
 ## Dreo TurboPoly Fan 707S - 跟随你的风扇
 
-![](img/9b9f3ddd71b021a3a26a2cf73a2da6b1.png)
 
 > Keeping cool is tricky. Fans are one weapon, but their dutiful oscillations don’t always hit the spot. Dreo’s TurboPoly Fan 707S, which can be adjusted to stand from 39 to 44 inches high, has a millimeter-wave radar sensor built in that tracks where people are in a room, and “adjusts its airflow towards the individual,” says Joshua Gunn, vice president of Dreo. “[It’s] our next evolution of what fans could be.” The standing fan can blow air 110 ft. and fill a standard room in less than a minute at a noise level below 25dB.
 
@@ -1316,7 +1288,6 @@
 
 ## iGarden Swim Jet P Series - 家用游泳池的造流器
 
-![](img/470032733f3f9d32a924dda49f1a9ac9.png)
 
 > While elite athletes have long favored in-pool water jets for resistance training, high costs have prohibited them from most swimmers. Now iGarden found a way to bring professional-grade resistance to the home pool with its new Swim Jet P Series. The stainless-steel system uses full-inverter technology for quiet, variable power and a patented flow-channel design that creates wide, consistent currents of up to 1,100 gallons per minute. “We focused on family fun, inviting kids and amateur and professional swimmers to try it as we gathered data,” says iGarden project manager Echo Ke. Ahead of its U.S. launch in October, iGarden inked a partnership with USA Artistic Swimming.
 
@@ -1340,7 +1311,6 @@
 
 ## Maytronics Dolphin Liberty 600 - 更智能的无线泳池清洁器
 
-![](img/595857c8c0b26fe064fbff115052d44f.png)
 
 > “Some competing cordless robots sacrifice cleaning performance for extended run time,” says Franck Sogaard, president of Americas, EMEA, and APAC at Maytronics, whose Dolphin Liberty 600 runs cordlessly for 4.5 hours per session. One charge can keep a pool clean for up to two weeks, which the Liberty 600 does using two brushes, suction, and a jet system that blasts crevices in stairs. Its filtration system includes a debris basket for noticeable gunk, and a cartridge that grabs less visible particles. Recalling the robot is the fun part: Stick its Click-Up device into your pool and shake it, and the cleaner comes back to you, climbing up the pool’s walls.
 
@@ -1400,7 +1370,6 @@
 
 ## **AutoStore** - 更智能的仓库
 
-![](img/85c00c476fc76d85d8464039d792aa24.png)
 
 > As demand for autonomous warehouses grows, AutoStore aims to lead fulfillment innovation. Its modular systems—more than 1,700 of which are in use across nearly 60 countries—combine product-fetching robots with compact, cube-based storage to increase warehouses’ capacity, speed, and accuracy. This spring, the Norwegian company introduced a new technology suite designed to make warehouses even more efficient. It includes CarouselAI, AutoStore’s first AI-powered robotic picker; VersaPort, a flexible warehouse workstation; and software that helps manage and optimize automated operations. “The future of fulfillment… is about adaptability and making warehouses smarter, not just bigger,” says chief product officer Parth Joshi.
 
@@ -1408,7 +1377,6 @@
 
 ## **Gatik Driver** - 公路上的自动驾驶送货卡车
 
-![](img/5f02229d9871262b60f5b55d1300b707.png)
 
 > Self-driving trucks are making daily deliveries across No[rth America, co](https://time.com/collection/best-inventions-2022/6229910/gatik-driverless-box-trucks/)urtesy of Gatik. Since its[ founding](https://time.com/collection/best-inventions-2022/6229910/gatik-driverless-box-trucks/) in 2017, Gatik’s success has come from owning one lane: short-haul, fixed-route autonomous deliveries between distribution centers and stores for clients like Walmart and Kroger. CEO Gautam Narang says Gatik is already “running the largest autonomous trucking fleet in North America,” but last year set its sights on more ambitious expansion. In 2024, the company partnered with Isuzu to mass-produce SAE Level 4 autonomous trucks (which can drive fully independently on certain routes); it is now operating daily driverless operations in Texas, Arkansas, California, and Ontario, Canada.
 
@@ -1500,7 +1468,6 @@
 
 ## AngioDynamics NanoKnife - 微创前列腺癌治疗
 
-![](img/abfc8081479210f9a6642d3b368bd913.png)
 
 > NanoKnife delivers a localized electrical pulse that can treat prostate cancer. Developed by medical device firm AngioDynamics and cleared by the Food and Drug Administration in December 2024, it offers men with intermediate-risk cases of prostate cancer a minimally invasive option before doctors turn to radiation or other traditional cancer treatments that can damage nearby nerves. “It's not therapy that is appropriate for all men,” says David Golombos, a urologic oncologist at Robert Wood Johnson University Hospital in N.J., “but this serves as a great option to treat localized prostate cancer, minimizing quality of life side effects” like erectile dysfunction.
 
@@ -1508,7 +1475,6 @@
 
 ## Ars Pharma Neffy - 无针肾上腺素
 
-![](img/9a315b07e0df47e93cffc74a4fe9758a.png)
 
 > For decades, people with severe food allergies had one emergency option: epinephrine injections, which many fear and delay—research shows just 10 to 15% of people administer them promptly during anaphylaxis. Neffy, an epinephrine nasal spray from Ars Pharma, makes it less scary. “Too many people hesitate in a crisis because they’re afraid of the needle,” says Richard Lowenthal, CEO of Ars Pharma. Using the novel absorption enhancer dodecyl maltoside, Neffy delivers injection-like effectiveness through the nasal mucosa. In March, the FDA approved Neffy’s use for children 33 lbs. (approx. 4 years) and up—an expansion of its initial approval for anyone over 66 lbs. in August 2024.
 
@@ -1516,7 +1482,6 @@
 
 ## Brinter 3D BioPrinted Tissue - 打印新的肩袖和前交叉韧带
 
-![](img/fc7af159ab3bcfb75d6fb226b14cb66b.png)
 
 > Rup[tured r](https://brinter.com/)o[tat](https://brinter.com/)or cuffs and torn ACLs heal slowly after conventional suturing—then often fail when the joint gets back to work. Brinter 3D-prints three-layer implants using bioinks made from living cells and biomaterials, whose polymer core provides strength while the printed collagen covers guide new cells to rebuild the tendon. The company, headquartered in Wake Forest’s regenerative-medicine hub, is currently testing its printed outputs in animal trials, and in the National Laboratory aboard the International Space Station. “We could literally have one of our implants in a human by the end of next year,” co-founder Tom Alapaattikoski says. Next up: cartilage—and eventually, whole organs.
 
@@ -1524,7 +1489,6 @@
 
 ## Cellares Cell Shuttle - 加快细胞疗法
 
-![](img/f8e2cbe01a0ba15baadacfeaa8eafe82.png)
 
 > Cell-based treatments, such as CAR T-cell therapies that help the immune system fight cancer and autoimmune diseases, are some of the most exciting new innovations in medicine. But they are often customized to each patient, making manufacturing arduous. Cellares’s Cell Shuttle is a novel system that leverages robotics to streamline production. It can make 16 different cell therapies at a time—enough to treat as many patients in one year as have received cell therapies in the U.S. so far. This year, it earned the FDA’s Advanced Manufacturing Technology designation, and the first factory is set to become operational in 2026 in New Jersey, with others planned for Europe and Japan.
 
@@ -1548,7 +1512,6 @@
 
 ## Columbia University STAR method - 人工智能生育辅助
 
-![](img/9f1be516a29b872e8a8790150bf10e1c.png)
 
 > [AI is gener](https://time.com/7005892/ivf-under-attack-fetal-personhood/)ating new hope for infertility. About 10% of men with infertility have azoospermia, a low [amount of sp](https://time.com/6211312/ivf-more-effective/)erm in semen.[ It’](https://time.com/7005892/ivf-under-attack-fetal-personhood/)s a challenge f[or h](https://time.com/5492615/male-infertility-taboo-society-shame/)uman technicians to det[ect those ra](https://time.com/6211312/ivf-more-effective/)re [sperm, but Colu](https://time.com/7291154/doctors-report-first-pregnancy-new-ai-procedure/)mbia researchers, led by Dr. Zev Williams, developed the STAR (Sperm Tracking and Recovery) method to scan millions of semen images to detect dozens, and isolate the viable sperm for use in IVF. “It can do that in a couple of hours—and so gently that the sperm we recover can be used to fertilize an egg,” Williams says. After 20 years of trying, the first couple to use STAR is expecting their first child this year.
 
@@ -1556,7 +1519,6 @@
 
 ## Cresilon Traumagel - 几秒钟内止血的简单解决方案
 
-![](img/cddfb6f569048a2678f6a58a61f017e0.png)
 
 > Seconds matter when controlling blood loss after[ a trauma](https://cresilon.com/traumagel/)tic inju[ry. Every year](https://cresilon.com/our-story/)[, about ](https://pmc.ncbi.nlm.nih.gov/articles/PMC10207757/#:~:text=Hemorrhage%20is%20estimated%20to%20account,of%20life%20lost%20%5B2%5D.)[60,000 Am](https://cresilon.com/traumagel/)ericans die from hemorrhage. Brooklyn, [New Yo](https://cresilon.com/our-story/)rk-based Cresilon created Traumagel, a plant-based gel physicians and first responders can apply to wounds through a prefilled syringe that forms a mechanical barrier to quickly stop even severe bleeding and enable clotting. Compared to “old-fashioned” methods like stuffing gauze into a wound, applying pressure, or using tourniquets, CEO and co-founder Joe Landolina says the gel “simplifies the process drastically.” The product received FDA clearance in 2024 and is now used in ambulances and hospitals nationwide.
 
@@ -1580,7 +1542,6 @@
 
 ## Every Cure MATRIX - 治疗不治之症
 
-![](img/16bc546cc5fe8dbc9656ed23317d20cc.png)
 
 > [Less than 25%](https://everycure.org/the-problem/)[ of re](https://everycure.org/the-problem/)cognized diseases have treatments that are approved by the U.S. Food and Drug Administration. The nonprofit Every Cure’s MATRIX platform uses AI to figure out which already-approved drugs could help patients with completely different conditions—a process called drug repurposing. So far, the Every Cure team has identified or advanced 14 repurposed drugs that have become effective treatments for five rare diseases. “It’s so gratifying and rewarding when you see someone improve on a drug that the system wasn't advancing for them,” says co-founder and president Dr. David Fajgenbaum.
 
@@ -1588,7 +1549,6 @@
 
 ## **Gilead Yeztugo** - 预防艾滋病毒
 
-![](img/d6e55665b30d5b8ed94482064418c676.png)
 
 > Treating HIV has changed dramatically since the first antivirals in the 1980s, but this year preventing the disease took a major leap forward. People at high risk of HIV infection could previously get a drug injected once every two months to protect them from getting HIV, but a new drug, Gilead’s Yeztugo, was FDA approved in June to do the same with only two shots a year. (Gilead is already testing an annual shot.) CEO Dan O’Day says he is committed to ensuring it is widely available. “All of us are extraordinarily excited about the opportunity this brings to bend the arc of the epidemic,” he says.
 
@@ -1596,7 +1556,6 @@
 
 ## Mbiota Elemental Diet - 更美味的医用食品
 
-![](img/3cb824f6de99df532298f09c67a9250b.png)
 
 > Elemental d[iets and med](https://www.cedars-sinai.org/newsroom/new-cedars-sinai-study-shows-how-specialized-diet-can-improve-gut-disorders/)ical meal replacements have[ been](https://journals.lww.com/ajg/fulltext/2022/06000/evidence_based_and_emerging_diet_recommendations.28.aspx) shown to be effective in reducing gut inflammation and bacteria overgro[wth, b](https://www.cedars-sinai.org/newsroom/new-cedars-sinai-study-shows-how-specialized-diet-can-improve-gut-disorders/)ut palatability[ is often a](https://www.cghjournal.org/article/S1542-3565(25)00241-1/fulltext) [barri](https://mbiota.com/pages/published-research)er for patients who need them. Traditionally, “it tastes like hot garbage, and the amino acids stick to your tongue so you have this horrific taste in your mouth all day,” says Nicola Wodlinger, CEO of Mbiota Labs, which created an elemental diet intended to be tastier for patients. Researchers with Cedars-Sinai and Mbiota found this year in clinical trials that its formula led to higher compliance among patients treating small intestinal bacterial overgrowth (SIBO) and intestinal methanogen overgrowth (IMO), alongside positive results for improving gut biome.
 
@@ -1604,7 +1563,6 @@
 
 ## Medtronic BrainSense aDBS - 控制帕金森病的震颤
 
-![](img/84084bb59f4834585ac3db0e4a326b21.png)
 
 > While there is no cure for Parkinson’s disease, there’s now a better way to control its involuntary muscle movements. In February, the FDA approved Medtronic’s BrainSense adaptive deep brain stimulation, which regulates the triggering brain signals with more real-time adjustments than previous methods. Surgeons implant a stimulator in the patient’s chest, which is connected with electrodes to the brain. The device continuously analyzes neural activity for brainwaves typical of tremors, and steps in to modify those signals when they are detected. The dynamic, real-time adaptability makes it more accurate, providing just the right stimulation to reduce tremors.
 
@@ -1692,7 +1650,6 @@
 
 ## Vertex Journavx  Vertex - 止痛药的突破
 
-![](img/b221bbf640356a03c5d877804fc7a14a.png)
 
 > Treating pain has long been a challenge. Over-the-counter treatments often don’t do enough, while opioids block pain signals but can be extremely addictive. Vertex broke those barriers with Journavx, the first non-opioid prescription pain killer in more than two decades, earning FDA approval in January. The drug targets one of multiple sodium channels that is involved in regulating pain neurons in tissues throughout the body, but not in the brain, which allows it to avoid the habit-forming risk of opioids. “Pain affects everyone. [It’s] an incredibly important disease area where we thought we could make a big difference,” says CEO Reshma Kewalramani.
 
@@ -1700,7 +1657,6 @@
 
 ## Yseop Copilot - 科学作家的人工智能助手
 
-![](img/b4912781a38022d98f10fed6d86db344.png)
 
 > Generative AI firm Yseop is transforming regulatory writing in pharma, turning what was once a lengthy process into a one-click task. Its Copilot AI assistant streamlines the drafting, editing, and finalization of documents, from clinical study reports to patient narratives and regulatory paperwork like CMC submissions. “We are building the world’s first automated content factory for pharma,” says CEO Emmanuel Walckenaer. Directly within Microsoft Word and Veeva Vault, the platform uses pre-trained LLMs to generate content that meets standards for accuracy and compliance. Since its launch in 2023, Yseop Copilot has been incorporated by Eli Lilly, Novartis, GSK, and AstraZeneca.
 
@@ -1710,7 +1666,6 @@
 
 ## Anker Solix EverFrost 2 - 无冰太阳能冷却器
 
-![](img/3e6bb13ed7bbee9745d64b250b25f86c.png)
 
 > Anker Solix’s EverFrost 2 Electric Cooler doesn’t require ice, can stay cold for days, and is quick to charge ahead of a camping trip or another off-grid adventure. The Chinese company invented a battery-powered, air-cooling technology for the cooler, which comes in three sizes. The 40-liter version is easily powered up by a wall outlet, and cools to a set temperature within minutes. (Other charging options are a car socket, USB-C cord, or portable 100W solar panels—which Anker Solix also sells.) A mixture of beer, produce, meats, and snacks fit inside. Two caveats: It’s very heavy, and costs between $600 and $760.
 
@@ -1742,7 +1697,6 @@
 
 ## Royal Robbins Mosquito Protection Technology - 防蚊布
 
-![](img/4c79ff64d0868570045ea0944be35f5c.png)
 
 > Mos[quitos are](https://www.cdc.gov/global-health/impact/fighting-the-worlds-deadliest-animal.html) the world’s deadliest animal—and their threat is likely increasing. Traditional defenses such as spray-on clothing insecticides like permethrin or skin-applied repellents like Deet not only demand frequent reapplication but have also faced scrutiny as potential health hazards. As an alternative, outdoor apparel maker Royal Robbins launched its proprietary Mosquito Protection Technology this spring: a tight-weave fabric with an imperceptibly contoured structure that's 92% effective at preventing mosquitos' proboscises from penetrating it, according to the company—all while retaining breathability. It's a chemical-free solution that lasts as long as the garment does, with zero reapplication required.
 
@@ -1784,7 +1738,6 @@
 
 ## Canopy Baby Bath Tub Filter 婴儿浴盆过滤器 - 三合一沐浴清洁剂
 
-![](img/9d04e8ec5cef88d7affe70a44d4be908.png)
 
 > This filter reduces chlorine, heavy metals, and skin-irritating contaminants, but it also handles two other jobs for parents concerned about their bathing baby’s health and safety. The BPA-free silicone attachment acts as a bump-proof spout cover to protect sensitive noggins while offering a color-changing battery-free temperature indicator that parents have no doubt that, to paraphrase Goldilocks, the water will be just right. Canopy provides that assurance in more ways than one.
 
@@ -1840,7 +1793,6 @@
 
 ## Nara Organics Whole Milk Infant Formula 全脂婴儿配方奶粉 - 独一无二的配方
 
-![](img/8f7c84dedf41302821eb1fd453e19ec9.png)
 
 > Over two thirds of babies born in the U.S. rely on formula for nutrition, yet when Nara Organics founder Esther Hallam gave birth in New York state, she couldn’t find a single whole milk option (full fat is recommended for brain development)—let alone one without skim milk, sugar, palm oil, or corn syrup (many of which are banned from European formulas). This July, Nara Organics Whole Milk Organic Infant Formula became the first and only FDA-registered organic whole milk infant formula that meets both U.S. and E.U. standards. Hallam hopes her high quality formula will help break the stigma around formula feeding.
 
@@ -1874,7 +1826,6 @@
 
 ## k-ID  孩子 - 在线年龄确认
 
-![](img/5a0afcac66919b0b6673429617d9f210.png)
 
 > In preparation for its ban of under-16s from soci[al media](https://www.businesswire.com/news/home/20250831456307/en/k-ID-Welcomes-Australian-Governments-Rigorous-Trial-of-the-Latest-Online-Child-Safety-Solutions-and-Agrees-the-Technological-Infrastructure-Now-Exists-for-Immediate-Action)[ goi](https://www.businesswire.com/news/home/20250831456307/en/k-ID-Welcomes-Australian-Governments-Rigorous-Trial-of-the-Latest-Online-Child-Safety-Solutions-and-Agrees-the-Technological-Infrastructure-Now-Exists-for-Immediate-Action)ng into effect in December, Australia in August approved k-ID as a vetted way for platforms to comply. Discord, Twitch, Hasbro, and others have already begun using k-ID for advanced user age verification, and it also helps companies understand which product features, in-app advertisements, and data practices are allowed in over 200 jurisdictions so they can customize user experiences accordingly. With countries like the U.K. and Australia now holding platforms more responsible for protecting children online, clarity is vital for compliance.
 
@@ -1882,7 +1833,6 @@
 
 ## Q-Ctrl Ironstone Opal  Q-Ctrl 铁石蛋白石 - 量子导航
 
-![](img/09719e3a9ed9fccd02e567c8a56b1fc2.png)
 
 > Every day, over 1,000 commercial flights are disrupted when military forces or bad actors block the satellite-based GPS signals pilots need to navigate. Australian s[tartup Q-Ctrl ](https://q-ctrl.com/ironstone-opal)cre[ated a highly ](https://q-ctrl.com/ironstone-opal)accurate backup solution: a quantum navigation system that uses ultra-precise atomic sensors to deliver GPS-like accuracy without satellites. In flight tests this year, Ironstone Opal proved itself 50 times more accurate than conventional GPS backups, such as inertial navigation systems, with positioning accuracy down to four meters. In June, the company was awarded a joint DARPA contract with Lockheed Martin to develop its navigation tech.
 
@@ -1890,7 +1840,6 @@
 
 ## U.S. Cyber Trust Mark  美国网络信任标志 - 互联网连接设备的营养标签
 
-![](img/e8ea1031f03bd114fe3a1c4fc4f4f7ed.png)
 
 > The U.S. Cyber Trust Mark is the government’s bid to bring nutrition-label clarity to connected devices. Unveil[ed la](https://www.cybersecuritydive.com/news/fcc-cyber-trust-mark-ul-investigation-delay/758507/)st year, devices like smart doorbells, routers, and baby monitors can carry a QR-coded shield logo certifying they meet baseline cybersecurity standards set by the FCC and NIST, including consumer-friendly security controls and automatic updates. The label, when scanned, will tell customers security-related information about that specific product including a configuration manual. As of September, the project appeared to be on hold as the FCC had launched an investigation into the private company that vets the project, though experts say delays in implementing the cybersecurity solution puts Americans at risk. The FCC did not respond to requests for comment about the status of the program.
 
@@ -1900,7 +1849,6 @@
 
 ## Anysphere Cursor  任意球形光标 - 氛围编码工具
 
-![](img/727c80b364db91c05b043a1a43d76e17.png)
 
 > Cursor sits at t[he forefron](https://time.com/collections/time100-ai-2025/7305819/rick-rubin/)t[ of the v](https://time.com/collections/time100-companies-2025/7289581/anysphere/)ibe-coding revolution. Built atop open-source Microsoft code, Anysphere’s AI-first coding platform allows users to write and edit code with conversational prompts. Using a mix of in-house AI mo[dels a](https://cursor.com/en/blog/series-c)nd ones f[rom ](https://time.com/collections/time100-ai-2025/7305819/rick-rubin/)OpenAI, Anthrop[ic,](https://time.com/collections/time100-companies-2025/7289581/anysphere/) and more, Cursor can automate swathes of software development work. Developers have rapidl[y ado](https://cursor.com/en/blog/series-c)pted the tool: according to Anysphere, over 50,000 enterprises—including over half of the Fortune 500—use it, generating over 100 million lines of code a day. In June, Anysphere raised $900 million in funding to “push the frontier of AI coding research.”
 
@@ -1908,7 +1856,6 @@
 
 ## Greenhouse Dream Job  温室梦想工作 - 磨练求职技巧
 
-![](img/c93d2b00d84b735c2bec3e44a8ccf601.png)
 
 > The traditional job search can swamp recruiters and applicants alike. A new feature from hiring platform Greenhouse, called Dream Job, lets candidates select one role per month to tag with something akin to a Tinder super like, signaling high interest. “For job seekers, it means more control over their search,” says CEO and co-founder Daniel Chait. “For recruiters, it’s a clear way to see…candidates who genuinely want the role” as opposed to the influx of bots that now swarm job applications. Applicants who use it move through the job search process four times more successfully than those who don’t, the company says. More than 6,500 companies already use the tool to filter applicants.
 
@@ -1916,7 +1863,6 @@
 
 ## Logitech Spot  罗技 Spot - 一个简单的会议室监视器
 
-![](img/af9e21432f274de4863f22150fbf0187.png)
 
 > Hybrid offices waste space and energy because managers lack data on how rooms are really used. Logitech’s Spot is a palm-sized puck that can stick to walls and sense when employees are in meeting rooms, by using millimetre-wave radar, temperature, CO₂, and particulate sensors. Spot runs for up to four years on a replaceable D-cell and its data stream feeds into Zoom, Microsoft, and other platforms, helping companies manage meetings and guiding real estate and HVAC decisions that could cut corporate carbon footprints. The company is rolling out the tech globally in the fourth quarter after beta tests.
 
@@ -1984,7 +1930,6 @@
 
 ## Chariot DAFpay - 更便捷的捐赠
 
-![](img/0454f306655d9da3db4e8b9620235f59.png)
 
 > DAFpay makes it easier to donate to a good cause from a donor-advised fund (DAF), a tax-advantaged charitable investment account that has been growing in popularity for years. By integrating DAFpay into their donation forms (next to Venmo, Apple Pay, and other options), nonprofits turn what had been an onerous online experience with multiple redirects into a three-click process. The friction-free option has proved “transformative” for many charities, says Mitch Stein, Chariot’s head of strategy. Blood Cancer United raised $3 million through DAFpay, a big uptick in DAF donations, since installing it in January. More than 100,000 nonprofits now use the service.
 
@@ -1992,7 +1937,6 @@
 
 ## Flashfood 3.0  闪食 3.0 - 削减食品杂货成本
 
-![](img/8e8fe53dd21357f3aa4bd31540a6db2a.png)
 
 > Up to 40% of the U.S. food supply goes to waste while approximately 18 million American families can’t afford or access groceries. Flashfood aims to tackle both problems at once. With version 3.0 of its mobile app, launched in late 2024, shoppers can find flash deals on fresh meat, dairy, bakery items, and produce—often discounted up to 50%—that might otherwise be discarded by nearby supermarkets due to aesthetic flaws or looming expiration dates. Flashfood, which estimates it has saved shoppers more than $355 million on food to date, launched a pilot partnership in July with Kroger, one of the largest grocery chains in the U.S.
 
@@ -2040,7 +1984,6 @@
 
 ## Throne  王座 - 浴室即服务
 
-![](img/dc1648b6d3697a9c3aa9e482f44be774.png)
 
 > The U.S. has a public bathroom problem: The[re aren’t n](https://thronelabs.co/)[earl](https://thronelabs.co/)y enough to meet demand. Throne Labs set out to “rethink restrooms” and reduce costs, and came up with Throne, a pop-up smart bathroom. To access the ADA-compliant pods for free, a user must have a unique ID connected to a mobile device or access card; make a mess too many times and you could lose Throne privileges permanently. (Built-in sensors and other users can flag problems.) The approach is winning over a growing number of city governments. Nearly 100 Thrones will be installed by the end of 2025, including in Los Angeles, Detroit, and Washington D.C.
 
@@ -2048,7 +1991,6 @@
 
 ## UNIMMAP Multiple Micronutrient Supplements 多种微量营养素补充剂 - 人人享有产前保健
 
-![](img/d38cfad1ee1631d8873c1c22e8c31e82.png)
 
 > [Wome](https://time.com/4402863/prenatal-vitamins-pregnancy-multivitamin/)n in t[he ](https://time.com/7021633/gates-foundation-report-2024-childhood-malnutrition/)West have access to a slew of premium prenatal supplements, while pregnant women in poorer countrie[s typically re](https://www.thelancet.com/journals/langlo/article/PIIS2214-109X%2824%2900503-5/fulltext)[ce](https://time.com/4402863/prenatal-vitamins-pregnancy-multivitamin/)i[ve ](https://time.com/7021633/gates-foundation-report-2024-childhood-malnutrition/)two-nutrient tablets, if any, says Spe[ncer Ki](https://www.thelancet.com/journals/langlo/article/PIIS2214-109X%2824%2900503-5/fulltext)rk of Kirk Humanitarian. The nonprofit has worked closely with manufacturers to bring the price of MMS—which was originally developed by the WHO, UNICEF, the UN University, and others, and contains 15 essential nutrients—in line with the iron-and-folic-acid-only tablets currently provided to humanitarian agencies. With evidence clear that MMS helps prevent births of small newborns at highest risk for infant mortality, more than 30 countries are now introducing or scaling up the use of MMS in their healthcare systems.
 
@@ -2130,7 +2072,6 @@
 
 ## Rally Orbital Massager  Rally 轨道按摩器 - 振动按摩枪
 
-![](img/30156e06c0078e7d7c3089703e860c21.png)
 
 > Wh[en a ](https://getrally.co/)bizarre DIY wellness ha[ck—us](https://getrally.co/)ing car buffers to treat muscle pain—eased his dad’s myalgia, Rally co-founder John Benjamin envisioned a new recovery tool. “The best game in town was a percussive therapy gun,” he says. “But Olympic athletes were lugging car buffers into training rooms.” Partnering with sports doctors, pro trainers, and the engineering firm Doris Dev, Benjamin secured nine patents to refine the idea. The result: a sleek device combining circular oscillation with deep percussion for a gently powerful—and shockingly quiet—massage.
 
@@ -2156,7 +2097,6 @@
 
 A better treadmill  更好的跑步机
 
-![](img/53e4740f48048a71247e352ee3c922fa.png)
 
 > What if your treadmill let you set the pace—not with buttons, but with your body? “We had some folks tell us this wasn’t possible, and that was all the challenge we needed,” says Wahoo product manager Joe Justice. The KICKR RUN’s RunFree mode uses sensor technology to speed up or slow down based on your position, and the hoodless deck ensures you’ll never clip your feet. With the ability to tilt forward and backward side to side to simulate real terrain, it’s the kind of innovation that could finally wipe the term “dreadmill” from runners’ vocabulary.
 
@@ -2170,7 +2110,6 @@ Housing from recycled plastic
 
 采用再生塑料制成的外壳
 
-![](img/9fcd0d36be748a68867fb16e8323922d.png)
 
 > From natural disasters to homelessness, there are myriad reasons a person or family might need a new home, fast. “We shouldn’t give up on the American dream,” says property developer Gene Eidelman, an immigrant from Ukraine, “and part of it is home ownership.” Eidelman launched Azure Printed Homes in 2022, 3-D printing entire structures from recycled plastic material in just a few weeks. From studio-sized huts and homes on wheels to stand-alone houses, prices start at $19,900. Azure has constructed about 100 homes so far and will open a second factory in Denver to reach 200 by next year.
 
@@ -2178,7 +2117,6 @@ Housing from recycled plastic
 
 ## Budderfly Virtual Power Plant 虚拟发电厂 - 让小企业影响电网
 
-![](img/0c006145a57ec623c4cf6f60bff37136.png)
 
 > It’s easy to think of an electric grid—in a town, county, or entire state—as a monolith. The reality is, a grid represents a dense system of individual users and businesses, each of which has their own energy needs. A typical restaurant uses more energy than an office building. A grocery store uses more energy than a restaurant. But small, local businesses previously lacked a resource to participate in large-scale energy programs. Budderfly’s virtual power plants, piloted in 2024 and launched officially in 2025, let small-to-midsize businesses install the company’s distributed energy resources—like solar panels or electric car chargers—which Budderfly then manages remotely. The grid gains flexibility between different businesses' peak use times, and energy costs go down.
 
@@ -2202,7 +2140,6 @@ Housing from recycled plastic
 
 ## Jackery Solar Roof  Jackery 太阳能屋顶 - 赋予设计思维力量
 
-![](img/266e7a1b2a74c0e707c2d922e398e545.png)
 
 > Big[ black sla](https://www.jackery.com/pages/jackery-solar-roof)bs on your roof—sol[ar pa](https://www.jackery.com/pages/jackery-solar-roof)nels—typically don’t match your home’s aesthetic. The curved solar tiles of Jackery’s new Solar Roof are the first on the market designed to blend into a neighborhood dotted with Mediterranean-style terracotta roofs. Homeowners can choose from terracotta color or obsidian, and the curved tiles mean that for some homeowners, “solar no longer clashes with design codes or HOA restrictions,” says CEO Jack Sun. Each 10-pound panel is built to withstand high winds, hail, and extreme temperatures, while boasting an industry-leading solar cell conversion rate (how much sunlight is turned into energy) of over 25%.
 
@@ -2210,7 +2147,6 @@ Housing from recycled plastic
 
 ## Kind Designs Living Seawalls 生活海堤 - 用可持续栖息地抗击洪水
 
-![](img/c8ea2b7c2e243a4d850897420b66824b.png)
 
 > Anya Freeman loved living in Miami Beach—except for the frequent flooding. So she founded Kind Designs, which puts a thoughtful spin on seawalls, structures that have protected vulnerable shorelines f[or decades. The](https://www.miamiherald.com/news/local/environment/climate-change/article298269808.html) company’s Living Seawalls are 3D-printed from a non-toxic concrete mixt[ure, an](https://www.miamiherald.com/news/local/environment/climate-change/article298269808.html)d can be custom shaped to suit local flora and fauna: mangrove roots in Miami, barnacles and seagrass in New York. Their richly textured surfaces dissipate waves while providing habitats for sea life. Since October 2024, Kind Designs has installed nine Living Seawalls across the Miami/Fort Lauderdale area, and won grants from the U.S. Navy and Air Force to fortify their coastal bases.
 
@@ -2390,7 +2326,6 @@ Housing from recycled plastic
 
 ## Waymo Driver  Waymo 司机 - 更安全的自动驾驶汽车
 
-![](img/99f9b63a790c5f9dc1de0b4fa5d851a4.png)
 
 > More than 40,000 Americans die in traffic accidents every year, with most caused by human error. Waymo, the autonomous ride-hailing service that launched in 2009, says its AI-powered Waymo Driver could be the solution. Waymo’s more than 2,000 cars have completed more than 10 million trips in San Francisco, Phoenix, Los Angeles, Austin, and Atlanta, with five times fewer injury-causing crashes than human drivers and zero human fatalities caused by its vehicles, according to the company. Waymo plans to expand to Miami, Dallas, Nashville, and Washington, D.C. in 2026, as Chinese competitor Baidu Apollo Go races into Europe. “Autonomous driving is one of the most complex technological challenges of our generation,” says Waymo co-CEO Dmitri Dolgov. “We’ve built the safest, most advanced AI system operating in the physical world at scale.”
 

@@ -54,7 +54,6 @@ Stable Diffusion 3还采用了一种新型的扩散变换技术，与Sora类似�
 
 > Prompt: Three transparent glass bottles on a wooden table. The one on the left has red liquid and the number 1. The one in the middle has blue liquid and the number 2. The one on the right has green liquid and the number 3
 
-![](img/7a9887ea6911f899ab237f5b13fd97a1.png)
 
 > Prompt: A horse balancing on top of a colorful ball in a field with green grass and a mountain in the background.
 
@@ -72,7 +71,6 @@ Stable Diffusion 3还采用了一种新型的扩散变换技术，与Sora类似�
 
 > Prompt: Anime style illustration of a newsstand on top of a small grassy hill, on top of the newsstand we see the text "it's here!". In the background we see a big rain approaching.
 
-![](img/7431df477884b7b5c5b37576a146a07e.png)
 
 > Prompt: A magazine on a glass table, the magazine has the text "incredible" on the cover. The table is in the center of a comfortable room with two very cozy purple sofas.
 

@@ -10,7 +10,6 @@
 
 ![](img/789387b549ef620a62e4fd30ca2ce624.png)
 
-![](img/59b6f396fc56541818bac5bf102b0d78.png)
 
 **AIGC IS OUR FUTURE TOOLS TO DE**SIGN MORE CREATIVELY
 
@@ -84,45 +83,35 @@
 
 #### **Case No.3**
 
-![](img/66dd24278edb236460bbb216975199cb.png)
 
 #### **Case No.4**
 
-![](img/d557296c5568f6e525fca90bd109f78b.png)
 
 #### **Case No.5**
 
-![](img/3fc8d2ea88b2273d48d6ce9b6776b6bc.png)
 
 #### **Case No.6**
 
-![](img/098995ec4e5674f77f10b0282b70d47c.png)
 
 #### **Case No.7**
 
-![](img/f719440a18074c154c327137536498f0.png)
 
 #### **Case No.8**
 
-![](img/fe7fd3d2f7030c1e7fc1919cf2988ed7.png)
 
 #### **Case No.9**
 
-![](img/52501d3a2206557bdec447650a8ad12f.png)
 
 #### **Case No.10**
 
-![](img/36284d7ccfad0ebd83b51a9a1b813871.png)
 
 ### **# ****氛围计划**
 
 #### **Case No.1**
 
-![](img/429dedce2b4a16b485a4d0e02e0c8dc7.png)
 
 **Case No.2 **
 
-![](img/de2ecb853390e43e7e1d203a628445a0.png)
 
 #### **Case No.3 **
 
@@ -130,11 +119,9 @@
 
 #### **Case No.4 **
 
-![](img/9de6f71ec9b1f952e644180a7683d037.png)
 
 #### **Case No.5 **
 
-![](img/5c6a6f53a6cf8eb0d4d6693511ad835b.png)
 
 #### **Case No.6 **
 
@@ -142,13 +129,11 @@
 
 #### **Case No.7 **
 
-![](img/e83b82135cd6855586d9b46ba4819ec7.png)
 
 ### **# ****市场营销传播**
 
 #### **Case No.1**
 
-![](img/db990866b7f554fad0bc8f19ea12a339.png)
 
 ####
 
@@ -156,11 +141,9 @@
 
 #### **Case No.1**
 
-![](img/c4ad5d561c87d9bbb2957b85a7bedad5.png)
 
 #### **Case No.2**
 
-![](img/02464d354ade24823618962ce8d070bd.png)
 
 #### **Case No.3**
 

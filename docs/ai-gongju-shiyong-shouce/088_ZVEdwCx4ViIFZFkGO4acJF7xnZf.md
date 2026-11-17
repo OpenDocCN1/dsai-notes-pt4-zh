@@ -60,7 +60,6 @@ AI[🎁Vega变现指南（🛰️表情包）](https://yw55ojhusnq.feishu.cn/wik
 
 *后台数据大概是这样的👇（哦对了文案对流量影响也很大，文案影响互动率）
 
-![](img/0d61347da2b911ebadbef2668bf5c1a5.png)
 
 ![](img/29f04598bed383e67bf8249b68d3a08e.png)
 
@@ -90,9 +89,7 @@ AI[🎁Vega变现指南（🛰️表情包）](https://yw55ojhusnq.feishu.cn/wik
 
 *目前的风险就是政策了，不知道接下来AI会怎么监管……所以账号最好注明你自己是AI生成，但是注明了注定流量会不好（我的账号标注AI生成，跟下面这类没标注的，流量差距非常大。
 
-![](img/7e74531664f5d80d844ed139745cf1f1.png)
 
-![](img/b86632f9174d0f8e5d2c02d78486311d.png)
 
 ![](img/e9479e30d964b03af6eec6168130c416.png)
 
@@ -102,7 +99,6 @@ AI[🎁Vega变现指南（🛰️表情包）](https://yw55ojhusnq.feishu.cn/wik
 
 ![](img/d9507337a145cefd65198412fa59e1b2.png)
 
-![](img/5d7a61b6ba8aaa8aae3e769d53ad912b.png)
 
 ![](img/42bf9ba08cc61d48ee1e414cab916cd6.png)
 
@@ -148,7 +144,6 @@ vega[NO.06风格定制（炼丹）](https://yw55ojhusnq.feishu.cn/wiki/GI49wGek6
 
 收徒还有一条线是做AI技术号，如果真人号箱收徒记得打教学广告，不然别人把你当福利姬了；
 
-![](img/e382ee7470391d17d94cd644e3ee5cbe.png)
 
 ![](img/54936f288765a084f4c86b1a48a1a273.png)
 

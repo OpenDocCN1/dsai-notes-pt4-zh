@@ -52,17 +52,13 @@ InspiroBot 是一款运行在以太坊区块链上的人工智能，专门生成
 
 ![](img/c1c8e9d73066a773b5dcc91da72bc84b.png)
 
-![](img/5c52556ac6c4a89a3389ff57684fa32a.png)
 
-![](img/b04dfc0338b977546be5839cefb7fbf4.png)
 
-![](img/5a11f0e81c1300d6f5461c1105bef18a.png)
 
 ![](img/54dba8ea8521b4e281fe67ae36b7648c.png)
 
 ![](img/24fdeaf80bf8d8bc34a8b1913e7bc23f.png)
 
-![](img/0f7d8b1b60cd6e4ce279c0655b548ba1.png)
 
 ![](img/bbd62f18028c74b9e3f64bbe1600a768.png)
 

@@ -10,19 +10,16 @@
 
 > a super beautiful girl, long curly hair, brown hair, old fashion, retro shirt, hongkong comic girl, vintage style, background is a wall composed by newspapers, high details --ar 3:4 --niji 5
 
-![](img/dc3f1faa19261a1233e53be479ebcace.png)
 
 ---
 
 > a little girl, super cute, full body, sitting on a floating balloon, exciting adventure, blind box toy, bright colors, fine luster, movie soft light, 3d rendering, high angle view, pastel background --niji 5 --style expressive --ar 3:4
 
-![](img/2a108492037322a97a88fbaca046b4b3.png)
 
 ---
 
 > Chinese beautiful woman, smile, golden effect, soft line, sunny day, Willow background, dynamic expressive force, soft color, light and shadow, gentle abstract painting ,long hair, bling white dress, 3D rendering, 8k, --ar 3:4 --niji 5
 
-![](img/5d3847f89f5969454a2bdc28fb24f41e.png)
 
 ---
 
@@ -40,43 +37,36 @@
 
 > knolling of ancient Chinese jewelry, cartoon character looking directly at the center camera, ancient Chinese ornate clothing, multiple exquisite jade and pearl jewelry, ancient Chinese ornate jelwel, knolling, ultra clear details, indigo, dark red, white, Shinkai Makoto, Miyazaki Hayao --niji 5
 
-![](img/19d2ec99801b2d20874bf3dd61763e70.png)
 
 # 国风插画类
 
 > An elegant and feminine Chinese woman, the woman's face is as warm as jade, white as haze, and her eyes are gentle and powerful, Chinese Terraces Background landscape, abstract painting Zen, double exposure, cover art with light abstraction, simple vector art, contemporary Chinese art, red and pink tones, layered --niji 5
 
-![](img/25f6f557cd740d71a4d5803b48bffe3f.png)
 
 ---
 
 > handsome beauty, delicate face, fair and smooth skin, sharp eyes, wearing white and light yellow clothes, flying hair, flowing sleeves, portrait face close-up,Chinese traditional painting style, the style of the ancient Sui and Tang Dynasties, refers to Song Huizong, wind dancing posture, Face Shot, Point-of-view --niji 5
 
-![](img/b48a31defe0ef660c3a1637176e7c701.png)
 
 ---
 
 > a beautiful chinese girl, beautiful face, ancient hair bun, long hair, white dress, white skin, fairy style, surrounded by bamboo grove, green, dynamic expressive force, soft color, sunny, light and shadow, gentle abstract painting,8k --niji 5
 
-![](img/1739e9e05426b75c82df7faeb06759e4.png)
 
 # 壁纸类
 
 > Surrounded by water vapor Bottom view, woman, Surrounded by water vapor, fluid mechanics, full of sunlight, in the style of influenced by ancient chinese art, Fantasy style martial arts style traditional techniques reimagined, octane rendering ultra-realistic, cinematic lighting, ultra high definition, high detail, high quality, 16K --ar 3:4 --s 250 --niji 5 --q 2
 
-![](img/d8df5b8668bbdae6e0687589d19e0db1.png)
 
 ---
 
 > 8k UHD A man looks up at the starry sky, lonely and ethereal, Minimalism, Chaotic Composition Op Art --ar 3:4 --niji 5 --q 2 --s 750
 
-![](img/ac97e33e54630852570ca5ad7296d61b.png)
 
 ---
 
 > Facial close - up, a cute girl and yellow fish, dreamy, eyes close - up, front view, makotoshinkai, Half of the girl's face was in the water, in the style of Otomo Katsuhiro, look up, in a realistic hyper-detailed render style, glow, yellow, blue, brush hyper - realistic oil, exaggerated perspective, Tyndall effect, water drops, mother - of - pearliridescence, Holographic white, green background --ar 3:4 --niji 5
 
-![](img/d230a266b42d092cedcb35d84dfaf9f6.png)
 
 # 盲盒类
 
@@ -94,7 +84,6 @@
 
 > Tiny cute isometric coffee shop, maxemoji, soft lighting soft pastel colors, Urban architecture, clay, design, Blue background, Flat illustration --style scenic --niji 5 --ar 3:4
 
-![](img/d7522222f12e45c573da424e72e0b9b7.png)
 
 # 物品类
 
@@ -112,7 +101,6 @@
 
 > 3d icon set of technology, white background, colorful, isometric, neon realistic, high quality, 3d, c4d, oc render, super detail, best quality, super hd, 8k
 
-![](img/5716d3b95b00f7311ded83e6c422bf17.png)
 
 ---
 

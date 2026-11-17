@@ -202,7 +202,6 @@ https://learn.microsoft.com/zh-cn/training/modules/get-started-openai/8-exercise
 
 在数据连接页面中，选择 API密钥，然后点击下一步
 
-![](img/4aad4b6f81474481791b2134d925e8ef.png)
 
 在评审完成页面中，回顾此前的设置确认无误，然后点击下一步
 

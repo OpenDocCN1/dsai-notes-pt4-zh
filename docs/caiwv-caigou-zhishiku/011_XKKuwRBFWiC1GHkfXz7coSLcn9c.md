@@ -6,7 +6,6 @@
 
 生成一个新能源汽车行业综合数据看板，要求包含可视化设计和数据展现，用html格式输出，确保文件可执行
 
-![](img/e3a132154727c2e1b87b88ad3b54be52.png)
 
 [新能源汽车行业综合数据看板-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DBUobPHAEo5NlHxRy27c4Ly3nlb)
 
@@ -14,7 +13,6 @@
 
 生成一个针对中国市场的2021年-2024年新能源汽车行业综合数据看板，包含可视化设计和数据展现，使用HTML格式输出并确保文件可执行。看板应关注市场销售数据和政策环境，采用柱状图和折线图的可视化方式，填充基础的数据信息。
 
-![](img/1ce821eabf5958b3a8a1b4b76c231e59.png)
 
 [2021年-2024年新能源汽车行业综合数据看板.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xj8YbTo9BotD9nxoMiVcYmwdn8g)
 
@@ -22,7 +20,6 @@
 
 生成一个针对中国市场的新能源汽车行业综合数据看板，包含可视化设计和数据展现，使用HTML格式输出并确保文件可执行。看板应关注市场销售数据和政策环境，采用柱状图和折线图的可视化方式，主要用于战略决策。考虑展示过去五年的历史数据，并提供季度更新。
 
-![](img/4eb0e04d52688ac9b2453ac5171fb904.png)
 
 [中国市场的新能源汽车行业综合数据看板-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WTLRbsLi6o9CdyxK8WEc9Wktnvc)
 

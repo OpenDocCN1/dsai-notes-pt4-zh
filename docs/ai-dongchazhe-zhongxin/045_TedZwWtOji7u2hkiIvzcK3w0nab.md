@@ -138,7 +138,6 @@ prompt是bot的功能指南，以上提到的知识库问答、反馈功能，�
 
 > 参考资料：[AI Agent 智能体榜单](https://bluefocus.feishu.cn/wiki/TwW5wNDlfifjLgkE2micxthenNe)
 
-![](img/d25a56f9e5ec1d46b978e7efe6effa08.png)
 
 官方群聊
 

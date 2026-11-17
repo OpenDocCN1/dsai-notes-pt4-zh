@@ -88,9 +88,7 @@ See examples how to launch our models:
 1.  Try our canny_workflow.json
 尝试我们的 canny_workflow.json
 
-![](img/738c11bc5bbd000cd9b90229bc3ca92f.png)
 
-![](img/1813fb078a9aa3808d9e7f23eb43c661.png)
 
 ![](img/e0253e7baec7838fe157ff5b94b82188.png)
 
@@ -146,7 +144,6 @@ python3 main.py \
  --timestep_to_start_cfg 1 --num_steps 25 --true_gs 3.5 --guidance 4
 ```
 
-![](img/63d75b3426cf9c04f6095d5d63706fde.png)
 
 ```
 python3 main.py \
@@ -158,7 +155,6 @@ python3 main.py \
  --timestep_to_start_cfg 1 --num_steps 25 --true_gs 3.5 --guidance 4
 ```
 
-![](img/58f207baf0f945d44b72b941b8c15794.png)
 
 ```
 python3 main.py \

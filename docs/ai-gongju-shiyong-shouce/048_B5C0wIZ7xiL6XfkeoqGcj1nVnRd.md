@@ -266,13 +266,11 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 😸就开始炼丹了
 
-![](img/ffe769f80a5b1f474407f044481c51d3.png)
 
 15、然后报错了，报错原因是这是因为旧的显卡，例如10系列不支持unit8类型，刚好我的是1070……
 
 Error caught was: No module named 'triton'和下面是一个类型报错
 
-![](img/480facc836ef6fe730c77b696cbc1265.png)
 
 **如果你是10开头的****显卡**，返回去打开train.ps1找到并删除这段字符
 

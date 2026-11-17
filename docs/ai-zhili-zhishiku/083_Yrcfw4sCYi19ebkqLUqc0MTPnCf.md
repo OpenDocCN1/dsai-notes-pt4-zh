@@ -34,7 +34,6 @@
 
 https://mp.weixin.qq.com/s/mq-NDM4SlgmFDR3D-Qxiag
 
-![](img/7aad14028c77f6331510a380d741d055.png)
 
 [leaflets_protection_framework.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zs1ubGDWtoUeqRxnlbJcB1vlnDb)
 

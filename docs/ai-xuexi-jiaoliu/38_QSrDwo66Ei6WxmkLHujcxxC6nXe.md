@@ -284,13 +284,9 @@ Step3. 评估政策变化对预测的影响&quot;
 制定一个3天2夜的旅行计划（任务），上海出发，目的地江浙沪地区（背景），用表格展示（输出）。
 ```
 
-![](img/b36bd6df025788dbd86f5024cbd9b567.png)
 
-![](img/f5b9bab6a1c22f55b306bab1f8297d1a.png)
 
-![](img/053677bdd38dd1401023eeb7dfeb5dac.png)
 
-![](img/b0db6270f196fdaff9c50d6e9f13070a.png)
 
 可以看到使用上面的提示，完全能按照提示输出，但并不详细。如果我们改用下面的提示，再来看看输出效果。
 
@@ -326,15 +322,10 @@ Step3. 评估政策变化对预测的影响&quot;
 
 经过几十秒思考，Deepseek给出了以下方案：
 
-![](img/f7adbfb269aa4108c2c097356999c203.png)
 
-![](img/806a658f489c78001390171b08b954c6.png)
 
-![](img/55851e0a638b479dc43661bab444cddd.png)
 
-![](img/bcd52c1fe3c3bd7f23cd26b17005f88d.png)
 
-![](img/4b348943e0be242456471b587f9fc868.png)
 
 ![](img/fbb807107b9ea0a10da5cf8f6fb06462.png)
 

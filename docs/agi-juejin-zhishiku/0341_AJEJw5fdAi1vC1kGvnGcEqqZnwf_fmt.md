@@ -21,9 +21,7 @@ chat.openai.com在11月底推出之前从零访问量开始，12月份达到了2
 
 SimilarWeb认为主要是因为美国学生放暑假（ChatGPT的绝大部分流量来自美国），损失了大量的学生用户。这也解释了为什么8月的流量较为稳定，因为美国学生大部分在8月底返校，回血了。
 
-![](img/859e7b5c2ffcabaf5c2c4db16d7cc564.png)
 
-![](img/0749cc25314e8b94a777173ad74c3e0b.png)
 
 ## 竞品流量下滑
 
@@ -39,7 +37,6 @@ SimilarWeb认为主要是因为美国学生放暑假（ChatGPT的绝大部分流
 
 9月份，Character AI的iOS和Android应用的月活跃用户数为420万，而ChatGPT的月活跃用户数约为600万。
 
-![](img/0a3f4ece853626cb132662120291f214.png)
 
 ![](img/da2d039174054c3aa669bba87abe93cd.png)
 

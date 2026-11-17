@@ -22,7 +22,6 @@ Midjourney发布了V6测试版本之后，它已经可以较好的进行文本�
 
 # **创意字体**
 
-![](img/b5079ee8ab25af230458a398d26daa4b.png)
 
 ![](img/6cd1e7b9430484a50a53e22c487aaa8b.png)
 
@@ -44,7 +43,6 @@ Midjourney发布了V6测试版本之后，它已经可以较好的进行文本�
 
 ![](img/e016c7fe2edec5df4359ab158240fda8.png)
 
-![](img/cd787a31f20c6cbd5a63c6ea8500206a.png)
 
 > 关键词：Font design, letter "m" made of material , Electronic equipment，minimalism
 
@@ -52,7 +50,6 @@ Midjourney发布了V6测试版本之后，它已经可以较好的进行文本�
 
 还可以把各种元素融合进去，这边我就把机械电路板的元素融合到描述词中，可以看见生成的字体全部都是由电路板机械元素构成的。
 
-![](img/fc66362ebcd1f8e15230f1a86268b1d8.png)
 
 > 关键词：Font design, letter "m" made of material , Laser glass，minimalism
 
@@ -60,19 +57,14 @@ Midjourney发布了V6测试版本之后，它已经可以较好的进行文本�
 
 玻璃材质和字体的融合也是比较合适的，除了玻璃，还可以把金属，玉石，岩石等，各种各样的元素都可以进行尝试。
 
-![](img/0a6fac816a2d91c6b4f67cb9b657d4cb.png)
 
 > 关键词：Font design, letter "m" made of material , Cake，minimalism
 
 > 翻译：字体设计，字母“m”材质，蛋糕，极简主义
 
-![](img/692a44ad40469ffe289a240a18a4c263.png)
 
-![](img/7ba28760f7813368032ad7e5b4e76b46.png)
 
-![](img/080ad9190dcf83d2ca3f885a802790c1.png)
 
-![](img/3a167275846b12ce1dbef7c84efaa532.png)
 
 ![](img/a73ec6849787fafb6c135c9c87c5083f.png)
 
@@ -100,11 +92,8 @@ Midjourney发布了V6测试版本之后，它已经可以较好的进行文本�
 
 # **3D特效文字**
 
-![](img/7b394581e5531b154b98bd6bec75298a.png)
 
-![](img/dcbd93ec7e9db5b4b81fe7ea7f27aca2.png)
 
-![](img/9acc0a71822dca336f17723ac1f68346.png)
 
 ![](img/761af0817d0101fda20934f8c74df468.png)
 

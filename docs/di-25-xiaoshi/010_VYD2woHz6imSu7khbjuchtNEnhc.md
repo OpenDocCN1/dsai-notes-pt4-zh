@@ -77,7 +77,6 @@
 
 ![](img/c2e3cc8d0704e31c360500be1c630e4e.png)
 
-![](img/6361102cbb433709e0efeba66ef91400.png)
 
 ## 4、全文改写
 

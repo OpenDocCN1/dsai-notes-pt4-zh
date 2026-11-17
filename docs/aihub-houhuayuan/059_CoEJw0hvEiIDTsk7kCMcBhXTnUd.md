@@ -22,7 +22,6 @@
 
 [没](https://www.bilibili.com/video/BV18c411A72q)有N卡怎么进行AI对话?(加载ggml模型/llama.cpp)使用text-generation-webui
 
-![](img/2b0d94447e368e45ff135020024e7312.png)
 
 **2.下载链接**
 
@@ -44,15 +43,12 @@
 
 **3.启动器界面展示(丑**
 
-![](img/34649d4b0ace6e805527272431331494.png)
 
 主页
 
-![](img/10d33aea80e42f6cb8047bbe75a3c3a3.png)
 
 启动参数
 
-![](img/1a2a27215826c8728659ed28ad172e0f.png)
 
 模型管理
 

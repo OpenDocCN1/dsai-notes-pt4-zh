@@ -78,7 +78,6 @@ Negative prompt: Low saturation, deformity, sketch, blur
 
 将初稿中的钻石图放进Stable Diffusion图生图功能。输入关键词，重复幅度调到5以下，反复多批量产出后筛选出想要的结果，如下图所示：
 
-![](img/d80f318b58221e9ba03bdb676ca6d130.png)
 
 通过Stable Diffusion生成更有质感和高级感的设计主体元素，节省大量设计细节的时间。下图为初稿、AI辅助和终稿:
 
@@ -196,7 +195,6 @@ Illustration, Drawing, Hand-Drawn, Isometric, Saturated, Split-Complementary-Col
 
 使用Midjonrney v5输入关键词后，不断调试后得到如下图所示：
 
-![](img/8c1d8986da16081b8ce44dce415956bd.png)
 
 上述图片风格非平面插画类，那么继续优化关键词，这次加入关键词：Graphic illustration（平面插画）重新放在Midjonrney里面，并且把引擎模型改成niji得到如下图：
 
@@ -252,7 +250,6 @@ Abigail Larson, an original painting of a scene, a broken village in the middle 
 
 从生成图中挑选数张，选取每一张突出的地方进行合成、重制笔触和添加细节后，得到如下图所示的背景图：
 
-![](img/2999cd470521d00bf45ee8a23df2bd99.png)
 
 最后加上狼人和光束变身特效后，进行简单排版就完成了终稿。
 
@@ -328,9 +325,7 @@ A piece of Chinese architecture floating in the sky, the building is built on fl
 
 这次改动如果不借助Midjourney，我们就要大面积重新制作，而使用Midjourney来制作浮空岛的场景，只需要将我们之前合成好的建筑场景后期替换进去。
 
-![](img/61b1805ad9fe5d1a7103279357a39542.png)
 
-![](img/dd709c992ba76091d1ef09428c38941f.png)
 
 经过多张类似的推演，我们得到了一张适合通过后期手绘合成的图，做出的设计图如下所示：
 
@@ -342,7 +337,6 @@ A piece of Chinese architecture floating in the sky, the building is built on fl
 
 AR部门搭建演播厅的设计图，如下所示：
 
-![](img/0b55ddc0eba8133e8cb08342e35c12fc.png)
 
 下图虚拟演播厅中的解说桌也是使用类似的AI辅助流程完成的制作：
 

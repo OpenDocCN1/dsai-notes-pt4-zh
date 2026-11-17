@@ -86,7 +86,6 @@ Blackwell Vs Hopper
 
 4倍的no-die memory
 
-![](img/64da6c5aa3a10e2b0fcfdb75e81094a3.png)
 
 Blackwell
 
@@ -148,7 +147,6 @@ connectx-800G infiniband supernic
 
 针对AI处理进行了优化
 
-![](img/e4cb4c01418f8c7aedcb885db2e4d137.png)
 
 BLUEFIELD-3 DPU
 
@@ -182,7 +180,6 @@ NVLINK SWITCH
 
 14.4TB/的总带宽
 
-![](img/9516c3155a5ff344f2ee41d249336d56.png)
 
 NVLINK交换机系统
 

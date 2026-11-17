@@ -32,7 +32,6 @@
 
 ![](img/f54eaff1ab6a18280cfbd1c61c875d19.png)
 
-![](img/1843e6e14b56ba435dfa34259fe01208.png)
 
 ![](img/5dfd91b6cb48056aaeb2ca71608d86a4.png)
 
@@ -183,7 +182,6 @@ https://github.com/minosvasilias/toolformer-zero
 
 +   解释代码：选取一段代码直接问AI这段代码是干什么的，感觉更适用于代码复杂场景
 
-![](img/2d8b16a36d3eff759c52f33fe4405cab.png)
 
 [Demo of the Explain functionality.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnahLQxO7NzJGLPSXNwsvgKh)
 
@@ -265,7 +263,6 @@ https://chatexcel.com/
 
 具体使用上可以[参考这里](https://www.notion.so/help/guides/notion-ai-for-docs)，两个演示的案例可以看到in-context的文案编辑体验
 
-![](img/a1395b60b192d1c6cd7566474eb80133.png)
 
 [blog_post_2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnHhQWo63fKApHpt3RpIzB5g)
 

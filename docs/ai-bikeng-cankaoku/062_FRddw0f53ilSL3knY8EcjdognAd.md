@@ -60,7 +60,6 @@ TrollInstallerX：https://github.com/alfiecg24/TrollInstallerX/releases/tag/1.0.
 
 > 导入IPA（TrollInstallerX）-选择Apple ID 签名（登录自己ID-立即签名
 
-![](img/0af74033895869668f986b43d713a089.png)
 
 之后打开签名文件位置，使用爱思助手安装，之后手机上就有了“TrollInstallerX”
 

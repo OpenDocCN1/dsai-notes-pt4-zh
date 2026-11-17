@@ -84,9 +84,7 @@ Training text-to-video generation systems requires a large amount of videos with
 
 类似于DALL·E 3，我们也利用GPT将用户的简短提示转换成更长的详细说明，然后发送给视频模型。这使得Sora能够生成高质量的视频，准确地遵循用户的提示。
 
-![](img/55c796765f13c0c251cfa91d2cd7493a.png)
 
-![](img/ce3f5f50d1673cd4dbb1927635848592.png)
 
 ![](img/fabff450ecfbc8be7e7ac85e8a0ac2fd.png)
 
@@ -156,7 +154,6 @@ Vibrant coral reef teeming with colorful fish and sea creatures
 
 充满活力的珊瑚礁，挤满了五彩缤纷的鱼类和海洋生物
 
-![](img/9c58b156724e26f128331368a54689fa.png)
 
 Digital art of a young tiger under an apple tree in a matte painting style with gorgeous details
 
@@ -254,7 +251,6 @@ Video compression network（视频压缩网络）看起来它只是一个VAE，�
 
 ![](img/90d42579bda25e4643ae88bc90d776f9.png)
 
-![](img/ba28509324a010923378e2aaaa8804ae.png)
 
 00:04
 

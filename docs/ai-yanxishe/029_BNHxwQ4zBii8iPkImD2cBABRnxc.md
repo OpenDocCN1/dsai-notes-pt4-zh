@@ -10,9 +10,7 @@
 
 ![](img/8487fdc578aa55d8b33b0ad28a3f3bb7.png)
 
-![](img/14daf81d281655e05fbe2b8811d99975.png)
 
-![](img/1fbd173cafcd8d20135bdc5e648e2eaa.png)
 
 ![](img/2865b3c63c10256a81f2a148f381e5bf.png)
 
@@ -94,15 +92,12 @@
 
 网站地址： https://app.heygen.com/home
 
-![](img/670ea00dfb878c3910595a0fa5aa1f94.png)
 
 选择你喜欢的角色
 
-![](img/831b81c8f3ea36fdacd0b1a3b40f5b92.png)
 
 调整人物大小和比例
 
-![](img/0dc1180446a9f463ae05edad7180544d.png)
 
 选择喜欢的语言和声音
 
@@ -112,9 +107,7 @@
 
 ## 三）二次剪辑
 
-![](img/e09801712d5b9e6d5079279db9c3b941.png)
 
-![](img/255735a640bfddedef26c71c6d6f12cd.png)
 
 ![](img/ee6dcc1e7afff0855b49c426b534c48e.png)
 
@@ -220,7 +213,6 @@
 
 3.实在不会去抄同行看同行怎么做的
 
-![](img/c5915041e63425537d177ad53733311d.png)
 
 # 四、变现
 

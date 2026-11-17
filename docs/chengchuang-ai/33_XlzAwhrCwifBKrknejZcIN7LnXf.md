@@ -58,7 +58,6 @@ a mascot logo of a robot, simple, vector --no shading detail
 
 然而，您提供给 A.I. 的数据越多，就会得到**更准确的结果 - **在本文中，我将向您展示如何编写更好的提示。
 
-![](img/91ea9d7d67161f46791c45575db16c65.png)
 
 如何在 Midjourney 中编写 Logo 设计提示？
 
@@ -84,7 +83,6 @@ a lettermark of letter A, logo, serif font, vector, simple --no realistic detail
 
 它通常是公司名称的第一个字母或公司缩写以某种方式进行风格化，以创建独特，独特的外观和感觉。
 
-![](img/c2a99d0daeeb4fb35367d487ff49d999.png)
 
 / 想象一下一个字母 A 的字母标志，徽标，衬线字体，矢量，简单 - 没有逼真的细节。
 
@@ -100,7 +98,6 @@ a mascot logo of a robot, simple, vector --no shading detail
 
 吉祥物是使品牌更具亲和力和感触性，进而帮助营造与受众之间的强大联系。
 
-![](img/62737c7628099a1b049824b1267cc71b.png)
 
 > 想象一下一个简单、失量化的机器人吉祥物标志，没有阴影细节。
 
@@ -116,7 +113,6 @@ an emblem for a motorcycle group, vector, simple --no photorealistic details
 
 标志通常被用于汽车、教育、政府和军事等行业的公司，因为它传达了遗产、传统和权威的感觉。
 
-![](img/348a849336ac35a34f3c7804d914f9ba.png)
 
 **如果你正在**寻找一些灵感，可能最著名的标志是哈雷戴维森的标志。
 
@@ -136,7 +132,6 @@ a logo for an ice cream brand, simple, vector, Psychedelic Art --no text realist
 
 这种风格常常与**幻觉药物使用**有关，反映了这些物质的**邪乎**和意识扩展的效果。
 
-![](img/a1dd13e0b7efdb2956f07bfe2a060aae.png)
 
 这是创建甜美设计，带有螺旋和其他有趣的“梦幻般”效果的绝佳风格。
 
@@ -150,7 +145,6 @@ a logo for an ice cream brand, simple, vector, De Stijl--no text realistic detai
 
 /想象一个冰淇淋品牌的标志，简单、向量、德斯泰尔风格——没有文本的真实细节。
 
-![](img/c62c6ac61715f6ead6f69dfc3b927473.png)
 
 当以**德斯泰尔****风格设计标志**时**，人工智能**将尝试**使用像矩形、正方形和线条等**形状，以及**红色、蓝**色和黄色等基本颜色，当然还有黑白两色。
 
@@ -166,7 +160,6 @@ a logo for an ice cream brand, simple, vector, Pop Art--no text realistic detail
 
 这种风格包括**广告**、**漫画**和日常物品等元素，通常采用**大胆鲜艳的风格**。
 
-![](img/7019a4b3ed02f3b899de64dd7a52f285.png)
 
 **采用流行艺术或**以上提到的任何风格都会给一定的观众带来怀旧感和吸引力，这些观众记得那个时代（1950年代）。
 
@@ -186,7 +179,6 @@ a flat vector logo of a lion head, minimal, by Paul Rand --no realistic photo de
 
 想象一只由Paul Rand创作的简洁平面矢量狮子头标志，不要有逼真的照片细节。
 
-![](img/a111976979b46c2ee637441f227cc3cd.png)
 
 目标是创建一个**既大胆又难忘**的设计，同时又干净简洁。
 
@@ -200,7 +192,6 @@ a flat vector logo of a lion head, minimal, by Paul Rand --no realistic photo de
 
 **虽然这可能会给您**带来类似于在设计中使用De Stijl的结果，但您会明白我的意思。
 
-![](img/4b057f500fc2033a841069840de09efa.png)
 
 在这种情况下，狮子头的外观与上面描述的“典型风格”更类似于“De Stijl 流派”。
 
@@ -214,7 +205,6 @@ a flat vector logo of a lion head, minimal, by Pablo Picasso --no realistic phot
 
 我想在这种情况下，**A.I. 选择了立体派**，因为毕加索以此最为著名。
 
-![](img/676381b40629ee591c43a7e007ea2ba3.png)
 
 在这个例子中，**狮子头**看起来有点**凶恶和生气**，因为它主要是用**三角形和锐角线条**构建的，这些是立体派流派的特征元素。
 
@@ -234,7 +224,6 @@ a simple logo of a diamond, line,flat,vector --no realistic photo details.
 
 如果您想将伪3D元素融入设计中，但又不想使其过于复杂（没有阴影，渐变等），使用轮廓效果是个好主意。
 
-![](img/eb9444e7a8644b9b424bc8705df6e56a.png)
 
 ### 渐变
 
@@ -244,7 +233,6 @@ a simple logo of a diamond, gradient, flat, vector --no realistic photo details
 
 想象一个简单的钻石标志，渐变，平面，矢量--无真实照片细节。
 
-![](img/841bad69e58599d3ed3177a5d298804a.png)
 
 **使用渐变技术的标志**最著名的例子之一是Instagram标志。
 

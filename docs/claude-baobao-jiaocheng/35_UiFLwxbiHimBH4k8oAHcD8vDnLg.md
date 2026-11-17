@@ -22,7 +22,6 @@
 
 以下是变化后位置的截图：
 
-![](img/540dbf5859c4a49eb0bdf850d24ab3c5.png)
 
 如图中框选，反代填写位置变化到第二个插头中的reverse Proxy位置
 
@@ -82,7 +81,6 @@
 
 点开角色卡
 
-![](img/5af023c15f04a5315473324efc407864.png)
 
 如图所示
 
@@ -132,7 +130,6 @@
 
 ![](img/8b8ab3c32ce8efe29417bd4f9debc1aa.png)
 
-![](img/6de66d94efd9e7d979af7996c315daf2.png)
 
 这里做个简单科普
 

@@ -73,7 +73,6 @@ OpenAI致力于开发高级 AI 编码助手，首个智能体项目‘Operator�
 
 IT之家 | [阅读原文](https://www.ithome.com/0/826/841.htm)
 
-![](img/c3f57d823502cc438882e9128bcb28ce.png)
 
 2025 年 1 月 23 日晚间，ChatGPT 突发故障，用户无法登录等。DownDetector 显示全球 OpenAI 宕机大幅飙升。ChatGPT 状态页面确认服务经历较高错误率。OpenAI 查明问题发布修复程序并监控结果，太平洋标准时间凌晨 4 时 43 分称问题已解决。
 

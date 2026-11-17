@@ -63,25 +63,20 @@
 
 ### 单Agent
 
-![](img/9539becbb27b6fd1f4473f2318092852.png)
 
 ### 工作流
 
-![](img/ab82fc4a59523997e9432ff4e440dd44.png)
 
-![](img/00eda098bfd4bcf6f0f3ab94df606d13.png)
 
 ### 多Agent
 
 多个智能体协作
 
-![](img/3dace5b8d5066dbc30360fc7a392e402.png)
 
 ### 应用
 
 可以直接创建应用，然后可以发布🛰️小程序等
 
-![](img/0df3e4e0794f77d8631e971d5eb338be.png)
 
 ![](img/897694726886302fba91ae8bfb475e07.png)
 

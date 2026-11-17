@@ -34,7 +34,6 @@ Edge dev 下载链接：https://www.microsoftedgeinsider.com/zh-cn/download/dev
 
 HeaderEditor配置截图：
 
-![](img/0ed33cafe28f276009bdb8a7a7f9b3db.png)
 
 请按截图来配置，配置参数有
 
@@ -50,7 +49,6 @@ x-forwarded-for// 头内容8.8.8.8复制代码
 
 直接访问 bing 链接 [bing.com](https://link.juejin.cn?target=https%3A%2F%2Fbing.com)
 
-![](img/6f8d4792697ea36a345e4352a85df0e8.png)
 
 点击左上角 聊天 按钮后，进入 新必应
 

@@ -22,7 +22,6 @@ https://github.com/winfsp/winfsp/releases
 
 配置代理
 
-![](img/83e136a467d1193e09f136678c7469d7.png)
 
 核心管理
 

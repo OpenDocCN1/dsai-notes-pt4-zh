@@ -82,7 +82,6 @@ AI 绘图可以应用于多个领域，例如设计、建筑、艺术、医疗�
 
 回到我们的服务器，然后在下面的输入框输入“/”，它会弹出一系列的命令（如果没弹窗，退出重新登录即可），我们先点击“/imagine”（这个参数我后面再做详细解释），然后会出现如下画面：
 
-![](img/d792761427576a755068defca468acb1.png)
 
 输入一组关键词，切记：一组关键词的后面需要加上英文的逗号“，”然后按空格键，空一格就行，看我下面这组关键词：
 
@@ -94,7 +93,6 @@ An mascot robot， smiling， modern robot， round robot， cartoon， flying�
 
 点击回车发送，然后它会让我们进行授权，我们点击“Accept tos”授权就行了。
 
-![](img/08b8a46728be0e3f9cdd659ed7ee9378.png)
 
 然后等待机器人的出图，在发送的关键词后面可以看到图片生成的进度，等一会就会出来图片了：
 
@@ -318,7 +316,6 @@ MJ test 偶尔会临时发布新模型以供社区测试和反馈。目前有两
 
 在公共模式和隐身模式之间切换。对应于/public 和/stealth 命令。
 
-![](img/6af16b5762ccf7b921b6c60b7bcf7499.png)
 
 切换到混音模式
 
@@ -636,7 +633,6 @@ chaos 的生成的效果
 
 提示示例：imagine/ prompt watermelon owl hybrid
 
-![](img/2094a9a39a2fe5c8c7ad89e165bec12b.png)
 
 高值--chaos
 
@@ -930,7 +926,6 @@ Test 模型
 
 视频示例
 
-![](img/3ebe4a8beb6747d9dfcf1825f480ceda.png)
 
 ![](img/6e44fd14a66b5e42b1106be0ef76fd1e.png)
 
@@ -1070,7 +1065,6 @@ Tiny， Cute， small， An astronaut in space with distant planets in the backg
 
 微小，可爱，小，宇航员在太空中与遥远的行星为背景，微缩，立体，正投影视图，电影照明，Gediminas pranckeviius， Giuseppe Arcimboldo，藤田五郎，复杂，Hyp er 细节，4k
 
-![](img/5efbc998a96a92e8227a5620e444058a.png)
 
 超写实主义机器人
 

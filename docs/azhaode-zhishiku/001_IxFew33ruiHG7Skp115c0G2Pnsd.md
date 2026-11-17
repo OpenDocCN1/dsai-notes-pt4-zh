@@ -98,11 +98,9 @@ AI时代，蒙牛正在借助AI驱动新智生产力
 
 Founder Park
 
-![](img/5b8eecfd7b62d4680c9ebe7358234592.png)
 
 AI新榜
 
-![](img/852f1bd57ea6269bec1dc479a18e21cb.png)
 
 量子位
 
@@ -112,21 +110,17 @@ AI新榜
 
 [图灵的猫](https://space.bilibili.com/371846699)
 
-![](img/b10569cb889eb5b79f0bb80c4c3cdd42.png)
 
 [AI研究室-帆哥](https://space.bilibili.com/2161614/?spm_id_from=333.999.0.0)
 
-![](img/1a879d9c3be47fde2175804e35755e96.png)
 
 ### 每周行业资讯**：**
 
 [歸藏的AIGC周刊](https://quail.ink/op7418/)
 
-![](img/431c622eaf089a5150f3a4ace2783a9a.png)
 
 [小胡AI日报](https://xiaohu.ai/)
 
-![](img/f1e1faf09125ae13ac9629e4c3500427.png)
 
 ### 优质资料合集**：**
 
@@ -151,11 +145,9 @@ AI新榜
 
 > 正在看：阿赵的AI资料库
 
-![](img/6d372121557c2fc71124068bf48fdb27.png)
 
 > 可前往：[阿赵的AI工具库](https://mq1nzy47gs.feishu.cn/wiki/KHmYwQs9BipuPrkGcgPcRfH3njh)
 
-![](img/7e24844d411d1e5817b0f0845fef5bae.png)
 
 > 可前往：[阿赵的AI案例库](https://mq1nzy47gs.feishu.cn/wiki/YJr5wpanBiRCdvkI0bFcRehZnlg)
 

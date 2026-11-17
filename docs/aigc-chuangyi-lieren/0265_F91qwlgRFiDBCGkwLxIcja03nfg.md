@@ -233,7 +233,6 @@ print(format_transcript($user_input))
 
 整理 WWDC 访问文稿
 
-![](img/c44beb72d7db02af8aef1ddc7be0e8ed.png)
 
 多个 Speaker，显示发言人
 

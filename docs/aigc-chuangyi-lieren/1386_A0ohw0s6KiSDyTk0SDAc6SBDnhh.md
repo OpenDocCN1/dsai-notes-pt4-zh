@@ -66,7 +66,6 @@ LiblibAI网址入口：https://www.liblib.art
 
 长沙美食：
 
-![](img/f1c12a5ab28735d9d0cecd97c21c60df.png)
 
 北京美食：
 
@@ -84,7 +83,6 @@ LiblibAI网址入口：https://www.liblib.art
 
 一张图，可以延伸故事剧情，这对于分镜的学习，以及短视频的制作，都非常有帮助！
 
-![](img/bf4f04996b307956f8093f07f34729db.png)
 
 ![](img/861c05f9c100cdfb3e357a43c6cfbdb9.png)
 
@@ -166,7 +164,6 @@ LiblibAI网址入口：https://www.liblib.art
 
 **Libl**ibAI最让我惊喜的是它不仅仅是生成，它还有视频特效功能。这不是简单的滤镜，而是真正的AI特效。比如我想我的宇航员小猎人加点“樱花消散”的粒子效果：
 
-![](img/80704dc4388c15da30ed6f12b0fb2e9d.png)
 
 [a817c92f7a674302e7bb280b584560a3f7bf41bb7d574a588d12f4e07510fba5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U2NQbHiI1ojXmTxNL72ctkiBnFf)
 

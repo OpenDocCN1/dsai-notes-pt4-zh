@@ -70,7 +70,6 @@ Midjourney宣布推出两项新功能：图片编辑器和图片重新纹理化�
 
 Ideogram Canvas是一个全新设计的创意界面，让用户在一个平台上轻松组织、生成、编辑和组合图像。通过Magic Fill工具，用户可以对图像特定区域进行修补和替换，如添加文本、修复瑕疵、修改背景等，同时还能放大特定区域，生成更高分辨率的细节图像。Extend工具则可扩展图像边界，保持风格一致的同时，自适应不同屏幕比例。该平台适用于品牌视觉和个性化内容创作，使创意实现更加快捷、精准、流畅。
 
-![](img/d32b65a23917caa5ba4616c69b4a74c7.png)
 
 [7b626a5ef4f5329b7a8f5772ef012e03(9).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OiEybAM3Zof5GJx45ObcxqVNnAd)
 
