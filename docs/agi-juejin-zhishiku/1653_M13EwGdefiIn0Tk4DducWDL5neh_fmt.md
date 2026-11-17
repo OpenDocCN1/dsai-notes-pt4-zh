@@ -1,0 +1,284 @@
+
+# LangChain 完整指南：使用大型语言模型构建强大的应用程序
+
+> 来源：[https://agijuejin.feishu.cn/docx/ZYzVdDJ12obvU8xy7EDcXt64nId](https://agijuejin.feishu.cn/docx/ZYzVdDJ12obvU8xy7EDcXt64nId)
+
+> 作者：北方的郎
+
+> 原文：[https://zhuanlan.zhihu.com/p/631954597](https://zhuanlan.zhihu.com/p/631954597)
+
+LangChain 是一个强大的框架，可以简化构建高级语言模型应用程序的过程。它使开发人员能够使用大型语言模型(`LLM`) 和其他计算资源构建强大的应用程序。在本指南中，我将简要介绍 LangChain 的工作原理并探索一些很酷的用例，例如问答、聊天机器人和代理。我还将引导您完成快速入门指南，以帮助您入门。让我们开始！
+
+## LangChain 是什么？
+
+LangChain 是一个强大的框架，旨在帮助开发人员使用语言模型构建端到端的应用程序。它提供了一套工具、组件和界面，可简化创建由大型语言模型(`LLM`)和聊天模型提供支持的应用程序的过程。LangChain 可以轻松管理与语言模型的交互，将多个组件链接在一起，并集成额外的资源，例如 `API` 和数据库。
+
+LangChain 有很多核心概念。让我们一一浏览：
+
+### 1. 组件和链条（Components and Chains）
+
+在 LangChain 中，组件是模块化的构建块，可以组合起来创建强大的应用程序。链是组合在一起以完成特定任务的一系列组件（或其他链）。例如，一个链可能包括一个提示模板、一个语言模型和一个输出解析器，它们一起工作以处理用户输入、生成响应并处理输出。
+
+### 2. 提示模板和值（Prompt Templates and Values）
+
+`Prompt Template` 负责创建 `PromptValue`，这是最终传递给语言模型的内容。提示模板有助于将用户输入和其他动态信息转换为适合语言模型的格式。`PromptValues` 是具有方法的类，这些方法可以转换为每个模型类型期望的确切输入类型（如文本或聊天消息）。
+
+### 3. 示例选择器（Example Selectors）
+
+当您想要在提示中动态包含示例时，示例选择器很有用。他们接受用户输入并返回一个示例列表以在提示中使用，使其更强大和特定于上下文。
+
+### 4. 输出解析器（Output Parsers）
+
+输出解析器负责将语言模型响应构建为更有用的格式。它们实现了两种主要方法：一种用于提供格式化指令，另一种用于将语言模型的响应解析为结构化格式。这使得在您的应用程序中处理输出数据变得更加容易。
+
+### 5. 索引和检索器（Indexes and Retrievers）
+
+索引是一种组织文档的方式，使语言模型更容易与它们交互。检索器是用于获取相关文档并将它们与语言模型组合的接口。LangChain 提供了用于处理不同类型的索引和检索器的工具和功能，例如矢量数据库和文本拆分器。
+
+### 6. 聊天消息历史（Chat Message History）
+
+LangChain 主要通过聊天界面与语言模型进行交互。`ChatMessageHistory` 类负责记住所有以前的聊天交互，然后可以将这些交互传递回模型、汇总或以其他方式组合。这有助于维护上下文并提高模型对对话的理解。
+
+### 7. 代理和工具包（Agents and Toolkits）
+
+代理是在 LangChain 中推动决策制定的实体。他们可以访问一套工具，并可以根据用户输入决定调用哪个工具。工具包是一组工具，当它们一起使用时，可以完成特定的任务。代理执行器负责使用适当的工具运行代理。
+
+通过理解和利用这些核心概念，您可以利用 LangChain 的强大功能来构建适应性强、高效且能够处理复杂用例的高级语言模型应用程序。
+
+## 什么是 LangChain Agent？
+
+LangChain Agent 是驱动框架中决策制定的实体。它可以访问一组工具，并可以根据用户的输入决定调用哪个工具。代理帮助构建复杂的应用程序，这些应用程序需要自适应和特定于上下文的响应。当存在取决于用户输入和其他因素的未知交互链时，它们特别有用。
+
+### 人们会如何使用 LangChain？
+
+要使用 LangChain，开发人员首先要导入必要的组件和工具，例如 `LLM`、聊天模型、代理、链和 `Memory` 功能。这些组件组合起来创建一个可以理解、处理和响应用户输入的应用程序。
+
+LangChain 为特定用例提供了多种组件，例如个人助理、文档问答、聊天机器人、查询表格数据、与 `API` 交互、提取、评估和汇总。
+
+### 什么是 LangChain 模型？
+
+LangChain 模型是一种抽象，表示框架中使用的不同类型的模型。LangChain 中的模型主要分为三类：
+
+`LLM`（大型语言模型）：这些模型将文本字符串作为输入并返回文本字符串作为输出。它们是许多语言模型应用程序的支柱。
+
+聊天模型：聊天模型由语言模型支持，但具有更结构化的 `API`。他们将聊天消息列表作为输入并返回聊天消息。这使得管理对话历史记录和维护上下文变得容易。
+
+文本嵌入模型（`Text Embedding Models`）：这些模型将文本作为输入并返回表示文本嵌入的浮点列表。这些嵌入可用于文档检索、聚类和相似性比较等任务。
+
+开发人员可以为他们的用例选择合适的 LangChain 模型，并利用提供的组件来构建他们的应用程序。
+
+### LangChain 的主要特点
+
+LangChain 旨在为六个主要领域的开发人员提供支持：
+
+`LLMs and Prompts`：LangChain 使管理提示、优化它们以及为所有 `LLM` 创建通用界面变得容易。此外，它还包括一些用于处理 `LLM` 的便捷实用程序。
+
+链（`Chains`）：这些是对 `LLM` 或其他实用程序的调用序列。LangChain 为链提供标准接口，与各种工具集成，为流行应用提供端到端的链。
+
+数据增强生成（`Data Augmented Generation`）：LangChain 使链能够与外部数据源交互以收集生成步骤的数据。例如，它可以帮助总结长文本或使用特定数据源回答问题。
+
+代理（`Agents`）：代理让 `LLM` 做出有关行动的决定，采取这些行动，检查结果，并继续前进直到工作完成。LangChain 提供了代理的标准接口，多种代理可供选择，以及端到端的代理示例。
+
+`Memory`：LangChain 有一个标准的 `Memory` 接口，有助于维护链或代理调用之间的状态。它还提供了一系列 `Memory` 实现和使用 `Memory` 的链或代理的示例。
+
+评估（`Evaluation`）：很难用传统指标评估生成模型。这就是为什么 LangChain 提供提示和链来帮助开发者自己使用 `LLM` 评估他们的模型。
+
+### 用例（Use Cases）
+
+LangChain 支持大量用例，例如：
+
+针对特定文档的问答：根据给定的文档回答问题，使用这些文档中的信息来创建答案。
+
+聊天机器人：构建可以利用 `LLM` 的功能生成文本的聊天机器人。
+
+代理：开发可以决定行动、采取这些行动、观察结果并继续执行直到完成的代理。
+
+## 快速入门指南：使用 LangChain 构建端到端语言模型应用程序
+
+## 安装
+
+首先，让我们安装 LangChain。只需运行以下命令：
+
+`pip install langchain`
+
+### 环境设置
+
+现在，由于 LangChain 经常需要与模型提供者、数据存储、`API` 等集成，我们将设置我们的环境。在这个例子中，我们将使用 OpenAI 的 `API`，因此我们需要安装他们的 SDK：
+
+`pip install openai`
+
+接下来，让我们在终端中设置环境变量：
+
+`Export OPENAI_API_KEY="..."`
+
+或者，如果您更喜欢在 Jupyter notebook 或 Python 脚本中工作，您可以像这样设置环境变量：
+
+```
+import os
+os.environ["OPENAI_API_KEY"] = "..."
+```
+
+## 构建语言模型应用程序：LLM
+
+安装好 LangChain 并设置好环境后，我们就可以开始构建我们的语言模型应用程序了。LangChain 提供了一堆模块，您可以使用它们来创建语言模型应用程序。您可以将这些模块组合起来用于更复杂的应用程序，或者将它们单独用于更简单的应用程序。
+
+## 构建语言模型应用程序：聊天模型
+
+除了 `LLM`，您还可以使用聊天模型。这些是语言模型的变体，它们在底层使用语言模型但具有不同的界面。聊天模型使用聊天消息作为输入和输出，而不是“文本输入、文本输出” `API`。聊天模型 `API` 非常新，所以每个人都还在寻找最佳抽象。
+
+要完成聊天，您需要将一条或多条消息传递给聊天模型。LangChain 目前支持 `AIMessage`、`HumanMessage`、`SystemMessage` 和 `ChatMessage` 类型。您将主要使用 `HumanMessage`、`AIMessage` 和 `SystemMessage`。
+
+下面是使用聊天模型的示例：
+
+```
+from langchain.chat_models import ChatOpenAI
+from langchain.schema import (
+    AIMessage,
+    HumanMessage,
+    SystemMessage
+)
+```
+
+```
+chat = ChatOpenAI(temperature=0)
+```
+
+您可以通过传递一条消息来完成：
+
+```
+chat([HumanMessage(content="Translate this sentence from English to French. I love programming.")])
+# -> AIMessage(content="J'aime programmer.", additional_kwargs={})
+```
+
+或者为 OpenAI 的 `gpt-3.5-turbo` 和 `gpt-4` 模型传入多条消息：
+
+```
+messages = [
+    SystemMessage(content="You are a helpful assistant that translates English to French."),
+    HumanMessage(content="Translate this sentence from English to French. I love programming.")
+]
+chat(messages)
+# -> AIMessage(content="J'aime programmer.", additional_kwargs={})
+```
+
+您还可以使用 `generate` 为多组消息生成完成。这将返回一个带有附加消息参数的 `LLMResult`：
+
+```
+batch_messages = [
+    [
+        SystemMessage(content="You are a helpful assistant that translates English to French."),
+        HumanMessage(content="Translate this sentence from English to French. I love programming.")
+    ],
+    [
+        SystemMessage(content="You are a helpful assistant that translates English to French."),
+        HumanMessage(content="Translate this sentence from English to French. I love artificial intelligence.")
+    ],
+]
+result = chat.generate(batch_messages)
+result
+# -> LLMResult(generations=[[ChatGeneration(text="J'aime programmer.", generation_info=None, message=AIMessage(content="J'aime programmer.", additional_kwargs={}))], [ChatGeneration(text="J'aime l'intelligence artificielle.", generation_info=None, message=AIMessage(content="J'aime l'intelligence artificielle.", additional_kwargs={}))]], llm_output={'token_usage': {'prompt_tokens': 71, 'completion_tokens': 18, 'total_tokens': 89}})
+```
+
+您可以从 `LLMResult` 中提取令牌使用等信息：
+
+```
+result.llm_output['token_usage']
+# -> {'prompt_tokens': 71, 'completion_tokens': 18, 'total_tokens': 89}
+```
+
+对于聊天模型，您还可以通过使用 `MessagePromptTemplate` 来使用模板。您可以从一个或多个 `MessagePromptTemplates` 创建 `ChatPromptTemplate`。`ChatPromptTemplate` 的方法 `format_prompt` 返回一个 `PromptValue`，您可以将其转换为字符串或 `Message` 对象，具体取决于您是否要使用格式化值作为 `LLM` 或聊天模型的输入。
+
+这是一个例子：
+
+```
+from langchain.chat_models import ChatOpenAI
+from langchain.prompts.chat import (
+    ChatPromptTemplate,
+    SystemMessagePromptTemplate,
+    HumanMessagePromptTemplate,
+)
+chat = ChatOpenAI(temperature=0)
+template = "You are a helpful assistant that translates {input_language} to {output_language}."
+system_message_prompt = SystemMessagePromptTemplate.from_template(template)
+human_template = "{text}"
+human_message_prompt = HumanMessagePromptTemplate.from_template(human_template)
+chat_prompt = ChatPromptTemplate.from_messages([system_message_prompt, human_message_prompt])
+# get a chat completion from the formatted messages
+chat(chat_prompt.format_prompt(input_language="English", output_language="French", text="I love programming.").to_messages())
+# -> AIMessage(content="J'aime programmer.", additional_kwargs={})
+```
+
+您还可以将代理与聊天模型一起使用。`AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION` 使用代理类型初始化代理：
+
+
+
+# LangChain 应用开发示例
+
+## 代理示例
+
+```
+from langchain.chat_models import ChatOpenAI
+from langchain import LLMChain
+from langchain.prompts.chat import (
+    ChatPromptTemplate,
+    SystemMessagePromptTemplate,
+    HumanMessagePromptTemplate,
+)
+chat = ChatOpenAI(temperature=0)
+template = "You are a helpful assistant that translates {input_language} to {output_language}."
+system_message_prompt = SystemMessagePromptTemplate.from_template(template)
+human_template = "{text}"
+human_message_prompt = HumanMessagePromptTemplate.from_template(human_template)
+chat_prompt = ChatPromptTemplate.from_messages([system_message_prompt, human_message_prompt])
+chain = LLMChain(llm=chat, prompt=chat_prompt)
+chain.run(input_language="English", output_language="French", text="I love programming.")
+# -> "J'aime programmer."
+```
+
+在此示例中，代理将以交互方式执行搜索和计算以提供最终答案。
+
+## 记忆与对话上下文
+
+最后，让我们探索使用 `Memory` 与链和使用聊天模型初始化的代理。这与 `Memory for LLMs` 的主要区别在于我们可以将以前的消息保留为它们自己唯一的 `Memory` 对象，而不是将它们压缩成一个字符串。
+
+### ConversationChain 示例
+
+下面是使用 `a` 的示例 `ConversationChain`：
+
+```
+from langchain.prompts import (
+    ChatPromptTemplate, 
+    MessagesPlaceholder, 
+    SystemMessagePromptTemplate, 
+    HumanMessagePromptTemplate
+)
+from langchain.chains import ConversationChain
+from langchain.chat_models import ChatOpenAI
+from langchain.memory import ConversationBufferMemory
+prompt = ChatPromptTemplate.from_messages([
+    SystemMessagePromptTemplate.from_template("The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know."),
+    MessagesPlaceholder(variable_name="history"),
+    HumanMessagePromptTemplate.from_template("{input}")
+])
+llm = ChatOpenAI(temperature=0)
+memory = ConversationBufferMemory(return_messages=True)
+conversation = ConversationChain(memory=memory, prompt=prompt, llm=llm)
+conversation.predict(input="Hi there!")
+# -> 'Hello! How can I assist you today?'
+conversation.predict(input="I'm doing well! Just having a conversation with an AI.")
+# -> "That sounds like fun! I'm happy to chat with you. Is there anything specific you'd like to talk about?"
+conversation.predict(input="Tell me about yourself.")
+# -> "Sure! I am an AI language model created by OpenAI. I was trained on a large dataset of text from the internet, which allows me to understand and generate human-like language. I can answer questions, provide information, and even have conversations like this one. Is there anything else you'd like to know about me?"
+```
+
+在此示例中，我们使用 `a` `ConversationChain` 来维护跨与 AI 的多次交互的对话上下文。
+
+就是这样！现在您已经对如何使用 LangChain 构建端到端的语言模型应用有了深入的了解。通过遵循这些示例，您可以使用 LLM、聊天模型、代理、链和 `Memory` 功能开发强大的语言模型应用程序。
+
+## 结论
+
+总之，LangChain 是一个强大的框架，它通过提供模块化和灵活的方法简化了构建高级语言模型应用程序的过程。通过了解组件、链、提示模板、输出解析器、索引、检索器、聊天消息历史记录和代理等核心概念，您可以创建适合您特定需求的自定义解决方案。LangChain 的适应性和易用性使其成为开发人员的宝贵工具，使他们能够释放语言模型的全部潜力，并在广泛的用例中创建智能的、上下文感知的应用程序。
+
+此文主要翻译自：A Complete Guide to LangChain: Building Powerful Applications with Large Language Models。 翻译时对内容有所增删。
+
+原文： [A Complete Guide to LangChain: Building Powerful Applications with Large Language Models](https://levelup.gitconnected.com/a-complete-guide-to-langchain-building-powerful-applications-with-large-language-models-53ad54a1e7eb?gi=a119a6c42c7a)
