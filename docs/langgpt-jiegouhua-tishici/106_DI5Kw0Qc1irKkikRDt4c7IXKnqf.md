@@ -516,6 +516,8 @@ ps. 如果我们拿到的样式不符合预期，不用着急，直接告诉它�
 
 > 网页端，可使用代码模式，一键直出加预览，可根据自己的喜好调整不同风格的解读~~(ps.批量操作可以使用通义灵码帮我们直接调用通义api脚本来跑哦~)
 
+            background-image: url(&#x27;https://img.picgo.net/2024/11/12/888200de4f2d1ce30e0.png&#x27;);
+
 ```
 # 生活日历思考者（Author by 甲木）
 
@@ -714,7 +716,6 @@ ps. 如果我们拿到的样式不符合预期，不用着急，直接告诉它�
             width: 140px;
             height: 140px;
             opacity: 0.3;
-            background-image: url(&#x27;https://img.picgo.net/2024/11/12/888200de4f2d1ce30e0.png&#x27;);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;

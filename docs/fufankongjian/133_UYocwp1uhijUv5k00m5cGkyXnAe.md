@@ -1809,6 +1809,8 @@ class SessionSummary(BaseModel):
 
 ### 7.main代码解释
 
+# 让前端可以通过 http://localhost:8002/images/xxx.png 访问生成的图片
+
 ```
 # main.py
 import uvicorn
@@ -1836,7 +1838,6 @@ app.add_middleware(
 )
 
 # 3. 挂载静态文件目录
-# 让前端可以通过 http://localhost:8002/images/xxx.png 访问生成的图片
 # 确保存储目录存在
 data_manager.ensure_directories()
 app.mount(&quot;/images&quot;, StaticFiles(directory=&quot;storage/images&quot;), name=&quot;images&quot;)

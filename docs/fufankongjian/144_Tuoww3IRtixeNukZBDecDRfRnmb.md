@@ -683,6 +683,8 @@ from openai import OpenAI
 
 ![](img/7178e754d2b2231eb318f33147ebb4e2.png)
 
+            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
+
 ```
 from openai import OpenAI
 
@@ -704,7 +706,6 @@ completion = client.chat.completions.create(
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
           }
         }
       ]
@@ -751,6 +752,8 @@ print(completion.choices[0].message.content)
 
 例如DMXAPI：
 
+            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
+
 ```
 client = OpenAI(
   base_url=&quot;https://www.dmxapi.cn/v1&quot;,
@@ -770,7 +773,6 @@ completion = client.chat.completions.create(
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
           }
         }
       ]
@@ -804,6 +806,8 @@ print(completion.choices[0].message.content)
 
 以及smallAI实现流程如下：
 
+            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
+
 ```
 client = OpenAI(
   base_url=&quot;https://ai98.vip/v1&quot;,
@@ -823,7 +827,6 @@ completion = client.chat.completions.create(
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
           }
         }
       ]
@@ -871,6 +874,8 @@ print(completion.choices[0].message.content)
 
 +   OpenRouter Claude 4多模态功能测试
 
+            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
+
 ```
 client = OpenAI(
   base_url=&quot;https://openrouter.ai/api/v1&quot;,
@@ -890,7 +895,6 @@ completion = client.chat.completions.create(
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
           }
         }
       ]

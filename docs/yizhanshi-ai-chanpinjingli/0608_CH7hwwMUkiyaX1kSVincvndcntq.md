@@ -222,6 +222,8 @@ print(f&#x27;response1: {resp_list[1].choices[0].message.content}&#x27;)
 
 多模态模型的LoRA推理示例如下：
 
+                 images=[&#x27;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/animal.png&#x27;]),
+
 ```
 import os
 os.environ[&#x27;CUDA_VISIBLE_DEVICES&#x27;] = &#x27;0&#x27;
@@ -248,7 +250,6 @@ request_config = RequestConfig(max_tokens=512, temperature=0)
 infer_requests = [
     InferRequest(messages=[{&#x27;role&#x27;: &#x27;user&#x27;, &#x27;content&#x27;: &#x27;who are you?&#x27;}]),
     InferRequest(messages=[{&#x27;role&#x27;: &#x27;user&#x27;, &#x27;content&#x27;: &#x27;&lt;image&gt;Task: Object Detection&#x27;}],
-                 images=[&#x27;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/animal.png&#x27;]),
 ]
 resp_list = engine.infer(infer_requests, request_config)
 query0 = infer_requests[0].messages[0][&#x27;content&#x27;]

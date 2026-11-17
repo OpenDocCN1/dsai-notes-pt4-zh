@@ -131,6 +131,8 @@ lmdeploy serve api_server --backend pytorch --device ascend --eager-mode Shangha
 
 # 四、推理测试
 
+                    &quot;url&quot;: &quot;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&quot;,
+
 ```
 from openai import OpenAI
 client = OpenAI(api_key=&#x27;&#x27;, base_url=&#x27;http://0.0.0.0:23333/v1&#x27;)
@@ -142,7 +144,6 @@ messages = [
             {
                 &quot;type&quot;: &quot;image_url&quot;,
                 &quot;image_url&quot;:{
-                    &quot;url&quot;: &quot;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&quot;,
                 }
             },
             {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;Describe this image.&quot;},

@@ -306,6 +306,8 @@ user_message = {
 
 如果传递多个内容（如图像和文本）：
 
+                        &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20241009205714055.png&quot;,
+
 ```
 user_message_with_image = {
     &quot;role&quot;: &quot;user&quot;,
@@ -313,7 +315,6 @@ user_message_with_image = {
         {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;你能帮我介绍下这张图片里面的内容么？&quot;},
         {&quot;type&quot;: &quot;image_url&quot;, 
          &quot;image_url&quot;: {
-                        &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20241009205714055.png&quot;,
                     }
         }
     ]

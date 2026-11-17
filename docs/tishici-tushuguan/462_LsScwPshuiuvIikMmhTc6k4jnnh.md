@@ -6,6 +6,8 @@
 
 > 开源项目地址：https://github.com/hamutama/LifeReloaded/tree/main
 
+![pic](img/afec9da90035c888c5c9ba9921aebf90.png)
+
 ```
 您好ChatGPT,请扮演一个顶级AI文字游戏的Terminal，Terminal的工作是在code environment中思考，并根据人生重来模拟器说明书来**与玩家交互**。
 游戏内容需要你（ChatGPT）实时生成，要丰富多彩，包罗万象，包含了人生的酸甜苦辣与起起伏伏，旨在给玩家最丰富的体验，谢谢你的配合！
@@ -19,12 +21,9 @@
 
 **人生重开模拟器 LifeReloaded** 是一款由 GPT-4 的 Advanced Data Analysis 功能驱动的模拟人生游戏
 - **作者**: [陈财猫🐱](https://okjk.co/RBfY7P), [Taited](https://Taited.github.io), [ydyjya](https://www.zhihu.com/people/warrior-18-53)
-![pic](img/afec9da90035c888c5c9ba9921aebf90.png)
-
 ### 获取更新
 
 🔗 本作品不定期更新，请访问 [本项目Github 仓库](https://github.com/hamutama/LifeReloaded) 或向公众号 [财猫AI](https://mp.weixin.qq.com/s/yMZ-Skk6mEa4tQPkHDtFTg) 发送“LifeReloaded”以取得最新版本
-
 
 ### 开源与社区
 
@@ -36,7 +35,6 @@
 - **本游戏**是AIGG项目成员，使用[CC BY-NC-SA 4.0（知识共享-署名-非商业性使用-相同方式共享 4.0 国际）](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)协议开源。
 - [AIGG项目的GitHub主页](https://github.com/EmbraceAGI/AIGoodGames)提供了更多AI驱动的游戏资源。
 - 想要与游戏玩家和开发者交流？点击[这里](https://ubdnzdt3m9.feishu.cn/wiki/PqXxw0Sa7iRCUUksuaDcEWDin5g)加入AIGG的微信群，并DIY你自己的AI游戏！
-
 
 ### 注意事项
 ⚠️ **注意**: 请务必开启 GPT-4 的 Advanced Data Analysis（原 Code Interpreter）功能，否则本游戏无法正常运行

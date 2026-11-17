@@ -168,6 +168,8 @@ skill**s=tr**ue
 
 这里我写了一个 python 脚本，调用 ffmpeg 对视频进行截图，然后把标记出来的位置替换成图片的实际链接，这样就可以生成一个图文版的 markdown 笔记了。
 
+            markdown = markdown.replace(marker, f&quot;![]({url})&quot;, 1)except Exception as exc:  # pylint: disable=broad-except
+
 ```
 **import**** argpa****rse
 im****port j****son
@@ -220,7 +222,6 @@ def replace_screenshots(
 for idx, (marker, ts) in enumerate(matches):try:
             img_path = generate_screenshot(video_path, output_dir, ts)
             url = f&quot;{image_base_url.rstrip(&#x27;/&#x27;)}/{img_path.name}&quot;
-            markdown = markdown.replace(marker, f&quot;![]({url})&quot;, 1)except Exception as exc:  # pylint: disable=broad-except
             logging.warning(&quot;生成截图失败（%s）：%s&quot;, marker, exc)return markdown
 
 def main():

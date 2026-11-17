@@ -646,13 +646,14 @@ BaseMessage(role_name=&#x27;example_user&#x27;, role_type=&lt;RoleType.USER: &#x
 
 除了纯文本外，BaseMessage 还支持包含图片、视频等多模态信息。这可以为你的对话系统带来更丰富的交互体验。下面的示例展示了如何向 BaseMessage 添加一张图片。假设你已将一张图片加载为 PIL.Image 对象：
 
+url = &quot;https://raw.githubusercontent.com/camel-ai/camel/master/misc/logo_light.png&quot;
+
 ```
 from PIL import Image
 from io import BytesIO
 import requests
 
 # 下载一张图片并创建一个 PIL Image 对象
-url = &quot;https://raw.githubusercontent.com/camel-ai/camel/master/misc/logo_light.png&quot;
 response = requests.get(url)
 img = Image.open(BytesIO(response.content))
 
@@ -3506,6 +3507,8 @@ embeddings = sentence_encoder.embed_list([&quot;Hello, world!&quot;, &quot;Anoth
 
 VisionLanguageEmbedding 是一个基于多模态模型（如 CLIP）的嵌入生成类，能够同时处理图像和文本输入，生成对应的嵌入向量。，默认使用本地的openai/clip-vit-base-patch32模型（如果没有会自动下载）。
 
+url = &quot;http://images.cocodataset.org/val2017/000000039769.jpg&quot;
+
 ```
 from camel.embeddings import VisionLanguageEmbedding
 from PIL import Image
@@ -3515,7 +3518,6 @@ import requests
 vlm_embedding = VisionLanguageEmbedding()
 
 # 下载测试图像
-url = &quot;http://images.cocodataset.org/val2017/000000039769.jpg&quot;
 image = Image.open(requests.get(url, stream=True).raw)
 test_images = [image, image]
 
@@ -4466,6 +4468,8 @@ actor_result = apify.run_actor(
 
 检索结果数据库 ID 并使用 get_dataset_items 方法访问它。
 
+[{&#x27;url&#x27;: &#x27;https://www.camel-ai.org/&#x27;, &#x27;crawl&#x27;: {&#x27;loadedUrl&#x27;: &#x27;https://www.camel-ai.org/&#x27;, &#x27;loadedTime&#x27;: &#x27;2025-02-06T07:11:19.056Z&#x27;, &#x27;referrerUrl&#x27;: &#x27;https://www.camel-ai.org/&#x27;, &#x27;depth&#x27;: 0, &#x27;httpStatusCode&#x27;: 200}, &#x27;metadata&#x27;: {&#x27;canonicalUrl&#x27;: &#x27;https://www.camel-ai.org/&#x27;, &#x27;title&#x27;: &#x27;CAMEL-AI&#x27;, &#x27;description&#x27;: &#x27;CAMEL-AI.org is the 1st LLM multi-agent framework and an open-source community dedicated to finding the scaling law of agents.&#x27;, &#x27;author&#x27;: None, &#x27;keywords&#x27;: None, &#x27;languageCode&#x27;: &#x27;en&#x27;, &#x27;openGraph&#x27;: [{&#x27;property&#x27;: &#x27;og:title&#x27;, &#x27;content&#x27;: &#x27;CAMEL-AI&#x27;}, {&#x27;property&#x27;: &#x27;og:description&#x27;, &#x27;content&#x27;: &#x27;CAMEL-AI.org is the 1st LLM multi-agent framework and an open-source community dedicated to finding the scaling law of agents.&#x27;}, {&#x27;property&#x27;: &#x27;twitter:title&#x27;, &#x27;content&#x27;: &#x27;CAMEL-AI&#x27;}, {&#x27;property&#x27;: &#x27;twitter:description&#x27;, &#x27;content&#x27;: &#x27;CAMEL-AI.org is the 1st LLM multi-agent framework and an open-source community dedicated to finding the scaling law of agents.&#x27;}, {&#x27;property&#x27;: &#x27;og:type&#x27;, &#x27;content&#x27;: &#x27;website&#x27;}], &#x27;jsonLd&#x27;: None, &#x27;headers&#x27;: {&#x27;content-type&#x27;: &#x27;text/html&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, &#x27;connection&#x27;: &#x27;keep-alive&#x27;, &#x27;date&#x27;: &#x27;Wed, 05 Feb 2025 21:46:50 GMT&#x27;, &#x27;cf-ray&#x27;: &#x27;90d61869d8a0ef20-PDX&#x27;, &#x27;cf-cache-status&#x27;: &#x27;MISS&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, &#x27;last-modified&#x27;: &#x27;Wed, 05 Feb 2025 21:46:50 GMT&#x27;, &#x27;strict-transport-security&#x27;: &#x27;max-age=31536000&#x27;, &#x27;surrogate-control&#x27;: &#x27;max-age=432000&#x27;, &#x27;surrogate-key&#x27;: &#x27;www.camel-ai.org 6659a154491a54a40551bc78 pageId:6686a2bcb7ece5fb40457491 679b765c27842bdba036423f 668181a0a818ade34e653b24 6659a155491a54a40551bd7e&#x27;, &#x27;x-lambda-id&#x27;: &#x27;ce2c42a4-c711-4bd7-b262-58374d893ffa&#x27;, &#x27;set-cookie&#x27;: &#x27;_cfuvid=55wNMTV.q_HQ_jKuXybjfL5A9sxw0Wd30vX5Ff26cJA-1738792010775-0.0.1.1-604800000; path=/; domain=.cdn.webflow.com; HttpOnly; Secure; SameSite=None&#x27;, &#x27;x-cluster-name&#x27;: &#x27;us-west-2-prod-hosting-red&#x27;, &#x27;vary&#x27;: &#x27;Accept-Encoding&#x27;, &#x27;x-cache&#x27;: &#x27;Hit from cloudfront&#x27;, &#x27;via&#x27;: &#x27;1.1 6a783450a00c2b23baf9dd1c4a552cb0.cloudfront.net (CloudFront)&#x27;, &#x27;x-amz-cf-pop&#x27;: &#x27;LAX54-P3&#x27;, &#x27;x-amz-cf-id&#x27;: &#x27;t9nN-HwYopeCl40sOYSwOcFNJJT3I_KFOsxZuiD3I_23GLC9K5OEBA==&#x27;, &#x27;age&#x27;: &#x27;33862&#x27;}}, &#x27;screenshotUrl&#x27;: None, &#x27;text&#x27;: &#x27;Building Multi-AgentSystems for World Simu_\nCAMEL’s multi-agent approach streamlines large-scale synthetic data creation and labeling. By assigning different specialized roles to each agent, it encourages dynamic, chain-of-thought collaborations that yield high-quality outputs. The orchestrated interaction ensures comprehensive coverage of data variations and consistency across domains. This makes it ideal for generating training sets, question-answer pairs, or other structured content.\nCAMEL powers automated workflows by breaking down complex tasks among coordinated agents. Each agent assumes a specific role, collaborating through an iterative conversational framework. This reduces manual intervention, minimizes errors, and accelerates solution delivery—especially useful for repetitive or logic-intensive processes.\nCAMEL enables simulations of dynamic, interactive worlds. Agents act as entities with distinct personas, communicating and responding in real time. This setup can be used for modeling scenarios, building interactive storylines, or testing multi-layered strategies. By capturing the nuances of diverse viewpoints, CAMEL creates immersive simulations for experimentation, training, and creative exploration.&#x27;, &#x27;markdown&#x27;: &#x27;# Building Multi-AgentSystems for World Simu\\_\n\nCAMEL’s multi-agent approach streamlines large-scale synthetic data creation and labeling. By assigning different specialized roles to each agent, it encourages dynamic, chain-of-thought collaborations that yield high-quality outputs. The orchestrated interaction ensures comprehensive coverage of data variations and consistency across domains. This makes it ideal for generating training sets, question-answer pairs, or other structured content.\n\n![](img/ef9030d6e49e62871d0097ff9b46c8a9.png)\n\nCAMEL powers automated workflows by breaking down complex tasks among coordinated agents. Each agent assumes a specific role, collaborating through an iterative conversational framework. This reduces manual intervention, minimizes errors, and accelerates solution delivery—especially useful for repetitive or logic-intensive processes.\n\n![](img/95c77b71b964218e429d173aaafe1950.png)\n\nCAMEL enables simulations of dynamic, interactive worlds. Agents act as entities with distinct personas, communicating and responding in real time. This setup can be used for modeling scenarios, building interactive storylines, or testing multi-layered strategies. By capturing the nuances of diverse viewpoints, CAMEL creates immersive simulations for experimentation, training, and creative exploration.\n\n![](img/f148b0f3a5e4e5671c385dcd39d9cee4.png)&#x27;}]
+
 ```
 dataset_result = apify.get_dataset_items(
     dataset_id=actor_result[&quot;defaultDatasetId&quot;]
@@ -4474,7 +4478,6 @@ dataset_result = apify.get_dataset_items(
 print(dataset_result)
 
 &gt;&gt;&gt;
-[{&#x27;url&#x27;: &#x27;https://www.camel-ai.org/&#x27;, &#x27;crawl&#x27;: {&#x27;loadedUrl&#x27;: &#x27;https://www.camel-ai.org/&#x27;, &#x27;loadedTime&#x27;: &#x27;2025-02-06T07:11:19.056Z&#x27;, &#x27;referrerUrl&#x27;: &#x27;https://www.camel-ai.org/&#x27;, &#x27;depth&#x27;: 0, &#x27;httpStatusCode&#x27;: 200}, &#x27;metadata&#x27;: {&#x27;canonicalUrl&#x27;: &#x27;https://www.camel-ai.org/&#x27;, &#x27;title&#x27;: &#x27;CAMEL-AI&#x27;, &#x27;description&#x27;: &#x27;CAMEL-AI.org is the 1st LLM multi-agent framework and an open-source community dedicated to finding the scaling law of agents.&#x27;, &#x27;author&#x27;: None, &#x27;keywords&#x27;: None, &#x27;languageCode&#x27;: &#x27;en&#x27;, &#x27;openGraph&#x27;: [{&#x27;property&#x27;: &#x27;og:title&#x27;, &#x27;content&#x27;: &#x27;CAMEL-AI&#x27;}, {&#x27;property&#x27;: &#x27;og:description&#x27;, &#x27;content&#x27;: &#x27;CAMEL-AI.org is the 1st LLM multi-agent framework and an open-source community dedicated to finding the scaling law of agents.&#x27;}, {&#x27;property&#x27;: &#x27;twitter:title&#x27;, &#x27;content&#x27;: &#x27;CAMEL-AI&#x27;}, {&#x27;property&#x27;: &#x27;twitter:description&#x27;, &#x27;content&#x27;: &#x27;CAMEL-AI.org is the 1st LLM multi-agent framework and an open-source community dedicated to finding the scaling law of agents.&#x27;}, {&#x27;property&#x27;: &#x27;og:type&#x27;, &#x27;content&#x27;: &#x27;website&#x27;}], &#x27;jsonLd&#x27;: None, &#x27;headers&#x27;: {&#x27;content-type&#x27;: &#x27;text/html&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, &#x27;connection&#x27;: &#x27;keep-alive&#x27;, &#x27;date&#x27;: &#x27;Wed, 05 Feb 2025 21:46:50 GMT&#x27;, &#x27;cf-ray&#x27;: &#x27;90d61869d8a0ef20-PDX&#x27;, &#x27;cf-cache-status&#x27;: &#x27;MISS&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, &#x27;last-modified&#x27;: &#x27;Wed, 05 Feb 2025 21:46:50 GMT&#x27;, &#x27;strict-transport-security&#x27;: &#x27;max-age=31536000&#x27;, &#x27;surrogate-control&#x27;: &#x27;max-age=432000&#x27;, &#x27;surrogate-key&#x27;: &#x27;www.camel-ai.org 6659a154491a54a40551bc78 pageId:6686a2bcb7ece5fb40457491 679b765c27842bdba036423f 668181a0a818ade34e653b24 6659a155491a54a40551bd7e&#x27;, &#x27;x-lambda-id&#x27;: &#x27;ce2c42a4-c711-4bd7-b262-58374d893ffa&#x27;, &#x27;set-cookie&#x27;: &#x27;_cfuvid=55wNMTV.q_HQ_jKuXybjfL5A9sxw0Wd30vX5Ff26cJA-1738792010775-0.0.1.1-604800000; path=/; domain=.cdn.webflow.com; HttpOnly; Secure; SameSite=None&#x27;, &#x27;x-cluster-name&#x27;: &#x27;us-west-2-prod-hosting-red&#x27;, &#x27;vary&#x27;: &#x27;Accept-Encoding&#x27;, &#x27;x-cache&#x27;: &#x27;Hit from cloudfront&#x27;, &#x27;via&#x27;: &#x27;1.1 6a783450a00c2b23baf9dd1c4a552cb0.cloudfront.net (CloudFront)&#x27;, &#x27;x-amz-cf-pop&#x27;: &#x27;LAX54-P3&#x27;, &#x27;x-amz-cf-id&#x27;: &#x27;t9nN-HwYopeCl40sOYSwOcFNJJT3I_KFOsxZuiD3I_23GLC9K5OEBA==&#x27;, &#x27;age&#x27;: &#x27;33862&#x27;}}, &#x27;screenshotUrl&#x27;: None, &#x27;text&#x27;: &#x27;Building Multi-AgentSystems for World Simu_\nCAMEL’s multi-agent approach streamlines large-scale synthetic data creation and labeling. By assigning different specialized roles to each agent, it encourages dynamic, chain-of-thought collaborations that yield high-quality outputs. The orchestrated interaction ensures comprehensive coverage of data variations and consistency across domains. This makes it ideal for generating training sets, question-answer pairs, or other structured content.\nCAMEL powers automated workflows by breaking down complex tasks among coordinated agents. Each agent assumes a specific role, collaborating through an iterative conversational framework. This reduces manual intervention, minimizes errors, and accelerates solution delivery—especially useful for repetitive or logic-intensive processes.\nCAMEL enables simulations of dynamic, interactive worlds. Agents act as entities with distinct personas, communicating and responding in real time. This setup can be used for modeling scenarios, building interactive storylines, or testing multi-layered strategies. By capturing the nuances of diverse viewpoints, CAMEL creates immersive simulations for experimentation, training, and creative exploration.&#x27;, &#x27;markdown&#x27;: &#x27;# Building Multi-AgentSystems for World Simu\\_\n\nCAMEL’s multi-agent approach streamlines large-scale synthetic data creation and labeling. By assigning different specialized roles to each agent, it encourages dynamic, chain-of-thought collaborations that yield high-quality outputs. The orchestrated interaction ensures comprehensive coverage of data variations and consistency across domains. This makes it ideal for generating training sets, question-answer pairs, or other structured content.\n\n![](img/ef9030d6e49e62871d0097ff9b46c8a9.png)\n\nCAMEL powers automated workflows by breaking down complex tasks among coordinated agents. Each agent assumes a specific role, collaborating through an iterative conversational framework. This reduces manual intervention, minimizes errors, and accelerates solution delivery—especially useful for repetitive or logic-intensive processes.\n\n![](img/95c77b71b964218e429d173aaafe1950.png)\n\nCAMEL enables simulations of dynamic, interactive worlds. Agents act as entities with distinct personas, communicating and responding in real time. This setup can be used for modeling scenarios, building interactive storylines, or testing multi-layered strategies. By capturing the nuances of diverse viewpoints, CAMEL creates immersive simulations for experimentation, training, and creative exploration.\n\n![](img/f148b0f3a5e4e5671c385dcd39d9cee4.png)&#x27;}]
 ```
 
 这个函数通常用于从Apify平台获取爬取或处理后的数据，以便在后续程序中使用这些数据。
@@ -4532,11 +4535,32 @@ Contact us to join forces via [Slack](https://join.slack.com/t/camel-kwr1314/sha
 
 JinaURL Reader 是 Jina AI 的 URL 读取服务的 Python 客户端，经过优化，可从 URL 提供更清晰、对 LLM 可读的内容。该reader提供一定额度的免费调用次数。无需注册API也可使用。
 
-```
-from camel.loaders import JinaURLReader
 from camel[.types.enums import JinaRetu](https://www.datawhale.cn/assets/logo-vAxrscYT.png)rnFormat
 
 jina_reader[ = Ji](https://www.datawhale.cn/open-ai)[ACTIVITY%E6%B4%BB%E5%8A%A8](https://www.datawhale.cn/activity)[COURSE%E8%AF%BE%E7%A8%8B](https://www.datawhale.cn/learn)[CERTIFICATION%E8%AE%A4%E8%AF%81](https://www.datawhale.cn/cert)[NEWS%E8%B5%84%E8%AE%AF](https://www.datawhale.cn/article)[n](https://www.datawhale.cn/cfd0357cb7301be8879b48a64347d08f)![Image)aURLReader(r[e](img/f01108b4bccd7defd6f4360b24faa8f6.png)[tu](https://www.datawhale.cn/4d659f53c87d622c9cafa1b45920725f)](https://github.com/datawhalechina)rn_format=J[i](https://www.datawhale.cn/assets/homebanner-left-DQp9I1cY.png)naReturnFormat.MARKDOWN)
+
+![Image 1: logo](img/ef948741390a39850d7c1c319a7c6858.png)
+
+
+![Image 2: wechat](blob:https://www.InternLM.cn/cfd0357cb7301be8879b48a64347d08f)![Image 3: wechat](img/62ef711f3d8579130b3cca450cae10e0.png)
+
+[![Image 4: github](blob:https://www.InternLM.cn/4d659f53c87d622c9cafa1b45920725f)](https://github.com/InternLMchina)
+
+
+![Image 5](img/56ae748bc16e8652e87b59929357fe47.png)
+
+
+![Image 6](img/dcba2fc3653d2e16572484566c2d0f32.png)
+
+
+![Image 7](img/71c3d2e23522b0649c4bc89d4ea44b75.png)
+
+![Image 8: logo](blob:https://www.InternLM.cn/7dd095def689b2660c34f51de0662bf6)
+
+[![Image 30](blob:https://www.InternLM.cn/a1d2760e5d7b70d1dbb76b573944cb7f) 我要反馈](https://jinshuju.net/f/gtuc5x)
+
+```
+from camel.loaders import JinaURLReader
 response = jina_reader.read_content(&quot;https://www.InternLM.cn/home&quot;)
 
 print(response)
@@ -4544,33 +4568,13 @@ print(response)
 &gt;&gt;&gt;
 InternLM-学用AI，从此开始
 ===============  
-
-![Image 1: logo](img/ef948741390a39850d7c1c319a7c6858.png)
-
 [HOME首页](https://www.InternLM.cn/home)[OPEN 1+XAI 通识课](https://www.InternLM.cn/open-ai)[ACTIVITY活动](https://www.InternLM.cn/activity)[COURSE课程](https://www.InternLM.cn/learn)[CERTIFICATION认证](https://www.InternLM.cn/cert)[NEWS资讯](https://www.InternLM.cn/article)
-
-![Image 2: wechat](blob:https://www.InternLM.cn/cfd0357cb7301be8879b48a64347d08f)![Image 3: wechat](img/62ef711f3d8579130b3cca450cae10e0.png)
-
-[![Image 4: github](blob:https://www.InternLM.cn/4d659f53c87d622c9cafa1b45920725f)](https://github.com/InternLMchina)
-
 登录
-
-![Image 5](img/56ae748bc16e8652e87b59929357fe47.png)
-
 InternLM for the learner
-
-![Image 6](img/dcba2fc3653d2e16572484566c2d0f32.png)
-
 InternLM通过开源学习模式，助力AI学习者与知识连接，与人连接，与场景连接，推动AI人才培养。
-
-![Image 7](img/71c3d2e23522b0649c4bc89d4ea44b75.png)
-
-![Image 8: logo](blob:https://www.InternLM.cn/7dd095def689b2660c34f51de0662bf6)
 ...
 
 社交媒体[GITHUB](https://github.com/InternLMchina) [B站](https://space.bilibili.com/431850986) [CSDN](https://blog.csdn.net/InternLM)
-
-[![Image 30](blob:https://www.InternLM.cn/a1d2760e5d7b70d1dbb76b573944cb7f) 我要反馈](https://jinshuju.net/f/gtuc5x)
 Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
 ```
 

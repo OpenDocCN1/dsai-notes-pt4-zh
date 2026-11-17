@@ -198,14 +198,15 @@ touch internvl_cli-demo.py
 
 internvl_cli-demo.py脚本如下:
 
+
+image = load_image(&#x27;https://github.moeyy.xyz/https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;)
+
 ```
 from lmdeploy import pipeline, GenerationConfig, ChatTemplateConfig, PytorchEngineConfig
 from lmdeploy.vl import load_image
 
 model = &#x27;/home/ma-user/work/pretrainmodel/InternVL3-2B&#x27;
 pipe = pipeline(model, backend_config=PytorchEngineConfig(tp=1, device_type=&quot;ascend&quot;, eager_mode=True), chat_template_config=ChatTemplateConfig(model_name=&#x27;internvl2_5&#x27;))
-
-image = load_image(&#x27;https://github.moeyy.xyz/https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;)
 gen_config = GenerationConfig(top_k=40, top_p=0.8, temperature=0.8)
 sess = pipe.chat((&#x27;描述一下图片&#x27;, image), gen_config=gen_config)
 print(sess.response.text)

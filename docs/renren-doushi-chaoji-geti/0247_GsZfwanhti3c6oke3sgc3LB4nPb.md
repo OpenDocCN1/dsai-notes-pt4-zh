@@ -254,14 +254,14 @@ https://www.youtube.com/@storys.meowia/shorts
 平视
 [景别]
 全景&quot;
+
+![](img/01b83d88fa04e37fc2760165d159b187.png)
+
 ```
 
 ## 四、如何用提示词提高【图生视频】的效率
 
 **图生视频提示词使用教程**
-
-![](img/01b83d88fa04e37fc2760165d159b187.png)
-
 [2.图生视频提示词演示.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nxsyb1n4OomEE0xYfxrcJhxgnCc)
 
 下面是完整即梦3.0图生视频提示词，适用模型：Gemini

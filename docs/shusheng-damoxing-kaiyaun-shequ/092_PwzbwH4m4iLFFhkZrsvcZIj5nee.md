@@ -117,6 +117,9 @@ print(res.json()[&quot;choices&quot;][0][&#x27;message&#x27;][&quot;content&quot
 
 +   使用 openai python sdk
 
+                        &quot;url&quot;: &quot;https://static.openxlab.org.cn/internvl/demo/visionpro.png&quot;  #支持互联网公开可访问的图片 url 或图片的 base64 编码
+                        &quot;url&quot;: &quot;https://static.openxlab.org.cn/puyu/demo/000-2x.jpg&quot;
+
 ```
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -149,13 +152,11 @@ chat_rsp = client.chat.completions.create(
                 {
                     &quot;type&quot;: &quot;image_url&quot;,
                     &quot;image_url&quot;: {
-                        &quot;url&quot;: &quot;https://static.openxlab.org.cn/internvl/demo/visionpro.png&quot;  #支持互联网公开可访问的图片 url 或图片的 base64 编码
                     }
                 },
                 {
                     &quot;type&quot;: &quot;image_url&quot;,                                                     # 单轮对话支持上传多张图片
                     &quot;image_url&quot;: {
-                        &quot;url&quot;: &quot;https://static.openxlab.org.cn/puyu/demo/000-2x.jpg&quot;
                     }
                 }
             ]
@@ -170,6 +171,9 @@ for choice in chat_rsp.choices:
 ```
 
 ### 2.1.3 三轮对话示例代码
+
+                    &quot;url&quot;: &quot;https://static.openxlab.org.cn/internvl/demo/visionpro.png&quot;
+                    &quot;url&quot;: &quot;https://static.openxlab.org.cn/puyu/demo/000-2x.jpg&quot;
 
 ```
 from openai import OpenAI
@@ -219,13 +223,11 @@ messages = [
             {
                 &quot;type&quot;: &quot;image_url&quot;,
                 &quot;image_url&quot;: {
-                    &quot;url&quot;: &quot;https://static.openxlab.org.cn/internvl/demo/visionpro.png&quot;
                 }
             },
             {
                 &quot;type&quot;: &quot;image_url&quot;,
                 &quot;image_url&quot;: {
-                    &quot;url&quot;: &quot;https://static.openxlab.org.cn/puyu/demo/000-2x.jpg&quot;
                 }
             }
         ]

@@ -115,6 +115,8 @@ curl  \
 
 由于我们之后使用的是参考图生成模式，我们先去的是多张图生成单张图的功能。参考代码复制如下：
 
+    &quot;image&quot;: [&quot;https://ark-project.tos-cn-beijing.volces.com/doc_image/seedream4_imagesToimage_1.png&quot;, &quot;https://ark-project.tos-cn-beijing.volces.com/doc_image/seedream4_imagesToimage_2.png&quot;],
+
 ```
 curl -X POST https://ark.cn-beijing.volces.com/api/v3/images/generations \
   -H &quot;Content-Type: application/json&quot; \
@@ -122,7 +124,6 @@ curl -X POST https://ark.cn-beijing.volces.com/api/v3/images/generations \
   -d &#x27;{
     &quot;model&quot;: &quot;doubao-seedream-4-5-251128&quot;,
     &quot;prompt&quot;: &quot;将图1的服装换为图2的服装&quot;,
-    &quot;image&quot;: [&quot;https://ark-project.tos-cn-beijing.volces.com/doc_image/seedream4_imagesToimage_1.png&quot;, &quot;https://ark-project.tos-cn-beijing.volces.com/doc_image/seedream4_imagesToimage_2.png&quot;],
     &quot;sequential_image_generation&quot;: &quot;disabled&quot;,
     &quot;response_format&quot;: &quot;url&quot;,
     &quot;size&quot;: &quot;2K&quot;,

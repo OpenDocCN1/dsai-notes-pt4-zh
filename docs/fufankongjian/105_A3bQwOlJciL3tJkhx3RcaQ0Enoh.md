@@ -651,6 +651,8 @@ from openai import OpenAI
 import os
 ```
 
+            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
+
 ```
 from openai import OpenAI
 
@@ -672,7 +674,6 @@ completion = client.chat.completions.create(
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
           }
         }
       ]
@@ -681,6 +682,8 @@ completion = client.chat.completions.create(
 )
 print(completion.choices[0].message.content)
 ```
+
+     21             &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
 
 ```
 ---------------------------------------------------------------------------
@@ -706,7 +709,6 @@ Cell In[3], line 8
      18         {
      19           &quot;type&quot;: &quot;image_url&quot;,
      20           &quot;image_url&quot;: {
-     21             &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
      22           }
      23         }
      24       ]
@@ -715,12 +717,10 @@ Cell In[3], line 8
      27 )
      28 print(completion.choices[0].message.content)
 
-
 File C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\openai\_utils\_utils.py:279, in required_args.&lt;locals&gt;.inner.&lt;locals&gt;.wrapper(*args, **kwargs)
     277             msg = f&quot;Missing required argument: {quote(missing[0])}&quot;
     278     raise TypeError(msg)
 --&gt; 279 return func(*args, **kwargs)
-
 
 File C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\openai\resources\chat\completions\completions.py:914, in Completions.create(self, messages, model, audio, frequency_penalty, function_call, functions, logit_bias, logprobs, max_completion_tokens, max_tokens, metadata, modalities, n, parallel_tool_calls, prediction, presence_penalty, reasoning_effort, response_format, seed, service_tier, stop, store, stream, stream_options, temperature, tool_choice, tools, top_logprobs, top_p, user, web_search_options, extra_headers, extra_query, extra_body, timeout)
     871 @required_args([&quot;messages&quot;, &quot;model&quot;], [&quot;messages&quot;, &quot;model&quot;, &quot;stream&quot;])
@@ -775,7 +775,6 @@ File C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\openai\resource
     957         stream_cls=Stream[ChatCompletionChunk],
     958     )
 
-
 File C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\openai\_base_client.py:1242, in SyncAPIClient.post(self, path, cast_to, body, options, files, stream, stream_cls)
    1228 def post(
    1229     self,
@@ -786,7 +785,6 @@ File C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\openai\_base_cl
    1240         method=&quot;post&quot;, url=path, json_data=body, files=to_httpx_files(files), **options
    1241     )
 -&gt; 1242     return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
-
 
 File C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\openai\_base_client.py:919, in SyncAPIClient.request(self, cast_to, options, remaining_retries, stream, stream_cls)
     916 else:
@@ -799,7 +797,6 @@ File C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\openai\_base_cl
     924     retries_taken=retries_taken,
     925 )
 
-
 File C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\openai\_base_client.py:1023, in SyncAPIClient._request(self, cast_to, options, retries_taken, stream, stream_cls)
    1020         err.response.read()
    1022     log.debug(&quot;Re-raising status error&quot;)
@@ -809,7 +806,6 @@ File C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\openai\_base_cl
    1027     options=options,
    (...)   1031     retries_taken=retries_taken,
    1032 )
-
 
 AuthenticationError: Error code: 401 - {&#x27;error&#x27;: {&#x27;message&#x27;: &#x27;No auth credentials found&#x27;, &#x27;code&#x27;: 401}}
 ```
@@ -823,6 +819,8 @@ AuthenticationError: Error code: 401 - {&#x27;error&#x27;: {&#x27;message&#x27;:
 | ✅ Small AI | &quot;https://ai98.vip/v1&quot; | gemini-2.5-pro-preview-05-06 | claude-opus-4-20250514 |
 
 例如DMXAPI：
+
+            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
 
 ```
 client = OpenAI(
@@ -843,7 +841,6 @@ completion = client.chat.completions.create(
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
           }
         }
       ]
@@ -877,6 +874,8 @@ print(completion.choices[0].message.content)
 
 以及smallAI实现流程如下：
 
+            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
+
 ```
 client = OpenAI(
   base_url=&quot;https://ai98.vip/v1&quot;,
@@ -896,7 +895,6 @@ completion = client.chat.completions.create(
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
           }
         }
       ]
@@ -944,6 +942,8 @@ print(completion.choices[0].message.content)
 
 +   OpenRouter Claude 4多模态功能测试
 
+            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
+
 ```
 client = OpenAI(
   base_url=&quot;https://openrouter.ai/api/v1&quot;,
@@ -963,7 +963,6 @@ completion = client.chat.completions.create(
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250523192158057.png&quot;
           }
         }
       ]

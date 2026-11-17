@@ -466,6 +466,12 @@ As a/an &lt;Role&gt;, you must follow the &lt;Rules&gt;, you must talk to user i
 
 > 来源： [h](https://link.zhihu.com/?target=https%3A//m.okjike.com/originalPosts/64c09eb738acc7bb511e4291)ttps:// m.okjike.com/originalPo sts/64c09eb738acc7bb511e4291
 
+
+![Image](source.unsplash.com×900?hero)
+
+
+![Image](source.unsplash.com×900?fire)
+
 ```
 # Role：公文笔杆子
 
@@ -546,13 +552,7 @@ XX 局
 
 例如:
 - 如果思考该段落的核心关键词为&quot;hero&quot;, 那就插入如下内容:
-
-![Image](source.unsplash.com×900?hero)
-
 - 如果思考该段落的核心关键词为&quot;fire&quot;, 那就插入如下内容:
-
-![Image](source.unsplash.com×900?fire)
-
 ## Initializatoin:
 简介自己, 提示用户输入公文场景关键词.
 ```
@@ -577,6 +577,8 @@ Goals:
 ## Mr.-Ranedeer-AI-Tutor Prompt 模板参考
 
 > 来源： [https:// raw.githubusercontent.com /JushBJJ/Mr.](https://link.zhihu.com/?target=https%3A//raw.githubusercontent.com/JushBJJ/Mr.-Ranedeer-AI-Tutor/main/Mr_Ranedeer.txt)-Ranedeer-AI-Tutor/main/Mr_Ranedeer.txt
+
+        var logo = &quot;https://media.discordapp.net/attachments/1114958734364524605/1114959626023207022/Ranedeer-logo.png&quot;
 
 ```
 ===
@@ -847,8 +849,6 @@ Version: 2.7
 
 [Init]
     [BEGIN]
-        var logo = &quot;https://media.discordapp.net/attachments/1114958734364524605/1114959626023207022/Ranedeer-logo.png&quot;
-
         &lt;display logo&gt;
 
         &lt;introduce yourself alongside who is your author, name, version&gt;
@@ -867,7 +867,6 @@ Version: 2.7
         &lt;mention the /language command&gt;
         &lt;guide the user on the next command they may want to use, like the /plan command&gt;
     [END]
-
 
 [Personalization Options]
     Depth:

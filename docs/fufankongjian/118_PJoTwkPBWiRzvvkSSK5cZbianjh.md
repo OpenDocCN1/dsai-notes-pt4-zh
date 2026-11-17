@@ -27,6 +27,9 @@ print(response.choices[0].message.content)
 你好！你今天过得怎么样？有什么我可以帮你的吗？
 ```
 
+                             &quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/page1_img1.jpeg&quot;}}
+                             &quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/page1_img1.jpeg&quot;}}
+        
 ```
 # 使用GPT-4o描述图像
 response = openai.chat.completions.create(
@@ -36,11 +39,8 @@ response = openai.chat.completions.create(
             {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;请描述以下图片的内容&quot;},
             {&quot;type&quot;: &quot;image_url&quot;
              , &quot;image_url&quot;: {&quot;url&quot;: 
-                             &quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/page1_img1.jpeg&quot;}}
         ,{&quot;type&quot;: &quot;image_url&quot;
              , &quot;image_url&quot;: {&quot;url&quot;:  #改掉下面这行 ↓
-                             &quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/page1_img1.jpeg&quot;}}
-        
         ]}
     ],
     max_tokens=300,
@@ -1684,7 +1684,6 @@ for url in uploaded_image_urls:
     print(url)
 ```
 
-```
 image_urls = [&quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/page1_img1.jpeg&quot;
              ,&quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/page2_img1.jpeg&quot;
              ,&quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/page3_img1.jpeg&quot;
@@ -1694,6 +1693,8 @@ image_urls = [&quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/pa
              ,&quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/page7_img1.jpeg&quot;
              ,&quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/page8_img1.jpeg&quot;
              ,&quot;https://skojiangdoc.oss-cn-beijing.aliyuncs.com/LLM/Video/page9_img1.jpeg&quot;]
+
+```
 ```
 
 ### 5.将多模态信息传给GPT-4o
@@ -1853,8 +1854,9 @@ image_url = response.data[0].url
 print(response.data[0].url)
 ```
 
-```
 https://oaidalleapiprodscus.blob.core.windows.net/private/org-HSwQITpPfCnOXCUCglzxrecL/user-GMg4tqRRi7GglFyhJY97QbH7/img-Pu3VxHTw4Y4srobRnhs6NAvL.png?st=2024-05-14T11%3A23%3A22Z&amp;se=2024-05-14T13%3A23%3A22Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-05-13T15%3A49%3A02Z&amp;ske=2024-05-14T15%3A49%3A02Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=5IuA2Oje0qRFN%2B4e/75b1v1K/uWZCM6NDoQEqG/3V0s%3D
+
+```
 ```
 
 ![](img/927a9b4a0cb14a9b03a7f8ae9b151bca.png)

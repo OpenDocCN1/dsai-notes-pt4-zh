@@ -261,12 +261,12 @@ program = guidance(&quot;&quot;&quot;The following is a character profile for an
 
 # execute the prompt
 program(description=&quot;A quick and nimble fighter.&quot;, valid_weapons=valid_weapons)
-```
-
-其生成效果如下：
 
 ![](img/9205f90914353d141ea70c3232b41f69.png)
 
+```
+
+其生成效果如下：
 生成合法的 json 结构
 
 在之前传统的做法中，这一整个 json 都需要由 LLM 来生成。但是 json 的结构是我们预先定义的，例如有哪些字段，开闭的花括号等，其实都不需要 LLM 来生成。所以在上图中，黑色部分的文字都是直接通过程序填入的，蓝色部分是我们传入的变量，只有绿色部分才是真正调用了 LLM 来生成的。这种做法与 guardrails 有明显的区别，带来两个好处：

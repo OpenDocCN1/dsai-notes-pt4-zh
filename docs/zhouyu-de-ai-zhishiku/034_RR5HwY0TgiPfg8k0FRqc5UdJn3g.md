@@ -1378,8 +1378,9 @@ multi_replace_file_content
 
 修改点 1: 替换
 
-```
 src=&quot;https://storage.googleapis.com/pose-shift-app-assets/marketing/marketing-1.jpg&quot;
+
+```
 ```
 
 为新 URL。 修改点 2: 移除

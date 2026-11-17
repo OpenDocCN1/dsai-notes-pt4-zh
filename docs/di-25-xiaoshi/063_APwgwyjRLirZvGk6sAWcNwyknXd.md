@@ -350,6 +350,13 @@ window.toggle = async (checked) =&gt; {
 
 继续完善index.html的代码，如下所示：
 
+        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/10/29/15/57/vancouver-4587302__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
+        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/10/31/07/14/coffee-4591159__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
+        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/11/01/11/08/landscape-4593909__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
+        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/11/02/21/45/maple-leaf-4597501__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
+        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/11/02/03/13/in-xinjiang-4595560__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
+        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/11/01/22/45/reschensee-4595385__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
+
 ```
 &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
 监听开关：&lt;input type=&quot;checkbox&quot; onchange=&quot;toggle(this.checked)&quot;&gt;
@@ -369,12 +376,6 @@ window.toggle = async (checked) =&gt; {
 &lt;div class=&quot;slider&quot;&gt;
     &lt;!-- 移动的div --&gt;
     &lt;div&gt;
-        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/10/29/15/57/vancouver-4587302__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
-        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/10/31/07/14/coffee-4591159__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
-        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/11/01/11/08/landscape-4593909__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
-        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/11/02/21/45/maple-leaf-4597501__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
-        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/11/02/03/13/in-xinjiang-4595560__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
-        &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/11/01/22/45/reschensee-4595385__480.jpg&quot; alt=&quot;&quot; width=&quot;600&quot;&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 ```

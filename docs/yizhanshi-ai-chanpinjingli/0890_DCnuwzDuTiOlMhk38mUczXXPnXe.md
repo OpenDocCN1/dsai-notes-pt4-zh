@@ -598,8 +598,9 @@ servers:
 
 试运行可以输入示例图片的地址：
 
-```
 https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/6137e97e50eb4e57b0baccfbffff0164.JPG~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&amp;x-expires=1728478778&amp;x-signature=rkprGuUCoGp2IuGz0C8HFgWRThA%3D
+
+```
 ```
 
 原图：
@@ -614,8 +615,9 @@ https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/6137e97e50eb4e57b0baccfbffff
 
 试运行可以输入示例图片的地址（可以在浏览器打开图片地址，查看原图）：
 
-```
 https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/8a919deb2ae04aa2bcc52a00891d5c02.png~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&amp;x-expires=1728479307&amp;x-signature=t0EDVIOAVePw1gM8ZediRaLBq1Y%3D
+
+```
 ```
 
 原图：
@@ -2133,8 +2135,9 @@ async def main(args: Args) -&gt; Output:
 
 **输出：**我看一下试运行的输出，
 
-```
 {  &quot;outputList&quot;: [    {      &quot;[output&quot;: &quot;&lt;img src=&quot;https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/FileBizType.BIZ_BOT](https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/FileBizType.BIZ_BOT_DATASET/3507920499643715_1732367094562635249_usVZqoXHeZ.jpg?lk3s=61a3dea3&amp;x-expires=1734961499&amp;x-signature=PQdNqZrh%2FrZsA9eHz6aYE8aj8RI%3D)_DATASET/3507920499643715_1732367094562635249_usVZqoXHeZ.jpg?lk3s=61a3dea3&amp;x-expires=1734961499&amp;x-signature=PQdNqZrh%2FrZsA9eHz6aYE8aj8RI%3D&quot;&gt; description: 这是一幅动画画面，展示了一个女孩的侧脸。她的头发上有一朵白色的花，增加了她的可爱感。她的眼睛半开半合，似乎在思考或沉思。&quot;    }  ] }
+
+```
 ```
 
 outputList 是一个数组，内含一个对象，
@@ -3155,6 +3158,8 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 ![](img/80652ca1936bc21ef7619b6761ee1415.png)
 
+        mdOutput += `![封面图片](${data.picurl})\n\n`;
+
 ```
 async function main({ params }: Args): Promise&lt;Output&gt; {
     // 解析输入的JSON字符串
@@ -3181,7 +3186,6 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
     
     // 添加封面图片（如果有）
     if (data.picurl) {
-        mdOutput += `![封面图片](${data.picurl})\n\n`;
     }
     
     // 添加播放链接

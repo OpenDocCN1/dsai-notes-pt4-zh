@@ -786,6 +786,8 @@ async def main(args: Args) -&gt; Output:
 
 1.  根据最终输出预期，按照 Markdown 格式的写法，引用「输出变量」区域的参数名，在「回答内容」中输入回答内容模板：
 
+![]({{treeMindUrl}})
+ 
 ```
 # {{cnTitle}}
  
@@ -795,8 +797,6 @@ async def main(args: Args) -&gt; Output:
 {{question}}
  
 ## 阅读大纲
-![]({{treeMindUrl}})
- 
 ## 原文音频
 []({{voiceUrl}})
 

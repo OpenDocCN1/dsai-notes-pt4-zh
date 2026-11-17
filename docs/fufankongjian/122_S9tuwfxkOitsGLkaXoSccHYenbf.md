@@ -203,8 +203,9 @@ import httpx
 
 ![](img/256448f2959f04e80251cfb9c17cbd9e.png)
 
-```
 image_url = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png&quot;
+
+```
 image_media_type = &quot;image/png&quot;
 image_data = base64.b64encode(httpx.get(image_url).content).decode(&quot;utf-8&quot;)
 ```
@@ -277,8 +278,9 @@ print(image_message.content[0].text)
 
 ![](img/ba582b2c5c643d5f37623cdd8de5ca5b.png)
 
-```
 image_url1 = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202310292019679.png&quot;
+
+```
 image_media_type = &quot;image/png&quot;
 image_data1 = base64.b64encode(httpx.get(image_url1).content).decode(&quot;utf-8&quot;)
 ```
@@ -347,8 +349,9 @@ print(image_message1.content[0].text)
 
 ![](img/174c45ca976eccede630ea65ea7725e4.png)
 
-```
 image_url2 = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406212243833.png&quot;
+
+```
 image_media_type = &quot;image/png&quot;
 image_data2 = base64.b64encode(httpx.get(image_url2).content).decode(&quot;utf-8&quot;)
 ```
@@ -431,8 +434,9 @@ def get_image_data(image_url):
     }
 ```
 
-```
 temp_url = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png&quot;
+
+```
 ```
 
 ```
@@ -455,16 +459,18 @@ def extract_image_url(user_input):
     return None
 ```
 
-```
 user_input = &#x27;你能帮我介绍下这这张图片上的内容么：&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png&quot;&#x27;
+
+```
 ```
 
 ```
 extract_image_url(user_input)
 ```
 
-```
 &#x27;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png&#x27;
+
+```
 ```
 
 ```
@@ -524,16 +530,15 @@ def chat_with_claude(client):
 chat_with_claude(client)
 ```
 
-```
-你:  你好
-
-
-Claude: 您好!很高兴见到您。我是一位AI助手,随时准备为您提供帮助。请问您今天有什么我可以协助您的吗?无论是回答问题、提供信息,还是讨论某个话题,我都很乐意效劳。
 
 
 你:  你能帮我介绍下这这张图片上的内容么：&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png&quot;
 
 
+```
+你:  你好
+
+Claude: 您好!很高兴见到您。我是一位AI助手,随时准备为您提供帮助。请问您今天有什么我可以协助您的吗?无论是回答问题、提供信息,还是讨论某个话题,我都很乐意效劳。
 Claude: 这张图片展示了一个AI模型发布和能力的时间线图表。图表横轴表示时间，从2023年2月到2024年7月；纵轴表示基准测试分数，范围从50到80多分。
 
 图表追踪了三个主要的AI模型系列的发展:
@@ -548,9 +553,7 @@ Claude: 这张图片展示了一个AI模型发布和能力的时间线图表。�
 
 这个时间线图有助于我们理解AI技术的快速发展，以及主要AI公司之间的竞争态势。
 
-
 你:  好的，从这张图片来看，你觉得现在Claude 3.5 Sonnet性能如何
-
 
 Claude: 根据图表显示，Claude 3.5 Sonnet 的性能表现非常出色：
 
@@ -566,9 +569,7 @@ Claude: 根据图表显示，Claude 3.5 Sonnet 的性能表现非常出色：
 
 总的来说，根据这张图表，Claude 3.5 Sonnet 的性能非常强大，不仅在 Claude 系列中表现最佳，而且在整个 AI 模型竞争中也处于领先地位。这表明 Anthropic 公司在 AI 技术发展方面取得了显著进展。
 
-
 你:  exit
-
 
 结束对话。
 ```
@@ -1297,9 +1298,13 @@ run_conv(question=&#x27;你好&#x27;,
          functions_list=functions_list)
 ```
 
+
+
+你:  好的，这张图上最佳性能的模型是哪个呢？图片地址：https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png
+
+
 ```
 你:  你好，请介绍下你自己
-
 
 Claude: 您好!很高兴与您交流。我是一个AI助手,由Anthropic公司开发。我的目标是通过友好和有帮助的对话来协助人类。我可以回答问题、提供信息、帮助解决问题,以及就各种话题进行讨论。
 
@@ -1308,11 +1313,6 @@ Claude: 您好!很高兴与您交流。我是一个AI助手,由Anthropic公司�
 作为一个AI,我没有人类那样的情感或个人经历。我的回答是基于我被训练的数据和算法生成的。我会尽力提供准确、有用的信息,但有时可能会出错,所以请您保持批判性思维。
 
 我很乐意为您提供帮助,无论是回答问题、提供建议,还是简单地聊天。您有什么我可以帮到您的吗?
-
-
-你:  好的，这张图上最佳性能的模型是哪个呢？图片地址：https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png
-
-
 Claude: 根据这张AI模型发布和能力时间线图，截至图表显示的最新时间点（2024年7月左右），性能最佳的模型是Claude 3.5 Sonnet。
 
 从图表中可以看出：
@@ -1325,9 +1325,7 @@ Claude: 根据这张AI模型发布和能力时间线图，截至图表显示的�
 
 需要注意的是，这个图表展示的是模型发布的时间线和它们在某些基准测试上的平均得分。虽然Claude 3.5 Sonnet在这个特定的评估中得分最高，但在实际应用中，不同模型可能在不同任务上有各自的优势。此外，AI技术发展迅速，这个排名可能会随着新模型的发布而改变。
 
-
 你:  你知道Claude的母公司是哪个么？
-
 
 Claude: 是的,我知道。Claude的母公司是Anthropic。
 
@@ -1337,9 +1335,7 @@ Anthropic的创始团队包括一些前OpenAI的研究人员,他们致力于发�
 
 作为Anthropic开发的AI助手,我对公司的具体运营细节并不了解,但我知道Anthropic一直在努力推进AI技术的发展,同时也非常重视AI的安全性和道德性。
 
-
 你:  这家公司所在地今天天气如何呢？
-
 
 Claude: 根据查询结果,旧金山(San Francisco)今天的天气情况如下:
 
@@ -1353,9 +1349,7 @@ Claude: 根据查询结果,旧金山(San Francisco)今天的天气情况如下:
 
 需要注意的是,旧金山的天气可能会在一天内有所变化,特别是考虑到它靠近海岸的地理位置。如果有人计划在旧金山外出,最好随时关注最新的天气预报。
 
-
 你:  exit
-
 
 结束对话。
 ```

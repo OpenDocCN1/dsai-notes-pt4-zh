@@ -444,6 +444,8 @@ Gradio 使得为机器学习模型创建 Web UI 变得极其简单。我们只�
 
 下面是构建这个网页聊天机器人的完整 Python 代码。建议将其保存为一个 .py 文件（例如 AOAI_gradio_app.py）。
 
+    avatar_images=(None, &quot;https://img.icons8.com/fluency/96/bot.png&quot;) # (user_avatar, bot_avatar)
+
 ```
 import os
 import gradio as gr
@@ -508,7 +510,6 @@ def predict(message: str, history_from_gradio: list[dict[str, any]]):
                     messages_for_api.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: str(assistant_msg)})
             else:
                 print(f&quot;警告: 从 history_from_gradio 中跳过格式不正确的条目: {turn_data}&quot;)
-
 
     messages_for_api.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: message}) # 添加当前用户输入
 
@@ -580,7 +581,6 @@ chatbot_component = gr.Chatbot(
     label=&quot;聊天窗口&quot;,
     height=700,
     show_copy_button=True,
-    avatar_images=(None, &quot;https://img.icons8.com/fluency/96/bot.png&quot;) # (user_avatar, bot_avatar)
 )
 
 # --- 使用 gr.ChatInterface 创建完整的聊天应用 UI ---

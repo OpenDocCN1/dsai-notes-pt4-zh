@@ -129,6 +129,8 @@ curl --location --request POST &#x27;https://api.coze.cn/v1/workflow/run&#x27; \
 
 基于现有代码，现在我们需要整合Coze的API，建议提前把已有功能告诉Trae，这样也能更好地理解代码背景。输入提示词示例，可结合个人实际情况调整：
 
+    &quot;data&quot;: &quot;{\&quot;output\&quot;:\&quot;https://static.shutu.cn/shutu/jpeg/opena5/2025/02/04/42b4e22a73f679b41c4d4***fae.jpeg\&quot;}&quot;,
+
 ```
 # 目的
 用户需求是基于网页选中的内容生成一个思维导图
@@ -154,7 +156,6 @@ curl --location --request POST &#x27;https://api.coze.cn/v1/workflow/run&#x27; \
 {
     &quot;code&quot;: 0,
     &quot;cost&quot;: &quot;0&quot;,
-    &quot;data&quot;: &quot;{\&quot;output\&quot;:\&quot;https://static.shutu.cn/shutu/jpeg/opena5/2025/02/04/42b4e22a73f679b41c4d4***fae.jpeg\&quot;}&quot;,
     &quot;debug_url&quot;: &quot;https://www.coze.cn/work_flow?execute_id=74679023****396&amp;space_id=733130656****6863&amp;workflow_id=746643****6370&quot;,
     &quot;msg&quot;: &quot;Success&quot;,
     &quot;token&quot;: 0

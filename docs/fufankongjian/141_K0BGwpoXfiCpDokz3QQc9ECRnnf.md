@@ -658,10 +658,11 @@ tokenizer = AutoTokenizer.from_pretrained(model_4v_dir, trust_remote_code=True)
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 ```
 
+image_url1 = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406051911518.webp&quot;
+
 ```
 # 图片一
 query = &#x27;描述这张图片&#x27;
-image_url1 = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406051911518.webp&quot;
 ```
 
 ```
@@ -739,10 +740,11 @@ tokenizer = AutoTokenizer.from_pretrained(model_4v_dir, trust_remote_code=True)
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 ```
 
+image_url2 = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406051912299.jpg&quot;
+
 ```
 # 图片一
 query = &#x27;描述这张图片&#x27;
-image_url2 = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406051912299.jpg&quot;
 ```
 
 ```

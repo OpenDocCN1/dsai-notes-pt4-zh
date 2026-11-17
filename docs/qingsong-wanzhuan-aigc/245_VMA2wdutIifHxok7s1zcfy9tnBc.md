@@ -1198,6 +1198,9 @@ git pull
 
 在 index.html 的 <head> 标签内添加：
 
+&lt;meta property=&quot;og:image&quot; content=&quot;https://用户名.github.io/仓库名/images/share.jpg&quot;&gt;
+&lt;meta name=&quot;twitter:image&quot; content=&quot;https://用户名.github.io/仓库名/images/share.jpg&quot;&gt;
+
 ```
 &lt;!-- 页面描述 --&gt;
 &lt;meta name=&quot;description&quot; content=&quot;这是我的个人网站，分享技术文章和项目&quot;&gt;
@@ -1211,14 +1214,12 @@ git pull
 &lt;!-- Open Graph（社交分享） --&gt;
 &lt;meta property=&quot;og:title&quot; content=&quot;我的网站&quot;&gt;
 &lt;meta property=&quot;og:description&quot; content=&quot;网站描述&quot;&gt;
-&lt;meta property=&quot;og:image&quot; content=&quot;https://用户名.github.io/仓库名/images/share.jpg&quot;&gt;
 &lt;meta property=&quot;og:url&quot; content=&quot;https://用户名.github.io/仓库名/&quot;&gt;
 
 &lt;!-- Twitter Card --&gt;
 &lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;
 &lt;meta name=&quot;twitter:title&quot; content=&quot;我的网站&quot;&gt;
 &lt;meta name=&quot;twitter:description&quot; content=&quot;网站描述&quot;&gt;
-&lt;meta name=&quot;twitter:image&quot; content=&quot;https://用户名.github.io/仓库名/images/share.jpg&quot;&gt;
 ```
 
 ### 7.7 启用 HTTPS（加密访问）

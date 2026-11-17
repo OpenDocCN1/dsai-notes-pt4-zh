@@ -465,13 +465,13 @@ LangChain 1.0 Alpha 版本问题汇总
 | 模型适配 | 统一接口 | 各厂商还是要用原生格式 | 手动适配不同厂商 |
 | 稳定性 | 生产可用 | 明确说不建议生产使用 | 等正式版或用 0.x |
 
+online_image_url = &quot;https://dashscope.oss-cn-beijing.aliyuncs.com/images/dog_and_girl.jpeg&quot;
+
 ```
 # 在线图片处理 - 简单示例
 from langchain_core.messages import HumanMessage
 
 # 方式1：直接使用在线图片URL（最简单）
-online_image_url = &quot;https://dashscope.oss-cn-beijing.aliyuncs.com/images/dog_and_girl.jpeg&quot;
-
 message = HumanMessage(
     content=[
         {

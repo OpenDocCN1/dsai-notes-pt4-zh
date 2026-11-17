@@ -923,6 +923,18 @@ Your browser does not support the video element.
 
 除此以外，大家也可以使用 mcp-server-fetch：https://github.com/modelcontextprotocol/servers/tree/main/src/fetch ，大家可以根据自己的情况灵活选择。最终我们定义dsr1_mcp_apply.py文件，如下所示：
 
+        
+
+&lt;center&gt;&lt;img src=&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250529182944677.png&quot; alt=&quot;image-20250529182944677&quot; style=&quot;zoom:50%;&quot; /&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/ca76dfaf224da7825b4fa3e9c6ab435.png&quot; alt=&quot;ca76dfaf224da7825b4fa3e9c6ab435&quot; style=&quot;zoom:50%;&quot; /&gt;
+
+
+&lt;center&gt;&lt;img src=&quot;https://muyu001.oss-cn-beijing.aliyuncs.com/img/image-20250529143719826.png&quot; alt=&quot;202412191720637&quot; style=&quot;zoom:60%;&quot; /&gt;
+
+
+&lt;center&gt;&lt;img src=&quot;https://muyu001.oss-cn-beijing.aliyuncs.com/img/image-20250529143812480.png&quot; alt=&quot;202412191720637&quot; style=&quot;zoom:60%;&quot; /&gt;
+
 ```
 
     def init_agent_service():
@@ -972,7 +984,6 @@ Your browser does not support the video element.
                 }
             },
             
-            
         },
         # pip install &quot;qwen-agent[code_interpreter]&quot;
         &#x27;code_interpreter&#x27;,
@@ -1010,25 +1021,18 @@ Your browser does not support the video element.
             bot,
             chatbot_config=chatbot_config,
         ).run()
-        
-
-&lt;center&gt;&lt;img src=&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250529182944677.png&quot; alt=&quot;image-20250529182944677&quot; style=&quot;zoom:50%;&quot; /&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/ca76dfaf224da7825b4fa3e9c6ab435.png&quot; alt=&quot;ca76dfaf224da7825b4fa3e9c6ab435&quot; style=&quot;zoom:50%;&quot; /&gt;
-
 &amp;emsp;&amp;emsp;这里我们要应用到`Qwen-Agent`内置的`WebUI`,其实现了一个基于Gradio构建的前端页面，通过执行 dsr1_mcp_apply, 启动后即可在 localhost:8000 访问：
-
-&lt;center&gt;&lt;img src=&quot;https://muyu001.oss-cn-beijing.aliyuncs.com/img/image-20250529143719826.png&quot; alt=&quot;202412191720637&quot; style=&quot;zoom:60%;&quot; /&gt;
-
 &amp;emsp;&amp;emsp;此时通过浏览器访问：http://localhost:7860/ 即可进行使用。
-
-&lt;center&gt;&lt;img src=&quot;https://muyu001.oss-cn-beijing.aliyuncs.com/img/image-20250529143812480.png&quot; alt=&quot;202412191720637&quot; style=&quot;zoom:60%;&quot; /&gt;
-
 具体运行效果如下：
-
 
 ```python
 Video(&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/fina-3.mp4&quot;, width=800, height=400)
+
+![](img/1ad6f887953963f413130f50e981fc3b.png)
+
+
+![](img/30dcdbbd255d9da3591cf27d7fd25143.png)
+
 ```
 
 Your browser does not support the video element.
@@ -1038,13 +1042,7 @@ Your browser does not support the video element.
 2025年3月11号，OpenAI正式推出其下第一款企业级Multi-Agent开发框架Agents-SDK，该框架是此前OpenAI在去年推出的Swarm的升级版，在保留了Swarm的高效便捷的Multi-Agent开发特性的同时，加入了更多面向企业级应用的功能。
 
 +   GitHub官网：https://github.com/openai/openai-agents-python/
-
-![](img/1ad6f887953963f413130f50e981fc3b.png)
-
 +   Agents SDK博客：https://openai.github.io/openai-agents-python/
-
-![](img/30dcdbbd255d9da3591cf27d7fd25143.png)
-
 而根据官方介绍，O**penAI** Agents SDK 让你能够通过一个轻量、易用、抽象极少的工具包来构建基于智能体的 AI 应用。它是我们此前 Agent 实验项目 Swarm 的一个面向生产环境的升级版本。该 SDK 仅包含极少量的原语（基础构件）：
 
 +   **Agent（智能体）**：即带有指令和工具的大语言模型（LLM）
@@ -1185,6 +1183,24 @@ Agent 组件核心参数
             &quot;convert_schemas_to_strict&quot;: False  # 默认是 False
         }
     )
+
+![](img/ebdf4467f8c583aa3fa16828325a09b2.png)
+
+
+![](img/5c07e6666fc20ef6951cbfdf345c1972.png)
+
+
+![](img/3788ad3c582f46cdbb430f9ad8742795.png)
+
+
+![](img/030b2b104b753b86a75624d546745275.png)
+
+
+![](img/fff1f282bffd2229b4e8ed87daf8aa55.png)
+
+
+![](img/3b3024cf28427e408a191a93b0cc10e3.png)
+
 ```
 
 所以，接下来核心就是如何去构建mcp_servers_1和mcp_servers_2这样的MCP服务器实例。这里需要注意的是：OpenAI Agents SDK框架中兼容的是基于Model Context Protocol的开放协议规范，而该协议根据所支持和使用的传输协议不同，目前主要分为如下三种类型的服务器：
@@ -1196,9 +1212,6 @@ Agent 组件核心参数
 +   StreamableHTTP 服务器：可流式传输的HTTP传输,正在取代 SSE传输。
 
 其中 StreamableHTTP 的支持刚刚于[modelcontextproto](https://github.com/modelcontextprotocol/python-sdk/releases/tag/v1.8.0)colpython-sdk v1.8.0发布，所以OpenAI Agents SDK框架目前仅支持stdio和http over sse这两种类型。源码定义位置：https://github.com/openai/openai-agents-python/blob/main/src/agents/mcp/server.py#L24
-
-![](img/ebdf4467f8c583aa3fa16828325a09b2.png)
-
 这里我们以SSE模式的MCP服务器接入为例进行演示。
 
 因为传输协议不同，所以在应用上所需要传递的参数也有所不同。与Stdio类似，MCPServerSse通过接收MCPServerSseParams中定义的参数来连接MCP Server。根据其源码定义，我们首先可以梳理出MCPServerStdio类能够接收的参数如下所示：
@@ -1247,31 +1260,16 @@ MCP 热门导航网站
 平台托管直连不需要开发者关心进程与依赖等问题，直接在网页一键生成URL即可接入。下面我们以ModelScope的MCP 广场为例，演示如何在OpenAI Agents SDK框架中通过SSE 模式接入MCP 服务器。
 
 +   **Step 1. 进入****ModelScope****的****MCP**** 广场，访问地址：https://w**ww.modelscope.cn/mcp
-
-![](img/5c07e6666fc20ef6951cbfdf345c1972.png)
-
 +   **Step 2. 点击右上角****登录****按钮，登录****ModelScope****账号**
 
 可以通过手机号注册并登录，注意：国内用户记得选择中国大陆 +86 的手机号注册，否则会提示手机号格式错误。
-
-![](img/3788ad3c582f46cdbb430f9ad8742795.png)
-
 +   **Step 3. 挑选****MCP**** 服务，并进入详情页**
 
 这里我们选择的是12306-MCP车票查询工具，该MCP 服务提供了搜索12306购票信息的功能。
-
-![](img/030b2b104b753b86a75624d546745275.png)
-
 +   **Step 4. 点击****立即使用****按钮，进入****MCP**** 服务详情页**
 
 如果是首次使用，在详情页的最右侧会有一个通过SSE URL连接服务的说明
-
-![](img/fff1f282bffd2229b4e8ed87daf8aa55.png)
-
 点击连接按钮，即可生成一个SSE URL，如下图所示：
-
-![](img/3b3024cf28427e408a191a93b0cc10e3.png)
-
 +   **Ste**p 5. 复制SSE URL，并将其接入到OpenAI Agents SDK框架中
 
 在OpenAI Agents SDK框架中，可以通过MCPServerSSE类来创建SSE 模式的MCP 服务器。该类可接收的配置参数与MCPServerStdio类无异，只不过在params参数中需要接收的是MCPServerSseParams，而不再是MCPServerStdioParams。如下所示：
@@ -1635,16 +1633,28 @@ async def main(prompt: str):
 
 if __name__ == &quot;__main__&quot;:
     asyncio.run(main(&quot;帮我查一下明日北京到上海的还有没有高铁票？&quot;))
-```
 
 ![](img/1579a480fe77e674f1399b1edd470e28.png)
 
 ![](img/844ef252856def6de8ab17b10c796a65.png)
 
+```
 具体运行效果如下：
 
 ```
 Video(&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/Agents%20SDK%20%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91.mp4&quot;, width=800, height=400)
+
+![](img/ceb8e8eae82f968a0c433d4dd1758898.png)
+
+
+![](img/48bbefebe72e5f79a808f094b39561f3.png)
+
+
+![](img/d9b5c3ae245cf3797c7b53cc6d5318c6.png)
+
+
+![](img/aa617beeb84c02183f9c386c57d52969.png)
+
 ```
 
 Your browser does not support the video element.
@@ -1660,25 +1670,13 @@ ADK 天生支持多代理 (multi-agent) 架构，在设计上鼓励**将应用�
 **模型支持方面**，ADK 采用**模型无关、插件式**设计。虽然针对 Goo**gle 自家**的 Gemini 大**模型和 **V**ertex**** AI 平台**做了优化，但并不局限于此。通过内**置的 LiteLLM 适配**层，ADK 可以**无缝对接 Ve****rtex AI **模型园中各种模型，甚至包括 Anthropic、Meta、Mistral、AI21 等多家提供商的大模型。这意味着企业可根据需求选择最适合的模型或使用私有模型，而无需更改 ADK 的使用方式，避免供应商锁定。工具扩展方面，ADK 拥有丰富的内置工具和第三方工具整合能力。框架自带了诸如网络搜索、代码执行等常用工具模块，并通过开放 API支持开发者注册任意 Python 函数作为自定义工具。ADK 特别提供了模型上下文协议 (MCP) 工具接口和对 OpenAPI 服务的集成，方便调用外部系统。ADK 还能够把其他代理作为工具使用：例如可以将一个由 LangChain 或 CrewAI 构建的代理包装为 ADK 工具供另一个代理调用，从而充分利用社区已有成果。通过这种插件化设计，ADK 的功能可**无限扩...
 
 +   ADK项目主页：https://github.com/google/adk-python
-
-![](img/ceb8e8eae82f968a0c433d4dd1758898.png)
-
 +   ADK项目说明文档：https://google.github.io/adk-docs/
-
-![](img/48bbefebe72e5f79a808f094b39561f3.png)
-
 ## 6.2 LiteLlm快速使用指南
 
 在介绍ADK之前，我们需要系统介绍ADK默认的大模型调用工具——LiteLlm的使用方法。在后续使用ADK时，选择基础模型是最基础的环节，而ADK目前只支持使用LiteLlm进行模型调用，因此我们先详细介绍国内外在线模型、以及ollama和vLLM驱动下的开源模型如何接入LiteLlm，然后再讲解如何上手使用ADK。
 
 +   项目官网：https://github.com/BerriAI/litellm
-
-![](img/d9b5c3ae245cf3797c7b53cc6d5318c6.png)
-
 +   项目参考文档：https://docs.litellm.ai/docs/
-
-![](img/aa617beeb84c02183f9c386c57d52969.png)
-
 **LiteLLM** 是一个轻量级的 Python 库，旨在简化与各种大语言模型（LLM）进行交互的过程。它特别适用于开发者在多种云服务提供商（如 OpenAI、DeepSeek）**或本地部署模型（如 Ollam**a）上运行大语言模型的需求。通过提供简洁的 API 和灵活的配置选项，LiteLLM 使得开发者可以轻松调用和集成各种不同的 LLM，同时支持模型的定制化扩展和高效调度。LiteLLM 核心功能如下：
 
 +   **跨平台模型兼容性**：LiteLLM 使开发者能够通过统一接口调用多个大语言模型，无论是云端提供的 API（如 OpenAI）还是本地托管的模型（如 Ollama）。它内置支持常见的大型模型和多模型集成，如 GPT-3.5、GPT-4、DeepSeek 等，也能支持定制模型或自己托管的 LLM。
@@ -1703,12 +1701,12 @@ ADK 天生支持多代理 (multi-agent) 架构，在设计上鼓励**将应用�
 
 ```
     pip install litellm==1.67.2
-```
-
-这里需要注意的是，尽管1.67.2不是最新LiteLlm稳定版，但却是可以最好的和ADK兼容的版本，目前最新的LiteLlm库在使用ADK的时候会报错，具体问题详见：https://github.com/BerriAI/litellm/issues/10353 。因此公开课中统一使用1.67.2版本。
 
 ![](img/b60074d347798763e8366569afd2b3df.png)
 
+```
+
+这里需要注意的是，尽管1.67.2不是最新LiteLlm稳定版，但却是可以最好的和ADK兼容的版本，目前最新的LiteLlm库在使用ADK的时候会报错，具体问题详见：https://github.com/BerriAI/litellm/issues/10353 。因此公开课中统一使用1.67.2版本。
 安装完成后即可尝试调用DeepSeek模型在线API进行测试。
 
 ```
@@ -1866,18 +1864,18 @@ init_agent = Agent(
     model=model,
     instruction=&quot;你是一个乐于助人的中文助手。&quot;,
 )
-```
-
-ADK作为最新一代Agent开发框架，不仅功能特性非常领先，而且还内置了非常多的工具，包括Gemini系列模型自带的谷歌搜索、文件检索和代码解释器等功能，同时ADK还拥有内置对话前端，方便开发者更加直观的感受Agent的对话流程，并且实时追踪Agent的events流。而如果Agent中存在外部工具调用，则在内置前端中，还能进一步观察到Agent调用外部工具完整流程，以及各环节调用信息，方便开发者即时debug。如果是使用Gemini模型，这个前端还支持语音和视频实时交互，基本展示效果如下：
 
 ![](img/8b06b30dfc025dfafcebe9b3d9ab0889.png)
 
-## 6.3 ADK内置前端开启流程
-
-而ADK内置前端开启流程也非常简单，这里我们需要创建一个项目文件，如创建一个ADK_Chat文件夹：
 
 ![](img/326487f5f6b7d36a5f6a91f80c6ffbf5.png)
 
+```
+
+ADK作为最新一代Agent开发框架，不仅功能特性非常领先，而且还内置了非常多的工具，包括Gemini系列模型自带的谷歌搜索、文件检索和代码解释器等功能，同时ADK还拥有内置对话前端，方便开发者更加直观的感受Agent的对话流程，并且实时追踪Agent的events流。而如果Agent中存在外部工具调用，则在内置前端中，还能进一步观察到Agent调用外部工具完整流程，以及各环节调用信息，方便开发者即时debug。如果是使用Gemini模型，这个前端还支持语音和视频实时交互，基本展示效果如下：
+## 6.3 ADK内置前端开启流程
+
+而ADK内置前端开启流程也非常简单，这里我们需要创建一个项目文件，如创建一个ADK_Chat文件夹：
 然后创建基本文件结构：（注意，如果是Windows系统，官方推荐手动创建项目文件基本结构，而不是采用IDE如Cursor等进行创建，以避免出现字符乱码情况）
 
 ```
@@ -1888,18 +1886,18 @@ ADK作为最新一代Agent开发框架，不仅功能特性非常领先，而且
     │   ├── .env
     ├── __init__.py
     └── ...
-```
 
 ![](img/94bbc8d596254cfb8de8da6024cf25b1.png)
 
+
+![](img/36db7f5610de14b3170e4ef9362210ea.png)
+
+```
 然后使用cursor或者其他IDE打开项目，准备写入代码。（也可以直接使用文本编辑器将代码拷贝进去）
 
 +   **init.py**
 
 写入如下内容：from . import agent
-
-![](img/36db7f5610de14b3170e4ef9362210ea.png)
-
 +   **.env**
 
 然后在.env中写入如下内容：
@@ -1907,10 +1905,10 @@ ADK作为最新一代Agent开发框架，不仅功能特性非常领先，而且
 ```
 DS_BASE_URL=https://api.deepseek.com
 DS_API_KEY=YOUR_API_KRY
-```
 
 ![](img/ae8e5b971a33e512caab7a729ecbd93f.png)
 
+```
 +   **agent.py**
 
 写入如下内容。这里我们使用Google ADK框架中的MCPToolset方法接入MCP Server，如下代码所示：
@@ -1960,12 +1958,12 @@ root_agent = Agent(
         )
     ],
 )
-```
 
 ![](img/2d1f767f19854f4110819feea57eaacb.png)
 
 ![](img/bf445babbbb3aa85d8f99f9dd5a666c0.png)
 
+```
 然后再次确认当前环境是否安装adk和litellm两个库：
 
 ```
@@ -1979,6 +1977,12 @@ dk其实是伴随着安装包一起安装的调用测试命令。在使用adk命
 
 ```
     adk web --port 8002
+
+![](img/596654f14ab0c3bc3cab6c219428e940.png)
+
+
+![](img/4262fe8ccb04448f920d27e7a3e1c59b.png)
+
 ```
 
 这里需要注意的是： Windows 环境下运行 MCP 工具时的子进程创建问题。错误 NotImplementedError 发生在尝试启动 MCP 服务器进程时。因此Windows用户需要使用adk web --no-reload命令启动。
@@ -1986,13 +1990,7 @@ dk其实是伴随着安装包一起安装的调用测试命令。在使用adk命
 > 注意选择一个未被使用的端口号
 
 然后在浏览器输入：http://0.0.0.0:8002/即可开启对话：
-
-![](img/596654f14ab0c3bc3cab6c219428e940.png)
-
 在对话页面能够看到完整的历史对话消息，并且在左侧还能看到事件流的基本情况，以及每个事件的详细信息：
-
-![](img/4262fe8ccb04448f920d27e7a3e1c59b.png)
-
 完整演示效果如下：
 
 ```

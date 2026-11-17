@@ -4,6 +4,8 @@
 
 ## 生成网站
 
+- 图片：可正确显示的英文数据看板图片，图片链接（https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/f79cee5b8986d56b9d67eb754d2c0fb0_1741677298377196362.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&amp;x-expires=1773213298&amp;x-signature=x99wKGT1vj9papUAhuUZoG8LJFY%3D）
+
 ```
 使用一个HTML文件生成以下网页：
 1. 页面布局描述
@@ -14,7 +16,6 @@
   - 标题：更改您使用的银行账户
   - 小标题：体验重新构想的银行业务。简单、安全，专为现代世界设计。
   - 两个按钮：立即开始、了解更多
-- 图片：可正确显示的英文数据看板图片，图片链接（https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/f79cee5b8986d56b9d67eb754d2c0fb0_1741677298377196362.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&amp;x-expires=1773213298&amp;x-signature=x99wKGT1vj9papUAhuUZoG8LJFY%3D）
 - 功能模块标题：为您设计的功能
 - 功能模块：
   - 安全交易：银行级加密保障所有交易
@@ -123,6 +124,8 @@
 
 ### 👸号封面
 
+- emoji图片：https://s2.loli.net/2025/03/24/pBmlncEYkodSVA6.png 
+
 ```
 # 公众号封面提示词
 
@@ -153,7 +156,6 @@
 
 ## 用户输入内容
 - 公众号标题为：[一套提示词帮你实现小红书、公众号封面自由，Deepseek V3也能用！]
-- emoji图片：https://s2.loli.net/2025/03/24/pBmlncEYkodSVA6.png 
 ```
 
 风格提示词
@@ -165,6 +167,8 @@
 ```
 
 ### 知识卡片
+
+二维码截图地址：（必须用）：https://pic.readnow.pro/2025/03/791e29affc7772652c01be54b92e8c43.jpg
 
 ```
 **你是一位国际顶****尖的数字杂**志艺术总监和前端开发专家，曾[为 Vogue、Elle 等时尚杂志设计过数字版面，擅长将奢华杂志美学与现代网页设计完美融](https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css)合，创造出令人惊艳的视觉体验[。
@@ -181,7 +185,6 @@
 
 优雅复古风格 （Elegant Vintage）
 采用优雅复古风格设计，重现 20 世纪初期印刷品的精致美学。使用米色或淡黄色纸张质感背景，配以深棕、暗红等老式印刷色。字体必须使用衬线字体如 Baskerville 或 Noto Serif，标题可使用装饰性字体。排版应对称且庄重，遵循传统书籍设计原则。装饰元素包括精致的花纹边框、古典分隔线和角落装饰，可添加轻微做旧效果如纸张纹理和微妙污点。图像应用复古滤镜处理，呈现褪色照片效果。整体设计应散发出典雅、成熟且历经时间考验的气质，参考 The New Yorker 和老式法国时尚杂志的设计语言。
-
 
 每种风格都应包含以下元素，但视觉表现各不相同：
 
@@ -213,8 +216,6 @@ Tailwind CSS: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.1
 设计的宽度为 400px，高度不超过 1280px
 对主题内容进行抽象提炼，只显示列点或最核心句引用，让人阅读有收获感
 永远用中文输出，装饰元素可用法语、英语等其他语言显得有逼格
-二维码截图地址：（必须用）：https://pic.readnow.pro/2025/03/791e29affc7772652c01be54b92e8c43.jpg
-
 请以国际顶尖杂志艺术总监的眼光和审美标准，创造风格迥异但同样令人惊艳的数字杂志式卡片，让用户感受到&quot;这不是普通的信息卡片，而是一件可收藏的数字艺术品&quot;。
 
 待处理内容：

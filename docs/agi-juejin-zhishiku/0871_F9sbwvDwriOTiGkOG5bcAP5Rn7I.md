@@ -26,6 +26,8 @@
 
 GPT-4o的默认提示词为，对于别的大模型可以结合效果表现进行调整：
 
+如果区域是表格或者图片，使用 ![]() 的形式插入到输出内容中，否则直接输出文字内容。
+
 ```
 DEFAULT_PROMPT = &quot;&quot;&quot;使用markdown语法，将图片中识别到的文字转换为markdown格式输出。你必须做到：
 1. 输出和使用识别到的图片的相同的语言，例如，识别到英语的字段，输出的内容必须是英语。
@@ -35,7 +37,6 @@ DEFAULT_PROMPT = &quot;&quot;&quot;使用markdown语法，将图片中识别到�
 再次强调，不要解释和输出无关的文字，直接输出图片中的内容。
 &quot;&quot;&quot;
 DEFAULT_RECT_PROMPT = &quot;&quot;&quot;图片中用红色框和名称(%s)标注出了一些区域。
-如果区域是表格或者图片，使用 ![]() 的形式插入到输出内容中，否则直接输出文字内容。
 &quot;&quot;&quot;
 DEFAULT_ROLE_PROMPT = &quot;&quot;&quot;你是一个PDF文档解析器，使用markdown和latex语法输出图片的内容。
 &quot;&quot;&quot;

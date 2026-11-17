@@ -68,10 +68,11 @@ swift infer \
 
 以下为一个推理的示例：
 
-```
-&lt;&lt;&lt; &lt;image&gt;&lt;image&gt;这两张图有什么区别
 Input an image path or URL &lt;&lt;&lt; http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/cat.png
 Input an image path or URL &lt;&lt;&lt; http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/animal.png
+
+```
+&lt;&lt;&lt; &lt;image&gt;&lt;image&gt;这两张图有什么区别
 这两张图片的区别在于它们所展示的动物和场景。
 
 第一张图片
@@ -170,6 +171,9 @@ print(f&#x27;response1: {resp_list[1].choices[0].message.content}&#x27;)
 
 多模态模型：
 
+                 images=[&#x27;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/cat.png&#x27;,
+                         &#x27;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/animal.png&#x27;]),
+
 ```
 import os
 os.environ[&#x27;CUDA_VISIBLE_DEVICES&#x27;] = &#x27;0&#x27;
@@ -188,8 +192,6 @@ request_config = RequestConfig(max_tokens=512, temperature=0)
 infer_requests = [
     InferRequest(messages=[{&#x27;role&#x27;: &#x27;user&#x27;, &#x27;content&#x27;: &#x27;who are you?&#x27;}]),
     InferRequest(messages=[{&#x27;role&#x27;: &#x27;user&#x27;, &#x27;content&#x27;: &#x27;&lt;image&gt;&lt;image&gt;两张图的区别是什么？&#x27;}],
-                 images=[&#x27;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/cat.png&#x27;,
-                         &#x27;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/animal.png&#x27;]),
     InferRequest(messages=[{&#x27;role&#x27;: &#x27;user&#x27;, &#x27;content&#x27;: &#x27;&lt;video&gt;describe the video&#x27;}],
                  videos=[&#x27;https://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/baby.mp4&#x27;]),
 ]
@@ -254,14 +256,15 @@ swift deploy \
 
 方案一: curl
 
+    {&quot;type&quot;: &quot;image&quot;, &quot;image&quot;: &quot;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/cat.png&quot;},
+    {&quot;type&quot;: &quot;image&quot;, &quot;image&quot;: &quot;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/animal.png&quot;},
+
 ```
 curl http://localhost:8000/v1/chat/completions \
 -H &quot;Content-Type: application/json&quot; \
 -d &#x27;{
 &quot;model&quot;: &quot;Qwen2.5-VL-3B-Instruct&quot;,
 &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: [
-    {&quot;type&quot;: &quot;image&quot;, &quot;image&quot;: &quot;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/cat.png&quot;},
-    {&quot;type&quot;: &quot;image&quot;, &quot;image&quot;: &quot;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/animal.png&quot;},
     {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;两张图的区别是什么？&quot;}
 ]}],
 &quot;max_tokens&quot;: 256,
@@ -313,10 +316,12 @@ print()
 
 方案三：swift客户端
 
+                 images=[&#x27;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/cat.png&#x27;,
+                         &#x27;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/animal.png&#x27;]),
+
 ```
 from swift.llm import InferRequest, InferClient, RequestConfig
 from swift.plugin import InferStats
-
 
 engine = InferClient(host=&#x27;127.0.0.1&#x27;, port=8000)
 print(f&#x27;models: {engine.models}&#x27;)
@@ -328,8 +333,6 @@ request_config = RequestConfig(max_tokens=512, temperature=0)
 infer_requests = [
     InferRequest(messages=[{&#x27;role&#x27;: &#x27;user&#x27;, &#x27;content&#x27;: &#x27;who are you?&#x27;}]),
     InferRequest(messages=[{&#x27;role&#x27;: &#x27;user&#x27;, &#x27;content&#x27;: &#x27;&lt;image&gt;&lt;image&gt;两张图的区别是什么？&#x27;}],
-                 images=[&#x27;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/cat.png&#x27;,
-                         &#x27;http://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/animal.png&#x27;]),
     InferRequest(messages=[{&#x27;role&#x27;: &#x27;user&#x27;, &#x27;content&#x27;: &#x27;&lt;video&gt;describe the video&#x27;}],
                  videos=[&#x27;https://modelscope-open.oss-cn-hangzhou.aliyuncs.com/images/baby.mp4&#x27;]),
 ]

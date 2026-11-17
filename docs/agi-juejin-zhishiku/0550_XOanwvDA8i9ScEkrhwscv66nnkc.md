@@ -461,6 +461,120 @@ Notepad 里不适合写什么？
 ## 参考资料
 @api-specs.yaml
 @auth-flow.md
+
+![](img/0cc164c439b1a87c7e2b10ddd9b682e3.png)
+
+
+![](img/ccdac0ad822aa72680ffdcc72ebccc6c.png)
+
+![](img/25dd3c8fc9a70c7acec17b64c8d5dad7.png)
+
+
+![](img/bbd5ab85c4730a49bd7a0b05c1017697.png)
+
+![](img/67589900b1c6c2d7f16e664ce6c03ed1.png)
+
+
+![](img/60da8404e852be4f41b6acb64a7ea6f8.png)
+
+![](img/ecd3b00d611fb5ad00109852f9be5abb.png)
+
+
+![](img/90dd63989d1aeb9dd4a76ae677025ff3.png)
+
+
+![](img/d065d6f5a3aa09b394745c211eda975f.png)
+
+![](img/5727519682fe5cadcd362407cec00174.png)
+
+
+![](img/ea37221208edf05a4476d172357981c5.png)
+
+![](img/b8463656f8f2deb904b6a53b293b78ef.png)
+
+
+![](img/96f1256b8b9e7e1a123fb60257032eb3.png)
+
+
+![](img/05cd68708557ca666011bd578825e430.png)
+
+
+![](img/3c5230a98f9b9970e84af6a55f57d4c4.png)
+
+![](img/5c9b2b8e3563a4b8177411ede96a4f25.png)
+
+
+![](img/e70e62ff1234fecf7bbc65261c09dfef.png)
+
+
+![](img/7e40093e3b681060d8267cbed4004678.png)
+
+![](img/7c7dbfc12ddcc05b0b0e90fd9cc41404.png)
+
+
+![](img/07879086c0629058f2cc4a49c661f85a.png)
+
+
+![](img/6c8791679f31480c5614b60fdb6043ac.png)
+
+![](img/4b2fa6fa7de5730d94009b845374c854.png)
+
+
+![](img/fa8f63d627a34d9a5e1c7839112ab767.png)
+
+
+![](img/d1bafb7edfb900f2311e536fb635398a.png)
+
+
+![](img/1ec9410acb78697d8041811428988548.png)
+
+
+![](img/da6782631230203ec827f2c1b2dede4b.png)
+
+![](img/9c3f9fb18d0e6a94e6104bf51acf8f29.png)
+
+
+![](img/cccec42030fe5d8a00a696e82f8847cb.png)
+
+![](img/c18ecdc3742075f743f9883727eba87e.png)
+
+
+![](img/f0045131f0c7b88dd38766010ad186d6.png)
+
+
+![](img/d03cb44af720ddc7a7b7312307167638.png)
+
+
+![](img/a071be8393f2f3138ba5972109272437.png)
+
+
+![](img/5e5c35f9235443e14f1b8600e3c1da46.png)
+
+![](img/68de5c0c20e6dcf17ccc89bd730cbb45.png)
+
+
+![](img/8e99294f8c9e252a0fd42d2fec7d39b9.png)
+
+
+![](img/99fd42703542ce4967ce8e6432930c80.png)
+
+
+![](img/5d9fede54cb8c02c5cd8513a798758e2.png)
+
+
+![](img/a2c70d24462a35ad1b0938578e96874a.png)
+
+
+![](img/1afd85f951cab9fe9b0bb716f95a4910.png)
+
+
+![](img/70d4eb7391f3ad56835f1943bf8760b9.png)
+
+![](img/1722da1d4989520e55576a7cc3a68eb1.png)
+
+
+![](img/28f23003c5f4b5e6f1905122b1d97953.png)
+
 ```
 
 ### 2.4 Trae
@@ -468,31 +582,10 @@ Notepad 里不适合写什么？
 Trae 字节做的一款是对标 Cursor 的 AI 编辑器，UI 上基于 VS Code 做了一些优化，并且在 Cursor 的基础上增加了 Web 预览的功能，编辑器模块基本上就是沿用的 VS Code 的代码。
 
 [目前只](https://www.trae.ai/)做了 Mac 平台的客户端，打开 官网 就可以下载。
-
-![](img/0cc164c439b1a87c7e2b10ddd9b682e3.png)
-
 下载安装后，打开应用会看到开始页面，点击开始后可以选择主题和语言，目前只支持中文和英文。
-
-![](img/ccdac0ad822aa72680ffdcc72ebccc6c.png)
-
-![](img/25dd3c8fc9a70c7acec17b64c8d5dad7.png)
-
 点击继续，可以导入 VS Code 和 Cursor 的配置，导入配置后，可以设置添加 trae 命令行工具，该工具可用于通过终端启动 Trae。
-
-![](img/bbd5ab85c4730a49bd7a0b05c1017697.png)
-
-![](img/67589900b1c6c2d7f16e664ce6c03ed1.png)
-
 配置好工具后，可以选择登录或跳过，不登录的话是无法正常使用 Trae 的 Chat 和 Builder 功能的。
-
-![](img/60da8404e852be4f41b6acb64a7ea6f8.png)
-
-![](img/ecd3b00d611fb5ad00109852f9be5abb.png)
-
 登录后，进入 Trae 的主界面，点击“打开文件夹”后，和 VS Code 一样，会提示是否信任文件夹的作者，信任的话点信任就可以。
-
-![](img/90dd63989d1aeb9dd4a76ae677025ff3.png)
-
 在 Trae 左侧的工具栏上，主要有这几个工具：
 
 +   资源管理器：可以查看和打开项目中的文件
@@ -502,89 +595,33 @@ Trae 字节做的一款是对标 Cursor 的 AI 编辑器，UI 上基于 VS Code 
 +   源代码管理：可以查看 Git 仓库相关的信息
 
 点击右侧面板中的 Builder 标签或者按下 Ctrl + U，就可以看到 Builder 面板中的对话框，对话框中可以切换使用的大语言模型，默认的是 Claude-3.5-Sonnet。
-
-![](img/d065d6f5a3aa09b394745c211eda975f.png)
-
-![](img/5727519682fe5cadcd362407cec00174.png)
-
 比如说我输入给代码添加注释后，Trae AI 就会开始思考要怎么添加注释。
 
 AI 思考完成后，我就可以开始审查单个文件，或者接受单个文件修改，又或者是点击“全部接受”，一次性修改所有需要修改的文件。
-
-![](img/ea37221208edf05a4476d172357981c5.png)
-
-![](img/b8463656f8f2deb904b6a53b293b78ef.png)
-
 目前 Trae 只支持 Claude-3.5-Sonnet 和 GPT-4o 这两种模型。
-
-![](img/96f1256b8b9e7e1a123fb60257032eb3.png)
-
 在点击对话框中的 # 可以引用特定的代码、文件和文件夹。
-
-![](img/05cd68708557ca666011bd578825e430.png)
-
 遇到错误的时候，可以选择 AI 修复，点击 AI 修复的时候 Trae 会修改文件的内容，点击接受就会修改文件。
-
-![](img/3c5230a98f9b9970e84af6a55f57d4c4.png)
-
-![](img/5c9b2b8e3563a4b8177411ede96a4f25.png)
-
 当 Trae 需要用到命令的时候，不会自动执行命令，需要点击才会运行。
-
-![](img/e70e62ff1234fecf7bbc65261c09dfef.png)
-
 和 Cursor 一样，Trae 也支持运行命令行，但是无法主动处理运行命令的过程中发生的错误，可以点击终端中的“添加到对话”按钮把错误信息添加到 Builder 的输入框中。
-
-![](img/7e40093e3b681060d8267cbed4004678.png)
-
-![](img/7c7dbfc12ddcc05b0b0e90fd9cc41404.png)
-
 如果运行的是前端应用，还可以使用 Trae 的 Web 预览功能来查看应用运行的效果，这个功能也是 Trae 的一个特色功能。
-
-![](img/07879086c0629058f2cc4a49c661f85a.png)
-
 ### 2.5 Windsurf
 
 在 [官网 ](https://link.juejin.cn/?target=https%3A%2F%2Fcodeium.com%2Fwindsurf)下载 Windsurf Editor 并安装后，打开 Windsurf ，首先看到的是导入设置项界面，可以从 Cursor 或 VS Code 中导入设置，然后需要进行登录。
-
-![](img/6c8791679f31480c5614b60fdb6043ac.png)
-
-![](img/4b2fa6fa7de5730d94009b845374c854.png)
-
 登录后，Windsurf 窗口右侧是 Cascade 面板，可以把它理解为 Cursor 的 Composer ，并且提示了有两个快捷键可以用。
 
 +   Ctrl + L ：唤出 Cascade
 
 +   Ctrl + Shift + P ： 打开命令面板
-
-![](img/fa8f63d627a34d9a5e1c7839112ab767.png)
-
 和 Compoer 一样，当我输入优化代码的时候， Windsurf 就会开始尝试思考后修改代码，我只需要点击 Accept All，不同的是，虽然我输入的是中文，用的也是 Claude 模型，但是输出的内容却是英文的，这个问题应该是与 Windsurf 提供给模型的提示词有关。
-
-![](img/d1bafb7edfb900f2311e536fb635398a.png)
-
 Windsurf 可以选择的模型相对 Cursor 来说更少，Cursor 是可以选择 Gemini 模型的。
-
-![](img/1ec9410acb78697d8041811428988548.png)
-
 ### 2.6 Cline
 
 #### 2.6.1 用法
 
 Cline 是一个 AI 编程智能体，以 VS Code 扩展插件的形式使用。在 VS Code 中安装 Cline 后，就可以在左侧看到打开 Cline 的按钮。
-
-![](img/da6782631230203ec827f2c1b2dede4b.png)
-
-![](img/9c3f9fb18d0e6a94e6104bf51acf8f29.png)
-
 ##### 设置项
 
 首次打开 Cline 的时候，要选择 API 提供者，默认是 OpenRouter，也可以使用 Gemini、DeepSeek、LM Studio以及 Ollama 等。
-
-![](img/cccec42030fe5d8a00a696e82f8847cb.png)
-
-![](img/c18ecdc3742075f743f9883727eba87e.png)
-
 +   [OpenRouter ](https://link.juejin.cn/?target=https%3A%2F%2Fopenrouter.ai%2F)是一个聚合了多种大型语言模型（LLMs）的API平台，提供了不同模型的访问和成本优化服务
 
 +   [Gemini ](https://link.juejin.cn/?target=https%3A%2F%2Fgemini.google.com)：谷歌开发的大语言模型，不支持中国 IP 访问
@@ -596,17 +633,8 @@ Cline 是一个 AI 编程智能体，以 VS Code 扩展插件的形式使用。�
 +   [Ollama ](https://link.juejin.cn/?target=https%3A%2F%2Follama.com%2F)：与 LM Studio 类似，可以用于在本地设备上运行和管理大型语言模型（LLMs），以命令行的方式调用，尤其适合开发者和研究人员快速部署、测试和自定义模型。
 
 在 OpenRouter 上还可以看到有哪些应用使用了他们的 API 。
-
-![](img/f0045131f0c7b88dd38766010ad186d6.png)
-
 Cline 的设置页中可以设置自定义指令，自定义指令会插入到每一个请求的系统提示词的结尾。比如输入“优化代码”，自定义提示词是“说中文”，那系统提示词就是“优化代码xxx说中文”。
-
-![](img/d03cb44af720ddc7a7b7312307167638.png)
-
 相关的 Cline 代码如下。
-
-![](img/a071be8393f2f3138ba5972109272437.png)
-
 ##### 自动批准
 
 Cline 提供了 Auto Approve 功能，这个功能可以在输入框的上方启用，这个功能启用后，Cline 就会自动做下面这几件事，不会征求你的意见，否则当 Cline 的行动就需要获得你的批准。
@@ -622,17 +650,9 @@ Cline 提供了 Auto Approve 功能，这个功能可以在输入框的上方启
 +   使用 MCP 服务器：模型上下文协议（MCP，Model Context Protocol）是一种开放协议，允许AI模型通过标准化服务器实现，安全地与本地及远程资源进行交互。这些服务器通过文件访问、数据库连接、API集成及其他上下文服务来扩展AI能力
 
 +   最大请求次数：默认值是 20 ，也就是默认情况下， Cline 执行了 20 次自动的生成请求后，就会停止生成
-
-![](img/5e5c35f9235443e14f1b8600e3c1da46.png)
-
-![](img/68de5c0c20e6dcf17ccc89bd730cbb45.png)
-
 ##### 规划与行动
 
 在 Cline 输入框的下方有 Plan 和 Act 两个选项。
-
-![](img/8e99294f8c9e252a0fd42d2fec7d39b9.png)
-
 Plan 与 Act 的区别：
 
 +   Plan 模式的提示词主要引导 AI 进行分析和规划
@@ -660,21 +680,12 @@ Cline 官方推荐的是用 DeepSeek-R1 进行规划，然后用 Claude-3.5-Sonn
 ##### 切换模型
 
 点击输入框下方的模型名称，可以修改使用的模型。
-
-![](img/99fd42703542ce4967ce8e6432930c80.png)
-
 ##### 查看历史
 
 如果想回看之前的任务执行记录，可以点击 View all history 。
-
-![](img/5d9fede54cb8c02c5cd8513a798758e2.png)
-
 ##### 插入图片与关联特定上下文
 
 点击输入框中的 @ 可以让模型读取特定的文件夹或文件，也可以通过粘贴 URL 的形式提取 URL 对应的网站的内容。
-
-![](img/a2c70d24462a35ad1b0938578e96874a.png)
-
 **@problems 的用途**
 
 +   快速添加工作区的错误和警告信息
@@ -686,23 +697,12 @@ Cline 官方推荐的是用 DeepSeek-R1 进行规划，然后用 Claude-3.5-Sonn
 例如，如果你的代码中有类型错误、缺少导入或其他编译/构建问题，你可以使用 @problems 让 Cline 直接看到这些问题，它就能够主动帮你修复这些错误，而不需要你手动复制粘贴错误信息。
 
 比如下图中 @problems 后，Cline 就尝试处理导包错误了。
-
-![](img/1afd85f951cab9fe9b0bb716f95a4910.png)
-
 点击输入框下方的相机可以插入图片，也可以直接把剪贴板中的图片粘贴进输入框。
-
-![](img/70d4eb7391f3ad56835f1943bf8760b9.png)
-
-![](img/1722da1d4989520e55576a7cc3a68eb1.png)
-
 #### 2.6.2 MCP 服务器介绍
 
 [模型上下文协议 ](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol)（MCP，Model Context Protocol）是 Anthropic 公司提出一种开放协议，允许AI模型通过标准化服务器实现，安全地与本地及远程资源进行交互。这些服务器通过文件访问、数据库连接、API集成及其他上下文服务来扩展AI能力。MCP 服务器是 Model Context Protocol 中的核心组件，负责为大型语言模型（LLM）提供外部数据源和工具的标准化接入，MCP 服务器通过三种基本原语为 LLM 提供支持：资源、工具、提示。
 
 点击 Cline 中右上角的服务器按钮，可以打开 MCP Server 面板。
-
-![](img/28f23003c5f4b5e6f1905122b1d97953.png)
-
 在 [Servers ](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers)开源库中，可以看到让 LLM 可以看到这几类 MCP Server。
 
 +   知识检索： AWS KB Retrieval
@@ -795,28 +795,28 @@ Se**quential Thinki**ng MCP Server 是基于 Model Context Protocol (MCP) 协议
 
 ```
 docker build -t mcp/sequentialthinking -f src/sequentialthinking/Dockerfile .
-```
-
-构建成功时显示的内容。
 
 ![](img/486c142f13507f481f1bb7f954c892cc.png)
 
+```
+
+构建成功时显示的内容。
 构建成功后执行下面的命令。
 
 ```
 docker run mcp/sequentialthinking
+
+![](img/002edfd3c8a7c19e2dabe61cee2e143f.png)
+
+
+![](img/667a3c01616c6651fbeca39245ba3ba2.png)
+
 ```
 
 ##### **使用效果**
 
 当我的提示词是“SequenialThinking 是什么”的时候，Gemini 就会开始尝试用 use_mcp_tool 工具来调用 MCP 服务。
-
-![](img/002edfd3c8a7c19e2dabe61cee2e143f.png)
-
 可以勾选自动同意使用这个工具。
-
-![](img/667a3c01616c6651fbeca39245ba3ba2.png)
-
 #### 2.6.4 自动创建 MCP Server
 
 ##### 创建 Server
@@ -827,52 +827,52 @@ docker run mcp/sequentialthinking
 
 ```
 cd /Users/oushaoze/Documents/Cline/MCP &amp;&amp; npx @modelcontextprotocol/create-server youtube-transcript-server &amp;&amp; cd youtube-transcript-server &amp;&amp; npm install axios youtube-transcript
-```
 
 ![](img/1139bddea269408c7fd26f101dd6335b.png)
 
-写完项目源码后，Gemin 就会尝试运行 MCP Server。
 
 ![](img/52f3e5107eca1af39b81b2f83714fc1d.png)
 
-而且 Gemini 还会修改 Cline 的 MCP Server 配置。
 
 ![](img/aebc5d8905a7e2650838e8340a035a89.png)
 
+
+![](img/56979a464bdc0d42b8fba6b6c9698b1e.png)
+
+
+![](img/bb8157733fc2b7936f933f194ae864c4.png)
+
+
+![](img/07c88d37f6cf000543005d6268763ace.png)
+
+
+![](img/08853f8f1f7fda5002902dcd19e6d30c.png)
+
+
+![](img/c25a4c58cf381672b7743580e76abe69.png)
+
+
+![](img/f044113100c8cf5d13fa78c6c5667ed4.png)
+
+
+![](img/a166fe4e378cc5f08cf9bb65147e5390.png)
+
+```
+写完项目源码后，Gemin 就会尝试运行 MCP Server。
+而且 Gemini 还会修改 Cline 的 MCP Server 配置。
 源码所在的位置：/Users/xxx/Documents/Cline/MCP/youtube-transcript-server
 
 ##### 使用效果
 
 当我输入“提取 youtube 字幕： www.youtube.com/watch?v=liE… Gemini 就会调用 youtube-transcript-server 工具，
-
-![](img/56979a464bdc0d42b8fba6b6c9698b1e.png)
-
 最后并没有处理成功，可能是因为这个获取字幕的 MCP Server 的实现不完整。
-
-![](img/bb8157733fc2b7936f933f194ae864c4.png)
-
 通过 Cursor 调整源码后，再用 Cline 获取字幕，效果如下。在遇到错误的时候会尝试调用 SequentialThinking 找出解决方案。
-
-![](img/07c88d37f6cf000543005d6268763ace.png)
-
 #### 2.6.5 Cline 提示词
 
 下面是执行任务的过程中，Cline 通过读取文件内容和环境信息，一起放到 API 请求中发送给模型的部分内容，点击 API Request 右边的按钮就可以展开查看具体的内容。
-
-![](img/08853f8f1f7fda5002902dcd19e6d30c.png)
-
 从下面的内容中可以看到 Cline 会把打开的标签、模式（act/plan）、文件内容等信息都传给模型，这意味着如果你只是说“优化代码”的话，对于不够智能的模型（比如7b 的模型）来说，可能会先解释项目目录中有哪些内容，再来处理任务。
-
-![](img/c25a4c58cf381672b7743580e76abe69.png)
-
 Cline 是通过下面的提示词让 LLM 使用 MCP Server 的，提示词大约有 12000+ 个 token。
-
-![](img/f044113100c8cf5d13fa78c6c5667ed4.png)
-
 翻译后的提示词如下，提示词的其中一部分就是引导模型输出调用 use_mcp_tool 工具的文本。
-
-![](img/a166fe4e378cc5f08cf9bb65147e5390.png)
-
 在 Cline 的代码中，定义了下面这些工具，其中就包括 use_mcp_tool。
 
 ```

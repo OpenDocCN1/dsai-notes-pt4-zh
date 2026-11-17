@@ -676,6 +676,15 @@ Prompt: &#x27;The future of AI is&#x27;, Generated text: &#x27; here. Companies,
 
 或者我们可以通过创建一个运行脚本来实现单轮对话，在命令行通过vim run.py来创建一个vllm启动脚本，将以下代码复制到文件中，进行必要的修改后保存退出：
 
+
+&lt;div align=center&gt;&lt;img src=&quot;https://typora-photo1220.oss-cn-beijing.aliyuncs.com/LingYu/image-20241025161057315.png&quot; width=100%&gt;&lt;/div&gt;
+
+
+&lt;div align=center&gt;&lt;img src=&quot;https://typora-photo1220.oss-cn-beijing.aliyuncs.com/LingYu/image-20241025162708674.png&quot; width=100%&gt;&lt;/div&gt;
+
+&lt;div align=center&gt;&lt;img src=&quot;https://typora-photo1220.oss-cn-beijing.aliyuncs.com/LingYu/image-20241025162609237.png&quot; width=100%&gt;&lt;/div&gt;
+
+
 ```
 from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer
@@ -693,7 +702,6 @@ def get_completion(prompts, model, tokenizer=None, max_tokens=512, temperature=0
     llm = LLM(model=model, tokenizer=tokenizer, max_model_len=max_model_len,trust_remote_code=True)
     outputs = llm.generate(prompts, sampling_params)
     return outputs
-
 
 if __name__ == &quot;__main__&quot;:
     # 初始化 vLLM 推理引擎
@@ -725,18 +733,8 @@ if __name__ == &quot;__main__&quot;:
         generated_text = output.outputs[0].text
         print(f&quot;Prompt: {pr```ompt!r}, Generated text: {generated_text!r}&quot;)
 
-
 在命令行使用`python run.py`来启动这个脚本，在模型加载完成后会返回推理结果。
-
-&lt;div align=center&gt;&lt;img src=&quot;https://typora-photo1220.oss-cn-beijing.aliyuncs.com/LingYu/image-20241025161057315.png&quot; width=100%&gt;&lt;/div&gt;
-
 可以通过直接在 Python 环境中调用 vLLM 进行推理。通过以下方式在 Python 中启动 vLLM 并指定所需的大模型，该方法更为简便高效。
-
-&lt;div align=center&gt;&lt;img src=&quot;https://typora-photo1220.oss-cn-beijing.aliyuncs.com/LingYu/image-20241025162708674.png&quot; width=100%&gt;&lt;/div&gt;
-
-&lt;div align=center&gt;&lt;img src=&quot;https://typora-photo1220.oss-cn-beijing.aliyuncs.com/LingYu/image-20241025162609237.png&quot; width=100%&gt;&lt;/div&gt;
-
-
 ```python
 ```
 

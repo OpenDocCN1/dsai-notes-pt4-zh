@@ -180,6 +180,8 @@ AiOnly 的真正亮点，在于它与主流开发工具的深度整合：
 
 ![](img/9287a787efee0b05ec9dd5dbfac82ca2.png)
 
+      {&quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: {&quot;url&quot;: &quot;https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20241022/emyrja/dog_and_girl.jpeg&quot;}},
+
 ```
 **curl --location &#x27;https://**api.aiion**ly.com/v1/chat/co**mpletions&#x27;
 --hea**der** &quot;Aut**hori**zation: gem**ini**-3-pro-p**revi**ew&quot;
@@ -193,7 +195,6 @@ AiOnly 的真正亮点，在于它与主流开发工具的深度整合：
   {
     &quot;role&quot;: &quot;user&quot;,
     &quot;content&quot;: [
-      {&quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: {&quot;url&quot;: &quot;https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20241022/emyrja/dog_and_girl.jpeg&quot;}},
       {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;图中描绘的是什么景象?&quot;}
     ]
   }],
@@ -281,6 +282,8 @@ echo %ANTHROPIC_API_KEY%echo %ANTHROPIC_BASE_URL%echo %ANTHROPIC_MODEL%
 
 ![](img/07a268ae5e71fa89fddd0f519839b77d.png)
 
+      {&quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: {&quot;url&quot;: &quot;https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20241022/emyrja/dog_and_girl.jpeg&quot;}},
+
 ```
 开发一个叫做 AI文物复活馆 的应用，功能是：
 1、页面中有一个上传图片的功能，可以上传残缺文物或古画
@@ -302,7 +305,6 @@ curl --location &#x27;https://api.aiionly.com/v1/chat/completions&#x27;
   {
     &quot;role&quot;: &quot;user&quot;,
     &quot;content&quot;: [
-      {&quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: {&quot;url&quot;: &quot;https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20241022/emyrja/dog_and_girl.jpeg&quot;}},
       {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;图中描绘的是什么景象?&quot;}
     ]
   }],

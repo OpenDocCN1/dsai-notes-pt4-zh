@@ -1138,13 +1138,14 @@ func main() {
 
 数据样本类似下面这样：
 
+  &quot;poster&quot;: &quot;https://image.tmdb.org/t/p/w500/npOnzAbLh6VOIu3naU5QaEcTepo.jpg&quot;,
+
 ```
 {
   &quot;id&quot;: 10515,
   &quot;title&quot;: &quot;Castle in the Sky&quot;,
   &quot;overview&quot;: &quot;A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.&quot;,
   &quot;genres&quot;: [&quot;Adventure&quot;, &quot;Fantasy&quot;, &quot;Animation&quot;, &quot;Action&quot;, &quot;Family&quot;, &quot;Romance&quot;],
-  &quot;poster&quot;: &quot;https://image.tmdb.org/t/p/w500/npOnzAbLh6VOIu3naU5QaEcTepo.jpg&quot;,
   &quot;release_date&quot;: 523324800}
 ```
 

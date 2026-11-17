@@ -56,12 +56,13 @@ docs[0].metadata
 
 查看video的元数据
 
+ &#x27;thumbnail_url&#x27;: &#x27;https://i.ytimg.com/vi/pbAd8O1Lvm4/hq720.jpg&#x27;,
+
 ```
 {&#x27;source&#x27;: &#x27;pbAd8O1Lvm4&#x27;,
  &#x27;title&#x27;: &#x27;Self-reflective RAG with LangGraph: Self-RAG and CRAG&#x27;,
  &#x27;description&#x27;: &#x27;Unknown&#x27;,
  &#x27;view_count&#x27;: 9006,
- &#x27;thumbnail_url&#x27;: &#x27;https://i.ytimg.com/vi/pbAd8O1Lvm4/hq720.jpg&#x27;,
  &#x27;publish_date&#x27;: &#x27;2024-02-07 00:00:00&#x27;,
  &#x27;length&#x27;: 1058,
  &#x27;author&#x27;: &#x27;LangChain&#x27;}

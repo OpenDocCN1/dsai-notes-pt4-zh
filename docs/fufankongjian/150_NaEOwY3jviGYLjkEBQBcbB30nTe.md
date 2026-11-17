@@ -1026,6 +1026,8 @@ async def index_search(req: SearchRequest):
 
 **完整代码如下**
 
+                    md_lines.append(f&quot;![Image](./images/{name})\n&quot;)
+
 ```
 # services/pdf_service.py
 from __future__ import annotations
@@ -1211,7 +1213,6 @@ def pdf_to_markdown(file_id: str):
         elif cat == &quot;Image&quot; and page_num:
             for name in image_map.get(page_num, []):
                 if (page_num, name) not in inserted_images:
-                    md_lines.append(f&quot;![Image](./images/{name})\n&quot;)
                     inserted_images.add((page_num, name))
         else:
             md_lines.append(text + &quot;\n&quot;)

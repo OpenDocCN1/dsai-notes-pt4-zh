@@ -78,8 +78,9 @@ pip install &quot;modelscope[multi-modal]&quot; -f https://modelscope.oss-cn-bei
 
 在shell终端中进行一个简单的安装验证（会下载模型并展示进度条，默认下载路径~/.cache/modelscope/）：
 
-```
 python -c &quot;from modelscope.pipelines import pipeline;from modelscope.utils.constant import Tasks;from modelscope.preprocessors.image import load_image;print(pipeline(task=Tasks.multi_modal_embedding).forward({&#x27;img&#x27;: load_image(&#x27;https://yangan2.oss-cn-beijing.aliyuncs.com/pokemon.jpeg&#x27;), &#x27;text&#x27;: &#x27;皮卡丘&#x27;}))&quot;
+
+```
 ```
 
 看到有向量输出，则安装正常
@@ -126,14 +127,15 @@ pipeline = pipeline(task=Tasks.multi_modal_embedding,
 
 ![](img/9ea878accd4168fa173e28facd4c461f.png)
 
-```
-# 准备文本query和多张候选图片
-input_text = &quot;过年喜庆对联&quot;
-input_imgs = [
     load_image(&#x27;https://yangan2.oss-cn-beijing.aliyuncs.com/过年对联.jpeg&#x27;), # 支持示例图片url/本地图片路径 返回PIL.Image
     load_image(&#x27;https://yangan2.oss-cn-beijing.aliyuncs.com/圣诞装饰.png&#x27;), 
     load_image(&#x27;https://yangan2.oss-cn-beijing.aliyuncs.com/过年喜庆.jpeg&#x27;), 
     load_image(&#x27;https://yangan2.oss-cn-beijing.aliyuncs.com/对联.jpeg&#x27;)
+
+```
+# 准备文本query和多张候选图片
+input_text = &quot;过年喜庆对联&quot;
+input_imgs = [
 ]
 
 # 提取图片特征，支持一张图片(PIL.Image)或多张图片(List[PIL.Image])输入，输出归一化特征向量
@@ -160,8 +162,9 @@ print(&quot;图文相似概率分布:&quot;, probs.tolist())
 
 ![](img/340a2ed4dd7ffa8b92ce04cd91a8fc98.png)
 
-```
 input_img = load_image(&#x27;https://yangan2.oss-cn-beijing.aliyuncs.com/pokemon.jpeg&#x27;) # 支持皮卡丘示例图片路径/本地图片 返回PIL.Image
+
+```
 input_texts = [&quot;杰尼龟&quot;, &quot;妙蛙种子&quot;, &quot;小火龙&quot;, &quot;皮卡丘&quot;]
 
 img_embedding = pipeline.forward({&#x27;img&#x27;: input_img})[&#x27;img_embedding&#x27;] # 2D Tensor, [图片数, 特征维度]
@@ -425,6 +428,9 @@ print(tokens) # 按字切分并添加CLS和SEP符号，[101, 6814, 2399, 1599, 2
 
 以下代码（参见modelscope/preprocessors/multi_modal.py）对输入的PIL.Image类型图片进行预处理，转化为torch Tensor。我们这里处理的方式和英文CLIP标准做法一致。此过程已经集成在ModelScope内部pipeline中，用户提取文本特征时无需执行这些代码，直接按照3.2的代码，用图片文件路径或者图片url，读入原始图片即可。这里只是展示出内部工作原理：
 
+
+image_input = load_image(&#x27;https://yangan2.oss-cn-beijing.aliyuncs.com/pokemon.jpeg&#x27;)
+
 ```
 from PIL import Image
 from torchvision.transforms import Compose, Normalize, Resize, ToTensor
@@ -444,8 +450,6 @@ def image_transform(image_size=224):
                   (0.26862954, 0.26130258, 0.27577711)),
     ])
     return transform
-
-image_input = load_image(&#x27;https://yangan2.oss-cn-beijing.aliyuncs.com/pokemon.jpeg&#x27;)
 image_resolution = 224 # 分辨率，实际执行时从3.4.1提到的视觉侧配置接收
 img_preprocess = image_transform(image_resolution) # 输入分辨率，返回一个预处理算子
 image_tensor = img_preprocess(image_input) # torch Tensor

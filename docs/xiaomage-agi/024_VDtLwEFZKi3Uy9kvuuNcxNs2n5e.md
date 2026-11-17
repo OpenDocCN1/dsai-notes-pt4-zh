@@ -34,6 +34,48 @@
 
 ## 2、源码
 
+  { src: &quot;http://aipic.xmgai.cn/faceswap/11.png&quot;, description: &quot;原图&quot; },
+  { src: &quot;http://aipic.xmgai.cn/faceswap/22.jpg&quot;, description: &quot;目标图&quot; },
+  { src: &quot;http://aipic.xmgai.cn/faceswap/33.jpg&quot;, description: &quot;成果&quot; },
+  { src: &quot;http://aipic.xmgai.cn/faceswap/1.jpg&quot;, description: &quot;原图&quot; },
+  { src: &quot;http://aipic.xmgai.cn/faceswap/2.jpg&quot;, description: &quot;目标图&quot; },
+  { src: &quot;http://aipic.xmgai.cn/faceswap/3.jpg&quot;, description: &quot;成果&quot; }
+  { previewImg: &quot;http://aipic.xmgai.cn/model/5.png&quot;, name: &quot;国风写实&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/model/23.png&quot;, name: &quot;迷雾城堡&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/model/67.png&quot;, name: &quot;薰衣草&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/model/2.png&quot;, name: &quot;墨莲&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/model/97.png&quot;, name: &quot;桃花&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/model/53.png&quot;, name: &quot;怦然心动&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/model/6.png&quot;, name: &quot;花嫁&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/model/4.png&quot;, name: &quot;蝴蝶仙子&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/1-1.PNG&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/1-2.PNG&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/2-1.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/2-2.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-1.PNG&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-2.PNG&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-3.PNG&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-4.PNG&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-1.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-2.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-3.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-4.png&quot;, name: &quot;点击图片制作&quot; },
+
+  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-1.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-2.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-3.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-4.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-1.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-2.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-3.png&quot;, name: &quot;点击图片制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-4.png&quot;, name: &quot;点击图片制作&quot; },
+
+  { previewImg: &quot;http://aipic.xmgai.cn/page/1.png&quot;, name: &quot;AI绘画&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/page/2.png&quot;, name: &quot;AI头像制作&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/page/3.png&quot;, name: &quot;AI图生文&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/page/4.png&quot;, name: &quot;AI换脸&quot; },
+  { previewImg: &quot;http://aipic.xmgai.cn/page/5.png&quot;, name: &quot;AI专属二维码&quot; },
+
 ```
 &lt;template&gt;
   &lt;div class=&quot;container&quot;&gt;
@@ -76,7 +118,6 @@
       &lt;/el-col&gt;
     &lt;/el-row&gt;
 
-    
     &lt;el-row&gt;
       &lt;el-col :span=&quot;24&quot; class=&quot;oneTitle&quot;&gt;
         &lt;span&gt;AI绘画（登录制作）&lt;/span&gt;
@@ -134,7 +175,6 @@
       &lt;/el-col&gt;
     &lt;/el-row&gt;
 
-    
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -149,60 +189,18 @@ const handleHome = () =&gt; {
 };
 
 const faceImages = ref([
-  { src: &quot;http://aipic.xmgai.cn/faceswap/11.png&quot;, description: &quot;原图&quot; },
-  { src: &quot;http://aipic.xmgai.cn/faceswap/22.jpg&quot;, description: &quot;目标图&quot; },
-  { src: &quot;http://aipic.xmgai.cn/faceswap/33.jpg&quot;, description: &quot;成果&quot; },
-  { src: &quot;http://aipic.xmgai.cn/faceswap/1.jpg&quot;, description: &quot;原图&quot; },
-  { src: &quot;http://aipic.xmgai.cn/faceswap/2.jpg&quot;, description: &quot;目标图&quot; },
-  { src: &quot;http://aipic.xmgai.cn/faceswap/3.jpg&quot;, description: &quot;成果&quot; }
 ]);
 
 const claasifyList = ref([
-  { previewImg: &quot;http://aipic.xmgai.cn/model/5.png&quot;, name: &quot;国风写实&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/23.png&quot;, name: &quot;迷雾城堡&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/67.png&quot;, name: &quot;薰衣草&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/2.png&quot;, name: &quot;墨莲&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/97.png&quot;, name: &quot;桃花&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/53.png&quot;, name: &quot;怦然心动&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/6.png&quot;, name: &quot;花嫁&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/4.png&quot;, name: &quot;蝴蝶仙子&quot; },
 ]);
 
 const headPicList = ref([
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/1-1.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/1-2.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/2-1.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/2-2.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-1.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-2.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-3.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-4.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-1.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-2.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-3.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-4.png&quot;, name: &quot;点击图片制作&quot; },
-
 ]);
 
 const aiPicList = ref([
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-1.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-2.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-3.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-4.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-1.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-2.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-3.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-4.png&quot;, name: &quot;点击图片制作&quot; },
-
 ]);
 
 const pageList = ref([
-  { previewImg: &quot;http://aipic.xmgai.cn/page/1.png&quot;, name: &quot;AI绘画&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/page/2.png&quot;, name: &quot;AI头像制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/page/3.png&quot;, name: &quot;AI图生文&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/page/4.png&quot;, name: &quot;AI换脸&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/page/5.png&quot;, name: &quot;AI专属二维码&quot; },
-
 ]);
 &lt;/script&gt;
 

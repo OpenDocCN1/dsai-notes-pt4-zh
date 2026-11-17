@@ -546,6 +546,9 @@ Successfully installed aiofiles-24.1.0 click-8.2.1 fastapi-0.115.12 ffmpy-0.6.0 
 
 完整实现的代码如下：
 
+                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f464.png&quot;,
+                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f916.png&quot;,
+
 ```
 import gradio as gr
 from langchain.chat_models import init_chat_model
@@ -586,8 +589,6 @@ def create_chatbot() -&gt; gr.Blocks:
                 height=500,
                 show_copy_button=True,
                 avatar_images=(
-                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f464.png&quot;,
-                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f916.png&quot;,
                 ),
             )
             msg = gr.Textbox(placeholder=&quot;请输入您的问题...&quot;, container=False, scale=7)
@@ -634,7 +635,6 @@ def create_chatbot() -&gt; gr.Blocks:
         clear.click(clear_history, outputs=[chatbot, msg, state])
 
     return demo
-
 
 # ──────────────────────────────────────────────
 # 3. 启动应用

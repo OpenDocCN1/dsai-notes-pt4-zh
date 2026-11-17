@@ -326,10 +326,11 @@ ssh -CNg -L 7860:127.0.0.1:7860 -L 23333:127.0.0.1:23333 root@ssh.intern-ai.org.
 
 前面我们已经使用agent搭建web demo和天气接口的使用了，接下来我们就直接使用AgentLego：
 
+wget http://download.openmmlab.com/agentlego/road.jpg
+
 ```
 # 下载demo文件
 cd /root/agent
-wget http://download.openmmlab.com/agentlego/road.jpg
 # 安装目标检测基于mmdet算法库中的RTMDet-Large模型依赖
 conda activate agent
 pip install openmim==0.3.9

@@ -142,16 +142,96 @@
 
 提示詞
 
-```json { "Use the attached image of the person as reference. Hyper-realistic black and white studio portrait of the young man in side profile, natural hair gently falling around his face. Strong rim light accentuating his jawline and nose, dark minimalist background. Expression thoughtful and serene, cinematic lighting creating dramatic contrast and fine photographic detail.": "請參考所附人物圖片。一張超寫實的黑白工作室肖像照，年輕男子側面入鏡，自然髮絲輕柔地垂落在臉龐周圍。強烈的輪廓光突顯了他的下顎線和鼻子，背景為深色極簡風格。表情沉思而寧靜，電影般的燈光營造出戲劇性的對比和精緻的攝影細節。", "size": "{argument name=\"image size\" default=\"1024x1024\"}", "n": "{argument name=\"number of images\" default=\"1\"}" } ```
-
-精選
-
-### 2005 年 Sony CyberShot 商場美食廣場快照提示
 
 ![](img/4b02b66732b7474635c86d7b58b47de3.png)
 
 ![](img/e568f30a7ca302bf31e616bfbd5118c7.png)
 
+
+![](img/7a9a2e7706a548b2f3850f3b33a23e4b.png)
+
+
+![](img/8921fde1721129e08d17ad87fd4ee801.png)
+
+
+![](img/0c855a8b009d260908f49e3c2b37d927.png)
+
+
+![](img/94f931732033ba5cf468e78b12f5971b.png)
+
+
+![](img/a4e78738ef77be11b31a568f0f11ab35.png)
+
+
+![](img/cb4d236fd6b5873c94b3d3f2dfef8644.png)
+
+
+![](img/6d0c74cf360e8a09978c22e0ef14003c.png)
+
+
+![](img/5efcc893d45f50beba69260b24bb4492.png)
+
+
+![](img/acf2b783886727491039748d4b762cd1.png)
+
+
+![](img/19d5691b263114354fab78aceab42528.png)
+
+![](img/ec86eb200d18607bbafaa8efdebe1f8b.png)
+
+
+![](img/b9eccb7f751589aab823093ec2338660.png)
+
+
+![](img/7897af3b43b10d52d86488c722bbb8dd.png)
+
+![](img/8406e151a71b64775200d95973eec67c.png)
+
+
+![](img/3f0790b804139d06f13dcacb176aa434.png)
+
+
+![](img/2fadbe66ab9d9549512712828e2e57eb.png)
+
+
+![](img/c4b2807658120a25047e58361cad8e19.png)
+
+
+![](img/e6c34be2fe09f90a8112a187883d058d.png)
+
+
+![](img/b286bb313be01a6b37f58b14f2370eeb.png)
+
+
+![](img/d0ef25d14ab928a8e523c6fc73255109.png)
+
+![](img/d7ad17239dba7de59ddec51e59e97d09.png)
+
+
+![](img/b31d875cc0914ed7a81cecf2e1fc3574.png)
+
+![](img/1635df8fff748654e508ef6d846e2f97.png)
+
+
+![](img/a3bc75dd993604ccb8b805b94a3acc9d.png)
+
+
+![](img/e0def714a4055d59c258f362b3de6072.png)
+
+
+![](img/502ab1388cae56f1220c25f8234171cd.png)
+
+
+![](img/17358de9b95485e86440ed82e00cb47a.png)
+
+
+![](img/9b532f2317693298d490ce4eba61a3fd.png)
+
+```json { "Use the attached image of the person as reference. Hyper-realistic black and white studio portrait of the young man in side profile, natural hair gently falling around his face. Strong rim light accentuating his jawline and nose, dark minimalist background. Expression thoughtful and serene, cinematic lighting creating dramatic contrast and fine photographic detail.": "請參考所附人物圖片。一張超寫實的黑白工作室肖像照，年輕男子側面入鏡，自然髮絲輕柔地垂落在臉龐周圍。強烈的輪廓光突顯了他的下顎線和鼻子，背景為深色極簡風格。表情沉思而寧靜，電影般的燈光營造出戲劇性的對比和精緻的攝影細節。", "size": "{argument name=\"image size\" default=\"1024x1024\"}", "n": "{argument name=\"number of images\" default=\"1\"}" } ```
+
+精選
+
+### 2005 年 Sony CyberShot 商場美食廣場快照提示
 一個圖像提示，重現一張早期數碼相機拍攝的購物中心美食廣場照片，其中有青少年、刺眼的閃光燈、日期戳記和 Myspace 時代的美學風格。
 
 提示詞
@@ -167,9 +247,6 @@
 [电影系列名称]： 007 一张细节丰富、45度等轴侧视角的3D Q版微缩景观模型图，生动呈现完整的 [电影系列名称] 系列，采用 C4D (Cinema 4D) 的独特的渲染风格。 整个场景构建为一组相互连接的六边形景观地台。六边形地台的总数量必须准确对应 [电影系列名称] 系列中主要电影（或剧集）的数量。 视觉中心 (Central Focus) 在模型的几何中心，放置该系列中最具标志性、最能代表整体的世界观地标或核心建筑（例如：哈利波特的霍格沃茨城堡、星球大战的死星、漫威的复仇者大厦）。围绕着这个中心建筑，悬浮着巨大的、风格化的 3D 英文总标题 "[电影系列名称]"。 独立地台 (动态内容) 围绕中心的每一个六边形地台分别代表该系列中的一部具体电影，必须包含以下要素： 经典名场面 (Famous Scenes)： 每一个地台都要复刻该部电影中最具特色、一眼即识的经典“名场面”或核心场景布局。 关键人物 (Key Characters)： 在地台上必须出现清晰可见的、最具代表性的主角和反派的Q版公仔形象，人物姿态生动，正在演绎剧情。 关键物品： 每一个地台都要复刻该部电影中最具特色、一眼即识的经典“名场面”或核心场景布局。 关键人物 (Key Characters)： 在地台上必须出现清晰可见的、最具代表性的主角和反派的Q版公仔形象，人物姿态生动，正在演绎剧情。 散落在场景中的微小但可识别的神器、载具或生物，呼应电影情节。 环境氛围: 符合该部电影主题的独特地形、植被和天气效果。 独立标题： 在每个六边形底座的前端边缘，用风格化的3D字体展示该部电影的 具体英文片名 (例如 "Harry Potter and the Sorcerer's Stone")。 整体氛围: 所有元素通过可爱的桥梁、小径或主题过渡（如能量束、魔法轨迹）相互连接。模型采用丰富逼真的 PBR 材质（风格化的木材、石头、金属、布料），边缘处理圆润柔和。场景由温暖、柔和的自然光照亮，投射出柔和的阴影，在干净、统一的纯米色背景下，呈现出一种舒适、高级的盲盒玩具质感。 保证 图中所有出现的单词拼写正确 确保电影的系列名准确 确保演员的名字和电影确实有关联
 
 ### [Detailed portrait prompt for a fem](https://x.com/lexx_aura/status/1997909307682079051)ale subject in a nighttime city setting
-
-![](img/7a9a2e7706a548b2f3850f3b33a23e4b.png)
-
 A highly detailed image generation prompt focusing on a medium close-up portrait of a young adult female subject in a city street at night. The prompt meticulously defines the subject's features (wet look hair, dewy skin, subtle makeup), apparel (black ribbed crop top), pose (leaning on a railing), environment (blurred urban cityscape with bokeh), and specific professional camera settings (Canon EOS R5, 85mm f/1.2L lens, flash photography style).
 
 提示詞
@@ -181,9 +258,6 @@ A highly detailed image generation prompt focusing on a medium close-up portrait
 A prompt shared for Nano Banana Pro, titled 'The Soft Drink Fortress', likely intended for generating an image of a fortress or structure made of soft drink cans or bottles.
 
 ### [Hyper-Realistic Neon Ti](https://x.com/limedesignmedia/status/1997810356132159724)mes Square Portrait
-
-![](img/8921fde1721129e08d17ad87fd4ee801.png)
-
 A complex JSON-structured prompt for Gemini Nano Banana Pro, designed to create a hyper-detailed, cinematic portrait of a man in Times Square, focusing on rich textures, neon lighting effects, and specific photographic parameters like shallow depth of field and micro-surface fidelity.
 
 提示詞
@@ -191,9 +265,6 @@ A complex JSON-structured prompt for Gemini Nano Banana Pro, designed to create 
 { "main_subject": "a hyper-detailed 23 -year-old man with a playful, expressive look, wearing stylish casual winter clothing with rich fabric texture and lifelike skin detail", "pose_composition": "close-up portrait capturing his playful expression, winter collar framing his face, subtle breath condensation visible in the cold air", "camera_framing": "tight close-up shot with strong facial focus, shallow depth of field, soft bokeh from Times Square lights behind him", "lighting_color_palette": "neon-lit winter tones blending cool ambient light with warm billboard reflections softly illuminating his face", "environment_background": "blurred Times Square winter nightlife, glowing signs and city lights creating a colorful bokeh backdrop", "artistic_style": "premium winter city-hyperrealism with intimate portrait emphasis, crisp facial rendering, and atmospheric urban glow", "nano_secret_tokens": "Nano-detail, 8k neon portrait crispness, sub-surface scattering, micro-surface fidelity, winter breath bloom, cinematic bokeh, rule of thirds, diffraction glints, f/1.8 aperture depth blur, pure texture rendering" }
 
 ### [9-Panel Episode ](https://x.com/kiyoshi_shin/status/1997810063319449790)Continuation Prompt
-
-![](img/0c855a8b009d260908f49e3c2b37d927.png)
-
 A simple prompt for Nano Banana Pro to generate a 9-panel grid depicting the continuation of a story or episode involving existing characters, often used for narrative progression.
 
 提示詞
@@ -201,9 +272,6 @@ A simple prompt for Nano Banana Pro to generate a 9-panel grid depicting the con
 Describe the continuation of these characters' story in a 9-panel grid.
 
 ### [D](https://x.com/iq_Huri632/status/1997808773272899831)etailed JSON-based Image Generation Prompt for Gemini Nano Banana Pro
-
-![](img/94f931732033ba5cf468e78b12f5971b.png)
-
 This is a highly structured, JSON-formatted prompt designed for the Gemini Nano Banana Pro image generation tool. It specifies a complete pipeline sequence for creating an 'Evening Festival Portrait' image, including detailed settings for subject identity preservation (using an attached image buffer), kinematics control (OpenPose), wardrobe assembly, environment staging (Outdoor Night Market), and lighting setup. It's useful for users who want precise control over every aspect of the generated image, especially when starting from a reference photo.
 
 提示詞
@@ -227,9 +295,6 @@ A prompt used to transfer the style of a reference image (likely a photo of a pe
 Draw this person in this anime cartoon style. It should follow color palette, general mood. Keep the slight dark tone overlay.
 
 ### [H](https://x.com/dotey/status/1997789829736861747)yper-realistic Digital Illustration of Four Seasons Transition
-
-![](img/a4e78738ef77be11b31a568f0f11ab35.png)
-
 A detailed image generation prompt for creating a hyper-realistic digital illustration that seamlessly depicts the transition of all four seasons—Winter, Spring, Summer, and Autumn—within a single, continuous scene. The transition flows naturally from left (Winter) to right (Autumn), maintaining a unified composition with cinematic lighting and 8K resolution.
 
 提示詞
@@ -245,9 +310,6 @@ A detailed image generation prompt designed to create a hyper-realistic digital 
 Hyper-realistic digital illustration of the historic Shanghai Bund waterfront looking across the Huangpu River to the futuristic Lujiazui district , presented as a single continuous composition showcasing the cycle of seasons. The scene flows seamlessly from left to right in a natural progression: Winter, Spring, Summer, and Autumn. The left side features cold snowy winter elements, gradually thawing into the fresh green buds and blooms of spring, then morphing into the lush vibrant vegetation and bright sunlight of summer, and finally transitioning into the golden, orange, and red hues of autumn on the far right. There are no visible dividing lines between seasons; the weather, lighting, and vegetation blend smoothly to create a unified and harmonious panorama. Rich in detail, symbolic of the passage of time, cinematic lighting, 8k resolution, highly detailed textures. --ar 4:3
 
 ### [Wes Anderson-designed X A](https://x.com/cfryant/status/1997786299252846875)pp Mobile Interface
-
-![](img/cb4d236fd6b5873c94b3d3f2dfef8644.png)
-
 An image generation prompt for creating a hyper-realistic skeuomorphic design of the X app mobile interface, reimagined in the distinctive aesthetic style of filmmaker Wes Anderson.
 
 提示詞
@@ -255,9 +317,6 @@ An image generation prompt for creating a hyper-realistic skeuomorphic design of
 The X app mobile interface if it was designed by Wes Anderson . Make the style hyper realistic skeuomorphism
 
 ### [Game of Thrones Ice and Fir](https://x.com/kate0ai/status/1997785691111989645)e Isometric Diorama
-
-![](img/6d0c74cf360e8a09978c22e0ef14003c.png)
-
 A detailed image generation prompt designed for Gemini Nano Banana Pro, creating a 45° top-down isometric miniature 3D cartoon diorama based on the central Game of Thrones theme of Ice and Fire. The prompt specifies soft textures, realistic PBR materials emphasizing glittering frost and glowing embers, and a dramatic clash of cool blue and warm orange lighting. It includes specific compositional details like a split diorama base featuring The Wall/White Walkers on one side and a dragon/burning castle on the other, along with precise text overlays and a clean background.
 
 提示詞
@@ -265,9 +324,6 @@ A detailed image generation prompt designed for Gemini Nano Banana Pro, creating
 Present a clear, 45° top-down isometric miniature 3D cartoon scene of the central thematic concept Ice and Fire from Game of Thrones , with soft refined textures, realistic PBR materials (emphasizing glittering frost contrasts against glowing embers and scaled skin), and gentle lifelike lighting that creates a dramatic clash of cool blue and warm orange light. Create a small raised diorama-style base that is split down the middle. The left side features a section of The Wall made of ice with tiny stylized White Walker figures on snowy terrain. The right side features a stylized dragon ( Drogon ) perched atop a burning castle turret, with tiny stylized Unsullied soldiers on charred ground. A crack runs down the center of the base where the ice meets the lava. Use a clean solid Neutral Slate Grey background. At the top-center, display Game of Thrones in large bold text, directly beneath it show Ice and Fire in medium text, and place the official logo associated with Game of Thrones below the subtext. All text must automatically match the background contrast (white). Composition: perfectly centered layout, square 1080x1080, ultra-clean, high-clarity diorama aesthetic.
 
 ### [D](https://x.com/NavroMedia/status/1997773519095242923)etailed JSON Prompt for Viral Close-Up Selfie Image Generation
-
-![](img/5efcc893d45f50beba69260b24bb4492.png)
-
 This is a highly detailed, structured JSON prompt designed for the 'nano banana pro' AI model, intended to generate a viral close-up selfie image. It specifies every aspect of the scene, lighting (golden hour, sunset), camera perspective (close-up, 35mm, f/2.8), and subject details (pose, facial features, hair, wardrobe) for maximum visual impact and realism.
 
 提示詞
@@ -295,9 +351,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### [德國水彩地圖，附各邦標籤 ](https://x.com/FlorianGallwitz/status/1991796624646091091)
-
-![](img/acf2b783886727491039748d4b762cd1.png)
-
 一個德語提示，用於生成一張水彩風格的德國地圖，其中所有聯邦州都以原子筆標示，適用於教育或資訊圖表風格的地圖。
 
 提示詞
@@ -307,11 +360,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### 倫敦戶外餐廳人像照，使用 Nano Banana Pro 拍攝
-
-![](img/19d5691b263114354fab78aceab42528.png)
-
-![](img/ec86eb200d18607bbafaa8efdebe1f8b.png)
-
 一張照片般真實的提示，描繪一位年輕女性在倫敦一家寧靜的戶外餐廳，時值三月清晨，天氣涼爽宜人。畫面採淺景深，呈現隨手用手機拍攝的自然氛圍。
 
 提示詞
@@ -321,9 +369,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### 江戶時代浮世繪風格的現代場景再詮釋
-
-![](img/b9eccb7f751589aab823093ec2338660.png)
-
 一個高度結構化的圖像提示，用於描繪一個現代場景，重新構想為日本江戶時代的浮世繪木刻版畫，並詳細指導時代錯誤的科技、構圖、紋理和色彩。
 
 提示詞
@@ -333,11 +378,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### 2005 年 Sony CyberShot 商場美食廣場快照提示
-
-![](img/7897af3b43b10d52d86488c722bbb8dd.png)
-
-![](img/8406e151a71b64775200d95973eec67c.png)
-
 一個圖像提示，重現一張早期數碼相機拍攝的購物中心美食廣場照片，其中有青少年、刺眼的閃光燈、日期戳記和 Myspace 時代的美學風格。
 
 提示詞
@@ -345,9 +385,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 一張用 2005 年 Sony CyberShot 拍攝的低解析度數位相片。一群青少年在購物中心的美食廣場閒逛。刺眼的機頂閃光燈，高光部分略微過曝，陰影處有數位雜訊。由於早期數位處理，皮膚紋理看起來有點蠟質。右下角有一個橘色日期戳記，上面寫著「 04/12/2005 」。隨性、尷尬的角度，充滿 Myspace 相片美學。
 
 ### [Detailed portrait prompt for a fem](https://x.com/lexx_aura/status/1997909307682079051)ale subject in a nighttime city setting
-
-![](img/3f0790b804139d06f13dcacb176aa434.png)
-
 A highly detailed image generation prompt focusing on a medium close-up portrait of a young adult female subject in a city street at night. The prompt meticulously defines the subject's features (wet look hair, dewy skin, subtle makeup), apparel (black ribbed crop top), pose (leaning on a railing), environment (blurred urban cityscape with bokeh), and specific professional camera settings (Canon EOS R5, 85mm f/1.2L lens, flash photography style).
 
 提示詞
@@ -355,9 +392,6 @@ A highly detailed image generation prompt focusing on a medium close-up portrait
 { "subject": { "gender": "female", "age": "young adult", "hair": { "color": " dark brown ", "texture": "wet look", "style": "long, wavy, messy, loose strands framing face" }, "eyes": { "color": " green/hazel ", "makeup": "subtle winged eyeliner, natural eyeshadow" }, "skin": { "tone": "light/fair", "texture": "smooth, dewy finish, high sheen on shoulder and cheekbones", "makeup": "soft contour, glossy lips" }, "expression": " soft smile, direct eye contact, alluring " }, "apparel": { "top": { "type": "crop top", "color": " black ", "material": "ribbed fabric", "fit": "tight", "straps": "thin straps" }, "bottom": { "visible": "waistband", "color": "black" } }, "pose": { "action": "leaning forward", "arms": "resting on a railing", "angle": "3/4 portrait view" }, "environment": { "setting": "city street at night", "background": "blurred urban cityscape, bokeh streetlights, car headlights, building lights", "atmosphere": "nightlife, candid" }, "lighting": { "type": "flash photography style mixed with ambient street lighting", "highlights": "strong specular highlights on skin (shoulder, forehead, nose)", "shadows": "soft shadows defining facial features" }, "camera_settings": { "shot_type": "medium close-up", "depth_of_field": "shallow", "focus": "sharp on face" }, "camera_details": { "camera_model": " Canon EOS R5 Mirrorless Digital Camera ", "lens": " Canon RF 85mm f/1.2L USM Lens ", "aperture": "f/1.4", "iso": "1600", "shutter_speed": "1/100s", "focal_length": "85mm", "white_balance": "Auto (AWB) with slight tungsten warmth", "flash_type": "Direct on-camera flash with diffuser", "image_format": "RAW", "color_profile": "Adobe RGB" } }
 
 ### [Hyper-Realistic Neon Ti](https://x.com/limedesignmedia/status/1997810356132159724)mes Square Portrait
-
-![](img/2fadbe66ab9d9549512712828e2e57eb.png)
-
 A complex JSON-structured prompt for Gemini Nano Banana Pro, designed to create a hyper-detailed, cinematic portrait of a man in Times Square, focusing on rich textures, neon lighting effects, and specific photographic parameters like shallow depth of field and micro-surface fidelity.
 
 提示詞
@@ -365,9 +399,6 @@ A complex JSON-structured prompt for Gemini Nano Banana Pro, designed to create 
 { "main_subject": "a hyper-detailed 23 -year-old man with a playful, expressive look, wearing stylish casual winter clothing with rich fabric texture and lifelike skin detail", "pose_composition": "close-up portrait capturing his playful expression, winter collar framing his face, subtle breath condensation visible in the cold air", "camera_framing": "tight close-up shot with strong facial focus, shallow depth of field, soft bokeh from Times Square lights behind him", "lighting_color_palette": "neon-lit winter tones blending cool ambient light with warm billboard reflections softly illuminating his face", "environment_background": "blurred Times Square winter nightlife, glowing signs and city lights creating a colorful bokeh backdrop", "artistic_style": "premium winter city-hyperrealism with intimate portrait emphasis, crisp facial rendering, and atmospheric urban glow", "nano_secret_tokens": "Nano-detail, 8k neon portrait crispness, sub-surface scattering, micro-surface fidelity, winter breath bloom, cinematic bokeh, rule of thirds, diffraction glints, f/1.8 aperture depth blur, pure texture rendering" }
 
 ### [9-Panel Episode ](https://x.com/kiyoshi_shin/status/1997810063319449790)Continuation Prompt
-
-![](img/c4b2807658120a25047e58361cad8e19.png)
-
 A simple prompt for Nano Banana Pro to generate a 9-panel grid depicting the continuation of a story or episode involving existing characters, often used for narrative progression.
 
 提示詞
@@ -383,9 +414,6 @@ This prompt is used with the Nano Banana Pro image generation tool to bring out 
 A silly doodle of a cat wearing a tiny hat
 
 ### [H](https://x.com/dotey/status/1997789829736861747)yper-realistic Digital Illustration of Four Seasons Transition
-
-![](img/e6c34be2fe09f90a8112a187883d058d.png)
-
 A detailed image generation prompt for creating a hyper-realistic digital illustration that seamlessly depicts the transition of all four seasons—Winter, Spring, Summer, and Autumn—within a single, continuous scene. The transition flows naturally from left (Winter) to right (Autumn), maintaining a unified composition with cinematic lighting and 8K resolution.
 
 提示詞
@@ -393,9 +421,6 @@ A detailed image generation prompt for creating a hyper-realistic digital illust
 超写实数字插画风格，以【 上海外滩 】为主题，呈现四季流转于同一幅完整画面之中。从画面左至右，自然过渡地依次展现冬、春、夏、秋四季变迁： 画面最左侧为冬季，呈现寒冷、冰雪覆盖的景象；逐渐向右过渡，冰雪融化，万物初醒，新芽萌发，春意盎然；继续推进，植被变得浓郁茂盛，阳光炽烈明媚，夏季盛景跃然纸上；最后，场景平缓地过渡至右侧的秋季，树叶逐渐转为金黄、橙红，体现出秋日的丰富色彩与氛围。 画面整体无明显分界线，各季节间的气候、光影和植被状态自然融合，过渡流畅，构成一幅充满时间流动感和象征意义的统一画面。细节丰富逼真，电影级质感光影表现，8K超高清解析度，纹理细腻精致，画面比例为4:3。
 
 ### [Wes Anderson-designed X A](https://x.com/cfryant/status/1997786299252846875)pp Mobile Interface
-
-![](img/b286bb313be01a6b37f58b14f2370eeb.png)
-
 An image generation prompt for creating a hyper-realistic skeuomorphic design of the X app mobile interface, reimagined in the distinctive aesthetic style of filmmaker Wes Anderson.
 
 提示詞
@@ -413,11 +438,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### 手繪風格標題圖片提示，源自照片
-
-![](img/d0ef25d14ab928a8e523c6fc73255109.png)
-
-![](img/d7ad17239dba7de59ddec51e59e97d09.png)
-
 為一張手繪風格的標題圖片提供提示，內容為一個人介紹 Nano Banana Pro
 
 提示詞
@@ -427,11 +447,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### [黑板風格的 AI 新聞摘要 ](https://x.com/okknews/status/1992173611520868372)
-
-![](img/b31d875cc0914ed7a81cecf2e1fc3574.png)
-
-![](img/1635df8fff748654e508ef6d846e2f97.png)
-
 將 AI 新聞內容轉化為手繪教師風格黑板圖並附有解釋的日文提示。
 
 提示詞
@@ -441,9 +456,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### [火車廣告風格的書籍廣告圖片 ](https://x.com/kawai_design/status/1992142466255114727)
-
-![](img/a3bc75dd993604ccb8b805b94a3acc9d.png)
-
 用於生成 16:9 商業書籍風格廣告的詳細日文提示，其中包含特定書籍圖片和日文文案要點。
 
 提示詞
@@ -453,9 +465,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### 根據參考圖片拍攝的奢華簡約產品攝影
-
-![](img/e0def714a4055d59c258f362b3de6072.png)
-
 一個用於生成高端、極簡主義商業產品攝影的提示，風格仿照奢侈品牌廣告，並以上傳的核心產品參考圖片為基礎。
 
 提示詞
@@ -465,9 +474,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### [夢想日記：卡比吹泡泡 ](https://x.com/songguoxiansen/status/1991795708308189668)
-
-![](img/502ab1388cae56f1220c25f8234171cd.png)
-
 粉紅色 Kirby 睡在星星上，在柔和的雲朵和糖果中吹著彩虹泡泡，一幅夢幻日記風格插畫的可愛提示。
 
 提示詞
@@ -477,9 +483,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### [詳細的鏡中自拍御宅族房間場景 ](https://x.com/dotey/status/1976485558319722711)
-
-![](img/17358de9b95485e86440ed82e00cb47a.png)
-
 一個非常詳細的 Nano Banana 提示，描述一位女性在藍色調御宅族電腦角落裡自拍，包含角色、環境、燈光、相機和負面提示的完整規格。
 
 提示詞
@@ -489,9 +492,6 @@ You + 2025 F1 champ Lando Norris in one ultra-realistic selfie 🏆📸
 精選
 
 ### [黑白工作室側身肖像提示 ](https://x.com/ChillaiKalan__/status/1992790080503902651)
-
-![](img/9b532f2317693298d490ce4eba61a3fd.png)
-
 一個簡潔的 Nano Banana Pro 提示，用於生成一張超寫實的年輕男子側面黑白攝影棚肖像，使用隨附的參考圖片並指定尺寸和輸出數量。
 
 提示詞

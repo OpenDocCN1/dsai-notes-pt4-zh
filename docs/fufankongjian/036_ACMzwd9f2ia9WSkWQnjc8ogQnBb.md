@@ -106,6 +106,8 @@ pip install qwen-vl-utils
 
 通过以下代码可以实现基于transformers框架和qwen_vl_utils加速工具支持下的多模态模型对话。注意：运行改代码需要修改模型调用地址为本地保存文件夹的绝对路径，并修改输入图像的地址和文字prompt。
 
+                &quot;image&quot;: &quot;https://qianwen-res.oss-cn-beijing.aliyuncs.com/QVQ/demo.png&quot;,
+
 ```
 from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
@@ -135,7 +137,6 @@ messages = [
         &quot;content&quot;: [
             {
                 &quot;type&quot;: &quot;image&quot;,
-                &quot;image&quot;: &quot;https://qianwen-res.oss-cn-beijing.aliyuncs.com/QVQ/demo.png&quot;,
             },
             {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;What value should be filled in the blank space?&quot;},
         ],

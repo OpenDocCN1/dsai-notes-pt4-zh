@@ -77,6 +77,8 @@ print(completion.choices[0].message.content)
 
 这里转化图片为 url 的工具：https://www.superbed.cn/
 
+                        &quot;url&quot;: &quot;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&quot;,
+
 ```
 from openai import OpenAI
 
@@ -95,7 +97,6 @@ response = client.chat.completions.create(
                 {
                     &quot;type&quot;: &quot;image_url&quot;,
                     &quot;image_url&quot;: {
-                        &quot;url&quot;: &quot;https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg&quot;,
                     },
                 },
             ],
@@ -421,6 +422,8 @@ chat(thinking_mode=False)
 
 具体细节:https://zhuanlan.zhihu.com/p/1916892757294843774
 
+                        &quot;url&quot;: &quot;https://pic1.imgdb.cn/item/68d24759c5157e1a882b2505.jpg&quot;,
+
 ```
 from openai import OpenAI
 
@@ -439,7 +442,6 @@ response = client.chat.completions.create(
                 {
                     &quot;type&quot;: &quot;image_url&quot;,
                     &quot;image_url&quot;: {
-                        &quot;url&quot;: &quot;https://pic1.imgdb.cn/item/68d24759c5157e1a882b2505.jpg&quot;,
                     },
                 },
             ],
@@ -460,6 +462,8 @@ print(response.choices[0].message.content)
 
 具体细节:https://www.chembk.com/cn/chem/2,5-%E4%BA%8C%E7%94%B2%E5%9F%BA%E5%93%8C%E5%97%AA(%E9%A1%BA%E5%BC%8F)
 
+                        &quot;url&quot;: &quot;https://pic1.imgdb.cn/item/68d23c82c5157e1a882ad47f.png&quot;,
+
 ```
 
 from openai import OpenAI
@@ -479,7 +483,6 @@ response = client.chat.completions.create(
                 {
                     &quot;type&quot;: &quot;image_url&quot;,
                     &quot;image_url&quot;: {
-                        &quot;url&quot;: &quot;https://pic1.imgdb.cn/item/68d23c82c5157e1a882ad47f.png&quot;,
                     },
                 },
             ],

@@ -265,6 +265,8 @@ web_search = TavilySearchResults(max_results=2)
 web_search?
 ```
 
+                        &#x27;https://www.amny.com/wp-content/uploads/2023/06/AP23162622181176-1200x800.jpg&#x27;,
+
 ```
 [31mType:[39m           TavilySearchResults
 [31mString form:[39m    max_results=2 api_wrapper=TavilySearchAPIWrapper(tavily_api_key=SecretStr(&#x27;**********&#x27;))
@@ -326,7 +328,6 @@ Tool that queries the Tavily Search API and gets back json.
                     &#x27;follow_up_questions&#x27;: None,
                     &#x27;answer&#x27;: &#x27;Novak ...&#x27;,
                     &#x27;images&#x27;: [
-                        &#x27;https://www.amny.com/wp-content/uploads/2023/06/AP23162622181176-1200x800.jpg&#x27;,
                         ...
                         ],
                     &#x27;results&#x27;: [
@@ -346,7 +347,6 @@ Novak ...&#x27;
                 name=&#x27;tavily_search_results_json&#x27;,
             )
 
-    
 [31mInit docstring:[39m
 Initialize the tool.
 

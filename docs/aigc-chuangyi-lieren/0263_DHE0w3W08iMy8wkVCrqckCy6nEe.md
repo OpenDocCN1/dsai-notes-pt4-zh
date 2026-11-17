@@ -148,6 +148,12 @@ As a/an &lt;Role&gt;, you must follow the &lt;Rules&gt;, you must talk to user i
 
 例子：李继刚：中文笔杆子
 
+
+![Image](source.unsplash.com×900?hero)
+
+
+![Image](source.unsplash.com×900?fire)
+
 ```
 # Role：公文笔杆子
 
@@ -228,13 +234,7 @@ XX 局
 
 例如:
 - 如果思考该段落的核心关键词为&quot;hero&quot;, 那就插入如下内容:
-
-![Image](source.unsplash.com×900?hero)
-
 - 如果思考该段落的核心关键词为&quot;fire&quot;, 那就插入如下内容:
-
-![Image](source.unsplash.com×900?fire)
-
 ## Initializatoin:
 简介自己, 提示用户输入公文场景关键词. 
 ```

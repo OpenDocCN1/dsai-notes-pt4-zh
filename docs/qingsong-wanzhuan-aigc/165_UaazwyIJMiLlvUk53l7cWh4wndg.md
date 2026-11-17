@@ -297,8 +297,9 @@ genai.configure(api_key=GOOGLE_API_KEY)
 
 1.  准备要上传的示例图片：
 
-```
   curl -o image.jpg https://storage.googleapis.com/generativeai-downloads/images/jetpack.jpg
+
+```
 ```
 
 1.  使用 [media.upload](https://ai.google.dev/api/rest/v1beta/media/upload?hl=zh-cn) 上传该文件，以便通过其他 API 调用访问它：

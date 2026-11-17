@@ -2449,6 +2449,8 @@ client.fine_tuning.jobs.create(
 
 📌 示**例：训练模型识别奶酪种类**
 
+            &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/3/36/Danbo_Cheese.jpg&quot;
+
 ```
 {
   &quot;messages&quot;: [
@@ -2458,7 +2460,6 @@ client.fine_tuning.jobs.create(
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/3/36/Danbo_Cheese.jpg&quot;
           }
         }
       ]

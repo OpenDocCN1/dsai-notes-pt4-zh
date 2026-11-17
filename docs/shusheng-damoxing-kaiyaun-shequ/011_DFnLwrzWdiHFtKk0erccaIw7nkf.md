@@ -52,6 +52,8 @@ print(completion.choices[0].message.content)
 
 ### 输入图像为 url
 
+                        &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;,
+
 ```
 from openai import OpenAI
 
@@ -70,7 +72,6 @@ response = client.chat.completions.create(
                 {
                     &quot;type&quot;: &quot;image_url&quot;,
                     &quot;image_url&quot;: {
-                        &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;,
                     },
                 },
             ],

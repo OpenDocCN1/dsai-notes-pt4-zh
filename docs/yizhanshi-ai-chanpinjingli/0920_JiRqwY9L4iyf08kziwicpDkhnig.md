@@ -148,6 +148,10 @@ name,title,Yes/No（大小写均可）
 
 添加代码节点，输入、输出如下图
 
+        &quot;https://p9-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/90b1a6a779c34ca08a95f403d2e2a125.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1783956442&amp;x-signature=j2mzagcgwSFolPTryRKrhbo3BBo%3D&amp;x-wf-file_name=%E8%93%9D%E8%89%B2.png&quot;,
+        &quot;https://p26-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/7e3e1710e06d4e49a52b38dee6c15976.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1783956443&amp;x-signature=IR9g00OmYQtCTiHgsoScWtSUe5E%3D&amp;x-wf-file_name=%E6%9C%AA%E6%A0%87%E9%A2%98-1.png&quot;,
+        &quot;https://p26-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/2905ee52ea334d198254a73b6efdb94e.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1783956443&amp;x-signature=kJLsaaNp1%2BCROGzTKC0euW8R7bI%3D&amp;x-wf-file_name=%E7%B4%AB%E8%89%B2.png&quot;
+
 ```
 import random
 
@@ -157,9 +161,6 @@ async def main(args: Args) -&gt; Output:
 
     # 3 个候选 url（请替换成你的真实地址）
     url_pool = [
-        &quot;https://p9-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/90b1a6a779c34ca08a95f403d2e2a125.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1783956442&amp;x-signature=j2mzagcgwSFolPTryRKrhbo3BBo%3D&amp;x-wf-file_name=%E8%93%9D%E8%89%B2.png&quot;,
-        &quot;https://p26-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/7e3e1710e06d4e49a52b38dee6c15976.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1783956443&amp;x-signature=IR9g00OmYQtCTiHgsoScWtSUe5E%3D&amp;x-wf-file_name=%E6%9C%AA%E6%A0%87%E9%A2%98-1.png&quot;,
-        &quot;https://p26-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/2905ee52ea334d198254a73b6efdb94e.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1783956443&amp;x-signature=kJLsaaNp1%2BCROGzTKC0euW8R7bI%3D&amp;x-wf-file_name=%E7%B4%AB%E8%89%B2.png&quot;
     ]
 
     # 为每个对象随机加一个 url

@@ -211,6 +211,8 @@ touch /root/vllm_test/vllm_api_demo.py
 
 然后把调用api的python代码，复制了粘贴进vllm_api_demo.py里：
 
+image_url = &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;
+
 ```
 from openai import OpenAI
 
@@ -223,8 +225,6 @@ client = OpenAI(
 )
 
 # Single-image input inference
-image_url = &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;
-
 # models.list()返回一个模型列表，每个模型都有一个id属性
 model_name = client.models.list().data[0].id
 

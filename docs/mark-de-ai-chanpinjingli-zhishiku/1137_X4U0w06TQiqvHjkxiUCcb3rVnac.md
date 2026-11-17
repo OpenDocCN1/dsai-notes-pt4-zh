@@ -2,6 +2,13 @@
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/OVccdpcxCol4tGxvqUFcwnUrnRe](https://qqs7y1hozd1.feishu.cn/docx/OVccdpcxCol4tGxvqUFcwnUrnRe)
 
+        &quot;tesla.png&quot;: &quot;https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbef936e6-3efa-43b3-88d7-7ec620cdb33b_2744x1539.png&quot;,
+        &quot;netflix.png&quot;: &quot;https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F23bd84c9-5b62-4526-b467-3088e27e4193_2744x1539.png&quot;,
+        &quot;nike.png&quot;: &quot;https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa5cd33ba-ae1a-42a8-a254-d85e690d9870_2741x1541.png&quot;,
+        &quot;google.png&quot;: &quot;https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F395dd3b9-b38e-4d1f-91bc-d37b642ee920_2741x1541.png&quot;,
+        &quot;accenture.png&quot;: &quot;https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F08b2227c-7dc8-49f7-b3c5-13cab5443ba6_2741x1541.png&quot;,
+        &quot;tecent.png&quot;: &quot;https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0ec8448c-c4d1-4aab-a8e9-2ddebe0c95fd_2741x1541.png&quot;
+
 ```
 import requests
 import os
@@ -34,7 +41,6 @@ with st.sidebar:
     if not google_api_key:
         st.warning(&quot;Please enter your Google API key to proceed.&quot;)
     st.markdown(&quot;---&quot;)
-
 
 # --- Initialize API Clients ---
 co = None
@@ -227,12 +233,6 @@ def download_and_embed_sample_images(_cohere_client) -&gt; tuple[list[str], np.n
     &quot;&quot;&quot;Downloads sample images and computes their embeddings using Cohere&#x27;s Embed-4 model.&quot;&quot;&quot;
     # Several images from https://www.appeconomyinsights.com/
     images = {
-        &quot;tesla.png&quot;: &quot;https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbef936e6-3efa-43b3-88d7-7ec620cdb33b_2744x1539.png&quot;,
-        &quot;netflix.png&quot;: &quot;https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F23bd84c9-5b62-4526-b467-3088e27e4193_2744x1539.png&quot;,
-        &quot;nike.png&quot;: &quot;https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa5cd33ba-ae1a-42a8-a254-d85e690d9870_2741x1541.png&quot;,
-        &quot;google.png&quot;: &quot;https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F395dd3b9-b38e-4d1f-91bc-d37b642ee920_2741x1541.png&quot;,
-        &quot;accenture.png&quot;: &quot;https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F08b2227c-7dc8-49f7-b3c5-13cab5443ba6_2741x1541.png&quot;,
-        &quot;tecent.png&quot;: &quot;https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0ec8448c-c4d1-4aab-a8e9-2ddebe0c95fd_2741x1541.png&quot;
     }
 
     # Prepare folders

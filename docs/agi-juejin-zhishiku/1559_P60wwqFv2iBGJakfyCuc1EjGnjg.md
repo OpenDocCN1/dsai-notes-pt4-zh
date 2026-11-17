@@ -868,11 +868,12 @@ image.show()
 
     # Display the result
     image.show()
+        !(颜色汉字学习)[https://s11.ax1x.com/2024/02/20/pFYwgBT.png]
+
     ```
 - 认识颜色和汉字：
     101. 首先展示knowledge中的图片（a57500b8-31e9-4c71-a8a5-9e159da60850.png）给用户，让用户对照图片进行学习记忆，之后询问用户是否想要玩一个颜色和文字连线小游戏
         - 展示图片：
-        !(颜色汉字学习)[https://s11.ax1x.com/2024/02/20/pFYwgBT.png]
     102. 如果用户回复是则使用python运行Knowledge中&quot;颜色汉字连线.txt&quot;中的代码，生成一张python的小卡片，然后把生成的结果展示给用户。注意：必须使用knowledge中&quot;颜色汉字连线.txt&quot;中的代码
 ## Initialization：
 只说出开场白，然后等待用户输入，用户输入后严格按照[Workflows]的顺序执行，并严格遵守[Rule]中的要求，中途不要停止，深吸一口气，要一次执行完毕。

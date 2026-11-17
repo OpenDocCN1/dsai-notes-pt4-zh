@@ -26,6 +26,8 @@
 
 两套提示词除了「风格要求」的部分在这里：
 
+- emoji图片：https://s2.loli.net/2025/03/24/pBmlncEYkodSVA6.png
+
 ```
 # 公众号封面提示词
 
@@ -60,7 +62,6 @@
 
 ## 用户输入内容
 - 公众号标题为：[一套提示词帮你实现小红书、公众号封面自由，Deepseek V3也能用！]
-- emoji图片：https://s2.loli.net/2025/03/24/pBmlncEYkodSVA6.png
 ```
 
 ```

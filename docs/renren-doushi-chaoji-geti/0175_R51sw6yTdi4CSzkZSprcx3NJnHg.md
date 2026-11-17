@@ -417,10 +417,11 @@ Output Parser Schema 配置：
 
 **输出字段示例：**
 
+    &quot;url&quot;: &quot;&lt;https://yunwu.ai/generated/image123.png&gt;&quot;
+
 ```
 {
   &quot;data&quot;: [{
-    &quot;url&quot;: &quot;&lt;https://yunwu.ai/generated/image123.png&gt;&quot;
   }]
 }
 ```
@@ -461,11 +462,12 @@ Output Parser Schema 配置：
 
 **输出结构示例：**
 
+  &quot;url&quot;: &quot;&lt;https://yunwu.ai/generated/image123.png&gt;&quot;
+
 ```
 {
   &quot;scene_tag&quot;: &quot;Act I-KF01&quot;,
   &quot;img_prompt&quot;: &quot;forest scene with magical light...&quot;,
-  &quot;url&quot;: &quot;&lt;https://yunwu.ai/generated/image123.png&gt;&quot;
 }
 ```
 
@@ -554,10 +556,11 @@ Output Parser Schema 配置：
 
 **输出结构示例：**
 
+  &quot;url&quot;: &quot;&lt;https://yunwu.ai/generated/image123.png&gt;&quot;,
+
 ```
 {
   &quot;scene_tag&quot;: &quot;Act I-KF01&quot;,
-  &quot;url&quot;: &quot;&lt;https://yunwu.ai/generated/image123.png&gt;&quot;,
   &quot;video_prompt&quot;: &quot;girl crouches down, reaches toward stone, slow dolly-in&quot;
 }
 ```

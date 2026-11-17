@@ -1549,6 +1549,8 @@ DALL-E 生成的图像是原创的；不是从特选图像目录中检索的。 
 
 操作成功后，将返回类似于以下 JSON 的响应：
 
+                &quot;url&quot;: &quot;https://dalleproduse.....png&quot;
+
 ```
 {
     &quot;created&quot;: 1686780744,
@@ -1558,7 +1560,6 @@ DALL-E 生成的图像是原创的；不是从特选图像目录中检索的。 
         &quot;created&quot;: 1686780744,
         &quot;data&quot;: [
             {
-                &quot;url&quot;: &quot;https://dalleproduse.....png&quot;
             }
         ]
     },

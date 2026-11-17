@@ -316,6 +316,9 @@ ssh -p 37367 root@ssh.intern-ai.org.cn -CNg -L {本地机器_PORT}:127.0.0.1:{�
 
 我们创建一个hello_world.py文件，在文件中填入以下内容：
 
+                &lt;img src=&quot;https://intern-ai.org.cn/assets/headerLogo-4ea34f23.svg&quot; alt=&quot;Logo&quot; width=&quot;20%&quot; style=&quot;border-radius: 5px;&quot;&gt;
+                    &lt;img src=&quot;https://oss.lingkongstudy.com.cn/blog/202406301604074.jpg&quot; alt=&quot;Logo&quot; width=&quot;20%&quot; style=&quot;border-radius: 5px;&quot;&gt;
+
 ```
 import socket
 import re
@@ -334,14 +337,12 @@ with gr.Blocks(gr.themes.Soft()) as demo:
     html_code = f&quot;&quot;&quot;
             &lt;p align=&quot;center&quot;&gt;
             &lt;a href=&quot;https://intern-ai.org.cn/home&quot;&gt;
-                &lt;img src=&quot;https://intern-ai.org.cn/assets/headerLogo-4ea34f23.svg&quot; alt=&quot;Logo&quot; width=&quot;20%&quot; style=&quot;border-radius: 5px;&quot;&gt;
             &lt;/a&gt;
             &lt;/p&gt;
             &lt;h1 style=&quot;text-align: center;&quot;&gt;☁️ Welcome {get_hostname()} user, welcome to the ShuSheng LLM Practical Camp Course!&lt;/h1&gt;
             &lt;h2 style=&quot;text-align: center;&quot;&gt;😀 Let’s go on a journey through ShuSheng Island together.&lt;/h2&gt;
             &lt;p align=&quot;center&quot;&gt;
                 &lt;a href=&quot;https://github.com/InternLM/Tutorial/blob/camp3&quot;&gt;
-                    &lt;img src=&quot;https://oss.lingkongstudy.com.cn/blog/202406301604074.jpg&quot; alt=&quot;Logo&quot; width=&quot;20%&quot; style=&quot;border-radius: 5px;&quot;&gt;
                 &lt;/a&gt;
             &lt;/p&gt;
 

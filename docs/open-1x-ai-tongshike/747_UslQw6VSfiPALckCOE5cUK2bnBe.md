@@ -90,8 +90,9 @@
 
 图片链接提取提示词
 
-```
 提取json格式{{input}}所有链接中的第一个链接，直接给出干干净净的url链接，比如：https://www.1ai.net/wp-content/uploads/thumb/2025/02/fill_w720_h480_g0_mark_9371bfaaj00sryokh002cd000p400eop.jpg
+
+```
 ```
 
 接着利用，**调**整图片的节点，将url属性的图片内容转化为image属性的图片（因为url节点在画板中是string的格式，所以必须转为img格式）

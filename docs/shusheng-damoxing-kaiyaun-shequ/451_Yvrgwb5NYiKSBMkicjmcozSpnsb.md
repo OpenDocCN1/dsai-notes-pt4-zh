@@ -202,13 +202,14 @@ pip show lmdeploy
 
 inference.py
 
+    image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
+
 ```
 fro**m lm**deploy import pipeline, PytorchEngineConfig
 from lmdeploy.vl import load_image
 if name == &quot;__main__&quot;:
     pipe = pipeline(&#x27;/home/ma-user/work/pretrainmodel/InternVL2-8B&#x27;,
                     backend_config=PytorchEngineConfig(tp=1, device_type=&#x27;ascend&#x27;))
-    image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
     response = pipe((&#x27;describe this image&#x27;, image))
     print(response)
 ```

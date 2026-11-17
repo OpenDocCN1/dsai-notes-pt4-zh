@@ -290,17 +290,18 @@ Content-Type: application/json
                 draw.text((x_positions[i], y_position_label), texts_label[i], fill=&#x27;black&#x27;, font=font_label)
 
             image.show()
+           ![对应的图片](strokeImage)
+           ![对应的图片](strokeImage)
+           ![对应的图片](strokeImage)
+
             ```
 3. 询问：询问用户是否一定学习完毕？是否想要更加深入的了解和学习？然后等待用户输入。
 4. 书写：利用 Action[ptcskv5x9m.us.aircode.run]使用参数&quot;char&quot;对这个字进行搜索。
         301. 结构：展示搜索结果 json 中最后一项中的参数，把用户的结构(struct)、偏旁部首（radical）、由几部分组成（radicalCount），用幽默有趣的方式告知孩子。
         302.  格式案例（除最后一个返回值外，使用每一个返回值的参数shape、type、name、strokeImage）：
            1. 竖（丨）: 平笔
-           ![对应的图片](strokeImage)
            2. 横折（𠃍）: 折笔
-           ![对应的图片](strokeImage)
            3. 横（一）: 平笔
-           ![对应的图片](strokeImage)
            ...
 5. 多音字解释：根据上述的返回值中，关于多音字的返回值(dyz),分别展示给用户，同时针对每一个音，给出这个字的所有解释。
         - 用7-8岁孩子能听懂的方式来解释，重点在于其中使用的汉字尽量简单，同时提到的内容是孩子生活中能接触到，能理解的。给出具体使用环境。
@@ -483,12 +484,12 @@ pinyin:[拼音]
 1. 丨 
 2. 亅
 ....
-```
-
-**效果展示**
 
 ![](img/675d3f745c29688700c7d71163bf4b50.png)
 
+```
+
+**效果展示**
 ##  **三）笔画查字法 **
 
 这个逻辑也比较简单，直接调用插件就好啦
@@ -528,6 +529,16 @@ strokes:[笔画]
 
 **Agent 提示词**
 
+
+![李](img/8b6cc3b5f72340cd6ca42abd3f2bd9f2.png)
+
+-![李字古今变化图](img/62dabd35be8468d6b187dd053d17a2fc.png)
+
+![pngUrl]([pngUrl])
+
+![pngUrl2](img/97651b7b3e84f26a3d054d554f1121c9.png)
+![pngUrl3](img/4314089b0ce694e385ed889ff3327b01.png)
+
 ```
 # Role:
 等待用户输入一个单独的汉字。当用户输入一个汉字后，按照[工作流]的要求执行。
@@ -541,16 +552,11 @@ strokes:[笔画]
 示例：
 ---
 ## 今天我们要了解的汉字是：李
-
-![李](img/8b6cc3b5f72340cd6ca42abd3f2bd9f2.png)
-
 ## 一个故事快速记忆汉字：
 
 - 只保留故事，去掉故事无关的内容
 
 ## 汉字变化图：
--![李字古今变化图](img/62dabd35be8468d6b187dd053d17a2fc.png)
-
 ## 汉字变化过程讲解：
 - 只保留讲解的过程
 
@@ -559,12 +565,8 @@ strokes:[笔画]
 - 根据输出的格式进行自行整理后输出
 格式：
 1. [name]([Shape]):[type]
-![pngUrl]([pngUrl])
-
 2.点(、):平笔
-![pngUrl2](img/97651b7b3e84f26a3d054d554f1121c9.png)
 3.点(、):平笔
-![pngUrl3](img/4314089b0ce694e385ed889ff3327b01.png)
 ...（必须完整展示出所有笔画，不能跳过任何一个）
 
 2. 介绍

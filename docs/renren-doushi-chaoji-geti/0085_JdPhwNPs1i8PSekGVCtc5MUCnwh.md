@@ -1286,6 +1286,9 @@ ChatGPT输出了“同步直返”和“队列三段式”两种CURL的调试方
 
 点击“Import”按钮导入ChatGPT给你输出的“提交请求”的CURL语句：
 
+            &quot;https://storage.googleapis.com/falserverless/example_inputs/nano-banana-edit-input.png&quot;,
+            &quot;https://storage.googleapis.com/falserverless/example_inputs/nano-banana-edit-input-2.png&quot;
+
 ```
 curl -X POST &quot;https://queue.fal.run/fal-ai/gemini-25-flash-image/edit&quot; \
     -H &quot;Authorization: Key $FAL_KEY&quot; \
@@ -1293,8 +1296,6 @@ curl -X POST &quot;https://queue.fal.run/fal-ai/gemini-25-flash-image/edit&quot;
     -d &#x27;{
         &quot;prompt&quot;: &quot;make a photo of the man driving the car down the california coastline&quot;,
         &quot;image_urls&quot;: [
-            &quot;https://storage.googleapis.com/falserverless/example_inputs/nano-banana-edit-input.png&quot;,
-            &quot;https://storage.googleapis.com/falserverless/example_inputs/nano-banana-edit-input-2.png&quot;
         ],
         &quot;num_images&quot;: 1,
         &quot;output_format&quot;: &quot;jpeg&quot;

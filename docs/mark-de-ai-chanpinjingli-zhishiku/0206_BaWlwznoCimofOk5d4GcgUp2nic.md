@@ -186,6 +186,8 @@
 
 1.  可视化分割结果，显示每个区域的颜色或边界。
 
+image = io.imread(&#x27;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/June_odd-eyed-cat.jpg/800px-June_odd-eyed-cat.jpg&#x27;)
+
 ```
 import numpy as np
 import matplotlib.pyplot as plt
@@ -200,7 +202,6 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 # 1. 加载图像并预处理
 # 使用 skimage 加载一张图像，缩放至适合计算的大小
-image = io.imread(&#x27;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/June_odd-eyed-cat.jpg/800px-June_odd-eyed-cat.jpg&#x27;)
 image = rescale(image, 0.2, multichannel=True)  # 缩小图像以降低计算量
 rows, cols, channels = image.shape
 

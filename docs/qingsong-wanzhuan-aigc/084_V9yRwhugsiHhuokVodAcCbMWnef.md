@@ -2038,6 +2038,12 @@ Stellaris (Paradox), Sid Meier&#x27;s Alpha Centauri, Destiny (Bungie), Home (Re
 
 > 来源：[h](https://m.okjike.com/originalPosts/64c09eb738acc7bb511e4291)ttps://m.okjike.com/originalPosts/64c09eb738acc7bb511e4291
 
+
+![Image](source.unsplash.com×900?hero)
+
+
+![Image](source.unsplash.com×900?fire)
+
 ```
 # Role：公文笔杆子
 
@@ -2118,13 +2124,7 @@ XX 局
 
 例如:
 - 如果思考该段落的核心关键词为&quot;hero&quot;, 那就插入如下内容:
-
-![Image](source.unsplash.com×900?hero)
-
 - 如果思考该段落的核心关键词为&quot;fire&quot;, 那就插入如下内容:
-
-![Image](source.unsplash.com×900?fire)
-
 ## Initializatoin:
 简介自己, 提示用户输入公文场景关键词. 
 ```

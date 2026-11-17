@@ -5126,14 +5126,14 @@ def _process_llm_result(        self, llm_output: str, run_manager: CallbackMana
 
 ```
 Thought: I now know the final answer.Final Answer: Helena Christensen, Leo DiCaprio&#x27;s girlfriend, is 54 years old and her age raised to the 0.43 power is 5.558137888477938.
+
+![](img/c562c08cb8c28b328c7459e3715d5304.png)
+
 ```
 
 根据上面的推演，我们看到了Agent是如何通过Observation->Thought->Action一步步接近答案并完成任务的，期间制造了工具，也利用了工具，感叹大模型的强大之余，也能感觉到Re-Act模型的一个特点，就是“走到哪算哪”，一旦一步错误，那么可能会越走越偏。另外，由于每一步都需要携带历史会话和所有工具的描述信息，这对于上下文窗口也是一个大的挑战。因此，Re-act只适合一些任务比较简单的情况。
 
 而当前被众多Agent框架采用的是改进版本的“Plan-And-Solve”，它的思维过程更像人类，首先不着急生成下一步动作，而是对问题进行一个拆解，生成待执行任务列表 ，分步执行，并且可以根据实际的情况，不断完善更新整个执行计划，像是一个开车又快又稳的老司机。以babyAGI为例，它的执行过程如图：
-
-![](img/c562c08cb8c28b328c7459e3715d5304.png)
-
 核心流程通过运行一个无限循环来驱动：
 
 1）从任务列表中提取第一个任务。
@@ -5236,6 +5236,12 @@ user_message = f&quot;&quot;&quot;by how much is the BlueWave Chromebook more ex
 messages =  [  {&#x27;role&#x27;:&#x27;system&#x27;,  &#x27;content&#x27;: system_message},    {&#x27;role&#x27;:&#x27;user&#x27;,  &#x27;content&#x27;: f&quot;{delimiter}{user_message}{delimiter}&quot;},  ] 
 response = get_completion_from_messages(messages)print(response)
 ######################Step 1:#### The user is asking a question about two specific products, the BlueWave Chromebook and the TechPro Desktop.Step 2:#### The prices of the two products are as follows:- BlueWave Chromebook: $249.99- TechPro Desktop: $999.99Step 3:#### The user is assuming that the BlueWave Chromebook is more expensive than the TechPro Desktop.Step 4:#### The assumption is incorrect. The TechPro Desktop is actually more expensive than the BlueWave Chromebook.Response to user:#### The BlueWave Chromebook is actually less expensive than the TechPro Desktop. The BlueWave Chromebook costs $249.99 while the TechPro Desktop costs $999.99.
+
+![](img/a3117f4b07f47b1ca57281c0c1da3217.png)
+
+
+![](img/6abb8639ca770935af6e6cd38b5c0313.png)
+
 ```
 
 可以看出，Agent的关键能力在于大模型，大模型是否能充分发挥作用其关键又在Prompt。之所以将，A I Agent是大模型原生的场景模式，其关键就是这一切都是 围绕模型来层层包装而来 ，所有的实现都以配合LLM而来，这与RAG以及原来的AI应用开发的模式是完全不同的，需要大家适应转变 。
@@ -5249,9 +5255,6 @@ response = get_completion_from_messages(messages)print(response)
 2）Agent是一个技术概念，如何将其能力和达成的目标定义清楚也是一个非常难的事情。似乎什么都可以使用Agent解决，似乎又什么都不可以。在一个业务流程中，原来的用户和Agent之间是一个什么样的关系？是上下游协同还是一个团队辅助或替代，在整个业务生态中将扮演什么样的作用，这都是想把Agent引入到真实业务中，必须要回答的问题。在这些都比较模糊的情况下，做一个Agent的平台，批量试错验证价值结合点或许是一个方式。
 
 3）由于Agent强依赖大模型，因此大模型的弊端会暴露在Agent应用上，在技术层面存在以下一些问题：
-
-![](img/a3117f4b07f47b1ca57281c0c1da3217.png)
-
 首先，context的长度问题，它会直接影响Prompt的大小，这就使得对于复杂业务来讲，就不得不拆分Prompt，这会导致大模型在理解上的割裂，并且，像前面小结案例所示，每一次agent与大模型的交互都需要将前面的相关历史会话信息携带给大模型，这就导致Agent很难处理超长轮次的复杂任务，进而无法在真实的场景中应用。
 
 其次，大模型本身的推理规划能力决定了后续任务解决的可能性，而现有模型很难像人在处理问题那样，能够遇到问题解决问题，并结合外部反馈适当调整思路探索解决，这就导致大模型在解决一些未知的复杂问题，或是外部环境复杂的情况下，agent的稳定性存在较大挑战。
@@ -5263,9 +5266,6 @@ response = get_completion_from_messages(messages)print(response)
 最后，Agent是一个高度自动化的应用，然而它内部却非常脆弱和黑盒，如何能够更好的观测它，优化它也是一个非常有挑战的问题，这里，可观测性就成了一个很有潜力的技术方向。
 
 4）商业角度看，Agent应用的投入产出比不尽如人意。从目前Agent的投入及产生价值来看，面临着比较大的挑战。我们知道LLM的训练和推理成本是相较于传统的AI及软件应用是明显偏高的，并且难以做到以前软件那种规模化后，边际成本趋近于零的模式。而Agent的特点就是通过频繁和大模型进行交互迭代，进而得到答案，而这里面最直接的token费用便是一个不小的开支，再加上产品和技术的不成熟，也会使得对它需要做出更多兜底备份的投入，而这样的投入往往会占据更大的成本比例。
-
-![](img/6abb8639ca770935af6e6cd38b5c0313.png)
-
 在当下，在实际的生产场景实施过程中，有一个渐进的思路，就是将LLM和传统编排手段（超自动化）相结合，把一个复杂的问题肢解为多个局部的问题，把确定域的长尾问题交给Agent去解决，而主体的解决计划和任务拆解交给开发者，让开发者基于编排框架来构建领域应用模版，这样不仅弥补了原有方案灵活度和泛化性上的问题，又能够避免当下大模型难以处理复杂业务问题规划和流程回溯的问题。最重要的是可以渐进式的改进现有系统，给新技术以充分的成长耐心。
 
 总的来说，Agent目前具备比较明朗的前景，但是受限于产品、技术和商业层面的约束，导致其实际应用到生产环境中，还存在相当多的问题待解决。
@@ -5338,6 +5338,12 @@ agent.run(    &quot;Who is the current prime minister of the UK? What is their c
 
 ```
 SYSTEM_PROMPT = (    &quot;Let&#x27;s first understand the problem and devise a plan to solve the problem.&quot;    &quot; Please output the plan starting with the header &#x27;Plan:&#x27; &quot;    &quot;and then followed by a numbered list of steps. &quot;    &quot;Please make the plan the minimum number of steps required &quot;    &quot;to accurately complete the task. If the task is a question, &quot;    &quot;the final step should almost always be &#x27;Given the above steps taken, &quot;    &quot;please respond to the users original question&#x27;. &quot;    &quot;At the end of your plan, say &#x27;&lt;END_OF_PLAN&gt;&#x27;&quot;)
+
+![](img/11e0620aaadb74e2337ccd9098e8a5c4.png)
+
+
+![](img/00f80761f252a83acd78a4631b567b0d.png)
+
 ```
 
 基于以上的分析，想要定义一个自己的Agent应用，就是需要自定义这些关键组件。
@@ -5345,13 +5351,7 @@ SYSTEM_PROMPT = (    &quot;Let&#x27;s first understand the problem and devise a 
 OpenAI原生Assistant
 
 在早期，OpenAI仅仅对外提供生成和对话接口，外围的编排框架需要完成输出解析，需要基于应用模式进行检索增强或者调用工具，随着function call，code interperter等能力的增强，OpenAI将这些原本外部实现的Agent需要的核心功能放到了内部，提供了 Assistant接口，基于这个接口大大简化了LLM应用开发的模式，RAG及Agent应用开发变得更加简单。因此，在不久未来基于OpenAI原生的GPTs的Agent应用将会大量出现。
-
-![](img/11e0620aaadb74e2337ccd9098e8a5c4.png)
-
 在新的Assistant接口中，有这样一些领域概念。
-
-![](img/00f80761f252a83acd78a4631b567b0d.png)
-
 | **领域对象** | **解释** |
 | --- | --- |
 | A ssistant | 使用 OpenAI 模型和调用工具的特定目的的Assistant， 它有多个属性，其中包括 tools 和 file_ids，分别对应 Tool 对象和 File 对象。 |
@@ -5396,12 +5396,12 @@ thread = client.beta.threads.create(  messages=[    {      &quot;role&quot;: &qu
 
 ```
 run = client.beta.threads.runs.create(  thread_id=thread.id,  assistant_id=assistant.id,  model=&quot;gpt-4-1106-preview&quot;,  instructions=&quot;additional instructions&quot;,  tools=[{&quot;type&quot;: &quot;code_interpreter&quot;}, {&quot;type&quot;: &quot;retrieval&quot;}])
-```
-
-4.轮询 Run 状态，检查是否为 completed，整个流转状态如图：
 
 ![](img/641d1cacc0ebf286f90b71492e538527.png)
 
+```
+
+4.轮询 Run 状态，检查是否为 completed，整个流转状态如图：
 | **状态** | **定义** |
 | --- | --- |
 | queued | 新建Run或完成 required_action时会变为queued状态。进而立即变为in_progress。 |
@@ -5434,12 +5434,12 @@ run = client.beta.threads.runs.retrieve( thread_id=thread.id, run_id=run.id)
 while run.status != &quot;completed&quot;:   print(run.status)   time.sleep(60)  # 等待60秒   run = client.beta.threads.runs.retrieve(   thread_id=thread.id,   run_id=run.id  )       
 messages = client.beta.threads.messages.list( thread_id=thread.id)
 print(messages.data)
-```
-
-以上整个过程可以在OpenAI的playGround中进行调试开发。
 
 ![](img/9baf05d896a98e1b9c03c903c8686ad3.png)
 
+```
+
+以上整个过程可以在OpenAI的playGround中进行调试开发。
 Langchain也第一时间支持了该接口，并提供了新的Agent实现教程。
 
 ```
@@ -5447,6 +5447,15 @@ Langchain也第一时间支持了该接口，并提供了新的Agent实现教程
 tools = [E2BDataAnalysisTool(api_key=&quot;...&quot;), DuckDuckGoSearchRun()]agent = OpenAIAssistantRunnable.create_assistant(    name=&quot;langchain assistant e2b tool&quot;,    instructions=&quot;You are a personal math tutor. Write and run code to answer math questions. You can also search the internet.&quot;,    tools=tools,    model=&quot;gpt-4-1106-preview&quot;,    as_agent=True,)
 from langchain.agents import AgentExecutor
 agent_executor = AgentExecutor(agent=agent, tools=tools)agent_executor.invoke({&quot;content&quot;: &quot;What&#x27;s the weather in SF today divided by 2.7&quot;})
+
+![](img/7579cf109facd87cbb6ad6a11a06b059.png)
+
+
+![](img/559807520a3ba5e2adb70472e00bc376.png)
+
+
+![](img/270ca5850c74b772e0c2a3826095d8ae.png)
+
 ```
 
 目前该接口处于Beta测试阶段，未来官方将补齐如下功能。
@@ -5462,15 +5471,9 @@ agent_executor = AgentExecutor(agent=agent, tools=tools)agent_executor.invoke({&
 +
 
 不仅如此，在API的基础上，OpenAI还提供了 面向普通用户 的无代码界面化的Agent开发方法，那就是的GPTs。
-
-![](img/7579cf109facd87cbb6ad6a11a06b059.png)
-
 可观看此视频学习如何创建(来自 @agisha un的一个简历向导的GPTs )：
 
 相较于当前Beta版本的API构建方式，GPTS的界面操作更为简单直观，提供了更多的内置插件能力，如网页浏览，图片生成等，以及外部的Action调用，能够方便的分享给其它用户，甚至直接获得收益。由于其制作门槛足够低，发布之后短短几天就有上千GPTs上架GPT store。这里提供一些导航网站可以探索和借鉴最新最热的GPTs：
-
-![](img/559807520a3ba5e2adb70472e00bc376.png)
-
 https://gptsdex.com/
 
 Agent专有框架(单agent/MutiAgent)
@@ -5480,9 +5483,6 @@ Agent专有框架(单agent/MutiAgent)
 **单Agent**
 
 +   **babyAGI**
-
-![](img/270ca5850c74b772e0c2a3826095d8ae.png)
-
 由Yohei Nakajima开发的babyAGI作为chatGPT横空出世后，是最先利用大模型能力构建的任务驱动型自主Agent的概念性项目之一，在当时获得了巨大的关注，对后面的Agent项目有很大的启发。它使用 OpenAI GPT-4接口和向量数据库（如 Chroma 或 Weaviate）来创建、优先排序和执行任务。其核心实现就在babyagi.py这一个脚本中，在里面可以看到其精华所在来自于prompt，其关键的三个Agent的prompt如下：
 
 1.task_creation_agent：根据目标创建任务
@@ -5510,12 +5510,15 @@ prompt = f&quot;&quot;&quot; You are an AI who performs one task based on the fo
 ```
 
 prompt = f&quot;&quot;&quot; You are a task prioritization AI tasked with cleaning the formatting of and reprioritizing the following tasks: {task_names}. Consider the ultimate objective of your team:{OBJECTIVE}. Do not remove any tasks. Return the result as a numbered list, like: #. First task #. Second task Start the task list with number {next_task_id}.&quot;&quot;&quot;
-```
-
-其工作过程如下：
 
 ![](img/c5704bd7ae1854af9a5dc5467b366547.png)
 
+
+![](img/6f97214cf89639b70b441c2697c5ba3e.png)
+
+```
+
+其工作过程如下：
 1. 设定目标，并通过任务生成Agent生成任务列表，从任务列表中提取第一个任务。
 
 2. 将任务发送给执行Agent，Agent根据上下文构建prompt调用OpenAI接口完成任务。
@@ -5537,9 +5540,6 @@ prompt = f&quot;&quot;&quot; You are a task prioritization AI tasked with cleani
 AutoGPT由Toran Bruce Richards开发的开源自主AI代理，于2023年3月发布，与babyAGI齐名，并且其功能更为完善，支持抓取网站、搜索信息、生成图像、创建和运行代码等。
 
 AutoGPT相较于babyAGI来讲，在Prompt engieering层面走的更远，充分发挥大模型能力，让大模型代替编程来控制流程。因此，它的核心在于如何构造prompt，其执行过程分为六步：
-
-![](img/6f97214cf89639b70b441c2697c5ba3e.png)
-
 1.创建计划，包含agent的名字，角色，以及计划目标。对应的prompt片段如下：
 
 ```
@@ -5607,14 +5607,26 @@ AutoGPT也提供了自己的前端UI实现，可在 Web、Android、iOS、Window
 start_goal_prompt = PromptTemplate(    template=&quot;&quot;&quot;You are a task creation AI called AgentGPT. You answer in the &quot;{language}&quot; language. You have the following objective &quot;{goal}&quot;. Return a list of search queries that would be required to answer the entirety of the objective. Limit the list to a maximum of 5 queries. Ensure the queries are as succinct as possible. For simple questions use a single query.
 Return the response as a JSON array of strings. Examples:
 query: &quot;Who is considered the best NBA player in the current season?&quot;, answer: [&quot;current NBA MVP candidates&quot;]query: &quot;How does the Olympicpayroll brand currently stand in the market, and what are its prospects and strategies for expansion in NJ, NY, and PA?&quot;, answer: [&quot;Olympicpayroll brand comprehensive analysis 2023&quot;, &quot;customer reviews of Olympicpayroll.com&quot;, &quot;Olympicpayroll market position analysis&quot;, &quot;payroll industry trends forecast 2023-2025&quot;, &quot;payroll services expansion strategies in NJ, NY, PA&quot;]query: &quot;How can I create a function to add weight to edges in a digraph using {language}?&quot;, answer: [&quot;algorithm to add weight to digraph edge in {language}&quot;]query: &quot;What is the current weather in New York?&quot;, answer: [&quot;current weather in New York&quot;]query: &quot;5 + 5?&quot;, answer: [&quot;Sum of 5 and 5&quot;]query: &quot;What is a good homemade recipe for KFC-style chicken?&quot;, answer: [&quot;KFC style chicken recipe at home&quot;]query: &quot;What are the nutritional values of almond milk and soy milk?&quot;, answer: [&quot;nutritional information of almond milk&quot;, &quot;nutritional information of soy milk&quot;]&quot;&quot;&quot;,    input_variables=[&quot;goal&quot;, &quot;language&quot;],)
+
+![](img/871aad387f906f09952d61ad98d8dde4.png)
+
+
+![](img/dbc456bfa42baedada0c4ff9bf84749f.png)
+
+
+![](img/7ff4c2b4d082afa3727ef7474bdecfda.png)
+
+
+![](img/d6c7c5397ebfe809aaf115911ec24238.png)
+
+
+![](img/6b4e0a7554c7f850e190db10beb594e3.png)
+
 ```
 
 其更多prompt可查看： https://github.com/reworkd/AgentGPT/blob/c2084e4faa46ecd91621be17574ef9532668cbfc/platform/reworkd_platform/web/api/agent/prompts.py
 
 **Muti-Agent**
-
-![](img/871aad387f906f09952d61ad98d8dde4.png)
-
 https://arxiv.org/pdf/2304.03442.pdf
 
 对于一个复杂系统，如何让Agent之间协同，共同完成更为复杂的系统性工作，自然而然有了多Agent的概念。 相较于单Agent，多Agent更为早期，更多是一种概念性的展示，还需要很长的路要走。 而被广大同行关注的是来自于斯坦福小 镇的项目（ Generative Agents: Interactive Simulacra of Human Behavior ），也得益于它的启发，大量的多Agent项目出现 。
@@ -5628,21 +5640,12 @@ https://arxiv.org/pdf/2304.03442.pdf
 视频详情
 
 MetaGPT是一个开源多智能体框架，模拟一家软件公司，让Agent协同起来完成开发工作，它可以仅凭一行软件需求就能生成 API、用户故事、数据结构、竞争分析等。
-
-![](img/dbc456bfa42baedada0c4ff9bf84749f.png)
-
 MetaGPT符合人类软件开发的标准流程。Agent可以充当产品经理、软件工程师和架构师等角色协同起来完成开发流程。
-
-![](img/7ff4c2b4d082afa3727ef7474bdecfda.png)
-
 在线试用：https://huggingface.co/spaces/deepwisdom/MetaGPT
 
 与该项目类似，清华大学等国内机构发起的一个多智能体项目ChatDev，它虚拟一个由多智能体协作运营的软件公司，在人类“用户”指定一个具体的任务需求后，不同角色的Agent将进行交互式协同，以生产一个完整软件（包括源代码、环境依赖说明书、用户手册等）。
 
 +   **AutoGen**
-
-![](img/d6c7c5397ebfe809aaf115911ec24238.png)
-
 Autogen 是微软开发的一款通用的多代理框架。它提供可定制和可对话的代理，将 LLM、工具和人类整合在一起。通过自动处理多个有能力的代理之间的聊天，人们可以轻松地让它们共同自主地或在人类反馈下执行任务，包括需要通过代码使用工具的任务。相较于MetaGPT，AutoGen是通用的，利用它可以构建各种不同形式的多Agent应用。
 
 该框架具有以下特点：
@@ -5652,9 +5655,6 @@ Autogen 是微软开发的一款通用的多代理框架。它提供可定制和
 +   定制：可以对 AutoGen 代理进行定制，以满足应用程序的特定需求。这包括选择要使用的 LLM、允许的人工输入类型以及要使用的工具。
 
 +   人可参与：AutoGen 可以人无缝对接。这意味着人类可以根据需要向代理提供输入和反馈。
-
-![](img/6b4e0a7554c7f850e190db10beb594e3.png)
-
 AutoGen框架使我们能够协调编排多智能体工作流，相较于传统流程驱动的任务流，这种消息驱动的任务流程显得更为灵活，对处理复杂流程以及解耦领域逻辑有一定的帮助。它提供了一些通用的代理类，还提供了一个“Group Chat”的上下文，以促进跨Agent协作。以下是一些常用到的Agent类。
 
 +   User Proxy Agent：用户代理可以执行我们在python脚本中定义的功能。相当于对外声明了function，可供框架调用，如下面声明了查询wiki的函数。
@@ -5686,6 +5686,30 @@ analyst = autogen.AssistantAgent(    name=&quot;analyst&quot;,    system_message
 import autogenconfig_list_gpt4 = autogen.config_list_from_json(    &quot;OAI_CONFIG_LIST&quot;,    filter_dict={        &quot;model&quot;: [&quot;gpt-4&quot;, &quot;gpt-4-0314&quot;, &quot;gpt4&quot;, &quot;gpt-4-32k&quot;, &quot;gpt-4-32k-0314&quot;, &quot;gpt-4-32k-v0314&quot;],    },)
 llm_config = {&quot;config_list&quot;: config_list_gpt4, &quot;cache_seed&quot;: 42}user_proxy = autogen.UserProxyAgent(   name=&quot;User_proxy&quot;,   system_message=&quot;A human admin.&quot;,   code_execution_config={&quot;last_n_messages&quot;: 2, &quot;work_dir&quot;: &quot;groupchat&quot;},   human_input_mode=&quot;TERMINATE&quot;)coder = autogen.AssistantAgent(    name=&quot;Coder&quot;,    llm_config=llm_config,)pm = autogen.AssistantAgent(    name=&quot;Product_manager&quot;,    system_message=&quot;Creative in software product ideas.&quot;,    llm_config=llm_config,)groupchat = autogen.GroupChat(agents=[user_proxy, coder, pm], messages=[], max_round=12)manager = autogen.GroupChatManager(groupchat=groupchat, llm_config=llm_config)
 user_proxy.initiate_chat(manager, message=&quot;Find a latest paper about gpt-4 on arxiv and find its potential applications in software.&quot;)# type exit to terminate the chat
+
+![](img/33e36c7de45857582445ee0fb643d744.png)
+
+
+![](img/d3db2db632f67874de0c0fd8ee223bdf.png)
+
+
+![](img/76a6290a2ddb73da720ad53c6d961649.png)
+
+
+![](img/7676a66c0f4d7623eb5c940a3d89fdee.png)
+
+
+![](img/0f7baf49a145ab81b72a0732278f2d86.png)
+
+
+![](img/31b1a04a342e8dd28535fd6ba0f59a2a.png)
+
+
+![](img/a98e827996c98dc350a51cd84d6c7986.png)
+
+
+![](img/62048f046508bc90bba616c5580778d6.png)
+
 ```
 
 更多例子：https://microsoft.github.io/autogen/docs/Examples/AgentChat
@@ -5721,13 +5745,7 @@ user_proxy.initiate_chat(manager, message=&quot;Find a latest paper about gpt-4 
 **相关理论 **
 
 **定位**
-
-![](img/33e36c7de45857582445ee0fb643d744.png)
-
 过去的移动互联网时代，一个移动APP其功能特性以及核心依赖与其操作系统有一定关系，但关系不大，操作系统不再是关键约束，其投入成本和APP价值点都集中在APP本身，而到了大模型应用时代，核心的能力受限于大模型本身，当前呈现了类似“卷心菜”的应用结构，APP本身的形态价值萎缩、投入成本占比也急剧下降。这一现象足以引起广大广大开发者的关注，原来的应用开发惯性需要改变。而这一改变也使得过去充当“胶水”作用的编排框架获得了前所未有关注，从结构上看，它起到了呈上启下的重要作用，某种意义上讲，学习LLM应用开发就是在学习这些编排集成框架的使用方法。
-
-![](img/d3db2db632f67874de0c0fd8ee223bdf.png)
-
 更有甚者，业内现在流行一个这样的发展推测，那就是会构建出以LLM为核心的新的操作系统，未来的LLM应用都可以运行在这样的操作系统上。这里LLM就是CPU，而大模型的上下文窗口就是内存，向量数据库等存储就是其硬盘，浏览器就是其网络。而在这里编排框架就可以看作是其总线和接口，它能有效的对接外部设备以及提供信息处理通道。它的设计好坏，直接决定了应用的处理的正确性和效率。更重要的是，它形成了一套标准，在这样的标准下，开发者可以采用一种模式构建应用，而无需关心具体的组件提供者，这样的解耦可加速应用的开发和更新过程，对认知本身也是一种减负。
 
 **解决的痛点 **
@@ -5775,29 +5793,17 @@ user_proxy.initiate_chat(manager, message=&quot;Find a latest paper about gpt-4 
 作为大模型能力的补充，工具尤为重要，它能够将自己不擅长的事情交给专业的工具去执行，这对于提升整个LLM应用的效果至关重要。因此，编排集成框架就需要能够支持对接常见的工具，如搜索，计算器等等，甚至提供工具箱或者开放的工具接口，供开发者基于统一标准自定义实现。
 
 5）应用骨架
-
-![](img/76a6290a2ddb73da720ad53c6d961649.png)
-
 应用骨架是编排框架的核心，它就像是总线的走向一样，决定了每个信号的处理过程。这里编排框架一般需要实现外部检索增强的数据链路，微调链路，以及应用执行流程。其中应用执行流程包含了各种Prompt技术的实现，让普通用户简单几行代码就能完成应用流程构建。其构建的易用性以及质量，决定了框架的好坏，以及功能范畴。比如llamaxindex就专注于RAG流程，而langchain就涉猎面更广，包含agent等应用骨架实现。
-
-![](img/7676a66c0f4d7623eb5c940a3d89fdee.png)
-
 总之，编排集成在LLM应用中的发挥着非常重要的作用，如A16Z发布的LLM应用架构图可以直观 地 看到，编排处在整个LLM应用开发中的中心位置，它的设计好坏直接决定了LLM应用的质量。
 
 **应用开发范式 **
 
 在前面我们指出了移动互联网时代APP与大模型时代APP在产品价值形态上的不同，我们也不难想到大模型应用开发相较于传统的软件开发也会有比较大的变化。
-
-![](img/0f7baf49a145ab81b72a0732278f2d86.png)
-
 而这种 核心原因在于 传统的软件开发只和 代码有关， 一个传统的软件开发过程，只需要产品经理定义好 需求 ，开发人员按照需求 编码实现即可， 而保证APP是否达到预期 质量 的方式也比较简单，就 是严格全面的 测试 ，做到了 这 样，就能保证 发 布 到生产的 应用是可靠的。 另外， 传统应用的特性不会随着外界的变化而变化，它的逻辑都被固化在代码中，只要代码（包含环境 ） 正确，应用就正常 。 因此，在那个DevOPS的 年代， 开发质量的核心就 是保证 开发代码到生产代码 的 一致性，相关技术也是围绕这一目的展开，经典的就是docker的出现 。
 
 到了AI 1.0时代，一个AI应用就由单纯的代码变成了代码，模型及数据构成。因此，一个AI应用是否达到预期质量不仅与代码实现相关，更受到模型和数据的影响。另外，由于传统小模型本身的特性，其能力是单一稳定的，因此代码与模型的能力边界是相对清晰的。另一方面，由于小模型无法做到一次训练多次使用的目标，因为存在概念和数据的drift（详见： 新书推荐:《MLOps工程实践》 ）需要高频训练，因此在这一阶段除了传统软件开发关注的问题外，需要做到模型训练到推理的正确性，消除其中的不一致，而这正是MLOPS关注的重点。
 
 现在，进入了LLM应用时代，大模型其具备了几个核心特点，导致了开发范式的再度迭代。大模型相较于传统小模型最大的特点在于它具备了一定的通用性，通过Prompt就可以操纵大模型完成不同的任务。另一方面，大模型的性能表现以及训练微调成本，都使得模型训练变成了一个低频的动作，普通开发者无需自己训练模型，可能只需要不断升级替换更强大模型即可。而这样的结果都指向了一个问题，那就是代码和模型的能力边界是不稳定的。每一次大模型的更新都将会是外围代码的灾难。另一方面，操纵大模型实现某个功能成本极低，可能只是Prompt（自然语言）的调整，而对于通过代码实现相应功能来讲，落后了一个时代。而更重要的是， 随着整个应用的 闭环化， 一些固定 策略 代码效果远远不 如不断自我完善的 模型 。但大模型有大模型的问题，比如其输入输出的自然语言特征，带来的天然不精确的问题，其带来的就是系统可能的不稳定。
-
-![](img/31b1a04a342e8dd28535fd6ba0f59a2a.png)
-
 因此，当下LLMOPS 其关注重点不 再 是模型训练推理本身，而更多朝着如何更好 地 围绕模型构建应用展开。 而这个时候，如何 处理好代码做什么， 模型做什么这一边界问题就变 得 尤为重要 ，将有限的精力投入到正确的地方 以及充分理解大模型的特点，扬长避短，如 此这样才能开发出一款优质的LLM应用。
 
 那么，具体怎么做才能达到这一目标呢？微软的CVP , Deputy CTO Sam Schillace曾在今年5月份发表了一篇博客：Early Lessons From GPT-4: The Schillace Laws，探讨了大模型开发的可能的最佳实践，且把它当作semantic-kernel的设计原则。它有9条内容：
@@ -5839,9 +5845,6 @@ Langchain到了现在，还在不断的扩展自己的边界，面向生态化�
 [关](http://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&mid=2461142632&idx=1&sn=0b427ef5898e10c5f51788aaeb5fb6f9&chksm=87396c46b04ee55052cd1de3037be907cf5e760fcced87f7e499c6135f3e8c5b21a865a7eef8&scene=21#wechat_redirect)于langchainTemplate介绍见： Langchain发布Langchain templates，提升RAG、Agent等LLM架构应用开发的正确性和效率
 
 不得不说，langchain从最初的原型构建框架，到统一的LLM应用框架，再到面向生产的LLM应用开发平台，来自于langchain独特的产品规划，更来自于大模型发展的需求推动。
-
-![](img/a98e827996c98dc350a51cd84d6c7986.png)
-
 最近来自langchain官方博客披露的RoadMap[1]来看，为了更好的解决日益堆砌带来的功能复杂性以及配合生态化战略，langchain v0.1(预计2024/1/9发布)将核心的liberary分成了三个部分langchain-core、langchain-community 和 langchain。其中，langchain-core属于核心的LLM应用领域抽象，Langchain-community是能和langchain进行集成的生态伙伴，现拥有近 700 个集成，从文件加载器到 LLM，从向量存储到工具包，是langchain-core的具体实现。而原有的langchain包下，是Chain、RAG、Agent以及相关通用的编排组件，是当前LLM应用架构实现模式的载体。可以预见，随着大模型发展，以及场景落地需要，langchain还将不断丰富它在LLM应用开发层面的功能，降低开发的门槛，提升开发效率及应用的质量。
 
 在未来的内容里，我们专注在Langchain框架本身，在它其上外延的产品概念将不在本书中介绍。
@@ -5887,9 +5890,6 @@ langchain发展极快，虽然都定位为大模型开发框架，其重心、�
 当前LangChain版本是由Langchain-core，Langchain-commuity，Langchain三部分组成，其中Langchain-core的核心是由LCEL构成的，专注于给开发者提供一个灵活、简单的声明式大模型链的构开发协议，而Langchain和Langchain-commuity是构建LLM应用的核心模式及生态实现，其重点是提供标准的，可扩展的接口实现和生态集成的基础模块，包含Models， Retriev al，Agents三类。
 
 **LCEL **
-
-![](img/62048f046508bc90bba616c5580778d6.png)
-
 在langchain项目早期，这一模块是不存在的，但随着应用模式的复杂化，以及具体实现越来越多样，langchain越来越表现的复杂和僵化。为了解决这一问题，以及奠定langchain的标准地位，langchain core的概念逐渐形成，其核心是LCEL（Langchain Expression Language），它在langchain整体架构中定位为协议层。基于它可以有效的构造LLM应用链（Chains），在不用代码变更的情况下，完成从原型开发到生产应用。
 
 官方列举的有关LCEL的一些特点：
@@ -5927,12 +5927,12 @@ chain.invoke({&quot;topic&quot;: &quot;ice cream&quot;})
 
 ```
 chain = prompt | model | output_parser
-```
-
-“|” 符号类似于 unix 管道操作符，它将不同的组件链在一起，将一个组件的输出作为下一个组件的输入。其pipeline结构如下：
 
 ![](img/3097bc578ea6d5b89c0535eaa37c02d0.png)
 
+```
+
+“|” 符号类似于 unix 管道操作符，它将不同的组件链在一起，将一个组件的输出作为下一个组件的输入。其pipeline结构如下：
 对于相对复杂的RAG来讲，LCEL表达式一样可以完成，如下：
 
 +
@@ -5951,16 +5951,19 @@ chain.invoke(&quot;where did harrison work?&quot;)
 
 ```
 setup_and_retrieval = RunnableParallel(    {&quot;context&quot;: retriever, &quot;question&quot;: RunnablePassthrough()})chain = setup_and_retrieval | prompt | model | output_parser
-```
-
-最终形成的Pipeline结构如下：
 
 ![](img/7bd5789244ee605a4e8d9ecd912a4d5e.png)
 
-虽然，LCEL的初衷是为了简化LLM应用构建的复杂度，但它的一些框架概念和约定，比如接口实现和回调钩子会在用户不熟悉的情况下带来一些学习和排错成本。
 
 ![](img/86f42f84a0db6aaa96efb25999587dc6.png)
 
+
+![](img/44603dea211c4b7603fac6ad5e874ce2.png)
+
+```
+
+最终形成的Pipeline结构如下：
+虽然，LCEL的初衷是为了简化LLM应用构建的复杂度，但它的一些框架概念和约定，比如接口实现和回调钩子会在用户不熟悉的情况下带来一些学习和排错成本。
 好处是，Langchain官方 给出了很多常见的LLM应用通过LCEL实现的例子，大家在实现过程中可以对照参考。地址： https://python.langchain.com/docs/expression_language/cookbook。
 
 **基础模块**
@@ -5968,9 +5971,6 @@ setup_and_retrieval = RunnableParallel(    {&quot;context&quot;: retriever, &quo
 大模型技术栈和工具百花齐放，但上层的应用模式相对比较统一，为了更好的让开发者避免与底层差异性打交道，因此langchain提供了基础模块的协议实现，第三方可以根据该协议进行适配，这样对于开发者来讲就无须过度关注底层供应商，而只需专注应用本身即可。
 
 1）Model I/O
-
-![](img/44603dea211c4b7603fac6ad5e874ce2.png)
-
 Model I/O是有关模型输入输出交互的相关模块，包含Prompts，Chat Models，LLMs，OutParsers。
 
 +   Prompts
@@ -6015,12 +6015,12 @@ model = OpenAI(model_name=&quot;gpt-3.5-turbo-instruct&quot;, temperature=0.0)
 # Set up a parser + inject instructions into the prompt template.parser = PydanticOutputParser(pydantic_object=Joke)
 prompt = PromptTemplate(    template=&quot;Answer the user query.\n{format_instructions}\n{query}\n&quot;,    input_variables=[&quot;query&quot;],    partial_variables={&quot;format_instructions&quot;: parser.get_format_instructions()},)
 # And a query intended to prompt a language model to populate the data structure.prompt_and_model = prompt | modeloutput = prompt_and_model.invoke({&quot;query&quot;: &quot;Tell me a joke.&quot;})parser.invoke(output)
-```
-
-2）Retrieval
 
 ![](img/148baaad1fd8d79410f569377dbe7191.png)
 
+```
+
+2）Retrieval
 Retrieval类的模块专注于检索增强应用（RAG）的构建，包含了建库和检索两部分。具体包含Document loaders、 Document transformers 、 Text embedding models 、 Vector stores 、 Indexing 、 Retrievers 模块构成。
 
 +   Document loaders
@@ -6070,14 +6070,14 @@ from langchain.embeddings import OpenAIEmbeddings
 embeddings_model = OpenAIEmbeddings()
 embeddings = embeddings_model.embed_documents(    [        &quot;Hi there!&quot;,        &quot;Oh, hello!&quot;,        &quot;What&#x27;s your name?&quot;,        &quot;My friends call me World&quot;,        &quot;Hello World!&quot;    ])
 len(embeddings), len(embeddings[0])
+
+![](img/0f2dadd52bbdff708a35892806cfe0b8.png)
+
 ```
 
 为了避免重复的进行embedding计算，提高性能降低成本，还提供了CacheBackedEmbeddings的实现。
 
 +   Vector stores
-
-![](img/0f2dadd52bbdff708a35892806cfe0b8.png)
-
 作为RAG应用的关键构成，向量数据库对于提升检索召回效果尤为重要。langchain提供了众多向量数据库的集成，开发者可以采用相对统一的方式，结合实际的场景选择不同的实现，比如本地、云等。
 
 +
@@ -6119,6 +6119,9 @@ retriever，检索器，它作为RAG应用的核心模块，是整个检索过�
 ```
 from langchain.chat_models import ChatOpenAIfrom langchain.retrievers.multi_query import MultiQueryRetriever
 question = &quot;What are the approaches to Task Decomposition?&quot;llm = ChatOpenAI(temperature=0)retriever_from_llm = MultiQueryRetriever.from_llm(    retriever=vectordb.as_retriever(), llm=llm)
+
+![](img/637d1bd8f3309931493f86d6d6193d44.png)
+
 ```
 
 3）Agents
@@ -6134,9 +6137,6 @@ Agents应用作为langchain区别于其它框架的一大亮点，是langchain�
 除了前面提到的Model I/O、Retrieval、Agents外，langchain还提供了一些公共的组件支持，比如 Chains、memory和callbacks。
 
 Chains是在LCEL出现之前的应用编排的方法，在更标准、更简单LCEL出现后，官方更推荐使用LCEL，然而，chains中遗留了很多历史实现的一些模式还很有价值，因此开发者也可以直接使用它们。
-
-![](img/637d1bd8f3309931493f86d6d6193d44.png)
-
 大模型本身是无记忆的，为了让应用有状态，形成多轮的交互，即支持记忆。langchain提供了Memory模块，它能够帮助应用维持会话信息，自动的将对话历史追加到Prompt中，继而透明的完成大模型记忆的构建，在langchain中还提供了很多优化的手段，如对与历史进行摘要减少历史会话内容过多，导致token消耗或者context window超限的问题。
 
 最后，callbacks是为了提高LLM应用的灵活性，langchain在LLM应用生命周期的各个阶段增设了一些钩子，利用它们用来自定义实现一些逻辑，这对于日志记录、监控、流式传输和其他任务非常有用。
@@ -6195,6 +6195,18 @@ handler = StdOutCallbackHandler()llm = OpenAI()prompt = PromptTemplate.from_temp
     &gt; Finished chain.
 
     &#x27;\n\n3&#x27;
+
+![](img/e9c2d7477a5a99e3770956f58d0076b2.png)
+
+
+![](img/8f13d103f2319297e388a52403d9bc22.png)
+
+
+![](img/1c6135e441d1e96816b96c08e7ec2730.png)
+
+
+![](img/62c73dbed1f606023606ba9fdaedaa76.png)
+
 ```
 
 **小结**
@@ -6202,17 +6214,8 @@ handler = StdOutCallbackHandler()llm = OpenAI()prompt = PromptTemplate.from_temp
 Langchain作为当前最热的LLM 应用编排框架，虽然受到了大模型能力增强对其空间的压缩，但它仍然是LLM应用不可或缺的重要支撑。它不断的在扩展着LLM应用的边界，给很多后来的框架和应用开发者以启发，其生态也最为完善，对于想要入门大模型应用开发的朋友来讲，langchain不管未来会不会实际在生产环境使用，但都是值得学习参考的重要案例。
 
 **llama-index概述**
-
-![](img/e9c2d7477a5a99e3770956f58d0076b2.png)
-
 如果说langchain是编排框架里的全能王者，那么llama-index就是RAG类LLM应用构建的单项冠军。 llama-index最早定位 与 langchain相似，但随着这一领域框架的不断发展，llama-index选择了一条与langchain不太相同的路，langchain强于应用流程编排与集成，而它将重点放在了数据摄取、转换、索引等数据处理方面，专注于构建RAG应用，并且它也可作为数据层面的框架被集成在langchain中，增强基于langchain构建的应用的效果。 虽然近来也在向Agent领域探索，但其核心的亮点还是围绕着数据展开，其agent也是专注于Data Agent领域。  下面是两者 更 多 层面的比较：
-
-![](img/8f13d103f2319297e388a52403d9bc22.png)
-
 在前面的文章里我们知道，对于一个RAG应用来讲，其核心在于如何建库及检索，进而提升检索的召回率和准确率。起初，在构建原型应用时，我们并没有足够其生成的效果及系统的效率，然而，随着不断深入，我们会发现制约一个RAG应用的关键除了大模型本身外，数据层面的复杂性才是RAG应用的难点。比如，如何有效的从不同存储中读取文档，进行转换，生成相应的索引，在检索阶段采用何种策略进行检索，这些方方面面都有很多的最佳实践需要总结沉淀。而llamaindex其中一个亮点就是它拥有一种面向大规模文本数据集的索引技术，可为结构化和非结构化数据提供索引支持。它将庞大的文本数据集划分为多个小块，并通过索引表快速定位目标文档，以加快检索和处理速度。
-
-![](img/1c6135e441d1e96816b96c08e7ec2730.png)
-
 通过官方介绍可知，目前llamaindex在以下几方面面向各类初中高级开发者提供支持覆盖不同场景复杂度（从开箱即用到低阶模块定制）的LLM RAG应用：
 
 1）数据连接器（Data connectors）从原始数据源和格式中摄取您的现有数据。这些数据可以是 API、PDF、SQL 以及（更多）其他数据。
@@ -6226,9 +6229,6 @@ Langchain作为当前最热的LLM 应用编排框架，虽然受到了大模型�
 5）应用程序集成（ Application integrations ）将 LlamaIndex 与LLM生态系统的其他部分如 LangChain、Flask、Docker、ChatGPT连接起来。
 
 可以利用llama-index很方便地构建一个RAG应用，也能结合实际需求个性化定制增强。
-
-![](img/62c73dbed1f606023606ba9fdaedaa76.png)
-
 代码如下：
 
 ```
@@ -6245,12 +6245,43 @@ chroma_client = chromadb.PersistentClient()chroma_collection = chroma_client.cre
 from llama_index import VectorStoreIndex, SimpleDirectoryReader
 documents = SimpleDirectoryReader(&quot;data&quot;).load_data()index = VectorStoreIndex.from_documents(    documents, storage_context=storage_context)
 query_engine = index.as_query_engine()response = query_engine.query(&quot;What did the author do growing up?&quot;)print(response)
-```
-
-**领域概念及生命周期**
 
 ![](img/327f8a215d623349c19ded737a6b03b3.png)
 
+
+![](img/87c03905debef93f78df4f616146211b.png)
+
+
+![](img/a298ce5322a630a5f62f17d62b81159f.png)
+
+![](img/faa3de9cfaea80fbbea9aeb7d6b1d00f.png)
+
+
+![](img/4960b61a83a4656c53b78157a6f12874.png)
+
+![](img/ffc2f8d928db75db302dd9a149b4efca.png)
+
+
+![](img/f25f1c5505834f3a78bacd6b87230b8c.png)
+
+
+![](img/c96d85987e69c2de48c806311150960f.png)
+
+
+![](img/2f408b2acf75d88005173e3dfc115ee5.png)
+
+
+![](img/5caaa1c0bfc616e38517fd2f06b1d812.png)
+
+
+![](img/8ae20f526fb1c3d290094965bebcea90.png)
+
+
+![](img/540f949f97d9a4fd5bc1135b8b1489ba.png)
+
+```
+
+**领域概念及生命周期**
 llamaindex结合RAG架构应用的特点，将RAG整个生命周期分成了五步。
 
 1）加载（Loading）：这是指将数据从其所在的位置（无论是文本文件、PDF、其他网站、数据库还是 API）导入您的管道。LlamaHub 提供了数百种连接器供您选择。
@@ -6290,49 +6321,18 @@ llamaindex结合RAG架构应用的特点，将RAG整个生命周期分成了五�
 **框架特色**
 
 llama-index早期得以出圈的一个很大原因是它在数据处理，特别是索引结构上的创新。对于一个RAG应用来讲，召回的数据是否准确关乎大模型最终生成的答案是否准确的关键，而简单的固定长度的向量索引并不能很好的满足实际的需求，比如将一段完整的语义拆分到多个chunk中，又或者简单的chunk块缺少上下文、元数据等等。
-
-![](img/87c03905debef93f78df4f616146211b.png)
-
 llama-index切入到这一领域，提出了很多的索引结构以及对应索引的存储以便适应不同的业务场景。下面是一些常见的索引结构：
 
 +   VectorStoreIndex
-
-![](img/a298ce5322a630a5f62f17d62b81159f.png)
-
-![](img/faa3de9cfaea80fbbea9aeb7d6b1d00f.png)
-
 这是最基本，也是最常见的索引结构，它将文档分割成节点（chunk及元数据）。然后，它会为每个节点的文本创建embedding，存储在向量数据库中，以便向量检索使用。在检索时，查询输入转换为一个embeding，然后计算输入和数据库中embeding的相似性，最终取得Top-K个候选的embedding作为召回的有效chunk。
 
 +   Su m mary Index
-
-![](img/4960b61a83a4656c53b78157a6f12874.png)
-
-![](img/ffc2f8d928db75db302dd9a149b4efca.png)
-
 原来也叫“List-Index”，摘要索引以顺序链的形式存储节点。查询时，如果没有指定其他查询参数，LlamaIndex 会将列表中的所有节点召回，以便后续大模型生成。除此之外，摘要索引还提供了多种查询摘要索引的方法，包括基于embedding的查询（将获取前 k 个相邻索引），或添加关键词过滤器：
-
-![](img/f25f1c5505834f3a78bacd6b87230b8c.png)
-
 +   Tree Index
-
-![](img/c96d85987e69c2de48c806311150960f.png)
-
 树形索引从一组节点（成为树中的叶节点）构建出一棵分层树，每个节点是子节点的摘要，在索引构建期间，树以自下而上的方式构建，直到我们最终得到一组根节点。查询树索引需要从根节点向下遍历到叶节点。默认情况下（child_branch_factor=1），查询会在给定父节点的情况下选择一个子节点。如果child_branch_factor=2，查询会在每一级选择两个子节点。
-
-![](img/2f408b2acf75d88005173e3dfc115ee5.png)
-
 +   Keyword Table Index
-
-![](img/5caaa1c0bfc616e38517fd2f06b1d812.png)
-
 关键字表索引从每个节点中提取关键字，并建立每个关键字到该关键字对应节点的映射。在查询期间，我们从查询中提取相关关键词，并将这些关键词与预先提取的节点关键词进行匹配，以获取相应的节点。提取的节点将被传递给我们的响应合成模块。
-
-![](img/8ae20f526fb1c3d290094965bebcea90.png)
-
 除此之外，llamaindex还提供更多的索引类型，它包括知识图谱索引、SQL索引、Document Summary Index、ObjectIndex等，它也同时提供索引组合使用的能力，这样能够发挥更强大的作用。比如下面是官方提供的将树索引和摘要索引组合使用的案例。
-
-![](img/540f949f97d9a4fd5bc1135b8b1489ba.png)
-
 ```
 from llama_index import TreeIndex
 storage_context = storage_context.from_defaults()
@@ -6342,6 +6342,36 @@ from llama_index.indices.composability import ComposableGraph
 graph = ComposableGraph.from_indices(    SummaryIndex,    [index1, index2, index3],    index_summaries=[index1_summary, index2_summary, index3_summary],    storage_context=storage_context,)
 ...
 custom_query_engines = {    index.index_id: index.as_query_engine(child_branch_factor=2)    for index in [index1, index2, index3]}query_engine = graph.as_query_engine(custom_query_engines=custom_query_engines)response = query_engine.query(&quot;Where did the author grow up?&quot;)
+
+![](img/f86988c481b0aea10ea1037b1be3f910.png)
+
+
+![](img/1b849923141371151afb808baf55b26f.png)
+
+
+![](img/454a3f660c6e802e10038179fd3ec349.png)
+
+
+![](img/22b62af382b88484f5a5b0f9e857afdd.png)
+
+
+![](img/1667c630892438727d3d260f1f2702df.png)
+
+
+![](img/abba4a608a48dca015fe2363dab294a4.png)
+
+
+![](img/9333342b03b82ff2fe8b9efa2a183f65.png)
+
+
+![](img/88878d26539360790c6de86c1d1e1460.png)
+
+
+![](img/73656a65653ca6338828cb1a590fbc96.png)
+
+
+![](img/21d8620d7bc18cadbf25f0afe1922dbe.png)
+
 ```
 
 提升RAG应用的性能和效果，将其从一个原型应用变成生产级应用，Index只是其中一个方面，llamaindex在这方面做出了很多有意义的探索，这其中包含Embedding、chunksize、metadata filter，高级的检索策略（混合检索、递归检索、查询路由等）、可观测性、效果评估，笔者之前文章中也有过一些介绍：
@@ -6361,17 +6391,8 @@ Semantic Kernel概述
 **设计理念**
 
 作为编排领域的“三国杀”之一的Semantic Kernel，是含着金钥匙出生的贵族，唯一一个巨头公司发布的LLM应用编排框架。2023年3月17日，微软宣布了轻量级SDK Semantic Kernel，其定位编排领域（Prompt Orchestration Engine），在整个微软大模型战略里承担着关键C位。
-
-![](img/f86988c481b0aea10ea1037b1be3f910.png)
-
 在微软的Office全系产品Copilot都采用了Semantic Kernel作为底层的实现框架，其作为桥梁连接应用到基座模型。
-
-![](img/1b849923141371151afb808baf55b26f.png)
-
 Semantic Kernel从它的名字可以看出，它强调了语法向语义的转变，它将大型语言模型（LLM）与C#、Python和Java等传统编程语言融合在一起，将自然语言（Prompt）也变成了程序语言的一部分，混合编程，最终完成软件目标。
-
-![](img/454a3f660c6e802e10038179fd3ec349.png)
-
 Semantic Kernel的定位与langchain等集成框架一致，通过编排Pipeline的方式构建AI应用。但Semantic Kernel的设计一开始便面向构建AI Agents展开，旨在通过插件轻松地将现有传统代码添加到AI Agent中。有了插件，就可以通过调用现有的应用程序和服务，让Agent具备与现实世界交互的能力。这样，插件就像AI应用的 "手和臂"。此外，Semantic Kernel的接口允许它灵活地集成任何人工智能服务。这是通过一组连接器来实现的，这些连接器可以轻松添加记忆和人工智能模型。通过这种方式，Semantic Kernel能够为应用添加一个模拟 "大脑"，当更新更好的LLM出现时，可以轻松地替换。由于Semantic Kernel利用连接器和插件提供的可扩展性，几乎可以用它来协调现有的任何代码，而不必被锁定在特定的人工智能模型提供商。例如，如果开发者为OpenAI的ChatGPT构建了大量插件，那么通过使用Semantic Kernel一样可以将它们与Azure或Hugging Face等其他提供商的模型进行切换。
 
 微软官方在其发布会上列出他们认为的四大优势：
@@ -6385,43 +6406,22 @@ Semantic Kernel的定位与langchain等集成框架一致，通过编排Pipeline
 +   新奇但熟悉：传统编程语言代码始终可供您作为一流的合作伙伴，帮助您快速完成工程设计，可以两全其美。
 
 在笔者看来，SK最大的亮点是一开始就采用了规划器（ Planner ）的设 计 ，封装了各种常见的LLM应用模式（也可以定制 ） ， 可以要求LLM生成一个能够实现用户独特目标的规划并基于 该计 划执行， 而这样的编排理念 langchain和llamaindex到项目中后期才明确提出，这也体现了微软与其他创业公司的不同，前者是先规划后实施，而后者是先实现再沉淀拔高，本章第一节就引用了微软在编排框架设计上的一些最佳实践原则（ S chillace Laws ） 。另一方面，微软在 SK 生态定位上也突出差异化， 这样的结果也导致了当下 LLM应用编排 开发框架的竞争格局，langchain具备先发优势、吸引了大量的尝鲜 用 户，目标通用框架，平台生态 ， llamaindex小而美， 切入 垂直领域，将RAG做深做优 。 而微软  Sem antic Kernel目标传统应用开发者， 立足 .net生态，辐射java生态，不断补齐自己的能力短板，并和同宗项目Prompt flow，AutoGen一道构建LLM应用开发的生态壁垒。
-
-![](img/22b62af382b88484f5a5b0f9e857afdd.png)
-
 如图可以直观地看到SK的工作流程，首先用户提出问题，kernel构建运行环境（包括共享的上下文），通过Planner生成任务计划，将知识和工具组织起来形成流水线（Pipeline）流程，再驱动执行从而获得输出结果或者完成任务。
 
 **功能与构成**
-
-![](img/1667c630892438727d3d260f1f2702df.png)
-
 接下来，简单介绍SK的组件，了解每个模块具体承担的作用。
 
 1）内核（Kernel）顾名思义，它是SK的方案生成和运行的载体，注册所有的连接器和插件，并进行必要的配置以运行应用程序。此外，还可以提供必要的日志、可观测性支持，从而方便开发者调试和监控应用的状态和性能。
 
 2）记忆体（Memory）用于存储应用的上下文，比如大模型的对话历史，常见的实现是利用向量存储，但实际上也可以使用简单的KV存储甚至是本地文件。以下是 Semantic Kernel 支持的存储服务：
-
-![](img/abba4a608a48dca015fe2363dab294a4.png)
-
 3）连接器，顾名思义，它连接各种组件，实现组件之间的信息交换。它在Semantic Kernel中扮演着非常重要的角色，因为它们是连接不同组件的桥梁，可以实现组件之间的信息交换。既可以对接模型也可以对接一些组件如向量数据库等。微软提供了很多开箱即用的连接器，其中不乏很多微软特有的组件，同时也支持开发者自定义连接器。
 
 4）插件（Plugins），也叫技能（Skill），它是一组可以暴露在人工智能应用程序和服务中的功能。从插件的设计上讲，SK采用了OpenAI的插件标准，这意味着您构建的任何插件都可以导出，以便在 ChatGPT、必应和 Microsoft 365 中使用。这样，可以在不重写代码的情况下扩大人工智能功能的覆盖范围。这还意味着，为 ChatGPT、必应和 Microsoft 365 构建的插件可以无缝导入 Semantic Kernel。
-
-![](img/9333342b03b82ff2fe8b9efa2a183f65.png)
-
 插件中的功能可由AI进行协调，以完成用户请求。在Semantic Kernel中，可以通过函数调用或规划器手动或自动调用这些函数。然而，仅仅提供函数还不足以构成一个插件。为了利用规划器实现自动协调，插件还需要提供从语义上描述其行为方式的细节。从函数的输入、输出到副作用，都需要以人工智能能够理解的方式进行描述，否则，规划器将会提供意想不到的结果。例如，在 WriterPlugin 插件中，每个函数都有一个语义描述，说明该函数的作用。然后，规划器可以使用这些描述来选择要调用的最佳函数，以满足用户的要求。
-
-![](img/88878d26539360790c6de86c1d1e1460.png)
-
 插件的构成角度就是一组函数（function）实现的功能，如图：
-
-![](img/73656a65653ca6338828cb1a590fbc96.png)
-
 在SK中构成的插件函数分为两类：
 
 1. 语 义函数（ Semantic Functions ），也叫 prompts ： 这些功能会聆听用户请求，并使用自然语言 提供响应。 为此，语义函数需要连接器来实现其目的。 定义一个语义函数 需要 两个文件 ： 一个用于配置函数，另一个用于定义提示。
-
-![](img/21d8620d7bc18cadbf25f0afe1922dbe.png)
-
 例如以下是一个总结插件的函数，包含配置文件和Prompt定义 。 该函数的配置文件，即 JSON 文件，将如下所示：
 
 ```
@@ -6475,12 +6475,12 @@ async def main():    # Initialize the kernel    kernel = sk.Kernel()    # Add a 
 
 # Run the main functionif __name__ == &quot;__main__&quot;:    import asyncio
     asyncio.run(main())
-```
-
-SK内置提供了很多常用的插件，包括：
 
 ![](img/8a31950949dc6953b926ddb6da73931f.png)
 
+```
+
+SK内置提供了很多常用的插件，包括：
 引入Microsoft.SemanticKernel.CoreSkills即可使用：
 
 ```
@@ -6490,6 +6490,9 @@ kernel.AddFromType&lt;TimePlugin&gt;();
 const string promptTemplate = @&quot;Today is: {{time.Date}}Current time is: {{time.Time}}
 Answer to the following questions using JSON syntax, including the data used.Is it morning, afternoon, evening, or night (morning/afternoon/evening/night)?Is it weekend time (weekend/not weekend)?&quot;;
 var results = await myKindOfDay.InvokePromptAsync(promptTemplate);Console.WriteLine(results);
+
+![](img/7fa0905d81f30d82354d617913d7e401.png)
+
 ```
 
 5）规划器（Planners）: 它是框架的核心，规划器是一个函数，它接受用户的请求并返回有关如何完成请求的计划。它通过使用AI混合和匹配内核中注册的插件来实现，以便可以将它们重新组合成一系列完成目标的步骤。给定一个问题，SK Planner可以根据您指定的功能创建分步计划，然后执行它们。以下是SK默认提供的规划器实现：
@@ -6501,9 +6504,6 @@ var results = await myKindOfDay.InvokePromptAsync(promptTemplate);Console.WriteL
 +   ActionPlanner：使用单个函数创建计划。
 
 +   StepwisePlanner：逐步执行每一步，在执行下一步之前观察结果。
-
-![](img/7fa0905d81f30d82354d617913d7e401.png)
-
 以前面例子为例，我们了解了如何手工地调用某一个函数，但不够聪明，而规划器可以理解用户的需求，并在我们的插件中找到必要的函数来执行任务。传递给规划器的是一个Prompt，即用户的需求，规划器负责理解用户的需求，并在我们的插件中找到合适的函数来执行任务。这样的模式体现了Agent的理念，通过一些既定的流程或者LLM自动规划的流程，依靠它完成包含复杂的工作流程的任务，例如，如果您有任务和日历事件插件，计划员就可以将它们组合起来，创建 "提醒我去商店买牛奶 "或 "提醒我明天给妈妈打电话 "这样的工作流，而无需明确为这些场景编写代码。
 
 下面是一个使用规划器的例子：
@@ -6513,6 +6513,24 @@ var results = await myKindOfDay.InvokePromptAsync(promptTemplate);Console.WriteL
 // Create a plan for the askvar ask = &quot;Get statistics for the file located at /Users/adolfo/Documents/Proyectos/Labs/SemanticKernel/Program.cs and convert the code from C# to Swift&quot;;var plan = await planner.CreatePlanAsync(ask);
 // Execute the planvar plannerResult = await kernel.RunAsync(plan);
 Console.WriteLine($&quot;Plan results:\n{plannerResult.Result}&quot;);
+
+![](img/db7e983dd80077ccc1af7549e227945c.png)
+
+
+![](img/6e8b483c67d3a04eff9159530c6462ee.png)
+
+
+![](img/a40b65a9e68efb734658caf833850f5f.png)
+
+
+![](img/9b351e5c57e6bdd61dcd27f509bd9e42.png)
+
+
+![](img/f2c38ea353466326158e4179ba3cb0fb.png)
+
+
+![](img/aa946b5c047eea2a70179f9a9bf2a9c1.png)
+
 ```
 
 虽然，规划器的功能十分强大，能够自动组合已经定义的函数，但是，官方提示，受限于当前的大模型技术发展情况和特点，在使用之前需要考虑以下因素带来的影响并采取一些措施缓解。
@@ -6528,15 +6546,9 @@ Console.WriteLine($&quot;Plan results:\n{plannerResult.Result}&quot;);
 当前的很多框架都采用了python作为实现语言，这对于机器学习工程师比较友好，但是受众较窄，对于广大的后端程序员来讲，java，.n[et才是主体受众，微软Semantic Kernel在这](http://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&mid=2461141624&idx=1&sn=008b38ad8fddf51abd45d13075beed29&chksm=87396856b04ee140c70b3f66fc788071248d1a710b044d59b2e54a50db7aca2e34457c9ae4d7&scene=21#wechat_redirect)方面关注较多，挖掘了潜在的客户群。并且其在开发效率和质量上也有一定的优势，在过去的文章里也有介绍，如： Langchain危矣？微软Semantic Kernel（SK）来抢人了，剑指大模型应用开发 。
 
 更进一步，广大应用程序员更关注的还是如何在正式环境落地LLM，因此，微软还开发了PromptFlow，用来处[理常规的数据任务并将其和大模型连接起来，致力于解决LLM应用从](http://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&mid=2461141703&idx=1&sn=6bf2552d53a76b603a095393036a09e5&chksm=873968e9b04ee1ff4f2cb51d451f7f4b26413319e0ad0f9366040122d0e7ff06ba787d1f3a84&scene=21#wechat_redirect)开发到生产的全过程。在笔者过去文章里有对该项目做过介绍： 两个有趣的项目Open Interpreter及Prompt Flow，让你的LLM应用开发如虎添翼 ，更多内容可以参考：https://learn.microsoft.com/en-us/semantic-kernel/agents/planners/evaluate-and-deploy-planners/
-
-![](img/db7e983dd80077ccc1af7549e227945c.png)
-
 **总结**
 
 虽然，微软相较于其它两个项目处于后发状态，但SK的发展异常迅速，其版本已经迭代到V1.1.0，进入了稳定迭代期，能力也已覆盖了当前AI应用的常见形态。
-
-![](img/6e8b483c67d3a04eff9159530c6462ee.png)
-
 随着大模型应用开发热潮的持续，作为有广阔应用场景、以及排他的特有开发群体和强大开发团队支持，以SK为代表的微软系工具链将会持续在大模型领域发力，我们拭目以待，期待大模型应用开发生态圈更加繁荣。
 
 参考：https://learn.microsoft.com/en-us/semantic-kernel/
@@ -6544,9 +6556,6 @@ Console.WriteLine($&quot;Plan results:\n{plannerResult.Result}&quot;);
 #### **7）其它技术**
 
 在前面的文章里，我们介绍了当前业内LLM应用开发经常遇到的、也需要掌握的技术，但仍然有一些这些相对低频，启用成本高的技术需要了解，比训练阶段的预训练、基于人类反馈的强化学习的指令微调（RLHF）。
-
-![](img/a40b65a9e68efb734658caf833850f5f.png)
-
 在本章你将学习到：
 
 1）预训练（Pre-Train）的概念与相关技术
@@ -6562,21 +6571,12 @@ Console.WriteLine($&quot;Plan results:\n{plannerResult.Result}&quot;);
 预训练对于大模型来讲是获取知识和智能的关键阶段，通过在大规模语料中进行预训练，LLM就可以获得基本的语言理解和生成能力，其进一步的推理能力也是在此环境习得。一般情况下，对于大模型应用开发者来讲，在既有的预训练模型上进行微调，就可以达到注入领域知识以及对齐指令的目的。但是，这样做的前提是，预训练模型内涵的知识与下游任务需要的内容差距不大。但对于以下一些情况就变得不那么有效，需要进行预训练。
 
 首先是语言问题，众所周知，llama系列的模型在中文语料稀少，在llama2中仅占0.13%[1]。因此，虽然llama2在英文场景下表现很不错，但直接用在中文场景下表现并不好。
-
-![](img/9b351e5c57e6bdd61dcd27f509bd9e42.png)
-
 其次是领域知识问题，对于一些专业垂直领域，比如法律、医学等，通常有大量的概念和名词在一般的通用语料中并不存在。因此，为了使得模型能够在这些领域表现更好，就有必要加入一些领域内的语料，从而提升其在垂直领域的表现。
 
 对于一个预训练过程，大体分为如下几个阶段：
 
 1）数据收集。要开发一个优秀的大语言模型，第一步就是能够找到大量的语料库，这些数据包括两类：通用文本数据和专用文本数据。其中通用文本主要是一些网页，对话文本，书籍等。而专用文本指的是一些多语言文本，如不同的语言，科学文本，比如论文、教材、数学公式等，还有代码，比如github上的大量代码，这样多样的数据对于后期多样的下游任务有帮助，比如让大模型写代码、做翻译，并且有研究表明代码语料可能是大模型复杂推理能力（如COT）的来源。下图是一些大模型的各类型内容占比。
-
-![](img/f2c38ea353466326158e4179ba3cb0fb.png)
-
 2）数据预处理。有了大量的语料后，并不能直接用于训练，需要进行一些数据预处理，比如消除噪声、冗余、无关以及潜在有害的数据，它对于模型质量有非常重要的作用，直接影响到模型的性能。
-
-![](img/aa946b5c047eea2a70179f9a9bf2a9c1.png)
-
 如图，是预处理的基本流程，包含了质量过滤、去重、隐私信息过滤和分词。其中分词是预处理的关键步骤，它核心目的是将原始的文本分割成词序列，作为LLM的输入。在传统的 NLP 研究中，基于词的切分是主要方法，它更符合人类的语言认知。然而，基于词的切分会对某些语言的相同输入产生不同的分词结果（例如，中文分词），生成包含许多低频词的巨大词词汇表，还会受到“词典外”问题的困扰。因此，一些深度学习模型使用字符作为最小单位来推导出词的表征。虽然可以使用现有通用分词器，但使用专门针对预训练语料库设计的分词器更好，尤其是对于由不同领域、语言和格式组成的语料库，如专门用于预训练分词的SentencePiece库。预训练时代表性分词方法有以下三种：
 
 +   字节对编码分词（Byte-Pair Encoding (BPE) tokenization）BPE 最初于 1994 年被提出，作为一种通用数据压缩算法 ，后来被改造用于 NLP 分词。它从一组基本符号（例如字母和边界字符）开始，并迭代地将语料库中连续的两个标记的频繁对组合为新token（称为合并）。对于每次合并，选择标准基于两个连续标记的共现频率：将选择最频繁的对。合并过程一直持续到达到预定义的大小。此外，BPE 已被用于通过将字节视为合并的基本符号来提高多语言语料库（例如包含非 ASCII 字符的文本）的标记化质量。采用这种标记化方法的代表性语言模型包括 GPT-2、BART 和 LLaMA。
@@ -6639,9 +6639,6 @@ Console.WriteLine($&quot;Plan results:\n{plannerResult.Result}&quot;);
 
 ```
 # Load custom vocabulary    new_tokens = open(VOC_PATH, &quot;r&quot;).read().split(&quot;\n&quot;)        for token in new_tokens:        if token not in llama_spm_tokens_set:            new_token = model.ModelProto().SentencePiece()            new_token.piece = token            new_token.score = 0            llama_spm.pieces.append(new_token)    print(f&quot;Size of merged llama&#x27;s vocabulary: {len(llama_spm.pieces)}&quot;)
-```
-
-比如Chinese-LLaMA-Alpaca就对llama增加了中文词表从32000扩展到49953，并在此基础上在中文语料（20GB+）上做了二次训练。。
 
 ![](img/029f3ab15d780dc3fd500ab17d99d565.png)
 
@@ -6649,22 +6646,78 @@ Console.WriteLine($&quot;Plan results:\n{plannerResult.Result}&quot;);
 
 ![](img/68b6a814f91b0385211b464e1de63ee1.png)
 
+
+![](img/1d3703be58541138bb02c19fe1cd632c.png)
+
+
+![](img/897f6fb84070d6988a91faedf3b082cc.png)
+
+
+![](img/07fc740628df6c7de6545a9634765b73.png)
+
+
+![](img/b80f8a06b49fe2ec79e99bd5d0105930.png)
+
+
+![](img/5ab765863bb316c79a07291adbe4c1ce.png)
+
+
+![](img/ec33a15fd34f728e4c34d25a3d0d5979.png)
+
+
+![](img/7569222d8216c4d944eda7bdb646844b.png)
+
+
+![](img/14a087a9834be0f579b5201abbd1d72e.png)
+
+
+![](img/b3caf12bbc44db7196ec372f4bebc0f2.png)
+
+
+![](img/73752ec067a566b7a5fd3bfd2d6fa8bd.png)
+
+
+![](img/981d92c4f3af9ac659dc3ccd0c05439f.png)
+
+
+![](img/6d3ff236df8f758000b4e92dd97c5a60.png)
+
+
+![](img/8272c8f517bbb699918ecfedc9eeedac.png)
+
+
+![](img/53d7a501db80993c78290d9857052c22.png)
+
+
+![](img/8368154c3eaf1b34911f31718691dd54.png)
+
+
+![](img/7ed71455a10b8c98920958ae437fa69f.png)
+
+
+![](img/40e845eee67a5fe3b9701ef1d4d4c841.png)
+
+
+![](img/b8168e7bea6bfc421a71029fbe064ac2.png)
+
+![](img/79603cd625fdcf68b815acac68c00d85.png)
+
+
+![](img/c21945125ee6f167516a205887ffadc6.png)
+
+```
+
+比如Chinese-LLaMA-Alpaca就对llama增加了中文词表从32000扩展到49953，并在此基础上在中文语料（20GB+）上做了二次训练。。
 https://arxiv.org/pdf/2304.08177.pdf
 
 3）数据策略（Data Scheduling），准备好数据后，下一步就是确定每个数据源的比例（数据混合（data mixture））以及每个数据源被安排用于训练的顺序（数据课程（data curriculum））。研究表明设置一个合适的数据混合比例对于LLM的能力有很大作用，在预训练期间，将根据混合比例选择来自不同来源的数据样本：来自权重较大的数据源的数据将被更多地采样。比如：LLaMA的预训练数据主要由网页（超过 80%）组成，此外还有来自 GitHub 和 StackExchange 的 6.5% 的大量代码数据，来自书籍的 4.5%，以及来自 arXiv 的 2.5% 的科学数据，作为代表模型，其他模型也会参考它配比。 此外，可以使用特殊数据混合来促进不同的目的。例如，Falcon在纯网页上训练，CodeGen 大大增加了代码数据量。在实践中，数据混合通常是凭经验确定的，常见的数据混合策略有增加数据源的多样性、优化优化数据混合的比例和专注特定的目标能力，如提高特定数据源的比例来增强某些模型能力。
 
 另一方面，除了数据混合的比例外，数据用于训练的顺序也对模型性能有影响。结果表明，在某些情况下，为了学习某种技能，按照技能集顺序（例如，基本技能 → 目标技能）进行学习优于直接从仅关注目标技能的语料库中学习 。这就和大学学生学习安排课程的逻辑一样，先学基础课再学专业课，也是被称作数据课程的原因之一。
-
-![](img/1d3703be58541138bb02c19fe1cd632c.png)
-
 为了确定数据课程，一种实用方法是根据专门构建的评估基准来监控 LLM 的关键能力的发展，然后在预训练期间自适应地调整数据混合。
 
 为了确定这两个设置，一种实用方法是首先使用多个候选方案训练几个小型语言模型，然后从中选择一个好的方案。在实践中，人们可以监控特定评估基准上的中间模型检查点的性能，并在预训练期间动态调整数据混合和分布。在此过程中，探索数据源与模型能力之间的潜在关系（ grokking）对于指导数据课程的设计也很有帮助。因此也催生了一个新的热点领域——大语言模型数据工程(LLM Data Engineering)。
 
 4）训练架构。有了数据接下来就是选择合适的模型架构及超参数配置。大模型的模型架构是基于Transformer的。
-
-![](img/897f6fb84070d6988a91faedf3b082cc.png)
-
 在此基础上主流的大模型的架构可分为四类：
 
 +   Encoder-decoder（编码解码器）架构，采用该架构的大模型有T5和BART。但到了当下，这类架构由于其泛化性、推理性能等因素已经少有使用。
@@ -6678,9 +6731,6 @@ https://arxiv.org/pdf/2304.08177.pdf
 除了上面四类架构外，也有一些新兴架构尝试，解决因为传统的 Transformer 架构的二次计算复杂度带来的效率问题。
 
 为提升 Transformer模型 训练的稳定性，业内提出了各种改进措施来增强其训练稳定性、性能和计算效率。这里涉及到确定 相应组件的超参数等配置，包括 归一化方法（LayerNorm，RMSNorm,DeepNorm）、归一化位置(Post Norm、Pre Norm、Sandwich Norm)、激活函数（ReLu，GeLU，Swish，SwiGLU，GeGLU）、Attention（Full attion、Sparse attention、Multi-query/grouped-query attention、FlashAttention、PagedAttention）以及位置embedding（Absolute，Relative，RoPE，ALiBi）。
-
-![](img/07fc740628df6c7de6545a9634765b73.png)
-
 除了确定模型架构和超参数外，还有其它一些任务需要设置，比如语言建模和去噪自动编码。随着LLM的实际应用，对其上下文长度的要求越来越高，也会确定长上下文建模（Long Context Modeling）相关配置，其包含扩展位置嵌入（Scaling Position Embeddings）和调整上下文窗口。另外，预训练完成的LLM，采用何种解码策略也是非常重要的，这里涉及到Greedy Search的策略（如Beam search设置和Length penalty系数）及Random Sampling的设置，（如常见温度采样或Top-k采样）。
 
 5）模型训练。有了数据，并且确定了模型架构、超参数配置以及其它相关配置后，就可以进入正式的训练。在此阶段，仍然有以下训练参数需要配置以优化训练速度和模型性能，包括：
@@ -6694,87 +6744,37 @@ https://arxiv.org/pdf/2304.08177.pdf
 +   稳定训练（Stabilizing the Training）。在 LLM 的预训练过程中，它经常会遇到训练不稳定问题，这可能会导致模型崩溃。为了解决这个问题，权重衰减和梯度裁剪已被广泛使用，其中现有研究通常将梯度裁剪的阈值设置为 1.0，权重衰减率设置为 0.1。然而，随着 LLM 的扩展，训练损失峰值也更容易发生，从而导致训练不稳定。为了减轻这个问题，PaLM 和 OPT 使用了一个简单的策略，即在峰值发生之前从较早的检查点重新启动训练过程，并跳过可能导致问题的数据。此外，GLM发现嵌入层的异常梯度通常会导致峰值，并提出收缩嵌入层梯度以缓解它。
 
 +   下图是常见的模型的训练配置总结：
-
-![](img/b80f8a06b49fe2ec79e99bd5d0105930.png)
-
 随着数据量和模型的参数规模越来越大，单机训练已经变得不可能，因此，大模型的并行训练变成了关键问题。当前主流的方法有以下几种：
 
 +   3D 并行训练、即三种维度的并行技术，包括数据并行、流水线并行和张量并行。
-
-![](img/5ab765863bb316c79a07291adbe4c1ce.png)
-
 1）数据并行（data parallelism, DP），即每张显卡上都完整保存一个模型，将数据分割成多个batch，然后独立计算梯度，最终再将梯度值平均化，作为最终梯度。在推理过程中，本质就是独立并行推理，可增加设备数来增加系统整体吞吐。
-
-![](img/ec33a15fd34f728e4c34d25a3d0d5979.png)
-
 2）张量并行，也叫模型并行（model parallelism/tensor parallelism, MP/TP）：模型张量很大，一张卡放不下，将tensor分割成多块，一张卡存一块，让每个卡分别计算，最后拼接（all gather）在一起。在推理过程中，可以将计算任务拆分到多个卡中并行计算,可横向增加设备数，从而提升并行度，以加少延迟。
-
-![](img/7569222d8216c4d944eda7bdb646844b.png)
-
 3) 流水线并行，将网络按层切分，划分成多组，一张卡存一组。下一张显卡拿到上一张显卡计算的输出进行计算，通过纵向增加设备数量可以提高流水线的并行性，减少显卡的等待时间，从而提升设备的利用率。
-
-![](img/14a087a9834be0f579b5201abbd1d72e.png)
-
 通过将模型并行和流水线并行联合使用，可以支持更大的模型，并获得最佳的效果。
-
-![](img/b3caf12bbc44db7196ec372f4bebc0f2.png)
-
 但需要注意的是，使用多个 GPU 并行推理并不会加快推理速度，而是可以将单个显卡无法运行的模型分片到多个显卡上运行。
 
 +   Zero训练
-
-![](img/73752ec067a566b7a5fd3bfd2d6fa8bd.png)
-
 Zero Redundancy Optimizer（零冗余优化器）由 DeepSpeed 库提出的 ZeRO 技术侧重于数据并行中的内存冗余问题。如前所述，数据并行性要求每个 GPU 存储相同的大语言模型副本，包括模型参数、模型梯度和优化器参数。然而，并非上述所有数据都需要保留在每个 GPU 上，这会导致内存冗余问题。为了解决这个问题，ZeRO 技术旨在在每个 GPU 上只保留一小部分数据，而其余数据可以在需要时从其他 GPU 检索。具体来说，ZeRO 提供了三种解决方案，根据这三部分数据的存储方式，分别是优化器状态分区、梯度分区和参数分区。实证结果表明，前两种解决方案没有增加通信开销，第三种解决方案增加了大约 50% 的通信开销，但节省的内存与 GPU 的数量成正比。PyTorch 实现了与 ZeRO 类似的技术，称为 FSDP。
 
 +   混合精度训练（Mixed Precision Training）
-
-![](img/981d92c4f3af9ac659dc3ccd0c05439f.png)
-
 为了减少显存占用，在训练时不必采用全精度训练，而是部分采用半精度 （FP16） 训练。此外，由于流行的 NVIDIA GPU（例如 A100）的 FP16 计算单元数量是 FP32 的两倍，因此 FP16 的计算效率可以进一步提高。然而，现有工作发现 FP16 可能会导致计算精度的损失，从而影响最终的模型性能，为了缓解它，称为大脑浮点 (Brain Floating Point ，BF16) 的替代方法已用于训练，与 FP16 相比，它分配了更多的指数位和更少的有效位。对于预训练，BF16 在表示精度上通常比 FP16 表现更好。
 
 **框架与工具**
 
 单GPU训练使用PyTorch及Huggingface Transformers等就可以完成，对于分布式大模型训练场景，代表性工具与平台有Megatron-LM、 DeepSpeed和Accelerate等方案，其中Megatron-LM是英伟达开发的一款专门针对大语言模型开发的分布式训练工具，包含了数据并行，模型并行混合精度训练和FlashAttention等优化技术。 DeepSpeed则是由微软开发的深度学习优化库，它提供了各种分布式优化技术支持，包括前面提到的ZeRO及pipeline并行等，微软结合Megatron-LM与DeepSpeed的优势开发了Megatron-DeepSpeed，提供了大量的优化技术和策略，实现大规模模型的高效训练，被众多开发者选用。 Accelerate是 由 huggingface出品的深度学习模型训练的优化库，支持常见的优化策略，轻松支持多GPU/TPU/fp16下的训练，Accelerate同样整合了Megatron-LM 的特性，还能进一步跑在DeepSpeed或者MPI集群上，由于huggingface transformers的流行，这个框架也被越来越多人使用。
-
-![](img/6d3ff236df8f758000b4e92dd97c5a60.png)
-
 https://github.com/hiyouga/LLaMA-Factory
 
 在此基础上，给读者介绍一个国内相对集成度高，便于使用的开源分布式低代码大模型训练框架LLaMA-Factory，它的前身是ChatGLM-Efficient-Turning，旨在为开发者提供可视化训练、推理平台及一键配置模型训练，可支持单机或利用Huggingface Accelerate或者DeepSpeed集群训练。
-
-![](img/8272c8f517bbb699918ecfedc9eeedac.png)
-
 基于LLaMA-Factory, 用户可轻松选择业界最全面的微调方法和优化技术，通过使用私域数据，或是LLaMA-Factory内置的中文数据集（GPT-4优化后的alpaca中文数据集、ShareGPT数据集和llama-factory提供的模型认知数据集），对常见的基座大模型进行进一步的训练和微调，在复杂的算力基础设施下完成领域大模型的定制开发。
-
-![](img/53d7a501db80993c78290d9857052c22.png)
-
 https://huggingface.co/spaces/hiyouga/LLaMA-Board
 
 基于人类反馈的强化学习的指令微调（RLHF）
 
 RLHF（Reinforcement Learning from Human Feedback）是一种通过人类反馈来训练强化学习模型的方法。它允许人类专家通过提供奖励或惩罚来指导模型的学习过程。这使得强化学习模型能够学习人类期望的行为，而无需明确地指定这些行为。其基本原理是将强化学习模型与人类专家结合起来，共同完成一个任务。人类专家通过提供奖励或惩罚来指导模型的学习过程。模型根据这些奖励或惩罚来调整自己的行为，从而逐渐学习到人类期望的行为，重点表现在有用性，诚实性，无害性等，比如希望回答更礼貌，幽默风趣以及对齐一些价值观。
-
-![](img/8368154c3eaf1b34911f31718691dd54.png)
-
 在前面的内容里，我们了解到大模型在预训练和指令微调阶段已经学到了知识和以及如何遵从用户指令完成具体下游任务的能力。2022 年 3 月OpenAI发布一篇论文，为了更好的对齐用户意图，提出了人类反馈的强化学习的指令微调（RLHF）技术。其中提到的InstructGPT就是在GPT-3基础上采用了该技术训练得到，也是ChatGPT 3.5背后的模型。
-
-![](img/7ed71455a10b8c98920958ae437fa69f.png)
-
 RLHF 系统主要包括三个关 键组件：要对齐的预训练模型（PLM）、由高质量的标记样本学习的奖励模型（RM），以 及训练 LM 的 RL 算法 （例如，近端策略优化（Proximal Policy Optimization, PPO） 。
-
-![](img/40e845eee67a5fe3b9701ef1d4d4c841.png)
-
 指令数据的示例
-
-![](img/b8168e7bea6bfc421a71029fbe064ac2.png)
-
-![](img/79603cd625fdcf68b815acac68c00d85.png)
-
 标注员打分排序
-
-![](img/c21945125ee6f167516a205887ffadc6.png)
-
 结果对比
 
 对比之前的 GPT-3模型，从效果上看RLHF为模型带来了以下能力：

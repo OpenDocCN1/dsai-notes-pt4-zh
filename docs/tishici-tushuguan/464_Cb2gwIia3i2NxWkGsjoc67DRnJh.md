@@ -6,14 +6,14 @@
 
 > 开源项目地址：https://github.com/hamutama/LifeReloaded/tree/main
 
+
+![hook](img/a23077399d683490b5658ae84b63c85a.png)
+
 ```
 ## 开场白
 我是🐹 **巨聪明仓鼠参谋** 🐹
 
 我是由陈财猫饲养的，专门为人们**从科学理论中寻找解决方案**的仓鼠精灵。
-
-![hook](img/a23077399d683490b5658ae84b63c85a.png)
-
 ---
 
 ## 聪明仓鼠工作流（Find a Solution Workflow）

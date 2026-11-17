@@ -330,14 +330,15 @@ combined_centered_image_path
     - 示例：
         ```
         A children&#x27;s illustration featuring a cute and simple style. The image should evoke a sense of joy and wonder, suitable for a young audience. The artwork should be colorful, with playful elements that engage the imagination. The scene can include friendly animals, whimsical trees, or magical objects, all designed with soft, rounded shapes for a gentle and inviting appearance. The overall composition should be easy for children to understand and appreciate, making them feel happy and curious to explore more.
+            * 示例图：[![pFsoo4I.png](img/2d9530f79187d52e3b9c6721f5838571.png)](https://imgse.com/i/pFsoo4I)
+            * 示例图：[![pFsoH8P.png](img/71cca9c714e24df21d48d1f9ee996d85.png)](https://imgse.com/i/pFsoH8P)
+            * 示例图：[![pFso7Ct.png](img/0ea3899c2373a493f6ebddc1488e81b2.png)](https://imgse.com/i/pFso7Ct)
+
         ```
     - 展示生成好的图片给用户，然后询问用户想要生成日历的形式（询问的同时需要展示图片的示例给用户）。
         + 横版日历：
-            * 示例图：[![pFsoo4I.png](img/2d9530f79187d52e3b9c6721f5838571.png)](https://imgse.com/i/pFsoo4I)
         + 竖版日历：
-            * 示例图：[![pFsoH8P.png](img/71cca9c714e24df21d48d1f9ee996d85.png)](https://imgse.com/i/pFsoH8P)
         + 镶嵌日历：
-            * 示例图：[![pFso7Ct.png](img/0ea3899c2373a493f6ebddc1488e81b2.png)](https://imgse.com/i/pFso7Ct)
 3. 等待用户选择想要的日历格式，根据对应的格式选择对应的日历使用python进行创作。
     301. 按照用户输入的年份和月份先按照下面的提示词绘制出基本日历（使用knowledge中名字为“downloa.png”的图片进行操作）
         3011. 帮我knowledge中名字为“downloa.png”的图片正上方用knowledge中字体“今年也要加油鸭.ttf”写上 “ 2024 年 12 月 ”同时保证这几个字的字体大小为60px，距离整张图片的最上方100px，同时确保文字水平居中
@@ -529,14 +530,15 @@ combined_centered_image_path
     - 绘画提示词：
         ```
         A children&#x27;s illustration featuring a cute and simple style. The image should evoke a sense of joy and wonder, suitable for a young audience. The artwork should be colorful, with playful elements that engage the imagination. The scene can include friendly animals, whimsical trees, or magical objects, all designed with soft, rounded shapes for a gentle and inviting appearance. The overall composition should be easy for children to understand and appreciate, making them feel happy and curious to explore more.
+            * 示例图：[![pFsoo4I.png](img/2d9530f79187d52e3b9c6721f5838571.png)](https://imgse.com/i/pFsoo4I)
+            * 示例图：[![pFsoH8P.png](img/71cca9c714e24df21d48d1f9ee996d85.png)](https://imgse.com/i/pFsoH8P)
+            * 示例图：[![pFso7Ct.png](img/0ea3899c2373a493f6ebddc1488e81b2.png)](https://imgse.com/i/pFso7Ct)
+
         ```
     - 展示生成好的图片给用户，然后询问用户想要生成日历的形式（询问的同时需要展示图片的示例给用户）。
         + 横版日历：
-            * 示例图：[![pFsoo4I.png](img/2d9530f79187d52e3b9c6721f5838571.png)](https://imgse.com/i/pFsoo4I)
         + 竖版日历：
-            * 示例图：[![pFsoH8P.png](img/71cca9c714e24df21d48d1f9ee996d85.png)](https://imgse.com/i/pFsoH8P)
         + 镶嵌日历：
-            * 示例图：[![pFso7Ct.png](img/0ea3899c2373a493f6ebddc1488e81b2.png)](https://imgse.com/i/pFso7Ct)
 3. 等待用户选择想要的日历格式，先根据301制作基本日历，然后再根据对应的格式选择对应的日历使用python进行创作。
     301. 按照用户输入的年份和月份先按照下面的提示词绘制出基本日历（使用knowledge中名字为“423aa54f-9fd1-44b8-8b52-9141f92871b3.png”的图片进行操作）
         3011. 帮我knowledge中名字为“423aa54f-9fd1-44b8-8b52-9141f92871b3.png”的图片正上方用knowledge中字体“今年也要加油鸭.ttf”写上 “ 2024 年 12 月 ”同时保证这几个字的字体大小为60px，距离整张图片的最上方100px，同时确保文字水平居中

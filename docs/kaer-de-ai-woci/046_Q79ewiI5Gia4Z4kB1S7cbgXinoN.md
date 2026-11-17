@@ -2,9 +2,9 @@
 
 > 来源：[https://aiwarts101.feishu.cn/docx/A6IOd7rTDohBIOxJA68cpD9wn6d](https://aiwarts101.feishu.cn/docx/A6IOd7rTDohBIOxJA68cpD9wn6d)
 
-```
 基于下面苹果 WWDC2025发布会关键信息，帮我用类似苹果发布会PPT的Bento Grid风格的视觉设计生成一个中文动态网页展示，在线引用背景图片，背景图片为：https://i.ibb.co/xtN61cRf/Comfy-UI-Output-4-1.png
 
+```
 网页具体要求为：
 使用Bento Grid风格的视觉设计，尽量在一页展示所有内容，文字颜色为白色，高亮文字色为苹果标志性的渐变，带有玻璃质感的卡片，卡片不需要深色背景
 强调超大字体或数字突出核心要点，画面中有超大视觉元素强调重点，与小元素的比例形成反差
@@ -17,13 +17,11 @@
 图标引用Font Awesome （https://use.fontawesome.com/releases/v5.11.2/css/all.css） ，避免使用emoji作为主要图标
 不要省略内容要点
 
-
 卡片样式严格参考如下实现方式：
 
 菜单项
 
 CSS样式：/* 容器 */.liquidGlass-wrapper { position: relative;
-
 
 display: flex;
 

@@ -426,30 +426,30 @@ PPT 轮播 + 角色配音 + 文案快节奏
 | :--- | :--- |
 | 1 | **角色:**&lt;br&gt; \* Sinu (穿着破旧夹克的少年)&lt;br&gt; \* Gumi (穿着华丽连衣裙的女孩)&lt;br&gt;&lt;br&gt;**机位与景别:**&lt;br&gt; \* 视角: 平视&lt;br&gt; \* 景别: 中景&lt;br&gt;&lt;br&gt;**构图与人物位置:**&lt;br&gt; \* Gumi 站在画面左侧，她的手处于向前伸出的姿态，朝向 Sinu。Sinu 站在画面右侧，身体后倾，将一个食物袋抱在怀里。&lt;br&gt;&lt;br&gt;**姿势表情:**&lt;br&gt; \* Gumi 的表情是**愤怒**。Sinu 的表情是**惊恐**。&lt;br&gt;&lt;br&gt;**环境:**&lt;br&gt; \* 黄昏时分的城市后巷，背景是砖墙和垃圾桶。 |
 | ... | ... (后续分镜以此类推) ... |
-```
-
-> gas 直接上提示词的谷歌小插件，一泽大佬分享的，要改提示词 直接在 txt 里面改。
 
 ![](img/f1ade2808c73a5ef740e47f6698a8611.png)
 
+
+![](img/9f1689995e8afa6b479ccaf1d1551bfc.png)
+
+
+![](img/0f8697cd28da9ab4a96e15ec8589a77c.png)
+
+
+![](img/2170734c51e2d16b38526037d9a3c3a7.png)
+
+```
+
+> gas 直接上提示词的谷歌小插件，一泽大佬分享的，要改提示词 直接在 txt 里面改。
 [prompt.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F0FxbhXuvoLAV8xXG5zcDd1Pnfh)
 
 > **操作流程步骤说明**
 
 1. 把 对标的 YouTube 的视频链接+提示词 丢给 GAS。
-
-![](img/9f1689995e8afa6b479ccaf1d1551bfc.png)
-
 2. 让 GAS 提取「**分镜 + 人物角色**」信息。
 
 **3. 默认提取出来的人物角色**是原视频角色，你可以继续和 GAS 沟通，把角色名称替换成你想要的人物，方便后面生成图片时统一垫图。
-
-![](img/0f8697cd28da9ab4a96e15ec8589a77c.png)
-
 4. 若有需要统一描述的地方，可以一**起在 Pro**mpt 里说明，让 GAS 统一优化调整。
-
-![](img/2170734c51e2d16b38526037d9a3c3a7.png)
-
 统一调整描述要求，我在剪辑第二个频**道的视频经常用**这个调整分镜脚本，对应的 对白脚本不换。
 
 > 请你对全部分镜进行伪原创，仅调整环境元素，人物站位。其他分镜内容不做改动。
@@ -502,6 +502,11 @@ You: I can&#x27;t use it.
 | 5 | **角色:**&lt;br&gt; \* jinu&lt;br&gt;&lt;br&gt;**机位与景别:**&lt;br&gt; \* 视角: 平视&lt;br&gt; \* 景别: 中景&lt;br&gt;&lt;br&gt;**构图与人物位置:**&lt;br&gt; \* jinu 位于画面中心，他正处于一个坐姿，身体坐落在一个由巨大仙人掌构成的绿色滑梯底部。他的双手紧握在身前，身体前倾。&lt;br&gt;&lt;br&gt;**姿势表情:**&lt;br&gt; \* jinu 的表情是**悲伤**。&lt;br&gt;&lt;br&gt;**环境:**&lt;br&gt; \* 一个室内空间，滑梯和旁边的护栏都是由巨大的仙人掌构成，背景有窗户和棕榈树。 |
 | 6 | **角色:**&lt;br&gt; \* jinu&lt;br&gt;&lt;br&gt;**机位与景别:**&lt;br&gt; \* 视角: 平视&lt;br&gt; \* 景别: 中景&lt;br&gt;&lt;br&gt;**构图与人物位置:**&lt;br&gt; \* jinu 站在仙人掌滑梯的前方，他的双臂向外张开，手掌朝前，身体处于一个略微后仰的姿态。&lt;br&gt;&lt;br&gt;**姿势表情:**&lt;br&gt; \* jinu 的表情是**惊恐**。&lt;br&gt;&lt;br&gt;**环境:**&lt;br&gt; \* 与前一镜头相同的仙人掌主题室内空间。 |```
 】
+
+![](img/6e863fc838bfe40046e6dc98f3abf777.png)
+
+![](img/3daf5dfd9ddd1918bac1ee44878a3cbb.png)
+
 ```
 
 ---
@@ -509,11 +514,6 @@ You: I can&#x27;t use it.
 > 直接下载分镜脚本小技巧
 
 1.  在全部提取视频脚**本提示词输出**格式的地方。这里我会加一个这个【```csv】，生成的分镜提示词可以直接下载成 txt，搭配后面的 自动提交插件可直接食用。
-
-![](img/6e863fc838bfe40046e6dc98f3abf777.png)
-
-![](img/3daf5dfd9ddd1918bac1ee44878a3cbb.png)
-
 ## **💬 五、对白脚本（GAS）**
 
 对白脚本同样有两条路径：

@@ -80,6 +80,80 @@ RAG系统往往是需要依靠高质量的结构化数据来生成准确且与�
     | 表头1   | 表头2   |
     |----------|----------|
     | 表格数据 | 表格数据 |
+
+![](img/109a2b91d5d06e6534bfc1c9b4a36c73.png)
+
+
+![](img/551812159273f0ab7060ea948da23d30.png)
+
+
+![](img/28151eb316706310434f3f88c63c9170.png)
+
+
+![](img/8f6a80a7721cc1e903745655c25d4702.png)
+
+
+![](img/4d45df48ee7071a5cc2ea8a37c6bd2ad.png)
+
+
+![](img/24a113db629d00577420ac9667f5f598.png)
+
+![](img/063e0aba40146cb695868f559f957cec.png)
+
+
+![](img/82560304f1315ba63e59e5ad3e088fe5.png)
+
+
+![](img/6720b3c2596afe2e2958a168fab8c593.png)
+
+
+![](img/b6a41de3826e81057974dbd4783b9ba2.png)
+
+
+![](img/b534d8530e599b80a984fa3014d1c8f5.png)
+
+
+![](img/3bd588f28265bbc5c0ef302619828353.png)
+
+
+![](img/18539db31ac78c56cc893300fb285cb6.png)
+
+
+![](img/295d7f51905c9c8040efb6ff00bf41ff.png)
+
+
+![](img/59e0259374223cdb6ebc804fbb2a1530.png)
+
+
+![](img/f2cb3df9084708a9c2fd3e053bfe510b.png)
+
+
+![](img/7acbfc81dc9ffea59630417f109e213b.png)
+
+
+![](img/0f22531c951210e3be87797dc495dc8e.png)
+
+
+![](img/17daec1bbdd730bf285a1c3c8fb5876e.png)
+
+
+![](img/a70c3ffb9c40f7a2b40295562422557c.png)
+
+
+![](img/9e8f29565dc97a1594dc83f9c0e4411a.png)
+
+
+![](img/4c712c5b68870a88bbea71b2cdbd542b.png)
+
+
+![](img/0be75b2093edad348a1ea6493dd826ff.png)
+
+
+![](img/3c79bab8e239f1293e8a845eed54cb4b.png)
+
+
+![](img/d5d6435acbcc02b14fcfbebe8a967a83.png)
+
 ```
 
 这种结构优势很明显，比如能给标题、表格、列表、链接等提供结构化的信息，添加了印刷强调元素，例如粗体或斜体，还能提供代码块、数学公式、图片、图表等，即易于编写，又易于阅读，即可以保留文档的原始结构，这包括保留布局、顺序以及不同部分（例如页眉、脚注、表格）之间的连接。对大模型来说，阅读和理解这种类型的输入文档上下文中是非常有效的。也正是因为Markdown格式文件的这种优势，所以现在主流的处理PDF格式文件的库、框架、工具，都是优先针对PDF --> Markdown 提取策略展开研究和优化。
@@ -87,19 +161,10 @@ RAG系统往往是需要依靠高质量的结构化数据来生成准确且与�
 +   **OCR技术兴起的背景**
 
 也正是随着这种多模态数据难处理的困境，OCR 技术也迎来了新的快速发展机遇。2025年10月16日发布的 PaddleOCR-VL 模型直接屠榜，在全球权威榜单OmniDocBench V1.5中以92.6分夺得综合性能第一，横扫文本识别、公式识别、表格理解与阅读顺序四项SOTA。
-
-![](img/109a2b91d5d06e6534bfc1c9b4a36c73.png)
-
 而紧接其后，DeepSeek 也于 2025年10月21日发布了 DeepSeek-OCR 模型，仅需7G的显存，就能完成高精度的表格、公式识别，图片语义识别，并且在多项评测指标中一举拿下SOTA成绩。
-
-![](img/551812159273f0ab7060ea948da23d30.png)
-
 这类模型的兴起，完全是源于真实应用需求的驱动。
 
 OCR（全称：Optical Character Recognition，光学字符识别）是将包含文本的图像（如扫描文档、照片、表单、书页）转换成 机器可读的文本格式的技术，如下图所示：
-
-![](img/28151eb316706310434f3f88c63c9170.png)
-
 这类模型并不是传统的OCR模型，而是拥有大模型多模态能力的OCR模型，这种模型被称为VLM（Vision-Language Model）模型、或者OCR 2.0模型。其中最本质的区别，就是多模态大模型在进行图像识别之前，会借助一个名叫视觉编码器的算法，将图像视觉信息映射到文本空间中，然后再借助大模型对文本语义的理解能力，间接的去理解图像信息。
 
 简单理解就是：你有一张扫描的图片，上面写满了打印或手写的文字，OCR 技术可以把这些“文字图像”变成“真实的文本数据”（可以编辑、搜查、分析）而不是只是“一个图片”而已。
@@ -111,17 +176,11 @@ OCR（全称：Optical Character Recognition，光学字符识别）是将包含
 # 二、企业级OCR项目适用场景及优劣势分析
 
 就目前的发展来看，OCR 与 RAG 的技术结合并不像简单的传统 OCR 是“你给我一张图像，我把文字提取出来”就可以了，重点不能仅仅放在去提取文字，而是要在 OCR 的基础上，不仅仅是“图像中的文字”被识别，还需要结合 视觉（图像）、语言（文本）、版面结构（布局）、场景环境/上下文 等多个模态（modalities）一起分析，使得识别和理解更强、更智能。
-
-![](img/8f6a80a7721cc1e903745655c25d4702.png)
-
 现代文档不仅仅是文本。它们包含多列布局、数学公式、半扫描表格、多语言文本以及分辨率奇数的图表。像 GPT-4o 或 Qwen-VL 这样的端到端模型可以解析它们，但它们速度慢、布局混乱，并且耗费 GPU 内存。所以企业环境下往往会选择更小、更紧凑的视觉模型来为解析工作提供支持。主流的企业级OCR项目应用如下：
 
 +   MinerU:[点击进入](https://github.com/opendatalab/MinerU)
 
 MinerU 是由 OpenDataLab（上海人工智能实验室下属团队）发起的一个开源工具，目标是将 PDF（含扫描件、复杂版式、多栏、多表格、多公式）转换为可机读的结构化格式（如 Markdown、JSON）以便进一步下游使用。项目的定位更偏「文档内容抽取／结构化」而不仅仅是传统 OCR。其取向是“将 PDF → Markdown/JSON”这一流程，而不仅“图片 → 文字”。
-
-![](img/4d45df48ee7071a5cc2ea8a37c6bd2ad.png)
-
 MinerU的主要工作流程分为以下几个阶段：
 
 1.  **输入**：接收PDF 格式文本，可以是简单的纯文本，也可以是包含双列文本、公式、表格或图等多模态PDF文件;
@@ -145,15 +204,7 @@ MinerU的主要工作流程分为以下几个阶段：
 1.  **输出（Output）**：高质量、结构良好的解析文档。
 
 如下是MinerU项目官方给出的配置参考：
-
-![](img/24a113db629d00577420ac9667f5f598.png)
-
-![](img/063e0aba40146cb695868f559f957cec.png)
-
 而VLM-Sglang后端则是利用sglang高性能推理引擎，优化了GPU加速及分布式部署的基础上同时支持实时流式输出，其流程如下：
-
-![](img/82560304f1315ba63e59e5ad3e088fe5.png)
-
 MinerU 项目非常适用于：
 
 +   需要从大量 PDF 文档中抽取结构化内容（例如学术文献、技术白皮书、报告）用于知识库或训练语料。
@@ -165,9 +216,6 @@ MinerU 项目非常适用于：
 +   PaddleOCR：[点击进入](https://github.com/PaddlePaddle/PaddleOCR/tree/main)
 
 PaddleOCR 是由 Baidu (及其生态) 基于其深度学习框架 PaddlePaddle 提供的开源 OCR 工具箱。支持从 PDF 或图像文档转为结构化数据（适配 AI 场景），支持 100+ 语言。最新版本 3.0 在其技术报告中提出：PP-OCRv5、PP-StructureV3、PP-ChatOCRv4 三大解决方案，覆盖文字识别、多版式文档解析、关键 信息提取。
-
-![](img/6720b3c2596afe2e2958a168fab8c593.png)
-
 在早期版本（如 PP-OCRv3）中，其结构可概括为：“检测 (Detection) → 分类 (Classification of orientation) → 识别 (Recognition)”。使用多种模型，例如检测模型（DBNet 等）、识别模型（如 SVTR），在 3.0 版本中，其“PP-StructureV3”整合了布局分析、表格识别、结构抽取。同时还最新推出了还推出了PaddleOCR-VL 的 Vision-Language 模型版本（0.9B 参数的 VLM），用于多语种文档解析。
 
 PaddleOCR-VL 是推出的一个专注于“文档解析／视觉-语言模型 (Vision-Language Model, VLM)”功能的新模块，采用了视觉-语言模型架构以应对更高阶的需求。在解析多模态数据方面，PaddleOCR将这项工作分为两部分：
@@ -185,9 +233,6 @@ PaddleOCR-VL 是推出的一个专注于“文档解析／视觉-语言模型 (V
 +   指针网络 （6 个转换器层）可确定元素的读取顺序 ，从上到下、从左到右等。
 
 最终输出统一模式的图片标注数据，如下图所示：
-
-![](img/b6a41de3826e81057974dbd4783b9ba2.png)
-
 第二阶段则是元素识别（PaddleOCR-VL-0.9B），这就是视觉语言模型发挥作用的地方。它使用：
 
 +   NaViT 风格编码器 （来自 Keye-VL），可处理动态图像分辨率。无平铺，无拉伸。
@@ -197,35 +242,20 @@ PaddleOCR-VL 是推出的一个专注于“文档解析／视觉-语言模型 (V
 +   ERNIE-4.5–0.3B 作为语言模型，该模型规模虽小但速度很快，并且采用 3D-RoPE 进行位置编码
 
 最终模型输出结构化 Markdown 或 JSON 格式的文件用于后续的处理。
-
-![](img/b534d8530e599b80a984fa3014d1c8f5.png)
-
 这个小小的设计决策， 将布局和识别分离，使得 PaddleOCR-VL 比通常的一体化系统更快、更稳定。同时根据实际的测试，其运行和解析速度也更快。在 A100 GPU 上， 吞吐量为 1.22 页/秒，。比 MinerU2.5 快 15.8%， VRAM 比 dots.ocr 少约 40%。
 
 +   DeepSeek-OCR：[点击进入](https://github.com/deepseek-ai/DeepSeek-OCR)
 
 DeepSeek 于 2025年10月21日发布了 DeepSeek-OCR 模型，仅需7G的显存，就能完成高精度的表格、公式识别，图片语义识别，并且在多项评测指标中一举拿下SOTA成绩。其 Github 相较于其他项目相对比较"简陋"，仅仅提供了Transformers 和 vLLM 启动 DeepSeek-OCR的服务示例代码文件：
-
-![](img/3bd588f28265bbc5c0ef302619828353.png)
-
 +   dots.ocr：[点击进入](https://github.com/dots-ai/dots.ocr)
 
 dots.ocr 是由 rednote‑hilab（HiLab团队）开源的多语种文档布局解析工具。官方介绍中强调：“一个统一的 Vision-Language 模型（≈1.7 B 参数）即可完成布局检测 + 内容识别 +阅读顺序排序”。支持文本、表格、公式、以及多语言输入。
-
-![](img/18539db31ac78c56cc893300fb285cb6.png)
-
 dots.ocr 的特点是用一个 VLM（1.7 B 参数）来统一布局解析+内容识别，而不是传统将检测、识别、结构分开。用户可通过不同 prompt 来切换任务（如“请输出版式元素的 bbox、类别、文本”）→ 即说明模型采用 prompt + VLM 的方式。
-
-![](img/295d7f51905c9c8040efb6ff00bf41ff.png)
-
 非常适合需要快速处理多语种、混版式文档，且希望用一个统一模型／prompt 来搞定。虽然表现不错，但对于极复杂的表格（如跨页表、合并单元格）或特殊版式效果并不是很理想。
 
 # 三、MinerU 项目概览与vllm 服务接口
 
 MinerU是一个非常典型的基于管道的解决方案 (Pipeline-based solution) ，并且是一个开源文档解析项目，一共四个核心组件，通过Pipeline的设计无缝衔接，实现比较高效、准确的文档解析。如下图所示：（下图来源官方论文：https://arxiv.org/pdf/2409.18839v1）
-
-![](img/59e0259374223cdb6ebc804fbb2a1530.png)
-
 MinerU的主要工作流程分为以下几个阶段：
 
 1.  **输入**：接收PDF 格式文本，可以是简单的纯文本，也可以是包含双列文本、公式、表格或图等多模态PDF文件;
@@ -249,17 +279,8 @@ MinerU的主要工作流程分为以下几个阶段：
 1.  **输出（Output）**：高质量、结构良好的解析文档。
 
 目前在Github 上，MinerU 的Star 数为48.2K，Fork 数为4K，拥有非常良好的社区支持和活跃的贡献者，且一直处于active development状态。
-
-![](img/f2cb3df9084708a9c2fd3e053bfe510b.png)
-
 MinerU 提供了在线Demo 页面，我们可以直接线进行测试。试用地址：https://opendatalab.com/OpenSourceTools/Extractor/PDF/
-
-![](img/7acbfc81dc9ffea59630417f109e213b.png)
-
 同时，MinerU 项目于2024年07月05日首次开源，底层主要是集成 PDF-Extract-Kit 开源项目做PDF的内容提取，PDF-Extract-Kit同样是一个开源项目：https://github.com/opendatalab/PDF-Extract-Kit
-
-![](img/0f22531c951210e3be87797dc495dc8e.png)
-
 PDF-Extract-Kit这个项目主要针对的是PDF文档的内容提取，通过集成众多SOTA模型对PDF文件实现高质量的内容提取，其中应用到的模型主要包括：
 
 PDF-Extract-Kit 应用的模型类型
@@ -292,9 +313,6 @@ MinerU与PDF-Extract-Kit的关系是：MinerU 结合PDF-Extract-Kit输出的高�
 ## 3.1 MinerU 源码安装
 
 针对MinerU这个项目，其提供了 MCP 服务的配置文件，但是存在很多BUG, 我们必须手动修改相关的源码才能适配如LangChain等框架中，所以这里我们建议大家采用Linux系统下的源码安装方式。如下是MinerU项目官方给出的配置参考：
-
-![](img/17daec1bbdd730bf285a1c3c8fb5876e.png)
-
 MinerU 实现了三个不同的处理后端，每个后端针对不同的用例和硬件配置进行了优化。其中Pipeline后端是默认的，也是最通用的后端，其采用传统的机器学习流程：
 
 1.  **输入**：接收PDF 格式文本，可以是简单的纯文本，也可以是包含双列文本、公式、表格或图等多模态PDF文件;
@@ -316,17 +334,8 @@ MinerU 实现了三个不同的处理后端，每个后端针对不同的用例�
 1.  格式转换（Format Conversion）：以 Markdown 或 JSON 格式生成输出。
 
 1.  **输出（Output）**：高质量、结构良好的解析文档。
-
-![](img/a70c3ffb9c40f7a2b40295562422557c.png)
-
 VLM-Transformer则是直接利用transformers库中的Vision-Language模型处理图像+文本的多模态输入，其流程如下：
-
-![](img/9e8f29565dc97a1594dc83f9c0e4411a.png)
-
 而VLM-Sglang后端则是利用sglang高性能推理引擎，优化了GPU加速及分布式部署的基础上同时支持实时流式输出，其流程如下：
-
-![](img/4c712c5b68870a88bbea71b2cdbd542b.png)
-
 各个后端的默认模型配置为：
 
 MinerU 后端默认模型配置
@@ -345,23 +354,14 @@ MinerU 的新版本不再严格限制python 3.10版本，但建议大家使用py
 +   **Step 1. 确认系统版本**
 
 我们使用的是Ubuntu 22.04 系统，可以通过cat /etc/os-release 命令查看系统版本，如下图所示：
-
-![](img/0be75b2093edad348a1ea6493dd826ff.png)
-
 +   **Step 2. 确认****CUDA**** 版本**
 
 在Linux 系统下，可以通过nvidia-smi 命令查看CUDA 版本，这里的服务器配置是四卡的RTX 3090 显卡，如下图所示：
-
-![](img/3c79bab8e239f1293e8a845eed54cb4b.png)
-
 CUDA Version 显示的版本号必须 >= 12.1，如显示的版本号小于12.1，需要自行升级CUDA 版本。
 
 +   **Step 3. 确认 ****Conda**** 版本**
 
 我们使用的是Anaconda 安装的Conda 环境，可以通过conda --version 命令查看Conda 版本，如下图所示：
-
-![](img/d5d6435acbcc02b14fcfbebe8a967a83.png)
-
 如果出现Conda not found 等报错，需要先安装Conda 环境，再执行接下来的步骤。
 
 +   **Step 4. 使用****Conda**** 创建****Python 3.11**** 版本的虚拟环境**
@@ -370,42 +370,42 @@ CUDA Version 显示的版本号必须 >= 12.1，如显示的版本号小于12.1�
 
 ```
     conda create --name mineru_2.5 python==3.11 -y
-```
 
 ![](img/a86464eb8cebe875f85a4e26c2698b1f.png)
 
-+   **Step 5. 激活虚拟环境**
-
-创建完虚拟环境后，使用Conda 激活虚拟环境，通过conda activate mineru_2.5 命令激活，如下图所示：
 
 ![](img/65cf4a2f5210a3af9d8fd7b249cd4c66.png)
 
-+   Step 6. 下载MinerU源码文件
-
-截止目前最新的MinerU项目源码版本为是：2.6.4-released，但当前版本的源码在使用MCP Server时存在一些Bug，所以我们针对源码做了一些修改。因此大家一定要下载我们课程网盘中的源码文件进行部署和使用。下载后上传至服务器中，解压文件，并进入解压后的文件夹，如下图所示：
 
 ![](img/90645a2f875cc9b81f8ce66018922eeb.png)
 
-注意，大家这里一定要使用我们课程提供的源码版本，因为我们对源码进行了非常多的修改才能适配MCP服务下使用MinerU vllm解析服务。
 
 ![](img/7ceb69f939337424ca4d01f61a8789e2.png)
 
 ![](img/1ca6be38411a109361e237e5cb586c7e.png)
 
+```
++   **Step 5. 激活虚拟环境**
+
+创建完虚拟环境后，使用Conda 激活虚拟环境，通过conda activate mineru_2.5 命令激活，如下图所示：
++   Step 6. 下载MinerU源码文件
+
+截止目前最新的MinerU项目源码版本为是：2.6.4-released，但当前版本的源码在使用MCP Server时存在一些Bug，所以我们针对源码做了一些修改。因此大家一定要下载我们课程网盘中的源码文件进行部署和使用。下载后上传至服务器中，解压文件，并进入解压后的文件夹，如下图所示：
+注意，大家这里一定要使用我们课程提供的源码版本，因为我们对源码进行了非常多的修改才能适配MCP服务下使用MinerU vllm解析服务。
 +   **Step 7. 安装****MinerU**** 项目依赖**
 
 使用Conda 安装MinerU 项目依赖，需要通过如下命令在新建的mineru 虚拟环境中安装运行MinerU 项目程序的所有依赖，命令如下：
 
 ```
     pip install -e .[all] -i https://mirrors.aliyun.com/pypi/simple
-```
 
 ![](img/4e5473a05b5d7b35f81a43857cc715fb.png)
 
-通过pip show mineru 命令查看MinerU 项目的版本：
 
 ![](img/5496d10ef5a217452e02e391fbabd2c4.png)
 
+```
+通过pip show mineru 命令查看MinerU 项目的版本：
 至此，基础的MinerU 项目依赖就安装完成了，接下来我们需要下载MinerU 项目中用到的模型文件，并进行项目配置。
 
 +   **Step 8. 下载****MinerU**** 项目中用到的模型文件**
@@ -414,30 +414,30 @@ CUDA Version 显示的版本号必须 >= 12.1，如显示的版本号小于12.1�
 
 ```
     mineru-models-download
-```
-
-执行该命令需要我们根据自己的需求灵活的选择要下载到本地的模型。其中modelscope 和 huggingface 是两个不同的模型下载源，我们只需要选择其中一个即可。(注意：国内用户建议使用modelscope 下载模型文件)。其次，pipeline指的是用于文档解析的一系列模型，而vlm指的是用于视觉语言模型的模型，即MinerU2.0-2505-0.9B 模型。如果是all，则会全部下载。
 
 ![](img/eb6099ba742fb0eef1ecb988429daf5b.png)
 
+```
+
+执行该命令需要我们根据自己的需求灵活的选择要下载到本地的模型。其中modelscope 和 huggingface 是两个不同的模型下载源，我们只需要选择其中一个即可。(注意：国内用户建议使用modelscope 下载模型文件)。其次，pipeline指的是用于文档解析的一系列模型，而vlm指的是用于视觉语言模型的模型，即MinerU2.0-2505-0.9B 模型。如果是all，则会全部下载。
 等待下载完成后，所有模型文件的默认存储路径是：
 
 ```
     /root/.cache/modelscope/hub/models/OpenDataLab
-```
 
 ![](img/1766f5f4afd3355f962b174cdeabfb5e.png)
 
-并且，也会自动在/root/mineru.json 文件中配置用于后续使用的模型路径。
 
 ![](img/d9f8a5d8d02c9bec8c9cfa34fec7510c.png)
 
-至此，MinerU 项目的本地配置就全部完成了，接下来我们可以尝试运行MinerU 项目并进行PDF 文档解析测试。
 
 ![](img/84297eb8a38c5476cef86ee64ce0c19e.png)
 
 ![](img/bda91e5308e466f3b6c560a2e8cca877.png)
 
+```
+并且，也会自动在/root/mineru.json 文件中配置用于后续使用的模型路径。
+至此，MinerU 项目的本地配置就全部完成了，接下来我们可以尝试运行MinerU 项目并进行PDF 文档解析测试。
 ## 3.2 MinerU 启动vLLM API 推理服务
 
 接下来新打开一个终端，启动mineru-api 服务：
@@ -446,14 +446,14 @@ CUDA Version 显示的版本号必须 >= 12.1，如显示的版本号小于12.1�
     export MINERU_MODEL_SOURCE=local  # 注意：这里需要将模型源设置为本地
     export CUDA_VISIBLE_DEVICES=3  # 使用 哪一块GPU
     mineru-api --host 192.168.110.131 --port 50000
-```
 
 ![](img/b1650fb9cca93913674b990af1a36394.png)
 
-启动后，在192.168.110.131:50000/docs中可以看到接口服务：
 
 ![](img/046c23f9aaf7c5fa16f225aa92254270.png)
 
+```
+启动后，在192.168.110.131:50000/docs中可以看到接口服务：
 ## 3.3 MinerU vLLM API服务连接测试
 
 ```
@@ -694,12 +694,12 @@ vLLM backend: 成功
 💡 提示:
   - pipeline: 使用本地 PyTorch，适合调试
   - vlm-vllm-async-engine: 使用 vLLM 加速，速度更快
-```
-
-当然，上述代码也是LangChain1.0 + OCR 多模态PDF解析实战项目中MinerU 的核心代码逻辑：
 
 ![](img/b89742d8c6098dd56790b6577c48ce49.png)
 
+```
+
+当然，上述代码也是LangChain1.0 + OCR 多模态PDF解析实战项目中MinerU 的核心代码逻辑：
 当然，MinerU 提供了命令行离线解析、Gradio/WebUI、独立 FastAPI 服务（mineru-api）等多种启动方式。不同方式适合的场景、端口、性能与依赖各不相同，如下所示：
 
 MinerU 启动方式
@@ -1020,6 +1020,12 @@ category_id 的类别
             &quot;page_idx&quot;: N
         }
     ]
+
+![](img/79d7faf9d08a8da665f4c740941461e8.png)
+
+
+![](img/3e3e761cbed850dd93582285fdd26f3e.png)
+
 ```
 
 字段说明
@@ -1042,9 +1048,6 @@ category_id 的类别
 # 四、PaddleOCR项目介绍及vLLM服务启动
 
 本小节课程，我们将从零开始，详细介绍如何在本地环境中完整部署 PaddleOCR-VL 并通过 vLLM 服务启动 PaddleOCR API 服务。
-
-![](img/79d7faf9d08a8da665f4c740941461e8.png)
-
 对于硬件要求，官方给出了如上说明。其中使用原生的PaddlePaddle方式，需要GPU算力≥8.5（RTX 3090/4090、A100 等），最稳定。使用vLLM方式，需要GPU算力≥8（RTX 3060 及以上），速度最快，但算力7-8之间（T4/V100）虽可运行但不推荐，易超时或OOM。使用SGLang方式，需要GPU算力8-12之间（RTX 3060-4090），性能与稳定性的平衡选择。
 
 注意：表格里的 "≥8" 指的是 GPU Compute Capability（GPU 算力版本号），不是显存大小！根据实测，根据PaddleOCR-VL-0.9B 模型（模型文件约 3.8GB）：
@@ -1068,15 +1071,15 @@ category_id 的类别
 1.  **验证安装** - 运行测试确保环境正常；
 
 公开课所使用的硬件环境为：Ubuntu 22.04 + 4 * 3090，共计显存96G显存，运行起来非常流畅。
-
-![](img/3e3e761cbed850dd93582285fdd26f3e.png)
-
 ## 4.1 创建虚拟环境
 
 首先，我们需要创建一个独立的 Python 虚拟环境。虚拟环境可以隔离项目依赖，避免与系统其他 Python 项目产生冲突。执行如下命令
 
 ```
     conda create -n ppocr-vllm python=3.11 -y
+
+![](img/616ff4b0d83c9937fe1e4dc2629e738f.png)
+
 ```
 
 其中：
@@ -1086,39 +1089,39 @@ category_id 的类别
 +   python==3.11：指定 Python 版本为 3.11（PaddleOCR 推荐版本）
 
 执行效果如下图所示：
-
-![](img/616ff4b0d83c9937fe1e4dc2629e738f.png)
-
 接下来激活虚拟环境：
 
 ```
     conda activate ppocr-vllm
-```
-
-激活后，命令行提示符前会显示 (ppocr-vllm)，表示已进入虚拟环境。
 
 ![](img/ffdd769d76e9aebed876624968e5e5c9.png)
 
-## 4.2 安装 PaddleOCR 工具框架
-
-首先需要区分PaddleOCR 和 PaddleOCR-VL 两个之间的区别和联系。首先。PaddleOCR 是一个较为成熟、功能全面的 OCR＋文档理解开源工具库，其开源地址：https://github.com/PaddlePaddle/PaddleOCR/tree/main
 
 ![](img/22ebe45bf761229bd3bf4c5ec1af6795.png)
 
-PaddleOCR-VL 是在这个生态内新发布的一个专注于“文档解析／视觉-语言模型 (Vision-Language Model, VLM)”功能的新模块。
 
 ![](img/d901f56b9062c4e8b92590d3308dfcfd.png)
 
-简单来说，PaddleOCR 是一个“全面且成熟”的 OCR＋文档理解工具箱，而 PaddleOCR-VL 是在这个工具箱里“专门为复杂文档解析”设计的新模块，采用了视觉-语言模型架构以应对更高阶的需求。
-
-因此，在使用PaddleOCR-VL 时，我们首先需要安装 PaddleOCR 工具框架。https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/develop/install/pip/linux-pip.html
 
 ![](img/4aa30b3f4c7023318f6e80cb3e08adce.png)
 
+```
+
+激活后，命令行提示符前会显示 (ppocr-vllm)，表示已进入虚拟环境。
+## 4.2 安装 PaddleOCR 工具框架
+
+首先需要区分PaddleOCR 和 PaddleOCR-VL 两个之间的区别和联系。首先。PaddleOCR 是一个较为成熟、功能全面的 OCR＋文档理解开源工具库，其开源地址：https://github.com/PaddlePaddle/PaddleOCR/tree/main
+PaddleOCR-VL 是在这个生态内新发布的一个专注于“文档解析／视觉-语言模型 (Vision-Language Model, VLM)”功能的新模块。
+简单来说，PaddleOCR 是一个“全面且成熟”的 OCR＋文档理解工具箱，而 PaddleOCR-VL 是在这个工具箱里“专门为复杂文档解析”设计的新模块，采用了视觉-语言模型架构以应对更高阶的需求。
+
+因此，在使用PaddleOCR-VL 时，我们首先需要安装 PaddleOCR 工具框架。https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/develop/install/pip/linux-pip.html
 这里安装 PaddlePaddle 3.2.0 版本。执行如下命令：
 
 ```
     python -m pip install paddlepaddle-gpu==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu126/
+
+![](img/77be0e4bdfc98ef37025d5fa670ec040.png)
+
 ```
 
 其中:
@@ -1130,33 +1133,36 @@ PaddleOCR-VL 是在这个生态内新发布的一个专注于“文档解析／�
 +   cu126：对应 CUDA 12.6 版本
 
 安装过程如下图所示：
-
-![](img/77be0e4bdfc98ef37025d5fa670ec040.png)
-
 安装结束后，需要验证 PaddlePaddle 安装状态，依次运行以下命令验证：
 
 ```
     python
     import paddle
     paddle.utils.run_check()
-```
 
 ![](img/67252fc5ececb01bb5461ade8e749f06.png)
 
-如果看到如下“”信息，说明 PaddlePaddle 已成功安装。
 
 ![](img/03309c1e2baccb8e14b80f61efb77b96.png)
 
+```
+如果看到如下“”信息，说明 PaddlePaddle 已成功安装。
 接下来要重点关注的是：PaddleOCR-VL 使用 safetensors 格式存储模型权重，需要额外安装，同时需要安装指定版本的，执行如下命令
 
 ```
     python -m pip install https://paddle-whl.bj.bcebos.com/nightly/cu126/safetensors/safetensors-0.6.2.dev0-cp38-abi3-linux_x86_64.whl
-```
-
-这是兼容最新PaddleOCR-Vl 的 safetensors 版本，安装很快。
 
 ![](img/9b0630a5b4f9af2d0141306401a007e4.png)
 
+
+![](img/5a4e824f6691b13bbf70e9dbef43d275.png)
+
+
+![](img/7db73b64745052e878b8f59881cf62ab.png)
+
+```
+
+这是兼容最新PaddleOCR-Vl 的 safetensors 版本，安装很快。
 ## 4.3 下载PaddleOCR-VL模型
 
 使用 PaddleOCR-VL 解析功能需要两个预训练模型，其中：
@@ -1166,13 +1172,7 @@ PaddleOCR-VL 是在这个生态内新发布的一个专注于“文档解析／�
 1.  **PP-DocLayoutV2** - 文档布局检测模型（用于布局分析）
 
 该模型权重的HuggingFace 地址为：https://huggingface.co/PaddlePaddle/PaddleOCR-VL ，
-
-![](img/5a4e824f6691b13bbf70e9dbef43d275.png)
-
 此外，对于我们国内用户来说，更建议通过 ModelScope 下载（推荐）。https://modelscope.cn/models/PaddlePaddle/PaddleOCR-VL/summary
-
-![](img/7db73b64745052e878b8f59881cf62ab.png)
-
 ModelScope 是阿里云的模型托管平台，国内访问速度快。首先执行如下命令：
 
 ```
@@ -1186,6 +1186,11 @@ ModelScope 是阿里云的模型托管平台，国内访问速度快。首先执
 
     # 下载完整模型（包含 PaddleOCR-VL-0.9B 和 PP-DocLayoutV2）
     model_dir = snapshot_download(&#x27;PaddlePaddle/PaddleOCR-VL&#x27;, local_dir=&#x27;.&#x27;)
+
+![](img/53a1c010d8029378526945eff8c92495.png)
+
+![](img/bdffaeb729f7bbfaa6f248ab35aec07e.png)
+
 ```
 
 其中：
@@ -1193,23 +1198,21 @@ ModelScope 是阿里云的模型托管平台，国内访问速度快。首先执
 +   'PaddlePaddle/PaddleOCR-VL'：模型仓库 ID
 
 +   local_dir='.'：下载到当前目录（也可以指定其他路径，如 './models'）
-
-![](img/53a1c010d8029378526945eff8c92495.png)
-
-![](img/bdffaeb729f7bbfaa6f248ab35aec07e.png)
-
 接下来执行如下代码进行模型权重安装：
 
 ```
    python download_paddleocr_vl.py
-```
 
 ![](img/8effbc57982935d0f19c03870d1a43bc.png)
 
-下载完成后的模型目录结构如下所示：
 
 ![](img/cfacbc2bd7903391822bf7bd7e7e45e6.png)
 
+
+![](img/fc46a1689de4944ed5f5bbc3beb61b76.png)
+
+```
+下载完成后的模型目录结构如下所示：
 其中 PaddleOCR-VL-0.9B 文件夹中存储的就是本次最新开源的超紧凑视觉语言模型，具有以下特点：
 
 PaddleOCR-VL-0.9B 模型特性
@@ -1224,28 +1227,25 @@ PaddleOCR-VL-0.9B 模型特性
 | **优势** | 比 MinerU 快 15.8%，显存占用比 dots.ocr 少 40% |
 
 接下来，在进行运行前需要依次安装依赖包，首先是paddleocr[all], 其中：
-
-![](img/fc46a1689de4944ed5f5bbc3beb61b76.png)
-
 ```
     # 只希望使用基础文字识别功能（返回文字位置坐标和文本内容），包含 PP-OCR 系列
     python -m pip install paddleocr
     # 希望使用文档解析、文档理解、文档翻译、关键信息抽取等全部功能
     # python -m pip install &quot;paddleocr[doc-parser]&quot;
-```
-
-这里我们安装doc-parser，如下图所示：
 
 ![](img/a751607617b1b789555d26c2bc2d5db4.png)
 
+```
+
+这里我们安装doc-parser，如下图所示：
 然后，使用 PaddleOCR CLI 安装 vLLM 的推理加速服务依赖：
 
 ```
     paddleocr install_genai_server_deps vllm
-```
 
 ![](img/7dbadf0a14a7c5972f64f8da3867ea4a.png)
 
+```
 安装完成后，继续安装 flash-atten 编译包：
 
 ```
@@ -1260,42 +1260,42 @@ PaddleOCR-VL-0.9B 模型特性
     --backend vllm \
     --host 0.0.0.0 \
     --port 8118
-```
 
 ![](img/18ebb65491dff5e561f004a2aa06faf9.png)
 
+```
 vLLM 服务启动后，保持这个终端窗口运行，不要关闭。同时打开一个新的终端，使用paddlex连接启动的paddleocr-vl服务，首先进行初始化服务配置：
 
 ```
     paddlex --install serving
-```
 
 ![](img/be20c8ef53189fad70dab0070dc73c97.png)
 
+```
 然后生成 .yaml 配置文件：
 
 ```
     paddlex --get_pipeline_config PaddleOCR-VL
-```
 
 ![](img/22e14379362438a06ba256bfbb8c46e8.png)
 
-找到 genai_config 配置项，修改为如下所示：
 
 ![](img/287cac4337b0e5240f0d02e1aa2f790f.png)
 
+```
+找到 genai_config 配置项，修改为如下所示：
 最后，启动 PaddleOCR API 服务：
 
 ```
     paddlex --serve --pipeline PaddleOCR-VL.yaml --port 10800 --host 192.168.110.131 --paddle_model_dir /home/MuyuWorkSpace/02_OcrRag
-```
 
 ![](img/43cbd574dc4e730b90c99b1fad413d80.png)
 
-成功启动后，在浏览器中访问 http://192.168.110.131:10800/docs 查看API文档，如下图所示：
 
 ![](img/12420af02985e06e1308d4062d8e501c.png)
 
+```
+成功启动后，在浏览器中访问 http://192.168.110.131:10800/docs 查看API文档，如下图所示：
 至此，PaddleOCR API 服务启动成功。
 
 ## 4.4 PaddleOCR vLLM API服务连接测试
@@ -1353,6 +1353,12 @@ else:
 
 ```
 成功生成 Markdown：result.md
+
+![](img/d6e529f8f5b9f11284b92248ce6e0189.png)
+
+
+![](img/dbe1e1db7004c5997975b050ce968fef.png)
+
 ```
 
 PaddleOCR Doc Parser 命令参数如下表所示：
@@ -1430,15 +1436,9 @@ VLM生成参数
 | --paddlex_config | PaddleX 管道配置文件路径 |
 
 当然，上述代码也是LangChain1.0 + OCR 多模态PDF解析实战项目中PaddleOCR 的核心代码逻辑：
-
-![](img/d6e529f8f5b9f11284b92248ce6e0189.png)
-
 # 五、DeepSeek-OCR vLLM 服务接口启动
 
 DeepSeek-OCR 作为刚刚开源的小型多模态视觉模型，经过我们团队大量的测试，其不仅识别精度高，同时对中文的支持也非常出色，同时也能够输出结构化的 Markdown 格式文档。
-
-![](img/dbe1e1db7004c5997975b050ce968fef.png)
-
 ## 5.1 环境配置要求
 
 在开始部署之前，我们首先需要确认自己的服务器是否满足运行条件。
@@ -1459,22 +1459,22 @@ DeepSeek-OCR 作为刚刚开源的小型多模态视觉模型，经过我们团�
 ```
     # 检查 GPU 是否正常工作
     nvidia-smi
-```
-
-执行上述命令后，如果看到类似下面的输出，说明GPU正常工作：
 
 ![](img/082f7732e67288c32fd462e2b2320ec5.png)
 
+```
+
+执行上述命令后，如果看到类似下面的输出，说明GPU正常工作：
 接下来检查 Conda 是否安装，执行如下命令：
 
 ```
     conda --version
-```
-
-如果看到类似 conda XXX 的版本号，说明conda已经安装。如果提示命令不存在，需要先安装 miniconda 或者 anaconda3。
 
 ![](img/a76c62fbbbc0af650645584907e33685.png)
 
+```
+
+如果看到类似 conda XXX 的版本号，说明conda已经安装。如果提示命令不存在，需要先安装 miniconda 或者 anaconda3。
 ## 5.2 DeepSeek-OCR模型下载
 
 环境准备好之后，接下来我们需要下载 DeepSeek-OCR 模型文件，并进行相应的配置。这一步是整个部署过程的核心。国内用户强烈建议大家使用 ModelScope 下载模型，没有网络限制，同时速度也会快很多。
@@ -1483,6 +1483,9 @@ DeepSeek-OCR 作为刚刚开源的小型多模态视觉模型，经过我们团�
 
 ```
     conda create --name deepseek-ocr-vllm python==3.10
+
+![](img/090d42133f20b1eaefe3c32aac1f3407.png)
+
 ```
 
 其中：
@@ -1492,31 +1495,28 @@ DeepSeek-OCR 作为刚刚开源的小型多模态视觉模型，经过我们团�
 +   python==3.10：指定 Python 版本为 3.10（PaddleOCR 推荐版本）
 
 执行效果如下图所示：
-
-![](img/090d42133f20b1eaefe3c32aac1f3407.png)
-
 接下来激活虚拟环境：
 
 ```
     conda activate deepseek-ocr-vllm
-```
-
-激活后，命令行提示符前会显示 (deepseek-ocr-vllm)，表示已进入虚拟环境。
 
 ![](img/f390eb541e489e4a7d2188f2f6f9b947.png)
 
-接下来，在ModelScope 平台下载 DeepSeek-OCR 模型文件。地址：https://modelscope.cn/models/deepseek-ai/DeepSeek-OCR
 
 ![](img/000c407ac6913a723f0f04ade78ea262.png)
 
+```
+
+激活后，命令行提示符前会显示 (deepseek-ocr-vllm)，表示已进入虚拟环境。
+接下来，在ModelScope 平台下载 DeepSeek-OCR 模型文件。地址：https://modelscope.cn/models/deepseek-ai/DeepSeek-OCR
 ModelScope 是阿里云的模型托管平台，国内访问速度快。首先执行如下命令：
 
 ```
     pip install modelscope
-```
 
 ![](img/8904a044e7c44a1d37dbc06d8ce62678.png)
 
+```
 然后执行如下代码：
 
 ```
@@ -1534,23 +1534,17 @@ ModelScope 是阿里云的模型托管平台，国内访问速度快。首先执
 
 ```
    python download_deepseek_ocr.py
-```
 
 ![](img/f864240ef94af2f51fd0609f64e5cd92.png)
 
-下载完成后的模型目录结构如下所示：
 
 ![](img/d456d1aa4d4d85873fbfc4bc5fc52212.png)
 
 ![](img/d5d51f495236ed0bee4edaf94d2d3359.png)
 
-## 5.3 Deepseek-OCR vLLM 项目文件
-
-DeepSeek-OCR通过 vLLM 平台启动，我们是借助DeepSeek-OCR官方提供的项目代码，并做了一些优化和调整，其官方源码下载地址：https://github.com/deepseek-ai/DeepSeek-OCR/tree/main/DeepSeek-OCR-master/DeepSeek-OCR-vllm
 
 ![](img/43291baaf20d33878cd9e85bd4822e88.png)
 
-我们将项目文件下载到本地并上传到服务器上：
 
 ![](img/162603ec0b6d541715dbd3d8d06acdf4.png)
 
@@ -1558,34 +1552,40 @@ DeepSeek-OCR通过 vLLM 平台启动，我们是借助DeepSeek-OCR官方提供�
 
 ![](img/430144f88986e05dd4bfeb8965ef48f3.png)
 
-其中deepseek_ocr.py 和 flash_attn-2.7.3+cu12torch2.6cxx11abiFALSE-cp310-cp310-linux_x86_64.whl 使我们给大家提供的两个核心文件，一个用于封装 DeepSeek OCR API 接口，另一个则是离线安装的 fla_ttn 的离线安装包。
 
 ![](img/aac2b5efdc59d1fda85a60db6ba81973.png)
 
-接下来一键安装 vLLM 运行 DeepSeek-OCR的依赖包：
 
 ![](img/8b1579d13b95a51304a5cd7508ca3939.png)
 
-安装结束后，使用我们给大家提供的deepseek_ocr.py文件，启动 DeepSeek OCR API 接口 服务。
 
 ![](img/ab33658f89cdaa35252db23d99c259d7.png)
 
+```
+下载完成后的模型目录结构如下所示：
+## 5.3 Deepseek-OCR vLLM 项目文件
+
+DeepSeek-OCR通过 vLLM 平台启动，我们是借助DeepSeek-OCR官方提供的项目代码，并做了一些优化和调整，其官方源码下载地址：https://github.com/deepseek-ai/DeepSeek-OCR/tree/main/DeepSeek-OCR-master/DeepSeek-OCR-vllm
+我们将项目文件下载到本地并上传到服务器上：
+其中deepseek_ocr.py 和 flash_attn-2.7.3+cu12torch2.6cxx11abiFALSE-cp310-cp310-linux_x86_64.whl 使我们给大家提供的两个核心文件，一个用于封装 DeepSeek OCR API 接口，另一个则是离线安装的 fla_ttn 的离线安装包。
+接下来一键安装 vLLM 运行 DeepSeek-OCR的依赖包：
+安装结束后，使用我们给大家提供的deepseek_ocr.py文件，启动 DeepSeek OCR API 接口 服务。
 启动命令如下：
 
 ```
     python ocr_client.py --model-path /home/data/nongwa/workspace/model/OCR/DeepSeek-OCR --gpu-id 3 --port 8797 --host 192.168.110.131
-```
 
 ![](img/b85ada97553b13e191a55c69a06be5f2.png)
 
-启动成功后，会显示如下：
 
 ![](img/c1cbd0f1434970fb79b49b088c96c216.png)
 
-接下来，便可以在网页端查看到 FastAPI 接口：
 
 ![](img/1ab4e131f31ab4c03ff8cad0ba4744b4.png)
 
+```
+启动成功后，会显示如下：
+接下来，便可以在网页端查看到 FastAPI 接口：
 ## 5.4 DeepSeek-OCR API 连接测试
 
 前面我们完成了服务的部署和启动，接下来我们要学习如何在实际项目中调用这个 OCR 服务。本节将通过完整的代码示例，带领大家掌握图片识别和 PDF 文档处理的全流程。
@@ -1815,16 +1815,16 @@ Markdown 已保存: course_deepseek.md
     # 固定 Prompt
     PROMPT_OCR = &quot;&lt;image&gt;\n&lt;|grounding|&gt;Convert the document to markdown.&quot;
     PROMPT_DESC = &quot;&lt;image&gt;\nDescribe this image in detail.&quot;
-```
-
-当然，上述代码也是LangChain1.0 + OCR 多模态PDF解析实战项目中DeepSeek-OCR 的核心代码逻辑：
 
 ![](img/2fe2000300f5c7453d74ea82b2ff7f6c.png)
 
-# 六、OCR 多模态解析系统本地部署
 
 ![](img/a70e0d5a5eec6ed4a4ab2d77347389cb.png)
 
+```
+
+当然，上述代码也是LangChain1.0 + OCR 多模态PDF解析实战项目中DeepSeek-OCR 的核心代码逻辑：
+# 六、OCR 多模态解析系统本地部署
 完整的系统需要同时启动后端和前端两个服务。首先对于后端服务启动，需要依次执行如下操作：
 
 ```
@@ -1894,14 +1894,14 @@ Markdown 已保存: course_deepseek.md
 
 ```
     python main.py
-```
 
 ![](img/85fead82f51e6b8ee052bb072860aeeb.png)
 
-然后，便可以在 http://192.168.110.131:8000/docs 查看 API 文档：
 
 ![](img/06dab9ff81c435da2fcc7864b9d3dff5.png)
 
+```
+然后，便可以在 http://192.168.110.131:8000/docs 查看 API 文档：
 前端服务启动，需要依次执行如下操作:
 
 ```
@@ -1917,58 +1917,58 @@ Markdown 已保存: course_deepseek.md
     npm run dev
     # 或
     yarn dev
-```
 
 ![](img/1ec498876178335e66b460323ee62efc.png)
 
-启动成功后，即可通过http://localhost:3000访问应用。
 
 ![](img/d25d65b2f507f257903f1b6cbbdc2444.png)
 
-# 【加餐】 LangChain1.0 接入 MinerU MCP Server
-
-随着MinerU项目的发展，除了解析性能上进一步提升，同时也支持了MCP协议，可以通过stdio、Http + Sse和 Streamable Http三种通信模型进行访问。因此，本小节我们重点讲解MinerU项目在MCP协议下的使用，并基于LangChain 1.0 新版本实现MinerU MCP的接入。
-
-最新版本的MinerU 项目中内置了MCP Server 服务，我们可以通过该服务将MinerU 的解析服务暴露给ADK 或 Agent 使用。与常规的MCP Server 构建方式一样，也是通过 FastMCP 外放FastAPI 服务并支持stdio、Http+Sse和StreamableHttp 三种传输方式。源码位置如下：
 
 ![](img/fe3952d4fc84a54379af68d6fd736d8c.png)
 
 ![](img/6176f4929120c058e224100cb5f257be.png)
 
-这里我们使用StreamableHttp 传输方式，并且在启动前，修改下源码，使其可以加载我们通过命令行传递的host参数，否则只能使用默认的localhost 地址。如下所示：
 
 ![](img/f665505b67fc5381c9234a80611cd6b2.png)
 
+```
+启动成功后，即可通过http://localhost:3000访问应用。
+# 【加餐】 LangChain1.0 接入 MinerU MCP Server
+
+随着MinerU项目的发展，除了解析性能上进一步提升，同时也支持了MCP协议，可以通过stdio、Http + Sse和 Streamable Http三种通信模型进行访问。因此，本小节我们重点讲解MinerU项目在MCP协议下的使用，并基于LangChain 1.0 新版本实现MinerU MCP的接入。
+
+最新版本的MinerU 项目中内置了MCP Server 服务，我们可以通过该服务将MinerU 的解析服务暴露给ADK 或 Agent 使用。与常规的MCP Server 构建方式一样，也是通过 FastMCP 外放FastAPI 服务并支持stdio、Http+Sse和StreamableHttp 三种传输方式。源码位置如下：
+这里我们使用StreamableHttp 传输方式，并且在启动前，修改下源码，使其可以加载我们通过命令行传递的host参数，否则只能使用默认的localhost 地址。如下所示：
 接下来创建MCP的uv环境，首先通过pip 安装 uv:
 
 ```
     pip install uv
-```
 
 ![](img/4bf311998a89d508959228056103877a.png)
 
+```
 然后通过uv 创建MCP 的uv 环境，并安装MinerU 项目中用到的依赖：
 
 ```
     uv venv
     source .venv/bin/activate
     uv pip install -e .
-```
 
 ![](img/0a6be24c4b15a411ffe84ee1049949ac.png)
 
+```
 安装完成后，我们就可以通过uv 启动MCP 服务了：
 
 ```
     uv run mineru-mcp --transport streamable-http --host 192.168.110.131
-```
 
 ![](img/24f27f78052c8f0615ad4530832fbe62.png)
 
-启动后，我们可以在浏览器中访问http://192.168.110.131:8000/mcp快速进行验证：
 
 ![](img/0d577ad58c3c8d08516b592589ec90fe.png)
 
+```
+启动后，我们可以在浏览器中访问http://192.168.110.131:8000/mcp快速进行验证：
 需要重点注意的是：parse_documents 工具是MinerU 项目中通过FastAPI 外放的工具接口，其本质上，调用的是mineru-api 服务中的/api/parse 接口。所以，大家要理解的逻辑是：
 
 FastMCP 负责暴露parse_documents和get_ocr_languages 工具协议，而真正做 PDF→Markdown 的逻辑在 MinerU 的“本地解析服务”里，并通过 /file_parse 路由完成。MCP 只是一个工具“壳”，真正干活的是mineru-api。因此，我们首先需要修改MinerU MCP Server的配置文件，让其找到解析服务。如下所示：
@@ -1976,35 +1976,35 @@ FastMCP 负责暴露parse_documents和get_ocr_languages 工具协议，而真正
 ```
     mv env.example .env
     vi .env
-```
 
 ![](img/b826da1fedb74e301800ee627177fa81.png)
 
-修改如下：
 
 ![](img/07606a39fe91d6706d5e8f0d23c7064e.png)
 
+```
+修改如下：
 其中USE_LOCAL_API=true 表示使用本地解析服务，LOCAL_API_URL 表示本地解析服务的地址。修改完成后重新启动MinerU MCP Server 服务。
 
 ```
     uv run mineru-mcp --transport streamable-http --host 192.168.110.131
-```
 
 ![](img/1f7c3ddd9af5b843b4fadc10c97c0585.png)
 
+```
 接下来新打开一个终端，启动`mineru-api` 服务：
 
 ```
     export MINERU_MODEL_SOURCE=local  # 注意：这里需要将模型源设置为本地
     mineru-api --host 192.168.110.131 --port 30000
-```
 
 ![](img/c5c4ca6b19ca5afcafb7e6a077e91c10.png)
 
-启动后，在192.168.110.131:30000/docs中可以看到接口服务：
 
 ![](img/6f8473f7037edac6ee9615022055bd2b.png)
 
+```
+启动后，在192.168.110.131:30000/docs中可以看到接口服务：
 全部验证成功后，我们就可以在LangChain中使用MCP 服务了。代码如下：
 
 ```

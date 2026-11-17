@@ -384,10 +384,11 @@ Markdown 作为一种排版工具语言，其作用是为了帮助我们处理�
 
 代码如下：
 
+![logo](img/5f47375a0c534aa9f6e6886ab157ed03.png)
+
 ```
 这是[百度](http://www.baidu.com)的网址
 这是百度logo：
-![logo](img/5f47375a0c534aa9f6e6886ab157ed03.png)
 ```
 
 显示效果如下：

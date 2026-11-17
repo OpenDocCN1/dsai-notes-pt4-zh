@@ -255,6 +255,11 @@ https://ptcskv5x9m.us.aircode.run/index
 
 输出结果
 
+    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/tq72lb.1705646197699_k8srk5l5nlo.svg&quot;
+    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/2k1j9v.1705646197699_y46ubk119lm.svg&quot;
+    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/iano8b.1705646197700_kbunckhcl3e.svg&quot;
+    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/abs5ew.1705646197701_zayt5vmzqz.svg&quot;
+
 ```
 [
   {
@@ -263,7 +268,6 @@ https://ptcskv5x9m.us.aircode.run/index
     &quot;foldCount&quot;: &quot;0&quot;,
     &quot;name&quot;: &quot;撇&quot;,
     &quot;letter&quot;: &quot;s&quot;,
-    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/tq72lb.1705646197699_k8srk5l5nlo.svg&quot;
   },
   {
     &quot;shape&quot;: &quot;一&quot;,
@@ -271,7 +275,6 @@ https://ptcskv5x9m.us.aircode.run/index
     &quot;foldCount&quot;: &quot;0&quot;,
     &quot;name&quot;: &quot;横&quot;,
     &quot;letter&quot;: &quot;j&quot;,
-    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/2k1j9v.1705646197699_y46ubk119lm.svg&quot;
   },
   {
     &quot;shape&quot;: &quot;𠄌&quot;,
@@ -279,7 +282,6 @@ https://ptcskv5x9m.us.aircode.run/index
     &quot;foldCount&quot;: &quot;1&quot;,
     &quot;name&quot;: &quot;竖提&quot;,
     &quot;letter&quot;: &quot;h&quot;,
-    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/iano8b.1705646197700_kbunckhcl3e.svg&quot;
   },
   {
     &quot;shape&quot;: &quot;㇏&quot;,
@@ -287,7 +289,6 @@ https://ptcskv5x9m.us.aircode.run/index
     &quot;foldCount&quot;: &quot;0&quot;,
     &quot;name&quot;: &quot;捺&quot;,
     &quot;letter&quot;: &quot;l&quot;,
-    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/abs5ew.1705646197701_zayt5vmzqz.svg&quot;
   },
   {
     &quot;radicalCount&quot;: 4,
@@ -618,6 +619,10 @@ https://ptcskv5x9m.us.aircode.run/index
                 draw.text((x_positions[i], y_position_label), texts_label[i], fill=&#x27;black&#x27;, font=font_label)
 
             image.show()
+        ![对应的图片](strokeImage)
+        ![对应的图片](strokeImage)
+        ![对应的图片](strokeImage)
+
             ```
     202. 利用 Action[ptcskv5x9m.us.aircode.run]使用参数&quot;char&quot;对这个字进行搜索。
         - 展示搜索结果 json 中最后一项中的参数，把用户的结构(struct)、偏旁部首（radical）、由几部分组成（radicalCount），用幽默有趣的方式告知孩子。
@@ -639,11 +644,8 @@ https://ptcskv5x9m.us.aircode.run/index
 4. 书写方式：根据Action[ptcskv5x9m.us.aircode.run]中的返回值，先依次展示返回值中的每一部分（除最后一个返回值外，使用每一个返回值的参数shape、type、name、strokeImage）。
     - 格式案例：
         1. 竖（丨）: 平笔
-        ![对应的图片](strokeImage)
         2. 横折（𠃍）: 折笔
-        ![对应的图片](strokeImage)
         3. 横（一）: 平笔
-        ![对应的图片](strokeImage)
         ...
 
 5. 练习：询问用户是否想要做些例句和提醒加以巩固学习。

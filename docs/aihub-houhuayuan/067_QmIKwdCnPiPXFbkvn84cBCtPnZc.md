@@ -122,6 +122,8 @@ print(response)
 
 ### 视觉大模型推理示例代码
 
+    {&#x27;image&#x27;: &#x27;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&#x27;},
+
 ```
 #Qwen-VL 是阿里云研发的大规模视觉语言模型（Large Vision Language Model, LVLM）。Qwen-VL 可以以图像、文本、检测框作为输入，并以文本和检测框作为输出。Qwen-VL 系列模型性能强大，具备多语言对话、多图交错对话等能力，并支持中文开放域定位和细粒度图像识别与理解。
 from modelscope import (
@@ -142,7 +144,6 @@ model = AutoModelForCausalLM.from_pretrained(model_dir, device_map=&quot;cuda&qu
 
 # 1st dialogue turn
 query = tokenizer.from_list_format([
-    {&#x27;image&#x27;: &#x27;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&#x27;},
     {&#x27;text&#x27;: &#x27;这是什么&#x27;},
 ])
 response, history = model.chat(tokenizer, query=query, history=None)

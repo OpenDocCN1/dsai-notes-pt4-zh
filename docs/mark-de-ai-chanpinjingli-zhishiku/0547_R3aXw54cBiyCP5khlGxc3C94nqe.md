@@ -14,9 +14,10 @@
 
 > 数**据的收集再整个RA**G实施过程中无疑是最耗人工的，涉及到收集、清洗、格式化、切分等过程。这里使用云的官方文档作为知识库的基础。文档格式大概这样：
 
+    &quot;content&quot;: &quot;DDoS IP高防结合Web应用防火墙方案说明\n=======================\n\n\nDDoS IP高防+Web应用防火墙提供三层到七层安全防护体系，应用场景包括游戏、金融、电商、互联网、政企等云内和云外的各类型用户。\n\n\n部署架构\n====\n\n\n[![\&quot;部署架构\&quot;](\&quot;https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Advanced%20Anti-DDoS/Best-Practice02.png\&quot;)](\&quot;https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Advanced%20Anti-DDoS/Best-Practice02.png\&quot;)  \n\nDDoS IP高防+Web应用防火墙的最佳部署架构如下：\n\n\n* 云的安全调度中心，通过DNS解析，将用户域名解析到DDoS IP高防CNAME。\n* 用户正常访问流量和DDoS攻击流量经过DDoS IP高防清洗，回源至Web应用防火墙。\n* 攻击者恶意请求被Web应用防火墙过滤后返回用户源站。\n* Web应用防火墙可以保护任何公网的服务器，包括但不限于云，其他厂商的云，IDC等\n\n\n方案优势\n====\n\n\n1. 用户源站在DDoS IP高防和Web应用防火墙之后，起到隐藏源站IP的作用。\n2. CNAME接入，配置简单，减少运维人员工作。\n\n\n&quot;,
+
 ```
 {
-    &quot;content&quot;: &quot;DDoS IP高防结合Web应用防火墙方案说明\n=======================\n\n\nDDoS IP高防+Web应用防火墙提供三层到七层安全防护体系，应用场景包括游戏、金融、电商、互联网、政企等云内和云外的各类型用户。\n\n\n部署架构\n====\n\n\n[![\&quot;部署架构\&quot;](\&quot;https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Advanced%20Anti-DDoS/Best-Practice02.png\&quot;)](\&quot;https://jdcloud-portal.oss.cn-north-1.jcloudcs.com/cn/image/Advanced%20Anti-DDoS/Best-Practice02.png\&quot;)  \n\nDDoS IP高防+Web应用防火墙的最佳部署架构如下：\n\n\n* 云的安全调度中心，通过DNS解析，将用户域名解析到DDoS IP高防CNAME。\n* 用户正常访问流量和DDoS攻击流量经过DDoS IP高防清洗，回源至Web应用防火墙。\n* 攻击者恶意请求被Web应用防火墙过滤后返回用户源站。\n* Web应用防火墙可以保护任何公网的服务器，包括但不限于云，其他厂商的云，IDC等\n\n\n方案优势\n====\n\n\n1. 用户源站在DDoS IP高防和Web应用防火墙之后，起到隐藏源站IP的作用。\n2. CNAME接入，配置简单，减少运维人员工作。\n\n\n&quot;,
     &quot;title&quot;: &quot;DDoS IP高防结合Web应用防火墙方案说明&quot;,
     &quot;product&quot;: &quot;DDoS IP高防&quot;,
     &quot;url&quot;: &quot;https://docs.jdcloud.com/cn/anti-ddos-pro/anti-ddos-pro-and-waf&quot;

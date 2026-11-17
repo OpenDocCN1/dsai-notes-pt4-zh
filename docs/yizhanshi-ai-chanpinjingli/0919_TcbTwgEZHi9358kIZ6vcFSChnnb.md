@@ -1003,9 +1003,10 @@ plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
 
 +   字符串拼接内容：
 
+![生成图片]({{String1[0]}})
+
 ```
 ## 数据可视化结果📊
-![生成图片]({{String1[0]}})
 ```
 
 +   命名为图片生成成功
@@ -1022,9 +1023,10 @@ plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
 
 +   字符串拼接内容：
 
+![图片生成失败](img/cd026c59db59ddbb22a09de7af99fd54.png)
+
 ```
 ## 生成图片失败/(ㄒoㄒ)/~~
-![图片生成失败](img/cd026c59db59ddbb22a09de7af99fd54.png)
 **注意**：报错原因为{{String1}}，小概率会出现环境中没有相关字体的情况，建议重新运行一下
 ```
 

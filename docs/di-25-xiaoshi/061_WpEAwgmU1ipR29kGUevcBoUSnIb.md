@@ -86,6 +86,8 @@
 
 有了上面的这些数据以后，下面，我们是要让处理数据的格式，让上面的数据可以为我们所用。在项目根目录下创建新的文件夹brand，然后创建一个新的文件data.js。具体代码如下:
 
+      const src = `http://127.0.0.1:8080/brand/train/${label}-${i}.jpg`;
+
 ```
 const IMAGE_SIZE = 224;
 
@@ -111,7 +113,6 @@ export const getInputs = async () =&gt; {
   const labels = [];
   for (let i = 0; i &lt; 30; i += 1) {
     [&#x27;android&#x27;, &#x27;apple&#x27;, &#x27;windows&#x27;].forEach((label) =&gt; {
-      const src = `http://127.0.0.1:8080/brand/train/${label}-${i}.jpg`;
       const img = loadImg(src);
       loadImgs.push(img);
       labels.push([

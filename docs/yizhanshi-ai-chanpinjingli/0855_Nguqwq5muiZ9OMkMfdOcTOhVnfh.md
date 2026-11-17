@@ -773,11 +773,12 @@ async def main(args: Args) -&gt; Output:
 
 **输出**：测试节点的输出，
 
+      &quot;output&quot;: &quot;&lt;img src=\&quot;https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/FileBizType.BIZ_BOT_DATASET/3046123432840397_1741792115652745816_FIxwvOxHsT.jpg?lk3s=61a3dea3&amp;x-expires=1744384715&amp;x-signature=Lu0%2F4M6hWsX%2BdZZn20cwI%2B0SHHo%3D\&quot;&gt; description: 这是一幅动画画面，中心是女孩。她穿着一件浅棕色的上衣和一条深灰色的裙子。她的头发是棕色的，眼睛很大。在她的脸上，似乎在嘲笑或者叫喊。&quot;
+
 ```
 {
   &quot;outputList&quot;: [
     {
-      &quot;output&quot;: &quot;&lt;img src=\&quot;https://lf3-appstore-sign.oceancloudapi.com/ocean-cloud-tos/FileBizType.BIZ_BOT_DATASET/3046123432840397_1741792115652745816_FIxwvOxHsT.jpg?lk3s=61a3dea3&amp;x-expires=1744384715&amp;x-signature=Lu0%2F4M6hWsX%2BdZZn20cwI%2B0SHHo%3D\&quot;&gt; description: 这是一幅动画画面，中心是女孩。她穿着一件浅棕色的上衣和一条深灰色的裙子。她的头发是棕色的，眼睛很大。在她的脸上，似乎在嘲笑或者叫喊。&quot;
     }
   ]
 }

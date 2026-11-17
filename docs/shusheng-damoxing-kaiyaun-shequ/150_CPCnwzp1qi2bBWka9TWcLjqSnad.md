@@ -42,14 +42,15 @@ touch cli-demo.py
 
 简易的cli-demo.py脚本如下，复制后粘贴进入/root/demo/cli-demo.py即可：
 
+
+image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;)
+
 ```
 from lmdeploy import pipeline, TurbomindEngineConfig, GenerationConfig, ChatTemplateConfig
 from lmdeploy.vl import load_image
 
 model = &#x27;/share/new_models/InternVL3/InternVL3-2B&#x27;
 pipe = pipeline(model, backend_config=TurbomindEngineConfig(session_len=16384, tp=1), chat_template_config=ChatTemplateConfig(model_name=&#x27;internvl2_5&#x27;))
-
-image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;)
 gen_config = GenerationConfig(top_k=40, top_p=0.8, temperature=0.8)
 sess = pipe.chat((&#x27;描述一下图片&#x27;, image), gen_config=gen_config)
 print(sess.response.text)

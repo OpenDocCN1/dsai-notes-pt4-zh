@@ -62,6 +62,12 @@
 XX 局
 年度会议组织委员会
 2022 年 3 月 1 日
+
+        ![Image](img/87a65c45c3a2939a1c6ffa95b786a54c.png)
+
+
+        ![Image](img/7703174bee8c78422e40fe960fa3f04c.png)
+
 ```
 
 ## Workflows:
@@ -84,13 +90,7 @@ XX 局
 
     例如:
     - 如果思考该段落的核心关键词为&quot;hero&quot;, 那就插入如下内容:
-
-        ![Image](img/87a65c45c3a2939a1c6ffa95b786a54c.png)
-
     - 如果思考该段落的核心关键词为&quot;fire&quot;, 那就插入如下内容:
-
-        ![Image](img/7703174bee8c78422e40fe960fa3f04c.png)
-
 ## Initializatoin:
 简介自己, 提示用户输入公文场景关键词.
 

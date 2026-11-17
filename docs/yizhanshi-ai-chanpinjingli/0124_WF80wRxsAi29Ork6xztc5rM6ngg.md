@@ -140,6 +140,8 @@ print(response)
 
 #### 响应示例
 
+            &quot;cover_image_url&quot;: &quot;https://sfile.chatglm.cn/testpath/video_cover/4d3c5aad-8c94-5549-93b7-97af6bd353c6_cover_0.png&quot;,
+
 ```
 
 {
@@ -148,7 +150,6 @@ print(response)
     &quot;task_status&quot;: &quot;SUCCESS&quot;,
     &quot;video_result&quot;: [
         {
-            &quot;cover_image_url&quot;: &quot;https://sfile.chatglm.cn/testpath/video_cover/4d3c5aad-8c94-5549-93b7-97af6bd353c6_cover_0.png&quot;,
             &quot;url&quot;: &quot;https://sfile.chatglm.cn/testpath/video/4d3c5aad-8c94-5549-93b7-97af6bd353c6_0.mp4&quot;
         }
     ]

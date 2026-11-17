@@ -124,10 +124,11 @@ ui.base 参数用于添加聊天窗口的整体 UI 效果，包括应用图标�
 
 **示例代码**
 
+          icon: &#x27;https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/FileBizType.BIZ_BOT_ICON/3290203753552072_1728716719140087481_I4Wrvxocdg.png?lk3s=50ccb0c5&amp;x-expires=1744880642&amp;x-signature=zWvoLXLwkUiM2igdBcNvxb0zssU%3D&#x27;,
+
 ```
 **    ui**: { 
       base: { 
-          icon: &#x27;https://lf26-appstore-sign.oceancloudapi.com/ocean-cloud-tos/FileBizType.BIZ_BOT_ICON/3290203753552072_1728716719140087481_I4Wrvxocdg.png?lk3s=50ccb0c5&amp;x-expires=1744880642&amp;x-signature=zWvoLXLwkUiM2igdBcNvxb0zssU%3D&#x27;,
           layout: &#x27;pc&#x27;, 
           zIndex: 1000, 
       } 

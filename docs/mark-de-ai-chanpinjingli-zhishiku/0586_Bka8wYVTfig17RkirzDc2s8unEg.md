@@ -12,9 +12,10 @@
 
 首先下载 demo 文件：
 
+wget http://download.openmmlab.com/agentlego/road.jpg
+
 ```
 cd /root/agent
-wget http://download.openmmlab.com/agentlego/road.jpg
 ```
 
 由于 AgentLego 在安装时并不会安装某个特定工具的依赖，因此我们接下来准备安装目标检测工具运行时所需依赖。

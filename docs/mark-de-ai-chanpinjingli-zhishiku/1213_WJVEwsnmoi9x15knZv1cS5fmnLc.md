@@ -86,6 +86,8 @@
 
 ## **生成的html 页面源码**
 
+      background-image: url(&#x27;https://img.zcool.cn/community/016b5f59e163c3a801216a538aa3db.jpg@1280w_1l_2o_100sh.jpg&#x27;);
+
 ```
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;zh-CN&quot;&gt;
@@ -146,7 +148,6 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url(&#x27;https://img.zcool.cn/community/016b5f59e163c3a801216a538aa3db.jpg@1280w_1l_2o_100sh.jpg&#x27;);
       background-size: cover;
       background-position: center;
       opacity: 0.15;

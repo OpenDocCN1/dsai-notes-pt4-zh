@@ -20,6 +20,8 @@
 
 ### 请求示例
 
+                        &quot;url&quot;: &quot;https://ts1.cn.mm.bing.net/th/id/R-C.3997eb10814025183c8fbbc6b5373713?rik=fSPsSA1rrKXAzw&amp;riu=http%3a%2f%2fdpic.tiankong.com%2fau%2fpw%2fQJ6612208802.jpg&amp;ehk=c%2f0WAvYPgW2uwrHdpUenuYb4L%2f0oQkiOmmJoSawaX4A%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0&quot;
+
 ```
 from zhipuai import ZhipuAI
 
@@ -38,7 +40,6 @@ response = client.chat.completions.create(
                 {
                     &quot;type&quot;: &quot;image_url&quot;,
                     &quot;image_url&quot;: {
-                        &quot;url&quot;: &quot;https://ts1.cn.mm.bing.net/th/id/R-C.3997eb10814025183c8fbbc6b5373713?rik=fSPsSA1rrKXAzw&amp;riu=http%3a%2f%2fdpic.tiankong.com%2fau%2fpw%2fQJ6612208802.jpg&amp;ehk=c%2f0WAvYPgW2uwrHdpUenuYb4L%2f0oQkiOmmJoSawaX4A%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0&quot;
                     }
                 }
             ]

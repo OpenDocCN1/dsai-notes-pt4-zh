@@ -1224,8 +1224,9 @@ C:\ProgramData\anaconda3\envs\jupyter_env\Lib\site-packages\IPython\core\pylabto
 python_result.final_output
 ```
 
-```
 &#x27;以下是模拟数据并绘制的核密度分布图结果：\n\n![核密度分布图](img/9f3f76d967444b9aae0cc6030af0524b.png)  \n（由于当前环境无法直接显示图像，你可以将代码复制到本地运行或使用Jupyter Notebook查看结果。）\n\n### 数据摘要\n生成的随机数据（部分）如下：\n```python\n[-0.05289009, 0.3355611, -0.08952764, 0.06761305, 0.57812478, -0.46408604, ...]\n```\n\n### 代码说明\n1. 使用`numpy.random.normal`生成了1000个符合标准正态分布（均值为0，标准差为1）的随机数。\n2. 使用`seaborn.kdeplot`绘制核密度估计图，填充了曲线下方的区域。\n3. 添加了标题和坐标轴标签。\n\n如果你需要调整数据分布、图表样式或其他功能，请告诉我！&#x27;
+
+```
 ```
 
 +   sql_inter函数创建与使用

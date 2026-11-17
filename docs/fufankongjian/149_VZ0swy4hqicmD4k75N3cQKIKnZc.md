@@ -453,6 +453,8 @@ pip install html2text                  # 用于 HTML 表格转 Markdown
 
 +   上一小节PDF转化MD流程回顾
 
+                md_lines.append(f&quot;![Image](./{img_path})\n&quot;)
+
 ```
 import os
 import fitz
@@ -513,7 +515,6 @@ for el in elements:
         # 避免重复插入：只插入当前图片对应的文件
         for img_path in image_map.get(page_num, []):
             if img_path not in inserted_images:
-                md_lines.append(f&quot;![Image](./{img_path})\n&quot;)
                 inserted_images.add(img_path)
     else:
         md_lines.append(text + &quot;\n&quot;)

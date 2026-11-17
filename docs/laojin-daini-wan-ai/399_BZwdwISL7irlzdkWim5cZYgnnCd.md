@@ -201,8 +201,9 @@ mistralai/Mistral-7B-Instruct-v0.2 (32K，免费)
 
 在提示词中包含图片 URL：
 
-```
 绘 将这张图片中的猫娘头上加上玫瑰 https://demo-cloudflare-imgbed.pages.dev/file/3a58a0d70ecf5439ec784.png -m sdxl ---9:16
+
+```
 ```
 
 ![](img/74f7910e416af95a9ce9ef79968fd1ed.png)

@@ -245,6 +245,9 @@ h2 {
 
 **纯粹的 Markdown 语法其实非**常简单, 70 行的语法介绍就可以写完.
 
+
+![图片提示语](图片地址)
+
 ```
 # 一级标题
 
@@ -305,9 +308,6 @@ print(&quot;Hello, World!&quot;)
 ---
 
 [超链接名称](链接地址)
-
-![图片提示语](图片地址)
-
 ---
 
 表格:
@@ -404,11 +404,14 @@ function add(x, y) {
 
 可以用下面的语法插入超链接和图片:
 
-```
-[超链接名称](链接地址)
 
 ![图片提示语](图片地址)
 
+
+![OrangeX&#x27;s Avatar](images/profile.jpg)
+
+```
+[超链接名称](链接地址)
 例如, 可以使用网址和图床:
 
 [OrangeX4&#x27;s Blog]
@@ -418,8 +421,6 @@ function add(x, y) {
 也可以在本地用相对地址:
 
 [Other](other.md)
-
-![OrangeX&#x27;s Avatar](images/profile.jpg)
 ```
 
 ### 6.4剪贴板图片插入

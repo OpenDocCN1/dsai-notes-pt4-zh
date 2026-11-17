@@ -407,6 +407,8 @@
 
 +   version：1.0
 
+{$IMAGE_URL=&quot;https://example.com/serene_mountain_lake.jpg&quot;}
+
 ```
 - author: 山雨
 &lt;OptimizedInstructions&gt;
@@ -474,8 +476,6 @@
 
 &lt;Example&gt;
 输入:
-{$IMAGE_URL=&quot;https://example.com/serene_mountain_lake.jpg&quot;}
-
 预期输出:
 &lt;DynamicVideoConceptMagic&gt;
   &lt;OriginalEssence&gt;宁静如镜的山湖倒映着巍峨雪峰&lt;/OriginalEssence&gt;

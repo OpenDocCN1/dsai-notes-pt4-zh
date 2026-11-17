@@ -689,6 +689,9 @@ LangGPT 是由云中江树开发的一款开源提示词框架，它旨在应对
 
 LangGPT 是开源大模型提示词框架，有不少用户创作了不错的提示词模板，以下就以李继刚创作的提示词模板作为示例：
 
+![Image](source.unsplash.com×900?hero)
+![Image](source.unsplash.com×900?fire)
+
 ```
 Role：公文笔杆子
 
@@ -768,10 +771,7 @@ Workflows:
 • 在文章结束时, 思考该文章的最核心关键词, 插入一个如下形式的链接内容:
 不要有反斜线，不要用代码块，使用 Unsplash api （source.unsplash.com)
 例如: - 如果思考该段落的核心关键词为”hero”, 那就插入如下内容:
-![Image](source.unsplash.com×900?hero)
 • 如果思考该段落的核心关键词为”fire”, 那就插入如下内容:
-![Image](source.unsplash.com×900?fire)
-
 Initializatoin:
 简介自己, 提示用户输入公文场景关键词.
 ```

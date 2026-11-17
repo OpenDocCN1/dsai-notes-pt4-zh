@@ -340,6 +340,9 @@ touch /root/pipeline.py
 
 将以下内容复制粘贴进pipeline.py。
 
+image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
+
+
 ```
 from lmdeploy import pipeline
 from lmdeploy.vl import load_image
@@ -348,9 +351,6 @@ from lmdeploy.vl import load_image
 pipe = pipeline(&#x27;/root/models/InternVL-Chat-V1-5&#x27;)
 
 # 加载图片，这里使用了网络URL
-image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
-
-
 # 使用管道处理图片和文本提示
 response = pipe((&#x27;请用中文描述这幅图&#x27;, image))
 
@@ -476,6 +476,8 @@ python /root/pipeline.py
 
 然后让我们回到/root/pipeline.py文件里修改图片路径为当前图片路径。
 
+# image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
+
 ```
 from lmdeploy import pipeline
 from lmdeploy.vl import load_image
@@ -484,7 +486,6 @@ from lmdeploy.vl import load_image
 pipe = pipeline(&#x27;/root/models/InternVL-Chat-V1-5&#x27;)
 
 # 加载图片，这里使用了网络URL
-# image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
 # 加载图片，这里修改为本地路径
 image = load_image(&#x27;/root/test1.jpg&#x27;)
 
@@ -515,6 +516,8 @@ python /root/pipeline.py
 
 首先让我们回到/root/pipeline.py文件里修改line13的提示词。
 
+# image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
+
 ```
 from lmdeploy import pipeline
 from lmdeploy.vl import load_image
@@ -523,7 +526,6 @@ from lmdeploy.vl import load_image
 pipe = pipeline(&#x27;/root/models/InternVL-Chat-V1-5&#x27;)
 
 # 加载图片，这里使用了网络URL
-# image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
 # 加载图片，这里修改为本地路径
 image = load_image(&#x27;/root/test1.jpg&#x27;)
 
@@ -558,6 +560,9 @@ touch /root/pipeline_Multi-images.py
 
 双击打开pipeline_Multi-images.py，将以下内容复制粘贴进pipeline_Multi-images.py，并按Ctrl+S键保存（Mac用户按Command+S）。
 
+    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;,
+    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/det.jpg&#x27;
+
 ```
 # 导入pipeline函数和TurbomindEngineConfig配置类
 from lmdeploy import pipeline, TurbomindEngineConfig
@@ -572,8 +577,6 @@ pipe = pipeline(&#x27;/root/models/InternVL-Chat-V1-5&#x27;,
 
 # 定义一个列表，包含要处理的图片的URLs
 image_urls=[
-    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;,
-    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/det.jpg&#x27;
 ]
 
 # 使用列表推导式，通过load_image函数加载每个URL对应的图片
@@ -612,6 +615,9 @@ python /root/pipeline_Multi-images.py
 
 回到/root/pipeline_Multi-images.py文件里修改修改图片路径并按Ctrl+S键保存（Mac用户按Command+S）。
 
+    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;,
+    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/det.jpg&#x27;
+
 ```
 # 导入pipeline函数和TurbomindEngineConfig配置类
 from lmdeploy import pipeline, TurbomindEngineConfig
@@ -627,8 +633,6 @@ pipe = pipeline(&#x27;/root/models/InternVL-Chat-V1-5&#x27;,
 # 定义一个列表，包含要处理的图片的URLs
 &#x27;&#x27;&#x27;
 image_urls=[
-    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;,
-    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/det.jpg&#x27;
 ]
 &#x27;&#x27;&#x27;
 # 定义一个新列表，包含要处理的图片的路径

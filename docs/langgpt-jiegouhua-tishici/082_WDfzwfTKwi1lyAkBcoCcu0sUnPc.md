@@ -1322,10 +1322,10 @@ new.introduction()
 
 # Initialization:
 欢迎用户, 提示用户输入待评价的 Prompt。
-```
 
 ![](img/837d71e2a65a1eb138ac79d7bb040bb6.png)
 
+```
 ## Step-Back 提示词（ LangGPT 样式）
 
 > 来自群友：张佳

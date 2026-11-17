@@ -2,6 +2,8 @@
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/EIVcduz8OoXNfqx2WQHcEtNwnlg](https://v11enp9ok1h.feishu.cn/docx/EIVcduz8OoXNfqx2WQHcEtNwnlg)
 
+    &quot;&lt;img src=\&quot;https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter7/chunking_texts.svg\&quot;/&gt;\n&quot;,
+
 ```
 {
  &quot;cells&quot;: [
@@ -69,7 +71,6 @@
     &quot;2. 如果你的语料里面有别的语言，你也可以使用多语言。这个都无所谓的。只要保证你使用的Tokenizer能覆盖你的数据即可\n&quot;,
     &quot;3. `context_length = 512`设置你的每一个文本的最长长度，我这里设置的是512，如果你的显卡显寸小，那你可以改小一点，比如128。但是多出来的数据，并不是说直接截断不要了，而是按照`context_length`长度，不断的对文本进行截断，大概就像是下面这样的：\n&quot;,
     &quot;\n&quot;,
-    &quot;&lt;img src=\&quot;https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter7/chunking_texts.svg\&quot;/&gt;\n&quot;,
     &quot;\n&quot;,
     &quot;\n&quot;,
     &quot;4. 对于`gpt2`模型，需要告诉模型一句话从哪里开始，从哪里结束。因此我们需要设置`bos_token`、`eos_token`、`unk_token`\n&quot;,

@@ -242,34 +242,35 @@ outputcontent 是解析后的JavaScript对象，及将input content由一个字�
 
 1.  *** 分割线
 
+![]({{outputimage[0].data_structural[0].image_thumb.url}})
+ 
+![]({{outputimage[1].data_structural[0].image_thumb.url}})
+ 
+![]({{outputimage[2].data_structural[0].image_thumb.url}})
+ 
+![]({{outputimage[3].data_structural[0].image_thumb.url}})
+ 
+![]({{outputimage[4].data_structural[0].image_thumb.url}})
+
 ```
 ## {{outputtext[0].title}}
 *{{outputtext[0].text}}*
-![]({{outputimage[0].data_structural[0].image_thumb.url}})
- 
 ***
  
 ## {{outputtext[1].title}}
 *{{outputtext[1].text}}*
-![]({{outputimage[1].data_structural[0].image_thumb.url}})
- 
 ***
  
 ## {{outputtext[2].title}}
 *{{outputtext[2].text}}*
-![]({{outputimage[2].data_structural[0].image_thumb.url}})
- 
 ***
  
 ## {{outputtext[3].title}}
 *{{outputtext[3].text}}*
-![]({{outputimage[3].data_structural[0].image_thumb.url}})
- 
 ***
  
 ## {{outputtext[4].title}}
 *{{outputtext[4].text}}*
-![]({{outputimage[4].data_structural[0].image_thumb.url}})
 ```
 
 # 四、 常见问题和解决方案

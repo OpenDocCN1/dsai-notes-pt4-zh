@@ -1625,6 +1625,8 @@ https://github.com/MicrosoftLearning/mslearn-ai-vision/blob/main/Instructions/La
 
 chat-app.py
 
+                image_url = &quot;https://github.com/MicrosoftLearning/mslearn-ai-vision/raw/refs/heads/main/Labfiles/gen-ai-vision/orange.jpeg&quot;
+
 ```
 import os
 from urllib.request import urlopen, Request
@@ -1638,7 +1640,6 @@ from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
 from openai import AzureOpenAI
 
-
 def main(): 
 
     # Clear the console
@@ -1651,7 +1652,6 @@ def main():
         project_endpoint = os.getenv(&quot;PROJECT_CONNECTION&quot;)
         model_deployment =  os.getenv(&quot;MODEL_DEPLOYMENT&quot;)
 
-
         # Initialize the project client
         # Initialize the project client
         project_client = AIProjectClient(            
@@ -1662,15 +1662,10 @@ def main():
                 endpoint=project_endpoint,
             )
 
-        
-
         # Get a chat client
         # Get a chat client
         openai_client = project_client.inference.get_azure_openai_client(api_version=&quot;2024-10-21&quot;)
         
-
-
-
         # Initialize prompts
         system_message = &quot;You are an AI assistant in a grocery store that sells fruit. You provide detailed answers to questions about produce.&quot;
         prompt = &quot;&quot;
@@ -1685,10 +1680,8 @@ def main():
             else:
                 print(&quot;Getting a response ...\n&quot;)
 
-
                 # Get a response to image input
                 # Get a response to image input
-                image_url = &quot;https://github.com/MicrosoftLearning/mslearn-ai-vision/raw/refs/heads/main/Labfiles/gen-ai-vision/orange.jpeg&quot;
                 image_format = &quot;jpeg&quot;
                 request = Request(image_url, headers={&quot;User-Agent&quot;: &quot;Mozilla/5.0&quot;})
                 image_data = base64.b64encode(urlopen(request).read()).decode(&quot;utf-8&quot;)
@@ -1706,11 +1699,8 @@ def main():
                 )
                 print(response.choices[0].message.content)
                     
-
-
     except Exception as ex:
         print(ex)
-
 
 if __name__ == &#x27;__main__&#x27;: 
     main()

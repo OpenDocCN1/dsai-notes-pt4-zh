@@ -153,6 +153,8 @@ processor = AutoProcessor.from_pretrained(model_dir)
 
 +   创建消息
 
+                &quot;image&quot;: &quot;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&quot;,
+
 ```
 messages = [
     {
@@ -160,7 +162,6 @@ messages = [
         &quot;content&quot;: [
             {
                 &quot;type&quot;: &quot;image&quot;,
-                &quot;image&quot;: &quot;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&quot;,
             },
             {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;Describe this image.&quot;},
         ],
@@ -362,6 +363,8 @@ Qwen2-VL 目前无法处理视频中的音频信息，因此在需要综合视�
 
 ### 推理Qwen2vl：2b模型
 
+                &quot;image&quot;: &quot;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&quot;,
+
 ```
 
 import torch
@@ -386,7 +389,6 @@ messages = [
         &quot;content&quot;: [
             {
                 &quot;type&quot;: &quot;image&quot;,
-                &quot;image&quot;: &quot;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&quot;,
             },
             {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;Describe this image.&quot;},
         ],

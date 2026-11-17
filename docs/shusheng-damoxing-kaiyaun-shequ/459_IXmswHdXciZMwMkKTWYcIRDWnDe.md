@@ -69,6 +69,8 @@ ln -s ${model_dir} /root/models
 
 编写 `Llama3.2VL_test.py`
 
+image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
+
 ```
 from lmdeploy import pipeline, ChatTemplateConfig, PytorchEngineConfig
 from lmdeploy.vl import load_image
@@ -78,8 +80,6 @@ pipe = pipeline(&#x27;/root/models/Llama-3___2-11B-Vision-Instruct&#x27;,
                 chat_template_config=ChatTemplateConfig(model_name=&#x27;llama3_2&#x27;))
                 
 # 这里可以替换为自己的测试图片
-image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
-
 response = pipe((&#x27;If I had to write a haiku for this one, it would be: &#x27;, image))
 print(response)
 ```

@@ -48,6 +48,8 @@
 
 然后，我们创建一个新的文件夹，命名为minist。在minist创建一个文件，命名为data.js。具体代码如下：
 
+const MNIST_IMAGES_SPRITE_PATH = &#x27;http://127.0.0.1:8080/mnist/mnist_images.png&#x27;;
+
 ```
 /**
  * @license
@@ -78,7 +80,6 @@ const NUM_TRAIN_ELEMENTS = Math.floor(TRAIN_TEST_RATIO * NUM_DATASET_ELEMENTS);
 const NUM_TEST_ELEMENTS = NUM_DATASET_ELEMENTS - NUM_TRAIN_ELEMENTS;
 
 // 为其建立静态文件的服务器
-const MNIST_IMAGES_SPRITE_PATH = &#x27;http://127.0.0.1:8080/mnist/mnist_images.png&#x27;;
 const MNIST_LABELS_PATH = &#x27;http://127.0.0.1:8080/mnist/mnist_labels_uint8&#x27;;
 
 /**

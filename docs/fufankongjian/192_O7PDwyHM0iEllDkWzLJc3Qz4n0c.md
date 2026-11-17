@@ -709,6 +709,8 @@ def fig_inter(py_code: str, fname: str) -&gt; str:
 
 创建项目文件夹，然后创建agent.py文件，并写入如下代码：
 
+- 如果有生成的图片文件，请务必在回答中使用Markdown格式插入图片，如：![Categorical Features vs Churn](images/fig.png)
+
 ```
 import os
 from dotenv import load_dotenv 
@@ -835,7 +837,6 @@ def extract_data(sql_query: str, df_name: str) -&gt; str:
 class PythonCodeInput(BaseModel):
     py_code: str = Field(description=&quot;一段合法的 Python 代码字符串，例如 &#x27;2 + 2&#x27; 或 &#x27;x = 3\\ny = x * 2&#x27;&quot;)
 
-
 @tool(args_schema=PythonCodeInput)
 def python_inter(py_code):
     &quot;&quot;&quot;
@@ -952,7 +953,6 @@ prompt = &quot;&quot;&quot;
 - 所有回答均使用**简体中文**，清晰、礼貌、简洁。
 - 如果调用工具返回结构化JSON数据，你应提取其中的关键信息简要说明，并展示主要结果。
 - 若需要用户提供更多信息，请主动提出明确的问题。
-- 如果有生成的图片文件，请务必在回答中使用Markdown格式插入图片，如：![Categorical Features vs Churn](images/fig.png)
 - 不要仅输出图片路径文字。
 
 **风格：**

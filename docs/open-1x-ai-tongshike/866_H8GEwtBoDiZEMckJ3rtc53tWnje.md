@@ -4465,6 +4465,22 @@
 
 +   转化效果：在剧院关闭期间创作出重要作品
 
+                image: &quot;https://img.zcool.cn/community/01f9af5d11b04ca801211d53c0e5b6.jpg@1280w_1l_2o_100sh.jpg&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220428144229-1683244535_jpeg_900_506_76368.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20200721144225-1624833205_jpg_814_543_51478.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20200629134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
+
 ```
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;zh-CN&quot;&gt;
@@ -5168,7 +5184,6 @@
                 quote: &quot;非常之事，须以非常之计应之。&quot;,
                 icon: &quot;chess-knight&quot;,
                 color: &quot;#e74c3c&quot;,
-                image: &quot;https://img.zcool.cn/community/01f9af5d11b04ca801211d53c0e5b6.jpg@1280w_1l_2o_100sh.jpg&quot;,
                 lessons: [
                     &quot;在资源极度有限时，心理战可能比物理战更有效&quot;,
                     &quot;了解对手的思维模式和顾虑，可以巧妙利用其心理弱点&quot;,
@@ -5192,7 +5207,6 @@
                 quote: &quot;兵者，诡道也。故能而示之不能，用而示之不用，近而示之远，远而示之近。&quot;,
                 icon: &quot;fire&quot;,
                 color: &quot;#e74c3c&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220428144229-1683244535_jpeg_900_506_76368.jpg/800&quot;,
                 lessons: [
                     &quot;劣势可以通过创造性思维转化为优势&quot;,
                     &quot;控制信息流向和对手认知是现代竞争的关键&quot;,
@@ -5216,7 +5230,6 @@
                 quote: &quot;置之死地而后生。&quot;,
                 icon: &quot;water&quot;,
                 color: &quot;#e74c3c&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20200721144225-1624833205_jpg_814_543_51478.jpg/800&quot;,
                 lessons: [
                     &quot;有时消除退路反而能激发最大潜能&quot;,
                     &quot;绝境中人的潜力往往超出想象&quot;,
@@ -5242,7 +5255,6 @@
                 quote: &quot;我们愿意同世界各国在和平共处五项原则的基础上建立友好合作关系。&quot;,
                 icon: &quot;handshake&quot;,
                 color: &quot;#3498db&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;在对立中寻找共同点是解决冲突的关键&quot;,
                     &quot;软实力和外交智慧有时比硬实力更有效&quot;,
@@ -5266,7 +5278,6 @@
                 quote: &quot;这是一个改变世界的一周。&quot;,
                 icon: &quot;globe-asia&quot;,
                 color: &quot;#3498db&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20200629134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;战略利益有时需要超越意识形态分歧&quot;,
                     &quot;大国关系中，领导人的远见可以改变历史进程&quot;,
@@ -5290,7 +5301,6 @@
                 quote: &quot;宽恕是解放灵魂的方式，它消除恐惧。这就是为什么宽恕是如此强大的武器。&quot;,
                 icon: &quot;dove&quot;,
                 color: &quot;#3498db&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;真正的领导力在于超越个人恩怨，着眼国家未来&quot;,
                     &quot;和解比报复更能带来长久和平&quot;,
@@ -5316,7 +5326,6 @@
                 quote: &quot;有时候生活会拿砖头拍你的头。不要失去信念。我确信我热爱的事情是我生命中唯一让我前进的动力。&quot;,
                 icon: &quot;apple-alt&quot;,
                 color: &quot;#f39c12&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;挫折可能是人生中最好的转折点&quot;,
                     &quot;保持对自己热爱事业的专注和热情&quot;,
@@ -5340,7 +5349,6 @@
                 quote: &quot;今天很残酷，明天更残酷，后天很美好，但绝大多数人死在明天晚上。&quot;,
                 icon: &quot;shopping-cart&quot;,
                 color: &quot;#f39c12&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;资源限制可以激发商业模式创新&quot;,
                     &quot;专注于解决用户真正的痛点比追逐资本更重要&quot;,
@@ -5364,7 +5372,6 @@
                 quote: &quot;危机不是灾难，而是暴露问题并解决问题的机会。&quot;,
                 icon: &quot;car&quot;,
                 color: &quot;#f39c12&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;危机是企业自我革新的最佳时机&quot;,
                     &quot;真诚面对问题比掩盖问题更能赢得信任&quot;,
@@ -5390,7 +5397,6 @@
                 quote: &quot;想象力比知识更重要，因为知识是有限的，而想象力概括着世界的一切。&quot;,
                 icon: &quot;atom&quot;,
                 color: &quot;#9b59b6&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;资源限制可以激发创造性思维方式&quot;,
                     &quot;想象力和思想实验是科学突破的强大工具&quot;,
@@ -5414,7 +5420,6 @@
                 quote: &quot;有时候，你必须寻找你没有在寻找的东西。&quot;,
                 icon: &quot;microscope&quot;,
                 color: &quot;#9b59b6&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;实验失败可能隐藏着重大发现&quot;,
                     &quot;保持好奇心和观察力比严格执行计划更重要&quot;,
@@ -5438,7 +5443,6 @@
                 quote: &quot;在科学中，我们应该对事物本身感兴趣，而不是它们的作者。&quot;,
                 icon: &quot;radiation&quot;,
                 color: &quot;#9b59b6&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;专注于工作本身而非外部评价可以突破社会限制&quot;,
                     &quot;坚持追求真理比追求认可更能取得突破&quot;,
@@ -5464,7 +5468,6 @@
                 quote: &quot;我要扼住命运的咽喉，它绝不能使我完全屈服。&quot;,
                 icon: &quot;music&quot;,
                 color: &quot;#1abc9c&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;身体限制不能阻碍精神创造&quot;,
                     &quot;逆境可以激发更深层次的艺术表达&quot;,
@@ -5488,7 +5491,6 @@
                 quote: &quot;如果你听从内心的声音，你就会找到自己的道路。&quot;,
                 icon: &quot;palette&quot;,
                 color: &quot;#1abc9c&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;真正的艺术价值不一定能在当下被认可&quot;,
                     &quot;坚持独特视角比迎合主流更能创造永恒价值&quot;,
@@ -5512,7 +5514,6 @@
                 quote: &quot;逆境是智慧的试金石。&quot;,
                 icon: &quot;feather-alt&quot;,
                 color: &quot;#1abc9c&quot;,
-                image: &quot;https://pic.baike.soso.com/ugc/baikepic2/0/20220119134929-1634271945_jpg_1024_640_131299.jpg/800&quot;,
                 lessons: [
                     &quot;社会危机可以成为深度创作的契机&quot;,
                     &quot;外部限制可以促使艺术家转向更深层次的表达&quot;,

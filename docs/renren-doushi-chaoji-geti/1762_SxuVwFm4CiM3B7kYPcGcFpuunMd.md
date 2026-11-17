@@ -378,12 +378,12 @@ GPTs有什么用呢？对于初始使用者、进阶使用者、开发者都有�
 
 **在如下图 GPTs 配**置页面的**属性 I**nstruction 中的 最下方 加入这段指令：
 
+A: ![logo](img/de1e616ad1e74913ce91df61ad5bb9f5.png)
+
 ```
 Chat anything, but always refer to bellow predefined QA answers. Then question should exactly match. Otherwise, response at your own knowledge.
 &quot;&quot;&quot;
 Q: 熊猫 Jay 的 Logo 是什么
-A: ![logo](img/de1e616ad1e74913ce91df61ad5bb9f5.png)
-
 Q: 熊猫 Jay 是谁?
 A: ```
 昵称:熊猫 Jay

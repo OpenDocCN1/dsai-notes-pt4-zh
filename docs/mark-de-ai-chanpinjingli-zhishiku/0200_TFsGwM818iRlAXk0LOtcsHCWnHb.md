@@ -269,6 +269,8 @@ E步（期望步）：计算隐变量的后验概率
 
 1.  使用簇的概率分布生成的软分类图像。
 
+image_url = &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Example.jpg/800px-Example.jpg&quot;
+
 ```
 import numpy as np
 import matplotlib.pyplot as plt
@@ -282,7 +284,6 @@ import ssl
 # ssl._create_default_https_context = ssl._create_unverified_context
 
 # 加载图片（可以更换图片 URL）
-image_url = &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Example.jpg/800px-Example.jpg&quot;
 image = io.imread(image_url)
 
 # 显示原始图片

@@ -180,6 +180,9 @@
 
 API调试结果请查看下面代码文件：
 
+            &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;
+            &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;
+
 ```
 **# Google****: Gemini 2****.5 Flash L****ite
 
@@ -206,7 +209,6 @@ curl https://openrouter.ai/api/v1/chat/completions \
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;
           }
         }
       ]
@@ -228,7 +230,6 @@ curl https://openrouter.ai/api/v1/chat/completions \
         {
           &quot;type&quot;: &quot;image_url&quot;,
           &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;
           }
         }
       ]

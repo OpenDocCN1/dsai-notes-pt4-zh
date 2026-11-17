@@ -256,6 +256,8 @@
 
 +   直接多模态模型解析
 
+                        &quot;url&quot;: &quot;https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20241022/emyrja/dog_and_girl.jpeg&quot;
+
 ```
 import os
 from openai import OpenAI
@@ -279,7 +281,6 @@ completion = client.chat.completions.create(
                 {
                     &quot;type&quot;: &quot;image_url&quot;,
                     &quot;image_url&quot;: {
-                        &quot;url&quot;: &quot;https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20241022/emyrja/dog_and_girl.jpeg&quot;
                     },
                 },
                 {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;图中描绘的是什么景象？&quot;},
@@ -303,6 +304,8 @@ for chunk in completion:
         print(chunk.usage)
 ```
 
+     23                         &quot;url&quot;: &quot;https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20241022/emyrja/dog_and_girl.jpeg&quot;
+
 ```
 ---------------------------------------------------------------------------
 
@@ -325,7 +328,6 @@ Cell In[1], line 14
      20                 {
      21                     &quot;type&quot;: &quot;image_url&quot;,
      22                     &quot;image_url&quot;: {
-     23                         &quot;url&quot;: &quot;https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20241022/emyrja/dog_and_girl.jpeg&quot;
      24                     },
      25                 },
      26                 {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;图中描绘的是什么景象？&quot;},
@@ -344,12 +346,10 @@ Cell In[1], line 14
      40 for chunk in completion:
      41     if chunk.choices:
 
-
 File C:\ProgramData\anaconda3\Lib\site-packages\openai\_utils\_utils.py:287, in required_args.&lt;locals&gt;.inner.&lt;locals&gt;.wrapper(*args, **kwargs)
     285             msg = f&quot;Missing required argument: {quote(missing[0])}&quot;
     286     raise TypeError(msg)
 --&gt; 287 return func(*args, **kwargs)
-
 
 File C:\ProgramData\anaconda3\Lib\site-packages\openai\resources\chat\completions\completions.py:1135, in Completions.create(self, messages, model, audio, frequency_penalty, function_call, functions, logit_bias, logprobs, max_completion_tokens, max_tokens, metadata, modalities, n, parallel_tool_calls, prediction, presence_penalty, prompt_cache_key, reasoning_effort, response_format, safety_identifier, seed, service_tier, stop, store, stream, stream_options, temperature, tool_choice, tools, top_logprobs, top_p, user, web_search_options, extra_headers, extra_query, extra_body, timeout)
    1090 @required_args([&quot;messages&quot;, &quot;model&quot;], [&quot;messages&quot;, &quot;model&quot;, &quot;stream&quot;])
@@ -409,7 +409,6 @@ File C:\ProgramData\anaconda3\Lib\site-packages\openai\resources\chat\completion
    1182         stream_cls=Stream[ChatCompletionChunk],
    1183     )
 
-
 File C:\ProgramData\anaconda3\Lib\site-packages\openai\_base_client.py:1259, in SyncAPIClient.post(self, path, cast_to, body, options, files, stream, stream_cls)
    1245 def post(
    1246     self,
@@ -422,14 +421,12 @@ File C:\ProgramData\anaconda3\Lib\site-packages\openai\_base_client.py:1259, in 
    1258     )
 -&gt; 1259     return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
 
-
 File C:\ProgramData\anaconda3\Lib\site-packages\openai\_base_client.py:1047, in SyncAPIClient.request(self, cast_to, options, stream, stream_cls)
    1044             err.response.read()
    1046         log.debug(&quot;Re-raising status error&quot;)
 -&gt; 1047         raise self._make_status_error_from_response(err.response) from None
    1049     break
    1051 assert response is not None, &quot;could not resolve response (should never happen)&quot;
-
 
 AuthenticationError: Error code: 401 - {&#x27;error&#x27;: {&#x27;message&#x27;: &#x27;Incorrect API key provided. &#x27;, &#x27;type&#x27;: &#x27;invalid_request_error&#x27;, &#x27;param&#x27;: None, &#x27;code&#x27;: &#x27;invalid_api_key&#x27;}, &#x27;request_id&#x27;: &#x27;aa56a0c2-4b5e-45d0-87ad-42369b0c78d8&#x27;}
 ```

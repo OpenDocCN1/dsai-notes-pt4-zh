@@ -316,11 +316,12 @@ plt.show()
 
 +   首先，我们收集一张可以在线获取的图像：
 
+
+url = &quot;http://images.cocodataset.org/val2017/000000039769.jpg&quot;
+
 ```
 from PIL import Image
 import requests
-
-url = &quot;http://images.cocodataset.org/val2017/000000039769.jpg&quot;
 image = Image.open(requests.get(url, stream=True).raw)
 ```
 

@@ -94,11 +94,12 @@
 
 调用后的参数如下
 
+          &quot;headImageUrl&quot;:&quot;https://guwen-1252396323.cos.ap-chengdu.myqcloud.com/headImage/20180914152354795.jpg&quot;,
+
 ```
        {
           &quot;_id&quot;:{&quot;$oid&quot;:&quot;5b9b6211367d5c24d8bcdc01&quot;},
           &quot;name&quot;:&quot;李白&quot;,
-          &quot;headImageUrl&quot;:&quot;https://guwen-1252396323.cos.ap-chengdu.myqcloud.com/headImage/20180914152354795.jpg&quot;,
           &quot;simpleIntro&quot;:&quot;李白（701年－762年），字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”...&quot;,
           &quot;detailIntro&quot;:&quot;{\&quot;轶事典故\&quot;:\&quot;姓名由来\\n  第一种说法...,\&quot;家庭成员\&quot;:\&quot;家人\\n据《旧唐书》记载，李白之父名叫李客..}&quot;
        }
@@ -238,6 +239,8 @@
 
 ##  **一）初版提示词 **
 
+        - 头像展示：![作者名]([headImageUrl])
+
 ```
 # Workflows
 - 判断：请根据用户输入，判断用户输入的是哪种查询方式，然后分别执行下面的工作流
@@ -295,7 +298,6 @@
                 &quot;authorInfo&quot;:&quot;[作者名]&quot;
                 }
     202. 头像：首先展示返回值中的头像给用户使用以下Markdown语法的方式进行展示
-        - 头像展示：![作者名]([headImageUrl])
     203. 生平简介：根据返回值中的[detailIntro]参数展示作者生平简介
         - 自行根据内容进行整理换段，让文章有更清晰的可读性。
     
@@ -423,6 +425,8 @@
 
             combined_image.show()
 
+        - 头像展示：![作者名]([headImageUrl])
+
             ```
 - 工作流2：
     201. 如果用户输入为&quot;作者生平简介&quot;,则提醒用户输入作者的姓名
@@ -432,7 +436,6 @@
             }
             + 注意调用api时：method：get，path：/hello
     202. 头像：首先展示返回值中的头像给用户使用以下Markdown语法的方式进行展示
-        - 头像展示：![作者名]([headImageUrl])
     203. 生平简介：根据返回值中的[detailIntro]参数展示作者生平简介
         - 自行根据内容进行整理换段，让文章有更清晰的可读性。
     

@@ -82,6 +82,8 @@ curl http://localhost:54257/v1/chat/completions \
 
 网络照片调用
 
+          { &quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: { &quot;url&quot;: &quot;http://images.cocodataset.org/val2017/000000039769.jpg&quot; } }
+
 ```
 curl http://localhost:54257/v1/chat/completions \
   -H &quot;Content-Type: application/json&quot; \
@@ -92,7 +94,6 @@ curl http://localhost:54257/v1/chat/completions \
         &quot;role&quot;: &quot;user&quot;,
         &quot;content&quot;: [
           { &quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;Please describe the image explicitly.&quot; },
-          { &quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: { &quot;url&quot;: &quot;http://images.cocodataset.org/val2017/000000039769.jpg&quot; } }
         ]
       }
     ]

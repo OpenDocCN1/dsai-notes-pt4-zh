@@ -504,6 +504,9 @@ while True:
 # !pip install gradio
 ```
 
+                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f464.png&quot;,
+                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f916.png&quot;,
+
 ```
 import gradio as gr
 from langchain_deepseek import ChatDeepSeek
@@ -538,8 +541,6 @@ def create_chatbot() -&gt; gr.Blocks:
                 height=500,
                 show_copy_button=True,
                 avatar_images=(
-                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f464.png&quot;,
-                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f916.png&quot;,
                 ),
             )
             msg = gr.Textbox(placeholder=&quot;请输入您的问题...&quot;, container=False, scale=7)

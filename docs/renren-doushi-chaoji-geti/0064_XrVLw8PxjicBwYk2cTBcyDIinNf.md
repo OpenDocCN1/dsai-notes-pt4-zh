@@ -24,6 +24,34 @@
 
 1.  脚本写完了，剪辑怎么办？（视频剪辑环节再次面临效率瓶颈）
 
+
+![](img/67ed570cee13b10c6208daab0a60081a.png)
+
+
+![](img/c8e258ae593245374f06f479782f5cff.png)
+
+
+![](img/6861f60ef26d0f595dec7fffe1c4026f.png)
+
+
+![](img/d3ec82960eeea8fdfa8faa8d624e76bc.png)
+
+
+![](img/984cf2e714ec3b9956b8a90ba6c91155.png)
+
+![](img/fa8e4b2bef111b05dae4219a56c6136c.png)
+
+
+![](img/18c60f0674a2002aed88fdbdfba2b894.png)
+
+![](img/03fea6ab72f18740698091d19983509c.png)
+
+
+![](img/cac421a5a90dfc4e39f8a55e1293a2be.png)
+
+
+![](img/ab74b0d4abb23bd0f2898885e17ad5cf.png)
+
 ~~~
 
 接下来我会给大家分享我这两个月的提效总结。近两个月成果，打通了0-1**。**给我的教训是：工作中不要主次不分，即使写提效代码 ，也要每天坚持更新视频，保持内容创作的节奏。
@@ -33,41 +61,19 @@
 ### 2.1 批量获取对标视频的带货链接
 
 **这里直接提供工具**化解决方案，直接写**成了工具：**window**系统**可以直接下载使用；mac电脑请把代码丢给豆包，让豆包教你如何使用，获取专属使用指导
-
-![](img/67ed570cee13b10c6208daab0a60081a.png)
-
 [使用说明.txt](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Pdkab9IeHoJAU9xSH6fcl7KHntb)
 
 注意里面的**导出Excel功能**，可以直接导出可以使用的京东或者淘宝的链接，而不是B站压缩的链接格式，便于后续操作。
-
-![](img/c8e258ae593245374f06f479782f5cff.png)
-
 [B站评论提取工具-清泉.exe](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CPOIbIMzeotavfxpr1acFd0Snwb)
-
-![](img/6861f60ef26d0f595dec7fffe1c4026f.png)
-
 **mac版**
-
-![](img/d3ec82960eeea8fdfa8faa8d624e76bc.png)
-
 [mac版代码.rar](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CqJDbh4t5oMM37xfKf0cGIW4nYg)
 
 ### 2.2 批量查询佣金
 
 最简单的方法：点击链接选品，输入待查询链接，识别链接，工具自动识别并输出佣金数据，然后看数据
-
-![](img/984cf2e714ec3b9956b8a90ba6c91155.png)
-
-![](img/fa8e4b2bef111b05dae4219a56c6136c.png)
-
 ### 2.3 批量获取产品参数
 
 这里手动获取办法是打开链接，查看商品的详细参数，手动复制到PPT中，流程繁琐，如下图所示：
-
-![](img/18c60f0674a2002aed88fdbdfba2b894.png)
-
-![](img/03fea6ab72f18740698091d19983509c.png)
-
 影刀逐个提取产品详情参数截图。
 
 提效：[提效代码](https://zqxbobng8rp.feishu.cn/docx/YACMd91o4oIYyqxsqMVcs6wenIe?from=from_copylink)
@@ -85,17 +91,11 @@
 这里说一下大体的逻辑了
 
 1.  **在自动化抓取产**品表格的基础上，使用影刀离线ocr的功能，把每个产品参数图的数据分别写入到单个txt文档中，txt文件命名就用产品名字。如下所示。
-
-![](img/cac421a5a90dfc4e39f8a55e1293a2be.png)
-
 [俏侬 猪肉酥皮馅饼1.15kg10片 手抓饼煎饼大葱饼 学生早餐健康.txt](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UWZabGwWhoy5n7xnPoGcKWB9nzg)
 
 1.  把单个txt文档，全部写入到一个总的txt文档，用分隔符区分开，每个分隔。
 
 例如 ：
-
-![](img/ab74b0d4abb23bd0f2898885e17ad5cf.png)
-
 [总参数.txt](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GnFUbtE7nozKpWxCe26c8MA9njP)
 
 === 文件: 麦西恩原味卷饼270g_3 8英寸 早餐手抓饼墨西哥卷饼塔可饼皮.txt ===
@@ -124,19 +124,6 @@
 &quot;变频 / 定频&quot;: &quot;变频&quot;,
 },
 ]
-```
-
-会得到一个json文件
-
-1.  接下来就是编写一个**魔法指令**，让影刀根据json文件提取参数写入到Excel中。
-
-这样就大功告成了===
-
-因为代码编写涉及到许多魔法指令以及图像识别，所以不便分享。
-
-仅供参考，建议还是自己写一个符合自己项目的更快一点。
-
-**主流程**
 
 ![](img/058054af688c73c038fedfc66e93fe32.png)
 
@@ -152,7 +139,6 @@
 
 ![](img/8a987629d3b5743667d6e0c44546dd9f.png)
 
-**2.获取截图的ocr识别**
 
 ![](img/35068e0a11d87d0d9f02b50ec7cee3fb.png)
 
@@ -164,13 +150,11 @@
 
 ![](img/9b06d48133085556a075bf74464c4fad.png)
 
-**2.5获取产品参数种类**
 
 ![](img/bae39d6e1b07709d6c0487e2630e6f1b.png)
 
 ![](img/66829d605379c37a67babc531742c46c.png)
 
-**3.写入参数到Excel**
 
 ![](img/dc6824bb9b866bd335617140386ee287.png)
 
@@ -182,12 +166,40 @@
 
 ![](img/5f715cac1fd3cbd42af079dd4830ab53.png)
 
-**获取截图子流程**
 
 ![](img/750d1889336824df361e266f4127a02e.png)
 
 ![](img/5de1375c3940393b8401611fc11fa060.png)
 
+
+![](img/fcf7d253b366dfad6310be9e06ac0cc6.png)
+
+
+![](img/f01608382c22b2346a8b5cbe49baf17e.png)
+
+
+![](img/9897bcbaf8ceb4778ad6660e99293280.png)
+
+
+![](img/4e3a18736e722cc900739b5b81705bb4.png)
+
+```
+
+会得到一个json文件
+
+1.  接下来就是编写一个**魔法指令**，让影刀根据json文件提取参数写入到Excel中。
+
+这样就大功告成了===
+
+因为代码编写涉及到许多魔法指令以及图像识别，所以不便分享。
+
+仅供参考，建议还是自己写一个符合自己项目的更快一点。
+
+**主流程**
+**2.获取截图的ocr识别**
+**2.5获取产品参数种类**
+**3.写入参数到Excel**
+**获取截图子流程**
 ### 2.4 批量获取京东联盟商品信息
 
 **自己开发思路：**
@@ -199,21 +211,12 @@
 **使用方法：**
 
 Chrome浏览器打开京东联盟，搜索好产品，并选择"自营"。
-
-![](img/fcf7d253b366dfad6310be9e06ac0cc6.png)
-
 https://api.winrobot360.com/redirect/robot/share?inviteKey=1470c7fe6b4e4eb1
 
 影刀链接如上。用**chrome浏览器**打开这个页面后，点击运行就可以了。输入一下导出路径和导出表格名称。
-
-![](img/f01608382c22b2346a8b5cbe49baf17e.png)
-
 这个筛选逻辑是学习自圈友王小小的精华帖，并优化了一下价格区间。
 
 **显示结果：**
-
-![](img/9897bcbaf8ceb4778ad6660e99293280.png)
-
 **应用场景： 选择高佣产品。**
 
 ### 2.5 目前我在用的方法
@@ -231,9 +234,6 @@ https://api.winrobot360.com/redirect/robot/share?inviteKey=1470c7fe6b4e4eb1
 现在我使用的方法：
 
 1.  找到一个对标的B站链接，把它放到Excel中。
-
-![](img/4e3a18736e722cc900739b5b81705bb4.png)
-
 [分类 - 模板.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F30obZ9odoz3yjxLr9QcLJy7n3f)
 
 ```
@@ -262,10 +262,10 @@ https://api.winrobot360.com/redirect/robot/share?inviteKey=39421485e4958c5f
 
 拿另外一台笔记本，测试通过，可以正常使用。
 注：由于每个人的电脑情况不同。网络速度不同，无法运行是正常情况
-```
 
 ![](img/ad3b6c174bb353349c88d5fde932ef1a.png)
 
+```
 [演示第一步和第二步.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VQ4gb5kbSoT71ox1a0acISfVntb)
 
 1.  **影刀脚本：****导出详情图txt ****。输入路径，就可以一键实现把Excel里面**的对标链接的商品图片及详情图都爬取下来。
@@ -309,12 +309,12 @@ https://api.winrobot360.com/redirect/robot/share?inviteKey=fa826333189330b0
 1.因为涉及到图像识别/每个人的电脑不同，有概率报错。
 2.受限于网速，可能会运行出错，重新运行。
 3.看到我的演示视频，有思路的同学，可以直接拿影刀手搓一个了
-```
 
 ![](img/6e6175868cebd16bc5d2936f4f7b77f7.png)
 
 ![](img/e6db782a40db36917786831f728c1ce6.png)
 
+```
 [演示3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KKXlbKOZqodcJex1exycn700nYk)
 
 1.  **影刀脚本：****填补空缺参数。 **输入路径及需要的参数。就可以一键实现把参数提取到Excel中。
@@ -387,22 +387,22 @@ JSON 结构规范，引号成对，无语法错误，每个商品为独立 JSON 
 自己测试，没有登录豆包，会出现bug,因为无法复制。
 还有有时候，会出现延迟的情况，会出现 一个弹窗，请手动复制，这个时候点击一下 复制按钮，再点击确定即可。
 
-```
 
 ![](img/96a82df2a10996ff4adfcdc0955bc8d8.png)
 
-**最终效果**
-
-完美解决参数问题，再也不需要手动复制了
 
 ![](img/36e61ecd6403932b23cdf106c17b2933.png)
 
-[分类.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WkZ5bV5sroJ1jMxfnlccvDUNnvd)
-
-**演示影刀代码搭建-给想要自己搭建的**小伙伴一个借鉴的思路，演示时长半个小时。
 
 ![](img/7116d611d8670ffbc9028528646bce6c.png)
 
+```
+**最终效果**
+
+完美解决参数问题，再也不需要手动复制了
+[分类.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WkZ5bV5sroJ1jMxfnlccvDUNnvd)
+
+**演示影刀代码搭建-给想要自己搭建的**小伙伴一个借鉴的思路，演示时长半个小时。
 [录屏_20251128_230239.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I24YbNzA8opl2Bx2lpucDFBunzb)
 
 **魔法指令**
@@ -3232,6 +3232,9 @@ def write_clipboard_to_txt(folder_path, file_name):
     # 写入文件
     _write_to_file(full_file_path, clipboard_content)
 
+
+![](img/25662f5b887d6c4a2bd356a0f7e10a42.png)
+
 ```
 
 # 三、PPT提效
@@ -3241,9 +3244,6 @@ def write_clipboard_to_txt(folder_path, file_name):
 首先说明，我用的是**稿定设计**做PPT
 
 ### 3.1 稿定设计如何快速批量套版
-
-![](img/25662f5b887d6c4a2bd356a0f7e10a42.png)
-
 [提效代码](https://zqxbobng8rp.feishu.cn/docx/YACMd91o4oIYyqxsqMVcs6wenIe?from=from_copylink)** 具体流程参考此文档**
 
 ### 3.2 PPT图片的商品主图如何快速找
@@ -4305,40 +4305,40 @@ if __name__ == &quot;__main__&quot;:
         print(&quot;\n&quot; + &quot;=&quot;*60)
         print(&quot;所有操作完成！&quot;)
 
-```
 
 ![](img/c37541a0b0e97f3dbe70a32f080eb85f.png)
 
-**使用方法：**
-
-安装完基本的模块后，修改下面的红色路径。
-
-还需要把 1-数据上传.xlsx  放到文件夹下面。
 
 ![](img/9fd2ad3aba936844fe918bc6f8bd3cb8.png)
 
-[1-数据上传.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y3iLbPLWNodtD9xXbohcIbFKnfc)
-
-运行代码，会得到如下的结果，**图1是主图**，图2是详情图片（不用管）
-
-如果主图里面有不符合的，代码里面有切换的功能。
 
 ![](img/28f367566d6bd8c8fb49fbf042c9aa1f.png)
 
-得到主图后，找到3.1批量套版得到的Excel，先把**这个Exce**l放到**主图文件夹**中，如图中的冲锋衣_图1，注意主图文件夹中会有一个代码生成的Excel，可以直接删掉。
-
-然后再编辑Excel，在里面加入 图片_1这一列。 图片_1这一列下面的数字填写为1,2,3,4等 ，和文件夹中的图片命名一致即可。 接下来就是把 冲锋衣_图1这个文件夹 压缩成zip文件，导入批量套版即可。
 
 ![](img/6365ad05c012fb9d1672b94f0b7b07bf.png)
 
-### 3.3 broll 素材提效
-
-还是在我的方法基础上，影刀代码生成的参数文件夹里面，有几个子**文件夹，有些为空，因为这**是其他影刀代码如2.3的批量**获取产品参数会用**到的。我现在基本上都只用2.5的影刀代码生成。
 
 ![](img/2fd95efeff0207f47be75ba9b33fb757.png)
 
 ![](img/b75aa19a7bc42170a1f07e04137a8beb.png)
 
+```
+**使用方法：**
+
+安装完基本的模块后，修改下面的红色路径。
+
+还需要把 1-数据上传.xlsx  放到文件夹下面。
+[1-数据上传.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y3iLbPLWNodtD9xXbohcIbFKnfc)
+
+运行代码，会得到如下的结果，**图1是主图**，图2是详情图片（不用管）
+
+如果主图里面有不符合的，代码里面有切换的功能。
+得到主图后，找到3.1批量套版得到的Excel，先把**这个Exce**l放到**主图文件夹**中，如图中的冲锋衣_图1，注意主图文件夹中会有一个代码生成的Excel，可以直接删掉。
+
+然后再编辑Excel，在里面加入 图片_1这一列。 图片_1这一列下面的数字填写为1,2,3,4等 ，和文件夹中的图片命名一致即可。 接下来就是把 冲锋衣_图1这个文件夹 压缩成zip文件，导入批量套版即可。
+### 3.3 broll 素材提效
+
+还是在我的方法基础上，影刀代码生成的参数文件夹里面，有几个子**文件夹，有些为空，因为这**是其他影刀代码如2.3的批量**获取产品参数会用**到的。我现在基本上都只用2.5的影刀代码生成。
 写了一个代码，可以在参数文件夹的基础上，对应每一句话得到对应的图片。这样Broll的一部分素材就有了。
 
 代码如下：
@@ -5732,16 +5732,21 @@ README.md                 - 详细文档
 
 ================================================================================
 
-```
-
-**如何使用？  问豆包！**
-
-### 3.5 好看的雷达图设计方法
 
 ![](img/783901213fdfeb02e9a0fefd5309e104.png)
 
 ![](img/99f15bd91082555b9e0bd0ec1639aca3.png)
 
+
+![](img/1e39392115f753129d9e948784815989.png)
+
+![](img/25ed472db9d7aee04c0db7f92356b5bd.png)
+
+```
+
+**如何使用？  问豆包！**
+
+### 3.5 好看的雷达图设计方法
 具体设计方法看[提效代码](https://zqxbobng8rp.feishu.cn/docx/YACMd91o4oIYyqxsqMVcs6wenIe?from=from_copylink) ，文档**里面有说明**
 
 雷达图这里主要用在产品图片PPT中比较多， 通过差异化设计突出产品多维度优势。
@@ -5753,11 +5758,6 @@ README.md                 - 详细文档
 然后再去拆解出对应的AI提示词， 在写稿子的时候，投入对应的素材。
 
 **比如讲解产**品的时候，**我的系统里面参数文****件****夹 会有一个详**情图txt文件夹，里面保存的是每个产品的详情图ocr识别结果。我会把所有的txt以及 分类.xlsx 发给AI，让它在这些内容的基础上创作脚本，最大程度上保证了参数的正确性，比如价格。
-
-![](img/1e39392115f753129d9e948784815989.png)
-
-![](img/25ed472db9d7aee04c0db7f92356b5bd.png)
-
 这样写产品介绍的文案就会很快，提示词采用的是百万哥的帖子里写的
 
 ```
@@ -5773,6 +5773,36 @@ README.md                 - 详细文档
   7. 口播稿中避免使用“**”、“•” 、“/”这些符号，而是使用口语化的表达，比如“**”完全可以去掉，多行产品前的“•”可以改为首先...其次...然后...最后...的口语化表达方式，而&quot;/&quot;要改为“或”，双引号和xx Script备注也需要去掉，以此类推，类似的符号表达尽量都避免，而使用口语化的表达，直接念出来就是口播内容。
   8. 对技术术语和英文缩写不要进行音译处理和口语化替代。 好了，要求如上述，给我完整的口播稿内容。
   9. 要求每个产品都要被介绍到，不能重复介绍也不能缺少介绍。
+
+![](img/4ab7f43cb8a31bfcb5b69365554930fa.png)
+
+
+![](img/13ffcfd4c22760090392afe6ba5b8f88.png)
+
+
+![](img/86791f6913a7bf9b529c8dd9a7936157.png)
+
+
+![](img/8295ee12c1da3248faf2b9831ceb4b8b.png)
+
+
+![](img/622bd31476668a1699a35b46c0cac17e.png)
+
+
+![](img/49a97f34b96b510524e818da85ce8d55.png)
+
+
+![](img/6c18a77d29124649de0dfdc6dc484888.png)
+
+
+![](img/184e6d449f476df620ea03aa76f86e30.png)
+
+
+![](img/057613f0f627522fe5778b0d45d5fff4.png)
+
+
+![](img/d8965b18dbe7aa99e46039a1ecb0d226.png)
+
 ```
 
 得到初始的稿子后，接下来就是去校正有没有错误，润色文案。
@@ -5784,9 +5814,6 @@ README.md                 - 详细文档
 注意⚠️：终极稿子是自己调教好的脚本
 
 **使用效果：**
-
-![](img/4ab7f43cb8a31bfcb5b69365554930fa.png)
-
 # 五、其他提效
 
 ### 5.1 蓝链
@@ -5794,27 +5821,15 @@ README.md                 - 详细文档
 **tips1:蓝链输入的时候，采用倒序输入链接的方**式，得到的链接顺序会自动校正为正常顺序。
 
 这里指的是链接选品的时候，倒序插入商品链接，点击确定后，得到的产品顺序是正序的
-
-![](img/13ffcfd4c22760090392afe6ba5b8f88.png)
-
 **点击链接选品**
-
-![](img/86791f6913a7bf9b529c8dd9a7936157.png)
-
 倒序输入链接，识别链接，点击确定后就是正序的
 
 tips2:想要实现流水线生产视频到发布，这一步是必须要解决的
 
 想要实现**自动化输入蓝链**的，可以参考下我的研究笔记。[提效代码](https://zqxbobng8rp.feishu.cn/docx/YACMd91o4oIYyqxsqMVcs6wenIe?from=from_copylink)
-
-![](img/8295ee12c1da3248faf2b9831ceb4b8b.png)
-
 ### 5.2 数据采集
 
 推荐GitHub上面一个自媒体采集的项目，下面这个是原本的代码
-
-![](img/622bd31476668a1699a35b46c0cac17e.png)
-
 [MediaCrawler-main.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XGyOborfPoUpHhxOnL1cD5dknRf)
 
 可以采集知乎，📕，抖音，B站等平台的内容。比如知乎文章，评论等
@@ -5826,15 +5841,9 @@ tips2:想要实现流水线生产视频到发布，这一步是必须要解决�
 2.可以使用这个工具，把知乎的测评文章及评论采集到本地，进行脚本撰写的参考。
 
 ### 5.3 B站字幕批量下载
-
-![](img/49a97f34b96b510524e818da85ce8d55.png)
-
 具体方法见[提效代码](https://zqxbobng8rp.feishu.cn/docx/YACMd91o4oIYyqxsqMVcs6wenIe?from=from_copylink)文档说明
 
 ### 5.4 B站视频批量下载
-
-![](img/6c18a77d29124649de0dfdc6dc484888.png)
-
 具体方法见[提效代码](https://zqxbobng8rp.feishu.cn/docx/YACMd91o4oIYyqxsqMVcs6wenIe?from=from_copylink)文档说明
 
 ### 5.5 去水印
@@ -5856,17 +5865,8 @@ get笔记网页版，输入B站链接。
 ### 5.7 视频半自动化剪辑系统
 
 **开发中 ，****敬请****等待下一篇**
-
-![](img/184e6d449f476df620ea03aa76f86e30.png)
-
 **脚本编辑页面**
-
-![](img/057613f0f627522fe5778b0d45d5fff4.png)
-
 **样式管理页面**
-
-![](img/d8965b18dbe7aa99e46039a1ecb0d226.png)
-
 **配置生成页面**
 
 ```

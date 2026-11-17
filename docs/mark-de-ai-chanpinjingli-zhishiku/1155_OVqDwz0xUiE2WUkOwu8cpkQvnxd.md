@@ -2,6 +2,8 @@
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/QjbPdcgbFoE1Kpx8J4wcyQv9nVc](https://qqs7y1hozd1.feishu.cn/docx/QjbPdcgbFoE1Kpx8J4wcyQv9nVc)
 
+        return f&quot;https://i.imgflip.com/{meme_id}.jpg&quot;
+
 ```
 import asyncio
 import streamlit as st
@@ -62,12 +64,10 @@ async def generate_meme(query: str, model_choice: str, api_key: str) -&gt; None:
     url_match = re.search(r&#x27;https://imgflip\.com/i/(\w+)&#x27;, final_result)
     if url_match:
         meme_id = url_match.group(1)
-        return f&quot;https://i.imgflip.com/{meme_id}.jpg&quot;
     return None
 
 def main():
     # Custom CSS styling
-
 
     st.title(&quot;🥸 AI Meme Generator Agent - Browser Use&quot;)
     st.info(&quot;This AI browser agent does browser automation to generate memes based on your input with browser use. Please enter your API key and describe the meme you want to generate.&quot;)

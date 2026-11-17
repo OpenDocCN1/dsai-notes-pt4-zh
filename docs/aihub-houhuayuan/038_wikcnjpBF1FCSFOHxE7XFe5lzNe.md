@@ -134,6 +134,8 @@ OpenAI 的 ChatGPT 产品破圈的过程大家还记忆犹新，最开始是提�
 
 [下面是官方插件开发](https://github.com/openai/chatgpt-retrieval-plugin)最重要的描述文件，更详细的信息可以参考 官方示例开源的插件，这个描述文件定义了插件的行为和能力，以及交互细节
 
+  &quot;logo_url&quot;: &quot;https://your-app-url.com/.well-known/logo.png&quot;,
+
 ```
 {
   &quot;schema_version&quot;: &quot;v1&quot;,
@@ -150,7 +152,6 @@ OpenAI 的 ChatGPT 产品破圈的过程大家还记忆犹新，最开始是提�
     &quot;url&quot;: &quot;https://your-app-url.com/.well-known/openapi.yaml&quot;,
     &quot;has_user_authentication&quot;: false
   },
-  &quot;logo_url&quot;: &quot;https://your-app-url.com/.well-known/logo.png&quot;,
   &quot;contact_email&quot;: &quot;hello@contact.com&quot;, 
   &quot;legal_info_url&quot;: &quot;http://example.com/legal-info&quot;
 }

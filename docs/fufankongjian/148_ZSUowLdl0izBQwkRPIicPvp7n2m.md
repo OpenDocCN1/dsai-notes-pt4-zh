@@ -442,6 +442,8 @@ def render_page(doc_list: list, page_number: int, print_text=True) -&gt; None:
 
 而更进一步的，我们就能将其转化为markdown文档：
 
+                md_lines.append(f&quot;![Image](./{img_path})\n&quot;)
+
 ```
 import os
 import fitz
@@ -502,7 +504,6 @@ for el in elements:
         # 避免重复插入：只插入当前图片对应的文件
         for img_path in image_map.get(page_num, []):
             if img_path not in inserted_images:
-                md_lines.append(f&quot;![Image](./{img_path})\n&quot;)
                 inserted_images.add(img_path)
     else:
         md_lines.append(text + &quot;\n&quot;)
@@ -651,11 +652,12 @@ for el in elements:
 
 (3) 图片
 
+                md_lines.append(f&quot;![Image](./{img_path})\n&quot;)
+
 ```
     elif cat == &quot;Image&quot;:
         for img_path in image_map.get(page_num, []):
             if img_path not in inserted_images:
-                md_lines.append(f&quot;![Image](./{img_path})\n&quot;)
                 inserted_images.add(img_path)
 ```
 
@@ -785,6 +787,8 @@ pip install -U &quot;langgraph-cli[inmem]&quot;
 
 接下来我们需要先将其逆向转化为md文档：
 
+                md_lines.append(f&quot;![Image](./{img_path})\n&quot;)
+
 ```
 import os
 import fitz
@@ -844,7 +848,6 @@ for el in elements:
         # 避免重复插入：只插入当前图片对应的文件
         for img_path in image_map.get(page_num, []):
             if img_path not in inserted_images:
-                md_lines.append(f&quot;![Image](./{img_path})\n&quot;)
                 inserted_images.add(img_path)
     else:
         md_lines.append(text + &quot;\n&quot;)
@@ -911,6 +914,8 @@ vector_store.save_local(&quot;telco_customer_churn_analytics_handbook&quot;)
 ### 3. 多模态RAG系统开发
 
 接下来编写多模态RAG系统代码：
+
+    &quot;- If the context includes Markdown images (e.g. ![alt](url)), and the image is relevant, you may include it in the response.\n&quot;
 
 ```
 from __future__ import annotations
@@ -990,7 +995,6 @@ ANSWER_PROMPT = (
     
     &quot;Guidelines:\n&quot;
     &quot;- Prefer quoting code snippets using triple backticks (```) to preserve formatting.\n&quot;
-    &quot;- If the context includes Markdown images (e.g. ![alt](url)), and the image is relevant, you may include it in the response.\n&quot;
     &quot;- Keep the response structured and easy to read with proper Markdown sections if needed.\n&quot;
     &quot;- If the answer is unknown or not present in the context, say: &#x27;我不知道。&#x27;\n\n&quot;
 
@@ -1011,10 +1015,8 @@ async def generate_query_or_respond(state: MessagesState):
     )
     return {&quot;messages&quot;: [response]}
 
-
 class GradeDoc(BaseModel):
     binary_score: str = Field(description=&quot;Relevance score &#x27;yes&#x27; or &#x27;no&#x27;.&quot;)
-
 
 async def grade_documents(state: MessagesState) -&gt; Literal[&quot;generate_answer&quot;, &quot;rewrite_question&quot;]:
     question = state[&quot;messages&quot;][0].content  # original user question
@@ -1025,13 +1027,11 @@ async def grade_documents(state: MessagesState) -&gt; Literal[&quot;generate_ans
     ])
     return &quot;generate_answer&quot; if result.binary_score.lower().startswith(&quot;y&quot;) else &quot;rewrite_question&quot;
 
-
 async def rewrite_question(state: MessagesState):
     question = state[&quot;messages&quot;][0].content
     prompt = REWRITE_PROMPT.format(question=question)
     resp = await model.ainvoke([{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}])
     return {&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: resp.content}]}
-
 
 async def generate_answer(state: MessagesState):
     question = state[&quot;messages&quot;][0].content

@@ -807,6 +807,12 @@ WriteTasks的输出定义了类视图中的类对应的文件名。其中，逻�
     &quot;Task list&quot;: [
         &quot;main.py&quot;
     ],
+
+![](img/83f6b6eff601134c4966842a034c945c.png)
+
+
+![](img/4f65dddaa4bcf63c8322b042a76d89db.png)
+
 ```
 
 ##### 编写代码和QA
@@ -822,9 +828,6 @@ WriteCode依赖上游的类视图和相关图。人工如果修改WriteCode的�
 1.  MetaGPT的控制台交互方式决定了用户只能通过文本方式来发起增量变更；
 
 1.  PRD使用Mermaid语法缺少用例图和活动图描述能力，决定了所开发的软件复杂度不高；
-
-![](img/83f6b6eff601134c4966842a034c945c.png)
-
 ####
 
 #### 可进行的变更
@@ -860,9 +863,6 @@ WriteCode依赖上游的类视图和相关图。人工如果修改WriteCode的�
 ###### 消息编号
 
 将文件数据从消息内分割后，会出现消息内容相同但事件含义不同的情况，如下图所示：
-
-![](img/4f65dddaa4bcf63c8322b042a76d89db.png)
-
 为此，在Message中增加id属性，来区分是否是同一个Message。
 
 ```
@@ -942,6 +942,9 @@ class Message(BaseModel):
 
 
 &gt;&gt;&gt;
+
+![](img/a30a67571a6795bbc4c62c60f8292b63.png)
+
 ```
 
 ##### 项目文件夹结构
@@ -967,9 +970,6 @@ class Message(BaseModel):
 | 测试输出 | 否 | 单测执行的结果 |
 
 ##### 流程变更
-
-![](img/a30a67571a6795bbc4c62c60f8292b63.png)
-
 整体流程调整：
 
 1.  ProductManager对象添加PrepareDocumentsAction类；
@@ -1014,12 +1014,47 @@ OPENAI_API_BASE: &quot;https://api.openai.com/v1&quot;
 #OPENAI_PROXY: &quot;http://127.0.0.1:8118&quot;
 #OPENAI_API_KEY: &quot;YOUR_API_KEY&quot;
 OPENAI_API_MODEL: &quot;gpt-4&quot;
-```
-
-动作结束后，docs/requirement.txt可用、工作空间可用。
 
 ![](img/2309f8b49b500f6d5f9ccc65cd8c5d48.png)
 
+
+![](img/9d4aa86dd39381971e155c414ceaf0e9.png)
+
+
+![](img/213eb05737c8b23b7dad454d2f703ddf.png)
+
+
+![](img/7a0ee486df1af7468739ec9b44c35738.png)
+
+
+![](img/1d6cb41ae1e2bf72e14b4f4dc69cfda6.png)
+
+
+![](img/336864fbf7efac88ff0e7657b5746004.png)
+
+
+![](img/7708e2649fc0c6782d5ed8139ac9073d.png)
+
+
+![](img/3dbeb9a88ea6d3472902ec353a8b3d43.png)
+
+
+![](img/4109647f30cb013e91c034f118bb64a3.png)
+
+
+![](img/5e4d369ab1d64275df54265d14299f9b.png)
+
+![](img/b34ea4d2820f8f7a53cdb12748ad7318.png)
+
+
+![](img/0b71f0441af437ec405352ac2abb5533.png)
+
+
+![](img/e1712ca61444bf5534866556bd119e09.png)
+
+```
+
+动作结束后，docs/requirement.txt可用、工作空间可用。
 ###### 写入PRD
 
 此行动负责：
@@ -1027,9 +1062,6 @@ OPENAI_API_MODEL: &quot;gpt-4&quot;
 1.  判断当前的输入是bug反馈还是需求。如果是bug反馈，则发消息给Engineer角色处理。
 
 1.  判断哪些需求文档需要重写：调LLM判断增加需求与prd是否相关，如果相关就重写prd。
-
-![](img/9d4aa86dd39381971e155c414ceaf0e9.png)
-
 其中：
 
 a. 文件名优先使用旧文件名。如果没有的旧文件，新建时间格式的     对应文件名。这条规则实际上是通过规则来表达依赖关系，效果等价于2.2.3.2 .denpendencies.json文件。
@@ -1041,9 +1073,6 @@ a. 文件名优先使用旧文件名。如果没有的旧文件，新建时间�
 1.  等docs/prds/下所有文件都与新增需求对比完成后，再点击发布消息让工作流截图到下一个阶段。如此设计是为了给后续做全局优化留空间。
 
 行动结束后，docs/prds/可用。
-
-![](img/213eb05737c8b23b7dad454d2f703ddf.png)
-
 ###### WriteDesign
 
 此行动负责：
@@ -1053,9 +1082,6 @@ a. 文件名优先使用旧文件名。如果没有的旧文件，新建时间�
 1.  通过git diff来识别docs/system_designs下那些设计文档发生了震动；
 
 1.  针对那些发起的PRD和设计文档，重新生成设计内容；
-
-![](img/7a0ee486df1af7468739ec9b44c35738.png)
-
 一个。 由于新方案允许需求分片处理，因此：
 
 i． 原来resources下的data_api_design.mmd改为resources/data_api_design/下多个文件；
@@ -1069,9 +1095,6 @@ iii. 原来docs下的system\_design.md改为resources/system_design下的多个�
 4.等docs/system_designs/下所有文件都处理完才发发布消息，给后续做全局优化留空间。
 
 行动结束后，docs/system_designs/可用。
-
-![](img/1d6cb41ae1e2bf72e14b4f4dc69cfda6.png)
-
 ###### WriteTasks
 
 此行动负责：
@@ -1081,9 +1104,6 @@ iii. 原来docs下的system\_design.md改为resources/system_design下的多个�
 1.  根据docs/tasks/下的git head diff识别哪些任务文件被用户修改了，需要重写；
 
 1.  对于那些需要重写的任务文档，重新生成任务内容；
-
-![](img/336864fbf7efac88ff0e7657b5746004.png)
-
 其中：
 
 a. 用于WriteCode将原始数据文件保存     在docs/tasks/。
@@ -1091,31 +1111,14 @@ a. 用于WriteCode将原始数据文件保存     在docs/tasks/。
 原流程将任务的markdown文档内容保存到docs/api_spec_and_tasks.md中，由于新流程支持需求相应分片，将文档分片重新resource/api_spec_and_tasks/下放；
 
 c． 原流程会生成requirements.txt文件。新流程需要将每个分片生成的requirements.txt追加合并到同一个requirements.txt中。4. 等docs/tasks/下所有文件全部处理完成才发布消息，给后续做全局优化留空间。动作结束后，docs/tasks/可用。
-
-![](img/7708e2649fc0c6782d5ed8139ac9073d.png)
-
 ###### 2.2.3.5.5Engineer
 
 Engineer的_observe需要改造，关于消息内容的处理逻辑转移到_think中：
-
-![](img/3dbeb9a88ea6d3472902ec353a8b3d43.png)
-
 其中，_new_code_actions流程如下：
-
-![](img/4109647f30cb013e91c034f118bb64a3.png)
-
 _new_summarize_actions流程如下：
-
-![](img/5e4d369ab1d64275df54265d14299f9b.png)
-
-![](img/b34ea4d2820f8f7a53cdb12748ad7318.png)
-
 1.  原流程默认只有一个任务文件需要处理，现在默认有多个任务文件。因此原流程中到内存中搜WriteDesign消息的流程已不适用。
 
 1.  新的流程将“任务文件”、“要写代码的文件”放在同一个Document类里，定位一个WriteCode动作对象去执行。其中，“与任务相关的WriteDesign设计文件”这个参数通过依赖关系由动作对象自行查找。
-
-![](img/0b71f0441af437ec405352ac2abb5533.png)
-
 1.  与旧流程一样，WriteCodeaction需基于已有的代码，来写当前代码。
 
 1.  WriteCode在编写代码的时候，会参考历史SummarizeCode发现的问题和用户反馈的bug反馈。
@@ -1123,9 +1126,6 @@ _new_summarize_actions流程如下：
 1.  WriteCode在保存代码的时候，需要更新文件依赖关系。
 
 1.  WriteCode在写代码的时候，如果git diff发现code有变更，需要让LLM参考代码文件内容进行重写。
-
-![](img/e1712ca61444bf5534866556bd119e09.png)
-
 2.2.3.5.5.1WriteCode和WriteCodeReview改造
 
 现有代码中，WriteCode和WriteCodeReview的传参方式与基类Action差异增加：

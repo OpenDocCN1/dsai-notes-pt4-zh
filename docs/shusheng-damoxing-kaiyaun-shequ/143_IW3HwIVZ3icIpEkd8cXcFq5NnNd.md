@@ -88,6 +88,9 @@ print(response)
 
 1.  VLM 推理(Visual Language Models
 
+
+image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
+
 ```
 from lmdeploy import pipeline, VisionConfig
 from lmdeploy.vl import load_image
@@ -96,8 +99,6 @@ pipe = pipeline(&#x27;/root/share/new_models/InternVL3/InternVL3-1B&#x27;,
                 vision_config=VisionConfig(
                     max_batch_size=8
                 ))
-
-image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
 response = pipe((&#x27;describe this image&#x27;, image))
 print(response)
 ```
@@ -488,14 +489,14 @@ print(response.json()[&quot;choices&quot;][0][&quot;message&quot;][&quot;content
 
 #### 离线部署
 
+
+image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
+
 ```
 from lmdeploy import pipeline
 from lmdeploy.vl import load_image
 
 pipe = pipeline(&#x27;/root/share/new_models/InternVL3/InternVL3-1B&#x27;)
-
-image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
-
 response = pipe((&#x27;describe this image&#x27;, image))
 
 print(response)
@@ -523,6 +524,9 @@ print(response)
 IMAGE_TOKEN = &#x27;&lt;IMAGE_TOKEN&gt;&#x27;
 ```
 
+
+image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
+
 ```
 from lmdeploy import pipeline, VisionConfig
 from lmdeploy.vl import load_image
@@ -532,8 +536,6 @@ pipe = pipeline(&#x27;/root/share/new_models/InternVL3/InternVL3-1B&#x27;,
                 vision_config=VisionConfig(
                     max_batch_size=8
                 ))
-
-image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
 response = pipe((f&#x27;describe this image{IMAGE_TOKEN}&#x27;, image))
 print(response)
 
@@ -593,15 +595,15 @@ for response in pipe.stream_infer(messages):
 
 > 可通过设置 VisionConfig 修改视觉模型默认参数
 
+image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
+
 ```
 from lmdeploy import pipeline, VisionConfig
 from lmdeploy.vl import load_image
 vision_config=VisionConfig(max_batch_size=16)
 pipe = pipeline(&#x27;/root/share/new_models/InternVL3/InternVL3-1B&#x27;, vision_config=vision_config)
-image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;)
 response = pipe((&#x27;describe this image&#x27;, image))
 print(response)
-
 
 ###VisionConfig 源码
 
@@ -623,6 +625,9 @@ class VisionConfig:
 
 #### 多图推理
 
+    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;,
+    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/det.jpg&#x27;
+
 ```
 from lmdeploy import pipeline, TurbomindEngineConfig
 from lmdeploy.vl import load_image
@@ -631,8 +636,6 @@ pipe = pipeline(&#x27;/root/share/new_models/InternVL3/InternVL3-1B&#x27;,
                 backend_config=TurbomindEngineConfig(session_len=8192))
 
 image_urls=[
-    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;,
-    &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/det.jpg&#x27;
 ]
 
 images = [load_image(img_url) for img_url in image_urls]
@@ -644,14 +647,15 @@ print(response)
 
 > 使用pipeline 进行多轮对话有两种方式，一种是按照 openai 的格式来构造 messages，另外一种是使用 pipeline.chat 接口。
 
+
+image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;)
+
 ```
 from lmdeploy import pipeline, TurbomindEngineConfig, GenerationConfig
 from lmdeploy.vl import load_image
 
 pipe = pipeline(&#x27;/root/share/new_models/InternVL3/InternVL3-1B&#x27;,  # 注意加了 `/`
                 backend_config=TurbomindEngineConfig(session_len=8192))
-
-image = load_image(&#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;)
 gen_config = GenerationConfig(top_k=40, top_p=0.8, temperature=0.6)
 
 # 第一句图文对话

@@ -927,11 +927,11 @@ Version: 2.7
 
 ## 7 [Init]
 
+        var logo = &quot;https://media.discordapp.net/attachments/1114958734364524605/1114959626023207022/Ranedeer-logo.png&quot;
+
 ```
 [Init]
     [BEGIN]
-        var logo = &quot;https://media.discordapp.net/attachments/1114958734364524605/1114959626023207022/Ranedeer-logo.png&quot;
-
         &lt;display logo&gt;
 
         &lt;introduce yourself alongside who is your author, name, version&gt;
@@ -952,11 +952,11 @@ Version: 2.7
     [END]
 ```
 
+        变量 logo = &quot;https://media.discordapp.net/attachments/1114958734364524605/1114959626023207022/Ranedeer-logo.png&quot;
+
 ```
 [初始化]
     [开始]
-        变量 logo = &quot;https://media.discordapp.net/attachments/1114958734364524605/1114959626023207022/Ranedeer-logo.png&quot;
-
         &lt;展示 logo&gt;
 
         &lt;自我介绍，同时介绍你的作者、名字和版本&gt;
@@ -1433,6 +1433,8 @@ ok，你又说，那我在工作流程中让gpt用skill去写作不就完了吗�
 
 # 👌五、指令(Prompt)
 
+        var logo = &quot;https://media.discordapp.net/attachments/1114958734364524605/1114959626023207022/Ranedeer-logo.png&quot;
+
 ```
 ===
 Author: JushBJJ
@@ -1702,8 +1704,6 @@ Version: 2.7
 
 [Init]
     [BEGIN]
-        var logo = &quot;https://media.discordapp.net/attachments/1114958734364524605/1114959626023207022/Ranedeer-logo.png&quot;
-
         &lt;display logo&gt;
 
         &lt;introduce yourself alongside who is your author, name, version&gt;
@@ -1722,7 +1722,6 @@ Version: 2.7
         &lt;mention the /language command&gt;
         &lt;guide the user on the next command they may want to use, like the /plan command&gt;
     [END]
-
 
 [Personalization Options]
     Depth:

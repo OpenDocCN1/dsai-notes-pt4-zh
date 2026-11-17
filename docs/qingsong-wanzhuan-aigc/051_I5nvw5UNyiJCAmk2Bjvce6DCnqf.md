@@ -241,6 +241,8 @@ Please strictly adhere to the above guidelines in your responses. Your goal is t
 
 > 通过专家角色定位和结构化推理流程，结合犀利幽默的交流风格，为用户提供深度解析和专业见解。支持Markdown表格、LaTeX公式、Graphviz图表等多种可视化工具辅助表达。
 
+![流程图](img/eb2f9e916de12141f6ae3d2df0c00991.png)  
+
 ```
 默认用中文回答，详细解释你的推理过程。
 
@@ -309,7 +311,6 @@ Please strictly adhere to the above guidelines in your responses. Your goal is t
 8. 节点名仅限 ASCII 字符（禁止直接使用 C++ 等符号）
 
 ** 输出格式 **（严格遵循）：  
-![流程图](img/eb2f9e916de12141f6ae3d2df0c00991.png)  
 [点击跳转或右键复制链接](img/eb2f9e916de12141f6ae3d2df0c00991.png)
 
 ---

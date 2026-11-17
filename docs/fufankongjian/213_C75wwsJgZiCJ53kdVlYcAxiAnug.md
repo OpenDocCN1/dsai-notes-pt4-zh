@@ -1327,8 +1327,9 @@ Action:`$JSON_BLOB`
 
 1.  然后输入需求：
 
-```
 请将图像（https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250908183154697.png） 上的红色沙发改为灰色，并将猫咪改成乖巧可爱的一只阿比西尼亚猫。请重新尝试
+
+```
 ```
 
 ![](img/b5b0d9d68ca7eca1046282684e38dc2c.png)
@@ -1598,6 +1599,8 @@ golden hour landscape of a coastal town, long exposure water, crisp details, nat
 
 **C-1 产品换背景**
 
+{{image_url}}: https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/e06042229cc02164cb7d7a5f35bbb891.jpg
+
 ```
 {{engine}}: nano
 {{lang}}: en
@@ -1607,7 +1610,6 @@ golden hour landscape of a coastal town, long exposure water, crisp details, nat
 {{count}}: 1
 {{steps}}: 30
 {{seed}}: 66
-{{image_url}}: https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/e06042229cc02164cb7d7a5f35bbb891.jpg
 ```
 
 对话时输入：
@@ -1626,6 +1628,8 @@ place the product on a minimal wood tabletop with soft daylight, add subtle refl
 
 **C-2 风格迁移（真人→插画）**
 
+{{image_url}}: https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/225911b708b15df44250a16cf639904b.jpg
+
 ```
 {{engine}}: nano
 {{style}}: illustration
@@ -1633,7 +1637,6 @@ place the product on a minimal wood tabletop with soft daylight, add subtle refl
 {{negative_prompt}}: distortion, extra fingers
 {{count}}: 1
 {{steps}}: 32
-{{image_url}}: https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/225911b708b15df44250a16cf639904b.jpg
 ```
 
 对话时输入：

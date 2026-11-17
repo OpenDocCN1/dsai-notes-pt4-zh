@@ -40,14 +40,14 @@ Hi，这里是Aitrainee，欢迎阅读本期新文章。
 #pip install --upgrade --quiet langchain sentence_transformers
 #!pip install -U &quot;huggingface_hub[cli]&quot;
 #!huggingface-cli login
+
+![](img/690f0d8b1612ba1baa9f962006ea5071.png)
+
 ```
 
 ### **步骤二：加载和转换数据**
 
 接下来，我们将从一个网站加载数据，这里选择了关于LeBron James的网站。尽管有观众在我之前的视频中表示偏好其他球员，但我选择这个网站是因为它包含了复杂的数据，能够很好地测试模型的性能。我们将使用一个网络数据加载器来加载数据，并将其转换为一个名为Chroma DB的向量数据库。
-
-![](img/690f0d8b1612ba1baa9f962006ea5071.png)
-
 ```
 from langchain_community.document_loaders import WebBaseLoader
 
@@ -55,12 +55,12 @@ from langchain_community.document_loaders import WebBaseLoader
 loader = WebBaseLoader(&quot;https://www.nba.com/player/2544/lebron-james&quot;)
 data = loader.load()
 data
-```
 
 ![](img/cda0de880b8c618028f799fa66d2fed1.png)
 
 ![](img/0dbf067f527f087487fd665f3a3ae48c.png)
 
+```
 **将数据转换为向量数据库**
 
 ```
@@ -72,10 +72,10 @@ embeddings_model = HuggingFaceEmbeddings() # 例如 sentence-transformers/all-mp
 
 # 创建 Chroma 向量数据库
 vectorstore = Chroma.from_documents(documents=data, embedding=embeddings_model, persist_directory=&quot;./chroma_db&quot;)
-```
 
 ![](img/20f7b856ebd000c4b52e149069d00727.png)
 
+```
 ### **步骤三：构建RAG管道**
 
 在这个步骤中，我们将导入所需的各种包，如chatolama、output parser、chat prompt等，并导入Transformers包。接着，使用chatolama加载Gemma 2模型，并从Lang chain Hub导入一个RAG prompt。我们会创建一个QA链，传入我们选择的LLM（Gemma 2）、检索器和RAG prompt，然后运行这个链，传入问题并检视结果。

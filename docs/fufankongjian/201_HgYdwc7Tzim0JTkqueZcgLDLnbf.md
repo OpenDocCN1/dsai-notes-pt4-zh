@@ -1161,6 +1161,9 @@ system_prompt = ChatPromptTemplate.from_messages([
 qa_chain = system_prompt | model | StrOutputParser()
 ```
 
+                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f464.png&quot;,
+                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f916.png&quot;
+
 ```
 # 流式回应函数
 async def chat_response(message, history):
@@ -1202,8 +1205,6 @@ def create_chatbot():
                 height=500,
                 show_copy_button=True,
                 avatar_images=(
-                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f464.png&quot;,
-                    &quot;https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f916.png&quot;
                 ),
                 
             )

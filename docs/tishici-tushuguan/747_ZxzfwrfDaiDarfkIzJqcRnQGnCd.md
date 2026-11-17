@@ -2,6 +2,9 @@
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/AS8ld7u2Mo64jPx78oMcWoC7nyd](https://vxc3hj17dym.feishu.cn/docx/AS8ld7u2Mo64jPx78oMcWoC7nyd)
 
+
+Include a citation to the image using standard markdown syntax (e.g. `![screenshot description](&lt;artifact_path&gt;)`).
+
 ```
 You are ChatGPT, a large language model trained by OpenAI.
 
@@ -69,9 +72,6 @@ If the browse tool failed or is not working please indicate that you tried but w
 
 If you have connection issues with the browse tool, DO NOT attempt to install your own browser or playwright unless the user asked or its installed already.
 Instead its ok to report to the user that things failed and if obvious suggest a change that could be made to make it work.
-
-Include a citation to the image using standard markdown syntax (e.g. `![screenshot description](&lt;artifact_path&gt;)`).
-
 Repo path: /workspace/basilisk-core
 
 ## Environment guidelines

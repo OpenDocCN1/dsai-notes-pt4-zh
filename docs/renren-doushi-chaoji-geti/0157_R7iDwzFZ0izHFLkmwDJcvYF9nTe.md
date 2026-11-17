@@ -779,6 +779,10 @@ https://milled.com/purplegarden/your-free-september-tarot-forecast-inside-TRbkvo
 
 模板提示词
 
+logo地址：https://psychicsamira.com/cdn/shop/files/psychic-samira-favicon.png?crop=center&amp;height=32&amp;v=1697486004&amp;width=32
+
+图片地址 https://psychicsamira.com/cdn/shop/files/Full-Psychic-Reading-by-Samira-Psychic-Samira-212523481.jpg?v=1759129946
+
 ```
 1、我这次的主题是每月塔罗牌解读，创建卡片式设计。电子邮件主体应为一个单一容器，背景为浅紫色。卡片外的页面背景应为浅灰色。
 
@@ -787,8 +791,6 @@ https://milled.com/purplegarden/your-free-september-tarot-forecast-inside-TRbkvo
 按钮：将 click here修改为&lt;p&gt;&lt;a href=&quot;{{WebVersionURL}}&gt;click here&lt;/a&gt;&lt;/p&gt;标签，且变成蓝色。
 
 3、将logo和Psychic Samira 品牌名同一行并居中
-logo地址：https://psychicsamira.com/cdn/shop/files/psychic-samira-favicon.png?crop=center&amp;height=32&amp;v=1697486004&amp;width=32
-
 3、使用Home About Reviews 作为title部分的按钮和链接，创建三个药丸形状的紫色导航按钮。
 Home 链接：https://psychicsamira.com/?bg_ref=jKzx3f8h2G
 About 链接：https://psychicsamira.com/pages/about-me?bg_ref=jKzx3f8h2G
@@ -824,7 +826,6 @@ Card 3 - The Empress
 8、新增模块 Get professional tarot reading。模块居中产品卡片。卡片应采用白色背景和浅灰色边框。功能列表请使用表情符号
 套餐样式/颜色考虑背景色，内容如下
 套餐1：
-图片地址 https://psychicsamira.com/cdn/shop/files/Full-Psychic-Reading-by-Samira-Psychic-Samira-212523481.jpg?v=1759129946
 套餐名字 Tarot Reading by Samira
 价格 $99.00横线  $59.99
 优势和特点（附带颜表情）：
@@ -863,6 +864,15 @@ If you don&#x27;t want to receive our message, just click here to cancel the sub
 ```
 
 邮件模板源码
+
+                                &lt;img src=&quot;https://psychicsamira.com/cdn/shop/files/psychic-samira-favicon.png?crop=center&amp;height=32&amp;v=1697486004&amp;width=32&quot; alt=&quot;Logo&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;&quot;&gt;
+                    &lt;img src=&quot;https://i.imgur.com/XD1fspN.png&quot; width=&quot;600&quot; alt=&quot;October Tarot Forecast&quot; style=&quot;width:100%;max-width:600px;height:auto;display:block;&quot;&gt;
+                                &lt;tr&gt;&lt;td style=&quot;padding:20px 15px 15px 15px;&quot;&gt;&lt;img src=&quot;https://psychicsamira.com/cdn/shop/files/Full-Psychic-Reading-by-Samira-Psychic-Samira-212523481.jpg?v=1759129946&quot; width=&quot;300&quot; alt=&quot;Tarot Reading&quot; style=&quot;max-width:100%; border-radius:8px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.facebook.com/PsychicSamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/2504/2504903.png&quot; alt=&quot;Facebook&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.tiktok.com/@psychicsamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/3046/3046121.png&quot; alt=&quot;TikTok&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.instagram.com/psychicsamira/&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/2111/2111463.png&quot; alt=&quot;Instagram&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://twitter.com/psychicsamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/14417/14417460.png&quot; alt=&quot;X (Twitter)&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.youtube.com/@PsychicSamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/1384/1384060.png&quot; alt=&quot;YouTube&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
 
 ```
 &lt;!DOCTYPE html&gt;
@@ -904,7 +914,6 @@ If you don&#x27;t want to receive our message, just click here to cancel the sub
                     &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;
                         &lt;tr&gt;
                             &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;
-                                &lt;img src=&quot;https://psychicsamira.com/cdn/shop/files/psychic-samira-favicon.png?crop=center&amp;height=32&amp;v=1697486004&amp;width=32&quot; alt=&quot;Logo&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;&quot;&gt;
                             &lt;/td&gt;
                             &lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;padding-left: 10px;&quot;&gt;
                                 &lt;p style=&quot;font-family:Arial,sans-serif;font-size:22px;font-weight:bold;color:#000000;margin:0;&quot;&gt;Psychic Samira&lt;/p&gt;
@@ -936,7 +945,6 @@ If you don&#x27;t want to receive our message, just click here to cancel the sub
                 &lt;td align=&quot;center&quot;&gt;
                     &lt;h2 style=&quot;font-family:Georgia, serif;color:#483D8B;font-size:32px;font-weight:bold;margin:0 0 10px 0;&quot;&gt;Your October Tarot Forecast&lt;/h2&gt;
                     &lt;h3 style=&quot;font-family:Georgia, serif;color:#8A2BE2;font-size:24px;font-weight:normal;margin:0 0 25px 0;&quot;&gt;Step Into Transformation&lt;/h3&gt;
-                    &lt;img src=&quot;https://i.imgur.com/XD1fspN.png&quot; width=&quot;600&quot; alt=&quot;October Tarot Forecast&quot; style=&quot;width:100%;max-width:600px;height:auto;display:block;&quot;&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
@@ -1001,7 +1009,6 @@ If you don&#x27;t want to receive our message, just click here to cancel the sub
                     &lt;div class=&quot;column-wrapper&quot; style=&quot;width:100%;max-width:400px;display:inline-block;vertical-align:top;&quot;&gt;
                          &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding:0 10px;&quot;&gt;
                             &lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot; style=&quot;background-color:#ffffff;border:1px solid #dddddd;border-radius:10px;text-align:center;font-family:Arial,sans-serif;font-size:15px;color:#333333;height:100%;&quot;&gt;
-                                &lt;tr&gt;&lt;td style=&quot;padding:20px 15px 15px 15px;&quot;&gt;&lt;img src=&quot;https://psychicsamira.com/cdn/shop/files/Full-Psychic-Reading-by-Samira-Psychic-Samira-212523481.jpg?v=1759129946&quot; width=&quot;300&quot; alt=&quot;Tarot Reading&quot; style=&quot;max-width:100%; border-radius:8px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
                                 &lt;tr&gt;&lt;td style=&quot;padding:0 15px 10px;&quot;&gt;&lt;h3 style=&quot;color:#C71585;font-size:18px;font-weight:bold;margin:0;line-height:1.3;&quot;&gt;Tarot Reading by Samira&lt;/h3&gt;&lt;/td&gt;&lt;/tr&gt;
                                 &lt;tr&gt;&lt;td style=&quot;padding:0 15px 15px 15px;font-size:20px;font-weight:bold;&quot;&gt;&lt;del style=&quot;color:#999999;font-size:16px;&quot;&gt;$99.00&lt;/del&gt; &lt;span style=&quot;color:#8A2BE2;&quot;&gt;$59.99&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
                                 &lt;tr&gt;&lt;td style=&quot;padding:0 25px 15px 25px;text-align:left;font-size:14px;line-height:1.6;&quot;&gt;
@@ -1042,11 +1049,6 @@ If you don&#x27;t want to receive our message, just click here to cancel the sub
                     &lt;h3 style=&quot;font-family:Arial,sans-serif;color:#8A2BE2;font-size:22px;font-weight:bold;margin:0 0 25px 0;&quot;&gt;Stay Connected&lt;/h3&gt;
                     &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
                         &lt;tr&gt;
-                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.facebook.com/PsychicSamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/2504/2504903.png&quot; alt=&quot;Facebook&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
-                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.tiktok.com/@psychicsamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/3046/3046121.png&quot; alt=&quot;TikTok&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
-                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.instagram.com/psychicsamira/&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/2111/2111463.png&quot; alt=&quot;Instagram&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
-                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://twitter.com/psychicsamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/14417/14417460.png&quot; alt=&quot;X (Twitter)&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
-                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.youtube.com/@PsychicSamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/1384/1384060.png&quot; alt=&quot;YouTube&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
                         &lt;/tr&gt;
                     &lt;/table&gt;
                 &lt;/td&gt;

@@ -563,12 +563,15 @@ The original query appears to be correct. It:
 根据查询结果，**销售部的员工总共下了 3 个订单**。
 
 这个查询通过连接员工表（employees）和订单表（orders），统计了所有部门为&quot;销售部&quot;的员工所创建的订单总数。结果显示销售部员工在系统中总共创建了3个订单记录。
-```
-
-当然能实现NL2SQL功能的落地方案很多，如我们上面使用到的LangChain框架，还有像LangGraph、AutoGen、Google ADK等都有不同的实现形式。而我们所需要关注的是：虽然在开发框架的帮助下可以快速完成功能，但NL2SQL技术实现的挑战也很多，如下图所示，就是针对 BI 场景中“多表、多维度、多列”复杂 SQL 生成问题，提出视图选择＋分阶段流程：
 
 ![](img/1e67af61ff6459bbbde7dbb8035abb08.png)
 
+
+![](img/86e550967d66eb50088aedb7458f0ba3.png)
+
+```
+
+当然能实现NL2SQL功能的落地方案很多，如我们上面使用到的LangChain框架，还有像LangGraph、AutoGen、Google ADK等都有不同的实现形式。而我们所需要关注的是：虽然在开发框架的帮助下可以快速完成功能，但NL2SQL技术实现的挑战也很多，如下图所示，就是针对 BI 场景中“多表、多维度、多列”复杂 SQL 生成问题，提出视图选择＋分阶段流程：
 > 论文地址：https://arxiv.org/pdf/2405.00527
 
 这张流程图展示了传统 NL2SQL 与 NL2BI 在实际业务分析场景中的核心区别：
@@ -584,9 +587,6 @@ The original query appears to be correct. It:
 简言之，NL2SQL 如何从“单轮查询生成”扩展为“多轮、复杂、上下文感知的 BI 分析对话”，以及如何解决真实数据分析任务中的交互性与复杂性问题，还需要做更多细节性的开发工作。
 
 典型的开源项目就是 DB-GPT：https://github.com/eosphoros-ai/DB-GPT , 由蚂蚁集团发起的开源项目，重点在数据库交互和商业智能领域。它提供了一个框架，让大模型与企业数据库无缝对接，实现“用对话查询和分析数据库”的应用.
-
-![](img/86e550967d66eb50088aedb7458f0ba3.png)
-
 NL2SQL现在借助大模型技术手段可以很好的实现，但是业务指标的语义理解，则更多情况下是依赖数据分析的人工经验来“调教Agent”。比如"GMV"、"ROI"、"客单价"这些业务术语，大模型不一定天然理解它们在你们公司的具体定义。这是容易被忽视但极其重要的一环
 
 ## 2.2 LangChain搭建NL2Coder Agent(探索式数据分析类)
@@ -825,10 +825,10 @@ print(&quot;\n&quot; + &quot;=&quot;*60)
 ```
 问题: 分析一下员工薪资的分布情况，包括均值、中位数、最大最小值等统计量
 ============================================================
-```
 
 ![](img/b050b0305b7374c9c2cf10d7d92ec6a9.png)
 
+```
 ```
 分析结果:
 ## 员工薪资分布分析总结
@@ -885,10 +885,10 @@ print(&quot;\n&quot; + &quot;=&quot;*60)
 ```
 问题: 画一个柱状图，展示各部门的平均薪资对比
 ============================================================
-```
 
 ![](img/dd7e95e2d065c1a5e7a793f80679991e.png)
 
+```
 ```
 分析结果:
 ## 分析结果解释
@@ -954,10 +954,10 @@ print(f&quot;\n💡 最终回答:\n{final_msg.content}&quot;)
 ```
 问题: 计算每个产品类别的库存总量，并用水平条形图展示
 ============================================================
-```
 
 ![](img/9f0b6a820c428fdb6212183e010ae5b6.png)
 
+```
 ```
 AI 决策 #1:
   ├─ 调用工具: execute_python_code
@@ -1092,12 +1092,24 @@ NL2SQL vs NL2Code 技术方案对比总结如下：
     + 审计日志 (所有执行记录)
         ↓
     = 企业级数据分析 Agent
-```
-
-比较推荐且应用最广泛的项目是：Open Interpreter：https://github.com/openinterpreter/open-interpreter
 
 ![](img/137048ef1a012d1b549a7e3f237cc5b6.png)
 
+
+![](img/08e34872ea275880ab565fa4933f3953.png)
+
+
+![](img/5a354b227427f0311dc6b6c5ca3d2ea4.png)
+
+
+![](img/4e77cff813f55b047a4b490eeb9540c0.png)
+
+
+![](img/836107a0599a98b674fb80b7caa675b4.png)
+
+```
+
+比较推荐且应用最广泛的项目是：Open Interpreter：https://github.com/openinterpreter/open-interpreter
 Open Interpreter 是一个开源项目，它提供了一个安全的本地代码执行环境，并且支持多轮对话来逐步完善代码。
 
 当然，除了代码解释器的环境，像多轮对话处理、Agent 工具调用等，在探索式分析场景下都是需要重点关注的技术栈。
@@ -1109,23 +1121,11 @@ Open Interpreter 是一个开源项目，它提供了一个安全的本地代码
 实时性的数据分析需要的数据往往是最新的。除了一些数据仓库的实时数据接口，当然免不了需要针对现有数据源先做解析再做数据分析的情况，比如找到一些 .csv/excel 文件，通过对话的方式让大模型解析数据，生成可视化报表或者针对文件的内容进行问答。
 
 比如 PandasAI 则是在这个场景下非常优秀的开源项目。它的核心理念就是让你用对话的方式操作 DataFrame。https://github.com/sinaptik-ai/pandas-ai
-
-![](img/08e34872ea275880ab565fa4933f3953.png)
-
 其对话示例过程如下：
-
-![](img/5a354b227427f0311dc6b6c5ca3d2ea4.png)
-
 真实世界的数据不仅有结构化的表格，还有文档、图片、音频、JSON等非结构化形式。比如：
 
 +   复杂图表
-
-![](img/4e77cff813f55b047a4b490eeb9540c0.png)
-
 +   复杂表格
-
-![](img/836107a0599a98b674fb80b7caa675b4.png)
-
 要做到基于文件的实时数据分析，数据的解析则是第一步，同时也是最难的一步。
 
 # 三、DeepSeek-OCR 在数据分析中的应用
@@ -1148,24 +1148,24 @@ Open Interpreter 是一个开源项目，它提供了一个安全的本地代码
     ├─ 语音 → ASR模型 → 文本
     ├─ PDF → 文档解析 → 结构化数据
     └─ 全部汇聚到 LLM 进行统一分析
+
+![](img/f1ad10534c3dbf1f8adcd0bf17c9690e.png)
+
+
+![](img/f84d2f451467306e93dabb189b3e44db.png)
+
+
+![](img/dc4b57e1ec8568d8fc08fc9a7cf780e9.png)
+
 ```
 
 这样才能让数据分析Agent不局限于纯数字表，还能从更广泛的数据源获取洞察。
 
 随着大模型技术的兴起，OCR 技术也迎来了新的快速发展机遇。2025年10月16日发布的 PaddleOCR-VL 模型直接屠榜，在全球权威榜单OmniDocBench V1.5中以92.6分夺得综合性能第一，横扫文本识别、公式识别、表格理解与阅读顺序四项SOTA。
-
-![](img/f1ad10534c3dbf1f8adcd0bf17c9690e.png)
-
 而紧接其后，DeepSeek 也于 2025年10月21日发布了 DeepSeek-OCR 模型，仅需7G的显存，就能完成高精度的表格、公式识别，图片语义识别，并且在多项评测指标中一举拿下SOTA成绩。
-
-![](img/f84d2f451467306e93dabb189b3e44db.png)
-
 这类模型的兴起，完全是源于真实应用需求的驱动。
 
 OCR（全称：Optical Character Recognition，光学字符识别）是将包含文本的图像（如扫描文档、照片、表单、书页）转换成 机器可读的文本格式的技术，如下图所示：
-
-![](img/dc4b57e1ec8568d8fc08fc9a7cf780e9.png)
-
 在数据分析领域， OCR（光学字符识别）+ 计算机视觉技术主要涉及的是图表识别与重构，核心处理流程如下：
 
 ```
@@ -1180,6 +1180,14 @@ OCR（全称：Optical Character Recognition，光学字符识别）是将包含
     【数据计算】根据像素位置和坐标刻度反推数值
         ↓
     【重新绘制】用提取的数据重新生成图表
+
+![](img/ecbf621d11046d280b5639b06c507115.png)
+
+![](img/efbeab33c9eac9832645f2fb80e78075.png)
+
+
+![](img/f09c4e9d0bc247ee706f8b7d5ad3670b.png)
+
 ```
 
 除了 OCR 方案，还可以利用多模态大模型（如 GPT-5、Qwen3-VL）来直接"看懂"图表，
@@ -1189,15 +1197,7 @@ OCR（全称：Optical Character Recognition，光学字符识别）是将包含
 +   输出：图表的文字描述和洞察
 
 当然，DeepSeek-OCR 作为一个小参数量的VLM模型，在图表识别方面表现也非常优秀。本期公开课我们就不详细介绍 Deepseek-OCR 的本地部署流程，大家可以从百度网盘中领取详细的本地部署及运行测试文档。
-
-![](img/ecbf621d11046d280b5639b06c507115.png)
-
-![](img/efbeab33c9eac9832645f2fb80e78075.png)
-
 # 四、【实战】使用DeepSeek-OCR构建多模态数据分析
-
-![](img/f09c4e9d0bc247ee706f8b7d5ad3670b.png)
-
 这里我们以一个基金的PDF报告为例，给大家讲解一下实时多模态数据做数据分析的处理流程如下所示：
 
 ```
@@ -1220,6 +1220,17 @@ OCR（全称：Optical Character Recognition，光学字符识别）是将包含
     7. 用户操作：
     - 点击&quot;全屏查看&quot;：新窗口打开完整报告
     - 点击&quot;导出PDF&quot;：生成PDF文件（待开发）
+
+![](img/3fcfed61804dea2334dc15cf04ff11fc.png)
+
+![](img/bd6a8899841cbc6fd6f841dedbcf22d1.png)
+
+
+![](img/ec79ada18037796b5b0a3c2a163ebd76.png)
+
+
+![](img/8551a6981f145b8374130a6cec84376f.png)
+
 ```
 
 这里最关键，且最核心的就是如何将多模态的数据精准的解析出来。这一步操作的主要难点包括：
@@ -1233,37 +1244,26 @@ OCR（全称：Optical Character Recognition，光学字符识别）是将包含
 所以，除了借助OCR/VLM模型去对多模态数据进行解析外，还有一项比较关键的工作就是Agent上下文工程。
 
 基于DeepSeek-OCR构建全自动数据分析系统的完整前后端源码，大家可以从百度网盘中领取详细的本地部署及运行测试文档。
-
-![](img/3fcfed61804dea2334dc15cf04ff11fc.png)
-
-![](img/bd6a8899841cbc6fd6f841dedbcf22d1.png)
-
 +   **难点一：多模态数据解析**
 
 大家可以根据上面的文档内容在本地启动DeepSeek-OCR在Vllm模型下的API服务，我们这里直接进行API调用及核心处理流程的技术方案讲解。
 
 这里需要说明的是：为什么实时解析场景下需要用 vLLM 等推理框架加载模型，而不是直接用官方的方式来使用DeepSeek-OCR服务？
-
-![](img/ec79ada18037796b5b0a3c2a163ebd76.png)
-
 其一是因为vLLm等推理框架对模型的集成做了非常多推理上的优化，可以加快推理速度，提升推理效率。其次，通过在线的API服务不至于每次调用DeepSeek-OCR模型时，都要在本地启动服务，这对于企业级应用的实时性场景下是非常不适用的.
 
 DeepSeek-OCR 可以直接处理 PDF 文件，自动识别多页内容并合并为完整的 Markdown 文本。
-
-![](img/8551a6981f145b8374130a6cec84376f.png)
-
 通过不同的提示词，对输入的PDF文档的每一页做格式化提取：
 
 ```
     # 固定 Prompt
     PROMPT_OCR = &quot;&lt;image&gt;\n&lt;|grounding|&gt;Convert the document to markdown.&quot;
     PROMPT_DESC = &quot;&lt;image&gt;\nDescribe this image in detail.&quot;
-```
-
-最终返回的是解析后的Markdown内容，如下所示：
 
 ![](img/9418777aa1d3ca170a0e5b51318b47da.png)
 
+```
+
+最终返回的是解析后的Markdown内容，如下所示：
 +   难点二：超长上下文如何压缩
 
 DeepSeek-OCR 识别出的 Markdown 内容虽然准确，但对于数据分析来说，还存在几个问题：
@@ -1306,16 +1306,16 @@ DeepSeek-OCR 原始输出的痛点
       └─ 统一 JSON 格式
       └─ 便于后续检索和分析
       └─ 支持可视化和报表生成
-```
-
-核心代码逻辑在：
 
 ![](img/56543ae8df91482d91756a6167fb45da.png)
 
-最终返回的结构化数据如下所示：
 
 ![](img/200892d118784c1bcc3813bd3f44f1fe.png)
 
+```
+
+核心代码逻辑在：
+最终返回的结构化数据如下所示：
 方案优化效果对比
 
 | 对比维度 | 直接分析原始Markdown | 结构化预处理 |
@@ -1360,12 +1360,12 @@ DeepSeek-OCR 原始输出的痛点
     └─ 保存为 .html 文件
     └─ 可直接用浏览器打开
     └─ 支持交互和导出
-```
-
-核心代码如下：
 
 ![](img/507610993e33e7388d5810da0ee964c2.png)
 
+```
+
+核心代码如下：
 根据得到的 JSON 格式的分析结果，从结构化数据中提取关键信息，构建紧凑的上下文供 LLM 使用。LLM 会生成包含以下内容的交互式报告：
 
 ```
@@ -1412,10 +1412,10 @@ DeepSeek-OCR 原始输出的痛点
         &lt;/script&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-```
 
 ![](img/a5b46256abfeb803fd966778d12ad4e8.png)
 
+```
 将所有步骤整合，形成**从文档到可视化报告的端到端流程**：
 
 ```
@@ -1505,14 +1505,14 @@ DeepSeek-OCR 原始输出的痛点
 
     # 激活环境
     conda activate deepseek_ocr
-```
 
 ![](img/e00a0c98d5d166e282f4e6aaa1519306.png)
 
-激活成功后，命令行前会显示 (deepseek_ocr)。
 
 ![](img/d31cac99a082296759cf1d926415fd36.png)
 
+```
+激活成功后，命令行前会显示 (deepseek_ocr)。
 接下来安装项目依赖，执行
 
 ```
@@ -1584,14 +1584,14 @@ DeepSeek-OCR 原始输出的痛点
 
   # 启动主服务
   python backend_integration_api.py
-```
 
 ![](img/4f34d051d902d98f710880c3195164cc.png)
 
-成功启动后，打开浏览器访问：http://localhost:8708/docs
 
 ![](img/60d7856633d9d15673246315b8780a11.png)
 
+```
+成功启动后，打开浏览器访问：http://localhost:8708/docs
 接下来进入前端目录，安装Node.js依赖：
 
 ```
@@ -1600,10 +1600,10 @@ DeepSeek-OCR 原始输出的痛点
 
   # 安装依赖（首次运行需要，耗时约2-5分钟）
   npm install
-```
 
 ![](img/451f9ad776153e6c2386766a0d9ce87b.png)
 
+```
 **核心前端技术栈：**
 
 前端技术栈

@@ -873,14 +873,14 @@ math_agent = MyPlanAndSolveAgent(
     custom_prompts=math_prompts
 )# 测试数学问题
 math_result = math_agent.run(question)print(f&quot;数学专用Agent结果: {math_result}&quot;)Copy to clipboardErrorCopied
+
+![](img/cfd50d8eed9357a3c3ffcb13409ea0b1.png)
+
 ```
 
 如表7.2所示，通过这种框架化的重构，我们不仅保持了第四章中各种Agent范式的核心功能，还大幅提升了代码的组织性、可维护性和扩展性。所有Agent现在都共享统一的基础架构，同时保持了各自的特色和优势。
 
 表 7.2 Agent不同章节实现对比
-
-![](img/cfd50d8eed9357a3c3ffcb13409ea0b1.png)
-
 ### 7.4.5 FunctionCallAgent
 
 FunctionCallAgent是hello-agents在0.2.8之后引入的Agent，它基于OpenAI原生函数调用机制的Agent，展示了如何使用OpenAI的函数调用机制来构建Agent。 它支持以下功能： _build_tool_schemas:通过工具的description构建OpenAI的function calling schema _extract_message_content:从OpenAI的响应中提取文本 _parse_function_call_arguments:解析模型返回的JSON字符串参数 _convert_parameter_types:转换参数类型
@@ -1073,12 +1073,12 @@ load_dotenv()def test_calculator_tool():&quot;&quot;&quot;测试自定义计算�
     response = llm.think(final_messages)for chunk in response:print(chunk, end=&quot;&quot;, flush=True)print(&quot;\n&quot;)if __name__ == &quot;__main__&quot;:
     test_calculator_tool()
     test_with_simple_agent()Copy to clipboardErrorCopied
-```
-
-通过这个简化的数学计算工具案例，我们学会了如何快速开发自定义工具：编写一个简单的计算函数，通过ToolRegistry注册，然后与SimpleAgent集成使用。为了更直观的观察，这里提供了图7.1，可以清晰理解代码的运行逻辑。
 
 ![](img/4aa8da8c539b55752d283635ebeb3c1b.png)
 
+```
+
+通过这个简化的数学计算工具案例，我们学会了如何快速开发自定义工具：编写一个简单的计算函数，通过ToolRegistry注册，然后与SimpleAgent集成使用。为了更直观的观察，这里提供了图7.1，可以清晰理解代码的运行逻辑。
 图 7.1 基于Helloagents的SimpleAgent运行工作流
 
 ### [7.5.3 多源搜索工具](https://datawhalechina.github.io/hello-agents/#/./chapter7/%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E6%9E%84%E5%BB%BA%E4%BD%A0%E7%9A%84Agent%E6%A1%86%E6%9E%B6?id=_753-%e5%a4%9a%e6%ba%90%e6%90%9c%e7%b4%a2%e5%b7%a5%e5%85%b7)

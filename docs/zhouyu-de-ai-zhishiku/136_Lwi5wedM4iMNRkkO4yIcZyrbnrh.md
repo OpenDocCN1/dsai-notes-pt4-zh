@@ -414,6 +414,11 @@ Markdown 是一种轻量级标记语言，用于格式化纯文本。它以简�
 ### 三级标题
 
 #### 四级标题
+- **图片**：和链接类似，只需在前面加上 `!`，如 `![描述文本](图片链接)`。
+
+
+![doocs](img/80943f71f959c28702bbf20a2862b657.png)
+
 ```
 
 以上代码将渲染出一组层次分明的标题，使你的内容井井有条。
@@ -448,12 +453,7 @@ Markdown 中的段落就是一行接一行的文本。要创建新段落，只�
 ### 5. 链接与图片：丰富内容
 
 - **链接**：用方括号和圆括号创建链接 `[显示文本](链接地址)`。
-- **图片**：和链接类似，只需在前面加上 `!`，如 `![描述文本](图片链接)`。
-
 [访问 Doocs](https://github.com/doocs)
-
-![doocs](img/80943f71f959c28702bbf20a2862b657.png)
-
 轻松实现富媒体内容展示！
 
 &gt; 因微信公众号平台不支持除公众号内容以外的链接，故其他平台的链接，会呈现链接样式但无法点击跳转。
@@ -562,6 +562,8 @@ pie
   &quot;天气太热&quot; : 70
   &quot;穷&quot; : 500
   &quot;没人约&quot; : 95
+    &lt;img src=&quot;https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/md/images/1648303220922-7e14aefa-816e-44c1-8604-ade709ca1c69.png&quot; style=&quot;width: 100px;&quot;&gt;
+
 ```
 
 这种方式不仅能直观展示流程，还能提升文档的专业性。
@@ -584,7 +586,6 @@ Markdown 是一种简单、强大且易于掌握的标记语言，通过学习�
 ---
 
 &lt;center&gt;
-    &lt;img src=&quot;https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/md/images/1648303220922-7e14aefa-816e-44c1-8604-ade709ca1c69.png&quot; style=&quot;width: 100px;&quot;&gt;
 &lt;/center&gt;
 }
 ```

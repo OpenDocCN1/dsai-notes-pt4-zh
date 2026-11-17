@@ -121,8 +121,9 @@ A dynamic, high-energy scene of an Olympic athlete mid-action, captured in a mom
 
 在提示词的最后面添加参数（注意与前面参数之间留个空格）
 
-```
 --cref https://cdn.discordapp.com/attachments/1155887342226247731/1268399808981504061/images.png?ex=66ac48e0&amp;is=66aaf760&amp;hm=aa6b8b8aee64a5165b613e154a556fe7c67c1b35769298ff99f09324d6efdb45&amp; --cw 0
+
+```
 ```
 
 ![](img/74c4838331815b0de2a9612aba8944e8.png)

@@ -486,10 +486,61 @@ Deepseek作为一款国产的Ai对话平台，主要任务依然是语言生成�
 def test():
     print(Hello World)
 
-```
 
 ![](img/216f45b09adb88293017585bdbabeb37.png)
 
+
+![](img/f86611de7809bc9b52191bc2a2134830.png)
+
+
+![](img/2ac7d7ffcb47460c68cf5b3756d4ec39.png)
+
+![](img/60cb6653f8fb9a999a31a23c4fa13ead.png)
+
+![](img/9f3e7ec005fcc707b8ca18f3bb4c8877.png)
+
+
+![](img/3ffacccba1b952590fb5c487ca8fadb3.png)
+
+
+![](img/cba6dd839562c62efd0f2eefcea93fbf.png)
+
+
+![](img/e660dd5f3c871a2f21951e0fc12015f7.png)
+
+
+![](img/50638fe1e68587c83393e3cf5f5656e5.png)
+
+
+![](img/0aedb895d988cb329dfb550ed2572269.png)
+
+
+![](img/24b22319c6474951f827fb6b8ca68f05.png)
+
+
+![](img/65a4657f218197d66fd9e3e0eb2e27c3.png)
+
+
+![](img/decda3a13f27bd45b37118c6652e76b8.png)
+
+
+![](img/825d1e5c71f427df9884fabc30d5195e.png)
+
+
+![](img/e9168b6da27002e468d7ceed0856abc2.png)
+
+
+![](img/1bf3656508a0af0b324116caaad932d4.png)
+
+![](img/574ac56f96e38a0fe6d6489c27bdfab1.png)
+
+
+![](img/48185eb959d6f4f3d804499b5b985ffb.png)
+
+
+![](img/b4a66181475174842366ce57dc5cd866.png)
+
+```
 ###### **数学学术内容**
 
 +   **公式输入**：支持LaTeX或自然语言描述数学问题：
@@ -497,9 +548,6 @@ def test():
 +   **学术概念**：询问理论、论文思路或数据分析方法。
 
 **例如：**求解方程：x^2 + 2x - 3 = 0
-
-![](img/f86611de7809bc9b52191bc2a2134830.png)
-
 ###### 插入附加数据
 
 +   **文本文件内容**：可粘贴CSV/JSON等数据请求处理（需在输入框内）。
@@ -515,13 +563,6 @@ def test():
 **第二步：**我在输入框中输入我的需求。
 
 **第三步：**与Ai进行进一步对话，以获得自己满意的答案。
-
-![](img/2ac7d7ffcb47460c68cf5b3756d4ec39.png)
-
-![](img/60cb6653f8fb9a999a31a23c4fa13ead.png)
-
-![](img/9f3e7ec005fcc707b8ca18f3bb4c8877.png)
-
 ###### **创意生成任务**
 
 +   **内容创作**：请求生成故事、诗歌、营销文案等。
@@ -529,17 +570,11 @@ def test():
 +   **头脑风暴**：输入关键词获取灵感。
 
 **例如：**帮我生成**赞美**蛇年春晚中”非遗全息剧场《千年一瞬》“文章的爆款标题。
-
-![](img/3ffacccba1b952590fb5c487ca8fadb3.png)
-
 ###### 联系全**文对话**
 
 +   **延续对话**：在连续对话中引用之前的回答。
 
 **例如：**请结合之前的对话，我需要你帮我罗列出Deepseek功能使用指导。
-
-![](img/cba6dd839562c62efd0f2eefcea93fbf.png)
-
 ##### 特别注意事项
 
 +   **输入限制**：避免违法、暴力或敏感内容，部分版本可能有输入长度限制。
@@ -559,17 +594,11 @@ def test():
 +   **方法二：**点击主页右上角“+号”
 
 +   **方法三：**点击“开启新对话”
-
-![](img/e660dd5f3c871a2f21951e0fc12015f7.png)
-
 ##### 核心功能区分布
 
 手机版Deepseek App中的功能布局基本一致。
 
 **APP主页中拥有以下功能区：**拓展功能区、输入框、高级功能、历史对话区
-
-![](img/50638fe1e68587c83393e3cf5f5656e5.png)
-
 ##### 核心功能区介绍
 
 拓展功能区位于输入框右下角，我们可以点击”+“号进入功能区。
@@ -587,9 +616,6 @@ def test():
 +   **第三步：**拍摄相关图片。
 
 +   **第四步：**在输入框中输入自身实际需求。
-
-![](img/0aedb895d988cb329dfb550ed2572269.png)
-
 ###### 图片识文字
 
 图片识文字与拍照识文字的区别在于前者可以直接使用相册中的图片进行加载。
@@ -601,17 +627,11 @@ def test():
 +   **第三步：**在输入框中输入自身的实际需求（我们想要Ai帮助做什么事？）。
 
 +   **第四步：**根据对话，进行调整输入。
-
-![](img/24b22319c6474951f827fb6b8ca68f05.png)
-
 ###### 上传指定文件
 
 在手机端APP中也支持上传手机中的文件。
 
 文件类型通常支持：PDF、word、音频等。
-
-![](img/65a4657f218197d66fd9e3e0eb2e27c3.png)
-
 ###### 历史对话框
 
 在此区域可以看见”历史对话“的内容，对话标题即是第一句对话内容。
@@ -623,17 +643,11 @@ def test():
 +   长按历史对话，修改对话标题或者删除对话
 
 +   单击历史对话框的标题可以直接跳转首句提问位置
-
-![](img/decda3a13f27bd45b37118c6652e76b8.png)
-
 ### Deepseek的同步功能
 
 Deepseek的手机APP端的内容与网页端的内容是同步更新。
 
 因此我们可以随时随地使用两个终端同时工作。
-
-![](img/825d1e5c71f427df9884fabc30d5195e.png)
-
 ### Deepseek深度功能
 
 Deepseek平台中提供：深度思考R1+联网搜索功能，适用于不同场景。
@@ -709,9 +723,6 @@ Deepseek平台中提供：深度思考R1+联网搜索功能，适用于不同场
 **电脑官网地址：**https://metaso.cn/?s=bdpc
 
 手机端版本请搜索”**秘塔Ai搜索**“，详情请见[手机端安装指南](https://txt6wm3b04b.feishu.cn/docx/MS8Md0NgoofWiAxiUL5cTm9PnKe#share-H3Jqds48voKz7qxBG8oc2Ka3n6f)
-
-![](img/e9168b6da27002e468d7ceed0856abc2.png)
-
 > **注意事项：**
 
 1.  秘塔Ai虽然**免费使用**，但是**响应速度过慢**，本人建议请耐心等待生成结果！
@@ -725,17 +736,9 @@ Deepseek平台中提供：深度思考R1+联网搜索功能，适用于不同场
 **电脑官网地址：**https://www.n.cn/?fromsou=1
 
 手机端版本请搜索”**纳米Ai**“，详情请见[手机端安装指南](https://txt6wm3b04b.feishu.cn/docx/MS8Md0NgoofWiAxiUL5cTm9PnKe#share-H3Jqds48voKz7qxBG8oc2Ka3n6f)
-
-![](img/1bf3656508a0af0b324116caaad932d4.png)
-
-![](img/574ac56f96e38a0fe6d6489c27bdfab1.png)
-
 电脑端中纳米Ai deepseek R1模型是在”慢思考“模式中。
 
 在手机端中的纳米Ai中我们可从界面发现deepseek R1有特别专线。
-
-![](img/48185eb959d6f4f3d804499b5b985ffb.png)
-
 > **注意事项：**
 
 1.  纳米Ai虽然**免费使用**，但是需要不断拉新参与活动。
@@ -745,9 +748,6 @@ Deepseek平台中提供：深度思考R1+联网搜索功能，适用于不同场
 ### 硅基流动（Deepseek R1模型）
 
 **官网地址：**[硅基流动统一登录](https://account.siliconflow.cn/login?redirect=https%3A%2F%2Fcloud.siliconflow.cn%2F%3F)
-
-![](img/b4a66181475174842366ce57dc5cd866.png)
-
 > **注意事项：**
 
 > 硅基流动是一个付费平台，请按需使用！

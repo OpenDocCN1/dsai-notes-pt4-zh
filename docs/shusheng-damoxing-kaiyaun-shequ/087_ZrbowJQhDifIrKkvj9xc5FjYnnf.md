@@ -22,6 +22,8 @@ pip install lmdeploy openai datasets jmespath
 
 以下示例演示了如何使用 LMDeploy 构建一个支持多模态任务的推理服务。通过配置 PytorchEngineConfig 中的关键参数，可以优化模型在并发、缓存和会话管理方面的表现：
 
+    image_path = &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;  # 替换为实际图片路径
+
 ```
 from lmdeploy import pipeline, PytorchEngineConfig
 from lmdeploy.vl import load_image
@@ -39,7 +41,6 @@ def main():
     print(&quot;✅ Pipeline初始化成功！&quot;)
     
     # 测试推理
-    image_path = &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;  # 替换为实际图片路径
     prompt = &quot;请描述这张图片的内容&quot;
     
     response = pipe([(prompt, load_image(image_path))])
@@ -80,6 +81,12 @@ backend_config=PytorchEngineConfig(
 
 在实际应用中，若需处理大量并发请求，可参考以下示例，体验 max_batch_size 带来的性能优势：
 
+        (&quot;描述这张图片的主要内容&quot;, &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;),
+        (&quot;图片里有什么颜色？&quot;, &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;), 
+        (&quot;这张图片让你想到什么？&quot;, &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;),
+        (&quot;分析图片的构图&quot;, &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;),
+        (&quot;图片中有文字吗？&quot;, &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;)
+
 ```
 from lmdeploy import pipeline, PytorchEngineConfig
 from lmdeploy.vl import load_image
@@ -100,11 +107,6 @@ def main():
     
     # 准备多个不同的图片和问题（模拟多个用户）
     requests = [
-        (&quot;描述这张图片的主要内容&quot;, &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;),
-        (&quot;图片里有什么颜色？&quot;, &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;), 
-        (&quot;这张图片让你想到什么？&quot;, &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;),
-        (&quot;分析图片的构图&quot;, &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;),
-        (&quot;图片中有文字吗？&quot;, &quot;https://pic1.imgdb.cn/item/68d20846c5157e1a8828f9bf.jpg&quot;)
     ]
     
     # 方法1：一次性批量发送所有请求（就像快餐店一次接多个订单）
@@ -156,6 +158,8 @@ lmdeploy serve api_server /root/share/new_models/Intern-S1-mini \
 
 ![](img/13c51964085e1f887b9e4702cc2a7a82.png)
 
+                &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;,
+
 ```
 from openai import OpenAI
 
@@ -174,7 +178,6 @@ response = client.chat.completions.create(
             &#x27;type&#x27;: &#x27;image_url&#x27;,
             &#x27;image_url&#x27;: {
                 &#x27;url&#x27;:
-                &#x27;https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg&#x27;,
             },
         }],
     }],

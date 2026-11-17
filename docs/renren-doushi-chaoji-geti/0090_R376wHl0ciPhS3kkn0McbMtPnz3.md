@@ -487,6 +487,8 @@ API KEY为:替换为你自己的API KEY，最好在.env.local中维护，让模�
 
 +   与codex经过多轮沟通，实现需求如下：
 
+    &quot;content&quot;: &quot;这是纯文本描述\n\n![图片1](img/b1dbc962540e2ad64977ccd0adb7874c.png)\n![图片2](img/f9a3eb64cd013bf3b549085dc98a80a5.png)&quot;,
+
 ```
 请你帮我修[改发布管理这个页面，我希望实现发布到公众号的逻辑是：首先在](https://wx.limyai.com/api/openapi/wechat-accounts)用户点击发布到公众号这个按钮之后，要[跳出来一个弹窗，这个弹窗上面可以去选择要发布的公众号和要](https://wx.limyai.com/api/openapi/wechat-publish)发布的发布类型，发布类型同时支持发布到公众号文章和小绿书，用户选择之后去点击发布。
 下面是涉及到的公众号发布的两个接口，第一个接口就是用于获取这一个 API key 下的所有的公众号的信息，第二个接口就是根据用户选择的公众号去执行一个发布的操作，下面是这两个接口对应的 API的文档。请你根据 API 文档以及提供的key 先进行一个流程和技术方案上的设计，请你务必去深入研究所有相关的代码，首先把改动的范围也去罗列出来，不要着急修改代码，先和我确认好了之后再进行代码的变动。
@@ -589,11 +591,15 @@ curl -X POST https://wx.limyai.com/api/openapi/wechat-publish \
   -d &#x27;{
     &quot;wechatAppid&quot;: &quot;wx1234567890&quot;,
     &quot;title&quot;: &quot;小绿书测试&quot;,
-    &quot;content&quot;: &quot;这是纯文本描述\n\n![图片1](img/b1dbc962540e2ad64977ccd0adb7874c.png)\n![图片2](img/f9a3eb64cd013bf3b549085dc98a80a5.png)&quot;,
     &quot;articleType&quot;: &quot;newspic&quot;
   }&#x27;
 
 ```
+
+    &quot;coverImage&quot;: &quot;https://example.com/cover.jpg&quot;,
+    &quot;images&quot;: [&quot;https://example.com/1.jpg&quot;, &quot;https://example.com/2.jpg&quot;],
+    &quot;cover_image&quot;: &quot;https://example.com/cover.jpg&quot;,
+    &quot;images&quot;: [&quot;https://example.com/1.jpg&quot;, &quot;https://example.com/2.jpg&quot;],
 
 ```
 **请你帮我修**改发布管理这[个页面，就是我希望能够实现用户如果去点击发布到小红书这个](https://note.limyai.com/api/openapi/publish_note)**按钮的时候，
@@ -616,8 +622,6 @@ curl -X POST https://note.limyai.com/api/openapi/publish_note \
   -d &#x27;{
     &quot;title&quot;: &quot;如何提升工作效率&quot;,
     &quot;content&quot;: &quot;今天分享5个提升效率的小技巧...&quot;,
-    &quot;coverImage&quot;: &quot;https://example.com/cover.jpg&quot;,
-    &quot;images&quot;: [&quot;https://example.com/1.jpg&quot;, &quot;https://example.com/2.jpg&quot;],
     &quot;tags&quot;: [&quot;效率&quot;, &quot;职场&quot;]
   }&#x27;
 
@@ -632,8 +636,6 @@ curl -X POST https://note.limyai.com/api/openapi/publish_note \
     &quot;status_id&quot;: 1,
     &quot;publish_url&quot;: &quot;https://your-domain.com/publish/note?pub_id=...&quot;,
     &quot;xiaohongshu_qr_image_url&quot;: &quot;https://your-domain.com/api/xiaohongshu/qr?note_id=...&quot;,
-    &quot;cover_image&quot;: &quot;https://example.com/cover.jpg&quot;,
-    &quot;images&quot;: [&quot;https://example.com/1.jpg&quot;, &quot;https://example.com/2.jpg&quot;],
     &quot;tags&quot;: [&quot;效率&quot;, &quot;职场&quot;],
     &quot;created_at&quot;: &quot;2024-01-15T08:30:00.000Z&quot;
   }
@@ -696,6 +698,10 @@ curl -X POST https://note.limyai.com/api/openapi/publish_note \
 请你帮我在侧边栏新增一个小红书复刻入口和对应的页面，这个页面就叫小红书复刻页面，我希望的效果是我输入一个小红书链接，然后你去给我调用一个第三方的 API 接口去解析出这个正文标题，或者说原笔记的一些图片，然后提取成功，你再去调用这个 Openai 兼容的这种大模型去给我进行这个标题和正文的改写，API Key已经维护在.env.local中。然后再去调用图生图的大模型去针对所有的图片去进行一个复刻，图生图模型的API key也已经维护在.env.local中。另外我希望我自己是可以去自定义修改这个笔记的提示词的，也可以去修改这样的一个图中图的提示词，然后现在请你首先帮我设计一下这个原型，在开始之前你可以首先使用一个简要的线框图的形式对我的需求去进行一个设计。并且展示在我确认了之后，你再正式的去进行这个代码的生成
 ```
 
+      &quot;preview_url&quot;: &quot;https://pbs.twimg.com/ext_tw_video_thumb/1650757905975595010/pu/img/t5yBiZFRPAIa_4Pi.jpg&quot;
+      &quot;resource_url&quot;: &quot;https://you.net/v/8097271834853567236_n.jpg&quot;,
+      &quot;preview_url&quot;: &quot;https://you.com/000I5jJB3blWeN.jpg&quot;,
+
 ```
 请你首先帮我实现链接解析的这一个功能。链接解析的 AP[I 文档如下，](https://www.henghengmao.com/user/developer)对应的API key为：替换为你自己的API KEY，最好在.env.local中维护，让模型读取.env.local文件中的密钥，文档为：# 单个帖子(视频/图集/音乐)提取接口文档  API 基于 REST 架构设计。API 具有结构清晰的面向资源的 URL，接收 JSON 格式的请求体，返回 JSON 格式的响应，并使用标准的 HTTP 响应状态码。  该接口为单个帖子(视频/图集/音乐等)提取接口，哼哼猫支持的平台(999+)，该接口都支持。 
 请求参数
@@ -712,17 +718,14 @@ API文档链接：https://github.com/MeowLoad/Media-Downloader-API?tab=readme-ov
     {
       &quot;media_type&quot;: &quot;video&quot;,
       &quot;resource_url&quot;: &quot;https://video.twimg.com/ext_tw_video/1650757905975595010/pu/vid/1280x720/HhaDnQS7feVgqhAN.mp4?tag=12&quot;,
-      &quot;preview_url&quot;: &quot;https://pbs.twimg.com/ext_tw_video_thumb/1650757905975595010/pu/img/t5yBiZFRPAIa_4Pi.jpg&quot;
     },
     {
       &quot;media_type&quot;: &quot;image&quot;,
-      &quot;resource_url&quot;: &quot;https://you.net/v/8097271834853567236_n.jpg&quot;,
       &quot;preview_url&quot;: null
     },
     {
       &quot;media_type&quot;: &quot;audio&quot;,
       &quot;resource_url&quot;: &quot;https://you.com/8AF5905EB8EE07DACD0.m4a&quot;,
-      &quot;preview_url&quot;: &quot;https://you.com/000I5jJB3blWeN.jpg&quot;,
       &quot;headers&quot;: {
         &quot;Referer&quot;: &quot;https://www.you.com/&quot;,
         &quot;User-Agent&quot;: &quot;Mozilla/2.0 (compatible; MSIE Version; Operating System)&quot;

@@ -52,6 +52,8 @@ https://gpt-oss.com/
 
 大家也可以直接复制原代码直接去上手体验
 
+    const nebulaTexture = new THREE.TextureLoader().load(&#x27;https://threejs.org/examples/textures/lensflare/lensflare0.png&#x27;);
+
 ```
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;zh-CN&quot;&gt;
@@ -172,7 +174,6 @@ button:hover{background:#0b5ed7;}
     scene.add(stars);
 
     // 动态星云（使用半透明平面旋转）
-    const nebulaTexture = new THREE.TextureLoader().load(&#x27;https://threejs.org/examples/textures/lensflare/lensflare0.png&#x27;);
     nebulaTexture.wrapS = nebulaTexture.wrapT = THREE.RepeatWrapping;
     const nebulaMaterial = new THREE.MeshBasicMaterial({
         map: nebulaTexture,

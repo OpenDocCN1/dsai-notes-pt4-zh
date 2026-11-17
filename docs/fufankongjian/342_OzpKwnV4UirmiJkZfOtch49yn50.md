@@ -873,6 +873,15 @@ Your browser does not support the video element.
 
 除此以外，大家也可以使用 mcp-server-fetch：https://github.com/modelcontextprotocol/servers/tree/main/src/fetch ，大家可以根据自己的情况灵活选择。最终我们定义qwen3_mcp_apply.py文件，如下所示：
 
+&gt; &lt;center&gt;&lt;img src=&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250430175345970.png&quot; alt=&quot;image-20250430175345970&quot; style=&quot;zoom:50%;&quot; /&gt;
+&gt; &lt;center&gt;&lt;img src=&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/0ddb8b8061004446f889128b5702d48.jpg&quot; alt=&quot;0ddb8b8061004446f889128b5702d48&quot; style=&quot;zoom:50%;&quot; /&gt;
+
+
+&lt;center&gt;&lt;img src=&quot;https://muyu20241105.oss-cn-beijing.aliyuncs.com/images/202504301300790.png&quot; alt=&quot;202412191720637&quot; style=&quot;zoom:60%;&quot; /&gt;
+
+
+&lt;center&gt;&lt;img src=&quot;https://muyu20241105.oss-cn-beijing.aliyuncs.com/images/202504301303817.png&quot; alt=&quot;202412191720637&quot; style=&quot;zoom:60%;&quot; /&gt;
+
 ```
 
     def init_agent_service():
@@ -922,7 +931,6 @@ Your browser does not support the video element.
                 }
             },
             
-            
         },
         # pip install &quot;qwen-agent[code_interpreter]&quot;
         &#x27;code_interpreter&#x27;,
@@ -961,22 +969,11 @@ Your browser does not support the video element.
             chatbot_config=chatbot_config,
         ).run()
         
-
 &gt; 脚本已上传至课件网盘：
-&gt; &lt;center&gt;&lt;img src=&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/image-20250430175345970.png&quot; alt=&quot;image-20250430175345970&quot; style=&quot;zoom:50%;&quot; /&gt;
 &gt; 扫码即可领取：
-&gt; &lt;center&gt;&lt;img src=&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/0ddb8b8061004446f889128b5702d48.jpg&quot; alt=&quot;0ddb8b8061004446f889128b5702d48&quot; style=&quot;zoom:50%;&quot; /&gt;
-
 &amp;emsp;&amp;emsp;这里我们要应用到`Qwen-Agent`内置的`WebUI`,其实现了一个基于Gradio构建的前端页面，通过执行 qwen3_mcp_apply, 启动后即可在 localhost:8000 访问：
-
-&lt;center&gt;&lt;img src=&quot;https://muyu20241105.oss-cn-beijing.aliyuncs.com/images/202504301300790.png&quot; alt=&quot;202412191720637&quot; style=&quot;zoom:60%;&quot; /&gt;
-
 &amp;emsp;&amp;emsp;此时通过浏览器访问：http://localhost:7860/ 即可进行使用。
-
-&lt;center&gt;&lt;img src=&quot;https://muyu20241105.oss-cn-beijing.aliyuncs.com/images/202504301303817.png&quot; alt=&quot;202412191720637&quot; style=&quot;zoom:60%;&quot; /&gt;
-
 - 官网查询GitHub项目历史星标项目复现
-
 
 ```python
 Video(&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/Qwen-Agent%20%E5%A4%8D%E7%8E%B0%E6%BC%94%E7%A4%BA2.mp4&quot;, width=800, height=400)

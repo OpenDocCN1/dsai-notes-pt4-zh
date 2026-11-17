@@ -152,8 +152,9 @@
 
 大家可以复制以下数组使用：
 
-```
 [{      &quot;title&quot;: &quot;这是一个新闻标题&quot;,      &quot;summary&quot;: &quot;新闻摘要的作用很重要，它可以决定读者是否阅读一篇新闻，并对读者的观点和态度产生影响。&quot;,      &quot;image&quot;: &quot;  https://lf-card-builder.oceancloudapi.com/obj/bot-studio-builder/2272053001466355_1709225232250572891.jpg  &quot;,      &quot;url&quot;: &quot;  https://www.coze.cn  &quot;  },{      &quot;title&quot;: &quot;这是一个新闻标题&quot;,      &quot;summary&quot;: &quot;新闻摘要的作用很重要，它可以决定读者是否阅读一篇新闻，并对读者的观点和态度产生影响。&quot;,      &quot;image&quot;: &quot;  https://lf-card-builder.oceancloudapi.com/obj/bot-studio-builder/2272053001466355_1709225232250572891.jpg  &quot;,      &quot;url&quot;: &quot;  https://www.coze.cn  &quot;  },{      &quot;title&quot;: &quot;这是一个新闻标题&quot;,      &quot;summary&quot;: &quot;新闻摘要的作用很重要，它可以决定读者是否阅读一篇新闻，并对读者的观点和态度产生影响。&quot;,      &quot;image&quot;: &quot;  https://lf-card-builder.oceancloudapi.com/obj/bot-studio-builder/2272053001466355_1709225232250572891.jpg  &quot;,      &quot;url&quot;: &quot;  https://www.coze.cn  &quot;  }]
+
+```
 ```
 
 设置好以后，接下来我们为卡片元素绑定变量。
