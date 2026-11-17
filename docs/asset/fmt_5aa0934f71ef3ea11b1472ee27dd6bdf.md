@@ -1,0 +1,97 @@
+
+## 安装 Playwright 浏览器
+
+此外，还需要安装 Playwright 浏览器，需要在当前虚拟环境中执行如下命令：
+
+```
+! playwright install
+```
+
+这个安装过程它会下载并安装 Playwright 支持的浏览器内核（注意：这里不是用我们本机已有的浏览器），包括Chromium（类似 Chrome）、Firefox、WebKit（类似 Safari），并将这些浏览器下载到本地的 `.cache/ms-playwright` 目录或项目的 `~/.playwright` 目录中，以便 Playwright 使用稳定一致的运行环境。
+
+## 初始化同步浏览器
+
+这个案例的核心代码首先是需要用代理工具初始化同步 Playwright 浏览器：
+
+```
+    sync_browser = create_sync_playwright_browser()
+    toolkit = PlayWrightBrowserToolkit.from_browser(sync_browser=sync_browser)
+    tools = toolkit.get_tools()
+```
+
+然后再通过 `create_openai_tools_agent` 接收初始化的大模型和 Playwright 工具构建共同构建 OpenAI Tools 代理，最后通过 `AgentExecutor` 执行代理。
+
+```
+    # 通过 LangChain 创建 OpenAI 工具代理
+    agent = create_openai_tools_agent(model, tools, prompt)
+
+    # 通过 AgentExecutor 执行代理
+    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+```
+
+## 完整代码示例
+
+完整的代码因为 langChian 的模块化封装非常简洁，如下所示：
+
+```
+    from langchain_community.agent_toolkits import PlayWrightBrowserToolkit
+    from langchain_community.tools.playwright.utils import create_sync_playwright_browser
+    from langchain import hub
+    from langchain.agents import AgentExecutor, create_openai_tools_agent
+    from langchain.chat_models import init_chat_model
+    import os
+    from dotenv import load_dotenv 
+    load_dotenv(override=True)
+
+
+    DeepSeek_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+    # print(DeepSeek_API_KEY)  # 可以通过打印查看
+
+    # 初始化 Playwright 浏览器：
+    sync_browser = create_sync_playwright_browser()
+    toolkit = PlayWrightBrowserToolkit.from_browser(sync_browser=sync_browser)
+    tools = toolkit.get_tools()
+
+    # 通过 LangChain Hub 拉取提示词模版
+    prompt = hub.pull("hwchase17/openai-tools-agent")
+
+    # # 初始化模型
+    model = init_chat_model("deepseek-chat", model_provider="deepseek")
+
+    # 通过 LangChain 创建 OpenAI 工具代理
+    agent = create_openai_tools_agent(model, tools, prompt)
+
+    # 通过 AgentExecutor 执行代理
+    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+
+
+    if __name__ == "__main__":
+        # 定义任务
+        command = {
+            "input": "访问这个网站 https://github.com/fufankeji/MateGen/blob/main/README_zh.md 并帮我总结一下这个网站的内容"
+        }
+
+        # 执行任务
+        response = agent_executor.invoke(command)
+        print(response)
+```
+
+但需要注意的是：Playwright 工具的初始化过程需要同步执行，在 Jupyter Notebook 中无法直接使用，需要将代码保存为 Python 文件运行。这里完整的代码脚本为 `auto_playwright.py`，已经上传到了百度网盘中，大家可以扫码进行领取。
+
+![](img/76f3bc42b093c0c2ea60970e9f93d3d9.png)
+
+![](img/52520eb488d5c65866e832e9e64c8c38.png)
+
+## 运行效果
+
+运行效果如下所示：
+
+```
+Video("https://ml2022.oss-cn-hangzhou.aliyuncs.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8A%93%E5%8F%96%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E6%BC%94%E7%A4%BA.mp4", width=800, height=400)
+```
+
+Your browser does not support the video element.
+
+## 进一步封装
+
+更进一步地，我们还可以将 Playwright Agent 封装成工具函数，并结合 LangChain 的 LCEL 串行链，实现一个更加复杂的浏览器自动化代理。这里定义的工具如下所示：
