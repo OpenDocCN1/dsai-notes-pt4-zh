@@ -1,0 +1,57 @@
+
+# 编程实践：实现交互式 SearXNG 网页搜索工具
+
+## 前置条件
+
+- 可访问的 `SearXNG` 实例：您需要一个可以访问的 `SearXNG` 实例的 URL。在本例中，我们使用 `http://searxng.ai.demo`。请确保此地址有效，并且允许通过 API 进行 `JSON` 格式的查询。如果您的实例地址不同或需要认证，请相应修改代码。
+
+- `Python` `requests` 库：需要使用此库来向 `SearXNG` 发送 `HTTP` 请求。如果您的环境中尚未安装，请通过 `pip` 安装：
+
+  ```
+  pip install requests
+  ```
+
+- `DeepSeek` API Key：确保您的 `DEEPSEEK_API_KEY` 环境变量已正确设置。
+
+## 核心流程
+
+### 定义工具（`web_search`）
+
+向 `DeepSeek` API 清晰地描述 `web_search` 工具的功能（执行网页搜索以获取实时或未知信息）及其需要的参数（一个字符串类型的 `query`）。
+
+### 用户输入
+
+程序接收用户的交互式输入问题。
+
+### 模型决策（第一次 API 调用）
+
+将用户问题和 `web_search` 工具定义发送给 `DeepSeek` API（`tool_choice="auto"`）。模型分析问题，判断是否需要调用该工具来回答。
+
+### 模型请求调用
+
+如果模型决定搜索，API 响应会包含 `tool_calls` 字段，指明要调用 `web_search` 并提供它从用户问题中提取出的搜索查询（`query`）。
+
+### 应用程序执行工具
+
+您的 `Python` 代码解析 `tool_calls`，提取 `query`，并调用本地实现的 `perform_searxng_search` 函数。
+
+### `perform_searxng_search` 函数
+
+- 接收 `query` 参数。
+- 构造指向 `SearXNG` 实例的 API 请求 URL（例如 `http://searxng.ai.demo/?q=...&format=json`）。
+- 使用 `requests` 库发送 `GET` 请求，获取搜索结果。
+- 处理响应：检查 `HTTP` 状态码，解析返回的 `JSON` 数据。
+- **结果处理与格式化：** 从搜索结果中提取关键信息（如前几条结果的标题、`URL`、内容摘要），整合成一个简洁、易于模型理解的文本字符串。
+- 返回该格式化字符串（如果搜索失败或出错，则返回包含错误信息的 `JSON` 字符串）。
+
+### 结果返回给模型（第二次 API 调用）
+
+将 `perform_searxng_search` 返回的结果字符串作为 `role: tool` 消息的内容（关联正确的 `tool_call_id`），连同之前的对话历史一起，再次发送给 `DeepSeek` API。
+
+### 模型生成最终回复
+
+模型接收到搜索结果后，结合原始问题和搜索信息，生成一个整合了实时网络知识的、更全面的自然语言回复给用户。
+
+### 循环
+
+程序继续等待用户下一次输入，重复步骤 2-8，直到用户输入 `'quit'`。
