@@ -1,0 +1,247 @@
+
+# ReAct 多外部函数调用流程实现
+
+## ReAct 工作流程步骤
+
+1. 构造`ReAct`模版，将原始`Prompt`格式化，输入到模型中
+
+1. 编写外部函数
+
+1. 生成外部函数的`JsonSchema`表示
+
+1. 解析在`Reason`过程中拆解出来的函数名和入参，实际执行相关逻辑，得到函数的返回结果
+
+1. 将函数返回的结果添加到`ReAct`模版中的`Observation`后，从而提供模型外部知识
+
+1. 得到最终的推理结果
+
+上面的流程，我们仅仅跑通了单个外部函数的函数调用流程，而对于实际业务来说，往往需要的是复杂的逻辑处理，这就需要多个外部函数合作完成具体的请求指令，而如果想一次加载多个函数并让`Qwen`模型基于`CoT`拆解任务，每一步去调用对应的函数，得到正确的外部知识，还是有一些细节需要进行修改，接下来我们测试一下针对于存放多个函数的外部工具库，应该如何实现`ReAct`流程。
+
+## 多外部函数库加载与实现
+
+首先，还是先启动模型。注：如果上面的代码已经启动，需要重启当前的`Jupyter Lab`以释放`GPU`资源。
+
+![](img/dcc58051d5982435bf60f8b81383cb23.png)
+
+重启后，直接加载`Qwen`模型。
+
+```
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers.generation import GenerationConfig
+```
+
+```
+/home/util/anaconda3/envs/qwen_7b_chat/lib/python3.11/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+```
+
+```
+model_path = "/home/Work/00.Work_muyu/muyu_qwen/models/qwen/Qwen-7B-Chat/"
+
+tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+
+model = AutoModelForCausalLM.from_pretrained(model_path, device_map="auto", trust_remote_code=True).eval()
+```
+
+```
+The model is automatically converting to bf16 for faster inference. If you want to disable the automatic precision, please manually add bf16/fp16/fp32=True to "AutoModelForCausalLM.from_pretrained".
+Try importing flash-attention for faster inference...
+Loading checkpoint shards: 100%|██████████| 8/8 [02:24<00:00, 18.10s/it]
+```
+
+### 定义外部函数类
+
+先定义外部函数，这里沿用上一个测试示例中的`CourseDatabase`类。
+
+```
+class CourseDatabase:
+
+    def __init__(self):
+        # 数据库存有课程及其详细信息：目前的上线课时、每周更新次数、每次更新的小时数
+        self.database = {
+            "大模型技术实战": {
+                "课时": 200,
+                "每周更新次数": 3,
+                "每次更新小时": 2
+            },
+            "机器学习实战": {
+                "课时": 230,
+                "每周更新次数": 2,
+                "每次更新小时": 1.5
+            },
+            "深度学习实战": {
+                "课时": 150,
+                "每周更新次数": 1,
+                "每次更新小时": 3
+            },
+            "AI数据分析": {
+                "课时": 10,
+                "每周更新次数": 1,
+                "每次更新小时": 1
+            },
+        }
+
+    def course_query(self, course_name):
+        # 输入课程名称返回当前的课程详细信息
+        return self.database.get(course_name, "目前没有该课程安排")
+```
+
+这里新添加一个`CourseOperations`方法，用来向`CourseDatabase`类中存储的模拟数据库添加数据。注：出于演示目的，数据并不会实际更改，而是显式的提示。
+
+```
+class CourseOperations:
+    def __init__(self):
+        self.db = CourseDatabase()  # 在这里创建CourseDatabase的实例
+
+    def add_hours_to_course(self, course_name, additional_hours):
+        # 给特定课程增加课时
+        if course_name in self.db.database:
+            self.db.database[course_name]['课时'] += additional_hours
+            return f"课程 {course_name} 的课时已增加 {additional_hours} 小时。"
+        else:
+            return "课程不存在，无法添加课时。"
+```
+
+测试一下：
+
+```
+course_ops = CourseOperations()
+
+# 给某个课程增加课时
+print(course_ops.add_hours_to_course("大模型技术实战", 20))
+```
+
+```
+课程 大模型技术实战 的课时已增加 20 小时。
+```
+
+可以看到，这里会根据指定课程名称和更新的时长来显式的表示操作是否成功。
+
+### 构建 JsonSchema 工具库
+
+接下来，创建新添加的`CourseOperations`类的`JsonSchema`表示，存放在`TOOLS`外部函数库中。
+
+```
+TOOLS = [
+    {
+        'name_for_human': '课程信息数据库',
+        'name_for_model': 'CourseDatabase',
+        'description_for_model': '课程信息数据库存储有各课程的详细信息，包括目前的上线课时、每周更新次数以及每次更新的小时数。通过输入课程名称，可以返回该课程的详细信息。',
+        'parameters': [{
+            'name': 'course_query',
+            'description': '课程名称，所需查阅信息的课程名称',
+            'required': True,
+            'schema': {
+                'type': 'string'
+            },
+        }],
+    },
+    {
+    'name_for_human': '课程操作工具',
+    'name_for_model': 'CourseOperations',
+    'description_for_model': '课程操作工具提供了对课程信息的添加操作。可以添加课程的详细信息，如每周更新次数和每次更新的小时数。',
+    'parameters': [
+        {
+            'name': 'add_hours_to_course',
+            'description': '给指定课程增加课时，需要课程名称和增加的课时数',
+            'required': True,
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'course_name': {'type': 'string'},
+                    'additional_hours': {'type': 'number'}
+                },
+                'required': ['course_name', 'additional_hours']
+            },
+        },
+
+    ],
+    # 其他操作的定义可以在这里继续添加
+},
+
+]
+```
+
+### ReAct 提示词模版
+
+这里`ReAct`的输入模版并不需要再发生改变。
+
+```
+# 将一个插件的关键信息拼接成一段文本的模版。
+TOOL_DESC = """{name_for_model}: Call this tool to interact with the {name_for_human} API. What is the {name_for_human} API useful for? {description_for_model} Parameters: {parameters}"""
+
+# ReAct prompting 的 instruction 模版，将包含插件的详细信息。
+PROMPT_REACT = """Answer the following questions as best you can. You have access to the following APIs:
+
+{tool_descs}
+
+Use the following format:
+
+Question: the input question you must answer
+Thought: you should always think about what to do
+Action: the action to take, should be one of [{tool_names}]
+Action Input: the input to the action
+Observation: the result of the action
+... (this Thought/Action/Action Input/Observation can be repeated zero or more times)
+Thought: I now know the final answer
+Final Answer: the final answer to the original input question
+
+Begin!
+
+Question: {query}"""
+```
+
+### 动作提示生成
+
+函数的解析模版也不再需要改变，因为我们在单个函数流程测试的时候，就已经加入了循环的过程。即：`for info in TOOLS`。
+
+```
+import json
+
+def generate_action_prompt(query):
+    """
+    根据用户查询生成最终的动作提示字符串。
+    函数内部直接引用全局变量 TOOLS, TOOL_DESC, 和 PROMPT_REACT。
+
+    参数:
+    - query: 用户的查询字符串。
+
+    返回:
+    - action_prompt: 格式化后的动作提示字符串。
+    """
+    tool_descs = []
+    tool_names = []
+
+    for info in TOOLS:
+        tool_descs.append(
+            TOOL_DESC.format(
+                name_for_model=info['name_for_model'],
+                name_for_human=info['name_for_human'],
+                description_for_model=info['description_for_model'],
+                parameters=json.dumps(info['parameters'], ensure_ascii=False),
+            )
+        )
+        tool_names.append(info['name_for_model'])
+    
+    tool_descs_str = '\n\n'.join(tool_descs)
+    tool_names_str = ','.join(tool_names)
+
+    action_prompt = PROMPT_REACT.format(tool_descs=tool_descs_str, tool_names=tool_names_str, query=query)
+    return action_prompt
+```
+
+### 复杂指令测试
+
+这里我们测试一下，输入如下复杂指令，其中包含了两个需求：第一个是需要大模型去课程信息数据库中查询大模型技术实战课程的课时，然后再让它更新一节新课。
+
+```
+# query = "请帮我查一下：我们的大模型技术实战课程目前一共上线了多少节？"
+query = "先帮我查询一下大模型技术实战这个课程目前更新了多少节了，今晚我直播了一节新课，请你帮我更新一下"
+```
+
+首先看经过`ReAct`模版的后的`Promp`输入：
+
+```
+prompt = generate_action_prompt(query)
+print(prompt)
+```
