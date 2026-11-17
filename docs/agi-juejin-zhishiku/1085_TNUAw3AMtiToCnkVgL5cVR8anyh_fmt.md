@@ -1,0 +1,441 @@
+
+# 微调LLMs：概述、方法和最佳实践（附天工Skywork-13B微调）
+
+> 来源：[https://agijuejin.feishu.cn/docx/BxNcdhoxqokIJexRWEHcmN7Inqe](https://agijuejin.feishu.cn/docx/BxNcdhoxqokIJexRWEHcmN7Inqe)
+
+> 作者：weAitrainee | AI进修生
+
+> 原文：https://mp.weixin.qq.com/s/tXUvAcAX9MwVTkDwG72tkg
+
+![](img/f3dec0720299f13eb2ee3ef6dfffdb0f.png)
+
+Hello，大家好，我是Aitrainee，欢迎收看本期新文章，
+
+从总体上看，大模型的训练可以分为四个关键阶段：预训练、有监督微调、奖励建模和强化学习。
+
+预训练阶段是最为耗时的部分，占据了整个训练流程的99%。这个阶段需要极高的计算能力和庞大的数据量，对大多数开发者来说，这一步的实现难度极大。
+
+接下来的三个阶段——有监督微调、奖励建模和强化学习——共同构成了微调过程。这些阶段所需的资源较少，一般只需要几块GPU和几小时到几天的时间。
+
+微调的核心目的是在已有预训练模型的基础上，通过调整模型参数，使其在特定任务上表现得更为出色。
+
+## 为什么要对大模型进行微调
+
+微调是将预训练的大型语言模型的参数调整到特定任务或领域的过程。
+
+尽管像GPT这样的预训练语言模型拥有丰富的语言知识，但它们缺乏特定领域的专业化。微调通过允许模型从特定领域的数据中学习来解决这一限制，使其对目标应用更加准确和有效。
+
+首先，大模型的参数量巨大，训练成本高昂。如果每家公司都从头开始训练一个大模型，性价比非常低。微调可以有效降低成本，提高使用效率。
+
+其次，通过`Prompt Engineering`使用大模型虽然较容易上手，但其缺点明显。因为大模型对输入序列的长度有限制，长`Prompt`会增加推理成本，并且容易被截断，导致输出质量下降。预训练的大语言模型虽然保存了大量知识，但可能无法充分利用这些知识来回答复杂问题，就像是一个知识渊博但缺乏实际应用能力的学生。
+
+例如，输入“`太阳系中最大的行星是`”，大模型可以轻松补全“木星”。但是，如果问题是“`太阳系中最大的行星是哪颗？`”这种疑问句，大模型大概率能回答（比如采用少样本提示），但如果形式更加复杂一些时，可能无法给出理想答案。此时需要通过指令微调来挖掘大语言模型的潜力，使其不仅满足于简单的文字接龙，还能具备逻辑推理、文案总结等高级能力。
+
+最后，对于个人用户来说，使用提示工程来解决日常工作中的一些问题通常是足够的。然而，对于拥有优质自有数据的企业而言，微调模型往往是更好的选择。个性化服务的需求也推动了微调的发展。针对每个用户的数据训练一个轻量级的微调模型，可以提供更好的个性化体验。
+
+## 什么时候需要LLM微调
+
+谈到何时使用微调，主要取决于模型表现和任务需求。
+
+有时我们通过情境学习改进提示。在提示中加入任务示例，给大型语言模型（LLM）提供任务蓝图。这样通常能帮助模型更好理解和执行任务，但如果效果不佳，特别是对较小模型，就要考虑微调。
+
+零样本推理是在提示中直接包含输入数据，不添加示例。这种方法有时也达不到预期效果。此时，可以使用单样本或少样本推理，通过在提示中添加一个或几个示例来提升模型表现。如果这些方法仍然不够理想，就需要微调。
+
+微调特别适用于需要模型在特定领域或任务上更精准时。预训练模型通用性强，但在处理专业任务时可能不理想。通过微调，用带标签的示例数据集更新模型权重，这些示例通常是提示-响应对。这样模型在特定任务上表现更出色。
+
+如果模型输出不符合用户需求或偏好，微调也是很好解决方案。微调能针对具体任务和用户需求定制模型输出，使其更符合预期。
+
+总结来说，当情境学习和零样本、单样本或少样本推理不能满足需求，或者需要在特定任务和领域中提升模型表现时，微调是有效策略。通过有监督学习过程，微调能显著提高模型在特定任务上的准确性和可靠性。
+
+## 微调的具体优势
+
+微调模型的主要优势在于其多方面的适应性和特定需求满足能力：
+
+### 定制化
+
+各个领域或任务具有独特的语言模式、术语和情境差异。通过微调预先训练的大型语言模型（LLM），可以使模型更好地理解和生成与特定领域相关的内容，确保响应的准确性和相关性。
+
+### 个人与企业用户的差异
+
+对于个人用户而言，提示工程（`Prompt Engineering`）已足够应对日常需求，但对于企业服务来说，推理成本成为重要考虑因素，这使得微调更具优势。
+
+### 提高理解力
+
+预训练模型在记忆和信息补全方面表现良好，但面对复杂或具体问题时，可能缺乏深入理解。微调使模型能够更好地把握问题背景和意图，从而提供更精准的回答。
+
+### 适应特定格式
+
+预训练模型基于通用文本数据，而实际应用中的数据格式和问题形式可能不同。微调使模型能够适应特定的数据格式和问题形式，提升在这些特定场景中的表现。
+
+### 增强推理能力
+
+微调不仅可以增强模型的词语关联能力，还能教会模型更多推理技巧和方法，使其在处理复杂问题时进行更深入的逻辑分析和推理。
+
+## 主要微调方法
+
+微调方法可以分为全量微调和参数高效微调。全量微调调整所有参数，而参数高效微调通过增加新的参数层、选择性微调部分参数或重新参数化来实现高效的微调。
+
+在微调策略方面，我们有有监督微调和基于人类反馈的强化学习，这两种策略都可以应用于全量微调和参数高效微调。
+
+因此，参数高效微调是一种策略，其具体实现可以通过增加式、选择式和重新参数化方法来完成。
+
+总结如下：
+
+1. 微调技术总览
+
++ 全量微调（Full Fine Tuning, `FFT`）
+
++ 参数高效微调（Parameter-Efficient Fine Tuning, `PEFT`）
+
+1. 微调方法分类
+
++ 有监督微调（Supervised Fine Tuning, `SFT`）
+
++ 基于人类反馈的强化学习（Reinforcement Learning with Human Feedback, `RLHF`）
+
+1. 参数高效微调技术分类
+
++ 增加式方法
+
++ 选择式方法
+
++ 重新参数化方法
+
+### 1. 微调技术总览
+
+#### 全量微调 (Full Fine Tuning, `FFT`)
+
+在全量微调中，模型的所有参数都会进行重新训练。这种方法虽然可以最大程度上适应特定任务，但计算成本较高，并可能导致灾难性遗忘，即在适应新任务时丢失对旧任务的记忆。
+
++ **应用场景**：适用于预算充足且对特定任务要求极高的场合。
+
++ **类比**：对整个房子进行翻新，从地板到天花板都重新装修。
+
+#### 参数高效微调 (Parameter-Efficient Fine Tuning, `PEFT`)
+
+参数高效微调通过仅微调部分参数来降低计算成本，并保留模型在多个任务上的性能。这种方法特别适合在有限资源条件下进行特定任务优化。
+
++ **应用场景**：适用于预算有限但仍需提升特定任务性能的情况。
+
++ **类比**：对房子进行局部改造，如只翻新厨房或浴室。
+
+### 2. 微调方法分类
+
+#### 有监督微调 (Supervised Fine Tuning, `SFT`)
+
+通过标注数据指导模型的学习，使模型在特定任务上进行优化。
+
++ **应用场景**：拥有大量高质量标注数据，需精确调整模型。
+
++ **类比**：考前通过标准答案复习，确保学习效果。
+
+**主要技术：**
+
+1. **基本超参数调整**：调整学习率、批量大小等超参数，优化模型性能。
+
++ **类比**：烹饪时调整火候和调味料的比例。
+
+1. **迁移学习**：利用预训练模型，通过少量数据进行微调。
+
++ **类比**：已学会骑自行车的人学骑摩托车。
+
+1. **多任务学习**：同时训练多个相关任务，提升模型性能。
+
++ **类比**：学习多种乐器的音乐家。
+
+1. **少样本学习**：从少量数据中学习新任务。
+
++ **类比**：经验丰富的厨师尝试新菜谱。
+
+1. **任务特定微调**：针对单一任务进行优化。
+
++ **类比**：心脏外科医生在手术中的精准表现。
+
+#### 基于人类反馈的强化学习 (Reinforcement Learning with Human Feedback, `RLHF`)
+
+通过人类反馈优化模型，使其生成符合人类期望的结果。
+
++ **应用场景**：需要模型输出符合人类主观判断的结果。
+
++ **类比**：厨师在指导下改进做菜技巧。
+
+**主要技术：**
+
+1. **奖励建模**：模型根据人类评分进行调整。
+
++ **类比**：学生根据老师反馈改进作文。
+
+1. **邻近策略优化 (`PPO`)**：在确保策略更新平稳的情况下优化模型行为。
+
++ **类比**：跑步者逐步增加训练强度。
+
+1. **比较排名**：通过人类评估不同输出的优劣，优化模型。
+
++ **类比**：品酒师比较不同酒款。
+
+1. **偏好学习**：从人类偏好中学习，优化输出。
+
++ **类比**：消费者根据偏好选择产品。
+
+1. **参数高效微调 (`PEFT`)**：最小化训练参数数量，提高特定任务性能。
+
++ **类比**：在建筑物上增加模块功能。
+
+### 3. 参数高效微调技术分类
+
+#### 增加式方法
+
+在模型中增加额外参数或层，且仅训练这些部分。
+
++ **应用场景**：增加新功能时。
+
++ **类比**：给房子加建房间。
+
+**具体方法：**
+
+1. **`Adapter Tuning`**：在每层插入两个`Adapter`，仅调整这些新参数。
+
++ **类比**：添加转换器适应新功能。
+
+1. **`Soft Prompts`**：在输入序列中添加可学习提示，引导模型输出。
+
++ **类比**：考前提供提示词帮助回答问题。
+
+1. **`Prefix Tuning`**：在`Transformer`层添加前缀以引导模型。
+
++ **类比**：演讲加引言帮助理解内容。
+
+#### 选择式方法
+
+选择性地调整模型现有参数，如仅修改偏置项。
+
++ **应用场景**：最小调整提升性能。
+
++ **类比**：调节车座和后视镜位置。
+
+#### 重新参数化方法
+
+使用低秩表示减少可训练参数数量。
+
++ **应用场景**：提高效率和性能。
+
++ **类比**：分解家务任务提高效率。
+
+**具体方法：**
+
+1. **`LoRA`**：通过低维分解训练特定参数矩阵。
+
++ **类比**：使用最重要工具进行工作。
+
+1. **`AdaLoRA`**：在`LoRA`基础上自适应调整矩阵秩。
+
++ **类比**：多功能瑞士军刀灵活切换工具。
+
+### 微调流程与最佳实践
+
+为了优化预训练模型以适应特定用例或应用，需遵循明确的流程和最佳实践：
+
+**1. 数据准备**
+
++ **清理与预处理**：确保数据集相关且高质量，包括清理数据、处理缺失值和格式化文本。
+
++ **数据增强**：扩展数据集以提高模型的鲁棒性，直接影响模型学习和泛化能力。
+
+**2. 选择预训练模型**
+
++ **匹配任务要求**：选择符合目标任务或领域要求的模型，了解其架构、输入/输出规范和层。
+
++ **考虑因素**：选择模型时，需考虑模型大小、训练数据和相关任务的性能。
+
+**3. 微调参数设置**
+
++ **配置参数**：设置学习率、训练周期数和批量大小等参数，影响模型适应新数据的能力。
+
++ **冻结层**：防止过度拟合，保留预训练知识，同时学习新任务特征。
+
+**4. 模型验证**
+
++ **评估性能**：使用验证集监控准确性、损失、精确度和召回率等指标，评估模型有效性和泛化能力。
+
++ **改进模型**：根据评估结果，细化微调参数和模型架构，形成优化模型。
+
+**5. 模型迭代**
+
++ **调整参数**：根据评估结果调整学习率、批量大小或层冻结程度，增强模型有效性。
+
++ **探索策略**：采用正则化技术或调整模型架构，逐步提高模型性能，达到所需水平。
+
+**6. 模型部署**
+
++ **集成环境**：将微调后的模型集成到特定环境中，包括硬件和软件要求及系统集成。
+
++ **解决问题**：确保部署过程的可扩展性、实时性能和安全措施，保证无缝可靠的部署。
+
+### 微调应用实例
+
+微调预训练模型使其在特定任务中表现出色，以下是几个突出的用例：
+
+**1. 情感分析**
+
++ **应用领域**：通过微调，模型能准确分析和理解文本中的情感，帮助企业从客户反馈、社交媒体帖子和产品评论中获得有价值的见解。
+
++ **优势**：辅助决策、营销策略和产品开发，识别趋势和客户满意度。
+
+**2. 聊天机器人**
+
++ **改进交互**：微调后的聊天机器人生成更具上下文相关性和吸引力的对话，改善客户互动。
+
++ **行业应用**：在客户服务、医疗保健、电子商务和金融等领域提供个性化帮助。
+
+**3. 文本摘要**
+
++ **功能**：微调模型可自动生成长文档、文章或对话的简洁摘要，提高信息检索和知识管理效率。
+
++ **适用场景**：学术研究、企业环境等领域，帮助提取关键信息，促进高效决策和知识理解。
+
+## 微调实践：天工 Skywork-13B微调指南
+
+去年 7 月，Meta 发布了 `LLaMA2`，以其强大的性能和免费商用的优势，迅速赢得了开发者和企业的喜爱。各个版本的 `LLaMA2` 微调成果不断涌现，让大模型领域的竞争局势快速变化。
+
+很多人认为，这波开源攻势会削弱那些闭源大模型厂商的“护城河”，让中小企业和开发者有了更经济实惠的选择。不仅如此，国产大模型的开源力量也在加速追赶。然后，大模型开源仍面临三大挑战：
+
+首先，中文数据的稀缺和珍贵使得训练高质量模型变得困难；其次，模型训练的细节往往不公开，限制了开发者对模型的深度理解和优化；最后，模型开源在商用方面面临诸多限制，使得企业在实际应用中遇到许多障碍。
+
+而前不久，昆仑万维推出了重磅开源项目：`Skywork-13B` 系列。为什么说重磅呢？因为 `Skywork-13B` 在多个基准测试（如 `C-Eval`，`MMLU`）中全面超越了 `LLaMA2-13B`。
+
+这次开源不仅包括 `Skywork-13B-Base` 模型、`Skywork-13B-Math` 模型，还有它们的量化版模型。更厉害的是，昆仑万维还开放了一个600GB、150B Tokens的高质量中文语料数据集「`Skypile/Chinese-Web-Text-150B`」，而且全面开放商用，开发者无需申请，零门槛就能用上。
+
+### 全量微调
+
+使用 `Skywork-13B-Base` 模型进行预训练微调
+
+```
+## preprocess continue pretraining data
+## Because pre-training data is usually large, we use a script to process the training data separately.
+python train/pt_data_preprocess.py \
+    -t $MODEL_PATH \
+    -i data/pt_train.jsonl \
+    -o data_cache/pt_train_demo 
+
+## launch training
+export WANDB_API_KEY=YOUR_WANDB_KEY
+export WANDB_ENTITY=skywork
+export WANDB_PROJECT=skywork-13b-opensource
+
+export MODEL_PATH=skywork-13b-models/skywork-13b-base
+export DATA_CACHE_DIR=data_cache/pt_train_demo/pt_train
+bash bash_scripts/skywork_13b_pt.sh
+ 
+```
+
+使用 `Skywork-13B-Base` 模型进行有监督微调（SFT, Supevise Fine-tuning）
+
+```
+## preprocess data and launch training
+export WANDB_API_KEY=YOUR_WANDB_KEY
+export WANDB_ENTITY=skywork
+export WANDB_PROJECT=skywork-13b-opensource
+
+export SFT_DATA_DIR=data/sft_data
+export DATA_CACHE_DIR=data_cache/sft_train_demo
+bash bash_scripts/skywork_13b_sft.sh
+
+```
+
+### LoRA微调
+
+使用 `Skywork-13B-Base` 模型以及 `LoRA` 进行预训练微调
+
+
+
+# Skywork-13B 微调实践指南
+
+## 预训练数据预处理
+
+```
+## preprocess continue pretraining data
+## Because pre-training data is usually large, we use a script to process the training data separately.
+python train/pt_data_preprocess.py \
+    -t $MODEL_PATH \
+    -i data/pt_train.jsonl \
+    -o data_cache/pt_train_demo
+
+export WANDB_API_KEY=YOUR_WANDB_KEY
+export WANDB_ENTITY=skywork
+export WANDB_PROJECT=skywork-13b-opensource
+
+export MODEL_PATH=skywork-13b-models/skywork-13b-base
+export DATA_CACHE_DIR=data_cache/pt_train_demo/pt_train
+bash bash_scripts/skywork_13b_pt_lora.sh
+```
+
+## 使用 LoRA 进行有监督微调（SFT）
+
+使用 Skywork-13B-Base 模型以及 LoRA 进行有监督微调（SFT, Supervised Fine-tuning）。
+
+```
+export WANDB_API_KEY=YOUR_WANDB_KEY
+export WANDB_ENTITY=skywork
+export WANDB_PROJECT=skywork-13b-opensource
+
+export SFT_DATA_DIR=data/sft_data
+export DATA_CACHE_DIR=data_cache/sft_train_demo
+bash bash_scripts/skywork_13b_sft_lora.sh
+```
+
+![预览图](img/e5186ab98037c7d492cb551c1a80ed95.png)
+
+## 1.1k Star！天工 Skywork-13B：性能全面超越 LLaMA2、0 门槛商用、消费级显卡进行部署和推理！
+
+## 其他微调实践文章
+
+- https://mp.weixin.qq.com/s/kSJRV3fn6_SU_4P-68HWuQ
+- https://mp.weixin.qq.com/s/gDY48nLZ08RpG8TpCf_qaw
+
+## 开源 LLM 快速微调框架
+
+`LLaMA-Factory`：统一 100 多个 LLM 的高效微调。
+
+Github：https://github.com/hiyouga/LLaMA-Factory?tab=readme-ov-file
+
+![](img/0b17fa48f714986e4b27bfe3e3b98afd.png)
+
+实践 Colab：https://colab.research.google.com/drive/1eRTPn37ltBbYsISy9Aw2NuI2Aq5CQrD9?usp=sharing
+
+`LitGPT`：`LitGPT` 是一个命令行工具，旨在轻松地微调、预训练、评估和部署 20 多个 LLM 到你自己的数据上。它为世界上最强大的开源大型语言模型（LLM）提供了高度优化的训练方案。
+
+Github：https://github.com/Lightning-AI/litgpt
+
+![](img/30fa68fd4672e103921b33e7f2f18a0c.png)
+
+## Skywork-13B 微调
+
+天工系列模型在 3.2TB 高质量多语言和代码数据上进行预训练。开源了模型参数、训练数据、评估数据、评估方法。
+
+![](img/165c71d30121f3f94fb37513ea40bbb7.png)
+
+Github：https://github.com/SkyworkAI/Skywork/
+
+## 往期推荐
+
+天工AI 全网最全使用说明书，看完震惊了
+
+[六位一线AI工程师总结Agent构建经验，天工 SkyAgents 的Agent构建实战。](http://mp.weixin.qq.com/s?__biz=MzkyMzY1NTM0Mw==&mid=2247487985&idx=1&sn=c31d6fa129f7ad2144717be240f01bb8&chksm=c1e09c31f6971527a606381cf78e143e5bbca253adbcaef9f22101a0e0825cefd0159b72119a&scene=21#wechat_redirect)
+
+[1.1k Star！天工Skywork-13B：性能全面超越LLaMA2、0门槛商用、消费级显卡进行部署和推理！](http://mp.weixin.qq.com/s?__biz=MzkyMzY1NTM0Mw==&mid=2247487776&idx=1&sn=6926ed3e3db709b4d96f8f6a95857aa1&chksm=c1e09ce0f69715f63d639dbea7f3050f1a94688e3275221c5283d5f6354531199f1632e0ea4a&scene=21#wechat_redirect)
+
+[中国 AI 搜索鼻祖：启发式回答与多维搜索，破解知识碎片化，超越Perplexity的绝赞研究者模式！](http://mp.weixin.qq.com/s?__biz=MzkyMzY1NTM0Mw==&mid=2247487210&idx=1&sn=098382687b5553bb1da37c4ecb38e150&chksm=c1e0832af6970a3ca45db06cdfe92e2af74ab1fcae25c37da430631a7084667bbf65c893bdd9&scene=21#wechat_redirect)
+
+## 参考链接
+
+[1] https://www.turing.com/resources/finetuning-large-language-models  
+[2] https://www.datacamp.com/tutorial/fine-tuning-large-language-models  
+[3] https://github.com/SkyworkAI/Skywork/
+
+## 知音难求，自我修炼亦艰
+
+抓住前沿技术的机遇，与我们一起成为创新的超级个体
+
+### 把握 AIGC 时代的个人力量
+
+![](img/fa56f36a459bdc5c04e56cf2112363da.png)
