@@ -1,0 +1,227 @@
+
+# Trae字节推出AI编程你确定不来使用试试？
+
+> 来源：[https://agijuejin.feishu.cn/docx/Ep3FdWRWcoJH93xWN0UchHkInFB](https://agijuejin.feishu.cn/docx/Ep3FdWRWcoJH93xWN0UchHkInFB)
+
+> 作者：三原
+
+> 链接：https://juejin.cn/post/7462978602457514019
+
+> 来源：稀土掘金
+
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+> 如有侵权，请联系删除。
+
+**我正在参加Trae「超级体验官」创意实践征文，本文所使用的 Trae 免费下载链接：** `www.trae.ai/?utm_source…`
+
+**我觉得我们首先知道我们需要一个什么样的辅助编程类的AI，大胆一点：我想要产品告诉我需求后，经过我的脑袋想一下，这个AI就能给我实现项目，这个样子我就能好好摸鱼了！！**
+
+未来应该肯定可以达到这个高度，但是也预示着可能就不需要程序员了！
+
+说下现在 AI ChatGPT 问世后，国内的AI也是百花起放，首当其冲的是 豆包、通义灵码、Kimi 等等
+
+我先说下本人对这些 chatGpt 产出后的一些使用，主要体现在查询上，我遇到问题了我会去问 gpt，得到的答案很中肯，有好的有坏的，但是我感觉要比我查询高效很多，尤其是在我不 🪜 的情况下。我觉得我不需要 🪜，就能得到我想要的答案了
+
+我查询类的问题会去问 KIMI，vscode 插件安装的是 通义灵码，我 通义灵码 主要用来做代码提示（摁 Tab 回车应用），有些时候还是蛮好用的。
+
+## Trae的底层大模型
+
+缺点：现在需要 🪜 并 Mac用户 才能去使用，预计春节过后发布 windows 版本，因为它的底层模型使用的是 Claude 3.5 Sonnet 和 GPT-4o。
+
+![](img/9d3db575fd96465b8d2ae6af28200b69.png)
+
+![](img/4c78645f80b57cf58e10c85441c8a556.png)
+
+都是一些国外的大模型，GPT-4o 就不在多说了，咱们来说下 Claude 3.5 Sonnet
+
+Claude 3.5 Sonnet 是由 Anthropic 公司研发的先进人工智能模型。Anthropic 是一家专注于开发高性能人工智能模型的公司，Claude 3.5 Sonnet 是其 Claude 系列模型中的最新版本，于 2024 年 6 月 21 日正式发布。
+
++ **性能提升**：Claude 3.5 Sonnet 在多项基准测试中超越了 OpenAI 的 GPT-4o 和谷歌的 Gemini 1.5 Pro。它在编码、数学推理、视觉处理等方面表现出色，尤其在编码能力上解决了 64% 的问题，显著高于前代的 38%。
+
++ **多模态支持**：该模型支持文本和图像输入，能够处理复杂的视觉任务，如图表解释和从不完美图像中转录文本。
+
++ **性价比高**：Claude 3.5 Sonnet 的成本仅为前代 Claude 3 Opus 的五分之一，每百万输入 tokens 仅需 3 美元，输出 tokens 15 美元。
+
+> 从现在的 Trae 来看目前还没有收费用，未来感觉会有收费，万事肯定是以盈利为基础的。所以趁着还没收费，先爽了再说。你可以说他是套壳。但是为了提供好的服务，整合好的资源本身就是一种能力啊。
+
+## Trae 的界面
+
+![](img/3d46f532b1abd15e42e952dedb5efd5c.png)
+
+![](img/3b32e82fbca9bfbbf512a955c1ed3c3c.png)
+
+![](img/b335bdfd7a0562128f0662627daffa40.png)
+
+![](img/653d22447f591e069b92dd5c0e43a8ce.png)
+
+![](img/ec8b0b8b81443dc055c77ce10f2c37d1.png)
+
+可是使用 `trae` 命令直接唤起 `trae` 应用（前提是安装了 `trea` 命令）
+
+## Trae 的两种模式
+
+**Trae-Chat模式** 随时对您的代码库或编程相关问题提问或寻求建议。这个不回给你直接创建文件等之类的你可以选择需要不需要去应用，适合一些基础的问题应用
+
+![](img/fea354123cefebda6c4e47671feab67a.png)
+
+**Trae-Builder模式** 轻松完成从零到一的项目构建。在 Builder 模式下，对代码文件的任何更改都会自动保存。这个模式下会自动根据你的需求创建一些资源文件，更适合需要它编写复杂的应用场景。
+
+接下来咱们使用 Trae-Builder 模式让他帮咱们搞一个 vue3 的工程如下：
+
+![](img/2f86d9de4283013083cd85669d1523aa.png)
+
+![](img/bd3f91489e6172308287b3b5cfac2190.png)
+
+安装依赖的时候报错了，但是任务并没有停止，或者说我可能最想要的是它能帮我解决报错。之后它又提示我重新运行了下 `npm install`，原来是进错目录了！！
+
+![](img/7576dea9f90a189c3783353f0ecf1180.png)
+
+![](img/0423e94aa5d3a5ac13cdb1c6c48cca31.png)
+
+接着运行时提示 `node` 版本过低无法运行最新的 `vite`，其实也一直在帮我解决问题。那么咱们接受它的意见继续往下走，可以厉害帮我解决了！！！
+
+![](img/3d2c53ca4330d4ed4d0ff3af3e4b9ef2.png)
+
+走到这里，咱们来总结下，第一次错误时进错文件目录执行 `npm install`，然后紧接着帮我切换目录让我重新运行 `npm install`。
+
+第二次错误是电脑本机安装了 `node` 版本过低 16.xx.xx，完事它给我们匹配了适合我 `node` 版本的 `vite` 版本。
+
+正常没有使用 Trae 的时候，我可能真的会花点时间去解决问题。首先我们拿着错误提示去问问 kimi 看看它给我们什么样的参考建议：
+
+> 可以看出其实 KIMI 也给出参考建议说又 `node` 版本问题了，说让我切换 `nvm` node 版本，假如我的本地没有 `nvm` 就需要继续去找解决方案。Trae 的优势就体现出来了！直接能提示你运行 `npm uninstall vite @vitejs/plugin-vue` 接着提示你安装适合你的依赖 `npm install vite@4 @vitejs/plugin-vue@4 --save-dev` 解决了遇到的问题。
+
+咱们接着往下走，我让他帮我创建一个 `Login` 界面看看他会怎么写：
+
+![](img/c4cfb9c4808450517e22a1aa6cd3169b.png)
+
+> 如上它写好了并能支持运行，它帮我自动引入了 `router`，我本来项目中是没有的！！！而且我检查了下它的代码写的也是蛮规范的如下：
+
+```
+<script setup lang="ts">
+import { ref, reactive } from 'vue'
+import { useRouter } from 'vue-router'
+import type { FormInstance, FormRules } from 'element-plus'
+
+const router = useRouter()
+
+interface LoginForm {
+  username: string
+  password: string
+}
+
+const loginForm = reactive<LoginForm>({
+  username: '',
+  password: ''
+})
+
+const loginFormRef = ref<FormInstance>()
+
+const rules = reactive<FormRules>({
+  username: [
+    { required: true, message: '请输入用户名', trigger: 'blur' },
+    { min: 3, max: 20, message: '长度在 3 到 20 个字符', trigger: 'blur' }
+  ],
+  password: [
+    { required: true, message: '请输入密码', trigger: 'blur' },
+    { min: 6, max: 20, message: '长度在 6 到 20 个字符', trigger: 'blur' }
+  ]
+})
+
+const handleLogin = async (formEl: FormInstance | undefined) => {
+  if (!formEl) return
+  await formEl.validate((valid) => {
+    if (valid) {
+      router.push('/home')
+    }
+  })
+}
+</script>
+
+<template>
+  <div class="login-container">
+    <el-card class="login-card">
+      <template #header>
+        <h2>系统登录</h2>
+      </template>
+      <el-form
+        ref="loginFormRef"
+        :model="loginForm"
+        :rules="rules"
+        label-width="80px"
+        class="login-form"
+      >
+        <el-form-item label="用户名" prop="username">
+          <el-input v-model="loginForm.username" placeholder="请输入用户名" />
+        </el-form-item>
+        <el-form-item label="密码" prop="password">
+          <el-input
+            v-model="loginForm.password"
+            type="password"
+            placeholder="请输入密码"
+          />
+        </el-form-item>
+        <el-form-item>
+          <el-button type="primary" @click="handleLogin(loginFormRef)">
+            登录
+          </el-button>
+        </el-form-item>
+      </el-form>
+    </el-card>
+  </div>
+</template>
+
+<style scoped>
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.login-card {
+  width: 480px;
+}
+
+.login-card :deep(.el-card__header) {
+  text-align: center;
+}
+
+.login-form {
+  padding: 20px;
+}
+</style>
+```
+
+> 写到这里我其实是震惊的，太棒了！
+
+## Trae 的图片识别完成界面开发
+
+我拿了一个 `demo.buildadmin.com/#/admin/log…` 后台管理的登陆页面截图给他，让他帮我实现一个登陆页面。发现并没有完全实现
+
+![](img/bd0ef27f2114d1406397c7a29da070dc.png)
+
+我又经过几次修改，还是没能达到预期。
+
+我又测试了一下让他帮我实现一个从网上找来的截图如下：
+
+![](img/fd02f04d26f529d9f8ec19d60c879add.png)
+
+实现效果如下：
+
+![](img/83583a1b1eb169f83e2a26569d3c43ef.png)
+
+> 实现的也还行，文字也都识别了，但是后来我让他一直实现对 已选字段 做一个拖拽排序，一直没能成功。
+
+## 总结
+
+其实看到这里已经能看到 Trae 的能力了，他针对的还是 **开发工程师**，能一定的帮你解决问题，并且实现功能。以那个穿梭条为例，就是咱们自己实现来说页面还是需要写的，完事经过了 Trae 后咱们只需要写个拖拽排序的逻辑就行了，他跟低代码平台相比来说，他写的代码更加规范，可读。
+
+再者假如有项目运行报错了，可以交给它试试帮你解决，我相信它一定会帮你解决！！
+
+关于 🪜 以及 Mac 系统。春节后官方说就会 **支持 Windows** 系统，搓搓手期待下。🪜 的话我只是在登陆阶段开启了，在问问题阶段用不用都行。
+
+这个其实不用担心，后面肯定会全面放开的。
+
+经过我以上的演示你觉得这个 Trae 怎么样，我接下来会深入应用到项目中，等有问题再来总结，咱们评论区见
