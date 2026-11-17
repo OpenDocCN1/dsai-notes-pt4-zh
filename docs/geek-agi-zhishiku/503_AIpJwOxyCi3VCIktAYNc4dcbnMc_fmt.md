@@ -1,0 +1,96 @@
+
+# 【SadTalker】本地部署一套生成数字人的AI工具，我的算力我做主
+
+> 来源：https://geekbang.feishu.cn/docx/NlvWd7OhFos0V2x0QTxcbhT1nGf
+
+> 🤵作者：IT工具人
+
+> 📃 作者介绍：14年互联网IT从业经验，做过程序员，现任AI产品经理。发现并分享能提升做事效率的工具，让创业或副业变得更简单。
+
+> ⏰ 收录时间：2024-05-31 11:15:04 (UTC+8)
+
+> 🔗 原文链接：https://mp.weixin.qq.com/s/xC7NDm7K...
+
+![](img/77a26e70422829430b06eb22ff2ccb8e.png)
+
+欢迎关注👸号👆
+
+## 项目简介
+
+去年 西安交通大学开源了SadTalker模型，图片+音频可以生成视频，也就是会说话、会唱歌的数字人。这是 Stable Diffusion 的插件，网上也有很多安装教程了，看了教程还是要自己亲自装一次才更熟悉，数字人的效果在文末。
+
+这是安装成功之后的界面
+
+SadTalker会让照片的人像开口说话，我们称之为照片数字人，部署这套工具，需要准备哪些软硬件。
+
+## 环境准备
+
+### 硬件要求
+
+（1）一台有GPU的电脑主机，我用的是带有3060（12G显存）的，I5的CPU（很老），16G内存，装Windows 10专业版操作系统。
+
+![](img/ea4dff6a08f2407fc5cc30f27765bd58.png)
+
+### 部署 Stable Diffusion
+
+（2）部署 Stable Diffusion，这个在前面的文章中有介绍，可以先看这篇（【保姆式教程】搭建属于自己的AI绘图工具——Stable Diffusion 部署），这个建议部署起来，后面我们会介绍很多这个平台的插件，国内很多画图AI工具也是以这个为基础。
+
+### 下载 SadTalker 模型与 ffmpeg
+
+（3）下载SadTalker模型，`ffmpeg`软件。👸号回复 SadTalker 或 数字人 获取下载链接下载。
+
+## 安装步骤
+
+接下来开始安装，安装步骤也比较简单，按照下面步骤就可以。
+
+### 在 Stable Diffusion WebUI 上安装 SadTalker 插件
+
+1、在Stable Diffusion WebUI上安装SadTalker插件。在`Extensions`中，进入`Install from URL`选项卡，在URL栏中输入`https://github.com/winfredy/sadtalker`，然后点击`Install`。
+
+![](img/458e70899baaf5fdc7d84faea9e9fea9.png)
+
+`Install`成功之后，在`Installed`选项卡中，点击`Apply and restart UI`，稍等片刻，会看到 SadTalker 菜单。
+
+![](img/fd1de26d07ef9cf5555a4ad8bb0fba9b.png)
+
+### 模型安装
+
+2、模型安装。把我们下载的模型放在相应位置就可以了。
+
+（1）把这些`*.pth`和`*.pth.tar`文件拷贝到`stable-diffusion-webui\extensions\SadTalker\checkpoints`目录，如果没有`chekpoints`目录，需要先创建目录。
+
+![](img/c510ae1eb20d7916de5c360ef9f0fb81.png)
+
+（2）把`BFM_Fitting`和`hub`以及`dat`文件拷贝到`stable-diffusion-webui\extensions\SadTalker`目录。
+
+![](img/a474a54de9d06379a3e0d9ceb36ebcbd.png)
+
+### 安装 ffmpeg
+
+3、安装`ffmpeg`，解压`ffmpeg`的压缩包，然后在环境变量`Path`中添加`ffmpeg`的`bin`路径。我在解压`ffmpeg`之后，放在了D盘，就可以这么设置。
+
+![](img/89f6e4b0c6c0fc6ba6db0a673bded630.png)
+
+## 生成数字人
+
+以上安装完成，接下来就可以试试能否正常生成数字人，在生成数字人之前，我们需要先生成一段语音或者歌声。
+
+### 生成音频
+
+生成音频可以用TTS或克隆自己声音等方式，如果大家感兴趣，可以私信，到时专门出个如何克隆自己的声音。这里我们可以用一个在线tts生成音频`http://www.ttsgpt.cn/`。
+
+![](img/796a8154162b3e00e7726bd6b9a9b2f7.png)
+
+### WebUI 界面生成
+
+音频和图片都准备好了之后，就可以在`WebUI`界面上上传图片、音频，参数选择，这里说下`preprocess`参数，默认是只有一个头部，选择`full`、`extfull`等参数可以展示完整的人像。
+
+![](img/6ed11e55a074141e10d40ea26a5e9172.png)
+
+## 效果展示
+
+最后来看看效果，对嘴型还差点意思，这也是现在照片数字人正在努力改进的。如果你也想自己动手搭建，那就试试吧。
+
+[🎦 点击观看视频](https://mpvideo.qpic.cn/0bc3emacqaaaimaffzothrsvai6dfarqakaa.f10002.mp4?dis_k=9e3ecf02f5b68f1190e80102a29303a7&dis_t=1717125296&play_scene=10120&auth_info=BZ2JkrFFGHUpxq6BkGR3aEAzDXs9a0VKZD4GY2tjU2s4UjFETEhFGkseIihmRmBSSg==&auth_key=2ffd0e39bf9937d803a9e86b7260c609&vid=wxv_3334739598501003265&format_id=10002&support_redirect=0&mmversion=false)
+
+视频详情
