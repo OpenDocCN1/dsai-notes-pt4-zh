@@ -1,0 +1,352 @@
+
+# 2025-12-14--600页AI-PPT实战后，我写了这篇全网最全Noteboo
+
+> 来源：[https://xuqiwei1986.feishu.cn/docx/MUvhdywKloCkILxufbGcLREFn9c](https://xuqiwei1986.feishu.cn/docx/MUvhdywKloCkILxufbGcLREFn9c)
+
+> 🔗 原文链接： [https://scys.com/articleDetail/xq_topic/14588544228221852](https://scys.com/articleDetail/xq_topic/14588544228221852)
+
+各位赚钱圈友大家好，我是sky陈天，一名AI企业培训讲师、企业AI业务提效顾问。
+
+最近用Google的NotebookLM做了一套70多页的AI 营销主题的PPT，做了两场商业分享，效果出乎意料的好。
+
+客户反馈说，这PPT看起来不像AI生成的，更像是专业设计师做的信息图。
+
+![](img/8a28a3e4209662740277e9c20caa0dae.png)
+
+（notebooklm 直接生成的 PPT）
+
+我研究AI做PPT这件事，已经快 3 年了。
+
+市面上大大小小的工具用了20多个，Gamma、KIMI、AIPPT、通义、讯飞、天工、文心一言……基本上叫得上名字的我都试过。
+
+我的AI工作流课程里那500多页PPT，全部都是用Gamma做的。
+
+当时觉得Gamma已经是天花板了，没想到现在被NotebookLM超越了。
+
+上个月Google把Nano Banana Pro整合进NotebookLM之后，AI做PPT这件事发生了质的变化
+
+PPT 制作从"AI填内容+套模板"变成了"AI直接画图成PPT"。
+
+每一页都是独立设计的图，不撞模板，视觉独特性拉满。
+
+比如我可以做一个哆啦A梦版的PPT。
+
+![](img/5d35b4717c588773f0e24631982bf83f.png)
+
+也可以做一个疯狂动物城版的PPT。
+
+![](img/17f2469de3033f0259ea9a9a555a7cbc.png)
+
+所以这篇文章，根据我用 AIPPT 工具制作了 600 多页 PPT 的经验，系统性地给大家梳理一下：
+
+**怎么用NotebookLM制作PPT，**以及实际使用中会遇到的各种问题怎么解决。
+
+包括：
+
+完整的制作流程（含账号获取）
+
+我用 AI 做了上百页PPT的实战经验
+
+生成后发现错别字的4种修改方法
+
+6种常见PPT风格 + 如何固定你想要的风格
+
+这应该是目前全网最全的NotebookLM生成PPT教程了，建议收藏转发哦！
+
+## 一、完整制作流程：从注册到导出
+
+### 账号获取
+
+NotebookLM是Google的AI 知识管理的产品，需要Google账号才能使用。如果你在国内，需要🪜才能访问。
+
+![](img/5bf2a82cffda2b611183715f4fb5925f.png)
+
+访问地址：`notebooklm.google.com`
+
+NotebookLM本身是免费的，但生成Slide Deck（幻灯片）和Infographic（信息图）功能有使用次数限制。而且免费效果不好需要等很久。
+
+我的建议是，直接某鱼买一个 Gemini PRO账号，一年账号的话，其实也就八十多块钱。
+
+Gemini pro 的账号是和 notebooklm 账号打通的，都可以用。
+
+### 创建笔记本
+
+![](img/60fc93573c29d9aecbf8e778ea1914f4.png)
+
+登录后，点击「`Create new`」创建一个新笔记本，给它起个名字。
+
+比如你要做一个AI营销趋势的PPT，就叫"AI营销趋势分享"。
+
+### 上传素材（关键步骤）
+
+上传的素材和文本决定了你PPT的内容质量。
+
+![](img/9b0c46f42de4c081243943dac7d36946.png)
+
+NotebookLM支持这些格式：
+
+**PDF文档**：研究报告、白皮书、电子书都可以
+
+**Google Docs**：直接从Google Drive导入
+
+**网页链接**：粘贴URL，它会自动抓取内容
+
+**YouTube视频**：粘贴视频链接，它会提取字幕内容
+
+**纯文本**：直接复制粘贴
+
+但这里有一个关键技巧，很多人不知道：
+
+直接上传素材让它生成PPT，效果往往不够理想。因为AI需要自己理解和组织内容，可能和你想要的结构不一样。
+
+我的做法是：先让AI生成逐字稿，再用逐字稿生成PPT。
+
+具体流程是这样的：
+
+**第一步：用AI生成演讲逐字稿**
+
+把你的素材喂给随便一个 AI ，让它帮你写一份完整的演讲逐字稿。
+
+![](img/7cc2318dd855f03614b17cad99497b6c.png)
+
+提示词可以这样写：
+
+你是一个逐字稿撰写专家，请根据以下素材，帮我写一份XX主题的演讲逐字稿。
+
+要求：
+
+1. 分成X个章节，每个章节3-5个要点
+
+2. 每个要点有清晰的标题和2-3句解释
+
+3. 语言风格：内容专业且要口语化
+
+4. 总时长约XX分钟
+
+素材如下：
+
+[粘贴你的素材]
+
+**第二步：把逐字稿粘贴到NotebookLM**
+
+生成的逐字稿复制下来，直接粘贴到NotebookLM的素材区。
+
+你可以选择「`Paste text`」，把整份逐字稿作为一个`source`上传。
+
+![](img/83d3c1dcfab5b51a496d04b81e7fca2e.png)
+
+**第三步：生成PPT**
+
+这时候再生成PPT，出来的内容就是按照你的逐字稿结构来的，和你想要的高度一致。
+
+我做那70页PPT就是用这个方法。
+
+先花30分钟用AI把逐字稿写好、改好，确认内容没问题，再丢进NotebookLM生成。
+
+这样做的好处是： 你对内容有完全的掌控权，AI只负责视觉呈现。
+
+### 生成Slide Deck
+
+素材准备好后，记得勾选素材，只需要勾选你要生成的素材就可以了，然后在右侧找到「`Studio`」面板，点击「`Slide Deck`」。
+
+![](img/a739d504ad045196a4fc610678f4771b.png)
+
+点击旁边的铅笔图标，可以做自定义设置：
+
+![](img/3b252e4f99ae118a9ab79742661305ca.png)
+
+`Format`（格式）：
+
+`Detailed Deck`：详细版，每页内容更丰富，适合阅读型PPT
+
+`Presenter Slides`：演讲版，每页内容更精简，适合现场演示
+
+`Language`（语言）：
+
+选择你想要的输出语言
+
+直接选中文就行了
+
+`Custom Prompt`（自定义提示词）：
+
+这里可以输入你想要的风格来输入。如果不输入信息的话生成的ppt有可能质量会没有那么高，随机性会比较大一些。
+
+比如我的哆啦 A梦风格的就是这个提示词："我想请你根据我的这个文件创建出一个哆啦A梦讲解整个AI PPT生成课程的PPT，要用哆啦A梦的风格去讲，大概 15 页"
+
+设置完成后，点击「`Generate`」，等待生成。
+
+**生成时间大概3-10分钟**，取决于素材量。
+
+好消息是你可以继续在笔记本里做其他事情，它会在后台生成。
+
+### 查看和导出
+
+生成完成后，你可以下载为PDF文件，也可以直接在网页中放映。
+
+![](img/be3b313cabfe7e760cf73122bc2c014e.png)
+
+## 二、生成后发现错别字？4种修改方法
+
+NotebookLM 做的 PPT 很好看，但是有一个很大的问题，字有时候会乱码，比如说这个字明显就是有问题的。但它是图片改起来特别麻烦。
+
+![](img/57ad866799034e1666ac723af35552fb.png)
+
+那到底怎么改呢？
+
+NotebookLM目前只能导出PDF，不能直接编辑。
+
+我把市面上的办法都试了一遍，总结了四种解决方案，适合不同场景。
+
+### 方法一：PDF转PPT工具
+
+把导出的PDF转成可编辑的PPTX格式。
+
+**操作步骤：**
+
+从NotebookLM下载PDF
+
+在 WPS 里点击 pdf 转化为 PPT
+
+![](img/52ca472c74f57f037c21f3d12f517830.png)
+
+![](img/291ffcf00201f6e1362d530833a3b349.png)
+
+转化之后可能会有很多错别字，直接点击审阅里面的校对，多次自动修改错别字就好了
+
+![](img/189c11fb9ecc675d0620fceffe4ea7d8.png)
+
+选择通用校对
+
+![](img/3283359878ff399d24bbfbb467fc6573.png)
+
+并且把错别字一键替换掉
+
+![](img/a06fa8bb52fe8bafb46d0cd5a39ad640.png)
+
+最后把右下角的notebooklm的水印手动的删掉
+
+![](img/d3b27be498e8a42e7e51ee8870c19b12.png)
+
+转换后的PPT，文字会被识别成文本框，可以编辑。但复杂的图形元素可能还是图片形式，没法改。
+
+此我也遇到了一个问题：如果AI生成的文本出现大批量乱码，改起来会非常麻烦。
+
+所以如果 AI 生成的很多乱码， 请重新生成一版，选择乱码少一点的版本 ，然后再进行修改，否则后续的修改工作将会非常繁琐。
+
+### 方法二：用Lovart编辑图片中的文字
+
+这是一个更灵活的方法，特别适合只需要改几个字的情况。
+
+Lovart（ [`lovart.ai`](http://lovart.ai/)）是一个非常强大的AI设计工具，网址： `https://www.lovart.ai/zh`
+
+它有一个功能叫【编辑文字】——可以识别图片里的文字，单独对文字的部分进行修改。
+
+**操作步骤：**
+
+打开 [`lovart.ai`](http://lovart.ai/)，新建一个项目
+
+![](img/d1aaf16e7a054d9a3497cae8c071cadb.png)
+
+把NotebookLM生成的PPT页面复制或者导出，注意是单张图片，不是整个 pdf。
+
+![](img/edee999ec60afc5838bd3d7a3a798c1c.png)
+
+选择编辑文字功能，系统会自动识别并文字
+
+![](img/3e354ee4bb7ed7fe752461306e22dc96.png)
+
+直接对文本框的文字修改，修改后点击【应用修改】，稍等十秒钟就会重新生成一张图片。
+
+![](img/c38745e4554df3438504e24e646a18a7.png)
+
+**适合场景：** 只改1-2个字或数据，想保持原有设计风格，
+
+特别强调一下， 但如果说文字大面积乱码，用这种方式改文字也会照样会乱码
+
+所以当你某一页都是乱码的时候，适合用第三种方式。
+
+### 方法三：用AI重新修复生成
+
+这个方法特别适合处理大批量文字不清晰或者想去水印的情况。
+
+**操作步骤：**
+
+把需要修改的PPT页面复制
+
+![](img/89c8a2a11a98628c2f3cca723e341643.png)
+
+打开lovart、`Gemini pro`或者任何支持Nano Banana Pro的工具，国内的 `seedream4.5` 也可以，上传截图，加上这段提示词：
+
+完全复刻这张图片，只提升文字清晰度和去除右下角水印，确保中文字体不变形不乱码，保持所有内容布局和图标与原图完全一致。4K
+
+![](img/904fc43f2c671b4bdc78059b8963d753.png)
+
+AI会重新生成一张几乎一样的图，但文字更清晰，水印也去掉了
+
+**适合场景：** 文字大面积模糊、想去水印、想提升整体清晰度。
+
+那除了这三种还有没有更好的方法？还真被我发现了一个
+
+### 方法四：Windows智能圈选（Windows用户专属）
+
+这个方法是我在📕上看到的，博主@brucevanfdm分享的，Windows用户可以试试。
+
+**操作步骤：**
+
+安装微软电脑管家（Microsoft PC Manager）
+
+打开PPT的PDF页面
+
+使用电脑管家里的「智能圈选」功能
+
+![](img/1468c9ff1df33f8d9d0894ac2808e1a9.png)
+
+圈选后可以自动把图片内容转化成可编辑的PPT格式
+
+视频来源： 📕 或 X 平台ID： @brucevanfdm
+
+这个方法的好处是不需要额外的在线工具，直接在本地就能完成。
+
+**适合场景：** Windows用户，想快速把图片PPT转成可编辑格式。
+
+最后做一个四种方法的对比，大家可以根据自己的情况自行选择
+
+方法适合场景优点缺点PDF转PPT改多处内容全面可编辑复杂图形可能变形Lovart改1-2个字保持原设计需要逐页处理AI重新生成去水印、提升清晰度大批量改内容可能有细微差异Windows圈选快速转换本地操作仅限Windows
+
+我的建议是：小改用Lovart，大改用PDF转PPT，去水印用AI重新生成，Windows用户可以试试智能圈选。
+
+## 三、5种常见PPT风格 + 如何固定你想要的风格
+
+NotebookLM生成的PPT默认是它自己的风格，但实际工作中，我们往往需要特定的视觉风格。
+
+所以我给大家准备了几个常见的风格提示词，复制粘贴到`Custom Prompt`框里就行。
+
+**极简商务风**
+
+![](img/23d9f90f7f30a21ca867cc6b5a9d61ab.png)
+
+特点：大量留白，黑白灰为主，点缀一个强调色，适合正式商务汇报、投资路演。
+
+Create professional minimalist slides with generous whitespace and clean visual hierarchy. Use a restrained color palette: white backgrounds, charcoal gray text, with navy blue as the single accent color. Typography should be modern sans-serif, with bold headlines and light body text. Each slide focuses on one key message. Use simple geometric shapes and thin lines as subtle decorative elements. Include high-quality photography with muted, desaturated tones when images are needed. Maintain consistent 60% whitespace across all slides.
+
+**科技未来风**
+
+![](img/d34a4dd247e6dc74fb3e310a215b13b8.png)
+
+特点：深色背景，蓝紫渐变，几何线条，数据可视化，适合科技公司、AI主题、产品发布。
+
+Create futuristic tech-style slides with dark backgrounds (`#0a0a0f` or deep navy). Use electric blue (`#00d4ff`) and purple (`#8b5cf6`) as accent colors with subtle gradient effects. Feature geometric patterns: circuit-like lines, hexagonal grids, glowing nodes and connection lines. Typography should be sleek and modern, with a tech/digital feel. Include data visualizations with neon glow effects. Add subtle particle effects or abstract digital elements in backgrounds. Create a sense of innovation and cutting-edge technology.
+
+**活泼创意风**
+
+![](img/abad5a090ef9e2353ec3e25d0b5c7b8b.png)
+
+特点：高饱和度色彩，手绘元素，不规则形状，适合创意提案、品牌营销、年轻受众。
+
+Create vibrant, energetic slides with bold saturated colors: coral pink, electric yellow, turquoise, and bright orange. Use playful hand-drawn elements: sketchy borders, doodle icons, brush stroke textures, and organic blob shapes. Typography should mix playful display fonts with clean sans-serif body text. Include fun illustrations and cartoon-style graphics. Layouts should feel dynamic and slightly asymmetrical. Add confetti, stars, or abstract squiggles as decorative elements. The overall mood should be optimistic, youthful, and engaging.
+
+**信息图表风**
+
+![](img/c66b9bf498b295ad41643c9b0fc16c31.png)
+
+特点：数据可视化，图标丰富，流程图，对比图，适合数据报告、行业分析、复杂概念解释。
