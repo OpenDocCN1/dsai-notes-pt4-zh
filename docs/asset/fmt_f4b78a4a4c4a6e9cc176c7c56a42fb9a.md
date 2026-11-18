@@ -1,0 +1,65 @@
+
+# LLM101n-CN（共建中）
+
+> 来源：[https://aicarrier.feishu.cn/docx/BEHCdMfoLoQShCxpihjcvjzNnub](https://aicarrier.feishu.cn/docx/BEHCdMfoLoQShCxpihjcvjzNnub)
+
+书生·浦语联合机智流发起 LLM101n-CN 中文共建共学计划，将优质的 AI 教学资源带到中文开源社区！
+
+共建地址：`https://github.com/SmartFlowAI/LLM101n-CN`
+
+1. 注意事项：千万不能抄袭，图片copy需要标注引用来源～
+
+1. 可认领暂无负责人的任务。点击对应任务的“领取地址”并完成问卷填写即表示完成任务领取
+
+| 章节 | 任务ID | 任务状态 | 小节 | 描述 | 算力奖励 | 领取地址 | 最终撰写地址 | 领取人 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ngram` | 101N0101 | S3: 已完成 | `ngram` Python 核心代码解读 | 深度解读 [EurekaLabsAI](https://github.com/EurekaLabsAI)/[ngram](https://github.com/EurekaLabsAI/ngram) 库下的核心代码：`https://github.com/EurekaLabsAI/ngram/blob/master/ngram.py` | 300-1000 | [101N0101](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=101N0101) | [101N0101 `ngram` Python 核心代码解读](https://aicarrier.feishu.cn/wiki/STvkwvxvjiC8dok6HrvcdSf0njd?from=from_copylink) | 张贵川 |
+|  | 101N0102 | S3: 已完成 | `ngram` C 核心代码解读 | 深度解读 [EurekaLabsAI](https://github.com/EurekaLabsAI)/[ngram](https://github.com/EurekaLabsAI/ngram) 库下的核心代码：`https://github.com/EurekaLabsAI/ngram/blob/master/ngram.c` | 300-1000 | [101N0102](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=101N0102) | [101N0102 `ngram` C 核心代码解读](https://aicarrier.feishu.cn/wiki/VjR0wGUfQilrCekPYFTcTudanHg?from=from_copylink) |  |
+|  | 101N0103 | S3: 已完成 | `ngram` README 翻译 | 翻译：`https://github.com/EurekaLabsAI/ngram/blob/master/README.md` | 50 | [101N0103](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=101N0103) | [101N0103 ngram readme翻译](https://aicarrier.feishu.cn/wiki/RNqpwGhPMi6pM6kM7tUcCJsvnBh?from=from_copylink) | nomodeset |
+| `micrograd` | 101N0201 | S3: 已完成 | `Micrograd` Python 核心代码解读 | 深度解读 [EurekaLabsAI](https://github.com/EurekaLabsAI)/[`micrograd`](https://github.com/EurekaLabsAI/micrograd) 库下的核心代码：`https://github.com/EurekaLabsAI/micrograd/blob/master/micrograd.py` | 300-1000 | [101N0201](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=101N0201) | [101N0201 `Micrograd` Python 核心代码解读](https://aicarrier.feishu.cn/wiki/SYmTw7et8iBce2kYxovcDeeUnFe?from=from_copylink) |  |
+|  | 101N0202 | S3: 已完成 | `Micrograd` C 代码自发实现 | 自行用 `C` 语言复现 `Micrograd` python 核心代码，并确保输出内容一致。（`micrograd` python 核心代码：`https://github.com/EurekaLabsAI/micrograd/blob/master/micrograd.py`） | 300-1000 | [101N0202](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=101N0202) | [101N0202 `Micrograd` C 代码自发实现](https://aicarrier.feishu.cn/wiki/BY4rwy6jKibibAkk🐧TcZxnEnoc?from=from_copylink) |  |
+|  | 101N0203 | SQ: 已废弃 | `Micrograd` `Pytorch` 核心代码解读 | 深度解读 [EurekaLabsAI](https://github.com/EurekaLabsAI)/[`micrograd`](https://github.com/EurekaLabsAI/micrograd) 库下的核心代码：`https://github.com/EurekaLabsAI/micrograd/blob/master/micrograd_pytorch.py` |  |  |  |  |
+| `mlp` | 101N0301 | S3: 已完成 | `MLP` Python 核心代码（`pytorch` 版）解读 | 深度解读 [EurekaLabsAI](https://github.com/EurekaLabsAI)/[`mlp`](https://github.com/EurekaLabsAI/mlp) 库下的核心代码：`https://github.com/EurekaLabsAI/mlp/blob/master/mlp_pytorch.py` | 300-1000 | [101N0301](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=101N0301) | [101N0301 `MLP` Python 核心代码解读](https://aicarrier.feishu.cn/wiki/Ar4ywlxcnihM8Jkn2DCcxf0tnnf?from=from_copylink) |  |
+|  | 101N0302 | S3: 已完成 | `MLP` Python 核心代码（`numpy` 版）解读 | 深度解读 [EurekaLabsAI](https://github.com/EurekaLabsAI)/[`mlp`](https://github.com/EurekaLabsAI/mlp) 库下的核心代码：`https://github.com/EurekaLabsAI/mlp/blob/master/mlp_numpy.py` | 300-1000 | [101N0302](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=101N0302) | [101N0302 `MLP` Python 核心代码（`numpy` 版）解读](https://aicarrier.feishu.cn/wiki/BzgYwExHeiLhy2kK30Nced2Nn5d) |  |
+| `tensor` | 101N0401 | S1: 未领取 | `Tensor` README 翻译 | 翻译：`https://github.com/EurekaLabsAI/tensor/blob/master/README.md` | 50 | [101N0401](https://aicarrier.feishu.cn/share/base/form/shrcnNFpSSeuWIXSjPcoYRuEcib?prefill_TaskID=101N0401) | [101N0401 `Tensor`](https://aicarrier.feishu.cn/wiki/AtBewCfGcivICekw7YWcxL3qnud?from=from_copylink) |  |
+|  | 101N0402 | S0: 出题中 | `Tensor` Python 代码深度解读 | 解读：`https://github.com/EurekaLabsAI/tensor/blob/master/tensor1d.py` | 300-1000 |  |  |  |
+|  | 101N0403 | S0: 出题中 | `Tensor` C 代码深度解读 | 解读：`https://github.com/EurekaLabsAI/tensor/blob/master/tensor1d.c` | 300-1000 |  |  |  |
+
+## 作者介绍
+
+## LLM101n: 让我们构建一个 Storyteller
+
+在本课程中，我们将建立一个讲故事的人工智能大型语言模型(LLM)。携手并进，你将能够用 AI 创建，完善和说明小故事。我们将使用 `Python`、`C` 和 `CUDA` 从头开始构建一个类似于 ChatGPT 的 web 应用程序，从基础到功能俱全，只需要最低限度的计算机科学先决条件。最后，你应该对 AI、llm 和深度学习有一个相对深入的了解。
+
+### Syllabus 教学大纲
+
++   [Chapter 01](https://github.com/karpathy/LLM101n/blob/master/bigram/README.md) Bigram Language Model (language modeling) 第 01 章 Bigram 语言模型(语言建模)
++   [Chapter 02](https://github.com/karpathy/LLM101n/blob/master/micrograd/README.md) `Micrograd` 机器学习，反向传播
++   [Chapter 03](https://github.com/karpathy/LLM101n/blob/master/mlp/README.md) `N-gram` 模型(多层感知机、`matmul`、`gelu`)
++   [Chapter 04](https://github.com/karpathy/LLM101n/blob/master/attention/README.md) 注意力机制(注意力机制、`softmax`、位置编码器)
++   [Chapter 05](https://github.com/karpathy/LLM101n/blob/master/transformer/README.md) Transformer (`Transformer`，残差，`layernorm`, `GPT-2`)
++   [Chapter 06](https://github.com/karpathy/LLM101n/blob/master/tokenization/README.md) `Tokenization` (`minBPE`，字节对编码)
++   [Chapter 07](https://github.com/karpathy/LLM101n/blob/master/optimization/README.md) `Optimization` (`initialization`, `optimization`, `AdamW`)
++   [Chapter 08](https://github.com/karpathy/LLM101n/blob/master/device/README.md) 提速 (设备、`CPU`、`GPU`……)
++   [Chapter 09](https://github.com/karpathy/LLM101n/blob/master/precision/README.md) Need for Speed II: Precision (`mixed precision training`, `fp16`, `bf16`, `fp8`, ...)
++   [Chapter 10](https://github.com/karpathy/LLM101n/blob/master/distributed/README.md) Need for Speed III: Distributed (`distributed optimization`, `DDP`, `ZeRO`)
++   [Chapter 11](https://github.com/karpathy/LLM101n/blob/master/datasets/README.md) 数据集(数据集、数据加载、合成数据生成)
++   [Chapter 12](https://github.com/karpathy/LLM101n/blob/master/inference/README.md) 模型推理一: `kv-cache` (`kv-cache`)
++   [Chapter 13](https://github.com/karpathy/LLM101n/blob/master/quantization/README.md) 模型推理二:量化(量化)
++   [Chapter 14](https://github.com/karpathy/LLM101n/blob/master/sft/README.md) Finetuning I: `SFT` (`supervised finetuning` `SFT`, `PEFT`, `LoRA`, `chat`) 第 14 章微调 I: `SFT` (`supervised Finetuning` `SFT`, `PEFT`, `LoRA`, `chat`)
++   [Chapter 15](https://github.com/karpathy/LLM101n/blob/master/rl/README.md) Finetuning II: `RL` (`reinforcement learning`, `RLHF`, `PPO`, `DPO`) 第 15 章微调 II: `RL` (`强化学习`, `RLHF`, `PPO`, `DPO`)
++   [Chapter 16](https://github.com/karpathy/LLM101n/blob/master/deployment/README.md) `Deployment` (`API`, web app)
++   [Chapter 17](https://github.com/karpathy/LLM101n/blob/master/multimodal/README.md) `Multimodal` (`VQVAE`, `diffusion` transformer)
+
+### Appendix 附录
+
+Further topics to work into the progression above: 在上述进展中需要进一步研究的主题:
+
++   Programming languages: `Assembly`, `C`, `Python` 编程语言: 汇编、`C`、`Python`
++   Data types: `Integer`, `Float`, `String` (`ASCII`, `Unicode`, `UTF-8`) 数据类型: 整数、浮点数、字符串 (`ASCII`, `Unicode`, `UTF-8`)
++   `Tensor`: `shapes`, `views`, `strides`, `contiguous`, ... 张量: 形状，视图，步长，连续，…
++   Deep Learning frameworks: `PyTorch`, `JAX` 深度学习框架: `PyTorch`, `JAX`
++   Neural Net Architecture: `GPT` (1,2,3,4), `Llama` (`RoPE`, `RMSNorm`, `GQA`), `MoE`, ... 神经网络架构: `GPT` (1,2,3,4)，`Llama` (`RoPE`, `RMSNorm`, `GQA`)，`MoE`，…
++   Multimodal: `Images`, `Audio`, `Video`, `VQVAE`, `VQGAN`, `diffusion` 多模态: 图像，音频，视频，`VQVAE`, `VQGAN`，`diffusion`
+
+---

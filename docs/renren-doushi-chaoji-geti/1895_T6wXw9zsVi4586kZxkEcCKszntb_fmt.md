@@ -1,0 +1,242 @@
+
+# 使用Midjourney日拱一卒，功不唐捐
+
+> 来源：[https://xuqiwei1986.feishu.cn/docx/R0UBd9j0volAynxWphTc00Wrnhe](https://xuqiwei1986.feishu.cn/docx/R0UBd9j0volAynxWphTc00Wrnhe)
+
+## AI时代，生猛的学习
+
+为了方便大家查阅和学习，自己将“日拱一卒”学习和实践Mj绘画的内容使用飞书进行了总结，希望对你有启发，详细内容请移步各个飞书，希望对你有启发👇
+
+0.[使用Midjourney绘画｜常用聊天界面以及参数介绍](https://vkg4ozcps1.feishu.cn/docx/LjdXdXHnsowJYaxHO8schtgAnGb)
+
+[1](https://vkg4ozcps1.feishu.cn/docx/IDCNdfTRMouFS7xxxlpcuO4QnZh).《学习使用Midjourney绘画合集（持续更新）》：https://vkg4ozcps1.feishu.cn/docx/IDCNdfTRMouFS7xxxlpcuO4QnZh
+
+2.[拆解当下📕最🔥的水下人物头像prompt](https://vkg4ozcps1.feishu.cn/docx/FFQfdQSCooZglcxXsLscVUM2nKc?from=from_copylink)
+
+3.[使用Midjourney绘画教程｜如何在对话框中输入中文一键转化成英文prompt？](https://vkg4ozcps1.feishu.cn/docx/Sh1ddF7O7o7JUpxnmCjcAZ8rnLc?from=from_copylink)
+
+4.[使用Midjourney绘制机械风格的动物形象](https://vkg4ozcps1.feishu.cn/docx/KUlKd8lKCoHu3KxOQWwc0mbLnOe?from=from_copylink)
+
+5.[使用Midjourney绘画食物和美酒教程](https://vkg4ozcps1.feishu.cn/docx/CtYFdQwUaoEKLHx1CsJcV605nYf?from=from_copylink)
+
+6.[使用ZelinAI创建Mj绘画模型保姆级教程](https://vkg4ozcps1.feishu.cn/docx/Dc6tdpPnPoEFwJxfB7bcgMHenic?from=from_copylink)
+
+7.[使用Midjourney绘画汽车不是梦，总有一款适合你 ](https://vkg4ozcps1.feishu.cn/docx/PLVGdPDNyoPssAxciujcRVD6nMb?from=from_copylink)
+
+8.[使用Midjourney绘画草原](https://vkg4ozcps1.feishu.cn/docx/Vcl1dndN4oRedYxc2fycit6ZnLf?from=from_copylink)
+
+9.[【Midjourney 更新V 5.2版】新增缩小功能、缩短提示词的测试](https://vkg4ozcps1.feishu.cn/docx/N1VjdchjOoRLerxA3Wcct8tlnzg?from=from_copylink)
+
+10.[使用Mj“缩放”的新功能，制作一个拉伸镜头感的视频教程](https://vkg4ozcps1.feishu.cn/docx/WIokdi9X9oVaOrxAAxjc66gOnac)
+
+11.[使用Midjourney绘制风景壁纸教程](https://vkg4ozcps1.feishu.cn/docx/JLr3dZpHDo2cdbxGm85csX5Nn3e)
+
+12.[使用Midjourney绘画二次元头像合集](https://vkg4ozcps1.feishu.cn/docx/H88NdSGpfoiAopxoRFdcWAkJnNd)
+
+13.[Midjourney新功能：上下左右平移，惊艳绝伦！](https://vkg4ozcps1.feishu.cn/docx/YhkHd1JtioqgoUxyEzUcSEBQnCf)
+
+14.[使用Midjourney绘制巨大的拥抱以及巨物生物系列](https://vkg4ozcps1.feishu.cn/docx/BmZbdZY5soYE3xx7WV0cyBdqnCg)
+
+15.[使用Midjourney绘制手机壁纸](https://vkg4ozcps1.feishu.cn/docx/KKuwdhRYXorAM2xBrhocDn1anVe)
+
+16.[使用Midjourney绘制国风图片](https://vkg4ozcps1.feishu.cn/docx/FeqldymDLox3Uaxj8ducETgInpP)
+
+17.[使用Midjourne别忘了/describe功能](https://vkg4ozcps1.feishu.cn/docx/NJqtd90mSoGtlvxOUSVcjLj6nTE)
+
+18.[使用Midjourney致敬电影《长安三万里》，附上prompt](https://vkg4ozcps1.feishu.cn/docx/DK2Udj5uMoHCOqxAJ0xcKRBWnxf)
+
+19.[使用Midjourney绘制清凉一夏｜水果篇](https://vkg4ozcps1.feishu.cn/docx/LOCMdYxalonEwYx91IRc0AQcnPe)
+
+20.[使用Midjourney绘画教程｜如何绘制连贯的绘本画面？](https://vkg4ozcps1.feishu.cn/docx/WNKcd6ZBDowpKvxtBLZcuubAngf)
+
+21.[使用Midjourney绘制佛祖、菩萨法相](https://vkg4ozcps1.feishu.cn/docx/WS6OdN4NQojzgixi4SWcKgTOnMF)
+
+保存🛰️扫码加入《Midjourney魔法师养成记》专栏，持续更新，期待与你一起探索AI绘画
+
+![](img/a7fbf3f8b0e51193fa9ea67c7c32b6b2.png)
+
+如果你还了解我，可以得空看看我的自我介绍，期待与你一起探索交流Mj绘画～
+
+## 自我介绍
+
+大家好，我叫赵玉润。很高兴能在这里里面与你相遇，看了大家的自己介绍，各个都很厉害，都有自己独特的一面。下面我就自己“使用Midjourney日拱一卒，功不唐捐”为核心，跟你汇报一下作为AI小白我们也可以在AI时代有所为，希望对你有启发。
+
+### 【个人技能】
+
+1.写作能力，在“得到”APP上累积输出笔记4998条，被1785人关注。
+
+2.视频拍摄剪辑技能，运营个人视频号累积发布70条。
+
+3.运营个人👸号，累积粉丝1000➕
+
+### 【自我评价】
+
+1.自我迭代能力:在“得到 APP”学习天数 2202天，学分 905分。年平均阅读量在 30 本书左右，建立多元思维模型。
+
+2.良好的交流与表达能力:真诚的与人之间开展对话，有数次公开培训、演讲的经历。
+
+3.皮实、靠谱:保持一颗开放的大脑，勇于接受新鲜事物。凡事有交代、件件有着落、事事有回音。
+
+## 我与AI的关系
+
+1.自己工作离互联网八竿子打不着，也不是程序员，作为一个互联网行业的“边缘人”我该如何在AI时代航行？
+
+2.相信事物发展的底层逻辑是一样的，我们都想成为更好的自己。这个时代，给了自己从发生学的角度看着一个新生事物演变的全过程，借由此在学习、使用强大AI的过程中认识自己。AI能让自己更像「自己」。
+
+3.相信“日拱一卒，功不唐捐”，从每天坚持使用Mj绘画到后续拓展到出Mj绘画教程，取得了肉眼可见的进步，也获得了各位小伙伴的鼓励和支持，最开心的是看见自己也影响了小伙伴加入Mj绘画并实践出图了。
+
+## 使用Mj绘画机械风格的动物形象实践拆解
+
+昨天咱们航海的实战手册已经发布，相信有的小伙伴已经熬夜在汲取新的知识了。实战手册是必须要看的，编写的逻辑也是由浅入深，必须掌握基础的Midjourney用法和常见参数的含义。今天我会带领大家来一起探索如何使用Mj绘画出动物➕机械的组合。相信有一天你也会画出更加炫酷的，属于你自己的AI绘画。
+
+![](img/75619e1bfe391e96acf93724290148e5.png)
+
+### 绘画的灵感来源：
+
+首先灵感来源：周末北京大兴野生动物园，采风拍了好多照片和视频，同时，看了最近热播电影《变形金刚：超能勇士崛起》，对电影里面的机械风格的动物形象印象深刻。手里有Mj这把称手的表达工具，三者放在一起，我们试试能否使用强大的Mj绘画出机械感的动物来。Let go!
+
+#### 1.机械风格的鹰
+
+![](img/aa0003568581377595e7eaebe74add4b.png)
+
+`a robotic eagle,intricate Mechanical,Black gold style,hyper-realistic detail,Frontal portrait,by Ohara Koson  --ar 4:3`
+
+![](img/6fd4c83c8cf1bae03a8163719d741a0b.png)
+
+![](img/7f459946caee20ee4b2c14ca6b5ecce1.png)
+
+`a robotic eagle,intricate Mechanical,Black gold style,hyper-realistic detail,Frontal portrait,by Ohara Koson  --ar 1：1`
+
+嚯，都挺帅的，机械感爆满！现在画出来的都是鹰的半身照，电影里面站立的机械鹰更帅，我们试试能不能绘画出“鹰”站立的姿态。加`full body`这个关键词试试
+
+![](img/e3eb5dad40abbe902d835a3b18dfa696.png)
+
+嗯……只有U4看着快要站起来了……但是没有爪爪。我们再想想，再加一个“双脚站立”at one's feet(注：Mj绘画时随机性强，有时候我们需要人物展现出脚部部分，我们可以在prompt中加类似“穿着鞋子”这样的关键词)
+
+![](img/457d49531d52135a1dc19f6b583cdd22.png)
+
+雄鹰变成小鸡的感觉了。上面这些让“鹰”展现站立的姿态的思路不对，换个角度想想。有了，雄鹰振翅高飞！振翅啊，转化翻译成prompt怎么说？（注：prompt尽量使用英文的词语和短语），展开翅膀`Stand with wings spread`,我们看看出图效果，见下：
+
+![](img/295822a8942208015ce41c050ed9d0b4.png)
+
+有了有了，是想象中的画面了。“鹰”站起来了！
+
+`a robotic eagle,Stand with wings spread,intricate Mechanical,Black gold style,hyper-realistic detail,Frontal portrait,by Ohara Koson --ar 4:3 --q 2 --s 250`
+
+`a robotic eagle,Stand with wings spread,full body,intricate Mechanical,Black gold style,hyper-realistic detail,Frontal portrait,by Ohara Koson --ar 4:3 --q 2 --s 250 --v 5.1`
+
+![](img/fc33baa9e2472142f481a79c1e656c73.png)
+
+`a robotic eagle,Stand with wings spread,full body,intricate Mechanical,Black gold style,hyper-realistic detail,Frontal portrait,by Ohara Koson --ar 4:3 --s 250 --v 5.2`
+
+![](img/c136f43027355438ff6e1f5b0f847faf.png)
+
+使用MJ的v 5.2版的新功能：可以直接使用命令缩放1.5或2倍，也可以直接变成方形图片。我们选择 `Zoom Out2x`，来看看效果，见下
+
+![](img/b46053ef0384f4e80738f516ef50f21b.png)
+
+![](img/deaf7ec519beb703d90a4604d055d786.png)
+
+Cool，效果炸裂！想象力拉满，再添双翼。
+
+`a robotic eagle,Stand with wings spread,full body,intricate Mechanical,Black gold style,hyper-realistic detail,Frontal portrait,by Ohara Koson --ar 4:3 --s 250`
+
+![](img/9104e429746d54aaf42470115353113b.png)
+
+`a robotic eagle,intricate Mechanical,graffiti-inspired animals, richly colored skies,hyper-realistic detail,Frontal portrait,by Ohara Koson --ar 4:3 --q 2 --s 250 --v 5.1`
+
+![](img/68dd20492e8fba334aac7dcbaa3f9988.png)
+
+`a robotic eagle,intricate Mechanical,graffiti-inspired animals, richly colored skies,hyper-realistic detail,Frontal portrait,by Ohara Koson --ar 4:3 --s 250 --v 5.2`
+
+小结：同样的prompt下，v 5.2版本对关键prompt的理解更深，出图的效果更具机械感。这里我们也看出来，Mj没有高低版本的好好坏之分，从v1到v5.2以及niji模型出图的效果是不一样的，我们需要选择适合自己出图效果的模型。
+
+#### 2.机械风格的猫头鹰
+
+![](img/eedecd1ed5d4a9bb51a105499ff3d4bb.png)
+
+`a robotic owl,intricate Mechanical,Black gold style,hyper-realistic detail, by Ohara Koson --ar 4:3 --q 2 --s 250`
+
+上面这些生成的效果不错，很有质感，“黑金风格”起范儿～我还想要色彩更鲜艳一点的可以吗？来，我们试试，增加点prompt，增加描述色彩的颜色👇
+
+![](img/d62c9973906631c2947ed1fe78e4afa4.png)
+
+`a robotic owl,intricate Mechanical,graffiti-inspired animals, richly colored skies,hyper-realistic detail, by Ohara Koson --ar 4:3 --q 2 --s 250`
+
+译文：机器猫头鹰，复杂的机械，涂鸦灵感的动物，色彩丰富的天空，超现实的细节，作者 Ohara Koson —— ar 4:3—— q 2—— s 250
+
+有同学就问了你咋想到使用`graffiti-inspired animals, richly colored skies`这个prompt的？不瞒你说就是多实践，多画，多积累，记录自己使用Mj绘画的prompt以及画面，尝试着去理解prompt的含义，理解了才会记住，记住了才会是自己的。
+
+> 细[使用Midjourney绘画绚丽动物形象](https://vkg4ozcps1.feishu.cn/docx/Oba3dP4Ouot0xMxBTg3cirqinme)的同学可能还记得我在【Midjourney绘画分享23】主题：奇幻森林（万物有灵且美）分享过一系列的动物形象👇传送门：
+
+![](img/9da4d1bc463580bdd2f3c4d74923caad.png)
+
+> prompt：`a owl is in the tropical rainforest,full body, in the style of psychedelic rock, realistic color palette, graffiti-inspired animals, richly colored skies, poster art, detailed character design --ar 155:103`
+
+#### 3.机械风格的其它动物
+
+![](img/79900941ffe226d24d47cb4d87b31c8a.png)
+
+`a robotic cheetah,intricate Mechanical,Black gold style,hyper-realistic detail, by Ohara Koson --ar 4:3 --q 2 --s 250`
+
+![](img/bbb24ee12e1f2ff35cb519652a0e2f3b.png)
+
+`a robotic cheetah,intricate Mechanical,full body,Black gold style,hyper-realistic detail, by Ohara Koson --ar 4:3`
+
+![](img/fcd082872c8cf61129ea9f9b1a953e98.png)
+
+`a robotic elephant,intricate Mechanical,Black gold style,hyper-realistic detail, by Ohara Koson --ar 4:3 --q 2 --s 250`
+
+### prompt技术总结：
+
+`a robotic elephant,intricate Mechanical,Black gold style,hyper-realistic detail, by Ohara Koson --ar 4:3 --q 2 --s 250`
+
+elephant,亮红的部分是主体，通过变换动物主体，生成无限图片。
+
+`intricate Mechanical`错综复杂的机械
+
+`Black gold style`黑金风格（用来提供图片的高级感和质感）
+
+`by Ohara Koson`（选用特定的艺术家风格，提升mj绘画的美感）
+
+
+
+![](img/98b6ba82c6c0d3d41ef95bcb350d00fb.png)
+
+# 动物园里常见的陆地动物中英文双语名称
+
+1. 雄狮 - Lion
+2. 熊 - Bear
+3. 大象 - Elephant
+4. 长颈鹿 - Giraffe
+5. 犀牛 - Rhinoceros
+6. 袋鼠 - Kangaroo
+7. 斑马 - Zebra
+8. 猴子 - Monkey
+9. 老虎 - Tiger
+10. 金钱豹 - Leopard
+11. 狼 - Wolf
+12. 熊猫 - Panda
+13. 犬科动物，如狮子、豹子、猎豹等 - Canine animals such as lions, leopards, cheetahs, etc.
+14. 猫科动物，如老虎、豹子、狮子等 - Feline animals such as tigers, leopards, lions, etc.
+15. 啮齿类动物，如松鼠、兔子等 - Rodents such as squirrels, rabbits, etc.
+
+## 志合者，不以山海为远
+
+现在的我可以提供Midjourney绘画的教程和分享。我哪里来的底气？来自「要做一件好东西，只需去做。要做出伟大的东西，只需反复去做，反复去做，反复去做。制作高级事物的秘诀在于重复制作。」
+
+如果你还想学习实践更多关于Midjourney的内容，欢迎加入《Midjourney魔法师养成记》专栏解锁更多的Mj实战攻略。助力你加速成为Mj魔法师，我看行！
+
+AI时代已来，只是分布不均。在AI领域学习的这两个月，极大的丰富了自己的阅历，AI发展太快了，边学边实践，是成长的不二法门。期待与各位星友一起持续的探索，作为小白的我们也别怕，日拱一卒，功不唐捐，共勉。
+
+谢谢大家的阅读和聆听。欢迎链接我，一起探索Mj绘画，释放想象力～
+
+![](img/ce25d7c188dffc9c9c0b973d3f673741.png)
+
+专栏持续更新ing
+
+我们专栏里见～
+
+![](img/1d6bfce4e0e61df29b2bedc89e98448c.png)
+
+日拱一卒，功不唐捐

@@ -1,0 +1,60 @@
+
+1、打开[官网](https://www.songr.ai/)，点击 Try SongR App now
+
+![](img/a8b955931274d4190831a7e238458bae.png)
+
+2、鼠标挪到 Pop 上，点击 I have my own lyrics
+
+3、把歌词放到 songR 对话框中，因超出了**字符限制，我**把格式清除了 ... 点击 Render
+
+4、等待一小会儿，然后我们下载下音频
+
+![](img/974c29e1065e91c91d4df658df14a05b.png)
+
+5、稍微有点奇怪不过听起来还行！
+
+![](img/e681d0d4eae72d3897d7bbf358b78c68.png)
+
+[SongR (1).mp3](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RdffbgjwvoB7ZdxVR4jcMhy5nOb)
+
+6、孙燕姿版（虽然我不知道我为什么要转换！）
+
+![](img/d8967a382f09dc56e6c226649fed1d00.png)
+
+[孙燕姿最新单曲.wav](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ed0bbmuazo9sj1x315acFaFJnYf)
+
+## 四、怎么训练自己喜欢明星的模仿包
+
+大家可以自行查看这篇文章，也是一个小伙伴发表的云端训练方法
+
+[AI语音云端训练推理教程](https://uestc.feishu.cn/docx/W2bqdffOkoWokUx27HMcC60un9b?from=from_copylink)
+
+实操可以查看这个链接 [视频教程](https://youtu.be/_cofqkSS00A?si=pjt-gOM1JMikjZfr)（对电脑配置有要求）
+
+## 五、Suno.ai 试用
+
+一）进入 Suno 频道，随便选择一个测试频道
+
+![](img/390472ef04f65bbb3cbaa02c26cad886.png)
+
+二）输入`/chirp`回车 在表格中输入我们之前的歌曲
+
+![](img/c59638eb43a740f44bb14c16047a1b94.png)
+
+三）等待一会儿，一次生成了两个视频
+
+[chirp (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CpbVb6ZTLoJr3Gxxu9GcbI8vnhf)
+
+![](img/afb4070f59234693014c2b5e84a7fbd9.png)
+
+[chirp.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DuhGblIjFouCeWxGeFcctedkncb)
+
+唔，效果大家自己评价吧 ...
+
+## 六、总结
+
+唔，其实在本地跑了一下 [`so-vits-svc`](https://github.com/svc-develop-team/so-vits-svc) 但是卡死在设备上了！跑之前忘了，但都准备了一半了，也没有心里再弄云端了...后面就没再弄，直接引用小伙伴的文章了。关于文字生成歌曲，找了一圈没找到能够唱中文歌的，这两个也只能唱英文歌，效果也很一般吧。大家有好的软件可以推荐分享下！
+
+好啦，写到这里我们今天的内容也结束啦，感谢大家的观看，也希望我的内容能够让大家喜欢，和有所收获。感兴趣的小伙伴可以点个关注跟随我一起学习。
+
+嘿，下次见，我是景淮，一个加拿大的程序员，沉迷 AI 不能自拔中。

@@ -1,0 +1,231 @@
+
+# L2G3_1 LMDeploy 进阶文档
+
+> 来源：[https://aicarrier.feishu.cn/docx/QyeDd37yxoJnIjxeQuSccxrdnrc](https://aicarrier.feishu.cn/docx/QyeDd37yxoJnIjxeQuSccxrdnrc)
+
+> 文档尚处于草稿阶段，完善中
+
+LMDeploy 是一个高效且友好的 LLMs 模型部署工具箱，功能涵盖了量化、推理和服务
+
+## 安装
+
+### `NPROC_PER_NODE`
+
+#### `pip` 安装
+
+`conda` 简单使用
+
+```bash
+conda create -n lmdeploy python=3.10
+conda activate lmdeploy
+pip install lmdeploy
+```
+
+## 快速上手
+
+### 本地推理
+
+```python
+import lmdeploy
+from lmdeploy import GenerationConfig
+
+pipe = lmdeploy.pipeline("/root/share/new_models/InternVL3/InternVL3-1B")
+response = pipe(prompts=["Hi, pls intro yourself", "Shanghai is"],
+                gen_config=GenerationConfig(max_new_tokens=1024,
+                                            top_p=0.8,
+                                            top_k=40,
+                                            temperature=0.6))
+print(response)
+```
+
+![](img/e4da1057fc0ba5182907156daed745b8.png)
+
+### 指定推理引擎
+
+> 在构造 `pipeline` 时，如果没有指定使用 `TurbomindEngineConfig` 引擎或 `PytorchEngineConfig` 引擎进行推理，默认优先使用 `TurbomindEngineConfig` 引擎，实际上，LMDeploy 将根据提供的检查点自动确定使用那种引擎。
+
+#### `TurbomindEngineConfig` 推理引擎
+
+```python
+from lmdeploy import pipeline, TurbomindEngineConfig
+from lmdeploy import GenerationConfig
+
+pipe = pipeline("/root/share/new_models/InternVL3/InternVL3-1B",
+                backend_config=TurbomindEngineConfig(
+                    max_batch_size=32,
+                    enable_prefix_caching=True,
+                    cache_max_entry_count=0.8,
+                    session_len=8192,
+                ))
+response = pipe(prompts=["Hi, pls intro yourself", "Shanghai is"],
+                gen_config=GenerationConfig(max_new_tokens=1024,
+                                            top_p=0.8,
+                                            top_k=40,
+                                            temperature=0.6))
+print(response)
+```
+
+#### `PytorchEngineConfig` 推理引擎
+
+```python
+from lmdeploy import pipeline, PytorchEngineConfig
+from lmdeploy import GenerationConfig
+
+pipe = pipeline("/root/share/new_models/InternVL3/InternVL3-1B",
+                backend_config=PytorchEngineConfig(
+                    max_batch_size=32,
+                    enable_prefix_caching=True,
+                    cache_max_entry_count=0.8,
+                    session_len=8192,
+                ))
+
+response = pipe(prompts=["Hi, pls intro yourself", "Shanghai is"],
+                gen_config=GenerationConfig(max_new_tokens=1024,
+                                            top_p=0.8,
+                                            top_k=40,
+                                            temperature=0.6))
+print(response)
+```
+
+![](img/88e6315e2e7769b072688d503d1909dc.png)
+
+### VLM 推理 (Visual Language Models)
+
+`image = load_image('https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg')`
+
+```python
+from lmdeploy import pipeline, VisionConfig
+from lmdeploy.vl import load_image
+
+pipe = pipeline("/root/share/new_models/InternVL3/InternVL3-1B",
+                vision_config=VisionConfig(
+                    max_batch_size=8
+                ))
+response = pipe(('describe this image', image))
+print(response)
+```
+
+## 大语言模型(LLMs) 部署
+
+### 离线部署
+
+```python
+import lmdeploy
+from lmdeploy import GenerationConfig
+pipe = lmdeploy.pipeline("/root/share/new_models/internlm3/internlm3-8b-instruct")
+response = pipe(prompts=["Hi, pls intro yourself", "Shanghai is"],
+                gen_config=GenerationConfig(max_new_tokens=1024,
+                                            top_p=0.8,
+                                            top_k=40,
+                                            temperature=0.6))
+print(response)
+```
+
+![](img/06d42e110fb21d3af963cf16b950d0ac.png)
+
+> 注意：
+
++ `LMDeploy` 的 `KV cache` 策略对显存提出了较高的要求；`LMDeploy` 在服务启动时就会预先一次性分配 `KV cache` 空间，如果加载模型出现 `OOM`，可能需要考虑降低 `cache_max_entry_count` 的值，表示加载模型权重后 `K/V` 缓存占用的空闲 GPU 内存的比例。
+
++ `v0.2.0 <= lmdeploy <= v0.2.1`，默认比例为 `0.5`，表示 `GPU` 总显存的 `50%` 被分配给 `k/v cache`。`lmdeploy > v0.2.1`，分配策略改为从空闲显存中按比例为 `k/v cache` 开辟空间。默认比例值调整为 `0.8`。
+
+### 设置多卡并行
+
+> `TurbomindEngineConfig` 和 `PytorchEngineConfig` 的参数 `tp` 是设置 GPU 并行的，解释如下：
+
+> `tp` (int): the number of GPU cards used in tensor parallelism, default to 1
+
+```python
+from lmdeploy import pipeline, TurbomindEngineConfig
+from lmdeploy import pipeline, PytorchEngineConfig
+
+### TurbomindEngineConfig 推理引擎
+pipe = pipeline("/root/share/new_models/internlm3/internlm3-8b-instruct",
+                backend_config=TurbomindEngineConfig(
+                    tp=2,
+                    max_batch_size=32,
+                    enable_prefix_caching=True,
+                    cache_max_entry_count=0.8,
+                    session_len=8192,
+                ))
+### PytorchEngineConfig 推理引擎
+
+pipe = pipeline("/root/share/new_models/internlm3/internlm3-8b-instruct",
+                backend_config=PytorchEngineConfig(
+                    tp=2,
+                    max_batch_size=32,
+                    enable_prefix_caching=True,
+                    cache_max_entry_count=0.8,
+                    session_len=8192,
+                ))
+```
+
+### 生成核心参数介绍
+
+> 常见解码策略：
+
++ 贪心解码（Greedy Decoding）：直接选择概率最高的单词。这种方法简单高效，但是可能会导致生成的文本过于单调和重复。
+
++ 随机采样（Random Sampling）：按照概率分布随机选择一个单词。这种方法可以增加生成的多样性，但是可能会导致生成的文本不连贯和无意义。
+
++ 集束搜索（Beam Search）：维护一个大小为 `k` 的候选序列集合，每一步从每个候选序列的概率分布中选择概率最高的 `k` 个单词，然后保留总概率最高的 `k` 个候选序列。这种方法可以平衡生成的质量和多样性，但是可能会导致生成的文本过于保守和不自然；由于需要维护 `k` 个序列，开销比较大。
+
+>
+
+> 以上方法都有各自的问题，而 `top-k` 采样和 `top-p` 采样是介于贪心解码和随机采样之间的方法，也是目前大模型解码策略中常用的方法。
+
+> `Top-k`: 在每一步，只从概率最高的 `k` 个单词中进行随机采样，而不考虑其他低概率的单词。
+
+>
+
+> 缺点：
+
+1. 结果对 `K` 参数比较敏感，生成的结果更关注高频词，多样性丢失，可能会导致生成的回复过于简单，趋同性高；
+
+1. 回复可能缺乏个性，更偏向“安全”回复
+
+1. 每一步只关注当前概率高的词，可能会导致生成的文本不符合常识或逻辑；
+
+```python
+import torch
+from labml_nn.sampling import Sampler
+
+# Top-k Sampler
+class TopKSampler(Sampler):
+    # k is the number of tokens to pick
+    # sampler is the sampler to use for the top-k tokens
+    # sampler can be any sampler that takes a logits tensor as input and returns a token tensor; e.g. `TemperatureSampler`.
+    def __init__(self, k: int, sampler: Sampler):
+        self.k = k
+        self.sampler = sampler
+
+    # Sample from logits
+    def __call__(self, logits: torch.Tensor):
+        # New logits filled with −∞; i.e. zero probability
+        zeros = logits.new_ones(logits.shape) * float('-inf')
+        # Pick the largest k logits and their indices
+        values, indices = torch.topk(logits, self.k, dim=-1)
+        # Set the values of the top-k selected indices to actual logits.
+        # Logits of other tokens remain −∞
+        zeros.scatter_(-1, indices, values)
+        # Sample from the top-k logits with the specified sampler.
+        return self.sampler(zeros)
+```
+
+![](img/97e6f354f369a7968c6460f8bdfccc51.png)
+
+> `Top-p`: 在每一步，只从累积概率超过某个阈值 `p` 的最小单词集合中进行随机采样，而不考虑其它低概率的单词。这种方法也被称为核采样（nucleus sampling），因为它只关注概率分布的核心部分，而忽略了尾部部分。
+
+>
+
+> 缺点：
+
+1. 参数敏感性，`p` 值调优比较难
+
+1. `Top-p` 仅依赖概率分布筛选候选词，但缺乏对已生成内容的显式约束（如重复惩罚机制），可能导致重复片段，倾向于重复高频词
+
+1. 生成结果偏向“安全”选项，牺牲个性。
+
+>
+
+![](img/23b4fded99749fd78a9ec5260a35e1a0.png)

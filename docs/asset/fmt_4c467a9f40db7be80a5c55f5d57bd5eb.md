@@ -1,0 +1,224 @@
+
+```
+from lmdeploy import pipeline, VisionConfig
+from lmdeploy.vl import load_image
+from lmdeploy.vl.constants import IMAGE_TOKEN
+
+pipe = pipeline('/root/share/new_models/InternVL3/InternVL3-1B',
+                vision_config=VisionConfig(
+                    max_batch_size=8
+                ))
+response = pipe((f'describe this image{IMAGE_TOKEN}', image))
+print(response)
+```
+
+`IMAGE_TOKEN`是一个特殊的token，在文本序列中插入 `IMAGE_TOKEN` 可以明确标注图像的位置，帮助模型区分文本和图像的边界。
+
+## 对话模板
+
+对话模板（Conversation Template）是一种预设的输入输出格式规则，用于规范用户与模型的交互方式。它的核心作用是通过结构化对话内容，提升模型的响应质量、可控性和适用性。
+
+推理时，LMDeploy 会根据模型路径匹配内置的对话模板，并把对话模板应用到输入的提示词上。如果用户使用的是本地模型，并且模型文件夹名字与官方模型不一致时，需要手动指定对话模版。
+
+### 自定义对话模板
+
+```
+from lmdeploy.model import MODELS, BaseChatTemplate
+
+
+@MODELS.register_module(name='customized_model')
+class CustomizedModel(BaseChatTemplate):
+    """A customized chat template."""
+
+    def __init__(self,
+                 system='<|im_start|>system\n',
+                 meta_instruction='You are a robot developed by LMDeploy.',
+                 user='<|im_start|>user\n',
+                 assistant='<|im_start|>assistant\n',
+                 eosys='<|im_end|>\n',
+                 eoh='<|im_end|>\n',
+                 eoa='<|im_end|>',
+                 separator='\n',
+                 stop_words=['<|im_end|>', '<|action_end|>']):
+        super().__init__(system=system,
+                         meta_instruction=meta_instruction,
+                         eosys=eosys,
+                         user=user,
+                         eoh=eoh,
+                         assistant=assistant,
+                         eoa=eoa,
+                         separator=separator,
+                         stop_words=stop_words)
+```
+
+```
+from lmdeploy import ChatTemplateConfig, pipeline
+
+messages = [{'role': 'user', 'content': 'who are you?'}]
+pipe = pipeline('/root/share/new_models/InternVL3/InternVL3-1B',
+                chat_template_config=ChatTemplateConfig('customized_model'))
+for response in pipe.stream_infer(messages):
+    print(response.text, end='')
+```
+
+## 视觉模型参数
+
+可通过设置 `VisionConfig` 修改视觉模型默认参数
+
+`image = load_image('https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/tests/data/tiger.jpeg')`
+
+```
+from lmdeploy import pipeline, VisionConfig
+from lmdeploy.vl import load_image
+vision_config=VisionConfig(max_batch_size=16)
+pipe = pipeline('/root/share/new_models/InternVL3/InternVL3-1B', vision_config=vision_config)
+response = pipe(('describe this image', image))
+print(response)
+```
+
+### VisionConfig 源码
+
+```
+@dataclass
+class VisionConfig:
+    """Vison model configs.
+
+    Args:
+        max_batch_size (int): the max image size passed to the model, since
+            some models will use image patch, the actual running batch could
+            be larger than this value.
+        thread_safe (bool): Specifies whether the engine instance is
+            thread-safe. Please set it to True when using the pipeline
+            in a multi-threaded environment.
+    """
+    max_batch_size: int = 1
+    thread_safe: bool = False
+```
+
+## 多图推理
+
+```
+'https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg',
+
+'https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/det.jpg';
+```
+
+```
+from lmdeploy import pipeline, TurbomindEngineConfig
+from lmdeploy.vl import load_image
+
+pipe = pipeline('/root/share/new_models/InternVL3/InternVL3-1B',
+                backend_config=TurbomindEngineConfig(session_len=8192))
+
+image_urls=[
+]
+
+images = [load_image(img_url) for img_url in image_urls]
+response = pipe(('describe the two images', images))
+print(response)
+```
+
+## 多轮对话
+
+使用 `pipeline` 进行多轮对话有两种方式，一种是按照 openai 的格式来构造 `messages`，另外一种是使用 `pipeline.chat` 接口。
+
+`image = load_image('https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg')`
+
+```
+from lmdeploy import pipeline, TurbomindEngineConfig, GenerationConfig
+from lmdeploy.vl import load_image
+
+pipe = pipeline('/root/share/new_models/InternVL3/InternVL3-1B',  # 注意加了 `/`
+                backend_config=TurbomindEngineConfig(session_len=8192))
+gen_config = GenerationConfig(top_k=40, top_p=0.8, temperature=0.6)
+
+# 第一句图文对话
+sess = pipe.chat(('describe this image', image), gen_config=gen_config)
+print(sess.response.text)
+
+# 第二轮多轮对话
+sess = pipe.chat('What is the woman doing?', session=sess, gen_config=gen_config)
+print(sess.response.text)
+```
+
+视觉语言模型的部署和文本几乎相似，其余请参考文本模型的部署
+
+## 模型量化
+
+### 量化模型
+
+LMDeploy 量化模块目前仅支持 AWQ 量化算法。
+
+量化是指将高精度数字转换为低精度数字。低精度实体可以存储在磁盘上很小的空间内，从而减少内存需求。
+
+![](img/57cc3c002eb619fede0be4ee6c53f8b0.png)
+
+```
+conda activate lmdeploy
+pip uninstall -y datasets && pip install --no-cache-dir "datasets==2.19.2" 
+```
+
+量化`internlm2-chat-7b`的命令：
+
+```
+export HF_MODEL=/root/share/model_repos/internlm2-chat-7b
+export WORK_DIR=/root/internlm2-chat-7b-4bit
+
+lmdeploy lite auto_awq $HF_MODEL   --calib-dataset 'ptb'   --calib-samples 128   --calib-seqlen 2048   --w-bits 4   --w-group-size 128   --batch-size 1   --work-dir $WORK_DIR
+```
+
+量化`InternVL3-1B`的命令：
+
+```
+lmdeploy lite auto_awq /root/share/new_models/InternVL3/InternVL3-1B \
+  --work-dir /root/InternVL3-1B-4bit
+```
+
+### W8A8量化
+
+LMDeploy 提供了使用 8-bit 整数(INT8)和浮点数(FP8)对神经网络模型进行量化和推理的功能。
+
+```
+pip install lmdeploy[all]
+```
+
+`lmdeploy` 提供了命令行工具 `lmdeploy lite smooth_quant` 实现量化功能。并且其中命令行参数 `--quant-dtype` 可以用来控制是进行8-bit整数还是浮点数类型的量化。更多命令行工具使用方式，请执行 `lmdeploy lite smooth_quant --help` 查看。
+
+```
+export HF_MODEL=/root/share/model_repos/internlm2-chat-7b
+export WORK_DIR=/root/internlm2-chat-7b-4bit
+
+lmdeploy lite smooth_quant \
+  $HF_MODEL \
+  --work-dir $WORK_DIR \
+  --quant-dtype int8
+```
+
+```
+lmdeploy lite smooth_quant $HF_MODEL --work-dir $WORK_DIR --quant-dtype fp8
+```
+
+### Key-Value(KV) Cache 量化
+
+自 `v0.4.0` 起，LMDeploy 支持在线 kv cache int4/int8 量化，量化方式为 per-head per-token 的非对称量化。
+
+通过 LMDeploy 应用 kv 量化非常简单，只需要设定 `quant_policy` 参数即可。
+
+```
+from lmdeploy import pipeline, TurbomindEngineConfig
+engine_config = TurbomindEngineConfig(quant_policy=8)
+pipe = pipeline("/root/share/model_repos/internlm2-chat-7b", 
+            backend_config=engine_config)
+response = pipe(["Hi, pls intro yourself", "Shanghai is"])
+print(response)
+```
+
+`LMDeploy` 规定 `qant_policy=4` 表示 kv int4 量化
+
+`quant_policy=8` 表示 kv int8 量化。
+
+## 闯关任务
+
+复现 InternVL 和 InternLM 的部署和量化提交为在线飞书文档。
+
+提交地址：`https://aicarrier.feishu.cn/share/base/form/shrcnkSJ97ykqRSz4fgyCJbvCsb`

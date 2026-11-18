@@ -1,0 +1,78 @@
+
+# 🔥Stable diffusion进阶
+
+> 来源：[https://xuqiwei1986.feishu.cn/docx/TqICdbJeSo3O3BxZWxPcV0Kknke](https://xuqiwei1986.feishu.cn/docx/TqICdbJeSo3O3BxZWxPcV0Kknke)
+
+## 目录
+
+| 日期 | 教程 |
+| --- | --- |
+| 2023-10-21 | [2023-10-21DALL-E 3 vs MJ 5.2 vs SDXL：谁更胜一筹？](https://xuqiwei1986.feishu.cn/wiki/SZhbw3a0XiC4YTkTBVBcTAemn3h) |
+| 2023-10-09 | [2023-10-09AIGC 艺术创作项目阶段性复盘](https://xuqiwei1986.feishu.cn/wiki/Gi3rwYlq5iclwUkJCvNc3J7cntb) |
+| 2023-09-29 | 🚀Stable diffusion终极教程 |
+| 2023-09-27 | [2023-09-27【Stable Diffusion】角色设计的福音！绘制一致性多角度头像](https://xuqiwei1986.feishu.cn/wiki/NQK4wFB2ZisLV7kPm4EcGqEyncf) |
+| 2023-09-26 | [三年AI图像工程师跟你分享，无限贴近真人的调教方法，助力AI变现](https://xuqiwei1986.feishu.cn/wiki/NP9NwbfAMiuACQk0vgMc0THNnoe) |
+| 2023-09-23 | [8000字大实话复盘赛博项目的爱与恨](https://xuqiwei1986.feishu.cn/wiki/Z2bPwQif6iJfKxku7pMcsGjXnYH) |
+| 2023-09-21 | [2023-09-21MJ全自动+SD基础参数与各种批量操作详解](https://xuqiwei1986.feishu.cn/wiki/JdeowrP2yitdh6kdvrAcDaqynzd) |
+| 2023-09-19 | [2023-09-19低显存零基础也能玩SDXL？Fooocus入坑指南第一期](https://xuqiwei1986.feishu.cn/wiki/YSjTwT83bitCUhkc4XPcX3F9nGb) |
+| 2023-09-18 | [2023-09-18Openflow 一键极速绘图，赋能行业工作流](https://xuqiwei1986.feishu.cn/wiki/ZYDJwpkukiZunkknQqGclTy7nph) |
+| 2023-09-18 | [2023-09-18深度解析！如何用Stable Diffusion实现模特精准换装？-今日头条](https://xuqiwei1986.feishu.cn/wiki/HUh0wg3JaiXEvEkRVVBcqNOMnig) |
+| 2023-09-17 | [2023-09-17一文详细介绍如何使用 ComfyUI 来跑 SD 图](https://xuqiwei1986.feishu.cn/wiki/S0QDwNtwKiJrW7kf2jOcg44tned) |
+| 2023-09-17 | [AI摄影技术应用，4 张图赚了 4 位数（不让说商业秘密）](https://xuqiwei1986.feishu.cn/wiki/LxhgwERTUigWUDkBQVAcjKfZnIc) |
+| 2023-09-15 | [2023-09-15 Midjourney 的对手？使用 Ideogram 在 AI 绘图中无缝嵌入文字](https://xuqiwei1986.feishu.cn/wiki/J213w4IdQim1AYkYVgecqTqwn0g) |
+| 2023-09-13 | [《AI建筑设计教程！15个万能模板，三个步骤让你成为设计师！》](https://xuqiwei1986.feishu.cn/wiki/WSPDwOgLXiGdvkkNNBbcWNwfnab) |
+| 2023-09-13 | [2023-09-13万字解析妙鸭相机—FaceChain 的技术原理及AI产品运营 副本](https://xuqiwei1986.feishu.cn/wiki/NPXGwVJU5iHe4SkCJKUcs5DonNt) |
+| 2023-09-11 | [2023-09-11通俗易懂！十分钟搞懂 Stable Diffusion 的基础概念](https://xuqiwei1986.feishu.cn/wiki/CurXwq6E7imZjWkWkuocaVIpndb) |
+| 2023-09-07 | [2023-09-07超形象！0代码！读懂 Stable Diffusion 生图的核心原理](https://xuqiwei1986.feishu.cn/wiki/Mc9Sw1vm4iViOgky9cDcmTsonth) |
+| 2023-09-05 | [2023-09-05用Stable Difussion XL生成十二生肖海报图](https://xuqiwei1986.feishu.cn/wiki/FtxdwKwPGiwEHekVDnncY4Mgn2F) |
+| 2023-09-06 | [AI 摄影另类的商业模式，你一定想不到！](https://xuqiwei1986.feishu.cn/wiki/Xy3ow7OAdiQa5wkWPKjcjOvEn2g) |
+| 2023-09-03 | [2023-09-03在线网页AI换脸 操作简单 速度快 效果惊艳](https://xuqiwei1986.feishu.cn/wiki/Sj2swtPbNinPd7kZmFtctqEBn5d) |
+| 2023-08-30 | [Stable Diffusion采样器：超详细入门指南](https://xuqiwei1986.feishu.cn/wiki/KgjYwUuQ5iJzcKkjPT0cq5OQn5e) |
+| 2023-08-25 | [《流量密码！AI幻术终极教程，3步做出百万爆款视频！》](https://xuqiwei1986.feishu.cn/wiki/AZCzwR2yLi6u0WkraWmcPKjtnjb) |
+| 2023-08-24 | [「换脸教程」写真自由！终于实现用lora换脸啦～MJ、SD以及lora的换脸教程整合版](https://xuqiwei1986.feishu.cn/wiki/CbKHwoQoli9Qc4kSyyXcPW7Kn9d) |
+| 2023-08-24 | [2023-08-24"妙鸭相机"开源版facechain本地部署详细教程（windows系统）](https://xuqiwei1986.feishu.cn/wiki/GyTYww9iliqoZVkUs2gc4eKknQh) |
+| 2023-08-22 | [2023-08-22Stable Diffusion一周年：这份扩散模型编年简史值得拥有](https://xuqiwei1986.feishu.cn/wiki/SAXiwIrAAiyf0Gk1iJ1c38SVnuc) |
+| 2023-08-22 | [2023-08-21简单三步！教你用SD制作隐藏定位点的艺术二维码！ 副本](https://xuqiwei1986.feishu.cn/wiki/ZeL7wGiUAiGSWKkiGqpcaRB5njf) |
+| 2023-08-20 | [2023-08-20爆火「视频版ControlNet」开源了！靠提示词精准换画风，全华人团队出品](https://xuqiwei1986.feishu.cn/wiki/E4vJw4P3Yiwev2k0tndc6Rg5nYe) |
+| 2023-08-17 | [2023-08-17-3张照片打造专属形象，开源项目FaceChain让每个人AIGC出个人写真-今日头条](https://xuqiwei1986.feishu.cn/wiki/OEG6wnuLriN3rNkEpOnc29jonrh) |
+| 2023-08-12 | [2023-08-12电商模特1元购，人图背景随便换！国产AI工具降本99%-今日头条](https://xuqiwei1986.feishu.cn/wiki/V6YcwwyPNiocdAkGdhWcON3inyf) |
+| 2023-08-12 | [2023-08-12从9块9到1149，谁在为AIGC买单？-今日头条](https://xuqiwei1986.feishu.cn/wiki/XTH7w4VS0iWjxNk2olscl4Jkn1b) |
+| 2023-08-10 | [2023-08-10AI打印机](https://xuqiwei1986.feishu.cn/wiki/XfjbwOyYOiRmrHka7TQcuS5lngo) |
+| 2023-08-04 | [「换脸教程」写真自由！终于实现用lora换脸啦～MJ、SD以及lora的换脸教程整合版](https://xuqiwei1986.feishu.cn/wiki/L0qwwtzO1iE4aBkwRoJc3dtEncb) |
+| 2023-08-04 | [2023-08-04新手必看！带你认识SDXL](https://xuqiwei1986.feishu.cn/wiki/JbRcw73RjinmVGkz7RRcScjXnyd) |
+| 2023-07-27 | [2023-07-27超大杯Stable Diffusion来袭！提示词更简单，可免费试玩-今日头条](https://xuqiwei1986.feishu.cn/wiki/EOq4wZtBviFT49k85zKcxgY2nGf) |
+| 2023-07-25 | [SD 艺术字实战：小赚几百块](https://xuqiwei1986.feishu.cn/wiki/V8CawV4yxiXWbBke08VcEPmSnCh) |
+| 2023-07-22 | [在用了两个云平台后，终于决定在Mac上部署Stable Diffusion了！（保姆级教程，含踩坑点）](https://zngu6uo6q3.feishu.cn/docx/BjUHdfj6yo8LwxxbYpAceRTlnde) |
+| 2023-07-15 | [2023-07-15手把手教你用 SD 生成文字形状的光线，用来做营销宣传图非常有效](https://xuqiwei1986.feishu.cn/wiki/UZlAwXmCWiMeX2kvvrocjX5WnQd) |
+| 2023-07-12 | [2023-07-12【快闪】AI绘画商业变现 &优秀对标拆解](https://xuqiwei1986.feishu.cn/wiki/BAXEwyNfaiSEibk7go2cb9xln3c) |
+| 2023-07-12 | [2023-07-12【快闪】AI绘画商业变现 &优秀对标拆解](https://xuqiwei1986.feishu.cn/wiki/BAXEwyNfaiSEibk7go2cb9xln3c) |
+| 2023-07-11 | [《爆肝7天！AI创意字终极攻略，光影、隐藏、嵌入、海报4种创意字全拆解！》](https://xuqiwei1986.feishu.cn/wiki/HRrjwD2Fpi3HM4k9gFPcWT6dnIu) |
+| 2023-07-10 | [【技术向】一文讲透如何用SD制作出来高质量艺术二维码](https://xuqiwei1986.feishu.cn/wiki/JU2OwyoX6i5uajkrFUJc3Ogunxc) |
+| 2023-07-09 | [2023-07-09SD零基础，4天做赛博机车项目变现1000+，有什么启示？](https://xuqiwei1986.feishu.cn/wiki/X7eKwFJsiiBcMhkb9iPc9EQYndd) |
+| 2023-07-06 | [2023-07-06AI图片换脸教程 使用faceswep实现AI一键换脸](https://xuqiwei1986.feishu.cn/wiki/ZoC6wpHSWiFuTLkaFufcUWegnoc) |
+| 2023-07-04 | [AI赛博训练营手册](https://xuqiwei1986.feishu.cn/wiki/CFG9w8NdCiqZ30kGpZfcn2fWnmb) |
+| 2023-07-04 | [2023-07-04【21天赛博朋克】AutoDL-rotbit镜像配置赛博朋克出图环境](https://xuqiwei1986.feishu.cn/wiki/Nqk8wFD5qiESHHk3RIdcxZVDn6g) |
+| 2023-07-02 | [2023-07-02AI绘画：Zelinai创建SD提示词模型](https://xuqiwei1986.feishu.cn/wiki/OG9AwY8Hxi9XE1kkjqIcUMClnUp) |
+| 2023-07-02 | [保姆级教程：阿里云免费服务器 5分钟搭建Stable Diffusion](https://xuqiwei1986.feishu.cn/wiki/Rj7MwE5WEiABKKkH7zacVifpnxc) |
+| 2023-06-29 | [《AI赛博机车图异常值》](https://xuqiwei1986.feishu.cn/wiki/IArtwl5UWi3nEzkV7Osca46Nnnh) |
+| 2023-06-23 | [使用SD+AI成片+ChatGPT来制作短片之-小女孩端午节一天的故事](https://l1ekzpkqzzl.feishu.cn/docx/SqSKdc0K5odp45xFAvbc7QKKnGg) |
+|  | [2023-06-06零基础自建Stable Difussion绘图(1)](https://xuqiwei1986.feishu.cn/wiki/LqW2wruSAiHinXky2j8cidifndb) |
+| 2023-06-17 | [Stable Diffusion本地化部署详细攻略](https://cvgjb1upzrh.feishu.cn/docx/ADXcdkyL9oLR1hxlDiMcdeNoneh) |
+| 2023-06-15 | [ControlNet v1.1：完整指南 ](https://xuqiwei1986.feishu.cn/wiki/JjRfwfOn5iX394k6tZ6cvgVNnPf) |
+| 2023-06-15 | [ControlNet v1.1：完整指南 ](https://xuqiwei1986.feishu.cn/wiki/JjRfwfOn5iX394k6tZ6cvgVNnPf) |
+| 2023-06-14 | [阿里云PAI-DSW部署StableDiffusion](https://nwy2ldgmy4q.feishu.cn/docx/XbOtdUOz9om4Byxuy15cv1vKnib) |
+| 2023-06-13 | [《ControlNet终极攻略》](https://xuqiwei1986.feishu.cn/wiki/CbGrwnTAwiFw5nkGiIAcn5QVnfc) |
+| 2023-06-06 | [2023-06-06零基础自建Stable Difussion绘图](https://xuqiwei1986.feishu.cn/wiki/LqW2wruSAiHinXky2j8cidifndb) |
+| 2023-05-31 | [《炼丹Lora终极攻略》](https://xuqiwei1986.feishu.cn/wiki/HPbywjSLWiFMkTkviAichOFAndw) |
+| 2023-05-27 | [《瞬息全宇宙——平行宇宙终极教程》](https://xuqiwei1986.feishu.cn/wiki/F38ZwTF6eio5tvkxqtbcNRywn7g) |
+| 2023-05-24 | [“瞬息全宇宙”-利用图片生成AI视频的保姆式教程](https://xuqiwei1986.feishu.cn/wiki/WZSIw7XF7idBaGkKfbmcnr7TnRc) |
+| 2023-05-21 | [《瞬息全宇宙——穿越之旅终极教程》](https://xuqiwei1986.feishu.cn/wiki/RbaiwC6ZZiCZaVkfGPYcuEBBnpd) |
+| 2023-04-21 | [《Stable Diffusion终极宝典》](https://xuqiwei1986.feishu.cn/wiki/L6vuwRyufi3XaxkLhTXcBFvQnMd) |
+
+### 2023-05-21 SD基础：AI绘图零基础纯入门式教学
+
+<https://player.bilibili.com/player.html?bvid=1hk4y1s79b&spm_id_from=333.337.search-card.all.click&vd_source=16f270683e0208432809f3715adeacf6>
+
+### 2023-04-24【Diffusion】3小时入门到精通
+
+<https://player.bilibili.com/player.html?bvid=1Qz4y1a7dH&spm_id_from=333.337.search-card.all.click&vd_source=16f270683e0208432809f3715adeacf6>

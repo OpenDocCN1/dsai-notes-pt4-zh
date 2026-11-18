@@ -1,0 +1,213 @@
+
+# 2023-06-28运行Llama大模型的PC配置要求 - 知乎
+
+> 来源：[https://xuqiwei1986.feishu.cn/docx/KqUodPY13oHBUpxAo6Ucszzsnae](https://xuqiwei1986.feishu.cn/docx/KqUodPY13oHBUpxAo6Ucszzsnae)
+
+> 🔗 原文链接： h[ttps://zhuanlan.zh](https://zhuanlan.zhihu.com/p/640042827)ihu.com/p/640042...
+
+大型语言模型 (LLM) 是强大的工具，可以为各种任务和领域生成自然语言文本。 最先进的LLM之一是 LLaMA（大型语言模型 Meta AI），这是由 Facebook 的研究部门 Meta AI 开发的一个包含 650 亿个参数的模型
+
+要在家运行 LLaMA 模型，你需要一台配备强大 GPU 的计算机，能够处理推理所需的大量数据和计算。 在本文中，我们将讨论本地运行 LLaMA 的一些硬件要求。
+
+在消费类硬件上运行 LLaMA 模型有多种不同的方法。 最常见的方法是使用单个 NVIDIA GeForce RTX 3090 GPU。 该 GPU 具有 24 GB 内存，足以运行 LLaMA 模型。 RTX 3090 可以运行 4 位量化的 LLaMA 30B 模型，每秒大约 4 到 10 个令牌。 24GB VRAM 似乎是在消费类台式电脑上使用单个 GPU 的最佳选择。
+
+![](img/3b503b66cc4282850e935311861feaab.png)
+
+> 推荐：用 [NSDT设计器 ](https://link.zhihu.com/?target=https%3A//studio.nsdt.cloud/)快速搭建可编程3D场景。
+
+但是，如果你想运行更大的模型，则必须使用双 GPU 设置。 这将允许你将模型权重放入 VRAM 中。 你还可以使用高级 GPU，例如 NVIDIA A100。 这个GPU非常昂贵，但有40GB内存，可以更好地运行模型。
+
+你还可以在 CPU 上运行 LLaMA 模型。 必须使用模型的 `GGML` 版本（LLaMA、Vicuna、Alpaca 和 GPT4All）以及名为 `llama.cpp` 的软件才能使用CPU。 运行 LLaMA 的合适 CPU 是 Core i7 12900K 和 Ryzen 9 5900X。 有关此主题的更多信息，请查看 CPU 部分。
+
+请记住，训练或微调 LLaMA 模型需要比运行模型更多的 VRAM。 这是因为训练过程需要将模型以及训练数据存储在 VRAM 中。 训练所需的 VRAM 量取决于模型的大小和训练数据量。
+
+为了在台式电脑上使用 LLaMA 模型，请查看需要满足的一些硬件要求：
+
+## 1、运行 LLaMA 的 GPU要求
+
+在消费级机器上运行 LLaMA 时，GPU 是最重要的计算机硬件，因为它负责运行模型所需的大部分处理。 GPU的性能将直接影响推理的速度和准确性。
+
+模型的不同变体和实现可能需要功能较弱的硬件。 不过，GPU 仍将是系统中最重要的部分。
+
+4 位量化 LLaMA 模型的 GPU 要求：
+
+| LLaMA Model | Minimum VRAM Requirement | Recommended GPU Examples |
+| --- | --- | --- |
+| LLaMA-7B | 6GB | RTX 3060, GTX 1660, 2060, AMD 5700 XT, RTX 3050 |
+| LLaMA-13B | 10GB | AMD 6900 XT, RTX 2060 12GB, 3060 12GB, 3080, A2000 |
+| LLaMA-30B | 20GB | RTX 3080 20GB, A4500, A5000, 3090, 4090, 6000, Tesla V100, Tesla P40 |
+| LLaMA-65B | 40GB | A100 40GB, 2x3090, 2x4090, A40, RTX A6000, 8000 |
+
++   LLama-7B
+
+为了有效运行 LLaMA-7B，建议使用至少具有 6GB VRAM 的 GPU。 适合此模型的 GPU 示例是 RTX 3060，它提供 8GB VRAM 版本。 其他 GPU（例如 GTX 1660、2060、AMD 5700 XT 或 RTX 3050）也具有 6GB VRAM，可以作为支持 LLaMA-7B 的良好选择。
+
++   LLaMA-13B
+
+为了获得 LLaMA-13B 的最佳性能，建议使用至少具有 10GB VRAM 的 GPU。 满足此要求的 GPU 示例包括 AMD 6900 XT、RTX 2060 12GB、3060 12GB、3080 或 A2000。 这些 GPU 提供必要的 VRAM 容量来有效处理 LLaMA-13B 的计算需求。
+
++   LLaMA-30B
+
+为确保 LLaMA-30B 顺利运行，建议使用至少 20GB VRAM 的 GPU。 RTX 3080 20GB、A4500、A5000、3090、4090、6000 或 Tesla V100 是提供所需 VRAM 容量的 GPU 示例。 这些 GPU 可实现 LLaMA-30B 的高效处理和内存管理。
+
++   LLaMA-65B
+
+LLaMA-65B 与至少具有 40GB VRAM 的 GPU 配合使用时，性能最佳。 适用于此型号的 GPU 示例包括 A100 40GB、2x3090、2x4090、A40、RTX A6000 或 8000。这些 GPU 提供充足的 VRAM 容量来处理与 LLaMA-65B 相关的密集计算任务。
+
+每个 LLaMA 模型都有特定的 VRAM 要求，建议的 GPU 是根据其满足或超过这些要求的能力来选择的，以确保相应的 LLaMA 模型平稳高效的性能。
+
+## 2、运行LLaMA 的 CPU要求
+
+除了 GPU 之外，你还需要一个可以支持 GPU 并处理其他任务（例如数据加载和预处理）的 CPU。 基于 GPQT (GPU) 的模型对 CPU 的要求低于针对 CPU 优化的模型。
+
+适合 LLaMA 的 CPU 是 Intel Core i9-10900K、i7-12700K 或 Ryzen 9 5900x。 但是，为了获得更好的性能，你可能需要使用更强大的 CPU，例如具有 64 核和 128 线程的 AMD Ryzen Threadripper 3990X。 最后，真正重要的是 CPU 的速度。 这才是真正的力量所在。 当在昂贵的服务器 CPU 和高端游戏 CPU 之间进行选择时，后者占据主导地位。
+
+我们必须注意，本文讨论的模型是针对 GPU 的，但也有针对 CPU 的 LLaMa 模型优化器。 例如，`GGML` 是一种解决方案，可以解决处理大型模型时 GPU 内存带来的限制。 如果你更喜欢使用 CPU，建议运行 `GGML` 格式的模型文件。
+
+你可以使用名为 `llama.cpp`（LLaMA 模型的接口）的软件来利用你的 CPU。 `llama.cpp` 最近的更新引入了新的增强功能，使用户能够在 CPU 和 GPU 之间分配模型的工作负载。 这不仅有利于加载更大的模型，而且还提高了令牌的速度。
+
+这是使用 Ryzen 7 3700X 和 128GB RAM 运行 `llama.cpp` 的示例。
+
+| GGML Model | Memory per Token | Load Time | Sample Time | Predict Time | Total Time |
+| --- | --- | --- | --- | --- | --- |
+| LLaMA-7B 4-bit | 14434244 bytes | 1270.15 ms | 325.76 ms | 15147.15 ms / 117.42 ms per token | 17077.88 ms |
+| LLaMA-13B 4-bit | 22439492 bytes | 2946.00 ms | 86.11 ms | 7358.48 ms / 216.43 ms per token | 11019.28 ms |
+| LLaMA-30B 4-bit | 43387780 bytes | 6666.53 ms | 332.71 ms | 68779.27 ms / 533.17 ms per token | 77333.97 ms |
+| LLaMA-65B 4-bit | 70897348 bytes | 14010.35 ms | 335.09 ms | 140527.48 ms / 1089.36 ms per token | 157951.48 ms |
+
+## 3、运行LLaMA 的内存要求
+
+除了GPU和CPU之外，你还需要足够的RAM（随机存取存储器）和存储空间来存储模型参数和数据。 4 位 LLaMA-30B 的最低 RAM 要求为 32 GB，可以将整个模型保存在内存中，而无需交换到磁盘。 但是，对于较大的数据集或较长的文本，你可能需要使用更多 RAM，例如 64 GB 或 128 GB。
+
+CPU 和内存之间的带宽是一个关键因素，我想强调它的重要性。 当生成单个 token 时，整个模型需要从内存中读取一次。 假设你有 Core i9-10900X（4 通道支持）和 DDR4-3600 内存，这意味着吞吐量为 115 GB/s，而你的型号大小为 13 GB。 在这种情况下，理论限制约为每秒 8.8 个令牌，无论你的 CPU 有多快或有多少个并行核心。
+
+RAM 的大小取决于 `GGML` 量化的类型和你使用的模型（LLaMA、Alpaca、Wizard、Vicuna 等）。
+
+这些是 在CPU上使用 LLaMA 模型的内存 (RAM) 要求：
+
+| GGML Model | Original size | Quantized size (4-bit) | Quantized size (5-bit) | Quantized size (8-bit) |
+| --- | --- | --- | --- | --- |
+| 7B | 13 GB | 3.9 – 7.5 GB | 7.5 – 8.5 GB | 8.5 – 10.0 GB |
+| 13B | 24 GB | 7.8 – 11 GB | 11.5 – 13.5 GB | 13.5 – 17.5 GB |
+| 30B | 60 GB | 19.5 – 23.0 GB | 23.5 – 27.5 GB | 28.5 – 38.5 GB |
+| 65B | 120 GB | 38.5 – 47.0 GB | 47.0 – 52.0 GB | 71.0 – 80.0 GB |
+
+在 CPU 上运行时基于内存 (RAM) 速度的模型 (8GB) 推理速度：
+
+| RAM speed | CPU | CPU channels | Bandwidth | `Inference` |
+| --- | --- | --- | --- | --- |
+| DDR4-3600 | Ryzen 5 3600 | 2 | 56 GB/s | 7 tokens/s |
+| DDR4-3200 | Ryzen 5 5600X | 2 | 51 GB/s | 6.3 tokens/s |
+| DDR5-5600 | Core i9-13900K | 2 | 89.6 GB/s | 11.2 tokens/s |
+| DDR4-2666 | Core i5-10400f | 2 | 41.6 GB/s | 5.1 tokens/s |
+
+> 速度为理论最大值，取决于操作系统和系统负载。
+
+## 4、运行LLaMA的存储要求
+
+LLaMA的最低存储要求是1TB NVMe SSD，可以存储模型文件和数据文件，读写速度很快。 但是，为了更多数据或备份目的，你可能需要使用更多存储空间，例如 2 TB 或 4 TB SSD。
+
+选择高速存储。 选择具有出色顺序速度的 PCIe 4.0 NVMe SSD，以促进存储和系统 RAM 之间的快速数据传输。
+
+## 5、模型量化如何影响 GPU 的选择？
+
+量化 LLM使用更少的位数来存储和处理模型的权重和激活。 这使得它们的 GPU 部署更快、更高效。
+
+4 位量化 LLM 每个权重或激活仅使用 4 位。 这意味着它们比全精度模型占用更少的内存和计算时间。 它们可以在 VRAM 容量较低的 GPU 上平稳运行。
+
+8 位量化 LLM 每个权重或激活使用 8 位。 与全精度模型相比，这仍然减少了内存和计算成本，但不如 4 位量化那么多。 它们需要更多的 GPU 内存和计算能力才能良好运行。 它们更适合具有高 VRAM 容量和计算能力的 GPU。
+
+总而言之，4 位量化 LLM 效率更高，并且可以在 VRAM 容量较低的 GPU 上运行。 8 位量化 LLM 的效率稍低，需要具有高 VRAM 容量和计算能力的 GPU。
+
+| LLaMA Precision | GPU Memory Requirements | Computational Demands | Suitable GPU |
+| --- | --- | --- | --- |
+| Native (32-bit) | Higher requirements | Higher computational demands | GPUs with larger VRAM capacities and high computational capabilities |
+| 16-bit Quantized | Moderate requirements | Moderate computational demands | GPUs with moderate VRAM capacities and good computational capabilities |
+| 8-bit Quantized | Relatively higher requirements | Slightly higher computational demands | GPUs with larger VRAM capacities and higher computational capabilities |
+| 4-bit Quantized | Lower requirements | Lower computational demands | GPUs with limited VRAM capacities |
+
+正如你所看到的，LLaMA 的精度对其 GPU 内存需求和计算需求有直接影响。 原生（32 位）LLM 需要最多的 GPU 内存和计算能力，而 4 位量化 LLM 需要最少。
+
+适用于 LLaMA 的 GPU 取决于其精度以及您想要使用它执行的特定任务。 如果您需要在各种任务上运行大型 LLaMA，那么您将需要具有大 VRAM 容量和高计算能力的 GPU。 如果您只需要在几个特定任务上运行小型 LLaMA，那么您可以使用具有较小 VRAM 容量和较低计算能力的 GPU。
+
+需要注意的是，随着量化级别的降低，模型的准确性也会降低。 这是因为精度降低可能会导致模型预测出现错误。
+
+最适合你的量化级别取决于你的具体需求和要求。 如果需要一个小而高效的模型，那么你可能需要考虑使用 4 位或 8 位量化模型。 但是，如果你需要高度准确的模型，那么可能需要使用 16 位模型。
+
+## 6、双GPU是否有效提升 LLaMA性能？
+
+添加第二个 GPU 可能不会像预期那样加快文本生成速度。 瓶颈似乎阻碍了增加更多计算能力的简单解决方案。 一些测试显示出令人惊讶的结果，低端 GPU 每秒生成令牌的速度比高端 GPU 更快。 其原因尚不清楚，文本生成程序可能需要更好的优化才能很好地使用双 GPU 设置。
+
+双 GPU 设置总共具有更多 VRAM，但每个 GPU 仍然有其自己的 VRAM 限制。 30B LLaMA 需要大约 20GB VRAM，因此两个 RTX 3090 GPU（每个都有 24GB VRAM）仍然只有 24GB VRAM 可用。 该模型应适合一个 GPU 的 VRAM 才能正常运行。
+
+但是，如果模型太大而无法容纳单个 GPU 的 VRAM 并且需要利用系统 RAM，则使用多个 GPU 确实可以加快该过程。 在这种情况下，每个 GPU 可以处理模型的一部分，并且计算负载在它们之间分配。 这种并行化可以提高超过单个 GPU 的 VRAM 容量的大型模型的速度。
+
+因此，在处理具有高 VRAM 要求的大型模型时，通常会采用多个 GPU。 它可以有效利用资源并加速训练或推理过程。
+
+将像 65B LLaMA 这样的大型语言模型拆分到具有模型并行性的多个 GPU 上可能会很困难，并且可能会导致通信延迟。 通过 GPU 拆分和同步模型的参数和计算需要仔细编码，并且可能并不总是能大幅提高性能。
+
+双 GPU 设置可能不适用于某些软件。 某些机器学习框架或库可能无法完全使用多个 GPU，并且可能需要额外的工作来设置和优化系统以使用双 GPU。
+
+这些限制意味着，将双 GPU 设置用于 30B LLaMA 的可能优势与难度和潜在问题进行比较非常重要。 有时，获得更强的单GPU或尝试其他优化方法可能是更好的方法。
+
+## 7、为 LLaMA 选择 PC 硬件的技巧
+
++   围绕 GPU 构建
+
+创建一个包含主板、CPU 和 RAM 的平台。 GPU 处理训练和推理，而 CPU、RAM 和存储管理数据加载。 选择支持 PCIe 4.0（或 5.0）、多个 NVMe 驱动器插槽、x16 GPU 插槽和充足内存 DIMM 的主板。 建议使用单线程速度较高的 CPU，例如 Ryzen 5000 或 Intel 第 12/13 代。
+
++   型号选择和 VRAM
+
+为了在响应质量方面获得最佳性能，建议在具有至少 20GB VRAM 的 GPU 上运行 8 位 13B 模型或 4 位 30B 模型。 两种型号都提供相似的质量响应，VRAM 可用性应该是决定因素。 投资具有张量核心的 Nvidia GPU 以增强性能。 考虑 RTX 30 系列或 RTX 40 系列等选项，例如 RTX 3090 24GB、RTX 4090 24GB，以获得最佳性能。
+
++   速度比较
+
+就每秒生成的令牌而言，13B 模型通常比 30B 模型运行得更快。 虽然确切的速度差异可能有所不同，但与 30B 模型相比，13B 模型往往会在生成速度方面提供显著的改进。
+
++   内存要求
+
+
+
+# Llama 消费级硬件要求
+
+## 总体要求
+
+目标是至少 1.5 倍 VRAM 容量或两倍 VRAM 以获得最佳性能。当使用 128GB 或更多 RAM 时，主板和 CPU 的选择变得至关重要。
+
+### PCIe 4.0 NVMe 固态硬盘
+
+高顺序速度 PCIe 4.0 NVMe SSD 的重要性主要在于将初始模型加载到 VRAM 中。模型加载后，SSD 对生成速度（令牌/秒）的影响很小。
+
+### 足够的常规 RAM
+
+拥有足够的常规 RAM（最好是 VRAM 容量的两倍）对于初始模型加载至关重要。模型一旦加载，对实际生成速度的影响是有限的。确保初始加载期间有足够的常规 RAM 对于流畅的体验至关重要。
+
+### CPU 单线程速度
+
+CPU 的单线程速度主要对于初始模型加载非常重要，而不是在生成期间运行模型。CPU 的作用在数据预处理、模型加载和其他不依赖 GPU 的操作等任务中更加突出。
+
+### 扩展以提高速度
+
+如果你需要将文本生成速度从 15 个令牌/秒提高到 30 个令牌/秒，设置整个 PC 的文字克隆可能比添加第二个 3090 卡更有效。将整体系统资源（包括 CPU 和 RAM）加倍可能会在提高文本生成速度方面产生更好的结果。
+
+### 单 GPU 性能
+
+由于 GPU 本身的内部带宽优势，单个 GPU 通常比多 GPU 设置提供更快的性能。
+
+### 电源及机箱
+
+投资具有足够容量为所有组件供电的高质量电源。选择通风良好的宽敞机箱以获得最佳散热效果。
+
+### DDR5 和未来平台
+
+虽然 DDR5 和 Zen 4 或 AM5 等未来平台具有优势，但稳定性和兼容性可能会有所不同。考虑投资具有良好 PCIe 插槽布局和内存支持的高端主板，以实现未来的升级。
+
+## 结语
+
+请记住，虽然这些提示和技巧提供了基于经验的见解，但各个系统配置和性能可能会有所不同。始终建议对不同的设置进行试验和基准测试，以找到最适合你的特定需求的解决方案。
+
+---
+
+原文链接：Llama消费级硬件要求 - BimAnt
+
+发布于 2023-06-28 08:50 ・IP 属地北京

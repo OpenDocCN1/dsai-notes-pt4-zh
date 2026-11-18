@@ -1,0 +1,78 @@
+
+# 命令列表
+
+> 来源：[https://my.feishu.cn/docx/NoDgdBZMGo8VPtxizrpcgJIrnph](https://my.feishu.cn/docx/NoDgdBZMGo8VPtxizrpcgJIrnph)
+
+您可以通过输入命令 Midjourney 机器人在 Discord 上交互。命令用于创建图像、更改默认设置、监视用户信息以及执行其他有用的任务。
+
+Midjourney 命令可以在任何机器人频道、Midjourney 机器人被允许在运行的私人 Discord 服务器上使用，或在与 Midjourney 机器人的直接消息中使用。
+
+## Commands-命令一览
+
+`/ask`
+
+获得一个问题的答案
+
+[`/blend`](https://docs.midjourney.com/blend)
+
+将两个图像混合在一起。
+
+`/daily_theme`
+
+获取 `#daily-theme` 频道更新的通知提醒。
+
+[`/fast`](https://docs.midjourney.com/fast-relax)
+
+切换到 Fast 模式。
+
+`/help`
+
+显示Midjourney机器人的基础使用信息或者提示
+
+[`/imagine`](https://docs.midjourney.com/quick-start)
+
+通过指令生成图像
+
+[`/info`](https://docs.midjourney.com/info)
+
+查看有关您的账户以及任何排队或正在运行的作业的信息。
+
+[`/stealth`](https://docs.midjourney.com/stealth)
+
+针对专业版订户：切换到隐形模式。
+
+[`/public`](https://docs.midjourney.com/stealth)
+
+针对专业版订户：切换公共模式
+
+[`/subscribe`](https://docs.midjourney.com/plans)
+
+生成用户账户页面的个人链接。
+
+[`/settings`](https://docs.midjourney.com/settings-and-presets)
+
+查看和调整 Midjourney 机器人的设置。
+
+[`/prefer option`](https://docs.midjourney.com/settings-and-presets)
+
+创建或管理自定义选项。
+
+`/prefer option list`
+
+查看您当前的自定义选项。
+
+[`/prefer suffix`](https://docs.midjourney.com/settings-and-presets)
+
+指定要添加到每个提示结尾的后缀。
+
+[`/show`](https://docs.midjourney.com/show-job)
+
+使用图像的Job ID ID 在 Discord 中重新生成该作业。
+
+[`/relax`](https://docs.midjourney.com/fast-relax)
+
+切换到轻松模式。
+
+[`/remix`](https://docs.midjourney.com/remix)
+
+切换 Remix 模式。
