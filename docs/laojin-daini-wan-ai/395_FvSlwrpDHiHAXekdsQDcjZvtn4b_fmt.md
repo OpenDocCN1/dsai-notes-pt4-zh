@@ -1,0 +1,177 @@
+
+# Timetask - 定时提醒
+
+> 来源：[https://my.feishu.cn/docx/QHl4d2oxWoRIbDxB2sRchOo0nAc](https://my.feishu.cn/docx/QHl4d2oxWoRIbDxB2sRchOo0nAc)
+
+## 转载自Github官网：https://github.com/haikerapples/timetask?tab=readme-ov-file#readme
+
+timetask 是一款支持自定义定时任务的`chatgpt-on-wechat`插件，支持自定义时间、轮询周期、自定义时间，包含动态添加任务、取消任务、查看任务列表等功能，一款定时任务系统的插件。
+
+## 【插件功能介绍】
+
+### 🎉功能一：
+
+支持用户设定时间，添加定时任务，定时自动发消息；
+
++ 时间支持自定义
+
++ 日期支持轮询，支持每天、每周、工作日、具体日期、`cron`表达式等
+
+### 🎉功能二：
+
+支持普通的提醒消息、及链接其他插件的拓展功能。比如早报、点歌、搜索、转发`GPT`等，理论上已安装的插件均可一键调度
+
+### 🎉功能三：
+
+支持动态的取消定时任务、随时查看任务列表等
+
+### 🎉功能四：
+
+无侵入性，原项目无需改造，安装插件即可使用
+
+## 【插件安装方法】
+
+1. `clone`本仓库 或 下载源代码（源码下载方式时，`timetask`文件夹会自动带上分支名，将文件夹名称去除，命名`timetask`为即可）
+
+2. 将本插件的文件夹`timetask`，放进 `chatgpt-on-wechat` 的 `plugins` 文件夹中（`chatgpt-on-wechat`启动后，会自动加载本插件）
+
+3. 安装插件依赖库：进入 `timetask` 文件夹，执行命令：`pip3 install -r requirements.txt`
+
+4. 至此，插件安转完毕，启动`chatgpt-on-wechat`，使用 `timetask` 插件
+
+## 【如何使用 - 定时任务】
+
+Tips：与机器人对话，发送如下定时任务指令即可
+
+### 一、添加定时任务
+
+【指令格式】：`$time 周期 时间 事件`
+
+1. `$time`：指令前缀，当聊天内容以`$time`开头时，则会被当做为定时指令
+2. 周期：今天、明天、后天、每天、工作日、每周X（如：每周三）、`YYYY-MM-DD`的日期、`cron`表达式
+3. 时间：`X点X分`（如：十点十分）、`HH:mm:ss`的时间
+4. 事件：想要做的事情 （支持普通提醒、以及项目中的拓展插件，详情如下）
+5. 群标题（可选）：可选项，不传时，正常任务； 传该项时，可以支持私聊给目标群标题的群，定任务（格式为：`group[群标题]`，注意机器人必须在目标群中）
+
+【备注】：目前第5点的支持的通道：`itchat`（即🛰️)、`ntchat`（windows版🛰️)、`ntwork`(windows版企业🛰️)
+
+```
+事件-拓展功能：默认已支持早报、搜索、点歌
+示例 - 早报：$time 每天 10:30 早报
+示例 - 点歌：$time 明天 10:30 点歌 演员
+示例 - 搜索：$time 每周三 10:30 搜索 乌克兰局势
+示例 - 提醒：$time 每周三 10:30 提醒我健身
+示例 - cron：$time cron[0 * * * *] 准点报时
+示例 - GPT：$time 每周三 10:30 GPT 夸一夸我
+示例 - 画画：$time 每周三 10:30 GPT 画一只小老虎
+示例 - 群任务：$time 每周三 10:30 滴滴滴 group[群标题]
+拓展功能效果：将在对应时间点，自动执行拓展插件功能，发送早报、点歌、搜索等功能。
+文案提醒效果：将在对应时间点，自动提醒（如：提醒我健身）
+Tips：拓展功能需要项目已安装该插件，更多自定义插件支持可在
+ timetask/config.json 的 extension_function 自助配置即可。
+```
+
+![](img/f080f12f1898a48d81db5a2432384a93.png)
+
+### 二、取消定时任务
+
+#### 方法一、直接通过任务编号，取消定时任务
+
+【指令格式】：`$time 取消任务 任务编号`
+
+1. `$time 取消任务`：指令前缀，以此前缀，会取消定时任务
+2. 任务编号：机器人回复的任务编号（添加任务成功时，机器人回复中有）
+
+![](img/80ddaa9f4edf758d17c5ad130ed3e966.png)
+
+#### 方法二、先查询任务编号列表，然后选择要取消的任务编号，取消定时任务
+
+【指令格式】：`$time 任务列表`
+
+![](img/f2b09a92e836954d90656db7bec41408.png)
+
+根据任务列表，选择要取消的任务编号，执行上面的方法一（直接通过任务编号，取消定时任务）
+
+![](img/e27c2de6add581a4de80af40269dd534.png)
+
+### 三、查看定时任务列表
+
+【指令格式】：`$time 任务列表`
+
++ 指令执行成后，机器人会将所有待执行的任务列表，回复出来
++ 已过期或已被消费过的任务会自动过滤
+
+![](img/41b437a41f55fb58ecd252a355a28b7e.png)
+
+### 四、插件文件介绍
+
+#### 配置文件：`config.json`
+
+```
+{
+  #定时任务前缀（以该前缀时，会被定时任务插件捕获）
+  &quot;command_prefix&quot;: &quot;$time&quot;, 
+
+  #是否开启debug（会输出日志）
+  &quot;debug&quot;: false,  
+
+  #检测频率（默认1秒一次，注意不建议修改！！如果任务带秒钟，则可能会被跳过）
+  &quot;time_check_rate&quot;: 1, 
+
+  #Excel中迁移任务的时间（默认在凌晨4点将Excel 任务列表sheet 中失效的任务 迁移至 -&gt; 历史任务sheet中）
+  &quot;move_historyTask_time&quot;: &quot;04:00:00&quot;, 
+  #是否每个任务回复前，均 路由查询一遍是否能被其他插件解释，若会被解释，则使用解释内容回复；否则继续查询是否开启了拓展功能，如果均不可被消费，则最终使用原始内容兜底
+  #比如 
+$time 今天 13:35 搜索股票，到达目标时间，则会将 “搜索股票”的关键词默认路由到其他插件查询一遍，如果可以被其他插件解释，则再会使用使用解释后的内容回复。
+  #定时内容可自由设定，比如 “搜索股票”、“$
+tool 查询天气”，只要你的工程的插件可以解释关键字即可（前面2个内容为示例，是否可以成功取决于你工程是否有识别该关键字的插件）
+  &quot;is_open_route_everyReply&quot;: true,
+
+  #是否开启拓展功能（开启后，会识别项目中已安装的插件，如果命中 extension_function中的前缀，则会将消息路由转发给目标插件）
+  &quot;is_open_extension_function&quot;: true,
+
+  #支持的拓展功能列表（理论上 已安装的插件，均支持路由转发，其他插件可自主配置，参考早报的配置方式）
+  &quot;extension_function&quot;:
+  [
+    {
+      # 触发词
+      &quot;key_word&quot;: &quot;早报&quot;,
+
+      # 路由插件的 指令前缀
+      &quot;func_command_prefix&quot;:&quot;
+$tool &quot;
+    },
+    {
+      &quot;key_word&quot;: &quot;点歌&quot;,
+      &quot;func_command_prefix&quot;: &quot;$
+&quot;
+    },
+    {
+      &quot;key_word&quot;: &quot;搜索&quot;,
+      &quot;func_command_prefix&quot;: &quot;$tool google &quot;
+    },
+    {
+      # 触发词
+      &quot;key_word&quot;: &quot;GPT&quot;,
+      &quot;func_command_prefix&quot;: &quot;GPT&quot;
+    }
+  ]
+}
+```
+
+![](img/abcfbdc6c405b9237476845df21ddf1e.png)
+
+### 五、其他
+
+#### 查看所有定时任务指令：
+
+![](img/e5169fe3590b6246fd812c8f6d97009f.png)
+
+#### 任务Excel文件：`timetask/timeTask.xlsx`
+
+```
+定时任务 - sheet： 存放当天要消费的任务
+历史任务 - sheet： 存放历史已消费的任务
+```
+
+<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
