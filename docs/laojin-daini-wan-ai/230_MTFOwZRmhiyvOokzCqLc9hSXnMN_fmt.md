@@ -1,0 +1,590 @@
+
+# 老金开源Agent Teams编排Skill：一句话自动组队，手动挡时代结束了
+
+> 来源：[https://my.feishu.cn/docx/LBUkdG9TLowZ6wxYpX9cFJhtnkb](https://my.feishu.cn/docx/LBUkdG9TLowZ6wxYpX9cFJhtnkb)
+
+> **术语说明**："Swarm/蜂群"是多Agent协作的通用说法（OpenAI有官方项目叫Swarm），但 Claude Code的官方概念是Agent Teams。本文使用官方术语Agent Teams，保留"蜂群"作为通俗说明。
+
+先说老金我昨儿开源了[老金开源10万字Claude Code中文教程，零基础到企业实战完整路径](https://my.feishu.cn/wiki/LsfPwKl2sikZV5kk3H6cQdP2nFg)
+
+希望大家可以看看，顺手帮我点个Star，这样能让更多的人来接触到AI，做出自己喜欢的东西。
+
+上周老金我写了那篇[CC本次更新最强的不是OPUS4.6，而是Agent Swarm(蜂群）](https://my.feishu.cn/wiki/CAsLwb5BBiVztakm0h9cGnucnRc)，群里收到最多的一个问题是：
+
+"老金，每次都要手动写那么长的提示词"，有没有更简单的方法？ "有。"
+
+老金我花了一周时间，把这套多Agent编排逻辑封装成了一个Claude Code `Skill`。
+
+说句"拉个团队"就能自动组队、自动分工、自动验收。
+
+今天把它开源了。
+
+在做本`Skill`的时候，老金真实的感触真的是很难想象。
+
+仅仅只有216行提示词！
+
+已经完成了我以前庞大的轮子制造！
+
+这再也不是一个造轮子的时代了！
+
+真的！飞速发展！
+
+但也要请你清楚，这篇文章内的都是精华中的精华，所以它很长。
+
+如果你不清楚这些，你拿多少提示词也不好使。
+
+认知，才是能用好AI的前提。
+
+不是许愿。
+
+## 先说结论
+
+这个`Skill`叫 `agent-teams-playbook`，解决的核心问题是：
+
+让Claude Code从"你指挥它干活"变成"它自己当CTO组队干活"。
+
+你只需要描述任务，它会自动完成这些事：
+
+1、判断任务复杂度，选择最合适的编排场景
+
+2、组建团队，给每个`Agent`分配角色和模型
+
+3、并行执行，实时汇报进度
+
+4、质量把关+产品打磨，不只是"能跑"还要"好用"
+
+5、交付结果+部署说明，做完了告诉你怎么用
+
+全程你只需要在关键节点头确认。
+
+术语也顺便说清楚：
+
+"swarm/蜂群"是通用说法，OpenAI甚至有官方项目就叫Swarm。
+
+但 Claude Code的官方概念叫Agent Teams。
+
+`teammate`是独立Claude Code实例：各自有上下文窗口、能互相沟通、你也能直接切过去聊。
+
+所以这个`Skill`的正确定位是："并行外脑 + 汇总压缩"的编排器，不是"单脑扩容"器。
+
+理解这一点，才能用对它、用好它。
+
+## 为什么要做这个`Skill`
+
+上篇文章老金我给了6种玩法的提示词模板，实际用下来发现几个问题：
+
+问题1：每次都要手动判断"该用哪种玩法"
+
+任务来了，你得先想：这个任务是简单还是复杂？
+
+需要几个`Agent`？用`Subagent`还是`Agent Team`？
+
+每次都要做一遍决策，累。
+
+问题2：提示词太长，复制粘贴改来改去
+
+上篇文章的提示词模板，最长的有200多字。
+
+每次用都要复制、修改角色名、调整任务描述，效率不高。
+
+问题3：没有质量把关
+
+`Agent`干完就完了，好不好全靠运气。
+
+没有统一的验收标准，没有打回修改的机制。
+
+问题4：没有统一的流程
+
+每次都是临时拼凑，这次用这个流程，下次用那个流程。
+
+没有沉淀，没有复用。
+
+老金我就想：能不能把这些判断逻辑、流程规范，质量标准全部封装起来？
+
+让Claude Code自己判断、自己组队、自己把关？
+
+于是就有了 `agent-teams-playbook`。
+
+## 核心设计：给AI装个"技术合伙人"的脑子
+
+这个`Skill`的第一行定义就不一样：
+
+> 你是`Technical Co-Founder`级别的`Agent Teams`协调器——不只是分配任务，而是：明确每个角色的职责边界、把控执行过程、对最终产品质量负责。
+
+`Technical Co-Founder`，直译是"技术联合创始人"。
+
+说人话就是：创业公司里那个懂技术的合伙人，既能写代码又能带团队的CTO角色。
+
+为什么要给AI定这个角色？
+
+因为普通的"任务协调器"只会机械地分配任务，而一个好的技术合伙人会做这5件事：
+
+1、质疑需求：需求不合理时主动挑战假设，建议更好的方案
+
+2、界定范围：区分"现在必须做"和"以后再说"，砍掉非核心范围
+
+3、选择策略：根据任务复杂度选择最合适的编排方式
+
+4、把控质量：不只是"能用"，还要"好用"——边界处理，专业度、完整性
+
+5、交付移交：做完了告诉你怎么用、怎么验证、有什么限制
+
+这就是从"工具人"到"合伙人"的区别。
+
+## 5大编排场景：自动选择，不用你操心
+
+`Skill`内置了一棵决策树，根据任务复杂度自动选择场景：
+
+```
+Q1: 任务复杂度？
+├── 简单(1-2步) → 场景1：提示增强
+├── 中等(3-5步) → Q2: 有现成`Skill`可复用？
+│   ├── 是 → 场景2：`Skill`复用
+│   └── 否 → 场景3：计划+评审（默认）
+└── 复杂(6+步) → Q3: 需要明确团队分工？
+    ├── 是 → 场景4：Lead-Member
+    └── 否 → 场景5：复合编排
+```
+
+每个场景干什么：
+
+1、提示增强：任务太简单，不需要组队。举个例子："帮我改个函数名"
+
+2、`Skill`复用：有现成`Skill`能用，直接调。举个例子："帮我写篇👸号" → 调`gzh-writer`
+
+3、计划+评审：出计划→你确认→并行执行→Review。举个例子："重构认证模块"（最常用）
+
+4、Lead-Member：Leader协调，Member并行干活。举个例子："做一个完整的用户系统"
+
+5、复合编排：动态组合上面的场景。举个例子："从0搭建一个SaaS产品"
+
+重点：你不需要记这些。
+
+说"拉团队帮我重构认证模块"，`Skill`会自动判断这是场景3，然后按流程走。
+
+你也可以直接指定："用场景4帮我做用户系统"，跳过决策树直接执行。
+
+## 5阶段工作流：终端里实际会输出什么
+
+这是老金我最想展示部分——以下是基于`Skill`规范编排的 演示示例，展示理想情况下的执行流程。实际输出格式会因任务类型和模型响应而略有差异。
+
+用一个真实场景演示："拉团队帮我重构认证模块"。
+
+### 阶段1：任务分析（Discovery）
+
+我让他帮我充够KIMI生成的个人主页。
+
+Claude Code输出：
+
+![](img/8f78ce8610423566073ead1639b0e780.png)
+
+我还设计了——必须你确认才会继续。
+
+这不是走过场，是真的等你点头。
+
+如果你觉得范围不对，可以直接说"`OAuth`也要做"，它会重新调整计划。
+
+PS：当然你觉得麻烦，也可以直接说 不需要问我，你自己全决定，不过老金我很不建议这么做，因为它不懂你的细节需求，很容易跑偏。
+
+### 阶段2：团队组建
+
+你输入"继续"后：
+
+![](img/a059dfd6de23bb334a26b7e1a4505513.png)
+
+注意模型分工：根据不同的任务，它会选用不同的模型。
+
+这不是随便选的，是根据任务复杂度自动分配的。
+
+这里动手能力强的，可以把其他模型以`MCP`，或`Agent`方式接入。
+
+可以参考老金的开源项目来参考：[对比明明白白3大顶级模型-GPT-5.2/Gemini 3/Claude Opus 4.5！老金告诉你怎么一个窗口全用！](https://my.feishu.cn/wiki/S9VZw5ReDifUx5kl58Vc5AAOnLf)
+
+为了大家方便，这里统一用`Claude`旗下的：
+
+`haiku`处理简单任务（比如格式化、文件搜索），`sonnet`处理常规编码，`opus`处理需要深度思考的架构设计。
+
+同样的活，用对模型能省不少钱。
+
+### 阶段3：并行执行
+
+4个`Agent`同时启动，各干各的：
+
+![](img/3f42b120733f69e24801c6e88973408c.png)
+
+如果某个`Agent`失败了，小问题自行修复，大问题想你给你选项，你自己说解决方案：
+
+![](img/d62393b8cf9bf1f0feccf36137650234.png)
+
+### 阶段4：质量把关 & 产品打磨
+
+这个阶段是`Skill`的核心——不只是检查"能不能跑"，还要检查"好不好用"：
+
+![](img/aeff1ffc42395f932d974c306ac49973.png)
+
+最多打回2轮，2轮还不行就通知你人工介入。
+
+产品打磨三个维度：
+
+边界处理（异常情况覆盖了没）
+
+专业度（命名规范、错误提示友好不）
+
+完整性（文档、配置、示例齐全不）
+
+### 阶段5：结果交付 & 部署移交
+
+![](img/b0b134555a844adab14a080f11c30dac.png)
+
+从任务分析到部署移交，全流程自动化。
+
+你只在阶段1确认了一次计划，剩下的全是`Skill`在驱动。
+
+"后续建议"那栏特别有用——它会把阶段1砍掉的"`add-later`"内容列出来，提醒你下一步可以做什么。
+
+## 两种协作模式：按需选择
+
+`Subagent`模式
+
+通信方式：单向汇报（`Agent`→协调器）
+
+适用场景：任务间没有依赖
+
+启动方式：`Task`工具
+
+`Agent Team`模式
+
+通信方式：双向通信（`Agent`↔`Agent`）
+
+适用场景：任务间需要互相协调
+
+启动方式：`TeamCreate` + `SendMessage`
+
+老金的建议：90%的场景用`Subagent`就够了。
+
+`Agent Team`功能更强但成本更高（每条消息都消耗`token`），只有任务间真的需要互相沟通时才用。
+
+## 安装前提：先装这两个`Skill`
+
+这个`Skill`依赖两个前置`Skill`才能发挥完整功能，建议先安装：
+
+PS：请手动安装，老金我没放`Skill`里，否则每次都浪费`token`
+
+### 必装1：`find-skills`（自动发现社区`Skill`）
+
+它是Claude Code生态里的`Skill`发现工具，能从社区索引中搜索数百个开源`Skill`。
+
+比如你说"帮我做个数据可视化"，`find-skills`会自动搜索有没有专门做数据可视化的`Skill`可以用。
+
+这里直接安装老金改良过的的兼容Win版本。
+
+```
+npx skills add KimYx0207/findskill@find-skills -y
+```
+
+或者手动安装：
+
+仓库地址：https://github.com/KimYx0207/findskill
+
+把`SKILL.md`放到 `.claude/skills/find-skills/` 目录
+
+编排器怎么用它？
+
+在阶段2组建团队时，协调器会先问`find-skills`："当前任务有没有专门的`Skill`可以用？"
+
+如果有，就给对应的`Agent`指定这个`Skill`；如果没有，就用通用`agent`。
+
+> [24小时15.3K安装量稳坐王座！老金愿称之为元`Skill`！](https://my.feishu.cn/wiki/HVU6wTCRoiThWAkgyLac7w3Yncb)老金之前写过一篇`find-skills`的详细教程：
+
+### 必装2：`planning-with-files`（自动生成计划文件）
+
+```
+npx skills add anthropic-ai/planning-with-files -y
+```
+
+或者手动安装：
+
+仓库地址：https://github.com/OthmanAdi/planning-with-files
+
+把`planning-with-files`的`SKILL.md`放到 `.claude/skills/planning-with-files/` 目录
+
+作用：自动生成`task_plan.md`、`findings.md`、`progress.md`，让任务进度可追踪。
+
+### 不装也能用
+
+如果暂时不想装上面两个，`agent-teams-playbook`也能用：
+
+`find-skills`不可用 → 自动用本地`Skill` → 再不可用就用通用`Agent`
+
+`planning-with-files`不可用 → 跳过自动生成文件这一步
+
+不会报错，只是功能会降级。
+
+## 安装使用：3步搞定
+
+### 第1步：创建目录
+
+```
+mkdir -p .claude/skills/agent-teams-playbook
+```
+
+### 第2步：放入`SKILL.md`
+
+把完整的`SKILL.md`文件放到这个目录下。
+
+216行，直接复制粘贴就能用。
+
+完整代码见GitHub仓库（文末有地址）。
+
+### 第3步：触发使用
+
+以下任何一种方式都能触发：
+
+```
+"拉团队帮我重构认证模块"
+"帮我组个`Agent`团队做代码审查"
+"用多`Agent`并行处理这个任务"
+"agent swarm帮我搞定这个需求"
+
+用场景4帮我做用户系统
+```
+
+不需要安装其他依赖，不需要配置环境变量，不需要启动服务。
+
+放进去就能用。
+
+## 进阶玩法：和生态工具组合
+
+这个`Skill`不是孤立存在的，你可以手动组合其他工具来增强功能。
+
+Claude Code的`Skill`生态正在快速成长，老金我逐个讲清楚可以怎么组合。
+
+### `find-skills`：`Skill`自动发现机制
+
+`agent-teams-playbook`内置了一个"`Skill`回退链"：
+
+```
+检测`find-skills`是否可用
+    ↓ 可用
+搜索匹配当前任务的`Skill`
+    ↓ 找到
+调用匹配的`Skill`执行
+    ↓ 没找到或不可用
+回退到本地已安装的`Skill`
+    ↓ 本地也没有
+使用通用流程（`general-purpose agent`）
+```
+
+### `Superpowers`：14个开发工作流`Skill`
+
+GitHub地址： https://github.com/obra/superpowers
+
+这是 Jesse Vincent（obra）做的一套完整的Claude Code开发工作流`Skill`集合，包含14个独立`Skill`，覆盖从头脑风暴到代码合并的完整生命周期。
+
+你可以参考以下对应关系来组合使用：
+
+`brainstorming` → 需求澄清、方案设计 → 建议用于阶段1
+
+`writing-plans` → 拆解任务、写实施计划 → 建议用于阶段2
+
+`dispatching-parallel-agents` → 并行派发`Agent` → 建议用于阶段3
+
+`subagent-driven-development` → 子`Agent`驱动开发+两阶段Review → 建议用于阶段3+4
+
+`test-driven-development` → `RED-GREEN-REFACTOR` → 建议用于阶段3（实现者用）
+
+`requesting-code-review` → 代码审查 → 建议用于阶段4
+
+`finishing-a-development-branch` → 合并/PR/清理 → 建议用于阶段5
+
+关键区别：`superpowers`是一个工具库（14把独立的工具），`agent-teams-playbook`是一个编排器（决定什么时候用哪把工具、怎么组合）。
+
+打个比方：
+
+`superpowers` = 工具箱里的锤子、螺丝刀、扳手，每个工具干一件事
+
+`agent-teams-playbook` = 项目经理，看了图纸后决定先用扳手再用锤子
+
+它们是互补的，不是竞争的。
+
+组合使用时，在阶段2给不同角色的`Agent`指定`superpowers`的`Skill`：
+
+```
+团队蓝图示例：
+架构师 `brainstorming` + `writing-plans`
+实现者 `subagent-driven-development` + `TDD`
+审查员 `requesting-code-review`
+收尾员 `finishing-a-development-branch`
+```
+
+编排器负责编排（谁先谁后、并行还是串行），`superpowers`的`Skill`负责每个角色的具体执行。
+
+> [Claude Code 30k+ star官方插件，小白也能写专业级代码](https://my.feishu.cn/wiki/Y2gqwjSQbiygUgkNuvMcEU4nnLd)老金之前写过一篇`superpowers`的详细教程：
+
+### `planning-with-files`：计划落地成文件
+
+这俩是可以互补的——编排器负责编排决策，`planning-with-files`负责把计划写成可追踪的文件。
+
+阶段对应关系：
+
+阶段1：任务分析
+
+编排器负责：决策场景、选协作模式
+
+`planning-with-files`负责：生成`task_plan.md`
+
+阶段2：团队组建
+
+编排器负责：分配角色、选模型
+
+`planning-with-files`负责：生成`findings.md`
+
+阶段3：并行执行
+
+编排器负责：协调多`Agent`并行
+
+`planning-with-files`负责：各`Agent`更新`progress.md`
+
+阶段4-5：质量把关+交付
+
+编排器负责：质量把关+交付
+
+`planning-with-files`负责：最终状态写入文件
+
+建议的操作流程：
+
+```
+用户："帮我重构认证模块，拉团队搞"
+
+→ 编排器启动
+→ 阶段1：调 `/planning-with-files` 生成 `task_plan.md` + `findings.md`
+→ 阶段2：基于 `task_plan.md` 组建团队
+→ 阶段3：各`Agent`执行，进度写入 `progress.md`
+→ 阶段4：质量把关，结果写入 `findings.md`
+→ 阶段5：交付报告，最终状态更新到 `task_plan.md`
+```
+
+效果：计划有文件，执行有团队，进度可追踪。
+
+你随时打开`progress.md`就能看到每个`Agent`干到哪了。
+
+
+
+> [Claude Code神器：Manus同款文件规划法，价值20亿美元的工作流秘密](https://my.feishu.cn/wiki/QG5Aw1fpZikJP5kHyhrcwRlznMc)金之前写过一篇`planning-with-files`的详细教程：
+
+### TDD工作流：代码有测试保障
+
+在阶段2组建团队时，你可以给实现者Agent指定TDD专用的`subagent_type`，让每个实现者自动遵循测试驱动开发。
+
+#### 组合场景
+
+团队里有"实现者"角色，给实现者指定`subagent_type: "everything-claude-code:tdd-guide"`
+
+需要写新功能，实现者按TDD流程：写测试(RED) → 实现(GREEN) → 重构(IMPROVE)
+
+质量把关阶段，自动检查测试覆盖率是否≥80%
+
+#### 建议的团队蓝图
+
+1. 架构师 设计接口和模块划分 模型：`opus` `subagent_type`：`Explore`
+2. 实现者A TDD实现认证模块 模型：`sonnet` `subagent_type`：`everything-claude-code:tdd-guide`
+3. 实现者B TDD实现权限模块 模型：`sonnet` `subagent_type`：`everything-claude-code:tdd-guide`
+4. 审查员 Code Review 模型：`sonnet` `subagent_type`：`everything-claude-code:code-reviewer`
+
+注意看`subagent_type`那列——实现者用 `tdd-guide`（自动走TDD流程），审查员用 `code-reviewer`（自动做代码审查）。
+
+不是你手动告诉它"请用TDD"，而是Agent类型本身就决定了工作方式。
+
+> 老金之前写过一篇[`everything-claude-code`](https://my.feishu.cn/wiki/Jqf3wAPh2ixRifkssykcnNJOnkg)的详细教程：
+
+### 终极组合：五件套
+
+把上面所有工具串起来（注意：这需要用户手动安装各个Skill先）：
+
+```
+find-skills            →  自动发现可用的社区Skill
+        ↓
+planning-with-files    →  生成结构化计划文件
+        ↓
+agent-teams-playbook   →  基于计划文件组队+编排
+        ↓
+superpowers skills     →  每个Agent用专业Skill执行
+        ↓
+tdd-guide              →  实现者遵循TDD流程
+```
+
+**Skill自动发现、计划有文件、编排**有策略、执行有专业Skill、代码有测试。
+
+老金我的建议是：你可以按需组合这些工具。
+
+`agent-teams-playbook`作为编排器，负责决策什么时候用哪个工具、怎么组合。
+
+其他工具作为"专业Agent"或"Skill"被编排器调用。
+
+这套组合的理想效果是，你说一句"帮我做个用户系统"，Claude Code会：
+
+1. `find-skills`搜索有没有专门做用户系统的Skill
+2. `planning-with-files`生成计划文件
+3. 编排器判断场景、组建团队
+4. 架构师用`brainstorming`设计方案
+5. 实现者用TDD写代码
+6. 审查员做Code Review
+7. 收尾员处理合并和部署
+
+**你只需要在关键节点头确认。**
+
+## 设计原则：老金踩过的坑
+
+做这个Skill的过程中，老金我踩了不少坑，总结了7条底线写进了代码里：
+
+1. **先目标，后组织结构** ——任务不清晰时先澄清，不急着组队
+2. **队伍不超过5个** ——Agent多了反而乱，沟通成本指数级增长
+3. **关键节点必须有质量闸门** ——不能Agent干完就算完
+4. **不默认任何工具可用** ——`find-skills`不一定装了，执行前先验证
+5. **成本只是约束，不是承诺** ——不做"省50%成本"这种不切实际的预估
+6. **遇到问题给选项** ——不替用户做决定，让用户选
+7. **危险操作必须确认** ——大规模变更、删除操作，必须用户点头
+
+这7条是从实际使用中总结出来的，每一条背后都有一个翻车故事。
+
+## 开源地址
+
+**仓库地址：** https://github.com/KimYx0207/`agent-teams-playbook`
+
+Skill完整代码只有216行，放进 `.claude/skills/agent-teams-playbook/SKILL.md` 就能用。
+
+不需要任何依赖，不需要任何配置。
+
+装了它，编排器的Skill回退链就能自动发现社区Skill。
+
+## 老金往期教程导航
+
+这套Agent Teams生态，老金我之前每个工具都写过详细教程，按照从框架到成员的顺序排好了：
+
+1. Agent Teams多Agent协作 框架主力军
+
+教程地址：https://my.feishu.cn/wiki/CAsLwb5BBiVztakm0h9cGnucnRc
+
+2. `everything-claude-code` 专业Agent类型库
+
+教程地址：https://my.feishu.cn/wiki/Jqf3wAPh2ixRifkssykcnNJOnkg
+
+3. `find-skills` 最关键的成员
+
+教程地址：https://my.feishu.cn/wiki/HVU6wTCRoiThWAkgyLac7w3Yncb
+
+4. `planning-with-files` 计划落地文件
+
+教程地址：https://my.feishu.cn/wiki/QG5Aw1fpZikJP5kHyhrcwRlznMc
+
+5. `superpowers` 14个执行Skill
+
+教程地址：https://my.feishu.cn/wiki/Y2gqwjSQbiygUgkNuvMcEU4nnLd
+
+**建议阅读顺序**：先看1了解框架全貌 → 再看3掌握Skill发现机制 → 然后2、4、5按需深入。
+
+评论区聊聊，老金我每条都看。
+
+觉得有用的话，转发给你身边用Claude Code的朋友，别让他们还在手动拼提示词。
+
+<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
