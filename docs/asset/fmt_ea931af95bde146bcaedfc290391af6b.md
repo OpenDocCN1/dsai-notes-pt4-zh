@@ -1,0 +1,94 @@
+
+## 全连接层
+
+网络的最后三个层次是全连接层，其中最后两个全连接层后跟有`Dropout`，以进一步防止过拟合。
+
+## 输出层
+
+最后一个全连接层后是线性层，然后是`softmax`激活函数，输出1000个类别上的概率分布。
+
+### ResNet
+
+`https://en.wikipedia.org/wiki/Residual_neural_network`
+
+`ResNet`（残差网络）是一种深度卷积神经网络架构，由微软研究院的研究员何恺明等人提出。`ResNet`在2015年的ImageNet图像识别大赛中取得了冠军，并在深度学习领域产生了重大影响。它的主要创新点是引入了残差学习的概念，允许训练非常深的网络，从而缓解了深度神经网络训练中的梯度消失和梯度爆炸问题。
+
+![](img/f4a8653cb2f0f748a7635e8278817819.png)
+
+`ResNet`的核心是残差块（residual block），网络通过堆叠这些残差块来构建。一个基本的残差块包含以下几部分：
+
+1. 跳跃连接（Skip Connections）：这是`ResNet`最关键的创新，通过跳跃连接，输入可以直接绕过一个或多个层传到输出，输出是输入与这些层的输出的加和。这种结构使得网络可以学习输入到输出的残差，而不是直接学习输出，这有助于缓解梯度消失问题。
+
+2. 卷积层：残差块内部包含多个卷积层，通常使用小尺寸的卷积核（如3x3），并且通常会有批量归一化（`Batch Normalization`）和`ReLU`激活函数。
+
+3. 池化层：在某些残差块之间会插入最大池化层来降低特征图的空间维度。
+
+`ResNet`有多个变种，包括`ResNet-50`、`ResNet-101`、`ResNet-152`等，数字代表了网络中权重层的数量。
+
+这些变种在网络的深度和宽度上有所不同，但都基于相同的残差学习架构。
+
+`ResNet`能够成功训练超过100层的网络，这在之前是不可能实现的。
+
+在ImageNet竞赛中，`ResNet`取得了3.57%的错误率，远低于之前的表现最好的模型。
+
+### EfficientNet
+
+`https://paperswithcode.com/method/efficientnet`
+
+`EfficientNet`是一种高效的卷积神经网络（CNN）架构，它通过一种新颖的网络缩放方法来提升模型的性能和效率。`EfficientNet` 的核心是其 `compound scaling` 方法，该方法通过一个复合系数统一缩放网络的深度、宽度和分辨率。在过去，网络缩放通常是通过任意选择深度、宽度或分辨率的增加来实现的，而`EfficientNet`的方法则是通过一系列固定的缩放系数来同时增加这三个维度。例如，如果想要使用更多的计算资源，可以通过增加网络深度、宽度和图像大小的特定比例来实现，其中的比例系数是通过在小型模型上进行小规模的网格搜索确定的。
+
+![](img/10168f619b235a42b9f9b1a72496123d.png)
+
+`EfficientNet`的复合缩放方法的直觉在于，如果输入图像更大，网络就需要更多的层来增加感受野，以及更多的通道来捕捉更细粒度的模式。`EfficientNet`的架构本质上并不复杂。基本的`EfficientNet-B0`网络作为后续缩放的基础。作者指出，他们使用NAS来构建基本网络，利用了多目标搜索来同时优化网络的准确性和计算效率。
+
+# Part5 一些思路
+
+1. 多帧提取，面部识别，相似比较，
+
+![](img/aac0bced0fdf178be9333965db155662.png)
+
+![](img/39de12213af6cbe490c1e3a4210d60bb.png)
+
+![](img/6629c99093cb852d12e8739a0a87ef89.png)
+
+![](img/f78954b64684b3fc5786d70c6de8ea0f.png)
+
+![](img/350ae34d13e9b3f062b0af335f7ea683.png)
+
+1. 音频fake
+
+![](img/f15be2a68ed3a18d38791db6a82f456f.png)
+
+![](img/85bfe6e4d88b2439d78a9c8364843227.png)
+
+![](img/cbc7a2a65d69576a802b8e0439f9ed32.png)
+
+![](img/3a98756aa0347cfc9e71cd8a8a4f90b9.png)
+
+![](img/128bc13ceee7d8e9551bdb9dce6e35bb.png)
+
+1. 特征提取
+
++ `chroma_stft`
+
++ `rms`
+
++ `spectral_centroid`
+
++ `spectral_bandwidth`
+
++ `rolloff`
+
++ `zero_crossing_rate`
+
++ `mfcc`
+
+## 别忘了学习规划表~
+
+> 学有余力可以往前学习哟~
+
+> 我们的下一个Task是：[Task3：数据增强，提升模型表现](https://datawhaler.feishu.cn/wiki/O2RmwRSgniVDR0k9GcmcMXsEn6f?from=from_copylink)
+
+<https://datawhaler.feishu.cn/sync/PWC4dhU6Hs5xlMbwwRNckCswnRb>
+
+> 本教程主要由Datawhale 小伙伴写作贡献，经过多位助教内测和建议修改，期待你的点赞和评论～
