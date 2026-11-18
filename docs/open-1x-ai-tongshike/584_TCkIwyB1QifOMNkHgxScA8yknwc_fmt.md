@@ -1,0 +1,372 @@
+
+# AI音乐通用学习手册
+
+> 来源：`https://datawhaler.feishu.cn/docx/OOKMdAN3folQKkxEzy2czsAHnDh`
+
+> ✍️ 作者：`https://datawhaler.feishu.cn/wiki/BOWZwAjXdib52SkZLOEcZbwAnog?from=from_copylink`
+
+## 学前须知
+
++ **学习时间**：1~2天
+
++ **学习难度**：简单
+
++ **学习方式**：
+
+1. 阅读本文档，了解AI音乐的创作流程
+
+1. 选择想要体验音乐生成工具，参考AI音乐制作案例，自己开始创作音乐
+
+1. 熟悉流程后，运用到更多的音乐创作中
+
+> 打卡核实后**「可获得证书」**，优秀打卡内容将被**「展出」**，特别优秀者会邀请来**「一起完善学习文档」**
+
+> 具体打卡要求详见：[【说明文档】打卡（非必须）](`https://datawhaler.feishu.cn/wiki/UR4bwTSjJiAKFLkfqdCc8Dlgnld?from=from_copylink`)
+
+## AI音乐创作简介
+
+AI音乐创作是指使用AI工具生成指定风格的音乐、歌曲等。
+
+当前的AI音乐生成工具按照输入内容可以分为【文生音乐】、【图生音乐】、【音乐生音乐】和【视频生音乐】两大类。
+
+【文生音乐】包括两种方式：
+
++ 第一种是通过提示词（风格、乐器、频率、作者等）描述生成配乐。
+
++ 第二种是根据输入的歌词和音乐风格生成歌曲，包括配乐和人声演唱。
+
+【图生音乐】：AI根据输入的图片，提取关键元素推导出提示词（`prompt`）描述，最后生成音乐。
+
+【音乐生音乐】：输入一段音频（可以是自己的录音或音乐）+想要生成音乐的提示词（`prompt`）描述，AI可以在此基础上生成音乐。
+
+【视频生音乐】：这是AI音乐未来可能的一个[发展方向。目前](`https://pika.art/video/0007bbcb-e617-4e73-8734-480a9ec094ec`)已实现为视频配置音效，如为煎培根配置音效（pika的Sound Effects功能）。
+
+![](img/ee4d94a90abe1b1b9c373c59c6f2fc39.png)
+
+[`_sfx.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UNFqbv8U1onwgyxHp8mcGwS9nWb`)
+
+## AI音乐创作的通用流程
+
+## AI音乐生成工具
+
+### Suno AI（强烈推荐🌟🌟🌟🌟🌟）
+
+功能：【文生音乐】【音乐生音乐】，输入提示词描述辅助生成歌词，然后生成歌曲。
+
+网址：`https://www.suno.ai/`
+
+用户手册英文版：`https://suno-ai.notion.site/FAQs-b72601b96de44e5cacd2cd6baa985448`
+
+Suno ai功能介绍：[Suno AI功能介绍](`https://qixiangxingqiu.feishu.cn/wiki/MKmpw2p3wipHI3kdboacQPVBnkh`)
+
+中文文档：[suno.ai专栏官网文档](`https://ut34bvcsij.feishu.cn/wiki/UrPmwIka7i2yCokZDTjchSyZn7c`)
+
+Suno AI的制作示例：[SunoAI音乐创作分享](`https://qixiangxingqiu.feishu.cn/wiki/FRwuwo1iliLM08k1sEsc8Tqenyb`)
+
+### udio：类似suno的工具（测试中）
+
+网址：`https://www.udio.com/`
+
+udio功能介绍：[udio功能介绍](`https://pyt1f0fi57.feishu.cn/wiki/C4x4w57khiQueJkOCbPcGoGmndd?fromScene=spaceOverview`)
+
+### Stable Audio
+
+功能：【文生音乐】【音乐生音乐】
+
+网址：`https://stableaudio.com/`
+
+用户手册英文版：Stable Audio - User Guide
+
+提示词可以包含以下元素，在准备时，也要根据不同工具的要求进行取舍：
+
++ **音乐表演的不同格式或形式**：Solo（独奏）、Band（乐队）、Orchestra（管弦乐团）、Chorus（合唱团）、Duet（二重奏）。
+
++ **音乐的不同流派或类型**：Rock（摇滚）、Pop（流行）、Hip Hop（嘻哈）、Indie（独立）、Foley、RnB（节奏布鲁斯）。
+
++ **用于制作音乐的工具或装置：**Piano（钢琴），Drum machine（鼓机），Organ（风琴）等。
+
++ 音乐所传达或引发的情绪或心情状态：Dramatic（戏剧性），Happy（快乐的），Driving（激动人心的）等。
+
++ **音乐的特定类型或类别：**Dance（舞曲），Film Instrumental（电影配乐），Sci-Fi（科幻）等。
+
++ 音乐的节奏速度或节拍的快慢程度：Medium（中等），Slow（慢），Building（逐渐加快），Fast（快速），Very Fast（非常快速）。
+
+详细提示词可以参考：[AI音乐提示词](`https://qixiangxingqiu.feishu.cn/wiki/FHqKw1YnfiPVWtkDl82cmUbAnAd`)
+
+Stable Audio提示词示例：
+
+```
+3/4,in 3,3 beat,guitar,drums,bright, happy,claps
+```
+
+Stable Audio提示词解释：
+
+1. 3/4节拍：这表示音乐的拍子是按照3拍一组进行的。这意味着每小节有三个拍子，通常强拍在第一拍上，弱拍在第二和第三拍上。这种节拍常见于华尔兹和其他舞曲中。
+
+1. In 3（三拍）：这表示音乐中的每小节有三个拍子。这样的节奏结构通常产生一种流畅的感觉，与四拍子的节奏相比，更显得舒缓和轻松。
+
+1. 3拍节奏下的吉他和鼓：这意味着吉他和鼓会按照3/4的拍子节奏进行演奏。吉他可能会弹奏和弦，鼓可能会打出相应的节奏，以支持音乐的节奏结构。
+
+1. Bright（明亮）和Happy（快乐）： 这表明音乐的氛围是轻快、愉悦的。这种描述通常意味着音乐具有明亮的旋律、积极的和声和轻快的节奏，能够带来欢乐和愉悦的情绪。
+
+1. Claps（拍手声）： 这表示在音乐中可能会包含拍手声，用来增强节奏感和活力。拍手声常常用于轻松、愉悦的音乐中，给人一种参与感和互动感。
+
+输入提示词后，点击生成，就可以生成音乐。
+
+![](img/627dad0bc8b0fc90ae4ab361c56c9dcf.png)
+
+Stable Audio生成的音乐：
+
+![](img/322006e254a3b92e8abd37dddff6267d.png)
+
+[`3_4-in-3-3-beat-guitar-drums-bright-happy-claps_040924.mp3`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OucVbZ0jYoLnHcxTy0ecGgMinTh`)
+
+生成的音乐：`https://stableaudio.com/1/share/3250f48d-efba-40be-bddf-cdb0acd9076e`
+
+Stable Audio可以将生成音乐作为输入，进行风格调整或增加音乐时长。
+
+![](img/231b14eaa7e7cc4ddb62aaa7dd82228d.png)
+
+Stable Audio有一些预设的提示词库可供选择：
+
+![](img/371053d81b328da4f488d02d7bdb4b3a.png)
+
+### BGM猫：一键生成视频/播客配乐和片头音乐
+
+功能：【文生音乐】
+
+网址：`https://bgmcat.com/home`
+
+以下以生成30s的片头音乐为例：
+
+选择风格为【轻音乐/钢琴】，场景为【旅行】，心情为【浪漫】，点击生成音乐。
+
+![](img/a7b8a85ed20f91d754245f603a64477b.png)
+
+也可以通过描述场景生成音乐。
+
+![](img/8443b0cee19221a5f6a02e11ebb65d9a.png)
+
+### Mubert：AI配乐生成和搜索
+
+功能：【文生音乐】，【图生音乐】
+
+我们可以从一段场景描述中生成音乐描述：
+
+> 你：
+
+> 根据画面描述给出合适的音乐描述：
+
+> Jack Morgan sits in front of his computer, the night outside is quiet, and the light inside the house is warm and soft.
+
+> ChatGPT：
+
+> "Jack Morgan sits in front of his computer, the night outside is quiet, and the light inside the house is warm and soft."
+
+> Description: The scene depicts a tranquil and cozy atmosphere, with Jack Morgan immersed in his computer work. The gentle ambiance suggests a sense of calm and comfort.
+
+> Suggested Music Description: "A serene and introspective melody gently accompanies the quiet night, evoking feelings of warmth and contentment. Soft piano chords and subtle strings create an atmosphere of tranquility and peace, perfectly complementing the scene's serene ambiance."
+
+> 你：
+
+> 提取音乐描述关键词，以逗号分隔：
+
+> A serene and introspective melody gently accompanies the quiet night, evoking feelings of warmth and contentment. Soft piano chords and subtle strings create an atmosphere of tranquility and peace, perfectly complementing the scene's serene ambiance.
+
+> ChatGPT：
+
+> 关键词：
+
+> Serene, introspective, melody, quiet night, warmth, contentment, soft piano chords, subtle strings, tranquility, peace
+
+Mubert【文生音乐】使用示例：
+
+![](img/2790aaa77faead19a3d36764d7e252d5.png)
+
+Mubert【图生音乐】使用示例：
+
+![](img/e6780ed43e1de6bdbdc2510a7b038481.png)
+
+![](img/3bf35c45db08a3f6decd044881d6a215.png)
+
+Mubert参数介绍见[AI音乐提示词](`https://qixiangxingqiu.feishu.cn/wiki/FHqKw1YnfiPVWtkDl82cmUbAnAd#DZwedDdzFoHOoaxlZJ9cODSXnUb`)
+
+使用MUbert搜索油管链接中的类似风格音乐。
+
+![](img/90e24f6dd0171ecc56c1c3c4d0b4be5d.png)
+
+### Beatoven.ai：免版税AI音乐生成
+
+功能：【文生音乐】
+
+网址：`https://www.beatoven.ai/`
+
+教程：`https://www.beatoven.ai/how-it-works`
+
+【文生音乐】示例
+
+![](img/f4c7ada26b93de6bf3ac08a634cad375.png)
+
+### Boomy AI：AI生成音乐
+
+网址：`https://boomy.com/`
+
+官方教程：`https://support.boomy.com/hc/en-us`
+
+登录注册之后，点击创建歌曲：
+
+![](img/3b887a18a97b61d2b372544062a159c9.png)
+
+选择想要创建的歌曲风格：
+
+![](img/467fb8568a7dc7200d9cd90220e98fda.png)
+
++ 电子舞曲（Electronic Dance）：准跟随电子舞曲的节奏，感受EDM风格的扫弦和大鼓合成器
+
++ 说唱节奏（Rap Beats）：受嘻哈和陷阱音乐影响的现代节奏。激发新的舞蹈，叠加您的诗句，或只是跟着节奏点头。
+
++ 低保真（Lo-Fi）：颗粒感的节拍融入到自然气息的环境声中，让您无论晴天还是雨天都能专注。
+
++ 全球节奏（Global Groove）：受拉丁音乐、雷鬼音乐和非洲音乐等全球流行风格的启发，带来轻松的节奏。
+
++ 放松冥想（Relaxing Meditation）：慢慢的、舒缓的音乐，非常适合瑜伽、冥想、学习或入睡。
+
++ 定制：无限创造。使用您自己的创作和制作指导定制任何风格。
+
+生成音乐后可以进一步修改：
+
+![](img/c25447fa240173a68094105f5b7fa13a.png)
+
+完整参数解释见[AI音乐提示词](`https://qixiangxingqiu.feishu.cn/wiki/FHqKw1YnfiPVWtkDl82cmUbAnAd#XdQZd7EkOo1wSXxkdtqcFQB1nKd`)的Boomy参数介绍。
+
+### Soundraw：AI生成音乐
+
+网址：`https://soundraw.io/`
+
+使用方法与之前的工具类似。
+
+设置`Genre`（音乐风格），`Mood`（气氛），主题（`Theme`），长度（`Length`），`Tempo`（节拍），`Instruments`（乐器）。即可生成音乐
+
+![](img/18dc83810ab10bcae002f0840d6b7916.png)
+
+![](img/246437d63c4f19181d35f5e7a9dda408.png)
+
+### SoundGen：AI音乐声生成
+
+功能：【文生音乐】，【音乐生音乐】，【图生音乐】
+
+网址：`https://www.soundgen.io/`
+
+![](img/847292400ecf477e32753f4b04bae953.png)
+
+【文生音乐】
+
+![](img/dba156014a521c07fc34815af9500f82.png)
+
+音乐链接：`https://www.soundgen.io/share/sg-a2ccfca4-1382-47b9-a153-4aa7d696e4ef`
+
+![](img/96dab3def643b17f2d42c8976abde898.png)
+
+[`Ambient, serene.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LBgobLFnsoJFLQxuv6GcHlmtnAc`)
+
+【图生音乐】
+
+![](img/52d8efb23246b47d56a649d67a91d716.png)
+
+音乐链接：`https://www.soundgen.io/share/sg-9c464a27-3aa2-4bdf-bd6a-1775c51150df`
+
+![](img/77a034ae3a95913b5454eead3c60be29.png)
+
+[`Serene, nocturn.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D0GrbN1h8oVFGJxvuYCchV3Jnqc`)
+
+![](img/91c04b077600cfd767aa680a5f8490c4.png)
+
+### splash：【文生音乐】
+
+网址：`https://pro.splashmusic.com/create`
+
+提示词生成参考之前的Mubert使用部分，点击【Try for Free】生成音乐。
+
+![](img/6be8b3edc0c1744b807e82494a667bf4.png)
+
+![](img/64ea259c2d0ca12b9d1cfcd71d0326bb.png)
+
+[`song.mp3`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FFYVb2gJuo9XNExTmL1cCIuJnHe`)
+
+### 【图生音乐】：AI Image to Music Generator：
+
+网址1：`https://imagetomusic.top/#playground`
+
+网址2：`https://huggingface.co/spaces/fffiloni/image-to-music-v2`
+
+![](img/414c625a7e8df1d5db9809b5ef9c5ef3.png)
+
+![](img/5587f5450806bc8a8550463e6f11733b.png)
+
+[`tmp7xocqw_p.wav`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XNxRbJSEtoO8PZxUpjGcSM1FnZe`)
+
+## AI音乐制作辅助工具
+
+### 网易天音
+
+AI音乐制作工具，目前白名单内测中，需申请成为网易音乐人 - 欢迎所有音乐“妄想”。
+
+
+
+# AI音乐工具与资源
+
+## 天韵
+
+网址：`https://tianyin.music.163.com/#/`
+
+乐理知识：`https://tianyin.music.163.com/#/theory`
+
+## TME Studio：音乐辅助工具
+
+官网：`https://y.qq.com/tme_studio/index.html#/`
+
+功能：
+
++ 音乐分离：上传任意歌曲，分离、提取歌曲中的人声和鼓、贝斯、吉他、钢琴等乐器。
+
++ 提取音乐的采样率、位深、BPM、节奏、节拍、调性、和弦进行、鼓点识别、副歌识别等信息。
+
++ 辅助写词：帮你找到合适的押韵词语，打开灵感空间。
+
++ 智能曲谱：为歌曲生成智能吉他、尤克里里、钢琴曲谱，只需上传音乐，即可弹你想弹的歌。
+
+## 网易云音乐X·Studio：AI歌手音乐创作
+
+网址：`https://xstudio.music.163.com/`
+
+教程：`https://xstudio.music.163.com/#jiaocheng`
+
+## ACE Studio：AI歌声合成软件
+
+网址：`https://ace-studio.timedomain.cn`
+
+教程：[ACE Studio使用说明](https://ec26ubh65w.feishu.cn/docx/FNUnd42lwoNOK5xtPUfcRYhYnJc)
+
+## 音虫：AI音乐编曲的音乐制作工具
+
+网址：`https://www.soundbug.com/`
+
+教程：`https://www.soundbug.com/manual`
+
+## Lemonaide：AI辅助编曲
+
+网址：`https://www.lemonaide.ai/`
+
+本地使用：支持Win和Mac系统
+
+# AI音乐的制作案例
+
+[SunoAI音乐创作分享](https://ut34bvcsij.feishu.cn/docx/KtdldD0nOoxKYuxyOz1cTFjMnic?from=from_copylink)
+
+# AI音乐作品集
+
+Suno AI音乐每日top50：`https://music.163.com/playlist?id=9538926002&userid=117213497`
+
+在网易云音乐搜索Sunoai：
+
+![](img/70c03333f395cb2c7551ba8faf8cd3df.png)
