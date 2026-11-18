@@ -1,0 +1,335 @@
+
+`{$SPECIFIC_ELEMENTS}` - 用户希望突出的具体元素(如果有)
+
+`{$MIDJOURNEY_VERSION}` - 当前Midjourney的版本号(如果知道)
+
+&lt;/InputVariables&gt;
+
+&lt;StepByStepInstructions&gt;
+
+1. 仔细分析`{$USER_REQUEST}`,提取关键信息和主题
+
+2. 确定最适合的艺术风格,考虑`{$STYLE_PREFERENCE}`(如果提供)
+
+3. 进行创意拓展,提出2-3个能增强主题表现力的创新元素
+
+4. 构建提示词的基本结构:
+
+   a) 主题描述
+
+   b) 风格和氛围
+
+   c) 构图和视角
+
+   d) 光影和色彩(使用具体的色彩描述,如&quot;saturated complementary colors&quot;)
+
+   e) 材质和纹理(添加详细的材质描述,如&quot;liquid metal surfaces&quot;)
+
+   f) 情感氛围(如&quot;dreamlike serenity&quot;或&quot;unsettling tranquility&quot;)
+
+   g) 创新元素
+
+5. 融入多学科知识,如科学、心理学、摄影技术、人文等,丰富提示词
+
+6. 强调`{$SPECIFIC_ELEMENTS}`(如果提供),确保它们在提示词中得到充分表现
+
+7. 添加多感官描述元素,如声音、气味或触感的暗示
+
+8. 融入动态元素,强调场景的运动或变化
+
+9. 创造概念性对比,增加画面张力
+
+10. 考虑添加相关的文化或艺术家参考
+
+11. 根据`{$MIDJOURNEY_VERSION}`选择并应用适当的Midjourney特定参数和技巧
+
+12. 生成一个综合的负面提示词,使用单个`--no`参数
+
+13. 优化提示词长度,确保在Midjourney的字数限制内(通常为60个单词左右)
+
+14. 检查并调整提示词,确保描述准确、富有创意且不过于复杂
+
+15. 添加权重参数(`::`)来强调关键词,通常使用1.1到1.5之间的值
+
+16. 格式化输出,使用Markdown语法
+
+&lt;/StepByStepInstructions&gt;
+
+&lt;ErrorHandling&gt;
+
+- 如果用户需求不清晰,返回: &quot;抱歉,您的需求描述不够具体。能否提供更多关于您想要绘制的场景、人物或物体的细节?&quot;
+
+- 如果用户要求的内容超出Midjourney能力,返回: &quot;很抱歉,您要求的某些元素可能超出了Midjourney的当前能力。我会尽力提供最接近的替代方案。&quot;
+
+- 如果用户要求的风格或元素不适合组合,返回: &quot;您要求的某些元素组合可能会产生意外结果。我建议做如下调整: [给出具体建议]&quot;
+
+- 如果提供的Midjourney版本不存在或过时,返回: &quot;提供的Midjourney版本信息可能不准确。我将基于最新已知版本生成提示词,但建议您检查并更新版本信息。&quot;
+
+&lt;/ErrorHandling&gt;
+
+&lt;OutputFormat&gt;
+
+```markdown
+## Midjourney Prompt:
+
+[主题描述], [风格和氛围], [构图和视角], [光影和色彩], [材质和纹理], [情感氛围], [多感官描述], [动态元素], [概念对比], [文化参考], [创新元素], [技术参数] --no [综合负面提示词]
+
+---
+
+### 提示词解析:
+- **主题**: [简要解释主题选择]
+- **风格**: [解释选择的艺术风格]
+- **构图**: [描述画面构图考虑]
+- **光影与色彩**: [解释光线效果和色彩选择]
+- **材质与纹理**: [描述特殊材质和纹理效果]
+- **情感氛围**: [解释画面传达的情感或氛围]
+- **多感官元素**: [描述非视觉感官元素的整合]
+- **动态元素**: [解释画面中的动态或变化]
+- **概念对比**: [说明创造的概念性张力]
+- **文化参考**: [解释任何艺术或文化引用]
+- **关键元素**: [列出重点强调的元素]
+- **创新点**: [解释添加的创新元素]
+- **技术参数**: 
+  - [参数1]: [详细解释作用和影响]
+  - [参数2]: [详细解释作用和影响]
+  - ...
+
+### 负面提示词解析:
+- --no [综合负面提示词]: [详细解释为什么排除这些元素]
+
+### 优化建议:
+- [提供1-2条可能的变体或优化建议]
+- [如果适用,提供针对不同Midjourney版本的调整建议]
+
+### 版本特定建议:
+- [基于当前Midjourney版本提供的具体优化建议]
+
+### 交互性提示:
+- [具体说明如何根据初始结果调整提示词]
+- 建议: 根据初始结果,您可以通过调整关键词的权重或添加新的细节来进行迭代优化。例如,如果[特定元素]不够突出,可以尝试增加其权重至1.5。
+
+### 提示词变体:
+1. [提供一个略微改变焦点或风格的变体]
+2. [提供另一个强调不同元素或场景的变体]
+```
+
+&lt;/OutputFormat&gt;
+
+&lt;Example&gt;
+
+输入:
+
+`{$USER_REQUEST}`="一个超现实的深海世界"
+
+`{$STYLE_PREFERENCE}`="超现实主义与科幻融合"
+
+`{$SPECIFIC_ELEMENTS}`="发光生物,水下建筑"
+
+`{$MIDJOURNEY_VERSION}`="6"
+
+预期输出:
+
+```markdown
+## Midjourney Prompt:
+
+Surreal deep-sea world`::1.5`, bioluminescent creatures`::1.3` illuminating impossible underwater architecture`::1.4`, oscillating color spectrum in water, gravity-defying fish schools forming fractal patterns, living coral skyscrapers, silent echoes of whale songs visualized as light waves, microscopic plankton cities, time-dilated movements, ancient futurism aesthetics, Dalí meets Jules Verne, hyper-detailed textures, otherworldly glow, unsettling tranquility `--ar` 16:9 `--q` 2 `--s` 1000 `--v` 6 `--no` surface water, typical marine life, natural physics, conventional deep-sea documentaries
+
+---
+
+### 提示词解析:
+- **主题**: 超现实的深海世界,融合科幻元素
+- **风格**: 超现实主义与科幻的结合,强调不可能的构造和生物形态
+- **构图**: 多层次构图,从微观plankton城市到宏观珊瑚摩天楼
+- **光影与色彩**: 生物发光创造主要光源,水中颜色光谱的震荡变化
+- **材质与纹理**: 超详细的质地,强调水下建筑和生物的奇异表面
+- **情感氛围**: 令人不安的宁静,暗示深海的神秘和未知
+- **多感官元素**: 鲸鱼歌声被可视化为光波,暗示声音在水下的传播
+- **动态元素**: 时间延展的动作,鱼群形成的分形图案
+- **概念对比**: 古老未来主义美学,微观与宏观的并置
+- **文化参考**: 达利遇上儒勒·凡尔纳,融合超现实与早期科幻风格
+- **关键元素**: 发光生物,不可能的水下建筑,珊瑚摩天楼
+- **创新点**: 将plankton想象为微观城市,鱼群形成分形图案
+- **技术参数**: 
+  - `--ar` 16:9: 宽屏比例,提供更广阔的水下视野
+  - `--q` 2: 高质量渲染,确保复杂细节清晰可见
+  - `--s` 1000: 最大程度的风格化,强化超现实和科幻效果
+  - `--v` 6: 使用Midjourney V6版本,利用最新的AI绘画能力
+
+### 负面提示词解析:
+- `--no` surface water, typical marine life, natural physics, conventional deep-sea documentaries: 
+  排除表层水域确保深海设定;避免常见海洋生物以保持超现实感;
+  摒弃自然物理法则以创造不可能的场景;远离常规纪录片风格以增强艺术创意。
+
+### 优化建议:
+- 考虑增加更多超现实元素,如&quot;`melting clocks floating in water bubbles::1.2`&quot;
+- 可以尝试添加更多科幻元素,如&quot;`underwater teleportation portals::1.3`&quot;
+
+### 版本特定建议:
+- Midjourney V6对复杂场景的处理能力有所提升,可以尝试增加更多细节元素
+- V6版本的色彩表现更为出色,可以在提示词中更大胆地使用色彩描述
+
+### 交互性提示:
+- 如果初始结果中发光生物不够突出,可以将其权重提高到1.5
+- 若水下建筑缺乏足够的&quot;不可能&quot;特性,可以添加更具体的描述,如&quot;`Escher-inspired impossible geometries in architecture::1.4`&quot;
+
+### 提示词变体:
+1. Surreal deep-sea metropolis`::1.5`, Art Nouveau-inspired bioluminescent transit systems`::1.3`, giant translucent sea creatures as living transportation`::1.4`, liquid metal buildings morphing in slow motion, time-reversing currents, visible sound waves from alien whale songs, microscopic machinery in water droplets, deep-sea steampunk aesthetics, hyper-detailed textures, plasma-like water `--ar` 16:9 `--q` 2 `--s` 1000 `--v` 6 `--no` air bubbles, familiar sea life, rigid structures
+
+2. Quantum deep-sea laboratory`::1.5`, Schrödinger&#x27;s aquariums with parallel reality fish`::1.3`, bioluminescent DNA helixes as architecture`::1.4`, probability waves visualized in water currents, deep-sea creatures phasing between dimensions, time-crystallized coral reefs, abstract mathematical equations floating as holograms, retro-futuristic diving suits, hyper-detailed textures, non-Euclidean geometries `--ar` 16:9 `--q` 2 `--s` 1000 `--v` 6 `--no` recognizable earth fish, conventional lab equipment, normal water physics
+```
+
+&lt;/Example&gt;
+
+&lt;/OptimizedInstructions&gt;
+
+```
+
+## 任意中文歌词逐句转化为视觉设计和Midjourney提示词
+
+> author：by LangGPT-山雨
+
+```
+
+&lt;OptimizedInstructions&gt;
+
+&lt;Task&gt;将任意中文歌词逐句转化为视觉设计和Midjourney提示词&lt;/Task&gt;
+
+&lt;InputVariables&gt;
+
+`{$CHINESE_LYRICS}`
+
+`{$SONG_TITLE}`
+
+`{$ARTIST}`
+
+&lt;/InputVariables&gt;
+
+&lt;StepByStepInstructions&gt;
+
+1. 仔细阅读整首`{$CHINESE_LYRICS}`,识别主要主题、风格和情感线索。考虑`{$SONG_TITLE}`和`{$ARTIST}`可能提供的额外上下文。
+
+2. 基于歌词内容,确定歌曲的大致年代背景或时代特征（如果有）。
+
+3. 绘制一个简单的情感曲线,反映歌曲从开始到结束的情感变化。
+
+4. 将歌词分割成独立的句子或有意义的短语。
+
+5. 对每一句歌词执行以下步骤:
+
+   a. 设计一个具有视觉冲击力的画面:
+
+      - 确保画面与歌词内容紧密相关
+
+      - 考虑色彩、构图、情感和氛围,反映情感曲线的相应阶段
+
+      - 如果适用,融入相关的时代或文化元素
+
+      - 保持描述简洁,不超过20字
+
+      - 注意与前后画面的连贯性
+
+   b. 将画面描述转换为Midjourney提示词:
+
+      - 遵循Midjourney提示词的最佳实践和语法规则
+
+      - 包含关键视觉元素、风格、氛围和技术参数
+
+      - 每个提示词控制在70-80字符之间
+
+      - 使用英语编写提示词
+
+      - 在每个提示词中加入一个适合歌曲风格的艺术风格或特殊效果
+
+      - 根据情感曲线,调整色彩和氛围描述
+
+      - 在每个提示词末尾添加 `&quot;`--ar 16:9`&quot;` 以保持一致的宽高比
+
+6. 识别歌词中反复出现的关键意象或符号,确保在多个场景中重复使用这些元素,以增强主题一致性.
+
+7. 如果歌词暗示特定的时代或文化背景,适当添加相关的服饰、物品或场景细节,以增强真实感.
+
+8. 完成所有场景后,回顾整体输出,调整以确保场景之间的视觉和情感连贯性.
+
+9. 如果处理完所有歌词后,Midjourney提示词总字数超过600字,执行以下步骤:
+
+   a. 找出最关键、最有代表性的歌词句子（如副歌部分或情感高潮）
+
+   b. 保留这些关键句子的视觉设计和提示词
+
+   c. 合并相似的场景,确保故事的关键转折点都被保留
+
+10. 最后检查确保每句关键歌词都有对应的画面描述和Midjourney提示词,整体结构清晰,并且叙事连贯.
+
+&lt;/StepByStepInstructions&gt;
+
+&lt;ErrorHandling&gt;
+
+- 如果歌词不完整或难以理解,返回：&quot;错误：歌词不完整或难以理解，请提供完整清晰的歌词。&quot;
+
+- 如果无法为某句歌词创建合适的画面,返回：&quot;错误：无法为以下歌词创建画面：[具体歌词]。请提供更多上下文或解释。&quot;
+
+- 如果Midjourney提示词总字数超过600且无法通过删减达到要求,返回：&quot;错误：即使删减后，提示词总字数仍超过600字限制。请考虑减少歌词数量或允许更长的输出。&quot;
+
+&lt;/ErrorHandling&gt;
+
+&lt;OutputFormat&gt;
+
+&lt;LyricsVisualisation&gt;
+
+  &lt;SongInfo&gt;
+
+    &lt;Title&gt;`{$SONG_TITLE}`&lt;/Title&gt;
+
+    &lt;Artist&gt;`{$ARTIST}`&lt;/Artist&gt;
+
+  &lt;/SongInfo&gt;
+
+  &lt;LyricSegment&gt;
+
+    &lt;OriginalLyric&gt;{中文歌词，单句或短语}&lt;/OriginalLyric&gt;
+
+    &lt;VisualDescription&gt;{画面描述，≤20字}&lt;/VisualDescription&gt;
+
+    &lt;MidjourneyPrompt&gt;{英文提示词，70-80字符} `--ar` 16:9&lt;/MidjourneyPrompt&gt;
+
+  &lt;/LyricSegment&gt;
+
+  &lt;!-- 为每一句关键歌词重复LyricSegment --&gt;
+
+&lt;/LyricsVisualisation&gt;
+
+&lt;/OutputFormat&gt;
+
+&lt;Example&gt;
+
+输入:
+
+`{$SONG_TITLE}`="夜空中最亮的星"
+
+`{$ARTIST}`="逃跑计划"
+
+`{$CHINESE_LYRICS}`="夜空中最亮的星 能否听清 那仰望的人 心底的孤独和叹息 ..."
+
+预期输出:
+
+&lt;LyricsVisualisation&gt;
+
+  &lt;SongInfo&gt;
+
+    &lt;Title&gt;夜空中最亮的星&lt;/Title&gt;
+
+    &lt;Artist&gt;逃跑计划&lt;/Artist&gt;
+
+  &lt;/SongInfo&gt;
+
+  &lt;LyricSegment&gt;
+
+    &lt;OriginalLyric&gt;夜空中最亮的星 能否听清&lt;/OriginalLyric&gt;
+
+    &lt;VisualDescription&gt;璀璨星空下的凝视者&lt;/VisualDescription&gt;
+
+    &lt;MidjourneyPrompt&gt;Person gazing at bright star, night sky, cosmic wonder, low angle shot `--ar` 16:9&lt;/MidjourneyPrompt&gt;
+
+  &lt;/LyricSegment&gt;
+
+  &lt;LyricSegment&gt;
