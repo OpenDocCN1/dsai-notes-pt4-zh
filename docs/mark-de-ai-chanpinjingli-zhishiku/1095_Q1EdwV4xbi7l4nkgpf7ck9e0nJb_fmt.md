@@ -1,0 +1,382 @@
+
+# Code
+
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/QoexdlRuCoymKFxSzFfcR6rsnIf](https://qqs7y1hozd1.feishu.cn/docx/QoexdlRuCoymKFxSzFfcR6rsnIf)
+
+
+
+```python
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_qdrant import QdrantVectorStore
+from qdrant_client import QdrantClient
+from uuid import uuid4
+from langchain_community.document_loaders import WebBaseLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain.tools.retriever import create_retriever_tool
+
+from typing import Annotated, Literal, Sequence
+from typing_extensions import TypedDict
+from functools import partial
+
+from langchain import hub
+from langchain_core.messages import BaseMessage, HumanMessage
+from langgraph.graph.message import add_messages
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import PromptTemplate
+from langchain_google_genai import ChatGoogleGenerativeAI
+
+from pydantic import BaseModel, Field
+
+from langgraph.graph import END, StateGraph, START
+from langgraph.prebuilt import ToolNode, tools_condition
+
+import streamlit as st
+
+st.set_page_config(page_title=&quot;AI Blog Search&quot;, page_icon=&quot;:mag_right:&quot;)
+st.header(&quot;:blue[Agentic RAG with LangGraph:] :green[AI Blog Search]&quot;)
+
+# Initialize session state variables if they don&#x27;t exist
+if &#x27;qdrant_host&#x27; not in st.session_state:
+    st.session_state.qdrant_host = &quot;&quot;
+if &#x27;qdrant_api_key&#x27; not in st.session_state:
+    st.session_state.qdrant_api_key = &quot;&quot;
+if &#x27;gemini_api_key&#x27; not in st.session_state:
+    st.session_state.gemini_api_key = &quot;&quot;
+
+def set_sidebar():
+    &quot;&quot;&quot;Setup sidebar for API keys and configuration.&quot;&quot;&quot;
+    with st.sidebar:
+        st.subheader(&quot;API Configuration&quot;)
+        
+        qdrant_host = st.text_input(&quot;Enter your Qdrant Host URL:&quot;, type=&quot;password&quot;)
+        qdrant_api_key = st.text_input(&quot;Enter your Qdrant API key:&quot;, type=&quot;password&quot;)
+        gemini_api_key = st.text_input(&quot;Enter your Gemini API key:&quot;, type=&quot;password&quot;)
+
+        if st.button(&quot;Done&quot;):
+            if qdrant_host and qdrant_api_key and gemini_api_key:
+                st.session_state.qdrant_host = qdrant_host
+                st.session_state.qdrant_api_key = qdrant_api_key
+                st.session_state.gemini_api_key = gemini_api_key
+                st.success(&quot;API keys saved!&quot;)
+            else:
+                st.warning(&quot;Please fill all API fields&quot;)
+
+def initialize_components():
+    &quot;&quot;&quot;Initialize components that require API keys&quot;&quot;&quot;
+    if not all([st.session_state.qdrant_host, 
+               st.session_state.qdrant_api_key, 
+               st.session_state.gemini_api_key]):
+        return None, None, None
+
+    try:
+        # Initialize embedding model with API key
+        embedding_model = GoogleGenerativeAIEmbeddings(
+            model=&quot;models/embedding-001&quot;,
+            google_api_key=st.session_state.gemini_api_key
+        )
+
+        # Initialize Qdrant client
+        client = QdrantClient(
+            st.session_state.qdrant_host,
+            api_key=st.session_state.qdrant_api_key
+        )
+
+        # Initialize vector store
+        db = QdrantVectorStore(
+            client=client,
+            collection_name=&quot;qdrant_db&quot;,
+            embedding=embedding_model
+        )
+
+        return embedding_model, client, db
+        
+    except Exception as e:
+        st.error(f&quot;Initialization error: {str(e)}&quot;)
+        return None, None, None
+
+class AgentState(TypedDict):
+    messages: Annotated[Sequence[BaseMessage], add_messages]
+
+# Edges
+## Check Relevance
+def grade_documents(state) -&gt; Literal[&quot;generate&quot;, &quot;rewrite&quot;]:
+    &quot;&quot;&quot;
+    Determines whether the retrieved documents are relevant to the question.
+
+    Args:
+        state (messages): The current state
+
+    Returns:
+        str: A decision for whether the documents are relevant or not
+    &quot;&quot;&quot;
+
+    print(&quot;---CHECK RELEVANCE---&quot;)
+
+    # Data model
+    class grade(BaseModel):
+        &quot;&quot;&quot;Binary score for relevance check.&quot;&quot;&quot;
+
+        binary_score: str = Field(description=&quot;Relevance score &#x27;yes&#x27; or &#x27;no&#x27;&quot;)
+
+    # LLM
+    model = ChatGoogleGenerativeAI(api_key=st.session_state.gemini_api_key, temperature=0, model=&quot;gemini-2.0-flash&quot;, streaming=True)
+
+    # LLM with tool and validation
+    llm_with_tool = model.with_structured_output(grade)
+
+    # Prompt
+    prompt = PromptTemplate(
+        template=&quot;&quot;&quot;You are a grader assessing relevance of a retrieved document to a user question. \n 
+        Here is the retrieved document: \n\n {context} \n\n
+        Here is the user question: {question} \n
+        If the document contains keyword(s) or semantic meaning related to the user question, grade it as relevant. \n
+        Give a binary score &#x27;yes&#x27; or &#x27;no&#x27; score to indicate whether the document is relevant to the question.&quot;&quot;&quot;,
+        input_variables=[&quot;context&quot;, &quot;question&quot;],
+    )
+
+    # Chain
+    chain = prompt | llm_with_tool
+
+    messages = state[&quot;messages&quot;]
+    last_message = messages[-1]
+
+    question = messages[0].content
+    docs = last_message.content
+
+    scored_result = chain.invoke({&quot;question&quot;: question, &quot;context&quot;: docs})
+
+    score = scored_result.binary_score
+
+    if score == &quot;yes&quot;:
+        print(&quot;---DECISION: DOCS RELEVANT---&quot;)
+        return &quot;generate&quot;
+
+    else:
+        print(&quot;---DECISION: DOCS NOT RELEVANT---&quot;)
+        print(score)
+        return &quot;rewrite&quot;
+    
+# Nodes
+## agent node
+def agent(state, tools):
+    &quot;&quot;&quot;
+    Invokes the agent model to generate a response based on the current state. Given
+    the question, it will decide to retrieve using the retriever tool, or simply end.
+
+    Args:
+        state (messages): The current state
+
+    Returns:
+        dict: The updated state with the agent response appended to messages
+    &quot;&quot;&quot;
+    print(&quot;---CALL AGENT---&quot;)
+    messages = state[&quot;messages&quot;]
+    model = ChatGoogleGenerativeAI(api_key=st.session_state.gemini_api_key, temperature=0, streaming=True, model=&quot;gemini-2.0-flash&quot;)
+    model = model.bind_tools(tools)
+    response = model.invoke(messages)
+    
+    # We return a list, because this will get added to the existing list
+    return {&quot;messages&quot;: [response]}
+
+## rewrite node
+def rewrite(state):
+    &quot;&quot;&quot;
+    Transform the query to produce a better question.
+
+    Args:
+        state (messages): The current state
+
+    Returns:
+        dict: The updated state with re-phrased question
+    &quot;&quot;&quot;
+
+    print(&quot;---TRANSFORM QUERY---&quot;)
+    messages = state[&quot;messages&quot;]
+    question = messages[0].content
+
+    msg = [
+        HumanMessage(
+            content=f&quot;&quot;&quot; \n 
+                    Look at the input and try to reason about the underlying semantic intent / meaning. \n 
+                    Here is the initial question:
+                    \n ------- \n
+                    {question} 
+                    \n ------- \n
+                    Formulate an improved question: &quot;&quot;&quot;,
+        )
+    ]
+
+    # Grader
+    model = ChatGoogleGenerativeAI(api_key=st.session_state.gemini_api_key, temperature=0, model=&quot;gemini-2.0-flash&quot;, streaming=True)
+    response = model.invoke(msg)
+    return {&quot;messages&quot;: [response]}
+
+## generate node
+def generate(state):
+    &quot;&quot;&quot;
+    Generate answer
+
+    Args:
+        state (messages): The current state
+
+    Returns:
+         dict: The updated state with re-phrased question
+    &quot;&quot;&quot;
+    print(&quot;---GENERATE---&quot;)
+    messages = state[&quot;messages&quot;]
+    question = messages[0].content
+    last_message = messages[-1]
+
+    docs = last_message.content
+
+    # Initialize a Chat Prompt Template
+    prompt_template = hub.pull(&quot;rlm/rag-prompt&quot;)
+
+    # Initialize a Generator (i.e. Chat Model)
+    chat_model = ChatGoogleGenerativeAI(api_key=st.session_state.gemini_api_key, model=&quot;gemini-2.0-flash&quot;, temperature=0, streaming=True)
+
+    # Initialize a Output Parser
+    output_parser = StrOutputParser()
+    
+    # RAG Chain
+    rag_chain = prompt_template | chat_model | output_parser
+
+    response = rag_chain.invoke({&quot;context&quot;: docs, &quot;question&quot;: question})
+    
+    return {&quot;messages&quot;: [response]}
+
+# graph function
+def get_graph(retriever_tool):
+    tools = [retriever_tool]  # Create tools list here
+    
+    # Define a new graph
+    workflow = StateGraph(AgentState)
+
+    # Use partial to pass tools to the agent function
+    workflow.add_node(&quot;agent&quot;, partial(agent, tools=tools))
+    
+    # Rest of the graph setup remains the same
+    retrieve = ToolNode(tools)
+    workflow.add_node(&quot;retrieve&quot;, retrieve)
+    workflow.add_node(&quot;rewrite&quot;, rewrite)  # Re-writing the question
+    workflow.add_node(
+        &quot;generate&quot;, generate
+    )  # Generating a response after we know the documents are relevant
+    # Call agent node to decide to retrieve or not
+    workflow.add_edge(START, &quot;agent&quot;)
+
+    # Decide whether to retrieve
+    workflow.add_conditional_edges(
+        &quot;agent&quot;,
+        # Assess agent decision
+        tools_condition,
+        {
+            # Translate the condition outputs to nodes in our graph
+            &quot;tools&quot;: &quot;retrieve&quot;,
+            END: END,
+        },
+    )
+
+    # Edges taken after the `action` node is called.
+    workflow.add_conditional_edges(
+        &quot;retrieve&quot;,
+        # Assess agent decision
+        grade_documents,
+    )
+    workflow.add_edge(&quot;generate&quot;, END)
+    workflow.add_edge(&quot;rewrite&quot;, &quot;agent&quot;)
+
+    # Compile
+    graph = workflow.compile()
+
+    return graph
+
+def generate_message(graph, inputs):
+    generated_message = &quot;&quot;
+
+    for output in graph.stream(inputs):
+        for key, value in output.items():
+            if key == &quot;generate&quot; and isinstance(value, dict):
+                generated_message = value.get(&quot;messages&quot;, [&quot;&quot;])[0]
+    
+    return generated_message
+
+def add_documents_to_qdrant(url, db):
+    try:
+        docs = WebBaseLoader(url).load()
+        text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
+            chunk_size=100, chunk_overlap=50
+        )
+        doc_chunks = text_splitter.split_documents(docs)
+        uuids = [str(uuid4()) for _ in range(len(doc_chunks))]
+        db.add_documents(documents=doc_chunks, ids=uuids)
+        return True
+    except Exception as e:
+        st.error(f&quot;Error adding documents: {str(e)}&quot;)
+        return False
+
+def main():
+    set_sidebar()
+
+    # Check if API keys are set
+    if not all([st.session_state.qdrant_host, 
+                st.session_state.qdrant_api_key, 
+                st.session_state.gemini_api_key]):
+        st.warning(&quot;Please configure your API keys in the sidebar first&quot;)
+        return
+
+    # Initialize components
+    embedding_model, client, db = initialize_components()
+    if not all([embedding_model, client, db]):
+        return
+
+    # Initialize retriever and tools
+    retriever = db.as_retriever(search_type=&quot;similarity&quot;, search_kwargs={&quot;k&quot;: 5})
+    retriever_tool = create_retriever_tool(
+        retriever,
+        &quot;retrieve_blog_posts&quot;,
+        &quot;Search and return information about blog posts on LLMs, LLM agents, prompt engineering, and adversarial attacks on LLMs.&quot;,
+    )
+    tools = [retriever_tool]
+
+    # URL input section
+    url = st.text_input(
+        &quot;:link: Paste the blog link:&quot;,
+        placeholder=&quot;e.g., https://lilianweng.github.io/posts/2023-06-23-agent/&quot;
+    )
+    if st.button(&quot;Enter URL&quot;):
+        if url:
+            with st.spinner(&quot;Processing documents...&quot;):
+                if add_documents_to_qdrant(url, db):
+                    st.success(&quot;Documents added successfully!&quot;)
+                else:
+                    st.error(&quot;Failed to add documents&quot;)
+        else:
+            st.warning(&quot;Please enter a URL&quot;)
+
+    # Query section
+    graph = get_graph(retriever_tool)
+    query = st.text_area(
+        &quot;:bulb: Enter your query about the blog post:&quot;,
+        placeholder=&quot;e.g., What does Lilian Weng say about the types of agent memory?&quot;
+    )
+
+    if st.button(&quot;Submit Query&quot;):
+        if not query:
+            st.warning(&quot;Please enter a query&quot;)
+            return
+
+        inputs = {&quot;messages&quot;: [HumanMessage(content=query)]}
+        with st.spinner(&quot;Generating response...&quot;):
+            try:
+                response = generate_message(graph, inputs)
+                st.write(response)
+            except Exception as e:
+                st.error(f&quot;Error generating response: {str(e)}&quot;)
+
+    st.markdown(&quot;---&quot;)
+    st.write(&quot;Built with :blue-background[LangChain] | :blue-background[LangGraph] by [Charan](https://www.linkedin.com/in/codewithcharan/)&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+```
