@@ -1,0 +1,490 @@
+
+# Compiler IR - 编译原理
+
+> 来源：[https://learning.feishu.cn/docx/EpgndEYyDo5BhHx7CDCc8KUCnVc](https://learning.feishu.cn/docx/EpgndEYyDo5BhHx7CDCc8KUCnVc)
+
+published: https://zhuanlan.zhihu.com/p/15281603718
+
+Compiler IR - Compiler Theory
+
+学习路线图：
+
+1.  理解编译原理中的基础理论。如：`Linear IR`, `Graph IR`, `Basic Block`, `CFG` 等。
+
+1.  [`Hands-on LLVM essentials`](https://deep-learning.feishu.cn/wiki/FnyawtybTi5Wynkzer2cRW1qn8g?fromScene=spaceOverview)。`LLVM` Coding 练习。掌握 `IRBuilder`、符号表等 `LLVM` API。
+
+1.  [`LLVM IR` 设计思想 & 局限性](https://deep-learning.feishu.cn/wiki/Z128w7fUziim3KkDCamcfEBenAh?fromScene=spaceOverview)。理解 `LLVM IR` 的局限性。了解 `MLIR`、`SPIR-V`、`OpenMP` 等产生的背景。
+
+1.  `MLIR` 相关 - 待定义。
+
+1.  `MLIR Dialect` 设计思想 & 局限性。
+
+1.  `MLIR` Coding 练习。掌握 `dialect` 相关的 API，能写一个 `DSL`。比如，`TritonGPU`，`Triton NVGPU`。
+
+本文，主要涉及编译原理中的基础理论，`SSA` & `CFG` 入门。
+
+要点总结：
+
+1.  理解 `SSA`，`CFG`，`basic block` 的概念。
+
+1.  区分 `GraphIR` 和 `LinearIR`。实际多是混合 IR，`CFG` 表示 `block` 之间的控制流，`block` 内可以是任意 IR。
+
+1.  与 `Three-Address Code` 对标的，是 `stack machine`。`Java bytecode` 用了，`size` 小，网络传输有优势。
+
+TODO：
+
+1.  增加更多实际代码示例，尤其是在 IR 的不同形式和优化策略方面
+
+1.  熟悉 `SSA`, `CFG` 相关的理论，理解其在编译优化中的意义与应用。
+
+1.  在讨论 `SSA` 和符号表时，可以引入实际编译器中的示例，展示其在代码生成中的作用
+
+1.  尝试实现简单的编译器，使用 `LLVM IR` 作为中间表示，逐步实现基本的优化策略。
+
+1.  结合 `MLIR`，探索如何为特定 `DSL` 开发 IR。
+
+# 概念解释
+
+## basic block
+
+最大长度的 无分支代码序列。
+
+执行时，总是从第 1 条指令进入，按顺序执行，除非发生了中断（比如除 0）。
+
+## 控制流图 (`CFG`)
+
+`CFG`：control flow graph。节点是 `basic block`，边是 控制转移。
+
+在编译器优化中，`CFG` 是关键工具，比如：
+
++   控制流分析
+
++   指令调度
+
++   全局寄存器分配。
+
+# IR 设计思考
+
+## IR 的数据结构
+
+`IR` 要满足 3 个基本 feature：
+
+1.  强大的表达能力，能够记录丰富的信息，如：变量地址，参数的寄存器分配。
+
+1.  程序分析优化。`Analyzable` & `Optimizable`。可以用代码自动改代码。
+
+1.  可 `debug`。开发者可看可改，是更好的。
+
+编译器的首要任务是保证转换的正确性 (`correctness`)，其次才是优化 (`optimization`) 。
+
+所以，`IR` 存储的信息，首先要准确且没有二义性。
+
+为了方便优化，设计上需要做 `tradeoff`：使用结构化存储，还是非结构化存储（`metadata`）。
+
+现代 `IR` 通常使用符号表（`Symbol Table`）和集合（`Multiset`）。
+
+`LLVM IR` 提供了 3 种等价的形式：
+
++   `in-memory form`。
+
++   `bitcode form`。扩展名 `*.bc`
+
++   `textural form`. `Human readable`。扩展名 `*.ll`。`LLVM` 中，也叫 `assembly form`。
+
+## 静态单赋值形式 (`SSA`)
+
+思路：
+
+编译器会生成大量临时值。
+
+如果能设计一种 `naming convention`，在 `name` 中携带部分信息，可能会有不错的收益。
+
+方案：
+
+`SSA`（`Static Single Assignment`），引入 `value-based name system`。
+
+同时编码控制流和数据流，优化编译器性能。
+
+`SSA` 提升了我对编程语言（`PL`）的理解。
+
+`Rust` 中变量默认是不可变的 (`const`)，这是更优秀的设计。
+
+“变量”一词不够准确，实际上它们只是临时值，不必可变。
+
+在并行计算中，应避免大量使用可变变量。
+
+1.  增加状态管理的复杂性，给编译优化带来显著挑战。
+
+1.  手动添加大量 `const` 修饰符以提升性能，增加认知负担。
+
+## 临时值处理
+
+编译器生成大量临时值，其命名（`Naming`） 和位置（`location`） 是编译器设计的核心问题。
+
++   `Naming` => 采用 `SSA` (`Static Single Assignment`)
+
++   `location` => 使用 `Register-to-Register` 内存模型
+
+现代 `IR` 多采用 `Register-to-Register` 内存模型，分 2 步：
+
+1.  先使用无限寄存器模型（`virtual register`）。
+
+1.  [`LLVM` 寄存器分配](https://deep-learning.feishu.cn/wiki/D7Qjwhkz2i6f5xkJ61GcI7xrnSd?fromScene=spaceOverview)`codegen` 时，映射到有限的物理寄存器上。寄存器分配，详见
+
+## 增量 vs 完整 IR 传递
+
+编译器 `Pass` 之间传递 `IR` 时，只传改动的增量部分，还是新的完整 `IR`？
+
+`LLVM` 的回答是：传完整 `IR`。
+
+`LLVM IR` is a `Complete Code Representation`。（`Chris Lattner`，2011）
+
+类比 `git` 与 `svn`。
+
+`git` 保存完整 `commit`，而 `svn` 只保存变化的增量部分。
+
+结果是，`git` 有强大的 `conflict` 处理能力，而 `svn` 由于缺乏上下文信息，难以自动处理 `conflict`。
+
+在大数据开发中，也有类似的场景。
+
+在 `data pipeline` 中，每个 `stage` 的 `input` & `output`，传完整 `message`，还是增量 `message`。
+
+我认同传完整 `message` 的方案。
+
+传递完整 `IR` 的代价是，中间结果高度冗余，浪费内存和磁盘空间。
+
+但，这种代价，在现代机器上一般不太敏感，花点钱就能解决。
+
+# IR 基本类型
+
+2 种基本形式：
+
++   `linear IR`。`machine level` 常用
+
++   `Graph IR`。`high level IR` 常用
+
+## Graph IR
+
+实际多是混合 IR，`CFG` 表示 `block` 之间的控制流，`block` 内可以是任意 IR。
+
+常见的 Graph IR 包括：
+
++   抽象语法树 （`AST`）。
+
++   调用图（`call graph`）。运行时过程间的控制转移，支持过程间分析与优化。
+
++   数据依赖图（`data dependence graph`）。表示 `value` 的 `def-use` 关系。
+
++   控制流图（`CFG`）。
+
+控制流分析，指令调度，全局寄存器分配等，都依赖 `CFG`。
+
+理解偏序的概念。依赖关系图规定了一种偏序，允许多种执行顺序（拓扑序）。
+
+## Linear IR
+
+流行的 2 种 `Linear IR`：
+
+1.  `Stack-Machine Code`：堆栈机。紧凑、高效存储。
+
+1.  `Three-Address Code`：模拟现代 `RISC` 架构，通常以四元组形式实现（运算符、两个操作数、一个结果）。
+
+二地址代码逐渐被淘汰，因为内存限制不再是问题。
+
+### Stack-Machine Code
+
+`Java bytecode` 就用了 `Stack-Machine` 模型，是为了程序 `size` 小，网络传输有优势。
+
+[`CS143` 编译原理笔记 4 - Codegen & Runtime](https://deep-learning.feishu.cn/wiki/Idfswzkdbiyazwk8VEscYiSDn0f?fromScene=spaceOverview#share-C1Zrd6clKo8HHNxApQ4cpeqHndc)`Stack-Machine` 的详细介绍：
+
+操作数存储在堆栈中。
+
+根据 `opcode` 操作数的数量进行 `pop` 操作，计算后将结果 `push` 回堆栈。
+
+节省内存空间，无需为操作数和结果命名。
+
+堆栈 `IR` 通常包括 `swap` 操作，交换堆栈顶部的两个元素。
+
+例子，`a - 2 * b` 的执行如下
+
+```
+push 2
+push b
+multiply   ; 计算 2 * b
+push a
+substract  ; 计算 a - (2 * b)
+```
+
+`swap` 操作的使用场景：
+
+1.  调整操作数顺序。
+
+1.  准备函数参数。
+
+1.  优化计算，减少指令数量。
+
+例子，表达式 `(a + b) * c`，若堆栈顺序为 `c`, `a`, `b`，使用 `swap` 调整顺序
+
+```
+push c
+push a
+push b
+swap        ; 堆栈 c, a, b 变为 c, b, a
+add         ; 计算 a + b
+push c
+multiply    ; 计算 (a + b) * c
+```
+
+### Three-Address Code
+
+通常实现为四元组：一个运算符、两个操作数和一个结果。
+
+将各四元组连接形成 `basic block`。
+
+例子，`a - 2 * b` 的执行如下
+
+```
+t1 = 2
+t2 = b
+t3 = t1 * t2
+t4 = a
+t5 = t4 - t3
+```
+
+`Three-Address Code` 的 3 种实现方案，& `IR transform` 的代价对比（以指令重排为例）
+
+1.  `sample array`。需修改数组的内容本身。
+
+1.  `array of pointer`。只需修改指针值。
+
+1.  `linked list`。存储需求低，但只能顺序遍历。
+
+前 2 种方案需预估指令数量分配内存，可能导致空间浪费。
+
+![](img/b29c0e7c86b95831f778b2aba49f36fd.png)
+
+### 破坏性操作
+
+破坏性操作直接修改操作数的值，导致原值被覆盖或丢失。
+
+典型例子：`a = a + 1`。
+
+`Two-Address Code`，每条指令都可能直接修改一个操作数，导致破坏性操作。
+
+`Three-Address Code`，通过引入临时变量来模拟破坏性操作，保持原始操作数值不变。
+
+例子：
+
+```
+# Two-Address Code
+add a, 1 ; a = a + 1
+
+# Three-Address Code
+t1 = a      ; 保存原始值
+t2 = t1 + 1 ; 计算新值
+a = t2      ; 更新 a
+```
+
+## linear IR => CFG - TODO
+
+在 `LLVM` 中，构建 `CFG` 相对简单，`basic block` 分析完成后，编写一个 `pass` 即可。
+
+# IR 实现的要点
+
+## SSA
+
+推荐阅读：《`Engineering A Compiler`》第五章
+
+`SSA` 设计用于优化，包含 2 个关键要点：
+
+1.  每个变量只能被赋值一次。
+
+1.  `Phi` 指令根据执行的 `basic block` 选择变量值。
+
+底层原理：把值映射到名字，形成 `value-based name system`。
+
+`SSA` 有效编码控制流和数据流信息，便于分析和优化。
+
+指令稀疏，不够紧凑，常与稀疏化分析策略结合使用。
+
+`SSA` 的设计灵感来源于 `Fortran` 编译器的命名实验。
+
+`LLVM IR` 就是一种 `SSA`。
+
+`phi` 函数引入 2 个问题：
+
+1.  与 `three-address model` 不完全一致，输入的 `operand` 可能超过 2 个。
+
+1.  破坏 `declare-before-use` 规则。某些分支未执行，导致变量未定义。未定义的分支不会被选择，所以，影响也不大。
+
+如果 `basic block` 内有 `phi-node`，`phi-node` 必须是 `block` 的第 1 条 `instruction`。
+
+这是语法规定。
+
+`LLVM IR` 中，`phi` 函数的基本语法如下：
+
+```
+%result = phi <type> [ %value1, %pred1 ], [ %value2, %pred2 ], ...
+```
+
+欺骗 `SSA` 检查，用 `memory address` 绕过 `phi` 函数的思路如下。
+
+参考 `shared layout` 的思路，用 `memref` 地址，代替 `phi` 的功能。读写 `address` 内的 `value` 即可。
+
+思路来自 2019 `EuroLLVM Developers’ Meeting` - `LLVM IR Tutorial`
+
+https://www.youtube.com/watch?v=m8G_S5LwlTo
+
+![](img/1af04c811f49eb380b3cec6b3e07bb00.png)
+
+![](img/0662a19a82491f58bb5daebf2a715482.png)
+
+## IR 的内存模型
+
+2 种内存模型
+
+1.  `Register-to-Register Model`。所有值在寄存器中，但允许语义上显式放在内存中。
+
+1.  `Memory-to-Memory Model`。所有值在内存中。执行时数据会经过 `register`。
+
+大多数 `IR` 两种模型的实现代价相似
+
+但，`stack-machine` 只能用 `Memory-to-Memory`。
+
+考虑到性能，`RISC` 机器通常使用 `Register-to-Register`。
+
+## 符号表
+
+符号表（`symbol table`）是保存编译过程全局信息的 `context`。
+
+编译器通常根据不同目的使用多个符号表。
+
+问题建模：`non-integer` 到 `compact set of integers` 的高效 `mapping`
+
+常用数据结构为 `linked sheafs of hash tables`，包含两部分：
+
++   `Hash Table` 提升 `namespace` 内的查找效率。
+
++   `Linked Sheafs` 解决 `nested namespace`，支持作用域的层次结构
+
+这种结构允许在处理复杂作用域时，快速访问和管理符号信息。
+
+![](img/3626f594457669b3e4d8393685553815.png)
+
+基于 `multiset` 的新数据结构，解决 `worst-case` 时 `hash table` 查询效率低的问题。
+
+Paper: `Using multiset discrimination to solve language processing problems without hashing`
+
+https://www.sciencedirect.com/science/article/pii/030439759400183J
+
+1995 年，40 页。
+
+符号表的设计要素：
+
++   `Scalability`
+
++   `Space efficiency`
+
++   `Cost of CRUD`
+
+符号表核心 API：
+
++   `LookUp(name)`：查找给定名称的记录。
+
++   `Insert(name, record)`：插入名称和对应记录，更新符号表。
+
+`lexically scoped symbol table`，支持嵌套命名空间的 API：
+
++   `InitializeScope()`：开始新的作用域，准备存储相关的符号信息。
+
++   `FinalizeScope()`：结束当前作用域，清理相关的符号信息。
+
+`Static coordinate`：
+
++   `<I, o>` 记录变量 `x` 的地址信息。
+
++   `l`: 变量声明所在的 `lexical level`。
+
++   `o`: 该 `level` 内的 `offset`。
+
+# 附录
+
+## Fortran 的 Naming 实验
+
+![](img/e33ce098d759942f4ebb56e089b6542b.png)
+
+![](img/7b19a4eade1ea71a96cc29e0706450d2.png)
+
+THE IMPACT OF NAMING
+
+In the late 1980s, we experimented with naming schemes in a `FORTRAN`
+
+compiler. The first version generated a new temporary register for each
+
+computation by bumping a simple counter. It produced large name spaces,
+
+for example, 985 names for a 210-line implementation of the singular value
+
+decomposition (`SVD`). The name space seemed large for the program size.
+
+It caused speed and space problems in the register allocator, where the
+
+size of the name space governs the size of many data structures. (Today,
+
+we have better data structures and faster machines with more memory.)
+
+The second version used an `allocate/free` protocol to manage names. The
+
+front end allocated temporaries on demand and freed them when the
+
+
+
+immediate uses were finished. This scheme used fewer names; for example, SVD used roughly 60 names. It sped up allocation, reducing, for example, the time to find live variables in SVD by 60 percent.
+
+Unfortunately, associating multiple expressions with a single temporary name obscured the flow of data and degraded the quality of optimization.
+
+The decline in code quality overshadowed any compile-time benefits.
+
+Further experimentation led to a short set of rules that yielded strong optimization while mitigating growth in the name space.
+
+## 1. Each textual expression received a unique name, determined by entering the operator and operands into a hash table. Thus, each occurrence of an expression, for example, `r17+r21`, targeted the same register.
+
+## 2. In `h opi ri, rj ⇒ rk`, `k` was chosen so that `i,j< k`.
+
+## 3. Register copy operations (`i2i ri ⇒rj` in `ILOC`) were allowed to have `i` > `j` only if `rj` corresponded to a scalar program variable. The registers for such variables were only defined by copy operations. Expressions evaluated into their "natural" register and then were moved into the register for the variable.
+
+## 4. Each store operation (`store ri ⇒rj` in `ILOC`) is followed by a copy from `ri` into the variable’s named register. (Rule 1 ensures that loads from that location always target the same register. Rule 4 ensures that the virtual register and memory location contain the same value.)
+
+This name-space scheme used about 90 names for SVD, but exposed all the optimizations found with the first name-space scheme. The compiler used these rules until we adopted SSA form, with its discipline for names.
+
+# Reference
+
+关于 compiler IR 的 Paper 很少的。
+
+Engineering A Compiler. Chapter 5
+
+Static Single Assignment Book
+
+LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation
+
+`https://llvm.org/pubs/2004-01-30-CGO-LLVM.pdf`
+
+Chris Lattner, 2004
+
+MLIR: A Compiler Infrastructure for the End of Moore's Law
+
+`https://arxiv.org/abs/2002.11054`
+
+Chris Lattner, 2020
+
+编译器与中间表示: LLVM IR, SPIR-V, 以及 MLIR
+
+`https://www.lei.chat/zh/posts/compilers-and-irs-llvm-ir-spirv-and-mlir/`
+
+Lei Zhang, 2022
+
+Chris Lattner 介绍 LLVM high-level design
+
+`https://aosabook.org/en/v1/llvm.html`
+
+2011 年初版的 The Architecture of Open Source Applications (Volume 1) - LLVM
