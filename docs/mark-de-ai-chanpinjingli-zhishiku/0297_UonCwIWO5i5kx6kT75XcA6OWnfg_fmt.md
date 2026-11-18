@@ -1,0 +1,406 @@
+
+# Stable Diffusion 保姆级教程
+
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/LB5dd03OMoC5GUxzfy5cEZEgnqg](https://qqs7y1hozd1.feishu.cn/docx/LB5dd03OMoC5GUxzfy5cEZEgnqg)
+
+## 什么是 Stable Diffusion
+
+Stable Diffusion是一种`Latent Diffusion Model`，能够从文本描述中生成详细的图像。它还可以用于图像修复、图像绘制、文本到图像和图像到图像等任务。简单地说，我们只要给出想要的图片的文字描述在提Stable Diffusion就能生成符合你要求的逼真的图像。
+
+Stable Diffusion将“图像生成”过程转换为逐渐去除噪声的“扩散”过程，整个过程从随机高斯噪声开始，经过训练逐步去除噪声，直到不再有噪声，最终输出更贴近文本描述的图像。这个过程的缺点是去噪过程的时间和内存消耗都非常大，尤其是在生成高分辨率图像时。Stable Diffusion引入潜在扩散来解决这个问题。潜在扩散通过在较低维度的潜在空间上应用扩散过程而不是使用实际像素空间来减少内存和计算成本。
+
++   与DALL·E和Midjourney相比，Stable Diffusion最大的优势是开源，这就意味着Stable Diffusion的潜力巨大、发展飞快。Stable Diffusion已经跟很多工具和平台进行了集成，且可用预训练模型数量众多（参见Stable Diffusion资源列表）。正是由于社区的活跃，使得Stable Diffusion在各种风格的图像生成上都有着出色的表现，随便给大家看几张我生成的图片：
+
+![](img/d63062ced566e7eecdfc7761b84fea4e.png)
+
+### 核心概念
+
+为了方便大家更好地理解后面的内容，下面对Stable Diffusion中的几个核心概念做简单的说明。
+
+#### 自动编码器
+
+自动编码器 (VAE) 由两个主要部分组成：编码器和解码器。编码器会将图像转换为低维潜在表示（像素空间–>潜在空间），该表示将作为输入传递给`U_Net`。解码器做的事情刚好相反，将潜在表示转换回图像（潜在空间–>像素空间）。
+
+#### U-Net
+
+`U-Net` 也由编码器和解码器组成，两者都由 `ResNet` 块组成。编码器将图像表示压缩为较低分辨率的图像，解码器将较低分辨率解码回较高分辨率图像。
+
+![](img/07eb763d5ae65c16775d8c13cf9dba33.png)
+
+为了防止 `U-Net` 在下采样时丢失重要信息，通常在编码器的下采样 `ResNet` 和解码器的上采样 `ResNet` 之间添加快捷连接。
+
+此外，Stable Diffusion 中的 `U-Net` 能够通过交叉注意力层调节其在文本嵌入上的输出。交叉注意力层被添加到 `U-Net` 的编码器和解码器部分，通常在 `ResNet` 块之间。
+
+#### 文本编码器
+
+文本编码器会将输入提示转换为 `U-Net` 可以理解的嵌入空间。一般是一个简单的基于 `Transformer` 的编码器，它将标记序列映射到潜在文本嵌入序列。
+
+![](img/045a31a763eabd28fc1d3ff6090b07d9.png)
+
+好的提示（`prompt`）对输出质量至关重要，这就是为什么现在大家这么强调提示设计（`prompt design`）。提示设计就是要找到某些关键词或表达方式，让提示可以触发模型产生具有预期属性或效果的输出。
+
+#### 推理过程
+
+Stable Diffusion的大致工作流程如下：
+
++   **首先，**Stable Diffusion模型将潜在种子和文本提示作为输入。然后使用潜在种子生成大小为 64×64 的随机潜在图像表示，而文本提示通过 `CLIP` 文本编码器转换为 77×768 的文本嵌入。
+
++   **接下来，**`U-Net` 以文本嵌入为条件迭代地对随机潜在图像表示进行去噪。`U-Net` 的输出是噪声残差，用于通过调度算法计算去噪的潜在图像表示。调度算法根据先前的噪声表示和预测的噪声残差计算预测的去噪图像表示。这里可选用的调度算法很多，每个算法各有优劣，对Stable Diffusion来说建议用以下几个：
+
++   `PNDM scheduler`（默认）
+
++   `DDIM scheduler`
+
++   `K-LMS scheduler`
+
+去噪过程重复大约 50 次以逐步检索更好的潜在图像表示。完成后，潜在图像表示由变分自动编码器的解码器部分解码。
+
+整体流程可以用下面的流程图表示：
+
+![](img/9b42aa83476026abce32ae7fe9b027dc.png)
+
+## 本地部署 Stable Diffusion
+
+本地部署Stable Diffusion最简单的方法是使用Stable Diffusion Web Ui。
+
+Stable Diffusion Web Ui是一套无代码、可视化的Stable Diffusion集成运行环境。它将Stable Diffusion的安装部署集成打包，提供一键安装脚本，并提供Web界面操作界面，极大简化了Stable Diffusion的操作和使用，让没有不懂代码的小白也能轻松上手使用Stable Diffusion模型。
+
+![](img/42be540a5c5fe337ca5fa217d7360e47.png)
+
+### 系统配置需求
+
+Stable Diffusion还是比较吃资源的，因此对基础硬件有一定要求。
+
++   `NVIDIA GPU` 至少 4GB 显存
+
++   至少 10GB 可用硬盘空间
+
+上面的配置是Stable Diffusion运行起来的基础要求，如果想要生成速度快，显卡配置自然是越高越好，显存最好也上到8G。推荐配置最好不低于：
+
++   `NVIDIA RTX GPU` 至少 8GB 显存
+
++   至少 25GB 可用硬盘空间
+
+如果本地机器配置达不到，可以考虑用云虚拟主机。目前最经济的是`AWS`的`g4dn.xlarge`，￥3.711元/小时。
+
+### 环境准备
+
+Stable Diffusion Web Ui用`Python`开发，完全开源，因此在运行Stable Diffusion Web Ui前，我们需要安装`Git`来拉取Stable Diffusion Web Ui源代码，并安装`Python`。
+
+#### 安装Git
+
+`Git`是一个开源的分布式版本控制系统。这里安装`Git`是为了获取Stable Diffusion Web Ui的代码。当然，如果不安装`Git`，我们也可以通过代码打包下载链接直接下载Stable Diffusion Web Ui的代码，但是这样获取的代码无法后续更新，每次Stable Diffusion Web Ui升级都要重新下载代码覆盖老版本代码。用`Git`就很方便，可以通过`clone`命令从代码库获取代码，通过`git pull`更新到最新版代码。
+
+`Git`安装很简单，只需到Git下载页面下载对应平台安装包安装即可（Linux发行版一般自带`Git`可以不用安装）。
+
+Windows用户请注意，安装时在配置界面勾选上`Add a Git Bash Profile to Windows Terminal`选项。
+
+![](img/3ae4e73b11180c2fc8023f75a2a1e478.png)
+
+#### 安装Python
+
+`Python`的安装方法有很多，这里推荐大家通过`Miniconda`来安装。用`Miniconda`有几个好处：
+
+方便创建和管理多个`Python`虚拟环境。我建议每个`Python`项目都创建一套自己独立的`Python`虚拟环境，防止`python`环境或库版本不对导致代码运行出错。
+
+`Miniconda`体积很小，只有`conda`+`python`+`pip`+`zlib`和一些其他常用的包，小巧灵活。
+
+大家只要到`Miniconda`下载页面下载对应平台的安装包即可，最新的`Miniconda`包含`Python 3.10.9`。
+
+下载完安装包直接双击安装即可（Linux版本在`Shell`中运行下载下来的shell脚本）。Windows用户请注意，当看到下面界面时，请务必勾选第一个选项，将`Miniconda`添加到环境变量`PATH`中。
+
+![](img/4a815108b920a7cbd964e360199e438b.png)
+
+#### 配置国内源
+
+由于 `Python` 第三方库的来源是国外源，使用国内网络安装库时会出现下载缓慢、卡顿等现象，不仅耽误时间，而且很容易安装失败。因此我们需要将 `conda` 的安装源替换成国内镜像，这样可以大幅提升下载速度，提高安装成功率。这里推荐清华源，执行下方命令即可添加：
+
+```
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+```
+
+添加成功后可以通过`conda config --show-sources`查看当前源
+
+```
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - defaults
+show_channel_urls: True
+```
+
+除了清华源，还可以添加中科大源或阿里云源
+
+```
+中科大的源
+conda config –add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/ 
+阿里云的源
+conda config --add channels http://mirrors.aliyun.com/pypi/simple/
+```
+
+最后，运行`conda clean -i`清除索引缓存，保证用的是镜像站提供的索引。
+
+#### 安装 Stable Diffusion Web Ui
+
+环境配置好后，我们就可以开始安装Stable Diffusion Web Ui了。
+
+首先从GitHub上下载Stable Diffusion Web Ui的源代码：
+
+```
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+```
+
+下载完成后，`cd stable-diffusion-webui`进入Stable Diffusion Web Ui的项目目录，在项目目录里会看到`webui.bat`和`webui.sh`这两个文件，这两个文件就是Stable Diffusion Web Ui的安装脚本。
+
++   如果你是Windows系统，直接双击运行`webui.bat`文件
+
++   如果你是Linux系统，在控制台运行`./webui.sh`
+
++   如果你是Mac系统，使用方法跟Linux相同
+
+安装脚本会自动创建`Python`虚拟环境，并开始下载安装缺失的依赖库。这个过程可能会有点久，请耐心等待。如果中途安装失败，多半是网络连接超时，此时可以重新执行安装脚本，脚本会接着上次的下载安装位置继续安装。直到看到
+
+```
+Running on local URL:  http://127.0.0.1:7860
+```
+
+说明Stable Diffusion Web Ui安装成功。
+
+用浏览器打开`http://127.0.0.1:7860`就会看到Stable Diffusion Web Ui的界面。
+
+![](img/53c9f2335cc221679581dc416857595c.png)
+
+#### 模型安装
+
+Stable Diffusion Web Ui安装过程中会默认下载Stable Diffusion `v1.5`模型，名称为`v1-5-pruned-emaonly`。
+
+下载后将模型复制到`models`目录下的`Stable-diffusion`目录即可。完成后点击页面左上角的刷新按钮，即可在模型下拉列表中看到新加入的模型。
+
+除了标准模型外，Stable Diffusion还有其他几种类型的模型，`models`目录下每一个子目录就是一种类型的模型，其中用的最多的是`LoRA`模型。
+
+`LoRA`（Low-Rank Adaptation）模型是小型稳定扩散模型，可对标准模型进行微调。它通常比标准模型小10-100倍，这使得`LoRA`模型在文件大小和训练效果之间取得了很好平衡。`LoRA`无法单独使用，需要跟标准模型配合使用，这种组合使用方式也为Stable Diffusion带来了强大的灵活性。
+
+`LoRA`模型下载后需要放到`Lora`目录中，使用时在提示中加入LoRA语法，语法格式如下：
+
+```
+&lt;lora:filename:multiplier&gt;
+```
+
+`filename`是`LoRA`模型的文件名（不带文件后缀）
+
+`multiplier` 是`LoRA` 模型的权重，默认值为1，将其设置为 0 将禁用该模型。
+
+关于Stable Diffusion提示的使用规则请参考这里。
+
+## 使用 Stable Diffusion Web Ui
+
+### 界面介绍
+
+Stable Diffusion Web Ui整体上分为2个部分，最上面是模型选择，可以从下拉列表中选择已下载的预训练模型
+
+![](img/14099eaf837d58ecc3f47c9e9d4e63a1.png)
+
+模型选择下面是`Tab`栏，这里是Stable Diffusion Web Ui提供的所有功能。
+
+![](img/b82dd770cb23ac65cb0ee3c6be912d1e.png)
+
++   `txt2img` — 根据文本提示生成图像；
+
++   `img2img` — 根据提供的图像作为范本、结合文本提示生成图像；
+
++   `Extras` — 优化(清晰、扩展)图像；
+
++   `PNG Info` — 显示图像基本信息
+
++   `Checkpoint Merger` — 模型合并
+
++   `Train` — 根据提供的图片训练具有某种图像风格的模型
+
++   `Settings` — 系统设置
+
+平时使用最多的是`txt2img`和`img2img`，下面针对这2大块功能详细讲解。
+
+### txt2img
+
+`txt2img`有三个区域：
+
++   提示区
+
++   参数调节区
+
++   输出浏览区
+
+![](img/1ddc6df518ee558cbd7d13cb10961d44.png)
+
+提示区主要是2个文本框，可以输入提示文本。其中：
+
+`prompt:` 主要是对于图像进行描述。`prompt`对Stable Diffusion图像生成质量至关重要，因此如果想生成高质量图片，一定要在提示设计上下功夫。一个好的提示需要详细和具体，后面会专门讲解如何设计一个好的提示。
+
+`Negative prompt`：主要是告诉模型我不想要什么样的风格或元素；
+
+参数调节区提供了大量参数用于控制和优化生成过程：
+
+`Sampling method`：扩散去噪算法的采样模式，不同采样模式会带来不一样的效果，具体需要在实际使用中测试；
+
+`Sampling steps:` 模型生成图片的迭代步数，每多一次迭代都会给 AI 更多的机会去对比 `prompt` 和 当前结果，从而进一步调整图片。更高的步数需要花费更多的计算时间，但却不一定意味着会有更好的结果。当然迭代步数不足肯定会降低输出的图像质量；
+
+`Width、Height:` 输出图像宽高，图片尺寸越大越消耗资源，显存小的要特别注意。一般不建议设置的太大，因为生成后可以通过 `Extras` 进行放大；
+
+`Batch count`、`Batch size`：控制生成几张图，前者计算时间长，后者需要显存大；
+
+`CFG Scale:` 分类器自由引导尺度，用于控制图像与提示的一致程度，值越低产生的内容越有创意；
+
+`Seed:` 随机种子，只要种子一样，参数和模型不变，生成的图像主体就不会剧烈变化，适用于对生成的图像进行微调；
+
+`Restore faces:` 优化面部，当对生成的面部不满意时可以勾选该选项；
+
+`Tiling:` 生成一张可以平铺的图像；
+
+`Highres. fix:` 使用两个步骤的过程进行生成，以较小的分辨率创建图像，然后在不改变构图的情况下改进其中的细节，选中该选项会有一系列新的参数，其中重要的是：
+
+`Upscaler:` 缩放算法；
+
+`Upscale by:` 放大倍数；
+
+`Denoising strength`：决定算法对图像内容的保留程度。0什么都不会改变，1会得到一个完全不同的图像；
+
+### img2img
+
+`img2img`跟`txt2img`界面类似，不同的是没有了`txt2img`中的参数调节区，取而代之的是图像范本区。
+
+![](img/1c5222b3aac8326339cb2785745c3076.png)
+
+我们可以上传范本图片让Stable Diffusion模仿，其他地方跟`txt2img`相同
+
+### Prompt 语法
+
+为了产生具有特定风格的图像，必须以特定格式提供文本提示。 这通常需要添加提示修饰符或添加更多关键字或关键短语来实现。下面为大家介绍一下Stable Diffusion的`prompt`语法规则。
+
+Stable Diffusion提示文本中的关键字或关键短语通过半角逗号分割，一般越靠前权重越高。我们可以通过提示修饰符来认为修改权重。
+
+`(tag):` 增加权重5%
+
+`[tag]:` 降低权重5%
+
+`(tag: weight):` 设置具体权重值
+
+括号可以嵌套使用。
+
+`[tag1 | tag2]:` 将`tag1`和`tag2`混合；
+
+`{tag1 | tag2 | tag3}:` 从标签集合中随机选择一个标签；
+
+`[tag1 : tag2 : 0.5 ]:` 表示先用`tag1`生成，当生成进程到50%时，改用`tab2`生成；如果输入整数的话表示步长，比如10，意思是生成10步后改用`tag2`；
+
+`[lora:filename:multiplier](lora:filename:multiplier):` `LoRA`模型引用语法
+
+### 示例
+
+#### 模型
+
+这里我将使用`chilloutmix` + `KoreanDollLikeness`生成写实风韩系偶像小姐姐。
+
+首先需要下载`chilloutmix`模型（我用的是`chilloutmix_NiPrunedFp32Fix.safetensors`），将其拷贝到`Stable-diffusion`目录，还需要下载`KoreanDollLikeness`这个`LoRA`模型，将其拷贝到`Lora`目录。
+
+然后在Stable Diffusion Web Ui主界面的模型选择中下拉选择`chilloutmix_NiPrunedFp32Fix.safetensors`。如果找不到该模型，可以点击右侧刷新按钮刷新一下。
+
+#### Prompt
+
+
+
+# Stable Diffusion 提示词设计与模型资源指南
+
+## 提示词设计
+
+选择好模型后，我们开始设计prompt。首先我们引入LoRA
+
+```
+&lt;lora:koreanDollLikeness_v10:0.66&gt;
+```
+
+然后定义生成图片的风格，我们希望超写实风，可以用如下关键词：
+
+```
+best quality, ultra high res, (photorealistic:1.4)
+```
+
+其中photorealistic我们赋予较高的权重1.4。
+
+接着来定义图片的主体内容，这里我将希望图片中出现的元素都做个权重增强：
+
+```
+1girl, thighhighs, ((school uniform)),((pleated skirt)), ((black stockings)), (full body), (Kpop idol), (platinum blonde hair:1), ((puffy eyes))
+```
+
+最后，修饰一些表情、姿势的细节：
+
+```
+smiling, solo focus, looking at viewer, facing front
+```
+
+这样我们完整的promt是:
+
+```
+&lt;lora:koreanDollLikeness_v10:0.66&gt;, best quality, ultra high res, (photorealistic:1.4), 1girl, thighhighs, ((school uniform)),((pleated skirt)), ((black stockings)), (full body), (Kpop idol), (platinum blonde hair:1), ((puffy eyes)), smiling, solo focus, looking at viewer, facing front
+```
+
+## Negative prompt
+
+我们还需要提供Negative prompt去除我们不想要的风格和元素：
+
+```
+paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, glan
+```
+
+这里主要剔除了绘画风、简笔画、低质量、灰度图，同时去除雀斑、痤疮等皮肤瑕疵。
+
+## 参数设置
+
+为了让图片生成得更加真实自然，我们需要对参数做一些调整，需要调整的参数如下：
+
+**Sampler:** DPM++ SDE Karras
+
+**Sample Steps:** 28
+
+**CFG scale:** 8
+
+**Size:** 512x768
+
+这里鼓励大家多尝试其他取值，上面只是我认为效果最好的一组参数。
+
+## 生成
+
+完成上面所有设置后，就可以点击Generate按钮生成图片了。生成速度由你的设备性能决定，在我的电脑上大约30s生成一张图片。
+
+![](img/7ad44fe0a79b36a8cc1bc8f9c8262d05.png)
+
+## Stable Diffusion资源列表
+
+好的生成质量离不开好的模型，这里为大家列出了Stable Diffusion预训练模型资源的获取来源。
+
+### Hugging Face
+
+Hugging Face是一个专注于构建、训练和部署先进开源机器学习模型的网站。
+
+HuggingFace是Stable Diffusion模型创作的首选平台，目前平台上有270多个与Stable Diffusion相关的模型，用"Stable Diffusion"作为关键字就能搜到。
+
+![](img/0d68f8113adc04f26c3ffd3cb4048cf4.png)
+
+### Civitai
+
+Civitai是一个专为Stable Diffusion AI艺术模型设计的网站。该平台目前有来自250+创作者上传的1700个模型。这是迄今为止我所知的最大的AI模型库。你可以在上面分享自己的模型或生成作品。
+
+![](img/0ab88c983c144477b04d199869493fe4.png)
+
+### Discord
+
+在Stable Diffusion的Discord页面中有一个名为“Models-Embeddings”的专属频道，里面提供了很多可以免费下载的各种模型。
+
+![](img/15ed1d318cab4a53cba36c8a3b4e6c97.png)
+
+### Rentry for SD
+
+Rentry网站上有一个保存Stable Diffusion模型的页面sdmodels，上面由70多个模型可以免费下载。
+
+![](img/7a569fb1d131c7c040143411b154e120.png)
+
+如果想要更安全地使用AI模型，请尽量选择safetensor文件类型。
