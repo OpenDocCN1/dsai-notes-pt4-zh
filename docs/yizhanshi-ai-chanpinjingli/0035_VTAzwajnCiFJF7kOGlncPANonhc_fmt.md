@@ -1,0 +1,289 @@
+
+# 模型微调
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/FPkTdLYeNou00ixIPNecJLJinzg](https://v11enp9ok1h.feishu.cn/docx/FPkTdLYeNou00ixIPNecJLJinzg)
+
+`https://v11enp9ok1h.feishu.cn/sync/VztedzIoUstVPDb6RNMctK8Unie`
+
+请配合以下代码库中微调部分代码进行上手练习
+
+`https://github.com/THUDM/ChatGLM3/tree/main/finetune_demo`
+
+## 为什么需要微调
+
+### 微调适用的场景
+
+通常来说，适合微调的场景主要分为行业场景和通用场景。
+
+对于行业场景：
+
+1. 例如客服助手，智能写作辅导等需要专门的回答范式和预期的场景
+2. 例如智慧医生，智慧律师等需要更专业的行业知识和思考能力的场景
+
+对于通用场景：
+
+1. `NL2SQL`等输出为指定范式的
+2. 支持可调整参数的工具调用等原生模型不具备的能力的
+
+### 微调 VS 知识库
+
+微调是一种让预先训练好的模型适应特定任务或数据集的低成本方案。这种情况下，模型会学习开发者提供的微调数据。
+
+知识库是使用向量数据库（或者其他数据库）存储数据，可以外挂，作为 `LLM` 的行业信息提供方。
+
+简单理解，微调相当于让大模型去学习了新的一门学科，在回答的时候完成闭卷考试。
+
+知识库相当于为大模型提供了新学科的课本，回答的时候为开卷考试。
+
+知识库和微调并不是冲突的，它们是两种相辅相成的行业解决方案。开发者可以同时使用两种方案来优化模型。例如：
+
+使用微调的技术微调 `ChatGLM3-6B` 大模型模拟客服的回答的语气和基础的客服思维。
+
+接着，外挂知识库将最新的问答数据外挂给 `ChatGLM3-6B`，不断更新客服回答的内容信息。
+
+## 微调参数
+
+### 配置文件
+
+我们将微调的参数统一放置在 `finetune_demo/configs` 下，将会有四个文件
+
+```
+.
+├── deepspeed.json
+├── lora.yaml
+├── ptuning_v2.yaml
+└── sft.yaml
+```
+
+分别为 `deepspeed` 运行参数，`lora` 配置文件，`ptuning_v2` 配置文件和全参微调的配置文件。
+
+### 参数解释
+
+每一份配置文件除了在细节上有一定区别，其他配置大同小异，我们针对每个参数做了简单的解释。
+
++ `data_config` 这些参数是关于数据集的位置
++ `train_file` 训练集地址
++ `val_file` 验证集地址
++ `test_file` 测试集地址
++ `max_input_length` 微调模型输入的最大长度，默认为 128。
++ `max_output_length` 微调模型输出的最大长度，默认为 256。
++ `peft_config` `Huggingface PEFT` 框架的相关参数，`peft_type` 选择高效微调的方式，可以为 `LORA` 或者 `PREFIX_TUNING`，并需要搭配对应的参数。
++ 如果你选择使用 `LORA`，则这些参数是必须的
++ `LORA_RANK`：这个参数决定了模型参数修改的复杂度和灵活性。较低的秩意味着更少的参数和更快的训练速度，但可能减少模型的灵活性。较高的秩可以提高模型的灵活性，但会增加参数数量和计算负担。我们默认设置为 8。
++ `lora_alpha` 是控制 `LoRA` 调整幅度的参数。它决定了对原始模型参数的修改程度。较高的 `lora_alpha` 值意味着对原始模型参数的更大调整，这可能有助于模型更好地适应新的任务或数据，但也可能导致过拟合。较低的值则意味着较小的调整，可能保持模型的泛化能力，但可能不足以充分适应新任务。我们默认设置为 32。
++ `lora_dropout` 指的是在 `LoRA` 层应用的 `dropout` 比率。这意味着在训练过程中，网络的一部分连接会随机断开，以防止模型过度依赖于训练数据中的特定模式。较高的 `dropout` 比率可以增加模型的泛化能力，但也可能导致学习效率降低。我们设置为 0.1。
++ `target_modules`（不可修改的参数）：调整 `ChatGLM3` 系列模型必须使用 `query_key_value`，这里没有在配置文件写出。
++ 如果你选择使用 `PREFIX_TUNING`，则这些参数是必须的
++ `num_virtual_tokens` 指定了在前缀调优中使用的虚拟令牌的数量。这里设置为 100，意味着在每个层前添加 100 个可训练的虚拟令牌。这些虚拟令牌对于引导模型学习特定任务是重要的，因为它们为模型提供了额外的、可调整的上下文信息。
+
+> 如果你使用 `sft` 全量微调，则不应该有任何 `peft_config` 参数。
+
++ `training_args` 这些参数是关于训练中通用的参数
++ `output_dir`: 训练过程中输出文件的目录，默认是 `./output`。
++ `max_steps`: 训练的最大步数，这里设置为 10000。
++ `per_device_train_batch_size`: 每个设备上的训练批量大小，默认是 4。
++ `dataloader_num_workers`: 数据加载时使用的工作进程数，默认值是 16。
++ `remove_unused_columns`: 是否移除未使用的列，默认设置为 `False`。
++ `save_strategy`: 保存策略，默认是按步数保存（`steps`）。
++ `save_steps`: 保存步数，默认设置为每 500 步保存一次。
++ `log_level`: 日志等级，默认设置为 `info`，可改为 `debug`。
++ `logging_steps`: 日志记录步数，默认为每 10 步记录一次。
++ `per_device_eval_batch_size`: 每个设备上的评估批量大小，默认值为 16。
++ `evaluation_strategy`: 评估策略，默认是按步数评估（`steps`）。
++ `eval_steps`: 评估步数，默认设置为每 500 步进行一次评估。
++ `predict_with_generate`: 是否在预测时生成输出，这里设置为 `True`。
+
+## 数据集格式
+
+### 格式介绍
+
+微调数据集采用 `ChatGLM3` 对话格式约定，对不同角色添加不同 `loss_mask` 从而在一遍计算中为多轮回复计算 `loss`。对于数据文件，样例采用如下格式
+
++ 如果您仅希望微调模型的对话能力，而非工具能力，您应该按照以下格式整理数据。
+
+```
+[
+  {
+    &quot;conversations&quot;: [
+      {
+        &quot;role&quot;: &quot;system&quot;,
+        &quot;content&quot;: &quot;&lt;system prompt text&gt;&quot;
+      },
+      {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;&lt;user prompt text&gt;&quot;
+      },
+      {
+        &quot;role&quot;: &quot;assistant&quot;,
+        &quot;content&quot;: &quot;&lt;assistant response text&quot;&quot;
+      },
+      // ... Muti Turn
+      {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;&lt;user prompt text&gt;&quot;
+      },
+      {
+        &quot;role&quot;: &quot;assistant&quot;,
+        &quot;content&quot;: &quot;&lt;assistant response text&quot;&quot;
+      }
+    ]
+  }
+  // ...
+]
+```
+
+> 请注意，这种方法在微调的 `step` 较多的情况下会影响到模型的工具调用功能
+
++ 如果您希望微调模型的对话和工具能力，您应该按照以下格式整理数据。
+
+```
+[
+  {
+    &quot;tools&quot;: [
+      // available tools, format is not restricted
+    ],
+    &quot;conversations&quot;: [
+      {
+        &quot;role&quot;: &quot;system&quot;,
+        &quot;content&quot;: &quot;&lt;system prompt text&gt;&quot;
+      },
+      {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;&lt;user prompt text&gt;&quot;
+      },
+      {
+        &quot;role&quot;: &quot;assistant&quot;,
+        &quot;content&quot;: &quot;&lt;assistant thought to text&gt;&quot;
+      },
+      {
+        &quot;role&quot;: &quot;tool&quot;,
+        &quot;name&quot;: &quot;&lt;name of the tool to be called&quot;,
+        &quot;parameters&quot;: {
+          &quot;&lt;parameter_name&gt;&quot;: &quot;&lt;parameter_value&gt;&quot;
+        },
+        &quot;observation&quot;: &quot;&lt;observation&gt;&quot;
+      },
+      {
+        &quot;role&quot;: &quot;assistant&quot;,
+        &quot;content&quot;: &quot;&lt;assistant response to observation&gt;&quot;
+      },
+      // ... Muti Turn
+      {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;&lt;user prompt text&gt;&quot;
+      },
+      {
+        &quot;role&quot;: &quot;assistant&quot;,
+        &quot;content&quot;: &quot;&lt;assistant response text&quot;&quot;
+      }
+    ]
+  }
+  // ...
+]
+```
+
+### 注意事项
+
++ 关于工具描述的 `system prompt` 无需手动插入，预处理时会将 `tools` 字段使用 `json.dumps(..., ensure_ascii=False)` 格式化后插入为首条 `system prompt`。
++ 每种角色可以附带一个 `bool` 类型的 `loss` 字段，表示该字段所预测的内容是否参与 `loss` 计算。若没有该字段，样例实现中默认对 `system`, `user` 不计算 `loss`，其余角色则计算 `loss`。
++ `tool` 并不是 `ChatGLM3` 中的原生角色，这里的 `tool` 在预处理阶段将被自动转化为一个具有工具调用 metadata 的 `assistant` 角色（默认计算 `loss`）和一个表示工具返回值的 `observation` 角色（不计算 `loss`）。
++ 目前暂未实现 `Code interpreter` 的微调任务。
++ `system` 角色为可选角色，但若存在 `system` 角色，其必须出现在 `user` 角色之前，且一个完整的对话数据（无论单轮或者多轮对话）只能出现一次 `system` 角色。
+
+## 示例代码
+
+### 使用广告数据集微调模型
+
+请配合以下代码库中微调部分代码进行上手练习 `https://github.com/THUDM/ChatGLM3/blob/main/finetune_demo/lora_finetune.ipynb`
+
+#### 多卡微调
+
+在上述案例中，如果你想使用多张显卡，可以使用以下代码来实现多卡调用微调。
+
+请注意，每张显卡至少需要预留完整的模型读入的显存。
+
+> 下面代码仅作为样例，具体应该根据你的硬件和模型位置进行调整，直接复制代码大概率无法运行。
+
+```
+torchrun --standalone --nnodes=1 --nproc_per_node=8  finetune_hf.py  data/AdvertiseGen_fix  THUDM/chatglm3-6b  configs/sft.yaml --deepspeed configs/deepspeed.json
+```
+
+#### 从保存点微调
+
+如果按照上述方式进行训练，每次微调都会从头开始，如果你想从训练一半的模型开始微调，你可以加入第四个参数，这个参数有两种传入方式：
+
+1. `yes`，自动从最后一个保存的 `Checkpoint` 开始训练
+2. `XX`，断点号数字 例 `600` 则从序号 600 `Checkpoint` 开始训练
+
+例如，这就是一个从最后一个保存点继续微调的示例代码：
+
+```
+cd finetune_demo
+python finetune_hf.py  data/AdvertiseGen/  THUDM/chatglm3-6b  configs/lora.yaml yes
+```
+
+### 调用微调的模型
+
+#### 在 `inference_hf.py` 中验证微调后的模型
+
+您可以在 `finetune_demo/inference_hf.py` 中使用我们的微调后的模型，仅需要一行代码就能简单的进行测试。
+
+```
+python inference_hf.py your_finetune_path --prompt your prompt
+```
+
+这样，得到的回答就微调后的回答了。
+
+#### 其他 demo 或者外部仓库使用微调后的模型
+
+在训练的文件中，会保存 `adapter_config.json` 文件，文件会记载该 `LORA` 权重依赖的原始权重。
+
+```
+&quot;base_model_name_or_path&quot;: &quot;your_lora_model&quot;,
+```
+
+在加载推理的时候，会自动的合并权重进行推理，因此，只需要在 `hf` 代码上载入这个权重就行了。
+
+但是，在其他 demo 中，载入方式并不是 `inference.py` 的模型载入方式，因此，需要您自行按照以下方式修改代码：
+
+1. 使用 `finetune_demo/inference_hf.py` 中读入模型的方式替换 demo 中读入模型的方式。
+
+> 请注意，对于 `LORA` 和 `P-TuningV2` 我们没有合并训练后的模型，而是在 `adapter_config.json` 中记录了微调型的路径，如果你的原始模型位置发生更改，则你应该修改 `adapter_config.json` 中 `base_model_name_or_path` 的路径。
+
+```
+def load_model_and_tokenizer(
+        model_dir: Union[str, Path], trust_remote_code: bool = True
+) -&gt; tuple[ModelType, TokenizerType]:
+    model_dir = _resolve_path(model_dir)
+    if (model_dir / &#x27;adapter_config.json&#x27;).exists():
+        model = AutoPeftModelForCausalLM.from_pretrained(
+            model_dir, trust_remote_code=trust_remote_code, device_map=&#x27;auto&#x27;
+        )
+        tokenizer_dir = model.peft_config[&#x27;default&#x27;].base_model_name_or_path
+    else:
+        model = AutoModelForCausalLM.from_pretrained(
+            model_dir, trust_remote_code=trust_remote_code, device_map=&#x27;auto&#x27;
+        )
+        tokenizer_dir = model_dir
+    tokenizer = AutoTokenizer.from_pretrained(
+        tokenizer_dir, trust_remote_code=trust_remote_code
+    )
+    return model, tokenizer
+```
+
+1. 读取微调的模型，请注意，你应该使用微调模型的位置，例如，若你的模型位置为 `/path/to/finetune_adapter_model`，原始模型地址为 `path/to/base_model`，则你应该使用 `/path/to/finetune_adapter_model` 作为 `model_dir`。
+1. 完成上述操作后，就能正常使用微调的模型了，其他的调用方式没有变化。下图是使用 `basic_demo/web_demo_gradio.py` 的效果。
+
+![](img/8143e267425464e37c451a35a0f08847.png)
+
+## 非官方方案
+
+
+
+用户也可以使用非官方的方案进行微调，例如使用以下主流的开源训练框架
+
++   [`LLaMA-Factory`](https://github.com/hiyouga/LLaMA-Factory)
+
+以上框架已经实现了`ChatGLM3-6B`的微调，包括全参，`Lora`，`P-tuning`等方案。用户可以使用他们的微调方式。
+
+在使用上述框架时，我们推荐将`Lora`模型合并到模型中，以方便`Demo`更好的读入微调后的模型。
