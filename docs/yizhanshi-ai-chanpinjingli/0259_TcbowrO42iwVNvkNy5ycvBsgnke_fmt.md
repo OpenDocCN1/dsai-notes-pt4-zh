@@ -1,0 +1,408 @@
+
+# 朴素贝叶斯
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/KBp6dzC94oVr1kxkAvgcgdyVnHe](https://v11enp9ok1h.feishu.cn/docx/KBp6dzC94oVr1kxkAvgcgdyVnHe)
+
+## 1. 简介
+
+> 贝叶斯分类算法是统计学中的一种概率分类方法，朴素贝叶斯分类是贝叶斯分类中最简单的一种。其分类原理就是利用贝叶斯公式根据某特征的先验概率计算出其后验概率，然后选择具有最大后验概率作为该特征所属的类。
+
+## 2. 数学基础
+
+### 2.1 相对独立
+
+假设`X`有`x(1)`, `x(2)`, …`x(n)`个特征，`P(x) = P(x(1))P(x(2))…P(x(n))`
+
+### 2.2 条件概率
+
+假设有`A`，`B`两个事件，在`B`事件发生的条件下，`A`事件发生的概率。
+
+### 2.3 全概率公式（从原因到结果）
+
+考察在每一种情况下事件`A`发生的概率，计算`A`的概率。
+
+公式表示若事件`A(1)`，`A(2)`，…，`A(n)`构成一个完备事件组且都有正概率，则对任意一个事件`B`都有公式成立。
+
+### 2.4 贝叶斯公式（从结果到原因）
+
+在事件`A`发生的条件下，考察每种情况出现的条件概率
+
+其中样本空间由`A`和`A’`组成。
+
+## 3. 算法原理
+
+### 3.1 朴素贝叶斯公式推导
+
+由条件概率公式：
+
+可以推导出：
+
+同理可得：
+
+由于（5）和（6）相等：
+
+可以推出贝叶斯公式：
+
+### 3.2 公式分析
+
+`P(A)`：为先验概率，即在`B`事件发生之前，对`A`事件发生概率的预判。
+
+`P(A|B)`:为后验概率，即在`B`事件发生之后，对`A`事件发生概率的重新评估。
+
+`P(B|A)/P(B)`:为可能性函数，是一个调整因子，使得预估概率更加接近真实概率。
+
+所以贝叶斯公式可以表示为：后验概率=先验概率 * 调整因子
+
+如果调整因子>1，则表示先验概率被增强，事件`A`发生的可能性变大。
+
+如果调整因子=1，则表示事件`B`对判断事件`A`发生的概率没有帮助。
+
+如果调整因子<1，则表示先验概率被削弱，事件`A`发生的可能性变小。
+
+> 注意：用朴素贝叶斯算法对案例进行分类时，主要是通过求分类目标的最大后验概率来进行分类。由于在同种情况下贝叶斯公式的分母是相同的，所以在计算是可以将分母忽略，以减少计算。
+
+## 4. 案例（根据天气情况预测出行）
+
+已知某人的出行记录和气象记录，来预判这个人是否会出行。
+
+我们来分析一下这个记录：
+
+由上述表格可知，类别一共有两个：出门和不出门。特征一共有四个：天气、温度、湿度和风。
+
+根据朴素贝叶斯模型：
+
+对朴素贝叶斯进行优化：
+
+将案例转换成分类任务的表达式：
+
+我们来预测一下在雨天、热、湿度高、无风的情况下，这个人是否出门。
+
+通过（11）中的表达式可以得出：
+
+根据表格可知：
+
+> `P(出门)=0.5`
+
+> `P(不出门)=0.5`
+
+> `P(雨天|不出门)P(热|不出门)P(高|不出门)P(无风|不出门)=4/81`
+
+> `P(雨天|出门)P(热|出门)P(高|出门)P(无风|出门)=2/81`
+
+>
+
+> **最终可得出：**
+
+> `P(出门|雨天/ 热/ 高/ 无风)=1/81`
+
+> `P(不出门|雨天/ 热/ 高/ 无风)=2/81`
+
+> 最大后验概率为：`P(不出门|雨天/ 热/ 高/ 无风)`
+
+可以得出结论：在雨天、热、湿度高、无风的天气状况下，这个人不会出门。
+
+## 5. 朴素贝叶斯种类
+
+现在朴素贝叶斯算法一共有3种：高斯朴素贝叶斯、多项式朴素贝叶斯和伯努利朴素贝叶斯。
+
+### 5.1 高斯朴素贝叶斯（Gaussian NB）
+
+在处理连续数据的分类时，我们通常选用高斯朴素贝叶斯算法。`Gaussian NB`就是先验概率为高斯分布的朴素贝叶斯。假设每一个特征的数据都服从高斯分布。
+
+其中，`Ck`是`Y`的第`k`个类别，`μ`和`σ`为训练集的均值和标准差。
+
+### 5.2 多项式朴素贝叶斯（Multinomial NB）
+
+多项式朴素贝叶斯就是先验概率为多项式分布的朴素贝叶斯。假设特征是由一个简单多项式分布生成的。多项式分布可以描述各种类型样本出现次数的概率，因此多项式朴素贝叶斯非常适合用于描述出现次数或者出现次数比例的特征。该模型常用于文本分类，特征值表示的是次数。公式如下：
+
+其中，`p(Xj=xjl|Y=Ck)`是第`k`个类别的第`j`维特征的第`l`个取值的条件概率。`mk`是训练集中输出为第`k`类的样本个数。 `n`为数据的维度，`λ`是一个大于0的常数，当`λ=1`是，为拉普拉斯平滑。
+
+### 5.3 伯努利朴素贝叶斯（Bernoulli NB）
+
+伯努利朴素贝叶斯就是先验概率为伯努利分布的朴素贝叶斯。假设特征的先验概率为二元博独立分布。
+
+在伯努利模型中，每个特征的取值只有`True`和`False`。在文本分类中，就是一个特征有没有出现在一个文档中。
+
+### 5.4 拉普拉斯平滑
+
+在某个分类下， 为防止训练集中某个特征值和某个类别未同时出现过，导致预测概率为0。所以需要进行平滑处理 。当平滑系数为1时，为拉普拉斯平滑。
+
+### 5.5 总结
+
+一般来说，如果样本特征的分布大部分是连续值，使用高斯朴素贝叶斯会比较好。
+
+如果样本特征的分布大部分是多元离散值，使用多项式朴素贝叶斯比较合适。
+
+如果样本特征是二元离散值或者很稀疏的多元离散值，应该使用伯努利朴素贝叶斯比较合适。
+
+## 6. 代码实现
+
+### 6.1 鸢尾花分类（高斯朴素贝叶斯）
+
+#### 6.1.1 导入模块
+
+```
+import numpy as np
+import pandas as pd
+import random
+```
+
+#### 6.1.2 数据集导入
+
+```
+dataSet =pd.read_csv(&#x27;iris.txt&#x27;,header = None)
+dataSet.head()
+```
+
+#### 6.1.3 将数据集切分为训练集和测试集
+
+```
+def randSplit(dataSet, rate):
+    l = list(dataSet.index) #提取出索引
+    random.shuffle(l) #随机打乱索引
+    dataSet.index = l #将打乱后的索引重新赋值给原数据集
+    n = dataSet.shape[0] #总行数
+    m = int(n * rate) #训练集的数量
+    train = dataSet.loc[range(m), :] #提取前m个记录作为训练集
+    test = dataSet.loc[range(m, n), :] #剩下的作为测试集
+    dataSet.index = range(dataSet.shape[0]) #更新原数据集的索引
+    test.index = range(test.shape[0]) #更新测试集的索引
+    return train, test
+```
+
+#### 6.1.4 构建朴素贝叶斯分类器
+
+```
+def gnb_classify(train,test):
+    labels = train.iloc[:,-1].value_counts().index #提取训练集的标签种类
+    mean =[] #存放每个类别的均值
+    std =[] #存放每个类别的方差
+    result = [] #存放测试集的预测结果
+    for i in labels:
+        item = train.loc[train.iloc[:,-1]==i,:] #分别提取出每一种类别
+        m = item.iloc[:,:-1].mean() #当前类别的平均值
+        s = np.sum((item.iloc[:,:-1]-m)**2)/(item.shape[0]) #当前类别的方差
+        mean.append(m) #将当前类别的平均值追加至列表
+        std.append(s) #将当前类别的方差追加至列表
+    means = pd.DataFrame(mean,index=labels) #变成DF格式，索引为类标签
+    stds = pd.DataFrame(std,index=labels) #变成DF格式，索引为类标签
+    for j in range(test.shape[0]):
+        iset = test.iloc[j,:-1].tolist() #当前测试实例
+        iprob = np.exp(-1*(iset-means)**2/(stds*2))/(np.sqrt(2*np.pi*stds)) #正态分布公式
+        prob = 1 #初始化当前实例总概率
+        for k in range(test.shape[1]-1): #遍历每个特征
+            prob *= iprob[k] #特征概率之积即为当前实例概率
+            cla = prob.index[np.argmax(prob.values)] #返回最大概率的类别
+        result.append(cla)
+    test[&#x27;predict&#x27;]=result
+    acc = (test.iloc[:,-1]==test.iloc[:,-2]).mean() #计算预测准确率
+    print(f&#x27;模型预测准确率为{acc}&#x27;)
+    return test
+```
+
+#### 6.1.5 测试分类模型
+
+```
+for i in range(20):#测试20次，对比测试成功的概率
+    train,test = randSplit(dataSet,0.8)
+    gnb_classify(train,test)
+```
+
+### 6.2 社区评论是否为侮辱类词语（伯努利朴素贝叶斯）
+
+#### 6.2.1 导入numpy
+
+```
+import numpy as np
+```
+
+#### 6.2.2 创建实验数据集
+
+```
+def loadDataSet():
+    dataSet=[[&#x27;my&#x27;, &#x27;dog&#x27;, &#x27;has&#x27;, &#x27;flea&#x27;, &#x27;problems&#x27;, &#x27;help&#x27;, &#x27;please&#x27;],
+             [&#x27;maybe&#x27;, &#x27;not&#x27;, &#x27;take&#x27;, &#x27;him&#x27;, &#x27;to&#x27;, &#x27;dog&#x27;, &#x27;park&#x27;, &#x27;stupid&#x27;],
+             [&#x27;my&#x27;, &#x27;dalmation&#x27;, &#x27;is&#x27;, &#x27;so&#x27;, &#x27;cute&#x27;, &#x27;I&#x27;, &#x27;love&#x27;, &#x27;him&#x27;],
+             [&#x27;stop&#x27;, &#x27;posting&#x27;, &#x27;stupid&#x27;, &#x27;worthless&#x27;, &#x27;garbage&#x27;],
+             [&#x27;mr&#x27;, &#x27;licks&#x27;, &#x27;ate&#x27;, &#x27;my&#x27;, &#x27;steak&#x27;, &#x27;how&#x27;, &#x27;to&#x27;, &#x27;stop&#x27;, &#x27;him&#x27;],
+             [&#x27;quit&#x27;, &#x27;buying&#x27;, &#x27;worthless&#x27;, &#x27;dog&#x27;, &#x27;food&#x27;, &#x27;stupid&#x27;]] #切分好的词条
+    classVec = [0,1,0,1,0,1] #类别标签向量，1代表侮辱性词汇，0代表非侮辱性词汇
+    return dataSet,classVec
+```
+
+#### 6.2.3 创建词汇表
+
+利用`Python`中的`set`集合特性，将词条中重复的词去掉，创建无词汇重复的词汇表。
+
+```
+def createVocabList(dataSet):
+    vocabSet = set() #创建一个空的集合
+    for doc in dataSet: #遍历dataSet中的每一条言论
+        vocabSet = vocabSet | set(doc) #取并集
+        vocabList = list(vocabSet)
+    return vocabList
+```
+
+#### 6.2.4 获得训练集向量
+
+根据`vocabList`词汇表，将`inputSet`向量化，向量的每个元素为1或0.
+
+参数说明：
+
+`vocabList`：词汇表
+
+`inputSet`：切分好的词条列表中的一天
+
+返回：
+
+`returnVec`：文档向量
+
+```
+def setOfWords2Vec(vocabList, inputSet):
+    returnVec = [0] * len(vocabList) #创建一个其中所含元素都为0的向量
+    for word in inputSet: #遍历每个词条
+        if word in vocabList: #如果词条存在于词汇表中，则变为1
+            returnVec[vocabList.index(word)] = 1
+        else:
+            print(f&quot; {word} is not in my Vocabulary!&quot; )
+    return returnVec #返回文档向量
+```
+
+#### 6.2.5 生成训练集向量列表
+
+参数说明：
+
+`dataSet`：切分好的词条
+
+返回：
+
+`trainMat`：所有的词条向量组成的表
+
+```
+def get_trainMat(dataSet):
+    trainMat = [] #初始化向量列表
+    vocabList = createVocabList(dataSet) #生成词汇表
+    for inputSet in dataSet: #遍历样本词条中的每一条样本
+        returnVec=setOfWords2Vec(vocabList, inputSet) #将当前词条向量化
+        trainMat.append(returnVec) #追加到向量列表中
+    return trainMat
+```
+
+#### 6.2.6 朴素贝叶斯分类器训练函数
+
+参数说明：
+
+`trainMat`：训练文本矩阵
+
+`classVec`：训练类别标签向量
+
+返回：
+
+`p0V`：非侮辱类的条件概率数组
+
+`p1V`：侮辱类的条件概率数组
+
+`pAb`：文档属于侮辱类的概率（侮辱类的先验概率）
+
+```
+def trainNB(trainMat,classVec):
+    n = len(trainMat) #计算训练的文档数目
+    m = len(trainMat[0]) #计算每篇文档的词条数
+    pAb = sum(classVec)/n #文档属于侮辱类的概率
+    p0Num = np.ones(m) #词条出现数初始化为1
+    p1Num = np.ones(m) #词条出现数初始化为1
+    p0Denom = 2 #分母初始化为2
+    p1Denom = 2 #分母初始化为2
+    for i in range(n): #遍历每一个文档
+        if classVec[i] == 1: #统计属于侮辱类的条件概率所需的数据
+            p1Num += trainMat[i]
+            p1Denom += sum(trainMat[i])
+        else: #统计属于非侮辱类的条件概率所需的数据
+            p0Num += trainMat[i]
+            p0Denom += sum(trainMat[i])
+    p1V = np.log(p1Num/p1Denom)
+    p0V = np.log(p0Num/p0Denom)
+    return p0V,p1V,pAb #返回属于非侮辱类,侮辱类和文档属于侮辱类的概率
+```
+
+#### 6.2.7 朴素贝叶斯分类器函数
+
+参数说明：
+
+`vec2Classify`：待分类的词条数组
+
+`p0V`：非侮辱类的条件概率数组
+
+`p1V`：侮辱类的条件概率数组
+
+`pAb`：文档属于侮辱类的概率（侮辱类的先验概率）
+
+返回：
+
+`0`：非侮辱类
+
+`1`：侮辱类
+
+```
+def classifyNB(vec2Classify, p0V, p1V, pAb):
+    p1 = sum(vec2Classify * p1V) + np.log(pAb)    #对应元素相乘
+    p0 = sum(vec2Classify * p0V) + np.log(1- pAb) #对应元素相乘
+    if p1 &gt; p0:
+        return 1
+    else:
+        return 0
+```
+
+#### 6.2.8 朴素贝叶斯测试函数
+
+参数说明：
+
+`testVec`：测试样本
+
+返回：
+
+测试样本的类别
+
+```
+def testingNB(testVec):
+    dataSet,classVec = loadDataSet() #创建实验样本
+    vocabList = createVocabList(dataSet) #创建词汇表
+    trainMat= get_trainMat(dataSet) #将实验样本向量化
+    p0V,p1V,pAb = trainNB(trainMat,classVec) #训练朴素贝叶斯分类器
+    thisone = setOfWords2Vec(vocabList, testVec) #测试样本向量化
+    if classifyNB(thisone,p0V,p1V,pAb)==1:
+        print(testVec,&#x27;属于侮辱类&#x27;) #执行分类并打印分类结果
+    else:
+        print(testVec,&#x27;属于非侮辱类&#x27;) #执行分类并打印分类结果
+```
+
+
+
+#### 6.2.9 测试用例
+
+测试样本1
+
+```
+testVec1 = [&#x27;love&#x27;, &#x27;my&#x27;, &#x27;dalmation&#x27;]
+testingNB(testVec1)
+```
+
+测试样本2
+
+```
+testVec2 = [&#x27;stupid&#x27;, &#x27;garbage&#x27;]
+testingNB(testVec2)
+```
+
+### 6.3 多项式朴素贝叶斯
+
+多项式朴素贝叶斯也是多用于文本处理，其原理和计算的流程和伯努利朴素贝叶斯基本一致，唯一的区别在于单词的计数方式，在文本处理的环节中，我们将单词是否出现在词组作为特征，但在多项式朴素贝叶斯中，我们将单词在词组中出现的次数作为特征，因此只需要更改`setOfWords2Vec`的函数即可，变成如下方式：
+
+```
+def bagOfWords2VecMN(vocabList, inputSet):
+    returnVec = [0] * len(vocabList)
+    for word in inputSet:
+        if word in vocabList:
+            returnVec[vocabList.index(word)] += 1#单词在单词表中每出现一次，则加1
+    return returnVec
+```

@@ -1,0 +1,16 @@
+
+# Transformers
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/HP2odyAI3ozLvYxqx9dcFeLhnFh](https://v11enp9ok1h.feishu.cn/docx/HP2odyAI3ozLvYxqx9dcFeLhnFh)
+
+[[幻灯片](https://web.stanford.edu/class/cs224n/slides/cs224n-spr2024-lecture08-transformers.pdf)] [[笔记](https://web.stanford.edu/class/cs224n/readings/cs224n-self-attention-transformers-2023_draft.pdf)]
+
+建议阅读：
+
+1. [你只需要注意力](https://arxiv.org/abs/1706.03762.pdf)
+2. [图解变压器](https://jalammar.github.io/illustrated-transformer/)
+3. `Transformer`（Google AI 博客文章）
+4. [层规范化](https://arxiv.org/pdf/1607.06450.pdf)
+5. [图像转换器](https://arxiv.org/pdf/1802.05751.pdf)
+6. 音乐转换器：生成具有长期结构的音乐
+7. [Jurafsky 和 Martin 第 10 章（Transformers 和大型语言模型）](https://web.stanford.edu/~jurafsky/slpdraft/10.pdf)
