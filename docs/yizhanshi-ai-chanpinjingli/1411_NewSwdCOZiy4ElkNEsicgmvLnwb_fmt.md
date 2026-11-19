@@ -1,0 +1,212 @@
+
+# 从 0 开始学 AI Agent
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/ItYmdDLVPoBwI8xN27acex9bnLh](https://v11enp9ok1h.feishu.cn/docx/ItYmdDLVPoBwI8xN27acex9bnLh)
+
+<https://v11enp9ok1h.feishu.cn/sync/PaIIdslbxsIJUIbkTfPcsMCFnph>
+
+<https://ask.feishu.cn/shared-space/7588081800526859226?referrer=aigc1111>
+
+## 1. Part I · 认知与基础
+
+### 1.1 基础知识
+
+[大模型技术全景](https://v11enp9ok1h.feishu.cn/wiki/U016waL89itBfDk5IAFcrH3xnPe)
+[机器学习基础](https://v11enp9ok1h.feishu.cn/wiki/ZDCywbwsWih7fLkid8AcWpiSnUg)
+[大模型工作原理](https://v11enp9ok1h.feishu.cn/wiki/L7Frwt43MiwYWykxC4McJURKnXf)
+[Transformer](https://v11enp9ok1h.feishu.cn/wiki/F0wqwaCuvivZQRkKv1wcPy1RnC7)
+[注意力机制](https://v11enp9ok1h.feishu.cn/wiki/C3pnwlzrGiQU3ckc0KFc4fHjnwg)
+[KV 缓存](https://v11enp9ok1h.feishu.cn/wiki/PvOIwS3SgiRmwSkcsTbcyiWknmc)
+[人类反馈-RL强化学习](https://v11enp9ok1h.feishu.cn/wiki/MVppwLTZCijY5Nk0WDmcaa3Nnig)
+[预训练](https://v11enp9ok1h.feishu.cn/wiki/ZMG6wGByWiqIOLkFOkmc5YPGn4s)
+[微调](https://v11enp9ok1h.feishu.cn/wiki/Il4bwUtKwiO7LvkLXS7cp2ebnCc)
+[模型训练的工程化路径](https://v11enp9ok1h.feishu.cn/wiki/BeKzwtonIi4D7vklBJ5crowJn4e)
+
+### 1.2 大模型生态
+
+[新时代的开源](https://v11enp9ok1h.feishu.cn/wiki/P1LwwmeajitC0zkDHGDcmnkOnkf)
+[开源生态](https://v11enp9ok1h.feishu.cn/wiki/H7qIw4S1QixECjk8jK1cheRlnxh)
+[模型概览](https://v11enp9ok1h.feishu.cn/wiki/MmYMwAMXciLutQkaep3cxvwunpe)
+[推理系统](https://v11enp9ok1h.feishu.cn/wiki/BbjfwN8Griz3likJbqXcg700ndc)
+[模型评估](https://v11enp9ok1h.feishu.cn/wiki/AM8zwtukDiLbmQk9MtFcULYdnuh)
+[模型选型](https://v11enp9ok1h.feishu.cn/wiki/PCPCwwFDHiJLmfkl1jvctgCfnNb)
+
+### 1.3 AI 治理体系
+
+[概述](https://v11enp9ok1h.feishu.cn/wiki/UCJ1wlt4liIgXDkAc6EcPXruntd)
+[AAIF](https://v11enp9ok1h.feishu.cn/wiki/SekOwLBbuiwoIrknlOYcUqxdndg)
+[主权 AI](https://v11enp9ok1h.feishu.cn/wiki/FZ2YwtF1kibQjMkFxjZcWONhngg)
+[安全设计原则](https://v11enp9ok1h.feishu.cn/wiki/Nxj7wqY0iikqKzkVhX9c4D4hnQd)
+
+### 1.4 通用人工智能
+
+[AGI 的定义与概念](https://v11enp9ok1h.feishu.cn/wiki/HkmXwigLNiov8nkHIIFcDuoUnlc)
+[核心特征与能力](https://v11enp9ok1h.feishu.cn/wiki/IPdawdyt2ifrhLk25PwcXIqznLf)
+[世界模型与空间智能](https://v11enp9ok1h.feishu.cn/wiki/NMmywCY18iUX3jk3LitcVwKWnxf)
+[技术路径与挑战](https://v11enp9ok1h.feishu.cn/wiki/B4inwfSOFigfaBkqrWPcY6Y9n9f)
+[影响与伦理](https://v11enp9ok1h.feishu.cn/wiki/P7XAwq2XSiTQpek0eQ2cesZbnqh)
+
+## 2. Part II · AI 原生基础设施
+
+### 2.1 提示词工程
+
+[提示词工程概述](https://v11enp9ok1h.feishu.cn/wiki/FMW2wvR80i9Y3akHd1BcRStknmg)
+[核心技术](https://v11enp9ok1h.feishu.cn/wiki/Nw5jwtcRRiB8vlkeggucnw3Onng)
+[最佳实践](https://v11enp9ok1h.feishu.cn/wiki/NDj1wHT0ciEFxWkGqbHcGMEknVg)
+[输出配置](https://v11enp9ok1h.feishu.cn/wiki/FX2xwS8pfipVM9k8fUVczi29nSL)
+[Jinja2 提示词模板](https://v11enp9ok1h.feishu.cn/wiki/QxBJwZMi3iL7VOkd2QFckyuenBb)
+[面向工程环境的提示词设计](https://v11enp9ok1h.feishu.cn/wiki/ZsfzwuCjJivaPqknjVQciPb9nsh)
+[PromptOps 工作流实践](https://v11enp9ok1h.feishu.cn/wiki/JOuPwEEIriqYMKkwTZGcFVsTnEh)
+[MCP 集成](https://v11enp9ok1h.feishu.cn/wiki/MzxDw6W2BiaPLvkBSTecWpD2nvc)
+[高级技巧](https://v11enp9ok1h.feishu.cn/wiki/BGKBwm66Ni08GukCYWjcoZgYnzb)
+
+### 2.2 MCP
+
+[概述](https://v11enp9ok1h.feishu.cn/wiki/NUfLwn0LSidZkbkRsPbcOEe3nTg)
+[背景](https://v11enp9ok1h.feishu.cn/wiki/KvtHwkd4Pi8NoUkUzJIc0xdbnbg)
+[MCP 代码执行模式](https://v11enp9ok1h.feishu.cn/wiki/QzBLwz9a2idL1okAxB0cFCa4nMb)
+[MCP 协议架构](https://v11enp9ok1h.feishu.cn/wiki/OjsCwxsQRi9cNFkktMhcFOTHnEd)
+[JSON-RPC](https://v11enp9ok1h.feishu.cn/wiki/ITP6wQjkOijd5LkeafXcBWlMnLh)
+[示例代码](https://v11enp9ok1h.feishu.cn/wiki/EFIWwtsNGiYb5bkUGSWc14OPn7g)
+[生态系统](https://v11enp9ok1h.feishu.cn/wiki/CzHCwwHt5iT4sWkNhjPcaGDvnjg)
+[MCP 案例研究](https://v11enp9ok1h.feishu.cn/wiki/OxZLwMHqrilKaukEPo6c3tK2nwd)
+[最佳实践](https://v11enp9ok1h.feishu.cn/wiki/EtPbwRxfIiEA4HkN5NNcVygindc)
+[AAIF](https://v11enp9ok1h.feishu.cn/wiki/SekOwLBbuiwoIrknlOYcUqxdndg)
+[主权 AI](https://v11enp9ok1h.feishu.cn/wiki/FZ2YwtF1kibQjMkFxjZcWONhngg)
+[未来趋势](https://v11enp9ok1h.feishu.cn/wiki/O3Y3wGA3LiYfeMki8xfcKUCHn5b)
+
+### 2.3 RAG 工程
+
+[概述](https://v11enp9ok1h.feishu.cn/wiki/O9xXwvW5biojbqkGXZhc5CQZneh)
+[向量与文本表示](https://v11enp9ok1h.feishu.cn/wiki/Z1b9w4L1ciAf5wkXjdocXiijnTe)
+[向量数据库选型](https://v11enp9ok1h.feishu.cn/wiki/D8JSw3ScUiRMCukh5NccagFHnkd)
+[文档处理](https://v11enp9ok1h.feishu.cn/wiki/LQdDwxqYKiPKmqkSBwecJDQfnwg)
+[框架实践](https://v11enp9ok1h.feishu.cn/wiki/CbZRwjha7iE5E5kzcW0csheInQh)
+[最佳实践](https://v11enp9ok1h.feishu.cn/wiki/A1OKwmT0ciH1qQkDvticNewunQg)
+[RAG可观测性](https://v11enp9ok1h.feishu.cn/wiki/Hy1gwG3ftiJE8okSR5JcCUFQnPg)
+[Agentic RAG](https://v11enp9ok1h.feishu.cn/wiki/JUn2wonjkihssXk8ORrcX0nLn0e)
+
+### 2.4 上下文工程
+
+[概述](https://v11enp9ok1h.feishu.cn/wiki/RWLGwMAUXiJQeukab4tci5qanXh)
+[上下文建模](https://v11enp9ok1h.feishu.cn/wiki/UQvTwXf3uivsoZkPPEccQvvKnPg)
+[可信性与评测](https://v11enp9ok1h.feishu.cn/wiki/Db10wlhIpilwjxk725GcuNrSn9f)
+[实时上下文](https://v11enp9ok1h.feishu.cn/wiki/C2lawyQPWiAOLVkrNY9cm7rhnVf)
+[生命周期与编译模型](https://v11enp9ok1h.feishu.cn/wiki/GHmawK8lbivelWk3hkKcO831nQb)
+
+### 2.5 AI 原生基础设施
+
+[概述](https://v11enp9ok1h.feishu.cn/wiki/VUBgw7fslituaXk7Z8McE3YOnKb)
+[从标准化到智能编排](https://v11enp9ok1h.feishu.cn/wiki/IeOlwF9FgiD6nnkMTNec3xp3nvb)
+[MLOps vs AIOps](https://v11enp9ok1h.feishu.cn/wiki/JvEbwx67piubgjkzrKocItABnch)
+[AI 网关](https://v11enp9ok1h.feishu.cn/wiki/XZoFw3FbDivZ8zkPxhSc9mpMnbe)
+[可观测性](https://v11enp9ok1h.feishu.cn/wiki/AUdMw4x9oiTsPWk3rSUcjUjlnKc)
+[云端可信推理](https://v11enp9ok1h.feishu.cn/wiki/MgV6w5Y0GiTuWHkwIqTcQe1Wnxg)
+[平台化](https://v11enp9ok1h.feishu.cn/wiki/H5oAw2A7UiWi7Dkac5xc9jXAn0e)
+[工程实体](https://v11enp9ok1h.feishu.cn/wiki/CrcowZONsi36xUkGuWDciUvWn2b)
+[展望](https://v11enp9ok1h.feishu.cn/wiki/FPqIwhDpfikAbJkbKsocPXFkncb)
+
+### 2.6 vLLM
+
+[本地推理服务](https://v11enp9ok1h.feishu.cn/wiki/KoYywvJ6CiHTF4kfFH5cXXC6nzf)
+[推理加速](https://v11enp9ok1h.feishu.cn/wiki/BPqDw1RYmiumRikTNFjcq4ZpnpA)
+[部署与性能优化](https://v11enp9ok1h.feishu.cn/wiki/Z6Sqw0BEjixuf0kBKTWc7L6VnQg)
+
+### 2.7 项目实战
+
+[AI 原生应用架构简介](https://v11enp9ok1h.feishu.cn/wiki/IIyvwVlsqi1i2ykpGmMcoJklndf)
+[本地开发环境搭建](https://v11enp9ok1h.feishu.cn/wiki/V7uOwsH🐧iiN7KkXTmGcdsUEn1f)
+[LLM 推理与调度实操](https://v11enp9ok1h.feishu.cn/wiki/QPV6wf7TBiiHQlkZJCAcT2aHnTb)
+[降低幻觉](https://v11enp9ok1h.feishu.cn/wiki/D1bIwpg7YiGUEhk8bqicmzYOnSe)
+[PyTorch 入门与性能分析](https://v11enp9ok1h.feishu.cn/wiki/BO8ew7lkBiHMdjkUZeEcqw3In9b)
+[SGLang 工程化与性能优化](https://v11enp9ok1h.feishu.cn/wiki/Cd8Owi45CiD5blk49Fuc1pIGn4f)
+[Hugging Face LoRA 微调](https://v11enp9ok1h.feishu.cn/wiki/G1UPwMkahiYxQjk75SdcKfH6ns8)
+[SGLang 结构化输出与函数调用](https://v11enp9ok1h.feishu.cn/wiki/UesTwbuQniwVpok0i0hcXEUJnS4)
+[应用开发模板](https://v11enp9ok1h.feishu.cn/wiki/UDn4wvByJiWf6Jk2tXfc9KiHnOf)
+[开源模型结构与微调实战](https://v11enp9ok1h.feishu.cn/wiki/EmduwYD24iBYpbkLp8Sc1rhmnMN)
+
+## 3. Part III · 智能体
+
+### 3.1 智能体
+
+[概述](https://v11enp9ok1h.feishu.cn/wiki/QSKZwc94livKoEksBh3cekbonzb)
+[核心原理](https://v11enp9ok1h.feishu.cn/wiki/B3P7wSj9Uie784kNyjVcY9Irnxf)
+[智能体架构与上下文工程](https://v11enp9ok1h.feishu.cn/wiki/IXruwD9cIi4c7lkTmxyc87p3nWc)
+[快速构建智能体](https://v11enp9ok1h.feishu.cn/wiki/B8tvwjlewi7DIPkNgWLciqcynsd)
+[使用 LangChain 构建智能体](https://v11enp9ok1h.feishu.cn/wiki/KRWFwsQGRiCS3ZkDDu6cN7csnoh)
+[LangGraph 多工具智能体](https://v11enp9ok1h.feishu.cn/wiki/CD2bw3poxiQxETk1lEHc2grKnYg)
+[多智能体协同](https://v11enp9ok1h.feishu.cn/wiki/S0hWwdvkIiU2S9kcfKIcPnKBnee)
+[AutoGen](https://v11enp9ok1h.feishu.cn/wiki/J6WxwXIqaigf5tkBuWdcwdJpnae)
+[Agent Data Protocol](https://v11enp9ok1h.feishu.cn/wiki/A782wFj06iRcvsk3duIc9qEPnZ7)
+[智能体系统工程化](https://v11enp9ok1h.feishu.cn/wiki/XsV1w37boiOwLwkaJWkcw2xTn1b)
+[数据库智能体](https://v11enp9ok1h.feishu.cn/wiki/PieHwmgrMiay4wk8eMMcu9YJnid)
+[智能体网络](https://v11enp9ok1h.feishu.cn/wiki/JXD8wKv5mikWtjk9FOkci8hKngh)
+
+### 3.2 氛围编程
+
+[概述](https://v11enp9ok1h.feishu.cn/wiki/OoZZwOZRViff3dkFZMecwcp2nXe)
+[编程语言选择](https://v11enp9ok1h.feishu.cn/wiki/W30uwNUnwiF0IVkeCt7c9PTDnaf)
+[分层路径](https://v11enp9ok1h.feishu.cn/wiki/AdxQwXoUBilO2MkefL4cwwaTnWd)
+
+### 3.3 规范驱动开发（SDD）
+
+[概述](https://v11enp9ok1h.feishu.cn/wiki/UKTQwoql8iSqACkVU3GcbRnUnRf)
+[Prompts](https://v11enp9ok1h.feishu.cn/wiki/JEucw5MywigLi9kb5hEcoFOvnXe)
+
+
+
+## 3.3 基础规范与方法论
+
+[Rules](https://v11enp9ok1h.feishu.cn/wiki/Sizzw3p3QirU6Wkg070cxNdKn9f)
+
+[`AGENTS.md`](https://v11enp9ok1h.feishu.cn/wiki/Sx4Fw5vZSicZrgkrtCEcdqegnMb)
+
+[Agent Skill](https://v11enp9ok1h.feishu.cn/wiki/L9Bewoy62iQkQVkqdNvc3GBjnQb)
+
+[SpecKit](https://v11enp9ok1h.feishu.cn/wiki/ATFbwNWz3imLQJkMZGTcbPVznRd)
+
+[OpenSpec](https://v11enp9ok1h.feishu.cn/wiki/H6x3w5jIriYpxTk1A3PcYQG3nUe)
+
+[方法论与工程演进](https://v11enp9ok1h.feishu.cn/wiki/Dir0wZXuziHjvxkmNShcYlI0nCf)
+
+[一次性应用](https://v11enp9ok1h.feishu.cn/wiki/VlPAwAt6zieECYkRaHDcUFn9npb)
+
+## 3.4 智能体运行时
+
+[概览](https://v11enp9ok1h.feishu.cn/wiki/RBCPwQxGPiPzEOkKOtsc1Zi1ntb)
+
+[失败模式与边界条件](https://v11enp9ok1h.feishu.cn/wiki/CuRUwInpDir0gbk8k5VcMgEFnub)
+
+[运行态模型](https://v11enp9ok1h.feishu.cn/wiki/OLSTw0G2Ki5j0Kkl0uvcCJmKnVc)
+
+[为什么智能体需要运行时](https://v11enp9ok1h.feishu.cn/wiki/Iup1wrOJMiBVGskoCgJcaHUBnXg)
+
+[Agent vs 微服务 vs Serverless](https://v11enp9ok1h.feishu.cn/wiki/L4WewQwzJil7R9kwElkc9HhdnRg)
+
+[状态语义与执行图](https://v11enp9ok1h.feishu.cn/wiki/Aq9AwPeDCinf3gkSnngcI1zKnOc)
+
+[自治闭环](https://v11enp9ok1h.feishu.cn/wiki/MAKvweUzpiXgO6kc9sOc8Cs3n4e)
+
+[智能体作为 Workload](https://v11enp9ok1h.feishu.cn/wiki/J3l7wnKtbiXHkCkzii9cqNzAnib)
+
+[Agent Sandbox](https://v11enp9ok1h.feishu.cn/wiki/OlOGweYgri2WWAkFkF8czpQlnmg)
+
+[运行时成本模型](https://v11enp9ok1h.feishu.cn/wiki/DC80wJwCFiEWoskdm5zc0mTpneh)
+
+[能力模型](https://v11enp9ok1h.feishu.cn/wiki/QLzPwJeSji0r2BkL3hSc85G1n9b)
+
+## 3.5 LangChain
+
+[概述](https://v11enp9ok1h.feishu.cn/wiki/U7ANwFNdqi7YwOksM46cOiHpn0e)
+
+[核心概念](https://v11enp9ok1h.feishu.cn/wiki/XOd8wPrqjiEJPOkMQVWc8ecPndd)
+
+[实践指南](https://v11enp9ok1h.feishu.cn/wiki/CvFtwmg5aiNit0kljvkcHuN5nQg)
+
+[最佳实践](https://v11enp9ok1h.feishu.cn/wiki/DD0EwMonqifycKkzwLkcIQzynAb)
+
+[部署指南](https://v11enp9ok1h.feishu.cn/wiki/UxVhwvp0TiGczqkLE09cthDVn1b)
+
+[问题与挑战](https://v11enp9ok1h.feishu.cn/wiki/NfQOw1lY5iCdJukzM0xcwo8Mn5O)
+
+[总结与展望](https://v11enp9ok1h.feishu.cn/wiki/CuHjw2muwi15kPk4lP9chfcinOg)
