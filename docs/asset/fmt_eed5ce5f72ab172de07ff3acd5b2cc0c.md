@@ -1,0 +1,163 @@
+
+```go
+// Receipt represents the results of a transaction.
+type Receipt struct {
+        // consensus fields
+        Poststate                   []byte `json : &quot;root&quot;`
+        Status                           uint64 `json : &quot;status&quot;`
+        CumulativeGasUsed uint64 `json: &quot; cumulativeGasUsed&quot; gencodec : &quot;required&quot;`
+        Bloom                           Bloom  `json : &quot;logsBloom&quot;         gencodec : &quot;required&quot;`
+        Logs                          []*Log `json: &quot;logs&quot;               gencodec : &quot;required&quot;`
+        
+        // Implementation fields (don&#x27;t reorder ! )
+        TxHash                           common.Hash     `json : &quot;transactionHash&quot; gencodec : &quot;required&quot;`
+        ContractAddress   common. Address `json : &quot;contractAddress&quot;`
+        Gasused           uint64          `json : &quot;gasused&quot;         gencodec : &quot;required&quot;`
+}
+```
+
+`Status`表示执行状态，是否成功与否
+
+### 2.9.9 智能合约可以获得的区块信息
+
+> 智能合约不能通过`system call`来得到环境信息，因为每个全节点执行环境是不一样的，而智能合约需要完全确定，每个全节点同一状态
+
++ `block.blockhash(uint blockNumber) returns (bytes32)`:给定区块的哈希-仅对最近的256个区块有效而不包括当前区块
++ `block.coinbase (address)`:挖出当前区块的矿工地址
++ `block.difficulty (uint)`:当前区块难度
++ `block.gaslimit (uint)`:当前区块`gas`限额
++ `block.number(uint)`:当前区块号
++ `block.timestamp (uint)`:自unix epoch 起始当前区块以秒计的时间戳
+
+### 2.9.10 智能合约可以获得的调用信息
+
++ `msg.data(bytes)`:完整的calldata
++ 调用什么函数以及参数
++ `msg.gas(uint)`:剩余`gas`
++ `msg.sender(address)`:消息发送者（当前调用)
++ `msg.sig(bytes4)`: calldata的前4字节（也就是函数标识符)
++ `msg.value(uint)`:随消息发送的`wei`的数量
++ `now(uint)`:目前区块时间戳( `block.timestamp` )
++ `tx.gasprice(uint)`:交易的`gas`价格
++ `tx.origin(address)`:交易发起者（完全的调用链)
+
+注意：消息发送者和交易发起者不一定相同，前者是当前合约调用方（局部），而后者是整个调用链最初的发起者
+
+### 2.9.11 地址类型
+
+![](img/c9181277de63a3396cc77b4203a53a74.png)
+
+**成员变量：**
+
+`<address>.balance(uint256)`:以Wei为单位的地址类型的余额。`uint256`是成员变量的类型，不是参数
+
+**成员函数：**
+
+注意下面的`address`都是转入地址/被调用地址
+
+`<address>.transfer(uint256 amount)`:当前合约账户向地址类型（转入地址）发送数量为`amount`的Wei，失败时抛出异常，发送2300`gas`的矿工费，不可调节。会产生连锁回滚。`gas fee`比较少，基本只写个log。上面那个例子是从C把钱转移到`addr`
+
+`<address>.send(uint256 amount) returns (bool)`:向地址类型发送数量为`amount`的 wei，失败时返回false，发送2300`gas` 的矿工费用，不可调节。不会产生连锁回滚，`gas fee`比较少，基本只写个log
+
+`<address>.call(...) returns (bool)`:发出底层`CALL`，失败时返回false，发送所有可用`gas`，不可调节。调用`address`这个合约
+
++ `<address>.call.value(uint256 amount) returns (bool)()，不会产生连锁回滚，发送所有可用`gas`，可用做更多的事情`
+
+`<address>.callcode(...) returns (bool)`:发出底层`CALLCODE`，失败时返回false，发送所有可用`gas`，不可调节。
+
+`<address>.delegatecall(...) returns (bool)`:发出底层`DELEGATECALL`，失败时返回false，发送所有可用`gas`，不可调节。
+
+所有智能合约均可显式地转换成地址类型
+
++ `transfer`会连锁回滚
++ `gas`少
++ 应用场景：普通的交易，会级联回滚，收回用不完的`gas fee`，保持原子性，但是`send`如果报错了，会修改，没有办法保证原子性。
++ `send`不会连锁回滚
++ `gas`少
++ 应用场景：多人交易，存在恶意的交易，不会抛异常，也就只会牺牲一个账号交易失败，其他都可以正常；如果是`transfer`，会级联回滚，导致大家交易都失败
++ `call`本意是调用函数，但是也可发送转账
++ 所有`gas`
+
+## 2.10 ETH-TheDAO
+
+DAO：Decentralized Autonomous Organization
+
++ 建立在技术基础上
+
+TheDAO，2016年5月出现的一个投资自治组织，将ETH换取TheDAO的代币，作为投资的投票权，也是最后划分受益的比例
+
+短时间获取了大量的ETH
+
+收取收益是使用`splitDAO`方法，拆分TheDAO可以成立`childDAO`（类似子基金），成立之后有28天锁定期
+
+![](img/af34e7a79e2d7d72d95345dab1fac666.png)
+
+先交易，后清零。存在漏洞。
+
+Hacker利用重录攻击。ETH团队决定回滚，原则是只回滚与该交易有关的内容
+
+**第一步**：修改协议，和TheDAO有关的账户不能进行交易——软分叉，但是出现了BUG，与这些账户进行交易应该是非法交易，但是`gas fee`还是要收的，以防DDos攻击，但是修改的时候出现BUG，这类交易没有收`gas fee`，最后矿工回滚版本，这个方案就失败了
+
+第二步：与TheDAO相关的账户强行转到新账户上去，而不需要签名等——硬分叉，新的feature是不符合老的矿工的认知的。
+
+ETH分裂成ETH和ETC (Ethereum Classic)，给这两条链加上`chainID`
+
+为什么不在黑客的账户上处理？而是对The DAO操作
+
+因为The DAO所有的账户都有bug，任何人都可以模仿黑客去攻击，对黑客处理治标不治本
+
+## 2.11 ETH-反思
+
++ 智能合约是否真的智能？
++ 实际上是自动合约，类似于ATM机；其实不智能
++ 不可篡改性是双刃剑
++ 有bug不能改
++ 没有什么是不可篡改的
++ 软件升级强行修改
++ `solidity`存在问题，反自然的
++ 设计上有问题
++ 可以尝试采用函数式语言。
++ Formal Verification 如何形式化证明 代码的功能
++ 模板
++ 专门的智能合约机构
++ 图灵完备是否好？有些人认为语言表达能力要适中，但很难预料到之后的攻击和漏洞等。
++ 合约代码开源提高共性力和安全，但是还是存在漏洞，称为many eyeball fallacy，要小心仔细
++ 硬分叉的过程是否只是核心团队的决策？并不是，而是广大矿工用脚投票的结果，分叉是民主的体现，对规则的修改是通过去中心化的方式完成的。分叉恰恰是民主的体现。
++ 去中心化不等于分布式系统，前者一定是分布的，但后者不一定是去中心化的。后者是用多个机器来提高运行效率，前者是为了容错（状态机模式，机器数目越多越慢，需要同步状态，传统分布式系统状态机模式，机器特别少）（只有那些需要在不信任的大群体之间建立共识才需要智能合约）
+
+## 2.12 ETH-美链
+
+ICO：Inital Coin Offering
+
+IPO：Initial Public Offering
+
+Beauty Chain是在部署在以太坊上的智能合约，有自己的代币BEC
+
++ 没有自己的区块链，代币的发行、转账都是通过调用智能合约中的函数来完成的
++ 可以自己定义发行规则，每个账户有多少代币也是保存在智能合约的状态变量里
++ `ERC 20`（Ethereum Request for Comments）是以太坊发布代币的标准，规范了所有发行代币的合约应该实现的功能和遵循的接口
++ 美链中有一个`batchTransfer`的函数，它的功能是向多个接收者发送代币，然后把这些代币从调用者的帐户上扣除
+
+![](img/7da9f279104eb206b7cf34a1e6f91a95.png)
+
+`uint256 amount = uint256(cnt) * _value`出现问题（`cnt`表示接受转账的账户个数），如果`_value`很大，就会导致溢出使得`amount`变得很小，故当前账户只扣一点点钱，而其他账户会受到一大笔钱
+
+![](img/7fb050dde94a4947d1de11c836ec53a2.png)
+
+第0号参数是地址，第1号参数是`value`的值，第2号参数是数组的具体内容，是2
+
+`solidity`有专门的数学库`SafeMath`库，会自动检测是否溢出
+
+![](img/bc3d0ca9f1f1612746b4c40e8e27538f.png)
+
+# 3 课程总结
+
+中心化和去中心化不是泾渭分明的，一个系统可以有中心化成分也可以有去中心化成分。
+
+比特币只是一种支付方式，中心化的商品当然也可以用去中心化的方式支付。
+
+加密货币应该用在传统货币不能很好解决的场景，例如跨境转账
+
+Software is eating the world
+
+去中心化一定是好事情吗？具体问题具体分析
