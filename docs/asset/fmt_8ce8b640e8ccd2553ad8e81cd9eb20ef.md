@@ -1,0 +1,169 @@
+
+我[们开源的](https://github.com/MetaGLM/FinGLM/blob/main/data/reports/reports_list.csv)数据集涵盖了2019-2021年期间部分上市公司的年度报告。该数据集共包含 11588 个详尽的 PDF 文件（list）。您可以利用这些PDF文件的内容来构建您需要的数据库或者向量库。为了避免计算资源浪费，我们也将相应的文件转换成 TXT文件和 HTML文件，供大家使用。
+
+### [PDF下载](https://modelscope.cn/datasets/modelscope/chatglm_llm_fintech_raw_dataset/summary)
+
+> 大小：69GB 文件格式：pdf文件 文件数量：11588
+
+#### `git` 加载
+
+```
+git clone http://www.modelscope.cn/datasets/modelscope/chatglm_llm_fintech_raw_dataset.git
+```
+
+#### `sdk` 加载
+
+```
+from modelscope.msdatasets import MsDataset
+
+# 使用流式方式加载「推荐」
+# 无需全量加载到cache，随下随处理
+# 其中，通过设置 stream_batch_size 可以使用batch的方式加载
+
+ds = MsDataset.load('chatglm_llm_fintech_raw_dataset', split='train', use_streaming=True, stream_batch_size=1);
+for item in ds:
+    print(item)
+
+# 加载结果示例（单条，pdf:FILE字段值为该pdf文件本地缓存路径，文件名做了SHA转码，可以直接打开） 
+{'name': ['2020-03-24__北京鼎汉技术集团股份有限公司__300011__鼎汉技术__2019年__年度报告.pdf'], 'pdf:FILE': ['~/.cache/modelscope/hub/datasets/modelscope/chatglm_llm_fintech_raw_dataset/master/data_files/430da7c46fb80d4d095a57b4fb223258ffa1afe8bf53d0484e3f2650f5904b5c']}
+```
+
+#### 备注
+1. 自定义缓存路径，可以自行设置`cache_dir`参数，即 `MsDataset.load(..., cache_dir='/to/your/path')`
+2. 补充数据加载（从9493条增加到11588条），`sdk`加载注意事项
+    a) 删除缓存中的csv映射文件(默认路径为)： `~/.cache/modelscope/hub/datasets/modelscope/chatglm_llm_fintech_raw_dataset/master/data_files/732dc4f3b18fc52380371636931af4c8`
+    b) 使用`MsDataset.load(...)` 加载，默认会reuse已下载过的文件，不会重复下载。
+
+### [TXT下载](https://modelscope.cn/datasets/modelscope/chatglm_llm_fintech_raw_dataset/summary)
+
+Note: pdf转txt格式文件，方便大家复用（有个文件损坏了，所以总数比pdf少1个，共11587 个）
+
+```
+# Linux
+wget https://sail-moe.oss-cn-hangzhou.aliyuncs.com/open_data/hackathon_chatglm_fintech/alltxt.zip
+
+# Windows示例
+Invoke-WebRequest -Uri https://sail-moe.oss-cn-hangzhou.aliyuncs.com/open_data/hackathon_chatglm_fintech/alltxt.zip -OutFile D:\\alltxt.zip
+```
+
+### HTML下载
+
+Note: pdf转html格式文件，方便大家复用（有个文件损坏了，所以总数比pdf少，共11582 个）
+
+```
+# Linux
+wget https://sail-moe.oss-cn-hangzhou.aliyuncs.com/open_data/hackathon_chatglm_fintech/allhtml.zip
+
+# Windows示例
+Invoke-WebRequest -Uri https://sail-moe.oss-cn-hangzhou.aliyuncs.com/open_data/hackathon_chatglm_fintech/allhtml.zip -OutFile D:\\allhtml.zip
+```
+
+## 使用建议
+
+以下是我们推荐的处理步骤：
+
+1. PDF文本和表格提取：您可以使用`pdfplumber`、`pdfminer`等工具包提取PDF文件中的文本和表格数据。
+2. 数据切分：根据PDF文件的目录、子目录和章节信息，对内容进行精确的切块处理。
+3. 构建基础金融数据库：依据金融知识和PDF内容，设计专业的金融数据库字段和格式。例如，定义资产负债表、现金流量表和利润表等。
+4. 信息提取：使用大模型的信息提取能力和NLP技术来抽取对应的金融字段信息。例如，请使用`json`方式输出目录的内容，其中章节的名称作为`key`，页码作为`value`。同时，请详细地抽取表格内的数据，以`JSON`格式输出。
+5. 构建金融知识问答库：结合构建的金融数据库，应用大模型构建基础的金融问答库。例如，
+
+```
+{"question":"某公司2021年的财务费用为多少元？", "answer": "某公司2021年的财务费用为XXXX元。"}
+prompt:用多种句式修改question及answer的内容。
+{"question": "为什么财务费用可以是负的？", "answer": ""}
+prompt：请模仿上面的question给出100个类似的问题与对应的答案，用json输出。
+```
+
+6. 构建向量库：借助于`Word2Vec`、`Text2Vec`等技术，从原始文本数据中提取出语义向量。使用`pgvector`这种基于PostgreSQL的扩展来存储和索引这些向量，从而建立起一个可供高效查询的大规模向量库。
+7. 应用：结合向量库、大模型、`langchain`等工具，提升应用效果。
+
+## 标注数据
+
+在 SMP 2023 ChatGLM 金融大模型挑战赛 中我们分别进行了初赛、复赛A、复赛B、复赛C。针对这几轮比赛，我们分别人工标注了相关数据，累计总共有 10000 条。
+
++ [[初赛数据]](https://github.com/MetaGLM/FinGLM/blob/main/data/pre-data) ：5000 条
+
++ [[复赛 A 数据]](https://github.com/MetaGLM/FinGLM/blob/main/data/A-data) ：2000 条
+
++ [[复赛 B 数据]](https://github.com/MetaGLM/FinGLM/blob/main/data/B-data) ：2000 条
+
++ [[复赛 C 数据]](https://github.com/MetaGLM/FinGLM/blob/main/data/C-data) ：1000 条
+
+数据示例：
+
+```
+{"ID": 1,
+"question": "2019年中国工商银行财务费用是多少元?",
+"answer":"2019年中国工商银行财务费用是12345678.9元。"}
+
+{"ID": 2,
+"question": "工商银行2019年营业外支出和营业外收入分别是多少元?",
+"answer": "工商银行2019年营业外支出为12345678.9元，营业外收入为2345678.9元。"}
+
+{"ID":3,
+"question": "中国工商银行2021年净利润增长率是多少?保留2位小数。",
+"answer": "中国工商银行2020年净利润为12345678.90元，2021年净利润为22345678.90元，根据公式，净利润增长率=(净利润-上年净利润)/上年净利润，得出结果中国工商银行2021年净利润增长率81.00%。" }
+```
+
+与此同时，我们也针对比赛撰写了[`evaluate.py`](https://github.com/MetaGLM/FinGLM/blob/main/data/evaluate.py)。我们依据：
+
+![](img/c5185f4fe123bd3e472a0e527b5ca914.png)
+
+评测示例：
+
+```
+{"question": "2019年中国工商银行财务费用是多少元?",
+
+"prompt": {"财务费用": "12345678.9元", "key_word": "财务费用、2019", "prom_answer": "12345678.9元"},
+
+"answer": [
+
+"2019年中国工商银行财务费用是12345678.9元。",
+
+"2019年工商银行财务费用是12345678.9元。",
+
+"中国工商银行2019年的财务费用是12345678.9元。"
+
+]
+
+}
+```
+
+评测计算示例：
+
+答案一：工商银行2019年财务费用是12345678.9元。
+
+> most similar sentences:
+
+> 2019年工商银行财务费用是12345678.9元。 (Score: 0.9915)
+
+> 中国工商银行2019年的财务费用是12345678.9元。 (Score: 0.9820)
+
+> 2019年中国工商银行财务费用是12345678.9元。 (Score: 0.9720)
+
+> 评分：0.25+0.25+0.9915*0.5=0.9958分。
+
+> 评分解释：`prom_answer`正确、包含所有`key_word`、相似度最高0.9915。
+
+答案二：2019年中国工商银行财务费用是335768.91元。
+
+> 评分：0分。
+
+> 评分解释：`prom_answer`错误不得分。
+
+答案三：12345678.9元。
+
+> most similar sentences:
+
+> 2019年工商银行财务费用是12345678.9元。 (Score: 0.6488)
+
+> 2019年中国工商银行财务费用是12345678.9元。 (Score: 0.6409)
+
+> 中国工商银行2019年的财务费用是12345678.9元。 (Score: 0.6191)
+
+> 评分：0.25+0+0.6488*0.5=0.5744分。
+
+> 评分解释：`prom_answer`正确、未包含所有`key_word`、相似度最高0.6488。
+
+## 📊 项目问答演示

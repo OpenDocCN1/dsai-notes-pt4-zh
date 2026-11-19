@@ -1,0 +1,190 @@
+
+![](img/5f3f289208d6ac935b8f57b5677bf682.png)
+
+[video_gen1723777119725.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QFm0bvz0locdUCxzNHicaRNPnEu)
+
+![](img/4188b13d3a00733d78556080fc97812a.png)
+
+[video_gen1723777393327.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AapPbXcK3oJfDBxL7dUcm8Szn6d)
+
+[video_gen1723777483251.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BwPAbZj9Soufg6xKRmYc6znYnQh)
+
+![](img/57cc56ecd838f0fcf8c1ca97951bbc31.png)
+
+[video_gen1723778275445.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F2nPbMGYeoHqJoxv0ArcKZu5nqf)
+
+![](img/5b3d17c3ed66f3679f8dd759a108fc62.png)
+
+[video_gen1723778452718.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vi38bf5UcoCDdMxVoyucjMW8nfe)
+
+![](img/d85ffdf4d3d2985f848d8b1899726fad.png)
+
+[video_gen1723779533068.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NWhMbV3k0oCfCyxpKEWchFhonEc)
+
+### 电影风格小词库
+
+科幻、西部、浪漫、犯罪、恐怖、黑色、喜剧、剧情、动作、动画、悲剧、史诗、古典……
+
+## ⚠️ 技巧6：提示词之艺术风格
+
+在提示词中添加“艺术家/艺术作品风格”，可以更好地指定视频的呈现效果。
+
+| **艺术风格** | 梵高 | 威廉·透纳 | **古斯塔夫·克里姆特** | 莫奈 | 草间弥生 | 弗里达·卡罗 | 爱德华·蒙克 |
+
+| --- | --- | --- | --- | --- | --- | --- | --- |
+
+| **视频** |  |  |  |  |  |  |  |
+
+| **提示词** | 参考风格：文森特·梵高，种子发芽破土而出 | 参考风格：威廉·透纳，种子发芽破土而出 | 参考风格：古斯塔夫·克林姆特，种子发芽破土而出 | 参考风格：莫奈（Claude Monet），种子发芽破土而出 | 参考风格：草间弥生（Yayoi Kusama），几个蘑菇破土而出 | 参考风格：弗里达·卡罗，种子发芽破土而出 | 参考风格：爱德华·蒙克，种子发芽破土而出 |
+
+[video_gen1723789388234.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M1VRbI27OoWWTqx9WK2clo9gnK0)
+
+![](img/4c43e860814aebf2d2bb475539cefb10.png)
+
+[video_gen1723791671678.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JOJ7bC14foPhFXxhSG0cm6Ozn1b)
+
+![](img/9e533dd52f23327e34dda74521a8646c.png)
+
+[video_gen1723790013741.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DTGRbKFkao2f7BxDdhccMjM9n6f)
+
+![](img/72f16cc5c1b5207870e9fd65b04a1644.png)
+
+[video_gen1723790405349.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OCedbVLz6oKqJaxqtOtcUxATnpI)
+
+![](img/d580e2a5c337fbee832fd0c2d9349a8f.png)
+
+[video_gen1723790629412.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZBYubf1wOoAHiNxOFlxc9ZZanIh)
+
+![](img/3e4358b887c58778a4d42a670320c148.png)
+
+[video_gen1723791382860.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S2uEb7DUToSc7LxfG0Zcmdx1nVd)
+
+![](img/441df933319f526c347349c2c6e8dd63.png)
+
+[video_gen1723792166421.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GJcJbBMrooFdIlxMdWXcnhDBnqc)
+
+### 艺术风格小词库
+
++   梵高（Vincent van Gogh） 后印象派风格，以其强烈的色彩和动感的笔触著称。
+
++   马克斯·梅勒（Max Ernst） 超现实主义，使用荒诞、梦幻的元素。
+
++   杜尚（Marcel Duchamp） 达达主义和概念艺术，挑战传统艺术定义。
+
++   杰克逊·波洛克（Jackson Pollock） 抽象表现主义，以其独特的滴画技法闻名。
+
++   雷内·马格里特（René Magritte） 超现实主义，以其神秘和哲学性质的作品著称。
+
++   弗里达·卡罗（Frida Kahlo） 表现主义和墨西哥传统艺术风格，作品充满个人情感和象征意义。
+
++   毕加索（Pablo Picasso） 立体主义和多种其他风格，以其解构和重构形状的方式知名。
+
++   莫奈（Claude Monet） 印象派，以其对光线和色彩变化的细腻捕捉著称。
+
++   威廉·透纳（J.M.W. Turner） 浪漫主义，以其戏剧化的光影和色彩运用闻名。
+
++   爱德华·蒙克（Edvard Munch） 表现主义，以其强烈的情感表达和象征性画面著称。
+
++   草间弥生（Yayoi Kusama） 波普艺术和抽象艺术，以其重复的图案和强烈的色彩对比著称。
+
++   安迪·沃霍尔（Andy Warhol） 波普艺术，以其丝网印刷和重复图像的使用知名。
+
++   达利（Salvador Dalí） 超现实主义，以其梦幻般的场景和精细的细节处理著称。
+
++   古斯塔夫·克里姆特（Gustav Klimt） 新艺术运动和象征主义，以其装饰性图案和金色运用闻名。
+
++   布鲁诺·毕加索（Bruno Picasso） 先锋派和实验性艺术，以其创新和跨媒介的作品著称。
+
+## ⚠️ 技巧7：提示词之镜头语言
+
+| 镜头语言 | 延时 | 第一人称视角（FPV） | 水下摄影 | 俯视 | 特写 |
+
+| --- | --- | --- | --- | --- | --- |
+
+| **视频** |  |  |  |  |  |
+
+| **提示词** | 延时摄影风格，一朵白色的芍药花逐渐盛开，背景是纯黑的 | 第一人称视角，我漫步在清晨的森林小径上，一切都是那么清新而宁静。阳光透过层层叠叠的树叶，洒下斑驳的光影。 | 水下摄影，一只柯基幼崽在阳光照耀的大型泳池中优雅地游泳，从水下视角捕捉柯基幼崽的微笑 | 俯视视角，田野间蜿蜒的小溪像一条银色的丝带穿梭在绿色的田野中。农民们忙碌的身影在田间显得格外渺小，他们有的在耕作，有的在收割，每一个动作都显得井然有序。 | 特写镜头，大卫雕像手持可乐 |
+
+![](img/464f1edddb92e091f7b177349da06345.png)
+
+[video_gen1723793747195.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KF8Lbm8YnoSumExHv2zca1vwnAd)
+
+![](img/18d126bd26f580939927fb35bbc85e93.png)
+
+[video_gen1723795354758.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CTV8bUspeou2FzxQVEScovAGnDB)
+
+![](img/3ad3d2296e595d71bc79707c9f601772.png)
+
+[video_gen1723797058173.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LFaIbaTF6olHYnxzwMPcsM2vn7D)
+
+![](img/23b17902a111f681e2be62fc5a29ec7a.png)
+
+[video_gen1723798024300.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FFNcbiMGgog3wixltGlcxaESnSa)
+
+[video_gen1723796367648.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q6rbbe73yoULiYxLwPGcTfTXngb)
+
+## ShowCase 专区
+
+| **卡通动漫** |  |  |  |  |  |  |  |  |
+
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+| `prompt` |  |  |  |  |  |  | 使用水彩画风格拍摄，中景，宇航员穿着白色宇航服，坐在月亮表面，慢慢弹吉他，周围有音符飘出，远处是地球的轮廓，画面色彩柔和，充满梦幻感，周围环境是模糊的星空背景，氛围宁静，4K高清。 |  |
+
+| **视频** |  |  |  |  |  |  |  |  |
+
+| **真实生活** |  |  |  |  |  |  |  |  |
+
+| `prompt` |  | x |  | x | 山间的野餐布上，各式各样的野餐食品错落有致，新鲜的水果、香脆的面包、还有刚烤好的香肠，四周是郁郁葱葱的树木和远处传来的鸟鸣。 | 豪华游艇的甲板上，一张圆桌被布置得优雅而浪漫，桌上摆放着香槟和精美的海鲜拼盘，海风轻拂，波光粼粼的海面在夕阳下闪烁着金色的光芒。 | 手撩头发轻盈，自然的眨眼，笑起来 | 美丽的油画少女，年轻女子，光透过树叶形成斑驳的影子，柔光落在她的脸上 |
+
+| **视频** |  |  |  |  |  |  |  |  |
+
+| **艺术创作** |  |  |  |  |  |  |  |  |
+
+| `prompt` | 木头上长出两朵奇特的透明塑料花，花瓣闪闪发光，花瓣是淡粉色的，花瓣被风吹动 |  |  | 黑白老照片风格，80年代，两个小孩在玩滑板车 | 摄像机围绕着一大堆老式电视旋转，这些电视播放着不同的节目——20世纪50年代的科幻电影、恐怖电影、新闻、静态、70年代的情景喜剧等，背景设在纽约博物馆的一个大型画廊里。 | 深海里的一艘沉船，电影质感，由远到近 | 庭院中，苏轼在月光下起舞。镜头环绕苏轼旋转，捕捉其舞动的身影和清影。 | 落霞与孤鹜齐飞，秋水共长天一色 |
+
+| **视频** |  |  |  |  |  |  |  |  |
+
+| **脑洞大开** |  |  |  |  |  |  |  |  |
+
+| `prompt` |  | 达芬奇和最后的晚餐里的人物觥筹交错，相谈甚欢，中近景，人物要求清晰，注意细节 | 一名宇航员和一名外星人在火星上握手，背景中有一艘火箭。 | 猴子们在电脑前打工 | 土豆变薯条 | 粉色怪兽张大嘴巴说话 | 千与千寻电影画面里出现好多好吃的 | 卡皮巴拉吃披萨 |
+
+| **视频** |  |  |  |  |  |  |  |  |
+
+| **bgm大片纯享** |  |  |  |  |  |  |  |  |
+
+| `prompt` | 蘑菇变成小熊 | 在霓虹灯闪烁的赛博朋克风格城市夜景中，手持跟拍的镜头缓缓推近，一个机械风格的小猴子正在用高科技工具维修，周围是闪烁的电子设备和未来主义的装修材料。赛博朋克风格，气氛神秘，4K高清。 | 末日来临，穿着宇航服的航天员缓缓朝着飞船走去，眼神中透露着对地球的不舍，注意细节刻画，废土风 | 广告拍摄视角，黄色背景，白色桌子上，画面中一个土豆被扔下来变成一份薯条 | 低角度向上推进，缓缓抬头，冰山上突然出现一条恶龙，然后恶龙发现你，冲向你。好莱坞电影风 | 写实描绘，近距离，猎豹卧在地上睡觉，身体微微起伏 | 在一片森林中，人视，参天大树遮蔽着太阳，树叶的缝隙中洒下一些阳光，丁达尔效应 | 山间的野餐布上，各式各样的野餐食品错落有致，新鲜的水果、香脆的面包、还有刚烤好的香肠，四周是郁郁葱葱的树木和远处传来的鸟鸣。 |
+
+| **视频** |  |  |  |  |  |  |  |  |
+
+![](img/e280cae8cbd16cb2ee6f57cd233b3a71.png)
+
+[0fd1b5d5-4d3d-5985-87f8-6d37b10ef77b_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IccOboQLJoV0qex4hjtcWwbHnJw)
+
+![](img/c81e65d699ad7672e9fb307d20642cfa.png)
+
+[7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wi06bHRIxoJfBHxrqnnc7HA8n6c)
+
+[10.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MPIZbTIpuo2Q7rxCIWXcLPVln0b)
+
+[11.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BhkAbAkqFobY5Oxf4ihcF4TMnwf)
+
+![](img/155a053eaa575a8275c18f176260f97a.png)
+
+[13.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ThY1bNVQdoqMcTx1Pd5cERvHnTh)
+
+[14.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ba92boIB1oRhUxxMArYc0cgBnRH)
+
+![](img/7797c6cd7f281a641bff92e3c6edd6cb.png)
+
+[8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P7hBbrieWoK7ODxWJU9csTdOnTe)
+
+![](img/b4c973d4ea640829a5f32ce1c359bbb1.png)
+
+[965d523e-05bc-55a8-9031-f660c2ba2c8c_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BqdKbNUaOoQF9FxzDgHcjez6nSa)
+
+![](img/989d1d5594dbf53d49a5d73437ea380e.png)
+
+[0da0bff0-4ba6-53bd-8584-e8267acf11fc_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J8FKbSACYoUa54xTtwuc1hV2nzd)
+
+![](img/ead62052c9620d914f703786d71d3eee.png)

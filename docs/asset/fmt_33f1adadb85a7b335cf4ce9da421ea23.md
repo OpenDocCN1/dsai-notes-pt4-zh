@@ -1,0 +1,104 @@
+
+# 快速使用
+
+> 来源：[https://ai.feishu.cn/docx/RlH7dmkAioy72Px5tlgcYS1Rnwd](https://ai.feishu.cn/docx/RlH7dmkAioy72Px5tlgcYS1Rnwd)
+
+> What：
+
+> 我们开源了一个模型，可以输出长度超过 1 万字的文本，非常适合写作，特别是论文、公文等。
+
+> Why：
+
+> LLM 的长文本输入，目前已经提升到 1M（例如 GLM-4-9B-1M），也即可以直接向模型输入 2 本红楼梦，并针对输入内容进行问答。
+
+> 但是另一个角度，长文本的输出问题并没有很好地解决。目前多数输出长度（一次输出）都不超过 2k。
+
+> 我们探索了一种方法，将 LLM 的输出长度提升到最高 10k 的长度，相当于一篇中篇小说的长度，或者一篇论文的长度。
+
+> How：
+
+> 在长上下文的模型（例如 GLM-4-9B）的基础上，我们用 6000+ 条输出长度在 2k-32k 之间的数据进行 SFT 微调以及 DPO。
+
+论文：`https://arxiv.org/abs/2408.07055`
+
+代码：`https://github.com/THUDM/LongWriter`
+
+模型：
+
++   Huggingface：`https://huggingface.co/THUDM/LongWriter-glm4-9b`
+
++   魔搭：`https://modelscope.cn/models/ZhipuAI/LongWriter-glm4-9b`
+
+数据
+
++   Huggingface：`https://huggingface.co/datasets/THUDM/LongWriter-6k`
+
++   魔搭：`https://modelscope.cn/datasets/ZhipuAI/LongWriter-6k`
+
+![](img/faba624b6304dd6c70c2b78473cc8533.png)
+
+[longwriter_demo.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VUMtbKj1joGI9CxBcJLcjO60nhc)
+
+# 模型下载&安装
+
+从魔搭下载：
+
+```
+git clone https://www.modelscope.cn/ZhipuAI/LongWriter-glm4-9b.git
+```
+
+从 hf 下载：
+
+```
+git clone https://huggingface.co/THUDM/LongWriter-glm4-9b
+```
+
+从 hf-mirror 下载：
+
+```
+git clone https://hf-mirro.com/THUDM/LongWriter-glm4-9b
+```
+
+# 运行：
+
+## 启动虚拟环境
+
+```
+cd /Home #虚拟环境安装地址
+python3.10 -m venv .venv #安装虚拟环境
+source .venv/bin/activate #启动虚拟环境
+pip install -r requirements.txt #安装依赖
+```
+
+> 基础依赖包如下
+>
+> `tqdm`
+> `numpy`
+> `torch`
+> `transformers==4.33.0`
+> `datasets`
+> `einops`
+> `gradio`
+> `peft`
+> `tiktoken`
+
+## 终端运行：
+
++   修改下面两个地址，可以直接填写模型的绝对路径
+
++   可以直接执行 `python` 内容
+
++   也可以新建一个 `python` 文件，执行 `python` 文件
+
+```
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
+tokenizer = AutoTokenizer.from_pretrained("/mnt/.../LongWriter-glm4-9b", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("/mnt/.../LongWriter-glm4-9b", torch_dtype=torch.bfloat16, trust_remote_code=True, device_map="auto")
+model = model.eval()
+query = "请帮我撰写一个主题为「黑神话·悟空」玄幻小说，小说以孙悟空为核心，讲述一个桀骜不驯，打怪升级，追逐梦想的玄幻故事，不少于 10000 字"
+response, history = model.chat(tokenizer, query, history=[], max_new_tokens=32768, temperature=0.5)
+print(response)
+```
+
+结果如下：

@@ -1,0 +1,443 @@
+
+# SpecFusion - 全生命周期规范驱动开发工具
+
+> 来源：[https://xatc0v8uz5m.feishu.cn/docx/Hu0rdwlUEo3zYxxg6FOcllGRn9e](https://xatc0v8uz5m.feishu.cn/docx/Hu0rdwlUEo3zYxxg6FOcllGRn9e)
+
+> 🔗 原文链接：https://mp.weixin.qq.com/s/NXQKwEFnYR3iqxslNOdalA
+
+> ⏰ 剪存时间：2025-11-18 23:04:09 (UTC+8)
+
+> ✂️ 本文档由 [飞书剪存](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc) 一键生成
+
+原创 小陈Teacher 和解AIAgent 2025年11月18日 09:35
+
+> 一个工具，全生命周期，智能适配
+
+> 告别工具切换，拥抱统一体验
+
+---
+
+## 🎯 你遇到过这些问题吗？
+
++ 项目从 0→1 时，你使用 `spec-kit` 建立规范，但到了 1→n 迭代阶段，却需要切换到 `OpenSpec`？
++ 团队需要学习两套不同的工具和命令，增加了学习成本和认知负担？
++ 项目在不同阶段使用不同工具，导致规范格式不统一，历史追溯困难？
++ 想要一个既能建立项目基础，又能管理变更的统一解决方案？
+
+`SpecFusion` 正是为解决这些问题而生。
+
+---
+
+## ✨ 什么是 SpecFusion？
+
+`SpecFusion` 是一个创新的全生命周期规范驱动开发工具，创造性地解决了规范驱动开发在不同项目阶段需要切换工具的痛点。
+
+### 核心价值主张
+
+```
+SpecFusion = （建立基础） + （变更管理） + 智能切换
+```
+
+一个工具，覆盖项目全生命周期：
+
++ 🏗️ 0→1 阶段：`Foundation Mode` - 建立项目宪法、创建功能规范、生成技术计划
++ 🔄 1→n 阶段：`Change Mode` - 管理变更提案、追踪规范增量、自动归档
++ 🤖 智能识别：自动检测项目阶段，无缝切换工作模式，无需人工干预
+
+---
+
+## 🌟 为什么选择 SpecFusion？
+
+### 与 `spec-kit` 和 `OpenSpec` 的对比
+
+| 维度 | `spec-kit` | `OpenSpec` | `SpecFusion` |
+| --- | --- | --- | --- |
+| 核心定位 | 完整方法论（0→1强） | 轻量级变更管理（1→n强） | **全生命周期统一工具** |
+| 项目初始化 | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ |
+| 项目宪法 | ⭐⭐⭐⭐⭐ | ❌ | ⭐⭐⭐⭐⭐ |
+| 变更追踪 | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| 规范增量 | ❌ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| 自动模式切换 | ❌ | ❌ | **⭐⭐⭐⭐⭐** |
+| 统一命令 | ❌ | ❌ | **⭐⭐⭐⭐⭐** |
+| 学习曲线 | 陡峭 | 平缓 | **平缓** |
+| 迁移成本 | 高 | 中 | **零** |
+| 0→1 能力 | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ |
+| 1→n 能力 | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+
+### `SpecFusion` 的独特优势
+
+#### 🎯 智能阶段识别 - 告别手动切换
+
++ 自动检测 Git 标签（`v1.0+`）、规范数量、变更历史
++ 多维度分析，置信度计算，确保准确性
++ 无需人工判断，工具自动适配
+
+#### 🔧 统一命令接口 - 降低学习成本
+
++ 一套命令覆盖全生命周期：`create`、`apply`、`archive` 等
++ 同一命令在不同阶段自动适配不同行为
++ 一次学习，终身受用
+
+#### 🚀 零迁移成本 - 平滑过渡
+
++ 兼容 `spec-kit` 的项目结构和规范格式
++ 兼容 `OpenSpec` 的变更管理机制
++ 支持现有项目的平滑集成（`--here` 选项）
++ 从其他工具迁移，零成本
+
+#### 💎 双模式融合 - 最佳实践
+
++ `Foundation Mode`：继承 `spec-kit` 的深度方法论
++ `Change Mode`：继承 `OpenSpec` 的灵活变更管理
++ 自动选择最佳模式，提供最佳体验
+
+---
+
+## 🏗️ 核心功能特性
+
+### 1. 智能双模式架构
+
+`SpecFusion` 采用双模式架构，完美融合两种工作流：
+
+#### Foundation Mode（基础建设模式）- 继承自 `spec-kit`
+
+适用于项目启动和基础建设阶段（0→1）：
+
++ 📜 项目宪法（Constitution）：定义项目核心原则、技术栈约定和开发规范
++ 📋 功能规范（Specification）：生成详细的功能需求文档和技术规范
++ 📊 技术计划（Planning）：自动生成实施计划和任务分解
++ 🔍 研究代理（Research Agent）：AI 辅助技术调研和方案选型
+
+#### Change Mode（变更管理模式）- 继承自 `OpenSpec`
+
+适用于项目迭代和变更管理阶段（1→n）：
+
++ 📝 变更提案（Proposal）：创建结构化的变更请求文档
++ 📈 规范增量（Delta）：以增量方式管理规范变更，保持清晰的变更历史
++ 📦 归档机制（Archive）：完成变更后自动归档并合并到主规范库
++ 🔎 影响分析：自动分析变更对现有功能的影响范围
+
+### 2. 统一命令接口
+
+一套命令，全生命周期覆盖：
+
+```
+# 项目初始化
+specfusion init my-app --ai-tools cursor claude
+# 创建功能或变更（自动识别模式）
+specfusion create user-authentication
+# 查看项目状态
+specfusion status
+# 列出所有功能和变更
+specfusion list
+# 显示详细信息
+specfusion show user-authentication
+# 验证规范质量
+specfusion validate
+# 验证代码实现
+specfusion verify user-authentication --update-spec
+# 检查完成度
+specfusion check-completion user-authentication
+# 应用变更
+specfusion apply add-2fa-support
+# 归档变更
+specfusion archive add-2fa-support
+# 研究技术主题
+specfusion research "React + TypeScript 最佳实践"
+```
+
+核心优势：同一命令在不同阶段自动适配，无需记忆两套命令。
+
+### 3. AI 工具深度集成
+
+与主流 AI 编程助手无缝集成，提供斜杠命令支持：
+
++ `Cursor`：完整的斜杠命令集成，支持所有 `SpecFusion` 功能
++ `Claude Code`：原生支持，提供智能规范生成和验证
++ `GitHub Copilot`：集成中，将提供类似体验
+
+使用示例：
+
+```
+/specfusion:create user-auth
+/specfusion:verify user-auth
+/specfusion:status
+```
+
+集成后，开发者可以在 AI 工具中直接使用命令，无需离开开发环境。
+
+### 4. 完善的规范质量保证
+
+多层次验证机制，确保规范质量：
+
++ ✅ 格式验证：检查规范文档的格式正确性和结构完整性
++ ✅ 一致性验证：确保规范之间的一致性，避免冲突
++ ✅ 可执行性验证：验证任务的可执行性，确保开发可行性
++ ✅ 实现验证：自动检查代码实现是否满足规范要求
++ ✅ 完成度分析：综合分析规范完整性、任务完成度、代码实现率和测试覆盖率
+
+### 5. 清晰的项目结构
+
+融合 `spec-kit` 和 `OpenSpec` 的最佳实践：
+
+```
+project/
+└── .specfusion/
+    ├── constitution.md          # 项目宪法（from spec-kit）
+    ├── config.yaml              # 配置文件
+    ├── specs/                   # 功能规范（Foundation Mode）
+    │   └── [feature]/
+    │       ├── spec.md          # 功能规范
+    │       ├── plan.md          # 技术计划
+    │       └── tasks.md         # 实施任务
+    └── changes/                 # 变更管理（Change Mode）
+        ├── [change-name]/
+        │   ├── proposal.md      # 变更提案
+        │   ├── tasks.md         # 实施任务
+        │   └── specs/           # 规范增量
+        └── archive/             # 已归档变更
+```
+
+---
+
+## 💡 实际使用场景
+
+### 场景 1：新项目启动（0→1）- `Foundation Mode`
+
+**背景**：你正在启动一个全新的 Web 应用项目
+
+**工作流**：
+
+```
+# 1. 初始化项目（自动进入 Foundation Mode）
+specfusion init my-app --ai-tools cursor
+# 2. 研究技术栈（可选）
+specfusion research "React + TypeScript 最佳实践"
+# 3. 创建第一个功能规范
+specfusion create user-authentication
+# 自动生成：spec.md + plan.md + tasks.md
+# 4. 查看技术计划
+specfusion show user-authentication
+# 5. 基于规范实施开发
+# ... 编写代码 ...
+# 6. 验证实现并更新规范
+specfusion verify user-authentication --update-spec
+```
+
+**收益**：
+
++ ✅ 建立清晰的项目宪法和规范
++ ✅ 获得详细的技术计划和任务分解
++ ✅ 确保开发过程有据可循
++ ✅ 为后续迭代打下坚实基础
+
+### 场景 2：项目迭代（1→n）- `Change Mode`
+
+**背景**：项目已发布 `v1.0`，需要添加新功能
+
+**工作流**：
+
+```
+# 1. 查看项目状态（自动识别为 Change Mode）
+specfusion status
+# 输出：🔄 当前模式: Change Mode（已检测到 v1.0.0 标签）
+# 2. 创建变更提案
+specfusion create add-2fa-support
+# 自动生成：proposal.md + specs/delta + tasks.md
+# 3. 查看变更详情和影响分析
+specfusion show add-2fa-support
+# 4. 基于提案和增量规范开发
+# ... 编写代码 ...
+# 5. 验证实现
+specfusion verify add-2fa-support
+# 6. 归档变更（自动合并到主规范库）
+specfusion archive add-2fa-support
+```
+
+**收益**：
+
++ ✅ 清晰的变更提案和影响分析
++ ✅ 规范的增量管理，保持历史可追溯
++ ✅ 自动归档机制，保持项目整洁
++ ✅ 无缝的变更管理体验
+
+### 场景 3：从其他工具迁移
+
+**背景**：你正在使用 `spec-kit`，项目即将进入迭代阶段
+
+**迁移方案**：
+
+```
+# 1. 在现有项目中集成 SpecFusion
+cd existing-project
+specfusion init --here --ai-tools cursor
+# 2. SpecFusion 自动识别项目阶段
+specfusion status
+# 如果已有 v1.0 标签，自动使用 Change Mode
+# 否则继续使用 Foundation Mode
+# 3. 继续使用熟悉的命令
+specfusion create new-feature
+# 命令行为自动适配当前模式
+```
+
+**收益**：
+
++ ✅ 零迁移成本，平滑过渡
++ ✅ 保持现有项目结构
++ ✅ 无需重新学习命令
++ ✅ 自动适配项目阶段
+
+---
+
+## 🔧 技术实现亮点
+
+### 1. 智能阶段识别算法
+
+`SpecFusion` 实现了多维度阶段识别算法：
+
+```
+class StageDetector:
+    """
+    阶段识别器 - 智能识别项目处于 Foundation 还是 Change 阶段
+    """
+    def detect(self) -> ProjectStage:
+        # 1. 检查 Git 标签（v1.0+）- 最明确的信号
+        # 2. 统计规范数量 - 判断项目成熟度
+        # 3. 分析变更历史 - 评估迭代状态
+        # 4. 计算置信度 - 确保准确性
+        # 5. 返回阶段判断
+```
+
+**识别逻辑**：
+
++ 有 `v1.0+` 标签 → `Change Mode`（置信度 100%）
++ 规范数量 ≥ 5 → 可能接近 `Change Mode`（置信度 70%）
++ 有宪法且有规范 → `Foundation Mode`（置信度 90%）
++ 仅有宪法 → `Foundation Mode` 早期（置信度 100%）
+
+### 2. 模式自动切换机制
+
+系统在检测到阶段变化时，自动切换工作模式：
+
++ `Foundation Mode`：`create` 命令生成 `spec.md` + `plan.md` + `tasks.md`
++ `Change Mode`：`create` 命令生成 `proposal.md` + `specs/delta` + `tasks.md`
+
+**切换触发**：
+
++ Git 标签检测（`v1.0+`）
++ 规范数量阈值
++ 手动切换（可选）
+
+### 3. 零迁移成本设计
+
++ ✅ 兼容 `spec-kit` 的项目结构和规范格式
++ ✅ 兼容 `OpenSpec` 的变更管理机制
++ ✅ 支持现有项目的平滑集成（`--here` 选项）
++ ✅ 统一的命令接口，降低学习成本
+
+---
+
+## 📊 适用场景建议
+
+### 选择 `spec-kit` 如果：
+
++ ✅ 你正在启动一个全新的项目（Greenfield）
++ ✅ 需要完整的方法论指导
++ ✅ 重视项目宪法的建立
++ ✅ 需要研究代理辅助技术选型
++ ⚠️ 但要注意：项目迭代阶段需要切换到其他工具
+
+### 选择 `OpenSpec` 如果：
+
++ ✅ 你有一个已存在的项目（Brownfield）
++ ✅ 主要关注变更管理
++ ✅ 需要轻量级工具快速上手
++ ✅ 项目已经成熟，处于迭代阶段
++ ⚠️ 但要注意：新项目启动阶段功能不足
+
+### 选择 `SpecFusion` 如果：
+
++ ⭐ 你需要一个覆盖全生命周期的统一工具
++ ⭐ 希望避免在项目不同阶段切换工具
++ ⭐ 重视开发体验的一致性和连续性
++ ⭐ 希望降低学习成本和迁移成本
++ ⭐ 需要智能适配不同项目阶段的工作流
++ ⭐ 追求最佳实践和最佳体验
+
+---
+
+## 🏛️ 技术架构
+
+### 核心组件
+
+1. `CLI` 框架：基于 `Click` 构建的统一命令行接口
+2. 阶段识别器：智能检测项目阶段的算法实现
+
+
+
+# SpecFusion
+
+## 核心模块
+
+1. 模式管理器：`Foundation Mode` 和 `Change Mode` 的统一管理
+2. 规范生成器：自动生成规范文档的模板系统
+3. 验证引擎：多层次的规范质量验证机制
+4. AI 集成层：与各种 AI 工具的集成适配器
+
+## 技术栈
+
++ 语言：`Python 3.8+`
++ CLI 框架：`Click`
++ UI 渲染：`Rich`（提供美观的命令行界面）
++ 模板引擎：`Jinja2`
++ Git 集成：`GitPython`
++ 包管理：支持 `uv`（推荐）和 `pip`
+
+## 📈 项目状态
+
+SpecFusion 目前处于活跃开发阶段，核心功能已全面实现：
+
+### ✅ 已完成功能
+
++ ✅ `Foundation Mode`：100% 实现（宪法、规范、计划）
++ ✅ `Change Mode`：100% 实现（提案、增量、归档）
++ ✅ 智能阶段识别：100% 实现（`Git` 标签检测、规范统计）
++ ✅ CLI 框架：100% 实现（统一命令接口）
++ ✅ AI 工具集成：`Cursor` + `Claude` 完成
+
+### 🚧 开发中功能
+
++ 🚧 研究代理：待实现（Phase 3 计划）
++ 🚧 更多 AI 工具：扩展中（`GitHub Copilot` 等）
+
+## 🎯 总结
+
+SpecFusion 是一个创新的规范驱动开发工具，通过智能阶段识别和统一命令接口，为开发者提供了全生命周期的规范管理解决方案。
+
+### 核心价值
+
++ 🎯 统一工具：告别工具切换，一个工具覆盖全生命周期
++ 🤖 智能适配：自动识别项目阶段，提供最适合的工作流
++ 🚀 零迁移成本：从其他工具平滑迁移，无需重新学习
++ 💎 最佳实践：融合两大优秀项目的优势，提供最佳体验
+
+### 适用对象
+
++ ✅ 新项目启动团队：需要建立规范基础
++ ✅ 项目迭代团队：需要管理变更和增量
++ ✅ 全生命周期团队：希望统一工具和体验
++ ✅ 从其他工具迁移：追求更好的开发体验
+
+### 立即开始
+
+无论是新项目启动还是现有项目迭代，SpecFusion 都能提供最适合的工作流程，真正实现"一个工具，全生命周期，智能适配"的设计理念。
+
+开始使用 SpecFusion，体验规范驱动开发的新境界！
+
+### 项目仓库
+
+定向开放（持续迭代中）
+
+![](img/bfdc528c5bdc11fb95b3cae77fcf3fa0.png)
+
+> 注意：项目地址暂时不公开，当前为定向开放状态，项目在持续迭代过程中。

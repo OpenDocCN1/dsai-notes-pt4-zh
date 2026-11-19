@@ -1,0 +1,213 @@
+
+![](img/b8165e4755962ab5e685c6c5e563922e.png)
+
+[latent_recon_0 14.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MfB5bSGYDohy42xECFBcucMcnre)
+
+![](img/f84a8c66155048eab2ebf5b22e1d7826.png)
+
+[latent_recon_0 29.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IxJ7bigQGoF1G6xDw2kce6nmnJc)
+
+![](img/34d3ae4bfcf3276f32adcf00b39f1098.png)
+
+[latent_recon_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UW5Fb4qgfonOGWxn7NGc66lwnOe)
+
+![](img/516baefe18bd8566a700264863590703.png)
+
+[11月7日 (1).mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QTZnbANzYogk6MxCiFVc1QZXn8g)
+
+![](img/ce366cdea87c43e2691ee068a67f62a9.png)
+
+[11月7日 (2).mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W7pxbTN2qoYejPxYcf4cz4F1nRe)
+
+![](img/9c48d47c4ab7104022823e383ef78541.png)
+
+[latent_recon_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IDLibtIKooKG2vxHlOEceU6On9f)
+
+![](img/6632c28a164c3b5bce807d0e3e2a52eb.png)
+
+[11月7日 (3).mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XjTdbxGhBoufM8x5ZkzccrkVnvb)
+
+# 【音效模型CogSound】Showcase
+
+| 场景 | 所有音效均由音效模型生成 |
+| --- | --- |
+| 巨轮撞向冰山 | |
+| 水下探险 | |
+| 怪物嘶吼 | |
+| 核爆炸 | |
+| 赛车、引擎轰鸣 | |
+| 乐器演奏 | |
+| 动物叫声 | |
+| 动物进食 | |
+| 篝火 | |
+| 森林 | |
+| 小火车 | |
+
+![](img/237a47623627c980f123fb21eddf31c7.png)
+
+[2012撞冰10s.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P2yqbj7yDou36IxLpmncqMi2nPd)
+
+![](img/3ed80fb7c3c6610863bafddac1a5b095.png)
+
+[阿凡达1.10s.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/REyTboQYQoJq3xxe4GMcICXTnyc)
+
+![](img/d1df8ffa4c8ab35a10d4c0e823dd0573.png)
+
+[哥斯拉1.10s.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KmZ7bin4toiDRNxdv5wcoNqknZg)
+
+![](img/2ca04d39a2898c07cf3a5bb79e38fd51.png)
+
+[神秘代码1.10s.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V33dbxsRto02wnxhiABc6E3Zn7f)
+
+![](img/3416461e81da6850c3429164942226f4.png)
+
+[速度与激情1.10s.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LNKdbLDhWodHX6x3VAfcUBNmnGb)
+
+![](img/4ddaa3a73bc08935e7f84d734035ad15.png)
+
+[飞书20241105-115404.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WJqAbo4oBo2SDfxnq5KckSmcn3c)
+
+![](img/cddf867ee06701bc02d3c0a49d0bfce9.png)
+
+[file_v3_00fu_01430309-a2b1-4eb3-9f88-6ed7a1f6b54g_2-2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JTAkbBdVOo5nVGxkbBrcgkZondf)
+
+![](img/3136077294bb46922468d180f7454da4.png)
+
+[file_v3_00fu_055f9e18-08ae-4237-b77d-cf192dedf2eg_5-2(2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/REcfbUGHkoNjGWxKkKccbZovnad)
+
+![](img/b542354ff494528d577d4cebe0811b7f.png)
+
+[小兔进食.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hqx1bG8gNoK3Rcx10bDc5U7Xnph)
+
+![](img/f2ad1ad6f4800428d7007872cb4ab0d6.png)
+
+[Demo5-2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ml5Sbfeaaog82BxjHSocJyfCnEg)
+
+[latent_recon_0 (10).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OZ3obUlSIoaVmIxOSCJcm23YnBZ)
+
+![](img/2191fbf17590f45c91045ddac867147c.png)
+
+[11月6日.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RIjLbWP4noZEduxZbbQcn7p4nOd)
+
+## 文生视频技巧专区
+
+### 🤔什么是文生视频？
+
+输入一段文字，清影大模型根据文本表达将您的文字转变为视频画面。
+
+✅【文生视频】可选“速度更快”or“质量更佳”两种模式，无论追求创作速度还是画面更高表现力，都能满足需求！
+
+### ⚠️技巧 1：提示词最重要的守则：结！构！性！
+
+当提示词有**清晰的结构**时，提示效果是最有效的。
+
+使用以下结构有助于生成期望的结果：
+
+> **简单公式：**[摄像机移动]+[建立场景]+[更多细节]
+>
+> **复杂公式：**[镜头语言] + [光影] + [主体 (主体描述)] + [主体运动] + [场景 (场景描述)] + [情绪/氛围/风格]
+
+**无结构提示词：**小男孩喝咖啡
+
+**有结构的提示词：**摄影机平移（镜头移动），一个小男孩坐在公园的长椅上（主体描述），手里拿着一杯热气腾腾的咖啡（主体动作）。他穿着一件蓝色的衬衫，看起来很愉快（主体细节描述），背景是绿树成荫的公园，阳光透过树叶洒在男孩身上（所处环境描述）。
+
+| 类型 | 无结构提示词 | 有结构的提示词 |
+| --- | --- | --- |
+| prompt | 小男孩喝咖啡 | 摄影机平移，一个小男孩坐在公园的长椅上，手里拿着一杯热气腾腾的咖啡。他穿着一件蓝色的衬衫，看起来很愉快，背景是绿树成荫的公园，阳光透过树叶洒在男孩身上。 |
+| 视频效果 | | |
+
+![](img/7989b9e69da09090483ab5b83e121523.png)
+
+[a9c8b0e7-8384-5877-820f-02ad3dc3965d_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kv89bBmlLoVIcnxBrficijbYnVg)
+
+![](img/eb7894f161d4283d5e19bcc7d98971cb.png)
+
+[eea46e02-9b82-5aac-a23e-846227ca8da4_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PcbcbC4k7oaNnAx3mnJcorNTngh)
+
+### ⚠️技巧 2：提示词优化
+
+**还有三个原则：**
+
+**强调关键信息：**在提示的不同部分重复或强化关键词有助于提高输出的一致性。例如，摄像机以超高速镜头快速飞过场景。（其中的“超高速”、“快速”就是重复词）
+
+**聚焦出现内容：**尽量让你的提示集中在场景中应该出现的内容上。例如，你应该提示晴朗的天空，而不是没有云的天空。
+
+**规避负面效果：**为了进一步保障视频生成质量，可以在提示词中写明不需要的效果。例如：“不出现扭曲、变形、模糊的场景。”
+
+#### ✍️怎么写一个提示词？
+
+**首先**，要明确场景中的人物和冲突是什么，这是推动整个场景发展的关键因素。例如，在一个追逐场景中，冲突可能是间谍试图逃脱追赶者的追捕。
+
+**其次**，是对场景进行详细的描述，包括地点、人物形象、任务动作等细节。使用生动的动词来营造动态和戏剧化的氛围，如“匆匆前行”、“缓缓旋转”等。例如：“在昏暗的街道上，雨滴如注，一个孤独的行人匆匆前行。”
+
+**第三**，加强镜头语言，镜头语言是通过摄影机的移动或焦距变化来表现画面内容的一种方式。常用的镜头运动包括推、拉、摇、移、升、降等。每种镜头运动都有其特定的作用和效果：
+
++ **推镜头**：逐渐聚焦在某一角色的面部表情上，突出表现该角色的情感变化。
++ **拉镜头**：逐渐远离主体，展示环境或背景，形成一种运动的主体不变、静止的背景变化的造型效果。
++ **摇镜头**：跟随主体运动的表现方式，可以突出主体的同时，又可以交待主体运动方向、速度、体态及其与环境的关系。
+
+提示词要具体明确且符合物理规律，使用简单且清晰的语言。
+
+### ⚠️技巧 3：使用免费赠送的官方小工具
+
+为了让大家快速上手，我们为大家制作了一个帮写视频提示词的智能体，输入简单的场景就可以获得 3 个优质提示词（专业！）。
+
+#### 使用地址➡️：[清影提示词智能体](https://chatglm.cn/main/gdetail/669911fe0bef38883947d3c6)
+
+![](img/57152ce12bdb06f83472ce18545503b1.png)
+
+#### 使用示例：
+
+| 原始提示词 | 小男孩喝咖啡 | | |
+| --- | --- | --- | --- |
+| 视频 | | | |
+| 优化提示词 | 版本 1 | 版本 2 | 版本 3 |
+| | 提示词1：赛博朋克风格（Cyberpunk Style） | 提示词2：黑白电影风格（Black and White Film Style） | 提示词3：日式卡通风格（Anime Style） |
+| 视频 | | | |
+
+![](img/0f1ba6c1c28850163032e9376172e779.png)
+
+[5b0bf9b6-0b68-53b6-a5de-0d4890a1ad35_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/McISbyIatoZvPsxJC9kcpvqlnTe)
+
+![](img/ddfc54ac649c8e81b9c10df125e7374f.png)
+
+[a2e1451b-3467-5e45-8a37-9b5436b39e3d_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LbWmbz4tVoZtYRxf43AcHyNTnrc)
+
+![](img/694a5555293544670aa35de5ee99d7f1.png)
+
+[50d82059-f980-59dc-ab81-3fd265981f13_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GwHgbhb8MoWdZQxCGtHcGkrLnKh)
+
+### ⚠️技巧 4：大力出奇迹，多抽几次卡！（可能是最重要的 Tips 之一）
+
+大模型输出具有不稳定性，多试几次会有小惊喜，得到你满意的结果。
+
+以下是同一个提示词抽出的不同的视频，差距很大。
+
+| 提示词 | 小男孩喝咖啡 | | | | |
+| --- | --- | --- | --- | --- | --- |
+| 抽卡结果 | 版本 1 | 版本 2 | 版本 3 | 版本 4 | 版本 5 |
+| | | | | | |
+| 效果等级 | 三星 | 二星 | 二星 | 三星 | 五星 |
+
+[a9fe3e26-bb31-5482-88da-ad63b74c0732_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WUMwbeB51oQGdixNojtcd6v3nPg)
+
+![](img/841e4a9781808b145ce597554f9109da.png)
+
+[59b88bd0-e89d-5939-b8f2-277b46b4be58_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VCWZbiSf1o7rjexp3NVcXwCNn5r)
+
+[b688cc8d-eb8e-5619-ab3c-d132feb28a3d_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SP9Ab5mMYoaoAYxvR3eckb6Mnph)
+
+![](img/bcc66f241d8d71e1b76e70a374fe6236.png)
+
+[88b7d088-6fab-568d-aa5b-d4364fd7daef_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DTLMbrDYwovDonxeuxIcUMfan0c)
+
+[d0779722-ba0b-5e20-a879-c29d09a8b24b_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H9zVbDcdQogXo7x2a65cUuXNnMf)
+
+### ⚠️技巧 5：提示词之电影风格
+
+在提示词中添加“电影风格”，可以更好地指定视频的呈现效果。
+
+| 电影风格 | 基础风格 | 科幻风格 | 西部风格 | 犯罪风格 | 恐怖风格 | 黑色风格 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 视频 | | | | | | |
+| 提示词 | 一个乐高积木小人在高速公路上开跑车 | 科幻风格，一个乐高积木小人在高速公路上开跑车 | 西部风格，一个乐高积木小人在高速公路上开跑车 | 犯罪风格，一个乐高积木小人在高速公路上开跑车 | 恐怖风格，一个乐高积木小人在高速公路上开跑车 | 黑色电影（Noir）风格，一个乐高积木小人在公路上开车 |

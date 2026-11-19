@@ -1,0 +1,697 @@
+
+# 用过上百款编程MCP，只有这15个真正好用，Claude Code与Codex配置MCP详细教程
+
+> 来源：[https://xatc0v8uz5m.feishu.cn/docx/XPUjdoHsuo4t7tx2vUNcvtXnnuf](https://xatc0v8uz5m.feishu.cn/docx/XPUjdoHsuo4t7tx2vUNcvtXnnuf)
+
+> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/TF2Uo6HYSGhJjEgXdmC3Xg)q.com/s/TF2Uo6HY...
+
+> ⏰ 剪存时间：2025-10-31 00:34:43 (UTC+8)
+
+> ✂️ 本文档由 [飞书剪存 ](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc)一键生成
+
+原创 技术爬爬虾 技术爬爬虾2025年10月29日 15:22
+
+## 视频版
+
+![](img/b82f47e676e09dc7469fa841f51fd21a.png)
+
+关闭
+
+观看更多
+
+更多
+
+退出全屏
+
+切换到横屏模式
+
+[🎦 点击观看视频](https://mpvideo.qpic.cn/0bc3fiab4aaaw4ap3n7zwbufakwddyvaahqa.f10002.mp4?dis_k=e679a7fddb5297ce3acfb3bc3497c103&dis_t=1761841944&play_scene=10120&auth_info=CPKTw6MEbFpJgdye+Et8Nw4dJCNoC20fQD4VKmp2HBs5KEthLwwxNSsTOh1WamsNBA==&auth_key=b421e85edf819ed411df8ae7996e9f65&vid=wxv_4221397976939151371&format_id=10002&support_redirect=0&mmversion=false)
+
+视频详情
+
+我试用过上百款编程类的`MCP`工具，只有这15个是真正好用的。这些`MCP`可以为AI编程工具赋予云端数据库、操作浏览器、读取设计稿生成网页、产品配图、安全扫描、全自动部署等等的能力。许多人说`MCP`是一个开发者比用户还多的技术，其实很多好用的`MCP`工具主要集中在编程领域。本期视频，我准备使用最近热度最高的两个AI编程工具——`Claude Code`还有`Codex`，来实战演示一下这些`MCP Server`。我还准备了许多具体案例，来看看我们如何利用`MCP`，让生产力翻倍。`MCP`也就是模型上下文协议，简单一句话总结，`MCP`就是AI的标准化工具箱，AI可以使用这个工具箱，与外部系统对话，代替人类完成一些操作。
+
+![](img/232f2fd5e81fc306dc64bee23a065f6c.png)
+
+我们要介绍的第一个，就是让AI有能力操作浏览器的工具箱。
+
+## Google Chrome Dev Tool
+
+在之前的视频里面，我们介绍过很多AI自动操作、调试浏览器的`MCP`，比如这期介绍的Browser Toos MCP，还有这期介绍的Chrome MCP等等。
+
+![](img/b3a239642e6c488eb03ac1d1e49f17c5.png)
+
+这些`MCP`其实都是社区开发的，所以配置起来比较麻烦，使用的时候，需要先往浏览器里面安装插件。现在谷歌官方亲自下场，直接终结了比赛。官方最近开发了一个`Chrome Devtool MCP`，这个`MCP`不再需要任何的复杂配置，只要电脑上安装过`Chrome`浏览器，就可以直接使用。我们来到`Chrome DevTools MCP`的Github首页。
+
+`https://github.com/ChromeDevTools/chrome-devtools-mcp`
+
+往下找，项目提供了很多种配置方式。这里我们主要看`Claude Code`还有`Codex`
+
+我找到一个测试文件夹，进来以后在终端打开。我的电脑上已经安装过`Claude Code`了，有关`Claude Code`怎么安装，怎么在国内免费使用，在这期视频里面有过详细介绍了。
+
+`https://www.bilibili.com/video/BV1jGtEzNEAv/`
+
+![](img/61d3cfd29b67db06d9da41d4418b4338.png)
+
+我们把`Claude Code`的配置命令复制过来，粘贴一下，回车，这样就安装成功了。
+
+```
+claude mcp add chrome-devtools npx chrome-devtools-mcp@latest
+```
+
+![](img/c2c90a228f268d43ea8228a45d431fca.png)
+
+它默认是项目级别的，只对当前这个项目生效；如果想对所有的项目生效，可以在后面加两个 `--scope user`，添加了这个参数以后，这个`MCP`就变成了用户级，这个电脑上的所有项目都会生效。
+
+![](img/ec5d38016db6c3a6b9845d80c7928280.png)
+
+安装完成以后，我们启动一下`Claude Code`，然后输入这个命令`/mcp`，回车这里打上一个对勾，显示connected，就配置完成了。
+
+![](img/58b9f853d0bd3dde7cbebd98f3ddbd16.png)
+
+接下来我们来看另外一个AI编程工具`Codex`怎么配置`MCP`。我这个电脑上已经安装过`Codex`了，有关`Codex`怎么安装配置，在这期视频里面有过详细介绍了。 `https://www.bilibili.com/video/BV1wm4UzfEbr`
+
+![](img/d6172ff62d117e572b582efb9a3d7c4c.png)
+
+我们来到这个地址`C:/用户/{你的用户名}/.codex`，进来以后找到这个文件 `config.toml`，如果没有这个文件的话，可以新建一个。苹果电脑或者Linux系统的话，就是这个地址：`~/.codex/config.toml`。
+
+![](img/286133bf5a7a4c158584c5ceeb46e6f2.png)
+
+这里我们先以Windows电脑为例，我们把Windows电脑的这一串配置复制下来，粘贴过来，可以把这个启动时间适当调高一点，这里我调成60秒。
+
+```
+[mcp_servers.chrome-devtools]
+command = &quot;cmd&quot;
+args = [
+  &quot;/c&quot;,
+  &quot;npx&quot;,
+  &quot;-y&quot;,
+  &quot;chrome-devtools-mcp@latest&quot;,
+]
+env = { SystemRoot=&quot;C:\\Windows&quot;, PROGRAMFILES=&quot;C:\\Program Files&quot; }
+startup_timeout_ms = 60_000
+```
+
+Windows上面配置`Codex MCP`比较繁琐，如果是苹果电脑的话可以进行简化，把下面这两行删掉，`npx`可以放到上面，下面的`/c`跟`npx`都不用写，苹果电脑可以简化成这个样子。
+
+```
+[mcp_servers.chrome-devtools]
+command = &quot;npx&quot;
+args = [
+  &quot;-y&quot;,
+  &quot;chrome-devtools-mcp@latest&quot;
+]
+```
+
+这里我还是回退成Windows，把配置文件保存一下，然后我们还是进入测试文件夹，输入命令`Codex`，先把`Codex`启动起来，等待了一会，启动完成，我们输入`/mcp`，可以看到我们添加的`MCP Server`，这样在`Codex`这边就配置完成了。这个`MCP`的基础用法就是让AI操作浏览器，自动化完成一些操作。我让`Codex`打开`Github`，然后找到这个项目，给它点个star。
+
+![](img/5a7a2b20f7f803e35a640bf6fb42f345.png)
+
+我们看到它调用了`MCP`工具，打开了`Github`，找到了搜索栏，然后输入对应的搜索指令，成功搜索到了我们需要的项目，这里也点上了star。除了基础的操作浏览器，它这里面还有一些工具可以帮助我们辅助调试代码，比如可以获取网络请求，然后列出控制台的报错等等。
+
+![](img/c67f1559e421f7d03aa585cde703bf57.png)
+
+我让AI测试一下这个网站的提交按钮，看看如果有报错的话应该如何修改。
+
+![](img/6f99eacc73eaa4602d5450299ba97f1c.png)
+
+我们看到AI触发了测试，并且控制台已经有了报错，他通过`MCP`工具读取到控制台信息，还有网络请求，然后`Codex`在代码里面找到了报错原因，应该把这个`put`请求改成`post`，这样使用`Chrome dev tools MCP`成功进行了页面的调试，并且精准地修改好了代码，非常的方便。
+
+![](img/882205fe2b62c8d5e6cee0eab757c6cb.png)
+
+## Neon
+
+`Neon`是一个基于`Postgres`封装的免费的云端数据库。 `https://neon.com` 我们接入它的`MCP`，就可以让AI瞬间获得一个免费的云端数据库。这里找到`Docs`，然后搜索`MCP`，找到这个文档`Connect MCP`，里面列出了各个客户端的配置方式。
+
+![](img/a5baa4de3ae44f0a5773988d3b00a222.png)
+
+我们先看`Claude Code`，这里有一个一键配置命令。
+
+```
+claude mcp add --transport http neon https://mcp.neon.tech/mcp
+```
+
+配置新的`MCP Server`之前，我先把旧的移除掉。`MCP Server`不是配置越多越好，每配置一个`MCP Server`都会增加一部分的上下文占用，所以`MCP Server`最好是用哪个配置哪个。输入 `claude mcp list` ，这里列出的是之前装过的`MCP`。我把上一个移除掉，输入命令`claude mcp remove`，然后粘贴上`MCP`的名字，这样就移除干净了。我们把`Neon`的这个命令复制过来，添加进去，再启动下`claude`，输入`/mcp`，这里显示`Neon`的需要登录授权一下。
+
+![](img/53fe88eb60719277a7f5ebaba9994627.png)
+
+我们回车，浏览器会打开一个窗口要求授权，点击`approve`，这里显示授权完成。我们回到`Claude Code`，`Neon`这里显示`Connected`，就配置成功了。
+
+接下来，我们看一下`Codex`怎么配置。这里来到`Codex`配置文件，`Codex`直接配置`http`的`MCP`会有问题，这里我从文档里面找一个`npx`的配置方式：
+
+`C:/用户/{你的用户名}/.codex/ config.toml`
+
+```
+[mcp_servers.Neon]
+command = &quot;cmd&quot;
+args = [
+  &quot;/c&quot;,
+  &quot;npx&quot;,
+  &quot;-y&quot;,
+  &quot;mcp-remote@latest&quot;,
+  &quot;https://mcp.neon.tech/mcp&quot;
+]
+env = { SystemRoot=&quot;C:\\Windows&quot;, PROGRAMFILES=&quot;C:\\Program Files&quot; }
+startup_timeout_ms = 60_000
+```
+
+如果您是苹果电脑：
+
+`~/.codex/config.toml`
+
+```
+[mcp_servers.Neon]
+command = &quot;npx&quot;
+args = [
+ &quot;-y&quot;,
+ &quot;mcp-remote@latest&quot;,
+ &quot;https://mcp.neon.tech/mcp&quot;
+]
+```
+
+回到`Codex`，输入命令`/mcp`，这样`Neon MCP`在`Codex`这边也配置完成了。
+
+![](img/0f5742897d0fd64f6498f0c1e03e626e.png)
+
+我准备了一个`CSV`文件的测试数据，这里面存储的是学生的学号名字，还有分数。
+
+![](img/3105e9ef0141b078508e6db59d620e54.png)
+
+我准备让AI创建一个数据库，然后把这个表存进去。我说新建一个`project`，把这个数据存到一个表里面。
+
+![](img/cdd0fcf084ef0ffdb3d1df6e012e624e.png)
+
+`Codex`调用了`Neon MCP`，先新建了一个`project`，然后执行`SQL`语句，把表建出来了。
+
+![](img/64523bdf44e1678b1d63a5cbf86c747e.png)
+
+接下来执行`SQL`语句，
+
+![](img/a6238bfe6dfaf913117bc8b0b4916e12.png)
+
+把数据插入了表里面。我们来到`Neon`的控制台，就可以看到刚才新建的`project`，在`project`里面，就可以看到我们的数据表。
+
+![](img/cc52c7d443f94860d6d07e839d13167d.png)
+
+![](img/934827e59f6f2ed2012cb20539296ed4.png)
+
+这样我们的`code agent`就有一个，完全操作一个数据库的能力。我们也可以使用AI，在这里面把相应的数据表都建出来，再让AI帮我们生成后端代码，形成一个完整的具有数据库的后端应用。
+
+## Supabase MCP
+
+`Supabase`比`Neon`的功能更加强大，在强大的`Postgres`数据库的基础上，封装了用户认证、文件存储、可视化的运维面板等功能，为开发者提供了一整套开箱可用的后端基础设施。
+
+![](img/26db2bcc44a21309cd81bd4bcaaf4605.png)
+
+我们来把`Supabase`的`MCP`也配置一下。我们先来到`Supabase`的控制台，创建一个新的项目，给项目起个名字，填个密码，点击创建。我们来到`Supabase`的文档站，在`project`这里选择我们刚才建的项目。
+
+![](img/6d1d23cf06826f984648c71baf446d6a.png)
+
+这里有一个配置方式，这是一个远程调用的`MCP Server`，我们先在`Claude Code`里面配置一下，
+
+```
+claude mcp add supabase --transport http https://mcp.supabase.com/mcp?project_ref=jnwzzd1lytseoseovqfbr
+```
+
+`https://mcp.supabase.com/mcp?project_ref=jnwzzd1lytseoseovqfbr`
+
+这是官网的提供的`mcp`地址，每个项目都不一样
+
+回车启动一下`Claude Code`，输入`/mcp`，选择`Supabase`，回车，在浏览器打开的窗口下面点击授权，这样就配置完成了。我还是让他创建一个表，把这个数据写进去，
+
+![](img/e017f0e2c1e19c9e70f73c2e055d1869.png)
+
+这样在`Supabase`的后台，就可以看到我们创建的表了。
+
+我让AI用`nextjs`写一个项目，利用`Supabase`自带的用户鉴权功能，实现用户登录，代码写完了。
+
+项目里需要配置两个环境变量，一个是`URL`，还有一个`Key`。这个完全可以使用`MCP`自动生成一个。我跟AI说一下，你用`MCP`把环境变量填一下。这里他成功调用了`MCP`，帮我们填写好了`URL`，还有`API Key`。
+
+![](img/83bf999b9cea5f0aa83dfab4ce41d892.png)
+
+接下来我们把项目启动起来，试一下 `npm run dev` 。进来以后，是一个非常简单的登录跟注册页面，这里我填一个邮箱，点击注册，注册链接就发到了我的邮箱。来到邮箱收一下验证邮件，邮箱验证完成以后，点击登录，这里显示登录成功。我们去`supabase`后台看一下，在左侧`Authentication`里面，就可以看到刚才注册进来的这个用户。
+
+![](img/31888597686a0336ccce367f9f5d0564.png)
+
+然后我们还可以结合上面的数据库，创建一些业务表。我们通过`Supabase MCP`就可以创建一个完整的带用户登录加后台数据库的一个完整应用。
+
+![](img/56003fb92331b8e84875fb3ac9e239cd.png)
+
+我们看一下`Codex`怎么配置`Supabase`，
+
+`Windows电脑： C:/用户/{你的用户名}/.codex/ config.toml`
+
+```
+[mcp_servers.supabase]
+command = &quot;cmd&quot;
+args = [
+    &quot;/c&quot;,
+    &quot;npx&quot;,
+    &quot;-y&quot;,
+    &quot;mcp-remote@latest&quot;,
+    &quot;https://mcp.supabase.com/mcp?project_ref=jnwzzdllytseseovqfbr&quot;
+]
+env = { SystemRoot=&quot;C:\\Windows&quot;, PROGRAMFILES=&quot;C:\\Program Files&quot; }
+startup_timeout_ms = 60_000
+```
+
+苹果电脑
+
+`~/.codex/config.toml`
+
+```
+[mcp_servers.supabase]
+command = &quot;npx&quot;
+args = [
+  &quot;-y&quot;,
+  &quot;mcp-remote@latest&quot;,
+  &quot;https://mcp.supabase.com/mcp?project_ref=jnwzzdllytseseovqfbr&quot;
+]
+```
+
+## Figma MCP
+
+
+
+# Figma MCP 配置与使用
+
+Figma成为了今年最流行的网页与APP设计工具，可以让团队在浏览器上合作设计，而不必依赖复杂笨重的本地软件。Figma里面有上百款可以免费使用的UI设计模板，这里我找到一个登录页面，并且把它改造了一下，我想让AI把这个页面实现成一个网站。我们可以使用Figma MCP，把这个设计稿对接到coding agent里面，一句话就能生成这样的网页。我们先在Claude Code里面把它配置一下。这个MCP有点特殊，它后面需要填这些参数。我们先把基础的配置好，跟之前一样，`claude mcp add figma npx`，然后把这个MCP包的名字复制过来，
+
+![](img/2805dcfd8879c5a5f78340d0a961544b.png)
+
+后面参数可以不用填，直接回车。它会告诉我们MCP是安装到这个文件里面。
+
+![](img/eff3196c4430e330585d7224a6e53536.png)
+
+接下来，我们在电脑的目录里面找到这个文件，把它打开，找到我们的MCP。这里需要把没完成的配置给它添加上。
+
+我们回到自己的Figma网站，左上角点击Settings，在Security -> Generate new TOKEN
+
+![](img/a129fb12a997aa89080793b380b9675a.png)
+
+然后把下面的这些权限都勾选上，创建TOKEN，
+
+![](img/0df54780287d7cb5a508b155a43ca605.png)
+
+把API Key复制一下，填写到配置文件里面，打个逗号，还有最后一个参数，也就是`--stdio`。这样就配置完成。
+
+![](img/c7b56121ec55d91e8770df53b0ba146a.png)
+
+在Claude Code这边，遇到这种参数比较复杂的MCP，我们可以先在命令行这里把基础的配置好，然后进入配置文件里面再把参数填写上。
+
+## Codex 配置
+
+### Windows
+
+然后我们来看Codex，这是Windows电脑上
+
+```
+[mcp_servers.figma]
+command = &quot;cmd&quot;
+args = [
+&quot;/c&quot;,
+&quot;npx&quot;,
+&quot;-y&quot;,
+&quot;figma-developer-mcp&quot;,
+&quot;--figma-api-key=figd_zYMLXKdr9arw3akf4pzxlfpfnxaqr3UT0Y5SnnWT&quot;,
+&quot;--stdio&quot;
+]
+env = { SystemRoot=&quot;C:\Windows&quot;, PROGRAMFILES=&quot;C:\Program Files&quot; }
+startup_timeout_ms = 60_000
+```
+
+### macOS
+
+这是在Mac电脑上面配置Figma MCP的方式。
+
+```
+[mcp_servers.figma]
+command = &quot;npx&quot;
+args = [
+  &quot;-y&quot;,
+  &quot;figma-developer-mcp&quot;,
+  &quot;--figma-api-key=figd_zYMLXKdr9arw3akf4pzx1fpfnxaqr3UT0Y5SnnWT&quot;,
+  &quot;--stdio&quot;
+]
+```
+
+配置好MCP，我们来试一下。我的提示词是：
+
+用Next.js 15框架制作一个登录页面，严格遵照这个Figma的设计稿。我们选中这个设计稿的页面，当然也可以选择某个区域，或者某些元素。选中页面，右键copy -> copy link to selection，然后把链接粘贴过来，这样执行。
+
+![](img/2ac3587ab8179b856a7cae7f3b6e28b8.png)
+
+Codex调用了Figma MCP，获取到了这个设计稿的结构信息。他还调用了`Download`的方法，把设计稿里面的图片下载了下来，然后根据设计稿开始编写代码。我们来看一下最终的效果，最后生成的网页，跟我的原始设计稿差不多，有9成的相似，稍微调整一下，让AI补充一些后台逻辑，就可以直接上线使用了。
+
+![](img/857b7491626fd3babf245a9f6f937bdc.png)
+
+# Context7 MCP
+
+众所周知，AI大模型的知识都是有截止日期的，AI写一些经典代码可以完全胜任，但是许多的新技术都在AI的知识体系之外了。Context7 MCP可以帮助AI查找文档，补充最新的编程知识。我们先把它来配置一下，这里我还是先从Claude Code来配置一下。我们把配置命令复制一下，
+
+`claude mcp add --transport http context7 https://mcp.context7.com/mcp`
+
+后面的API Key可以不用填（如果调用量不大）。这样回车，配置完成。启动一下claude。我们来看一个例子，Python 3.14于25年10月7日发布，这里面有一个新特性叫做模板字符串，也叫做t-字符串。
+
+我让AI写一个Python文件来演示t字符串有什么用。我们看到AI没有理解我的意思，
+
+![](img/72e5d70b4dea8ee34cc82cc5ba4242bf.png)
+
+我说的是t字符串，它给我弄成了r字符串，生成的代码也是完全错误的。我把这个代码删除。我在刚才的提示词后面加了一个`use context7`
+
+![](img/df4ff31fe588e985008d48e43eb5c687.png)
+
+也就是让AI在编码之前，先用context7 MCP查找文档。我们看到AI调用context 7 MCP，成功查找到了一些文档，然后开始编写代码。
+
+![](img/4931bcc19fd3a958a4016b24fc175201.png)
+
+我们看到AI这次写的代码，这是Python 3.14引入的t字符串，也就是模板字符串，下面有它的主要作用，可以进行延迟求值，自定义处理，最重要的一个安全检查，基本上把t字符串的功能都列清楚了，代码生成的很不错。
+
+![](img/ff85bbb578b440b21a74a512ccc59110.png)
+
+![](img/b37b2646bfe22298a1e3d7ea4e9c494c.png)
+
+从这个例子里面，我们使用context 7 MCP为AI引入了Python 3.14的最新知识。在它的GitHub文档里面，有Codex的配置方式，
+
+### macOS
+
+苹果电脑就用这一串，
+
+```
+[mcp_servers.context7]
+args = [&quot;-y&quot;, &quot;@upstash/context7-mcp&quot;, &quot;--api-key&quot;, &quot;YOUR_API_KEY&quot;]
+command = &quot;npx&quot;
+```
+
+### Windows
+
+然后Windows电脑就用这一串，
+
+```
+[mcp_servers.context7]
+command = &quot;cmd&quot;
+args = [
+&quot;/c&quot;,
+&quot;npx&quot;,
+&quot;-y&quot;,
+&quot;@upstash/context7-mcp&quot;,
+&quot;--api-key&quot;,
+&quot;YOUR_API_KEY&quot;
+]
+env = { SystemRoot=&quot;C:\Windows&quot; }
+startup_timeout_ms = 20_000
+```
+
+这里我就不赘述了。
+
+# Ref MCP
+
+与context7 MCP类似的是，这一个Ref MCP也可以用来查找文档。
+
+`https://github.com/ref-tools/ref-tools-mcp`
+
+它们的主要区别是Context7 MCP只能从它的Context7的标准文件库里面进行检索，而这个Ref MCP就更加灵活一些，它可以从更冷门的地方进行文档的深入检索，比如检索论文，检索Github仓库等等。下面也有详细的配置方式，它跟context7的功能用起来差不多，这里我就不详细演示了。
+
+# Replicate MCP
+
+我们使用AI编程的时候，有时候想快速生产一个产品原型，但是这里面的配图不太好找，这时候完全可以让AI帮我们先生成一张图片，放在这里面先用着。这样可以改善产品的美观度，大幅提高观感。这里我用的图片生成网站是Replicate。 `https://replicate.com` ，它提供API的调用方式来生成AI图片。Replicate也有MCP，我们把这个MCP来配置一下。我们先在Claude Code里面配置，
+
+![](img/82eb23688f61eb690f496aa2e3907261.png)
+
+修改生产的配置文件，`C:\Users\你的用户名\.claude.json`
+
+我们这里要做的是把这个参数添加上，这里需要一个Replicate API TOKEN。我们来到Replicate的首页，这里找到API TOKEN，随便起个名字然后点击create，这样把TOKEN复制一下，粘贴到配置文件里面。
+
+```
+{
+  &quot;mcpServers&quot;: {
+    &quot;Replicate Flux MCP&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [
+        &quot;-y&quot;,
+        &quot;replicate-flux-mcp&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;REPLICATE_API_TOKEN&quot;: &quot;你的API KEY&quot;
+      }
+    }
+  }
+}
+```
+
+这样就配置成功了。我们启动下Claude Code。我让它生成一个可爱的猫的图片，提示词注意用英文的。
+
+![](img/b88334c02ad0d4c11ecd24e356f1d2e1.png)
+
+调用了Replicate MCP工具，然后生成了一张图片。我们快速来看一下怎么在Codex里面配置这个MCP。
+
+### Windows
+
+进入Codex的配置文件，这是在Windows上面的配置方法
+
+```
+[mcp_servers.replicate]
+command = &quot;cmd&quot;
+args = [
+  &quot;/c&quot;,
+  &quot;npx&quot;,
+  &quot;-y&quot;,
+  &quot;replicate-flux-mcp&quot;
+]
+env = { SystemRoot=&quot;C:\\Windows&quot;, PROGRAMFILES=&quot;C:\\Program Files&quot;, REPLICATE_API_TOKEN=&quot;r8_MPwJVCYxBSvrYNSETThDE69JQwAAk9SC3r7XSW&quot; }
+startup_timeout_ms = 60_000
+```
+
+注意我们要在配置项里面把`replicate`的API token写上。接下来这是Mac电脑的配置文件写法。
+
+### macOS
+
+```
+[mcp_servers.replicate]
+command = &quot;npx&quot;
+args = [
+  &quot;-y&quot;,
+  &quot;replicate-flux-mcp&quot;
+]
+env = {&quot;REPLICATE_API_TOKEN=&quot;r8_MPwJVCYxbSvrYNSETHDE69JQwAAk9sC3r7XSW&quot;}
+```
+
+我们来看一个实际案例，给这个热气球网站新建一个销售套餐网页，设计6个套餐可供选择，图片调用Replicate生成，后端可以先不用实现。AI开始编写代码了，这里它调用了Replicate MCP工具，
+
+![](img/7bcd9afd4b45d6171670dd8604567133.png)
+
+一口气生成了6个图片。我们看到它的配图跟这个套餐还是很贴合的，基本上完美的实现了我们的需求，而且给网页增色不少。
+
+![](img/c29aa777aa59ddab4e8a2c053d4486ca.png)
+
+# Vercel
+
+代码写好了，现在需要一个平台快速把它部署上线。Vercel就是一个免费提供项目部署的平台。Next.js就是由Vercel开发维护的框架，我们使用Next.js开发的這個热气球网站跟Vercel平台是绝配。接下来我们就使用Vercel的MCP，一句话把它部署上线。我们来到Vercel 的文档站， `https://vercel.com/docs` ，这里搜索MCP，在左侧找到Vercel MCP Server。
+
+![](img/18af3487c4193abac2d088eb74d215f3.png)
+
+这里有Claude Code的配置方式，把这个配置命令复制一下，把命令粘贴过来回车。我们启动一下Claude Code，`/mcp`，这里Vercel的MCP需要先登录一下，
+
+![](img/1865a8bc708751fd9a9eaaa0906d787f.png)
+
+回车，浏览器会自动打开一个窗口，我们点击授权，授权完成以后就连接成功了。
+
+我让AI用MCP把这个项目部署到Vercel上面，这样就完成了部署。这里有一个预览地址，我们看一下，Vercel的这个域名只有在国外的上网环境才可以看到。 `https://hot-air-balloon-travel-ixqulcc39-tech-shrimps-projects.vercel.app/`
+
+页面都成功显示出来了，部署完成。除了部署项目Vercel MCP，还可以用来查找信息。比如我问他我有哪些Vercel项目，他先调用MCP工具，获取到我的团队信息，然后查找这个团队下面所有的项目，最终查找到了这三个项目，是完全正确的。
+
+![](img/18d18ca66384c36843eeec73a450f05f.png)
+
+![](img/97c9d020c88d29b2cc3fa3e0ccf00971.png)
+
+我们来快速看一下怎么把Vercel的MCP配置到Codex里面，这是Windows系统的配置文件的写法。
+
+### Windows
+
+```
+[mcp_servers.vecel]
+command = &quot;cmd&quot;
+args = [
+    &quot;/c&quot;,
+    &quot;npx&quot;,
+    &quot;-y&quot;,
+    &quot;mcp-remote@latest&quot;,
+    &quot;https://mcp.vercel.com&quot;
+]
+env = { SystemRoot=&quot;C:\\Windows&quot;, PROGRAMFILES=&quot;C:\\Program Files&quot; }
+startup_timeout_ms = 60_000
+```
+
+### macOS
+
+这是Mac电脑上面配置文件的写法。
+
+```
+[mcp_servers.vecel]
+command = &quot;npx&quot;
+args = [
+  &quot;-y&quot;,
+  &quot;mcp-remote@latest&quot;,
+  &quot;https://mcp.vercel.com&quot;
+]
+```
+
+# EdgeOne Pages
+
+Vercel是一个国外的部署平台，在国内使用可能会遇到各种各样的网络问题。在国内也有一个类似的部署平台EdgeOne Pages， `https://console.tencentcloud.com/edgeone/pages` ，它同样提供MCP工具，可以把项目一键免费部署到EdgeOne Pages上面。在这期视频里面，我对EdgeOne Pages MCP有过详细介绍了，这里我就不赘述了。
+
+![](img/9fbe5549867daa98c04df1d4ff8b4057.png)
+
+`https://www.bilibili.com/video/BV1o6ngztEKx/`
+
+# Cloudflare
+
+另外一个重要的无服务器部署平台就是Cloudflare。 `https://github.com/cloudflare/mcp-server-cloudflare` ，Cloudflare提供了很多种MCP Server，可以用来查找文档，可以把项目部署到Cloudflare Worker上面，可以用来监控日志，可以用来查询全球互联网流量趋势，启动沙箱开发环境等等。每个MCP Server后面都有一个对应的URL，我们在配置的时候注意把后面的URL替换一下，就可以获得各种各样的功能。如果想知道它的具体功能，可以点击这个链接进行更深入的查看。基本上Cloudflare所有的API功能都被整合进来了。它的用法跟Vercel比较相似，这里我就不展开演示了。
+
+# GitHub MCP
+
+Github MCP Server由Github的官方推出
+
+`https://github.com/github/github-mcp-server`
+
+可以把我们的AI coding agent直接连接到Github平台。这样AI就能读取到资源库，还有代码文件，可以用来管理问题和创建PR，分析代码，并且自动化的执行流程。这里我先从Claude Code配置一下，
+
++
+
+```
+claude mcp add github --transport http  https://api.githubcopilot.com/mcp/
+```
+
+接下来我们来到配置文件，再把API Key添加上。我们来到GitHub右上角settings，左边找到Developer settings -> generate new TOKEN，
+
+![](img/bad9279ba24055a3be4c9a53e60d9eaa.png)
+
+![](img/ccced1d3b6afa2d672fc424c82889ba7.png)
+
+这里选择经典，随便起个名字，然后在下面把权限都给它勾选上，然后点击生成，把创建出来的TOKEN复制一下，粘贴到配置文件里面(`Bearer` 后面就是API Key)。我们再启动一下Claude Code，配置完成。
+
+
+
+![](img/b5fb59c5183a39977dd99c3c84ab8b90.png)
+
+我们就把AI跟GitHub平台完全打通了。
+
+我们来快速看一下Codex上面怎么配置GitHub MCP Server，这是Windows的配置文件的写法，
+
+```
+[mcp_servers.github]
+command = &quot;cmd&quot;
+args = [
+  &quot;/c&quot;,
+  &quot;npx&quot;,
+  &quot;-y&quot;,
+  &quot;mcp-remote@latest&quot;,
+  &quot;https://api.githubcopilot.com/mcp/&quot;,
+  &quot;--header&quot;,
+  &quot;Authorization: Bearer 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&quot;
+]
+env = { SystemRoot=&quot;C:\\Windows&quot;, PROGRAMFILES=&quot;C:\\Program Files&quot; }
+startup_timeout_ms = 60_000
+```
+
+注意这里要添一个参数叫`header`，然后在里面填写上GitHub的API TOKEN。这是Mac电脑上面的配置文件的写法。
+
+```
+[mcp_servers.github]
+command = &quot;npx&quot;
+args = [
+    &quot;-y&quot;,
+    &quot;mcp-remote@latest&quot;,
+    &quot;https://api.githubcopilot.com/mcp/&quot;,
+    &quot;--header&quot;,
+    &quot;Authorization: Bearer ghp_AchbdqXqYqGCsVHU5HQZGK447lCfgT0Vyyd6&quot;
+]
+```
+
+我有这么一个AI你画我猜的游戏，右下角的这个让AI猜一猜的按钮非常的淡，看不清楚写的是什么。
+
+![](img/e5da6e2f289ef9b3498703c1fbff760e.png)
+
+然后代码是在Github上面的，这时候可能下载到我这套代码的人会在上面提一个issue。有人会提交issue，说提交按钮看不清楚。然后我们就可以让AI结合Github MCP自动把这个问题修复。我的提示词是你看一下`issue3`，然后自动修复一下，创建一个pull request。
+
+![](img/cdf45560998bb9243416c417f5e0d2a1.png)
+
+它调用了Github MCP，先获取到了这个issue。
+
+![](img/6698bfafa2630261b06db000d097024a.png)
+
+AI进行了代码修改，修复了这个问题。
+
+![](img/2d2c9b30433fc022342ca958a6aba3e9.png)
+
+我们看到按钮已经可以看得清楚了。
+
+![](img/a7e31551cf78cf678cb261c635d6b99a.png)
+
+然后他又调用了Github MCP，创建了一个pull request，把刚才的修改以一个PR的形式提交了上去。我们在Github的pull request里面就可以看到AI推送上来的代码，
+
+![](img/0d9bd2109c77fa09c478ef3697dee016.png)
+
+这里有他的改动内容，最终任务完成。这样一个从Github这边产生的issue，AI对代码进行了本地修改，又以一个pull request的形式推送到了Github上面，把一个bug修复的全流程就跑通了。
+
+### Stripe
+
+Stripe是近期最流行的收款服务平台。Stripe MCP就是把Stripe平台的各种能力对接给AI。这是我的一个测试账号，现在只创建了一个沙盒环境。我们使用它来演示一下Stripe MCP。在Claude Code里面执行
+
+`claude mcp add stripe --transport http https://mcp.stripe.com/`
+
+然后进入Claude Code，`/mcp`，这里登录一下，在浏览器点击授权。我的提示词是，用Next.js创建一个商品支付页面，商品信息用MCP从Stripe获取，只实现基础的支付功能即可，无需复杂的后台逻辑。AI调用了Stripe MCP获取了商品的信息，
+
+![](img/1efd92631c16c1740a946fbb7bef7578.png)
+
+调用Stripe MCP获取到了这些商品的价格，然后他开始编写业务代码。代码编写完成以后，我们需要从Stripe的控制台获取这两个key，一个公钥，一个私钥。
+
+![](img/bb167fd2be08299b5096a52fe7f468df.png)
+
+配置完成以后，我们把项目启动起来，看一下。这里有3个商品，是从我Stripe的产品目录读取的。然后客户可以下单购买，这里我填写一个测试环境可以用的银行卡，然后点击支付，支付成功。这个流程就跑通了。在Stripe的后台里面就可以看到这条交易信息。这样我们使用Stripe MCP给产品接入了支付的能力。
+
+### ShadCN
+
+ShadCN是一个非常好用的前端组件库，`https://ui.shadcn.com/#` ，在这里面几乎可以找到任何一种前端组件，美观又好用。我们可以在component这里选中一个组件，然后在code这里把代码复制到我们的项目里面来。
+
+![](img/cb21a31b19790f55a5449afb7ef02a04.png)
+
+当然我们也可以让AI自动来这边查找，然后把代码给我们复制到项目里面。在左边找到MCP Server，这里面有Claude Code的配置方式。
+
+![](img/d43b00b447b21dee94cb23f95941e452.png)
+
+把这个命令复制下来执行一下。我让AI帮我弄一个ShadCN的`Button`组件，这样AI就完成了代码的编写。这个MCP用起来很方便。
+
+![](img/c1385fec110a7b6ebcc8b1aa82b31ddd.png)
+
+### Semgrep
+
+我们使用AI写代码，最不放心的就是它的安全性。Semgrep MCP可以帮助我们进行安全漏洞的扫描。`https://semgrep.dev/docs/mcp?utm_source=chatgpt.com` ，它是一个安全静态分析工具，内置了5,000多条安全规则。
+
+![](img/0493dcb3befef392f99b3539ad7d6ba0.png)
+
+我们可以使用这个MCP Server，把它的安全扫描能力对接给AI，对我们的项目进行一个整体扫描，及时发现漏洞。在文档站这里有一个Github链接，下面有它的配置方式。这也是一个Http的。我们从Claude Code里面配置一下，
+
+![](img/06bca9cd1a2f743f63802248f18f8458.png)
+
+我让他用这个MCP对代码进行安全扫描。我们看到AI调用了MCP工具，对代码进行静态的安全扫描。
+
+![](img/9db2ab18f939651af15fee3927627594.png)
+
+扫描完成，未发现安全问题。下面是这些扫描项都完美的符合了我们的代码，还是写得不错的。
+
+![](img/2c82cc329030b7284fc1024af8374687.png)
+
+![](img/4804160561e6a3d592c8a06ee6d14afe.png)
+
+### MCP SDK
+
+终于我们来到了视频的最后第15个MCP，这里我不准备介绍具体的MCP Server了。我们看的是GitHub MCP的官方仓库，`https://github.com/modelcontextprotocol` ，这里面提供了很多的SDK，
+
+![](img/14615ada3bb732c6e66aa999812d7c5a.png)
+
+我们可以使用这些SDK创建属于我们自己的MCP Server。别人的写的再好，终究不如自己的好用。如果有什么想法，我们可以选择自己喜爱的编程语言创建属于自己的MCP Server。在这期视频里面，我详细介绍了如何使用Python SDK来创建一个属于自己的MCP Server，感兴趣的观众朋友们可以去看一下。`https://www.bilibili.com/video/BV1RNTtzMENj`
+
+![](img/fb069ee9fb4e1c4b337d8223d145db8f.png)
+
+好，今天的视频到这里，感谢大家点赞支持，我们下期再见！
