@@ -1,0 +1,22 @@
+
+Employing Large Language Models (LLMs) to assess the quality of generated responses, such as prompting instruct-tuned models or fine-tuning judge models, has become a widely adopted evaluation method. It is also known that such evaluators are vulnerable to biases, such as favoring longer responses. While it is important to overcome this problem, the specifics of these biases remain under-explored. In this work, we qualitatively identify six types of biases inherent in various judge models. We propose EvalBiasBench as a meta-evaluation collection of hand-crafted test cases for each bias type. Additionally, we present de-biasing dataset construction methods and the associated preference dataset OffsetBias. Experimental results demonstrate that fine-tuning on our dataset significantly enhances the robustness of judge models against biases and improves performance across most evaluation scenarios. We release our datasets and the fine-tuned judge model to public.
+
+## Language Models Still Struggle to Zero-shot Reason about Time Series
+
+`https://aclanthology.org/2024.findings-emnlp.201.pdf`
+
+![](img/0d35bb1020aa49ddaa5652eaf018d060.png)
+
+时间序列对金融和医疗等领域的决策至关重要，将时间序列输入语言模型的研究增多，但尚不清楚良好的预测是否意味着语言模型能对时间序列进行推理。本文引入一个时间序列推理评估框架，包括正式任务和多尺度时间序列数据集。研究探索语言模型是否能实现病因推理、问答、基于上下文的预测这三种推理，发现能力很强的语言模型在时间序列推理上表现有限，在病因和问答任务中略高于随机水平（比人类差30个百分点），在利用上下文改进预测方面成果一般，这表明时间序列推理是语言模型研究中有影响但极待发展的方向。
+
+Time series are critical for decision making in fields like finance and healthcare. Their importance has driven a recent influx of works passing time series into language models, leading to non-trivial forecasting on some datasets. But it remains unknown whether non-trivial forecasting implies that language models can reason about time series. To address this gap, we introduce a first-of-its-kind evaluation framework for time series reasoning, including formal tasks and a corresponding dataset of multi-scale time series paired with text captions across ten domains. Using these data, we probe whether language models achieve three forms of reasoning: (1) Etiological Reasoning—given an input time series, can the language model identify the scenario that most likely created it? (2) Question Answering—can a language model answer factual questions about time series? (3) Context-Aided Forecasting—does relevant textual context improve a language model’s time series forecasts? We find that otherwise highlycapable language models demonstrate surprisingly limited time series reasoning: they score marginally above random on etiological and question answering tasks (up to 30 percentage points worse than humans) and show modest success in using context to improve forecasting. These weakness showcase that time series reasoning is an impactful, yet deeply underdeveloped direction for language model research.
+
+## Authorship Obfuscation in Multilingual Machine-Generated Text Detection
+
+`https://aclanthology.org/2024.findings-emnlp.369.pdf`
+
+![](img/2104ef7a6525f03692a7bd33ce1e83fc.png)
+
+大型语言模型（LLMs）高质量的文本生成能力引发了对其滥用（如大规模制造/传播虚假信息）的担忧，机器生成文本（MGT）检测对应对此类威胁很重要，但易受像改述这样的作者身份混淆（AO）方法影响，导致MGT逃避检测。此前仅在单语环境下评估过，多语言检测方法的易感性仍未知。本文通过对10种著名的AO方法的性能进行综合基准测试（用10种AO方法攻击37种MGT检测方法针对11种语言的MGT，共4070种组合）填补了这一空白，还评估了数据增强对使用混淆文本的对抗鲁棒性的影响。结果表明，所有测试的AO方法都能使所有测试语言中的自动检测被逃避，同形异义字攻击尤其成功，但部分AO方法会严重破坏文本，使其不再可读或不易被人类识别（如改变语言、怪异字符）
+
+High-quality text generation capability of recent Large Language Models (LLMs) causes concerns about their misuse (e.g., in massive generation/spread of disinformation). Machine-generated text (MGT) detection is important to cope with such threats. However, it is susceptible to authorship obfuscation (AO) methods, such as paraphrasing, which can cause MGTs to evade detection. So far, this was evaluated only in monolingual settings. Thus, the susceptibility of recently proposed multilingual detectors is still unknown. We fill this gap by comprehensively benchmarking the performance of 10 well-known AO methods, attacking 37 MGT detection methods against MGTs in 11 languages (i.e., `10 \times 37 \times 11 = 4,070` combinations). We also evaluate the effect of data augmentation on adversarial robustness using obfuscated texts. The results indicate that all tested AO methods can cause evasion of automated detection in all tested languages, where homoglyph attacks are especially successful. However, some of the AO methods severely damaged the text, making it no longer readable or easily recognizable by humans (e.g., changed language, weird characters).
