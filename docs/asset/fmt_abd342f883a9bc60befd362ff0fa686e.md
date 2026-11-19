@@ -1,0 +1,214 @@
+
+```javascript
+if (!apiUrl) {
+thrownewError(&quot;Flomo API URL not set&quot;);
+}
+
+const content = String(request.params.arguments?.content);
+if (!content) {
+thrownewError(&quot;Content is required&quot;);
+}
+
+const flomo = new FlomoClient({ apiUrl });
+const result = await flomo.writeNote({ content });
+```
+
+在调试控制台，在 `Arguments` 输入框设置参数：`--flomo_api_url=https://flomoapp.com/iwh/xxx/xxx/`
+
+请求 `write_note` 工具，写入笔记成功。
+
+![](img/ecc93fead1746bbcf890c7f0ac343e09.png)
+
+对应的服务启动命令是：
+
+`node build/index.js --flomo_api_url=https://flomoapp.com/iwh/xxx/xxx/`
+
+### 通过环境变量传递参数
+
+我们也可以通过环境变量设置动态参数，作为命令行读取参数的一个补充。
+
+修改动态参数的读取逻辑，优先读取命令行参数，如果命令行参数未传递，就从环境变量读取参数：
+
+```
+const args = parseArgs();
+const apiUrl = args.flomo_api_url || process.env.FLOMO_API_URL || &quot;&quot;;
+```
+
+在调试面板，删掉 `Arguments`，添加环境变量：`FLOMO_API_URL` 并设置值。
+
+请求 `write_note` 工具，写入笔记成功。
+
+![](img/5778afddb97da8578ad0fe897fee4f60.png)
+
+对应的服务启动命令是：
+
+`FLOMO_API_URL=https://flomoapp.com/iwh/xxx/xxx/ node build/index.js`
+
+## 在 MCP 客户端测试
+
+我们选择 `Cursor AI` 编辑器，作为 `MCP` 客户端。来测试我们开发的 `mcp-server-flomo` 服务器。
+
+首先，打开 `Cursor` 的 `MCP` 服务器配置文件。（一般位于 `~/.cursor/mcp.json`）
+
+写入连接 `mcp-server-flomo` 的配置：
+
+```
+{
+  &quot;mcpServers&quot;: {
+    &quot;mcp-server-flomo&quot;: {
+      &quot;command&quot;: &quot;node&quot;,
+      &quot;args&quot;: [
+        &quot;/Users/idoubi/code/all-in-aigc/mcpservers/mcp-server-flomo/build/index.js&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;FLOMO_API_URL&quot;: &quot;https://flomoapp.com/iwh/xxx/xxx/&quot;
+      }
+    }
+  }
+}
+```
+
+通过环境变量传递 `FLOMO_API_URL` ， `args` 里面填写 `mcp-server-flomo` 服务编译后文件的绝对地址。
+
+在 `Cursor` 的 `MCP` 配置面板，可以看到 `mcp-server-flomo` 服务已经成功运行，并且获取到了可用的 `Tools` 。
+
+打开 `Cursor AI` 对话面板，选择 `Agent` 模式，输入以下或类似内容：
+
+```
+我今天开发了一个 MCP 服务器，感觉很开心。帮我记录一下。
+```
+
+`Cursor` 会加载所有已配置的可用的 `Tools` 进行意图识别，识别到用户的意图是要记笔记，会自动调用 `mcp-server-flomo` 服务的 `write_note` 工具写入笔记。
+
+![](img/a6819fe38cfd76e81e1daabc0aef8122.png)
+
+## 发布 MCP 服务器
+
+在 MCP 客户端测试成功后，证明我们开发的 MCP 服务器功能正常，可以发布上线给其他人使用了。
+
+### 发布到 Github 平台
+
+我们可以选择把新开发的 `mcp-server-flomo` 代码发布到 Github，开源给全世界的人使用。
+
+首先，更新 `README.md` 文件，写入 `mcp-server-flomo` 在 MCP 客户端的配置和使用说明。
+
+在 Github 创建代码仓库，并提交代码：
+
+```
+cd mcp-server-flomo
+git init
+git remote add origin git@github.com:chatmcp/mcp-server-flomo.git
+git add .
+git commit -m &quot;first version&quot;
+git push origin main
+```
+
+上传代码到 Github 后，全世界的用户都可以通过代码仓库地址：
+
+`https://github.com/chatmcp/mcp-server-flomo`
+
+访问这个 `mcp-server-flomo` MCP 服务器代码，克隆代码到他们本地电脑运行，在 MCP 客户端配置后使用。
+
+![](img/4e0b3b56ef1c766df19cc44942b6be15.png)
+
+### 发布到 npm 平台
+
+如果我们希望其他人，在不克隆源代码的情况下，通过拉取可执行文件到本地的方式，来运行我们开发的服务。
+
+我们需要把 `mcp-server-flomo` 作为一个 `npm` 包，发布到 `npm` 应用市场
+
+首先，修改 `mcp-server-flomo` 项目的 `package.json` ，作为一个公开类型的 `npm` 包，发布到一个指定的组织： `@chatmcp` （这是我创建的，专门用来发布 `mcp-server` 的组织，你可以在 `npm` 管理后台创建自己的组织）
+
+```
+{
+  &quot;name&quot;: &quot;@chatmcp/mcp-server-flomo&quot;,
+&quot;version&quot;: &quot;0.0.1&quot;,
+&quot;description&quot;: &quot;write notes to flomo.&quot;,
+&quot;private&quot;: false,
+&quot;type&quot;: &quot;module&quot;,
+&quot;homepage&quot;: &quot;https://github.com/chatmcp/mcp-server-flomo&quot;,
+&quot;bin&quot;: {
+    &quot;mcp-server-flomo&quot;: &quot;./build/index.js&quot;
+  },
+&quot;files&quot;: [&quot;build&quot;],
+&quot;scripts&quot;: {
+    &quot;build&quot;: &quot;tsc &amp;&amp; node -e \&quot;require(&#x27;fs&#x27;).chmodSync(&#x27;build/index.js&#x27;, &#x27;755&#x27;)\&quot;&quot;,
+    &quot;prepare&quot;: &quot;npm run build&quot;,
+    &quot;watch&quot;: &quot;tsc --watch&quot;,
+    &quot;inspector&quot;: &quot;npx @modelcontextprotocol/inspector build/index.js&quot;
+  },
+&quot;dependencies&quot;: {
+    &quot;@modelcontextprotocol/sdk&quot;: &quot;0.6.0&quot;
+  },
+&quot;devDependencies&quot;: {
+    &quot;@types/node&quot;: &quot;^20.11.24&quot;,
+    &quot;typescript&quot;: &quot;^5.3.3&quot;
+  }
+}
+```
+
+然后，执行命令，发布 `npm` 包：
+
+```
+cd mcp-server-flomo
+npm install
+npm run build
+npm login # 打开登录连接，网页登录 npm 平台
+npm publish --access public # 公开发布
+```
+
+发布成功后，打开 `npm` 包的访问地址：
+
+`https://www.npmjs.com/package/@chatmcp/mcp-server-flomo`
+
+可以看到我们发布到 `npm` 包：
+
+![](img/3d916a7d95b3db9f47ad88781023d634.png)
+
+修改 MCP 客户端的配置信息，使用 `npx` 运行 MCP 服务器二进制的方式来连接服务：
+
+```
+{
+  &quot;mcpServers&quot;: {
+    &quot;mcp-server-flomo&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@chatmcp/mcp-server-flomo&quot;],
+      &quot;env&quot;: {
+        &quot;FLOMO_API_URL&quot;: &quot;https://flomoapp.com/iwh/xxx/xxx/&quot;
+      }
+    }
+  }
+}
+```
+
+在 `MCP` 客户端（比如 `Cursor`）继续测试，例如可以在利用 AI 解决某个问题之后，一键保存问题信息和解决办法到 Flomo：
+
+![](img/3124d49bc9bb525e9115a070ea8e3039.png)
+
+这样，我们就可以在 Flomo 查找和回顾日常记录的一些问题：
+
+![](img/69881fa0e3c35386e8c12bad6098d193.png)
+
+## 提交到 MCP 应用商店
+
+我们可以把开发的 `mcp-server-flomo` 提交到第三方 MCP 应用商店，让更多的人看到和使用。
+
+`MCP.so` 是一个知名的第三方 MCP 应用商店，收录了全世界用户开发的优质 MCP 应用。（包括 MCP 服务器和 MCP 客户端）
+
+![](img/44508a1c3b2effec76683d99fd81356b.png)
+
+点击进入 `Submit` 页面，填写我们的 MCP 服务器信息，把服务提交到 MCP.so 应用商店：
+
+![](img/e378630b9484c27dc058814f47bd247a.png)
+
+提交 MCP 服务器之后，就可以在 MCP.so 应用商店看到自己的 MCP 服务器。用户在 MCP 服务器页面，填写配置参数，连接到服务器，可以在线调试。
+
+![](img/7c1765fc9bbfddc0ee337da1b6ff5dd4.png)
+
+## 小结
+
+本篇内容，我们开发了一个 `MCP` 服务器： `mcp-server-flomo` ，对接 Flomo API，实现了在 MCP 客户端高效记笔记的功能。
+
+详细介绍了 `MCP` 服务器的开发流程和发布流程。通过 `MCP` 服务器的自定义工具（`Tool`），连接了远端的内容平台（`Flomo`），在任意支持 `MCP` 协议的客户端，以对话的形式交互，体验更好。
+
+以此为例，我们可以开发更多的 `MCP` 服务器，以 `API` 的形式对接各类平台和资源。
