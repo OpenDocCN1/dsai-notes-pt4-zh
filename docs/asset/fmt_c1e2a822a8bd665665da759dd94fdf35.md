@@ -1,0 +1,114 @@
+
+# 04🈷️06日
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/FEN5dXJjWoWgUMx3pe0cCh9snGh](https://v11enp9ok1h.feishu.cn/docx/FEN5dXJjWoWgUMx3pe0cCh9snGh)
+
+> 🔔AI情报助手早报「04月06日」
+
+> ✨✨✨✨✨✨✨✨
+
+## 1️⃣ 🤖 [深度｜`AI搜索`成为品牌商的新军备竞赛战场，`Perplexity`或限制购物搜索中的`SEO`](https://mp.weixin.qq.com/s/haivcKzeo6TfKvoQPnxjYg)
+
++ `AI搜索`成为品牌商竞争新战场，零售商重新设计产品列表和网站迎合`AI搜索`。
+
++ 品牌尝试影响`AI`生成的产品推荐，如在`Reddit`发布内容、购买监控软件等。
+
++ `AI搜索`优化初创公司提供服务，试图破解`AI搜索`之谜。
+
++ 与亚马逊合作的顾问助力提升产品在`Rufus`中的展示。
+
++ `Perplexity`尝试限制购物搜索中的`SEO`，称打造好产品自然会脱颖而出。
+
+> 关键词：`AI搜索`，品牌商，`SEO`，`Reddit`，`Perplexity`
+
+> 🔗 文中引用的链接
+
++ [原文翻译来源](https://www.theinformation.com/articles/ai-search-new-arms-race-retailers?rc=o6xpry)
+
+## 2️⃣ 🎯 谈谈字节的`Attention`/`Expert`分离
+
++ 文章探讨字节`AE`分离（`Attn/MoE`），提出用`Microbatch`、`M:N`配比及异构算力降本。
+
++ 指出加大`BatchSize`后，不同算力显卡在`Attn`和`Expert`计算上存在利用率与显存问题，需大规模`EP`并行。
+
++ 字节构建约束搜索算法，通信方面将同构`All2All`变为`M:N Mesh`通信，但仍存问题。
+
++ 还讨论了`ECMP` hash冲突及`M:N`部署下的组网、`QP`算力等问题。
+
++ 文末提及对`NV`股价及段总操作的预测。
+
+> 关键词：字节，`Attention`/`Expert`分离，异构算力，通信优化，股价预测
+
+> 🔗 文中引用的链接
+
++ [`MegaScale-Infer: Serving Mixture-of-Experts at Scale with Disaggregated Expert Parallelism`](https://www.arxiv.org/pdf/2504.02263)
+
++ [`MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs`](https://arxiv.org/html/2402.15627v1)
+
+## 3️⃣ 🤖 `Cohere`：如何应对`AI Agent`落地的5大挑战
+
++ `AI Agent`从`Demo`迈向真实场景，部署面临可靠性等挑战，`Cohere`团队总结5大挑战及应对策略。
+
++ 管好工具箱，为工具制定“说明书”，持续监控使用情况。
+
++ 把控推理与决策，引入结构化提示方法，设置“护栏”，调整`LLM`“温度”参数。
+
++ 处理多步骤流程与上下文，建立状态管理系统，预设异常处理逻辑。
+
++ 控制幻觉确保准确性，通过验证系统、事实核查等方式对抗幻觉。
+
+> 关键词：`AI Agent`，落地挑战，应对策略，可靠性，性能
+
+> 🔗 文中引用的链接
+
++ [参考原文](https://cohere.com/blog/building-ai-agents)
+
+## 4️⃣ 🎸 [美7巨头市值蒸发1.5万亿美元；微软50周年曝大量`AI`新产品；Altman：`GPT-5`几个月内发布 | 极客早知道](https://mp.weixin.qq.com/s/sX909YRkWOJIFyuSFBMb2A)
+
++ `OpenAI` CEO称可能几周内发布`o3`和`o4-mini`，几个月内发布`GPT-5`，并向美加大学生免费提供`ChatGPT Plus`。
+
++ 微软借50周年更新`Copilot`，增加记忆等功能；`Midjourney`发布`AI`图片生成模型`V7`，更新草图模式。
+
++ 苹果`Apple Pencil`新专利曝光，笔尖可模拟不同笔触；亚马逊测试“为我购买”新功能。
+
++ 国家应急管理部称市售智驾车辆最多`L2`级；多地推出大疆“扫码即飞”共享无人机服务。
+
++ 美股科技“七姐妹”两日市值蒸发1.5万亿美元；国务院宣布对美进口商品加征关税。
+
+> 关键词：`AI`，科技资讯，市值蒸发，产品发布，政策
+
+> 🔗 文中引用的链接
+
++ 界面新闻
+
++ 界面
+
++ 新浪科技
+
++ IT之家
+
++ cnBeta
+
++ 快科技
+
++ ITBEAR
+
++ patentlyapple
+
+## 5️⃣ 🤖 [速递｜`AI编程``Replit`估值3个月翻三倍，竞对`Cursor`估值百亿美金，`AI编程`巨头林立](https://mp.weixin.qq.com/s/uScLb-e1KLZ9RHEqfRtnvw)
+
++ 人工智能编程初创公司`Replit`正洽谈新一轮融资，估值或翻近三倍至30亿美元，凸显硅谷投资者对`AI`软件开发的兴趣。
+
++ `Replit` 2024年9月推出能编写代码和部署软件的`AI Agent`，还开发让普通人构建软件的工具。
+
++ 其CEO表示“不再认为应学习编程”，公司用户超3000万。
+
++ 类似服务有微软`Copilot`和`Cursor`，`Cursor`正洽谈以100亿美元估值融资。
+
++ `Replit`支持者包括安德森·霍洛维茨基金等。
+
+> 关键词：`AI编程`，`Replit`，`Cursor`，估值，`AI工具`
+
+> 🔗 文中引用的链接
+
++ [本文翻译来源](https://www.bloomberg.com/news/articles/2025-04-02/-vibecoding-leader-replit-in-talks-for-3-billion-valuation?srnd=phx-technology)
