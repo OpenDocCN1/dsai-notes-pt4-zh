@@ -1,0 +1,227 @@
+
+# 检测基于 RAG 的系统幻觉
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/CYbXd6ssjoN1ACxbbmccDGuVnvf](https://v11enp9ok1h.feishu.cn/docx/CYbXd6ssjoN1ACxbbmccDGuVnvf)
+
+## 解决方案概述
+
+幻觉可分为三种类型，如下图所示。
+
+![](img/e326f176b95ac0e72d326197b7daf70e.png)
+
+科学文献提出了多种幻觉检测技术。在以下部分中，我们讨论并实施了四种主要的方法来检测幻觉：使用基于 LLM 提示的检测器、语义相似性检测器、BERT 随机检查器和标记相似性检测器。最后，我们比较了性能和延迟方面的方法。
+
+## 先决条件
+
+要使用本文中介绍的方法，您需要一个能够访问 Amazon SageMaker、Amazon Bedrock 和 Amazon Simple Storage Service（Amazon S3）的 AWS 账户。
+
+在您的 RAG 系统中，您需要存储三样东西：
+
++ `Context`（上下文）– 与用户查询相关的文本区域
+
++ `Question`（问题）– 用户的查询
+
++ 答案 – LLM 提供的答案
+
+**生成的表应类似于以下示例**
+
+| 问题 | 上下文 | 答 |
+
+| --- | --- | --- |
+
+| 什么是鸡尾酒？ | 鸡尾酒是酒精混合的...... | 鸡尾酒是酒精混合的...... |
+
+| 什么是鸡尾酒？ | 鸡尾酒是酒精混合的...... | 他们有着截然不同的历史...... |
+
+| 什么是 Fortnite？ | Fortnite 是一个受欢迎的视频...... | Fortnite 是一个在线多... |
+
+| 什么是 Fortnite？ | Fortnite 是一个受欢迎的视频...... | Fortnite 玩家的平均花费...... |
+
+## 方法 1：基于 LLM 的幻觉检测
+
+我们可以使用 LLM 将 RAG 系统的反应分类为上下文冲突的幻觉和事实。目的是确定哪些反应是基于上下文的，或者它们是否包含幻觉。
+
+**此方法包括以下步骤：**
+
+1. 创建一个包含问题、上下文和要分类的响应的数据集。
+
+2. 向 LLM 发送包含以下信息的调用：
+
+3. 提供语句（我们要分类的 LLM 中的答案）。
+
+4. 提供 LLM 创建答案所依据的上下文。
+
+5. 指示 LLM 在语句中标记直接基于上下文的句子。
+
+6. 解析输出并获得 0-1 之间的句子级数字分数。
+
+7. 确保 LLM、内存和参数独立于用于 Q&A 的参数。（这样 LLM 就无法访问之前的聊天记录来得出结论。）
+
+8. 例如，根据域调整特定数据集的幻觉分数的决策阈值。
+
+9. 使用阈值将陈述分类为幻觉或事实。
+
+### 创建提示模板
+
+要使用 LLM 对问题的答案进行分类，您需要设置提示。我们希望 LLM 考虑上下文和答案，并从给定的上下文中确定幻觉分数。分数将在 0 和 1 之间编码，其中 0 是直接来自上下文的答案，1 是没有上下文依据的答案。
+
+下面是一个包含少量示例的提示，以便 LLM 知道答案的预期格式和内容应该是什么：
+
+```
+prompt = """\n\nHuman: You are an expert assistant helping human to check if statements are based on the context.
+ Your task is to read context and statement and indicate which sentences in the statement are based directly on the context.
+
+Provide response as a number, where the number represents a hallucination score, which is a float between 0 and 1.
+Set the float to 0 if you are confident that the sentence is directly based on the context.
+Set the float to 1 if you are confident that the sentence is not based on the context.
+If you are not confident, set the score to a float number between 0 and 1. Higher numbers represent higher confidence that the sentence is not based on the context.
+
+Do not include any other information except for the the score in the response. There is no need to explain your = llm_chain(
+        {"context": context, "statement": str(answer)}
+    )
+    try:
+        scores = float(scores)
+    except Exception:
+        print(f"Could not parse LLM response: {scores}")
+        scores = 0
+    return scores
+```
+
+## 方法 2：基于语义相似性的检测
+
+假设一个陈述是事实，那么与上下文会有很高的相似度，你可以使用语义相似度作为判断一个陈述是否是输入冲突幻觉的方法。
+
+此方法包括以下步骤：
+
+1. 使用 LLM 为答案和上下文创建嵌入。（在此示例中，我们使用 Amazon Titan Embeddings 模型。）
+
+2. 使用嵌入计算答案中每个句子与（在本例中，我们使用余弦相似度作为距离度量。断章取义（幻觉句子）与上下文的相似度应该较低。
+
+3. 调整特定数据集（例如域相关）的决策阈值，以对幻觉陈述进行分类。
+
+### 使用 LLM 创建嵌入并计算相似度
+
+
+
+## 语义相似度检测
+
+您可以使用 LLM 为上下文和问题的初始响应创建嵌入。有了嵌入后，您可以计算两者的余弦相似度。余弦相似度分数将返回一个介于 0 和 1 之间的数字，其中 1 表示完全相似，0 表示无相似性。要将其转换为幻觉分数，我们需要取 1 — 余弦相似度。请参阅以下代码：
+
+```
+def similarity_detector(
+    context: str,
+    answer: str,
+    llm: BedrockEmbeddings,
+) -> float:
+    """
+    Check hallucinations using semantic similarity methods based on embeddings
+
+    Parameters
+    ----------
+    context : str
+        Context provided for RAG
+    answer : str
+        Answer from an LLM
+    llm : BedrockEmbeddings
+        Embeddings model
+
+    Returns
+    -------
+    float
+        Semantic similarity score
+    """
+
+    if len(context) == 0 or len(answer) == 0:
+        return 0.0
+    # calculate embeddings
+    context_emb = llm.embed_query(context)
+    answer_emb = llm.embed_query(answer)
+    context_emb = np.array(context_emb).reshape(1, -1)
+    answer_emb = np.array(answer_emb).reshape(1, -1)
+    sim_score = cosine_similarity(context_emb, answer_emb)
+    return 1 - sim_score[0][0]
+```
+
+## 方法 3：BERT 随机检查器
+
+BERT 分数使用来自预训练语言模型（如 BERT）的预训练上下文嵌入，并通过余弦相似度匹配候选句子和参考句子中的单词。自然语言处理 （NLP） 评估的传统指标之一是 BLEU 分数。BLEU 分数主要通过计算候选句子中引用句子中出现的 n-gram（连续标记）的数量来衡量精度。它侧重于在候选句子和参考句子之间匹配这些连续的标记序列，同时加入简洁性惩罚，以防止过短的翻译获得人为的高分。与专注于标记级比较的 BLEU 分数不同，BERT 分数使用上下文嵌入来捕获单词或完整句子之间的语义相似性。它已被证明与人类对句子级和系统级评估的判断相关。此外，BERT 分数计算精度、召回率和 F1 度量，这对于评估不同的语言生成任务很有用。
+
+在我们的方法中，我们使用 BERT 分数作为幻觉检测的随机检查器。这个想法是，如果你从 LLM 生成多个答案，并且它们之间存在很大的差异（不一致），那么这些答案很有可能是幻觉。我们首先从 LLM 中生成 N 个随机样本（句子）。然后，我们通过将原始生成的段落中的每个句子与 N 个新生成的随机样本中的相应句子进行比较来计算 BERT 分数。这是通过使用基于 LLM 的嵌入模型嵌入所有句子并计算余弦相似度来完成的。我们的假设是事实句在多代人中保持一致，从而导致高 BERT 分数（表明相似性）。相反，幻觉内容在不同世代之间可能会有所不同，从而导致原始句子与其随机变体之间的 BERT 分数较低。通过为这些相似性分数建立阈值，我们可以将 BERT 分数始终较低的句子标记为潜在的幻觉，因为它们展示了来自同一模型的多代之间的语义不一致。
+
+## 方法 4：令牌相似性检测
+
+使用标记相似性检测器，我们从答案和上下文中提取唯一的标记集。在这里，我们可以使用其中一个 LLM 分词器，或者简单地将文本拆分为单独的单词。然后，我们计算答案中每个句子与上下文之间的相似性。有多种指标可用于标记相似性，包括不同 n-gram 的 BLEU 分数、不同 n-gram 的 ROUGE 分数（类似于 BLEU 的 NLP 指标，但计算召回率与精度的关系），或者只是两个文本之间共享标记的比例。断章取义（幻觉）的句子与上下文的相似度应该较低。
+
+```
+def intersection_detector(
+    context: str,
+    answer: str,
+    length_cutoff: int = 3,
+) -> dict[str, float]:
+    """
+    Check hallucinations using token intersection metrics
+
+    Parameters
+    ----------
+    context : str
+        Context provided for RAG
+    answer : str
+        Answer from an LLM
+    length_cutoff : int
+        If no. tokens in the answer is smaller than length_cutoff, return scores of 1.0
+
+    Returns
+    -------
+    dict[str, float]
+        Token intersection and BLEU scores
+    """
+
+    # populate with relevant stopwords such as articles
+    stopword_set = {}
+
+    # remove punctuation and lowercase
+    context = re.sub(r"[^\w\s]", "", context).lower()
+    answer = re.sub(r"[^\w\s]", "", answer).lower()
+
+    # calculate  metrics
+    if len(answer) >= length_cutoff:
+        # calculate token intersection
+        context_split = {term for term in context if term not in stopword_set}
+        answer_split = re.compile(r"\w+").findall(answer)
+        answer_split = {term for term in answer_split if term not in stopword_set}
+        intersection = sum([term in context_split for term in answer_split]) / len(answer_split)
+
+        # calculate BLEU score
+        bleu = evaluate.load("bleu")
+        bleu_score = bleu.compute(predictions=[answer], references=[context])["precisions"]
+        bleu_score = sum(bleu_score) / len(bleu_score)
+
+        return {
+            "intersection": 1 - intersection,
+            "bleu": 1 - bleu_score,
+        }
+
+    return {"intersection": 0, "bleu": 0}
+```
+
+## 比较方法：评估结果
+
+在本节中，我们比较了文章中描述的幻觉检测方法。我们在三个 RAG 数据集上运行了一个实验，包括 Wikipedia 文章数据和两个合成生成的数据集。数据集中的每个示例都包括一个上下文、一个用户的问题和一个标记为正确或幻觉的 LLM 答案。我们对所有问题运行每种幻觉检测方法，并汇总数据集的准确性指标。
+
+最高的准确性（正确归类为幻觉与事实的句子数）由 BERT 随机检查器和基于 LLM 提示的检测器证明。基于 LLM 提示符的检测器在精度上优于 BERT 检查器，并且 BERT 随机检查器具有更高的召回率。语义相似性和标记相似性检测器显示出非常低的准确性和召回率，但在精度方面表现良好。这表明这些检测器可能只对识别最明显的幻觉有用。
+
+除了令牌相似性检测器之外，就 LLM 调用的数量而言，基于 LLM 提示的检测器是最具成本效益的选项，因为它相对于上下文和响应的大小是恒定的（但成本会因输入令牌的数量而异）。语义相似性检测器的成本与上下文和响应中的句子数量成正比，因此随着上下文的增长，这可能会变得越来越昂贵。
+
+下表总结了每种方法之间比较的指标。对于精度是最高优先级的使用案例，我们建议使用标记相似性、基于 LLM 提示和语义相似性的方法，而为了提供高召回率，BERT 随机方法的性能优于其他方法。
+
+下表总结了每种方法之间比较的指标。
+
+根据维基百科数据集和生成式 AI 合成数据集的平均值：
+`N` = 随机样本数
+`K` = 句子数
+
+这些结果表明，基于 LLM 的检测器在准确性和成本（额外的答案延迟）之间显示出良好的权衡。我们建议结合使用标记相似性检测器来过滤掉最明显的幻觉，并使用基于 LLM 的检测器来识别更难的幻觉。
+
+## 结论
+
+随着 RAG 系统的不断发展并在 AI 应用中发挥越来越重要的作用，检测和预防幻觉的能力仍然至关重要。通过探索四种不同的方法（LLM 基于提示的检测、语义相似性检测、BERT 随机检查和令牌相似性检测），我们展示了应对这一挑战的各种方法。尽管每种方法在准确度、精密度、召回率和成本方面都有其优势和权衡，但基于 LLM 提示的检测器显示出特别有希望的结果，准确率超过 75%，附加成本相对较低。组织可以根据其特定需求选择最合适的方法，同时考虑计算资源、准确性要求和成本约束等因素。随着该领域的不断发展，这些基础技术为构建更可靠、更值得信赖的 RAG 系统提供了一个起点。
