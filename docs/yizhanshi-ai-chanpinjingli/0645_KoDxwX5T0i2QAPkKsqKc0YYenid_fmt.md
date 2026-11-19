@@ -1,0 +1,351 @@
+
+# 扩散模型(Diffusion Model)基本原理及代码讲解
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/UimudCOMnopRZixRzVkckVJcnLh](https://v11enp9ok1h.feishu.cn/docx/UimudCOMnopRZixRzVkckVJcnLh)
+
+## 基本原理
+
+扩散模型包括两个步骤：
+
+1. 固定的（或预设的）前向扩散过程`q`：该过程会逐渐将高斯噪声添加到图像中，直到最终得到纯噪声。
+2. 可训练的反向去噪扩散过程：训练一个神经网络，从纯噪音开始逐渐去噪，直到得到一个真实图像。
+
+![](img/081b3f5f3cf732465537f891fa544fce.png)
+
+前向与后向的步数由下标`t`定义，并且有预先定义好的总步数`T`（DDPM原文中为1000）。
+
+`t=0` 时为从数据集中采样得到的一张真实图片，`t=T` 时近似为一张纯粹的噪声。
+
+### 直观理解
+
+> 为了看懂扩散模型查了很多资料，但是要么就是大量的数学公式，一行行公式推完了还是不知道它想干啥。要么就是高视角，上来就和能量模型，VAE放一块儿对比说共同点和不同点，看完还是云里雾里。然而事实上下面几句话就能把扩散模型说明白了
+
+> 扩散模型的目的是什么？
+
+> 学习从纯噪声生成图片的方法
+
+> 扩散模型是怎么做的？
+
+> 训练一个`U-Net`，接受一系列加了噪声的图片，学习预测所加的噪声
+
+> 前向过程在干啥？
+
+> 逐步向真实图片添加噪声最终得到一个纯噪声
+
+### 数学形式
+
+#### 前向过程
+
+`q(x_0)`是真实数据分布（也就是真实的大量图片），从这个分布中采样即可得到一张真实图。我们定义前向扩散过程为`q`，即每一个`step`向图片添加噪声的过程，并定义好一系列`0 < β_1 < β_2 < ... < β_T < 1`，则有：
+
+其中，`N`为正态分布，均值和方差分别为。因此通过采样标准正态分布，有：
+
+![](img/06703c401c4edf3eb296c26a9ad40664.png)
+
+![](img/7ce24447c88644f4897299116fe43d78.png)
+
+![](img/d0698ca59a6b6618a4332ecf3c3dc4fd.png)
+
+#### 反向过程
+
+那么问题的核心就是如何得到`q`的逆过程，这个过程无法直接求出来，所以我们使用神经网络去拟合这一分布。我们使用一个具有参数的神经网络去计算。假设反向的条件概率分布也是高斯分布，且高斯分布实际上只有两个参数：均值和方差，那么神经网络需要计算的实际上是
+
+在`DDPM`中，方差被固定，网络只学习均值。而之后的改进模型中，方差也可由网络学习得到
+
+"First, we set `Σ_θ(x_t, t) = σ_t^2 I` to untrained time dependent constants. Experimentally, both `σ_t^2 = β_t` and `σ_t^2 = ~β_t` (see paper) had similar results."
+
+#### 模型
+
+`Unet`中上采样和下采样模块都基于`resblock`，同时还有对`step`进行`embedding`的全连接层。数据进行下采样之后，再使上采样输出与`step embedding`向量进行相加，再输入进下一层上采样层中。
+
+```
+class ResidualConvBlock(nn.Module):
+    def __init__(
+        self, in_channels: int, out_channels: int, is_res: bool = False
+    ) -> None:
+        super().__init__()
+        '''
+        standard ResNet style convolutional block
+        '''
+        self.same_channels = in_channels == out_channels
+        self.is_res = is_res
+        self.conv1 = nn.Sequential(
+            nn.Conv2d(in_channels, out_channels, 3, 1, 1),
+            nn.BatchNorm2d(out_channels),
+            nn.GELU(),
+        )
+        self.conv2 = nn.Sequential(
+            nn.Conv2d(out_channels, out_channels, 3, 1, 1),
+            nn.BatchNorm2d(out_channels),
+            nn.GELU(),
+        )
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        if self.is_res:
+            x1 = self.conv1(x)
+            x2 = self.conv2(x1)
+            # this adds on correct residual in case channels have increased
+            if self.same_channels:
+                out = x + x2
+            else:
+                out = x1 + x2
+            return out / 1.414
+        else:
+            x1 = self.conv1(x)
+            x2 = self.conv2(x1)
+            return x2
+
+
+class UnetDown(nn.Module):
+    def __init__(self, in_channels, out_channels):
+        super(UnetDown, self).__init__()
+        '''
+        process and downscale the image feature maps
+        '''
+        layers = [ResidualConvBlock(in_channels, out_channels), nn.MaxPool2d(2)]
+        self.model = nn.Sequential(*layers)
+
+    def forward(self, x):
+        return self.model(x)
+
+
+class UnetUp(nn.Module):
+    def __init__(self, in_channels, out_channels):
+        super(UnetUp, self).__init__()
+        '''
+        process and upscale the image feature maps
+        '''
+        layers = [
+            nn.ConvTranspose2d(in_channels, out_channels, 2, 2),
+            ResidualConvBlock(out_channels, out_channels),
+            ResidualConvBlock(out_channels, out_channels),
+        ]
+        self.model = nn.Sequential(*layers)
+
+    def forward(self, x, skip):
+        x = torch.cat((x, skip), 1)
+        x = self.model(x)
+        return x
+
+
+class EmbedFC(nn.Module):
+    def __init__(self, input_dim, emb_dim):
+```
+
+## 网络训练流程
+
+我们最终要训练的实际上是一个噪声预测器。神经网络输出的噪声是`ε`，而真实的噪声取自于正态分布`N(0, I)`。则损失函数为：
+
+预测网络方面，`DDPM`采用了 `U-Net`。
+
+![](img/beeb111b97cc01b246a6ba96db3fc549.png)
+
+从而，网络的训练流程为：
+
+1. 我们接受一个随机的样本；
+2. 我们随机从 1 到 `T` 采样一个 `t`；
+3. 我们从高斯分布采样一些噪声并且施加在输入上；
+4. 网络从被影响过后的噪声图片学习其被施加了的噪声。
+
+## Diffusion流程
+
+### 运行流程
+
+Diffusion分为两个步骤——扩散、逆扩散
+
+![](img/5d59a8e77ea6a99cfc41562c2c18a9dd.png)
+
+扩散过程是对图像加入高斯噪声的过程（图中上半部分）：
+
+给定一张图像，然后构造`T`个时刻，每一个时刻对应一张图像，如图中`t=0`，对应我们给定的初始图像
+
+然后，对这张图像加一个高斯噪声，得到`t=1`时刻的图像；再对`t=1`时刻的图像加入噪声，得到`t=2`时刻的噪声。然后重复此法，到`T`时刻时，就得到了一张全是噪点的图像（`t=T`）
+
+逆扩散过程就是对图像减去噪声的过程，也就是还原图像的过程（图中下半部分）：
+
+给定一张全是噪点的图像，然后不断去噪，去到`t=2`时，得到图中的图像，再去噪，得到`t=1`时刻的图像，再再去噪，就还原回了坤坤的图像。
+
+### 原因
+
+为什么要费尽心思把它加入这么多噪声，再复原回来？
+
+对于`T`时刻的图像，它是服从正态分布的，并且，是近似服从标准正态分布。那么，如果要生成图像，是不是可以直接从标准正态分布中采样出数据，然后一点点去噪，就能还原回原来的图像了呢？这就是`diffusion`的思想
+
+### 前向加噪
+
+记时刻1为原始图像，表示为`x_1`，则时刻2表达为`x_2`
+
+每一个时刻都要加入一个噪声，那么该如何加噪呢？假设在`t-1`时刻，我们该如何得到`t`时刻的图像？其公式如下
+
+`x_{t-1}` 和 `x_t` 分别表示`t-1`时刻和`t`时刻的图像。`β` 一般是一个大于0小于1的超参数，随着时刻的增加而减小，`ε_t ~ N(0, I)` 的标准正态分布（Ps：为什么是加权平均，并且要开根号？请看参考①）
+
++ 从这个式子不难看出，这其实不是简单的从 `x_{t-1}` 中加噪，而是加权平均。
+
+从`t-1`到`t`可以用式（1）表示，那从`t-2`到`t`呢？难道我们每次都要一次一次的加入噪声吗？有没有办法更好的表示？
+
+我们先看一个正态分布的基本定理：
+
+> 定理①：
+
+> 假设：
+
+> 则：
+
+> 定理②：
+
+> 假设：
+
+> 则：
+
+> Ps：这几个定理证明很简单，此处不做证明，不懂的可以自行百度，或者问我。
+
+现在，我们把`x_{t-1}`到`x_t`由式（1）推导出来
+
+### 逆扩散过程
+
+> 得到了`x_t`的加噪过程及其概率分布。前面提到，我们的最终目标是从`T`时刻采样出数据，然后慢慢去噪，就得到生成的图像。那么，该如何去噪呢？换句话说，我们该如何求出`x_{t-1}`呢？
+
+### 一阶马尔可夫假设
+
+在扩散过程中，模型总是一个时刻一个时刻地加噪，也就是说，`t`时刻的图像，是来自`t-1`时刻的
+
+![](img/544eedba30f63239725bef861311deb0.png)
+
+所以，在这种过程中，引入一个假设——马尔可夫假设
+
+一阶马尔可夫假设：给定`t-1`时刻的状态，`t`时刻仅与`t-1`时刻有关，与过去的状态无关
+
+概率表达为：
+
+逆扩散也是一样的道理（按照图中箭头即可看到）
+
+由马尔可夫假设，我们不难得出：
+
+然后不断拆分，就得到了：
+
+## Diffusion文字生成图片——整体结构
+
+### 整个生成过程
+
+![](img/d14b86f89f55a00a34e0f5a8dae2742c.png)
+
+▲ 文字生成图片全过程
+
+实际上 `Diffusion` 是使用 `Text Encoder` 生成文字对应的 `embedding`（`Text Encoder` 使用 `CLIP` 模型），然后和随机噪声 `embedding`、`time step embedding` 一起作为 `Diffusion` 的输入，最后生成理想的图片。我们看一下完整图：
+
+![](img/7462baff8df84831dc034832be7f00e7.png)
+
+▲ token embedding、随机噪声embedding、time embedding一起输入diffusion
+
+上图我们看到了 `Diffusion` 的输入为 `token embedding` 和随机 `embedding`，`time embedding` 没有画出来。中间的 Image Information Creator 是由多个 `UNet` 模型组成，更详细的图如下：
+
+![](img/cdc2c46dfe426deb8a93f1b00122f51b.png)
+
+▲ 更详细的结构
+
+可以看到中间的 Image Information Creator 是由多个 `UNet` 组合而成的，关于 `UNet` 的结构我们放在后面来讲。现在我们了解了加入文字 `embedding` 后 `Diffusion` 的结构，那么文字的 `embedding` 是如何生成的？接下来我们介绍下如何使用 `CLIP` 模型生成文字 `embedding`。
+
+### 使用CLIP模型生成输入文字embedding
+
+> CLIP 在图像及其描述的数据集上进行训练。想象一个看起来像这样的数据集，包含 4 亿张图片及其说明：
+
+![](img/00c5781ff18c4cf6639813840d60dd89.png)
+
+▲ 图像及其文字说明
+
+> 实际上 CLIP 是根据从网络上抓取的图像及其文字说明进行训练的。CLIP 是图像编码器和文本编码器的组合，它的训练过程可以简化为给图片加上文字说明。首先分别使用图像和文本编码器对它们进行编码。
+
+![](img/e0ac87c51c0f20d2fb8bf0fe3a308a8f.png)
+
+> 然后使用余弦相似度刻画是否匹配。最开始训练时，相似度会很低。
+
+![](img/43e25dba13f618669ca1350caeab2a5a.png)
+
+> 然后计算 loss，更新模型参数，得到新的图片 embedding 和文字 embedding。
+
+![](img/5d230be64050975b1ec17312a9ad23a6.png)
+
+### UNet网络中如何使用文字embedding
+
+前面已经介绍了如何生成输入文字 `embedding`，那么 `UNet` 网络又是如何使用的？实际上是在 `UNet` 的每个 `ResNet` 之间添加一个 `Attention`，而 `Attention` 一端的输入便是文字 `embedding`。如下图所示：
+
+![](img/a9a035c52a5c7131f1f2980168f38a3c.png)
+
+更详细的图如下：
+
+![](img/24d946acfd4de52932658a58f53af1d6.png)
+
+## 扩散模型Diffusion
+
+前面介绍了 `Diffusion` 是如何根据输入文字生成图片的，让大家有个大概的了解，接下来会详细介绍扩散模型 `Diffusion` 是如何训练的，又是如何生成图片的。
+
+### 扩散模型Duffison的训练过程
+
+![](img/9fbc921a9f0c577a3acf785a89228cb6.png)
+
+▲ 扩散模型Diffusion
+
+> `Diffusion` 模型的训练可以分为两个部分：
+
+1. **前向扩散过程**（`Forward Diffusion Process`）→图片中添加噪声；
+2. **反向扩散过程**（`Reverse Diffusion Process`）→去除图片中的噪声。
+
+### 前向扩散过程
+
+![](img/9dc23280fb18c7589815ed0a9d0441c5.png)
+
+前向扩散过程是不断往输入图片中添加高斯噪声。
+
+### 反向扩散过程
+
+![](img/0b4977776ec2a4aa2bf355817136062d.png)
+
+反向扩散过程是将噪声不断还原为原始图片。
+
+### 训练过程
+
+![](img/0ae54a63efc14bdb8b9e82ab73b9fc8d.png)
+
+在每一轮的训练过程中，包含以下内容：
+
+1. 每一个训练样本选择一个随机时间步长 `t`。
+2. 将 time step `t` 对应的高斯噪声应用到图片中。
+3. 将 time step 转化为对应 `embedding`。
+
+下面是每一轮详细的训练过程：
+
+![](img/3d8053fb3e58d5177347f7048f78fdeb.png)
+
+![](img/d0f37f975f5fc4f1e8886dafd27dac05.png)
+
+上图的 Sample a Gaussian 表示生成随机高斯噪声，Iteratively denoise the image 表示反向扩散过程，如何一步步从高斯噪声变成输出图片。可以看到最终生成的 Denoised image 非常清晰。
+
+## 补充
+
+### 补充1：UNet模型结构
+
+![](img/ee0067efa10e7262ec4f80bb71b5c6a9.png)
+
+### 补充2：Diffusion模型的缺点及改进版——Stable Diffusion
+
+> 前面我们在介绍整个文字生成图片的架构中，图里面用的都是 `Stable Diffusion`，后面介绍又主要介绍的是 `Diffusion`。其实 `Stable Diffusion` 是 `Diffusion` 的改进版。
+
+
+
+> Diffusion 的缺点是在反向扩散过程中需要把完整尺寸的图片输入到 `U-Net`，这使得当图片尺寸以及 time step `t` 足够大时，Diffusion 会非常的慢。Stable Diffusion 就是为了解决这一问题而提出的。后面有时间再介绍下 Stable Diffusion 是如何改进的。
+
+## 补充3：`UNet`网络同时输入文字embedding
+
+> 在第 2 节介绍 Diffusion 原理的时候，为了方便，都是没有把输入文字 embedding 加进来，只用了 `time embedding` 和随机高斯噪声，怎么把文字 embedding 也加进来可以参考前面的 1.3 节。
+
+## 补充4：DDPM为什么要引入时间步长 `t`
+
+> 引入时间步长 `t` 是为了模拟一个随时间逐渐增强的扰动过程。每个时间步长 `t` 代表一个扰动过程，从初始状态开始，通过多次应用噪声来逐渐改变图像的分布。因此，较小的 `t` 代表较弱的噪声扰动，而较大的 `t` 代表更强的噪声扰动。
+
+> 这里还有一个原因，DDPM 中的 `UNet` 都是共享参数的，那如何根据不同的输入生成不同的输出，最后从一个完全的一个随机噪声变成一个有意义的图片，这还是一个非常难的问题。我们希望这个 `UNet` 模型在刚开始的反向过程之中，它可以先生成一些物体的大体轮廓，随着扩散模型一点一点往前走，然后到最后快生成逼真图像的时候，这时候希望它学习到高频的一些特征信息。由于 `UNet` 都是共享参数，这时候就需要 `time embedding` 去提醒这个模型，我们现在走到哪一步了，现在输出是想要粗糙一点的，还是细致一点的。
+
+> 所以加入时间步长 `t` 对生成和采样过程都有帮助。
+
+## 补充5：为什么训练过程中每一次引入的是随机时间步长 `t`
+
+> 我们知道模型在训练过程中 `loss` 会逐渐降低，越到后面 `loss` 的变化幅度越小。如果时间步长 是递增的，那么必然会使得模型过多的关注较早的时间步长（因为早期 `loss` 大），而忽略了较晚的时间步长信息。

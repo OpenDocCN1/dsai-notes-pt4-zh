@@ -1,0 +1,231 @@
+
+# 从原理到代码理解语言模型训练和推理
+
+> 来源：https://v11enp9ok1h.feishu.cn/docx/UDcJdNjGFoNwlyx3rTvc3IrLn0q
+
+> 要理解大语言模型（LLM），首先要理解它的本质，无论预训练、微调还是在推理阶段，核心都是 `next token prediction`，也就是以自回归的方式从左到右逐步生成文本。
+
+## 什么是 token？
+
+`token` 是指文本中的一个词或者子词，给定一句文本，送入语言模型前首先要做的是对原始文本进行 `tokenize`，也就是把一个文本序列拆分为离散的 `token` 序列
+
+![](img/f7deebca8b00a1c6f669bc22848b7834.png)
+
++ 其中，`tokenize` 是在无标签的语料上训练得到的一个 token 数量固定且唯一的分词器，这里的 token 数量就是大家常说的词表，也就是语言模型知道的所有 tokens。
+
++ 当我们对文本进行分词后，每个 `token` 可以对应一个 `embedding`，这也就是语言模型中的 `embedding` 层，获得某个 `token` 的 `embedding` 就类似一个查表的过程
+
+![](img/67550efe1acd2bca9b7d6063a9584870.png)
+
+> 我们知道文本序列是有顺序的，而常见的语言模型都是基于注意力机制的 `Transformer` 结构，无法自动考虑文本的前后顺序，因此需要手动加上位置编码，也就是每个位置有一个位置 `embedding`，然后和对应位置的 `token embedding` 进行相加
+
+![](img/a40dcc5639c17ca3909773438ad56f6d.png)
+
+![](img/527d25cdf4dc469778a9a960d11b78d7.png)
+
+> 在模型训练或推理阶段大家经常会听到上下文长度这个词，它指的是模型训练时接收的 token 训练的最大长度，如果在训练阶段只学习了一个较短长度的位置 `embedding`，那模型在推理阶段就不能够适用于较长文本（因为它没见过长文本的位置编码）
+
+## 语言模型的预训练
+
+当我们有了 `token embedding` 和位置 `embedding` 后，将它们送入一个 `decoder-only` 的 `Transformer` 模型，它会在每个 `token` 的位置输出一个对应的 `embedding`（可以理解为就像是做了个特征加工）
+
+![](img/1f1b414b65cff6235c5a633717757b5a.png)
+
+有了每个 `token` 的一个输出 `embedding` 后，我们就可以拿它来做 `next token prediction` 了，其实就是当作一个分类问题来看待：
+
++ 首先我们把输出 `embedding` 送入一个线性层，输出的维度是词表的大小，就是让预测这个 `token` 的下一个 `token` 属于词表的“哪一类”
+
++ 为了将输出概率归一化，需要再进行一个 `softmax` 变换
+
++ 训练时就是最大化这个概率使得它能够预测真实的下一个 `token`
+
++ 推理时就是从这个概率分布中采样下一个 `token`
+
+![](img/c1487c05d96b6dbd9f148050e6ee40c8.png)
+
+### 训练阶段
+
+因为有 `causal` 自注意力的存在，我们可以一次性对一整个句子每个 `token` 进行下一个 `token` 的预测，并计算所有位置 `token` 的 `loss`，因此只需要一 `forward`
+
+### 推理阶段
+
+以自回归的方式进行预测：
+
++ 每次预测下一个 `token`
+
++ 将预测的 `token` 拼接到当前已经生成的句子上
+
++ 再基于拼接后的句子进行预测下一个 `token`
+
++ 不断重复直到结束
+
+![](img/bec78006485bc1a52c3d45fae70f713e.png)
+
+其中，在预测下一个 `token` 时，每次我们都有一个概率分布用于采样，根据不同场景选择采样策略会略有不同，不然有贪婪策略、核采样、`Top-k` 采样等，另外经常会看到 `Temperature` 这个概念，它是用来控制生成的随机性的，温度系数越小越稳定。
+
+## 代码实现
+
+下面代码来自项目 `https://github.com/karpathy/nanoGPT/tree/master`，同样是一个很好的项目，推荐初学者可以看看。
+
+对于各种基于 `Transformer` 的模型，它们都是由很多个 `Block` 堆起来的，每个 `Block` 主要有两个部分组成：
+
++ `Multi-headed Causal Self-Attention`
+
++ `Feed-forward Neural Network`
+
+结构的示意图如下：
+
+![](img/89848b6fc718009ace9822ab83224c82.png)
+
+### 看图搭一下单个 Block
+
+```python
+class Block(nn.Module):
+
+    def __init__(self, config):
+        super().__init__()
+        self.ln_1 = LayerNorm(config.n_embd, bias=config.bias)
+        self.attn = CausalSelfAttention(config)
+        self.ln_2 = LayerNorm(config.n_embd, bias=config.bias)
+        self.mlp = MLP(config)
+
+    def forward(self, x):
+        x = x + self.attn(self.ln_1(x))
+        x = x + self.mlp(self.ln_2(x))
+        return x
+```
+
+### 然后看下一整个 GPT 的结构
+
+```python
+class GPT(nn.Module):
+
+    def __init__(self, config):
+        super().__init__()
+        assert config.vocab_size is not None
+        assert config.block_size is not None
+        self.config = config
+
+        self.transformer = nn.ModuleDict(dict(
+            wte = nn.Embedding(config.vocab_size, config.n_embd),
+            wpe = nn.Embedding(config.block_size, config.n_embd),
+            drop = nn.Dropout(config.dropout),
+            h = nn.ModuleList([Block(config) for _ in range(config.n_layer)]),
+            ln_f = LayerNorm(config.n_embd, bias=config.bias),
+        ))
+        self.lm_head = nn.Linear(config.n_embd, config.vocab_size, bias=False)
+        # with weight tying when using torch.compile() some warnings get generated:
+        # "UserWarning: functional_call was passed multiple values for tied weights.
+        # This behavior is deprecated and will be an error in future versions"
+        # not 100% sure what this is, so far seems to be harmless. TODO investigate
+        self.transformer.wte.weight = self.lm_head.weight # https://paperswithcode.com/method/weight-tying
+
+        # init all weights
+        self.apply(self._init_weights)
+        # apply special scaled init to the residual projections, per GPT-2 paper
+        for pn, p in self.named_parameters():
+            if pn.endswith('c_proj.weight'):
+                torch.nn.init.normal_(p, mean=0.0, std=0.02/math.sqrt(2 * config.n_layer))
+```
+
+主要就是两个 `embedding` 层（token、位置）、多个 `block`、一些额外的 `dropout` 和 `LayerNorm` 层，以及最后用来预测下一个 `token` 的线性层。说破了就是这么简单。
+
++ 这边还用到了 `weight tying` 的技巧，就是最后一层用来分类的线性层的权重和 `token embedding` 层的权重共享。
+
+接下来重点来关注一下训练和推理的 `forward` 是如何进行的，这能帮助大家更好的理解原理。
+
+首先需要构建 `token embedding` 和位置 `embedding`，把它们叠加起来后过一个 `dropout`，然后就可以送入 `Transformer` 的 `block` 中了。
+
+```python
+pos = torch.arange(0, t, dtype=torch.long, device=device) # shape (t)
+
+# forward the GPT model itself
+tok_emb = self.transformer.wte(idx) # token embeddings of shape (b, t, n_embd)
+pos_emb = self.transformer.wpe(pos) # position embeddings of shape (t, n_embd)
+x = self.transformer.drop(tok_emb + pos_emb)
+for block in self.transformer.h:
+    x = block(x)
+x = self.transformer.ln_f(x)
+```
+
+> 需要注意的是经过 `Transformer` block 后出来的 tensor 的维度跟之前是一样的。拿到每个 `token` 位置对应的输出 `embedding` 后，就可以通过最后的先行层进行分类，然后用交叉熵损失来进行优化。
+
+再看一下完整的过程，其中只需要将输入左移一个位置就可以作为 `target` 了
+
+```python
+def forward(self, idx, targets=None):
+    device = idx.device
+    b, t = idx.size()
+    assert t <= self.config.block_size, f"Cannot forward sequence of length {t}, block size is only {self.config.block_size}"
+    pos = torch.arange(0, t, dtype=torch.long, device=device) # shape (t)
+
+    # forward the GPT model itself
+    tok_emb = self.transformer.wte(idx) # token embeddings of shape (b, t, n_embd)
+    pos_emb = self.transformer.wpe(pos) # position embeddings of shape (t, n_embd)
+    x = self.transformer.drop(tok_emb + pos_emb)
+    for block in self.transformer.h:
+        x = block(x)
+    x = self.transformer.ln_f(x)
+
+    if targets is not None:
+        # if we are given some desired targets also calculate the loss
+```
+
+### 推理阶段
+
+根据当前输入序列进行一次前向传播：
+
++ 利用温度系数对输出概率分布进行调整
+
++ 通过 `softmax` 进行归一化
+
++ 从概率分布进行采样下一个 `token`
+
++ 拼接到当前句子并再进入下一轮循环
+
+```python
+@torch.no_grad()
+def generate(self, idx, max_new_tokens, temperature=1.0, top_k=None):
+    """
+    Take a conditioning sequence of indices idx (LongTensor of shape (b,t)) and complete
+    the sequence max_new_tokens times, feeding the predictions back into the model each time.
+    Most likely you'll want to make sure to be in model.eval() mode of operation for this.
+    """
+    for _ in range(max_new_tokens):
+        # if the sequence context is growing too long we must crop it at block_size
+        idx_cond = idx if idx.size(1) <= self.config.block_size else idx[:, -self.config.block_size:]
+        # forward the model to get the logits for the index in the sequence
+        logits, _ = self(idx_cond)
+        # pluck the logits at the final step and scale by desired temperature
+        logits = logits[:, -1, :] / temperature
+        # optionally crop the logits to only the top k options
+        if top_k is not None:
+            v, _ = torch.topk(logits, min(top_k, logits.size(-1)))
+            logits[logits < v[:, [-1]]] = -float('Inf')
+        # apply softmax to convert logits to (normalized) probabilities
+        probs = F.softmax(logits, dim=-1)
+        # sample from the distribution
+        idx_next = torch.multinomial(probs, num_samples=1)
+        # append sampled index to the running sequence and continue
+        idx = torch.cat((idx, idx_next), dim=1)
+
+    return idx
+```
+
+![](img/e5f7638db7fc7d6873ff7f2786076961.png)
+
+> 而模型推理部署/服务化是抽象的算法模型触达具体的实际业务的最后一公里。因此，模型部署是实际AI应用落地非常重要的环节，工程师辛苦训练出来的模型到落地部署应用有大量的工作，包括模型提取、模型压缩、模型加速以及模型服务化等等。
+
+## 模型推理部署/服务化方式
+
+常见的模型部署方式有以下几种：
+
++ 服务器端部署：模型推理服务部署在服务器上，从而进行高性能完成推理任务；
+
++ 边缘设备端部署：模型部署在手机或者其他端侧设备，利用端侧算力完成推理任务；
+
++ 云端部署：模型部署在云端提供线上服务，用户可以使用客户端发送数据和请求，云端响应请求，完成推理任务并返回推理结果；
+
++ Web 端部署：模型部署在网页端，网页端完成推理任务；
+
+### 如何选择模型推理服务化工具
