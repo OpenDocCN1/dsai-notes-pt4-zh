@@ -1,0 +1,193 @@
+
+# `train_model_02.ipynb`
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/BOcndxPsFobvEVxOks7cIPJynKh](https://v11enp9ok1h.feishu.cn/docx/BOcndxPsFobvEVxOks7cIPJynKh)
+
+![](img/ee5463fa720f15ed50d0ef79dacca74a.png)
+
+[`train_model_02.ipynb`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EuY8bylamoPtdJx88JKcchbVnEh)
+
+
+
+# 环境准备与依赖导入
+
+## 导入依赖库
+
+```python
+from PIL import Image
+import requests
+from transformers import ChineseCLIPProcessor, ChineseCLIPModel, Trainer, TrainingArguments
+import torch
+from datasets import load_dataset, Dataset
+from pathlib import Path
+import pandas as pd
+import numpy as np
+from tqdm import tqdm
+```
+
+## 加载模型与处理器
+
+```python
+model_name_or_path = "OFA-Sys/chinese-clip-vit-large-patch14"
+model = ChineseCLIPModel.from_pretrained(model_name_or_path)
+processor = ChineseCLIPProcessor.from_pretrained(model_name_or_path)
+```
+
+# 数据预处理
+
+## 文本处理示例
+
+```python
+text_str = ['一个汽车', '广东脆皮烧鸭做得美不美 这几点广式烧鸭做法秘诀很重要', '开心麻花大电影定档 《夏洛特烦恼》逗比老清新', "赢了这一场硬仗,篮网可以安心等欧文回来了"]
+processor(text=text_str)
+```
+
+## 图像处理示例
+
+```python
+image_str = "bigdata/image_data/test-31115.jpg"
+image_input = Image.open(image_str)
+processor(images=image_input)
+```
+
+## 数据集映射与转换
+
+```python
+def tokenizer_text(examples):
+    res = processor(text=examples['text'], max_length=64, padding="max_length", return_tensors="pt", truncation=True)
+    examples['input_ids'] = res['input_ids']
+    examples['attention_mask'] = res['attention_mask']
+    return examples
+
+def transform_images(examples):
+    images = [Image.open(i) for i in examples['image_path']]
+    images = [processor(images=i, return_tensors="pt")['pixel_values'] for i in images]
+    examples['pixel_values'] = images
+    return examples
+
+
+dataset = Dataset.from_pandas(df=pd.read_csv("bigdata/clean_train_test/train.csv"))
+dataset = dataset.train_test_split(test_size=0.0002)
+dataset = dataset.map(
+    function=tokenizer_text,
+    batched=True
+)
+# dataset = dataset.map(
+#     function=transform_images,
+#     batched=True
+# )
+
+dataset.set_transform(transform=transform_images)
+
+dataset
+```
+
+# 数据验证
+
+## 张量形状检查
+
+```python
+# dataset['train'][2]['input_ids']
+dataset['train'][3]['pixel_values'].shape
+```
+
+```python
+a = set(torch.tensor(dataset['train'][i]['input_ids']).shape for i in tqdm(range(200)))
+a
+```
+
+```python
+b = set(torch.tensor(dataset['train'][i]['attention_mask']).shape for i in tqdm(range(200)))
+b
+```
+
+```python
+torch.stack([torch.tensor(dataset['train'][0]['input_ids']),
+             torch.tensor(dataset['train'][0]['input_ids'])]).shape
+```
+
+```python
+dataset['train'][0]['pixel_values'].squeeze(0).shape
+```
+
+```python
+torch.stack([dataset['train'][0]['pixel_values'].squeeze(0),
+             dataset['train'][0]['pixel_values'].squeeze(0),]).shape
+```
+
+## 异常图像检查（注释代码）
+
+```python
+# for i in tqdm(range(dataset['train'].__len__())):
+#     try:
+#         image = dataset['train'][i]['image_path']
+#         image = Image.open(image)
+#         processor(images=image, return_tensors="pt")
+#     except Exception as e:
+#         print(dataset['train'][i]['image_path'])
+#         break
+```
+
+```python
+# dataset['train'][5374]#['image_path']
+```
+
+## 单条图像处理
+
+```python
+image = dataset['train'][5374]['image_path']
+image = Image.open(image)
+processor(images=image, return_tensors="pt")
+```
+
+# 模型训练
+
+## 定义 `collate_fn` 与训练参数
+
+```python
+def collate_fn(examples):
+    pixel_values = torch.stack([i['pixel_values'].squeeze(0) for i in examples])
+    input_ids = torch.tensor([example["input_ids"] for example in examples], dtype=torch.long)#torch.stack([torch.tensor(i, dtype=torch.long) for i in examples['input_ids']])
+    attention_mask = torch.tensor([example["attention_mask"] for example in examples], dtype=torch.long)#torch.stack([torch.tensor(i) for i in examples['attention_mask']])
+    return {
+        "pixel_values": pixel_values,
+        "input_ids": input_ids,
+        "attention_mask": attention_mask,
+        "return_loss": True,
+    }
+
+
+train_argument = TrainingArguments(
+    output_dir="clip_chinese_02",
+    per_device_train_batch_size=28,
+    per_device_eval_batch_size=28,
+    evaluation_strategy="steps",
+    eval_steps=1000,
+    logging_steps=1000,
+    gradient_accumulation_steps=2,
+    num_train_epochs=1,
+    weight_decay=0.1,
+    lr_scheduler_type="cosine",
+    learning_rate=5e-4,
+    save_steps=1000,
+    fp16=True,
+    remove_unused_columns=False,
+    save_total_limit=4
+)
+
+
+trainer = Trainer(
+    model=model,
+    args=train_argument,
+    train_dataset=dataset['train'],
+    eval_dataset=dataset['test'],
+    data_collator=collate_fn,
+)
+trainer.train()
+```
+
+## 引用注释
+
+```python
+dataset['train'][5374]#['image_path']
+```
