@@ -1,0 +1,374 @@
+
+```python
+class PlanningEngine:
+    def __init__(self):
+        self.rules = {}          # 规则配置
+        self.tool_mapping = {}   # 意图-工具映射表
+        self.llm = ChatTongyi()  # 通义千问模型实例
+
+    # 规则引擎（核心决策逻辑）
+    def rule_plan(self, sentiment, intent, entities) -> List[PlanStep]
+    
+    # LLM动态规划（复杂场景处理）
+    def generate_plan(self, sentiment, intent, entities) -> List[PlanStep]
+```
+
+## 2. 规划模块实现
+
+### 2.2 规则引擎实现逻辑
+
+#### 2.2.1 规则加载机制
+
+```python
+def _load_rules(self, path):
+    """从YAML文件加载规则配置（示例规则结构）"""
+    return {
+        "escalation": {
+            "threshold": 0.8,        # 情感强度阈值
+            "action": "notify_supervisor"  # 触发动作
+        }
+    }
+```
+
+#### 2.2.2 规则应用流程
+
+![](img/0c032fa42136bba747e93e6fdbe2ffce.png)
+
+#### 2.2.3 代码实现说明
+
+```python
+def rule_plan(self, sentiment, intent, entities):
+    # 情感阈值判断
+    if sentiment.get("intensity", 0) > self.rules["escalation"]["threshold"]:
+        return [PlanStep(...)]  # 强制升级
+    
+    # 常规意图映射
+    tool = self.tool_mapping.get(intent, "rag")
+    return [PlanStep(
+        step_id="step_1",
+        description=intent,
+        tool_required=tool,
+        entities=entities
+    )]
+```
+
+### 2.3 LLM动态规划实现
+
+#### 2.3.1 Prompt工程实现
+
+```python
+# 模板设计要点：
+# 1. 明确输出格式要求
+# 2. 约束步骤数量（最多3步）
+prompt_template = PromptTemplate(
+    input_variables=["intent", "entities", "sentiment"],
+    template="""请生成处理步骤：
+    意图：{intent}
+    实体：{entities}
+    情感：{sentiment}
+    要求：
+    - 使用中文短句描述
+    - 每行一个步骤
+    - 最多3个步骤"""
+)
+```
+
+#### 2.3.2 步骤解析逻辑
+
+```python
+# 示例LLM输出：
+"""
+1. 验证订单号有效性
+2. 查询订单物流信息
+3. 生成查询报告
+"""
+
+steps = [
+    PlanStep(step_id="step_0", ...),
+    PlanStep(step_id="step_1", ...),
+    PlanStep(step_id="step_2", ...)
+]
+```
+
+#### 2.3.3 工具映射策略
+
+```python
+def _map_tool(self, step_desc: str) -> str:
+    """基于步骤描述的关键词匹配"""
+    if "订单" in step_desc and ("查询" or "验证") in step_desc:
+        return "order_query"
+    elif "工单" in step_desc and "创建" in step_desc:
+        return "work_order"
+    return "rag"
+```
+
+## 3. 工具模块实现详解
+
+### 3.1 执行器核心架构
+
+```python
+class ToolExecutor:
+    def __init__(self):
+        # API端点配置
+        self.endpoints 
+        
+        # 知识库组件（示例伪代码）
+        self.rag = "示例向量库" 
+
+    def execute(self, step: PlanStep) -> ToolResult:
+        # 统一执行入口
+        if step.tool_required in self.endpoints:
+            return self._call_api(step)
+        elif step.tool_required == "rag":
+            return self._rag_search(step)
+        else:
+            return ToolResult(status="error", ...)
+```
+
+### 3.2 API工具执行流程
+
+![](img/1c50ce4f805b6d289b206dba27970b0f.png)
+
+### 3.3 RAG工具实现
+
+```python
+def _rag_search(self, step):
+    """知识库检索逻辑（当前为示例实现）"""
+    return ToolResult(
+        status="success",
+        data={"text": self.rag}  # 实际应替换为向量检索
+    )
+```
+
+### 3.4 异常处理机制
+
+```python
+try:
+    resp = requests.get(url, timeout=3)
+    if resp.status_code != 200:
+        # 记录错误日志
+        return ToolResult(status="error", message=f"API响应异常：{resp.status_code}")
+except requests.exceptions.Timeout:
+    return ToolResult(status="error", message="请求超时")
+except Exception as e:
+    return ToolResult(status="error", message=str(e))
+```
+
+## 4. 业务流程完整示例
+
+### 4.1 典型业务场景
+
+```text
+**用户输入**：“我的订单12345为什么还没发货？”
+需求感知输出：
+• intent: 订单查询
+• entities: {"order_number": "12345"}
+• sentiment: {"sentiment": "负面", "intensity": 0.75}
+```
+
+### 4.2 规划模块处理流程
+
+1. 规则引擎判断情感强度 `0.75 < 0.8`，不触发升级
+
+1. 匹配意图"订单查询"到 `order_query` 工具
+
+1. 生成步骤：
+
+```python
+PlanStep(
+    step_id="step_1",
+    description="查询订单状态",
+    tool_required="order_query",
+    entities={"order_number": "12345"}
+)
+```
+
+### 4.3 工具模块执行
+
+```json
+{
+    "status": "success",
+    "data": {
+        "order_status": "已发货",
+        "tracking_number": "SF123456789"
+    }
+}
+```
+
+## 五、用户交互模块实现
+
+### 1. 模块整体架构设计
+
+#### 1.1 核心流程
+
+![](img/1dabdd6652fc9b9b35f2455b1b92e0f1.png)
+
+#### 1.2 流程说明
+
+情感驱动路由：
+
+> 所有情感类型均继续后续流程
+
+> 差异点体现在处理优先级而非流程分支
+
+多轮会话机制：
+
+> 通过反馈回路实现对话延续
+
+> 会话管理器维护上下文状态
+
+反馈闭环设计：
+
+> 用户显式反馈（如"不对，我要问的是…"）
+
+> 隐式反馈（连续追问相同问题）
+
+#### 1.3 模块通信机制
+
+```python
+# 与规划模块的接口定义
+class PlanningRequest(BaseModel):
+    user_intent: str
+    entities: Dict[str, str]
+    dialog_context: List[Dict]  # 复用对话历史数据结构
+
+# 与工具模块的执行协议
+class ToolInvocation(BaseModel):
+    tool_name: str
+    parameters: Dict[str, Any]  # 严格匹配知识库API规范
+```
+
+#### 1.2 数据流全景
+
+![](img/ed97f184eb5b8c9a4c7446c06e59f8a1.png)
+
+### 2. 核心设计模式详解
+
+#### 2.1 状态管理模式
+
+采用对话上下文感知设计，实现三级状态管理：
+
+```python
+class DialogState:
+    session_state: Enum = ACTIVE  # 继承系统级状态机
+    user_profile: UserMeta        # 对接用户中心数据
+    service_context: Dict        # 业务上下文（如订单号）
+    
+    def snapshot(self) -> str:
+        """生成状态快照（用于断点续传）"""
+        return pickle.dumps(self.__dict__)
+```
+
+#### 2.2 风格引擎实现
+
+```python
+class StyleEngine:
+    def __init__(self, config_path: str):
+        self.style_config = self._load_config(config_path)
+        
+    def apply_style(self, raw_text: str) -> str:
+        """应用多维度风格规则"""
+        # 语气转换（参考前文语言表达参数）
+        if self.style_config['tone'] == 'formal':
+            text = self._convert_to_formal(raw_text)
+            
+        # 句式处理
+        if self.style_config['response_length'] == 'short':
+            text = self._summarize_response(text)
+            
+        return text
+    
+    def _convert_to_formal(self, text: str) -> str:
+        """敬语转换器"""
+        replacements = {
+            "你": "您",
+            "请": "烦请",
+            "吗？": "么？"
+        }
+        for k, v in replacements.items():
+            text = text.replace(k, v)
+        return text
+```
+
+### 3. 关键算法实现细节
+
+#### 3.1 智能追问算法
+
+```python
+def generate_clarification(context: DialogState) -> str:
+    """
+    基于强化学习的追问策略（对应前文会话管理机制）
+    算法选择优先级：
+    1. 必填字段缺失 → 直接追问
+    2. 模糊实体 → 选项式提问
+    3. 冲突信息 → 确认式提问
+    """
+    if context.missing_entities:
+        return _direct_question(context)
+    elif context.conflict_entities:
+        return _confirm_question(context)
+    else:
+        return _suggestive_question(context)
+```
+
+#### 3.2 多策略响应生成
+
+```python
+def format_response(plan_step: PlanStep, 
+                   result: ToolResult,
+                   style: StyleConfig) -> str:
+    # 基础模板填充
+    base_text = apply_template(plan_step.template, result.data)
+    
+    # 情感增强（对接情感分析模块）
+    if style.allow_emotional_enhancement:
+        base_text = add_emotion_words(base_text, result.sentiment)
+        
+    # 知识增强（调用RAG系统）
+    if style.enable_knowledge_augment:
+        related_info = retrieve_related_knowledge(base_text)
+        base_text += f"\n\n相关知识：{related_info}"
+    
+    return base_text
+```
+
+### 4. 工程化实践
+
+#### 4.1 配置中心集成
+
+```yaml
+# style_config.yaml（对应前文JSON配置方案）
+response_policies:
+  default:
+    tone: professional
+    emoji: false
+    detail_level: 2
+    
+  vip_user:
+    tone: friendly
+    emoji: true
+    detail_level: 3
+```
+
+#### 4.2 性能优化方案
+
+（实现前文建议的Redis集成）
+
+```python
+class RedisStateManager:
+    def __init__(self, redis_conn):
+        self.redis = redis_conn
+        
+    def save_state(self, state: DialogState):
+        self.redis.set(
+            state.session_id, 
+            state.snapshot(),
+            ex=3600  # 1小时会话有效期
+        )
+        
+    def load_state(self, session_id: str) -> DialogState:
+        data = self.redis.get(session_id)
+        return DialogState(**pickle.loads(data))
+```
+
+#### 4.3 用户交互模块完整代码
